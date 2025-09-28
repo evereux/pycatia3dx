@@ -784,8 +784,8 @@ class Selection(AnyObject):
             i_tooltip: bool,
             i_triggering_on_mouse_move: bool,
             o_object_selected: bool,
-            o_window_location2_d: tuple,
-            o_window_location3_d: tuple
+            o_window_location_2d: tuple,
+            o_window_location_3d: tuple
     ) -> str:
         """
         .. note::
@@ -979,8 +979,8 @@ class Selection(AnyObject):
         :param bool i_tooltip:
         :param bool i_triggering_on_mouse_move:
         :param bool o_object_selected:
-        :param tuple o_window_location2_d:
-        :param tuple o_window_location3_d:
+        :param tuple o_window_location_2d:
+        :param tuple o_window_location_3d:
         :return: str
         """
         return self.com_object.IndicateOrSelectElement3D(
@@ -991,8 +991,8 @@ class Selection(AnyObject):
             i_tooltip,
             i_triggering_on_mouse_move,
             o_object_selected,
-            o_window_location2_d,
-            o_window_location3_d
+            o_window_location_2d,
+            o_window_location_3d
         )
 
     def item(self, i_index: int) -> SelectedElement:

@@ -34,7 +34,7 @@ class ControlPoint2D(Point2D):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.control_point2_d = com_object
+        self.com_object = com_object
 
     @property
     def curvature(self) -> float:
@@ -61,7 +61,7 @@ class ControlPoint2D(Point2D):
         :return: float
         """
 
-        return self.control_point2_d.Curvature
+        return self.com_object.Curvature
 
     @curvature.setter
     def curvature(self, value: float):
@@ -69,7 +69,7 @@ class ControlPoint2D(Point2D):
         :param float value:
         """
 
-        self.control_point2_d.Curvature = value
+        self.com_object.Curvature = value
 
     def get_tangent(self, o_tangent: tuple) -> None:
         """
@@ -90,7 +90,7 @@ class ControlPoint2D(Point2D):
 
         :param tuple o_tangent:
         """
-        return self.control_point2_d.GetTangent(o_tangent)
+        return self.com_object.GetTangent(o_tangent)
 
     def set_tangent(self, i_tangent_x: float, i_tangent_y: float) -> None:
         """
@@ -114,7 +114,7 @@ class ControlPoint2D(Point2D):
         :param float i_tangent_y:
         :return: None
         """
-        return self.control_point2_d.SetTangent(i_tangent_x, i_tangent_y)
+        return self.com_object.SetTangent(i_tangent_x, i_tangent_y)
 
     def unset_curvature(self) -> None:
         """
@@ -127,7 +127,7 @@ class ControlPoint2D(Point2D):
 
         :return: None
         """
-        return self.control_point2_d.UnsetCurvature()
+        return self.com_object.UnsetCurvature()
 
     def unset_tangent(self) -> None:
         """
@@ -140,7 +140,7 @@ class ControlPoint2D(Point2D):
 
         :return: None
         """
-        return self.control_point2_d.UnsetTangent()
+        return self.com_object.UnsetTangent()
 
     def __repr__(self):
         return f'ControlPoint2D(name="{ self.name }")'

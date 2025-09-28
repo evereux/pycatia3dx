@@ -533,7 +533,7 @@ class HybridShapeCurvePar(HybridShape):
         self.com_object.Support = value
 
     @property
-    def p3_d_smoothing(self) -> bool:
+    def p_3d_smoothing(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -553,8 +553,8 @@ class HybridShapeCurvePar(HybridShape):
 
         return self.com_object.p3DSmoothing
 
-    @p3_d_smoothing.setter
-    def p3_d_smoothing(self, value: bool):
+    @p_3d_smoothing.setter
+    def p_3d_smoothing(self, value: bool):
         """
         :param bool value:
         """

@@ -9,10 +9,10 @@
         
 """
 
-from pycatia3dx.system.cat_base_unknown import CatBaseUnknown
+from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 
 
-class CatBaseDispatch(CATBaseUnknown):
+class CATBaseDispatch(CATBaseUnknown):
     """
         .. note::
             :class: toggle

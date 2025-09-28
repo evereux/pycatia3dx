@@ -12,7 +12,7 @@
 from pycatia3dx.system.i_dispatch import IDispatch
 
 
-class CatBaseUnknown(IDispatch):
+class CATBaseUnknown(IDispatch):
     """
         .. note::
             :class: toggle

@@ -947,7 +947,7 @@ class PageSetup(AnyObject):
         self.com_object.TopMargin = value
 
     @property
-    def use3_d_accuracy(self) -> bool:
+    def use_3d_accuracy(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -968,8 +968,8 @@ class PageSetup(AnyObject):
 
         return self.com_object.Use3DAccuracy
 
-    @use3_d_accuracy.setter
-    def use3_d_accuracy(self, value: bool):
+    @use_3d_accuracy.setter
+    def use_3d_accuracy(self, value: bool):
         """
         :param bool value:
         """

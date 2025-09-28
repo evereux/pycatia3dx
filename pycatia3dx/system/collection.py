@@ -11,7 +11,7 @@
 
 from pycatia3dx.interfaces.application import Application
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.system.cat_base_dispatch import CatBaseDispatch
+from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class Collection(CATBaseDispatch):
