@@ -1,0 +1,152 @@
+"""
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-28 13:20:20.191090
+
+    .. warning::
+        The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+from pycatia3dx.drafting.drawing_area_fill import DrawingAreaFill
+from pycatia3dx.system.collection import Collection
+from pycatia3dx.types.general import CATVariant
+
+
+class DrawingAreaFills(Collection):
+
+    """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+
+                | SystemTS.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.Collection
+                |                     DrawingAreaFills
+                | 
+                | A collection of all the drawing area fills currently managed by a drawing view
+                | of drawing sheet in a drawing representation.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.com_object = com_object
+
+    def add(self, i_number_of_points_per_contour: tuple, i_points_coordinates: tuple) -> DrawingAreaFill:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+                | Func Add(CATSafeArrayVariant iNumberOfPointsPerContour,CATSafeArrayVariant
+                | iPointsCoordinates) As DrawingAreaFill
+                |     Creates an isolated DrawingAreaFill and adds it to the DrawingAreaFills
+                |     collection. 
+                |     Notice that an authoring product licence is required.
+                | 
+                |     Parameters:
+                | 
+                |         iNumberOfPointsPerContour
+                |             Number of points per contour 
+                |         iPointsCoordinates
+                |             External and internal points coordinates of DrawingAreaFill
+                |             
+                | 
+                |     Returns:
+                |         The created DrawingAreaFill 
+                | 
+                | Example:
+                |     The following example creates in myAreaFill a DrawingAreaFill with an
+                |     external and internal contour. The external contour is a square and the
+                |     internal one is a triangle
+                | 
+                |      NumberOfPtsPerContour = Array(4, 3)
+                |      PtsCoordinates  = Array(10., 10., 50., 10., 50., 50., 10., 50., 20., 20., 40., 20., 30., 40.)
+                |      Dim myAreaFill As DrawingAreaFill
+                |      set myAreaFill = MyView.AreaFills.Add(NumberOfPtsPerContour, PtsCoordinates)
+
+        :param tuple i_number_of_points_per_contour:
+        :param tuple i_points_coordinates:
+        :return: DrawingAreaFill
+        """
+        return DrawingAreaFill(self.com_object.Add(i_number_of_points_per_contour, i_points_coordinates))
+
+    def item(self, i_index: CATVariant) -> DrawingAreaFill:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+                | Func Item(CATVariant iIndex) As DrawingAreaFill
+                |     Returns a drawing area fill using its index from the DrawingAreaFills
+                |     collection.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index of the drawing area fill to retrieve from the collection
+                |             of drawing area fills. As a numerics, this index is the rank of the drawing
+                |             area fill in the collection. The index of the first drawing area fill in the
+                |             collection is 1, and the index of the last drawing area fill is Count. As a
+                |             string, it is the name you assigned to the drawing area fill using the
+                |             AnyObject.Name property or when creating it using the Add method.
+                |             
+                | 
+                |     Returns:
+                |         The retrieved drawing area fill 
+                |     Example:
+                |         This example retrieves in myAreaFill the second drawing area fill, in
+                |         the drawing view collection of the active view in the active sheet, in the
+                |         active representation supposed to be a drawing
+                |         representation.
+                | 
+                |          Dim MyView  As DrawingView
+                |          Set MyView  = MySheet.Views.ActiveView
+                |          Dim myAreaFill As DrawingAreaFill
+                |          Set myAreaFill = MyView.AreaFills.Item(2)
+
+        :param CATVariant i_index:
+        :return: DrawingAreaFill
+        """
+        return DrawingAreaFill(self.com_object.Item(i_index))
+
+    def remove(self, i_index: CATVariant) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+                | Sub Remove(CATVariant iIndex)
+                |     Removes a DrawingAreaFill from the DrawingAreaFills collection.
+                |     
+                |     Notice that an authoring product licence is required.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index of the drawing area fill to remove from the collection of
+                |             drawing area fills. As a numerics, this index is the rank of the drawing area
+                |             fill in the collection. The index of the first drawing area fill in the
+                |             collection is 1, and the index of the last drawing area fill is Count.
+                |             
+                | 
+                |     Example:
+                |         The following example removes the third drawing area fill in the
+                |         drawing area fill collection of the active view of the active representation,
+                |         supposed to be a drawing representation.
+                | 
+                |          Dim MyView As DrawingView
+                |          Set MyView  = MySheet.Views.ActiveView
+                |          MyView.AreaFills.Remove(3)
+
+        :param CATVariant i_index:
+        :return: None
+        """
+        return self.com_object.Remove(i_index)
+
+    def __repr__(self):
+        return f'DrawingAreaFills(name="{ self.name }")'
