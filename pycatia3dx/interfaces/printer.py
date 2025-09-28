@@ -1,5 +1,5 @@
 """
-    Module initially auto generated using DSYAutomation files from CATIA 3DX R2020 on 2025-09-13 15:35:27.265802
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-13 15:35:27.265802
 
     .. warning::
         The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
@@ -133,7 +133,7 @@ class Printer(AnyObject):
                 |     Returns the default paper width.
                 | 
                 |     Example:
-                |         This example retrieves in Witdh the default paper width of the
+                |         This example retrieves in Width the default paper width of the
                 |         myPrinter printer.
                 | 
                 |          Dim Width As float

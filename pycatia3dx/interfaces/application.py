@@ -1,5 +1,5 @@
 """
-    Module initially auto generated using DSYAutomation files from CATIA 3DX R2020 on 2025-09-13 15:35:27.265802
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-13 15:35:27.265802
 
     .. warning::
         The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
@@ -323,37 +323,38 @@ class Application(AnyObject):
 
     @property
     def full_name(self) -> str:
+        # noinspection GrazieInspection
         """
-        .. note::
-            :class: toggle
+                .. note::
+                    :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property FullName() As CATBSTR (Read Only)
-                |     Returns the application's executable file full name, including its
-                |     path.
-                |     This name is the name of the executable file used to start the
-                |     application.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in ApplicationFullName the
-                |          CATIA application's executable file full name.
-                |          
-                | 
-                |          ApplicationFullName = CATIA.FullName
-                |          
-                | 
-                | 
-                |          
-                | 
-                | 
-                |          The returned value is like this:
-                |          
-                | 
-                |          \\lisa\cxr1arel\bsf\alpha_a\code\bin\CNEXT.exe
+                    3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
+                        | Property FullName() As CATBSTR (Read Only)
+                        |     Returns the application's executable file full name, including its
+                        |     path.
+                        |     This name is the name of the executable file used to start the
+                        |     application.
+                        |
+                        |     Example:
+                        |
+                        |          This example retrieves in ApplicationFullName the
+                        |          CATIA application's executable file full name.
+                        |
+                        |
+                        |          ApplicationFullName = CATIA.FullName
+                        |
+                        |
+                        |
+                        |
+                        |
+                        |
+                        |          The returned value is like this:
+                        |
+                        |
+                        |          \\lisa\cxr1arel\bsf\alpha_a\code\bin\CNEXT.exe
 
-        :return: str
-        """
+                :return: str
+                """
 
         return self.com_object.FullName
 
@@ -551,35 +552,36 @@ class Application(AnyObject):
 
     @property
     def path(self) -> str:
+        # noinspection GrazieInspection
         """
-        .. note::
-            :class: toggle
+                .. note::
+                    :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Path() As CATBSTR (Read Only)
-                |     Returns the path of the application's executable files.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in ApplicationPath the path where
-                |          the
-                |          CATIA application executable files are located.
-                |          
-                | 
-                |          ApplicationPath = CATIA.Path
-                |          
-                | 
-                | 
-                |          
-                | 
-                | 
-                |          The returned value is like this:
-                |          
-                | 
-                |          \\lisa\cxr1arel\bsf\alpha_a\code\bin
+                    3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
+                        | Property Path() As CATBSTR (Read Only)
+                        |     Returns the path of the application's executable files.
+                        |
+                        |     Example:
+                        |
+                        |          This example retrieves in ApplicationPath the path where
+                        |          the
+                        |          CATIA application executable files are located.
+                        |
+                        |
+                        |          ApplicationPath = CATIA.Path
+                        |
+                        |
+                        |
+                        |
+                        |
+                        |
+                        |          The returned value is like this:
+                        |
+                        |
+                        |          \\lisa\cxr1arel\bsf\alpha_a\code\bin
 
-        :return: str
-        """
+                :return: str
+                """
 
         return self.com_object.Path
 
@@ -884,7 +886,7 @@ dialog                |
                 | 
                 |     Example:
                 |         This example is written in Visual Basic for Applications. It Asks the
-                |         end user to select a OK command button of a form.
+                |         end user to select an OK command button of a form.
                 | 
                 |          Sub CATMain()
                 |          CATIA.ScriptCommand = CatScriptCommandStart
@@ -1239,7 +1241,7 @@ dialog                |
                 |             A file extension filter. 
                 |         iMode
                 |             The mode in which to run the dialog box (either
-                |             CatFileSelectionModeOpen or CatFileSelectionModeSave.
+                |             CatFileSelectionModeOpen or CatFileSelectionModeSave).
                 |             
                 | 
                 |     Returns:

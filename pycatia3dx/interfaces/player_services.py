@@ -1,5 +1,5 @@
 """
-    Module initially auto generated using DSYAutomation files from CATIA 3DX R2020 on 2025-09-13 15:35:27.265802
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-13 15:35:27.265802
 
     .. warning::
         The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
@@ -26,7 +26,7 @@ class PlayerServices(Service):
                 |                         PlayerServices
                 | 
                 | Represents the PLM Player services.
-                | This service can be retrieve from an Editor
+                | This service can be retrieved from an Editor
     
     """
 
