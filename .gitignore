@@ -209,3 +209,5 @@ __marimo__/
 .idea/
 
 __reference_scripts__
+
+test.py
