@@ -7,10 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
-from pycatia3dx.interfaces.selection import Selection
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.selection import Selection
 
 
 class Editor(AnyObject):
@@ -59,7 +62,7 @@ class Editor(AnyObject):
         return AnyObject(self.com_object.ActiveObject)
 
     @property
-    def selection(self) -> Selection:
+    def selection(self) -> 'Selection':
         """
         .. note::
             :class: toggle
@@ -80,6 +83,7 @@ class Editor(AnyObject):
 
         :return: Selection
         """
+        from pycatia3dx.interfaces.selection import Selection
 
         return Selection(self.com_object.Selection)
 

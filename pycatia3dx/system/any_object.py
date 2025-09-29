@@ -8,11 +8,15 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
-from pycatia3dx.interfaces.application import Application
+from pycatia3dx.base_interfaces.pycatia3dx import PyCATIA3DX
+
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.application import Application
 
 
-class AnyObject():
+class AnyObject(PyCATIA3DX):
     """
         .. note::
             :class: toggle
@@ -33,11 +37,11 @@ class AnyObject():
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__()
         self.com_object = com_object
 
     @property
-    def application(self) -> Application:
+    def application(self) -> 'Application':
         """
         .. note::
             :class: toggle
@@ -69,7 +73,7 @@ class AnyObject():
 
         :return: Application
         """
-
+        from pycatia3dx.interfaces.application import Application
         return Application(self.com_object.Application)
 
     @property

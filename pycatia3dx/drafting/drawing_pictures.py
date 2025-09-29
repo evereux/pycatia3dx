@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingPictures(Collection):
-
     """
         .. note::
             :class: toggle
@@ -52,7 +51,7 @@ class DrawingPictures(Collection):
                 |     Parameters:
                 | 
                 |         iDrawingPicturePath
-                |             The path of the picture file (ex : "C:\tmp\ball.bmp") . 
+                |             The path of the picture file (ex : "C:\\tmp\\ball.bmp") .
                 |         iPositionX,iPositionY
                 |             The drawing picture x and y coordinates, expressed in millimeters,
                 |             with respect to the drawing view coordinate system
@@ -73,7 +72,7 @@ class DrawingPictures(Collection):
                 |      Dim MyView As DrawingView
                 |      Set MyView = MySheet.Views.ActiveView
                 |      Dim MyDrawingPicture1 As DrawingPicture
-                |      Set MyDrawingPicture1 = MyView.Pictures.Add("C:\tmp\ball.bmp", 100., 50.)
+                |      Set MyDrawingPicture1 = MyView.Pictures.Add("C:\\tmp\\ball.bmp", 100., 50.)
 
         :param str i_drawing_picture_path:
         :param float i_position_x:
@@ -160,4 +159,4 @@ class DrawingPictures(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingPictures(name="{ self.name }")'
+        return f'DrawingPictures(name="{self.name}")'

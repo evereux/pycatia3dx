@@ -7,10 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.os.file_component import FileComponent
 from pycatia3dx.os.files import Files
-from pycatia3dx.os.folders import Folders
+
+if TYPE_CHECKING:
+    from pycatia3dx.os.folders import Folders
 
 
 class Folder(FileComponent):
@@ -61,7 +64,7 @@ class Folder(FileComponent):
         return Files(self.com_object.Files)
 
     @property
-    def sub_folders(self) -> Folders:
+    def sub_folders(self) -> 'Folders':
         """
         .. note::
             :class: toggle
@@ -79,6 +82,7 @@ class Folder(FileComponent):
 
         :return: Folders
         """
+        from pycatia3dx.os.folders import Folders
 
         return Folders(self.com_object.SubFolders)
 

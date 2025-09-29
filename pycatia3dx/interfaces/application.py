@@ -7,7 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.interfaces.editor import Editor
+from typing import TYPE_CHECKING
+
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.enums import CatScriptCommand
 from pycatia3dx.interfaces.printer import Printer
@@ -19,6 +20,9 @@ from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.system_service import SystemService
+
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.editor import Editor
 
 
 class Application(AnyObject):
@@ -69,7 +73,7 @@ class Application(AnyObject):
         self.com_object = com_object
 
     @property
-    def active_editor(self) -> Editor:
+    def active_editor(self) -> 'Editor':
         """
         .. note::
             :class: toggle
@@ -92,6 +96,7 @@ class Application(AnyObject):
 
         :return: Editor
         """
+        from pycatia3dx.interfaces.editor import Editor
 
         return Editor(self.com_object.ActiveEditor)
 

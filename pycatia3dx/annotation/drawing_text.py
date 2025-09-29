@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingText(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -586,7 +585,8 @@ class DrawingText(AnyObject):
         """
         return self.com_object.GetParameterOnSubString(i_param, i_first, inb_character)
 
-    def insert_attribute_link(self, i_first: int, inb_character: int, i_owner_att: AnyObject, i_type_internal_name: str, i_att_internal_name: str) -> None:
+    def insert_attribute_link(self, i_first: int, inb_character: int, i_owner_att: AnyObject, i_type_internal_name: str,
+                              i_att_internal_name: str) -> None:
         """
         .. note::
             :class: toggle
@@ -618,7 +618,8 @@ class DrawingText(AnyObject):
         :param str i_att_internal_name:
         :return: None
         """
-        return self.com_object.InsertAttributeLink(i_first, inb_character, i_owner_att.com_object, i_type_internal_name, i_att_internal_name)
+        return self.com_object.InsertAttributeLink(i_first, inb_character, i_owner_att.com_object, i_type_internal_name,
+                                                   i_att_internal_name)
 
     def insert_variable(self, i_first: int, inb_character: int, ibase: AnyObject) -> None:
         """
@@ -647,7 +648,7 @@ class DrawingText(AnyObject):
                 |              Dim MyDrawing as DrawingDrawing
                 |              Set MyDrawing = CATIA.ActiveEditor.ActiveObject
                 |              Dim iParameter As Parameter
-                |              Set iParameter = MyDrawing.Parameters.Item("Drawing\Sheet.1\ViewMakeUp.1\Scale")
+                |              Set iParameter = MyDrawing.Parameters.Item("Drawing\\Sheet.1\\ViewMakeUp.1\\Scale")
                 | 
                 |              MyText.InsertVariable 0, 0, iParameter
 
@@ -813,4 +814,4 @@ class DrawingText(AnyObject):
         return self.com_object.SolveLink(ip_obj.com_object)
 
     def __repr__(self):
-        return f'DrawingText(name="{ self.name }")'
+        return f'DrawingText(name="{self.name}")'

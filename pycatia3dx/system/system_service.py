@@ -123,7 +123,13 @@ class SystemService(AnyObject):
                 |     Parameters:
                 | 
                 |         iExecutablePath
-                |             The path of the executable to run and its arguments If the executable is not present in the PATH environment variable, you must specify its complete absolute path. If this path contains blanks, you must enclose it with the simple quote character ''' : for example CATIA.SystemService.ExecuteBackgroundProcess "'C:\Program Files\myApp\myApp.exe' myArg". 
+                |             The path of the executable to run and its arguments
+                |             If the executable is not present in the PATH environment
+                |             variable, you must specify its complete absolute path.
+                |             If this path contains blanks, you must enclose it
+                |             with the simple quote character ''' : for example
+                |             CATIA.SystemService.ExecuteBackgroundProcess
+                |             "'C:\\Program Files\\myApp\\myApp.exe' myArg".
                 | 
                 |     Returns:
                 |         Non significative return code. It's never the asynchronous process
@@ -159,7 +165,23 @@ class SystemService(AnyObject):
                 |     Parameters:
                 | 
                 |         iExecutablePath
-                |             The path of the executable to run and its arguments. If the executable is not present in the PATH environment variable, you must specify its complete absolute path. If this executable path contains blanks, you must enclose it with the simple quote character ''' : for example CATIA.SystemService.ExecuteProcessus "'C:\Program Files\myApp\myApp.exe' myArg". On Windows, to run a batch file you must execute the command interpreter : set the executable to cmd.exe set the arguments to the following ones : /c plus the name of the batch file. For example CATIA.SystemService.ExecuteProcessus "cmd.exe /c E:\MyBatchFile.bat" On Windows, an argument that contains a blank must be doubly enclosed ; first with the single quote character then, inside the single enclosing quote, with the double quote character. For example CATIA.SystemService.ExecuteProcessus "cmd.exe /c '" & Chr$(34) & "E:\My Bat File.bat" & Chr$(34) & "'" 
+                |             The path of the executable to run and its arguments.
+                |             If the executable is not present in the PATH environment
+                |             variable, you must specify its complete absolute path.
+                |             If this executable path contains blanks, you must
+                |             enclose it with the simple quote character ''' :
+                |             for example CATIA.SystemService.ExecuteProcessus
+                |             "'C:\\Program Files\\myApp\\myApp.exe' myArg". On Windows,
+                |             to run a batch file you must execute the command interpreter :
+                |             set the executable to cmd.exe set the arguments to
+                |             the following ones : /c plus the name of the batch file.
+                |             For example CATIA.SystemService.ExecuteProcessus
+                |             "cmd.exe /c E:\\MyBatchFile.bat" On Windows, an argument
+                |             that contains a blank must be doubly enclosed ; first
+                |             with the single quote character then, inside the single
+                |             enclosing quote, with the double quote character.
+                |             For example CATIA.SystemService.ExecuteProcessus
+                |             "cmd.exe /c '" & Chr$(34) & "E:\\My Bat File.bat" & Chr$(34) & "'"
                 | 
                 |     Returns:
                 |         The synchronous process return code 

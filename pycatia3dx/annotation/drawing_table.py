@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingTable(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -599,7 +598,8 @@ class DrawingTable(AnyObject):
         """
         return self.com_object.GetColumnSize(i_col)
 
-    def get_merge_infos(self, i_row: int, i_col: int, o_first_row: int, o_first_col: int, o_nb_row: int, o_nb_col: int) -> None:
+    def get_merge_infos(self, i_row: int, i_col: int, o_first_row: int, o_first_col: int, o_nb_row: int,
+                        o_nb_col: int) -> None:
         """
         .. note::
             :class: toggle
@@ -885,16 +885,16 @@ class DrawingTable(AnyObject):
                 | 
                 |                     ----- 2 ------         --------------         
                 |                     --------------
-                |                     |             |        |\            |         |          
+                |                     |             |        |\\            |         |
                 |                     |             |        |/ |                
                 |                     |             |        |
-                |                     |             |        |  \          |         |         / 
+                |                     |             |        |  \\          |         |         /
                 |                     |             |        |  |        
-                |                     1             4        |     \ 16    |         |    32 /   
+                |                     1             4        |     \\ 16    |         |    32 /
                 |                     |        
-                |                     |             |        |        \    |         |   /       
+                |                     |             |        |        \\    |         |   /
                 |                     |             |        |        |        
-                |                     |             |        |          \  |         | /         
+                |                     |             |        |          \\  |         | /
                 |                     |             |        |          |         
                 |                     ----- 8 ------         --------------         
                 |                     --------------  
@@ -939,15 +939,15 @@ class DrawingTable(AnyObject):
                 |         iCol
                 |             The cell column 
                 |         iPath
-                |             The path of the picture file (ex : "C:\tmp\ball.bmp") .
+                |             The path of the picture file (ex : "C:\\tmp\\ball.bmp") .
                 | 
                 |             Example:
                 |                 This example fills in the cell (3,2) of the table MyTable with
-                |                 picture "C:\tmp\ball.bmp".
+                |                 picture "C:\\tmp\\ball.bmp".
                 | 
                 |                  iRow = 3
                 |                  iCol = 2
-                |                  iPath = "C:\tmp\ball.bmp"
+                |                  iPath = "C:\\tmp\\ball.bmp"
                 |                  MyTable.SetCellImage iRow, iCol, iPath
 
         :param int i_row:
@@ -1147,4 +1147,4 @@ class DrawingTable(AnyObject):
         return self.com_object.UnMergeCells(i_row, i_col)
 
     def __repr__(self):
-        return f'DrawingTable(name="{ self.name }")'
+        return f'DrawingTable(name="{self.name}")'

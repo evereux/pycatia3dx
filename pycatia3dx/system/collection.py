@@ -8,13 +8,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator, TYPE_CHECKING
 
-from pycatia3dx.interfaces.application import Application
+from pycatia3dx.base_interfaces.pycatia3dx import PyCATIA3DX
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
+
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.application import Application
 
 
-class Collection(CATBaseDispatch):
+class Collection(PyCATIA3DX):
     """
         .. note::
             :class: toggle
@@ -33,12 +36,13 @@ class Collection(CATBaseDispatch):
     
     """
 
-    def __init__(self, com_object):
-        super().__init__(com_object)
+    def __init__(self, com_object, child_object=AnyObject):
+        super().__init__()
         self.com_object = com_object
+        self.child_object = child_object
 
     @property
-    def application(self) -> Application:
+    def application(self) -> 'Application':
         """
         .. note::
             :class: toggle
@@ -63,7 +67,7 @@ class Collection(CATBaseDispatch):
 
         :return: Application
         """
-
+        from pycatia3dx.interfaces.application import Application
         return Application(self.com_object.Application)
 
     @property
@@ -166,6 +170,20 @@ class Collection(CATBaseDispatch):
         :return: AnyObject
         """
         return self.com_object.GetItem(id_name)
+
+    def __len__(self):
+
+        return self.count
+
+    def __getitem__(self, n: int) -> AnyObject:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnyObject(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AnyObject]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Collection(name="{self.name}")'
