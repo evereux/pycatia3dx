@@ -1,0 +1,273 @@
+"""
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-28 13:20:20.191090
+
+    .. warning::
+        The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia3dx.system.any_object import AnyObject
+
+
+class MeasurableInContext(AnyObject):
+    """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+
+                | SystemTS.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     MeasurableInContext
+
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.com_object = com_object
+
+    def get_axis_system_from_measurable(self, o_axis_positioning: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub GetAxisSystemFromMeasurable(CATSafeArrayVariant
+                | oAxisPositioning)
+                |     Get the position of the axis system of the object with respect to the
+                |     absolute axis system. This position corresponds to the product positioning
+                |     matrix. All coordinates are internally computed using the axis system of the
+                |     object. To provide these coordinates with respect to absolute axis system, it
+                |     is required to know the position of the axis system of the
+                |     object.
+                | 
+                |     Parameters:
+                | 
+                |         ioAxisPosition
+                |             The information of the axis system with respect to the product
+                |             coordinate system:
+                | 
+                |                 iAxisPositioning(0) is the X coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(1) is the Y coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(2) is the Z coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(3) is the X coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(4) is the Y coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(5) is the Z coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(6) is the X coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(7) is the Y coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(8) is the Z coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(9) is the X coordinate of the third direction
+                |                 of the axis system
+                |                 iAxisPositioning(10) is the Y coordinate of the third direction
+                |                 of the axis system
+                |                 iAxisPositioning(11) is the Z coordinate of the third direction
+                |                 of the axis system 
+                | 
+                |     Example:
+                | 
+                |            This example get the axis system of theMeasurable
+                |            computation.
+                |            
+                | 
+                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                |              Dim theMeasurable As Measurable
+                |              Set theMeasurable = theMeasureService.GetMeasurable(theSelection, CAAMeasurable)
+                |              Dim theAxisPositioning(11)
+                |              theMeasurable.GetAxisSystemFromMeasurable
+                |              theAxisPositioning
+
+        :param tuple o_axis_positioning:
+        :return: None
+        """
+        return self.com_object.GetAxisSystemFromMeasurable(o_axis_positioning)
+
+    def get_result_computation_mode(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetResultComputationMode() As CATMeasurableModeOfCalc
+                |     Deprecated R2011 - replace by GetResultComputationType
+
+        :return: int
+        """
+        return self.com_object.GetResultComputationMode()
+
+    def get_result_computation_type(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetResultComputationType() As CATResultCalcType
+                |     Get the resulting mode of computation of the object. The computation mode
+                |     of the object can be: Exact, Approximate or Mixed. In case of measures item,
+                |     this method can be called after GetMeasurable.
+                | 
+                |     Example:
+                | 
+                |            This example get the computation mode of
+                |            theMeasurableItem.
+                |            
+                | 
+                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                |              Dim theMeasurableItem As MeasurableItem
+                |              Set theMeasurableItem = theMeasureService.GetMeasurable(theSelection, CAAMeasurableItem)
+                |              Dim theComputationType As CATResultCalcType
+                |              theComputationType = theMeasurableItem.GetResultComputationType
+                |            
+                | 
+                | 
+                | 
+                |          In case of measures between, this method must be called after distance
+                |          or angle computation
+                |          
+                |          
+                | 
+                |     Example:
+                | 
+                |            This example set the axis system for theMeasurableItem
+                |            computation.
+                |            
+                | 
+                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                |              Dim theMeasurableBetween As MeasurableBetween
+                |              Set theMeasurableBetween = theMeasureService.GetMeasurable(theSelection, CAAMeasurableBetween)
+                |              ...
+                |              theMeasurableBetween.DistanceMinTo ...
+                |              Dim theComputationType As CATResultCalcType
+                |              theComputationType = theMeasurableBetween.GetResultComputationType
+
+        :return: int
+        """
+        return self.com_object.GetResultComputationType()
+
+    def set_axis_system_on_measurable(self, i_axis_positioning: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetAxisSystemOnMeasurable(CATSafeArrayVariant
+                | iAxisPositioning)
+                |     Set the position of the axis system of the object with respect to the
+                |     absolute axis system. This position corresponds to the product positioning
+                |     matrix. All coordinates are internally computed using the axis system of the
+                |     object. To provide these coordinates with respect to absolute axis system, it
+                |     is required to know the position of the axis system of the
+                |     object.
+                | 
+                |     Parameters:
+                | 
+                |         ioAxisPosition
+                |             The information of the axis system with respect to the product
+                |             coordinate system:
+                | 
+                |                 iAxisPositioning(0) is the X coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(1) is the Y coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(2) is the Z coordinate of the origin of the
+                |                 axis system
+                |                 iAxisPositioning(3) is the X coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(4) is the Y coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(5) is the Z coordinate of the first direction
+                |                 of the axis system
+                |                 iAxisPositioning(6) is the X coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(7) is the Y coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(8) is the Z coordinate of the second direction
+                |                 of the axis system
+                |                 iAxisPositioning(9) is the X coordinate of the third direction
+                |                 of the axis system
+                |                 iAxisPositioning(10) is the Y coordinate of the third direction
+                |                 of the axis system
+                |                 iAxisPositioning(11) is the Z coordinate of the third direction
+                |                 of the axis system 
+                | 
+                |     Example:
+                | 
+                |            This example set the axis system for theMeasurable
+                |            computation.
+                |            
+                | 
+                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                |              Dim theMeasurable As Measurable
+                |              Set theMeasurable = theMeasureService.GetMeasurable(theSelection, CAAMeasurable)
+                |              Dim theAxisPositioning(11)
+                |              theAxisPositioning(0) = 0
+                |              theAxisPositioning(1) = 0
+                |              theAxisPositioning(2) = 0
+                |              theAxisPositioning(3) = 1
+                |              theAxisPositioning(4) = 0
+                |              theAxisPositioning(5) = 0
+                |              theAxisPositioning(6) = 0
+                |              theAxisPositioning(7) = 1
+                |              theAxisPositioning(8) = 0
+                |              theAxisPositioning(9) = 0
+                |              theAxisPositioning(10) = 0
+                |              theAxisPositioning(11) = 1
+                |              theMeasurable.SetAxisSystemOnMeasurable
+                |              theAxisPositioning
+
+        :param tuple i_axis_positioning:
+        :return: None
+        """
+        return self.com_object.SetAxisSystemOnMeasurable(i_axis_positioning)
+
+    def set_measurable_context_type(self, i_context_type: int) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetMeasurableContextType(CATMeasurableContextType
+                | iContextType)
+                |     Set the Measurable Context Type for Measure Calcualtion.
+                | 
+                |     Parameters:
+                | 
+                |         iContextType
+                |             The information of the Context Type for Measure Calcualtion.
+                |             
+                | 
+                |     Example:
+                | 
+                |            This example set the axis system for theMeasurable
+                |            computation.
+                |            
+                | 
+                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                |              Dim theMeasurable As Measurable
+                |              Set theMeasurable = theMeasureService.GetMeasurable(theSelection, CAAMeasurable)
+                |              Dim ContextType As CATMeasurableContextType
+                |         Set ContextType = ProductContext
+                |              theMeasurable.SetMeasurableContextType
+                |              ContextType
+
+        :param int i_context_type:
+        :return: None
+        """
+        return self.com_object.SetMeasurableContextType(i_context_type)
+
+    def __repr__(self):
+        return f'MeasurableInContext(name="{self.name}")'
