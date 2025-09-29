@@ -121,7 +121,7 @@ class FileSystem(AnyObject):
                 |         iPathChunk1
                 |             The first path chunk (for instance "E:\\tmp"). 
                 |         iPathChunk2
-                |             The second path chunk (for instance "local\myfile.txt").
+                |             The second path chunk (for instance "local\\myfile.txt").
                 |             
                 |         oPath
                 |             The resulting path (for instance "E:\\tmp\\local\\myfile.txt").
@@ -391,7 +391,7 @@ class FileSystem(AnyObject):
                 |             The full path of the file to retrieve.
                 | 
                 |             Example:
-                |                 This example retrieves the file C:\Tests in the FileObj from
+                |                 This example retrieves the file C:\\Tests in the FileObj from
                 |                 the file system object FileSys.
                 | 
                 |                  Dim FileObj As File

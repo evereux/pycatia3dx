@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Relation(KnowledgeActivateObject):
-
     """
         .. note::
             :class: toggle
@@ -168,9 +167,9 @@ class Relation(KnowledgeActivateObject):
                 |     cannot handle it as a Parameter object. For example, in a relation
                 |     like
                 | 
-                |     Area.1 = area(PartBody\Pad.1\Sketch.1)
+                |     Area.1 = area(PartBody\\Pad.1\\Sketch.1)
                 | 
-                |     the object PartBody\Pad.1\Sketch.1 is a sketch and not a
+                |     the object PartBody\\Pad.1\\Sketch.1 is a sketch and not a
                 |     parameter.
                 |     To use such an object, call the Visual Basic TypeName function to retrieve
                 |     its real type.
@@ -259,4 +258,4 @@ class Relation(KnowledgeActivateObject):
         return self.com_object.Rename(i_name)
 
     def __repr__(self):
-        return f'Relation(name="{ self.name }")'
+        return f'Relation(name="{self.name}")'

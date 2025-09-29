@@ -61,7 +61,7 @@ class SettingRepository(SettingController):
         :param str i_attr_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetAttr(i_attr_name))
+        return self.com_object.GetAttr(i_attr_name)
 
     def get_attr_array(self, i_attr_name: str) -> tuple:
         """

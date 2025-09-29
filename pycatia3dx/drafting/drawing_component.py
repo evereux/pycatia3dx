@@ -378,7 +378,7 @@ class DrawingComponent(AnyObject):
         :param CATVariant i_index:
         :return: AnyObject
         """
-        return AnyObject(self.com_object.GetModifiableObject(i_index.com_object))
+        return AnyObject(self.com_object.GetModifiableObject(i_index))
 
     def get_modifiable_objects_count(self) -> int:
         """

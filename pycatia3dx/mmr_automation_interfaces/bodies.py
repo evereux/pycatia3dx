@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Bodies(Collection):
-
     """
         .. note::
             :class: toggle
@@ -97,7 +96,7 @@ class Bodies(Collection):
         :param CATVariant i_index:
         :return: Body
         """
-        return Body(self.com_object.Item(i_index.com_object))
+        return Body(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'Bodies(name="{ self.name }")'
+        return f'Bodies(name="{self.name}")'

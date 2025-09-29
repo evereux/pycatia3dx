@@ -10,7 +10,6 @@
 from typing import TYPE_CHECKING
 
 from pycatia3dx.interfaces.editors import Editors
-from pycatia3dx.interfaces.enums import CatScriptCommand
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
 from pycatia3dx.interfaces.service import Service
@@ -356,7 +355,7 @@ class Application(AnyObject):
                         |          The returned value is like this:
                         |
                         |
-                        |          \\lisa\cxr1arel\bsf\alpha_a\code\bin\CNEXT.exe
+                        |          \\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
 
                 :return: str
                 """
@@ -583,7 +582,7 @@ class Application(AnyObject):
                         |          The returned value is like this:
                         |
                         |
-                        |          \\lisa\cxr1arel\bsf\alpha_a\code\bin
+                        |          \\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
 
                 :return: str
                 """
@@ -706,13 +705,13 @@ class Application(AnyObject):
                 |                   Double
                 |                   AverageDialogWindowRight = 38#          'distance from the right side of
                 |                                                           'the CATIA frame and
-                |                                                           the
-right                |                                                           'side of the dialog
-window                |                   AverageDialogWindowBottom = 81#         'distance from the bottom side of
+                |                                                           the right
+                |                                                           'side of the dialog window
+                |                   AverageDialogWindowBottom = 81#         'distance from the bottom side of
                 |                                                           'the CATIA frame and
-                |                                                           the
-bottom                |                                                           'side of the dialog
-window                |                   CATIA.HSOSynchronized = False
+                |                                                           the bottom
+                |                                                           'side of the dialog window
+                |                   CATIA.HSOSynchronized = False
                 |                   CATIA.ScriptCommand = CatScriptCommandStart    'we activate, at the beginning of the script,
                 |                                              'a fake exclusive command. The
                 |                                              Select
@@ -777,18 +776,18 @@ window                |                   CATIA.HSOSynchronized = False
                 |                   RenameOperation.NameValue.Enabled = False
                 |                   RenameOperation.FeatureValue.Enabled = False
                 |                   RenameOperation.OKCommandButton.Enabled = False 'we disable all
-                |                                                                   'the
-currently                |                                                                  
-'enabled                |                                                                  
-'dialog                |                                                                  
-'controls                |                   AnInteractiveMethodIsRunning = True
+                |                                                                   'the currently
+                |                                                                  'enabled
+                |                                                                  'dialog
+                |                                                                  'controls
+                |                   AnInteractiveMethodIsRunning = True
                 |                   Filter(0) = "AnyObject"
                 |                   Status = Selection.SelectElement(Filter,"Select a feature",False)
                 |                   AnInteractiveMethodIsRunning = False
                 |                   RenameOperation.OKCommandButton.Enabled = True  'we enable the
-                |                                                                   'disabled
-dialog                |                                                                  
-'controls                |                   If (Status="Cancel") Then
+                |                                                                   'disabled dialog
+                |                                                                  'controls
+                |                   If (Status="Cancel") Then
                 |                       CATIA.HSOSynchronized = True
                 |                       CATIA.ScriptCommand = CatScriptCommandStop  
                 |                       Unload RenameOperation
@@ -855,10 +854,10 @@ dialog                |
                 |     Different uses of this property might cause the CATIA frame to freeze,
                 |     until the Escape key is pressed.
 
-        :return: CatScriptCommand
+        :return: int
         """
 
-        return CatScriptCommand(self.com_object.ScriptCommand)
+        return self.com_object.ScriptCommand
 
     @script_command.setter
     def script_command(self, value: int):

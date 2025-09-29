@@ -435,7 +435,7 @@ class Window(AnyObject):
                 |         This example prints the CADWindow window's active viewer in a
                 |         file.
                 | 
-                |          CADWindow.PrintToFile("e:\temp\cadwin.prn")
+                |          CADWindow.PrintToFile("e:\\temp\\cadwin.prn")
 
         :param str file_name:
         :return: None

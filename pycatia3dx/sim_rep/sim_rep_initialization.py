@@ -117,7 +117,7 @@ class SimRepInitialization(CATBaseDispatch):
         :param SimParameterSet i_parameter_set:
         :return: Variant
         """
-        return Variant(self.com_object.InitializeRep(i_parameter_set.com_object))
+        return self.com_object.InitializeRep(i_parameter_set.com_object)
 
     def __repr__(self):
         return f'SimRepInitialization()'

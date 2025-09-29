@@ -59,7 +59,7 @@ class PLMEntity(AnyObject):
         :param str i_attr_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetAttributeValue(i_attr_name))
+        return self.com_object.GetAttributeValue(i_attr_name)
 
     def get_custom_type(self) -> str:
         """

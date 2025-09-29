@@ -168,7 +168,7 @@ class EngConnection(AnyObject):
                 |         inumImpacted
                 |             [in] the impacted number. 
                 |         oImpacted
-                |             [out] the impacted as string:"Product.1\Product.2".
+                |             [out] the impacted as string:"Product.1\\Product.2".
                 |             
                 |         oCtxImpacted
                 |             [out] the context of the impacted as string.

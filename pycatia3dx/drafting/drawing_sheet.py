@@ -530,7 +530,7 @@ class DrawingSheet(AnyObject):
                 |     Example:
                 |         This example prints the DrawingSheet1 in a file.
                 | 
-                |          DrawingSheet1.PrintToFile "e:\temp\sheet1.prn"
+                |          DrawingSheet1.PrintToFile "e:\\temp\\sheet1.prn"
 
         :param str file_name:
         :return: None

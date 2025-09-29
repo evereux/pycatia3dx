@@ -169,10 +169,10 @@ class Viewer(AnyObject):
                 |             captured image 
                 |         Example:
                 |             This example captures the displayed part of the MyViewer viewer as
-                |             a BMP image, and stores it in the e:\MyImage.bmp
+                |             a BMP image, and stores it in the e:\\MyImage.bmp
                 |             file.
                 | 
-                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\MyImage.bmp"
+                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\\MyImage.bmp"
 
         :param CatCaptureFormat i_format:
         :param str i_file:

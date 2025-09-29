@@ -7,7 +7,6 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.fmt_mode.enums import SimMeshEntityType
 from pycatia3dx.knowledge_interfaces.parameters import Parameters
 from pycatia3dx.knowledge_interfaces.relations import Relations
 from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
@@ -276,7 +275,7 @@ class SimFemRoot(AnyObject):
         """
         return self.com_object.GetNbOfChildrenFemRep()
 
-    def get_numbering_labels(self, i_type: SimMeshEntityType) -> tuple:
+    def get_numbering_labels(self, i_type: int) -> tuple:
         """
         .. note::
             :class: toggle
@@ -291,12 +290,12 @@ class SimFemRoot(AnyObject):
                 |         iType
                 |             Type of mesh entity: simMeshNodeEntity or simMeshElementEntity.
 
-        :param SimMeshEntityType i_type:
+        :param int i_type:
         :return: tuple
         """
-        return self.com_object.GetNumberingLabels(i_type.com_object)
+        return self.com_object.GetNumberingLabels(i_type)
 
-    def get_numbering_labels_from_path(self, i_type: SimMeshEntityType, i_path: AnyObject) -> tuple:
+    def get_numbering_labels_from_path(self, i_type: int, i_path: AnyObject) -> tuple:
         """
         .. note::
             :class: toggle
@@ -314,13 +313,13 @@ class SimFemRoot(AnyObject):
                 |         iType
                 |             Path to child FEM, mesh part or group.
 
-        :param SimMeshEntityType i_type:
+        :param int i_type:
         :param AnyObject i_path:
         :return: tuple
         """
-        return self.com_object.GetNumberingLabelsFromPath(i_type.com_object, i_path.com_object)
+        return self.com_object.GetNumberingLabelsFromPath(i_type, i_path.com_object)
 
-    def get_numbering_offset_value(self, i_type: SimMeshEntityType, i_child_fem_rep: AnyObject, o_value: int) -> None:
+    def get_numbering_offset_value(self, i_type: int, i_child_fem_rep: AnyObject, o_value: int) -> None:
         """
         .. note::
             :class: toggle
@@ -344,7 +343,7 @@ class SimFemRoot(AnyObject):
         :param int o_value:
         :return: None
         """
-        return self.com_object.GetNumberingOffsetValue(i_type.com_object, i_child_fem_rep.com_object, o_value)
+        return self.com_object.GetNumberingOffsetValue(i_type, i_child_fem_rep.com_object, o_value)
 
     def get_set(self, i_set_type: str) -> AnyObject:
         """
@@ -498,7 +497,7 @@ class SimFemRoot(AnyObject):
         """
         return self.com_object.RemoveNumbering()
 
-    def set_numbering_offset_value(self, i_type: SimMeshEntityType, i_child_fem_rep: AnyObject, i_value: int) -> None:
+    def set_numbering_offset_value(self, i_type: int, i_child_fem_rep: AnyObject, i_value: int) -> None:
         """
         .. note::
             :class: toggle
@@ -516,12 +515,12 @@ class SimFemRoot(AnyObject):
                 |         iChildFEMRep
                 |             The CATIA base object that represent the child FEM representation.
 
-        :param SimMeshEntityType i_type:
+        :param int i_type:
         :param AnyObject i_child_fem_rep:
         :param int i_value:
         :return: None
         """
-        return self.com_object.SetNumberingOffsetValue(i_type.com_object, i_child_fem_rep.com_object, i_value)
+        return self.com_object.SetNumberingOffsetValue(i_type, i_child_fem_rep.com_object, i_value)
 
     def update(self) -> None:
         """

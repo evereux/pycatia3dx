@@ -289,7 +289,7 @@ class AssemblyConstraint(AnyObject):
                 |             [in] the Support number. 
                 |         oSupport
                 |             [out] the Support as
-                |             string:"Product.1\Product.2\Rep1.1\ObjectName". If the Object has no name, the
+                |             string:"Product.1\\Product.2\\Rep1.1\\ObjectName". If the Object has no name, the
                 |             TypeName is returned. 
                 |         oCtxSupport
                 |             [out] the context of the Support as string.

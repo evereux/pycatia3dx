@@ -397,7 +397,7 @@ class DrawingViews(Collection):
         :param CATVariant i_index:
         :return: None
         """
-        return self.com_object.Remove(i_index.com_object)
+        return self.com_object.Remove(i_index)
 
     def __repr__(self):
         return f'DrawingViews(name="{self.name}")'

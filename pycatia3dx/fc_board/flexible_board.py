@@ -7,7 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx.fc_board.flexible_area import FlexibleArea
+from pycatia3dx.mmr_automation_interfaces.body import Body
 from pycatia3dx.system.any_object import AnyObject
 
 
