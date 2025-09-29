@@ -38,7 +38,7 @@ class DrawingDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateColoringPattern(CATBSTR iName,long iColor)
                 |     Creates a coloring Pattern.
                 | 
@@ -60,7 +60,7 @@ class DrawingDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDottingPattern(CATBSTR iName,double iPitch,long iBright,long
                 | iColor,long iZigZag)
                 |     Creates a dotting Pattern.
@@ -95,7 +95,7 @@ class DrawingDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateHatchingPattern(CATBSTR iName,long iHatchingNb,double iOffset,double
                 | iAngle,CATSafeArrayVariant iPitch,CATSafeArrayVariant
                 | iTexture,CATSafeArrayVariant iThikness,CATSafeArrayVariant
@@ -142,7 +142,7 @@ class DrawingDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateNonePattern(CATBSTR iName)
                 |     Creates an empty Pattern.
                 | 

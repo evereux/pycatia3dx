@@ -40,7 +40,7 @@ class KinCommands(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(EngConnection iJoint,CATKinMechanismCommandType iType) As
                 | KinCommand
                 |     Creates a new mechanism command and adds it to the command collection. The
@@ -67,7 +67,7 @@ class KinCommands(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As KinCommand
                 |     Returns a command using its index or its name from the command
                 |     collection.
@@ -94,7 +94,7 @@ class KinCommands(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a command using its index or its name from the command
                 |     collection.

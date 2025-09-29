@@ -40,7 +40,7 @@ class MaterialBehaviors(PLMEntities):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddSimulationBehavior() As MaterialBehavior
                 |     Allow to add a domain in list.
                 | 
@@ -72,7 +72,7 @@ class MaterialBehaviors(PLMEntities):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBehavior(CATVariant iIndex) As MaterialBehavior
                 |     Allow to get a Behavior.
                 | 
@@ -103,7 +103,7 @@ class MaterialBehaviors(PLMEntities):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(MaterialBehavior iBehavior)
                 |     Allow to remove a material.
                 | 

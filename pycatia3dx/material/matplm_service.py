@@ -55,7 +55,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialCore(AnyObject iSupport,MaterialGeneric
                 | oCoreMaterial,AppliedMaterial oCoreAppliedMaterial)
                 |     Method which allows to get the core material applied on the provided
@@ -110,7 +110,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialCovering(AnyObject iSupport,Collection
                 | oListCoveringMaterials,AppliedMaterials
                 | oCoveringAppliedMaterials)
@@ -160,7 +160,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialsInSession(Collection oMaterialsInSession)
                 |     Get all materials in session.
                 | 
@@ -191,7 +191,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LoadMaterials(AnyObject iVPMReference,boolean iRecursive)
                 |     Load material attached to a given node.
                 | 
@@ -224,7 +224,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMCreate(CATBSTR iUserType,MaterialGeneric oPLMMatEntity,Editor
                 | oEditor)
                 |     Method which allows to create a new material reference.
@@ -271,7 +271,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAppliedMaterial(AppliedMaterial iAppliedMaterial)
                 |     Removes applied material.
                 | 
@@ -302,7 +302,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDisplayMsgBox(boolean iboolDisplayMsgBox)
                 |     Allow to display or not a message Box when there is an
                 |     error.
@@ -337,7 +337,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialCore(AnyObject iSupport,MaterialGeneric
                 | iCoreMaterial,AppliedMaterial oCoreAppliedMaterial)
                 |     Applies a core material on the support defined in iSupport. If a core
@@ -393,7 +393,7 @@ class MatplmService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialCovering(AnyObject iSupport,MaterialGeneric
                 | iCoveringMaterial,AppliedMaterial oCoveringAppliedMaterial)
                 |     Applies a covering material on the support defined in

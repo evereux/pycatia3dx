@@ -144,7 +144,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AttachDressupProduct(VPMOccurrence iMechanismProduct,VPMOccurrence
                 | iAttachedProduct)
                 |     Attaches a product to a given mechanism product thru a dressup
@@ -187,7 +187,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CleanSimulation()
                 |     Cleans the simulation solver.
                 |     Role: To clean the solver.
@@ -216,7 +216,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DetachDressupProduct(VPMOccurrence iAttachedProduct)
                 |     Detaches a dressup product previously attached to a mechanism
                 |     product.
@@ -250,7 +250,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDressupProducts(VPMOccurrence iMechanismProduct) As
                 | CATSafeArrayVariant
                 |     Returns the dressup product list attached to a given mechanism
@@ -299,7 +299,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrepareSimulation()
                 |     Prepares the solver to run.
                 |     Role: To prepare the mechanism simulation.
@@ -332,7 +332,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RunCommand(CATVariant iCommand,double iValue)
                 |     Makes a step of simulation for a mechanism command.
                 |     Role: To run the solver for a command.
@@ -373,7 +373,7 @@ class KinMechanism(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RunSimulation(CATSafeArrayVariant iCmdValues)
                 |     Makes a step of simulation for the all mechanism.
                 |     Role: To run the solver with given values.

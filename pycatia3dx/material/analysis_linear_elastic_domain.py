@@ -79,7 +79,7 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DomainParametersCheck()
                 | 
                 |     Deprecated:
@@ -98,7 +98,7 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDomainParameter(CATBSTR iParamName) As CATVariant
                 | 
                 |     Deprecated:
@@ -154,7 +154,7 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDomainParameter(CATBSTR iParamName,CATVariant
                 | iParamValue)
                 | 

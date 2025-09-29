@@ -39,7 +39,7 @@ class Materials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(Material iMaterial)
                 |     Allow to add a material in list.
                 | 
@@ -68,7 +68,7 @@ class Materials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Material
                 |     Allow to get a material.
                 | 
@@ -99,7 +99,7 @@ class Materials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(Material iMaterial)
                 |     Allow to remove a material.
                 | 

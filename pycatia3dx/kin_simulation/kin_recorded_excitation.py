@@ -61,7 +61,7 @@ class KinRecordedExcitation(SimExcitation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetKeyFramesTimes(CATSafeArrayVariant oTimes)
                 |     Gets the key frames times
                 | 
@@ -89,7 +89,7 @@ class KinRecordedExcitation(SimExcitation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetKeyFramesValues(KinCommand iKinCmd,CATSafeArrayVariant
                 | oValues)
                 |     Gets the key frames values for a kinematics command.

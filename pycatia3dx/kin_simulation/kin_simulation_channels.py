@@ -39,7 +39,7 @@ class KinSimulationChannels(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iChannelRank) As KinSimulationChannel
                 |     Returns a KinSimulationChannel using its rank inside the
                 |     collection.

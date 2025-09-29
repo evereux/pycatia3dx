@@ -40,7 +40,7 @@ class ListObject(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(PLMEntity iItemValue)
                 |     Allow to add an object in list.
                 | 
@@ -69,7 +69,7 @@ class ListObject(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get(CATVariant iIndex) As CATBaseDispatch
                 |     Retrieves a Material object from the list.
                 | 
@@ -100,7 +100,7 @@ class ListObject(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As PLMEntity
                 |     Allow to get an object.
                 | 
@@ -131,7 +131,7 @@ class ListObject(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(PLMEntity iItemValue)
                 |     Allow to remove an object.
                 | 

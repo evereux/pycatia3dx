@@ -38,7 +38,7 @@ class MaterialBehaviorOptions(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(CATBaseDispatch iMaterialBehaviorOption,short oIndex)
                 |     Allow to add an option in list.
                 | 
@@ -60,7 +60,7 @@ class MaterialBehaviorOptions(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOption(CATVariant iIndex) As CATBaseDispatch
                 |     Allow to retrieve an option in list.
                 | 
@@ -81,7 +81,7 @@ class MaterialBehaviorOptions(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Allow to remove an option in list.
                 | 

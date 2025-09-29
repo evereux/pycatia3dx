@@ -40,7 +40,7 @@ class MaterialDomains(PLMEntities):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(CATBSTR iUserDiscipline,MaterialDomain oDomain)
                 |     Allow to add a domain in list.
                 | 
@@ -76,7 +76,7 @@ class MaterialDomains(PLMEntities):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetItemByDiscipline(CATSafeArrayVariant iUserDiscipline,Collection
                 | oListDomain)
                 |     Allow to retrieve domains in list.

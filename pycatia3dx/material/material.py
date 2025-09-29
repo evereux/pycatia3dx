@@ -41,7 +41,7 @@ class Material(MaterialGeneric):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDomains(MaterialDomains oListDomain)
                 |     Allow to get all material's domains.
                 | 
@@ -71,7 +71,7 @@ class Material(MaterialGeneric):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSimulationBehaviors(MaterialBehaviors oListBehavior)
                 |     Allow to get all material's simulation behaviors.
                 | 

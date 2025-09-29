@@ -128,7 +128,7 @@ class KinScenarioSpec(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddRecordedExcitation() As KinRecordedExcitation
                 |     Creates and adds a recorded excitation under the kinematics
                 |     scenario.
@@ -151,7 +151,7 @@ class KinScenarioSpec(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRecordedExcitation() As KinRecordedExcitation
                 |     Gets the recorded Excitation.
                 | 
@@ -171,7 +171,7 @@ class KinScenarioSpec(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRecordedExcitation(KinRecordedExcitation
                 | iRecordedExcitation)
                 |     Removes the recorded Excitation.
@@ -194,7 +194,7 @@ class KinScenarioSpec(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTimeParameters(double iStartTime,double iEndTime,double
                 | iTimeStep)
                 |     Sets the time parameters of the kinematics scenario. The time parameters

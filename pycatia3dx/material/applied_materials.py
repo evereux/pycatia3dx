@@ -39,7 +39,7 @@ class AppliedMaterials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(AppliedMaterial iAppliedMaterial)
                 |     Allow to add an applied-material.
                 | 
@@ -69,7 +69,7 @@ class AppliedMaterials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As AppliedMaterial
                 |     Allow to get an applied-material.
                 | 
@@ -101,7 +101,7 @@ class AppliedMaterials(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(AppliedMaterial iAppliedMaterial)
                 |     Allow to remove an applied-material.
                 | 

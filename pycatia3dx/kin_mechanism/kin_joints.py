@@ -39,7 +39,7 @@ class KinJoints(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Exclude(CATVariant iIndex)
                 |     Dereferences a Joint using its index or its name from the Joint
                 |     collection.
@@ -63,7 +63,7 @@ class KinJoints(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Include(EngConnection iJoint)
                 |     References a Joint in the mechanism and adds it to the Joint collection.
                 |     The Joint will have to exist in the assembly's collection.
@@ -83,7 +83,7 @@ class KinJoints(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As EngConnection
                 |     Returns a Joint using its index or its name from the Joint
                 |     collection.
