@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingDimLine(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -229,7 +228,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDimLineDir(double oDirX,double oDirY)
                 |     Returns direction of a dimension line in case of a catDimUserDefined
                 |     representation mode. To retrieve the representation mode:
@@ -256,7 +255,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
                 |     Get geometrical infomation of dimension line.
                 | 
@@ -280,7 +279,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbColor(long Index) As long
                 |     Get symbol color of dimension line.
                 | 
@@ -305,7 +304,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbThickness(long Index) As double
                 |     Get symbol thickness of dimension line.
                 | 
@@ -331,7 +330,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbType(long Index) As CatDimSymbols
                 |     Get symbol type of dimension line.
                 | 
@@ -356,7 +355,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbColor(long Index,long iColorSymb)
                 |     Set symbol color of dimension line.
                 | 
@@ -382,7 +381,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbThickness(long Index,double iThickSymb)
                 |     Set symbol thickness of dimension line.
                 | 
@@ -409,7 +408,7 @@ class DrawingDimLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbType(long Index,CatDimSymbols iSymbType)
                 |     Set symbol type of dimension line.
                 | 
@@ -431,4 +430,4 @@ class DrawingDimLine(AnyObject):
         return self.com_object.SetSymbType(index, i_symb_type)
 
     def __repr__(self):
-        return f'DrawingDimLine(name="{ self.name }")'
+        return f'DrawingDimLine(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingComponent(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -196,7 +195,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Explode()
                 |     Explodes the drawing component instance (every sub elements of the drawing
                 |     component are created). Note: The drawing component is not removed by Explode
@@ -221,7 +220,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExplodeAndSelect()
                 |     Explodes the drawing component instance (every sub elements of the drawing
                 |     component are created) and put created sub elements in selection
@@ -242,7 +241,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExposeCompRef()
                 |     Exposes the component reference of this drawing component instance in a new
                 |     detail sheet.
@@ -262,7 +261,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExposeCompRefInSheet(DrawingSheet iSheet)
                 |     Exposes the component reference of this drawing component instance in a
                 |     specific detail sheet.
@@ -292,7 +291,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Flip()
                 |     Flips the drawing component instance around X axis To flip around Y axis
                 |     you have to flip the component around X and to add a rotation of 180
@@ -313,7 +312,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlip() As boolean
                 |     Returns the flip state of a drawing component instance around X
                 |     axis.
@@ -333,7 +332,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMatrix(CATSafeArrayVariant ioMatrix)
                 |     Gets the matrix of the drawing component instance. This matrix enables you
                 |     to define the position (index 4 and 5 of the matrix) and the scale, the angle
@@ -365,7 +364,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableObject(CATVariant iIndex) As AnyObject
                 |     Gets a modifiable object by index or name in this drawing component
                 |     instance.
@@ -386,7 +385,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableObjectsCount() As long
                 |     Gets the number of modifiable objects in this drawing component
                 |     instance.
@@ -406,7 +405,7 @@ class DrawingComponent(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMatrix(CATSafeArrayVariant iMatrix)
                 |     Sets the matrix of the drawing component instance. This matrix enables you
                 |     to define the position (index 4 and 5 of the matrix) and the scale, the angle
@@ -434,4 +433,4 @@ class DrawingComponent(AnyObject):
         return self.com_object.SetMatrix(i_matrix)
 
     def __repr__(self):
-        return f'DrawingComponent(name="{ self.name }")'
+        return f'DrawingComponent(name="{self.name}")'

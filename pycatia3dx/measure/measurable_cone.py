@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_surface import MeasurableSurface
 
 
 class MeasurableCone(MeasurableSurface):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class MeasurableCone(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
                 |     Retrieves the angle of the cone.
                 | 
@@ -68,7 +67,7 @@ class MeasurableCone(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
                 |     Retrieves the axis vector of the cone.
                 | 
@@ -99,7 +98,7 @@ class MeasurableCone(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
                 |     Retrieves the position of a point on the axis of the cone.
                 | 
@@ -125,12 +124,13 @@ class MeasurableCone(MeasurableSurface):
         """
         return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
 
-    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float, o_y_end_point: float, o_z_end_point: float) -> None:
+    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float,
+                   o_y_end_point: float, o_z_end_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(double oXStartPoint,double oYStartPoint,double
                 | oZStartPoint,double oXEndPoint,double oYEndPoint,double
                 | oZEndPoint)
@@ -165,7 +165,8 @@ class MeasurableCone(MeasurableSurface):
         :param float o_z_end_point:
         :return: None
         """
-        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point, o_y_end_point, o_z_end_point)
+        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point,
+                                         o_y_end_point, o_z_end_point)
 
     def __repr__(self):
-        return f'MeasurableCone(name="{ self.name }")'
+        return f'MeasurableCone(name="{self.name}")'

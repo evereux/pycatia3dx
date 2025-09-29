@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_surface import MeasurableSurface
 
 
 class MeasurablePlane(MeasurableSurface):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class MeasurablePlane(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPlane(CATSafeArrayVariant ioPlane)
                 |     Retrieves informations of the plane.
                 | 
@@ -86,4 +85,4 @@ class MeasurablePlane(MeasurableSurface):
         return self.com_object.GetPlane(io_plane)
 
     def __repr__(self):
-        return f'MeasurablePlane(name="{ self.name }")'
+        return f'MeasurablePlane(name="{self.name}")'

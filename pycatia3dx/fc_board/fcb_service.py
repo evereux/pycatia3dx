@@ -39,7 +39,7 @@ class FcbService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFlexibleBoard(Part iPart,boolean iCreateAxissystem) As
                 | CATBaseDispatch
                 |     Creates a Flexible Board.
@@ -71,7 +71,7 @@ class FcbService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlexibleBoard(Part iPart) As CATBaseDispatch
                 |     Gets the flexible board from the CATIAPart
                 | 

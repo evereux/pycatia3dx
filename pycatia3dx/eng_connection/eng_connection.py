@@ -115,7 +115,7 @@ class EngConnection(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeEquivalentType()
                 |     Compute and set the equivalent type.
 
@@ -128,7 +128,7 @@ class EngConnection(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDirection(short iNbp) As CatEngConnectionDirection
                 |     Returns the direction of the Engineering Connection.
                 |     Role: The direction specifies for each impacted if the instances can move
@@ -158,7 +158,7 @@ class EngConnection(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetImpacted(short inumImpacted,CATBSTR oImpacted,CATBSTR
                 | oCtxImpacted)
                 |     Returns impacted.
@@ -185,7 +185,7 @@ class EngConnection(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbImpacteds() As short
                 |     Returns number of impacted.
                 | 
@@ -210,7 +210,7 @@ class EngConnection(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDirection(short iNbp,CatEngConnectionDirection
                 | iDirection)
                 |     Sets the direction in the Engineering Connection.

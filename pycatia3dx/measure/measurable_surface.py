@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableSurface(MeasurableInContext):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
                 |     Retrieves the area of the surface.
                 | 
@@ -66,7 +65,7 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetArea_COfG(double oArea,double oXCOfG,double oYCOfG,double
                 | oZCOfG)
                 |     Retrieves the area and the position of the center of gravity of the
@@ -102,7 +101,7 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
                 |     Retrieves the position of the center of gravity of a
                 |     surface.
@@ -134,7 +133,7 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPerimeter() As double
                 |     Retrieves the perimeter of the surface.
                 | 
@@ -156,4 +155,4 @@ class MeasurableSurface(MeasurableInContext):
         return self.com_object.GetPerimeter()
 
     def __repr__(self):
-        return f'MeasurableSurface(name="{ self.name }")'
+        return f'MeasurableSurface(name="{self.name}")'

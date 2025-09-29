@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingPicture(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -441,7 +440,7 @@ class DrawingPicture(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginalHeight() As double
                 |     Gets the original height of the drawing picture. The height, like any
                 |     length, is measured in millimeters.
@@ -461,7 +460,7 @@ class DrawingPicture(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginalWidth() As double
                 |     Gets the original width of the drawing picture. The width, like any length,
                 |     is measured in millimeters.
@@ -477,4 +476,4 @@ class DrawingPicture(AnyObject):
         return self.com_object.GetOriginalWidth()
 
     def __repr__(self):
-        return f'DrawingPicture(name="{ self.name }")'
+        return f'DrawingPicture(name="{self.name}")'

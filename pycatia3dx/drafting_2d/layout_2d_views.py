@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Layout2DViews(Collection):
-
     """
         .. note::
             :class: toggle
@@ -62,12 +61,13 @@ class Layout2DViews(Collection):
 
         return Layout2DView(self.com_object.ActiveView)
 
-    def add_auxiliary(self, i_reference_view: Layout2DView, i_bc_segment: tuple, i_xorient: float, i_yorient: float, i_section_type: int, i_x: float, i_y: float) -> Layout2DView:
+    def add_auxiliary(self, i_reference_view: Layout2DView, i_bc_segment: tuple, i_xorient: float, i_yorient: float,
+                      i_section_type: int, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddAuxiliary(Layout2DView iReferenceView,CATSafeArrayVariant
                 | iBCSegment,double iXorient,double iYorient,CatViewType iSectionType,double
                 | iX,double iY) As Layout2DView
@@ -151,14 +151,16 @@ class Layout2DViews(Collection):
         :param float i_y:
         :return: Layout2DView
         """
-        return Layout2DView(self.com_object.AddAuxiliary(i_reference_view.com_object, i_bc_segment, i_xorient, i_yorient, i_section_type, i_x, i_y))
+        return Layout2DView(
+            self.com_object.AddAuxiliary(i_reference_view.com_object, i_bc_segment, i_xorient, i_yorient,
+                                         i_section_type, i_x, i_y))
 
     def add_detail(self, i_detail_name: str) -> Layout2DView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iDetailName) As Layout2DView
                 |     Creates a detail view and adds it to the layout view collection. This
                 |     layout view becomes the active one.
@@ -202,7 +204,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddFrom3DPlane(CATSafeArrayVariant iPlane,CatViewType iViewType,double
                 | iX,double iY) As Layout2DView
                 |     Creates a viewFrom3D View2DL with the given 3Dplane as its view plane at
@@ -261,7 +263,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddPrimary(double iX,double iY) As Layout2DView
                 |     Creates a Layout view and adds it to the Layout view collection. This
                 |     Layout view becomes the active one.
@@ -303,7 +305,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddRelated(Layout2DView iReferenceView,CatViewSide iSide,double iX,double
                 | iY) As Layout2DView
                 |     Creates a projection or isometric Layout View2DL from a given View2DL. The
@@ -361,7 +363,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Layout2DView
                 |     Returns a Layout2D view using its index or its name from the Layout2DViews
                 |     collection.
@@ -409,7 +411,7 @@ class Layout2DViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a layout2D view from the Layout2DViews collection.
                 | 
@@ -443,4 +445,4 @@ class Layout2DViews(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'Layout2DViews(name="{ self.name }")'
+        return f'Layout2DViews(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingArrows(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,12 +35,13 @@ class DrawingArrows(Collection):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add(self, i_head_point_x: float, i_head_point_y: float, i_tail_point_x: float, i_tail_point_y: float) -> DrawingArrow:
+    def add(self, i_head_point_x: float, i_head_point_y: float, i_tail_point_x: float,
+            i_tail_point_y: float) -> DrawingArrow:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iHeadPointX,double iHeadPointY,double iTailPointX,double
                 | iTailPointY) As DrawingArrow
                 |     Creates a drawing arrow and adds it to the DrawingArrows collection.
@@ -83,7 +83,7 @@ class DrawingArrows(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingArrow
                 |     Returns a drawing arrow using its index from the DrawingArrows
                 |     collection.
@@ -121,7 +121,7 @@ class DrawingArrows(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing arrow from the DrawingArrows collection.
                 |     
@@ -150,4 +150,4 @@ class DrawingArrows(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingArrows(name="{ self.name }")'
+        return f'DrawingArrows(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingGDTs(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,12 +35,13 @@ class DrawingGDTs(Collection):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add(self, i_position_leader_x: float, i_position_leader_y: float, i_position_x: float, i_position_y: float, i_gdt_symbol: int, i_text: str) -> DrawingGDT:
+    def add(self, i_position_leader_x: float, i_position_leader_y: float, i_position_x: float, i_position_y: float,
+            i_gdt_symbol: int, i_text: str) -> DrawingGDT:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iPositionLeaderX,double iPositionLeaderY,double
                 | iPositionX,double iPositionY,long iGDTSymbol,CATBSTR iText) As
                 | DrawingGDT
@@ -76,14 +76,16 @@ class DrawingGDTs(Collection):
         :param str i_text:
         :return: DrawingGDT
         """
-        return DrawingGDT(self.com_object.Add(i_position_leader_x, i_position_leader_y, i_position_x, i_position_y, i_gdt_symbol, i_text))
+        return DrawingGDT(
+            self.com_object.Add(i_position_leader_x, i_position_leader_y, i_position_x, i_position_y, i_gdt_symbol,
+                                i_text))
 
     def item(self, i_index: CATVariant) -> DrawingGDT:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingGDT
                 |     Returns a drawing GDT using its index from the drawing GDTs
                 |     collection.
@@ -119,7 +121,7 @@ class DrawingGDTs(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing GDT from the drawing GDTs collection.
                 | 
@@ -146,4 +148,4 @@ class DrawingGDTs(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingGdTs(name="{ self.name }")'
+        return f'DrawingGdTs(name="{self.name}")'

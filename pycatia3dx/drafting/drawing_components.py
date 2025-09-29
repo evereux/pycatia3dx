@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingComponents(Collection):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class DrawingComponents(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(DrawingView iDrawingComponentRef,double iPositionX,double iPositionY)
                 | As DrawingComponent
                 |     Creates a drawing component instance and adds it to the DrawingComponents
@@ -89,7 +88,7 @@ class DrawingComponents(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingComponent
                 |     Returns a drawing component instance using its index or its name from the
                 |     DrawingComponents collection.
@@ -133,7 +132,7 @@ class DrawingComponents(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing component from the DrawingComponents
                 |     collection.
@@ -164,4 +163,4 @@ class DrawingComponents(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingComponents(name="{ self.name }")'
+        return f'DrawingComponents(name="{self.name}")'

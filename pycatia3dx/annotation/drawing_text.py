@@ -412,7 +412,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivateFrame(CatTextFrameType itype)
                 |     Activates the text frame of the drawing text.
                 | 
@@ -439,7 +439,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFontName(long iFirst,long inbCharacter) As CATBSTR
                 |     Returns the font name on a substring of the drawing text.
                 | 
@@ -470,7 +470,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFontSize(long iFirst,long inbCharacter) As double
                 |     Returns the font size on a substring of the drawing text.
                 | 
@@ -501,7 +501,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableIn2DComponentInstances() As boolean
                 |     Returns if the text is modifiable or not in 2D component instances. The
                 |     text must own to a 2D component (NOT to a view)
@@ -521,7 +521,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterLink(long iIndex) As CATBaseDispatch
                 |     Returns the pointed parameter link
                 | 
@@ -551,7 +551,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterOnSubString(CatTextProperty iParam,long iFirst,long
                 | inbCharacter) As long
                 |     Returns a property on a substring of the drawing text.
@@ -591,7 +591,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertAttributeLink(long iFirst,long inbCharacter,CATBaseDispatch
                 | iOwnerAtt,CATBSTR iTypeInternalName,CATBSTR iAttInternalName)
                 |     Replace the given selection by the given attribute value
@@ -626,7 +626,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertVariable(long iFirst,long inbCharacter,CATBaseDispatch
                 | ibase)
                 |     Sets a Parameter in a string of the drawing text.
@@ -664,7 +664,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFontName(long iFirst,long inbCharacter,CATBSTR
                 | iFontName)
                 |     Sets the font size on a substring of the drawing text.
@@ -698,7 +698,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFontSize(long iFirst,long inbCharacter,double
                 | iFontSize)
                 |     Sets the font size on a substring of the drawing text.
@@ -731,7 +731,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetModifiableIn2DComponentInstances()
                 |     Sets the text as modifiable in 2D component instances.The text must own to
                 |     a 2D component (NOT to a view).then ,its content will be modifiable inside
@@ -752,7 +752,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameterOnSubString(CatTextProperty iParam,long iFirst,long
                 | inbCharacter,long iVal)
                 |     Sets a property on a substring of the drawing text.
@@ -793,7 +793,7 @@ class DrawingText(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SolveLink(CATBaseDispatch ipObj)
                 |     Resolve Link Template of the drawing text.
                 | 

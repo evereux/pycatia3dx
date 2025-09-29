@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableAxisSystem(MeasurableInContext):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class MeasurableAxisSystem(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(CATSafeArrayVariant ioAxisPosition)
                 |     Retrieves the information of the axis system.
                 | 
@@ -95,4 +94,4 @@ class MeasurableAxisSystem(MeasurableInContext):
         return self.com_object.GetAxis(io_axis_position)
 
     def __repr__(self):
-        return f'MeasurableAxisSystem(name="{ self.name }")'
+        return f'MeasurableAxisSystem(name="{self.name}")'

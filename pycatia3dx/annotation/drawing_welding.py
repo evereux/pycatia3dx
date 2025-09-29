@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingWelding(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -275,7 +274,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAdditionalSymbol(CatWelding iWeld) As
                 | CatWeldAdditionalSymbol
                 |     Returns the additional symbol of the drawing welding.
@@ -301,7 +300,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFinishSymbol(CatWelding iWeld) As
                 | CatDftWeldFinishSymbol
                 |     Returns the finish symbol of the drawing welding.
@@ -327,7 +326,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbol(CatWelding iWeld) As CatWeldingSymbol
                 |     Returns the symbol of the drawing welding.
                 | 
@@ -354,7 +353,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(CatWeldingField iField) As DrawingTextRange
                 |     Returns the field of the drawing welding in a drawing text
                 |     range.
@@ -384,7 +383,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAdditionalSymbol(CatWeldAdditionalSymbol iSymbol,CatWelding
                 | iweld)
                 |     Sets the additional symbol of the drawing welding.
@@ -413,7 +412,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFinishSymbol(CatDftWeldFinishSymbol iFinishSymbol,CatWelding
                 | iWeld)
                 |     Sets the finish symbol of the drawing welding.
@@ -443,7 +442,7 @@ class DrawingWelding(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbol(CatWeldingSymbol iSymbol,CatWelding iweld)
                 |     Sets the symbol of the drawing welding.
                 | 
@@ -467,4 +466,4 @@ class DrawingWelding(AnyObject):
         return self.com_object.SetSymbol(i_symbol, iweld)
 
     def __repr__(self):
-        return f'DrawingWelding(name="{ self.name }")'
+        return f'DrawingWelding(name="{self.name}")'

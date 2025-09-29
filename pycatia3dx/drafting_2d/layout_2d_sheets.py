@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Layout2DSheets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -68,7 +67,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iLayoutSheetName) As Layout2DSheet
                 |     Creates a Layout sheet and adds it to the Layout2DSheets collection. This
                 |     Layout sheet becomes the active one.
@@ -103,7 +102,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iLayoutSheetName) As Layout2DSheet
                 |     Creates a detail Layout sheet 2DL and adds it to the LayoutSheets2DL
                 |     collection. This detail Layout sheet becomes the active
@@ -140,7 +139,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Layout2DSheet
                 |     Returns a Layout sheet using its index or its name from the Layout2DSheets
                 |     collection.
@@ -183,7 +182,7 @@ class Layout2DSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a Layout2Dsheet from the Layout2DSheets
                 |     collection.
@@ -216,4 +215,4 @@ class Layout2DSheets(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'Layout2DSheets(name="{ self.name }")'
+        return f'Layout2DSheets(name="{self.name}")'

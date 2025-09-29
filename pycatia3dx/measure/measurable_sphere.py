@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_surface import MeasurableSurface
 
 
 class MeasurableSphere(MeasurableSurface):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class MeasurableSphere(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
                 |     Retrieves the position of the center of the sphere.
                 | 
@@ -73,7 +72,7 @@ class MeasurableSphere(MeasurableSurface):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double
                 |     Retrieves the radius of the sphere.
                 | 
@@ -94,4 +93,4 @@ class MeasurableSphere(MeasurableSurface):
         return self.com_object.GetRadius()
 
     def __repr__(self):
-        return f'MeasurableSphere(name="{ self.name }")'
+        return f'MeasurableSphere(name="{self.name}")'

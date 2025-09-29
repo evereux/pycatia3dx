@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingThreads(Collection):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class DrawingThreads(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBaseDispatch iGeomElem) As DrawingThread
                 |     Creates a drawing thread and adds it to the DrawingThreads collection.
                 |     
@@ -78,7 +77,7 @@ class DrawingThreads(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingThread
                 |     Returns a drawing thread using its index from the DrawingThreads
                 |     collection.
@@ -116,7 +115,7 @@ class DrawingThreads(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing thread from the DrawingThreads collection.
                 |     
@@ -146,4 +145,4 @@ class DrawingThreads(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingThreads(name="{ self.name }")'
+        return f'DrawingThreads(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.system.collection import Collection
 
 
 class DrawingLeaders(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class DrawingLeaders(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iHeadPointX,double iHeadPointY) As
                 | DrawingLeader
                 |     Creates a drawing leader and adds it to the DrawingLeaders collection.
@@ -80,7 +79,7 @@ class DrawingLeaders(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As DrawingLeader
                 |     Returns a drawing leader using its index from the DrawingLeaders
                 |     collection.
@@ -117,7 +116,7 @@ class DrawingLeaders(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(long iIndex)
                 |     Removes a drawing leader from the DrawingLeaders collection.
                 |     
@@ -147,4 +146,4 @@ class DrawingLeaders(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingLeaders(name="{ self.name }")'
+        return f'DrawingLeaders(name="{self.name}")'

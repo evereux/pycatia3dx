@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingGDT(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -207,7 +206,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferenceNumber(long iRowNumber) As long
                 |     Returns the number of references in a row of the GDT.
                 | 
@@ -235,7 +234,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(long iRowNumber,long iNumber) As
                 | DrawingTextRange
                 |     Returns the CATIADrawingTextRange of tolerance value and reference
@@ -269,7 +268,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToleranceType(long iRowNumber) As long
                 |     Returns the symbol used in the row of the GDT.
                 | 
@@ -297,7 +296,7 @@ class DrawingGDT(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToleranceType(long iRowNumber,long iGDTSymbol)
                 |     Sets the symbol used in the row of the GDT.
                 | 
@@ -318,4 +317,4 @@ class DrawingGDT(AnyObject):
         return self.com_object.SetToleranceType(i_row_number, i_gdt_symbol)
 
     def __repr__(self):
-        return f'DrawingGdt(name="{ self.name }")'
+        return f'DrawingGdt(name="{self.name}")'

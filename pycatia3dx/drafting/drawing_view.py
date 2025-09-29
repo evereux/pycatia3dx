@@ -25,7 +25,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingView(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -798,7 +797,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
                 |     Activates the drawing view. Activating a drawing view means that this
                 |     drawing view is the one on which the end-user is now
@@ -820,7 +819,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddViewText() As DrawingText
                 |     Adds a view text in the drawing view. If a view text is already present in
                 |     the view, this method will return E_FAIL. The view text created has a default
@@ -842,7 +841,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AlignedWithReferenceView()
                 |     Activates the alignment with the reference view. Activating the alignment
                 |     with the reference view restores the constraints that the reference view
@@ -860,12 +859,13 @@ class DrawingView(AnyObject):
         """
         return self.com_object.AlignedWithReferenceView()
 
-    def get_projection_plane(self, o_x1: float, o_y1: float, o_z1: float, o_x2: float, o_y2: float, o_z2: float) -> None:
+    def get_projection_plane(self, o_x1: float, o_y1: float, o_z1: float, o_x2: float, o_y2: float,
+                             o_z2: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProjectionPlane(double oX1,double oY1,double oZ1,double oX2,double
                 | oY2,double oZ2)
                 |     Returns the drawing view projection plane.
@@ -905,7 +905,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
                 | iViewNameSuffix)
                 |     Returns the prefix, the ident and the suffix of the name of the drawing
@@ -938,7 +938,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetViewText() As DrawingText
                 |     Returns the the view text of the drawing view.
                 | 
@@ -958,7 +958,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertViewAngle(long iFirst,DrawingText ioText)
                 |     Insert the Angle parameter in the text of the drawing
                 |     text.
@@ -992,7 +992,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertViewScale(long iFirst,DrawingText ioText)
                 |     Insert the scale parameter in the text of the drawing
                 |     text.
@@ -1025,7 +1025,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsGenerative() As boolean
                 |     Returns whether the drawing view has a generative
                 |     behavior.
@@ -1048,7 +1048,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
                 |     Isolates the drawing view.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -1068,7 +1068,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveEdition()
                 |     Saves the Sketch Edition. Once you have finished working with the drawing
                 |     view, you must save its edition in order to register modification for
@@ -1089,12 +1089,13 @@ class DrawingView(AnyObject):
         """
         return self.com_object.SaveEdition()
 
-    def set_projection_plane(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> None:
+    def set_projection_plane(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float,
+                             i_z2: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProjectionPlane(double iX1,double iY1,double iZ1,double iX2,double
                 | iY2,double iZ2)
                 |     Sets the drawing view projection plane. The projection plane is the plane
@@ -1142,7 +1143,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
                 | iViewNameSuffix)
                 |     Sets the prefix, the ident and the suffix of the name of the drawing view.
@@ -1177,7 +1178,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Size(CATSafeArrayVariant oValues)
                 |     Returns the bounding box of the drawing view.
                 | 
@@ -1212,7 +1213,7 @@ class DrawingView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnAlignedWithReferenceView()
                 |     Deactivates the alignment with the reference view. Deactivating the
                 |     alignment to the reference view removes the constraints that the reference view
@@ -1232,4 +1233,4 @@ class DrawingView(AnyObject):
         return self.com_object.UnAlignedWithReferenceView()
 
     def __repr__(self):
-        return f'DrawingView(name="{ self.name }")'
+        return f'DrawingView(name="{self.name}")'

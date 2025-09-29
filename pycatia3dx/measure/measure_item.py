@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MeasureItem(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
                 |     Retrieves the angle of the circle or the cone.
                 | 
@@ -71,7 +70,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
                 |     Retrieves the wet area of the volume or the surface.
                 | 
@@ -102,7 +101,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
                 |     Retrieves the axis vector of the cylinder, cone, or
                 |     circle.
@@ -143,7 +142,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
                 | oAxisPositioning)
                 |     Get the position of the axis system of the object with respect to the
@@ -207,7 +206,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
                 |     Retrieves the position of the center of gravity of a
                 |     surface.
@@ -248,7 +247,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
                 |     Retrieves the position of the center of the circle or the
                 |     sphere.
@@ -289,7 +288,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComputationMode(CATMeasurableModeOfCalc
                 | oComputationMode)
                 |     Get the mode of computation of the object. The computation mode of the
@@ -322,7 +321,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCurvePoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant
                 | ioMidPoint,CATSafeArrayVariant ioEndPoint)
                 |     Retrieves the characteristic points of the curve : the start point, the middle point and the end point.
@@ -389,7 +388,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDirection(double oXVector,double oYVector,double
                 | oZVector)
                 |     Retrieves the direction of the line.
@@ -430,7 +429,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLength() As double
                 |     Retrieves the Length of the curve.
                 | 
@@ -460,7 +459,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasureEdgeType() As CATOpnsMeasureEdgeType
                 |     Get the Measure Edge Type.
                 | 
@@ -493,7 +492,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMeasureItemType(CATOpnsMeasureItemType
                 | oMeasureItemType)
                 |     Get the Measure Item Type.
@@ -529,7 +528,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasureSurfaceType() As CATOpnsMeasureSurfaceType
                 |     Get the Measure Surface Type.
                 | 
@@ -563,7 +562,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOrigin(double oXOrigin,double oYOrigin,double oZOrigin)
                 |     Retrieves the position of the origin of the line.
                 | 
@@ -603,7 +602,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPerimeter() As double
                 |     Retrieves the perimeter of the surface.
                 | 
@@ -634,7 +633,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPlane(CATSafeArrayVariant ioPlane)
                 |     Retrieves informations of the plane.
                 | 
@@ -682,7 +681,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
                 |     Retrieves the position of the point.
                 | 
@@ -717,12 +716,13 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
 
-    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float, o_y_end_point: float, o_z_end_point: float) -> None:
+    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float,
+                   o_y_end_point: float, o_z_end_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(double oXStartPoint,double oYStartPoint,double
                 | oZStartPoint,double oXEndPoint,double oYEndPoint,double
                 | oZEndPoint)
@@ -772,14 +772,15 @@ class MeasureItem(AnyObject):
         :param float o_z_end_point:
         :return: None
         """
-        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point, o_y_end_point, o_z_end_point)
+        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point,
+                                         o_y_end_point, o_z_end_point)
 
     def get_radius(self) -> float:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double
                 |     Retrieves the radius of the circle or the sphere.
                 | 
@@ -809,7 +810,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
                 |     Get the resulting type of computation of the object. The resulting type of
                 |     the object can be: Exact, Approximate or Mixed.
@@ -838,7 +839,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSelection(CATSafeArrayVariant oSelections)
                 |     Get the selected objects of the measure Item.
                 | 
@@ -869,7 +870,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVolume() As double
                 |     Retrieves the volume.
                 | 
@@ -895,12 +896,13 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetVolume()
 
-    def get_volume_area_c_of_g(self, o_volume: float, o_area: float, o_xc_of_g: float, o_yc_of_g: float, o_zc_of_g: float) -> None:
+    def get_volume_area_c_of_g(self, o_volume: float, o_area: float, o_xc_of_g: float, o_yc_of_g: float,
+                               o_zc_of_g: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetVolume_Area_COfG(double oVolume,double oArea,double oXCOfG,double
                 | oYCOfG,double oZCOfG)
                 |     Retrieves the volume, the wet area and the center of gravity of the volume.
@@ -952,7 +954,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
                 | iAxisPositioning)
                 |     Set the position of the axis system of the object with respect to the
@@ -1028,7 +1030,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc
                 | iComputationMode)
                 |     Set the mode of computation of the object. The computation mode of the
@@ -1061,7 +1063,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasureItemType(CATOpnsMeasureItemType
                 | iMeasureItemType)
                 |     Set the Measure Item Type.
@@ -1096,7 +1098,7 @@ class MeasureItem(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSelection(CATSafeArrayVariant iSelections)
                 |     Set the selected objects of the measure Item.
                 | 
@@ -1122,4 +1124,4 @@ class MeasureItem(AnyObject):
         return self.com_object.SetSelection(i_selections)
 
     def __repr__(self):
-        return f'MeasureItem(name="{ self.name }")'
+        return f'MeasureItem(name="{self.name}")'

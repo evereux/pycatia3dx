@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingDimensions(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class DrawingDimensions(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatDimType iTypeDim,CATSafeArrayVariant iGeomElem,CATSafeArrayVariant
                 | iPtCoordElem,CatDimLineRep iLineRep) As DrawingDimension
                 |     Creates a drawing dimension and adds it to the DrawingDimensions
@@ -107,12 +106,13 @@ class DrawingDimensions(Collection):
         """
         return DrawingDimension(self.com_object.Add(i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep))
 
-    def add2(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_ldc_ref_elem: CATVariant, i_ldc_ref_angle: int) -> DrawingDimension:
+    def add2(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_ldc_ref_elem: CATVariant,
+             i_ldc_ref_angle: int) -> DrawingDimension:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add2(CatDimType iTypeDim,CATSafeArrayVariant iGeomElem,CATSafeArrayVariant
                 | iPtCoordElem,CATVariant iLDCRefElem,long iLDCRefAngle) As
                 | DrawingDimension
@@ -174,14 +174,15 @@ class DrawingDimensions(Collection):
         :param int i_ldc_ref_angle:
         :return: DrawingDimension
         """
-        return DrawingDimension(self.com_object.Add2(i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle))
+        return DrawingDimension(
+            self.com_object.Add2(i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle))
 
     def item(self, i_index: CATVariant) -> DrawingDimension:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingDimension
                 |     Returns a drawing dimension using its index or its name from the
                 |     DrawingDimensions collection.
@@ -226,7 +227,7 @@ class DrawingDimensions(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing dimension from the DrawingDimensions collection.
                 |     
@@ -256,4 +257,4 @@ class DrawingDimensions(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingDimensions(name="{ self.name }")'
+        return f'DrawingDimensions(name="{self.name}")'

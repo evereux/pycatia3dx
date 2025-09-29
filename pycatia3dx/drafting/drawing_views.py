@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingViews(Collection):
-
     """
         .. note::
             :class: toggle
@@ -99,7 +98,7 @@ class DrawingViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingViewName) As DrawingView
                 |     Creates a drawing view and adds it to the drawing view collection. This
                 |     drawing view becomes the active one.
@@ -132,12 +131,13 @@ class DrawingViews(Collection):
         """
         return DrawingView(self.com_object.Add(i_drawing_view_name))
 
-    def add_front_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
+    def add_front_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_x1: float, i_y1: float,
+                       i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddFrontView(double iXPt1,double iYPt1,CATBSTR iDrawingViewName,double
                 | iX1,double iY1,double iZ1,double iX2,double iY2,double iZ2) As
                 | DrawingView
@@ -190,14 +190,16 @@ class DrawingViews(Collection):
         :param float i_z2:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.AddFrontView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2))
+        return DrawingView(
+            self.com_object.AddFrontView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2))
 
-    def add_isometric_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
+    def add_isometric_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_x1: float, i_y1: float,
+                           i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddIsometricView(double iXPt1,double iYPt1,CATBSTR iDrawingViewName,double
                 | iX1,double iY1,double iZ1,double iX2,double iY2,double iZ2) As
                 | DrawingView
@@ -250,14 +252,16 @@ class DrawingViews(Collection):
         :param float i_z2:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.AddIsometricView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2))
+        return DrawingView(
+            self.com_object.AddIsometricView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2))
 
-    def add_projection_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_parent_view: DrawingView, i_type: int) -> DrawingView:
+    def add_projection_view(self, i_x_pt1: float, i_y_pt1: float, i_drawing_view_name: str, i_parent_view: DrawingView,
+                            i_type: int) -> DrawingView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddProjectionView(double iXPt1,double iYPt1,CATBSTR
                 | iDrawingViewName,DrawingView iParentView,CatProjViewType iType) As
                 | DrawingView
@@ -301,14 +305,15 @@ class DrawingViews(Collection):
         :param int i_type:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.AddProjectionView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_parent_view.com_object, i_type))
+        return DrawingView(
+            self.com_object.AddProjectionView(i_x_pt1, i_y_pt1, i_drawing_view_name, i_parent_view.com_object, i_type))
 
     def item(self, i_index: CATVariant) -> DrawingView:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingView
                 |     Returns a drawing view using its index or its name from the DrawingViews
                 |     collection.
@@ -358,7 +363,7 @@ class DrawingViews(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing view from the DrawingViews collection.
                 |     Warning: This method is not available with 2D Layout for 3D Design and it's
@@ -395,4 +400,4 @@ class DrawingViews(Collection):
         return self.com_object.Remove(i_index.com_object)
 
     def __repr__(self):
-        return f'DrawingViews(name="{ self.name }")'
+        return f'DrawingViews(name="{self.name}")'

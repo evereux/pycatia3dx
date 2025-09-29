@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Measures(Collection):
-
     """
         .. note::
             :class: toggle
@@ -44,7 +43,7 @@ class Measures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iText) As Measure
                 |     Adds a Measure to the collection.
                 | 
@@ -76,7 +75,7 @@ class Measures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
                 |     Returns a Measure using its index from the Measures
                 |     collection.
@@ -115,7 +114,7 @@ class Measures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a Measure from the Measures collection.
                 | 
@@ -144,4 +143,4 @@ class Measures(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'Measures(name="{ self.name }")'
+        return f'Measures(name="{self.name}")'

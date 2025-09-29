@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingArrow(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -221,12 +220,13 @@ class DrawingArrow(AnyObject):
 
         self.com_object.TailTarget = value
 
-    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float, i_second_point_y: float) -> None:
+    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float,
+                         i_second_point_y: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
                 | iSecondPointX,double iSecondPointY)
                 |     Add an interruption to an arrow.
@@ -264,7 +264,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(long iNum,double iX,double iY)
                 |     Add a point to an arrow.
                 | 
@@ -297,7 +297,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
                 | long
                 |     Get arrow path.
@@ -325,7 +325,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(long iNum,double oX,double oY)
                 |     Get arrow point coordinates.
                 | 
@@ -355,7 +355,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPoints(CATSafeArrayVariant oPoints) As long
                 |     Get arrow path.
                 | 
@@ -382,7 +382,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPoint(long iNum,double iX,double iY)
                 |     Modify a point of an Arrow.
                 | 
@@ -414,7 +414,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterruption(long iNum)
                 |     Remove an interruption to an arrow.
                 | 
@@ -440,7 +440,7 @@ class DrawingArrow(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(long iNum)
                 |     Remove a point from an arrow.
                 | 
@@ -460,4 +460,4 @@ class DrawingArrow(AnyObject):
         return self.com_object.RemovePoint(i_num)
 
     def __repr__(self):
-        return f'DrawingArrow(name="{ self.name }")'
+        return f'DrawingArrow(name="{self.name}")'

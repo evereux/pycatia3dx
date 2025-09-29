@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_curve import MeasurableCurve
 
 
 class MeasurableLine(MeasurableCurve):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class MeasurableLine(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDirection(double oXVector,double oYVector,double
                 | oZVector)
                 |     Retrieves the direction of the line.
@@ -75,7 +74,7 @@ class MeasurableLine(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOrigin(double oXOrigin,double oYOrigin,double oZOrigin)
                 |     Retrieves the position of the origin of the line.
                 | 
@@ -102,4 +101,4 @@ class MeasurableLine(MeasurableCurve):
         return self.com_object.GetOrigin(o_x_origin, o_y_origin, o_z_origin)
 
     def __repr__(self):
-        return f'MeasurableLine(name="{ self.name }")'
+        return f'MeasurableLine(name="{self.name}")'

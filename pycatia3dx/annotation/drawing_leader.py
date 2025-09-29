@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingLeader(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -238,12 +237,13 @@ class DrawingLeader(AnyObject):
 
         return self.com_object.NbPoint
 
-    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float, i_second_point_y: float) -> None:
+    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float,
+                         i_second_point_y: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
                 | iSecondPointX,double iSecondPointY)
                 |     Add an interruption to an leader.
@@ -281,7 +281,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(long iNum,double iX,double iY)
                 |     Add a point to an leader.
                 | 
@@ -314,7 +314,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
                 | long
                 |     Get leader path.
@@ -342,7 +342,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(long iNum,double oX,double oY)
                 |     Get leader point coordinates.
                 | 
@@ -372,7 +372,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPoints(CATSafeArrayVariant oPoints) As long
                 |     Get leader path.
                 | 
@@ -399,7 +399,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPoint(long iNum,double iX,double iY)
                 |     Modify a point of an leader.
                 | 
@@ -431,7 +431,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterruption(long iNum)
                 |     Remove an interruption to an leader.
                 | 
@@ -458,7 +458,7 @@ class DrawingLeader(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(long iNum)
                 |     Remove a point from an leader.
                 | 
@@ -478,4 +478,4 @@ class DrawingLeader(AnyObject):
         return self.com_object.RemovePoint(i_num)
 
     def __repr__(self):
-        return f'DrawingLeader(name="{ self.name }")'
+        return f'DrawingLeader(name="{self.name}")'

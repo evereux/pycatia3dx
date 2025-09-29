@@ -11,7 +11,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class DrawingTextRange(CATBaseDispatch):
-
     """
         .. note::
             :class: toggle
@@ -123,7 +122,7 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(long iStart,long iEnd) As DrawingTextRange
                 |     Returns a drawing text range within another drawing text range. The text
                 |     range is retrieved using its starting and ending character
@@ -159,7 +158,7 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertAfter(CATBSTR iString)
                 |     Inserts a character string at the end of the drawing text
                 |     range.
@@ -193,7 +192,7 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertBefore(CATBSTR iString)
                 |     Inserts a character string at the beginning of the drawing text
                 |     range.

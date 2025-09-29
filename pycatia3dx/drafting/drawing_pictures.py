@@ -41,7 +41,7 @@ class DrawingPictures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingPicturePath,double iPositionX,double iPositionY) As
                 | DrawingPicture
                 |     Inserts a drawing picture in the drawing view and adds it to the
@@ -86,7 +86,7 @@ class DrawingPictures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingPicture
                 |     Returns a drawing picture using its index or its name from the
                 |     DrawingPictures collection.
@@ -128,7 +128,7 @@ class DrawingPictures(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing picture from the DrawingPictures collection.
                 |     

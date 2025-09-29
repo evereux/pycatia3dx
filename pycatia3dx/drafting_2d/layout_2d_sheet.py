@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Layout2DSheet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -388,7 +387,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
                 |     Activates the Layout2D sheet. Activating a Layout2D sheet means that this
                 |     Layout2D sheet is the one on which the end user is now working. The window in
@@ -409,7 +408,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsDetail() As boolean
                 |     Checks whether the sheet is a detail sheet.
                 |     TRUE if the sheet is a detail sheet.
@@ -428,7 +427,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut(CatRenderingMode iRenderingMode)
                 |     Prints the Layout2D sheet according to its page setup on the default
                 |     printer.
@@ -456,7 +455,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut2()
                 |     Prints the Layout2D sheet according to its page setup on the default
                 |     printer. If a rendering mode has been stored on the 2D Layout, it is used
@@ -478,7 +477,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile(CATBSTR fileName,CatRenderingMode
                 | iRenderingMode)
                 |     Prints the Layout2D sheet according its page setup in a file instead of
@@ -509,7 +508,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile2(CATBSTR fileName)
                 |     Prints the Layout2D sheet according its page setup in a file instead of
                 |     being sent to a printer. If a rendering mode has been stored on the 2D Layout,
@@ -536,7 +535,7 @@ class Layout2DSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
                 |     Changes the positions of the views in this sheet according to the given
                 |     ordered list. iOrderedViews is the result of a permutation applied to the list
@@ -567,4 +566,4 @@ class Layout2DSheet(AnyObject):
         return self.com_object.reorder_Views(i_ordered_views)
 
     def __repr__(self):
-        return f'Layout2DSheet(name="{ self.name }")'
+        return f'Layout2DSheet(name="{self.name}")'

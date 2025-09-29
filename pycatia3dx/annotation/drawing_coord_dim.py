@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingCoordDim(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -160,7 +159,7 @@ class DrawingCoordDim(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCoordValues(long oType,double oX,double oY,double oZ)
                 |     Returns the value of the drawing coordinate dimension.
                 | 
@@ -191,4 +190,4 @@ class DrawingCoordDim(AnyObject):
         return self.com_object.GetCoordValues(o_type, o_x, o_y, o_z)
 
     def __repr__(self):
-        return f'DrawingCoordDim(name="{ self.name }")'
+        return f'DrawingCoordDim(name="{self.name}")'

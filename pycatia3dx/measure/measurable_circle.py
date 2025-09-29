@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_curve import MeasurableCurve
 
 
 class MeasurableCircle(MeasurableCurve):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,7 @@ class MeasurableCircle(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
                 |     Retrieves the angle of the circle.
                 | 
@@ -68,7 +67,7 @@ class MeasurableCircle(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
                 |     Retrieves the axis vector of the circle.
                 | 
@@ -99,7 +98,7 @@ class MeasurableCircle(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
                 |     Retrieves the position of the center of the circle.
                 | 
@@ -130,7 +129,7 @@ class MeasurableCircle(MeasurableCurve):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double
                 |     Retrieves the radius of the circle.
                 | 
@@ -151,4 +150,4 @@ class MeasurableCircle(MeasurableCurve):
         return self.com_object.GetRadius()
 
     def __repr__(self):
-        return f'MeasurableCircle(name="{ self.name }")'
+        return f'MeasurableCircle(name="{self.name}")'

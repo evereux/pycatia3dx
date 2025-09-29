@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingDimension(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -540,7 +539,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBoundaryBox(CATSafeArrayVariant oValues)
                 |     Get boundary box coordinates of dimension value.
                 | 
@@ -565,7 +564,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetClip(double X,double Y,long oKeptSide)
                 |     Gets informations of the dimension clipping. The value of this parameter
                 |     can be 1 or 2, and the kept side will be the one corresponding respectively to
@@ -600,7 +599,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDimExtLine() As DrawingDimExtLine
                 |     Returns the drawing extension line of the drawing
                 |     dimension.
@@ -625,7 +624,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDimLine() As DrawingDimLine
                 |     Returns the drawing dimension line of the drawing
                 |     dimension.
@@ -645,12 +644,13 @@ class DrawingDimension(AnyObject):
         """
         return DrawingDimLine(self.com_object.GetDimLine())
 
-    def get_tolerances(self, o_tol_type: int, o_tol_name: str, o_up_tol: str, o_low_tol: str, od_up_tol: float, od_low_tol: float, o_display_mode: int) -> None:
+    def get_tolerances(self, o_tol_type: int, o_tol_name: str, o_up_tol: str, o_low_tol: str, od_up_tol: float,
+                       od_low_tol: float, o_display_mode: int) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTolerances(long oTolType,CATBSTR oTolName,CATBSTR oUpTol,CATBSTR
                 | oLowTol,double odUpTol,double odLowTol,long oDisplayMode)
                 |     Get tolerance infomation of dimension value.
@@ -687,14 +687,15 @@ class DrawingDimension(AnyObject):
         :param int o_display_mode:
         :return: None
         """
-        return self.com_object.GetTolerances(o_tol_type, o_tol_name, o_up_tol, o_low_tol, od_up_tol, od_low_tol, o_display_mode)
+        return self.com_object.GetTolerances(o_tol_type, o_tol_name, o_up_tol, o_low_tol, od_up_tol, od_low_tol,
+                                             o_display_mode)
 
     def get_value(self) -> DrawingDimValue:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue() As DrawingDimValue
                 |     Returns the drawing value of the drawing dimension.
                 | 
@@ -718,7 +719,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveValue(double X,double Y,long SubPart,long
                 | DimAngleBehavior)
                 |     Move dimension value.
@@ -765,7 +766,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RestoreValuePosition()
                 |     Restore dimension value position. 
                 | Example:
@@ -783,7 +784,7 @@ class DrawingDimension(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetClip(double X,double Y,long iKeptSide)
                 |     Creates a clip on the dimension at the given point, with respect to the
                 |     side given by iKeptSide. The value of this parameter can be 1 or 2, and the
@@ -812,12 +813,13 @@ class DrawingDimension(AnyObject):
         """
         return self.com_object.SetClip(x, y, i_kept_side)
 
-    def set_tolerances(self, i_tol_type: int, itol_name: str, i_up_tol: str, i_low_tol: str, id_up_tol: float, id_low_tol: float, display_mode: int) -> None:
+    def set_tolerances(self, i_tol_type: int, itol_name: str, i_up_tol: str, i_low_tol: str, id_up_tol: float,
+                       id_low_tol: float, display_mode: int) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTolerances(long iTolType,CATBSTR itolName,CATBSTR iUpTol,CATBSTR
                 | iLowTol,double idUpTol,double idLowTol,long DisplayMode)
                 |     Set tolerance infomation of dimension value.
@@ -854,14 +856,15 @@ class DrawingDimension(AnyObject):
         :param int display_mode:
         :return: None
         """
-        return self.com_object.SetTolerances(i_tol_type, itol_name, i_up_tol, i_low_tol, id_up_tol, id_low_tol, display_mode)
+        return self.com_object.SetTolerances(i_tol_type, itol_name, i_up_tol, i_low_tol, id_up_tol, id_low_tol,
+                                             display_mode)
 
     def unclip(self) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Unclip()
                 |     Unclip the dimension if it is clipped. 
                 | Example:
@@ -875,4 +878,4 @@ class DrawingDimension(AnyObject):
         return self.com_object.Unclip()
 
     def __repr__(self):
-        return f'DrawingDimension(name="{ self.name }")'
+        return f'DrawingDimension(name="{self.name}")'

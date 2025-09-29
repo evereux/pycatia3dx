@@ -254,7 +254,7 @@ class FlexibleArea(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBoard() As CATBaseDispatch
                 |     Returns the Flexible Board on which the flexible constraint area
                 |     lies.
@@ -279,7 +279,7 @@ class FlexibleArea(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfile() As CATBaseDispatch
                 |     Returns the profile of the flexible constraint area. The profile can be a
                 |     Face of the flexible board or a sketch.
@@ -305,7 +305,7 @@ class FlexibleArea(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfile(CATBaseDispatch iProfileorFace,CATBSTR
                 | oCreationView)
                 |     Sets the profile of the flexible constraint area. The profile can be a Face

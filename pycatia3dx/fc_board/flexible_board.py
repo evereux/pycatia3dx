@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class FlexibleBoard(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -33,12 +32,14 @@ class FlexibleBoard(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_flexible_area_area(self, i_father: Body, i_view_of_creation: str, i_profileor_face: AnyObject, i_type: str, i_layer: str, i_identifier: str, i_owner: str, i_max: float, i_min: float) -> FlexibleArea:
+    def create_flexible_area_area(self, i_father: Body, i_view_of_creation: str, i_profileor_face: AnyObject,
+                                  i_type: str, i_layer: str, i_identifier: str, i_owner: str, i_max: float,
+                                  i_min: float) -> FlexibleArea:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func create_FlexibleAreaArea(Body iFather,CATBSTR
                 | iViewOfCreation,CATBaseDispatch iProfileorFace,CATBSTR iType,CATBSTR
                 | iLayer,CATBSTR iIdentifier,CATBSTR iOwner,double iMax,double iMin) As
@@ -90,14 +91,17 @@ class FlexibleBoard(AnyObject):
         :param float i_min:
         :return: FlexibleArea
         """
-        return FlexibleArea(self.com_object.create_FlexibleAreaArea(i_father.com_object, i_view_of_creation, i_profileor_face.com_object, i_type, i_layer, i_identifier, i_owner, i_max, i_min))
+        return FlexibleArea(self.com_object.create_FlexibleAreaArea(i_father.com_object, i_view_of_creation,
+                                                                    i_profileor_face.com_object, i_type, i_layer,
+                                                                    i_identifier, i_owner, i_max, i_min))
 
-    def create_hole(self, i_view_of_creation: str, i_diametre: float, i_x: float, i_y: float, i_type: str, i_associated_part: str, i_owner: str, i_plating_style: str) -> AnyObject:
+    def create_hole(self, i_view_of_creation: str, i_diametre: float, i_x: float, i_y: float, i_type: str,
+                    i_associated_part: str, i_owner: str, i_plating_style: str) -> AnyObject:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func create_Hole(CATBSTR iViewOfCreation,double iDiametre,double iX,double
                 | iY,CATBSTR iType,CATBSTR iAssociatedPart,CATBSTR iOwner,CATBSTR iPlatingStyle)
                 | As CATBaseDispatch
@@ -163,14 +167,15 @@ class FlexibleBoard(AnyObject):
         :param str i_plating_style:
         :return: AnyObject
         """
-        return self.com_object.create_Hole(i_view_of_creation, i_diametre, i_x, i_y, i_type, i_associated_part, i_owner, i_plating_style)
+        return self.com_object.create_Hole(i_view_of_creation, i_diametre, i_x, i_y, i_type, i_associated_part, i_owner,
+                                           i_plating_style)
 
     def place_component(self, i_view_of_placement: str, i_component_instance: AnyObject) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub place_Component(CATBSTR iViewOfPlacement,CATBaseDispatch
                 | iComponentInstance)
                 |     Places a component on a flexible Board.
@@ -198,4 +203,4 @@ class FlexibleBoard(AnyObject):
         return self.com_object.place_Component(i_view_of_placement, i_component_instance.com_object)
 
     def __repr__(self):
-        return f'FlexibleBoard(name="{ self.name }")'
+        return f'FlexibleBoard(name="{self.name}")'

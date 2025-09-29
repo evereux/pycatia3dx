@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingAreaFills(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class DrawingAreaFills(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATSafeArrayVariant iNumberOfPointsPerContour,CATSafeArrayVariant
                 | iPointsCoordinates) As DrawingAreaFill
                 |     Creates an isolated DrawingAreaFill and adds it to the DrawingAreaFills
@@ -80,7 +79,7 @@ class DrawingAreaFills(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingAreaFill
                 |     Returns a drawing area fill using its index from the DrawingAreaFills
                 |     collection.
@@ -119,7 +118,7 @@ class DrawingAreaFills(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a DrawingAreaFill from the DrawingAreaFills collection.
                 |     
@@ -149,4 +148,4 @@ class DrawingAreaFills(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingAreaFills(name="{ self.name }")'
+        return f'DrawingAreaFills(name="{self.name}")'

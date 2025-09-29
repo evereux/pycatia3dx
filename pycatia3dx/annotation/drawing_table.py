@@ -321,7 +321,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddColumn(long iCol)
                 |     Adds a column before the indicated column.
                 | 
@@ -348,7 +348,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRow(long iRow)
                 |     Adds a row before the indicated row.
                 | 
@@ -374,7 +374,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellAlignment(long iRow,long iCol) As CatTablePosition
                 |     Retrieves the alignment of the pointed cell of a drawing
                 |     table.
@@ -407,7 +407,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellBorderType(long iRow,long iCol) As
                 | CatTableBorderType
                 |     Retrieves the drawing text contained in the cell of a drawing
@@ -446,7 +446,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellName(long iRow,long iCol) As CATBSTR
                 |     Returns the name of a table cell.
                 | 
@@ -478,7 +478,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellObject(long iRow,long iCol) As DrawingText
                 |     Retrieves the object contained in the cell of a drawing
                 |     table.
@@ -511,7 +511,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellString(long iRow,long iCol) As CATBSTR
                 |     Returns the string contained in the cell of a drawing
                 |     table.
@@ -544,7 +544,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCellsMerge(CATSafeArrayVariant oListOfMergeCells)
                 |     Returns the merge cells.
                 | 
@@ -573,7 +573,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetColumnSize(long iCol) As double
                 |     Returns the width of a column of a drawing table.
                 | 
@@ -604,7 +604,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMergeInfos(long iRow,long iCol,long oFirstRow,long oFirstCol,long
                 | oNbRow,long oNbCol)
                 |     Returns informations about a group of merge cells from a
@@ -644,7 +644,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRowSize(long iRow) As double
                 |     Returns the height of a row of a drawing table.
                 | 
@@ -674,7 +674,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertMode(CatTableInvertMode iMode)
                 |     Sets a mode of table inversion.
                 | 
@@ -694,7 +694,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MergeCells(long iFirstRow,long iFirstCol,long iNbRowMerge,long
                 | iNbColMerge)
                 |     Merges a group of cells.
@@ -727,7 +727,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Move(double iDeltaX,double iDeltaY)
                 |     Moves the table relatively to its original position.
                 | 
@@ -757,7 +757,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveColumn(long iCol)
                 |     Removes the indicated column.
                 | 
@@ -783,7 +783,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRow(long iRow)
                 |     Removes the indicated row.
                 | 
@@ -809,7 +809,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Rotate(double iDeltaAngle)
                 |     Rotates the table relatively to its original position.
                 | 
@@ -835,7 +835,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellAlignment(long iRow,long iCol,CatTablePosition
                 | iAlign)
                 |     Sets the pointed cell alignment of a drawing table.
@@ -870,7 +870,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellBorderType(long iRow,long iCol,long iType)
                 |     Sets the pointed cell border type of a drawing table.
                 | 
@@ -928,7 +928,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellImage(long iRow,long iCol,CATBSTR iPath)
                 |     Fills in a table cell with a picture.
                 | 
@@ -962,7 +962,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellName(long iRow,long iCol,CATBSTR iName)
                 |     Sets the name of a table cell.
                 | 
@@ -996,7 +996,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellObject(long iRow,long iCol,DrawingText iText)
                 |     Sets an object in a cell of a drawing table.
                 | 
@@ -1029,7 +1029,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellString(long iRow,long iCol,CATBSTR iString)
                 |     Fills in a table cell with a string.
                 | 
@@ -1063,7 +1063,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetColumnSize(long iCol,double iColSize)
                 |     Sets the width of a column of a drawing table.
                 | 
@@ -1094,7 +1094,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRowSize(long iRow,double iRowSize)
                 |     Sets the height of a row of a drawing table.
                 | 
@@ -1125,7 +1125,7 @@ class DrawingTable(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnMergeCells(long iRow,long iCol)
                 |     Unmerges a group of cells.
                 | 

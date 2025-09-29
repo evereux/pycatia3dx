@@ -13,7 +13,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MeasurableService(Service):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class MeasurableService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasurable(AnyObject iMeasuredItem,CATMeasurableType iType) As
                 | MeasurableInContext
                 |     Retrieves the measurable object
@@ -69,4 +68,4 @@ class MeasurableService(Service):
         return MeasurableInContext(self.com_object.GetMeasurable(i_measured_item.com_object, i_type))
 
     def __repr__(self):
-        return f'MeasurableService(name="{ self.name }")'
+        return f'MeasurableService(name="{self.name}")'

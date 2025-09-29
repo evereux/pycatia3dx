@@ -12,7 +12,6 @@ from pycatia3dx.interfaces.service import Service
 
 
 class DrawingGenService(Service):
-
     """
         .. note::
             :class: toggle
@@ -61,7 +60,7 @@ class DrawingGenService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CheckViewLinkIntegrity(CATSafeArrayVariant iInfoOnViewLinks) As
                 | boolean
                 |     Checks the integrity of elements to be pointed by a generative
@@ -83,4 +82,4 @@ class DrawingGenService(Service):
         return self.com_object.CheckViewLinkIntegrity(i_info_on_view_links)
 
     def __repr__(self):
-        return f'DrawingGenService(name="{ self.name }")'
+        return f'DrawingGenService(name="{self.name}")'

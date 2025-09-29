@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Layout2DRoot(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -261,7 +260,7 @@ class Layout2DRoot(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
                 |     Changes the positions of the sheets in this drawing according to the given
                 |     ordered list. iOrderedSheets is the result of a permutation applied to the list
@@ -287,4 +286,4 @@ class Layout2DRoot(AnyObject):
         return self.com_object.reorder_Sheets(i_ordered_sheets)
 
     def __repr__(self):
-        return f'Layout2DRoot(name="{ self.name }")'
+        return f'Layout2DRoot(name="{self.name}")'

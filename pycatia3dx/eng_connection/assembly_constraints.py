@@ -39,7 +39,7 @@ class AssemblyConstraints(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatAssemblyConstraintType iType,CATSafeArrayVariant iGeometries) As
                 | AssemblyConstraint
                 |     Adds an Assembly Constraint in the Engineering Connection.

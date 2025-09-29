@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingWeldings(Collection):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class DrawingWeldings(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatWeldingSymbol iSymbol,double iPositionX,double iPositionY) As
                 | DrawingWelding
                 |     Creates a drawing welding and adds it to the drawing weldings collection.
@@ -86,7 +85,7 @@ class DrawingWeldings(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingWelding
                 |     Returns a drawing welding using its index from the drawing weldings
                 |     collection.
@@ -125,7 +124,7 @@ class DrawingWeldings(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing welding from the drawing weldings collection.
                 |     
@@ -155,4 +154,4 @@ class DrawingWeldings(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingWeldings(name="{ self.name }")'
+        return f'DrawingWeldings(name="{self.name}")'

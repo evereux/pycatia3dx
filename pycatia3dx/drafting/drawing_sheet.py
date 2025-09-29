@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingSheet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -336,7 +335,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
                 |     Activates the drawing sheet. Activating a drawing sheet means that this
                 |     drawing sheet is the one on which the end user is now working. The window in
@@ -357,7 +356,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ForceUpdate()
                 |     Forces the update of all the drawing views of the drawing sheet. This
                 |     update redraws all the views, whether their pointed objects have been modified
@@ -382,7 +381,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateDimensions()
                 |     Generates dimensions in all the drawing views of the drawing sheet. These
                 |     dimensions are generated from the constraints of the pointed 3D part(s). One
@@ -407,7 +406,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPaperHeight() As double
                 |     Gets the paper width of the drawing sheet.
                 | 
@@ -430,7 +429,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPaperWidth() As double
                 |     Gets the paper width of the drawing sheet.
                 | 
@@ -453,7 +452,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsDetail() As boolean
                 |     Checks whether the sheet is a detail sheet.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -474,7 +473,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
                 |     Isolates the drawing sheet.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -494,7 +493,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut()
                 |     Prints the drawing sheet according to its page setup on the default
                 |     printer.
@@ -516,7 +515,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile(CATBSTR fileName)
                 |     Prints the drawing sheet according its page setup in a file instead of
                 |     being sent to a printer.
@@ -543,7 +542,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAsDetail()
 
         :return: None
@@ -555,7 +554,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPaperHeight(double oPaperHeight)
                 |     Sets the paper width of the drawing sheet, avalaible on user
                 |     format.
@@ -581,7 +580,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPaperWidth(double oPaperWidth)
                 |     Sets the paper width of the drawing sheet, avalaible on user
                 |     format.
@@ -607,7 +606,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
                 |     Updates the drawing views of the drawing sheet. This update redraws all the
                 |     views whose pointed objects have been modified since the drawing sheet creation
@@ -632,7 +631,7 @@ class DrawingSheet(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
                 |     Changes the positions of the views in this sheet according to the given
                 |     ordered list. iOrderedViews is the result of a permutation applied to the list
@@ -662,4 +661,4 @@ class DrawingSheet(AnyObject):
         return self.com_object.reorder_Views(i_ordered_views)
 
     def __repr__(self):
-        return f'DrawingSheet(name="{ self.name }")'
+        return f'DrawingSheet(name="{self.name}")'

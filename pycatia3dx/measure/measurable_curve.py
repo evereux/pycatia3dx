@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableCurve(MeasurableInContext):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class MeasurableCurve(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLength() As double
                 |     Retrieves the Length of the curve.
                 | 
@@ -66,7 +65,7 @@ class MeasurableCurve(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant
                 | ioMidPoint,CATSafeArrayVariant ioEndPoint)
                 |     Retrieves the characteristic points of the curve : the start point, the middle point and the end point.
@@ -129,4 +128,4 @@ class MeasurableCurve(MeasurableInContext):
         return self.com_object.GetPoints(io_start_point, io_mid_point, io_end_point)
 
     def __repr__(self):
-        return f'MeasurableCurve(name="{ self.name }")'
+        return f'MeasurableCurve(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingTables(Collection):
-
     """
         .. note::
             :class: toggle
@@ -37,12 +36,13 @@ class DrawingTables(Collection):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add(self, i_position_x: float, i_position_y: float, i_number_of_row: int, i_number_of_column: int, i_row_height: float, i_column_width: float) -> DrawingTable:
+    def add(self, i_position_x: float, i_position_y: float, i_number_of_row: int, i_number_of_column: int,
+            i_row_height: float, i_column_width: float) -> DrawingTable:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iPositionX,double iPositionY,long iNumberOfRow,long
                 | iNumberOfColumn,double iRowHeight,double iColumnWidth) As
                 | DrawingTable
@@ -82,14 +82,16 @@ class DrawingTables(Collection):
         :param float i_column_width:
         :return: DrawingTable
         """
-        return DrawingTable(self.com_object.Add(i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height, i_column_width))
+        return DrawingTable(
+            self.com_object.Add(i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height,
+                                i_column_width))
 
     def item(self, i_index: CATVariant) -> DrawingTable:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingTable
                 |     Returns a drawing table using its index from the DrawingTables
                 |     collection.
@@ -127,7 +129,7 @@ class DrawingTables(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing table from the DrawingTables collection.
                 |     
@@ -156,4 +158,4 @@ class DrawingTables(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingTables(name="{ self.name }")'
+        return f'DrawingTables(name="{self.name}")'

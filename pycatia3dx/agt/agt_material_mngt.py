@@ -39,7 +39,7 @@ class AGTMaterialMngt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterial() As CATBSTR
                 |     Returns the material as a string on this function.
                 | 
@@ -62,7 +62,7 @@ class AGTMaterialMngt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSubMaterial() As CATBSTR
                 |     Returns the material as a string on this function.
                 | 
@@ -85,7 +85,7 @@ class AGTMaterialMngt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterial(CATBSTR iMaterialName)
                 |     Sets the material as a string on this function.
                 | 
@@ -112,7 +112,7 @@ class AGTMaterialMngt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSubMaterial(CATBSTR iMaterialName)
                 |     Sets the material as a string on this function.
                 | 

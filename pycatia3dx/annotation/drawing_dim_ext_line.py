@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingDimExtLine(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -150,7 +149,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterrupt(long iIndex,CATSafeArrayVariant iTwoPoints)
                 |     Add an interrupt to an extension line.
                 | 
@@ -177,7 +176,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFunnel(long iIndex,long oMode,double oAngle,double oHeight,double
                 | oWidth)
                 |     Get funnel infomation of dimension extension line.
@@ -215,7 +214,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGap(long iIndex) As double
                 |     Get gap of dimension extension line.
                 | 
@@ -240,7 +239,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeomInfo(long iIndex,CATSafeArrayVariant oGeomInfos)
                 |     Get geometrical infomation of dimension extension line.
                 | 
@@ -268,7 +267,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterrupt(long iIndex) As long
                 |     Get the number of interruptions stored in each extension
                 |     lines.
@@ -295,7 +294,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOverrun(long iIndex) As double
                 |     Get overrun of dimension extension line.
                 | 
@@ -320,7 +319,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVisibility(long iIndex) As long
                 |     Get visivility of dimension extension line.
                 | 
@@ -345,7 +344,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterrupt(long iIndex)
                 |     Remove interruption on extension lines.
                 | 
@@ -369,7 +368,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFunnel(long iIndex,long iMode,double iAngle,double iHeight,double
                 | iWidth)
                 |     Set funnel infomation of dimension extension line.
@@ -407,7 +406,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGap(long iIndex,double iGap)
                 |     Set gap of dimension extension line.
                 | 
@@ -433,7 +432,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOverrun(long iIndex,double iOverrun)
                 |     Set overrun of dimension extension line.
                 | 
@@ -459,7 +458,7 @@ class DrawingDimExtLine(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVisibility(long iIndex,long iExtlineVisibility)
                 |     Set visivility of dimension extension line.
                 | 
@@ -482,4 +481,4 @@ class DrawingDimExtLine(AnyObject):
         return self.com_object.SetVisibility(i_index, i_extline_visibility)
 
     def __repr__(self):
-        return f'DrawingDimExtLine(name="{ self.name }")'
+        return f'DrawingDimExtLine(name="{self.name}")'

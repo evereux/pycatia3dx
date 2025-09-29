@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MeasurableInContext(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -38,7 +37,7 @@ class MeasurableInContext(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystemFromMeasurable(CATSafeArrayVariant
                 | oAxisPositioning)
                 |     Get the position of the axis system of the object with respect to the
@@ -102,7 +101,7 @@ class MeasurableInContext(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationMode() As CATMeasurableModeOfCalc
                 |     Deprecated R2011 - replace by GetResultComputationType
 
@@ -115,7 +114,7 @@ class MeasurableInContext(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
                 |     Get the resulting mode of computation of the object. The computation mode
                 |     of the object can be: Exact, Approximate or Mixed. In case of measures item,
@@ -164,7 +163,7 @@ class MeasurableInContext(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystemOnMeasurable(CATSafeArrayVariant
                 | iAxisPositioning)
                 |     Set the position of the axis system of the object with respect to the
@@ -240,7 +239,7 @@ class MeasurableInContext(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasurableContextType(CATMeasurableContextType
                 | iContextType)
                 |     Set the Measurable Context Type for Measure Calcualtion.
@@ -271,4 +270,4 @@ class MeasurableInContext(AnyObject):
         return self.com_object.SetMeasurableContextType(i_context_type)
 
     def __repr__(self):
-        return f'MeasurableInContext(name="{ self.name }")'
+        return f'MeasurableInContext(name="{self.name}")'

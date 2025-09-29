@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Layout2DServices(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -38,7 +37,7 @@ class Layout2DServices(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportFromDrawing(CATSafeArrayVariant iObjects,CatImportFromDrawingOption
                 | iOption,CATSafeArrayVariant oResults)
                 |     Import in a 2DLayout a drawing view array. Drawing views with generative
@@ -74,4 +73,4 @@ class Layout2DServices(AnyObject):
         return self.com_object.ImportFromDrawing(i_objects, i_option, o_results)
 
     def __repr__(self):
-        return f'Layout2DServices(name="{ self.name }")'
+        return f'Layout2DServices(name="{self.name}")'

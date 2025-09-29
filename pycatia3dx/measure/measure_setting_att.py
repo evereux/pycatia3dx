@@ -12,7 +12,6 @@ from pycatia3dx.system.setting_controller import SettingController
 
 
 class MeasureSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAutoAttachMoveStatus(long oAutoUpdateInPrd)
                 |
                 |        Gets the Status whether Automatic update of Measure on the Product is
@@ -66,7 +65,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBorderColor(long oR,long oG,long oB)
                 |
                 |        Get the the Measure Border Color.
@@ -94,7 +93,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBorderStatus(long ochkBorder)
                 |
                 |        Gets the Status whether Border of Measure is enabled.
@@ -117,7 +116,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFillStatus(long ochkFill)
                 |
                 |        Gets the Status whether Fill of Measure is enabled.
@@ -140,7 +139,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFillStyle(long oFillStyle)
                 |
                 |        get the Fill Style of Measure 
@@ -166,7 +165,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLineColor(long oR,long oG,long oB)
                 |
                 |        Get the Textbox color for Measure. 
@@ -194,7 +193,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLineWidth(long oLineWidth)
                 |
                 |        Get the Line width for Measure
@@ -216,7 +215,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMeasureOnlyShownElementsStatus(long ochkStatus)
                 |
                 |        Gets the Status whether Measure Only Shown Elements for Measure is
@@ -240,7 +239,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProductUpdateStatus(long oAutoUpdateInPrd)
                 |
                 |        Gets the Status whether Automatic update of Measure on the Product is
@@ -264,7 +263,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextBoxColor(long oR,long oG,long oB)
                 |
                 |        Get the Textbox color for Measure. 
@@ -292,7 +291,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextBoxTransparency(long oTransparency)
                 |
                 |        Get the Measure Text box Tranparency.
@@ -314,7 +313,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextColor(long oR,long oG,long oB)
                 |
                 |        Get the Measure Text Color.
@@ -342,7 +341,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextFont(CATBSTR oString)
                 |        Get the Measure Text Font.
                 |
@@ -363,7 +362,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextFontIndex(long oTextFontIndex)
                 |
                 |        Get the Measure Text Font Index.
@@ -385,7 +384,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextSize(float oTextSize)
                 |
                 |        Get the Measure Text Size.
@@ -407,7 +406,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTildeShownStatus(long oTildeStatus)
                 |
                 |        Gets the Status whether Tilde Shown for Measure is
@@ -431,7 +430,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAutoAttachMoveStatus(long iAutoUpdateInPrd)
                 |
                 |        Sets the Status whether Automatic update of Measure on the Product is
@@ -455,7 +454,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBorderColor(long iR,long iG,long iB)
                 |
                 |        Set the Measure Border Color.
@@ -483,7 +482,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBorderStatus(long ichkBorder)
                 |
                 |        Sets the Status whether Border of Measure is enabled.
@@ -506,7 +505,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFillStatus(long ichkFill)
                 |
                 |        Sets the Status whether Fill of Measure is enabled.
@@ -529,7 +528,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFillStyle(long iFillStyle)
                 |
                 |        Sets the Fill Style of Measure
@@ -555,7 +554,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLineColor(long iR,long iG,long iB)
                 |
                 |        Set the Line color for Measure. 
@@ -583,7 +582,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLineWidth(long iLineWidth)
                 |
                 |        Set the Line width for Measure
@@ -607,7 +606,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasureOnlyShownElementsStatus(long ichkStatus)
                 |
                 |        Sets the Status whether Measure Only Shown Elements for Measure is
@@ -631,7 +630,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProductUpdateStatus(long iAutoUpdateInPrd)
                 |
                 |        Sets the Status whether Automatic update of Measure on the Product is
@@ -655,7 +654,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextBoxColor(long iR,long iG,long iB)
                 |
                 |        Set the Textbox color for Measure. 
@@ -683,7 +682,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextBoxTransparency(long iTransparency)
                 |
                 |        Set the Measure Text box Tranparency.
@@ -705,7 +704,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextColor(long iR,long iG,long iB)
                 |
                 |        Set the Measure Text Color.
@@ -733,7 +732,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextFont(CATBSTR iString)
                 |
                 |        Set the Measure Text Font.
@@ -755,7 +754,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextFontIndex(long iTextFontIndex)
                 |
                 |        Set the Measure Text Font Index.
@@ -777,7 +776,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextSize(float iTextSize)
                 |
                 |        Set the Measure Text Size.
@@ -799,7 +798,7 @@ class MeasureSettingAtt(SettingController):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTildeShownStatus(long iTildeStatus)
                 |
                 |        Sets the Status whether Tilde Shown for Measure is
@@ -818,4 +817,4 @@ class MeasureSettingAtt(SettingController):
         return self.com_object.SetTildeShownStatus(i_tilde_status)
 
     def __repr__(self):
-        return f'MeasureSettingAtt(name="{ self.name }")'
+        return f'MeasureSettingAtt(name="{self.name}")'

@@ -110,7 +110,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxValue(short inbv) As double
                 |     Gets a maximal value of the constraint.
                 | 
@@ -139,7 +139,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxValueAsParam(short inbv) As Parameter
                 |     Returns the Parameter corresponding to a maximum value of the constraint.
 
@@ -153,7 +153,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMinValue(short inbv) As double
                 |     Gets a minimal value of the constraint.
                 | 
@@ -182,7 +182,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMinValueAsParam(short inbv) As Parameter
                 |     Returns the Parameter corresponding to a minimum value of the constraint.
 
@@ -196,7 +196,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbOptions() As short
                 |     Gets the number of possible options for this constraint.
                 | 
@@ -213,7 +213,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbSupports() As short
                 |     Returns number of support.
                 | 
@@ -238,7 +238,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbValues() As short
                 |     Returns the number of values in the constraint.
 
@@ -251,7 +251,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOption(short inumOption) As
                 | CatAssemblyConstraintOption
                 |     Gets an option of the constraint.
@@ -278,7 +278,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSupport(short inumSupport,boolean ibFold,CATBSTR oSupport,CATBSTR
                 | oCtxSupport)
                 |     Returns support.
@@ -307,7 +307,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue(short inbv) As double
                 |     Gets a value of the constraint.
                 | 
@@ -335,7 +335,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueAsParam(short inbv) As Parameter
                 |     Returns the Parameter corresponding to a value of the constraint.
 
@@ -349,7 +349,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxValue(short inbv,double ival)
                 |     Sets a maximal value of the constraint.
                 | 
@@ -371,7 +371,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinValue(short inbv,double ival)
                 |     Sets a minimal value of the constraint.
                 | 
@@ -393,7 +393,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOption(short inumOption,CatAssemblyConstraintOption
                 | ioption)
                 |     Sets the options number of the constraint.
@@ -416,7 +416,7 @@ class AssemblyConstraint(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValue(short inbv,double ival)
                 |     Sets a value of the constraint.
                 | 

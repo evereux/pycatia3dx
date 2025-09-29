@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingDimValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -176,7 +175,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBaultText(long iIndex,CATBSTR oBefore,CATBSTR oAfter,CATBSTR
                 | oUpper,CATBSTR oLower)
                 |     Get bault text of dimension value.
@@ -213,7 +212,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDisplayUnit(long iIndex) As long
                 |     Get display unit of dimension value.
                 | 
@@ -238,7 +237,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFakeDimValue(long iIndex) As CATBSTR
                 |     Get fake value of dimension.
                 | 
@@ -263,7 +262,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatDisplayFactor(long iIndex) As long
                 |     Get format display factor of dimension value.
                 | 
@@ -289,7 +288,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatName(long iIndex) As CATBSTR
                 |     Get format name of dimension value.
                 | 
@@ -314,7 +313,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatPrecision(long Index) As double
                 |     Get format precision of dimension value.
                 | 
@@ -340,7 +339,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatType(long iIndex) As long
                 |     Get format type of dimension value.
                 | 
@@ -365,7 +364,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatUnit(long iIndex) As long
                 |     Get format unit of dimension value.
                 | 
@@ -390,7 +389,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPSText(long iIndex,CATBSTR oPrefix,CATBSTR oSuffix)
                 |     Get PS text to dimension value.
                 | 
@@ -419,7 +418,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetScoredElement(long iIndex) As boolean
                 |     Get dimension scored element.
                 | 
@@ -446,7 +445,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaultText(long iIndex,CATBSTR iBefore,CATBSTR iAfter,CATBSTR
                 | iUpper,CATBSTR iLower)
                 |     Set bault text to dimension value.
@@ -483,7 +482,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFakeDimValue(long iIndex,CATBSTR iFakeDimValue)
                 |     Set fake value of dimension value.
                 | 
@@ -509,7 +508,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatDisplayFactor(long iIndex,long iFrmDspFact)
                 |     Set format display factor of dimension value.
                 | 
@@ -537,7 +536,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatName(long iIndex,CATBSTR iFrmName)
                 |     Set format name of dimension value.
                 | 
@@ -563,7 +562,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatPrecision(long iIndex,double iFrmPrecision)
                 |     Set format precision of dimension value.
                 | 
@@ -590,7 +589,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatType(long iIndex,long iFrmType)
                 |     Set format type of dimension value.
                 | 
@@ -616,7 +615,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatUnit(long iIndex,long iFrmUnit)
                 |     Set format unit of dimension value.
                 | 
@@ -642,7 +641,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPSText(long iIndex,CATBSTR iPrefix,CATBSTR iSuffix)
                 |     Set PS text to dimension value.
                 | 
@@ -671,7 +670,7 @@ class DrawingDimValue(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetScoredElement(long iIndex,boolean iScoredElement)
                 |     Set dimension scored element.
                 | 
@@ -695,4 +694,4 @@ class DrawingDimValue(AnyObject):
         return self.com_object.SetScoredElement(i_index, i_scored_element)
 
     def __repr__(self):
-        return f'DrawingDimValue(name="{ self.name }")'
+        return f'DrawingDimValue(name="{self.name}")'

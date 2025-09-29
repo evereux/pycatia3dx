@@ -12,7 +12,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class DrawingTextProperties(CATBaseDispatch):
-
     """
         .. note::
             :class: toggle
@@ -521,7 +520,7 @@ class DrawingTextProperties(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivateFrame(CatTextFrameType iType)
                 |     Activates the text frame of the drawing text.
                 | 
@@ -556,7 +555,7 @@ class DrawingTextProperties(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
                 |     Update the properties of the drawing text. 
                 | Example:

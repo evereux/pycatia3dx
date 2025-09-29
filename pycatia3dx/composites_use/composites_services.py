@@ -88,7 +88,7 @@ class CompositesServices(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCompositesType(CATVariant iObject,CATCompositesTypeEnum
                 | oCompositesType)
                 |     Retrieves "Composites Type" of an 3D object.

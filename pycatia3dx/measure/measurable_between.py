@@ -13,7 +13,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MeasurableBetween(MeasurableInContext):
-
     """
         .. note::
             :class: toggle
@@ -38,12 +37,14 @@ class MeasurableBetween(MeasurableInContext):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def angle_to(self, i_other_object: AnyObject, i_other_math_axis: tuple, o_angle: float, o_x_first_point: float, o_y_first_point: float, o_z_first_point: float, o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
+    def angle_to(self, i_other_object: AnyObject, i_other_math_axis: tuple, o_angle: float, o_x_first_point: float,
+                 o_y_first_point: float, o_z_first_point: float, o_x_other_point: float, o_y_other_point: float,
+                 o_z_other_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AngleTo(AnyObject iOtherObject,CATSafeArrayVariant iOtherMathAxis,double
                 | oAngle,double oXFirstPoint,double oYFirstPoint,double oZFirstPoint,double
                 | oXOtherPoint,double oYOtherPoint,double oZOtherPoint)
@@ -97,14 +98,18 @@ class MeasurableBetween(MeasurableInContext):
         :param float o_z_other_point:
         :return: None
         """
-        return self.com_object.AngleTo(i_other_object.com_object, i_other_math_axis, o_angle, o_x_first_point, o_y_first_point, o_z_first_point, o_x_other_point, o_y_other_point, o_z_other_point)
+        return self.com_object.AngleTo(i_other_object.com_object, i_other_math_axis, o_angle, o_x_first_point,
+                                       o_y_first_point, o_z_first_point, o_x_other_point, o_y_other_point,
+                                       o_z_other_point)
 
-    def distance_min_to(self, i_other_object: AnyObject, i_other_math_axis: tuple, o_distance: float, o_x_first_point: float, o_y_first_point: float, o_z_first_point: float, o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
+    def distance_min_to(self, i_other_object: AnyObject, i_other_math_axis: tuple, o_distance: float,
+                        o_x_first_point: float, o_y_first_point: float, o_z_first_point: float, o_x_other_point: float,
+                        o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinTo(AnyObject iOtherObject,CATSafeArrayVariant
                 | iOtherMathAxis,double oDistance,double oXFirstPoint,double oYFirstPoint,double
                 | oZFirstPoint,double oXOtherPoint,double oYOtherPoint,double
@@ -160,14 +165,18 @@ class MeasurableBetween(MeasurableInContext):
         :param float o_z_other_point:
         :return: None
         """
-        return self.com_object.DistanceMinTo(i_other_object.com_object, i_other_math_axis, o_distance, o_x_first_point, o_y_first_point, o_z_first_point, o_x_other_point, o_y_other_point, o_z_other_point)
+        return self.com_object.DistanceMinTo(i_other_object.com_object, i_other_math_axis, o_distance, o_x_first_point,
+                                             o_y_first_point, o_z_first_point, o_x_other_point, o_y_other_point,
+                                             o_z_other_point)
 
-    def distance_min_to_as(self, i_other_object: AnyObject, i_other_math_axis: AxisSystem, o_distance: float, o_x_first_point: float, o_y_first_point: float, o_z_first_point: float, o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
+    def distance_min_to_as(self, i_other_object: AnyObject, i_other_math_axis: AxisSystem, o_distance: float,
+                           o_x_first_point: float, o_y_first_point: float, o_z_first_point: float,
+                           o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinToAS(AnyObject iOtherObject,AxisSystem iOtherMathAxis,double
                 | oDistance,double oXFirstPoint,double oYFirstPoint,double oZFirstPoint,double
                 | oXOtherPoint,double oYOtherPoint,double oZOtherPoint)
@@ -219,14 +228,17 @@ class MeasurableBetween(MeasurableInContext):
         :param float o_z_other_point:
         :return: None
         """
-        return self.com_object.DistanceMinToAS(i_other_object.com_object, i_other_math_axis.com_object, o_distance, o_x_first_point, o_y_first_point, o_z_first_point, o_x_other_point, o_y_other_point, o_z_other_point)
+        return self.com_object.DistanceMinToAS(i_other_object.com_object, i_other_math_axis.com_object, o_distance,
+                                               o_x_first_point, o_y_first_point, o_z_first_point, o_x_other_point,
+                                               o_y_other_point, o_z_other_point)
 
-    def distance_min_to_point(self, i_x_point: float, i_y_point: float, i_z_point: float, o_distance: float, o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
+    def distance_min_to_point(self, i_x_point: float, i_y_point: float, i_z_point: float, o_distance: float,
+                              o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinToPoint(double iXPoint,double iYPoint,double iZPoint,double
                 | oDistance,double oXOtherPoint,double oYOtherPoint,double
                 | oZOtherPoint)
@@ -263,14 +275,15 @@ class MeasurableBetween(MeasurableInContext):
         :param float o_z_other_point:
         :return: None
         """
-        return self.com_object.DistanceMinToPoint(i_x_point, i_y_point, i_z_point, o_distance, o_x_other_point, o_y_other_point, o_z_other_point)
+        return self.com_object.DistanceMinToPoint(i_x_point, i_y_point, i_z_point, o_distance, o_x_other_point,
+                                                  o_y_other_point, o_z_other_point)
 
     def set_computation_mode(self, i_computation_mode: int) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc
                 | iComputationMode)
                 |     Set the mode of computation of the object. The computation mode of the
@@ -282,4 +295,4 @@ class MeasurableBetween(MeasurableInContext):
         return self.com_object.SetComputationMode(i_computation_mode)
 
     def __repr__(self):
-        return f'MeasurableBetween(name="{ self.name }")'
+        return f'MeasurableBetween(name="{self.name}")'

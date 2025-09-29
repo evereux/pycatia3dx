@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingTexts(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class DrawingTexts(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingText,double iPositionX,double iPositionY) As
                 | DrawingText
                 |     Creates a drawing text and adds it to the DrawingTexts collection.
@@ -84,7 +83,7 @@ class DrawingTexts(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingText
                 |     Returns a drawing text using its index from the DrawingTexts
                 |     collection.
@@ -122,7 +121,7 @@ class DrawingTexts(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing text from the DrawingTexts collection. 
                 |     Notice that an authoring product licence is required.
@@ -150,4 +149,4 @@ class DrawingTexts(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingTexts(name="{ self.name }")'
+        return f'DrawingTexts(name="{self.name}")'

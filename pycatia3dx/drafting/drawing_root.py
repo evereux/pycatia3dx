@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingRoot(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -215,7 +214,7 @@ class DrawingRoot(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
                 |     Isolates all the drawing views of all the drawing sheets of the drawing
                 |     representation.
@@ -242,7 +241,7 @@ class DrawingRoot(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Load3DData()
                 |     Loads 3D data pointed by the drawing representation in the
                 |     session.
@@ -268,7 +267,7 @@ class DrawingRoot(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
                 |     Updates all the drawing sheets of the drawing
                 |     representation.
@@ -294,7 +293,7 @@ class DrawingRoot(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
                 |     Changes the positions of the sheets in this drawing according to the given
                 |     ordered list. iOrderedSheets is the result of a permutation applied to the list
@@ -324,4 +323,4 @@ class DrawingRoot(AnyObject):
         return self.com_object.reorder_Sheets(i_ordered_sheets)
 
     def __repr__(self):
-        return f'DrawingRoot(name="{ self.name }")'
+        return f'DrawingRoot(name="{self.name}")'

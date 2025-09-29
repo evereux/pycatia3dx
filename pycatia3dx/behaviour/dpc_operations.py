@@ -56,7 +56,7 @@ class DPCOperations(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DPCOperation
                 |     Returns an Operation using its index or its name from the Operations
                 |     collection.
@@ -91,7 +91,7 @@ class DPCOperations(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Operate(CATBSTR OperationName) As DPCOperation
                 |     Executes a user operation of the technological object. The wanted operation
                 |     is specified by its name.

@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DrawingSheets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -72,7 +71,7 @@ class DrawingSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingSheetName) As DrawingSheet
                 |     Creates a drawing sheet and adds it to the DrawingSheets collection. This
                 |     drawing sheet becomes the active one.
@@ -107,7 +106,7 @@ class DrawingSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iDrawingSheetName) As DrawingSheet
                 |     Creates a detail drawing sheet and adds it to the DrawingSheets collection.
                 |     This detail drawing sheet becomes the active one.
@@ -142,7 +141,7 @@ class DrawingSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingSheet
                 |     Returns a drawing sheet using its index or its name from the DrawingSheets
                 |     collection.
@@ -185,7 +184,7 @@ class DrawingSheets(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
                 |     Removes a drawing sheet from the DrawingSheets collection.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -217,4 +216,4 @@ class DrawingSheets(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingSheets(name="{ self.name }")'
+        return f'DrawingSheets(name="{self.name}")'

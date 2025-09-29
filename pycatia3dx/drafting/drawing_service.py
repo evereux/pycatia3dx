@@ -11,7 +11,6 @@ from pycatia3dx.interfaces.service import Service
 
 
 class DrawingService(Service):
-
     """
         .. note::
             :class: toggle
@@ -56,7 +55,7 @@ class DrawingService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NumberOfSheetStyles(CATBSTR iStandardName) As long
                 |     Returns the number of sheet style from a given standard.
                 | 
@@ -78,7 +77,7 @@ class DrawingService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SheetStyleNamesList(CATBSTR iStandardName,CATSafeArrayVariant
                 | oListOfSheetStyleNames)
                 |     Returns the list of available Sheet style for a given
@@ -100,7 +99,7 @@ class DrawingService(Service):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub StandardNamesList(CATSafeArrayVariant
                 | oListOfStandardNames)
                 |     Returns the list of available standard names.
@@ -116,4 +115,4 @@ class DrawingService(Service):
         return self.com_object.StandardNamesList(o_list_of_standard_names)
 
     def __repr__(self):
-        return f'DrawingService(name="{ self.name }")'
+        return f'DrawingService(name="{self.name}")'

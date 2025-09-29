@@ -12,7 +12,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class DrawingGenViewProperties(CATBaseDispatch):
-
     """
         .. note::
             :class: toggle
@@ -911,7 +910,7 @@ class DrawingGenViewProperties(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RetrieveBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
                 | opRGBValues)
 
@@ -926,7 +925,7 @@ class DrawingGenViewProperties(CATBaseDispatch):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
                 | ipRGBValues)
 
@@ -937,4 +936,4 @@ class DrawingGenViewProperties(CATBaseDispatch):
         return self.com_object.SetBckColorPropertyForOp(ib_is_color_from_3d, ip_rgb_values)
 
     def __repr__(self):
-        return f'DrawingGenViewProperties(name="{ self.name }")'
+        return f'DrawingGenViewProperties(name="{self.name}")'

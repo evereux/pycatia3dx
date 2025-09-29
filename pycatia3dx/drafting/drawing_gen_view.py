@@ -13,7 +13,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingGenView(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -211,7 +210,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddBreakout(CATSafeArrayVariant iProfil,CATSafeArrayVariant
                 | iPlane1,CATSafeArrayVariant iPlane2)
                 |     Adds a breakout on the current view.
@@ -241,7 +240,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddBrokenView(CATSafeArrayVariant iBrokenLinesExtremities,double
                 | iXDirection,double iYDirection)
                 |     Adds a broken operator to a the generative drawing view. The broken area is
@@ -312,7 +311,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddClippingBox(CATSafeArrayVariant iBoxDefintion)
                 |     Adds a clipping box.
                 |     Role: this method adds a breakout on a generative view.
@@ -370,7 +369,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddClippingWithCircle(double XCenter,double YCenter,double Radius,boolean
                 | ComputeMode)
                 |     Adds a Circular exact clipping on the current view.
@@ -413,7 +412,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddClippingWithProfile(CATSafeArrayVariant profil,boolean
                 | ComputeMode)
                 |     Adds a polygonal clipping on the current view.
@@ -453,7 +452,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddLink(CATSafeArrayVariant iInfoOnViewLink)
                 |     Adds a link to the generative view.
                 |     Warning: This method is not available with 2D Layout for 3D Design. If you
@@ -498,7 +497,7 @@ class DrawingGenView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyBreakoutTo(DrawingGenView iDestinationView)
                 |     If a view have gone through a breakout view operation, this method realize
                 |     a breakout view on the view given as parameter, and the other types of the view
@@ -531,7 +530,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyClippingBoxTo(DrawingGenView iDestinationView)
                 |     Applies a clipping box to the generative view given as
                 |     parameter
@@ -566,7 +565,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ForceUpdate()
                 |     Forces the Update of the generative view even if not
                 |     necessary.
@@ -589,7 +588,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAssociatedRootProduct() As AnyObject
                 |     Returns the root product associated to the drawing view.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -613,7 +612,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystem(AnyObject oProduct,AnyObject oAxisSysteme)
                 |     Retrieves the axis systeme associated with the view.
                 | 
@@ -635,7 +634,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLink(long iIndexLink,CATSafeArrayVariant
                 | oInfoOnViewLink)
                 |     Returns the link of the generative view.
@@ -681,7 +680,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfInfoForLink(long iIndexLink) As long
                 |     Returns the number of info associated to a link of the generative
                 |     view.
@@ -721,7 +720,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsClipped() As boolean
                 |     Returns whether the drawing view is a clipping view.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -743,7 +742,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsClippedByBox() As boolean
                 |     Returns whether the drawing view contains a 3D clipping Box
                 |     opaerator.
@@ -766,7 +765,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyProjectionPlane(CATSafeArrayVariant iProjPlane)
                 |     Modifies the drawing generative view projection plane.
                 |     Role: The projection plane is the plane to which the document's geometrical
@@ -821,7 +820,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutLinks(long iNbLink,CATSafeArrayVariant
                 | iInfoOnViewLinks)
                 |     Applies links on a generative view. The view can be linked to a product
@@ -872,7 +871,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveGVS()
                 |     Removes the GVS associated to the generative view.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -895,7 +894,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLink(long iIndexLink)
                 |     Removes a link of the generative view.
                 |     Warning: This method is not available with 2D Layout for 3D Design. If you
@@ -926,7 +925,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystem(AnyObject iProduct,AnyObject iAxisSysteme)
                 |     Defines an axis systeme in the view.
                 | 
@@ -948,7 +947,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnBreak()
                 |     Removes the break view operation applied on the generative
                 |     view.
@@ -975,7 +974,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnBreakout()
                 |     Removes the breakout applied on the generative view.
                 |     Role: If a view have gone through a breakout view operation, this method
@@ -1001,7 +1000,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnClip()
                 |     Removes the clip applied on the generative view.
                 |     Role: If a view have been clipped, this method removes the last clipping
@@ -1027,7 +1026,7 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
                 |     Updates the generative view.
                 |     Warning: This method is not available with 2D Layout for 3D
@@ -1045,4 +1044,4 @@ MyView.DrawingGenView.ApplyBreakoutTo(MyDestinationView)
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'DrawingGenView(name="{ self.name }")'
+        return f'DrawingGenView(name="{self.name}")'

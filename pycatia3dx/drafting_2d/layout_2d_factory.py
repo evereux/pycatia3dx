@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Layout2DFactory(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -38,7 +37,7 @@ class Layout2DFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Create2DLayout(CATBSTR iStandardName) As Layout2DRoot
                 |     Create the 2DLayout associated to the 3D mechanical feature tha implement
                 |     this interface. E.g. a Mechanical Part.
@@ -72,4 +71,4 @@ class Layout2DFactory(AnyObject):
         return Layout2DRoot(self.com_object.Create2DLayout(i_standard_name))
 
     def __repr__(self):
-        return f'Layout2DFactory(name="{ self.name }")'
+        return f'Layout2DFactory(name="{self.name}")'

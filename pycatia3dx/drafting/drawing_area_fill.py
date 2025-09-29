@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingAreaFill(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -96,7 +95,7 @@ class DrawingAreaFill(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCharacteristics(long oNumberOfContour,long
                 | oNumberOfPoints)
                 |     Gets the number of contours and the number of points (external and
@@ -128,7 +127,7 @@ class DrawingAreaFill(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(CATSafeArrayVariant oNumberOfPointsPerContour,CATSafeArrayVariant
                 | oPointsCoordinates)
                 |     Get points coordinates of external and internal contours of area fill. This
@@ -167,7 +166,7 @@ class DrawingAreaFill(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
                 |     Isolates a drawing area fill from its geometry. 
                 | Example:
@@ -184,7 +183,7 @@ class DrawingAreaFill(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPoints(CATSafeArrayVariant
                 | iNumberOfPointsPerContour,CATSafeArrayVariant
                 | iPointsCoordinates)
@@ -220,7 +219,7 @@ class DrawingAreaFill(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPattern(CATBSTR iPatternNameFromStandard)
                 |     Sets a pattern from its name on an area fill. Pattern name must exist on
                 |     document area fill belong to.
@@ -242,4 +241,4 @@ class DrawingAreaFill(AnyObject):
         return self.com_object.SetPattern(i_pattern_name_from_standard)
 
     def __repr__(self):
-        return f'DrawingAreaFill(name="{ self.name }")'
+        return f'DrawingAreaFill(name="{self.name}")'

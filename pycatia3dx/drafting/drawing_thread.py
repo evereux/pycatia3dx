@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrawingThread(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -71,7 +70,7 @@ class DrawingThread(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsLinkedTo() As CatThreadLinkedTo
                 |     Specifies which kind of objects the thread is linked to.
                 | 
@@ -90,4 +89,4 @@ class DrawingThread(AnyObject):
         return self.com_object.IsLinkedTo()
 
     def __repr__(self):
-        return f'DrawingThread(name="{ self.name }")'
+        return f'DrawingThread(name="{self.name}")'

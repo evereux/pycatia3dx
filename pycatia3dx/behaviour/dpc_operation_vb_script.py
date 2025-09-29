@@ -43,7 +43,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInput(CATBSTR pName) As AnyObject
                 |     Returns the value of one available input of the operation.
                 | 
@@ -72,7 +72,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInternal(CATBSTR pName) As AnyObject
                 |     Returns one available io of the operation.
                 | 
@@ -103,7 +103,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOutput(CATBSTR pName) As AnyObject
                 |     Returns the value of one available output of the
                 |     operation.
@@ -133,7 +133,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutInternal(CATBSTR pName,AnyObject iValue)
                 |     provide output of one available io of the operation.
                 | 
@@ -164,7 +164,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutOutput(CATBSTR pName,AnyObject iValue)
                 |     Valuates an available output of the operation. The operation must be in
                 |     operating state, otherwise it fails.
@@ -196,7 +196,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestInput(CATBSTR pName) As long
                 |     Tests if the operation's input is set or not.
                 | 
@@ -225,7 +225,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestInternal(CATBSTR pName) As long
                 |     Test for one available output of the Operation.
                 | 
@@ -255,7 +255,7 @@ class DPCOperationVbScript(DPCOperation):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestOutput(CATBSTR pName) As long
                 |     Tests if the operation's output is set or not.
                 | 

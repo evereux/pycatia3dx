@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MeasureBetween(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Compute()
                 |     To calculate the measure between.
                 | 
@@ -65,7 +64,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
                 |     Get the angle result from the measure between.
                 | 
@@ -92,7 +91,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
                 | oAxisPositioning)
                 |     Get the position of the axis system of the object with respect to the
@@ -153,7 +152,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBandAnalysisParameters(double oMinDistance,double oMaxDistance,double
                 | oAccuracy)
                 |     Get the Band Analysis Parameters.
@@ -194,7 +193,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComponents(CATSafeArrayVariant oComponents)
                 |     Get the Components result from the measure between.
                 | 
@@ -226,7 +225,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComputationMode(CATMeasurableModeOfCalc
                 | oComputationMode)
                 |     Get the mode of computation of the object.
@@ -259,7 +258,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDistance() As double
                 |     Get the distance result from the measure.
                 | 
@@ -286,7 +285,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDistanceMeasureType(CATOpnsMeasureDistanceType
                 | oDistanceMeasureType)
                 |     Get the distance measure type on the measure between.
@@ -322,7 +321,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetExtensionMode(CATOpnsMeasureExtensionMode
                 | oRefExtentMode,CATOpnsMeasureExtensionMode oTargetExtentMode)
                 |     Get the mode of extension of the object.
@@ -360,7 +359,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFirstPointCoordinates(CATSafeArrayVariant oCoordinates)
                 |     Get the First Point Coordinates from the measure between.
                 | 
@@ -392,7 +391,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFirstSelection(CATSafeArrayVariant oFirstSelections)
                 |     Get the first selected objects of the measure Between.
                 | 
@@ -423,7 +422,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
                 |     Get the resulting type of computation of the object. The resulting type of
                 |     the object can be: Exact, Approximate or Mixed.
@@ -453,7 +452,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 |     Get the Second Point Coordinates from the measure between.
@@ -486,7 +485,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSecondSelection(CATSafeArrayVariant oSecondSelections)
                 |     Get the second selected objects of the measure Between.
                 | 
@@ -517,7 +516,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSelectionCalculationTypes(CATResultCalcType
                 | oFirstCalculationType,CATResultCalcType
                 | oSecondCalculationType)
@@ -558,7 +557,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAlongDirection(double iXVector,double iYVector,double
                 | iZVector)
                 |     Set the direction of measure between along direction.
@@ -594,7 +593,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
                 | iAxisPositioning)
                 |     Set the position of the axis system of the object with respect to the
@@ -667,7 +666,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBandAnalysisParameters(double iMinDistance,double iMaxDistance,double
                 | iAccuracy)
                 |     Set the Band Analysis Parameters.
@@ -705,7 +704,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc
                 | iComputationMode)
                 |     Set the mode of computation of the object.
@@ -738,7 +737,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDistanceMeasureType(CATOpnsMeasureDistanceType
                 | iDistanceMeasureType)
                 |     Set the distance measure type on the measure between.
@@ -774,7 +773,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExtensionMode(CATOpnsMeasureExtensionMode
                 | iRefExtentMode,CATOpnsMeasureExtensionMode iTargetExtentMode)
                 |     Set the mode of extension of the object.
@@ -810,7 +809,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFirstSelection(CATSafeArrayVariant iFirstSelections)
                 |     Set the selected objects of the measure Between.
                 | 
@@ -840,7 +839,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetResultComputationType(CATResultCalcType
                 | iComputationType)
                 |     Set the resulting type of computation of the object. The computation mode
@@ -876,7 +875,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSecondSelection(CATSafeArrayVariant iSecondSelections)
                 |     Set the second selected objects of the measure Between.
                 | 
@@ -907,7 +906,7 @@ class MeasureBetween(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSelectionCalculationTypes(CATResultCalcType
                 | iFirstCalculationType,CATResultCalcType
                 | iSecondCalculationType)
@@ -946,4 +945,4 @@ class MeasureBetween(AnyObject):
         return self.com_object.SetSelectionCalculationTypes(i_first_calculation_type, i_second_calculation_type)
 
     def __repr__(self):
-        return f'MeasureBetween(name="{ self.name }")'
+        return f'MeasureBetween(name="{self.name}")'

@@ -25,7 +25,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Layout2DView(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -716,7 +715,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
                 |     Activates the Layout2D view. Activating a Layout2D view means that this
                 |     Layout2D view is the one on which the end-user is now
@@ -736,7 +735,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddViewText() As DrawingText
                 |     Adds a view text in the Layout2D view. If a view text is already present in
                 |     the view, this method will return E_FAIL. The view text created has a default
@@ -758,7 +757,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AlignedWithReferenceView()
                 |     Activates the alignment with the reference view. Activating the alignment
                 |     with the reference view restores the constraints that the reference view
@@ -779,7 +778,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferencePlane() As CATSafeArrayVariant
                 |     Returns the reference view support definition of the Layout2D
                 |     view.
@@ -799,7 +798,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
                 | iViewNameSuffix)
                 |     Returns the prefix, the ident and the suffix of the name of the Layout2D
@@ -828,7 +827,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetViewText() As DrawingText
                 |     Returns the the view text of the Layout2D view.
                 | 
@@ -848,7 +847,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertReferencePlaneDefinition()
                 |     Invert the reference view support definition of the Layout2D view.
 
@@ -861,7 +860,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsReferencePlaneInverted() As boolean
                 |     Check if the reference view support definition of the Layout2D view is
                 |     inverted or not.
@@ -880,7 +879,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveEdition()
                 |     Saves the Sketch Edition. Once you have finished working with the Layout2D
                 |     view, you must save its edition in order to register modification for
@@ -904,7 +903,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetReferencePlane(CATSafeArrayVariant iRefPath,CATSafeArrayVariant
                 | iContextPath)
                 |     Sets the reference view support definition of the Layout2D
@@ -943,7 +942,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
                 | iViewNameSuffix)
                 |     Sets the prefix, the ident and the suffix of the name of the Layout2D view.
@@ -974,7 +973,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Size(CATSafeArrayVariant oValues)
                 |     Returns the bounding box of the Layout2D view.
                 | 
@@ -1009,7 +1008,7 @@ class Layout2DView(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnAlignedWithReferenceView()
                 |     Deactivates the alignment with the reference view. Deactivating the
                 |     alignment to the reference view removes the constraints that the reference view
@@ -1027,4 +1026,4 @@ class Layout2DView(AnyObject):
         return self.com_object.UnAlignedWithReferenceView()
 
     def __repr__(self):
-        return f'Layout2DView(name="{ self.name }")'
+        return f'Layout2DView(name="{self.name}")'

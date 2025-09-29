@@ -11,7 +11,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
 class MeasurableVolume(MeasurableInContext):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
                 |     Retrieves the wet area of the volume.
                 | 
@@ -66,7 +65,7 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
                 |     Retrieves the position of the center of gravity of a
                 |     volume.
@@ -98,7 +97,7 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVolume() As double
                 |     Retrieves the volume.
                 | 
@@ -119,12 +118,13 @@ class MeasurableVolume(MeasurableInContext):
         """
         return self.com_object.GetVolume()
 
-    def get_volume_area_c_of_g(self, o_volume: float, o_area: float, o_xc_of_g: float, o_yc_of_g: float, o_zc_of_g: float) -> None:
+    def get_volume_area_c_of_g(self, o_volume: float, o_area: float, o_xc_of_g: float, o_yc_of_g: float,
+                               o_zc_of_g: float) -> None:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetVolume_Area_COfG(double oVolume,double oArea,double oXCOfG,double
                 | oYCOfG,double oZCOfG)
                 |     Retrieves the volume, the wet area and the center of gravity of the volume.
@@ -159,4 +159,4 @@ class MeasurableVolume(MeasurableInContext):
         return self.com_object.GetVolume_Area_COfG(o_volume, o_area, o_xc_of_g, o_yc_of_g, o_zc_of_g)
 
     def __repr__(self):
-        return f'MeasurableVolume(name="{ self.name }")'
+        return f'MeasurableVolume(name="{self.name}")'

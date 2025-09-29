@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PrintArea(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -216,7 +215,7 @@ class PrintArea(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetArea(double oX,double oY,double oWidth,double oHeigth,boolean
                 | oActivated)
                 |     Gets the printing area defined on an object. Also communicates the
@@ -259,7 +258,7 @@ class PrintArea(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetArea(double iX,double iY,double iWidth,double iHeigth)
                 |     Sets a set of coordinates to define a rectangle print area.
                 |     
@@ -295,4 +294,4 @@ class PrintArea(AnyObject):
         return self.com_object.SetArea(i_x, i_y, i_width, i_height)
 
     def __repr__(self):
-        return f'PrintArea(name="{ self.name }")'
+        return f'PrintArea(name="{self.name}")'

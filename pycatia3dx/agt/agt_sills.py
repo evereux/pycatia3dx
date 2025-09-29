@@ -40,7 +40,7 @@ class AGTSills(Collection):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As AGTSill
                 |     Retrieves a Sill from the collection of Sill.
                 | 
