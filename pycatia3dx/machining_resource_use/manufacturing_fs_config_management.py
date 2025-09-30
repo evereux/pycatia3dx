@@ -1,0 +1,562 @@
+"""
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-28 13:20:20.191090
+
+    .. warning::
+        The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia3dx.system.any_object import AnyObject
+
+
+class ManufacturingFsConfigManagement(AnyObject):
+
+    """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+
+                | SystemTS.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     ManufacturingFSConfigManagement
+                | 
+                | Interface dedicated to manage FS Configuration.
+                | Role: This interface offers services to manage the FS configuration
+                | parameters.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.com_object = com_object
+
+    def add_config(self, key1: str, key2: str, key3: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub AddConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
+
+        :param str key1:
+        :param str key2:
+        :param str key3:
+        :return: None
+        """
+        return self.com_object.AddConfig(key1, key2, key3)
+
+    def get_all_config_keys(self, o_list_keys1: tuple, o_list_keys2: tuple, o_list_keys3: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub GetAllConfigKeys(CATSafeArrayVariant oListKeys1,CATSafeArrayVariant
+                | oListKeys2,CATSafeArrayVariant oListKeys3)
+
+        :param tuple o_list_keys1:
+        :param tuple o_list_keys2:
+        :param tuple o_list_keys3:
+        :return: None
+        """
+        return self.com_object.GetAllConfigKeys(o_list_keys1, o_list_keys2, o_list_keys3)
+
+    def get_instance_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> AnyObject:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                | As AnyObject
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: AnyObject
+        """
+        return AnyObject(self.com_object.GetInstanceValue(ikey1, ikey2, ikey3, i_name))
+
+    def get_instance_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As boolean
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: bool
+        """
+        return self.com_object.GetInstanceValueBoolean(ikey1, ikey2, ikey3, i_name)
+
+    def get_instance_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_unit: int) -> float:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,long iUnit) As double
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param int i_unit:
+        :return: float
+        """
+        return self.com_object.GetInstanceValueDouble(ikey1, ikey2, ikey3, i_name, i_unit)
+
+    def get_instance_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As long
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: int
+        """
+        return self.com_object.GetInstanceValueLong(ikey1, ikey2, ikey3, i_name)
+
+    def get_instance_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As CATBSTR
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: str
+        """
+        return self.com_object.GetInstanceValueStr(ikey1, ikey2, ikey3, i_name)
+
+    def get_reference_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> AnyObject:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                | As AnyObject
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: AnyObject
+        """
+        return AnyObject(self.com_object.GetReferenceValue(ikey1, ikey2, ikey3, i_name))
+
+    def get_reference_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As boolean
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: bool
+        """
+        return self.com_object.GetReferenceValueBoolean(ikey1, ikey2, ikey3, i_name)
+
+    def get_reference_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_unit: int) -> float:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,long iUnit) As double
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param int i_unit:
+        :return: float
+        """
+        return self.com_object.GetReferenceValueDouble(ikey1, ikey2, ikey3, i_name, i_unit)
+
+    def get_reference_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As long
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: int
+        """
+        return self.com_object.GetReferenceValueLong(ikey1, ikey2, ikey3, i_name)
+
+    def get_reference_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func GetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As CATBSTR
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: str
+        """
+        return self.com_object.GetReferenceValueStr(ikey1, ikey2, ikey3, i_name)
+
+    def is_config_available(self, key1: str, key2: str, key3: str) -> bool:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func IsConfigAvailable(CATBSTR key1,CATBSTR key2,CATBSTR key3) As
+                | boolean
+
+        :param str key1:
+        :param str key2:
+        :param str key3:
+        :return: bool
+        """
+        return self.com_object.IsConfigAvailable(key1, key2, key3)
+
+    def is_forbidden_access_local(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func IsForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName) As boolean
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: bool
+        """
+        return self.com_object.IsForbiddenAccessLocal(ikey1, ikey2, ikey3, i_name)
+
+    def is_modified_locally(self, ikey1: str, ikey2: str, ikey3: str, i_name: str) -> bool:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func IsModifiedLocally(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR iName)
+                | As boolean
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :return: bool
+        """
+        return self.com_object.IsModifiedLocally(ikey1, ikey2, ikey3, i_name)
+
+    def remove_config(self, key1: str, key2: str, key3: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub RemoveConfig(CATBSTR key1,CATBSTR key2,CATBSTR key3)
+
+        :param str key1:
+        :param str key2:
+        :param str key3:
+        :return: None
+        """
+        return self.com_object.RemoveConfig(key1, key2, key3)
+
+    def set_forbidden_access_local(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_state: bool) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetForbiddenAccessLocal(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,boolean iState)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param bool i_state:
+        :return: None
+        """
+        return self.com_object.SetForbiddenAccessLocal(ikey1, ikey2, ikey3, i_name, i_state)
+
+    def set_instance_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: AnyObject) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,AnyObject iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param AnyObject i_value:
+        :return: None
+        """
+        return self.com_object.SetInstanceValue(ikey1, ikey2, ikey3, i_name, i_value.com_object)
+
+    def set_instance_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: bool) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,boolean iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param bool i_value:
+        :return: None
+        """
+        return self.com_object.SetInstanceValueBoolean(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_instance_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,double iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param float i_value:
+        :return: None
+        """
+        return self.com_object.SetInstanceValueDouble(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_instance_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: int) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,long iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param int i_value:
+        :return: None
+        """
+        return self.com_object.SetInstanceValueLong(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_instance_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,CATBSTR iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param str i_value:
+        :return: None
+        """
+        return self.com_object.SetInstanceValueStr(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_instance_value_with_unit(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float, i_unit: int) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetInstanceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,double iValue,long iUnit)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param float i_value:
+        :param int i_unit:
+        :return: None
+        """
+        return self.com_object.SetInstanceValueWithUnit(ikey1, ikey2, ikey3, i_name, i_value, i_unit)
+
+    def set_local_modification_state(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_state: bool) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetLocalModificationState(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,boolean iState)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param bool i_state:
+        :return: None
+        """
+        return self.com_object.SetLocalModificationState(ikey1, ikey2, ikey3, i_name, i_state)
+
+    def set_reference_value(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: AnyObject) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValue(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,AnyObject iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param AnyObject i_value:
+        :return: None
+        """
+        return self.com_object.SetReferenceValue(ikey1, ikey2, ikey3, i_name, i_value.com_object)
+
+    def set_reference_value_boolean(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: bool) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValueBoolean(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,boolean iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param bool i_value:
+        :return: None
+        """
+        return self.com_object.SetReferenceValueBoolean(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_reference_value_double(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValueDouble(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,double iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param float i_value:
+        :return: None
+        """
+        return self.com_object.SetReferenceValueDouble(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_reference_value_long(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: int) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValueLong(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,long iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param int i_value:
+        :return: None
+        """
+        return self.com_object.SetReferenceValueLong(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_reference_value_str(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValueStr(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,CATBSTR iValue)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param str i_value:
+        :return: None
+        """
+        return self.com_object.SetReferenceValueStr(ikey1, ikey2, ikey3, i_name, i_value)
+
+    def set_reference_value_with_unit(self, ikey1: str, ikey2: str, ikey3: str, i_name: str, i_value: float, i_unit: int) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetReferenceValueWithUnit(CATBSTR ikey1,CATBSTR ikey2,CATBSTR ikey3,CATBSTR
+                | iName,double iValue,long iUnit)
+
+        :param str ikey1:
+        :param str ikey2:
+        :param str ikey3:
+        :param str i_name:
+        :param float i_value:
+        :param int i_unit:
+        :return: None
+        """
+        return self.com_object.SetReferenceValueWithUnit(ikey1, ikey2, ikey3, i_name, i_value, i_unit)
+
+    def __repr__(self):
+        return f'ManufacturingFsConfigManagement(name="{ self.name }")'
