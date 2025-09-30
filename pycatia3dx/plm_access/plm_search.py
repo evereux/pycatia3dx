@@ -8,7 +8,7 @@
         
 """
 from pycatia3dx.interfaces.editor import Editor
-from pycatia3dx.todo_plm_application_context.plm_app_context import PLMAppContext
+from pycatia3dx.plm_application_context.plm_app_context import PLMAppContext
 
 
 class PLMSearch(PLMAppContext):
