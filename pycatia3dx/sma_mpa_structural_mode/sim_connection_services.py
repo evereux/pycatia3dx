@@ -1,0 +1,163 @@
+"""
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-28 13:20:20.191090
+
+    .. warning::
+        The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.types.general import CATVariant
+
+
+class SimConnectionServices(AnyObject):
+
+    """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+
+                | SystemTS.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     SimConnectionServices
+                | 
+                | Represents the connection services to create fastener
+                | connections.
+                | 
+                | Example:
+                |     Given a SimFemRoot object, you can retrieve a SimConnectionServices as
+                |     following:
+                | 
+                |      Dim myFEMRepRoot As SimFemRoot
+                |      ...
+                |      Dim myConnectionServices As SimConnectionServices
+                |      Set myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
+                |      
+                | 
+                | Example in Python:
+                |     Given a SimFemRoot object, you can retrieve a SimConnectionServices as
+                |     following:
+                | 
+                |      ...
+                |      myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
+                |      
+                | 
+                | See also:
+                |     SimFemRoot
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.com_object = com_object
+
+    def create_lines_from_search(self, i_handlers: tuple, i_prefix: str, i_tolerance: CATVariant) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub CreateLinesFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
+                | iPrefix,CATVariant iTolerance)
+                |     Automatically creates line fasteners by giving an handlers list containing
+                |     lines.
+                | 
+                |     Parameters:
+                | 
+                |         iHandlers
+                |             [in] List of lines or geometrical set containing the candidates
+                |             lines. 
+                |         iPrefix
+                |             [in] Prefix for the name of all created fastener connections.
+                |             
+                |         iTolerance
+                |             [in] Double value used to limit the projection of the line on the
+                |             supports.
+
+        :param tuple i_handlers:
+        :param str i_prefix:
+        :param CATVariant i_tolerance:
+        :return: None
+        """
+        return self.com_object.CreateLinesFromSearch(i_handlers, i_prefix, i_tolerance)
+
+    def create_points_from_search(self, i_handlers: tuple, i_prefix: str, i_tolerance: CATVariant) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub CreatePointsFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
+                | iPrefix,CATVariant iTolerance)
+                |     Automatically creates point fasteners by giving an handlers list containing
+                |     point.
+                | 
+                |     Parameters:
+                | 
+                |         iHandlers
+                |             [in] List of points or geometrical set containing the candidates
+                |             points. 
+                |         iPrefix
+                |             [in] Prefix for the name of all created fastener connections.
+                |             
+                |         iTolerance
+                |             [in] Double value used to limit the projection of the point on the
+                |             supports.
+
+        :param tuple i_handlers:
+        :param str i_prefix:
+        :param CATVariant i_tolerance:
+        :return: None
+        """
+        return self.com_object.CreatePointsFromSearch(i_handlers, i_prefix, i_tolerance)
+
+    def import_from_fsr(self, i_prefix: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub ImportFromFSR(CATBSTR iPrefix)
+                |     Creates points fastener from importing FSR Products.
+                | 
+                |     Parameters:
+                | 
+                |         iPrefix
+                |             [in] Prefix for the name of all created fastener connections.
+
+        :param str i_prefix:
+        :return: None
+        """
+        return self.com_object.ImportFromFSR(i_prefix)
+
+    def import_from_xml(self, i_xml_file_path: str, i_prefix: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub ImportFromXML(CATBSTR iXMLFilePath,CATBSTR iPrefix)
+                |     Creates fastener connections from an XML file import containing all
+                |     necessary data.
+                | 
+                |     Parameters:
+                | 
+                |         iXMLFilePath
+                |             [in] Full path of the XML file to import. 
+                |         iPrefix
+                |             [in] Prefix for the name of all created fastener connections.
+
+        :param str i_xml_file_path:
+        :param str i_prefix:
+        :return: None
+        """
+        return self.com_object.ImportFromXML(i_xml_file_path, i_prefix)
+
+    def __repr__(self):
+        return f'SimConnectionServices(name="{ self.name }")'
