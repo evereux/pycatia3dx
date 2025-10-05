@@ -10,7 +10,7 @@
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.sma_mat_material.sim_material_table import SimMaterialTable
-from pycatia3dx.todo_sma_mpa_base.sim_table_column import SimTableColumn
+from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimElongation(AnyObject):

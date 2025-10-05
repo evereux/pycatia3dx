@@ -9,7 +9,7 @@
 """
 from pycatia3dx.sma_few_optimization.enums import SimDesignResponseDirection
 from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import SimNonParametricResponseVariable
-from pycatia3dx.todo_sma_mpa_base.sim_axis_system import SimAxisSystem
+from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):

@@ -7,8 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_sma_mpa_base.sim_table import SimTable
-from pycatia3dx.todo_sma_mpa_base.sim_table_column import SimTableColumn
+from pycatia3dx.sma_mpa_base.sim_table import SimTable
+from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimMaterialTable(SimTable):

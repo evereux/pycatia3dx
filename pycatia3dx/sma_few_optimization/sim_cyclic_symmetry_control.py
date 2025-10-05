@@ -9,8 +9,8 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sma_mpa_base.sim_axis import SimAxis
-from pycatia3dx.todo_sma_mpa_base.sim_axis_system import SimAxisSystem
+from pycatia3dx.sma_mpa_base.sim_axis import SimAxis
+from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCyclicSymmetryControl(AnyObject):
