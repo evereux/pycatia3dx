@@ -291,7 +291,7 @@ class CtmContour(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateOrienterYPR(AnyObject ospOrienter)
                 |     Create a new default orienter. The new orienter will replace the existing
                 |     sampler.
@@ -322,7 +322,7 @@ class CtmContour(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedDistance(AnyObject ospSampler)
                 |     Create a new fixed distance sampler. The new sampler will replace the
                 |     existing sampler.
@@ -354,7 +354,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedNumber(AnyObject ospSampler)
                 |     Create a new fixed number of samples sampler. The new sampler will replace
                 |     the existing sampler.
@@ -386,7 +386,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedSpeed(AnyObject ospSampler)
                 |     Create a new fixed speed sampler. The new sampler will replace the existing
                 |     sampler.
@@ -418,7 +418,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBaseList(CATSafeArrayVariant oBaseList)
                 |     Get the base surfaces used in the intersection.
                 | 
@@ -447,7 +447,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOrienter(AnyObject ospOrienter)
                 |     Get the orienter object. If no orienter has been created yet, then the
                 |     orienter will be set to NULL_var but the return value will be
@@ -476,7 +476,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetReferencedParts(CATSafeArrayVariant olspPartsBU)
                 |     Get the list of Parts which contain the reference geometry
                 | 
@@ -504,7 +504,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSampler(AnyObject ospSampler)
                 |     Get the sampler object. If no sampler has been created yet, then the
                 |     sampler will be set to NULL_var but the return value will be
@@ -536,7 +536,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStartAndEndPoint(double oStart,double oEnd)
                 |     Get the start and end points of the curve. A selected or generated curve
                 |     may be longer than the desired path. Limits of the curve can be adjusted with
@@ -576,7 +576,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetWallList(CATSafeArrayVariant oWallBU)
                 |     Get the wall surfaces used in the intersection.
                 | 
@@ -605,7 +605,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsContourInverted(boolean oIsInverted)
                 |     Get the orientation parameter used by this contour. A contour has a
                 |     direction which detemines the order of the generated points. The direction with
@@ -635,7 +635,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaseList(CATSafeArrayVariant iBaseList,CATSafeArrayVariant
                 | iBaseProd)
                 |     Set the base surfaces used in the intersection. The base surfaces are also
@@ -659,7 +659,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStartAndEndPoint(double iStart,double iEnd)
                 |     Set the start and end points of the curve. A selected or generated curve
                 |     may be longer than the desired path. Limits of the curve can be adjusted with
@@ -694,7 +694,7 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetWallList(CATSafeArrayVariant iWallList,CATSafeArrayVariant
                 | iWallProd)
                 |     Set the wall surfaces used in the intersection. The wall surfaces are also

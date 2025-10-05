@@ -43,7 +43,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddManufacturingFastener(AnyObject ihMfgFastener)
                 |     Add a Manufacturing Fastener.
                 | 
@@ -62,7 +62,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFastenerFromIndex(long iIndex) As
                 | AnyObject
                 |     Get the Manufacturing Fastener from the index.
@@ -84,7 +84,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFasteners() As CATSafeArrayVariant
                 |     Get all the Manufacturing Fasteners that belong to this
                 |     pattern.
@@ -103,7 +103,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrderingMode() As long
                 |     Get the ordering mode of this pattern.
                 | 
@@ -121,7 +121,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveAfter(long iFromIndex,long iToIndex)
                 |     Move the Manufacturing Fastener from one index to another
                 |     index
@@ -146,7 +146,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveManufacturingFastener(AnyObject ihMfgFastener)
                 |     Remove a Manufacturing Fastener.
                 | 
@@ -165,7 +165,7 @@ class DrManufacturingPattern(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOrderingMode(long iOrderingMode)
                 |     Set the ordering mode for this pattern
                 | 

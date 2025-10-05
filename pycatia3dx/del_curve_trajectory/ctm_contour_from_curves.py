@@ -42,7 +42,7 @@ class CtmContourFromCurves(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCurveSelection(CATSafeArrayVariant oCurveList,CtmCurveType
                 | opCType)
                 |     Get the Selection (Mfg Cells or Process ArcTrajectory).
@@ -79,7 +79,7 @@ class CtmContourFromCurves(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurveSelection(CATSafeArrayVariant iArrayCurve,CATSafeArrayVariant
                 | iArrayLeafPrd,CtmCurveType iCType)
                 |     Set the Selection (Mfg Cells or Process ArcTrajectory).

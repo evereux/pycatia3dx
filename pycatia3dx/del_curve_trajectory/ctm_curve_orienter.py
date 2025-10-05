@@ -41,7 +41,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBaseAxisMode(CtmBaseAxisOrientation oBaseAxisMode)
                 |     Retrieves the value of the BaseAxis mode.
                 | 
@@ -68,7 +68,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGlobalBRR(double oBaseAngle,double oRakeAngle,double
                 | oRollAngle)
                 |     Retrieves the value of the GLOBAL angles.
@@ -101,7 +101,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGlobalYPR(double oYawAngle,double oPitchAngle,double
                 | oRollAngle)
                 |     Retrieves the value of the GLOBAL angles.
@@ -134,7 +134,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRakeAngle(CtmRakeLocation iAngleLoc,double oRakeAngle)
                 |     Retrieves the value Rake on either start or end tag.
                 | 
@@ -164,7 +164,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaseAxisMode(CtmBaseAxisOrientation iBaseAxisMode)
                 |     Sets the value of the BaseAxis mode.
                 | 
@@ -191,7 +191,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGlobalBRR(double iBaseAngle,double iRakeAngle,double
                 | iRollAngle)
                 |     Set the value of the GLOBAL angles.
@@ -222,7 +222,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGlobalYPR(double iYawAngle,double iPitchAngle,double
                 | iRollAngle)
                 |     Set the value of the GLOBAL angles.
@@ -253,7 +253,7 @@ class CtmCurveOrienter(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRakeAngle(double iRakeAngle,CtmRakeLocation iAngleLoc)
                 |     Set the value Rake on either start or end tag.
                 | 

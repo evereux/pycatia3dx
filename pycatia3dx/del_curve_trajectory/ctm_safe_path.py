@@ -42,7 +42,7 @@ class CtmSafePath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsApproach(boolean oApproach)
                 |     Validates type of safe path
                 | 
@@ -83,7 +83,7 @@ class CtmSafePath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsDeparture(boolean oDepart)
                 |     Validates type of safe path
                 | 

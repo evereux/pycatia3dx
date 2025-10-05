@@ -42,7 +42,7 @@ class CtmPathMgt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNextIndexForAppend(short oNextTagAbsoluteIndex)
                 |     Retrieves the index of the tag which would be inserted immediately after
                 |     the current last tag in this path. If there are no tags in this path, the index
@@ -74,7 +74,7 @@ class CtmPathMgt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTrajectory(AnyObject ospTrajectory)
                 |     Get the parent contour trajectory of this path.
                 | 
@@ -102,7 +102,7 @@ class CtmPathMgt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveTags(short iNewFirstIndex,short oNextAvailabledIndex)
                 |     Move the tags for this path to a different spot in the
                 |     trajectory.
@@ -130,7 +130,7 @@ class CtmPathMgt(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NumberTags(double iNewFirstIndex,CATBSTR iPrefix,double
                 | oNextAvailableTagNameIndex)
                 |     Renames the tags in this path. The tags are named [Prefix][NameIndex]. For

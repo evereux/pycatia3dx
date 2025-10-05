@@ -45,7 +45,7 @@ class CurveTrajectoryFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCurveTrajectory(DNBTrajectoryType iTrajectoryType,CATBSTR iName) As
                 | CurveTrajectory
                 |     This method creates a CurveTrajectory
@@ -81,7 +81,7 @@ class CurveTrajectoryFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroyCurveTrajectory(CATBaseUnknown ispCurveTraj)
                 |     This method destroys a CurveTrajectory
                 | 
@@ -108,7 +108,7 @@ objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGenericPrefix(boolean ibGeneric)
                 |     This method must be called prior to CreateCurveTrajectory to define the
                 |     prefix used for the feature name.

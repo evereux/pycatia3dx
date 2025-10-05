@@ -41,7 +41,7 @@ class DrPatternGroup(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDrillingRivetingPattern() As AnyObject
                 |     Creates a drilling riveting pattern in this group.
                 | 
@@ -59,7 +59,7 @@ class DrPatternGroup(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatures() As CATSafeArrayVariant
                 |     Get the group children (patterns and groups).
                 | 

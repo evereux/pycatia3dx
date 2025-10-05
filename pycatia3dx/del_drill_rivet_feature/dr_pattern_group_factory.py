@@ -41,7 +41,7 @@ class DrPatternGroupFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePatternGroup() As AnyObject
                 |     Creates a pattern group.
                 | 

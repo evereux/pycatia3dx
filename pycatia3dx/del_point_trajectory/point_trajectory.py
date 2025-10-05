@@ -68,7 +68,7 @@ class PointTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(AnyObject iFastenerOccurrence,short iIndex,AnyObject
                 | oTag)
                 |     Creates a new Tag in the Point Trajectory. If no context is specified, this
@@ -108,7 +108,7 @@ class PointTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(AnyObject iTag)
                 |     Deletes a Tag.
                 | 

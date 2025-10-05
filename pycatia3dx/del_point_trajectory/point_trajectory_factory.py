@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_del_point_trajectory.point_trajectory import PointTrajectory
+from pycatia3dx.del_point_trajectory.point_trajectory import PointTrajectory
 
 
 class PointTrajectoryFactory(AnyObject):
@@ -44,7 +44,7 @@ class PointTrajectoryFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePointTrajectory(CATBSTR iTrajectoryType,CATBSTR iName) As
                 | PointTrajectory
                 |     Creates a Point Trajectory.
@@ -82,7 +82,7 @@ class PointTrajectoryFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroyPointTrajectory(PointTrajectory iPointTrajectory)
                 |     Deletes a Point Trajectory.
                 | 

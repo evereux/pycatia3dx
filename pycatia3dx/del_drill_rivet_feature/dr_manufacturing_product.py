@@ -43,7 +43,7 @@ class DrManufacturingProduct(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDrillingRivetingPattern() As AnyObject
                 |     Creates a drilling & riveting pattern.
                 | 
@@ -61,7 +61,7 @@ class DrManufacturingProduct(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateManufacturingFastener(double iOriginX,double iOriginY,double
                 | iOriginZ,double iNormalAxisX,double iNormalAxisY,double iNormalAxisZ,double
                 | iLateralAxisX,double iLateralAxisY,double iLateralAxisZ,CATBSTR
@@ -121,7 +121,7 @@ class DrManufacturingProduct(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatures() As CATSafeArrayVariant
                 |     Get the Manufacturing features i.e. DrillingRiveting patterns and
                 |     unassigned Manufacturing fasteners.

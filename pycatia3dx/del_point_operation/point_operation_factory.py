@@ -44,7 +44,7 @@ class PointOperationFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePointOperation(CATBSTR iType,AnyObject irefInst,boolean
                 | iBefore,AnyObject iTag,AnyObject iTagOwnerOcc) As
                 | PointOperation
@@ -101,7 +101,7 @@ class PointOperationFactory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeletePointOperation(PointOperation iPointOperation)
                 |     Deletes Point Operation.
                 | 

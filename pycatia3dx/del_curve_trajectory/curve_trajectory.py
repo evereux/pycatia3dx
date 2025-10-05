@@ -108,7 +108,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignResource(AnyObject iResource)
                 |     Assigns a resource to the Arc/SeamSearch Trajectory
                 | 
@@ -130,7 +130,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Attach(CATBaseUnknown iAttachObject)
                 |     Attaches an Object to the Curve Trajectory
                 | 
@@ -158,7 +158,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateApproach(AnyObject ospApproach)
                 |     Create a new linear approach path. The new approach path will replace the
                 |     existing path.
@@ -199,7 +199,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromBeadFastener(AnyObject iProductOccurrence,double iIndex)
                 | As AnyObject
                 |     Create a new contour from a Bead Fastener. The new contour will be appended
@@ -243,7 +243,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromCurves(double iIndex) As
                 | CtmContourFromCurves
                 |     Create a new curve-based contour. The new contour will be appended to the
@@ -290,7 +290,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromPoints(double iIndex) As
                 | CtmContourFromPoints
                 |     Create a new point-based contour. The new contour will be appended to the
@@ -330,7 +330,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromSurfaces(double iIndex) As
                 | CtmContourFromSurfaces
                 |     Create a new surface-based contour. The new contour will be appended to the
@@ -369,7 +369,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDeparture(AnyObject ospDepart)
                 |     Creates a new linear depart path. The new depart path will replace the
                 |     existing path.
@@ -402,7 +402,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteApproach()
                 |     Deletes the approach path.
                 | 
@@ -424,7 +424,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteDeparture()
                 |     Deletes the depart path.
                 | 
@@ -446,7 +446,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Detach()
                 |     Detaches the attached Object from the Curve Trajectory
                 | 
@@ -468,7 +468,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub FreeTransientData()
                 |     Release temporary memory storage
                 | 
@@ -487,7 +487,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateTags()
                 |     Generates all tags
                 | 
@@ -503,7 +503,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetApproach(AnyObject ospApproach)
                 |     Retrieves the approach object. If no approach exists, then ospApproach will
                 |     be set to NULL_var but the return value will be S_OK.
@@ -540,7 +540,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAssignedResources(CATSafeArrayVariant oAllResources)
                 |     Retrieves all the resources linked to the Arc/SeamSearch
                 |     Trajectory
@@ -564,7 +564,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttachOffset(double oM11,double oM12,double oM13,double oM21,double
                 | oM22,double oM23,double oM31,double oM32,double oM33,double oV1,double
                 | oV2,double oV3)
@@ -628,7 +628,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttachedObject(CATBaseUnknown oAttachedObject)
                 |     Retrieves the Attached Object for the Curve Trajectory
                 | 
@@ -656,7 +656,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetContourFromTag(AnyObject ispTag,AnyObject ospContour)
                 |     Retrieves DELCtmContour which contains this tag.
                 | 
@@ -687,7 +687,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetContours(CATSafeArrayVariant olspContours)
                 |     Get list of contour objects. If the list is empty then there are no
                 |     contours stored in the trajectory yet.
@@ -716,7 +716,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberOfPoints(short oNumPoints)
                 |     Retrieves the number of points in the trajectory
                 | 
@@ -738,7 +738,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetReferencedBaseProduct(AnyObject ospBaseProduct)
                 |     Retrieves PLMOccurrence which contains the base surface of this trajectory,
                 |     if it exists.
@@ -769,7 +769,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetReferencedTrajectory(AnyObject ospTrajectory)
                 |     Retrieves DELCurveTrajectory which is referenced by this trajectory, if it
                 |     exists. This function has relevance after CopyContoursFromTrajectory() has been
@@ -801,7 +801,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPDefinition(double oM11,double oM12,double oM13,double oM21,double
                 | oM22,double oM23,double oM31,double oM32,double oM33)
                 |     Gets the TCPDefinition (rotation)
@@ -827,7 +827,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTagList(CATSafeArrayVariant oTagList)
                 |     Retrieves the list of tags which are present in this Curve
                 |     trajectory.
@@ -857,7 +857,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTagPrefixes(CATBSTR oApproachPrefix,CATBSTR oProcessPrefix,CATBSTR
                 | oDeparturePrefix)
                 |     Get the prefixes to be used when generating tags for this
@@ -895,7 +895,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTrajectoryTable(AnyObject oTrajectoryTable)
                 |     Retrieves the Trajectory Table on the current Trajectory.
                 | 
@@ -920,7 +920,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetType(CATBSTR oSeamType)
                 |     Retrieves the type of trajectory
                 | 
@@ -943,7 +943,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReleaseEditor()
                 |     Releases transient editor of this trajectory. To be performed when editing
                 |     session is complete.
@@ -966,7 +966,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveContour(double iIndex)
                 |     Removes the contour objects at a given position.
                 | 
@@ -996,7 +996,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RenumberTags()
                 |     Rename all tags in the trajectory based on the tag prefixes and the order
                 |     of the tags.
@@ -1019,7 +1019,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveData()
                 |     Commit changes to feature model
                 | 
@@ -1038,7 +1038,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttachOffset(double iM11,double iM12,double iM13,double iM21,double
                 | iM22,double iM23,double iM31,double iM32,double iM33,double iV1,double
                 | iV2,double iV3,boolean iSaveData)
@@ -1109,7 +1109,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetContours(CATSafeArrayVariant ilspContours)
                 |     Set the list of contour objects. This function is used to set the order of
                 |     the contours and delete any contours from the list. This method can not be used
@@ -1148,7 +1148,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetReferencedTrajectory(AnyObject ispTrajectory)
                 |     Set DNBCurveTrajectory which is referenced by this trajectory. This
                 |     function is used after CopyContoursFromTrajectory() has been
@@ -1178,7 +1178,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDefinition(double iM11,double iM12,double iM13,double iM21,double
                 | iM22,double iM23,double iM31,double iM32,double iM33)
                 |     Sets the TCPDefinition (rotation)
@@ -1204,7 +1204,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTagPrefixes(CATBSTR iApproachPrefix,CATBSTR iProcessPrefix,CATBSTR
                 | iDeparturePrefix)
                 |     Set the prefixes to be used when generating tags for this
@@ -1242,7 +1242,7 @@ class CurveTrajectory(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnassignResource(AnyObject iResource)
                 |     UnAssigns a resource from the Arc/SeamSearch Trajectory
                 | 

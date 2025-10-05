@@ -43,7 +43,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateUserParameter(CATBSTR iName,long iType)
                 |     Create a parameter of specified type.
                 | 
@@ -66,7 +66,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Get3DRep(AnyObject oh3DRep)
                 |     Get the 3D representation
                 | 
@@ -85,7 +85,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBooleanValue(CATBSTR iParameterName) As boolean
                 |     Get the value of the parameter.
                 | 
@@ -106,7 +106,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFastener(AnyObject ohGeometry,AnyObject ohProduct)
                 |     Get the Geometry or design fastener.
                 | 
@@ -130,7 +130,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIntegerValue(CATBSTR iParameterName) As long
                 |     Get the value of the parameter.
                 | 
@@ -151,7 +151,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListofUserNames() As CATSafeArrayVariant
                 |     Get the list of User parameters.
                 | 
@@ -172,7 +172,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListofUserTypes() As CATSafeArrayVariant
 
         :return: tuple
@@ -184,7 +184,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPosition(double X,double Y,double Z,double Yaw,double Pitch,double
                 | Roll)
                 |     Get the position.
@@ -209,7 +209,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStringValue(CATBSTR iParameterName) As CATBSTR
                 |     Get the value of the parameter.
                 | 
@@ -230,7 +230,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTailFramePosition(double X,double Y,double Z,double Yaw,double
                 | Pitch,double Roll)
                 |     Get the Tail frame position in absolute coords.
@@ -268,7 +268,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUserAccess(CATBSTR iParameterName) As long
                 |     Get the user access/editability/visibility flag of the
                 |     parameter.
@@ -291,7 +291,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue(CATBSTR iParameterName) As double
                 |     Get the value of the parameter.
                 | 
@@ -312,7 +312,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Set3DRep(AnyObject ih3DRep)
                 |     Set the 3D representation
                 | 
@@ -331,7 +331,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBooleanValue(CATBSTR iParameterName,boolean iValue)
                 |     Set the value of the parameter.
                 | 
@@ -353,7 +353,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDesignPoint(AnyObject ihPoint,AnyObject ihProduct)
                 |     Set the link to Design Point
                 | 
@@ -375,7 +375,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFastener(AnyObject ihFastener)
                 |     Set the link to PLM fastener
                 | 
@@ -394,7 +394,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIntegerValue(CATBSTR iParameterName,long iValue)
                 |     Set the integer value of the parameter.
                 | 
@@ -416,7 +416,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPositionOffset(double X,double Y,double Z,double Yaw,double Pitch,double
                 | Roll)
                 |     Set the position offset.
@@ -441,7 +441,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStringValue(CATBSTR iParameterName,CATBSTR iValue)
                 |     Set the value of the parameter.
                 | 
@@ -463,7 +463,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTailFrameOffset(double X,double Y,double Z,double Yaw,double
                 | Pitch,double Roll)
                 |     Set the Tail frame offset.
@@ -498,7 +498,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUserAccess(CATBSTR iParameterName,long iUserAccess)
                 |     Set the user access/editability/visibility flag of the
                 |     parameter.
@@ -522,7 +522,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValue(CATBSTR iParameterName,double iValue)
                 |     Set the value of the parameter.
                 | 
@@ -544,7 +544,7 @@ class DrManufacturingFastener(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
                 |     Update the Manufacturing Fastener if something is out of date
 

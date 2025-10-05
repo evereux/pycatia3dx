@@ -42,7 +42,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Append(CATSafeArrayVariant iMpoint,CATSafeArrayVariant
                 | iVone,CATSafeArrayVariant iVtwo,CATSafeArrayVariant iVthree,AnyObject
                 | pospTag)
@@ -82,7 +82,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAbsoluteIndexOfTag(short iRelativeIndex,short
                 | oAbsoluteIndex)
                 |     Retrieves the index within this trajectory of a given path
@@ -108,7 +108,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetIndexOfTag(AnyObject ispTag,short oIndex)
                 |     Retrieves the index within this path of a given tag.
                 | 
@@ -131,7 +131,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPosition(short iIndex,CATSafeArrayVariant oMpoint,CATSafeArrayVariant
                 | oVone,CATSafeArrayVariant oVtwo,CATSafeArrayVariant oVthree)
                 |     Get the specified position relative to the aggregating product (eg. the
@@ -180,7 +180,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTag(short iIndex,AnyObject ospTag)
                 |     Retrieves the tag at a given index.
                 | 
@@ -203,7 +203,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Insert(short iIndex,CATSafeArrayVariant iMpoint,CATSafeArrayVariant
                 | iVone,CATSafeArrayVariant iVtwo,CATSafeArrayVariant iVthree,AnyObject
                 | pospTag)
@@ -247,7 +247,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NumPositions(short oSize)
                 |     Get the number of positions in the path.
                 | 
@@ -269,7 +269,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(short iIndex)
                 |     Removes a position from the path.
                 | 
@@ -289,7 +289,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()
                 |     Removes all positions from the path.
                 | 
@@ -311,7 +311,7 @@ class CtmPath(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPosition(short iIndex,CATSafeArrayVariant iMpoint,CATSafeArrayVariant
                 | iVone,CATSafeArrayVariant iVtwo,CATSafeArrayVariant iVthree,AnyObject
                 | pospTag,boolean iSaveData)
