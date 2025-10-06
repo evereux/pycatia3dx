@@ -1,0 +1,5 @@
+InsertMode = {
+    'Replace',
+    'InsertAfter',
+    'InsertBefore',
+}
