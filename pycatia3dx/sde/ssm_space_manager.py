@@ -9,9 +9,9 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sde.ssm_cutting_set import SsmCuttingSet
-from pycatia3dx.todo_sde.ssm_space_input import SsmSpaceInput
-from pycatia3dx.todo_sde.ssm_tool_set import SsmToolSet
+from pycatia3dx.sde.ssm_cutting_set import SsmCuttingSet
+from pycatia3dx.sde.ssm_space_input import SsmSpaceInput
+from pycatia3dx.sde.ssm_tool_set import SsmToolSet
 
 
 class SsmSpaceManager(AnyObject):

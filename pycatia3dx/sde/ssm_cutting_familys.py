@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.todo_sde.ssm_cutting_family import SsmCuttingFamily
+from pycatia3dx.sde.ssm_cutting_family import SsmCuttingFamily
 from pycatia3dx.types.general import CATVariant
 
 

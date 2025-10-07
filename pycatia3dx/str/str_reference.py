@@ -9,7 +9,7 @@
 """
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_srs.rfg_grid_face import RfgGridFace
+from pycatia3dx.srs.rfg_grid_face import RfgGridFace
 
 
 class StrReference(AnyObject):

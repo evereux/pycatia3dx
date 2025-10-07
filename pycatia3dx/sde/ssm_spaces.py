@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.todo_sde.ssm_space import SsmSpace
+from pycatia3dx.sde.ssm_space import SsmSpace
 from pycatia3dx.types.general import CATVariant
 
 

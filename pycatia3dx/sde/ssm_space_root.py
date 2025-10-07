@@ -9,9 +9,9 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sde.ssm_space_concept_roots import SsmSpaceConceptRoots
-from pycatia3dx.todo_sde.ssm_space_folder import SsmSpaceFolder
-from pycatia3dx.todo_sde.ssm_space_systems import SsmSpaceSystems
+from pycatia3dx.sde.ssm_space_concept_roots import SsmSpaceConceptRoots
+from pycatia3dx.sde.ssm_space_folder import SsmSpaceFolder
+from pycatia3dx.sde.ssm_space_systems import SsmSpaceSystems
 
 
 class SsmSpaceRoot(AnyObject):

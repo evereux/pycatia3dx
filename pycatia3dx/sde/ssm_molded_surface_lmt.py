@@ -11,7 +11,7 @@
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sde.ssm_parameters import SsmParameters
+from pycatia3dx.sde.ssm_parameters import SsmParameters
 
 
 class SsmMoldedSurfaceLmt(AnyObject):

@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sde.ssm_cutting_familys import SsmCuttingFamilys
+from pycatia3dx.sde.ssm_cutting_familys import SsmCuttingFamilys
 
 
 class SsmCuttingSet(AnyObject):

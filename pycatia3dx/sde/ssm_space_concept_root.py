@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
+from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
 
 
 class SsmSpaceConceptRoot(AnyObject):
