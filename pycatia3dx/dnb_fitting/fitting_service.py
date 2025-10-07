@@ -9,7 +9,7 @@
 """
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_dnb_fitting.fit_track import FitTrack
+from pycatia3dx.dnb_fitting.fit_track import FitTrack
 from pycatia3dx.types.general import CATVariant
 
 

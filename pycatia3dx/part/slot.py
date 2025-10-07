@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.sweep import Sweep
+from pycatia3dx.part.sweep import Sweep
 
 
 class Slot(Sweep):

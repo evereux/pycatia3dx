@@ -29,7 +29,7 @@ class ProjectedToleranceZone(AnyObject):
                 | Interface for accessing projected tolerance zone information of a
                 | TPS.
                 | ========| Position Length / |<----------->|<----------->| Toleranced | | |
-                | Surface - - - +-------> +=============+ \ |\ \ \ \ | Origin Direction Projected
+                | Surface - - - +-------> +=============+ \\ |\\ \\ \\ \\ | Origin Direction Projected
                 | Tolerance Zone ========
     
     """

@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_part.boolean_shape import BooleanShape
+from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Add(BooleanShape):

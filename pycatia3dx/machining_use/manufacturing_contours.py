@@ -8,7 +8,7 @@
         
 """
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_machining_use.manufacturing_agregate import ManufacturingAgregate
+from pycatia3dx.machining_use.manufacturing_agregate import ManufacturingAgregate
 
 
 class ManufacturingContours(ManufacturingAgregate):

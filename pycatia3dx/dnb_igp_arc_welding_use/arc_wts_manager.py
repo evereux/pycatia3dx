@@ -70,7 +70,7 @@ class ArcWtsManager(AnyObject):
                 |            Dim ShowWTSWindow as Boolean
                 |            ShowWTSWindow = True
                 |            Call oArcWTSManager.
-                |            LaunchWTSCommand("E:\3dsdata\BasicSeamCreation.prm",
+                |            LaunchWTSCommand("E:\\3dsdata\\BasicSeamCreation.prm",
                 |            ShowWTSWindow)
 
         :param str i_wts_primitive_file_name:

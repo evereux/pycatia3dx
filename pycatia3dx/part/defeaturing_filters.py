@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.defeaturing_filter import DefeaturingFilter
+from pycatia3dx.part.defeaturing_filter import DefeaturingFilter
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 

@@ -682,7 +682,7 @@ class OLPController(AnyObject):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetDOFParameter(i_dof_index, i_parameter_name))
+        return self.com_object.GetDOFParameter(i_dof_index, i_parameter_name)
 
     def get_hard_limit(self, i_joint_index: int, o_upper_limit: float, o_lower_limit: float) -> None:
         """
@@ -855,7 +855,7 @@ class OLPController(AnyObject):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetParameter(i_profile_type, i_parameter_name))
+        return self.com_object.GetParameter(i_profile_type, i_parameter_name)
 
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """

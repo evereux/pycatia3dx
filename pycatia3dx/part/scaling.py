@@ -10,7 +10,7 @@
 
 from pycatia3dx.knowledge_interfaces.real_param import RealParam
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.dress_up_shape import DressUpShape
+from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Scaling(DressUpShape):

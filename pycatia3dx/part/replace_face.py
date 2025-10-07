@@ -9,7 +9,7 @@
 """
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
-from pycatia3dx.todo_part.surface_based_shape import SurfaceBasedShape
+from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class ReplaceFace(SurfaceBasedShape):

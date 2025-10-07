@@ -54,12 +54,10 @@ class SpmOperation(AnyObject):
                 | 
                 |     Example:
                 | 
-                |            
-                | 
                 |           Dim objSPMOp As SPMOperation
                 |                   ......
                 |         Dim filePath as String
-                |           filePath = "D:\user1\SPMOperation\ExportProcessPoints.xls"
+                |           filePath = "D:\\user1\\SPMOperation\\ExportProcessPoints.xls"
                 |         Call objSPMOp.ExportProcessPoints(filePath)
 
         :param str file_path:
@@ -117,7 +115,7 @@ class SpmOperation(AnyObject):
                 |           Dim objSPMOp As SPMOperation
                 |                   ......
                 |         Dim filePath as String
-                |           filePath = "D:\user1\SPMOperation\ImportProcessPoints.xls"
+                |           filePath = "D:\\user1\\SPMOperation\\ImportProcessPoints.xls"
                 |         Call objSPMOp.ImportProcessPoints(filePath)
 
         :param str file_path:

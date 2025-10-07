@@ -8,8 +8,8 @@
         
 """
 
-from pycatia3dx.todo_part.defeaturing_filters import DefeaturingFilters
-from pycatia3dx.todo_part.dress_up_shape import DressUpShape
+from pycatia3dx.part.defeaturing_filters import DefeaturingFilters
+from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Defeaturing(DressUpShape):

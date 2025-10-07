@@ -85,7 +85,7 @@ class PLMSearch(PLMAppContext):
         return Editor(self.com_object.Editor)
 
     @property
-    def type(self) -> False:
+    def type(self) -> None:
         """
         .. note::
             :class: toggle
@@ -94,15 +94,15 @@ class PLMSearch(PLMAppContext):
                 | Property Type(CATBSTR iTypeBSTR) (Write Only)
                 |     Returns or sets the type of objects to search for.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @type.setter
-    def type(self, value: False):
+    def type(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Type = value

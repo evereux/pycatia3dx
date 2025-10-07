@@ -7,7 +7,6 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.sma_mpa_results.enums import SimAxisType
 from pycatia3dx.sma_mpa_results.sim_resultant_sensor import SimResultantSensor
 from pycatia3dx.types.general import CATVariant
 
@@ -41,7 +40,7 @@ class SimResultantSensorOptions(SimResultantSensor):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def set_axis_info(self, i_enum_axis_type: SimAxisType, icus_selected_axis: CATVariant) -> None:
+    def set_axis_info(self, i_enum_axis_type: int, icus_selected_axis: CATVariant) -> None:
         """
         .. note::
             :class: toggle
@@ -66,11 +65,11 @@ class SimResultantSensorOptions(SimResultantSensor):
                 |             eAxisType = SimModelAxis
                 |             oResSensorOptions.SetAxisInfo eAxisType, AxisSystem
 
-        :param SimAxisType i_enum_axis_type:
+        :param int i_enum_axis_type:
         :param CATVariant icus_selected_axis:
         :return: None
         """
-        return self.com_object.SetAxisInfo(i_enum_axis_type.com_object, icus_selected_axis)
+        return self.com_object.SetAxisInfo(i_enum_axis_type, icus_selected_axis)
 
     def set_sim_elements_selection(self, i_enum_elements_type: int, ilscus_elements: tuple) -> None:
         """

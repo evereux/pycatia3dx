@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.boolean_shape import BooleanShape
+from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Assemble(BooleanShape):

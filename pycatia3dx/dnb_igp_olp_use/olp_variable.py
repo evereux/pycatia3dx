@@ -595,9 +595,9 @@ class OLPVariable(AnyObject):
                 |     Get information about the final resource the IO is connected
                 |     to.
                 |     For example if
-                |     -RobotA\OUT1 is connected to to its parent CellA\OUT1 and -CELLA\OUT1 is
-                |     connected to CELLB\IN1 and -CELLB\IN1 is connected to ROBOTB\IN1 The connection
-                |     information is returned for ROBOTB\IN1. In many cases, if the connection
+                |     -RobotA\\OUT1 is connected to to its parent CellA\\OUT1 and -CELLA\\OUT1 is
+                |     connected to CELLB\\IN1 and -CELLB\\IN1 is connected to ROBOTB\\IN1 The connection
+                |     information is returned for ROBOTB\\IN1. In many cases, if the connection
                 |     information is returned for a resource of type Cell, this may mean the mapping
                 |     is incomplete or the final resource is not loaded in session. You can check the
                 |     oIODirection, if it is the same direction as this variable then the IO has been

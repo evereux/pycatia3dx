@@ -1347,7 +1347,7 @@ class OLPRobotMotionTarget(AnyObject):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetParameter(i_profile_type, i_parameter_name))
+        return self.com_object.GetParameter(i_profile_type, i_parameter_name)
 
     def get_parameter_from_parent(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
@@ -1379,7 +1379,7 @@ class OLPRobotMotionTarget(AnyObject):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetParameterFromParent(i_profile_type, i_parameter_name))
+        return self.com_object.GetParameterFromParent(i_profile_type, i_parameter_name)
 
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """

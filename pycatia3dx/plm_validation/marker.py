@@ -67,7 +67,7 @@ class Marker(AnyObject):
         self.com_object.Angle = value
 
     @property
-    def document_ref(self) -> False:
+    def document_ref(self) -> None:
         """
         .. note::
             :class: toggle
@@ -86,15 +86,15 @@ class Marker(AnyObject):
                 |          Dim path As String
                 |          cMarker.DocumentRef path
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @document_ref.setter
-    def document_ref(self, value: False):
+    def document_ref(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.DocumentRef = value

@@ -9,7 +9,6 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.sma_mat_material.enums import SimElasticElasticType
 from pycatia3dx.sma_mat_material.sim_material_table import SimMaterialTable
 from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
@@ -75,7 +74,7 @@ class SimElastic(AnyObject):
         self.com_object = com_object
 
     @property
-    def elastic_type(self) -> SimElasticElasticType:
+    def elastic_type(self) -> int:
         """
         .. note::
             :class: toggle
@@ -84,15 +83,15 @@ class SimElastic(AnyObject):
                 | Property ElasticType() As SimElasticElasticType
                 |     Returns or sets the ElasticType.
 
-        :return: SimElasticElasticType
+        :return: int
         """
 
-        return SimElasticElasticType(self.com_object.ElasticType)
+        return self.com_object.ElasticType
 
     @elastic_type.setter
-    def elastic_type(self, value: SimElasticElasticType):
+    def elastic_type(self, value: int):
         """
-        :param SimElasticElasticType value:
+        :param int value:
         """
 
         self.com_object.ElasticType = value

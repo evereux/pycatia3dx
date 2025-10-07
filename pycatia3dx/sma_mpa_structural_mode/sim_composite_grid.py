@@ -66,7 +66,7 @@ class SimCompositeGrid(AnyObject):
                 |     Parameters:
                 | 
                 |         iPath
-                |             [in] Path to read the data eg. D:\GridData\GridData.xls
+                |             [in] Path to read the data eg. D:\\GridData\\GridData.xls
 
         :param str i_path:
         :return: None
@@ -86,7 +86,7 @@ class SimCompositeGrid(AnyObject):
                 |     Parameters:
                 | 
                 |         iPath
-                |             [in] Path to write the data eg. D:\GridData\GridData.xls
+                |             [in] Path to write the data eg. D:\\GridData\\GridData.xls
 
         :param str i_path:
         :return: None

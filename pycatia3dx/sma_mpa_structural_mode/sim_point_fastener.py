@@ -279,7 +279,7 @@ class SimPointFastener(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumProjectionDistance() As double
-                |     Distance between the fastener placement points\lines and the farthest
+                |     Distance between the fastener placement points\\lines and the farthest
                 |     connected face. The faces at distance more than this limit will not be
                 |     considered for a fastener. Quantity: LENGTH, units: m.
 

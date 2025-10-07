@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.todo_dnb_fitting.fit_track_t_point import FitTrackTPoint
+from pycatia3dx.dnb_fitting.fit_track_t_point import FitTrackTPoint
 from pycatia3dx.types.general import CATVariant
 
 

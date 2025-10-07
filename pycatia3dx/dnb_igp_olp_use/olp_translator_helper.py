@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.dnb_igp_olp_use.olp_id_fixer import OLPIdFixer
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.dnb_igp_olp_use.olp_ast_branch import OLPAstBranch
@@ -982,7 +983,7 @@ class OLPTranslatorHelper(Service):
         return OLPExpressionFixerUpload(self.com_object.CreateExprFixerUpload())
 
     # todo:
-    def create_id_fixer(self) -> OLPIDFixer:
+    def create_id_fixer(self) -> OLPIdFixer:
         """
         .. note::
             :class: toggle
@@ -994,9 +995,9 @@ class OLPTranslatorHelper(Service):
                 |     Returns:
                 |         The fixer.
 
-        :return: OLPIDFixer
+        :return: OLPIdFixer
         """
-        return OLPIDFixer(self.com_object.CreateIDFixer())
+        return OLPIdFixer(self.com_object.CreateIDFixer())
 
     def create_parser(self, i_parser_name: str) -> OLPParser:
         """

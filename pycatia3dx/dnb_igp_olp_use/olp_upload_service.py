@@ -35,7 +35,7 @@ class OLPUploadService(Service):
                 | Example: (VB.NET)
                 | 
                 |  Dim Uploader As OlpUploadService = CATIA.Application.GetSessionService("OlpUploadService")
-                |  Dim FilesToUpload as Object() = { C:\ToUpload\File1, C:\ToUpload\File2 }
+                |  Dim FilesToUpload as Object() = { C:\\ToUpload\\File1, C:\\ToUpload\\File2 }
                 |  Dim Robot as Object = RobotSelection 'getting this selection is outside the scope of this example
                 | 
                 |  Uploader.SetResource(Robot)

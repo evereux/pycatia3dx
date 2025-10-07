@@ -10,8 +10,8 @@
 
 from pycatia3dx.knowledge_interfaces.relation import Relation
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_know_how.expert_rule_base import ExpertRuleBase
-from pycatia3dx.todo_know_how.expert_rule_set import ExpertRuleSet
+from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
+from pycatia3dx.know_how.expert_rule_set import ExpertRuleSet
 
 
 class ExpertRuleBaseRuntime(Relation):

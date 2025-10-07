@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.knowledge_interfaces.length import Length
-from pycatia3dx.todo_part.surface_based_shape import SurfaceBasedShape
+from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class ThickSurface(SurfaceBasedShape):

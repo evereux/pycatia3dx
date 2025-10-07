@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.surface_based_shape import SurfaceBasedShape
+from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class Split(SurfaceBasedShape):

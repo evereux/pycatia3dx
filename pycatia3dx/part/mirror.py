@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.transformation_shape import TransformationShape
+from pycatia3dx.part.transformation_shape import TransformationShape
 from pycatia3dx.system.any_object import AnyObject
 
 

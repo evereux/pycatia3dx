@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.todo_know_how.expert_report_object import ExpertReportObject
+from pycatia3dx.know_how.expert_report_object import ExpertReportObject
 from pycatia3dx.types.general import CATVariant
 
 

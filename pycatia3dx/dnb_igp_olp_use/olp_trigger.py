@@ -335,7 +335,7 @@ class OLPTrigger(OLPInstruction):
         :param OLPTransform i_plane:
         :return: None
         """
-        return self.com_object.SetPlane(i_origin.com_object, i_plane.com_object)
+        return self.com_object.SetPlane(i_origin, i_plane.com_object)
 
     def __repr__(self):
         return f'OLPTrigger(name="{ self.name }")'

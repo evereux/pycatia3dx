@@ -8,7 +8,7 @@
         
 """
 from pycatia3dx.knowledge_interfaces.knowledge_factory import KnowledgeFactory
-from pycatia3dx.todo_know_how.expert_rule_base import ExpertRuleBase
+from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
 
 
 class ExpertRuleBasesFactory(KnowledgeFactory):

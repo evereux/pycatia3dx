@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.knowledge_interfaces.length import Length
-from pycatia3dx.todo_part.sketch_based_shape import SketchBasedShape
+from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class Stiffener(SketchBasedShape):

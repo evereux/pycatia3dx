@@ -219,7 +219,7 @@ class OLPResourceControlDevice(AnyObject):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetParameter(i_profile_type, i_parameter_name))
+        return self.com_object.GetParameter(i_profile_type, i_parameter_name)
 
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
@@ -245,7 +245,7 @@ class OLPResourceControlDevice(AnyObject):
         """
         return self.com_object.GetParameterNames(i_profile_type)
 
-    #todo:
+    #todo: what is DELMIAOlpRobotTeam?
     def get_robot_team(self) -> DELMIAOlpRobotTeam:
         """
         .. note::

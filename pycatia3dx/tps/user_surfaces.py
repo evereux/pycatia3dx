@@ -10,6 +10,7 @@
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.tps.user_surface import UserSurface
+from pycatia3dx.types.general import CATVariant
 
 
 class UserSurfaces(Collection):
@@ -94,7 +95,7 @@ class UserSurfaces(Collection):
         :param CATVariant i_index:
         :return: UserSurface
         """
-        return UserSurface(self.com_object.Item(i_index.com_object))
+        return UserSurface(self.com_object.Item(i_index))
 
     def make_user_surface_node(self, i_first_user_surf: UserSurface, i_second_user_surf: UserSurface) -> UserSurface:
         """

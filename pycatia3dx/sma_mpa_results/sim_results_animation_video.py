@@ -106,7 +106,7 @@ class SimResultsAnimationVideo(AnyObject):
                 | 
                 |         icsFilePath
                 |             Valid path should be provided else the movie creation will fail.
-                |             For e.g. "C:\Users\temp". 
+                |             For e.g. "C:\\Users\\temp".
                 |         icsFileName
                 |             Valid file name should be provided else the movie creation will
                 |             fail.

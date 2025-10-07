@@ -10,9 +10,9 @@
 
 from pycatia3dx.knowledge_interfaces.int_param import IntParam
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.angular_repartition import AngularRepartition
-from pycatia3dx.todo_part.linear_repartition import LinearRepartition
-from pycatia3dx.todo_part.pattern import Pattern
+from pycatia3dx.part.angular_repartition import AngularRepartition
+from pycatia3dx.part.linear_repartition import LinearRepartition
+from pycatia3dx.part.pattern import Pattern
 
 
 class CircPattern(Pattern):

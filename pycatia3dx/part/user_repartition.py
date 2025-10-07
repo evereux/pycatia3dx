@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.repartition import Repartition
+from pycatia3dx.part.repartition import Repartition
 from pycatia3dx.system.any_object import AnyObject
 
 

@@ -62,7 +62,7 @@ class IndexedSearch(AnyObject):
         self.com_object = com_object
 
     @property
-    def extensions(self) -> False:
+    def extensions(self) -> None:
         """
         .. note::
             :class: toggle
@@ -84,21 +84,21 @@ class IndexedSearch(AnyObject):
                 |             extension types seperated by comma. Extension type is referenced as internal
                 |             type.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @extensions.setter
-    def extensions(self, value: False):
+    def extensions(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Extensions = value
 
     @property
-    def max_search_result_count(self) -> False:
+    def max_search_result_count(self) -> None:
         """
         .. note::
             :class: toggle
@@ -114,15 +114,15 @@ class IndexedSearch(AnyObject):
                 |             Maximum count of results to retrieve. The default value is 40. The
                 |             maximum is 200. If set greater than 200 , then it is taken as 200.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @max_search_result_count.setter
-    def max_search_result_count(self, value: False):
+    def max_search_result_count(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.com_object.MaxSearchResultCount = value
@@ -179,7 +179,7 @@ class IndexedSearch(AnyObject):
         return self.com_object.SearchCount
 
     @property
-    def types(self) -> False:
+    def types(self) -> None:
         """
         .. note::
             :class: toggle
@@ -195,15 +195,15 @@ class IndexedSearch(AnyObject):
                 |             It is a string containing a list of PLM object types, each one
                 |             separated by a comma. A type is referenced by its internal name.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @types.setter
-    def types(self, value: False):
+    def types(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Types = value

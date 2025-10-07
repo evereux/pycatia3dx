@@ -11,8 +11,8 @@
 from pycatia3dx.knowledge_interfaces.length import Length
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
-from pycatia3dx.todo_part.edge_fillet import EdgeFillet
-from pycatia3dx.todo_part.var_rad_edge_fillet import VarRadEdgeFillet
+from pycatia3dx.part.edge_fillet import EdgeFillet
+from pycatia3dx.part.var_rad_edge_fillet import VarRadEdgeFillet
 
 
 class ConstRadEdgeFillet(EdgeFillet):

@@ -9,7 +9,7 @@
 """
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
-from pycatia3dx.todo_part.fillet import Fillet
+from pycatia3dx.part.fillet import Fillet
 
 
 class EdgeFillet(Fillet):

@@ -7,8 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimComplexFrequencyStep(SimStep):

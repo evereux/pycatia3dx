@@ -9,6 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimResultsAxisSystemAccess(AnyObject):
@@ -54,7 +55,7 @@ class SimResultsAxisSystemAccess(AnyObject):
         self.com_object = com_object
 
     @property
-    def axis(self) -> False:
+    def axis(self) -> None:
         """
         .. note::
             :class: toggle
@@ -63,18 +64,18 @@ class SimResultsAxisSystemAccess(AnyObject):
                 | Property Axis(CATBaseDispatch ispAxis) (Write Only)
                 |     Sets the axis in the specified feature.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @axis.setter
-    def axis(self, value: False):
+    def axis(self, value: CATBaseDispatch):
         """
-        :param False value:
+        :param CATBaseDispatch value:
         """
 
-        self.com_object.Axis = value
+        self.com_object.Axis = value.com_object
 
     def __repr__(self):
         return f'SimResultsAxisSystemAccess(name="{ self.name }")'

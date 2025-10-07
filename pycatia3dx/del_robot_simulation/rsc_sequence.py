@@ -8,20 +8,20 @@
         
 """
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_del_robot_simulation.rsc_assignment import RscAssignment
-from pycatia3dx.todo_del_robot_simulation.rsc_break import RscBreak
-from pycatia3dx.todo_del_robot_simulation.rsc_condition import RscCondition
-from pycatia3dx.todo_del_robot_simulation.rsc_custom_instruction import RscCustomInstruction
-from pycatia3dx.todo_del_robot_simulation.rsc_data_entity import RscDataEntity
-from pycatia3dx.todo_del_robot_simulation.rsc_for import RscFor
-from pycatia3dx.todo_del_robot_simulation.rsc_goto import RscGoto
-from pycatia3dx.todo_del_robot_simulation.rsc_instruction import RscInstruction
-from pycatia3dx.todo_del_robot_simulation.rsc_loop import RscLoop
-from pycatia3dx.todo_del_robot_simulation.rsc_pulse import RscPulse
-from pycatia3dx.todo_del_robot_simulation.rsc_return import RscReturn
-from pycatia3dx.todo_del_robot_simulation.rsc_run_internal_task import RscRunInternalTask
-from pycatia3dx.todo_del_robot_simulation.rsc_run_service_task import RscRunServiceTask
-from pycatia3dx.todo_del_robot_simulation.rsc_wait import RscWait
+from pycatia3dx.del_robot_simulation.rsc_assignment import RscAssignment
+from pycatia3dx.del_robot_simulation.rsc_break import RscBreak
+from pycatia3dx.del_robot_simulation.rsc_condition import RscCondition
+from pycatia3dx.del_robot_simulation.rsc_custom_instruction import RscCustomInstruction
+from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
+from pycatia3dx.del_robot_simulation.rsc_for import RscFor
+from pycatia3dx.del_robot_simulation.rsc_goto import RscGoto
+from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
+from pycatia3dx.del_robot_simulation.rsc_loop import RscLoop
+from pycatia3dx.del_robot_simulation.rsc_pulse import RscPulse
+from pycatia3dx.del_robot_simulation.rsc_return import RscReturn
+from pycatia3dx.del_robot_simulation.rsc_run_internal_task import RscRunInternalTask
+from pycatia3dx.del_robot_simulation.rsc_run_service_task import RscRunServiceTask
+from pycatia3dx.del_robot_simulation.rsc_wait import RscWait
 
 
 class RscSequence(RscInstruction):

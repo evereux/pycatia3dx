@@ -115,7 +115,7 @@ class OLPProfiles(Collection):
         :param str i_parameter_name:
         :return: CATVariant
         """
-        return CATVariant(self.com_object.GetDefaultParameter(i_profile_type, i_parameter_name))
+        return self.com_object.GetDefaultParameter(i_profile_type, i_parameter_name)
 
     def get_or_create_by_match(self, i_skip_if_defaults: bool) -> OLPProfile:
         """

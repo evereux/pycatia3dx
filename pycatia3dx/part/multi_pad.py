@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.sketch_based_shape import SketchBasedShape
+from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class MultiPad(SketchBasedShape):

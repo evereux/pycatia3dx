@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.revolution import Revolution
+from pycatia3dx.part.revolution import Revolution
 
 
 class Shaft(Revolution):

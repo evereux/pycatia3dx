@@ -7,8 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_del_robot_simulation.rsc_data_entity import RscDataEntity
-from pycatia3dx.todo_del_robot_simulation.rsc_instruction import RscInstruction
+from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
+from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscAssignment(RscInstruction):
@@ -130,7 +130,7 @@ class RscAssignment(RscInstruction):
         :return: str
         """
 
-        return str
+        return self.com_object.AssignedValue
 
     @value.setter
     def value(self, value: str):

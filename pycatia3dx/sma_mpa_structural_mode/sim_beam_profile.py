@@ -9,7 +9,6 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.sma_mpa_structural_mode.enums import SimBeamProfileShape
 
 
 class SimBeamProfile(AnyObject):
@@ -116,7 +115,7 @@ class SimBeamProfile(AnyObject):
         self.com_object.Parameters = value
 
     @property
-    def shape(self) -> SimBeamProfileShape:
+    def shape(self) -> int:
         """
         .. note::
             :class: toggle
@@ -125,15 +124,15 @@ class SimBeamProfile(AnyObject):
                 | Property Shape() As SimBeamProfileShape
                 |     Returns or sets the shape of the beam profile.
 
-        :return: SimBeamProfileShape
+        :return: int
         """
 
-        return SimBeamProfileShape(self.com_object.Shape)
+        return self.com_object.Shape
 
     @shape.setter
-    def shape(self, value: SimBeamProfileShape):
+    def shape(self, value: int):
         """
-        :param SimBeamProfileShape value:
+        :param int value:
         """
 
         self.com_object.Shape = value

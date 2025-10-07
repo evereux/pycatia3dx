@@ -96,8 +96,8 @@ class Roughness(AnyObject):
                 |                                      /         (Field 9)
                 |                           Field 2   /
                 |                                    / (Field 8)  Field 5
-                |                               \   /
-                |                     Field 3    \ /    Field 7   Field 6
+                |                               \\   /
+                |                     Field 3    \\ /    Field 7   Field 6
                 |      
                 |       Pour le champs 7 les lettres autorisees sont :
                 |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
@@ -130,8 +130,8 @@ class Roughness(AnyObject):
                 |                                      /         (Field 9)
                 |                           Field 2   /
                 |                                    / (Field 8)  Field 5
-                |                               \   /
-                |                     Field 3    \ /    Field 7   Field 6
+                |                               \\   /
+                |                     Field 3    \\ /    Field 7   Field 6
                 |      
                 |       Pour le champs 7 les lettres autorisees sont :
                 |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)

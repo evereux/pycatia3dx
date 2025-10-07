@@ -10,7 +10,7 @@
 
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
-from pycatia3dx.todo_part.dress_up_shape import DressUpShape
+from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class AutoDraft(DressUpShape):

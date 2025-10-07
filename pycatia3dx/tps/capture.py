@@ -8,6 +8,7 @@
         
 """
 from pycatia3dx.interfaces.camera_3d import Camera3D
+from pycatia3dx.interfaces.viewpoint_3d import ViewPoint3D
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.tps.annotation_set import AnnotationSet
 from pycatia3dx.tps.annotations import Annotations
@@ -291,7 +292,7 @@ class Capture(AnyObject):
 
     # todo:
     @property
-    def view_point3_d(self) -> Viewpoint3D:
+    def view_point_3d(self) -> ViewPoint3D:
         """
         .. note::
             :class: toggle
@@ -300,15 +301,15 @@ class Capture(AnyObject):
                 | Property ViewPoint3D() As Viewpoint3D
                 |     Retrieves or sets the 3D ViewPoint definition.
 
-        :return: Viewpoint3D
+        :return: ViewPoint3D
         """
 
-        return Viewpoint3D(self.com_object.ViewPoint3D)
+        return ViewPoint3D(self.com_object.ViewPoint3D)
 
-    @view_point3_d.setter
-    def view_point3_d(self, value: Viewpoint3D):
+    @view_point_3d.setter
+    def view_point_3d(self, value: ViewPoint3D):
         """
-        :param Viewpoint3D value:
+        :param ViewPoint3D value:
         """
 
         self.com_object.ViewPoint3D = value

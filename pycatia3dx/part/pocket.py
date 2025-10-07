@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.prism import Prism
+from pycatia3dx.part.prism import Prism
 
 
 class Pocket(Prism):

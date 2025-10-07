@@ -7,8 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_know_how.expert_rule import ExpertRule
-from pycatia3dx.todo_know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
+from pycatia3dx.know_how.expert_rule import ExpertRule
+from pycatia3dx.know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
 
 
 class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):

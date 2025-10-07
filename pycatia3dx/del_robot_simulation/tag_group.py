@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_del_robot_simulation.tag_point import TagPoint
+from pycatia3dx.del_robot_simulation.tag_point import TagPoint
 
 
 class TagGroup(AnyObject):

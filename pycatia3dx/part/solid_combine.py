@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.sketch_based_shape import SketchBasedShape
+from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class SolidCombine(SketchBasedShape):

@@ -9,9 +9,9 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_del_robot_simulation.rsc_const import RscConst
-from pycatia3dx.todo_del_robot_simulation.rsc_local_var import RscLocalVar
-from pycatia3dx.todo_del_robot_simulation.rsc_sequence import RscSequence
+from pycatia3dx.del_robot_simulation.rsc_const import RscConst
+from pycatia3dx.del_robot_simulation.rsc_local_var import RscLocalVar
+from pycatia3dx.del_robot_simulation.rsc_sequence import RscSequence
 
 
 class ResourceTask2(AnyObject):
@@ -39,6 +39,7 @@ class ResourceTask2(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
+    # todo: what is DELRscTaskExecutionType?
     @property
     def execution_type(self) -> DELRscTaskExecutionType:
         """

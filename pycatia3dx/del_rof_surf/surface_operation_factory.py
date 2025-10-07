@@ -53,7 +53,7 @@ class SurfaceOperationFactory(AnyObject):
                 | 
                 |         iOperationType,
                 |             input the Operation type. The approved list of Operation type is
-                |             listed in \win_b64\resources\msgcatalog\DELApprovedOperationTypes.txt
+                |             listed in \\win_b64\\resources\\msgcatalog\\DELApprovedOperationTypes.txt
                 |             
                 |         oSurfaceOperation,
                 |             newly created SurfaceOperation. 
@@ -82,7 +82,7 @@ class SurfaceOperationFactory(AnyObject):
         :param CATBaseUnknown i_parent_seq:
         :return: CATBaseUnknown
         """
-        return CATBaseUnknown(self.com_object.CreateSurfaceOperation(i_operation_type, iref_instr.com_object, i_position.com_object, ip_tag.com_object, ip_tag_owner_occ.com_object, i_parent_seq.com_object))
+        return CATBaseUnknown(self.com_object.CreateSurfaceOperation(i_operation_type, iref_instr.com_object, i_position, ip_tag.com_object, ip_tag_owner_occ.com_object, i_parent_seq.com_object))
 
     def delete_surface_operation(self, i_surface_operation: CATBaseUnknown) -> None:
         """

@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.pattern import Pattern
+from pycatia3dx.part.pattern import Pattern
 from pycatia3dx.system.any_object import AnyObject
 
 

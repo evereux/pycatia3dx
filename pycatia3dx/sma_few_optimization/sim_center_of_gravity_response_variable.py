@@ -94,7 +94,7 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
         return SimAxisSystem(self.com_object.AxisSystem)
 
     @property
-    def direction(self) -> SimDesignResponseDirection:
+    def direction(self) -> int:
         """
         .. note::
             :class: toggle
@@ -103,15 +103,15 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
                 | Property Direction() As SimDesignResponseDirection
                 |     Returns or sets the direction of Center of Gravity design response.
 
-        :return: SimDesignResponseDirection
+        :return: int
         """
 
-        return SimDesignResponseDirection(self.com_object.Direction)
+        return self.com_object.Direction
 
     @direction.setter
-    def direction(self, value: SimDesignResponseDirection):
+    def direction(self, value: int):
         """
-        :param SimDesignResponseDirection value:
+        :param int value:
         """
 
         self.com_object.Direction = value

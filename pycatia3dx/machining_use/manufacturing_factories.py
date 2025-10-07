@@ -9,8 +9,8 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_machining_use.manufacturing_container import ManufacturingContainer
-from pycatia3dx.todo_machining_use.manufacturing_feature_container import ManufacturingFeatureContainer
+from pycatia3dx.machining_use.manufacturing_container import ManufacturingContainer
+from pycatia3dx.machining_use.manufacturing_feature_container import ManufacturingFeatureContainer
 
 
 class ManufacturingFactories(AnyObject):

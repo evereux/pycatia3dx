@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_machining_use.manufacturing_agregate import ManufacturingAgregate
+from pycatia3dx.machining_use.manufacturing_agregate import ManufacturingAgregate
 
 
 class ManufacturingSequentialMotions(ManufacturingAgregate):

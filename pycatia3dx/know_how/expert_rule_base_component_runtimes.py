@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.todo_know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
+from pycatia3dx.know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
 from pycatia3dx.types.general import CATVariant
 
 

@@ -389,9 +389,9 @@ class Section(AnyObject):
                 | 
                 |             
                 | 
-                |              mySection.ExportTo "dxf", "c:\ExportDxf" (For export as
+                |              mySection.ExportTo "dxf", "c:\\ExportDxf" (For export as
                 |              dxf)
-                |              mySection.ExportTo "dwg", "c:\ExportDwg" (For export as
+                |              mySection.ExportTo "dwg", "c:\\ExportDwg" (For export as
                 |              dwg)
 
         :param str i_format:

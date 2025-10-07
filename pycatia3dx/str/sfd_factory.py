@@ -11,6 +11,9 @@
 from pycatia3dx.mmr_automation_interfaces.factory import Factory
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.str.sfd_member import SfdMember
+from pycatia3dx.str.sfd_panel import SfdPanel
+from pycatia3dx.str.sfd_sketch_based_panel import SfdSketchBasedPanel
+from pycatia3dx.str.sfd_sketch_based_plate import SfdSketchBasedPlate
 
 
 class SfdFactory(Factory):
@@ -228,13 +231,6 @@ class SfdFactory(Factory):
                 |              
                 | 
                 |               ObjSfdServices.InitResources
-                |              
-                | 
-                | 
-                |              
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: None
         """

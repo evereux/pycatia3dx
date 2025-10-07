@@ -55,7 +55,7 @@ class DatabaseSearch(AnyObject):
         self.com_object = com_object
 
     @property
-    def all_minor_versions(self) -> False:
+    def all_minor_versions(self) -> None:
         """
         .. note::
             :class: toggle
@@ -75,21 +75,21 @@ class DatabaseSearch(AnyObject):
                 | 
                 |         S_OKAllMinorVersions criteria was successfully set
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @all_minor_versions.setter
-    def all_minor_versions(self, value: False):
+    def all_minor_versions(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.com_object.AllMinorVersions = value
 
     @property
-    def base_type(self) -> False:
+    def base_type(self) -> None:
         """
         .. note::
             :class: toggle
@@ -111,21 +111,21 @@ class DatabaseSearch(AnyObject):
                 |         E_INVALIDARGCould not find the model type corresponding to the input
                 |         type
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @base_type.setter
-    def base_type(self, value: False):
+    def base_type(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.BaseType = value
 
     @property
-    def condition(self) -> False:
+    def condition(self) -> None:
         """
         .. note::
             :class: toggle
@@ -145,21 +145,21 @@ class DatabaseSearch(AnyObject):
                 |         S_OKCondition was successfully set
                 |         E_FAILSearch mode is not Extended mode
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @condition.setter
-    def condition(self, value: False):
+    def condition(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.com_object.Condition = value
 
     @property
-    def extension(self) -> False:
+    def extension(self) -> None:
         """
         .. note::
             :class: toggle
@@ -181,21 +181,21 @@ class DatabaseSearch(AnyObject):
                 |         E_FAILCould not find the model type corresponding to the input type or
                 |         input type is not an extension
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @extension.setter
-    def extension(self, value: False):
+    def extension(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Extension = value
 
     @property
-    def latest_version(self) -> False:
+    def latest_version(self) -> None:
         """
         .. note::
             :class: toggle
@@ -215,21 +215,21 @@ class DatabaseSearch(AnyObject):
                 | 
                 |         S_OKLatestVersion criteria was successfully set
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @latest_version.setter
-    def latest_version(self, value: False):
+    def latest_version(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.com_object.LatestVersion = value
 
     @property
-    def mode(self) -> False:
+    def mode(self) -> None:
         """
         .. note::
             :class: toggle
@@ -249,15 +249,15 @@ class DatabaseSearch(AnyObject):
                 | 
                 |         S_OKMode was set correctly
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @mode.setter
-    def mode(self, value: False):
+    def mode(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.com_object.Mode = value
@@ -351,7 +351,7 @@ class DatabaseSearch(AnyObject):
         return self.com_object.SearchCount
 
     @property
-    def title(self) -> False:
+    def title(self) -> None:
         """
         .. note::
             :class: toggle
@@ -361,15 +361,15 @@ class DatabaseSearch(AnyObject):
                 |     Sets the title of the tab in the search browser displaying results of this
                 |     search
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @title.setter
-    def title(self, value: False):
+    def title(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Title = value

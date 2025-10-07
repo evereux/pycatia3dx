@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.knowledge_interfaces.angle import Angle
-from pycatia3dx.todo_part.transformation_shape import TransformationShape
+from pycatia3dx.part.transformation_shape import TransformationShape
 from pycatia3dx.system.any_object import AnyObject
 
 

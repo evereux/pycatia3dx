@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.draft_domain import DraftDomain
+from pycatia3dx.part.draft_domain import DraftDomain
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 

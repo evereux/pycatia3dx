@@ -10,7 +10,7 @@
 
 from pycatia3dx.knowledge_interfaces.angle import Angle
 from pycatia3dx.knowledge_interfaces.length import Length
-from pycatia3dx.todo_part.defeaturing_filter import DefeaturingFilter
+from pycatia3dx.part.defeaturing_filter import DefeaturingFilter
 
 
 class DefeaturingFilterWithRange(DefeaturingFilter):

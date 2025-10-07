@@ -37,7 +37,7 @@ class SimSensorBase(AnyObject):
         self.com_object = com_object
 
     @property
-    def frame_selector(self) -> False:
+    def frame_selector(self) -> None:
         """
         .. note::
             :class: toggle
@@ -47,21 +47,21 @@ class SimSensorBase(AnyObject):
                 | Only)
                 |     Sets the frame selector.
 
-        :return: False
+        :return: None
         """
 
-        return SimFramesSelection(self.com_object.SimFramesSe)
+        return self.com_object.FrameSelector
 
     @frame_selector.setter
-    def frame_selector(self, value: False):
+    def frame_selector(self, value: SimFramesSelection):
         """
-        :param False value:
+        :param SimFramesSelection value:
         """
 
-        self.com_object.FrameSelector = value
+        self.com_object.FrameSelector = value.com_object
 
     @property
-    def sim_support(self) -> False:
+    def sim_support(self) -> None:
         """
         .. note::
             :class: toggle
@@ -72,21 +72,21 @@ class SimSensorBase(AnyObject):
                 |     Sets the support for orphan results. The name of the support such as node
                 |     set.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @sim_support.setter
-    def sim_support(self, value: False):
+    def sim_support(self, value: tuple):
         """
-        :param False value:
+        :param tuple value:
         """
 
         self.com_object.SimSupport = value
 
     @property
-    def support(self) -> False:
+    def support(self) -> None:
         """
         .. note::
             :class: toggle
@@ -96,15 +96,15 @@ class SimSensorBase(AnyObject):
                 |     Sets the support for native results. Support can be features such as loads,
                 |     restraints.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @support.setter
-    def support(self, value: False):
+    def support(self, value: tuple):
         """
-        :param False value:
+        :param tuple value:
         """
 
         self.com_object.Support = value

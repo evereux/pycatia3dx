@@ -9,7 +9,7 @@
 """
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.todo_machining_use.manufacturing_activity import ManufacturingActivity
+from pycatia3dx.machining_use.manufacturing_activity import ManufacturingActivity
 
 
 class ManufacturingProgram(ManufacturingActivity):

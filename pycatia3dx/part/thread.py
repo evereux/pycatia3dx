@@ -10,7 +10,7 @@
 
 from pycatia3dx.knowledge_interfaces.str_param import StrParam
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.dress_up_shape import DressUpShape
+from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Thread(DressUpShape):
@@ -352,7 +352,7 @@ class Thread(DressUpShape):
                 |                 CATReffilesPath:
                 | 
                 |                  firstThread.CreateUserStandardDesignTable
-                |                  "","E:\user\standard\UserStandard.txt"
+                |                  "","E:\\user\\standard\\UserStandard.txt"
 
         :param str i_standard_name:
         :param str i_path:

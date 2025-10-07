@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.todo_del_robot_simulation.rsc_instruction import RscInstruction
+from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscLoop(RscInstruction):

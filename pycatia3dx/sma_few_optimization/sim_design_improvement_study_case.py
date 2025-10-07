@@ -11,6 +11,7 @@
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.sma_few_optimization.sim_design_exploration_study_case import SimDesignExplorationStudyCase
 from pycatia3dx.sma_few_optimization.sim_design_improvement_features import SimDesignImprovementFeatures
+from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
@@ -87,7 +88,7 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
         self.com_object.AnalysisCase = value
 
     @property
-    def fem_rep(self) -> False:
+    def fem_rep(self) -> None:
         """
         .. note::
             :class: toggle
@@ -96,18 +97,18 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
                 | Property FEMRep(CATBaseDispatch ispFEMRep) (Write Only)
                 |     Associates the FEM representation to the design improvement study case.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @fem_rep.setter
-    def fem_rep(self, value: False):
+    def fem_rep(self, value: CATBaseDispatch):
         """
-        :param False value:
+        :param CATBaseDispatch value:
         """
 
-        self.com_object.FEMRep = value
+        self.com_object.FEMRep = value.com_object
 
     @property
     def features(self) -> SimDesignImprovementFeatures:

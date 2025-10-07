@@ -72,7 +72,7 @@ class SimMeshedBolt(AnyObject):
         self.com_object = com_object
 
     @property
-    def local_plane(self) -> False:
+    def local_plane(self) -> None:
         """
         .. note::
             :class: toggle
@@ -81,18 +81,18 @@ class SimMeshedBolt(AnyObject):
                 | Property LocalPlane(AnyObject iPlane) (Write Only)
                 |     Sets the meshed bolt plane.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @local_plane.setter
-    def local_plane(self, value: False):
+    def local_plane(self, value: AnyObject) -> None:
         """
-        :param False value:
+        :param AnyObject value:
         """
 
-        self.com_object.LocalPlane = value
+        self.com_object.LocalPlane = value.com_object
 
     @property
     def plane(self) -> SimMathPlane:

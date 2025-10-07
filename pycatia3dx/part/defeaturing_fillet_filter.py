@@ -8,7 +8,7 @@
         
 """
 
-from pycatia3dx.todo_part.defeaturing_filter_with_range import DefeaturingFilterWithRange
+from pycatia3dx.part.defeaturing_filter_with_range import DefeaturingFilterWithRange
 
 
 class DefeaturingFilletFilter(DefeaturingFilterWithRange):

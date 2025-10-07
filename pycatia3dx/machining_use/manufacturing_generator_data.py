@@ -10,7 +10,7 @@
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
-from pycatia3dx.todo_machining_use.manufacturing_output import ManufacturingOutput
+from pycatia3dx.machining_use.manufacturing_output import ManufacturingOutput
 
 
 class ManufacturingGeneratorData(AnyObject):

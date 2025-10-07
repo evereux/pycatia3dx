@@ -58,7 +58,7 @@ class SearchService(Service):
         return DatabaseSearch(self.com_object.DatabaseSearch)
 
     @property
-    def title(self) -> False:
+    def title(self) -> None:
         """
         .. note::
             :class: toggle
@@ -67,15 +67,15 @@ class SearchService(Service):
                 | Property Title(CATBSTR iTitle) (Write Only)
                 |     Sets the title of the Search Browser.
 
-        :return: False
+        :return: None
         """
 
         return None
 
     @title.setter
-    def title(self, value: False):
+    def title(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.com_object.Title = value

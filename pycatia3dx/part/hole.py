@@ -12,8 +12,8 @@ from pycatia3dx.knowledge_interfaces.angle import Angle
 from pycatia3dx.knowledge_interfaces.length import Length
 from pycatia3dx.knowledge_interfaces.str_param import StrParam
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.todo_part.limit import Limit
-from pycatia3dx.todo_part.sketch_based_shape import SketchBasedShape
+from pycatia3dx.part.limit import Limit
+from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class Hole(SketchBasedShape):
@@ -597,7 +597,7 @@ class Hole(SketchBasedShape):
                 |                 CATReffilesPath:
                 | 
                 |                  firstHole.CreateUserStandardDesignTable
-                |                  "","E:\user\standard\UserStandard.txt"
+                |                  "","E:\\user\\standard\\UserStandard.txt"
 
         :param str i_standard_name:
         :param str i_path:
