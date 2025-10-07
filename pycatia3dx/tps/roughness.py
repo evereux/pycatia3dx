@@ -1,0 +1,168 @@
+"""
+    Module initially auto generated using DSYAutomation files from CATIA 3DX R2025x on 2025-09-28 13:20:20.191090
+
+    .. warning::
+        The notes denoted "3DEXPERIENCE Automation Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
+
+
+class Roughness(AnyObject):
+
+    """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+
+                | SystemTS.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     Roughness
+                | 
+                | Interface to manage Roughness TPS.
+                | TPS for Technological Product Specifications.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.com_object = com_object
+
+    @property
+    def applicability(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Property Applicability() As short
+                |     Retrieves or sets roughness applicability.
+
+        :return: int
+        """
+
+        return self.com_object.Applicability
+
+    @applicability.setter
+    def applicability(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.com_object.Applicability = value
+
+    @property
+    def obtention(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Property Obtention() As short
+                |     Retrieves or sets roughness obtention mode.
+
+        :return: int
+        """
+
+        return self.com_object.Obtention
+
+    @obtention.setter
+    def obtention(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.com_object.Obtention = value
+
+    def field(self, i_index: int) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func Field(short iIndex) As CATBSTR
+                |     Retrieves roughness field.
+                | 
+                |                                           Field 4
+                |                           Field 1     ------------------
+                |                                      /         (Field 9)
+                |                           Field 2   /
+                |                                    / (Field 8)  Field 5
+                |                               \   /
+                |                     Field 3    \ /    Field 7   Field 6
+                |      
+                |       Pour le champs 7 les lettres autorisees sont :
+                |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+                |      
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
+                |             to 7 before V5R13 
+                |         oField
+                |             The contain of the iIndex field.
+
+        :param int i_index:
+        :return: str
+        """
+        return self.com_object.Field(i_index)
+
+    def set_field(self, i_index: int, i_field: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub SetField(short iIndex,CATBSTR iField)
+                |     Set roughness field.
+                | 
+                |                                           Field 4
+                |                           Field 1     ------------------
+                |                                      /         (Field 9)
+                |                           Field 2   /
+                |                                    / (Field 8)  Field 5
+                |                               \   /
+                |                     Field 3    \ /    Field 7   Field 6
+                |      
+                |       Pour le champs 7 les lettres autorisees sont :
+                |       M, C, R, P, X, = ,L (symbole perpendicularite de la DSES)
+                |      
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             Field index, from 1 to 9 from V5R13 (Fields 8 and 9 added). from 1
+                |             to 7 before V5R13 
+                |         iField
+                |             The contain of the iIndex field.
+
+        :param int i_index:
+        :param str i_field:
+        :return: None
+        """
+        return self.com_object.SetField(i_index, i_field)
+
+    def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Func TPSParallelOnScreen() As TPSParallelOnScreen
+                |     Gets the annotation on TPSParallelOnScreen interface. 
+
+        :return: TPSParallelOnScreen
+        """
+        return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
+
+    def __repr__(self):
+        return f'Roughness(name="{ self.name }")'
