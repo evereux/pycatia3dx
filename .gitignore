@@ -211,3 +211,5 @@ __marimo__/
 __reference_scripts__
 
 test.py
+
+docs/generated/
