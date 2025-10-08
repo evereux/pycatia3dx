@@ -8,13 +8,12 @@
         
 """
 
+from pycatia3dx.space_reference_system.srs_grid_face import SrsGridFace
 from pycatia3dx.system.collection import Collection
-from pycatia3dx.srs.srs_grid_face import SrsGridFace
 from pycatia3dx.types.general import CATVariant
 
 
 class SrsGridFaces(Collection):
-
     """
         .. note::
             :class: toggle
@@ -67,4 +66,4 @@ class SrsGridFaces(Collection):
         return SrsGridFace(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SrsGridFaces(name="{ self.name }")'
+        return f'SrsGridFaces(name="{self.name}")'

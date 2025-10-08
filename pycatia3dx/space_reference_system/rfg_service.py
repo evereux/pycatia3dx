@@ -10,12 +10,11 @@
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.srs.rfg_grid_face import RfgGridFace
+from pycatia3dx.space_reference_system.rfg_grid_face import RfgGridFace
 from pycatia3dx.types.general import CATVariant
 
 
 class RfgService(Service):
-
     """
         .. note::
             :class: toggle
@@ -82,7 +81,8 @@ class RfgService(Service):
         """
         return self.com_object.CreateRefSurfaceFeature(i_part.com_object, i_project_data.com_object)
 
-    def get_reference_plane(self, i_part: Part, i_plane_system_index: CATVariant, i_plane_index: CATVariant) -> RfgGridFace:
+    def get_reference_plane(self, i_part: Part, i_plane_system_index: CATVariant,
+                            i_plane_index: CATVariant) -> RfgGridFace:
         """
         .. note::
             :class: toggle
@@ -165,4 +165,4 @@ class RfgService(Service):
         return self.com_object.SynchronizeRefSurface(i_part.com_object)
 
     def __repr__(self):
-        return f'RfgService(name="{ self.name }")'
+        return f'RfgService(name="{self.name}")'

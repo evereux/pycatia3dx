@@ -8,12 +8,11 @@
         
 """
 
+from pycatia3dx.space_reference_system.srs_grid_face import SrsGridFace
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.srs.srs_grid_face import SrsGridFace
 
 
-class SrsCentreLine(AnyObject):
-
+class SrsMidShip(AnyObject):
     """
         .. note::
             :class: toggle
@@ -25,9 +24,9 @@ class SrsCentreLine(AnyObject):
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     SrsCentreLine
+                |                     SrsMidShip
                 | 
-                | Role: Allows accessing of Centre Line's data.
+                | Role: Allows accessing of MidShip's data.
     
     """
 
@@ -49,5 +48,19 @@ class SrsCentreLine(AnyObject):
 
         return SrsGridFace(self.com_object.ReferencePlane)
 
+    def get_front_orientation_direction(self, o_direction: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+                | Sub GetFrontOrientationDirection(CATSafeArrayVariant
+                | oDirection)
+
+        :param tuple o_direction:
+        :return: None
+        """
+        return self.com_object.GetFrontOrientationDirection(o_direction)
+
     def __repr__(self):
-        return f'SrsCentreLine(name="{ self.name }")'
+        return f'SrsMidShip(name="{self.name}")'

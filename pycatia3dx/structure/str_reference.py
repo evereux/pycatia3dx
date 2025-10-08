@@ -8,12 +8,11 @@
         
 """
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.space_reference_system.rfg_grid_face import RfgGridFace
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.srs.rfg_grid_face import RfgGridFace
 
 
 class StrReference(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -295,4 +294,4 @@ class StrReference(AnyObject):
         return self.com_object.ValidateSpecification(i_ref_prod_occ.com_object, i_ref_feature.com_object)
 
     def __repr__(self):
-        return f'StrReference(name="{ self.name }")'
+        return f'StrReference(name="{self.name}")'

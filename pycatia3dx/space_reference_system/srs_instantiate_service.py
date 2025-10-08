@@ -8,11 +8,10 @@
         
 """
 from pycatia3dx.interfaces.service import Service
-from pycatia3dx.srs.srs_coordinate_converter import SrsCoordinateConverter
+from pycatia3dx.space_reference_system.srs_coordinate_converter import SrsCoordinateConverter
 
 
 class SrsInstantiateService(Service):
-
     """
         .. note::
             :class: toggle
@@ -59,4 +58,4 @@ class SrsInstantiateService(Service):
         return self.com_object.CreateSrsCoordinateConverter(op_srs_coordinate_converter.com_object)
 
     def __repr__(self):
-        return f'SrsInstantiateService(name="{ self.name }")'
+        return f'SrsInstantiateService(name="{self.name}")'

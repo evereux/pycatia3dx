@@ -9,15 +9,14 @@
 """
 
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.space_reference_system.srs_bounding_box import SrsBoundingBox
+from pycatia3dx.space_reference_system.srs_centre_line import SrsCentreLine
+from pycatia3dx.space_reference_system.srs_grid_sets import SrsGridSets
+from pycatia3dx.space_reference_system.srs_mid_ship import SrsMidShip
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.srs.srs_bounding_box import SrsBoundingBox
-from pycatia3dx.srs.srs_centre_line import SrsCentreLine
-from pycatia3dx.srs.srs_grid_sets import SrsGridSets
-from pycatia3dx.srs.srs_mid_ship import SrsMidShip
 
 
 class SrsPart(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -110,4 +109,4 @@ class SrsPart(AnyObject):
         return SrsGridSets(self.com_object.SrsGridSets)
 
     def __repr__(self):
-        return f'SrsPart(name="{ self.name }")'
+        return f'SrsPart(name="{self.name}")'

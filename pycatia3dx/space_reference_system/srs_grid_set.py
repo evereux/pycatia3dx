@@ -8,13 +8,12 @@
         
 """
 
+from pycatia3dx.space_reference_system.srs_grid_face import SrsGridFace
+from pycatia3dx.space_reference_system.srs_grid_faces import SrsGridFaces
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.srs.srs_grid_face import SrsGridFace
-from pycatia3dx.srs.srs_grid_faces import SrsGridFaces
 
 
 class SrsGridSet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -201,7 +200,8 @@ class SrsGridSet(AnyObject):
         """
         return SrsGridFaces(self.com_object.GetFacesOfGroup(i_last_grid_face.com_object))
 
-    def get_faces_sorted(self, o_grid_faces_bfr: SrsGridFaces, o_origin_face: SrsGridFace, o_grid_faces_afr: SrsGridFaces) -> None:
+    def get_faces_sorted(self, o_grid_faces_bfr: SrsGridFaces, o_origin_face: SrsGridFace,
+                         o_grid_faces_afr: SrsGridFaces) -> None:
         """
         .. note::
             :class: toggle
@@ -241,7 +241,8 @@ class SrsGridSet(AnyObject):
         :param SrsGridFaces o_grid_faces_afr:
         :return: None
         """
-        return self.com_object.GetFacesSorted(o_grid_faces_bfr.com_object, o_origin_face.com_object, o_grid_faces_afr.com_object)
+        return self.com_object.GetFacesSorted(o_grid_faces_bfr.com_object, o_origin_face.com_object,
+                                              o_grid_faces_afr.com_object)
 
     def get_group_faces(self, o_last_grid_faces_bfr: SrsGridFaces, o_last_grid_faces_afr: SrsGridFaces) -> None:
         """
@@ -432,4 +433,4 @@ class SrsGridSet(AnyObject):
         return self.com_object.IsSymmetric()
 
     def __repr__(self):
-        return f'SrsGridSet(name="{ self.name }")'
+        return f'SrsGridSet(name="{self.name}")'

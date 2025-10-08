@@ -9,12 +9,11 @@
 """
 
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.space_reference_system.srs_grid_set import SrsGridSet
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.srs.srs_grid_set import SrsGridSet
 
 
 class SrsGridFace(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -274,4 +273,4 @@ class SrsGridFace(AnyObject):
         return self.com_object.ResetCategory()
 
     def __repr__(self):
-        return f'SrsGridFace(name="{ self.name }")'
+        return f'SrsGridFace(name="{self.name}")'
