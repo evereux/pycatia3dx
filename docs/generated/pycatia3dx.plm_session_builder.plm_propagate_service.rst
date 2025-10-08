@@ -1,0 +1,12 @@
+pycatia3dx.plm\_session\_builder.plm\_propagate\_service
+========================================================
+
+.. automodule:: pycatia3dx.plm_session_builder.plm_propagate_service
+
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      PLMPropagateService
+   
