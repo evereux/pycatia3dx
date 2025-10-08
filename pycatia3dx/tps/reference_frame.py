@@ -7,15 +7,17 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.tps.annotations import Annotations
 from pycatia3dx.tps.user_surface import UserSurface
 from pycatia3dx.types.general import CATVariant
 
+if TYPE_CHECKING:
+    from pycatia3dx.tps.annotations import Annotations
+
 
 class ReferenceFrame(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -180,7 +182,7 @@ class ReferenceFrame(AnyObject):
         self.com_object = com_object
 
     @property
-    def all_datums_simple(self) -> Annotations:
+    def all_datums_simple(self) -> 'Annotations':
         """
         .. note::
             :class: toggle
@@ -196,7 +198,7 @@ class ReferenceFrame(AnyObject):
 
         :return: Annotations
         """
-
+        from pycatia3dx.tps.annotations import Annotations
         return Annotations(self.com_object.AllDatumsSimple)
 
     def frame(self, o_first_box: str, o_second_box: str, o_third_box: str) -> None:
@@ -381,4 +383,4 @@ class ReferenceFrame(AnyObject):
         return self.com_object.SetFrame(i_first_box, i_second_box, i_third_box)
 
     def __repr__(self):
-        return f'ReferenceFrame(name="{ self.name }")'
+        return f'ReferenceFrame(name="{self.name}")'

@@ -8,12 +8,15 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.knowledge_interfaces.knowledge_collection import KnowledgeCollection
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.knowledge_interfaces.knowledge_collection import KnowledgeCollection
 
 
 class KnowledgeFactory(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -39,7 +42,7 @@ class KnowledgeFactory(AnyObject):
         self.com_object = com_object
 
     @property
-    def collection(self) -> KnowledgeCollection:
+    def collection(self) -> 'KnowledgeCollection':
         """
         .. note::
             :class: toggle
@@ -50,7 +53,7 @@ class KnowledgeFactory(AnyObject):
 
         :return: KnowledgeCollection
         """
-
+        from pycatia3dx.knowledge_interfaces.knowledge_collection import KnowledgeCollection
         return KnowledgeCollection(self.com_object.Collection)
 
     @property
@@ -69,4 +72,4 @@ class KnowledgeFactory(AnyObject):
         return AnyObject(self.com_object.Root)
 
     def __repr__(self):
-        return f'KnowledgeFactory(name="{ self.name }")'
+        return f'KnowledgeFactory(name="{self.name}")'

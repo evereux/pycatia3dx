@@ -8,15 +8,14 @@
         
 """
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.dnb_igp_olp_use.olp_controller import OLPController
 from pycatia3dx.dnb_igp_olp_use.olp_gun import OLPGun
 from pycatia3dx.dnb_igp_olp_use.olp_motion_groups import OLPMotionGroups
+from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.types.general import CATVariant
 
 
 class OLPResourceControlDevice(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -245,8 +244,8 @@ class OLPResourceControlDevice(AnyObject):
         """
         return self.com_object.GetParameterNames(i_profile_type)
 
-    #todo: what is DELMIAOlpRobotTeam?
-    def get_robot_team(self) -> DELMIAOlpRobotTeam:
+    # todo: what is DELMIAOlpRobotTeam?
+    def get_robot_team(self) -> int:
         """
         .. note::
             :class: toggle
@@ -258,9 +257,9 @@ class OLPResourceControlDevice(AnyObject):
                 |     Returns:
                 |         The robot team retrieved.
 
-        :return: DELMIAOlpRobotTeam
+        :return: int
         """
-        return DELMIAOlpRobotTeam(self.com_object.GetRobotTeam())
+        return self.com_object.GetRobotTeam()
 
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant) -> None:
         """
@@ -290,4 +289,4 @@ class OLPResourceControlDevice(AnyObject):
         return self.com_object.SetParameter(i_profile_type, i_parameter_name, i_value)
 
     def __repr__(self):
-        return f'OLPResourceControlDevice(name="{ self.name }")'
+        return f'OLPResourceControlDevice(name="{self.name}")'

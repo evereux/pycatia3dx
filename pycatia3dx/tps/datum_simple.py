@@ -7,13 +7,15 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.tps.annotations import Annotations
+
+if TYPE_CHECKING:
+    from pycatia3dx.tps.annotations import Annotations
 
 
 class DatumSimple(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +62,7 @@ class DatumSimple(AnyObject):
         self.com_object.Label = value
 
     @property
-    def targets(self) -> Annotations:
+    def targets(self) -> 'Annotations':
         """
         .. note::
             :class: toggle
@@ -72,8 +74,8 @@ class DatumSimple(AnyObject):
 
         :return: Annotations
         """
-
+        from pycatia3dx.tps.annotations import Annotations
         return Annotations(self.com_object.Targets)
 
     def __repr__(self):
-        return f'DatumSimple(name="{ self.name }")'
+        return f'DatumSimple(name="{self.name}")'

@@ -7,13 +7,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.plm_validation.val_reviews import VALReviews
+
+if TYPE_CHECKING:
+    from pycatia3dx.plm_validation.val_reviews import VALReviews
 
 
 class VALReview(PLMEntity):
-
     """
         .. note::
             :class: toggle
@@ -37,7 +40,7 @@ class VALReview(PLMEntity):
         self.com_object = com_object
 
     @property
-    def reviews(self) -> VALReviews:
+    def reviews(self) -> 'VALReviews':
         """
         .. note::
             :class: toggle
@@ -48,7 +51,7 @@ class VALReview(PLMEntity):
 
         :return: VALReviews
         """
-
+        from pycatia3dx.plm_validation.val_reviews import VALReviews
         return VALReviews(self.com_object.Reviews)
 
     def get_factory(self, i_type: str) -> AnyObject:
@@ -82,4 +85,4 @@ class VALReview(PLMEntity):
         return self.com_object.GetFactory(i_type)
 
     def __repr__(self):
-        return f'ValReview(name="{ self.name }")'
+        return f'ValReview(name="{self.name}")'

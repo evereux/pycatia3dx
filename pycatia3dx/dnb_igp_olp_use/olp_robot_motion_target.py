@@ -10,7 +10,6 @@
 from pycatia3dx.del_resource_builder.rsc_accuracy_profile import RscAccuracyProfile
 from pycatia3dx.del_resource_builder.rsc_applicative_profile import RscApplicativeProfile
 from pycatia3dx.del_resource_builder.rsc_motion_profile import RscMotionProfile
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.dnb_igp_olp_use.olp_accuracy_profile import OLPAccuracyProfile
 from pycatia3dx.dnb_igp_olp_use.olp_c_frame_rivet_profile import OLPCFrameRivetProfile
 from pycatia3dx.dnb_igp_olp_use.olp_choreography_events import OLPChoreographyEvents
@@ -26,11 +25,11 @@ from pycatia3dx.dnb_igp_olp_use.olp_spot_profile import OLPSpotProfile
 from pycatia3dx.dnb_igp_olp_use.olp_tag import OLPTag
 from pycatia3dx.dnb_igp_olp_use.olp_tool_profile import OLPToolProfile
 from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
+from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.types.general import CATVariant
 
 
 class OLPRobotMotionTarget(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -1794,7 +1793,8 @@ class OLPRobotMotionTarget(AnyObject):
         """
         return self.com_object.SetJointOffset(i_device.com_object, i_offset)
 
-    def set_motion_params(self, i_basis: int, i_speed: float, i_accel_percent: float, i_angular_speed_percent: float, i_angular_accel_percent: float, i_name: str) -> None:
+    def set_motion_params(self, i_basis: int, i_speed: float, i_accel_percent: float, i_angular_speed_percent: float,
+                          i_angular_accel_percent: float, i_name: str) -> None:
         """
         .. note::
             :class: toggle
@@ -1815,10 +1815,11 @@ class OLPRobotMotionTarget(AnyObject):
         :param str i_name:
         :return: None
         """
-        return self.com_object.SetMotionParams(i_basis, i_speed, i_accel_percent, i_angular_speed_percent, i_angular_accel_percent, i_name)
+        return self.com_object.SetMotionParams(i_basis, i_speed, i_accel_percent, i_angular_speed_percent,
+                                               i_angular_accel_percent, i_name)
 
     # todo:
-    def set_offset_base_target(self, i_base_target: OLPRobotMotionTarget) -> None:
+    def set_offset_base_target(self, i_base_target: 'OLPRobotMotionTarget') -> None:
         """
         .. note::
             :class: toggle
@@ -2042,4 +2043,4 @@ class OLPRobotMotionTarget(AnyObject):
         return self.com_object.TryGetDeviceJoints(i_device.com_object, o_values)
 
     def __repr__(self):
-        return f'OLPRobotMotionTarget(name="{ self.name }")'
+        return f'OLPRobotMotionTarget(name="{self.name}")'

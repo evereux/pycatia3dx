@@ -7,13 +7,16 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.knowledge_interfaces.parameter_sets import ParameterSets
-from pycatia3dx.knowledge_interfaces.parameters import Parameters
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.knowledge_interfaces.parameters import Parameters
+    from pycatia3dx.knowledge_interfaces.parameter_sets import ParameterSets
 
 
 class ParameterSet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +43,7 @@ class ParameterSet(AnyObject):
         self.com_object = com_object
 
     @property
-    def all_parameters(self) -> Parameters:
+    def all_parameters(self) -> 'Parameters':
         """
         .. note::
             :class: toggle
@@ -51,11 +54,11 @@ class ParameterSet(AnyObject):
 
         :return: Parameters
         """
-
+        from pycatia3dx.knowledge_interfaces.parameters import Parameters
         return Parameters(self.com_object.AllParameters)
 
     @property
-    def direct_parameters(self) -> Parameters:
+    def direct_parameters(self) -> 'Parameters':
         """
         .. note::
             :class: toggle
@@ -66,11 +69,11 @@ class ParameterSet(AnyObject):
 
         :return: Parameters
         """
-
+        from pycatia3dx.knowledge_interfaces.parameters import Parameters
         return Parameters(self.com_object.DirectParameters)
 
     @property
-    def parameter_sets(self) -> ParameterSets:
+    def parameter_sets(self) -> 'ParameterSets':
         """
         .. note::
             :class: toggle
@@ -81,8 +84,8 @@ class ParameterSet(AnyObject):
 
         :return: ParameterSets
         """
-
+        from pycatia3dx.knowledge_interfaces.parameter_sets import ParameterSets
         return ParameterSets(self.com_object.ParameterSets)
 
     def __repr__(self):
-        return f'ParameterSet(name="{ self.name }")'
+        return f'ParameterSet(name="{self.name}")'

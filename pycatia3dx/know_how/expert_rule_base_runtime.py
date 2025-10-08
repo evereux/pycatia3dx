@@ -7,15 +7,17 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
+from pycatia3dx.know_how.expert_rule_set import ExpertRuleSet
 from pycatia3dx.knowledge_interfaces.relation import Relation
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
-from pycatia3dx.know_how.expert_rule_set import ExpertRuleSet
+
+if TYPE_CHECKING:
+    from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
 
 
 class ExpertRuleBaseRuntime(Relation):
-
     """
         .. note::
             :class: toggle
@@ -166,7 +168,7 @@ class ExpertRuleBaseRuntime(Relation):
         self.com_object.ReportShowResult = value
 
     @property
-    def rule_base_edition(self) -> ExpertRuleBase:
+    def rule_base_edition(self) -> 'ExpertRuleBase':
         """
         .. note::
             :class: toggle
@@ -196,7 +198,7 @@ class ExpertRuleBaseRuntime(Relation):
 
         :return: ExpertRuleBase
         """
-
+        from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
         return ExpertRuleBase(self.com_object.RuleBaseEdition)
 
     @property
@@ -655,4 +657,4 @@ class ExpertRuleBaseRuntime(Relation):
         return self.com_object.SynchronizeStatus()
 
     def __repr__(self):
-        return f'ExpertRuleBaseRuntime(name="{ self.name }")'
+        return f'ExpertRuleBaseRuntime(name="{self.name}")'

@@ -8,17 +8,19 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.mmr_automation_interfaces.geometric_elements import GeometricElements
-from pycatia3dx.mmr_automation_interfaces.hybrid_bodies import HybridBodies
 from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 from pycatia3dx.mmr_automation_interfaces.hybrid_shapes import HybridShapes
 from pycatia3dx.mmr_automation_interfaces.sketches import Sketches
 from pycatia3dx.system.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia3dx.mmr_automation_interfaces.hybrid_bodies import HybridBodies
+
 
 class HybridBody(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -75,7 +77,7 @@ class HybridBody(AnyObject):
         return GeometricElements(self.com_object.GeometricElements)
 
     @property
-    def hybrid_bodies(self) -> HybridBodies:
+    def hybrid_bodies(self) -> 'HybridBodies':
         """
         .. note::
             :class: toggle
@@ -92,7 +94,7 @@ class HybridBody(AnyObject):
 
         :return: HybridBodies
         """
-
+        from pycatia3dx.mmr_automation_interfaces.hybrid_bodies import HybridBodies
         return HybridBodies(self.com_object.HybridBodies)
 
     @property
@@ -172,4 +174,4 @@ class HybridBody(AnyObject):
         return self.com_object.AppendHybridShape(i_hybrid_shape.com_object)
 
     def __repr__(self):
-        return f'HybridBody(name="{ self.name }")'
+        return f'HybridBody(name="{self.name}")'

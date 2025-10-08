@@ -7,19 +7,22 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.interfaces.camera_3d import Camera3D
 from pycatia3dx.interfaces.viewpoint_3d import ViewPoint3D
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.tps.annotation_set import AnnotationSet
 from pycatia3dx.tps.annotations import Annotations
 from pycatia3dx.tps.tps_hyper_links_manager import TPSHyperLinksManager
 from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 from pycatia3dx.tps.tps_view import TPSView
 from pycatia3dx.tps.tps_views import TPSViews
 
+if TYPE_CHECKING:
+    from pycatia3dx.tps.annotation_set import AnnotationSet
+
 
 class Capture(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -228,7 +231,7 @@ class Capture(AnyObject):
         self.com_object.ManageHideShowBody = value
 
     @property
-    def set(self) -> AnnotationSet:
+    def set(self) -> 'AnnotationSet':
         """
         .. note::
             :class: toggle
@@ -239,7 +242,7 @@ class Capture(AnyObject):
 
         :return: AnnotationSet
         """
-
+        from pycatia3dx.tps.annotation_set import AnnotationSet
         return AnnotationSet(self.com_object.Set)
 
     @property
@@ -497,4 +500,4 @@ class Capture(AnyObject):
         return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Capture(name="{ self.name }")'
+        return f'Capture(name="{self.name}")'

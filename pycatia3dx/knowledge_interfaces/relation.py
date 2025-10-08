@@ -7,10 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.knowledge_interfaces.knowledge_activate_object import KnowledgeActivateObject
-from pycatia3dx.knowledge_interfaces.parameter import Parameter
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.knowledge_interfaces.parameter import Parameter
 
 
 class Relation(KnowledgeActivateObject):
@@ -193,7 +196,7 @@ class Relation(KnowledgeActivateObject):
         """
         return AnyObject(self.com_object.GetInParameter(i_index))
 
-    def get_out_parameter(self, i_index: int) -> Parameter:
+    def get_out_parameter(self, i_index: int) -> 'Parameter':
         """
         .. note::
             :class: toggle
@@ -216,6 +219,7 @@ class Relation(KnowledgeActivateObject):
         :param int i_index:
         :return: Parameter
         """
+        from pycatia3dx.knowledge_interfaces.parameter import Parameter
         return Parameter(self.com_object.GetOutParameter(i_index))
 
     def modify(self, i_value: str) -> None:

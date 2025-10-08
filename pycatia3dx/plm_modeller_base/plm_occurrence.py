@@ -7,9 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
-from pycatia3dx.plm_modeller_base.plm_occurrences import PLMOccurrences
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.plm_modeller_base.plm_occurrences import PLMOccurrences
 
 
 class PLMOccurrence(AnyObject):
@@ -55,7 +59,7 @@ class PLMOccurrence(AnyObject):
         return PLMEntity(self.com_object.PLMEntity)
 
     @property
-    def plm_occurrences(self) -> PLMOccurrences:
+    def plm_occurrences(self) -> 'PLMOccurrences':
         """
         .. note::
             :class: toggle
@@ -68,7 +72,7 @@ class PLMOccurrence(AnyObject):
 
         :return: PLMOccurrences
         """
-
+        from pycatia3dx.plm_modeller_base.plm_occurrences import PLMOccurrences
         return PLMOccurrences(self.com_object.PLMOccurrences)
 
     def __repr__(self):

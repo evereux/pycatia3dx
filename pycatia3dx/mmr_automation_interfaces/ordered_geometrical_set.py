@@ -8,17 +8,18 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
-from pycatia3dx.mmr_automation_interfaces.bodies import Bodies
 from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 from pycatia3dx.mmr_automation_interfaces.hybrid_shapes import HybridShapes
-from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
 from pycatia3dx.mmr_automation_interfaces.sketches import Sketches
 from pycatia3dx.system.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia3dx.mmr_automation_interfaces.bodies import Bodies
+
 
 class OrderedGeometricalSet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -45,7 +46,7 @@ class OrderedGeometricalSet(AnyObject):
         self.com_object = com_object
 
     @property
-    def bodies(self) -> Bodies:
+    def bodies(self) -> 'Bodies':
         """
         .. note::
             :class: toggle
@@ -62,7 +63,7 @@ class OrderedGeometricalSet(AnyObject):
 
         :return: Bodies
         """
-
+        from pycatia3dx.mmr_automation_interfaces.bodies import Bodies
         return Bodies(self.com_object.Bodies)
 
     @property
@@ -96,7 +97,7 @@ class OrderedGeometricalSet(AnyObject):
         return HybridShapes(self.com_object.HybridShapes)
 
     @property
-    def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
+    def ordered_geometrical_sets(self) -> 'OrderedGeometricalSets':
         """
         .. note::
             :class: toggle
@@ -116,7 +117,7 @@ class OrderedGeometricalSet(AnyObject):
 
         :return: OrderedGeometricalSets
         """
-
+        from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
         return OrderedGeometricalSets(self.com_object.OrderedGeometricalSets)
 
     @property
@@ -169,4 +170,4 @@ class OrderedGeometricalSet(AnyObject):
         return self.com_object.InsertHybridShape(i_hybrid_shape.com_object)
 
     def __repr__(self):
-        return f'OrderedGeometricalSet(name="{ self.name }")'
+        return f'OrderedGeometricalSet(name="{self.name}")'

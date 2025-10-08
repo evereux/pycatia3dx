@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.annotation.drawing_arrows import DrawingArrows
 from pycatia3dx.annotation.drawing_coord_dims import DrawingCoordDims
 from pycatia3dx.annotation.drawing_dimensions import DrawingDimensions
@@ -16,12 +18,14 @@ from pycatia3dx.annotation.drawing_text import DrawingText
 from pycatia3dx.annotation.drawing_texts import DrawingTexts
 from pycatia3dx.annotation.drawing_weldings import DrawingWeldings
 from pycatia3dx.drafting.drawing_area_fills import DrawingAreaFills
-from pycatia3dx.drafting.drawing_components import DrawingComponents
 from pycatia3dx.drafting.drawing_pictures import DrawingPictures
 from pycatia3dx.drafting.drawing_threads import DrawingThreads
 from pycatia3dx.mmr_automation_interfaces.geometric_elements import GeometricElements
 from pycatia3dx.sketcher.factory_2d import Factory2D
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.drafting.drawing_components import DrawingComponents
 
 
 class DrawingView(AnyObject):
@@ -139,7 +143,7 @@ class DrawingView(AnyObject):
         return DrawingArrows(self.com_object.Arrows)
 
     @property
-    def components(self) -> DrawingComponents:
+    def components(self) -> 'DrawingComponents':
         """
         .. note::
             :class: toggle
@@ -160,7 +164,7 @@ class DrawingView(AnyObject):
 
         :return: DrawingComponents
         """
-
+        from pycatia3dx.drafting.drawing_components import DrawingComponents
         return DrawingComponents(self.com_object.Components)
 
     @property

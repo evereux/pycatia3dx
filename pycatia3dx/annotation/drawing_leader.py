@@ -7,8 +7,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.annotation.drawing_leaders import DrawingLeaders
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.annotation.drawing_leaders import DrawingLeaders
 
 
 class DrawingLeader(AnyObject):
@@ -173,7 +177,7 @@ class DrawingLeader(AnyObject):
         self.com_object.HeadTarget = value
 
     @property
-    def leaders(self) -> DrawingLeaders:
+    def leaders(self) -> 'DrawingLeaders':
         """
         .. note::
             :class: toggle
@@ -192,7 +196,7 @@ class DrawingLeader(AnyObject):
 
         :return: DrawingLeaders
         """
-
+        from pycatia3dx.annotation.drawing_leaders import DrawingLeaders
         return DrawingLeaders(self.com_object.Leaders)
 
     @property

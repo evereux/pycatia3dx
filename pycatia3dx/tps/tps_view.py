@@ -7,15 +7,17 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.tps.annotations import Annotations
 from pycatia3dx.tps.text import Text
 from pycatia3dx.tps.tps_hyper_links_manager import TPSHyperLinksManager
 
+if TYPE_CHECKING:
+    from pycatia3dx.tps.annotations import Annotations
+
 
 class TPSView(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -86,7 +88,7 @@ class TPSView(AnyObject):
         self.com_object.AnnotationSketch = value.com_object
 
     @property
-    def annotations(self) -> Annotations:
+    def annotations(self) -> 'Annotations':
         """
         .. note::
             :class: toggle
@@ -102,7 +104,7 @@ class TPSView(AnyObject):
 
         :return: Annotations
         """
-
+        from pycatia3dx.tps.annotations import Annotations
         return Annotations(self.com_object.Annotations)
 
     @property
@@ -221,4 +223,4 @@ class TPSView(AnyObject):
         return TPSHyperLinksManager(self.com_object.HyperLinkManager())
 
     def __repr__(self):
-        return f'TpsView(name="{ self.name }")'
+        return f'TpsView(name="{self.name}")'

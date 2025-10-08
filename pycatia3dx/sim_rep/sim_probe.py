@@ -7,8 +7,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.sim_rep.sim_scenario_spec import SimScenarioSpec
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.sim_rep.sim_scenario_spec import SimScenarioSpec
 
 
 class SimProbe(AnyObject):
@@ -34,7 +38,7 @@ class SimProbe(AnyObject):
         self.com_object = com_object
 
     @property
-    def scenario_spec(self) -> SimScenarioSpec:
+    def scenario_spec(self) -> 'SimScenarioSpec':
         """
         .. note::
             :class: toggle
@@ -51,7 +55,7 @@ class SimProbe(AnyObject):
 
         :return: SimScenarioSpec
         """
-
+        from pycatia3dx.sim_rep.sim_scenario_spec import SimScenarioSpec
         return SimScenarioSpec(self.com_object.ScenarioSpec)
 
     def __repr__(self):

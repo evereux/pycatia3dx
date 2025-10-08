@@ -7,18 +7,21 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.del_resource_builder.rsc_applicative_profile import RscApplicativeProfile
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.dnb_igp_olp_use.olp_ast_node import OLPAstNode
-from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 from pycatia3dx.dnb_igp_olp_use.olp_motion_groups import OLPMotionGroups
 from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 from pycatia3dx.dnb_igp_olp_use.olp_variables import OLPVariables
+from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.types.general import CATVariant
+
+if TYPE_CHECKING:
+    from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPProcedure(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -93,7 +96,7 @@ class OLPProcedure(AnyObject):
         self.com_object.Header = value
 
     @property
-    def instructions(self) -> OLPInstructions:
+    def instructions(self) -> 'OLPInstructions':
         """
         .. note::
             :class: toggle
@@ -118,7 +121,7 @@ class OLPProcedure(AnyObject):
 
         :return: OLPInstructions
         """
-
+        from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
         return OLPInstructions(self.com_object.Instructions)
 
     @property
@@ -546,4 +549,4 @@ class OLPProcedure(AnyObject):
         return self.com_object.SetProfileOlp(i_profile.com_object)
 
     def __repr__(self):
-        return f'OLPProcedure(name="{ self.name }")'
+        return f'OLPProcedure(name="{self.name}")'

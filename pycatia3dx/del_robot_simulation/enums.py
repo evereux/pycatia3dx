@@ -20,3 +20,8 @@ DELRscMoveParameter = {
     'DELRscMoveParameter_Begin',
     'DELRscMoveParameter_End',
 }
+
+DELRscTaskExecutionType = {
+    'DELRscTaskExecutionType_Internal',
+    'DELRscTaskExecutionType_Service'
+}

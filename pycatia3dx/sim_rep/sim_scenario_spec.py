@@ -7,12 +7,16 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.sim_rep.sim_excitation import SimExcitation
+from typing import TYPE_CHECKING
+
 from pycatia3dx.sim_rep.sim_excitations import SimExcitations
 from pycatia3dx.sim_rep.sim_probe import SimProbe
 from pycatia3dx.sim_rep.sim_probes import SimProbes
 from pycatia3dx.sim_rep.sim_scenario_result import SimScenarioResult
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.sim_rep.sim_excitation import SimExcitation
 
 
 class SimScenarioSpec(AnyObject):
@@ -112,7 +116,7 @@ class SimScenarioSpec(AnyObject):
 
         return self.com_object.SolverType
 
-    def add_excitation(self, i_excitation: SimExcitation) -> None:
+    def add_excitation(self, i_excitation: 'SimExcitation') -> None:
         """
         .. note::
             :class: toggle
@@ -153,7 +157,7 @@ class SimScenarioSpec(AnyObject):
         """
         return self.com_object.GetBehaviors()
 
-    def remove_excitation(self, i_excitation: SimExcitation) -> None:
+    def remove_excitation(self, i_excitation: 'SimExcitation') -> None:
         """
         .. note::
             :class: toggle

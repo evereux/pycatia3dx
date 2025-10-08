@@ -7,14 +7,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.sde.ssm_space import SsmSpace
-from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
+from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
 
 
 class SsmSpaceConceptNode(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -60,7 +62,7 @@ class SsmSpaceConceptNode(AnyObject):
         return SsmSpace(self.com_object.Space)
 
     @property
-    def space_concept_nodes(self) -> SsmSpaceConceptNodes:
+    def space_concept_nodes(self) -> 'SsmSpaceConceptNodes':
         """
         .. note::
             :class: toggle
@@ -81,8 +83,8 @@ class SsmSpaceConceptNode(AnyObject):
 
         :return: SsmSpaceConceptNodes
         """
-
+        from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
         return SsmSpaceConceptNodes(self.com_object.SpaceConceptNodes)
 
     def __repr__(self):
-        return f'SsmSpaceConceptNode(name="{ self.name }")'
+        return f'SsmSpaceConceptNode(name="{self.name}")'

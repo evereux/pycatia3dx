@@ -7,11 +7,15 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.sim_rep.sim_excitations import SimExcitations
 from pycatia3dx.sim_rep.sim_probes import SimProbes
 from pycatia3dx.sim_rep.sim_scenario_specs import SimScenarioSpecs
-from pycatia3dx.sim_rep.sim_sequence_results import SimSequenceResults
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.sim_rep.sim_sequence_results import SimSequenceResults
 
 
 class SimSequence(AnyObject):
@@ -82,7 +86,7 @@ class SimSequence(AnyObject):
         return SimScenarioSpecs(self.com_object.ScenarioSpecs)
 
     @property
-    def sequence_results(self) -> SimSequenceResults:
+    def sequence_results(self) -> 'SimSequenceResults':
         """
         .. note::
             :class: toggle
@@ -94,7 +98,7 @@ class SimSequence(AnyObject):
 
         :return: SimSequenceResults
         """
-
+        from pycatia3dx.sim_rep.sim_sequence_results import SimSequenceResults
         return SimSequenceResults(self.com_object.SequenceResults)
 
     def add_behavior(self, i_behavior: AnyObject) -> None:

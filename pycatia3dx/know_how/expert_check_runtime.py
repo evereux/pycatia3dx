@@ -7,13 +7,16 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.know_how.expert_check import ExpertCheck
+from typing import TYPE_CHECKING
+
 from pycatia3dx.know_how.expert_report_objects import ExpertReportObjects
 from pycatia3dx.know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
 
+if TYPE_CHECKING:
+    from pycatia3dx.know_how.expert_check import ExpertCheck
+
 
 class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
-
     """
         .. note::
             :class: toggle
@@ -78,7 +81,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         self.com_object.AutomaticCorrect = value
 
     @property
-    def check_edition(self) -> ExpertCheck:
+    def check_edition(self) -> 'ExpertCheck':
         """
         .. note::
             :class: toggle
@@ -100,7 +103,7 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
 
         :return: ExpertCheck
         """
-
+        from pycatia3dx.know_how.expert_check import ExpertCheck
         return ExpertCheck(self.com_object.CheckEdition)
 
     @property
@@ -334,4 +337,4 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         return self.com_object.Status()
 
     def __repr__(self):
-        return f'ExpertCheckRuntime(name="{ self.name }")'
+        return f'ExpertCheckRuntime(name="{self.name}")'

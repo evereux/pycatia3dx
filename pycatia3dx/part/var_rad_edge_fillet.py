@@ -7,16 +7,18 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.knowledge_interfaces.length import Length
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.mode.references import References
-from pycatia3dx.part.const_rad_edge_fillet import ConstRadEdgeFillet
 from pycatia3dx.part.edge_fillet import EdgeFillet
+
+if TYPE_CHECKING:
+    from pycatia3dx.part.const_rad_edge_fillet import ConstRadEdgeFillet
 
 
 class VarRadEdgeFillet(EdgeFillet):
-
     """
         .. note::
             :class: toggle
@@ -294,7 +296,7 @@ class VarRadEdgeFillet(EdgeFillet):
         """
         return Length(self.com_object.ImposedVertexRadius(i_imposed_vertex.com_object))
 
-    def switch_to_const_fillet_type(self) -> ConstRadEdgeFillet:
+    def switch_to_const_fillet_type(self) -> 'ConstRadEdgeFillet':
         """
         .. note::
             :class: toggle
@@ -311,6 +313,7 @@ class VarRadEdgeFillet(EdgeFillet):
 
         :return: ConstRadEdgeFillet
         """
+        from pycatia3dx.part.const_rad_edge_fillet import ConstRadEdgeFillet
         return ConstRadEdgeFillet(self.com_object.SwitchToConstFilletType())
 
     def withdraw_edge_to_fillet(self, i_edge: Reference) -> None:
@@ -367,4 +370,4 @@ class VarRadEdgeFillet(EdgeFillet):
         return self.com_object.WithdrawImposedVertex(i_vertex.com_object)
 
     def __repr__(self):
-        return f'VarRadEdgeFillet(name="{ self.name }")'
+        return f'VarRadEdgeFillet(name="{self.name}")'

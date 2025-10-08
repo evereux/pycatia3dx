@@ -7,12 +7,15 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.know_how.expert_rule import ExpertRule
+from typing import TYPE_CHECKING
+
 from pycatia3dx.know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
+
+if TYPE_CHECKING:
+    from pycatia3dx.know_how.expert_rule import ExpertRule
 
 
 class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
-
     """
         .. note::
             :class: toggle
@@ -70,7 +73,7 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         self.com_object.Priority = value
 
     @property
-    def rule_edition(self) -> ExpertRule:
+    def rule_edition(self) -> 'ExpertRule':
         """
         .. note::
             :class: toggle
@@ -90,8 +93,8 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
 
         :return: ExpertRule
         """
-
+        from pycatia3dx.know_how.expert_rule import ExpertRule
         return ExpertRule(self.com_object.RuleEdition)
 
     def __repr__(self):
-        return f'ExpertRuleRuntime(name="{ self.name }")'
+        return f'ExpertRuleRuntime(name="{self.name}")'

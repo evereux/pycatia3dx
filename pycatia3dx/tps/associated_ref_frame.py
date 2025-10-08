@@ -7,14 +7,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.tps.annotation import Annotation
-from pycatia3dx.tps.annotation_2 import Annotation2
+
+if TYPE_CHECKING:
+    from pycatia3dx.tps.annotation import Annotation
+    from pycatia3dx.tps.annotation_2 import Annotation2
 
 
 class AssociatedRefFrame(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -38,7 +40,7 @@ class AssociatedRefFrame(AnyObject):
         self.com_object = com_object
 
     @property
-    def reference_frame(self) -> Annotation:
+    def reference_frame(self) -> 'Annotation':
         """
         .. note::
             :class: toggle
@@ -50,11 +52,11 @@ class AssociatedRefFrame(AnyObject):
 
         :return: Annotation
         """
-
+        from pycatia3dx.tps.annotation import Annotation
         return Annotation(self.com_object.ReferenceFrame)
 
     @property
-    def reference_frame2(self) -> Annotation2:
+    def reference_frame2(self) -> 'Annotation2':
         """
         .. note::
             :class: toggle
@@ -65,8 +67,8 @@ class AssociatedRefFrame(AnyObject):
 
         :return: Annotation2
         """
-
+        from pycatia3dx.tps.annotation_2 import Annotation2
         return Annotation2(self.com_object.ReferenceFrame2)
 
     def __repr__(self):
-        return f'AssociatedRefFrame(name="{ self.name }")'
+        return f'AssociatedRefFrame(name="{self.name}")'

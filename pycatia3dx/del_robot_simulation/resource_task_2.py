@@ -8,14 +8,13 @@
         
 """
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.del_robot_simulation.rsc_const import RscConst
 from pycatia3dx.del_robot_simulation.rsc_local_var import RscLocalVar
 from pycatia3dx.del_robot_simulation.rsc_sequence import RscSequence
+from pycatia3dx.system.any_object import AnyObject
 
 
 class ResourceTask2(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class ResourceTask2(AnyObject):
 
     # todo: what is DELRscTaskExecutionType?
     @property
-    def execution_type(self) -> DELRscTaskExecutionType:
+    def execution_type(self) -> int:
         """
         .. note::
             :class: toggle
@@ -70,19 +69,14 @@ class ResourceTask2(AnyObject):
                 |            Else
                 |            MsgBox "Execution type =  Service"
                 |            End If 
-                |          
-                | 
-                | 
-                |          
-                |          
-                | 
+                |
                 |     See also:
                 |         DELRscTaskExecutionType
 
-        :return: DELRscTaskExecutionType
+        :return: int
         """
 
-        return DELRscTaskExecutionType(self.com_object.ExecutionType)
+        return self.com_object.ExecutionType
 
     @property
     def instructions(self) -> tuple:
@@ -477,4 +471,4 @@ class ResourceTask2(AnyObject):
         return self.com_object.MoveBefore(i_relative.com_object)
 
     def __repr__(self):
-        return f'ResourceTask2(name="{ self.name }")'
+        return f'ResourceTask2(name="{self.name}")'

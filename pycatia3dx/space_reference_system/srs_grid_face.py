@@ -7,10 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia3dx.mode.reference import Reference
-from pycatia3dx.space_reference_system.srs_grid_set import SrsGridSet
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.space_reference_system.srs_grid_set import SrsGridSet
 
 
 class SrsGridFace(AnyObject):
@@ -149,7 +152,7 @@ class SrsGridFace(AnyObject):
         """
         return self.com_object.GetAbsOffset()
 
-    def get_grid_set(self) -> SrsGridSet:
+    def get_grid_set(self) -> 'SrsGridSet':
         """
         .. note::
             :class: toggle
@@ -171,6 +174,7 @@ class SrsGridFace(AnyObject):
 
         :return: SrsGridSet
         """
+        from pycatia3dx.space_reference_system.srs_grid_set import SrsGridSet
         return SrsGridSet(self.com_object.GetGridSet())
 
     def get_reference(self) -> Reference:
