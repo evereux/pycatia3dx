@@ -209,7 +209,8 @@ __marimo__/
 .idea/
 
 __reference_scripts__
+__junk__
 
-test.py
+test.*
 
 docs/generated/
