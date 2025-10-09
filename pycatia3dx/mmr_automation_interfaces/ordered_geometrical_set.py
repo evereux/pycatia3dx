@@ -17,6 +17,7 @@ from pycatia3dx.system.any_object import AnyObject
 
 if TYPE_CHECKING:
     from pycatia3dx.mmr_automation_interfaces.bodies import Bodies
+    from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
 
 
 class OrderedGeometricalSet(AnyObject):
