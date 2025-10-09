@@ -19,6 +19,7 @@ from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.system_service import SystemService
+from pycatia3dx.types import AnyService, service_types
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.editor import Editor
@@ -1304,7 +1305,7 @@ class Application(AnyObject):
         """
         return self.com_object.FolderSelectionBox(i_title)
 
-    def get_session_service(self, i_service: str) -> Service:
+    def get_session_service(self, i_service: str) -> AnyService | Service:
         """
         .. note::
             :class: toggle
@@ -1331,9 +1332,13 @@ class Application(AnyObject):
                 |          Set Service1 = CATIA.GetSessionService("IDService")
 
         :param str i_service:
-        :return: Service
+        :return: AnyService
         """
-        return Service(self.com_object.GetSessionService(i_service))
+
+        try:
+            return service_types['i_service']['type'](self.com_object.GetSessionService(i_service))
+        except KeyError:
+            return Service(self.com_object.GetSessionService(i_service))
 
     def get_workbench_id(self) -> str:
         """

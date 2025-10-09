@@ -55,11 +55,6 @@ class MeasurableService(Service):
                 |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
                 |              Dim theMeasurableSurface As MeasurableSurface
                 |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
-                |            
-                | 
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param AnyObject i_measured_item:
         :param int i_type:
