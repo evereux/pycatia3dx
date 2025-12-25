@@ -1,38 +1,42 @@
-CatImportFromDrawingOption = {
-  'CatImportAll'
-}
+from enum import Enum
 
-CatView2DModeVisu = {
-  'catView2DModeNotActivated',
-  'catView2DModeNoShow'
-}
 
-CatViewSide = {
-  'catTopSide',
-  'catBottomSide',
-  'catLeftSide',
-  'catRightSide',
-  'catTLCorner',
-  'catTRCorner',
-  'catBLCorner',
-  'catBRCorner'
-}
+class CatImportFromDrawingOption(Enum):
+    CatImportAll = 0
 
-CatViewType = {
-  'catAuxiliaryView',
-  'catSectionView',
-  'catSectionCutView'
-}
 
-CatVisuBackgroundMode = {
-  'catNoBackground',
-  'catPick',
-  'catNoPick',
-  'catLowIntPick',
-  'catLowIntNoPick'
-} 
+class CatView2DModeVisu(Enum):
+    catView2DModeNoShow = 0
+    catView2DModeNotActivated = 1
 
-CatVisuIn3DMode = {
-  'catShowAll',
-  'catHideAll'
-} 
+
+class CatViewSide(Enum):
+    catRightSide = 0
+    catBottomSide = 1
+    catTRCorner = 2
+    catLeftSide = 3
+    catBLCorner = 4
+    catBRCorner = 5
+    catTLCorner = 6
+    catTopSide = 7
+
+
+class CatViewType(Enum):
+    catAuxiliaryView = 0
+    catSectionCutView = 1
+    catSectionView = 2
+
+
+class CatVisuBackgroundMode(Enum):
+    catLowIntPick = 0
+    catPick = 1
+    catLowIntNoPick = 2
+    catNoBackground = 3
+    catNoPick = 4
+
+
+class CatVisuIn3DMode(Enum):
+    catHideAll = 0
+    catShowAll = 1
+
+
