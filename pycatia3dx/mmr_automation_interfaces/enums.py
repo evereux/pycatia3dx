@@ -1,113 +1,114 @@
-CATAxisSystemAxisType = [
-  'catAxisSystemAxisSameDirection',
-  'catAxisSystemAxisByCoordinates',
-  'catAxisSystemAxisOppositeDirection'
-]
+from enum import Enum
 
-CATAxisSystemMainType = [
-  'catAxisSystemStandard',
-  'catAxisSystemAxisRotation',
-  'catAxisSystemEulerAngles',
-  'catAxisSystemExplicit'
-]
 
-CATAxisSystemOriginType = [
-  'catAxisSystemOriginByPoint',
-  'catAxisSystemOriginByCoordinates'
-]
+class CATAxisSystemAxisType(Enum):
+    catAxisSystemAxisSameDirection = 0
+    catAxisSystemAxisByCoordinates = 1
+    catAxisSystemAxisOppositeDirection = 2
 
-CatConstraintAngleSector = [
-  'catCstAngleSector0',
-  'catCstAngleSector1',
-  'catCstAngleSector2',
-  'catCstAngleSector3'
-]
 
-CatConstraintDistConfig = [
-  'catCstDCUnspec',
-  'catCstDCParallel',
-  'catCstDCParallelSameOrient',
-  'catCstDCParallelOppOrient'
+class CATAxisSystemMainType(Enum):
+    catAxisSystemStandard = 0
+    catAxisSystemAxisRotation = 1
+    catAxisSystemEulerAngles = 2
+    catAxisSystemExplicit = 3
 
-]
 
-CatConstraintDistDirection = [
-  'catCstDistDirectionNone',
-  'catCstDistDirection1',
-  'catCstDistDirection2',
-  'catCstDistDirection3'
-]
+class CATAxisSystemOriginType(Enum):
+    catAxisSystemOriginByPoint = 0
+    catAxisSystemOriginByCoordinates = 1
 
-CatConstraintMode = [
-  'catCstModeDrivingDimension',
-  'catCstModeDrivenDimension'
-]
 
-CatConstraintOrientation = [
-  'catCstOrientSame',
-  'catCstOrientOpposite',
-  'catCstOrientUndefined'
-]
+class CatConstraintAngleSector(Enum):
+    catCstAngleSector0 = 0
+    catCstAngleSector1 = 1
+    catCstAngleSector2 = 2
+    catCstAngleSector3 = 3
 
-CatConstraintRefAxis = [
-  'catCstRefAxisX',
-  'catCstRefAxisY',
-  'catCstRefAxisZ'
-]
 
-CatConstraintRefType = [
-  'catCstRefTypeRelative',
-  'catCstRefTypeFixInSpace'
-]
+class CatConstraintDistConfig(Enum):
+    catCstDCUnspec = 0
+    catCstDCParallel = 1
+    catCstDCParallelSameOrient = 2
+    catCstDCParallelOppOrient = 3
 
-CatConstraintSide = [
-  'catCstSidePositive',
-  'catCstSideNegative',
-  'catCstSideSameAsValue',
-  'catCstSideOppositeToValue',
-  'catCstSideUndefined'
-]
 
-CatConstraintStatus = [
-  'catCstStatusOK',
-  'catCstStatusKOStronglyNotSatisfied',
-  'catCstStatusKOWrongOrientOrSide',
-  'catCstStatusKOWrongValue',
-  'catCstStatusKOWrongGeomEltType',
-  'catCstStatusKOBroken'
-]
+class CatConstraintDistDirection(Enum):
+    catCstDistDirectionNone = 0
+    catCstDistDirection1 = 1
+    catCstDistDirection2 = 2
+    catCstDistDirection3 = 3
 
-CatConstraintType = [
-  'catCstTypeReference',
-  'catCstTypeDistance',
-  'catCstTypeOn',
-  'catCstTypeConcentricity',
-  'catCstTypeTangency',
-  'catCstTypeLength',
-  'catCstTypeAngle',
-  'catCstTypePlanarAngle',
-  'catCstTypeParallelism',
-  'catCstTypeAxisParallelism',
-  'catCstTypeHorizontality',
-  'catCstTypePerpendicularity',
-  'catCstTypeAxisPerpendicularity',
-  'catCstTypeVerticality',
-  'catCstTypeRadius',
-  'catCstTypeSymmetry',
-  'catCstTypeMidPoint',
-  'catCstTypeEquidistance',
-  'catCstTypeMajorRadius',
-  'catCstTypeMinorRadius',
-  'catCstTypeSurfContact',
-  'catCstTypeLinContact',
-  'catCstTypePoncContact',
-  'catCstTypeChamfer',
-  'catCstTypeChamferPerpend',
-  'catCstTypeAnnulContact',
-  'catCstTypeCylinderRadius',
-  'catCstTypeStContinuity',
-  'catCstTypeStDistance',
-  'catCstTypeSdContinuity',
-  'catCstTypeSdShape',
-  'catCstTypeCurvilinearDistance'
-]
+
+class CatConstraintMode(Enum):
+    catCstModeDrivingDimension = 0
+    catCstModeDrivenDimension = 1
+
+
+class CatConstraintOrientation(Enum):
+    catCstOrientSame = 0
+    catCstOrientOpposite = 1
+    catCstOrientUndefined = 2
+
+
+class CatConstraintRefAxis(Enum):
+    catCstRefAxisX = 0
+    catCstRefAxisY = 1
+    catCstRefAxisZ = 2
+
+
+class CatConstraintRefType(Enum):
+    catCstRefTypeRelative = 0
+    catCstRefTypeFixInSpace = 1
+
+
+class CatConstraintSide(Enum):
+    catCstSidePositive = 0
+    catCstSideNegative = 1
+    catCstSideSameAsValue = 2
+    catCstSideOppositeToValue = 3
+    catCstSideUndefined = 4
+
+
+class CatConstraintStatus(Enum):
+    catCstStatusOK = 0
+    catCstStatusKOStronglyNotSatisfied = 1
+    catCstStatusKOWrongOrientOrSide = 2
+    catCstStatusKOWrongValue = 3
+    catCstStatusKOWrongGeomEltType = 4
+    catCstStatusKOBroken = 5
+
+
+class CatConstraintType(Enum):
+    catCstTypeReference = 0
+    catCstTypeDistance = 1
+    catCstTypeOn = 2
+    catCstTypeConcentricity = 3
+    catCstTypeTangency = 4
+    catCstTypeLength = 5
+    catCstTypeAngle = 6
+    catCstTypePlanarAngle = 7
+    catCstTypeParallelism = 8
+    catCstTypeAxisParallelism = 9
+    catCstTypeHorizontality = 10
+    catCstTypePerpendicularity = 11
+    catCstTypeAxisPerpendicularity = 12
+    catCstTypeVerticality = 13
+    catCstTypeRadius = 14
+    catCstTypeSymmetry = 15
+    catCstTypeMidPoint = 16
+    catCstTypeEquidistance = 17
+    catCstTypeMajorRadius = 18
+    catCstTypeMinorRadius = 19
+    catCstTypeSurfContact = 20
+    catCstTypeLinContact = 21
+    catCstTypePoncContact = 22
+    catCstTypeChamfer = 23
+    catCstTypeChamferPerpend = 24
+    catCstTypeAnnulContact = 25
+    catCstTypeCylinderRadius = 26
+    catCstTypeStContinuity = 27
+    catCstTypeStDistance = 28
+    catCstTypeSdContinuity = 29
+    catCstTypeSdShape = 30
+    catCstTypeCurvilinearDistance = 31

@@ -1,1 +1,1 @@
-# no enums found.
+from enum import Enum

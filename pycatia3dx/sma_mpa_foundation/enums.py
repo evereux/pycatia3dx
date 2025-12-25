@@ -1,38 +1,44 @@
-SimGeneralVectorFieldVariationType = [
-    'SimGeneralVectorFieldUniform',
-    'SimGeneralVectorFieldMappedSpatialData',
-    'SimGeneralVectorFieldSpaceTimeData',
-    'SimGeneralVectorFieldUserDefined',
-    'SimGeneralVectorFieldVariableData',
-    'SimGeneralVectorFieldExternalFieldData',
-]
-SimInitializationServiceSimulationMethod = [
-    'SimInitializationServiceStructuralMechanics',
-    'SimInitializationServiceThermalMechanics',
-    'SimInitializationServiceThermalStructuralMechanics',
-    'SimInitializationServiceEssentialStructuralMechanics',
-    'SimInitializationServiceEssentialThermalMechanics',
-    'SimInitializationServiceEssentialThermalStructuralMechanics',
-    'SimInitializationServiceLinearDynamics',
-    'SimInitializationServiceStructuralValidation',
-    'SimInitializationServiceFrequencyValidation',
-    'SimInitializationServiceThermalValidation',
-    'SimInitializationServiceThermalStructuralValidation',
-]
-SimScalarFieldVariationType = [
-    'SimScalarFieldUniform',
-    'SimScalarFieldMappedSpatialData',
-    'SimScalarFieldSpaceTimeData',
-    'SimScalarFieldUserDefined',
-]
-SimSymmetricTensorFieldVariationType = [
-    'SimSymmetricTensorFieldUniform',
-    'SimSymmetricTensorFieldMappedSpatialData',
-    'SimSymmetricTensorFieldSpaceTimeData',
-    'SimSymmetricTensorFieldUserDefined',
-    'SimSymmetricTensorFieldExternalFieldData',
-]
-SimVectorFieldVariationType = [
-    'SimVectorFieldUniform',
-    'SimVectorFieldUserDefined',
-]
+from enum import Enum
+
+
+class SimGeneralVectorFieldVariationType(Enum):
+    SimGeneralVectorFieldUniform = 0
+    SimGeneralVectorFieldMappedSpatialData = 1
+    SimGeneralVectorFieldSpaceTimeData = 2
+    SimGeneralVectorFieldUserDefined = 3
+    SimGeneralVectorFieldVariableData = 4
+    SimGeneralVectorFieldExternalFieldData = 5
+
+
+class SimInitializationServiceSimulationMethod(Enum):
+    SimInitializationServiceStructuralMechanics = 0
+    SimInitializationServiceThermalMechanics = 1
+    SimInitializationServiceThermalStructuralMechanics = 2
+    SimInitializationServiceEssentialStructuralMechanics = 3
+    SimInitializationServiceEssentialThermalMechanics = 4
+    SimInitializationServiceEssentialThermalStructuralMechanics = 5
+    SimInitializationServiceLinearDynamics = 6
+    SimInitializationServiceStructuralValidation = 7
+    SimInitializationServiceFrequencyValidation = 8
+    SimInitializationServiceThermalValidation = 9
+    SimInitializationServiceThermalStructuralValidation = 10
+
+
+class SimScalarFieldVariationType(Enum):
+    SimScalarFieldUniform = 0
+    SimScalarFieldMappedSpatialData = 1
+    SimScalarFieldSpaceTimeData = 2
+    SimScalarFieldUserDefined = 3
+
+
+class SimSymmetricTensorFieldVariationType(Enum):
+    SimSymmetricTensorFieldUniform = 0
+    SimSymmetricTensorFieldMappedSpatialData = 1
+    SimSymmetricTensorFieldSpaceTimeData = 2
+    SimSymmetricTensorFieldUserDefined = 3
+    SimSymmetricTensorFieldExternalFieldData = 4
+
+
+class SimVectorFieldVariationType(Enum):
+    SimVectorFieldUniform = 0
+    SimVectorFieldUserDefined = 1
