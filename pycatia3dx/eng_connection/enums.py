@@ -1,9 +1,9 @@
-CatAssemblyConstraintMode = {
+CatAssemblyConstraintMode = [
     'catDrivingMode',
     'catMeasuredMode',
     'catControlledMode',
-}
-CatAssemblyConstraintOption = {
+]
+CatAssemblyConstraintOption = [
     'catOptionUndefinedOrientation',
     'catOptionSameOrientation',
     'catOptionOppositeOrientation',
@@ -26,8 +26,8 @@ CatAssemblyConstraintOption = {
     'catOptionFullAxisxneg',
     'catOptionFullAxisyneg',
     'catOptionFullAxiszneg',
-}
-CatAssemblyConstraintType = {
+]
+CatAssemblyConstraintType = [
     'catAngleLineLine',
     'catAngleLinePlane',
     'catAnglePlanePlane',
@@ -91,12 +91,12 @@ CatAssemblyConstraintType = {
     'catGear',
     'catRack',
     'catCable',
-}
-CatEngConnectionDirection = {
+]
+CatEngConnectionDirection = [
     'catDirectionOut',
     'catDirectionIn',
-}
-CatEngConnectionType = {
+]
+CatEngConnectionType = [
     'catCylindrical',
     'catFree',
     'catFix',
@@ -117,4 +117,4 @@ CatEngConnectionType = {
     'catEngRack',
     'catEngCable',
     'catEngScrew',
-}
+]

@@ -1,31 +1,31 @@
-CatDescriptionLengthType = {
+CatDescriptionLengthType = [
     'ShortText',
     'LongText',
-}
-CatOutPutFormatType = {
+]
+CatOutPutFormatType = [
     'KWEHtml',
     'KWEText',
     'KWEPrint',
     'KWEEmail',
-}
-CatShowResultType = {
+]
+CatShowResultType = [
     'ByRule',
     'ByObject',
     'ByState',
-}
-CatSolveType = {
+]
+CatSolveType = [
     'ManualSolveType',
     'AutomaticOptimizedSolveType',
     'AutomaticCompleteSolveType',
-}
-CatVisualizationType = {
+]
+CatVisualizationType = [
     'Passed',
     'Failed',
     'Both',
-}
-CatWorkingMode = {
+]
+CatWorkingMode = [
     'WholeObjects',
     'OccurenceObjects',
     'PLMObjects',
     'AllOccurenceObjects',
-}
+]

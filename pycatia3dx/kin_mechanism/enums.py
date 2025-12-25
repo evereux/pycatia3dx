@@ -1,4 +1,4 @@
-CATKinMechanismCommandType = {
+CATKinMechanismCommandType = [
     'CATKinEmpty2',
     'CATKinAngleCmd2',
     'CATKinLengthCmd2',
@@ -6,4 +6,4 @@ CATKinMechanismCommandType = {
     'CATKinLength1Cmd2',
     'CATKinAngle2Cmd2',
     'CATKinLength2Cmd2',
-}
+]

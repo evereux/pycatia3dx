@@ -1,19 +1,19 @@
-SimAxisAxisType = {
+SimAxisAxisType = [
     'SimAxisGeometric',
     'SimAxisExplicit',
-}
-SimAxisSystemCoordinateType = {
+]
+SimAxisSystemCoordinateType = [
     'SimAxisSystemNoAxis',
     'SimAxisSystemCartesian',
     'SimAxisSystemCylindrical',
     'SimAxisSystemSpherical',
-}
-SimAxisSystemDefinitionMode = {
+]
+SimAxisSystemDefinitionMode = [
     'SimAxisSystemGlobal',
     'SimAxisSystemLocal',
     'SimAxisSystemSpecify',
-}
-SimDof = {
+]
+SimDof = [
     'SimInvalidDOF',
     'SimTranslation1',
     'SimTranslation2',
@@ -21,22 +21,22 @@ SimDof = {
     'SimRotation1',
     'SimRotation2',
     'SimRotation3',
-}
-SimMappedFieldDataDataSourceType = {
+]
+SimMappedFieldDataDataSourceType = [
     'SimMappedFieldDataTable',
     'SimMappedFieldDataVPMDocument',
-}
-SimMappedFieldDataTableColumn = {
+]
+SimMappedFieldDataTableColumn = [
     'SimMappedFieldDataX',
     'SimMappedFieldDataY',
     'SimMappedFieldDataZ',
     'SimMappedFieldDataValue',
-}
-SimMappedFieldDataToleranceType = {
+]
+SimMappedFieldDataToleranceType = [
     'SimMappedFieldDataRelative',
     'SimMappedFieldDataAbsolute',
-}
-SimPointDefinitionMode = {
+]
+SimPointDefinitionMode = [
     'SimPointCoordinates',
     'SimPointPicked',
-}
+]

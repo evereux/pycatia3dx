@@ -1,12 +1,12 @@
-DELDRApproachDirection = {
+DELDRApproachDirection = [
     'DRProfile_ApproachXPlus',
     'DRProfile_ApproachXMinus',
     'DRProfile_ApproachYPlus',
     'DRProfile_ApproachYMinus',
     'DRProfile_ApproachZPlus',
     'DRProfile_ApproachZMinus',
-}
-DELDRProfileCycle = {
+]
+DELDRProfileCycle = [
     'DRProfile_Drill',
     'DRProfile_CounterSink',
     'DRProfile_RivetBolt',
@@ -18,35 +18,35 @@ DELDRProfileCycle = {
     'DRProfile_User5',
     'DRProfile_User6',
     'DRProfile_User7',
-}
-DELDRProfileMoves = {
+]
+DELDRProfileMoves = [
     'DRProfile_Approach',
     'DRProfile_Action',
     'DRProfile_Retract',
-}
-DELDRProfilePrecycle = {
+]
+DELDRProfilePrecycle = [
     'DRProfile_None',
     'DRProfile_Hole',
     'DRProfile_Rivet',
     'DRProfile_Bolt',
-}
-DELDRProfileType = {
+]
+DELDRProfileType = [
     'DRProfile_DrillOnly',
     'DRProfile_RivetOnly',
     'DRProfile_DrillRivet',
-}
-DELSpotRivetApproachDirection = {
+]
+DELSpotRivetApproachDirection = [
     'RivetProfile_ApproachXPlus',
     'RivetProfile_ApproachXMinus',
     'RivetProfile_ApproachYPlus',
     'RivetProfile_ApproachYMinus',
     'RivetProfile_ApproachZPlus',
     'RivetProfile_ApproachZMinus',
-}
-DELSpotRivetProfileMoves = {
+]
+DELSpotRivetProfileMoves = [
     'RivetProfile_Approach',
     'RivetProfile_Start',
     'RivetProfile_Action',
     'RivetProfile_Complete',
     'RivetProfile_Retract',
-}
+]

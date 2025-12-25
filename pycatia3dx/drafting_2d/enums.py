@@ -1,13 +1,13 @@
-CatImportFromDrawingOption = {
+CatImportFromDrawingOption = [
   'CatImportAll'
-}
+]
 
-CatView2DModeVisu = {
+CatView2DModeVisu = [
   'catView2DModeNotActivated',
   'catView2DModeNoShow'
-}
+]
 
-CatViewSide = {
+CatViewSide = [
   'catTopSide',
   'catBottomSide',
   'catLeftSide',
@@ -16,23 +16,23 @@ CatViewSide = {
   'catTRCorner',
   'catBLCorner',
   'catBRCorner'
-}
+]
 
-CatViewType = {
+CatViewType = [
   'catAuxiliaryView',
   'catSectionView',
   'catSectionCutView'
-}
+]
 
-CatVisuBackgroundMode = {
+CatVisuBackgroundMode = [
   'catNoBackground',
   'catPick',
   'catNoPick',
   'catLowIntPick',
   'catLowIntNoPick'
-} 
+] 
 
-CatVisuIn3DMode = {
+CatVisuIn3DMode = [
   'catShowAll',
   'catHideAll'
-} 
+] 

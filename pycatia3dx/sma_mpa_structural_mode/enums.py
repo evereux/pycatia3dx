@@ -1,4 +1,4 @@
-SimBeamProfileShape = {
+SimBeamProfileShape = [
     'SimBeamProfileNone',
     'SimBeamProfileBox',
     'SimBeamProfileCircular',
@@ -12,44 +12,44 @@ SimBeamProfileShape = {
     'SimBeamProfileT_Beam',
     'SimBeamProfileChannel',
     'SimBeamProfileHat',
-}
-SimBeamSectionCrossSectionAxis = {
+]
+SimBeamSectionCrossSectionAxis = [
     'SimBeamSectionFirstAxis',
     'SimBeamSectionSecondAxis',
-}
-SimBeamSectionOrientation = {
+]
+SimBeamSectionOrientation = [
     'SimBeamSectionGeometry',
     'SimBeamSectionAxisSystem',
-}
-SimBeamSectionSlendernessOption = {
+]
+SimBeamSectionSlendernessOption = [
     'SimBeamSectionDefault',
     'SimBeamSectionSpecify',
-}
-SimBeamSectionTransverseShearStiffness = {
+]
+SimBeamSectionTransverseShearStiffness = [
     'SimBeamSectionNone',
     'SimBeamSectionCalculate',
     'SimBeamSectionIsotropic',
     'SimBeamSectionOrthotropic',
-}
-SimCohesiveMechanicalResponse = {
+]
+SimCohesiveMechanicalResponse = [
     'TractionSeparation',
     'Continuum',
     'Gasket',
-}
-SimCompositeLayupType = {
+]
+SimCompositeLayupType = [
     'SimLayupByLamina',
     'SimLayupByPly',
     'SimFromDesign',
-}
-SimCompositeRosetteTransferCylindricalType = {
+]
+SimCompositeRosetteTransferCylindricalType = [
     'SimCompositeCylindericalZero',
     'SimCompositeCylindericalNinety',
-}
-SimCompositeRosetteTransferType = {
+]
+SimCompositeRosetteTransferType = [
     'SimCompositeRosetteTypeCartesian',
     'SimCompositeRosetteTypeGuidedCurve',
-}
-SimCompositeShellSectionOffsetMethod = {
+]
+SimCompositeShellSectionOffsetMethod = [
     'SimCompositeShellSectionAutomaticOffset',
     'SimCompositeShellSectionNone',
     'SimCompositeShellSectionSpecifiedDistanceOffset',
@@ -57,21 +57,21 @@ SimCompositeShellSectionOffsetMethod = {
     'SimCompositeShellSectionTopSurface',
     'SimCompositeShellSectionBottomSurface',
     'SimCompositeShellSectionFromSolid',
-}
-SimConnectorCouplingType = {
+]
+SimConnectorCouplingType = [
     'SimConnectorCouplingKinematic',
     'SimConnectorCouplingDistributing',
-}
-SimConnectorElasticityElasticityOrder = {
+]
+SimConnectorElasticityElasticityOrder = [
     'SimConnectorElasticityLinear',
     'SimConnectorElasticityNonLinear',
-}
-SimConnectorElasticityTableColumn = {
+]
+SimConnectorElasticityTableColumn = [
     'SimConnectorElasticityStiffness',
     'SimConnectorElasticityTemperature',
     'SimConnectorElasticityPosition',
-}
-SimConnectorSectionAssembledConnectorType = {
+]
+SimConnectorSectionAssembledConnectorType = [
     'SimConnectorSectionNoAssembledType',
     'SimConnectorSectionBeam',
     'SimConnectorSectionBushing',
@@ -84,8 +84,8 @@ SimConnectorSectionAssembledConnectorType = {
     'SimConnectorSectionUJoint',
     'SimConnectorSectionWeld',
     'SimConnectorSectionSlipring',
-}
-SimConnectorSectionRotationalConnectorType = {
+]
+SimConnectorSectionRotationalConnectorType = [
     'SimConnectorSectionNoRotationalType',
     'SimConnectorSectionAlign',
     'SimConnectorSectionCardan',
@@ -98,8 +98,8 @@ SimConnectorSectionRotationalConnectorType = {
     'SimConnectorSectionRotationAccelerometer',
     'SimConnectorSectionUniversal',
     'SimConnectorSectionFlowConverter',
-}
-SimConnectorSectionTranslationalConnectorType = {
+]
+SimConnectorSectionTranslationalConnectorType = [
     'SimConnectorSectionNoTranslationalType',
     'SimConnectorSectionAccelerometer',
     'SimConnectorSectionAxialConnector',
@@ -110,175 +110,175 @@ SimConnectorSectionTranslationalConnectorType = {
     'SimConnectorSectionRadialThrust',
     'SimConnectorSectionSlidePlane',
     'SimConnectorSectionSlot',
-}
-SimContactVirtualPartReferencePointInputMode = {
+]
+SimContactVirtualPartReferencePointInputMode = [
     'SimContactVirtualPartSpecify',
     'SimContactVirtualPartCenterOfMass',
     'SimContactVirtualPartAutomatic',
-}
-SimConversionType = {
+]
+SimConversionType = [
     'SimBackgroundGrid',
     'SimParticlesPerDirection',
-}
-SimCouplingCouplingType = {
+]
+SimCouplingCouplingType = [
     'SimCouplingKinematic',
     'SimCouplingDistributing',
     'SimCouplingMultiphysics',
-}
-SimEulerianMaterialLocation = {
+]
+SimEulerianMaterialLocation = [
     'SimMLInsideSupport',
     'SimMLOutsideSupport',
-}
-SimEulerianVolumeFractionType = {
+]
+SimEulerianVolumeFractionType = [
     'SimVFTSpecified',
     'SimVFTComputed',
-}
-SimFunctionOrder = {
+]
+SimFunctionOrder = [
     'SimSecond',
     'SimThird',
     'SimFifth',
-}
-SimLaminateStackingType = {
+]
+SimLaminateStackingType = [
     'SimCompositeLaminateStackingUnknown',
     'SimCompositeLaminateStackingThicknessLaw',
     'SimCompositeLaminateStackingStackingSequence',
-}
-SimLaminateSymmetryMode = {
+]
+SimLaminateSymmetryMode = [
     'SimLaminateSymmetryNone',
     'SimLaminateSymmetryPivot',
     'SimLaminateSymmetryNonPivot',
-}
-SimLineFastenerConstructType = {
+]
+SimLineFastenerConstructType = [
     'SimLineFastenerSolidHex',
     'SimLineFastenerShell',
     'SimLineFastenerWedge',
-}
-SimLineFastenerMeshCompatibility = {
+]
+SimLineFastenerMeshCompatibility = [
     'SimLineFastenerCompatible',
     'SimLineFastenerNonCompatible',
-}
-SimLineFastenerPlacementFastenerPlacementMethod = {
+]
+SimLineFastenerPlacementFastenerPlacementMethod = [
     'SimLineFastenerPlacementLine',
     'SimLineFastenerPlacementPointCoordinates',
     'SimLineFastenerPlacementLineLine',
     'SimLineFastenerPlacementSupportBoundary',
-}
-SimNonStructPlyPositionScheme = {
+]
+SimNonStructPlyPositionScheme = [
     'SimNonStructPlyPositionUnDefined',
     'SimNonStructPlyPositionTopOnly',
     'SimNonStructPlyPositionBottomOnly',
     'SimNonStructPlyPositionTopAndBottom',
-}
-SimNonstructuralMassApplicationMethod = {
+]
+SimNonstructuralMassApplicationMethod = [
     'SimNonstructuralMassMass',
     'SimNonstructuralMassTotalMass',
-}
-SimNonstructuralMassTotalMassDistributionMethod = {
+]
+SimNonstructuralMassTotalMassDistributionMethod = [
     'SimNonstructuralMassMassProportional',
     'SimNonstructuralMassVolumeProportional',
-}
-SimOrientationAxisOfRotation = {
+]
+SimOrientationAxisOfRotation = [
     'SimOrientationAxis1',
     'SimOrientationAxis2',
     'SimOrientationAxis3',
-}
-SimPointFastenerConstructType = {
+]
+SimPointFastenerConstructType = [
     'SimPointFastenerRigid',
     'SimPointFastenerSpring',
     'SimPointFastenerSolidHex',
     'SimPointFastenerBeam',
     'SimPointFastenerCoupling',
     'SimPointFastenerAssembled',
-}
-SimPointFastenerPlacementDistributionOptionOnLine = {
+]
+SimPointFastenerPlacementDistributionOptionOnLine = [
     'SimPointFastenerPlacementNumberOfFasteners',
     'SimPointFastenerPlacementPointSpacing',
-}
-SimPointFastenerPlacementFastenerPlacementMethod = {
+]
+SimPointFastenerPlacementFastenerPlacementMethod = [
     'SimPointFastenerPlacementPoint',
     'SimPointFastenerPlacementLine',
     'SimPointFastenerPlacementPointCoordinates',
-}
-SimRebarAttributeType = {
+]
+SimRebarAttributeType = [
     'SimArea',
     'SimSpacing',
     'SimAngle',
     'SimOffset',
     'SimExtensionRatio',
     'SimRadius',
-}
-SimRebarGeometryType = {
+]
+SimRebarGeometryType = [
     'SimConstant',
     'SimAngular',
     'SimLiftEquation',
-}
-SimRigidBodyConstraintReferencePointInputMode = {
+]
+SimRigidBodyConstraintReferencePointInputMode = [
     'SimRigidBodyConstraintSpecify',
     'SimRigidBodyConstraintCenterOfMass',
     'SimRigidBodyConstraintAutomatic',
-}
-SimShellSectionIntegrationScheme = {
+]
+SimShellSectionIntegrationScheme = [
     'SimShellSectionSimpsonIntegration',
     'SimShellSectionGaussIntegration',
-}
-SimShellSectionOffsetMethod = {
+]
+SimShellSectionOffsetMethod = [
     'SimShellSectionNone',
     'SimShellSectionSpecifiedDistanceOffset',
     'SimShellSectionThicknessRatio',
     'SimShellSectionTopSurface',
     'SimShellSectionBottomSurface',
-}
-SimShellSectionPoissonMethod = {
+]
+SimShellSectionPoissonMethod = [
     'SimShellSectionPoissonDefault',
     'SimShellSectionPoissonValue',
     'SimShellSectionPoissonMaterial',
     'SimShellSectionPoissonElastic',
-}
-SimShellSectionThicknessType = {
+]
+SimShellSectionThicknessType = [
     'SimShellSectionUser',
     'SimShellSectionMid',
     'SimShellSectionThin',
-}
-SimSpringType = {
+]
+SimSpringType = [
     'SimAxialSpring',
     'SimGeneralSpring',
-}
-SimThicknessType = {
+]
+SimThicknessType = [
     'SimUniform',
     'SimVariable',
-}
-SimTieDiscretizationMethod = {
+]
+SimTieDiscretizationMethod = [
     'SimTieSurfaceToSurface',
     'SimTieNodeToSurface',
     'SimTieSolverDefault',
-}
-SimVirtualBoltAdvancedCouplingType = {
+]
+SimVirtualBoltAdvancedCouplingType = [
     'SimVirtualBoltAdvancedCouplingTypeKinematic',
     'SimVirtualBoltAdvancedCouplingTypeDistributingContinuum',
     'SimVirtualBoltAdvancedCouplingTypeDistributingStructural',
-}
-SimVirtualBoltCoupledSurfaceType = {
+]
+SimVirtualBoltCoupledSurfaceType = [
     'SimVirtualBoltCoupledSurfaceTypeInfluenceRadius',
     'SimVirtualBoltCoupledSurfaceTypeNodeRings',
-}
-SimVirtualBoltIntermediateCouplingType = {
+]
+SimVirtualBoltIntermediateCouplingType = [
     'SimVirtualBoltIntermediateCouplingTypeNoConnection',
     'SimVirtualBoltIntermediateCouplingTypeStandard',
     'SimVirtualBoltIntermediateCouplingTypeTightFit',
-}
-SimVirtualBoltMechanicalBehavior = {
+]
+SimVirtualBoltMechanicalBehavior = [
     'SimVirtualBoltBehaviorDeformable',
     'SimVirtualBoltBehaviorRigid',
     'SimVirtualBoltBehaviorBeam',
-}
-SimVirtualBoltSolidSolidConnectionType = {
+]
+SimVirtualBoltSolidSolidConnectionType = [
     'SimVirtualBoltSolidSolidConnectionTypeBeamAtInterface',
     'SimVirtualBoltSolidSolidConnectionTypeCoupling',
-}
-SimVirtualBolt_BoltType = {
+]
+SimVirtualBolt_BoltType = [
     'SimVirtualBolt_BoltTypeGrounded',
     'SimVirtualBolt_BoltTypeStandard',
     'SimVirtualBolt_BoltTypeCountersink',
     'SimVirtualBolt_BoltTypeScrew',
     'SimVirtualBolt_BoltTypeScrewWithHead',
-}
+]

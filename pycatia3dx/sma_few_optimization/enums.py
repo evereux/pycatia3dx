@@ -1,75 +1,75 @@
-SimBasePlaneType = {
+SimBasePlaneType = [
     'SimPrintingBed',
     'SimSupportStructures',
-}
-SimCalculatedResponseVariableType = {
+]
+SimCalculatedResponseVariableType = [
     'SimCombineValues',
     'SimAddAbsoluteValues',
     'SimSubtractValues',
     'SimSubtractAbsoluteValues',
-}
-SimCastingControlType = {
+]
+SimCastingControlType = [
     'SimSingleDraw',
     'SimSplitDraw',
     'SimAutoDraw',
-}
-SimCenterOfGravityConstraintType = {
+]
+SimCenterOfGravityConstraintType = [
     'SimMaintain',
     'SimDefine',
-}
-SimDensityUpdateStrategyType = {
+]
+SimDensityUpdateStrategyType = [
     'SimAutomaticDensityUpdateStrategy',
     'SimNormalDensityUpdateStrategy',
     'SimConservativeDensityUpdateStrategy',
     'SimAggressiveDensityUpdateStrategy',
-}
-SimDesignResponseDirection = {
+]
+SimDesignResponseDirection = [
     'SimDirectionAny',
     'SimDirectionX',
     'SimDirectionY',
     'SimDirectionZ',
-}
-SimDisplacementConstraintType = {
+]
+SimDisplacementConstraintType = [
     'SimAllDirection',
     'SimSpecificDirection',
-}
-SimFastenerForceType = {
+]
+SimFastenerForceType = [
     'SimAxial',
     'SimShear',
-}
-SimFrequencyResponseVariableType = {
+]
+SimFrequencyResponseVariableType = [
     'SimSingleMode',
     'SimMultipleModeAggregation',
-}
-SimMassConstraintType = {
+]
+SimMassConstraintType = [
     'SimAbsoluteConstraint',
     'SimRatioConstraint',
-}
-SimMaterialInterpolationType = {
+]
+SimMaterialInterpolationType = [
     'SimAutomaticMaterialInterpolation',
     'SimSimpMaterialInterpolation',
     'SimRampMaterialInterpolation',
     'SimMimpMaterialInterpolation',
-}
-SimMomentOfInertiaComponent = {
+]
+SimMomentOfInertiaComponent = [
     'SimComponentXX',
     'SimComponentYY',
     'SimComponentZZ',
     'SimComponentXY',
     'SimComponentXZ',
     'SimComponentYZ',
-}
-SimNodalUpdateType = {
+]
+SimNodalUpdateType = [
     'SimAutomatic',
     'SimNormal',
     'SimConservative',
     'SimAggressive',
-}
-SimOptimizationTargetMassType = {
+]
+SimOptimizationTargetMassType = [
     'SimAbsolute',
     'SimRatio',
-}
-SimOptimizationTaskType = {
+]
+SimOptimizationTaskType = [
     'SimMaximizeStiffness',
     'SimMinimizeMass',
     'SimMaximizeLowestFrequency',
@@ -77,30 +77,30 @@ SimOptimizationTaskType = {
     'SimMaximizeResponseVariableValues',
     'SimMinimizeResponseVariableValues',
     'SimMinimizeTheMaximumResponseVariableValues',
-}
-SimPenetrationCheckType = {
+]
+SimPenetrationCheckType = [
     'SimBothDirection',
     'SimNormalDirection',
     'SimOppositeDirection',
-}
-SimReactionForceConstraintType = {
+]
+SimReactionForceConstraintType = [
     'SimTotal',
     'SimComponent',
-}
-SimReferenceModeType = {
+]
+SimReferenceModeType = [
     'SimPrevious',
     'SimInitial',
-}
-SimRemoveSoftElementsType = {
+]
+SimRemoveSoftElementsType = [
     'SimInactiveRemoveSoftElements',
     'SimStandardRemoveSoftElements',
     'SimAggressiveRemoveSoftElements',
-}
-SimStrainType = {
+]
+SimStrainType = [
     'SimPEMAGStrain',
-}
-SimVectorUpdateType = {
+]
+SimVectorUpdateType = [
     'SimDefault',
     'SimAll',
     'SimFirst',
-}
+]

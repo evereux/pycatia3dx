@@ -1,56 +1,56 @@
-CatInterferenceComparison = {
+CatInterferenceComparison = [
     'catInterferenceComparisonNone',
     'catInterferenceComparisonRecomputeModify',
     'catInterferenceComparisonDeleteOutOfScope',
-}
-CatInterferenceComputeQuantifier = {
+]
+CatInterferenceComputeQuantifier = [
     'catInterferenceComputeQuantifierMinimumDistance',
     'catInterferenceComputeQuantifierPenetrationVector',
-}
-CatInterferenceGroupComputationType2 = {
+]
+CatInterferenceGroupComputationType2 = [
     'catInterferenceGroupComputationTypeAllAgainstAllInGroup',
     'catInterferenceGroupComputationTypeGroupAgainstGroup',
     'catInterferenceGroupComputationTypeGroupAgainstContext',
     'catInterferenceGroupComputationTypeAllAgainstAllInContext',
-}
-CatInterferenceGroupComputationType = {
+]
+CatInterferenceGroupComputationType = [
     'catInterferenceGroupComputationTypeAllAgainstAllInGroup1',
     'catInterferenceGroupComputationTypeGroup1AgainstGroup2',
-}
-CatInterferenceIntermediateRepresentation = {
+]
+CatInterferenceIntermediateRepresentation = [
     'catInterferenceInterRepNone',
     'catInterferenceInterRepAppend',
     'catInterferenceInterRepComputeBetween',
-}
-CatInterferenceResultStatus = {
+]
+CatInterferenceResultStatus = [
     'catInterferenceResultStatusOK',
     'catInterferenceResultStatusKO',
     'catInterferenceResultStatusNotAnalyzed',
-}
-CatInterferenceResultType = {
+]
+CatInterferenceResultType = [
     'catInterferenceResultTypeClash',
     'catInterferenceResultTypeContact',
     'catInterferenceResultTypeClearance',
     'catInterferenceResultTypeNoInterference',
     'catInterferenceResultTypeUndefined',
-}
-CatInterferenceResultUserType = {
+]
+CatInterferenceResultUserType = [
     'catInterferenceResultUserTypeClash',
     'catInterferenceResultUserTypeContact',
     'catInterferenceResultUserTypeClearance',
     'catInterferenceResultUserTypeNoInterference',
     'catInterferenceResultUserTypeUndefined',
-}
-CatInterferenceSpecificationTypeEngCnx = {
+]
+CatInterferenceSpecificationTypeEngCnx = [
     'catInterferenceSpecificationTypeEngCnxCheckNone',
     'catInterferenceSpecificationTypeEngCnxCheckNoClash',
     'catInterferenceSpecificationTypeEngCnxCheckContact',
     'catInterferenceSpecificationTypeEngCnxCheckClearance',
     'catInterferenceSpecificationTypeEngCnxNoCheck',
-}
-CatInterferenceSpecificationType = {
+]
+CatInterferenceSpecificationType = [
     'catInterferenceSpecificationTypeNone',
     'catInterferenceSpecificationTypeClash',
     'catInterferenceSpecificationTypeClearance',
     'catInterferenceSpecificationTypeClashWithoutContact',
-}
+]

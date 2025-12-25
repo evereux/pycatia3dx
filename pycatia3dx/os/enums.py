@@ -1,4 +1,4 @@
-CatFileSelectionMode = {
+CatFileSelectionMode = [
     'CatFileSelectionModeOpen',
     'CatFileSelectionModeSave'
-}
+]

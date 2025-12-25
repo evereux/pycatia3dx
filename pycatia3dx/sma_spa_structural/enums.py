@@ -1,104 +1,104 @@
-SimAcousticCouplingFormulationType = {
+SimAcousticCouplingFormulationType = [
     'SimAcousticCouplingNodeToSurface',
     'SimAcousticCouplingSurfaceToSurface',
-}
-SimAcousticCouplingMainSurfaceType = {
+]
+SimAcousticCouplingMainSurfaceType = [
     'SimAcousticCouplingElementBasedMainSurface',
     'SimAcousticCouplingNodeBasedMainSurface',
-}
-SimAcousticCouplingMasterSurfaceType = {
+]
+SimAcousticCouplingMasterSurfaceType = [
     'SimAcousticCouplingElementBased',
     'SimAcousticCouplingNodeBased',
-}
-SimAmplitudeDefinitionType = {
+]
+SimAmplitudeDefinitionType = [
     'SimAmplitudeTabularDefinition',
     'SimAmplitudeSmoothStepDefinition',
     'SimAmplitudePeriodicDefinition',
     'SimAmplitudeUserDefinition',
-}
-SimAmplitudeTimeSpanType = {
+]
+SimAmplitudeTimeSpanType = [
     'SimAmplitudeStepTime',
     'SimAmplitudeTotalTime',
-}
-SimAMSEigensolverAcousticCouplingType = {
+]
+SimAMSEigensolverAcousticCouplingType = [
     'SimAMSEigensolverOn',
     'SimAMSEigensolverProjection',
     'SimAMSEigensolverOff',
-}
-SimApplicationType = {
+]
+SimApplicationType = [
     'SimApplicationType_Solver_Default',
     'SimApplicationType_Transient_Fidelity',
     'SimApplicationType_Moderate_Dissipation',
     'SimApplicationType_Quasi_Static',
-}
-SimBeamLoadComponentSystem = {
+]
+SimBeamLoadComponentSystem = [
     'SimBeamLoadGlobalComponentSystem',
     'SimBeamLoadLocalComponentSystem',
-}
-SimBearingLoadInteractionType = {
+]
+SimBearingLoadInteractionType = [
     'SimBearingLoadOutward',
     'SimBearingLoadInward',
-}
-SimBearingLoadOrientationType = {
+]
+SimBearingLoadOrientationType = [
     'SimBearingLoadRadial',
     'SimBearingLoadParallel',
-}
-SimBearingLoadProfileType = {
+]
+SimBearingLoadProfileType = [
     'SimBearingLoadSinusoidal',
     'SimBearingLoadParabolic',
-}
-SimBuckleStepSolverType = {
+]
+SimBuckleStepSolverType = [
     'SimBuckleStepLANCZOS',
     'SimBuckleStepSUBSPACE',
-}
-SimConnectorDampingDampingOrder = {
+]
+SimConnectorDampingDampingOrder = [
     'SimConnectorDampingLinear',
     'SimConnectorDampingNonLinear',
-}
-SimConnectorDampingTableColumn = {
+]
+SimConnectorDampingTableColumn = [
     'SimConnectorDampingCoefficient',
     'SimConnectorDampingTemperature',
     'SimConnectorDampingVelocity',
-}
-SimConnectorRotationVariationType = {
+]
+SimConnectorRotationVariationType = [
     'SimConnectorRotationUniform',
     'SimConnectorRotationUserDefined',
-}
-SimConnectorRotationVelocityVariationType = {
+]
+SimConnectorRotationVelocityVariationType = [
     'SimConnectorRotationVelocityUniform',
     'SimConnectorRotationVelocityUserDefined',
-}
-SimConnectorTranslationVariationType = {
+]
+SimConnectorTranslationVariationType = [
     'SimConnectorTranslationUniform',
     'SimConnectorTranslationUserDefined',
-}
-SimConnectorTranslationVelocityVariationType = {
+]
+SimConnectorTranslationVelocityVariationType = [
     'SimConnectorTranslationVelocityUniform',
     'SimConnectorTranslationVelocityUserDefined',
-}
-SimCoupledCreepIntegration = {
+]
+SimCoupledCreepIntegration = [
     'SimCoupledImplicit',
     'SimCoupledExplicit',
-}
-SimCoupledSolutionTechnique = {
+]
+SimCoupledSolutionTechnique = [
     'SimCoupledFullNewton',
     'SimCoupledSeparated',
-}
-SimCoupledThermalResponseType = {
+]
+SimCoupledThermalResponseType = [
     'SimCoupledThermalSteadyState',
     'SimCoupledThermalTransient',
-}
-SimDirectHarmonicResponseStepIntervalType = {
+]
+SimDirectHarmonicResponseStepIntervalType = [
     'SimDirectHarmonicResponseStepFrequencyIncrement',
     'SimDirectHarmonicResponseStepEigenFrequency',
     'SimDirectHarmonicResponseStepDirectRange',
     'SimDirectHarmonicResponseStepFrequencySpread',
-}
-SimDirectHarmonicResponseStepScaleType = {
+]
+SimDirectHarmonicResponseStepScaleType = [
     'SimDirectHarmonicResponseStepLogarithmic',
     'SimDirectHarmonicResponseStepLinear',
-}
-SimDirectHarmonicResponseStepTableColumn = {
+]
+SimDirectHarmonicResponseStepTableColumn = [
     'SimDirectHarmonicResponseStepLower',
     'SimDirectHarmonicResponseStepUpper',
     'SimDirectHarmonicResponseStepIncrement',
@@ -106,55 +106,55 @@ SimDirectHarmonicResponseStepTableColumn = {
     'SimDirectHarmonicResponseStepBias',
     'SimDirectHarmonicResponseStepScaleFactor',
     'SimDirectHarmonicResponseStepSpread',
-}
-SimExplicitDynamicStepFixedIncrementationTypeEnm = {
+]
+SimExplicitDynamicStepFixedIncrementationTypeEnm = [
     'SimExplicitDynamicStepELEMENTBYELEMENT',
     'SimExplicitDynamicStepUSERDEFINED',
-}
-SimFrequencyBasedDampingDampingType = {
+]
+SimFrequencyBasedDampingDampingType = [
     'SimFrequencyBasedDampingCriticalDampingFraction',
     'SimFrequencyBasedDampingStructuralDamping',
     'SimFrequencyBasedDampingRayleighDamping',
-}
-SimFrequencyBasedDampingModesType = {
+]
+SimFrequencyBasedDampingModesType = [
     'SimFrequencyBasedDampingStructuralAndAcoustic',
     'SimFrequencyBasedDampingStructural',
     'SimFrequencyBasedDampingAcoustic',
-}
-SimFrequencyBasedDampingTableColumn = {
+]
+SimFrequencyBasedDampingTableColumn = [
     'SimFrequencyBasedDampingFrequency',
     'SimFrequencyBasedDampingDampingFraction',
     'SimFrequencyBasedDampingDampingFactor',
     'SimFrequencyBasedDampingMassDamping',
     'SimFrequencyBasedDampingStiffnessDamping',
-}
-SimFrequencyStepSolverType = {
+]
+SimFrequencyStepSolverType = [
     'SimFrequencyStepLanczos',
     'SimFrequencyStepAMS',
-}
-SimGeneralGlobalDampingModesType = {
+]
+SimGeneralGlobalDampingModesType = [
     'SimGeneralGlobalDampingNone',
     'SimGeneralGlobalDampingStructuralAndAcoustic',
     'SimGeneralGlobalDampingStructural',
     'SimGeneralGlobalDampingAcoustic',
-}
-SimHarmonicResponseStepIntervalType = {
+]
+SimHarmonicResponseStepIntervalType = [
     'SimHarmonicResponseStepFrequencyIncrement',
     'SimHarmonicResponseStepEigenfrequency',
     'SimHarmonicResponseStepDirectRange',
     'SimHarmonicResponseStepFrequencySpread',
-}
-SimHarmonicResponseStepProjectionType = {
+]
+SimHarmonicResponseStepProjectionType = [
     'SimHarmonicResponseStepNone',
     'SimHarmonicResponseStepAllFrequency',
     'SimHarmonicResponseStepCenterFrequencies',
     'SimHarmonicResponseStepRangeValues',
-}
-SimHarmonicResponseStepScaleType = {
+]
+SimHarmonicResponseStepScaleType = [
     'SimHarmonicResponseStepLogarithmic',
     'SimHarmonicResponseStepLinear',
-}
-SimHarmonicResponseStepTableColumn = {
+]
+SimHarmonicResponseStepTableColumn = [
     'SimHarmonicResponseStepLower',
     'SimHarmonicResponseStepUpper',
     'SimHarmonicResponseStepIncrement',
@@ -162,50 +162,50 @@ SimHarmonicResponseStepTableColumn = {
     'SimHarmonicResponseStepBias',
     'SimHarmonicResponseStepScaleFactor',
     'SimHarmonicResponseStepSpread',
-}
-SimInitialStressType = {
+]
+SimInitialStressType = [
     'SimInitialStressTensorStress',
     'SimInitialStressRebarStress',
-}
-SimLanczosEigensolverAcousticCouplingType = {
+]
+SimLanczosEigensolverAcousticCouplingType = [
     'SimLanczosEigensolverOn',
     'SimLanczosEigensolverProjection',
     'SimLanczosEigensolverOff',
-}
-SimMassScalingMassScalingBehavior = {
+]
+SimMassScalingMassScalingBehavior = [
     'SimMassScalingBeginningOfStep',
     'SimMassScalingThroughoutStep',
     'SimMassScalingResetMassMatrix',
-}
-SimMassScalingMassScalingMethod = {
+]
+SimMassScalingMassScalingMethod = [
     'SimMassScalingUniform',
     'SimMassScalingBelowMin',
     'SimMassScalingSameTimeIncrement',
-}
-SimMatrixStorageScheme = {
+]
+SimMatrixStorageScheme = [
     'SimMatrixStorage_Default',
     'SimMatrixStorage_Symmetric',
     'SimMatrixStorage_Unsymmetric',
-}
-SimModalDampingDampingType = {
+]
+SimModalDampingDampingType = [
     'SimModalDampingFraction',
     'SimModalDampingRayleigh',
     'SimModalDampingStructural',
-}
-SimModalDampingTableColumn = {
+]
+SimModalDampingTableColumn = [
     'SimModalDampingFrequency',
     'SimModalDampingDampingFraction',
     'SimModalDampingAlpha',
     'SimModalDampingBeta',
     'SimModalDampingDampingFactor',
-}
-SimModeBasedDampingDampingType = {
+]
+SimModeBasedDampingDampingType = [
     'SimModeBasedDampingCriticalDampingFraction',
     'SimModeBasedDampingStructural',
     'SimModeBasedDampingComposite',
     'SimModeBasedDampingRayleigh',
-}
-SimModeBasedDampingTableColumn = {
+]
+SimModeBasedDampingTableColumn = [
     'SimModeBasedDampingFirstMode',
     'SimModeBasedDampingLastMode',
     'SimModeBasedDampingDampingFraction',
@@ -214,77 +214,77 @@ SimModeBasedDampingTableColumn = {
     'SimModeBasedDampingStiffnessScaling',
     'SimModeBasedDampingMassDamping',
     'SimModeBasedDampingStiffnessDamping',
-}
-SimNormalBehaviorTableColumn = {
+]
+SimNormalBehaviorTableColumn = [
     'SimNormalBehaviorPressure',
     'SimNormalBehaviorOverclosure',
-}
-SimOutputElementLocation = {
+]
+SimOutputElementLocation = [
     'SimOutputAtIntegrationPoints',
     'SimOutputAtNodes',
     'SimOutputAtCentroid',
     'SimOutputAtNodesAveraged',
-}
-SimOutputFrequencyType = {
+]
+SimOutputFrequencyType = [
     'SimOutputFrequency',
     'SimOutputNumberInterval',
     'SimOutputTimeInterval',
-}
-SimOutputOutputGroup = {
+]
+SimOutputOutputGroup = [
     'SimOutputField',
     'SimOutputHistory',
-}
-SimOutputSectionPointSelectionType = {
+]
+SimOutputSectionPointSelectionType = [
     'SimOutputDefault',
     'SimOutputSpecify',
     'SimOutputAll',
     'SimOutputByLayer',
-}
-SimPeriodicAmplitudeColumnType = {
+]
+SimPeriodicAmplitudeColumnType = [
     'SimPeriodicAmplitudeASeriesColumn',
     'SimPeriodicAmplitudeBSeriesColumn',
-}
-SimRandomGlobalDampingModesType = {
+]
+SimRandomGlobalDampingModesType = [
     'SimRandomGlobalDampingStructuralAndAcoustic',
     'SimRandomGlobalDampingStructural',
     'SimRandomGlobalDampingAcoustic',
-}
-SimRandomVibrationStepDampingDefinition = {
+]
+SimRandomVibrationStepDampingDefinition = [
     'SimRandomVibrationStepModeRange',
     'SimRandomVibrationStepFrequencyCurve',
     'SimRandomVibrationStepGlobal',
     'SimRandomVibrationStepNoDamping',
-}
-SimRandomVibrationStepTableColumn = {
+]
+SimRandomVibrationStepTableColumn = [
     'SimRandomVibrationStepLowerBoundary',
     'SimRandomVibrationStepUpperBoundary',
     'SimRandomVibrationStepCalculationPoints',
     'SimRandomVibrationStepBias',
     'SimRandomVibrationStepFrequencyScale',
-}
-SimResponseSpectrumStepAlignAxisType = {
+]
+SimResponseSpectrumStepAlignAxisType = [
     'SimResponseSpectrumStepXAxis',
     'SimResponseSpectrumStepYAxis',
     'SimResponseSpectrumStepZAxis',
-}
-SimResponseSpectrumStepDampingDefinition = {
+]
+SimResponseSpectrumStepDampingDefinition = [
     'SimResponseSpectrumStepModeRange',
     'SimResponseSpectrumStepFrequencyCurve',
     'SimResponseSpectrumStepGlobal',
     'SimResponseSpectrumStepNoDamping',
-}
-SimResponseSpectrumStepDirectionalSummationMethod = {
+]
+SimResponseSpectrumStepDirectionalSummationMethod = [
     'SimResponseSpectrumStepAlgebraic',
     'SimResponseSpectrumStepSquareRootOfSumOfSquares',
     'SimResponseSpectrumStepFortyPercentRule',
     'SimResponseSpectrumStepThirtyPercentRule',
-}
-SimResponseSpectrumStepDirectionType = {
+]
+SimResponseSpectrumStepDirectionType = [
     'SimResponseSpectrumStepFirst',
     'SimResponseSpectrumStepSecond',
     'SimResponseSpectrumStepThird',
-}
-SimResponseSpectrumStepModalSummationMethod = {
+]
+SimResponseSpectrumStepModalSummationMethod = [
     'SimResponseSpectrumStepAbsoluteValues',
     'SimResponseSpectrumStepSquareRootOfSumOfSquaresMethod',
     'SimResponseSpectrumStepNavalResearchLaboratory',
@@ -292,45 +292,45 @@ SimResponseSpectrumStepModalSummationMethod = {
     'SimResponseSpectrumStepCompleteQuadraticCombination',
     'SimResponseSpectrumStepGroupingMethod',
     'SimResponseSpectrumStepDoubleSumCombination',
-}
-SimResponseSpectrumStepRigidResponseMethod = {
+]
+SimResponseSpectrumStepRigidResponseMethod = [
     'SimResponseSpectrumStepNone',
     'SimResponseSpectrumStepGupta',
     'SimResponseSpectrumStepLindleyYow',
-}
-SimShellEdgeLoadTractionType = {
+]
+SimShellEdgeLoadTractionType = [
     'SimShellEdgeLoadNormal',
     'SimShellEdgeLoadTransverse',
     'SimShellEdgeLoadShear',
-}
-SimSlidingVelocityTranslationalDof = {
+]
+SimSlidingVelocityTranslationalDof = [
     'SimSlidingVelocityTranslationX',
     'SimSlidingVelocityTranslationY',
     'SimSlidingVelocityTranslationZ',
-}
-SimSlidingVelocityType = {
+]
+SimSlidingVelocityType = [
     'SimSlidingVelocityTranslation',
     'SimSlidingVelocityRotation',
-}
-SimSmoothStepAmplitudeDomainType = {
+]
+SimSmoothStepAmplitudeDomainType = [
     'SimSmoothStepAmplitudeTimeDomain',
     'SimSmoothStepAmplitudeFrequencyDomain',
-}
-SimSmoothStepAmplitudeTableColumn = {
+]
+SimSmoothStepAmplitudeTableColumn = [
     'SimSmoothStepAmplitudeAmplitude',
     'SimSmoothStepAmplitudeTime',
-}
-SimSolutionControlsAverageFlux = {
+]
+SimSolutionControlsAverageFlux = [
     'SimSolutionControlsDefault',
     'SimSolutionControlsInitial',
     'SimSolutionControlsAverage',
-}
-SimSolutionControlsDefinition = {
+]
+SimSolutionControlsDefinition = [
     'SimSolutionControlsPropagate',
     'SimSolutionControlsReset',
     'SimSolutionControlsSpecify',
-}
-SimSolutionControlsDOFField = {
+]
+SimSolutionControlsDOFField = [
     'SimSolutionControlsDisplacement',
     'SimSolutionControlsRotation',
     'SimSolutionControlsTemperature',
@@ -342,64 +342,64 @@ SimSolutionControlsDOFField = {
     'SimSolutionControlsPressureLagrangeMultiplier',
     'SimSolutionControlsVolumeLagrangeMultiplier',
     'SimSolutionControlsIonConcentration',
-}
-SimSpectrumDefinitionType = {
+]
+SimSpectrumDefinitionType = [
     'SimSpectrumAcceleration',
     'SimSpectrumDisplacement',
     'SimSpectrumGravity',
     'SimSpectrumVelocity',
-}
-SimSpectrumTableColumn = {
+]
+SimSpectrumTableColumn = [
     'SimSpectrumAccelerationCol',
     'SimSpectrumDampingRatioCol',
     'SimSpectrumFrequencyCol',
     'SimSpectrumDisplacementCol',
     'SimSpectrumGravityCol',
     'SimSpectrumVelocityCol',
-}
-SimStabilizationStabilizationType = {
+]
+SimStabilizationStabilizationType = [
     'SimStabilizationNoStabilization',
     'SimStabilizationDamping',
     'SimStabilizationEnergyFraction',
     'SimStabilizationPropagated',
-}
-SimStaticPerturbationStepSolutionTechnique = {
+]
+SimStaticPerturbationStepSolutionTechnique = [
     'SimStaticPerturbationStepFullNewton',
     'SimStaticPerturbationStepLCP',
-}
-SimStaticRiksStepDisplacementType = {
+]
+SimStaticRiksStepDisplacementType = [
     'SimStaticRiksStepDisplacementNone',
     'SimStaticRiksStepDisplacementTranslation',
     'SimStaticRiksStepDisplacementRotation',
-}
-SimSteadyStateTransportStepInertiaEffect = {
+]
+SimSteadyStateTransportStepInertiaEffect = [
     'SimSteadyStateTransportStepNoInertia',
     'SimSteadyStateTransportStepHighSpeedInertia',
     'SimSteadyStateTransportStepLowSpeedInertia',
-}
-SimSteadyStateTransportStepMullinsEffect = {
+]
+SimSteadyStateTransportStepMullinsEffect = [
     'SimSteadyStateTransportStepRampMullins',
     'SimSteadyStateTransportStepImmediateMullins',
-}
-SimSurfaceBasedContactDiscretizationMethod = {
+]
+SimSurfaceBasedContactDiscretizationMethod = [
     'SimSurfaceBasedContactNodeToSurface',
     'SimSurfaceBasedContactSurfaceToSurface',
-}
-SimTabularAmplitudeDomainType = {
+]
+SimTabularAmplitudeDomainType = [
     'SimTabularAmplitudeTimeDomain',
     'SimTabularAmplitudeFrequencyDomain',
-}
-SimTabularAmplitudeTableColumn = {
+]
+SimTabularAmplitudeTableColumn = [
     'SimTabularAmplitudeAmplitude',
     'SimTabularAmplitudeTime',
-}
-SimTimeIncrementationScheme = {
+]
+SimTimeIncrementationScheme = [
     'SimTimeIncrementation_Automatic',
     'SimTimeIncrementation_Fixed',
     'SimTimeIncrementation_Direct',
     'SimTimeIncrementation_SolverDefault',
-}
-SimVolumetricHeatSourceHeatSourceType = {
+]
+SimVolumetricHeatSourceHeatSourceType = [
     'SimVolumetricHeatSourcePerUnitVolume',
     'SimVolumetricHeatSourceTotal',
-}
+]

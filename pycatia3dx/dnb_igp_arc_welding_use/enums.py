@@ -1,5 +1,5 @@
-InsertMode = {
+InsertMode = [
     'Replace',
     'InsertAfter',
     'InsertBefore',
-}
+]

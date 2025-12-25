@@ -1,16 +1,16 @@
-CATMeasurableContextType = {
+CATMeasurableContextType = [
   'PartContext',
   'ProductContext'
-}
+]
 
-CATMeasurableModeOfCalc = {
+CATMeasurableModeOfCalc = [
   'MeasExactCalculation',
   'MeasApproximateCalculation',
   'MeasExactElseApproxCalculation',
   'MeasUnknownCalculation'
-}
+]
 
-CATMeasurableType = {
+CATMeasurableType = [
   'CAAMeasurableAxisSystem',
   'CAAMeasurableBetween',
   'CAAMeasurableCircle',
@@ -23,19 +23,19 @@ CATMeasurableType = {
   'CAAMeasurableSphere',
   'CAAMeasurableSurface',
   'CAAMeasurableVolume'
-}
+]
 
 
-CATOpnsMeasureDistanceType = {
+CATOpnsMeasureDistanceType = [
   'catOpnsMinimumDistance',
   'catOpnsMaximumDistance',
   'catOpnsMaximumDistance12',
   'catOpnsMinimumDistanceAlongDir',
   'catOpnsBandAnalysis',
   'catOpnsUnknownDistance'
-}
+]
 
-CATOpnsMeasureEdgeType = {
+CATOpnsMeasureEdgeType = [
   'catOpnsLineEdge',
   'catOpnsArcEdge',
   'catOpnsCurveEdge',
@@ -44,14 +44,14 @@ CATOpnsMeasureEdgeType = {
   'catOpnsHyperbolaEdge',
   'catOpnsAxisEdge',
   'catOpnsUnknownEdge'
-}
+]
 
-CATOpnsMeasureExtensionMode = {
+CATOpnsMeasureExtensionMode = [
   'catOpnsFiniteExtend',
   'catOpnsInfiniteExtend'
-}
+]
 
-CATOpnsMeasureItemType = {
+CATOpnsMeasureItemType = [
   'catOpnsPointItem',
   'catOpnsEdgeItem',
   'catOpnsSurfaceItem',
@@ -62,21 +62,21 @@ CATOpnsMeasureItemType = {
   'catOpnsThicknessItem',
   'catOpnsSurface2DItem',
   'catOpnsAngle3PtsItem'
-}
+]
 
-CATOpnsMeasureSurfaceType = {
+CATOpnsMeasureSurfaceType = [
   'catOpnsPlaneSurface',
   'catOpnsCylinderSurface',
   'catOpnsSphereSurface',
   'catOpnsTorusSurface',
   'catOpnsConeSurface',
   'catOpnsUnknownSurface'
-}
+]
 
-CATResultCalcType = {
+CATResultCalcType = [
 
   'ResExactCalculation',
   'ResApproximateCalculation',
   'ResUnknownCalculation',
   'ResMixedCalculation'
-}
+]

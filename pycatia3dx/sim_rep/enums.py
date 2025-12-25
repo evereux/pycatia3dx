@@ -1,11 +1,11 @@
-SimMCXDuplicateMode = {
+SimMCXDuplicateMode = [
     'simNoMCX',
     'simIncludedMCX',
     'simAllMCX',
-}
-SimXRepRelationType = {
+]
+SimXRepRelationType = [
     'SimXRepTo3DShapeRelation',
     'SimXRepToXRepRelation',
     'SimXRepToDocSpecRelation',
     'SimXRepToDocResultRelation',
-}
+]

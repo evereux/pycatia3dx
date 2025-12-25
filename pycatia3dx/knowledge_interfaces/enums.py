@@ -1,4 +1,4 @@
-KnowledgeObjectType = {
+KnowledgeObjectType = [
   'kweParametersSetObjectType',
   'kweRelationsSetObjectType',
   'kweOptimizationsSetObjectType',
@@ -7,11 +7,11 @@ KnowledgeObjectType = {
   'kweOptimizationObjectType',
   'kweExpertRulebasesSetObjectType',
   'kweExpertRulebaseObjectType'
-}
+]
 
-KnowledgeSetType = {
+KnowledgeSetType = [
   'kweParametersType',
   'kweRelationsType',
   'kweOptimizationsType',
   'kweRuleBasesType'
-}
+]

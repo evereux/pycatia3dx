@@ -1,4 +1,4 @@
-CATScriptLanguage = {
+CATScriptLanguage = [
     'CATVBScriptLanguage',
     'CATVBALanguage',
     'CATBasicScriptLanguage',
@@ -6,11 +6,11 @@ CATScriptLanguage = {
     'CATJScriptLanguage',
     'CATCSharpLanguage',
     'CATVBNetLanguage'
-}
+]
 
-CatScriptLibraryType = {
+CatScriptLibraryType = [
     'catScriptLibraryTypeDocument',
     'catScriptLibraryTypeDirectory',
     'catScriptLibraryTypeVBAProject',
     'catScriptLibraryTypeVSTAProject'
-}
+]

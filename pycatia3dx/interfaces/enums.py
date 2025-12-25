@@ -1,4 +1,4 @@
-CatArrangeStyle = {
+CatArrangeStyle = [
   'catArrangeCascade',
   'catArrangeTiledHorizontal',
   'catArrangeTiledVertical',
@@ -11,47 +11,47 @@ CatArrangeStyle = {
   'catArrangeTiledHorizontalInNewTab',
   'catArrangeTiledVerticalInNewTab',
   'catArrangeTiledGridInNewTab'
-}
+]
 
-CatBannerPosition = {
+CatBannerPosition = [
   'catBannerPositionNone',
   'catBannerPositionBottom',
   'catBannerPositionTop',
   'catBannerPositionLeft',
   'catBannerPositionRight'
-}
+]
 
-CatCameraType = {
+CatCameraType = [
   'catCamera2D',
   'catCamera3D'
-}
+]
 
-CatCaptureFormat = {
+CatCaptureFormat = [
   'catCaptureFormatCGM',
   'catCaptureFormatEMF',
   'catCaptureFormatTIFF',
   'catCaptureFormatTIFFGreyScale',
   'catCaptureFormatBMP',
   'catCaptureFormatJPEG'
-}
+]
 
-CatClippingMode = {
+CatClippingMode = [
   'catClippingModeClear',
   'catClippingModeNear',
   'catClippingModeFar',
   'catClippingModeNearAndFar'
-}
+]
 
-CatImageRotation = {
+CatImageRotation = [
   'catImageNoRotation',
   'catImageRotation90',
   'catImageRotation180',
   'catImageRotation270',
   'catImageBestRotation'
 
-}
+]
 
-CATInteractionType = {
+CATInteractionType = [
   'CATSelection',
   'CATIndication',
   'CATMouseMove',
@@ -61,32 +61,32 @@ CATInteractionType = {
   'CATOtherEditor',
   'CATExclusiveCommand'
 
-}
+]
 
-CatLightingMode = {
+CatLightingMode = [
   'catInfiniteLightSource',
   'catNeonLightSource'
-}
+]
 
-CATMultiSelectionMode = {
+CATMultiSelectionMode = [
   'CATMonoSel',
   'CATMultiSelTriggWhenSelPerf',
   'CATMultiSelTriggWhenUserValidatesSelection'
-}
+]
 
-CatNavigationStyle = {
+CatNavigationStyle = [
   'catNavigationExamine',
   'catNavigationWalk',
   'catNavigationFly'
-}
+]
 
-CatPaperOrientation = {
+CatPaperOrientation = [
   'catPaperPortrait',
   'catPaperLandscape',
   'catPaperBestFit'
-}
+]
 
-CatPaperSize = {
+CatPaperSize = [
   'catPaperLetter',
   'catPaperLegal',
   'catPaperA0',
@@ -101,65 +101,65 @@ CatPaperSize = {
   'catPaperE',
   'catPaperF',
   'catPaperUser'
-}
+]
 
-CATPPRTreeItemType = {
+CATPPRTreeItemType = [
   'CATProcessList',
   'CATProductList',
   'CATResourcesList'
 
-}
+]
 
-CatPrintColor = {
+CatPrintColor = [
   'catColorTrueColor',
   'catColorGreyScale',
   'catColorMonochrome'
 
-}
+]
 
-CatPrinterDirState = {
+CatPrinterDirState = [
 
   'CatPrinterDirFree',
   'CatPrinterDirProtect'
 
-}
+]
 
-CatPrintLineCap = {
+CatPrintLineCap = [
   'catPrintFlat',
   'catPrintSquare',
   'catPrintRound'
-}
+]
 
-CatPrintLineSpecification  = {
+CatPrintLineSpecification  = [
   'catPrintAbsolute',
   'catPrintScaled',
   'catPrintNoThickness'
-}
+]
 
-CatPrintQuality = {
+CatPrintQuality = [
   'catPrintQualityDraft',
   'catPrintQualityLow',
   'catPrintQualityMedium',
   'catPrintQualityHigh',
   'catPrintQualityCustom'
-}
+]
 
-CatPrintRenderingMode = {
+CatPrintRenderingMode = [
   'catPrintRenderingModeDefault',
   'catPrintRenderingModeWireframe',
   'catPrintRenderingModeHiddenLineRemoval',
   'catPrintRenderingModeShadingWithTriangles',
   'catPrintRenderingModeDynamicHiddenLineRemoval',
   'catPrintRenderingModeOnScreen'
-}
+]
 
-CatProjectionMode = {
+CatProjectionMode = [
   'catProjectionConic',
   'catProjectionCylindric',
   'catProjectionUndefined'
-}
+]
 
-CatRenderingMode = {
+CatRenderingMode = [
   'catRenderShading',
   'catRenderShadingWithEdges',
   'catRenderWireFrame',
@@ -200,15 +200,15 @@ CatRenderingMode = {
   'catRenderMaterialWithHalfSmoothEdgeWithoutVertices',
   'catRenderMaterialWithHalfSmoothEdgeWithoutVerticesWithOutlines',
   'catRenderCustomRenderingMode'
-}
+]
 
-CatScriptCommand = {
+CatScriptCommand = [
   'CatScriptCommandDefault',
   'CatScriptCommandStop',
   'CatScriptCommandStart'
-}
+]
 
-CATSelectionFilter = {
+CATSelectionFilter = [
   'ZeroDim',
   'MonoDim',
   'MonoDimInfinite',
@@ -220,54 +220,54 @@ CATSelectionFilter = {
   'PlanarBiDimInfinite',
   'CylindricalBiDim',
   'TriDim'
-}
+]
 
-CatSpecsAndGeomWindowLayout = {
+CatSpecsAndGeomWindowLayout = [
   'catWindowSpecsOnly',
   'catWindowGeomOnly',
   'catWindowSpecsAndGeom'
-}
+]
 
-CatSpecsLayout = {
+CatSpecsLayout = [
   'catSpecsViewerHorizontalIndented',
   'catSpecsViewerHorizontalUp',
   'catSpecsViewerHorizontalCentered',
   'catSpecsViewerVerticalCentered',
   'catSpecsViewerHorizontalRelational',
   'catSpecsViewerVerticalRelational'
-}
+]
 
-CatVisLayerType = {
+CatVisLayerType = [
   'catVisLayerBasic',
   'catVisLayerNone'
-}
+]
 
-CatVisPropertyPick = {
+CatVisPropertyPick = [
   'catVisPropertyPickAttr',
   'catVisPropertyNoPickAttr'
-}
+]
 
-CatVisPropertyShow = {
+CatVisPropertyShow = [
   'catVisPropertyShowAttr',
   'catVisPropertyNoShowAttr'
-}
+]
 
-CatVisPropertyStatus = {
+CatVisPropertyStatus = [
   'catVisPropertyDefined',
   'catVisPropertyUnDefined'
-}
+]
 
-CatVisPropertyType = {
+CatVisPropertyType = [
   'catVisPropertyLineType',
   'catVisPropertyWidth',
   'catVisPropertyColor',
   'catVisPropertyOpacity',
   'catVisPropertySymbol',
   'catVisPropertyAll'
-}
+]
 
-CatWindowState = {
+CatWindowState = [
   'catWindowStateMaximized',
   'catWindowStateMinimized',
   'catWindowStateNormal'
-}
+]

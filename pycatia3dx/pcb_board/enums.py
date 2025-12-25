@@ -1,4 +1,4 @@
-CatElectronicType = {
+CatElectronicType = [
     'catBOARD',
     'catPANEL',
     'catCOMPONENT',
@@ -7,4 +7,4 @@ CatElectronicType = {
     'catPCBPATTERN',
     'catFLEXIBLEBOARD',
     'catFLEXIBLEAREA',
-}
+]

@@ -1,94 +1,94 @@
-CatCDHoleMode = {
+CatCDHoleMode = [
     'catCDModeNoCountersunkDiameter',
     'catCDModeCountersunkDiameter',
-}
-CatChamferMode = {
+]
+CatChamferMode = [
     'catTwoLengthChamfer',
     'catLengthAngleChamfer',
-}
-CatChamferOrientation = {
+]
+CatChamferOrientation = [
     'catNoReverseChamfer',
     'catReverseChamfer',
-}
-CatChamferPropagation = {
+]
+CatChamferPropagation = [
     'catTangencyChamfer',
     'catMinimalChamfer',
-}
-CatCircularPatternParameters = {
+]
+CatCircularPatternParameters = [
     'catInstancesandAngularSpacing',
     'catCompleteCrown',
     'catUnequalAngularSpacing',
-}
-CatCSHoleMode = {
+]
+CatCSHoleMode = [
     'catCSModeDepthAngle',
     'catCSModeDepthDiameter',
     'catCSModeAngleDiameter',
-}
-CatDraftMode = {
+]
+CatDraftMode = [
     'catStandardDraftMode',
     'catReflectKeepFaceDraftMode',
     'catReflectKeepEdgeDraftMode',
-}
-CatDraftMultiselectionMode = {
+]
+CatDraftMultiselectionMode = [
     'catNoneDraftMultiselectionMode',
     'catDraftMultiselectionByNeutralMode',
-}
-CatDraftNeutralPropagationMode = {
+]
+CatDraftNeutralPropagationMode = [
     'catNoneDraftNeutralPropagationMode',
     'catSmoothDraftNeutralPropagationMode',
-}
-CatFilletBitangencyType = {
+]
+CatFilletBitangencyType = [
     'catSphereBitangencyType',
     'catCircleBitangencyType',
-}
-CatFilletBoundaryRelimitation = {
+]
+CatFilletBoundaryRelimitation = [
     'catAutomaticFilletBoundaryRelimitation',
     'catUVFilletBoundaryRelimitation',
     'catConnectFilletBoundaryRelimitation',
     'catMinimumFilletBoundaryRelimitation',
     'catMaximumFilletBoundaryRelimitation',
-}
-CatFilletEdgePropagation = {
+]
+CatFilletEdgePropagation = [
     'catMinimalFilletEdgePropagation',
     'catTangencyFilletEdgePropagation',
-}
-CatFilletTrimSupport = {
+]
+CatFilletTrimSupport = [
     'catTrimFilletSupport',
     'catNoTrimFilletSupport',
-}
-CatFilletVariation = {
+]
+CatFilletVariation = [
     'catLinearFilletVariation',
     'catCubicFilletVariation',
-}
-CatHoleAnchorMode = {
+]
+CatHoleAnchorMode = [
     'catExtremPointHoleAnchor',
     'catMiddlePointHoleAnchor',
-}
-CatHoleBottomType = {
+]
+CatHoleBottomType = [
     'catFlatHoleBottom',
     'catVHoleBottom',
     'catTrimmedHoleBottom',
-}
-CatHoleThreadingMode = {
+]
+CatHoleThreadingMode = [
     'catThreadedHoleThreading',
     'catSmoothHoleThreading',
-}
-CatHoleThreadSide = {
+]
+CatHoleThreadSide = [
     'catRightThreadSide',
     'catLeftThreadSide',
-}
-CatHoleThreadStandard = {
+]
+CatHoleThreadStandard = [
     'catHoleMetricThinPitch',
     'catHoleMetricThickPitch',
-}
-CatHoleType = {
+]
+CatHoleType = [
     'catSimpleHole',
     'catTaperedHole',
     'catCounterboredHole',
     'catCountersunkHole',
     'catCounterdrilledHole',
-}
-CatLimitMode = {
+]
+CatLimitMode = [
     'catOffsetLimit',
     'catUpToNextLimit',
     'catUpToLastLimit',
@@ -96,45 +96,45 @@ CatLimitMode = {
     'catUpToSurfaceLimit',
     'catUpThruNextLimit',
     'catUntilLimit',
-}
-CatMergeMode = {
+]
+CatMergeMode = [
     'catMergeOff',
     'catMergeOn',
-}
-CatPartitionLimitType = {
+]
+CatPartitionLimitType = [
     'CatPartitionLimit_None',
     'CatPartitionLimit_Infinite',
     'CatPartitionLimit_UpToNext',
-}
-CatPrismExtrusionDirection = {
+]
+CatPrismExtrusionDirection = [
     'catNormalToSketchDirection',
     'catNotNormalToSketchDirection',
-}
-CatPrismOrientation = {
+]
+CatPrismOrientation = [
     'catRegularOrientation',
     'catInverseOrientation',
-}
-CatRectangularPatternParameters = {
+]
+CatRectangularPatternParameters = [
     'catInstancesandSpacing',
     'catUnequalSpacing',
-}
-CatSewingIntersectionMode = {
+]
+CatSewingIntersectionMode = [
     'catSewingNoIntersect',
     'catSewingIntersect',
-}
-CatSplitSide = {
+]
+CatSplitSide = [
     'catPositiveSide',
     'catNegativeSide',
-}
-CatThreadPolarity = {
+]
+CatThreadPolarity = [
     'catThread',
     'catTap',
-}
-CatThreadSide = {
+]
+CatThreadSide = [
     'catRightSide',
     'catLeftSide',
-}
-CatThreadStandard = {
+]
+CatThreadStandard = [
     'catMetricThinPitch',
     'catMetricThickPitch',
-}
+]

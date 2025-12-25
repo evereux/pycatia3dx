@@ -1,23 +1,23 @@
-CtmBaseAxisOrientation = {
+CtmBaseAxisOrientation = [
     'AXIS_RELATIVE_VERTICAL',
     'AXIS_RELATIVE',
     'AXIS_RELATIVE_BISECTOR',
     'AXIS_ABSOLUTE',
-}
-CtmCurveType = {
+]
+CtmCurveType = [
     'CURVETYPE_UNKNOWN',
     'RES_MFGCELL',
     'PROCESS_TRAJECTORY',
     'RES_BEADFASTENER',
-}
-CtmRakeLocation = {
+]
+CtmRakeLocation = [
     'FLARESTART',
     'FLAREEND',
-}
-DNBTrajectoryType = {
+]
+DNBTrajectoryType = [
     'WELD',
     'SEALANT',
     'ADHESIVE',
     'GENERAL',
     'UNDEFINED',
-}
+]

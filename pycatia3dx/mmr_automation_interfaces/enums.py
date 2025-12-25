@@ -1,83 +1,83 @@
-CATAxisSystemAxisType = {
+CATAxisSystemAxisType = [
   'catAxisSystemAxisSameDirection',
   'catAxisSystemAxisByCoordinates',
   'catAxisSystemAxisOppositeDirection'
-}
+]
 
-CATAxisSystemMainType = {
+CATAxisSystemMainType = [
   'catAxisSystemStandard',
   'catAxisSystemAxisRotation',
   'catAxisSystemEulerAngles',
   'catAxisSystemExplicit'
-}
+]
 
-CATAxisSystemOriginType = {
+CATAxisSystemOriginType = [
   'catAxisSystemOriginByPoint',
   'catAxisSystemOriginByCoordinates'
-}
+]
 
-CatConstraintAngleSector = {
+CatConstraintAngleSector = [
   'catCstAngleSector0',
   'catCstAngleSector1',
   'catCstAngleSector2',
   'catCstAngleSector3'
-}
+]
 
-CatConstraintDistConfig = {
+CatConstraintDistConfig = [
   'catCstDCUnspec',
   'catCstDCParallel',
   'catCstDCParallelSameOrient',
   'catCstDCParallelOppOrient'
 
-}
+]
 
-CatConstraintDistDirection = {
+CatConstraintDistDirection = [
   'catCstDistDirectionNone',
   'catCstDistDirection1',
   'catCstDistDirection2',
   'catCstDistDirection3'
-}
+]
 
-CatConstraintMode = {
+CatConstraintMode = [
   'catCstModeDrivingDimension',
   'catCstModeDrivenDimension'
-}
+]
 
-CatConstraintOrientation = {
+CatConstraintOrientation = [
   'catCstOrientSame',
   'catCstOrientOpposite',
   'catCstOrientUndefined'
-}
+]
 
-CatConstraintRefAxis = {
+CatConstraintRefAxis = [
   'catCstRefAxisX',
   'catCstRefAxisY',
   'catCstRefAxisZ'
-}
+]
 
-CatConstraintRefType = {
+CatConstraintRefType = [
   'catCstRefTypeRelative',
   'catCstRefTypeFixInSpace'
-}
+]
 
-CatConstraintSide = {
+CatConstraintSide = [
   'catCstSidePositive',
   'catCstSideNegative',
   'catCstSideSameAsValue',
   'catCstSideOppositeToValue',
   'catCstSideUndefined'
-}
+]
 
-CatConstraintStatus = {
+CatConstraintStatus = [
   'catCstStatusOK',
   'catCstStatusKOStronglyNotSatisfied',
   'catCstStatusKOWrongOrientOrSide',
   'catCstStatusKOWrongValue',
   'catCstStatusKOWrongGeomEltType',
   'catCstStatusKOBroken'
-}
+]
 
-CatConstraintType = {
+CatConstraintType = [
   'catCstTypeReference',
   'catCstTypeDistance',
   'catCstTypeOn',
@@ -110,4 +110,4 @@ CatConstraintType = {
   'catCstTypeSdContinuity',
   'catCstTypeSdShape',
   'catCstTypeCurvilinearDistance'
-}
+]

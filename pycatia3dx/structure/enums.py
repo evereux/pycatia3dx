@@ -1,39 +1,39 @@
-CATStrCollarThrowOrientation = {
+CATStrCollarThrowOrientation = [
     'catStrCollarThrowOrientationInvert',
     'catStrCollarThrowOrientationNormal',
     'catStrCollarThrowOrientationCentered',
-}
-CATStrOpeningCreationMode = {
+]
+CATStrOpeningCreationMode = [
     'catStrOpeningUndefined',
     'catStrOpeningOutputProfile',
     'catStrOpening3DObject',
     'catStrOpeningStandard',
     'catStrOpeningPartDesign',
     'catStrOpeningSlot',
-}
-CATStrOpeningMode = {
+]
+CATStrOpeningMode = [
     'catStrOpeningModeUndefined',
     'catStrOpeningMode3DObject',
     'catStrOpeningModeOutputProfile',
     'catStrOpeningModeStandard',
-}
-CATStrOpeningSTDMode = {
+]
+CATStrOpeningSTDMode = [
     'catStrOpeningSTDUndefinedMode',
     'catStrOpeningSTDRoundMode',
     'catStrOpeningSTDRectMode',
     'catStrOpeningSTDOblongMode',
     'catStrOpeningSTDCatalogMode',
-}
-CATStrPanelMode = {
+]
+CATStrPanelMode = [
     'catStrPanelModeUndefined',
     'catStrPanelModeSurf',
-}
-CATStrPlateFaceName = {
+]
+CATStrPlateFaceName = [
     'catStrPlateFaceNameUndefined',
     'catStrPlateFaceBottom',
     'catStrPlateFaceTop',
-}
-CATStrProfileMode = {
+]
+CATStrProfileMode = [
     'catStrProfileModeUndefined',
     'catStrProfileModePtLength',
     'catStrProfileModePtLimit',
@@ -43,10 +43,10 @@ CATStrProfileMode = {
     'catStrProfileModeSurfSurf',
     'catStrProfileModeOnOpening',
     'catStrProfileModeOnLimits',
-}
-CATStrUseBracketPositionMode = {
+]
+CATStrUseBracketPositionMode = [
     'catStr3DAxisPositionMode',
     'catStrPlateStiffenerPositionMode',
     'catStrStiffenerStiffenerPositionMode',
     'catStrMultiLimitsPositionMode',
-}
+]

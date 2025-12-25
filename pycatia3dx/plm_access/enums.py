@@ -1,14 +1,14 @@
-SearchCondition = {
+SearchCondition = [
     'SearchCondition_AND',
     'SearchCondition_OR',
-}
-SearchMode = {
+]
+SearchMode = [
     'SearchMode_Easy',
     'SearchMode_Extended',
     'SearchMode_Expert',
     'SearchMode_Predefined',
-}
-SearchOperator = {
+]
+SearchOperator = [
     'SearchOperator_EQ',
     'SearchOperator_NOT_EQ',
     'SearchOperator_LIKE',
@@ -21,8 +21,8 @@ SearchOperator = {
     'SearchOperator_NOT_BETWEEN',
     'SearchOperator_NULL',
     'SearchOperator_NOT_NULL',
-}
-SearchSortOrder = {
+]
+SearchSortOrder = [
     'SearchSortOrder_Ascending',
     'SearchSortOrder_Descending',
-}
+]

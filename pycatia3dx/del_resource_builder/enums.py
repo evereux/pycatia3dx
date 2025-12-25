@@ -1,31 +1,31 @@
-AccuracyType = {
+AccuracyType = [
     'ACCURACY_TYPE_DISTANCE',
     'ACCURACY_TYPE_SPEED',
-}
-DELRscControllerDataContext = {
+]
+DELRscControllerDataContext = [
     'DELRscControllerDataContext_None',
     'DELRscControllerDataContext_Reference',
     'DELRscControllerDataContext_Instance',
-}
-DELRscControllerGenericProfilesType = {
+]
+DELRscControllerGenericProfilesType = [
     'DELRscControllerGenericProfilesType_Tool',
     'DELRscControllerGenericProfilesType_Motion',
     'DELRscControllerGenericProfilesType_Accuracy',
     'DELRscControllerGenericProfilesType_ObjectFrame',
-}
-DELRscJointType = {
+]
+DELRscJointType = [
     'DELRscJointType_Linear',
     'DELRscJointType_Angular',
-}
-DELRscMotionControllerType = {
+]
+DELRscMotionControllerType = [
     'DELRscMotionControllerType_Default',
     'DELRscMotionControllerType_Rail',
     'DELRscMotionControllerType_EndOfArm',
     'DELRscMotionControllerType_WorkpiecePositioner',
     'DELRscMotionControllerType_Arm',
     'DELRscMotionControllerType_FixedTool',
-}
-DELRscSimulationStatus = {
+]
+DELRscSimulationStatus = [
     'DELRscSimulationStatus_ArmSolutionGood',
     'DELRscSimulationStatus_DOFSoftErrorExceeded',
     'DELRscSimulationStatus_ArmTargetUnreachable',
@@ -34,14 +34,14 @@ DELRscSimulationStatus = {
     'DELRscSimulationStatus_ArmPostureInvalid',
     'DELRscSimulationStatus_ArmNoSolution',
     'DELRscSimulationStatus_ArmSolverError',
-}
-DELRscSimulationVisualizationUpdate = {
+]
+DELRscSimulationVisualizationUpdate = [
     'DELRscSimulationVisualizationUpdate_OFF',
     'DELRscSimulationVisualizationUpdate_ON',
-}
-MotionBasis = {
+]
+MotionBasis = [
     'MOTION_ABSOLUTE',
     'MOTION_PERCENT',
     'MOTION_TIME',
     'MOTION_SPEEDACCEL',
-}
+]

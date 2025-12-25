@@ -1,10 +1,10 @@
-CatBlankingMode = {
+CatBlankingMode = [
   'catBlankingInactive',
   'catBlankingActive',
   'catBlankingOnGeom'
-} 
+] 
 
-CatDftWeldFinishSymbol = {
+CatDftWeldFinishSymbol = [
   'catFinishWeldingNone',
   'catDftLetterCWelding',
   'catDftLetterFWelding',
@@ -17,14 +17,14 @@ CatDftWeldFinishSymbol = {
   'catDftLetterXWelding',
   'catDftEqualWelding',
   'catDftPerpendicularWelding'
-} 
+] 
 
-CatDftWeldingTail = {
+CatDftWeldingTail = [
   'catDftWeldingTailNO',
   'catDftWeldingTailYES'
-}
+]
 
-CatDimAnalyse = {
+CatDimAnalyse = [
   'catDimOnGenItems',
   'catUnUpdatableDim',
   'catFakeDim',
@@ -37,22 +37,22 @@ CatDimAnalyse = {
   'catIsolatedDim',
   'catDimOnHideGeom',
   'cat3DFeatureDim'
-} 
+] 
 
-CatDimDualDisplay = {
+CatDimDualDisplay = [
   'catDualNone',
   'catDualBellow',
   'catDualFractional',
   'catDualSideBySide'
-} 
+] 
 
-CatDimFake = {
+CatDimFake = [
   'catDimFakeNone',
   'catDimFakeNumValue',
   'catDimFakeText'
-} 
+] 
 
-CatDimFrame = {
+CatDimFrame = [
   'catFraNone',
   'catFraCircle',
   'catFraScoredCircle',
@@ -62,30 +62,30 @@ CatDimFrame = {
   'catFraOblong',
   'catFraRightFlag',
   'catFraRightTriangle'
-} 
+] 
 
 
-CatDimFramedElement = {
+CatDimFramedElement = [
   'catFraValue',
   'catFraValueTol',
   'catFraValueTolText'
-} 
+] 
 
-CatDimFramedGroup = {
+CatDimFramedGroup = [
   'catFraMain',
   'catFraDual',
   'catFraMainAndDual',
   'catFraBoth'
-} 
+] 
 
-CatDimLineGraphRep = {
+CatDimLineGraphRep = [
   'catDimLine1Part',
   'catDimLine2Parts',
   'catDimLineLeader1Part',
   'catDimLineLeader2Part'
-} 
+] 
 
-CatDimLineRep = {
+CatDimLineRep = [
   'catDimUndef',
   'catDimHoriz',
   'catDimVert',
@@ -94,9 +94,9 @@ CatDimLineRep = {
   'catDimTrueDim',
   'catDimParallel',
   'catDimOffset'
-} 
+] 
 
-CatDimMode = {
+CatDimMode = [
   'catDimClassical',
   'catDimCumulate',
   'catDimHalfDim',
@@ -104,30 +104,30 @@ CatDimMode = {
   'catDimStacked',
   'catDimCumulatesystem',
   'catDimHalfDimSystem'
-} 
+] 
 
-CatDimOrientation = {
+CatDimOrientation = [
   'catHorizontal',
   'catVertical',
   'catParallel',
   'catPerpandicular',
   'catAngle'
-} 
+] 
 
-CatDimReference = {
+CatDimReference = [
   'catScreen',
   'catView',
   'catDimLine'
-} 
+] 
 
-CatDimScore = {
+CatDimScore = [
   'catDimScoreNone',
   'catDimUnderScored',
   'catDimScored',
   'catCATDrwDimOverScored'
-} 
+] 
 
-CatDimSymbols = {
+CatDimSymbols = [
   'catDimSymbNone',
   'catDimSymbOpenArrow',
   'catDimSymbClosedArrow',
@@ -142,9 +142,9 @@ CatDimSymbols = {
   'catDimSymbFilledTriangle',
   'catDimSymbCross',
   'catDimSymbXCross'
-} 
+] 
 
-CatDimType = {
+CatDimType = [
   'catDimDistance',
   'catDimDistanceOffset',
   'catDimLength',
@@ -166,15 +166,15 @@ CatDimType = {
   'catDimDiameterTorus',
   'catDimRadiusTorus',
   'catDimDistanceMin'
-} 
+] 
 
-CatJustification = {
+CatJustification = [
   'catLeft',
   'catCenter',
   'catRight'
-} 
+] 
 
-CatSymbolType = {
+CatSymbolType = [
   'catNotUsed',
   'catCross',
   'catPlus',
@@ -207,9 +207,9 @@ CatSymbolType = {
   'catManipulatorTriangle',
   'catDoubleOpenArrow',
   'catWave'
-} 
+] 
 
-CatTableBorderType = {
+CatTableBorderType = [
   'CatTableNone',
   'CatTableLeft',
   'CatTableTop',
@@ -222,20 +222,20 @@ CatTableBorderType = {
   'CatTableOutLine',
   'CatTableInside',
   'CatTableCross'
-} 
+] 
 
-CatTableComputeMode = {
+CatTableComputeMode = [
   'CatTableComputeOFF',
   'CatTableComputeON'
-} 
+] 
 
-CatTableInvertMode = {
+CatTableInvertMode = [
   'CatInvertColumn',
   'CatInvertRow',
   'CatInvertAll'
-} 
+] 
 
-CatTablePosition = {
+CatTablePosition = [
   'CatTableTopLeft',
   'CatTableMiddleLeft',
   'CatTableBottomLeft',
@@ -245,9 +245,9 @@ CatTablePosition = {
   'CatTableTopRight',
   'CatTableMiddleRight',
   'CatTableBottomRight'
-} 
+] 
 
-CatTextAnchorPosition = {
+CatTextAnchorPosition = [
   'catUnsusedValue1',
   'catTopLeft',
   'catMiddleLeft',
@@ -268,17 +268,17 @@ CatTextAnchorPosition = {
   'catCapRight',
   'catHalfRight',
   'catBaseRight'
-} 
+] 
 
-CatTextFlipMode = {
+CatTextFlipMode = [
   'catTextNoFlip',
   'catTextHorizontalFlip',
   'catTextVerticalFlip',
   'catTextHorizontalAndVerticalFlip',
   'catTextAutoFlip'
-} 
+] 
 
-CatTextFrameType = {
+CatTextFrameType = [
   'catNone',
   'catRectangle',
   'catSquare',
@@ -292,9 +292,9 @@ CatTextFrameType = {
   'catOblong',
   'catEllipse',
   'catCustom'
-} 
+] 
 
-CatTextProperty = {
+CatTextProperty = [
   'catBold',
   'catItalic',
   'catUnderline',
@@ -313,18 +313,18 @@ CatTextProperty = {
   'catCharSpacing',
   'catKerning'
 
-} 
+] 
 
-CatWeldAdditionalSymbol = {
+CatWeldAdditionalSymbol = [
   'catNoneAddWelding',
   'catFlatWelding',
   'catConvexWelding',
   'catConcaveWelding',
   'catFlushWelding',
   'catSmoothWelding'
-} 
+] 
 
-CatWelding = {
+CatWelding = [
   'catNoneWelding',
   'catFirstWelding',
   'catSecondWelding',
@@ -332,9 +332,9 @@ CatWelding = {
   'catSecondWeldingBis',
   'catFirstWeldingTer',
   'catSecondWeldingTer'
-} 
+] 
 
-CatWeldingField = {
+CatWeldingField = [
   'catWeldingNone',
   'catWeldingFieldOne',
   'catWeldingFieldTwo',
@@ -351,14 +351,14 @@ CatWeldingField = {
   'catWeldingFieldThirteen',
   'catWeldingFieldFourteen',
   'catWeldingFieldFifteen'
-} 
+] 
 
-CatWeldingSide = {
+CatWeldingSide = [
   'catWeldingUp',
   'catWeldingDown'
-} 
+] 
 
-CatWeldingSymbol = {
+CatWeldingSymbol = [
   'catNoneMainWelding',
   'catSquareWelding',
   'catVGrooveWelding',
@@ -394,4 +394,4 @@ CatWeldingSymbol = {
   'catTransparencyWelding',
   'catOverlayWelding',
   'catEdgeCommonWelding'
-} 
+] 

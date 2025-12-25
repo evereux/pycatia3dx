@@ -1,20 +1,20 @@
-APPROACH_RETRACT = {
+APPROACH_RETRACT = [
     'UndefinedAppRet',
     'First',
     'Last',
     'Retract',
     'Approach',
     'ApproachRetract',
-}
-STROKE_SIDE = {
+]
+STROKE_SIDE = [
     'Start',
     'End',
     'Lefft',
     'Right',
-}
-SurfaceOperationPosition = {
+]
+SurfaceOperationPosition = [
     'BEFORE',
     'AFTER',
     'BEGIN',
     'ENDD',
-}
+]

@@ -1,4 +1,4 @@
-SimAnimationTypes = {
+SimAnimationTypes = [
     'SimUndefAnimation',
     'SimScaleFactor',
     'SimTimeHistory',
@@ -9,16 +9,16 @@ SimAnimationTypes = {
     'SimStreamline',
     'SimEventSeries',
     'SimHarmonic',
-}
-SimAnimPlaybackTypes = {
+]
+SimAnimPlaybackTypes = [
     'SimPlaybackFramesPerSec',
     'SimPlaybackTotalTime',
-}
-SimAveraging = {
+]
+SimAveraging = [
     'SimSectionBoundaries',
     'SimNoBoundaries',
-}
-SimAxisType = {
+]
+SimAxisType = [
     'SimNoAxis',
     'SimGlobal',
     'SimResultsCsys',
@@ -26,50 +26,50 @@ SimAxisType = {
     'SimModelAxis',
     'SimNormalTangential',
     'SimAxialTransverse',
-}
-SimCalculationBetweenSupports = {
+]
+SimCalculationBetweenSupports = [
     'SimDiffSupport1AndSupport2',
     'SimDiffSupport2AndSupport1',
     'SimSumSupport1AndSupport2',
-}
-SimColumnSeparator = {
+]
+SimColumnSeparator = [
     'SimComma',
     'SimSemicolon',
-}
-SimComplexValues = {
+]
+SimComplexValues = [
     'SimValueAtAngle',
     'SimEnvelopeMaxAbsolute',
     'SimEnvelopeMax',
     'SimEnvelopeMin',
     'SimPhaseAngle',
-}
-SimConfiguration = {
+]
+SimConfiguration = [
     'SimVPFourSquare',
     'SimVPTriLeft',
     'SimVPTriBottom',
     'SimVPTwoRow',
     'SimVPTwoColumn',
     'SimVPSingle',
-}
-SimFieldPlotTypes = {
+]
+SimFieldPlotTypes = [
     'SimContour',
     'SimSymbol',
     'SimIsoContour',
     'SimColorCode',
-}
-SimFileType = {
+]
+SimFileType = [
     'SimCsv',
     'SimXlsx',
     'SimXls',
-}
-SimLocation = {
+]
+SimLocation = [
     'SimNodes',
     'SimCentroids',
     'SimFaceElements',
     'SimIntegrationPoints',
     'SimElementNodes',
-}
-SimNodeSymbolType = {
+]
+SimNodeSymbolType = [
     'SimNodeSymbolSphere',
     'SimNodeSymbolCross',
     'SimNodeSymbolPlus',
@@ -82,14 +82,14 @@ SimNodeSymbolType = {
     'SimNodeSymbolSmallDot',
     'SimNodeSymbolFullCircle2',
     'SimNodeSymbolFullSquare2',
-}
-SimProcessingTypes = {
+]
+SimProcessingTypes = [
     'SimScalars',
     'SimQuantity',
     'SimTensors',
     'SimVectors',
-}
-SimQuantityComponentEnum = {
+]
+SimQuantityComponentEnum = [
     'SimVector_Component_1',
     'SimTensor_Component_11',
     'Sim4th_Order_Tensor_Component_1111',
@@ -132,8 +132,8 @@ SimQuantityComponentEnum = {
     'SimTensor_Maximum_InPlane_Principal',
     'SimTensor_Minimum_InPlane_Principal',
     'SimTensor_OutOfPlane_Principal',
-}
-SimQuantityInvariantEnum = {
+]
+SimQuantityInvariantEnum = [
     'SimFirstVariant',
     'SimThirdVariant',
     'SimMagnitude',
@@ -153,30 +153,30 @@ SimQuantityInvariantEnum = {
     'SimOrtho1',
     'SimOrtho2',
     'SimOrtho3',
-}
-SimRenderStyle = {
+]
+SimRenderStyle = [
     'SimRenderContour',
     'SimRenderShaded',
     'SimRenderWireframe',
-}
-SimResultsSource = {
+]
+SimResultsSource = [
     'SimFieldSourceResults',
     'SimFieldSourceDiagnostic',
     'SimFieldSourcePreLoad',
     'SimFieldSourceHistory',
     'SimFieldSourceCompute',
-}
-SimSamplingFilterTypes = {
+]
+SimSamplingFilterTypes = [
     'SimTimeInterval',
     'SimFrameInterval',
     'SimTotalFrames',
-}
-SimSamplingRateTypes = {
+]
+SimSamplingRateTypes = [
     'SimAllSelectedFrames',
     'SimRegularTimeInterval',
     'SimRegularFrameInterval',
-}
-SimSectionPointLocations = {
+]
+SimSectionPointLocations = [
     'SimLocationUndefined',
     'SimLocationNone',
     'SimFirstSectionPoint',
@@ -190,13 +190,13 @@ SimSectionPointLocations = {
     'SimAbsMaxOverSectionPoints',
     'SimMinOverSectionPoints',
     'SimSectionRatio',
-}
-SimSectionPointLocation = {
+]
+SimSectionPointLocation = [
     'SimSectionTop',
     'SimSectionTopBottom',
     'SimSectionBottom',
-}
-SimSelectionType = {
+]
+SimSelectionType = [
     'SimNoSelection',
     'SimDisplayGroups',
     'SimCutSurfaces',
@@ -207,54 +207,54 @@ SimSelectionType = {
     'SimRestraints',
     'SimLoads',
     'SimConnectorSections',
-}
-SimShellStyle = {
+]
+SimShellStyle = [
     'SimShellNone',
     'SimThick',
     'SimOffset',
     'SimElevation',
-}
-SimStrainGaugePositionType = {
+]
+SimStrainGaugePositionType = [
     'SimPositionPoint',
     'SimPositionNode',
     'SimPositionElementFace',
-}
-SimStrainGaugeVariableType = {
+]
+SimStrainGaugeVariableType = [
     'SimStress',
     'SimStrainFromStrain',
     'SimStrainFromDisplacement',
-}
-SimSymbolicFrameRangesEnum = {
+]
+SimSymbolicFrameRangesEnum = [
     'SimUndefined',
     'SimAllFrames',
     'SimLastFrameOfEachStep',
     'SimAllFramesInStep',
     'SimTimeBasedFrames',
     'SimFrequencyFrames',
-}
-SimTargetSpeedTypes = {
+]
+SimTargetSpeedTypes = [
     'SimTargetSpeedMax',
     'SimTargetSpeedFramesPerSec',
     'SimTargetSpeedDuration',
-}
-SimThicknessDataSourceType = {
+]
+SimThicknessDataSourceType = [
     'SimThickSourceSection',
     'SimThickSourceField',
-}
-SimThresholdType = {
+]
+SimThresholdType = [
     'SimThresholdNone',
     'SimThresholdLowerLimit',
     'SimThresholdUpperLimit',
     'SimThresholdPercentLowerLimit',
     'SimThresholdPercentUpperLimit',
-}
-SimTransformTypes = {
+]
+SimTransformTypes = [
     'SimNone',
     'SimNodal',
     'SimUserDefined',
     'SimUserModelAxis',
-}
-SimValuePerSupportOption = {
+]
+SimValuePerSupportOption = [
     'SimValuePerSupportNone',
     'SimValuePerSupportMax',
     'SimValuePerSupportMin',
@@ -262,9 +262,9 @@ SimValuePerSupportOption = {
     'SimValuePerSupportAverage',
     'SimValuePerSupportSum',
     'SimValuePerSupportLast',
-}
-SimVisibleEdges = {
+]
+SimVisibleEdges = [
     'SimOutline',
     'SimMesh',
     'SimVisibleEdgesNone',
-}
+]

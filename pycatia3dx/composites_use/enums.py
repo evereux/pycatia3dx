@@ -1,4 +1,4 @@
-CATCompositesTypeEnum = {
+CATCompositesTypeEnum = [
     'Unknown',
     'Stacking',
     'PlyGroup',
@@ -7,4 +7,4 @@ CATCompositesTypeEnum = {
     'Ply',
     'Core',
     'CutPiece',
-}
+]

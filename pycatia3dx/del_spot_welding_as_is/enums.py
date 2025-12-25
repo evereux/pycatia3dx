@@ -1,30 +1,30 @@
-DELSpotAccuracyProfileAndAccelerationMoves = {
+DELSpotAccuracyProfileAndAccelerationMoves = [
     'AccuracyProfilePressureStartMove',
     'AccuracyProfilePressureMove',
     'AccuracyProfilePressureEndMove',
     'AccuracyProfileBackupMove',
-}
-DELSpotMovingTipClearanceMoves = {
+]
+DELSpotMovingTipClearanceMoves = [
     'MovingTipApproachMove',
     'MovingTipPressureStartMove',
     'MovingTipPressureEndMove',
-}
-DELSpotProfileApproachDir = {
+]
+DELSpotProfileApproachDir = [
     'X_Axis',
     'Y_Axis',
     'Z_Axis',
     'Neg_X_Axis',
     'Neg_Y_Axis',
     'Neg_Z_Axis',
-}
-DELSpotProfileMoves = {
+]
+DELSpotProfileMoves = [
     'ApproachMove',
     'PressureStartMove',
     'PressureEndMove',
     'BackupMove',
-}
-DELSpotStationaryTipClearanceMoves = {
+]
+DELSpotStationaryTipClearanceMoves = [
     'StationaryTipApproachAndBackupMove',
     'StationaryTipPressureStartMove',
     'StationaryTipPressureEndMove',
-}
+]

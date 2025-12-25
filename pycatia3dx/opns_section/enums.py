@@ -1,19 +1,19 @@
-CatSectionBehavior = {
+CatSectionBehavior = [
     'catSectionBehaviorAutomatic',
     'catSectionBehaviorFreeze',
     'catSectionBehaviorManual',
-}
-CATSectioningMode = {
+]
+CATSectioningMode = [
     'CatSectionCrossView',
     'CatSectionCutView',
-}
-CATSectioningPlaneVisuMode = {
+]
+CATSectioningPlaneVisuMode = [
     'CatSectionContourAndPlane',
     'CatSectionOnlyContour',
     'CatSectionContourAndGridPlane',
-}
-CatSectionType = {
+]
+CatSectionType = [
     'catSectionTypePlane',
     'catSectionTypeSlice',
     'catSectionTypeBox',
-}
+]

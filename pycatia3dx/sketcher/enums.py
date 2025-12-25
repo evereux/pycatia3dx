@@ -1,4 +1,4 @@
-CatGeometricType = {
+CatGeometricType = [
   'catGeoTypeUnknown',
   'catGeoTypeAxis2D',
   'catGeoTypePoint2D',
@@ -12,4 +12,4 @@ CatGeometricType = {
   'catGeoTypePoint',
   'catGeoTypeLine',
   'catGeoTypePlane'
-}
+]

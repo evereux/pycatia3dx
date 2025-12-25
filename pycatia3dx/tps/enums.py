@@ -1,5 +1,5 @@
-CatAnnotationSetType = {
+CatAnnotationSetType = [
     'catAnnotationSetStandard',
     'catAnnotationSetLight',
     'catAnnotationSetResult',
-}
+]

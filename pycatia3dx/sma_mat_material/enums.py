@@ -1,39 +1,39 @@
-SimAcousticAbsorptionMaterialTableColumn = {
+SimAcousticAbsorptionMaterialTableColumn = [
     'SimAcousticAbsorptionMagnitude',
     'SimAcousticAbsorptionPhase',
     'SimAcousticAbsorptionFrequency',
-}
-SimBulkModulusBulkModulusType = {
+]
+SimBulkModulusBulkModulusType = [
     'SimBulkModulusBulk_Modulus',
     'SimBulkModulusComplex_Bulk_Modulus',
-}
-SimBulkModulusMaterialTableColumn = {
+]
+SimBulkModulusMaterialTableColumn = [
     'SimBulkModulusRealPart',
     'SimBulkModulusTemperature',
     'SimBulkModulusComplexRealPart',
     'SimBulkModulusImaginaryPart',
     'SimBulkModulusFrequency',
-}
-SimCastIronPlasticityCompressionHardeningMaterialTableColumn = {
+]
+SimCastIronPlasticityCompressionHardeningMaterialTableColumn = [
     'SimCastIronPlasticitySigmaC',
     'SimCastIronPlasticityEpsilonC',
     'SimCastIronPlasticityTemperatureC',
-}
-SimCastIronPlasticityPlasticityMaterialTableColumn = {
+]
+SimCastIronPlasticityPlasticityMaterialTableColumn = [
     'SimCastIronPlasticityPlasticPoissonsRatio',
     'SimCastIronPlasticityPlasticTemperature',
-}
-SimCastIronPlasticityTensionHardeningMaterialTableColumn = {
+]
+SimCastIronPlasticityTensionHardeningMaterialTableColumn = [
     'SimCastIronPlasticitySigmaT',
     'SimCastIronPlasticityEpsilonT',
     'SimCastIronPlasticityTemperatureT',
-}
-SimConductivityConductivityType = {
+]
+SimConductivityConductivityType = [
     'SimConductivityIsotropicConductivity',
     'SimConductivityOrthotropicConductivity',
     'SimConductivityAnisotropicConductivity',
-}
-SimConductivityMaterialTableColumn = {
+]
+SimConductivityMaterialTableColumn = [
     'SimConductivityThermalConductivity',
     'SimConductivityK1',
     'SimConductivityK2',
@@ -45,16 +45,16 @@ SimConductivityMaterialTableColumn = {
     'SimConductivityK23',
     'SimConductivityK33',
     'SimConductivityTemperature',
-}
-SimDamageEvolutionCategory = {
+]
+SimDamageEvolutionCategory = [
     'SimDamageEvolutionDisplacement',
     'SimDamageEvolutionEnergy',
-}
-SimDamageEvolutionDegradation = {
+]
+SimDamageEvolutionDegradation = [
     'SimDamageEvolutionMaximum',
     'SimDamageEvolutionMultiplicative',
-}
-SimDamageEvolutionMaterialTableColumn = {
+]
+SimDamageEvolutionMaterialTableColumn = [
     'SimDamageEvolutionLongitudinalTensileFractureEnergy',
     'SimDamageEvolutionLongitudinalCompressiveFractureEnergy',
     'SimDamageEvolutionTransverseTensileFractureEnergy',
@@ -65,41 +65,41 @@ SimDamageEvolutionMaterialTableColumn = {
     'SimDamageEvolutionDisplacementTabular',
     'SimDamageEvolutionFractureEnergy',
     'SimDamageEvolutionTemperature',
-}
-SimDamageEvolutionSoftening = {
+]
+SimDamageEvolutionSoftening = [
     'SimDamageEvolutionLinear',
     'SimDamageEvolutionExponential',
     'SimDamageEvolutionTabular',
-}
-SimDamageStabilizationMaterialTableColumn = {
+]
+SimDamageStabilizationMaterialTableColumn = [
     'SimDamageStabilizationViscosityCoefficientLongitudinalTensileDirection',
     'SimDamageStabilizationViscosityCoefficientLongitudinalCompressiveDirection',
     'SimDamageStabilizationViscosityCoefficientTransverseTensileDirection',
     'SimDamageStabilizationViscosityCoefficientTransverseCompressiveDirection',
-}
-SimDensityMaterialTableColumn = {
+]
+SimDensityMaterialTableColumn = [
     'SimDensityDensity',
     'SimDensityTemperature',
-}
-SimDepvarMaterialTableColumn = {
+]
+SimDepvarMaterialTableColumn = [
     'SimDepvarOutputVariableKey',
     'SimDepvarOutputVariableDescription',
-}
-SimDuctileDamageMaterialTableColumn = {
+]
+SimDuctileDamageMaterialTableColumn = [
     'SimDuctileDamageFractureStrain',
     'SimDuctileDamageStressTriaxiality',
     'SimDuctileDamageStrainRate',
     'SimDuctileDamageTemperature',
-}
-SimElasticElasticType = {
+]
+SimElasticElasticType = [
     'SimElasticIsotropic',
     'SimElasticOrthotropic',
     'SimElasticEngineeringConstants',
     'SimElasticLamina',
     'SimElasticAnisotropic',
     'SimElasticTransverselyIsotropic',
-}
-SimElasticMaterialTableColumn = {
+]
+SimElasticMaterialTableColumn = [
     'SimElasticYoungsModulus',
     'SimElasticPoissonsRatio',
     'SimElasticD1111',
@@ -138,33 +138,33 @@ SimElasticMaterialTableColumn = {
     'SimElasticNormalPoissonsRatio',
     'SimElasticParallelShearModulus',
     'SimElasticTemperature',
-}
-SimElasticModuliTimeScaleType = {
+]
+SimElasticModuliTimeScaleType = [
     'SimElasticLongTerm',
     'SimElasticInstantaneous',
-}
-SimElongationMaterialTableColumn = {
+]
+SimElongationMaterialTableColumn = [
     'SimElongationElongationAtFracture',
     'SimElongationTemperature',
-}
-SimEOSEOSType = {
+]
+SimEOSEOSType = [
     'SimEOSIdealGas',
     'SimEOSJWL',
     'SimEOSUsUp',
     'SimEOSTabular',
-}
-SimEOSMaterialTableColumn = {
+]
+SimEOSMaterialTableColumn = [
     'SimEOSf1',
     'SimEOSf2',
     'SimEOSVolumetricStrain',
-}
-SimExpansionExpansionType = {
+]
+SimExpansionExpansionType = [
     'SimExpansionIsotropic',
     'SimExpansionAnisotropic',
     'SimExpansionOrthotropic',
     'SimExpansionTransverselyIsotropic',
-}
-SimExpansionMaterialTableColumn = {
+]
+SimExpansionMaterialTableColumn = [
     'SimExpansionAlpha',
     'SimExpansionAlpha11',
     'SimExpansionAlpha22',
@@ -175,16 +175,16 @@ SimExpansionMaterialTableColumn = {
     'SimExpansionParallelExpansionCoeff',
     'SimExpansionNormalExpansionCoeff',
     'SimExpansionTemperature',
-}
-SimFailStrainMaterialTableColumn = {
+]
+SimFailStrainMaterialTableColumn = [
     'SimFailStrainTensileStrainFiber',
     'SimFailStrainCompressiveStrainFiber',
     'SimFailStrainTensileStrainFiberTransverse',
     'SimFailStrainCompressiveStrainFiberTransverse',
     'SimFailStrainShearStrain',
     'SimFailStrainTemperature',
-}
-SimFailStressMaterialTableColumn = {
+]
+SimFailStressMaterialTableColumn = [
     'SimFailStressTensileStressFiber',
     'SimFailStressCompressiveStressFiber',
     'SimFailStressTensileStressFiberTransverse',
@@ -193,12 +193,12 @@ SimFailStressMaterialTableColumn = {
     'SimFailStressCrossProductTermCoefficient',
     'SimFailStressEquibiaxialStressLimit',
     'SimFailStressTemperature',
-}
-SimFluidCapacityInput = {
+]
+SimFluidCapacityInput = [
     'SimFluidCapacityPolynomial',
     'SimFluidCapacityTabular',
-}
-SimFluidCapacityMaterialTableColumn = {
+]
+SimFluidCapacityMaterialTableColumn = [
     'SimFluidCapacityMolarHeat',
     'SimFluidCapacityMolarHeatA',
     'SimFluidCapacityMolarHeatB',
@@ -206,64 +206,64 @@ SimFluidCapacityMaterialTableColumn = {
     'SimFluidCapacityMolarHeatD',
     'SimFluidCapacityMolarHeatE',
     'SimFluidCapacityTemperature',
-}
-SimFluidCavityBulkModulusMaterialTableColumn = {
+]
+SimFluidCavityBulkModulusMaterialTableColumn = [
     'SimFluidCavityBulkModulusBulkModulus',
     'SimFluidCavityBulkModulusTemperature',
-}
-SimFluidCavityDensityMaterialTableColumn = {
+]
+SimFluidCavityDensityMaterialTableColumn = [
     'SimFluidCavityDensityConstant',
     'SimFluidCavityDensityTemperature',
-}
-SimFluidCavityExpansionMaterialTableColumn = {
+]
+SimFluidCavityExpansionMaterialTableColumn = [
     'SimFluidCavityExpansionCoefficient',
     'SimFluidCavityExpansionTemperature',
-}
-SimFluidMolecularWeightMaterialTableColumn = {
+]
+SimFluidMolecularWeightMaterialTableColumn = [
     'SimFluidMolecularWeightConstant',
-}
-SimGasketMembraneElasticMaterialTableColumn = {
+]
+SimGasketMembraneElasticMaterialTableColumn = [
     'SimGasketMembraneElasticYoungsModulus',
     'SimGasketMembraneElasticPoissonsRatio',
     'SimGasketMembraneElasticTemperature',
-}
-SimGasketThicknessBehaviorBehaviorType = {
+]
+SimGasketThicknessBehaviorBehaviorType = [
     'SimGasketThicknessBehaviorElasticPlastic',
     'SimGasketThicknessBehaviorDamage',
-}
-SimGasketThicknessBehaviorLoadingMaterialTableColumn = {
+]
+SimGasketThicknessBehaviorLoadingMaterialTableColumn = [
     'SimGasketThicknessBehaviorLoadPressure',
     'SimGasketThicknessBehaviorLoadClosure',
     'SimGasketThicknessBehaviorLoadTemperature',
-}
-SimGasketThicknessBehaviorUnloadingMaterialTableColumn = {
+]
+SimGasketThicknessBehaviorUnloadingMaterialTableColumn = [
     'SimGasketThicknessBehaviorUnloadPressure',
     'SimGasketThicknessBehaviorUnloadClosure',
     'SimGasketThicknessBehaviorUnloadPlasticClosure',
     'SimGasketThicknessBehaviorUnloadTemperature',
-}
-SimGasketTransverseShearElasticMaterialTableColumn = {
+]
+SimGasketTransverseShearElasticMaterialTableColumn = [
     'SimGasketTransverseShearElasticShearStiffness',
     'SimGasketTransverseShearElasticTemperature',
-}
-SimGasketTransverseShearElasticUnitType = {
+]
+SimGasketTransverseShearElasticUnitType = [
     'SimGasketTransverseShearElasticStress',
     'SimGasketTransverseShearElasticForce',
-}
-SimHashinDamageEvolutionCondition = {
+]
+SimHashinDamageEvolutionCondition = [
     'SimHashinDamageEvolutionEnergy',
-}
-SimHashinDamageEvolutionMaterialTableColumn = {
+]
+SimHashinDamageEvolutionMaterialTableColumn = [
     'SimHashinDamageEvolutionLongitudinalTensileFractureEnergy',
     'SimHashinDamageEvolutionLongitudinalCompressiveFractureEnergy',
     'SimHashinDamageEvolutionTransverseTensileFractureEnergy',
     'SimHashinDamageEvolutionTransverseCompressiveFractureEnergy',
     'SimHashinDamageEvolutionTemperature',
-}
-SimHashinDamageEvolutionSofteningResponse = {
+]
+SimHashinDamageEvolutionSofteningResponse = [
     'SimHashinDamageEvolutionLinear',
-}
-SimHashinDamageMaterialTableColumn = {
+]
+SimHashinDamageMaterialTableColumn = [
     'SimHashinDamageLongitudinalTensileStrength',
     'SimHashinDamageLongitudinalCompressiveStrength',
     'SimHashinDamageTransverseTensileStrength',
@@ -271,11 +271,11 @@ SimHashinDamageMaterialTableColumn = {
     'SimHashinDamageLongitudinalShearStrength',
     'SimHashinDamageTransverseShearStrength',
     'SimHashinDamageTemperature',
-}
-SimHeatGenerationUserDefinedMaterialTableColumn = {
+]
+SimHeatGenerationUserDefinedMaterialTableColumn = [
     'SimHeatGenerationUserDefinedProperties',
-}
-SimHyperelasticityMaterialTableColumn = {
+]
+SimHyperelasticityMaterialTableColumn = [
     'SimHyperelasticityMu',
     'SimHyperelasticityLambdaM',
     'SimHyperelasticityD',
@@ -328,20 +328,20 @@ SimHyperelasticityMaterialTableColumn = {
     'SimHyperelasticityC15',
     'SimHyperelasticityC06',
     'SimHyperelasticityTemperature',
-}
-SimHyperelasticityModuliTimeScale = {
+]
+SimHyperelasticityModuliTimeScale = [
     'SimHyperelasticityLongTerm',
     'SimHyperelasticityInstantaneous',
-}
-SimHyperelasticityStrainEnergyPotentialOrder = {
+]
+SimHyperelasticityStrainEnergyPotentialOrder = [
     'SimHyperelasticityN1',
     'SimHyperelasticityN2',
     'SimHyperelasticityN3',
     'SimHyperelasticityN4',
     'SimHyperelasticityN5',
     'SimHyperelasticityN6',
-}
-SimHyperelasticityStrainEnergyPotential = {
+]
+SimHyperelasticityStrainEnergyPotential = [
     'SimHyperelasticityArruda_Boyce',
     'SimHyperelasticityNeo_Hooke',
     'SimHyperelasticityOgden',
@@ -350,8 +350,8 @@ SimHyperelasticityStrainEnergyPotential = {
     'SimHyperelasticityMooney_Rivlin',
     'SimHyperelasticityVan_Der_Waals',
     'SimHyperelasticityYeoh',
-}
-SimHyperfoamMaterialTableColumn = {
+]
+SimHyperfoamMaterialTableColumn = [
     'SimHyperfoammu1',
     'SimHyperfoammu2',
     'SimHyperfoammu3',
@@ -371,30 +371,30 @@ SimHyperfoamMaterialTableColumn = {
     'SimHyperfoamnu5',
     'SimHyperfoamnu6',
     'SimHyperfoamTemperature',
-}
-SimHyperfoamModuliTimeScale = {
+]
+SimHyperfoamModuliTimeScale = [
     'SimHyperfoamLONG_TERM',
     'SimHyperfoamINSTANTANEOUS',
-}
-SimHyperfoamStrainEnergyPotentialOrder = {
+]
+SimHyperfoamStrainEnergyPotentialOrder = [
     'SimHyperfoamN1',
     'SimHyperfoamN2',
     'SimHyperfoamN3',
     'SimHyperfoamN4',
     'SimHyperfoamN5',
     'SimHyperfoamN6',
-}
-SimLatentHeatMaterialTableColumn = {
+]
+SimLatentHeatMaterialTableColumn = [
     'SimLatentHeatLatentHeat',
     'SimLatentHeatSolidusTemperature',
     'SimLatentHeatLiquidusTemperature',
-}
-SimMaterialTableOptionalColumn = {
+]
+SimMaterialTableOptionalColumn = [
     'SimMaterialTableStrainRate',
     'SimMaterialTableFrequency',
     'SimMaterialTableTemperature',
-}
-SimPlasticIsotropicMaterialTableColumn = {
+]
+SimPlasticIsotropicMaterialTableColumn = [
     'SimPlasticIsotropicYieldStress',
     'SimPlasticIsotropicPlasticStrain',
     'SimPlasticIsotropicStrainRate',
@@ -409,8 +409,8 @@ SimPlasticIsotropicMaterialTableColumn = {
     'SimPlasticMeltingTemp',
     'SimPlasticTransitionTemp',
     'SimPlasticIsotropicTemperature',
-}
-SimPlasticKinematicMaterialTableColumn = {
+]
+SimPlasticKinematicMaterialTableColumn = [
     'SimPlasticKinematicYieldStress',
     'SimPlasticC1',
     'SimPlasticC2',
@@ -433,19 +433,19 @@ SimPlasticKinematicMaterialTableColumn = {
     'SimPlasticGamma9',
     'SimPlasticGamma10',
     'SimPlasticKinematicTemperature',
-}
-SimPlasticPlasticHardening = {
+]
+SimPlasticPlasticHardening = [
     'SimPlasticIsotropic_Tabular',
     'SimPlasticIsotropic_JohnsonCook',
     'SimPlasticKinematic',
     'SimPlasticCombined_Tabular',
     'SimPlasticCombined_Exponential',
-}
-SimPlasticPlasticYieldCriteria = {
+]
+SimPlasticPlasticYieldCriteria = [
     'SimPlasticMises',
     'SimPlasticHill',
-}
-SimPlasticPotentialMaterialTableColumn = {
+]
+SimPlasticPotentialMaterialTableColumn = [
     'SimPlasticR11',
     'SimPlasticR22',
     'SimPlasticR33',
@@ -453,87 +453,87 @@ SimPlasticPotentialMaterialTableColumn = {
     'SimPlasticR13',
     'SimPlasticR23',
     'SimPlasticPotentialTemperature',
-}
-SimPorousElasticityMaterialTableColumn = {
+]
+SimPorousElasticityMaterialTableColumn = [
     'SimPorousElasticityLogBulkModulus',
     'SimPorousElasticityShearModulus',
     'SimPorousElasticityPoissonRatio',
     'SimPorousElasticityTensileLimit',
     'SimPorousElasticityTemperature',
-}
-SimPorousElasticityShearType = {
+]
+SimPorousElasticityShearType = [
     'SimPorousElasticityG',
     'SimPorousElasticityPoisson',
-}
-SimProofStressMaterialTableColumn = {
+]
+SimProofStressMaterialTableColumn = [
     'SimProofStressProofStressAt2PC',
     'SimProofStressTemperature',
-}
-SimRateDependentHardeningType = {
+]
+SimRateDependentHardeningType = [
     'SimPowerlaw',
     'SimYieldRatio',
     'SimJohnsonCook',
-}
-SimRateDependentMaterialTableColumn = {
+]
+SimRateDependentMaterialTableColumn = [
     'SimRateDependentMultiplier',
     'SimRateDependentExponent',
     'SimRateDependentYieldStressRatio',
     'SimRateDependentEquivalentPlasticStrainRate',
     'SimRateDependentTemperature',
-}
-SimSpecificHeatMaterialTableColumn = {
+]
+SimSpecificHeatMaterialTableColumn = [
     'SimSpecificHeatSpecificHeat',
     'SimSpecificHeatTemperature',
-}
-SimSpecificHeatSpecificHeatType = {
+]
+SimSpecificHeatSpecificHeatType = [
     'SimSpecificHeatConstantVolume',
     'SimSpecificHeatConstantPressure',
-}
-SimTensileFailureCriteria = {
+]
+SimTensileFailureCriteria = [
     'SimNone',
     'SimBrittle',
     'SimDuctile',
-}
-SimTensileFailureMaterialTableColumn = {
+]
+SimTensileFailureMaterialTableColumn = [
     'SimTensileFailureHydroStaticCutOffStress',
     'SimTensileFailureTemperature',
-}
-SimUltimateStrengthMaterialCompressiveTableColumn = {
+]
+SimUltimateStrengthMaterialCompressiveTableColumn = [
     'SimUltimateStrengthUltimateCompressiveStrength',
     'SimUltimateStrengthCompressiveTemperature',
-}
-SimUltimateStrengthMaterialTensileTableColumn = {
+]
+SimUltimateStrengthMaterialTensileTableColumn = [
     'SimUltimateStrengthUltimateTensileStrength',
     'SimUltimateStrengthTensileTemperature',
-}
-SimUserDefinedFieldDirectSpecificationTableColumn = {
+]
+SimUserDefinedFieldDirectSpecificationTableColumn = [
     'SimUserDefinedFieldVariableNum',
     'SimUserDefinedFieldVariableName',
-}
-SimUserDefinedFieldRedefinitionResource = {
+]
+SimUserDefinedFieldRedefinitionResource = [
     'SimUserDefinedFieldUserSubroutineRedefinition',
     'SimUserDefinedFieldDirectSpecificationRedefinition',
-}
-SimUserDefinedHybridFormulation = {
+]
+SimUserDefinedHybridFormulation = [
     'SimUserDefinedIncremental',
     'SimUserDefinedTotal',
     'SimUserDefinedIncompressible',
-}
-SimUserDefinedMaterialTableColumn = {
+]
+SimUserDefinedMaterialTableColumn = [
     'SimUserDefinedMechanicalConstants',
     'SimUserDefinedThermalConstants',
-}
-SimUserDefinedPhysics = {
+]
+SimUserDefinedPhysics = [
     'SimUserDefinedMechanical',
     'SimUserDefinedThermal',
     'SimUserDefinedThermoMechanical',
-}
-SimViscoelasticityFrequencyType = {
+]
+SimViscoelasticityFrequencyType = [
     'SimViscoelasticityFORMULA',
     'SimViscoelasticityPRONY',
     'SimViscoelasticityTABULAR',
-}
-SimViscoelasticityMaterialTableColumn = {
+]
+SimViscoelasticityMaterialTableColumn = [
     'SimViscoelasticityRealG1',
     'SimViscoelasticityImagG1',
     'SimViscoelasticityA',
@@ -568,26 +568,26 @@ SimViscoelasticityMaterialTableColumn = {
     'SimViscoelasticityTimeKReal',
     'SimViscoelasticityTimeKImag',
     'SimViscoelasticityTimeFreq',
-}
-SimViscoelasticityPreloadType = {
+]
+SimViscoelasticityPreloadType = [
     'SimViscoelasticityNONE',
     'SimViscoelasticityUNIAXIAL',
     'SimViscoelasticityVOLUMETRIC',
-}
-SimViscoelasticityTabularSubType = {
+]
+SimViscoelasticityTabularSubType = [
     'SimViscoelasticityISOTROPIC',
     'SimViscoelasticityTRACTION',
-}
-SimViscoelasticityTimeType = {
+]
+SimViscoelasticityTimeType = [
     'SimViscoelasticityTIMEPRONY',
     'SimViscoelasticityFREQUENCYDATA',
-}
-SimViscoelasticityViscoelasticityDomain = {
+]
+SimViscoelasticityViscoelasticityDomain = [
     'SimViscoelasticityFREQUENCY',
     'SimViscoelasticityTIME',
-}
-SimVolumetricDragMaterialTableColumn = {
+]
+SimVolumetricDragMaterialTableColumn = [
     'SimVolumetricDragVolumetricDrag',
     'SimVolumetricDragFrequency',
     'SimVolumetricDragTemperature',
-}
+]

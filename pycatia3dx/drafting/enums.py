@@ -1,21 +1,21 @@
-Cat3DColorInheritanceMode = {
+Cat3DColorInheritanceMode = [
   'cat3DColorInheritanceModeOff',
   'cat3DColorInheritanceModeOn'
-}
+]
 
-CatAreaFillType = {
+CatAreaFillType = [
   'catAreaFillOnCurves',
   'catAreaFillOnMathematicPoints'
-}
+]
 
-CatDftGenRepresentationPolicy = {
+CatDftGenRepresentationPolicy = [
   'catDftAllDesignRepsPolicy',
   'catDftFirstDesignRepsPolicy',
   'catDftAllSessionRepsPolicy',
   'catDftCustomParam'
-}
+]
 
-CatDrawingViewType = {
+CatDrawingViewType = [
   'catViewBackground',
   'catViewFront',
   'catViewLeft',
@@ -33,87 +33,87 @@ CatDrawingViewType = {
   'catViewPure_Sketch',
   'catViewUnfolded',
   'catViewAxonometric'
-}
+]
 
-CatFilletRepresentation = {
+CatFilletRepresentation = [
   'catFilletRepNone',
   'catFilletRepBoundary',
   'catFilletRepSymbolic',
   'catFilletRepOriginalEdge',
   'catFilletRepProjectedOriginalEdge'
-}
+]
 
-CatGenRepresentationMode = {
+CatGenRepresentationMode = [
   'catModeExact',
   'catModeCGR',
   'catModeApproximate',
   'catModeRaster'
-}
+]
 
-CatGenViewRasterMode = {
+CatGenViewRasterMode = [
   'catImageHRD',
   'catImageShading',
   'catImageShadingEdges',
   'catImageShadingNoLight',
   'catImageShadingEdgesNoLight'
-}
+]
 
-CatHiddenLineMode = {
+CatHiddenLineMode = [
   'catHlrModeOff',
   'catHlrModeOn'
-}
+]
 
-CatImageViewMode = {
+CatImageViewMode = [
   'catImageModeOff',
   'catImageModeHRD',
   'catImageModeShading',
   'catImageModeShadingWithEdges',
   'catImageModeShadingNoLightSource',
   'catImageModeShadingWithEdgesAndNoLightSource'
-}
+]
 
-CatPictureFormat = {
+CatPictureFormat = [
   'catPictureNONE',
   'catPicturePNG',
   'catPictureJPEG',
   'catPictureCCITTG3'
-}
+]
 
-CatPictureType = {
+CatPictureType = [
   'catPictureRaster',
   'catPictureVector'
-}
+]
 
-CatPointsProjectionMode = {
+CatPointsProjectionMode = [
   'catPointsProjectionModeOff',
   'catPointsProjectionModeOn'
-}
+]
 
-CatProjViewType = {
+CatProjViewType = [
   'catRightView',
   'catLeftView',
   'catTopView',
   'catBottomView',
   'catRearView'
-}
+]
 
-CatRepresentationMode = {
+CatRepresentationMode = [
   'catExactMode',
   'catPolyhedricMode',
   'catVisualMode'
-}
+]
 
-CatSheetGenViewsPosMode = {
+CatSheetGenViewsPosMode = [
   'catFixedCG',
   'catFixedAxis'
-}
+]
 
-CatSheetProjectionMethod = {
+CatSheetProjectionMethod = [
   'catFirstAngle',
   'catThirdAngle'
-}
+]
 
-CatThreadLinkedTo = {
+CatThreadLinkedTo = [
   'catNotDefined',
   'catNoLink',
   'cat2DPoint',
@@ -121,22 +121,22 @@ CatThreadLinkedTo = {
   'cat3DGeom',
   'cat3DHole',
   'cat3DThread'
-}
+]
 
-CatThreadType = {
+CatThreadType = [
   'catThreaded',
   'catTaped'
-}
+]
 
-CatWireframeMode = {
+CatWireframeMode = [
   'catGenWFOff',
   'catGenWFCanBeHidden',
   'catGenWFAlwaysVisible'
-} 
+] 
 
-RasterLevelOfDetail = {
+RasterLevelOfDetail = [
   'LowQuality',
   'NormalQuality',
   'HighQuality',
   'Customize'
-} 
+] 

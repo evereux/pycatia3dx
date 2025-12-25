@@ -1,12 +1,12 @@
-SimMeshEntityType = {
+SimMeshEntityType = [
     'simMeshUnknownEntity',
     'simMeshNodeEntity',
     'simMeshEdgeEntity',
     'simMeshFaceEntity',
     'simMeshElementEntity',
-}
-SimMeshingRuleAttr = {
+]
+SimMeshingRuleAttr = [
     'simMeshingRuleName',
     'simMeshingRuleRevision',
     'simMeshingRuleExtension',
-}
+]

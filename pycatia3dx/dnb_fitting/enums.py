@@ -1,9 +1,9 @@
-DNBInterpolater = {
+DNBInterpolater = [
     'FitLINEAR',
     'FitSPLINE',
     'FitCOMPOSITE',
-}
-DNBTrackMode = {
+]
+DNBTrackMode = [
     'FitTIME',
     'FitSPEED',
-}
+]

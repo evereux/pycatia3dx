@@ -1,8 +1,8 @@
-DELOlpAccelerationMode = {
+DELOlpAccelerationMode = [
     'delOlpConstantTime',
     'delOlpVariableTime',
-}
-DELOlpAstNodeType = {
+]
+DELOlpAstNodeType = [
     'delAstROOT',
     'delAstFILE',
     'delAstMODULE',
@@ -56,61 +56,61 @@ DELOlpAstNodeType = {
     'delAstFORMAT',
     'delAstEOL',
     'delAstPULSE',
-}
-DELOlpAxisDirection = {
+]
+DELOlpAxisDirection = [
     'delOlpXPositive',
     'delOlpYPositive',
     'delOlpZPositive',
     'delOlpXNegative',
     'delOlpYNegative',
     'delOlpZNegative',
-}
-DELOlpChoreographyEventType = {
+]
+DELOlpChoreographyEventType = [
     'delOlpOtherChoreography',
     'delOlpMotionTraceChoreography',
     'delOlpVisibilityChoreography',
     'delOlpTextChoreography',
     'delOlpViewpointChoreography',
     'delOlpColorChoreography',
-}
-DELOlpConveyorTrackingMode = {
+]
+DELOlpConveyorTrackingMode = [
     'delOlpLineTracking',
     'delOlpRailTracking',
     'delOlpCircularTracking',
-}
-DELOlpDataType = {
+]
+DELOlpDataType = [
     'delOlpBoolean',
     'delOlpInteger',
     'delOlpDouble',
     'delOlpString',
     'delOlpUnknownType',
     'delOlpPositionVariable',
-}
-DELOlpDeviceType = {
+]
+DELOlpDeviceType = [
     'delOlpRobotDevice',
     'delOlpRailDevice',
     'delOlpToolDevice',
     'delOlpWorkpiecePositionerDevice',
     'delOlpAllDevices',
     'delOlpConveyorDevice',
-}
-DELOlpEditableType = {
+]
+DELOlpEditableType = [
     'delOlpNoEditor',
     'delOlpStringEditor',
     'delOlpIntEditor',
     'delOlpDoubleEditor',
     'delOlpComboEditor',
     'delOlpEditableComboEditor',
-}
-DELOlpGunState = {
+]
+DELOlpGunState = [
     'delOlpOn',
     'delOlpOff',
-}
-DELOlpInitialPositionMode = {
+]
+DELOlpInitialPositionMode = [
     'DELOlpDesignPosition',
     'DELOlpCurrentPosition',
-}
-DELOlpInstructionType = {
+]
+DELOlpInstructionType = [
     'delOlpCustom',
     'delOlpRobotMotion',
     'delOlpSpotOperation',
@@ -150,45 +150,45 @@ DELOlpInstructionType = {
     'delOlpAssignByString',
     'delOlpJumpTask',
     'delOlpAbort',
-}
-DELOlpIODirection = {
+]
+DELOlpIODirection = [
     'delOlpInput',
     'delOlpOutput',
     'delOlpInOut',
-}
-DELOlpJointType = {
+]
+DELOlpJointType = [
     'delOlpLinearJoint',
     'delOlpRotationalJoint',
-}
-DELOlpMessageType = {
+]
+DELOlpMessageType = [
     'delOlpError',
     'delOlpWarning',
     'delOlpNotice',
-}
-DELOlpMotionProfileUnits = {
+]
+DELOlpMotionProfileUnits = [
     'delOlpMotionProfilePercent',
     'delOlpMotionProfileAbsolute',
-}
-DELOlpMotionType = {
+]
+DELOlpMotionType = [
     'delOlpJointMotion',
     'delOlpLinearMotion',
     'delOlpCircularMotion',
     'delOlpCircularViaMotion',
-}
-DELOlpOffsetType = {
+]
+DELOlpOffsetType = [
     'delOlpNoOffset',
     'delOlpJointOffset',
     'delOlpCartesianObjectFrameOffset',
     'delOlpCartesianToolOffset',
     'delOlpCartesianStationOffset',
-}
-DELOlpOrientationMode = {
+]
+DELOlpOrientationMode = [
     'delOlpOrient1Axis',
     'delOlpOrient2Axis',
     'delOlpOrient3Axis',
     'delOlpOrientWrist',
-}
-DELOlpPositionRef = {
+]
+DELOlpPositionRef = [
     'delOlpWorld',
     'delOlpStation',
     'delOlpRailOrigin',
@@ -197,8 +197,8 @@ DELOlpPositionRef = {
     'delOlpUserDefined',
     'delOlpRobotOrigin',
     'delOlpUnknown',
-}
-DELOlpProcessType = {
+]
+DELOlpProcessType = [
     'delOlpUndefinedProcess',
     'delOlpApproach',
     'delOlpDepart',
@@ -211,26 +211,26 @@ DELOlpProcessType = {
     'delOlpStartProcess',
     'delOlpMidProcess',
     'delOlpEndProcess',
-}
-DELOlpPulseType = {
+]
+DELOlpPulseType = [
     'delOlpPulseOn',
     'delOlpPulseOff',
     'delOlpPulseInvert',
     'delOlpPulseLiteralInteger',
     'delOlpPulseExpression',
-}
-DELOlpRelativeMoveType = {
+]
+DELOlpRelativeMoveType = [
     'delOlpNoRelative',
     'delOlpJointRelative',
     'delOlpCartesianToolRelative',
-}
-DELOlpSynchronizationMode = {
+]
+DELOlpSynchronizationMode = [
     'delOlpIndependent',
     'delOlpSynchronized',
     'delOlpCoordinated',
     'delOlpSyncCoord',
-}
-DELOlpTagGroupType = {
+]
+DELOlpTagGroupType = [
     'delOlpTagGroup',
     'delOlpSpotTrajectory',
     'delOlpRivetTrajectory',
@@ -242,14 +242,14 @@ DELOlpTagGroupType = {
     'delOlpGeneralSurfaceTrajecotry',
     'delOlpShotPeenSurfaceTrajectory',
     'delOlpManufacturingPattern',
-}
-DELOlpTargetType = {
+]
+DELOlpTargetType = [
     'delOlpJointTarget',
     'delOlpHomeTarget',
     'delOlpCartesianTarget',
     'delOlpTagTarget',
-}
-DELOlpTeachCommand = {
+]
+DELOlpTeachCommand = [
     'delOlpCmdNone',
     'delOlpCmdModify',
     'delOlpCmdDelete',
@@ -258,44 +258,44 @@ DELOlpTeachCommand = {
     'delOlpCmdRobotMotionJoint',
     'delOlpCmdSpotOperation',
     'delOlpCmdArcOperation',
-}
-DELOlpTimeLinearAngularBasis = {
+]
+DELOlpTimeLinearAngularBasis = [
     'delOlpTimeBasis',
     'delOlpLinearBasis',
     'delOlpAngularBasis',
-}
-DELOlpTimerAction = {
+]
+DELOlpTimerAction = [
     'delOlpTimerStart',
     'delOlpTimerStop',
     'delOlpTimerReset',
-}
-DELOlpTraceLevel = {
+]
+DELOlpTraceLevel = [
     'delOlpNoTraces',
     'delOlpUserTraces',
     'delOlpAllTraces',
-}
-DELOlpTriggerConditionType = {
+]
+DELOlpTriggerConditionType = [
     'delOlpImmediateTrigger',
     'delOlpDistanceTrigger',
     'delOlpTimeTrigger',
     'delOlpPlaneTrigger',
-}
-DELOlpTurnMode = {
+]
+DELOlpTurnMode = [
     'delOlpTurnNumber',
     'delOlpTurnSign',
     'delOlpSolutionAngle',
     'delOlpShortestAngle',
     'delOlpAbsShortestAngle',
-}
-DELOlpTurnSignType = {
+]
+DELOlpTurnSignType = [
     'delOlpTurnSignNegative',
     'delOlpTurnSignPositive',
-}
-DELOlpVariableType = {
+]
+DELOlpVariableType = [
     'delOlpExternalIO',
     'delOlpProcedureIO',
     'delOlpLocalVariable',
     'delOlpConstant',
     'delOlpAllVariables',
     'delOlpAlias',
-}
+]

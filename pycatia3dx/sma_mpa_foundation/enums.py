@@ -1,12 +1,12 @@
-SimGeneralVectorFieldVariationType = {
+SimGeneralVectorFieldVariationType = [
     'SimGeneralVectorFieldUniform',
     'SimGeneralVectorFieldMappedSpatialData',
     'SimGeneralVectorFieldSpaceTimeData',
     'SimGeneralVectorFieldUserDefined',
     'SimGeneralVectorFieldVariableData',
     'SimGeneralVectorFieldExternalFieldData',
-}
-SimInitializationServiceSimulationMethod = {
+]
+SimInitializationServiceSimulationMethod = [
     'SimInitializationServiceStructuralMechanics',
     'SimInitializationServiceThermalMechanics',
     'SimInitializationServiceThermalStructuralMechanics',
@@ -18,21 +18,21 @@ SimInitializationServiceSimulationMethod = {
     'SimInitializationServiceFrequencyValidation',
     'SimInitializationServiceThermalValidation',
     'SimInitializationServiceThermalStructuralValidation',
-}
-SimScalarFieldVariationType = {
+]
+SimScalarFieldVariationType = [
     'SimScalarFieldUniform',
     'SimScalarFieldMappedSpatialData',
     'SimScalarFieldSpaceTimeData',
     'SimScalarFieldUserDefined',
-}
-SimSymmetricTensorFieldVariationType = {
+]
+SimSymmetricTensorFieldVariationType = [
     'SimSymmetricTensorFieldUniform',
     'SimSymmetricTensorFieldMappedSpatialData',
     'SimSymmetricTensorFieldSpaceTimeData',
     'SimSymmetricTensorFieldUserDefined',
     'SimSymmetricTensorFieldExternalFieldData',
-}
-SimVectorFieldVariationType = {
+]
+SimVectorFieldVariationType = [
     'SimVectorFieldUniform',
     'SimVectorFieldUserDefined',
-}
+]
