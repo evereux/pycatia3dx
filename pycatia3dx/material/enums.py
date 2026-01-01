@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class LinearElasticDomainType(Enum):
+class LinearElasticDomainType(IntEnum):
     Domain_Isotropic = 0
     Domain_Orthotropic2D = 1
     Domain_Fiber = 2

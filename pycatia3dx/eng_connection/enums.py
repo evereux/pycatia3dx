@@ -1,13 +1,13 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatAssemblyConstraintMode(Enum):
+class CatAssemblyConstraintMode(IntEnum):
     catDrivingMode = 0
     catMeasuredMode = 1
     catControlledMode = 2
 
 
-class CatAssemblyConstraintOption(Enum):
+class CatAssemblyConstraintOption(IntEnum):
     catOptionUndefinedOrientation = 0
     catOptionSameOrientation = 1
     catOptionOppositeOrientation = 2
@@ -32,7 +32,7 @@ class CatAssemblyConstraintOption(Enum):
     catOptionFullAxiszneg = 21
 
 
-class CatAssemblyConstraintType(Enum):
+class CatAssemblyConstraintType(IntEnum):
     catAngleLineLine = 0
     catAngleLinePlane = 1
     catAnglePlanePlane = 2
@@ -98,12 +98,12 @@ class CatAssemblyConstraintType(Enum):
     catCable = 62
 
 
-class CatEngConnectionDirection(Enum):
+class CatEngConnectionDirection(IntEnum):
     catDirectionOut = 0
     catDirectionIn = 1
 
 
-class CatEngConnectionType(Enum):
+class CatEngConnectionType(IntEnum):
     catCylindrical = 0
     catFree = 1
     catFix = 2

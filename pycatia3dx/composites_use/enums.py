@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATCompositesTypeEnum(Enum):
+class CATCompositesTypeEnum(IntEnum):
     Unknown = 0
     Stacking = 1
     PlyGroup = 2

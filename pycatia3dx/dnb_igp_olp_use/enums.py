@@ -1,12 +1,12 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class DELOlpAccelerationMode(Enum):
+class DELOlpAccelerationMode(IntEnum):
     delOlpConstantTime = 0
     delOlpVariableTime = 1
 
 
-class DELOlpAstNodeType(Enum):
+class DELOlpAstNodeType(IntEnum):
     delAstROOT = 0
     delAstFILE = 1
     delAstMODULE = 2
@@ -62,7 +62,7 @@ class DELOlpAstNodeType(Enum):
     delAstPULSE = 52
 
 
-class DELOlpAxisDirection(Enum):
+class DELOlpAxisDirection(IntEnum):
     delOlpXPositive = 0
     delOlpYPositive = 1
     delOlpZPositive = 2
@@ -71,7 +71,7 @@ class DELOlpAxisDirection(Enum):
     delOlpZNegative = 5
 
 
-class DELOlpChoreographyEventType(Enum):
+class DELOlpChoreographyEventType(IntEnum):
     delOlpOtherChoreography = 0
     delOlpMotionTraceChoreography = 1
     delOlpVisibilityChoreography = 2
@@ -80,13 +80,13 @@ class DELOlpChoreographyEventType(Enum):
     delOlpColorChoreography = 5
 
 
-class DELOlpConveyorTrackingMode(Enum):
+class DELOlpConveyorTrackingMode(IntEnum):
     delOlpLineTracking = 0
     delOlpRailTracking = 1
     delOlpCircularTracking = 2
 
 
-class DELOlpDataType(Enum):
+class DELOlpDataType(IntEnum):
     delOlpBoolean = 0
     delOlpInteger = 1
     delOlpDouble = 2
@@ -95,7 +95,7 @@ class DELOlpDataType(Enum):
     delOlpPositionVariable = 5
 
 
-class DELOlpDeviceType(Enum):
+class DELOlpDeviceType(IntEnum):
     delOlpRobotDevice = 0
     delOlpRailDevice = 1
     delOlpToolDevice = 2
@@ -104,7 +104,7 @@ class DELOlpDeviceType(Enum):
     delOlpConveyorDevice = 5
 
 
-class DELOlpEditableType(Enum):
+class DELOlpEditableType(IntEnum):
     delOlpNoEditor = 0
     delOlpStringEditor = 1
     delOlpIntEditor = 2
@@ -113,17 +113,17 @@ class DELOlpEditableType(Enum):
     delOlpEditableComboEditor = 5
 
 
-class DELOlpGunState(Enum):
+class DELOlpGunState(IntEnum):
     delOlpOn = 0
     delOlpOff = 1
 
 
-class DELOlpInitialPositionMode(Enum):
+class DELOlpInitialPositionMode(IntEnum):
     DELOlpDesignPosition = 0
     DELOlpCurrentPosition = 1
 
 
-class DELOlpInstructionType(Enum):
+class DELOlpInstructionType(IntEnum):
     delOlpCustom = 0
     delOlpRobotMotion = 1
     delOlpSpotOperation = 2
@@ -165,36 +165,36 @@ class DELOlpInstructionType(Enum):
     delOlpAbort = 38
 
 
-class DELOlpIODirection(Enum):
+class DELOlpIODirection(IntEnum):
     delOlpInput = 0
     delOlpOutput = 1
     delOlpInOut = 2
 
 
-class DELOlpJointType(Enum):
+class DELOlpJointType(IntEnum):
     delOlpLinearJoint = 0
     delOlpRotationalJoint = 1
 
 
-class DELOlpMessageType(Enum):
+class DELOlpMessageType(IntEnum):
     delOlpError = 0
     delOlpWarning = 1
     delOlpNotice = 2
 
 
-class DELOlpMotionProfileUnits(Enum):
+class DELOlpMotionProfileUnits(IntEnum):
     delOlpMotionProfilePercent = 0
     delOlpMotionProfileAbsolute = 1
 
 
-class DELOlpMotionType(Enum):
+class DELOlpMotionType(IntEnum):
     delOlpJointMotion = 0
     delOlpLinearMotion = 1
     delOlpCircularMotion = 2
     delOlpCircularViaMotion = 3
 
 
-class DELOlpOffsetType(Enum):
+class DELOlpOffsetType(IntEnum):
     delOlpNoOffset = 0
     delOlpJointOffset = 1
     delOlpCartesianObjectFrameOffset = 2
@@ -202,14 +202,14 @@ class DELOlpOffsetType(Enum):
     delOlpCartesianStationOffset = 4
 
 
-class DELOlpOrientationMode(Enum):
+class DELOlpOrientationMode(IntEnum):
     delOlpOrient1Axis = 0
     delOlpOrient2Axis = 1
     delOlpOrient3Axis = 2
     delOlpOrientWrist = 3
 
 
-class DELOlpPositionRef(Enum):
+class DELOlpPositionRef(IntEnum):
     delOlpWorld = 0
     delOlpStation = 1
     delOlpRailOrigin = 2
@@ -220,7 +220,7 @@ class DELOlpPositionRef(Enum):
     delOlpUnknown = 7
 
 
-class DELOlpProcessType(Enum):
+class DELOlpProcessType(IntEnum):
     delOlpUndefinedProcess = 0
     delOlpApproach = 1
     delOlpDepart = 2
@@ -235,7 +235,7 @@ class DELOlpProcessType(Enum):
     delOlpEndProcess = 11
 
 
-class DELOlpPulseType(Enum):
+class DELOlpPulseType(IntEnum):
     delOlpPulseOn = 0
     delOlpPulseOff = 1
     delOlpPulseInvert = 2
@@ -243,20 +243,20 @@ class DELOlpPulseType(Enum):
     delOlpPulseExpression = 4
 
 
-class DELOlpRelativeMoveType(Enum):
+class DELOlpRelativeMoveType(IntEnum):
     delOlpNoRelative = 0
     delOlpJointRelative = 1
     delOlpCartesianToolRelative = 2
 
 
-class DELOlpSynchronizationMode(Enum):
+class DELOlpSynchronizationMode(IntEnum):
     delOlpIndependent = 0
     delOlpSynchronized = 1
     delOlpCoordinated = 2
     delOlpSyncCoord = 3
 
 
-class DELOlpTagGroupType(Enum):
+class DELOlpTagGroupType(IntEnum):
     delOlpTagGroup = 0
     delOlpSpotTrajectory = 1
     delOlpRivetTrajectory = 2
@@ -270,14 +270,14 @@ class DELOlpTagGroupType(Enum):
     delOlpManufacturingPattern = 10
 
 
-class DELOlpTargetType(Enum):
+class DELOlpTargetType(IntEnum):
     delOlpJointTarget = 0
     delOlpHomeTarget = 1
     delOlpCartesianTarget = 2
     delOlpTagTarget = 3
 
 
-class DELOlpTeachCommand(Enum):
+class DELOlpTeachCommand(IntEnum):
     delOlpCmdNone = 0
     delOlpCmdModify = 1
     delOlpCmdDelete = 2
@@ -288,32 +288,32 @@ class DELOlpTeachCommand(Enum):
     delOlpCmdArcOperation = 7
 
 
-class DELOlpTimeLinearAngularBasis(Enum):
+class DELOlpTimeLinearAngularBasis(IntEnum):
     delOlpTimeBasis = 0
     delOlpLinearBasis = 1
     delOlpAngularBasis = 2
 
 
-class DELOlpTimerAction(Enum):
+class DELOlpTimerAction(IntEnum):
     delOlpTimerStart = 0
     delOlpTimerStop = 1
     delOlpTimerReset = 2
 
 
-class DELOlpTraceLevel(Enum):
+class DELOlpTraceLevel(IntEnum):
     delOlpNoTraces = 0
     delOlpUserTraces = 1
     delOlpAllTraces = 2
 
 
-class DELOlpTriggerConditionType(Enum):
+class DELOlpTriggerConditionType(IntEnum):
     delOlpImmediateTrigger = 0
     delOlpDistanceTrigger = 1
     delOlpTimeTrigger = 2
     delOlpPlaneTrigger = 3
 
 
-class DELOlpTurnMode(Enum):
+class DELOlpTurnMode(IntEnum):
     delOlpTurnNumber = 0
     delOlpTurnSign = 1
     delOlpSolutionAngle = 2
@@ -321,12 +321,12 @@ class DELOlpTurnMode(Enum):
     delOlpAbsShortestAngle = 4
 
 
-class DELOlpTurnSignType(Enum):
+class DELOlpTurnSignType(IntEnum):
     delOlpTurnSignNegative = 0
     delOlpTurnSignPositive = 1
 
 
-class DELOlpVariableType(Enum):
+class DELOlpVariableType(IntEnum):
     delOlpExternalIO = 0
     delOlpProcedureIO = 1
     delOlpLocalVariable = 2

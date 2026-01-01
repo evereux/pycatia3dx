@@ -1,13 +1,13 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATStrCollarThrowOrientation(Enum):
+class CATStrCollarThrowOrientation(IntEnum):
     catStrCollarThrowOrientationInvert = 0
     catStrCollarThrowOrientationNormal = 1
     catStrCollarThrowOrientationCentered = 2
 
 
-class CATStrOpeningCreationMode(Enum):
+class CATStrOpeningCreationMode(IntEnum):
     catStrOpeningUndefined = 0
     catStrOpeningOutputProfile = 1
     catStrOpening3DObject = 2
@@ -16,14 +16,14 @@ class CATStrOpeningCreationMode(Enum):
     catStrOpeningSlot = 5
 
 
-class CATStrOpeningMode(Enum):
+class CATStrOpeningMode(IntEnum):
     catStrOpeningModeUndefined = 0
     catStrOpeningMode3DObject = 1
     catStrOpeningModeOutputProfile = 2
     catStrOpeningModeStandard = 3
 
 
-class CATStrOpeningSTDMode(Enum):
+class CATStrOpeningSTDMode(IntEnum):
     catStrOpeningSTDUndefinedMode = 0
     catStrOpeningSTDRoundMode = 1
     catStrOpeningSTDRectMode = 2
@@ -31,18 +31,18 @@ class CATStrOpeningSTDMode(Enum):
     catStrOpeningSTDCatalogMode = 4
 
 
-class CATStrPanelMode(Enum):
+class CATStrPanelMode(IntEnum):
     catStrPanelModeUndefined = 0
     catStrPanelModeSurf = 1
 
 
-class CATStrPlateFaceName(Enum):
+class CATStrPlateFaceName(IntEnum):
     catStrPlateFaceNameUndefined = 0
     catStrPlateFaceBottom = 1
     catStrPlateFaceTop = 2
 
 
-class CATStrProfileMode(Enum):
+class CATStrProfileMode(IntEnum):
     catStrProfileModeUndefined = 0
     catStrProfileModePtLength = 1
     catStrProfileModePtLimit = 2
@@ -54,7 +54,7 @@ class CATStrProfileMode(Enum):
     catStrProfileModeOnLimits = 8
 
 
-class CATStrUseBracketPositionMode(Enum):
+class CATStrUseBracketPositionMode(IntEnum):
     catStr3DAxisPositionMode = 0
     catStrPlateStiffenerPositionMode = 1
     catStrStiffenerStiffenerPositionMode = 2

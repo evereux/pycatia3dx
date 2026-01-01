@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatGeometricType(Enum):
+class CatGeometricType(IntEnum):
     catGeoTypeUnknown = 0
     catGeoTypeAxis2D = 1
     catGeoTypePoint2D = 2

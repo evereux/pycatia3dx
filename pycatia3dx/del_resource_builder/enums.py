@@ -1,30 +1,30 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class AccuracyType(Enum):
+class AccuracyType(IntEnum):
     ACCURACY_TYPE_DISTANCE = 0
     ACCURACY_TYPE_SPEED = 1
 
 
-class DELRscControllerDataContext(Enum):
+class DELRscControllerDataContext(IntEnum):
     DELRscControllerDataContext_None = 0
     DELRscControllerDataContext_Reference = 1
     DELRscControllerDataContext_Instance = 2
 
 
-class DELRscControllerGenericProfilesType(Enum):
+class DELRscControllerGenericProfilesType(IntEnum):
     DELRscControllerGenericProfilesType_Tool = 0
     DELRscControllerGenericProfilesType_Motion = 1
     DELRscControllerGenericProfilesType_Accuracy = 2
     DELRscControllerGenericProfilesType_ObjectFrame = 3
 
 
-class DELRscJointType(Enum):
+class DELRscJointType(IntEnum):
     DELRscJointType_Linear = 0
     DELRscJointType_Angular = 1
 
 
-class DELRscMotionControllerType(Enum):
+class DELRscMotionControllerType(IntEnum):
     DELRscMotionControllerType_Default = 0
     DELRscMotionControllerType_Rail = 1
     DELRscMotionControllerType_EndOfArm = 2
@@ -33,7 +33,7 @@ class DELRscMotionControllerType(Enum):
     DELRscMotionControllerType_FixedTool = 5
 
 
-class DELRscSimulationStatus(Enum):
+class DELRscSimulationStatus(IntEnum):
     DELRscSimulationStatus_ArmSolutionGood = 0
     DELRscSimulationStatus_DOFSoftErrorExceeded = 1
     DELRscSimulationStatus_ArmTargetUnreachable = 2
@@ -44,12 +44,12 @@ class DELRscSimulationStatus(Enum):
     DELRscSimulationStatus_ArmSolverError = 7
 
 
-class DELRscSimulationVisualizationUpdate(Enum):
+class DELRscSimulationVisualizationUpdate(IntEnum):
     DELRscSimulationVisualizationUpdate_OFF = 0
     DELRscSimulationVisualizationUpdate_ON = 1
 
 
-class MotionBasis(Enum):
+class MotionBasis(IntEnum):
     MOTION_ABSOLUTE = 0
     MOTION_PERCENT = 1
     MOTION_TIME = 2

@@ -1,42 +1,42 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatInterferenceComparison(Enum):
+class CatInterferenceComparison(IntEnum):
     catInterferenceComparisonNone = 0
     catInterferenceComparisonRecomputeModify = 1
     catInterferenceComparisonDeleteOutOfScope = 2
 
 
-class CatInterferenceComputeQuantifier(Enum):
+class CatInterferenceComputeQuantifier(IntEnum):
     catInterferenceComputeQuantifierMinimumDistance = 0
     catInterferenceComputeQuantifierPenetrationVector = 1
 
 
-class CatInterferenceGroupComputationType2(Enum):
+class CatInterferenceGroupComputationType2(IntEnum):
     catInterferenceGroupComputationTypeAllAgainstAllInGroup = 0
     catInterferenceGroupComputationTypeGroupAgainstGroup = 1
     catInterferenceGroupComputationTypeGroupAgainstContext = 2
     catInterferenceGroupComputationTypeAllAgainstAllInContext = 3
 
 
-class CatInterferenceGroupComputationType(Enum):
+class CatInterferenceGroupComputationType(IntEnum):
     catInterferenceGroupComputationTypeAllAgainstAllInGroup1 = 0
     catInterferenceGroupComputationTypeGroup1AgainstGroup2 = 1
 
 
-class CatInterferenceIntermediateRepresentation(Enum):
+class CatInterferenceIntermediateRepresentation(IntEnum):
     catInterferenceInterRepNone = 0
     catInterferenceInterRepAppend = 1
     catInterferenceInterRepComputeBetween = 2
 
 
-class CatInterferenceResultStatus(Enum):
+class CatInterferenceResultStatus(IntEnum):
     catInterferenceResultStatusOK = 0
     catInterferenceResultStatusKO = 1
     catInterferenceResultStatusNotAnalyzed = 2
 
 
-class CatInterferenceResultType(Enum):
+class CatInterferenceResultType(IntEnum):
     catInterferenceResultTypeClash = 0
     catInterferenceResultTypeContact = 1
     catInterferenceResultTypeClearance = 2
@@ -44,7 +44,7 @@ class CatInterferenceResultType(Enum):
     catInterferenceResultTypeUndefined = 4
 
 
-class CatInterferenceResultUserType(Enum):
+class CatInterferenceResultUserType(IntEnum):
     catInterferenceResultUserTypeClash = 0
     catInterferenceResultUserTypeContact = 1
     catInterferenceResultUserTypeClearance = 2
@@ -52,7 +52,7 @@ class CatInterferenceResultUserType(Enum):
     catInterferenceResultUserTypeUndefined = 4
 
 
-class CatInterferenceSpecificationTypeEngCnx(Enum):
+class CatInterferenceSpecificationTypeEngCnx(IntEnum):
     catInterferenceSpecificationTypeEngCnxCheckNone = 0
     catInterferenceSpecificationTypeEngCnxCheckNoClash = 1
     catInterferenceSpecificationTypeEngCnxCheckContact = 2
@@ -60,7 +60,7 @@ class CatInterferenceSpecificationTypeEngCnx(Enum):
     catInterferenceSpecificationTypeEngCnxNoCheck = 4
 
 
-class CatInterferenceSpecificationType(Enum):
+class CatInterferenceSpecificationType(IntEnum):
     catInterferenceSpecificationTypeNone = 0
     catInterferenceSpecificationTypeClash = 1
     catInterferenceSpecificationTypeClearance = 2

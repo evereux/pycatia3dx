@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimBeamProfileShape(Enum):
+class SimBeamProfileShape(IntEnum):
     SimBeamProfileNone = 0
     SimBeamProfileBox = 1
     SimBeamProfileCircular = 2
@@ -17,51 +17,51 @@ class SimBeamProfileShape(Enum):
     SimBeamProfileHat = 12
 
 
-class SimBeamSectionCrossSectionAxis(Enum):
+class SimBeamSectionCrossSectionAxis(IntEnum):
     SimBeamSectionFirstAxis = 0
     SimBeamSectionSecondAxis = 1
 
 
-class SimBeamSectionOrientation(Enum):
+class SimBeamSectionOrientation(IntEnum):
     SimBeamSectionGeometry = 0
     SimBeamSectionAxisSystem = 1
 
 
-class SimBeamSectionSlendernessOption(Enum):
+class SimBeamSectionSlendernessOption(IntEnum):
     SimBeamSectionDefault = 0
     SimBeamSectionSpecify = 1
 
 
-class SimBeamSectionTransverseShearStiffness(Enum):
+class SimBeamSectionTransverseShearStiffness(IntEnum):
     SimBeamSectionNone = 0
     SimBeamSectionCalculate = 1
     SimBeamSectionIsotropic = 2
     SimBeamSectionOrthotropic = 3
 
 
-class SimCohesiveMechanicalResponse(Enum):
+class SimCohesiveMechanicalResponse(IntEnum):
     TractionSeparation = 0
     Continuum = 1
     Gasket = 2
 
 
-class SimCompositeLayupType(Enum):
+class SimCompositeLayupType(IntEnum):
     SimLayupByLamina = 0
     SimLayupByPly = 1
     SimFromDesign = 2
 
 
-class SimCompositeRosetteTransferCylindricalType(Enum):
+class SimCompositeRosetteTransferCylindricalType(IntEnum):
     SimCompositeCylindericalZero = 0
     SimCompositeCylindericalNinety = 1
 
 
-class SimCompositeRosetteTransferType(Enum):
+class SimCompositeRosetteTransferType(IntEnum):
     SimCompositeRosetteTypeCartesian = 0
     SimCompositeRosetteTypeGuidedCurve = 1
 
 
-class SimCompositeShellSectionOffsetMethod(Enum):
+class SimCompositeShellSectionOffsetMethod(IntEnum):
     SimCompositeShellSectionAutomaticOffset = 0
     SimCompositeShellSectionNone = 1
     SimCompositeShellSectionSpecifiedDistanceOffset = 2
@@ -71,23 +71,23 @@ class SimCompositeShellSectionOffsetMethod(Enum):
     SimCompositeShellSectionFromSolid = 6
 
 
-class SimConnectorCouplingType(Enum):
+class SimConnectorCouplingType(IntEnum):
     SimConnectorCouplingKinematic = 0
     SimConnectorCouplingDistributing = 1
 
 
-class SimConnectorElasticityElasticityOrder(Enum):
+class SimConnectorElasticityElasticityOrder(IntEnum):
     SimConnectorElasticityLinear = 0
     SimConnectorElasticityNonLinear = 1
 
 
-class SimConnectorElasticityTableColumn(Enum):
+class SimConnectorElasticityTableColumn(IntEnum):
     SimConnectorElasticityStiffness = 0
     SimConnectorElasticityTemperature = 1
     SimConnectorElasticityPosition = 2
 
 
-class SimConnectorSectionAssembledConnectorType(Enum):
+class SimConnectorSectionAssembledConnectorType(IntEnum):
     SimConnectorSectionNoAssembledType = 0
     SimConnectorSectionBeam = 1
     SimConnectorSectionBushing = 2
@@ -102,7 +102,7 @@ class SimConnectorSectionAssembledConnectorType(Enum):
     SimConnectorSectionSlipring = 11
 
 
-class SimConnectorSectionRotationalConnectorType(Enum):
+class SimConnectorSectionRotationalConnectorType(IntEnum):
     SimConnectorSectionNoRotationalType = 0
     SimConnectorSectionAlign = 1
     SimConnectorSectionCardan = 2
@@ -117,7 +117,7 @@ class SimConnectorSectionRotationalConnectorType(Enum):
     SimConnectorSectionFlowConverter = 11
 
 
-class SimConnectorSectionTranslationalConnectorType(Enum):
+class SimConnectorSectionTranslationalConnectorType(IntEnum):
     SimConnectorSectionNoTranslationalType = 0
     SimConnectorSectionAccelerometer = 1
     SimConnectorSectionAxialConnector = 2
@@ -130,93 +130,93 @@ class SimConnectorSectionTranslationalConnectorType(Enum):
     SimConnectorSectionSlot = 9
 
 
-class SimContactVirtualPartReferencePointInputMode(Enum):
+class SimContactVirtualPartReferencePointInputMode(IntEnum):
     SimContactVirtualPartSpecify = 0
     SimContactVirtualPartCenterOfMass = 1
     SimContactVirtualPartAutomatic = 2
 
 
-class SimConversionType(Enum):
+class SimConversionType(IntEnum):
     SimBackgroundGrid = 0
     SimParticlesPerDirection = 1
 
 
-class SimCouplingCouplingType(Enum):
+class SimCouplingCouplingType(IntEnum):
     SimCouplingKinematic = 0
     SimCouplingDistributing = 1
     SimCouplingMultiphysics = 2
 
 
-class SimEulerianMaterialLocation(Enum):
+class SimEulerianMaterialLocation(IntEnum):
     SimMLInsideSupport = 0
     SimMLOutsideSupport = 1
 
 
-class SimEulerianVolumeFractionType(Enum):
+class SimEulerianVolumeFractionType(IntEnum):
     SimVFTSpecified = 0
     SimVFTComputed = 1
 
 
-class SimFunctionOrder(Enum):
+class SimFunctionOrder(IntEnum):
     SimSecond = 0
     SimThird = 1
     SimFifth = 2
 
 
-class SimLaminateStackingType(Enum):
+class SimLaminateStackingType(IntEnum):
     SimCompositeLaminateStackingUnknown = 0
     SimCompositeLaminateStackingThicknessLaw = 1
     SimCompositeLaminateStackingStackingSequence = 2
 
 
-class SimLaminateSymmetryMode(Enum):
+class SimLaminateSymmetryMode(IntEnum):
     SimLaminateSymmetryNone = 0
     SimLaminateSymmetryPivot = 1
     SimLaminateSymmetryNonPivot = 2
 
 
-class SimLineFastenerConstructType(Enum):
+class SimLineFastenerConstructType(IntEnum):
     SimLineFastenerSolidHex = 0
     SimLineFastenerShell = 1
     SimLineFastenerWedge = 2
 
 
-class SimLineFastenerMeshCompatibility(Enum):
+class SimLineFastenerMeshCompatibility(IntEnum):
     SimLineFastenerCompatible = 0
     SimLineFastenerNonCompatible = 1
 
 
-class SimLineFastenerPlacementFastenerPlacementMethod(Enum):
+class SimLineFastenerPlacementFastenerPlacementMethod(IntEnum):
     SimLineFastenerPlacementLine = 0
     SimLineFastenerPlacementPointCoordinates = 1
     SimLineFastenerPlacementLineLine = 2
     SimLineFastenerPlacementSupportBoundary = 3
 
 
-class SimNonStructPlyPositionScheme(Enum):
+class SimNonStructPlyPositionScheme(IntEnum):
     SimNonStructPlyPositionUnDefined = 0
     SimNonStructPlyPositionTopOnly = 1
     SimNonStructPlyPositionBottomOnly = 2
     SimNonStructPlyPositionTopAndBottom = 3
 
 
-class SimNonstructuralMassApplicationMethod(Enum):
+class SimNonstructuralMassApplicationMethod(IntEnum):
     SimNonstructuralMassMass = 0
     SimNonstructuralMassTotalMass = 1
 
 
-class SimNonstructuralMassTotalMassDistributionMethod(Enum):
+class SimNonstructuralMassTotalMassDistributionMethod(IntEnum):
     SimNonstructuralMassMassProportional = 0
     SimNonstructuralMassVolumeProportional = 1
 
 
-class SimOrientationAxisOfRotation(Enum):
+class SimOrientationAxisOfRotation(IntEnum):
     SimOrientationAxis1 = 0
     SimOrientationAxis2 = 1
     SimOrientationAxis3 = 2
 
 
-class SimPointFastenerConstructType(Enum):
+class SimPointFastenerConstructType(IntEnum):
     SimPointFastenerRigid = 0
     SimPointFastenerSpring = 1
     SimPointFastenerSolidHex = 2
@@ -225,18 +225,18 @@ class SimPointFastenerConstructType(Enum):
     SimPointFastenerAssembled = 5
 
 
-class SimPointFastenerPlacementDistributionOptionOnLine(Enum):
+class SimPointFastenerPlacementDistributionOptionOnLine(IntEnum):
     SimPointFastenerPlacementNumberOfFasteners = 0
     SimPointFastenerPlacementPointSpacing = 1
 
 
-class SimPointFastenerPlacementFastenerPlacementMethod(Enum):
+class SimPointFastenerPlacementFastenerPlacementMethod(IntEnum):
     SimPointFastenerPlacementPoint = 0
     SimPointFastenerPlacementLine = 1
     SimPointFastenerPlacementPointCoordinates = 2
 
 
-class SimRebarAttributeType(Enum):
+class SimRebarAttributeType(IntEnum):
     SimArea = 0
     SimSpacing = 1
     SimAngle = 2
@@ -245,24 +245,24 @@ class SimRebarAttributeType(Enum):
     SimRadius = 5
 
 
-class SimRebarGeometryType(Enum):
+class SimRebarGeometryType(IntEnum):
     SimConstant = 0
     SimAngular = 1
     SimLiftEquation = 2
 
 
-class SimRigidBodyConstraintReferencePointInputMode(Enum):
+class SimRigidBodyConstraintReferencePointInputMode(IntEnum):
     SimRigidBodyConstraintSpecify = 0
     SimRigidBodyConstraintCenterOfMass = 1
     SimRigidBodyConstraintAutomatic = 2
 
 
-class SimShellSectionIntegrationScheme(Enum):
+class SimShellSectionIntegrationScheme(IntEnum):
     SimShellSectionSimpsonIntegration = 0
     SimShellSectionGaussIntegration = 1
 
 
-class SimShellSectionOffsetMethod(Enum):
+class SimShellSectionOffsetMethod(IntEnum):
     SimShellSectionNone = 0
     SimShellSectionSpecifiedDistanceOffset = 1
     SimShellSectionThicknessRatio = 2
@@ -270,64 +270,64 @@ class SimShellSectionOffsetMethod(Enum):
     SimShellSectionBottomSurface = 4
 
 
-class SimShellSectionPoissonMethod(Enum):
+class SimShellSectionPoissonMethod(IntEnum):
     SimShellSectionPoissonDefault = 0
     SimShellSectionPoissonValue = 1
     SimShellSectionPoissonMaterial = 2
     SimShellSectionPoissonElastic = 3
 
 
-class SimShellSectionThicknessType(Enum):
+class SimShellSectionThicknessType(IntEnum):
     SimShellSectionUser = 0
     SimShellSectionMid = 1
     SimShellSectionThin = 2
 
 
-class SimSpringType(Enum):
+class SimSpringType(IntEnum):
     SimAxialSpring = 0
     SimGeneralSpring = 1
 
 
-class SimThicknessType(Enum):
+class SimThicknessType(IntEnum):
     SimUniform = 0
     SimVariable = 1
 
 
-class SimTieDiscretizationMethod(Enum):
+class SimTieDiscretizationMethod(IntEnum):
     SimTieSurfaceToSurface = 0
     SimTieNodeToSurface = 1
     SimTieSolverDefault = 2
 
 
-class SimVirtualBoltAdvancedCouplingType(Enum):
+class SimVirtualBoltAdvancedCouplingType(IntEnum):
     SimVirtualBoltAdvancedCouplingTypeKinematic = 0
     SimVirtualBoltAdvancedCouplingTypeDistributingContinuum = 1
     SimVirtualBoltAdvancedCouplingTypeDistributingStructural = 2
 
 
-class SimVirtualBoltCoupledSurfaceType(Enum):
+class SimVirtualBoltCoupledSurfaceType(IntEnum):
     SimVirtualBoltCoupledSurfaceTypeInfluenceRadius = 0
     SimVirtualBoltCoupledSurfaceTypeNodeRings = 1
 
 
-class SimVirtualBoltIntermediateCouplingType(Enum):
+class SimVirtualBoltIntermediateCouplingType(IntEnum):
     SimVirtualBoltIntermediateCouplingTypeNoConnection = 0
     SimVirtualBoltIntermediateCouplingTypeStandard = 1
     SimVirtualBoltIntermediateCouplingTypeTightFit = 2
 
 
-class SimVirtualBoltMechanicalBehavior(Enum):
+class SimVirtualBoltMechanicalBehavior(IntEnum):
     SimVirtualBoltBehaviorDeformable = 0
     SimVirtualBoltBehaviorRigid = 1
     SimVirtualBoltBehaviorBeam = 2
 
 
-class SimVirtualBoltSolidSolidConnectionType(Enum):
+class SimVirtualBoltSolidSolidConnectionType(IntEnum):
     SimVirtualBoltSolidSolidConnectionTypeBeamAtInterface = 0
     SimVirtualBoltSolidSolidConnectionTypeCoupling = 1
 
 
-class SimVirtualBolt_BoltType(Enum):
+class SimVirtualBolt_BoltType(IntEnum):
     SimVirtualBolt_BoltTypeGrounded = 0
     SimVirtualBolt_BoltTypeStandard = 1
     SimVirtualBolt_BoltTypeCountersink = 2

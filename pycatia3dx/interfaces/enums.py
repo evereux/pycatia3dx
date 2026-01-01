@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatArrangeStyle(Enum):
+class CatArrangeStyle(IntEnum):
     catArrangeCascade = 0
     catArrangeTiledHorizontal = 1
     catArrangeTiledVertical = 2
@@ -16,7 +16,7 @@ class CatArrangeStyle(Enum):
     catArrangeTiledGridInNewTab = 11
 
 
-class CatBannerPosition(Enum):
+class CatBannerPosition(IntEnum):
     catBannerPositionNone = 0
     catBannerPositionBottom = 1
     catBannerPositionTop = 2
@@ -24,12 +24,12 @@ class CatBannerPosition(Enum):
     catBannerPositionRight = 4
 
 
-class CatCameraType(Enum):
+class CatCameraType(IntEnum):
     catCamera2D = 0
     catCamera3D = 1
 
 
-class CatCaptureFormat(Enum):
+class CatCaptureFormat(IntEnum):
     catCaptureFormatCGM = 0
     catCaptureFormatEMF = 1
     catCaptureFormatTIFF = 2
@@ -38,14 +38,14 @@ class CatCaptureFormat(Enum):
     catCaptureFormatJPEG = 5
 
 
-class CatClippingMode(Enum):
+class CatClippingMode(IntEnum):
     catClippingModeClear = 0
     catClippingModeNear = 1
     catClippingModeFar = 2
     catClippingModeNearAndFar = 3
 
 
-class CatImageRotation(Enum):
+class CatImageRotation(IntEnum):
     catImageNoRotation = 0
     catImageRotation90 = 1
     catImageRotation180 = 2
@@ -53,7 +53,7 @@ class CatImageRotation(Enum):
     catImageBestRotation = 4
 
 
-class CATInteractionType(Enum):
+class CATInteractionType(IntEnum):
     CATSelection = 0
     CATIndication = 1
     CATMouseMove = 2
@@ -64,30 +64,30 @@ class CATInteractionType(Enum):
     CATExclusiveCommand = 7
 
 
-class CatLightingMode(Enum):
+class CatLightingMode(IntEnum):
     catInfiniteLightSource = 0
     catNeonLightSource = 1
 
 
-class CATMultiSelectionMode(Enum):
+class CATMultiSelectionMode(IntEnum):
     CATMonoSel = 0
     CATMultiSelTriggWhenSelPerf = 1
     CATMultiSelTriggWhenUserValidatesSelection = 2
 
 
-class CatNavigationStyle(Enum):
+class CatNavigationStyle(IntEnum):
     catNavigationExamine = 0
     catNavigationWalk = 1
     catNavigationFly = 2
 
 
-class CatPaperOrientation(Enum):
+class CatPaperOrientation(IntEnum):
     catPaperPortrait = 0
     catPaperLandscape = 1
     catPaperBestFit = 2
 
 
-class CatPaperSize(Enum):
+class CatPaperSize(IntEnum):
     catPaperLetter = 0
     catPaperLegal = 1
     catPaperA0 = 2
@@ -104,36 +104,36 @@ class CatPaperSize(Enum):
     catPaperUser = 13
 
 
-class CATPPRTreeItemType(Enum):
+class CATPPRTreeItemType(IntEnum):
     CATProcessList = 0
     CATProductList = 1
     CATResourcesList = 2
 
 
-class CatPrintColor(Enum):
+class CatPrintColor(IntEnum):
     catColorTrueColor = 0
     catColorGreyScale = 1
     catColorMonochrome = 2
 
 
-class CatPrinterDirState(Enum):
+class CatPrinterDirState(IntEnum):
     CatPrinterDirFree = 0
     CatPrinterDirProtect = 1
 
 
-class CatPrintLineCap(Enum):
+class CatPrintLineCap(IntEnum):
     catPrintFlat = 0
     catPrintSquare = 1
     catPrintRound = 2
 
 
-class CatPrintLineSpecification(Enum):
+class CatPrintLineSpecification(IntEnum):
     catPrintAbsolute = 0
     catPrintScaled = 1
     catPrintNoThickness = 2
 
 
-class CatPrintQuality(Enum):
+class CatPrintQuality(IntEnum):
     catPrintQualityDraft = 0
     catPrintQualityLow = 1
     catPrintQualityMedium = 2
@@ -141,7 +141,7 @@ class CatPrintQuality(Enum):
     catPrintQualityCustom = 4
 
 
-class CatPrintRenderingMode(Enum):
+class CatPrintRenderingMode(IntEnum):
     catPrintRenderingModeDefault = 0
     catPrintRenderingModeWireframe = 1
     catPrintRenderingModeHiddenLineRemoval = 2
@@ -150,13 +150,13 @@ class CatPrintRenderingMode(Enum):
     catPrintRenderingModeOnScreen = 5
 
 
-class CatProjectionMode(Enum):
+class CatProjectionMode(IntEnum):
     catProjectionConic = 0
     catProjectionCylindric = 1
     catProjectionUndefined = 2
 
 
-class CatRenderingMode(Enum):
+class CatRenderingMode(IntEnum):
     catRenderShading = 0
     catRenderShadingWithEdges = 1
     catRenderWireFrame = 2
@@ -199,13 +199,13 @@ class CatRenderingMode(Enum):
     catRenderCustomRenderingMode = 39
 
 
-class CatScriptCommand(Enum):
+class CatScriptCommand(IntEnum):
     CatScriptCommandDefault = 0
     CatScriptCommandStop = 1
     CatScriptCommandStart = 2
 
 
-class CATSelectionFilter(Enum):
+class CATSelectionFilter(IntEnum):
     ZeroDim = 0
     MonoDim = 1
     MonoDimInfinite = 2
@@ -219,13 +219,13 @@ class CATSelectionFilter(Enum):
     TriDim = 10
 
 
-class CatSpecsAndGeomWindowLayout(Enum):
+class CatSpecsAndGeomWindowLayout(IntEnum):
     catWindowSpecsOnly = 0
     catWindowGeomOnly = 1
     catWindowSpecsAndGeom = 2
 
 
-class CatSpecsLayout(Enum):
+class CatSpecsLayout(IntEnum):
     catSpecsViewerHorizontalIndented = 0
     catSpecsViewerHorizontalUp = 1
     catSpecsViewerHorizontalCentered = 2
@@ -234,27 +234,27 @@ class CatSpecsLayout(Enum):
     catSpecsViewerVerticalRelational = 5
 
 
-class CatVisLayerType(Enum):
+class CatVisLayerType(IntEnum):
     catVisLayerBasic = 0
     catVisLayerNone = 1
 
 
-class CatVisPropertyPick(Enum):
+class CatVisPropertyPick(IntEnum):
     catVisPropertyPickAttr = 0
     catVisPropertyNoPickAttr = 1
 
 
-class CatVisPropertyShow(Enum):
+class CatVisPropertyShow(IntEnum):
     catVisPropertyShowAttr = 0
     catVisPropertyNoShowAttr = 1
 
 
-class CatVisPropertyStatus(Enum):
+class CatVisPropertyStatus(IntEnum):
     catVisPropertyDefined = 0
     catVisPropertyUnDefined = 1
 
 
-class CatVisPropertyType(Enum):
+class CatVisPropertyType(IntEnum):
     catVisPropertyLineType = 0
     catVisPropertyWidth = 1
     catVisPropertyColor = 2
@@ -263,7 +263,7 @@ class CatVisPropertyType(Enum):
     catVisPropertyAll = 5
 
 
-class CatWindowState(Enum):
+class CatWindowState(IntEnum):
     catWindowStateMaximized = 0
     catWindowStateMinimized = 1
     catWindowStateNormal = 2

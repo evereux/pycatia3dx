@@ -1,68 +1,68 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATAxisSystemAxisType(Enum):
+class CATAxisSystemAxisType(IntEnum):
     catAxisSystemAxisSameDirection = 0
     catAxisSystemAxisByCoordinates = 1
     catAxisSystemAxisOppositeDirection = 2
 
 
-class CATAxisSystemMainType(Enum):
+class CATAxisSystemMainType(IntEnum):
     catAxisSystemStandard = 0
     catAxisSystemAxisRotation = 1
     catAxisSystemEulerAngles = 2
     catAxisSystemExplicit = 3
 
 
-class CATAxisSystemOriginType(Enum):
+class CATAxisSystemOriginType(IntEnum):
     catAxisSystemOriginByPoint = 0
     catAxisSystemOriginByCoordinates = 1
 
 
-class CatConstraintAngleSector(Enum):
+class CatConstraintAngleSector(IntEnum):
     catCstAngleSector0 = 0
     catCstAngleSector1 = 1
     catCstAngleSector2 = 2
     catCstAngleSector3 = 3
 
 
-class CatConstraintDistConfig(Enum):
+class CatConstraintDistConfig(IntEnum):
     catCstDCUnspec = 0
     catCstDCParallel = 1
     catCstDCParallelSameOrient = 2
     catCstDCParallelOppOrient = 3
 
 
-class CatConstraintDistDirection(Enum):
+class CatConstraintDistDirection(IntEnum):
     catCstDistDirectionNone = 0
     catCstDistDirection1 = 1
     catCstDistDirection2 = 2
     catCstDistDirection3 = 3
 
 
-class CatConstraintMode(Enum):
+class CatConstraintMode(IntEnum):
     catCstModeDrivingDimension = 0
     catCstModeDrivenDimension = 1
 
 
-class CatConstraintOrientation(Enum):
+class CatConstraintOrientation(IntEnum):
     catCstOrientSame = 0
     catCstOrientOpposite = 1
     catCstOrientUndefined = 2
 
 
-class CatConstraintRefAxis(Enum):
+class CatConstraintRefAxis(IntEnum):
     catCstRefAxisX = 0
     catCstRefAxisY = 1
     catCstRefAxisZ = 2
 
 
-class CatConstraintRefType(Enum):
+class CatConstraintRefType(IntEnum):
     catCstRefTypeRelative = 0
     catCstRefTypeFixInSpace = 1
 
 
-class CatConstraintSide(Enum):
+class CatConstraintSide(IntEnum):
     catCstSidePositive = 0
     catCstSideNegative = 1
     catCstSideSameAsValue = 2
@@ -70,7 +70,7 @@ class CatConstraintSide(Enum):
     catCstSideUndefined = 4
 
 
-class CatConstraintStatus(Enum):
+class CatConstraintStatus(IntEnum):
     catCstStatusOK = 0
     catCstStatusKOStronglyNotSatisfied = 1
     catCstStatusKOWrongOrientOrSide = 2
@@ -79,7 +79,7 @@ class CatConstraintStatus(Enum):
     catCstStatusKOBroken = 5
 
 
-class CatConstraintType(Enum):
+class CatConstraintType(IntEnum):
     catCstTypeReference = 0
     catCstTypeDistance = 1
     catCstTypeOn = 2

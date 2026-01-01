@@ -1,18 +1,18 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimAcousticAbsorptionMaterialTableColumn(Enum):
+class SimAcousticAbsorptionMaterialTableColumn(IntEnum):
     SimAcousticAbsorptionMagnitude = 0
     SimAcousticAbsorptionPhase = 1
     SimAcousticAbsorptionFrequency = 2
 
 
-class SimBulkModulusBulkModulusType(Enum):
+class SimBulkModulusBulkModulusType(IntEnum):
     SimBulkModulusBulk_Modulus = 0
     SimBulkModulusComplex_Bulk_Modulus = 1
 
 
-class SimBulkModulusMaterialTableColumn(Enum):
+class SimBulkModulusMaterialTableColumn(IntEnum):
     SimBulkModulusRealPart = 0
     SimBulkModulusTemperature = 1
     SimBulkModulusComplexRealPart = 2
@@ -20,30 +20,30 @@ class SimBulkModulusMaterialTableColumn(Enum):
     SimBulkModulusFrequency = 4
 
 
-class SimCastIronPlasticityCompressionHardeningMaterialTableColumn(Enum):
+class SimCastIronPlasticityCompressionHardeningMaterialTableColumn(IntEnum):
     SimCastIronPlasticitySigmaC = 0
     SimCastIronPlasticityEpsilonC = 1
     SimCastIronPlasticityTemperatureC = 2
 
 
-class SimCastIronPlasticityPlasticityMaterialTableColumn(Enum):
+class SimCastIronPlasticityPlasticityMaterialTableColumn(IntEnum):
     SimCastIronPlasticityPlasticPoissonsRatio = 0
     SimCastIronPlasticityPlasticTemperature = 1
 
 
-class SimCastIronPlasticityTensionHardeningMaterialTableColumn(Enum):
+class SimCastIronPlasticityTensionHardeningMaterialTableColumn(IntEnum):
     SimCastIronPlasticitySigmaT = 0
     SimCastIronPlasticityEpsilonT = 1
     SimCastIronPlasticityTemperatureT = 2
 
 
-class SimConductivityConductivityType(Enum):
+class SimConductivityConductivityType(IntEnum):
     SimConductivityIsotropicConductivity = 0
     SimConductivityOrthotropicConductivity = 1
     SimConductivityAnisotropicConductivity = 2
 
 
-class SimConductivityMaterialTableColumn(Enum):
+class SimConductivityMaterialTableColumn(IntEnum):
     SimConductivityThermalConductivity = 0
     SimConductivityK1 = 1
     SimConductivityK2 = 2
@@ -57,17 +57,17 @@ class SimConductivityMaterialTableColumn(Enum):
     SimConductivityTemperature = 10
 
 
-class SimDamageEvolutionCategory(Enum):
+class SimDamageEvolutionCategory(IntEnum):
     SimDamageEvolutionDisplacement = 0
     SimDamageEvolutionEnergy = 1
 
 
-class SimDamageEvolutionDegradation(Enum):
+class SimDamageEvolutionDegradation(IntEnum):
     SimDamageEvolutionMaximum = 0
     SimDamageEvolutionMultiplicative = 1
 
 
-class SimDamageEvolutionMaterialTableColumn(Enum):
+class SimDamageEvolutionMaterialTableColumn(IntEnum):
     SimDamageEvolutionLongitudinalTensileFractureEnergy = 0
     SimDamageEvolutionLongitudinalCompressiveFractureEnergy = 1
     SimDamageEvolutionTransverseTensileFractureEnergy = 2
@@ -80,37 +80,37 @@ class SimDamageEvolutionMaterialTableColumn(Enum):
     SimDamageEvolutionTemperature = 9
 
 
-class SimDamageEvolutionSoftening(Enum):
+class SimDamageEvolutionSoftening(IntEnum):
     SimDamageEvolutionLinear = 0
     SimDamageEvolutionExponential = 1
     SimDamageEvolutionTabular = 2
 
 
-class SimDamageStabilizationMaterialTableColumn(Enum):
+class SimDamageStabilizationMaterialTableColumn(IntEnum):
     SimDamageStabilizationViscosityCoefficientLongitudinalTensileDirection = 0
     SimDamageStabilizationViscosityCoefficientLongitudinalCompressiveDirection = 1
     SimDamageStabilizationViscosityCoefficientTransverseTensileDirection = 2
     SimDamageStabilizationViscosityCoefficientTransverseCompressiveDirection = 3
 
 
-class SimDensityMaterialTableColumn(Enum):
+class SimDensityMaterialTableColumn(IntEnum):
     SimDensityDensity = 0
     SimDensityTemperature = 1
 
 
-class SimDepvarMaterialTableColumn(Enum):
+class SimDepvarMaterialTableColumn(IntEnum):
     SimDepvarOutputVariableKey = 0
     SimDepvarOutputVariableDescription = 1
 
 
-class SimDuctileDamageMaterialTableColumn(Enum):
+class SimDuctileDamageMaterialTableColumn(IntEnum):
     SimDuctileDamageFractureStrain = 0
     SimDuctileDamageStressTriaxiality = 1
     SimDuctileDamageStrainRate = 2
     SimDuctileDamageTemperature = 3
 
 
-class SimElasticElasticType(Enum):
+class SimElasticElasticType(IntEnum):
     SimElasticIsotropic = 0
     SimElasticOrthotropic = 1
     SimElasticEngineeringConstants = 2
@@ -119,7 +119,7 @@ class SimElasticElasticType(Enum):
     SimElasticTransverselyIsotropic = 5
 
 
-class SimElasticMaterialTableColumn(Enum):
+class SimElasticMaterialTableColumn(IntEnum):
     SimElasticYoungsModulus = 0
     SimElasticPoissonsRatio = 1
     SimElasticD1111 = 2
@@ -160,37 +160,37 @@ class SimElasticMaterialTableColumn(Enum):
     SimElasticTemperature = 37
 
 
-class SimElasticModuliTimeScaleType(Enum):
+class SimElasticModuliTimeScaleType(IntEnum):
     SimElasticLongTerm = 0
     SimElasticInstantaneous = 1
 
 
-class SimElongationMaterialTableColumn(Enum):
+class SimElongationMaterialTableColumn(IntEnum):
     SimElongationElongationAtFracture = 0
     SimElongationTemperature = 1
 
 
-class SimEOSEOSType(Enum):
+class SimEOSEOSType(IntEnum):
     SimEOSIdealGas = 0
     SimEOSJWL = 1
     SimEOSUsUp = 2
     SimEOSTabular = 3
 
 
-class SimEOSMaterialTableColumn(Enum):
+class SimEOSMaterialTableColumn(IntEnum):
     SimEOSf1 = 0
     SimEOSf2 = 1
     SimEOSVolumetricStrain = 2
 
 
-class SimExpansionExpansionType(Enum):
+class SimExpansionExpansionType(IntEnum):
     SimExpansionIsotropic = 0
     SimExpansionAnisotropic = 1
     SimExpansionOrthotropic = 2
     SimExpansionTransverselyIsotropic = 3
 
 
-class SimExpansionMaterialTableColumn(Enum):
+class SimExpansionMaterialTableColumn(IntEnum):
     SimExpansionAlpha = 0
     SimExpansionAlpha11 = 1
     SimExpansionAlpha22 = 2
@@ -203,7 +203,7 @@ class SimExpansionMaterialTableColumn(Enum):
     SimExpansionTemperature = 9
 
 
-class SimFailStrainMaterialTableColumn(Enum):
+class SimFailStrainMaterialTableColumn(IntEnum):
     SimFailStrainTensileStrainFiber = 0
     SimFailStrainCompressiveStrainFiber = 1
     SimFailStrainTensileStrainFiberTransverse = 2
@@ -212,7 +212,7 @@ class SimFailStrainMaterialTableColumn(Enum):
     SimFailStrainTemperature = 5
 
 
-class SimFailStressMaterialTableColumn(Enum):
+class SimFailStressMaterialTableColumn(IntEnum):
     SimFailStressTensileStressFiber = 0
     SimFailStressCompressiveStressFiber = 1
     SimFailStressTensileStressFiberTransverse = 2
@@ -223,12 +223,12 @@ class SimFailStressMaterialTableColumn(Enum):
     SimFailStressTemperature = 7
 
 
-class SimFluidCapacityInput(Enum):
+class SimFluidCapacityInput(IntEnum):
     SimFluidCapacityPolynomial = 0
     SimFluidCapacityTabular = 1
 
 
-class SimFluidCapacityMaterialTableColumn(Enum):
+class SimFluidCapacityMaterialTableColumn(IntEnum):
     SimFluidCapacityMolarHeat = 0
     SimFluidCapacityMolarHeatA = 1
     SimFluidCapacityMolarHeatB = 2
@@ -238,64 +238,64 @@ class SimFluidCapacityMaterialTableColumn(Enum):
     SimFluidCapacityTemperature = 6
 
 
-class SimFluidCavityBulkModulusMaterialTableColumn(Enum):
+class SimFluidCavityBulkModulusMaterialTableColumn(IntEnum):
     SimFluidCavityBulkModulusBulkModulus = 0
     SimFluidCavityBulkModulusTemperature = 1
 
 
-class SimFluidCavityDensityMaterialTableColumn(Enum):
+class SimFluidCavityDensityMaterialTableColumn(IntEnum):
     SimFluidCavityDensityConstant = 0
     SimFluidCavityDensityTemperature = 1
 
 
-class SimFluidCavityExpansionMaterialTableColumn(Enum):
+class SimFluidCavityExpansionMaterialTableColumn(IntEnum):
     SimFluidCavityExpansionCoefficient = 0
     SimFluidCavityExpansionTemperature = 1
 
 
-class SimFluidMolecularWeightMaterialTableColumn(Enum):
+class SimFluidMolecularWeightMaterialTableColumn(IntEnum):
     SimFluidMolecularWeightConstant = 0
 
 
-class SimGasketMembraneElasticMaterialTableColumn(Enum):
+class SimGasketMembraneElasticMaterialTableColumn(IntEnum):
     SimGasketMembraneElasticYoungsModulus = 0
     SimGasketMembraneElasticPoissonsRatio = 1
     SimGasketMembraneElasticTemperature = 2
 
 
-class SimGasketThicknessBehaviorBehaviorType(Enum):
+class SimGasketThicknessBehaviorBehaviorType(IntEnum):
     SimGasketThicknessBehaviorElasticPlastic = 0
     SimGasketThicknessBehaviorDamage = 1
 
 
-class SimGasketThicknessBehaviorLoadingMaterialTableColumn(Enum):
+class SimGasketThicknessBehaviorLoadingMaterialTableColumn(IntEnum):
     SimGasketThicknessBehaviorLoadPressure = 0
     SimGasketThicknessBehaviorLoadClosure = 1
     SimGasketThicknessBehaviorLoadTemperature = 2
 
 
-class SimGasketThicknessBehaviorUnloadingMaterialTableColumn(Enum):
+class SimGasketThicknessBehaviorUnloadingMaterialTableColumn(IntEnum):
     SimGasketThicknessBehaviorUnloadPressure = 0
     SimGasketThicknessBehaviorUnloadClosure = 1
     SimGasketThicknessBehaviorUnloadPlasticClosure = 2
     SimGasketThicknessBehaviorUnloadTemperature = 3
 
 
-class SimGasketTransverseShearElasticMaterialTableColumn(Enum):
+class SimGasketTransverseShearElasticMaterialTableColumn(IntEnum):
     SimGasketTransverseShearElasticShearStiffness = 0
     SimGasketTransverseShearElasticTemperature = 1
 
 
-class SimGasketTransverseShearElasticUnitType(Enum):
+class SimGasketTransverseShearElasticUnitType(IntEnum):
     SimGasketTransverseShearElasticStress = 0
     SimGasketTransverseShearElasticForce = 1
 
 
-class SimHashinDamageEvolutionCondition(Enum):
+class SimHashinDamageEvolutionCondition(IntEnum):
     SimHashinDamageEvolutionEnergy = 0
 
 
-class SimHashinDamageEvolutionMaterialTableColumn(Enum):
+class SimHashinDamageEvolutionMaterialTableColumn(IntEnum):
     SimHashinDamageEvolutionLongitudinalTensileFractureEnergy = 0
     SimHashinDamageEvolutionLongitudinalCompressiveFractureEnergy = 1
     SimHashinDamageEvolutionTransverseTensileFractureEnergy = 2
@@ -303,11 +303,11 @@ class SimHashinDamageEvolutionMaterialTableColumn(Enum):
     SimHashinDamageEvolutionTemperature = 4
 
 
-class SimHashinDamageEvolutionSofteningResponse(Enum):
+class SimHashinDamageEvolutionSofteningResponse(IntEnum):
     SimHashinDamageEvolutionLinear = 0
 
 
-class SimHashinDamageMaterialTableColumn(Enum):
+class SimHashinDamageMaterialTableColumn(IntEnum):
     SimHashinDamageLongitudinalTensileStrength = 0
     SimHashinDamageLongitudinalCompressiveStrength = 1
     SimHashinDamageTransverseTensileStrength = 2
@@ -317,11 +317,11 @@ class SimHashinDamageMaterialTableColumn(Enum):
     SimHashinDamageTemperature = 6
 
 
-class SimHeatGenerationUserDefinedMaterialTableColumn(Enum):
+class SimHeatGenerationUserDefinedMaterialTableColumn(IntEnum):
     SimHeatGenerationUserDefinedProperties = 0
 
 
-class SimHyperelasticityMaterialTableColumn(Enum):
+class SimHyperelasticityMaterialTableColumn(IntEnum):
     SimHyperelasticityMu = 0
     SimHyperelasticityLambdaM = 1
     SimHyperelasticityD = 2
@@ -376,12 +376,12 @@ class SimHyperelasticityMaterialTableColumn(Enum):
     SimHyperelasticityTemperature = 51
 
 
-class SimHyperelasticityModuliTimeScale(Enum):
+class SimHyperelasticityModuliTimeScale(IntEnum):
     SimHyperelasticityLongTerm = 0
     SimHyperelasticityInstantaneous = 1
 
 
-class SimHyperelasticityStrainEnergyPotentialOrder(Enum):
+class SimHyperelasticityStrainEnergyPotentialOrder(IntEnum):
     SimHyperelasticityN1 = 0
     SimHyperelasticityN2 = 1
     SimHyperelasticityN3 = 2
@@ -390,7 +390,7 @@ class SimHyperelasticityStrainEnergyPotentialOrder(Enum):
     SimHyperelasticityN6 = 5
 
 
-class SimHyperelasticityStrainEnergyPotential(Enum):
+class SimHyperelasticityStrainEnergyPotential(IntEnum):
     SimHyperelasticityArruda_Boyce = 0
     SimHyperelasticityNeo_Hooke = 1
     SimHyperelasticityOgden = 2
@@ -401,7 +401,7 @@ class SimHyperelasticityStrainEnergyPotential(Enum):
     SimHyperelasticityYeoh = 7
 
 
-class SimHyperfoamMaterialTableColumn(Enum):
+class SimHyperfoamMaterialTableColumn(IntEnum):
     SimHyperfoammu1 = 0
     SimHyperfoammu2 = 1
     SimHyperfoammu3 = 2
@@ -423,12 +423,12 @@ class SimHyperfoamMaterialTableColumn(Enum):
     SimHyperfoamTemperature = 18
 
 
-class SimHyperfoamModuliTimeScale(Enum):
+class SimHyperfoamModuliTimeScale(IntEnum):
     SimHyperfoamLONG_TERM = 0
     SimHyperfoamINSTANTANEOUS = 1
 
 
-class SimHyperfoamStrainEnergyPotentialOrder(Enum):
+class SimHyperfoamStrainEnergyPotentialOrder(IntEnum):
     SimHyperfoamN1 = 0
     SimHyperfoamN2 = 1
     SimHyperfoamN3 = 2
@@ -437,19 +437,19 @@ class SimHyperfoamStrainEnergyPotentialOrder(Enum):
     SimHyperfoamN6 = 5
 
 
-class SimLatentHeatMaterialTableColumn(Enum):
+class SimLatentHeatMaterialTableColumn(IntEnum):
     SimLatentHeatLatentHeat = 0
     SimLatentHeatSolidusTemperature = 1
     SimLatentHeatLiquidusTemperature = 2
 
 
-class SimMaterialTableOptionalColumn(Enum):
+class SimMaterialTableOptionalColumn(IntEnum):
     SimMaterialTableStrainRate = 0
     SimMaterialTableFrequency = 1
     SimMaterialTableTemperature = 2
 
 
-class SimPlasticIsotropicMaterialTableColumn(Enum):
+class SimPlasticIsotropicMaterialTableColumn(IntEnum):
     SimPlasticIsotropicYieldStress = 0
     SimPlasticIsotropicPlasticStrain = 1
     SimPlasticIsotropicStrainRate = 2
@@ -466,7 +466,7 @@ class SimPlasticIsotropicMaterialTableColumn(Enum):
     SimPlasticIsotropicTemperature = 13
 
 
-class SimPlasticKinematicMaterialTableColumn(Enum):
+class SimPlasticKinematicMaterialTableColumn(IntEnum):
     SimPlasticKinematicYieldStress = 0
     SimPlasticC1 = 1
     SimPlasticC2 = 2
@@ -491,7 +491,7 @@ class SimPlasticKinematicMaterialTableColumn(Enum):
     SimPlasticKinematicTemperature = 21
 
 
-class SimPlasticPlasticHardening(Enum):
+class SimPlasticPlasticHardening(IntEnum):
     SimPlasticIsotropic_Tabular = 0
     SimPlasticIsotropic_JohnsonCook = 1
     SimPlasticKinematic = 2
@@ -499,12 +499,12 @@ class SimPlasticPlasticHardening(Enum):
     SimPlasticCombined_Exponential = 4
 
 
-class SimPlasticPlasticYieldCriteria(Enum):
+class SimPlasticPlasticYieldCriteria(IntEnum):
     SimPlasticMises = 0
     SimPlasticHill = 1
 
 
-class SimPlasticPotentialMaterialTableColumn(Enum):
+class SimPlasticPotentialMaterialTableColumn(IntEnum):
     SimPlasticR11 = 0
     SimPlasticR22 = 1
     SimPlasticR33 = 2
@@ -514,7 +514,7 @@ class SimPlasticPotentialMaterialTableColumn(Enum):
     SimPlasticPotentialTemperature = 6
 
 
-class SimPorousElasticityMaterialTableColumn(Enum):
+class SimPorousElasticityMaterialTableColumn(IntEnum):
     SimPorousElasticityLogBulkModulus = 0
     SimPorousElasticityShearModulus = 1
     SimPorousElasticityPoissonRatio = 2
@@ -522,23 +522,23 @@ class SimPorousElasticityMaterialTableColumn(Enum):
     SimPorousElasticityTemperature = 4
 
 
-class SimPorousElasticityShearType(Enum):
+class SimPorousElasticityShearType(IntEnum):
     SimPorousElasticityG = 0
     SimPorousElasticityPoisson = 1
 
 
-class SimProofStressMaterialTableColumn(Enum):
+class SimProofStressMaterialTableColumn(IntEnum):
     SimProofStressProofStressAt2PC = 0
     SimProofStressTemperature = 1
 
 
-class SimRateDependentHardeningType(Enum):
+class SimRateDependentHardeningType(IntEnum):
     SimPowerlaw = 0
     SimYieldRatio = 1
     SimJohnsonCook = 2
 
 
-class SimRateDependentMaterialTableColumn(Enum):
+class SimRateDependentMaterialTableColumn(IntEnum):
     SimRateDependentMultiplier = 0
     SimRateDependentExponent = 1
     SimRateDependentYieldStressRatio = 2
@@ -546,71 +546,71 @@ class SimRateDependentMaterialTableColumn(Enum):
     SimRateDependentTemperature = 4
 
 
-class SimSpecificHeatMaterialTableColumn(Enum):
+class SimSpecificHeatMaterialTableColumn(IntEnum):
     SimSpecificHeatSpecificHeat = 0
     SimSpecificHeatTemperature = 1
 
 
-class SimSpecificHeatSpecificHeatType(Enum):
+class SimSpecificHeatSpecificHeatType(IntEnum):
     SimSpecificHeatConstantVolume = 0
     SimSpecificHeatConstantPressure = 1
 
 
-class SimTensileFailureCriteria(Enum):
+class SimTensileFailureCriteria(IntEnum):
     SimNone = 0
     SimBrittle = 1
     SimDuctile = 2
 
 
-class SimTensileFailureMaterialTableColumn(Enum):
+class SimTensileFailureMaterialTableColumn(IntEnum):
     SimTensileFailureHydroStaticCutOffStress = 0
     SimTensileFailureTemperature = 1
 
 
-class SimUltimateStrengthMaterialCompressiveTableColumn(Enum):
+class SimUltimateStrengthMaterialCompressiveTableColumn(IntEnum):
     SimUltimateStrengthUltimateCompressiveStrength = 0
     SimUltimateStrengthCompressiveTemperature = 1
 
 
-class SimUltimateStrengthMaterialTensileTableColumn(Enum):
+class SimUltimateStrengthMaterialTensileTableColumn(IntEnum):
     SimUltimateStrengthUltimateTensileStrength = 0
     SimUltimateStrengthTensileTemperature = 1
 
 
-class SimUserDefinedFieldDirectSpecificationTableColumn(Enum):
+class SimUserDefinedFieldDirectSpecificationTableColumn(IntEnum):
     SimUserDefinedFieldVariableNum = 0
     SimUserDefinedFieldVariableName = 1
 
 
-class SimUserDefinedFieldRedefinitionResource(Enum):
+class SimUserDefinedFieldRedefinitionResource(IntEnum):
     SimUserDefinedFieldUserSubroutineRedefinition = 0
     SimUserDefinedFieldDirectSpecificationRedefinition = 1
 
 
-class SimUserDefinedHybridFormulation(Enum):
+class SimUserDefinedHybridFormulation(IntEnum):
     SimUserDefinedIncremental = 0
     SimUserDefinedTotal = 1
     SimUserDefinedIncompressible = 2
 
 
-class SimUserDefinedMaterialTableColumn(Enum):
+class SimUserDefinedMaterialTableColumn(IntEnum):
     SimUserDefinedMechanicalConstants = 0
     SimUserDefinedThermalConstants = 1
 
 
-class SimUserDefinedPhysics(Enum):
+class SimUserDefinedPhysics(IntEnum):
     SimUserDefinedMechanical = 0
     SimUserDefinedThermal = 1
     SimUserDefinedThermoMechanical = 2
 
 
-class SimViscoelasticityFrequencyType(Enum):
+class SimViscoelasticityFrequencyType(IntEnum):
     SimViscoelasticityFORMULA = 0
     SimViscoelasticityPRONY = 1
     SimViscoelasticityTABULAR = 2
 
 
-class SimViscoelasticityMaterialTableColumn(Enum):
+class SimViscoelasticityMaterialTableColumn(IntEnum):
     SimViscoelasticityRealG1 = 0
     SimViscoelasticityImagG1 = 1
     SimViscoelasticityA = 2
@@ -647,28 +647,28 @@ class SimViscoelasticityMaterialTableColumn(Enum):
     SimViscoelasticityTimeFreq = 33
 
 
-class SimViscoelasticityPreloadType(Enum):
+class SimViscoelasticityPreloadType(IntEnum):
     SimViscoelasticityNONE = 0
     SimViscoelasticityUNIAXIAL = 1
     SimViscoelasticityVOLUMETRIC = 2
 
 
-class SimViscoelasticityTabularSubType(Enum):
+class SimViscoelasticityTabularSubType(IntEnum):
     SimViscoelasticityISOTROPIC = 0
     SimViscoelasticityTRACTION = 1
 
 
-class SimViscoelasticityTimeType(Enum):
+class SimViscoelasticityTimeType(IntEnum):
     SimViscoelasticityTIMEPRONY = 0
     SimViscoelasticityFREQUENCYDATA = 1
 
 
-class SimViscoelasticityViscoelasticityDomain(Enum):
+class SimViscoelasticityViscoelasticityDomain(IntEnum):
     SimViscoelasticityFREQUENCY = 0
     SimViscoelasticityTIME = 1
 
 
-class SimVolumetricDragMaterialTableColumn(Enum):
+class SimVolumetricDragMaterialTableColumn(IntEnum):
     SimVolumetricDragVolumetricDrag = 0
     SimVolumetricDragFrequency = 1
     SimVolumetricDragTemperature = 2

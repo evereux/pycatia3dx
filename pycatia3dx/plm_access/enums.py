@@ -1,19 +1,19 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SearchCondition(Enum):
+class SearchCondition(IntEnum):
     SearchCondition_AND = 0
     SearchCondition_OR = 1
 
 
-class SearchMode(Enum):
+class SearchMode(IntEnum):
     SearchMode_Easy = 0
     SearchMode_Extended = 1
     SearchMode_Expert = 2
     SearchMode_Predefined = 3
 
 
-class SearchOperator(Enum):
+class SearchOperator(IntEnum):
     SearchOperator_EQ = 0
     SearchOperator_NOT_EQ = 1
     SearchOperator_LIKE = 2
@@ -28,6 +28,6 @@ class SearchOperator(Enum):
     SearchOperator_NOT_NULL = 11
 
 
-class SearchSortOrder(Enum):
+class SearchSortOrder(IntEnum):
     SearchSortOrder_Ascending = 0
     SearchSortOrder_Descending = 1
