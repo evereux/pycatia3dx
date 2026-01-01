@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatAnnotationSetType(Enum):
+class CatAnnotationSetType(IntEnum):
     catAnnotationSetStandard = 0
     catAnnotationSetLight = 1
     catAnnotationSetResult = 2

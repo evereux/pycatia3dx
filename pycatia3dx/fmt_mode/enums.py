@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimMeshEntityType(Enum):
+class SimMeshEntityType(IntEnum):
     simMeshUnknownEntity = 0
     simMeshNodeEntity = 1
     simMeshEdgeEntity = 2
@@ -9,7 +9,7 @@ class SimMeshEntityType(Enum):
     simMeshElementEntity = 4
 
 
-class SimMeshingRuleAttr(Enum):
+class SimMeshingRuleAttr(IntEnum):
     simMeshingRuleName = 0
     simMeshingRuleRevision = 1
     simMeshingRuleExtension = 2

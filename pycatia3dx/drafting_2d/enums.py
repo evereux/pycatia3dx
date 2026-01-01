@@ -1,16 +1,16 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatImportFromDrawingOption(Enum):
+class CatImportFromDrawingOption(IntEnum):
     CatImportAll = 0
 
 
-class CatView2DModeVisu(Enum):
+class CatView2DModeVisu(IntEnum):
     catView2DModeNotActivated = 0
     catView2DModeNoShow = 1
 
 
-class CatViewSide(Enum):
+class CatViewSide(IntEnum):
     catTopSide = 0
     catBottomSide = 1
     catLeftSide = 2
@@ -21,13 +21,13 @@ class CatViewSide(Enum):
     catBRCorner = 7
 
 
-class CatViewType(Enum):
+class CatViewType(IntEnum):
     catAuxiliaryView = 0
     catSectionView = 1
     catSectionCutView = 2
 
 
-class CatVisuBackgroundMode(Enum):
+class CatVisuBackgroundMode(IntEnum):
     catNoBackground = 0
     catPick = 1
     catNoPick = 2
@@ -35,6 +35,6 @@ class CatVisuBackgroundMode(Enum):
     catLowIntNoPick = 4
 
 
-class CatVisuIn3DMode(Enum):
+class CatVisuIn3DMode(IntEnum):
     catShowAll = 0
     catHideAll = 1

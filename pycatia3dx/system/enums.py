@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATScriptLanguage(Enum):
+class CATScriptLanguage(IntEnum):
     CATVBScriptLanguage = 0
     CATVBALanguage = 1
     CATBasicScriptLanguage = 2
@@ -11,7 +11,7 @@ class CATScriptLanguage(Enum):
     CATVBNetLanguage = 6
 
 
-class CatScriptLibraryType(Enum):
+class CatScriptLibraryType(IntEnum):
     catScriptLibraryTypeDocument = 0
     catScriptLibraryTypeDirectory = 1
     catScriptLibraryTypeVBAProject = 2

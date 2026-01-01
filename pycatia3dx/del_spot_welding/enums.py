@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class DELDRApproachDirection(Enum):
+class DELDRApproachDirection(IntEnum):
     DRProfile_ApproachXPlus = 0
     DRProfile_ApproachXMinus = 1
     DRProfile_ApproachYPlus = 2
@@ -10,7 +10,7 @@ class DELDRApproachDirection(Enum):
     DRProfile_ApproachZMinus = 5
 
 
-class DELDRProfileCycle(Enum):
+class DELDRProfileCycle(IntEnum):
     DRProfile_Drill = 0
     DRProfile_CounterSink = 1
     DRProfile_RivetBolt = 2
@@ -24,26 +24,26 @@ class DELDRProfileCycle(Enum):
     DRProfile_User7 = 10
 
 
-class DELDRProfileMoves(Enum):
+class DELDRProfileMoves(IntEnum):
     DRProfile_Approach = 0
     DRProfile_Action = 1
     DRProfile_Retract = 2
 
 
-class DELDRProfilePrecycle(Enum):
+class DELDRProfilePrecycle(IntEnum):
     DRProfile_None = 0
     DRProfile_Hole = 1
     DRProfile_Rivet = 2
     DRProfile_Bolt = 3
 
 
-class DELDRProfileType(Enum):
+class DELDRProfileType(IntEnum):
     DRProfile_DrillOnly = 0
     DRProfile_RivetOnly = 1
     DRProfile_DrillRivet = 2
 
 
-class DELSpotRivetApproachDirection(Enum):
+class DELSpotRivetApproachDirection(IntEnum):
     RivetProfile_ApproachXPlus = 0
     RivetProfile_ApproachXMinus = 1
     RivetProfile_ApproachYPlus = 2
@@ -52,7 +52,7 @@ class DELSpotRivetApproachDirection(Enum):
     RivetProfile_ApproachZMinus = 5
 
 
-class DELSpotRivetProfileMoves(Enum):
+class DELSpotRivetProfileMoves(IntEnum):
     RivetProfile_Approach = 0
     RivetProfile_Start = 1
     RivetProfile_Action = 2

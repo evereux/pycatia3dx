@@ -1,24 +1,24 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class Cat3DColorInheritanceMode(Enum):
+class Cat3DColorInheritanceMode(IntEnum):
     cat3DColorInheritanceModeOff = 0
     cat3DColorInheritanceModeOn = 1
 
 
-class CatAreaFillType(Enum):
+class CatAreaFillType(IntEnum):
     catAreaFillOnCurves = 0
     catAreaFillOnMathematicPoints = 1
 
 
-class CatDftGenRepresentationPolicy(Enum):
+class CatDftGenRepresentationPolicy(IntEnum):
     catDftAllDesignRepsPolicy = 0
     catDftFirstDesignRepsPolicy = 1
     catDftAllSessionRepsPolicy = 2
     catDftCustomParam = 3
 
 
-class CatDrawingViewType(Enum):
+class CatDrawingViewType(IntEnum):
     catViewBackground = 0
     catViewFront = 1
     catViewLeft = 2
@@ -38,7 +38,7 @@ class CatDrawingViewType(Enum):
     catViewAxonometric = 16
 
 
-class CatFilletRepresentation(Enum):
+class CatFilletRepresentation(IntEnum):
     catFilletRepNone = 0
     catFilletRepBoundary = 1
     catFilletRepSymbolic = 2
@@ -46,14 +46,14 @@ class CatFilletRepresentation(Enum):
     catFilletRepProjectedOriginalEdge = 4
 
 
-class CatGenRepresentationMode(Enum):
+class CatGenRepresentationMode(IntEnum):
     catModeExact = 0
     catModeCGR = 1
     catModeApproximate = 2
     catModeRaster = 3
 
 
-class CatGenViewRasterMode(Enum):
+class CatGenViewRasterMode(IntEnum):
     catImageHRD = 0
     catImageShading = 1
     catImageShadingEdges = 2
@@ -61,12 +61,12 @@ class CatGenViewRasterMode(Enum):
     catImageShadingEdgesNoLight = 4
 
 
-class CatHiddenLineMode(Enum):
+class CatHiddenLineMode(IntEnum):
     catHlrModeOff = 0
     catHlrModeOn = 1
 
 
-class CatImageViewMode(Enum):
+class CatImageViewMode(IntEnum):
     catImageModeOff = 0
     catImageModeHRD = 1
     catImageModeShading = 2
@@ -75,24 +75,24 @@ class CatImageViewMode(Enum):
     catImageModeShadingWithEdgesAndNoLightSource = 5
 
 
-class CatPictureFormat(Enum):
+class CatPictureFormat(IntEnum):
     catPictureNONE = 0
     catPicturePNG = 1
     catPictureJPEG = 2
     catPictureCCITTG3 = 3
 
 
-class CatPictureType(Enum):
+class CatPictureType(IntEnum):
     catPictureRaster = 0
     catPictureVector = 1
 
 
-class CatPointsProjectionMode(Enum):
+class CatPointsProjectionMode(IntEnum):
     catPointsProjectionModeOff = 0
     catPointsProjectionModeOn = 1
 
 
-class CatProjViewType(Enum):
+class CatProjViewType(IntEnum):
     catRightView = 0
     catLeftView = 1
     catTopView = 2
@@ -100,23 +100,23 @@ class CatProjViewType(Enum):
     catRearView = 4
 
 
-class CatRepresentationMode(Enum):
+class CatRepresentationMode(IntEnum):
     catExactMode = 0
     catPolyhedricMode = 1
     catVisualMode = 2
 
 
-class CatSheetGenViewsPosMode(Enum):
+class CatSheetGenViewsPosMode(IntEnum):
     catFixedCG = 0
     catFixedAxis = 1
 
 
-class CatSheetProjectionMethod(Enum):
+class CatSheetProjectionMethod(IntEnum):
     catFirstAngle = 0
     catThirdAngle = 1
 
 
-class CatThreadLinkedTo(Enum):
+class CatThreadLinkedTo(IntEnum):
     catNotDefined = 0
     catNoLink = 1
     cat2DPoint = 2
@@ -126,18 +126,18 @@ class CatThreadLinkedTo(Enum):
     cat3DThread = 6
 
 
-class CatThreadType(Enum):
+class CatThreadType(IntEnum):
     catThreaded = 0
     catTaped = 1
 
 
-class CatWireframeMode(Enum):
+class CatWireframeMode(IntEnum):
     catGenWFOff = 0
     catGenWFCanBeHidden = 1
     catGenWFAlwaysVisible = 2
 
 
-class RasterLevelOfDetail(Enum):
+class RasterLevelOfDetail(IntEnum):
     LowQuality = 0
     NormalQuality = 1
     HighQuality = 2

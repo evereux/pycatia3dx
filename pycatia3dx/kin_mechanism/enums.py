@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATKinMechanismCommandType(Enum):
+class CATKinMechanismCommandType(IntEnum):
     CATKinEmpty2 = 0
     CATKinAngleCmd2 = 1
     CATKinLengthCmd2 = 2

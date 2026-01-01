@@ -1,130 +1,130 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimAcousticCouplingFormulationType(Enum):
+class SimAcousticCouplingFormulationType(IntEnum):
     SimAcousticCouplingNodeToSurface = 0
     SimAcousticCouplingSurfaceToSurface = 1
 
 
-class SimAcousticCouplingMainSurfaceType(Enum):
+class SimAcousticCouplingMainSurfaceType(IntEnum):
     SimAcousticCouplingElementBasedMainSurface = 0
     SimAcousticCouplingNodeBasedMainSurface = 1
 
 
-class SimAcousticCouplingMasterSurfaceType(Enum):
+class SimAcousticCouplingMasterSurfaceType(IntEnum):
     SimAcousticCouplingElementBased = 0
     SimAcousticCouplingNodeBased = 1
 
 
-class SimAmplitudeDefinitionType(Enum):
+class SimAmplitudeDefinitionType(IntEnum):
     SimAmplitudeTabularDefinition = 0
     SimAmplitudeSmoothStepDefinition = 1
     SimAmplitudePeriodicDefinition = 2
     SimAmplitudeUserDefinition = 3
 
 
-class SimAmplitudeTimeSpanType(Enum):
+class SimAmplitudeTimeSpanType(IntEnum):
     SimAmplitudeStepTime = 0
     SimAmplitudeTotalTime = 1
 
 
-class SimAMSEigensolverAcousticCouplingType(Enum):
+class SimAMSEigensolverAcousticCouplingType(IntEnum):
     SimAMSEigensolverOn = 0
     SimAMSEigensolverProjection = 1
     SimAMSEigensolverOff = 2
 
 
-class SimApplicationType(Enum):
+class SimApplicationType(IntEnum):
     SimApplicationType_Solver_Default = 0
     SimApplicationType_Transient_Fidelity = 1
     SimApplicationType_Moderate_Dissipation = 2
     SimApplicationType_Quasi_Static = 3
 
 
-class SimBeamLoadComponentSystem(Enum):
+class SimBeamLoadComponentSystem(IntEnum):
     SimBeamLoadGlobalComponentSystem = 0
     SimBeamLoadLocalComponentSystem = 1
 
 
-class SimBearingLoadInteractionType(Enum):
+class SimBearingLoadInteractionType(IntEnum):
     SimBearingLoadOutward = 0
     SimBearingLoadInward = 1
 
 
-class SimBearingLoadOrientationType(Enum):
+class SimBearingLoadOrientationType(IntEnum):
     SimBearingLoadRadial = 0
     SimBearingLoadParallel = 1
 
 
-class SimBearingLoadProfileType(Enum):
+class SimBearingLoadProfileType(IntEnum):
     SimBearingLoadSinusoidal = 0
     SimBearingLoadParabolic = 1
 
 
-class SimBuckleStepSolverType(Enum):
+class SimBuckleStepSolverType(IntEnum):
     SimBuckleStepLANCZOS = 0
     SimBuckleStepSUBSPACE = 1
 
 
-class SimConnectorDampingDampingOrder(Enum):
+class SimConnectorDampingDampingOrder(IntEnum):
     SimConnectorDampingLinear = 0
     SimConnectorDampingNonLinear = 1
 
 
-class SimConnectorDampingTableColumn(Enum):
+class SimConnectorDampingTableColumn(IntEnum):
     SimConnectorDampingCoefficient = 0
     SimConnectorDampingTemperature = 1
     SimConnectorDampingVelocity = 2
 
 
-class SimConnectorRotationVariationType(Enum):
+class SimConnectorRotationVariationType(IntEnum):
     SimConnectorRotationUniform = 0
     SimConnectorRotationUserDefined = 1
 
 
-class SimConnectorRotationVelocityVariationType(Enum):
+class SimConnectorRotationVelocityVariationType(IntEnum):
     SimConnectorRotationVelocityUniform = 0
     SimConnectorRotationVelocityUserDefined = 1
 
 
-class SimConnectorTranslationVariationType(Enum):
+class SimConnectorTranslationVariationType(IntEnum):
     SimConnectorTranslationUniform = 0
     SimConnectorTranslationUserDefined = 1
 
 
-class SimConnectorTranslationVelocityVariationType(Enum):
+class SimConnectorTranslationVelocityVariationType(IntEnum):
     SimConnectorTranslationVelocityUniform = 0
     SimConnectorTranslationVelocityUserDefined = 1
 
 
-class SimCoupledCreepIntegration(Enum):
+class SimCoupledCreepIntegration(IntEnum):
     SimCoupledImplicit = 0
     SimCoupledExplicit = 1
 
 
-class SimCoupledSolutionTechnique(Enum):
+class SimCoupledSolutionTechnique(IntEnum):
     SimCoupledFullNewton = 0
     SimCoupledSeparated = 1
 
 
-class SimCoupledThermalResponseType(Enum):
+class SimCoupledThermalResponseType(IntEnum):
     SimCoupledThermalSteadyState = 0
     SimCoupledThermalTransient = 1
 
 
-class SimDirectHarmonicResponseStepIntervalType(Enum):
+class SimDirectHarmonicResponseStepIntervalType(IntEnum):
     SimDirectHarmonicResponseStepFrequencyIncrement = 0
     SimDirectHarmonicResponseStepEigenFrequency = 1
     SimDirectHarmonicResponseStepDirectRange = 2
     SimDirectHarmonicResponseStepFrequencySpread = 3
 
 
-class SimDirectHarmonicResponseStepScaleType(Enum):
+class SimDirectHarmonicResponseStepScaleType(IntEnum):
     SimDirectHarmonicResponseStepLogarithmic = 0
     SimDirectHarmonicResponseStepLinear = 1
 
 
-class SimDirectHarmonicResponseStepTableColumn(Enum):
+class SimDirectHarmonicResponseStepTableColumn(IntEnum):
     SimDirectHarmonicResponseStepLower = 0
     SimDirectHarmonicResponseStepUpper = 1
     SimDirectHarmonicResponseStepIncrement = 2
@@ -134,24 +134,24 @@ class SimDirectHarmonicResponseStepTableColumn(Enum):
     SimDirectHarmonicResponseStepSpread = 6
 
 
-class SimExplicitDynamicStepFixedIncrementationTypeEnm(Enum):
+class SimExplicitDynamicStepFixedIncrementationTypeEnm(IntEnum):
     SimExplicitDynamicStepELEMENTBYELEMENT = 0
     SimExplicitDynamicStepUSERDEFINED = 1
 
 
-class SimFrequencyBasedDampingDampingType(Enum):
+class SimFrequencyBasedDampingDampingType(IntEnum):
     SimFrequencyBasedDampingCriticalDampingFraction = 0
     SimFrequencyBasedDampingStructuralDamping = 1
     SimFrequencyBasedDampingRayleighDamping = 2
 
 
-class SimFrequencyBasedDampingModesType(Enum):
+class SimFrequencyBasedDampingModesType(IntEnum):
     SimFrequencyBasedDampingStructuralAndAcoustic = 0
     SimFrequencyBasedDampingStructural = 1
     SimFrequencyBasedDampingAcoustic = 2
 
 
-class SimFrequencyBasedDampingTableColumn(Enum):
+class SimFrequencyBasedDampingTableColumn(IntEnum):
     SimFrequencyBasedDampingFrequency = 0
     SimFrequencyBasedDampingDampingFraction = 1
     SimFrequencyBasedDampingDampingFactor = 2
@@ -159,38 +159,38 @@ class SimFrequencyBasedDampingTableColumn(Enum):
     SimFrequencyBasedDampingStiffnessDamping = 4
 
 
-class SimFrequencyStepSolverType(Enum):
+class SimFrequencyStepSolverType(IntEnum):
     SimFrequencyStepLanczos = 0
     SimFrequencyStepAMS = 1
 
 
-class SimGeneralGlobalDampingModesType(Enum):
+class SimGeneralGlobalDampingModesType(IntEnum):
     SimGeneralGlobalDampingNone = 0
     SimGeneralGlobalDampingStructuralAndAcoustic = 1
     SimGeneralGlobalDampingStructural = 2
     SimGeneralGlobalDampingAcoustic = 3
 
 
-class SimHarmonicResponseStepIntervalType(Enum):
+class SimHarmonicResponseStepIntervalType(IntEnum):
     SimHarmonicResponseStepFrequencyIncrement = 0
     SimHarmonicResponseStepEigenfrequency = 1
     SimHarmonicResponseStepDirectRange = 2
     SimHarmonicResponseStepFrequencySpread = 3
 
 
-class SimHarmonicResponseStepProjectionType(Enum):
+class SimHarmonicResponseStepProjectionType(IntEnum):
     SimHarmonicResponseStepNone = 0
     SimHarmonicResponseStepAllFrequency = 1
     SimHarmonicResponseStepCenterFrequencies = 2
     SimHarmonicResponseStepRangeValues = 3
 
 
-class SimHarmonicResponseStepScaleType(Enum):
+class SimHarmonicResponseStepScaleType(IntEnum):
     SimHarmonicResponseStepLogarithmic = 0
     SimHarmonicResponseStepLinear = 1
 
 
-class SimHarmonicResponseStepTableColumn(Enum):
+class SimHarmonicResponseStepTableColumn(IntEnum):
     SimHarmonicResponseStepLower = 0
     SimHarmonicResponseStepUpper = 1
     SimHarmonicResponseStepIncrement = 2
@@ -200,42 +200,42 @@ class SimHarmonicResponseStepTableColumn(Enum):
     SimHarmonicResponseStepSpread = 6
 
 
-class SimInitialStressType(Enum):
+class SimInitialStressType(IntEnum):
     SimInitialStressTensorStress = 0
     SimInitialStressRebarStress = 1
 
 
-class SimLanczosEigensolverAcousticCouplingType(Enum):
+class SimLanczosEigensolverAcousticCouplingType(IntEnum):
     SimLanczosEigensolverOn = 0
     SimLanczosEigensolverProjection = 1
     SimLanczosEigensolverOff = 2
 
 
-class SimMassScalingMassScalingBehavior(Enum):
+class SimMassScalingMassScalingBehavior(IntEnum):
     SimMassScalingBeginningOfStep = 0
     SimMassScalingThroughoutStep = 1
     SimMassScalingResetMassMatrix = 2
 
 
-class SimMassScalingMassScalingMethod(Enum):
+class SimMassScalingMassScalingMethod(IntEnum):
     SimMassScalingUniform = 0
     SimMassScalingBelowMin = 1
     SimMassScalingSameTimeIncrement = 2
 
 
-class SimMatrixStorageScheme(Enum):
+class SimMatrixStorageScheme(IntEnum):
     SimMatrixStorage_Default = 0
     SimMatrixStorage_Symmetric = 1
     SimMatrixStorage_Unsymmetric = 2
 
 
-class SimModalDampingDampingType(Enum):
+class SimModalDampingDampingType(IntEnum):
     SimModalDampingFraction = 0
     SimModalDampingRayleigh = 1
     SimModalDampingStructural = 2
 
 
-class SimModalDampingTableColumn(Enum):
+class SimModalDampingTableColumn(IntEnum):
     SimModalDampingFrequency = 0
     SimModalDampingDampingFraction = 1
     SimModalDampingAlpha = 2
@@ -243,14 +243,14 @@ class SimModalDampingTableColumn(Enum):
     SimModalDampingDampingFactor = 4
 
 
-class SimModeBasedDampingDampingType(Enum):
+class SimModeBasedDampingDampingType(IntEnum):
     SimModeBasedDampingCriticalDampingFraction = 0
     SimModeBasedDampingStructural = 1
     SimModeBasedDampingComposite = 2
     SimModeBasedDampingRayleigh = 3
 
 
-class SimModeBasedDampingTableColumn(Enum):
+class SimModeBasedDampingTableColumn(IntEnum):
     SimModeBasedDampingFirstMode = 0
     SimModeBasedDampingLastMode = 1
     SimModeBasedDampingDampingFraction = 2
@@ -261,55 +261,55 @@ class SimModeBasedDampingTableColumn(Enum):
     SimModeBasedDampingStiffnessDamping = 7
 
 
-class SimNormalBehaviorTableColumn(Enum):
+class SimNormalBehaviorTableColumn(IntEnum):
     SimNormalBehaviorPressure = 0
     SimNormalBehaviorOverclosure = 1
 
 
-class SimOutputElementLocation(Enum):
+class SimOutputElementLocation(IntEnum):
     SimOutputAtIntegrationPoints = 0
     SimOutputAtNodes = 1
     SimOutputAtCentroid = 2
     SimOutputAtNodesAveraged = 3
 
 
-class SimOutputFrequencyType(Enum):
+class SimOutputFrequencyType(IntEnum):
     SimOutputFrequency = 0
     SimOutputNumberInterval = 1
     SimOutputTimeInterval = 2
 
 
-class SimOutputOutputGroup(Enum):
+class SimOutputOutputGroup(IntEnum):
     SimOutputField = 0
     SimOutputHistory = 1
 
 
-class SimOutputSectionPointSelectionType(Enum):
+class SimOutputSectionPointSelectionType(IntEnum):
     SimOutputDefault = 0
     SimOutputSpecify = 1
     SimOutputAll = 2
     SimOutputByLayer = 3
 
 
-class SimPeriodicAmplitudeColumnType(Enum):
+class SimPeriodicAmplitudeColumnType(IntEnum):
     SimPeriodicAmplitudeASeriesColumn = 0
     SimPeriodicAmplitudeBSeriesColumn = 1
 
 
-class SimRandomGlobalDampingModesType(Enum):
+class SimRandomGlobalDampingModesType(IntEnum):
     SimRandomGlobalDampingStructuralAndAcoustic = 0
     SimRandomGlobalDampingStructural = 1
     SimRandomGlobalDampingAcoustic = 2
 
 
-class SimRandomVibrationStepDampingDefinition(Enum):
+class SimRandomVibrationStepDampingDefinition(IntEnum):
     SimRandomVibrationStepModeRange = 0
     SimRandomVibrationStepFrequencyCurve = 1
     SimRandomVibrationStepGlobal = 2
     SimRandomVibrationStepNoDamping = 3
 
 
-class SimRandomVibrationStepTableColumn(Enum):
+class SimRandomVibrationStepTableColumn(IntEnum):
     SimRandomVibrationStepLowerBoundary = 0
     SimRandomVibrationStepUpperBoundary = 1
     SimRandomVibrationStepCalculationPoints = 2
@@ -317,33 +317,33 @@ class SimRandomVibrationStepTableColumn(Enum):
     SimRandomVibrationStepFrequencyScale = 4
 
 
-class SimResponseSpectrumStepAlignAxisType(Enum):
+class SimResponseSpectrumStepAlignAxisType(IntEnum):
     SimResponseSpectrumStepXAxis = 0
     SimResponseSpectrumStepYAxis = 1
     SimResponseSpectrumStepZAxis = 2
 
 
-class SimResponseSpectrumStepDampingDefinition(Enum):
+class SimResponseSpectrumStepDampingDefinition(IntEnum):
     SimResponseSpectrumStepModeRange = 0
     SimResponseSpectrumStepFrequencyCurve = 1
     SimResponseSpectrumStepGlobal = 2
     SimResponseSpectrumStepNoDamping = 3
 
 
-class SimResponseSpectrumStepDirectionalSummationMethod(Enum):
+class SimResponseSpectrumStepDirectionalSummationMethod(IntEnum):
     SimResponseSpectrumStepAlgebraic = 0
     SimResponseSpectrumStepSquareRootOfSumOfSquares = 1
     SimResponseSpectrumStepFortyPercentRule = 2
     SimResponseSpectrumStepThirtyPercentRule = 3
 
 
-class SimResponseSpectrumStepDirectionType(Enum):
+class SimResponseSpectrumStepDirectionType(IntEnum):
     SimResponseSpectrumStepFirst = 0
     SimResponseSpectrumStepSecond = 1
     SimResponseSpectrumStepThird = 2
 
 
-class SimResponseSpectrumStepModalSummationMethod(Enum):
+class SimResponseSpectrumStepModalSummationMethod(IntEnum):
     SimResponseSpectrumStepAbsoluteValues = 0
     SimResponseSpectrumStepSquareRootOfSumOfSquaresMethod = 1
     SimResponseSpectrumStepNavalResearchLaboratory = 2
@@ -353,52 +353,52 @@ class SimResponseSpectrumStepModalSummationMethod(Enum):
     SimResponseSpectrumStepDoubleSumCombination = 6
 
 
-class SimResponseSpectrumStepRigidResponseMethod(Enum):
+class SimResponseSpectrumStepRigidResponseMethod(IntEnum):
     SimResponseSpectrumStepNone = 0
     SimResponseSpectrumStepGupta = 1
     SimResponseSpectrumStepLindleyYow = 2
 
 
-class SimShellEdgeLoadTractionType(Enum):
+class SimShellEdgeLoadTractionType(IntEnum):
     SimShellEdgeLoadNormal = 0
     SimShellEdgeLoadTransverse = 1
     SimShellEdgeLoadShear = 2
 
 
-class SimSlidingVelocityTranslationalDof(Enum):
+class SimSlidingVelocityTranslationalDof(IntEnum):
     SimSlidingVelocityTranslationX = 0
     SimSlidingVelocityTranslationY = 1
     SimSlidingVelocityTranslationZ = 2
 
 
-class SimSlidingVelocityType(Enum):
+class SimSlidingVelocityType(IntEnum):
     SimSlidingVelocityTranslation = 0
     SimSlidingVelocityRotation = 1
 
 
-class SimSmoothStepAmplitudeDomainType(Enum):
+class SimSmoothStepAmplitudeDomainType(IntEnum):
     SimSmoothStepAmplitudeTimeDomain = 0
     SimSmoothStepAmplitudeFrequencyDomain = 1
 
 
-class SimSmoothStepAmplitudeTableColumn(Enum):
+class SimSmoothStepAmplitudeTableColumn(IntEnum):
     SimSmoothStepAmplitudeAmplitude = 0
     SimSmoothStepAmplitudeTime = 1
 
 
-class SimSolutionControlsAverageFlux(Enum):
+class SimSolutionControlsAverageFlux(IntEnum):
     SimSolutionControlsDefault = 0
     SimSolutionControlsInitial = 1
     SimSolutionControlsAverage = 2
 
 
-class SimSolutionControlsDefinition(Enum):
+class SimSolutionControlsDefinition(IntEnum):
     SimSolutionControlsPropagate = 0
     SimSolutionControlsReset = 1
     SimSolutionControlsSpecify = 2
 
 
-class SimSolutionControlsDOFField(Enum):
+class SimSolutionControlsDOFField(IntEnum):
     SimSolutionControlsDisplacement = 0
     SimSolutionControlsRotation = 1
     SimSolutionControlsTemperature = 2
@@ -412,14 +412,14 @@ class SimSolutionControlsDOFField(Enum):
     SimSolutionControlsIonConcentration = 10
 
 
-class SimSpectrumDefinitionType(Enum):
+class SimSpectrumDefinitionType(IntEnum):
     SimSpectrumAcceleration = 0
     SimSpectrumDisplacement = 1
     SimSpectrumGravity = 2
     SimSpectrumVelocity = 3
 
 
-class SimSpectrumTableColumn(Enum):
+class SimSpectrumTableColumn(IntEnum):
     SimSpectrumAccelerationCol = 0
     SimSpectrumDampingRatioCol = 1
     SimSpectrumFrequencyCol = 2
@@ -428,57 +428,57 @@ class SimSpectrumTableColumn(Enum):
     SimSpectrumVelocityCol = 5
 
 
-class SimStabilizationStabilizationType(Enum):
+class SimStabilizationStabilizationType(IntEnum):
     SimStabilizationNoStabilization = 0
     SimStabilizationDamping = 1
     SimStabilizationEnergyFraction = 2
     SimStabilizationPropagated = 3
 
 
-class SimStaticPerturbationStepSolutionTechnique(Enum):
+class SimStaticPerturbationStepSolutionTechnique(IntEnum):
     SimStaticPerturbationStepFullNewton = 0
     SimStaticPerturbationStepLCP = 1
 
 
-class SimStaticRiksStepDisplacementType(Enum):
+class SimStaticRiksStepDisplacementType(IntEnum):
     SimStaticRiksStepDisplacementNone = 0
     SimStaticRiksStepDisplacementTranslation = 1
     SimStaticRiksStepDisplacementRotation = 2
 
 
-class SimSteadyStateTransportStepInertiaEffect(Enum):
+class SimSteadyStateTransportStepInertiaEffect(IntEnum):
     SimSteadyStateTransportStepNoInertia = 0
     SimSteadyStateTransportStepHighSpeedInertia = 1
     SimSteadyStateTransportStepLowSpeedInertia = 2
 
 
-class SimSteadyStateTransportStepMullinsEffect(Enum):
+class SimSteadyStateTransportStepMullinsEffect(IntEnum):
     SimSteadyStateTransportStepRampMullins = 0
     SimSteadyStateTransportStepImmediateMullins = 1
 
 
-class SimSurfaceBasedContactDiscretizationMethod(Enum):
+class SimSurfaceBasedContactDiscretizationMethod(IntEnum):
     SimSurfaceBasedContactNodeToSurface = 0
     SimSurfaceBasedContactSurfaceToSurface = 1
 
 
-class SimTabularAmplitudeDomainType(Enum):
+class SimTabularAmplitudeDomainType(IntEnum):
     SimTabularAmplitudeTimeDomain = 0
     SimTabularAmplitudeFrequencyDomain = 1
 
 
-class SimTabularAmplitudeTableColumn(Enum):
+class SimTabularAmplitudeTableColumn(IntEnum):
     SimTabularAmplitudeAmplitude = 0
     SimTabularAmplitudeTime = 1
 
 
-class SimTimeIncrementationScheme(Enum):
+class SimTimeIncrementationScheme(IntEnum):
     SimTimeIncrementation_Automatic = 0
     SimTimeIncrementation_Fixed = 1
     SimTimeIncrementation_Direct = 2
     SimTimeIncrementation_SolverDefault = 3
 
 
-class SimVolumetricHeatSourceHeatSourceType(Enum):
+class SimVolumetricHeatSourceHeatSourceType(IntEnum):
     SimVolumetricHeatSourcePerUnitVolume = 0
     SimVolumetricHeatSourceTotal = 1

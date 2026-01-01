@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class APPROACH_RETRACT(Enum):
+class APPROACH_RETRACT(IntEnum):
     UndefinedAppRet = 0
     First = 1
     Last = 2
@@ -10,14 +10,14 @@ class APPROACH_RETRACT(Enum):
     ApproachRetract = 5
 
 
-class STROKE_SIDE(Enum):
+class STROKE_SIDE(IntEnum):
     Start = 0
     End = 1
     Lefft = 2
     Right = 3
 
 
-class SurfaceOperationPosition(Enum):
+class SurfaceOperationPosition(IntEnum):
     BEFORE = 0
     AFTER = 1
     BEGIN = 2

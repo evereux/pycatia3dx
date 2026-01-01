@@ -1,19 +1,19 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CATMeasurableContextType(Enum):
+class CATMeasurableContextType(IntEnum):
     PartContext = 0
     ProductContext = 1
 
 
-class CATMeasurableModeOfCalc(Enum):
+class CATMeasurableModeOfCalc(IntEnum):
     MeasExactCalculation = 0
     MeasApproximateCalculation = 1
     MeasExactElseApproxCalculation = 2
     MeasUnknownCalculation = 3
 
 
-class CATMeasurableType(Enum):
+class CATMeasurableType(IntEnum):
     CAAMeasurableAxisSystem = 0
     CAAMeasurableBetween = 1
     CAAMeasurableCircle = 2
@@ -28,7 +28,7 @@ class CATMeasurableType(Enum):
     CAAMeasurableVolume = 11
 
 
-class CATOpnsMeasureDistanceType(Enum):
+class CATOpnsMeasureDistanceType(IntEnum):
     catOpnsMinimumDistance = 0
     catOpnsMaximumDistance = 1
     catOpnsMaximumDistance12 = 2
@@ -37,7 +37,7 @@ class CATOpnsMeasureDistanceType(Enum):
     catOpnsUnknownDistance = 5
 
 
-class CATOpnsMeasureEdgeType(Enum):
+class CATOpnsMeasureEdgeType(IntEnum):
     catOpnsLineEdge = 0
     catOpnsArcEdge = 1
     catOpnsCurveEdge = 2
@@ -48,12 +48,12 @@ class CATOpnsMeasureEdgeType(Enum):
     catOpnsUnknownEdge = 7
 
 
-class CATOpnsMeasureExtensionMode(Enum):
+class CATOpnsMeasureExtensionMode(IntEnum):
     catOpnsFiniteExtend = 0
     catOpnsInfiniteExtend = 1
 
 
-class CATOpnsMeasureItemType(Enum):
+class CATOpnsMeasureItemType(IntEnum):
     catOpnsPointItem = 0
     catOpnsEdgeItem = 1
     catOpnsSurfaceItem = 2
@@ -66,7 +66,7 @@ class CATOpnsMeasureItemType(Enum):
     catOpnsAngle3PtsItem = 9
 
 
-class CATOpnsMeasureSurfaceType(Enum):
+class CATOpnsMeasureSurfaceType(IntEnum):
     catOpnsPlaneSurface = 0
     catOpnsCylinderSurface = 1
     catOpnsSphereSurface = 2
@@ -75,7 +75,7 @@ class CATOpnsMeasureSurfaceType(Enum):
     catOpnsUnknownSurface = 5
 
 
-class CATResultCalcType(Enum):
+class CATResultCalcType(IntEnum):
     ResExactCalculation = 0
     ResApproximateCalculation = 1
     ResUnknownCalculation = 2

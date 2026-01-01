@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimAnimationTypes(Enum):
+class SimAnimationTypes(IntEnum):
     SimUndefAnimation = 0
     SimScaleFactor = 1
     SimTimeHistory = 2
@@ -14,17 +14,17 @@ class SimAnimationTypes(Enum):
     SimHarmonic = 9
 
 
-class SimAnimPlaybackTypes(Enum):
+class SimAnimPlaybackTypes(IntEnum):
     SimPlaybackFramesPerSec = 0
     SimPlaybackTotalTime = 1
 
 
-class SimAveraging(Enum):
+class SimAveraging(IntEnum):
     SimSectionBoundaries = 0
     SimNoBoundaries = 1
 
 
-class SimAxisType(Enum):
+class SimAxisType(IntEnum):
     SimNoAxis = 0
     SimGlobal = 1
     SimResultsCsys = 2
@@ -34,18 +34,18 @@ class SimAxisType(Enum):
     SimAxialTransverse = 6
 
 
-class SimCalculationBetweenSupports(Enum):
+class SimCalculationBetweenSupports(IntEnum):
     SimDiffSupport1AndSupport2 = 0
     SimDiffSupport2AndSupport1 = 1
     SimSumSupport1AndSupport2 = 2
 
 
-class SimColumnSeparator(Enum):
+class SimColumnSeparator(IntEnum):
     SimComma = 0
     SimSemicolon = 1
 
 
-class SimComplexValues(Enum):
+class SimComplexValues(IntEnum):
     SimValueAtAngle = 0
     SimEnvelopeMaxAbsolute = 1
     SimEnvelopeMax = 2
@@ -53,7 +53,7 @@ class SimComplexValues(Enum):
     SimPhaseAngle = 4
 
 
-class SimConfiguration(Enum):
+class SimConfiguration(IntEnum):
     SimVPFourSquare = 0
     SimVPTriLeft = 1
     SimVPTriBottom = 2
@@ -62,20 +62,20 @@ class SimConfiguration(Enum):
     SimVPSingle = 5
 
 
-class SimFieldPlotTypes(Enum):
+class SimFieldPlotTypes(IntEnum):
     SimContour = 0
     SimSymbol = 1
     SimIsoContour = 2
     SimColorCode = 3
 
 
-class SimFileType(Enum):
+class SimFileType(IntEnum):
     SimCsv = 0
     SimXlsx = 1
     SimXls = 2
 
 
-class SimLocation(Enum):
+class SimLocation(IntEnum):
     SimNodes = 0
     SimCentroids = 1
     SimFaceElements = 2
@@ -83,7 +83,7 @@ class SimLocation(Enum):
     SimElementNodes = 4
 
 
-class SimNodeSymbolType(Enum):
+class SimNodeSymbolType(IntEnum):
     SimNodeSymbolSphere = 0
     SimNodeSymbolCross = 1
     SimNodeSymbolPlus = 2
@@ -98,14 +98,14 @@ class SimNodeSymbolType(Enum):
     SimNodeSymbolFullSquare2 = 11
 
 
-class SimProcessingTypes(Enum):
+class SimProcessingTypes(IntEnum):
     SimScalars = 0
     SimQuantity = 1
     SimTensors = 2
     SimVectors = 3
 
 
-class SimQuantityComponentEnum(Enum):
+class SimQuantityComponentEnum(IntEnum):
     SimVector_Component_1 = 0
     SimTensor_Component_11 = 1
     Sim4th_Order_Tensor_Component_1111 = 2
@@ -150,7 +150,7 @@ class SimQuantityComponentEnum(Enum):
     SimTensor_OutOfPlane_Principal = 41
 
 
-class SimQuantityInvariantEnum(Enum):
+class SimQuantityInvariantEnum(IntEnum):
     SimFirstVariant = 0
     SimThirdVariant = 1
     SimMagnitude = 2
@@ -172,13 +172,13 @@ class SimQuantityInvariantEnum(Enum):
     SimOrtho3 = 18
 
 
-class SimRenderStyle(Enum):
+class SimRenderStyle(IntEnum):
     SimRenderContour = 0
     SimRenderShaded = 1
     SimRenderWireframe = 2
 
 
-class SimResultsSource(Enum):
+class SimResultsSource(IntEnum):
     SimFieldSourceResults = 0
     SimFieldSourceDiagnostic = 1
     SimFieldSourcePreLoad = 2
@@ -186,19 +186,19 @@ class SimResultsSource(Enum):
     SimFieldSourceCompute = 4
 
 
-class SimSamplingFilterTypes(Enum):
+class SimSamplingFilterTypes(IntEnum):
     SimTimeInterval = 0
     SimFrameInterval = 1
     SimTotalFrames = 2
 
 
-class SimSamplingRateTypes(Enum):
+class SimSamplingRateTypes(IntEnum):
     SimAllSelectedFrames = 0
     SimRegularTimeInterval = 1
     SimRegularFrameInterval = 2
 
 
-class SimSectionPointLocations(Enum):
+class SimSectionPointLocations(IntEnum):
     SimLocationUndefined = 0
     SimLocationNone = 1
     SimFirstSectionPoint = 2
@@ -214,13 +214,13 @@ class SimSectionPointLocations(Enum):
     SimSectionRatio = 12
 
 
-class SimSectionPointLocation(Enum):
+class SimSectionPointLocation(IntEnum):
     SimSectionTop = 0
     SimSectionTopBottom = 1
     SimSectionBottom = 2
 
 
-class SimSelectionType(Enum):
+class SimSelectionType(IntEnum):
     SimNoSelection = 0
     SimDisplayGroups = 1
     SimCutSurfaces = 2
@@ -233,26 +233,26 @@ class SimSelectionType(Enum):
     SimConnectorSections = 9
 
 
-class SimShellStyle(Enum):
+class SimShellStyle(IntEnum):
     SimShellNone = 0
     SimThick = 1
     SimOffset = 2
     SimElevation = 3
 
 
-class SimStrainGaugePositionType(Enum):
+class SimStrainGaugePositionType(IntEnum):
     SimPositionPoint = 0
     SimPositionNode = 1
     SimPositionElementFace = 2
 
 
-class SimStrainGaugeVariableType(Enum):
+class SimStrainGaugeVariableType(IntEnum):
     SimStress = 0
     SimStrainFromStrain = 1
     SimStrainFromDisplacement = 2
 
 
-class SimSymbolicFrameRangesEnum(Enum):
+class SimSymbolicFrameRangesEnum(IntEnum):
     SimUndefined = 0
     SimAllFrames = 1
     SimLastFrameOfEachStep = 2
@@ -261,18 +261,18 @@ class SimSymbolicFrameRangesEnum(Enum):
     SimFrequencyFrames = 5
 
 
-class SimTargetSpeedTypes(Enum):
+class SimTargetSpeedTypes(IntEnum):
     SimTargetSpeedMax = 0
     SimTargetSpeedFramesPerSec = 1
     SimTargetSpeedDuration = 2
 
 
-class SimThicknessDataSourceType(Enum):
+class SimThicknessDataSourceType(IntEnum):
     SimThickSourceSection = 0
     SimThickSourceField = 1
 
 
-class SimThresholdType(Enum):
+class SimThresholdType(IntEnum):
     SimThresholdNone = 0
     SimThresholdLowerLimit = 1
     SimThresholdUpperLimit = 2
@@ -280,14 +280,14 @@ class SimThresholdType(Enum):
     SimThresholdPercentUpperLimit = 4
 
 
-class SimTransformTypes(Enum):
+class SimTransformTypes(IntEnum):
     SimNone = 0
     SimNodal = 1
     SimUserDefined = 2
     SimUserModelAxis = 3
 
 
-class SimValuePerSupportOption(Enum):
+class SimValuePerSupportOption(IntEnum):
     SimValuePerSupportNone = 0
     SimValuePerSupportMax = 1
     SimValuePerSupportMin = 2
@@ -297,7 +297,7 @@ class SimValuePerSupportOption(Enum):
     SimValuePerSupportLast = 6
 
 
-class SimVisibleEdges(Enum):
+class SimVisibleEdges(IntEnum):
     SimOutline = 0
     SimMesh = 1
     SimVisibleEdgesNone = 2

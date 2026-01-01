@@ -1,13 +1,13 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatBlankingMode(Enum):
+class CatBlankingMode(IntEnum):
     catBlankingInactive = 0
     catBlankingActive = 1
     catBlankingOnGeom = 2
 
 
-class CatDftWeldFinishSymbol(Enum):
+class CatDftWeldFinishSymbol(IntEnum):
     catFinishWeldingNone = 0
     catDftLetterCWelding = 1
     catDftLetterFWelding = 2
@@ -22,12 +22,12 @@ class CatDftWeldFinishSymbol(Enum):
     catDftPerpendicularWelding = 11
 
 
-class CatDftWeldingTail(Enum):
+class CatDftWeldingTail(IntEnum):
     catDftWeldingTailNO = 0
     catDftWeldingTailYES = 1
 
 
-class CatDimAnalyse(Enum):
+class CatDimAnalyse(IntEnum):
     catDimOnGenItems = 0
     catUnUpdatableDim = 1
     catFakeDim = 2
@@ -42,20 +42,20 @@ class CatDimAnalyse(Enum):
     cat3DFeatureDim = 11
 
 
-class CatDimDualDisplay(Enum):
+class CatDimDualDisplay(IntEnum):
     catDualNone = 0
     catDualBellow = 1
     catDualFractional = 2
     catDualSideBySide = 3
 
 
-class CatDimFake(Enum):
+class CatDimFake(IntEnum):
     catDimFakeNone = 0
     catDimFakeNumValue = 1
     catDimFakeText = 2
 
 
-class CatDimFrame(Enum):
+class CatDimFrame(IntEnum):
     catFraNone = 0
     catFraCircle = 1
     catFraScoredCircle = 2
@@ -67,27 +67,27 @@ class CatDimFrame(Enum):
     catFraRightTriangle = 8
 
 
-class CatDimFramedElement(Enum):
+class CatDimFramedElement(IntEnum):
     catFraValue = 0
     catFraValueTol = 1
     catFraValueTolText = 2
 
 
-class CatDimFramedGroup(Enum):
+class CatDimFramedGroup(IntEnum):
     catFraMain = 0
     catFraDual = 1
     catFraMainAndDual = 2
     catFraBoth = 3
 
 
-class CatDimLineGraphRep(Enum):
+class CatDimLineGraphRep(IntEnum):
     catDimLine1Part = 0
     catDimLine2Parts = 1
     catDimLineLeader1Part = 2
     catDimLineLeader2Part = 3
 
 
-class CatDimLineRep(Enum):
+class CatDimLineRep(IntEnum):
     catDimUndef = 0
     catDimHoriz = 1
     catDimVert = 2
@@ -98,7 +98,7 @@ class CatDimLineRep(Enum):
     catDimOffset = 7
 
 
-class CatDimMode(Enum):
+class CatDimMode(IntEnum):
     catDimClassical = 0
     catDimCumulate = 1
     catDimHalfDim = 2
@@ -108,7 +108,7 @@ class CatDimMode(Enum):
     catDimHalfDimSystem = 6
 
 
-class CatDimOrientation(Enum):
+class CatDimOrientation(IntEnum):
     catHorizontal = 0
     catVertical = 1
     catParallel = 2
@@ -116,20 +116,20 @@ class CatDimOrientation(Enum):
     catAngle = 4
 
 
-class CatDimReference(Enum):
+class CatDimReference(IntEnum):
     catScreen = 0
     catView = 1
     catDimLine = 2
 
 
-class CatDimScore(Enum):
+class CatDimScore(IntEnum):
     catDimScoreNone = 0
     catDimUnderScored = 1
     catDimScored = 2
     catCATDrwDimOverScored = 3
 
 
-class CatDimSymbols(Enum):
+class CatDimSymbols(IntEnum):
     catDimSymbNone = 0
     catDimSymbOpenArrow = 1
     catDimSymbClosedArrow = 2
@@ -146,7 +146,7 @@ class CatDimSymbols(Enum):
     catDimSymbXCross = 13
 
 
-class CatDimType(Enum):
+class CatDimType(IntEnum):
     catDimDistance = 0
     catDimDistanceOffset = 1
     catDimLength = 2
@@ -170,13 +170,13 @@ class CatDimType(Enum):
     catDimDistanceMin = 20
 
 
-class CatJustification(Enum):
+class CatJustification(IntEnum):
     catLeft = 0
     catCenter = 1
     catRight = 2
 
 
-class CatSymbolType(Enum):
+class CatSymbolType(IntEnum):
     catNotUsed = 0
     catCross = 1
     catPlus = 2
@@ -211,7 +211,7 @@ class CatSymbolType(Enum):
     catWave = 31
 
 
-class CatTableBorderType(Enum):
+class CatTableBorderType(IntEnum):
     CatTableNone = 0
     CatTableLeft = 1
     CatTableTop = 2
@@ -226,18 +226,18 @@ class CatTableBorderType(Enum):
     CatTableCross = 11
 
 
-class CatTableComputeMode(Enum):
+class CatTableComputeMode(IntEnum):
     CatTableComputeOFF = 0
     CatTableComputeON = 1
 
 
-class CatTableInvertMode(Enum):
+class CatTableInvertMode(IntEnum):
     CatInvertColumn = 0
     CatInvertRow = 1
     CatInvertAll = 2
 
 
-class CatTablePosition(Enum):
+class CatTablePosition(IntEnum):
     CatTableTopLeft = 0
     CatTableMiddleLeft = 1
     CatTableBottomLeft = 2
@@ -249,7 +249,7 @@ class CatTablePosition(Enum):
     CatTableBottomRight = 8
 
 
-class CatTextAnchorPosition(Enum):
+class CatTextAnchorPosition(IntEnum):
     catUnsusedValue1 = 0
     catTopLeft = 1
     catMiddleLeft = 2
@@ -272,7 +272,7 @@ class CatTextAnchorPosition(Enum):
     catBaseRight = 19
 
 
-class CatTextFlipMode(Enum):
+class CatTextFlipMode(IntEnum):
     catTextNoFlip = 0
     catTextHorizontalFlip = 1
     catTextVerticalFlip = 2
@@ -280,7 +280,7 @@ class CatTextFlipMode(Enum):
     catTextAutoFlip = 4
 
 
-class CatTextFrameType(Enum):
+class CatTextFrameType(IntEnum):
     catNone = 0
     catRectangle = 1
     catSquare = 2
@@ -296,7 +296,7 @@ class CatTextFrameType(Enum):
     catCustom = 12
 
 
-class CatTextProperty(Enum):
+class CatTextProperty(IntEnum):
     catBold = 0
     catItalic = 1
     catUnderline = 2
@@ -316,7 +316,7 @@ class CatTextProperty(Enum):
     catKerning = 16
 
 
-class CatWeldAdditionalSymbol(Enum):
+class CatWeldAdditionalSymbol(IntEnum):
     catNoneAddWelding = 0
     catFlatWelding = 1
     catConvexWelding = 2
@@ -325,7 +325,7 @@ class CatWeldAdditionalSymbol(Enum):
     catSmoothWelding = 5
 
 
-class CatWelding(Enum):
+class CatWelding(IntEnum):
     catNoneWelding = 0
     catFirstWelding = 1
     catSecondWelding = 2
@@ -335,7 +335,7 @@ class CatWelding(Enum):
     catSecondWeldingTer = 6
 
 
-class CatWeldingField(Enum):
+class CatWeldingField(IntEnum):
     catWeldingNone = 0
     catWeldingFieldOne = 1
     catWeldingFieldTwo = 2
@@ -354,12 +354,12 @@ class CatWeldingField(Enum):
     catWeldingFieldFifteen = 15
 
 
-class CatWeldingSide(Enum):
+class CatWeldingSide(IntEnum):
     catWeldingUp = 0
     catWeldingDown = 1
 
 
-class CatWeldingSymbol(Enum):
+class CatWeldingSymbol(IntEnum):
     catNoneMainWelding = 0
     catSquareWelding = 1
     catVGrooveWelding = 2

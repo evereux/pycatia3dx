@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatKinSimuChannelType(Enum):
+class CatKinSimuChannelType(IntEnum):
     catEmptyChannelType = 0
     catTimeChannel = 1
     catExcitationChanel = 2

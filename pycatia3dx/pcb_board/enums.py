@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatElectronicType(Enum):
+class CatElectronicType(IntEnum):
     catBOARD = 0
     catPANEL = 1
     catCOMPONENT = 2

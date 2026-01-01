@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class KnowledgeObjectType(Enum):
+class KnowledgeObjectType(IntEnum):
     kweParametersSetObjectType = 0
     kweRelationsSetObjectType = 1
     kweOptimizationsSetObjectType = 2
@@ -12,7 +12,7 @@ class KnowledgeObjectType(Enum):
     kweExpertRulebaseObjectType = 7
 
 
-class KnowledgeSetType(Enum):
+class KnowledgeSetType(IntEnum):
     kweParametersType = 0
     kweRelationsType = 1
     kweOptimizationsType = 2

@@ -1,13 +1,13 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class SimMCXDuplicateMode(Enum):
+class SimMCXDuplicateMode(IntEnum):
     simNoMCX = 0
     simIncludedMCX = 1
     simAllMCX = 2
 
 
-class SimXRepRelationType(Enum):
+class SimXRepRelationType(IntEnum):
     SimXRepTo3DShapeRelation = 0
     SimXRepToXRepRelation = 1
     SimXRepToDocSpecRelation = 2

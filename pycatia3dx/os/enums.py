@@ -1,6 +1,6 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class CatFileSelectionMode(Enum):
+class CatFileSelectionMode(IntEnum):
     CatFileSelectionModeOpen = 0
     CatFileSelectionModeSave = 1
