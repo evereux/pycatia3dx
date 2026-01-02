@@ -72,7 +72,7 @@ def catia_application() -> Application:
 
         return com3dx_path
 
-    def import_dassault_com3dx_module() -> ModuleType:
+    def _import_com3dx_module() -> ModuleType:
         """
         Dynamically import the Dassault Systèmes `com3dx` module using importlib.
 
@@ -93,4 +93,4 @@ def catia_application() -> Application:
         spec.loader.exec_module(com3dx)
         return com3dx
 
-    return Application(import_dassault_com3dx_module().get3dxClient())
+    return Application(_import_com3dx_module().get3dxClient())
