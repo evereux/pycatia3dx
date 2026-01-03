@@ -21,6 +21,7 @@ from pycatia3dx.mmr_automation_interfaces.geometric_elements import GeometricEle
 from pycatia3dx.mmr_automation_interfaces.hybrid_bodies import HybridBodies
 from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
 from pycatia3dx.mmr_automation_interfaces.origin_elements import OriginElements
+from pycatia3dx.part.shape_factory import ShapeFactory
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 
@@ -283,7 +284,7 @@ class Part(AnyObject):
         :param AnyObject value:
         """
 
-        self.com_object.InWorkObject = value
+        self.com_object.InWorkObject = value.com_object
 
     @property
     def main_body(self) -> Body:
@@ -418,7 +419,7 @@ class Part(AnyObject):
         return Relations(self.com_object.Relations)
 
     @property
-    def shape_factory(self) -> Factory:
+    def shape_factory(self) -> ShapeFactory:
         """
         .. note::
             :class: toggle
@@ -440,7 +441,7 @@ class Part(AnyObject):
         :return: Factory
         """
 
-        return Factory(self.com_object.ShapeFactory)
+        return ShapeFactory(self.com_object.ShapeFactory)
 
     @property
     def user_surfaces(self) -> Collection:
