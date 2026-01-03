@@ -16,7 +16,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("..\\pycatia"))
+sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 ##########################################################
 
 from pycatia3dx import catia3dx
