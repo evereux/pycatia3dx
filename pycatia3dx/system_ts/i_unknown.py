@@ -25,7 +25,6 @@ class IUnknown():
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
         self.i_unknown = com_object
 
     def __repr__(self):
