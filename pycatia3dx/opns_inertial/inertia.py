@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import cast
 
 from pycatia3dx.system.any_object import AnyObject
 
@@ -24,10 +25,10 @@ class Inertia(AnyObject):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     Inertia
-                | 
+                |
                 | Interface representing the inertia of an element.
                 | Get the computation mode of the results.
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,13 +43,13 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
                 |     Retrieves the area.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |            This example retrieves the area of
                 |            theInertiaElement.
-                |            
-                | 
+                |
+                |
                 |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |              Dim theInertiaElement As Inertia
                 |              Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
@@ -59,7 +60,7 @@ class Inertia(AnyObject):
         """
         return self.com_object.GetArea()
 
-    def get_cog_position(self, o_xcog: float, o_ycog: float, o_zcog: float) -> None:
+    def get_cog_position(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -67,13 +68,13 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOGPosition(double oXCOG,double oYCOG,double oZCOG)
                 |     Retrieves the position of the center of gravity.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |            This example retrieves the position of the center of gravity of
                 |            theInertiaElement.
-                |            
-                | 
+                |
+                |
                 |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |              Dim theInertiaElement As Inertia
                 |              Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
@@ -83,14 +84,27 @@ class Inertia(AnyObject):
                 |              theInertiaElement.GetCOGPosition theXCOG, theYCOG,
                 |              theZCOG
 
-        :param float o_xcog:
-        :param float o_ycog:
-        :param float o_zcog:
-        :return: None
+        :return: tuple[float, float, float]
         """
-        return self.com_object.GetCOGPosition(o_xcog, o_ycog, o_zcog)
+        vba_function_name = 'get_cog_position'
+        vba_code = """
+        Public Function get_cog_position(inertia)
+            Dim oCoordinates (2)
+            Dim theXCOG As Double
+            Dim theYCOG As Double
+            Dim theZCOG As Double
+            inertia.GetCOGPosition theXCOG, theYCOG, theZCOG
+            oCoordinates(0) = theXCOG
+            oCoordinates(1) = theYCOG
+            oCoordinates(2) = theZCOG
+            get_cog_position = oCoordinates
+        End Function
+        """
+        system_service = self.application.system_service
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return cast(tuple[int, int, int], cast(object, result))
 
-    def get_inertia_matrix(self, o_matrix: tuple) -> None:
+    def get_inertia_matrix(self) -> tuple[float, ...]:
         """
         .. note::
             :class: toggle
@@ -98,12 +112,12 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetInertiaMatrix(CATSafeArrayVariant oMatrix)
                 |     Retrieves the matrix of inertia.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oMatrix
                 |             The matrix of inertia array:
-                | 
+                |
                 |                 oMatrix(0) is the Ixx component
                 |                 oMatrix(1) is the Ixy component
                 |                 oMatrix(2) is the Ixz component
@@ -112,24 +126,34 @@ class Inertia(AnyObject):
                 |                 oMatrix(5) is the Iyz component
                 |                 oMatrix(6) is the Izx component
                 |                 oMatrix(7) is the Izy component
-                |                 oMatrix(8) is the Izz component 
-                | 
+                |                 oMatrix(8) is the Izz component
+                |
                 |     Example:
-                | 
+                |
                 |            This example retrieves the inertia matrix of
                 |            theInertiaElement.
-                |            
-                | 
+                |
+                |
                 |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |              Dim theInertiaElement As Inertia
                 |              Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
                 |              Dim theMatrix(8)
                 |              theInertiaElement.GetInertiaMatrix theMatrix
 
-        :param tuple o_matrix:
-        :return: None
+        :return: tuple[int, ...]
         """
-        return self.com_object.GetInertiaMatrix(o_matrix)
+        vba_function_name = 'get_inertia_matrix'
+        vba_code = """
+        Public Function get_inertia_matrix(inertia)
+            Dim oMatrix (8)
+            inertia.GetInertiaMatrix oMatrix
+            get_inertia_matrix = oMatrix
+        End Function
+        """
+
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, ...], cast(object, result))
 
     def get_mass(self) -> float:
         """
@@ -139,13 +163,13 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMass() As double
                 |     Retrieves the mass.
-                | 
+                |
                 |     Example:
-                | 
+                |
                 |            This example retrieves the mass of
                 |            theInertiaElement.
-                |            
-                | 
+                |
+                |
                 |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |              Dim theInertiaElement As Inertia
                 |              Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
@@ -156,7 +180,7 @@ class Inertia(AnyObject):
         """
         return self.com_object.GetMass()
 
-    def get_principal_axes(self, o_axes: tuple) -> None:
+    def get_principal_axes(self) -> tuple[float, ...]:
         """
         .. note::
             :class: toggle
@@ -164,13 +188,13 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPrincipalAxes(CATSafeArrayVariant oAxes)
                 |     Retrieves the principal axes of inertia.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oAxes
                 |             The principal axes of inertia array (A1, A2 and A3 are the
                 |             principal axes of inertia):
-                | 
+                |
                 |                 oAxes(0) is the A1x component
                 |                 oAxes(1) is the A2x component
                 |                 oAxes(2) is the A3x component
@@ -179,26 +203,38 @@ class Inertia(AnyObject):
                 |                 oAxes(5) is the A3y component
                 |                 oAxes(6) is the A1z component
                 |                 oAxes(7) is the A2z component
-                |                 oAxes(8) is the A3z component 
-                | 
+                |                 oAxes(8) is the A3z component
+                |
                 |     Example:
-                | 
+                |
                 |             This example retrieves the principal axes of
                 |             theInertiaElement.
-                |             
-                | 
+                |
+                |
                 |               Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |               Dim theInertiaElement As Inertia
                 |               Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
                 |               Dim theAxes(8)
                 |               theInertiaElement.GetPrincipalAxes theAxes
 
-        :param tuple o_axes:
-        :return: None
+        :return: tuple[float, ...]
         """
+        vba_function_name = 'get_principal_axes'
+        vba_code = """
+        Public Function get_principal_axes(inertia)
+            Dim oComponents(8)
+            inertia.GetPrincipalAxes oComponents
+            get_principal_axes = oComponents
+        End Function
+        """
+
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, ...], cast(object, result))
+
         return self.com_object.GetPrincipalAxes(o_axes)
 
-    def get_principal_moments(self, o_moments: tuple) -> None:
+    def get_principal_moments(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -206,35 +242,44 @@ class Inertia(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPrincipalMoments(CATSafeArrayVariant oMoments)
                 |     Retrieves the principal moments of inertia.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oMoments
                 |             The principal moments of inertia array:
-                | 
+                |
                 |                 oMoments(0) is the M1 value with respect to the first principal
                 |                 axes of inertia
                 |                 oMoments(1) is the M2 value with respect to the second
                 |                 principal axes of inertia
                 |                 oMoments(2) is the M3 value with respect to the third principal
-                |                 axes of inertia 
-                | 
+                |                 axes of inertia
+                |
                 |     Example:
-                | 
+                |
                 |             This  example  retrieves  principal  moments  of  inertia  of
                 |             theInertiaElement.
-                |             
-                | 
+                |
+                |
                 |               Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
                 |               Dim theInertiaElement As Inertia
                 |               Set theInertiaElement = theInertiaService.GetInertiaElement(theSelection)
                 |               Dim theMoments(2)
                 |               theInertiaElement.GetPrincipalMoments theMoments
 
-        :param tuple o_moments:
-        :return: None
+        :return: tuple[float, float, float]
         """
-        return self.com_object.GetPrincipalMoments(o_moments)
+        vba_function_name = 'get_principal_moments'
+        vba_code = """
+        Public Function get_principal_moments(inertia)
+            Dim oValues (2)
+            inertia.GetPrincipalMoments oValues
+            get_principal_moments = oValues
+        End Function
+        """
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, float, float], cast(object, result))
 
     def get_volume(self) -> float:
         """
