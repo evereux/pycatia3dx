@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import cast
 
 from pycatia3dx.system.any_object import AnyObject
 
@@ -59,7 +60,7 @@ class Inertia(AnyObject):
         """
         return self.com_object.GetArea()
 
-    def get_cog_position(self, o_xcog: float, o_ycog: float, o_zcog: float) -> None:
+    def get_cog_position(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -83,14 +84,21 @@ class Inertia(AnyObject):
                 |              theInertiaElement.GetCOGPosition theXCOG, theYCOG,
                 |              theZCOG
 
-        :param float o_xcog:
-        :param float o_ycog:
-        :param float o_zcog:
-        :return: None
+        :return: tuple[float, float, float]
         """
-        return self.com_object.GetCOGPosition(o_xcog, o_ycog, o_zcog)
+        vba_function_name = 'get_cog_position'
+        vba_code = """
+        Public Function get_cog_position(inertia)
+            Dim oCoordinates (2)
+            inertia.GetCOGPosition oCoordinates
+            get_cog_position = oCoordinates
+        End Function
+        """
+        system_service = self.application.system_service
+        result = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[int, int, int], cast(object, result))
 
-    def get_inertia_matrix(self, o_matrix: tuple) -> None:
+    def get_inertia_matrix(self) -> tuple[float, ...]:
         """
         .. note::
             :class: toggle
@@ -126,10 +134,20 @@ class Inertia(AnyObject):
                 |              Dim theMatrix(8)
                 |              theInertiaElement.GetInertiaMatrix theMatrix
 
-        :param tuple o_matrix:
-        :return: None
+        :return: tuple[int, ...]
         """
-        return self.com_object.GetInertiaMatrix(o_matrix)
+        vba_function_name = 'get_inertia_matrix'
+        vba_code = """
+        Public Function get_inertia_matrix(inertia)
+            Dim oMatrix (8)
+            inertia.GetInertiaMatrix oMatrix
+            get_inertia_matrix = oMatrix
+        End Function
+        """
+
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, ...], cast(object, result))
 
     def get_mass(self) -> float:
         """
@@ -156,7 +174,7 @@ class Inertia(AnyObject):
         """
         return self.com_object.GetMass()
 
-    def get_principal_axes(self, o_axes: tuple) -> None:
+    def get_principal_axes(self) -> tuple[float, ...]:
         """
         .. note::
             :class: toggle
@@ -193,12 +211,24 @@ class Inertia(AnyObject):
                 |               Dim theAxes(8)
                 |               theInertiaElement.GetPrincipalAxes theAxes
 
-        :param tuple o_axes:
-        :return: None
+        :return: tuple[float, ...]
         """
+        vba_function_name = 'get_principal_axes'
+        vba_code = """
+        Public Function get_principal_axes(inertia)
+            Dim oComponents(8)
+            inertia.GetPrincipalAxes oComponents
+            get_principal_axes = oComponents
+        End Function
+        """
+
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, ...], cast(object, result))
+
         return self.com_object.GetPrincipalAxes(o_axes)
 
-    def get_principal_moments(self, o_moments: tuple) -> None:
+    def get_principal_moments(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -231,10 +261,19 @@ class Inertia(AnyObject):
                 |               Dim theMoments(2)
                 |               theInertiaElement.GetPrincipalMoments theMoments
 
-        :param tuple o_moments:
-        :return: None
+        :return: tuple[float, float, float]
         """
-        return self.com_object.GetPrincipalMoments(o_moments)
+        vba_function_name = 'get_principal_moments'
+        vba_code = """
+        Public Function get_principal_moments(inertia)
+            Dim oValues (2)
+            inertia.GetPrincipalMoments oValues
+            get_principal_moments = oValues
+        End Function
+        """
+        system_service = self.application.system_service
+        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        return cast(tuple[float, float, float], cast(object, result))
 
     def get_volume(self) -> float:
         """
