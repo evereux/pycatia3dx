@@ -11,6 +11,7 @@ from typing import TYPE_CHECKING
 
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.types import AnyService, service_types
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.selection import Selection
@@ -87,7 +88,7 @@ class Editor(AnyObject):
 
         return Selection(self.com_object.Selection)
 
-    def get_service(self, i_service: str) -> Service:
+    def get_service(self, i_service: str) -> AnyService|Service:
         """
         .. note::
             :class: toggle
@@ -95,26 +96,34 @@ class Editor(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetService(CATBSTR iService) As Service
                 |     Returns the specified service.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iService
-                |             The identifier of the service to be retrieved 
-                | 
+                |             The identifier of the service to be retrieved
+                |
                 |     Returns:
                 |         The specified service
-                | 
+                |
                 |         Example:
                 |             This example retrieves in Service1 the VisuServices editor's
                 |             visualization service from the active editor.
-                | 
+                |
                 |              Dim Service1 As Service
                 |              Set Service1 = CATIA.ActiveEditor.GetService("VisuServices")
 
         :param str i_service:
-        :return: Service
+        :return: AnyService
         """
-        return Service(self.com_object.GetService(i_service))
+        com_service = self.com_object.GetService(i_service)
+
+        # Look up the concrete service type
+        if i_service in service_types:
+            service_class = service_types[i_service]['type']
+            return service_class(com_service)
+
+        # Fall back to base Service class if not found
+        return Service(com_service)
 
     def __repr__(self):
         return f'Editor(name="{self.name}")'
