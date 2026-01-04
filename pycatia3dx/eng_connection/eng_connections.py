@@ -9,6 +9,7 @@
 """
 from pycatia3dx.eng_connection.eng_connection import EngConnection
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.types import CATVariant
 
 
 class EngConnections(Collection):
@@ -109,6 +110,54 @@ class EngConnections(Collection):
         :return: EngConnection
         """
         return EngConnection(self.com_object.Add(i_type, i_impacteds))
+
+    def item(self, i_index: CATVariant) -> EngConnection:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Func Item(CATVariant iIndex) As EngConnection
+                |     Return an Engineering Connection.
+                |
+                |     Parameters:
+                |
+                |         I
+                |             [in] The index or name of the Engineering
+                |             Connection.
+                |         the index in the collection
+                |             if it is an Integer.
+                |         the name of the connection
+                |             if it is a String.
+
+        :param CATVariant i_index:
+        :return: EngConnection
+        """
+        return EngConnection(self.com_object.Item(i_index))
+
+    def remove(self, i_eng_cnt: CATVariant) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Sub Remove(CATVariant iEngCnt)
+                |     Remove an Engineering Connection.
+                |
+                |     Parameters:
+                |
+                |         iEngCnt
+                |         the index in the collection
+                |             if it is an Integer.
+                |         the name of the connection
+                |             if it is a String.
+                |         the connection to remove
+                |             if it is a EngConnection.
+
+        :param CATVariant i_eng_cnt:
+        :return: None
+        """
+        return self.com_object.Remove(i_eng_cnt)
 
     def __repr__(self):
         return f'EngConnections(name="{self.name}")'
