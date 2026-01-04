@@ -7,7 +7,10 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CatDimType, CatDimLineRep
 from pycatia3dx.annotation.drawing_dimension import DrawingDimension
+from pycatia3dx.sketcher.geometry_2d import Geometry2D
+from pycatia3dx.sketcher.line_2d import Line2D
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
@@ -35,7 +38,8 @@ class DrawingDimensions(Collection):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_line_rep: int) -> DrawingDimension:
+    def add(self, i_type_dim: CatDimType, i_geom_elem: tuple[Geometry2D, ...], i_pt_coord_elem: tuple[int, ...],
+            i_line_rep: CatDimLineRep) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -104,10 +108,15 @@ class DrawingDimensions(Collection):
         :param int i_line_rep:
         :return: DrawingDimension
         """
+        i_geom_el_converted = []
+        for el in i_geom_elem:
+            i_geom_el_converted.append(el.com_object)
+        i_geom_elem = tuple(i_geom_el_converted)
+
         return DrawingDimension(self.com_object.Add(i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep))
 
-    def add2(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_ldc_ref_elem: CATVariant,
-             i_ldc_ref_angle: int) -> DrawingDimension:
+    def add2(self, i_type_dim: CatDimType, i_geom_elem: tuple[Geometry2D, ...], i_pt_coord_elem: tuple[int, ...],
+             i_ldc_ref_elem: CATVariant|Geometry2D, i_ldc_ref_angle: int) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -174,8 +183,14 @@ class DrawingDimensions(Collection):
         :param int i_ldc_ref_angle:
         :return: DrawingDimension
         """
+        i_geom_elem_com = []
+        for el in i_geom_elem:
+            i_geom_elem_com.append(el.com_object)
+        i_geom_elem = tuple(i_geom_elem_com)
+
         return DrawingDimension(
-            self.com_object.Add2(i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle))
+            self.com_object.Add2(i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle)
+        )
 
     def item(self, i_index: CATVariant) -> DrawingDimension:
         """

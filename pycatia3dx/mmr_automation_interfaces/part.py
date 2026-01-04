@@ -9,7 +9,7 @@
         
 """
 
-from pycatia3dx.mode.reference import Reference
+from pycatia3dx.hybrid_shapes.hybrid_shape_factory import HybridShapeFactory
 from pycatia3dx.knowledge_interfaces.parameters import Parameters
 from pycatia3dx.knowledge_interfaces.relations import Relations
 from pycatia3dx.mmr_automation_interfaces.axis_systems import AxisSystems
@@ -21,14 +21,13 @@ from pycatia3dx.mmr_automation_interfaces.geometric_elements import GeometricEle
 from pycatia3dx.mmr_automation_interfaces.hybrid_bodies import HybridBodies
 from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
 from pycatia3dx.mmr_automation_interfaces.origin_elements import OriginElements
-from pycatia3dx.hybrid_shapes.hybrid_shape_factory import HybridShapeFactory
+from pycatia3dx.mode.reference import Reference
 from pycatia3dx.part.shape_factory import ShapeFactory
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 
 
 class Part(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -285,7 +284,7 @@ class Part(AnyObject):
         :param AnyObject value:
         """
 
-        self.com_object.InWorkObject = value
+        self.com_object.InWorkObject = value.com_object
 
     @property
     def main_body(self) -> Body:
@@ -859,4 +858,4 @@ class Part(AnyObject):
         return self.com_object.UpdateObject(i_object.com_object)
 
     def __repr__(self):
-        return f'Part(name="{ self.name }")'
+        return f'Part(name="{self.name}")'
