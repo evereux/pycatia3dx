@@ -9,6 +9,7 @@
 """
 from pycatia3dx.eng_connection.assembly_constraint import AssemblyConstraint
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.types import CATVariant
 
 
 class AssemblyConstraints(Collection):
@@ -109,6 +110,55 @@ class AssemblyConstraints(Collection):
         :return: AssemblyConstraint
         """
         return AssemblyConstraint(self.com_object.Add(i_type, i_geometries))
+
+    def item(self, i_index: CATVariant) -> AssemblyConstraint:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Func Item(CATVariant iIndex) As AssemblyConstraint
+                |     Returns an Assembly Contraint.
+                |
+                |     Parameters:
+                |
+                |         I
+                |             [in] The index or name of the Assembly Contraint.
+                |         the index in the collection
+                |             if it is an Integer.
+                |         the name of the Assembly Contraint
+                |             if it is a String.
+
+        :param CATVariant i_index:
+        :return: AssemblyConstraint
+        """
+        return AssemblyConstraint(self.com_object.Item(i_index))
+
+    def remove(self, i_eng_connection: AssemblyConstraint) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Sub Remove(AssemblyConstraint iEngConnection)
+                |     Removes an Assembly Constraint defined in the Engineering
+                |     Connection.
+                |
+                |     Parameters:
+                |
+                |         iAssConstraint
+                |             [in] Assembly Constraint to remove.
+                |         the index in the collection
+                |             if it is an Integer.
+                |         the name of the constraint
+                |             if it is a String.
+                |         the constraint to remove
+                |             if it is an AssemblyConstraint.
+
+        :param AssemblyConstraint i_eng_connection:
+        :return: None
+        """
+        return self.com_object.Remove(i_eng_connection.com_object)
 
     def __repr__(self):
         return f'AssemblyConstraints(name="{self.name}")'
