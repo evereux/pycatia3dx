@@ -442,7 +442,7 @@ class Part(AnyObject):
         :return: Factory
         """
 
-        return HybridShapeFactory(self.com_object.ShapeFactory)
+        return ShapeFactory(self.com_object.ShapeFactory)
 
     @property
     def user_surfaces(self) -> Collection:
