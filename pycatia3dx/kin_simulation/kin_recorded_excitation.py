@@ -172,5 +172,75 @@ class KinRecordedExcitation(SimExcitation):
         """
         return self.com_object.GetKeyFramesValues(i_kin_cmd.com_object, o_values)
 
+    def set_key_frames_times(self, i_times: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Sub SetKeyFramesTimes(CATSafeArrayVariant iTimes)
+                |     Sets the key frames times
+                |
+                |     Parameters:
+                |
+                |         iTimes
+                |             Key frames times values as double.
+                |             The values of the key frames times should follow an ascending
+                |             chronological order. The first and last times will be set as the start and end
+                |             times of the scenario.
+                |
+                |             Example:
+                |                 Set the key frames times with 2 values : 0s and 100s
+                |
+                |                  Dim KinExcitation As KinRecordedExcitation
+                |
+                |                  Dim Times(1) As Double
+                |                  Times(0)=0
+                |                  Times(0)=100
+                |                  KinExcitation.SetKeyFramesTimes(Times)
+
+        :param tuple i_times:
+        :return: None
+        """
+        return self.com_object.SetKeyFramesTimes(i_times)
+
+    def set_key_frames_values(self, i_kin_cmd: KinCommand, i_values: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
+                | Sub SetKeyFramesValues(KinCommand iKinCmd,CATSafeArrayVariant
+                | iValues)
+                |     Sets the key frame values for a kinematics command.
+                |
+                |     Parameters:
+                |
+                |         iKinCmd
+                |             The kinematics command for which the values are
+                |             defined.
+                |         iValues
+                |             Key frames values as double.
+                |             Depending of the command the unit of the value must be in mm or in
+                |             deg.
+                |
+                |             Example:
+                |                 Set the key frames values for a kinematic command with 2 values : 0 mm and 100 mm
+                |
+                |                  Dim KinExcitation As KinRecordedExcitation
+                |                  Dim KinCommand1 As KinCommand
+                |                  ...
+                |                  Dim CmdValues(1) As Double
+                |                  CmdValues(0)=0
+                |                  CmdValues(0)=100
+                |                  KinExcitation.SetKeyFramesValues KinCommand1 ,
+                |                  CmdValues
+
+        :param KinCommand i_kin_cmd:
+        :param tuple i_values:
+        :return: None
+        """
+        return self.com_object.SetKeyFramesValues(i_kin_cmd.com_object, i_values)
+
     def __repr__(self):
         return f'KinRecordedExcitation(name="{self.name}")'
