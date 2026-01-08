@@ -23,21 +23,22 @@ sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 ##########################################################
 
 from pycatia3dx import catia3dx
-from pycatia3dx.scripts.csv_tools import create_points
 
 application = catia3dx()
-editor = application.active_editor
 
 # IMPORTANT NOTE:
-# In contrast to V5, currently (Jan 2026) Automation API exposes only
-# methods for creating new REPRESENTATION objects (3D Shape and Drawing;
-# You can compare representation objects to documents from ENOVIA V5).
-# In production, both objects should be always children of 3D Part, since
-# 3D Part is actual Part Reference (in Automation API- VPMReference).
+# Unlike V5, as of Jan 2026 the Automation API only
+# supports creating REPRESENTATION objects (3DShape and Drawing).
+# In production, these must be children of a 3D Part.
+# This mirrors ENOVIA V5, where REPR objects are documents, and 3DPart is Part Reference.
 # Code bellow has been created for testing and example purposes.
 plm_service = PLMNewService(application.get_session_service('PLMNewService').com_object)
-plm_service.plm_create('3DShape', editor)
+plm_service.plm_create('3DShape', application.active_editor)
 
+# remember to assign active_editor property to variable
+# after you create 3DShape/Drawing; otherwise it will
+# fail or perform operations in previous editor
+editor = application.active_editor
 part = Part(editor.active_object.com_object)
 
 hybrid_bodies = part.hybrid_bodies
