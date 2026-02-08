@@ -37,7 +37,7 @@ class MeasurableCylinder(MeasurableSurface):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_axis(self, o_x_vector: float, o_y_vector: float, o_z_vector: float) -> None:
+    def get_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -61,12 +61,9 @@ class MeasurableCylinder(MeasurableSurface):
                 |              theMeasurableCylinder.GetAxis theXVector, theYVector,
                 |              theZVector
 
-        :param float o_x_vector:
-        :param float o_y_vector:
-        :param float o_z_vector:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetAxis(o_x_vector, o_y_vector, o_z_vector)
+        return self.com_object.GetAxis()
 
     def get_point(self, o_x_point: float, o_y_point: float, o_z_point: float) -> None:
         """
@@ -100,8 +97,7 @@ class MeasurableCylinder(MeasurableSurface):
         """
         return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
 
-    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float,
-                   o_y_end_point: float, o_z_end_point: float) -> None:
+    def get_points(self) -> None:
         """
         .. note::
             :class: toggle
@@ -133,16 +129,10 @@ class MeasurableCylinder(MeasurableSurface):
                 |              theZStartPoint, theXEndPoint, theYEndPoint,
                 |              theZEndPoint
 
-        :param float o_x_start_point:
-        :param float o_y_start_point:
-        :param float o_z_start_point:
-        :param float o_x_end_point:
-        :param float o_y_end_point:
-        :param float o_z_end_point:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point,
-                                         o_y_end_point, o_z_end_point)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetPoints()
 
     def get_radius(self) -> float:
         """

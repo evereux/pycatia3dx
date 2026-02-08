@@ -60,7 +60,7 @@ class MeasurableCurve(MeasurableInContext):
         """
         return self.com_object.GetLength()
 
-    def get_points(self, io_start_point: tuple, io_mid_point: tuple, io_end_point: tuple) -> None:
+    def get_points(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -120,12 +120,10 @@ class MeasurableCurve(MeasurableInContext):
                 |              theMeasurableCurve.GetPoints theStartPoint, theMidPoint,
                 |              theEndPoint
 
-        :param tuple io_start_point:
-        :param tuple io_mid_point:
-        :param tuple io_end_point:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetPoints(io_start_point, io_mid_point, io_end_point)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetPoints()
 
     def __repr__(self):
         return f'MeasurableCurve(name="{self.name}")'

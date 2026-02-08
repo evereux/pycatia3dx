@@ -7,12 +7,12 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.inertia.inertia import Inertia
 from pycatia3dx.interfaces.service import Service
-from pycatia3dx.opns_inertial.inertia_box import InertiaBox
 from pycatia3dx.system.any_object import AnyObject
 
 
-class InertiaBoxService(Service):
+class InertiaService(Service):
     """
         .. note::
             :class: toggle
@@ -25,9 +25,9 @@ class InertiaBoxService(Service):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     InfInterfaces.Service
-                |                         InertiaBoxService
+                |                         InertiaService
                 | 
-                | Object representing the service to retrieve an inertia box
+                | Object representing the service to retrieve an inertia
                 | element.
                 | 
                 | See also:
@@ -39,29 +39,28 @@ class InertiaBoxService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_inertia_box_element(self, i_selected_item: AnyObject) -> InertiaBox:
+    def get_inertia_element(self, i_selected_item: AnyObject) -> Inertia:
         """
         .. note::
             :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInertiaBoxElement(AnyObject iSelectedItem) As
-                | InertiaBox
-                |     Retrieves the Inertia box object.
+                | Func GetInertiaElement(AnyObject iSelectedItem) As Inertia
+                |     Retrieves the Inertia object.
                 | 
                 |     Example:
                 | 
-                |            This example retrieves an Inertia box object.
+                |            This example retrieves an Inertia object.
                 |            
                 | 
-                |              Set theInertiaBoxService = CATIA.ActiveEditor.GetService("InertiaBoxService")
-                |              Dim theInertiaBox As InertiaBox
-                |              Set theInertiaBox = theInertiaBoxService.GetInertiaBoxElement(theSelection)
+                |              Set theInertiaService = CATIA.ActiveEditor.GetService("InertiaService")
+                |              Dim theInertia As Inertia
+                |              Set theInertia = theInertiaService.GetInertiaElement(theSelection)
 
         :param AnyObject i_selected_item:
-        :return: InertiaBox
+        :return: Inertia
         """
-        return InertiaBox(self.com_object.GetInertiaBoxElement(i_selected_item.com_object))
+        return Inertia(self.com_object.GetInertiaElement(i_selected_item.com_object))
 
     def __repr__(self):
-        return f'InertiaBoxService(name="{self.name}")'
+        return f'InertiaService(name="{self.name}")'

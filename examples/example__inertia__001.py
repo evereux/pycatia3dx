@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('..\\pycatia3dx'))
 
 from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.part import Part
-from pycatia3dx.opns_inertial.inertia import Inertia
+from pycatia3dx.inertia.inertia import Inertia
 from pycatia3dx.types.service import InertiaService
 
 __author__ = '[ptm] by plm-forum.ru | ported to pycatia3dx by HdCadUser'
@@ -47,12 +47,10 @@ inertia_service: InertiaService = InertiaService(
 reference = part.create_reference_from_object(part)
 inertia: Inertia = inertia_service.get_inertia_element(reference)
 
-
 print(f'Density={part.density}\n\n')
 # Density setter has been removed from 3DX; Only getter is available
 
 print(f'Mass={inertia.get_mass()}\n\n')
-
 
 inertia_matrix = inertia.get_inertia_matrix()
 print('--------------\n'

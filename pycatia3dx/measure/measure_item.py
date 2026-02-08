@@ -96,7 +96,7 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetArea()
 
-    def get_axis(self, o_x_vector: float, o_y_vector: float, o_z_vector: float) -> None:
+    def get_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -130,12 +130,9 @@ class MeasureItem(AnyObject):
                 |              theMeasureItem.GetAxis theXVector, theYVector,
                 |              theZVector
 
-        :param float o_x_vector:
-        :param float o_y_vector:
-        :param float o_z_vector:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetAxis(o_x_vector, o_y_vector, o_z_vector)
+        return self.com_object.GetAxis()
 
     def get_axis_system_from_measure(self, o_axis_positioning: tuple) -> None:
         """
@@ -422,6 +419,7 @@ class MeasureItem(AnyObject):
         :param float o_z_vector:
         :return: None
         """
+        # todo: check this method, does it require system service?
         return self.com_object.GetDirection(o_x_vector, o_y_vector, o_z_vector)
 
     def get_length(self) -> float:
@@ -557,7 +555,7 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetMeasureSurfaceType()
 
-    def get_origin(self, o_x_origin: float, o_y_origin: float, o_z_origin: float) -> None:
+    def get_origin(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -590,12 +588,10 @@ class MeasureItem(AnyObject):
                 |              theMeasureItem.GetOrigin theXOrigin, theYOrigin,
                 |              theZOrigin
 
-        :param float o_x_origin:
-        :param float o_y_origin:
-        :param float o_z_origin:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetOrigin(o_x_origin, o_y_origin, o_z_origin)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetOrigin()
 
     def get_perimeter(self) -> float:
         """
@@ -716,8 +712,7 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
 
-    def get_points(self, o_x_start_point: float, o_y_start_point: float, o_z_start_point: float, o_x_end_point: float,
-                   o_y_end_point: float, o_z_end_point: float) -> None:
+    def get_points(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -764,16 +759,10 @@ class MeasureItem(AnyObject):
                 |              theZStartPoint, theXEndPoint, theYEndPoint,
                 |              theZEndPoint
 
-        :param float o_x_start_point:
-        :param float o_y_start_point:
-        :param float o_z_start_point:
-        :param float o_x_end_point:
-        :param float o_y_end_point:
-        :param float o_z_end_point:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetPoints(o_x_start_point, o_y_start_point, o_z_start_point, o_x_end_point,
-                                         o_y_end_point, o_z_end_point)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetPoints()
 
     def get_radius(self) -> float:
         """

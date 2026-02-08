@@ -8,13 +8,12 @@
         
 """
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.sma_mpa_base.sim_math_point import SimMathPoint
 from pycatia3dx.sma_mpa_base.sim_math_vector import SimMathVector
+from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAxis(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -96,6 +95,7 @@ class SimAxis(AnyObject):
         :param SimMathVector o_vector:
         :return: None
         """
+        # todo: check this method, does it require system service?
         return self.com_object.GetAxis(o_origin.com_object, o_vector.com_object)
 
     def set_axis(self, i_origin: SimMathPoint, i_vector: SimMathVector) -> None:
@@ -124,4 +124,4 @@ class SimAxis(AnyObject):
         return self.com_object.SetAxis(i_origin.com_object, i_vector.com_object)
 
     def __repr__(self):
-        return f'SimAxis(name="{ self.name }")'
+        return f'SimAxis(name="{self.name}")'
