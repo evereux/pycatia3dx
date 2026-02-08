@@ -62,7 +62,7 @@ class MeasurableCircle(MeasurableCurve):
         """
         return self.com_object.GetAngle()
 
-    def get_axis(self, o_x_vector: float, o_y_vector: float, o_z_vector: float) -> None:
+    def get_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -86,12 +86,10 @@ class MeasurableCircle(MeasurableCurve):
                 |              theMeasurableCircle.GetAxis theXVector, theYVector,
                 |              theZVector
 
-        :param float o_x_vector:
-        :param float o_y_vector:
-        :param float o_z_vector:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetAxis(o_x_vector, o_y_vector, o_z_vector)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetAxis()
 
     def get_center(self, o_x_center: float, o_y_center: float, o_z_center: float) -> None:
         """

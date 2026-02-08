@@ -67,9 +67,10 @@ class MeasurableLine(MeasurableCurve):
         :param float o_z_vector:
         :return: None
         """
+        # todo: check this method, does it require system service?
         return self.com_object.GetDirection(o_x_vector, o_y_vector, o_z_vector)
 
-    def get_origin(self, o_x_origin: float, o_y_origin: float, o_z_origin: float) -> None:
+    def get_origin(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -93,12 +94,10 @@ class MeasurableLine(MeasurableCurve):
                 |              theMeasurableLine.GetOrigin theXOrigin, theYOrigin,
                 |              theZOrigin
 
-        :param float o_x_origin:
-        :param float o_y_origin:
-        :param float o_z_origin:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetOrigin(o_x_origin, o_y_origin, o_z_origin)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetOrigin()
 
     def __repr__(self):
         return f'MeasurableLine(name="{self.name}")'

@@ -234,7 +234,7 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.com_object.GetGap(i_index)
 
-    def get_geom_info(self, i_index: int, o_geom_infos: tuple) -> None:
+    def get_geom_info(self, i_index: int, o_geom_infos: tuple) -> tuple:
         """
         .. note::
             :class: toggle
@@ -260,6 +260,7 @@ class DrawingDimExtLine(AnyObject):
         :param tuple o_geom_infos:
         :return: None
         """
+        # todo: check this method, does it require system service?
         return self.com_object.GetGeomInfo(i_index, o_geom_infos)
 
     def get_interrupt(self, i_index: int) -> int:

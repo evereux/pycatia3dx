@@ -9,6 +9,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_upload_service import OLPUploadService
 from pycatia3dx.drafting.drawing_gen_service import DrawingGenService
 from pycatia3dx.electrical.elec_import_finalizer_service import ElecImportFinalizerService
 from pycatia3dx.fc_board.fcb_service import FcbService
+from pycatia3dx.inertia.inertia_box_service import InertiaBoxService
+from pycatia3dx.inertia.inertia_service import InertiaService
 from pycatia3dx.interfaces.player_services import PlayerServices
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.interfaces.visu_services import VisuServices
@@ -16,8 +18,6 @@ from pycatia3dx.knowledge_interfaces.knowledge_services import KnowledgeServices
 from pycatia3dx.material.matplm_service import MatplmService
 from pycatia3dx.measure.measurable_service import MeasurableService
 from pycatia3dx.measure.measure_service import MeasureService
-from pycatia3dx.opns_inertial.inertia_box_service import InertiaBoxService
-from pycatia3dx.opns_inertial.inertia_service import InertiaService
 from pycatia3dx.opns_section.section_service import SectionService
 from pycatia3dx.pcb_board.pcb_service import PcbService
 from pycatia3dx.plm_access.plm_script_service import PLMScriptService
