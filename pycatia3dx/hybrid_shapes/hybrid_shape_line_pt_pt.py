@@ -130,7 +130,7 @@ class HybridShapeLinePtPt(Line):
         self.com_object.PtExtremity = value
 
     @property
-    def pt_origine(self) -> Reference:
+    def pt_origin(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -153,8 +153,8 @@ class HybridShapeLinePtPt(Line):
 
         return Reference(self.com_object.PtOrigine)
 
-    @pt_origine.setter
-    def pt_origine(self, value: Reference):
+    @pt_origin.setter
+    def pt_origin(self, value: Reference):
         """
         :param Reference value:
         """
