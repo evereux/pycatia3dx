@@ -198,7 +198,7 @@ class HybridShapeCircle(HybridShape):
         # todo: check this method, does it require system service?
         return Reference(self.com_object.GetAxis(i_position))
 
-    def get_center(self, o_center_x: float, o_center_y: float, o_center_z: float) -> None:
+    def get_center(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -213,10 +213,7 @@ class HybridShapeCircle(HybridShape):
                 |         oCenterX,
                 |             oCenterY, oCenterZ, circle center
 
-        :param float o_center_x:
-        :param float o_center_y:
-        :param float o_center_z:
-        :return: None
+        :return: tuple
         """
         return self.com_object.GetCenter(o_center_x, o_center_y, o_center_z)
 

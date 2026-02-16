@@ -122,7 +122,7 @@ class MeasurableCone(MeasurableSurface):
         """
         return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
 
-    def get_points(self) -> None:
+    def get_points(self) -> tuple:
         """
         .. note::
             :class: toggle

@@ -21,7 +21,6 @@ from pycatia3dx.tps.tps_views import TPSViews
 
 
 class AnnotationSet(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -463,7 +462,8 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.GlobalCopySetToWithFilter(i_destination_part.com_object, i_capture_filter_name)
 
-    def global_copy_set_to_with_filter_with_transformation(self, i_destination_part: Part, i_transfo: tuple, i_capture_filter_name: str) -> str:
+    def global_copy_set_to_with_filter_with_transformation(self, i_destination_part: Part, i_transfo: tuple,
+                                                           i_capture_filter_name: str) -> str:
         """
         .. note::
             :class: toggle
@@ -518,7 +518,8 @@ class AnnotationSet(AnyObject):
         :param str i_capture_filter_name:
         :return: str
         """
-        return self.com_object.GlobalCopySetToWithFilterWithTransformation(i_destination_part.com_object, i_transfo, i_capture_filter_name)
+        return self.com_object.GlobalCopySetToWithFilterWithTransformation(i_destination_part.com_object, i_transfo,
+                                                                           i_capture_filter_name)
 
     def global_copy_set_to_with_transformation(self, i_destination_part: Part, i_transfo: tuple) -> str:
         """
@@ -597,7 +598,8 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.IsolateLinksOfNOA()
 
-    def logical_global_copy_set_to(self, ipi_target3_dsr: Part, i_list_of_bodies_and_geometrical_sets: tuple, ib_import_once: bool) -> str:
+    def logical_global_copy_set_to(self, ipi_target3_dsr: Part, i_list_of_bodies_and_geometrical_sets: tuple,
+                                   ib_import_once: bool) -> str:
         """
         .. note::
             :class: toggle
@@ -633,9 +635,12 @@ class AnnotationSet(AnyObject):
         :param bool ib_import_once:
         :return: str
         """
-        return self.com_object.LogicalGlobalCopySetTo(ipi_target3_dsr.com_object, i_list_of_bodies_and_geometrical_sets, ib_import_once)
+        return self.com_object.LogicalGlobalCopySetTo(ipi_target3_dsr.com_object, i_list_of_bodies_and_geometrical_sets,
+                                                      ib_import_once)
 
-    def logical_global_copy_set_to_with_filter(self, ipi_target3_dsr: Part, i_list_of_bodies_and_geometrical_sets: tuple, ib_import_once: bool, i_capture_filter_name: str) -> str:
+    def logical_global_copy_set_to_with_filter(self, ipi_target3_dsr: Part,
+                                               i_list_of_bodies_and_geometrical_sets: tuple, ib_import_once: bool,
+                                               i_capture_filter_name: str) -> str:
         """
         .. note::
             :class: toggle
@@ -676,21 +681,23 @@ class AnnotationSet(AnyObject):
         :param str i_capture_filter_name:
         :return: str
         """
-        return self.com_object.LogicalGlobalCopySetToWithFilter(ipi_target3_dsr.com_object, i_list_of_bodies_and_geometrical_sets, ib_import_once, i_capture_filter_name)
+        return self.com_object.LogicalGlobalCopySetToWithFilter(ipi_target3_dsr.com_object,
+                                                                i_list_of_bodies_and_geometrical_sets, ib_import_once,
+                                                                i_capture_filter_name)
 
-    def read_iso_default_properties(self, o_iso_defaults: tuple) -> int:
+    def read_iso_default_properties(self) -> tuple:
         """
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
+            3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func ReadISODefaultProperties(CATSafeArrayVariant oISODefaults) As
                 | long
                 |     Retrieves the ISO 14405 and ISO 1101 default specifications. This method is
                 |     not relevant in case of ASME Standard.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oISODefaults
                 |             Array of ISO default defined onto the annotation set. Composition
                 |             of the array may looks like the following schema
@@ -703,16 +710,31 @@ class AnnotationSet(AnyObject):
                 |             When oCount is not null, minimal size of oISODefaults "vector" of
                 |             string is 3 (the 3 first strings are always existing); depending on GDT
                 |             toleranced feature filtering options activated on the annotation set, oCount
-                |             may reach the limit of 7 (4 more texts). 
+                |             may reach the limit of 7 (4 more texts).
                 |         oCount
                 |             Number of lines in returned array of strings. When this procedure
                 |             is not applicable (either due to wrong Standard, old annotation set), oCount
                 |             equals 0.
 
-        :param tuple o_iso_defaults:
-        :return: int
+        :return: tuple
         """
         return self.com_object.ReadISODefaultProperties(o_iso_defaults)
+        # todo: check this method, does it require system service?
+        # Autogenerated comment:
+        # some methods require a system service call as the methods expects a vb array object
+        # passed to it and there is no way to do this directly with python. In those cases the following code
+        # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # vba_function_name = 'read_iso_default_properties'
+        # vba_code = """
+        # Public Function read_iso_default_properties(annotation_set)
+        #     Dim oISODefaults (2)
+        #     annotation_set.ReadISODefaultProperties oISODefaults
+        #     read_iso_default_properties = oISODefaults
+        # End Function
+        # """
+
+        # system_service = SystemService(self.application.SystemService)
+        # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def repair_delete_invalid_fta_features(self, options_to_repair_delete: int) -> None:
         """
@@ -753,4 +775,4 @@ class AnnotationSet(AnyObject):
         return self.com_object.RepairDeleteInvalidFTAFeatures(options_to_repair_delete)
 
     def __repr__(self):
-        return f'AnnotationSet(name="{ self.name }")'
+        return f'AnnotationSet(name="{self.name}")'
