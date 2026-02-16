@@ -12,7 +12,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPSphere(OLPShape):
-
     """
         .. note::
             :class: toggle
@@ -63,7 +62,7 @@ class OLPSphere(OLPShape):
 
         self.com_object.Radius = value
 
-    def get_center(self, i_origin: int) -> OLPTransform:
+    def get_center(self) -> OLPTransform:
         """
         .. note::
             :class: toggle
@@ -83,10 +82,9 @@ class OLPSphere(OLPShape):
                 |     Returns:
                 |         The location.
 
-        :param int i_origin:
         :return: OLPTransform
         """
-        return OLPTransform(self.com_object.GetCenter(i_origin))
+        return OLPTransform(self.com_object.GetCenter())
 
     def set_center(self, i_origin: int, i_location: OLPTransform) -> None:
         """
@@ -115,4 +113,4 @@ class OLPSphere(OLPShape):
         return self.com_object.SetCenter(i_origin, i_location.com_object)
 
     def __repr__(self):
-        return f'OLPSphere(name="{ self.name }")'
+        return f'OLPSphere(name="{self.name}")'

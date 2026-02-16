@@ -23,7 +23,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Factory2D(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -45,7 +44,8 @@ class Factory2D(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_circle(self, i_center_x: float, i_center_y: float, i_radius: float, i_start_param: float, i_end_param: float) -> Circle2D:
+    def create_circle(self, i_center_x: float, i_center_y: float, i_radius: float, i_start_param: float,
+                      i_end_param: float) -> Circle2D:
         """
         .. note::
             :class: toggle
@@ -114,7 +114,8 @@ class Factory2D(AnyObject):
         """
         return Circle2D(self.com_object.CreateClosedCircle(i_center_x, i_center_y, i_radius))
 
-    def create_closed_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float, i_major_radius: float, i_minor_radius: float) -> Ellipse2D:
+    def create_closed_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
+                              i_major_radius: float, i_minor_radius: float) -> Ellipse2D:
         """
         .. note::
             :class: toggle
@@ -150,7 +151,9 @@ class Factory2D(AnyObject):
         :param float i_minor_radius:
         :return: Ellipse2D
         """
-        return Ellipse2D(self.com_object.CreateClosedEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius))
+        return Ellipse2D(
+            self.com_object.CreateClosedEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius,
+                                                i_minor_radius))
 
     def create_control_point(self, i_x: float, i_y: float) -> ControlPoint2D:
         """
@@ -177,7 +180,9 @@ class Factory2D(AnyObject):
         """
         return ControlPoint2D(self.com_object.CreateControlPoint(i_x, i_y))
 
-    def create_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float, i_major_radius: float, i_minor_radius: float, i_start_param: float, i_end_param: float) -> Ellipse2D:
+    def create_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
+                       i_major_radius: float, i_minor_radius: float, i_start_param: float,
+                       i_end_param: float) -> Ellipse2D:
         """
         .. note::
             :class: toggle
@@ -225,9 +230,12 @@ class Factory2D(AnyObject):
         :param float i_end_param:
         :return: Ellipse2D
         """
-        return Ellipse2D(self.com_object.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius, i_start_param, i_end_param))
+        return Ellipse2D(
+            self.com_object.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius,
+                                          i_start_param, i_end_param))
 
-    def create_hyperbola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float, i_major_radius: float, i_minor_radius: float) -> Hyperbola2D:
+    def create_hyperbola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
+                         i_major_radius: float, i_minor_radius: float) -> Hyperbola2D:
         """
         .. note::
             :class: toggle
@@ -263,7 +271,8 @@ class Factory2D(AnyObject):
         :param float i_minor_radius:
         :return: Hyperbola2D
         """
-        return Hyperbola2D(self.com_object.CreateHyperbola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius))
+        return Hyperbola2D(
+            self.com_object.CreateHyperbola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius))
 
     def create_intersection(self, i_geometry: Reference) -> Geometry2D:
         """
@@ -376,7 +385,8 @@ class Factory2D(AnyObject):
         """
         return Line2D(self.com_object.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy))
 
-    def create_parabola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float, i_focal_distance: float) -> Parabola2D:
+    def create_parabola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
+                        i_focal_distance: float) -> Parabola2D:
         """
         .. note::
             :class: toggle
@@ -488,23 +498,42 @@ class Factory2D(AnyObject):
         .. note::
             :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
+            3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
                 |     Creates and returns a 2D b-spline.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPoles
                 |             An array of CATIAControlPoint2D forming the poles of the b-spline.
-                |             
-                | 
+                |
+                |
                 |     Returns:
                 |         The created B-Spline
+                |
+                |
+                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple i_poles:
         :return: Spline2D
         """
         return Spline2D(self.com_object.CreateSpline(i_poles))
+        # todo: check this method, does it require system service?
+        # Autogenerated comment:
+        # some methods require a system service call as the methods expects a vb array object
+        # passed to it and there is no way to do this directly with python. In those cases the following code
+        # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # vba_function_name = 'create_spline'
+        # vba_code = """
+        # Public Function create_spline(factory2_d)
+        #     Dim iPoles (2)
+        #     factory2_d.CreateSpline iPoles
+        #     create_spline = iPoles
+        # End Function
+        # """
+
+        # system_service = SystemService(self.application.SystemService)
+        # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Factory2D(name="{ self.name }")'
+        return f'Factory2D(name="{self.name}")'
