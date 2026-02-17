@@ -9,7 +9,7 @@ plm_service = PLMNewService(application.get_session_service('PLMNewService').com
 plm_service.plm_create("3DShape", application.active_editor)
 
 editor = application.active_editor
-part = Part(editor.active_object)
+part = Part(editor.com_object)
 vpm_ref = VPMRepReference(part.parent)
 
 print(vpm_ref.get_attribute_value('PLM ExternalID'))
