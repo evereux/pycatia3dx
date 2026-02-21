@@ -559,6 +559,10 @@ class Layout2DSheet(AnyObject):
                 |          Set view2 = drwviews.item(4)
                 |          newvieworder = Array(mainview, backview, view2, view1)
                 |          drwviewsorder.reorder_Views(newvieworder)
+                |
+                |
+                |
+                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple i_ordered_views:
         :return: None
