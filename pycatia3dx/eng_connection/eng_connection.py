@@ -151,6 +151,7 @@ class EngConnection(AnyObject):
         :param int i_nbp:
         :return: int
         """
+        # todo: check this method, does it require system service?
         return self.com_object.GetDirection(i_nbp)
 
     def get_impacted(self, inum_impacted: int, o_impacted: str, o_ctx_impacted: str) -> None:

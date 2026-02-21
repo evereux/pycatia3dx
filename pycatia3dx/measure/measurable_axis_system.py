@@ -34,7 +34,7 @@ class MeasurableAxisSystem(MeasurableInContext):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_axis(self, io_axis_position: tuple) -> None:
+    def get_axis(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -88,10 +88,10 @@ class MeasurableAxisSystem(MeasurableInContext):
                 |              theMeasurableAxisSystem.GetAxisSystem
                 |              theAxisPosition
 
-        :param tuple io_axis_position:
         :return: None
         """
-        return self.com_object.GetAxis(io_axis_position)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetAxis()
 
     def __repr__(self):
         return f'MeasurableAxisSystem(name="{self.name}")'

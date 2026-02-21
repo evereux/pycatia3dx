@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SpotDrManufacturingFastener(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -185,7 +184,7 @@ class SpotDrManufacturingFastener(AnyObject):
         """
         return self.com_object.GetPosition(o_xpos, o_ypos)
 
-    def get_tangent(self, o_xdir: float, o_ydir: float) -> float:
+    def get_tangent(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -207,11 +206,9 @@ class SpotDrManufacturingFastener(AnyObject):
                 |     Returns:
                 |         S_OK on success and E_FAIL on failure.
 
-        :param float o_xdir:
-        :param float o_ydir:
-        :return: float
+        :return: tuple
         """
-        return self.com_object.GetTangent(o_xdir, o_ydir)
+        return self.com_object.GetTangent()
 
     def remove_fastener_parameter(self, i_name: str) -> None:
         """
@@ -309,4 +306,4 @@ class SpotDrManufacturingFastener(AnyObject):
         return self.com_object.SetTangent(i_xdir, i_ydir, i_zdir)
 
     def __repr__(self):
-        return f'SpotDrManufacturingFastener(name="{ self.name }")'
+        return f'SpotDrManufacturingFastener(name="{self.name}")'

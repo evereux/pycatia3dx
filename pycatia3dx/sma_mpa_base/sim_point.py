@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPoint(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -57,7 +56,7 @@ class SimPoint(AnyObject):
 
         self.com_object.PointType = value
 
-    def get_coordinates(self, o_x1: float, o_x2: float, o_x3: float) -> None:
+    def get_coordinates(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -75,12 +74,10 @@ class SimPoint(AnyObject):
                 |         oX3[out]
                 |             The Z coordinate of the point.
 
-        :param float o_x1:
-        :param float o_x2:
-        :param float o_x3:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetCoordinates(o_x1, o_x2, o_x3)
+        # todo: check this method, does it require system service?
+        return self.com_object.GetCoordinates()
 
     def set_coordinates(self, i_x1: float, i_x2: float, i_x3: float) -> None:
         """
@@ -112,4 +109,4 @@ class SimPoint(AnyObject):
         return self.com_object.SetCoordinates(i_x1, i_x2, i_x3)
 
     def __repr__(self):
-        return f'SimPoint(name="{ self.name }")'
+        return f'SimPoint(name="{self.name}")'
