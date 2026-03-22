@@ -7,10 +7,14 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.knowledge_interfaces.list_parameter import ListParameter
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
+
+if TYPE_CHECKING:
+    from pycatia3dx.knowledge_interfaces.list_parameter import ListParameter
 
 
 class List(Collection):
@@ -35,6 +39,7 @@ class List(Collection):
     """
 
     def __init__(self, com_object):
+        from pycatia3dx.knowledge_interfaces.list_parameter import ListParameter
         super().__init__(com_object, child_object=ListParameter)
         self.com_object = com_object
 
