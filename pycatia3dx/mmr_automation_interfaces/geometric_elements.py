@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class GeometricElements(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class GeometricElements(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=GeometricElement)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> GeometricElement:
@@ -78,4 +77,4 @@ class GeometricElements(Collection):
         return GeometricElement(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'GeometricElements(name="{ self.name }")'
+        return f'GeometricElements(name="{self.name}")'

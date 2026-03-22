@@ -32,7 +32,7 @@ class StrUserConnections(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=StrUserConnection)
         self.com_object = com_object
 
     def add(self) -> StrUserConnection:

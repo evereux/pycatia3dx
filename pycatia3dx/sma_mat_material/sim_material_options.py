@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mat_material.sim_material_option import SimMaterialOption
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimMaterialOptions(Collection):
-
     """
         .. note::
             :class: toggle
@@ -45,10 +45,10 @@ class SimMaterialOptions(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimMaterialOption)
         self.com_object = com_object
 
-    def add(self, i_type: str) -> AnyObject:
+    def add(self, i_type: str) -> SimMaterialOption:
         """
         .. note::
             :class: toggle
@@ -90,11 +90,11 @@ class SimMaterialOptions(Collection):
                 |         Created material option.
 
         :param str i_type:
-        :return: AnyObject
+        :return: SimMaterialOption
         """
-        return self.com_object.Add(i_type)
+        return SimMaterialOption(self.com_object.Add(i_type))
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimMaterialOption:
         """
         .. note::
             :class: toggle
@@ -112,9 +112,9 @@ class SimMaterialOptions(Collection):
                 |         The material option object.
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimMaterialOption
         """
-        return self.com_object.Item(i_index)
+        return SimMaterialOption(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -136,4 +136,4 @@ class SimMaterialOptions(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SimMaterialOptions(name="{ self.name }")'
+        return f'SimMaterialOptions(name="{self.name}")'

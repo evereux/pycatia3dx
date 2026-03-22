@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class ArcWeldProfileFactory(Collection):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +40,7 @@ class ArcWeldProfileFactory(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ArcWeldProfile)
         self.com_object = com_object
 
     def create_profile(self, i_name: str) -> ArcWeldProfile:
@@ -150,4 +149,4 @@ class ArcWeldProfileFactory(Collection):
         return self.com_object.RemoveProfile(o_profile.com_object)
 
     def __repr__(self):
-        return f'ArcWeldProfileFactory(name="{ self.name }")'
+        return f'ArcWeldProfileFactory(name="{self.name}")'

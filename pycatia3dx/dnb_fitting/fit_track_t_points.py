@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class FitTrackTPoints(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,10 +32,16 @@ class FitTrackTPoints(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=FitTrackTPoint)
         self.com_object = com_object
 
-    def insert_t_point(self, i_index: CATVariant, i_t_point_pos: tuple, i_t_point_compass_trans: tuple, i_duration: float) -> None:
+    def insert_t_point(
+            self,
+            i_index: CATVariant,
+            i_t_point_pos: tuple,
+            i_t_point_compass_trans: tuple,
+            i_duration: float
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -145,4 +150,4 @@ class FitTrackTPoints(Collection):
         return self.com_object.RemoveTPoint(i_index)
 
     def __repr__(self):
-        return f'FitTrackTPoints(name="{ self.name }")'
+        return f'FitTrackTPoints(name="{self.name}")'

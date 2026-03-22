@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class HybridShapes(Collection):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class HybridShapes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=HybridShape)
         self.com_object = com_object
 
     def get_boundary(self, i_label: str) -> Boundary:
@@ -99,4 +98,4 @@ class HybridShapes(Collection):
         return HybridShape(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'HybridShapes(name="{ self.name }")'
+        return f'HybridShapes(name="{self.name}")'

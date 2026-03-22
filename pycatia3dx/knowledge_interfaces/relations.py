@@ -22,7 +22,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Relations(Collection):
-
     """
         .. note::
             :class: toggle
@@ -84,7 +83,7 @@ class Relations(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Relation)
         self.com_object = com_object
 
     def create_check(self, i_name: str, i_comment: str, i_check_body: str) -> Check:
@@ -132,7 +131,13 @@ class Relations(Collection):
         """
         return Check(self.com_object.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table_with_rep_ref(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_ref: AnyObject) -> DesignTable:
+    def create_design_table_with_rep_ref(
+            self,
+            i_name: str,
+            i_comment: str,
+            i_copy_mode: bool,
+            i_sheet_ref: AnyObject
+    ) -> DesignTable:
         """
         .. note::
             :class: toggle
@@ -164,9 +169,19 @@ class Relations(Collection):
         :param AnyObject i_sheet_ref:
         :return: DesignTable
         """
-        return DesignTable(self.com_object.CreateDesignTableWithRepRef(i_name, i_comment, i_copy_mode, i_sheet_ref.com_object))
+        return DesignTable(
+            self.com_object.CreateDesignTableWithRepRef(
+                i_name, i_comment, i_copy_mode, i_sheet_ref.com_object
+            )
+        )
 
-    def create_formula(self, i_name: str, i_comment: str, i_output_parameter: Parameter, i_formula_body: str) -> Formula:
+    def create_formula(
+            self,
+            i_name: str,
+            i_comment: str,
+            i_output_parameter: Parameter,
+            i_formula_body: str
+    ) -> Formula:
         """
         .. note::
             :class: toggle
@@ -212,7 +227,12 @@ class Relations(Collection):
         """
         return Formula(self.com_object.CreateFormula(i_name, i_comment, i_output_parameter.com_object, i_formula_body))
 
-    def create_horizontal_design_table_with_rep_ref(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_ref: AnyObject) -> DesignTable:
+    def create_horizontal_design_table_with_rep_ref(
+            self, i_name: str,
+            i_comment: str,
+            i_copy_mode: bool,
+            i_sheet_ref: AnyObject
+    ) -> DesignTable:
         """
         .. note::
             :class: toggle
@@ -244,7 +264,14 @@ class Relations(Collection):
         :param AnyObject i_sheet_ref:
         :return: DesignTable
         """
-        return DesignTable(self.com_object.CreateHorizontalDesignTableWithRepRef(i_name, i_comment, i_copy_mode, i_sheet_ref.com_object))
+        return DesignTable(
+            self.com_object.CreateHorizontalDesignTableWithRepRef(
+                i_name,
+                i_comment,
+                i_copy_mode,
+                i_sheet_ref.com_object
+            )
+        )
 
     def create_law(self, i_name: str, i_comment: str, i_law_body: str) -> Law:
         """
@@ -526,4 +553,4 @@ class Relations(Collection):
         return Relations(self.com_object.SubList(i_feature.com_object, i_recursively))
 
     def __repr__(self):
-        return f'Relations(name="{ self.name }")'
+        return f'Relations(name="{self.name}")'

@@ -30,7 +30,7 @@ class Layout2DViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Layout2DView)
         self.com_object = com_object
 
     @property

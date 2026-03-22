@@ -38,7 +38,7 @@ class EngConnections(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=EngConnection)
         self.com_object = com_object
 
     def add(self, i_type: int, i_impacteds: tuple) -> EngConnection:

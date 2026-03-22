@@ -7,14 +7,13 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx.knowledge_interfaces.list_parameter import ListParameter
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class List(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,10 +35,10 @@ class List(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ListParameter)
         self.com_object = com_object
 
-    def add(self, i_item_value: AnyObject) -> None:
+    def add(self, i_item_value: AnyObject) -> ListParameter:
         """
         .. note::
             :class: toggle
@@ -57,12 +56,12 @@ class List(Collection):
                 |         iItemValue
                 |             vqlue added
 
-        :param AnyObject i_item_value:
+        :param ListParameter i_item_value:
         :return: None
         """
-        return self.com_object.Add(i_item_value.com_object)
+        return ListParameter(self.com_object.Add(i_item_value.com_object))
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> ListParameter:
         """
         .. note::
             :class: toggle
@@ -92,9 +91,9 @@ class List(Collection):
                 |          Set lastFeature = Features.Item(Features.Count)
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: ListParameter
         """
-        return AnyObject(self.com_object.Item(i_index))
+        return ListParameter(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -177,4 +176,4 @@ class List(Collection):
         return self.com_object.Replace(i_index, i_item_value.com_object)
 
     def __repr__(self):
-        return f'List(name="{ self.name }")'
+        return f'List(name="{self.name}")'

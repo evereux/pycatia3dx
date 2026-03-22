@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Annotations(Collection):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class Annotations(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Annotation)
         self.com_object = com_object
 
     def add(self, i_annot: Annotation) -> None:
@@ -51,7 +50,7 @@ class Annotations(Collection):
         """
         return self.com_object.Add(i_annot.com_object)
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -62,11 +61,11 @@ class Annotations(Collection):
                 |     Item method is replaced by Item2 has.
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: Annotation
         """
-        return AnyObject(self.com_object.Item(i_index))
+        return Annotation(self.com_object.Item(i_index))
 
-    def item2(self, i_index: CATVariant) -> AnyObject:
+    def item2(self, i_index: CATVariant) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -76,9 +75,9 @@ class Annotations(Collection):
                 |     Retrieve an Annotation using interface CATIAAnnotation2 
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: Annotation
         """
-        return AnyObject(self.com_object.Item2(i_index))
+        return Annotation(self.com_object.Item2(i_index))
 
     def __repr__(self):
-        return f'Annotations(name="{ self.name }")'
+        return f'Annotations(name="{self.name}")'

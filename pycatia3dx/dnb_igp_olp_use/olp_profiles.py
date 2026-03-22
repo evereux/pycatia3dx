@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPProfiles(Collection):
-
     """
         .. note::
             :class: toggle
@@ -37,7 +36,7 @@ class OLPProfiles(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPProfile)
         self.com_object = com_object
 
     @property
@@ -204,4 +203,4 @@ class OLPProfiles(Collection):
         return self.com_object.GetParameterNames(i_profile_type)
 
     def __repr__(self):
-        return f'OLPProfiles(name="{ self.name }")'
+        return f'OLPProfiles(name="{self.name}")'

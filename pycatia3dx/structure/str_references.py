@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class StrReferences(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class StrReferences(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Reference)
         self.com_object = com_object
 
     def add(self, i_reference: Reference) -> None:
@@ -98,4 +97,4 @@ class StrReferences(Collection):
         return Reference(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'StrReferences(name="{ self.name }")'
+        return f'StrReferences(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_cartesian_safety_zone import OLPCartesianSaf
 
 
 class OLPCartesianSafetyZones(Collection):
-
     """
         .. note::
             :class: toggle
@@ -37,7 +36,7 @@ class OLPCartesianSafetyZones(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPCartesianSafetyZone)
         self.com_object = com_object
 
     def create(self) -> OLPCartesianSafetyZone:
@@ -99,4 +98,4 @@ class OLPCartesianSafetyZones(Collection):
         return OLPCartesianSafetyZone(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OLPCartesianSafetyZones(name="{ self.name }")'
+        return f'OLPCartesianSafetyZones(name="{self.name}")'

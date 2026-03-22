@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class InterferenceGroupObjects(Collection):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class InterferenceGroupObjects(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=VPMOccurrence)
         self.com_object = com_object
 
     def add(self, i_plm_occurence: PLMOccurrence) -> None:
@@ -87,7 +86,7 @@ class InterferenceGroupObjects(Collection):
         """
         return self.com_object.Add2(i_vpm_occurence.com_object)
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> VPMOccurrence:
         """
         .. note::
             :class: toggle
@@ -118,9 +117,9 @@ class InterferenceGroupObjects(Collection):
                 |             Set oOccurrence1 = cInterferenceGroupObjects.Item(9)
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: VPMOccurrence
         """
-        return self.com_object.Item(i_index)
+        return VPMOccurrence(self.com_object.Item(i_index))
 
     def remove(self, i_plm_occurence: PLMOccurrence) -> None:
         """
@@ -173,4 +172,4 @@ class InterferenceGroupObjects(Collection):
         return self.com_object.Remove2(i_vpm_occurence.com_object)
 
     def __repr__(self):
-        return f'InterferenceGroupObjects(name="{ self.name }")'
+        return f'InterferenceGroupObjects(name="{self.name}")'

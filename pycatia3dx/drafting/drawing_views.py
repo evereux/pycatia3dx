@@ -37,7 +37,7 @@ class DrawingViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingView)
         self.com_object = com_object
 
     @property

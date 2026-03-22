@@ -13,7 +13,6 @@ from pycatia3dx.del_spot_welding.spot_rivet_profile import SpotRivetProfile
 
 
 class SpotRivetProfileFactory(Collection):
-
     """
         .. note::
             :class: toggle
@@ -31,7 +30,7 @@ class SpotRivetProfileFactory(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SpotRivetProfile)
         self.com_object = com_object
 
     def create_rivet_profile(self, o_spot_rivet_profile: SpotRivetProfile) -> None:
@@ -79,4 +78,4 @@ class SpotRivetProfileFactory(Collection):
         return self.com_object.DestroyRivetProfile(i_spot_rivet_profile.com_object)
 
     def __repr__(self):
-        return f'SpotRivetProfileFactory(name="{ self.name }")'
+        return f'SpotRivetProfileFactory(name="{self.name}")'

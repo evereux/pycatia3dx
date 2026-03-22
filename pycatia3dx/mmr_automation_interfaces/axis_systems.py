@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class AxisSystems(Collection):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class AxisSystems(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AxisSystem)
         self.com_object = com_object
 
     def add(self) -> AxisSystem:
@@ -102,4 +101,4 @@ class AxisSystems(Collection):
         return AxisSystem(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'AxisSystems(name="{ self.name }")'
+        return f'AxisSystems(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class VALChecks(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class VALChecks(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=VALCheck)
         self.com_object = com_object
 
     def add(self) -> VALCheck:
@@ -130,4 +129,4 @@ class VALChecks(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'ValChecks(name="{ self.name }")'
+        return f'ValChecks(name="{self.name}")'

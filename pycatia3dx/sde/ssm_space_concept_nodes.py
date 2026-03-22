@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SsmSpaceConceptNodes(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class SsmSpaceConceptNodes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SsmSpaceConceptNode)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> SsmSpaceConceptNode:
@@ -56,4 +55,4 @@ class SsmSpaceConceptNodes(Collection):
         return SsmSpaceConceptNode(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SsmSpaceConceptNodes(name="{ self.name }")'
+        return f'SsmSpaceConceptNodes(name="{self.name}")'

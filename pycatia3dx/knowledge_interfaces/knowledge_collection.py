@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class KnowledgeCollection(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,6 +35,7 @@ class KnowledgeCollection(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: What is the child_object for Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -123,4 +123,4 @@ class KnowledgeCollection(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'KnowledgeCollection(name="{ self.name }")'
+        return f'KnowledgeCollection(name="{self.name}")'

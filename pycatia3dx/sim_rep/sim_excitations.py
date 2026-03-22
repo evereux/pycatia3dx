@@ -34,7 +34,7 @@ class SimExcitations(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimExcitation)
         self.com_object = com_object
 
     def add(self, i_type: str, i_catalog_name: str, i_client_id: str) -> SimExcitation:

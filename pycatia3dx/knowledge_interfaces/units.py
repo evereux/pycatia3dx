@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Units(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +35,7 @@ class Units(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Unit)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> Unit:
@@ -73,4 +72,4 @@ class Units(Collection):
         return Unit(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'Units(name="{ self.name }")'
+        return f'Units(name="{self.name}")'

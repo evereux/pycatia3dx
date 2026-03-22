@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mpa_structural_mode.sim_eulerian_material_assignment import SimEulerianMaterialAssignment
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimEulerianMaterialAssignments(Collection):
-
     """
         .. note::
             :class: toggle
@@ -54,10 +54,10 @@ class SimEulerianMaterialAssignments(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimEulerianMaterialAssignment)
         self.com_object = com_object
 
-    def add(self) -> AnyObject:
+    def add(self) -> SimEulerianMaterialAssignment:
         """
         .. note::
             :class: toggle
@@ -72,11 +72,11 @@ class SimEulerianMaterialAssignments(Collection):
                 |         oMaterialInstance[out]
                 |             The created Eulerian Material Assignment.
 
-        :return: AnyObject
+        :return: SimEulerianMaterialAssignment
         """
-        return self.com_object.Add()
+        return SimEulerianMaterialAssignment(self.com_object.Add())
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimEulerianMaterialAssignment:
         """
         .. note::
             :class: toggle
@@ -94,9 +94,9 @@ class SimEulerianMaterialAssignments(Collection):
                 |             The created Eulerian Material Assignment.
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimEulerianMaterialAssignment
         """
-        return self.com_object.Item(i_index)
+        return SimEulerianMaterialAssignment(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -131,4 +131,4 @@ class SimEulerianMaterialAssignments(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'SimEulerianMaterialAssignments(name="{ self.name }")'
+        return f'SimEulerianMaterialAssignments(name="{self.name}")'

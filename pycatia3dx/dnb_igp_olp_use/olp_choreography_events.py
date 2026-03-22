@@ -13,7 +13,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_choreography_event import OLPChoreographyEve
 
 
 class OLPChoreographyEvents(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +35,7 @@ class OLPChoreographyEvents(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPChoreographyEvent)
         self.com_object = com_object
 
     def create_and_append_event(self, i_type: int) -> OLPChoreographyEvent:
@@ -86,4 +85,4 @@ class OLPChoreographyEvents(Collection):
         return OLPChoreographyEvent(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OLPChoreographyEvents(name="{ self.name }")'
+        return f'OLPChoreographyEvents(name="{self.name}")'

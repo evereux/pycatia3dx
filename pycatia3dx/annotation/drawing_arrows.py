@@ -32,11 +32,16 @@ class DrawingArrows(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingArrow)
         self.com_object = com_object
 
-    def add(self, i_head_point_x: float, i_head_point_y: float, i_tail_point_x: float,
-            i_tail_point_y: float) -> DrawingArrow:
+    def add(
+            self,
+            i_head_point_x: float,
+            i_head_point_y: float,
+            i_tail_point_x: float,
+            i_tail_point_y: float
+    ) -> DrawingArrow:
         """
         .. note::
             :class: toggle

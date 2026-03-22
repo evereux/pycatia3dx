@@ -10,11 +10,11 @@
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.tps.capture import Capture
 from pycatia3dx.types.general import CATVariant
 
 
 class Captures(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,10 +33,10 @@ class Captures(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Capture)
         self.com_object = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> Capture:
         """
         .. note::
             :class: toggle
@@ -46,9 +46,9 @@ class Captures(Collection):
                 |     Retrieve a Capture. 
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: Capture
         """
-        return AnyObject(self.com_object.Item(i_index))
+        return Capture(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'Captures(name="{ self.name }")'
+        return f'Captures(name="{self.name}")'

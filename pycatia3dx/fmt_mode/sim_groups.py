@@ -35,10 +35,10 @@ class SimGroups(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimGroup)
         self.com_object = com_object
 
-    def add(self, i_type: str) -> AnyObject:
+    def add(self, i_type: str) -> SimGroup:
         """
         .. note::
             :class: toggle
@@ -56,9 +56,9 @@ class SimGroups(Collection):
                 |         The created group
 
         :param str i_type:
-        :return: AnyObject
+        :return: SimGroup
         """
-        return self.com_object.Add(i_type)
+        return SimGroup(self.com_object.Add(i_type))
 
     def item(self, i_index: CATVariant) -> SimGroup:
         """

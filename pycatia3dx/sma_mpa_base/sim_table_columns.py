@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimTableColumns(Collection):
-
     """
         .. note::
             :class: toggle
@@ -53,10 +53,10 @@ class SimTableColumns(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimTableColumn)
         self.com_object = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimTableColumn:
         """
         .. note::
             :class: toggle
@@ -75,9 +75,9 @@ class SimTableColumns(Collection):
                 |         The SimTableColumn object 
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimTableColumn
         """
-        return self.com_object.Item(i_index)
+        return SimTableColumn(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SimTableColumns(name="{ self.name }")'
+        return f'SimTableColumns(name="{self.name}")'

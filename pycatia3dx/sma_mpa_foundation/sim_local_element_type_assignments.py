@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mpa_foundation.sim_local_element_type_assignment import SimLocalElementTypeAssignment
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimLocalElementTypeAssignments(Collection):
-
     """
         .. note::
             :class: toggle
@@ -63,10 +63,10 @@ class SimLocalElementTypeAssignments(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimLocalElementTypeAssignment)
         self.com_object = com_object
 
-    def add(self) -> AnyObject:
+    def add(self) -> SimLocalElementTypeAssignment:
         """
         .. note::
             :class: toggle
@@ -79,11 +79,11 @@ class SimLocalElementTypeAssignments(Collection):
                 |     Returns:
                 |         A SimLocalElementTypeAssignment object
 
-        :return: AnyObject
+        :return: SimLocalElementTypeAssignment
         """
-        return self.com_object.Add()
+        return SimLocalElementTypeAssignment(self.com_object.Add())
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimLocalElementTypeAssignment:
         """
         .. note::
             :class: toggle
@@ -103,9 +103,9 @@ class SimLocalElementTypeAssignments(Collection):
                 |         The SimLocalElementTypeAssignment object
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimLocalElementTypeAssignment
         """
-        return self.com_object.Item(i_index)
+        return SimLocalElementTypeAssignment(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -128,4 +128,4 @@ class SimLocalElementTypeAssignments(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SimLocalElementTypeAssignments(name="{ self.name }")'
+        return f'SimLocalElementTypeAssignments(name="{self.name}")'

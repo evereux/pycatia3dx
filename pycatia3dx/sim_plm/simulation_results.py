@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimulationResults(Collection):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class SimulationResults(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimulationObject)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> SimulationObject:
@@ -66,4 +65,4 @@ class SimulationResults(Collection):
         return SimulationObject(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SimulationResults(name="{ self.name }")'
+        return f'SimulationResults(name="{self.name}")'

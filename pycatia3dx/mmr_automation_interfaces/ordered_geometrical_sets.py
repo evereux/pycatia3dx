@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OrderedGeometricalSets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class OrderedGeometricalSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OrderedGeometricalSet)
         self.com_object = com_object
 
     def add(self) -> OrderedGeometricalSet:
@@ -101,4 +100,4 @@ class OrderedGeometricalSets(Collection):
         return OrderedGeometricalSet(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OrderedGeometricalSets(name="{ self.name }")'
+        return f'OrderedGeometricalSets(name="{self.name}")'

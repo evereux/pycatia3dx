@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPAstBranch(Collection):
-
     """
         .. note::
             :class: toggle
@@ -39,7 +38,7 @@ class OLPAstBranch(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPAstNode)
         self.com_object = com_object
 
     @property
@@ -793,4 +792,4 @@ class OLPAstBranch(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'OLPAstBranch(name="{ self.name }")'
+        return f'OLPAstBranch(name="{self.name}")'

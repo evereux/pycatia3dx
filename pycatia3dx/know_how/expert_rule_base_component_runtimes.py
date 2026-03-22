@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class ExpertRuleBaseComponentRuntimes(Collection):
-
     """
         .. note::
             :class: toggle
@@ -44,7 +43,7 @@ class ExpertRuleBaseComponentRuntimes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ExpertRuleBaseComponentRuntime)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> ExpertRuleBaseComponentRuntime:
@@ -219,4 +218,4 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         return self.com_object.ShallowRemove(i_index)
 
     def __repr__(self):
-        return f'ExpertRuleBaseComponentRuntimes(name="{ self.name }")'
+        return f'ExpertRuleBaseComponentRuntimes(name="{self.name}")'

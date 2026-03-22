@@ -33,7 +33,7 @@ class DrawingWeldings(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingWelding)
         self.com_object = com_object
 
     def add(self, i_symbol: int, i_position_x: float, i_position_y: float) -> DrawingWelding:
