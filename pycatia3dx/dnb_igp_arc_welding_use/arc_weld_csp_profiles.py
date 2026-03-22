@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class ArcWeldCSPProfiles(Collection):
-
     """
         .. note::
             :class: toggle
@@ -39,7 +38,7 @@ class ArcWeldCSPProfiles(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=RscApplicativeProfile)
         self.com_object = com_object
 
     def add(self, i_profile: RscApplicativeProfile) -> None:
@@ -148,4 +147,4 @@ class ArcWeldCSPProfiles(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'ArcWeldCspProfiles(name="{ self.name }")'
+        return f'ArcWeldCspProfiles(name="{self.name}")'

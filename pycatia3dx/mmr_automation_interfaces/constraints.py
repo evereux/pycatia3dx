@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Constraints(Collection):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class Constraints(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Constraint)
         self.com_object = com_object
 
     @property
@@ -163,7 +162,8 @@ class Constraints(Collection):
         """
         return Constraint(self.com_object.AddMonoEltCst(i_cst_type, i_elem.com_object))
 
-    def add_tri_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference, i_third_elem: Reference) -> Constraint:
+    def add_tri_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference,
+                        i_third_elem: Reference) -> Constraint:
         """
         .. note::
             :class: toggle
@@ -204,7 +204,8 @@ class Constraints(Collection):
         :param Reference i_third_elem:
         :return: Constraint
         """
-        return Constraint(self.com_object.AddTriEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object, i_third_elem.com_object))
+        return Constraint(self.com_object.AddTriEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object,
+                                                       i_third_elem.com_object))
 
     def item(self, i_index: CATVariant) -> Constraint:
         """
@@ -271,4 +272,4 @@ class Constraints(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'Constraints(name="{ self.name }")'
+        return f'Constraints(name="{self.name}")'

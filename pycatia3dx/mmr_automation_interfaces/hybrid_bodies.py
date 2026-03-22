@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class HybridBodies(Collection):
-
     """
         .. note::
             :class: toggle
@@ -34,7 +33,7 @@ class HybridBodies(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=HybridBody)
         self.com_object = com_object
 
     def add(self) -> HybridBody:
@@ -97,4 +96,4 @@ class HybridBodies(Collection):
         return HybridBody(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'HybridBodies(name="{ self.name }")'
+        return f'HybridBodies(name="{self.name}")'

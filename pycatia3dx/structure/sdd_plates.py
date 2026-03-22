@@ -32,7 +32,7 @@ class SddPlates(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SddPlate)
         self.com_object = com_object
 
     def add(self, i_sdd_plate: SddPlate) -> None:

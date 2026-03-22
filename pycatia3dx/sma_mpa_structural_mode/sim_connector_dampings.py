@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimConnectorDampings(Collection):
-
     """
         .. note::
             :class: toggle
@@ -53,6 +52,7 @@ class SimConnectorDampings(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object for this Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -138,4 +138,4 @@ class SimConnectorDampings(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'SimConnectorDampings(name="{ self.name }")'
+        return f'SimConnectorDampings(name="{self.name}")'

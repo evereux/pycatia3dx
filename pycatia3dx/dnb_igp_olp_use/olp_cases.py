@@ -13,7 +13,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_case import OLPCase
 
 
 class OLPCases(Collection):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class OLPCases(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPCase)
         self.com_object = com_object
 
     def add_new_case(self) -> OLPCase:
@@ -75,4 +74,4 @@ class OLPCases(Collection):
         return OLPCase(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OLPCases(name="{ self.name }")'
+        return f'OLPCases(name="{self.name}")'

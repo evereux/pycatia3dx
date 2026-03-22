@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SsmCuttingFamilys(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class SsmCuttingFamilys(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SsmCuttingFamily)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> SsmCuttingFamily:
@@ -56,4 +55,4 @@ class SsmCuttingFamilys(Collection):
         return SsmCuttingFamily(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SsmCuttingFamilys(name="{ self.name }")'
+        return f'SsmCuttingFamilys(name="{self.name}")'

@@ -35,7 +35,7 @@ class OLPProcedures(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPProcedure)
         self.com_object = com_object
 
     def create_robot_task(self) -> OLPProcedure:

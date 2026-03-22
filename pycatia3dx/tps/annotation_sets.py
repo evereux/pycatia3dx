@@ -10,11 +10,11 @@
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.tps.annotation_set import AnnotationSet
 from pycatia3dx.types.general import CATVariant
 
 
 class AnnotationSets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,10 +33,10 @@ class AnnotationSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AnnotationSet)
         self.com_object = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> AnnotationSet:
         """
         .. note::
             :class: toggle
@@ -46,9 +46,9 @@ class AnnotationSets(Collection):
                 |     Retrieve a set.
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: AnnotationSet
         """
-        return AnyObject(self.com_object.Item(i_index))
+        return AnnotationSet(self.com_object.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """
@@ -67,4 +67,4 @@ class AnnotationSets(Collection):
         return self.com_object.LoadAnnotationSetsList()
 
     def __repr__(self):
-        return f'AnnotationSets(name="{ self.name }")'
+        return f'AnnotationSets(name="{self.name}")'

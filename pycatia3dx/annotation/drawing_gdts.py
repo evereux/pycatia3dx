@@ -32,11 +32,18 @@ class DrawingGDTs(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingGDT)
         self.com_object = com_object
 
-    def add(self, i_position_leader_x: float, i_position_leader_y: float, i_position_x: float, i_position_y: float,
-            i_gdt_symbol: int, i_text: str) -> DrawingGDT:
+    def add(
+            self,
+            i_position_leader_x: float,
+            i_position_leader_y: float,
+            i_position_x: float,
+            i_position_y: float,
+            i_gdt_symbol: int,
+            i_text: str
+    ) -> DrawingGDT:
         """
         .. note::
             :class: toggle
@@ -77,8 +84,15 @@ class DrawingGDTs(Collection):
         :return: DrawingGDT
         """
         return DrawingGDT(
-            self.com_object.Add(i_position_leader_x, i_position_leader_y, i_position_x, i_position_y, i_gdt_symbol,
-                                i_text))
+            self.com_object.Add(
+                i_position_leader_x,
+                i_position_leader_y,
+                i_position_x,
+                i_position_y,
+                i_gdt_symbol,
+                i_text
+            )
+        )
 
     def item(self, i_index: CATVariant) -> DrawingGDT:
         """

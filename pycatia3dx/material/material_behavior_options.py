@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.material.material_behavior import MaterialBehavior
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -30,7 +31,7 @@ class MaterialBehaviorOptions(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=MaterialBehavior)
         self.com_object = com_object
 
     def add(self, i_material_behavior_option: AnyObject, o_index: int) -> None:
@@ -55,7 +56,7 @@ class MaterialBehaviorOptions(Collection):
         """
         return self.com_object.Add(i_material_behavior_option.com_object, o_index)
 
-    def get_option(self, i_index: CATVariant) -> AnyObject:
+    def get_option(self, i_index: CATVariant) -> MaterialBehavior:
         """
         .. note::
             :class: toggle
@@ -72,9 +73,9 @@ class MaterialBehaviorOptions(Collection):
                 |             The material option.
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: MaterialBehavior
         """
-        return self.com_object.GetOption(i_index)
+        return MaterialBehavior(self.com_object.GetOption(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """

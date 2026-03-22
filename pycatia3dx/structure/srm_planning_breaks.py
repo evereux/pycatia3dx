@@ -32,7 +32,7 @@ class SrmPlanningBreaks(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SrmPlanningBreak)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> SrmPlanningBreak:

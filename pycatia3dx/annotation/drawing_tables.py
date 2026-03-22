@@ -33,11 +33,17 @@ class DrawingTables(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingTable)
         self.com_object = com_object
 
-    def add(self, i_position_x: float, i_position_y: float, i_number_of_row: int, i_number_of_column: int,
-            i_row_height: float, i_column_width: float) -> DrawingTable:
+    def add(
+            self, i_position_x: float,
+            i_position_y: float,
+            i_number_of_row: int,
+            i_number_of_column: int,
+            i_row_height: float,
+            i_column_width: float
+    ) -> DrawingTable:
         """
         .. note::
             :class: toggle

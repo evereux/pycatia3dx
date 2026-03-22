@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Shapes(Collection):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class Shapes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Shape)
         self.com_object = com_object
 
     def get_boundary(self, i_label: str) -> Boundary:
@@ -98,4 +97,4 @@ class Shapes(Collection):
         return Shape(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'Shapes(name="{ self.name }")'
+        return f'Shapes(name="{self.name}")'

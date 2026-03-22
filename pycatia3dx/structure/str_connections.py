@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class StrConnections(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,6 +32,7 @@ class StrConnections(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object for this Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -67,4 +67,4 @@ class StrConnections(Collection):
         return AnyObject(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'StrConnections(name="{ self.name }")'
+        return f'StrConnections(name="{self.name}")'

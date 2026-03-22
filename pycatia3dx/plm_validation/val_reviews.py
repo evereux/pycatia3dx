@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class VALReviews(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class VALReviews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=VALReview)
         self.com_object = com_object
 
     def add(self) -> VALReview:
@@ -130,4 +129,4 @@ class VALReviews(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'ValReviews(name="{ self.name }")'
+        return f'ValReviews(name="{self.name}")'

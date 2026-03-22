@@ -32,7 +32,7 @@ class DrawingAreaFills(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingAreaFill)
         self.com_object = com_object
 
     def add(self, i_number_of_points_per_contour: tuple, i_points_coordinates: tuple) -> DrawingAreaFill:

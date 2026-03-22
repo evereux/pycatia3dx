@@ -10,11 +10,11 @@
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.tps.tps_view import TPSView
 from pycatia3dx.types.general import CATVariant
 
 
 class TPSViews(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,10 +33,10 @@ class TPSViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=TPSView)
         self.com_object = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> TPSView:
         """
         .. note::
             :class: toggle
@@ -46,9 +46,9 @@ class TPSViews(Collection):
                 |     Retrieve a TPS View. 
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: TPSView
         """
-        return AnyObject(self.com_object.Item(i_index))
+        return TPSView(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'TpsViews(name="{ self.name }")'
+        return f'TpsViews(name="{self.name}")'

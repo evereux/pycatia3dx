@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class DefeaturingFilters(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class DefeaturingFilters(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DefeaturingFilter)
         self.com_object = com_object
 
     def add(self, i_filter_type_to_add: str) -> int:
@@ -129,4 +128,4 @@ class DefeaturingFilters(Collection):
         return self.com_object.Remove(i_filter_id)
 
     def __repr__(self):
-        return f'DefeaturingFilters(name="{ self.name }")'
+        return f'DefeaturingFilters(name="{self.name}")'

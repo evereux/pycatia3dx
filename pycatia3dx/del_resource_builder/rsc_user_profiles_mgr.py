@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class RscUserProfilesMgr(Collection):
-
     """
         .. note::
             :class: toggle
@@ -57,7 +56,7 @@ class RscUserProfilesMgr(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=RscApplicativeProfilesGroup)
         self.com_object = com_object
 
     def build_user_group(self, i_name: str) -> RscApplicativeProfilesGroup:
@@ -161,4 +160,4 @@ class RscUserProfilesMgr(Collection):
         return self.com_object.RemoveUserGroup(i_name)
 
     def __repr__(self):
-        return f'RscUserProfilesMgr(name="{ self.name }")'
+        return f'RscUserProfilesMgr(name="{self.name}")'

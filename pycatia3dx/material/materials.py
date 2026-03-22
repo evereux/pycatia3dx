@@ -31,7 +31,7 @@ class Materials(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Material)
         self.com_object = com_object
 
     def add(self, i_material: Material) -> None:

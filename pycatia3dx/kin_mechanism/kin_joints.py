@@ -31,7 +31,7 @@ class KinJoints(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=EngConnection)
         self.com_object = com_object
 
     def exclude(self, i_index: CATVariant) -> None:

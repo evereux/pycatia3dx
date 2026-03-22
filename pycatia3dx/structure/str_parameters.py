@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class StrParameters(Collection):
-
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class StrParameters(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Parameter)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> Parameter:
@@ -68,4 +67,4 @@ class StrParameters(Collection):
         return Parameter(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'StrParameters(name="{ self.name }")'
+        return f'StrParameters(name="{self.name}")'

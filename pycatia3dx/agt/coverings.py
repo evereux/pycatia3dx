@@ -32,7 +32,7 @@ class Coverings(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Covering)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> Covering:

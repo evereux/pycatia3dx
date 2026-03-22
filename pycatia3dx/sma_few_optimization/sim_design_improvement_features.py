@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimDesignImprovementFeatures(Collection):
-
     """
         .. note::
             :class: toggle
@@ -54,6 +53,7 @@ class SimDesignImprovementFeatures(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object for this Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -198,4 +198,4 @@ class SimDesignImprovementFeatures(Collection):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SimDesignImprovementFeatures(name="{ self.name }")'
+        return f'SimDesignImprovementFeatures(name="{self.name}")'

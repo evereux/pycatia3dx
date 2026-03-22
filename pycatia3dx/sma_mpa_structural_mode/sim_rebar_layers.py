@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mpa_structural_mode.sim_rebar_layer import SimRebarLayer
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimRebarLayers(Collection):
-
     """
         .. note::
             :class: toggle
@@ -53,10 +53,10 @@ class SimRebarLayers(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimRebarLayer)
         self.com_object = com_object
 
-    def add(self) -> AnyObject:
+    def add(self) -> SimRebarLayer:
         """
         .. note::
             :class: toggle
@@ -76,11 +76,11 @@ class SimRebarLayers(Collection):
                 |     Returns:
                 |         The SimConnectorDamping object
 
-        :return: AnyObject
+        :return: SimRebarLayer
         """
-        return self.com_object.Add()
+        return SimRebarLayer(self.com_object.Add())
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimRebarLayer:
         """
         .. note::
             :class: toggle
@@ -98,9 +98,9 @@ class SimRebarLayers(Collection):
                 |         The SimConnectorElasticity object
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimRebarLayer
         """
-        return self.com_object.Item(i_index)
+        return SimRebarLayer(self.com_object.Item(i_index))
 
     def remove(self, i_index: CATVariant) -> None:
         """
@@ -135,4 +135,4 @@ class SimRebarLayers(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'SimRebarLayers(name="{ self.name }")'
+        return f'SimRebarLayers(name="{self.name}")'

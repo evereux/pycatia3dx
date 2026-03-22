@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class StrStandardPosStrategyParameters(Collection):
-
     """
         .. note::
             :class: toggle
@@ -32,6 +31,7 @@ class StrStandardPosStrategyParameters(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is teh child_object for the Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -48,15 +48,12 @@ class StrStandardPosStrategyParameters(Collection):
                 | 
                 |         iIndex
                 |             The index or the name of the standard positioning parameter
-                |             
-                | 
+                |
                 |     Example:
-                | 
                 | 
                 |              This example retrieves the first StandardPosStrategyParameter from
                 |              the list.
-                |              
-                | 
+                |
                 |               Dim ObjStrStandardPosStrategyParameters As
                 |               StrStandardPosStrategyParameters
                 |               Set ObjStrStandardPosStrategyParameters = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(StdPosStrategyName)
@@ -68,4 +65,4 @@ class StrStandardPosStrategyParameters(Collection):
         return self.com_object.Item(i_index)
 
     def __repr__(self):
-        return f'StrStandardPosStrategyParameters(name="{ self.name }")'
+        return f'StrStandardPosStrategyParameters(name="{self.name}")'

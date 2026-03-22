@@ -32,7 +32,7 @@ class DrawingTexts(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingText)
         self.com_object = com_object
 
     def add(self, i_drawing_text: str, i_position_x: float, i_position_y: float) -> DrawingText:

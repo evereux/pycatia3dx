@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimResultsSet(Collection):
-
     """
         .. note::
             :class: toggle
@@ -46,6 +45,7 @@ class SimResultsSet(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object for the Collection?
         super().__init__(com_object)
         self.com_object = com_object
 
@@ -83,4 +83,4 @@ class SimResultsSet(Collection):
         return self.com_object.Item(i_identifier)
 
     def __repr__(self):
-        return f'SimResultsSet(name="{ self.name }")'
+        return f'SimResultsSet(name="{self.name}")'

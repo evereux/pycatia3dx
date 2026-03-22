@@ -31,6 +31,7 @@ class SimBehaviors(Collection):
     """
 
     def __init__(self, com_object):
+        # todo: what is the child_object of the Collection?
         super().__init__(com_object)
         self.com_object = com_object
 

@@ -7,13 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx.sma_mpa_structural_mode.sim_connector_elasticity import SimConnectorElasticity
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
 
 class SimConnectorElasticities(Collection):
-
     """
         .. note::
             :class: toggle
@@ -53,10 +53,10 @@ class SimConnectorElasticities(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimConnectorElasticity)
         self.com_object = com_object
 
-    def add(self, i_degree_of_freedom: int) -> AnyObject:
+    def add(self, i_degree_of_freedom: int) -> SimConnectorElasticity:
         """
         .. note::
             :class: toggle
@@ -77,11 +77,11 @@ class SimConnectorElasticities(Collection):
                 |         The SimConnectorElasticity object
 
         :param int i_degree_of_freedom:
-        :return: AnyObject
+        :return: SimConnectorElasticity
         """
-        return self.com_object.Add(i_degree_of_freedom)
+        return SimConnectorElasticity(self.com_object.Add(i_degree_of_freedom))
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: CATVariant) -> SimConnectorElasticity:
         """
         .. note::
             :class: toggle
@@ -100,9 +100,9 @@ class SimConnectorElasticities(Collection):
                 |         The SimConnectorElasticity object
 
         :param CATVariant i_index:
-        :return: AnyObject
+        :return: SimConnectorElasticity
         """
-        return self.com_object.Item(i_index)
+        return SimConnectorElasticity(self.com_object.Item(i_index))
 
     def remove(self, i_degree_of_freedom: int) -> None:
         """
@@ -138,4 +138,4 @@ class SimConnectorElasticities(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'SimConnectorElasticities(name="{ self.name }")'
+        return f'SimConnectorElasticities(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class ParameterSets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -50,7 +49,7 @@ class ParameterSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ParameterSet)
         self.com_object = com_object
 
     def create_set(self, i_name: str) -> ParameterSet:
@@ -110,4 +109,4 @@ class ParameterSets(Collection):
         return ParameterSet(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'ParameterSets(name="{ self.name }")'
+        return f'ParameterSets(name="{self.name}")'

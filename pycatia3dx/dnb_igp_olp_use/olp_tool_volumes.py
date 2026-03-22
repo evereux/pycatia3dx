@@ -13,7 +13,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_tool_volume import OLPToolVolume
 
 
 class OLPToolVolumes(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +35,7 @@ class OLPToolVolumes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPToolVolume)
         self.com_object = com_object
 
     def create(self) -> OLPToolVolume:
@@ -98,4 +97,4 @@ class OLPToolVolumes(Collection):
         return OLPToolVolume(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OLPToolVolumes(name="{ self.name }")'
+        return f'OLPToolVolumes(name="{self.name}")'

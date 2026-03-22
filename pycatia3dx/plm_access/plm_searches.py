@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class PLMSearches(Collection):
-
     """
         .. note::
             :class: toggle
@@ -47,7 +46,7 @@ class PLMSearches(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=PLMSearch)
         self.com_object = com_object
 
     @property
@@ -172,4 +171,4 @@ class PLMSearches(Collection):
         return self.com_object.Remove(i_plm_search_context.com_object)
 
     def __repr__(self):
-        return f'PlmSearches(name="{ self.name }")'
+        return f'PlmSearches(name="{self.name}")'

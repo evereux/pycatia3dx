@@ -1335,10 +1335,7 @@ class Application(AnyObject):
         :return: AnyService
         """
 
-        try:
-            return service_types['i_service']['type'](self.com_object.GetSessionService(i_service))
-        except KeyError:
-            return Service(self.com_object.GetSessionService(i_service))
+        return service_types[i_service]['type'](self.com_object.GetSessionService(i_service))
 
     def get_workbench_id(self) -> str:
         """

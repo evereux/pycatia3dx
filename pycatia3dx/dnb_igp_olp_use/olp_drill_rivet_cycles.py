@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPDrillRivetCycles(Collection):
-
     """
         .. note::
             :class: toggle
@@ -37,7 +36,7 @@ class OLPDrillRivetCycles(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPDrillRivetCycle)
         self.com_object = com_object
 
     def append(self, i_cycle: OLPDrillRivetCycle) -> None:
@@ -137,4 +136,4 @@ class OLPDrillRivetCycles(Collection):
         return OLPDrillRivetCycle(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'OLPDrillRivetCycles(name="{ self.name }")'
+        return f'OLPDrillRivetCycles(name="{self.name}")'

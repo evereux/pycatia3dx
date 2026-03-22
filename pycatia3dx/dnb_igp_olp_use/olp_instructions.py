@@ -13,7 +13,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPInstructions(Collection):
-
     """
         .. note::
             :class: toggle
@@ -47,10 +46,16 @@ class OLPInstructions(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OLPInstruction)
         self.com_object = com_object
 
-    def create_instruction(self, i_type: int, i_relative_instruction: OLPInstruction, i_after_instruction: bool) -> OLPInstruction:
+    def create_instruction(
+            self,
+            i_type:
+            int,
+            i_relative_instruction: OLPInstruction,
+            i_after_instruction: bool
+    ) -> OLPInstruction:
         """
         .. note::
             :class: toggle
@@ -90,9 +95,12 @@ class OLPInstructions(Collection):
         :param bool i_after_instruction:
         :return: OLPInstruction
         """
-        return OLPInstruction(self.com_object.CreateInstruction(i_type, i_relative_instruction.com_object, i_after_instruction))
+        return OLPInstruction(
+            self.com_object.CreateInstruction(i_type, i_relative_instruction.com_object, i_after_instruction))
 
-    def create_instruction_from_template(self, i_library: str, i_template: str, i_type: str, i_sub_type: str, i_relative_instruction: OLPInstruction, i_after_instruction: bool) -> OLPInstruction:
+    def create_instruction_from_template(self, i_library: str, i_template: str, i_type: str, i_sub_type: str,
+                                         i_relative_instruction: OLPInstruction,
+                                         i_after_instruction: bool) -> OLPInstruction:
         """
         .. note::
             :class: toggle
@@ -142,9 +150,12 @@ class OLPInstructions(Collection):
         :param bool i_after_instruction:
         :return: OLPInstruction
         """
-        return OLPInstruction(self.com_object.CreateInstructionFromTemplate(i_library, i_template, i_type, i_sub_type, i_relative_instruction.com_object, i_after_instruction))
+        return OLPInstruction(self.com_object.CreateInstructionFromTemplate(i_library, i_template, i_type, i_sub_type,
+                                                                            i_relative_instruction.com_object,
+                                                                            i_after_instruction))
 
-    def create_instruction_type_string(self, i_type: str, i_relative_instruction: OLPInstruction, i_after_instruction: bool) -> OLPInstruction:
+    def create_instruction_type_string(self, i_type: str, i_relative_instruction: OLPInstruction,
+                                       i_after_instruction: bool) -> OLPInstruction:
         """
         .. note::
             :class: toggle
@@ -187,7 +198,8 @@ class OLPInstructions(Collection):
         :param bool i_after_instruction:
         :return: OLPInstruction
         """
-        return OLPInstruction(self.com_object.CreateInstructionTypeString(i_type, i_relative_instruction.com_object, i_after_instruction))
+        return OLPInstruction(
+            self.com_object.CreateInstructionTypeString(i_type, i_relative_instruction.com_object, i_after_instruction))
 
     def delete_instruction(self, i_instruction: OLPInstruction) -> None:
         """
@@ -290,4 +302,4 @@ class OLPInstructions(Collection):
         return OLPInstruction(self.com_object.Previous(i_relative_instruction.com_object))
 
     def __repr__(self):
-        return f'OLPInstructions(name="{ self.name }")'
+        return f'OLPInstructions(name="{self.name}")'

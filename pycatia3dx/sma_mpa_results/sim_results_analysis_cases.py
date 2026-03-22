@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimResultsAnalysisCases(Collection):
-
     """
         .. note::
             :class: toggle
@@ -46,7 +45,7 @@ class SimResultsAnalysisCases(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SimResultsAnalysisCase)
         self.com_object = com_object
 
     def item(self, i_index: CATVariant) -> SimResultsAnalysisCase:
@@ -73,4 +72,4 @@ class SimResultsAnalysisCases(Collection):
         return SimResultsAnalysisCase(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'SimResultsAnalysisCases(name="{ self.name }")'
+        return f'SimResultsAnalysisCases(name="{self.name}")'

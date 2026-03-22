@@ -35,11 +35,16 @@ class DrawingDimensions(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingDimension)
         self.com_object = com_object
 
-    def add(self, i_type_dim: CatDimType, i_geom_elem: tuple[Geometry2D, ...], i_pt_coord_elem: tuple[int, ...],
-            i_line_rep: CatDimLineRep) -> DrawingDimension:
+    def add(
+            self,
+            i_type_dim: CatDimType,
+            i_geom_elem: tuple[Geometry2D, ...],
+            i_pt_coord_elem: tuple[int, ...],
+            i_line_rep: CatDimLineRep
+    ) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -115,8 +120,14 @@ class DrawingDimensions(Collection):
 
         return DrawingDimension(self.com_object.Add(i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep))
 
-    def add2(self, i_type_dim: CatDimType, i_geom_elem: tuple[Geometry2D, ...], i_pt_coord_elem: tuple[int, ...],
-             i_ldc_ref_elem: CATVariant|Geometry2D, i_ldc_ref_angle: int) -> DrawingDimension:
+    def add2(
+            self,
+            i_type_dim: CatDimType,
+            i_geom_elem: tuple[Geometry2D, ...],
+            i_pt_coord_elem: tuple[int, ...],
+            i_ldc_ref_elem: CATVariant | Geometry2D,
+            i_ldc_ref_angle: int
+    ) -> DrawingDimension:
         """
         .. note::
             :class: toggle

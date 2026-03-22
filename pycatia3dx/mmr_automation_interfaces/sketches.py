@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Sketches(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +35,7 @@ class Sketches(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Sketch)
         self.com_object = com_object
 
     def add(self, i_plane: Reference) -> Sketch:
@@ -128,4 +127,4 @@ class Sketches(Collection):
         return Sketch(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'Sketches(name="{ self.name }")'
+        return f'Sketches(name="{self.name}")'

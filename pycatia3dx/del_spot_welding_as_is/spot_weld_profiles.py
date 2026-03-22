@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SpotWeldProfiles(Collection):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class SpotWeldProfiles(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=SpotWeldProfile)
         self.com_object = com_object
 
     def create_profile(self, i_name: str) -> SpotWeldProfile:
@@ -156,4 +155,4 @@ class SpotWeldProfiles(Collection):
         return self.com_object.RemoveAll()
 
     def __repr__(self):
-        return f'SpotWeldProfiles(name="{ self.name }")'
+        return f'SpotWeldProfiles(name="{self.name}")'
