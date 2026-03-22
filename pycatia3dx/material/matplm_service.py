@@ -7,7 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.interfaces.editor import Editor
+from typing import TYPE_CHECKING
+
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.material.applied_material import AppliedMaterial
 from pycatia3dx.material.applied_materials import AppliedMaterials
@@ -15,8 +16,11 @@ from pycatia3dx.material.material_generic import MaterialGeneric
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.editor import Editor
 
-class MatplmService(Service):
+
+class MATPLMService(Service):
     """
         .. note::
             :class: toggle

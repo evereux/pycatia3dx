@@ -9,11 +9,12 @@
 """
 from typing import TYPE_CHECKING
 
-from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.selection import Selection
+    from pycatia3dx.interfaces.service import Service
+    from pycatia3dx.types import AnyService
 
 
 class Editor(AnyObject):
@@ -87,7 +88,7 @@ class Editor(AnyObject):
 
         return Selection(self.com_object.Selection)
 
-    def get_service(self, i_service: str) -> Service:
+    def get_service(self, i_service: str) -> AnyService | Service:
         """
         .. note::
             :class: toggle
@@ -112,9 +113,11 @@ class Editor(AnyObject):
                 |              Set Service1 = CATIA.ActiveEditor.GetService("VisuServices")
 
         :param str i_service:
-        :return: Service
+        :return: AnyService
         """
-        return Service(self.com_object.GetService(i_service))
+        from pycatia3dx.types import service_types
+
+        return service_types[i_service]['type'](self.com_object.GetService(i_service))
 
     def __repr__(self):
         return f'Editor(name="{self.name}")'

@@ -1,4 +1,4 @@
-from typing import Union
+from typing import Union, TYPE_CHECKING
 
 from pycatia3dx.dnb_fitting.fitting_service import FittingService
 from pycatia3dx.dnb_igp_olp_use.calib_least_squares_service import CalibLeastSquaresService
@@ -15,7 +15,7 @@ from pycatia3dx.interfaces.player_services import PlayerServices
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.interfaces.visu_services import VisuServices
 from pycatia3dx.knowledge_interfaces.knowledge_services import KnowledgeServices
-from pycatia3dx.material.matplm_service import MatplmService
+from pycatia3dx.material.matplm_service import MATPLMService
 from pycatia3dx.measure.measurable_service import MeasurableService
 from pycatia3dx.measure.measure_service import MeasureService
 from pycatia3dx.opns_section.section_service import SectionService
@@ -54,7 +54,7 @@ AnyService = Union[
     InertiaService,
     InterferenceServices,
     KnowledgeServices,
-    MatplmService,
+    MATPLMService,
     MeasurableService,
     MeasureService,
     OLPDownloadService,
@@ -120,8 +120,8 @@ service_types = {
     'KnowledgeServices': {
         'type': KnowledgeServices
     },
-    'MatplmService': {
-        'type': MatplmService
+    'MATPLMService': {
+        'type': MATPLMService
     },
     'MeasurableService': {
         'type': MeasurableService
