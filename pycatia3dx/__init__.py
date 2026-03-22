@@ -31,8 +31,8 @@ from pycatia3dx.know_how.enums import *
 from pycatia3dx.knowledge_interfaces.enums import *
 from pycatia3dx.material.enums import *
 from pycatia3dx.measure.enums import *
+from pycatia3dx.measure.enums import *
 from pycatia3dx.mmr_automation_interfaces.enums import *
-from pycatia3dx.opns_measure.enums import *
 from pycatia3dx.opns_section.enums import *
 from pycatia3dx.os.enums import *
 from pycatia3dx.part.enums import *
