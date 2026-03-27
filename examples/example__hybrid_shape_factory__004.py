@@ -3,12 +3,14 @@
     Example - Hybrid Shape Factory - 004
 
     Description:
-        Loops through the items in hybrid body "ConstructionGeometry" and determine the object type using selection.
-        Once determined create an object from it and find it's parent(s).
+        Loops through the items in hybrid body "ConstructionGeometry" and
+        determine the object type using selection. Once determined create an
+        object from it and find its parent(s).
 
     Requirements:
-        - An active part document open with a geometrical set called "ConstructionGeometry" containing points
-          generated using HybridShapePtCoord and line generated using HybridShapeLinePtPt:
+        - An active part document open with a geometrical set called
+          "ConstructionGeometry" containing points generated using
+          HybridShapePtCoord and line generated using HybridShapeLinePtPt:
 
             Part
             |- ConstructionGeometry
@@ -27,15 +29,14 @@ sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 
 from pycatia3dx import catia3dx
 from pycatia3dx.hybrid_shapes.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
-from pycatia3dx.hybrid_shapes.hybrid_shape_point_coord import (
-    HybridShapePointCoord,
-)
+from pycatia3dx.hybrid_shapes.hybrid_shape_point_coord import HybridShapePointCoord
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-application = catia3dx()
+# com3dx=False is required if com3dx.py cannot be found in your system.
+application = catia3dx(com3dx=False)
 editor = application.active_editor
-# ActiveObject returns AnyObject, so we need to wrap it with Part class manually
-part = Part(editor.active_object.com_object)
+
+part = Part(editor.active_com_object)
 
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("ConstructionGeometry")
@@ -65,4 +66,4 @@ for i in range(len(gs_construction_geometry)):
 
         print(f'Line: {hs_line_pt_pt.name}')
         print(f'\tStart point: {start_point.name, start_point.get_coordinates()}')
-        print(f'\tEnd point: end_point.name, end_point.get_coordinates()')
+        print(f'\tEnd point: {end_point.name}, {end_point.get_coordinates()}')

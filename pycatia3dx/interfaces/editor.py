@@ -63,6 +63,16 @@ class Editor(AnyObject):
         return AnyObject(self.com_object.ActiveObject)
 
     @property
+    def active_com_object(self):
+        """
+        For use when an automation Class requires the Editor.active_object
+        com_object. We can use editor.active_com_object instead of
+        editor.active_object.com_object. See examples for usage.
+        """
+
+        return self.com_object.ActiveObject
+
+    @property
     def selection(self) -> 'Selection':
         """
         .. note::

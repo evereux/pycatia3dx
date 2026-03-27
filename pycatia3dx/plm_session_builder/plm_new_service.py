@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class PLMNewService(Service):
-
     """
         .. note::
             :class: toggle
@@ -70,7 +69,7 @@ class PLMNewService(Service):
                 |         oEditor
                 |             The resulting editor on the newly created data.
 
-        :param str i_user_type:
+        :param str i_user_type: Can be "3DShape" or "Drawing"
         :param Editor o_editor:
         :return: None
         """
@@ -114,4 +113,4 @@ class PLMNewService(Service):
         return self.com_object.SetAttributeValue(i_attribute_id, i_attribute_value)
 
     def __repr__(self):
-        return f'PlmNewService(name="{ self.name }")'
+        return f'PlmNewService(name="{self.name}")'

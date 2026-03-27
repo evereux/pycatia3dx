@@ -17,24 +17,40 @@
 import os
 import sys
 
+from win32com.universal import com_error
+
 sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 ##########################################################
 
 from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-application = catia3dx()
+geometrical_set = "ConstructionGeometry"
+surface_name = "Surface.1"
+
+# com3dx=False is required if com3dx.py cannot be found in your system.
+application = catia3dx(com3dx=False)
 editor = application.active_editor
-# ActiveObject returns AnyObject, so we need to wrap it with Part class manually
-part = Part(editor.active_object.com_object)
+
+part = Part(editor.active_com_object)
 bodies = part.bodies
 
 hsf = part.hybrid_shape_factory
 hbs = part.hybrid_bodies
 
-hb_construction_geometry = hbs.item("ConstructionGeometry")
+try:
+    hb_construction_geometry = hbs.item(geometrical_set)
+except com_error:
+    print(f'No Geometrical Set named {geometrical_set} found.')
+    sys.exit()
+
 hs_construction_geometry = hb_construction_geometry.hybrid_shapes
-hs_surface = hs_construction_geometry.item("Surface.1")
+
+try:
+    hs_surface = hs_construction_geometry.item(f"{surface_name}")
+except com_error:
+    print(f'No surface named {surface_name} found.')
+    sys.exit()
 ref_hs_surface = part.create_reference_from_object(hs_surface)
 
 origin_elements = part.origin_elements

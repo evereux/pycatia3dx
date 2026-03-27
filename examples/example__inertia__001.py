@@ -1,9 +1,12 @@
 """
-    Example - Inertia - 001:
-    Catia must be running with a Part open that contains a solid object
-        within the MainBody (PartBody).
+    Example - Inertia - 001
+
+    Catia must be running with a Part open that contains a solid object within
+    the MainBody (PartBody).
+
     This example will only measure the inertia for the MainBody.
-        Additional PartBodies will be ignored.
+
+    Additional PartBodies will be ignored.
 """
 
 ##########################################################
@@ -21,10 +24,9 @@ from pycatia3dx.inertia.inertia import Inertia
 from pycatia3dx.types.service import InertiaService
 
 __author__ = '[ptm] by plm-forum.ru | ported to pycatia3dx by HdCadUser'
-__status__ = 'alpha'
 
-# initialise the catia automation application
-application = catia3dx()
+# com3dx=False is required if com3dx.py cannot be found in your system.
+application = catia3dx(com3dx=False)
 # if the active document is a CATPart this will return a PartDocument
 
 part = Part(application.active_editor.active_object.com_object)
