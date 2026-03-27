@@ -16,7 +16,7 @@ from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccur
 from pycatia3dx.system.any_object import AnyObject
 
 
-class PlmProductService(Service):
+class PLMProductService(Service):
     """
         .. note::
             :class: toggle

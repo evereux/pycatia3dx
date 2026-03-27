@@ -7,8 +7,9 @@ from pycatia3dx.dnb_igp_olp_use.olp_teach_helper import OLPTeachHelper
 from pycatia3dx.dnb_igp_olp_use.olp_translator_helper import OLPTranslatorHelper
 from pycatia3dx.dnb_igp_olp_use.olp_upload_service import OLPUploadService
 from pycatia3dx.drafting.drawing_gen_service import DrawingGenService
+from pycatia3dx.drafting.drawing_service import DrawingService
 from pycatia3dx.electrical.elec_import_finalizer_service import ElecImportFinalizerService
-from pycatia3dx.fc_board.fcb_service import FcbService
+from pycatia3dx.fc_board.fcb_service import FCBService
 from pycatia3dx.inertia.inertia_box_service import InertiaBoxService
 from pycatia3dx.inertia.inertia_service import InertiaService
 from pycatia3dx.interfaces.player_services import PlayerServices
@@ -19,7 +20,7 @@ from pycatia3dx.material.matplm_service import MATPLMService
 from pycatia3dx.measure.measurable_service import MeasurableService
 from pycatia3dx.measure.measure_service import MeasureService
 from pycatia3dx.opns_section.section_service import SectionService
-from pycatia3dx.pcb_board.pcb_service import PcbService
+from pycatia3dx.pcb_board.pcb_service import PCBService
 from pycatia3dx.plm_access.plm_script_service import PLMScriptService
 from pycatia3dx.plm_access.plm_search_service import PLMSearchService
 from pycatia3dx.plm_access.search_service import SearchService
@@ -43,12 +44,13 @@ from pycatia3dx.sma_mpa_foundation.sim_initialization_service import SimInitiali
 from pycatia3dx.space_reference_system.rfg_service import RfgService
 from pycatia3dx.space_reference_system.srs_instantiate_service import SrsInstantiateService
 from pycatia3dx.structure.str_service import StrService
+from pycatia3dx.vpm_editor_context.plm_product_service import PLMProductService
 
 AnyService = Union[
     CalibLeastSquaresService,
     DrawingGenService,
     ElecImportFinalizerService,
-    FcbService,
+    FCBService,
     FittingService,
     InertiaBoxService,
     InertiaService,
@@ -65,11 +67,12 @@ AnyService = Union[
     PLMDocumentServices,
     PLMNewService,
     PLMOpenService,
+    PLMProductService,
     PLMPropagateService,
     PLMRefreshService,
     PLMScriptService,
     PLMSearchService,
-    PcbService,
+    PCBService,
     PlayerServices,
     PnOService,
     RfgService,
@@ -99,14 +102,17 @@ service_types = {
     'DrawingGenService': {
         'type': DrawingGenService
     },
+    'DrawingService': {
+        'type': DrawingService
+    },
     'ElecImportFinalizerService': {
         'type': ElecImportFinalizerService
     },
+    'FCBService': {
+        'type': FCBService
+    },
     'FittingService': {
         'type': FittingService
-    },
-    'FcbService': {
-        'type': FcbService
     },
     'InertiaBoxService': {
         'type': InertiaBoxService
@@ -143,7 +149,12 @@ service_types = {
     'OLPUploadService': {
         'type': OLPUploadService
     },
-
+    'PCBService': {
+        'type': PCBService
+    },
+    'PlayerServices': {
+        'type': PlayerServices
+    },
     'PLMAppContext': {
         'type': PLMAppContext
     },
@@ -156,6 +167,9 @@ service_types = {
     'PLMOpenService': {
         'type': PLMOpenService
     },
+    'PLMProductService': {
+        'type': PLMProductService}
+    ,
     'PLMPropagateService': {
         'type': PLMPropagateService
     },
@@ -168,21 +182,12 @@ service_types = {
     'PLMSearchService': {
         'type': PLMSearchService
     },
-
-    'PcbService': {
-        'type': PcbService
-    },
-    'PlayerServices': {
-        'type': PlayerServices
-    },
     'PnOService': {
         'type': PnOService
     },
-
     'RfgService': {
         'type': RfgService
     },
-
     'SearchService': {
         'type': SearchService
     },
@@ -214,7 +219,6 @@ service_types = {
     'SimSimulationService': {
         'type': SimSimulationService
     },
-
     'SrsInstantiateService': {
         'type': SrsInstantiateService
     },
