@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DatabaseSearch(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -69,7 +68,8 @@ class DatabaseSearch(AnyObject):
                 |     Parameters:
                 | 
                 |         iLatestVersion
-                |             iAllMinorVersions = 1 : search will return All Minor versions iAllMinorVersions = 0 : search BSF version only 
+                |             iAllMinorVersions = 1 : search will return All Minor versions
+                |             iAllMinorVersions = 0 : search BSF version only
                 | 
                 |     Returns:
                 | 
@@ -447,7 +447,13 @@ class DatabaseSearch(AnyObject):
         """
         return self.com_object.AddExtendedCriteria(i_attr_id, i_attr_value, i_operator)
 
-    def add_extended_range_criteria(self, i_attr_id: str, i_attr_start_value: str, i_attr_end_value: str, i_operator: int) -> None:
+    def add_extended_range_criteria(
+            self,
+            i_attr_id: str,
+            i_attr_start_value: str,
+            i_attr_end_value: str,
+            i_operator: int
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -602,4 +608,4 @@ class DatabaseSearch(AnyObject):
         return self.com_object.SortBy(i_sort_by_attr, i_sort_order)
 
     def __repr__(self):
-        return f'DatabaseSearch(name="{ self.name }")'
+        return f'DatabaseSearch(name="{self.name}")'
