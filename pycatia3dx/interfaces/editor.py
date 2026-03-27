@@ -14,7 +14,7 @@ from pycatia3dx.system.any_object import AnyObject
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.selection import Selection
     from pycatia3dx.interfaces.service import Service
-    from pycatia3dx.types import AnyService
+    from pycatia3dx.types import EdtitorService, editor_service_types
 
 
 class Editor(AnyObject):
@@ -98,7 +98,7 @@ class Editor(AnyObject):
 
         return Selection(self.com_object.Selection)
 
-    def get_service(self, i_service: str) -> AnyService | Service:
+    def get_service(self, i_service: str) -> EdtitorService:
         """
         .. note::
             :class: toggle
@@ -125,9 +125,12 @@ class Editor(AnyObject):
         :param str i_service:
         :return: AnyService
         """
-        from pycatia3dx.types import service_types
+        from pycatia3dx.types import editor_service_types
 
-        return service_types[i_service]['type'](self.com_object.GetService(i_service))
+        if i_service not in [service for service in editor_service_types]:
+            raise KeyError(f'{i_service} not a recognized service.')
+
+        return editor_service_types[i_service]['type'](self.com_object.GetService(i_service))
 
     def __repr__(self):
         return f'Editor(name="{self.name}")'

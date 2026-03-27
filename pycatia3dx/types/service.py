@@ -10,6 +10,7 @@ from pycatia3dx.drafting.drawing_gen_service import DrawingGenService
 from pycatia3dx.drafting.drawing_service import DrawingService
 from pycatia3dx.electrical.elec_import_finalizer_service import ElecImportFinalizerService
 from pycatia3dx.fc_board.fcb_service import FCBService
+from pycatia3dx.fmt_mode.sim_group import SimGroup
 from pycatia3dx.inertia.inertia_box_service import InertiaBoxService
 from pycatia3dx.inertia.inertia_service import InertiaService
 from pycatia3dx.interfaces.player_services import PlayerServices
@@ -34,8 +35,9 @@ from pycatia3dx.plm_session_builder.plm_open_service import PLMOpenService
 from pycatia3dx.plm_session_builder.plm_propagate_service import PLMPropagateService
 from pycatia3dx.plm_simulation_engine.sim_dyn_clash_services import SimDynClashServices
 from pycatia3dx.plm_validation.val_validation_service import VALValidationService
-from pycatia3dx.sim_plm.sim_plm_service import SimPLMService
+from pycatia3dx.sim_plm.sim_plm_service import SIMPLMService
 from pycatia3dx.sim_plm.sim_simulation_service import SimSimulationService
+from pycatia3dx.sim_rep.sim_compose_link_services import SimComposeLinkServices
 from pycatia3dx.sim_rep.sim_link_services import SimLinkServices
 from pycatia3dx.sim_rep.sim_publication_services import SimPublicationServices
 from pycatia3dx.sim_rep.sim_rep_services import SimRepServices
@@ -45,68 +47,134 @@ from pycatia3dx.space_reference_system.rfg_service import RfgService
 from pycatia3dx.space_reference_system.srs_instantiate_service import SrsInstantiateService
 from pycatia3dx.structure.str_service import StrService
 from pycatia3dx.vpm_editor_context.plm_product_service import PLMProductService
+from pycatia3dx.vpm_editor_context.product_session_service import ProductSessionService
 
-AnyService = Union[
-    CalibLeastSquaresService,
+ApplicationService = Union[
+    MATPLMService,
+    OLPTranslatorHelper,
+    PnOService,
+    PLMNewService,
+    PLMOpenService,
+    PLMPropagateService,
+    PLMRefreshService,
+    ProductSessionService,
+    SearchService,
+    SimInitializationService,
+    SIMPLMService,
+    VisuServices
+]
+
+EdtitorService = Union[
     DrawingGenService,
-    ElecImportFinalizerService,
+    DrawingService,
     FCBService,
     FittingService,
     InertiaBoxService,
     InertiaService,
     InterferenceServices,
     KnowledgeServices,
-    MATPLMService,
     MeasurableService,
-    MeasureService,
-    OLPDownloadService,
-    OLPTeachHelper,
-    OLPTranslatorHelper,
-    OLPUploadService,
-    PLMAppContext,
-    PLMDocumentServices,
-    PLMNewService,
-    PLMOpenService,
-    PLMProductService,
-    PLMPropagateService,
-    PLMRefreshService,
-    PLMScriptService,
-    PLMSearchService,
+    MeasurableService,
     PCBService,
     PlayerServices,
-    PnOService,
+    PLMProductService,
     RfgService,
-    SearchService,
     SectionService,
-    SimDynClashServices,
+    SimComposeLinkServices,
     SimExecutionService,
-    SimInitializationService,
     SimLinkServices,
-    SimPLMService,
     SimPublicationServices,
     SimRepServices,
     SimSimulationService,
     SrsInstantiateService,
     StrService,
-    VALValidationService,
-    VisuServices,
+    VALValidationService
 ]
 
-service_types = {
+application_service_types = {
     'Service': {
         'type': Service
     },
-    'CalibLeastSquaresService': {
-        'type': CalibLeastSquaresService
+    'MATPLMService': {
+        'type': MATPLMService
+    },
+    'OLPTranslatorHelper': {
+        'type': OLPTranslatorHelper
+    },
+    'PnOService': {
+        'type': PnOService
+    },
+    'PLMNewService': {
+        'type': PLMNewService
+    },
+    'PLMOpenService': {
+        'type': PLMOpenService
+    },
+    'PLMPropagateService': {
+        'type': PLMPropagateService
+    },
+    'PLMRefreshService': {
+        'type': PLMRefreshService
+    },
+    'PLMScriptService': {
+        'type': PLMScriptService
+    },
+    'ProductSessionService': {
+        'type': ProductSessionService
+    },
+    'Search': {
+        'type': SearchService
+    },
+    'SimInitializationService': {
+        'type': SimInitializationService
+    },
+    'SIMPLMService': {
+        'type': SIMPLMService
+    },
+    'VisuServices': {
+        'type': VisuServices
+    },
+
+    'PCBService': {
+        'type': PCBService
+    },
+    'PlayerServices': {
+        'type': PlayerServices
+    },
+    'PLMAppContext': {
+        'type': PLMAppContext
+    },
+    'PLMDocumentServices': {
+        'type': PLMDocumentServices
+    },
+
+    'PLMProductService': {
+        'type': PLMProductService
+    },
+
+    'PLMSearchService': {
+        'type': PLMSearchService
+    },
+
+    'RfgService': {
+        'type': RfgService
+    },
+
+    'SectionService': {
+        'type': SectionService
+    },
+
+}
+
+editor_service_types = {
+    'Service': {
+        'type': Service
     },
     'DrawingGenService': {
         'type': DrawingGenService
     },
     'DrawingService': {
         'type': DrawingService
-    },
-    'ElecImportFinalizerService': {
-        'type': ElecImportFinalizerService
     },
     'FCBService': {
         'type': FCBService
@@ -126,28 +194,11 @@ service_types = {
     'KnowledgeServices': {
         'type': KnowledgeServices
     },
-    'MATPLMService': {
-        'type': MATPLMService
-    },
     'MeasurableService': {
         'type': MeasurableService
     },
     'MeasureService': {
         'type': MeasureService
-    },
-
-    'OLPDownloadService': {
-        'type': OLPDownloadService
-    },
-
-    'OLPTeachHelper': {
-        'type': OLPTeachHelper
-    },
-    'OLPTranslatorHelper': {
-        'type': OLPTranslatorHelper
-    },
-    'OLPUploadService': {
-        'type': OLPUploadService
     },
     'PCBService': {
         'type': PCBService
@@ -155,60 +206,23 @@ service_types = {
     'PlayerServices': {
         'type': PlayerServices
     },
-    'PLMAppContext': {
-        'type': PLMAppContext
-    },
-    'PLMDocumentServices': {
-        'type': PLMDocumentServices
-    },
-    'PLMNewService': {
-        'type': PLMNewService
-    },
-    'PLMOpenService': {
-        'type': PLMOpenService
-    },
     'PLMProductService': {
-        'type': PLMProductService}
-    ,
-    'PLMPropagateService': {
-        'type': PLMPropagateService
-    },
-    'PLMRefreshService': {
-        'type': PLMRefreshService
-    },
-    'PLMScriptService': {
-        'type': PLMScriptService
-    },
-    'PLMSearchService': {
-        'type': PLMSearchService
-    },
-    'PnOService': {
-        'type': PnOService
+        'type': PLMProductService
     },
     'RfgService': {
         'type': RfgService
     },
-    'SearchService': {
-        'type': SearchService
-    },
     'SectionService': {
         'type': SectionService
     },
-
-    'SimDynClashServices': {
-        'type': SimDynClashServices
+    'SimComposeLinkServices': {
+        'type': SimComposeLinkServices
     },
     'SimExecutionService': {
         'type': SimExecutionService
     },
-    'SimInitializationService': {
-        'type': SimInitializationService
-    },
     'SimLinkServices': {
         'type': SimLinkServices
-    },
-    'SimPLMService': {
-        'type': SimPLMService
     },
     'SimPublicationServices': {
         'type': SimPublicationServices
@@ -228,7 +242,28 @@ service_types = {
     'VALValidationService': {
         'type': VALValidationService
     },
-    'VisuServices': {
-        'type': VisuServices
-    },
 }
+
+# 'CalibLeastSquaresService': {
+#     'type': CalibLeastSquaresService
+# },
+
+# 'ElecImportFinalizerService': {
+#     'type': ElecImportFinalizerService
+# },
+
+# 'OLPDownloadService': {
+#     'type': OLPDownloadService
+# },
+
+# 'OLPTeachHelper': {
+#     'type': OLPTeachHelper
+# },
+
+# 'OLPUploadService': {
+#     'type': OLPUploadService
+# },
+#
+# 'SimDynClashServices': {
+#     'type': SimDynClashServices
+# },
