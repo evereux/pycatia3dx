@@ -64,7 +64,7 @@ ApplicationService = Union[
     VisuServices
 ]
 
-EdtitorService = Union[
+EditorService = Union[
     DrawingGenService,
     DrawingService,
     FCBService,
