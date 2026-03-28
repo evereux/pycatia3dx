@@ -98,7 +98,7 @@ application_service_types = {
     'MATPLMService': {
         'type': MATPLMService
     },
-    'OLPTranslatorHelper': {
+    'OlpTranslatorHelper': {
         'type': OLPTranslatorHelper
     },
     'PnOService': {
@@ -128,40 +128,8 @@ application_service_types = {
     'SimInitializationService': {
         'type': SimInitializationService
     },
-    'SIMPLMService': {
-        'type': SIMPLMService
-    },
     'VisuServices': {
         'type': VisuServices
-    },
-
-    'PCBService': {
-        'type': PCBService
-    },
-    'PlayerServices': {
-        'type': PlayerServices
-    },
-    'PLMAppContext': {
-        'type': PLMAppContext
-    },
-    'PLMDocumentServices': {
-        'type': PLMDocumentServices
-    },
-
-    'PLMProductService': {
-        'type': PLMProductService
-    },
-
-    'PLMSearchService': {
-        'type': PLMSearchService
-    },
-
-    'RfgService': {
-        'type': RfgService
-    },
-
-    'SectionService': {
-        'type': SectionService
     },
 
 }
