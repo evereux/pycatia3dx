@@ -31,6 +31,8 @@ from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 application = catia3dx(com3dx=False)
 
 plm_service: PLMNewService = application.get_session_service('PLMNewService')
+plm_service.plm_create('3DShape', application.active_editor)
+
 editor = application.active_editor
 part = Part(editor.active_com_object)
 
