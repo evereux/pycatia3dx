@@ -1824,7 +1824,7 @@ class Selection(AnyObject):
             i_filter_type,
             i_message,
             i_object_selection_before_command_use_possibility,
-            i_multi_selection_mode.com_object,
+            i_multi_selection_mode,
             i_tooltip
         )
         # todo: check this method, does it require system service?
@@ -2277,7 +2277,7 @@ class Selection(AnyObject):
             i_filter_type,
             i_message,
             i_may_skip_interactive_selection,
-            i_multi_selection_mode.com_object,
+            i_multi_selection_mode,
             i_tooltip
         )
 

@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.multi_layer.mlp_simu_layer import MLPSimuLayer
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -57,6 +59,16 @@ class MLPSimuLayers(Collection):
         :return: MLPSimuLayer
         """
         return MLPSimuLayer(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> MLPSimuLayer:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return MLPSimuLayer(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[MLPSimuLayer]:
+        for i in range(self.count):
+            yield MLPSimuLayer(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'MlpSimuLayers(name="{self.name}")'

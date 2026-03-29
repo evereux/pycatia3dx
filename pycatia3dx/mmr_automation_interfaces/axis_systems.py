@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.axis_system import AxisSystem
 from pycatia3dx.system.collection import Collection
@@ -99,6 +100,16 @@ class AxisSystems(Collection):
         :return: AxisSystem
         """
         return AxisSystem(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> AxisSystem:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AxisSystem(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AxisSystem]:
+        for i in range(self.count):
+            yield AxisSystem(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'AxisSystems(name="{self.name}")'

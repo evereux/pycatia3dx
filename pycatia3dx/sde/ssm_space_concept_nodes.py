@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.sde.ssm_space_concept_node import SsmSpaceConceptNode
@@ -53,6 +54,16 @@ class SsmSpaceConceptNodes(Collection):
         :return: SsmSpaceConceptNode
         """
         return SsmSpaceConceptNode(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SsmSpaceConceptNode:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SsmSpaceConceptNode(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SsmSpaceConceptNode]:
+        for i in range(self.count):
+            yield SsmSpaceConceptNode(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SsmSpaceConceptNodes(name="{self.name}")'

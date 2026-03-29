@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.know_how.expert_report_object import ExpertReportObject
@@ -174,6 +175,16 @@ class ExpertReportObjects(Collection):
         :return: ExpertReportObject
         """
         return ExpertReportObject(self.com_object.SucceedItem(i_index))
+
+    def __getitem__(self, n: int) -> ExpertReportObject:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return ExpertReportObject(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[ExpertReportObject]:
+        for i in range(self.count):
+            yield ExpertReportObject(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'ExpertReportObjects(name="{self.name}")'

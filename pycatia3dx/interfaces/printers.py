@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.system.collection import Collection
@@ -71,6 +72,16 @@ class Printers(Collection):
         :return: Printer
         """
         return Printer(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Printer:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Printer(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Printer]:
+        for i in range(self.count):
+            yield Printer(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Printers(name="{self.name}")'

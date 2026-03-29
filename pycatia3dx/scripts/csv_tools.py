@@ -41,7 +41,7 @@ def convert_units(number: str, unit: str) -> float:
         raise KeyError(f'Unit {unit} is not currently supported.')
 
 
-def csv_reader(file_name: str, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
+def csv_reader(file_name: Path, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
     """
     Reads contents of csv file and returns a generator object containing dictionaries with point data.
 

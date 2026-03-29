@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_parameter import StrParameter
@@ -66,6 +67,16 @@ class StrStandardContourParameters(Collection):
         :return: StrParameter
         """
         return StrParameter(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> StrParameter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrParameter(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrParameter]:
+        for i in range(self.count):
+            yield StrParameter(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrStandardContourParameters(name="{self.name}")'

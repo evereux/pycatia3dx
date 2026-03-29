@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.knowledge_interfaces.parameter import Parameter
 from pycatia3dx.system.collection import Collection
@@ -65,6 +66,16 @@ class SsmParameters(Collection):
         :return: Parameter
         """
         return Parameter(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Parameter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Parameter(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Parameter]:
+        for i in range(self.count):
+            yield Parameter(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SsmParameters(name="{self.name}")'

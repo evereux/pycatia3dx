@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_olp_use.olp_choreography_event import OLPChoreographyEvent
@@ -83,6 +84,16 @@ class OLPChoreographyEvents(Collection):
         :return: OLPChoreographyEvent
         """
         return OLPChoreographyEvent(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> OLPChoreographyEvent:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPChoreographyEvent(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPChoreographyEvent]:
+        for i in range(self.count):
+            yield OLPChoreographyEvent(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPChoreographyEvents(name="{self.name}")'

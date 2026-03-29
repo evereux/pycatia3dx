@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.constraint import Constraint
 from pycatia3dx.mode.reference import Reference
@@ -270,6 +271,16 @@ class Constraints(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> Constraint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Constraint(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Constraint]:
+        for i in range(self.count):
+            yield Constraint(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Constraints(name="{self.name}")'

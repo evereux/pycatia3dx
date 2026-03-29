@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.interfaces.viewer import Viewer
 from pycatia3dx.system.collection import Collection
@@ -71,6 +72,16 @@ class Viewers(Collection):
         :return: Viewer
         """
         return Viewer(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Viewer:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Viewer(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Viewer]:
+        for i in range(self.count):
+            yield Viewer(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Viewers(name="{self.name}")'

@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
@@ -300,6 +301,16 @@ class OLPInstructions(Collection):
         :return: OLPInstruction
         """
         return OLPInstruction(self.com_object.Previous(i_relative_instruction.com_object))
+
+    def __getitem__(self, n: int) -> OLPInstruction:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPInstruction(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPInstruction]:
+        for i in range(self.count):
+            yield OLPInstruction(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPInstructions(name="{self.name}")'

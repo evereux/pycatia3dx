@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.agt.agt_fire_bridge import AGTFireBridge
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -72,5 +74,15 @@ class AGTFireBridges(Collection):
         """
         return AGTFireBridge(self.com_object.Item(i_index))
 
+    def __getitem__(self, n: int) -> AGTFireBridge:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AGTFireBridge(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AGTFireBridge]:
+        for i in range(self.count):
+            yield AGTFireBridge(self.com_object.Item(i + 1))
+
     def __repr__(self):
-        return f'AgtFireBridges(name="{self.name}")'
+        return f'AGTFireBridges(name="{self.name}")'

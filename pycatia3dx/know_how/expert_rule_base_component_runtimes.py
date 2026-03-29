@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.know_how.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
@@ -216,6 +217,16 @@ class ExpertRuleBaseComponentRuntimes(Collection):
         :return: None
         """
         return self.com_object.ShallowRemove(i_index)
+
+    def __getitem__(self, n: int) -> ExpertRuleBaseComponentRuntime:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return ExpertRuleBaseComponentRuntime(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[ExpertRuleBaseComponentRuntime]:
+        for i in range(self.count):
+            yield ExpertRuleBaseComponentRuntime(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'ExpertRuleBaseComponentRuntimes(name="{self.name}")'

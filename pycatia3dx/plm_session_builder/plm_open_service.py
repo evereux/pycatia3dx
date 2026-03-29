@@ -39,7 +39,7 @@ class PLMOpenService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def plm_open(self, i_plm_entity: PLMEntity) -> None:
+    def plm_open(self, i_plm_entity: PLMEntity) -> Editor:
         """
         .. note::
             :class: toggle
@@ -59,9 +59,11 @@ class PLMOpenService(Service):
                 |             The editor of the opened PLMEntity.
 
         :param PLMEntity i_plm_entity:
-        :return: None
+        :return: Editor
         """
-        return self.com_object.PLMOpen(i_plm_entity.com_object)
+        self.com_object.PLMOpen(i_plm_entity.com_object)
+
+        return Editor(self.application.active_editor.active_com_object)
 
     def plm_open_in_new_window(self, i_plm_entity: PLMEntity, o_editor: Editor) -> None:
         """

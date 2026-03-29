@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.behaviour.dpc_operation import DPCOperation
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -108,6 +110,16 @@ class DPCOperations(Collection):
         :return: DPCOperation
         """
         return DPCOperation(self.com_object.Operate(operation_name))
+
+    def __getitem__(self, n: int) -> DPCOperation:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DPCOperation(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[DPCOperation]:
+        for i in range(self.count):
+            yield DPCOperation(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'DpcOperations(name="{self.name}")'

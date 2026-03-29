@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -59,6 +61,16 @@ class PLMEntities(Collection):
         :return: PLMEntity
         """
         return PLMEntity(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> PLMEntity:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return PLMEntity(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[PLMEntity]:
+        for i in range(self.count):
+            yield PLMEntity(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'PlmEntities(name="{self.name}")'

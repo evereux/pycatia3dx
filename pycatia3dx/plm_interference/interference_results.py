@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.plm_interference.interference_result import InterferenceResult
@@ -57,6 +58,16 @@ class InterferenceResults(Collection):
         :return: InterferenceResult
         """
         return InterferenceResult(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> InterferenceResult:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return InterferenceResult(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[InterferenceResult]:
+        for i in range(self.count):
+            yield InterferenceResult(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'InterferenceResults(name="{self.name}")'

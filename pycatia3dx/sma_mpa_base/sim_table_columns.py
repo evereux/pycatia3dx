@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
@@ -78,6 +80,16 @@ class SimTableColumns(Collection):
         :return: SimTableColumn
         """
         return SimTableColumn(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SimTableColumn:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimTableColumn(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimTableColumn]:
+        for i in range(self.count):
+            yield SimTableColumn(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimTableColumns(name="{self.name}")'

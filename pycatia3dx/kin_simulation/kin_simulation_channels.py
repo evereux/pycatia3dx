@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.kin_simulation.kin_simulation_channel import KinSimulationChannel
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -57,6 +59,16 @@ class KinSimulationChannels(Collection):
         :return: KinSimulationChannel
         """
         return KinSimulationChannel(self.com_object.Item(i_channel_rank))
+
+    def __getitem__(self, n: int) -> KinSimulationChannel:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return KinSimulationChannel(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[KinSimulationChannel]:
+        for i in range(self.count):
+            yield KinSimulationChannel(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'KinSimulationChannels(name="{self.name}")'

@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.plm_validation.slide import Slide
@@ -132,6 +134,16 @@ class Slides(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> Slide:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Slide(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Slide]:
+        for i in range(self.count):
+            yield Slide(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Slides(name="{self.name}")'

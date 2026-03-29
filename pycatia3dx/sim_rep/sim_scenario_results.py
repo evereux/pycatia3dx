@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sim_rep.sim_scenario_result import SimScenarioResult
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -63,6 +65,16 @@ class SimScenarioResults(Collection):
         :return: SimScenarioResult
         """
         return SimScenarioResult(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SimScenarioResult:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimScenarioResult(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimScenarioResult]:
+        for i in range(self.count):
+            yield SimScenarioResult(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimScenarioResults(name="{self.name}")'

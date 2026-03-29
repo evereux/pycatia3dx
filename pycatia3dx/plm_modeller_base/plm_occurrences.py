@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.plm_modeller_base.plm_occurrence import PLMOccurrence
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -59,6 +61,16 @@ class PLMOccurrences(Collection):
         :return: PLMOccurrence
         """
         return PLMOccurrence(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> PLMOccurrence:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return PLMOccurrence(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[PLMOccurrence]:
+        for i in range(self.count):
+            yield PLMOccurrence(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'PlmOccurrences(name="{self.name}")'
