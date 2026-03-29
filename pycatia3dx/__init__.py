@@ -7,8 +7,6 @@
 """
 
 from pycatia3dx.annotation.enums import *
-from pycatia3dx.annotation.enums import *
-from pycatia3dx.base_interfaces.base_application import catia_application as catia3dx
 from pycatia3dx.composites_use.enums import *
 from pycatia3dx.del_curve_trajectory.enums import *
 from pycatia3dx.del_resource_builder.enums import *
@@ -52,6 +50,8 @@ from pycatia3dx.structure.enums import *
 from pycatia3dx.system.enums import *
 from pycatia3dx.tps.enums import *
 from pycatia3dx.version import version
+
+from pycatia3dx.base_interfaces.base_application import catia_application as catia3dx
 
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'
