@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatCameraType
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -38,7 +38,7 @@ class Camera(AnyObject):
         self.com_object = com_object
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatCameraType:
         """
         .. note::
             :class: toggle
@@ -58,7 +58,7 @@ class Camera(AnyObject):
                 | 
                 |         The value returned by the Type property in MyCameraType is catCamera3D
 
-        :return: int
+        :return: CatCameraType
         """
 
         return self.com_object.Type

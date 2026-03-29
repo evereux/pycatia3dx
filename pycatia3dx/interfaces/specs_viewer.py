@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatSpecsLayout
 from pycatia3dx.interfaces.viewer_2d import Viewer2D
 
 
@@ -42,7 +42,7 @@ class SpecsViewer(Viewer2D):
         self.com_object = com_object
 
     @property
-    def layout(self) -> int:
+    def layout(self) -> CatSpecsLayout:
         """
         .. note::
             :class: toggle

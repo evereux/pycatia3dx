@@ -1428,8 +1428,7 @@ class Selection(AnyObject):
                 |          Then, it asks the end user to select an edge of the pad, and creates
                 |          an edge fillet. The end user
                 |          is asked to select a 1-D entity whose geometry is rectilinear (see
-                |
-                |         CATSelectionFilter ), such as an edge of the Pad.
+                |          CATSelectionFilter ), such as an edge of the Pad.
                 |          Next, the end user should select a pad face which is perpendicular to
                 |          the 1-D entity previously selected. Finally, it
                 |          creates a hole at the face selected point, the hole direction being

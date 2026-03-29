@@ -9,6 +9,7 @@
 """
 from typing import Iterator
 
+from pycatia3dx import CatArrangeStyle
 from pycatia3dx.interfaces.window import Window
 from pycatia3dx.system.collection import Collection
 
@@ -36,7 +37,7 @@ class Windows(Collection):
         super().__init__(com_object, child_object=Window)
         self.com_object = com_object
 
-    def arrange(self, i_style: int) -> None:
+    def arrange(self, i_style: CatArrangeStyle) -> None:
         """
         .. note::
             :class: toggle

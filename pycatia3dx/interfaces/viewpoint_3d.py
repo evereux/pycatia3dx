@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatProjectionMode
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -109,7 +109,7 @@ class ViewPoint3D(AnyObject):
         self.com_object.FocusDistance = value
 
     @property
-    def projection_mode(self) -> int:
+    def projection_mode(self) -> CatProjectionMode:
         """
         .. note::
             :class: toggle
@@ -124,15 +124,15 @@ class ViewPoint3D(AnyObject):
                 | 
                 |          My3DViewer.Viewpoint3D.NavigationStyle = catProjectionConic
 
-        :return: int
+        :return: CatProjectionMode
         """
 
         return self.com_object.ProjectionMode
 
     @projection_mode.setter
-    def projection_mode(self, value: int):
+    def projection_mode(self, value: CatProjectionMode):
         """
-        :param int value:
+        :param CatProjectionMode value:
         """
 
         self.com_object.ProjectionMode = value

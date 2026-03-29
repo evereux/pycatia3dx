@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatCaptureFormat
 from pycatia3dx.interfaces.camera import Camera
 from pycatia3dx.system.any_object import AnyObject
 
@@ -148,7 +148,7 @@ class Viewer(AnyObject):
         """
         return self.com_object.Activate()
 
-    def capture_to_file(self, i_format: int, i_file: str) -> None:
+    def capture_to_file(self, i_format: CatCaptureFormat, i_file: str) -> None:
         """
         .. note::
             :class: toggle

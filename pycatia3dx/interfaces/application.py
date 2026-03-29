@@ -9,6 +9,7 @@
 """
 from typing import TYPE_CHECKING
 
+from pycatia3dx import CatScriptCommand
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
@@ -655,7 +656,7 @@ class Application(AnyObject):
         self.com_object.RefreshDisplay = value
 
     @property
-    def script_command(self) -> int:
+    def script_command(self) -> CatScriptCommand:
         """
         .. note::
             :class: toggle
@@ -855,15 +856,15 @@ class Application(AnyObject):
                 |     Different uses of this property might cause the CATIA frame to freeze,
                 |     until the Escape key is pressed.
 
-        :return: int
+        :return: CatScriptCommand
         """
 
         return self.com_object.ScriptCommand
 
     @script_command.setter
-    def script_command(self, value: int):
+    def script_command(self, value: CatScriptCommand):
         """
-        :param int value:
+        :param CatScriptCommand value:
         """
 
         self.com_object.ScriptCommand = value

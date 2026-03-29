@@ -13,7 +13,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.selection import Selection
-    from pycatia3dx.interfaces.service import Service
     from pycatia3dx.types import EditorService, editor_service_types
 
 

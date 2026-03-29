@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatVisPropertyType, CatVisLayerType, CatVisPropertyStatus, CatVisPropertyPick, CatVisPropertyShow
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -119,7 +119,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_layer(self, o_layer_type: int, o_layer_value: int) -> int:
+    def get_layer(self, o_layer_type: CatVisLayerType, o_layer_value: int) -> int:
         """
         .. note::
             :class: toggle
@@ -162,13 +162,13 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        :param int o_layer_type:
+        :param CatVisLayerType o_layer_type:
         :param int o_layer_value:
         :return: int
         """
         return self.com_object.GetLayer(o_layer_type, o_layer_value)
 
-    def get_pick(self, o_pick: int) -> int:
+    def get_pick(self, o_pick: CatVisPropertyPick) -> CatVisPropertyStatus:
         """
         .. note::
             :class: toggle
@@ -189,8 +189,8 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-        :param int o_pick:
-        :return: int
+        :param CatVisPropertyPick o_pick:
+        :return: CatVisPropertyStatus
         """
         return self.com_object.GetPick(o_pick)
 
@@ -244,7 +244,7 @@ class VisPropertySet(AnyObject):
         """
         return self.com_object.GetRealColor(o_red, o_green, o_blue)
 
-    def get_real_inheritance(self, i_property_type: int, o_inheritance: int) -> int:
+    def get_real_inheritance(self, i_property_type: CatVisPropertyType, o_inheritance: int) -> int:
         """
         .. note::
             :class: toggle
@@ -440,7 +440,7 @@ class VisPropertySet(AnyObject):
         """
         return self.com_object.GetRealWidth(o_line_width)
 
-    def get_show(self, o_show: int) -> int:
+    def get_show(self, o_show: CatVisPropertyShow) -> int:
         """
         .. note::
             :class: toggle
@@ -755,7 +755,7 @@ class VisPropertySet(AnyObject):
         """
         return self.com_object.ResetProperty(i_property_type)
 
-    def set_layer(self, i_layer_type: int, i_layer_value: int) -> None:
+    def set_layer(self, i_layer_type: CatVisLayerType, i_layer_value: int) -> None:
         """
         .. note::
             :class: toggle
@@ -783,7 +783,7 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetLayer catVisLayerBasic, 100
 
-        :param int i_layer_type:
+        :param CatVisLayerType i_layer_type:
         :param int i_layer_value:
         :return: None
         """
@@ -971,7 +971,7 @@ class VisPropertySet(AnyObject):
         """
         return self.com_object.SetRealWidth(i_line_width, i_inheritance)
 
-    def set_show(self, i_show: int) -> None:
+    def set_show(self, i_show: CatVisPropertyShow) -> None:
         """
         .. note::
             :class: toggle

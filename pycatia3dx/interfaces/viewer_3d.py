@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatClippingMode, CatLightingMode, CatNavigationStyle, CatRenderingMode
 from pycatia3dx.interfaces.light_sources import LightSources
 from pycatia3dx.interfaces.viewer import Viewer
 from pycatia3dx.interfaces.viewpoint_3d import ViewPoint3D
@@ -44,7 +44,7 @@ class Viewer3D(Viewer):
         self.com_object = com_object
 
     @property
-    def clipping_mode(self) -> int:
+    def clipping_mode(self) -> CatClippingMode:
         """
         .. note::
             :class: toggle
@@ -59,15 +59,15 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.ClippingMode = catClippingModeNearAndFar
 
-        :return: int
+        :return: CatClippingMode
         """
 
         return self.com_object.ClippingMode
 
     @clipping_mode.setter
-    def clipping_mode(self, value: int):
+    def clipping_mode(self, value: CatClippingMode):
         """
-        :param int value:
+        :param CatClippingMode value:
         """
 
         self.com_object.ClippingMode = value
@@ -216,7 +216,7 @@ class Viewer3D(Viewer):
         self.com_object.LightingIntensity = value
 
     @property
-    def lighting_mode(self) -> int:
+    def lighting_mode(self) -> CatLightingMode:
         """
         .. note::
             :class: toggle
@@ -231,21 +231,21 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingMode = catInfiniteLightSource
 
-        :return: int
+        :return: CatLightingMode
         """
 
         return self.com_object.LightingMode
 
     @lighting_mode.setter
-    def lighting_mode(self, value: int):
+    def lighting_mode(self, value: CatLightingMode):
         """
-        :param int value:
+        :param CatLightingMode value:
         """
 
         self.com_object.LightingMode = value
 
     @property
-    def navigation_style(self) -> int:
+    def navigation_style(self) -> CatNavigationStyle:
         """
         .. note::
             :class: toggle
@@ -260,15 +260,15 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NavigationStyle = catNavigationWalk
 
-        :return: int
+        :return: CatNavigationStyle
         """
 
         return self.com_object.NavigationStyle
 
     @navigation_style.setter
-    def navigation_style(self, value: int):
+    def navigation_style(self, value: CatNavigationStyle):
         """
-        :param int value:
+        :param CatNavigationStyle value:
         """
 
         self.com_object.NavigationStyle = value
@@ -307,7 +307,7 @@ class Viewer3D(Viewer):
         self.com_object.NearLimit = value
 
     @property
-    def rendering_mode(self) -> int:
+    def rendering_mode(self) -> CatRenderingMode:
         """
         .. note::
             :class: toggle
@@ -322,15 +322,15 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.RenderingMode = catRenderShadingWithEdges
 
-        :return: int
+        :return: CatRenderingMode
         """
 
-        return int(self.com_object.RenderingMode)
+        return self.com_object.RenderingMode
 
     @rendering_mode.setter
-    def rendering_mode(self, value: int):
+    def rendering_mode(self, value: CatRenderingMode):
         """
-        :param int value:
+        :param CatRenderingMode value:
         """
 
         self.com_object.RenderingMode = value
