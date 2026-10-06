@@ -90,7 +90,7 @@ class Curve2D(Geometry2D):
         :param Point2D value:
         """
 
-        self.com_object.EndPoint = value
+        self.com_object.EndPoint = value.com_object
 
     @property
     def period(self) -> float:
@@ -146,7 +146,7 @@ class Curve2D(Geometry2D):
         :param Point2D value:
         """
 
-        self.com_object.StartPoint = value
+        self.com_object.StartPoint = value.com_object
 
     def get_curvature(self, i_param: float, o_curvature: tuple) -> None:
         """

@@ -127,7 +127,7 @@ class Constraints(Collection):
         :param int i_second_elem:
         :return: Constraint
         """
-        return Constraint(self.com_object.AddBiEltCst(i_cst_type, i_first_elem, i_second_elem.com_object))
+        return Constraint(self.com_object.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
 
     def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
         """
