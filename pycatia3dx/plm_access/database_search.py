@@ -111,6 +111,7 @@ class DatabaseSearch(AnyObject):
                 |         E_INVALIDARGCould not find the model type corresponding to the input
                 |         type
 
+
         :return: None
         """
 
@@ -119,7 +120,7 @@ class DatabaseSearch(AnyObject):
     @base_type.setter
     def base_type(self, value: str):
         """
-        :param str value:
+        :param str value: common types "VPMReference" (Physical Product), "3DShape" (Part), "Drawing", "Document" (Excel/Text)
         """
 
         self.com_object.BaseType = value
