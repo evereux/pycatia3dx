@@ -24,8 +24,7 @@ from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.body import Body
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-# com3dx=False is required only if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 # if the active document is a CATPart this will return a PartDocument
 active_editor = application.active_editor
 part = Part(active_editor.active_com_object)

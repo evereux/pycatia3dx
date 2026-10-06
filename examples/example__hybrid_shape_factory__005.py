@@ -28,8 +28,7 @@ from pycatia3dx.mmr_automation_interfaces.part import Part
 geometrical_set = "ConstructionGeometry"
 surface_name = "Surface.1"
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 editor = application.active_editor
 
 part = Part(editor.active_com_object)

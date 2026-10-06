@@ -3,7 +3,7 @@
 
     Description:
 
-        Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
+        Sequentially rename all points in geometric set (Hybrid Body) Points in the geometric set MasterGeometry.
 
     Requirements:
 
@@ -25,8 +25,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-# com3dx=False is required only if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 editor = application.active_editor
 # if the active document is a CATPart this will return a PartDocument
 part = Part(editor.active_com_object)

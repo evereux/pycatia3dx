@@ -73,7 +73,7 @@ def _import_com3dx_module() -> ModuleType:
     return com3dx
 
 
-def catia_application(com3dx: bool=True) -> Application:
+def catia_application(com3dx: bool = True) -> Application:
     """
     Connects to the active 3DEXPERIENCE session and returns a pycatia3dx
     Application object.
@@ -94,8 +94,8 @@ def catia_application(com3dx: bool=True) -> Application:
     :param bool com3dx:
     :return: Application
     """
-
-    if com3dx:
-        return Application(_import_com3dx_module().get3dxClient())
-    else:
-        return Application(Dispatch('CATIA.Application'))
+    #
+    # if com3dx:
+    #     return Application(_import_com3dx_module().get3dxClient())
+    # else:
+    return Application(Dispatch('CATIA.Application'))

@@ -25,9 +25,7 @@ from pycatia3dx.types.service import InertiaService
 
 __author__ = '[ptm] by plm-forum.ru | ported to pycatia3dx by HdCadUser'
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
-# if the active document is a CATPart this will return a PartDocument
+application = catia3dx()
 
 part = Part(application.active_editor.active_object.com_object)
 part.update()

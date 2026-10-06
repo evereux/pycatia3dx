@@ -30,4 +30,5 @@ plm_service: PLMNewService = application.get_session_service('PLMNewService')
 plm_service.plm_create('3DShape', application.active_editor)
 
 editor = application.active_editor
+
 part = Part(editor.active_com_object)

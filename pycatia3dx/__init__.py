@@ -58,6 +58,6 @@ __author_email = 'evereux@gmail.com'
 __description__ = 'A python module to interface with the CATIA 3DX COM object.'
 __name__ = "pycatia3dx"
 __version__ = version
-__url__ = "https://github.com/evereux/pycatia"
+__url__ = "https://github.com/evereux/pycatia3dx"
 
 name = __name__

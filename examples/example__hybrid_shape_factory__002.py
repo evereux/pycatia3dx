@@ -27,13 +27,11 @@ from pycatia3dx.scripts.csv_tools import create_points
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 
 plm_service: PLMNewService = application.get_session_service('PLMNewService')
-plm_service.plm_create('3DShape', application.active_editor)
+editor = plm_service.plm_create('3DShape')
 
-editor = application.active_editor
 part = Part(editor.active_com_object)
 
 # full path name to csv file.

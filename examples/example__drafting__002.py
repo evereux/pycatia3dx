@@ -25,8 +25,7 @@ from pycatia3dx import CatDimLineRep
 
 from pycatia3dx.drafting.drawing_root import DrawingRoot
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 editor = application.active_editor
 drawing_root = DrawingRoot(editor.active_com_object)
 

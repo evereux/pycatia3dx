@@ -35,11 +35,10 @@ from pycatia3dx.system.any_object import AnyObject
 a0_x = 1189
 a0_y = 841
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 plm_service = application.get_session_service("PLMNewService")
-editor = application.active_editor
-plm_service.plm_create('Drawing', editor)
+
+editor = plm_service.plm_create('Drawing')
 
 drawing_root = DrawingRoot(editor.active_com_object)
 

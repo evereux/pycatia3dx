@@ -32,8 +32,7 @@ from pycatia3dx.hybrid_shapes.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
 from pycatia3dx.hybrid_shapes.hybrid_shape_point_coord import HybridShapePointCoord
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-# com3dx=False is required if com3dx.py cannot be found in your system.
-application = catia3dx(com3dx=False)
+application = catia3dx()
 editor = application.active_editor
 
 part = Part(editor.active_com_object)
