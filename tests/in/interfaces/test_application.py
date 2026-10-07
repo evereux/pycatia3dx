@@ -1,12 +1,11 @@
 import pytest
 
-from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printers import Printers
 from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
-from tests.conftest import test_app, close_all
+from tests.conftest import test_app
 from tests.test_part_parameters import TEST_CATPART_ONE
 
 

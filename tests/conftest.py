@@ -72,7 +72,9 @@ def file_open(file_name: str, base_type: str):
 def file_open_test_close_all(file_name: str, base_type: str):
     open_plm_entity(file_name, base_type)
     yield
+    test_app.display_file_alerts = False
     close_all()
+    test_app.display_file_alerts = True
 
 
 # typically used for the first test within a module

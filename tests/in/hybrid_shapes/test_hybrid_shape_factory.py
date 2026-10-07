@@ -1,682 +1,719 @@
-# import pytest
+import pytest
+
+from pycatia3dx.mmr_automation_interfaces.part import Part
+from tests.conftest import test_app
+from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_points, geom_set_lines, geom_set_arcs
+
 
 # def test_add_new_3d_corner():
 
-    # pass
+# pass
 
 
 # def test_add_new_3d_curve_offset():
 
-    # pass
+# pass
 
 
 # def test_add_new_affinity():
 
-    # pass
+# pass
 
 
 # def test_add_new_axis_line():
 
-    # pass
+# pass
 
 
 # def test_add_new_axis_to_axis():
 
-    # pass
+# pass
 
 
 # def test_add_new_blend():
 
-    # pass
+# pass
 
 
 # def test_add_new_boundary():
 
-    # pass
+# pass
 
 
 # def test_add_new_boundary_of_surface():
 
-    # pass
+# pass
 
 
 # def test_add_new_bump():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle2_points_rad():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle3_points():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_bitangent_point():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_bitangent_radius():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_center_axis():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_center_axis_with_angles():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_center_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_ctr_pt():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_ctr_pt_with_angles():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_ctr_rad():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_ctr_rad_with_angles():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_circle_tritangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_combine():
 
-    # pass
+# pass
 
 
 # def test_add_new_conic():
 
-    # pass
+# pass
 
 
 # def test_add_new_conical_reflect_line_with_type():
 
-    # pass
+# pass
 
 
 # def test_add_new_connect():
 
-    # pass
+# pass
 
 
 # def test_add_new_corner():
 
-    # pass
+# pass
 
 
 # def test_add_new_curve_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_curve_par():
 
-    # pass
+# pass
 
 
 # def test_add_new_curve_smooth():
 
-    # pass
+# pass
 
 
 # def test_add_new_cylinder():
 
-    # pass
+# pass
 
 
 # def test_add_new_datums():
 
-    # pass
+# pass
 
 
 # def test_add_new_develop():
 
-    # pass
+# pass
 
 
 # def test_add_new_direction():
 
-    # pass
+# pass
 
 
 # def test_add_new_direction_by_coord():
 
-    # pass
+# pass
 
 
 # def test_add_new_disconnect():
 
-    # pass
+# pass
 
 
 # def test_add_new_empty_rotate():
 
-    # pass
+# pass
 
 
 # def test_add_new_empty_translate():
 
-    # pass
+# pass
 
 
 # def test_add_new_extract():
 
-    # pass
+# pass
 
 
 # def test_add_new_extract_multi():
 
-    # pass
+# pass
 
 
 # def test_add_new_extrapol_length():
 
-    # pass
+# pass
 
 
 # def test_add_new_extrapol_until():
 
-    # pass
+# pass
 
 
 # def test_add_new_extremum():
 
-    # pass
+# pass
 
 
 # def test_add_new_extremum_polar():
 
-    # pass
+# pass
 
 
 # def test_add_new_extrude():
 
-    # pass
+# pass
 
 
 # def test_add_new_fill():
 
-    # pass
+# pass
 
 
 # def test_add_new_fillet_bi_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_fillet_tri_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_healing():
 
-    # pass
+# pass
 
 
 # def test_add_new_helix():
 
-    # pass
+# pass
 
 
 # def test_add_new_hybrid_scaling():
 
-    # pass
+# pass
 
 
 # def test_add_new_hybrid_split():
 
-    # pass
+# pass
 
 
 # def test_add_new_hybrid_trim():
 
-    # pass
+# pass
 
 
 # def test_add_new_integrated_law():
 
-    # pass
+# pass
 
 
 # def test_add_new_intersection():
 
-    # pass
+# pass
 
 
 # def test_add_new_inverse():
 
-    # pass
+# pass
 
 
 # def test_add_new_join():
 
-    # pass
+# pass
 
 
 # def test_add_new_law_dist_proj():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_angle():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_bi_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_bisecting():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_bisecting_on_support():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_bisecting_on_support_with_point():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_bisecting_with_point():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_normal():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_dir():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_dir_on_support():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_pt():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_pt_extended():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_pt_on_support():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_pt_pt_on_support_extended():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_tangency():
 
-    # pass
+# pass
 
 
 # def test_add_new_line_tangency_on_support():
 
-    # pass
+# pass
 
 
 # def test_add_new_loft():
 
-    # pass
+# pass
 
 
 # def test_add_new_mid_surface():
 
-    # pass
+# pass
 
 
 # def test_add_new_mid_surface_with_auto_threshold():
 
-    # pass
+# pass
 
 
 # def test_add_new_near():
 
-    # pass
+# pass
 
 
 # def test_add_new_offset():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane1_curve():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane1_line1_pt():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane2_lines():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane3_points():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_angle():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_between():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_equation():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_mean():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_normal():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_offset():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_offset_pt():
 
-    # pass
+# pass
 
 
 # def test_add_new_plane_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_between():
 
-    # pass
+# pass
+
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test_add_new_point_center(file_open):
+    editor = test_app.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+    hb_geom_set_arcs = part.hybrid_bodies.item(geom_set_arcs)
+    arc = hb_geom_set_arcs.hybrid_shapes.item(1)
+    ref_arc = part.create_reference_from_object(arc)
+    point = hsf.add_new_point_center(ref_arc)
+    hb_geom_set_points.append_hybrid_shape(point)
+    part.update()
+    assert point.get_coordinates() == (0, 100, 0)
 
 
-# def test_add_new_point_center():
-
-    # pass
-
-
-# def test_add_new_point_coord():
-
-    # pass
-
-
-# def test_add_new_point_coord_with_reference():
-
-    # pass
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test_add_new_point_coord(file_open):
+    editor = test_app.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+    point = hsf.add_new_point_coord(100, 100, 100)
+    hb_geom_set_points.append_hybrid_shape(point)
+    part.update()
+    assert point.get_coordinates() == (100, 100, 100)
 
 
-# def test_add_new_point_datum():
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test_add_new_point_coord_with_reference(file_open):
+    editor = test_app.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+    point_source = hb_geom_set_points.hybrid_shapes.item(2)
+    ref_point = part.create_reference_from_object(point_source)
+    point = hsf.add_new_point_coord_with_reference(100, 100, 100, ref_point)
+    hb_geom_set_points.append_hybrid_shape(point)
+    part.update()
+    assert point.get_coordinates() == (200.0, 100.0, 100.0)
 
-    # pass
 
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test_add_new_point_datum(file_open_test_close_all):
+    editor = test_app.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb = part.hybrid_bodies.item(geom_set_points)
+    point = hb.hybrid_shapes.item(1)
+    ref_point = part.create_reference_from_object(point)
+    new_point = hsf.add_new_point_datum(ref_point)
+    hb.append_hybrid_shape(new_point)
+    part.update()
+
+    assert new_point.get_coordinates() == (0, 0, 0)
 
 # def test_add_new_point_on_curve_along_direction():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_curve_from_distance():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_curve_from_percent():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_curve_with_reference_along_direction():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_curve_with_reference_from_distance():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_curve_with_reference_from_percent():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_plane():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_plane_with_reference():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_surface():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_on_surface_with_reference():
 
-    # pass
+# pass
 
 
 # def test_add_new_point_tangent():
 
-    # pass
+# pass
 
 
 # def test_add_new_polyline():
 
-    # pass
+# pass
 
 
 # def test_add_new_position_transform():
 
-    # pass
+# pass
 
 
 # def test_add_new_project():
 
-    # pass
+# pass
 
 
 # def test_add_new_reflect_line():
 
-    # pass
+# pass
 
 
 # def test_add_new_reflect_line_with_type():
 
-    # pass
+# pass
 
 
 # def test_add_new_revol():
 
-    # pass
+# pass
 
 
 # def test_add_new_rotate():
 
-    # pass
+# pass
 
 
 # def test_add_new_section():
 
-    # pass
+# pass
 
 
 # def test_add_new_sphere():
 
-    # pass
+# pass
 
 
 # def test_add_new_spine():
 
-    # pass
+# pass
 
 
 # def test_add_new_spiral():
 
-    # pass
+# pass
 
 
 # def test_add_new_spline():
 
-    # pass
+# pass
 
 
 # def test_add_new_surface_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_sweep_circle():
 
-    # pass
+# pass
 
 
 # def test_add_new_sweep_conic():
 
-    # pass
+# pass
 
 
 # def test_add_new_sweep_explicit():
 
-    # pass
+# pass
 
 
 # def test_add_new_sweep_line():
 
-    # pass
+# pass
 
 
 # def test_add_new_symmetry():
 
-    # pass
+# pass
 
 
 # def test_add_new_transfer():
 
-    # pass
+# pass
 
 
 # def test_add_new_translate():
 
-    # pass
+# pass
 
 
 # def test_add_new_unfold():
 
-    # pass
+# pass
 
 
 # def test_add_new_volume_datum():
 
-    # pass
+# pass
 
 
 # def test_add_new_wrap_curve():
 
-    # pass
+# pass
 
 
 # def test_add_new_wrap_surface():
 
-    # pass
+# pass
 
 
 # def test_change_feature_name():
 
-    # pass
+# pass
 
 
 # def test_delete_object_for_datum():
 
-    # pass
+# pass
 
 
 # def test_gsm_visibility():
 
-    # pass
+# pass
 
 
 # def test_get_geometrical_feature_type():
 
-    # pass
-
-
+# pass
