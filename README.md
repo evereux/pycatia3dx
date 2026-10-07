@@ -6,11 +6,8 @@ alpha software
 
 This is alpha software.
 
-There are some fundamental issues regarding file creation, name changing and
-thus saving a document within the PLM side of things I haven't yet resolved.
-This basic usage requirement is preventing the creation of a pypi package and
-basic test framework. Help would be greatly appreciated here as other work
-is taking priority at the moment.
+Please report any issues with using the package on github providing a stripped
+down script.
 
 Requirements
 ------------
@@ -55,5 +52,36 @@ Contributing
 ------------
 
 See CONTRIBUTING.md in root of github repository.
+
+Running The Tests
+-----------------
+
+Prior to running you will need to create the test files. This script will also
+check that you have all the test files created and they are the latest version
+so it's worth running each time you upgrade pycatia3dx
+
+.. code-block:: python
+
+    python .\tests\check_test_files.py
+
+CATIA 3DExperience shall already be running and all documents are closed. If
+this isn't the case the tests will not run and you'll be presented with a
+warning.
+
+To run the tests with coverage (-v is verbosity):
+
+.. code-block:: python
+
+    py.test -v --cov-report term-missing --cov=pycatia3dx
+
+To run tests for a specific module
+
+.. code-block:: python
+
+    py.test -v tests/in/hybrid_shapes/test_hybrid_shape_factory.py
+
+To stop tests running after first failure.
+
+    py.test -vx
 
 
