@@ -1,0 +1,2 @@
+TEST_CATPART_ONE = "pycatia3DX - Test - Part One"
+TEST_CATPART_ONE_DESCRIPTION = "1.0"
