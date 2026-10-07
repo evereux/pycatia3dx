@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.boundary import Boundary
 from pycatia3dx.mmr_automation_interfaces.shape import Shape
@@ -95,6 +96,16 @@ class Shapes(Collection):
         :return: Shape
         """
         return Shape(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Shape:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Shape(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Shape]:
+        for i in range(self.count):
+            yield Shape(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Shapes(name="{self.name}")'

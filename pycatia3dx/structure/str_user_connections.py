@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_user_connection import StrUserConnection
@@ -123,6 +124,16 @@ class StrUserConnections(Collection):
         :return: None
         """
         return self.com_object.Remove(i_user_connection.com_object)
+
+    def __getitem__(self, n: int) -> StrUserConnection:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrUserConnection(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrUserConnection]:
+        for i in range(self.count):
+            yield StrUserConnection(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrUserConnections(name="{self.name}")'

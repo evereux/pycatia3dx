@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.del_resource_builder.rsc_applicative_profile import RscApplicativeProfile
@@ -263,6 +264,16 @@ class RscApplicativeProfilesGroup(Collection):
         :return: None
         """
         return self.com_object.RemoveProfile(i_name)
+
+    def __getitem__(self, n: int) -> RscApplicativeProfile:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return RscApplicativeProfile(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[RscApplicativeProfile]:
+        for i in range(self.count):
+            yield RscApplicativeProfile(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'RscApplicativeProfilesGroup(name="{self.name}")'

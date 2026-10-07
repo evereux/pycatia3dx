@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.del_spot_welding_as_is.spot_weld_profile import SpotWeldProfile
@@ -153,6 +154,16 @@ class SpotWeldProfiles(Collection):
         :return: None
         """
         return self.com_object.RemoveAll()
+
+    def __getitem__(self, n: int) -> SpotWeldProfile:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SpotWeldProfile(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SpotWeldProfile]:
+        for i in range(self.count):
+            yield SpotWeldProfile(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SpotWeldProfiles(name="{self.name}")'

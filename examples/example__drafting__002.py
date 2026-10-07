@@ -26,7 +26,9 @@ from pycatia3dx import CatDimLineRep
 from pycatia3dx.drafting.drawing_root import DrawingRoot
 
 application = catia3dx()
-drawing_root: DrawingRoot = DrawingRoot(application.active_editor.active_object.com_object)
+editor = application.active_editor
+drawing_root = DrawingRoot(editor.active_com_object)
+
 sheets = drawing_root.sheets
 sheet = drawing_root.active_sheet
 views = sheet.views

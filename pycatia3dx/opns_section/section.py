@@ -7,12 +7,15 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
-from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.measure.measures import Measures
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.plm_validation.markers import Markers
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.interfaces.editor import Editor
 
 
 class Section(AnyObject):

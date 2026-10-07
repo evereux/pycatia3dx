@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.os.file import File
 from pycatia3dx.system.collection import Collection
@@ -70,6 +71,16 @@ class Files(Collection):
         :return: File
         """
         return File(self.com_object.Item(i_number))
+
+    def __getitem__(self, n: int) -> File:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return File(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[File]:
+        for i in range(self.count):
+            yield File(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Files(name="{self.name}")'

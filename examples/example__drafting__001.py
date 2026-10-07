@@ -21,12 +21,9 @@ sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 
 from pycatia3dx import catia3dx
 
-
-
 from pycatia3dx import CatPaperOrientation
 from pycatia3dx import CatPaperSize
 from pycatia3dx import CatTextAnchorPosition
-from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.drafting.drawing_root import DrawingRoot
 from pycatia3dx.drafting.drawing_view import DrawingView
 from pycatia3dx.annotation.drawing_text import DrawingText
@@ -39,12 +36,14 @@ a0_x = 1189
 a0_y = 841
 
 application = catia3dx()
-# if the active document is a CATDrawing this will return a DrawingDocument
-active_editor: Editor = application.active_editor
-drawing = DrawingRoot(active_editor.active_object.com_object)
+plm_service = application.get_session_service("PLMNewService")
 
-sheets = drawing.sheets
-sheet = drawing.active_sheet
+editor = plm_service.plm_create('Drawing')
+
+drawing_root = DrawingRoot(editor.active_com_object)
+
+sheets = drawing_root.sheets
+sheet = drawing_root.active_sheet
 
 if CatPaperOrientation(sheet.orientation) != CatPaperOrientation.catPaperLandscape:
     raise CATIAApplicationException("Sheet orientation is not landscape.")

@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.drafting.drawing_thread import DrawingThread
 from pycatia3dx.system.any_object import AnyObject
@@ -143,6 +144,16 @@ class DrawingThreads(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> DrawingThread:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingThread(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[DrawingThread]:
+        for i in range(self.count):
+            yield DrawingThread(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'DrawingThreads(name="{self.name}")'

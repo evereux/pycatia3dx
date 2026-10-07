@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sma_mpa_foundation.sim_local_element_type_assignment import SimLocalElementTypeAssignment
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
@@ -126,6 +128,16 @@ class SimLocalElementTypeAssignments(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> SimLocalElementTypeAssignment:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimLocalElementTypeAssignment(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimLocalElementTypeAssignment]:
+        for i in range(self.count):
+            yield SimLocalElementTypeAssignment(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimLocalElementTypeAssignments(name="{self.name}")'

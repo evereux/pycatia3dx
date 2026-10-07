@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_olp_use.olp_motion_group import OLPMotionGroup
@@ -62,6 +63,16 @@ class OLPMotionGroups(Collection):
         :return: OLPMotionGroup
         """
         return OLPMotionGroup(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> OLPMotionGroup:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPMotionGroup(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPMotionGroup]:
+        for i in range(self.count):
+            yield OLPMotionGroup(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPMotionGroups(name="{self.name}")'

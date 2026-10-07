@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.interfaces.camera import Camera
 from pycatia3dx.system.collection import Collection
@@ -128,6 +129,16 @@ class Cameras(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> Camera:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Camera(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Camera]:
+        for i in range(self.count):
+            yield Camera(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Cameras(name="{self.name}")'

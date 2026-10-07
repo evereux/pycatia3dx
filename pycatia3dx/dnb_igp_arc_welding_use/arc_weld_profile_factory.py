@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_arc_welding_use.arc_weld_profile import ArcWeldProfile
@@ -147,6 +148,16 @@ class ArcWeldProfileFactory(Collection):
         :return: None
         """
         return self.com_object.RemoveProfile(o_profile.com_object)
+
+    def __getitem__(self, n: int) -> ArcWeldProfile:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return ArcWeldProfile(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[ArcWeldProfile]:
+        for i in range(self.count):
+            yield ArcWeldProfile(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'ArcWeldProfileFactory(name="{self.name}")'

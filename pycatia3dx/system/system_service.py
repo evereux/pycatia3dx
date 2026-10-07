@@ -60,8 +60,13 @@ class SystemService(AnyObject):
         """
         return self.com_object.Environ(i_env_string)
 
-    def evaluate(self, i_script_text: str, i_language: int, i_function_name: str,
-                 i_parameters: tuple) -> CATVariant:
+    def evaluate(
+            self,
+            i_script_text: str,
+            i_language: int,
+            i_function_name: str,
+            i_parameters: list
+    ) -> CATVariant:
         """
         .. note::
             :class: toggle

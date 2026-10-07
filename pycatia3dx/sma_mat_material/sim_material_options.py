@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sma_mat_material.sim_material_option import SimMaterialOption
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
@@ -134,6 +136,16 @@ class SimMaterialOptions(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> SimMaterialOption:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimMaterialOption(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimMaterialOption]:
+        for i in range(self.count):
+            yield SimMaterialOption(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimMaterialOptions(name="{self.name}")'

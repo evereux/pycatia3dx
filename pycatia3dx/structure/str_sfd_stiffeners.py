@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_sfd_stiffener import StrSfdStiffener
@@ -142,6 +143,16 @@ class StrSfdStiffeners(Collection):
         :return: None
         """
         return self.com_object.Remove(i_stiffener.com_object)
+
+    def __getitem__(self, n: int) -> StrSfdStiffener:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrSfdStiffener(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrSfdStiffener]:
+        for i in range(self.count):
+            yield StrSfdStiffener(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrSfdStiffeners(name="{self.name}")'

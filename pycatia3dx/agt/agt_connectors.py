@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.agt.agt_connector import AGTConnector
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -74,5 +76,15 @@ class AGTConnectors(Collection):
         """
         return AGTConnector(self.com_object.Item(i_index))
 
+    def __getitem__(self, n: int) -> AGTConnector:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AGTConnector(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AGTConnector]:
+        for i in range(self.count):
+            yield AGTConnector(self.com_object.Item(i + 1))
+
     def __repr__(self):
-        return f'AgtConnectors(name="{self.name}")'
+        return f'AGTConnectors(name="{self.name}")'

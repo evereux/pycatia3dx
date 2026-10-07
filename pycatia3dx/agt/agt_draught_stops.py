@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.agt.agt_draught_stop import AGTDraughtStop
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -73,5 +75,15 @@ class AGTDraughtStops(Collection):
         """
         return AGTDraughtStop(self.com_object.Item(i_index))
 
+    def __getitem__(self, n: int) -> AGTDraughtStop:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AGTDraughtStop(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AGTDraughtStop]:
+        for i in range(self.count):
+            yield AGTDraughtStop(self.com_object.Item(i + 1))
+
     def __repr__(self):
-        return f'AgtDraughtStops(name="{self.name}")'
+        return f'AGTDraughtStops(name="{self.name}")'

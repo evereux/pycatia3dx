@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sim_rep.sim_excitation import SimExcitation
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -121,6 +123,16 @@ class SimExcitations(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> SimExcitation:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimExcitation(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimExcitation]:
+        for i in range(self.count):
+            yield SimExcitation(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimExcitations(name="{self.name}")'

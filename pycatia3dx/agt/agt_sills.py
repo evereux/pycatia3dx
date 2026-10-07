@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.agt.agt_sill import AGTSill
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -69,5 +71,15 @@ class AGTSills(Collection):
         """
         return AGTSill(self.com_object.Item(i_index))
 
+    def __getitem__(self, n: int) -> AGTSill:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AGTSill(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AGTSill]:
+        for i in range(self.count):
+            yield AGTSill(self.com_object.Item(i + 1))
+
     def __repr__(self):
-        return f'AgtSills(name="{self.name}")'
+        return f'AGTSills(name="{self.name}")'

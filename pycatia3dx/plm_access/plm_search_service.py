@@ -12,7 +12,6 @@ from pycatia3dx.plm_access.plm_searches import PLMSearches
 
 
 class PLMSearchService(Service):
-
     """
         .. note::
             :class: toggle
@@ -61,4 +60,4 @@ class PLMSearchService(Service):
         return PLMSearches(self.com_object.Searches)
 
     def __repr__(self):
-        return f'PlmSearchService(name="{ self.name }")'
+        return f'PLMSearchService(name="{self.name}")'

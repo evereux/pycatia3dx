@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.knowledge_interfaces.check import Check
 from pycatia3dx.knowledge_interfaces.design_table import DesignTable
@@ -551,6 +552,16 @@ class Relations(Collection):
         :return: Relations
         """
         return Relations(self.com_object.SubList(i_feature.com_object, i_recursively))
+
+    def __getitem__(self, n: int) -> Relation:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Relation(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Relation]:
+        for i in range(self.count):
+            yield Relation(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Relations(name="{self.name}")'

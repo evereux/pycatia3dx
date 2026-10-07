@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_collar import StrCollar
@@ -122,6 +123,16 @@ class StrCollars(Collection):
         :return: None
         """
         return self.com_object.Remove(i_collar.com_object)
+
+    def __getitem__(self, n: int) -> StrCollar:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrCollar(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrCollar]:
+        for i in range(self.count):
+            yield StrCollar(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrCollars(name="{self.name}")'

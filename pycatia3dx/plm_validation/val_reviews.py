@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.plm_validation.val_review import VALReview
@@ -127,6 +129,16 @@ class VALReviews(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> VALReview:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return VALReview(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[VALReview]:
+        for i in range(self.count):
+            yield VALReview(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'ValReviews(name="{self.name}")'

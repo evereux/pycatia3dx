@@ -13,8 +13,7 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 from pycatia3dx.sim_plm.simulation_reference import SimulationReference
 
 
-class SimPLMService(Service):
-
+class SIMPLMService(Service):
     """
         .. note::
             :class: toggle
@@ -43,7 +42,14 @@ class SimPLMService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def plm_create(self, i_simulation_name: str, i_simulation_type: str, i_context: PLMEntity, o_sim_object: SimulationReference, o_editor: Editor) -> None:
+    def plm_create(
+            self,
+            i_simulation_name: str,
+            i_simulation_type: str,
+            i_context: PLMEntity,
+            o_sim_object: SimulationReference,
+            o_editor: Editor
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -96,7 +102,13 @@ class SimPLMService(Service):
         :param Editor o_editor:
         :return: None
         """
-        return self.com_object.PLMCreate(i_simulation_name, i_simulation_type, i_context.com_object, o_sim_object.com_object, o_editor.com_object)
+        return self.com_object.PLMCreate(
+            i_simulation_name,
+            i_simulation_type,
+            i_context.com_object,
+            o_sim_object.com_object,
+            o_editor.com_object
+        )
 
     def __repr__(self):
-        return f'SimplmService(name="{ self.name }")'
+        return f'SIMPLMService(name="{self.name}")'

@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
@@ -201,6 +202,16 @@ class OLPProfiles(Collection):
         :return: tuple
         """
         return self.com_object.GetParameterNames(i_profile_type)
+
+    def __getitem__(self, n: int) -> OLPProfile:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPProfile(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPProfile]:
+        for i in range(self.count):
+            yield OLPProfile(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPProfiles(name="{self.name}")'

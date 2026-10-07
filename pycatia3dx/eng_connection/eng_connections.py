@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.eng_connection.eng_connection import EngConnection
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types import CATVariant
@@ -158,6 +160,16 @@ class EngConnections(Collection):
         :return: None
         """
         return self.com_object.Remove(i_eng_cnt)
+
+    def __getitem__(self, n: int) -> EngConnection:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return EngConnection(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[EngConnection]:
+        for i in range(self.count):
+            yield EngConnection(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'EngConnections(name="{self.name}")'

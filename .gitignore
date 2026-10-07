@@ -211,7 +211,6 @@ __marimo__/
 __reference_scripts__
 __junk__
 
-test*.*
-temp*.*
+temp*.py
 
 docs/generated/

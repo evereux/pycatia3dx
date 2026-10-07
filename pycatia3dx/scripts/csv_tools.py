@@ -3,6 +3,7 @@
 import csv
 import os
 import time
+from pathlib import Path
 
 from typing import Generator
 
@@ -40,7 +41,7 @@ def convert_units(number: str, unit: str) -> float:
         raise KeyError(f'Unit {unit} is not currently supported.')
 
 
-def csv_reader(file_name: str, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
+def csv_reader(file_name: Path, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
     """
     Reads contents of csv file and returns a generator object containing dictionaries with point data.
 
@@ -70,7 +71,7 @@ def csv_reader(file_name: str, units: str, delimiter: str = ',') -> Generator[di
             yield point
 
 
-def create_points(part: Part, file_name: str, units: str = 'mm', geometry_set_name: str = 'New_Points') -> None:
+def create_points(part: Part, file_name: Path, units: str = 'mm', geometry_set_name: str = 'New_Points') -> None:
     """
     Parses a csv file and populates the geometry set with new points.
 
@@ -82,6 +83,9 @@ def create_points(part: Part, file_name: str, units: str = 'mm', geometry_set_na
     :param geometry_set_name: Name of new geometrical set in which to add points
     :return: None
     """
+
+    if not file_name.is_file():
+        raise FileNotFoundError(f'Check file exists: "{file_name}"')
 
     points = csv_reader(file_name, units)
 

@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.interfaces.light_source import LightSource
 from pycatia3dx.system.collection import Collection
@@ -118,6 +119,16 @@ class LightSources(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> LightSource:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return LightSource(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[LightSource]:
+        for i in range(self.count):
+            yield LightSource(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'LightSources(name="{self.name}")'

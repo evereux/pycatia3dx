@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.ordered_geometrical_set import OrderedGeometricalSet
 from pycatia3dx.system.collection import Collection
@@ -98,6 +99,16 @@ class OrderedGeometricalSets(Collection):
         :return: OrderedGeometricalSet
         """
         return OrderedGeometricalSet(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> OrderedGeometricalSet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OrderedGeometricalSet(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OrderedGeometricalSet]:
+        for i in range(self.count):
+            yield OrderedGeometricalSet(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OrderedGeometricalSets(name="{self.name}")'

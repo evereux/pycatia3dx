@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_slot import StrSlot
@@ -113,6 +114,16 @@ class StrSlots(Collection):
         :return: None
         """
         return self.com_object.Remove(i_slot.com_object)
+
+    def __getitem__(self, n: int) -> StrSlot:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrSlot(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrSlot]:
+        for i in range(self.count):
+            yield StrSlot(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrSlots(name="{self.name}")'

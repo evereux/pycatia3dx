@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.str_sfd_plate import StrSfdPlate
@@ -65,6 +66,16 @@ class StrSfdPlates(Collection):
         :return: StrSfdPlate
         """
         return StrSfdPlate(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> StrSfdPlate:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return StrSfdPlate(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[StrSfdPlate]:
+        for i in range(self.count):
+            yield StrSfdPlate(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'StrSfdPlates(name="{self.name}")'

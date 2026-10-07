@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.tps.user_surface import UserSurface
@@ -163,6 +165,16 @@ class UserSurfaces(Collection):
 
         # system_service = SystemService(self.application.SystemService)
         # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def __getitem__(self, n: int) -> UserSurface:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return UserSurface(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[UserSurface]:
+        for i in range(self.count):
+            yield UserSurface(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'UserSurfaces(name="{self.name}")'

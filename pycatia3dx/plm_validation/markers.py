@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.plm_validation.marker import Marker
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
@@ -199,6 +201,16 @@ class Markers(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> Marker:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Marker(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Marker]:
+        for i in range(self.count):
+            yield Marker(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Markers(name="{self.name}")'

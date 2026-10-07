@@ -7,8 +7,9 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sma_mpa_structural_mode.sim_connector_elasticity import SimConnectorElasticity
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
@@ -136,6 +137,16 @@ class SimConnectorElasticities(Collection):
         :return: None
         """
         return self.com_object.RemoveAll()
+
+    def __getitem__(self, n: int) -> SimConnectorElasticity:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimConnectorElasticity(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimConnectorElasticity]:
+        for i in range(self.count):
+            yield SimConnectorElasticity(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimConnectorElasticities(name="{self.name}")'

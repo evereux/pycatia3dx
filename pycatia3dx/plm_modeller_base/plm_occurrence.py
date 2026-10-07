@@ -76,4 +76,4 @@ class PLMOccurrence(AnyObject):
         return PLMOccurrences(self.com_object.PLMOccurrences)
 
     def __repr__(self):
-        return f'PlmOccurrence(name="{self.name}")'
+        return f'PLMOccurrence(name="{self.name}")'

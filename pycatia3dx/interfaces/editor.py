@@ -9,11 +9,11 @@
 """
 from typing import TYPE_CHECKING
 
-from pycatia3dx.interfaces.service import Service
 from pycatia3dx.system.any_object import AnyObject
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.selection import Selection
+    from pycatia3dx.types import EditorService, editor_service_types
 
 
 class Editor(AnyObject):
@@ -62,6 +62,16 @@ class Editor(AnyObject):
         return AnyObject(self.com_object.ActiveObject)
 
     @property
+    def active_com_object(self):
+        """
+        For use when an automation Class requires the Editor.active_object
+        com_object. We can use editor.active_com_object instead of
+        editor.active_object.com_object. See examples for usage.
+        """
+
+        return self.com_object.ActiveObject
+
+    @property
     def selection(self) -> 'Selection':
         """
         .. note::
@@ -87,7 +97,7 @@ class Editor(AnyObject):
 
         return Selection(self.com_object.Selection)
 
-    def get_service(self, i_service: str) -> Service:
+    def get_service(self, i_service: str) -> EditorService:
         """
         .. note::
             :class: toggle
@@ -112,9 +122,14 @@ class Editor(AnyObject):
                 |              Set Service1 = CATIA.ActiveEditor.GetService("VisuServices")
 
         :param str i_service:
-        :return: Service
+        :return: AnyService
         """
-        return Service(self.com_object.GetService(i_service))
+        from pycatia3dx.types import editor_service_types
+
+        if i_service not in [service for service in editor_service_types]:
+            raise KeyError(f'{i_service} not a recognized service.')
+
+        return editor_service_types[i_service]['type'](self.com_object.GetService(i_service))
 
     def __repr__(self):
         return f'Editor(name="{self.name}")'

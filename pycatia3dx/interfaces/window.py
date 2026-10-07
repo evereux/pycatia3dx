@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatWindowState
 from pycatia3dx.interfaces.page_setup import PageSetup
 from pycatia3dx.interfaces.viewer import Viewer
 from pycatia3dx.interfaces.viewers import Viewers
@@ -266,7 +266,7 @@ class Window(AnyObject):
         self.com_object.Width = value
 
     @property
-    def window_state(self) -> int:
+    def window_state(self) -> CatWindowState:
         """
         .. note::
             :class: toggle
@@ -287,7 +287,7 @@ class Window(AnyObject):
         return self.com_object.WindowState
 
     @window_state.setter
-    def window_state(self, value: int):
+    def window_state(self, value: CatWindowState):
         """
         :param int value:
         """

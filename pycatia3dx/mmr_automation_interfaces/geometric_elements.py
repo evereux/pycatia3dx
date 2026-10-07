@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sketcher.geometric_element import GeometricElement
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -75,6 +77,16 @@ class GeometricElements(Collection):
         :return: GeometricElement
         """
         return GeometricElement(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> GeometricElement:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return GeometricElement(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[GeometricElement]:
+        for i in range(self.count):
+            yield GeometricElement(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'GeometricElements(name="{self.name}")'

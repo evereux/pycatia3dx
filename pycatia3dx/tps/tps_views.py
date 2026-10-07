@@ -7,8 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.tps.tps_view import TPSView
 from pycatia3dx.types.general import CATVariant
@@ -49,6 +49,16 @@ class TPSViews(Collection):
         :return: TPSView
         """
         return TPSView(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> TPSView:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return TPSView(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[TPSView]:
+        for i in range(self.count):
+            yield TPSView(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'TpsViews(name="{self.name}")'

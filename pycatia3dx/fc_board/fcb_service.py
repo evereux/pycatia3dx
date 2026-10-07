@@ -12,7 +12,7 @@ from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.system.any_object import AnyObject
 
 
-class FcbService(Service):
+class FCBService(Service):
     """
         .. note::
             :class: toggle

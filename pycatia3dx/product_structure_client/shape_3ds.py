@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.product_structure_client.shape_3d import Shape3D
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -73,6 +75,16 @@ class Shape3Ds(Collection):
         :return: Shape3D
         """
         return Shape3D(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Shape3D:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Shape3D(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Shape3D]:
+        for i in range(self.count):
+            yield Shape3D(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Shape3Ds(name="{self.name}")'

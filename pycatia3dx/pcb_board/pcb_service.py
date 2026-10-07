@@ -12,8 +12,7 @@ from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.system.any_object import AnyObject
 
 
-class PcbService(Service):
-
+class PCBService(Service):
     """
         .. note::
             :class: toggle
@@ -62,7 +61,8 @@ class PcbService(Service):
         """
         return self.com_object.CreateBoard(i_root.com_object)
 
-    def create_component(self, i_root: AnyObject, i_part: Part, i_elec_package_number: str, i_elec_part_number: str, i_elec_type: str) -> AnyObject:
+    def create_component(self, i_root: AnyObject, i_part: Part, i_elec_package_number: str, i_elec_part_number: str,
+                         i_elec_type: str) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -101,7 +101,8 @@ class PcbService(Service):
         :param str i_elec_type:
         :return: AnyObject
         """
-        return self.com_object.CreateComponent(i_root.com_object, i_part.com_object, i_elec_package_number, i_elec_part_number, i_elec_type)
+        return self.com_object.CreateComponent(i_root.com_object, i_part.com_object, i_elec_package_number,
+                                               i_elec_part_number, i_elec_type)
 
     def create_panel(self, i_root: AnyObject) -> AnyObject:
         """
@@ -182,4 +183,4 @@ class PcbService(Service):
         return self.com_object.GetParentProduct(i_part.com_object)
 
     def __repr__(self):
-        return f'PcbService(name="{ self.name }")'
+        return f'PcbService(name="{self.name}")'

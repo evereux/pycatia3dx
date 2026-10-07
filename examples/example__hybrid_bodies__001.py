@@ -24,11 +24,10 @@ from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.body import Body
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
-
 application = catia3dx()
 # if the active document is a CATPart this will return a PartDocument
 active_editor = application.active_editor
-part = Part(active_editor.active_object.com_object)
+part = Part(active_editor.active_com_object)
 bodies = part.bodies
 
 # Warning: if you have several bodies with the same name the first will always be chosen.

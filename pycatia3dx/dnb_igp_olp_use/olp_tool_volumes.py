@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_igp_olp_use.olp_tool_volume import OLPToolVolume
@@ -95,6 +96,16 @@ class OLPToolVolumes(Collection):
         :return: OLPToolVolume
         """
         return OLPToolVolume(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> OLPToolVolume:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPToolVolume(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPToolVolume]:
+        for i in range(self.count):
+            yield OLPToolVolume(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPToolVolumes(name="{self.name}")'

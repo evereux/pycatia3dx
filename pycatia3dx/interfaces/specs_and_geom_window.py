@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatSpecsAndGeomWindowLayout
 from pycatia3dx.interfaces.specs_viewer import SpecsViewer
 from pycatia3dx.interfaces.window import Window
 
@@ -46,7 +46,7 @@ class SpecsAndGeomWindow(Window):
         self.com_object = com_object
 
     @property
-    def layout(self) -> int:
+    def layout(self) -> CatSpecsAndGeomWindowLayout:
         """
         .. note::
             :class: toggle
@@ -62,7 +62,7 @@ class SpecsAndGeomWindow(Window):
                 | 
                 |          MyCADWindow.Layout = catWindowGeomOnly
 
-        :return: int
+        :return: CatSpecsAndGeomWindowLayout
         """
 
         return self.com_object.Layout

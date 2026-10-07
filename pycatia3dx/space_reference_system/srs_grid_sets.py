@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.space_reference_system.srs_grid_set import SrsGridSet
 from pycatia3dx.system.collection import Collection
@@ -62,6 +63,16 @@ class SrsGridSets(Collection):
         :return: SrsGridSet
         """
         return SrsGridSet(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SrsGridSet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SrsGridSet(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SrsGridSet]:
+        for i in range(self.count):
+            yield SrsGridSet(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SrsGridSets(name="{self.name}")'

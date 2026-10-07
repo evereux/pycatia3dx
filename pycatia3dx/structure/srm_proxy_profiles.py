@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.structure.srm_proxy_profile import SrmProxyProfile
@@ -65,6 +66,16 @@ class SrmProxyProfiles(Collection):
         :return: SrmProxyProfile
         """
         return SrmProxyProfile(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SrmProxyProfile:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SrmProxyProfile(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SrmProxyProfile]:
+        for i in range(self.count):
+            yield SrmProxyProfile(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SrmProxyProfiles(name="{self.name}")'

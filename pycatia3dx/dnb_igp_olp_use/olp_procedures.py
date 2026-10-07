@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 from pycatia3dx.system.collection import Collection
@@ -121,6 +122,16 @@ class OLPProcedures(Collection):
         :return: OLPProcedure
         """
         return OLPProcedure(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> OLPProcedure:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OLPProcedure(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[OLPProcedure]:
+        for i in range(self.count):
+            yield OLPProcedure(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'OLPProcedures(name="{self.name}")'

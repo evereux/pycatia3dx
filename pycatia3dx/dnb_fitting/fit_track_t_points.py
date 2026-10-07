@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.dnb_fitting.fit_track_t_point import FitTrackTPoint
@@ -148,6 +149,16 @@ class FitTrackTPoints(Collection):
         :return: None
         """
         return self.com_object.RemoveTPoint(i_index)
+
+    def __getitem__(self, n: int) -> FitTrackTPoint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return FitTrackTPoint(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[FitTrackTPoint]:
+        for i in range(self.count):
+            yield FitTrackTPoint(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'FitTrackTPoints(name="{self.name}")'

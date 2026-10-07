@@ -16,7 +16,7 @@ from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccur
 from pycatia3dx.system.any_object import AnyObject
 
 
-class PlmProductService(Service):
+class PLMProductService(Service):
     """
         .. note::
             :class: toggle
@@ -110,4 +110,4 @@ class PlmProductService(Service):
                                                      i_catia_reference.com_object))
 
     def __repr__(self):
-        return f'PlmProductService(name="{self.name}")'
+        return f'PLMProductService(name="{self.name}")'

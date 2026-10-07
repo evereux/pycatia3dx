@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.material.material import Material
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -123,6 +125,16 @@ class Materials(Collection):
         :return: None
         """
         return self.com_object.Remove(i_material.com_object)
+
+    def __getitem__(self, n: int) -> Material:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Material(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Material]:
+        for i in range(self.count):
+            yield Material(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Materials(name="{self.name}")'

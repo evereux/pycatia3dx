@@ -73,7 +73,7 @@ def _import_com3dx_module() -> ModuleType:
     return com3dx
 
 
-def catia_application(com3dx: bool=True) -> Application:
+def catia_application() -> Application:
     """
     Connects to the active 3DEXPERIENCE session and returns a pycatia3dx
     Application object.
@@ -91,11 +91,9 @@ def catia_application(com3dx: bool=True) -> Application:
     win32com.client.Dispatch.  This should only be necessary if the 3DEXPERIENCE
     installation does not include the com3dx.py file.
 
-    :param bool com3dx:
     :return: Application
     """
-
-    if com3dx:
+    try:
         return Application(_import_com3dx_module().get3dxClient())
-    else:
+    except FileNotFoundError:
         return Application(Dispatch('CATIA.Application'))

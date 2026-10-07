@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PLMDocument(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -189,4 +188,4 @@ class PLMDocument(AnyObject):
         return self.com_object.DownloadFile(i_file_name, i_download_path)
 
     def __repr__(self):
-        return f'PlmDocument(name="{ self.name }")'
+        return f'PLMDocument(name="{self.name}")'

@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.eng_connection.assembly_constraint import AssemblyConstraint
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types import CATVariant
@@ -159,6 +161,16 @@ class AssemblyConstraints(Collection):
         :return: None
         """
         return self.com_object.Remove(i_eng_connection.com_object)
+
+    def __getitem__(self, n: int) -> AssemblyConstraint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AssemblyConstraint(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[AssemblyConstraint]:
+        for i in range(self.count):
+            yield AssemblyConstraint(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'AssemblyConstraints(name="{self.name}")'

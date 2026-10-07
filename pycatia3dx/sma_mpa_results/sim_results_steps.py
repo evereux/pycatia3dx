@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.sma_mpa_results.sim_results_step import SimResultsStep
@@ -70,6 +71,16 @@ class SimResultsSteps(Collection):
         :return: SimResultsStep
         """
         return SimResultsStep(self.com_object.Item(index))
+
+    def __getitem__(self, n: int) -> SimResultsStep:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimResultsStep(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimResultsStep]:
+        for i in range(self.count):
+            yield SimResultsStep(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimResultsSteps(name="{self.name}")'

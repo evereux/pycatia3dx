@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.plm_access.plm_search import PLMSearch
@@ -170,5 +171,15 @@ class PLMSearches(Collection):
         """
         return self.com_object.Remove(i_plm_search_context.com_object)
 
+    def __getitem__(self, n: int) -> PLMSearch:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return PLMSearch(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[PLMSearch]:
+        for i in range(self.count):
+            yield PLMSearch(self.com_object.Item(i + 1))
+
     def __repr__(self):
-        return f'PlmSearches(name="{self.name}")'
+        return f'PLMSearches(name="{self.name}")'

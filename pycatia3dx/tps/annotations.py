@@ -7,8 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.tps.annotation import Annotation
 from pycatia3dx.types.general import CATVariant
@@ -78,6 +78,16 @@ class Annotations(Collection):
         :return: Annotation
         """
         return Annotation(self.com_object.Item2(i_index))
+
+    def __getitem__(self, n: int) -> Annotation:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Annotation(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Annotation]:
+        for i in range(self.count):
+            yield Annotation(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Annotations(name="{self.name}")'

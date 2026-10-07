@@ -9,6 +9,7 @@
 """
 from typing import TYPE_CHECKING
 
+from pycatia3dx import CatScriptCommand
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
@@ -19,7 +20,7 @@ from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.system_service import SystemService
-from pycatia3dx.types import AnyService, service_types
+from pycatia3dx.types import ApplicationService, application_service_types
 
 if TYPE_CHECKING:
     from pycatia3dx.interfaces.editor import Editor
@@ -655,7 +656,7 @@ class Application(AnyObject):
         self.com_object.RefreshDisplay = value
 
     @property
-    def script_command(self) -> int:
+    def script_command(self) -> CatScriptCommand:
         """
         .. note::
             :class: toggle
@@ -855,15 +856,15 @@ class Application(AnyObject):
                 |     Different uses of this property might cause the CATIA frame to freeze,
                 |     until the Escape key is pressed.
 
-        :return: int
+        :return: CatScriptCommand
         """
 
         return self.com_object.ScriptCommand
 
     @script_command.setter
-    def script_command(self, value: int):
+    def script_command(self, value: CatScriptCommand):
         """
-        :param int value:
+        :param CatScriptCommand value:
         """
 
         self.com_object.ScriptCommand = value
@@ -1305,7 +1306,7 @@ class Application(AnyObject):
         """
         return self.com_object.FolderSelectionBox(i_title)
 
-    def get_session_service(self, i_service: str) -> AnyService | Service:
+    def get_session_service(self, i_service: str) -> ApplicationService:
         """
         .. note::
             :class: toggle
@@ -1335,7 +1336,10 @@ class Application(AnyObject):
         :return: AnyService
         """
 
-        return service_types[i_service]['type'](self.com_object.GetSessionService(i_service))
+        if i_service not in [service for service in application_service_types]:
+            raise KeyError(f'{i_service} not a recognized service.')
+
+        return application_service_types[i_service]['type'](self.com_object.GetSessionService(i_service))
 
     def get_workbench_id(self) -> str:
         """

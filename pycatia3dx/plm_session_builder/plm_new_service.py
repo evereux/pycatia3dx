@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class PLMNewService(Service):
-
     """
         .. note::
             :class: toggle
@@ -42,7 +41,7 @@ class PLMNewService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def plm_create(self, i_user_type: str, o_editor: Editor) -> None:
+    def plm_create(self, i_user_type: str) -> Editor:
         """
         .. note::
             :class: toggle
@@ -70,11 +69,10 @@ class PLMNewService(Service):
                 |         oEditor
                 |             The resulting editor on the newly created data.
 
-        :param str i_user_type:
-        :param Editor o_editor:
-        :return: None
+        :param str i_user_type: Examples: "3DShape", "Drawing"
+        :return: Editor
         """
-        return self.com_object.PLMCreate(i_user_type, o_editor.com_object)
+        return Editor(self.com_object.PLMCreate(i_user_type))
 
     def set_attribute_value(self, i_attribute_id: str, i_attribute_value: CATVariant) -> None:
         """
@@ -104,8 +102,7 @@ class PLMNewService(Service):
                 |             example for integers : SetAttributeValue "Attribute Name",
                 |             8 example for reals, dimensions : SetAttributeValue "Attribute Name",
                 |             10.25 If the type of the attribute is a Date, value must be provided as "mm/dd/yyyy" format.
-                |             If the type of the attribute is a list, IT IS NOT SUPPORTED
-                |             .
+                |             If the type of the attribute is a list, IT IS NOT SUPPORTED.
 
         :param str i_attribute_id:
         :param CATVariant i_attribute_value:
@@ -114,4 +111,4 @@ class PLMNewService(Service):
         return self.com_object.SetAttributeValue(i_attribute_id, i_attribute_value)
 
     def __repr__(self):
-        return f'PlmNewService(name="{ self.name }")'
+        return f'PLMNewService(name="{self.name}")'

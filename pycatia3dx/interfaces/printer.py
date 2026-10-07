@@ -7,7 +7,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatPaperSize
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -101,7 +101,7 @@ class Printer(AnyObject):
         return self.com_object.PaperHeight
 
     @property
-    def paper_size(self) -> int:
+    def paper_size(self) -> CatPaperSize:
         """
         .. note::
             :class: toggle

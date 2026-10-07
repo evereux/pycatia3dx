@@ -215,7 +215,7 @@ class HybridShapeCircle(HybridShape):
 
         :return: tuple
         """
-        return self.com_object.GetCenter(o_center_x, o_center_y, o_center_z)
+        return self.com_object.GetCenter()
 
     def get_free_center(self, io_center: tuple) -> None:
         """

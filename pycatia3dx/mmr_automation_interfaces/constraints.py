@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.constraint import Constraint
 from pycatia3dx.mode.reference import Reference
@@ -126,7 +127,7 @@ class Constraints(Collection):
         :param int i_second_elem:
         :return: Constraint
         """
-        return Constraint(self.com_object.AddBiEltCst(i_cst_type, i_first_elem, i_second_elem.com_object))
+        return Constraint(self.com_object.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
 
     def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
         """
@@ -270,6 +271,16 @@ class Constraints(Collection):
         :return: None
         """
         return self.com_object.Remove(i_index)
+
+    def __getitem__(self, n: int) -> Constraint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Constraint(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Constraint]:
+        for i in range(self.count):
+            yield Constraint(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Constraints(name="{self.name}")'

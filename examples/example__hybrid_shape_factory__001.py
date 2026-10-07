@@ -1,8 +1,12 @@
 """
     Example - Hybrid Shape Factory - 001
+
     Description:
-        Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
+
+        Sequentially rename all points in geometric set (Hybrid Body) Points in the geometric set MasterGeometry.
+
     Requirements:
+
         - An open part document with the following geometric sets:
             Part
             |- MasterGeometry
@@ -15,8 +19,6 @@
 import os
 import sys
 
-
-
 sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 ##########################################################
 
@@ -24,8 +26,9 @@ from pycatia3dx import catia3dx
 from pycatia3dx.mmr_automation_interfaces.part import Part
 
 application = catia3dx()
+editor = application.active_editor
 # if the active document is a CATPart this will return a PartDocument
-part = Part(application.active_editor.active_object.com_object)
+part = Part(editor.active_com_object)
 bodies = part.bodies
 
 # initialize the hybrid shape factory. this is used to determine the shape type later.

@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.agt.wall import Wall
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -72,6 +74,16 @@ class Walls(Collection):
         :return: Wall
         """
         return Wall(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Wall:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Wall(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Wall]:
+        for i in range(self.count):
+            yield Wall(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Walls(name="{self.name}")'

@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.boundary import Boundary
 from pycatia3dx.mode.reference import Reference
@@ -125,6 +126,16 @@ class Sketches(Collection):
         :return: Sketch
         """
         return Sketch(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> Sketch:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Sketch(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[Sketch]:
+        for i in range(self.count):
+            yield Sketch(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'Sketches(name="{self.name}")'

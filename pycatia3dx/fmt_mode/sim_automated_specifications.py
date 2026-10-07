@@ -7,6 +7,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia3dx.sim_rep.sim_generative_specification import SimGenerativeSpecification
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
@@ -64,6 +66,16 @@ class SimAutomatedSpecifications(Collection):
         :return: SimGenerativeSpecification
         """
         return SimGenerativeSpecification(self.com_object.Item(i_index))
+
+    def __getitem__(self, n: int) -> SimGenerativeSpecification:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SimGenerativeSpecification(self.com_object.Item(n + 1))
+
+    def __iter__(self) -> Iterator[SimGenerativeSpecification]:
+        for i in range(self.count):
+            yield SimGenerativeSpecification(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'SimAutomatedSpecifications(name="{self.name}")'

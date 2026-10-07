@@ -7,7 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatBannerPosition, CatImageRotation, CatPaperOrientation, CatPaperSize, CatPrintColor, \
+    CatPrintLineCap, CatPrintLineSpecification, CatPrintQuality, CatPrintRenderingMode
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -93,7 +94,7 @@ class PageSetup(AnyObject):
         self.com_object.Banner = value
 
     @property
-    def banner_position(self) -> int:
+    def banner_position(self) -> CatBannerPosition:
         """
         .. note::
             :class: toggle
@@ -110,7 +111,7 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.BannerPosition = CatBannerPositionTop
 
-        :return: int
+        :return: CatBannerPosition
         """
 
         return self.com_object.BannerPosition
@@ -217,7 +218,7 @@ class PageSetup(AnyObject):
         self.com_object.BottomMargin = value
 
     @property
-    def color(self) -> int:
+    def color(self) -> CatPrintColor:
         """
         .. note::
             :class: toggle
@@ -232,15 +233,15 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.Color = catColorGreyScale
 
-        :return: int
+        :return: CatPrintColor
         """
 
         return self.com_object.Color
 
     @color.setter
-    def color(self, value: int):
+    def color(self, value: CatPrintColor):
         """
-        :param int value:
+        :param CatPrintColor value:
         """
 
         self.com_object.Color = value
@@ -368,7 +369,7 @@ class PageSetup(AnyObject):
         self.com_object.LeftMargin = value
 
     @property
-    def line_cap(self) -> int:
+    def line_cap(self) -> CatPrintLineCap:
         """
         .. note::
             :class: toggle
@@ -428,7 +429,7 @@ class PageSetup(AnyObject):
         self.com_object.LineTypeOverlappingCheck = value
 
     @property
-    def line_type_specification(self) -> int:
+    def line_type_specification(self) -> CatPrintLineSpecification:
         """
         .. note::
             :class: toggle
@@ -445,15 +446,15 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.LineTypeSpecification = catPrintAbsolute
 
-        :return: int
+        :return: CatPrintLineSpecification
         """
 
         return self.com_object.LineTypeSpecification
 
     @line_type_specification.setter
-    def line_type_specification(self, value: int):
+    def line_type_specification(self, value: CatPrintLineSpecification):
         """
-        :param int value:
+        :param CatPrintLineSpecification value:
         """
 
         self.com_object.LineTypeSpecification = value
@@ -584,7 +585,7 @@ class PageSetup(AnyObject):
         self.com_object.MaximumSize = value
 
     @property
-    def orientation(self) -> int:
+    def orientation(self) -> CatPaperOrientation:
         """
         .. note::
             :class: toggle
@@ -599,15 +600,15 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.Orientation = catPaperLandscape
 
-        :return: int
+        :return: CatPaperOrientation
         """
 
         return self.com_object.Orientation
 
     @orientation.setter
-    def orientation(self, value: int):
+    def orientation(self, value: CatPaperOrientation):
         """
-        :param int value:
+        :param CatPaperOrientation value:
         """
 
         self.com_object.Orientation = value
@@ -642,7 +643,7 @@ class PageSetup(AnyObject):
         self.com_object.PaperHeight = value
 
     @property
-    def paper_size(self) -> int:
+    def paper_size(self) -> CatPaperSize:
         """
         .. note::
             :class: toggle
@@ -657,7 +658,7 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.PaperSize = catPaperA4
 
-        :return: int
+        :return: CatPaperSize
         """
 
         return self.com_object.PaperSize
@@ -700,7 +701,7 @@ class PageSetup(AnyObject):
         self.com_object.PaperWidth = value
 
     @property
-    def print_rendering_mode(self) -> int:
+    def print_rendering_mode(self) -> CatPrintRenderingMode:
         """
         .. note::
             :class: toggle
@@ -715,21 +716,21 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.PrintRenderingMode = CatPrintRenderingModeDefault
 
-        :return: int
+        :return: CatPrintRenderingMode
         """
 
         return self.com_object.PrintRenderingMode
 
     @print_rendering_mode.setter
-    def print_rendering_mode(self, value: int):
+    def print_rendering_mode(self, value: CatPrintRenderingMode):
         """
-        :param int value:
+        :param CatPrintRenderingMode value:
         """
 
         self.com_object.PrintRenderingMode = value
 
     @property
-    def quality(self) -> int:
+    def quality(self) -> CatPrintQuality:
         """
         .. note::
             :class: toggle
@@ -745,15 +746,15 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.Quality = catPrintQualityDraft
 
-        :return: int
+        :return: CatPrintQuality
         """
 
         return self.com_object.Quality
 
     @quality.setter
-    def quality(self, value: int):
+    def quality(self, value: CatPrintQuality):
         """
-        :param int value:
+        :param CatPrintQuality value:
         """
 
         self.com_object.Quality = value
@@ -790,7 +791,7 @@ class PageSetup(AnyObject):
         self.com_object.RightMargin = value
 
     @property
-    def rotation(self) -> int:
+    def rotation(self) -> CatImageRotation:
         """
         .. note::
             :class: toggle
@@ -807,7 +808,7 @@ class PageSetup(AnyObject):
                 | 
                 |          SetupForMyPrint.Rotation = catImageRotation90
 
-        :return: int
+        :return: CatImageRotation
         """
 
         return self.com_object.Rotation

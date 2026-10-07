@@ -47,7 +47,7 @@ class ProductSessionService(Service):
         self.com_object = com_object
 
     @property
-    def shape3_ds(self) -> Shape3Ds:
+    def shape_3ds(self) -> Shape3Ds:
         """
         .. note::
             :class: toggle

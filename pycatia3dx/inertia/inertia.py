@@ -152,7 +152,7 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
         return cast(tuple[float, ...], cast(object, result))
 
     def get_mass(self) -> float:
@@ -229,10 +229,8 @@ class Inertia(AnyObject):
         """
 
         system_service = self.application.system_service
-        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
         return cast(tuple[float, ...], cast(object, result))
-
-        return self.com_object.GetPrincipalAxes(o_axes)
 
     def get_principal_moments(self) -> tuple[float, float, float]:
         """
@@ -278,7 +276,7 @@ class Inertia(AnyObject):
         End Function
         """
         system_service = self.application.system_service
-        result  = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        result = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
         return cast(tuple[float, float, float], cast(object, result))
 
     def get_volume(self) -> float:

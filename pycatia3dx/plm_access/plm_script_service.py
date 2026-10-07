@@ -13,7 +13,6 @@ from pycatia3dx.types.general import CATVariant
 
 
 class PLMScriptService(Service):
-
     """
         .. note::
             :class: toggle
@@ -43,7 +42,8 @@ class PLMScriptService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def execute_script_v6(self, i_plm_entity: PLMEntity, i_type: int, i_program_name: str, i_function_name: str, i_parameters: tuple) -> CATVariant:
+    def execute_script_v6(self, i_plm_entity: PLMEntity, i_type: int, i_program_name: str, i_function_name: str,
+                          i_parameters: tuple) -> CATVariant:
         """
         .. note::
             :class: toggle
@@ -92,7 +92,8 @@ class PLMScriptService(Service):
         :param tuple i_parameters:
         :return: CATVariant
         """
-        return self.com_object.ExecuteScriptV6(i_plm_entity.com_object, i_type, i_program_name, i_function_name, i_parameters)
+        return self.com_object.ExecuteScriptV6(i_plm_entity.com_object, i_type, i_program_name, i_function_name,
+                                               i_parameters)
 
     def __repr__(self):
-        return f'PlmScriptService(name="{ self.name }")'
+        return f'PLMScriptService(name="{self.name}")'
