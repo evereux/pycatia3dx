@@ -12,7 +12,6 @@ from pycatia3dx.plm_application_context.plm_app_context import PLMAppContext
 
 
 class PLMSearch(PLMAppContext):
-
     """
         .. note::
             :class: toggle
@@ -164,4 +163,4 @@ class PLMSearch(PLMAppContext):
         return self.com_object.Search()
 
     def __repr__(self):
-        return f'PlmSearch(name="{ self.name }")'
+        return f'PLMSearch(name="{self.name}")'

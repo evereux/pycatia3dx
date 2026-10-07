@@ -111,4 +111,4 @@ class PLMNewService(Service):
         return self.com_object.SetAttributeValue(i_attribute_id, i_attribute_value)
 
     def __repr__(self):
-        return f'PlmNewService(name="{self.name}")'
+        return f'PLMNewService(name="{self.name}")'

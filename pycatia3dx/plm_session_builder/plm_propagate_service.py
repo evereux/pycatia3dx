@@ -11,7 +11,6 @@ from pycatia3dx.interfaces.service import Service
 
 
 class PLMPropagateService(Service):
-
     """
         .. note::
             :class: toggle
@@ -91,4 +90,4 @@ class PLMPropagateService(Service):
         return self.com_object.getLastError(o_error_message, o_error_code)
 
     def __repr__(self):
-        return f'PlmPropagateService(name="{ self.name }")'
+        return f'PLMPropagateService(name="{self.name}")'

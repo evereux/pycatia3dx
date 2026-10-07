@@ -112,4 +112,4 @@ class PLMEntity(AnyObject):
         return self.com_object.SetAttributeValue(i_attr_name, i_attr_value)
 
     def __repr__(self):
-        return f'PlmEntity(name="{self.name}")'
+        return f'PLMEntity(name="{self.name}")'

@@ -182,4 +182,4 @@ class PLMSearches(Collection):
             yield PLMSearch(self.com_object.Item(i + 1))
 
     def __repr__(self):
-        return f'PlmSearches(name="{self.name}")'
+        return f'PLMSearches(name="{self.name}")'

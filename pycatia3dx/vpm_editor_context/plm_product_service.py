@@ -110,4 +110,4 @@ class PLMProductService(Service):
                                                      i_catia_reference.com_object))
 
     def __repr__(self):
-        return f'PlmProductService(name="{self.name}")'
+        return f'PLMProductService(name="{self.name}")'

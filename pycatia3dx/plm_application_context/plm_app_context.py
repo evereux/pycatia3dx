@@ -12,7 +12,6 @@ from pycatia3dx.plm_modeller_base.plm_entities import PLMEntities
 
 
 class PLMAppContext(Service):
-
     """
         .. note::
             :class: toggle
@@ -52,4 +51,4 @@ class PLMAppContext(Service):
         return PLMEntities(self.com_object.EditedContent)
 
     def __repr__(self):
-        return f'PlmAppContext(name="{ self.name }")'
+        return f'PLMAppContext(name="{self.name}")'

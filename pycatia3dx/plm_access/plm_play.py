@@ -12,7 +12,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PLMPlay(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -61,4 +60,4 @@ class PLMPlay(AnyObject):
         return self.com_object.Stop()
 
     def __repr__(self):
-        return f'PlmPlay(name="{ self.name }")'
+        return f'PLMPlay(name="{self.name}")'

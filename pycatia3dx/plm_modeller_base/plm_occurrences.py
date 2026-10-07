@@ -73,4 +73,4 @@ class PLMOccurrences(Collection):
             yield PLMOccurrence(self.com_object.Item(i + 1))
 
     def __repr__(self):
-        return f'PlmOccurrences(name="{self.name}")'
+        return f'PLMOccurrences(name="{self.name}")'

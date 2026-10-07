@@ -73,4 +73,4 @@ class PLMEntities(Collection):
             yield PLMEntity(self.com_object.Item(i + 1))
 
     def __repr__(self):
-        return f'PlmEntities(name="{self.name}")'
+        return f'PLMEntities(name="{self.name}")'
