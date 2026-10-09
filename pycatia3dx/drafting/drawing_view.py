@@ -18,6 +18,7 @@ from pycatia3dx.annotation.drawing_text import DrawingText
 from pycatia3dx.annotation.drawing_texts import DrawingTexts
 from pycatia3dx.annotation.drawing_weldings import DrawingWeldings
 from pycatia3dx.drafting.drawing_area_fills import DrawingAreaFills
+from pycatia3dx.drafting.drawing_gen_view import DrawingGenView
 from pycatia3dx.drafting.drawing_pictures import DrawingPictures
 from pycatia3dx.drafting.drawing_threads import DrawingThreads
 from pycatia3dx.mmr_automation_interfaces.geometric_elements import GeometricElements
@@ -218,7 +219,7 @@ class DrawingView(AnyObject):
         return DrawingDimensions(self.com_object.Dimensions)
 
     @property
-    def drawing_gen_view(self) -> AnyObject:
+    def drawing_gen_view(self) -> DrawingGenView:
         """
         .. note::
             :class: toggle
@@ -236,10 +237,10 @@ class DrawingView(AnyObject):
                 |          Dim myDefGenView As DrawingGenView
                 |          Set myDefGenView = MyView.DrawingGenView
 
-        :return: AnyObject
+        :return: DrawingGenView
         """
 
-        return AnyObject(self.com_object.DrawingGenView)
+        return DrawingGenView(self.com_object.DrawingGenView)
 
     @property
     def factory_2d(self) -> Factory2D:
@@ -863,8 +864,7 @@ class DrawingView(AnyObject):
         """
         return self.com_object.AlignedWithReferenceView()
 
-    def get_projection_plane(self, o_x1: float, o_y1: float, o_z1: float, o_x2: float, o_y2: float,
-                             o_z2: float) -> None:
+    def get_projection_plane(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -894,15 +894,9 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.GetProjectionPlane X1, Y1, Z1, X2, Y2, Z2
 
-        :param float o_x1:
-        :param float o_y1:
-        :param float o_z1:
-        :param float o_x2:
-        :param float o_y2:
-        :param float o_z2:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetProjectionPlane(o_x1, o_y1, o_z1, o_x2, o_y2, o_z2)
+        return self.com_object.GetProjectionPlane()
 
     def get_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """

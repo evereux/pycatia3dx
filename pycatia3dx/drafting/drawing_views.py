@@ -9,8 +9,8 @@
 """
 from typing import Iterator
 
+from pycatia3dx.drafting.drawing_define_gen_view import DrawingDefineGenView
 from pycatia3dx.drafting.drawing_view import DrawingView
-from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
 
@@ -71,7 +71,7 @@ class DrawingViews(Collection):
         return DrawingView(self.com_object.ActiveView)
 
     @property
-    def drawing_define_gen_view(self) -> AnyObject:
+    def drawing_define_gen_view(self) -> 'DrawingDefineGenView':
         """
         .. note::
             :class: toggle
@@ -89,10 +89,10 @@ class DrawingViews(Collection):
                 |          Dim myDefGenView As DrawingDefineGenView
                 |          Set myDefGenView = MyViews.DrawingDefineGenView
 
-        :return: AnyObject
+        :return: DrawingDefineGenView
         """
 
-        return AnyObject(self.com_object.DrawingDefineGenView)
+        return DrawingDefineGenView(self.com_object.DrawingDefineGenView)
 
     def add(self, i_drawing_view_name: str) -> DrawingView:
         """
