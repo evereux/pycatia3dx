@@ -127,4 +127,4 @@ class VPMRootOccurrence(PLMOccurrence):
         return VPMRepOccurrences(self.com_object.RepOccurrences)
 
     def __repr__(self):
-        return f'VpmRootOccurrence(name="{self.name}")'
+        return f'VPMRootOccurrence(name="{self.name}")'

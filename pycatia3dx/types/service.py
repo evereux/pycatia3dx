@@ -92,6 +92,9 @@ EditorService = Union[
 ]
 
 application_service_types = {
+    'CATDrawingGenService': {
+        'type': DrawingGenService
+    },
     'Service': {
         'type': Service
     },
@@ -138,7 +141,7 @@ editor_service_types = {
     'Service': {
         'type': Service
     },
-    'DrawingGenService': {
+    'CATDrawingGenService': {
         'type': DrawingGenService
     },
     'DrawingService': {
@@ -210,6 +213,9 @@ editor_service_types = {
     'VALValidationService': {
         'type': VALValidationService
     },
+    'VisuServices': {
+        'type': VisuServices
+    }
 }
 
 # 'CalibLeastSquaresService': {

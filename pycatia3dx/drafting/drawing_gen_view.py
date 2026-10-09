@@ -8,7 +8,6 @@
         
 """
 from pycatia3dx.drafting.drawing_gen_view_properties import DrawingGenViewProperties
-from pycatia3dx.drafting.drawing_view import DrawingView
 from pycatia3dx.system.any_object import AnyObject
 
 
@@ -181,7 +180,7 @@ class DrawingGenView(AnyObject):
         return self.com_object.NumberOfLinks
 
     @property
-    def parent_view(self) -> DrawingView:
+    def parent_view(self) -> 'DrawingView':
         """
         .. note::
             :class: toggle
@@ -202,7 +201,7 @@ class DrawingGenView(AnyObject):
 
         :return: DrawingView
         """
-
+        from pycatia3dx.drafting.drawing_view import DrawingView
         return DrawingView(self.com_object.ParentView)
 
     def add_breakout(self, i_profil: tuple, i_plane1: tuple, i_plane2: tuple) -> None:
@@ -958,6 +957,7 @@ class DrawingGenView(AnyObject):
         :param tuple i_info_on_view_links:
         :return: None
         """
+        i_info_on_view_links = [i.com_object for i in i_info_on_view_links]
         return self.com_object.PutLinks(i_nb_link, i_info_on_view_links)
 
     def remove_gvs(self) -> None:

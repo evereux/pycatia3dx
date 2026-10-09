@@ -76,4 +76,4 @@ class VPMRepInstance(PLMEntity):
         return VPMRepReference(self.com_object.ReferenceInstanceOf)
 
     def __repr__(self):
-        return f'VpmRepInstance(name="{self.name}")'
+        return f'VPMRepInstance(name="{self.name}")'

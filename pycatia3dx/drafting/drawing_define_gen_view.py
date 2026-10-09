@@ -37,10 +37,19 @@ class DrawingDefineGenView(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def define_auxiliary_view(self, i_x_pos: float, i_ypos: float, i_x_start_point: float, i_y_start_point: float,
-                              i_x_end_point: float, y_end_point: float, i_side_to_draw: int, i_parent_view: DrawingView,
-                              i_view_style: str, i_compute_update: bool,
-                              i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_auxiliary_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_x_start_point: float,
+            i_y_start_point: float,
+            i_x_end_point: float,
+            y_end_point: float,
+            i_side_to_draw: int,
+            i_parent_view: DrawingView,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -122,13 +131,33 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
         return DrawingView(
-            self.com_object.DefineAuxiliaryView(i_x_pos, i_ypos, i_x_start_point, i_y_start_point, i_x_end_point,
-                                                y_end_point, i_side_to_draw, i_parent_view.com_object, i_view_style,
-                                                i_compute_update, i_view_prop.com_object))
+            self.com_object.DefineAuxiliaryView(
+                i_x_pos,
+                i_ypos,
+                i_x_start_point,
+                i_y_start_point,
+                i_x_end_point,
+                y_end_point,
+                i_side_to_draw,
+                i_parent_view.com_object,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
-    def define_circular_detail_view(self, i_x_pos: float, i_ypos: float, i_x_center: float, i_y_center: float,
-                                    i_radius: float, i_parent_view: DrawingView, i_view_style: str,
-                                    i_compute_update: bool, i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_circular_detail_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_x_center: float,
+            i_y_center: float,
+            i_radius: float,
+            i_parent_view: DrawingView,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -198,13 +227,29 @@ class DrawingDefineGenView(AnyObject):
         :param DrawingGenViewProperties i_view_prop:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.DefineCircularDetailView(i_x_pos, i_ypos, i_x_center, i_y_center, i_radius,
-                                                                    i_parent_view.com_object, i_view_style,
-                                                                    i_compute_update, i_view_prop.com_object))
+        return DrawingView(
+            self.com_object.DefineCircularDetailView(
+                i_x_pos,
+                i_ypos,
+                i_x_center,
+                i_y_center,
+                i_radius,
+                i_parent_view.com_object,
+                i_view_style,
+                i_compute_update, i_view_prop.com_object
+            )
+        )
 
-    def define_front_view(self, i_x_pos: float, i_ypos: float, i_listof_prd_inst: tuple, i_plane: tuple,
-                          i_view_style: str, i_compute_update: bool,
-                          i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_front_view(
+            self,
+            i_x_pos: float,
+            i_y_pos: float,
+            i_list_of_prd_inst: tuple,
+            i_plane: tuple,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -260,21 +305,39 @@ class DrawingDefineGenView(AnyObject):
                 |            set MyView = myViews.DrawingDefineGenView.DefineFrontView 10., 10., myListofPrdInst, myProjPlane, "", true, myViewProp
 
         :param float i_x_pos:
-        :param float i_ypos:
-        :param tuple i_listof_prd_inst:
+        :param float i_y_pos:
+        :param tuple i_list_of_prd_inst:
         :param tuple i_plane:
         :param str i_view_style:
         :param bool i_compute_update:
         :param DrawingGenViewProperties i_view_prop:
         :return: DrawingView
         """
-        return DrawingView(
-            self.com_object.DefineFrontView(i_x_pos, i_ypos, i_listof_prd_inst, i_plane, i_view_style, i_compute_update,
-                                            i_view_prop.com_object))
 
-    def define_isometric_view(self, i_x_pos: float, i_ypos: float, i_listof_prd_inst: tuple, i_plane: tuple,
-                              i_view_style: str, i_compute_update: bool,
-                              i_view_prop: DrawingGenViewProperties) -> DrawingView:
+        i_list_of_prd_inst = [i.com_object for i in i_list_of_prd_inst]
+
+        return DrawingView(
+            self.com_object.DefineFrontView(
+                i_x_pos,
+                i_y_pos,
+                i_list_of_prd_inst,
+                i_plane,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
+
+    def define_isometric_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_listof_prd_inst: tuple,
+            i_plane: tuple,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -340,12 +403,27 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
         return DrawingView(
-            self.com_object.DefineIsometricView(i_x_pos, i_ypos, i_listof_prd_inst, i_plane, i_view_style,
-                                                i_compute_update, i_view_prop.com_object))
+            self.com_object.DefineIsometricView(
+                i_x_pos,
+                i_ypos,
+                i_listof_prd_inst,
+                i_plane,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
-    def define_polygonal_detail_view(self, i_x_pos: float, i_ypos: float, i_profile: tuple, i_parent_view: DrawingView,
-                                     i_view_style: str, i_compute_update: bool,
-                                     i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_polygonal_detail_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_profile: tuple,
+            i_parent_view: DrawingView,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -426,12 +504,26 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
         return DrawingView(
-            self.com_object.DefinePolygonalDetailView(i_x_pos, i_ypos, i_profile, i_parent_view.com_object,
-                                                      i_view_style, i_compute_update, i_view_prop.com_object))
+            self.com_object.DefinePolygonalDetailView(
+                i_x_pos,
+                i_ypos,
+                i_profile,
+                i_parent_view.com_object,
+                i_view_style,
+                i_compute_update, i_view_prop.com_object
+            )
+        )
 
-    def define_projection_view(self, i_x_pos: float, i_ypos: float, i_parent_view: DrawingView, i_type: int,
-                               i_view_style: str, i_compute_update: bool,
-                               i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_projection_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_parent_view: DrawingView,
+            i_type: int,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -491,12 +583,29 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
         return DrawingView(
-            self.com_object.DefineProjectionView(i_x_pos, i_ypos, i_parent_view.com_object, i_type, i_view_style,
-                                                 i_compute_update, i_view_prop.com_object))
+            self.com_object.DefineProjectionView(
+                i_x_pos,
+                i_ypos,
+                i_parent_view.com_object,
+                i_type, i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
-    def define_section_view(self, i_x_pos: float, i_ypos: float, i_profile: tuple, i_section_type: str,
-                            i_profile_type: str, i_side_to_draw: int, i_parent_view: DrawingView, i_view_style: str,
-                            i_compute_update: bool, i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_section_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_profile: tuple,
+            i_section_type: str,
+            i_profile_type: str,
+            i_side_to_draw: int,
+            i_parent_view: DrawingView,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -599,14 +708,34 @@ class DrawingDefineGenView(AnyObject):
         :param DrawingGenViewProperties i_view_prop:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.DefineSectionView(i_x_pos, i_ypos, i_profile, i_section_type, i_profile_type,
-                                                             i_side_to_draw, i_parent_view.com_object, i_view_style,
-                                                             i_compute_update, i_view_prop.com_object))
+        return DrawingView(
+            self.com_object.DefineSectionView(
+                i_x_pos,
+                i_ypos,
+                i_profile,
+                i_section_type,
+                i_profile_type,
+                i_side_to_draw,
+                i_parent_view.com_object,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
-    def define_stand_alone_section(self, i_x_pos: float, i_ypos: float, i_listof_prd_inst: tuple, profil: tuple,
-                                   type_of_section: str, type_of_profile: str, i_plane: tuple, i_side: int,
-                                   i_view_style: str, i_compute_update: bool,
-                                   i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_stand_alone_section(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_listof_prd_inst: tuple,
+            profil: tuple,
+            type_of_section: str,
+            type_of_profile: str,
+            i_plane: tuple, i_side: int,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -689,13 +818,31 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
         return DrawingView(
-            self.com_object.DefineStandAloneSection(i_x_pos, i_ypos, i_listof_prd_inst, profil, type_of_section,
-                                                    type_of_profile, i_plane, i_side, i_view_style, i_compute_update,
-                                                    i_view_prop.com_object))
+            self.com_object.DefineStandAloneSection(
+                i_x_pos,
+                i_ypos,
+                i_listof_prd_inst,
+                profil,
+                type_of_section,
+                type_of_profile,
+                i_plane,
+                i_side,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
-    def define_unfolded_view(self, i_x_pos: float, i_ypos: float, i_listof_prd_inst: tuple, i_plane: tuple,
-                             i_view_style: str, i_compute_update: bool,
-                             i_view_prop: DrawingGenViewProperties) -> DrawingView:
+    def define_unfolded_view(
+            self,
+            i_x_pos: float,
+            i_ypos: float,
+            i_listof_prd_inst: tuple,
+            i_plane: tuple,
+            i_view_style: str,
+            i_compute_update: bool,
+            i_view_prop: DrawingGenViewProperties
+    ) -> DrawingView:
         """
         .. note::
             :class: toggle
@@ -760,8 +907,17 @@ class DrawingDefineGenView(AnyObject):
         :param DrawingGenViewProperties i_view_prop:
         :return: DrawingView
         """
-        return DrawingView(self.com_object.DefineUnfoldedView(i_x_pos, i_ypos, i_listof_prd_inst, i_plane, i_view_style,
-                                                              i_compute_update, i_view_prop.com_object))
+        return DrawingView(
+            self.com_object.DefineUnfoldedView(
+                i_x_pos,
+                i_ypos,
+                i_listof_prd_inst,
+                i_plane,
+                i_view_style,
+                i_compute_update,
+                i_view_prop.com_object
+            )
+        )
 
     def __repr__(self):
         return f'DrawingDefineGenView(name="{self.name}")'
