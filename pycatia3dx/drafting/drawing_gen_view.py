@@ -957,6 +957,7 @@ class DrawingGenView(AnyObject):
         :param tuple i_info_on_view_links:
         :return: None
         """
+        i_info_on_view_links = [i.com_object for i in i_info_on_view_links]
         return self.com_object.PutLinks(i_nb_link, i_info_on_view_links)
 
     def remove_gvs(self) -> None:

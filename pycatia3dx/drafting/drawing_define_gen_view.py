@@ -241,9 +241,10 @@ class DrawingDefineGenView(AnyObject):
         )
 
     def define_front_view(
-            self, i_x_pos: float,
-            i_ypos: float,
-            i_listof_prd_inst: tuple,
+            self,
+            i_x_pos: float,
+            i_y_pos: float,
+            i_list_of_prd_inst: tuple,
             i_plane: tuple,
             i_view_style: str,
             i_compute_update: bool,
@@ -304,21 +305,25 @@ class DrawingDefineGenView(AnyObject):
                 |            set MyView = myViews.DrawingDefineGenView.DefineFrontView 10., 10., myListofPrdInst, myProjPlane, "", true, myViewProp
 
         :param float i_x_pos:
-        :param float i_ypos:
-        :param tuple i_listof_prd_inst:
+        :param float i_y_pos:
+        :param tuple i_list_of_prd_inst:
         :param tuple i_plane:
         :param str i_view_style:
         :param bool i_compute_update:
         :param DrawingGenViewProperties i_view_prop:
         :return: DrawingView
         """
+
+        i_list_of_prd_inst = [i.com_object for i in i_list_of_prd_inst]
+
         return DrawingView(
             self.com_object.DefineFrontView(
                 i_x_pos,
-                i_ypos,
-                i_listof_prd_inst,
+                i_y_pos,
+                i_list_of_prd_inst,
                 i_plane,
-                i_view_style, i_compute_update,
+                i_view_style,
+                i_compute_update,
                 i_view_prop.com_object
             )
         )

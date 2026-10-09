@@ -38,7 +38,7 @@ a0_y = 841
 application = catia3dx()
 plm_service = application.get_session_service("PLMNewService")
 
-editor = plm_service.plm_create('Drawing')
+editor = plm_service.plm_create("Drawing")
 
 drawing_root = DrawingRoot(editor.active_com_object)
 
