@@ -36,4 +36,4 @@ class VPMInstances(PLMEntities):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'VpmInstances(name="{self.name}")'
+        return f'VPMInstances(name="{self.name}")'

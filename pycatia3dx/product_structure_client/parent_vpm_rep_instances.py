@@ -39,4 +39,4 @@ class ParentVPMRepInstances(PLMEntities):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ParentVpmRepInstances(name="{self.name}")'
+        return f'ParentVPMRepInstances(name="{self.name}")'

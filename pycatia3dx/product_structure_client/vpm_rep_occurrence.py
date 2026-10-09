@@ -62,4 +62,4 @@ class VPMRepOccurrence(AnyObject):
         return VPMRepInstance(self.com_object.RelatedRepInstance)
 
     def __repr__(self):
-        return f'VpmRepOccurrence(name="{self.name}")'
+        return f'VPMRepOccurrence(name="{self.name}")'

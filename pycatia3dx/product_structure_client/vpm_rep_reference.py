@@ -98,4 +98,4 @@ class VPMRepReference(PLMEntity):
         return ParentVPMRepInstances(self.com_object.ParentRepInstances)
 
     def __repr__(self):
-        return f'VpmRepReference(name="{self.name}")'
+        return f'VPMRepReference(name="{self.name}")'

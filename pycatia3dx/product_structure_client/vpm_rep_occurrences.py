@@ -90,4 +90,4 @@ class VPMRepOccurrences(Collection):
             yield VPMRepOccurrence(self.com_object.Item(i + 1))
 
     def __repr__(self):
-        return f'VpmRepOccurrences(name="{self.name}")'
+        return f'VPMRepOccurrences(name="{self.name}")'
