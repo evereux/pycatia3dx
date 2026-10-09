@@ -9,7 +9,7 @@
 """
 from typing import TYPE_CHECKING
 
-from pycatia3dx import CatScriptCommand
+from pycatia3dx import CatScriptCommand, CATScriptLanguage
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
@@ -18,6 +18,7 @@ from pycatia3dx.interfaces.window import Window
 from pycatia3dx.interfaces.windows import Windows
 from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
+from pycatia3dx.scripts.vba import type_name_code, type_name_function_name
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.system_service import SystemService
 from pycatia3dx.types import ApplicationService, application_service_types
@@ -1452,6 +1453,20 @@ class Application(AnyObject):
         :return: None
         """
         return self.com_object.StartWorkbench(i_workbench_id)
+
+    def vba_type_name(self, object: AnyObject) -> str:
+        """
+        :param AnyObject object:
+        :return: str
+        """
+        type_name = self.system_service.evaluate(
+            type_name_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            type_name_function_name,
+            [object.com_object],
+        )
+
+        return type_name
 
     def __repr__(self):
         return f'Application(name="{self.name}")'
