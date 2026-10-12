@@ -99,7 +99,6 @@ class HybridBodies(Collection):
     def __getitem__(self, n: int) -> HybridBody:
         if (n + 1) > self.count:
             raise StopIteration
-
         return HybridBody(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[HybridBody]:

@@ -109,7 +109,6 @@ class HybridShapes(Collection):
     def __getitem__(self, n: int) -> HybridShape:
         if (n + 1) > self.count:
             raise StopIteration
-
         type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(n + 1)))
 
         if type_name in hybrid_shape_types:
