@@ -101,6 +101,7 @@ from pycatia3dx.hybrid_shapes.hybrid_shape_unfold import HybridShapeUnfold
 from pycatia3dx.hybrid_shapes.hybrid_shape_volume_explicit import HybridShapeVolumeExplicit
 from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_curve import HybridShapeWrapCurve
 from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_surface import HybridShapeWrapSurface
+from pycatia3dx.mmr_automation_interfaces.rectilinear_mono_dim_feat_edge import RectilinearMonoDimFeatEdge
 
 hybrid_shape_types = {
     'HybridShape3DCurveOffset': HybridShape3DCurveOffset,
@@ -206,4 +207,5 @@ hybrid_shape_types = {
     'HybridShapeVolumeExplicit': HybridShapeVolumeExplicit,
     'HybridShapeWrapCurve': HybridShapeWrapCurve,
     'HybridShapeWrapSurface': HybridShapeWrapSurface,
+    'RectilinearMonoDimFeatEdge': RectilinearMonoDimFeatEdge,
 }

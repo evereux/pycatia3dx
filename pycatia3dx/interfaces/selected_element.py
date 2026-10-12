@@ -13,6 +13,10 @@ from pycatia3dx.mode.reference import Reference
 from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
 from pycatia3dx.product_structure_client.vpm_rep_instance import VPMRepInstance
 from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.types.bodies import body_types
+from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
+from pycatia3dx.types.parameters_and_relations import parameter_and_relation_types
+from pycatia3dx.types.shapes import shape_types
 
 
 class SelectedElement(AnyObject):
@@ -314,22 +318,22 @@ class SelectedElement(AnyObject):
         _object = AnyObject(self.com_object.Value)
         type_string = self.application.vba_type_name(_object)
 
-        if type_string == "PlanarFace":
-            return PlanarFace(self.com_object.Value)
-        if type_string == "VPMRepInstance":
-            return VPMRepInstance(self.com_object.Value)
-        if type_string == "Body":
-            return Body(self.com_object.Value)
-        if type_string == "VPMOccurrence":
-            return VPMOccurrence(self.com_object.Value)
-        if type_string == "VPMRootOccurrence":
-            return VPMOccurrence(self.com_object.Value)
+        if type_string in hybrid_shape_types:
+            return hybrid_shape_types[type_string](self.com_object.Value)
+
+        if type_string in shape_types:
+            return shape_types[type_string](self.com_object.Value)
+
+        if type_string in body_types:
+            return body_types[type_string](self.com_object.Value)
+
+        if type_string in parameter_and_relation_types:
+            return parameter_and_relation_types[type_string](self.com_object.Value)
 
         # todo: add more types. there's going to be a lot I suspect
-        if type_string not in _object.__repr__():
-            self.logger.warning(
-                f'Please add type string "{type_string}" to checks so correct type is returned.'
-            )
+        self.logger.info(
+            f'Please add type string "{type_string}" to checks so correct type is returned.'
+        )
 
         return _object
 
