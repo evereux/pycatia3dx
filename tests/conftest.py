@@ -14,6 +14,13 @@ from tests.plm_helpers import open_plm_entity
 application = catia3dx()
 
 
+@pytest.fixture(scope="session", autouse=True)
+def cleanup_after_all_tests():
+    yield  # runs the tests
+    # close all open documents
+    close_all()
+
+
 def check_open_documents():
     windows = application.windows
     for window in windows:

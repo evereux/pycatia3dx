@@ -14,6 +14,14 @@ def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
     :param str base_type:
     """
 
+    # first check that the part isn't already open
+    windows = app.windows
+    for window in windows:
+        if window.name == title:
+            window.activate()
+            editor = app.active_editor
+            return editor
+
     search: SearchService = app.get_session_service('Search')
     db_search = search.database_search
     db_search.base_type = base_type
