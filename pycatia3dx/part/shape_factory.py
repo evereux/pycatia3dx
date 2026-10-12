@@ -10,6 +10,7 @@
 from pycatia3dx.mmr_automation_interfaces.body import Body
 from pycatia3dx.mmr_automation_interfaces.factory import Factory
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.part.loft import Loft
 from pycatia3dx.sketcher.sketch import Sketch
 from pycatia3dx.part.add import Add
 from pycatia3dx.part.assemble import Assemble
@@ -53,7 +54,6 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ShapeFactory(Factory):
-
     """
         .. note::
             :class: toggle
@@ -110,7 +110,12 @@ class ShapeFactory(Factory):
         """
         return Add(self.com_object.AddNewAdd(i_body_to_add.com_object))
 
-    def add_new_affinity2(self, x_ratio: float, y_ratio: float, z_ratio: float) -> AnyObject:
+    def add_new_affinity2(
+            self,
+            x_ratio: float,
+            y_ratio: float,
+            z_ratio: float
+    ) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -256,7 +261,15 @@ class ShapeFactory(Factory):
         """
         return AnyObject(self.com_object.AddNewBlend())
 
-    def add_new_chamfer(self, i_object_to_chamfer: Reference, i_propagation: int, i_mode: int, i_orientation: int, i_length1: float, i_length2_or_angle: float) -> Chamfer:
+    def add_new_chamfer(
+            self,
+            i_object_to_chamfer: Reference,
+            i_propagation: int,
+            i_mode: int,
+            i_orientation: int,
+            i_length1: float,
+            i_length2_or_angle: float
+    ) -> Chamfer:
         """
         .. note::
             :class: toggle
@@ -308,9 +321,32 @@ class ShapeFactory(Factory):
         :param float i_length2_or_angle:
         :return: Chamfer
         """
-        return Chamfer(self.com_object.AddNewChamfer(i_object_to_chamfer.com_object, i_propagation, i_mode, i_orientation, i_length1, i_length2_or_angle))
+        return Chamfer(
+            self.com_object.AddNewChamfer(
+                i_object_to_chamfer.com_object,
+                i_propagation,
+                i_mode,
+                i_orientation,
+                i_length1,
+                i_length2_or_angle
+            )
+        )
 
-    def add_new_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int, i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float, i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int, i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference, i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float, i_is_radius_aligned: bool) -> CircPattern:
+    def add_new_circ_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_radial_dir: int,
+            i_nb_of_copies_in_angular_dir: int,
+            i_step_in_radial_dir: float,
+            i_step_in_angular_dir: float,
+            i_shape_to_copy_position_along_radial_dir: int,
+            i_shape_to_copy_position_along_angular_dir: int,
+            i_rotation_center: Reference,
+            i_rotation_axis: Reference,
+            i_is_reversed_rotation_axis: bool,
+            i_rotation_angle: float,
+            i_is_radius_aligned: bool
+    ) -> CircPattern:
         """
         .. note::
             :class: toggle
@@ -390,9 +426,38 @@ class ShapeFactory(Factory):
         :param bool i_is_radius_aligned:
         :return: CircPattern
         """
-        return CircPattern(self.com_object.AddNewCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir, i_nb_of_copies_in_angular_dir, i_step_in_radial_dir, i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir, i_shape_to_copy_position_along_angular_dir, i_rotation_center.com_object, i_rotation_axis.com_object, i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned))
+        return CircPattern(
+            self.com_object.AddNewCircPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_radial_dir,
+                i_nb_of_copies_in_angular_dir,
+                i_step_in_radial_dir,
+                i_step_in_angular_dir,
+                i_shape_to_copy_position_along_radial_dir,
+                i_shape_to_copy_position_along_angular_dir,
+                i_rotation_center.com_object,
+                i_rotation_axis.com_object,
+                i_is_reversed_rotation_axis,
+                i_rotation_angle,
+                i_is_radius_aligned
+            )
+        )
 
-    def add_new_circ_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int, i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float, i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int, i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference, i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float, i_is_radius_aligned: bool) -> CircPattern:
+    def add_new_circ_pattern_of_list(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_radial_dir: int,
+            i_nb_of_copies_in_angular_dir: int,
+            i_step_in_radial_dir: float,
+            i_step_in_angular_dir: float,
+            i_shape_to_copy_position_along_radial_dir: int,
+            i_shape_to_copy_position_along_angular_dir: int,
+            i_rotation_center: Reference,
+            i_rotation_axis: Reference,
+            i_is_reversed_rotation_axis: bool,
+            i_rotation_angle: float,
+            i_is_radius_aligned: bool
+    ) -> CircPattern:
         """
         .. note::
             :class: toggle
@@ -472,7 +537,21 @@ class ShapeFactory(Factory):
         :param bool i_is_radius_aligned:
         :return: CircPattern
         """
-        return CircPattern(self.com_object.AddNewCircPatternofList(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir, i_nb_of_copies_in_angular_dir, i_step_in_radial_dir, i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir, i_shape_to_copy_position_along_angular_dir, i_rotation_center.com_object, i_rotation_axis.com_object, i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned))
+        return CircPattern(
+            self.com_object.AddNewCircPatternofList(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_radial_dir,
+                i_nb_of_copies_in_angular_dir,
+                i_step_in_radial_dir,
+                i_step_in_angular_dir,
+                i_shape_to_copy_position_along_radial_dir,
+                i_shape_to_copy_position_along_angular_dir,
+                i_rotation_center.com_object,
+                i_rotation_axis.com_object,
+                i_is_reversed_rotation_axis,
+                i_rotation_angle, i_is_radius_aligned
+            )
+        )
 
     def add_new_close_surface(self, i_close_element: Reference) -> CloseSurface:
         """
@@ -515,7 +594,19 @@ class ShapeFactory(Factory):
         """
         return Defeaturing(self.com_object.AddNewDefeaturing())
 
-    def add_new_draft(self, i_face_to_draft: Reference, i_neutral: Reference, i_neutral_mode: int, i_parting: Reference, i_dir_x: float, i_dir_y: float, i_dir_z: float, i_mode: int, i_angle: float, i_multiselection_mode: int) -> Draft:
+    def add_new_draft(
+            self,
+            i_face_to_draft: Reference,
+            i_neutral: Reference,
+            i_neutral_mode: int,
+            i_parting: Reference,
+            i_dir_x: float,
+            i_dir_y: float,
+            i_dir_z: float,
+            i_mode: int,
+            i_angle: float,
+            i_multiselection_mode: int
+    ) -> Draft:
         """
         .. note::
             :class: toggle
@@ -590,9 +681,27 @@ class ShapeFactory(Factory):
         :param int i_multiselection_mode:
         :return: Draft
         """
-        return Draft(self.com_object.AddNewDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode, i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle, i_multiselection_mode))
+        return Draft(
+            self.com_object.AddNewDraft(
+                i_face_to_draft.com_object,
+                i_neutral.com_object,
+                i_neutral_mode,
+                i_parting.com_object,
+                i_dir_x,
+                i_dir_y,
+                i_dir_z,
+                i_mode,
+                i_angle,
+                i_multiselection_mode
+            )
+        )
 
-    def add_new_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_radius: float) -> ConstRadEdgeFillet:
+    def add_new_edge_fillet_with_constant_radius(
+            self,
+            i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_radius: float
+    ) -> ConstRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -613,9 +722,21 @@ class ShapeFactory(Factory):
         :param float i_radius:
         :return: ConstRadEdgeFillet
         """
-        return ConstRadEdgeFillet(self.com_object.AddNewEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode, i_radius))
+        return ConstRadEdgeFillet(
+            self.com_object.AddNewEdgeFilletWithConstantRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_radius
+            )
+        )
 
-    def add_new_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_variation_mode: int, i_default_radius: float) -> VarRadEdgeFillet:
+    def add_new_edge_fillet_with_varying_radius(
+            self,
+            i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_variation_mode: int,
+            i_default_radius: float
+    ) -> VarRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -637,7 +758,14 @@ class ShapeFactory(Factory):
         :param float i_default_radius:
         :return: VarRadEdgeFillet
         """
-        return VarRadEdgeFillet(self.com_object.AddNewEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode, i_variation_mode, i_default_radius))
+        return VarRadEdgeFillet(
+            self.com_object.AddNewEdgeFilletWithVaryingRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_variation_mode,
+                i_default_radius
+            )
+        )
 
     def add_new_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
@@ -659,7 +787,22 @@ class ShapeFactory(Factory):
         """
         return FaceFillet(self.com_object.AddNewFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_gsd_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int, i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float, i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int, i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference, i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float, i_is_radius_aligned: bool, i_complete_crown: bool, i_type: float) -> CircPattern:
+    def add_new_gsd_circ_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_radial_dir: int,
+            i_nb_of_copies_in_angular_dir: int,
+            i_step_in_radial_dir: float,
+            i_step_in_angular_dir: float,
+            i_shape_to_copy_position_along_radial_dir: int,
+            i_shape_to_copy_position_along_angular_dir: int,
+            i_rotation_center: Reference,
+            i_rotation_axis: Reference,
+            i_is_reversed_rotation_axis: bool, i_rotation_angle: float,
+            i_is_radius_aligned: bool,
+            i_complete_crown: bool,
+            i_type: float
+    ) -> CircPattern:
         """
         .. note::
             :class: toggle
@@ -693,9 +836,41 @@ class ShapeFactory(Factory):
         :param float i_type:
         :return: CircPattern
         """
-        return CircPattern(self.com_object.AddNewGSDCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir, i_nb_of_copies_in_angular_dir, i_step_in_radial_dir, i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir, i_shape_to_copy_position_along_angular_dir, i_rotation_center.com_object, i_rotation_axis.com_object, i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned, i_complete_crown, i_type))
+        return CircPattern(
+            self.com_object.AddNewGSDCircPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_radial_dir,
+                i_nb_of_copies_in_angular_dir,
+                i_step_in_radial_dir,
+                i_step_in_angular_dir,
+                i_shape_to_copy_position_along_radial_dir,
+                i_shape_to_copy_position_along_angular_dir,
+                i_rotation_center.com_object,
+                i_rotation_axis.com_object,
+                i_is_reversed_rotation_axis,
+                i_rotation_angle,
+                i_is_radius_aligned,
+                i_complete_crown,
+                i_type
+            )
+        )
 
-    def add_new_gsd_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int, i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float, i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool, i_is_reversed_dir2: bool, i_rotation_angle: float, i_type: float) -> RectPattern:
+    def add_new_gsd_rect_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_dir1: int,
+            i_nb_of_copies_in_dir2: int,
+            i_step_in_dir1: float,
+            i_step_in_dir2: float,
+            i_shape_to_copy_position_along_dir1: int,
+            i_shape_to_copy_position_along_dir2: int,
+            i_dir1: Reference,
+            i_dir2: Reference,
+            i_is_reversed_dir1: bool,
+            i_is_reversed_dir2: bool,
+            i_rotation_angle: float,
+            i_type: float
+    ) -> RectPattern:
         """
         .. note::
             :class: toggle
@@ -725,7 +900,23 @@ class ShapeFactory(Factory):
         :param float i_type:
         :return: RectPattern
         """
-        return RectPattern(self.com_object.AddNewGSDRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1, i_shape_to_copy_position_along_dir2, i_dir1.com_object, i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle, i_type))
+        return RectPattern(
+            self.com_object.AddNewGSDRectPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_dir1,
+                i_nb_of_copies_in_dir2,
+                i_step_in_dir1,
+                i_step_in_dir2,
+                i_shape_to_copy_position_along_dir1,
+                i_shape_to_copy_position_along_dir2,
+                i_dir1.com_object,
+                i_dir2.com_object,
+                i_is_reversed_dir1,
+                i_is_reversed_dir2,
+                i_rotation_angle,
+                i_type
+            )
+        )
 
     def add_new_groove(self, i_sketch: Sketch) -> Groove:
         """
@@ -808,7 +999,14 @@ class ShapeFactory(Factory):
         """
         return Hole(self.com_object.AddNewHole(i_support.com_object, i_depth))
 
-    def add_new_hole_from_point(self, i_x: float, i_y: float, i_z: float, i_support: Reference, i_depth: float) -> Hole:
+    def add_new_hole_from_point(
+            self,
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_support: Reference,
+            i_depth: float
+    ) -> Hole:
         """
         .. note::
             :class: toggle
@@ -848,7 +1046,15 @@ class ShapeFactory(Factory):
         :param float i_depth:
         :return: Hole
         """
-        return Hole(self.com_object.AddNewHoleFromPoint(i_x, i_y, i_z, i_support.com_object, i_depth))
+        return Hole(
+            self.com_object.AddNewHoleFromPoint(
+                i_x,
+                i_y,
+                i_z,
+                i_support.com_object,
+                i_depth
+            )
+        )
 
     def add_new_hole_from_ref_point(self, i_origin: Reference, i_support: Reference, i_depth: float) -> Hole:
         """
@@ -914,7 +1120,15 @@ class ShapeFactory(Factory):
         """
         return Hole(self.com_object.AddNewHoleFromSketch(i_sketch.com_object, i_depth))
 
-    def add_new_hole_with2_constraints(self, i_x: float, i_y: float, i_z: float, i_edge1: Reference, i_edge2: Reference, i_support: Reference, i_depth: float) -> Hole:
+    def add_new_hole_with2_constraints(
+            self,
+            i_x: float,
+            i_y: float, i_z: float,
+            i_edge1: Reference,
+            i_edge2: Reference,
+            i_support: Reference,
+            i_depth: float
+    ) -> Hole:
         """
         .. note::
             :class: toggle
@@ -963,9 +1177,27 @@ class ShapeFactory(Factory):
         :param float i_depth:
         :return: Hole
         """
-        return Hole(self.com_object.AddNewHoleWith2Constraints(i_x, i_y, i_z, i_edge1.com_object, i_edge2.com_object, i_support.com_object, i_depth))
+        return Hole(
+            self.com_object.AddNewHoleWith2Constraints(
+                i_x,
+                i_y,
+                i_z,
+                i_edge1.com_object,
+                i_edge2.com_object,
+                i_support.com_object,
+                i_depth
+            )
+        )
 
-    def add_new_hole_with_constraint(self, i_x: float, i_y: float, i_z: float, i_edge: Reference, i_support: Reference, i_depth: float) -> Hole:
+    def add_new_hole_with_constraint(
+            self,
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_edge: Reference,
+            i_support: Reference,
+            i_depth: float
+    ) -> Hole:
         """
         .. note::
             :class: toggle
@@ -1013,7 +1245,16 @@ class ShapeFactory(Factory):
         :param float i_depth:
         :return: Hole
         """
-        return Hole(self.com_object.AddNewHoleWithConstraint(i_x, i_y, i_z, i_edge.com_object, i_support.com_object, i_depth))
+        return Hole(
+            self.com_object.AddNewHoleWithConstraint(
+                i_x,
+                i_y,
+                i_z,
+                i_edge.com_object,
+                i_support.com_object,
+                i_depth
+            )
+        )
 
     def add_new_intersect(self, i_body_to_intersect: Body) -> Intersect:
         """
@@ -1038,7 +1279,7 @@ class ShapeFactory(Factory):
         """
         return Intersect(self.com_object.AddNewIntersect(i_body_to_intersect.com_object))
 
-    def add_new_loft(self) -> AnyObject:
+    def add_new_loft(self) -> Loft:
         """
         .. note::
             :class: toggle
@@ -1050,11 +1291,17 @@ class ShapeFactory(Factory):
                 |     Returns:
                 |         The created Loft feature
 
-        :return: AnyObject
+        :return: Loft
         """
-        return AnyObject(self.com_object.AddNewLoft())
+        return Loft(self.com_object.AddNewLoft())
 
-    def add_new_manu_or_auto_partition(self, i_volume_to_be_partitioned: Reference, i_auto_mode: bool, i_cutting_element: Reference, i_limit: int) -> Partition:
+    def add_new_manu_or_auto_partition(
+            self,
+            i_volume_to_be_partitioned: Reference,
+            i_auto_mode: bool,
+            i_cutting_element: Reference,
+            i_limit: int
+    ) -> Partition:
         """
         .. note::
             :class: toggle
@@ -1089,7 +1336,14 @@ class ShapeFactory(Factory):
         :param int i_limit:
         :return: Partition
         """
-        return Partition(self.com_object.AddNewManuOrAutoPartition(i_volume_to_be_partitioned.com_object, i_auto_mode, i_cutting_element.com_object, i_limit))
+        return Partition(
+            self.com_object.AddNewManuOrAutoPartition(
+                i_volume_to_be_partitioned.com_object,
+                i_auto_mode,
+                i_cutting_element.com_object,
+                i_limit
+            )
+        )
 
     def add_new_mirror(self, i_mirroring_element: Reference) -> Mirror:
         """
@@ -1241,7 +1495,20 @@ class ShapeFactory(Factory):
         """
         return Pocket(self.com_object.AddNewPocketFromRef(i_profile_elt.com_object, i_height))
 
-    def add_new_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int, i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float, i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool, i_is_reversed_dir2: bool, i_rotation_angle: float) -> RectPattern:
+    def add_new_rect_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_dir1: int,
+            i_nb_of_copies_in_dir2: int,
+            i_step_in_dir1: float,
+            i_step_in_dir2: float,
+            i_shape_to_copy_position_along_dir1: int,
+            i_shape_to_copy_position_along_dir2: int,
+            i_dir1: Reference, i_dir2: Reference,
+            i_is_reversed_dir1: bool,
+            i_is_reversed_dir2: bool,
+            i_rotation_angle: float
+    ) -> RectPattern:
         """
         .. note::
             :class: toggle
@@ -1323,9 +1590,38 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :return: RectPattern
         """
-        return RectPattern(self.com_object.AddNewRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1, i_shape_to_copy_position_along_dir2, i_dir1.com_object, i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle))
+        return RectPattern(
+            self.com_object.AddNewRectPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_dir1,
+                i_nb_of_copies_in_dir2,
+                i_step_in_dir1,
+                i_step_in_dir2,
+                i_shape_to_copy_position_along_dir1,
+                i_shape_to_copy_position_along_dir2,
+                i_dir1.com_object,
+                i_dir2.com_object,
+                i_is_reversed_dir1,
+                i_is_reversed_dir2,
+                i_rotation_angle
+            )
+        )
 
-    def add_new_rect_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int, i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float, i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool, i_is_reversed_dir2: bool, i_rotation_angle: float) -> RectPattern:
+    def add_new_rect_patternof_list(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_dir1: int,
+            i_nb_of_copies_in_dir2: int,
+            i_step_in_dir1: float,
+            i_step_in_dir2: float,
+            i_shape_to_copy_position_along_dir1: int,
+            i_shape_to_copy_position_along_dir2: int,
+            i_dir1: Reference,
+            i_dir2: Reference,
+            i_is_reversed_dir1: bool,
+            i_is_reversed_dir2: bool,
+            i_rotation_angle: float
+    ) -> RectPattern:
         """
         .. note::
             :class: toggle
@@ -1403,7 +1699,22 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :return: RectPattern
         """
-        return RectPattern(self.com_object.AddNewRectPatternofList(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1, i_shape_to_copy_position_along_dir2, i_dir1.com_object, i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle))
+        return RectPattern(
+            self.com_object.AddNewRectPatternofList(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_dir1,
+                i_nb_of_copies_in_dir2,
+                i_step_in_dir1,
+                i_step_in_dir2,
+                i_shape_to_copy_position_along_dir1,
+                i_shape_to_copy_position_along_dir2,
+                i_dir1.com_object,
+                i_dir2.com_object,
+                i_is_reversed_dir1,
+                i_is_reversed_dir2,
+                i_rotation_angle
+            )
+        )
 
     def add_new_remove(self, i_body_to_remove: Body) -> Remove:
         """
@@ -1486,7 +1797,12 @@ class ShapeFactory(Factory):
         """
         return AnyObject(self.com_object.AddNewRemovedLoft())
 
-    def add_new_replace_face(self, i_split_plane: Reference, i_remove_face: Reference, i_splitting_side: int) -> ReplaceFace:
+    def add_new_replace_face(
+            self,
+            i_split_plane: Reference,
+            i_remove_face: Reference,
+            i_splitting_side: int
+    ) -> ReplaceFace:
         """
         .. note::
             :class: toggle
@@ -1515,7 +1831,13 @@ class ShapeFactory(Factory):
         :param int i_splitting_side:
         :return: ReplaceFace
         """
-        return ReplaceFace(self.com_object.AddNewReplaceFace(i_split_plane.com_object, i_remove_face.com_object, i_splitting_side))
+        return ReplaceFace(
+            self.com_object.AddNewReplaceFace(
+                i_split_plane.com_object,
+                i_remove_face.com_object,
+                i_splitting_side
+            )
+        )
 
     def add_new_rib(self, i_sketch: Sketch, i_center_curve: Sketch) -> Rib:
         """
@@ -1690,7 +2012,12 @@ class ShapeFactory(Factory):
         """
         return Shaft(self.com_object.AddNewShaftFromRef(i_profile_elt.com_object))
 
-    def add_new_shell(self, i_face_to_remove: Reference, i_internal_thickness: float, i_external_thickness: float) -> Shell:
+    def add_new_shell(
+            self,
+            i_face_to_remove: Reference,
+            i_internal_thickness: float,
+            i_external_thickness: float
+    ) -> Shell:
         """
         .. note::
             :class: toggle
@@ -1722,7 +2049,13 @@ class ShapeFactory(Factory):
         :param float i_external_thickness:
         :return: Shell
         """
-        return Shell(self.com_object.AddNewShell(i_face_to_remove.com_object, i_internal_thickness, i_external_thickness))
+        return Shell(
+            self.com_object.AddNewShell(
+                i_face_to_remove.com_object,
+                i_internal_thickness,
+                i_external_thickness
+            )
+        )
 
     def add_new_slot(self, i_sketch: Sketch, i_center_curve: Sketch) -> Slot:
         """
@@ -1805,9 +2138,19 @@ class ShapeFactory(Factory):
         :param Reference i_profile_elt_second:
         :return: SolidCombine
         """
-        return SolidCombine(self.com_object.AddNewSolidCombine(i_profile_elt_first.com_object, i_profile_elt_second.com_object))
+        return SolidCombine(
+            self.com_object.AddNewSolidCombine(
+                i_profile_elt_first.com_object,
+                i_profile_elt_second.com_object
+            )
+        )
 
-    def add_new_solid_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_radius: float) -> ConstRadEdgeFillet:
+    def add_new_solid_edge_fillet_with_constant_radius(
+            self,
+            i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_radius: float
+    ) -> ConstRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -1839,9 +2182,21 @@ class ShapeFactory(Factory):
         :param float i_radius:
         :return: ConstRadEdgeFillet
         """
-        return ConstRadEdgeFillet(self.com_object.AddNewSolidEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode, i_radius))
+        return ConstRadEdgeFillet(
+            self.com_object.AddNewSolidEdgeFilletWithConstantRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_radius
+            )
+        )
 
-    def add_new_solid_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_variation_mode: int, i_default_radius: float) -> VarRadEdgeFillet:
+    def add_new_solid_edge_fillet_with_varying_radius(
+            self,
+            i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_variation_mode: int,
+            i_default_radius: float
+    ) -> VarRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -1879,7 +2234,13 @@ class ShapeFactory(Factory):
         :param float i_default_radius:
         :return: VarRadEdgeFillet
         """
-        return VarRadEdgeFillet(self.com_object.AddNewSolidEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode, i_variation_mode, i_default_radius))
+        return VarRadEdgeFillet(
+            self.com_object.AddNewSolidEdgeFilletWithVaryingRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_variation_mode, i_default_radius
+            )
+        )
 
     def add_new_solid_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
@@ -1915,7 +2276,12 @@ class ShapeFactory(Factory):
         """
         return FaceFillet(self.com_object.AddNewSolidFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_solid_tritangent_fillet(self, i_f1: Reference, i_f2: Reference, i_removed_face: Reference) -> TritangentFillet:
+    def add_new_solid_tritangent_fillet(
+            self,
+            i_f1: Reference,
+            i_f2: Reference,
+            i_removed_face: Reference
+    ) -> TritangentFillet:
         """
         .. note::
             :class: toggle
@@ -1951,7 +2317,13 @@ class ShapeFactory(Factory):
         :param Reference i_removed_face:
         :return: TritangentFillet
         """
-        return TritangentFillet(self.com_object.AddNewSolidTritangentFillet(i_f1.com_object, i_f2.com_object, i_removed_face.com_object))
+        return TritangentFillet(
+            self.com_object.AddNewSolidTritangentFillet(
+                i_f1.com_object,
+                i_f2.com_object,
+                i_removed_face.com_object
+            )
+        )
 
     def add_new_split(self, i_splitting_element: Reference, i_split_side: int) -> Split:
         """
@@ -2034,7 +2406,12 @@ class ShapeFactory(Factory):
         """
         return Stiffener(self.com_object.AddNewStiffenerFromRef(i_profile_elt.com_object))
 
-    def add_new_surface_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_radius: float) -> ConstRadEdgeFillet:
+    def add_new_surface_edge_fillet_with_constant_radius(
+            self,
+            i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_radius: float
+    ) -> ConstRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -2066,9 +2443,20 @@ class ShapeFactory(Factory):
         :param float i_radius:
         :return: ConstRadEdgeFillet
         """
-        return ConstRadEdgeFillet(self.com_object.AddNewSurfaceEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode, i_radius))
+        return ConstRadEdgeFillet(
+            self.com_object.AddNewSurfaceEdgeFilletWithConstantRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_radius
+            )
+        )
 
-    def add_new_surface_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int, i_variation_mode: int, i_default_radius: float) -> VarRadEdgeFillet:
+    def add_new_surface_edge_fillet_with_varying_radius(
+            self, i_edge_to_fillet: Reference,
+            i_propag_mode: int,
+            i_variation_mode: int,
+            i_default_radius: float
+    ) -> VarRadEdgeFillet:
         """
         .. note::
             :class: toggle
@@ -2106,7 +2494,14 @@ class ShapeFactory(Factory):
         :param float i_default_radius:
         :return: VarRadEdgeFillet
         """
-        return VarRadEdgeFillet(self.com_object.AddNewSurfaceEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode, i_variation_mode, i_default_radius))
+        return VarRadEdgeFillet(
+            self.com_object.AddNewSurfaceEdgeFilletWithVaryingRadius(
+                i_edge_to_fillet.com_object,
+                i_propag_mode,
+                i_variation_mode,
+                i_default_radius
+            )
+        )
 
     def add_new_surface_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
@@ -2142,7 +2537,12 @@ class ShapeFactory(Factory):
         """
         return FaceFillet(self.com_object.AddNewSurfaceFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_surface_tritangent_fillet(self, i_f1: Reference, i_f2: Reference, i_removed_face: Reference) -> TritangentFillet:
+    def add_new_surface_tritangent_fillet(
+            self,
+            i_f1: Reference,
+            i_f2: Reference,
+            i_removed_face: Reference
+    ) -> TritangentFillet:
         """
         .. note::
             :class: toggle
@@ -2178,7 +2578,13 @@ class ShapeFactory(Factory):
         :param Reference i_removed_face:
         :return: TritangentFillet
         """
-        return TritangentFillet(self.com_object.AddNewSurfaceTritangentFillet(i_f1.com_object, i_f2.com_object, i_removed_face.com_object))
+        return TritangentFillet(
+            self.com_object.AddNewSurfaceTritangentFillet(
+                i_f1.com_object,
+                i_f2.com_object,
+                i_removed_face.com_object
+            )
+        )
 
     def add_new_surfacic_auto_fillet(self, i_fillet_radius: float) -> AutoFillet:
         """
@@ -2205,7 +2611,22 @@ class ShapeFactory(Factory):
         """
         return AutoFillet(self.com_object.AddNewSurfacicAutoFillet(i_fillet_radius))
 
-    def add_new_surfacic_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int, i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float, i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int, i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference, i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float, i_is_radius_aligned: bool, i_complete_crown: bool) -> CircPattern:
+    def add_new_surfacic_circ_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_radial_dir: int,
+            i_nb_of_copies_in_angular_dir: int,
+            i_step_in_radial_dir: float,
+            i_step_in_angular_dir: float,
+            i_shape_to_copy_position_along_radial_dir: int,
+            i_shape_to_copy_position_along_angular_dir: int,
+            i_rotation_center: Reference,
+            i_rotation_axis: Reference,
+            i_is_reversed_rotation_axis: bool,
+            i_rotation_angle: float,
+            i_is_radius_aligned: bool,
+            i_complete_crown: bool
+    ) -> CircPattern:
         """
         .. note::
             :class: toggle
@@ -2291,9 +2712,37 @@ class ShapeFactory(Factory):
         :param bool i_complete_crown:
         :return: CircPattern
         """
-        return CircPattern(self.com_object.AddNewSurfacicCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir, i_nb_of_copies_in_angular_dir, i_step_in_radial_dir, i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir, i_shape_to_copy_position_along_angular_dir, i_rotation_center.com_object, i_rotation_axis.com_object, i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned, i_complete_crown))
+        return CircPattern(
+            self.com_object.AddNewSurfacicCircPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_radial_dir,
+                i_nb_of_copies_in_angular_dir,
+                i_step_in_radial_dir,
+                i_step_in_angular_dir,
+                i_shape_to_copy_position_along_radial_dir,
+                i_shape_to_copy_position_along_angular_dir,
+                i_rotation_center.com_object,
+                i_rotation_axis.com_object,
+                i_is_reversed_rotation_axis,
+                i_rotation_angle,
+                i_is_radius_aligned, i_complete_crown
+            )
+        )
 
-    def add_new_surfacic_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int, i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float, i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool, i_is_reversed_dir2: bool, i_rotation_angle: float) -> RectPattern:
+    def add_new_surfacic_rect_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies_in_dir1: int,
+            i_nb_of_copies_in_dir2: int,
+            i_step_in_dir1: float,
+            i_step_in_dir2: float,
+            i_shape_to_copy_position_along_dir1: int,
+            i_shape_to_copy_position_along_dir2: int,
+            i_dir1: Reference, i_dir2: Reference,
+            i_is_reversed_dir1: bool,
+            i_is_reversed_dir2: bool,
+            i_rotation_angle: float
+    ) -> RectPattern:
         """
         .. note::
             :class: toggle
@@ -2376,9 +2825,30 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :return: RectPattern
         """
-        return RectPattern(self.com_object.AddNewSurfacicRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1, i_shape_to_copy_position_along_dir2, i_dir1.com_object, i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle))
+        return RectPattern(
+            self.com_object.AddNewSurfacicRectPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies_in_dir1,
+                i_nb_of_copies_in_dir2,
+                i_step_in_dir1,
+                i_step_in_dir2,
+                i_shape_to_copy_position_along_dir1,
+                i_shape_to_copy_position_along_dir2,
+                i_dir1.com_object,
+                i_dir2.com_object,
+                i_is_reversed_dir1,
+                i_is_reversed_dir2,
+                i_rotation_angle
+            )
+        )
 
-    def add_new_surfacic_sew_surface(self, i_type: int, i_support_surface: Reference, i_sewing_element: Reference, i_sewing_side: int) -> SewSurface:
+    def add_new_surfacic_sew_surface(
+            self,
+            i_type: int,
+            i_support_surface: Reference,
+            i_sewing_element: Reference,
+            i_sewing_side: int
+    ) -> SewSurface:
         """
         .. note::
             :class: toggle
@@ -2412,9 +2882,20 @@ class ShapeFactory(Factory):
         :param int i_sewing_side:
         :return: SewSurface
         """
-        return SewSurface(self.com_object.AddNewSurfacicSewSurface(i_type, i_support_surface.com_object, i_sewing_element.com_object, i_sewing_side))
+        return SewSurface(
+            self.com_object.AddNewSurfacicSewSurface(
+                i_type,
+                i_support_surface.com_object,
+                i_sewing_element.com_object,
+                i_sewing_side
+            )
+        )
 
-    def add_new_surfacic_user_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
+    def add_new_surfacic_user_pattern(
+            self,
+            i_shape_to_copy: AnyObject,
+            i_nb_of_copies: int
+    ) -> UserPattern:
         """
         .. note::
             :class: toggle
@@ -2439,9 +2920,18 @@ class ShapeFactory(Factory):
         :param int i_nb_of_copies:
         :return: UserPattern
         """
-        return UserPattern(self.com_object.AddNewSurfacicUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
+        return UserPattern(
+            self.com_object.AddNewSurfacicUserPattern(
+                i_shape_to_copy.com_object,
+                i_nb_of_copies
+            ))
 
-    def add_new_thick_surface(self, i_offset_element: Reference, i_isens_offset: int, i_top_offset: float, i_bot_offset: float) -> ThickSurface:
+    def add_new_thick_surface(
+            self,
+            i_offset_element: Reference,
+            i_isens_offset: int, i_top_offset: float,
+            i_bot_offset: float
+    ) -> ThickSurface:
         """
         .. note::
             :class: toggle
@@ -2475,7 +2965,13 @@ class ShapeFactory(Factory):
         :param float i_bot_offset:
         :return: ThickSurface
         """
-        return ThickSurface(self.com_object.AddNewThickSurface(i_offset_element.com_object, i_isens_offset, i_top_offset, i_bot_offset))
+        return ThickSurface(
+            self.com_object.AddNewThickSurface(
+                i_offset_element.com_object,
+                i_isens_offset,
+                i_top_offset,
+                i_bot_offset)
+        )
 
     def add_new_thickness(self, i_face_to_thicken: Reference, i_offset: float) -> Thickness:
         """
@@ -2579,7 +3075,12 @@ class ShapeFactory(Factory):
         """
         return Trim(self.com_object.AddNewTrim(i_body_to_trim.com_object))
 
-    def add_new_tritangent_fillet(self, i_f1: Reference, i_f2: Reference, i_removed_face: Reference) -> TritangentFillet:
+    def add_new_tritangent_fillet(
+            self,
+            i_f1: Reference,
+            i_f2: Reference,
+            i_removed_face: Reference
+    ) -> TritangentFillet:
         """
         .. note::
             :class: toggle
@@ -2598,7 +3099,13 @@ class ShapeFactory(Factory):
         :param Reference i_removed_face:
         :return: TritangentFillet
         """
-        return TritangentFillet(self.com_object.AddNewTritangentFillet(i_f1.com_object, i_f2.com_object, i_removed_face.com_object))
+        return TritangentFillet(
+            self.com_object.AddNewTritangentFillet(
+                i_f1.com_object,
+                i_f2.com_object,
+                i_removed_face.com_object
+            )
+        )
 
     def add_new_user_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
@@ -2627,7 +3134,7 @@ class ShapeFactory(Factory):
         """
         return UserPattern(self.com_object.AddNewUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
 
-    def add_new_user_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
+    def add_new_user_pattern_of_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
             :class: toggle
@@ -2766,7 +3273,13 @@ class ShapeFactory(Factory):
         """
         return Remove(self.com_object.AddNewVolumeRemove(i_body1.com_object, i_body2.com_object, i_type))
 
-    def add_new_volume_sew_surface(self, i_type: int, i_support_volume: Reference, i_sewing_element: Reference, i_sewing_side: int) -> SewSurface:
+    def add_new_volume_sew_surface(
+            self,
+            i_type: int,
+            i_support_volume: Reference,
+            i_sewing_element: Reference,
+            i_sewing_side: int
+    ) -> SewSurface:
         """
         .. note::
             :class: toggle
@@ -2800,9 +3313,21 @@ class ShapeFactory(Factory):
         :param int i_sewing_side:
         :return: SewSurface
         """
-        return SewSurface(self.com_object.AddNewVolumeSewSurface(i_type, i_support_volume.com_object, i_sewing_element.com_object, i_sewing_side))
+        return SewSurface(
+            self.com_object.AddNewVolumeSewSurface(
+                i_type, i_support_volume.com_object,
+                i_sewing_element.com_object,
+                i_sewing_side
+            )
+        )
 
-    def add_new_volume_shell(self, i_face_to_remove: Reference, i_internal_thickness: float, i_external_thickness: float, i_volume_support: Reference) -> Shell:
+    def add_new_volume_shell(
+            self,
+            i_face_to_remove: Reference,
+            i_internal_thickness: float,
+            i_external_thickness: float,
+            i_volume_support: Reference
+    ) -> Shell:
         """
         .. note::
             :class: toggle
@@ -2839,9 +3364,22 @@ class ShapeFactory(Factory):
         :param Reference i_volume_support:
         :return: Shell
         """
-        return Shell(self.com_object.AddNewVolumeShell(i_face_to_remove.com_object, i_internal_thickness, i_external_thickness, i_volume_support.com_object))
+        return Shell(
+            self.com_object.AddNewVolumeShell(
+                i_face_to_remove.com_object,
+                i_internal_thickness,
+                i_external_thickness,
+                i_volume_support.com_object
+            )
+        )
 
-    def add_new_volume_thick_surface(self, i_offset_element: Reference, i_isens_offset: int, i_top_offset: float, i_bot_offset: float) -> ThickSurface:
+    def add_new_volume_thick_surface(
+            self,
+            i_offset_element: Reference,
+            i_isens_offset: int,
+            i_top_offset: float,
+            i_bot_offset: float
+    ) -> ThickSurface:
         """
         .. note::
             :class: toggle
@@ -2875,9 +3413,22 @@ class ShapeFactory(Factory):
         :param float i_bot_offset:
         :return: ThickSurface
         """
-        return ThickSurface(self.com_object.AddNewVolumeThickSurface(i_offset_element.com_object, i_isens_offset, i_top_offset, i_bot_offset))
+        return ThickSurface(
+            self.com_object.AddNewVolumeThickSurface(
+                i_offset_element.com_object,
+                i_isens_offset,
+                i_top_offset,
+                i_bot_offset
+            )
+        )
 
-    def add_new_volume_thickness(self, i_face_to_thicken: Reference, i_offset: float, i_type: int, i_volume_support: Reference) -> Thickness:
+    def add_new_volume_thickness(
+            self,
+            i_face_to_thicken: Reference,
+            i_offset: float,
+            i_type: int,
+            i_volume_support: Reference
+    ) -> Thickness:
         """
         .. note::
             :class: toggle
@@ -2913,9 +3464,19 @@ class ShapeFactory(Factory):
         :param Reference i_volume_support:
         :return: Thickness
         """
-        return Thickness(self.com_object.AddNewVolumeThickness(i_face_to_thicken.com_object, i_offset, i_type, i_volume_support.com_object))
+        return Thickness(
+            self.com_object.AddNewVolumeThickness(
+                i_face_to_thicken.com_object,
+                i_offset, i_type,
+                i_volume_support.com_object
+            )
+        )
 
-    def add_new_volume_trim(self, i_support_volume: Reference, i_cutting_volume: Reference) -> Trim:
+    def add_new_volume_trim(
+            self,
+            i_support_volume: Reference,
+            i_cutting_volume: Reference
+    ) -> Trim:
         """
         .. note::
             :class: toggle
@@ -2940,9 +3501,26 @@ class ShapeFactory(Factory):
         :param Reference i_cutting_volume:
         :return: Trim
         """
-        return Trim(self.com_object.AddNewVolumeTrim(i_support_volume.com_object, i_cutting_volume.com_object))
+        return Trim(
+            self.com_object.AddNewVolumeTrim(
+                i_support_volume.com_object,
+                i_cutting_volume.com_object
+            )
+        )
 
-    def add_new_volumic_draft(self, i_face_to_draft: Reference, i_neutral: Reference, i_neutral_mode: int, i_parting: Reference, i_dir_x: float, i_dir_y: float, i_dir_z: float, i_mode: int, i_angle: float, i_multiselection_mode: int, i_type: int, i_volume_support: Reference) -> Draft:
+    def add_new_volumic_draft(
+            self,
+            i_face_to_draft: Reference,
+            i_neutral: Reference,
+            i_neutral_mode: int,
+            i_parting: Reference,
+            i_dir_x: float,
+            i_dir_y: float,
+            i_dir_z: float, i_mode: int,
+            i_angle: float,
+            i_multiselection_mode: int, i_type: int,
+            i_volume_support: Reference
+    ) -> Draft:
         """
         .. note::
             :class: toggle
@@ -3024,7 +3602,22 @@ class ShapeFactory(Factory):
         :param Reference i_volume_support:
         :return: Draft
         """
-        return Draft(self.com_object.AddNewVolumicDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode, i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle, i_multiselection_mode, i_type, i_volume_support.com_object))
+        return Draft(
+            self.com_object.AddNewVolumicDraft(
+                i_face_to_draft.com_object,
+                i_neutral.com_object,
+                i_neutral_mode,
+                i_parting.com_object,
+                i_dir_x,
+                i_dir_y,
+                i_dir_z,
+                i_mode,
+                i_angle,
+                i_multiselection_mode,
+                i_type,
+                i_volume_support.com_object
+            )
+        )
 
     def __repr__(self):
-        return f'ShapeFactory(name="{ self.name }")'
+        return f'ShapeFactory(name="{self.name}")'

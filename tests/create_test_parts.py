@@ -17,6 +17,7 @@ from tests.test_part_parameters import geom_set_sketches
 
 
 def create_test_part_one(application: Application):
+    application.logger.info(f'Creating test file {TEST_CATPART_ONE}.')
     plm_service: PLMNewService = application.get_session_service("PLMNewService")
     plm_service.set_attribute_value("V_Name", TEST_CATPART_ONE)
     plm_service.set_attribute_value("V_description", TEST_CATPART_ONE_DESCRIPTION)
@@ -302,3 +303,5 @@ def create_test_part_one(application: Application):
     # ##### #
 
     application.active_window.close()
+
+    application.logger.info(f'Created {TEST_CATPART_ONE}.')

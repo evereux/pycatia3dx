@@ -12,8 +12,10 @@ from typing import Iterator
 
 from pycatia3dx.mmr_automation_interfaces.boundary import Boundary
 from pycatia3dx.mmr_automation_interfaces.shape import Shape
+from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
 from pycatia3dx.types.general import CATVariant
+from pycatia3dx.types.shapes import shape_types
 
 
 class Shapes(Collection):
@@ -95,6 +97,11 @@ class Shapes(Collection):
         :param CATVariant i_index:
         :return: Shape
         """
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in shape_types:
+            return shape_types[type_name](self.com_object.Item(i_index))
+
         return Shape(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> Shape:

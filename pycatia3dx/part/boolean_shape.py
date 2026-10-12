@@ -7,14 +7,11 @@
         and thus help debugging in pycatia.
         
 """
-
-from pycatia3dx.mmr_automation_interfaces.body import Body
 from pycatia3dx.mmr_automation_interfaces.shape import Shape
 from pycatia3dx.mode.reference import Reference
 
 
 class BooleanShape(Shape):
-
     """
         .. note::
             :class: toggle
@@ -28,15 +25,15 @@ class BooleanShape(Shape):
                 |                 System.AnyObject
                 |                     CATMmrAutomationInterfaces.Shape
                 |                         BooleanShape
-                | 
+                |
                 | Represents the shapes based on boolean operations on other
                 | shapes.
                 | It is the base object for add, assemble, intersect, remove, and split
                 | shapes.
-                | 
+                |
                 | See also:
                 |     Add, Assemble, Intersect, Remove, Split, Trim
-    
+
     """
 
     def __init__(self, com_object):
@@ -44,7 +41,7 @@ class BooleanShape(Shape):
         self.com_object = com_object
 
     @property
-    def body(self) -> Body:
+    def body(self) -> 'Body':
         """
         .. note::
             :class: toggle
@@ -56,6 +53,7 @@ class BooleanShape(Shape):
         :return: Body
         """
 
+        from pycatia3dx.mmr_automation_interfaces.body import Body
         return Body(self.com_object.Body)
 
     def set_operated_object(self, i_reference_object: Reference) -> None:
@@ -88,4 +86,4 @@ class BooleanShape(Shape):
         return self.com_object.SetOperatingVolume(i_reference_object.com_object)
 
     def __repr__(self):
-        return f'BooleanShape(name="{ self.name }")'
+        return f'BooleanShape(name="{self.name}")'
