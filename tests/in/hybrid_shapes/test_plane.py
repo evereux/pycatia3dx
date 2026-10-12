@@ -1,52 +1,49 @@
-# import pytest
+import pytest
 
-# def test_get_first_axis():
 
-    # pass
-
+def test_get_first_axis():
+    pass
 
 # def test_get_origin():
 
-    # pass
+# pass
 
 
 # def test_get_position():
 
-    # pass
+# pass
 
 
 # def test_get_second_axis():
 
-    # pass
+# pass
 
 
 # def test_is_a_ref_plane():
 
-    # pass
+# pass
 
 
 # def test_put_first_axis():
 
-    # pass
+# pass
 
 
 # def test_put_origin():
 
-    # pass
+# pass
 
 
 # def test_put_second_axis():
 
-    # pass
+# pass
 
 
 # def test_remove_position():
 
-    # pass
+# pass
 
 
 # def test_set_position():
 
-    # pass
-
-
+# pass

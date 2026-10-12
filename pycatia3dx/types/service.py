@@ -1,16 +1,10 @@
-from typing import Union, TYPE_CHECKING
+from typing import Union
 
 from pycatia3dx.dnb_fitting.fitting_service import FittingService
-from pycatia3dx.dnb_igp_olp_use.calib_least_squares_service import CalibLeastSquaresService
-from pycatia3dx.dnb_igp_olp_use.olp_download_service import OLPDownloadService
-from pycatia3dx.dnb_igp_olp_use.olp_teach_helper import OLPTeachHelper
 from pycatia3dx.dnb_igp_olp_use.olp_translator_helper import OLPTranslatorHelper
-from pycatia3dx.dnb_igp_olp_use.olp_upload_service import OLPUploadService
 from pycatia3dx.drafting.drawing_gen_service import DrawingGenService
 from pycatia3dx.drafting.drawing_service import DrawingService
-from pycatia3dx.electrical.elec_import_finalizer_service import ElecImportFinalizerService
 from pycatia3dx.fc_board.fcb_service import FCBService
-from pycatia3dx.fmt_mode.sim_group import SimGroup
 from pycatia3dx.inertia.inertia_box_service import InertiaBoxService
 from pycatia3dx.inertia.inertia_service import InertiaService
 from pycatia3dx.interfaces.player_services import PlayerServices
@@ -23,17 +17,13 @@ from pycatia3dx.measure.measure_service import MeasureService
 from pycatia3dx.opns_section.section_service import SectionService
 from pycatia3dx.pcb_board.pcb_service import PCBService
 from pycatia3dx.plm_access.plm_script_service import PLMScriptService
-from pycatia3dx.plm_access.plm_search_service import PLMSearchService
 from pycatia3dx.plm_access.search_service import SearchService
-from pycatia3dx.plm_application_context.plm_app_context import PLMAppContext
 from pycatia3dx.plm_application_context.plm_refresh_service import PLMRefreshService
 from pycatia3dx.plm_application_context.pn_o_service import PnOService
-from pycatia3dx.plm_document.plm_document_services import PLMDocumentServices
 from pycatia3dx.plm_interference.interference_services import InterferenceServices
 from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from pycatia3dx.plm_session_builder.plm_open_service import PLMOpenService
 from pycatia3dx.plm_session_builder.plm_propagate_service import PLMPropagateService
-from pycatia3dx.plm_simulation_engine.sim_dyn_clash_services import SimDynClashServices
 from pycatia3dx.plm_validation.val_validation_service import VALValidationService
 from pycatia3dx.sim_plm.sim_plm_service import SIMPLMService
 from pycatia3dx.sim_plm.sim_simulation_service import SimSimulationService

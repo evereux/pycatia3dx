@@ -10,9 +10,12 @@
 """
 from typing import Iterator
 
+from pycatia3dx.hybrid_shapes.hybrid_shape_plane_offset import HybridShapePlaneOffset
 from pycatia3dx.mmr_automation_interfaces.boundary import Boundary
 from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
+from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
 from pycatia3dx.types.general import CATVariant
 
 
@@ -96,16 +99,32 @@ class HybridShapes(Collection):
         :param CATVariant i_index:
         :return: HybridShape
         """
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i_index)))
+
+        if type_name in hybrid_shape_types:
+            return hybrid_shape_types[type_name](self.com_object.Item(i_index))
+
         return HybridShape(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> HybridShape:
         if (n + 1) > self.count:
             raise StopIteration
 
+        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(n + 1)))
+
+        if type_name in hybrid_shape_types:
+            return hybrid_shape_types[type_name](self.com_object.Item(n + 1))
+
         return HybridShape(self.com_object.Item(n + 1))
 
     def __iter__(self) -> Iterator[HybridShape]:
         for i in range(self.count):
+            # yield HybridShape(self.com_object.Item(i + 1))
+            type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i + 1)))
+
+            if type_name in hybrid_shape_types:
+                yield hybrid_shape_types[type_name](self.com_object.Item(i + 1))
+
             yield HybridShape(self.com_object.Item(i + 1))
 
     def __repr__(self):

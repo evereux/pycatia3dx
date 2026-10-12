@@ -1,7 +1,7 @@
 import pytest
 
 from pycatia3dx.mmr_automation_interfaces.part import Part
-from tests.conftest import test_app
+from tests.conftest import application
 from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_points, geom_set_lines, geom_set_arcs
 
 
@@ -471,7 +471,7 @@ from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_points, geom_s
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
 def test_add_new_point_center(file_open):
-    editor = test_app.active_editor
+    editor = application.active_editor
     part = Part(editor.active_com_object)
     hsf = part.hybrid_shape_factory
     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
@@ -480,13 +480,15 @@ def test_add_new_point_center(file_open):
     ref_arc = part.create_reference_from_object(arc)
     point = hsf.add_new_point_center(ref_arc)
     hb_geom_set_points.append_hybrid_shape(point)
+
     part.update()
+
     assert point.get_coordinates() == (0, 100, 0)
 
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
 def test_add_new_point_coord(file_open):
-    editor = test_app.active_editor
+    editor = application.active_editor
     part = Part(editor.active_com_object)
     hsf = part.hybrid_shape_factory
     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
@@ -498,7 +500,7 @@ def test_add_new_point_coord(file_open):
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
 def test_add_new_point_coord_with_reference(file_open):
-    editor = test_app.active_editor
+    editor = application.active_editor
     part = Part(editor.active_com_object)
     hsf = part.hybrid_shape_factory
     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
@@ -512,7 +514,7 @@ def test_add_new_point_coord_with_reference(file_open):
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
 def test_add_new_point_datum(file_open_test_close_all):
-    editor = test_app.active_editor
+    editor = application.active_editor
     part = Part(editor.active_com_object)
     hsf = part.hybrid_shape_factory
     hb = part.hybrid_bodies.item(geom_set_points)
