@@ -34,7 +34,7 @@ class HybridBodies(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object, child_object=HybridBody)
+        super().__init__(com_object)
         self.com_object = com_object
 
     def add(self) -> HybridBody:
@@ -99,11 +99,18 @@ class HybridBodies(Collection):
     def __getitem__(self, n: int) -> HybridBody:
         if (n + 1) > self.count:
             raise StopIteration
-        return HybridBody(self.com_object.Item(n + 1))
+        from pycatia3dx.helpers import return_real_object
+        hb = HybridBody(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
+
+        return real_object
 
     def __iter__(self) -> Iterator[HybridBody]:
+        from pycatia3dx.helpers import return_real_object
         for i in range(self.count):
-            yield HybridBody(self.com_object.Item(i + 1))
+            hb = HybridBody(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'

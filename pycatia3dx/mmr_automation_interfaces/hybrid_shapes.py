@@ -38,7 +38,7 @@ class HybridShapes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object, child_object=HybridShape)
+        super().__init__(com_object)
         self.com_object = com_object
 
     def get_boundary(self, i_label: str) -> Boundary:
@@ -118,13 +118,12 @@ class HybridShapes(Collection):
 
     def __iter__(self) -> Iterator[HybridShape]:
         for i in range(self.count):
-            # yield HybridShape(self.com_object.Item(i + 1))
             type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i + 1)))
 
             if type_name in hybrid_shape_types:
                 yield hybrid_shape_types[type_name](self.com_object.Item(i + 1))
-
-            yield HybridShape(self.com_object.Item(i + 1))
+            else:
+                yield HybridShape(self.com_object.Item(i + 1))
 
     def __repr__(self):
         return f'HybridShapes(name="{self.name}")'

@@ -11,6 +11,10 @@ geom_set_sketches = "construction_sketches"
 geom_set_splines = "construction_splines"
 geom_set_surfaces = "construction_surfaces"
 
+# VPMReference
+TEST_VPMREFERENCE_ONE = "pycatia3dX - Test - Product One"
+TEST_VPMREFERENCE_ONE_DESCRIPTION = "1.0"
+
 # Drawing
 TEST_CATDRAWING_ONE = "pycatia3dx - Test - Drawing One"
 TEST_CATDRAWING_ONE_DESCRIPTION = "1.0"

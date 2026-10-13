@@ -1,3 +1,10 @@
+"""
+    Prior to running the tests the test files will need to be created or checked
+    for validity.
+    To check or create the test files run the following command from the command
+    prompt:
+    >>> python .\tests\check_test_files.py
+"""
 import os
 import sys
 
@@ -6,9 +13,6 @@ import pytest
 sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 
 from pycatia3dx import catia3dx
-from pycatia3dx.exceptions import CATIAApplicationException
-from pycatia3dx.interfaces.editor import Editor
-from pycatia3dx.plm_access.search_service import SearchService
 from tests.plm_helpers import open_plm_entity
 
 application = catia3dx()
@@ -25,7 +29,7 @@ def check_open_documents():
     windows = application.windows
     for window in windows:
         if window.name != "Welcome Page":
-            raise RuntimeError(f'"{window.name}" is still open. Please close all documents prior to running tests.')
+            raise RuntimeError(f'"{window.name}" is still open. Please close all documents.')
 
 
 check_open_documents()
@@ -49,6 +53,7 @@ def file_open(file_name: str, base_type: str):
 def file_open_test_close_all(file_name: str, base_type: str):
     open_plm_entity(application, file_name, base_type)
     yield
+    # disable file alerts. otherwise tests will stop due to alert triggered by a file change.
     application.display_file_alerts = False
     close_all()
     application.display_file_alerts = True

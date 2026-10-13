@@ -2,6 +2,7 @@ from pycatia3dx.exceptions import CATIAApplicationException
 from pycatia3dx.interfaces.application import Application
 from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.plm_access.search_service import SearchService
+from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccurrence
 
 
 def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
@@ -15,6 +16,9 @@ def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
     """
 
     # first check that the part isn't already open
+    if app.active_window.name == title:
+        editor = app.active_editor
+        return editor
     windows = app.windows
     for window in windows:
         if window.name == title:
@@ -40,6 +44,8 @@ def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
 
     plm_entity = plm_entities[0]
 
-    editor = app.get_session_service('PLMOpenService').plm_open(plm_entity)
+    app.get_session_service('PLMOpenService').plm_open(plm_entity)
+
+    editor = app.active_editor
 
     return editor
