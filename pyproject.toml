@@ -4,6 +4,11 @@ version = 0.1
 dependencies = [
     "pywin32 == 312",
 ]
+[dependency-groups]
+dev = [
+    "mypy==1.19.1",
+    "pytest==9.0.2",
+]
 [tool.pytest.ini_options]
 log_cli = true
 log_cli_level = "INFO"
