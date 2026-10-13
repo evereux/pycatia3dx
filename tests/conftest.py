@@ -3,7 +3,7 @@
     for validity.
     To check or create the test files run the following command from the command
     prompt:
-    >>> python .\tests\check_test_files.py
+    >>> python .\\tests\\check_test_files.py
 """
 import os
 import sys
@@ -36,10 +36,12 @@ check_open_documents()
 
 
 def close_all():
+    application.display_file_alerts = False
     windows = application.windows
     for window in windows:
         if window.name != "Welcome Page":
             window.close()
+    application.display_file_alerts = True
 
 
 @pytest.fixture
