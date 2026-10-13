@@ -9,7 +9,6 @@
 """
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 from pycatia3dx.product_structure_client.parent_vpm_rep_instances import ParentVPMRepInstances
-from pycatia3dx.product_structure_client.vpm_reference import VPMReference
 
 
 class VPMRepReference(PLMEntity):
@@ -38,7 +37,7 @@ class VPMRepReference(PLMEntity):
         self.com_object = com_object
 
     @property
-    def father(self) -> VPMReference:
+    def father(self) -> 'VPMReference':
         """
         .. note::
             :class: toggle
@@ -66,7 +65,7 @@ class VPMRepReference(PLMEntity):
 
         :return: VPMReference
         """
-
+        from pycatia3dx.product_structure_client.vpm_reference import VPMReference
         return VPMReference(self.com_object.Father)
 
     @property

@@ -93,7 +93,19 @@ def catia_application() -> Application:
 
     :return: Application
     """
+
+    def check_catia_version(application: Application) -> bool:
+        if application.name != "3DEXPERIENCE":
+            return False
+        return True
+
     try:
-        return Application(_import_com3dx_module().get3dxClient())
+        app = Application(_import_com3dx_module().get3dxClient())
+        if not check_catia_version(app):
+            app.logger.warning(f'You are not running CATIA 3DEXPERIENCE. Running "{app.name}".')
+        return app
     except FileNotFoundError:
-        return Application(Dispatch('CATIA.Application'))
+        app = Application(Dispatch('CATIA.Application'))
+        if not check_catia_version(app):
+            app.logger.warning(f'You are not running CATIA 3DEXPERIENCE. Running "{app.name}".')
+        return app

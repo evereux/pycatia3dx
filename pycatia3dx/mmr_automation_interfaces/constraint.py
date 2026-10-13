@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia3dx import CatConstraintRefType, CatConstraintType
 from pycatia3dx.knowledge_interfaces.dimension import Dimension
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.system.any_object import AnyObject
@@ -262,7 +262,7 @@ class Constraint(AnyObject):
         self.com_object.ReferenceAxis = value
 
     @property
-    def reference_type(self) -> int:
+    def reference_type(self) -> CatConstraintRefType:
         """
         .. note::
             :class: toggle
@@ -278,15 +278,15 @@ class Constraint(AnyObject):
                 | 
                 |          refCst2.ReferenceType = refCst1.ReferenceType
 
-        :return: int
+        :return: CatConstraintRefType
         """
 
-        return self.com_object.ReferenceType
+        return CatConstraintRefType(self.com_object.ReferenceType)
 
     @reference_type.setter
-    def reference_type(self, value: int):
+    def reference_type(self, value: CatConstraintRefType):
         """
-        :param int value:
+        :param CatConstraintRefType value:
         """
 
         self.com_object.ReferenceType = value
@@ -345,7 +345,7 @@ class Constraint(AnyObject):
         return self.com_object.Status
 
     @property
-    def type(self) -> int:
+    def type(self) -> CatConstraintType:
         """
         .. note::
             :class: toggle
@@ -360,10 +360,10 @@ class Constraint(AnyObject):
                 | 
                 |          cstType = firstCst.Type
 
-        :return: int
+        :return: CatConstraintType
         """
 
-        return self.com_object.Type
+        return CatConstraintType(self.com_object.Type)
 
     def activate(self) -> None:
         """

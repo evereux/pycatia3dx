@@ -1,10 +1,11 @@
 """
 
-    Example - Drafting - 003
+    Example - Drafting - 002
 
     Description:
 
-        Drafting: Creates a generative Front View from the selected VPMOccurance.
+        Drafting: Creates a Drawing with a generative Front View from the
+        selected VPMOccurance.
 
         This is a pycatia3dx re-write of the document
         CAAScdDriUcGenViewOnPartBodySource.htm provided in DSYAutomation.chm.
@@ -66,11 +67,11 @@ if selection.count2 == 1:
 
     if not drawing_gen_service.check_view_link_integrity(link_part_body):
         print(message)
-        exit()
+        sys.exit()
 
 else:
     print(message)
-    exit()
+    sys.exit()
 
 print(message_s)
 status = selection.select_element2(
@@ -80,7 +81,7 @@ status = selection.select_element2(
 )
 
 if status == "Cancel" or status == "Undo":
-    exit()
+    sys.exit()
 
 # define the views projection plane
 projection_plane: PlanarFace = selection.item(1).value

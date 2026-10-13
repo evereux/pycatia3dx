@@ -166,7 +166,13 @@ class AnyObject(PyCATIA3DX):
         :param str id_name:
         :return: AnyObject
         """
-        return self.com_object.GetItem(id_name)
+        TypeName = self.application.vba_type_name
+        any_object = AnyObject(self.com_object.GetItem(id_name))
+        type_name = TypeName(any_object)
+        if type_name == 'Part':
+            from pycatia3dx.mmr_automation_interfaces.part import Part
+            return Part(any_object.com_object)
+        return AnyObject(self.com_object.GetItem(id_name))
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'

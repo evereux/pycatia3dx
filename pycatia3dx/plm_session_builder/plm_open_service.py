@@ -10,6 +10,8 @@
 from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
+from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
+from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccurrence
 
 
 class PLMOpenService(Service):
@@ -39,7 +41,7 @@ class PLMOpenService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def plm_open(self, i_plm_entity: PLMEntity) -> Editor:
+    def plm_open(self, i_plm_entity: PLMEntity) -> VPMRootOccurrence:
         """
         .. note::
             :class: toggle
@@ -63,7 +65,7 @@ class PLMOpenService(Service):
         """
         self.com_object.PLMOpen(i_plm_entity.com_object)
 
-        return Editor(self.application.active_editor.active_com_object)
+        return VPMRootOccurrence(self.application.active_editor.active_com_object)
 
     def plm_open_in_new_window(self, i_plm_entity: PLMEntity, o_editor: Editor) -> None:
         """
