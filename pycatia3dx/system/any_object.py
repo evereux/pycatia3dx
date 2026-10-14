@@ -141,8 +141,11 @@ class AnyObject(PyCATIA3DX):
 
         :return: AnyObject
         """
+        from pycatia3dx.helpers import return_real_object
+        any_object = AnyObject(self.com_object.Parent)
+        real_object = return_real_object(self.application, any_object)
 
-        return AnyObject(self.com_object.Parent)
+        return real_object
 
     def get_item(self, id_name: str) -> 'AnyObject':
         """

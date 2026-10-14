@@ -55,7 +55,7 @@ from pycatia3dx.base_interfaces.base_application import catia_application as cat
 
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'
-__description__ = 'A python module to interface with the CATIA 3DX COM object.'
+__description__ = 'A python package for automation of the CATIA 3DEXPERIENCE cad application.'
 __name__ = "pycatia3dx"
 __version__ = version
 __url__ = "https://github.com/evereux/pycatia3dx"

@@ -214,3 +214,4 @@ __junk__
 temp*.py
 
 docs/generated/
+.pyrc

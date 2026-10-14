@@ -9,9 +9,9 @@ import sys
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'pycatia3dx'
-copyright = '2025, Paul Bourne'
+copyright = '2026, Paul Bourne'
 author = 'Paul Bourne'
-release = '0.0.1'
+release = '0.1.0'
 
 sys.path.insert(0, os.path.abspath('../'))
 
@@ -27,8 +27,6 @@ extensions = [
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

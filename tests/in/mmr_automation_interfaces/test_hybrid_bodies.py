@@ -1,13 +1,22 @@
 import pytest
 
+from pycatia3dx.interfaces.window import Window
 from pycatia3dx.mmr_automation_interfaces.part import Part
-from tests.conftest import application
+from tests.conftest import application, close_all
 from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_arcs, geom_set_surfaces
 
 
-# def test_add():
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test_add(file_open):
+    editor = application.active_editor
+    part = Part(editor.active_com_object)
+    hbs = part.hybrid_bodies
+    name = 'New Body'
+    item = hbs.add()
+    item.name = name
 
-# pass
+    assert item.name == name
+
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
 def test_item(file_open):
@@ -17,14 +26,22 @@ def test_item(file_open):
     item = hbs.item(1)
 
     assert item.name == geom_set_arcs
+    # close all as we don't want to save changes.
+    close_all()
 
 
-# def test___getitem__():
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test___getitem__(file_open):
+    editor = application.active_editor
+    part = Part(editor.active_com_object)
+    hbs = part.hybrid_bodies
+    item = hbs.get_item(geom_set_arcs)
 
-# pass
+    assert item.name == geom_set_arcs
 
 
-def test___iter__():
+@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+def test___iter__(file_open):
     editor = application.active_editor
     part = Part(editor.active_com_object)
     hbs = part.hybrid_bodies

@@ -2,6 +2,7 @@ from pycatia3dx.types.bodies import body_types
 from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
 from pycatia3dx.types.parameters_and_relations import parameter_and_relation_types
 from pycatia3dx.types.shapes import shape_types
+from pycatia3dx.types.vpm import vpm_types
 
 
 def return_real_object(application: 'Application', any_object: 'AnyObject') -> 'AnyObject':
@@ -20,6 +21,9 @@ def return_real_object(application: 'Application', any_object: 'AnyObject') -> '
 
     if type_string in parameter_and_relation_types:
         return parameter_and_relation_types[type_string](any_object.com_object)
+
+    if type_string in vpm_types:
+        return vpm_types[type_string](any_object.com_object)
 
     # todo: add more types. there's going to be a lot I suspect
     application.logger.info(
