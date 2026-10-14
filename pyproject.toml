@@ -1,8 +1,9 @@
 [project]
 name = "pycatia3dx"
-version = "0.1"
+version = "0.1.1"
 dependencies = [
     "pywin32 == 312",
+    "psutil==7.2.1",
 ]
 authors = [
     { name = "Paul Bourne", email = "evereux@gmail.com" }

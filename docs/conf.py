@@ -11,7 +11,7 @@ import sys
 project = 'pycatia3dx'
 copyright = '2026, Paul Bourne'
 author = 'Paul Bourne'
-release = '0.1.0'
+release = '0.1.1'
 
 sys.path.insert(0, os.path.abspath('../'))
 

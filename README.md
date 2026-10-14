@@ -19,9 +19,7 @@ Requirements
 Installation
 ------------
 
-There is currently no pypi package available. You'll need to clone the github
-repository or download the github archive.
-
+    python -m pip install pycatia3dx
 
 Usage
 -----
@@ -83,5 +81,7 @@ To run tests for a specific module
 To stop tests running after first failure.
 
     py.test -vx
+
+
 
 
