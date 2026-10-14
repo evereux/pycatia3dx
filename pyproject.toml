@@ -1,14 +1,35 @@
 [project]
 name = "pycatia3dx"
-version = 0.1
+version = "0.1"
 dependencies = [
     "pywin32 == 312",
 ]
+authors = [
+    { name = "Paul Bourne", email = "evereux@gmail.com" }
+]
+description = "A python package for automation of the CATIA 3DEXPERIENCE cad application."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+[project.urls]
+Hompagepage = "https://github.com/evereux/pycatia3dx"
+Issues = "https://github.com/evereux/pycatia3dx/issues"
 [dependency-groups]
 dev = [
     "mypy==1.19.1",
     "pytest==9.0.2",
 ]
+[build-system]
+requires = [
+    "hatchling >= 1.32"
+]
+build-backend = "hatchling.build"
 [tool.pytest.ini_options]
 log_cli = true
 log_cli_level = "INFO"
