@@ -1,6 +1,7 @@
 ## 0.2.0
 
-    Added Application.setting_controllers.
+* Added Application.setting_controllers.
+* Added Application.message_box and Application.input_box
 
 ## 0.1.1
 

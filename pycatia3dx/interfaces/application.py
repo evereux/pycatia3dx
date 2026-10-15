@@ -13,7 +13,6 @@ from pycatia3dx import CatScriptCommand, CATScriptLanguage
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
-from pycatia3dx.interfaces.service import Service
 from pycatia3dx.interfaces.window import Window
 from pycatia3dx.interfaces.windows import Windows
 from pycatia3dx.os.file_system import FileSystem
@@ -1388,6 +1387,115 @@ class Application(AnyObject):
         :return: None
         """
         return self.com_object.Help(i_help_id)
+
+    def message_box(self, message_text: str, buttons: int = 0, title: str = "") -> int:
+        """
+
+        The button values
+
+        =====================   ======= ========================================
+        Constant                Value   Description
+        ---------------------   ------- ----------------------------------------
+        vbOKOnly                0       Display OK button only.
+        vbOKCancel              1       Display OK and Cancel buttons.
+        vbAbortRetryIgnore      2       Display Abort, Retry, and Ignore buttons
+        vbYesNoCancel           3       Display Yes, No, and Cancel buttons.
+        vbYesNo                 4       Display Yes and No buttons.
+        vbRetryCancel           5       Display Retry and Cancel buttons.
+        vbCritical              16      Display Critical Message icon.
+        vbQuestion              32      Display Warning Query icon.
+        vbExclamation           48      Display Warning Message icon.
+        vbInformation           64      Display Information Message icon.
+        vbDefaultButton1        0       First button is default.
+        vbDefaultButton2        256     Second button is default.
+        vbDefaultButton3        512     Third button is default.
+        vbDefaultButton4        768     Fourth button is default.
+        vbApplicationModal      0       Application modal; the user must respond
+                                        to the message box before continuing
+                                        work in the current application.
+        vbSystemModal           4096    System modal; all applications are
+                                        suspended until the user responds to the
+                                        message box.
+        vbMsgBoxHelpButton      16384   Adds Help button to the message box.
+        vbMsgBoxSetForeground   65536   Specifies the message box window as the
+                                        foreground window.
+        vbMsgBoxRight           524288  Text is right-aligned.
+        vbMsgBoxRtlReading      1048576 Specifies text should appear as
+                                        right-to-left reading on Hebrew and
+                                        Arabic systems.
+        =====================   ======= ========================================
+
+
+        Return values
+
+        ========  =====  ===========
+        Constant  Value  Description
+        --------  -----  -----------
+        vbOK          1  OK
+        vbCancel      2  Cancel
+        vbAbort       3  Abort
+        vbRetry       4  Retry
+        vbIgnore      5  Ignore
+        vbYes         6  Yes
+        vbNo          7  No
+        ========  =====  ===========
+
+
+        Example::
+
+            This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+
+            >>> from pycatia3dx import catia3dx
+            >>> application = catia3dx()
+            >>> buttons = 2 + 32
+            >>> result = application.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+            >>> # result = 3 if the user presses Abort.
+
+
+        :param str message_text: Text to be displayed in the message box window.
+        :param int buttons: Defines the message box configuration. See example.
+        :param str title: Text to be displayed in the message box title bar.
+        :return: Returns an int which is representative of the button pressed.
+        :rtype: int
+        """
+        function_name = "message_box"
+        msg_box = f"Public Function {function_name}(message_text, buttons, title)\n" \
+                  f"    {function_name} = MsgBox(message_text, buttons, title)\n" \
+                  "End Function"
+
+        return self.system_service.evaluate(
+            msg_box,
+            CATScriptLanguage.CATVBScriptLanguage,
+            function_name,
+            [message_text, buttons, title]
+        )
+
+    def input_box(self, prompt: str, title: str = '', default: str = '') -> str:
+        """
+        Display InputBox in CATIA 3DExperience.
+        Default position is in the center screen.
+
+        More information on
+        https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
+
+        :param str prompt: Required. String expression displayed as the message in the dialog box.
+        :param str title: Optional. The default is ''. String expression displayed in the title bar of the dialog box.
+        :param str default: Optional. The default is ''. String expression displayed in the text box as the default
+                                      response if no other input is provided. If you omit default, the text box is
+                                      displayed empty.
+        :returns: str
+        """
+        f_name = "input_box"
+        i_box = f"Public Function {f_name}(prompt,title,default)\n" \
+                f"    {f_name} = InputBox(prompt,title,default)\n" \
+                "End Function"
+
+        return self.system_service.evaluate(
+            i_box,
+            CATScriptLanguage.CATVBScriptLanguage,
+            f_name,
+            [prompt, title, default]
+        )
 
     def quit(self) -> None:
         """
