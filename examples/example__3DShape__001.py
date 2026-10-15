@@ -3,7 +3,7 @@
     Example - Part - 001
 
     Description:
-        Create a new Part.
+        Create a new 3DShape.
 
     Requirements:
         - 3DExperience CATIA running.
