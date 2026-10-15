@@ -84,7 +84,7 @@ class LicenseSettingAtt(SettingController):
                 | Property NodelockAlert() As long
                 |     Retrieves or Sets the license expiry alert.
                 |     Role: Retrieves or sets the value of the parameter describing the
-                |     license expiry alertt in days. For more information about the range and
+                |     license expiry alert in days. For more information about the range and
                 |     maximum, refers to the Infrastructure documentation.
 
         :return: int
@@ -232,14 +232,19 @@ class LicenseSettingAtt(SettingController):
                 | Func GetLicensesList(long iDefaultLicenses) As
                 | CATSafeArrayVariant
                 |     Retrieves the list of the requested or locked licenses.
-                |     Role: Retrieves the list of the requested or locked licenses. There is no
+                |     Role: Retrieves the list of the requested or locked licenses.
+                |     There is no
                 |     SetLicensesList() because the list is initialized using
                 |     LUM.
                 | 
                 |     Parameters:
                 | 
                 |         iDefaultLicenses
-                |             If iDefaultLicenses!=0 and the settings are empty, returns the default licenses, that is, the visible nodolocked licenses. If iDefaultLicenses = 0 and the settings are empty, returns the selected licenses (not yet stored, because not yet validated by OK button). 
+                |             If iDefaultLicenses!=0 and the settings are empty,
+                |             returns the default licenses, that is, the visible
+                |             nodolocked licenses. If iDefaultLicenses = 0 and
+                |             the settings are empty, returns the selected licenses
+                |             (not yet stored, because not yet validated by OK button).
                 | 
                 |     Returns:
                 |         The array of Licenses.
@@ -248,7 +253,8 @@ class LicenseSettingAtt(SettingController):
                 |         "+": you chose "Any license" mode, example of returned value:
                 |         _ME1.slt+FS1
                 |         When the return value is a serial number (_ME1.slt_SerialNumber), you
-                |         have chosen the "Explicit" license mode. In this case the add on product is not
+                |         have chosen the "Explicit" license mode. In this case
+                |         the add on product is not
                 |         indicated in the license name.
 
         :param int i_default_licenses:

@@ -7,6 +7,7 @@ Public Function {type_name_function_name}(com_object)
 End Function
 '''
 
+# VBANothing
 # todo: change this so that Application.system_service.evaluate doesn't need to
 #  be invoked when used as in pycatia (see HybridShapeFactory.add_new_sphere
 _vba_nothing = '''

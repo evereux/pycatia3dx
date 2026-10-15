@@ -9,7 +9,11 @@
 """
 from typing import Iterator
 
+from pycatia3dx.os.macros_setting_att import MacrosSettingAtt
 from pycatia3dx.system.collection import Collection
+from pycatia3dx.system.dl_name_setting_att import DLNameSettingAtt
+from pycatia3dx.system.dyn_license_setting_att import DynLicenseSettingAtt
+from pycatia3dx.system.license_setting_att import LicenseSettingAtt
 from pycatia3dx.system.setting_controller import SettingController
 
 
@@ -55,9 +59,25 @@ class SettingControllers(Collection):
                 |     Returns:
                 |         The retrieved setting controller.
 
+        Class Name           i_index
+        DLNameSettingAtt     CATSysDLNameSettingCtrl
+        DynLicenseSettingAtt CATSysDynLicenseSettingCtrl
+        LicenseSettingAtt    CATSysLicenseSettingCtrl
+        MacrosSettingAtt     CATScriptMacrosSettingCtrl
+
         :param str i_index:
         :return: SettingController
         """
+
+        if i_index == "CATSysDLNameSettingCtrl":
+            return DLNameSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATSysDynLicenseSettingCtrl":
+            return DynLicenseSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATSysLicenseSettingCtrl":
+            return LicenseSettingAtt(self.com_object.Item(i_index))
+        if i_index == "CATScriptMacrosSettingCtrl":
+            return MacrosSettingAtt(self.com_object.Item(i_index))
+
         return SettingController(self.com_object.Item(i_index))
 
     def __getitem__(self, n: int) -> SettingController:

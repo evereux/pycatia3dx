@@ -17,6 +17,7 @@ from pycatia3dx.interfaces.service import Service
 from pycatia3dx.interfaces.window import Window
 from pycatia3dx.interfaces.windows import Windows
 from pycatia3dx.os.file_system import FileSystem
+from pycatia3dx.os.setting_controllers import SettingControllers
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.scripts.vba import type_name_code, type_name_function_name
 from pycatia3dx.system.any_object import AnyObject
@@ -1467,6 +1468,9 @@ class Application(AnyObject):
         )
 
         return type_name
+
+    def setting_controllers(self) -> SettingControllers:
+        return SettingControllers(self.com_object.SettingControllers)
 
     def __repr__(self):
         return f'Application(name="{self.name}")'

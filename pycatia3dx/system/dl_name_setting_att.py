@@ -12,7 +12,7 @@
 from pycatia3dx.system.setting_controller import SettingController
 
 
-class DlNameSettingAtt(SettingController):
+class DLNameSettingAtt(SettingController):
     """
         .. note::
             :class: toggle
@@ -486,4 +486,4 @@ class DlNameSettingAtt(SettingController):
         return self.com_object.SetRootDLNameCreationRightLock(i_locked)
 
     def __repr__(self):
-        return f'DlNameSettingAtt(name="{self.name}")'
+        return f'DLNameSettingAtt(name="{self.name}")'
