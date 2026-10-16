@@ -1,3 +1,4 @@
+from pycatia3dx.interfaces.application import Application
 from pycatia3dx.types.bodies import body_types
 from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
 from pycatia3dx.types.parameters_and_relations import parameter_and_relation_types
@@ -24,6 +25,9 @@ def return_real_object(application: 'Application', any_object: 'AnyObject') -> '
 
     if type_string in vpm_types:
         return vpm_types[type_string](any_object.com_object)
+
+    if type_string == 'CATIAApplicationCoClass':
+        return Application(any_object.com_object)
 
     # todo: add more types. there's going to be a lot I suspect
     application.logger.info(

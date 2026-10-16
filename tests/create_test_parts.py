@@ -1,11 +1,15 @@
+import sys
+
 from pycatia3dx import CatConstraintMode, CatConstraintType
+from pycatia3dx import version
 from pycatia3dx.interfaces.application import Application
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from pycatia3dx.plm_session_builder.plm_propagate_service import PLMPropagateService
-from tests.test_part_parameters import TEST_CATPART_ONE
-from tests.test_part_parameters import TEST_CATPART_ONE_DESCRIPTION
+from pycatia3dx.types import vpm
+from pycatia3dx.vpm_editor_context.plm_product_service import PLMProductService
+from tests.test_part_parameters import TEST_3DPART_ONE
 from tests.test_part_parameters import geom_set_arcs
 from tests.test_part_parameters import geom_set_cylinders
 from tests.test_part_parameters import geom_set_lines
@@ -16,13 +20,18 @@ from tests.test_part_parameters import geom_set_surfaces
 from tests.test_part_parameters import geom_set_sketches
 
 
-def create_test_part_one(application: Application):
-    application.logger.info(f'Creating test file {TEST_CATPART_ONE}.')
-    plm_service: PLMNewService = application.get_session_service("PLMNewService")
-    plm_service.set_attribute_value("V_Name", TEST_CATPART_ONE)
-    plm_service.set_attribute_value("V_description", TEST_CATPART_ONE_DESCRIPTION)
-    editor = plm_service.plm_create("3DShape")
-    part = Part(editor.active_com_object)
+def create_part_geometry(application: Application):
+    # The 3DPart (VPMReference) shall already be open and be the active editor
+    application.logger.info(f'Populating 3DShape in "{TEST_3DPART_ONE}".')
+
+    editor = application.active_editor
+
+    plm_product_service: PLMProductService = editor.get_service('PLMProductService')
+    root_occurrence = plm_product_service.root_occurrence
+    vpm_reference = root_occurrence.reference_root_occurrence_of
+    vpm_rep_instance = vpm_reference.rep_instances[0]
+
+    part: Part = vpm_rep_instance.reference_instance_of.get_item('Part')
     relations = part.relations
 
     sf = part.shape_factory
@@ -30,6 +39,14 @@ def create_test_part_one(application: Application):
     hbs = part.hybrid_bodies
     parms = part.parameters
     main_body = part.main_body
+
+    _hb_names = [geom_set_arcs, geom_set_cylinders, geom_set_lines, geom_set_planes, geom_set_points, geom_set_sketches,
+                 geom_set_splines, geom_set_surfaces]
+    hb_names = [hb.name for hb in hbs]
+    status = [_hb_name for _hb_name in _hb_names if _hb_name not in hb_names]
+    if not status:
+        application.logger.info(f'"{TEST_3DPART_ONE}" is already populated.')
+        return
 
     # ########################### #
     # Create the Geometrical Sets #
@@ -304,4 +321,4 @@ def create_test_part_one(application: Application):
 
     application.active_window.close()
 
-    application.logger.info(f'Created {TEST_CATPART_ONE}.')
+    application.logger.info(f'Created {TEST_3DPART_ONE}.')

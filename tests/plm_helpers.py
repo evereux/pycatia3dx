@@ -1,14 +1,16 @@
+import pytest
+
+from pycatia3dx import version
 from pycatia3dx.exceptions import CATIAApplicationException
 from pycatia3dx.interfaces.application import Application
 from pycatia3dx.interfaces.editor import Editor
 from pycatia3dx.plm_access.search_service import SearchService
-from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccurrence
 
 
 def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
     """
 
-    base_type = 'VPMReference', '3DShape' or 'Drawing'
+    base_type = 'VPMReference', '3DShape', '3DPart' or 'Drawing'
 
     :param app:
     :param title:
@@ -44,7 +46,12 @@ def open_plm_entity(app: Application, title: str, base_type: str) -> Editor:
 
     plm_entity = plm_entities[0]
 
-    app.get_session_service('PLMOpenService').plm_open(plm_entity)
+    plm_open_service = app.get_session_service('PLMOpenService')
+    plm_open_service.plm_open(plm_entity)
+    description = plm_entity.get_attribute_value('V_description')
+
+    if description != version:
+        pytest.exit(f'Test file "{title}" is not correct version "{version}".')
 
     editor = app.active_editor
 

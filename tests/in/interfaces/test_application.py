@@ -6,10 +6,10 @@ from pycatia3dx.os.file_system import FileSystem
 from pycatia3dx.os.system_configuration import SystemConfiguration
 from pycatia3dx.plm_session_builder.plm_new_service import PLMNewService
 from tests.conftest import application
-from tests.test_part_parameters import TEST_CATPART_ONE
+from tests.test_part_parameters import TEST_3DSHAPE_ONE
 
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
 def test_active_editor(file_open):
     assert 'Editor(name="CATIAEditor' in application.active_editor.__repr__()
 
@@ -169,9 +169,7 @@ def test_get_workbench_id():
 
 # pass
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
-def test_start_workbench(file_open_test_close_all):
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+def test_start_workbench(file_open):
     application.start_workbench('CATGS1Workbench')
     assert application.get_workbench_id() == "CATGS1Workbench"
-
-# pass

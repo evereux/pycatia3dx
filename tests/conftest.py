@@ -47,30 +47,3 @@ def close_all():
 @pytest.fixture
 def file_open(file_name: str, base_type: str):
     open_plm_entity(application, file_name, base_type)
-
-
-# typically used for the last test within a module or if a change has been
-# made that might break later tests.
-@pytest.fixture
-def file_open_test_close_all(file_name: str, base_type: str):
-    open_plm_entity(application, file_name, base_type)
-    yield
-    # disable file alerts. otherwise tests will stop due to alert triggered by a file change.
-    application.display_file_alerts = False
-    close_all()
-    application.display_file_alerts = True
-
-
-# typically used for the first test within a module
-@pytest.fixture
-def document_close_all_open(file_name: str, base_type: str):
-    close_all()
-    open_plm_entity(application, file_name, base_type)
-
-
-@pytest.fixture
-def document_close_all_open_test_close(file_name: str, base_type: str):
-    close_all()
-    editor = open_plm_entity(application, file_name, base_type)
-    yield
-    close_all()

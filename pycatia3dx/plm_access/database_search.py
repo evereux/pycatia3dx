@@ -120,7 +120,7 @@ class DatabaseSearch(AnyObject):
     @base_type.setter
     def base_type(self, value: str):
         """
-        :param str value: common types "VPMReference" (Physical Product), "3DShape" (Part), "Drawing", "Document" (Excel/Text)
+        :param str value: common types "VPMReference" (Physical Product / 3DPart), "3DShape", "Drawing", "Document" (Excel/Text)
         """
 
         self.com_object.BaseType = value

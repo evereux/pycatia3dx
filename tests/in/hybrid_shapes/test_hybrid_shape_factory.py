@@ -2,12 +2,13 @@ import pytest
 
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from tests.conftest import application
-from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_points, geom_set_lines, geom_set_arcs
+from tests.test_part_parameters import TEST_3DSHAPE_ONE, geom_set_points, geom_set_lines, geom_set_arcs
 
 
-# def test_add_new_3d_corner():
-
-# pass
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+def test_add_new_3d_corner(file_open):
+    editor = application.active_editor
+    part = Part(editor.active_com_object)
 
 
 # def test_add_new_3d_curve_offset():
@@ -469,7 +470,7 @@ from tests.test_part_parameters import TEST_CATPART_ONE, geom_set_points, geom_s
 
 # pass
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
 def test_add_new_point_center(file_open):
     editor = application.active_editor
     part = Part(editor.active_com_object)
@@ -486,7 +487,7 @@ def test_add_new_point_center(file_open):
     assert point.get_coordinates() == (0, 100, 0)
 
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
 def test_add_new_point_coord(file_open):
     editor = application.active_editor
     part = Part(editor.active_com_object)
@@ -498,7 +499,7 @@ def test_add_new_point_coord(file_open):
     assert point.get_coordinates() == (100, 100, 100)
 
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
 def test_add_new_point_coord_with_reference(file_open):
     editor = application.active_editor
     part = Part(editor.active_com_object)
@@ -512,8 +513,8 @@ def test_add_new_point_coord_with_reference(file_open):
     assert point.get_coordinates() == (200.0, 100.0, 100.0)
 
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_CATPART_ONE, "3DShape")])
-def test_add_new_point_datum(file_open_test_close_all):
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+def test_add_new_point_datum(file_open):
     editor = application.active_editor
     part = Part(editor.active_com_object)
     hsf = part.hybrid_shape_factory

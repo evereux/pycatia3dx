@@ -4,16 +4,15 @@ import sys
 sys.path.insert(0, os.path.abspath("..\\pycatia3dx"))
 
 from pycatia3dx import catia3dx
+from pycatia3dx import version
 from pycatia3dx.plm_access.search_service import SearchService
-from tests.create_test_parts import create_test_part_one
-from tests.test_part_parameters import TEST_CATPART_ONE
-from tests.test_part_parameters import TEST_CATPART_ONE_DESCRIPTION
+from tests.create_test_parts import create_part_geometry
+from tests.conftest import check_open_documents, close_all
+from tests.test_part_parameters import TEST_3DSHAPE_ONE, TEST_3DPART_ONE
 from tests.test_part_parameters import TEST_CATDRAWING_ONE
-from tests.test_part_parameters import TEST_CATDRAWING_ONE_DESCRIPTION
 from tests.test_part_parameters import TEST_VPMREFERENCE_ONE
-from tests.test_part_parameters import TEST_VPMREFERENCE_ONE_DESCRIPTION
 from tests.create_test_drawings import create_test_drawing_one
-from tests.conftest import check_open_documents
+from tests.plm_helpers import open_plm_entity
 
 application = catia3dx()
 
@@ -38,27 +37,33 @@ def file_exists_or_latest(base_type: str, file_name: str, file_description: str)
 def check_test_files():
     application.logger.info('Checking test files exist.')
 
-    if not file_exists_or_latest('3DShape', TEST_CATPART_ONE, TEST_CATPART_ONE_DESCRIPTION):
-        create_test_part_one(application)
-    else:
-        application.logger.info(f'Test file "{TEST_CATPART_ONE}" OK.')
-
-    if not file_exists_or_latest('VPMReference', TEST_VPMREFERENCE_ONE, TEST_VPMREFERENCE_ONE_DESCRIPTION):
-        application.logger.warning(
-            f'Tests cannot continue. Please manually create the VPMReference "{TEST_VPMREFERENCE_ONE}" and attach the 3DShape "{TEST_CATPART_ONE}". '
-            f'VPMReference can not be manually created due to licensing restrictions.')
+    # check that the 3DPart has been created.
+    if not file_exists_or_latest('VPMReference', TEST_3DPART_ONE, version):
+        application.logger.info(f'Test file "{TEST_3DPART_ONE}" does not exist. '
+                                f'Please manually create 3DPart0and name it "{TEST_3DPART_ONE}". '
+                                f'Name the 3DShape within the 3DPart {TEST_3DSHAPE_ONE}.'
+                                f'Also, set the description value to "{version}"')
         sys.exit()
     else:
-        application.logger.info(f'Test file "{TEST_VPMREFERENCE_ONE}" OK.')
+        open_plm_entity(application, TEST_3DPART_ONE, 'VPMReference')
+        create_part_geometry(application)
+
+    # check that the 3DShape was named correctly.
+    if not file_exists_or_latest('3DShape', TEST_3DSHAPE_ONE, version):
+        application.logger.info(
+            f'Test file "{TEST_3DSHAPE_ONE}" does not exist, is not named correctly or is incorrect version.')
+        sys.exit()
 
     # # Drawing
-    if not file_exists_or_latest('Drawing', TEST_CATDRAWING_ONE, TEST_CATDRAWING_ONE_DESCRIPTION):
+    if not file_exists_or_latest('Drawing', TEST_CATDRAWING_ONE, version):
         create_test_drawing_one(application)
     else:
         application.logger.info(f'Test file "{TEST_CATDRAWING_ONE}" OK.')
 
     # finished
     application.logger.info('Test files created.')
+
+    close_all()
 
 
 if __name__ == '__main__':
