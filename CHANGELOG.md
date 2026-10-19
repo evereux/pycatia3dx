@@ -3,6 +3,7 @@
 * Added Application.setting_controllers.
 * Added Application.message_box and Application.input_box
 * Updated VisPropertySet.
+* Updated MeasureBetween.
 
 ## 0.1.1
 
