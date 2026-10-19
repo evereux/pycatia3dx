@@ -1,14 +1,19 @@
 import pytest
+from win32.lib.pywintypes import com_error
 
+from pycatia3dx.hybrid_shapes.hybrid_shape_line_angle import HybridShapeLineAngle
+from pycatia3dx.hybrid_shapes.hybrid_shape_line_bi_tangent import HybridShapeLineBiTangent
+from pycatia3dx.hybrid_shapes.hybrid_shape_line_bisecting import HybridShapeLineBisecting
+from pycatia3dx.hybrid_shapes.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
 from pycatia3dx.mmr_automation_interfaces.part import Part
 from tests.conftest import application
-from tests.test_part_parameters import TEST_3DSHAPE_ONE, geom_set_points, geom_set_lines, geom_set_arcs
+from tests.test_part_parameters import TEST_3DSHAPE_ONE, geom_set_points, geom_set_lines, geom_set_arcs, \
+    geom_set_surfaces
 
 
 @pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
 def test_add_new_3d_corner(file_open):
-    editor = application.active_editor
-    part = Part(editor.active_com_object)
+    pass
 
 
 # def test_add_new_3d_curve_offset():
@@ -295,15 +300,60 @@ def test_add_new_3d_corner(file_open):
 
 # pass
 
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+def test_add_new_line_angle(file_open):
+    editor = application.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+    hb_geom_set_lines = part.hybrid_bodies.item(geom_set_lines)
+    hb_geom_set_surfaces = part.hybrid_bodies.item(geom_set_surfaces)
+    line_1 = hb_geom_set_lines.hybrid_shapes[0]
+    surface_1 = hb_geom_set_surfaces.hybrid_shapes[0]
+    point_1 = hb_geom_set_points.hybrid_shapes[0]
+    line_angle = hsf.add_new_line_angle(
+        line_1,
+        surface_1,
+        point_1,
+        True,
+        100.0,
+        -100.0,
+        45,
+        True
+    )
+    hb_geom_set_lines.append_hybrid_shape(line_angle)
 
-# def test_add_new_line_angle():
+    try:
+        part.update()
+    except com_error:
+        pytest.exit('add_new_line_angle failed')
 
-# pass
+    assert type(line_angle) is HybridShapeLineAngle
 
 
-# def test_add_new_line_bi_tangent():
-
-# pass
+# @pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+# def test_add_new_line_bi_tangent(file_open):
+#     editor = application.active_editor
+#     part = Part(editor.active_com_object)
+#     hsf = part.hybrid_shape_factory
+#     hb_geom_set_lines = part.hybrid_bodies.item(geom_set_lines)
+#     hb_geom_set_surfaces = part.hybrid_bodies.item(geom_set_surfaces)
+#     line_1 = hb_geom_set_lines.hybrid_shapes[0]
+#     line_2 = hb_geom_set_lines.hybrid_shapes[1]
+#     surface_1 = hb_geom_set_surfaces.hybrid_shapes[0]
+#     line_bi_tangent = hsf.add_new_line_bi_tangent(
+#         line_1,
+#         line_2,
+#         surface_1,
+#     )
+#     hb_geom_set_lines.append_hybrid_shape(line_bi_tangent)
+#
+#     try:
+#         part.update()
+#     except com_error:
+#         pytest.exit('add_new_line_bi_tangent failed')
+#
+#     assert type(line_bi_tangent) is HybridShapeLineBiTangent
 
 
 # def test_add_new_line_bisecting():
@@ -345,10 +395,21 @@ def test_add_new_3d_corner(file_open):
 
 # pass
 
+@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+def test_add_new_line_pt_pt(file_open):
+    editor = application.active_editor
+    part = Part(editor.active_com_object)
+    hsf = part.hybrid_shape_factory
+    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+    hb_geom_set_lines = part.hybrid_bodies.item(geom_set_lines)
+    point_1 = hb_geom_set_points.hybrid_shapes[0]
+    point_2 = hb_geom_set_points.hybrid_shapes[1]
+    line_pt_pt = hsf.add_new_line_pt_pt(point_1, point_2)
+    hb_geom_set_lines.append_hybrid_shape(line_pt_pt)
 
-# def test_add_new_line_pt_pt():
+    part.update()
 
-# pass
+    assert type(line_pt_pt) is HybridShapeLinePtPt
 
 
 # def test_add_new_line_pt_pt_extended():

@@ -163,7 +163,7 @@ class MeasureBetween(AnyObject):
         # system_service = SystemService(self.application.SystemService)
         # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_band_analysis_parameters(self, o_min_distance: float, o_max_distance: float, o_accuracy: float) -> None:
+    def get_band_analysis_parameters(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -197,12 +197,9 @@ class MeasureBetween(AnyObject):
                 |              theMeasureBetween.GetBandAnalysisParameters theMinDistance
                 |              theMaxDistance theAccuracy
 
-        :param float o_min_distance:
-        :param float o_max_distance:
-        :param float o_accuracy:
-        :return: None
+        :return: tuple[float, float, float]
         """
-        return self.com_object.GetBandAnalysisParameters(o_min_distance, o_max_distance, o_accuracy)
+        return self.com_object.GetBandAnalysisParameters()
 
     def get_components(self) -> tuple:
         """
@@ -803,7 +800,7 @@ class MeasureBetween(AnyObject):
         """
         return self.com_object.SetBandAnalysisParameters(i_min_distance, i_max_distance, i_accuracy)
 
-    def set_computation_mode(self, i_computation_mode: int) -> None:
+    def set_computation_mode(self, i_computation_mode: CATMeasurableModeOfCalc) -> None:
         """
         .. note::
             :class: toggle
@@ -831,7 +828,7 @@ class MeasureBetween(AnyObject):
                 |              theMeasureBetween.SetComputationMode
                 |              MeasExactElseApproxCalculation
 
-        :param int i_computation_mode:
+        :param CATMeasurableModeOfCalc i_computation_mode:
         :return: None
         """
         return self.com_object.SetComputationMode(i_computation_mode)

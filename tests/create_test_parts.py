@@ -239,7 +239,7 @@ def create_part_geometry(application: Application):
     )
     line_3.name = "Line.3"
     hb_geom_set_lines.append_hybrid_shape(line_3)
-
+    
     # ###################################### #
     # create a surface by filling the sketch #
     # ###################################### #
