@@ -833,7 +833,7 @@ class MeasureBetween(AnyObject):
         """
         return self.com_object.SetComputationMode(i_computation_mode)
 
-    def set_distance_measure_type(self, i_distance_measure_type: int) -> None:
+    def set_distance_measure_type(self, i_distance_measure_type: CATOpnsMeasureDistanceType) -> None:
         """
         .. note::
             :class: toggle
@@ -864,12 +864,13 @@ class MeasureBetween(AnyObject):
                 |              theMeasureBetween.SetDistanceMeasureType
                 |              catOpnsMinimumDistanceAlongDir
 
-        :param int i_distance_measure_type:
+        :param CATOpnsMeasureDistanceType i_distance_measure_type:
         :return: None
         """
         return self.com_object.SetDistanceMeasureType(i_distance_measure_type)
 
-    def set_extension_mode(self, i_ref_extent_mode: int, i_target_extent_mode: int) -> None:
+    def set_extension_mode(self, i_ref_extent_mode: CATOpnsMeasureExtensionMode,
+                           i_target_extent_mode: CATOpnsMeasureExtensionMode) -> None:
         """
         .. note::
             :class: toggle
@@ -899,8 +900,8 @@ class MeasureBetween(AnyObject):
                 |              theMeasureBetween.SetExtensionMode catOpnsFiniteExtend
                 |              catOpnsFiniteExtend
 
-        :param int i_ref_extent_mode:
-        :param int i_target_extent_mode:
+        :param CATOpnsMeasureExtensionMode i_ref_extent_mode:
+        :param CATOpnsMeasureExtensionMode i_target_extent_mode:
         :return: None
         """
         return self.com_object.SetExtensionMode(i_ref_extent_mode, i_target_extent_mode)
@@ -951,7 +952,7 @@ class MeasureBetween(AnyObject):
         # system_service = SystemService(self.application.SystemService)
         # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_result_computation_type(self, i_computation_type: int) -> None:
+    def set_result_computation_type(self, i_computation_type: CATResultCalcType) -> None:
         """
         .. note::
             :class: toggle
@@ -982,9 +983,11 @@ class MeasureBetween(AnyObject):
                 |              theMeasureBetween.SetResultComputationType
                 |              ResMixedCalculation
 
-        :param int i_computation_type:
+        :param CATResultCalcType i_computation_type:
         :return: None
         """
+        # todo: see test_set_result_computation_type
+        self.application.logger.warning('Tests at the moment shows setting this has no effect.')
         return self.com_object.SetResultComputationType(i_computation_type)
 
     def set_second_selection(self, i_second_selections: tuple) -> None:
@@ -1034,7 +1037,10 @@ class MeasureBetween(AnyObject):
         # system_service = SystemService(self.application.SystemService)
         # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_selection_calculation_types(self, i_first_calculation_type: int, i_second_calculation_type: int) -> None:
+    def set_selection_calculation_types(
+            self, i_first_calculation_type: CATResultCalcType,
+            i_second_calculation_type: CATResultCalcType
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1065,14 +1071,9 @@ class MeasureBetween(AnyObject):
                 |              ...
                 |              theMeasureBetween.SetSelectionCalculationTypes
                 |              ResMixedCalculation, ResMixedCalculation
-                |            
-                | 
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
-        :param int i_first_calculation_type:
-        :param int i_second_calculation_type:
+        :param CATResultCalcType i_first_calculation_type:
+        :param CATResultCalcType i_second_calculation_type:
         :return: None
         """
         return self.com_object.SetSelectionCalculationTypes(i_first_calculation_type, i_second_calculation_type)
