@@ -4,6 +4,7 @@
 * Added Application.message_box and Application.input_box
 * Updated VisPropertySet.
 * Updated MeasureBetween.
+* Updated MeasureItem.
 
 ## 0.1.1
 

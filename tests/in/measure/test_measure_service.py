@@ -1,12 +1,9 @@
 # import pytest
 
 # def test_get_measure_between():
-
-    # pass
+# do not need to test as used in test_measure_between.
 
 
 # def test_get_measure_item():
 
-    # pass
-
-
+# pass

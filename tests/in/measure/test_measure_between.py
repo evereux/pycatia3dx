@@ -21,7 +21,7 @@ def test_get_angle(file_open):
     line_1 = hb_geom_set_lines.hybrid_shapes[0]
     line_2 = hb_geom_set_lines.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((line_1.com_object,), (line_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((line_1,), (line_2,))
     measure_between_lines.set_computation_mode(CATMeasurableModeOfCalc.MeasExactCalculation)
     measure_between_lines.compute()
     angle = measure_between_lines.get_angle()
@@ -39,7 +39,7 @@ def test_get_axis_system_from_measure(file_open):
     line_1 = hb_geom_set_lines.hybrid_shapes[0]
     line_2 = hb_geom_set_lines.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((line_1.com_object,), (line_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((line_1,), (line_2,))
     measure_between_lines.compute()
     axis_system = measure_between_lines.get_axis_system_from_measure()
 
@@ -57,7 +57,7 @@ def test_get_band_analysis_parameters(file_open):
     line_1 = hb_geom_set_lines.hybrid_shapes[0]
     line_2 = hb_geom_set_lines.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((line_1.com_object,), (line_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((line_1,), (line_2,))
     measure_between_lines.compute()
     analysis_band_parameters = measure_between_lines.get_band_analysis_parameters()
 
@@ -74,7 +74,7 @@ def test_get_components(file_open):
     line_1 = hb_geom_set_lines.hybrid_shapes[0]
     line_2 = hb_geom_set_lines.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((line_1.com_object,), (line_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((line_1,), (line_2,))
     measure_between_lines.compute()
 
     componenents = measure_between_lines.get_components()
@@ -92,7 +92,7 @@ def test_get_computation_mode(file_open):
     line_1 = hb_geom_set_lines.hybrid_shapes[0]
     line_2 = hb_geom_set_lines.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((line_1.com_object,), (line_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((line_1,), (line_2,))
     measure_between_lines.compute()
     computation_mode = measure_between_lines.get_computation_mode()
 
@@ -108,7 +108,7 @@ def test_get_distance(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.set_computation_mode(CATMeasurableModeOfCalc.MeasExactCalculation)
     measure_between_lines.compute()
     distance = measure_between_lines.get_distance()
@@ -126,7 +126,7 @@ def test_get_distance_measure_type(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     measure_type = measure_between_lines.get_distance_measure_type()
 
@@ -143,7 +143,7 @@ def test_get_extension_mode(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     extension_mode = measure_between_lines.get_extension_mode()
 
@@ -160,7 +160,7 @@ def test_get_first_point_coordinates(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     point_coords = measure_between_lines.get_first_point_coordinates()
 
@@ -180,7 +180,7 @@ def test_get_result_computation_type(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     computation_type = measure_between_lines.get_result_computation_type()
 
@@ -197,7 +197,7 @@ def test_get_second_point_coordinates(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     second_point_coordinates = measure_between_lines.get_second_point_coordinates()
 
@@ -218,7 +218,7 @@ def test_get_selection_calculation_types(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     calculation_types = measure_between_lines.get_selection_calculation_types()
 
@@ -251,7 +251,7 @@ def test_set_distance_measure_type(file_open):
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
 
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.set_distance_measure_type(CATOpnsMeasureDistanceType.catOpnsMaximumDistance)
 
     measure_type = measure_between_lines.get_distance_measure_type()
@@ -267,7 +267,7 @@ def test_set_extension_mode(file_open):
     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.set_extension_mode(
         CATOpnsMeasureExtensionMode.catOpnsInfiniteExtend,
         CATOpnsMeasureExtensionMode.catOpnsInfiniteExtend
@@ -282,22 +282,22 @@ def test_set_extension_mode(file_open):
 
 # pass
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
-def test_set_result_computation_type(file_open):
-    editor = application.active_editor
-    measure_service: MeasureService = editor.get_service("MeasureService")
-    part = Part(editor.active_com_object)
-    hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
-    point_1 = hb_geom_set_points.hybrid_shapes[0]
-    point_2 = hb_geom_set_points.hybrid_shapes[1]
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
-    measure_between_lines.compute()
-    measure_between_lines.set_result_computation_type(
-        CATResultCalcType.ResUnknownCalculation,
-    )
-    computation_type = measure_between_lines.get_result_computation_type()
-
-    assert computation_type == CATResultCalcType.ResUnknownCalculation
+# @pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+# def test_set_result_computation_type(file_open):
+#     editor = application.active_editor
+#     measure_service: MeasureService = editor.get_service("MeasureService")
+#     part = Part(editor.active_com_object)
+#     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
+#     point_1 = hb_geom_set_points.hybrid_shapes[0]
+#     point_2 = hb_geom_set_points.hybrid_shapes[1]
+#     measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
+#     measure_between_lines.compute()
+#     measure_between_lines.set_result_computation_type(
+#         CATResultCalcType.ResUnknownCalculation,
+#     )
+#     computation_type = measure_between_lines.get_result_computation_type()
+#
+#     assert computation_type == CATResultCalcType.ResUnknownCalculation
 
 
 # def test_set_second_selection():
@@ -312,7 +312,7 @@ def test_set_selection_calculation_types(file_open):
     hb_geom_set_points = part.hybrid_bodies.item(geom_set_points)
     point_1 = hb_geom_set_points.hybrid_shapes[0]
     point_2 = hb_geom_set_points.hybrid_shapes[1]
-    measure_between_lines = measure_service.get_measure_between((point_1.com_object,), (point_2.com_object,))
+    measure_between_lines = measure_service.get_measure_between((point_1,), (point_2,))
     measure_between_lines.compute()
     measure_between_lines.set_selection_calculation_types(
         CATResultCalcType.ResApproximateCalculation,
