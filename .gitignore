@@ -213,5 +213,5 @@ __junk__
 
 temp*.py
 
-
+docs/
 .pyrc
