@@ -7,6 +7,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 
 
@@ -90,8 +91,23 @@ class MeasurableAxisSystem(MeasurableInContext):
 
         :return: None
         """
-        # todo: check this method, does it require system service?
-        return self.com_object.GetAxis()
+        vba_function_name = 'get_axis'
+        vba_code = """
+        Public Function get_axis(measurable_axis_system)
+            Dim oAxis (11)
+            measurable_axis_system.GetAxis oAxis
+            get_axis = oAxis
+        End Function
+        """
+
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        return result
 
     def __repr__(self):
         return f'MeasurableAxisSystem(name="{self.name}")'

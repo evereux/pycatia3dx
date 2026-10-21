@@ -60,7 +60,7 @@ class MeasurableVolume(MeasurableInContext):
         """
         return self.com_object.GetArea()
 
-    def get_c_of_g(self, o_xc_of_g: float, o_yc_of_g: float, o_zc_of_g: float) -> None:
+    def get_c_of_g(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -85,12 +85,9 @@ class MeasurableVolume(MeasurableInContext):
                 |              theMeasurableVolume.GetCOG theXCOfG, theYCOfG,
                 |              theZCOfG
 
-        :param float o_xc_of_g:
-        :param float o_yc_of_g:
-        :param float o_zc_of_g:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetCOfG(o_xc_of_g, o_yc_of_g, o_zc_of_g)
+        return self.com_object.GetCOfG()
 
     def get_volume(self) -> float:
         """
@@ -118,8 +115,7 @@ class MeasurableVolume(MeasurableInContext):
         """
         return self.com_object.GetVolume()
 
-    def get_volume_area_c_of_g(self, o_volume: float, o_area: float, o_xc_of_g: float, o_yc_of_g: float,
-                               o_zc_of_g: float) -> None:
+    def get_volume_area_c_of_g(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -149,14 +145,9 @@ class MeasurableVolume(MeasurableInContext):
                 |              theMeasurableVolume.GetVolume_Area_COfG theVolume, theArea,
                 |              theXCOfG, theYCOfG, theZCOfG
 
-        :param float o_volume:
-        :param float o_area:
-        :param float o_xc_of_g:
-        :param float o_yc_of_g:
-        :param float o_zc_of_g:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetVolume_Area_COfG(o_volume, o_area, o_xc_of_g, o_yc_of_g, o_zc_of_g)
+        return self.com_object.GetVolume_Area_COfG()
 
     def __repr__(self):
         return f'MeasurableVolume(name="{self.name}")'

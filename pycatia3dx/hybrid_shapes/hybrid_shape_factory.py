@@ -7,7 +7,11 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Union
 
+import pythoncom
+
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.hybrid_shapes.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
 from pycatia3dx.hybrid_shapes.hybrid_shape_affinity import HybridShapeAffinity
 from pycatia3dx.hybrid_shapes.hybrid_shape_assemble import HybridShapeAssemble
@@ -113,6 +117,7 @@ from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_curve import HybridShapeWrapCurv
 from pycatia3dx.hybrid_shapes.hybrid_shape_wrap_surface import HybridShapeWrapSurface
 from pycatia3dx.mmr_automation_interfaces.factory import Factory
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.scripts.vba import vba_nothing, VBANothing
 
 
 class HybridShapeFactory(Factory):
@@ -2706,7 +2711,7 @@ class HybridShapeFactory(Factory):
             self,
             i_curve1: Reference,
             i_element2: Reference,
-            i_support: Reference
+            i_support: Union[Reference | VBANothing]
     ) -> HybridShapeLineBiTangent:
         """
         .. note::
@@ -2740,11 +2745,22 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :return: HybridShapeLineBiTangent
         """
+
+        if i_support == vba_nothing:
+            i_support = self.application.system_service.evaluate(
+                vba_nothing,
+                CATScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
+        else:
+            i_support = i_support.com_object
+
         return HybridShapeLineBiTangent(
             self.com_object.AddNewLineBiTangent(
                 i_curve1.com_object,
                 i_element2.com_object,
-                i_support.com_object
+                i_support
             )
         )
 
@@ -5158,10 +5174,21 @@ class HybridShapeFactory(Factory):
         :param float i_end_meridian_angle:
         :return: HybridShapeSphere
         """
+
+        if i_axis == vba_nothing:
+            i_axis = self.application.system_service.evaluate(
+                vba_nothing,
+                CATScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
+        else:
+            i_axis = i_axis.com_object
+
         return HybridShapeSphere(
             self.com_object.AddNewSphere(
                 i_center.com_object,
-                i_axis.com_object,
+                i_axis,
                 i_radius,
                 i_begin_parallel_angle,
                 i_end_parallel_angle,

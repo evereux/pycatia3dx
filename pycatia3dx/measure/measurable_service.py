@@ -7,9 +7,11 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia3dx import CATMeasurableType
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 from pycatia3dx.system.any_object import AnyObject
+from pycatia3dx.types.measurable import measurable_in_context_types
 
 
 class MeasurableService(Service):
@@ -36,7 +38,7 @@ class MeasurableService(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_measurable(self, i_measured_item: AnyObject, i_type: int) -> MeasurableInContext:
+    def get_measurable(self, i_measured_item: AnyObject, i_type: CATMeasurableType) -> MeasurableInContext:
         """
         .. note::
             :class: toggle
@@ -57,10 +59,16 @@ class MeasurableService(Service):
                 |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
 
         :param AnyObject i_measured_item:
-        :param int i_type:
+        :param CATMeasurableType i_type:
         :return: MeasurableInContext
         """
-        return MeasurableInContext(self.com_object.GetMeasurable(i_measured_item.com_object, i_type))
+        TypeName = self.application.vba_type_name
+        measurable_in_context = MeasurableInContext(self.com_object.GetMeasurable(i_measured_item.com_object, i_type))
+        type_name = TypeName(measurable_in_context)
+        if type_name in measurable_in_context_types:
+            return measurable_in_context_types[type_name](measurable_in_context.com_object)
+
+        return measurable_in_context
 
     def __repr__(self):
         return f'MeasurableService(name="{self.name}")'

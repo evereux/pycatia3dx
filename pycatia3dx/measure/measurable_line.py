@@ -37,7 +37,7 @@ class MeasurableLine(MeasurableCurve):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_direction(self, o_x_vector: float, o_y_vector: float, o_z_vector: float) -> None:
+    def get_direction(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -62,13 +62,10 @@ class MeasurableLine(MeasurableCurve):
                 |              theMeasurableLine.GetDirection theXVector, theYVector,
                 |              theZVector
 
-        :param float o_x_vector:
-        :param float o_y_vector:
-        :param float o_z_vector:
-        :return: None
+        :return: tuple
         """
         # todo: check this method, does it require system service?
-        return self.com_object.GetDirection(o_x_vector, o_y_vector, o_z_vector)
+        return self.com_object.GetDirection()
 
     def get_origin(self) -> tuple:
         """

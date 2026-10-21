@@ -34,7 +34,7 @@ class MeasurablePoint(MeasurableInContext):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_point(self, o_x_point: float, o_y_point: float, o_z_point: float) -> None:
+    def get_point(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -58,12 +58,9 @@ class MeasurablePoint(MeasurableInContext):
                 |              theMeasurablePoint.GetPoint theXPoint, theYPoint,
                 |              theZPoint
 
-        :param float o_x_point:
-        :param float o_y_point:
-        :param float o_z_point:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
+        return self.com_object.GetPoint()
 
     def __repr__(self):
         return f'MeasurablePoint(name="{self.name}")'

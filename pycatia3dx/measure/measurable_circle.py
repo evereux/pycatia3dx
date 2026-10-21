@@ -88,10 +88,9 @@ class MeasurableCircle(MeasurableCurve):
 
         :return: tuple
         """
-        # todo: check this method, does it require system service?
         return self.com_object.GetAxis()
 
-    def get_center(self, o_x_center: float, o_y_center: float, o_z_center: float) -> None:
+    def get_center(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -115,12 +114,9 @@ class MeasurableCircle(MeasurableCurve):
                 |              theMeasurableCircle.GetCenter theXCenter, theYCenter,
                 |              theZCenter
 
-        :param float o_x_center:
-        :param float o_y_center:
-        :param float o_z_center:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetCenter(o_x_center, o_y_center, o_z_center)
+        return self.com_object.GetCenter()
 
     def get_radius(self) -> float:
         """

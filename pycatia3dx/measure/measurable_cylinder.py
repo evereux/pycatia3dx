@@ -65,7 +65,7 @@ class MeasurableCylinder(MeasurableSurface):
         """
         return self.com_object.GetAxis()
 
-    def get_point(self, o_x_point: float, o_y_point: float, o_z_point: float) -> None:
+    def get_point(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -90,12 +90,9 @@ class MeasurableCylinder(MeasurableSurface):
                 |              theMeasurableCylinder.GetPoint theXPoint, theYPoint,
                 |              theZPoint
 
-        :param float o_x_point:
-        :param float o_y_point:
-        :param float o_z_point:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetPoint(o_x_point, o_y_point, o_z_point)
+        return self.com_object.GetPoint()
 
     def get_points(self) -> tuple:
         """

@@ -60,7 +60,7 @@ class MeasurableSurface(MeasurableInContext):
         """
         return self.com_object.GetArea()
 
-    def get_area_c_of_g(self, o_area: float, o_xc_of_g: float, o_yc_of_g: float, o_zc_of_g: float) -> None:
+    def get_area_c_of_g(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -88,15 +88,11 @@ class MeasurableSurface(MeasurableInContext):
                 |              theMeasurableSurface.GetCOG theArea, theXCOfG, theYCOfG,
                 |              theZCOfG
 
-        :param float o_area:
-        :param float o_xc_of_g:
-        :param float o_yc_of_g:
-        :param float o_zc_of_g:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetArea_COfG(o_area, o_xc_of_g, o_yc_of_g, o_zc_of_g)
+        return self.com_object.GetArea_COfG()
 
-    def get_c_of_g(self, o_xc_of_g: float, o_yc_of_g: float, o_zc_of_g: float) -> None:
+    def get_c_of_g(self) -> tuple:
         """
         .. note::
             :class: toggle
@@ -121,12 +117,9 @@ class MeasurableSurface(MeasurableInContext):
                 |              theMeasurableSurface.GetCOG theXCOfG, theYCOfG,
                 |              theZCOfG
 
-        :param float o_xc_of_g:
-        :param float o_yc_of_g:
-        :param float o_zc_of_g:
-        :return: None
+        :return: tuple
         """
-        return self.com_object.GetCOfG(o_xc_of_g, o_yc_of_g, o_zc_of_g)
+        return self.com_object.GetCOfG()
 
     def get_perimeter(self) -> float:
         """
