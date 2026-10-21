@@ -14,7 +14,6 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeExtrapol(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -365,7 +364,7 @@ class HybridShapeExtrapol(HybridShape):
         :param Reference value:
         """
 
-        self.com_object.Support = value
+        self.com_object.Support = value.com_object
 
     def get_boundary(self, i_pos: int) -> Reference:
         """
@@ -669,4 +668,4 @@ class HybridShapeExtrapol(HybridShape):
         return self.com_object.SetLimitType(i_pos, i_lim)
 
     def __repr__(self):
-        return f'HybridShapeExtrapol(name="{ self.name }")'
+        return f'HybridShapeExtrapol(name="{self.name}")'

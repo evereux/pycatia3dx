@@ -24,7 +24,8 @@ from pycatia3dx.mmr_automation_interfaces.origin_elements import OriginElements
 from pycatia3dx.mode.reference import Reference
 from pycatia3dx.part.shape_factory import ShapeFactory
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.system.collection import Collection
+from pycatia3dx.tps.annotation_sets import AnnotationSets
+from pycatia3dx.tps.user_surfaces import UserSurfaces
 
 
 class Part(AnyObject):
@@ -54,7 +55,7 @@ class Part(AnyObject):
         self.com_object = com_object
 
     @property
-    def annotation_sets(self) -> Collection:
+    def annotation_sets(self) -> AnnotationSets:
         """
         .. note::
             :class: toggle
@@ -74,10 +75,10 @@ class Part(AnyObject):
                 |          Dim annotationSets As AnnotationSets
                 |          Set annotationSets = partRoot.AnnotationSets
 
-        :return: Collection
+        :return: AnnotationSets
         """
 
-        return Collection(self.com_object.AnnotationSets)
+        return AnnotationSets(self.com_object.AnnotationSets)
 
     @property
     def axis_systems(self) -> AxisSystems:
@@ -444,7 +445,7 @@ class Part(AnyObject):
         return ShapeFactory(self.com_object.ShapeFactory)
 
     @property
-    def user_surfaces(self) -> Collection:
+    def user_surfaces(self) -> UserSurfaces:
         """
         .. note::
             :class: toggle
@@ -464,10 +465,10 @@ class Part(AnyObject):
                 |          Dim userSurfaces As UserSurfaces
                 |          Set userSurfaces = partRoot.UserSurfaces
 
-        :return: Collection
+        :return: UserSurfaces
         """
 
-        return Collection(self.com_object.UserSurfaces)
+        return UserSurfaces(self.com_object.UserSurfaces)
 
     def activate(self, i_object: AnyObject) -> None:
         """

@@ -4,6 +4,7 @@
 * Added Application.message_box and Application.input_box
 * Updated VisPropertySet.
 * Updates to pycatia3dx/measure tooling.
+* Various updates ported from pycatia.
 
 ## 0.1.1
 

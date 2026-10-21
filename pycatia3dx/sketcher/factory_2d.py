@@ -44,8 +44,14 @@ class Factory2D(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_circle(self, i_center_x: float, i_center_y: float, i_radius: float, i_start_param: float,
-                      i_end_param: float) -> Circle2D:
+    def create_circle(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_radius: float,
+            i_start_param: float,
+            i_end_param: float
+    ) -> Circle2D:
         """
         .. note::
             :class: toggle
@@ -114,8 +120,15 @@ class Factory2D(AnyObject):
         """
         return Circle2D(self.com_object.CreateClosedCircle(i_center_x, i_center_y, i_radius))
 
-    def create_closed_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
-                              i_major_radius: float, i_minor_radius: float) -> Ellipse2D:
+    def create_closed_ellipse(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_major_x: float,
+            i_major_y: float,
+            i_major_radius: float,
+            i_minor_radius: float
+    ) -> Ellipse2D:
         """
         .. note::
             :class: toggle
@@ -152,8 +165,15 @@ class Factory2D(AnyObject):
         :return: Ellipse2D
         """
         return Ellipse2D(
-            self.com_object.CreateClosedEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius,
-                                                i_minor_radius))
+            self.com_object.CreateClosedEllipse(
+                i_center_x,
+                i_center_y,
+                i_major_x,
+                i_major_y,
+                i_major_radius,
+                i_minor_radius
+            )
+        )
 
     def create_control_point(self, i_x: float, i_y: float) -> ControlPoint2D:
         """
@@ -180,9 +200,17 @@ class Factory2D(AnyObject):
         """
         return ControlPoint2D(self.com_object.CreateControlPoint(i_x, i_y))
 
-    def create_ellipse(self, i_center_x: float, i_center_y: float, i_major_x: float, i_major_y: float,
-                       i_major_radius: float, i_minor_radius: float, i_start_param: float,
-                       i_end_param: float) -> Ellipse2D:
+    def create_ellipse(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_major_x: float,
+            i_major_y: float,
+            i_major_radius: float,
+            i_minor_radius: float,
+            i_start_param: float,
+            i_end_param: float
+    ) -> Ellipse2D:
         """
         .. note::
             :class: toggle
@@ -231,11 +259,27 @@ class Factory2D(AnyObject):
         :return: Ellipse2D
         """
         return Ellipse2D(
-            self.com_object.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius,
-                                          i_start_param, i_end_param))
+            self.com_object.CreateEllipse(
+                i_center_x,
+                i_center_y,
+                i_major_x,
+                i_major_y,
+                i_major_radius,
+                i_minor_radius,
+                i_start_param,
+                i_end_param
+            )
+        )
 
-    def create_hyperbola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
-                         i_major_radius: float, i_minor_radius: float) -> Hyperbola2D:
+    def create_hyperbola(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_axis_x: float,
+            i_axis_y: float,
+            i_major_radius: float,
+            i_minor_radius: float
+    ) -> Hyperbola2D:
         """
         .. note::
             :class: toggle
@@ -272,7 +316,15 @@ class Factory2D(AnyObject):
         :return: Hyperbola2D
         """
         return Hyperbola2D(
-            self.com_object.CreateHyperbola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius))
+            self.com_object.CreateHyperbola(
+                i_center_x,
+                i_center_y,
+                i_axis_x,
+                i_axis_y,
+                i_major_radius,
+                i_minor_radius
+            )
+        )
 
     def create_intersection(self, i_geometry: Reference) -> Geometry2D:
         """
@@ -385,8 +437,14 @@ class Factory2D(AnyObject):
         """
         return Line2D(self.com_object.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy))
 
-    def create_parabola(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float,
-                        i_focal_distance: float) -> Parabola2D:
+    def create_parabola(
+            self,
+            i_center_x: float,
+            i_center_y: float,
+            i_axis_x: float,
+            i_axis_y: float,
+            i_focal_distance: float
+    ) -> Parabola2D:
         """
         .. note::
             :class: toggle
@@ -419,7 +477,15 @@ class Factory2D(AnyObject):
         :param float i_focal_distance:
         :return: Parabola2D
         """
-        return Parabola2D(self.com_object.CreateParabola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance))
+        return Parabola2D(
+            self.com_object.CreateParabola(
+                i_center_x,
+                i_center_y,
+                i_axis_x,
+                i_axis_y,
+                i_focal_distance
+            )
+        )
 
     def create_point(self, i_x: float, i_y: float) -> Point2D:
         """
@@ -517,7 +583,7 @@ class Factory2D(AnyObject):
         :param tuple i_poles:
         :return: Spline2D
         """
-        return Spline2D(self.com_object.CreateSpline(i_poles))
+        return Spline2D(self.com_object.CreateSpline(tuple(p2d.com_object for p2d in i_poles)))
         # todo: check this method, does it require system service?
         # Autogenerated comment:
         # some methods require a system service call as the methods expects a vb array object

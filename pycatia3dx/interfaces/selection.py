@@ -782,6 +782,7 @@ class Selection(AnyObject):
         :param tuple o_window_location:
         :return: str
         """
+        # todo: not tested yet but for pycatia this required a VBA script to work.
         return self.com_object.IndicateOrSelectElement2D(
             i_message,
             i_filter_type,
@@ -1000,6 +1001,7 @@ class Selection(AnyObject):
         :param tuple o_window_location_3d:
         :return: str
         """
+        # todo: not tested yet but for pycatia this required a VBA script to work.
         return self.com_object.IndicateOrSelectElement3D(
             i_planar_geometric_object.com_object,
             i_message,

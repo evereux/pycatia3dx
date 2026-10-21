@@ -7,14 +7,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Union
 
+from pycatia3dx import CATScriptLanguage
 from pycatia3dx.knowledge_interfaces.length import Length
 from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 from pycatia3dx.mode.reference import Reference
+from pycatia3dx.scripts.vba import VBANothing, vba_nothing
 
 
 class HybridShapeLoft(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -528,7 +530,7 @@ class HybridShapeLoft(HybridShape):
         """
         return self.com_object.AddGuideWithTangent(i_guide.com_object, i_tangent.com_object)
 
-    def add_section_to_loft(self, i_crv: Reference, i_ori: int, i_point: Reference) -> None:
+    def add_section_to_loft(self, i_crv: Reference, i_ori: int, i_point: Union[Reference, VBANothing]) -> None:
         """
         .. note::
             :class: toggle
@@ -552,7 +554,18 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_point:
         :return: None
         """
-        return self.com_object.AddSectionToLoft(i_crv.com_object, i_ori, i_point.com_object)
+
+        if i_point == vba_nothing:
+            i_point = self.application.system_service.evaluate(
+                vba_nothing,
+                CATScriptLanguage.CATVBScriptLanguage,
+                'N',
+                []
+            )
+        else:
+            i_point = i_point.com_object
+
+        return self.com_object.AddSectionToLoft(i_crv.com_object, i_ori, i_point)
 
     def get_area_law_tolerance_parameter(self) -> Length:
         """
@@ -696,7 +709,8 @@ class HybridShapeLoft(HybridShape):
         """
         return self.com_object.GetSpine(o_spine_type, o_spine.com_object)
 
-    def get_start_and_end_section_tangent(self, o_start_section_tangent: Reference, o_end_section_tangent: Reference) -> None:
+    def get_start_and_end_section_tangent(self, o_start_section_tangent: Reference,
+                                          o_end_section_tangent: Reference) -> None:
         """
         .. note::
             :class: toggle
@@ -718,7 +732,8 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_end_section_tangent:
         :return: None
         """
-        return self.com_object.GetStartAndEndSectionTangent(o_start_section_tangent.com_object, o_end_section_tangent.com_object)
+        return self.com_object.GetStartAndEndSectionTangent(o_start_section_tangent.com_object,
+                                                            o_end_section_tangent.com_object)
 
     def insert_coupling(self, i_position: int) -> None:
         """
@@ -774,7 +789,8 @@ class HybridShapeLoft(HybridShape):
         """
         return self.com_object.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
 
-    def insert_section_to_loft(self, i_type: bool, i_crv: Reference, i_ori: int, i_point: Reference, i_section_ref: Reference) -> None:
+    def insert_section_to_loft(self, i_type: bool, i_crv: Reference, i_ori: int, i_point: Reference,
+                               i_section_ref: Reference) -> None:
         """
         .. note::
             :class: toggle
@@ -805,7 +821,8 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section_ref:
         :return: None
         """
-        return self.com_object.InsertSectionToLoft(i_type, i_crv.com_object, i_ori, i_point.com_object, i_section_ref.com_object)
+        return self.com_object.InsertSectionToLoft(i_type, i_crv.com_object, i_ori, i_point.com_object,
+                                                   i_section_ref.com_object)
 
     def modify_guide_curve(self, i_guide: Reference, i_new_guide: Reference) -> None:
         """
@@ -829,7 +846,8 @@ class HybridShapeLoft(HybridShape):
         """
         return self.com_object.ModifyGuideCurve(i_guide.com_object, i_new_guide.com_object)
 
-    def modify_section_curve(self, i_section: Reference, i_new_section: Reference, o_curve_section: Reference, o_closing_point: Reference, o_pt_diag: int) -> None:
+    def modify_section_curve(self, i_section: Reference, i_new_section: Reference, o_curve_section: Reference,
+                             o_closing_point: Reference, o_pt_diag: int) -> None:
         """
         .. note::
             :class: toggle
@@ -864,7 +882,8 @@ class HybridShapeLoft(HybridShape):
         :param int o_pt_diag:
         :return: None
         """
-        return self.com_object.ModifySectionCurve(i_section.com_object, i_new_section.com_object, o_curve_section.com_object, o_closing_point.com_object, o_pt_diag)
+        return self.com_object.ModifySectionCurve(i_section.com_object, i_new_section.com_object,
+                                                  o_curve_section.com_object, o_closing_point.com_object, o_pt_diag)
 
     def modify_section_orient(self, i_section: Reference, i_orient: int) -> None:
         """
@@ -1120,4 +1139,4 @@ class HybridShapeLoft(HybridShape):
         return self.com_object.SetStartSectionTangent(i_tangent_section.com_object)
 
     def __repr__(self):
-        return f'HybridShapeLoft(name="{ self.name }")'
+        return f'HybridShapeLoft(name="{self.name}")'

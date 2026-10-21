@@ -14,7 +14,6 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeAxisLine(HybridShape):
-
     """
         .. note::
             :class: toggle
@@ -154,7 +153,7 @@ class HybridShapeAxisLine(HybridShape):
         :param Reference value:
         """
 
-        self.com_object.Element = value
+        self.com_object.Element = value.com_object
 
     def __repr__(self):
-        return f'HybridShapeAxisLine(name="{ self.name }")'
+        return f'HybridShapeAxisLine(name="{self.name}")'
