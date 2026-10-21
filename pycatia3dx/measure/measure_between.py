@@ -201,7 +201,7 @@ class MeasureBetween(AnyObject):
         """
         return self.com_object.GetBandAnalysisParameters()
 
-    def get_components(self) -> tuple:
+    def get_components(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -247,7 +247,9 @@ class MeasureBetween(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_computation_mode(self) -> CATMeasurableModeOfCalc:
         """
@@ -380,7 +382,7 @@ class MeasureBetween(AnyObject):
         """
         return self.com_object.GetExtensionMode()
 
-    def get_first_point_coordinates(self) -> tuple[float, float, float]:
+    def get_first_point_coordinates(self) -> tuple[float, float, float] | None:
         """
         .. note::
             :class: toggle
@@ -424,7 +426,9 @@ class MeasureBetween(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_first_selection(self) -> tuple:
         """
@@ -504,7 +508,7 @@ class MeasureBetween(AnyObject):
         """
         return self.com_object.GetResultComputationType()
 
-    def get_second_point_coordinates(self) -> tuple[float, float, float]:
+    def get_second_point_coordinates(self) -> tuple[float, float, float] | None:
         """
         .. note::
             :class: toggle
@@ -550,7 +554,9 @@ class MeasureBetween(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_second_selection(self) -> tuple:
         """

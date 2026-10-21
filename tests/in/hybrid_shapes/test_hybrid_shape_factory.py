@@ -11,9 +11,9 @@ from tests.test_part_parameters import TEST_3DSHAPE_ONE, geom_set_points, geom_s
     geom_set_surfaces
 
 
-@pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
-def test_add_new_3d_corner(file_open):
-    pass
+# @pytest.mark.parametrize('file_name,base_type', [(TEST_3DSHAPE_ONE, "3DShape")])
+# def test_add_new_3d_corner(file_open):
+#     pass
 
 
 # def test_add_new_3d_curve_offset():

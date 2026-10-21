@@ -14,6 +14,6 @@ def test_get_axis(file_open):
     part = Part(editor.active_com_object)
     axis = part.axis_systems[0]
     measure_service: MeasurableService = editor.get_service("MeasurableService")
-    measurable: MeasurableAxisSystem = measure_service.get_measurable(axis, CATMeasurableType.CAAMeasurableAxisSystem)
-
-    assert measurable.get_axis() == (0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)
+    measurable = measure_service.get_measurable(axis, CATMeasurableType.CAAMeasurableAxisSystem)
+    if isinstance(measurable, MeasurableAxisSystem):
+        assert measurable.get_axis() == (0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0)

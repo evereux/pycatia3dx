@@ -37,7 +37,7 @@ class MeasurablePlane(MeasurableSurface):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_plane(self) -> tuple:
+    def get_plane(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -98,7 +98,9 @@ class MeasurablePlane(MeasurableSurface):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurablePlane(name="{self.name}")'

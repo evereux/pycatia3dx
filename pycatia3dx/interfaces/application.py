@@ -1388,7 +1388,7 @@ class Application(AnyObject):
         """
         return self.com_object.Help(i_help_id)
 
-    def message_box(self, message_text: str, buttons: int = 0, title: str = "") -> int:
+    def message_box(self, message_text: str, buttons: int = 0, title: str = "") -> int | None:
         """
 
         The button values
@@ -1458,19 +1458,23 @@ class Application(AnyObject):
         :return: Returns an int which is representative of the button pressed.
         :rtype: int
         """
-        function_name = "message_box"
-        msg_box = f"Public Function {function_name}(message_text, buttons, title)\n" \
-                  f"    {function_name} = MsgBox(message_text, buttons, title)\n" \
-                  "End Function"
+        vba_function_name = "message_box"
+        vba_code = f"Public Function {vba_function_name}(message_text, buttons, title)\n" \
+                   f"    {vba_function_name} = MsgBox(message_text, buttons, title)\n" \
+                   "End Function"
 
-        return self.system_service.evaluate(
-            msg_box,
+        result = self.application.system_service.evaluate(
+            vba_code,
             CATScriptLanguage.CATVBScriptLanguage,
-            function_name,
-            [message_text, buttons, title]
+            vba_function_name,
+            [message_text, buttons, title],
         )
 
-    def input_box(self, prompt: str, title: str = '', default: str = '') -> str:
+        if isinstance(result, int):
+            return result
+        return None
+
+    def input_box(self, prompt: str, title: str = '', default: str = '') -> str | None:
         """
         Display InputBox in CATIA 3DExperience.
         Default position is in the center screen.
@@ -1485,17 +1489,21 @@ class Application(AnyObject):
                                       displayed empty.
         :returns: str
         """
-        f_name = "input_box"
-        i_box = f"Public Function {f_name}(prompt,title,default)\n" \
-                f"    {f_name} = InputBox(prompt,title,default)\n" \
-                "End Function"
+        vba_function_name = "input_box"
+        vba_code = f"Public Function {vba_function_name}(prompt,title,default)\n" \
+                   f"    {vba_function_name} = InputBox(prompt,title,default)\n" \
+                   "End Function"
 
-        return self.system_service.evaluate(
-            i_box,
+        result = self.application.system_service.evaluate(
+            vba_code,
             CATScriptLanguage.CATVBScriptLanguage,
-            f_name,
-            [prompt, title, default]
+            vba_function_name,
+            [prompt, title, default],
         )
+
+        if isinstance(result, str):
+            return result
+        return None
 
     def quit(self) -> None:
         """
@@ -1563,7 +1571,7 @@ class Application(AnyObject):
         """
         return self.com_object.StartWorkbench(i_workbench_id)
 
-    def vba_type_name(self, object: AnyObject) -> str:
+    def vba_type_name(self, object: AnyObject) -> str | None:
         """
         :param AnyObject object:
         :return: str
@@ -1575,7 +1583,9 @@ class Application(AnyObject):
             [object.com_object],
         )
 
-        return type_name
+        if isinstance(type_name, str):
+            return type_name
+        return None
 
     def setting_controllers(self) -> SettingControllers:
         return SettingControllers(self.com_object.SettingControllers)

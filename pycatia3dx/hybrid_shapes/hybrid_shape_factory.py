@@ -2711,7 +2711,7 @@ class HybridShapeFactory(Factory):
             self,
             i_curve1: Reference,
             i_element2: Reference,
-            i_support: Union[Reference | VBANothing]
+            i_support: Reference | VBANothing
     ) -> HybridShapeLineBiTangent:
         """
         .. note::
@@ -2746,7 +2746,7 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeLineBiTangent
         """
 
-        if i_support == vba_nothing:
+        if isinstance(i_support, VBANothing):
             i_support = self.application.system_service.evaluate(
                 vba_nothing,
                 CATScriptLanguage.CATVBScriptLanguage,
@@ -5127,7 +5127,7 @@ class HybridShapeFactory(Factory):
     def add_new_sphere(
             self,
             i_center: Reference,
-            i_axis: Reference,
+            i_axis: Reference | VBANothing,
             i_radius: float,
             i_begin_parallel_angle: float,
             i_end_parallel_angle: float,
@@ -5175,7 +5175,7 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeSphere
         """
 
-        if i_axis == vba_nothing:
+        if isinstance(i_axis, VBANothing):
             i_axis = self.application.system_service.evaluate(
                 vba_nothing,
                 CATScriptLanguage.CATVBScriptLanguage,

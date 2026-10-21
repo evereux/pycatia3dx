@@ -604,7 +604,7 @@ class Hole(SketchBasedShape):
         """
         return self.com_object.CreateUserStandardDesignTable(i_standard_name, i_path)
 
-    def get_direction(self) -> tuple:
+    def get_direction(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -644,9 +644,11 @@ class Hole(SketchBasedShape):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
-    def get_origin(self) -> None:
+    def get_origin(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -686,7 +688,9 @@ class Hole(SketchBasedShape):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def reverse(self) -> None:
         """

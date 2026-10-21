@@ -77,7 +77,7 @@ class PlanarFace(Face):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_first_axis(self) -> tuple:
+    def get_first_axis(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -114,10 +114,11 @@ class PlanarFace(Face):
             vba_function_name,
             [self.com_object]
         )
+        if isinstance(result, tuple):
+            return result
+        return None
 
-        return result
-
-    def get_origin(self) -> tuple:
+    def get_origin(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -152,9 +153,11 @@ class PlanarFace(Face):
             vba_function_name,
             [self.com_object]
         )
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
-    def get_second_axis(self) -> tuple:
+    def get_second_axis(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -190,7 +193,11 @@ class PlanarFace(Face):
             vba_function_name,
             [self.com_object]
         )
-        return result
+
+        if isinstance(result, tuple):
+            return result
+        return None
+
 
     def __repr__(self):
         return f'PlanarFace(name="{self.name}")'

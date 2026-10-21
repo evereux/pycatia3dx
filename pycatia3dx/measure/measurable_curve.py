@@ -61,7 +61,7 @@ class MeasurableCurve(MeasurableInContext):
         """
         return self.com_object.GetLength()
 
-    def get_points(self) -> tuple:
+    def get_points(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -145,7 +145,9 @@ class MeasurableCurve(MeasurableInContext):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurableCurve(name="{self.name}")'

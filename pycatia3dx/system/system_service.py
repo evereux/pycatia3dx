@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Union
 
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.types.general import CATVariant

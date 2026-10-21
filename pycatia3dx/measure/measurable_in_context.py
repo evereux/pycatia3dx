@@ -32,7 +32,7 @@ class MeasurableInContext(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_axis_system_from_measurable(self) -> tuple:
+    def get_axis_system_from_measurable(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -110,7 +110,9 @@ class MeasurableInContext(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_result_computation_mode(self) -> int:
         """

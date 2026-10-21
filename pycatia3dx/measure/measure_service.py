@@ -69,11 +69,11 @@ class MeasureService(Service):
         :return: MeasureBetween
         """
 
-        i_first_selections = [selection.com_object for selection in i_first_selections]
-        i_second_selections = [selection.com_object for selection in i_second_selections]
+        i_first_selections = tuple(selection.com_object for selection in i_first_selections)
+        i_second_selections = tuple(selection.com_object for selection in i_second_selections)
 
         return MeasureBetween(self.com_object.GetMeasureBetween(i_first_selections, i_second_selections))
- 
+
     def get_measure_item(self, i_selections: tuple) -> MeasureItem:
         """
         .. note::
@@ -102,7 +102,7 @@ class MeasureService(Service):
         :param tuple i_selections:
         :return: MeasureItem
         """
-        i_selections = [selection.com_object for selection in i_selections]
+        i_selections = tuple(selection.com_object for selection in i_selections)
 
         return MeasureItem(self.com_object.GetMeasureItem(i_selections))
 

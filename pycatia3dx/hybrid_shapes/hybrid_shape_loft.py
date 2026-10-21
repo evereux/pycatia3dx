@@ -555,7 +555,7 @@ class HybridShapeLoft(HybridShape):
         :return: None
         """
 
-        if i_point == vba_nothing:
+        if isinstance(i_point, VBANothing):
             i_point = self.application.system_service.evaluate(
                 vba_nothing,
                 CATScriptLanguage.CATVBScriptLanguage,
@@ -565,7 +565,7 @@ class HybridShapeLoft(HybridShape):
         else:
             i_point = i_point.com_object
 
-        return self.com_object.AddSectionToLoft(i_crv.com_object, i_ori, i_point)
+        self.com_object.AddSectionToLoft(i_crv.com_object, i_ori, i_point)
 
     def get_area_law_tolerance_parameter(self) -> Length:
         """

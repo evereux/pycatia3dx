@@ -1,3 +1,5 @@
+from typing import TypeAlias
+
 from pycatia3dx.measure.measurable_axis_system import MeasurableAxisSystem
 from pycatia3dx.measure.measurable_between import MeasurableBetween
 from pycatia3dx.measure.measurable_circle import MeasurableCircle
@@ -25,3 +27,5 @@ measurable_in_context_types = {
     'MeasurableSurface': MeasurableSurface,
     'MeasurableVolume': MeasurableVolume,
 }
+
+MeasurableInContextTypes: TypeAlias = MeasurableAxisSystem | MeasurableBetween | MeasurableCircle | MeasurableCone | MeasurableCurve | MeasurableCylinder | MeasurableLine | MeasurablePlane | MeasurablePoint | MeasurableSphere | MeasurableSurface | MeasurableVolume

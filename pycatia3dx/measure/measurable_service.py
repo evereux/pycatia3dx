@@ -11,7 +11,7 @@ from pycatia3dx import CATMeasurableType
 from pycatia3dx.interfaces.service import Service
 from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 from pycatia3dx.system.any_object import AnyObject
-from pycatia3dx.types.measurable import measurable_in_context_types
+from pycatia3dx.types.measurable import measurable_in_context_types, MeasurableInContextTypes
 
 
 class MeasurableService(Service):

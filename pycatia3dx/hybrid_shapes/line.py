@@ -103,7 +103,7 @@ class Line(HybridShape):
 
         self.com_object.SecondUptoElem = value
 
-    def get_direction(self) -> tuple:
+    def get_direction(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -150,9 +150,11 @@ class Line(HybridShape):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
-    def get_origin(self) -> tuple:
+    def get_origin(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -196,8 +198,9 @@ class Line(HybridShape):
             vba_function_name,
             [self.com_object]
         )
-
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def put_direction(self, i_direction: tuple) -> None:
         """

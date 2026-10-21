@@ -42,7 +42,7 @@ class Point(HybridShape):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_coordinates(self) -> tuple:
+    def get_coordinates(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -71,7 +71,17 @@ class Point(HybridShape):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+        result = system_service.evaluate(
+            vba_code,
+            0,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def set_coordinates(self, o_coordinates: tuple) -> None:
         """

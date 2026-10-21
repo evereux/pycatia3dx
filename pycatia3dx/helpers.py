@@ -1,5 +1,6 @@
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
+from pycatia3dx.del_resource_builder.rsc_applicative_profiles_group import RscApplicativeProfilesGroup
 from pycatia3dx.types.bodies import body_types
 from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
 from pycatia3dx.types.parameters_and_relations import parameter_and_relation_types
@@ -11,7 +12,7 @@ if TYPE_CHECKING:
     from pycatia3dx.system.any_object import AnyObject
 
 
-def return_real_object(application: 'Application', any_object: 'AnyObject') -> 'AnyObject':
+def return_real_object(application: 'Application', any_object: 'AnyObject') -> Any:
     TypeName = application.vba_type_name
 
     type_string = TypeName(any_object)

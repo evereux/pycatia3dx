@@ -329,7 +329,7 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetComputationMode()
 
-    def get_curve_points(self) -> tuple:
+    def get_curve_points(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -411,8 +411,9 @@ class MeasureItem(AnyObject):
             vba_function_name,
             [self.com_object]
         )
-
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_direction(self) -> tuple:
         """
@@ -653,7 +654,7 @@ class MeasureItem(AnyObject):
         """
         return self.com_object.GetPerimeter()
 
-    def get_plane(self) -> tuple:
+    def get_plane(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -714,7 +715,9 @@ class MeasureItem(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_point(self) -> tuple:
         """

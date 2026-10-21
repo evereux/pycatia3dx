@@ -535,7 +535,7 @@ class DrawingDimension(AnyObject):
 
         self.com_object.ValueReference = value
 
-    def get_boundary_box(self) -> tuple:
+    def get_boundary_box(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -573,7 +573,9 @@ class DrawingDimension(AnyObject):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def get_clip(self, x: float, y: float, o_kept_side: int) -> None:
         """

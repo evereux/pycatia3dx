@@ -42,7 +42,7 @@ class Plane(HybridShape):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_first_axis(self) -> tuple:
+    def get_first_axis(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -82,9 +82,11 @@ class Plane(HybridShape):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
-    def get_origin(self) -> tuple:
+    def get_origin(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -123,9 +125,11 @@ class Plane(HybridShape):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
-    def get_position(self) -> None:
+    def get_position(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -172,10 +176,18 @@ class Plane(HybridShape):
                 End Function
                 """
 
-        system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
 
-    def get_second_axis(self) -> tuple:
+        if isinstance(result, tuple):
+            return result
+        return None
+
+    def get_second_axis(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -208,8 +220,17 @@ class Plane(HybridShape):
         End Function
         """
 
-        system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        result = self.application.system_service.evaluate(
+            vba_code,
+            CATScriptLanguage.CATVBScriptLanguage,
+            vba_function_name,
+            [self.com_object]
+        )
+
+        if isinstance(result, tuple):
+            return result
+        return None
+
 
     def is_a_ref_plane(self) -> bool:
         """

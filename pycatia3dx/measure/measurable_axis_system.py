@@ -35,7 +35,7 @@ class MeasurableAxisSystem(MeasurableInContext):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_axis(self) -> tuple:
+    def get_axis(self) -> tuple | None:
         """
         .. note::
             :class: toggle
@@ -107,7 +107,9 @@ class MeasurableAxisSystem(MeasurableInContext):
             [self.com_object]
         )
 
-        return result
+        if isinstance(result, tuple):
+            return result
+        return None
 
     def __repr__(self):
         return f'MeasurableAxisSystem(name="{self.name}")'

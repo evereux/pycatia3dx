@@ -109,21 +109,18 @@ class HybridShapes(Collection):
     def __getitem__(self, n: int) -> HybridShape:
         if (n + 1) > self.count:
             raise StopIteration
-        type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(n + 1)))
+        from pycatia3dx.helpers import return_real_object
+        hb = HybridShape(self.com_object.Item(n + 1))
+        real_object = return_real_object(self.application, hb)
 
-        if type_name in hybrid_shape_types:
-            return hybrid_shape_types[type_name](self.com_object.Item(n + 1))
-
-        return HybridShape(self.com_object.Item(n + 1))
+        return real_object
 
     def __iter__(self) -> Iterator[HybridShape]:
+        from pycatia3dx.helpers import return_real_object
         for i in range(self.count):
-            type_name = self.application.vba_type_name(AnyObject(self.com_object.Item(i + 1)))
-
-            if type_name in hybrid_shape_types:
-                yield hybrid_shape_types[type_name](self.com_object.Item(i + 1))
-            else:
-                yield HybridShape(self.com_object.Item(i + 1))
+            hb = HybridShape(self.com_object.Item(i + 1))
+            real_object = return_real_object(self.application, hb)
+            yield real_object
 
     def __repr__(self):
         return f'HybridShapes(name="{self.name}")'

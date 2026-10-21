@@ -314,7 +314,7 @@ class DrawingDefineGenView(AnyObject):
         :return: DrawingView
         """
 
-        i_list_of_prd_inst = [i.com_object for i in i_list_of_prd_inst]
+        i_list_of_prd_inst = tuple(i.com_object for i in i_list_of_prd_inst)
 
         return DrawingView(
             self.com_object.DefineFrontView(

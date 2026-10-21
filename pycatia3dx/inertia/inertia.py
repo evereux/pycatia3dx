@@ -276,7 +276,7 @@ class Inertia(AnyObject):
         End Function
         """
         system_service = self.application.system_service
-        result = system_service.evaluate(vba_code, 0, vba_function_name, tuple([self.com_object]))
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
         return cast(tuple[float, float, float], cast(object, result))
 
     def get_volume(self) -> float:
