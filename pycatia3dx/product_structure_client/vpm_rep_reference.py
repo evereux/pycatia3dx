@@ -42,7 +42,7 @@ class VPMRepReference(PLMEntity):
         self.com_object = com_object
 
     @property
-    def father(self) -> VPMReference:
+    def father(self) -> 'VPMReference':
         """
         .. note::
             :class: toggle

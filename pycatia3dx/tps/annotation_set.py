@@ -7,7 +7,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.mmr_automation_interfaces.part import Part
+from typing import TYPE_CHECKING
+
 from pycatia3dx.system.any_object import AnyObject
 from pycatia3dx.tps.annotation_factory import AnnotationFactory
 from pycatia3dx.tps.annotation_factory_2 import AnnotationFactory2
@@ -18,6 +19,9 @@ from pycatia3dx.tps.tps_hyper_links_manager import TPSHyperLinksManager
 from pycatia3dx.tps.tps_view import TPSView
 from pycatia3dx.tps.tps_view_factory import TPSViewFactory
 from pycatia3dx.tps.tps_views import TPSViews
+
+if TYPE_CHECKING:
+    from pycatia3dx.mmr_automation_interfaces.part import Part
 
 
 class AnnotationSet(AnyObject):
@@ -412,7 +416,7 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.ApplyViewReUseWhenCopySetTo()
 
-    def global_copy_set_to(self, i_destination_part: Part) -> str:
+    def global_copy_set_to(self, i_destination_part: 'Part') -> str:
         """
         .. note::
             :class: toggle
@@ -434,7 +438,7 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.GlobalCopySetTo(i_destination_part.com_object)
 
-    def global_copy_set_to_with_filter(self, i_destination_part: Part, i_capture_filter_name: str) -> str:
+    def global_copy_set_to_with_filter(self, i_destination_part: 'Part', i_capture_filter_name: str) -> str:
         """
         .. note::
             :class: toggle
@@ -462,8 +466,12 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.GlobalCopySetToWithFilter(i_destination_part.com_object, i_capture_filter_name)
 
-    def global_copy_set_to_with_filter_with_transformation(self, i_destination_part: Part, i_transfo: tuple,
-                                                           i_capture_filter_name: str) -> str:
+    def global_copy_set_to_with_filter_with_transformation(
+            self,
+            i_destination_part: 'Part',
+            i_transfo: tuple,
+            i_capture_filter_name: str
+    ) -> str:
         """
         .. note::
             :class: toggle
@@ -518,10 +526,13 @@ class AnnotationSet(AnyObject):
         :param str i_capture_filter_name:
         :return: str
         """
-        return self.com_object.GlobalCopySetToWithFilterWithTransformation(i_destination_part.com_object, i_transfo,
-                                                                           i_capture_filter_name)
+        return self.com_object.GlobalCopySetToWithFilterWithTransformation(
+            i_destination_part.com_object,
+            i_transfo,
+            i_capture_filter_name
+        )
 
-    def global_copy_set_to_with_transformation(self, i_destination_part: Part, i_transfo: tuple) -> str:
+    def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transfo: tuple) -> str:
         """
         .. note::
             :class: toggle
@@ -598,8 +609,11 @@ class AnnotationSet(AnyObject):
         """
         return self.com_object.IsolateLinksOfNOA()
 
-    def logical_global_copy_set_to(self, ipi_target3_dsr: Part, i_list_of_bodies_and_geometrical_sets: tuple,
-                                   ib_import_once: bool) -> str:
+    def logical_global_copy_set_to(
+            self, ipi_target3_dsr: 'Part',
+            i_list_of_bodies_and_geometrical_sets: tuple,
+            ib_import_once: bool
+    ) -> str:
         """
         .. note::
             :class: toggle
@@ -635,12 +649,19 @@ class AnnotationSet(AnyObject):
         :param bool ib_import_once:
         :return: str
         """
-        return self.com_object.LogicalGlobalCopySetTo(ipi_target3_dsr.com_object, i_list_of_bodies_and_geometrical_sets,
-                                                      ib_import_once)
+        return self.com_object.LogicalGlobalCopySetTo(
+            ipi_target3_dsr.com_object,
+            i_list_of_bodies_and_geometrical_sets,
+            ib_import_once
+        )
 
-    def logical_global_copy_set_to_with_filter(self, ipi_target3_dsr: Part,
-                                               i_list_of_bodies_and_geometrical_sets: tuple, ib_import_once: bool,
-                                               i_capture_filter_name: str) -> str:
+    def logical_global_copy_set_to_with_filter(
+            self,
+            ipi_target3_dsr: 'Part',
+            i_list_of_bodies_and_geometrical_sets: tuple,
+            ib_import_once: bool,
+            i_capture_filter_name: str
+    ) -> str:
         """
         .. note::
             :class: toggle
@@ -681,9 +702,12 @@ class AnnotationSet(AnyObject):
         :param str i_capture_filter_name:
         :return: str
         """
-        return self.com_object.LogicalGlobalCopySetToWithFilter(ipi_target3_dsr.com_object,
-                                                                i_list_of_bodies_and_geometrical_sets, ib_import_once,
-                                                                i_capture_filter_name)
+        return self.com_object.LogicalGlobalCopySetToWithFilter(
+            ipi_target3_dsr.com_object,
+            i_list_of_bodies_and_geometrical_sets,
+            ib_import_once,
+            i_capture_filter_name
+        )
 
     def read_iso_default_properties(self) -> tuple:
         """

@@ -46,7 +46,7 @@ class BooleanShape(Shape):
         self.com_object = com_object
 
     @property
-    def body(self) -> Body:
+    def body(self) -> 'Body':
         """
         .. note::
             :class: toggle

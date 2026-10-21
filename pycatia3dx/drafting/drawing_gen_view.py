@@ -185,7 +185,7 @@ class DrawingGenView(AnyObject):
         return self.com_object.NumberOfLinks
 
     @property
-    def parent_view(self) -> DrawingView:
+    def parent_view(self) -> 'DrawingView':
         """
         .. note::
             :class: toggle
