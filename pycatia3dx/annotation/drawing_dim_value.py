@@ -170,7 +170,7 @@ class DrawingDimValue(AnyObject):
 
         self.com_object.ValueFramedGroup = value
 
-    def get_bault_text(self, i_index: int, o_before: str, o_after: str, o_upper: str, o_lower: str) -> None:
+    def get_bault_text(self, i_index: int) -> tuple[str, str, str, str]:
         """
         .. note::
             :class: toggle
@@ -199,13 +199,9 @@ class DrawingDimValue(AnyObject):
                 |              oLower)
 
         :param int i_index:
-        :param str o_before:
-        :param str o_after:
-        :param str o_upper:
-        :param str o_lower:
-        :return: None
+        :return: tuple[str, str, str, str]
         """
-        return self.com_object.GetBaultText(i_index, o_before, o_after, o_upper, o_lower)
+        return self.com_object.GetBaultText(i_index)
 
     def get_display_unit(self, i_index: int) -> int:
         """
@@ -384,7 +380,7 @@ class DrawingDimValue(AnyObject):
         """
         return self.com_object.GetFormatUnit(i_index)
 
-    def get_ps_text(self, i_index: int, o_prefix: str, o_suffix: str) -> None:
+    def get_ps_text(self, i_index: int) -> tuple[str, str]:
         """
         .. note::
             :class: toggle
@@ -407,11 +403,9 @@ class DrawingDimValue(AnyObject):
                 |              MyValue.GetBaultText(iIndex, oPrefix, oSuffix)
 
         :param int i_index:
-        :param str o_prefix:
-        :param str o_suffix:
         :return: None
         """
-        return self.com_object.GetPSText(i_index, o_prefix, o_suffix)
+        return self.com_object.GetPSText(i_index)
 
     def get_scored_element(self, i_index: int) -> bool:
         """
