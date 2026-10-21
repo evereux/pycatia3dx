@@ -7,8 +7,13 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia3dx.drafting.drawing_gen_view_properties import DrawingGenViewProperties
 from pycatia3dx.system.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia3dx.drafting.drawing_view import DrawingView
 
 
 class DrawingGenView(AnyObject):
@@ -180,7 +185,7 @@ class DrawingGenView(AnyObject):
         return self.com_object.NumberOfLinks
 
     @property
-    def parent_view(self) -> 'DrawingView':
+    def parent_view(self) -> DrawingView:
         """
         .. note::
             :class: toggle
