@@ -21,7 +21,7 @@ class PyCATIA3DX:
     def release_check(self, current: int, required: int, name: str):
         """
 
-        Used to notify user if the CATIA V5 version is lower than that required.
+        Used to notify user if the CATIA 3DExperience version is lower than that required.
 
         :param int current:
         :param int required:

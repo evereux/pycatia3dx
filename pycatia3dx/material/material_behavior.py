@@ -7,8 +7,13 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
+from typing import TYPE_CHECKING
+
+# from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
 from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
+
+if TYPE_CHECKING:
+    from pycatia3dx.material.material_behavior_options import MaterialBehaviorOptions
 
 
 class MaterialBehavior(PLMEntity):

@@ -91,6 +91,11 @@ def catia_application() -> Application:
     win32com.client.Dispatch.  This should only be necessary if the 3DEXPERIENCE
     installation does not include the com3dx.py file.
 
+    Usage:
+
+    >>> from pycatia3dx import catia3dx
+    >>> application = catia()
+
     :return: Application
     """
 

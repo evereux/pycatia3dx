@@ -69,7 +69,7 @@ class PLMNewService(Service):
                 |         oEditor
                 |             The resulting editor on the newly created data.
 
-        :param str i_user_type: Examples: "3DShape", "Drawing" and "3DPart", "VPMReference" license permitting.
+        :param str i_user_type: Examples: "3DShape", "Drawing". Also, "3DPart"  and "VPMReference" license permitting.
         :return: Editor
         """
         return Editor(self.com_object.PLMCreate(i_user_type))

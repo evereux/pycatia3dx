@@ -25,7 +25,8 @@ Issues = "https://github.com/evereux/pycatia3dx/issues"
 dev = [
     "mypy==1.19.1",
     "pytest==9.0.2",
-    "Sphinx==9.2.0"
+    "Sphinx==9.2.0",
+    "furo==2025.12.19"
 ]
 docs = [
     "Sphinx==9.2.0"

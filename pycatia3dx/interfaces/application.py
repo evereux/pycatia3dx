@@ -13,6 +13,7 @@ from pycatia3dx import CatScriptCommand, CATScriptLanguage
 from pycatia3dx.interfaces.editors import Editors
 from pycatia3dx.interfaces.printer import Printer
 from pycatia3dx.interfaces.printers import Printers
+from pycatia3dx.interfaces.service import Service
 from pycatia3dx.interfaces.window import Window
 from pycatia3dx.interfaces.windows import Windows
 from pycatia3dx.os.file_system import FileSystem
@@ -29,44 +30,45 @@ if TYPE_CHECKING:
 
 class Application(AnyObject):
     """
-        .. note::
-            :class: toggle
+    .. note::
+        :class: toggle
 
-            3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
+        3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Application
-                | 
-                | Represents the current application and its frame window.
-                | The application is the root object for all the other objects you can use and
-                | access from scripts. It directly aggregates three collections:
-                | 
-                |     The editor collection represented by the Editors object. This collection
-                |     contains all the editors currently opened by the
-                |     application
-                |     The window collection represented by the Windows object. This collection
-                |     contains all the windows currently opened by the application, each window
-                |     displaying objects managed by an editor
-                |     The printer collection represented by the Printers object. This collection
-                |     contains all the printers accessible from the application
-                | 
-                | Session level Service objects can be retrieved from the application object
-                | thanks to the GetSessionService method.
-                | 
-                | The active editor and the active window are two key objects for the application
-                | you can access using the ActiveEditor and ActiveWindow properties respectively.
-                | The active window is the window the end user is currently working in, and the
-                | active editor gives access to the objects visible in the active window and to
-                | the set of operations that can be applied to those objects. In addition, the
-                | active printer can be retrieved thanks to the ActivePrinter
-                | property.
-                | 
-                | When you create or use macros for in-process access, the application is always
-                | referred to as CATIA.
+            | SystemTS.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Application
+            |
+            | Represents the current application and its frame window.
+            | The application is the root object for all the other objects you can use and
+            | access from scripts. It directly aggregates three collections:
+            |
+            |     The editor collection represented by the Editors object. This collection
+            |     contains all the editors currently opened by the
+            |     application
+            |     The window collection represented by the Windows object. This collection
+            |     contains all the windows currently opened by the application, each window
+            |     displaying objects managed by an editor
+            |     The printer collection represented by the Printers object. This collection
+            |     contains all the printers accessible from the application
+            |
+            | Session level Service objects can be retrieved from the application object
+            | thanks to the GetSessionService method.
+            |
+            | The active editor and the active window are two key objects for the application
+            | you can access using the ActiveEditor and ActiveWindow properties respectively.
+            | The active window is the window the end user is currently working in, and the
+            | active editor gives access to the objects visible in the active window and to
+            | the set of operations that can be applied to those objects. In addition, the
+            | active printer can be retrieved thanks to the ActivePrinter
+            | property.
+            |
+            | When you create or use macros for in-process access, the application is always
+            | referred to as CATIA.
+
     
     """
 
@@ -211,19 +213,12 @@ class Application(AnyObject):
                 | 
                 |          This example retrieves in Title the CATIA
                 |          application's window title.
-                |          
-                | 
+                |
                 |          Title = CATIA.Caption
                 |          
-                | 
-                | 
-                |          
-                | 
-                | 
                 |          The returned value is like this:
-                |          
-                | 
-                |         CNext
+                |
+                |          CNext
 
         :return: str
         """
@@ -1261,7 +1256,7 @@ class Application(AnyObject):
                 |          file.
                 |          
                 | 
-                |          filepath = CATIA.FileSelectionBox("Select a text file", "*.txt", CatFileSelectionModeOpen)
+                |          filepath = CATIA.FileSelectionBox("Select a text file", "\\*.txt", CatFileSelectionModeOpen)
                 |          CATIA.SystemServices.Print "The selected file is " &
                 |          filepath
 
@@ -1307,7 +1302,7 @@ class Application(AnyObject):
         """
         return self.com_object.FolderSelectionBox(i_title)
 
-    def get_session_service(self, i_service: str) -> ApplicationService:
+    def get_session_service(self, i_service: str) -> Service:
         """
         .. note::
             :class: toggle
@@ -1334,7 +1329,7 @@ class Application(AnyObject):
                 |          Set Service1 = CATIA.GetSessionService("IDService")
 
         :param str i_service:
-        :return: AnyService
+        :return: Service
         """
 
         if i_service not in [service for service in application_service_types]:
