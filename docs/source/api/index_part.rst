@@ -1,0 +1,80 @@
+pycatia3dx.part
+===============
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+
+   pycatia3dx/part/add
+   pycatia3dx/part/affinity
+   pycatia3dx/part/angular_repartition
+   pycatia3dx/part/assemble
+   pycatia3dx/part/auto_draft
+   pycatia3dx/part/auto_fillet
+   pycatia3dx/part/axis_to_axis
+   pycatia3dx/part/boolean_shape
+   pycatia3dx/part/chamfer
+   pycatia3dx/part/circ_pattern
+   pycatia3dx/part/close_surface
+   pycatia3dx/part/const_rad_edge_fillet
+   pycatia3dx/part/defeaturing
+   pycatia3dx/part/defeaturing_fillet_filter
+   pycatia3dx/part/defeaturing_filter
+   pycatia3dx/part/defeaturing_filter_with_range
+   pycatia3dx/part/defeaturing_filters
+   pycatia3dx/part/defeaturing_hole_filter
+   pycatia3dx/part/draft
+   pycatia3dx/part/draft_domain
+   pycatia3dx/part/draft_domains
+   pycatia3dx/part/dress_up_shape
+   pycatia3dx/part/edge_fillet
+   pycatia3dx/part/enums
+   pycatia3dx/part/face_fillet
+   pycatia3dx/part/fillet
+   pycatia3dx/part/groove
+   pycatia3dx/part/hole
+   pycatia3dx/part/intersect
+   pycatia3dx/part/limit
+   pycatia3dx/part/linear_repartition
+   pycatia3dx/part/loft
+   pycatia3dx/part/mirror
+   pycatia3dx/part/multi_hole
+   pycatia3dx/part/multi_pad
+   pycatia3dx/part/pad
+   pycatia3dx/part/partition
+   pycatia3dx/part/pattern
+   pycatia3dx/part/pocket
+   pycatia3dx/part/prism
+   pycatia3dx/part/rect_pattern
+   pycatia3dx/part/remove
+   pycatia3dx/part/remove_face
+   pycatia3dx/part/repartition
+   pycatia3dx/part/replace_face
+   pycatia3dx/part/revolution
+   pycatia3dx/part/rib
+   pycatia3dx/part/rotate
+   pycatia3dx/part/scaling
+   pycatia3dx/part/scaling2
+   pycatia3dx/part/sew_surface
+   pycatia3dx/part/shaft
+   pycatia3dx/part/shape_factory
+   pycatia3dx/part/shell
+   pycatia3dx/part/sketch_based_shape
+   pycatia3dx/part/slot
+   pycatia3dx/part/solid_combine
+   pycatia3dx/part/split
+   pycatia3dx/part/stiffener
+   pycatia3dx/part/surface_based_shape
+   pycatia3dx/part/sweep
+   pycatia3dx/part/symmetry
+   pycatia3dx/part/thick_surface
+   pycatia3dx/part/thickness
+   pycatia3dx/part/thread
+   pycatia3dx/part/transformation_shape
+   pycatia3dx/part/translate
+   pycatia3dx/part/trim
+   pycatia3dx/part/tritangent_fillet
+   pycatia3dx/part/user_pattern
+   pycatia3dx/part/user_repartition
+   pycatia3dx/part/var_rad_edge_fillet
