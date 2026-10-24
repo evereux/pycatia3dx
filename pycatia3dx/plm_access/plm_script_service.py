@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class PLMScriptService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class PLMScriptService(Service):
                           i_parameters: tuple) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExecuteScriptV6(PLMEntity iPLMEntity,CatScriptLibraryType iType,CATBSTR

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class HybridBodies(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -40,7 +39,6 @@ class HybridBodies(Collection):
     def add(self) -> HybridBody:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Add() As HybridBody
@@ -63,7 +61,6 @@ class HybridBodies(Collection):
     def item(self, i_index: CATVariant) -> HybridBody:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As HybridBody

@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 class KnowledgeCollection(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -43,7 +42,6 @@ class KnowledgeCollection(Collection):
     def factory(self) -> KnowledgeFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Factory() As KnowledgeFactory (Read Only)
@@ -57,7 +55,6 @@ class KnowledgeCollection(Collection):
     def find(self, i_object_type: int, i_recursively: bool) -> 'KnowledgeCollection':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Find(KnowledgeObjectType iObjectType,boolean iRecursively) As
@@ -84,7 +81,6 @@ class KnowledgeCollection(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -106,7 +102,6 @@ class KnowledgeCollection(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Remove(CATVariant iIndex)

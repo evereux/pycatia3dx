@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class MaterialBehaviorOptions(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class MaterialBehaviorOptions(Collection):
     def add(self, i_material_behavior_option: AnyObject, o_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(CATBaseDispatch iMaterialBehaviorOption,short oIndex)
@@ -61,7 +59,6 @@ class MaterialBehaviorOptions(Collection):
     def get_option(self, i_index: CATVariant) -> MaterialBehavior:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOption(CATVariant iIndex) As CATBaseDispatch
@@ -82,7 +79,6 @@ class MaterialBehaviorOptions(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

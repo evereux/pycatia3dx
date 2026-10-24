@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_results.sim_strain_gauge_sensor import SimStrainGaugeSen
 
 
 class SimStrainGaugeSensorFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +48,6 @@ class SimStrainGaugeSensorFactory(AnyObject):
     def create_sensor(self) -> SimStrainGaugeSensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSensor() As SimStrainGaugeSensor
@@ -64,4 +61,4 @@ class SimStrainGaugeSensorFactory(AnyObject):
         return SimStrainGaugeSensor(self.com_object.CreateSensor())
 
     def __repr__(self):
-        return f'SimStrainGaugeSensorFactory(name="{ self.name }")'
+        return f'SimStrainGaugeSensorFactory(name="{self.name}")'

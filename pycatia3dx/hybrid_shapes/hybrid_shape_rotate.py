@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeRotate(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeRotate(HybridShape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Angle() As Angle (Read Only)
@@ -72,7 +69,6 @@ class HybridShapeRotate(HybridShape):
     def angle_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngleValue() As double
@@ -101,7 +97,6 @@ class HybridShapeRotate(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Axis() As Reference
@@ -131,7 +126,6 @@ class HybridShapeRotate(HybridShape):
     def elem_to_rotate(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToRotate() As Reference
@@ -160,7 +154,6 @@ class HybridShapeRotate(HybridShape):
     def first_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElement() As Reference
@@ -183,7 +176,6 @@ class HybridShapeRotate(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstPoint() As Reference
@@ -206,7 +198,6 @@ class HybridShapeRotate(HybridShape):
     def orientation_of_first_element(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OrientationOfFirstElement() As boolean
@@ -231,7 +222,6 @@ class HybridShapeRotate(HybridShape):
     def orientation_of_second_element(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OrientationOfSecondElement() As boolean
@@ -256,7 +246,6 @@ class HybridShapeRotate(HybridShape):
     def rotation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RotationType() As long
@@ -284,7 +273,6 @@ class HybridShapeRotate(HybridShape):
     def second_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElement() As Reference
@@ -307,7 +295,6 @@ class HybridShapeRotate(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondPoint() As Reference
@@ -330,7 +317,6 @@ class HybridShapeRotate(HybridShape):
     def third_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ThirdPoint() As Reference
@@ -353,7 +339,6 @@ class HybridShapeRotate(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -386,7 +371,6 @@ class HybridShapeRotate(HybridShape):
     def get_creation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCreationMode() As long
@@ -414,7 +398,6 @@ class HybridShapeRotate(HybridShape):
     def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCreationMode(boolean iCreation)
@@ -436,4 +419,4 @@ class HybridShapeRotate(HybridShape):
         return self.com_object.SetCreationMode(i_creation)
 
     def __repr__(self):
-        return f'HybridShapeRotate(name="{ self.name }")'
+        return f'HybridShapeRotate(name="{self.name}")'

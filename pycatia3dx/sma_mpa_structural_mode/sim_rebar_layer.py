@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRebarLayer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimRebarLayer(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -98,7 +95,6 @@ class SimRebarLayer(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -121,7 +117,6 @@ class SimRebarLayer(AnyObject):
     def rebar_geometry_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RebarGeometryType() As SimRebarGeometryType
@@ -143,7 +138,6 @@ class SimRebarLayer(AnyObject):
     def get_rebar_attribute(self, o_rebar_attribute_value: float) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRebarAttribute(double oRebarAttributeValue) As
@@ -158,7 +152,6 @@ class SimRebarLayer(AnyObject):
     def set_rebar_attribute(self, i_rebar_attribute_value: float, o_rebar_attribute: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRebarAttribute(double iRebarAttributeValue,SimRebarAttributeType
@@ -171,4 +164,4 @@ class SimRebarLayer(AnyObject):
         return self.com_object.SetRebarAttribute(i_rebar_attribute_value, o_rebar_attribute)
 
     def __repr__(self):
-        return f'SimRebarLayer(name="{ self.name }")'
+        return f'SimRebarLayer(name="{self.name}")'

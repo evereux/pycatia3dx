@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Printer(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -39,7 +38,6 @@ class Printer(AnyObject):
     def device_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property DeviceName() As CATBSTR (Read Only)
@@ -60,7 +58,6 @@ class Printer(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Orientation() As CatPaperOrientation (Read Only)
@@ -82,7 +79,6 @@ class Printer(AnyObject):
     def paper_height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperHeight() As float (Read Only)
@@ -104,7 +100,6 @@ class Printer(AnyObject):
     def paper_size(self) -> CatPaperSize:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperSize() As CatPaperSize (Read Only)
@@ -126,7 +121,6 @@ class Printer(AnyObject):
     def paper_width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperWidth() As float (Read Only)

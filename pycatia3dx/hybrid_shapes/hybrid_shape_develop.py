@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeDevelop(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -61,7 +59,6 @@ class HybridShapeDevelop(HybridShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Mode() As long
@@ -90,7 +87,6 @@ class HybridShapeDevelop(HybridShape):
     def mode_pos(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ModePos() As long
@@ -120,7 +116,6 @@ class HybridShapeDevelop(HybridShape):
     def plane_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PlaneAxisDirection() As Reference
@@ -146,7 +141,6 @@ class HybridShapeDevelop(HybridShape):
     def plane_axis_origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PlaneAxisOrigin() As Reference
@@ -171,7 +165,6 @@ class HybridShapeDevelop(HybridShape):
     def point_on_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PointOnSupport() As Reference
@@ -196,7 +189,6 @@ class HybridShapeDevelop(HybridShape):
     def positioned_wire(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PositionedWire() As Reference
@@ -221,7 +213,6 @@ class HybridShapeDevelop(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -246,7 +237,6 @@ class HybridShapeDevelop(HybridShape):
     def wire_to_develop(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property WireToDevelop() As Reference
@@ -270,7 +260,6 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPlaneAxisAngle() As Angle
@@ -288,7 +277,6 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_coord(self, i_coor_idx: int) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPlaneAxisCoord(long iCoorIdx) As Length
@@ -315,7 +303,6 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPlaneAxisSwapAxes(long ii) As long
@@ -348,7 +335,6 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_angle(self, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPlaneAxisAngle(double iAngle)
@@ -369,7 +355,6 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_coord(self, i_coor_idx: int, i_coord_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPlaneAxisCoord(long iCoorIdx,double iCoordValue)
@@ -396,7 +381,6 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_swap_axes(self, i_idx: int, i_inversion_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPlaneAxisSwapAxes(long iIdx,long iInversionValue)
@@ -426,4 +410,4 @@ class HybridShapeDevelop(HybridShape):
         return self.com_object.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)
 
     def __repr__(self):
-        return f'HybridShapeDevelop(name="{ self.name }")'
+        return f'HybridShapeDevelop(name="{self.name}")'

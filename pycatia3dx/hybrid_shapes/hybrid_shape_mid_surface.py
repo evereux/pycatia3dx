@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeMidSurface(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapeMidSurface(HybridShape):
     def auto_thickness_threshold(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AutoThicknessThreshold() As long
@@ -77,7 +74,6 @@ class HybridShapeMidSurface(HybridShape):
     def creation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CreationMode() As long
@@ -100,7 +96,6 @@ class HybridShapeMidSurface(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -123,7 +118,6 @@ class HybridShapeMidSurface(HybridShape):
     def threshold(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Threshold() As Length
@@ -143,4 +137,4 @@ class HybridShapeMidSurface(HybridShape):
         self.com_object.Threshold = value
 
     def __repr__(self):
-        return f'HybridShapeMidSurface(name="{ self.name }")'
+        return f'HybridShapeMidSurface(name="{self.name}")'

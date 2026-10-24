@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmSpace(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmSpace(AnyObject):
     def volume(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Volume() As double (Read Only)
@@ -57,7 +54,6 @@ class SsmSpace(AnyObject):
     def volume_geom(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VolumeGeom() As Reference (Read Only)
@@ -78,4 +74,4 @@ class SsmSpace(AnyObject):
         return Reference(self.com_object.VolumeGeom)
 
     def __repr__(self):
-        return f'SsmSpace(name="{ self.name }")'
+        return f'SsmSpace(name="{self.name}")'

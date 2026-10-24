@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingInstructionSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingInstructionSet(AnyObject):
     def insert_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InsertMode() As long
@@ -65,7 +62,6 @@ class ManufacturingInstructionSet(AnyObject):
     def usage(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Usage() As long
@@ -91,7 +87,6 @@ class ManufacturingInstructionSet(AnyObject):
     def add_action(self, i_mode: int, i_action_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddAction(long iMode,CATBSTR iActionType) As AnyObject
@@ -120,7 +115,6 @@ class ManufacturingInstructionSet(AnyObject):
     def add_parameter(self, i_type: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddParameter(long iType) As AnyObject
@@ -152,7 +146,6 @@ class ManufacturingInstructionSet(AnyObject):
     def delete_action(self, i_mode: int, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteAction(long iMode,long iPosition)
@@ -172,7 +165,6 @@ class ManufacturingInstructionSet(AnyObject):
     def delete_parameter(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteParameter(long iPosition)
@@ -191,7 +183,6 @@ class ManufacturingInstructionSet(AnyObject):
     def get_action(self, i_mode: int, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAction(long iMode,long iPosition) As AnyObject
@@ -214,7 +205,6 @@ class ManufacturingInstructionSet(AnyObject):
     def get_number_of_actions(self, i_mode: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfActions(long iMode) As long
@@ -233,7 +223,6 @@ class ManufacturingInstructionSet(AnyObject):
     def get_number_of_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfParameters() As long
@@ -249,7 +238,6 @@ class ManufacturingInstructionSet(AnyObject):
     def get_parameter(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(long iPosition) As AnyObject
@@ -269,4 +257,4 @@ class ManufacturingInstructionSet(AnyObject):
         return AnyObject(self.com_object.GetParameter(i_position))
 
     def __repr__(self):
-        return f'ManufacturingInstructionSet(name="{ self.name }")'
+        return f'ManufacturingInstructionSet(name="{self.name}")'

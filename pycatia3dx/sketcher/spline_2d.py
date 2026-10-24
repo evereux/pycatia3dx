@@ -14,7 +14,6 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Spline2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -40,7 +39,6 @@ class Spline2D(Curve2D):
     def get_control_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetControlPoints(CATSafeArrayVariant oCtrlPoints)
@@ -84,7 +82,6 @@ class Spline2D(Curve2D):
     def get_number_of_control_points(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetNumberOfControlPoints() As double
@@ -100,7 +97,6 @@ class Spline2D(Curve2D):
     def insert_control_point_after(self, i_ctrl_point: Point2D, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub InsertControlPointAfter(Point2D iCtrlPoint,long iPosition)

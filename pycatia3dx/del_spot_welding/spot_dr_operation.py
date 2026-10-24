@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SpotDrOperation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class SpotDrOperation(AnyObject):
     def get_cartesian_target(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCartesianTarget() As CATSafeArrayVariant
@@ -67,7 +65,6 @@ class SpotDrOperation(AnyObject):
     def get_pattern_pos(self, osp_pattern_pos: AnyObject, osp_pattern_pos_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPatternPos(AnyObject ospPatternPos,AnyObject
@@ -122,7 +119,6 @@ class SpotDrOperation(AnyObject):
     def set_cartesian_target(self, i_math_transformation: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetCartesianTarget(CATSafeArrayVariant
@@ -172,7 +168,6 @@ class SpotDrOperation(AnyObject):
     def set_pattern_pos(self, ip_pattern_pos: AnyObject, ip_pattern_pos_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPatternPos(AnyObject ipPatternPos,AnyObject

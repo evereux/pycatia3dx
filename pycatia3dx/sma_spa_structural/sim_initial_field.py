@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimInitialField(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimInitialField(AnyObject):
     def field_variable_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldVariableNumber() As long
@@ -121,7 +117,6 @@ class SimInitialField(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -137,7 +132,6 @@ class SimInitialField(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitude() As double
@@ -158,4 +152,4 @@ class SimInitialField(AnyObject):
         self.com_object.UniformMagnitude = value
 
     def __repr__(self):
-        return f'SimInitialField(name="{ self.name }")'
+        return f'SimInitialField(name="{self.name}")'

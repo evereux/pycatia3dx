@@ -13,10 +13,8 @@ from pycatia3dx.sde.ssm_cutting_inputs import SsmCuttingInputs
 
 
 class SsmCuttingFamily(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmCuttingFamily(AnyObject):
     def get_children(self, ol_child_objects: SsmCuttingInputs) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetChildren(SsmCuttingInputs olChildObjects)
@@ -59,4 +56,4 @@ class SsmCuttingFamily(AnyObject):
         return self.com_object.GetChildren(ol_child_objects.com_object)
 
     def __repr__(self):
-        return f'SsmCuttingFamily(name="{ self.name }")'
+        return f'SsmCuttingFamily(name="{self.name}")'

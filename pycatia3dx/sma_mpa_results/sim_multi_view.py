@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_results.sim_field_plot import SimFieldPlot
 
 
 class SimMultiView(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class SimMultiView(AnyObject):
     def configuration(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Configuration(SimConfiguration ieConfiguration) (Write
@@ -94,7 +91,6 @@ class SimMultiView(AnyObject):
     def synchronize(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Synchronize(boolean ibSynchronize) (Write Only)
@@ -129,7 +125,6 @@ class SimMultiView(AnyObject):
     def add_plot(self, i_plot: SimFieldPlot, in_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPlot(SimFieldPlot iPlot,long inPosition)
@@ -150,4 +145,4 @@ class SimMultiView(AnyObject):
         return self.com_object.AddPlot(i_plot.com_object, in_position)
 
     def __repr__(self):
-        return f'SimMultiView(name="{ self.name }")'
+        return f'SimMultiView(name="{self.name}")'

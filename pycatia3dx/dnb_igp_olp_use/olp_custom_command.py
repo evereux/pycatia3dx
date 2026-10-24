@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPCustomCommand(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class OLPCustomCommand(AnyObject):
     def main_command(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainCommand() As CATBSTR
@@ -73,7 +70,6 @@ class OLPCustomCommand(AnyObject):
     def post_command(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PostCommand() As DELOlpTeachCommand
@@ -101,7 +97,6 @@ class OLPCustomCommand(AnyObject):
     def pre_command(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreCommand() As DELOlpTeachCommand
@@ -122,4 +117,4 @@ class OLPCustomCommand(AnyObject):
         self.com_object.PreCommand = value
 
     def __repr__(self):
-        return f'OLPCustomCommand(name="{ self.name }")'
+        return f'OLPCustomCommand(name="{self.name}")'

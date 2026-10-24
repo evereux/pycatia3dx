@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingWelding(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingWelding(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -74,7 +72,6 @@ class DrawingWelding(AnyObject):
     def identification_line_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IdentificationLineSide() As CatWeldingSide
@@ -106,7 +103,6 @@ class DrawingWelding(AnyObject):
     def leaders(self) -> DrawingLeaders:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Leaders() As DrawingLeaders (Read Only)
@@ -129,7 +125,6 @@ class DrawingWelding(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TextProperties() As DrawingTextProperties (Read Only)
@@ -151,7 +146,6 @@ class DrawingWelding(AnyObject):
     def welding_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeldingSide() As CatWeldingSide
@@ -180,7 +174,6 @@ class DrawingWelding(AnyObject):
     def welding_tail(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeldingTail() As CatDftWeldingTail
@@ -209,7 +202,6 @@ class DrawingWelding(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -240,7 +232,6 @@ class DrawingWelding(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -272,7 +263,6 @@ class DrawingWelding(AnyObject):
     def get_additional_symbol(self, i_weld: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAdditionalSymbol(CatWelding iWeld) As
@@ -298,7 +288,6 @@ class DrawingWelding(AnyObject):
     def get_finish_symbol(self, i_weld: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFinishSymbol(CatWelding iWeld) As
@@ -324,7 +313,6 @@ class DrawingWelding(AnyObject):
     def get_symbol(self, i_weld: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbol(CatWelding iWeld) As CatWeldingSymbol
@@ -351,7 +339,6 @@ class DrawingWelding(AnyObject):
     def get_text_range(self, i_field: int) -> DrawingTextRange:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(CatWeldingField iField) As DrawingTextRange
@@ -381,7 +368,6 @@ class DrawingWelding(AnyObject):
     def set_additional_symbol(self, i_symbol: int, iweld: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAdditionalSymbol(CatWeldAdditionalSymbol iSymbol,CatWelding
@@ -410,7 +396,6 @@ class DrawingWelding(AnyObject):
     def set_finish_symbol(self, i_finish_symbol: int, i_weld: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFinishSymbol(CatDftWeldFinishSymbol iFinishSymbol,CatWelding
@@ -440,7 +425,6 @@ class DrawingWelding(AnyObject):
     def set_symbol(self, i_symbol: int, iweld: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbol(CatWeldingSymbol iSymbol,CatWelding iweld)

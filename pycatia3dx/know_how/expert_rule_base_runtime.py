@@ -20,7 +20,6 @@ if TYPE_CHECKING:
 class ExpertRuleBaseRuntime(Relation):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,7 +56,6 @@ class ExpertRuleBaseRuntime(Relation):
     def report_description_length(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReportDescriptionLength() As CatDescriptionLengthType
@@ -86,7 +84,6 @@ class ExpertRuleBaseRuntime(Relation):
     def report_out_put_format(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReportOutPutFormat() As CatOutPutFormatType
@@ -118,7 +115,6 @@ class ExpertRuleBaseRuntime(Relation):
     def report_path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReportPath() As CATBSTR
@@ -141,7 +137,6 @@ class ExpertRuleBaseRuntime(Relation):
     def report_show_result(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReportShowResult() As CatShowResultType
@@ -171,7 +166,6 @@ class ExpertRuleBaseRuntime(Relation):
     def rule_base_edition(self) -> 'ExpertRuleBase':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RuleBaseEdition() As ExpertRuleBase (Read Only)
@@ -205,7 +199,6 @@ class ExpertRuleBaseRuntime(Relation):
     def rule_set(self) -> ExpertRuleSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RuleSet() As ExpertRuleSet (Read Only)
@@ -221,7 +214,6 @@ class ExpertRuleBaseRuntime(Relation):
     def solve_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolveType() As CatSolveType
@@ -244,7 +236,6 @@ class ExpertRuleBaseRuntime(Relation):
     def text_visualization(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TextVisualization() As CatVisualizationType
@@ -274,7 +265,6 @@ class ExpertRuleBaseRuntime(Relation):
     def working_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WorkingMode() As CatWorkingMode
@@ -305,7 +295,6 @@ class ExpertRuleBaseRuntime(Relation):
     def accurate_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AccurateType() As CATBSTR
@@ -321,7 +310,6 @@ class ExpertRuleBaseRuntime(Relation):
     def add_fact(self, i_fact: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFact(AnyObject iFact)
@@ -353,7 +341,6 @@ class ExpertRuleBaseRuntime(Relation):
     def add_root_of_facts(self, i_root_facts: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRootOfFacts(AnyObject iRootFacts)
@@ -372,7 +359,6 @@ class ExpertRuleBaseRuntime(Relation):
     def deduce(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Deduce()
@@ -395,7 +381,6 @@ class ExpertRuleBaseRuntime(Relation):
     def fingerprint(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Fingerprint() As boolean
@@ -416,7 +401,6 @@ class ExpertRuleBaseRuntime(Relation):
     def get_number_of_roots_of_facts(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfRootsOfFacts() As long
@@ -432,7 +416,6 @@ class ExpertRuleBaseRuntime(Relation):
     def get_roots_of_facts(self, o_roots_of_facts: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetRootsOfFacts(CATSafeArrayVariant oRootsOfFacts)
@@ -467,7 +450,6 @@ class ExpertRuleBaseRuntime(Relation):
     def import_(self, i_rule_set: ExpertRuleSet, i_force: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Import(ExpertRuleSet iRuleSet,boolean iForce)
@@ -493,7 +475,6 @@ class ExpertRuleBaseRuntime(Relation):
     def reload_fact(self, i_fact: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReloadFact(AnyObject iFact)
@@ -525,7 +506,6 @@ class ExpertRuleBaseRuntime(Relation):
     def remove_fact(self, i_fact: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveFact(AnyObject iFact)
@@ -557,7 +537,6 @@ class ExpertRuleBaseRuntime(Relation):
     def remove_root_of_facts(self, i_root_facts: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRootOfFacts(AnyObject iRootFacts)
@@ -576,7 +555,6 @@ class ExpertRuleBaseRuntime(Relation):
     def report(self, really_start_browser: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Report(boolean reallyStartBrowser)
@@ -595,7 +573,6 @@ class ExpertRuleBaseRuntime(Relation):
     def solve(self, i_complete_solve: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Solve(boolean iCompleteSolve)
@@ -625,7 +602,6 @@ class ExpertRuleBaseRuntime(Relation):
     def solve_with_load(self, i_complete_solve: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SolveWithLoad(boolean iCompleteSolve)
@@ -656,7 +632,6 @@ class ExpertRuleBaseRuntime(Relation):
     def synchronize_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SynchronizeStatus() As boolean

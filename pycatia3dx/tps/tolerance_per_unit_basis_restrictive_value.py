@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class TolerancePerUnitBasisRestrictiveValue(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As double
@@ -65,4 +62,4 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'TolerancePerUnitBasisRestrictiveValue(name="{ self.name }")'
+        return f'TolerancePerUnitBasisRestrictiveValue(name="{self.name}")'

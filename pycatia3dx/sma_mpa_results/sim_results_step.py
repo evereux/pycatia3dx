@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsStep(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SimResultsStep(AnyObject):
     def get_available_fields(self, inb_frame_index: float, ie_source: int, ocs_variables: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAvailableFields(double inbFrameIndex,SimResultsSource
@@ -81,7 +79,6 @@ class SimResultsStep(AnyObject):
     def get_frames_data(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetFramesData(CATSafeArrayVariant olfFrameValues,long
@@ -120,7 +117,6 @@ class SimResultsStep(AnyObject):
                                             o_nb_subregions_in_regions: tuple, ocs_subregions: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetHistoryRegionsAndSubRegions(CATBSTR icsVariable,CATSafeArrayVariant
@@ -158,7 +154,6 @@ class SimResultsStep(AnyObject):
     def get_identifier(self, ocs_step_id: str, ocs_step_name: str, ocs_step_description: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetIdentifier(CATBSTR ocsStepID,CATBSTR ocsStepName,CATBSTR
@@ -184,7 +179,6 @@ class SimResultsStep(AnyObject):
     def get_load_cases(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetLoadCases(CATSafeArrayVariant olnLoadCaseIndicies)

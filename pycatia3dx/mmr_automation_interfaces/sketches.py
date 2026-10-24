@@ -20,7 +20,6 @@ from pycatia3dx.types.general import CATVariant
 class Sketches(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +41,6 @@ class Sketches(Collection):
     def add(self, i_plane: Reference) -> Sketch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Add(Reference iPlane) As Sketch
@@ -75,7 +73,6 @@ class Sketches(Collection):
     def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetBoundary(CATBSTR iLabel) As Boundary
@@ -98,7 +95,6 @@ class Sketches(Collection):
     def item(self, i_index: CATVariant) -> Sketch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Sketch

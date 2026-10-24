@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimCohesiveProperty(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimCohesiveProperty(AnyObject):
     def disable_element_deletion_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisableElementDeletionFlag() As boolean
@@ -105,7 +102,6 @@ class SimCohesiveProperty(AnyObject):
     def initial_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialThicknessFlag() As boolean
@@ -133,7 +129,6 @@ class SimCohesiveProperty(AnyObject):
     def initial_thickness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialThicknessValue() As double
@@ -156,7 +151,6 @@ class SimCohesiveProperty(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -179,7 +173,6 @@ class SimCohesiveProperty(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -202,7 +195,6 @@ class SimCohesiveProperty(AnyObject):
     def maximum_damage_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumDamageFlag() As boolean
@@ -230,7 +222,6 @@ class SimCohesiveProperty(AnyObject):
     def maximum_damage_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumDamageValue() As double
@@ -253,7 +244,6 @@ class SimCohesiveProperty(AnyObject):
     def mechanical_response(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MechanicalResponse() As SimCohesiveMechanicalResponse
@@ -277,7 +267,6 @@ class SimCohesiveProperty(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -292,7 +281,6 @@ class SimCohesiveProperty(AnyObject):
     def out_of_plane_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OutOfPlaneThicknessFlag() As boolean
@@ -320,7 +308,6 @@ class SimCohesiveProperty(AnyObject):
     def out_of_plane_thickness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OutOfPlaneThicknessValue() As double
@@ -344,7 +331,6 @@ class SimCohesiveProperty(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -384,7 +370,6 @@ class SimCohesiveProperty(AnyObject):
     def viscosity_coefficient_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscosityCoefficientFlag() As boolean
@@ -412,7 +397,6 @@ class SimCohesiveProperty(AnyObject):
     def viscosity_coefficient_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscosityCoefficientValue() As double
@@ -432,4 +416,4 @@ class SimCohesiveProperty(AnyObject):
         self.com_object.ViscosityCoefficientValue = value
 
     def __repr__(self):
-        return f'SimCohesiveProperty(name="{ self.name }")'
+        return f'SimCohesiveProperty(name="{self.name}")'

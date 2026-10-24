@@ -15,7 +15,6 @@ from pycatia3dx.structure.srm_proxies import SrmProxies
 class SrmDesignUnit(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SrmDesignUnit(AnyObject):
     def get_proxies(self, i_location: int) -> SrmProxies:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProxies(long iLocation) As SrmProxies

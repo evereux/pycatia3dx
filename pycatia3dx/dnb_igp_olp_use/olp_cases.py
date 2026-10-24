@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_case import OLPCase
 class OLPCases(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class OLPCases(Collection):
     def add_new_case(self) -> OLPCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewCase() As OlpCase
@@ -54,7 +52,6 @@ class OLPCases(Collection):
     def item(self, i_index: int) -> OLPCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpCase

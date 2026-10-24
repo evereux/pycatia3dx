@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class Rotate(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class Rotate(Shape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As Angle (Read Only)
@@ -69,7 +66,6 @@ class Rotate(Shape):
     def angle_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngleValue() As double
@@ -98,7 +94,6 @@ class Rotate(Shape):
     def axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Axis() As Reference
@@ -130,7 +125,6 @@ class Rotate(Shape):
     def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HybridShape() As HybridShape (Read Only)
@@ -150,4 +144,4 @@ class Rotate(Shape):
         return HybridShape(self.com_object.HybridShape)
 
     def __repr__(self):
-        return f'Rotate(name="{ self.name }")'
+        return f'Rotate(name="{self.name}")'

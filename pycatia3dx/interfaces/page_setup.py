@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PageSetup(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class PageSetup(AnyObject):
     def banner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Banner() As CATBSTR
@@ -97,7 +95,6 @@ class PageSetup(AnyObject):
     def banner_position(self) -> CatBannerPosition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property BannerPosition() As CatBannerPosition
@@ -128,7 +125,6 @@ class PageSetup(AnyObject):
     def banner_size(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property BannerSize() As float
@@ -158,7 +154,6 @@ class PageSetup(AnyObject):
     def bottom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Bottom() As float
@@ -190,7 +185,6 @@ class PageSetup(AnyObject):
     def bottom_margin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property BottomMargin() As float
@@ -221,7 +215,6 @@ class PageSetup(AnyObject):
     def color(self) -> CatPrintColor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Color() As CatPrintColor
@@ -250,7 +243,6 @@ class PageSetup(AnyObject):
     def dpi(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Dpi() As float
@@ -279,7 +271,6 @@ class PageSetup(AnyObject):
     def gamma(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Gamma() As float
@@ -309,7 +300,6 @@ class PageSetup(AnyObject):
     def left(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Left() As float
@@ -341,7 +331,6 @@ class PageSetup(AnyObject):
     def left_margin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LeftMargin() As float
@@ -372,7 +361,6 @@ class PageSetup(AnyObject):
     def line_cap(self) -> CatPrintLineCap:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LineCap() As CatPrintLineCap
@@ -402,7 +390,6 @@ class PageSetup(AnyObject):
     def line_type_overlapping_check(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LineTypeOverlappingCheck() As boolean
@@ -432,7 +419,6 @@ class PageSetup(AnyObject):
     def line_type_specification(self) -> CatPrintLineSpecification:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LineTypeSpecification() As CatPrintLineSpecification
@@ -463,7 +449,6 @@ class PageSetup(AnyObject):
     def line_width_specification(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LineWidthSpecification() As CatPrintLineSpecification
@@ -494,7 +479,6 @@ class PageSetup(AnyObject):
     def logo(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Logo() As CATBSTR
@@ -525,7 +509,6 @@ class PageSetup(AnyObject):
     def logo_visibility(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LogoVisibility() As boolean
@@ -555,7 +538,6 @@ class PageSetup(AnyObject):
     def maximum_size(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property MaximumSize() As boolean
@@ -588,7 +570,6 @@ class PageSetup(AnyObject):
     def orientation(self) -> CatPaperOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Orientation() As CatPaperOrientation
@@ -617,7 +598,6 @@ class PageSetup(AnyObject):
     def paper_height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperHeight() As float
@@ -646,7 +626,6 @@ class PageSetup(AnyObject):
     def paper_size(self) -> CatPaperSize:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperSize() As CatPaperSize
@@ -675,7 +654,6 @@ class PageSetup(AnyObject):
     def paper_width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PaperWidth() As float
@@ -704,7 +682,6 @@ class PageSetup(AnyObject):
     def print_rendering_mode(self) -> CatPrintRenderingMode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PrintRenderingMode() As CatPrintRenderingMode
@@ -733,7 +710,6 @@ class PageSetup(AnyObject):
     def quality(self) -> CatPrintQuality:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Quality() As CatPrintQuality
@@ -763,7 +739,6 @@ class PageSetup(AnyObject):
     def right_margin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property RightMargin() As float
@@ -794,7 +769,6 @@ class PageSetup(AnyObject):
     def rotation(self) -> CatImageRotation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Rotation() As CatImageRotation
@@ -825,7 +799,6 @@ class PageSetup(AnyObject):
     def scaling1_to1(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Scaling1To1() As boolean
@@ -860,7 +833,6 @@ class PageSetup(AnyObject):
     def text_blanking(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property TextBlanking() As boolean
@@ -890,7 +862,6 @@ class PageSetup(AnyObject):
     def text_scaling(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property TextScaling() As boolean
@@ -920,7 +891,6 @@ class PageSetup(AnyObject):
     def top_margin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property TopMargin() As float
@@ -951,7 +921,6 @@ class PageSetup(AnyObject):
     def use_3d_accuracy(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Use3DAccuracy() As boolean
@@ -981,7 +950,6 @@ class PageSetup(AnyObject):
     def use_image_size(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property UseImageSize() As boolean
@@ -1010,7 +978,6 @@ class PageSetup(AnyObject):
     def white_vectors_in_black(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property WhiteVectorsInBlack() As boolean
@@ -1040,7 +1007,6 @@ class PageSetup(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Zoom() As float

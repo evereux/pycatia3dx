@@ -13,10 +13,8 @@ from pycatia3dx.mmr_automation_interfaces.edge import Edge
 
 
 class BiDimFeatEdge(Edge):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -71,4 +69,4 @@ class BiDimFeatEdge(Edge):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'BiDimFeatEdge(name="{ self.name }")'
+        return f'BiDimFeatEdge(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimPoint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimPoint(AnyObject):
     def point_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointType() As SimPointDefinitionMode
@@ -59,7 +57,6 @@ class SimPoint(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCoordinates(double oX1,double oX2,double oX3)
@@ -82,7 +79,6 @@ class SimPoint(AnyObject):
     def set_coordinates(self, i_x1: float, i_x2: float, i_x3: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCoordinates(double iX1,double iX2,double iX3)

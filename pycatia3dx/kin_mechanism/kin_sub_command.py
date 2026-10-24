@@ -15,7 +15,6 @@ from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
 class KinSubCommand(KinCommand):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class KinSubCommand(KinCommand):
     def sub_mechanism(self) -> KinMechanism:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubMechanism() As KinMechanism (Read Only)
@@ -60,7 +58,6 @@ class KinSubCommand(KinCommand):
     def sub_mechanism_product_occurrence(self) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubMechanismProductOccurrence() As VPMOccurrence (Read

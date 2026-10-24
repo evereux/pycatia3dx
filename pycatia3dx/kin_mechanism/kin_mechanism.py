@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class KinMechanism(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class KinMechanism(AnyObject):
     def commands(self) -> KinCommands:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Commands() As KinCommands (Read Only)
@@ -73,7 +71,6 @@ class KinMechanism(AnyObject):
     def joints(self) -> KinJoints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Joints() As KinJoints (Read Only)
@@ -105,7 +102,6 @@ class KinMechanism(AnyObject):
     def mechanism_products(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MechanismProducts() As CATSafeArrayVariant (Read
@@ -142,7 +138,6 @@ class KinMechanism(AnyObject):
     def attach_dressup_product(self, i_mechanism_product: VPMOccurrence, i_attached_product: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AttachDressupProduct(VPMOccurrence iMechanismProduct,VPMOccurrence
@@ -185,7 +180,6 @@ class KinMechanism(AnyObject):
     def clean_simulation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CleanSimulation()
@@ -214,7 +208,6 @@ class KinMechanism(AnyObject):
     def detach_dressup_product(self, i_attached_product: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DetachDressupProduct(VPMOccurrence iAttachedProduct)
@@ -248,7 +241,6 @@ class KinMechanism(AnyObject):
     def get_dressup_products(self, i_mechanism_product: VPMOccurrence) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDressupProducts(VPMOccurrence iMechanismProduct) As
@@ -297,7 +289,6 @@ class KinMechanism(AnyObject):
     def prepare_simulation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrepareSimulation()
@@ -330,7 +321,6 @@ class KinMechanism(AnyObject):
     def run_command(self, i_command: CATVariant, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RunCommand(CATVariant iCommand,double iValue)
@@ -371,7 +361,6 @@ class KinMechanism(AnyObject):
     def run_simulation(self, i_cmd_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RunSimulation(CATSafeArrayVariant iCmdValues)

@@ -11,10 +11,8 @@ from pycatia3dx.know_how.expert_rule_base_runtime import ExpertRuleBaseRuntime
 
 
 class ExpertRuleBase(ExpertRuleBaseRuntime):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
     def volatile_copy(self) -> ExpertRuleBaseRuntime:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func VolatileCopy() As ExpertRuleBaseRuntime
@@ -61,4 +58,4 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
         return ExpertRuleBaseRuntime(self.com_object.VolatileCopy())
 
     def __repr__(self):
-        return f'ExpertRuleBase(name="{ self.name }")'
+        return f'ExpertRuleBase(name="{self.name}")'

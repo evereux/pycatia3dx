@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSweep(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -48,7 +46,6 @@ class HybridShapeSweep(HybridShape):
     def c0_vertices_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property C0VerticesMode() As boolean
@@ -73,7 +70,6 @@ class HybridShapeSweep(HybridShape):
     def fill_twisted_areas(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FillTwistedAreas() As long
@@ -96,7 +92,6 @@ class HybridShapeSweep(HybridShape):
     def setback_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SetbackValue() As double
@@ -118,7 +113,6 @@ class HybridShapeSweep(HybridShape):
     def add_cut_points(self, i_element1: Reference, i_element2: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddCutPoints(Reference iElement1,Reference iElement2)
@@ -141,7 +135,6 @@ class HybridShapeSweep(HybridShape):
     def add_fill_points(self, i_element1: Reference, i_element2: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddFillPoints(Reference iElement1,Reference iElement2)
@@ -164,7 +157,6 @@ class HybridShapeSweep(HybridShape):
     def get_cut_point(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCutPoint(long iRank) As Reference
@@ -177,7 +169,6 @@ class HybridShapeSweep(HybridShape):
     def get_fill_point(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFillPoint(long iRank) As Reference
@@ -190,7 +181,6 @@ class HybridShapeSweep(HybridShape):
     def remove_all_cut_points(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllCutPoints()
@@ -203,7 +193,6 @@ class HybridShapeSweep(HybridShape):
     def remove_all_fill_points(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllFillPoints()
@@ -214,4 +203,4 @@ class HybridShapeSweep(HybridShape):
         return self.com_object.RemoveAllFillPoints()
 
     def __repr__(self):
-        return f'HybridShapeSweep(name="{ self.name }")'
+        return f'HybridShapeSweep(name="{self.name}")'

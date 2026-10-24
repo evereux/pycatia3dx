@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorDisplacementRestraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -102,7 +99,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
@@ -118,7 +114,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -133,7 +128,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -172,7 +166,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def get_dof_restraint(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDofRestraint(SimDof iDegreeOfFreedom) As boolean
@@ -196,7 +189,6 @@ class SimConnectorDisplacementRestraint(AnyObject):
     def set_dof_restraint(self, i_degree_of_freedom: int, i_restraint_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDofRestraint(SimDof iDegreeOfFreedom,boolean
@@ -219,4 +211,4 @@ class SimConnectorDisplacementRestraint(AnyObject):
         return self.com_object.SetDofRestraint(i_degree_of_freedom, i_restraint_flag)
 
     def __repr__(self):
-        return f'SimConnectorDisplacementRestraint(name="{ self.name }")'
+        return f'SimConnectorDisplacementRestraint(name="{self.name}")'

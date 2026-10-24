@@ -18,10 +18,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPController(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class OLPController(AnyObject):
     def acceleration_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccelerationMode() As DELOlpAccelerationMode
@@ -71,7 +68,6 @@ class OLPController(AnyObject):
     def accuracy_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfileList() As OlpProfiles (Read Only)
@@ -86,7 +82,6 @@ class OLPController(AnyObject):
     def application_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicationType() As CATBSTR
@@ -109,7 +104,6 @@ class OLPController(AnyObject):
     def applicative_profiles_mgr(self) -> RscApplicativeProfilesMgr:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicativeProfilesMgr() As RscApplicativeProfilesMgr (Read
@@ -125,7 +119,6 @@ class OLPController(AnyObject):
     def c_frame_rivet_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CFrameRivetProfileList() As OlpProfiles (Read Only)
@@ -140,7 +133,6 @@ class OLPController(AnyObject):
     def cartesian_safety_zones(self) -> OLPCartesianSafetyZones:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CartesianSafetyZones() As OlpCartesianSafetyZones (Read
@@ -156,7 +148,6 @@ class OLPController(AnyObject):
     def conveyor_tracking_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConveyorTrackingProfileList() As OlpProfiles (Read
@@ -172,7 +163,6 @@ class OLPController(AnyObject):
     def device_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeviceID() As CATBSTR (Read Only)
@@ -187,7 +177,6 @@ class OLPController(AnyObject):
     def device_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeviceType() As DELOlpDeviceType (Read Only)
@@ -202,7 +191,6 @@ class OLPController(AnyObject):
     def device_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeviceTypeString() As CATBSTR (Read Only)
@@ -218,7 +206,6 @@ class OLPController(AnyObject):
     def drill_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillProfileList() As OlpProfiles (Read Only)
@@ -233,7 +220,6 @@ class OLPController(AnyObject):
     def drill_rivet_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillRivetProfileList() As OlpProfiles (Read Only)
@@ -248,7 +234,6 @@ class OLPController(AnyObject):
     def heart_beat(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeartBeat() As double
@@ -274,7 +259,6 @@ class OLPController(AnyObject):
     def home_positions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HomePositions() As CATSafeArrayVariant (Read Only)
@@ -290,7 +274,6 @@ class OLPController(AnyObject):
     def max_linear_accel(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxLinearAccel() As double
@@ -313,7 +296,6 @@ class OLPController(AnyObject):
     def max_linear_speed(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxLinearSpeed() As double
@@ -338,7 +320,6 @@ class OLPController(AnyObject):
     def model_number(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModelNumber() As CATBSTR (Read Only)
@@ -354,7 +335,6 @@ class OLPController(AnyObject):
     def motion_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfileList() As OlpProfiles (Read Only)
@@ -369,7 +349,6 @@ class OLPController(AnyObject):
     def num_joints(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumJoints() As long (Read Only)
@@ -384,7 +363,6 @@ class OLPController(AnyObject):
     def object_frame_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectFrameProfileList() As OlpProfiles (Read Only)
@@ -399,7 +377,6 @@ class OLPController(AnyObject):
     def paint_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaintProfileList() As OlpProfiles (Read Only)
@@ -414,7 +391,6 @@ class OLPController(AnyObject):
     def postures(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Postures() As CATSafeArrayVariant (Read Only)
@@ -431,7 +407,6 @@ class OLPController(AnyObject):
     def rail_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RailDirection() As DELOlpAxisDirection (Read Only)
@@ -450,7 +425,6 @@ class OLPController(AnyObject):
     def rivet_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RivetProfileList() As OlpProfiles (Read Only)
@@ -465,7 +439,6 @@ class OLPController(AnyObject):
     def singularity_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SingularityTolerance() As double
@@ -488,7 +461,6 @@ class OLPController(AnyObject):
     def spot_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpotProfileList() As OlpProfiles (Read Only)
@@ -503,7 +475,6 @@ class OLPController(AnyObject):
     def tool_profile_list(self) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolProfileList() As OlpProfiles (Read Only)
@@ -518,7 +489,6 @@ class OLPController(AnyObject):
     def tool_volumes(self) -> OLPToolVolumes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolVolumes() As OlpToolVolumes (Read Only)
@@ -533,7 +503,6 @@ class OLPController(AnyObject):
     def turn_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TurnMode() As DELOlpTurnMode
@@ -559,7 +528,6 @@ class OLPController(AnyObject):
     def user_profiles_mgr(self) -> RscUserProfilesMgr:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserProfilesMgr() As RscUserProfilesMgr (Read Only)
@@ -573,7 +541,6 @@ class OLPController(AnyObject):
     def get_applicative_profile_list(self, i_profile_type: str) -> OLPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApplicativeProfileList(CATBSTR iProfileType) As
@@ -600,7 +567,6 @@ class OLPController(AnyObject):
     def get_base_location(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBaseLocation(DELOlpPositionRef iOrigin) As
@@ -632,7 +598,6 @@ class OLPController(AnyObject):
     def get_conveyor_direction(self, i_robot: 'OLPController') -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConveyorDirection(OlpController iRobot) As
@@ -659,7 +624,6 @@ class OLPController(AnyObject):
     def get_dof_parameter(self, i_dof_index: int, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDOFParameter(long iDOFIndex,CATBSTR iParameterName) As
@@ -687,7 +651,6 @@ class OLPController(AnyObject):
     def get_hard_limit(self, i_joint_index: int, o_upper_limit: float, o_lower_limit: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetHardLimit(long iJointIndex,double oUpperLimit,double
@@ -714,7 +677,6 @@ class OLPController(AnyObject):
     def get_home_position(self, i_home_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomePosition(CATBSTR iHomeName) As CATSafeArrayVariant
@@ -738,7 +700,6 @@ class OLPController(AnyObject):
     def get_joint_accel_time(self, i_joint_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointAccelTime(long iJointIndex) As double
@@ -761,7 +722,6 @@ class OLPController(AnyObject):
     def get_joint_type(self, i_joint_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointType(long iJointIndex) As DELOlpJointType
@@ -785,7 +745,6 @@ class OLPController(AnyObject):
     def get_max_joint_accel(self, i_joint_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxJointAccel(long iJointIndex) As double
@@ -809,7 +768,6 @@ class OLPController(AnyObject):
     def get_max_joint_speed(self, i_joint_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxJointSpeed(long iJointIndex) As double
@@ -833,7 +791,6 @@ class OLPController(AnyObject):
     def get_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -860,7 +817,6 @@ class OLPController(AnyObject):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As
@@ -884,7 +840,6 @@ class OLPController(AnyObject):
     def get_soft_limit(self, i_joint_index: int, o_upper_limit: float, o_lower_limit: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSoftLimit(long iJointIndex,double oUpperLimit,double
@@ -911,7 +866,6 @@ class OLPController(AnyObject):
     def set_base_location(self, i_origin: int, i_location: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaseLocation(DELOlpPositionRef iOrigin,OlpTransform
@@ -963,7 +917,6 @@ class OLPController(AnyObject):
     def set_dof_parameter(self, i_dof_index: int, i_parameter_name: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDOFParameter(long iDOFIndex,CATBSTR iParameterName,CATVariant
@@ -990,7 +943,6 @@ class OLPController(AnyObject):
     def set_hard_limit(self, i_joint_index: int, i_upper_limit: float, i_lower_limit: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHardLimit(long iJointIndex,double iUpperLimit,double
@@ -1017,7 +969,6 @@ class OLPController(AnyObject):
     def set_home_position(self, i_home_name: str, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHomePosition(CATBSTR iHomeName,CATSafeArrayVariant
@@ -1042,7 +993,6 @@ class OLPController(AnyObject):
     def set_joint_accel_time(self, i_joint_index: int, i_accel: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointAccelTime(long iJointIndex,double iAccel)
@@ -1065,7 +1015,6 @@ class OLPController(AnyObject):
     def set_max_joint_accel(self, i_joint_index: int, i_accel: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxJointAccel(long iJointIndex,double iAccel)
@@ -1089,7 +1038,6 @@ class OLPController(AnyObject):
     def set_max_joint_speed(self, i_joint_index: int, i_speed: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxJointSpeed(long iJointIndex,double iSpeed)
@@ -1113,7 +1061,6 @@ class OLPController(AnyObject):
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
@@ -1140,7 +1087,6 @@ class OLPController(AnyObject):
     def set_soft_limit(self, i_joint_index: int, i_upper_limit: float, i_lower_limit: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSoftLimit(long iJointIndex,double iUpperLimit,double
@@ -1165,4 +1111,4 @@ class OLPController(AnyObject):
         return self.com_object.SetSoftLimit(i_joint_index, i_upper_limit, i_lower_limit)
 
     def __repr__(self):
-        return f'OLPController(name="{ self.name }")'
+        return f'OLPController(name="{self.name}")'

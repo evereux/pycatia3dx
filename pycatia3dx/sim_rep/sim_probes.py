@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimProbes(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SimProbes(Collection):
     def add(self, i_type: str, i_catalog_name: str, i_client_id: str) -> SimProbe:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
@@ -72,7 +70,6 @@ class SimProbes(Collection):
     def item(self, i_index: CATVariant) -> SimProbe:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimProbe
@@ -99,7 +96,6 @@ class SimProbes(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

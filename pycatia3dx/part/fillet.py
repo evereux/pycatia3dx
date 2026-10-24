@@ -12,10 +12,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Fillet(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Fillet(DressUpShape):
     def fillet_boundary_relimitation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilletBoundaryRelimitation() As
@@ -78,7 +75,6 @@ class Fillet(DressUpShape):
     def fillet_trim_support(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilletTrimSupport() As CatFilletTrimSupport
@@ -108,4 +104,4 @@ class Fillet(DressUpShape):
         self.com_object.FilletTrimSupport = value
 
     def __repr__(self):
-        return f'Fillet(name="{ self.name }")'
+        return f'Fillet(name="{self.name}")'

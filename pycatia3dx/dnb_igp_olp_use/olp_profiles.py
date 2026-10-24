@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPProfiles(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class OLPProfiles(Collection):
     def current_profile(self) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentProfile() As OlpProfile
@@ -66,7 +64,6 @@ class OLPProfiles(Collection):
     def exists_profile(self, i_name: str, o_profile: OLPProfile) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExistsProfile(CATBSTR iName,OlpProfile oProfile) As
@@ -92,7 +89,6 @@ class OLPProfiles(Collection):
     def get_default_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDefaultParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -120,7 +116,6 @@ class OLPProfiles(Collection):
     def get_or_create_by_match(self, i_skip_if_defaults: bool) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateByMatch(boolean iSkipIfDefaults) As OlpProfile
@@ -154,7 +149,6 @@ class OLPProfiles(Collection):
     def get_or_create_profile(self, i_name: str) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateProfile(CATBSTR iName) As OlpProfile
@@ -177,7 +171,6 @@ class OLPProfiles(Collection):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As

@@ -13,10 +13,8 @@ from pycatia3dx.del_resource_builder.enums import AccuracyType
 
 
 class RscAccuracyProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -73,7 +71,6 @@ class RscAccuracyProfile(AnyObject):
     def accuracy_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyType() As AccuracyType
@@ -109,7 +106,6 @@ class RscAccuracyProfile(AnyObject):
     def accuracy_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyValue() As double
@@ -141,7 +137,6 @@ class RscAccuracyProfile(AnyObject):
     def fly_by_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlyByMode() As short
@@ -173,4 +168,4 @@ class RscAccuracyProfile(AnyObject):
         self.com_object.FlyByMode = value
 
     def __repr__(self):
-        return f'RscAccuracyProfile(name="{ self.name }")'
+        return f'RscAccuracyProfile(name="{self.name}")'

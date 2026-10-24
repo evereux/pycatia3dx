@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPTimer(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPTimer(OLPInstruction):
     def action(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Action() As DELOlpTimerAction
@@ -66,7 +63,6 @@ class OLPTimer(OLPInstruction):
     def destination(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Destination() As OlpVariable
@@ -92,7 +88,6 @@ class OLPTimer(OLPInstruction):
     def destination_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DestinationExpress() As OlpAstBranch
@@ -112,4 +107,4 @@ class OLPTimer(OLPInstruction):
         self.com_object.DestinationExpress = value
 
     def __repr__(self):
-        return f'OLPTimer(name="{ self.name }")'
+        return f'OLPTimer(name="{self.name}")'

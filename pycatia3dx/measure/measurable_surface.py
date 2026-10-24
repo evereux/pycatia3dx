@@ -13,7 +13,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 class MeasurableSurface(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class MeasurableSurface(MeasurableInContext):
     def get_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
@@ -63,7 +61,6 @@ class MeasurableSurface(MeasurableInContext):
     def get_area_c_of_g(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetArea_COfG(double oArea,double oXCOfG,double oYCOfG,double
@@ -95,7 +92,6 @@ class MeasurableSurface(MeasurableInContext):
     def get_c_of_g(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
@@ -124,7 +120,6 @@ class MeasurableSurface(MeasurableInContext):
     def get_perimeter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPerimeter() As double

@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class InstanceFactory(Factory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -96,7 +94,6 @@ class InstanceFactory(Factory):
     def instantiation_mode(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property InstantiationMode(CATBSTR iInstantiationModeBSTR) (Write
@@ -129,7 +126,6 @@ class InstanceFactory(Factory):
     def add_instance(self, i_reference: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func AddInstance(AnyObject iReference) As AnyObject
@@ -151,10 +147,10 @@ class InstanceFactory(Factory):
         """
         return AnyObject(self.com_object.AddInstance(i_reference.com_object))
 
-    def begin_instance_factory(self, i_name_of_template_reference: str, i_plm_external_id: str, i_v_version: str) -> None:
+    def begin_instance_factory(self, i_name_of_template_reference: str, i_plm_external_id: str,
+                               i_v_version: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub BeginInstanceFactory(CATBSTR iNameOfTemplateReference,CATBSTR
@@ -199,7 +195,6 @@ class InstanceFactory(Factory):
     def begin_instantiate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub BeginInstantiate()
@@ -222,7 +217,6 @@ class InstanceFactory(Factory):
     def end_instance_factory(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub EndInstanceFactory()
@@ -245,7 +239,6 @@ class InstanceFactory(Factory):
     def end_instantiate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub EndInstantiate()
@@ -268,7 +261,6 @@ class InstanceFactory(Factory):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParameter(CATBSTR iName) As AnyObject
@@ -301,7 +293,6 @@ class InstanceFactory(Factory):
     def instantiate(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Instantiate() As AnyObject
@@ -330,7 +321,6 @@ class InstanceFactory(Factory):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutInputData(CATBSTR iName,CATBaseDispatch iInput)
@@ -365,4 +355,4 @@ class InstanceFactory(Factory):
         return self.com_object.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'InstanceFactory(name="{ self.name }")'
+        return f'InstanceFactory(name="{self.name}")'

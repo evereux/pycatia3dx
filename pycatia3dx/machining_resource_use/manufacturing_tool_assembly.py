@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingToolAssembly(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class ManufacturingToolAssembly(AnyObject):
     def add_component(self, i_component: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddComponent(AnyObject iComponent) As AnyObject
@@ -65,7 +63,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_all_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllComponents() As CATSafeArrayVariant
@@ -85,7 +82,6 @@ class ManufacturingToolAssembly(AnyObject):
                        is_local: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAllStages(long oNbStages,CATSafeArrayVariant
@@ -117,7 +113,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_editable_status(self, i_activity: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEditableStatus(AnyObject iActivity) As boolean
@@ -139,7 +134,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_holders(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHolders() As CATSafeArrayVariant
@@ -158,7 +152,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_length_of_tool_assembly(self, islocal: bool, i_unit: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLengthOfToolAssembly(boolean Islocal,long iUnit) As
@@ -190,7 +183,6 @@ class ManufacturingToolAssembly(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetListHolderGage(CATSafeArrayVariant oListofHolder,CATSafeArrayVariant
@@ -239,7 +231,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_tool_gage(self, islocal: bool, i_unit: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolGage(boolean Islocal,long iUnit) As double
@@ -263,7 +254,6 @@ class ManufacturingToolAssembly(AnyObject):
     def get_tools(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTools() As CATSafeArrayVariant
@@ -282,7 +272,6 @@ class ManufacturingToolAssembly(AnyObject):
     def remove_all_components(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAllComponents()
@@ -295,7 +284,6 @@ class ManufacturingToolAssembly(AnyObject):
     def remove_component(self, i_component: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveComponent(AnyObject iComponent)
@@ -314,7 +302,6 @@ class ManufacturingToolAssembly(AnyObject):
     def set_list_holder_gage(self, i_list_holder_gage: tuple, islocal: bool, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetListHolderGage(CATSafeArrayVariant iListHolderGage,boolean Islocal,long
@@ -359,7 +346,6 @@ class ManufacturingToolAssembly(AnyObject):
     def set_tool_gage(self, o_tool_gage: float, islocal: bool, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolGage(double oToolGage,boolean Islocal,long iUnit)

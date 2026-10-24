@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_trigger_action import OLPTriggerAction
 
 
 class OLPActionGunActivate(OLPTriggerAction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPActionGunActivate(OLPTriggerAction):
     def gun_state(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GunState() As DELOlpGunState
@@ -65,7 +62,6 @@ class OLPActionGunActivate(OLPTriggerAction):
     def guns(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Guns() As CATSafeArrayVariant
@@ -88,7 +84,6 @@ class OLPActionGunActivate(OLPTriggerAction):
     def profile(self) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Profile() As OlpProfile
@@ -108,4 +103,4 @@ class OLPActionGunActivate(OLPTriggerAction):
         self.com_object.Profile = value
 
     def __repr__(self):
-        return f'OLPActionGunActivate(name="{ self.name }")'
+        return f'OLPActionGunActivate(name="{self.name}")'

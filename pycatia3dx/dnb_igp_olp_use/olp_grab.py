@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPGrab(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPGrab(OLPInstruction):
     def products(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Products() As CATSafeArrayVariant (Read Only)
@@ -56,7 +53,6 @@ class OLPGrab(OLPInstruction):
     def add_product(self, i_product_to_add: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProduct(VPMOccurrence iProductToAdd)
@@ -75,7 +71,6 @@ class OLPGrab(OLPInstruction):
     def add_product_by_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProductByName(CATBSTR iName)
@@ -96,4 +91,4 @@ class OLPGrab(OLPInstruction):
         return self.com_object.AddProductByName(i_name)
 
     def __repr__(self):
-        return f'OLPGrab(name="{ self.name }")'
+        return f'OLPGrab(name="{self.name}")'

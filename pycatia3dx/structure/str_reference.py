@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class StrReference(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +48,6 @@ class StrReference(AnyObject):
     def rfg_grid_face(self) -> RfgGridFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RfgGridFace() As RfgGridFace (Read Only)
@@ -70,7 +68,6 @@ class StrReference(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Role() As CATBSTR (Read Only)
@@ -85,7 +82,6 @@ class StrReference(AnyObject):
     def get_specification(self, ib_to_load: bool, o_ref_prod_occ: AnyObject, o_ref_feature: RfgGridFace) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSpecification(boolean ibToLoad,CATBaseDispatch oRefProdOcc,RfgGridFace
@@ -116,7 +112,6 @@ class StrReference(AnyObject):
     def is_synchronized(self, o_status: bool) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsSynchronized(boolean oStatus) As long
@@ -157,7 +152,6 @@ class StrReference(AnyObject):
     def is_valid(self, o_status: bool, o_validation_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsValid(boolean oStatus,long oValidationStatus)
@@ -199,7 +193,6 @@ class StrReference(AnyObject):
     def set_specification(self, i_ref_prod_occ: AnyObject, i_ref_feature: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSpecification(CATBaseDispatch iRefProdOcc,Reference
@@ -240,7 +233,6 @@ class StrReference(AnyObject):
     def synchronize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Synchronize()
@@ -253,7 +245,6 @@ class StrReference(AnyObject):
     def validate_specification(self, i_ref_prod_occ: AnyObject, i_ref_feature: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ValidateSpecification(CATBaseDispatch iRefProdOcc,Reference iRefFeature)

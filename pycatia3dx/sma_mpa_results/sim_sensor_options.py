@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_results.sim_sensor import SimSensor
 
 
 class SimSensorOptions(SimSensor):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +50,6 @@ class SimSensorOptions(SimSensor):
     def set_average_parameter(self, ib_average: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAverageParameter(boolean ibAverage)
@@ -66,7 +63,6 @@ class SimSensorOptions(SimSensor):
     def set_sum_parameter(self, ib_sum: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSumParameter(boolean ibSum)
@@ -78,4 +74,4 @@ class SimSensorOptions(SimSensor):
         return self.com_object.SetSumParameter(ib_sum)
 
     def __repr__(self):
-        return f'SimSensorOptions(name="{ self.name }")'
+        return f'SimSensorOptions(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingEnumParameter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingEnumParameter(AnyObject):
     def get_mode(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMode() As Parameter
@@ -57,7 +54,6 @@ class ManufacturingEnumParameter(AnyObject):
     def get_mode_bool(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModeBool() As boolean
@@ -75,7 +71,6 @@ class ManufacturingEnumParameter(AnyObject):
     def get_mode_str(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModeStr() As CATBSTR
@@ -93,7 +88,6 @@ class ManufacturingEnumParameter(AnyObject):
     def get_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetObject() As AnyObject
@@ -111,7 +105,6 @@ class ManufacturingEnumParameter(AnyObject):
     def set_mode_bool(self, i_mode: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetModeBool(boolean iMode)
@@ -130,7 +123,6 @@ class ManufacturingEnumParameter(AnyObject):
     def set_mode_str(self, i_mode: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetModeStr(CATBSTR iMode)
@@ -149,7 +141,6 @@ class ManufacturingEnumParameter(AnyObject):
     def set_object(self, i_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObject(AnyObject iValue)
@@ -166,4 +157,4 @@ class ManufacturingEnumParameter(AnyObject):
         return self.com_object.SetObject(i_value.com_object)
 
     def __repr__(self):
-        return f'ManufacturingEnumParameter(name="{ self.name }")'
+        return f'ManufacturingEnumParameter(name="{self.name}")'

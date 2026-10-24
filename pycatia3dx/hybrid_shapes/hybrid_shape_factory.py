@@ -123,7 +123,6 @@ from pycatia3dx.scripts.vba import vba_nothing, VBANothing
 class HybridShapeFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -169,7 +168,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCorner:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNew3DCorner(Reference iElement1,Reference
@@ -233,7 +231,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShape3DCurveOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNew3DCurveOffset(Reference iCurveToOffset,HybridShapeDirection
@@ -283,7 +280,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeAffinity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewAffinity(Reference iElement,double iXRatio,double iYRatio,double
@@ -323,7 +319,6 @@ class HybridShapeFactory(Factory):
     def add_new_axis_line(self, i_element: Reference) -> HybridShapeAxisLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewAxisLine(Reference iElement) As HybridShapeAxisLine
@@ -350,7 +345,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeAxisToAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewAxisToAxis(Reference iObject,Reference iReferenceAxis,Reference
@@ -384,7 +378,6 @@ class HybridShapeFactory(Factory):
     def add_new_blend(self) -> HybridShapeBlend:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewBlend() As HybridShapeBlend
@@ -407,7 +400,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeBoundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewBoundary(Reference iInitialElement,Reference iSupport,long
@@ -451,7 +443,6 @@ class HybridShapeFactory(Factory):
     def add_new_boundary_of_surface(self, surface: Reference) -> HybridShapeBoundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewBoundaryOfSurface(Reference Surface) As
@@ -474,7 +465,6 @@ class HybridShapeFactory(Factory):
     def add_new_bump(self, i_body_to_bump: Reference) -> HybridShapeBump:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
@@ -504,7 +494,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircle2PointsRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircle2PointsRad(Reference iPoint1,Reference iPoint2,Reference
@@ -567,7 +556,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircle3Points:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircle3Points(Reference iPoint1,Reference iPoint2,Reference iPoint3)
@@ -616,7 +604,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleBitangentPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleBitangentPoint(Reference iCurve1,Reference iCurve2,Reference
@@ -679,7 +666,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleBitangentRadius:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleBitangentRadius(Reference iCurve1,Reference iCurve2,Reference
@@ -741,7 +727,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCenterAxis(Reference iAxis,Reference iPoint,double
@@ -787,7 +772,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCenterAxisWithAngles(Reference iAxis,Reference iPoint,double
@@ -843,7 +827,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCenterTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCenterTangent(Reference iCenterElem,Reference
@@ -891,7 +874,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCtrPt(Reference iCenter,Reference iCrossingPoint,Reference
@@ -943,7 +925,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCtrPtWithAngles(Reference iCenter,Reference
@@ -1003,7 +984,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCtrRad(Reference iCenter,Reference iSupport,boolean
@@ -1056,7 +1036,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleCtrRad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleCtrRadWithAngles(Reference iCenter,Reference iSupport,boolean
@@ -1110,7 +1089,6 @@ class HybridShapeFactory(Factory):
     def add_new_circle_datum(self, i_object: Reference) -> HybridShapeCircleExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleDatum(Reference iObject) As
@@ -1143,7 +1121,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCircleTritangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCircleTritangent(Reference iCurve1,Reference iCurve2,Reference
@@ -1207,7 +1184,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCombine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCombine(Reference iFirstCurve,Reference iSecondCurve,long
@@ -1255,7 +1231,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeConic:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewConic(Reference iSupport,Reference iStartingPoint,Reference
@@ -1303,7 +1278,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewConicalReflectLineWithType(Reference iSupport,Reference
@@ -1369,7 +1343,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeConnect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewConnect(Reference iCurve1,Reference iPoint1,long iOrient1,long
@@ -1456,7 +1429,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCorner:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCorner(Reference iElement1,Reference iElement2,Reference
@@ -1519,7 +1491,6 @@ class HybridShapeFactory(Factory):
     def add_new_curve_datum(self, i_object: Reference) -> HybridShapeCurveExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCurveDatum(Reference iObject) As
@@ -1549,7 +1520,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCurvePar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCurvePar(Reference Curve,Reference Support,double Distance,boolean
@@ -1596,7 +1566,6 @@ class HybridShapeFactory(Factory):
     def add_new_curve_smooth(self, ip_ia_curve: Reference) -> HybridShapeCurveSmooth:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCurveSmooth(Reference ipIACurve) As
@@ -1628,7 +1597,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeCylinder:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewCylinder(Reference iCenter,double iRadius,double iFirstLength,double
@@ -1672,7 +1640,6 @@ class HybridShapeFactory(Factory):
     def add_new_datums(self, i_elem: Reference) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
@@ -1719,7 +1686,6 @@ class HybridShapeFactory(Factory):
     def add_new_develop(self, i_mode: int, i_to_develop: Reference, i_support: Reference) -> HybridShapeDevelop:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewDevelop(long iMode,Reference iToDevelop,Reference iSupport) As
@@ -1752,7 +1718,6 @@ class HybridShapeFactory(Factory):
     def add_new_direction(self, i_element: Reference) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewDirection(Reference iElement) As
@@ -1780,7 +1745,6 @@ class HybridShapeFactory(Factory):
     def add_new_direction_by_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewDirectionByCoord(double iX,double iY,double iZ) As
@@ -1813,7 +1777,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeDisconnect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewDisconnect(Reference iEltToBeDisconnected,Reference
@@ -1839,7 +1802,6 @@ class HybridShapeFactory(Factory):
     def add_new_empty_rotate(self) -> HybridShapeRotate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewEmptyRotate() As HybridShapeRotate
@@ -1852,7 +1814,6 @@ class HybridShapeFactory(Factory):
     def add_new_empty_translate(self) -> HybridShapeTranslate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewEmptyTranslate() As HybridShapeTranslate
@@ -1865,7 +1826,6 @@ class HybridShapeFactory(Factory):
     def add_new_extract(self, element: Reference) -> HybridShapeExtract:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtract(Reference Element) As HybridShapeExtract
@@ -1889,7 +1849,6 @@ class HybridShapeFactory(Factory):
     def add_new_extract_multi(self, element: Reference) -> HybridShapeExtractMulti:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtractMulti(Reference Element) As
@@ -1919,7 +1878,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrapol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtrapolLength(Reference iBoundary,Reference iToExtrapol,double
@@ -1964,7 +1922,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrapol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtrapolUntil(Reference iBoundary,Reference iToExtrapol,Reference
@@ -2004,7 +1961,6 @@ class HybridShapeFactory(Factory):
     def add_new_extremum(self, i_objet: Reference, i_dir: HybridShapeDirection, i_min_max: int) -> HybridShapeExtremum:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtremum(Reference iObjet,HybridShapeDirection iDir,long iMinMax) As
@@ -2035,7 +1991,6 @@ class HybridShapeFactory(Factory):
     def add_new_extremum_polar(self, i_type: int, ip_ia_contour: Reference) -> HybridShapeExtremumPolar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtremumPolar(short iType,Reference ipIAContour) As
@@ -2067,7 +2022,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeExtrude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewExtrude(Reference iObjectToExtrude,double iOffsetDebut,double
@@ -2110,7 +2064,6 @@ class HybridShapeFactory(Factory):
     def add_new_fill(self) -> HybridShapeFill:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewFill() As HybridShapeFill
@@ -2136,7 +2089,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeFilletBiTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewFilletBiTangent(Reference iElement1,Reference iElement2,double
@@ -2198,7 +2150,6 @@ class HybridShapeFactory(Factory):
             i_ribbon_relimitation_mode: int) -> HybridShapeFilletTriTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewFilletTriTangent(Reference iElement1,Reference iElement2,Reference
@@ -2254,7 +2205,6 @@ class HybridShapeFactory(Factory):
     def add_new_healing(self, i_body_toheal: Reference) -> HybridShapeHealing:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewHealing(Reference iBodyToheal) As
@@ -2287,7 +2237,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeHelix:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewHelix(Reference iAxis,boolean iInvertAxis,Reference
@@ -2359,7 +2308,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeScaling:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewHybridScaling(Reference iElemToScale,Reference iCenter,double
@@ -2402,7 +2350,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSplit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewHybridSplit(Reference iElement1,Reference iElement2,long
@@ -2447,7 +2394,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeTrim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewHybridTrim(Reference iElement1,long iOrientation1,Reference
@@ -2489,7 +2435,6 @@ class HybridShapeFactory(Factory):
     def add_new_integrated_law(self, i_type: int) -> HybridShapeIntegratedLaw:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewIntegratedLaw(long iType) As
@@ -2513,7 +2458,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeIntersection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewIntersection(Reference iObject1,Reference iObject2) As
@@ -2549,7 +2493,6 @@ class HybridShapeFactory(Factory):
     def add_new_inverse(self, element: Reference, inverse: int) -> HybridShapeInverse:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewInverse(Reference Element,long Inverse) As
@@ -2575,7 +2518,6 @@ class HybridShapeFactory(Factory):
     def add_new_join(self, element1: Reference, element2: Reference) -> HybridShapeAssemble:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewJoin(Reference Element1,Reference Element2) As
@@ -2607,7 +2549,6 @@ class HybridShapeFactory(Factory):
     def add_new_law_dist_proj(self, i_reference: Reference, i_definition: Reference) -> HybridShapeLawDistProj:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLawDistProj(Reference iReference,Reference iDefinition) As
@@ -2647,7 +2588,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineAngle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineAngle(Reference iCurve,Reference iSurface,Reference
@@ -2715,7 +2655,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBiTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineBiTangent(Reference iCurve1,Reference iElement2,Reference
@@ -2774,7 +2713,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineBisecting(Reference iLine1,Reference iLine2,double
@@ -2835,7 +2773,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineBisectingOnSupport(Reference iLine1,Reference iLine2,Reference
@@ -2904,7 +2841,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineBisectingOnSupportWithPoint(Reference iLine1,Reference
@@ -2980,7 +2916,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineBisecting:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineBisectingWithPoint(Reference iLine1,Reference iLine2,Reference
@@ -3040,7 +2975,6 @@ class HybridShapeFactory(Factory):
     def add_new_line_datum(self, i_object: Reference) -> HybridShapeLineExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineDatum(Reference iObject) As
@@ -3072,7 +3006,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineNormal:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineNormal(Reference iSurface,Reference iPoint,double
@@ -3128,7 +3061,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtDir:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtDir(Reference iPt,HybridShapeDirection iDirection,double
@@ -3184,7 +3116,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtDir:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtDirOnSupport(Reference iPt,HybridShapeDirection
@@ -3243,7 +3174,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPt(Reference iPtOrigine,Reference iPtExtremite) As
@@ -3283,7 +3213,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtExtended(Reference iPtOrigine,Reference iPtExtremite,double
@@ -3330,7 +3259,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtOnSupport(Reference iPtOrigine,Reference
@@ -3378,7 +3306,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLinePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLinePtPtOnSupportExtended(Reference iPtOrigine,Reference
@@ -3435,7 +3362,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineTangency:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineTangency(Reference iCurve,Reference iPoint,double
@@ -3491,7 +3417,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeLineTangency:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLineTangencyOnSupport(Reference iCurve,Reference iPoint,Reference
@@ -3545,7 +3470,6 @@ class HybridShapeFactory(Factory):
     def add_new_loft(self) -> HybridShapeLoft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewLoft() As HybridShapeLoft
@@ -3567,7 +3491,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeMidSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewMidSurface(Reference iSupport,long iCreationMode,double iThreshold)
@@ -3607,7 +3530,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeMidSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewMidSurfaceWithAutoThreshold(Reference iSupport,long
@@ -3647,7 +3569,6 @@ class HybridShapeFactory(Factory):
     def add_new_near(self, multi_element: Reference, reference_element: Reference) -> HybridShapeNear:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewNear(Reference MultiElement,Reference ReferenceElement) As
@@ -3684,7 +3605,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewOffset(Reference iObjectToOffset,double iOffset,boolean
@@ -3725,7 +3645,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_curve(self, i_planar_curve: Reference) -> HybridShapePlane1Curve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane1Curve(Reference iPlanarCurve) As
@@ -3750,7 +3669,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_line1_pt(self, i_ln: Reference, i_pt: Reference) -> HybridShapePlane1Line1Pt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane1Line1Pt(Reference iLn,Reference iPt) As
@@ -3781,7 +3699,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane2_lines(self, i_ln1: Reference, i_ln2: Reference) -> HybridShapePlane2Lines:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane2Lines(Reference iLn1,Reference iLn2) As
@@ -3813,7 +3730,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane3_points(self, i_pt1: Reference, i_pt2: Reference, i_pt3: Reference) -> HybridShapePlane3Points:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlane3Points(Reference iPt1,Reference iPt2,Reference iPt3) As
@@ -3857,7 +3773,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneAngle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneAngle(Reference iPlane,Reference iRevolAxis,double
@@ -3909,7 +3824,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneBetween:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneBetween(Reference iPlane1,Reference iPlane2,double iRatio,long
@@ -3952,7 +3866,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_datum(self, i_object: Reference) -> HybridShapePlaneExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneDatum(Reference iObject) As
@@ -3982,7 +3895,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePlaneEquation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneEquation(double iA_Coeff,double iB_Coeff,double iC_Coeff,double
@@ -4020,7 +3932,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_mean(self, i_list_of_points: tuple, nb_point: int) -> HybridShapePlaneMean:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneMean(CATSafeArrayVariant iListOfPoints,long NbPoint) As
@@ -4062,7 +3973,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_normal(self, i_curve: Reference, i_pt: Reference) -> HybridShapePlaneNormal:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneNormal(Reference iCurve,Reference iPt) As
@@ -4091,7 +4001,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset(self, i_plane: Reference, i_offset: float, i_orientation: bool) -> HybridShapePlaneOffset:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneOffset(Reference iPlane,double iOffset,boolean iOrientation) As
@@ -4123,7 +4032,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset_pt(self, i_plane: Reference, i_pt: Reference) -> HybridShapePlaneOffsetPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneOffsetPt(Reference iPlane,Reference iPt) As
@@ -4154,7 +4062,6 @@ class HybridShapeFactory(Factory):
     def add_new_plane_tangent(self, i_surface: Reference, i_pt: Reference) -> HybridShapePlaneTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPlaneTangent(Reference iSurface,Reference iPt) As
@@ -4188,7 +4095,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointBetween:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointBetween(Reference iPoint1,Reference iPoint2,double iRatio,long
@@ -4231,7 +4137,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_center(self, i_curve: Reference) -> HybridShapePointCenter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCenter(Reference iCurve) As
@@ -4256,7 +4161,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapePointCoord:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCoord(double iX,double iY,double iZ) As
@@ -4290,7 +4194,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointCoord:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointCoordWithReference(double iX,double iY,double iZ,Reference iPt)
@@ -4324,7 +4227,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_datum(self, i_object: Reference) -> HybridShapePointExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointDatum(Reference iObject) As
@@ -4354,7 +4256,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveAlongDirection(Reference iCrv,double iLong,boolean
@@ -4401,7 +4302,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveFromDistance(Reference iCrv,double iLong,boolean
@@ -4442,7 +4342,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveFromPercent(Reference iCrv,double iLong,boolean
@@ -4480,7 +4379,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceAlongDirection(Reference iCrv,Reference
@@ -4532,7 +4430,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceFromDistance(Reference iCrv,Reference
@@ -4581,7 +4478,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnCurveWithReferenceFromPercent(Reference iCrv,Reference
@@ -4625,7 +4521,6 @@ class HybridShapeFactory(Factory):
     def add_new_point_on_plane(self, i_plane: Reference, i_x: float, i_y: float) -> HybridShapePointOnPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnPlane(Reference iPlane,double iX,double iY) As
@@ -4661,7 +4556,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnPlaneWithReference(Reference iPlane,Reference iPt,double
@@ -4711,7 +4605,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnSurface(Reference iSurface,HybridShapeDirection
@@ -4753,7 +4646,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointOnSurfaceWithReference(Reference iSurface,Reference
@@ -4801,7 +4693,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointTangent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPointTangent(Reference iCurve,HybridShapeDirection iDirection) As
@@ -4833,7 +4724,6 @@ class HybridShapeFactory(Factory):
     def add_new_polyline(self) -> HybridShapePolyline:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPolyline() As HybridShapePolyline
@@ -4851,7 +4741,6 @@ class HybridShapeFactory(Factory):
     def add_new_position_transform(self, i_mode: int) -> HybridShapePositionTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewPositionTransfo(long iMode) As
@@ -4874,7 +4763,6 @@ class HybridShapeFactory(Factory):
     def add_new_project(self, i_element: Reference, i_support: Reference) -> HybridShapeProject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewProject(Reference iElement,Reference iSupport) As
@@ -4910,7 +4798,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewReflectLine(Reference iSupport,HybridShapeDirection iDir,double
@@ -4967,7 +4854,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeReflectLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewReflectLineWithType(Reference iSupport,HybridShapeDirection
@@ -5031,7 +4917,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeRevol:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewRevol(Reference iObjectToExtrude,double iOffsetDebut,double
@@ -5077,7 +4962,6 @@ class HybridShapeFactory(Factory):
     def add_new_rotate(self, i_to_rotate: Reference, i_axis: Reference, i_angle: float) -> HybridShapeRotate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewRotate(Reference iToRotate,Reference iAxis,double iAngle) As
@@ -5109,7 +4993,6 @@ class HybridShapeFactory(Factory):
     def add_new_section(self) -> HybridShapeSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSection() As HybridShapeSection
@@ -5136,7 +5019,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSphere:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSphere(Reference iCenter,Reference iAxis,double iRadius,double
@@ -5199,7 +5081,6 @@ class HybridShapeFactory(Factory):
     def add_new_spine(self) -> HybridShapeSpine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpine() As HybridShapeSpine
@@ -5225,7 +5106,6 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapeSpiral:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpiral(long iType,Reference iSupport,Reference
@@ -5274,7 +5154,6 @@ class HybridShapeFactory(Factory):
     def add_new_spline(self) -> HybridShapeSpline:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSpline() As HybridShapeSpline
@@ -5292,7 +5171,6 @@ class HybridShapeFactory(Factory):
     def add_new_surface_datum(self, i_object: Reference) -> HybridShapeSurfaceExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSurfaceDatum(Reference iObject) As
@@ -5317,7 +5195,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_circle(self, i_guide1: Reference) -> HybridShapeSweepCircle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepCircle(Reference iGuide1) As
@@ -5341,7 +5218,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_conic(self, ip_ia_guide1: Reference) -> HybridShapeSweepConic:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepConic(Reference ipIAGuide1) As
@@ -5363,7 +5239,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_explicit(self, i_profile: Reference, i_guide: Reference) -> HybridShapeSweepExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepExplicit(Reference iProfile,Reference iGuide) As
@@ -5392,7 +5267,6 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_line(self, i_guide1: Reference) -> HybridShapeSweepLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSweepLine(Reference iGuide1) As
@@ -5414,7 +5288,6 @@ class HybridShapeFactory(Factory):
     def add_new_symmetry(self, i_object: Reference, i_reference: Reference) -> HybridShapeSymmetry:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewSymmetry(Reference iObject,Reference iReference) As
@@ -5443,7 +5316,6 @@ class HybridShapeFactory(Factory):
     def add_new_transfer(self, i_element_to_transfer: Reference, i_type_of_transfer: int) -> HybridShapeTransfer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewTransfer(Reference iElementToTransfer,long iTypeOfTransfer) As
@@ -5470,7 +5342,6 @@ class HybridShapeFactory(Factory):
                           i_distance: float) -> HybridShapeTranslate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewTranslate(Reference iElement,HybridShapeDirection iDirection,double
@@ -5506,7 +5377,6 @@ class HybridShapeFactory(Factory):
     def add_new_unfold(self) -> HybridShapeUnfold:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewUnfold() As HybridShapeUnfold
@@ -5525,7 +5395,6 @@ class HybridShapeFactory(Factory):
     def add_new_volume_datum(self, i_object: Reference) -> HybridShapeVolumeExplicit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewVolumeDatum(Reference iObject) As
@@ -5551,7 +5420,6 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_curve(self) -> HybridShapeWrapCurve:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewWrapCurve() As HybridShapeWrapCurve
@@ -5570,7 +5438,6 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_surface(self, i_body_to_deform: Reference) -> HybridShapeWrapSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func AddNewWrapSurface(Reference iBodyToDeform) As
@@ -5593,7 +5460,6 @@ class HybridShapeFactory(Factory):
     def change_feature_name(self, i_elem: Reference, name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub ChangeFeatureName(Reference iElem,CATBSTR Name)
@@ -5615,7 +5481,6 @@ class HybridShapeFactory(Factory):
     def delete_object_for_datum(self, i_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub DeleteObjectForDatum(Reference iObject)
@@ -5634,7 +5499,6 @@ class HybridShapeFactory(Factory):
     def gsm_visibility(self, i_elem: Reference, show: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub GSMVisibility(Reference iElem,long Show)
@@ -5656,7 +5520,6 @@ class HybridShapeFactory(Factory):
     def get_geometrical_feature_type(self, i_elem: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func GetGeometricalFeatureType(Reference iElem) As short

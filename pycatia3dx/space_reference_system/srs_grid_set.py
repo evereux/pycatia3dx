@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsGridSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SrsGridSet(AnyObject):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDirection(CATSafeArrayVariant oDirection)
@@ -83,7 +81,6 @@ class SrsGridSet(AnyObject):
     def get_extreme_faces(self, o_grid_face_bfr: SrsGridFace, o_grid_face_afr: SrsGridFace) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetExtremeFaces(SrsGridFace oGridFaceBfr,SrsGridFace
@@ -121,7 +118,6 @@ class SrsGridSet(AnyObject):
     def get_face(self, i_abs_offset: float, o_grid_face: SrsGridFace) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFace(double iAbsOffset,SrsGridFace oGridFace)
@@ -156,7 +152,6 @@ class SrsGridSet(AnyObject):
     def get_faces(self) -> SrsGridFaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFaces() As SrsGridFaces
@@ -182,7 +177,6 @@ class SrsGridSet(AnyObject):
     def get_faces_of_group(self, i_last_grid_face: SrsGridFace) -> SrsGridFaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFacesOfGroup(SrsGridFace iLastGridFace) As
@@ -219,7 +213,6 @@ class SrsGridSet(AnyObject):
                          o_grid_faces_afr: SrsGridFaces) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFacesSorted(SrsGridFaces oGridFacesBfr,SrsGridFace
@@ -262,7 +255,6 @@ class SrsGridSet(AnyObject):
     def get_group_faces(self, o_last_grid_faces_bfr: SrsGridFaces, o_last_grid_faces_afr: SrsGridFaces) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGroupFaces(SrsGridFaces oLastGridFacesBfr,SrsGridFaces
@@ -301,7 +293,6 @@ class SrsGridSet(AnyObject):
     def get_naming_prefix(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNamingPrefix() As CATBSTR
@@ -326,7 +317,6 @@ class SrsGridSet(AnyObject):
     def get_nb_faces(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbFaces() As long
@@ -352,7 +342,6 @@ class SrsGridSet(AnyObject):
     def get_nb_faces_sorted(self, o_nb_faces_bfr: int, o_origin_face_exist: bool, o_nb_faces_aft: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNbFacesSorted(long oNbFacesBfr,boolean oOriginFaceExist,long
@@ -395,7 +384,6 @@ class SrsGridSet(AnyObject):
     def get_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientation() As boolean
@@ -423,7 +411,6 @@ class SrsGridSet(AnyObject):
     def is_symmetric(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsSymmetric() As boolean

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbComponent(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class PcbComponent(AnyObject):
     def capacitance(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CAPACITANCE() As CATBSTR
@@ -66,7 +63,6 @@ class PcbComponent(AnyObject):
     def poweropr(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property POWEROPR() As CATBSTR
@@ -96,7 +92,6 @@ class PcbComponent(AnyObject):
     def power_max(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property POWER_MAX() As CATBSTR
@@ -125,7 +120,6 @@ class PcbComponent(AnyObject):
     def package_number(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PackageNumber() As CATBSTR
@@ -154,7 +148,6 @@ class PcbComponent(AnyObject):
     def resistance(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RESISTANCE() As CATBSTR
@@ -183,7 +176,6 @@ class PcbComponent(AnyObject):
     def therm_cond(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property THERM_COND() As CATBSTR
@@ -212,7 +204,6 @@ class PcbComponent(AnyObject):
     def theta_jb(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property THETA_JB() As CATBSTR
@@ -242,7 +233,6 @@ class PcbComponent(AnyObject):
     def theta_jc(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property THETA_JC() As CATBSTR
@@ -272,7 +262,6 @@ class PcbComponent(AnyObject):
     def tolerance(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TOLERANCE() As CATBSTR
@@ -298,4 +287,4 @@ class PcbComponent(AnyObject):
         self.com_object.TOLERANCE = value
 
     def __repr__(self):
-        return f'PcbComponent(name="{ self.name }")'
+        return f'PcbComponent(name="{self.name}")'

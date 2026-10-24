@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPExpressionFixerDownload(OLPExpressionFixer):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_binary_numbers(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowBinaryNumbers(boolean iAllowed) (Write Only)
@@ -78,7 +75,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_conditional_expr(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowConditionalExpr(boolean iAllowed) (Write Only)
@@ -107,7 +103,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_constants(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowConstants(boolean iAllowed) (Write Only)
@@ -133,7 +128,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_functions(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowFunctions(boolean iAllowed) (Write Only)
@@ -161,7 +155,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_hex_numbers(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowHexNumbers(boolean iAllowed) (Write Only)
@@ -190,7 +183,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_parentheses(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowParentheses(boolean iAllowed) (Write Only)
@@ -218,7 +210,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def allow_scientific_notation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowScientificNotation(boolean iAllowed) (Write
@@ -248,7 +239,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def enforce_valid_functions(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EnforceValidFunctions(boolean iEnforce) (Write Only)
@@ -275,7 +265,6 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
     def substitute_variable(self, i_bm_var: OLPVariable, i_nrl_var: OLPAstNode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteVariable(OlpVariable iBMVar,OlpAstNode iNRLVar)
@@ -303,4 +292,4 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         return self.com_object.SubsituteVariable(i_bm_var.com_object, i_nrl_var.com_object)
 
     def __repr__(self):
-        return f'OLPExpressionFixerDownload(name="{ self.name }")'
+        return f'OLPExpressionFixerDownload(name="{self.name}")'

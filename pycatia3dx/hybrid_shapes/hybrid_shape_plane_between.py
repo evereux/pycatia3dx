@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneBetween(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -41,7 +39,6 @@ class HybridShapePlaneBetween(Plane):
     def first_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElement() As Reference
@@ -72,7 +69,6 @@ class HybridShapePlaneBetween(Plane):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -103,7 +99,6 @@ class HybridShapePlaneBetween(Plane):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Ratio() As RealParam (Read Only)
@@ -126,7 +121,6 @@ class HybridShapePlaneBetween(Plane):
     def second_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElement() As Reference
@@ -154,4 +148,4 @@ class HybridShapePlaneBetween(Plane):
         self.com_object.SecondElement = value
 
     def __repr__(self):
-        return f'HybridShapePlaneBetween(name="{ self.name }")'
+        return f'HybridShapePlaneBetween(name="{self.name}")'

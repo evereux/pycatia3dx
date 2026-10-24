@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeWrapCurve(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -55,7 +53,6 @@ class HybridShapeWrapCurve(HybridShape):
     def first_curves_constraint(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstCurvesConstraint() As long
@@ -87,7 +84,6 @@ class HybridShapeWrapCurve(HybridShape):
     def last_curves_constraint(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property LastCurvesConstraint() As long
@@ -120,7 +116,6 @@ class HybridShapeWrapCurve(HybridShape):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Surface() As Reference
@@ -149,7 +144,6 @@ class HybridShapeWrapCurve(HybridShape):
     def get_curves(self, i_position: int, o_reference_curve: Reference, o_target_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetCurves(long iPosition,Reference oReferenceCurve,Reference
@@ -187,7 +181,6 @@ class HybridShapeWrapCurve(HybridShape):
     def get_number_of_curves(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNumberOfCurves() As long
@@ -210,7 +203,6 @@ class HybridShapeWrapCurve(HybridShape):
     def get_reference_direction(self, o_direction_type: int, o_direction: HybridShapeDirection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetReferenceDirection(long oDirectionType,HybridShapeDirection
@@ -245,7 +237,6 @@ class HybridShapeWrapCurve(HybridShape):
     def get_reference_spine(self, o_spine_type: int, o_spine: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetReferenceSpine(long oSpineType,Reference oSpine)
@@ -278,7 +269,6 @@ class HybridShapeWrapCurve(HybridShape):
     def insert_curves(self, i_position: int, i_reference_curve: Reference, i_target_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertCurves(long iPosition,Reference iReferenceCurve,Reference
@@ -319,7 +309,6 @@ class HybridShapeWrapCurve(HybridShape):
     def insert_reference_curve(self, i_position: int, i_reference_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertReferenceCurve(long iPosition,Reference
@@ -353,7 +342,6 @@ class HybridShapeWrapCurve(HybridShape):
     def remove_curves(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveCurves(long iPosition)
@@ -382,7 +370,6 @@ class HybridShapeWrapCurve(HybridShape):
     def set_reference_direction(self, i_direction: HybridShapeDirection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetReferenceDirection(HybridShapeDirection iDirection)
@@ -408,7 +395,6 @@ class HybridShapeWrapCurve(HybridShape):
     def set_reference_spine(self, i_spine: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetReferenceSpine(Reference iSpine)
@@ -433,4 +419,4 @@ class HybridShapeWrapCurve(HybridShape):
         return self.com_object.SetReferenceSpine(i_spine.com_object)
 
     def __repr__(self):
-        return f'HybridShapeWrapCurve(name="{ self.name }")'
+        return f'HybridShapeWrapCurve(name="{self.name}")'

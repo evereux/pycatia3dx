@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimHistoryPlot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,7 +56,6 @@ class SimHistoryPlot(AnyObject):
     def activation_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActivationStatus() As boolean
@@ -82,7 +80,6 @@ class SimHistoryPlot(AnyObject):
     def component_quantity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
@@ -107,7 +104,6 @@ class SimHistoryPlot(AnyObject):
     def invariant_quantity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
@@ -132,7 +128,6 @@ class SimHistoryPlot(AnyObject):
     def variable(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variable(CATBSTR icsVariableType) (Write Only)
@@ -155,7 +150,6 @@ class SimHistoryPlot(AnyObject):
     def get_history_curve_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetHistoryCurveList(CATSafeArrayVariant olsHistoryCurves)
@@ -189,7 +183,6 @@ class SimHistoryPlot(AnyObject):
     def get_min_max_values(self, od_min: float, od_max: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinMaxValues(double odMin,double odMax)
@@ -212,7 +205,6 @@ class SimHistoryPlot(AnyObject):
     def set_all_time_based_steps(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAllTimeBasedSteps()
@@ -227,7 +219,6 @@ class SimHistoryPlot(AnyObject):
     def set_complex(self, ie_complex_value: int, i_value_at_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComplex(SimComplexValues ieComplexValue,double
@@ -254,7 +245,6 @@ class SimHistoryPlot(AnyObject):
     def set_step_and_frame(self, ics_persistent_step_id: str, in_frame_index: int, in_load_case_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
@@ -283,7 +273,6 @@ class SimHistoryPlot(AnyObject):
     def set_support(self, ils_regions: tuple, ilnb_sub_region_indices: tuple, ils_sub_regions: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetSupport(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
@@ -333,7 +322,6 @@ class SimHistoryPlot(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -348,7 +336,6 @@ class SimHistoryPlot(AnyObject):
     def update_and_view(self, ib_show_viewer: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UpdateAndView(boolean ibShowViewer)

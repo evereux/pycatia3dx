@@ -13,10 +13,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class RemoveFace(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RemoveFace(DressUpShape):
     def keep_face(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepFace(Reference iKeepFace) (Write Only)
@@ -71,7 +68,6 @@ class RemoveFace(DressUpShape):
     def keep_faces(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepFaces() As References (Read Only)
@@ -86,7 +82,6 @@ class RemoveFace(DressUpShape):
     def propagation(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Propagation() As References (Read Only)
@@ -101,7 +96,6 @@ class RemoveFace(DressUpShape):
     def remove_face(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RemoveFace(Reference iRemoveFace) (Write Only)
@@ -130,7 +124,6 @@ class RemoveFace(DressUpShape):
     def remove_faces(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RemoveFaces() As References (Read Only)
@@ -144,7 +137,6 @@ class RemoveFace(DressUpShape):
     def remove_keep_face(self, i_keep_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub remove_KeepFace(Reference iKeepFace)
@@ -164,7 +156,6 @@ class RemoveFace(DressUpShape):
     def remove_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub remove_RemoveFace(Reference iRemoveFace)
@@ -182,4 +173,4 @@ class RemoveFace(DressUpShape):
         return self.com_object.remove_RemoveFace(i_remove_face.com_object)
 
     def __repr__(self):
-        return f'RemoveFace(name="{ self.name }")'
+        return f'RemoveFace(name="{self.name}")'

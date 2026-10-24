@@ -13,10 +13,8 @@ from pycatia3dx.machining_use.manufacturing_activity import ManufacturingActivit
 
 
 class ManufacturingProgram(ManufacturingActivity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def append_operation(self, i_type: str, i_auto_sequence: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AppendOperation(CATBSTR iType,boolean iAutoSequence) As
@@ -74,7 +71,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def append_operation2(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AppendOperation2(CATBSTR iType) As AnyObject
@@ -97,7 +93,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def get_operations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOperations() As CATSafeArrayVariant
@@ -115,7 +110,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def get_output_nc_rep(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOutputNCRep() As AnyObject
@@ -133,7 +127,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def move_operation(self, i_reference_operation: AnyObject, i_operation_to_move: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveOperation(AnyObject iReferenceOperation,AnyObject
@@ -160,7 +153,6 @@ class ManufacturingProgram(ManufacturingActivity):
     def set_current_authorized_tool(self, i_activity: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrentAuthorizedTool(AnyObject iActivity)
@@ -177,4 +169,4 @@ class ManufacturingProgram(ManufacturingActivity):
         return self.com_object.SetCurrentAuthorizedTool(i_activity.com_object)
 
     def __repr__(self):
-        return f'ManufacturingProgram(name="{ self.name }")'
+        return f'ManufacturingProgram(name="{self.name}")'

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class AxisSystems(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +40,6 @@ class AxisSystems(Collection):
     def add(self) -> AxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Add() As AxisSystem
@@ -66,7 +64,6 @@ class AxisSystems(Collection):
     def item(self, i_index: CATVariant) -> AxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As AxisSystem

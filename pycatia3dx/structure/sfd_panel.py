@@ -27,7 +27,6 @@ from pycatia3dx.structure.str_slots import StrSlots
 class SfdPanel(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -55,7 +54,6 @@ class SfdPanel(AnyObject):
     def panel_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PanelType() As CATStrPanelMode
@@ -81,7 +79,6 @@ class SfdPanel(AnyObject):
     def str_adv_panel(self) -> StrAdvPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrAdvPanel() As StrAdvPanel (Read Only)
@@ -108,7 +105,6 @@ class SfdPanel(AnyObject):
     def str_break(self) -> StrBreak:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrBreak() As StrBreak (Read Only)
@@ -135,7 +131,6 @@ class SfdPanel(AnyObject):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -162,7 +157,6 @@ class SfdPanel(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
@@ -189,7 +183,6 @@ class SfdPanel(AnyObject):
     def str_openings_mgr(self) -> StrOpeningsMgr:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
@@ -216,7 +209,6 @@ class SfdPanel(AnyObject):
     def str_panel_limit_mngt(self) -> StrPanelLimitMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
@@ -243,7 +235,6 @@ class SfdPanel(AnyObject):
     def str_panel_surf(self) -> StrPanelSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPanelSurf() As StrPanelSurf (Read Only)
@@ -272,7 +263,6 @@ class SfdPanel(AnyObject):
     def str_plate_extrusion_mngt(self) -> StrPlateExtrusionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
@@ -301,7 +291,6 @@ class SfdPanel(AnyObject):
     def str_sfd_plates_mngt(self) -> StrSfdPlatesMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSfdPlatesMngt() As StrSfdPlatesMngt (Read Only)
@@ -328,7 +317,6 @@ class SfdPanel(AnyObject):
     def str_sfd_stiffeners(self) -> StrSfdStiffeners:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSfdStiffeners() As StrSfdStiffeners (Read Only)
@@ -355,7 +343,6 @@ class SfdPanel(AnyObject):
     def str_slots(self) -> StrSlots:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSlots() As StrSlots (Read Only)
@@ -378,7 +365,6 @@ class SfdPanel(AnyObject):
     def get_canonic_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCanonicSupport() As Reference
@@ -400,7 +386,6 @@ class SfdPanel(AnyObject):
     def get_delimited_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDelimitedSupport() As Reference
@@ -422,7 +407,6 @@ class SfdPanel(AnyObject):
     def get_openings(self, i_type: int) -> StrOpenings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOpenings(long iType) As StrOpenings

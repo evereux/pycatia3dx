@@ -16,7 +16,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeCurvePar(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -48,7 +47,6 @@ class HybridShapeCurvePar(HybridShape):
     def curve_offset(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurveOffseted() As Reference
@@ -83,7 +81,6 @@ class HybridShapeCurvePar(HybridShape):
     def curve_par_law(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurveParLaw() As Reference
@@ -113,7 +110,6 @@ class HybridShapeCurvePar(HybridShape):
     def curve_par_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurveParType() As long
@@ -148,7 +144,6 @@ class HybridShapeCurvePar(HybridShape):
     def geodesic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Geodesic() As boolean
@@ -182,7 +177,6 @@ class HybridShapeCurvePar(HybridShape):
     def invert_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertDirection() As boolean
@@ -218,7 +212,6 @@ class HybridShapeCurvePar(HybridShape):
     def invert_mapping_law(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertMappingLaw() As boolean
@@ -254,7 +247,6 @@ class HybridShapeCurvePar(HybridShape):
     def keep_both_sides(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property KeepBothSides() As boolean
@@ -287,7 +279,6 @@ class HybridShapeCurvePar(HybridShape):
     def law_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property LawType() As long
@@ -329,7 +320,6 @@ class HybridShapeCurvePar(HybridShape):
     def maximum_deviation_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MaximumDeviationValue() As double
@@ -362,7 +352,6 @@ class HybridShapeCurvePar(HybridShape):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset() As Length (Read Only)
@@ -387,7 +376,6 @@ class HybridShapeCurvePar(HybridShape):
     def offset2(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset2() As Length (Read Only)
@@ -412,7 +400,6 @@ class HybridShapeCurvePar(HybridShape):
     def other_side(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OtherSide() As Reference (Read Only)
@@ -437,7 +424,6 @@ class HybridShapeCurvePar(HybridShape):
     def passing_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PassingPoint() As Reference
@@ -471,7 +457,6 @@ class HybridShapeCurvePar(HybridShape):
     def smoothing_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothingType() As long
@@ -505,7 +490,6 @@ class HybridShapeCurvePar(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -535,7 +519,6 @@ class HybridShapeCurvePar(HybridShape):
     def p_3d_smoothing(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property p3DSmoothing() As boolean
@@ -563,7 +546,6 @@ class HybridShapeCurvePar(HybridShape):
     def get_plane_normal(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
@@ -613,7 +595,6 @@ class HybridShapeCurvePar(HybridShape):
     def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub PutPlaneNormal(CATSafeArrayVariant iNormal)

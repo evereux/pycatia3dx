@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmSpaceInput(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SsmSpaceInput(AnyObject):
     def space_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceElement() As Reference (Read Only)
@@ -60,4 +57,4 @@ class SsmSpaceInput(AnyObject):
         return Reference(self.com_object.SpaceElement)
 
     def __repr__(self):
-        return f'SsmSpaceInput(name="{ self.name }")'
+        return f'SsmSpaceInput(name="{self.name}")'

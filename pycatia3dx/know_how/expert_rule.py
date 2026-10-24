@@ -11,10 +11,8 @@ from pycatia3dx.know_how.expert_rule_runtime import ExpertRuleRuntime
 
 
 class ExpertRule(ExpertRuleRuntime):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class ExpertRule(ExpertRuleRuntime):
     def body(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Body() As CATBSTR
@@ -68,7 +65,6 @@ class ExpertRule(ExpertRuleRuntime):
     def language(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Language() As long
@@ -91,7 +87,6 @@ class ExpertRule(ExpertRuleRuntime):
     def variables(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variables() As CATBSTR
@@ -113,4 +108,4 @@ class ExpertRule(ExpertRuleRuntime):
         self.com_object.Variables = value
 
     def __repr__(self):
-        return f'ExpertRule(name="{ self.name }")'
+        return f'ExpertRule(name="{self.name}")'

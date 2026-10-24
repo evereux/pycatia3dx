@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_choreography_event import OLPChoreographyEve
 
 
 class OLPEventVisibility(OLPChoreographyEvent):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPEventVisibility(OLPChoreographyEvent):
     def duration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Duration() As double
@@ -65,7 +62,6 @@ class OLPEventVisibility(OLPChoreographyEvent):
     def show(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Show() As boolean
@@ -88,7 +84,6 @@ class OLPEventVisibility(OLPChoreographyEvent):
     def add_product_by_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProductByName(CATBSTR iName)
@@ -111,7 +106,6 @@ class OLPEventVisibility(OLPChoreographyEvent):
     def get_product_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProductNames() As CATSafeArrayVariant
@@ -124,7 +118,6 @@ class OLPEventVisibility(OLPChoreographyEvent):
     def remove_product_by_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveProductByName(CATBSTR iName)
@@ -136,4 +129,4 @@ class OLPEventVisibility(OLPChoreographyEvent):
         return self.com_object.RemoveProductByName(i_name)
 
     def __repr__(self):
-        return f'OLPEventVisibility(name="{ self.name }")'
+        return f'OLPEventVisibility(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.plm_access.database_search import DatabaseSearch
 
 
 class SearchService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class SearchService(Service):
     def database_search(self) -> DatabaseSearch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DatabaseSearch() As DatabaseSearch (Read Only)
@@ -61,7 +58,6 @@ class SearchService(Service):
     def title(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Title(CATBSTR iTitle) (Write Only)
@@ -83,7 +79,6 @@ class SearchService(Service):
     def search(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Search()
@@ -94,4 +89,4 @@ class SearchService(Service):
         return self.com_object.Search()
 
     def __repr__(self):
-        return f'SearchService(name="{ self.name }")'
+        return f'SearchService(name="{self.name}")'

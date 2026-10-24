@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTemperature(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimTemperature(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimTemperature(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -114,7 +110,6 @@ class SimTemperature(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScalarField() As SimScalarField (Read Only)
@@ -129,7 +124,6 @@ class SimTemperature(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -145,7 +139,6 @@ class SimTemperature(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitude() As double
@@ -168,7 +161,6 @@ class SimTemperature(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitudeFlag() As boolean (Read Only)
@@ -183,4 +175,4 @@ class SimTemperature(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimTemperature(name="{ self.name }")'
+        return f'SimTemperature(name="{self.name}")'

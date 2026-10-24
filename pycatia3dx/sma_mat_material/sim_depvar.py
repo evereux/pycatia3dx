@@ -13,10 +13,8 @@ from pycatia3dx.sma_mat_material.sim_material_table import SimMaterialTable
 
 
 class SimDepvar(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimDepvar(AnyObject):
     def number_of_solution_dependant_state_variable(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfSolutionDependantStateVariable() As long
@@ -110,7 +107,6 @@ class SimDepvar(AnyObject):
     def solution_dependent_state_variable_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolutionDependentStateVariableTable() As SimMaterialTable (Read
@@ -134,7 +130,6 @@ class SimDepvar(AnyObject):
     def variable_number_controlling_element_deletion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariableNumberControllingElementDeletion() As long
@@ -169,7 +164,6 @@ class SimDepvar(AnyObject):
     def get_solution_dependent_state_variable_table_cell_data(self, i_row: int, i_material_table_column: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSolutionDependentStateVariableTableCellData(long
@@ -195,10 +189,10 @@ class SimDepvar(AnyObject):
         """
         return self.com_object.GetSolutionDependentStateVariableTableCellData(i_row, i_material_table_column)
 
-    def set_solution_dependent_state_variable_table_cell_data(self, i_row: int, i_material_table_column: int, i_variable_name: str) -> None:
+    def set_solution_dependent_state_variable_table_cell_data(self, i_row: int, i_material_table_column: int,
+                                                              i_variable_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSolutionDependentStateVariableTableCellData(long
@@ -223,7 +217,8 @@ class SimDepvar(AnyObject):
         :param str i_variable_name:
         :return: None
         """
-        return self.com_object.SetSolutionDependentStateVariableTableCellData(i_row, i_material_table_column, i_variable_name)
+        return self.com_object.SetSolutionDependentStateVariableTableCellData(i_row, i_material_table_column,
+                                                                              i_variable_name)
 
     def __repr__(self):
-        return f'SimDepvar(name="{ self.name }")'
+        return f'SimDepvar(name="{self.name}")'

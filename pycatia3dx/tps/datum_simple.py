@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 class DatumSimple(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class DatumSimple(AnyObject):
     def label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Label() As CATBSTR
@@ -65,7 +63,6 @@ class DatumSimple(AnyObject):
     def targets(self) -> 'Annotations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Targets() As Annotations (Read Only)

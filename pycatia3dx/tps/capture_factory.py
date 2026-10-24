@@ -13,10 +13,8 @@ from pycatia3dx.tps.capture import Capture
 
 
 class CaptureFactory(Factory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class CaptureFactory(Factory):
     def create_capture(self) -> Capture:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCapture() As Capture
@@ -57,4 +54,4 @@ class CaptureFactory(Factory):
         return Capture(self.com_object.CreateCapture())
 
     def __repr__(self):
-        return f'CaptureFactory(name="{ self.name }")'
+        return f'CaptureFactory(name="{self.name}")'

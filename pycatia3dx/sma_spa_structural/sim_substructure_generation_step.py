@@ -13,10 +13,8 @@ from pycatia3dx.sma_spa_structural.sim_general_global_damping import SimGeneralG
 
 
 class SimSubstructureGenerationStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimSubstructureGenerationStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -103,7 +100,6 @@ class SimSubstructureGenerationStep(SimStep):
     def frequency_for_dependent_properties(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyForDependentProperties() As double
@@ -127,7 +123,6 @@ class SimSubstructureGenerationStep(SimStep):
     def global_damping(self) -> SimGeneralGlobalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalDamping() As SimGeneralGlobalDamping (Read
@@ -143,7 +138,6 @@ class SimSubstructureGenerationStep(SimStep):
     def gravity_load_vectors_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GravityLoadVectorsFlag() As boolean
@@ -169,7 +163,6 @@ class SimSubstructureGenerationStep(SimStep):
     def interface_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterfaceSupport() As CATBaseDispatch (Read Only)
@@ -184,7 +177,6 @@ class SimSubstructureGenerationStep(SimStep):
     def motion_analysis_data_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionAnalysisDataFlag() As boolean
@@ -210,7 +202,6 @@ class SimSubstructureGenerationStep(SimStep):
     def recovery_domain(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RecoveryDomain() As CATBaseDispatch (Read Only)
@@ -225,7 +216,6 @@ class SimSubstructureGenerationStep(SimStep):
     def recovery_domain_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RecoveryDomainFlag() As boolean
@@ -251,7 +241,6 @@ class SimSubstructureGenerationStep(SimStep):
     def reduced_mass_matrix_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReducedMassMatrixFlag() As boolean
@@ -277,7 +266,6 @@ class SimSubstructureGenerationStep(SimStep):
     def reduced_structural_damping_matrix_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReducedStructuralDampingMatrixFlag() As boolean
@@ -303,7 +291,6 @@ class SimSubstructureGenerationStep(SimStep):
     def reduced_viscous_damping_matrix_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReducedViscousDampingMatrixFlag() As boolean
@@ -329,7 +316,6 @@ class SimSubstructureGenerationStep(SimStep):
     def substructure_fem(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubstructureFEM() As CATBaseDispatch (Read Only)
@@ -344,7 +330,6 @@ class SimSubstructureGenerationStep(SimStep):
     def substructure_identifier(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubstructureIdentifier() As long
@@ -367,7 +352,6 @@ class SimSubstructureGenerationStep(SimStep):
     def create_substructure_fem(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSubstructureFEM() As CATBaseDispatch
@@ -380,7 +364,6 @@ class SimSubstructureGenerationStep(SimStep):
     def remove_substructure_fem(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveSubstructureFEM()
@@ -391,4 +374,4 @@ class SimSubstructureGenerationStep(SimStep):
         return self.com_object.RemoveSubstructureFEM()
 
     def __repr__(self):
-        return f'SimSubstructureGenerationStep(name="{ self.name }")'
+        return f'SimSubstructureGenerationStep(name="{self.name}")'

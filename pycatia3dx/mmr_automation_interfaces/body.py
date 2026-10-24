@@ -19,10 +19,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Body(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -50,7 +48,6 @@ class Body(AnyObject):
     def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridBodies() As HybridBodies (Read Only)
@@ -75,7 +72,6 @@ class Body(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridShapes() As HybridShapes (Read Only)
@@ -103,7 +99,6 @@ class Body(AnyObject):
     def in_boolean_operation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property InBooleanOperation() As boolean (Read Only)
@@ -125,7 +120,6 @@ class Body(AnyObject):
     def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
@@ -149,7 +143,6 @@ class Body(AnyObject):
     def shapes(self) -> Shapes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Shapes() As Shapes (Read Only)
@@ -176,7 +169,6 @@ class Body(AnyObject):
     def sketches(self) -> Sketches:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Sketches() As Sketches (Read Only)
@@ -201,7 +193,6 @@ class Body(AnyObject):
     def insert_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub InsertHybridShape(HybridShape iHybridShape)
@@ -224,4 +215,4 @@ class Body(AnyObject):
         return self.com_object.InsertHybridShape(i_hybrid_shape.com_object)
 
     def __repr__(self):
-        return f'Body(name="{ self.name }")'
+        return f'Body(name="{self.name}")'

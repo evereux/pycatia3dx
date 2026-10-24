@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivityToolPath(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingActivityToolPath(AnyObject):
     def compute_and_set_tool_path(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeAndSetToolPath()
@@ -48,4 +45,4 @@ class ManufacturingActivityToolPath(AnyObject):
         return self.com_object.ComputeAndSetToolPath()
 
     def __repr__(self):
-        return f'ManufacturingActivityToolPath(name="{ self.name }")'
+        return f'ManufacturingActivityToolPath(name="{self.name}")'

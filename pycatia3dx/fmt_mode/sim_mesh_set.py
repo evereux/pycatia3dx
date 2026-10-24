@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimMeshSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimMeshSet(AnyObject):
     def mesh_parts(self) -> SimMeshParts:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MeshParts() As SimMeshParts (Read Only)
@@ -51,7 +49,6 @@ class SimMeshSet(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

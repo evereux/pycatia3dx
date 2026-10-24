@@ -21,7 +21,6 @@ if TYPE_CHECKING:
 class VPMOccurrence(PLMOccurrence):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class VPMOccurrence(PLMOccurrence):
     def instance_occurrence_of(self) -> VPMInstance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InstanceOccurrenceOf() As VPMInstance (Read Only)
@@ -71,7 +69,6 @@ class VPMOccurrence(PLMOccurrence):
     def occurrences(self) -> 'VPMOccurrences':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Occurrences() As VPMOccurrences (Read Only)
@@ -100,7 +97,6 @@ class VPMOccurrence(PLMOccurrence):
     def position(self) -> Position:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Position() As Position (Read Only)
@@ -127,7 +123,6 @@ class VPMOccurrence(PLMOccurrence):
     def rep_occurrences(self) -> VPMRepOccurrences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RepOccurrences() As VPMRepOccurrences (Read Only)

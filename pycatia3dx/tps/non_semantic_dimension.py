@@ -13,10 +13,8 @@ from pycatia3dx.tps.dimension_limit import DimensionLimit
 
 
 class NonSemanticDimension(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class NonSemanticDimension(AnyObject):
     def dimension_limit(self) -> DimensionLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DimensionLimit() As DimensionLimit
@@ -56,7 +53,6 @@ class NonSemanticDimension(AnyObject):
     def get2d_annot(self) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get2dAnnot() As DrawingDimension
@@ -74,7 +70,6 @@ class NonSemanticDimension(AnyObject):
     def has_dimension_limit(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasDimensionLimit() As boolean
@@ -92,4 +87,4 @@ class NonSemanticDimension(AnyObject):
         return self.com_object.HasDimensionLimit()
 
     def __repr__(self):
-        return f'NonSemanticDimension(name="{ self.name }")'
+        return f'NonSemanticDimension(name="{self.name}")'

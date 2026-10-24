@@ -14,10 +14,8 @@ from pycatia3dx.sma_mat_material.sim_material_options import SimMaterialOptions
 
 
 class SimMaterialDomain(MaterialDomainContent):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def behaviors(self) -> SimMaterialBehaviors:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Behaviors() As SimMaterialBehaviors (Read Only)
@@ -69,7 +66,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def default_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefaultBehavior() As CATBaseDispatch
@@ -92,7 +88,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def material(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Material() As CATBaseDispatch (Read Only)
@@ -107,7 +102,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def options(self) -> SimMaterialOptions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Options() As SimMaterialOptions (Read Only)
@@ -121,7 +115,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def duplicate_and_add_material_option(self, ip_mat_option_source: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DuplicateAndAddMaterialOption(CATBaseDispatch ipMatOptionSource) As
@@ -145,7 +138,6 @@ class SimMaterialDomain(MaterialDomainContent):
     def sync_all_behaviors(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SyncAllBehaviors()
@@ -160,4 +152,4 @@ class SimMaterialDomain(MaterialDomainContent):
         return self.com_object.SyncAllBehaviors()
 
     def __repr__(self):
-        return f'SimMaterialDomain(name="{ self.name }")'
+        return f'SimMaterialDomain(name="{self.name}")'

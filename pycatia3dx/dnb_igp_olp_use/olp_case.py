@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPCase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPCase(AnyObject):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -58,7 +55,6 @@ class OLPCase(AnyObject):
     def values(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Values() As OlpAstBranch
@@ -85,4 +81,4 @@ class OLPCase(AnyObject):
         self.com_object.Values = value
 
     def __repr__(self):
-        return f'OLPCase(name="{ self.name }")'
+        return f'OLPCase(name="{self.name}")'

@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeIntegratedLaw(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def advanced_law(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AdvancedLaw() As Reference
@@ -82,7 +79,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def end_param(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndParam() As Length (Read Only)
@@ -107,7 +103,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def implicit_law_interpolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ImplicitLawInterpolationMode() As long
@@ -139,7 +134,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def invert_mapping_law(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertMappingLaw() As boolean
@@ -171,7 +165,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def pitch_law_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PitchLawType() As long
@@ -202,7 +195,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def spine(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Spine() As Reference
@@ -236,7 +228,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def start_param(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartParam() As Length (Read Only)
@@ -260,7 +251,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def append_new_point_and_param(self, i_point: Reference, i_param: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AppendNewPointAndParam(Reference iPoint,long iParam)
@@ -283,7 +273,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def get_point_and_param(self, i_pos: int, o_point: Reference, o_param: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPointAndParam(long iPos,Reference oPoint,Reference
@@ -311,7 +300,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def get_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSize() As long
@@ -330,7 +318,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def remove_all_points_and_params(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllPointsAndParams()
@@ -344,7 +331,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def remove_point_and_param(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemovePointAndParam(Reference iPoint)
@@ -363,7 +349,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def set_end_param(self, i_end_param: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetEndParam(long iEndParam)
@@ -383,7 +368,6 @@ class HybridShapeIntegratedLaw(HybridShape):
     def set_start_param(self, i_start_param: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartParam(long iStartParam)
@@ -401,4 +385,4 @@ class HybridShapeIntegratedLaw(HybridShape):
         return self.com_object.SetStartParam(i_start_param)
 
     def __repr__(self):
-        return f'HybridShapeIntegratedLaw(name="{ self.name }")'
+        return f'HybridShapeIntegratedLaw(name="{self.name}")'

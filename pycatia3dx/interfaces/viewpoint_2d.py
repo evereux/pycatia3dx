@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ViewPoint2D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -41,7 +40,6 @@ class ViewPoint2D(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Zoom() As double
@@ -75,7 +73,6 @@ class ViewPoint2D(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -111,7 +108,6 @@ class ViewPoint2D(AnyObject):
     def put_origin(self, o_origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutOrigin(CATSafeArrayVariant oOrigin)

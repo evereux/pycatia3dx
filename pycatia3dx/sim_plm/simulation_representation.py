@@ -13,10 +13,8 @@ from pycatia3dx.sim_plm.simulation_object import SimulationObject
 
 
 class SimulationRepresentation(SimulationObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class SimulationRepresentation(SimulationObject):
     def root(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Root() As AnyObject (Read Only)
@@ -69,4 +66,4 @@ class SimulationRepresentation(SimulationObject):
         return AnyObject(self.com_object.Root)
 
     def __repr__(self):
-        return f'SimulationRepresentation(name="{ self.name }")'
+        return f'SimulationRepresentation(name="{self.name}")'

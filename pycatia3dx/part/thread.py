@@ -14,10 +14,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Thread(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class Thread(DressUpShape):
     def depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Depth() As double
@@ -75,7 +72,6 @@ class Thread(DressUpShape):
     def diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Diameter() As double
@@ -107,7 +103,6 @@ class Thread(DressUpShape):
     def lateral_face_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LateralFaceElement() As Reference
@@ -131,7 +126,6 @@ class Thread(DressUpShape):
     def limit_face_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitFaceElement() As Reference
@@ -155,7 +149,6 @@ class Thread(DressUpShape):
     def pitch(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Pitch() As double
@@ -187,7 +180,6 @@ class Thread(DressUpShape):
     def side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Side() As CatThreadSide
@@ -220,7 +212,6 @@ class Thread(DressUpShape):
     def support_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportDepth() As double (Read Only)
@@ -244,7 +235,6 @@ class Thread(DressUpShape):
     def support_diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportDiameter() As double (Read Only)
@@ -269,7 +259,6 @@ class Thread(DressUpShape):
     def thread_description(self) -> StrParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThreadDescription() As StrParam (Read Only)
@@ -294,7 +283,6 @@ class Thread(DressUpShape):
     def create_standard_thread_design_table(self, i_standard_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateStandardThreadDesignTable(CatThreadStandard
@@ -322,7 +310,6 @@ class Thread(DressUpShape):
     def create_user_standard_design_table(self, i_standard_name: str, i_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateUserStandardDesignTable(CATBSTR iStandardName,CATBSTR
@@ -363,7 +350,6 @@ class Thread(DressUpShape):
     def reverse_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseDirection()
@@ -376,7 +362,6 @@ class Thread(DressUpShape):
     def set_explicit_polarity(self, i_thread_polarity: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExplicitPolarity(CatThreadPolarity iThreadPolarity)
@@ -401,4 +386,4 @@ class Thread(DressUpShape):
         return self.com_object.SetExplicitPolarity(i_thread_polarity)
 
     def __repr__(self):
-        return f'Thread(name="{ self.name }")'
+        return f'Thread(name="{self.name}")'

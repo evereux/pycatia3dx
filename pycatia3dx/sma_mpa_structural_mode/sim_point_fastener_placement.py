@@ -15,10 +15,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimPointFastenerPlacement(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def application(self) -> Application:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Application() As Application (Read Only)
@@ -54,7 +51,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -69,7 +65,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Clearance() As double
@@ -92,7 +87,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def distribution_option_on_lines(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DistributionOptionOnLines() As
@@ -116,7 +110,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def fastener_placement_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FastenerPlacementMethod() As
@@ -140,7 +133,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Name() As CATBSTR
@@ -162,7 +154,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def number_of_fasteners_along_lines(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfFastenersAlongLines() As long
@@ -185,7 +176,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def number_of_point_coordinates(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfPointCoordinates() As long
@@ -208,7 +198,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def parent(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parent() As CATBaseDispatch (Read Only)
@@ -222,7 +211,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def point_spacing_along_lines(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointSpacingAlongLines() As double
@@ -246,7 +234,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def points_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointsCoordinates() As CATSafeArrayVariant
@@ -268,7 +255,6 @@ class SimPointFastenerPlacement(CATBaseDispatch):
     def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetItem(CATBSTR IDName) As CATBaseDispatch
@@ -279,4 +265,4 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         return self.com_object.GetItem(id_name)
 
     def __repr__(self):
-        return f'SimPointFastenerPlacement(name="{ self.name }")'
+        return f'SimPointFastenerPlacement(name="{self.name}")'

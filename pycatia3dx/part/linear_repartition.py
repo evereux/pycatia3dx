@@ -13,10 +13,8 @@ from pycatia3dx.part.repartition import Repartition
 
 
 class LinearRepartition(Repartition):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class LinearRepartition(Repartition):
     def spacing(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Spacing() As Length (Read Only)
@@ -66,4 +63,4 @@ class LinearRepartition(Repartition):
         return Length(self.com_object.Spacing)
 
     def __repr__(self):
-        return f'LinearRepartition(name="{ self.name }")'
+        return f'LinearRepartition(name="{self.name}")'

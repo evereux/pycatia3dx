@@ -12,10 +12,8 @@ from pycatia3dx.part.prism import Prism
 
 
 class Pad(Prism):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,4 +39,4 @@ class Pad(Prism):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Pad(name="{ self.name }")'
+        return f'Pad(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.product_structure_client.vpm_rep_reference import VPMRepReferenc
 class SimRepServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SimRepServices(Service):
     def duplicate_rep(self, i_rep_to_duplicate: VPMRepReference, i_dup_string: str, i_mcx_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DuplicateRep(VPMRepReference iRepToDuplicate,CATBSTR
@@ -64,7 +62,6 @@ class SimRepServices(Service):
     def is_loaded(self, i_rep_reference: VPMRepReference) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsLoaded(VPMRepReference iRepReference) As boolean
@@ -87,7 +84,6 @@ class SimRepServices(Service):
     def load_rep(self, i_rep_reference: VPMRepReference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LoadRep(VPMRepReference iRepReference)
@@ -106,7 +102,6 @@ class SimRepServices(Service):
     def unload_rep(self, i_rep_reference: VPMRepReference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnloadRep(VPMRepReference iRepReference)

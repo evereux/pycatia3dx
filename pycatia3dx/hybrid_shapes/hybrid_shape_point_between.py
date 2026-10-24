@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointBetween(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -51,7 +49,6 @@ class HybridShapePointBetween(Point):
     def first_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstPoint() As Reference
@@ -82,7 +79,6 @@ class HybridShapePointBetween(Point):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -113,7 +109,6 @@ class HybridShapePointBetween(Point):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Ratio() As RealParam (Read Only)
@@ -136,7 +131,6 @@ class HybridShapePointBetween(Point):
     def second_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondPoint() As Reference
@@ -167,7 +161,6 @@ class HybridShapePointBetween(Point):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -199,4 +192,4 @@ class HybridShapePointBetween(Point):
         self.com_object.Support = value
 
     def __repr__(self):
-        return f'HybridShapePointBetween(name="{ self.name }")'
+        return f'HybridShapePointBetween(name="{self.name}")'

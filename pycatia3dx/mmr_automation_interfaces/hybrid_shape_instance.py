@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class HybridShapeInstance(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +39,6 @@ class HybridShapeInstance(HybridShape):
     def inputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property InputsCount() As long (Read Only)
@@ -62,7 +59,6 @@ class HybridShapeInstance(HybridShape):
     def outputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OutputsCount() As long (Read Only)
@@ -83,7 +79,6 @@ class HybridShapeInstance(HybridShape):
     def parameters_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ParametersCount() As long (Read Only)
@@ -103,7 +98,6 @@ class HybridShapeInstance(HybridShape):
     def get_input(self, i_index: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInput(CATBSTR iIndex) As AnyObject
@@ -133,7 +127,6 @@ class HybridShapeInstance(HybridShape):
     def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputData(CATBSTR iName) As CATBaseDispatch
@@ -163,7 +156,6 @@ class HybridShapeInstance(HybridShape):
     def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputDataFromPosition(long iPosition) As
@@ -194,7 +186,6 @@ class HybridShapeInstance(HybridShape):
     def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputFromPosition(long iPosition) As AnyObject
@@ -224,7 +215,6 @@ class HybridShapeInstance(HybridShape):
     def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetOutput(CATBSTR iName) As AnyObject
@@ -254,7 +244,6 @@ class HybridShapeInstance(HybridShape):
     def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetOutputFromPosition(long iPosition) As AnyObject
@@ -284,7 +273,6 @@ class HybridShapeInstance(HybridShape):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParameter(CATBSTR iName) As AnyObject
@@ -315,7 +303,6 @@ class HybridShapeInstance(HybridShape):
     def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParameterFromPosition(long iPosition) As AnyObject
@@ -346,7 +333,6 @@ class HybridShapeInstance(HybridShape):
     def put_input(self, i_index: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutInput(CATBSTR iIndex,AnyObject iInput)
@@ -377,7 +363,6 @@ class HybridShapeInstance(HybridShape):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutInputData(CATBSTR iName,CATBaseDispatch iInput)
@@ -406,4 +391,4 @@ class HybridShapeInstance(HybridShape):
         return self.com_object.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'HybridShapeInstance(name="{ self.name }")'
+        return f'HybridShapeInstance(name="{self.name}")'

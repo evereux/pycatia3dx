@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCastingControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimCastingControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -91,7 +88,6 @@ class SimCastingControl(AnyObject):
     def plane(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Plane() As CATBaseDispatch (Read Only)
@@ -106,7 +102,6 @@ class SimCastingControl(AnyObject):
     def prevent_material_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreventMaterialRemovalFlag() As boolean
@@ -131,7 +126,6 @@ class SimCastingControl(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimCastingControlType
@@ -151,4 +145,4 @@ class SimCastingControl(AnyObject):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'SimCastingControl(name="{ self.name }")'
+        return f'SimCastingControl(name="{self.name}")'

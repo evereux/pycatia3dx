@@ -12,10 +12,8 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class TransformationShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,4 +39,4 @@ class TransformationShape(Shape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'TransformationShape(name="{ self.name }")'
+        return f'TransformationShape(name="{self.name}")'

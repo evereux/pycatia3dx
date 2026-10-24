@@ -15,10 +15,8 @@ from pycatia3dx.sde.ssm_space_systems import SsmSpaceSystems
 
 
 class SsmSpaceRoot(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class SsmSpaceRoot(AnyObject):
     def space_concept_roots(self) -> SsmSpaceConceptRoots:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceConceptRoots() As SsmSpaceConceptRoots (Read
@@ -62,7 +59,6 @@ class SsmSpaceRoot(AnyObject):
     def space_folder(self) -> SsmSpaceFolder:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceFolder() As SsmSpaceFolder (Read Only)
@@ -85,7 +81,6 @@ class SsmSpaceRoot(AnyObject):
     def space_systems(self) -> SsmSpaceSystems:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceSystems() As SsmSpaceSystems (Read Only)
@@ -102,4 +97,4 @@ class SsmSpaceRoot(AnyObject):
         return SsmSpaceSystems(self.com_object.SpaceSystems)
 
     def __repr__(self):
-        return f'SsmSpaceRoot(name="{ self.name }")'
+        return f'SsmSpaceRoot(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class MacrosSettingAtt(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -37,7 +36,6 @@ class MacrosSettingAtt(SettingController):
     def get_default_macro_libraries(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDefaultMacroLibraries() As CATSafeArrayVariant
@@ -50,7 +48,6 @@ class MacrosSettingAtt(SettingController):
     def get_default_macro_libraries_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDefaultMacroLibrariesInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -84,7 +81,6 @@ class MacrosSettingAtt(SettingController):
     def get_external_references(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetExternalReferences() As CATSafeArrayVariant
@@ -97,7 +93,6 @@ class MacrosSettingAtt(SettingController):
     def get_external_references_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetExternalReferencesInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -131,7 +126,6 @@ class MacrosSettingAtt(SettingController):
     def get_language_editor(self, i_language: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLanguageEditor(CATScriptLanguage iLanguage) As CATBSTR
@@ -145,7 +139,6 @@ class MacrosSettingAtt(SettingController):
     def get_language_editor_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLanguageEditorInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -179,7 +172,6 @@ class MacrosSettingAtt(SettingController):
     def set_default_macro_libraries(self, i_libraries: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetDefaultMacroLibraries(CATSafeArrayVariant iLibraries)
@@ -209,7 +201,6 @@ class MacrosSettingAtt(SettingController):
     def set_default_macro_libraries_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetDefaultMacroLibrariesLock(boolean iLocked)
@@ -234,7 +225,6 @@ class MacrosSettingAtt(SettingController):
     def set_external_references(self, i_references: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetExternalReferences(CATSafeArrayVariant iReferences)
@@ -264,7 +254,6 @@ class MacrosSettingAtt(SettingController):
     def set_external_references_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetExternalReferencesLock(boolean iLocked)
@@ -289,7 +278,6 @@ class MacrosSettingAtt(SettingController):
     def set_language_editor(self, i_language: int, i_editor_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLanguageEditor(CATScriptLanguage iLanguage,CATBSTR
@@ -305,7 +293,6 @@ class MacrosSettingAtt(SettingController):
     def set_language_editor_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLanguageEditorLock(boolean iLocked)

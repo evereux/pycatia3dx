@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialStress(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimInitialStress(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimInitialStress(AnyObject):
     def rebar_prestress(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RebarPrestress() As double
@@ -121,7 +117,6 @@ class SimInitialStress(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -137,7 +132,6 @@ class SimInitialStress(AnyObject):
     def stress_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StressType() As SimInitialStressType
@@ -160,7 +154,6 @@ class SimInitialStress(AnyObject):
     def tensor_field(self) -> SimSymmetricTensorField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TensorField() As SimSymmetricTensorField (Read Only)
@@ -175,7 +168,6 @@ class SimInitialStress(AnyObject):
     def uniform_tensor_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformTensorFlag() As boolean (Read Only)
@@ -196,10 +188,10 @@ class SimInitialStress(AnyObject):
 
         return self.com_object.UniformTensorFlag
 
-    def get_uniform_tensor_components(self, o_sigma11: float, o_sigma22: float, o_sigma33: float, o_sigma12: float, o_sigma13: float, o_sigma23: float) -> None:
+    def get_uniform_tensor_components(self, o_sigma11: float, o_sigma22: float, o_sigma33: float, o_sigma12: float,
+                                      o_sigma13: float, o_sigma23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetUniformTensorComponents(double oSigma11,double oSigma22,double
@@ -240,12 +232,13 @@ class SimInitialStress(AnyObject):
         :param float o_sigma23:
         :return: None
         """
-        return self.com_object.GetUniformTensorComponents(o_sigma11, o_sigma22, o_sigma33, o_sigma12, o_sigma13, o_sigma23)
+        return self.com_object.GetUniformTensorComponents(o_sigma11, o_sigma22, o_sigma33, o_sigma12, o_sigma13,
+                                                          o_sigma23)
 
-    def set_uniform_tensor_components(self, i_sigma11: float, i_sigma22: float, i_sigma33: float, i_sigma12: float, i_sigma13: float, i_sigma23: float) -> None:
+    def set_uniform_tensor_components(self, i_sigma11: float, i_sigma22: float, i_sigma33: float, i_sigma12: float,
+                                      i_sigma13: float, i_sigma23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUniformTensorComponents(double iSigma11,double iSigma22,double
@@ -286,7 +279,8 @@ class SimInitialStress(AnyObject):
         :param float i_sigma23:
         :return: None
         """
-        return self.com_object.SetUniformTensorComponents(i_sigma11, i_sigma22, i_sigma33, i_sigma12, i_sigma13, i_sigma23)
+        return self.com_object.SetUniformTensorComponents(i_sigma11, i_sigma22, i_sigma33, i_sigma12, i_sigma13,
+                                                          i_sigma23)
 
     def __repr__(self):
-        return f'SimInitialStress(name="{ self.name }")'
+        return f'SimInitialStress(name="{self.name}")'

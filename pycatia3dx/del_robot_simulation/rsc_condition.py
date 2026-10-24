@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscCondition(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscCondition(RscInstruction):
     def condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition() As CATBSTR
@@ -92,7 +89,6 @@ class RscCondition(RscInstruction):
     def else_sequence(self) -> RscInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElseSequence() As RscInstruction (Read Only)
@@ -128,7 +124,6 @@ class RscCondition(RscInstruction):
     def then_sequence(self) -> RscInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThenSequence() As RscInstruction (Read Only)
@@ -161,4 +156,4 @@ class RscCondition(RscInstruction):
         return RscInstruction(self.com_object.ThenSequence)
 
     def __repr__(self):
-        return f'RscCondition(name="{ self.name }")'
+        return f'RscCondition(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 
 
 class EnumParam(Parameter):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +40,6 @@ class EnumParam(Parameter):
     def value_enum(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ValueEnum() As CATBSTR
@@ -72,4 +69,4 @@ class EnumParam(Parameter):
         self.com_object.ValueEnum = value
 
     def __repr__(self):
-        return f'EnumParam(name="{ self.name }")'
+        return f'EnumParam(name="{self.name}")'

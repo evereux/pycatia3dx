@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrNavigate(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrNavigate(AnyObject):
     def get_children(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetChildren() As References
@@ -60,7 +57,6 @@ class StrNavigate(AnyObject):
     def get_parents(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParents() As References
@@ -84,4 +80,4 @@ class StrNavigate(AnyObject):
         return References(self.com_object.GetParents())
 
     def __repr__(self):
-        return f'StrNavigate(name="{ self.name }")'
+        return f'StrNavigate(name="{self.name}")'

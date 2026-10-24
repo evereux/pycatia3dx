@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmCurveSamplerDistance(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class CtmCurveSamplerDistance(AnyObject):
     def distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Distance() As double
@@ -80,7 +77,6 @@ class CtmCurveSamplerDistance(AnyObject):
     def sag(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sag() As double
@@ -117,4 +113,4 @@ class CtmCurveSamplerDistance(AnyObject):
         self.com_object.Sag = value
 
     def __repr__(self):
-        return f'CtmCurveSamplerDistance(name="{ self.name }")'
+        return f'CtmCurveSamplerDistance(name="{self.name}")'

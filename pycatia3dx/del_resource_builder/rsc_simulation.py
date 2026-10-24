@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class RscSimulation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +74,6 @@ class RscSimulation(AnyObject):
     def all_posture_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllPostureNames() As CATSafeArrayVariant (Read Only)
@@ -104,7 +102,6 @@ class RscSimulation(AnyObject):
     def all_tool_profile_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllToolProfileNames() As CATSafeArrayVariant (Read
@@ -134,7 +131,6 @@ class RscSimulation(AnyObject):
     def can_be_simulated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CanBeSimulated() As boolean (Read Only)
@@ -160,7 +156,6 @@ class RscSimulation(AnyObject):
     def current_posture(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentPosture() As CATBSTR
@@ -191,7 +186,6 @@ class RscSimulation(AnyObject):
     def current_tool_profile(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentToolProfile() As CATBSTR
@@ -224,7 +218,6 @@ class RscSimulation(AnyObject):
     def simulated_dof_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SimulatedDOFCount() As long (Read Only)
@@ -246,7 +239,6 @@ class RscSimulation(AnyObject):
     def simulation_state(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SimulationState() As DELRscSimulationStatus (Read
@@ -273,7 +265,6 @@ class RscSimulation(AnyObject):
     def simulation_visualization_update(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SimulationVisualizationUpdate() As
@@ -307,7 +298,6 @@ class RscSimulation(AnyObject):
     def specific_dof_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecificDOFCount() As long (Read Only)
@@ -332,7 +322,6 @@ class RscSimulation(AnyObject):
     def support_ik(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportIK() As boolean (Read Only)
@@ -353,7 +342,6 @@ class RscSimulation(AnyObject):
     def finalize(self, i_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Finalize(long iMode)
@@ -377,7 +365,6 @@ class RscSimulation(AnyObject):
     def get_base_part(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBasePart() As AnyObject
@@ -401,7 +388,6 @@ class RscSimulation(AnyObject):
     def get_dof_limits(self, i_dof_index: int, o_lower: float, o_upper: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDOFLimits(long iDOFIndex,double oLower,double oUpper)
@@ -430,7 +416,6 @@ class RscSimulation(AnyObject):
     def get_dof_type(self, i_dof_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDOFType(long iDOFIndex) As DELRscJointType
@@ -455,7 +440,6 @@ class RscSimulation(AnyObject):
     def get_dof_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDOFValues() As CATSafeArrayVariant
@@ -488,7 +472,6 @@ class RscSimulation(AnyObject):
     def get_fixed_part(self, i_local: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFixedPart(long iLocal) As AnyObject
@@ -516,7 +499,6 @@ class RscSimulation(AnyObject):
     def get_mount_location(self) -> RscTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMountLocation() As RscTransform
@@ -538,7 +520,6 @@ class RscSimulation(AnyObject):
     def get_mount_offset(self) -> RscTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMountOffset() As RscTransform
@@ -561,7 +542,6 @@ class RscSimulation(AnyObject):
     def get_mount_part(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMountPart() As AnyObject
@@ -585,7 +565,6 @@ class RscSimulation(AnyObject):
     def get_related_simulated_resource_dof_count(self, i_related_resource: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRelatedSimulatedResourceDOFCount(AnyObject iRelatedResource) As
@@ -626,7 +605,6 @@ class RscSimulation(AnyObject):
     def get_related_simulated_resources_count(self, i_type: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRelatedSimulatedResourcesCount(DELRscMotionControllerType iType) As
@@ -661,7 +639,6 @@ class RscSimulation(AnyObject):
     def get_related_simulated_resources_objects(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRelatedSimulatedResourcesObjects(DELRscMotionControllerType iType) As
@@ -701,7 +678,6 @@ class RscSimulation(AnyObject):
     def get_specific_dof_limits(self, i_dof_index: int, o_lower: float, o_upper: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSpecificDOFLimits(long iDOFIndex,double oLower,double
@@ -731,7 +707,6 @@ class RscSimulation(AnyObject):
     def get_specific_dof_type(self, i_dof_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSpecificDOFType(long iDOFIndex) As DELRscJointType
@@ -756,7 +731,6 @@ class RscSimulation(AnyObject):
     def get_specific_dof_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSpecificDOFValues() As CATSafeArrayVariant
@@ -776,7 +750,6 @@ class RscSimulation(AnyObject):
     def get_tcp_values(self) -> RscTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPValues() As RscTransform
@@ -795,7 +768,6 @@ class RscSimulation(AnyObject):
     def initialize(self, i_rsc_control_entity: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Initialize(AnyObject iRscControlEntity)
@@ -843,7 +815,6 @@ class RscSimulation(AnyObject):
     def set_dof_values(self, i_values: tuple) -> DELRscSimulationStatus:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SetDOFValues(CATSafeArrayVariant iValues) As
@@ -921,7 +892,6 @@ class RscSimulation(AnyObject):
     def set_specific_dof_values(self, i_values: tuple) -> DELRscSimulationStatus:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SetSpecificDOFValues(CATSafeArrayVariant iValues) As
@@ -987,7 +957,6 @@ class RscSimulation(AnyObject):
     def set_tcp_values(self, i_values: RscTransform) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SetTCPValues(RscTransform iValues) As
@@ -1015,7 +984,6 @@ class RscSimulation(AnyObject):
     def update_visualization(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UpdateVisualization()

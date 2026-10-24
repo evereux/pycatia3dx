@@ -20,7 +20,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingDimensions(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +48,6 @@ class DrawingDimensions(Collection):
     ) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatDimType iTypeDim,CATSafeArrayVariant iGeomElem,CATSafeArrayVariant
@@ -132,7 +130,6 @@ class DrawingDimensions(Collection):
     ) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add2(CatDimType iTypeDim,CATSafeArrayVariant iGeomElem,CATSafeArrayVariant
@@ -208,7 +205,6 @@ class DrawingDimensions(Collection):
     def item(self, i_index: CATVariant) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingDimension
@@ -253,7 +249,6 @@ class DrawingDimensions(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

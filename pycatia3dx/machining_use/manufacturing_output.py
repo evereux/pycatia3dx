@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingOutput(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingOutput(AnyObject):
     def close_stream(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CloseStream()
@@ -50,7 +47,6 @@ class ManufacturingOutput(AnyObject):
     def flush(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Flush()
@@ -63,7 +59,6 @@ class ManufacturingOutput(AnyObject):
     def new_line(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NewLine()
@@ -76,7 +71,6 @@ class ManufacturingOutput(AnyObject):
     def write_chars(self, i_text: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub write_Chars(CATBSTR iText)
@@ -88,4 +82,4 @@ class ManufacturingOutput(AnyObject):
         return self.com_object.write_Chars(i_text)
 
     def __repr__(self):
-        return f'ManufacturingOutput(name="{ self.name }")'
+        return f'ManufacturingOutput(name="{self.name}")'

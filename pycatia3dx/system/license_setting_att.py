@@ -15,7 +15,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class LicenseSettingAtt(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -51,7 +50,6 @@ class LicenseSettingAtt(SettingController):
     def frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Frequency() As float
@@ -78,7 +76,6 @@ class LicenseSettingAtt(SettingController):
     def nodelock_alert(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property NodelockAlert() As long
@@ -104,7 +101,6 @@ class LicenseSettingAtt(SettingController):
     def server_time_out(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ServerTimeOut() As float
@@ -130,7 +126,6 @@ class LicenseSettingAtt(SettingController):
     def show_license(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ShowLicense() As boolean
@@ -155,7 +150,6 @@ class LicenseSettingAtt(SettingController):
     def get_frequency_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetFrequencyInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -173,7 +167,6 @@ class LicenseSettingAtt(SettingController):
     def get_license(self, i_license: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicense(CATBSTR iLicense) As CATBSTR
@@ -208,7 +201,6 @@ class LicenseSettingAtt(SettingController):
     def get_license_info(self, i_license: str, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicenseInfo(CATBSTR iLicense,CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -226,7 +218,6 @@ class LicenseSettingAtt(SettingController):
     def get_licenses_list(self, i_default_licenses: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicensesList(long iDefaultLicenses) As
@@ -265,7 +256,6 @@ class LicenseSettingAtt(SettingController):
     def get_licenses_list_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicensesListInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -305,7 +295,6 @@ class LicenseSettingAtt(SettingController):
     def get_nodelock_alert_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetNodelockAlertInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -323,7 +312,6 @@ class LicenseSettingAtt(SettingController):
     def get_server_time_out_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetServerTimeOutInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -340,7 +328,6 @@ class LicenseSettingAtt(SettingController):
     def get_show_license_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetShowLicenseInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -358,7 +345,6 @@ class LicenseSettingAtt(SettingController):
     def set_frequency_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetFrequencyLock(boolean iLock)
@@ -373,7 +359,6 @@ class LicenseSettingAtt(SettingController):
     def set_license(self, i_license: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicense(CATBSTR iLicense,CATBSTR iValue)
@@ -405,7 +390,6 @@ class LicenseSettingAtt(SettingController):
     def set_license_lock(self, i_license: str, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicenseLock(CATBSTR iLicense,boolean iLock)
@@ -421,7 +405,6 @@ class LicenseSettingAtt(SettingController):
     def set_licenses_list_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicensesListLock(boolean iLock)
@@ -448,7 +431,6 @@ class LicenseSettingAtt(SettingController):
     def set_nodelock_alert_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetNodelockAlertLock(boolean iLock)
@@ -464,7 +446,6 @@ class LicenseSettingAtt(SettingController):
     def set_server_time_out_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetServerTimeOutLock(boolean iLock)
@@ -479,7 +460,6 @@ class LicenseSettingAtt(SettingController):
     def set_show_license_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetShowLicenseLock(boolean iLock)

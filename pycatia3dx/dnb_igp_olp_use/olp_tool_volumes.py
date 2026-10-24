@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_tool_volume import OLPToolVolume
 class OLPToolVolumes(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class OLPToolVolumes(Collection):
     def create(self) -> OLPToolVolume:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Create() As OlpToolVolume
@@ -58,7 +56,6 @@ class OLPToolVolumes(Collection):
     def delete(self, i_tool_volume: OLPToolVolume) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Delete(OlpToolVolume iToolVolume)
@@ -77,7 +74,6 @@ class OLPToolVolumes(Collection):
     def item(self, i_index: int) -> OLPToolVolume:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpToolVolume

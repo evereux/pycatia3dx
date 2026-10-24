@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class AnnotationSets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class AnnotationSets(Collection):
     def item(self, i_index: CATVariant) -> AnnotationSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As AnyObject
@@ -53,7 +51,6 @@ class AnnotationSets(Collection):
     def load_annotation_sets_list(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LoadAnnotationSetsList()

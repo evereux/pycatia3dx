@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBoltDisplacement(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimBoltDisplacement(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimBoltDisplacement(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -114,7 +110,6 @@ class SimBoltDisplacement(AnyObject):
     def magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Magnitude() As double
@@ -137,7 +132,6 @@ class SimBoltDisplacement(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -150,4 +144,4 @@ class SimBoltDisplacement(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimBoltDisplacement(name="{ self.name }")'
+        return f'SimBoltDisplacement(name="{self.name}")'

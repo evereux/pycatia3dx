@@ -14,10 +14,8 @@ from pycatia3dx.part.fillet import Fillet
 
 
 class FaceFillet(Fillet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class FaceFillet(Fillet):
     def first_face(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstFace() As Reference
@@ -78,7 +75,6 @@ class FaceFillet(Fillet):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Radius() As Length (Read Only)
@@ -99,7 +95,6 @@ class FaceFillet(Fillet):
     def second_face(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondFace() As Reference
@@ -129,4 +124,4 @@ class FaceFillet(Fillet):
         self.com_object.SecondFace = value
 
     def __repr__(self):
-        return f'FaceFillet(name="{ self.name }")'
+        return f'FaceFillet(name="{self.name}")'

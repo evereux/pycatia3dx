@@ -16,7 +16,6 @@ from pycatia3dx.structure.sdd_plates import SddPlates
 class SddSupportPlateMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SddSupportPlateMngt(AnyObject):
     def other_support_plates(self) -> SddPlates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OtherSupportPlates() As SddPlates
@@ -76,7 +74,6 @@ class SddSupportPlateMngt(AnyObject):
     def reference_support_plate(self) -> SddPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceSupportPlate() As SddPlate (Read Only)
@@ -92,7 +89,6 @@ class SddSupportPlateMngt(AnyObject):
     def add_other_support_plate(self, i_sdd_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddOtherSupportPlate(SddPlate iSddPlate)
@@ -112,7 +108,6 @@ class SddSupportPlateMngt(AnyObject):
     def promote_to_reference_plate(self, i_other_support_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PromoteToReferencePlate(SddPlate iOtherSupportPlate)
@@ -133,7 +128,6 @@ class SddSupportPlateMngt(AnyObject):
     def remove_other_support_plate(self, i_sdd_plate: SddPlate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveOtherSupportPlate(SddPlate iSddPlate)

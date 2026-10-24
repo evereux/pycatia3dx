@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_detail_feature import StrDetailFeature
 class StrEndcut(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class StrEndcut(AnyObject):
     def str_detail_feature(self) -> StrDetailFeature:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrDetailFeature() As StrDetailFeature (Read Only)
@@ -57,7 +55,6 @@ class StrEndcut(AnyObject):
     def get_candidate_context(self, i_name: str) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCandidateContext(CATBSTR iName) As Reference
@@ -77,7 +74,6 @@ class StrEndcut(AnyObject):
     def get_extremity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetExtremity() As long

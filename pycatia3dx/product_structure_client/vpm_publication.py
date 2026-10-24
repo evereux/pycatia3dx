@@ -13,7 +13,6 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 class VPMPublication(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 

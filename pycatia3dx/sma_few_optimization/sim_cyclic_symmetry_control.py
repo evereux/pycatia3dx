@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCyclicSymmetryControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimCyclicSymmetryControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -94,7 +91,6 @@ class SimCyclicSymmetryControl(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Line() As SimAxis (Read Only)
@@ -109,7 +105,6 @@ class SimCyclicSymmetryControl(AnyObject):
     def specify_symmetry_plane_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifySymmetryPlaneFlag() As boolean
@@ -134,7 +129,6 @@ class SimCyclicSymmetryControl(AnyObject):
     def start_point(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartPoint() As CATBaseDispatch (Read Only)
@@ -148,7 +142,6 @@ class SimCyclicSymmetryControl(AnyObject):
     def set_num_segments(self, i_num_segements: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNumSegments(long iNumSegements)
@@ -165,4 +158,4 @@ class SimCyclicSymmetryControl(AnyObject):
         return self.com_object.SetNumSegments(i_num_segements)
 
     def __repr__(self):
-        return f'SimCyclicSymmetryControl(name="{ self.name }")'
+        return f'SimCyclicSymmetryControl(name="{self.name}")'

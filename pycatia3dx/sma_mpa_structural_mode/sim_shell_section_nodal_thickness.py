@@ -11,10 +11,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimShellSectionNodalThickness(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class SimShellSectionNodalThickness(CATBaseDispatch):
     def map_thickness_to_nodes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MapThicknessToNodesFlag() As boolean
@@ -75,7 +72,6 @@ class SimShellSectionNodalThickness(CATBaseDispatch):
     def nodal_thickness_map_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NodalThicknessMapFlag() As boolean

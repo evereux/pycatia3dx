@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 class AnalysisLinearElasticDomain(MaterialDomainContent):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
     def domain_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DomainType() As LinearElasticDomainType
@@ -77,7 +75,6 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
     def domain_parameters_check(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DomainParametersCheck()
@@ -96,7 +93,6 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
     def get_domain_parameter(self, i_param_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDomainParameter(CATBSTR iParamName) As CATVariant
@@ -152,7 +148,6 @@ class AnalysisLinearElasticDomain(MaterialDomainContent):
     def set_domain_parameter(self, i_param_name: str, i_param_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDomainParameter(CATBSTR iParamName,CATVariant

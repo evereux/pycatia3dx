@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class RscApplicativeProfilesGroup(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +65,6 @@ class RscApplicativeProfilesGroup(Collection):
     def current_profile(self) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentProfile() As RscApplicativeProfile
@@ -106,7 +104,6 @@ class RscApplicativeProfilesGroup(Collection):
     def profile_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProfileType() As CATBSTR (Read Only)
@@ -131,7 +128,6 @@ class RscApplicativeProfilesGroup(Collection):
     def build_profile_instance(self, i_name: str) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func BuildProfileInstance(CATBSTR iName) As
@@ -165,7 +161,6 @@ class RscApplicativeProfilesGroup(Collection):
     def get_template_profile(self) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTemplateProfile() As RscApplicativeProfile
@@ -192,7 +187,6 @@ class RscApplicativeProfilesGroup(Collection):
     def item(self, i_index: CATVariant) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As RscApplicativeProfile
@@ -242,7 +236,6 @@ class RscApplicativeProfilesGroup(Collection):
     def remove_profile(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveProfile(CATBSTR iName)

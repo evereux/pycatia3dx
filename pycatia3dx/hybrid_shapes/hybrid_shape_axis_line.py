@@ -16,7 +16,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeAxisLine(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -52,7 +51,6 @@ class HybridShapeAxisLine(HybridShape):
     def axis_line_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisLineType() As long
@@ -96,7 +94,6 @@ class HybridShapeAxisLine(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -129,7 +126,6 @@ class HybridShapeAxisLine(HybridShape):
     def element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element() As Reference

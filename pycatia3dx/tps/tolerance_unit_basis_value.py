@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ToleranceUnitBasisValue(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ToleranceUnitBasisValue(AnyObject):
     def set_values(self, i_value1: float, i_value2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValues(double iValue1,double iValue2)
@@ -60,7 +57,6 @@ class ToleranceUnitBasisValue(AnyObject):
     def values(self, o_value1: float, o_value2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Values(double oValue1,double oValue2)
@@ -80,4 +76,4 @@ class ToleranceUnitBasisValue(AnyObject):
         return self.com_object.Values(o_value1, o_value2)
 
     def __repr__(self):
-        return f'ToleranceUnitBasisValue(name="{ self.name }")'
+        return f'ToleranceUnitBasisValue(name="{self.name}")'

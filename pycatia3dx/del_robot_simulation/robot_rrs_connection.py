@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RobotRrsConnection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -64,7 +62,6 @@ class RobotRrsConnection(AnyObject):
     def is_rrs_connected(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsRRSConnected() As boolean (Read Only)
@@ -84,7 +81,6 @@ class RobotRrsConnection(AnyObject):
     def rrs_controller_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RRSControllerType() As CATBSTR (Read Only)
@@ -105,7 +101,6 @@ class RobotRrsConnection(AnyObject):
     def rrs_server_decorated_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RRSServerDecoratedNames() As CATSafeArrayVariant (Read
@@ -134,7 +129,6 @@ class RobotRrsConnection(AnyObject):
     def rrs_server_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RRSServerName() As CATBSTR (Read Only)
@@ -154,7 +148,6 @@ class RobotRrsConnection(AnyObject):
     def using_rrs2_server(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UsingRRS2Server() As boolean (Read Only)
@@ -174,7 +167,6 @@ class RobotRrsConnection(AnyObject):
     def auto_rrs_connect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AutoRRSConnect() As long
@@ -193,7 +185,6 @@ class RobotRrsConnection(AnyObject):
     def chk_rrs_server_type(self, i_rrs_server_decorated_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ChkRRSServerType(CATBSTR iRRSServerDecoratedName) As
@@ -214,10 +205,13 @@ class RobotRrsConnection(AnyObject):
         """
         return self.com_object.ChkRRSServerType(i_rrs_server_decorated_name)
 
-    def rrs1_connect_step1(self, i_rrs_server_decorated_name: str, o_default_robot_number: int, o_min_robot_number: int, o_max_robot_number: int, o_rrs_server_host_name: str, o_rcs_home_directory: str, o_rcs_list_home_directory: tuple, o_default_rcs_home_dir_index: int, o_default_robot_relative_path: str, o_manipulator_list_id: tuple, o_default_manipulator_index: int, o_manipulator_user_selectable: bool) -> int:
+    def rrs1_connect_step1(self, i_rrs_server_decorated_name: str, o_default_robot_number: int, o_min_robot_number: int,
+                           o_max_robot_number: int, o_rrs_server_host_name: str, o_rcs_home_directory: str,
+                           o_rcs_list_home_directory: tuple, o_default_rcs_home_dir_index: int,
+                           o_default_robot_relative_path: str, o_manipulator_list_id: tuple,
+                           o_default_manipulator_index: int, o_manipulator_user_selectable: bool) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRS1ConnectStep1(CATBSTR iRRSServerDecoratedName,long
@@ -279,12 +273,16 @@ class RobotRrsConnection(AnyObject):
         :param bool o_manipulator_user_selectable:
         :return: int
         """
-        return self.com_object.RRS1ConnectStep1(i_rrs_server_decorated_name, o_default_robot_number, o_min_robot_number, o_max_robot_number, o_rrs_server_host_name, o_rcs_home_directory, o_rcs_list_home_directory, o_default_rcs_home_dir_index, o_default_robot_relative_path, o_manipulator_list_id, o_default_manipulator_index, o_manipulator_user_selectable)
+        return self.com_object.RRS1ConnectStep1(i_rrs_server_decorated_name, o_default_robot_number, o_min_robot_number,
+                                                o_max_robot_number, o_rrs_server_host_name, o_rcs_home_directory,
+                                                o_rcs_list_home_directory, o_default_rcs_home_dir_index,
+                                                o_default_robot_relative_path, o_manipulator_list_id,
+                                                o_default_manipulator_index, o_manipulator_user_selectable)
 
-    def rrs1_connect_step2(self, i_robot_number: int, i_rrs_data_home_directory: str, i_relative_robot_path: str, i_manipulator_id: str, ib_initialization_debug_enabled: bool) -> int:
+    def rrs1_connect_step2(self, i_robot_number: int, i_rrs_data_home_directory: str, i_relative_robot_path: str,
+                           i_manipulator_id: str, ib_initialization_debug_enabled: bool) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRS1ConnectStep2(long iRobotNumber,CATBSTR iRRSDataHomeDirectory,CATBSTR
@@ -317,12 +315,13 @@ class RobotRrsConnection(AnyObject):
         :param bool ib_initialization_debug_enabled:
         :return: int
         """
-        return self.com_object.RRS1ConnectStep2(i_robot_number, i_rrs_data_home_directory, i_relative_robot_path, i_manipulator_id, ib_initialization_debug_enabled)
+        return self.com_object.RRS1ConnectStep2(i_robot_number, i_rrs_data_home_directory, i_relative_robot_path,
+                                                i_manipulator_id, ib_initialization_debug_enabled)
 
-    def rrs2_connect_step1(self, i_rrs_server_decorated_name: str, o_list_controller_software_version: tuple, o_default_controller_software_version_index: int) -> int:
+    def rrs2_connect_step1(self, i_rrs_server_decorated_name: str, o_list_controller_software_version: tuple,
+                           o_default_controller_software_version_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRS2ConnectStep1(CATBSTR iRRSServerDecoratedName,CATSafeArrayVariant
@@ -352,12 +351,14 @@ class RobotRrsConnection(AnyObject):
         :param int o_default_controller_software_version_index:
         :return: int
         """
-        return self.com_object.RRS2ConnectStep1(i_rrs_server_decorated_name, o_list_controller_software_version, o_default_controller_software_version_index)
+        return self.com_object.RRS2ConnectStep1(i_rrs_server_decorated_name, o_list_controller_software_version,
+                                                o_default_controller_software_version_index)
 
-    def rrs2_connect_step2(self, i_controller_software_version: str, o_list_user_language: tuple, o_default_user_language_index: int, o_list_controller_config: tuple, o_default_controller_config_index: int) -> int:
+    def rrs2_connect_step2(self, i_controller_software_version: str, o_list_user_language: tuple,
+                           o_default_user_language_index: int, o_list_controller_config: tuple,
+                           o_default_controller_config_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRS2ConnectStep2(CATBSTR iControllerSoftwareVersion,CATSafeArrayVariant
@@ -394,12 +395,13 @@ class RobotRrsConnection(AnyObject):
         :param int o_default_controller_config_index:
         :return: int
         """
-        return self.com_object.RRS2ConnectStep2(i_controller_software_version, o_list_user_language, o_default_user_language_index, o_list_controller_config, o_default_controller_config_index)
+        return self.com_object.RRS2ConnectStep2(i_controller_software_version, o_list_user_language,
+                                                o_default_user_language_index, o_list_controller_config,
+                                                o_default_controller_config_index)
 
     def rrs2_connect_step3(self, i_user_language: str, i_controller_config: str, i_file_system_full_path: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRS2ConnectStep3(CATBSTR iUserLanguage,CATBSTR iControllerConfig,CATBSTR
@@ -430,7 +432,6 @@ class RobotRrsConnection(AnyObject):
     def rrs_disconnect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RRSDisconnect() As long
@@ -446,4 +447,4 @@ class RobotRrsConnection(AnyObject):
         return self.com_object.RRSDisconnect()
 
     def __repr__(self):
-        return f'RobotRrsConnection(name="{ self.name }")'
+        return f'RobotRrsConnection(name="{self.name}")'

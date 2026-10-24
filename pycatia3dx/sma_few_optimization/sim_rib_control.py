@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimRibControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimRibControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -90,7 +87,6 @@ class SimRibControl(AnyObject):
     def get_rib_distance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRibDistance(double oVal)
@@ -109,7 +105,6 @@ class SimRibControl(AnyObject):
     def get_rib_thickness(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRibThickness(double oVal)
@@ -128,7 +123,6 @@ class SimRibControl(AnyObject):
     def set_rib_distance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRibDistance(double iVal)
@@ -147,7 +141,6 @@ class SimRibControl(AnyObject):
     def set_rib_thickness(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRibThickness(double iVal)
@@ -164,4 +157,4 @@ class SimRibControl(AnyObject):
         return self.com_object.SetRibThickness(i_val)
 
     def __repr__(self):
-        return f'SimRibControl(name="{ self.name }")'
+        return f'SimRibControl(name="{self.name}")'

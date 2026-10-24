@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class MaterialBehavior(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class MaterialBehavior(PLMEntity):
     def behavior_options(self) -> MaterialBehaviorOptions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BehaviorOptions() As MaterialBehaviorOptions (Read

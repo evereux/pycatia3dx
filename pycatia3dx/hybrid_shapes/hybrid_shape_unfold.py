@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeUnfold(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -52,7 +50,6 @@ class HybridShapeUnfold(HybridShape):
     def direction_to_unfold(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DirectionToUnfold() As Reference
@@ -75,7 +72,6 @@ class HybridShapeUnfold(HybridShape):
     def edge_to_tear_positioning_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EdgeToTearPositioningOrientation() As long
@@ -103,7 +99,6 @@ class HybridShapeUnfold(HybridShape):
     def origin_to_unfold(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OriginToUnfold() As Reference
@@ -126,7 +121,6 @@ class HybridShapeUnfold(HybridShape):
     def surface_to_unfold(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SurfaceToUnfold() As Reference
@@ -151,7 +145,6 @@ class HybridShapeUnfold(HybridShape):
     def surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SurfaceType() As long
@@ -178,7 +171,6 @@ class HybridShapeUnfold(HybridShape):
     def target_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetDirection() As HybridShapeDirection
@@ -215,7 +207,6 @@ class HybridShapeUnfold(HybridShape):
     def target_orientation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetOrientationMode() As long
@@ -248,7 +239,6 @@ class HybridShapeUnfold(HybridShape):
     def target_origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetOrigin() As Reference
@@ -285,7 +275,6 @@ class HybridShapeUnfold(HybridShape):
     def target_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetPlane() As Reference
@@ -308,7 +297,6 @@ class HybridShapeUnfold(HybridShape):
     def add_edge_to_tear(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddEdgeToTear(Reference iElement)
@@ -336,7 +324,6 @@ class HybridShapeUnfold(HybridShape):
     def add_element_to_transfer(self, i_element: Reference, i_type_of_transfer: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementToTransfer(Reference iElement,long
@@ -363,7 +350,6 @@ class HybridShapeUnfold(HybridShape):
     def get_edge_to_tear(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetEdgeToTear(long iRank) As Reference
@@ -390,7 +376,6 @@ class HybridShapeUnfold(HybridShape):
     def get_element_to_transfer(self, i_rank: int, op_element: Reference, o_type_of_transfer: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetElementToTransfer(long iRank,Reference opElement,long
@@ -420,7 +405,6 @@ class HybridShapeUnfold(HybridShape):
     def remove_edge_to_tear(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveEdgeToTear(long iRank)
@@ -446,7 +430,6 @@ class HybridShapeUnfold(HybridShape):
     def remove_element_to_transfer(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToTransfer(long iRank)
@@ -465,7 +448,6 @@ class HybridShapeUnfold(HybridShape):
     def replace_elements_to_transfer(self, i_rank: int, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceElementsToTransfer(long iRank,Reference iElement)
@@ -485,4 +467,4 @@ class HybridShapeUnfold(HybridShape):
         return self.com_object.ReplaceElementsToTransfer(i_rank, i_element.com_object)
 
     def __repr__(self):
-        return f'HybridShapeUnfold(name="{ self.name }")'
+        return f'HybridShapeUnfold(name="{self.name}")'

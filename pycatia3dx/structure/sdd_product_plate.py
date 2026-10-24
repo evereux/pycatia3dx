@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_material_mngt import StrMaterialMngt
 class SddProductPlate(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class SddProductPlate(AnyObject):
     def sdd_plate(self) -> SddPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SddPlate() As SddPlate (Read Only)
@@ -61,7 +59,6 @@ class SddProductPlate(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
@@ -89,7 +86,6 @@ class SddProductPlate(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

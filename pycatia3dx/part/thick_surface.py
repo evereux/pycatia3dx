@@ -13,10 +13,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class ThickSurface(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class ThickSurface(SurfaceBasedShape):
     def bot_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BotOffset() As Length (Read Only)
@@ -66,7 +63,6 @@ class ThickSurface(SurfaceBasedShape):
     def offset_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetSide() As long (Read Only)
@@ -88,7 +84,6 @@ class ThickSurface(SurfaceBasedShape):
     def top_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TopOffset() As Length (Read Only)
@@ -108,7 +103,6 @@ class ThickSurface(SurfaceBasedShape):
     def swap_offset_side(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub swap_OffsetSide()
@@ -125,4 +119,4 @@ class ThickSurface(SurfaceBasedShape):
         return self.com_object.swap_OffsetSide()
 
     def __repr__(self):
-        return f'ThickSurface(name="{ self.name }")'
+        return f'ThickSurface(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class Stiffener(SketchBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Stiffener(SketchBasedShape):
     def is_from_top(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsFromTop() As boolean
@@ -79,7 +76,6 @@ class Stiffener(SketchBasedShape):
     def is_symmetric(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsSymmetric() As boolean
@@ -112,7 +108,6 @@ class Stiffener(SketchBasedShape):
     def thickness(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Thickness() As Length (Read Only)
@@ -134,7 +129,6 @@ class Stiffener(SketchBasedShape):
     def thickness_from_top(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessFromTop() As Length (Read Only)
@@ -155,7 +149,6 @@ class Stiffener(SketchBasedShape):
     def reverse_depth(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseDepth()
@@ -175,7 +168,6 @@ class Stiffener(SketchBasedShape):
     def reverse_thickness(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseThickness()
@@ -193,4 +185,4 @@ class Stiffener(SketchBasedShape):
         return self.com_object.ReverseThickness()
 
     def __repr__(self):
-        return f'Stiffener(name="{ self.name }")'
+        return f'Stiffener(name="{self.name}")'

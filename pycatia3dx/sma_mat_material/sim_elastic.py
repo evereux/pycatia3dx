@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimElastic(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimElastic(AnyObject):
     def elastic_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElasticType() As SimElasticElasticType
@@ -100,7 +97,6 @@ class SimElastic(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -115,7 +111,6 @@ class SimElastic(AnyObject):
     def moduli_time_scaletype(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModuliTimeScaletype() As
@@ -138,7 +133,6 @@ class SimElastic(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimElasticMaterialTableColumn iMaterialTableColumn)
@@ -161,4 +155,4 @@ class SimElastic(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimElastic(name="{ self.name }")'
+        return f'SimElastic(name="{self.name}")'

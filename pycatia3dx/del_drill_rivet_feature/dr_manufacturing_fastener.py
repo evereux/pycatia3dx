@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrManufacturingFastener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class DrManufacturingFastener(AnyObject):
     def create_user_parameter(self, i_name: str, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateUserParameter(CATBSTR iName,long iType)
@@ -64,7 +61,6 @@ class DrManufacturingFastener(AnyObject):
     def get3_d_rep(self, oh3_d_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Get3DRep(AnyObject oh3DRep)
@@ -83,7 +79,6 @@ class DrManufacturingFastener(AnyObject):
     def get_boolean_value(self, i_parameter_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBooleanValue(CATBSTR iParameterName) As boolean
@@ -104,7 +99,6 @@ class DrManufacturingFastener(AnyObject):
     def get_fastener(self, oh_geometry: AnyObject, oh_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFastener(AnyObject ohGeometry,AnyObject ohProduct)
@@ -128,7 +122,6 @@ class DrManufacturingFastener(AnyObject):
     def get_integer_value(self, i_parameter_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIntegerValue(CATBSTR iParameterName) As long
@@ -149,7 +142,6 @@ class DrManufacturingFastener(AnyObject):
     def get_listof_user_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListofUserNames() As CATSafeArrayVariant
@@ -170,7 +162,6 @@ class DrManufacturingFastener(AnyObject):
     def get_listof_user_types(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListofUserTypes() As CATSafeArrayVariant
@@ -182,7 +173,6 @@ class DrManufacturingFastener(AnyObject):
     def get_position(self, x: float, y: float, z: float, yaw: float, pitch: float, roll: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPosition(double X,double Y,double Z,double Yaw,double Pitch,double
@@ -207,7 +197,6 @@ class DrManufacturingFastener(AnyObject):
     def get_string_value(self, i_parameter_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStringValue(CATBSTR iParameterName) As CATBSTR
@@ -228,7 +217,6 @@ class DrManufacturingFastener(AnyObject):
     def get_tail_frame_position(self, x: float, y: float, z: float, yaw: float, pitch: float, roll: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTailFramePosition(double X,double Y,double Z,double Yaw,double
@@ -266,7 +254,6 @@ class DrManufacturingFastener(AnyObject):
     def get_user_access(self, i_parameter_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUserAccess(CATBSTR iParameterName) As long
@@ -289,7 +276,6 @@ class DrManufacturingFastener(AnyObject):
     def get_value(self, i_parameter_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue(CATBSTR iParameterName) As double
@@ -310,7 +296,6 @@ class DrManufacturingFastener(AnyObject):
     def set3_d_rep(self, ih3_d_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Set3DRep(AnyObject ih3DRep)
@@ -329,7 +314,6 @@ class DrManufacturingFastener(AnyObject):
     def set_boolean_value(self, i_parameter_name: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBooleanValue(CATBSTR iParameterName,boolean iValue)
@@ -351,7 +335,6 @@ class DrManufacturingFastener(AnyObject):
     def set_design_point(self, ih_point: AnyObject, ih_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDesignPoint(AnyObject ihPoint,AnyObject ihProduct)
@@ -373,7 +356,6 @@ class DrManufacturingFastener(AnyObject):
     def set_fastener(self, ih_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFastener(AnyObject ihFastener)
@@ -392,7 +374,6 @@ class DrManufacturingFastener(AnyObject):
     def set_integer_value(self, i_parameter_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIntegerValue(CATBSTR iParameterName,long iValue)
@@ -414,7 +395,6 @@ class DrManufacturingFastener(AnyObject):
     def set_position_offset(self, x: float, y: float, z: float, yaw: float, pitch: float, roll: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPositionOffset(double X,double Y,double Z,double Yaw,double Pitch,double
@@ -439,7 +419,6 @@ class DrManufacturingFastener(AnyObject):
     def set_string_value(self, i_parameter_name: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStringValue(CATBSTR iParameterName,CATBSTR iValue)
@@ -461,7 +440,6 @@ class DrManufacturingFastener(AnyObject):
     def set_tail_frame_offset(self, x: float, y: float, z: float, yaw: float, pitch: float, roll: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTailFrameOffset(double X,double Y,double Z,double Yaw,double
@@ -496,7 +474,6 @@ class DrManufacturingFastener(AnyObject):
     def set_user_access(self, i_parameter_name: str, i_user_access: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUserAccess(CATBSTR iParameterName,long iUserAccess)
@@ -520,7 +497,6 @@ class DrManufacturingFastener(AnyObject):
     def set_value(self, i_parameter_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValue(CATBSTR iParameterName,double iValue)
@@ -542,7 +518,6 @@ class DrManufacturingFastener(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -553,4 +528,4 @@ class DrManufacturingFastener(AnyObject):
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'DrManufacturingFastener(name="{ self.name }")'
+        return f'DrManufacturingFastener(name="{self.name}")'

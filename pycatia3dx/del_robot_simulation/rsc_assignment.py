@@ -12,10 +12,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscAssignment(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RscAssignment(RscInstruction):
     def assigned_data_entity(self) -> RscDataEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssignedDataEntity() As RscDataEntity
@@ -93,7 +90,6 @@ class RscAssignment(RscInstruction):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value(CATBSTR iValue)
@@ -141,4 +137,4 @@ class RscAssignment(RscInstruction):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'RscAssignment(name="{ self.name }")'
+        return f'RscAssignment(name="{self.name}")'

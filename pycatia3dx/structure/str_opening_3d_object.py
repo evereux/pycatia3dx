@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrOpening3DObject(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrOpening3DObject(AnyObject):
     def intersecting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntersectingElement() As Reference
@@ -70,4 +67,4 @@ class StrOpening3DObject(AnyObject):
         self.com_object.IntersectingElement = value
 
     def __repr__(self):
-        return f'StrOpening3DObject(name="{ self.name }")'
+        return f'StrOpening3DObject(name="{self.name}")'

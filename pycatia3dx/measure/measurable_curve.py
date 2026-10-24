@@ -14,7 +14,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 class MeasurableCurve(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class MeasurableCurve(MeasurableInContext):
     def get_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLength() As double
@@ -64,7 +62,6 @@ class MeasurableCurve(MeasurableInContext):
     def get_points(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant

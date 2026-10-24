@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleBitangentRadius(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOfCircle() As long
@@ -89,7 +86,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve1() As Reference
@@ -122,7 +118,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve2() As Reference
@@ -154,7 +149,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Diameter() As Length (Read Only)
@@ -177,7 +171,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiameterMode() As boolean
@@ -211,7 +204,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiscriminationIndex() As long
@@ -246,7 +238,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation1() As long
@@ -281,7 +272,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation2() As long
@@ -316,7 +306,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -338,7 +327,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -369,7 +357,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation1() As long
@@ -403,7 +390,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation2() As long
@@ -437,7 +423,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TrimMode() As long
@@ -471,4 +456,4 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.com_object.TrimMode = value
 
     def __repr__(self):
-        return f'HybridShapeCircleBitangentRadius(name="{ self.name }")'
+        return f'HybridShapeCircleBitangentRadius(name="{self.name}")'

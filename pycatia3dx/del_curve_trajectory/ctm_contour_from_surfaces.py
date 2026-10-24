@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmContourFromSurfaces(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class CtmContourFromSurfaces(AnyObject):
     def intersection_result(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntersectionResult() As short
@@ -72,7 +69,6 @@ class CtmContourFromSurfaces(AnyObject):
     def surface_extrapolation_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SurfaceExtrapolationDistance() As double
@@ -102,4 +98,4 @@ class CtmContourFromSurfaces(AnyObject):
         self.com_object.SurfaceExtrapolationDistance = value
 
     def __repr__(self):
-        return f'CtmContourFromSurfaces(name="{ self.name }")'
+        return f'CtmContourFromSurfaces(name="{self.name}")'

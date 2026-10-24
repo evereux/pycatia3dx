@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPAstNode(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPAstNode(AnyObject):
     def editable_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditableType() As DELOlpEditableType
@@ -66,7 +63,6 @@ class OLPAstNode(AnyObject):
     def editable_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditableTypeString() As CATBSTR
@@ -91,7 +87,6 @@ class OLPAstNode(AnyObject):
     def editor_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditorId() As CATBSTR
@@ -117,7 +112,6 @@ class OLPAstNode(AnyObject):
     def hidden_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HiddenInstructions() As CATSafeArrayVariant
@@ -144,7 +138,6 @@ class OLPAstNode(AnyObject):
     def id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Id() As CATBSTR
@@ -170,7 +163,6 @@ class OLPAstNode(AnyObject):
     def instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As CATSafeArrayVariant
@@ -195,7 +187,6 @@ class OLPAstNode(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELOlpAstNodeType
@@ -219,7 +210,6 @@ class OLPAstNode(AnyObject):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As CATBSTR (Read Only)
@@ -235,7 +225,6 @@ class OLPAstNode(AnyObject):
     def value_with_eol(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueWithEOL() As CATBSTR (Read Only)
@@ -250,7 +239,6 @@ class OLPAstNode(AnyObject):
     def clone(self) -> 'OLPAstNode':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Clone() As OlpAstNode
@@ -268,7 +256,6 @@ class OLPAstNode(AnyObject):
     def export_to_file(self, i_file_path: str, i_pretty_print: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
@@ -288,4 +275,4 @@ class OLPAstNode(AnyObject):
         return self.com_object.ExportToFile(i_file_path, i_pretty_print)
 
     def __repr__(self):
-        return f'OLPAstNode(name="{ self.name }")'
+        return f'OLPAstNode(name="{self.name}")'

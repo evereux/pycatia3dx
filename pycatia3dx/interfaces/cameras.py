@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class Cameras(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -65,7 +64,6 @@ class Cameras(Collection):
     def item(self, i_index: CATVariant) -> Camera:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(CATVariant iIndex) As Camera
@@ -101,7 +99,6 @@ class Cameras(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Remove(CATVariant iIndex)

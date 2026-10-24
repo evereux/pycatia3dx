@@ -13,7 +13,6 @@ from pycatia3dx.structure.structure_member import StructureMember
 class SddMember(StructureMember):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 

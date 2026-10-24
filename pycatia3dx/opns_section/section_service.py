@@ -13,10 +13,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SectionService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SectionService(Service):
     def add(self) -> Section:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As Section
@@ -62,7 +59,6 @@ class SectionService(Service):
     def count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Count() As long
@@ -85,7 +81,6 @@ class SectionService(Service):
     def item(self, i_index: CATVariant) -> Section:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Section
@@ -119,7 +114,6 @@ class SectionService(Service):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
@@ -145,4 +139,4 @@ class SectionService(Service):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SectionService(name="{ self.name }")'
+        return f'SectionService(name="{self.name}")'

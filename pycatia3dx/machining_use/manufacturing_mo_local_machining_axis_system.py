@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
     def get_local_axis_system(self, o_local_axis_system: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLocalAxisSystem(AnyObject oLocalAxisSystem)
@@ -67,7 +64,6 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
     def is_local_axis_system_supported(self, o_is_supported: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsLocalAxisSystemSupported(boolean oIsSupported)
@@ -93,7 +89,6 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
     def remove_local_axis_system(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLocalAxisSystem()
@@ -110,7 +105,6 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
     def set_local_axis_system(self, i_local_axis_system: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLocalAxisSystem(AnyObject iLocalAxisSystem)
@@ -132,4 +126,4 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
         return self.com_object.SetLocalAxisSystem(i_local_axis_system.com_object)
 
     def __repr__(self):
-        return f'ManufacturingMoLocalMachiningAxisSystem(name="{ self.name }")'
+        return f'ManufacturingMoLocalMachiningAxisSystem(name="{self.name}")'

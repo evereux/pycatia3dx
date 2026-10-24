@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrPatternGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class DrPatternGroup(AnyObject):
     def create_drilling_riveting_pattern(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDrillingRivetingPattern() As AnyObject
@@ -57,7 +54,6 @@ class DrPatternGroup(AnyObject):
     def get_manufacturing_features(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatures() As CATSafeArrayVariant
@@ -73,4 +69,4 @@ class DrPatternGroup(AnyObject):
         return self.com_object.GetManufacturingFeatures()
 
     def __repr__(self):
-        return f'DrPatternGroup(name="{ self.name }")'
+        return f'DrPatternGroup(name="{self.name}")'

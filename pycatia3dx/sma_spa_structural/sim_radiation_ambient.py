@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRadiationAmbient(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimRadiationAmbient(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimRadiationAmbient(AnyObject):
     def emissivity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Emissivity() As double
@@ -123,7 +119,6 @@ class SimRadiationAmbient(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -138,7 +133,6 @@ class SimRadiationAmbient(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -154,7 +148,6 @@ class SimRadiationAmbient(AnyObject):
     def temperature(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Temperature() As double
@@ -175,4 +168,4 @@ class SimRadiationAmbient(AnyObject):
         self.com_object.Temperature = value
 
     def __repr__(self):
-        return f'SimRadiationAmbient(name="{ self.name }")'
+        return f'SimRadiationAmbient(name="{self.name}")'

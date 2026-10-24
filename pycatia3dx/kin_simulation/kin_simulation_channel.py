@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class KinSimulationChannel(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class KinSimulationChannel(AnyObject):
     def channel_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ChannelSize() As long (Read Only)
@@ -59,7 +57,6 @@ class KinSimulationChannel(AnyObject):
     def channel_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ChannelType() As CatKinSimuChannelType (Read Only)
@@ -83,7 +80,6 @@ class KinSimulationChannel(AnyObject):
     def channel_unit(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ChannelUnit() As CATBSTR (Read Only)
@@ -100,7 +96,6 @@ class KinSimulationChannel(AnyObject):
     def get_channel_value(self, i_index: int, o_value: float, o_is_valuated: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetChannelValue(long iIndex,double oValue,boolean

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingDimLine(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingDimLine(AnyObject):
     def color(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Color() As long
@@ -69,7 +67,6 @@ class DrawingDimLine(AnyObject):
     def dim_line_graph_rep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimLineGraphRep() As CatDimLineGraphRep
@@ -98,7 +95,6 @@ class DrawingDimLine(AnyObject):
     def dim_line_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimLineOrientation() As CatDimOrientation
@@ -127,7 +123,6 @@ class DrawingDimLine(AnyObject):
     def dim_line_reference(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimLineReference() As CatDimReference
@@ -156,7 +151,6 @@ class DrawingDimLine(AnyObject):
     def dim_line_rep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimLineRep() As CatDimLineRep (Read Only)
@@ -177,7 +171,6 @@ class DrawingDimLine(AnyObject):
     def dim_line_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimLineType() As long (Read Only)
@@ -198,7 +191,6 @@ class DrawingDimLine(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Thickness() As double
@@ -226,7 +218,6 @@ class DrawingDimLine(AnyObject):
     def get_dim_line_dir(self, o_dir_x: float, o_dir_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDimLineDir(double oDirX,double oDirY)
@@ -253,7 +244,6 @@ class DrawingDimLine(AnyObject):
     def get_geom_info(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
@@ -292,7 +282,6 @@ class DrawingDimLine(AnyObject):
     def get_symb_color(self, index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbColor(long Index) As long
@@ -317,7 +306,6 @@ class DrawingDimLine(AnyObject):
     def get_symb_thickness(self, index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbThickness(long Index) As double
@@ -343,7 +331,6 @@ class DrawingDimLine(AnyObject):
     def get_symb_type(self, index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymbType(long Index) As CatDimSymbols
@@ -368,7 +355,6 @@ class DrawingDimLine(AnyObject):
     def set_symb_color(self, index: int, i_color_symb: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbColor(long Index,long iColorSymb)
@@ -394,7 +380,6 @@ class DrawingDimLine(AnyObject):
     def set_symb_thickness(self, index: int, i_thick_symb: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbThickness(long Index,double iThickSymb)
@@ -421,7 +406,6 @@ class DrawingDimLine(AnyObject):
     def set_symb_type(self, index: int, i_symb_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymbType(long Index,CatDimSymbols iSymbType)

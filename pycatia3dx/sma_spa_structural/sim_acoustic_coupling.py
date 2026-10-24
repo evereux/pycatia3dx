@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAcousticCoupling(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimAcousticCoupling(AnyObject):
     def adjust_secondary_surface_initial_position_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSecondarySurfaceInitialPositionFlag() As
@@ -106,7 +103,6 @@ class SimAcousticCoupling(AnyObject):
     def adjust_slave_surface_initial_position_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
@@ -129,7 +125,6 @@ class SimAcousticCoupling(AnyObject):
     def formulation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FormulationType() As
@@ -153,7 +148,6 @@ class SimAcousticCoupling(AnyObject):
     def main_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainSurface() As CATBaseDispatch (Read Only)
@@ -168,7 +162,6 @@ class SimAcousticCoupling(AnyObject):
     def main_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainSurfaceType() As
@@ -192,7 +185,6 @@ class SimAcousticCoupling(AnyObject):
     def master_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MasterSurface() As CATBaseDispatch (Read Only)
@@ -207,7 +199,6 @@ class SimAcousticCoupling(AnyObject):
     def master_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MasterSurfaceType() As
@@ -231,7 +222,6 @@ class SimAcousticCoupling(AnyObject):
     def position_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionTolerance() As double
@@ -254,7 +244,6 @@ class SimAcousticCoupling(AnyObject):
     def position_tolerance_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionToleranceFlag() As boolean
@@ -282,7 +271,6 @@ class SimAcousticCoupling(AnyObject):
     def secondary_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondarySurface() As CATBaseDispatch (Read Only)
@@ -297,7 +285,6 @@ class SimAcousticCoupling(AnyObject):
     def slave_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SlaveSurface() As CATBaseDispatch (Read Only)
@@ -311,7 +298,6 @@ class SimAcousticCoupling(AnyObject):
     def swap_main_and_secondary(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SwapMainAndSecondary()
@@ -324,7 +310,6 @@ class SimAcousticCoupling(AnyObject):
     def swap_master_and_slave(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SwapMasterAndSlave()
@@ -335,4 +320,4 @@ class SimAcousticCoupling(AnyObject):
         return self.com_object.SwapMasterAndSlave()
 
     def __repr__(self):
-        return f'SimAcousticCoupling(name="{ self.name }")'
+        return f'SimAcousticCoupling(name="{self.name}")'

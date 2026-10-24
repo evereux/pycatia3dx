@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimResultsSteps(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SimResultsSteps(Collection):
     def item(self, index: CATVariant) -> SimResultsStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant index) As SimResultsStep

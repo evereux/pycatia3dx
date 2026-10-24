@@ -13,10 +13,8 @@ from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Weld(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class Weld(AnyObject):
     def get2d_annot(self) -> DrawingWelding:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get2dAnnot() As DrawingWelding
@@ -50,7 +47,6 @@ class Weld(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen
@@ -61,4 +57,4 @@ class Weld(AnyObject):
         return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Weld(name="{ self.name }")'
+        return f'Weld(name="{self.name}")'

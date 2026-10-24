@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class OrderedGeometricalSets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -40,7 +39,6 @@ class OrderedGeometricalSets(Collection):
     def add(self) -> OrderedGeometricalSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Add() As OrderedGeometricalSet
@@ -65,7 +63,6 @@ class OrderedGeometricalSets(Collection):
     def item(self, i_index: CATVariant) -> OrderedGeometricalSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As OrderedGeometricalSet

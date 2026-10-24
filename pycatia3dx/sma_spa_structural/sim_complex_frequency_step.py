@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimComplexFrequencyStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimComplexFrequencyStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimComplexFrequencyStep(SimStep):
     def cutoff_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CutoffFrequency() As double
@@ -121,7 +117,6 @@ class SimComplexFrequencyStep(SimStep):
     def cutoff_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CutoffFrequencyFlag() As boolean
@@ -147,7 +142,6 @@ class SimComplexFrequencyStep(SimStep):
     def friction_damping_authorization_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrictionDampingAuthorizationFlag() As boolean
@@ -173,7 +167,6 @@ class SimComplexFrequencyStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -196,7 +189,6 @@ class SimComplexFrequencyStep(SimStep):
     def maximum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumFrequency() As double
@@ -219,7 +211,6 @@ class SimComplexFrequencyStep(SimStep):
     def maximum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumFrequencyFlag() As boolean
@@ -245,7 +236,6 @@ class SimComplexFrequencyStep(SimStep):
     def minimum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequency() As double
@@ -268,7 +258,6 @@ class SimComplexFrequencyStep(SimStep):
     def minimum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequencyFlag() As boolean
@@ -294,7 +283,6 @@ class SimComplexFrequencyStep(SimStep):
     def number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfModes() As long
@@ -317,7 +305,6 @@ class SimComplexFrequencyStep(SimStep):
     def property_evaluation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PropertyEvaluation() As double
@@ -340,7 +327,6 @@ class SimComplexFrequencyStep(SimStep):
     def property_evaluation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PropertyEvaluationFlag() As boolean
@@ -366,7 +352,6 @@ class SimComplexFrequencyStep(SimStep):
     def shift_point(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShiftPoint() As double
@@ -389,7 +374,6 @@ class SimComplexFrequencyStep(SimStep):
     def shift_point_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShiftPointFlag() As boolean
@@ -415,7 +399,6 @@ class SimComplexFrequencyStep(SimStep):
     def specified_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifiedModesFlag() As boolean
@@ -440,4 +423,4 @@ class SimComplexFrequencyStep(SimStep):
         self.com_object.SpecifiedModesFlag = value
 
     def __repr__(self):
-        return f'SimComplexFrequencyStep(name="{ self.name }")'
+        return f'SimComplexFrequencyStep(name="{self.name}")'

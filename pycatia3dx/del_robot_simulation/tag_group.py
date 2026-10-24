@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.tag_point import TagPoint
 
 
 class TagGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class TagGroup(AnyObject):
     def owner(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Owner() As AnyObject (Read Only)
@@ -68,7 +65,6 @@ class TagGroup(AnyObject):
     def tag_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagCount() As long (Read Only)
@@ -95,7 +91,6 @@ class TagGroup(AnyObject):
     def tag_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagList() As CATSafeArrayVariant (Read Only)
@@ -120,7 +115,6 @@ class TagGroup(AnyObject):
     def delete_tag(self, i_tag: TagPoint) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteTag(TagPoint iTag)
@@ -149,7 +143,6 @@ class TagGroup(AnyObject):
     def empty(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Empty()
@@ -170,7 +163,6 @@ class TagGroup(AnyObject):
     def get_tag(self, index: int) -> TagPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTag(short index) As TagPoint
@@ -201,4 +193,4 @@ class TagGroup(AnyObject):
         return TagPoint(self.com_object.GetTag(index))
 
     def __repr__(self):
-        return f'TagGroup(name="{ self.name }")'
+        return f'TagGroup(name="{self.name}")'

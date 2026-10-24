@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorMoment(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimConnectorMoment(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimConnectorMoment(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
@@ -119,7 +115,6 @@ class SimConnectorMoment(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -134,7 +129,6 @@ class SimConnectorMoment(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -149,7 +143,6 @@ class SimConnectorMoment(AnyObject):
     def get_magnitude(self, o_fx: float, o_fy: float, o_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMagnitude(double oFx,double oFy,double oFz)
@@ -176,7 +169,6 @@ class SimConnectorMoment(AnyObject):
     def set_magnitude(self, i_fx: float, i_fy: float, i_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMagnitude(double iFx,double iFy,double iFz)
@@ -201,4 +193,4 @@ class SimConnectorMoment(AnyObject):
         return self.com_object.SetMagnitude(i_fx, i_fy, i_fz)
 
     def __repr__(self):
-        return f'SimConnectorMoment(name="{ self.name }")'
+        return f'SimConnectorMoment(name="{self.name}")'

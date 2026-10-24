@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Reference(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -42,7 +41,6 @@ class Reference(AnyObject):
     def display_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property DisplayName() As CATBSTR (Read Only)
@@ -65,7 +63,6 @@ class Reference(AnyObject):
     def compose_with(self, i_reference: 'Reference') -> 'Reference':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func ComposeWith(Reference iReference) As Reference

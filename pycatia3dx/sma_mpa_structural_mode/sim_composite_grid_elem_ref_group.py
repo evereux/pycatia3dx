@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_composite_grid_elem_ref import SimCo
 
 
 class SimCompositeGridElemRefGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimCompositeGridElemRefGroup(AnyObject):
     def add_new_elem_ref(self) -> SimCompositeGridElemRef:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewElemRef() As SimCompositeGridElemRef
@@ -56,7 +53,6 @@ class SimCompositeGridElemRefGroup(AnyObject):
     def get_element_refs(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElementRefs() As CATSafeArrayVariant
@@ -70,4 +66,4 @@ class SimCompositeGridElemRefGroup(AnyObject):
         return self.com_object.GetElementRefs()
 
     def __repr__(self):
-        return f'SimCompositeGridElemRefGroup(name="{ self.name }")'
+        return f'SimCompositeGridElemRefGroup(name="{self.name}")'

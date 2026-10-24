@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimCastIronPlasticity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimCastIronPlasticity(AnyObject):
     def compression_hardening_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CompressionHardeningMaterialTable() As SimMaterialTable (Read
@@ -94,7 +91,6 @@ class SimCastIronPlasticity(AnyObject):
     def plasticity_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlasticityMaterialTable() As SimMaterialTable (Read
@@ -110,7 +106,6 @@ class SimCastIronPlasticity(AnyObject):
     def tension_hardening_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TensionHardeningMaterialTable() As SimMaterialTable (Read
@@ -125,7 +120,6 @@ class SimCastIronPlasticity(AnyObject):
     def get_compression_hardening_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -151,7 +145,6 @@ class SimCastIronPlasticity(AnyObject):
     def get_plasticity_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -177,7 +170,6 @@ class SimCastIronPlasticity(AnyObject):
     def get_tension_hardening_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -201,4 +193,4 @@ class SimCastIronPlasticity(AnyObject):
         return SimTableColumn(self.com_object.GetTensionHardeningMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimCastIronPlasticity(name="{ self.name }")'
+        return f'SimCastIronPlasticity(name="{self.name}")'

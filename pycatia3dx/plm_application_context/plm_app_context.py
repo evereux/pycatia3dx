@@ -14,7 +14,6 @@ from pycatia3dx.plm_modeller_base.plm_entities import PLMEntities
 class PLMAppContext(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class PLMAppContext(Service):
     def edited_content(self) -> PLMEntities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditedContent() As PLMEntities (Read Only)

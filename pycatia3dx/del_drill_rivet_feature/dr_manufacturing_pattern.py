@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrManufacturingPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class DrManufacturingPattern(AnyObject):
     def add_manufacturing_fastener(self, ih_mfg_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddManufacturingFastener(AnyObject ihMfgFastener)
@@ -60,7 +57,6 @@ class DrManufacturingPattern(AnyObject):
     def get_manufacturing_fastener_from_index(self, i_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFastenerFromIndex(long iIndex) As
@@ -82,7 +78,6 @@ class DrManufacturingPattern(AnyObject):
     def get_manufacturing_fasteners(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFasteners() As CATSafeArrayVariant
@@ -101,7 +96,6 @@ class DrManufacturingPattern(AnyObject):
     def get_ordering_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrderingMode() As long
@@ -119,7 +113,6 @@ class DrManufacturingPattern(AnyObject):
     def move_after(self, i_from_index: int, i_to_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveAfter(long iFromIndex,long iToIndex)
@@ -144,7 +137,6 @@ class DrManufacturingPattern(AnyObject):
     def remove_manufacturing_fastener(self, ih_mfg_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveManufacturingFastener(AnyObject ihMfgFastener)
@@ -163,7 +155,6 @@ class DrManufacturingPattern(AnyObject):
     def set_ordering_mode(self, i_ordering_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOrderingMode(long iOrderingMode)
@@ -180,4 +171,4 @@ class DrManufacturingPattern(AnyObject):
         return self.com_object.SetOrderingMode(i_ordering_mode)
 
     def __repr__(self):
-        return f'DrManufacturingPattern(name="{ self.name }")'
+        return f'DrManufacturingPattern(name="{self.name}")'

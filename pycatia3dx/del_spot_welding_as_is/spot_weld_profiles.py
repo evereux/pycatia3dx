@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SpotWeldProfiles(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class SpotWeldProfiles(Collection):
     def create_profile(self, i_name: str) -> SpotWeldProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateProfile(CATBSTR iName) As SpotWeldProfile
@@ -77,7 +75,6 @@ class SpotWeldProfiles(Collection):
     def item(self, i_index: CATVariant) -> SpotWeldProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SpotWeldProfile
@@ -109,7 +106,6 @@ class SpotWeldProfiles(Collection):
     def remove(self, i_profile: SpotWeldProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(SpotWeldProfile iProfile)
@@ -139,7 +135,6 @@ class SpotWeldProfiles(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

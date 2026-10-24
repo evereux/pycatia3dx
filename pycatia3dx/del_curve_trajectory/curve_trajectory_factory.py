@@ -14,10 +14,8 @@ from pycatia3dx.del_curve_trajectory.curve_trajectory import CurveTrajectory
 
 
 class CurveTrajectoryFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class CurveTrajectoryFactory(AnyObject):
     def create_curve_trajectory(self, i_trajectory_type: int, i_name: str) -> CurveTrajectory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCurveTrajectory(DNBTrajectoryType iTrajectoryType,CATBSTR iName) As
@@ -79,7 +76,6 @@ class CurveTrajectoryFactory(AnyObject):
     def destroy_curve_trajectory(self, isp_curve_traj: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroyCurveTrajectory(CATBaseUnknown ispCurveTraj)
@@ -106,7 +102,6 @@ objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
     def set_generic_prefix(self, ib_generic: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGenericPrefix(boolean ibGeneric)
@@ -129,4 +124,4 @@ objCurveTrajectoryFactory.DestroyCurveTrajectory(objCurveTrajectory)
         return self.com_object.SetGenericPrefix(ib_generic)
 
     def __repr__(self):
-        return f'CurveTrajectoryFactory(name="{ self.name }")'
+        return f'CurveTrajectoryFactory(name="{self.name}")'

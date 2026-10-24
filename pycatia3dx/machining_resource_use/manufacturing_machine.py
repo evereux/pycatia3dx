@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMachine(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingMachine(AnyObject):
     def get_post_processor_file(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPostProcessorFile() As CATBSTR
@@ -64,4 +61,4 @@ class ManufacturingMachine(AnyObject):
         return self.com_object.GetPostProcessorFile()
 
     def __repr__(self):
-        return f'ManufacturingMachine(name="{ self.name }")'
+        return f'ManufacturingMachine(name="{self.name}")'

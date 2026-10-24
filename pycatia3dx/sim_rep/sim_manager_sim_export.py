@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimManagerSimExport(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SimManagerSimExport(CATBaseDispatch):
     def args(self) -> SimImportExportArgs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Args() As SimImportExportArgs (Read Only)
@@ -50,7 +48,6 @@ class SimManagerSimExport(CATBaseDispatch):
     def export(self, i_exporter_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Export(CATBSTR iExporterId)

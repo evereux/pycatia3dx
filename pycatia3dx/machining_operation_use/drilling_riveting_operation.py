@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrillingRivetingOperation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrillingRivetingOperation(AnyObject):
     def tcp(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TCP() As CATBSTR
@@ -59,7 +57,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_fastener_offset(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFastenerOffset() As AnyObject
@@ -78,7 +75,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_fastener_offset_from_position(self, i_position_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFastenerOffsetFromPosition(long iPositionIndex) As
@@ -104,7 +100,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_instruction_set(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInstructionSet() As AnyObject
@@ -123,7 +118,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_instruction_set_from_position(self, i_position_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInstructionSetFromPosition(long iPositionIndex) As
@@ -149,7 +143,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_instruction_set_parameters(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInstructionSetParameters() As CATSafeArrayVariant
@@ -166,7 +159,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_instruction_set_parameters_from_position(self, i_position_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInstructionSetParametersFromPosition(long iPositionIndex) As
@@ -190,7 +182,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_lateral_axis_direction(self, o_lateral_axis_mode: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLateralAxisDirection(long oLateralAxisMode) As
@@ -218,7 +209,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_macro_motions_from_position(self, i_position_index: int, i_force_creation: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMacroMotionsFromPosition(long iPositionIndex,boolean iForceCreation) As
@@ -248,7 +238,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_manufacturing_fastener_from_position(self, i_position_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFastenerFromPosition(long iPositionIndex) As
@@ -274,7 +263,6 @@ class DrillingRivetingOperation(AnyObject):
     def get_offset_from_position(self, i_position_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffsetFromPosition(long iPositionIndex) As
@@ -297,7 +285,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_fastener_offset(self, i_f_offset: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFastenerOffset(AnyObject iFOffset)
@@ -316,7 +303,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_fastener_offset_from_position(self, i_position_index: int, i_f_offset: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFastenerOffsetFromPosition(long iPositionIndex,AnyObject
@@ -339,7 +325,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_instruction_set(self, i_instruction_set: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstructionSet(AnyObject iInstructionSet)
@@ -358,7 +343,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_instruction_set_from_position(self, i_position_index: int, i_instruction_set: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstructionSetFromPosition(long iPositionIndex,AnyObject
@@ -381,7 +365,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_instruction_set_parameters(self, i_parameters: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetInstructionSetParameters(CATSafeArrayVariant
@@ -418,7 +401,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_instruction_set_parameters_from_position(self, i_position_index: int, i_parameters: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstructionSetParametersFromPosition(long
@@ -442,7 +424,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_lateral_axis_direction(self, i_vec_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetLateralAxisDirection(CATSafeArrayVariant
@@ -479,7 +460,6 @@ class DrillingRivetingOperation(AnyObject):
     def set_offset_from_position(self, i_position_index: int, i_matrix_offset: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOffsetFromPosition(long iPositionIndex,CATSafeArrayVariant

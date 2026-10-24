@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCavityPressure(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimCavityPressure(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimCavityPressure(AnyObject):
     def cavity(self) -> SimSurfaceFluidCavity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Cavity() As SimSurfaceFluidCavity
@@ -122,7 +118,6 @@ class SimCavityPressure(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -137,7 +132,6 @@ class SimCavityPressure(AnyObject):
     def pressure(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Pressure() As double
@@ -160,7 +154,6 @@ class SimCavityPressure(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -173,4 +166,4 @@ class SimCavityPressure(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimCavityPressure(name="{ self.name }")'
+        return f'SimCavityPressure(name="{self.name}")'

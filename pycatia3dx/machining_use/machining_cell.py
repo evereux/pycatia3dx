@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MachiningCell(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class MachiningCell(AnyObject):
     def set_current(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrent()
@@ -52,7 +49,6 @@ class MachiningCell(AnyObject):
     def set_current_machine(self, i_machine: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrentMachine(AnyObject iMachine)
@@ -64,4 +60,4 @@ class MachiningCell(AnyObject):
         return self.com_object.SetCurrentMachine(i_machine.com_object)
 
     def __repr__(self):
-        return f'MachiningCell(name="{ self.name }")'
+        return f'MachiningCell(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MeasureBetween(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class MeasureBetween(AnyObject):
     def compute(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Compute()
@@ -63,7 +61,6 @@ class MeasureBetween(AnyObject):
     def get_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
@@ -90,7 +87,6 @@ class MeasureBetween(AnyObject):
     def get_axis_system_from_measure(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
@@ -166,7 +162,6 @@ class MeasureBetween(AnyObject):
     def get_band_analysis_parameters(self) -> tuple[float, float, float]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBandAnalysisParameters(double oMinDistance,double oMaxDistance,double
@@ -204,7 +199,6 @@ class MeasureBetween(AnyObject):
     def get_components(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetComponents(CATSafeArrayVariant oComponents)
@@ -254,7 +248,6 @@ class MeasureBetween(AnyObject):
     def get_computation_mode(self) -> CATMeasurableModeOfCalc:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComputationMode(CATMeasurableModeOfCalc
@@ -286,7 +279,6 @@ class MeasureBetween(AnyObject):
     def get_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDistance() As double
@@ -313,7 +305,6 @@ class MeasureBetween(AnyObject):
     def get_distance_measure_type(self) -> CATOpnsMeasureDistanceType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDistanceMeasureType(CATOpnsMeasureDistanceType
@@ -348,7 +339,6 @@ class MeasureBetween(AnyObject):
     def get_extension_mode(self) -> tuple[CATOpnsMeasureExtensionMode, CATOpnsMeasureExtensionMode]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetExtensionMode(CATOpnsMeasureExtensionMode
@@ -385,7 +375,6 @@ class MeasureBetween(AnyObject):
     def get_first_point_coordinates(self) -> tuple[float, float, float] | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetFirstPointCoordinates(CATSafeArrayVariant oCoordinates)
@@ -433,7 +422,6 @@ class MeasureBetween(AnyObject):
     def get_first_selection(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetFirstSelection(CATSafeArrayVariant oFirstSelections)
@@ -481,7 +469,6 @@ class MeasureBetween(AnyObject):
     def get_result_computation_type(self) -> CATResultCalcType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
@@ -511,7 +498,6 @@ class MeasureBetween(AnyObject):
     def get_second_point_coordinates(self) -> tuple[float, float, float] | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSecondPointCoordinates(CATSafeArrayVariant
@@ -561,7 +547,6 @@ class MeasureBetween(AnyObject):
     def get_second_selection(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSecondSelection(CATSafeArrayVariant oSecondSelections)
@@ -607,7 +592,6 @@ class MeasureBetween(AnyObject):
     def get_selection_calculation_types(self) -> tuple[CATResultCalcType, CATResultCalcType]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSelectionCalculationTypes(CATResultCalcType
@@ -646,7 +630,6 @@ class MeasureBetween(AnyObject):
     def set_along_direction(self, i_x_vector: float, i_y_vector: float, i_z_vector: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAlongDirection(double iXVector,double iYVector,double
@@ -682,7 +665,6 @@ class MeasureBetween(AnyObject):
     def set_axis_system_on_measure(self, i_axis_positioning: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
@@ -771,7 +753,6 @@ class MeasureBetween(AnyObject):
     def set_band_analysis_parameters(self, i_min_distance: float, i_max_distance: float, i_accuracy: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBandAnalysisParameters(double iMinDistance,double iMaxDistance,double
@@ -809,7 +790,6 @@ class MeasureBetween(AnyObject):
     def set_computation_mode(self, i_computation_mode: CATMeasurableModeOfCalc) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc
@@ -842,7 +822,6 @@ class MeasureBetween(AnyObject):
     def set_distance_measure_type(self, i_distance_measure_type: CATOpnsMeasureDistanceType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDistanceMeasureType(CATOpnsMeasureDistanceType
@@ -879,7 +858,6 @@ class MeasureBetween(AnyObject):
                            i_target_extent_mode: CATOpnsMeasureExtensionMode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExtensionMode(CATOpnsMeasureExtensionMode
@@ -915,7 +893,6 @@ class MeasureBetween(AnyObject):
     def set_first_selection(self, i_first_selections: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetFirstSelection(CATSafeArrayVariant iFirstSelections)
@@ -961,7 +938,6 @@ class MeasureBetween(AnyObject):
     def set_result_computation_type(self, i_computation_type: CATResultCalcType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetResultComputationType(CATResultCalcType
@@ -999,7 +975,6 @@ class MeasureBetween(AnyObject):
     def set_second_selection(self, i_second_selections: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetSecondSelection(CATSafeArrayVariant iSecondSelections)
@@ -1049,7 +1024,6 @@ class MeasureBetween(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSelectionCalculationTypes(CATResultCalcType

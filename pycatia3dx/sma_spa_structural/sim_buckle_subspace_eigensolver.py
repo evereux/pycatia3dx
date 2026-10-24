@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBuckleSubspaceEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimBuckleSubspaceEigensolver(AnyObject):
     def maximum_iterations(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumIterations() As long
@@ -61,7 +58,6 @@ class SimBuckleSubspaceEigensolver(AnyObject):
     def number_of_eigenvalues(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfEigenvalues() As long
@@ -81,4 +77,4 @@ class SimBuckleSubspaceEigensolver(AnyObject):
         self.com_object.NumberOfEigenvalues = value
 
     def __repr__(self):
-        return f'SimBuckleSubspaceEigensolver(name="{ self.name }")'
+        return f'SimBuckleSubspaceEigensolver(name="{self.name}")'

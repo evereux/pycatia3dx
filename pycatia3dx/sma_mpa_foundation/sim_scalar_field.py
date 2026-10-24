@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_space_time_field import SimSpaceTimeField
 
 
 class SimScalarField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimScalarField(AnyObject):
     def mapped_field_data(self) -> SimMappedFieldData:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MappedFieldData() As SimMappedFieldData (Read Only)
@@ -54,7 +51,6 @@ class SimScalarField(AnyObject):
     def space_time_field_data(self) -> SimSpaceTimeField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
@@ -69,7 +65,6 @@ class SimScalarField(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitude() As double
@@ -92,7 +87,6 @@ class SimScalarField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As SimScalarFieldVariationType
@@ -112,4 +106,4 @@ class SimScalarField(AnyObject):
         self.com_object.VariationType = value
 
     def __repr__(self):
-        return f'SimScalarField(name="{ self.name }")'
+        return f'SimScalarField(name="{self.name}")'

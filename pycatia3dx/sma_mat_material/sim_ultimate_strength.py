@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimUltimateStrength(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimUltimateStrength(AnyObject):
     def material_compressive_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialCompressiveTable() As SimMaterialTable (Read
@@ -94,7 +91,6 @@ class SimUltimateStrength(AnyObject):
     def material_tensile_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTensileTable() As SimMaterialTable (Read
@@ -109,7 +105,6 @@ class SimUltimateStrength(AnyObject):
     def get_material_compressive_table_column(self, i_material_compressive_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -135,7 +130,6 @@ class SimUltimateStrength(AnyObject):
     def get_material_tensile_table_column(self, i_material_tensile_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -159,4 +153,4 @@ class SimUltimateStrength(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTensileTableColumn(i_material_tensile_table_column))
 
     def __repr__(self):
-        return f'SimUltimateStrength(name="{ self.name }")'
+        return f'SimUltimateStrength(name="{self.name}")'

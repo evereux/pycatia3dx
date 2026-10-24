@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class TaskManager(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class TaskManager(AnyObject):
     def task_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TaskList() As CATSafeArrayVariant (Read Only)
@@ -66,7 +64,6 @@ class TaskManager(AnyObject):
     def create_task(self) -> ResourceTask:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTask() As ResourceTask
@@ -94,7 +91,6 @@ class TaskManager(AnyObject):
     def delete_task(self, i_task: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteTask(AnyObject iTask)
@@ -120,7 +116,6 @@ class TaskManager(AnyObject):
     def delete_tasks(self, i_task_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub DeleteTasks(CATSafeArrayVariant iTaskList)

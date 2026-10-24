@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_connections import StrConnections
 class SfdConnectionSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SfdConnectionSet(AnyObject):
     def get_connections(self) -> StrConnections:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConnections() As StrConnections
@@ -66,7 +64,6 @@ class SfdConnectionSet(AnyObject):
     def update_connections_set(self, o_updated_cnx: int, o_removed_cnx: int, o_unkown: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UpdateConnectionsSet(long oUpdatedCnx,long oRemovedCnx,long

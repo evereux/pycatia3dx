@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDesignExplorationStudyCase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,4 +56,4 @@ class SimDesignExplorationStudyCase(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimDesignExplorationStudyCase(name="{ self.name }")'
+        return f'SimDesignExplorationStudyCase(name="{self.name}")'

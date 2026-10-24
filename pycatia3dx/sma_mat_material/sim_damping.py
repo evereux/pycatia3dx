@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimDamping(AnyObject):
     def alpha(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Alpha() As double
@@ -98,7 +95,6 @@ class SimDamping(AnyObject):
     def beta(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Beta() As double
@@ -121,7 +117,6 @@ class SimDamping(AnyObject):
     def structural(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Structural() As double
@@ -141,4 +136,4 @@ class SimDamping(AnyObject):
         self.com_object.Structural = value
 
     def __repr__(self):
-        return f'SimDamping(name="{ self.name }")'
+        return f'SimDamping(name="{self.name}")'

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class KinCommands(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class KinCommands(Collection):
     def add(self, i_joint: EngConnection, i_type: int) -> KinCommand:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(EngConnection iJoint,CATKinMechanismCommandType iType) As
@@ -67,7 +65,6 @@ class KinCommands(Collection):
     def item(self, i_index: CATVariant) -> KinCommand:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As KinCommand
@@ -94,7 +91,6 @@ class KinCommands(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

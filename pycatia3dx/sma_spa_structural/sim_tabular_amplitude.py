@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTabularAmplitude(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -70,7 +68,6 @@ class SimTabularAmplitude(AnyObject):
     def domain_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DomainType() As SimTabularAmplitudeDomainType
@@ -93,7 +90,6 @@ class SimTabularAmplitude(AnyObject):
     def smoothing_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SmoothingValue() As double
@@ -116,7 +112,6 @@ class SimTabularAmplitude(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -133,7 +128,6 @@ class SimTabularAmplitude(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -147,7 +141,6 @@ class SimTabularAmplitude(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimTabularAmplitudeTableColumn iTableColumnName) As
@@ -169,4 +162,4 @@ class SimTabularAmplitude(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimTabularAmplitude(name="{ self.name }")'
+        return f'SimTabularAmplitude(name="{self.name}")'

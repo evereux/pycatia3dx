@@ -14,7 +14,6 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Curve2D(Geometry2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +38,6 @@ class Curve2D(Geometry2D):
     def continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Continuity() As short (Read Only)
@@ -60,7 +58,6 @@ class Curve2D(Geometry2D):
     def end_point(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property EndPoint() As Point2D
@@ -96,7 +93,6 @@ class Curve2D(Geometry2D):
     def period(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Period() As double (Read Only)
@@ -116,7 +112,6 @@ class Curve2D(Geometry2D):
     def start_point(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property StartPoint() As Point2D
@@ -151,7 +146,6 @@ class Curve2D(Geometry2D):
     def get_curvature(self, i_param: float, o_curvature: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetCurvature(double iParam,CATSafeArrayVariant oCurvature)
@@ -178,7 +172,6 @@ class Curve2D(Geometry2D):
     def get_derivatives(self, i_param: float, o_derivative: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetDerivatives(double iParam,CATSafeArrayVariant
@@ -205,7 +198,6 @@ class Curve2D(Geometry2D):
     def get_end_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
@@ -247,7 +239,6 @@ class Curve2D(Geometry2D):
     def get_length_at_param(self, i_from_param: float, i_to_param: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetLengthAtParam(double iFromParam,double iToParam) As
@@ -275,7 +266,6 @@ class Curve2D(Geometry2D):
     def get_param_at_length(self, i_from_param: float, i_length: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParamAtLength(double iFromParam,double iLength) As
@@ -306,7 +296,6 @@ class Curve2D(Geometry2D):
     def get_param_extents(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetParamExtents(CATSafeArrayVariant oParams)
@@ -345,7 +334,6 @@ class Curve2D(Geometry2D):
     def get_point_at_param(self, i_param: float, o_point: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetPointAtParam(double iParam,CATSafeArrayVariant oPoint)
@@ -368,7 +356,6 @@ class Curve2D(Geometry2D):
     def get_range_box(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
@@ -408,7 +395,6 @@ class Curve2D(Geometry2D):
     def get_tangent(self, i_param: float, o_tangency: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetTangent(double iParam,CATSafeArrayVariant oTangency)
@@ -432,7 +418,6 @@ class Curve2D(Geometry2D):
     def is_periodic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsPeriodic() As boolean

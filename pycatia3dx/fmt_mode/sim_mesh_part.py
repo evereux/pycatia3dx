@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimMeshPart(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class SimMeshPart(AnyObject):
     def construction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Construction() As boolean
@@ -63,7 +61,6 @@ class SimMeshPart(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -78,7 +75,6 @@ class SimMeshPart(AnyObject):
     def update_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpdateStatus() As boolean (Read Only)
@@ -92,7 +88,6 @@ class SimMeshPart(AnyObject):
     def add_support(self, i_support: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddSupport(AnyObject iSupport)
@@ -114,7 +109,6 @@ class SimMeshPart(AnyObject):
     def get_attribute_value(self, i_set_type: str, i_attribute: str, o_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
@@ -142,7 +136,6 @@ class SimMeshPart(AnyObject):
     def get_groups(self) -> SimGroups:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGroups() As SimGroups
@@ -160,7 +153,6 @@ class SimMeshPart(AnyObject):
     def get_mesh_specifications(self) -> SimMeshSpecifications:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeshSpecifications() As SimMeshSpecifications
@@ -179,7 +171,6 @@ class SimMeshPart(AnyObject):
     def get_number_of_supports(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfSupports() As long
@@ -197,7 +188,6 @@ class SimMeshPart(AnyObject):
     def get_numbering_labels(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberingLabels(SimMeshEntityType iType) As
@@ -217,7 +207,6 @@ class SimMeshPart(AnyObject):
     def get_parent_mesh_parts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParentMeshParts() As CATSafeArrayVariant
@@ -230,7 +219,6 @@ class SimMeshPart(AnyObject):
     def get_rule_attribute(self, i_attr: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRuleAttribute(SimMeshingRuleAttr iAttr) As CATBSTR
@@ -244,7 +232,6 @@ class SimMeshPart(AnyObject):
     def get_supports(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSupports() As CATSafeArrayVariant
@@ -263,7 +250,6 @@ class SimMeshPart(AnyObject):
     def get_topology_specifications(self) -> SimTopologySpecifications:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTopologySpecifications() As SimTopologySpecifications
@@ -282,7 +268,6 @@ class SimMeshPart(AnyObject):
     def remove_external_reference(self, i_set_type: str, i_attribute: str, i_support: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
@@ -311,7 +296,6 @@ class SimMeshPart(AnyObject):
     def remove_numbering(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveNumbering()
@@ -324,7 +308,6 @@ class SimMeshPart(AnyObject):
     def remove_support(self, i_support: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveSupport(AnyObject iSupport)
@@ -346,7 +329,6 @@ class SimMeshPart(AnyObject):
     def set_attribute_value(self, i_set_type: str, i_attribute: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
@@ -373,7 +355,6 @@ class SimMeshPart(AnyObject):
     def set_external_reference(self, i_set_type: str, i_attribute: str, i_support: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
@@ -402,7 +383,6 @@ class SimMeshPart(AnyObject):
     def set_mesh_parts_to_capture(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeshPartsToCapture(CATSafeArrayVariant iMeshParts)
@@ -447,7 +427,6 @@ class SimMeshPart(AnyObject):
     def set_rule(self, i_rule_name: str, i_extension: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRule(CATBSTR iRuleName,CATBSTR iExtension)
@@ -469,7 +448,6 @@ class SimMeshPart(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

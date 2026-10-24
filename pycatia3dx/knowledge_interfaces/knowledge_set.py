@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class KnowledgeSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +40,6 @@ class KnowledgeSet(AnyObject):
     def collection(self) -> KnowledgeCollection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Collection() As KnowledgeCollection (Read Only)
@@ -57,7 +54,6 @@ class KnowledgeSet(AnyObject):
     def factory(self) -> KnowledgeFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Factory() As KnowledgeFactory (Read Only)
@@ -69,4 +65,4 @@ class KnowledgeSet(AnyObject):
         return KnowledgeFactory(self.com_object.Factory)
 
     def __repr__(self):
-        return f'KnowledgeSet(name="{ self.name }")'
+        return f'KnowledgeSet(name="{self.name}")'

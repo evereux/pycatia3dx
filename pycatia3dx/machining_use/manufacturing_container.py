@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingContainer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingContainer(AnyObject):
     def get_part_operations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartOperations() As CATSafeArrayVariant
@@ -55,4 +52,4 @@ class ManufacturingContainer(AnyObject):
         return self.com_object.GetPartOperations()
 
     def __repr__(self):
-        return f'ManufacturingContainer(name="{ self.name }")'
+        return f'ManufacturingContainer(name="{self.name}")'

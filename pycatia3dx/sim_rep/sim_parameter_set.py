@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimParameterSet(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_double_array_parameter(self, i_parameter_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDoubleArrayParameter(CATBSTR iParameterName) As
@@ -58,7 +56,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_double_parameter(self, i_parameter_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDoubleParameter(CATBSTR iParameterName) As double
@@ -80,7 +77,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_integer_array_parameter(self, i_parameter_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIntegerArrayParameter(CATBSTR iParameterName) As
@@ -104,7 +100,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_integer_parameter(self, i_parameter_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIntegerParameter(CATBSTR iParameterName) As long
@@ -126,7 +121,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_object_array_parameter(self, i_parameter_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetObjectArrayParameter(CATBSTR iParameterName) As
@@ -149,7 +143,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_object_parameter(self, i_parameter_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetObjectParameter(CATBSTR iParameterName) As
@@ -172,7 +165,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_string_array_parameter(self, i_parameter_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStringArrayParameter(CATBSTR iParameterName) As
@@ -195,7 +187,6 @@ class SimParameterSet(CATBaseDispatch):
     def get_string_parameter(self, i_parameter_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStringParameter(CATBSTR iParameterName) As CATBSTR
@@ -217,7 +208,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_double_array_parameter(self, i_parameter_name: str, i_double_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDoubleArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
@@ -240,7 +230,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_double_parameter(self, i_parameter_name: str, i_double_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDoubleParameter(CATBSTR iParameterName,double
@@ -263,7 +252,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_integer_array_parameter(self, i_parameter_name: str, i_integer_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIntegerArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
@@ -287,7 +275,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_integer_parameter(self, i_parameter_name: str, i_integer_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIntegerParameter(CATBSTR iParameterName,long
@@ -310,7 +297,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_object_array_parameter(self, i_parameter_name: str, i_object_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObjectArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
@@ -333,7 +319,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_object_parameter(self, i_parameter_name: str, i_object_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObjectParameter(CATBSTR iParameterName,CATBaseDispatch
@@ -356,7 +341,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_string_array_parameter(self, i_parameter_name: str, i_string_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStringArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
@@ -379,7 +363,6 @@ class SimParameterSet(CATBaseDispatch):
     def set_string_parameter(self, i_parameter_name: str, i_string_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStringParameter(CATBSTR iParameterName,CATBSTR

@@ -14,7 +14,6 @@ from pycatia3dx.plm_modeller_base.plm_occurrence import PLMOccurrence
 class InterferenceResult(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class InterferenceResult(PLMEntity):
     def analysis_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnalysisStatus() As CatInterferenceResultStatus
@@ -86,7 +84,6 @@ class InterferenceResult(PLMEntity):
     def first_product(self) -> PLMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstProduct() As PLMOccurrence (Read Only)
@@ -104,7 +101,6 @@ class InterferenceResult(PLMEntity):
     def second_product(self) -> PLMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondProduct() As PLMOccurrence (Read Only)
@@ -122,7 +118,6 @@ class InterferenceResult(PLMEntity):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CatInterferenceResultType (Read Only)
@@ -148,7 +143,6 @@ class InterferenceResult(PLMEntity):
     def user_comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserComment() As CATBSTR
@@ -193,7 +187,6 @@ class InterferenceResult(PLMEntity):
     def user_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserType() As CatInterferenceResultUserType
@@ -244,7 +237,6 @@ class InterferenceResult(PLMEntity):
     def compute_picture(self, i_full_path: str, i_format: str, i_width: int, i_height: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputePicture(CATBSTR iFullPath,CATBSTR iFormat,long iWidth,long
@@ -302,7 +294,6 @@ class InterferenceResult(PLMEntity):
     def get_geometrical_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetGeometricalValues(CATSafeArrayVariant oPoint1,CATSafeArrayVariant
@@ -335,7 +326,6 @@ class InterferenceResult(PLMEntity):
     def get_intersection_volume(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetIntersectionVolume(CATSafeArrayVariant oPt_CoG,double

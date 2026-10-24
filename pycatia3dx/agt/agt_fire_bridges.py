@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class AGTFireBridges(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class AGTFireBridges(Collection):
     def item(self, i_index: CATVariant) -> AGTFireBridge:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As AGTFireBridge

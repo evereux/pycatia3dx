@@ -19,7 +19,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Sketch(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -44,7 +43,6 @@ class Sketch(AnyObject):
     def absolute_axis(self) -> Axis2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AbsoluteAxis() As Axis2D (Read Only)
@@ -75,7 +73,6 @@ class Sketch(AnyObject):
     def center_line(self) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property CenterLine() As Line2D
@@ -109,7 +106,6 @@ class Sketch(AnyObject):
     def constraints(self) -> Constraints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Constraints() As Constraints (Read Only)
@@ -138,7 +134,6 @@ class Sketch(AnyObject):
     def factory_2d(self) -> Factory2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Factory2D() As Factory2D (Read Only)
@@ -169,7 +164,6 @@ class Sketch(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property GeometricElements() As GeometricElements (Read Only)
@@ -198,7 +192,6 @@ class Sketch(AnyObject):
     def close_edition(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub CloseEdition()
@@ -222,7 +215,6 @@ class Sketch(AnyObject):
     def evaluate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Evaluate()
@@ -238,7 +230,6 @@ class Sketch(AnyObject):
     def get_absolute_axis_data(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAbsoluteAxisData(CATSafeArrayVariant oAxisData)
@@ -296,7 +287,6 @@ class Sketch(AnyObject):
     def inverse_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub InverseOrientation()
@@ -309,7 +299,6 @@ class Sketch(AnyObject):
     def open_edition(self) -> Factory2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func OpenEdition() As Factory2D
@@ -338,7 +327,6 @@ class Sketch(AnyObject):
     def set_absolute_axis_data(self, i_axis_data: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAbsoluteAxisData(CATSafeArrayVariant iAxisData)

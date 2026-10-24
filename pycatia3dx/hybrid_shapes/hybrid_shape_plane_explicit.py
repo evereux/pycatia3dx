@@ -12,10 +12,8 @@ from pycatia3dx.hybrid_shapes.plane import Plane
 
 
 class HybridShapePlaneExplicit(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -41,4 +39,4 @@ class HybridShapePlaneExplicit(Plane):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapePlaneExplicit(name="{ self.name }")'
+        return f'HybridShapePlaneExplicit(name="{self.name}")'

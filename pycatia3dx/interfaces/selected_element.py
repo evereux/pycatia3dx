@@ -22,7 +22,6 @@ from pycatia3dx.types.shapes import shape_types
 class SelectedElement(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -49,7 +48,6 @@ class SelectedElement(AnyObject):
     def leaf_product(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LeafProduct() As AnyObject (Read Only)
@@ -247,7 +245,6 @@ class SelectedElement(AnyObject):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Reference() As Reference (Read Only)
@@ -263,7 +260,6 @@ class SelectedElement(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Type() As CATBSTR (Read Only)
@@ -307,7 +303,6 @@ class SelectedElement(AnyObject):
     def value(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Value() As CATBaseDispatch (Read Only)
@@ -340,7 +335,6 @@ class SelectedElement(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetCoordinates(CATSafeArrayVariant ioPoint)

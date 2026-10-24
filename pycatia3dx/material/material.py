@@ -15,7 +15,6 @@ from pycatia3dx.material.material_generic import MaterialGeneric
 class Material(MaterialGeneric):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class Material(MaterialGeneric):
     def get_domains(self, o_list_domain: MaterialDomains) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDomains(MaterialDomains oListDomain)
@@ -69,7 +67,6 @@ class Material(MaterialGeneric):
     def get_simulation_behaviors(self, o_list_behavior: MaterialBehaviors) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSimulationBehaviors(MaterialBehaviors oListBehavior)

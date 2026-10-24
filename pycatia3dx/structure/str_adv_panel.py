@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrAdvPanel(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class StrAdvPanel(AnyObject):
     def set_as_last_limit(self, i_position_of_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAsLastLimit(long iPositionOfLimit)
@@ -65,4 +62,4 @@ class StrAdvPanel(AnyObject):
         return self.com_object.SetAsLastLimit(i_position_of_limit)
 
     def __repr__(self):
-        return f'StrAdvPanel(name="{ self.name }")'
+        return f'StrAdvPanel(name="{self.name}")'

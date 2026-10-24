@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DSheet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class Layout2DSheet(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As CatPaperOrientation
@@ -68,7 +66,6 @@ class Layout2DSheet(AnyObject):
     def page_setup(self) -> DrawingPageSetup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PageSetup() As DrawingPageSetup (Read Only)
@@ -90,7 +87,6 @@ class Layout2DSheet(AnyObject):
     def paper_height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaperHeight() As double
@@ -123,7 +119,6 @@ class Layout2DSheet(AnyObject):
     def paper_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaperName() As CATBSTR
@@ -152,7 +147,6 @@ class Layout2DSheet(AnyObject):
     def paper_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaperSize() As CatPaperSize
@@ -181,7 +175,6 @@ class Layout2DSheet(AnyObject):
     def paper_width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaperWidth() As double
@@ -213,7 +206,6 @@ class Layout2DSheet(AnyObject):
     def print_area(self) -> PrintArea:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrintArea() As PrintArea (Read Only)
@@ -235,7 +227,6 @@ class Layout2DSheet(AnyObject):
     def projection_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProjectionMethod() As CatSheetProjectionMethod
@@ -264,7 +255,6 @@ class Layout2DSheet(AnyObject):
     def sheet_scale(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SheetScale() As double
@@ -293,7 +283,6 @@ class Layout2DSheet(AnyObject):
     def sheet_style(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SheetStyle(CATBSTR iSheetStyleName) (Write Only)
@@ -335,7 +324,6 @@ class Layout2DSheet(AnyObject):
     def views(self) -> Layout2DViews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Views() As Layout2DViews (Read Only)
@@ -358,7 +346,6 @@ class Layout2DSheet(AnyObject):
     def visu_in_3d(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisuIn3D() As CatVisuIn3DMode
@@ -385,7 +372,6 @@ class Layout2DSheet(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
@@ -406,7 +392,6 @@ class Layout2DSheet(AnyObject):
     def is_detail(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsDetail() As boolean
@@ -425,7 +410,6 @@ class Layout2DSheet(AnyObject):
     def print_out(self, i_rendering_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut(CatRenderingMode iRenderingMode)
@@ -453,7 +437,6 @@ class Layout2DSheet(AnyObject):
     def print_out_2(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut2()
@@ -475,7 +458,6 @@ class Layout2DSheet(AnyObject):
     def print_to_file(self, file_name: str, i_rendering_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile(CATBSTR fileName,CatRenderingMode
@@ -506,7 +488,6 @@ class Layout2DSheet(AnyObject):
     def print_to_file2(self, file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile2(CATBSTR fileName)
@@ -533,7 +514,6 @@ class Layout2DSheet(AnyObject):
     def reorder_views(self, i_ordered_views: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub reorder_Views(CATSafeArrayVariant iOrderedViews)

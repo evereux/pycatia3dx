@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Person(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +49,6 @@ class Person(AnyObject):
     def collaborative_space_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CollaborativeSpaceID() As CATBSTR (Read Only)
@@ -76,7 +73,6 @@ class Person(AnyObject):
     def organization_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrganizationID() As CATBSTR (Read Only)
@@ -100,7 +96,6 @@ class Person(AnyObject):
     def person_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PersonID() As CATBSTR (Read Only)
@@ -124,7 +119,6 @@ class Person(AnyObject):
     def role_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RoleID() As CATBSTR (Read Only)
@@ -143,4 +137,4 @@ class Person(AnyObject):
         return self.com_object.RoleID
 
     def __repr__(self):
-        return f'Person(name="{ self.name }")'
+        return f'Person(name="{self.name}")'

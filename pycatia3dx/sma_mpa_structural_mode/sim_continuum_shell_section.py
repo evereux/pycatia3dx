@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimContinuumShellSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimContinuumShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntegrationScheme() As
@@ -101,7 +98,6 @@ class SimContinuumShellSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -124,7 +120,6 @@ class SimContinuumShellSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -147,7 +142,6 @@ class SimContinuumShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumIntPoints() As long
@@ -170,7 +164,6 @@ class SimContinuumShellSection(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -185,7 +178,6 @@ class SimContinuumShellSection(AnyObject):
     def poisson_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonMethod() As SimShellSectionPoissonMethod
@@ -208,7 +200,6 @@ class SimContinuumShellSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonValue() As double
@@ -231,7 +222,6 @@ class SimContinuumShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreIntegrationFlag() As boolean
@@ -259,7 +249,6 @@ class SimContinuumShellSection(AnyObject):
     def solids_at_junction_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolidsAtJunctionFlag() As boolean
@@ -288,7 +277,6 @@ class SimContinuumShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -327,7 +315,6 @@ class SimContinuumShellSection(AnyObject):
     def get_material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialBehavior() As CATBaseDispatch
@@ -346,7 +333,6 @@ class SimContinuumShellSection(AnyObject):
     def set_material_behavior(self, i_behavior_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
@@ -370,4 +356,4 @@ class SimContinuumShellSection(AnyObject):
         return self.com_object.SetMaterialBehavior(i_behavior_name)
 
     def __repr__(self):
-        return f'SimContinuumShellSection(name="{ self.name }")'
+        return f'SimContinuumShellSection(name="{self.name}")'

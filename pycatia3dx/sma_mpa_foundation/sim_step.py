@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_feature_states import SimFeatureStates
 
 
 class SimStep(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimStep(AnyObject):
     def feature_states(self) -> SimFeatureStates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureStates() As SimFeatureStates (Read Only)
@@ -74,7 +71,6 @@ class SimStep(AnyObject):
     def create_analysis_default_output_requests(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateAnalysisDefaultOutputRequests()
@@ -87,4 +83,4 @@ class SimStep(AnyObject):
         return self.com_object.CreateAnalysisDefaultOutputRequests()
 
     def __repr__(self):
-        return f'SimStep(name="{ self.name }")'
+        return f'SimStep(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMathPoint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +57,6 @@ class SimMathPoint(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property X() As double
@@ -82,7 +79,6 @@ class SimMathPoint(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Y() As double
@@ -105,7 +101,6 @@ class SimMathPoint(AnyObject):
     def z(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Z() As double
@@ -125,4 +120,4 @@ class SimMathPoint(AnyObject):
         self.com_object.Z = value
 
     def __repr__(self):
-        return f'SimMathPoint(name="{ self.name }")'
+        return f'SimMathPoint(name="{self.name}")'

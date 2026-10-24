@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeFilletTriTangent(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -47,7 +45,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElem() As Reference
@@ -77,7 +74,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstOrientation() As long
@@ -103,7 +99,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RemoveElem() As Reference
@@ -126,7 +121,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RemoveOrientation() As long
@@ -152,7 +146,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RibbonRelimitationMode() As long
@@ -177,7 +170,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElem() As Reference
@@ -213,7 +205,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondOrientation() As long
@@ -239,7 +230,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def supports_trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SupportsTrimMode() As long
@@ -265,7 +255,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertFirstOrientation()
@@ -278,7 +267,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_remove_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertRemoveOrientation()
@@ -291,7 +279,6 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertSecondOrientation()
@@ -302,4 +289,4 @@ class HybridShapeFilletTriTangent(HybridShape):
         return self.com_object.InvertSecondOrientation()
 
     def __repr__(self):
-        return f'HybridShapeFilletTriTangent(name="{ self.name }")'
+        return f'HybridShapeFilletTriTangent(name="{self.name}")'

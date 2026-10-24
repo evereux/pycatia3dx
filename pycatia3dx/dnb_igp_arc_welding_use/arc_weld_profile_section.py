@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_arc_welding_use.arc_weld_csp_profiles import ArcWeldCSPP
 
 
 class ArcWeldProfileSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class ArcWeldProfileSection(AnyObject):
     def delay_parameter_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DelayParameterName() As CATBSTR (Read Only)
@@ -74,7 +71,6 @@ class ArcWeldProfileSection(AnyObject):
     def delay_parameter_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DelayParameterValue() As double (Read Only)
@@ -101,7 +97,6 @@ class ArcWeldProfileSection(AnyObject):
     def delay_profile(self) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DelayProfile() As RscApplicativeProfile (Read Only)
@@ -128,7 +123,6 @@ class ArcWeldProfileSection(AnyObject):
     def is_delay_parameter_linked(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsDelayParameterLinked() As boolean (Read Only)
@@ -155,7 +149,6 @@ class ArcWeldProfileSection(AnyObject):
     def is_speed_parameter_linked(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsSpeedParameterLinked() As boolean (Read Only)
@@ -182,7 +175,6 @@ class ArcWeldProfileSection(AnyObject):
     def profiles(self) -> ArcWeldCSPProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Profiles() As ArcWeldCSPProfiles (Read Only)
@@ -208,7 +200,6 @@ class ArcWeldProfileSection(AnyObject):
     def speed_parameter_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpeedParameterName() As CATBSTR (Read Only)
@@ -235,7 +226,6 @@ class ArcWeldProfileSection(AnyObject):
     def speed_parameter_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpeedParameterValue() As double (Read Only)
@@ -262,7 +252,6 @@ class ArcWeldProfileSection(AnyObject):
     def speed_profile(self) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpeedProfile() As RscApplicativeProfile (Read Only)
@@ -288,7 +277,6 @@ class ArcWeldProfileSection(AnyObject):
     def link_delay_profile(self, i_profile: RscApplicativeProfile, i_parameter_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LinkDelayProfile(RscApplicativeProfile iProfile,CATBSTR
@@ -322,7 +310,6 @@ class ArcWeldProfileSection(AnyObject):
     def link_speed_profile(self, i_profile: RscApplicativeProfile, i_parameter_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LinkSpeedProfile(RscApplicativeProfile iProfile,CATBSTR
@@ -354,4 +341,4 @@ class ArcWeldProfileSection(AnyObject):
         return self.com_object.LinkSpeedProfile(i_profile.com_object, i_parameter_name)
 
     def __repr__(self):
-        return f'ArcWeldProfileSection(name="{ self.name }")'
+        return f'ArcWeldProfileSection(name="{self.name}")'

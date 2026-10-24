@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PCBService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class PCBService(Service):
     def create_board(self, i_root: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateBoard(CATBaseDispatch iRoot) As CATBaseDispatch
@@ -65,7 +63,6 @@ class PCBService(Service):
                          i_elec_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateComponent(CATBaseDispatch iRoot,Part iPart,CATBSTR
@@ -107,7 +104,6 @@ class PCBService(Service):
     def create_panel(self, i_root: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePanel(CATBaseDispatch iRoot) As CATBaseDispatch
@@ -134,7 +130,6 @@ class PCBService(Service):
     def get_pcb_object(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPCBObject(Part iPart) As CATBaseDispatch
@@ -158,7 +153,6 @@ class PCBService(Service):
     def get_parent_product(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParentProduct(Part iPart) As CATBaseDispatch

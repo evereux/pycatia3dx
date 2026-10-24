@@ -12,10 +12,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscPulse(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RscPulse(RscInstruction):
     def delay(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Delay() As double
@@ -90,7 +87,6 @@ class RscPulse(RscInstruction):
     def duration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Duration() As double
@@ -139,7 +135,6 @@ class RscPulse(RscInstruction):
     def pulse_data_entity(self) -> RscDataEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PulseDataEntity() As RscDataEntity
@@ -187,7 +182,6 @@ class RscPulse(RscInstruction):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As CATBSTR
@@ -234,7 +228,6 @@ class RscPulse(RscInstruction):
     def activate_invert_mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivateInvertMode()
@@ -265,7 +258,6 @@ class RscPulse(RscInstruction):
     def de_activate_invert_mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeActivateInvertMode()
@@ -293,7 +285,6 @@ class RscPulse(RscInstruction):
     def has_infinite_duration(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasInfiniteDuration() As boolean
@@ -329,7 +320,6 @@ class RscPulse(RscInstruction):
     def is_invert_mode_activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsInvertModeActivated() As boolean
@@ -365,7 +355,6 @@ class RscPulse(RscInstruction):
     def set_infinite_duration(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInfiniteDuration()
@@ -393,7 +382,6 @@ class RscPulse(RscInstruction):
     def un_set_delay(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnSetDelay()
@@ -419,4 +407,4 @@ class RscPulse(RscInstruction):
         return self.com_object.UnSetDelay()
 
     def __repr__(self):
-        return f'RscPulse(name="{ self.name }")'
+        return f'RscPulse(name="{self.name}")'

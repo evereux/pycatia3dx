@@ -13,10 +13,8 @@ from pycatia3dx.tps.datum_simple import DatumSimple
 
 
 class SemanticGDTFrameExtension(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class SemanticGDTFrameExtension(AnyObject):
     def direction_specification(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectionSpecification() As CATBSTR (Read Only)
@@ -69,7 +66,6 @@ class SemanticGDTFrameExtension(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -93,7 +89,6 @@ class SemanticGDTFrameExtension(AnyObject):
     def direction_reference(self) -> DatumSimple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DirectionReference() As DatumSimple
@@ -112,7 +107,6 @@ class SemanticGDTFrameExtension(AnyObject):
     def orientation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Orientation() As double
@@ -130,4 +124,4 @@ class SemanticGDTFrameExtension(AnyObject):
         return self.com_object.Orientation()
 
     def __repr__(self):
-        return f'SemanticGdtFrameExtension(name="{ self.name }")'
+        return f'SemanticGdtFrameExtension(name="{self.name}")'

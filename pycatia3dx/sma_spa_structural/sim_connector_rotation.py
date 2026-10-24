@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorRotation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimConnectorRotation(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimConnectorRotation(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
@@ -119,7 +115,6 @@ class SimConnectorRotation(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -134,7 +129,6 @@ class SimConnectorRotation(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -150,7 +144,6 @@ class SimConnectorRotation(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As SimConnectorRotationVariationType
@@ -172,7 +165,6 @@ class SimConnectorRotation(AnyObject):
     def get_angle(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle(SimDof iDegreeOfFreedom) As double
@@ -195,7 +187,6 @@ class SimConnectorRotation(AnyObject):
     def get_rotation_activation_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRotationActivationFlag(SimDof iDegreeOfFreedom) As
@@ -218,7 +209,6 @@ class SimConnectorRotation(AnyObject):
     def set_angle(self, i_degree_of_freedom: int, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAngle(SimDof iDegreeOfFreedom,double iAngle)
@@ -240,7 +230,6 @@ class SimConnectorRotation(AnyObject):
     def set_rotation_activation_flag(self, i_degree_of_freedom: int, i_rotation_activation_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationActivationFlag(SimDof iDegreeOfFreedom,boolean
@@ -263,4 +252,4 @@ class SimConnectorRotation(AnyObject):
         return self.com_object.SetRotationActivationFlag(i_degree_of_freedom, i_rotation_activation_flag)
 
     def __repr__(self):
-        return f'SimConnectorRotation(name="{ self.name }")'
+        return f'SimConnectorRotation(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class InertiaService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class InertiaService(Service):
     def get_inertia_element(self, i_selected_item: AnyObject) -> Inertia:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInertiaElement(AnyObject iSelectedItem) As Inertia

@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeHelix(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapeHelix(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Axis() As Reference
@@ -84,7 +81,6 @@ class HybridShapeHelix(HybridShape):
     def clockwise_revolution(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ClockwiseRevolution() As boolean
@@ -113,7 +109,6 @@ class HybridShapeHelix(HybridShape):
     def height(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Height() As Length (Read Only)
@@ -133,7 +128,6 @@ class HybridShapeHelix(HybridShape):
     def invert_axis(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertAxis() As boolean
@@ -162,7 +156,6 @@ class HybridShapeHelix(HybridShape):
     def pitch(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Pitch() As Length (Read Only)
@@ -182,7 +175,6 @@ class HybridShapeHelix(HybridShape):
     def pitch2(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Pitch2() As Length (Read Only)
@@ -202,7 +194,6 @@ class HybridShapeHelix(HybridShape):
     def pitch_law_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PitchLawType() As long
@@ -230,7 +221,6 @@ class HybridShapeHelix(HybridShape):
     def profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Profile() As Reference
@@ -258,7 +248,6 @@ class HybridShapeHelix(HybridShape):
     def revol_number(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RevolNumber() As RealParam (Read Only)
@@ -278,7 +267,6 @@ class HybridShapeHelix(HybridShape):
     def starting_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartingAngle() As Angle (Read Only)
@@ -298,7 +286,6 @@ class HybridShapeHelix(HybridShape):
     def starting_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartingPoint() As Reference
@@ -328,7 +315,6 @@ class HybridShapeHelix(HybridShape):
     def taper_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TaperAngle() As Angle (Read Only)
@@ -348,7 +334,6 @@ class HybridShapeHelix(HybridShape):
     def taper_outward(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TaperOutward() As boolean
@@ -376,7 +361,6 @@ class HybridShapeHelix(HybridShape):
     def set_height(self, i_height: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetHeight(double iHeight)
@@ -395,7 +379,6 @@ class HybridShapeHelix(HybridShape):
     def set_pitch(self, i_pitch: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPitch(double iPitch)
@@ -414,7 +397,6 @@ class HybridShapeHelix(HybridShape):
     def set_pitch2(self, i_pitch2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPitch2(double iPitch2)
@@ -433,7 +415,6 @@ class HybridShapeHelix(HybridShape):
     def set_revolution_number(self, i_nb_revol: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetRevolutionNumber(double iNbRevol)
@@ -452,7 +433,6 @@ class HybridShapeHelix(HybridShape):
     def set_starting_angle(self, i_starting_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartingAngle(double iStartingAngle)
@@ -471,7 +451,6 @@ class HybridShapeHelix(HybridShape):
     def set_taper_angle(self, i_taper_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTaperAngle(double iTaperAngle)
@@ -488,4 +467,4 @@ class HybridShapeHelix(HybridShape):
         return self.com_object.SetTaperAngle(i_taper_angle)
 
     def __repr__(self):
-        return f'HybridShapeHelix(name="{ self.name }")'
+        return f'HybridShapeHelix(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class StrFlanges(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class StrFlanges(Collection):
     def add(self) -> StrFlange:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As StrFlange
@@ -66,7 +64,6 @@ class StrFlanges(Collection):
     def item(self, i_index: CATVariant) -> StrFlange:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As StrFlange
@@ -95,7 +92,6 @@ class StrFlanges(Collection):
     def remove(self, i_flange: StrFlange) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(StrFlange iFlange)

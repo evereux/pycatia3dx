@@ -17,7 +17,6 @@ from pycatia3dx.types import CATVariant
 class AssemblyConstraints(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class AssemblyConstraints(Collection):
     def add(self, i_type: int, i_geometries: tuple) -> AssemblyConstraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatAssemblyConstraintType iType,CATSafeArrayVariant iGeometries) As
@@ -116,7 +114,6 @@ class AssemblyConstraints(Collection):
     def item(self, i_index: CATVariant) -> AssemblyConstraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func Item(CATVariant iIndex) As AssemblyConstraint
@@ -139,7 +136,6 @@ class AssemblyConstraints(Collection):
     def remove(self, i_eng_connection: AssemblyConstraint) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub Remove(AssemblyConstraint iEngConnection)

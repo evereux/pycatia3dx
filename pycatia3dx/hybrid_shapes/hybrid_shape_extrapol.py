@@ -16,7 +16,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeExtrapol(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -60,7 +59,6 @@ class HybridShapeExtrapol(HybridShape):
     def border_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BorderType() As long
@@ -88,7 +86,6 @@ class HybridShapeExtrapol(HybridShape):
     def boundary(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Boundary() As Reference
@@ -116,7 +113,6 @@ class HybridShapeExtrapol(HybridShape):
     def constant_length_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ConstantLengthMode() As boolean
@@ -141,7 +137,6 @@ class HybridShapeExtrapol(HybridShape):
     def continuity_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ContinuityType() As long
@@ -169,7 +164,6 @@ class HybridShapeExtrapol(HybridShape):
     def elem_to_extrapol(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToExtrapol() As Reference
@@ -194,7 +188,6 @@ class HybridShapeExtrapol(HybridShape):
     def elem_until(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemUntil() As Reference
@@ -222,7 +215,6 @@ class HybridShapeExtrapol(HybridShape):
     def extend_edges_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtendEdgesMode() As boolean
@@ -247,7 +239,6 @@ class HybridShapeExtrapol(HybridShape):
     def extrapol_both_sides_identically(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtrapolBothSidesIdentically() As boolean
@@ -272,7 +263,6 @@ class HybridShapeExtrapol(HybridShape):
     def length(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Length() As Length (Read Only)
@@ -292,7 +282,6 @@ class HybridShapeExtrapol(HybridShape):
     def limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property LimitType() As long
@@ -320,7 +309,6 @@ class HybridShapeExtrapol(HybridShape):
     def propagation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PropagationMode() As long
@@ -344,7 +332,6 @@ class HybridShapeExtrapol(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -369,7 +356,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_boundary(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBoundary(long iPos) As Reference
@@ -390,7 +376,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_continuity_type(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetContinuityType(long iPos) As long
@@ -409,7 +394,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_elem_until(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElemUntil(long iPos) As Reference
@@ -427,7 +411,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_internal_edges_element(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetInternalEdgesElement(long iPos) As Reference
@@ -449,7 +432,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_length(self, i_pos: int) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLength(long iPos) As Length
@@ -467,7 +449,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_limit_type(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLimitType(long iPos) As long
@@ -486,7 +467,6 @@ class HybridShapeExtrapol(HybridShape):
     def get_number_of_extrapolations(self, o_number_of_extrapolations: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNumberOfExtrapolations(long oNumberOfExtrapolations)
@@ -502,7 +482,6 @@ class HybridShapeExtrapol(HybridShape):
     def is_assemble(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func IsAssemble() As boolean
@@ -523,7 +502,6 @@ class HybridShapeExtrapol(HybridShape):
     def remove_all_extrapolations_except_the_first_one(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllExtrapolationsExceptTheFirstOne()
@@ -536,7 +514,6 @@ class HybridShapeExtrapol(HybridShape):
     def remove_all_internal_edges_element(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllInternalEdgesElement()
@@ -549,7 +526,6 @@ class HybridShapeExtrapol(HybridShape):
     def remove_extrapolation(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveExtrapolation(long iPos)
@@ -563,7 +539,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_assemble(self, i_assemble: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAssemble(boolean iAssemble)
@@ -585,7 +560,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_boundary(self, i_pos: int, i_boundary: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetBoundary(long iPos,Reference iBoundary)
@@ -599,7 +573,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_continuity_type(self, i_pos: int, i_lim: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetContinuityType(long iPos,long iLim)
@@ -613,7 +586,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_elem_until(self, i_pos: int, i_elem_until: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetElemUntil(long iPos,Reference iElemUntil)
@@ -627,7 +599,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_length(self, i_pos: int, i_length: Length) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLength(long iPos,Length iLength)
@@ -642,7 +613,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_length_d(self, i_pos: int, i_length: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLengthD(long iPos,double iLength)
@@ -656,7 +626,6 @@ class HybridShapeExtrapol(HybridShape):
     def set_limit_type(self, i_pos: int, i_lim: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLimitType(long iPos,long iLim)

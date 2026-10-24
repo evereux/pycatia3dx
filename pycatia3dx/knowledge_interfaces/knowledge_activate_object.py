@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.knowledge_object import KnowledgeObject
 
 
 class KnowledgeActivateObject(KnowledgeObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +37,6 @@ class KnowledgeActivateObject(KnowledgeObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Activated() As boolean (Read Only)
@@ -64,7 +61,6 @@ class KnowledgeActivateObject(KnowledgeObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Activate()
@@ -83,7 +79,6 @@ class KnowledgeActivateObject(KnowledgeObject):
     def deactivate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Deactivate()
@@ -100,4 +95,4 @@ class KnowledgeActivateObject(KnowledgeObject):
         return self.com_object.Deactivate()
 
     def __repr__(self):
-        return f'KnowledgeActivateObject(name="{ self.name }")'
+        return f'KnowledgeActivateObject(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 
 
 class ArcOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ArcOperation(AnyObject):
     def arc_profile(self) -> CATBaseUnknown:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ArcProfile() As CATBaseUnknown
@@ -67,4 +64,4 @@ class ArcOperation(AnyObject):
         self.com_object.ArcProfile = value
 
     def __repr__(self):
-        return f'ArcOperation(name="{ self.name }")'
+        return f'ArcOperation(name="{self.name}")'

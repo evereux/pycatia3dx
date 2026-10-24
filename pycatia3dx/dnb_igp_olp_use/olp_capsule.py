@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPCapsule(OLPShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPCapsule(OLPShape):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Height() As double
@@ -69,7 +66,6 @@ class OLPCapsule(OLPShape):
     def radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Radius() As double
@@ -91,7 +87,6 @@ class OLPCapsule(OLPShape):
     def get_base_center(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBaseCenter(DELOlpPositionRef iOrigin) As OlpTransform
@@ -116,7 +111,6 @@ class OLPCapsule(OLPShape):
     def set_base_center(self, i_origin: int, i_location: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaseCenter(DELOlpPositionRef iOrigin,OlpTransform
@@ -140,4 +134,4 @@ class OLPCapsule(OLPShape):
         return self.com_object.SetBaseCenter(i_origin, i_location.com_object)
 
     def __repr__(self):
-        return f'OLPCapsule(name="{ self.name }")'
+        return f'OLPCapsule(name="{self.name}")'

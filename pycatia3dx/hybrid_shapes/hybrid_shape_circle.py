@@ -17,7 +17,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeCircle(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -58,7 +57,6 @@ class HybridShapeCircle(HybridShape):
     def axis_computation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisComputation() As boolean
@@ -90,7 +88,6 @@ class HybridShapeCircle(HybridShape):
     def axis_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisDirection() As HybridShapeDirection
@@ -127,7 +124,6 @@ class HybridShapeCircle(HybridShape):
     def end_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndAngle() As Angle (Read Only)
@@ -149,7 +145,6 @@ class HybridShapeCircle(HybridShape):
     def start_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartAngle() As Angle (Read Only)
@@ -170,7 +165,6 @@ class HybridShapeCircle(HybridShape):
     def get_axis(self, i_position: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetAxis(long iPosition,Reference oAxis)
@@ -201,7 +195,6 @@ class HybridShapeCircle(HybridShape):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetCenter(double oCenterX,double oCenterY,double oCenterZ)
@@ -220,7 +213,6 @@ class HybridShapeCircle(HybridShape):
     def get_free_center(self, io_center: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
@@ -271,7 +263,6 @@ class HybridShapeCircle(HybridShape):
     def get_free_radius(self, o_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetFreeRadius(double oRadius)
@@ -297,7 +288,6 @@ class HybridShapeCircle(HybridShape):
     def get_limitation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLimitation() As long
@@ -315,7 +305,6 @@ class HybridShapeCircle(HybridShape):
     def set_limitation(self, i_limitation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLimitation(long iLimitation)

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class VocSilhouetteService(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,10 +34,11 @@ class VocSilhouetteService(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_a_silhouette(self, i_products_to_treat: tuple, i_product_reference: VPMReference, i_list_of_view_points: tuple, i_silhouette_acc: float, i_accuracy_for_simplification: float) -> None:
+    def create_a_silhouette(self, i_products_to_treat: tuple, i_product_reference: VPMReference,
+                            i_list_of_view_points: tuple, i_silhouette_acc: float,
+                            i_accuracy_for_simplification: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -76,7 +75,8 @@ class VocSilhouetteService(AnyObject):
         :param float i_accuracy_for_simplification:
         :return: None
         """
-        return self.com_object.CreateASilhouette(i_products_to_treat, i_product_reference.com_object, i_list_of_view_points, i_silhouette_acc, i_accuracy_for_simplification)
+        return self.com_object.CreateASilhouette(i_products_to_treat, i_product_reference.com_object,
+                                                 i_list_of_view_points, i_silhouette_acc, i_accuracy_for_simplification)
 
     def __repr__(self):
-        return f'VocSilhouetteService(name="{ self.name }")'
+        return f'VocSilhouetteService(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class DrawingTextProperties(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def anchor_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorPoint() As CatTextAnchorPosition
@@ -69,7 +67,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def blanking(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Blanking() As CatBlankingMode
@@ -98,7 +95,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def bold(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Bold() As long
@@ -128,7 +124,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def color(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Color() As long
@@ -159,7 +154,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FontName() As CATBSTR
@@ -188,7 +182,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_size(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FontSize() As double
@@ -218,7 +211,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def frame_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrameType() As CatTextFrameType
@@ -247,7 +239,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def italic(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Italic() As long
@@ -277,7 +268,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def justification(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Justification() As CatJustification
@@ -308,7 +298,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def kerning(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Kerning() As long
@@ -338,7 +327,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def mirror(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mirror() As CatTextFlipMode
@@ -367,7 +355,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def overline(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Overline() As long
@@ -397,7 +384,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def strike_thru(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrikeThru() As long
@@ -428,7 +414,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def subscript(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Subscript() As long
@@ -458,7 +443,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def superscript(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Superscript() As long
@@ -489,7 +473,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def underline(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Underline() As long
@@ -518,7 +501,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def activate_frame(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivateFrame(CatTextFrameType iType)
@@ -553,7 +535,6 @@ class DrawingTextProperties(CATBaseDispatch):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Layout2DSheets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class Layout2DSheets(Collection):
     def active_sheet(self) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveSheet() As Layout2DSheet (Read Only)
@@ -67,7 +65,6 @@ class Layout2DSheets(Collection):
     def add(self, i_layout_sheet_name: str) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iLayoutSheetName) As Layout2DSheet
@@ -102,7 +99,6 @@ class Layout2DSheets(Collection):
     def add_detail(self, i_layout_sheet_name: str) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iLayoutSheetName) As Layout2DSheet
@@ -139,7 +135,6 @@ class Layout2DSheets(Collection):
     def item(self, i_index: CATVariant) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Layout2DSheet
@@ -182,7 +177,6 @@ class Layout2DSheets(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

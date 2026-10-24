@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPIdFixer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -73,7 +71,6 @@ class OLPIdFixer(AnyObject):
     def characters_to_remove(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CharactersToRemove() As CATBSTR
@@ -100,7 +97,6 @@ class OLPIdFixer(AnyObject):
     def invalid_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvalidNames() As CATSafeArrayVariant
@@ -124,7 +120,6 @@ class OLPIdFixer(AnyObject):
     def invalid_prefix(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvalidPrefix() As CATBSTR
@@ -147,7 +142,6 @@ class OLPIdFixer(AnyObject):
     def invalid_starting_chars(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvalidStartingChars() As CATBSTR
@@ -176,7 +170,6 @@ class OLPIdFixer(AnyObject):
     def max_length(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxLength() As long
@@ -202,7 +195,6 @@ class OLPIdFixer(AnyObject):
     def replace_white_space(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReplaceWhiteSpace() As boolean
@@ -228,7 +220,6 @@ class OLPIdFixer(AnyObject):
     def replace_with_chars(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReplaceWithChars() As CATBSTR
@@ -254,7 +245,6 @@ class OLPIdFixer(AnyObject):
     def unique(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Unique() As boolean
@@ -280,7 +270,6 @@ class OLPIdFixer(AnyObject):
     def fix_id(self, i_object: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FixID(AnyObject iObject) As CATBSTR
@@ -306,7 +295,6 @@ class OLPIdFixer(AnyObject):
     def fix_id_with_name(self, i_object: AnyObject, i_starting_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FixIDWithName(AnyObject iObject,CATBSTR iStartingName) As
@@ -336,4 +324,4 @@ class OLPIdFixer(AnyObject):
         return self.com_object.FixIDWithName(i_object.com_object, i_starting_name)
 
     def __repr__(self):
-        return f'OLPIdFixer(name="{ self.name }")'
+        return f'OLPIdFixer(name="{self.name}")'

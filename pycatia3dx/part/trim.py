@@ -12,10 +12,8 @@ from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Trim(BooleanShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class Trim(BooleanShape):
     def add_face_to_keep(self, i_face_to_keep: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToKeep(Reference iFaceToKeep)
@@ -67,7 +64,6 @@ class Trim(BooleanShape):
     def add_face_to_keep2(self, i_face_to_keep: Reference, i_face_adjacent_for_keep: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToKeep2(Reference iFaceToKeep,Reference
@@ -100,7 +96,6 @@ class Trim(BooleanShape):
     def add_face_to_remove(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToRemove(Reference iFaceToRemove)
@@ -127,7 +122,6 @@ class Trim(BooleanShape):
     def add_face_to_remove2(self, i_face_to_remove: Reference, i_face_adjacent_for_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToRemove2(Reference iFaceToRemove,Reference
@@ -160,7 +154,6 @@ class Trim(BooleanShape):
     def withdraw_face_to_keep(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawFaceToKeep(Reference iFaceToWithdraw)
@@ -187,7 +180,6 @@ class Trim(BooleanShape):
     def withdraw_face_to_keep2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_keep: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawFaceToKeep2(Reference iFaceToWithdraw,Reference
@@ -220,7 +212,6 @@ class Trim(BooleanShape):
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
@@ -247,7 +238,6 @@ class Trim(BooleanShape):
     def withdraw_face_to_remove2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawFaceToRemove2(Reference iFaceToWithdraw,Reference
@@ -275,7 +265,8 @@ class Trim(BooleanShape):
         :param Reference i_face_adjacent_for_remove:
         :return: None
         """
-        return self.com_object.WithdrawFaceToRemove2(i_face_to_withdraw.com_object, i_face_adjacent_for_remove.com_object)
+        return self.com_object.WithdrawFaceToRemove2(i_face_to_withdraw.com_object,
+                                                     i_face_adjacent_for_remove.com_object)
 
     def __repr__(self):
-        return f'Trim(name="{ self.name }")'
+        return f'Trim(name="{self.name}")'

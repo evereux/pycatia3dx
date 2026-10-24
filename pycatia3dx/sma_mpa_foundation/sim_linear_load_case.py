@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_feature_states import SimFeatureStates
 
 
 class SimLinearLoadCase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +56,6 @@ class SimLinearLoadCase(AnyObject):
     def feature_states(self) -> SimFeatureStates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureStates() As SimFeatureStates (Read Only)
@@ -72,7 +69,6 @@ class SimLinearLoadCase(AnyObject):
     def append_load_case_contents(self, i_source_load_case: 'SimLinearLoadCase') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AppendLoadCaseContents(SimLinearLoadCase iSourceLoadCase)
@@ -91,4 +87,4 @@ class SimLinearLoadCase(AnyObject):
         return self.com_object.AppendLoadCaseContents(i_source_load_case.com_object)
 
     def __repr__(self):
-        return f'SimLinearLoadCase(name="{ self.name }")'
+        return f'SimLinearLoadCase(name="{self.name}")'

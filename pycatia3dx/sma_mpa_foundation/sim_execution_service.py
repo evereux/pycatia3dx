@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimExecutionService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +50,6 @@ class SimExecutionService(Service):
     def basic_execute_all(self, i_simulation_reference: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func BasicExecuteAll(AnyObject iSimulationReference) As
@@ -74,4 +71,4 @@ class SimExecutionService(Service):
         return self.com_object.BasicExecuteAll(i_simulation_reference.com_object)
 
     def __repr__(self):
-        return f'SimExecutionService(name="{ self.name }")'
+        return f'SimExecutionService(name="{self.name}")'

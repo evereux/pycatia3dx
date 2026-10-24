@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrManufacturingPatternFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +34,6 @@ class SpotDrManufacturingPatternFactory(AnyObject):
     def create_dr_manufacturing_pattern(self, oh_mfg_pattern: AnyObject, i_list_of_mfg_fasteners: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDRManufacturingPattern(AnyObject ohMfgPattern,CATSafeArrayVariant
@@ -60,7 +57,6 @@ class SpotDrManufacturingPatternFactory(AnyObject):
     def delete_dr_manufacturing_pattern(self, ih_mfg_pattern: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteDRManufacturingPattern(AnyObject ihMfgPattern)
@@ -77,4 +73,4 @@ class SpotDrManufacturingPatternFactory(AnyObject):
         return self.com_object.DeleteDRManufacturingPattern(ih_mfg_pattern.com_object)
 
     def __repr__(self):
-        return f'SpotDrManufacturingPatternFactory(name="{ self.name }")'
+        return f'SpotDrManufacturingPatternFactory(name="{self.name}")'

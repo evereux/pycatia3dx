@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbArea(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class PcbArea(AnyObject):
     def area_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaType() As CATBSTR (Read Only)
@@ -67,7 +64,6 @@ class PcbArea(AnyObject):
     def heightmax(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Heightmax() As double
@@ -98,7 +94,6 @@ class PcbArea(AnyObject):
     def heightmin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Heightmin() As double
@@ -128,7 +123,6 @@ class PcbArea(AnyObject):
     def identifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Identifier() As CATBSTR
@@ -159,7 +153,6 @@ class PcbArea(AnyObject):
     def layer(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LAYER() As CATBSTR (Read Only)
@@ -193,7 +186,6 @@ class PcbArea(AnyObject):
     def owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OWNER() As CATBSTR
@@ -222,7 +214,6 @@ class PcbArea(AnyObject):
     def get_boardor_panel(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBoardorPanel() As CATBaseDispatch
@@ -244,4 +235,4 @@ class PcbArea(AnyObject):
         return self.com_object.GetBoardorPanel()
 
     def __repr__(self):
-        return f'PcbArea(name="{ self.name }")'
+        return f'PcbArea(name="{self.name}")'

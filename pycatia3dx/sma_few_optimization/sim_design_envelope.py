@@ -13,10 +13,8 @@ from pycatia3dx.sma_few_optimization.sim_design_improvement_design_variable impo
 
 
 class SimDesignEnvelope(SimDesignImprovementDesignVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimDesignEnvelope(SimDesignImprovementDesignVariable):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType) As CATBaseDispatch
@@ -105,4 +102,4 @@ class SimDesignEnvelope(SimDesignImprovementDesignVariable):
         return self.com_object.Add(i_type)
 
     def __repr__(self):
-        return f'SimDesignEnvelope(name="{ self.name }")'
+        return f'SimDesignEnvelope(name="{self.name}")'

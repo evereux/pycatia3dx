@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class AxisSystem(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +40,6 @@ class AxisSystem(AnyObject):
     def axis_rotation_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AxisRotationAngle() As Angle (Read Only)
@@ -58,7 +56,6 @@ class AxisSystem(AnyObject):
     def axis_rotation_reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AxisRotationReference() As Reference
@@ -83,7 +80,6 @@ class AxisSystem(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property IsCurrent() As boolean
@@ -123,7 +119,6 @@ class AxisSystem(AnyObject):
     def origin_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OriginPoint() As Reference
@@ -164,7 +159,6 @@ class AxisSystem(AnyObject):
     def origin_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OriginType() As CATAxisSystemOriginType
@@ -206,7 +200,6 @@ class AxisSystem(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Type() As CATAxisSystemMainType
@@ -251,7 +244,6 @@ class AxisSystem(AnyObject):
     def x_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property XAxisDirection() As Reference
@@ -292,7 +284,6 @@ class AxisSystem(AnyObject):
     def x_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property XAxisType() As CATAxisSystemAxisType
@@ -329,7 +320,6 @@ class AxisSystem(AnyObject):
     def y_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property YAxisDirection() As Reference
@@ -370,7 +360,6 @@ class AxisSystem(AnyObject):
     def y_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property YAxisType() As CATAxisSystemAxisType
@@ -407,7 +396,6 @@ class AxisSystem(AnyObject):
     def z_axis_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ZAxisDirection() As Reference
@@ -448,7 +436,6 @@ class AxisSystem(AnyObject):
     def z_axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ZAxisType() As CATAxisSystemAxisType
@@ -484,7 +471,6 @@ class AxisSystem(AnyObject):
     def get_euler_angles(self, o_first_angle: Angle, o_second_angle: Angle, third_angle: Angle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetEulerAngles(Angle oFirstAngle,Angle oSecondAngle,Angle
@@ -504,7 +490,6 @@ class AxisSystem(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -547,7 +532,6 @@ class AxisSystem(AnyObject):
     def get_vectors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetVectors(CATSafeArrayVariant oVectorX,CATSafeArrayVariant
@@ -598,7 +582,6 @@ class AxisSystem(AnyObject):
     def get_x_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetXAxis(CATSafeArrayVariant oXAxis)
@@ -642,7 +625,6 @@ class AxisSystem(AnyObject):
     def get_y_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetYAxis(CATSafeArrayVariant oYAxis)
@@ -686,7 +668,6 @@ class AxisSystem(AnyObject):
     def get_z_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetZAxis(CATSafeArrayVariant oZAxis)
@@ -730,7 +711,6 @@ class AxisSystem(AnyObject):
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutOrigin(CATSafeArrayVariant iOrigin)
@@ -778,7 +758,6 @@ class AxisSystem(AnyObject):
     def put_vectors(self, i_vector_x: tuple, i_vector_y: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutVectors(CATSafeArrayVariant iVectorX,CATSafeArrayVariant
@@ -837,7 +816,6 @@ class AxisSystem(AnyObject):
     def put_x_axis(self, i_x_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutXAxis(CATSafeArrayVariant iXAxis)
@@ -885,7 +863,6 @@ class AxisSystem(AnyObject):
     def put_y_axis(self, i_y_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutYAxis(CATSafeArrayVariant iYAxis)
@@ -933,7 +910,6 @@ class AxisSystem(AnyObject):
     def put_z_axis(self, i_z_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutZAxis(CATSafeArrayVariant iZAxis)

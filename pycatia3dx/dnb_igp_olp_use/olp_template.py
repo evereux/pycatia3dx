@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPTemplate(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPTemplate(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -57,7 +54,6 @@ class OLPTemplate(OLPInstruction):
     def library_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LibraryName() As CATBSTR (Read Only)
@@ -72,7 +68,6 @@ class OLPTemplate(OLPInstruction):
     def sub_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubType() As CATBSTR (Read Only)
@@ -87,7 +82,6 @@ class OLPTemplate(OLPInstruction):
     def template_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemplateName() As CATBSTR (Read Only)
@@ -102,7 +96,6 @@ class OLPTemplate(OLPInstruction):
     def template_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemplateType() As CATBSTR (Read Only)
@@ -117,7 +110,6 @@ class OLPTemplate(OLPInstruction):
     def waypoint_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointID() As CATBSTR
@@ -140,4 +132,4 @@ class OLPTemplate(OLPInstruction):
         self.com_object.WaypointID = value
 
     def __repr__(self):
-        return f'OLPTemplate(name="{ self.name }")'
+        return f'OLPTemplate(name="{self.name}")'

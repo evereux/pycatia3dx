@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimFeatureStates(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +58,6 @@ class SimFeatureStates(Collection):
     def create_feature_state(self, i_feature: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFeatureState(CATBaseDispatch iFeature)
@@ -82,7 +80,6 @@ class SimFeatureStates(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -105,7 +102,6 @@ class SimFeatureStates(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

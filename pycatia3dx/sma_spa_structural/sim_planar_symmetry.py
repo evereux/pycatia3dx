@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPlanarSymmetry(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimPlanarSymmetry(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimPlanarSymmetry(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -114,7 +110,6 @@ class SimPlanarSymmetry(AnyObject):
     def plane(self) -> SimMathPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Plane() As SimMathPlane (Read Only)
@@ -129,7 +124,6 @@ class SimPlanarSymmetry(AnyObject):
     def plane_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlaneSupport() As CATBaseDispatch (Read Only)
@@ -144,4 +138,4 @@ class SimPlanarSymmetry(AnyObject):
         return AnyObject(self.com_object.PlaneSupport)
 
     def __repr__(self):
-        return f'SimPlanarSymmetry(name="{ self.name }")'
+        return f'SimPlanarSymmetry(name="{self.name}")'

@@ -23,7 +23,6 @@ if TYPE_CHECKING:
 class OrderedGeometricalSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -50,7 +49,6 @@ class OrderedGeometricalSet(AnyObject):
     def bodies(self) -> 'Bodies':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Bodies() As Bodies (Read Only)
@@ -71,7 +69,6 @@ class OrderedGeometricalSet(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridShapes() As HybridShapes (Read Only)
@@ -101,7 +98,6 @@ class OrderedGeometricalSet(AnyObject):
     def ordered_geometrical_sets(self) -> 'OrderedGeometricalSets':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
@@ -125,7 +121,6 @@ class OrderedGeometricalSet(AnyObject):
     def ordered_sketches(self) -> Sketches:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OrderedSketches() As Sketches (Read Only)
@@ -147,7 +142,6 @@ class OrderedGeometricalSet(AnyObject):
     def insert_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub InsertHybridShape(HybridShape iHybridShape)

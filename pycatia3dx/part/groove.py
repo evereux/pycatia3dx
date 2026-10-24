@@ -12,10 +12,8 @@ from pycatia3dx.part.revolution import Revolution
 
 
 class Groove(Revolution):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,4 +40,4 @@ class Groove(Revolution):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Groove(name="{ self.name }")'
+        return f'Groove(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MeasurableInContext(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class MeasurableInContext(AnyObject):
     def get_axis_system_from_measurable(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystemFromMeasurable(CATSafeArrayVariant
@@ -117,7 +115,6 @@ class MeasurableInContext(AnyObject):
     def get_result_computation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationMode() As CATMeasurableModeOfCalc
@@ -130,7 +127,6 @@ class MeasurableInContext(AnyObject):
     def get_result_computation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
@@ -179,7 +175,6 @@ class MeasurableInContext(AnyObject):
     def set_axis_system_on_measurable(self, i_axis_positioning: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAxisSystemOnMeasurable(CATSafeArrayVariant
@@ -271,7 +266,6 @@ class MeasurableInContext(AnyObject):
     def set_measurable_context_type(self, i_context_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasurableContextType(CATMeasurableContextType

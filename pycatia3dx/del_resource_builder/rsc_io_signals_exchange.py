@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscIoSignalsExchange(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +54,6 @@ class RscIoSignalsExchange(AnyObject):
     def export_rsc_io_signal_mappings(self, i_full_path: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExportRscIOSignalMappings(CATBSTR iFullPath) As
@@ -90,7 +87,6 @@ class RscIoSignalsExchange(AnyObject):
     def import_rsc_io_signal_mappings(self, i_full_path: str, i_warning: int, i_delete_mapping: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ImportRscIOSignalMappings(CATBSTR iFullPath,long iWarning,long
@@ -128,4 +124,4 @@ class RscIoSignalsExchange(AnyObject):
         return self.com_object.ImportRscIOSignalMappings(i_full_path, i_warning, i_delete_mapping)
 
     def __repr__(self):
-        return f'RscIoSignalsExchange(name="{ self.name }")'
+        return f'RscIoSignalsExchange(name="{self.name}")'

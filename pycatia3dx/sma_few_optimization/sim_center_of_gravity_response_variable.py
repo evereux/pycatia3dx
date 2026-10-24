@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -82,7 +80,6 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -97,7 +94,6 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
     def direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As SimDesignResponseDirection
@@ -117,4 +113,4 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
         self.com_object.Direction = value
 
     def __repr__(self):
-        return f'SimCenterOfGravityResponseVariable(name="{ self.name }")'
+        return f'SimCenterOfGravityResponseVariable(name="{self.name}")'

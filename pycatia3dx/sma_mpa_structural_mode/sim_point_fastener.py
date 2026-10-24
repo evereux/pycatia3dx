@@ -15,10 +15,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_point_fastener_placement import SimP
 
 
 class SimPointFastener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimPointFastener(AnyObject):
     def adjust_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustTolerance() As double
@@ -102,7 +99,6 @@ class SimPointFastener(AnyObject):
     def beam_section(self) -> SimBeamSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BeamSection() As SimBeamSection (Read Only)
@@ -117,7 +113,6 @@ class SimPointFastener(AnyObject):
     def connector_section(self) -> SimConnectorSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorSection() As SimConnectorSection (Read Only)
@@ -132,7 +127,6 @@ class SimPointFastener(AnyObject):
     def construct_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConstructType() As SimPointFastenerConstructType
@@ -155,7 +149,6 @@ class SimPointFastener(AnyObject):
     def coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CouplingType() As SimCouplingCouplingType
@@ -178,7 +171,6 @@ class SimPointFastener(AnyObject):
     def fastener_diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FastenerDiameter() As double
@@ -203,7 +195,6 @@ class SimPointFastener(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Height() As double
@@ -227,7 +218,6 @@ class SimPointFastener(AnyObject):
     def maximum_adjacent_face_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumAdjacentFaceAngle() As double
@@ -251,7 +241,6 @@ class SimPointFastener(AnyObject):
     def maximum_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumAngle() As double
@@ -275,7 +264,6 @@ class SimPointFastener(AnyObject):
     def maximum_projection_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumProjectionDistance() As double
@@ -300,7 +288,6 @@ class SimPointFastener(AnyObject):
     def point_fastener_placement(self) -> SimPointFastenerPlacement:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointFastenerPlacement() As SimPointFastenerPlacement (Read
@@ -316,7 +303,6 @@ class SimPointFastener(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -356,7 +342,6 @@ class SimPointFastener(AnyObject):
     def spring_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpringType() As SimSpringType
@@ -376,4 +361,4 @@ class SimPointFastener(AnyObject):
         self.com_object.SpringType = value
 
     def __repr__(self):
-        return f'SimPointFastener(name="{ self.name }")'
+        return f'SimPointFastener(name="{self.name}")'

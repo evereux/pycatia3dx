@@ -13,7 +13,6 @@ from pycatia3dx.material.material_domain_content import MaterialDomainContent
 class DrawingDomain(MaterialDomainContent):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class DrawingDomain(MaterialDomainContent):
     def create_coloring_pattern(self, i_name: str, i_color: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateColoringPattern(CATBSTR iName,long iColor)
@@ -58,7 +56,6 @@ class DrawingDomain(MaterialDomainContent):
     def create_dotting_pattern(self, i_name: str, i_pitch: float, i_bright: int, i_color: int, i_zig_zag: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDottingPattern(CATBSTR iName,double iPitch,long iBright,long
@@ -93,7 +90,6 @@ class DrawingDomain(MaterialDomainContent):
                                 i_texture: tuple, i_thikness: tuple, i_color: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateHatchingPattern(CATBSTR iName,long iHatchingNb,double iOffset,double
@@ -140,7 +136,6 @@ class DrawingDomain(MaterialDomainContent):
     def create_none_pattern(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateNonePattern(CATBSTR iName)

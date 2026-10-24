@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_results.sim_sensor_base import SimSensorBase
 
 
 class SimResultantSensor(SimSensorBase):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +59,6 @@ class SimResultantSensor(SimSensorBase):
     def set_step_and_frame(self, ics_persistent_step_id: str, in_frame_index: int, in_load_case_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
@@ -86,4 +83,4 @@ class SimResultantSensor(SimSensorBase):
         return self.com_object.SetStepAndFrame(ics_persistent_step_id, in_frame_index, in_load_case_index)
 
     def __repr__(self):
-        return f'SimResultantSensor(name="{ self.name }")'
+        return f'SimResultantSensor(name="{self.name}")'

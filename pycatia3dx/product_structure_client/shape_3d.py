@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Shape3D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class Shape3D(AnyObject):
     def part(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Part() As CATBaseDispatch (Read Only)

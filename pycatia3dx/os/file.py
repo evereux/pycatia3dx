@@ -15,7 +15,6 @@ from pycatia3dx.os.text_stream import TextStream
 class File(FileComponent):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class File(FileComponent):
     def size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Size() As long (Read Only)
@@ -65,7 +63,6 @@ class File(FileComponent):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Type() As CATBSTR (Read Only)
@@ -87,7 +84,6 @@ class File(FileComponent):
     def open_as_text_stream(self, i_mode: str) -> TextStream:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func OpenAsTextStream(CATBSTR iMode) As TextStream

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdOpeningPlate(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SfdOpeningPlate(AnyObject):
     def move_to_opening_p_pr_set(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveToOpeningPPrSet()
@@ -63,7 +60,6 @@ class SfdOpeningPlate(AnyObject):
     def move_to_opening_p_set(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveToOpeningPSet()
@@ -84,4 +80,4 @@ class SfdOpeningPlate(AnyObject):
         return self.com_object.MoveToOpeningPSet()
 
     def __repr__(self):
-        return f'SfdOpeningPlate(name="{ self.name }")'
+        return f'SfdOpeningPlate(name="{self.name}")'

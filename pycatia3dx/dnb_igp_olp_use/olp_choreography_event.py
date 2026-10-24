@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPChoreographyEvent(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPChoreographyEvent(AnyObject):
     def trace_mode_after(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TraceModeAfter() As boolean
@@ -67,7 +64,6 @@ class OLPChoreographyEvent(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELOlpChoreographyEventType (Read Only)
@@ -79,4 +75,4 @@ class OLPChoreographyEvent(AnyObject):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'OLPChoreographyEvent(name="{ self.name }")'
+        return f'OLPChoreographyEvent(name="{self.name}")'

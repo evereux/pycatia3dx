@@ -16,7 +16,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimMeshServices(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -74,7 +73,6 @@ class SimMeshServices(CATBaseDispatch):
     def add_topology_as_support(self, i_local_mesh_spec: SimMeshSpecification, i_topo: SimMeshTopology) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddTopologyAsSupport(SimMeshSpecification iLocalMeshSpec,SimMeshTopology
@@ -98,7 +96,6 @@ class SimMeshServices(CATBaseDispatch):
     def close_mesher(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CloseMesher()
@@ -114,7 +111,6 @@ class SimMeshServices(CATBaseDispatch):
                              i_tolerance: float) -> SimMeshTopology:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNearestTopology(double iX,double iY,double iZ,long iDimension,double
@@ -151,7 +147,6 @@ class SimMeshServices(CATBaseDispatch):
     def get_topology(self, i_local_spec: SimTopologySpecification) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTopology(SimTopologySpecification iLocalSpec) As
@@ -176,7 +171,6 @@ class SimMeshServices(CATBaseDispatch):
     def open_mesher(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub OpenMesher()

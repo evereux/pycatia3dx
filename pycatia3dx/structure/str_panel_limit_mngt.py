@@ -18,7 +18,6 @@ from pycatia3dx.structure.str_parameters import StrParameters
 class StrPanelLimitMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class StrPanelLimitMngt(AnyObject):
     def get_limiting_object(self, i_index_limit: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLimitingObject(long iIndexLimit) As Reference
@@ -78,7 +76,6 @@ class StrPanelLimitMngt(AnyObject):
                              o_list_of_offset: StrParameters, o_list_of_limit_types: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLimitingObjects(References oLimitingObjects,CATSafeArrayVariant
@@ -126,7 +123,6 @@ class StrPanelLimitMngt(AnyObject):
     def get_offset(self, i_index_limit: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffset(long iIndexLimit) As Parameter
@@ -159,7 +155,6 @@ class StrPanelLimitMngt(AnyObject):
     def get_orientation(self, i_index_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientation(long iIndexLimit) As long
@@ -204,7 +199,6 @@ class StrPanelLimitMngt(AnyObject):
     def invert_limit(self, i_index_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertLimit(long iIndexLimit)
@@ -235,7 +229,6 @@ class StrPanelLimitMngt(AnyObject):
     def remove_limit(self, i_index_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLimit(long iIndexLimit)
@@ -267,7 +260,6 @@ class StrPanelLimitMngt(AnyObject):
                             i_limit_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLimitingObject(Reference iLimitingObject,long iIndexLimit,long
@@ -323,7 +315,6 @@ class StrPanelLimitMngt(AnyObject):
                              i_limit_type: int, i_key: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLimitingObject2(Reference iLimitingObject,long iIndexLimit,long

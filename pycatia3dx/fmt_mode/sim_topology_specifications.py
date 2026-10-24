@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimTopologySpecifications(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SimTopologySpecifications(Collection):
     def add(self, i_type: str) -> SimTopologySpecification:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType) As SimTopologySpecification
@@ -68,7 +66,6 @@ class SimTopologySpecifications(Collection):
     def item(self, i_index: CATVariant) -> SimTopologySpecification:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimTopologySpecification
@@ -98,7 +95,6 @@ class SimTopologySpecifications(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

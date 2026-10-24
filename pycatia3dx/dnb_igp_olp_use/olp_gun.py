@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_controller import OLPController
 
 
 class OLPGun(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPGun(AnyObject):
     def attached_robot(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AttachedRobot() As OlpController (Read Only)
@@ -58,7 +55,6 @@ class OLPGun(AnyObject):
     def controller(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Controller() As OlpController (Read Only)
@@ -73,7 +69,6 @@ class OLPGun(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As long (Read Only)
@@ -90,7 +85,6 @@ class OLPGun(AnyObject):
     def joint_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointIndex() As long (Read Only)
@@ -105,7 +99,6 @@ class OLPGun(AnyObject):
     def sub_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubType() As CATBSTR
@@ -129,7 +122,6 @@ class OLPGun(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -143,4 +135,4 @@ class OLPGun(AnyObject):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'OLPGun(name="{ self.name }")'
+        return f'OLPGun(name="{self.name}")'

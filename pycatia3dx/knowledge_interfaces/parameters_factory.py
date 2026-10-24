@@ -20,10 +20,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ParametersFactory(KnowledgeFactory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -49,7 +47,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_boolean(self, i_name: str, i_value: bool) -> BoolParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateBoolean(CATBSTR iName,boolean iValue) As BoolParam
@@ -74,7 +71,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_dimension(self, i_name: str, i_magnitude: str, i_value: float) -> Dimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateDimension(CATBSTR iName,CATBSTR iMagnitude,double iValue) As
@@ -103,7 +99,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_integer(self, i_name: str, i_value: int) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateInteger(CATBSTR iName,long iValue) As IntParam
@@ -128,7 +123,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_list(self, i_name: str) -> ListParameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateList(CATBSTR iName) As ListParameter
@@ -150,7 +144,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_parameters_set(self, i_name: str) -> ParmsSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateParametersSet(CATBSTR iName) As ParmsSet
@@ -172,7 +165,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_real(self, i_name: str, i_value: float) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateReal(CATBSTR iName,double iValue) As RealParam
@@ -197,7 +189,6 @@ class ParametersFactory(KnowledgeFactory):
     def create_string(self, i_name: str, i_value: str) -> StrParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateString(CATBSTR iName,CATBSTR iValue) As StrParam
@@ -222,7 +213,6 @@ class ParametersFactory(KnowledgeFactory):
     def get_name_to_use_in_relation(self, i_object: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetNameToUseInRelation(AnyObject iObject) As CATBSTR
@@ -243,4 +233,4 @@ class ParametersFactory(KnowledgeFactory):
         return self.com_object.GetNameToUseInRelation(i_object.com_object)
 
     def __repr__(self):
-        return f'ParametersFactory(name="{ self.name }")'
+        return f'ParametersFactory(name="{self.name}")'

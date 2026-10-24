@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimEulerianProperty(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimEulerianProperty(AnyObject):
     def material_assignments(self) -> SimEulerianMaterialAssignments:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialAssignments() As SimEulerianMaterialAssignments (Read
@@ -95,7 +92,6 @@ class SimEulerianProperty(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -110,7 +106,6 @@ class SimEulerianProperty(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -147,4 +142,4 @@ class SimEulerianProperty(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimEulerianProperty(name="{ self.name }")'
+        return f'SimEulerianProperty(name="{self.name}")'

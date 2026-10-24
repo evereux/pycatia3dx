@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_composite_rosette import SimComposit
 
 
 class SimCompositeGrid(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimCompositeGrid(AnyObject):
     def add_new_ref_group(self) -> SimCompositeGridElemRefGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRefGroup() As SimCompositeGridElemRefGroup
@@ -56,7 +53,6 @@ class SimCompositeGrid(AnyObject):
     def create_cells_from_file(self, i_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateCellsFromFile(CATBSTR iPath)
@@ -76,7 +72,6 @@ class SimCompositeGrid(AnyObject):
     def create_file_from_cells(self, i_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFileFromCells(CATBSTR iPath)
@@ -96,7 +91,6 @@ class SimCompositeGrid(AnyObject):
     def get_cell(self, i_cell_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCell(short iCellIndex) As CATBaseDispatch
@@ -118,7 +112,6 @@ class SimCompositeGrid(AnyObject):
     def get_cells(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCells() As CATSafeArrayVariant
@@ -134,7 +127,6 @@ class SimCompositeGrid(AnyObject):
     def get_cells_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellsCount() As short
@@ -150,7 +142,6 @@ class SimCompositeGrid(AnyObject):
     def get_draping_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDrapingDirection() As boolean
@@ -166,7 +157,6 @@ class SimCompositeGrid(AnyObject):
     def get_element_ref_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElementRefGroups() As CATSafeArrayVariant
@@ -182,7 +172,6 @@ class SimCompositeGrid(AnyObject):
     def get_rosette(self) -> SimCompositeRosette:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRosette() As SimCompositeRosette
@@ -198,7 +187,6 @@ class SimCompositeGrid(AnyObject):
     def get_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSurface() As CATBaseDispatch
@@ -214,7 +202,6 @@ class SimCompositeGrid(AnyObject):
     def set_draping_direction(self, i_draping_direcion: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDrapingDirection(boolean iDrapingDirecion)
@@ -233,7 +220,6 @@ class SimCompositeGrid(AnyObject):
     def set_rosette(self, i_rosette: SimCompositeRosette) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRosette(SimCompositeRosette iRosette)
@@ -252,7 +238,6 @@ class SimCompositeGrid(AnyObject):
     def set_split_element(self, i_split_elem: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSplitElement(CATBaseDispatch iSplitElem)
@@ -270,4 +255,4 @@ class SimCompositeGrid(AnyObject):
         return self.com_object.SetSplitElement(i_split_elem.com_object)
 
     def __repr__(self):
-        return f'SimCompositeGrid(name="{ self.name }")'
+        return f'SimCompositeGrid(name="{self.name}")'

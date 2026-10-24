@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimRateDependent(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -82,7 +80,6 @@ class SimRateDependent(AnyObject):
     def hardening_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HardeningType() As SimRateDependentHardeningType
@@ -109,7 +106,6 @@ class SimRateDependent(AnyObject):
     def johnson_cook_c(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JohnsonCookC() As double
@@ -135,7 +131,6 @@ class SimRateDependent(AnyObject):
     def johnson_cook_epsilon(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JohnsonCookEpsilon() As double
@@ -161,7 +156,6 @@ class SimRateDependent(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -175,7 +169,6 @@ class SimRateDependent(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimRateDependentMaterialTableColumn
@@ -198,4 +191,4 @@ class SimRateDependent(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimRateDependent(name="{ self.name }")'
+        return f'SimRateDependent(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class DrawingTextRange(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingTextRange(CATBaseDispatch):
     def length(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Length() As long (Read Only)
@@ -62,7 +60,6 @@ class DrawingTextRange(CATBaseDispatch):
     def start(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Start() As long (Read Only)
@@ -84,7 +81,6 @@ class DrawingTextRange(CATBaseDispatch):
     def text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Text() As CATBSTR
@@ -120,7 +116,6 @@ class DrawingTextRange(CATBaseDispatch):
     def get_text_range(self, i_start: int, i_end: int) -> 'DrawingTextRange':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(long iStart,long iEnd) As DrawingTextRange
@@ -156,7 +151,6 @@ class DrawingTextRange(CATBaseDispatch):
     def insert_after(self, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertAfter(CATBSTR iString)
@@ -190,7 +184,6 @@ class DrawingTextRange(CATBaseDispatch):
     def insert_before(self, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertBefore(CATBSTR iString)

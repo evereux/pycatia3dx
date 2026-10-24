@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SurfaceTrajectoryFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,10 +36,10 @@ class SurfaceTrajectoryFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_surface_trajectory(self, i_trajectory_type: str, i_name: str, i_surf_list: tuple, i_prod_list: tuple) -> AnyObject:
+    def create_surface_trajectory(self, i_trajectory_type: str, i_name: str, i_surf_list: tuple,
+                                  i_prod_list: tuple) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSurfaceTrajectory(CATBSTR iTrajectoryType,CATBSTR
@@ -77,7 +75,6 @@ class SurfaceTrajectoryFactory(AnyObject):
     def destroy_surface_trajectory(self, osp_surface_traj: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroySurfaceTrajectory(AnyObject ospSurfaceTraj)
@@ -105,7 +102,6 @@ class SurfaceTrajectoryFactory(AnyObject):
     def get_all_surface_trajectories(self, i_search_children: bool, o_traj_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAllSurfaceTrajectories(boolean iSearchChildren,CATSafeArrayVariant
@@ -136,4 +132,4 @@ class SurfaceTrajectoryFactory(AnyObject):
         return self.com_object.GetAllSurfaceTrajectories(i_search_children, o_traj_list)
 
     def __repr__(self):
-        return f'SurfaceTrajectoryFactory(name="{ self.name }")'
+        return f'SurfaceTrajectoryFactory(name="{self.name}")'

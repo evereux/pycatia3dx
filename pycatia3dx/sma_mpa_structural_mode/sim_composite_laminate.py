@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimCompositeLaminate(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimCompositeLaminate(AnyObject):
     def get_stacking_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStackingType() As SimLaminateStackingType
@@ -54,7 +52,6 @@ class SimCompositeLaminate(AnyObject):
     def get_symmetry_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSymmetryMode() As SimLaminateSymmetryMode
@@ -71,7 +68,6 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_as_thickness_law(self, i_materials: tuple, i_layers: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetStackingAsThicknessLaw(CATSafeArrayVariant
@@ -114,7 +110,6 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_sequence(self, i_materials: tuple, i_orientations: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetStackingSequence(CATSafeArrayVariant iMaterials,CATSafeArrayVariant
@@ -154,7 +149,6 @@ class SimCompositeLaminate(AnyObject):
     def set_stacking_type(self, i_stacking_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStackingType(SimLaminateStackingType iStackingType)
@@ -174,7 +168,6 @@ class SimCompositeLaminate(AnyObject):
     def set_symmetry_mode(self, i_sym_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSymmetryMode(SimLaminateSymmetryMode iSymMode)

@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeExtract(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -48,7 +46,6 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngularThreshold() As double
@@ -77,7 +74,6 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngularThresholdActivity() As boolean
@@ -106,7 +102,6 @@ class HybridShapeExtract(HybridShape):
     def complementary_extract(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ComplementaryExtract() As boolean
@@ -129,7 +124,6 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurvatureThreshold() As double
@@ -158,7 +152,6 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurvatureThresholdActivity() As boolean
@@ -187,7 +180,6 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DistanceThreshold() As double
@@ -216,7 +208,6 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DistanceThresholdActivity() As boolean
@@ -245,7 +236,6 @@ class HybridShapeExtract(HybridShape):
     def elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Elem() As Reference
@@ -272,7 +262,6 @@ class HybridShapeExtract(HybridShape):
     def is_federated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property IsFederated() As boolean
@@ -295,7 +284,6 @@ class HybridShapeExtract(HybridShape):
     def propagation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PropagationType() As long
@@ -324,7 +312,6 @@ class HybridShapeExtract(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -344,4 +331,4 @@ class HybridShapeExtract(HybridShape):
         self.com_object.Support = value
 
     def __repr__(self):
-        return f'HybridShapeExtract(name="{ self.name }")'
+        return f'HybridShapeExtract(name="{self.name}")'

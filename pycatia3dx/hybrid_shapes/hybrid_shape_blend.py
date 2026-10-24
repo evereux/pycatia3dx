@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeBlend(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -58,7 +56,6 @@ class HybridShapeBlend(HybridShape):
     def coupling(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Coupling() As long
@@ -112,7 +109,6 @@ class HybridShapeBlend(HybridShape):
     def ruled_developable_surface(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RuledDevelopableSurface() As boolean
@@ -136,7 +132,6 @@ class HybridShapeBlend(HybridShape):
     def smooth_angle_threshold(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothAngleThreshold() As Angle (Read Only)
@@ -151,7 +146,6 @@ class HybridShapeBlend(HybridShape):
     def smooth_angle_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothAngleThresholdActivity() As boolean
@@ -177,7 +171,6 @@ class HybridShapeBlend(HybridShape):
     def smooth_deviation(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothDeviation() As Length (Read Only)
@@ -193,7 +186,6 @@ class HybridShapeBlend(HybridShape):
     def smooth_deviation_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothDeviationActivity() As boolean
@@ -221,7 +213,6 @@ class HybridShapeBlend(HybridShape):
     def spine(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Spine() As Reference
@@ -250,7 +241,6 @@ class HybridShapeBlend(HybridShape):
     def get_border_mode(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBorderMode(long iBlendLimit) As long
@@ -290,7 +280,6 @@ class HybridShapeBlend(HybridShape):
     def get_closing_point(self, i_blend_limit: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetClosingPoint(long iBlendLimit) As Reference
@@ -323,7 +312,6 @@ class HybridShapeBlend(HybridShape):
     def get_continuity(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetContinuity(long iBlendLimit) As long
@@ -362,7 +350,6 @@ class HybridShapeBlend(HybridShape):
     def get_curve(self, i_blend_limit: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCurve(long iBlendLimit) As Reference
@@ -394,7 +381,6 @@ class HybridShapeBlend(HybridShape):
     def get_orientation(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetOrientation(long iBlendLimit) As long
@@ -426,7 +412,6 @@ class HybridShapeBlend(HybridShape):
     def get_ruled_developable_surface_connection(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetRuledDevelopableSurfaceConnection(long iBlendLimit) As
@@ -460,7 +445,6 @@ class HybridShapeBlend(HybridShape):
     def get_support(self, i_blend_limit: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSupport(long iBlendLimit) As Reference
@@ -492,7 +476,6 @@ class HybridShapeBlend(HybridShape):
     def get_tension_in_double(self, i_blend_limit: int, i_rank: int) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTensionInDouble(long iBlendLimit,long iRank) As
@@ -538,7 +521,6 @@ class HybridShapeBlend(HybridShape):
     def get_tension_type(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTensionType(long iBlendLimit) As long
@@ -577,7 +559,6 @@ class HybridShapeBlend(HybridShape):
     def get_transition(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTransition(long iBlendLimit) As long
@@ -615,7 +596,6 @@ class HybridShapeBlend(HybridShape):
     def get_trim_support(self, i_blend_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTrimSupport(long iBlendLimit) As long
@@ -655,7 +635,6 @@ class HybridShapeBlend(HybridShape):
     def insert_coupling(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertCoupling(long iPosition)
@@ -682,7 +661,6 @@ class HybridShapeBlend(HybridShape):
     def insert_coupling_point(self, i_coupling_index: int, i_position: int, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertCouplingPoint(long iCouplingIndex,long iPosition,Reference
@@ -721,7 +699,6 @@ class HybridShapeBlend(HybridShape):
     def set_border_mode(self, i_blend_limit: int, i_border: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetBorderMode(long iBlendLimit,long iBorder)
@@ -774,7 +751,6 @@ class HybridShapeBlend(HybridShape):
     def set_closing_point(self, i_blend_limit: int, i_closing_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetClosingPoint(long iBlendLimit,Reference iClosingPoint)
@@ -808,7 +784,6 @@ class HybridShapeBlend(HybridShape):
     def set_continuity(self, i_blend_limit: int, i_continuity: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetContinuity(long iBlendLimit,long iContinuity)
@@ -847,7 +822,6 @@ class HybridShapeBlend(HybridShape):
     def set_curve(self, i_blend_limit: int, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCurve(long iBlendLimit,Reference iCurve)
@@ -880,7 +854,6 @@ class HybridShapeBlend(HybridShape):
     def set_orientation(self, i_blend_limit: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetOrientation(long iBlendLimit,long iOrientation)
@@ -912,7 +885,6 @@ class HybridShapeBlend(HybridShape):
     def set_ruled_developable_surface_connection(self, i_blend_limit: int, i_blend_connection: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetRuledDevelopableSurfaceConnection(long iBlendLimit,long
@@ -927,7 +899,6 @@ class HybridShapeBlend(HybridShape):
     def set_smooth_angle_threshold(self, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSmoothAngleThreshold(double iAngle)
@@ -946,7 +917,6 @@ class HybridShapeBlend(HybridShape):
     def set_smooth_deviation(self, i_length: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSmoothDeviation(double iLength)
@@ -966,7 +936,6 @@ class HybridShapeBlend(HybridShape):
     def set_support(self, i_blend_limit: int, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSupport(long iBlendLimit,Reference iSupport)
@@ -996,10 +965,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.com_object.SetSupport(i_blend_limit, i_support.com_object)
 
-    def set_tension_in_double(self, i_blend_limit: int, i_tension_type: int, i_first_tension: float, i_second_tension: float) -> None:
+    def set_tension_in_double(self, i_blend_limit: int, i_tension_type: int, i_first_tension: float,
+                              i_second_tension: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTensionInDouble(long iBlendLimit,long iTensionType,double
@@ -1052,7 +1021,6 @@ class HybridShapeBlend(HybridShape):
     def set_tension_type(self, i_blend_limit: int, i_tension_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTensionType(long iBlendLimit,long iTensionType)
@@ -1093,7 +1061,6 @@ class HybridShapeBlend(HybridShape):
     def set_transition(self, i_blend_limit: int, i_transition: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTransition(long iBlendLimit,long iTransition)
@@ -1129,7 +1096,6 @@ class HybridShapeBlend(HybridShape):
     def set_trim_support(self, i_blend_limit: int, i_trim_support: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTrimSupport(long iBlendLimit,long iTrimSupport)
@@ -1168,7 +1134,6 @@ class HybridShapeBlend(HybridShape):
     def unset_closing_point(self, i_blend_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub UnsetClosingPoint(long iBlendLimit)
@@ -1196,7 +1161,6 @@ class HybridShapeBlend(HybridShape):
     def unset_support(self, i_blend_limit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub UnsetSupport(long iBlendLimit)
@@ -1222,4 +1186,4 @@ class HybridShapeBlend(HybridShape):
         return self.com_object.UnsetSupport(i_blend_limit)
 
     def __repr__(self):
-        return f'HybridShapeBlend(name="{ self.name }")'
+        return f'HybridShapeBlend(name="{self.name}")'

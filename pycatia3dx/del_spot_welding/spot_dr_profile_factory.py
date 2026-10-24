@@ -16,7 +16,6 @@ from pycatia3dx.del_spot_welding.spot_dr_profile import SpotDrProfile
 class SpotDrProfileFactory(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SpotDrProfileFactory(Collection):
     def create_drill_rivet_profile(self, i_type: int, o_drill_rivet_profile: SpotDrProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDrillRivetProfile(DELDRProfileType iType,SpotDrProfile
@@ -63,7 +61,6 @@ class SpotDrProfileFactory(Collection):
     def destroy_drill_rivet_profile(self, i_drill_rivet_profile: SpotDrProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroyDrillRivetProfile(SpotDrProfile iDrillRivetProfile)

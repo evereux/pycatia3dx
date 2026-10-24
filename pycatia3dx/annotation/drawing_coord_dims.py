@@ -16,7 +16,6 @@ from pycatia3dx.system.collection import Collection
 class DrawingCoordDims(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class DrawingCoordDims(Collection):
     def item(self, i_index: int) -> DrawingCoordDim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As DrawingCoordDim
@@ -76,7 +74,6 @@ class DrawingCoordDims(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(long iIndex)

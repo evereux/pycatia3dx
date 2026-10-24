@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class CtmContour(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class CtmContour(AnyObject):
     def base_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BaseOffset() As double
@@ -74,7 +72,6 @@ class CtmContour(AnyObject):
     def base_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BaseOrientation() As boolean
@@ -106,7 +103,6 @@ class CtmContour(AnyObject):
     def break_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BreakAngle() As double
@@ -136,7 +132,6 @@ class CtmContour(AnyObject):
     def closure_param(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClosureParam() As double
@@ -165,7 +160,6 @@ class CtmContour(AnyObject):
     def contour_inverted(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ContourInverted(boolean iIsInverted) (Write Only)
@@ -198,7 +192,6 @@ class CtmContour(AnyObject):
     def gap_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GapTolerance() As double
@@ -227,7 +220,6 @@ class CtmContour(AnyObject):
     def wall_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WallOffset() As double
@@ -257,7 +249,6 @@ class CtmContour(AnyObject):
     def wall_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WallOrientation() As boolean
@@ -288,7 +279,6 @@ class CtmContour(AnyObject):
     def create_orienter_ypr(self, osp_orienter: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateOrienterYPR(AnyObject ospOrienter)
@@ -319,7 +309,6 @@ class CtmContour(AnyObject):
     def create_sampler_fixed_distance(self, osp_sampler: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedDistance(AnyObject ospSampler)
@@ -351,7 +340,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def create_sampler_fixed_number(self, osp_sampler: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedNumber(AnyObject ospSampler)
@@ -383,7 +371,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def create_sampler_fixed_speed(self, osp_sampler: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSamplerFixedSpeed(AnyObject ospSampler)
@@ -415,7 +402,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_base_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetBaseList(CATSafeArrayVariant oBaseList)
@@ -459,7 +445,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_orienter(self, osp_orienter: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOrienter(AnyObject ospOrienter)
@@ -488,7 +473,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_referenced_parts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetReferencedParts(CATSafeArrayVariant olspPartsBU)
@@ -531,7 +515,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_sampler(self, osp_sampler: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSampler(AnyObject ospSampler)
@@ -563,7 +546,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_start_and_end_point(self, o_start: float, o_end: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStartAndEndPoint(double oStart,double oEnd)
@@ -603,7 +585,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def get_wall_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetWallList(CATSafeArrayVariant oWallBU)
@@ -647,7 +628,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def is_contour_inverted(self, o_is_inverted: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsContourInverted(boolean oIsInverted)
@@ -677,7 +657,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def set_base_list(self, i_base_list: tuple, i_base_prod: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetBaseList(CATSafeArrayVariant iBaseList,CATSafeArrayVariant
@@ -717,7 +696,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def set_start_and_end_point(self, i_start: float, i_end: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStartAndEndPoint(double iStart,double iEnd)
@@ -752,7 +730,6 @@ objContour.CreateSamplerFixedDistance(objDistanceSampler)
     def set_wall_list(self, i_wall_list: tuple, i_wall_prod: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetWallList(CATSafeArrayVariant iWallList,CATSafeArrayVariant

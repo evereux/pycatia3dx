@@ -14,10 +14,8 @@ from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
 
 
 class CalibLeastSquaresService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +64,6 @@ class CalibLeastSquaresService(Service):
     def calibration_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CalibrationDistance() As double (Read Only)
@@ -83,7 +80,6 @@ class CalibLeastSquaresService(Service):
     def calibration_offset(self) -> RscTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CalibrationOffset() As RscTransform (Read Only)
@@ -110,7 +106,6 @@ class CalibLeastSquaresService(Service):
     def calibration_rotation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CalibrationRotation() As double (Read Only)
@@ -130,7 +125,6 @@ class CalibLeastSquaresService(Service):
     def free_pitch(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreePitch() As boolean
@@ -159,7 +153,6 @@ class CalibLeastSquaresService(Service):
     def free_roll(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreeRoll() As boolean
@@ -188,7 +181,6 @@ class CalibLeastSquaresService(Service):
     def free_x(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreeX() As boolean
@@ -216,7 +208,6 @@ class CalibLeastSquaresService(Service):
     def free_y(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreeY() As boolean
@@ -245,7 +236,6 @@ class CalibLeastSquaresService(Service):
     def free_yaw(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreeYaw() As boolean
@@ -274,7 +264,6 @@ class CalibLeastSquaresService(Service):
     def free_z(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FreeZ() As boolean
@@ -303,7 +292,6 @@ class CalibLeastSquaresService(Service):
     def last_error_message(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LastErrorMessage() As CATBSTR (Read Only)
@@ -320,7 +308,6 @@ class CalibLeastSquaresService(Service):
     def max_rotation_uncertainty(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxRotationUncertainty() As double (Read Only)
@@ -340,7 +327,6 @@ class CalibLeastSquaresService(Service):
     def max_translation_uncertainty(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxTranslationUncertainty() As double (Read Only)
@@ -360,7 +346,6 @@ class CalibLeastSquaresService(Service):
     def measurement_noise(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MeasurementNoise() As double
@@ -389,7 +374,6 @@ class CalibLeastSquaresService(Service):
     def num_iterations(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumIterations() As long (Read Only)
@@ -406,7 +390,6 @@ class CalibLeastSquaresService(Service):
     def part_position(self) -> RscTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartPosition() As RscTransform (Read Only)
@@ -424,7 +407,6 @@ class CalibLeastSquaresService(Service):
     def part_to_calibrate(self) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartToCalibrate() As VPMOccurrence
@@ -449,7 +431,6 @@ class CalibLeastSquaresService(Service):
     def rms_error(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RMSError() As double (Read Only)
@@ -466,7 +447,6 @@ class CalibLeastSquaresService(Service):
     def apply_calibration(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyCalibration()
@@ -480,7 +460,6 @@ class CalibLeastSquaresService(Service):
     def do_calibration(self, i_with3_pt: bool, i_order_tags: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DoCalibration(boolean iWith3Pt,boolean iOrderTags)
@@ -514,7 +493,6 @@ class CalibLeastSquaresService(Service):
     def get_measured_points(self, o_points: TagGroup, o_tag_group_owner: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMeasuredPoints(TagGroup oPoints,VPMOccurrence
@@ -537,7 +515,6 @@ class CalibLeastSquaresService(Service):
     def get_nominal_points(self, o_points: TagGroup, o_tag_group_owner: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNominalPoints(TagGroup oPoints,VPMOccurrence
@@ -560,7 +537,6 @@ class CalibLeastSquaresService(Service):
     def set_measured_points(self, i_points: TagGroup, i_tag_group_owner: VPMOccurrence, i_force_detach: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasuredPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
@@ -589,10 +565,10 @@ class CalibLeastSquaresService(Service):
         """
         return self.com_object.SetMeasuredPoints(i_points.com_object, i_tag_group_owner.com_object, i_force_detach)
 
-    def set_nominal_points(self, i_points: TagGroup, i_tag_group_owner: VPMOccurrence, i_force_attachment: bool) -> None:
+    def set_nominal_points(self, i_points: TagGroup, i_tag_group_owner: VPMOccurrence,
+                           i_force_attachment: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNominalPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
@@ -624,4 +600,4 @@ class CalibLeastSquaresService(Service):
         return self.com_object.SetNominalPoints(i_points.com_object, i_tag_group_owner.com_object, i_force_attachment)
 
     def __repr__(self):
-        return f'CalibLeastSquaresService(name="{ self.name }")'
+        return f'CalibLeastSquaresService(name="{self.name}")'

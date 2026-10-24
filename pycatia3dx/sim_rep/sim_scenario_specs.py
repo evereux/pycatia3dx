@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimScenarioSpecs(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SimScenarioSpecs(Collection):
     def add(self, i_type: str, i_catalog_name: str, i_client_id: str, i_behavior_list: tuple) -> SimScenarioSpec:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
@@ -78,7 +76,6 @@ class SimScenarioSpecs(Collection):
     def item(self, i_index: CATVariant) -> SimScenarioSpec:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimScenarioSpec
@@ -106,7 +103,6 @@ class SimScenarioSpecs(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

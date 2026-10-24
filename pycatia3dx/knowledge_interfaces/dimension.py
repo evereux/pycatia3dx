@@ -13,10 +13,8 @@ from pycatia3dx.knowledge_interfaces.unit import Unit
 
 
 class Dimension(RealParam):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -46,7 +44,6 @@ class Dimension(RealParam):
     def unit(self) -> Unit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Unit() As Unit (Read Only)
@@ -60,7 +57,6 @@ class Dimension(RealParam):
     def value_as_string2(self, i_nb_decimals: int, i_show_trailing_zeros: bool) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ValueAsString2(long iNbDecimals,boolean iShowTrailingZeros) As
@@ -95,4 +91,4 @@ class Dimension(RealParam):
         return self.com_object.ValueAsString2(i_nb_decimals, i_show_trailing_zeros)
 
     def __repr__(self):
-        return f'Dimension(name="{ self.name }")'
+        return f'Dimension(name="{self.name}")'

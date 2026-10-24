@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingInstructionSetParam(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingInstructionSetParam(AnyObject):
     def default_value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefaultValue() As CATBSTR
@@ -61,7 +58,6 @@ class ManufacturingInstructionSetParam(AnyObject):
     def mapping_rule(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MappingRule() As CATBSTR
@@ -85,7 +81,6 @@ class ManufacturingInstructionSetParam(AnyObject):
     def public(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Public() As boolean
@@ -108,7 +103,6 @@ class ManufacturingInstructionSetParam(AnyObject):
     def get_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetType() As long
@@ -131,4 +125,4 @@ class ManufacturingInstructionSetParam(AnyObject):
         return self.com_object.GetType()
 
     def __repr__(self):
-        return f'ManufacturingInstructionSetParam(name="{ self.name }")'
+        return f'ManufacturingInstructionSetParam(name="{self.name}")'

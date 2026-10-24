@@ -13,10 +13,8 @@ from pycatia3dx.tps.semantic_gdt_common_zone import SemanticGDTCommonZone
 
 
 class SemanticGDTNxDisplay(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SemanticGDTNxDisplay(AnyObject):
     def instance_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InstanceCount() As long (Read Only)
@@ -54,7 +51,6 @@ class SemanticGDTNxDisplay(AnyObject):
     def common_zone(self) -> SemanticGDTCommonZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CommonZone() As SemanticGDTCommonZone
@@ -74,7 +70,6 @@ class SemanticGDTNxDisplay(AnyObject):
     def is_a_collection(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsACollection() As boolean
@@ -97,7 +92,6 @@ class SemanticGDTNxDisplay(AnyObject):
     def is_a_separate(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsASeparate() As boolean
@@ -118,4 +112,4 @@ class SemanticGDTNxDisplay(AnyObject):
         return self.com_object.IsASeparate()
 
     def __repr__(self):
-        return f'SemanticGdtNxDisplay(name="{ self.name }")'
+        return f'SemanticGdtNxDisplay(name="{self.name}")'

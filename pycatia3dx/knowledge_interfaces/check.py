@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.relation import Relation
 
 
 class Check(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -45,7 +43,6 @@ class Check(Relation):
     def diagnosis(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Diagnosis() As boolean (Read Only)
@@ -61,7 +58,6 @@ class Check(Relation):
     def severity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Severity() As long
@@ -85,4 +81,4 @@ class Check(Relation):
         self.com_object.Severity = value
 
     def __repr__(self):
-        return f'Check(name="{ self.name }")'
+        return f'Check(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -81,7 +79,6 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -96,7 +93,6 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
     def component(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Component() As SimMomentOfInertiaComponent
@@ -116,4 +112,4 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
         self.com_object.Component = value
 
     def __repr__(self):
-        return f'SimMomentOfInertiaResponseVariable(name="{ self.name }")'
+        return f'SimMomentOfInertiaResponseVariable(name="{self.name}")'

@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class VPMRepReference(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class VPMRepReference(PLMEntity):
     def father(self) -> 'VPMReference':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Father() As VPMReference (Read Only)
@@ -77,7 +75,6 @@ class VPMRepReference(PLMEntity):
     def parent_rep_instances(self) -> ParentVPMRepInstances:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParentRepInstances() As ParentVPMRepInstances (Read

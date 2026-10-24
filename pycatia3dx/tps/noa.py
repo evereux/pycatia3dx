@@ -15,10 +15,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class Noa(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class Noa(AnyObject):
     def flag_text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlagText() As CATBSTR
@@ -69,7 +66,6 @@ class Noa(AnyObject):
     def text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Text() As CATBSTR
@@ -96,7 +92,6 @@ class Noa(AnyObject):
     def add_url(self, i_url: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddURL(CATBSTR iUrl)
@@ -115,7 +110,6 @@ class Noa(AnyObject):
     def get2d_annot(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get2dAnnot() As DrawingText
@@ -128,7 +122,6 @@ class Noa(AnyObject):
     def get_ditto(self) -> DrawingComponent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDitto() As DrawingComponent
@@ -141,7 +134,6 @@ class Noa(AnyObject):
     def get_modifiable_text(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableText(CATVariant iIndex) As AnyObject
@@ -163,7 +155,6 @@ class Noa(AnyObject):
     def get_modifiable_texts_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableTextsCount() As long
@@ -183,7 +174,6 @@ class Noa(AnyObject):
     def get_nbr_url2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrURL2() As long
@@ -201,7 +191,6 @@ class Noa(AnyObject):
     def modify_url(self, i_url: str, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
@@ -223,7 +212,6 @@ class Noa(AnyObject):
     def remove_url(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveURL(CATVariant iIndex)
@@ -242,7 +230,6 @@ class Noa(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen
@@ -255,7 +242,6 @@ class Noa(AnyObject):
     def url(self, i_index: CATVariant) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func URL(CATVariant iIndex) As CATBSTR
@@ -274,4 +260,4 @@ class Noa(AnyObject):
         return self.com_object.URL(i_index)
 
     def __repr__(self):
-        return f'Noa(name="{ self.name }")'
+        return f'Noa(name="{self.name}")'

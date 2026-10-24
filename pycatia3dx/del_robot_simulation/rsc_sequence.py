@@ -25,10 +25,8 @@ from pycatia3dx.del_robot_simulation.rsc_wait import RscWait
 
 
 class RscSequence(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -55,7 +53,6 @@ class RscSequence(RscInstruction):
     def instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As CATSafeArrayVariant (Read Only)
@@ -96,7 +93,6 @@ class RscSequence(RscInstruction):
     def runnable_tasks(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RunnableTasks() As CATSafeArrayVariant (Read Only)
@@ -124,7 +120,6 @@ class RscSequence(RscInstruction):
     def can_run_service_task(self, i_called_service_task: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CanRunServiceTask(AnyObject iCalledServiceTask) As
@@ -157,10 +152,10 @@ class RscSequence(RscInstruction):
         """
         return self.com_object.CanRunServiceTask(i_called_service_task.com_object)
 
-    def create_rsc_assignment(self, i_index: int, i_assigned_entity: RscDataEntity, i_assigned_value: str) -> RscAssignment:
+    def create_rsc_assignment(self, i_index: int, i_assigned_entity: RscDataEntity,
+                              i_assigned_value: str) -> RscAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscAssignment(short iIndex,RscDataEntity iAssignedEntity,CATBSTR
@@ -208,12 +203,12 @@ class RscSequence(RscInstruction):
         :param str i_assigned_value:
         :return: RscAssignment
         """
-        return RscAssignment(self.com_object.CreateRscAssignment(i_index, i_assigned_entity.com_object, i_assigned_value))
+        return RscAssignment(
+            self.com_object.CreateRscAssignment(i_index, i_assigned_entity.com_object, i_assigned_value))
 
     def create_rsc_break(self, i_index: int) -> RscBreak:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscBreak(short iIndex) As RscBreak
@@ -254,7 +249,6 @@ class RscSequence(RscInstruction):
     def create_rsc_condition(self, i_index: int, i_condition: str) -> RscCondition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscCondition(short iIndex,CATBSTR iCondition) As
@@ -304,7 +298,6 @@ class RscSequence(RscInstruction):
     def create_rsc_custom_instruction(self, i_index: int) -> RscCustomInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscCustomInstruction(short iIndex) As
@@ -345,7 +338,6 @@ class RscSequence(RscInstruction):
     def create_rsc_for(self, i_index: int, i_for_type: int, i_for_index: str, i_for_from: str, i_for_to: str) -> RscFor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscFor(short iIndex,DELRscForType iForType,CATBSTR iForIndex,CATBSTR
@@ -418,7 +410,6 @@ class RscSequence(RscInstruction):
     def create_rsc_goto(self, i_index: int, i_label: str) -> RscGoto:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscGoto(short iIndex,CATBSTR iLabel) As RscGoto
@@ -468,7 +459,6 @@ class RscSequence(RscInstruction):
     def create_rsc_loop(self, i_index: int, i_condition: str, i_loop_type: int) -> RscLoop:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscLoop(short iIndex,CATBSTR iCondition,DELRscLoopType iLoopType) As
@@ -530,7 +520,6 @@ ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType                |     
     def create_rsc_pulse(self, i_index: int) -> RscPulse:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscPulse(short iIndex) As RscPulse
@@ -572,7 +561,6 @@ ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType                |     
     def create_rsc_return(self, i_index: int) -> RscReturn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscReturn(short iIndex) As RscReturn
@@ -612,7 +600,6 @@ ResourceSequence.CreateRscLoop(iIndex,iCondition,iLoopType                |     
     def create_rsc_run_internal_task(self, i_task: AnyObject, i_index: int) -> RscRunInternalTask:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscRunInternalTask(AnyObject iTask,short iIndex) As
@@ -659,7 +646,6 @@ ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
     def create_rsc_run_service_task(self, i_called_service_task: AnyObject, i_index: int) -> RscRunServiceTask:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscRunServiceTask(AnyObject iCalledServiceTask,short iIndex) As
@@ -705,7 +691,6 @@ ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
     def create_rsc_wait(self, i_index: int, i_time_out: float, i_boolean_expression: str) -> RscWait:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscWait(short iIndex,double iTimeOut,CATBSTR iBooleanExpression) As
@@ -758,7 +743,6 @@ ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
     def delete_rsc_instruction(self, i_instruction: RscInstruction) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteRscInstruction(RscInstruction iInstruction)
@@ -791,4 +775,4 @@ ResourceSequence.CreateRscRunInternalTask(iTask,iIndex)
         return self.com_object.DeleteRscInstruction(i_instruction.com_object)
 
     def __repr__(self):
-        return f'RscSequence(name="{ self.name }")'
+        return f'RscSequence(name="{self.name}")'

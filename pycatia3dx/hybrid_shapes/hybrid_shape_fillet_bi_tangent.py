@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeFilletBiTangent(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def conical_section_parameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ConicalSectionParameter() As double
@@ -72,7 +69,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElem() As Reference
@@ -95,7 +91,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_law_relimiter(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstLawRelimiter() As Reference
@@ -126,7 +121,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstOrientation() As long
@@ -151,7 +145,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def hold_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property HoldCurve() As Reference
@@ -174,7 +167,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def integrated_law(self) -> HybridShapeIntegratedLaw:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property IntegratedLaw() As HybridShapeIntegratedLaw
@@ -207,7 +199,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -222,7 +213,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RadiusType() As long
@@ -248,7 +238,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RadiusValue() As double
@@ -271,7 +260,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RibbonRelimitationMode() As long
@@ -300,7 +288,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElem() As Reference
@@ -323,7 +310,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_law_relimiter(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondLawRelimiter() As Reference
@@ -354,7 +340,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondOrientation() As long
@@ -380,7 +365,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def section_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SectionType() As long
@@ -406,7 +390,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def spine(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Spine() As Reference
@@ -429,7 +412,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def supports_trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SupportsTrimMode() As long
@@ -451,7 +433,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def append_new_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AppendNewFaceToKeep(Reference iFace)
@@ -469,7 +450,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def get_face_to_keep(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFaceToKeep(long iPos) As Reference
@@ -490,7 +470,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertFirstOrientation()
@@ -503,7 +482,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertSecondOrientation()
@@ -516,7 +494,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_all_faces_to_keep(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllFacesToKeep()
@@ -529,7 +506,6 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveFaceToKeep(Reference iFace)
@@ -545,4 +521,4 @@ class HybridShapeFilletBiTangent(HybridShape):
         return self.com_object.RemoveFaceToKeep(i_face.com_object)
 
     def __repr__(self):
-        return f'HybridShapeFilletBiTangent(name="{ self.name }")'
+        return f'HybridShapeFilletBiTangent(name="{self.name}")'

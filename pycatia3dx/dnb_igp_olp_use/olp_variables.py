@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPVariables(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class OLPVariables(Collection):
     def filter(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Filter() As DELOlpVariableType
@@ -71,7 +69,6 @@ class OLPVariables(Collection):
     def filter_in_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilterInString() As CATBSTR
@@ -106,7 +103,6 @@ class OLPVariables(Collection):
     def get_or_create_alias(self, i_name: str, i_alias_of: str) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateAlias(CATBSTR iName,CATBSTR iAliasOf) As
@@ -133,7 +129,6 @@ class OLPVariables(Collection):
     def get_or_create_const(self, i_name: str, i_data_type: int, i_value: str) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateConst(CATBSTR iName,DELOlpDataType iDataType,CATBSTR iValue) As
@@ -154,7 +149,6 @@ class OLPVariables(Collection):
     def get_or_create_const_in_string_type(self, i_name: str, i_data_type: str, i_value: str) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateConstInStringType(CATBSTR iName,CATBSTR iDataType,CATBSTR
@@ -183,7 +177,6 @@ class OLPVariables(Collection):
     def get_or_create_io(self, i_name: str, i_data_type: int, i_direction: int) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateIO(CATBSTR iName,DELOlpDataType iDataType,DELOlpIODirection
@@ -209,7 +202,6 @@ class OLPVariables(Collection):
     def get_or_create_io_in_string_type(self, i_name: str, i_data_type: str, i_direction: int) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateIOInStringType(CATBSTR iName,CATBSTR
@@ -243,7 +235,6 @@ class OLPVariables(Collection):
     def get_or_create_local_var(self, i_name: str, i_data_type: int) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateLocalVar(CATBSTR iName,DELOlpDataType iDataType) As
@@ -263,7 +254,6 @@ class OLPVariables(Collection):
     def get_or_create_local_var_in_string_type(self, i_name: str, i_data_type: str) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateLocalVarInStringType(CATBSTR iName,CATBSTR iDataType) As
@@ -291,7 +281,6 @@ class OLPVariables(Collection):
     def get_or_create_subscripted_variable(self, i_array_variable: OLPVariable) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateSubscriptedVariable(OlpVariable iArrayVariable) As
@@ -311,7 +300,6 @@ class OLPVariables(Collection):
     def get_or_create_timer(self, i_name: str) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrCreateTimer(CATBSTR iName) As OlpVariable
@@ -327,7 +315,6 @@ class OLPVariables(Collection):
     def item(self, i_index: CATVariant) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As OlpVariable

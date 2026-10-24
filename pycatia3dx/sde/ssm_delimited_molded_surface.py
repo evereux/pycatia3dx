@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmDelimitedMoldedSurface(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Support() As Reference (Read Only)
@@ -63,7 +60,6 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportOffset() As Parameter (Read Only)
@@ -86,7 +82,6 @@ class SsmDelimitedMoldedSurface(AnyObject):
     def support_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportOrientation() As long (Read Only)
@@ -106,4 +101,4 @@ class SsmDelimitedMoldedSurface(AnyObject):
         return self.com_object.SupportOrientation
 
     def __repr__(self):
-        return f'SsmDelimitedMoldedSurface(name="{ self.name }")'
+        return f'SsmDelimitedMoldedSurface(name="{self.name}")'

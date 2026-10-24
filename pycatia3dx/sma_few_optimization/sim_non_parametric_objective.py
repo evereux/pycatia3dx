@@ -12,10 +12,8 @@ from pycatia3dx.sma_few_optimization.sim_design_improvement_objective import Sim
 
 
 class SimNonParametricObjective(SimDesignImprovementObjective):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def target_mass_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetMassType() As SimOptimizationTargetMassType
@@ -101,7 +98,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimOptimizationTaskType
@@ -123,7 +119,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def add_design_response(self, i_design_response: AnyObject, i_weight: float, i_reference_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddDesignResponse(AnyObject iDesignResponse,double iWeight,double
@@ -146,7 +141,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def get_absolute_target_mass(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAbsoluteTargetMass(double oVal)
@@ -165,7 +159,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def get_target_mass_ratio(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTargetMassRatio(double oVal)
@@ -184,7 +177,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def set_absolute_target_mass(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAbsoluteTargetMass(double iVal)
@@ -203,7 +195,6 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
     def set_target_mass_ratio(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTargetMassRatio(double iVal)
@@ -220,4 +211,4 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         return self.com_object.SetTargetMassRatio(i_val)
 
     def __repr__(self):
-        return f'SimNonParametricObjective(name="{ self.name }")'
+        return f'SimNonParametricObjective(name="{self.name}")'

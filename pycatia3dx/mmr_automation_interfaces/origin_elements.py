@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OriginElements(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +40,6 @@ class OriginElements(AnyObject):
     def plane_xy(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property PlaneXY() As AnyObject (Read Only)
@@ -65,7 +62,6 @@ class OriginElements(AnyObject):
     def plane_yz(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property PlaneYZ() As AnyObject (Read Only)
@@ -88,7 +84,6 @@ class OriginElements(AnyObject):
     def plane_zx(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property PlaneZX() As AnyObject (Read Only)
@@ -108,4 +103,4 @@ class OriginElements(AnyObject):
         return AnyObject(self.com_object.PlaneZX)
 
     def __repr__(self):
-        return f'OriginElements(name="{ self.name }")'
+        return f'OriginElements(name="{self.name}")'

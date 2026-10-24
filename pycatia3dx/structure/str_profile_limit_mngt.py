@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfileLimitMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrProfileLimitMngt(AnyObject):
     def explicit_limits(self, i_extr: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExplicitLimits(long iExtr)
@@ -64,7 +61,6 @@ class StrProfileLimitMngt(AnyObject):
     def get_limit_type(self, i_extr: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLimitType(long iExtr) As long
@@ -103,7 +99,6 @@ class StrProfileLimitMngt(AnyObject):
     def get_limiting_object(self, i_extr: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLimitingObject(long iExtr) As Reference
@@ -134,7 +129,6 @@ class StrProfileLimitMngt(AnyObject):
     def get_offset(self, i_extr: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffset(long iExtr) As Parameter
@@ -164,7 +158,6 @@ class StrProfileLimitMngt(AnyObject):
     def invert_profile(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertProfile()
@@ -177,7 +170,6 @@ class StrProfileLimitMngt(AnyObject):
     def remove_limit(self, i_extr: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLimit(long iExtr)
@@ -207,7 +199,6 @@ class StrProfileLimitMngt(AnyObject):
     def set_limit_type(self, i_extr: int, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLimitType(long iExtr,long iType)
@@ -247,7 +238,6 @@ class StrProfileLimitMngt(AnyObject):
     def set_limiting_object(self, i_extr: int, i_limiting_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLimitingObject(long iExtr,Reference iLimitingObject)
@@ -285,4 +275,4 @@ class StrProfileLimitMngt(AnyObject):
         return self.com_object.SetLimitingObject(i_extr, i_limiting_object.com_object)
 
     def __repr__(self):
-        return f'StrProfileLimitMngt(name="{ self.name }")'
+        return f'StrProfileLimitMngt(name="{self.name}")'

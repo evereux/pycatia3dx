@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ParticularTolElem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ParticularTolElem(AnyObject):
     def particular_geometry(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParticularGeometry() As CATBSTR (Read Only)
@@ -56,4 +53,4 @@ class ParticularTolElem(AnyObject):
         return self.com_object.ParticularGeometry
 
     def __repr__(self):
-        return f'ParticularTolElem(name="{ self.name }")'
+        return f'ParticularTolElem(name="{self.name}")'

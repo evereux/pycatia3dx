@@ -22,7 +22,6 @@ if TYPE_CHECKING:
 class SimScenarioSpec(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class SimScenarioSpec(AnyObject):
     def excitations(self) -> SimExcitations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Excitations() As SimExcitations (Read Only)
@@ -60,7 +58,6 @@ class SimScenarioSpec(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsCurrent() As boolean (Read Only)
@@ -75,7 +72,6 @@ class SimScenarioSpec(AnyObject):
     def probes(self) -> SimProbes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Probes() As SimProbes (Read Only)
@@ -90,7 +86,6 @@ class SimScenarioSpec(AnyObject):
     def scenario_result(self) -> SimScenarioResult:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioResult() As SimScenarioResult (Read Only)
@@ -105,7 +100,6 @@ class SimScenarioSpec(AnyObject):
     def solver_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolverType() As CATBSTR (Read Only)
@@ -119,7 +113,6 @@ class SimScenarioSpec(AnyObject):
     def add_excitation(self, i_excitation: 'SimExcitation') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddExcitation(SimExcitation iExcitation)
@@ -133,7 +126,6 @@ class SimScenarioSpec(AnyObject):
     def add_probe(self, i_probe: SimProbe) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProbe(SimProbe iProbe)
@@ -147,7 +139,6 @@ class SimScenarioSpec(AnyObject):
     def get_behaviors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBehaviors() As CATSafeArrayVariant
@@ -160,7 +151,6 @@ class SimScenarioSpec(AnyObject):
     def remove_excitation(self, i_excitation: 'SimExcitation') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveExcitation(SimExcitation iExcitation)
@@ -174,7 +164,6 @@ class SimScenarioSpec(AnyObject):
     def remove_probe(self, i_probe: SimProbe) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveProbe(SimProbe iProbe)
@@ -188,7 +177,6 @@ class SimScenarioSpec(AnyObject):
     def set_current(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrent()

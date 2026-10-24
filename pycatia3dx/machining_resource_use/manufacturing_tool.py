@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingTool(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class ManufacturingTool(AnyObject):
     def add_component(self, i_component: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddComponent(AnyObject iComponent) As AnyObject
@@ -61,7 +58,6 @@ class ManufacturingTool(AnyObject):
     def get_all_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllComponents() As CATSafeArrayVariant
@@ -80,7 +76,6 @@ class ManufacturingTool(AnyObject):
     def get_inserts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInserts() As CATSafeArrayVariant
@@ -98,7 +93,6 @@ class ManufacturingTool(AnyObject):
     def get_shanks(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetShanks() As CATSafeArrayVariant
@@ -116,7 +110,6 @@ class ManufacturingTool(AnyObject):
     def remove_all_components(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAllComponents()
@@ -129,7 +122,6 @@ class ManufacturingTool(AnyObject):
     def remove_component(self, i_component: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveComponent(AnyObject iComponent)
@@ -146,4 +138,4 @@ class ManufacturingTool(AnyObject):
         return self.com_object.RemoveComponent(i_component.com_object)
 
     def __repr__(self):
-        return f'ManufacturingTool(name="{ self.name }")'
+        return f'ManufacturingTool(name="{self.name}")'

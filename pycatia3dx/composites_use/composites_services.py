@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 class CompositesServices(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -86,7 +85,6 @@ class CompositesServices(AnyObject):
     def get_composites_type(self, i_object: CATVariant, o_composites_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCompositesType(CATVariant iObject,CATCompositesTypeEnum

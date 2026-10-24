@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingAreaFills(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingAreaFills(Collection):
     def add(self, i_number_of_points_per_contour: tuple, i_points_coordinates: tuple) -> DrawingAreaFill:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func Add(CATSafeArrayVariant iNumberOfPointsPerContour,CATSafeArrayVariant
@@ -95,7 +93,6 @@ class DrawingAreaFills(Collection):
     def item(self, i_index: CATVariant) -> DrawingAreaFill:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingAreaFill
@@ -134,7 +131,6 @@ class DrawingAreaFills(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

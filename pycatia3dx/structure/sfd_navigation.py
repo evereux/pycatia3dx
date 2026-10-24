@@ -16,7 +16,6 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class SfdNavigation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class SfdNavigation(AnyObject):
     def get_panel(self) -> SfdPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPanel() As SfdPanel
@@ -65,7 +63,6 @@ class SfdNavigation(AnyObject):
     def get_profile(self) -> StructureProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfile() As StructureProfile

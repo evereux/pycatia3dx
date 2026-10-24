@@ -13,10 +13,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class ReplaceFace(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class ReplaceFace(SurfaceBasedShape):
     def remove_face(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RemoveFace() As References (Read Only)
@@ -58,7 +55,6 @@ class ReplaceFace(SurfaceBasedShape):
     def splitting_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SplittingSide() As CatSplitSide
@@ -82,7 +78,6 @@ class ReplaceFace(SurfaceBasedShape):
     def add_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRemoveFace(Reference iRemoveFace)
@@ -96,7 +91,6 @@ class ReplaceFace(SurfaceBasedShape):
     def add_split_plane(self, i_split_plane: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddSplitPlane(Reference iSplitPlane)
@@ -110,7 +104,6 @@ class ReplaceFace(SurfaceBasedShape):
     def delete_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteRemoveFace(Reference iRemoveFace)
@@ -122,4 +115,4 @@ class ReplaceFace(SurfaceBasedShape):
         return self.com_object.DeleteRemoveFace(i_remove_face.com_object)
 
     def __repr__(self):
-        return f'ReplaceFace(name="{ self.name }")'
+        return f'ReplaceFace(name="{self.name}")'

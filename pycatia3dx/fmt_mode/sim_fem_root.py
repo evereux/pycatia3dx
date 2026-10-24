@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimFemRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SimFemRoot(AnyObject):
     def has_an_associated_rep(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasAnAssociatedRep() As boolean (Read Only)
@@ -68,7 +66,6 @@ class SimFemRoot(AnyObject):
     def has_children_fem_rep(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasChildrenFemRep() As boolean (Read Only)
@@ -84,7 +81,6 @@ class SimFemRoot(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As Parameters (Read Only)
@@ -112,7 +108,6 @@ class SimFemRoot(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Relations() As Relations (Read Only)
@@ -140,7 +135,6 @@ class SimFemRoot(AnyObject):
     def update_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpdateStatus() As boolean (Read Only)
@@ -154,7 +148,6 @@ class SimFemRoot(AnyObject):
     def add_associated_rep(self, i_associated_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddAssociatedRep(AnyObject iAssociatedRep)
@@ -175,7 +168,6 @@ class SimFemRoot(AnyObject):
     def add_child(self, i_child_fem_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddChild(AnyObject iChildFEMRep)
@@ -196,7 +188,6 @@ class SimFemRoot(AnyObject):
     def exclude_property_connection(self, i_occurrence: VPMOccurrence, i_connection_property: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExcludePropertyConnection(VPMOccurrence iOccurrence,AnyObject
@@ -221,7 +212,6 @@ class SimFemRoot(AnyObject):
     def get_associated_reps(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAssociatedReps() As CATSafeArrayVariant
@@ -234,7 +224,6 @@ class SimFemRoot(AnyObject):
     def get_children(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetChildren() As CATSafeArrayVariant
@@ -252,7 +241,6 @@ class SimFemRoot(AnyObject):
     def get_nb_of_associated_rep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbOfAssociatedRep() As long
@@ -265,7 +253,6 @@ class SimFemRoot(AnyObject):
     def get_nb_of_children_fem_rep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbOfChildrenFemRep() As long
@@ -278,7 +265,6 @@ class SimFemRoot(AnyObject):
     def get_numbering_labels(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberingLabels(SimMeshEntityType iType) As
@@ -298,7 +284,6 @@ class SimFemRoot(AnyObject):
     def get_numbering_labels_from_path(self, i_type: int, i_path: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberingLabelsFromPath(SimMeshEntityType iType,AnyObject iPath) As
@@ -322,7 +307,6 @@ class SimFemRoot(AnyObject):
     def get_numbering_offset_value(self, i_type: int, i_child_fem_rep: AnyObject, o_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberingOffsetValue(SimMeshEntityType iType,AnyObject iChildFEMRep,long
@@ -348,7 +332,6 @@ class SimFemRoot(AnyObject):
     def get_set(self, i_set_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSet(CATBSTR iSetType) As CATBaseDispatch
@@ -390,7 +373,6 @@ class SimFemRoot(AnyObject):
     def include_property_connection(self, i_occurrence: VPMOccurrence, i_connection_property: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IncludePropertyConnection(VPMOccurrence iOccurrence,AnyObject
@@ -415,7 +397,6 @@ class SimFemRoot(AnyObject):
     def is_included_property_connection(self, i_occurrence: VPMOccurrence, i_connection_property: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsIncludedPropertyConnection(VPMOccurrence iOccurrence,AnyObject
@@ -445,7 +426,6 @@ class SimFemRoot(AnyObject):
     def remove_associated_rep(self, i_associated_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAssociatedRep(AnyObject iAssociatedRep)
@@ -466,7 +446,6 @@ class SimFemRoot(AnyObject):
     def remove_child(self, i_child_fem_rep: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveChild(AnyObject iChildFEMRep)
@@ -487,7 +466,6 @@ class SimFemRoot(AnyObject):
     def remove_numbering(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveNumbering()
@@ -500,7 +478,6 @@ class SimFemRoot(AnyObject):
     def set_numbering_offset_value(self, i_type: int, i_child_fem_rep: AnyObject, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNumberingOffsetValue(SimMeshEntityType iType,AnyObject iChildFEMRep,long
@@ -525,7 +502,6 @@ class SimFemRoot(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

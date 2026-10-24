@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeAxisToAxis(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeAxisToAxis(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CreationMode() As boolean
@@ -92,7 +89,6 @@ class HybridShapeAxisToAxis(HybridShape):
     def elem_to_transform(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToTransform() As Reference
@@ -122,7 +118,6 @@ class HybridShapeAxisToAxis(HybridShape):
     def reference_axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ReferenceAxis() As Reference
@@ -152,7 +147,6 @@ class HybridShapeAxisToAxis(HybridShape):
     def target_axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetAxis() As Reference
@@ -182,7 +176,6 @@ class HybridShapeAxisToAxis(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -214,4 +207,4 @@ class HybridShapeAxisToAxis(HybridShape):
         self.com_object.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeAxisToAxis(name="{ self.name }")'
+        return f'HybridShapeAxisToAxis(name="{self.name}")'

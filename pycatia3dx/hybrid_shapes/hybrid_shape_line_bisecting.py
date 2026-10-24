@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeLineBisecting(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeLineBisecting(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOffset() As Length (Read Only)
@@ -72,7 +69,6 @@ class HybridShapeLineBisecting(Line):
     def elem1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Elem1() As Reference
@@ -99,7 +95,6 @@ class HybridShapeLineBisecting(Line):
     def elem2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Elem2() As Reference
@@ -125,7 +120,6 @@ class HybridShapeLineBisecting(Line):
     def end_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndOffset() As Length (Read Only)
@@ -140,7 +134,6 @@ class HybridShapeLineBisecting(Line):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -166,7 +159,6 @@ class HybridShapeLineBisecting(Line):
     def ref_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RefPoint() As Reference
@@ -191,7 +183,6 @@ class HybridShapeLineBisecting(Line):
     def solution_type(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SolutionType() As boolean
@@ -215,7 +206,6 @@ class HybridShapeLineBisecting(Line):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -244,7 +234,6 @@ class HybridShapeLineBisecting(Line):
     def get_length_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLengthType() As long
@@ -262,7 +251,6 @@ class HybridShapeLineBisecting(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSymmetricalExtension() As boolean
@@ -281,7 +269,6 @@ class HybridShapeLineBisecting(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLengthType(long iType)
@@ -300,7 +287,6 @@ class HybridShapeLineBisecting(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSymmetricalExtension(boolean iSym)
@@ -317,4 +303,4 @@ class HybridShapeLineBisecting(Line):
         return self.com_object.SetSymmetricalExtension(i_sym)
 
     def __repr__(self):
-        return f'HybridShapeLineBisecting(name="{ self.name }")'
+        return f'HybridShapeLineBisecting(name="{self.name}")'

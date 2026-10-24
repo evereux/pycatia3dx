@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpmOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SpmOperation(AnyObject):
     def export_process_points(self, file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportProcessPoints(CATBSTR filePath)
@@ -68,7 +65,6 @@ class SpmOperation(AnyObject):
     def get_all_motion_activities(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllMotionActivities() As CATSafeArrayVariant
@@ -96,7 +92,6 @@ class SpmOperation(AnyObject):
     def import_process_points(self, file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportProcessPoints(CATBSTR filePath)
@@ -124,4 +119,4 @@ class SpmOperation(AnyObject):
         return self.com_object.ImportProcessPoints(file_path)
 
     def __repr__(self):
-        return f'SpmOperation(name="{ self.name }")'
+        return f'SpmOperation(name="{self.name}")'

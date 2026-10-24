@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Pattern(TransformationShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class Pattern(TransformationShape):
     def item_to_copy(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ItemToCopy() As AnyObject
@@ -79,7 +76,6 @@ class Pattern(TransformationShape):
     def rotation_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RotationAngle() As Angle (Read Only)
@@ -101,7 +97,6 @@ class Pattern(TransformationShape):
     def activate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivatePosition(long iPosU,long iPosV)
@@ -123,7 +118,6 @@ class Pattern(TransformationShape):
     def desactivate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DesactivatePosition(long iPosU,long iPosV)
@@ -143,4 +137,4 @@ class Pattern(TransformationShape):
         return self.com_object.DesactivatePosition(i_pos_u, i_pos_v)
 
     def __repr__(self):
-        return f'Pattern(name="{ self.name }")'
+        return f'Pattern(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Sim1DLinkSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class Sim1DLinkSection(AnyObject):
     def area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Area() As double
@@ -98,7 +95,6 @@ class Sim1DLinkSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -121,7 +117,6 @@ class Sim1DLinkSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -141,4 +136,4 @@ class Sim1DLinkSection(AnyObject):
         self.com_object.MaterialBehaviorByName = value
 
     def __repr__(self):
-        return f'Sim1DLinkSection(name="{ self.name }")'
+        return f'Sim1DLinkSection(name="{self.name}")'

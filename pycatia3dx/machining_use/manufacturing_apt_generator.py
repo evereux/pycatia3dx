@@ -11,10 +11,8 @@ from pycatia3dx.machining_use.manufacturing_output_generator import Manufacturin
 
 
 class ManufacturingAptGenerator(ManufacturingOutputGenerator):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,4 +36,4 @@ class ManufacturingAptGenerator(ManufacturingOutputGenerator):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ManufacturingAptGenerator(name="{ self.name }")'
+        return f'ManufacturingAptGenerator(name="{self.name}")'

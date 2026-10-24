@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Inertia(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class Inertia(AnyObject):
     def get_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
@@ -63,7 +61,6 @@ class Inertia(AnyObject):
     def get_cog_position(self) -> tuple[float, float, float]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOGPosition(double oXCOG,double oYCOG,double oZCOG)
@@ -107,7 +104,6 @@ class Inertia(AnyObject):
     def get_inertia_matrix(self) -> tuple[float, ...]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetInertiaMatrix(CATSafeArrayVariant oMatrix)
@@ -158,7 +154,6 @@ class Inertia(AnyObject):
     def get_mass(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMass() As double
@@ -183,7 +178,6 @@ class Inertia(AnyObject):
     def get_principal_axes(self) -> tuple[float, ...]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPrincipalAxes(CATSafeArrayVariant oAxes)
@@ -235,7 +229,6 @@ class Inertia(AnyObject):
     def get_principal_moments(self) -> tuple[float, float, float]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPrincipalMoments(CATSafeArrayVariant oMoments)
@@ -282,7 +275,6 @@ class Inertia(AnyObject):
     def get_volume(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVolume() As double
@@ -307,7 +299,6 @@ class Inertia(AnyObject):
     def only_main_body(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub OnlyMainBody()

@@ -14,10 +14,8 @@ from pycatia3dx.sma_spa_structural.sim_stabilization import SimStabilization
 
 
 class SimSteadyStateTransportStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -81,7 +79,6 @@ class SimSteadyStateTransportStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -104,7 +101,6 @@ class SimSteadyStateTransportStep(SimStep):
     def eulerian_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EulerianSupport() As CATBaseDispatch (Read Only)
@@ -119,7 +115,6 @@ class SimSteadyStateTransportStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricNonLinearityFlag() As boolean
@@ -145,7 +140,6 @@ class SimSteadyStateTransportStep(SimStep):
     def inertia_effect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InertiaEffect() As
@@ -169,7 +163,6 @@ class SimSteadyStateTransportStep(SimStep):
     def inertia_stabilization_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InertiaStabilizationFactor() As double
@@ -193,7 +186,6 @@ class SimSteadyStateTransportStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialTimeIncrement() As double
@@ -217,7 +209,6 @@ class SimSteadyStateTransportStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -241,7 +232,6 @@ class SimSteadyStateTransportStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumIncrements() As long
@@ -265,7 +255,6 @@ class SimSteadyStateTransportStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeIncrement() As double
@@ -289,7 +278,6 @@ class SimSteadyStateTransportStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumTimeIncrement() As double
@@ -313,7 +301,6 @@ class SimSteadyStateTransportStep(SimStep):
     def mullins_effect(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MullinsEffect() As
@@ -337,7 +324,6 @@ class SimSteadyStateTransportStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
@@ -353,7 +339,6 @@ class SimSteadyStateTransportStep(SimStep):
     def stabilization(self) -> SimStabilization:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Stabilization() As SimStabilization (Read Only)
@@ -368,7 +353,6 @@ class SimSteadyStateTransportStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StepTime() As double
@@ -391,7 +375,6 @@ class SimSteadyStateTransportStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrementationScheme() As
@@ -416,7 +399,6 @@ class SimSteadyStateTransportStep(SimStep):
     def use_instantaneous_elastic_response_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseInstantaneousElasticResponseFlag() As boolean
@@ -444,7 +426,6 @@ class SimSteadyStateTransportStep(SimStep):
     def use_quasi_steady_state_procedure_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseQuasiSteadyStateProcedureFlag() As boolean
@@ -466,4 +447,4 @@ class SimSteadyStateTransportStep(SimStep):
         self.com_object.UseQuasiSteadyStateProcedureFlag = value
 
     def __repr__(self):
-        return f'SimSteadyStateTransportStep(name="{ self.name }")'
+        return f'SimSteadyStateTransportStep(name="{self.name}")'

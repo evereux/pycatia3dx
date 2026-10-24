@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class FlexibleBoard(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class FlexibleBoard(AnyObject):
                                   i_min: float) -> FlexibleArea:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func create_FlexibleAreaArea(Body iFather,CATBSTR
@@ -100,7 +98,6 @@ class FlexibleBoard(AnyObject):
                     i_associated_part: str, i_owner: str, i_plating_style: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func create_Hole(CATBSTR iViewOfCreation,double iDiametre,double iX,double
@@ -174,7 +171,6 @@ class FlexibleBoard(AnyObject):
     def place_component(self, i_view_of_placement: str, i_component_instance: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub place_Component(CATBSTR iViewOfPlacement,CATBaseDispatch

@@ -15,7 +15,6 @@ from pycatia3dx.mmr_automation_interfaces.face import Face
 class PlanarFace(Face):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -80,7 +79,6 @@ class PlanarFace(Face):
     def get_first_axis(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
@@ -121,7 +119,6 @@ class PlanarFace(Face):
     def get_origin(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -160,7 +157,6 @@ class PlanarFace(Face):
     def get_second_axis(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
@@ -197,7 +193,6 @@ class PlanarFace(Face):
         if isinstance(result, tuple):
             return result
         return None
-
 
     def __repr__(self):
         return f'PlanarFace(name="{self.name}")'

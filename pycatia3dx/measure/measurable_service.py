@@ -17,7 +17,6 @@ from pycatia3dx.types.measurable import measurable_in_context_types, MeasurableI
 class MeasurableService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class MeasurableService(Service):
     def get_measurable(self, i_measured_item: AnyObject, i_type: CATMeasurableType) -> MeasurableInContext:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasurable(AnyObject iMeasuredItem,CATMeasurableType iType) As

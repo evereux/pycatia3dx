@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +50,6 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
     def priority(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Priority() As double
@@ -76,7 +74,6 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
     def rule_edition(self) -> 'ExpertRule':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RuleEdition() As ExpertRule (Read Only)

@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeLineNormal(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapeLineNormal(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOffset() As Length (Read Only)
@@ -79,7 +76,6 @@ class HybridShapeLineNormal(Line):
     def end_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndOffset() As Length (Read Only)
@@ -102,7 +98,6 @@ class HybridShapeLineNormal(Line):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -135,7 +130,6 @@ class HybridShapeLineNormal(Line):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -166,7 +160,6 @@ class HybridShapeLineNormal(Line):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Surface() As Reference
@@ -197,7 +190,6 @@ class HybridShapeLineNormal(Line):
     def get_length_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLengthType() As long
@@ -215,7 +207,6 @@ class HybridShapeLineNormal(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSymmetricalExtension() As boolean
@@ -234,7 +225,6 @@ class HybridShapeLineNormal(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLengthType(long iType)
@@ -253,7 +243,6 @@ class HybridShapeLineNormal(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSymmetricalExtension(boolean iSym)
@@ -270,4 +259,4 @@ class HybridShapeLineNormal(Line):
         return self.com_object.SetSymmetricalExtension(i_sym)
 
     def __repr__(self):
-        return f'HybridShapeLineNormal(name="{ self.name }")'
+        return f'HybridShapeLineNormal(name="{self.name}")'

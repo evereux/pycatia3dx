@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ExpertRuleBaseComponentRuntime(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Comment() As CATBSTR
@@ -64,7 +61,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def accurate_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AccurateType() As CATBSTR
@@ -82,7 +78,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
@@ -95,7 +90,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def deactivate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Deactivate()
@@ -108,7 +102,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def is_use_only(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsUseOnly() As boolean
@@ -124,7 +117,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def isactivate(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Isactivate() As boolean
@@ -140,7 +132,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def parse(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Parse() As CATBSTR
@@ -156,7 +147,6 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
     def set_use_only(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUseOnly()
@@ -167,4 +157,4 @@ class ExpertRuleBaseComponentRuntime(AnyObject):
         return self.com_object.SetUseOnly()
 
     def __repr__(self):
-        return f'ExpertRuleBaseComponentRuntime(name="{ self.name }")'
+        return f'ExpertRuleBaseComponentRuntime(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RobotRrsParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +59,6 @@ class RobotRrsParameters(AnyObject):
     def list_rrs_parameters(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListRRSParameters() As CATSafeArrayVariant (Read
@@ -103,7 +100,6 @@ class RobotRrsParameters(AnyObject):
     def list_rrs_parameters_boolean(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListRRSParametersBoolean() As CATSafeArrayVariant (Read
@@ -145,7 +141,6 @@ class RobotRrsParameters(AnyObject):
     def list_rrs_parameters_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListRRSParametersList() As CATSafeArrayVariant (Read
@@ -186,7 +181,6 @@ class RobotRrsParameters(AnyObject):
     def get_rrs_parameter(self, i_rrs_parameters_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRRSParameter(CATBSTR iRRSParametersName) As CATBSTR
@@ -216,7 +210,6 @@ class RobotRrsParameters(AnyObject):
     def get_rrs_parameter_boolean(self, i_rrs_parameters_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRRSParameterBoolean(CATBSTR iRRSParametersName) As
@@ -247,7 +240,6 @@ class RobotRrsParameters(AnyObject):
     def get_rrs_parameter_list(self, i_rrs_parameters_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRRSParameterList(CATBSTR iRRSParametersName) As
@@ -292,7 +284,6 @@ class RobotRrsParameters(AnyObject):
     def set_rrs_parameter(self, i_rrs_parameters_name: str, i_rrs_parameter_value: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SetRRSParameter(CATBSTR iRRSParametersName,CATBSTR iRRSParameterValue) As
@@ -333,7 +324,6 @@ class RobotRrsParameters(AnyObject):
     def set_rrs_parameter_boolean(self, i_rrs_parameters_name: str, i_rrs_parameter_value: bool) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SetRRSParameterBoolean(CATBSTR iRRSParametersName,boolean
@@ -374,7 +364,6 @@ class RobotRrsParameters(AnyObject):
     def set_rrs_parameter_list(self, i_rrs_parameters_name: str, i_values: tuple) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SetRRSParameterList(CATBSTR iRRSParametersName,CATSafeArrayVariant
@@ -425,4 +414,4 @@ class RobotRrsParameters(AnyObject):
         return self.com_object.SetRRSParameterList(i_rrs_parameters_name, i_values)
 
     def __repr__(self):
-        return f'RobotRrsParameters(name="{ self.name }")'
+        return f'RobotRrsParameters(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ResourceTask(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class ResourceTask(AnyObject):
     def context(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Context() As AnyObject (Read Only)
@@ -65,7 +63,6 @@ class ResourceTask(AnyObject):
     def motion_activities(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionActivities() As CATSafeArrayVariant (Read Only)
@@ -91,7 +88,6 @@ class ResourceTask(AnyObject):
     def motion_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As CATSafeArrayVariant (Read Only)
@@ -117,7 +113,6 @@ class ResourceTask(AnyObject):
     def primary_mca(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrimaryMCA() As AnyObject (Read Only)
@@ -145,7 +140,6 @@ class ResourceTask(AnyObject):
     def resource(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Resource() As AnyObject (Read Only)
@@ -172,7 +166,6 @@ class ResourceTask(AnyObject):
     def task_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TaskType() As CATBSTR (Read Only)
@@ -199,7 +192,6 @@ class ResourceTask(AnyObject):
     def trajectory_reference(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TrajectoryReference() As AnyObject (Read Only)
@@ -228,7 +220,6 @@ class ResourceTask(AnyObject):
     def create_motion_activity(self, i_before: bool, i_reference_instruction: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateMotionActivity(boolean iBefore,AnyObject iReferenceInstruction) As
@@ -268,7 +259,6 @@ class ResourceTask(AnyObject):
     def create_spm_operation(self, i_before: bool, i_reference_instruction: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSPMOperation(boolean iBefore,AnyObject iReferenceInstruction) As
@@ -309,8 +299,7 @@ class ResourceTask(AnyObject):
         def delete_motion_activities(self, i_motion_activities: tuple) -> None:
             """
             .. note::
-                :class: toggle
-
+    
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                     | Sub DeleteMotionActivities(CATSafeArrayVariant
                     | iMotionActivities)
@@ -355,7 +344,6 @@ class ResourceTask(AnyObject):
     def delete_motion_activity(self, i_motion_activity: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteMotionActivity(AnyObject iMotionActivity)
@@ -384,7 +372,6 @@ class ResourceTask(AnyObject):
     def get_trajectory_reference(self, o_trajectory: AnyObject, o_trajectory_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTrajectoryReference(AnyObject oTrajectory,AnyObject
@@ -417,7 +404,6 @@ class ResourceTask(AnyObject):
     def set_trajectory_reference(self, i_trajectory: AnyObject, i_trajectory_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTrajectoryReference(AnyObject iTrajectory,AnyObject

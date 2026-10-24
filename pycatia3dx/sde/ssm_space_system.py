@@ -13,10 +13,8 @@ from pycatia3dx.sde.ssm_space_manager import SsmSpaceManager
 
 
 class SsmSpaceSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmSpaceSystem(AnyObject):
     def space_manager(self) -> SsmSpaceManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceManager() As SsmSpaceManager (Read Only)
@@ -59,4 +56,4 @@ class SsmSpaceSystem(AnyObject):
         return SsmSpaceManager(self.com_object.SpaceManager)
 
     def __repr__(self):
-        return f'SsmSpaceSystem(name="{ self.name }")'
+        return f'SsmSpaceSystem(name="{self.name}")'

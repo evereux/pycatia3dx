@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPExpressionFixerUpload(OLPExpressionFixer):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
     def subsitute_variable(self, i_nrl_var: OLPAstNode, i_bm_var: OLPVariable) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteVariable(OlpAstNode iNRLVar,OlpVariable iBMVar)
@@ -74,10 +71,10 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         """
         return self.com_object.SubsituteVariable(i_nrl_var.com_object, i_bm_var.com_object)
 
-    def substitute_variable_get_or_create(self, i_nrl_var: OLPAstNode, i_name: str, i_type: int, i_data_type: int, i_direction: int, i_scope: AnyObject, i_default_value: str) -> None:
+    def substitute_variable_get_or_create(self, i_nrl_var: OLPAstNode, i_name: str, i_type: int, i_data_type: int,
+                                          i_direction: int, i_scope: AnyObject, i_default_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteVariableGetOrCreate(OlpAstNode iNRLVar,CATBSTR
@@ -117,12 +114,14 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         :param str i_default_value:
         :return: None
         """
-        return self.com_object.SubsituteVariableGetOrCreate(i_nrl_var.com_object, i_name, i_type, i_data_type, i_direction, i_scope.com_object, i_default_value)
+        return self.com_object.SubsituteVariableGetOrCreate(i_nrl_var.com_object, i_name, i_type, i_data_type,
+                                                            i_direction, i_scope.com_object, i_default_value)
 
-    def substitute_variable_get_or_create_in_string_type(self, i_nrl_var: OLPAstNode, i_name: str, i_type: int, i_data_type: str, i_direction: int, i_scope: AnyObject, i_default_value: str) -> None:
+    def substitute_variable_get_or_create_in_string_type(self, i_nrl_var: OLPAstNode, i_name: str, i_type: int,
+                                                         i_data_type: str, i_direction: int, i_scope: AnyObject,
+                                                         i_default_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteVariableGetOrCreateInStringType(OlpAstNode iNRLVar,CATBSTR
@@ -165,12 +164,13 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         :param str i_default_value:
         :return: None
         """
-        return self.com_object.SubsituteVariableGetOrCreateInStringType(i_nrl_var.com_object, i_name, i_type, i_data_type, i_direction, i_scope.com_object, i_default_value)
+        return self.com_object.SubsituteVariableGetOrCreateInStringType(i_nrl_var.com_object, i_name, i_type,
+                                                                        i_data_type, i_direction, i_scope.com_object,
+                                                                        i_default_value)
 
     def subsitute_variable_name_only(self, i_nrl_var: OLPAstNode, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteVariableNameOnly(OlpAstNode iNRLVar,CATBSTR
@@ -198,4 +198,4 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         return self.com_object.SubsituteVariableNameOnly(i_nrl_var.com_object, i_name)
 
     def __repr__(self):
-        return f'OLPExpressionFixerUpload(name="{ self.name }")'
+        return f'OLPExpressionFixerUpload(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class PLMNewService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class PLMNewService(Service):
     def plm_create(self, i_user_type: str) -> Editor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMCreate(CATBSTR iUserType,Editor oEditor)
@@ -77,7 +75,6 @@ class PLMNewService(Service):
     def set_attribute_value(self, i_attribute_id: str, i_attribute_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iAttributeID,CATVariant

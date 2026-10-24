@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPPulse(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPPulse(OLPInstruction):
     def delay(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Delay() As double
@@ -67,7 +64,6 @@ class OLPPulse(OLPInstruction):
     def delay_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DelayExpress() As OlpAstBranch
@@ -90,7 +86,6 @@ class OLPPulse(OLPInstruction):
     def destination(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Destination() As OlpVariable
@@ -115,7 +110,6 @@ class OLPPulse(OLPInstruction):
     def destination_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DestinationExpress() As OlpAstBranch
@@ -138,7 +132,6 @@ class OLPPulse(OLPInstruction):
     def duration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Duration() As double
@@ -162,7 +155,6 @@ class OLPPulse(OLPInstruction):
     def duration_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DurationExpress() As OlpAstBranch
@@ -185,7 +177,6 @@ class OLPPulse(OLPInstruction):
     def source(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Source() As OlpAstBranch
@@ -213,7 +204,6 @@ class OLPPulse(OLPInstruction):
     def source_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SourceType() As DELOlpPulseType
@@ -238,7 +228,6 @@ class OLPPulse(OLPInstruction):
     def use_duration(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseDuration() As boolean
@@ -260,4 +249,4 @@ class OLPPulse(OLPInstruction):
         self.com_object.UseDuration = value
 
     def __repr__(self):
-        return f'OLPPulse(name="{ self.name }")'
+        return f'OLPPulse(name="{self.name}")'

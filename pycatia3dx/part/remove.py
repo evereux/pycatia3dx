@@ -12,10 +12,8 @@ from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Remove(BooleanShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,4 +36,4 @@ class Remove(BooleanShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Remove(name="{ self.name }")'
+        return f'Remove(name="{self.name}")'

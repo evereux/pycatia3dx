@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingAxisSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_axis_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAxisType() As CATBSTR
@@ -56,7 +53,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_is_origin(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIsOrigin() As long
@@ -74,7 +70,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_origin_group(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginGroup() As long
@@ -92,7 +87,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_origin_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginNumber() As long
@@ -110,7 +104,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_origin_point(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOriginPoint(double x,double y,double z)
@@ -131,7 +124,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_x_direction(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetXDirection(double x,double y,double z)
@@ -152,7 +144,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_y_direction(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetYDirection(double x,double y,double z)
@@ -173,7 +164,6 @@ class ManufacturingAxisSystem(AnyObject):
     def get_z_direction(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetZDirection(double x,double y,double z)
@@ -194,7 +184,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_axis_type(self, i_axis_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisType(CATBSTR iAxisType)
@@ -213,7 +202,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_is_origin(self, i_flag: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIsOrigin(long iFlag)
@@ -232,7 +220,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_origin_group(self, i_flag: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOriginGroup(long iFlag)
@@ -251,7 +238,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_origin_number(self, i_flag: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOriginNumber(long iFlag)
@@ -270,7 +256,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_origin_point(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOriginPoint(double x,double y,double z)
@@ -291,7 +276,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_x_direction(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXDirection(double x,double y,double z)
@@ -312,7 +296,6 @@ class ManufacturingAxisSystem(AnyObject):
     def set_z_direction(self, x: float, y: float, z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetZDirection(double x,double y,double z)
@@ -331,4 +314,4 @@ class ManufacturingAxisSystem(AnyObject):
         return self.com_object.SetZDirection(x, y, z)
 
     def __repr__(self):
-        return f'ManufacturingAxisSystem(name="{ self.name }")'
+        return f'ManufacturingAxisSystem(name="{self.name}")'

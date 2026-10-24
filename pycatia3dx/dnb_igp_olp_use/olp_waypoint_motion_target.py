@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_robot_motion_target import OLPRobotMotionTar
 
 
 class OLPWaypointMotionTarget(OLPRobotMotionTarget):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPWaypointMotionTarget(OLPRobotMotionTarget):
     def waypoint_escape_motion_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointEscapeMotionType() As CATBSTR
@@ -67,4 +64,4 @@ class OLPWaypointMotionTarget(OLPRobotMotionTarget):
         self.com_object.WaypointEscapeMotionType = value
 
     def __repr__(self):
-        return f'OLPWaypointMotionTarget(name="{ self.name }")'
+        return f'OLPWaypointMotionTarget(name="{self.name}")'

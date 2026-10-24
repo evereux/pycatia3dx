@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCompositeGridElemRef(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimCompositeGridElemRef(AnyObject):
     def get_geometry(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGeometry() As CATBaseDispatch
@@ -54,7 +51,6 @@ class SimCompositeGridElemRef(AnyObject):
     def set_geometry(self, i_geometry: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGeometry(CATBaseDispatch iGeometry)
@@ -71,4 +67,4 @@ class SimCompositeGridElemRef(AnyObject):
         return self.com_object.SetGeometry(i_geometry.com_object)
 
     def __repr__(self):
-        return f'SimCompositeGridElemRef(name="{ self.name }")'
+        return f'SimCompositeGridElemRef(name="{self.name}")'

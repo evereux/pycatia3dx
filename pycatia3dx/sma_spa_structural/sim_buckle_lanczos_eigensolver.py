@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBuckleLanczosEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def maximum_eigenvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumEigenvalue() As double
@@ -61,7 +58,6 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def maximum_eigenvalue_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumEigenvalueSet() As boolean
@@ -87,7 +83,6 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def minimum_eigenvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumEigenvalue() As double
@@ -110,7 +105,6 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def minimum_eigenvalue_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumEigenvalueSet() As boolean
@@ -136,7 +130,6 @@ class SimBuckleLanczosEigensolver(AnyObject):
     def number_of_eigenvalues(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfEigenvalues() As long
@@ -156,4 +149,4 @@ class SimBuckleLanczosEigensolver(AnyObject):
         self.com_object.NumberOfEigenvalues = value
 
     def __repr__(self):
-        return f'SimBuckleLanczosEigensolver(name="{ self.name }")'
+        return f'SimBuckleLanczosEigensolver(name="{self.name}")'

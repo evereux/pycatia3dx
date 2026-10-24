@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPToolProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +57,6 @@ class OLPToolProfile(OLPProfile):
     def fixed_tcp(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FixedTCP() As boolean
@@ -82,7 +79,6 @@ class OLPToolProfile(OLPProfile):
     def mass(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mass() As double
@@ -104,7 +100,6 @@ class OLPToolProfile(OLPProfile):
     def get_attached_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttachedDevice() As OlpController
@@ -124,7 +119,6 @@ class OLPToolProfile(OLPProfile):
     def get_centroid(self, o_x: float, o_y: float, o_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCentroid(double oX,double oY,double oZ)
@@ -149,7 +143,6 @@ class OLPToolProfile(OLPProfile):
     def get_inertia(self, o_xx: float, o_yy: float, o_zz: float, o_xy: float, o_yz: float, o_zx: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetInertia(double oXX,double oYY,double oZZ,double oXY,double oYZ,double
@@ -184,7 +177,6 @@ class OLPToolProfile(OLPProfile):
     def get_transform(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
@@ -214,7 +206,6 @@ class OLPToolProfile(OLPProfile):
     def set_attached_device(self, i_attached_device: OLPController, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttachedDevice(OlpController iAttachedDevice,boolean
@@ -238,7 +229,6 @@ class OLPToolProfile(OLPProfile):
     def set_centroid(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCentroid(double iX,double iY,double iZ)
@@ -263,7 +253,6 @@ class OLPToolProfile(OLPProfile):
     def set_centroid_match(self, i_x: float, i_y: float, i_z: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCentroidMatch(double iX,double iY,double iZ,boolean
@@ -292,7 +281,6 @@ class OLPToolProfile(OLPProfile):
     def set_fixed_tcp_match(self, i_is_fixed_tcp: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFixedTCPMatch(boolean iIsFixedTCP,boolean iMatch)
@@ -314,7 +302,6 @@ class OLPToolProfile(OLPProfile):
     def set_inertia(self, i_xx: float, i_yy: float, i_zz: float, i_xy: float, i_yz: float, i_zx: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInertia(double iXX,double iYY,double iZZ,double iXY,double iYZ,double
@@ -346,10 +333,10 @@ class OLPToolProfile(OLPProfile):
         """
         return self.com_object.SetInertia(i_xx, i_yy, i_zz, i_xy, i_yz, i_zx)
 
-    def set_inertia_match(self, i_xx: float, i_yy: float, i_zz: float, i_xy: float, i_yz: float, i_zx: float, i_match: bool) -> None:
+    def set_inertia_match(self, i_xx: float, i_yy: float, i_zz: float, i_xy: float, i_yz: float, i_zx: float,
+                          i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInertiaMatch(double iXX,double iYY,double iZZ,double iXY,double
@@ -387,7 +374,6 @@ class OLPToolProfile(OLPProfile):
     def set_mass_match(self, i_mass: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMassMatch(double iMass,boolean iMatch)
@@ -409,7 +395,6 @@ class OLPToolProfile(OLPProfile):
     def set_transform(self, i_origin: int, i_tcp: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform iTCP)
@@ -438,7 +423,6 @@ class OLPToolProfile(OLPProfile):
     def set_transform_match(self, i_origin: int, i_tcp: OLPTransform, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransformMatch(DELOlpPositionRef iOrigin,OlpTransform iTCP,boolean
@@ -469,4 +453,4 @@ class OLPToolProfile(OLPProfile):
         return self.com_object.SetTransformMatch(i_origin, i_tcp.com_object, i_match)
 
     def __repr__(self):
-        return f'OLPToolProfile(name="{ self.name }")'
+        return f'OLPToolProfile(name="{self.name}")'

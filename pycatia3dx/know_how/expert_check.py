@@ -11,10 +11,8 @@ from pycatia3dx.know_how.expert_check_runtime import ExpertCheckRuntime
 
 
 class ExpertCheck(ExpertCheckRuntime):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class ExpertCheck(ExpertCheckRuntime):
     def body(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Body() As CATBSTR
@@ -69,7 +66,6 @@ class ExpertCheck(ExpertCheckRuntime):
     def language(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Language() As long
@@ -97,7 +93,6 @@ class ExpertCheck(ExpertCheckRuntime):
     def variables(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variables() As CATBSTR
@@ -121,4 +116,4 @@ class ExpertCheck(ExpertCheckRuntime):
         self.com_object.Variables = value
 
     def __repr__(self):
-        return f'ExpertCheck(name="{ self.name }")'
+        return f'ExpertCheck(name="{self.name}")'

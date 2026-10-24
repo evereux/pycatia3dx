@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeRollingOffset(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -41,7 +39,6 @@ class HybridShapeRollingOffset(HybridShape):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset() As Length (Read Only)
@@ -70,7 +67,6 @@ class HybridShapeRollingOffset(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -106,7 +102,6 @@ class HybridShapeRollingOffset(HybridShape):
     def get_curve(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func getCurve(long iPos) As Reference
@@ -141,7 +136,6 @@ class HybridShapeRollingOffset(HybridShape):
     def get_nb_curve(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func getNbCurve() As long
@@ -167,7 +161,6 @@ class HybridShapeRollingOffset(HybridShape):
     def get_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func getOffset() As double
@@ -193,7 +186,6 @@ class HybridShapeRollingOffset(HybridShape):
     def put_curve(self, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub putCurve(Reference iCurve)
@@ -219,7 +211,6 @@ class HybridShapeRollingOffset(HybridShape):
     def put_offset(self, i_offset: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub putOffset(double iOffset)
@@ -244,4 +235,4 @@ class HybridShapeRollingOffset(HybridShape):
         return self.com_object.putOffset(i_offset)
 
     def __repr__(self):
-        return f'HybridShapeRollingOffset(name="{ self.name }")'
+        return f'HybridShapeRollingOffset(name="{self.name}")'

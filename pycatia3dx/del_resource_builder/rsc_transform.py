@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class RscTransform(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class RscTransform(AnyObject):
     def angular_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularTolerance() As double
@@ -68,7 +66,6 @@ class RscTransform(AnyObject):
     def is_identity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsIdentity() As boolean (Read Only)
@@ -84,7 +81,6 @@ class RscTransform(AnyObject):
     def linear_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinearTolerance() As double
@@ -107,7 +103,6 @@ class RscTransform(AnyObject):
     def duplicate(self) -> 'RscTransform':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Duplicate() As RscTransform
@@ -125,7 +120,6 @@ class RscTransform(AnyObject):
     def get_oat(self, o_o: float, o_a: float, o_t: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOAT(double oO,double oA,double oT)
@@ -153,7 +147,6 @@ class RscTransform(AnyObject):
     def get_quaternions(self, o_qx: float, o_qy: float, o_qz: float, o_qw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetQuaternions(double oQX,double oQY,double oQZ,double
@@ -185,7 +178,6 @@ class RscTransform(AnyObject):
     def get_rpy(self, o_roll: float, o_pitch: float, o_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRPY(double oRoll,double oPitch,double oYaw)
@@ -211,7 +203,6 @@ class RscTransform(AnyObject):
     def get_transform_coefficients(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetTransformCoefficients(CATSafeArrayVariant oValues)
@@ -246,7 +237,6 @@ class RscTransform(AnyObject):
     def get_vector(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetVector(long iType,double oX,double oY,double oZ)
@@ -278,7 +268,6 @@ class RscTransform(AnyObject):
     def get_xyz(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetXYZ(double oX,double oY,double oZ)
@@ -300,7 +289,6 @@ class RscTransform(AnyObject):
     def get_zyz(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetZYZ(double oZ1,double oY,double oZ2)
@@ -325,7 +313,6 @@ class RscTransform(AnyObject):
     def inverse(self) -> 'RscTransform':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Inverse() As RscTransform
@@ -344,7 +331,6 @@ class RscTransform(AnyObject):
     def is_equal_to(self, i_transform: 'RscTransform') -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsEqualTo(RscTransform iTransform) As boolean
@@ -365,7 +351,6 @@ class RscTransform(AnyObject):
     def multiply(self, i_transform: 'RscTransform') -> 'RscTransform':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Multiply(RscTransform iTransform) As RscTransform
@@ -391,7 +376,6 @@ class RscTransform(AnyObject):
     def rotate(self, i_type: int, i_rotate_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Rotate(long iType,double iRotateAngle)
@@ -418,7 +402,6 @@ class RscTransform(AnyObject):
     def set_oat(self, i_o: float, i_a: float, i_t: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOAT(double iO,double iA,double iT)
@@ -446,7 +429,6 @@ class RscTransform(AnyObject):
     def set_quaternions(self, i_qx: float, i_qy: float, i_qz: float, i_qw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetQuaternions(double iQX,double iQY,double iQZ,double
@@ -478,7 +460,6 @@ class RscTransform(AnyObject):
     def set_rpy(self, i_roll: float, i_pitch: float, i_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRPY(double iRoll,double iPitch,double iYaw)
@@ -503,7 +484,6 @@ class RscTransform(AnyObject):
     def set_transform_coefficients(self, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetTransformCoefficients(CATSafeArrayVariant iValues)
@@ -539,7 +519,6 @@ class RscTransform(AnyObject):
     def set_vector(self, i_type: int, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVector(long iType,double iX,double iY,double iZ)
@@ -575,7 +554,6 @@ class RscTransform(AnyObject):
     def set_xyz(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXYZ(double iX,double iY,double iZ)

@@ -13,10 +13,8 @@ from pycatia3dx.machining_use.manufacturing_view import ManufacturingView
 
 
 class ManufacturingFeatureContainer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class ManufacturingFeatureContainer(AnyObject):
     def get_manufacturing_view(self) -> ManufacturingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingView() As ManufacturingView
@@ -56,4 +53,4 @@ class ManufacturingFeatureContainer(AnyObject):
         return ManufacturingView(self.com_object.GetManufacturingView())
 
     def __repr__(self):
-        return f'ManufacturingFeatureContainer(name="{ self.name }")'
+        return f'ManufacturingFeatureContainer(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimResultantSensorOptions(SimResultantSensor):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class SimResultantSensorOptions(SimResultantSensor):
     def set_axis_info(self, i_enum_axis_type: int, icus_selected_axis: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisInfo(SimAxisType iEnumAxisType,CATVariant
@@ -74,7 +71,6 @@ class SimResultantSensorOptions(SimResultantSensor):
     def set_sim_elements_selection(self, i_enum_elements_type: int, ilscus_elements: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSimElementsSelection(SimSelectionType
@@ -98,7 +94,6 @@ class SimResultantSensorOptions(SimResultantSensor):
     def set_sim_support(self, i_enum_support_type: int, ilscus_support: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSimSupport(SimSelectionType iEnumSupportType,CATSafeArrayVariant
@@ -120,4 +115,4 @@ class SimResultantSensorOptions(SimResultantSensor):
         return self.com_object.SetSimSupport(i_enum_support_type, ilscus_support)
 
     def __repr__(self):
-        return f'SimResultantSensorOptions(name="{ self.name }")'
+        return f'SimResultantSensorOptions(name="{self.name}")'

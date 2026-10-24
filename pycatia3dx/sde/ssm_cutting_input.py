@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmCuttingInput(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmCuttingInput(AnyObject):
     def input_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InputElement() As Reference (Read Only)
@@ -59,4 +56,4 @@ class SsmCuttingInput(AnyObject):
         return Reference(self.com_object.InputElement)
 
     def __repr__(self):
-        return f'SsmCuttingInput(name="{ self.name }")'
+        return f'SsmCuttingInput(name="{self.name}")'

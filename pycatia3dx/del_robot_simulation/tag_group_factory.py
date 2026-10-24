@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.tag_group import TagGroup
 
 
 class TagGroupFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class TagGroupFactory(AnyObject):
     def create_tag_group(self, i_tag_group_name: str) -> TagGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTagGroup(CATBSTR iTagGroupName) As TagGroup
@@ -69,4 +66,4 @@ class TagGroupFactory(AnyObject):
         return TagGroup(self.com_object.CreateTagGroup(i_tag_group_name))
 
     def __repr__(self):
-        return f'TagGroupFactory(name="{ self.name }")'
+        return f'TagGroupFactory(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMassConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimMassConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimMassConstraintType
@@ -98,7 +95,6 @@ class SimMassConstraint(AnyObject):
     def get_absolute_mass_target(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAbsoluteMassTarget(double oVal)
@@ -117,7 +113,6 @@ class SimMassConstraint(AnyObject):
     def get_target_mass_ratio(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTargetMassRatio(double oVal)
@@ -136,7 +131,6 @@ class SimMassConstraint(AnyObject):
     def set_absolute_mass_target(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAbsoluteMassTarget(double iVal)
@@ -155,7 +149,6 @@ class SimMassConstraint(AnyObject):
     def set_target_mass_ratio(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTargetMassRatio(double iVal)
@@ -172,4 +165,4 @@ class SimMassConstraint(AnyObject):
         return self.com_object.SetTargetMassRatio(i_val)
 
     def __repr__(self):
-        return f'SimMassConstraint(name="{ self.name }")'
+        return f'SimMassConstraint(name="{self.name}")'

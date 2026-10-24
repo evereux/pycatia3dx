@@ -15,7 +15,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 class OLPDrillRivetProfile(OLPProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def approach_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachStage() As OlpDrillRivetStage
@@ -65,7 +63,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def drill_cycles(self) -> OLPDrillRivetCycles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillCycles() As OlpDrillRivetCycles
@@ -92,7 +89,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def retract_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RetractStage() As OlpDrillRivetStage
@@ -115,7 +111,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def rivet_cycles(self) -> OLPDrillRivetCycles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RivetCycles() As OlpDrillRivetCycles
@@ -141,7 +136,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_all_process_schedules(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllProcessSchedules() As CATSafeArrayVariant
@@ -157,7 +151,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachDirection() As DELOlpAxisDirection
@@ -173,7 +166,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_precycle_feature(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPrecycleFeature() As CATBSTR
@@ -206,7 +198,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_process_schedules(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProcessSchedules(CATBSTR iProfileType) As
@@ -229,7 +220,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_profile_process_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileProcessType() As CATBSTR
@@ -250,7 +240,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def get_tool_kin_simulation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolKinSimulation() As boolean
@@ -266,7 +255,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def is_process_schedule_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
@@ -289,7 +277,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def is_tool_fixed(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsToolFixed() As boolean
@@ -305,7 +292,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_all_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -342,7 +328,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_approach_direction(self, i_approach_direction: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachDirection(DELOlpAxisDirection iApproachDirection,boolean
@@ -365,7 +350,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_precycle_feature(self, i_feature: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPrecycleFeature(CATBSTR iFeature,boolean iMatch)
@@ -404,7 +388,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -446,7 +429,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_process_schedules_to_nothing(self, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
@@ -472,7 +454,6 @@ class OLPDrillRivetProfile(OLPProfile):
     def set_tool_kin_simulation(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolKinSimulation(boolean iEnabled,boolean iMatch)

@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleCtrPt(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -55,7 +53,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Center() As Reference
@@ -86,7 +83,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def crossing_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CrossingPoint() As Reference
@@ -117,7 +113,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -147,7 +142,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def is_geodesic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func IsGeodesic() As boolean
@@ -165,7 +159,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def set_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetGeometryOnSupport()
@@ -179,7 +172,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def unset_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub UnsetGeometryOnSupport()
@@ -191,4 +183,4 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         return self.com_object.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircleCtrPt(name="{ self.name }")'
+        return f'HybridShapeCircleCtrPt(name="{self.name}")'

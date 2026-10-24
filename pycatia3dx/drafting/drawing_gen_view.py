@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class DrawingGenView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class DrawingGenView(AnyObject):
     def gvs_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GVSName() As CATBSTR
@@ -80,7 +78,6 @@ class DrawingGenView(AnyObject):
     def gen_view_properties(self) -> DrawingGenViewProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GenViewProperties() As DrawingGenViewProperties
@@ -112,7 +109,6 @@ class DrawingGenView(AnyObject):
     def number_of_breakouts(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfBreakouts() As long (Read Only)
@@ -137,7 +133,6 @@ class DrawingGenView(AnyObject):
     def number_of_breaks(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfBreaks() As long (Read Only)
@@ -162,7 +157,6 @@ class DrawingGenView(AnyObject):
     def number_of_links(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfLinks() As long (Read Only)
@@ -188,7 +182,6 @@ class DrawingGenView(AnyObject):
     def parent_view(self) -> 'DrawingView':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParentView() As DrawingView (Read Only)
@@ -212,7 +205,6 @@ class DrawingGenView(AnyObject):
     def add_breakout(self, i_profil: tuple, i_plane1: tuple, i_plane2: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddBreakout(CATSafeArrayVariant iProfil,CATSafeArrayVariant
@@ -258,7 +250,6 @@ class DrawingGenView(AnyObject):
     def add_broken_view(self, i_broken_lines_extremities: tuple, i_x_direction: float, i_y_direction: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddBrokenView(CATSafeArrayVariant iBrokenLinesExtremities,double
@@ -345,7 +336,6 @@ class DrawingGenView(AnyObject):
     def add_clipping_box(self, i_box_defintion: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddClippingBox(CATSafeArrayVariant iBoxDefintion)
@@ -419,7 +409,6 @@ class DrawingGenView(AnyObject):
     def add_clipping_with_circle(self, x_center: float, y_center: float, radius: float, compute_mode: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddClippingWithCircle(double XCenter,double YCenter,double Radius,boolean
@@ -462,7 +451,6 @@ class DrawingGenView(AnyObject):
     def add_clipping_with_profile(self, profil: tuple, compute_mode: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddClippingWithProfile(CATSafeArrayVariant profil,boolean
@@ -518,7 +506,6 @@ class DrawingGenView(AnyObject):
     def add_link(self, i_info_on_view_link: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddLink(CATSafeArrayVariant iInfoOnViewLink)
@@ -579,7 +566,6 @@ class DrawingGenView(AnyObject):
     def apply_breakout_to(self, i_destination_view: 'DrawingGenView') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyBreakoutTo(DrawingGenView iDestinationView)
@@ -610,7 +596,6 @@ class DrawingGenView(AnyObject):
     def apply_clipping_box_to(self, i_destination_view: 'DrawingGenView') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyClippingBoxTo(DrawingGenView iDestinationView)
@@ -645,7 +630,6 @@ class DrawingGenView(AnyObject):
     def force_update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ForceUpdate()
@@ -668,7 +652,6 @@ class DrawingGenView(AnyObject):
     def get_associated_root_product(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAssociatedRootProduct() As AnyObject
@@ -692,7 +675,6 @@ class DrawingGenView(AnyObject):
     def get_axis_system(self, o_product: AnyObject, o_axis_systeme: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystem(AnyObject oProduct,AnyObject oAxisSysteme)
@@ -714,7 +696,6 @@ class DrawingGenView(AnyObject):
     def get_link(self, i_index_link: int, o_info_on_view_link: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLink(long iIndexLink,CATSafeArrayVariant
@@ -760,7 +741,6 @@ class DrawingGenView(AnyObject):
     def get_number_of_info_for_link(self, i_index_link: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfInfoForLink(long iIndexLink) As long
@@ -800,7 +780,6 @@ class DrawingGenView(AnyObject):
     def is_clipped(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsClipped() As boolean
@@ -822,7 +801,6 @@ class DrawingGenView(AnyObject):
     def is_clipped_by_box(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsClippedByBox() As boolean
@@ -845,7 +823,6 @@ class DrawingGenView(AnyObject):
     def modify_projection_plane(self, i_proj_plane: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ModifyProjectionPlane(CATSafeArrayVariant iProjPlane)
@@ -916,7 +893,6 @@ class DrawingGenView(AnyObject):
     def put_links(self, i_nb_link: int, i_info_on_view_links: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutLinks(long iNbLink,CATSafeArrayVariant
@@ -968,7 +944,6 @@ class DrawingGenView(AnyObject):
     def remove_gvs(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveGVS()
@@ -991,7 +966,6 @@ class DrawingGenView(AnyObject):
     def remove_link(self, i_index_link: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLink(long iIndexLink)
@@ -1022,7 +996,6 @@ class DrawingGenView(AnyObject):
     def set_axis_system(self, i_product: AnyObject, i_axis_systeme: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystem(AnyObject iProduct,AnyObject iAxisSysteme)
@@ -1044,7 +1017,6 @@ class DrawingGenView(AnyObject):
     def un_break(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnBreak()
@@ -1071,7 +1043,6 @@ class DrawingGenView(AnyObject):
     def un_breakout(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnBreakout()
@@ -1097,7 +1068,6 @@ class DrawingGenView(AnyObject):
     def un_clip(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnClip()
@@ -1123,7 +1093,6 @@ class DrawingGenView(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

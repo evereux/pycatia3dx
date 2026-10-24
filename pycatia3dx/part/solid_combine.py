@@ -13,10 +13,8 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class SolidCombine(SketchBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class SolidCombine(SketchBasedShape):
     def first_component_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstComponentDirection() As Reference
@@ -73,7 +70,6 @@ class SolidCombine(SketchBasedShape):
     def first_component_profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstComponentProfile() As Reference
@@ -105,7 +101,6 @@ class SolidCombine(SketchBasedShape):
     def second_component_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondComponentDirection() As Reference
@@ -137,7 +132,6 @@ class SolidCombine(SketchBasedShape):
     def second_component_profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondComponentProfile() As Reference
@@ -166,4 +160,4 @@ class SolidCombine(SketchBasedShape):
         self.com_object.SecondComponentProfile = value
 
     def __repr__(self):
-        return f'SolidCombine(name="{ self.name }")'
+        return f'SolidCombine(name="{self.name}")'

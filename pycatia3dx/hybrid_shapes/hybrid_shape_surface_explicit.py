@@ -12,10 +12,8 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSurfaceExplicit(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -40,4 +38,4 @@ class HybridShapeSurfaceExplicit(HybridShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapeSurfaceExplicit(name="{ self.name }")'
+        return f'HybridShapeSurfaceExplicit(name="{self.name}")'

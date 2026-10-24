@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStaticRiksStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimStaticRiksStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimStaticRiksStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricNonLinearityFlag() As boolean
@@ -127,7 +123,6 @@ class SimStaticRiksStep(SimStep):
     def initial_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialArcLengthIncrement() As double
@@ -150,7 +145,6 @@ class SimStaticRiksStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -173,7 +167,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumArcLengthIncrement() As double
@@ -196,7 +189,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_displacement_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumDisplacementType() As
@@ -221,7 +213,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumIncrements() As long
@@ -244,7 +235,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_load_proportionality_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumLoadProportionalityFactor() As double
@@ -268,7 +258,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_rotation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumRotation() As double
@@ -293,7 +282,6 @@ class SimStaticRiksStep(SimStep):
     def maximum_translation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTranslation() As double
@@ -318,7 +306,6 @@ class SimStaticRiksStep(SimStep):
     def minimum_arc_length_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumArcLengthIncrement() As double
@@ -341,7 +328,6 @@ class SimStaticRiksStep(SimStep):
     def monitored_node_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MonitoredNodeSupport() As CATBaseDispatch (Read Only)
@@ -356,7 +342,6 @@ class SimStaticRiksStep(SimStep):
     def monitored_rotational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MonitoredRotationalDOF() As SimDof
@@ -380,7 +365,6 @@ class SimStaticRiksStep(SimStep):
     def monitored_translational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MonitoredTranslationalDOF() As SimDof
@@ -404,7 +388,6 @@ class SimStaticRiksStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrementationScheme() As
@@ -428,7 +411,6 @@ class SimStaticRiksStep(SimStep):
     def total_arc_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalArcLength() As double
@@ -449,4 +431,4 @@ class SimStaticRiksStep(SimStep):
         self.com_object.TotalArcLength = value
 
     def __repr__(self):
-        return f'SimStaticRiksStep(name="{ self.name }")'
+        return f'SimStaticRiksStep(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.structure.str_plate_extrusion_mngt import StrPlateExtrusionMngt
 class StrSfdPlate(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class StrSfdPlate(AnyObject):
     def flanges(self) -> StrFlanges:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Flanges() As StrFlanges (Read Only)
@@ -67,7 +65,6 @@ class StrSfdPlate(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
@@ -96,7 +93,6 @@ class StrSfdPlate(AnyObject):
     def str_plate_extrusion_mngt(self) -> StrPlateExtrusionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read

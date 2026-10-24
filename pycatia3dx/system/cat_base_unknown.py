@@ -15,7 +15,6 @@ from pycatia3dx.system.i_dispatch import IDispatch
 class CATBaseUnknown(IDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 

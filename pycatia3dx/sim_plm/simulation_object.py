@@ -11,10 +11,8 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 
 
 class SimulationObject(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,4 +36,4 @@ class SimulationObject(PLMEntity):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimulationObject(name="{ self.name }")'
+        return f'SimulationObject(name="{self.name}")'

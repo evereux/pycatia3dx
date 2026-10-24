@@ -15,7 +15,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeLawDistProj(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -44,7 +43,6 @@ class HybridShapeLawDistProj(HybridShape):
     def applied_unit_symbol(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AppliedUnitSymbol(CATBSTR iSymbol) (Write Only)
@@ -67,7 +65,6 @@ class HybridShapeLawDistProj(HybridShape):
     def definition(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Definition() As Reference
@@ -92,7 +89,6 @@ class HybridShapeLawDistProj(HybridShape):
     def measure_unit_symbol(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MeasureUnitSymbol(CATBSTR iSymbol) (Write Only)
@@ -115,7 +111,6 @@ class HybridShapeLawDistProj(HybridShape):
     def parameter_on_definition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ParameterOnDefinition() As boolean
@@ -145,7 +140,6 @@ class HybridShapeLawDistProj(HybridShape):
     def positive_direction_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PositiveDirectionOrientation() As long
@@ -168,7 +162,6 @@ class HybridShapeLawDistProj(HybridShape):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Reference() As Reference
@@ -193,7 +186,6 @@ class HybridShapeLawDistProj(HybridShape):
     def scaling(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Scaling() As double
@@ -215,7 +207,6 @@ class HybridShapeLawDistProj(HybridShape):
     def get_applied_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetAppliedUnitSymbol(CATBSTR oSymbol)
@@ -241,7 +232,6 @@ class HybridShapeLawDistProj(HybridShape):
     def get_measure_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetMeasureUnitSymbol(CATBSTR oSymbol)
@@ -267,7 +257,6 @@ class HybridShapeLawDistProj(HybridShape):
     def get_plane_normal(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
@@ -301,7 +290,6 @@ class HybridShapeLawDistProj(HybridShape):
     def is_heterogeneous_law(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func IsHeterogeneousLaw() As boolean
@@ -319,7 +307,6 @@ class HybridShapeLawDistProj(HybridShape):
     def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub PutPlaneNormal(CATSafeArrayVariant iNormal)

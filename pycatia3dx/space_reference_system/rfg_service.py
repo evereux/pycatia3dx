@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class RfgService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class RfgService(Service):
     def create_project_data(self, i_active_rep_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateProjectData(Part iActiveRepPart)
@@ -59,7 +57,6 @@ class RfgService(Service):
     def create_ref_surface_feature(self, i_part: Reference, i_project_data: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateRefSurfaceFeature(Reference iPart,Reference
@@ -85,7 +82,6 @@ class RfgService(Service):
                             i_plane_index: CATVariant) -> RfgGridFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferencePlane(Part iPart,CATVariant iPlaneSystemIndex,CATVariant
@@ -127,7 +123,6 @@ class RfgService(Service):
     def synchronize_planes(self, i_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SynchronizePlanes(Part iPart)
@@ -147,7 +142,6 @@ class RfgService(Service):
     def synchronize_ref_surface(self, i_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SynchronizeRefSurface(Part iPart)

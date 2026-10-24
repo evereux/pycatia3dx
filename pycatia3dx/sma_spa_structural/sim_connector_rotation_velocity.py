@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorRotationVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
@@ -122,7 +118,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -137,7 +132,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -153,7 +147,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As
@@ -176,7 +169,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def get_rotation_velocity(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRotationVelocity(SimDof iDegreeOfFreedom) As double
@@ -198,7 +190,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def get_rotation_velocity_activation_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom) As
@@ -224,7 +215,6 @@ class SimConnectorRotationVelocity(AnyObject):
     def set_rotation_velocity(self, i_degree_of_freedom: int, i_rotation_velocity: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationVelocity(SimDof iDegreeOfFreedom,double
@@ -245,10 +235,10 @@ class SimConnectorRotationVelocity(AnyObject):
         """
         return self.com_object.SetRotationVelocity(i_degree_of_freedom, i_rotation_velocity)
 
-    def set_rotation_velocity_activation_flag(self, i_degree_of_freedom: int, i_rotation_velocity_activation_flag: bool) -> None:
+    def set_rotation_velocity_activation_flag(self, i_degree_of_freedom: int,
+                                              i_rotation_velocity_activation_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom,boolean
@@ -270,7 +260,8 @@ class SimConnectorRotationVelocity(AnyObject):
         :param bool i_rotation_velocity_activation_flag:
         :return: None
         """
-        return self.com_object.SetRotationVelocityActivationFlag(i_degree_of_freedom, i_rotation_velocity_activation_flag)
+        return self.com_object.SetRotationVelocityActivationFlag(i_degree_of_freedom,
+                                                                 i_rotation_velocity_activation_flag)
 
     def __repr__(self):
-        return f'SimConnectorRotationVelocity(name="{ self.name }")'
+        return f'SimConnectorRotationVelocity(name="{self.name}")'

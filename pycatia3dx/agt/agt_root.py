@@ -20,7 +20,6 @@ from pycatia3dx.system.any_object import AnyObject
 class AGTRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class AGTRoot(AnyObject):
     def connectors(self) -> AGTConnectors:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Connectors() As AGTConnectors (Read Only)
@@ -70,7 +68,6 @@ class AGTRoot(AnyObject):
     def coverings(self) -> Coverings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Coverings() As Coverings (Read Only)
@@ -96,7 +93,6 @@ class AGTRoot(AnyObject):
     def draught_stops(self) -> AGTDraughtStops:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DraughtStops() As AGTDraughtStops (Read Only)
@@ -122,7 +118,6 @@ class AGTRoot(AnyObject):
     def fire_bridges(self) -> AGTFireBridges:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FireBridges() As AGTFireBridges (Read Only)
@@ -148,7 +143,6 @@ class AGTRoot(AnyObject):
     def insulations(self) -> AGTInsulations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Insulations() As AGTInsulations (Read Only)
@@ -174,7 +168,6 @@ class AGTRoot(AnyObject):
     def sills(self) -> AGTSills:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sills() As AGTSills (Read Only)
@@ -200,7 +193,6 @@ class AGTRoot(AnyObject):
     def walls(self) -> Walls:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Walls() As Walls (Read Only)

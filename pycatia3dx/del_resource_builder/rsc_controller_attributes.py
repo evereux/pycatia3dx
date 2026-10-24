@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscControllerAttributes(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +59,6 @@ class RscControllerAttributes(AnyObject):
     def acceleration_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccelerationMode() As long
@@ -92,7 +89,6 @@ class RscControllerAttributes(AnyObject):
     def acceleration_scaling(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccelerationScaling() As long
@@ -123,7 +119,6 @@ class RscControllerAttributes(AnyObject):
     def controller_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ControllerType() As CATBSTR
@@ -151,7 +146,6 @@ class RscControllerAttributes(AnyObject):
     def heart_beat(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeartBeat() As double
@@ -179,7 +173,6 @@ class RscControllerAttributes(AnyObject):
     def joint_interpolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointInterpolationMode() As long
@@ -213,7 +206,6 @@ class RscControllerAttributes(AnyObject):
     def response_delay(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResponseDelay() As double
@@ -241,7 +233,6 @@ class RscControllerAttributes(AnyObject):
     def settle_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SettleTime() As double
@@ -269,7 +260,6 @@ class RscControllerAttributes(AnyObject):
     def singularity_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SingularityTolerance() As double
@@ -298,7 +288,6 @@ class RscControllerAttributes(AnyObject):
     def time_based_motion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeBasedMotion() As long
@@ -326,4 +315,4 @@ class RscControllerAttributes(AnyObject):
         self.com_object.TimeBasedMotion = value
 
     def __repr__(self):
-        return f'RscControllerAttributes(name="{ self.name }")'
+        return f'RscControllerAttributes(name="{self.name}")'

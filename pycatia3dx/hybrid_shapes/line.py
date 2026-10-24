@@ -15,7 +15,6 @@ from pycatia3dx.mode.reference import Reference
 class Line(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -47,7 +46,6 @@ class Line(HybridShape):
     def first_upto_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstUptoElem() As Reference
@@ -77,7 +75,6 @@ class Line(HybridShape):
     def second_upto_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondUptoElem() As Reference
@@ -106,7 +103,6 @@ class Line(HybridShape):
     def get_direction(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetDirection(CATSafeArrayVariant oDirection)
@@ -157,7 +153,6 @@ class Line(HybridShape):
     def get_origin(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -205,7 +200,6 @@ class Line(HybridShape):
     def put_direction(self, i_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub PutDirection(CATSafeArrayVariant iDirection)

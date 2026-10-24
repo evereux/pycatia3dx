@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlane1Line1Pt(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -43,7 +41,6 @@ class HybridShapePlane1Line1Pt(Plane):
     def line(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Line() As Reference
@@ -76,7 +73,6 @@ class HybridShapePlane1Line1Pt(Plane):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -106,4 +102,4 @@ class HybridShapePlane1Line1Pt(Plane):
         self.com_object.Point = value
 
     def __repr__(self):
-        return f'HybridShapePlane1Line1Pt(name="{ self.name }")'
+        return f'HybridShapePlane1Line1Pt(name="{self.name}")'

@@ -32,7 +32,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPRobotMotionTarget(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -71,7 +70,6 @@ class OLPRobotMotionTarget(AnyObject):
     def accuracy_profile(self) -> RscAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfile() As RscAccuracyProfile
@@ -96,7 +94,6 @@ class OLPRobotMotionTarget(AnyObject):
     def accuracy_profile_olp(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfileOlp() As OlpAccuracyProfile
@@ -129,7 +126,6 @@ class OLPRobotMotionTarget(AnyObject):
     def application_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicationType() As DELOlpInstructionType
@@ -159,7 +155,6 @@ class OLPRobotMotionTarget(AnyObject):
     def application_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicationTypeString() As CATBSTR
@@ -187,7 +182,6 @@ class OLPRobotMotionTarget(AnyObject):
     def applicative_profiles(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicativeProfiles() As CATSafeArrayVariant (Read
@@ -205,7 +199,6 @@ class OLPRobotMotionTarget(AnyObject):
     def c_frame_rivet_profile(self) -> OLPCFrameRivetProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CFrameRivetProfile() As OlpCFrameRivetProfile
@@ -238,7 +231,6 @@ class OLPRobotMotionTarget(AnyObject):
     def choreography(self) -> OLPChoreographyEvents:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Choreography() As OlpChoreographyEvents (Read Only)
@@ -254,7 +246,6 @@ class OLPRobotMotionTarget(AnyObject):
     def conveyor_taught_position(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConveyorTaughtPosition() As double
@@ -277,7 +268,6 @@ class OLPRobotMotionTarget(AnyObject):
     def conveyor_tracking(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConveyorTracking() As boolean
@@ -300,7 +290,6 @@ class OLPRobotMotionTarget(AnyObject):
     def conveyor_tracking_profile(self) -> OLPConveyorTrackingProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConveyorTrackingProfile() As
@@ -333,7 +322,6 @@ class OLPRobotMotionTarget(AnyObject):
     def drill_profile(self) -> OLPDrillRivetProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillProfile() As OlpDrillRivetProfile
@@ -365,7 +353,6 @@ class OLPRobotMotionTarget(AnyObject):
     def drill_rivet_profile(self) -> OLPDrillRivetProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillRivetProfile() As OlpDrillRivetProfile
@@ -398,7 +385,6 @@ class OLPRobotMotionTarget(AnyObject):
     def generic_config(self) -> OLPRobotConfigGeneric:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GenericConfig() As OlpRobotConfigGeneric (Read Only)
@@ -417,7 +403,6 @@ class OLPRobotMotionTarget(AnyObject):
     def global_position(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalPosition() As boolean
@@ -449,7 +434,6 @@ class OLPRobotMotionTarget(AnyObject):
     def home(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Home() As CATBSTR
@@ -490,7 +474,6 @@ class OLPRobotMotionTarget(AnyObject):
     def home_set(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HomeSet() As CATBSTR
@@ -524,7 +507,6 @@ class OLPRobotMotionTarget(AnyObject):
     def keep_tag_position(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepTagPosition() As boolean
@@ -560,7 +542,6 @@ class OLPRobotMotionTarget(AnyObject):
     def motion_profile(self) -> RscMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfile() As RscMotionProfile
@@ -585,7 +566,6 @@ class OLPRobotMotionTarget(AnyObject):
     def motion_profile_olp(self) -> OLPMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfileOlp() As OlpMotionProfile
@@ -618,7 +598,6 @@ class OLPRobotMotionTarget(AnyObject):
     def motion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionType() As DELOlpMotionType
@@ -641,7 +620,6 @@ class OLPRobotMotionTarget(AnyObject):
     def object_frame_profile(self) -> OLPObjectFrameProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectFrameProfile() As OlpObjectFrameProfile
@@ -667,7 +645,6 @@ class OLPRobotMotionTarget(AnyObject):
     def offset_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetType() As DELOlpOffsetType
@@ -708,7 +685,6 @@ class OLPRobotMotionTarget(AnyObject):
     def orientation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrientationMode() As DELOlpOrientationMode
@@ -732,7 +708,6 @@ class OLPRobotMotionTarget(AnyObject):
     def position_variable(self) -> OLPPositionVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionVariable() As OlpPositionVariable
@@ -759,7 +734,6 @@ class OLPRobotMotionTarget(AnyObject):
     def process_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProcessType() As DELOlpProcessType
@@ -801,7 +775,6 @@ class OLPRobotMotionTarget(AnyObject):
     def redundant_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RedundantAngle() As double
@@ -825,7 +798,6 @@ class OLPRobotMotionTarget(AnyObject):
     def relative_move_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RelativeMoveType() As DELOlpRelativeMoveType
@@ -865,7 +837,6 @@ class OLPRobotMotionTarget(AnyObject):
     def rivet_profile(self) -> OLPDrillRivetProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RivetProfile() As OlpDrillRivetProfile
@@ -897,7 +868,6 @@ class OLPRobotMotionTarget(AnyObject):
     def spot_profile(self) -> OLPSpotProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpotProfile() As OlpSpotProfile
@@ -930,7 +900,6 @@ class OLPRobotMotionTarget(AnyObject):
     def tag(self) -> OLPTag:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Tag() As OlpTag (Read Only)
@@ -950,7 +919,6 @@ class OLPRobotMotionTarget(AnyObject):
     def tag_group_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupName() As CATBSTR
@@ -976,7 +944,6 @@ class OLPRobotMotionTarget(AnyObject):
     def tag_group_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupType() As DELOlpTagGroupType
@@ -1004,7 +971,6 @@ class OLPRobotMotionTarget(AnyObject):
     def tag_group_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupTypeString() As CATBSTR
@@ -1034,7 +1000,6 @@ class OLPRobotMotionTarget(AnyObject):
     def target_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetType() As DELOlpTargetType
@@ -1081,7 +1046,6 @@ class OLPRobotMotionTarget(AnyObject):
     def tool_profile(self) -> OLPToolProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolProfile() As OlpToolProfile
@@ -1107,7 +1071,6 @@ class OLPRobotMotionTarget(AnyObject):
     def waypoint_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointID() As CATBSTR
@@ -1133,7 +1096,6 @@ class OLPRobotMotionTarget(AnyObject):
     def waypoint_parent_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointParentID() As CATBSTR
@@ -1156,7 +1118,6 @@ class OLPRobotMotionTarget(AnyObject):
     def add_applicative_profile(self, i_profile: RscApplicativeProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddApplicativeProfile(RscApplicativeProfile iProfile)
@@ -1172,7 +1133,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_applicative_profile(self, i_profile_type: str) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApplicativeProfile(CATBSTR iProfileType) As
@@ -1189,7 +1149,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_aux_home(self, i_device: OLPController) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxHome(OlpController iDevice) As CATBSTR
@@ -1214,7 +1173,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_cartesian_offset(self) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCartesianOffset() As OlpTransform
@@ -1238,7 +1196,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_device_joints(self, i_device: OLPController) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceJoints(OlpController iDevice) As
@@ -1292,7 +1249,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_joint_offset(self, i_device: OLPController) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointOffset(OlpController iDevice) As
@@ -1325,7 +1281,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -1351,7 +1306,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_parameter_from_parent(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterFromParent(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -1383,7 +1337,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As
@@ -1407,7 +1360,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_position_variable_offset(self, o_offset: OLPPositionVariable, o_reference_frame: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPositionVariableOffset(OlpPositionVariable oOffset,DELOlpOffsetType
@@ -1434,7 +1386,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_profile_name(self, i_profile_type: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileName(CATBSTR iProfileType) As CATBSTR
@@ -1456,7 +1407,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_profile_name_from_parent(self, i_profile_type: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileNameFromParent(CATBSTR iProfileType) As CATBSTR
@@ -1484,7 +1434,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_profile_olp(self, i_profile_type: str) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
@@ -1506,7 +1455,6 @@ class OLPRobotMotionTarget(AnyObject):
     def get_transform(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
@@ -1553,7 +1501,6 @@ class OLPRobotMotionTarget(AnyObject):
     def is_offset_position_variable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsOffsetPositionVariable() As boolean
@@ -1572,7 +1519,6 @@ class OLPRobotMotionTarget(AnyObject):
     def is_profile_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProfileSet(CATBSTR iProfileType) As boolean
@@ -1594,7 +1540,6 @@ class OLPRobotMotionTarget(AnyObject):
     def is_profile_set_on_parent(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProfileSetOnParent(CATBSTR iProfileType) As boolean
@@ -1622,7 +1567,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_accuracy_params(self, i_fly_by: bool, i_accuracy_type: int, i_accuracy_value: float, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyParams(boolean iFlyBy,AccuracyType iAccuracyType,double
@@ -1673,7 +1617,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_aux_home(self, i_device: OLPController, i_home_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxHome(OlpController iDevice,CATBSTR iHomeName)
@@ -1698,7 +1641,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_cartesian_offset(self, i_offset: OLPTransform, i_reference_frame: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCartesianOffset(OlpTransform iOffset,DELOlpOffsetType
@@ -1730,7 +1672,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_device_joints(self, i_device: OLPController, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeviceJoints(OlpController iDevice,CATSafeArrayVariant
@@ -1762,7 +1703,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_joint_offset(self, i_device: OLPController, i_offset: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointOffset(OlpController iDevice,CATSafeArrayVariant
@@ -1797,7 +1737,6 @@ class OLPRobotMotionTarget(AnyObject):
                           i_angular_accel_percent: float, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionParams(MotionBasis iBasis,double iSpeed,double
@@ -1822,7 +1761,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_offset_base_target(self, i_base_target: 'OLPRobotMotionTarget') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOffsetBaseTarget(OlpRobotMotionTarget iBaseTarget)
@@ -1849,7 +1787,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
@@ -1878,7 +1815,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_position_variable_offset(self, i_offse: OLPPositionVariable, i_reference_frame: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPositionVariableOffset(OlpPositionVariable iOffse,DELOlpOffsetType
@@ -1911,7 +1847,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_profile_name(self, i_profile_type: str, i_profile_name: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
@@ -1937,7 +1872,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_profile_olp(self, i_profile: OLPProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfileOlp(OlpProfile iProfile)
@@ -1956,7 +1890,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_transform(self, i_origin: int, i_target: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform
@@ -1983,7 +1916,6 @@ class OLPRobotMotionTarget(AnyObject):
     def set_wrist_joints(self, i_j4: float, i_j5: float, i_j6: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetWristJoints(double iJ4,double iJ5,double iJ6)
@@ -2013,7 +1945,6 @@ class OLPRobotMotionTarget(AnyObject):
     def try_get_device_joints(self, i_device: OLPController, o_values: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TryGetDeviceJoints(OlpController iDevice,CATSafeArrayVariant oValues) As

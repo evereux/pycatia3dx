@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscObjFrameProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -72,7 +70,6 @@ class RscObjFrameProfile(AnyObject):
     def offset_target_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetTargetMode() As short
@@ -109,7 +106,6 @@ class RscObjFrameProfile(AnyObject):
     def get_object_frame(self, o_x: float, o_y: float, o_z: float, o_roll: float, o_pitch: float, o_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetObjectFrame(double oX,double oY,double oZ,double oRoll,double
@@ -156,7 +152,6 @@ class RscObjFrameProfile(AnyObject):
     def set_object_frame(self, i_x: float, i_y: float, i_z: float, i_roll: float, i_pitch: float, i_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObjectFrame(double iX,double iY,double iZ,double iRoll,double
@@ -194,4 +189,4 @@ class RscObjFrameProfile(AnyObject):
         return self.com_object.SetObjectFrame(i_x, i_y, i_z, i_roll, i_pitch, i_yaw)
 
     def __repr__(self):
-        return f'RscObjFrameProfile(name="{ self.name }")'
+        return f'RscObjFrameProfile(name="{self.name}")'

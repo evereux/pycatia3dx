@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class SimTableColumns(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +60,6 @@ class SimTableColumns(Collection):
     def item(self, i_index: CATVariant) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch

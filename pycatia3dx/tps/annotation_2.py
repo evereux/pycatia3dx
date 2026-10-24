@@ -32,7 +32,6 @@ from pycatia3dx.tps.weld import Weld
 class Annotation2(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +57,6 @@ class Annotation2(AnyObject):
     def super_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SuperType() As CATBSTR (Read Only)
@@ -87,7 +85,6 @@ class Annotation2(AnyObject):
     def tps_status(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPSStatus() As CATBSTR (Read Only)
@@ -107,7 +104,6 @@ class Annotation2(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -177,7 +173,6 @@ class Annotation2(AnyObject):
     def z(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Z(double iZ) (Write Only)
@@ -205,7 +200,6 @@ class Annotation2(AnyObject):
     def add_leader(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddLeader()
@@ -218,7 +212,6 @@ class Annotation2(AnyObject):
     def coordinatedimension(self) -> CoordDim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Coordinatedimension() As CoordDim
@@ -231,7 +224,6 @@ class Annotation2(AnyObject):
     def datum_simple(self) -> DatumSimple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DatumSimple() As DatumSimple
@@ -244,7 +236,6 @@ class Annotation2(AnyObject):
     def datum_target(self) -> DatumTarget:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DatumTarget() As DatumTarget
@@ -257,7 +248,6 @@ class Annotation2(AnyObject):
     def default_annotation(self) -> DefaultAnnotation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefaultAnnotation() As DefaultAnnotation
@@ -270,7 +260,6 @@ class Annotation2(AnyObject):
     def dimension3_d(self) -> Dimension3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Dimension3D() As Dimension3D
@@ -288,7 +277,6 @@ class Annotation2(AnyObject):
     def flag_note(self) -> FlagNote:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FlagNote() As FlagNote
@@ -306,7 +294,6 @@ class Annotation2(AnyObject):
     def get_geometrical_component_name(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGeometricalComponentName(short iIndex) As CATBSTR
@@ -329,7 +316,6 @@ class Annotation2(AnyObject):
     def get_nbr_of_geometrical_component(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrOfGeometricalComponent() As short
@@ -356,7 +342,6 @@ class Annotation2(AnyObject):
     def get_surfaces(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
@@ -385,7 +370,6 @@ class Annotation2(AnyObject):
     def get_surfaces_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSurfacesCount() As long
@@ -398,7 +382,6 @@ class Annotation2(AnyObject):
     def has_a_visualization_dimension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAVisualizationDimension() As boolean
@@ -412,7 +395,6 @@ class Annotation2(AnyObject):
     def hyper_link_manager(self) -> TPSHyperLinksManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HyperLinkManager() As TPSHyperLinksManager
@@ -425,7 +407,6 @@ class Annotation2(AnyObject):
     def is_a_consumable_annotation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAConsumableAnnotation() As boolean
@@ -438,7 +419,6 @@ class Annotation2(AnyObject):
     def is_a_default_annotation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsADefaultAnnotation() As boolean
@@ -451,7 +431,6 @@ class Annotation2(AnyObject):
     def modify_visu(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyVisu()
@@ -464,7 +443,6 @@ class Annotation2(AnyObject):
     def noa(self) -> Noa:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Noa() As Noa
@@ -477,7 +455,6 @@ class Annotation2(AnyObject):
     def non_semantic_datum(self) -> NonSemanticDatum:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NonSemanticDatum() As NonSemanticDatum
@@ -490,7 +467,6 @@ class Annotation2(AnyObject):
     def non_semantic_datum_target(self) -> NonSemanticDatumTarget:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NonSemanticDatumTarget() As NonSemanticDatumTarget
@@ -503,7 +479,6 @@ class Annotation2(AnyObject):
     def non_semantic_dimension(self) -> NonSemanticDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NonSemanticDimension() As NonSemanticDimension
@@ -516,7 +491,6 @@ class Annotation2(AnyObject):
     def non_semantic_gdt(self) -> NonSemanticGDT:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NonSemanticGDT() As NonSemanticGDT
@@ -529,7 +503,6 @@ class Annotation2(AnyObject):
     def reference_frame(self) -> ReferenceFrame:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ReferenceFrame() As ReferenceFrame
@@ -542,7 +515,6 @@ class Annotation2(AnyObject):
     def roughness(self) -> Roughness:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Roughness() As Roughness
@@ -555,7 +527,6 @@ class Annotation2(AnyObject):
     def semantic_gdt(self) -> SemanticGDT:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SemanticGDT() As SemanticGDT
@@ -568,7 +539,6 @@ class Annotation2(AnyObject):
     def set_geometrical_component_name(self, i_index: int, i_new_name: str, i_check_name_unicity_option: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
@@ -611,7 +581,6 @@ class Annotation2(AnyObject):
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXY(double iX,double iY)
@@ -634,7 +603,6 @@ class Annotation2(AnyObject):
     def text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Text() As Text
@@ -652,7 +620,6 @@ class Annotation2(AnyObject):
     def transfert_to_view(self, i_view: TPSView) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub TransfertToView(TPSView iView)
@@ -671,7 +638,6 @@ class Annotation2(AnyObject):
     def visualization_dimension(self) -> Dimension3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func VisualizationDimension() As Dimension3D
@@ -691,7 +657,6 @@ class Annotation2(AnyObject):
     def weld(self) -> Weld:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Weld() As Weld

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class Layout2DViews(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class Layout2DViews(Collection):
     def active_view(self) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveView() As Layout2DView (Read Only)
@@ -68,7 +66,6 @@ class Layout2DViews(Collection):
                       i_section_type: int, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddAuxiliary(Layout2DView iReferenceView,CATSafeArrayVariant
@@ -161,7 +158,6 @@ class Layout2DViews(Collection):
     def add_detail(self, i_detail_name: str) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iDetailName) As Layout2DView
@@ -205,7 +201,6 @@ class Layout2DViews(Collection):
     def add_from3_d_plane(self, i_plane: tuple, i_view_type: CatViewType, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func AddFrom3DPlane(CATSafeArrayVariant iPlane,CatViewType iViewType,double
@@ -280,7 +275,6 @@ class Layout2DViews(Collection):
     def add_primary(self, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddPrimary(double iX,double iY) As Layout2DView
@@ -322,7 +316,6 @@ class Layout2DViews(Collection):
     def add_related(self, i_reference_view: Layout2DView, i_side: int, i_x: float, i_y: float) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddRelated(Layout2DView iReferenceView,CatViewSide iSide,double iX,double
@@ -380,7 +373,6 @@ class Layout2DViews(Collection):
     def item(self, i_index: CATVariant) -> Layout2DView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Layout2DView
@@ -428,7 +420,6 @@ class Layout2DViews(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

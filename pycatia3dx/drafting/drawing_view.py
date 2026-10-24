@@ -32,7 +32,6 @@ if TYPE_CHECKING:
 class DrawingView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +60,6 @@ class DrawingView(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -98,7 +96,6 @@ class DrawingView(AnyObject):
     def area_fills(self) -> DrawingAreaFills:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaFills() As DrawingAreaFills (Read Only)
@@ -123,7 +120,6 @@ class DrawingView(AnyObject):
     def arrows(self) -> DrawingArrows:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arrows() As DrawingArrows (Read Only)
@@ -147,7 +143,6 @@ class DrawingView(AnyObject):
     def components(self) -> 'DrawingComponents':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Components() As DrawingComponents (Read Only)
@@ -172,7 +167,6 @@ class DrawingView(AnyObject):
     def coord_dims(self) -> DrawingCoordDims:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoordDims() As DrawingCoordDims (Read Only)
@@ -197,7 +191,6 @@ class DrawingView(AnyObject):
     def dimensions(self) -> DrawingDimensions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Dimensions() As DrawingDimensions (Read Only)
@@ -222,7 +215,6 @@ class DrawingView(AnyObject):
     def drawing_gen_view(self) -> DrawingGenView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrawingGenView() As AnyObject (Read Only)
@@ -246,7 +238,6 @@ class DrawingView(AnyObject):
     def factory_2d(self) -> Factory2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Factory2D() As Factory2D (Read Only)
@@ -276,7 +267,6 @@ class DrawingView(AnyObject):
     def frame_visualization(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrameVisualization() As boolean
@@ -309,7 +299,6 @@ class DrawingView(AnyObject):
     def gd_ts(self) -> DrawingGDTs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GDTs() As DrawingGDTs (Read Only)
@@ -333,7 +322,6 @@ class DrawingView(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricElements() As GeometricElements (Read Only)
@@ -358,7 +346,6 @@ class DrawingView(AnyObject):
     def is_relation_activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsRelationActivated() As boolean (Read Only)
@@ -383,7 +370,6 @@ class DrawingView(AnyObject):
     def lock_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LockStatus() As boolean
@@ -415,7 +401,6 @@ class DrawingView(AnyObject):
     def pictures(self) -> DrawingPictures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Pictures() As DrawingPictures (Read Only)
@@ -440,7 +425,6 @@ class DrawingView(AnyObject):
     def reference_view(self) -> 'DrawingView':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceView() As DrawingView
@@ -485,7 +469,6 @@ class DrawingView(AnyObject):
     def scale(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale() As double
@@ -516,7 +499,6 @@ class DrawingView(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale2() As double
@@ -548,7 +530,6 @@ class DrawingView(AnyObject):
     def tables(self) -> DrawingTables:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Tables() As DrawingTables (Read Only)
@@ -572,7 +553,6 @@ class DrawingView(AnyObject):
     def texts(self) -> DrawingTexts:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Texts() As DrawingTexts (Read Only)
@@ -596,7 +576,6 @@ class DrawingView(AnyObject):
     def threads(self) -> DrawingThreads:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Threads() As DrawingThreads (Read Only)
@@ -620,7 +599,6 @@ class DrawingView(AnyObject):
     def view_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViewType() As CatDrawingViewType (Read Only)
@@ -636,7 +614,6 @@ class DrawingView(AnyObject):
     def weldings(self) -> DrawingWeldings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Weldings() As DrawingWeldings (Read Only)
@@ -661,7 +638,6 @@ class DrawingView(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -696,7 +672,6 @@ class DrawingView(AnyObject):
     def x_axis_data(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property xAxisData() As double
@@ -729,7 +704,6 @@ class DrawingView(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -766,7 +740,6 @@ class DrawingView(AnyObject):
     def y_axis_data(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property yAxisData() As double
@@ -800,7 +773,6 @@ class DrawingView(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
@@ -822,7 +794,6 @@ class DrawingView(AnyObject):
     def add_view_text(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddViewText() As DrawingText
@@ -844,7 +815,6 @@ class DrawingView(AnyObject):
     def aligned_with_reference_view(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AlignedWithReferenceView()
@@ -867,7 +837,6 @@ class DrawingView(AnyObject):
     def get_projection_plane(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProjectionPlane(double oX1,double oY1,double oZ1,double oX2,double
@@ -901,7 +870,6 @@ class DrawingView(AnyObject):
     def get_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
@@ -934,7 +902,6 @@ class DrawingView(AnyObject):
     def get_view_text(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetViewText() As DrawingText
@@ -954,7 +921,6 @@ class DrawingView(AnyObject):
     def insert_view_angle(self, i_first: int, io_text: DrawingText) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertViewAngle(long iFirst,DrawingText ioText)
@@ -988,7 +954,6 @@ class DrawingView(AnyObject):
     def insert_view_scale(self, i_first: int, io_text: DrawingText) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertViewScale(long iFirst,DrawingText ioText)
@@ -1021,7 +986,6 @@ class DrawingView(AnyObject):
     def is_generative(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsGenerative() As boolean
@@ -1044,7 +1008,6 @@ class DrawingView(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
@@ -1064,7 +1027,6 @@ class DrawingView(AnyObject):
     def save_edition(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveEdition()
@@ -1091,7 +1053,6 @@ class DrawingView(AnyObject):
                              i_z2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProjectionPlane(double iX1,double iY1,double iZ1,double iX2,double
@@ -1139,7 +1100,6 @@ class DrawingView(AnyObject):
     def set_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
@@ -1174,7 +1134,6 @@ class DrawingView(AnyObject):
     def size(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Size(CATSafeArrayVariant oValues)
@@ -1221,7 +1180,6 @@ class DrawingView(AnyObject):
     def un_aligned_with_reference_view(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnAlignedWithReferenceView()

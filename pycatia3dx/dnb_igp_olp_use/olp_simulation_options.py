@@ -13,10 +13,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPSimulationOptions(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class OLPSimulationOptions(AnyObject):
     def parameter_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParameterNames() As CATSafeArrayVariant (Read Only)
@@ -57,7 +54,6 @@ class OLPSimulationOptions(AnyObject):
     def get_parameter(self, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iParameterName) As CATVariant
@@ -69,4 +65,4 @@ class OLPSimulationOptions(AnyObject):
         return self.com_object.GetParameter(i_parameter_name)
 
     def __repr__(self):
-        return f'OLPSimulationOptions(name="{ self.name }")'
+        return f'OLPSimulationOptions(name="{self.name}")'

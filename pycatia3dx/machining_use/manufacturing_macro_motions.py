@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMacroMotions(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingMacroMotions(AnyObject):
     def active(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Active() As long
@@ -60,7 +57,6 @@ class ManufacturingMacroMotions(AnyObject):
     def get_macro_motion(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMacroMotion(long iPosition) As AnyObject
@@ -133,4 +129,4 @@ class ManufacturingMacroMotions(AnyObject):
         return AnyObject(self.com_object.GetMacroMotion(i_position))
 
     def __repr__(self):
-        return f'ManufacturingMacroMotions(name="{ self.name }")'
+        return f'ManufacturingMacroMotions(name="{self.name}")'

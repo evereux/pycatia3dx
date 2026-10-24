@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimConnectorDampings(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +58,6 @@ class SimConnectorDampings(Collection):
     def add(self, i_degree_of_freedom: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(SimDof iDegreeOfFreedom) As CATBaseDispatch
@@ -84,7 +82,6 @@ class SimConnectorDampings(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -107,7 +104,6 @@ class SimConnectorDampings(Collection):
     def remove(self, i_degree_of_freedom: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(SimDof iDegreeOfFreedom)
@@ -127,7 +123,6 @@ class SimConnectorDampings(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

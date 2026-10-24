@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMountPoint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingMountPoint(AnyObject):
     def get_axis_base_point(self, osp_axis_system: AnyObject, o_father_product: AnyObject, i_inside: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisBasePoint(AnyObject ospAxisSystem,AnyObject oFatherProduct,boolean
@@ -62,10 +59,10 @@ class ManufacturingMountPoint(AnyObject):
         """
         return self.com_object.GetAxisBasePoint(osp_axis_system.com_object, o_father_product.com_object, i_inside)
 
-    def get_axis_machine_mount_point(self, osp_axis_system: AnyObject, o_father_product: AnyObject, i_inside: bool) -> None:
+    def get_axis_machine_mount_point(self, osp_axis_system: AnyObject, o_father_product: AnyObject,
+                                     i_inside: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisMachineMountPoint(AnyObject ospAxisSystem,AnyObject
@@ -86,12 +83,12 @@ class ManufacturingMountPoint(AnyObject):
         :param bool i_inside:
         :return: None
         """
-        return self.com_object.GetAxisMachineMountPoint(osp_axis_system.com_object, o_father_product.com_object, i_inside)
+        return self.com_object.GetAxisMachineMountPoint(osp_axis_system.com_object, o_father_product.com_object,
+                                                        i_inside)
 
     def get_base_point(self, i_inside: bool) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBasePoint(boolean iInside) As CATSafeArrayVariant
@@ -113,7 +110,6 @@ class ManufacturingMountPoint(AnyObject):
     def get_machine_mount_point(self, i_inside: bool) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMachineMountPoint(boolean iInside) As
@@ -136,7 +132,6 @@ class ManufacturingMountPoint(AnyObject):
     def remove_base_point(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveBasePoint()
@@ -154,7 +149,6 @@ class ManufacturingMountPoint(AnyObject):
     def remove_machine_mount_point(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveMachineMountPoint()
@@ -172,7 +166,6 @@ class ManufacturingMountPoint(AnyObject):
     def set_base_point(self, i_axis: AnyObject, i_father_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBasePoint(AnyObject iAxis,AnyObject iFatherProduct)
@@ -194,7 +187,6 @@ class ManufacturingMountPoint(AnyObject):
     def set_machine_mount_point(self, i_axis: AnyObject, i_father_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMachineMountPoint(AnyObject iAxis,AnyObject
@@ -216,4 +208,4 @@ class ManufacturingMountPoint(AnyObject):
         return self.com_object.SetMachineMountPoint(i_axis.com_object, i_father_product.com_object)
 
     def __repr__(self):
-        return f'ManufacturingMountPoint(name="{ self.name }")'
+        return f'ManufacturingMountPoint(name="{self.name}")'

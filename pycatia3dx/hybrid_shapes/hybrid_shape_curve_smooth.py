@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCurveSmooth(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -58,7 +56,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def correction_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CorrectionMode() As long
@@ -101,7 +98,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurvatureThreshold() As double
@@ -130,7 +126,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurvatureThresholdActivity() As boolean
@@ -159,7 +154,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def curve_to_smooth(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurveToSmooth() As Reference
@@ -188,7 +182,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def end_extremity_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndExtremityContinuity() As long
@@ -229,7 +222,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MaximumDeviation() As Length (Read Only)
@@ -250,7 +242,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MaximumDeviationActivity() As boolean
@@ -279,7 +270,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def start_extremity_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartExtremityContinuity() As long
@@ -320,7 +310,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -350,7 +339,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def tangency_threshold(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangencyThreshold() As Angle (Read Only)
@@ -371,7 +359,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def topology_simplification_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TopologySimplificationActivity() As boolean
@@ -399,7 +386,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def add_frozen_curve_segment(self, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddFrozenCurveSegment(Reference iCurve)
@@ -426,7 +412,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def add_frozen_point(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddFrozenPoint(Reference iPoint)
@@ -453,7 +438,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_curve_segment(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFrozenCurveSegment(long iPos) As Reference
@@ -481,7 +465,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_curve_segments_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFrozenCurveSegmentsSize() As long
@@ -509,7 +492,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_point(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFrozenPoint(long iPos) As Reference
@@ -536,7 +518,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def get_frozen_points_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFrozenPointsSize() As long
@@ -562,7 +543,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_all_frozen_curve_segments(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllFrozenCurveSegments()
@@ -581,7 +561,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_all_frozen_points(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllFrozenPoints()
@@ -600,7 +579,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_frozen_curve_segment(self, i_curve: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveFrozenCurveSegment(Reference iCurve)
@@ -626,7 +604,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def remove_frozen_point(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveFrozenPoint(Reference iPoint)
@@ -652,7 +629,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def set_maximum_deviation(self, i_max_deviation: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetMaximumDeviation(double iMaxDeviation)
@@ -671,7 +647,6 @@ class HybridShapeCurveSmooth(HybridShape):
     def set_tangency_threshold(self, i_tangency_threshold: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangencyThreshold(double iTangencyThreshold)
@@ -688,4 +663,4 @@ class HybridShapeCurveSmooth(HybridShape):
         return self.com_object.SetTangencyThreshold(i_tangency_threshold)
 
     def __repr__(self):
-        return f'HybridShapeCurveSmooth(name="{ self.name }")'
+        return f'HybridShapeCurveSmooth(name="{self.name}")'

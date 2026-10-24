@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimModalDynamicStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimModalDynamicStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimModalDynamicStep(SimStep):
     def structural_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StructuralMaterialDampingFlag() As boolean
@@ -124,7 +120,6 @@ class SimModalDynamicStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrement() As double
@@ -147,7 +142,6 @@ class SimModalDynamicStep(SimStep):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalTime() As double
@@ -170,7 +164,6 @@ class SimModalDynamicStep(SimStep):
     def viscous_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscousMaterialDampingFlag() As boolean
@@ -193,4 +186,4 @@ class SimModalDynamicStep(SimStep):
         self.com_object.ViscousMaterialDampingFlag = value
 
     def __repr__(self):
-        return f'SimModalDynamicStep(name="{ self.name }")'
+        return f'SimModalDynamicStep(name="{self.name}")'

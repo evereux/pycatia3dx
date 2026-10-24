@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_results.sim_field_plot import SimFieldPlot
 
 
 class SimFieldPlotOptions(SimFieldPlot):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +50,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def exterior_render_style(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExteriorRenderStyle(SimRenderStyle ieStyle) (Write
@@ -77,7 +74,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def exterior_symbols(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExteriorSymbols(boolean ibExtSymbol) (Write Only)
@@ -101,7 +97,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def hide_model(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HideModel(boolean ibHideModel) (Write Only)
@@ -124,7 +119,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def isocontour_render_style(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsocontourRenderStyle(SimRenderStyle ieStyle) (Write
@@ -149,7 +143,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def model_render_style(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModelRenderStyle(SimRenderStyle ieStyle) (Write Only)
@@ -173,7 +166,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def section_points_location(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SectionPointsLocation(SimSectionPointLocation ieLocation) (Write
@@ -198,7 +190,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def show_isocontour_edges(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShowIsocontourEdges(boolean ibShowEdges) (Write Only)
@@ -221,7 +212,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def symbol_density(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SymbolDensity(double idValue) (Write Only)
@@ -245,7 +235,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def transparency(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Transparency(boolean ibTransperency) (Write Only)
@@ -269,7 +258,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def transparent_isocontours(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TransparentIsocontours(boolean ibTransparency) (Write
@@ -292,7 +280,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_node_symbol_attributes(self, ie_symbol_type: int, id_value: float, ib_use_depth_effect: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNodeSymbolAttributes(SimNodeSymbolType ieSymbolType,double
@@ -318,7 +305,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_shell_style(self, ie_shell_style: int, ie_source_type: int, id_scale_factor: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetShellStyle(SimShellStyle ieShellStyle,SimThicknessDataSourceType
@@ -348,7 +334,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_show_labels(self, ib_node_labels: bool, ib_element_labels: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetShowLabels(boolean ibNodeLabels,boolean
@@ -371,7 +356,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_show_sph_display(self, ib_show_particles: bool, ib_show_surface: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetShowSPHDisplay(boolean ibShowParticles,boolean
@@ -395,7 +379,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_threshold(self, ie_threshold_type: int, id_value: float, ib_show_extrema: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetThreshold(SimThresholdType ieThresholdType,double idValue,boolean
@@ -424,7 +407,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def set_visible_edges(self, ie_edge_type: int, id_edge_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVisibleEdges(SimVisibleEdges ieEdgeType,double
@@ -451,7 +433,6 @@ class SimFieldPlotOptions(SimFieldPlot):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -463,4 +444,4 @@ class SimFieldPlotOptions(SimFieldPlot):
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'SimFieldPlotOptions(name="{ self.name }")'
+        return f'SimFieldPlotOptions(name="{self.name}")'

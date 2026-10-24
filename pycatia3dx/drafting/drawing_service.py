@@ -13,7 +13,6 @@ from pycatia3dx.interfaces.service import Service
 class DrawingService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class DrawingService(Service):
     def number_of_standards(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfStandards() As long (Read Only)
@@ -53,7 +51,6 @@ class DrawingService(Service):
     def number_of_sheet_styles(self, i_standard_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NumberOfSheetStyles(CATBSTR iStandardName) As long
@@ -75,7 +72,6 @@ class DrawingService(Service):
     def sheet_style_names_list(self, i_standard_name: str, o_list_of_sheet_style_names: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SheetStyleNamesList(CATBSTR iStandardName,CATSafeArrayVariant
@@ -97,7 +93,6 @@ class DrawingService(Service):
     def standard_names_list(self, o_list_of_standard_names: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub StandardNamesList(CATSafeArrayVariant

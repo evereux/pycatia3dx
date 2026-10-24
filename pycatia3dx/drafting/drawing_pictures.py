@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingPictures(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingPictures(Collection):
     def add(self, i_drawing_picture_path: str, i_position_x: float, i_position_y: float) -> DrawingPicture:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingPicturePath,double iPositionX,double iPositionY) As
@@ -85,7 +83,6 @@ class DrawingPictures(Collection):
     def item(self, i_index: CATVariant) -> DrawingPicture:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingPicture
@@ -127,7 +124,6 @@ class DrawingPictures(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

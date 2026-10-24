@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_sfd_plates import StrSfdPlates
 class StrSfdPlatesMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class StrSfdPlatesMngt(AnyObject):
     def cutting_elements(self) -> StrReferences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CuttingElements() As StrReferences
@@ -81,7 +79,6 @@ class StrSfdPlatesMngt(AnyObject):
     def get_plates(self) -> StrSfdPlates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPlates() As StrSfdPlates
@@ -104,7 +101,6 @@ class StrSfdPlatesMngt(AnyObject):
     def run(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Run()

@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.enum_param import EnumParam
 
 
 class BoolParam(EnumParam):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -49,7 +47,6 @@ class BoolParam(EnumParam):
     def value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Value() As boolean
@@ -77,4 +74,4 @@ class BoolParam(EnumParam):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'BoolParam(name="{ self.name }")'
+        return f'BoolParam(name="{self.name}")'

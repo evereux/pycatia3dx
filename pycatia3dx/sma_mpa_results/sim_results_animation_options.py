@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsAnimationOptions(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +52,6 @@ class SimResultsAnimationOptions(AnyObject):
     def get_available_animation_types(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAvailableAnimationTypes(CATSafeArrayVariant ocsTypes)
@@ -89,7 +87,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_current_step_only(self, ib_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrentStepOnly(boolean ibFlag)
@@ -109,7 +106,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_frame_selector(self, isp_frame_selector: SimFramesSelection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFrameSelector(SimFramesSelection ispFrameSelector)
@@ -130,7 +126,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_number_of_frames(self, inb_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNumberOfFrames(long inbValue)
@@ -150,7 +145,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_sampling_rate(self, ie_sampling_type: int, ie_filter_type: int, id_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSamplingRate(SimSamplingRateTypes ieSamplingType,SimSamplingFilterTypes
@@ -178,7 +172,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_target_speed(self, ie_target_speed_type: int, id_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTargetSpeed(SimTargetSpeedTypes ieTargetSpeedType,double
@@ -203,7 +196,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_type(self, ie_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetType(SimAnimationTypes ieType)
@@ -225,7 +217,6 @@ class SimResultsAnimationOptions(AnyObject):
     def set_use_step_frame_index_label(self, ib_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUseStepFrameIndexLabel(boolean ibFlag)
@@ -245,7 +236,6 @@ class SimResultsAnimationOptions(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

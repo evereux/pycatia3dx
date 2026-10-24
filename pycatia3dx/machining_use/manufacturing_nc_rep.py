@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingNcRep(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingNcRep(AnyObject):
     def export(self, i_directory_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Export(CATBSTR iDirectoryPath)
@@ -57,7 +54,6 @@ class ManufacturingNcRep(AnyObject):
     def get_files(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFiles() As CATSafeArrayVariant
@@ -77,7 +73,6 @@ class ManufacturingNcRep(AnyObject):
     def get_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetType() As long
@@ -90,7 +85,6 @@ class ManufacturingNcRep(AnyObject):
     def import_(self, i_list_of_new_files_paths: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Import(CATSafeArrayVariant iListOfNewFilesPaths)
@@ -108,4 +102,4 @@ class ManufacturingNcRep(AnyObject):
         return self.com_object.Import(i_list_of_new_files_paths)
 
     def __repr__(self):
-        return f'ManufacturingNcRep(name="{ self.name }")'
+        return f'ManufacturingNcRep(name="{self.name}")'

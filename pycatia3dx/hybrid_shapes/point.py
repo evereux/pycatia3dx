@@ -14,7 +14,6 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 class Point(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -45,7 +44,6 @@ class Point(HybridShape):
     def get_coordinates(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
@@ -86,7 +84,6 @@ class Point(HybridShape):
     def set_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCoordinates(CATSafeArrayVariant oCoordinates)

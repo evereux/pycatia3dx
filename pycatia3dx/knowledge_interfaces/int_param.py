@@ -14,7 +14,6 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 class IntParam(Parameter):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +40,6 @@ class IntParam(Parameter):
     def range_max(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMax() As long
@@ -74,7 +72,6 @@ class IntParam(Parameter):
     def range_max_validity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMaxValidity() As long
@@ -105,7 +102,6 @@ class IntParam(Parameter):
     def range_min(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMin() As long
@@ -138,7 +134,6 @@ class IntParam(Parameter):
     def range_min_validity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMinValidity() As long
@@ -169,7 +164,6 @@ class IntParam(Parameter):
     def value(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Value() As long
@@ -200,8 +194,7 @@ class IntParam(Parameter):
         def get_enumerate_values(self, o_safe_array: tuple) -> None:
             """
             .. note::
-                :class: toggle
-
+    
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                     | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
                     |     Returns an array containing the different values that the int param can
@@ -245,7 +238,6 @@ class IntParam(Parameter):
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetEnumerateValuesSize() As long
@@ -261,7 +253,6 @@ class IntParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
@@ -297,7 +288,6 @@ class IntParam(Parameter):
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SuppressEnumerateValues()

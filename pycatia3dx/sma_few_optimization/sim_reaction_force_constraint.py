@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimReactionForceConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimReactionForceConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -94,7 +91,6 @@ class SimReactionForceConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimReactionForceConstraintType
@@ -116,7 +112,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_maximum_reaction_force_x(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumReactionForceX(double oVal)
@@ -135,7 +130,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_maximum_reaction_force_y(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumReactionForceY(double oVal)
@@ -154,7 +148,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_maximum_reaction_force_z(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumReactionForceZ(double oVal)
@@ -173,7 +166,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_maximum_total_reaction_force(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumTotalReactionForce(double oVal)
@@ -192,7 +184,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_minimum_reaction_force_x(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinimumReactionForceX(double oVal)
@@ -211,7 +202,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_minimum_reaction_force_y(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinimumReactionForceY(double oVal)
@@ -230,7 +220,6 @@ class SimReactionForceConstraint(AnyObject):
     def get_minimum_reaction_force_z(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinimumReactionForceZ(double oVal)
@@ -249,7 +238,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_maximum_reaction_force_x(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumReactionForceX(double iVal)
@@ -268,7 +256,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_maximum_reaction_force_y(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumReactionForceY(double iVal)
@@ -287,7 +274,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_maximum_reaction_force_z(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumReactionForceZ(double iVal)
@@ -306,7 +292,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_maximum_total_reaction_force(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumTotalReactionForce(double iVal)
@@ -325,7 +310,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_minimum_reaction_force_x(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinimumReactionForceX(double iVal)
@@ -344,7 +328,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_minimum_reaction_force_y(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinimumReactionForceY(double iVal)
@@ -363,7 +346,6 @@ class SimReactionForceConstraint(AnyObject):
     def set_minimum_reaction_force_z(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinimumReactionForceZ(double iVal)
@@ -380,4 +362,4 @@ class SimReactionForceConstraint(AnyObject):
         return self.com_object.SetMinimumReactionForceZ(i_val)
 
     def __repr__(self):
-        return f'SimReactionForceConstraint(name="{ self.name }")'
+        return f'SimReactionForceConstraint(name="{self.name}")'

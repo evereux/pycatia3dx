@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 
 
 class OLPWaypointOperation(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPWaypointOperation(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -59,7 +56,6 @@ class OLPWaypointOperation(OLPInstruction):
     def waypoint_task(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointTask() As OlpProcedure
@@ -81,4 +77,4 @@ class OLPWaypointOperation(OLPInstruction):
         self.com_object.WaypointTask = value
 
     def __repr__(self):
-        return f'OLPWaypointOperation(name="{ self.name }")'
+        return f'OLPWaypointOperation(name="{self.name}")'

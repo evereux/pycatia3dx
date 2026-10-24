@@ -11,10 +11,8 @@ from pycatia3dx.machining_use.manufacturing_agregate import ManufacturingAgregat
 
 
 class ManufacturingSequentialMotions(ManufacturingAgregate):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,4 +33,4 @@ class ManufacturingSequentialMotions(ManufacturingAgregate):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ManufacturingSequentialMotions(name="{ self.name }")'
+        return f'ManufacturingSequentialMotions(name="{self.name}")'

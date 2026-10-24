@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Camera(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -41,7 +40,6 @@ class Camera(AnyObject):
     def type(self) -> CatCameraType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Type() As CatCameraType (Read Only)

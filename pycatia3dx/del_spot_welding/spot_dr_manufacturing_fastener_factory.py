@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrManufacturingFastenerFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -33,10 +31,13 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_dr_manufacturing_fastener(self, oh_mfg_fastener: AnyObject, i_origin: tuple, i_axis: tuple, i_reference: str, i_diameter: float, i_length: float, i_min_stack: float, i_max_stack: float, i_list_of_user_name: tuple, i_list_of_user_value: tuple, i_list_of_user_type: tuple, ih_geometry: AnyObject, ih_product: AnyObject) -> None:
+    def create_dr_manufacturing_fastener(self, oh_mfg_fastener: AnyObject, i_origin: tuple, i_axis: tuple,
+                                         i_reference: str, i_diameter: float, i_length: float, i_min_stack: float,
+                                         i_max_stack: float, i_list_of_user_name: tuple, i_list_of_user_value: tuple,
+                                         i_list_of_user_type: tuple, ih_geometry: AnyObject,
+                                         ih_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDRManufacturingFastener(AnyObject ohMfgFastener,CATSafeArrayVariant
@@ -96,12 +97,15 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
         :param AnyObject ih_product:
         :return: None
         """
-        return self.com_object.CreateDRManufacturingFastener(oh_mfg_fastener.com_object, i_origin, i_axis, i_reference, i_diameter, i_length, i_min_stack, i_max_stack, i_list_of_user_name, i_list_of_user_value, i_list_of_user_type, ih_geometry.com_object, ih_product.com_object)
+        return self.com_object.CreateDRManufacturingFastener(oh_mfg_fastener.com_object, i_origin, i_axis, i_reference,
+                                                             i_diameter, i_length, i_min_stack, i_max_stack,
+                                                             i_list_of_user_name, i_list_of_user_value,
+                                                             i_list_of_user_type, ih_geometry.com_object,
+                                                             ih_product.com_object)
 
     def delete_dr_manufacturing_fastener(self, ih_mfg_fastener: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteDRManufacturingFastener(AnyObject ihMfgFastener)
@@ -118,4 +122,4 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
         return self.com_object.DeleteDRManufacturingFastener(ih_mfg_fastener.com_object)
 
     def __repr__(self):
-        return f'SpotDrManufacturingFastenerFactory(name="{ self.name }")'
+        return f'SpotDrManufacturingFastenerFactory(name="{self.name}")'

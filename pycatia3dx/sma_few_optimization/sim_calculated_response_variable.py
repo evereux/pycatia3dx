@@ -12,10 +12,8 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -81,7 +79,6 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimCalculatedResponseVariableType
@@ -103,7 +100,6 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def add_response_variable(self, i_design_response: AnyObject, i_weight: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddResponseVariable(AnyObject iDesignResponse,double
@@ -125,7 +121,6 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def set_first_response_variable(self, i_design_response: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFirstResponseVariable(AnyObject iDesignResponse)
@@ -145,7 +140,6 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
     def set_second_response_variable(self, i_design_response: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSecondResponseVariable(AnyObject iDesignResponse)
@@ -163,4 +157,4 @@ class SimCalculatedResponseVariable(SimNonParametricResponseVariable):
         return self.com_object.SetSecondResponseVariable(i_design_response.com_object)
 
     def __repr__(self):
-        return f'SimCalculatedResponseVariable(name="{ self.name }")'
+        return f'SimCalculatedResponseVariable(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrManufacturingProduct(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class DrManufacturingProduct(AnyObject):
     def create_drilling_riveting_pattern(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDrillingRivetingPattern() As AnyObject
@@ -56,10 +53,12 @@ class DrManufacturingProduct(AnyObject):
         """
         return AnyObject(self.com_object.CreateDrillingRivetingPattern())
 
-    def create_manufacturing_fastener(self, i_origin_x: float, i_origin_y: float, i_origin_z: float, i_normal_axis_x: float, i_normal_axis_y: float, i_normal_axis_z: float, i_lateral_axis_x: float, i_lateral_axis_y: float, i_lateral_axis_z: float, i_reference: str, ih_geometry: AnyObject, ih_product: AnyObject) -> AnyObject:
+    def create_manufacturing_fastener(self, i_origin_x: float, i_origin_y: float, i_origin_z: float,
+                                      i_normal_axis_x: float, i_normal_axis_y: float, i_normal_axis_z: float,
+                                      i_lateral_axis_x: float, i_lateral_axis_y: float, i_lateral_axis_z: float,
+                                      i_reference: str, ih_geometry: AnyObject, ih_product: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateManufacturingFastener(double iOriginX,double iOriginY,double
@@ -114,12 +113,15 @@ class DrManufacturingProduct(AnyObject):
         :param AnyObject ih_product:
         :return: AnyObject
         """
-        return AnyObject(self.com_object.CreateManufacturingFastener(i_origin_x, i_origin_y, i_origin_z, i_normal_axis_x, i_normal_axis_y, i_normal_axis_z, i_lateral_axis_x, i_lateral_axis_y, i_lateral_axis_z, i_reference, ih_geometry.com_object, ih_product.com_object))
+        return AnyObject(
+            self.com_object.CreateManufacturingFastener(i_origin_x, i_origin_y, i_origin_z, i_normal_axis_x,
+                                                        i_normal_axis_y, i_normal_axis_z, i_lateral_axis_x,
+                                                        i_lateral_axis_y, i_lateral_axis_z, i_reference,
+                                                        ih_geometry.com_object, ih_product.com_object))
 
     def get_manufacturing_features(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatures() As CATSafeArrayVariant
@@ -137,4 +139,4 @@ class DrManufacturingProduct(AnyObject):
         return self.com_object.GetManufacturingFeatures()
 
     def __repr__(self):
-        return f'DrManufacturingProduct(name="{ self.name }")'
+        return f'DrManufacturingProduct(name="{self.name}")'

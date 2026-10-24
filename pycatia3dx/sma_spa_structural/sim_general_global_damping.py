@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimGeneralGlobalDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class SimGeneralGlobalDamping(AnyObject):
     def mass_proportional_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MassProportionalDamping() As double
@@ -78,7 +75,6 @@ class SimGeneralGlobalDamping(AnyObject):
     def modes_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModesType() As SimGeneralGlobalDampingModesType
@@ -101,7 +97,6 @@ class SimGeneralGlobalDamping(AnyObject):
     def stiffness_proportional_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StiffnessProportionalDamping() As double
@@ -125,7 +120,6 @@ class SimGeneralGlobalDamping(AnyObject):
     def structural_damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StructuralDamping() As double
@@ -146,4 +140,4 @@ class SimGeneralGlobalDamping(AnyObject):
         self.com_object.StructuralDamping = value
 
     def __repr__(self):
-        return f'SimGeneralGlobalDamping(name="{ self.name }")'
+        return f'SimGeneralGlobalDamping(name="{self.name}")'

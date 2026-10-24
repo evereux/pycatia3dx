@@ -13,7 +13,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimManagerSimAccess(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class SimManagerSimAccess(CATBaseDispatch):
     def manifest_path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ManifestPath() As CATBSTR (Read Only)
@@ -65,7 +63,6 @@ class SimManagerSimAccess(CATBaseDispatch):
     def notify_manifest_modification(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NotifyManifestModification()

@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class ParameterSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -46,7 +45,6 @@ class ParameterSet(AnyObject):
     def all_parameters(self) -> 'Parameters':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AllParameters() As Parameters (Read Only)
@@ -61,7 +59,6 @@ class ParameterSet(AnyObject):
     def direct_parameters(self) -> 'Parameters':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property DirectParameters() As Parameters (Read Only)
@@ -76,7 +73,6 @@ class ParameterSet(AnyObject):
     def parameter_sets(self) -> 'ParameterSets':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ParameterSets() As ParameterSets (Read Only)

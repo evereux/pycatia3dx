@@ -12,13 +12,9 @@ from pycatia3dx.know_how.expert_rule import ExpertRule
 from pycatia3dx.know_how.expert_rule_set_runtime import ExpertRuleSetRuntime
 
 
-
-
 class ExpertRuleSet(ExpertRuleSetRuntime):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +43,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
     def create_check(self, i_name: str, i_check_variables: str, i_check_body: str, i_rule_set: str) -> ExpertCheck:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCheck(CATBSTR iName,CATBSTR iCheckVariables,CATBSTR
@@ -105,7 +100,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
     def create_rule(self, i_name: str, i_rule_variables: str, i_rule_body: str, i_rule_set: str) -> ExpertRule:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRule(CATBSTR iName,CATBSTR iRuleVariables,CATBSTR iRuleBody,CATBSTR
@@ -167,7 +161,6 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
     def create_rule_set(self, i_name: str, i_rule_set: str) -> 'ExpertRuleSet':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRuleSet(CATBSTR iName,CATBSTR iRuleSet) As
@@ -213,4 +206,4 @@ class ExpertRuleSet(ExpertRuleSetRuntime):
         return ExpertRuleSet(self.com_object.CreateRuleSet(i_name, i_rule_set))
 
     def __repr__(self):
-        return f'ExpertRuleSet(name="{ self.name }")'
+        return f'ExpertRuleSet(name="{self.name}")'

@@ -14,10 +14,8 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class Sweep(SketchBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class Sweep(SketchBasedShape):
     def anchor_dir_reverse(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorDirReverse() As boolean
@@ -75,7 +72,6 @@ class Sweep(SketchBasedShape):
     def center_curve(self) -> Sketch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CenterCurve() As Sketch (Read Only)
@@ -97,7 +93,6 @@ class Sweep(SketchBasedShape):
     def center_curve_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CenterCurveElement() As Reference
@@ -122,7 +117,6 @@ class Sweep(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsThin() As boolean
@@ -158,7 +152,6 @@ class Sweep(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MergeEnd() As boolean
@@ -193,7 +186,6 @@ class Sweep(SketchBasedShape):
     def merge_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MergeMode() As CatMergeMode
@@ -216,7 +208,6 @@ class Sweep(SketchBasedShape):
     def move_profile_to_path(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MoveProfileToPath() As boolean
@@ -248,7 +239,6 @@ class Sweep(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeutralFiber() As boolean
@@ -285,7 +275,6 @@ class Sweep(SketchBasedShape):
     def normal_axis_dir_reverse(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NormalAxisDirReverse() As boolean
@@ -317,7 +306,6 @@ class Sweep(SketchBasedShape):
     def pulling_dir_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PullingDirElement() As Reference
@@ -343,7 +331,6 @@ class Sweep(SketchBasedShape):
     def reference_surface_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceSurfaceElement() As Reference
@@ -366,7 +353,6 @@ class Sweep(SketchBasedShape):
     def set_keep_angle_option(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetKeepAngleOption()
@@ -377,4 +363,4 @@ class Sweep(SketchBasedShape):
         return self.com_object.SetKeepAngleOption()
 
     def __repr__(self):
-        return f'Sweep(name="{ self.name }")'
+        return f'Sweep(name="{self.name}")'

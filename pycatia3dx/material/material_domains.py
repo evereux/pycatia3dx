@@ -15,7 +15,6 @@ from pycatia3dx.system.collection import Collection
 class MaterialDomains(PLMEntities):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class MaterialDomains(PLMEntities):
     def add(self, i_user_discipline: str, o_domain: MaterialDomain) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(CATBSTR iUserDiscipline,MaterialDomain oDomain)
@@ -74,7 +72,6 @@ class MaterialDomains(PLMEntities):
     def get_item_by_discipline(self, i_user_discipline: tuple, o_list_domain: Collection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetItemByDiscipline(CATSafeArrayVariant iUserDiscipline,Collection

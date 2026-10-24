@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class AnyObject(PyCATIA3DX):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -44,7 +43,6 @@ class AnyObject(PyCATIA3DX):
     def application(self) -> 'Application':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Application() As Application (Read Only)
@@ -80,7 +78,6 @@ class AnyObject(PyCATIA3DX):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Name() As CATBSTR
@@ -120,7 +117,6 @@ class AnyObject(PyCATIA3DX):
     def parent(self) -> 'AnyObject':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Parent() As CATBaseDispatch (Read Only)
@@ -150,7 +146,6 @@ class AnyObject(PyCATIA3DX):
     def get_item(self, id_name: str) -> 'AnyObject':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetItem(CATBSTR IDName) As CATBaseDispatch

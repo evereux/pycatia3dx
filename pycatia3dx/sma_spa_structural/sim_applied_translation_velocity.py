@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAppliedTranslationVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimAppliedTranslationVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -103,7 +100,6 @@ class SimAppliedTranslationVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -118,7 +114,6 @@ class SimAppliedTranslationVelocity(AnyObject):
     def dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Dof() As SimDof
@@ -141,7 +136,6 @@ class SimAppliedTranslationVelocity(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -156,7 +150,6 @@ class SimAppliedTranslationVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslationalVelocity() As double
@@ -177,4 +170,4 @@ class SimAppliedTranslationVelocity(AnyObject):
         self.com_object.TranslationalVelocity = value
 
     def __repr__(self):
-        return f'SimAppliedTranslationVelocity(name="{ self.name }")'
+        return f'SimAppliedTranslationVelocity(name="{self.name}")'

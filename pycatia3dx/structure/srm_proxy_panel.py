@@ -17,7 +17,6 @@ from pycatia3dx.structure.srm_proxy_profiles import SrmProxyProfiles
 class SrmProxyPanel(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class SrmProxyPanel(AnyObject):
     def get_location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLocation() As long
@@ -60,7 +58,6 @@ class SrmProxyPanel(AnyObject):
     def get_panel(self) -> SfdPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPanel() As SfdPanel
@@ -73,7 +70,6 @@ class SrmProxyPanel(AnyObject):
     def get_planning_breaks(self) -> SrmPlanningBreaks:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPlanningBreaks() As SrmPlanningBreaks
@@ -97,7 +93,6 @@ class SrmProxyPanel(AnyObject):
     def get_profile_proxies(self, i_location: int) -> SrmProxyProfiles:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileProxies(long iLocation) As SrmProxyProfiles

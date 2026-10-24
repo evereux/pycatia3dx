@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_error_reporter import OLPErrorReporter
 
 
 class OLPParser(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class OLPParser(AnyObject):
     def ast_root(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AstRoot(OLPAstBranch iAST) (Write Only)
@@ -76,7 +73,6 @@ class OLPParser(AnyObject):
     def error_reporter(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ErrorReporter(OlpErrorReporter iReporter) (Write
@@ -106,7 +102,6 @@ class OLPParser(AnyObject):
     def parse(self, i_file: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Parse(CATBSTR iFile)
@@ -127,7 +122,6 @@ class OLPParser(AnyObject):
     def parse_string(self, i_text: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ParseString(CATBSTR iText)
@@ -144,4 +138,4 @@ class OLPParser(AnyObject):
         return self.com_object.ParseString(i_text)
 
     def __repr__(self):
-        return f'OLPParser(name="{ self.name }")'
+        return f'OLPParser(name="{self.name}")'

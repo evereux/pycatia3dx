@@ -14,10 +14,8 @@ from pycatia3dx.sma_spa_structural.sim_modal_damping import SimModalDamping
 
 
 class SimStructuralDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimStructuralDamping(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimStructuralDamping(AnyObject):
     def global_damping(self) -> SimGlobalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalDamping() As SimGlobalDamping (Read Only)
@@ -116,7 +112,6 @@ class SimStructuralDamping(AnyObject):
     def modal_damping(self) -> SimModalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModalDamping() As SimModalDamping (Read Only)
@@ -128,4 +123,4 @@ class SimStructuralDamping(AnyObject):
         return SimModalDamping(self.com_object.ModalDamping)
 
     def __repr__(self):
-        return f'SimStructuralDamping(name="{ self.name }")'
+        return f'SimStructuralDamping(name="{self.name}")'

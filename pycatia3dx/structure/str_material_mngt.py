@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrMaterialMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrMaterialMngt(AnyObject):
     def get_material(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterial() As CATBSTR
@@ -63,7 +60,6 @@ class StrMaterialMngt(AnyObject):
     def set_material(self, i_material_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterial(CATBSTR iMaterialName)
@@ -88,4 +84,4 @@ class StrMaterialMngt(AnyObject):
         return self.com_object.SetMaterial(i_material_name)
 
     def __repr__(self):
-        return f'StrMaterialMngt(name="{ self.name }")'
+        return f'StrMaterialMngt(name="{self.name}")'

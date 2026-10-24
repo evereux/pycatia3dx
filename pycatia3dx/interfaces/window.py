@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Window(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class Window(AnyObject):
     def active_viewer(self) -> Viewer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ActiveViewer() As Viewer (Read Only)
@@ -65,7 +63,6 @@ class Window(AnyObject):
     def caption(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Caption() As CATBSTR
@@ -95,7 +92,6 @@ class Window(AnyObject):
     def height(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Height() As long
@@ -125,7 +121,6 @@ class Window(AnyObject):
     def left(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Left() As long
@@ -156,7 +151,6 @@ class Window(AnyObject):
     def page_setup(self) -> PageSetup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property PageSetup() As PageSetup
@@ -186,7 +180,6 @@ class Window(AnyObject):
     def top(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Top() As long
@@ -217,7 +210,6 @@ class Window(AnyObject):
     def viewers(self) -> Viewers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Viewers() As Viewers (Read Only)
@@ -239,7 +231,6 @@ class Window(AnyObject):
     def width(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Width() As long
@@ -269,7 +260,6 @@ class Window(AnyObject):
     def window_state(self) -> CatWindowState:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property WindowState() As CatWindowState
@@ -297,7 +287,6 @@ class Window(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Activate()
@@ -316,7 +305,6 @@ class Window(AnyObject):
     def activate_next(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ActivateNext()
@@ -336,7 +324,6 @@ class Window(AnyObject):
     def activate_previous(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ActivatePrevious()
@@ -356,7 +343,6 @@ class Window(AnyObject):
     def close(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Close()
@@ -377,7 +363,6 @@ class Window(AnyObject):
     def new_window(self) -> 'Window':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func NewWindow() As Window
@@ -399,7 +384,6 @@ class Window(AnyObject):
     def print_out(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PrintOut()
@@ -419,7 +403,6 @@ class Window(AnyObject):
     def print_to_file(self, file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PrintToFile(CATBSTR fileName)

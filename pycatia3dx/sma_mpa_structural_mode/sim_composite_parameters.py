@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_composite_rosette import SimComposit
 
 
 class SimCompositeParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimCompositeParameters(AnyObject):
     def add_material(self, i_material: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddMaterial(CATBaseDispatch iMaterial)
@@ -59,7 +56,6 @@ class SimCompositeParameters(AnyObject):
     def create_file_from_laminates(self, i_laminate_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFileFromLaminates(CATBSTR iLaminatePath)
@@ -79,7 +75,6 @@ class SimCompositeParameters(AnyObject):
     def create_laminate(self, i_laminate_name: str) -> SimCompositeLaminate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateLaminate(CATBSTR iLaminateName) As
@@ -102,7 +97,6 @@ class SimCompositeParameters(AnyObject):
     def create_laminates_from_file(self, i_laminate_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateLaminatesFromFile(CATBSTR iLaminatePath)
@@ -121,7 +115,6 @@ class SimCompositeParameters(AnyObject):
     def create_orientation(self, i_orientation_name: str, i_val: float, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateOrientation(CATBSTR iOrientationName,double iVal,short iRed,short
@@ -153,7 +146,6 @@ class SimCompositeParameters(AnyObject):
     def create_rosette(self) -> SimCompositeRosette:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRosette() As SimCompositeRosette
@@ -169,7 +161,6 @@ class SimCompositeParameters(AnyObject):
     def get_laminate_by_index(self, i_index: int) -> SimCompositeLaminate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLaminateByIndex(short iIndex) As SimCompositeLaminate
@@ -193,7 +184,6 @@ class SimCompositeParameters(AnyObject):
     def get_laminate_by_name(self, i_laminate_name: str) -> SimCompositeLaminate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLaminateByName(CATBSTR iLaminateName) As
@@ -218,7 +208,6 @@ class SimCompositeParameters(AnyObject):
     def get_list_of_laminates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListOfLaminates() As CATSafeArrayVariant
@@ -234,7 +223,6 @@ class SimCompositeParameters(AnyObject):
     def get_list_of_orientations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListOfOrientations() As CATSafeArrayVariant
@@ -250,7 +238,6 @@ class SimCompositeParameters(AnyObject):
     def get_list_of_rosettes(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListOfRosettes() As CATSafeArrayVariant
@@ -266,7 +253,6 @@ class SimCompositeParameters(AnyObject):
     def get_material_by_index(self, i_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialByIndex(short iIndex) As CATBaseDispatch
@@ -290,7 +276,6 @@ class SimCompositeParameters(AnyObject):
     def get_material_by_name(self, i_material_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialByName(CATBSTR iMaterialName) As
@@ -315,7 +300,6 @@ class SimCompositeParameters(AnyObject):
     def get_material_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialList() As CATSafeArrayVariant
@@ -331,7 +315,6 @@ class SimCompositeParameters(AnyObject):
     def get_orientation_by_index(self, i_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientationByIndex(short iIndex) As double
@@ -355,7 +338,6 @@ class SimCompositeParameters(AnyObject):
     def get_orientation_by_name(self, i_orientation_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientationByName(CATBSTR iOrientationName) As double
@@ -379,7 +361,6 @@ class SimCompositeParameters(AnyObject):
     def get_rosette_by_index(self, i_index: int) -> SimCompositeRosette:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRosetteByIndex(short iIndex) As SimCompositeRosette
@@ -403,7 +384,6 @@ class SimCompositeParameters(AnyObject):
     def get_rosette_by_name(self, i_rosette_name: str) -> SimCompositeRosette:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRosetteByName(CATBSTR iRosetteName) As
@@ -427,7 +407,6 @@ class SimCompositeParameters(AnyObject):
     def remove_laminate(self, i_laminate: SimCompositeLaminate) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLaminate(SimCompositeLaminate iLaminate)
@@ -446,7 +425,6 @@ class SimCompositeParameters(AnyObject):
     def remove_material(self, i_material: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveMaterial(CATBaseDispatch iMaterial)
@@ -465,7 +443,6 @@ class SimCompositeParameters(AnyObject):
     def remove_rosette(self, i_rosette: SimCompositeRosette) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRosette(SimCompositeRosette iRosette)
@@ -484,7 +461,6 @@ class SimCompositeParameters(AnyObject):
     def set_color(self, i_orientation_name: str, i_val: float, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetColor(CATBSTR iOrientationName,double iVal,short iRed,short iGreen,short
@@ -513,4 +489,4 @@ class SimCompositeParameters(AnyObject):
         return self.com_object.SetColor(i_orientation_name, i_val, i_red, i_green, i_blue)
 
     def __repr__(self):
-        return f'SimCompositeParameters(name="{ self.name }")'
+        return f'SimCompositeParameters(name="{self.name}")'

@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeExtrude(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapeExtrude(HybridShape):
     def begin_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOffset() As Length (Read Only)
@@ -81,7 +78,6 @@ class HybridShapeExtrude(HybridShape):
     def context(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Context() As long
@@ -118,7 +114,6 @@ class HybridShapeExtrude(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -155,7 +150,6 @@ class HybridShapeExtrude(HybridShape):
     def end_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndOffset() As Length (Read Only)
@@ -187,7 +181,6 @@ class HybridShapeExtrude(HybridShape):
     def extruded_object(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtrudedObject() As Reference
@@ -224,7 +217,6 @@ class HybridShapeExtrude(HybridShape):
     def first_limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstLimitType() As long
@@ -264,7 +256,6 @@ class HybridShapeExtrude(HybridShape):
     def first_upto_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstUptoElement() As Reference
@@ -295,7 +286,6 @@ class HybridShapeExtrude(HybridShape):
     def orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation(boolean iOrientation)
@@ -321,7 +311,6 @@ class HybridShapeExtrude(HybridShape):
     def second_limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondLimitType() As long
@@ -361,7 +350,6 @@ class HybridShapeExtrude(HybridShape):
     def second_upto_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondUptoElement() As Reference
@@ -392,7 +380,6 @@ class HybridShapeExtrude(HybridShape):
     def symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SymmetricalExtension() As boolean
@@ -417,4 +404,4 @@ class HybridShapeExtrude(HybridShape):
         self.com_object.SymmetricalExtension = value
 
     def __repr__(self):
-        return f'HybridShapeExtrude(name="{ self.name }")'
+        return f'HybridShapeExtrude(name="{self.name}")'

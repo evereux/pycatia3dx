@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class PLMEntity(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class PLMEntity(AnyObject):
     def get_attribute_value(self, i_attr_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttributeValue(CATBSTR iAttrName) As CATVariant
@@ -64,7 +62,6 @@ class PLMEntity(AnyObject):
     def get_custom_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCustomType() As CATBSTR
@@ -84,7 +81,6 @@ class PLMEntity(AnyObject):
     def set_attribute_value(self, i_attr_name: str, i_attr_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iAttrName,CATVariant iAttrValue)

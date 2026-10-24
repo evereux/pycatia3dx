@@ -14,7 +14,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 class OLPSphere(OLPShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class OLPSphere(OLPShape):
     def radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Radius() As double
@@ -65,7 +63,6 @@ class OLPSphere(OLPShape):
     def get_center(self) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCenter(DELOlpPositionRef iOrigin) As OlpTransform
@@ -89,7 +86,6 @@ class OLPSphere(OLPShape):
     def set_center(self, i_origin: int, i_location: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCenter(DELOlpPositionRef iOrigin,OlpTransform

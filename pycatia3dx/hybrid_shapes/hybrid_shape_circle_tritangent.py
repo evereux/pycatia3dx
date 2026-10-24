@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleTritangent(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -55,7 +53,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOfCircle() As long
@@ -87,7 +84,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve1() As Reference
@@ -120,7 +116,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve2() As Reference
@@ -152,7 +147,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve3(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve3() As Reference
@@ -185,7 +179,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiscriminationIndex() As long
@@ -220,7 +213,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation1() As long
@@ -258,7 +250,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation2() As long
@@ -296,7 +287,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation3(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation3() As long
@@ -334,7 +324,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -365,7 +354,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation1() As long
@@ -399,7 +387,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation2() As long
@@ -433,7 +420,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation3(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation3() As long
@@ -467,7 +453,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TrimMode() As long
@@ -501,4 +486,4 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.com_object.TrimMode = value
 
     def __repr__(self):
-        return f'HybridShapeCircleTritangent(name="{ self.name }")'
+        return f'HybridShapeCircleTritangent(name="{self.name}")'

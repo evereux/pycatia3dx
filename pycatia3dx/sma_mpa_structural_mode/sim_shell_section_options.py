@@ -11,10 +11,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimShellSectionOptions(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class SimShellSectionOptions(CATBaseDispatch):
     def interval(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Interval() As double
@@ -71,7 +68,6 @@ class SimShellSectionOptions(CATBaseDispatch):
     def interval_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntervalFlag() As boolean (Read Only)
@@ -92,7 +88,6 @@ class SimShellSectionOptions(CATBaseDispatch):
     def round_off_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RoundOffFlag() As boolean
@@ -120,7 +115,6 @@ class SimShellSectionOptions(CATBaseDispatch):
     def split_by_thickness_offset_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SplitByThicknessOffsetFlag() As boolean

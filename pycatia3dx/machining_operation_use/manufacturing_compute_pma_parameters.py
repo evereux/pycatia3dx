@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingComputePmaParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingComputePmaParameters(AnyObject):
     def compute_parameters(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeParameters()
@@ -56,7 +53,6 @@ class ManufacturingComputePmaParameters(AnyObject):
     def get_parameter_double_value(self, i_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterDoubleValue(CATBSTR iName) As double
@@ -78,7 +74,6 @@ class ManufacturingComputePmaParameters(AnyObject):
     def get_parameter_string_value(self, i_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterStringValue(CATBSTR iName) As CATBSTR
@@ -98,4 +93,4 @@ class ManufacturingComputePmaParameters(AnyObject):
         return self.com_object.GetParameterStringValue(i_name)
 
     def __repr__(self):
-        return f'ManufacturingComputePmaParameters(name="{ self.name }")'
+        return f'ManufacturingComputePmaParameters(name="{self.name}")'

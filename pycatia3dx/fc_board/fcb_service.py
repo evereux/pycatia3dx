@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class FCBService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class FCBService(Service):
     def create_flexible_board(self, i_part: Part, i_create_axissystem: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFlexibleBoard(Part iPart,boolean iCreateAxissystem) As
@@ -69,7 +67,6 @@ class FCBService(Service):
     def get_flexible_board(self, i_part: Part) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlexibleBoard(Part iPart) As CATBaseDispatch

@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimTransientHeatTransferStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimTransientHeatTransferStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimTransientHeatTransferStep(SimStep):
     def end_at_steady_state_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndAtSteadyStateFlag() As boolean
@@ -127,7 +123,6 @@ class SimTransientHeatTransferStep(SimStep):
     def initial_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialTimeStep() As double
@@ -150,7 +145,6 @@ class SimTransientHeatTransferStep(SimStep):
     def maximum_emissivity_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumEmissivityChange() As double
@@ -173,7 +167,6 @@ class SimTransientHeatTransferStep(SimStep):
     def maximum_number_of_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumNumberOfIncrements() As long
@@ -197,7 +190,6 @@ class SimTransientHeatTransferStep(SimStep):
     def maximum_temperature_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTemperatureChange() As double
@@ -221,7 +213,6 @@ class SimTransientHeatTransferStep(SimStep):
     def maximum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeStep() As double
@@ -244,7 +235,6 @@ class SimTransientHeatTransferStep(SimStep):
     def minimum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumTimeStep() As double
@@ -267,7 +257,6 @@ class SimTransientHeatTransferStep(SimStep):
     def steady_state_temperature_change_rate(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SteadyStateTemperatureChangeRate() As double
@@ -291,7 +280,6 @@ class SimTransientHeatTransferStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrementationScheme() As
@@ -315,7 +303,6 @@ class SimTransientHeatTransferStep(SimStep):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalTime() As double
@@ -335,4 +322,4 @@ class SimTransientHeatTransferStep(SimStep):
         self.com_object.TotalTime = value
 
     def __repr__(self):
-        return f'SimTransientHeatTransferStep(name="{ self.name }")'
+        return f'SimTransientHeatTransferStep(name="{self.name}")'

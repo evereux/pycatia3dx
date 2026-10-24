@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class KinSimulationScenarioResult(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +47,6 @@ class KinSimulationScenarioResult(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Name() As CATBSTR (Read Only)
@@ -65,7 +63,6 @@ class KinSimulationScenarioResult(CATBaseDispatch):
     def get_result_channels(self, i_name_filtering: str, i_type_filtering: int) -> KinSimulationChannels:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultChannels(CATBSTR iNameFiltering,CatKinSimuChannelType

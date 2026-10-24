@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimDynClashResult(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class SimDynClashResult(AnyObject):
     def clash_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClashType() As long (Read Only)
@@ -67,7 +64,6 @@ class SimDynClashResult(AnyObject):
     def get_colliding_part(self, i_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCollidingPart(long iIndex) As AnyObject
@@ -88,7 +84,6 @@ class SimDynClashResult(AnyObject):
     def get_parameter(self, i_parameter_id: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iParameterID) As double
@@ -105,4 +100,4 @@ class SimDynClashResult(AnyObject):
         return self.com_object.GetParameter(i_parameter_id)
 
     def __repr__(self):
-        return f'SimDynClashResult(name="{ self.name }")'
+        return f'SimDynClashResult(name="{self.name}")'

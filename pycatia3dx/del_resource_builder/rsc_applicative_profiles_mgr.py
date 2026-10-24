@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class RscApplicativeProfilesMgr(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -65,7 +64,6 @@ class RscApplicativeProfilesMgr(Collection):
     def available_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableGroups() As CATSafeArrayVariant (Read Only)
@@ -92,7 +90,6 @@ class RscApplicativeProfilesMgr(Collection):
     def item(self, i_index: CATVariant) -> RscApplicativeProfilesGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As RscApplicativeProfilesGroup
@@ -140,7 +137,6 @@ class RscApplicativeProfilesMgr(Collection):
     def remove_profile_group(self, i_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveProfileGroup(CATBSTR iType)

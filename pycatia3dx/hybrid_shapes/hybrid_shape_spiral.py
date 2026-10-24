@@ -17,10 +17,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSpiral(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -60,7 +58,6 @@ class HybridShapeSpiral(HybridShape):
     def axis(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Axis() As HybridShapeDirection
@@ -83,7 +80,6 @@ class HybridShapeSpiral(HybridShape):
     def center_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CenterPoint() As Reference
@@ -106,7 +102,6 @@ class HybridShapeSpiral(HybridShape):
     def clockwise_revolution(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ClockwiseRevolution() As boolean
@@ -131,7 +126,6 @@ class HybridShapeSpiral(HybridShape):
     def ending_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndingAngle() As Angle
@@ -154,7 +148,6 @@ class HybridShapeSpiral(HybridShape):
     def ending_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndingRadius() As Length
@@ -177,7 +170,6 @@ class HybridShapeSpiral(HybridShape):
     def invert_axis(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertAxis() As boolean
@@ -203,7 +195,6 @@ class HybridShapeSpiral(HybridShape):
     def pitch(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Pitch() As Length
@@ -226,7 +217,6 @@ class HybridShapeSpiral(HybridShape):
     def revol_number(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RevolNumber() As RealParam
@@ -249,7 +239,6 @@ class HybridShapeSpiral(HybridShape):
     def starting_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartingRadius() As Length
@@ -272,7 +261,6 @@ class HybridShapeSpiral(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -295,7 +283,6 @@ class HybridShapeSpiral(HybridShape):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Type() As long
@@ -317,7 +304,6 @@ class HybridShapeSpiral(HybridShape):
     def set_angle_pitch_param(self, i_end_angle: float, i_revol_number: float, i_pitch: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAnglePitchParam(double iEndAngle,double iRevolNumber,double
@@ -334,7 +320,6 @@ class HybridShapeSpiral(HybridShape):
     def set_angle_radius_param(self, i_end_angle: float, i_revol_number: float, i_end_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngleRadiusParam(double iEndAngle,double iRevolNumber,double
@@ -351,7 +336,6 @@ class HybridShapeSpiral(HybridShape):
     def set_radius_pitch_param(self, i_end_radius: float, i_pitch: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetRadiusPitchParam(double iEndRadius,double iPitch)
@@ -364,4 +348,4 @@ class HybridShapeSpiral(HybridShape):
         return self.com_object.SetRadiusPitchParam(i_end_radius, i_pitch)
 
     def __repr__(self):
-        return f'HybridShapeSpiral(name="{ self.name }")'
+        return f'HybridShapeSpiral(name="{self.name}")'

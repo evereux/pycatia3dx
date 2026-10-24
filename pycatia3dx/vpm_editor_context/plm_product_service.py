@@ -19,7 +19,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PLMProductService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
 
@@ -49,7 +48,6 @@ class PLMProductService(Service):
     def edited_content(self) -> PLMEntities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Property EditedContent() As PLMEntities (Read Only)
@@ -64,7 +62,6 @@ class PLMProductService(Service):
     def root_occurrence(self) -> VPMRootOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Property RootOccurrence() As VPMRootOccurrence (Read Only)
@@ -79,7 +76,6 @@ class PLMProductService(Service):
                      i_catia_reference: Reference) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917))
                 | Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class ParameterSets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -57,7 +56,6 @@ class ParameterSets(Collection):
     def create_set(self, i_name: str) -> ParameterSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateSet(CATBSTR iName) As ParameterSet
@@ -80,7 +78,6 @@ class ParameterSets(Collection):
     def item(self, i_index: CATVariant) -> ParameterSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As ParameterSet

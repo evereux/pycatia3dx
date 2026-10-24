@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 
 
 class OLPPRun(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPPRun(OLPInstruction):
     def arguments(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arguments() As OlpAstBranch
@@ -80,7 +77,6 @@ class OLPPRun(OLPInstruction):
     def job_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JobId() As CATBSTR
@@ -104,7 +100,6 @@ class OLPPRun(OLPInstruction):
     def procedure(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Procedure() As OlpProcedure
@@ -127,7 +122,6 @@ class OLPPRun(OLPInstruction):
     def sustain_simulation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SustainSimulation() As boolean
@@ -150,7 +144,6 @@ class OLPPRun(OLPInstruction):
     def assign_undefined_procedure(self, i_name: str, i_data_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedure(CATBSTR iName,DELOlpDataType
@@ -187,7 +180,6 @@ class OLPPRun(OLPInstruction):
     def assign_undefined_procedure_in_string_type(self, i_name: str, i_data_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedureInStringType(CATBSTR iName,CATBSTR
@@ -224,4 +216,4 @@ class OLPPRun(OLPInstruction):
         return self.com_object.AssignUndefinedProcedureInStringType(i_name, i_data_type)
 
     def __repr__(self):
-        return f'OLPPRun(name="{ self.name }")'
+        return f'OLPPRun(name="{self.name}")'

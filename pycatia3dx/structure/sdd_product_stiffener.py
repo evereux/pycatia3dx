@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_material_mngt import StrMaterialMngt
 class SddProductStiffener(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class SddProductStiffener(AnyObject):
     def sdd_stiffener(self) -> SddStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SddStiffener() As SddStiffener (Read Only)
@@ -56,7 +54,6 @@ class SddProductStiffener(AnyObject):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
@@ -84,7 +81,6 @@ class SddProductStiffener(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

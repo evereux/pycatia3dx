@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimUserDefined(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimUserDefined(AnyObject):
     def hybrid_formulation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HybridFormulation() As
@@ -110,7 +107,6 @@ class SimUserDefined(AnyObject):
     def unsymmetric_stiffness_matrix_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UnsymmetricStiffnessMatrixFlag() As boolean
@@ -143,7 +139,6 @@ class SimUserDefined(AnyObject):
     def user_defined_physics(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserDefinedPhysics() As SimUserDefinedPhysics
@@ -176,7 +171,6 @@ class SimUserDefined(AnyObject):
     def user_subroutine_configurable_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserSubroutineConfigurableFlag() As boolean
@@ -215,7 +209,6 @@ class SimUserDefined(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimUserDefinedMaterialTableColumn
@@ -244,4 +237,4 @@ class SimUserDefined(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimUserDefined(name="{ self.name }")'
+        return f'SimUserDefined(name="{self.name}")'

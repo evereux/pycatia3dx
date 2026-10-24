@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPObjectFrameProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def get_attached_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttachedDevice() As OlpController
@@ -61,7 +58,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def get_fixed_tcp(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFixedTCP() As boolean
@@ -74,7 +70,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def get_movable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMovable() As boolean
@@ -89,7 +84,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def get_transform(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
@@ -133,7 +127,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def set_attached_device(self, i_attached_device: OLPController, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttachedDevice(OlpController iAttachedDevice,boolean
@@ -158,7 +151,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def set_fixed_tcp(self, i_is_fixed_tcp: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFixedTCP(boolean iIsFixedTCP,boolean iMatch)
@@ -182,7 +174,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def set_movable(self, i_is_movable: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovable(boolean iIsMovable,boolean iMatch)
@@ -207,7 +198,6 @@ class OLPObjectFrameProfile(OLPProfile):
     def set_transform(self, i_origin: int, i_frame: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform
@@ -232,4 +222,4 @@ class OLPObjectFrameProfile(OLPProfile):
         return self.com_object.SetTransform(i_origin, i_frame.com_object)
 
     def __repr__(self):
-        return f'OLPObjectFrameProfile(name="{ self.name }")'
+        return f'OLPObjectFrameProfile(name="{self.name}")'

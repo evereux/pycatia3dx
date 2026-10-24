@@ -15,7 +15,6 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 class Prism(SketchBasedShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class Prism(SketchBasedShape):
     def direction_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectionOrientation() As CatPrismOrientation
@@ -75,7 +73,6 @@ class Prism(SketchBasedShape):
     def direction_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectionType() As CatPrismExtrusionDirection
@@ -110,7 +107,6 @@ class Prism(SketchBasedShape):
     def first_limit(self) -> Limit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstLimit() As Limit (Read Only)
@@ -136,7 +132,6 @@ class Prism(SketchBasedShape):
     def is_symmetric(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsSymmetric() As boolean
@@ -172,7 +167,6 @@ class Prism(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsThin() As boolean
@@ -208,7 +202,6 @@ class Prism(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MergeEnd() As boolean
@@ -243,7 +236,6 @@ class Prism(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeutralFiber() As boolean
@@ -280,7 +272,6 @@ class Prism(SketchBasedShape):
     def second_limit(self) -> Limit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondLimit() As Limit (Read Only)
@@ -305,7 +296,6 @@ class Prism(SketchBasedShape):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDirection(CATSafeArrayVariant ioDirection)
@@ -348,7 +338,6 @@ class Prism(SketchBasedShape):
     def get_profile_element(self, o_profile_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProfileElement(Reference oProfileElement)
@@ -361,7 +350,6 @@ class Prism(SketchBasedShape):
     def reverse_inner_side(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseInnerSide()
@@ -381,7 +369,6 @@ class Prism(SketchBasedShape):
     def set_direction(self, i_line: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDirection(Reference iLine)

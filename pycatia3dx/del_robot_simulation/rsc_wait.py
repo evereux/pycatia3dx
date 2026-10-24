@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscWait(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscWait(RscInstruction):
     def condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition(CATBSTR iCondition)
@@ -92,7 +89,6 @@ class RscWait(RscInstruction):
     def time_out(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeOut() As double
@@ -142,7 +138,6 @@ class RscWait(RscInstruction):
     def unset_time_out(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnsetTimeOut()
@@ -171,4 +166,4 @@ class RscWait(RscInstruction):
         return self.com_object.UnsetTimeOut()
 
     def __repr__(self):
-        return f'RscWait(name="{ self.name }")'
+        return f'RscWait(name="{self.name}")'

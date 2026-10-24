@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingInstructionSetAction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingInstructionSetAction(AnyObject):
     def activation_condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActivationCondition() As CATBSTR
@@ -60,7 +57,6 @@ class ManufacturingInstructionSetAction(AnyObject):
     def get_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetType() As CATBSTR
@@ -71,4 +67,4 @@ class ManufacturingInstructionSetAction(AnyObject):
         return self.com_object.GetType()
 
     def __repr__(self):
-        return f'ManufacturingInstructionSetAction(name="{ self.name }")'
+        return f'ManufacturingInstructionSetAction(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 class StrParam(Parameter):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +40,6 @@ class StrParam(Parameter):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Value() As CATBSTR
@@ -71,7 +69,6 @@ class StrParam(Parameter):
     def get_enumerate_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
@@ -116,7 +113,6 @@ class StrParam(Parameter):
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetEnumerateValuesSize() As long
@@ -132,7 +128,6 @@ class StrParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
@@ -168,7 +163,6 @@ class StrParam(Parameter):
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SuppressEnumerateValues()

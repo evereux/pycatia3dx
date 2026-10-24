@@ -15,7 +15,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class DynLicenseSettingAtt(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -50,7 +49,6 @@ class DynLicenseSettingAtt(SettingController):
     def get_license(self, i_license: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicense(CATBSTR iLicense) As CATBSTR
@@ -97,7 +95,6 @@ class DynLicenseSettingAtt(SettingController):
     def get_license_info(self, i_license: str, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicenseInfo(CATBSTR iLicense,CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -136,7 +133,6 @@ class DynLicenseSettingAtt(SettingController):
     def get_licenses_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicensesList() As CATSafeArrayVariant
@@ -157,7 +153,6 @@ class DynLicenseSettingAtt(SettingController):
     def get_licenses_list_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLicensesListInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
@@ -197,7 +192,6 @@ class DynLicenseSettingAtt(SettingController):
     def set_license(self, i_license: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicense(CATBSTR iLicense,CATBSTR iValue)
@@ -240,7 +234,6 @@ class DynLicenseSettingAtt(SettingController):
     def set_license_lock(self, i_license: str, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicenseLock(CATBSTR iLicense,boolean iLock)
@@ -267,7 +260,6 @@ class DynLicenseSettingAtt(SettingController):
     def set_licenses_list_lock(self, i_lock: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLicensesListLock(boolean iLock)

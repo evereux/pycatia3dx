@@ -15,10 +15,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimUserDefinedField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimUserDefinedField(AnyObject):
     def direct_specification_redefinition_table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectSpecificationRedefinitionTable() As SimTable (Read
@@ -104,7 +101,6 @@ class SimUserDefinedField(AnyObject):
     def redefinition_resource(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RedefinitionResource() As
@@ -141,7 +137,6 @@ class SimUserDefinedField(AnyObject):
     def user_subroutine_redefinition_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserSubroutineRedefinitionTable() As SimMaterialTable (Read
@@ -166,7 +161,6 @@ class SimUserDefinedField(AnyObject):
     def user_subroutine_redefinition_table_column(self) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserSubroutineRedefinitionTableColumn() As SimTableColumn (Read
@@ -187,10 +181,10 @@ class SimUserDefinedField(AnyObject):
 
         return SimTableColumn(self.com_object.UserSubroutineRedefinitionTableColumn)
 
-    def get_direct_specification_redefinition_table_column(self, i_direct_specification_table_column: int) -> SimTableColumn:
+    def get_direct_specification_redefinition_table_column(self,
+                                                           i_direct_specification_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -215,7 +209,8 @@ class SimUserDefinedField(AnyObject):
         :param int i_direct_specification_table_column:
         :return: SimTableColumn
         """
-        return SimTableColumn(self.com_object.GetDirectSpecificationRedefinitionTableColumn(i_direct_specification_table_column))
+        return SimTableColumn(
+            self.com_object.GetDirectSpecificationRedefinitionTableColumn(i_direct_specification_table_column))
 
     def __repr__(self):
-        return f'SimUserDefinedField(name="{ self.name }")'
+        return f'SimUserDefinedField(name="{self.name}")'

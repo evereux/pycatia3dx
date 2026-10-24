@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Shape(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,4 +40,4 @@ class Shape(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Shape(name="{ self.name }")'
+        return f'Shape(name="{self.name}")'

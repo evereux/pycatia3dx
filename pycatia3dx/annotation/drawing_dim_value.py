@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingDimValue(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingDimValue(AnyObject):
     def fake_dim_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FakeDimType() As CatDimFake
@@ -69,7 +67,6 @@ class DrawingDimValue(AnyObject):
     def scoring_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScoringMode() As CatDimScore
@@ -96,7 +93,6 @@ class DrawingDimValue(AnyObject):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As double (Read Only)
@@ -117,7 +113,6 @@ class DrawingDimValue(AnyObject):
     def value_framed_element(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueFramedElement() As CatDimFramedElement
@@ -145,7 +140,6 @@ class DrawingDimValue(AnyObject):
     def value_framed_group(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueFramedGroup() As CatDimFramedGroup
@@ -173,7 +167,6 @@ class DrawingDimValue(AnyObject):
     def get_bault_text(self, i_index: int) -> tuple[str, str, str, str]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBaultText(long iIndex,CATBSTR oBefore,CATBSTR oAfter,CATBSTR
@@ -206,7 +199,6 @@ class DrawingDimValue(AnyObject):
     def get_display_unit(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDisplayUnit(long iIndex) As long
@@ -231,7 +223,6 @@ class DrawingDimValue(AnyObject):
     def get_fake_dim_value(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFakeDimValue(long iIndex) As CATBSTR
@@ -256,7 +247,6 @@ class DrawingDimValue(AnyObject):
     def get_format_display_factor(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatDisplayFactor(long iIndex) As long
@@ -282,7 +272,6 @@ class DrawingDimValue(AnyObject):
     def get_format_name(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatName(long iIndex) As CATBSTR
@@ -307,7 +296,6 @@ class DrawingDimValue(AnyObject):
     def get_format_precision(self, index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatPrecision(long Index) As double
@@ -333,7 +321,6 @@ class DrawingDimValue(AnyObject):
     def get_format_type(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatType(long iIndex) As long
@@ -358,7 +345,6 @@ class DrawingDimValue(AnyObject):
     def get_format_unit(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormatUnit(long iIndex) As long
@@ -383,7 +369,6 @@ class DrawingDimValue(AnyObject):
     def get_ps_text(self, i_index: int) -> tuple[str, str]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPSText(long iIndex,CATBSTR oPrefix,CATBSTR oSuffix)
@@ -410,7 +395,6 @@ class DrawingDimValue(AnyObject):
     def get_scored_element(self, i_index: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetScoredElement(long iIndex) As boolean
@@ -437,7 +421,6 @@ class DrawingDimValue(AnyObject):
     def set_bault_text(self, i_index: int, i_before: str, i_after: str, i_upper: str, i_lower: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaultText(long iIndex,CATBSTR iBefore,CATBSTR iAfter,CATBSTR
@@ -474,7 +457,6 @@ class DrawingDimValue(AnyObject):
     def set_fake_dim_value(self, i_index: int, i_fake_dim_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFakeDimValue(long iIndex,CATBSTR iFakeDimValue)
@@ -500,7 +482,6 @@ class DrawingDimValue(AnyObject):
     def set_format_display_factor(self, i_index: int, i_frm_dsp_fact: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatDisplayFactor(long iIndex,long iFrmDspFact)
@@ -528,7 +509,6 @@ class DrawingDimValue(AnyObject):
     def set_format_name(self, i_index: int, i_frm_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatName(long iIndex,CATBSTR iFrmName)
@@ -554,7 +534,6 @@ class DrawingDimValue(AnyObject):
     def set_format_precision(self, i_index: int, i_frm_precision: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatPrecision(long iIndex,double iFrmPrecision)
@@ -581,7 +560,6 @@ class DrawingDimValue(AnyObject):
     def set_format_type(self, i_index: int, i_frm_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatType(long iIndex,long iFrmType)
@@ -607,7 +585,6 @@ class DrawingDimValue(AnyObject):
     def set_format_unit(self, i_index: int, i_frm_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormatUnit(long iIndex,long iFrmUnit)
@@ -633,7 +610,6 @@ class DrawingDimValue(AnyObject):
     def set_ps_text(self, i_index: int, i_prefix: str, i_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPSText(long iIndex,CATBSTR iPrefix,CATBSTR iSuffix)
@@ -662,7 +638,6 @@ class DrawingDimValue(AnyObject):
     def set_scored_element(self, i_index: int, i_scored_element: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetScoredElement(long iIndex,boolean iScoredElement)

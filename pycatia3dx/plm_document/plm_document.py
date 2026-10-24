@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PLMDocument(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class PLMDocument(AnyObject):
     def file_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FileNames() As CATSafeArrayVariant (Read Only)
@@ -57,7 +55,6 @@ class PLMDocument(AnyObject):
     def parents(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parents() As CATSafeArrayVariant (Read Only)
@@ -76,7 +73,6 @@ class PLMDocument(AnyObject):
     def check_in_file(self, i_old_file_name: str, i_new_file_path: str, i_file_comment: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CheckInFile(CATBSTR iOldFileName,CATBSTR iNewFilePath,CATBSTR
@@ -103,7 +99,6 @@ class PLMDocument(AnyObject):
     def check_out_file(self, i_file_name: str, i_check_out_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CheckOutFile(CATBSTR iFileName,CATBSTR iCheckOutPath)
@@ -126,7 +121,6 @@ class PLMDocument(AnyObject):
     def create_file(self, i_file_path: str, i_file_comment: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFile(CATBSTR iFilePath,CATBSTR iFileComment)
@@ -148,7 +142,6 @@ class PLMDocument(AnyObject):
     def delete_file(self, i_file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteFile(CATBSTR iFileName)
@@ -167,7 +160,6 @@ class PLMDocument(AnyObject):
     def download_file(self, i_file_name: str, i_download_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DownloadFile(CATBSTR iFileName,CATBSTR iDownloadPath)

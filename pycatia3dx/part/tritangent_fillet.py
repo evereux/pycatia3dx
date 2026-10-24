@@ -13,10 +13,8 @@ from pycatia3dx.part.fillet import Fillet
 
 
 class TritangentFillet(Fillet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class TritangentFillet(Fillet):
     def face_to_remove(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FaceToRemove() As Reference
@@ -80,7 +77,6 @@ class TritangentFillet(Fillet):
     def first_face(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstFace() As Reference
@@ -114,7 +110,6 @@ class TritangentFillet(Fillet):
     def second_face(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondFace() As Reference
@@ -145,4 +140,4 @@ class TritangentFillet(Fillet):
         self.com_object.SecondFace = value
 
     def __repr__(self):
-        return f'TritangentFillet(name="{ self.name }")'
+        return f'TritangentFillet(name="{self.name}")'

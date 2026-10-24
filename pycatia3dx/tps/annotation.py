@@ -40,7 +40,6 @@ from pycatia3dx.tps.tps_view import TPSView
 class Annotation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +65,6 @@ class Annotation(AnyObject):
     def super_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SuperType() As CATBSTR (Read Only)
@@ -88,7 +86,6 @@ class Annotation(AnyObject):
     def tps_status(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPSStatus() As CATBSTR (Read Only)
@@ -108,7 +105,6 @@ class Annotation(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -128,7 +124,6 @@ class Annotation(AnyObject):
     def z(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Z(double iZ) (Write Only)
@@ -156,7 +151,6 @@ class Annotation(AnyObject):
     def add_leader(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddLeader()
@@ -169,7 +163,6 @@ class Annotation(AnyObject):
     def apply_referenced_geom_color(self, i_releated_r: int, i_releated_g: int, i_releated_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyReferencedGeomColor(long iReleatedR,long iReleatedG,long
@@ -186,7 +179,6 @@ class Annotation(AnyObject):
     def apply_referenced_init_color(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyReferencedInitColor()
@@ -199,7 +191,6 @@ class Annotation(AnyObject):
     def associated_ref_frame(self) -> AssociatedRefFrame:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AssociatedRefFrame() As AssociatedRefFrame
@@ -212,7 +203,6 @@ class Annotation(AnyObject):
     def composite_tolerance(self) -> CompositeTolerance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CompositeTolerance() As CompositeTolerance
@@ -225,7 +215,6 @@ class Annotation(AnyObject):
     def controled_radius(self) -> ControlledRadius:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ControledRadius() As ControledRadius
@@ -238,7 +227,6 @@ class Annotation(AnyObject):
     def datum_simple(self) -> DatumSimple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DatumSimple() As DatumSimple
@@ -251,7 +239,6 @@ class Annotation(AnyObject):
     def datum_target(self) -> DatumTarget:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DatumTarget() As DatumTarget
@@ -264,7 +251,6 @@ class Annotation(AnyObject):
     def default_annotation(self) -> DefaultAnnotation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefaultAnnotation() As DefaultAnnotation
@@ -277,7 +263,6 @@ class Annotation(AnyObject):
     def dimension3_d(self) -> Dimension3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Dimension3D() As Dimension3D
@@ -295,7 +280,6 @@ class Annotation(AnyObject):
     def dimension_limit(self) -> DimensionLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DimensionLimit() As DimensionLimit
@@ -308,7 +292,6 @@ class Annotation(AnyObject):
     def dimension_pattern(self) -> DimensionPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DimensionPattern() As DimensionPattern
@@ -321,7 +304,6 @@ class Annotation(AnyObject):
     def envelop_condition(self) -> EnvelopCondition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func EnvelopCondition() As EnvelopCondition
@@ -334,7 +316,6 @@ class Annotation(AnyObject):
     def flag_note(self) -> FlagNote:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FlagNote() As FlagNote
@@ -352,7 +333,6 @@ class Annotation(AnyObject):
     def free_state(self) -> FreeState:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FreeState() As FreeState
@@ -365,7 +345,6 @@ class Annotation(AnyObject):
     def get_geometrical_component_name(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGeometricalComponentName(short iIndex) As CATBSTR
@@ -388,7 +367,6 @@ class Annotation(AnyObject):
     def get_nbr_of_geometrical_component(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrOfGeometricalComponent() As short
@@ -415,7 +393,6 @@ class Annotation(AnyObject):
     def get_surfaces(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
@@ -444,7 +421,6 @@ class Annotation(AnyObject):
     def get_surfaces_count(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSurfacesCount() As double
@@ -457,7 +433,6 @@ class Annotation(AnyObject):
     def has_a_controled_radius(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAControledRadius() As boolean
@@ -470,7 +445,6 @@ class Annotation(AnyObject):
     def has_a_free_state(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAFreeState() As boolean
@@ -483,7 +457,6 @@ class Annotation(AnyObject):
     def has_a_material_condition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAMaterialCondition() As boolean
@@ -496,7 +469,6 @@ class Annotation(AnyObject):
     def has_a_numerical_display_format(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasANumericalDisplayFormat() As boolean
@@ -509,7 +481,6 @@ class Annotation(AnyObject):
     def has_a_particular_tol_elem(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAParticularTolElem() As boolean
@@ -522,7 +493,6 @@ class Annotation(AnyObject):
     def has_a_tolerance_per_unit_basis_restrictive_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
@@ -535,7 +505,6 @@ class Annotation(AnyObject):
     def has_an_envelop_condition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAnEnvelopCondition() As boolean
@@ -548,7 +517,6 @@ class Annotation(AnyObject):
     def has_dimension_limit(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasDimensionLimit() As boolean
@@ -561,7 +529,6 @@ class Annotation(AnyObject):
     def is_a_composite_tolerance(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsACompositeTolerance() As boolean
@@ -574,7 +541,6 @@ class Annotation(AnyObject):
     def is_a_default_annotation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsADefaultAnnotation() As boolean
@@ -587,7 +553,6 @@ class Annotation(AnyObject):
     def is_a_dimension_pattern(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsADimensionPattern() As boolean
@@ -600,7 +565,6 @@ class Annotation(AnyObject):
     def is_a_projected_tolerance_zone(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAProjectedToleranceZone() As boolean
@@ -613,7 +577,6 @@ class Annotation(AnyObject):
     def is_a_shifted_profile_tolerance(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAShiftedProfileTolerance() As boolean
@@ -626,7 +589,6 @@ class Annotation(AnyObject):
     def is_a_tangent_plane(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsATangentPlane() As boolean
@@ -639,7 +601,6 @@ class Annotation(AnyObject):
     def is_a_tolerance_unit_basis_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAToleranceUnitBasisValue() As boolean
@@ -652,7 +613,6 @@ class Annotation(AnyObject):
     def is_a_tolerance_zone(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAToleranceZone() As boolean
@@ -665,7 +625,6 @@ class Annotation(AnyObject):
     def is_an_associated_ref_frame(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAnAssociatedRefFrame() As boolean
@@ -678,7 +637,6 @@ class Annotation(AnyObject):
     def material_condition(self) -> MaterialCondition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MaterialCondition() As MaterialCondition
@@ -691,7 +649,6 @@ class Annotation(AnyObject):
     def modify_visu(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyVisu()
@@ -704,7 +661,6 @@ class Annotation(AnyObject):
     def noa(self) -> Noa:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Noa() As Noa
@@ -717,7 +673,6 @@ class Annotation(AnyObject):
     def numerical_display_format(self) -> NumericalDisplayFormat:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NumericalDisplayFormat() As NumericalDisplayFormat
@@ -730,7 +685,6 @@ class Annotation(AnyObject):
     def particular_tol_elem(self) -> ParticularTolElem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ParticularTolElem() As ParticularTolElem
@@ -743,7 +697,6 @@ class Annotation(AnyObject):
     def projected_tolerance_zone(self) -> ProjectedToleranceZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ProjectedToleranceZone() As ProjectedToleranceZone
@@ -756,7 +709,6 @@ class Annotation(AnyObject):
     def reference_frame(self) -> ReferenceFrame:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ReferenceFrame() As ReferenceFrame
@@ -769,7 +721,6 @@ class Annotation(AnyObject):
     def roughness(self) -> Roughness:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Roughness() As Roughness
@@ -782,7 +733,6 @@ class Annotation(AnyObject):
     def set_geometrical_component_name(self, i_index: int, i_new_name: str, i_check_name_unicity_option: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
@@ -825,7 +775,6 @@ class Annotation(AnyObject):
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXY(double iX,double iY)
@@ -848,7 +797,6 @@ class Annotation(AnyObject):
     def shifted_profile_tolerance(self) -> ShiftedProfileTolerance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ShiftedProfileTolerance() As ShiftedProfileTolerance
@@ -861,7 +809,6 @@ class Annotation(AnyObject):
     def tangent_plane(self) -> TangentPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TangentPlane() As TangentPlane
@@ -874,7 +821,6 @@ class Annotation(AnyObject):
     def text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Text() As Text
@@ -892,7 +838,6 @@ class Annotation(AnyObject):
     def tolerance_per_unit_basis_restrictive_value(self) -> TolerancePerUnitBasisRestrictiveValue:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TolerancePerUnitBasisRestrictiveValue() As
@@ -906,7 +851,6 @@ class Annotation(AnyObject):
     def tolerance_unit_basis_value(self) -> ToleranceUnitBasisValue:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
@@ -919,7 +863,6 @@ class Annotation(AnyObject):
     def tolerance_zone(self) -> ToleranceZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ToleranceZone() As ToleranceZone
@@ -932,7 +875,6 @@ class Annotation(AnyObject):
     def transfert_to_view(self, i_view: TPSView) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub TransfertToView(TPSView iView)

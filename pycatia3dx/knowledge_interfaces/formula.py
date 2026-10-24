@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.relation import Relation
 
 
 class Formula(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -66,4 +64,4 @@ class Formula(Relation):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Formula(name="{ self.name }")'
+        return f'Formula(name="{self.name}")'

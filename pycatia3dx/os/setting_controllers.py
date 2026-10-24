@@ -20,7 +20,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class SettingControllers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class SettingControllers(Collection):
     def item(self, i_index: str) -> SettingController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(CATBSTR iIndex) As SettingController

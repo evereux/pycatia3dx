@@ -14,10 +14,8 @@ from pycatia3dx.machining_use.manufacturing_output import ManufacturingOutput
 
 
 class ManufacturingGeneratorData(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToGenerate(CATBaseUnknown iObject)
@@ -60,7 +57,6 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_from_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToGenerateFromBuffer(CATBaseUnknown iObject)
@@ -79,7 +75,6 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_with_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToGenerateWithBuffer(CATBaseUnknown iObject)
@@ -98,7 +93,6 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_generate_with_out_buffer(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToGenerateWithOutBuffer(CATBaseUnknown iObject)
@@ -117,7 +111,6 @@ class ManufacturingGeneratorData(AnyObject):
     def add_object_to_modal_values(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToModalValues(CATBaseUnknown iObject)
@@ -136,7 +129,6 @@ class ManufacturingGeneratorData(AnyObject):
     def get_ft06_stream(self, o_stream: ManufacturingOutput) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFT06Stream(ManufacturingOutput oStream)
@@ -155,7 +147,6 @@ class ManufacturingGeneratorData(AnyObject):
     def get_last_object_to_generate(self, o_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLastObjectToGenerate(CATBaseUnknown oObject)
@@ -174,7 +165,6 @@ class ManufacturingGeneratorData(AnyObject):
     def get_output_stream(self, o_stream: ManufacturingOutput) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOutputStream(ManufacturingOutput oStream)
@@ -193,7 +183,6 @@ class ManufacturingGeneratorData(AnyObject):
     def keep_stream_open(self, i_keep_open: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub KeepStreamOpen(boolean iKeepOpen)
@@ -221,7 +210,6 @@ class ManufacturingGeneratorData(AnyObject):
     def reset_all_modal_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetAllModalValues()
@@ -234,7 +222,6 @@ class ManufacturingGeneratorData(AnyObject):
     def set_last_object_to_generate(self, i_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLastObjectToGenerate(CATBaseUnknown iObject)
@@ -251,4 +238,4 @@ class ManufacturingGeneratorData(AnyObject):
         return self.com_object.SetLastObjectToGenerate(i_object.com_object)
 
     def __repr__(self):
-        return f'ManufacturingGeneratorData(name="{ self.name }")'
+        return f'ManufacturingGeneratorData(name="{self.name}")'

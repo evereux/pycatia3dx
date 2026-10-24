@@ -12,10 +12,8 @@ from pycatia3dx.interfaces.page_setup import PageSetup
 
 
 class DrawingPageSetup(PageSetup):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class DrawingPageSetup(PageSetup):
     def choose_best_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ChooseBestOrientation() As boolean
@@ -76,7 +73,6 @@ class DrawingPageSetup(PageSetup):
     def fit_to_printer_format(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FitToPrinterFormat() As boolean
@@ -104,7 +100,6 @@ class DrawingPageSetup(PageSetup):
     def fit_to_sheet_format(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FitToSheetFormat() As boolean
@@ -129,4 +124,4 @@ class DrawingPageSetup(PageSetup):
         self.com_object.FitToSheetFormat = value
 
     def __repr__(self):
-        return f'DrawingPageSetup(name="{ self.name }")'
+        return f'DrawingPageSetup(name="{self.name}")'

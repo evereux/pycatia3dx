@@ -15,10 +15,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Shell(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class Shell(DressUpShape):
     def external_thickness(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExternalThickness() As Length (Read Only)
@@ -66,7 +63,6 @@ class Shell(DressUpShape):
     def faces_to_remove(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FacesToRemove() As References (Read Only)
@@ -88,7 +84,6 @@ class Shell(DressUpShape):
     def internal_thickness(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InternalThickness() As Length (Read Only)
@@ -108,7 +103,6 @@ class Shell(DressUpShape):
     def add_face_to_remove(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToRemove(Reference iFaceToRemove)
@@ -135,7 +129,6 @@ class Shell(DressUpShape):
     def add_face_with_different_thickness(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceWithDifferentThickness(Reference iFaceToThicken)
@@ -163,7 +156,6 @@ class Shell(DressUpShape):
     def remove_face_with_different_thickness(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveFaceWithDifferentThickness(Reference iFaceToRemove)
@@ -192,7 +184,6 @@ class Shell(DressUpShape):
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVolumeSupport(Reference iVolumeSupport)
@@ -206,7 +197,6 @@ class Shell(DressUpShape):
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
@@ -231,4 +221,4 @@ class Shell(DressUpShape):
         return self.com_object.WithdrawFaceToRemove(i_face_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'Shell(name="{ self.name }")'
+        return f'Shell(name="{self.name}")'

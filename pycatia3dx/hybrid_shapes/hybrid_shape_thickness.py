@@ -13,10 +13,8 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeThickness(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -46,7 +44,6 @@ class HybridShapeThickness(HybridShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -78,7 +75,6 @@ class HybridShapeThickness(HybridShape):
     def thickness1(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Thickness1() As double
@@ -107,7 +103,6 @@ class HybridShapeThickness(HybridShape):
     def thickness1_value(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Thickness1Value() As Length (Read Only)
@@ -129,7 +124,6 @@ class HybridShapeThickness(HybridShape):
     def thickness2(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Thickness2() As double
@@ -158,7 +152,6 @@ class HybridShapeThickness(HybridShape):
     def thickness2_value(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Thickness2Value() As Length (Read Only)
@@ -177,4 +170,4 @@ class HybridShapeThickness(HybridShape):
         return Length(self.com_object.Thickness2Value)
 
     def __repr__(self):
-        return f'HybridShapeThickness(name="{ self.name }")'
+        return f'HybridShapeThickness(name="{self.name}")'

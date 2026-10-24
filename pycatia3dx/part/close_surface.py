@@ -12,10 +12,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class CloseSurface(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,4 +36,4 @@ class CloseSurface(SurfaceBasedShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'CloseSurface(name="{ self.name }")'
+        return f'CloseSurface(name="{self.name}")'

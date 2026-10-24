@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeConic(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeConic(HybridShape):
     def conic_parameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ConicParameter() As double
@@ -83,7 +80,6 @@ class HybridShapeConic(HybridShape):
     def conic_user_tol(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ConicUserTol() As Length (Read Only)
@@ -109,7 +105,6 @@ class HybridShapeConic(HybridShape):
     def end_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndPoint() As Reference
@@ -140,7 +135,6 @@ class HybridShapeConic(HybridShape):
     def end_tangent(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndTangent() As HybridShapeDirection
@@ -171,7 +165,6 @@ class HybridShapeConic(HybridShape):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartPoint() As Reference
@@ -203,7 +196,6 @@ class HybridShapeConic(HybridShape):
     def start_tangent(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartTangent() As HybridShapeDirection
@@ -235,7 +227,6 @@ class HybridShapeConic(HybridShape):
     def support_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SupportPlane() As Reference
@@ -267,7 +258,6 @@ class HybridShapeConic(HybridShape):
     def tangent_int_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentIntPoint() As Reference
@@ -297,7 +287,6 @@ class HybridShapeConic(HybridShape):
     def get_end_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetEndTangentDirectionFlag(long oOrientation)
@@ -330,7 +319,6 @@ class HybridShapeConic(HybridShape):
     def get_intermed_tangent(self, i_index_point: int) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetIntermedTangent(long iIndexPoint) As
@@ -368,7 +356,6 @@ class HybridShapeConic(HybridShape):
     def get_intermediate_point(self, i_index_point: int, o_end_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetIntermediatePoint(long iIndexPoint,Reference oEndPoint)
@@ -404,7 +391,6 @@ class HybridShapeConic(HybridShape):
     def get_intermediate_tangent_direction_flag(self, i_index_point: int, o_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetIntermediateTangentDirectionFlag(long iIndexPoint,long
@@ -446,7 +432,6 @@ class HybridShapeConic(HybridShape):
     def get_start_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetStartTangentDirectionFlag(long oOrientation)
@@ -480,7 +465,6 @@ class HybridShapeConic(HybridShape):
     def set_end_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetEndTangentDirectionFlag(long iOrientation)
@@ -515,7 +499,6 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_point(self, i_index_point: int, i_end_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetIntermediatePoint(long iIndexPoint,Reference iEndPoint)
@@ -554,7 +537,6 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_tangent(self, i_index_point: int, i_tgt_dir: HybridShapeDirection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetIntermediateTangent(long iIndexPoint,HybridShapeDirection
@@ -594,7 +576,6 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_tangent_direction_flag(self, i_index_point: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetIntermediateTangentDirectionFlag(long iIndexPoint,long
@@ -635,10 +616,10 @@ class HybridShapeConic(HybridShape):
         """
         return self.com_object.SetIntermediateTangentDirectionFlag(i_index_point, i_orientation)
 
-    def set_start_and_end_tangents_plus_conic_parameter(self, i_start_tgt: HybridShapeDirection, i_end_tgt: HybridShapeDirection, i_conic_param: float) -> None:
+    def set_start_and_end_tangents_plus_conic_parameter(self, i_start_tgt: HybridShapeDirection,
+                                                        i_end_tgt: HybridShapeDirection, i_conic_param: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartAndEndTangentsPlusConicParameter(HybridShapeDirection
@@ -672,12 +653,13 @@ class HybridShapeConic(HybridShape):
         :param float i_conic_param:
         :return: None
         """
-        return self.com_object.SetStartAndEndTangentsPlusConicParameter(i_start_tgt.com_object, i_end_tgt.com_object, i_conic_param)
+        return self.com_object.SetStartAndEndTangentsPlusConicParameter(i_start_tgt.com_object, i_end_tgt.com_object,
+                                                                        i_conic_param)
 
-    def set_start_and_end_tangents_plus_passing_point(self, i_start_tgt: HybridShapeDirection, i_end_tgt: HybridShapeDirection, i_passing_pt: Reference) -> None:
+    def set_start_and_end_tangents_plus_passing_point(self, i_start_tgt: HybridShapeDirection,
+                                                      i_end_tgt: HybridShapeDirection, i_passing_pt: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartAndEndTangentsPlusPassingPoint(HybridShapeDirection
@@ -715,12 +697,12 @@ class HybridShapeConic(HybridShape):
         :param Reference i_passing_pt:
         :return: None
         """
-        return self.com_object.SetStartAndEndTangentsPlusPassingPoint(i_start_tgt.com_object, i_end_tgt.com_object, i_passing_pt.com_object)
+        return self.com_object.SetStartAndEndTangentsPlusPassingPoint(i_start_tgt.com_object, i_end_tgt.com_object,
+                                                                      i_passing_pt.com_object)
 
     def set_start_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartTangentDirectionFlag(long iOrientation)
@@ -756,7 +738,6 @@ class HybridShapeConic(HybridShape):
     def set_tangent_intersect_point_plus_conic_parm(self, i_tgt_int: Reference, i_conic_param: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangentIntersectPointPlusConicParm(Reference iTgtInt,double
@@ -795,7 +776,6 @@ class HybridShapeConic(HybridShape):
     def set_tangent_intersect_point_plus_passing_point(self, i_tgt_int: Reference, i_passing_pt: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangentIntersectPointPlusPassingPoint(Reference iTgtInt,Reference
@@ -835,10 +815,10 @@ class HybridShapeConic(HybridShape):
         """
         return self.com_object.SetTangentIntersectPointPlusPassingPoint(i_tgt_int.com_object, i_passing_pt.com_object)
 
-    def set_three_intermediate_passing_points(self, i_pass_pt1: Reference, i_pass_pt2: Reference, i_pass_pt3: Reference) -> None:
+    def set_three_intermediate_passing_points(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
+                                              i_pass_pt3: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetThreeIntermediatePassingPoints(Reference iPassPt1,Reference
@@ -876,12 +856,14 @@ class HybridShapeConic(HybridShape):
         :param Reference i_pass_pt3:
         :return: None
         """
-        return self.com_object.SetThreeIntermediatePassingPoints(i_pass_pt1.com_object, i_pass_pt2.com_object, i_pass_pt3.com_object)
+        return self.com_object.SetThreeIntermediatePassingPoints(i_pass_pt1.com_object, i_pass_pt2.com_object,
+                                                                 i_pass_pt3.com_object)
 
-    def set_two_intermediate_passing_points_plus_one_tangent(self, i_pass_pt1: Reference, i_pass_pt2: Reference, i_tgt_dir: HybridShapeDirection, i_index_point: int) -> None:
+    def set_two_intermediate_passing_points_plus_one_tangent(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
+                                                             i_tgt_dir: HybridShapeDirection,
+                                                             i_index_point: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTwoIntermediatePassingPointsPlusOneTangent(Reference iPassPt1,Reference
@@ -927,12 +909,13 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :return: None
         """
-        return self.com_object.SetTwoIntermediatePassingPointsPlusOneTangent(i_pass_pt1.com_object, i_pass_pt2.com_object, i_tgt_dir.com_object, i_index_point)
+        return self.com_object.SetTwoIntermediatePassingPointsPlusOneTangent(i_pass_pt1.com_object,
+                                                                             i_pass_pt2.com_object,
+                                                                             i_tgt_dir.com_object, i_index_point)
 
     def switch_end_tangent_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SwitchEndTangentDirection()
@@ -955,7 +938,6 @@ class HybridShapeConic(HybridShape):
     def switch_intermediate_tangent_direction(self, i_index_point: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SwitchIntermediateTangentDirection(long iIndexPoint)
@@ -989,7 +971,6 @@ class HybridShapeConic(HybridShape):
     def switch_start_tangent_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SwitchStartTangentDirection()
@@ -1010,4 +991,4 @@ class HybridShapeConic(HybridShape):
         return self.com_object.SwitchStartTangentDirection()
 
     def __repr__(self):
-        return f'HybridShapeConic(name="{ self.name }")'
+        return f'HybridShapeConic(name="{self.name}")'

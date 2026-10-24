@@ -14,7 +14,6 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 class MaterialDomain(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class MaterialDomain(PLMEntity):
     def material_domain_content(self) -> MaterialDomainContent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialDomainContent() As MaterialDomainContent (Read

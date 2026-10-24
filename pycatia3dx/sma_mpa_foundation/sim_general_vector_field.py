@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_space_time_field import SimSpaceTimeField
 
 
 class SimGeneralVectorField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimGeneralVectorField(AnyObject):
     def space_time_field_data(self) -> SimSpaceTimeField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
@@ -54,7 +51,6 @@ class SimGeneralVectorField(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitude() As double
@@ -77,7 +73,6 @@ class SimGeneralVectorField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As SimGeneralVectorFieldVariationType
@@ -99,7 +94,6 @@ class SimGeneralVectorField(AnyObject):
     def get_unit_vector_components(self, o_x_comp: float, o_y_comp: float, o_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetUnitVectorComponents(double oXComp,double oYComp,double
@@ -127,7 +121,6 @@ class SimGeneralVectorField(AnyObject):
     def set_unit_vector_components(self, i_x_comp: float, i_y_comp: float, i_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUnitVectorComponents(double iXComp,double iYComp,double
@@ -153,4 +146,4 @@ class SimGeneralVectorField(AnyObject):
         return self.com_object.SetUnitVectorComponents(i_x_comp, i_y_comp, i_z_comp)
 
     def __repr__(self):
-        return f'SimGeneralVectorField(name="{ self.name }")'
+        return f'SimGeneralVectorField(name="{self.name}")'

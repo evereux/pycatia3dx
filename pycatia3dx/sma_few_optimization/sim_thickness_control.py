@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimThicknessControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimThicknessControl(AnyObject):
     def get_maximum_thickness(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumThickness(double oVal)
@@ -95,7 +92,6 @@ class SimThicknessControl(AnyObject):
     def get_minimum_thickness(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinimumThickness(double oVal)
@@ -114,7 +110,6 @@ class SimThicknessControl(AnyObject):
     def set_maximum_thickness(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumThickness(double iVal)
@@ -133,7 +128,6 @@ class SimThicknessControl(AnyObject):
     def set_minimum_thickness(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinimumThickness(double iVal)
@@ -150,4 +144,4 @@ class SimThicknessControl(AnyObject):
         return self.com_object.SetMinimumThickness(i_val)
 
     def __repr__(self):
-        return f'SimThicknessControl(name="{ self.name }")'
+        return f'SimThicknessControl(name="{self.name}")'

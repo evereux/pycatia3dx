@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_cartesian_safety_zone import OLPCartesianSaf
 class OLPCartesianSafetyZones(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class OLPCartesianSafetyZones(Collection):
     def create(self) -> OLPCartesianSafetyZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Create() As OlpCartesianSafetyZone
@@ -59,7 +57,6 @@ class OLPCartesianSafetyZones(Collection):
     def delete(self, i_zone: OLPCartesianSafetyZone) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Delete(OlpCartesianSafetyZone iZone)
@@ -78,7 +75,6 @@ class OLPCartesianSafetyZones(Collection):
     def item(self, i_index: int) -> OLPCartesianSafetyZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpCartesianSafetyZone

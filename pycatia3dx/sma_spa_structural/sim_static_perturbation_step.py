@@ -12,10 +12,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimStaticPerturbationStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimStaticPerturbationStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimStaticPerturbationStep(SimStep):
     def linear_load_cases(self) -> SimLinearLoadCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinearLoadCases() As SimLinearLoadCases (Read Only)
@@ -115,7 +111,6 @@ class SimStaticPerturbationStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -138,7 +133,6 @@ class SimStaticPerturbationStep(SimStep):
     def solution_technique(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolutionTechnique() As
@@ -159,4 +153,4 @@ class SimStaticPerturbationStep(SimStep):
         self.com_object.SolutionTechnique = value
 
     def __repr__(self):
-        return f'SimStaticPerturbationStep(name="{ self.name }")'
+        return f'SimStaticPerturbationStep(name="{self.name}")'

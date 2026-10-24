@@ -17,7 +17,6 @@ from pycatia3dx.structure.str_objects import StrObjects
 class StrUserConnection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class StrUserConnection(AnyObject):
     def intersecting_element(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntersectingElement() As AnyObject
@@ -78,7 +76,6 @@ class StrUserConnection(AnyObject):
     def reference_element(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceElement() As AnyObject
@@ -112,7 +109,6 @@ class StrUserConnection(AnyObject):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -136,7 +132,6 @@ class StrUserConnection(AnyObject):
     def str_detail_feature(self) -> StrDetailFeature:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrDetailFeature() As StrDetailFeature (Read Only)
@@ -159,7 +154,6 @@ class StrUserConnection(AnyObject):
     def add_connected_object(self, i_connected_obj: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddConnectedObject(Reference iConnectedObj)
@@ -178,7 +172,6 @@ class StrUserConnection(AnyObject):
     def get_connected_objects(self) -> StrObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConnectedObjects() As StrObjects
@@ -191,7 +184,6 @@ class StrUserConnection(AnyObject):
     def remove_connected_object(self, i_connected_obj: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveConnectedObject(Reference iConnectedObj)

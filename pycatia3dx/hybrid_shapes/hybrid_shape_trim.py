@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeTrim(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeTrim(HybridShape):
     def automatic_extrapolation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AutomaticExtrapolationMode() As boolean
@@ -79,7 +76,6 @@ class HybridShapeTrim(HybridShape):
     def connex(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Connex() As boolean
@@ -105,7 +101,6 @@ class HybridShapeTrim(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElem() As Reference
@@ -140,7 +135,6 @@ class HybridShapeTrim(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstOrientation() As long
@@ -194,7 +188,6 @@ class HybridShapeTrim(HybridShape):
     def intersection_computation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property IntersectionComputation() As boolean
@@ -220,7 +213,6 @@ class HybridShapeTrim(HybridShape):
     def keep_all_pieces(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property KeepAllPieces() As boolean
@@ -246,7 +238,6 @@ class HybridShapeTrim(HybridShape):
     def manifold(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Manifold() As boolean
@@ -272,7 +263,6 @@ class HybridShapeTrim(HybridShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Mode() As long
@@ -298,7 +288,6 @@ class HybridShapeTrim(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElem() As Reference
@@ -333,7 +322,6 @@ class HybridShapeTrim(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondOrientation() As long
@@ -387,7 +375,6 @@ class HybridShapeTrim(HybridShape):
     def simplify(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Simplify() As boolean
@@ -422,7 +409,6 @@ class HybridShapeTrim(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -456,7 +442,6 @@ class HybridShapeTrim(HybridShape):
     def add_element_to_keep(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementToKeep(Reference iElement)
@@ -476,7 +461,6 @@ class HybridShapeTrim(HybridShape):
     def add_element_to_remove(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementToRemove(Reference iElement)
@@ -496,7 +480,6 @@ class HybridShapeTrim(HybridShape):
     def add_piece_cutter(self, i_rank: int, i_cutter_elem: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddPieceCutter(long iRank,long iCutterElem,long
@@ -523,7 +506,6 @@ class HybridShapeTrim(HybridShape):
     def get_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElem(long iRank) As Reference
@@ -544,7 +526,6 @@ class HybridShapeTrim(HybridShape):
     def get_kept_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetKeptElem(long iRank) As Reference
@@ -565,7 +546,6 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elem(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbElem() As long
@@ -584,7 +564,6 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elements_to_keep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbElementsToKeep() As long
@@ -602,7 +581,6 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elements_to_remove(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbElementsToRemove() As long
@@ -620,7 +598,6 @@ class HybridShapeTrim(HybridShape):
     def get_next_orientation(self, i_rank: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNextOrientation(long iRank) As long
@@ -643,7 +620,6 @@ class HybridShapeTrim(HybridShape):
     def get_piece_cutter(self, i_rank: int, i_cutter_index: int, o_cutter_elem_idx: int, o_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPieceCutter(long iRank,long iCutterIndex,long oCutterElemIdx,long
@@ -673,7 +649,6 @@ class HybridShapeTrim(HybridShape):
     def get_piece_discrimination_index(self, i_rank: int, o_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPieceDiscriminationIndex(long iRank,long oIndex)
@@ -697,7 +672,6 @@ class HybridShapeTrim(HybridShape):
     def get_piece_nb_cutters(self, i_rank: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPieceNbCutters(long iRank) As long
@@ -718,7 +692,6 @@ class HybridShapeTrim(HybridShape):
     def get_portion_to_keep(self, i_rank: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPortionToKeep(long iRank) As long
@@ -740,7 +713,6 @@ class HybridShapeTrim(HybridShape):
     def get_previous_orientation(self, i_rank: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPreviousOrientation(long iRank) As long
@@ -763,7 +735,6 @@ class HybridShapeTrim(HybridShape):
     def get_removed_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetRemovedElem(long iRank) As Reference
@@ -784,7 +755,6 @@ class HybridShapeTrim(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertFirstOrientation()
@@ -806,7 +776,6 @@ class HybridShapeTrim(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertSecondOrientation()
@@ -826,7 +795,6 @@ class HybridShapeTrim(HybridShape):
     def remove_element_to_keep(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToKeep(long iRank)
@@ -845,7 +813,6 @@ class HybridShapeTrim(HybridShape):
     def remove_element_to_remove(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToRemove(long iRank)
@@ -864,7 +831,6 @@ class HybridShapeTrim(HybridShape):
     def remove_piece_cutter(self, i_rank: int, i_cutter_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemovePieceCutter(long iRank,long iCutterIndex)
@@ -887,7 +853,6 @@ class HybridShapeTrim(HybridShape):
     def set_elem(self, i_rank: int, i_elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetElem(long iRank,Reference iElem)
@@ -910,7 +875,6 @@ class HybridShapeTrim(HybridShape):
     def set_next_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetNextOrientation(long iRank,long iOrientation)
@@ -934,7 +898,6 @@ class HybridShapeTrim(HybridShape):
     def set_piece_discrimination_index(self, i_rank: int, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPieceDiscriminationIndex(long iRank,long iIndex)
@@ -958,7 +921,6 @@ class HybridShapeTrim(HybridShape):
     def set_portion_to_keep(self, i_rank: int, i_portion_number: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPortionToKeep(long iRank,long iPortionNumber)
@@ -981,7 +943,6 @@ class HybridShapeTrim(HybridShape):
     def set_previous_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPreviousOrientation(long iRank,long iOrientation)
@@ -1003,4 +964,4 @@ class HybridShapeTrim(HybridShape):
         return self.com_object.SetPreviousOrientation(i_rank, i_orientation)
 
     def __repr__(self):
-        return f'HybridShapeTrim(name="{ self.name }")'
+        return f'HybridShapeTrim(name="{self.name}")'

@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 
 
 class OLPAccuracyProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class OLPAccuracyProfile(OLPProfile):
     def accuracy_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyType() As AccuracyType
@@ -90,7 +87,6 @@ class OLPAccuracyProfile(OLPProfile):
     def accuracy_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyValue() As double
@@ -121,7 +117,6 @@ class OLPAccuracyProfile(OLPProfile):
     def fly_by_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlyByMode() As short
@@ -155,7 +150,6 @@ class OLPAccuracyProfile(OLPProfile):
     def get_accuracy_params(self, o_fly_by: bool, o_accuracy_type: int, o_accuracy_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAccuracyParams(boolean oFlyBy,AccuracyType oAccuracyType,double
@@ -182,7 +176,6 @@ class OLPAccuracyProfile(OLPProfile):
     def set_accuracy_params(self, i_fly_by: bool, i_accuracy_type: int, i_accuracy_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyParams(boolean iFlyBy,AccuracyType iAccuracyType,double
@@ -214,7 +207,6 @@ class OLPAccuracyProfile(OLPProfile):
     def set_accuracy_type(self, i_accuracy_type: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyType(AccuracyType iAccuracyType,boolean iMatch)
@@ -237,7 +229,6 @@ class OLPAccuracyProfile(OLPProfile):
     def set_accuracy_value(self, i_accuracy_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyValue(double iAccuracyValue,boolean iMatch)
@@ -261,7 +252,6 @@ class OLPAccuracyProfile(OLPProfile):
     def set_fly_by_mode(self, i_fly_by: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFlyByMode(boolean iFlyBy,boolean iMatch)
@@ -283,4 +273,4 @@ class OLPAccuracyProfile(OLPProfile):
         return self.com_object.SetFlyByMode(i_fly_by, i_match)
 
     def __repr__(self):
-        return f'OLPAccuracyProfile(name="{ self.name }")'
+        return f'OLPAccuracyProfile(name="{self.name}")'

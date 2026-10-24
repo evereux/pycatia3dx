@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeNear(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -40,7 +38,6 @@ class HybridShapeNear(HybridShape):
     def multiple_solution(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MultipleSolution() As Reference
@@ -77,7 +74,6 @@ class HybridShapeNear(HybridShape):
     def reference_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ReferenceElement() As Reference
@@ -111,4 +107,4 @@ class HybridShapeNear(HybridShape):
         self.com_object.ReferenceElement = value
 
     def __repr__(self):
-        return f'HybridShapeNear(name="{ self.name }")'
+        return f'HybridShapeNear(name="{self.name}")'

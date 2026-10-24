@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivityToolAxis(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -34,10 +32,10 @@ class ManufacturingActivityToolAxis(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_tool_axis(self, o_tool_axis_x: float, o_tool_axis_y: float, o_tool_axis_z: float, o_type: int, o_mode: str) -> None:
+    def get_tool_axis(self, o_tool_axis_x: float, o_tool_axis_y: float, o_tool_axis_z: float, o_type: int,
+                      o_mode: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetToolAxis(double oToolAxisX,double oToolAxisY,double oToolAxisZ,long
@@ -70,7 +68,6 @@ class ManufacturingActivityToolAxis(AnyObject):
     def set_tool_axis(self, i_tool_axis_x: float, i_tool_axis_y: float, i_tool_axis_z: float, i_mode: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolAxis(double iToolAxisX,double iToolAxisY,double iToolAxisZ,CATBSTR
@@ -93,4 +90,4 @@ class ManufacturingActivityToolAxis(AnyObject):
         return self.com_object.SetToolAxis(i_tool_axis_x, i_tool_axis_y, i_tool_axis_z, i_mode)
 
     def __repr__(self):
-        return f'ManufacturingActivityToolAxis(name="{ self.name }")'
+        return f'ManufacturingActivityToolAxis(name="{self.name}")'

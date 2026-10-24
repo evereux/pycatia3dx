@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShape3DCurveOffset(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -47,7 +45,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_radius_value(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CornerRadiusValue() As Length
@@ -70,7 +67,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_tension_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CornerTensionValue() As double
@@ -93,7 +89,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def curve_to_offset(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CurveToOffset() As Reference
@@ -116,7 +111,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -139,7 +133,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def invert_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InvertDirection() As boolean
@@ -162,7 +155,6 @@ class HybridShape3DCurveOffset(HybridShape):
     def offset_value(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OffsetValue() As Length
@@ -182,4 +174,4 @@ class HybridShape3DCurveOffset(HybridShape):
         self.com_object.OffsetValue = value
 
     def __repr__(self):
-        return f'HybridShape3DCurveOffset(name="{ self.name }")'
+        return f'HybridShape3DCurveOffset(name="{self.name}")'

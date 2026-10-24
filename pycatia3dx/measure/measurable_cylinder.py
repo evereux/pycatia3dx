@@ -13,7 +13,6 @@ from pycatia3dx.measure.measurable_surface import MeasurableSurface
 class MeasurableCylinder(MeasurableSurface):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class MeasurableCylinder(MeasurableSurface):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
@@ -68,7 +66,6 @@ class MeasurableCylinder(MeasurableSurface):
     def get_point(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
@@ -97,7 +94,6 @@ class MeasurableCylinder(MeasurableSurface):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(double oXStartPoint,double oYStartPoint,double
@@ -134,7 +130,6 @@ class MeasurableCylinder(MeasurableSurface):
     def get_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double

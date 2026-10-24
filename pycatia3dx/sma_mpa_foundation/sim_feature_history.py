@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimFeatureHistory(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +74,6 @@ class SimFeatureHistory(Collection):
     def add_to_step(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddToStep(CATVariant iIndex)
@@ -101,7 +99,6 @@ class SimFeatureHistory(Collection):
     def can_add_to_step(self, i_index: CATVariant) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CanAddToStep(CATVariant iIndex) As boolean
@@ -125,7 +122,6 @@ class SimFeatureHistory(Collection):
     def can_remove_from_step(self, i_index: CATVariant) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CanRemoveFromStep(CATVariant iIndex) As boolean
@@ -150,7 +146,6 @@ class SimFeatureHistory(Collection):
     def can_start_in_step(self, i_index: CATVariant) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CanStartInStep(CATVariant iIndex) As boolean
@@ -174,7 +169,6 @@ class SimFeatureHistory(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -196,7 +190,6 @@ class SimFeatureHistory(Collection):
     def remove_from_step(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveFromStep(CATVariant iIndex)
@@ -222,7 +215,6 @@ class SimFeatureHistory(Collection):
     def start_in_step(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub StartInStep(CATVariant iIndex)

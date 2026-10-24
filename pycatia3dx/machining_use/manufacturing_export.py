@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingExport(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingExport(AnyObject):
     def export_nc3_d(self, i_physid: str, i_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportNC3D(CATBSTR iPHYSID,CATBSTR iFilePath)
@@ -65,7 +62,6 @@ class ManufacturingExport(AnyObject):
     def export_nc_data(self, i_xml_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportNCData(CATBSTR iXMLFilePath)
@@ -84,4 +80,4 @@ class ManufacturingExport(AnyObject):
         return self.com_object.ExportNCData(i_xml_file_path)
 
     def __repr__(self):
-        return f'ManufacturingExport(name="{ self.name }")'
+        return f'ManufacturingExport(name="{self.name}")'

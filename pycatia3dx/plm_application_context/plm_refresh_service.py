@@ -14,7 +14,6 @@ from pycatia3dx.plm_modeller_base.plm_entity import PLMEntity
 class PLMRefreshService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +55,6 @@ class PLMRefreshService(Service):
     def add_object_to_refresh(self, i_plm_entity: PLMEntity) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToRefresh(PLMEntity iPLMEntity)
@@ -90,7 +88,6 @@ class PLMRefreshService(Service):
     def perform_refresh(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PerformRefresh()
@@ -121,7 +118,6 @@ class PLMRefreshService(Service):
     def get_concurrent_engineering_status(self, o_concurrent_engineering_status: tuple) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub getConcurrentEngineeringStatus(CATSafeArrayVariant

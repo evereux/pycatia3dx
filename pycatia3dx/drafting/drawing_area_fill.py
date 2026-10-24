@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingAreaFill(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrawingAreaFill(AnyObject):
     def area_fill_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaFillType() As CatAreaFillType (Read Only)
@@ -58,7 +56,6 @@ class DrawingAreaFill(AnyObject):
     def display_at_true_depth(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayAtTrueDepth() As boolean
@@ -93,7 +90,6 @@ class DrawingAreaFill(AnyObject):
     def get_characteristics(self, o_number_of_contour: int, o_number_of_points: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCharacteristics(long oNumberOfContour,long
@@ -125,7 +121,6 @@ class DrawingAreaFill(AnyObject):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(CATSafeArrayVariant oNumberOfPointsPerContour,CATSafeArrayVariant
@@ -178,7 +173,6 @@ class DrawingAreaFill(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
@@ -195,7 +189,6 @@ class DrawingAreaFill(AnyObject):
     def modify_points(self, i_number_of_points_per_contour: tuple, i_points_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ModifyPoints(CATSafeArrayVariant
@@ -247,7 +240,6 @@ class DrawingAreaFill(AnyObject):
     def set_pattern(self, i_pattern_name_from_standard: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPattern(CATBSTR iPatternNameFromStandard)

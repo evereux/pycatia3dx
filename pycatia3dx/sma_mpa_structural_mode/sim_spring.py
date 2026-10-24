@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_section import SimConnecto
 
 
 class SimSpring(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimSpring(AnyObject):
     def connector_section(self) -> SimConnectorSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorSection() As SimConnectorSection (Read Only)
@@ -91,7 +88,6 @@ class SimSpring(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -131,7 +127,6 @@ class SimSpring(AnyObject):
     def spring_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpringType() As SimSpringType
@@ -151,4 +146,4 @@ class SimSpring(AnyObject):
         self.com_object.SpringType = value
 
     def __repr__(self):
-        return f'SimSpring(name="{ self.name }")'
+        return f'SimSpring(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPTag(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class OLPTag(AnyObject):
     def design_fastener(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DesignFastener() As CATBaseDispatch (Read Only)
@@ -65,7 +62,6 @@ class OLPTag(AnyObject):
     def manufacturing_fastener(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ManufacturingFastener() As CATBaseDispatch (Read
@@ -91,7 +87,6 @@ class OLPTag(AnyObject):
     def parameter_names(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParameterNames() As CATSafeArrayVariant (Read Only)
@@ -107,7 +102,6 @@ class OLPTag(AnyObject):
     def get_parameter(self, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iParameterName) As CATVariant
@@ -133,7 +127,6 @@ class OLPTag(AnyObject):
     def set_parameter(self, i_parameter_name: str, i_value: CATVariant, i_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iParameterName,CATVariant iValue,CATBSTR
@@ -164,4 +157,4 @@ class OLPTag(AnyObject):
         return self.com_object.SetParameter(i_parameter_name, i_value, i_type)
 
     def __repr__(self):
-        return f'OLPTag(name="{ self.name }")'
+        return f'OLPTag(name="{self.name}")'

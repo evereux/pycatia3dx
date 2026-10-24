@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimFemFeatureInitialization(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class SimFemFeatureInitialization(CATBaseDispatch):
     def initialize_mesh_part_from_geometry(self, i_mesh_part: SimMeshPart) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitializeMeshPartFromGeometry(SimMeshPart iMeshPart)

@@ -14,10 +14,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class TPSViewFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class TPSViewFactory(AnyObject):
     def create_view(self, i_plane: Reference, i_view_type: CATVariant) -> TPSView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateView(Reference iPlane,CATVariant iViewType) As
@@ -62,4 +59,4 @@ class TPSViewFactory(AnyObject):
         return TPSView(self.com_object.CreateView(i_plane.com_object, i_view_type))
 
     def __repr__(self):
-        return f'TpsViewFactory(name="{ self.name }")'
+        return f'TpsViewFactory(name="{self.name}")'

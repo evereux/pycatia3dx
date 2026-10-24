@@ -20,7 +20,6 @@ if TYPE_CHECKING:
 class List(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -46,7 +45,6 @@ class List(Collection):
     def add(self, i_item_value: AnyObject) -> ListParameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Add(AnyObject iItemValue)
@@ -69,7 +67,6 @@ class List(Collection):
     def item(self, i_index: CATVariant) -> ListParameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As AnyObject
@@ -103,7 +100,6 @@ class List(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Remove(CATVariant iIndex)
@@ -133,7 +129,6 @@ class List(Collection):
     def reorder(self, i_index_current: CATVariant, i_index_target: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Reorder(CATVariant iIndexCurrent,CATVariant iIndexTarget)
@@ -157,7 +152,6 @@ class List(Collection):
     def replace(self, i_index: CATVariant, i_item_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Replace(CATVariant iIndex,AnyObject iItemValue)

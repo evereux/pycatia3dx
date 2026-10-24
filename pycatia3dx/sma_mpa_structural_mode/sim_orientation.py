@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimOrientation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimOrientation(AnyObject):
     def angle_of_rotation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngleOfRotation() As double
@@ -61,7 +58,6 @@ class SimOrientation(AnyObject):
     def axis_of_rotation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisOfRotation() As SimOrientationAxisOfRotation
@@ -84,7 +80,6 @@ class SimOrientation(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -99,7 +94,6 @@ class SimOrientation(AnyObject):
     def orientation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrientationFlag() As boolean
@@ -124,4 +118,4 @@ class SimOrientation(AnyObject):
         self.com_object.OrientationFlag = value
 
     def __repr__(self):
-        return f'SimOrientation(name="{ self.name }")'
+        return f'SimOrientation(name="{self.name}")'

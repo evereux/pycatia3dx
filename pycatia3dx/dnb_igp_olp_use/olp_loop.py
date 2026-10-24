@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPLoop(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPLoop(OLPInstruction):
     def condition(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition() As OlpAstBranch
@@ -72,7 +69,6 @@ class OLPLoop(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -87,7 +83,6 @@ class OLPLoop(OLPInstruction):
     def is_while_do(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsWhileDo() As boolean
@@ -112,4 +107,4 @@ class OLPLoop(OLPInstruction):
         self.com_object.IsWhileDo = value
 
     def __repr__(self):
-        return f'OLPLoop(name="{ self.name }")'
+        return f'OLPLoop(name="{self.name}")'

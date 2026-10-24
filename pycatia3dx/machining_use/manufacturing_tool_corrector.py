@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingToolCorrector(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,10 +34,10 @@ class ManufacturingToolCorrector(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_values(self, o_point: str, o_number: int, o_length_number: int, o_radius_number: int, o_diameter: float, i_unit: int) -> None:
+    def get_values(self, o_point: str, o_number: int, o_length_number: int, o_radius_number: int, o_diameter: float,
+                   i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetValues(CATBSTR oPoint,long oNumber,long oLengthNumber,long
@@ -69,10 +67,10 @@ class ManufacturingToolCorrector(AnyObject):
         """
         return self.com_object.GetValues(o_point, o_number, o_length_number, o_radius_number, o_diameter, i_unit)
 
-    def set_values(self, i_point: str, i_list_numbers: tuple, i_list_length_numbers: tuple, i_list_radius_numbers: tuple, i_list_diameters: tuple, i_unit: int) -> None:
+    def set_values(self, i_point: str, i_list_numbers: tuple, i_list_length_numbers: tuple,
+                   i_list_radius_numbers: tuple, i_list_diameters: tuple, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValues(CATBSTR iPoint,CATSafeArrayVariant
@@ -98,7 +96,8 @@ class ManufacturingToolCorrector(AnyObject):
         :param int i_unit:
         :return: None
         """
-        return self.com_object.SetValues(i_point, i_list_numbers, i_list_length_numbers, i_list_radius_numbers, i_list_diameters, i_unit)
+        return self.com_object.SetValues(i_point, i_list_numbers, i_list_length_numbers, i_list_radius_numbers,
+                                         i_list_diameters, i_unit)
 
     def __repr__(self):
-        return f'ManufacturingToolCorrector(name="{ self.name }")'
+        return f'ManufacturingToolCorrector(name="{self.name}")'

@@ -21,7 +21,6 @@ from pycatia3dx.structure.str_sketch_based_dms_mngt import StrSketchBasedDMSMngt
 class SddContourBased(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class SddContourBased(AnyObject):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Reference() As Reference (Read Only)
@@ -74,7 +72,6 @@ class SddContourBased(AnyObject):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -101,7 +98,6 @@ class SddContourBased(AnyObject):
     def str_panel_limit_mngt(self) -> StrPanelLimitMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
@@ -128,7 +124,6 @@ class SddContourBased(AnyObject):
     def str_panel_surf(self) -> StrPanelSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPanelSurf() As StrPanelSurf (Read Only)
@@ -155,7 +150,6 @@ class SddContourBased(AnyObject):
     def str_plate_extrusion_mngt(self) -> StrPlateExtrusionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
@@ -184,7 +178,6 @@ class SddContourBased(AnyObject):
     def str_reference_sketch_public_parameters(self) -> StrReferenceSketchPublicParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrReferenceSketchPublicParameters() As
@@ -229,7 +222,6 @@ class SddContourBased(AnyObject):
     def str_sketch_based_dms_mngt(self) -> StrSketchBasedDMSMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSketchBasedDMSMngt() As StrSketchBasedDMSMngt (Read

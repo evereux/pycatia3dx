@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimSteadyStateHeatTransferStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def initial_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialTimeStep() As double
@@ -124,7 +120,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def maximum_number_of_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumNumberOfIncrements() As long
@@ -148,7 +143,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def maximum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeStep() As double
@@ -171,7 +165,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def minimum_time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumTimeStep() As double
@@ -194,7 +187,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrementationScheme() As
@@ -218,7 +210,6 @@ class SimSteadyStateHeatTransferStep(SimStep):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalTime() As double
@@ -238,4 +229,4 @@ class SimSteadyStateHeatTransferStep(SimStep):
         self.com_object.TotalTime = value
 
     def __repr__(self):
-        return f'SimSteadyStateHeatTransferStep(name="{ self.name }")'
+        return f'SimSteadyStateHeatTransferStep(name="{self.name}")'

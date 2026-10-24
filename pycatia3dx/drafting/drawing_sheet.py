@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingSheet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class DrawingSheet(AnyObject):
     def gen_views_pos_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GenViewsPosMode() As CatSheetGenViewsPosMode
@@ -78,7 +76,6 @@ class DrawingSheet(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As CatPaperOrientation
@@ -107,7 +104,6 @@ class DrawingSheet(AnyObject):
     def page_setup(self) -> DrawingPageSetup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PageSetup() As DrawingPageSetup (Read Only)
@@ -129,7 +125,6 @@ class DrawingSheet(AnyObject):
     def paper_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PaperSize() As CatPaperSize
@@ -158,7 +153,6 @@ class DrawingSheet(AnyObject):
     def print_area(self) -> PrintArea:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrintArea() As PrintArea (Read Only)
@@ -180,7 +174,6 @@ class DrawingSheet(AnyObject):
     def projection_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProjectionMethod() As CatSheetProjectionMethod
@@ -209,7 +202,6 @@ class DrawingSheet(AnyObject):
     def scale(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale() As double
@@ -238,7 +230,6 @@ class DrawingSheet(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale2() As double
@@ -268,7 +259,6 @@ class DrawingSheet(AnyObject):
     def sheet_style(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SheetStyle(CATBSTR iSheetStyleName) (Write Only)
@@ -310,7 +300,6 @@ class DrawingSheet(AnyObject):
     def views(self) -> DrawingViews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Views() As DrawingViews (Read Only)
@@ -333,7 +322,6 @@ class DrawingSheet(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
@@ -354,7 +342,6 @@ class DrawingSheet(AnyObject):
     def force_update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ForceUpdate()
@@ -379,7 +366,6 @@ class DrawingSheet(AnyObject):
     def generate_dimensions(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateDimensions()
@@ -404,7 +390,6 @@ class DrawingSheet(AnyObject):
     def get_paper_height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPaperHeight() As double
@@ -427,7 +412,6 @@ class DrawingSheet(AnyObject):
     def get_paper_width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPaperWidth() As double
@@ -450,7 +434,6 @@ class DrawingSheet(AnyObject):
     def is_detail(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsDetail() As boolean
@@ -471,7 +454,6 @@ class DrawingSheet(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
@@ -491,7 +473,6 @@ class DrawingSheet(AnyObject):
     def print_out(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintOut()
@@ -513,7 +494,6 @@ class DrawingSheet(AnyObject):
     def print_to_file(self, file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PrintToFile(CATBSTR fileName)
@@ -540,7 +520,6 @@ class DrawingSheet(AnyObject):
     def set_as_detail(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAsDetail()
@@ -552,7 +531,6 @@ class DrawingSheet(AnyObject):
     def set_paper_height(self, o_paper_height: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPaperHeight(double oPaperHeight)
@@ -578,7 +556,6 @@ class DrawingSheet(AnyObject):
     def set_paper_width(self, o_paper_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPaperWidth(double oPaperWidth)
@@ -604,7 +581,6 @@ class DrawingSheet(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -629,7 +605,6 @@ class DrawingSheet(AnyObject):
     def reorder_views(self, i_ordered_views: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub reorder_Views(CATSafeArrayVariant iOrderedViews)

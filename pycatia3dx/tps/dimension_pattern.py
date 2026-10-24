@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DimensionPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class DimensionPattern(AnyObject):
     def instance_count(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InstanceCount() As double (Read Only)
@@ -50,4 +47,4 @@ class DimensionPattern(AnyObject):
         return self.com_object.InstanceCount
 
     def __repr__(self):
-        return f'DimensionPattern(name="{ self.name }")'
+        return f'DimensionPattern(name="{self.name}")'

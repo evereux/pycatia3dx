@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPGoto(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class OLPGoto(OLPInstruction):
     def target_instruction(self) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetInstruction() As OlpInstruction
@@ -66,4 +63,4 @@ class OLPGoto(OLPInstruction):
         self.com_object.TargetInstruction = value
 
     def __repr__(self):
-        return f'OLPGoto(name="{ self.name }")'
+        return f'OLPGoto(name="{self.name}")'

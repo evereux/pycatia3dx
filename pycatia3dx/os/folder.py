@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class Folder(FileComponent):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -45,7 +44,6 @@ class Folder(FileComponent):
     def files(self) -> Files:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Files() As Files (Read Only)
@@ -67,7 +65,6 @@ class Folder(FileComponent):
     def sub_folders(self) -> 'Folders':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property SubFolders() As Folders (Read Only)

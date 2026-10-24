@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class AssemblyConstraint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class AssemblyConstraint(AnyObject):
     def activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activity() As boolean
@@ -63,7 +61,6 @@ class AssemblyConstraint(AnyObject):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode() As CatAssemblyConstraintMode
@@ -86,7 +83,6 @@ class AssemblyConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CatAssemblyConstraintType
@@ -108,7 +104,6 @@ class AssemblyConstraint(AnyObject):
     def get_max_value(self, inbv: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxValue(short inbv) As double
@@ -137,7 +132,6 @@ class AssemblyConstraint(AnyObject):
     def get_max_value_as_param(self, inbv: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaxValueAsParam(short inbv) As Parameter
@@ -151,7 +145,6 @@ class AssemblyConstraint(AnyObject):
     def get_min_value(self, inbv: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMinValue(short inbv) As double
@@ -180,7 +173,6 @@ class AssemblyConstraint(AnyObject):
     def get_min_value_as_param(self, inbv: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMinValueAsParam(short inbv) As Parameter
@@ -194,7 +186,6 @@ class AssemblyConstraint(AnyObject):
     def get_nb_options(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbOptions() As short
@@ -211,7 +202,6 @@ class AssemblyConstraint(AnyObject):
     def get_nb_supports(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbSupports() As short
@@ -236,7 +226,6 @@ class AssemblyConstraint(AnyObject):
     def get_nb_values(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbValues() As short
@@ -249,7 +238,6 @@ class AssemblyConstraint(AnyObject):
     def get_option(self, inum_option: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOption(short inumOption) As
@@ -276,7 +264,6 @@ class AssemblyConstraint(AnyObject):
     def get_support(self, inum_support: int, ib_fold: bool, o_support: str, o_ctx_support: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSupport(short inumSupport,boolean ibFold,CATBSTR oSupport,CATBSTR
@@ -305,7 +292,6 @@ class AssemblyConstraint(AnyObject):
     def get_value(self, inbv: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue(short inbv) As double
@@ -333,7 +319,6 @@ class AssemblyConstraint(AnyObject):
     def get_value_as_param(self, inbv: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueAsParam(short inbv) As Parameter
@@ -347,7 +332,6 @@ class AssemblyConstraint(AnyObject):
     def set_max_value(self, inbv: int, ival: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxValue(short inbv,double ival)
@@ -369,7 +353,6 @@ class AssemblyConstraint(AnyObject):
     def set_min_value(self, inbv: int, ival: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinValue(short inbv,double ival)
@@ -391,7 +374,6 @@ class AssemblyConstraint(AnyObject):
     def set_option(self, inum_option: int, ioption: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOption(short inumOption,CatAssemblyConstraintOption
@@ -414,7 +396,6 @@ class AssemblyConstraint(AnyObject):
     def set_value(self, inbv: int, ival: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValue(short inbv,double ival)

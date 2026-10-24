@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_feature_states import SimFeatureStates
 
 
 class SimLoadSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +54,6 @@ class SimLoadSet(AnyObject):
     def feature_states(self) -> SimFeatureStates:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureStates() As SimFeatureStates (Read Only)
@@ -68,4 +65,4 @@ class SimLoadSet(AnyObject):
         return SimFeatureStates(self.com_object.FeatureStates)
 
     def __repr__(self):
-        return f'SimLoadSet(name="{ self.name }")'
+        return f'SimLoadSet(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.structure.structure_member import StructureMember
 class SfdMember(StructureMember):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class SfdMember(StructureMember):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
@@ -71,7 +69,6 @@ class SfdMember(StructureMember):
     def str_user_connections(self) -> StrUserConnections:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrUserConnections() As StrUserConnections (Read

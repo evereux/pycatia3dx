@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeAffinity(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -64,7 +62,6 @@ class HybridShapeAffinity(HybridShape):
     def axis_first_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisFirstDirection() As Reference
@@ -98,7 +95,6 @@ class HybridShapeAffinity(HybridShape):
     def axis_origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisOrigin() As Reference
@@ -130,7 +126,6 @@ class HybridShapeAffinity(HybridShape):
     def axis_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AxisPlane() As Reference
@@ -164,7 +159,6 @@ class HybridShapeAffinity(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CreationMode() As boolean
@@ -198,7 +192,6 @@ class HybridShapeAffinity(HybridShape):
     def elem_to_transform(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToTransform() As Reference
@@ -229,7 +222,6 @@ class HybridShapeAffinity(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -263,7 +255,6 @@ class HybridShapeAffinity(HybridShape):
     def x_ratios(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property XRatios() As RealParam (Read Only)
@@ -287,7 +278,6 @@ class HybridShapeAffinity(HybridShape):
     def y_ratios(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property YRatios() As RealParam (Read Only)
@@ -311,7 +301,6 @@ class HybridShapeAffinity(HybridShape):
     def z_ratios(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ZRatios() As RealParam (Read Only)
@@ -332,4 +321,4 @@ class HybridShapeAffinity(HybridShape):
         return RealParam(self.com_object.ZRatios)
 
     def __repr__(self):
-        return f'HybridShapeAffinity(name="{ self.name }")'
+        return f'HybridShapeAffinity(name="{self.name}")'

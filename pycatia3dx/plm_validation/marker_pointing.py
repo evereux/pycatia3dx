@@ -13,10 +13,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class MarkerPointing(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class MarkerPointing(AnyObject):
     def add_object(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObject(AnyObject iObject)
@@ -65,7 +62,6 @@ class MarkerPointing(AnyObject):
     def count_object(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CountObject() As long
@@ -91,7 +87,6 @@ class MarkerPointing(AnyObject):
     def get_pointing_positions(self, i_index: CATVariant) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPointingPositions(CATVariant iIndex) As
@@ -128,7 +123,6 @@ class MarkerPointing(AnyObject):
     def item_object(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ItemObject(CATVariant iIndex) As CATBaseDispatch
@@ -159,7 +153,6 @@ class MarkerPointing(AnyObject):
     def remove_object(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveObject(CATVariant iIndex)
@@ -189,7 +182,6 @@ class MarkerPointing(AnyObject):
     def set_pointing_positions(self, i_index: CATVariant, i_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPointingPositions(CATVariant iIndex,CATSafeArrayVariant
@@ -225,4 +217,4 @@ class MarkerPointing(AnyObject):
         return self.com_object.SetPointingPositions(i_index, i_coordinates)
 
     def __repr__(self):
-        return f'MarkerPointing(name="{ self.name }")'
+        return f'MarkerPointing(name="{self.name}")'

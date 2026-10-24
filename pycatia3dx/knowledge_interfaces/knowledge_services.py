@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class KnowledgeServices(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -45,7 +43,6 @@ class KnowledgeServices(Service):
     def units(self) -> Units:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Units() As Units (Read Only)
@@ -59,7 +56,6 @@ class KnowledgeServices(Service):
     def get_knowledge_collection(self, i_root: AnyObject, i_k_set_type: int) -> KnowledgeCollection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetKnowledgeCollection(AnyObject iRoot,KnowledgeSetType iKSetType) As
@@ -84,4 +80,4 @@ class KnowledgeServices(Service):
         return KnowledgeCollection(self.com_object.GetKnowledgeCollection(i_root.com_object, i_k_set_type))
 
     def __repr__(self):
-        return f'KnowledgeServices(name="{ self.name }")'
+        return f'KnowledgeServices(name="{self.name}")'

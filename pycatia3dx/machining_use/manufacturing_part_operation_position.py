@@ -13,10 +13,8 @@ from pycatia3dx.machining_use.manufacturing_part_operation import ManufacturingP
 
 
 class ManufacturingPartOperationPosition(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_alias(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAlias() As CATBSTR
@@ -51,7 +48,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_attach_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttachStatus() As boolean
@@ -75,7 +71,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_part_operation(self) -> ManufacturingPartOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartOperation() As ManufacturingPartOperation
@@ -94,7 +89,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_product(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProduct() As AnyObject
@@ -113,7 +107,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_product_occurrence(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProductOccurrence() As AnyObject
@@ -131,7 +124,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_rotary_planes(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRotaryPlanes() As AnyObject
@@ -154,7 +146,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_safety_plane_so(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSafetyPlaneSO() As AnyObject
@@ -176,7 +167,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_top_plane_direction_inversion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTopPlaneDirectionInversion() As long
@@ -196,7 +186,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def get_transition_planes(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransitionPlanes() As AnyObject
@@ -219,7 +208,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def set_alias(self, i_new_alias: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAlias(CATBSTR iNewAlias)
@@ -238,7 +226,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def set_product(self, i_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProduct(AnyObject iProduct)
@@ -258,7 +245,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def set_safety_plane_so(self, i_safety_plane: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSafetyPlaneSO(AnyObject iSafetyPlane)
@@ -280,7 +266,6 @@ class ManufacturingPartOperationPosition(AnyObject):
     def set_top_plane_direction_inversion(self, i_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTopPlaneDirectionInversion(long iMode)
@@ -303,4 +288,4 @@ class ManufacturingPartOperationPosition(AnyObject):
         return self.com_object.SetTopPlaneDirectionInversion(i_mode)
 
     def __repr__(self):
-        return f'ManufacturingPartOperationPosition(name="{ self.name }")'
+        return f'ManufacturingPartOperationPosition(name="{self.name}")'

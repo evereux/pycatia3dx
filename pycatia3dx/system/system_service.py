@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SystemService(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -39,7 +38,6 @@ class SystemService(AnyObject):
     def environ(self, i_env_string: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Environ(CATBSTR iEnvString) As CATBSTR
@@ -70,7 +68,6 @@ class SystemService(AnyObject):
     ) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Evaluate(CATBSTR iScriptText,CATScriptLanguage iLanguage,CATBSTR
@@ -114,7 +111,6 @@ class SystemService(AnyObject):
     def execute_background_processus(self, i_executable_path: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func ExecuteBackgroundProcessus(CATBSTR iExecutablePath) As
@@ -156,7 +152,6 @@ class SystemService(AnyObject):
     def execute_processus(self, i_executable_path: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func ExecuteProcessus(CATBSTR iExecutablePath) As long
@@ -207,7 +202,6 @@ class SystemService(AnyObject):
     def get_message(self, i_catalog_name: str, i_message_key: str, i_msg_parameters: tuple, i_default_msg: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetMessage(CATBSTR iCatalogName,CATBSTR iMessageKey,CATSafeArrayVariant
@@ -259,7 +253,6 @@ class SystemService(AnyObject):
     def print(self, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Print(CATBSTR iString)
@@ -287,7 +280,6 @@ class SystemService(AnyObject):
     def print_to_stdout(self, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PrintToStdout(CATBSTR iString)

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimDynClashServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +49,6 @@ class SimDynClashServices(Service):
     def clash_analysis_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClashAnalysisMode() As boolean
@@ -78,7 +76,6 @@ class SimDynClashServices(Service):
     def clash_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClashStatus() As boolean (Read Only)
@@ -98,7 +95,6 @@ class SimDynClashServices(Service):
     def clearance_analysis_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClearanceAnalysisMode() As boolean
@@ -126,7 +122,6 @@ class SimDynClashServices(Service):
     def contact_analysis_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ContactAnalysisMode() As boolean
@@ -154,7 +149,6 @@ class SimDynClashServices(Service):
     def penetration_reporting(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PenetrationReporting() As boolean
@@ -181,7 +175,6 @@ class SimDynClashServices(Service):
     def add_exclusion_object(self, i_object: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddExclusionObject(AnyObject iObject) As long
@@ -209,7 +202,6 @@ class SimDynClashServices(Service):
     def get_exclusion_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func GetExclusionList(CATSafeArrayVariant oList) As long
@@ -245,7 +237,6 @@ class SimDynClashServices(Service):
     def locate_exclusion_object(self, i_object: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func LocateExclusionObject(AnyObject iObject) As long
@@ -270,7 +261,6 @@ class SimDynClashServices(Service):
     def remove_exclusion_object(self, i_object: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RemoveExclusionObject(AnyObject iObject) As long
@@ -295,7 +285,6 @@ class SimDynClashServices(Service):
     def retrieve_results(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func RetrieveResults(CATSafeArrayVariant oList) As long
@@ -334,7 +323,6 @@ class SimDynClashServices(Service):
     def update_clash_agent(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UpdateClashAgent()

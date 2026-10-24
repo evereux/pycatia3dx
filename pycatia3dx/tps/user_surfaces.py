@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class UserSurfaces(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class UserSurfaces(Collection):
     def generate(self, i_support: Reference) -> UserSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Generate(Reference iSupport) As UserSurface
@@ -78,7 +76,6 @@ class UserSurfaces(Collection):
     def item(self, i_index: CATVariant) -> UserSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As UserSurface
@@ -101,7 +98,6 @@ class UserSurfaces(Collection):
     def make_user_surface_node(self, i_first_user_surf: UserSurface, i_second_user_surf: UserSurface) -> UserSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MakeUserSurfaceNode(UserSurface iFirstUserSurf,UserSurface
@@ -129,7 +125,6 @@ class UserSurfaces(Collection):
     def make_user_surface_node_2(self, i_list_of_user_surfaces: tuple) -> UserSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func MakeUserSurfaceNode2(CATSafeArrayVariant iListOfUserSurfaces) As

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmPathMgt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class CtmPathMgt(AnyObject):
     def get_next_index_for_append(self, o_next_tag_absolute_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNextIndexForAppend(short oNextTagAbsoluteIndex)
@@ -72,7 +69,6 @@ class CtmPathMgt(AnyObject):
     def get_trajectory(self, osp_trajectory: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTrajectory(AnyObject ospTrajectory)
@@ -100,7 +96,6 @@ class CtmPathMgt(AnyObject):
     def move_tags(self, i_new_first_index: int, o_next_availabled_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveTags(short iNewFirstIndex,short oNextAvailabledIndex)
@@ -128,7 +123,6 @@ class CtmPathMgt(AnyObject):
     def number_tags(self, i_new_first_index: float, i_prefix: str, o_next_available_tag_name_index: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NumberTags(double iNewFirstIndex,CATBSTR iPrefix,double
@@ -166,4 +160,4 @@ class CtmPathMgt(AnyObject):
         return self.com_object.NumberTags(i_new_first_index, i_prefix, o_next_available_tag_name_index)
 
     def __repr__(self):
-        return f'CtmPathMgt(name="{ self.name }")'
+        return f'CtmPathMgt(name="{self.name}")'

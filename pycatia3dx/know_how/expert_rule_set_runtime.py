@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +52,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
     def expert_rule_base_component_runtimes(self) -> ExpertRuleBaseComponentRuntimes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExpertRuleBaseComponentRuntimes() As ExpertRuleBaseComponentRuntimes
@@ -69,7 +67,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
     def rule_set_edition(self) -> 'ExpertRuleSet':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RuleSetEdition() As ExpertRuleSet (Read Only)
@@ -94,7 +91,6 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
     def status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Status() As long

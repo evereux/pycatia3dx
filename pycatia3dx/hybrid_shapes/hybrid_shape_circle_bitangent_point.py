@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleBitangentPoint(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOfCircle() As long
@@ -88,7 +85,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def curve1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve1() As Reference
@@ -121,7 +117,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def curve2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve2() As Reference
@@ -153,7 +148,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiscriminationIndex() As long
@@ -188,7 +182,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation1() As long
@@ -226,7 +219,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation2() As long
@@ -264,7 +256,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def pt(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Pt() As Reference
@@ -296,7 +287,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -327,7 +317,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation1() As long
@@ -361,7 +350,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangentOrientation2() As long
@@ -395,7 +383,6 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TrimMode() As long
@@ -429,4 +416,4 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         self.com_object.TrimMode = value
 
     def __repr__(self):
-        return f'HybridShapeCircleBitangentPoint(name="{ self.name }")'
+        return f'HybridShapeCircleBitangentPoint(name="{self.name}")'

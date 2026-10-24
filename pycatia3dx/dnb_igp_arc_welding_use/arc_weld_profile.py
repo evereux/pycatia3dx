@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_arc_welding_use.arc_weld_profile_section import ArcWeldP
 
 
 class ArcWeldProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class ArcWeldProfile(AnyObject):
     def controller_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ControllerName() As CATBSTR (Read Only)
@@ -73,7 +70,6 @@ class ArcWeldProfile(AnyObject):
     def end_weld(self) -> ArcWeldProfileSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndWeld() As ArcWeldProfileSection (Read Only)
@@ -100,7 +96,6 @@ class ArcWeldProfile(AnyObject):
     def flying_start(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlyingStart() As boolean
@@ -134,7 +129,6 @@ class ArcWeldProfile(AnyObject):
     def start_weld(self) -> ArcWeldProfileSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartWeld() As ArcWeldProfileSection (Read Only)
@@ -161,7 +155,6 @@ class ArcWeldProfile(AnyObject):
     def weld(self) -> ArcWeldProfileSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Weld() As ArcWeldProfileSection (Read Only)
@@ -185,4 +178,4 @@ class ArcWeldProfile(AnyObject):
         return ArcWeldProfileSection(self.com_object.Weld)
 
     def __repr__(self):
-        return f'ArcWeldProfile(name="{ self.name }")'
+        return f'ArcWeldProfile(name="{self.name}")'

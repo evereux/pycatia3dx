@@ -14,7 +14,6 @@ from pycatia3dx.mode.move import Move
 class Position(Move):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class Position(Move):
     def get_abs_components(self, o_axis_components_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAbsComponents(CATSafeArrayVariant oAxisComponentsArray)
@@ -90,7 +88,6 @@ class Position(Move):
     def get_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetComponents(CATSafeArrayVariant oAxisComponentsArray)
@@ -138,7 +135,6 @@ class Position(Move):
     def set_abs_components(self, i_axis_components_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAbsComponents(CATSafeArrayVariant iAxisComponentsArray)
@@ -206,7 +202,6 @@ class Position(Move):
     def set_components(self, i_axis_components_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetComponents(CATSafeArrayVariant iAxisComponentsArray)

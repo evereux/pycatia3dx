@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneOffset(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -44,7 +42,6 @@ class HybridShapePlaneOffset(Plane):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset() As Length (Read Only)
@@ -59,7 +56,6 @@ class HybridShapePlaneOffset(Plane):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -86,7 +82,6 @@ class HybridShapePlaneOffset(Plane):
     def plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Plane() As Reference
@@ -107,4 +102,4 @@ class HybridShapePlaneOffset(Plane):
         self.com_object.Plane = value
 
     def __repr__(self):
-        return f'HybridShapePlaneOffset(name="{ self.name }")'
+        return f'HybridShapePlaneOffset(name="{self.name}")'

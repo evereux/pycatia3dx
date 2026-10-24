@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Parameter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -52,7 +50,6 @@ class Parameter(AnyObject):
     def comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Comment() As CATBSTR
@@ -75,7 +72,6 @@ class Parameter(AnyObject):
     def context(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Context() As AnyObject (Read Only)
@@ -91,7 +87,6 @@ class Parameter(AnyObject):
     def hidden(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Hidden() As boolean
@@ -114,7 +109,6 @@ class Parameter(AnyObject):
     def is_true_parameter(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property IsTrueParameter() As boolean (Read Only)
@@ -130,7 +124,6 @@ class Parameter(AnyObject):
     def optional_relation(self) -> Relation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OptionalRelation() As Relation (Read Only)
@@ -158,7 +151,6 @@ class Parameter(AnyObject):
     def read_only(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ReadOnly() As boolean (Read Only)
@@ -181,7 +173,6 @@ class Parameter(AnyObject):
     def renamed(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Renamed() As boolean (Read Only)
@@ -196,7 +187,6 @@ class Parameter(AnyObject):
     def user_access_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property UserAccessMode() As long (Read Only)
@@ -217,7 +207,6 @@ class Parameter(AnyObject):
     def rename(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Rename(CATBSTR iName)
@@ -244,7 +233,6 @@ class Parameter(AnyObject):
     def valuate_from_string(self, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub ValuateFromString(CATBSTR iValue)
@@ -276,7 +264,6 @@ class Parameter(AnyObject):
     def value_as_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ValueAsString() As CATBSTR
@@ -299,4 +286,4 @@ class Parameter(AnyObject):
         return self.com_object.ValueAsString()
 
     def __repr__(self):
-        return f'Parameter(name="{ self.name }")'
+        return f'Parameter(name="{self.name}")'

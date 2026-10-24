@@ -13,10 +13,8 @@ from pycatia3dx.del_point_operation.point_operation import PointOperation
 
 
 class PointOperationFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,10 +37,10 @@ class PointOperationFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_point_operation(self, i_type: str, iref_inst: AnyObject, i_before: bool, i_tag: AnyObject, i_tag_owner_occ: AnyObject) -> PointOperation:
+    def create_point_operation(self, i_type: str, iref_inst: AnyObject, i_before: bool, i_tag: AnyObject,
+                               i_tag_owner_occ: AnyObject) -> PointOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePointOperation(CATBSTR iType,AnyObject irefInst,boolean
@@ -94,12 +92,13 @@ class PointOperationFactory(AnyObject):
         :param AnyObject i_tag_owner_occ:
         :return: PointOperation
         """
-        return PointOperation(self.com_object.CreatePointOperation(i_type, iref_inst.com_object, i_before, i_tag.com_object, i_tag_owner_occ.com_object))
+        return PointOperation(
+            self.com_object.CreatePointOperation(i_type, iref_inst.com_object, i_before, i_tag.com_object,
+                                                 i_tag_owner_occ.com_object))
 
     def delete_point_operation(self, i_point_operation: PointOperation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeletePointOperation(PointOperation iPointOperation)
@@ -127,4 +126,4 @@ class PointOperationFactory(AnyObject):
         return self.com_object.DeletePointOperation(i_point_operation.com_object)
 
     def __repr__(self):
-        return f'PointOperationFactory(name="{ self.name }")'
+        return f'PointOperationFactory(name="{self.name}")'

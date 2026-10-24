@@ -15,7 +15,6 @@ from pycatia3dx.measure.measure_item import MeasureItem
 class MeasureService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class MeasureService(Service):
     def get_measure_between(self, i_first_selections: tuple, i_second_selections: tuple) -> MeasureBetween:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func GetMeasureBetween(CATSafeArrayVariant iFirstSelections,CATSafeArrayVariant
@@ -77,7 +75,6 @@ class MeasureService(Service):
     def get_measure_item(self, i_selections: tuple) -> MeasureItem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func GetMeasureItem(CATSafeArrayVariant iSelections) As

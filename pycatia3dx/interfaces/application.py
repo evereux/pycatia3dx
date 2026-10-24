@@ -80,7 +80,6 @@ class Application(AnyObject):
     def active_editor(self) -> 'Editor':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ActiveEditor() As Editor (Read Only)
@@ -108,7 +107,6 @@ class Application(AnyObject):
     def active_printer(self) -> Printer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ActivePrinter() As Printer
@@ -142,7 +140,6 @@ class Application(AnyObject):
     def active_window(self) -> Window:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ActiveWindow() As Window (Read Only)
@@ -168,7 +165,6 @@ class Application(AnyObject):
     def cache_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property CacheSize() As long
@@ -201,7 +197,6 @@ class Application(AnyObject):
     def caption(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Caption() As CATBSTR
@@ -237,7 +232,6 @@ class Application(AnyObject):
     def display_file_alerts(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property DisplayFileAlerts() As boolean
@@ -275,7 +269,6 @@ class Application(AnyObject):
     def editors(self) -> Editors:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Editors() As Editors (Read Only)
@@ -301,7 +294,6 @@ class Application(AnyObject):
     def file_system(self) -> FileSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property FileSystem() As FileSystem (Read Only)
@@ -328,8 +320,7 @@ class Application(AnyObject):
         # noinspection GrazieInspection
         """
                 .. note::
-                    :class: toggle
-
+        
                     3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                         | Property FullName() As CATBSTR (Read Only)
                         |     Returns the application's executable file full name, including its
@@ -364,7 +355,6 @@ class Application(AnyObject):
     def hso_synchronized(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property HSOSynchronized() As boolean
@@ -422,7 +412,6 @@ class Application(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Height() As float
@@ -455,7 +444,6 @@ class Application(AnyObject):
     def interactive(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Interactive() As boolean
@@ -488,7 +476,6 @@ class Application(AnyObject):
     def left(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Left() As float
@@ -523,7 +510,6 @@ class Application(AnyObject):
     def local_cache(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LocalCache() As CATBSTR
@@ -557,8 +543,7 @@ class Application(AnyObject):
         # noinspection GrazieInspection
         """
                 .. note::
-                    :class: toggle
-
+        
                     3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                         | Property Path() As CATBSTR (Read Only)
                         |     Returns the path of the application's executable files.
@@ -591,7 +576,6 @@ class Application(AnyObject):
     def printers(self) -> Printers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Printers() As Printers (Read Only)
@@ -617,7 +601,6 @@ class Application(AnyObject):
     def refresh_display(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property RefreshDisplay() As boolean
@@ -655,7 +638,6 @@ class Application(AnyObject):
     def script_command(self) -> CatScriptCommand:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ScriptCommand() As CatScriptCommand
@@ -869,7 +851,6 @@ class Application(AnyObject):
     def status_bar(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property StatusBar() As CATBSTR
@@ -921,7 +902,6 @@ class Application(AnyObject):
     def system_configuration(self) -> SystemConfiguration:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property SystemConfiguration() As SystemConfiguration (Read
@@ -942,7 +922,6 @@ class Application(AnyObject):
     def system_service(self) -> SystemService:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property SystemService() As SystemService (Read Only)
@@ -966,7 +945,6 @@ class Application(AnyObject):
     def top(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Top() As float
@@ -1000,7 +978,6 @@ class Application(AnyObject):
     def undo_redo_lock(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property UndoRedoLock() As boolean
@@ -1037,7 +1014,6 @@ class Application(AnyObject):
     def user_interface_language(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property UserInterfaceLanguage() As CATBSTR (Read Only)
@@ -1089,7 +1065,6 @@ class Application(AnyObject):
     def visible(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Visible() As boolean
@@ -1122,7 +1097,6 @@ class Application(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Width() As float
@@ -1155,7 +1129,6 @@ class Application(AnyObject):
     def windows(self) -> Windows:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Windows() As Windows (Read Only)
@@ -1180,7 +1153,6 @@ class Application(AnyObject):
     def disable_new_undo_redo_transaction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub DisableNewUndoRedoTransaction()
@@ -1207,7 +1179,6 @@ class Application(AnyObject):
     def enable_new_undo_redo_transaction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub EnableNewUndoRedoTransaction()
@@ -1226,7 +1197,6 @@ class Application(AnyObject):
     def file_selection_box(self, i_title: str, i_extension: str, i_mode: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func FileSelectionBox(CATBSTR iTitle,CATBSTR iExtension,CatFileSelectionMode
@@ -1270,7 +1240,6 @@ class Application(AnyObject):
     def folder_selection_box(self, i_title: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func FolderSelectionBox(CATBSTR iTitle) As CATBSTR
@@ -1305,7 +1274,6 @@ class Application(AnyObject):
     def get_session_service(self, i_service: str) -> Service:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetSessionService(CATBSTR iService) As Service
@@ -1340,7 +1308,6 @@ class Application(AnyObject):
     def get_workbench_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetWorkbenchId() As CATBSTR
@@ -1358,7 +1325,6 @@ class Application(AnyObject):
     def help(self, i_help_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Help(CATBSTR iHelpID)
@@ -1503,7 +1469,6 @@ class Application(AnyObject):
     def quit(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Quit()
@@ -1524,7 +1489,6 @@ class Application(AnyObject):
     def start_command(self, i_command_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub StartCommand(CATBSTR iCommandId)
@@ -1550,7 +1514,6 @@ class Application(AnyObject):
     def start_workbench(self, i_workbench_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub StartWorkbench(CATBSTR iWorkbenchId)

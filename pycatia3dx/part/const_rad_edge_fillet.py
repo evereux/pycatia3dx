@@ -16,10 +16,8 @@ from pycatia3dx.part.var_rad_edge_fillet import VarRadEdgeFillet
 
 
 class ConstRadEdgeFillet(EdgeFillet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class ConstRadEdgeFillet(EdgeFillet):
     def objects_to_fillet(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectsToFillet() As References (Read Only)
@@ -71,7 +68,6 @@ class ConstRadEdgeFillet(EdgeFillet):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Radius() As Length (Read Only)
@@ -91,7 +87,6 @@ class ConstRadEdgeFillet(EdgeFillet):
     def add_object_to_fillet(self, i_object_to_fillet: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddObjectToFillet(Reference iObjectToFillet)
@@ -120,7 +115,6 @@ class ConstRadEdgeFillet(EdgeFillet):
     def switch_to_var_fillet_type(self) -> VarRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SwitchToVarFilletType() As VarRadEdgeFillet
@@ -139,7 +133,6 @@ class ConstRadEdgeFillet(EdgeFillet):
     def withdraw_object_to_fillet(self, i_object_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawObjectToFillet(Reference iObjectToWithdraw)
@@ -166,4 +159,4 @@ class ConstRadEdgeFillet(EdgeFillet):
         return self.com_object.WithdrawObjectToFillet(i_object_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'ConstRadEdgeFillet(name="{ self.name }")'
+        return f'ConstRadEdgeFillet(name="{self.name}")'

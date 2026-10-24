@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
 
 
 class RscInstruction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RscInstruction(AnyObject):
     def father_instruction(self) -> 'RscInstruction':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FatherInstruction() As RscInstruction (Read Only)
@@ -76,7 +73,6 @@ class RscInstruction(AnyObject):
     def goto_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GotoInstructions() As CATSafeArrayVariant (Read Only)
@@ -110,7 +106,6 @@ class RscInstruction(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As short (Read Only)
@@ -144,7 +139,6 @@ class RscInstruction(AnyObject):
     def label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Label() As CATBSTR
@@ -193,7 +187,6 @@ class RscInstruction(AnyObject):
     def get_data_entity_from_name(self, i_name: str) -> RscDataEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDataEntityFromName(CATBSTR iName) As RscDataEntity
@@ -234,7 +227,6 @@ class RscInstruction(AnyObject):
     def move(self, i_param: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Move(DELRscMoveParameter iParam)
@@ -280,7 +272,6 @@ class RscInstruction(AnyObject):
     def move_to_other_sequence(self, i_in_sequence: 'RscInstruction', i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveToOtherSequence(RscInstruction iInSequence,short
@@ -326,7 +317,6 @@ class RscInstruction(AnyObject):
     def remove_label(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLabel()
@@ -353,4 +343,4 @@ class RscInstruction(AnyObject):
         return self.com_object.RemoveLabel()
 
     def __repr__(self):
-        return f'RscInstruction(name="{ self.name }")'
+        return f'RscInstruction(name="{self.name}")'

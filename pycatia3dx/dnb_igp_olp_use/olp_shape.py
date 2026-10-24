@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPShape(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPShape(AnyObject):
     def shape_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShapeType() As CATBSTR (Read Only)
@@ -56,4 +53,4 @@ class OLPShape(AnyObject):
         return self.com_object.ShapeType
 
     def __repr__(self):
-        return f'OLPShape(name="{ self.name }")'
+        return f'OLPShape(name="{self.name}")'

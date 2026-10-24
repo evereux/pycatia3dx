@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_results.sim_legend import SimLegend
 
 
 class SimFieldPlot(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +54,6 @@ class SimFieldPlot(AnyObject):
     def activation_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActivationStatus() As boolean
@@ -83,7 +80,6 @@ class SimFieldPlot(AnyObject):
     def computed_deformation_scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComputedDeformationScaleFactor() As double (Read
@@ -107,7 +103,6 @@ class SimFieldPlot(AnyObject):
     def current_frame(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentFrame(long inFrame) (Write Only)
@@ -136,7 +131,6 @@ class SimFieldPlot(AnyObject):
     def deformation_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeformationStatus() As boolean
@@ -160,7 +154,6 @@ class SimFieldPlot(AnyObject):
     def display_group(self) -> SimDisplayGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayGroup() As SimDisplayGroup
@@ -183,7 +176,6 @@ class SimFieldPlot(AnyObject):
     def field_defination(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldDefination() As CATBaseDispatch
@@ -209,7 +201,6 @@ class SimFieldPlot(AnyObject):
     def legend(self) -> SimLegend:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Legend() As SimLegend (Read Only)
@@ -229,7 +220,6 @@ class SimFieldPlot(AnyObject):
     def max_deformation_scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxDeformationScaleFactor() As double (Read Only)
@@ -253,7 +243,6 @@ class SimFieldPlot(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimFieldPlotTypes (Read Only)
@@ -267,7 +256,6 @@ class SimFieldPlot(AnyObject):
     def are_scale_factors_imposed(self, ib_ignore_anim: bool) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AreScaleFactorsImposed(boolean ibIgnoreAnim) As boolean
@@ -296,7 +284,6 @@ class SimFieldPlot(AnyObject):
     def get_current_frame(self, ib_normalize: bool) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCurrentFrame(boolean ibNormalize) As long
@@ -320,10 +307,10 @@ class SimFieldPlot(AnyObject):
         """
         return self.com_object.GetCurrentFrame(ib_normalize)
 
-    def get_deformation_scale_factors(self, o_x_deformation_scale_factor: float, o_y_deformation_scale_factor: float, o_z_deformation_scale_factor: float) -> None:
+    def get_deformation_scale_factors(self, o_x_deformation_scale_factor: float, o_y_deformation_scale_factor: float,
+                                      o_z_deformation_scale_factor: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDeformationScaleFactors(double oXDeformationScaleFactor,double
@@ -352,12 +339,12 @@ class SimFieldPlot(AnyObject):
         :param float o_z_deformation_scale_factor:
         :return: None
         """
-        return self.com_object.GetDeformationScaleFactors(o_x_deformation_scale_factor, o_y_deformation_scale_factor, o_z_deformation_scale_factor)
+        return self.com_object.GetDeformationScaleFactors(o_x_deformation_scale_factor, o_y_deformation_scale_factor,
+                                                          o_z_deformation_scale_factor)
 
     def get_identifier(self, o_field_plot_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetIdentifier(CATBSTR oFieldPlotID)
@@ -372,7 +359,6 @@ class SimFieldPlot(AnyObject):
     def get_step_and_frame(self, ocs_step: str, on_frame: int, on_load_case: int, ib_normalize: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStepAndFrame(CATBSTR ocsStep,long onFrame,long onLoadCase,boolean
@@ -411,7 +397,6 @@ class SimFieldPlot(AnyObject):
     def refresh(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Refresh()
@@ -426,7 +411,6 @@ class SimFieldPlot(AnyObject):
     def reset_deformation_scale_factors(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetDeformationScaleFactors()
@@ -443,10 +427,10 @@ class SimFieldPlot(AnyObject):
         """
         return self.com_object.ResetDeformationScaleFactors()
 
-    def set_deformation_scale_factors(self, i_x_deformation_scale_factor: float, i_y_deformation_scale_factor: float, i_z_deformation_scale_factor: float) -> None:
+    def set_deformation_scale_factors(self, i_x_deformation_scale_factor: float, i_y_deformation_scale_factor: float,
+                                      i_z_deformation_scale_factor: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeformationScaleFactors(double iXDeformationScaleFactor,double
@@ -475,12 +459,12 @@ class SimFieldPlot(AnyObject):
         :param float i_z_deformation_scale_factor:
         :return: None
         """
-        return self.com_object.SetDeformationScaleFactors(i_x_deformation_scale_factor, i_y_deformation_scale_factor, i_z_deformation_scale_factor)
+        return self.com_object.SetDeformationScaleFactors(i_x_deformation_scale_factor, i_y_deformation_scale_factor,
+                                                          i_z_deformation_scale_factor)
 
     def set_step_and_frame(self, ics_step: str, in_frame: int, in_load_case: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStepAndFrame(CATBSTR icsStep,long inFrame,long
@@ -511,4 +495,4 @@ class SimFieldPlot(AnyObject):
         return self.com_object.SetStepAndFrame(ics_step, in_frame, in_load_case)
 
     def __repr__(self):
-        return f'SimFieldPlot(name="{ self.name }")'
+        return f'SimFieldPlot(name="{self.name}")'

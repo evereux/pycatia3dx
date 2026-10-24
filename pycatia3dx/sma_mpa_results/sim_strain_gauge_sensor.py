@@ -11,10 +11,8 @@ from pycatia3dx.sma_mpa_results.sim_sensor_base import SimSensorBase
 
 
 class SimStrainGaugeSensor(SimSensorBase):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def gauge_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GaugeTolerance() As double
@@ -84,7 +81,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def position_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionType() As SimStrainGaugePositionType
@@ -113,7 +109,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def show_glyph(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShowGlyph() As boolean
@@ -137,7 +132,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def track_current_frame(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TrackCurrentFrame() As boolean
@@ -162,7 +156,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def variable_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariableType() As SimStrainGaugeVariableType
@@ -185,7 +178,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def export(self, ics_file_name: str, ics_file_location: str, ie_file_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
@@ -216,10 +208,10 @@ class SimStrainGaugeSensor(SimSensorBase):
         """
         return self.com_object.Export(ics_file_name, ics_file_location, ie_file_type)
 
-    def get_axis_directions(self, in_index: int, od_measurement_x: float, od_measurement_y: float, od_measurement_z: float, od_set_x: float, od_set_y: float, od_set_z: float) -> None:
+    def get_axis_directions(self, in_index: int, od_measurement_x: float, od_measurement_y: float,
+                            od_measurement_z: float, od_set_x: float, od_set_y: float, od_set_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisDirections(long inIndex,double odMeasurementX,double
@@ -256,12 +248,12 @@ class SimStrainGaugeSensor(SimSensorBase):
         :param float od_set_z:
         :return: None
         """
-        return self.com_object.GetAxisDirections(in_index, od_measurement_x, od_measurement_y, od_measurement_z, od_set_x, od_set_y, od_set_z)
+        return self.com_object.GetAxisDirections(in_index, od_measurement_x, od_measurement_y, od_measurement_z,
+                                                 od_set_x, od_set_y, od_set_z)
 
     def get_number_of_gauge_values(self, on_rows: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberOfGaugeValues(long onRows)
@@ -280,10 +272,10 @@ class SimStrainGaugeSensor(SimSensorBase):
         """
         return self.com_object.GetNumberOfGaugeValues(on_rows)
 
-    def get_origin_locations(self, in_index: int, on_id: int, od_origin_x: float, od_origin_y: float, od_origin_z: float) -> None:
+    def get_origin_locations(self, in_index: int, on_id: int, od_origin_x: float, od_origin_y: float,
+                             od_origin_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOriginLocations(long inIndex,long onID,double odOriginX,double
@@ -316,7 +308,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def get_size(self, ob_specify: bool, od_length: float, od_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSize(boolean obSpecify,double odLength,double odWidth)
@@ -342,7 +333,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def get_step_and_frame(self, ocs_persistent_step_id: str, on_frame_index: int, on_load_case_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStepAndFrame(CATBSTR ocsPersistentStepID,long onFrameIndex,long
@@ -366,10 +356,10 @@ class SimStrainGaugeSensor(SimSensorBase):
         """
         return self.com_object.GetStepAndFrame(ocs_persistent_step_id, on_frame_index, on_load_case_index)
 
-    def set_axis_directions(self, id_measurement_x: float, id_measurement_y: float, id_measurement_z: float, id_set_x: float, id_set_y: float, id_set_z: float) -> None:
+    def set_axis_directions(self, id_measurement_x: float, id_measurement_y: float, id_measurement_z: float,
+                            id_set_x: float, id_set_y: float, id_set_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisDirections(double idMeasurementX,double idMeasurementY,double
@@ -403,12 +393,12 @@ class SimStrainGaugeSensor(SimSensorBase):
         :param float id_set_z:
         :return: None
         """
-        return self.com_object.SetAxisDirections(id_measurement_x, id_measurement_y, id_measurement_z, id_set_x, id_set_y, id_set_z)
+        return self.com_object.SetAxisDirections(id_measurement_x, id_measurement_y, id_measurement_z, id_set_x,
+                                                 id_set_y, id_set_z)
 
     def set_origin_locations(self, i_id: int, id_origin_x: float, id_origin_y: float, id_origin_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOriginLocations(long iId,double idOriginX,double idOriginY,double
@@ -442,7 +432,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def set_size(self, ib_specify: bool, id_length: float, id_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSize(boolean ibSpecify,double idLength,double idWidth)
@@ -468,7 +457,6 @@ class SimStrainGaugeSensor(SimSensorBase):
     def set_step_and_frame(self, ics_persistent_step_id: str, in_frame_index: int, in_load_case_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
@@ -494,4 +482,4 @@ class SimStrainGaugeSensor(SimSensorBase):
         return self.com_object.SetStepAndFrame(ics_persistent_step_id, in_frame_index, in_load_case_index)
 
     def __repr__(self):
-        return f'SimStrainGaugeSensor(name="{ self.name }")'
+        return f'SimStrainGaugeSensor(name="{self.name}")'

@@ -15,10 +15,8 @@ from pycatia3dx.sde.ssm_tool_set import SsmToolSet
 
 
 class SsmSpaceManager(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class SsmSpaceManager(AnyObject):
     def bounding_box(self) -> SsmSpaceInput:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoundingBox() As SsmSpaceInput (Read Only)
@@ -64,7 +61,6 @@ class SsmSpaceManager(AnyObject):
     def cutting_set(self) -> SsmCuttingSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CuttingSet() As SsmCuttingSet (Read Only)
@@ -87,7 +83,6 @@ class SsmSpaceManager(AnyObject):
     def external_volume(self) -> SsmSpaceInput:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExternalVolume() As SsmSpaceInput (Read Only)
@@ -110,7 +105,6 @@ class SsmSpaceManager(AnyObject):
     def internal_space_set(self) -> SsmToolSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InternalSpaceSet() As SsmToolSet (Read Only)
@@ -133,7 +127,6 @@ class SsmSpaceManager(AnyObject):
     def space_cell_set(self) -> SsmToolSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceCellSet() As SsmToolSet (Read Only)
@@ -153,4 +146,4 @@ class SsmSpaceManager(AnyObject):
         return SsmToolSet(self.com_object.SpaceCellSet)
 
     def __repr__(self):
-        return f'SsmSpaceManager(name="{ self.name }")'
+        return f'SsmSpaceManager(name="{self.name}")'

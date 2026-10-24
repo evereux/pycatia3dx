@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimContactVirtualPart(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimContactVirtualPart(AnyObject):
     def contact_virtual_part_reference_point_input_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ContactVirtualPartReferencePointInputMode() As
@@ -101,7 +98,6 @@ class SimContactVirtualPart(AnyObject):
     def initial_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialClearance() As double
@@ -125,7 +121,6 @@ class SimContactVirtualPart(AnyObject):
     def reference_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePoint() As SimPoint (Read Only)
@@ -140,7 +135,6 @@ class SimContactVirtualPart(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -177,4 +171,4 @@ class SimContactVirtualPart(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimContactVirtualPart(name="{ self.name }")'
+        return f'SimContactVirtualPart(name="{self.name}")'

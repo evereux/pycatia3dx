@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrPosSupportFace(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class StrPosSupportFace(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Role() As CATBSTR (Read Only)
@@ -71,7 +68,6 @@ class StrPosSupportFace(AnyObject):
     def get_face_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFaceSide() As long
@@ -102,7 +98,6 @@ class StrPosSupportFace(AnyObject):
     def set_face_side(self, i_face_side: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFaceSide(long iFaceSide)
@@ -132,4 +127,4 @@ class StrPosSupportFace(AnyObject):
         return self.com_object.SetFaceSide(i_face_side)
 
     def __repr__(self):
-        return f'StrPosSupportFace(name="{ self.name }")'
+        return f'StrPosSupportFace(name="{self.name}")'

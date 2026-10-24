@@ -25,7 +25,6 @@ if TYPE_CHECKING:
 class Capture(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +47,6 @@ class Capture(AnyObject):
     def active_view(self) -> TPSView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveView() As TPSView
@@ -71,7 +69,6 @@ class Capture(AnyObject):
     def active_view_state(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveViewState() As boolean
@@ -96,7 +93,6 @@ class Capture(AnyObject):
     def annotations(self) -> Annotations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Annotations() As Annotations
@@ -119,7 +115,6 @@ class Capture(AnyObject):
     def camera(self) -> Camera3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Camera() As Camera3D
@@ -143,7 +138,6 @@ class Capture(AnyObject):
     def clipping_plane(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClippingPlane() As boolean
@@ -174,7 +168,6 @@ class Capture(AnyObject):
     def current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Current() As boolean
@@ -204,7 +197,6 @@ class Capture(AnyObject):
     def manage_hide_show_body(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ManageHideShowBody() As boolean
@@ -234,7 +226,6 @@ class Capture(AnyObject):
     def set(self) -> 'AnnotationSet':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Set() As AnnotationSet (Read Only)
@@ -249,7 +240,6 @@ class Capture(AnyObject):
     def tps_views(self) -> TPSViews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPSViews() As TPSViews
@@ -272,7 +262,6 @@ class Capture(AnyObject):
     def view_point(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViewPoint() As boolean
@@ -298,7 +287,6 @@ class Capture(AnyObject):
     def view_point_3d(self) -> ViewPoint3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViewPoint3D() As Viewpoint3D
@@ -320,7 +308,6 @@ class Capture(AnyObject):
     def add_view_point3_d(self, i_view_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddViewPoint3D(CATBSTR iViewName)
@@ -352,7 +339,6 @@ class Capture(AnyObject):
     def display_capture(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DisplayCapture()
@@ -365,7 +351,6 @@ class Capture(AnyObject):
     def display_capture2(self, ib_apply_mirror: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DisplayCapture2(boolean ibApplyMirror)
@@ -387,7 +372,6 @@ class Capture(AnyObject):
     def get_nbr_of_part_inst_and_body(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrOfPartInstAndBody() As long
@@ -409,7 +393,6 @@ class Capture(AnyObject):
     def get_part_inst_and_body(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetPartInstAndBody(CATSafeArrayVariant oListOfElements)
@@ -452,7 +435,6 @@ class Capture(AnyObject):
     def hyper_link_manager(self) -> TPSHyperLinksManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HyperLinkManager() As TPSHyperLinksManager
@@ -465,7 +447,6 @@ class Capture(AnyObject):
     def remove_view_point3_d(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveViewPoint3D()
@@ -478,7 +459,6 @@ class Capture(AnyObject):
     def set_part_inst_and_body(self, i_list_of_elements: tuple, i_entity_count: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetPartInstAndBody(CATSafeArrayVariant iListOfElements,long
@@ -520,7 +500,6 @@ class Capture(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen

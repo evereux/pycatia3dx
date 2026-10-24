@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 class FitTrack(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class FitTrack(AnyObject):
     def interpolater(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Interpolater(DNBInterpolater iInterpolater)
@@ -80,7 +78,6 @@ class FitTrack(AnyObject):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode(DNBTrackMode iMode)
@@ -114,7 +111,6 @@ class FitTrack(AnyObject):
     def speed(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Speed(double iSpeed)
@@ -148,7 +144,6 @@ class FitTrack(AnyObject):
     def t_points(self) -> FitTrackTPoints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPoints() As FitTrackTPoints (Read Only)
@@ -171,7 +166,6 @@ class FitTrack(AnyObject):
     def total_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalTime(double iTime)
@@ -204,7 +198,6 @@ class FitTrack(AnyObject):
     def add_moving_object(self, i_moving_object: AnyObject, i_part_pos: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddMovingObject(CATBaseDispatch iMovingObject,CATSafeArrayVariant
@@ -254,7 +247,6 @@ class FitTrack(AnyObject):
     def get_anchor_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAnchorPosition(CATSafeArrayVariant iComponents)
@@ -325,7 +317,6 @@ class FitTrack(AnyObject):
     def get_moving_objects(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMovingObjects(CATSafeArrayVariant iMovingObjects)
@@ -369,7 +360,6 @@ class FitTrack(AnyObject):
     def get_number_moving_objects(self, i_num_objects: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberMovingObjects(CATVariant iNumObjects)
@@ -397,7 +387,6 @@ class FitTrack(AnyObject):
     def get_number_of_t_points(self, i_num_t_points: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberOfTPoints(CATVariant iNumTPoints)
@@ -425,7 +414,6 @@ class FitTrack(AnyObject):
     def get_part_relative_position(self, i_moving_object: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartRelativePosition(CATBaseDispatch iMovingObject) As
@@ -459,7 +447,6 @@ class FitTrack(AnyObject):
     def refresh(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Refresh()
@@ -479,7 +466,6 @@ class FitTrack(AnyObject):
     def remove_moving_object(self, i_moving_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveMovingObject(CATBaseDispatch iMovingObject)
@@ -509,7 +495,6 @@ class FitTrack(AnyObject):
     def set_anchor_position(self, i_components: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAnchorPosition(CATSafeArrayVariant iComponents)
@@ -593,7 +578,6 @@ class FitTrack(AnyObject):
     def set_part_relative_position(self, i_moving_object: AnyObject, i_part_offset: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPartRelativePosition(CATBaseDispatch iMovingObject,CATSafeArrayVariant

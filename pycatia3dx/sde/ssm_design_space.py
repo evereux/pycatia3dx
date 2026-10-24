@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmDesignSpace(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SsmDesignSpace(AnyObject):
     def floor_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FloorArea() As double (Read Only)
@@ -53,4 +50,4 @@ class SsmDesignSpace(AnyObject):
         return self.com_object.FloorArea
 
     def __repr__(self):
-        return f'SsmDesignSpace(name="{ self.name }")'
+        return f'SsmDesignSpace(name="{self.name}")'

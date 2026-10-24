@@ -15,7 +15,6 @@ from pycatia3dx.product_structure_client.vpm_reference import VPMReference
 class VPMInstance(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class VPMInstance(PLMEntity):
     def position(self) -> Position:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Position() As Position (Read Only)
@@ -68,7 +66,6 @@ class VPMInstance(PLMEntity):
     def reference_instance_of(self) -> VPMReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceInstanceOf() As VPMReference (Read Only)

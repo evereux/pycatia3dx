@@ -15,7 +15,6 @@ from pycatia3dx.mmr_automation_interfaces.bi_dim_feat_edge import BiDimFeatEdge
 class RectilinearBiDimFeatEdge(BiDimFeatEdge):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -52,7 +51,6 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetDirection(CATSafeArrayVariant oDirection)
@@ -90,7 +88,6 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)

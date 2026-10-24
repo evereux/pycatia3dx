@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimPlastic(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimPlastic(AnyObject):
     def isotropic_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsotropicMaterialTable() As SimMaterialTable (Read
@@ -93,7 +90,6 @@ class SimPlastic(AnyObject):
     def kinematic_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KinematicMaterialTable() As SimMaterialTable (Read
@@ -109,7 +105,6 @@ class SimPlastic(AnyObject):
     def number_of_back_stresses(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfBackStresses() As long
@@ -132,7 +127,6 @@ class SimPlastic(AnyObject):
     def plastic_hardening(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlasticHardening() As SimPlasticPlasticHardening
@@ -155,7 +149,6 @@ class SimPlastic(AnyObject):
     def plastic_yield_criterion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlasticYieldCriterion() As
@@ -179,7 +172,6 @@ class SimPlastic(AnyObject):
     def potential_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PotentialMaterialTable() As SimMaterialTable (Read
@@ -194,7 +186,6 @@ class SimPlastic(AnyObject):
     def get_isotropic_material_table_column(self, i_isotropic_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIsotropicMaterialTableColumn(SimPlasticIsotropicMaterialTableColumn
@@ -219,7 +210,6 @@ class SimPlastic(AnyObject):
     def get_kinematic_material_table_column(self, i_kinematic_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetKinematicMaterialTableColumn(SimPlasticKinematicMaterialTableColumn
@@ -244,7 +234,6 @@ class SimPlastic(AnyObject):
     def get_potential_material_table_column(self, i_potential_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPotentialMaterialTableColumn(SimPlasticPotentialMaterialTableColumn
@@ -267,4 +256,4 @@ class SimPlastic(AnyObject):
         return SimTableColumn(self.com_object.GetPotentialMaterialTableColumn(i_potential_material_table_column))
 
     def __repr__(self):
-        return f'SimPlastic(name="{ self.name }")'
+        return f'SimPlastic(name="{self.name}")'

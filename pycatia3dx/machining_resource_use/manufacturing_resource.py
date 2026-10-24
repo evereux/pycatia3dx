@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingResource(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class ManufacturingResource(AnyObject):
     def get_default_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDefaultName() As CATBSTR
@@ -57,7 +55,6 @@ class ManufacturingResource(AnyObject):
     def get_linked_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLinkedObject() As AnyObject
@@ -83,7 +80,6 @@ class ManufacturingResource(AnyObject):
     def get_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetName() As CATBSTR
@@ -101,7 +97,6 @@ class ManufacturingResource(AnyObject):
     def get_parametrization(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParametrization() As CATSafeArrayVariant
@@ -127,7 +122,6 @@ class ManufacturingResource(AnyObject):
     def get_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetType() As CATBSTR
@@ -145,7 +139,6 @@ class ManufacturingResource(AnyObject):
     def get_value_boolean(self, i_attribute: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueBoolean(CATBSTR iAttribute) As boolean
@@ -167,7 +160,6 @@ class ManufacturingResource(AnyObject):
     def get_value_double(self, i_attribute: str, i_unit: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueDouble(CATBSTR iAttribute,long iUnit) As double
@@ -197,7 +189,6 @@ class ManufacturingResource(AnyObject):
     def get_value_long(self, i_attribute: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueLong(CATBSTR iAttribute) As long
@@ -219,7 +210,6 @@ class ManufacturingResource(AnyObject):
     def get_value_parameter(self, i_attribute: str) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueParameter(CATBSTR iAttribute) As Parameter
@@ -244,7 +234,6 @@ class ManufacturingResource(AnyObject):
     def get_value_str(self, i_attribute: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueStr(CATBSTR iAttribute) As CATBSTR
@@ -267,7 +256,6 @@ class ManufacturingResource(AnyObject):
                    o_list_int_values: tuple, o_list_dbl_values: tuple, o_list_str_values: tuple, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetValues(CATSafeArrayVariant iListAttributes,CATSafeArrayVariant
@@ -338,7 +326,6 @@ class ManufacturingResource(AnyObject):
     def get_version(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVersion() As long
@@ -356,7 +343,6 @@ class ManufacturingResource(AnyObject):
     def set_default_name(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDefaultName()
@@ -369,7 +355,6 @@ class ManufacturingResource(AnyObject):
     def set_default_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDefaultValues()
@@ -382,7 +367,6 @@ class ManufacturingResource(AnyObject):
     def set_linked_object(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLinkedObject(AnyObject iObject)
@@ -408,7 +392,6 @@ class ManufacturingResource(AnyObject):
     def set_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetName(CATBSTR iName)
@@ -427,7 +410,6 @@ class ManufacturingResource(AnyObject):
     def set_parametrization(self, i_value: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetParametrization(CATSafeArrayVariant iValue)
@@ -470,7 +452,6 @@ class ManufacturingResource(AnyObject):
     def set_value_boolean(self, i_attribute: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueBoolean(CATBSTR iAttribute,boolean iValue)
@@ -492,7 +473,6 @@ class ManufacturingResource(AnyObject):
     def set_value_double(self, i_attribute: str, i_value: float, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueDouble(CATBSTR iAttribute,double iValue,long
@@ -523,7 +503,6 @@ class ManufacturingResource(AnyObject):
     def set_value_long(self, i_attribute: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueLong(CATBSTR iAttribute,long iValue)
@@ -545,7 +524,6 @@ class ManufacturingResource(AnyObject):
     def set_value_parameter(self, i_attribute: str, i_value: Parameter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueParameter(CATBSTR iAttribute,Parameter iValue)
@@ -571,7 +549,6 @@ class ManufacturingResource(AnyObject):
     def set_value_str(self, i_attribute: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueStr(CATBSTR iAttribute,CATBSTR iValue)
@@ -602,7 +579,6 @@ class ManufacturingResource(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetValues(CATSafeArrayVariant iListAttributes,CATSafeArrayVariant

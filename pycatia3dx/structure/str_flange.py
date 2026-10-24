@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class StrFlange(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class StrFlange(AnyObject):
     def bending_angle(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BendingAngle() As Parameter (Read Only)
@@ -68,7 +66,6 @@ class StrFlange(AnyObject):
     def bending_radius(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BendingRadius() As Parameter (Read Only)
@@ -93,7 +90,6 @@ class StrFlange(AnyObject):
     def edge(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Edge() As Reference (Read Only)
@@ -121,7 +117,6 @@ class StrFlange(AnyObject):
     def end_end_cut_angle(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndEndCutAngle() As Parameter (Read Only)
@@ -146,7 +141,6 @@ class StrFlange(AnyObject):
     def end_end_cut_distance(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndEndCutDistance() As Parameter (Read Only)
@@ -171,7 +165,6 @@ class StrFlange(AnyObject):
     def end_end_cut_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndEndCutOffset() As Parameter (Read Only)
@@ -196,7 +189,6 @@ class StrFlange(AnyObject):
     def end_end_cut_radius(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndEndCutRadius() As Parameter (Read Only)
@@ -221,7 +213,6 @@ class StrFlange(AnyObject):
     def flange_end_limit(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlangeEndLimit() As Reference
@@ -265,7 +256,6 @@ class StrFlange(AnyObject):
     def flange_start_limit(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlangeStartLimit() As Reference
@@ -309,7 +299,6 @@ class StrFlange(AnyObject):
     def flange_width(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlangeWidth() As Parameter (Read Only)
@@ -334,7 +323,6 @@ class StrFlange(AnyObject):
     def operated_plate(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OperatedPlate() As Reference (Read Only)
@@ -359,7 +347,6 @@ class StrFlange(AnyObject):
     def start_end_cut_angle(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartEndCutAngle() As Parameter (Read Only)
@@ -384,7 +371,6 @@ class StrFlange(AnyObject):
     def start_end_cut_distance(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartEndCutDistance() As Parameter (Read Only)
@@ -409,7 +395,6 @@ class StrFlange(AnyObject):
     def start_end_cut_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartEndCutOffset() As Parameter (Read Only)
@@ -434,7 +419,6 @@ class StrFlange(AnyObject):
     def start_end_cut_radius(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartEndCutRadius() As Parameter (Read Only)
@@ -459,7 +443,6 @@ class StrFlange(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As long
@@ -504,7 +487,6 @@ class StrFlange(AnyObject):
     def width_measurement_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WidthMeasurementType() As long
@@ -551,7 +533,6 @@ class StrFlange(AnyObject):
     def set_edges(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetEdges(CATSafeArrayVariant iListOfEdgesIndex)

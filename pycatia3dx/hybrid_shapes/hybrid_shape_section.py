@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSection(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -45,7 +43,6 @@ class HybridShapeSection(HybridShape):
     def section_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SectionPlane() As Reference
@@ -77,4 +74,4 @@ class HybridShapeSection(HybridShape):
         self.com_object.SectionPlane = value
 
     def __repr__(self):
-        return f'HybridShapeSection(name="{ self.name }")'
+        return f'HybridShapeSection(name="{self.name}")'

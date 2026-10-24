@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrService(Service):
     def convert_reference_to_object(self, i_reference: Reference) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ConvertReferenceToObject(Reference iReference) As
@@ -72,10 +69,10 @@ class StrService(Service):
         """
         return AnyObject(self.com_object.ConvertReferenceToObject(i_reference.com_object))
 
-    def import_(self, i_usage: str, i_source_prod_occ: AnyObject, i_source_feature: AnyObject, i_target_prod_occ: AnyObject, i_target_feature: AnyObject, i_link_mode: int) -> AnyObject:
+    def import_(self, i_usage: str, i_source_prod_occ: AnyObject, i_source_feature: AnyObject,
+                i_target_prod_occ: AnyObject, i_target_feature: AnyObject, i_link_mode: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Import(CATBSTR iUsage,CATBaseDispatch iSourceProdOcc,CATBaseDispatch
@@ -110,7 +107,8 @@ class StrService(Service):
         :param int i_link_mode:
         :return: AnyObject
         """
-        return self.com_object.Import(i_usage, i_source_prod_occ.com_object, i_source_feature.com_object, i_target_prod_occ.com_object, i_target_feature.com_object, i_link_mode)
+        return self.com_object.Import(i_usage, i_source_prod_occ.com_object, i_source_feature.com_object,
+                                      i_target_prod_occ.com_object, i_target_feature.com_object, i_link_mode)
 
     def __repr__(self):
-        return f'StrService(name="{ self.name }")'
+        return f'StrService(name="{self.name}")'

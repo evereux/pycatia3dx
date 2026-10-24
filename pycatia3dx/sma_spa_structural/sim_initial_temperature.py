@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialTemperature(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimInitialTemperature(AnyObject):
     def absolute_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AbsoluteExteriorTolerance() As double
@@ -104,7 +101,6 @@ class SimInitialTemperature(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -127,7 +123,6 @@ class SimInitialTemperature(AnyObject):
     def analysis_case(self) -> SimThermalAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnalysisCase() As SimThermalAnalysisCase
@@ -150,7 +145,6 @@ class SimInitialTemperature(AnyObject):
     def from_step_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FromStepFlag() As boolean
@@ -187,7 +181,6 @@ class SimInitialTemperature(AnyObject):
     def increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Increment() As long
@@ -211,7 +204,6 @@ class SimInitialTemperature(AnyObject):
     def relative_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RelativeExteriorTolerance() As double
@@ -236,7 +228,6 @@ class SimInitialTemperature(AnyObject):
     def scalar_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScalarField() As SimScalarField (Read Only)
@@ -251,7 +242,6 @@ class SimInitialTemperature(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -267,7 +257,6 @@ class SimInitialTemperature(AnyObject):
     def step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Step() As SimStep
@@ -290,7 +279,6 @@ class SimInitialTemperature(AnyObject):
     def uniform_magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitude() As double
@@ -313,7 +301,6 @@ class SimInitialTemperature(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitudeFlag() As boolean (Read Only)
@@ -328,4 +315,4 @@ class SimInitialTemperature(AnyObject):
         return self.com_object.UniformMagnitudeFlag
 
     def __repr__(self):
-        return f'SimInitialTemperature(name="{ self.name }")'
+        return f'SimInitialTemperature(name="{self.name}")'

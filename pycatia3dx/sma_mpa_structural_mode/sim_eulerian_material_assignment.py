@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimEulerianMaterialAssignment(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -89,7 +87,6 @@ class SimEulerianMaterialAssignment(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -112,7 +109,6 @@ class SimEulerianMaterialAssignment(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -135,7 +131,6 @@ class SimEulerianMaterialAssignment(AnyObject):
     def material_location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialLocation() As SimEulerianMaterialLocation
@@ -159,7 +154,6 @@ class SimEulerianMaterialAssignment(AnyObject):
     def volume_fraction_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VolumeFractionType() As SimEulerianVolumeFractionType
@@ -180,4 +174,4 @@ class SimEulerianMaterialAssignment(AnyObject):
         self.com_object.VolumeFractionType = value
 
     def __repr__(self):
-        return f'SimEulerianMaterialAssignment(name="{ self.name }")'
+        return f'SimEulerianMaterialAssignment(name="{self.name}")'

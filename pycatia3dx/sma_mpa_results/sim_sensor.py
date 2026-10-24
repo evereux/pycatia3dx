@@ -12,10 +12,8 @@ from pycatia3dx.sma_mpa_results.sim_sensor_output_parameters import SimSensorOut
 
 
 class SimSensor(SimSensorBase):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +59,6 @@ class SimSensor(SimSensorBase):
     def annotation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Annotation(boolean ibShow) (Write Only)
@@ -85,7 +82,6 @@ class SimSensor(SimSensorBase):
     def averaging(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Averaging(SimAveraging ieAveraging) (Write Only)
@@ -108,7 +104,6 @@ class SimSensor(SimSensorBase):
     def combine_base_state(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CombineBaseState(boolean ibCombine) (Write Only)
@@ -131,7 +126,6 @@ class SimSensor(SimSensorBase):
     def complex_value(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComplexValue(SimComplexValues ieComplexValue) (Write
@@ -155,7 +149,6 @@ class SimSensor(SimSensorBase):
     def complex_value_at_angle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComplexValueAtAngle(double iValueAtAngle) (Write
@@ -185,7 +178,6 @@ class SimSensor(SimSensorBase):
     def component_quantity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
@@ -210,7 +202,6 @@ class SimSensor(SimSensorBase):
     def compute_quantity_before_averaging(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComputeQuantityBeforeAveraging(boolean ibQuantityBeforeAveraging)
@@ -234,7 +225,6 @@ class SimSensor(SimSensorBase):
     def coordinate_system(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoordinateSystem(CATBSTR icsCoordinateSystem) (Write
@@ -263,7 +253,6 @@ class SimSensor(SimSensorBase):
     def deformation_effects(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeformationEffects(boolean ibDeformationEffects) (Write
@@ -287,7 +276,6 @@ class SimSensor(SimSensorBase):
     def invariant_quantity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
@@ -312,7 +300,6 @@ class SimSensor(SimSensorBase):
     def location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Location(SimLocation ieLocation) (Write Only)
@@ -335,7 +322,6 @@ class SimSensor(SimSensorBase):
     def ply_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlyType(CATBSTR icsPlyType) (Write Only)
@@ -358,7 +344,6 @@ class SimSensor(SimSensorBase):
     def principal_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrincipalDirection(boolean ibPrincipleDirection) (Write
@@ -383,7 +368,6 @@ class SimSensor(SimSensorBase):
     def processing_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProcessingType(SimProcessingTypes ieProcessingType) (Write
@@ -407,7 +391,6 @@ class SimSensor(SimSensorBase):
     def quantity_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property QuantityType(CATBSTR icsQuantity) (Write Only)
@@ -431,7 +414,6 @@ class SimSensor(SimSensorBase):
     def sensor_output_parameter(self) -> SimSensorOutputParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SensorOutputParameter() As SimSensorOutputParameters
@@ -456,7 +438,6 @@ class SimSensor(SimSensorBase):
     def transform_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TransformType(SimTransformTypes ieTransfromType) (Write
@@ -486,7 +467,6 @@ class SimSensor(SimSensorBase):
     def variable_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariableType(CATBSTR icsVariableType) (Write Only)
@@ -506,10 +486,11 @@ class SimSensor(SimSensorBase):
 
         self.com_object.VariableType = value
 
-    def set_parameters(self, ib_max_flag: bool, ib_min_flag: bool, ib_absolute_max_flag: bool, ib_parameter_for_each_step_flag: bool, ib_parameter_for_each_frame_or_load_case_flag: bool) -> None:
+    def set_parameters(self, ib_max_flag: bool, ib_min_flag: bool, ib_absolute_max_flag: bool,
+                       ib_parameter_for_each_step_flag: bool,
+                       ib_parameter_for_each_frame_or_load_case_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
@@ -543,12 +524,13 @@ class SimSensor(SimSensorBase):
         :param bool ib_parameter_for_each_frame_or_load_case_flag:
         :return: None
         """
-        return self.com_object.SetParameters(ib_max_flag, ib_min_flag, ib_absolute_max_flag, ib_parameter_for_each_step_flag, ib_parameter_for_each_frame_or_load_case_flag)
+        return self.com_object.SetParameters(ib_max_flag, ib_min_flag, ib_absolute_max_flag,
+                                             ib_parameter_for_each_step_flag,
+                                             ib_parameter_for_each_frame_or_load_case_flag)
 
     def set_support1(self, i_enum_support_type: int, ilscus_support: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSupport1(SimSelectionType iEnumSupportType,CATSafeArrayVariant
@@ -580,7 +562,6 @@ class SimSensor(SimSensorBase):
     def set_support2(self, i_enum_support_type: int, ilscus_support: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSupport2(SimSelectionType iEnumSupportType,CATSafeArrayVariant
@@ -611,4 +592,4 @@ class SimSensor(SimSensorBase):
         return self.com_object.SetSupport2(i_enum_support_type, ilscus_support)
 
     def __repr__(self):
-        return f'SimSensor(name="{ self.name }")'
+        return f'SimSensor(name="{self.name}")'

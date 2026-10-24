@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrOpeningOutputProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class StrOpeningOutputProfile(AnyObject):
     def direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As Reference
@@ -80,7 +77,6 @@ class StrOpeningOutputProfile(AnyObject):
     def limit_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitMode() As long
@@ -113,7 +109,6 @@ class StrOpeningOutputProfile(AnyObject):
     def output_profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OutputProfile() As Reference
@@ -145,4 +140,4 @@ class StrOpeningOutputProfile(AnyObject):
         self.com_object.OutputProfile = value
 
     def __repr__(self):
-        return f'StrOpeningOutputProfile(name="{ self.name }")'
+        return f'StrOpeningOutputProfile(name="{self.name}")'

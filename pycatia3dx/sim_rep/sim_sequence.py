@@ -21,7 +21,6 @@ if TYPE_CHECKING:
 class SimSequence(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class SimSequence(AnyObject):
     def excitations(self) -> SimExcitations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Excitations() As SimExcitations (Read Only)
@@ -59,7 +57,6 @@ class SimSequence(AnyObject):
     def probes(self) -> SimProbes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Probes() As SimProbes (Read Only)
@@ -74,7 +71,6 @@ class SimSequence(AnyObject):
     def scenario_specs(self) -> SimScenarioSpecs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
@@ -89,7 +85,6 @@ class SimSequence(AnyObject):
     def sequence_results(self) -> 'SimSequenceResults':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SequenceResults() As SimSequenceResults (Read Only)
@@ -104,7 +99,6 @@ class SimSequence(AnyObject):
     def add_behavior(self, i_behavior: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddBehavior(AnyObject iBehavior)
@@ -118,7 +112,6 @@ class SimSequence(AnyObject):
     def get_behaviors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBehaviors() As CATSafeArrayVariant
@@ -131,7 +124,6 @@ class SimSequence(AnyObject):
     def remove_behavior(self, i_behavior: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveBehavior(AnyObject iBehavior)

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class VSOMorphing(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class VSOMorphing(AnyObject):
     def add_vector_field(self, i_vector_field: AnyObject, i_scale: float, i_copy_vector_field_as_result: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddVectorField(AnyObject iVectorField,double iScale,boolean

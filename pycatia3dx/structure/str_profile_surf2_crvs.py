@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfileSurf2Crvs(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrProfileSurf2Crvs(AnyObject):
     def first_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstCurve() As Reference
@@ -70,7 +67,6 @@ class StrProfileSurf2Crvs(AnyObject):
     def second_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondCurve() As Reference
@@ -102,7 +98,6 @@ class StrProfileSurf2Crvs(AnyObject):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Surface() As Reference
@@ -133,4 +128,4 @@ class StrProfileSurf2Crvs(AnyObject):
         self.com_object.Surface = value
 
     def __repr__(self):
-        return f'StrProfileSurf2Crvs(name="{ self.name }")'
+        return f'StrProfileSurf2Crvs(name="{self.name}")'

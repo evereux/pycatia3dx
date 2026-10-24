@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 
 
 class OLPMotionProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -65,7 +63,6 @@ class OLPMotionProfile(OLPProfile):
     def get_joint_as_percent(self, o_speed_percent: float, o_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetJointAsPercent(double oSpeedPercent,double
@@ -99,10 +96,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetJointAsPercent(o_speed_percent, o_accel_percent)
 
-    def get_joint_as_percent_with_decel(self, o_speed_percent: float, o_accel_percent: float, o_decel_percent: float) -> None:
+    def get_joint_as_percent_with_decel(self, o_speed_percent: float, o_accel_percent: float,
+                                        o_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetJointAsPercentWithDecel(double oSpeedPercent,double oAccelPercent,double
@@ -140,7 +137,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_accel_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPAccelAngular(DELOlpMotionProfileUnits iUnits) As
@@ -166,7 +162,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_accel_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPAccelLinear(DELOlpMotionProfileUnits iUnits) As
@@ -192,7 +187,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_angular(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPAngular(double oTCPSpeedAbs,double oTCPAccelPercent)
@@ -225,10 +219,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPAngular(o_tcp_speed_abs, o_tcp_accel_percent)
 
-    def get_tcp_angular_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float, o_tcp_decel_percent: float) -> None:
+    def get_tcp_angular_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float,
+                                   o_tcp_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPAngularWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
@@ -267,7 +261,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_decel_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPDecelAngular(DELOlpMotionProfileUnits iUnits) As
@@ -293,7 +286,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_decel_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPDecelLinear(DELOlpMotionProfileUnits iUnits) As
@@ -319,7 +311,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPLinear(double oTCPSpeedAbs,double oTCPAccelPercent)
@@ -356,7 +347,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_no_accel(self, o_tcp_speed_abs: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPLinearNoAccel(double oTCPSpeedAbs)
@@ -385,7 +375,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_no_accel_with_units(self, o_tcp_speed: float, o_units: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPLinearNoAccelWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
@@ -416,10 +405,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPLinearNoAccelWithUnits(o_tcp_speed, o_units)
 
-    def get_tcp_linear_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float, o_tcp_decel_percent: float) -> None:
+    def get_tcp_linear_with_decel(self, o_tcp_speed_abs: float, o_tcp_accel_percent: float,
+                                  o_tcp_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPLinearWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
@@ -459,7 +448,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_linear_with_units(self, o_tcp_speed: float, o_units: int, o_tcp_accel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPLinearWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
@@ -500,7 +488,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_speed_angular(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits) As
@@ -526,7 +513,6 @@ class OLPMotionProfile(OLPProfile):
     def get_tcp_speed_linear(self, i_units: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPSpeedLinear(DELOlpMotionProfileUnits iUnits) As
@@ -549,10 +535,11 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.GetTCPSpeedLinear(i_units)
 
-    def get_tcp_speed_with_decel_with_accel_units(self, o_tcp_lin_speed_abs: float, o_tcp_ang_speed_abs: float, o_tcp_lin_accel: float, o_tcp_lin_decel: float, o_accel_decel_units: int) -> None:
+    def get_tcp_speed_with_decel_with_accel_units(self, o_tcp_lin_speed_abs: float, o_tcp_ang_speed_abs: float,
+                                                  o_tcp_lin_accel: float, o_tcp_lin_decel: float,
+                                                  o_accel_decel_units: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPSpeedWithDecelWithAccelUnits(double oTCPLinSpeedAbs,double
@@ -598,12 +585,15 @@ class OLPMotionProfile(OLPProfile):
         :param int o_accel_decel_units:
         :return: None
         """
-        return self.com_object.GetTCPSpeedWithDecelWithAccelUnits(o_tcp_lin_speed_abs, o_tcp_ang_speed_abs, o_tcp_lin_accel, o_tcp_lin_decel, o_accel_decel_units)
+        return self.com_object.GetTCPSpeedWithDecelWithAccelUnits(o_tcp_lin_speed_abs, o_tcp_ang_speed_abs,
+                                                                  o_tcp_lin_accel, o_tcp_lin_decel, o_accel_decel_units)
 
-    def get_tcp_speed_with_decel_with_speed_units(self, o_tcp_lin_speed: float, o_lin_speed_units: int, o_tcp_ang_speed: float, o_ang_speed_units: int, o_tcp_lin_accel_percent: float, o_tcp_lin_decel_percent: float) -> None:
+    def get_tcp_speed_with_decel_with_speed_units(self, o_tcp_lin_speed: float, o_lin_speed_units: int,
+                                                  o_tcp_ang_speed: float, o_ang_speed_units: int,
+                                                  o_tcp_lin_accel_percent: float,
+                                                  o_tcp_lin_decel_percent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPSpeedWithDecelWithSpeedUnits(double
@@ -652,12 +642,13 @@ class OLPMotionProfile(OLPProfile):
         :param float o_tcp_lin_decel_percent:
         :return: None
         """
-        return self.com_object.GetTCPSpeedWithDecelWithSpeedUnits(o_tcp_lin_speed, o_lin_speed_units, o_tcp_ang_speed, o_ang_speed_units, o_tcp_lin_accel_percent, o_tcp_lin_decel_percent)
+        return self.com_object.GetTCPSpeedWithDecelWithSpeedUnits(o_tcp_lin_speed, o_lin_speed_units, o_tcp_ang_speed,
+                                                                  o_ang_speed_units, o_tcp_lin_accel_percent,
+                                                                  o_tcp_lin_decel_percent)
 
     def get_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTime() As double
@@ -674,7 +665,6 @@ class OLPMotionProfile(OLPProfile):
     def set_joint_as_percent(self, i_speed_percent: float, i_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointAsPercent(double iSpeedPercent,double iAccelPercent,boolean
@@ -707,10 +697,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetJointAsPercent(i_speed_percent, i_accel_percent, i_match)
 
-    def set_joint_as_percent_with_decel(self, i_speed_percent: float, i_accel_percent: float, i_decel_percent: float, i_match: bool) -> None:
+    def set_joint_as_percent_with_decel(self, i_speed_percent: float, i_accel_percent: float, i_decel_percent: float,
+                                        i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointAsPercentWithDecel(double iSpeedPercent,double iAccelPercent,double
@@ -747,7 +737,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_accel_angular(self, i_units: int, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAccelAngular(DELOlpMotionProfileUnits iUnits,double iAccel,boolean
@@ -777,7 +766,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_accel_linear(self, i_units: int, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAccelLinear(DELOlpMotionProfileUnits iUnits,double iAccel,boolean
@@ -806,7 +794,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_angular(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAngular(double iTCPSpeedAbs,double iTCPAccelPercent,boolean
@@ -840,10 +827,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPAngular(i_tcp_speed_abs, i_tcp_accel_percent, i_match)
 
-    def set_tcp_angular_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_angular_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float,
+                                   i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPAngularWithDecel(double iTCPSpeedAbs,double iTCPAccelPercent,double
@@ -877,12 +864,12 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPAngularWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent, i_match)
+        return self.com_object.SetTCPAngularWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent,
+                                                      i_match)
 
     def set_tcp_decel_angular(self, i_units: int, i_decel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDecelAngular(DELOlpMotionProfileUnits iUnits,double iDecel,boolean
@@ -911,7 +898,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_decel_linear(self, i_units: int, i_decel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDecelLinear(DELOlpMotionProfileUnits iUnits,double iDecel,boolean
@@ -940,7 +926,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinear(double iTCPSpeedAbs,double iTCPAccelPercent,boolean
@@ -977,7 +962,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear_no_accel(self, i_tcp_speed_abs: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearNoAccel(double iTCPSpeedAbs,boolean iMatch)
@@ -1007,7 +991,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_linear_no_accel_with_units(self, i_tcp_speed: float, i_units: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearNoAccelWithUnits(double iTCPSpeed,DELOlpMotionProfileUnits
@@ -1041,10 +1024,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPLinearNoAccelWithUnits(i_tcp_speed, i_units, i_match)
 
-    def set_tcp_linear_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_linear_with_decel(self, i_tcp_speed_abs: float, i_tcp_accel_percent: float, i_tcp_decel_percent: float,
+                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearWithDecel(double iTCPSpeedAbs,double iTCPAccelPercent,double
@@ -1080,10 +1063,10 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPLinearWithDecel(i_tcp_speed_abs, i_tcp_accel_percent, i_tcp_decel_percent, i_match)
 
-    def set_tcp_linear_with_units(self, i_tcp_speed: float, i_units: int, i_tcp_accel_percent: float, i_match: bool) -> None:
+    def set_tcp_linear_with_units(self, i_tcp_speed: float, i_units: int, i_tcp_accel_percent: float,
+                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPLinearWithUnits(double iTCPSpeed,DELOlpMotionProfileUnits
@@ -1125,7 +1108,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_speed_angular(self, i_units: int, i_speed: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits,double iSpeed,boolean
@@ -1154,7 +1136,6 @@ class OLPMotionProfile(OLPProfile):
     def set_tcp_speed_linear(self, i_units: int, i_speed: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedLinear(DELOlpMotionProfileUnits iUnits,double iSpeed,boolean
@@ -1180,10 +1161,11 @@ class OLPMotionProfile(OLPProfile):
         """
         return self.com_object.SetTCPSpeedLinear(i_units, i_speed, i_match)
 
-    def set_tcp_speed_with_decel_with_accel_units(self, i_tcp_lin_speed_abs: float, i_tcp_ang_speed_abs: float, i_tcp_lin_accel: float, i_tcp_lin_decel: float, i_accel_decel_units: int, i_match: bool) -> None:
+    def set_tcp_speed_with_decel_with_accel_units(self, i_tcp_lin_speed_abs: float, i_tcp_ang_speed_abs: float,
+                                                  i_tcp_lin_accel: float, i_tcp_lin_decel: float,
+                                                  i_accel_decel_units: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedWithDecelWithAccelUnits(double iTCPLinSpeedAbs,double
@@ -1224,12 +1206,16 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPSpeedWithDecelWithAccelUnits(i_tcp_lin_speed_abs, i_tcp_ang_speed_abs, i_tcp_lin_accel, i_tcp_lin_decel, i_accel_decel_units, i_match)
+        return self.com_object.SetTCPSpeedWithDecelWithAccelUnits(i_tcp_lin_speed_abs, i_tcp_ang_speed_abs,
+                                                                  i_tcp_lin_accel, i_tcp_lin_decel, i_accel_decel_units,
+                                                                  i_match)
 
-    def set_tcp_speed_with_decel_with_speed_units(self, i_tcp_lin_speed: float, i_lin_speed_units: int, i_tcp_ang_speed: float, i_ang_speed_units: int, i_tcp_lin_accel_percent: float, i_tcp_lin_decel_percent: float, i_match: bool) -> None:
+    def set_tcp_speed_with_decel_with_speed_units(self, i_tcp_lin_speed: float, i_lin_speed_units: int,
+                                                  i_tcp_ang_speed: float, i_ang_speed_units: int,
+                                                  i_tcp_lin_accel_percent: float, i_tcp_lin_decel_percent: float,
+                                                  i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPSpeedWithDecelWithSpeedUnits(double
@@ -1278,12 +1264,13 @@ class OLPMotionProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetTCPSpeedWithDecelWithSpeedUnits(i_tcp_lin_speed, i_lin_speed_units, i_tcp_ang_speed, i_ang_speed_units, i_tcp_lin_accel_percent, i_tcp_lin_decel_percent, i_match)
+        return self.com_object.SetTCPSpeedWithDecelWithSpeedUnits(i_tcp_lin_speed, i_lin_speed_units, i_tcp_ang_speed,
+                                                                  i_ang_speed_units, i_tcp_lin_accel_percent,
+                                                                  i_tcp_lin_decel_percent, i_match)
 
     def set_time(self, i_time: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTime(double iTime,boolean iMatch)
@@ -1305,4 +1292,4 @@ class OLPMotionProfile(OLPProfile):
         return self.com_object.SetTime(i_time, i_match)
 
     def __repr__(self):
-        return f'OLPMotionProfile(name="{ self.name }")'
+        return f'OLPMotionProfile(name="{self.name}")'

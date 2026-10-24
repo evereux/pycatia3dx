@@ -19,7 +19,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MeasureItem(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class MeasureItem(AnyObject):
     def get_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
@@ -73,7 +71,6 @@ class MeasureItem(AnyObject):
     def get_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetArea() As double
@@ -104,7 +101,6 @@ class MeasureItem(AnyObject):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
@@ -142,7 +138,6 @@ class MeasureItem(AnyObject):
     def get_axis_system_from_measure(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
@@ -224,7 +219,6 @@ class MeasureItem(AnyObject):
     def get_c_of_g(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
@@ -262,7 +256,6 @@ class MeasureItem(AnyObject):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
@@ -300,7 +293,6 @@ class MeasureItem(AnyObject):
     def get_computation_mode(self) -> CATMeasurableModeOfCalc:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComputationMode(CATMeasurableModeOfCalc
@@ -332,7 +324,6 @@ class MeasureItem(AnyObject):
     def get_curve_points(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub GetCurvePoints(CATSafeArrayVariant ioStartPoint,CATSafeArrayVariant
@@ -418,7 +409,6 @@ class MeasureItem(AnyObject):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDirection(double oXVector,double oYVector,double
@@ -456,7 +446,6 @@ class MeasureItem(AnyObject):
     def get_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLength() As double
@@ -486,7 +475,6 @@ class MeasureItem(AnyObject):
     def get_measure_edge_type(self) -> CATOpnsMeasureEdgeType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasureEdgeType() As CATOpnsMeasureEdgeType
@@ -519,7 +507,6 @@ class MeasureItem(AnyObject):
     def get_measure_item_type(self) -> CATOpnsMeasureItemType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMeasureItemType(CATOpnsMeasureItemType
@@ -554,7 +541,6 @@ class MeasureItem(AnyObject):
     def get_measure_surface_type(self) -> CATOpnsMeasureSurfaceType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMeasureSurfaceType() As CATOpnsMeasureSurfaceType
@@ -588,7 +574,6 @@ class MeasureItem(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOrigin(double oXOrigin,double oYOrigin,double oZOrigin)
@@ -626,7 +611,6 @@ class MeasureItem(AnyObject):
     def get_perimeter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPerimeter() As double
@@ -657,7 +641,6 @@ class MeasureItem(AnyObject):
     def get_plane(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub GetPlane(CATSafeArrayVariant ioPlane)
@@ -722,7 +705,6 @@ class MeasureItem(AnyObject):
     def get_point(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
@@ -759,7 +741,6 @@ class MeasureItem(AnyObject):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoints(double oXStartPoint,double oYStartPoint,double
@@ -842,7 +823,6 @@ class MeasureItem(AnyObject):
     def get_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double
@@ -872,7 +852,6 @@ class MeasureItem(AnyObject):
     def get_result_computation_type(self) -> CATResultCalcType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetResultComputationType() As CATResultCalcType
@@ -903,7 +882,6 @@ class MeasureItem(AnyObject):
     def get_selection(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub GetSelection(CATSafeArrayVariant oSelections)
@@ -952,7 +930,6 @@ class MeasureItem(AnyObject):
     def get_volume(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVolume() As double
@@ -983,7 +960,6 @@ class MeasureItem(AnyObject):
     def get_volume_area_c_of_g(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetVolume_Area_COfG(double oVolume,double oArea,double oXCOfG,double
@@ -1030,7 +1006,6 @@ class MeasureItem(AnyObject):
     def set_axis_system_on_measure(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
@@ -1121,7 +1096,6 @@ class MeasureItem(AnyObject):
     def set_computation_mode(self, i_computation_mode: CATMeasurableModeOfCalc) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc
@@ -1154,7 +1128,6 @@ class MeasureItem(AnyObject):
     def set_measure_item_type(self, i_measure_item_type: CATOpnsMeasureItemType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasureItemType(CATOpnsMeasureItemType
@@ -1189,7 +1162,6 @@ class MeasureItem(AnyObject):
     def set_selection(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948)
                 | Sub SetSelection(CATSafeArrayVariant iSelections)

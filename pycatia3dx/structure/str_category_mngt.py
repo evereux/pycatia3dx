@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrCategoryMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrCategoryMngt(AnyObject):
     def automatic_name(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AutomaticName() As boolean
@@ -71,7 +68,6 @@ class StrCategoryMngt(AnyObject):
     def category_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CategoryName() As CATBSTR
@@ -104,7 +100,6 @@ class StrCategoryMngt(AnyObject):
     def get_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCategory() As CATBSTR
@@ -125,7 +120,6 @@ class StrCategoryMngt(AnyObject):
     def set_category(self, i_category: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCategory(CATBSTR iCategory)
@@ -146,4 +140,4 @@ class StrCategoryMngt(AnyObject):
         return self.com_object.SetCategory(i_category)
 
     def __repr__(self):
-        return f'StrCategoryMngt(name="{ self.name }")'
+        return f'StrCategoryMngt(name="{self.name}")'

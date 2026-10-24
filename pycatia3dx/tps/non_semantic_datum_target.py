@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class NonSemanticDatumTarget(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class NonSemanticDatumTarget(AnyObject):
     def low_label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LowLabel() As CATBSTR
@@ -61,7 +58,6 @@ class NonSemanticDatumTarget(AnyObject):
     def type_specifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TypeSpecifier() As CATBSTR
@@ -89,7 +85,6 @@ class NonSemanticDatumTarget(AnyObject):
     def up_label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpLabel() As CATBSTR
@@ -109,4 +104,4 @@ class NonSemanticDatumTarget(AnyObject):
         self.com_object.UpLabel = value
 
     def __repr__(self):
-        return f'NonSemanticDatumTarget(name="{ self.name }")'
+        return f'NonSemanticDatumTarget(name="{self.name}")'

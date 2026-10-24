@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointCoord(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -51,7 +49,6 @@ class HybridShapePointCoord(Point):
     def pt_ref(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PtRef() As Reference
@@ -88,7 +85,6 @@ class HybridShapePointCoord(Point):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RefAxisSystem() As Reference
@@ -126,7 +122,6 @@ class HybridShapePointCoord(Point):
     def x(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property X() As Length (Read Only)
@@ -149,7 +144,6 @@ class HybridShapePointCoord(Point):
     def y(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Y() As Length (Read Only)
@@ -172,7 +166,6 @@ class HybridShapePointCoord(Point):
     def z(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Z() As Length (Read Only)
@@ -192,4 +185,4 @@ class HybridShapePointCoord(Point):
         return Length(self.com_object.Z)
 
     def __repr__(self):
-        return f'HybridShapePointCoord(name="{ self.name }")'
+        return f'HybridShapePointCoord(name="{self.name}")'

@@ -16,7 +16,6 @@ from pycatia3dx.product_structure_client.vpm_rep_instances import VPMRepInstance
 class VPMReference(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class VPMReference(PLMEntity):
     def instances(self) -> VPMInstances:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instances() As VPMInstances (Read Only)
@@ -68,7 +66,6 @@ class VPMReference(PLMEntity):
     def publications(self) -> VPMPublications:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Publications() As VPMPublications (Read Only)
@@ -94,7 +91,6 @@ class VPMReference(PLMEntity):
     def rep_instances(self) -> VPMRepInstances:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RepInstances() As VPMRepInstances (Read Only)

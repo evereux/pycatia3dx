@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCenterOfGravityConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimCenterOfGravityConstraint(AnyObject):
     def second_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondSupport() As CATBaseDispatch (Read Only)
@@ -95,7 +92,6 @@ class SimCenterOfGravityConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimCenterOfGravityConstraintType
@@ -117,7 +113,6 @@ class SimCenterOfGravityConstraint(AnyObject):
     def get_tolerance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTolerance(double oVal)
@@ -136,7 +131,6 @@ class SimCenterOfGravityConstraint(AnyObject):
     def set_tolerance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTolerance(double iVal)
@@ -157,4 +151,4 @@ class SimCenterOfGravityConstraint(AnyObject):
         return self.com_object.SetTolerance(i_val)
 
     def __repr__(self):
-        return f'SimCenterOfGravityConstraint(name="{ self.name }")'
+        return f'SimCenterOfGravityConstraint(name="{self.name}")'

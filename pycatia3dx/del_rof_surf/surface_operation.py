@@ -13,10 +13,8 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 
 
 class SurfaceOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class SurfaceOperation(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -64,7 +61,6 @@ class SurfaceOperation(AnyObject):
     def get_surface_profile(self, o_surface_profile: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSurfaceProfile(CATBaseUnknown oSurfaceProfile)
@@ -87,7 +83,6 @@ class SurfaceOperation(AnyObject):
     def get_target(self, op_target: CATBaseUnknown, op_target_owner: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTarget(CATBaseUnknown opTarget,CATBaseUnknown
@@ -114,7 +109,6 @@ class SurfaceOperation(AnyObject):
     def set_surface_profile(self, i_surface_profile: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSurfaceProfile(CATBaseUnknown iSurfaceProfile)
@@ -137,7 +131,6 @@ class SurfaceOperation(AnyObject):
     def set_target(self, ip_target: CATBaseUnknown, op_target_owner: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTarget(CATBaseUnknown ipTarget,CATBaseUnknown
@@ -161,4 +154,4 @@ class SurfaceOperation(AnyObject):
         return self.com_object.SetTarget(ip_target.com_object, op_target_owner.com_object)
 
     def __repr__(self):
-        return f'SurfaceOperation(name="{ self.name }")'
+        return f'SurfaceOperation(name="{self.name}")'

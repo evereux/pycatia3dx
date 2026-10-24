@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_stiffener import StrStiffener
 class StrSfdStiffener(StrStiffener):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class StrSfdStiffener(StrStiffener):
     def sfd_convert_stiffener(self) -> SfdConvertStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SfdConvertStiffener() As SfdConvertStiffener (Read
@@ -71,7 +69,6 @@ class StrSfdStiffener(StrStiffener):
     def str_material_mngt(self) -> StrMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrMaterialMngt() As StrMaterialMngt (Read Only)

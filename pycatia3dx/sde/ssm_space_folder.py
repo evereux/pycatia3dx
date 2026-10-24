@@ -13,10 +13,8 @@ from pycatia3dx.sde.ssm_spaces import SsmSpaces
 
 
 class SsmSpaceFolder(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmSpaceFolder(AnyObject):
     def spaces(self) -> SsmSpaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Spaces() As SsmSpaces (Read Only)
@@ -59,4 +56,4 @@ class SsmSpaceFolder(AnyObject):
         return SsmSpaces(self.com_object.Spaces)
 
     def __repr__(self):
-        return f'SsmSpaceFolder(name="{ self.name }")'
+        return f'SsmSpaceFolder(name="{self.name}")'

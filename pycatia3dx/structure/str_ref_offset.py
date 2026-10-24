@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_reference import StrReference
 class StrRefOffset(StrReference):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class StrRefOffset(StrReference):
     def get_offset_parm(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffsetParm() As Parameter
@@ -66,7 +64,6 @@ class StrRefOffset(StrReference):
     def get_relevant_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRelevantSide() As long
@@ -110,7 +107,6 @@ class StrRefOffset(StrReference):
     def set_relevant_side(self, i_str_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRelevantSide(long iStrOrientation)

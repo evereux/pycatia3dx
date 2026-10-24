@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class KinCommand(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class KinCommand(AnyObject):
     def command_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CommandType() As CATKinMechanismCommandType (Read
@@ -67,7 +65,6 @@ class KinCommand(AnyObject):
     def current_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentValue() As double (Read Only)
@@ -93,7 +90,6 @@ class KinCommand(AnyObject):
     def joint(self) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Joint() As EngConnection (Read Only)
@@ -112,7 +108,6 @@ class KinCommand(AnyObject):
     def lower_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LowerLimit() As double (Read Only)
@@ -139,7 +134,6 @@ class KinCommand(AnyObject):
     def upper_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpperLimit() As double (Read Only)
@@ -165,7 +159,6 @@ class KinCommand(AnyObject):
     def is_lower_limit_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsLowerLimitSet() As boolean
@@ -183,7 +176,6 @@ class KinCommand(AnyObject):
     def is_upper_limit_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsUpperLimitSet() As boolean

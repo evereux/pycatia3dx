@@ -13,10 +13,8 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimComplianceResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -82,7 +80,6 @@ class SimComplianceResponseVariable(SimNonParametricResponseVariable):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -94,4 +91,4 @@ class SimComplianceResponseVariable(SimNonParametricResponseVariable):
         return AnyObject(self.com_object.LoadCase)
 
     def __repr__(self):
-        return f'SimComplianceResponseVariable(name="{ self.name }")'
+        return f'SimComplianceResponseVariable(name="{self.name}")'

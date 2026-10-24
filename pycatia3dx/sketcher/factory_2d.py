@@ -25,7 +25,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Factory2D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -54,7 +53,6 @@ class Factory2D(AnyObject):
     ) -> Circle2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateCircle(double iCenterX,double iCenterY,double iRadius,double
@@ -94,7 +92,6 @@ class Factory2D(AnyObject):
     def create_closed_circle(self, i_center_x: float, i_center_y: float, i_radius: float) -> Circle2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateClosedCircle(double iCenterX,double iCenterY,double iRadius) As
@@ -131,7 +128,6 @@ class Factory2D(AnyObject):
     ) -> Ellipse2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateClosedEllipse(double iCenterX,double iCenterY,double iMajorX,double
@@ -178,7 +174,6 @@ class Factory2D(AnyObject):
     def create_control_point(self, i_x: float, i_y: float) -> ControlPoint2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateControlPoint(double iX,double iY) As ControlPoint2D
@@ -213,7 +208,6 @@ class Factory2D(AnyObject):
     ) -> Ellipse2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateEllipse(double iCenterX,double iCenterY,double iMajorX,double
@@ -282,7 +276,6 @@ class Factory2D(AnyObject):
     ) -> Hyperbola2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateHyperbola(double iCenterX,double iCenterY,double iAxisX,double
@@ -329,7 +322,6 @@ class Factory2D(AnyObject):
     def create_intersection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateIntersection(Reference iGeometry) As Geometry2D
@@ -352,7 +344,6 @@ class Factory2D(AnyObject):
     def create_intersections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateIntersections(Reference iGeometry) As
@@ -376,7 +367,6 @@ class Factory2D(AnyObject):
     def create_line(self, i_x1: float, i_y1: float, i_x2: float, i_y2: float) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateLine(double iX1,double iY1,double iX2,double iY2) As
@@ -408,7 +398,6 @@ class Factory2D(AnyObject):
     def create_line_from_vector(self, i_x1: float, i_y1: float, i_ux: float, i_uy: float) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateLineFromVector(double iX1,double iY1,double iUX,double iUY) As
@@ -447,7 +436,6 @@ class Factory2D(AnyObject):
     ) -> Parabola2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateParabola(double iCenterX,double iCenterY,double iAxisX,double
@@ -490,7 +478,6 @@ class Factory2D(AnyObject):
     def create_point(self, i_x: float, i_y: float) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreatePoint(double iX,double iY) As Point2D
@@ -515,7 +502,6 @@ class Factory2D(AnyObject):
     def create_projection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateProjection(Reference iGeometry) As Geometry2D
@@ -538,7 +524,6 @@ class Factory2D(AnyObject):
     def create_projections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateProjections(Reference iGeometry) As
@@ -562,7 +547,6 @@ class Factory2D(AnyObject):
     def create_spline(self, i_poles: tuple) -> Spline2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class KweCorrectFunction(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -36,7 +35,6 @@ class KweCorrectFunction(AnyObject):
     def check(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Check() As CATBaseDispatch
@@ -52,7 +50,6 @@ class KweCorrectFunction(AnyObject):
     def get_number_of_list_failed_elements(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetNumberOfListFailedElements() As long
@@ -68,7 +65,6 @@ class KweCorrectFunction(AnyObject):
     def list_failed_elements(self, o_list_elements_of_tuple_failed: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ListFailedElements(CATSafeArrayVariant

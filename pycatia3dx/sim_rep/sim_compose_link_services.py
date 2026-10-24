@@ -17,7 +17,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimComposeLinkServices(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SimComposeLinkServices(CATBaseDispatch):
     ) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance

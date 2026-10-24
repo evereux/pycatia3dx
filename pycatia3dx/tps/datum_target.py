@@ -13,10 +13,8 @@ from pycatia3dx.tps.user_surface import UserSurface
 
 
 class DatumTarget(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class DatumTarget(AnyObject):
     def datum(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Datum() As AnyObject (Read Only)
@@ -55,7 +52,6 @@ class DatumTarget(AnyObject):
     def label(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Label() As CATBSTR
@@ -77,7 +73,6 @@ class DatumTarget(AnyObject):
     def get_area_form(self, o_area_form: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAreaForm(CATBSTR oAreaForm)
@@ -100,7 +95,6 @@ class DatumTarget(AnyObject):
     def get_circular_area_size(self, o_area_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCircularAreaSize(double oAreaSize)
@@ -122,7 +116,6 @@ class DatumTarget(AnyObject):
     def get_movable_direction_ttrs(self, op_direction_ttrs: UserSurface) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMovableDirectionTTRS(UserSurface opDirectionTTRS)
@@ -144,7 +137,6 @@ class DatumTarget(AnyObject):
     def get_rectangular_area_size(self, o_length: float, o_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRectangularAreaSize(double oLength,double oWidth)
@@ -169,7 +161,6 @@ class DatumTarget(AnyObject):
     def set_area_form(self, i_area_form: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAreaForm(CATBSTR iAreaForm)
@@ -192,7 +183,6 @@ class DatumTarget(AnyObject):
     def set_circular_area_size(self, i_area_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCircularAreaSize(double iAreaSize)
@@ -214,7 +204,6 @@ class DatumTarget(AnyObject):
     def set_movable_direction_ttrs(self, ip_direction_ttrs: UserSurface) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovableDirectionTTRS(UserSurface ipDirectionTTRS)
@@ -237,7 +226,6 @@ class DatumTarget(AnyObject):
     def set_rectangular_area_size(self, i_length: float, i_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRectangularAreaSize(double iLength,double iWidth)
@@ -260,4 +248,4 @@ class DatumTarget(AnyObject):
         return self.com_object.SetRectangularAreaSize(i_length, i_width)
 
     def __repr__(self):
-        return f'DatumTarget(name="{ self.name }")'
+        return f'DatumTarget(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAnalyticRigidSurface(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimAnalyticRigidSurface(AnyObject):
     def reference_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePoint() As SimPoint (Read Only)
@@ -91,7 +88,6 @@ class SimAnalyticRigidSurface(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -131,7 +127,6 @@ class SimAnalyticRigidSurface(AnyObject):
     def surface_side_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SurfaceSideFlag() As boolean
@@ -159,4 +154,4 @@ class SimAnalyticRigidSurface(AnyObject):
         self.com_object.SurfaceSideFlag = value
 
     def __repr__(self):
-        return f'SimAnalyticRigidSurface(name="{ self.name }")'
+        return f'SimAnalyticRigidSurface(name="{self.name}")'

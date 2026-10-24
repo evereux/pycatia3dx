@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointTangent(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapePointTangent(Point):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve() As Reference
@@ -88,7 +85,6 @@ class HybridShapePointTangent(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -116,4 +112,4 @@ class HybridShapePointTangent(Point):
         self.com_object.Direction = value
 
     def __repr__(self):
-        return f'HybridShapePointTangent(name="{ self.name }")'
+        return f'HybridShapePointTangent(name="{self.name}")'

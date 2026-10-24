@@ -14,7 +14,6 @@ from pycatia3dx.interfaces.service import Service
 class DrawingGenService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingGenService(Service):
     def drawing_gen_view_prop(self) -> DrawingGenViewProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrawingGenViewProp() As DrawingGenViewProperties (Read
@@ -58,7 +56,6 @@ class DrawingGenService(Service):
     def check_view_link_integrity(self, i_info_on_view_links: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CheckViewLinkIntegrity(CATSafeArrayVariant iInfoOnViewLinks) As

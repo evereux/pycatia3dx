@@ -16,10 +16,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Chamfer(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class Chamfer(DressUpShape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As Angle (Read Only)
@@ -70,7 +67,6 @@ class Chamfer(DressUpShape):
     def elements_to_chamfer(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElementsToChamfer() As References (Read Only)
@@ -92,7 +88,6 @@ class Chamfer(DressUpShape):
     def length1(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Length1() As Length (Read Only)
@@ -115,7 +110,6 @@ class Chamfer(DressUpShape):
     def length2(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Length2() As Length (Read Only)
@@ -138,7 +132,6 @@ class Chamfer(DressUpShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode() As CatChamferMode
@@ -171,7 +164,6 @@ class Chamfer(DressUpShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As CatChamferOrientation
@@ -202,7 +194,6 @@ class Chamfer(DressUpShape):
     def propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Propagation() As CatChamferPropagation
@@ -233,7 +224,6 @@ class Chamfer(DressUpShape):
     def add_element_to_chamfer(self, i_element_to_chamfer: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddElementToChamfer(Reference iElementToChamfer)
@@ -260,7 +250,6 @@ class Chamfer(DressUpShape):
     def withdraw_element_to_chamfer(self, i_element_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
@@ -286,4 +275,4 @@ class Chamfer(DressUpShape):
         return self.com_object.WithdrawElementToChamfer(i_element_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'Chamfer(name="{ self.name }")'
+        return f'Chamfer(name="{self.name}")'

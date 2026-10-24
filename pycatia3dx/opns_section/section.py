@@ -21,7 +21,6 @@ if TYPE_CHECKING:
 class Section(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class Section(AnyObject):
     def behavior(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Behavior() As CatSectionBehavior
@@ -91,7 +89,6 @@ class Section(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Height(double iHeight)
@@ -135,7 +132,6 @@ class Section(AnyObject):
     def markers(self) -> Markers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Markers() As Markers (Read Only)
@@ -159,7 +155,6 @@ class Section(AnyObject):
     def measures(self) -> Measures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Measures() As Measures (Read Only)
@@ -183,7 +178,6 @@ class Section(AnyObject):
     def scene_render(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SceneRender(long iMode)
@@ -208,7 +202,6 @@ class Section(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Thickness(double iThickness)
@@ -248,7 +241,6 @@ class Section(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type(CatSectionType iType)
@@ -286,7 +278,6 @@ class Section(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Width(double iWidth)
@@ -323,7 +314,6 @@ class Section(AnyObject):
     def export(self, io_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Export(Part ioPart)
@@ -352,7 +342,6 @@ class Section(AnyObject):
     def export_as_drawing(self, io_my_editor: Editor) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportAsDrawing(Editor ioMyEditor)
@@ -380,7 +369,6 @@ class Section(AnyObject):
     def export_to(self, i_format: str, i_save_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportTo(CATBSTR iFormat,CATBSTR iSavePath)
@@ -406,7 +394,6 @@ class Section(AnyObject):
     def export_to_existing(self, io_part: Part) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportToExisting(Part ioPart)
@@ -440,7 +427,6 @@ class Section(AnyObject):
     def get_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetPosition(CATSafeArrayVariant iComponents)
@@ -509,7 +495,6 @@ class Section(AnyObject):
     def is_empty(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsEmpty() As long
@@ -534,7 +519,6 @@ class Section(AnyObject):
     def set_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetPosition(CATSafeArrayVariant iComponents)

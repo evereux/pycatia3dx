@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_results.sim_history_sensor import SimHistorySensor
 
 
 class SimHistorySensorFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class SimHistorySensorFactory(AnyObject):
     def create_sensor(self) -> SimHistorySensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSensor() As SimHistorySensor
@@ -63,4 +60,4 @@ class SimHistorySensorFactory(AnyObject):
         return SimHistorySensor(self.com_object.CreateSensor())
 
     def __repr__(self):
-        return f'SimHistorySensorFactory(name="{ self.name }")'
+        return f'SimHistorySensorFactory(name="{self.name}")'

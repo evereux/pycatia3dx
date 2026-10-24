@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Materials(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class Materials(Collection):
     def add(self, i_material: Material) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(Material iMaterial)
@@ -68,7 +66,6 @@ class Materials(Collection):
     def item(self, i_index: CATVariant) -> Material:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Material
@@ -99,7 +96,6 @@ class Materials(Collection):
     def remove(self, i_material: Material) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(Material iMaterial)

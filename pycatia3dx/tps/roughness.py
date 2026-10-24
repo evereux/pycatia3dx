@@ -13,10 +13,8 @@ from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Roughness(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class Roughness(AnyObject):
     def applicability(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Applicability() As short
@@ -63,7 +60,6 @@ class Roughness(AnyObject):
     def obtention(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Obtention() As short
@@ -85,7 +81,6 @@ class Roughness(AnyObject):
     def field(self, i_index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Field(short iIndex) As CATBSTR
@@ -119,7 +114,6 @@ class Roughness(AnyObject):
     def set_field(self, i_index: int, i_field: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetField(short iIndex,CATBSTR iField)
@@ -154,7 +148,6 @@ class Roughness(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen
@@ -165,4 +158,4 @@ class Roughness(AnyObject):
         return TPSParallelOnScreen(self.com_object.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Roughness(name="{ self.name }")'
+        return f'Roughness(name="{self.name}")'

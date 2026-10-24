@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 
 
 class OLPSpotProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -70,7 +68,6 @@ class OLPSpotProfile(OLPProfile):
     def get_approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachDirection() As DELOlpAxisDirection
@@ -87,7 +84,6 @@ class OLPSpotProfile(OLPProfile):
     def get_approach_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachEnabled() As boolean
@@ -103,7 +99,6 @@ class OLPSpotProfile(OLPProfile):
     def get_approach_gun_joint_value(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachGunJointValue(short iGunNumber) As double
@@ -129,7 +124,6 @@ class OLPSpotProfile(OLPProfile):
     def get_approach_moving_tip_clearance(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachMovingTipClearance(short iGunNumber) As double
@@ -152,7 +146,6 @@ class OLPSpotProfile(OLPProfile):
     def get_approach_stationary_tip_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachStationaryTipClearance() As double
@@ -169,7 +162,6 @@ class OLPSpotProfile(OLPProfile):
     def get_backup_accel(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBackupAccel() As double
@@ -185,7 +177,6 @@ class OLPSpotProfile(OLPProfile):
     def get_backup_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBackupAccuracyProfile() As OlpAccuracyProfile
@@ -206,7 +197,6 @@ class OLPSpotProfile(OLPProfile):
     def get_backup_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBackupEnabled() As boolean
@@ -222,7 +212,6 @@ class OLPSpotProfile(OLPProfile):
     def get_backup_stroke(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBackupStroke(short iGunNumber) As double
@@ -244,7 +233,6 @@ class OLPSpotProfile(OLPProfile):
     def get_gun(self, i_gun_number: int) -> OLPGun:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGun(short iGunNumber) As OlpGun
@@ -268,7 +256,6 @@ class OLPSpotProfile(OLPProfile):
     def get_gun_close_in_positive_direction(self, i_gun_number: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunCloseInPositiveDirection(short iGunNumber) As
@@ -292,7 +279,6 @@ class OLPSpotProfile(OLPProfile):
     def get_gun_closed_joint_value(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunClosedJointValue(short iGunNumber) As double
@@ -316,7 +302,6 @@ class OLPSpotProfile(OLPProfile):
     def get_gun_enabled(self, i_gun_number: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunEnabled(short iGunNumber) As boolean
@@ -338,7 +323,6 @@ class OLPSpotProfile(OLPProfile):
     def get_gun_schedule(self, i_gun_number: int, i_profile_type: str) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunSchedule(short iGunNumber,CATBSTR iProfileType) As
@@ -368,7 +352,6 @@ class OLPSpotProfile(OLPProfile):
     def get_joint_number(self, i_gun_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointNumber(short iGunNumber) As short
@@ -390,7 +373,6 @@ class OLPSpotProfile(OLPProfile):
     def get_part_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartThickness() As double
@@ -406,7 +388,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_accel(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndAccel() As double
@@ -422,7 +403,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndAccuracyProfile() As OlpAccuracyProfile
@@ -443,7 +423,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndEnabled() As boolean
@@ -459,7 +438,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_gun_joint_value(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndGunJointValue(short iGunNumber) As double
@@ -486,7 +464,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_moving_tip_clearance(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndMovingTipClearance(short iGunNumber) As double
@@ -509,7 +486,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_end_stationary_tip_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressEndStationaryTipClearance() As double
@@ -526,7 +502,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_accel(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartAccel() As double
@@ -542,7 +517,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartAccuracyProfile() As OlpAccuracyProfile
@@ -563,7 +537,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartEnabled() As boolean
@@ -579,7 +552,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_gun_joint_value(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartGunJointValue(short iGunNumber) As double
@@ -606,7 +578,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_moving_tip_clearance(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartMovingTipClearance(short iGunNumber) As
@@ -630,7 +601,6 @@ class OLPSpotProfile(OLPProfile):
     def get_press_start_stationary_tip_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressStartStationaryTipClearance() As double
@@ -647,7 +617,6 @@ class OLPSpotProfile(OLPProfile):
     def get_pressure_accel(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressureAccel() As double
@@ -663,7 +632,6 @@ class OLPSpotProfile(OLPProfile):
     def get_pressure_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressureAccuracyProfile() As OlpAccuracyProfile
@@ -684,7 +652,6 @@ class OLPSpotProfile(OLPProfile):
     def get_pressure_push_depth(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressurePushDepth(short iGunNumber) As double
@@ -706,7 +673,6 @@ class OLPSpotProfile(OLPProfile):
     def get_pressure_speed_factor(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPressureSpeedFactor(short iGunNumber) As double
@@ -728,7 +694,6 @@ class OLPSpotProfile(OLPProfile):
     def get_weld_delay(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetWeldDelay(short iGunNumber) As double
@@ -750,7 +715,6 @@ class OLPSpotProfile(OLPProfile):
     def get_weld_pressure_stabilization_time(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetWeldPressureStabilizationTime(short iGunNumber) As
@@ -775,7 +739,6 @@ class OLPSpotProfile(OLPProfile):
     def is_gun_schedule_set(self, i_gun_number: int, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsGunScheduleSet(short iGunNumber,CATBSTR iProfileType) As
@@ -802,7 +765,6 @@ class OLPSpotProfile(OLPProfile):
     def set_approach_direction(self, i_approach_direction: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachDirection(DELOlpAxisDirection iApproachDirection,boolean
@@ -826,7 +788,6 @@ class OLPSpotProfile(OLPProfile):
     def set_approach_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachEnabled(boolean iEnabled,boolean iMatch)
@@ -848,7 +809,6 @@ class OLPSpotProfile(OLPProfile):
     def set_approach_gun_joint_value(self, i_gun_number: int, i_joint_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachGunJointValue(short iGunNumber,double iJointValue,boolean
@@ -885,7 +845,6 @@ class OLPSpotProfile(OLPProfile):
     def set_approach_moving_tip_clearance(self, i_gun_number: int, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachMovingTipClearance(short iGunNumber,double iDistance,boolean
@@ -912,7 +871,6 @@ class OLPSpotProfile(OLPProfile):
     def set_approach_stationary_tip_clearance(self, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachStationaryTipClearance(double iDistance,boolean
@@ -936,7 +894,6 @@ class OLPSpotProfile(OLPProfile):
     def set_backup_accel(self, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBackupAccel(double iAccel,boolean iMatch)
@@ -958,7 +915,6 @@ class OLPSpotProfile(OLPProfile):
     def set_backup_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBackupAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -983,7 +939,6 @@ class OLPSpotProfile(OLPProfile):
     def set_backup_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBackupEnabled(boolean iEnabled,boolean iMatch)
@@ -1005,7 +960,6 @@ class OLPSpotProfile(OLPProfile):
     def set_backup_stroke(self, i_gun_number: int, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBackupStroke(short iGunNumber,double iDistance,boolean
@@ -1031,7 +985,6 @@ class OLPSpotProfile(OLPProfile):
     def set_gun(self, i_gun_number: int, i_gun: OLPGun, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGun(short iGunNumber,OlpGun iGun,boolean iMatch)
@@ -1057,10 +1010,10 @@ class OLPSpotProfile(OLPProfile):
         """
         return self.com_object.SetGun(i_gun_number, i_gun.com_object, i_match)
 
-    def set_gun_close_in_positive_direction(self, i_gun_number: int, i_is_positive_direction: bool, i_match: bool) -> None:
+    def set_gun_close_in_positive_direction(self, i_gun_number: int, i_is_positive_direction: bool,
+                                            i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunCloseInPositiveDirection(short iGunNumber,boolean
@@ -1087,7 +1040,6 @@ class OLPSpotProfile(OLPProfile):
     def set_gun_closed_joint_value(self, i_gun_number: int, i_gun_closed_joint_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunClosedJointValue(short iGunNumber,double iGunClosedJointValue,boolean
@@ -1115,7 +1067,6 @@ class OLPSpotProfile(OLPProfile):
     def set_gun_enabled(self, i_gun_number: int, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunEnabled(short iGunNumber,boolean iEnabled,boolean
@@ -1141,7 +1092,6 @@ class OLPSpotProfile(OLPProfile):
     def set_gun_schedule(self, i_gun_number: int, i_profile: OLPProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunSchedule(short iGunNumber,OlpProfile iProfile,boolean
@@ -1173,7 +1123,6 @@ class OLPSpotProfile(OLPProfile):
     def set_gun_schedule_to_nothing(self, i_gun_number: int, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunScheduleToNothing(short iGunNumber,CATBSTR iProfileType,boolean
@@ -1203,7 +1152,6 @@ class OLPSpotProfile(OLPProfile):
     def set_joint_number(self, i_gun_number: int, i_joint_number: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointNumber(short iGunNumber,short iJointNumber,boolean
@@ -1229,7 +1177,6 @@ class OLPSpotProfile(OLPProfile):
     def set_part_thickness(self, i_part_thickness: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPartThickness(double iPartThickness,boolean iMatch)
@@ -1251,7 +1198,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_accel(self, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndAccel(double iAccel,boolean iMatch)
@@ -1273,7 +1219,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -1298,7 +1243,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndEnabled(boolean iEnabled,boolean iMatch)
@@ -1320,7 +1264,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_gun_joint_value(self, i_gun_number: int, i_joint_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndGunJointValue(short iGunNumber,double iJointValue,boolean
@@ -1358,7 +1301,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_moving_tip_clearance(self, i_gun_number: int, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndMovingTipClearance(short iGunNumber,double iDistance,boolean
@@ -1385,7 +1327,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_end_stationary_tip_clearance(self, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressEndStationaryTipClearance(double iDistance,boolean
@@ -1409,7 +1350,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_accel(self, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartAccel(double iAccel,boolean iMatch)
@@ -1431,7 +1371,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -1456,7 +1395,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartEnabled(boolean iEnabled,boolean iMatch)
@@ -1478,7 +1416,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_gun_joint_value(self, i_gun_number: int, i_joint_value: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartGunJointValue(short iGunNumber,double iJointValue,boolean
@@ -1516,7 +1453,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_moving_tip_clearance(self, i_gun_number: int, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartMovingTipClearance(short iGunNumber,double iDistance,boolean
@@ -1543,7 +1479,6 @@ class OLPSpotProfile(OLPProfile):
     def set_press_start_stationary_tip_clearance(self, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressStartStationaryTipClearance(double iDistance,boolean
@@ -1567,7 +1502,6 @@ class OLPSpotProfile(OLPProfile):
     def set_pressure_accel(self, i_accel: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressureAccel(double iAccel,boolean iMatch)
@@ -1589,7 +1523,6 @@ class OLPSpotProfile(OLPProfile):
     def set_pressure_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressureAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -1614,7 +1547,6 @@ class OLPSpotProfile(OLPProfile):
     def set_pressure_push_depth(self, i_gun_number: int, i_push_depth: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressurePushDepth(short iGunNumber,double iPushDepth,boolean
@@ -1640,7 +1572,6 @@ class OLPSpotProfile(OLPProfile):
     def set_pressure_speed_factor(self, i_gun_number: int, i_speed_factor: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPressureSpeedFactor(short iGunNumber,double iSpeedFactor,boolean
@@ -1666,7 +1597,6 @@ class OLPSpotProfile(OLPProfile):
     def set_weld_delay(self, i_gun_number: int, i_weld_delay: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetWeldDelay(short iGunNumber,double iWeldDelay,boolean
@@ -1689,10 +1619,10 @@ class OLPSpotProfile(OLPProfile):
         """
         return self.com_object.SetWeldDelay(i_gun_number, i_weld_delay, i_match)
 
-    def set_weld_pressure_stabilization_time(self, i_gun_number: int, i_weld_pressure_stabilization_time: float, i_match: bool) -> None:
+    def set_weld_pressure_stabilization_time(self, i_gun_number: int, i_weld_pressure_stabilization_time: float,
+                                             i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetWeldPressureStabilizationTime(short iGunNumber,double
@@ -1715,7 +1645,8 @@ class OLPSpotProfile(OLPProfile):
         :param bool i_match:
         :return: None
         """
-        return self.com_object.SetWeldPressureStabilizationTime(i_gun_number, i_weld_pressure_stabilization_time, i_match)
+        return self.com_object.SetWeldPressureStabilizationTime(i_gun_number, i_weld_pressure_stabilization_time,
+                                                                i_match)
 
     def __repr__(self):
-        return f'OLPSpotProfile(name="{ self.name }")'
+        return f'OLPSpotProfile(name="{self.name}")'

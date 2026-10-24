@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimConnectionServices(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +58,6 @@ class SimConnectionServices(AnyObject):
     def create_lines_from_search(self, i_handlers: tuple, i_prefix: str, i_tolerance: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateLinesFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
@@ -105,7 +103,6 @@ class SimConnectionServices(AnyObject):
     def create_points_from_search(self, i_handlers: tuple, i_prefix: str, i_tolerance: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreatePointsFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
@@ -151,7 +148,6 @@ class SimConnectionServices(AnyObject):
     def import_from_fsr(self, i_prefix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportFromFSR(CATBSTR iPrefix)
@@ -170,7 +166,6 @@ class SimConnectionServices(AnyObject):
     def import_from_xml(self, i_xml_file_path: str, i_prefix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportFromXML(CATBSTR iXMLFilePath,CATBSTR iPrefix)

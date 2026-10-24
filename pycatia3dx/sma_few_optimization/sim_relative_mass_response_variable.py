@@ -11,10 +11,8 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimRelativeMassResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,4 +75,4 @@ class SimRelativeMassResponseVariable(SimNonParametricResponseVariable):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'SimRelativeMassResponseVariable(name="{ self.name }")'
+        return f'SimRelativeMassResponseVariable(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class MeasureSettingAtt(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class MeasureSettingAtt(SettingController):
     def get_auto_attach_move_status(self, o_auto_update_in_prd: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAutoAttachMoveStatus(long oAutoUpdateInPrd)
@@ -63,7 +61,6 @@ class MeasureSettingAtt(SettingController):
     def get_border_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBorderColor(long oR,long oG,long oB)
@@ -91,7 +88,6 @@ class MeasureSettingAtt(SettingController):
     def get_border_status(self, ochk_border: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBorderStatus(long ochkBorder)
@@ -114,7 +110,6 @@ class MeasureSettingAtt(SettingController):
     def get_fill_status(self, ochk_fill: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFillStatus(long ochkFill)
@@ -137,7 +132,6 @@ class MeasureSettingAtt(SettingController):
     def get_fill_style(self, o_fill_style: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFillStyle(long oFillStyle)
@@ -163,7 +157,6 @@ class MeasureSettingAtt(SettingController):
     def get_line_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLineColor(long oR,long oG,long oB)
@@ -191,7 +184,6 @@ class MeasureSettingAtt(SettingController):
     def get_line_width(self, o_line_width: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLineWidth(long oLineWidth)
@@ -213,7 +205,6 @@ class MeasureSettingAtt(SettingController):
     def get_measure_only_shown_elements_status(self, ochk_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMeasureOnlyShownElementsStatus(long ochkStatus)
@@ -237,7 +228,6 @@ class MeasureSettingAtt(SettingController):
     def get_product_update_status(self, o_auto_update_in_prd: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProductUpdateStatus(long oAutoUpdateInPrd)
@@ -261,7 +251,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_box_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextBoxColor(long oR,long oG,long oB)
@@ -289,7 +278,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_box_transparency(self, o_transparency: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextBoxTransparency(long oTransparency)
@@ -311,7 +299,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextColor(long oR,long oG,long oB)
@@ -339,7 +326,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_font(self, o_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextFont(CATBSTR oString)
@@ -360,7 +346,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_font_index(self, o_text_font_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextFontIndex(long oTextFontIndex)
@@ -382,7 +367,6 @@ class MeasureSettingAtt(SettingController):
     def get_text_size(self, o_text_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTextSize(float oTextSize)
@@ -404,7 +388,6 @@ class MeasureSettingAtt(SettingController):
     def get_tilde_shown_status(self, o_tilde_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTildeShownStatus(long oTildeStatus)
@@ -428,7 +411,6 @@ class MeasureSettingAtt(SettingController):
     def set_auto_attach_move_status(self, i_auto_update_in_prd: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAutoAttachMoveStatus(long iAutoUpdateInPrd)
@@ -452,7 +434,6 @@ class MeasureSettingAtt(SettingController):
     def set_border_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBorderColor(long iR,long iG,long iB)
@@ -480,7 +461,6 @@ class MeasureSettingAtt(SettingController):
     def set_border_status(self, ichk_border: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBorderStatus(long ichkBorder)
@@ -503,7 +483,6 @@ class MeasureSettingAtt(SettingController):
     def set_fill_status(self, ichk_fill: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFillStatus(long ichkFill)
@@ -526,7 +505,6 @@ class MeasureSettingAtt(SettingController):
     def set_fill_style(self, i_fill_style: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFillStyle(long iFillStyle)
@@ -552,7 +530,6 @@ class MeasureSettingAtt(SettingController):
     def set_line_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLineColor(long iR,long iG,long iB)
@@ -580,7 +557,6 @@ class MeasureSettingAtt(SettingController):
     def set_line_width(self, i_line_width: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLineWidth(long iLineWidth)
@@ -604,7 +580,6 @@ class MeasureSettingAtt(SettingController):
     def set_measure_only_shown_elements_status(self, ichk_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMeasureOnlyShownElementsStatus(long ichkStatus)
@@ -628,7 +603,6 @@ class MeasureSettingAtt(SettingController):
     def set_product_update_status(self, i_auto_update_in_prd: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProductUpdateStatus(long iAutoUpdateInPrd)
@@ -652,7 +626,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_box_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextBoxColor(long iR,long iG,long iB)
@@ -680,7 +653,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_box_transparency(self, i_transparency: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextBoxTransparency(long iTransparency)
@@ -702,7 +674,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextColor(long iR,long iG,long iB)
@@ -730,7 +701,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_font(self, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextFont(CATBSTR iString)
@@ -752,7 +722,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_font_index(self, i_text_font_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextFontIndex(long iTextFontIndex)
@@ -774,7 +743,6 @@ class MeasureSettingAtt(SettingController):
     def set_text_size(self, i_text_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTextSize(float iTextSize)
@@ -796,7 +764,6 @@ class MeasureSettingAtt(SettingController):
     def set_tilde_shown_status(self, i_tilde_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTildeShownStatus(long iTildeStatus)

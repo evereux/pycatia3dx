@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Limit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class Limit(AnyObject):
     def dimension(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Dimension() As Length (Read Only)
@@ -59,7 +56,6 @@ class Limit(AnyObject):
     def limit_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitMode() As CatLimitMode
@@ -82,7 +78,6 @@ class Limit(AnyObject):
     def limiting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitingElement() As Reference
@@ -105,4 +100,4 @@ class Limit(AnyObject):
         self.com_object.LimitingElement = value
 
     def __repr__(self):
-        return f'Limit(name="{ self.name }")'
+        return f'Limit(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimUserSubroutine(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimUserSubroutine(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimUserSubroutine(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -114,7 +110,6 @@ class SimUserSubroutine(AnyObject):
     def user_subroutine_document(self) -> PLMDocument:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserSubroutineDocument() As PLMDocument
@@ -134,4 +129,4 @@ class SimUserSubroutine(AnyObject):
         self.com_object.UserSubroutineDocument = value
 
     def __repr__(self):
-        return f'SimUserSubroutine(name="{ self.name }")'
+        return f'SimUserSubroutine(name="{self.name}")'

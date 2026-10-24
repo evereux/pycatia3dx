@@ -16,7 +16,6 @@ from pycatia3dx.system.collection import Collection
 class Viewers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -42,7 +41,6 @@ class Viewers(Collection):
     def item(self, i_index: int) -> Viewer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(long iIndex) As Viewer

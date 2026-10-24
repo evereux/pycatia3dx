@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SystemConfiguration(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -38,7 +37,6 @@ class SystemConfiguration(AnyObject):
     def operating_system(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property OperatingSystem() As CATBSTR (Read Only)
@@ -60,7 +58,6 @@ class SystemConfiguration(AnyObject):
     def product_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ProductCount() As long (Read Only)
@@ -81,7 +78,6 @@ class SystemConfiguration(AnyObject):
     def release(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Release() As long (Read Only)
@@ -101,7 +97,6 @@ class SystemConfiguration(AnyObject):
     def service_pack(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ServicePack() As long (Read Only)
@@ -121,7 +116,6 @@ class SystemConfiguration(AnyObject):
     def version(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Version() As long (Read Only)
@@ -140,8 +134,7 @@ class SystemConfiguration(AnyObject):
         def get_product_names(self, io_product_names: tuple) -> None:
             """
             .. note::
-                :class: toggle
-
+    
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                     | Sub GetProductNames(CATSafeArrayVariant ioProductNames)
                     |     Returns the product names of all the licenses currently known to the
@@ -189,7 +182,6 @@ class SystemConfiguration(AnyObject):
     def is_product_authorized(self, i_product_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func IsProductAuthorized(CATBSTR iProductName) As boolean

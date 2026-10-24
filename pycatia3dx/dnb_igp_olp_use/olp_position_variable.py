@@ -17,10 +17,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPPositionVariable(OLPVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class OLPPositionVariable(OLPVariable):
     def generic_config(self) -> OLPRobotConfigGeneric:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GenericConfig() As OlpRobotConfigGeneric (Read Only)
@@ -80,7 +77,6 @@ class OLPPositionVariable(OLPVariable):
     def motion_group(self) -> OLPMotionGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroup() As OlpMotionGroup
@@ -107,7 +103,6 @@ class OLPPositionVariable(OLPVariable):
     def object_frame_profile(self) -> OLPObjectFrameProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectFrameProfile() As OlpObjectFrameProfile
@@ -137,7 +132,6 @@ class OLPPositionVariable(OLPVariable):
     def position_variable_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionVariableType(CATBSTR iType)
@@ -171,7 +165,6 @@ class OLPPositionVariable(OLPVariable):
     def process_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProcessType() As DELOlpProcessType
@@ -217,7 +210,6 @@ class OLPPositionVariable(OLPVariable):
     def redundant_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RedundantAngle() As double
@@ -245,7 +237,6 @@ class OLPPositionVariable(OLPVariable):
     def tag(self) -> OLPTag:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Tag() As OlpTag (Read Only)
@@ -267,7 +258,6 @@ class OLPPositionVariable(OLPVariable):
     def tag_group_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupName(CATBSTR iName)
@@ -298,7 +288,6 @@ class OLPPositionVariable(OLPVariable):
     def tag_group_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupType() As DELOlpTagGroupType
@@ -330,7 +319,6 @@ class OLPPositionVariable(OLPVariable):
     def tag_group_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroupTypeString() As CATBSTR
@@ -363,7 +351,6 @@ class OLPPositionVariable(OLPVariable):
     def get_device_joints(self, i_device: OLPController) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceJoints(OlpController iDevice) As
@@ -415,7 +402,6 @@ class OLPPositionVariable(OLPVariable):
     def get_transform(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
@@ -458,7 +444,6 @@ class OLPPositionVariable(OLPVariable):
     def set_device_joints(self, i_device: OLPController, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeviceJoints(OlpController iDevice,CATSafeArrayVariant
@@ -493,7 +478,6 @@ class OLPPositionVariable(OLPVariable):
     def set_transform(self, i_origin: int, i_target: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform
@@ -521,4 +505,4 @@ class OLPPositionVariable(OLPVariable):
         return self.com_object.SetTransform(i_origin, i_target.com_object)
 
     def __repr__(self):
-        return f'OLPPositionVariable(name="{ self.name }")'
+        return f'OLPPositionVariable(name="{self.name}")'

@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
 
 
 class RscLocalVar(RscDataEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscLocalVar(RscDataEntity):
     def default_value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefaultValue() As CATBSTR
@@ -87,7 +84,6 @@ class RscLocalVar(RscDataEntity):
     def unset_default_value(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnsetDefaultValue()
@@ -112,4 +108,4 @@ class RscLocalVar(RscDataEntity):
         return self.com_object.UnsetDefaultValue()
 
     def __repr__(self):
-        return f'RscLocalVar(name="{ self.name }")'
+        return f'RscLocalVar(name="{self.name}")'

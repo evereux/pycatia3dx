@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMachinableAreaMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingMachinableAreaMngt(AnyObject):
     def get_all_datas(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllDatas() As CATSafeArrayVariant
@@ -55,4 +52,4 @@ class ManufacturingMachinableAreaMngt(AnyObject):
         return self.com_object.GetAllDatas()
 
     def __repr__(self):
-        return f'ManufacturingMachinableAreaMngt(name="{ self.name }")'
+        return f'ManufacturingMachinableAreaMngt(name="{self.name}")'

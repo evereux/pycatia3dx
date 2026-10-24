@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlane2Lines(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -43,7 +41,6 @@ class HybridShapePlane2Lines(Plane):
     def first(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property First() As Reference
@@ -79,7 +76,6 @@ class HybridShapePlane2Lines(Plane):
     def forbid_non_coplanar_lines(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ForbidNonCoplanarLines(boolean iCoplanarLines)
@@ -102,7 +98,6 @@ class HybridShapePlane2Lines(Plane):
     def second(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Second() As Reference
@@ -135,4 +130,4 @@ class HybridShapePlane2Lines(Plane):
         self.com_object.Second = value
 
     def __repr__(self):
-        return f'HybridShapePlane2Lines(name="{ self.name }")'
+        return f'HybridShapePlane2Lines(name="{self.name}")'

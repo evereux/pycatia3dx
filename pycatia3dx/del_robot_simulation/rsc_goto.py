@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscGoto(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscGoto(RscInstruction):
     def target(self) -> RscInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Target() As RscInstruction
@@ -91,7 +88,6 @@ class RscGoto(RscInstruction):
     def visible_targets(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisibleTargets() As CATSafeArrayVariant (Read Only)
@@ -125,7 +121,6 @@ class RscGoto(RscInstruction):
     def is_visible_target(self, i_instr: RscInstruction) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsVisibleTarget(RscInstruction iInstr) As boolean
@@ -164,4 +159,4 @@ class RscGoto(RscInstruction):
         return self.com_object.IsVisibleTarget(i_instr.com_object)
 
     def __repr__(self):
-        return f'RscGoto(name="{ self.name }")'
+        return f'RscGoto(name="{self.name}")'

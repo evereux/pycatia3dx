@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeWrapSurface(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeWrapSurface(HybridShape):
     def deformation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DeformationMode() As long
@@ -87,7 +84,6 @@ class HybridShapeWrapSurface(HybridShape):
     def reference_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ReferenceSurface() As Reference
@@ -116,7 +112,6 @@ class HybridShapeWrapSurface(HybridShape):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Surface() As Reference
@@ -146,7 +141,6 @@ class HybridShapeWrapSurface(HybridShape):
     def target_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TargetSurface() As Reference
@@ -172,4 +166,4 @@ class HybridShapeWrapSurface(HybridShape):
         self.com_object.TargetSurface = value
 
     def __repr__(self):
-        return f'HybridShapeWrapSurface(name="{ self.name }")'
+        return f'HybridShapeWrapSurface(name="{self.name}")'

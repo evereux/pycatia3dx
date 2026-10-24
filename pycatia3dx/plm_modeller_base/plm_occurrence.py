@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class PLMOccurrence(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class PLMOccurrence(AnyObject):
     def plm_entity(self) -> PLMEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PLMEntity() As PLMEntity (Read Only)
@@ -62,7 +60,6 @@ class PLMOccurrence(AnyObject):
     def plm_occurrences(self) -> 'PLMOccurrences':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PLMOccurrences() As PLMOccurrences (Read Only)

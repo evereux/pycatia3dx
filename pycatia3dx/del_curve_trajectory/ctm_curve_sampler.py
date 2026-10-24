@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmCurveSampler(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class CtmCurveSampler(AnyObject):
     def end_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndOffset() As double
@@ -73,7 +70,6 @@ class CtmCurveSampler(AnyObject):
     def start_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartOffset() As double
@@ -102,4 +98,4 @@ class CtmCurveSampler(AnyObject):
         self.com_object.StartOffset = value
 
     def __repr__(self):
-        return f'CtmCurveSampler(name="{ self.name }")'
+        return f'CtmCurveSampler(name="{self.name}")'

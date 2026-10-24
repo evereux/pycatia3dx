@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeFill(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -40,7 +38,6 @@ class HybridShapeFill(HybridShape):
     def advanced_tolerant_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AdvancedTolerantMode() As long
@@ -84,7 +81,6 @@ class HybridShapeFill(HybridShape):
     def constraint(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Constraint() As Reference
@@ -114,7 +110,6 @@ class HybridShapeFill(HybridShape):
     def continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Continuity() As long
@@ -153,7 +148,6 @@ class HybridShapeFill(HybridShape):
     def detection(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Detection() As short
@@ -182,7 +176,6 @@ class HybridShapeFill(HybridShape):
     def maximum_deviation_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MaximumDeviationValue() As double
@@ -212,7 +205,6 @@ class HybridShapeFill(HybridShape):
     def plane_only_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PlaneOnlyMode() As boolean
@@ -244,7 +236,6 @@ class HybridShapeFill(HybridShape):
     def tolerant_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TolerantMode() As boolean
@@ -274,7 +265,6 @@ class HybridShapeFill(HybridShape):
     def add_bound(self, i_boundary: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddBound(Reference iBoundary)
@@ -300,7 +290,6 @@ class HybridShapeFill(HybridShape):
     def add_support_at_bound(self, i_boundary: Reference, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddSupportAtBound(Reference iBoundary,Reference iSupport)
@@ -329,7 +318,6 @@ class HybridShapeFill(HybridShape):
     def append_constraint(self, i_constraint: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AppendConstraint(Reference iConstraint)
@@ -355,7 +343,6 @@ class HybridShapeFill(HybridShape):
     def get_bound_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBoundAtPosition(long iPos) As Reference
@@ -382,7 +369,6 @@ class HybridShapeFill(HybridShape):
     def get_bound_position(self, i_boundary: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBoundPosition(Reference iBoundary) As long
@@ -409,7 +395,6 @@ class HybridShapeFill(HybridShape):
     def get_bound_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBoundSize() As long
@@ -434,7 +419,6 @@ class HybridShapeFill(HybridShape):
     def get_boundary_continuity(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBoundaryContinuity(long iPos) As long
@@ -472,7 +456,6 @@ class HybridShapeFill(HybridShape):
     def get_constraint_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetConstraintAtPosition(long iPos) As Reference
@@ -499,7 +482,6 @@ class HybridShapeFill(HybridShape):
     def get_constraints_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetConstraintsSize() As long
@@ -524,7 +506,6 @@ class HybridShapeFill(HybridShape):
     def get_support_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSupportAtPosition(long iPos) As Reference
@@ -551,7 +532,6 @@ class HybridShapeFill(HybridShape):
     def insert_bound_after_position(self, i_boundary: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertBoundAfterPosition(Reference iBoundary,long iPos)
@@ -580,7 +560,6 @@ class HybridShapeFill(HybridShape):
     def remove_all_bound(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllBound()
@@ -599,7 +578,6 @@ class HybridShapeFill(HybridShape):
     def remove_all_constraints(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllConstraints()
@@ -612,7 +590,6 @@ class HybridShapeFill(HybridShape):
     def remove_bound_at_position(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveBoundAtPosition(long iPos)
@@ -638,7 +615,6 @@ class HybridShapeFill(HybridShape):
     def remove_constraint(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveConstraint(long iPos)
@@ -664,7 +640,6 @@ class HybridShapeFill(HybridShape):
     def remove_support_at_position(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSupportAtPosition(long iPos)
@@ -690,7 +665,6 @@ class HybridShapeFill(HybridShape):
     def replace_bound_at_position(self, i_boundary: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceBoundAtPosition(Reference iBoundary,long iPos)
@@ -718,7 +692,6 @@ class HybridShapeFill(HybridShape):
     def replace_constraint(self, i_pos: int, i_constraint: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceConstraint(long iPos,Reference iConstraint)
@@ -747,7 +720,6 @@ class HybridShapeFill(HybridShape):
     def replace_support_at_position(self, i_support: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceSupportAtPosition(Reference iSupport,long iPos)
@@ -775,7 +747,6 @@ class HybridShapeFill(HybridShape):
     def set_boundary_continuity(self, i_continuity: int, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetBoundaryContinuity(long iContinuity,long iPos)
@@ -811,4 +782,4 @@ class HybridShapeFill(HybridShape):
         return self.com_object.SetBoundaryContinuity(i_continuity, i_pos)
 
     def __repr__(self):
-        return f'HybridShapeFill(name="{ self.name }")'
+        return f'HybridShapeFill(name="{self.name}")'

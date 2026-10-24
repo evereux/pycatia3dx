@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MLPStackingSimu(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -55,7 +54,6 @@ class MLPStackingSimu(AnyObject):
     def layers(self) -> MLPSimuLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Layers() As MLPSimuLayers (Read Only)
@@ -75,7 +73,6 @@ class MLPStackingSimu(AnyObject):
     def optimized_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OptimizedMode() As boolean

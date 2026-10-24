@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 class OLPCFrameRivetProfile(OLPProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def approach_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachStage() As OlpDrillRivetStage
@@ -67,7 +65,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def end_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndStage() As OlpDrillRivetStage
@@ -90,7 +87,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def retract_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RetractStage() As OlpDrillRivetStage
@@ -113,7 +109,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def start_stage(self) -> OLPDrillRivetStage:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartStage() As OlpDrillRivetStage
@@ -135,7 +130,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAccuracyProfile() As OlpAccuracyProfile
@@ -152,7 +146,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_all_process_schedules(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllProcessSchedules() As CATSafeArrayVariant
@@ -168,7 +161,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApproachDirection() As DELOlpAxisDirection
@@ -184,7 +176,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_close_in_positive_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCloseInPositiveDirection() As boolean
@@ -202,7 +193,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_hold_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHoldTime() As double
@@ -218,7 +208,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_hold_time_link(self, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
@@ -242,7 +231,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_home_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomeName() As CATBSTR
@@ -259,7 +247,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_joint_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointNumber() As short
@@ -275,7 +262,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_joint_value(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointValue() As CATSafeArrayVariant
@@ -291,7 +277,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_motion_profile(self) -> OLPMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionProfile() As OlpMotionProfile
@@ -308,7 +293,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_part_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartThickness() As double
@@ -324,7 +308,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_process_schedules(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProcessSchedules(CATBSTR iProfileType) As
@@ -347,7 +330,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_push_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPushDepth() As double
@@ -363,7 +345,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_push_depth_link(self, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPushDepthLink(OlpProfile oProfile,CATBSTR
@@ -387,7 +368,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def get_tool_kin_simulation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolKinSimulation() As boolean
@@ -403,7 +383,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def is_process_schedule_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
@@ -426,7 +405,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -450,7 +428,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_all_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -487,7 +464,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_approach_direction(self, i_approach_direction: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachDirection(DELOlpAxisDirection iApproachDirection,boolean
@@ -510,7 +486,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_close_in_positive_direction(self, i_is_positive_direction: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCloseInPositiveDirection(boolean iIsPositiveDirection,boolean
@@ -535,7 +510,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_hold_time(self, i_time: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHoldTime(double iTime,boolean iMatch)
@@ -557,7 +531,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_hold_time_link(self, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHoldTimeLink(OlpProfile iProfile,CATBSTR
@@ -582,7 +555,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_home_name(self, i_home: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHomeName(CATBSTR iHome,boolean iMatch)
@@ -614,7 +586,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_joint_number(self, i_joint_number: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointNumber(short iJointNumber,boolean iMatch)
@@ -636,7 +607,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_joint_value(self, i_values: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetJointValue(CATSafeArrayVariant iValues,boolean iMatch)
@@ -675,7 +645,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_motion_profile(self, i_profile: OLPMotionProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionProfile(OlpMotionProfile iProfile,boolean iMatch)
@@ -698,7 +667,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_part_thickness(self, i_part_thickness: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPartThickness(double iPartThickness,boolean iMatch)
@@ -720,7 +688,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -762,7 +729,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_process_schedules_to_nothing(self, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
@@ -788,7 +754,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_push_depth(self, i_depth: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPushDepth(double iDepth,boolean iMatch)
@@ -810,7 +775,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_push_depth_link(self, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPushDepthLink(OlpProfile iProfile,CATBSTR
@@ -835,7 +799,6 @@ class OLPCFrameRivetProfile(OLPProfile):
     def set_tool_kin_simulation(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolKinSimulation(boolean iEnabled,boolean iMatch)

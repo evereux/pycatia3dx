@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class Layout2DRoot(AnyObject):
     def active_sheet(self) -> Layout2DSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveSheet() As Layout2DSheet
@@ -73,7 +71,6 @@ class Layout2DRoot(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As Parameters (Read Only)
@@ -103,7 +100,6 @@ class Layout2DRoot(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Relations() As Relations (Read Only)
@@ -134,7 +130,6 @@ class Layout2DRoot(AnyObject):
     def rendering_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RenderingMode() As CatRenderingMode
@@ -169,7 +164,6 @@ class Layout2DRoot(AnyObject):
     def sheets(self) -> Layout2DSheets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sheets() As Layout2DSheets (Read Only)
@@ -197,7 +191,6 @@ class Layout2DRoot(AnyObject):
     def standard(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Standard() As CATBSTR
@@ -231,7 +224,6 @@ class Layout2DRoot(AnyObject):
     def visu_in_3d(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisuIn3D() As CatVisuIn3DMode
@@ -258,7 +250,6 @@ class Layout2DRoot(AnyObject):
     def reorder_sheets(self, i_ordered_sheets: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)

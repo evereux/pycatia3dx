@@ -13,7 +13,6 @@ from pycatia3dx.sketcher.curve_2d import Curve2D
 class Parabola2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +38,6 @@ class Parabola2D(Curve2D):
     def focal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property FocalDistance() As double (Read Only)
@@ -56,7 +54,6 @@ class Parabola2D(Curve2D):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetAxis(CATSafeArrayVariant oAxis)
@@ -95,7 +92,6 @@ class Parabola2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetCenter(CATSafeArrayVariant oCenter)
@@ -134,7 +130,6 @@ class Parabola2D(Curve2D):
                  i_focal_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetData(double iCenterX,double iCenterY,double iAxisX,double iAxisY,double

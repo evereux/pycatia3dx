@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimViscoelasticity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimViscoelasticity(AnyObject):
     def error_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ErrorTolerance() As double
@@ -101,7 +98,6 @@ class SimViscoelasticity(AnyObject):
     def frequency_domain_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyDomainSubType() As
@@ -125,7 +121,6 @@ class SimViscoelasticity(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -140,7 +135,6 @@ class SimViscoelasticity(AnyObject):
     def nmax(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Nmax() As long
@@ -164,7 +158,6 @@ class SimViscoelasticity(AnyObject):
     def preload(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Preload() As SimViscoelasticityPreloadType
@@ -188,7 +181,6 @@ class SimViscoelasticity(AnyObject):
     def tabular_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TabularSubType() As SimViscoelasticityTabularSubType
@@ -212,7 +204,6 @@ class SimViscoelasticity(AnyObject):
     def time_domain_sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeDomainSubType() As SimViscoelasticityTimeType
@@ -235,7 +226,6 @@ class SimViscoelasticity(AnyObject):
     def viscoelasticity_domain(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscoelasticityDomain() As
@@ -258,7 +248,6 @@ class SimViscoelasticity(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimViscoelasticityMaterialTableColumn
@@ -281,4 +270,4 @@ class SimViscoelasticity(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimViscoelasticity(name="{ self.name }")'
+        return f'SimViscoelasticity(name="{self.name}")'

@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PartServices(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -43,10 +41,10 @@ class PartServices(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def get_near_sub_elements(self, i_object: AnyObject, i_sub_element_dimension: int, i_near_object: AnyObject) -> References:
+    def get_near_sub_elements(self, i_object: AnyObject, i_sub_element_dimension: int,
+                              i_near_object: AnyObject) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetNearSubElements(AnyObject iObject,long iSubElementDimension,AnyObject
@@ -85,12 +83,12 @@ class PartServices(AnyObject):
         :param AnyObject i_near_object:
         :return: References
         """
-        return References(self.com_object.GetNearSubElements(i_object.com_object, i_sub_element_dimension, i_near_object.com_object))
+        return References(
+            self.com_object.GetNearSubElements(i_object.com_object, i_sub_element_dimension, i_near_object.com_object))
 
     def get_sub_elements(self, i_object: AnyObject, i_sub_element_dimension: int, i_duplicates: bool) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetSubElements(AnyObject iObject,long iSubElementDimension,boolean
@@ -130,4 +128,4 @@ class PartServices(AnyObject):
         return References(self.com_object.GetSubElements(i_object.com_object, i_sub_element_dimension, i_duplicates))
 
     def __repr__(self):
-        return f'PartServices(name="{ self.name }")'
+        return f'PartServices(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.structure.structure_plate import StructurePlate
 class SddPlate(StructurePlate):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +48,6 @@ class SddPlate(StructurePlate):
     def flanges(self) -> StrFlanges:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Flanges() As StrFlanges (Read Only)
@@ -76,7 +74,6 @@ class SddPlate(StructurePlate):
     def plate_sub_elements(self) -> SddPlateSubElementMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlateSubElements() As SddPlateSubElementMngt (Read

@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_sfd_project_data import StrSfdProjectData
 class SfdPart(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class SfdPart(AnyObject):
     def get_connections_set(self) -> SfdConnectionSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConnectionsSet() As SfdConnectionSet
@@ -62,7 +60,6 @@ class SfdPart(AnyObject):
     def get_project_data(self) -> StrSfdProjectData:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProjectData() As StrSfdProjectData
@@ -85,7 +82,6 @@ class SfdPart(AnyObject):
     def is_sfd_system(self, o_diagnostic: int, o_incorrect_discipline_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsSFDSystem(long oDiagnostic,CATBSTR
@@ -121,7 +117,6 @@ class SfdPart(AnyObject):
     def set_as_sfd_system(self, o_diagnostic: int, o_incorrect_discipline_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAsSFDSystem(long oDiagnostic,CATBSTR

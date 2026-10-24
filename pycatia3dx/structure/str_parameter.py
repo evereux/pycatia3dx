@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrParameter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrParameter(AnyObject):
     def parameter(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameter() As Parameter
@@ -74,7 +71,6 @@ class StrParameter(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Role() As CATBSTR (Read Only)
@@ -101,4 +97,4 @@ class StrParameter(AnyObject):
         return self.com_object.Role
 
     def __repr__(self):
-        return f'StrParameter(name="{ self.name }")'
+        return f'StrParameter(name="{self.name}")'

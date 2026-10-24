@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointCenter(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapePointCenter(Point):
     def element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element() As Reference
@@ -78,4 +75,4 @@ class HybridShapePointCenter(Point):
         self.com_object.Element = value
 
     def __repr__(self):
-        return f'HybridShapePointCenter(name="{ self.name }")'
+        return f'HybridShapePointCenter(name="{self.name}")'

@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 class SimExcitation(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class SimExcitation(AnyObject):
     def scenario_spec(self) -> 'SimScenarioSpec':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioSpec() As SimScenarioSpec (Read Only)

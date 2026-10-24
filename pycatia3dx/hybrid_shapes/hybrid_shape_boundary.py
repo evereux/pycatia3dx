@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeBoundary(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -52,7 +50,6 @@ class HybridShapeBoundary(HybridShape):
     def from_(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property From() As Reference
@@ -75,7 +72,6 @@ class HybridShapeBoundary(HybridShape):
     def from_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FromOrientation() As long
@@ -98,7 +94,6 @@ class HybridShapeBoundary(HybridShape):
     def initial_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InitialElement() As Reference
@@ -131,7 +126,6 @@ class HybridShapeBoundary(HybridShape):
     def propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Propagation() As long
@@ -161,7 +155,6 @@ class HybridShapeBoundary(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -193,7 +186,6 @@ class HybridShapeBoundary(HybridShape):
     def to(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property To() As Reference
@@ -216,7 +208,6 @@ class HybridShapeBoundary(HybridShape):
     def to_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ToOrientation() As long
@@ -236,4 +227,4 @@ class HybridShapeBoundary(HybridShape):
         self.com_object.ToOrientation = value
 
     def __repr__(self):
-        return f'HybridShapeBoundary(name="{ self.name }")'
+        return f'HybridShapeBoundary(name="{self.name}")'

@@ -15,10 +15,8 @@ from pycatia3dx.sma_spa_structural.sim_general_global_damping import SimGeneralG
 
 
 class SimDirectHarmonicResponseStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -82,7 +80,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -105,7 +102,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def global_damping(self) -> SimGeneralGlobalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalDamping() As SimGeneralGlobalDamping (Read
@@ -121,7 +117,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def interval_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntervalType() As
@@ -145,7 +140,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def linear_load_cases(self) -> SimLinearLoadCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinearLoadCases() As SimLinearLoadCases (Read Only)
@@ -160,7 +154,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def scale_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleType() As SimDirectHarmonicResponseStepScaleType
@@ -183,7 +176,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def structural_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StructuralMaterialDampingFlag() As boolean
@@ -209,7 +201,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -225,7 +216,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def viscous_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscousMaterialDampingFlag() As boolean
@@ -250,7 +240,6 @@ class SimDirectHarmonicResponseStep(SimStep):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimDirectHarmonicResponseStepTableColumn iTableColumnName)
@@ -272,4 +261,4 @@ class SimDirectHarmonicResponseStep(SimStep):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimDirectHarmonicResponseStep(name="{ self.name }")'
+        return f'SimDirectHarmonicResponseStep(name="{self.name}")'

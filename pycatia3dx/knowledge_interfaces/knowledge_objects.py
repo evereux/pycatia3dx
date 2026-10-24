@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.knowledge_set import KnowledgeSet
 
 
 class KnowledgeObjects(KnowledgeServices):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -45,7 +43,6 @@ class KnowledgeObjects(KnowledgeServices):
     def get_knowledge_root_set(self, i_create_or_not: bool, i_k_set_type: int) -> KnowledgeSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetKnowledgeRootSet(boolean iCreateOrNot,KnowledgeSetType iKSetType) As
@@ -70,4 +67,4 @@ class KnowledgeObjects(KnowledgeServices):
         return KnowledgeSet(self.com_object.GetKnowledgeRootSet(i_create_or_not, i_k_set_type))
 
     def __repr__(self):
-        return f'KnowledgeObjects(name="{ self.name }")'
+        return f'KnowledgeObjects(name="{self.name}")'

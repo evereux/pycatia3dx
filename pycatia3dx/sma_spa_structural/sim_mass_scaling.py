@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMassScaling(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimMassScaling(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimMassScaling(AnyObject):
     def factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Factor() As double
@@ -122,7 +118,6 @@ class SimMassScaling(AnyObject):
     def factor_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FactorFlag() As boolean
@@ -148,7 +143,6 @@ class SimMassScaling(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -163,7 +157,6 @@ class SimMassScaling(AnyObject):
     def frequency(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Frequency() As long
@@ -186,7 +179,6 @@ class SimMassScaling(AnyObject):
     def frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyFlag() As boolean
@@ -212,7 +204,6 @@ class SimMassScaling(AnyObject):
     def mass_scaling_behavior(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MassScalingBehavior() As
@@ -236,7 +227,6 @@ class SimMassScaling(AnyObject):
     def mass_scaling_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MassScalingMethod() As
@@ -260,7 +250,6 @@ class SimMassScaling(AnyObject):
     def number_interval(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberInterval() As long
@@ -284,7 +273,6 @@ class SimMassScaling(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -300,7 +288,6 @@ class SimMassScaling(AnyObject):
     def target_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetTimeIncrement() As double
@@ -323,7 +310,6 @@ class SimMassScaling(AnyObject):
     def target_time_increment_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetTimeIncrementFlag() As boolean
@@ -346,4 +332,4 @@ class SimMassScaling(AnyObject):
         self.com_object.TargetTimeIncrementFlag = value
 
     def __repr__(self):
-        return f'SimMassScaling(name="{ self.name }")'
+        return f'SimMassScaling(name="{self.name}")'

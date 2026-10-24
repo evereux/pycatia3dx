@@ -15,7 +15,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimResultsManager(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SimResultsManager(CATBaseDispatch):
     def multi_view_manager(self) -> SimMultiView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MultiViewManager() As SimMultiView (Read Only)
@@ -68,7 +66,6 @@ class SimResultsManager(CATBaseDispatch):
     def results_analysis_cases(self) -> SimResultsAnalysisCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResultsAnalysisCases() As SimResultsAnalysisCases (Read
@@ -84,7 +81,6 @@ class SimResultsManager(CATBaseDispatch):
     def get_load_case_identifier(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetLoadCaseIdentifier(CATSafeArrayVariant

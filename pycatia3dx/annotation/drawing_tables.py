@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingTables(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class DrawingTables(Collection):
     ) -> DrawingTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iPositionX,double iPositionY,long iNumberOfRow,long
@@ -96,7 +94,6 @@ class DrawingTables(Collection):
     def item(self, i_index: CATVariant) -> DrawingTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingTable
@@ -134,7 +131,6 @@ class DrawingTables(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

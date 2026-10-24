@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMaterialOption(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class SimMaterialOption(AnyObject):
     def create_sub_option(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSubOption(CATBSTR iType) As CATBaseDispatch
@@ -71,7 +68,6 @@ class SimMaterialOption(AnyObject):
     def get_parent_option(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParentOption() As CATBaseDispatch
@@ -84,7 +80,6 @@ class SimMaterialOption(AnyObject):
     def get_sub_options(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSubOptions() As CATSafeArrayVariant
@@ -97,7 +92,6 @@ class SimMaterialOption(AnyObject):
     def is_sub_option(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsSubOption() As boolean
@@ -110,7 +104,6 @@ class SimMaterialOption(AnyObject):
     def remove_sub_option(self, i_material_sub_option: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveSubOption(CATBaseDispatch iMaterialSubOption)
@@ -122,4 +115,4 @@ class SimMaterialOption(AnyObject):
         return self.com_object.RemoveSubOption(i_material_sub_option.com_object)
 
     def __repr__(self):
-        return f'SimMaterialOption(name="{ self.name }")'
+        return f'SimMaterialOption(name="{self.name}")'

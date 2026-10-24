@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.dimension import Dimension
 
 
 class Angle(Dimension):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -48,4 +46,4 @@ class Angle(Dimension):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Angle(name="{ self.name }")'
+        return f'Angle(name="{self.name}")'

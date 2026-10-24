@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePolyline(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapePolyline(HybridShape):
     def closure(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Closure() As boolean
@@ -86,7 +83,6 @@ class HybridShapePolyline(HybridShape):
     def number_of_elements(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property NumberOfElements() As long (Read Only)
@@ -112,7 +108,6 @@ class HybridShapePolyline(HybridShape):
     def get_element(self, i_position: int, o_element: Reference, o_radius: Length) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetElement(long iPosition,Reference oElement,Length
@@ -148,7 +143,6 @@ class HybridShapePolyline(HybridShape):
     def insert_element(self, i_point: Reference, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InsertElement(Reference iPoint,long iPosition)
@@ -177,7 +171,6 @@ class HybridShapePolyline(HybridShape):
     def remove_element(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElement(long iPosition)
@@ -204,7 +197,6 @@ class HybridShapePolyline(HybridShape):
     def replace_element(self, i_point: Reference, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceElement(Reference iPoint,long iPosition)
@@ -234,7 +226,6 @@ class HybridShapePolyline(HybridShape):
     def set_radius(self, i_position: int, i_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetRadius(long iPosition,double iRadius)
@@ -261,4 +252,4 @@ class HybridShapePolyline(HybridShape):
         return self.com_object.SetRadius(i_position, i_radius)
 
     def __repr__(self):
-        return f'HybridShapePolyline(name="{ self.name }")'
+        return f'HybridShapePolyline(name="{self.name}")'

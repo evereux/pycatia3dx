@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeLinePtPt(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -55,7 +53,6 @@ class HybridShapeLinePtPt(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOffset() As Length (Read Only)
@@ -78,7 +75,6 @@ class HybridShapeLinePtPt(Line):
     def end_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndOffset() As Length (Read Only)
@@ -101,7 +97,6 @@ class HybridShapeLinePtPt(Line):
     def pt_extremity(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PtExtremity() As Reference
@@ -133,7 +128,6 @@ class HybridShapeLinePtPt(Line):
     def pt_origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PtOrigine() As Reference
@@ -165,7 +159,6 @@ class HybridShapeLinePtPt(Line):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -197,7 +190,6 @@ class HybridShapeLinePtPt(Line):
     def get_length_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLengthType() As long
@@ -215,7 +207,6 @@ class HybridShapeLinePtPt(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSymmetricalExtension() As boolean
@@ -234,7 +225,6 @@ class HybridShapeLinePtPt(Line):
     def remove_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSupport()
@@ -247,7 +237,6 @@ class HybridShapeLinePtPt(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLengthType(long iType)
@@ -266,7 +255,6 @@ class HybridShapeLinePtPt(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSymmetricalExtension(boolean iSym)
@@ -283,4 +271,4 @@ class HybridShapeLinePtPt(Line):
         return self.com_object.SetSymmetricalExtension(i_sym)
 
     def __repr__(self):
-        return f'HybridShapeLinePtPt(name="{ self.name }")'
+        return f'HybridShapeLinePtPt(name="{self.name}")'

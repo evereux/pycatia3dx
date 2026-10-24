@@ -15,7 +15,6 @@ from pycatia3dx.interfaces.viewpoint_3d import ViewPoint3D
 class Camera3D(Camera):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -41,7 +40,6 @@ class Camera3D(Camera):
     def viewpoint_3d(self) -> ViewPoint3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Viewpoint3D() As Viewpoint3D

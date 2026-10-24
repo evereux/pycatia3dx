@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class IndexedSearch(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -65,7 +63,6 @@ class IndexedSearch(AnyObject):
     def extensions(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Extensions(CATBSTR iExtension) (Write Only)
@@ -101,7 +98,6 @@ class IndexedSearch(AnyObject):
     def max_search_result_count(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaxSearchResultCount(long iMaxResultCount) (Write
@@ -131,7 +127,6 @@ class IndexedSearch(AnyObject):
     def results(self) -> PLMEntities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Results() As PLMEntities (Read Only)
@@ -156,7 +151,6 @@ class IndexedSearch(AnyObject):
     def search_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SearchCount() As long (Read Only)
@@ -182,7 +176,6 @@ class IndexedSearch(AnyObject):
     def types(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Types(CATBSTR iBaseType) (Write Only)
@@ -211,7 +204,6 @@ class IndexedSearch(AnyObject):
     def predicate(self, i_predicate: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Predicate(CATBSTR iPredicate,CATBSTR iValue)
@@ -236,7 +228,6 @@ class IndexedSearch(AnyObject):
     def search(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Search()
@@ -259,7 +250,6 @@ class IndexedSearch(AnyObject):
     def sort_by(self, i_sort_by_predicate: str, i_sort_order: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SortBy(CATBSTR iSortByPredicate,SearchSortOrder
@@ -285,4 +275,4 @@ class IndexedSearch(AnyObject):
         return self.com_object.SortBy(i_sort_by_predicate, i_sort_order)
 
     def __repr__(self):
-        return f'IndexedSearch(name="{ self.name }")'
+        return f'IndexedSearch(name="{self.name}")'

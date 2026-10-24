@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSolutionControls(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimSolutionControls(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimSolutionControls(AnyObject):
     def da(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DA() As double
@@ -123,7 +119,6 @@ class SimSolutionControls(AnyObject):
     def db(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DB() As double
@@ -147,7 +142,6 @@ class SimSolutionControls(AnyObject):
     def dc(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DC() As double
@@ -171,7 +165,6 @@ class SimSolutionControls(AnyObject):
     def dd(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DD() As double
@@ -195,7 +188,6 @@ class SimSolutionControls(AnyObject):
     def de(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DE() As double
@@ -220,7 +212,6 @@ class SimSolutionControls(AnyObject):
     def d_fs(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DFs() As double
@@ -246,7 +237,6 @@ class SimSolutionControls(AnyObject):
     def dg(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DG() As double
@@ -273,7 +263,6 @@ class SimSolutionControls(AnyObject):
     def dh(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DH() As double
@@ -297,7 +286,6 @@ class SimSolutionControls(AnyObject):
     def dl(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DL() As double
@@ -325,7 +313,6 @@ class SimSolutionControls(AnyObject):
     def dm(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DM() As double
@@ -349,7 +336,6 @@ class SimSolutionControls(AnyObject):
     def d_mdif(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DMdif() As double
@@ -375,7 +361,6 @@ class SimSolutionControls(AnyObject):
     def d_mdyn(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DMdyn() As double
@@ -399,7 +384,6 @@ class SimSolutionControls(AnyObject):
     def dr(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DR() As double
@@ -423,7 +407,6 @@ class SimSolutionControls(AnyObject):
     def ds(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DS() As double
@@ -447,7 +430,6 @@ class SimSolutionControls(AnyObject):
     def dt(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DT() As double
@@ -475,7 +457,6 @@ class SimSolutionControls(AnyObject):
     def definition(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Definition() As SimSolutionControlsDefinition
@@ -498,7 +479,6 @@ class SimSolutionControls(AnyObject):
     def df(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Df() As double
@@ -522,7 +502,6 @@ class SimSolutionControls(AnyObject):
     def discontinuous_analysis_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DiscontinuousAnalysisFlag() As boolean
@@ -547,7 +526,6 @@ class SimSolutionControls(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -562,7 +540,6 @@ class SimSolutionControls(AnyObject):
     def ia(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IA() As long
@@ -585,7 +562,6 @@ class SimSolutionControls(AnyObject):
     def ic(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IC() As long
@@ -611,7 +587,6 @@ class SimSolutionControls(AnyObject):
     def ica(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ICA() As long
@@ -635,7 +610,6 @@ class SimSolutionControls(AnyObject):
     def icj(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ICJ() As long
@@ -661,7 +635,6 @@ class SimSolutionControls(AnyObject):
     def ics(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ICS() As long
@@ -688,7 +661,6 @@ class SimSolutionControls(AnyObject):
     def ig(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IG() As long
@@ -714,7 +686,6 @@ class SimSolutionControls(AnyObject):
     def ij(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IJ() As long
@@ -740,7 +711,6 @@ class SimSolutionControls(AnyObject):
     def il(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IL() As long
@@ -765,7 +735,6 @@ class SimSolutionControls(AnyObject):
     def ip(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IP() As long
@@ -789,7 +758,6 @@ class SimSolutionControls(AnyObject):
     def ir(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IR() As long
@@ -813,7 +781,6 @@ class SimSolutionControls(AnyObject):
     def is_(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IS() As long
@@ -838,7 +805,6 @@ class SimSolutionControls(AnyObject):
     def it(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IT() As long
@@ -863,7 +829,6 @@ class SimSolutionControls(AnyObject):
     def io(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Io() As long
@@ -888,7 +853,6 @@ class SimSolutionControls(AnyObject):
     def time_values_default_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeValuesDefaultFlag() As boolean (Read Only)
@@ -906,7 +870,6 @@ class SimSolutionControls(AnyObject):
     def wg(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WG() As double
@@ -930,7 +893,6 @@ class SimSolutionControls(AnyObject):
     def clear_initial_average_flux_value(self, i_dof_field: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ClearInitialAverageFluxValue(SimSolutionControlsDOFField
@@ -945,7 +907,6 @@ class SimSolutionControls(AnyObject):
     def clear_total_average_flux_value(self, i_dof_field: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ClearTotalAverageFluxValue(SimSolutionControlsDOFField
@@ -960,7 +921,6 @@ class SimSolutionControls(AnyObject):
     def get_average_flux(self, i_dof_field: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAverageFlux(SimSolutionControlsDOFField iDOFField) As
@@ -982,7 +942,6 @@ class SimSolutionControls(AnyObject):
     def get_c_alpha_eps(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCAlphaEps(SimSolutionControlsDOFField iDOFField) As
@@ -1000,7 +959,6 @@ class SimSolutionControls(AnyObject):
     def get_c_alpha_n(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCAlphaN(SimSolutionControlsDOFField iDOFField) As
@@ -1016,7 +974,6 @@ class SimSolutionControls(AnyObject):
     def get_conversion_ratio(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConversionRatio(SimSolutionControlsDOFField iDOFField) As
@@ -1032,7 +989,6 @@ class SimSolutionControls(AnyObject):
     def get_eps_alpha(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEpsAlpha(SimSolutionControlsDOFField iDOFField) As
@@ -1047,7 +1003,6 @@ class SimSolutionControls(AnyObject):
     def get_eps_alpha_d(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEpsAlphaD(SimSolutionControlsDOFField iDOFField) As
@@ -1065,7 +1020,6 @@ class SimSolutionControls(AnyObject):
     def get_eps_alpha_l(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEpsAlphaL(SimSolutionControlsDOFField iDOFField) As
@@ -1081,7 +1035,6 @@ class SimSolutionControls(AnyObject):
     def get_field_values_default_flag(self, i_dof_field: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFieldValuesDefaultFlag(SimSolutionControlsDOFField iDOFField) As
@@ -1097,7 +1050,6 @@ class SimSolutionControls(AnyObject):
     def get_initial_average_flux(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInitialAverageFlux(SimSolutionControlsDOFField iDOFField) As
@@ -1119,7 +1071,6 @@ class SimSolutionControls(AnyObject):
     def get_initial_average_flux_has_value_flag(self, i_dof_field: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInitialAverageFluxHasValueFlag(SimSolutionControlsDOFField iDOFField)
@@ -1135,7 +1086,6 @@ class SimSolutionControls(AnyObject):
     def get_r_alpha_l(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRAlphaL(SimSolutionControlsDOFField iDOFField) As
@@ -1153,7 +1103,6 @@ class SimSolutionControls(AnyObject):
     def get_r_alpha_n(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRAlphaN(SimSolutionControlsDOFField iDOFField) As
@@ -1169,7 +1118,6 @@ class SimSolutionControls(AnyObject):
     def get_r_alpha_p(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRAlphaP(SimSolutionControlsDOFField iDOFField) As
@@ -1185,7 +1133,6 @@ class SimSolutionControls(AnyObject):
     def get_total_average_flux(self, i_dof_field: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTotalAverageFlux(SimSolutionControlsDOFField iDOFField) As
@@ -1200,7 +1147,6 @@ class SimSolutionControls(AnyObject):
     def get_total_average_flux_has_value_flag(self, i_dof_field: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTotalAverageFluxHasValueFlag(SimSolutionControlsDOFField iDOFField) As
@@ -1216,7 +1162,6 @@ class SimSolutionControls(AnyObject):
     def propagate_from_previous(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PropagateFromPrevious()
@@ -1230,7 +1175,6 @@ class SimSolutionControls(AnyObject):
     def reset_field_values(self, i_dof_field: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetFieldValues(SimSolutionControlsDOFField iDOFField)
@@ -1244,7 +1188,6 @@ class SimSolutionControls(AnyObject):
     def reset_time_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetTimeValues()
@@ -1257,7 +1200,6 @@ class SimSolutionControls(AnyObject):
     def set_average_flux(self, i_dof_field: int, i_average_flux: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAverageFlux(SimSolutionControlsDOFField
@@ -1280,7 +1222,6 @@ class SimSolutionControls(AnyObject):
     def set_c_alpha_eps(self, i_dof_field: int, i_c_alpha_eps: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCAlphaEps(SimSolutionControlsDOFField iDOFField,double
@@ -1299,7 +1240,6 @@ class SimSolutionControls(AnyObject):
     def set_c_alpha_n(self, i_dof_field: int, i_c_alpha_n: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCAlphaN(SimSolutionControlsDOFField iDOFField,double
@@ -1316,7 +1256,6 @@ class SimSolutionControls(AnyObject):
     def set_conversion_ratio(self, i_dof_field: int, i_conversion_ratio: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetConversionRatio(SimSolutionControlsDOFField iDOFField,double
@@ -1333,7 +1272,6 @@ class SimSolutionControls(AnyObject):
     def set_eps_alpha(self, i_dof_field: int, i_eps_alpha: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEpsAlpha(SimSolutionControlsDOFField iDOFField,double
@@ -1349,7 +1287,6 @@ class SimSolutionControls(AnyObject):
     def set_eps_alpha_d(self, i_dof_field: int, i_eps_alpha_d: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEpsAlphaD(SimSolutionControlsDOFField iDOFField,double
@@ -1367,7 +1304,6 @@ class SimSolutionControls(AnyObject):
     def set_eps_alpha_l(self, i_dof_field: int, i_eps_alpha_l: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEpsAlphaL(SimSolutionControlsDOFField iDOFField,double
@@ -1384,7 +1320,6 @@ class SimSolutionControls(AnyObject):
     def set_initial_average_flux(self, i_dof_field: int, i_initial_average_flux: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInitialAverageFlux(SimSolutionControlsDOFField iDOFField,double
@@ -1407,7 +1342,6 @@ class SimSolutionControls(AnyObject):
     def set_r_alpha_l(self, i_dof_field: int, i_r_alpha_l: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRAlphaL(SimSolutionControlsDOFField iDOFField,double
@@ -1426,7 +1360,6 @@ class SimSolutionControls(AnyObject):
     def set_r_alpha_n(self, i_dof_field: int, i_r_alpha_n: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRAlphaN(SimSolutionControlsDOFField iDOFField,double
@@ -1443,7 +1376,6 @@ class SimSolutionControls(AnyObject):
     def set_r_alpha_p(self, i_dof_field: int, i_r_alpha_p: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRAlphaP(SimSolutionControlsDOFField iDOFField,double
@@ -1460,7 +1392,6 @@ class SimSolutionControls(AnyObject):
     def set_total_average_flux(self, i_dof_field: int, i_total_average_flux: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTotalAverageFlux(SimSolutionControlsDOFField iDOFField,double
@@ -1474,4 +1405,4 @@ class SimSolutionControls(AnyObject):
         return self.com_object.SetTotalAverageFlux(i_dof_field, i_total_average_flux)
 
     def __repr__(self):
-        return f'SimSolutionControls(name="{ self.name }")'
+        return f'SimSolutionControls(name="{self.name}")'

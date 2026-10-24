@@ -27,7 +27,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +49,6 @@ class Layout2DView(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -85,7 +83,6 @@ class Layout2DView(AnyObject):
     def area_fills(self) -> DrawingAreaFills:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaFills() As DrawingAreaFills (Read Only)
@@ -110,7 +107,6 @@ class Layout2DView(AnyObject):
     def arrows(self) -> DrawingArrows:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arrows() As DrawingArrows (Read Only)
@@ -132,7 +128,6 @@ class Layout2DView(AnyObject):
     def components(self) -> DrawingComponents:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Components() As DrawingComponents (Read Only)
@@ -155,7 +150,6 @@ class Layout2DView(AnyObject):
     def coord_dims(self) -> DrawingCoordDims:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoordDims() As DrawingCoordDims (Read Only)
@@ -178,7 +172,6 @@ class Layout2DView(AnyObject):
     def dimensions(self) -> DrawingDimensions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Dimensions() As DrawingDimensions (Read Only)
@@ -201,7 +194,6 @@ class Layout2DView(AnyObject):
     def factor_2d(self) -> Factory2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Factory2D() As Factory2D (Read Only)
@@ -229,7 +221,6 @@ class Layout2DView(AnyObject):
     def frame_visualization(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrameVisualization() As boolean
@@ -260,7 +251,6 @@ class Layout2DView(AnyObject):
     def gd_ts(self) -> DrawingGDTs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GDTs() As DrawingGDTs (Read Only)
@@ -282,7 +272,6 @@ class Layout2DView(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricElements() As GeometricElements (Read Only)
@@ -305,7 +294,6 @@ class Layout2DView(AnyObject):
     def is_relation_activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsRelationActivated() As boolean (Read Only)
@@ -328,7 +316,6 @@ class Layout2DView(AnyObject):
     def lock_status(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LockStatus() As boolean
@@ -358,7 +345,6 @@ class Layout2DView(AnyObject):
     def pictures(self) -> DrawingPictures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Pictures() As DrawingPictures (Read Only)
@@ -381,7 +367,6 @@ class Layout2DView(AnyObject):
     def reference_view(self) -> 'Layout2DView':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceView() As Layout2DView
@@ -422,7 +407,6 @@ class Layout2DView(AnyObject):
     def tables(self) -> DrawingTables:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Tables() As DrawingTables (Read Only)
@@ -444,7 +428,6 @@ class Layout2DView(AnyObject):
     def texts(self) -> DrawingTexts:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Texts() As DrawingTexts (Read Only)
@@ -466,7 +449,6 @@ class Layout2DView(AnyObject):
     def threads(self) -> DrawingThreads:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Threads() As DrawingThreads (Read Only)
@@ -489,7 +471,6 @@ class Layout2DView(AnyObject):
     def view_scale(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViewScale() As double
@@ -518,7 +499,6 @@ class Layout2DView(AnyObject):
     def visu_2d_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Visu2DMode() As CatView2DModeVisu
@@ -554,7 +534,6 @@ class Layout2DView(AnyObject):
     def visu_background(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisuBackground() As CatVisuBackgroundMode
@@ -590,7 +569,6 @@ class Layout2DView(AnyObject):
     def visu_in_3d(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisuIn3D() As CatVisuIn3DMode
@@ -627,7 +605,6 @@ class Layout2DView(AnyObject):
     def weldings(self) -> DrawingWeldings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Weldings() As DrawingWeldings (Read Only)
@@ -650,7 +627,6 @@ class Layout2DView(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -681,7 +657,6 @@ class Layout2DView(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -713,7 +688,6 @@ class Layout2DView(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Activate()
@@ -733,7 +707,6 @@ class Layout2DView(AnyObject):
     def add_view_text(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddViewText() As DrawingText
@@ -755,7 +728,6 @@ class Layout2DView(AnyObject):
     def aligned_with_reference_view(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AlignedWithReferenceView()
@@ -776,7 +748,6 @@ class Layout2DView(AnyObject):
     def get_reference_plane(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferencePlane() As CATSafeArrayVariant
@@ -796,7 +767,6 @@ class Layout2DView(AnyObject):
     def get_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
@@ -825,7 +795,6 @@ class Layout2DView(AnyObject):
     def get_view_text(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetViewText() As DrawingText
@@ -845,7 +814,6 @@ class Layout2DView(AnyObject):
     def invert_reference_plane_definition(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertReferencePlaneDefinition()
@@ -858,7 +826,6 @@ class Layout2DView(AnyObject):
     def is_reference_plane_inverted(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsReferencePlaneInverted() As boolean
@@ -877,7 +844,6 @@ class Layout2DView(AnyObject):
     def save_edition(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveEdition()
@@ -901,7 +867,6 @@ class Layout2DView(AnyObject):
     def set_reference_plane(self, i_ref_path: tuple, i_context_path: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetReferencePlane(CATSafeArrayVariant iRefPath,CATSafeArrayVariant
@@ -956,7 +921,6 @@ class Layout2DView(AnyObject):
     def set_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetViewName(CATBSTR iViewNamePrefix,CATBSTR iViewNameIdent,CATBSTR
@@ -987,7 +951,6 @@ class Layout2DView(AnyObject):
     def size(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Size(CATSafeArrayVariant oValues)
@@ -1033,7 +996,6 @@ class Layout2DView(AnyObject):
     def un_aligned_with_reference_view(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnAlignedWithReferenceView()

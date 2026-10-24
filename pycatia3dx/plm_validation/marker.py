@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Marker(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class Marker(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -69,7 +67,6 @@ class Marker(AnyObject):
     def document_ref(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DocumentRef(CATBSTR iReference) (Write Only)
@@ -102,7 +99,6 @@ class Marker(AnyObject):
     def fill(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Fill() As boolean
@@ -133,7 +129,6 @@ class Marker(AnyObject):
     def frame(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Frame() As boolean
@@ -163,7 +158,6 @@ class Marker(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -187,7 +181,6 @@ class Marker(AnyObject):
     def get_pointing(self) -> MarkerPointing:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPointing() As MarkerPointing
@@ -215,7 +208,6 @@ class Marker(AnyObject):
     def get_positions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPositions() As CATSafeArrayVariant
@@ -254,7 +246,6 @@ class Marker(AnyObject):
     def is_pointing(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsPointing() As boolean
@@ -273,7 +264,6 @@ class Marker(AnyObject):
     def set_positions(self, i_coordinates: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetPositions(CATSafeArrayVariant iCoordinates)
@@ -332,7 +322,6 @@ class Marker(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

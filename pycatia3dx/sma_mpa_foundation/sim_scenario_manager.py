@@ -15,10 +15,8 @@ from pycatia3dx.sma_mpa_foundation.sim_analysis_cases import SimAnalysisCases
 
 
 class SimScenarioManager(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class SimScenarioManager(CATBaseDispatch):
     def analysis_cases(self) -> SimAnalysisCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnalysisCases() As SimAnalysisCases (Read Only)
@@ -64,7 +61,6 @@ class SimScenarioManager(CATBaseDispatch):
     def application(self) -> Application:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Application() As Application (Read Only)
@@ -100,7 +96,6 @@ class SimScenarioManager(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Name() As CATBSTR
@@ -140,7 +135,6 @@ class SimScenarioManager(CATBaseDispatch):
     def parent(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parent() As CATBaseDispatch (Read Only)
@@ -167,7 +161,6 @@ class SimScenarioManager(CATBaseDispatch):
     def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetItem(CATBSTR IDName) As CATBaseDispatch
@@ -189,4 +182,4 @@ class SimScenarioManager(CATBaseDispatch):
         return self.com_object.GetItem(id_name)
 
     def __repr__(self):
-        return f'SimScenarioManager(name="{ self.name }")'
+        return f'SimScenarioManager(name="{self.name}")'

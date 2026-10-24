@@ -12,10 +12,8 @@ from pycatia3dx.part.sweep import Sweep
 
 
 class Rib(Sweep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,4 +39,4 @@ class Rib(Sweep):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Rib(name="{ self.name }")'
+        return f'Rib(name="{self.name}")'

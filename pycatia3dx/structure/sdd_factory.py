@@ -17,7 +17,6 @@ from pycatia3dx.structure.sdd_product_plate import SddProductPlate
 class SddFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SddFactory(Factory):
     def add_product_bracket(self, i_position_mode: int) -> SddProductBracket:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddProductBracket(CATStrUseBracketPositionMode iPositionMode) As
@@ -82,7 +80,6 @@ class SddFactory(Factory):
     def add_product_member(self) -> SddProductMember:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddProductMember() As SddProductMember
@@ -115,7 +112,6 @@ class SddFactory(Factory):
     def add_product_plate(self, i_concave_mode: bool) -> SddProductPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddProductPlate(boolean iConcaveMode) As SddProductPlate
@@ -138,7 +134,6 @@ class SddFactory(Factory):
     def init_resources(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitResources()

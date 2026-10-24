@@ -12,10 +12,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimMaterialTable(SimTable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimMaterialTable(SimTable):
     def number_of_field_variables(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfFieldVariables() As long
@@ -61,7 +58,6 @@ class SimMaterialTable(SimTable):
     def get_field_variable_column(self, i_field_variable_column_index: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFieldVariableColumn(long iFieldVariableColumnIndex) As
@@ -85,7 +81,6 @@ class SimMaterialTable(SimTable):
     def get_field_variables_supported_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFieldVariablesSupportedFlag() As boolean
@@ -103,7 +98,6 @@ class SimMaterialTable(SimTable):
     def get_optional_column(self, i_optional_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOptionalColumn(SimMaterialTableOptionalColumn iOptionalColumn) As
@@ -128,7 +122,6 @@ class SimMaterialTable(SimTable):
     def get_optional_column_activation_flag(self, i_optional_column: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOptionalColumnActivationFlag(SimMaterialTableOptionalColumn
@@ -153,7 +146,6 @@ class SimMaterialTable(SimTable):
     def get_optional_column_supported_flag(self, i_optional_column: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOptionalColumnSupportedFlag(SimMaterialTableOptionalColumn
@@ -178,7 +170,6 @@ class SimMaterialTable(SimTable):
     def set_optional_column_activation_flag(self, i_optional_column: int, i_optional_column_activation: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOptionalColumnActivationFlag(SimMaterialTableOptionalColumn
@@ -202,4 +193,4 @@ class SimMaterialTable(SimTable):
         return self.com_object.SetOptionalColumnActivationFlag(i_optional_column, i_optional_column_activation)
 
     def __repr__(self):
-        return f'SimMaterialTable(name="{ self.name }")'
+        return f'SimMaterialTable(name="{self.name}")'

@@ -19,7 +19,6 @@ from pycatia3dx.system.any_object import AnyObject
 class OLPDrillRivetCycle(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_accuracy_profile(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAccuracyProfile() As OlpAccuracyProfile
@@ -63,7 +61,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_all_process_schedules(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllProcessSchedules() As CATSafeArrayVariant
@@ -79,7 +76,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_close_in_positive_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCloseInPositiveDirection() As boolean
@@ -96,7 +92,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_cycle_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleType() As CATBSTR
@@ -116,7 +111,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_dimension(self, i_dimension_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDimension(CATBSTR iDimensionName) As double
@@ -144,7 +138,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_dimension_link(self, i_dimension_name: str, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDimensionLink(CATBSTR iDimensionName,OlpProfile oProfile,CATBSTR
@@ -178,7 +171,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_enabled(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEnabled() As boolean
@@ -194,7 +186,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_enabled_dynamic_drilling_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEnabledDynamicDrillingMode() As boolean
@@ -211,7 +202,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_hold_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHoldTime() As double
@@ -227,7 +217,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_hold_time_link(self, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
@@ -251,7 +240,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_home_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomeName() As CATBSTR
@@ -268,7 +256,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_joint_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointNumber() As short
@@ -284,7 +271,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_joint_value(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointValue() As CATSafeArrayVariant
@@ -300,7 +286,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_motion_profile(self) -> OLPMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionProfile() As OlpMotionProfile
@@ -317,7 +302,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetName() As CATBSTR
@@ -333,7 +317,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_process_schedules(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProcessSchedules(CATBSTR iProfileType) As
@@ -356,7 +339,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_profile_process_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileProcessType() As CATBSTR
@@ -377,7 +359,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_tcp_offset(self) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPOffset() As OlpTransform
@@ -396,7 +377,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_tcp_offset_link(self, i_coordinate_name: str, o_profile: OLPProfile, o_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPOffsetLink(CATBSTR iCoordinateName,OlpProfile oProfile,CATBSTR
@@ -435,7 +415,6 @@ class OLPDrillRivetCycle(AnyObject):
     def get_tool_profile(self) -> OLPToolProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolProfile() As OlpToolProfile
@@ -452,7 +431,6 @@ class OLPDrillRivetCycle(AnyObject):
     def is_process_schedule_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
@@ -475,7 +453,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_accuracy_profile(self, i_profile: OLPAccuracyProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
@@ -499,7 +476,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_all_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -536,7 +512,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_close_in_positive_direction(self, i_is_positive_direction: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCloseInPositiveDirection(boolean iIsPositiveDirection,boolean
@@ -561,7 +536,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_dimension(self, i_dimension_name: str, i_distance: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDimension(CATBSTR iDimensionName,double iDistance,boolean
@@ -592,7 +566,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_dimension_link(self, i_dimension_name: str, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDimensionLink(CATBSTR iDimensionName,OlpProfile iProfile,CATBSTR
@@ -627,7 +600,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_enabled(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEnabled(boolean iEnabled,boolean iMatch)
@@ -647,7 +619,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_enabled_dynamic_drilling_mode(self, i_enabled: bool, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetEnabledDynamicDrillingMode(boolean iEnabled,boolean
@@ -671,7 +642,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_hold_time(self, i_time: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHoldTime(double iTime,boolean iMatch)
@@ -693,7 +663,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_hold_time_link(self, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHoldTimeLink(OlpProfile iProfile,CATBSTR
@@ -718,7 +687,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_home_name(self, i_home: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHomeName(CATBSTR iHome,boolean iMatch)
@@ -750,7 +718,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_joint_number(self, i_joint_number: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointNumber(short iJointNumber,boolean iMatch)
@@ -772,7 +739,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_joint_value(self, i_values: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetJointValue(CATSafeArrayVariant iValues,boolean iMatch)
@@ -811,7 +777,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_motion_profile(self, i_profile: OLPMotionProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionProfile(OlpMotionProfile iProfile,boolean iMatch)
@@ -835,7 +800,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_name(self, i_name: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetName(CATBSTR iName,boolean iMatch)
@@ -858,7 +822,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_process_schedules(self, i_profiles: tuple, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
@@ -900,7 +863,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_process_schedules_to_nothing(self, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
@@ -926,7 +888,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_tcp_offset(self, i_offset: OLPTransform, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPOffset(OlpTransform iOffset,boolean iMatch)
@@ -951,7 +912,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_tcp_offset_link(self, i_coordinate_name: str, i_profile: OLPProfile, i_controller_param_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPOffsetLink(CATBSTR iCoordinateName,OlpProfile iProfile,CATBSTR
@@ -991,7 +951,6 @@ class OLPDrillRivetCycle(AnyObject):
     def set_tool_profile(self, i_profile: OLPToolProfile, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolProfile(OlpToolProfile iProfile,boolean iMatch)

@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeIntersection(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -51,7 +49,6 @@ class HybridShapeIntersection(HybridShape):
     def element1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element1() As Reference
@@ -83,7 +80,6 @@ class HybridShapeIntersection(HybridShape):
     def element2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element2() As Reference
@@ -115,7 +111,6 @@ class HybridShapeIntersection(HybridShape):
     def extend_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtendMode() As long
@@ -155,7 +150,6 @@ class HybridShapeIntersection(HybridShape):
     def extrapolate_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtrapolateMode() As boolean
@@ -185,7 +179,6 @@ class HybridShapeIntersection(HybridShape):
     def intersect_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property IntersectMode() As boolean
@@ -215,7 +208,6 @@ class HybridShapeIntersection(HybridShape):
     def point_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PointType() As long
@@ -245,7 +237,6 @@ class HybridShapeIntersection(HybridShape):
     def solid_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SolidMode() As boolean
@@ -272,4 +263,4 @@ class HybridShapeIntersection(HybridShape):
         self.com_object.SolidMode = value
 
     def __repr__(self):
-        return f'HybridShapeIntersection(name="{ self.name }")'
+        return f'HybridShapeIntersection(name="{self.name}")'

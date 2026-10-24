@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneTangent(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -43,7 +41,6 @@ class HybridShapePlaneTangent(Plane):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -79,7 +76,6 @@ class HybridShapePlaneTangent(Plane):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Surface() As Reference
@@ -112,4 +108,4 @@ class HybridShapePlaneTangent(Plane):
         self.com_object.Surface = value
 
     def __repr__(self):
-        return f'HybridShapePlaneTangent(name="{ self.name }")'
+        return f'HybridShapePlaneTangent(name="{self.name}")'

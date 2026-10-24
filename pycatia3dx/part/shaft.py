@@ -12,10 +12,8 @@ from pycatia3dx.part.revolution import Revolution
 
 
 class Shaft(Revolution):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,4 +40,4 @@ class Shaft(Revolution):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Shaft(name="{ self.name }")'
+        return f'Shaft(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingToolPathManagement(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class ManufacturingToolPathManagement(AnyObject):
     def has_a_tool_path(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasAToolPath() As boolean (Read Only)
@@ -55,7 +52,6 @@ class ManufacturingToolPathManagement(AnyObject):
     def get_tool_path_limit_z(self, o_zmin: float, o_zmax: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetToolPathLimitZ(double oZmin,double oZmax)
@@ -79,4 +75,4 @@ class ManufacturingToolPathManagement(AnyObject):
         return self.com_object.GetToolPathLimitZ(o_zmin, o_zmax)
 
     def __repr__(self):
-        return f'ManufacturingToolPathManagement(name="{ self.name }")'
+        return f'ManufacturingToolPathManagement(name="{self.name}")'

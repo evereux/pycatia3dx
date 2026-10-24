@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscControllerAttributesAccess(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class RscControllerAttributesAccess(AnyObject):
     def retrieve_controller_attributes_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrieveControllerAttributesObject() As AnyObject
@@ -96,4 +93,4 @@ class RscControllerAttributesAccess(AnyObject):
         return AnyObject(self.com_object.RetrieveControllerAttributesObject())
 
     def __repr__(self):
-        return f'RscControllerAttributesAccess(name="{ self.name }")'
+        return f'RscControllerAttributesAccess(name="{self.name}")'

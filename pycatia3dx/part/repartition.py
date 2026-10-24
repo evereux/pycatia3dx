@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Repartition(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Repartition(AnyObject):
     def instances_count(self) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InstancesCount() As IntParam (Read Only)
@@ -62,4 +59,4 @@ class Repartition(AnyObject):
         return IntParam(self.com_object.InstancesCount)
 
     def __repr__(self):
-        return f'Repartition(name="{ self.name }")'
+        return f'Repartition(name="{self.name}")'

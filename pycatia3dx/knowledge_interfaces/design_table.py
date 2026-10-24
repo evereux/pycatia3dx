@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DesignTable(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -49,7 +47,6 @@ class DesignTable(Relation):
     def columns_nb(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ColumnsNb() As short (Read Only)
@@ -64,7 +61,6 @@ class DesignTable(Relation):
     def configuration(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Configuration() As short
@@ -88,7 +84,6 @@ class DesignTable(Relation):
     def configurations_nb(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ConfigurationsNb() As short (Read Only)
@@ -103,7 +98,6 @@ class DesignTable(Relation):
     def copy_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property CopyMode() As boolean
@@ -127,7 +121,6 @@ class DesignTable(Relation):
     def file_path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property FilePath() As CATBSTR
@@ -153,7 +146,6 @@ class DesignTable(Relation):
     def sheet_rep_ref(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property SheetRepRef() As AnyObject
@@ -175,7 +167,6 @@ class DesignTable(Relation):
     def add_association(self, i_parameter: Parameter, i_sheet_column: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub AddAssociation(Parameter iParameter,CATBSTR iSheetColumn)
@@ -202,7 +193,6 @@ class DesignTable(Relation):
     def add_new_row(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub AddNewRow()
@@ -218,7 +208,6 @@ class DesignTable(Relation):
     def cell_as_string(self, i_row: int, i_column: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CellAsString(short iRow,short iColumn) As CATBSTR
@@ -244,7 +233,6 @@ class DesignTable(Relation):
     def remove_association(self, i_sheet_column: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub RemoveAssociation(CATBSTR iSheetColumn)
@@ -264,7 +252,6 @@ class DesignTable(Relation):
     def synchronize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Synchronize()
@@ -277,4 +264,4 @@ class DesignTable(Relation):
         return self.com_object.Synchronize()
 
     def __repr__(self):
-        return f'DesignTable(name="{ self.name }")'
+        return f'DesignTable(name="{self.name}")'

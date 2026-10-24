@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrPosAxisAdjustment(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class StrPosAxisAdjustment(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Role() As CATBSTR (Read Only)
@@ -72,7 +69,6 @@ class StrPosAxisAdjustment(AnyObject):
     def get_angle_parameter(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngleParameter() As Parameter
@@ -94,7 +90,6 @@ class StrPosAxisAdjustment(AnyObject):
     def get_u_shift_parameter(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUShiftParameter() As Parameter
@@ -117,7 +112,6 @@ class StrPosAxisAdjustment(AnyObject):
     def get_v_shift_parameter(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVShiftParameter() As Parameter
@@ -138,4 +132,4 @@ class StrPosAxisAdjustment(AnyObject):
         return Parameter(self.com_object.GetVShiftParameter())
 
     def __repr__(self):
-        return f'StrPosAxisAdjustment(name="{ self.name }")'
+        return f'StrPosAxisAdjustment(name="{self.name}")'

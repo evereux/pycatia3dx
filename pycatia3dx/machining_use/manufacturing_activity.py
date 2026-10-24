@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingActivity(AnyObject):
     def check_tool_changes(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CheckToolChanges()
@@ -52,7 +49,6 @@ class ManufacturingActivity(AnyObject):
     def get_authorized_father_activity(self, i_type: str, o_father: AnyObject, o_father_child: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAuthorizedFatherActivity(CATBSTR iType,AnyObject oFather,AnyObject
@@ -78,7 +74,6 @@ class ManufacturingActivity(AnyObject):
     def get_comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetComment() As CATBSTR
@@ -100,7 +95,6 @@ class ManufacturingActivity(AnyObject):
     def get_feature(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFeature() As AnyObject
@@ -114,7 +108,6 @@ class ManufacturingActivity(AnyObject):
     def get_feature_in_context(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFeatureInContext() As AnyObject
@@ -128,7 +121,6 @@ class ManufacturingActivity(AnyObject):
     def get_part_operation(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPartOperation() As AnyObject
@@ -146,7 +138,6 @@ class ManufacturingActivity(AnyObject):
     def get_pattern_usage(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPatternUsage() As AnyObject
@@ -168,7 +159,6 @@ class ManufacturingActivity(AnyObject):
     def get_program(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProgram() As AnyObject
@@ -186,7 +176,6 @@ class ManufacturingActivity(AnyObject):
     def get_tool(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTool() As AnyObject
@@ -199,7 +188,6 @@ class ManufacturingActivity(AnyObject):
     def get_tool_and_assembly(self, o_tool: AnyObject, o_assembly: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetToolAndAssembly(AnyObject oTool,AnyObject oAssembly)
@@ -222,7 +210,6 @@ class ManufacturingActivity(AnyObject):
     def is_active(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsActive() As boolean
@@ -243,7 +230,6 @@ class ManufacturingActivity(AnyObject):
     def set_comment(self, i_comment: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComment(CATBSTR iComment)
@@ -266,7 +252,6 @@ class ManufacturingActivity(AnyObject):
     def set_feature(self, i_feature: AnyObject, i_context: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFeature(AnyObject iFeature,AnyObject iContext)
@@ -291,7 +276,6 @@ class ManufacturingActivity(AnyObject):
     def set_pattern_usage(self, i_pattern_usage: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPatternUsage(AnyObject iPatternUsage)
@@ -314,7 +298,6 @@ class ManufacturingActivity(AnyObject):
     def set_tool(self, i_tool: AnyObject, i_check_tool_changes: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTool(AnyObject iTool,boolean iCheckToolChanges)
@@ -339,4 +322,4 @@ class ManufacturingActivity(AnyObject):
         return self.com_object.SetTool(i_tool.com_object, i_check_tool_changes)
 
     def __repr__(self):
-        return f'ManufacturingActivity(name="{ self.name }")'
+        return f'ManufacturingActivity(name="{self.name}")'

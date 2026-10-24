@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAnalysisRestartStepProperty(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimAnalysisRestartStepProperty(AnyObject):
     def generate_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GenerateFlag() As boolean
@@ -83,4 +80,4 @@ class SimAnalysisRestartStepProperty(AnyObject):
         self.com_object.GenerateFlag = value
 
     def __repr__(self):
-        return f'SimAnalysisRestartStepProperty(name="{ self.name }")'
+        return f'SimAnalysisRestartStepProperty(name="{self.name}")'

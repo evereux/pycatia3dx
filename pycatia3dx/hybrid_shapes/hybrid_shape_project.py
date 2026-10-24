@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeProject(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapeProject(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -85,7 +82,6 @@ class HybridShapeProject(HybridShape):
     def elem_to_project(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToProject() As Reference
@@ -117,7 +113,6 @@ class HybridShapeProject(HybridShape):
     def extrapolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtrapolationMode() As long
@@ -149,7 +144,6 @@ class HybridShapeProject(HybridShape):
     def maximum_deviation_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MaximumDeviationValue() As double
@@ -182,7 +176,6 @@ class HybridShapeProject(HybridShape):
     def normal(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Normal() As boolean
@@ -214,7 +207,6 @@ class HybridShapeProject(HybridShape):
     def smoothing_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothingType() As long
@@ -247,7 +239,6 @@ class HybridShapeProject(HybridShape):
     def solution_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SolutionType() As long
@@ -279,7 +270,6 @@ class HybridShapeProject(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -311,7 +301,6 @@ class HybridShapeProject(HybridShape):
     def p_3d_smoothing(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property p3DSmoothing() As boolean
@@ -337,4 +326,4 @@ class HybridShapeProject(HybridShape):
         self.com_object.p3DSmoothing = value
 
     def __repr__(self):
-        return f'HybridShapeProject(name="{ self.name }")'
+        return f'HybridShapeProject(name="{self.name}")'

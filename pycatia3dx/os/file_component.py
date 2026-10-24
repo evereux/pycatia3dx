@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 class FileComponent(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -45,7 +44,6 @@ class FileComponent(AnyObject):
     def parent_folder(self) -> 'Folder':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ParentFolder() As Folder
@@ -75,7 +73,6 @@ class FileComponent(AnyObject):
     def path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Path() As CATBSTR (Read Only)

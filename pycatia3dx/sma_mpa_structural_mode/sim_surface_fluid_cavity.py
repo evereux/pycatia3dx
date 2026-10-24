@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSurfaceFluidCavity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def ambient_pressure(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AmbientPressure() As double
@@ -99,7 +96,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def ambient_pressure_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AmbientPressureFlag() As boolean
@@ -122,7 +118,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def cavity_ref_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CavityRefPoint() As SimPoint (Read Only)
@@ -137,7 +132,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def check_normals_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CheckNormalsFlag() As boolean
@@ -160,7 +154,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -183,7 +176,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -206,7 +198,6 @@ class SimSurfaceFluidCavity(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -243,4 +234,4 @@ class SimSurfaceFluidCavity(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimSurfaceFluidCavity(name="{ self.name }")'
+        return f'SimSurfaceFluidCavity(name="{self.name}")'

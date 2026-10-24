@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPRobotConfigGeneric(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def nrl_config(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NRLConfig() As CATBSTR
@@ -69,7 +66,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def posture(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Posture() As CATBSTR
@@ -93,7 +89,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def get_posture_flag(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPostureFlag() As CATBSTR
@@ -112,7 +107,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def get_turn_number(self, i_joint: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTurnNumber(short iJoint) As short
@@ -136,7 +130,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def get_turn_sign(self, i_joint: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTurnSign(short iJoint) As DELOlpTurnSignType
@@ -160,7 +153,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def set_posture_flag(self, i_posture_flag: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPostureFlag(CATBSTR iPostureFlag)
@@ -179,7 +171,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def set_turn_number(self, i_joint: int, i_turns: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTurnNumber(short iJoint,short iTurns)
@@ -203,7 +194,6 @@ class OLPRobotConfigGeneric(AnyObject):
     def set_turn_sign(self, i_joint: int, i_turns: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTurnSign(short iJoint,DELOlpTurnSignType iTurns)
@@ -225,4 +215,4 @@ class OLPRobotConfigGeneric(AnyObject):
         return self.com_object.SetTurnSign(i_joint, i_turns)
 
     def __repr__(self):
-        return f'OLPRobotConfigGeneric(name="{ self.name }")'
+        return f'OLPRobotConfigGeneric(name="{self.name}")'

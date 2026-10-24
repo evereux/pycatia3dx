@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimFeatureState(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimFeatureState(AnyObject):
     def amplitude(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Amplitude() As CATBaseDispatch
@@ -63,7 +60,6 @@ class SimFeatureState(AnyObject):
     def amplitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AmplitudeFlag() As boolean (Read Only)
@@ -81,7 +77,6 @@ class SimFeatureState(AnyObject):
     def beginning_increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BeginningIncrement() As long
@@ -105,7 +100,6 @@ class SimFeatureState(AnyObject):
     def beginning_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BeginningStep() As SimStep
@@ -128,7 +122,6 @@ class SimFeatureState(AnyObject):
     def ending_increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndingIncrement() As long
@@ -152,7 +145,6 @@ class SimFeatureState(AnyObject):
     def ending_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndingStep() As SimStep
@@ -175,7 +167,6 @@ class SimFeatureState(AnyObject):
     def feature(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Feature() As CATBaseDispatch (Read Only)
@@ -190,7 +181,6 @@ class SimFeatureState(AnyObject):
     def field_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldFlag() As boolean (Read Only)
@@ -217,7 +207,6 @@ class SimFeatureState(AnyObject):
     def phase_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PhaseAngle() As double
@@ -240,7 +229,6 @@ class SimFeatureState(AnyObject):
     def phase_angle_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PhaseAngleFlag() As boolean (Read Only)
@@ -258,7 +246,6 @@ class SimFeatureState(AnyObject):
     def propagation_state(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PropagationState() As CATBSTR (Read Only)
@@ -306,7 +293,6 @@ class SimFeatureState(AnyObject):
     def scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleFactor() As double
@@ -329,7 +315,6 @@ class SimFeatureState(AnyObject):
     def scale_factor_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleFactorFlag() As boolean (Read Only)
@@ -344,4 +329,4 @@ class SimFeatureState(AnyObject):
         return self.com_object.ScaleFactorFlag
 
     def __repr__(self):
-        return f'SimFeatureState(name="{ self.name }")'
+        return f'SimFeatureState(name="{self.name}")'

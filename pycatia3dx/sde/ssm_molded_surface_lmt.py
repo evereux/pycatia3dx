@@ -15,10 +15,8 @@ from pycatia3dx.sde.ssm_parameters import SsmParameters
 
 
 class SsmMoldedSurfaceLmt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SsmMoldedSurfaceLmt(AnyObject):
     def get_limiting_object(self, i_index_limit: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLimitingObject(long iIndexLimit) As Reference
@@ -64,10 +61,10 @@ class SsmMoldedSurfaceLmt(AnyObject):
         """
         return Reference(self.com_object.GetLimitingObject(i_index_limit))
 
-    def get_limiting_objects(self, o_limiting_objects: References, o_list_of_orientations: tuple, o_list_of_offset: SsmParameters) -> None:
+    def get_limiting_objects(self, o_limiting_objects: References, o_list_of_orientations: tuple,
+                             o_list_of_offset: SsmParameters) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLimitingObjects(References oLimitingObjects,CATSafeArrayVariant
@@ -96,12 +93,12 @@ class SsmMoldedSurfaceLmt(AnyObject):
         :param SsmParameters o_list_of_offset:
         :return: None
         """
-        return self.com_object.GetLimitingObjects(o_limiting_objects.com_object, o_list_of_orientations, o_list_of_offset.com_object)
+        return self.com_object.GetLimitingObjects(o_limiting_objects.com_object, o_list_of_orientations,
+                                                  o_list_of_offset.com_object)
 
     def get_orientation(self, i_index_limit: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientation(long iIndexLimit) As long
@@ -134,4 +131,4 @@ class SsmMoldedSurfaceLmt(AnyObject):
         return self.com_object.GetOrientation(i_index_limit)
 
     def __repr__(self):
-        return f'SsmMoldedSurfaceLmt(name="{ self.name }")'
+        return f'SsmMoldedSurfaceLmt(name="{self.name}")'

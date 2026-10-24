@@ -15,7 +15,6 @@ from pycatia3dx.mode.reference import Reference
 class HybridShapeExtractMulti(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -47,7 +46,6 @@ class HybridShapeExtractMulti(HybridShape):
                        i_crvtre_thsld: float, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddConstraint(Reference iConstraint,long iType,boolean
@@ -104,7 +102,6 @@ class HybridShapeExtractMulti(HybridShape):
                                 i_crvtre_thsld: float, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddConstraintTolerant(Reference iConstraint,long iType,boolean
@@ -165,7 +162,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_angular_threshold(self, i_pos: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetAngularThreshold(long iPos) As double
@@ -188,7 +184,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_angular_threshold_activity(self, i_pos: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetAngularThresholdActivity(long iPos) As boolean
@@ -211,7 +206,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_complementary_extract_multi(self, i_pos: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetComplementaryExtractMulti(long iPos) As boolean
@@ -234,7 +228,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_curvature_threshold(self, i_pos: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCurvatureThreshold(long iPos) As double
@@ -257,7 +250,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_curvature_threshold_activity(self, i_pos: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCurvatureThresholdActivity(long iPos) As boolean
@@ -280,7 +272,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_distance_threshold(self, i_pos: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetDistanceThreshold(long iPos) As double
@@ -303,7 +294,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_distance_threshold_activity(self, i_pos: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetDistanceThresholdActivity(long iPos) As boolean
@@ -326,7 +316,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_element(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElement(long iPos) As Reference
@@ -351,7 +340,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_is_federated(self, i_pos: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetIsFederated(long iPos) As boolean
@@ -374,7 +362,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_list_of_constraints(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetListOfConstraints(CATSafeArrayVariant
@@ -428,7 +415,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_nb_constraints(self, o_nb_constraints: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNbConstraints(long oNbConstraints)
@@ -457,7 +443,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_propagation_type(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPropagationType(long iPos) As long
@@ -487,7 +472,6 @@ class HybridShapeExtractMulti(HybridShape):
     def get_support(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSupport(long iPos) As Reference
@@ -507,7 +491,6 @@ class HybridShapeExtractMulti(HybridShape):
     def remove_element(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElement(long iPosition)
@@ -534,7 +517,6 @@ class HybridShapeExtractMulti(HybridShape):
     def replace_element(self, i_extract_to_replace: Reference, i_new_extract: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceElement(Reference iExtractToReplace,Reference iNewExtract,long
@@ -571,7 +553,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_angular_threshold(self, i_pos: int, i_angtre_thsld: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngularThreshold(long iPos,double iAngtreThsld)
@@ -595,7 +576,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_angular_threshold_activity(self, i_pos: int, i_angtre_thsld_activity: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngularThresholdActivity(long iPos,boolean
@@ -621,7 +601,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_complementary_extract_multi(self, i_pos: int, i_complementaire: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetComplementaryExtractMulti(long iPos,boolean
@@ -647,7 +626,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_curvature_threshold(self, i_pos: int, i_crvtre_thsld: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCurvatureThreshold(long iPos,double iCrvtreThsld)
@@ -671,7 +649,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_curvature_threshold_activity(self, i_pos: int, i_crvtre_thsld_activity: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCurvatureThresholdActivity(long iPos,boolean
@@ -698,7 +675,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_distance_threshold(self, i_pos: int, i_distre_thsld: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetDistanceThreshold(long iPos,double iDistreThsld)
@@ -722,7 +698,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_distance_threshold_activity(self, i_pos: int, i_distre_thsld_activity: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetDistanceThresholdActivity(long iPos,boolean
@@ -749,7 +724,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_element(self, i_pos: int, i_elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetElement(long iPos,Reference iElem)
@@ -776,7 +750,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_is_federated(self, i_pos: int, i_is_federated: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetIsFederated(long iPos,boolean iIsFederated)
@@ -801,7 +774,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_propagation_type(self, i_pos: int, i_type_propag: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPropagationType(long iPos,long iTypePropag)
@@ -833,7 +805,6 @@ class HybridShapeExtractMulti(HybridShape):
     def set_support(self, i_pos: int, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSupport(long iPos,Reference iSupport)

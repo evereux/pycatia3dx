@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingGDT(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class DrawingGDT(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -73,7 +71,6 @@ class DrawingGDT(AnyObject):
     def leaders(self) -> DrawingLeaders:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Leaders() As DrawingLeaders (Read Only)
@@ -95,7 +92,6 @@ class DrawingGDT(AnyObject):
     def row_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RowNumber() As long (Read Only)
@@ -119,7 +115,6 @@ class DrawingGDT(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TextProperties() As DrawingTextProperties (Read Only)
@@ -141,7 +136,6 @@ class DrawingGDT(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -172,7 +166,6 @@ class DrawingGDT(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -204,7 +197,6 @@ class DrawingGDT(AnyObject):
     def get_reference_number(self, i_row_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferenceNumber(long iRowNumber) As long
@@ -232,7 +224,6 @@ class DrawingGDT(AnyObject):
     def get_text_range(self, i_row_number: int, i_number: int) -> DrawingTextRange:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTextRange(long iRowNumber,long iNumber) As
@@ -266,7 +257,6 @@ class DrawingGDT(AnyObject):
     def get_tolerance_type(self, i_row_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToleranceType(long iRowNumber) As long
@@ -294,7 +284,6 @@ class DrawingGDT(AnyObject):
     def set_tolerance_type(self, i_row_number: int, i_gdt_symbol: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToleranceType(long iRowNumber,long iGDTSymbol)

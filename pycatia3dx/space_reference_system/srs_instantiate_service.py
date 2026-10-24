@@ -14,7 +14,6 @@ from pycatia3dx.space_reference_system.srs_coordinate_converter import SrsCoordi
 class SrsInstantiateService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SrsInstantiateService(Service):
     def create_srs_coordinate_converter(self, op_srs_coordinate_converter: SrsCoordinateConverter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSrsCoordinateConverter(SrsCoordinateConverter

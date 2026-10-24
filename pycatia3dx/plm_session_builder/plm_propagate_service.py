@@ -13,7 +13,6 @@ from pycatia3dx.interfaces.service import Service
 class PLMPropagateService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class PLMPropagateService(Service):
     def plm_propagate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMPropagate()
@@ -53,7 +51,6 @@ class PLMPropagateService(Service):
     def save(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Save()
@@ -68,7 +65,6 @@ class PLMPropagateService(Service):
     def get_last_error(self, o_error_message: str, o_error_code: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub getLastError(CATBSTR oErrorMessage,long oErrorCode)

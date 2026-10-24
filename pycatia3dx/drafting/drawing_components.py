@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingComponents(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class DrawingComponents(Collection):
     def add(self, i_drawing_component_ref: DrawingView, i_position_x: float, i_position_y: float) -> DrawingComponent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(DrawingView iDrawingComponentRef,double iPositionX,double iPositionY)
@@ -87,7 +85,6 @@ class DrawingComponents(Collection):
     def item(self, i_index: CATVariant) -> DrawingComponent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingComponent
@@ -131,7 +128,6 @@ class DrawingComponents(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

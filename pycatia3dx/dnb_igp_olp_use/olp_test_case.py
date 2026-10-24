@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPTestCase(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPTestCase(OLPInstruction):
     def cases(self) -> OLPCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Cases() As OlpCases (Read Only)
@@ -59,7 +56,6 @@ class OLPTestCase(OLPInstruction):
     def default_case_instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefaultCaseInstructions() As OlpInstructions (Read
@@ -76,7 +72,6 @@ class OLPTestCase(OLPInstruction):
     def expression(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Expression() As OlpAstBranch
@@ -105,7 +100,6 @@ class OLPTestCase(OLPInstruction):
     def has_default_case(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasDefaultCase() As boolean
@@ -127,4 +121,4 @@ class OLPTestCase(OLPInstruction):
         self.com_object.HasDefaultCase = value
 
     def __repr__(self):
-        return f'OLPTestCase(name="{ self.name }")'
+        return f'OLPTestCase(name="{self.name}")'

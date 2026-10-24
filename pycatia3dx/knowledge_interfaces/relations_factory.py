@@ -21,10 +21,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RelationsFactory(KnowledgeFactory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -51,7 +49,6 @@ class RelationsFactory(KnowledgeFactory):
     def create_check(self, i_name: str, i_comment: str, i_check_body: str) -> Check:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateCheck(CATBSTR iName,CATBSTR iComment,CATBSTR iCheckBody) As
@@ -91,10 +88,10 @@ class RelationsFactory(KnowledgeFactory):
         """
         return Check(self.com_object.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_rep_ref: AnyObject) -> DesignTable:
+    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool,
+                            i_sheet_rep_ref: AnyObject) -> DesignTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateDesignTable(CATBSTR iName,CATBSTR iComment,boolean
@@ -122,12 +119,13 @@ class RelationsFactory(KnowledgeFactory):
         :param AnyObject i_sheet_rep_ref:
         :return: DesignTable
         """
-        return DesignTable(self.com_object.CreateDesignTable(i_name, i_comment, i_copy_mode, i_sheet_rep_ref.com_object))
+        return DesignTable(
+            self.com_object.CreateDesignTable(i_name, i_comment, i_copy_mode, i_sheet_rep_ref.com_object))
 
-    def create_formula(self, i_name: str, i_comment: str, i_output_parameter: Parameter, i_formula_body: str) -> Formula:
+    def create_formula(self, i_name: str, i_comment: str, i_output_parameter: Parameter,
+                       i_formula_body: str) -> Formula:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateFormula(CATBSTR iName,CATBSTR iComment,Parameter
@@ -156,10 +154,10 @@ class RelationsFactory(KnowledgeFactory):
         """
         return Formula(self.com_object.CreateFormula(i_name, i_comment, i_output_parameter.com_object, i_formula_body))
 
-    def create_horizontal_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_rep_ref: AnyObject) -> DesignTable:
+    def create_horizontal_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool,
+                                       i_sheet_rep_ref: AnyObject) -> DesignTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateHorizontalDesignTable(CATBSTR iName,CATBSTR iComment,boolean
@@ -187,12 +185,12 @@ class RelationsFactory(KnowledgeFactory):
         :param AnyObject i_sheet_rep_ref:
         :return: DesignTable
         """
-        return DesignTable(self.com_object.CreateHorizontalDesignTable(i_name, i_comment, i_copy_mode, i_sheet_rep_ref.com_object))
+        return DesignTable(
+            self.com_object.CreateHorizontalDesignTable(i_name, i_comment, i_copy_mode, i_sheet_rep_ref.com_object))
 
     def create_law(self, i_name: str, i_comment: str, i_law_body: str) -> Law:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateLaw(CATBSTR iName,CATBSTR iComment,CATBSTR iLawBody) As
@@ -221,7 +219,6 @@ class RelationsFactory(KnowledgeFactory):
     def create_program(self, i_name: str, i_comment: str, i_program_body: str) -> Rule:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateProgram(CATBSTR iName,CATBSTR iComment,CATBSTR iProgramBody) As
@@ -251,7 +248,6 @@ class RelationsFactory(KnowledgeFactory):
     def create_relations_set(self, i_name: str) -> RelsSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateRelationsSet(CATBSTR iName) As RelsSet
@@ -274,7 +270,6 @@ class RelationsFactory(KnowledgeFactory):
     def create_set_of_equations(self, i_name: str, i_comment: str, i_set_of_equations_body: str) -> SetOfEquation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateSetOfEquations(CATBSTR iName,CATBSTR iComment,CATBSTR
@@ -302,4 +297,4 @@ class RelationsFactory(KnowledgeFactory):
         return SetOfEquation(self.com_object.CreateSetOfEquations(i_name, i_comment, i_set_of_equations_body))
 
     def __repr__(self):
-        return f'RelationsFactory(name="{ self.name }")'
+        return f'RelationsFactory(name="{self.name}")'

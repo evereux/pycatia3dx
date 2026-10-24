@@ -14,7 +14,6 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 class RealParam(Parameter):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -50,7 +49,6 @@ class RealParam(Parameter):
     def maximum_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property MaximumTolerance() As double
@@ -82,7 +80,6 @@ class RealParam(Parameter):
     def minimum_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property MinimumTolerance() As double
@@ -114,7 +111,6 @@ class RealParam(Parameter):
     def range_max(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMax() As double
@@ -147,7 +143,6 @@ class RealParam(Parameter):
     def range_max_validity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMaxValidity() As long
@@ -178,7 +173,6 @@ class RealParam(Parameter):
     def range_min(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMin() As double
@@ -211,7 +205,6 @@ class RealParam(Parameter):
     def range_min_validity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RangeMinValidity() As long
@@ -242,7 +235,6 @@ class RealParam(Parameter):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Value() As double
@@ -274,7 +266,6 @@ class RealParam(Parameter):
     def get_enumerate_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
@@ -319,7 +310,6 @@ class RealParam(Parameter):
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetEnumerateValuesSize() As long
@@ -335,7 +325,6 @@ class RealParam(Parameter):
     def is_equal_to(self, i_value_to_compare: float) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsEqualTo(double iValueToCompare) As boolean
@@ -368,7 +357,6 @@ class RealParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
@@ -404,7 +392,6 @@ class RealParam(Parameter):
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SuppressEnumerateValues()

@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointOnSurface(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapePointOnSurface(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -86,7 +83,6 @@ class HybridShapePointOnSurface(Point):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset() As Length (Read Only)
@@ -109,7 +105,6 @@ class HybridShapePointOnSurface(Point):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -144,7 +139,6 @@ class HybridShapePointOnSurface(Point):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Surface() As Reference
@@ -173,4 +167,4 @@ class HybridShapePointOnSurface(Point):
         self.com_object.Surface = value
 
     def __repr__(self):
-        return f'HybridShapePointOnSurface(name="{ self.name }")'
+        return f'HybridShapePointOnSurface(name="{self.name}")'

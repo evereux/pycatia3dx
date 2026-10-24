@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingSheets(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class DrawingSheets(Collection):
     def active_sheet(self) -> DrawingSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveSheet() As DrawingSheet (Read Only)
@@ -70,7 +68,6 @@ class DrawingSheets(Collection):
     def add(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingSheetName) As DrawingSheet
@@ -105,7 +102,6 @@ class DrawingSheets(Collection):
     def add_detail(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddDetail(CATBSTR iDrawingSheetName) As DrawingSheet
@@ -140,7 +136,6 @@ class DrawingSheets(Collection):
     def item(self, i_index: CATVariant) -> DrawingSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingSheet
@@ -183,7 +178,6 @@ class DrawingSheets(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

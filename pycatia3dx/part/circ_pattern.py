@@ -18,7 +18,6 @@ from pycatia3dx.part.pattern import Pattern
 class CircPattern(Pattern):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +50,6 @@ class CircPattern(Pattern):
     def angular_direction_row(self) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularDirectionRow() As IntParam (Read Only)
@@ -73,7 +71,6 @@ class CircPattern(Pattern):
     def angular_repartition(self) -> AngularRepartition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularRepartition() As AngularRepartition (Read
@@ -96,7 +93,6 @@ class CircPattern(Pattern):
     def circular_pattern_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CircularPatternParameters() As
@@ -131,7 +127,6 @@ class CircPattern(Pattern):
     def radial_alignment(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RadialAlignment() As boolean
@@ -164,7 +159,6 @@ class CircPattern(Pattern):
     def radial_direction_row(self) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RadialDirectionRow() As IntParam (Read Only)
@@ -186,7 +180,6 @@ class CircPattern(Pattern):
     def radial_repartition(self) -> LinearRepartition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RadialRepartition() As LinearRepartition (Read Only)
@@ -208,7 +201,6 @@ class CircPattern(Pattern):
     def rotation_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RotationOrientation() As boolean
@@ -241,7 +233,6 @@ class CircPattern(Pattern):
     def get_rotation_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetRotationAxis(CATSafeArrayVariant ioRotationAxis)
@@ -284,7 +275,6 @@ class CircPattern(Pattern):
     def get_rotation_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetRotationCenter(CATSafeArrayVariant ioRotationCenter)
@@ -329,7 +319,6 @@ class CircPattern(Pattern):
     def get_stagger_pattern_choice(self, o_stagger_patt_choice: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStaggerPatternChoice(boolean oStaggerPattChoice)
@@ -351,7 +340,6 @@ class CircPattern(Pattern):
     def get_stagger_step_value(self, o_stagger_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStaggerStepValue(double oStaggerAngle)
@@ -365,7 +353,6 @@ class CircPattern(Pattern):
     def set_instance_angular_spacing(self, i_instance_number: int, i_angular_spacing: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstanceAngularSpacing(long iInstanceNumber,double
@@ -392,7 +379,6 @@ class CircPattern(Pattern):
     def set_rotation_axis(self, i_rotation_axis: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationAxis(Reference iRotationAxis)
@@ -422,7 +408,6 @@ class CircPattern(Pattern):
     def set_rotation_center(self, i_rotation_center: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationCenter(Reference iRotationCenter)
@@ -447,7 +432,6 @@ class CircPattern(Pattern):
     def set_stagger_pattern_choice(self, i_stagger_patt_choice: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStaggerPatternChoice(boolean iStaggerPattChoice)
@@ -470,7 +454,6 @@ class CircPattern(Pattern):
     def set_stagger_step_value(self, i_stagger_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStaggerStepValue(double iStaggerAngle)
@@ -484,7 +467,6 @@ class CircPattern(Pattern):
     def set_unequal_instance_number(self, i_instance_number: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUnequalInstanceNumber(long iInstanceNumber)
@@ -507,7 +489,6 @@ class CircPattern(Pattern):
     def set_unequal_step(self, i_instance_number: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUnequalStep(long iInstanceNumber)

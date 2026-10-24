@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimJobDiagnosticSummary(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_cutbacks(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfCutbacks() As long (Read Only)
@@ -53,7 +50,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_do_fs(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfDOFs() As long (Read Only)
@@ -68,7 +64,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_elements(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfElements() As long (Read Only)
@@ -83,7 +78,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_errors(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfErrors() As long (Read Only)
@@ -98,7 +92,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfIncrements() As long (Read Only)
@@ -113,7 +106,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_iterations(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfIterations() As long (Read Only)
@@ -128,7 +120,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_nodes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfNodes() As long (Read Only)
@@ -143,7 +134,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_simulation_check_warnings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfSimulationCheckWarnings() As long (Read Only)
@@ -158,7 +148,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_steps(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfSteps() As long (Read Only)
@@ -173,7 +162,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def number_of_warnings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfWarnings() As long (Read Only)
@@ -188,7 +176,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def system_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SystemTime() As double (Read Only)
@@ -203,7 +190,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def user_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserTime() As double (Read Only)
@@ -218,7 +204,6 @@ class SimJobDiagnosticSummary(AnyObject):
     def wallclock_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WallclockTime() As double (Read Only)
@@ -230,4 +215,4 @@ class SimJobDiagnosticSummary(AnyObject):
         return self.com_object.WallclockTime
 
     def __repr__(self):
-        return f'SimJobDiagnosticSummary(name="{ self.name }")'
+        return f'SimJobDiagnosticSummary(name="{self.name}")'

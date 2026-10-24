@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAnalysisRestart(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -102,7 +100,6 @@ class SimAnalysisRestart(AnyObject):
     def upstream_analysis_case(self) -> SimAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpstreamAnalysisCase() As SimAnalysisCase (Read Only)
@@ -117,7 +114,6 @@ class SimAnalysisRestart(AnyObject):
     def upstream_simulation(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpstreamSimulation() As AnyObject (Read Only)
@@ -132,7 +128,6 @@ class SimAnalysisRestart(AnyObject):
     def upstream_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpstreamStep() As SimStep
@@ -153,4 +148,4 @@ class SimAnalysisRestart(AnyObject):
         self.com_object.UpstreamStep = value
 
     def __repr__(self):
-        return f'SimAnalysisRestart(name="{ self.name }")'
+        return f'SimAnalysisRestart(name="{self.name}")'

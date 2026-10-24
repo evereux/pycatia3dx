@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimSphParticles(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimSphParticles(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -91,7 +88,6 @@ class SimSphParticles(AnyObject):
     def conversion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConversionType() As SimConversionType
@@ -114,7 +110,6 @@ class SimSphParticles(AnyObject):
     def function_order(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FunctionOrder() As SimFunctionOrder
@@ -137,7 +132,6 @@ class SimSphParticles(AnyObject):
     def grid_spacing(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GridSpacing() As double
@@ -160,7 +154,6 @@ class SimSphParticles(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -183,7 +176,6 @@ class SimSphParticles(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -206,7 +198,6 @@ class SimSphParticles(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -221,7 +212,6 @@ class SimSphParticles(AnyObject):
     def particles_per_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParticlesPerDirection() As long
@@ -245,7 +235,6 @@ class SimSphParticles(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -285,7 +274,6 @@ class SimSphParticles(AnyObject):
     def thickness_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessType() As SimThicknessType
@@ -308,7 +296,6 @@ class SimSphParticles(AnyObject):
     def threshold(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Threshold() As double
@@ -329,4 +316,4 @@ class SimSphParticles(AnyObject):
         self.com_object.Threshold = value
 
     def __repr__(self):
-        return f'SimSphParticles(name="{ self.name }")'
+        return f'SimSphParticles(name="{self.name}")'

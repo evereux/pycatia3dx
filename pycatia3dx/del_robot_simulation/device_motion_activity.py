@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DeviceMotionActivity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class DeviceMotionActivity(AnyObject):
     def accuracy_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfile() As AnyObject
@@ -79,7 +76,6 @@ class DeviceMotionActivity(AnyObject):
     def home_target(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HomeTarget() As CATBSTR
@@ -114,7 +110,6 @@ class DeviceMotionActivity(AnyObject):
     def joint_target(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointTarget() As CATSafeArrayVariant
@@ -155,7 +150,6 @@ class DeviceMotionActivity(AnyObject):
     def keep_accuracy_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepAccuracyProfile() As boolean
@@ -196,7 +190,6 @@ class DeviceMotionActivity(AnyObject):
     def keep_motion_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepMotionProfile() As boolean
@@ -236,7 +229,6 @@ class DeviceMotionActivity(AnyObject):
     def motion_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As CATSafeArrayVariant (Read Only)
@@ -261,7 +253,6 @@ class DeviceMotionActivity(AnyObject):
     def motion_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfile() As AnyObject
@@ -299,7 +290,6 @@ class DeviceMotionActivity(AnyObject):
     def target_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetList() As CATSafeArrayVariant (Read Only)
@@ -327,7 +317,6 @@ class DeviceMotionActivity(AnyObject):
     def target_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetType() As short (Read Only)
@@ -355,7 +344,6 @@ class DeviceMotionActivity(AnyObject):
     def user_profile_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserProfileList() As CATSafeArrayVariant
@@ -392,7 +380,6 @@ class DeviceMotionActivity(AnyObject):
     def get_auxillary_axis_home(self, i_auxillary_dev_mca: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA) As
@@ -419,7 +406,6 @@ class DeviceMotionActivity(AnyObject):
     def get_auxillary_axis_values(self, i_auxillary_dev_mca: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA) As
@@ -446,7 +432,6 @@ class DeviceMotionActivity(AnyObject):
     def get_target_list_for_motion_group(self, i_motion_group: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTargetListForMotionGroup(AnyObject iMotionGroup) As
@@ -475,7 +460,6 @@ class DeviceMotionActivity(AnyObject):
     def set_auxillary_axis_home(self, i_auxillary_dev_mca: AnyObject, i_home_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA,CATBSTR
@@ -503,7 +487,6 @@ class DeviceMotionActivity(AnyObject):
     def set_auxillary_axis_values(self, i_auxillary_dev_mca: AnyObject, i_auxillary_axis_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA,CATSafeArrayVariant
@@ -529,4 +512,4 @@ class DeviceMotionActivity(AnyObject):
         return self.com_object.SetAuxillaryAxisValues(i_auxillary_dev_mca.com_object, i_auxillary_axis_values)
 
     def __repr__(self):
-        return f'DeviceMotionActivity(name="{ self.name }")'
+        return f'DeviceMotionActivity(name="{self.name}")'

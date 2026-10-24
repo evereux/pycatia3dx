@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SfdConvertStiffener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class SfdConvertStiffener(AnyObject):
     def mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode(long iMode) (Write Only)
@@ -73,7 +70,6 @@ class SfdConvertStiffener(AnyObject):
     def category(self, i_category_1: str, i_category_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Category(CATBSTR iCategory_1,CATBSTR iCategory_2)
@@ -95,7 +91,6 @@ class SfdConvertStiffener(AnyObject):
     def convert_stiffener(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ConvertStiffener()
@@ -109,7 +104,6 @@ class SfdConvertStiffener(AnyObject):
     def flange_state(self, i_flange_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub FlangeState(boolean iFlangeState)
@@ -130,7 +124,6 @@ class SfdConvertStiffener(AnyObject):
     def flat_bar_section_name(self, i_flat_bar_section_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub FlatBarSectionName(CATBSTR iFlatBarSectionName)
@@ -149,7 +142,6 @@ class SfdConvertStiffener(AnyObject):
     def material(self, i_material_1: str, i_material_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Material(CATBSTR iMaterial_1,CATBSTR iMaterial_2)
@@ -171,7 +163,6 @@ class SfdConvertStiffener(AnyObject):
     def panel_names(self, i_name_1: str, i_name_2: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PanelNames(CATBSTR iName_1,CATBSTR iName_2)
@@ -193,7 +184,6 @@ class SfdConvertStiffener(AnyObject):
     def remove_stiffener(self, i_remove_stiffener_state: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveStiffener(boolean iRemoveStiffenerState)
@@ -212,4 +202,4 @@ class SfdConvertStiffener(AnyObject):
         return self.com_object.RemoveStiffener(i_remove_stiffener_state)
 
     def __repr__(self):
-        return f'SfdConvertStiffener(name="{ self.name }")'
+        return f'SfdConvertStiffener(name="{self.name}")'

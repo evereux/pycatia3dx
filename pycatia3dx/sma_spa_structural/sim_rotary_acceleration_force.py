@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRotaryAccelerationForce(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimRotaryAccelerationForce(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -102,7 +99,6 @@ class SimRotaryAccelerationForce(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -117,7 +113,6 @@ class SimRotaryAccelerationForce(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Line() As SimAxis (Read Only)
@@ -134,7 +129,6 @@ class SimRotaryAccelerationForce(AnyObject):
     def rotational_acceleration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RotationalAcceleration() As double
@@ -155,4 +149,4 @@ class SimRotaryAccelerationForce(AnyObject):
         self.com_object.RotationalAcceleration = value
 
     def __repr__(self):
-        return f'SimRotaryAccelerationForce(name="{ self.name }")'
+        return f'SimRotaryAccelerationForce(name="{self.name}")'

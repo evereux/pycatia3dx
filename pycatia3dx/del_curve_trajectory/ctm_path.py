@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class CtmPath(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class CtmPath(AnyObject):
     def append(self, i_mpoint: tuple, i_vone: tuple, i_vtwo: tuple, i_vthree: tuple, posp_tag: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Append(CATSafeArrayVariant iMpoint,CATSafeArrayVariant
@@ -95,7 +93,6 @@ class CtmPath(AnyObject):
     def get_absolute_index_of_tag(self, i_relative_index: int, o_absolute_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAbsoluteIndexOfTag(short iRelativeIndex,short
@@ -121,7 +118,6 @@ class CtmPath(AnyObject):
     def get_index_of_tag(self, isp_tag: AnyObject, o_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetIndexOfTag(AnyObject ispTag,short oIndex)
@@ -144,7 +140,6 @@ class CtmPath(AnyObject):
     def get_position(self, i_index: int, o_mpoint: tuple, o_vone: tuple, o_vtwo: tuple, o_vthree: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPosition(short iIndex,CATSafeArrayVariant oMpoint,CATSafeArrayVariant
@@ -193,7 +188,6 @@ class CtmPath(AnyObject):
     def get_tag(self, i_index: int, osp_tag: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTag(short iIndex,AnyObject ospTag)
@@ -217,7 +211,6 @@ class CtmPath(AnyObject):
                posp_tag: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Insert(short iIndex,CATSafeArrayVariant iMpoint,CATSafeArrayVariant
@@ -261,7 +254,6 @@ class CtmPath(AnyObject):
     def num_positions(self, o_size: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NumPositions(short oSize)
@@ -283,7 +275,6 @@ class CtmPath(AnyObject):
     def remove(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(short iIndex)
@@ -303,7 +294,6 @@ class CtmPath(AnyObject):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()
@@ -326,7 +316,6 @@ class CtmPath(AnyObject):
                      posp_tag: AnyObject, i_save_data: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPosition(short iIndex,CATSafeArrayVariant iMpoint,CATSafeArrayVariant

@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimPublicationServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class SimPublicationServices(Service):
                            i_publication_name: str) -> VPMPublication:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePublication(VPMReference iReferenceProduct,AnyObject iLink,CATBSTR
@@ -71,7 +69,6 @@ class SimPublicationServices(Service):
     def get_published_element(self, i_publication: VPMPublication, o_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPublishedElement(VPMPublication iPublication,AnyObject
@@ -95,7 +92,6 @@ class SimPublicationServices(Service):
     def modify_published_element(self, i_publication: VPMPublication, i_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPublishedElement(VPMPublication iPublication,AnyObject
@@ -119,7 +115,6 @@ class SimPublicationServices(Service):
     def remove_publication(self, i_reference_product: VPMReference, i_publication: VPMPublication) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePublication(VPMReference iReferenceProduct,VPMPublication
@@ -143,7 +138,6 @@ class SimPublicationServices(Service):
     def remove_publication_by_name(self, i_reference_product: VPMReference, i_publication_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePublicationByName(VPMReference iReferenceProduct,CATBSTR
@@ -168,7 +162,6 @@ class SimPublicationServices(Service):
                                        i_reroute: bool) -> VPMPublication:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ReplaceAndRenamePublication(VPMPublication iPublication,CATBSTR

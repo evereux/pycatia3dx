@@ -14,7 +14,6 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Circle2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -40,7 +39,6 @@ class Circle2D(Curve2D):
     def center_point(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property CenterPoint() As Point2D
@@ -73,7 +71,6 @@ class Circle2D(Curve2D):
     def radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Radius() As double (Read Only)
@@ -96,7 +93,6 @@ class Circle2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetCenter(CATSafeArrayVariant oData)
@@ -145,7 +141,6 @@ class Circle2D(Curve2D):
     def set_data(self, i_center_x: float, i_center_y: float, i_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetData(double iCenterX,double iCenterY,double iRadius)

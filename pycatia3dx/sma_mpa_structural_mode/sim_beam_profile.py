@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBeamProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimBeamProfile(AnyObject):
     def parameters(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As CATSafeArrayVariant
@@ -118,7 +115,6 @@ class SimBeamProfile(AnyObject):
     def shape(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Shape() As SimBeamProfileShape
@@ -140,7 +136,6 @@ class SimBeamProfile(AnyObject):
     def get_shear_center(self, o_shear_center_x_value: float, o_shear_center_y_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetShearCenter(double oShearCenterXValue,double
@@ -171,7 +166,6 @@ class SimBeamProfile(AnyObject):
     def set_shear_center(self, i_shear_center_x_value: float, i_shear_center_y_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetShearCenter(double iShearCenterXValue,double
@@ -200,4 +194,4 @@ class SimBeamProfile(AnyObject):
         return self.com_object.SetShearCenter(i_shear_center_x_value, i_shear_center_y_value)
 
     def __repr__(self):
-        return f'SimBeamProfile(name="{ self.name }")'
+        return f'SimBeamProfile(name="{self.name}")'

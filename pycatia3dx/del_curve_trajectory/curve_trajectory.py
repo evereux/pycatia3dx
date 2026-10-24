@@ -18,7 +18,6 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 class CurveTrajectory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class CurveTrajectory(AnyObject):
     def compass_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CompassType() As short
@@ -75,7 +73,6 @@ class CurveTrajectory(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DNBTrajectoryType
@@ -105,7 +102,6 @@ class CurveTrajectory(AnyObject):
     def assign_resource(self, i_resource: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignResource(AnyObject iResource)
@@ -127,7 +123,6 @@ class CurveTrajectory(AnyObject):
     def attach(self, i_attach_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Attach(CATBaseUnknown iAttachObject)
@@ -155,7 +150,6 @@ class CurveTrajectory(AnyObject):
     def create_approach(self, osp_approach: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateApproach(AnyObject ospApproach)
@@ -196,7 +190,6 @@ class CurveTrajectory(AnyObject):
     def create_contour_from_bead_fastener(self, i_product_occurrence: AnyObject, i_index: float) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromBeadFastener(AnyObject iProductOccurrence,double iIndex)
@@ -240,7 +233,6 @@ class CurveTrajectory(AnyObject):
     def create_contour_from_curves(self, i_index: float) -> CtmContourFromCurves:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromCurves(double iIndex) As
@@ -287,7 +279,6 @@ class CurveTrajectory(AnyObject):
     def create_contour_from_points(self, i_index: float) -> CtmContourFromPoints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromPoints(double iIndex) As
@@ -327,7 +318,6 @@ class CurveTrajectory(AnyObject):
     def create_contour_from_surfaces(self, i_index: float) -> CtmContourFromSurfaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateContourFromSurfaces(double iIndex) As
@@ -366,7 +356,6 @@ class CurveTrajectory(AnyObject):
     def create_departure(self, osp_depart: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDeparture(AnyObject ospDepart)
@@ -399,7 +388,6 @@ class CurveTrajectory(AnyObject):
     def delete_approach(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteApproach()
@@ -421,7 +409,6 @@ class CurveTrajectory(AnyObject):
     def delete_departure(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteDeparture()
@@ -443,7 +430,6 @@ class CurveTrajectory(AnyObject):
     def detach(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Detach()
@@ -465,7 +451,6 @@ class CurveTrajectory(AnyObject):
     def free_transient_data(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub FreeTransientData()
@@ -484,7 +469,6 @@ class CurveTrajectory(AnyObject):
     def generate_tags(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateTags()
@@ -500,7 +484,6 @@ class CurveTrajectory(AnyObject):
     def get_approach(self, osp_approach: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetApproach(AnyObject ospApproach)
@@ -537,7 +520,6 @@ class CurveTrajectory(AnyObject):
     def get_assigned_resources(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAssignedResources(CATSafeArrayVariant oAllResources)
@@ -577,7 +559,6 @@ class CurveTrajectory(AnyObject):
                           o_m31: float, o_m32: float, o_m33: float, o_v1: float, o_v2: float, o_v3: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttachOffset(double oM11,double oM12,double oM13,double oM21,double
@@ -642,7 +623,6 @@ class CurveTrajectory(AnyObject):
     def get_attached_object(self, o_attached_object: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttachedObject(CATBaseUnknown oAttachedObject)
@@ -670,7 +650,6 @@ class CurveTrajectory(AnyObject):
     def get_contour_from_tag(self, isp_tag: AnyObject, osp_contour: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetContourFromTag(AnyObject ispTag,AnyObject ospContour)
@@ -701,7 +680,6 @@ class CurveTrajectory(AnyObject):
     def get_contours(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetContours(CATSafeArrayVariant olspContours)
@@ -745,7 +723,6 @@ class CurveTrajectory(AnyObject):
     def get_number_of_points(self, o_num_points: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberOfPoints(short oNumPoints)
@@ -767,7 +744,6 @@ class CurveTrajectory(AnyObject):
     def get_referenced_base_product(self, osp_base_product: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetReferencedBaseProduct(AnyObject ospBaseProduct)
@@ -798,7 +774,6 @@ class CurveTrajectory(AnyObject):
     def get_referenced_trajectory(self, osp_trajectory: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetReferencedTrajectory(AnyObject ospTrajectory)
@@ -831,7 +806,6 @@ class CurveTrajectory(AnyObject):
                            o_m31: float, o_m32: float, o_m33: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPDefinition(double oM11,double oM12,double oM13,double oM21,double
@@ -857,7 +831,6 @@ class CurveTrajectory(AnyObject):
     def get_tag_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetTagList(CATSafeArrayVariant oTagList)
@@ -902,7 +875,6 @@ class CurveTrajectory(AnyObject):
     def get_tag_prefixes(self, o_approach_prefix: str, o_process_prefix: str, o_departure_prefix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTagPrefixes(CATBSTR oApproachPrefix,CATBSTR oProcessPrefix,CATBSTR
@@ -940,7 +912,6 @@ class CurveTrajectory(AnyObject):
     def get_trajectory_table(self, o_trajectory_table: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTrajectoryTable(AnyObject oTrajectoryTable)
@@ -965,7 +936,6 @@ class CurveTrajectory(AnyObject):
     def get_type(self, o_seam_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetType(CATBSTR oSeamType)
@@ -988,7 +958,6 @@ class CurveTrajectory(AnyObject):
     def release_editor(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReleaseEditor()
@@ -1011,7 +980,6 @@ class CurveTrajectory(AnyObject):
     def remove_contour(self, i_index: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveContour(double iIndex)
@@ -1041,7 +1009,6 @@ class CurveTrajectory(AnyObject):
     def renumber_tags(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RenumberTags()
@@ -1064,7 +1031,6 @@ class CurveTrajectory(AnyObject):
     def save_data(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveData()
@@ -1085,7 +1051,6 @@ class CurveTrajectory(AnyObject):
                           i_save_data: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttachOffset(double iM11,double iM12,double iM13,double iM21,double
@@ -1157,7 +1122,6 @@ class CurveTrajectory(AnyObject):
     def set_contours(self, ilsp_contours: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetContours(CATSafeArrayVariant ilspContours)
@@ -1212,7 +1176,6 @@ class CurveTrajectory(AnyObject):
     def set_referenced_trajectory(self, isp_trajectory: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetReferencedTrajectory(AnyObject ispTrajectory)
@@ -1243,7 +1206,6 @@ class CurveTrajectory(AnyObject):
                            i_m31: float, i_m32: float, i_m33: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPDefinition(double iM11,double iM12,double iM13,double iM21,double
@@ -1269,7 +1231,6 @@ class CurveTrajectory(AnyObject):
     def set_tag_prefixes(self, i_approach_prefix: str, i_process_prefix: str, i_departure_prefix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTagPrefixes(CATBSTR iApproachPrefix,CATBSTR iProcessPrefix,CATBSTR
@@ -1307,7 +1268,6 @@ class CurveTrajectory(AnyObject):
     def unassign_resource(self, i_resource: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnassignResource(AnyObject iResource)

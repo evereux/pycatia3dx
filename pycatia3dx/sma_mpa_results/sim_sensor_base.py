@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_results.sim_frames_selection import SimFramesSelection
 
 
 class SimSensorBase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimSensorBase(AnyObject):
     def frame_selector(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrameSelector(SimFramesSelection ispFrameSelector) (Write
@@ -64,7 +61,6 @@ class SimSensorBase(AnyObject):
     def sim_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SimSupport(CATSafeArrayVariant icusSupport) (Write
@@ -89,7 +85,6 @@ class SimSensorBase(AnyObject):
     def support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Support(CATSafeArrayVariant ilsSupport) (Write Only)
@@ -112,7 +107,6 @@ class SimSensorBase(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -124,4 +118,4 @@ class SimSensorBase(AnyObject):
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'SimSensorBase(name="{ self.name }")'
+        return f'SimSensorBase(name="{self.name}")'

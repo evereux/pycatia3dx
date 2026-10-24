@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ShapeInstance(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +39,6 @@ class ShapeInstance(Shape):
     def inputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property InputsCount() As long (Read Only)
@@ -62,7 +59,6 @@ class ShapeInstance(Shape):
     def outputs_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OutputsCount() As long (Read Only)
@@ -83,7 +79,6 @@ class ShapeInstance(Shape):
     def parameters_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ParametersCount() As long (Read Only)
@@ -103,7 +98,6 @@ class ShapeInstance(Shape):
     def get_input(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInput(CATBSTR iName) As AnyObject
@@ -132,7 +126,6 @@ class ShapeInstance(Shape):
     def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputData(CATBSTR iName) As CATBaseDispatch
@@ -162,7 +155,6 @@ class ShapeInstance(Shape):
     def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputDataFromPosition(long iPosition) As
@@ -193,7 +185,6 @@ class ShapeInstance(Shape):
     def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInputFromPosition(long iPosition) As AnyObject
@@ -223,7 +214,6 @@ class ShapeInstance(Shape):
     def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetOutput(CATBSTR iName) As AnyObject
@@ -252,7 +242,6 @@ class ShapeInstance(Shape):
     def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetOutputFromPosition(long iPosition) As AnyObject
@@ -281,7 +270,6 @@ class ShapeInstance(Shape):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParameter(CATBSTR iName) As AnyObject
@@ -311,7 +299,6 @@ class ShapeInstance(Shape):
     def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetParameterFromPosition(long iPosition) As AnyObject
@@ -342,7 +329,6 @@ class ShapeInstance(Shape):
     def put_input(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutInput(CATBSTR iName,AnyObject iInput)
@@ -372,7 +358,6 @@ class ShapeInstance(Shape):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub PutInputData(CATBSTR iName,CATBaseDispatch iInput)
@@ -401,4 +386,4 @@ class ShapeInstance(Shape):
         return self.com_object.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'ShapeInstance(name="{ self.name }")'
+        return f'ShapeInstance(name="{self.name}")'

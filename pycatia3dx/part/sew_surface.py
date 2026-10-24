@@ -12,10 +12,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class SewSurface(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class SewSurface(SurfaceBasedShape):
     def deviation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Deviation() As double
@@ -72,7 +69,6 @@ class SewSurface(SurfaceBasedShape):
     def deviation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeviationMode() As long
@@ -116,7 +112,6 @@ class SewSurface(SurfaceBasedShape):
     def sewing_intersection_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SewingIntersectionMode() As CatSewingIntersectionMode
@@ -148,7 +143,6 @@ class SewSurface(SurfaceBasedShape):
     def sewing_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SewingSide() As CatSplitSide
@@ -179,7 +173,6 @@ class SewSurface(SurfaceBasedShape):
     def set_surface_support(self, i_support_surface: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSurfaceSupport(Reference iSupportSurface)
@@ -199,7 +192,6 @@ class SewSurface(SurfaceBasedShape):
     def set_volume_support(self, i_volume: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVolumeSupport(Reference iVolume)
@@ -225,4 +217,4 @@ class SewSurface(SurfaceBasedShape):
         return self.com_object.SetVolumeSupport(i_volume.com_object)
 
     def __repr__(self):
-        return f'SewSurface(name="{ self.name }")'
+        return f'SewSurface(name="{self.name}")'

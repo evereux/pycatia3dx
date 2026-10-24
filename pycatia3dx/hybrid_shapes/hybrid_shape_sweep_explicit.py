@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSweepExplicit(HybridShapeSweep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def angle_law(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngleLaw() As Reference
@@ -89,7 +86,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def angle_law_inversion(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngleLawInversion() As long
@@ -120,7 +116,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def angle_law_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AngleLawType() As long
@@ -152,7 +147,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def canonical_detection(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CanonicalDetection() As long
@@ -179,7 +173,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def context(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Context() As long
@@ -215,7 +208,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def first_guide_crv(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstGuideCrv() As Reference
@@ -252,7 +244,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def guide_deviation(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property GuideDeviation() As Length (Read Only)
@@ -268,7 +259,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def guide_deviation_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property GuideDeviationActivity() As boolean
@@ -295,7 +285,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def guide_projection(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property GuideProjection() As boolean
@@ -330,7 +319,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Mode() As long
@@ -367,7 +355,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def position_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PositionMode() As long
@@ -403,7 +390,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def positioned_profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PositionedProfile() As Reference
@@ -440,7 +426,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Profile() As Reference
@@ -477,7 +462,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def profile_x_axis_computation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ProfileXAxisComputationMode() As long
@@ -521,7 +505,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def pulling_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property PullingDirection() As HybridShapeDirection
@@ -553,7 +536,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Reference() As Reference
@@ -585,7 +567,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def second_guide_crv(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondGuideCrv() As Reference
@@ -622,7 +603,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def smooth_activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothActivity() As boolean
@@ -647,7 +627,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def smooth_angle_threshold(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SmoothAngleThreshold() As Angle (Read Only)
@@ -662,7 +641,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def solution_no(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SolutionNo() As long
@@ -688,7 +666,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def spine(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Spine() As Reference
@@ -722,7 +699,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def sub_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SubType() As long
@@ -751,7 +727,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_angle_ref(self, ii: int) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetAngleRef(long ii) As Angle
@@ -778,7 +753,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_fitting_points(self, op_ia_elem_a: Reference, op_ia_elem_b: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetFittingPoints(Reference opIAElemA,Reference opIAElemB)
@@ -796,7 +770,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_longitudinal_relimiters(self, op_ia_elem_a: Reference, op_ia_elem_b: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetLongitudinalRelimiters(Reference opIAElemA,Reference
@@ -817,7 +790,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_nb_angle(self, o_ang: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNbAngle(long oAng)
@@ -832,7 +804,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_nb_guide(self, o_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNbGuide(long oNum)
@@ -847,7 +818,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_nb_pos_angle(self, o_pos_ang: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNbPosAngle(long oPosAng)
@@ -863,7 +833,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_nb_pos_coord(self, o_pos_coord: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetNbPosCoord(long oPosCoord)
@@ -879,7 +848,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_pos_angle(self, ii: int) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosAngle(long ii) As Angle
@@ -908,7 +876,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_pos_coord(self, ii: int) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosCoord(long ii) As Length
@@ -938,7 +905,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_pos_direction(self, ii: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosDirection(long ii) As Reference
@@ -965,7 +931,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_pos_point(self, ii: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosPoint(long ii) As Reference
@@ -993,7 +958,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_pos_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosSwapAxes(long ii) As long
@@ -1024,7 +988,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def get_relimiters(self, op_ia_elem1: Reference, op_orient1: int, op_ia_elem2: Reference, op_orient2: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetRelimiters(Reference opIAElem1,long opOrient1,Reference opIAElem2,long
@@ -1057,7 +1020,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def is_sketch_axis_used_as_default(self, o_boolean: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub IsSketchAxisUsedAsDefault(boolean oBoolean)
@@ -1075,7 +1037,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def remove_angle(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAngle()
@@ -1088,7 +1049,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def remove_fitting_points(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveFittingPoints()
@@ -1101,7 +1061,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def remove_guide(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveGuide()
@@ -1114,7 +1073,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_angle_ref(self, ii: int, elem: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngleRef(long ii,double Elem)
@@ -1139,7 +1097,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_fitting_points(self, ip_ia_elem_a: Reference, ip_ia_elem_b: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetFittingPoints(Reference ipIAElemA,Reference ipIAElemB)
@@ -1160,7 +1117,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_guide_deviation(self, i_length: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetGuideDeviation(double iLength)
@@ -1176,7 +1132,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_longitudinal_relimiters(self, ip_ia_elem_a: Reference, ip_ia_elem_b: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLongitudinalRelimiters(Reference ipIAElemA,Reference
@@ -1197,7 +1152,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_pos_angle(self, ii: int, elem: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosAngle(long ii,double Elem)
@@ -1224,7 +1178,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_pos_coord(self, ii: int, elem: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosCoord(long ii,double Elem)
@@ -1252,7 +1205,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_pos_direction(self, ii: int, elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosDirection(long ii,Reference Elem)
@@ -1279,7 +1231,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_pos_point(self, ii: int, elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosPoint(long ii,Reference Elem)
@@ -1307,7 +1258,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_pos_swap_axes(self, ii: int, elem: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosSwapAxes(long ii,long Elem)
@@ -1340,7 +1290,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_relimiters(self, ip_ia_elem1: Reference, ip_orient1: int, ip_ia_elem2: Reference, ip_orient2: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetRelimiters(Reference ipIAElem1,long ipOrient1,Reference ipIAElem2,long
@@ -1373,7 +1322,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def set_smooth_angle_threshold(self, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSmoothAngleThreshold(double iAngle)
@@ -1388,7 +1336,6 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
     def use_sketch_axis_as_default(self, i_boolean: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub UseSketchAxisAsDefault(boolean iBoolean)
@@ -1404,4 +1351,4 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return self.com_object.UseSketchAxisAsDefault(i_boolean)
 
     def __repr__(self):
-        return f'HybridShapeSweepExplicit(name="{ self.name }")'
+        return f'HybridShapeSweepExplicit(name="{self.name}")'

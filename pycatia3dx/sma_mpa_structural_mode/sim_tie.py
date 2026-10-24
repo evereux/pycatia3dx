@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTie(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimTie(AnyObject):
     def adjust_secondary_surface_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSecondarySurfaceFlag() As boolean
@@ -104,7 +101,6 @@ class SimTie(AnyObject):
     def adjust_slave_surface_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSlaveSurfaceFlag() As boolean
@@ -127,7 +123,6 @@ class SimTie(AnyObject):
     def constraint_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConstraintRatio() As double
@@ -150,7 +145,6 @@ class SimTie(AnyObject):
     def constraint_ratio_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConstraintRatioFlag() As boolean
@@ -176,7 +170,6 @@ class SimTie(AnyObject):
     def discretization_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DiscretizationMethod() As SimTieDiscretizationMethod
@@ -199,7 +192,6 @@ class SimTie(AnyObject):
     def fluid_potential_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FluidPotentialFlag() As boolean
@@ -227,7 +219,6 @@ class SimTie(AnyObject):
     def ion_concentration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IonConcentrationFlag() As boolean
@@ -255,7 +246,6 @@ class SimTie(AnyObject):
     def pore_pressure_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PorePressureFlag() As boolean
@@ -283,7 +273,6 @@ class SimTie(AnyObject):
     def position_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionTolerance() As double
@@ -306,7 +295,6 @@ class SimTie(AnyObject):
     def position_tolerance_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionToleranceFlag() As boolean
@@ -334,7 +322,6 @@ class SimTie(AnyObject):
     def shell_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShellThicknessFlag() As boolean
@@ -362,7 +349,6 @@ class SimTie(AnyObject):
     def solid_potential_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolidPotentialFlag() As boolean
@@ -390,7 +376,6 @@ class SimTie(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -430,7 +415,6 @@ class SimTie(AnyObject):
     def swap_main_secondary(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SwapMainSecondary() As boolean
@@ -458,7 +442,6 @@ class SimTie(AnyObject):
     def swap_master_slave(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SwapMasterSlave() As boolean
@@ -481,7 +464,6 @@ class SimTie(AnyObject):
     def temperature_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemperatureFlag() As boolean
@@ -509,7 +491,6 @@ class SimTie(AnyObject):
     def tie_rotational_do_fs_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TieRotationalDOFsFlag() As boolean
@@ -532,4 +513,4 @@ class SimTie(AnyObject):
         self.com_object.TieRotationalDOFsFlag = value
 
     def __repr__(self):
-        return f'SimTie(name="{ self.name }")'
+        return f'SimTie(name="{self.name}")'

@@ -11,10 +11,8 @@ from pycatia3dx.sketcher.geometric_element import GeometricElement
 
 
 class Geometry2D(GeometricElement):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -38,7 +36,6 @@ class Geometry2D(GeometricElement):
     def construction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Construction() As boolean
@@ -66,7 +63,6 @@ class Geometry2D(GeometricElement):
     def report_name(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ReportName() As long
@@ -91,4 +87,4 @@ class Geometry2D(GeometricElement):
         self.com_object.ReportName = value
 
     def __repr__(self):
-        return f'Geometry2D(name="{ self.name }")'
+        return f'Geometry2D(name="{self.name}")'

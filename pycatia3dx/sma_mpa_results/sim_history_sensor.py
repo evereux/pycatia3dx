@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimHistorySensor(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +57,6 @@ class SimHistorySensor(AnyObject):
     def component_quantity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
@@ -83,7 +81,6 @@ class SimHistorySensor(AnyObject):
     def invariant_quantity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
@@ -108,7 +105,6 @@ class SimHistorySensor(AnyObject):
     def last_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LastValue(boolean ibFlag) (Write Only)
@@ -133,7 +129,6 @@ class SimHistorySensor(AnyObject):
     def sensor_output_parameter(self) -> SimSensorOutputParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SensorOutputParameter() As SimSensorOutputParameters
@@ -158,7 +153,6 @@ class SimHistorySensor(AnyObject):
     def variable(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variable(CATBSTR icsVariableType) (Write Only)
@@ -181,7 +175,6 @@ class SimHistorySensor(AnyObject):
     def set_all_time_based_steps(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAllTimeBasedSteps()
@@ -196,7 +189,6 @@ class SimHistorySensor(AnyObject):
     def set_complex(self, ie_complex_value: int, i_value_at_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComplex(SimComplexValues ieComplexValue,double
@@ -223,7 +215,6 @@ class SimHistorySensor(AnyObject):
     def set_parameters(self, ib_max_flag: bool, ib_min_flag: bool, ib_absolute_max_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
@@ -250,7 +241,6 @@ class SimHistorySensor(AnyObject):
     def set_step_and_frame(self, ics_persistent_step_id: str, in_frame_index: int, in_load_case_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
@@ -279,7 +269,6 @@ class SimHistorySensor(AnyObject):
     def set_support(self, ils_regions: tuple, ilnb_sub_region_indices: tuple, ils_sub_regions: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetSupport(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
@@ -329,7 +318,6 @@ class SimHistorySensor(AnyObject):
     def set_support2(self, ils_regions: tuple, ilnb_sub_region_indices: tuple, ils_sub_regions: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetSupport2(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
@@ -381,7 +369,6 @@ class SimHistorySensor(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

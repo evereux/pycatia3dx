@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class TagPoint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class TagPoint(AnyObject):
     def axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Axis() As CATSafeArrayVariant
@@ -80,7 +78,6 @@ class TagPoint(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR
@@ -118,7 +115,6 @@ class TagPoint(AnyObject):
     def get_absolute_axis(self, i_context: AnyObject, i_tag_owner: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAbsoluteAxis(AnyObject iContext,AnyObject iTagOwner) As
@@ -158,7 +154,6 @@ class TagPoint(AnyObject):
     def get_name(self, o_prefix: str, o_index: str, o_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetName(CATBSTR oPrefix,CATBSTR oIndex,CATBSTR oSuffix)
@@ -195,7 +190,6 @@ class TagPoint(AnyObject):
     def set_absolute_axis(self, i_axis: tuple, i_context: AnyObject, i_tag_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAbsoluteAxis(CATSafeArrayVariant iAxis,AnyObject iContext,AnyObject
@@ -253,7 +247,6 @@ class TagPoint(AnyObject):
     def set_name(self, i_prefix: str, i_index: str, i_suffix: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetName(CATBSTR iPrefix,CATBSTR iIndex,CATBSTR iSuffix)

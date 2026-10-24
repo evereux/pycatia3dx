@@ -15,10 +15,8 @@ from pycatia3dx.del_spot_welding.spot_dr_sequence import SpotDrSequence
 
 
 class SpotDrSequenceFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,10 +34,11 @@ class SpotDrSequenceFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_drill_rivet_sequence(self, i_spot_dr_profile: SpotDrProfile, i_spot_dr_pattern: SpotDrManufacturingPattern, i_index: int, i_optimize_cycle_time: bool) -> SpotDrSequence:
+    def create_drill_rivet_sequence(self, i_spot_dr_profile: SpotDrProfile,
+                                    i_spot_dr_pattern: SpotDrManufacturingPattern, i_index: int,
+                                    i_optimize_cycle_time: bool) -> SpotDrSequence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDrillRivetSequence(SpotDrProfile
@@ -72,12 +71,13 @@ class SpotDrSequenceFactory(AnyObject):
         :param bool i_optimize_cycle_time:
         :return: SpotDrSequence
         """
-        return SpotDrSequence(self.com_object.CreateDrillRivetSequence(i_spot_dr_profile.com_object, i_spot_dr_pattern.com_object, i_index, i_optimize_cycle_time))
+        return SpotDrSequence(
+            self.com_object.CreateDrillRivetSequence(i_spot_dr_profile.com_object, i_spot_dr_pattern.com_object,
+                                                     i_index, i_optimize_cycle_time))
 
     def delete_drill_rivet_sequence(self, i_drill_rivet_sequence: SpotDrSequence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteDrillRivetSequence(SpotDrSequence
@@ -98,4 +98,4 @@ class SpotDrSequenceFactory(AnyObject):
         return self.com_object.DeleteDrillRivetSequence(i_drill_rivet_sequence.com_object)
 
     def __repr__(self):
-        return f'SpotDrSequenceFactory(name="{ self.name }")'
+        return f'SpotDrSequenceFactory(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPTransform(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPTransform(AnyObject):
     def is_identity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsIdentity() As boolean (Read Only)
@@ -59,7 +56,6 @@ class OLPTransform(AnyObject):
     def get_axis_angle(self, o_vx: float, o_vy: float, o_vz: float, o_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisAngle(double oVx,double oVy,double oVz,double
@@ -92,7 +88,6 @@ class OLPTransform(AnyObject):
     def get_oat(self, o_o: float, o_a: float, o_t: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOAT(double oO,double oA,double oT)
@@ -120,7 +115,6 @@ class OLPTransform(AnyObject):
     def get_quaternions(self, o_q1: float, o_q2: float, o_q3: float, o_q4: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetQuaternions(double oQ1,double oQ2,double oQ3,double
@@ -152,7 +146,6 @@ class OLPTransform(AnyObject):
     def get_rpy(self, o_roll: float, o_pitch: float, o_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRPY(double oRoll,double oPitch,double oYaw)
@@ -178,7 +171,6 @@ class OLPTransform(AnyObject):
     def get_rpy2(self, o_roll: float, o_pitch: float, o_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRPY2(double oRoll,double oPitch,double oYaw)
@@ -206,7 +198,6 @@ class OLPTransform(AnyObject):
     def get_rotation_vector(self, o_vx: float, o_vy: float, o_vz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRotationVector(double oVx,double oVy,double oVz)
@@ -237,7 +228,6 @@ class OLPTransform(AnyObject):
     def get_xyz(self, o_x: float, o_y: float, o_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetXYZ(double oX,double oY,double oZ)
@@ -262,7 +252,6 @@ class OLPTransform(AnyObject):
     def get_zyz(self, o_z1: float, o_y: float, o_z2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetZYZ(double oZ1,double oY,double oZ2)
@@ -290,7 +279,6 @@ class OLPTransform(AnyObject):
     def inverse(self) -> 'OLPTransform':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Inverse() As OlpTransform
@@ -309,7 +297,6 @@ class OLPTransform(AnyObject):
     def is_equal_to(self, i_transform: 'OLPTransform') -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsEqualTo(OlpTransform iTransform) As boolean
@@ -330,7 +317,6 @@ class OLPTransform(AnyObject):
     def multiply(self, i_transform: 'OLPTransform') -> 'OLPTransform':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Multiply(OlpTransform iTransform) As OlpTransform
@@ -356,7 +342,6 @@ class OLPTransform(AnyObject):
     def set_axis_angle(self, i_vx: float, i_vy: float, i_vz: float, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisAngle(double iVx,double iVy,double iVz,double
@@ -386,10 +371,10 @@ class OLPTransform(AnyObject):
         """
         return self.com_object.SetAxisAngle(i_vx, i_vy, i_vz, i_angle)
 
-    def set_nsa_vectors(self, i_nx: float, i_ny: float, i_nz: float, i_sx: float, i_sy: float, i_sz: float, i_ax: float, i_ay: float, i_az: float) -> None:
+    def set_nsa_vectors(self, i_nx: float, i_ny: float, i_nz: float, i_sx: float, i_sy: float, i_sz: float, i_ax: float,
+                        i_ay: float, i_az: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNSAVectors(double iNx,double iNy,double iNz,double iSx,double iSy,double
@@ -433,7 +418,6 @@ class OLPTransform(AnyObject):
     def set_oat(self, i_o: float, i_a: float, i_t: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOAT(double iO,double iA,double iT)
@@ -461,7 +445,6 @@ class OLPTransform(AnyObject):
     def set_quaternions(self, i_q1: float, i_q2: float, i_q3: float, i_q4: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetQuaternions(double iQ1,double iQ2,double iQ3,double
@@ -493,7 +476,6 @@ class OLPTransform(AnyObject):
     def set_rpy(self, i_roll: float, i_pitch: float, i_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRPY(double iRoll,double iPitch,double iYaw)
@@ -518,7 +500,6 @@ class OLPTransform(AnyObject):
     def set_rotation_vector(self, i_vx: float, i_vy: float, i_vz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationVector(double iVx,double iVy,double iVz)
@@ -549,7 +530,6 @@ class OLPTransform(AnyObject):
     def set_xyz(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXYZ(double iX,double iY,double iZ)
@@ -574,7 +554,6 @@ class OLPTransform(AnyObject):
     def set_zyz(self, i_z1: float, i_y: float, i_z2: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetZYZ(double iZ1,double iY,double iZ2)
@@ -600,4 +579,4 @@ class OLPTransform(AnyObject):
         return self.com_object.SetZYZ(i_z1, i_y, i_z2)
 
     def __repr__(self):
-        return f'OLPTransform(name="{ self.name }")'
+        return f'OLPTransform(name="{self.name}")'

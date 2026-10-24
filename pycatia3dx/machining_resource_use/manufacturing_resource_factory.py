@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingResourceFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingResourceFactory(AnyObject):
     def create_resource(self, i_type: str, i_add_list: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateResource(CATBSTR iType,boolean iAddList) As
@@ -71,7 +68,6 @@ class ManufacturingResourceFactory(AnyObject):
     def create_resource2(self, i_type: str, i_catalog_name: str, i_client_id: str, i_add_list: bool) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateResource2(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
@@ -104,4 +100,4 @@ class ManufacturingResourceFactory(AnyObject):
         return AnyObject(self.com_object.CreateResource2(i_type, i_catalog_name, i_client_id, i_add_list))
 
     def __repr__(self):
-        return f'ManufacturingResourceFactory(name="{ self.name }")'
+        return f'ManufacturingResourceFactory(name="{self.name}")'

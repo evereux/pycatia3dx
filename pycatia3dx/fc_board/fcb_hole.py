@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class FCBHole(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class FCBHole(AnyObject):
     def associated_part_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssociatedPartName() As CATBSTR
@@ -73,7 +71,6 @@ class FCBHole(AnyObject):
     def hole_owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HoleOwner() As CATBSTR
@@ -107,7 +104,6 @@ class FCBHole(AnyObject):
     def hole_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HoleType() As CATBSTR
@@ -143,7 +139,6 @@ class FCBHole(AnyObject):
     def plating_style(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlatingStyle() As CATBSTR
@@ -175,7 +170,6 @@ class FCBHole(AnyObject):
     def get_board(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBoard() As CATBaseDispatch

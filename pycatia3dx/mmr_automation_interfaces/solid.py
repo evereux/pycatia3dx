@@ -14,10 +14,8 @@ from pycatia3dx.mode.move import Move
 
 
 class Solid(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -43,7 +41,6 @@ class Solid(Shape):
     def move(self) -> Move:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Move() As Move (Read Only)
@@ -77,4 +74,4 @@ class Solid(Shape):
         return Move(self.com_object.Move)
 
     def __repr__(self):
-        return f'Solid(name="{ self.name }")'
+        return f'Solid(name="{self.name}")'

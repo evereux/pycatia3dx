@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLocalOptimizationArea(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimLocalOptimizationArea(AnyObject):
     def specify_fixed_boundaries_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifyFixedBoundariesFlag() As boolean
@@ -82,7 +79,6 @@ class SimLocalOptimizationArea(AnyObject):
     def add(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType) As CATBaseDispatch
@@ -109,7 +105,6 @@ class SimLocalOptimizationArea(AnyObject):
     def get_maximum_growth(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumGrowth(double oVal)
@@ -128,7 +123,6 @@ class SimLocalOptimizationArea(AnyObject):
     def get_maximum_shrinkage(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumShrinkage(double oVal)
@@ -147,7 +141,6 @@ class SimLocalOptimizationArea(AnyObject):
     def get_transition_distance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTransitionDistance(double oVal)
@@ -166,7 +159,6 @@ class SimLocalOptimizationArea(AnyObject):
     def set_maximum_growth(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumGrowth(double iVal)
@@ -185,7 +177,6 @@ class SimLocalOptimizationArea(AnyObject):
     def set_maximum_shrinkage(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumShrinkage(double iVal)
@@ -204,7 +195,6 @@ class SimLocalOptimizationArea(AnyObject):
     def set_transition_distance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransitionDistance(double iVal)
@@ -221,4 +211,4 @@ class SimLocalOptimizationArea(AnyObject):
         return self.com_object.SetTransitionDistance(i_val)
 
     def __repr__(self):
-        return f'SimLocalOptimizationArea(name="{ self.name }")'
+        return f'SimLocalOptimizationArea(name="{self.name}")'

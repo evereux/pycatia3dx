@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingPicture(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrawingPicture(AnyObject):
     def display_at_true_depth(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayAtTrueDepth() As boolean
@@ -84,7 +82,6 @@ class DrawingPicture(AnyObject):
     def picture_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PictureType() As CatPictureType (Read Only)
@@ -113,7 +110,6 @@ class DrawingPicture(AnyObject):
     def crop_bottom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property cropBottom() As double
@@ -144,7 +140,6 @@ class DrawingPicture(AnyObject):
     def crop_left(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property cropLeft() As double
@@ -175,7 +170,6 @@ class DrawingPicture(AnyObject):
     def crop_right(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property cropRight() As double
@@ -206,7 +200,6 @@ class DrawingPicture(AnyObject):
     def crop_top(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property cropTop() As double
@@ -237,7 +230,6 @@ class DrawingPicture(AnyObject):
     def format(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property format() As CatPictureFormat
@@ -280,7 +272,6 @@ class DrawingPicture(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property height() As double
@@ -310,7 +301,6 @@ class DrawingPicture(AnyObject):
     def ratio_lock(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ratioLock() As boolean
@@ -343,7 +333,6 @@ class DrawingPicture(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property width() As double
@@ -373,7 +362,6 @@ class DrawingPicture(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -406,7 +394,6 @@ class DrawingPicture(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -438,7 +425,6 @@ class DrawingPicture(AnyObject):
     def get_original_height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginalHeight() As double
@@ -458,7 +444,6 @@ class DrawingPicture(AnyObject):
     def get_original_width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOriginalWidth() As double

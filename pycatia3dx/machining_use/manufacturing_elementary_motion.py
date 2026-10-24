@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingElementaryMotion(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def feedrate_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeedrateType() As long
@@ -63,7 +60,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def feedrate_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeedrateValue() As double
@@ -85,7 +81,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def add_pp_word(self, i_pp_word: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPPWord(CATBSTR iPPWord)
@@ -104,7 +99,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_angular_orientation_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngularOrientationValue() As double
@@ -122,7 +116,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_angular_sector_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngularSectorValue() As double
@@ -140,7 +133,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_circle_radius_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCircleRadiusValue() As double
@@ -158,7 +150,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_distance_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDistanceValue() As double
@@ -176,7 +167,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_elementary_motion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElementaryMotionType() As long
@@ -207,7 +197,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_horizontal_angle_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHorizontalAngleValue() As double
@@ -225,7 +214,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_horizontal_safety_distance_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHorizontalSafetyDistanceValue() As double
@@ -243,7 +231,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_motion_direction_vector(self, vector_x: float, vector_y: float, vector_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMotionDirectionVector(double vectorX,double vectorY,double
@@ -265,7 +252,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_motion_point(self, point_x: float, point_y: float, point_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMotionPoint(double pointX,double pointY,double pointZ)
@@ -286,7 +272,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_motion_to_plane_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionToPlaneMode() As long
@@ -306,7 +291,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_motion_tool_axis(self, vector_x: float, vector_y: float, vector_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMotionToolAxis(double vectorX,double vectorY,double
@@ -328,7 +312,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_number_of_pp_word(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfPPWord() As long
@@ -341,7 +324,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_pp_word(self, index: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPPWord(long index) As CATBSTR
@@ -362,7 +344,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_pp_word_list(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPPWordList() As CATBSTR
@@ -378,7 +359,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_parameter_value(self, i_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterValue(CATBSTR iName) As double
@@ -414,7 +394,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_ramping_angle_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRampingAngleValue() As double
@@ -432,7 +411,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_spindle_speed_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSpindleSpeedType() As long
@@ -452,7 +430,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_spindle_speed_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSpindleSpeedValue() As double
@@ -470,7 +447,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_vertical_angle_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVerticalAngleValue() As double
@@ -488,7 +464,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def get_vertical_safety_distance_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVerticalSafetyDistanceValue() As double
@@ -506,7 +481,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def is_active(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsActive() As long
@@ -526,7 +500,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def remove_pp_word(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePPWord()
@@ -539,7 +512,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_active(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetActive()
@@ -552,7 +524,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_angular_orientation_value(self, i_angular_orientation_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAngularOrientationValue(double
@@ -572,7 +543,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_angular_sector_value(self, i_angular_sector_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAngularSectorValue(double iAngularSectorValue)
@@ -591,7 +561,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_circle_radius_value(self, i_circle_radius_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCircleRadiusValue(double iCircleRadiusValue)
@@ -610,7 +579,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_distance_value(self, i_distance_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDistanceValue(double iDistanceValue)
@@ -629,7 +597,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_formula_motion_plane(self, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormulaMotionPlane(CATBSTR iExpression)
@@ -648,7 +615,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_formula_motion_point(self, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormulaMotionPoint(CATBSTR iExpression)
@@ -667,7 +633,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_horizontal_angle_value(self, i_horizontal_angle_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHorizontalAngleValue(double iHorizontalAngleValue)
@@ -686,7 +651,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_horizontal_safety_distance_value(self, i_horizontal_distance_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHorizontalSafetyDistanceValue(double
@@ -706,7 +670,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_inactive(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInactive()
@@ -719,7 +682,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_motion_direction_vector(self, vector_x: float, vector_y: float, vector_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionDirectionVector(double vectorX,double vectorY,double
@@ -741,7 +703,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_motion_plane(self, i_plane: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionPlane(AnyObject iPlane)
@@ -760,7 +721,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_motion_point(self, i_point: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionPoint(AnyObject iPoint)
@@ -779,7 +739,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_motion_to_plane_mode(self, i_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionToPlaneMode(long iMode)
@@ -800,7 +759,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_motion_tool_axis(self, vector_x: float, vector_y: float, vector_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionToolAxis(double vectorX,double vectorY,double
@@ -822,7 +780,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_parameter_value(self, i_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameterValue(CATBSTR iName,double iValue)
@@ -859,7 +816,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_ramping_angle_value(self, i_ramping_angle_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRampingAngleValue(double iRampingAngleValue)
@@ -878,7 +834,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_spindle_speed_type(self, i_spindle_speed_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSpindleSpeedType(long iSpindleSpeedType)
@@ -899,7 +854,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_spindle_speed_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SetSpindleSpeedValue() As double
@@ -917,7 +871,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_vertical_angle_value(self, i_vertical_angle_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVerticalAngleValue(double iVerticalAngleValue)
@@ -936,7 +889,6 @@ class ManufacturingElementaryMotion(AnyObject):
     def set_vertical_safety_distance_value(self, i_vertical_distance_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVerticalSafetyDistanceValue(double
@@ -954,4 +906,4 @@ class ManufacturingElementaryMotion(AnyObject):
         return self.com_object.SetVerticalSafetyDistanceValue(i_vertical_distance_value)
 
     def __repr__(self):
-        return f'ManufacturingElementaryMotion(name="{ self.name }")'
+        return f'ManufacturingElementaryMotion(name="{self.name}")'

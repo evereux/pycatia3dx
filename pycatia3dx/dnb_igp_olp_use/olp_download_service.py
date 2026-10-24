@@ -14,7 +14,6 @@ from pycatia3dx.product_structure_client.vpm_occurrence import VPMOccurrence
 class OLPDownloadService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -74,7 +73,6 @@ class OLPDownloadService(Service):
     def download_call_tasks(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DownloadCallTasks() As boolean
@@ -100,7 +98,6 @@ class OLPDownloadService(Service):
     def resource(self) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Resource() As VPMOccurrence
@@ -126,7 +123,6 @@ class OLPDownloadService(Service):
     def template_dir(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemplateDir() As CATBSTR
@@ -154,7 +150,6 @@ class OLPDownloadService(Service):
     def translator(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Translator() As CATBSTR
@@ -180,7 +175,6 @@ class OLPDownloadService(Service):
     def translator_option(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslatorOption() As CATBSTR
@@ -205,7 +199,6 @@ class OLPDownloadService(Service):
     def use_design_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseDesignPosition() As DELOlpInitialPositionMode
@@ -230,7 +223,6 @@ class OLPDownloadService(Service):
     def download(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Download(CATSafeArrayVariant iTaskList)
@@ -265,7 +257,6 @@ class OLPDownloadService(Service):
     def export_messages_to_file(self, i_file: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportMessagesToFile(CATBSTR iFile)
@@ -286,7 +277,6 @@ class OLPDownloadService(Service):
     def finalize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Finalize()
@@ -300,7 +290,6 @@ class OLPDownloadService(Service):
     def save_to_database(self, i_save_resource: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveToDatabase(VPMOccurrence iSaveResource)
@@ -321,7 +310,6 @@ class OLPDownloadService(Service):
     def save_to_folder(self, i_save_dir: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveToFolder(CATBSTR iSaveDir)

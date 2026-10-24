@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class SimEulerianMaterialAssignments(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -62,7 +61,6 @@ class SimEulerianMaterialAssignments(Collection):
     def add(self) -> SimEulerianMaterialAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As CATBaseDispatch
@@ -81,7 +79,6 @@ class SimEulerianMaterialAssignments(Collection):
     def item(self, i_index: CATVariant) -> SimEulerianMaterialAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -103,7 +100,6 @@ class SimEulerianMaterialAssignments(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
@@ -122,7 +118,6 @@ class SimEulerianMaterialAssignments(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

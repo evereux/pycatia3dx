@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class UserSurface(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +34,6 @@ class UserSurface(AnyObject):
     def add_reference(self, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddReference(Reference iSupport)
@@ -55,7 +52,6 @@ class UserSurface(AnyObject):
     def add_user_surface(self, i_user_surf: 'UserSurface') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddUserSurface(UserSurface iUserSurf)
@@ -72,4 +68,4 @@ class UserSurface(AnyObject):
         return self.com_object.AddUserSurface(i_user_surf.com_object)
 
     def __repr__(self):
-        return f'UserSurface(name="{ self.name }")'
+        return f'UserSurface(name="{self.name}")'

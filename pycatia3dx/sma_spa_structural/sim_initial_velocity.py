@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInitialVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimInitialVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimInitialVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -115,7 +111,6 @@ class SimInitialVelocity(AnyObject):
     def dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Dof() As SimDof
@@ -138,7 +133,6 @@ class SimInitialVelocity(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Line() As SimAxis (Read Only)
@@ -153,7 +147,6 @@ class SimInitialVelocity(AnyObject):
     def rotational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RotationalVelocity() As double
@@ -177,7 +170,6 @@ class SimInitialVelocity(AnyObject):
     def specify_rotation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifyRotationFlag() As boolean
@@ -200,7 +192,6 @@ class SimInitialVelocity(AnyObject):
     def specify_translation_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifyTranslationFlag() As boolean
@@ -223,7 +214,6 @@ class SimInitialVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslationalVelocity() As double
@@ -244,4 +234,4 @@ class SimInitialVelocity(AnyObject):
         self.com_object.TranslationalVelocity = value
 
     def __repr__(self):
-        return f'SimInitialVelocity(name="{ self.name }")'
+        return f'SimInitialVelocity(name="{self.name}")'

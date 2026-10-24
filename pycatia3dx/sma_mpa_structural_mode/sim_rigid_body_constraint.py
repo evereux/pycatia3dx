@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRigidBodyConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimRigidBodyConstraint(AnyObject):
     def pin_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PinSupport() As CATBaseDispatch (Read Only)
@@ -91,7 +88,6 @@ class SimRigidBodyConstraint(AnyObject):
     def reference_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePoint() As SimPoint (Read Only)
@@ -106,7 +102,6 @@ class SimRigidBodyConstraint(AnyObject):
     def reference_point_input_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePointInputMode() As
@@ -130,7 +125,6 @@ class SimRigidBodyConstraint(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -170,7 +164,6 @@ class SimRigidBodyConstraint(AnyObject):
     def tie_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TieSupport() As CATBaseDispatch (Read Only)
@@ -182,4 +175,4 @@ class SimRigidBodyConstraint(AnyObject):
         return AnyObject(self.com_object.TieSupport)
 
     def __repr__(self):
-        return f'SimRigidBodyConstraint(name="{ self.name }")'
+        return f'SimRigidBodyConstraint(name="{self.name}")'

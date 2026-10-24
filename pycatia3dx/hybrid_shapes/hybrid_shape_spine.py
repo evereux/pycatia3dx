@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSpine(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -45,7 +43,6 @@ class HybridShapeSpine(HybridShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -69,7 +66,6 @@ class HybridShapeSpine(HybridShape):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property StartPoint() As Reference
@@ -91,7 +87,6 @@ class HybridShapeSpine(HybridShape):
     def add_guide(self, i_guide: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddGuide(Reference iGuide)
@@ -110,7 +105,6 @@ class HybridShapeSpine(HybridShape):
     def add_section(self, i_section: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddSection(Reference iSection)
@@ -131,7 +125,6 @@ class HybridShapeSpine(HybridShape):
     def get_guide(self, i_idx: int, op_ia_guide: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetGuide(long iIdx,Reference opIAGuide)
@@ -153,7 +146,6 @@ class HybridShapeSpine(HybridShape):
     def get_number_of_guides(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNumberOfGuides() As long
@@ -171,7 +163,6 @@ class HybridShapeSpine(HybridShape):
     def get_number_of_sections(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNumberOfSections() As long
@@ -189,7 +180,6 @@ class HybridShapeSpine(HybridShape):
     def get_section(self, i_idx: int, o_section: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetSection(long iIdx,Reference oSection)
@@ -211,7 +201,6 @@ class HybridShapeSpine(HybridShape):
     def modify_guide_curve(self, ip_ia_guide: Reference, ip_ia_new_guide: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ModifyGuideCurve(Reference ipIAGuide,Reference
@@ -234,7 +223,6 @@ class HybridShapeSpine(HybridShape):
     def modify_section_curve(self, ip_ia_section: Reference, ip_ia_new_section: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ModifySectionCurve(Reference ipIASection,Reference
@@ -257,7 +245,6 @@ class HybridShapeSpine(HybridShape):
     def remove_guide(self, i_guide: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveGuide(Reference iGuide)
@@ -276,7 +263,6 @@ class HybridShapeSpine(HybridShape):
     def remove_section(self, i_section: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSection(Reference iSection)
@@ -296,7 +282,6 @@ class HybridShapeSpine(HybridShape):
     def set_start_point(self, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetStartPoint(Reference iPoint)
@@ -315,4 +300,4 @@ class HybridShapeSpine(HybridShape):
         return self.com_object.SetStartPoint(i_point.com_object)
 
     def __repr__(self):
-        return f'HybridShapeSpine(name="{ self.name }")'
+        return f'HybridShapeSpine(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCompositeRosetteType(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimCompositeRosetteType(AnyObject):
     def get_cylindrical_rosette_tranfer_curve(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCylindricalRosetteTranferCurve() As CATBaseDispatch
@@ -55,7 +52,6 @@ class SimCompositeRosetteType(AnyObject):
     def get_cylindrical_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCylindricalType() As
@@ -72,7 +68,6 @@ class SimCompositeRosetteType(AnyObject):
     def set_cylindrical_rosette_tranfer_curve(self, i_curve: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCylindricalRosetteTranferCurve(CATBaseDispatch iCurve)
@@ -93,7 +88,6 @@ class SimCompositeRosetteType(AnyObject):
     def set_cylindrical_type(self, isp_cylindrical_rosette_transfer_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCylindricalType(SimCompositeRosetteTransferCylindricalType
@@ -111,4 +105,4 @@ class SimCompositeRosetteType(AnyObject):
         return self.com_object.SetCylindricalType(isp_cylindrical_rosette_transfer_type)
 
     def __repr__(self):
-        return f'SimCompositeRosetteType(name="{ self.name }")'
+        return f'SimCompositeRosetteType(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmCurveOrienter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class CtmCurveOrienter(AnyObject):
     def get_base_axis_mode(self, o_base_axis_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBaseAxisMode(CtmBaseAxisOrientation oBaseAxisMode)
@@ -66,7 +63,6 @@ class CtmCurveOrienter(AnyObject):
     def get_global_brr(self, o_base_angle: float, o_rake_angle: float, o_roll_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGlobalBRR(double oBaseAngle,double oRakeAngle,double
@@ -99,7 +95,6 @@ class CtmCurveOrienter(AnyObject):
     def get_global_ypr(self, o_yaw_angle: float, o_pitch_angle: float, o_roll_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGlobalYPR(double oYawAngle,double oPitchAngle,double
@@ -132,7 +127,6 @@ class CtmCurveOrienter(AnyObject):
     def get_rake_angle(self, i_angle_loc: int, o_rake_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRakeAngle(CtmRakeLocation iAngleLoc,double oRakeAngle)
@@ -162,7 +156,6 @@ class CtmCurveOrienter(AnyObject):
     def set_base_axis_mode(self, i_base_axis_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBaseAxisMode(CtmBaseAxisOrientation iBaseAxisMode)
@@ -189,7 +182,6 @@ class CtmCurveOrienter(AnyObject):
     def set_global_brr(self, i_base_angle: float, i_rake_angle: float, i_roll_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGlobalBRR(double iBaseAngle,double iRakeAngle,double
@@ -220,7 +212,6 @@ class CtmCurveOrienter(AnyObject):
     def set_global_ypr(self, i_yaw_angle: float, i_pitch_angle: float, i_roll_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGlobalYPR(double iYawAngle,double iPitchAngle,double
@@ -251,7 +242,6 @@ class CtmCurveOrienter(AnyObject):
     def set_rake_angle(self, i_rake_angle: float, i_angle_loc: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRakeAngle(double iRakeAngle,CtmRakeLocation iAngleLoc)
@@ -275,4 +265,4 @@ class CtmCurveOrienter(AnyObject):
         return self.com_object.SetRakeAngle(i_rake_angle, i_angle_loc)
 
     def __repr__(self):
-        return f'CtmCurveOrienter(name="{ self.name }")'
+        return f'CtmCurveOrienter(name="{self.name}")'

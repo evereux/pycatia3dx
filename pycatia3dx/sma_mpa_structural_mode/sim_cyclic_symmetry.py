@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCyclicSymmetry(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimCyclicSymmetry(AnyObject):
     def adjust_secondary_surface_initial_position_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSecondarySurfaceInitialPositionFlag() As
@@ -105,7 +102,6 @@ class SimCyclicSymmetry(AnyObject):
     def adjust_slave_surface_initial_position_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
@@ -128,7 +124,6 @@ class SimCyclicSymmetry(AnyObject):
     def axis_of_symmetry(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisOfSymmetry() As SimAxis (Read Only)
@@ -145,7 +140,6 @@ class SimCyclicSymmetry(AnyObject):
     def main_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainSurface() As CATBaseDispatch (Read Only)
@@ -160,7 +154,6 @@ class SimCyclicSymmetry(AnyObject):
     def master_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MasterSurface() As CATBaseDispatch (Read Only)
@@ -175,7 +168,6 @@ class SimCyclicSymmetry(AnyObject):
     def number_of_sectors(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfSectors() As long
@@ -198,7 +190,6 @@ class SimCyclicSymmetry(AnyObject):
     def position_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionTolerance() As double
@@ -222,7 +213,6 @@ class SimCyclicSymmetry(AnyObject):
     def position_tolerance_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionToleranceFlag() As boolean
@@ -250,7 +240,6 @@ class SimCyclicSymmetry(AnyObject):
     def secondary_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondarySurface() As CATBaseDispatch (Read Only)
@@ -265,7 +254,6 @@ class SimCyclicSymmetry(AnyObject):
     def slave_surface(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SlaveSurface() As CATBaseDispatch (Read Only)
@@ -280,7 +268,6 @@ class SimCyclicSymmetry(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -317,4 +304,4 @@ class SimCyclicSymmetry(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimCyclicSymmetry(name="{ self.name }")'
+        return f'SimCyclicSymmetry(name="{self.name}")'

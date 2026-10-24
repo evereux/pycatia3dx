@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscMotionGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class RscMotionGroup(AnyObject):
     def contains_robot(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ContainsRobot() As boolean (Read Only)
@@ -69,7 +66,6 @@ class RscMotionGroup(AnyObject):
     def motion_group_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroupIndex() As long
@@ -90,7 +86,6 @@ class RscMotionGroup(AnyObject):
     def retrieve_controlled_resources(self, i_cell_context: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrieveControlledResources(AnyObject iCellContext) As
@@ -146,7 +141,6 @@ class RscMotionGroup(AnyObject):
     def retrieve_primary_resource(self, i_cell_context: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrievePrimaryResource(AnyObject iCellContext) As
@@ -186,4 +180,4 @@ class RscMotionGroup(AnyObject):
         return AnyObject(self.com_object.RetrievePrimaryResource(i_cell_context.com_object))
 
     def __repr__(self):
-        return f'RscMotionGroup(name="{ self.name }")'
+        return f'RscMotionGroup(name="{self.name}")'

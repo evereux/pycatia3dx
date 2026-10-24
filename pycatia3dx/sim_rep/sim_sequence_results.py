@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimSequenceResults(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class SimSequenceResults(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsCurrent() As boolean (Read Only)
@@ -54,7 +52,6 @@ class SimSequenceResults(AnyObject):
     def is_successfully_computed(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsSuccessfullyComputed() As boolean (Read Only)
@@ -69,7 +66,6 @@ class SimSequenceResults(AnyObject):
     def scenario_results(self) -> SimScenarioResults:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioResults() As SimScenarioResults (Read Only)
@@ -84,7 +80,6 @@ class SimSequenceResults(AnyObject):
     def scenario_to_compute(self) -> SimScenarioSpec:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioToCompute() As SimScenarioSpec
@@ -107,7 +102,6 @@ class SimSequenceResults(AnyObject):
     def sequence(self) -> SimSequence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sequence() As SimSequence (Read Only)
@@ -121,7 +115,6 @@ class SimSequenceResults(AnyObject):
     def update(self, isp_scenario_to_compute: SimScenarioSpec) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update(SimScenarioSpec ispScenarioToCompute)

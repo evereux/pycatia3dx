@@ -13,10 +13,8 @@ from pycatia3dx.sma_spa_structural.sim_buckle_subspace_eigensolver import SimBuc
 
 
 class SimBuckleStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimBuckleStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimBuckleStep(SimStep):
     def lanczos_solver(self) -> SimBuckleLanczosEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LanczosSolver() As SimBuckleLanczosEigensolver (Read
@@ -116,7 +112,6 @@ class SimBuckleStep(SimStep):
     def solver_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolverType() As SimBuckleStepSolverType
@@ -139,7 +134,6 @@ class SimBuckleStep(SimStep):
     def subspace_solver(self) -> SimBuckleSubspaceEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubspaceSolver() As SimBuckleSubspaceEigensolver (Read
@@ -152,4 +146,4 @@ class SimBuckleStep(SimStep):
         return SimBuckleSubspaceEigensolver(self.com_object.SubspaceSolver)
 
     def __repr__(self):
-        return f'SimBuckleStep(name="{ self.name }")'
+        return f'SimBuckleStep(name="{self.name}")'

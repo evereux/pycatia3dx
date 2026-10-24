@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLocalElementTypeAssignment(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -84,7 +82,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def family(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Family() As CATBSTR
@@ -130,7 +127,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def topologies(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Topologies() As CATSafeArrayVariant (Read Only)
@@ -159,7 +155,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def candidate_formulations(self, i_topology: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CandidateFormulations(CATBSTR iTopology) As
@@ -174,7 +169,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def default_formulation(self, i_topology: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefaultFormulation(CATBSTR iTopology) As CATBSTR
@@ -188,7 +182,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def get_formulation(self, i_topology: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormulation(CATBSTR iTopology) As CATBSTR
@@ -202,7 +195,6 @@ class SimLocalElementTypeAssignment(AnyObject):
     def set_formulation(self, i_topology: str, i_formulation: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormulation(CATBSTR iTopology,CATBSTR iFormulation)
@@ -215,4 +207,4 @@ class SimLocalElementTypeAssignment(AnyObject):
         return self.com_object.SetFormulation(i_topology, i_formulation)
 
     def __repr__(self):
-        return f'SimLocalElementTypeAssignment(name="{ self.name }")'
+        return f'SimLocalElementTypeAssignment(name="{self.name}")'

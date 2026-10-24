@@ -13,10 +13,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Defeaturing(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class Defeaturing(DressUpShape):
     def filters(self) -> DefeaturingFilters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Filters() As DefeaturingFilters (Read Only)
@@ -69,4 +66,4 @@ class Defeaturing(DressUpShape):
         return DefeaturingFilters(self.com_object.Filters)
 
     def __repr__(self):
-        return f'Defeaturing(name="{ self.name }")'
+        return f'Defeaturing(name="{self.name}")'

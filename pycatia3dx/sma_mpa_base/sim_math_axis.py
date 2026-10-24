@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_math_vector import SimMathVector
 
 
 class SimMathAxis(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -106,7 +104,6 @@ class SimMathAxis(AnyObject):
     def first_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstDirection() As SimMathVector
@@ -129,7 +126,6 @@ class SimMathAxis(AnyObject):
     def origin(self) -> SimMathPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Origin() As SimMathPoint
@@ -152,7 +148,6 @@ class SimMathAxis(AnyObject):
     def second_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondDirection() As SimMathVector
@@ -175,7 +170,6 @@ class SimMathAxis(AnyObject):
     def third_direction(self) -> SimMathVector:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThirdDirection() As SimMathVector
@@ -195,4 +189,4 @@ class SimMathAxis(AnyObject):
         self.com_object.ThirdDirection = value
 
     def __repr__(self):
-        return f'SimMathAxis(name="{ self.name }")'
+        return f'SimMathAxis(name="{self.name}")'

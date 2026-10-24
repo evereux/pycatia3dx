@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.tag_point import TagPoint
 
 
 class TagFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class TagFactory(AnyObject):
     def create_tag(self, i_tag_name: str) -> TagPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTag(CATBSTR iTagName) As TagPoint
@@ -70,4 +67,4 @@ class TagFactory(AnyObject):
         return TagPoint(self.com_object.CreateTag(i_tag_name))
 
     def __repr__(self):
-        return f'TagFactory(name="{ self.name }")'
+        return f'TagFactory(name="{self.name}")'

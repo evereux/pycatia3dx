@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMillingControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimMillingControl(AnyObject):
     def milling_axis(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MillingAxis() As CATBaseDispatch (Read Only)
@@ -90,7 +87,6 @@ class SimMillingControl(AnyObject):
     def prevent_material_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreventMaterialRemovalFlag() As boolean
@@ -112,4 +108,4 @@ class SimMillingControl(AnyObject):
         self.com_object.PreventMaterialRemovalFlag = value
 
     def __repr__(self):
-        return f'SimMillingControl(name="{ self.name }")'
+        return f'SimMillingControl(name="{self.name}")'

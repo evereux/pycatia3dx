@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.tag_point import TagPoint
 
 
 class RobotMotionActivity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RobotMotionActivity(AnyObject):
     def accuracy_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfile() As AnyObject
@@ -82,7 +79,6 @@ class RobotMotionActivity(AnyObject):
     def cartesian_target(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CartesianTarget() As CATSafeArrayVariant
@@ -125,7 +121,6 @@ class RobotMotionActivity(AnyObject):
     def config(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Config() As short
@@ -165,7 +160,6 @@ class RobotMotionActivity(AnyObject):
     def elbow_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElbowAngle() As double
@@ -206,7 +200,6 @@ class RobotMotionActivity(AnyObject):
     def home_target(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HomeTarget() As CATBSTR
@@ -244,7 +237,6 @@ class RobotMotionActivity(AnyObject):
     def interpolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterpolationMode() As short
@@ -290,7 +282,6 @@ class RobotMotionActivity(AnyObject):
     def joint_target(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointTarget() As CATSafeArrayVariant
@@ -333,7 +324,6 @@ class RobotMotionActivity(AnyObject):
     def keep_accuracy_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepAccuracyProfile() As boolean
@@ -376,7 +366,6 @@ class RobotMotionActivity(AnyObject):
     def keep_motion_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepMotionProfile() As boolean
@@ -418,7 +407,6 @@ class RobotMotionActivity(AnyObject):
     def keep_object_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepObjectProfile() As boolean
@@ -460,7 +448,6 @@ class RobotMotionActivity(AnyObject):
     def keep_tool_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeepToolProfile() As boolean
@@ -502,7 +489,6 @@ class RobotMotionActivity(AnyObject):
     def motion_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As CATSafeArrayVariant (Read Only)
@@ -529,7 +515,6 @@ class RobotMotionActivity(AnyObject):
     def motion_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfile() As AnyObject
@@ -569,7 +554,6 @@ class RobotMotionActivity(AnyObject):
     def motion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionType() As short
@@ -613,7 +597,6 @@ class RobotMotionActivity(AnyObject):
     def object_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectProfile() As AnyObject
@@ -653,7 +636,6 @@ class RobotMotionActivity(AnyObject):
     def orientation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrientationMode() As short
@@ -694,7 +676,6 @@ class RobotMotionActivity(AnyObject):
     def tag_target(self) -> TagPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagTarget() As TagPoint (Read Only)
@@ -725,7 +706,6 @@ class RobotMotionActivity(AnyObject):
     def target_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetList() As CATSafeArrayVariant (Read Only)
@@ -755,7 +735,6 @@ class RobotMotionActivity(AnyObject):
     def target_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TargetType() As short (Read Only)
@@ -786,7 +765,6 @@ class RobotMotionActivity(AnyObject):
     def tool_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolProfile() As AnyObject
@@ -826,7 +804,6 @@ class RobotMotionActivity(AnyObject):
     def turn_numbers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TurnNumbers() As CATSafeArrayVariant
@@ -866,7 +843,6 @@ class RobotMotionActivity(AnyObject):
     def turn_signs(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TurnSigns() As CATSafeArrayVariant
@@ -906,7 +882,6 @@ class RobotMotionActivity(AnyObject):
     def user_profile_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserProfileList() As CATSafeArrayVariant
@@ -945,7 +920,6 @@ class RobotMotionActivity(AnyObject):
     def get_auxillary_axis_home(self, i_auxillary_dev_mca: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA) As
@@ -974,7 +948,6 @@ class RobotMotionActivity(AnyObject):
     def get_auxillary_axis_values(self, i_auxillary_dev_mca: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA) As
@@ -1003,7 +976,6 @@ class RobotMotionActivity(AnyObject):
     def get_tag_target(self, o_tag: TagPoint, o_tag_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTagTarget(TagPoint oTag,AnyObject oTagOwner)
@@ -1031,7 +1003,6 @@ class RobotMotionActivity(AnyObject):
     def get_target_list_for_motion_group(self, i_motion_group: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTargetListForMotionGroup(AnyObject iMotionGroup) As
@@ -1061,7 +1032,6 @@ class RobotMotionActivity(AnyObject):
     def set_auxillary_axis_home(self, i_auxillary_dev_mca: AnyObject, i_home_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA,CATBSTR
@@ -1091,7 +1061,6 @@ class RobotMotionActivity(AnyObject):
     def set_auxillary_axis_values(self, i_auxillary_dev_mca: AnyObject, i_auxillary_axis_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA,CATSafeArrayVariant
@@ -1121,7 +1090,6 @@ class RobotMotionActivity(AnyObject):
     def set_tag_target(self, i_tag: TagPoint, i_tag_owner: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTagTarget(TagPoint iTag,AnyObject iTagOwner)
@@ -1153,4 +1121,4 @@ class RobotMotionActivity(AnyObject):
         return self.com_object.SetTagTarget(i_tag.com_object, i_tag_owner.com_object)
 
     def __repr__(self):
-        return f'RobotMotionActivity(name="{ self.name }")'
+        return f'RobotMotionActivity(name="{self.name}")'

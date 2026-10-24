@@ -11,10 +11,8 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimFrequencyResponseVariableType
@@ -102,7 +99,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def get_max_mode(self, o_max_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaxMode(short oMaxMode)
@@ -121,7 +117,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def get_min_mode(self, o_min_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinMode(short oMinMode)
@@ -140,7 +135,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def get_mode_number(self, o_mode_number: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetModeNumber(short oModeNumber)
@@ -159,7 +153,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def set_max_mode(self, i_max_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxMode(short iMaxMode)
@@ -178,7 +171,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def set_min_mode(self, i_min_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinMode(short iMinMode)
@@ -197,7 +189,6 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
     def set_mode_number(self, i_mode_number: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetModeNumber(short iModeNumber)
@@ -214,4 +205,4 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         return self.com_object.SetModeNumber(i_mode_number)
 
     def __repr__(self):
-        return f'SimFrequencyResponseVariable(name="{ self.name }")'
+        return f'SimFrequencyResponseVariable(name="{self.name}")'

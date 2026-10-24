@@ -13,10 +13,8 @@ from pycatia3dx.plm_interference.interference_results import InterferenceResults
 
 
 class InterferenceSimulation(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class InterferenceSimulation(PLMEntity):
     def clearance_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClearanceValue() As double
@@ -74,7 +71,6 @@ class InterferenceSimulation(PLMEntity):
     def first_group_objects(self) -> InterferenceGroupObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstGroupObjects() As InterferenceGroupObjects (Read
@@ -93,7 +89,6 @@ class InterferenceSimulation(PLMEntity):
     def group_computation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GroupComputationType() As
@@ -120,7 +115,6 @@ class InterferenceSimulation(PLMEntity):
     def group_computation_type2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GroupComputationType2() As
@@ -184,7 +178,6 @@ class InterferenceSimulation(PLMEntity):
     def interference_comparison(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterferenceComparison() As CatInterferenceComparison
@@ -218,7 +211,6 @@ class InterferenceSimulation(PLMEntity):
     def interference_intermediate_representation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterferenceIntermediateRepresentation() As
@@ -256,7 +248,6 @@ class InterferenceSimulation(PLMEntity):
     def interference_results(self) -> InterferenceResults:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterferenceResults() As InterferenceResults (Read
@@ -290,7 +281,6 @@ class InterferenceSimulation(PLMEntity):
     def interference_specification_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterferenceSpecificationType() As
@@ -340,7 +330,6 @@ class InterferenceSimulation(PLMEntity):
     def second_group_objects(self) -> InterferenceGroupObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondGroupObjects() As InterferenceGroupObjects (Read
@@ -358,7 +347,6 @@ class InterferenceSimulation(PLMEntity):
     def add_compute_quantifier(self, i_quantifier_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddComputeQuantifier(CatInterferenceComputeQuantifier
@@ -386,7 +374,6 @@ class InterferenceSimulation(PLMEntity):
     def add_group_objects(self, o_groups: InterferenceGroupObjects) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddGroupObjects(InterferenceGroupObjects oGroups)
@@ -425,7 +412,6 @@ class InterferenceSimulation(PLMEntity):
     def add_itf_specification_type_eng_cnx(self, i_type_eng_cnx: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddItfSpecificationTypeEngCnx(CatInterferenceSpecificationTypeEngCnx
@@ -494,7 +480,6 @@ class InterferenceSimulation(PLMEntity):
     def execute(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Execute()
@@ -519,7 +504,6 @@ class InterferenceSimulation(PLMEntity):
     def get_group_objects(self, i_index: int, o_groups: InterferenceGroupObjects) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGroupObjects(long iIndex,InterferenceGroupObjects
@@ -562,7 +546,6 @@ class InterferenceSimulation(PLMEntity):
     def get_number_of_group_objects(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfGroupObjects() As long
@@ -586,7 +569,6 @@ class InterferenceSimulation(PLMEntity):
     def get_rule_set_name(self, o_rule_set_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRuleSetName(CATBSTR oRuleSetName)
@@ -612,7 +594,6 @@ class InterferenceSimulation(PLMEntity):
     def is_active_compute_quantifier(self, i_quantifier_mode: int, o_is_active: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsActiveComputeQuantifier(CatInterferenceComputeQuantifier
@@ -646,7 +627,6 @@ class InterferenceSimulation(PLMEntity):
     def is_active_itf_specification_type_eng_cnx(self, i_type_eng_cnx: int, o_is_active: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsActiveItfSpecificationTypeEngCnx(CatInterferenceSpecificationTypeEngCnx
@@ -681,7 +661,6 @@ class InterferenceSimulation(PLMEntity):
     def is_compute_quantifier_available(self, i_quantifier_mode: int, o_is_available: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsComputeQuantifierAvailable(CatInterferenceComputeQuantifier
@@ -730,7 +709,6 @@ class InterferenceSimulation(PLMEntity):
     def put_rule_set_by_name(self, i_rule_set_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutRuleSetByName(CATBSTR iRuleSetName)
@@ -760,7 +738,6 @@ class InterferenceSimulation(PLMEntity):
     def remove_compute_quantifier(self, i_quantifier_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveComputeQuantifier(CatInterferenceComputeQuantifier
@@ -787,7 +764,6 @@ class InterferenceSimulation(PLMEntity):
     def remove_group_objects(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveGroupObjects(long iIndex)
@@ -838,7 +814,6 @@ class InterferenceSimulation(PLMEntity):
     def remove_itf_specification_type_eng_cnx(self, i_type_eng_cnx: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveItfSpecificationTypeEngCnx(CatInterferenceSpecificationTypeEngCnx
@@ -874,7 +849,6 @@ class InterferenceSimulation(PLMEntity):
     def remove_rule_set(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRuleSet()
@@ -901,4 +875,4 @@ class InterferenceSimulation(PLMEntity):
         return self.com_object.RemoveRuleSet()
 
     def __repr__(self):
-        return f'InterferenceSimulation(name="{ self.name }")'
+        return f'InterferenceSimulation(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.plm_access.plm_searches import PLMSearches
 class PLMSearchService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class PLMSearchService(Service):
     def searches(self) -> PLMSearches:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Searches() As PLMSearches (Read Only)

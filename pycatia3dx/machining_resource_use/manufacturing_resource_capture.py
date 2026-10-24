@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingResourceCapture(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingResourceCapture(AnyObject):
     def save_capture(self, filepath: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveCapture(CATBSTR filepath)
@@ -66,7 +63,6 @@ class ManufacturingResourceCapture(AnyObject):
     def save_screenshot(self, filepath: str, is3_d_prefered: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SaveScreenshot(CATBSTR filepath,boolean is3DPrefered)
@@ -93,4 +89,4 @@ class ManufacturingResourceCapture(AnyObject):
         return self.com_object.SaveScreenshot(filepath, is3_d_prefered)
 
     def __repr__(self):
-        return f'ManufacturingResourceCapture(name="{ self.name }")'
+        return f'ManufacturingResourceCapture(name="{self.name}")'

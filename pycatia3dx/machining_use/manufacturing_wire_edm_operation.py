@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingWireEdmOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_offset_parameter(self, i_parameter_name: str, pass_index: int) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffsetParameter(CATBSTR iParameterName,long PassIndex) As
@@ -69,7 +66,6 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_techno_set_parameter(self, i_parameter_name: str, pass_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTechnoSetParameter(CATBSTR iParameterName,long PassIndex) As
@@ -98,7 +94,6 @@ class ManufacturingWireEdmOperation(AnyObject):
     def get_wire_edm_features(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetWireEDMFeatures() As CATSafeArrayVariant
@@ -115,7 +110,6 @@ class ManufacturingWireEdmOperation(AnyObject):
     def set_techno_set_parameter(self, i_parameter_name: str, pass_index: int, i_techno_set: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTechnoSetParameter(CATBSTR iParameterName,long PassIndex,AnyObject
@@ -145,4 +139,4 @@ class ManufacturingWireEdmOperation(AnyObject):
         return self.com_object.SetTechnoSetParameter(i_parameter_name, pass_index, i_techno_set.com_object)
 
     def __repr__(self):
-        return f'ManufacturingWireEdmOperation(name="{ self.name }")'
+        return f'ManufacturingWireEdmOperation(name="{self.name}")'

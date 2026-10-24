@@ -27,10 +27,8 @@ from pycatia3dx.tps.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class SemanticGDT(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +50,6 @@ class SemanticGDT(AnyObject):
     def associated_ref_frame(self) -> AssociatedRefFrame:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AssociatedRefFrame() As AssociatedRefFrame
@@ -72,7 +69,6 @@ class SemanticGDT(AnyObject):
     def composite_tolerance(self) -> CompositeTolerance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CompositeTolerance() As CompositeTolerance
@@ -91,7 +87,6 @@ class SemanticGDT(AnyObject):
     def frame_extensions(self, i_frame_extent_index: int) -> SemanticGDTFrameExtension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FrameExtensions(long iFrameExtentIndex) As
@@ -116,7 +111,6 @@ class SemanticGDT(AnyObject):
     def free_state(self) -> FreeState:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FreeState() As FreeState
@@ -135,7 +129,6 @@ class SemanticGDT(AnyObject):
     def has_a_centered_element(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasACenteredElement() As boolean
@@ -160,7 +153,6 @@ class SemanticGDT(AnyObject):
     def has_a_frame_extension(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAFrameExtension() As long
@@ -186,7 +178,6 @@ class SemanticGDT(AnyObject):
     def has_a_free_state(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAFreeState() As boolean
@@ -207,7 +198,6 @@ class SemanticGDT(AnyObject):
     def has_a_material_condition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAMaterialCondition() As boolean
@@ -228,7 +218,6 @@ class SemanticGDT(AnyObject):
     def has_a_particular_tol_elem(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAParticularTolElem() As boolean
@@ -249,7 +238,6 @@ class SemanticGDT(AnyObject):
     def has_a_tangent_plane(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasATangentPlane() As boolean
@@ -270,7 +258,6 @@ class SemanticGDT(AnyObject):
     def has_a_tolerance_per_unit_basis_restrictive_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
@@ -294,7 +281,6 @@ class SemanticGDT(AnyObject):
     def is_a_composite_tolerance(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsACompositeTolerance() As boolean
@@ -315,7 +301,6 @@ class SemanticGDT(AnyObject):
     def is_a_projected_tolerance_zone(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAProjectedToleranceZone() As boolean
@@ -336,7 +321,6 @@ class SemanticGDT(AnyObject):
     def is_a_shifted_profile_tolerance(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAShiftedProfileTolerance() As boolean
@@ -357,7 +341,6 @@ class SemanticGDT(AnyObject):
     def is_a_tolerance_unit_basis_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAToleranceUnitBasisValue() As boolean
@@ -378,7 +361,6 @@ class SemanticGDT(AnyObject):
     def is_a_tolerance_zone(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAToleranceZone() As boolean
@@ -399,7 +381,6 @@ class SemanticGDT(AnyObject):
     def is_an_associated_ref_frame(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAnAssociatedRefFrame() As boolean
@@ -420,7 +401,6 @@ class SemanticGDT(AnyObject):
     def is_applied_on_multiple_entities(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAppliedOnMultipleEntities() As boolean
@@ -442,7 +422,6 @@ class SemanticGDT(AnyObject):
     def material_condition(self) -> MaterialCondition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MaterialCondition() As MaterialCondition
@@ -461,7 +440,6 @@ class SemanticGDT(AnyObject):
     def median_feature(self) -> MedianFeature:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MedianFeature() As MedianFeature
@@ -480,7 +458,6 @@ class SemanticGDT(AnyObject):
     def nx_display(self) -> SemanticGDTNxDisplay:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func NxDisplay() As SemanticGDTNxDisplay
@@ -500,7 +477,6 @@ class SemanticGDT(AnyObject):
     def particular_tol_elem(self) -> ParticularTolElem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ParticularTolElem() As ParticularTolElem
@@ -519,7 +495,6 @@ class SemanticGDT(AnyObject):
     def projected_tolerance_zone(self) -> ProjectedToleranceZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ProjectedToleranceZone() As ProjectedToleranceZone
@@ -538,7 +513,6 @@ class SemanticGDT(AnyObject):
     def shifted_profile_tolerance(self) -> ShiftedProfileTolerance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ShiftedProfileTolerance() As ShiftedProfileTolerance
@@ -557,7 +531,6 @@ class SemanticGDT(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen
@@ -571,7 +544,6 @@ class SemanticGDT(AnyObject):
     def tangent_plane(self) -> TangentPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TangentPlane() As TangentPlane
@@ -590,7 +562,6 @@ class SemanticGDT(AnyObject):
     def tolerance_per_unit_basis_restrictive_value(self) -> TolerancePerUnitBasisRestrictiveValue:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TolerancePerUnitBasisRestrictiveValue() As
@@ -611,7 +582,6 @@ class SemanticGDT(AnyObject):
     def tolerance_unit_basis_value(self) -> ToleranceUnitBasisValue:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
@@ -630,7 +600,6 @@ class SemanticGDT(AnyObject):
     def tolerance_zone(self) -> ToleranceZone:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ToleranceZone() As ToleranceZone
@@ -647,4 +616,4 @@ class SemanticGDT(AnyObject):
         return ToleranceZone(self.com_object.ToleranceZone())
 
     def __repr__(self):
-        return f'SemanticGdt(name="{ self.name }")'
+        return f'SemanticGdt(name="{self.name}")'

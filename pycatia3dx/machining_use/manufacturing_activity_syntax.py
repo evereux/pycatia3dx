@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivitySyntax(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ManufacturingActivitySyntax(AnyObject):
     def get_nc_instruction(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNCInstruction() As CATBSTR
@@ -59,7 +56,6 @@ class ManufacturingActivitySyntax(AnyObject):
     def get_ppword_syntax(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPPWORDSyntax() As CATBSTR
@@ -79,7 +75,6 @@ class ManufacturingActivitySyntax(AnyObject):
     def reset_ppword_syntax(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetPPWORDSyntax()
@@ -95,7 +90,6 @@ class ManufacturingActivitySyntax(AnyObject):
     def set_ppword_syntax(self, i_ppwor_ds: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPPWORDSyntax(CATBSTR iPPWORDs)
@@ -114,4 +108,4 @@ class ManufacturingActivitySyntax(AnyObject):
         return self.com_object.SetPPWORDSyntax(i_ppwor_ds)
 
     def __repr__(self):
-        return f'ManufacturingActivitySyntax(name="{ self.name }")'
+        return f'ManufacturingActivitySyntax(name="{self.name}")'

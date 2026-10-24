@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class VALConcern(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class VALConcern(PLMEntity):
     def published(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Published() As CATBaseDispatch
@@ -61,7 +58,6 @@ class VALConcern(PLMEntity):
     def load_published(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LoadPublished()
@@ -72,4 +68,4 @@ class VALConcern(PLMEntity):
         return self.com_object.LoadPublished()
 
     def __repr__(self):
-        return f'ValConcern(name="{ self.name }")'
+        return f'ValConcern(name="{self.name}")'

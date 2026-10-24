@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeDirection(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeDirection(HybridShape):
     def object(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Object() As Reference
@@ -87,7 +84,6 @@ class HybridShapeDirection(HybridShape):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RefAxisSystem() As Reference
@@ -122,7 +118,6 @@ class HybridShapeDirection(HybridShape):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Type() As long (Read Only)
@@ -144,7 +139,6 @@ class HybridShapeDirection(HybridShape):
     def direction_specification(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func DirectionSpecification() As long
@@ -162,7 +156,6 @@ class HybridShapeDirection(HybridShape):
     def get_x(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetX() As RealParam
@@ -183,7 +176,6 @@ class HybridShapeDirection(HybridShape):
     def get_x_val(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetXVal() As double
@@ -202,7 +194,6 @@ class HybridShapeDirection(HybridShape):
     def get_y(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetY() As RealParam
@@ -223,7 +214,6 @@ class HybridShapeDirection(HybridShape):
     def get_y_val(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetYVal() As double
@@ -242,7 +232,6 @@ class HybridShapeDirection(HybridShape):
     def get_z(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetZ() As RealParam
@@ -263,7 +252,6 @@ class HybridShapeDirection(HybridShape):
     def get_z_val(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetZVal() As double
@@ -280,4 +268,4 @@ class HybridShapeDirection(HybridShape):
         return self.com_object.GetZVal()
 
     def __repr__(self):
-        return f'HybridShapeDirection(name="{ self.name }")'
+        return f'HybridShapeDirection(name="{self.name}")'

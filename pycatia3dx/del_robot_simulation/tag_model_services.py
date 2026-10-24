@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.tag_group import TagGroup
 
 
 class TagModelServices(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class TagModelServices(AnyObject):
     def delete_tag_group(self, i_tag_group: TagGroup) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteTagGroup(TagGroup iTagGroup)
@@ -71,7 +68,6 @@ class TagModelServices(AnyObject):
     def get_all_tag_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllTagGroups() As CATSafeArrayVariant
@@ -91,4 +87,4 @@ class TagModelServices(AnyObject):
         return self.com_object.GetAllTagGroups()
 
     def __repr__(self):
-        return f'TagModelServices(name="{ self.name }")'
+        return f'TagModelServices(name="{self.name}")'

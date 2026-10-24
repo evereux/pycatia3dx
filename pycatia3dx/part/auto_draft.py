@@ -14,10 +14,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class AutoDraft(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class AutoDraft(DressUpShape):
     def functional_face(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FunctionalFace(Reference iFace) (Write Only)
@@ -64,7 +61,6 @@ class AutoDraft(DressUpShape):
     def functional_faces(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FunctionalFaces() As References (Read Only)
@@ -87,7 +83,6 @@ class AutoDraft(DressUpShape):
     def main_draft_angle(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainDraftAngle() As Reference
@@ -118,7 +113,6 @@ class AutoDraft(DressUpShape):
     def mode(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode() As Reference
@@ -148,7 +142,6 @@ class AutoDraft(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartingElement() As Reference
@@ -179,7 +172,6 @@ class AutoDraft(DressUpShape):
     def pulling_direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PullingDirection() As Reference
@@ -207,4 +199,4 @@ class AutoDraft(DressUpShape):
         self.com_object.PullingDirection = value
 
     def __repr__(self):
-        return f'AutoDraft(name="{ self.name }")'
+        return f'AutoDraft(name="{self.name}")'

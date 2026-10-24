@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircle3Points(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -51,7 +49,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element1() As Reference
@@ -84,7 +81,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element2() As Reference
@@ -114,7 +110,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element3(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element3() As Reference
@@ -147,7 +142,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -177,7 +171,6 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def remove_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSupport()
@@ -188,4 +181,4 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return self.com_object.RemoveSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircle3Points(name="{ self.name }")'
+        return f'HybridShapeCircle3Points(name="{self.name}")'

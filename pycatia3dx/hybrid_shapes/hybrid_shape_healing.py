@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeHealing(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -47,7 +45,6 @@ class HybridShapeHealing(HybridShape):
     def canonic_free_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CanonicFreeMode(long iMode)
@@ -89,7 +86,6 @@ class HybridShapeHealing(HybridShape):
     def continuity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Continuity(long iContinuity)
@@ -127,7 +123,6 @@ class HybridShapeHealing(HybridShape):
     def distance_objective(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DistanceObjective() As Length (Read Only)
@@ -155,7 +150,6 @@ class HybridShapeHealing(HybridShape):
     def merging_distance(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property MergingDistance() As Length (Read Only)
@@ -183,7 +177,6 @@ class HybridShapeHealing(HybridShape):
     def no_of_bodies_to_heal(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property NoOfBodiesToHeal() As long (Read Only)
@@ -210,7 +203,6 @@ class HybridShapeHealing(HybridShape):
     def no_of_edges_to_keep_sharp(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property NoOfEdgesToKeepSharp() As long (Read Only)
@@ -237,7 +229,6 @@ class HybridShapeHealing(HybridShape):
     def no_of_elements_to_freeze(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property NoOfElementsToFreeze() As long (Read Only)
@@ -264,7 +255,6 @@ class HybridShapeHealing(HybridShape):
     def sharpness_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SharpnessAngle() As Angle (Read Only)
@@ -292,7 +282,6 @@ class HybridShapeHealing(HybridShape):
     def tangency_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangencyAngle() As Angle (Read Only)
@@ -319,7 +308,6 @@ class HybridShapeHealing(HybridShape):
     def tangency_objective(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TangencyObjective() As Length (Read Only)
@@ -346,7 +334,6 @@ class HybridShapeHealing(HybridShape):
     def add_body_to_heal(self, i_body: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddBodyToHeal(Reference iBody)
@@ -371,7 +358,6 @@ class HybridShapeHealing(HybridShape):
     def add_edge_to_keep_sharp(self, i_edge: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddEdgeToKeepSharp(Reference iEdge)
@@ -397,7 +383,6 @@ class HybridShapeHealing(HybridShape):
     def add_elements_to_freeze(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementsToFreeze(Reference iElement)
@@ -422,7 +407,6 @@ class HybridShapeHealing(HybridShape):
     def get_body_to_heal(self, i_position: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetBodyToHeal(long iPosition) As Reference
@@ -452,7 +436,6 @@ class HybridShapeHealing(HybridShape):
     def get_edge_to_keep_sharp(self, i_position: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetEdgeToKeepSharp(long iPosition) As Reference
@@ -482,7 +465,6 @@ class HybridShapeHealing(HybridShape):
     def get_element_to_freeze(self, i_position: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElementToFreeze(long iPosition) As Reference
@@ -512,7 +494,6 @@ class HybridShapeHealing(HybridShape):
     def remove_body_to_heal(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveBodyToHeal(long iPosition)
@@ -539,7 +520,6 @@ class HybridShapeHealing(HybridShape):
     def remove_edge_to_keep_sharp(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveEdgeToKeepSharp(long iPosition)
@@ -566,7 +546,6 @@ class HybridShapeHealing(HybridShape):
     def remove_element_to_freeze(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToFreeze(long iPosition)
@@ -593,7 +572,6 @@ class HybridShapeHealing(HybridShape):
     def replace_to_heal_element(self, i_index: int, i_new_heal: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceToHealElement(long iIndex,Reference iNewHeal)
@@ -615,7 +593,6 @@ class HybridShapeHealing(HybridShape):
     def set_distance_objective(self, i_distance_objective: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetDistanceObjective(double iDistanceObjective)
@@ -641,7 +618,6 @@ class HybridShapeHealing(HybridShape):
     def set_merging_distance(self, i_merging_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetMergingDistance(double iMergingDistance)
@@ -667,7 +643,6 @@ class HybridShapeHealing(HybridShape):
     def set_sharpness_angle(self, i_sharpness_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSharpnessAngle(double iSharpnessAngle)
@@ -693,7 +668,6 @@ class HybridShapeHealing(HybridShape):
     def set_tangency_angle(self, i_tangency_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangencyAngle(double iTangencyAngle)
@@ -719,7 +693,6 @@ class HybridShapeHealing(HybridShape):
     def set_tangency_objective(self, i_tangency_objective: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangencyObjective(double iTangencyObjective)
@@ -743,4 +716,4 @@ class HybridShapeHealing(HybridShape):
         return self.com_object.SetTangencyObjective(i_tangency_objective)
 
     def __repr__(self):
-        return f'HybridShapeHealing(name="{ self.name }")'
+        return f'HybridShapeHealing(name="{self.name}")'

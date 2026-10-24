@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPAstBranch(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class OLPAstBranch(Collection):
     def children(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Children() As CATSafeArrayVariant (Read Only)
@@ -64,7 +62,6 @@ class OLPAstBranch(Collection):
     def editable_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditableType() As DELOlpEditableType
@@ -87,7 +84,6 @@ class OLPAstBranch(Collection):
     def editable_type_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditableTypeString() As CATBSTR
@@ -112,7 +108,6 @@ class OLPAstBranch(Collection):
     def editor_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditorId() As CATBSTR
@@ -138,7 +133,6 @@ class OLPAstBranch(Collection):
     def hidden_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HiddenInstructions() As CATSafeArrayVariant
@@ -165,7 +159,6 @@ class OLPAstBranch(Collection):
     def id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Id() As CATBSTR
@@ -191,7 +184,6 @@ class OLPAstBranch(Collection):
     def instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As CATSafeArrayVariant
@@ -216,7 +208,6 @@ class OLPAstBranch(Collection):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELOlpAstNodeType
@@ -240,7 +231,6 @@ class OLPAstBranch(Collection):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As CATBSTR (Read Only)
@@ -256,7 +246,6 @@ class OLPAstBranch(Collection):
     def value_with_eol(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueWithEOL() As CATBSTR (Read Only)
@@ -271,7 +260,6 @@ class OLPAstBranch(Collection):
     def append(self, i_child: OLPAstNode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Append(OlpAstNode iChild)
@@ -292,7 +280,6 @@ class OLPAstBranch(Collection):
     def append_eol(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AppendEOL()
@@ -305,7 +292,6 @@ class OLPAstBranch(Collection):
     def append_leaf(self, i_type: int, i_id: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AppendLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR
@@ -331,7 +317,6 @@ class OLPAstBranch(Collection):
     def append_space(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AppendSpace()
@@ -344,7 +329,6 @@ class OLPAstBranch(Collection):
     def clone(self) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Clone() As OlpAstNode
@@ -362,7 +346,6 @@ class OLPAstBranch(Collection):
     def create_branch(self, i_type: int, i_id: str) -> 'OLPAstBranch':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateBranch(DELOlpAstNodeType iType,CATBSTR iID) As
@@ -390,7 +373,6 @@ class OLPAstBranch(Collection):
     def create_leaf(self, i_type: int, i_id: str, i_value: str) -> OLPAstLeaf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR iValue) As
@@ -421,7 +403,6 @@ class OLPAstBranch(Collection):
     def exists_child_by_id(self, i_id: str, o_child: OLPAstNode) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExistsChildByID(CATBSTR iID,OlpAstNode oChild) As boolean
@@ -448,7 +429,6 @@ class OLPAstBranch(Collection):
     def exists_child_by_type(self, i_type: int, o_child: OLPAstNode) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExistsChildByType(DELOlpAstNodeType iType,OlpAstNode oChild) As
@@ -476,7 +456,6 @@ class OLPAstBranch(Collection):
     def exists_children_by_id(self, i_id: str, o_children: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExistsChildrenByID(CATBSTR iID,CATSafeArrayVariant oChildren) As
@@ -503,7 +482,6 @@ class OLPAstBranch(Collection):
     def exists_children_by_type(self, i_type: int, o_children: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ExistsChildrenByType(DELOlpAstNodeType iType,CATSafeArrayVariant
@@ -527,7 +505,6 @@ class OLPAstBranch(Collection):
     def export_to_file(self, i_file_path: str, i_pretty_print: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
@@ -549,7 +526,6 @@ class OLPAstBranch(Collection):
     def find_child_by_id(self, i_id: str) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindChildByID(CATBSTR iID) As OlpAstNode
@@ -574,7 +550,6 @@ class OLPAstBranch(Collection):
     def find_child_by_type(self, i_type: int) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindChildByType(DELOlpAstNodeType iType) As OlpAstNode
@@ -598,7 +573,6 @@ class OLPAstBranch(Collection):
     def find_children_by_id(self, i_id: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindChildrenByID(CATBSTR iID) As CATSafeArrayVariant
@@ -622,7 +596,6 @@ class OLPAstBranch(Collection):
     def find_children_by_type(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindChildrenByType(DELOlpAstNodeType iType) As
@@ -647,7 +620,6 @@ class OLPAstBranch(Collection):
     def find_grand_child_double_value(self, i_id: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindGrandChildDoubleValue(CATBSTR iID) As double
@@ -675,7 +647,6 @@ class OLPAstBranch(Collection):
     def find_grand_child_int_value(self, i_id: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindGrandChildIntValue(CATBSTR iID) As long
@@ -703,7 +674,6 @@ class OLPAstBranch(Collection):
     def insert(self, i_relative_child: OLPAstNode, i_before: bool, i_child: OLPAstNode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Insert(OlpAstNode iRelativeChild,boolean iBefore,OlpAstNode
@@ -734,7 +704,6 @@ class OLPAstBranch(Collection):
     def item(self, i_index: CATVariant) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As OlpAstNode
@@ -761,7 +730,6 @@ class OLPAstBranch(Collection):
     def remove(self, i_child: OLPAstNode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(OlpAstNode iChild)
@@ -782,7 +750,6 @@ class OLPAstBranch(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

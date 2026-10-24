@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmCurveSamplerNumber(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class CtmCurveSamplerNumber(AnyObject):
     def number_of_samples(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfSamples() As short
@@ -74,4 +71,4 @@ class CtmCurveSamplerNumber(AnyObject):
         self.com_object.NumberOfSamples = value
 
     def __repr__(self):
-        return f'CtmCurveSamplerNumber(name="{ self.name }")'
+        return f'CtmCurveSamplerNumber(name="{self.name}")'

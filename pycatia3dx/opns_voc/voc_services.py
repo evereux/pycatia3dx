@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class VocServices(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Compute3DCut(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -127,7 +125,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ComputeASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -210,7 +207,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeASweptVolume(CATBaseDispatch iSweptAble,CATSafeArrayVariant
@@ -302,7 +298,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ComputeAThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -377,7 +372,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ComputeAVibrationVolume(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -460,7 +454,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeAVibrationVolumeFromTrack(CATBaseDispatch
@@ -529,7 +522,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ComputeAWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -616,7 +608,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ComputeAnOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -687,7 +678,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateFreeSpaceInBoxArea(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -764,7 +754,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateFreeSpaceInClosedArea(CATSafeArrayVariant
@@ -849,7 +838,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -910,7 +898,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateOffsetAlongFixedVectors(CATSafeArrayVariant
@@ -1009,7 +996,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateSimplification(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -1067,7 +1053,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateSweptVolumes(CATBaseDispatch iSweptAble,CATSafeArrayVariant
@@ -1115,7 +1100,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
@@ -1178,7 +1162,6 @@ class VocServices(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub CreateWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingMacroMotion(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingMacroMotion(AnyObject):
     def delete_elementary_motion(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteElementaryMotion(long iPosition)
@@ -56,7 +53,6 @@ class ManufacturingMacroMotion(AnyObject):
     def get_elementary_motion(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElementaryMotion(long iPosition) As AnyObject
@@ -78,7 +74,6 @@ class ManufacturingMacroMotion(AnyObject):
     def get_number_of_elementary_motions(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfElementaryMotions() As long
@@ -94,7 +89,6 @@ class ManufacturingMacroMotion(AnyObject):
     def insert_elementary_motion(self, i_position: int, i_motion_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func InsertElementaryMotion(long iPosition,CATBSTR iMotionType) As
@@ -132,4 +126,4 @@ class ManufacturingMacroMotion(AnyObject):
         return AnyObject(self.com_object.InsertElementaryMotion(i_position, i_motion_type))
 
     def __repr__(self):
-        return f'ManufacturingMacroMotion(name="{ self.name }")'
+        return f'ManufacturingMacroMotion(name="{self.name}")'

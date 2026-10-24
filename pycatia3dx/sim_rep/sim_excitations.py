@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimExcitations(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SimExcitations(Collection):
     def add(self, i_type: str, i_catalog_name: str, i_client_id: str) -> SimExcitation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
@@ -72,7 +70,6 @@ class SimExcitations(Collection):
     def item(self, i_index: CATVariant) -> SimExcitation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimExcitation
@@ -100,7 +97,6 @@ class SimExcitations(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

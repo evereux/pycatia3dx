@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCylinder(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapeCylinder(HybridShape):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Center() As Reference
@@ -86,7 +83,6 @@ class HybridShapeCylinder(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -117,7 +113,6 @@ class HybridShapeCylinder(HybridShape):
     def length1(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Length1() As Length
@@ -149,7 +144,6 @@ class HybridShapeCylinder(HybridShape):
     def length2(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Length2() As Length
@@ -181,7 +175,6 @@ class HybridShapeCylinder(HybridShape):
     def orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation(boolean iOrientation)
@@ -211,7 +204,6 @@ class HybridShapeCylinder(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length
@@ -241,7 +233,6 @@ class HybridShapeCylinder(HybridShape):
     def symmetrical_extension(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SymmetricalExtension() As boolean
@@ -268,7 +259,6 @@ class HybridShapeCylinder(HybridShape):
     def invert_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertOrientation()
@@ -285,4 +275,4 @@ class HybridShapeCylinder(HybridShape):
         return self.com_object.InvertOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCylinder(name="{ self.name }")'
+        return f'HybridShapeCylinder(name="{self.name}")'

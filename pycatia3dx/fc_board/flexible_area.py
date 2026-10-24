@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class FlexibleArea(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class FlexibleArea(AnyObject):
     def area_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaType() As CATBSTR
@@ -75,7 +73,6 @@ class FlexibleArea(AnyObject):
     def heightmax(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Heightmax() As double
@@ -108,7 +105,6 @@ class FlexibleArea(AnyObject):
     def heightmin(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Heightmin() As double
@@ -140,7 +136,6 @@ class FlexibleArea(AnyObject):
     def identifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Identifier() As CATBSTR
@@ -173,7 +168,6 @@ class FlexibleArea(AnyObject):
     def layer(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LAYER() As CATBSTR
@@ -219,7 +213,6 @@ class FlexibleArea(AnyObject):
     def owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OWNER() As CATBSTR
@@ -252,7 +245,6 @@ class FlexibleArea(AnyObject):
     def get_board(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBoard() As CATBaseDispatch
@@ -277,7 +269,6 @@ class FlexibleArea(AnyObject):
     def get_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfile() As CATBaseDispatch
@@ -303,7 +294,6 @@ class FlexibleArea(AnyObject):
     def set_profile(self, i_profileor_face: AnyObject, o_creation_view: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfile(CATBaseDispatch iProfileorFace,CATBSTR

@@ -14,10 +14,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class StrReferenceSketchPublicParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class StrReferenceSketchPublicParameters(AnyObject):
     def count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Count() As long
@@ -81,7 +78,6 @@ class StrReferenceSketchPublicParameters(AnyObject):
     def item(self, i_index: CATVariant) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Parameter
@@ -110,4 +106,4 @@ class StrReferenceSketchPublicParameters(AnyObject):
         return Parameter(self.com_object.Item(i_index))
 
     def __repr__(self):
-        return f'StrReferenceSketchPublicParameters(name="{ self.name }")'
+        return f'StrReferenceSketchPublicParameters(name="{self.name}")'

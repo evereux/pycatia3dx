@@ -14,10 +14,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Draft(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Draft(DressUpShape):
     def draft_domains(self) -> DraftDomains:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DraftDomains() As DraftDomains (Read Only)
@@ -65,7 +62,6 @@ class Draft(DressUpShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode() As CatDraftMode
@@ -96,7 +92,6 @@ class Draft(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartingElement() As Reference
@@ -126,4 +121,4 @@ class Draft(DressUpShape):
         self.com_object.PartingElement = value
 
     def __repr__(self):
-        return f'Draft(name="{ self.name }")'
+        return f'Draft(name="{self.name}")'

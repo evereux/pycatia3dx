@@ -31,7 +31,6 @@ from pycatia3dx.tps.user_surfaces import UserSurfaces
 class Part(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -58,7 +57,6 @@ class Part(AnyObject):
     def annotation_sets(self) -> AnnotationSets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AnnotationSets() As Collection (Read Only)
@@ -84,7 +82,6 @@ class Part(AnyObject):
     def axis_systems(self) -> AxisSystems:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AxisSystems() As AxisSystems (Read Only)
@@ -110,7 +107,6 @@ class Part(AnyObject):
     def bodies(self) -> Bodies:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Bodies() As Bodies (Read Only)
@@ -136,7 +132,6 @@ class Part(AnyObject):
     def constraints(self) -> Constraints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Constraints() As Constraints (Read Only)
@@ -161,7 +156,6 @@ class Part(AnyObject):
     def density(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Density() As double (Read Only)
@@ -184,7 +178,6 @@ class Part(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property GeometricElements() As GeometricElements (Read Only)
@@ -209,7 +202,6 @@ class Part(AnyObject):
     def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridBodies() As HybridBodies (Read Only)
@@ -233,7 +225,6 @@ class Part(AnyObject):
     def hybrid_shape_factory(self) -> HybridShapeFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridShapeFactory() As Factory (Read Only)
@@ -258,7 +249,6 @@ class Part(AnyObject):
     def in_work_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property InWorkObject() As AnyObject
@@ -291,7 +281,6 @@ class Part(AnyObject):
     def main_body(self) -> Body:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property MainBody() As Body
@@ -323,7 +312,6 @@ class Part(AnyObject):
     def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
@@ -348,7 +336,6 @@ class Part(AnyObject):
     def origin_elements(self) -> OriginElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property OriginElements() As OriginElements (Read Only)
@@ -372,7 +359,6 @@ class Part(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Parameters() As Parameters (Read Only)
@@ -398,7 +384,6 @@ class Part(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Relations() As Relations (Read Only)
@@ -423,7 +408,6 @@ class Part(AnyObject):
     def shape_factory(self) -> ShapeFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ShapeFactory() As Factory (Read Only)
@@ -448,7 +432,6 @@ class Part(AnyObject):
     def user_surfaces(self) -> UserSurfaces:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property UserSurfaces() As Collection (Read Only)
@@ -473,7 +456,6 @@ class Part(AnyObject):
     def activate(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Activate(AnyObject iObject)
@@ -501,7 +483,6 @@ class Part(AnyObject):
     def create_reference_from_b_rep_name(self, i_label: str, i_object_context: AnyObject) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateReferenceFromBRepName(CATBSTR iLabel,AnyObject iObjectContext) As
@@ -532,7 +513,6 @@ class Part(AnyObject):
     def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateReferenceFromName(CATBSTR iLabel) As Reference
@@ -557,7 +537,6 @@ class Part(AnyObject):
     def create_reference_from_object(self, i_object: AnyObject) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateReferenceFromObject(AnyObject iObject) As Reference
@@ -582,7 +561,6 @@ class Part(AnyObject):
     def find_object_by_name(self, i_obj_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func FindObjectByName(CATBSTR iObjName) As AnyObject
@@ -615,7 +593,6 @@ class Part(AnyObject):
     def freeze(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Freeze(AnyObject iObject)
@@ -644,7 +621,6 @@ class Part(AnyObject):
     def get_customer_factory(self, i_factory_iid: str) -> Factory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetCustomerFactory(CATBSTR iFactoryIID) As Factory
@@ -665,7 +641,6 @@ class Part(AnyObject):
     def inactivate(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Inactivate(AnyObject iObject)
@@ -694,7 +669,6 @@ class Part(AnyObject):
     def is_frozen(self, i_object: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsFrozen(AnyObject iObject) As boolean
@@ -723,7 +697,6 @@ class Part(AnyObject):
     def is_inactive(self, i_object: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsInactive(AnyObject iObject) As boolean
@@ -752,7 +725,6 @@ class Part(AnyObject):
     def is_up_to_date(self, i_object: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsUpToDate(AnyObject iObject) As boolean
@@ -782,7 +754,6 @@ class Part(AnyObject):
     def unfreeze(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Unfreeze(AnyObject iObject)
@@ -810,7 +781,6 @@ class Part(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Update()
@@ -832,7 +802,6 @@ class Part(AnyObject):
     def update_object(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub UpdateObject(AnyObject iObject)

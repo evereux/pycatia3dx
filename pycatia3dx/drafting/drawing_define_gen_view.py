@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingDefineGenView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class DrawingDefineGenView(AnyObject):
             i_view_prop: DrawingGenViewProperties) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineAuxiliaryView(double iXPos,double iYpos,double iXStartPoint,double
@@ -160,7 +158,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineCircularDetailView(double iXPos,double iYpos,double iXCenter,double
@@ -252,7 +249,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineFrontView(double iXPos,double iYpos,CATSafeArrayVariant
@@ -340,7 +336,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineIsometricView(double iXPos,double iYpos,CATSafeArrayVariant
@@ -426,7 +421,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefinePolygonalDetailView(double iXPos,double iYpos,CATSafeArrayVariant
@@ -526,7 +520,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineProjectionView(double iXPos,double iYpos,DrawingView
@@ -608,7 +601,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineSectionView(double iXPos,double iYpos,CATSafeArrayVariant
@@ -738,7 +730,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineStandAloneSection(double iXPos,double iYpos,CATSafeArrayVariant
@@ -845,7 +836,6 @@ class DrawingDefineGenView(AnyObject):
     ) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefineUnfoldedView(double iXPos,double iYpos,CATSafeArrayVariant

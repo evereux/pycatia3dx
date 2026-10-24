@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLineFastener(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimLineFastener(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -90,7 +87,6 @@ class SimLineFastener(AnyObject):
     def construct_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConstructType() As SimLineFastenerConstructType
@@ -113,7 +109,6 @@ class SimLineFastener(AnyObject):
     def coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CouplingType() As SimCouplingCouplingType
@@ -136,7 +131,6 @@ class SimLineFastener(AnyObject):
     def fastener_placement_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FastenerPlacementMethod() As
@@ -160,7 +154,6 @@ class SimLineFastener(AnyObject):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Height() As double
@@ -184,7 +177,6 @@ class SimLineFastener(AnyObject):
     def maximum_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumAngle() As double
@@ -208,7 +200,6 @@ class SimLineFastener(AnyObject):
     def maximum_projection_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumProjectionDistance() As double
@@ -233,7 +224,6 @@ class SimLineFastener(AnyObject):
     def mesh_compatibility(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MeshCompatibility() As
@@ -257,7 +247,6 @@ class SimLineFastener(AnyObject):
     def number_of_point_coordinates(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfPointCoordinates() As long
@@ -280,7 +269,6 @@ class SimLineFastener(AnyObject):
     def points_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointsCoordinates() As CATSafeArrayVariant
@@ -303,7 +291,6 @@ class SimLineFastener(AnyObject):
     def spacing(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Spacing() As double
@@ -327,7 +314,6 @@ class SimLineFastener(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -367,7 +353,6 @@ class SimLineFastener(AnyObject):
     def width(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Width() As double
@@ -389,4 +374,4 @@ class SimLineFastener(AnyObject):
         self.com_object.Width = value
 
     def __repr__(self):
-        return f'SimLineFastener(name="{ self.name }")'
+        return f'SimLineFastener(name="{self.name}")'

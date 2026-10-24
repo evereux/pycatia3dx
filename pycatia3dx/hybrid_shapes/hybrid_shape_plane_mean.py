@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneMean(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -50,7 +48,6 @@ class HybridShapePlaneMean(Plane):
     def add_point(self, i_passing_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddPoint(Reference iPassingPoint)
@@ -71,7 +68,6 @@ class HybridShapePlaneMean(Plane):
     def get_point(self, i_rank: int, o_passing_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPoint(long iRank,Reference oPassingPoint)
@@ -93,7 +89,6 @@ class HybridShapePlaneMean(Plane):
     def get_pos(self, i_point: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPos(Reference iPoint) As long
@@ -114,7 +109,6 @@ class HybridShapePlaneMean(Plane):
     def get_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSize() As long
@@ -132,7 +126,6 @@ class HybridShapePlaneMean(Plane):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAll()
@@ -145,7 +138,6 @@ class HybridShapePlaneMean(Plane):
     def remove_element(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElement(long iRank)
@@ -164,7 +156,6 @@ class HybridShapePlaneMean(Plane):
     def replace_point_at_position(self, i_point: Reference, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplacePointAtPosition(Reference iPoint,long iPos)
@@ -184,4 +175,4 @@ class HybridShapePlaneMean(Plane):
         return self.hybrid_shape_plane_mean.ReplacePointAtPosition(i_point.com_object, i_pos)
 
     def __repr__(self):
-        return f'HybridShapePlaneMean(name="{ self.name }")'
+        return f'HybridShapePlaneMean(name="{self.name}")'

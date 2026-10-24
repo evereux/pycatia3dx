@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscToolProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -71,7 +69,6 @@ class RscToolProfile(AnyObject):
     def mass(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mass() As double
@@ -102,7 +99,6 @@ class RscToolProfile(AnyObject):
     def tool_mobility(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolMobility() As short
@@ -137,7 +133,6 @@ class RscToolProfile(AnyObject):
     def get_centroid(self, o_x: float, o_y: float, o_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCentroid(double oX,double oY,double oZ)
@@ -169,7 +164,6 @@ class RscToolProfile(AnyObject):
     def get_inertia(self, o_xx: float, o_yy: float, o_zz: float, o_xy: float, o_yz: float, o_zx: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetInertia(double oXX,double oYY,double oZZ,double oXY,double oYZ,double
@@ -214,7 +208,6 @@ class RscToolProfile(AnyObject):
     def get_tcp_offset(self, o_x: float, o_y: float, o_z: float, o_roll: float, o_pitch: float, o_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTCPOffset(double oX,double oY,double oZ,double oRoll,double
@@ -261,7 +254,6 @@ class RscToolProfile(AnyObject):
     def set_centroid(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCentroid(double iX,double iY,double iZ)
@@ -290,7 +282,6 @@ class RscToolProfile(AnyObject):
     def set_inertia(self, i_xx: float, i_yy: float, i_zz: float, i_xy: float, i_yz: float, i_zx: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInertia(double iXX,double iYY,double iZZ,double iXY,double iYZ,double
@@ -329,7 +320,6 @@ class RscToolProfile(AnyObject):
     def set_tcp_offset(self, i_x: float, i_y: float, i_z: float, i_roll: float, i_pitch: float, i_yaw: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPOffset(double iX,double iY,double iZ,double iRoll,double
@@ -367,4 +357,4 @@ class RscToolProfile(AnyObject):
         return self.com_object.SetTCPOffset(i_x, i_y, i_z, i_roll, i_pitch, i_yaw)
 
     def __repr__(self):
-        return f'RscToolProfile(name="{ self.name }")'
+        return f'RscToolProfile(name="{self.name}")'

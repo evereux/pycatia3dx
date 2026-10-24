@@ -13,10 +13,8 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 
 
 class SurfaceOperationFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,10 +35,11 @@ class SurfaceOperationFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_surface_operation(self, i_operation_type: str, iref_instr: CATBaseUnknown, i_position: int, ip_tag: CATBaseUnknown, ip_tag_owner_occ: CATBaseUnknown, i_parent_seq: CATBaseUnknown) -> CATBaseUnknown:
+    def create_surface_operation(self, i_operation_type: str, iref_instr: CATBaseUnknown, i_position: int,
+                                 ip_tag: CATBaseUnknown, ip_tag_owner_occ: CATBaseUnknown,
+                                 i_parent_seq: CATBaseUnknown) -> CATBaseUnknown:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSurfaceOperation(CATBSTR iOperationType,CATBaseUnknown
@@ -82,12 +81,14 @@ class SurfaceOperationFactory(AnyObject):
         :param CATBaseUnknown i_parent_seq:
         :return: CATBaseUnknown
         """
-        return CATBaseUnknown(self.com_object.CreateSurfaceOperation(i_operation_type, iref_instr.com_object, i_position, ip_tag.com_object, ip_tag_owner_occ.com_object, i_parent_seq.com_object))
+        return CATBaseUnknown(
+            self.com_object.CreateSurfaceOperation(i_operation_type, iref_instr.com_object, i_position,
+                                                   ip_tag.com_object, ip_tag_owner_occ.com_object,
+                                                   i_parent_seq.com_object))
 
     def delete_surface_operation(self, i_surface_operation: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteSurfaceOperation(CATBaseUnknown iSurfaceOperation)
@@ -107,4 +108,4 @@ class SurfaceOperationFactory(AnyObject):
         return self.com_object.DeleteSurfaceOperation(i_surface_operation.com_object)
 
     def __repr__(self):
-        return f'SurfaceOperationFactory(name="{ self.name }")'
+        return f'SurfaceOperationFactory(name="{self.name}")'

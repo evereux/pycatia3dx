@@ -13,10 +13,8 @@ from pycatia3dx.sma_few_optimization.sim_non_parametric_response_variable import
 
 
 class SimStressResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimStressResponseVariable(SimNonParametricResponseVariable):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -92,4 +89,4 @@ class SimStressResponseVariable(SimNonParametricResponseVariable):
         return AnyObject(self.com_object.LoadCase)
 
     def __repr__(self):
-        return f'SimStressResponseVariable(name="{ self.name }")'
+        return f'SimStressResponseVariable(name="{self.name}")'

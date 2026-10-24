@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ViewPoint3D(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -48,7 +47,6 @@ class ViewPoint3D(AnyObject):
     def field_of_view(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property FieldOfView() As double
@@ -80,7 +78,6 @@ class ViewPoint3D(AnyObject):
     def focus_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property FocusDistance() As double
@@ -112,7 +109,6 @@ class ViewPoint3D(AnyObject):
     def projection_mode(self) -> CatProjectionMode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ProjectionMode() As CatProjectionMode
@@ -141,7 +137,6 @@ class ViewPoint3D(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Zoom() As double
@@ -176,7 +171,6 @@ class ViewPoint3D(AnyObject):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetOrigin(CATSafeArrayVariant origin)
@@ -213,7 +207,6 @@ class ViewPoint3D(AnyObject):
     def get_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetSightDirection(CATSafeArrayVariant oSight)
@@ -236,7 +229,6 @@ class ViewPoint3D(AnyObject):
     def get_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetUpDirection(CATSafeArrayVariant oUp)
@@ -257,7 +249,6 @@ class ViewPoint3D(AnyObject):
     def put_origin(self, origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutOrigin(CATSafeArrayVariant origin)
@@ -294,7 +285,6 @@ class ViewPoint3D(AnyObject):
     def put_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutSightDirection(CATSafeArrayVariant oSight)
@@ -333,7 +323,6 @@ class ViewPoint3D(AnyObject):
     def put_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutUpDirection(CATSafeArrayVariant oUp)

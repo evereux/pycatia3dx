@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimFrequencyConstraint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -81,7 +80,6 @@ class SimFrequencyConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -95,7 +93,6 @@ class SimFrequencyConstraint(AnyObject):
     def get_maximum_frequency(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaximumFrequency() As CATSafeArrayVariant
@@ -113,7 +110,6 @@ class SimFrequencyConstraint(AnyObject):
     def get_minimum_frequency(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMinimumFrequency() As CATSafeArrayVariant
@@ -131,7 +127,6 @@ class SimFrequencyConstraint(AnyObject):
     def get_number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfModes() As long
@@ -149,7 +144,6 @@ class SimFrequencyConstraint(AnyObject):
     def set_maximum_frequency(self, i_val: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetMaximumFrequency(CATSafeArrayVariant iVal)
@@ -184,7 +178,6 @@ class SimFrequencyConstraint(AnyObject):
     def set_minimum_frequency(self, i_val: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetMinimumFrequency(CATSafeArrayVariant iVal)
@@ -219,7 +212,6 @@ class SimFrequencyConstraint(AnyObject):
     def set_number_of_modes(self, o_numberof_modes: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNumberOfModes(long oNumberofModes)

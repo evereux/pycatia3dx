@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimOutput(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimOutput(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimOutput(AnyObject):
     def exact_time_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExactTimeFlag() As boolean
@@ -127,7 +123,6 @@ class SimOutput(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -142,7 +137,6 @@ class SimOutput(AnyObject):
     def frequency_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyIncrements() As long
@@ -165,7 +159,6 @@ class SimOutput(AnyObject):
     def frequency_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyType() As SimOutputFrequencyType
@@ -188,7 +181,6 @@ class SimOutput(AnyObject):
     def list_of_output_variables(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListOfOutputVariables() As CATSafeArrayVariant (Read
@@ -204,7 +196,6 @@ class SimOutput(AnyObject):
     def location(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Location() As SimOutputElementLocation
@@ -227,7 +218,6 @@ class SimOutput(AnyObject):
     def number_interval(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberInterval() As long
@@ -250,7 +240,6 @@ class SimOutput(AnyObject):
     def output_group(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OutputGroup() As SimOutputOutputGroup (Read Only)
@@ -266,7 +255,6 @@ class SimOutput(AnyObject):
     def section_point_selection_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SectionPointSelectionType() As
@@ -290,7 +278,6 @@ class SimOutput(AnyObject):
     def section_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SectionPoints() As CATSafeArrayVariant
@@ -313,7 +300,6 @@ class SimOutput(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -329,7 +315,6 @@ class SimOutput(AnyObject):
     def time_interval(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeInterval() As double
@@ -351,7 +336,6 @@ class SimOutput(AnyObject):
     def add_output_variable(self, i_variable_identifier: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddOutputVariable(CATBSTR iVariableIdentifier)
@@ -373,7 +357,6 @@ class SimOutput(AnyObject):
     def get_section_point_by_layer(self, o_top: bool, o_middle: bool, o_bottom: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionPointByLayer(boolean oTop,boolean oMiddle,boolean
@@ -398,7 +381,6 @@ class SimOutput(AnyObject):
     def remove_output_variable(self, i_variable_identifier: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveOutputVariable(CATBSTR iVariableIdentifier)
@@ -420,7 +402,6 @@ class SimOutput(AnyObject):
     def set_section_point_by_layer(self, i_top: bool, i_middle: bool, i_bottom: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionPointByLayer(boolean iTop,boolean iMiddle,boolean
@@ -443,4 +424,4 @@ class SimOutput(AnyObject):
         return self.com_object.SetSectionPointByLayer(i_top, i_middle, i_bottom)
 
     def __repr__(self):
-        return f'SimOutput(name="{ self.name }")'
+        return f'SimOutput(name="{self.name}")'

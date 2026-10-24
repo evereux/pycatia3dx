@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +58,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def automatic_correct(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AutomaticCorrect() As boolean
@@ -84,7 +82,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def check_edition(self) -> 'ExpertCheck':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CheckEdition() As ExpertCheck (Read Only)
@@ -110,7 +107,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def correct_function(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CorrectFunction() As CATBSTR
@@ -133,7 +129,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def correct_function_comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CorrectFunctionComment() As CATBSTR
@@ -156,7 +151,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def correct_function_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CorrectFunctionType() As long
@@ -189,7 +183,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def failures(self) -> ExpertReportObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Failures() As ExpertReportObjects (Read Only)
@@ -205,7 +198,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def help(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Help() As CATBSTR
@@ -228,7 +220,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def justification(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Justification() As CATBSTR
@@ -251,7 +242,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def priority(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Priority() As double
@@ -276,7 +266,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def succeeds(self) -> ExpertReportObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Succeeds() As ExpertReportObjects (Read Only)
@@ -291,7 +280,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def correct(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Correct()
@@ -304,7 +292,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def highlight(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Highlight()
@@ -317,7 +304,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
     def status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Status() As long

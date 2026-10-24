@@ -14,7 +14,6 @@ from pycatia3dx.interfaces.viewer_2d import Viewer2D
 class SpecsViewer(Viewer2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -45,7 +44,6 @@ class SpecsViewer(Viewer2D):
     def layout(self) -> CatSpecsLayout:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Layout() As CatSpecsLayout

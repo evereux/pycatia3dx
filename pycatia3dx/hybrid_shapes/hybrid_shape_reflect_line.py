@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeReflectLine(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -55,7 +53,6 @@ class HybridShapeReflectLine(HybridShape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Angle() As Angle
@@ -85,7 +82,6 @@ class HybridShapeReflectLine(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -116,7 +112,6 @@ class HybridShapeReflectLine(HybridShape):
     def orientation_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OrientationDirection() As long
@@ -145,7 +140,6 @@ class HybridShapeReflectLine(HybridShape):
     def orientation_support(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OrientationSupport() As long
@@ -174,7 +168,6 @@ class HybridShapeReflectLine(HybridShape):
     def origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Origin() As Reference
@@ -206,7 +199,6 @@ class HybridShapeReflectLine(HybridShape):
     def source_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SourceType() As long
@@ -235,7 +227,6 @@ class HybridShapeReflectLine(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -267,7 +258,6 @@ class HybridShapeReflectLine(HybridShape):
     def type_solution(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TypeSolution() As long
@@ -296,7 +286,6 @@ class HybridShapeReflectLine(HybridShape):
     def invert_orientation_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertOrientationDirection()
@@ -313,7 +302,6 @@ class HybridShapeReflectLine(HybridShape):
     def invert_orientation_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertOrientationSupport()
@@ -328,4 +316,4 @@ class HybridShapeReflectLine(HybridShape):
         return self.com_object.InvertOrientationSupport()
 
     def __repr__(self):
-        return f'HybridShapeReflectLine(name="{ self.name }")'
+        return f'HybridShapeReflectLine(name="{self.name}")'

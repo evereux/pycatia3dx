@@ -13,10 +13,8 @@ from pycatia3dx.types.general import Variant
 
 
 class SpotWeldProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class SpotWeldProfile(AnyObject):
     def approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachDirection(DELSpotProfileApproachDir
@@ -84,7 +81,6 @@ class SpotWeldProfile(AnyObject):
     def controller_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ControllerName() As CATBSTR (Read Only)
@@ -114,7 +110,6 @@ class SpotWeldProfile(AnyObject):
     def part_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartThickness(double iThickness)
@@ -153,7 +148,6 @@ class SpotWeldProfile(AnyObject):
     def pressure_move_push_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PressureMovePushDepth(double iPushDepth)
@@ -192,7 +186,6 @@ class SpotWeldProfile(AnyObject):
     def pressure_speed_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PressureSpeedFactor(double iSpeedFactor)
@@ -231,7 +224,6 @@ class SpotWeldProfile(AnyObject):
     def spot_moves(self) -> Variant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpotMoves(CATSafeArrayVariant iSpotMoves)
@@ -275,7 +267,6 @@ class SpotWeldProfile(AnyObject):
     def weld_delay(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeldDelay(double iWeldDelay)
@@ -314,7 +305,6 @@ class SpotWeldProfile(AnyObject):
     def weld_pressure_stabilization_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeldPressureStabilizationTime(double
@@ -354,7 +344,6 @@ class SpotWeldProfile(AnyObject):
     def weld_time_table(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeldTimeTable(AnyObject ispWeldTimeTable)
@@ -392,7 +381,6 @@ class SpotWeldProfile(AnyObject):
     def get_accuracy_profile(self, i_accuracy_profile_spot_moves: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAccuracyProfile(DELSpotAccuracyProfileAndAccelerationMoves
@@ -427,7 +415,6 @@ class SpotWeldProfile(AnyObject):
     def get_backup_move_stroke(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBackupMoveStroke(short iGunNumber) As double
@@ -459,7 +446,6 @@ class SpotWeldProfile(AnyObject):
     def get_closed_joint_value(self, i_gun_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetClosedJointValue(short iGunNumber) As double
@@ -491,7 +477,6 @@ class SpotWeldProfile(AnyObject):
     def get_gun_status(self, i_gun_number: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunStatus(short iGunNumber) As boolean
@@ -525,7 +510,6 @@ class SpotWeldProfile(AnyObject):
     def get_gun_tip_close_direction(self, i_gun_number: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunTipCloseDirection(short iGunNumber) As boolean
@@ -556,7 +540,6 @@ class SpotWeldProfile(AnyObject):
     def get_joint_number(self, i_gun_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointNumber(short iGunNumber) As short
@@ -589,7 +572,6 @@ class SpotWeldProfile(AnyObject):
     def get_move_acceleration(self, i_accuracy_profile_spot_moves: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMoveAcceleration(DELSpotAccuracyProfileAndAccelerationMoves
@@ -623,7 +605,6 @@ class SpotWeldProfile(AnyObject):
     def get_moving_tip_clearance(self, i_gun_number: int, i_moving_tip_spot_moves: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMovingTipClearance(short iGunNumber,DELSpotMovingTipClearanceMoves
@@ -660,7 +641,6 @@ class SpotWeldProfile(AnyObject):
     def get_stationary_tip_clearance(self, i_stationary_tip_spot_moves: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStationaryTipClearance(DELSpotStationaryTipClearanceMoves
@@ -694,7 +674,6 @@ class SpotWeldProfile(AnyObject):
     def set_accuracy_profile(self, i_accuracy_profile_spot_moves: int, isp_acc_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyProfile(DELSpotAccuracyProfileAndAccelerationMoves
@@ -730,7 +709,6 @@ class SpotWeldProfile(AnyObject):
     def set_backup_move_stroke(self, i_gun_number: int, i_backup_move_stroke: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBackupMoveStroke(short iGunNumber,double
@@ -764,7 +742,6 @@ class SpotWeldProfile(AnyObject):
     def set_closed_joint_value(self, i_gun_number: int, i_joint_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetClosedJointValue(short iGunNumber,double iJointValue)
@@ -798,7 +775,6 @@ class SpotWeldProfile(AnyObject):
     def set_gun_status(self, i_gun_number: int, i_gun_status: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunStatus(short iGunNumber,boolean iGunStatus)
@@ -833,7 +809,6 @@ class SpotWeldProfile(AnyObject):
     def set_gun_tip_close_direction(self, i_gun_number: int, i_direction: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunTipCloseDirection(short iGunNumber,boolean
@@ -867,7 +842,6 @@ class SpotWeldProfile(AnyObject):
     def set_joint_number(self, i_gun_number: int, i_joint_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointNumber(short iGunNumber,short iJointNum)
@@ -901,7 +875,6 @@ class SpotWeldProfile(AnyObject):
     def set_move_acceleration(self, i_accuracy_profile_spot_moves: int, i_acceleration: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMoveAcceleration(DELSpotAccuracyProfileAndAccelerationMoves
@@ -933,10 +906,10 @@ class SpotWeldProfile(AnyObject):
         """
         return self.com_object.SetMoveAcceleration(i_accuracy_profile_spot_moves, i_acceleration)
 
-    def set_moving_tip_clearance(self, i_gun_number: int, i_moving_tip_spot_moves: int, i_moving_tip_clearance: float) -> None:
+    def set_moving_tip_clearance(self, i_gun_number: int, i_moving_tip_spot_moves: int,
+                                 i_moving_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovingTipClearance(short iGunNumber,DELSpotMovingTipClearanceMoves
@@ -975,7 +948,6 @@ class SpotWeldProfile(AnyObject):
     def set_stationary_tip_clearance(self, i_stationary_tip_spot_moves: int, i_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStationaryTipClearance(DELSpotStationaryTipClearanceMoves
@@ -1010,4 +982,4 @@ class SpotWeldProfile(AnyObject):
         return self.com_object.SetStationaryTipClearance(i_stationary_tip_spot_moves, i_tip_clearance)
 
     def __repr__(self):
-        return f'SpotWeldProfile(name="{ self.name }")'
+        return f'SpotWeldProfile(name="{self.name}")'

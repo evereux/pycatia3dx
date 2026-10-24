@@ -13,10 +13,8 @@ from pycatia3dx.part.fillet import Fillet
 
 
 class EdgeFillet(Fillet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class EdgeFillet(Fillet):
     def edge_propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EdgePropagation() As CatFilletEdgePropagation
@@ -80,7 +77,6 @@ class EdgeFillet(Fillet):
     def edges_to_keep(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EdgesToKeep() As References (Read Only)
@@ -101,7 +97,6 @@ class EdgeFillet(Fillet):
     def add_edge_to_keep(self, i_edge_to_keep: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddEdgeToKeep(Reference iEdgeToKeep)
@@ -129,7 +124,6 @@ class EdgeFillet(Fillet):
     def withdraw_edge_to_keep(self, i_edge_to_withdraw: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WithdrawEdgeToKeep(Reference iEdgeToWithdraw)
@@ -156,4 +150,4 @@ class EdgeFillet(Fillet):
         return self.com_object.WithdrawEdgeToKeep(i_edge_to_withdraw.com_object)
 
     def __repr__(self):
-        return f'EdgeFillet(name="{ self.name }")'
+        return f'EdgeFillet(name="{self.name}")'

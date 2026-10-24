@@ -15,10 +15,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class AutoFillet(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class AutoFillet(DressUpShape):
     def curvature_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurvatureRadius() As Length (Read Only)
@@ -65,7 +62,6 @@ class AutoFillet(DressUpShape):
     def faces_to_fillet(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FacesToFillet() As References (Read Only)
@@ -88,7 +84,6 @@ class AutoFillet(DressUpShape):
     def faces_to_fillets(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FacesToFillets(Reference iFace) (Write Only)
@@ -110,7 +105,6 @@ class AutoFillet(DressUpShape):
     def fillet_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilletRadius() As Length (Read Only)
@@ -131,7 +125,6 @@ class AutoFillet(DressUpShape):
     def functional_face(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FunctionalFace(Reference iFace) (Write Only)
@@ -153,7 +146,6 @@ class AutoFillet(DressUpShape):
     def functional_faces(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FunctionalFaces() As References (Read Only)
@@ -176,7 +168,6 @@ class AutoFillet(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartingElement() As Reference
@@ -207,7 +198,6 @@ class AutoFillet(DressUpShape):
     def round_radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RoundRadius() As Length (Read Only)
@@ -228,7 +218,6 @@ class AutoFillet(DressUpShape):
     def round_radius_activation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RoundRadiusActivation() As boolean
@@ -259,7 +248,6 @@ class AutoFillet(DressUpShape):
     def slivers_and_crack(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SliversAndCrack(Reference iSlivers) (Write Only)
@@ -281,7 +269,6 @@ class AutoFillet(DressUpShape):
     def slivers_and_cracks(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SliversAndCracks() As References (Read Only)
@@ -303,7 +290,6 @@ class AutoFillet(DressUpShape):
     def support_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportSurface() As Reference
@@ -331,4 +317,4 @@ class AutoFillet(DressUpShape):
         self.com_object.SupportSurface = value
 
     def __repr__(self):
-        return f'AutoFillet(name="{ self.name }")'
+        return f'AutoFillet(name="{self.name}")'

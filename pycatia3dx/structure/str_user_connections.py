@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class StrUserConnections(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class StrUserConnections(Collection):
     def add(self) -> StrUserConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As StrUserConnection
@@ -63,7 +61,6 @@ class StrUserConnections(Collection):
     def item(self, i_index: CATVariant) -> StrUserConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As StrUserConnection
@@ -100,7 +97,6 @@ class StrUserConnections(Collection):
     def remove(self, i_user_connection: StrUserConnection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(StrUserConnection iUserConnection)

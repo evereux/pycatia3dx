@@ -13,7 +13,6 @@ from pycatia3dx.measure.measurable_surface import MeasurableSurface
 class MeasurableSphere(MeasurableSurface):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class MeasurableSphere(MeasurableSurface):
     def get_center(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
@@ -67,7 +65,6 @@ class MeasurableSphere(MeasurableSurface):
     def get_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double

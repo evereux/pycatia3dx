@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_profile import OLPProfile
 
 
 class OLPPaintProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +48,6 @@ class OLPPaintProfile(OLPProfile):
     def get_air_pressure(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAirPressure(OlpGun iGun) As double
@@ -72,7 +69,6 @@ class OLPPaintProfile(OLPProfile):
     def get_air_volume(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAirVolume(OlpGun iGun) As double
@@ -95,7 +91,6 @@ class OLPPaintProfile(OLPProfile):
     def get_enabled_guns(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEnabledGuns() As CATSafeArrayVariant
@@ -113,7 +108,6 @@ class OLPPaintProfile(OLPProfile):
     def get_flow_rate(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlowRate(OlpGun iGun) As double
@@ -135,7 +129,6 @@ class OLPPaintProfile(OLPProfile):
     def get_gun_enabled(self, i_gun: OLPGun) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunEnabled(OlpGun iGun) As boolean
@@ -157,7 +150,6 @@ class OLPPaintProfile(OLPProfile):
     def get_param_index(self, i_gun: OLPGun) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParamIndex(OlpGun iGun) As long
@@ -180,7 +172,6 @@ class OLPPaintProfile(OLPProfile):
     def get_param_index_set(self, i_gun: OLPGun) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParamIndexSet(OlpGun iGun) As boolean
@@ -203,7 +194,6 @@ class OLPPaintProfile(OLPProfile):
     def get_percent_solids(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPercentSolids(OlpGun iGun) As double
@@ -225,7 +215,6 @@ class OLPPaintProfile(OLPProfile):
     def get_rotation_speed(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRotationSpeed(OlpGun iGun) As double
@@ -247,7 +236,6 @@ class OLPPaintProfile(OLPProfile):
     def get_transfer_efficiency(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTransferEfficiency(OlpGun iGun) As double
@@ -269,7 +257,6 @@ class OLPPaintProfile(OLPProfile):
     def get_voltage(self, i_gun: OLPGun) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVoltage(OlpGun iGun) As double
@@ -291,7 +278,6 @@ class OLPPaintProfile(OLPProfile):
     def set_air_pressure(self, i_gun: OLPGun, i_air_pressure: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAirPressure(OlpGun iGun,double iAirPressure,boolean
@@ -317,7 +303,6 @@ class OLPPaintProfile(OLPProfile):
     def set_air_volume(self, i_gun: OLPGun, i_air_volume: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAirVolume(OlpGun iGun,double iAirVolume,boolean iMatch)
@@ -343,7 +328,6 @@ class OLPPaintProfile(OLPProfile):
     def set_flow_rate(self, i_gun: OLPGun, i_flow_rate: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFlowRate(OlpGun iGun,double iFlowRate,boolean iMatch)
@@ -368,7 +352,6 @@ class OLPPaintProfile(OLPProfile):
     def set_gun_enabled(self, i_gun: OLPGun, i_enabled: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGunEnabled(OlpGun iGun,boolean iEnabled)
@@ -391,7 +374,6 @@ class OLPPaintProfile(OLPProfile):
     def set_param_index(self, i_gun: OLPGun, i_index: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParamIndex(OlpGun iGun,long iIndex,boolean iMatch)
@@ -416,7 +398,6 @@ class OLPPaintProfile(OLPProfile):
     def set_percent_solids(self, i_gun: OLPGun, i_percent_solids: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPercentSolids(OlpGun iGun,double iPercentSolids,boolean
@@ -442,7 +423,6 @@ class OLPPaintProfile(OLPProfile):
     def set_rotation_speed(self, i_gun: OLPGun, i_rotation_speed: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRotationSpeed(OlpGun iGun,double iRotationSpeed,boolean
@@ -468,7 +448,6 @@ class OLPPaintProfile(OLPProfile):
     def set_transfer_efficiency(self, i_gun: OLPGun, i_transfer_efficiency: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransferEfficiency(OlpGun iGun,double iTransferEfficiency,boolean
@@ -494,7 +473,6 @@ class OLPPaintProfile(OLPProfile):
     def set_voltage(self, i_gun: OLPGun, i_voltage: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVoltage(OlpGun iGun,double iVoltage,boolean iMatch)
@@ -517,4 +495,4 @@ class OLPPaintProfile(OLPProfile):
         return self.com_object.SetVoltage(i_gun.com_object, i_voltage, i_match)
 
     def __repr__(self):
-        return f'OLPPaintProfile(name="{ self.name }")'
+        return f'OLPPaintProfile(name="{self.name}")'

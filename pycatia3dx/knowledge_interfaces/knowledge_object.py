@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class KnowledgeObject(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +37,6 @@ class KnowledgeObject(AnyObject):
     def hidden(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Hidden() As boolean
@@ -63,7 +60,6 @@ class KnowledgeObject(AnyObject):
     def is_const(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property IsConst() As boolean
@@ -84,4 +80,4 @@ class KnowledgeObject(AnyObject):
         self.com_object.IsConst = value
 
     def __repr__(self):
-        return f'KnowledgeObject(name="{ self.name }")'
+        return f'KnowledgeObject(name="{self.name}")'

@@ -15,10 +15,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DraftDomain(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class DraftDomain(AnyObject):
     def draft_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DraftAngle() As Angle (Read Only)
@@ -65,7 +62,6 @@ class DraftDomain(AnyObject):
     def faces_to_draft(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FacesToDraft() As References (Read Only)
@@ -87,7 +83,6 @@ class DraftDomain(AnyObject):
     def multiselection_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MultiselectionMode() As CatDraftMultiselectionMode
@@ -125,7 +120,6 @@ class DraftDomain(AnyObject):
     def neutral_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeutralElement() As Reference
@@ -158,7 +152,6 @@ class DraftDomain(AnyObject):
     def neutral_propagation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeutralPropagationMode() As
@@ -192,7 +185,6 @@ class DraftDomain(AnyObject):
     def pulling_direction_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PullingDirectionElement() As Reference
@@ -224,7 +216,6 @@ class DraftDomain(AnyObject):
     def add_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFaceToDraft(Reference iFace)
@@ -251,7 +242,6 @@ class DraftDomain(AnyObject):
     def get_pulling_direction(self, io_pulling_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPullingDirection(CATSafeArrayVariant
@@ -280,7 +270,6 @@ class DraftDomain(AnyObject):
     def remove_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveFaceToDraft(Reference iFace)
@@ -306,7 +295,6 @@ class DraftDomain(AnyObject):
     def set_pulling_direction(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPullingDirection(double iX,double iY,double iZ)
@@ -335,7 +323,6 @@ class DraftDomain(AnyObject):
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVolumeSupport(Reference iVolumeSupport)
@@ -351,4 +338,4 @@ class DraftDomain(AnyObject):
         return self.com_object.SetVolumeSupport(i_volume_support.com_object)
 
     def __repr__(self):
-        return f'DraftDomain(name="{ self.name }")'
+        return f'DraftDomain(name="{self.name}")'

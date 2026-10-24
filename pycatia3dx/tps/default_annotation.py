@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DefaultAnnotation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class DefaultAnnotation(AnyObject):
     def link_wi_geom_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinkWiGeomType() As CATBSTR (Read Only)
@@ -61,7 +58,6 @@ class DefaultAnnotation(AnyObject):
     def search_algo_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SearchAlgoType() As CATBSTR (Read Only)
@@ -81,7 +77,6 @@ class DefaultAnnotation(AnyObject):
     def is_in_automatic_search_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsInAutomaticSearchMode() As boolean
@@ -98,4 +93,4 @@ class DefaultAnnotation(AnyObject):
         return self.com_object.IsInAutomaticSearchMode()
 
     def __repr__(self):
-        return f'DefaultAnnotation(name="{ self.name }")'
+        return f'DefaultAnnotation(name="{self.name}")'

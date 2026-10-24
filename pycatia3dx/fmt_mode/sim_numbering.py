@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimNumbering(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SimNumbering(AnyObject):
     def get_attribute_value(self, i_attribute: str, o_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttributeValue(CATBSTR iAttribute,long oValue)
@@ -58,7 +56,6 @@ class SimNumbering(AnyObject):
     def initialize_numbering_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitializeNumberingValues()
@@ -71,7 +68,6 @@ class SimNumbering(AnyObject):
     def set_attribute_value(self, i_attribute: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iAttribute,long iValue)

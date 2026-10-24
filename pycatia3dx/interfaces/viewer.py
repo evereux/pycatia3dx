@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Viewer(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class Viewer(AnyObject):
     def full_screen(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property FullScreen() As boolean
@@ -71,7 +69,6 @@ class Viewer(AnyObject):
     def height(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Height() As long (Read Only)
@@ -92,7 +89,6 @@ class Viewer(AnyObject):
     def width(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Width() As long (Read Only)
@@ -112,7 +108,6 @@ class Viewer(AnyObject):
     def abort_all_animations(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub AbortAllAnimations()
@@ -132,7 +127,6 @@ class Viewer(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Activate()
@@ -151,7 +145,6 @@ class Viewer(AnyObject):
     def capture_to_file(self, i_format: CatCaptureFormat, i_file: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub CaptureToFile(CatCaptureFormat iFormat,CATBSTR iFile)
@@ -183,7 +176,6 @@ class Viewer(AnyObject):
     def get_background_color(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetBackgroundColor(CATSafeArrayVariant color)
@@ -221,7 +213,6 @@ class Viewer(AnyObject):
     def new_camera(self) -> Camera:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func NewCamera() As Camera
@@ -241,7 +232,6 @@ class Viewer(AnyObject):
     def put_background_color(self, color: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutBackgroundColor(CATSafeArrayVariant color)
@@ -280,7 +270,6 @@ class Viewer(AnyObject):
     def reframe(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Reframe()
@@ -302,7 +291,6 @@ class Viewer(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Update()
@@ -323,7 +311,6 @@ class Viewer(AnyObject):
     def zoom_in(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ZoomIn()
@@ -342,7 +329,6 @@ class Viewer(AnyObject):
     def zoom_out(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ZoomOut()

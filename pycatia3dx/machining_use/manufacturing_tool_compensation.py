@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingToolCompensation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,10 +35,10 @@ class ManufacturingToolCompensation(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add_corrector(self, i_point: str, i_number: int, i_length_number: int, i_radius_number: int, i_diameter: float, i_unit: int) -> None:
+    def add_corrector(self, i_point: str, i_number: int, i_length_number: int, i_radius_number: int, i_diameter: float,
+                      i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddCorrector(CATBSTR iPoint,long iNumber,long iLengthNumber,long
@@ -60,7 +58,6 @@ class ManufacturingToolCompensation(AnyObject):
     def add_corrector_object(self, i_corrector: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddCorrectorObject(AnyObject iCorrector)
@@ -80,7 +77,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_corrector_from_corrector_number(self, i_number: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCorrectorFromCorrectorNumber(long iNumber) As
@@ -102,7 +98,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_correctors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCorrectors() As CATSafeArrayVariant
@@ -121,7 +116,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_diameter_value_from_corrector_number(self, i_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDiameterValueFromCorrectorNumber(long iNumber) As
@@ -144,7 +138,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_distance_from_corrector_number(self, i_number: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDistanceFromCorrectorNumber(long iNumber) As double
@@ -166,7 +159,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_length_number_from_corrector_number(self, i_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLengthNumberFromCorrectorNumber(long iNumber) As long
@@ -188,7 +180,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_point_from_corrector_number(self, i_number: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPointFromCorrectorNumber(long iNumber) As CATBSTR
@@ -210,7 +201,6 @@ class ManufacturingToolCompensation(AnyObject):
     def get_radius_number_from_corrector_number(self, i_number: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadiusNumberFromCorrectorNumber(long iNumber) As long
@@ -232,7 +222,6 @@ class ManufacturingToolCompensation(AnyObject):
     def remove_corrector(self, i_corrector: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveCorrector(AnyObject iCorrector)
@@ -252,7 +241,6 @@ class ManufacturingToolCompensation(AnyObject):
     def remove_correctors(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveCorrectors()
@@ -266,7 +254,6 @@ class ManufacturingToolCompensation(AnyObject):
     def set_default_corrector(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDefaultCorrector()
@@ -277,4 +264,4 @@ class ManufacturingToolCompensation(AnyObject):
         return self.com_object.SetDefaultCorrector()
 
     def __repr__(self):
-        return f'ManufacturingToolCompensation(name="{ self.name }")'
+        return f'ManufacturingToolCompensation(name="{self.name}")'

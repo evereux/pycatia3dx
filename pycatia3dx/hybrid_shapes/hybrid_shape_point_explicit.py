@@ -12,10 +12,8 @@ from pycatia3dx.hybrid_shapes.point import Point
 
 
 class HybridShapePointExplicit(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -41,4 +39,4 @@ class HybridShapePointExplicit(Point):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapePointExplicit(name="{ self.name }")'
+        return f'HybridShapePointExplicit(name="{self.name}")'

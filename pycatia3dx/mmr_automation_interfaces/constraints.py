@@ -19,7 +19,6 @@ from pycatia3dx.types.general import CATVariant
 class Constraints(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -49,7 +48,6 @@ class Constraints(Collection):
     def broken_constraints_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property BrokenConstraintsCount() As long (Read Only)
@@ -72,7 +70,6 @@ class Constraints(Collection):
     def un_updated_constraints_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property UnUpdatedConstraintsCount() As long (Read Only)
@@ -94,7 +91,6 @@ class Constraints(Collection):
     def add_bi_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference) -> Constraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func AddBiEltCst(CatConstraintType iCstType,Reference iFirstElem,Reference
@@ -132,7 +128,6 @@ class Constraints(Collection):
     def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func AddMonoEltCst(CatConstraintType iCstType,Reference iElem) As
@@ -167,7 +162,6 @@ class Constraints(Collection):
                         i_third_elem: Reference) -> Constraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func AddTriEltCst(CatConstraintType iCstType,Reference iFirstElem,Reference
@@ -211,7 +205,6 @@ class Constraints(Collection):
     def item(self, i_index: CATVariant) -> Constraint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Constraint
@@ -245,7 +238,6 @@ class Constraints(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Remove(CATVariant iIndex)

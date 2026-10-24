@@ -17,7 +17,6 @@ from pycatia3dx.part.pattern import Pattern
 class RectPattern(Pattern):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +47,6 @@ class RectPattern(Pattern):
     def first_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstDirectionRepartition() As LinearRepartition (Read
@@ -70,7 +68,6 @@ class RectPattern(Pattern):
     def first_direction_row(self) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstDirectionRow() As IntParam (Read Only)
@@ -93,7 +90,6 @@ class RectPattern(Pattern):
     def first_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstOrientation() As boolean
@@ -127,7 +123,6 @@ class RectPattern(Pattern):
     def first_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstRectangularPatternParameters() As
@@ -162,7 +157,6 @@ class RectPattern(Pattern):
     def second_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondDirectionRepartition() As LinearRepartition (Read
@@ -184,7 +178,6 @@ class RectPattern(Pattern):
     def second_direction_row(self) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondDirectionRow() As IntParam (Read Only)
@@ -207,7 +200,6 @@ class RectPattern(Pattern):
     def second_orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondOrientation() As boolean
@@ -242,7 +234,6 @@ class RectPattern(Pattern):
     def second_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondRectangularPatternParameters() As
@@ -276,7 +267,6 @@ class RectPattern(Pattern):
     def get_first_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetFirstDirection(CATSafeArrayVariant ioFirstDirection)
@@ -321,7 +311,6 @@ class RectPattern(Pattern):
     def get_second_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSecondDirection(CATSafeArrayVariant ioSecondDirection)
@@ -365,7 +354,6 @@ class RectPattern(Pattern):
     def set_first_direction(self, i_first_direction: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFirstDirection(Reference iFirstDirection)
@@ -396,7 +384,6 @@ class RectPattern(Pattern):
     def set_instance_spacing(self, i_instance_number: int, i_spacing: float, i_direction: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstanceSpacing(long iInstanceNumber,double iSpacing,long
@@ -426,7 +413,6 @@ class RectPattern(Pattern):
     def set_second_direction(self, i_second_direction: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSecondDirection(Reference iSecondDirection)
@@ -457,7 +443,6 @@ class RectPattern(Pattern):
     def set_unequal_instance_number(self, i_instance_number: int, i_direction: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUnequalInstanceNumber(long iInstanceNumber,long

@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSymmetry(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeSymmetry(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CreationMode() As boolean
@@ -91,7 +88,6 @@ class HybridShapeSymmetry(HybridShape):
     def elem_to_symmetry(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToSymmetry() As Reference
@@ -121,7 +117,6 @@ class HybridShapeSymmetry(HybridShape):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Reference() As Reference
@@ -154,7 +149,6 @@ class HybridShapeSymmetry(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -185,4 +179,4 @@ class HybridShapeSymmetry(HybridShape):
         self.com_object.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeSymmetry(name="{ self.name }")'
+        return f'HybridShapeSymmetry(name="{self.name}")'

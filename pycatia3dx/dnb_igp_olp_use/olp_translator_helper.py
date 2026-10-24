@@ -23,10 +23,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPTranslatorHelper(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class OLPTranslatorHelper(Service):
     def ast_root(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AstRoot() As OlpAstBranch (Read Only)
@@ -99,7 +96,6 @@ class OLPTranslatorHelper(Service):
     def behavior(self) -> OLPBehavior:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Behavior() As OlpBehavior (Read Only)
@@ -115,7 +111,6 @@ class OLPTranslatorHelper(Service):
     def caa_motion_types(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CAAMotionTypes(CATSafeArrayVariant iInstructionTypes) (Write
@@ -143,7 +138,6 @@ class OLPTranslatorHelper(Service):
     def cat_nls_file_name(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CATNlsFileName(CATBSTR iName) (Write Only)
@@ -168,7 +162,6 @@ class OLPTranslatorHelper(Service):
     def call_succeeded(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CallSucceeded(boolean iSucceeded) (Write Only)
@@ -194,7 +187,6 @@ class OLPTranslatorHelper(Service):
     def debug_macro_call_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DebugMacroCallString() As CATBSTR (Read Only)
@@ -219,7 +211,6 @@ class OLPTranslatorHelper(Service):
     def directory(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Directory() As CATBSTR (Read Only)
@@ -235,7 +226,6 @@ class OLPTranslatorHelper(Service):
     def download_directory(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DownloadDirectory() As CATBSTR
@@ -263,7 +253,6 @@ class OLPTranslatorHelper(Service):
     def download_option(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DownloadOption() As CATBSTR (Read Only)
@@ -284,7 +273,6 @@ class OLPTranslatorHelper(Service):
     def error_reporter(self) -> OLPErrorReporter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ErrorReporter() As OlpErrorReporter (Read Only)
@@ -301,7 +289,6 @@ class OLPTranslatorHelper(Service):
     def extension_description(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExtensionDescription(CATBSTR iDesciption) (Write
@@ -328,7 +315,6 @@ class OLPTranslatorHelper(Service):
     def file_paths(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilePaths() As CATSafeArrayVariant (Read Only)
@@ -345,7 +331,6 @@ class OLPTranslatorHelper(Service):
     def include_waypont_operations_in_list(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IncludeWaypontOperationsInList(boolean iInclude) (Write
@@ -372,7 +357,6 @@ class OLPTranslatorHelper(Service):
     def motion_groups(self) -> OLPMotionGroups:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As OlpMotionGroups (Read Only)
@@ -388,7 +372,6 @@ class OLPTranslatorHelper(Service):
     def olp_version_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OLPVersionString() As CATBSTR (Read Only)
@@ -408,7 +391,6 @@ class OLPTranslatorHelper(Service):
     def position_variable_robot_language_length_units(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionVariableRobotLanguageLengthUnits(CATBSTR iUnits) (Write
@@ -450,7 +432,6 @@ class OLPTranslatorHelper(Service):
     def position_variable_robot_language_rotation_units(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionVariableRobotLanguageRotationUnits(CATBSTR iUnits) (Write
@@ -492,7 +473,6 @@ class OLPTranslatorHelper(Service):
     def resource_control_device(self) -> OLPResourceControlDevice:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResourceControlDevice() As OlpResourceControlDevice (Read
@@ -509,7 +489,6 @@ class OLPTranslatorHelper(Service):
     def simulation_options(self) -> OLPSimulationOptions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SimulationOptions() As OlpSimulationOptions (Read
@@ -526,7 +505,6 @@ class OLPTranslatorHelper(Service):
     def supported_extensions(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportedExtensions(CATBSTR iExtensions) (Write Only)
@@ -552,7 +530,6 @@ class OLPTranslatorHelper(Service):
     def supported_motion_types(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportedMotionTypes(CATSafeArrayVariant iInstructionTypes) (Write
@@ -579,7 +556,6 @@ class OLPTranslatorHelper(Service):
     def supports_mulitiple_motion_groups(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportsMulitpleMotionGroups(boolean iSupportsMMG) (Write
@@ -606,7 +582,6 @@ class OLPTranslatorHelper(Service):
     def supports_multiple_robots(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportsMultipleRobots(boolean iSupportsMultiRobot) (Write
@@ -633,7 +608,6 @@ class OLPTranslatorHelper(Service):
     def supports_templates(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportsTemplates(boolean iUseTemplates) (Write Only)
@@ -657,7 +631,6 @@ class OLPTranslatorHelper(Service):
     def tasks(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Tasks() As CATSafeArrayVariant (Read Only)
@@ -675,7 +648,6 @@ class OLPTranslatorHelper(Service):
     def tasks_to_upload(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TasksToUpload() As CATSafeArrayVariant (Read Only)
@@ -692,7 +664,6 @@ class OLPTranslatorHelper(Service):
     def template_directory(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemplateDirectory() As CATBSTR (Read Only)
@@ -709,7 +680,6 @@ class OLPTranslatorHelper(Service):
     def trig_function_robot_language_rotation_units(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TrigFunctionRobotLanguageRotationUnits(CATBSTR iUnits) (Write
@@ -750,7 +720,6 @@ class OLPTranslatorHelper(Service):
     def upload_application_option_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UploadApplicationOptionString() As CATBSTR (Read
@@ -770,7 +739,6 @@ class OLPTranslatorHelper(Service):
     def upload_application_options(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UploadApplicationOptions(CATSafeArrayVariant iOptions) (Write
@@ -797,7 +765,6 @@ class OLPTranslatorHelper(Service):
     def upload_option(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UploadOption() As CATBSTR (Read Only)
@@ -818,7 +785,6 @@ class OLPTranslatorHelper(Service):
     def upload_path_operation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UploadPathOperationType() As DELOlpInstructionType (Read
@@ -837,7 +803,6 @@ class OLPTranslatorHelper(Service):
     def valid_download_options(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValidDownloadOptions(CATSafeArrayVariant iOptions) (Write
@@ -862,7 +827,6 @@ class OLPTranslatorHelper(Service):
     def valid_upload_options(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValidUploadOptions(CATSafeArrayVariant iOptions) (Write
@@ -886,7 +850,6 @@ class OLPTranslatorHelper(Service):
     def add_supported_template(self, i_template_lib: str, i_template_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddSupportedTemplate(CATBSTR iTemplateLib,CATBSTR
@@ -909,7 +872,6 @@ class OLPTranslatorHelper(Service):
     def add_task_to_not_upload(self, i_task_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddTaskToNotUpload(CATBSTR iTaskName)
@@ -931,7 +893,6 @@ class OLPTranslatorHelper(Service):
     def add_task_to_upload(self, i_task_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddTaskToUpload(CATBSTR iTaskName)
@@ -953,7 +914,6 @@ class OLPTranslatorHelper(Service):
     def create_expr_fixer_download(self) -> OLPExpressionFixerDownload:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateExprFixerDownload() As OlpExpressionFixerDownload
@@ -969,7 +929,6 @@ class OLPTranslatorHelper(Service):
     def create_expr_fixer_upload(self) -> OLPExpressionFixerUpload:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateExprFixerUpload() As OlpExpressionFixerUpload
@@ -986,7 +945,6 @@ class OLPTranslatorHelper(Service):
     def create_id_fixer(self) -> OLPIdFixer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateIDFixer() As OlpIDFixer
@@ -1002,7 +960,6 @@ class OLPTranslatorHelper(Service):
     def create_parser(self, i_parser_name: str) -> OLPParser:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateParser(CATBSTR iParserName) As OlpParser
@@ -1032,7 +989,6 @@ class OLPTranslatorHelper(Service):
     def create_transform(self) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTransform() As OlpTransform
@@ -1048,7 +1004,6 @@ class OLPTranslatorHelper(Service):
     def get_feature_enabled(self, i_feature_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFeatureEnabled(CATBSTR iFeatureName) As boolean
@@ -1086,7 +1041,6 @@ class OLPTranslatorHelper(Service):
     def get_rrsii_context(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRRSIIContext() As CATBSTR
@@ -1104,7 +1058,6 @@ class OLPTranslatorHelper(Service):
     def get_rrs_virtual_robot_directory(self, i_share_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRRSVirtualRobotDirectory(CATBSTR iShareName) As
@@ -1121,7 +1074,6 @@ class OLPTranslatorHelper(Service):
     def is_same(self, i_obj1: AnyObject, i_obj2: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsSame(CATBaseDispatch iObj1,CATBaseDispatch iObj2) As
@@ -1152,7 +1104,6 @@ class OLPTranslatorHelper(Service):
     def set_supported_feature(self, i_feature_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSupportedFeature(CATBSTR iFeatureName)
@@ -1166,4 +1117,4 @@ class OLPTranslatorHelper(Service):
         return self.com_object.SetSupportedFeature(i_feature_name)
 
     def __repr__(self):
-        return f'OLPTranslatorHelper(name="{ self.name }")'
+        return f'OLPTranslatorHelper(name="{self.name}")'

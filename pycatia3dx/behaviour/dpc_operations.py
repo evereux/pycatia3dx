@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DPCOperations(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +55,6 @@ class DPCOperations(Collection):
     def item(self, i_index: CATVariant) -> DPCOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DPCOperation
@@ -91,7 +89,6 @@ class DPCOperations(Collection):
     def operate(self, operation_name: str) -> DPCOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Operate(CATBSTR OperationName) As DPCOperation

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimShearPanelSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimShearPanelSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -99,7 +96,6 @@ class SimShearPanelSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -122,7 +118,6 @@ class SimShearPanelSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -162,7 +157,6 @@ class SimShearPanelSection(AnyObject):
     def thickness_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessField() As SimScalarField (Read Only)
@@ -177,7 +171,6 @@ class SimShearPanelSection(AnyObject):
     def uniform_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThickness() As double
@@ -201,7 +194,6 @@ class SimShearPanelSection(AnyObject):
     def uniform_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThicknessFlag() As boolean (Read Only)
@@ -218,4 +210,4 @@ class SimShearPanelSection(AnyObject):
         return self.com_object.UniformThicknessFlag
 
     def __repr__(self):
-        return f'SimShearPanelSection(name="{ self.name }")'
+        return f'SimShearPanelSection(name="{self.name}")'

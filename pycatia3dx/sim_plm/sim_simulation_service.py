@@ -14,10 +14,8 @@ from pycatia3dx.sim_plm.simulation_reference import SimulationReference
 
 
 class SimSimulationService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class SimSimulationService(Service):
     def get_product_root_occurrence(self, ip_simulation_reference: SimulationReference) -> VPMRootOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProductRootOccurrence(SimulationReference ipSimulationReference) As
@@ -73,7 +70,6 @@ class SimSimulationService(Service):
     def get_simulation_reference_from_object(self, i_object: AnyObject) -> SimulationReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSimulationReferenceFromObject(AnyObject iObject) As
@@ -98,4 +94,4 @@ class SimSimulationService(Service):
         return SimulationReference(self.com_object.GetSimulationReferenceFromObject(i_object.com_object))
 
     def __repr__(self):
-        return f'SimSimulationService(name="{ self.name }")'
+        return f'SimSimulationService(name="{self.name}")'

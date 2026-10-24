@@ -16,7 +16,6 @@ from pycatia3dx.structure.sdd_product_stiffener_on_free_edge import SddProductSt
 class SddStiffenerMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SddStiffenerMngt(AnyObject):
     def add_stiffener(self) -> SddProductStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddStiffener() As SddProductStiffener
@@ -67,7 +65,6 @@ class SddStiffenerMngt(AnyObject):
     def add_stiffener_on_free_edge(self) -> SddProductStiffenerOnFreeEdge:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddStiffenerOnFreeEdge() As SddProductStiffenerOnFreeEdge

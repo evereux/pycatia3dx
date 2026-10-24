@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class GeometricElement(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -38,7 +36,6 @@ class GeometricElement(AnyObject):
     def geometric_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property GeometricType() As CatGeometricType (Read Only)
@@ -53,4 +50,4 @@ class GeometricElement(AnyObject):
         return self.com_object.GeometricType
 
     def __repr__(self):
-        return f'GeometricElement(name="{ self.name }")'
+        return f'GeometricElement(name="{self.name}")'

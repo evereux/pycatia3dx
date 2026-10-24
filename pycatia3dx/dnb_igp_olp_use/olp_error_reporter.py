@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_ast_node import OLPAstNode
 
 
 class OLPErrorReporter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPErrorReporter(AnyObject):
     def add_conditional_error(self, i_msg: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddConditionalError(CATBSTR iMsg)
@@ -62,10 +59,10 @@ class OLPErrorReporter(AnyObject):
         """
         return self.com_object.AddConditionalError(i_msg)
 
-    def add_message(self, i_type: int, i_msg: str, i_associated_v6_object: AnyObject, i_associated_ast_node: OLPAstNode) -> None:
+    def add_message(self, i_type: int, i_msg: str, i_associated_v6_object: AnyObject,
+                    i_associated_ast_node: OLPAstNode) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
@@ -93,12 +90,12 @@ class OLPErrorReporter(AnyObject):
         :param OLPAstNode i_associated_ast_node:
         :return: None
         """
-        return self.com_object.AddMessage(i_type, i_msg, i_associated_v6_object.com_object, i_associated_ast_node.com_object)
+        return self.com_object.AddMessage(i_type, i_msg, i_associated_v6_object.com_object,
+                                          i_associated_ast_node.com_object)
 
     def add_trace(self, i_level: int, i_msg: str, i_associated_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddTrace(DELOlpTraceLevel iLevel,CATBSTR iMsg,CATBaseDispatch
@@ -127,10 +124,10 @@ class OLPErrorReporter(AnyObject):
         """
         return self.com_object.AddTrace(i_level, i_msg, i_associated_object.com_object)
 
-    def add_unique_message(self, i_type: int, i_msg: str, i_associated_v6_object: AnyObject, i_associated_ast_node: OLPAstNode, i_id: str) -> None:
+    def add_unique_message(self, i_type: int, i_msg: str, i_associated_v6_object: AnyObject,
+                           i_associated_ast_node: OLPAstNode, i_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddUniqueMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
@@ -168,12 +165,12 @@ class OLPErrorReporter(AnyObject):
         :param str i_id:
         :return: None
         """
-        return self.com_object.AddUniqueMessage(i_type, i_msg, i_associated_v6_object.com_object, i_associated_ast_node.com_object, i_id)
+        return self.com_object.AddUniqueMessage(i_type, i_msg, i_associated_v6_object.com_object,
+                                                i_associated_ast_node.com_object, i_id)
 
     def override_message_severity(self, i_severity: int, i_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub OverrideMessageSeverity(DELOlpMessageType iSeverity,CATBSTR
@@ -201,4 +198,4 @@ class OLPErrorReporter(AnyObject):
         return self.com_object.OverrideMessageSeverity(i_severity, i_id)
 
     def __repr__(self):
-        return f'OLPErrorReporter(name="{ self.name }")'
+        return f'OLPErrorReporter(name="{self.name}")'

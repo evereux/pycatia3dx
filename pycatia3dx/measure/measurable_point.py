@@ -13,7 +13,6 @@ from pycatia3dx.measure.measurable_in_context import MeasurableInContext
 class MeasurablePoint(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class MeasurablePoint(MeasurableInContext):
     def get_point(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)

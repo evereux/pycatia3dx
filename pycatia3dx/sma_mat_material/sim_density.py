@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimDensity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimDensity(AnyObject):
     def core_material_density(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoreMaterialDensity() As double (Read Only)
@@ -92,7 +89,6 @@ class SimDensity(AnyObject):
     def core_material_density_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoreMaterialDensityFlag() As boolean
@@ -121,7 +117,6 @@ class SimDensity(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -135,7 +130,6 @@ class SimDensity(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimDensityMaterialTableColumn iMaterialTableColumn)
@@ -158,4 +152,4 @@ class SimDensity(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimDensity(name="{ self.name }")'
+        return f'SimDensity(name="{self.name}")'

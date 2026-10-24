@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStabilization(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimStabilization(AnyObject):
     def adaptive_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdaptiveFlag() As boolean
@@ -66,7 +63,6 @@ class SimStabilization(AnyObject):
     def damping_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingFactor() As double
@@ -90,7 +86,6 @@ class SimStabilization(AnyObject):
     def energy_fraction(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EnergyFraction() As double
@@ -114,7 +109,6 @@ class SimStabilization(AnyObject):
     def energy_ratio_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EnergyRatioTolerance() As double
@@ -138,7 +132,6 @@ class SimStabilization(AnyObject):
     def stabilization_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StabilizationType() As
@@ -159,4 +152,4 @@ class SimStabilization(AnyObject):
         self.com_object.StabilizationType = value
 
     def __repr__(self):
-        return f'SimStabilization(name="{ self.name }")'
+        return f'SimStabilization(name="{self.name}")'

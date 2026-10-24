@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeConnect(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapeConnect(HybridShape):
     def base_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BaseCurve() As Reference
@@ -73,7 +70,6 @@ class HybridShapeConnect(HybridShape):
     def connect_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ConnectType() As long
@@ -108,7 +104,6 @@ class HybridShapeConnect(HybridShape):
     def first_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstContinuity() As long
@@ -131,7 +126,6 @@ class HybridShapeConnect(HybridShape):
     def first_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstCurve() As Reference
@@ -154,7 +148,6 @@ class HybridShapeConnect(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstOrientation() As long
@@ -177,7 +170,6 @@ class HybridShapeConnect(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstPoint() As Reference
@@ -200,7 +192,6 @@ class HybridShapeConnect(HybridShape):
     def first_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstTension() As RealParam (Read Only)
@@ -226,7 +217,6 @@ class HybridShapeConnect(HybridShape):
     def second_continuity(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondContinuity() As long
@@ -249,7 +239,6 @@ class HybridShapeConnect(HybridShape):
     def second_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondCurve() As Reference
@@ -272,7 +261,6 @@ class HybridShapeConnect(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondOrientation() As long
@@ -295,7 +283,6 @@ class HybridShapeConnect(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondPoint() As Reference
@@ -318,7 +305,6 @@ class HybridShapeConnect(HybridShape):
     def second_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondTension() As RealParam (Read Only)
@@ -344,7 +330,6 @@ class HybridShapeConnect(HybridShape):
     def trim(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Trim() As boolean
@@ -364,4 +349,4 @@ class HybridShapeConnect(HybridShape):
         self.hybrid_shape_connect.Trim = value
 
     def __repr__(self):
-        return f'HybridShapeConnect(name="{ self.name }")'
+        return f'HybridShapeConnect(name="{self.name}")'

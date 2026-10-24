@@ -18,7 +18,6 @@ if TYPE_CHECKING:
 class DrawingLeader(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class DrawingLeader(AnyObject):
     def all_around(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllAround() As boolean
@@ -70,7 +68,6 @@ class DrawingLeader(AnyObject):
     def anchor_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorPoint() As long
@@ -99,7 +96,6 @@ class DrawingLeader(AnyObject):
     def anchor_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorSymbol() As long
@@ -122,7 +118,6 @@ class DrawingLeader(AnyObject):
     def head_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadSymbol() As CatSymbolType
@@ -151,7 +146,6 @@ class DrawingLeader(AnyObject):
     def head_target(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadTarget() As CATBaseDispatch
@@ -180,7 +174,6 @@ class DrawingLeader(AnyObject):
     def leaders(self) -> 'DrawingLeaders':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Leaders() As DrawingLeaders (Read Only)
@@ -203,7 +196,6 @@ class DrawingLeader(AnyObject):
     def nb_interruption(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbInterruption() As long (Read Only)
@@ -224,7 +216,6 @@ class DrawingLeader(AnyObject):
     def nb_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbPoint() As long (Read Only)
@@ -245,7 +236,6 @@ class DrawingLeader(AnyObject):
                          i_second_point_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
@@ -283,7 +273,6 @@ class DrawingLeader(AnyObject):
     def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(long iNum,double iX,double iY)
@@ -316,7 +305,6 @@ class DrawingLeader(AnyObject):
     def get_interruptions(self, o_interruptions: tuple) -> list:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
@@ -360,7 +348,6 @@ class DrawingLeader(AnyObject):
     def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(long iNum,double oX,double oY)
@@ -390,7 +377,6 @@ class DrawingLeader(AnyObject):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPoints(CATSafeArrayVariant oPoints) As long
@@ -432,7 +418,6 @@ class DrawingLeader(AnyObject):
     def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPoint(long iNum,double iX,double iY)
@@ -464,7 +449,6 @@ class DrawingLeader(AnyObject):
     def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterruption(long iNum)
@@ -491,7 +475,6 @@ class DrawingLeader(AnyObject):
     def remove_point(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(long iNum)

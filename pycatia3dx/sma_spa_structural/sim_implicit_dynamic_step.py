@@ -12,10 +12,8 @@ from pycatia3dx.sma_spa_structural.sim_analysis_restart_step_property import Sim
 
 
 class SimImplicitDynamicStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimImplicitDynamicStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimImplicitDynamicStep(SimStep):
     def application_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApplicationType() As SimApplicationType
@@ -122,7 +118,6 @@ class SimImplicitDynamicStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricNonLinearityFlag() As boolean
@@ -150,7 +145,6 @@ class SimImplicitDynamicStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialTimeIncrement() As double
@@ -174,7 +168,6 @@ class SimImplicitDynamicStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -198,7 +191,6 @@ class SimImplicitDynamicStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumIncrements() As long
@@ -222,7 +214,6 @@ class SimImplicitDynamicStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeIncrement() As double
@@ -246,7 +237,6 @@ class SimImplicitDynamicStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumTimeIncrement() As double
@@ -270,7 +260,6 @@ class SimImplicitDynamicStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
@@ -286,7 +275,6 @@ class SimImplicitDynamicStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StepTime() As double
@@ -306,4 +294,4 @@ class SimImplicitDynamicStep(SimStep):
         self.com_object.StepTime = value
 
     def __repr__(self):
-        return f'SimImplicitDynamicStep(name="{ self.name }")'
+        return f'SimImplicitDynamicStep(name="{self.name}")'

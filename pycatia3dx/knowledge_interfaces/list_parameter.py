@@ -13,10 +13,8 @@ from pycatia3dx.knowledge_interfaces.parameter import Parameter
 
 
 class ListParameter(Parameter):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -43,7 +41,6 @@ class ListParameter(Parameter):
     def value_list(self) -> List:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ValueList() As List (Read Only)
@@ -55,4 +52,4 @@ class ListParameter(Parameter):
         return List(self.com_object.ValueList)
 
     def __repr__(self):
-        return f'ListParameter(name="{ self.name }")'
+        return f'ListParameter(name="{self.name}")'

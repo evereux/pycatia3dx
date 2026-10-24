@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCombine(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -50,7 +48,6 @@ class HybridShapeCombine(HybridShape):
     def direction1(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction1() As HybridShapeDirection
@@ -84,7 +81,6 @@ class HybridShapeCombine(HybridShape):
     def direction2(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction2() As HybridShapeDirection
@@ -118,7 +114,6 @@ class HybridShapeCombine(HybridShape):
     def elem1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Elem1() As Reference
@@ -153,7 +148,6 @@ class HybridShapeCombine(HybridShape):
     def elem2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Elem2() As Reference
@@ -189,7 +183,6 @@ class HybridShapeCombine(HybridShape):
     def nearest_solution(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property NearestSolution() As long
@@ -228,7 +221,6 @@ class HybridShapeCombine(HybridShape):
     def solution_type_combine(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SolutionTypeCombine() As long
@@ -266,4 +258,4 @@ class HybridShapeCombine(HybridShape):
         self.com_object.SolutionTypeCombine = value
 
     def __repr__(self):
-        return f'HybridShapeCombine(name="{ self.name }")'
+        return f'HybridShapeCombine(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimEmbeddedConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimEmbeddedConstraint(AnyObject):
     def abs_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AbsExteriorTolerance() As double
@@ -101,7 +98,6 @@ class SimEmbeddedConstraint(AnyObject):
     def exterior_size_fraction(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExteriorSizeFraction() As double
@@ -127,7 +123,6 @@ class SimEmbeddedConstraint(AnyObject):
     def partial_embed_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartialEmbedFlag() As boolean
@@ -154,7 +149,6 @@ class SimEmbeddedConstraint(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -194,7 +188,6 @@ class SimEmbeddedConstraint(AnyObject):
     def weight_factor_roundoff(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WeightFactorRoundoff() As double
@@ -218,4 +211,4 @@ class SimEmbeddedConstraint(AnyObject):
         self.com_object.WeightFactorRoundoff = value
 
     def __repr__(self):
-        return f'SimEmbeddedConstraint(name="{ self.name }")'
+        return f'SimEmbeddedConstraint(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class KinScenarioSpec(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def end_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndTime() As double (Read Only)
@@ -59,7 +57,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def mechanism(self) -> KinMechanism:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mechanism() As KinMechanism (Read Only)
@@ -83,7 +80,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def start_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartTime() As double (Read Only)
@@ -105,7 +101,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def time_step(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeStep() As double (Read Only)
@@ -126,7 +121,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def add_recorded_excitation(self) -> KinRecordedExcitation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddRecordedExcitation() As KinRecordedExcitation
@@ -149,7 +143,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def get_recorded_excitation(self) -> KinRecordedExcitation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRecordedExcitation() As KinRecordedExcitation
@@ -169,7 +162,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def remove_recorded_excitation(self, i_recorded_excitation: KinRecordedExcitation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRecordedExcitation(KinRecordedExcitation
@@ -192,7 +184,6 @@ class KinScenarioSpec(CATBaseDispatch):
     def set_time_parameters(self, i_start_time: float, i_end_time: float, i_time_step: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTimeParameters(double iStartTime,double iEndTime,double

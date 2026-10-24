@@ -14,10 +14,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class OLPProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +50,6 @@ class OLPProfile(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As long
@@ -78,7 +75,6 @@ class OLPProfile(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IndexSet() As boolean
@@ -103,7 +99,6 @@ class OLPProfile(AnyObject):
     def is_variable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsVariable() As boolean (Read Only)
@@ -118,7 +113,6 @@ class OLPProfile(AnyObject):
     def variable(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variable() As OlpVariable (Read Only)
@@ -135,7 +129,6 @@ class OLPProfile(AnyObject):
     def get_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -161,7 +154,6 @@ class OLPProfile(AnyObject):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As
@@ -190,7 +182,6 @@ class OLPProfile(AnyObject):
     def is_profile_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProfileSet(CATBSTR iProfileType) As boolean
@@ -213,7 +204,6 @@ class OLPProfile(AnyObject):
     def matching_profile_exists(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MatchingProfileExists() As boolean
@@ -231,7 +221,6 @@ class OLPProfile(AnyObject):
     def set_index(self, i_index: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIndex(long iIndex,boolean iMatch)
@@ -254,7 +243,6 @@ class OLPProfile(AnyObject):
     def set_name(self, i_name: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetName(CATBSTR iName,boolean iMatch)
@@ -277,7 +265,6 @@ class OLPProfile(AnyObject):
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
@@ -306,7 +293,6 @@ class OLPProfile(AnyObject):
     def set_parameters_to_nothing(self, i_profile_type: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParametersToNothing(CATBSTR iProfileType,boolean
@@ -336,4 +322,4 @@ class OLPProfile(AnyObject):
         return self.com_object.SetParametersToNothing(i_profile_type, i_match)
 
     def __repr__(self):
-        return f'OLPProfile(name="{ self.name }")'
+        return f'OLPProfile(name="{self.name}")'

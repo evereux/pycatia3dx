@@ -14,10 +14,8 @@ from pycatia3dx.part.dress_up_shape import DressUpShape
 
 
 class Scaling(DressUpShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Scaling(DressUpShape):
     def factor(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Factor() As RealParam (Read Only)
@@ -65,7 +62,6 @@ class Scaling(DressUpShape):
     def scaling_reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScalingReference() As Reference
@@ -97,4 +93,4 @@ class Scaling(DressUpShape):
         self.com_object.ScalingReference = value
 
     def __repr__(self):
-        return f'Scaling(name="{ self.name }")'
+        return f'Scaling(name="{self.name}")'

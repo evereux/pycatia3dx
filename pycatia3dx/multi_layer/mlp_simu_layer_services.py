@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MLPSimuLayerServices(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -88,7 +87,6 @@ class MLPSimuLayerServices(AnyObject):
     def create_geometry_of_layer(self, i_layer_simu: MLPSimuLayer, i_datum_destination: HybridBody) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateGeometryOfLayer(MLPSimuLayer iLayerSimu,HybridBody
@@ -120,7 +118,6 @@ class MLPSimuLayerServices(AnyObject):
     ) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateIntersectSurfacesOfLayers(MLPSimuLayer iLayerSimu1,MLPSimuLayer
@@ -160,7 +157,6 @@ class MLPSimuLayerServices(AnyObject):
     ) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateJoinSurfacesOfLayers(MLPSimuLayer iLayerSimu1,MLPSimuLayer
@@ -199,7 +195,6 @@ class MLPSimuLayerServices(AnyObject):
     ) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSubstractSurfacesOfLayers(MLPSimuLayer iLayerSimu1,MLPSimuLayer
@@ -234,7 +229,6 @@ class MLPSimuLayerServices(AnyObject):
     def create_surface_of_layer(self, i_layer_simu: MLPSimuLayer, i_datum_destination: HybridBody) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSurfaceOfLayer(MLPSimuLayer iLayerSimu,HybridBody iDatumDestination)
@@ -260,7 +254,6 @@ class MLPSimuLayerServices(AnyObject):
     def get_glued_layers(self, i_glue_l_ayer_simu: MLPSimuLayer) -> MLPSimuLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGluedLayers(MLPSimuLayer iGlueLAyerSimu) As
@@ -289,7 +282,6 @@ class MLPSimuLayerServices(AnyObject):
     ) -> MLPSimuLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGluedLayersAtPoint(MLPSimuLayer iGlueLAyerSimu,float iX,float iY,float

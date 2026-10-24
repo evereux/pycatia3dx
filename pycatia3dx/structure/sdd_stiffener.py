@@ -14,7 +14,6 @@ from pycatia3dx.structure.str_stiffener import StrStiffener
 class SddStiffener(StrStiffener):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +50,6 @@ class SddStiffener(StrStiffener):
     def sdd_support_plate_mngt(self) -> SddSupportPlateMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SddSupportPlateMngt() As SddSupportPlateMngt (Read

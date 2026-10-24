@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSlidingVelocity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimSlidingVelocity(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimSlidingVelocity(AnyObject):
     def angular_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularVelocity() As double
@@ -124,7 +120,6 @@ class SimSlidingVelocity(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -139,7 +134,6 @@ class SimSlidingVelocity(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -154,7 +148,6 @@ class SimSlidingVelocity(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Line() As SimAxis (Read Only)
@@ -169,7 +162,6 @@ class SimSlidingVelocity(AnyObject):
     def translational_dof(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslationalDof() As
@@ -193,7 +185,6 @@ class SimSlidingVelocity(AnyObject):
     def translational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslationalVelocity() As double
@@ -216,7 +207,6 @@ class SimSlidingVelocity(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimSlidingVelocityType
@@ -238,4 +228,4 @@ class SimSlidingVelocity(AnyObject):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'SimSlidingVelocity(name="{ self.name }")'
+        return f'SimSlidingVelocity(name="{self.name}")'

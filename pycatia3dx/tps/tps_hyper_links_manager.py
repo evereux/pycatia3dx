@@ -13,10 +13,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class TPSHyperLinksManager(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class TPSHyperLinksManager(AnyObject):
     def get_nbr_url2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrURL2() As long
@@ -59,7 +56,6 @@ class TPSHyperLinksManager(AnyObject):
     def url(self, i_index: CATVariant) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func URL(CATVariant iIndex) As CATBSTR
@@ -78,4 +74,4 @@ class TPSHyperLinksManager(AnyObject):
         return self.com_object.URL(i_index)
 
     def __repr__(self):
-        return f'TpsHyperLinksManager(name="{ self.name }")'
+        return f'TpsHyperLinksManager(name="{self.name}")'

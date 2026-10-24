@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_transform import OLPTransform
 
 
 class OLPPrism(OLPShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class OLPPrism(OLPShape):
     def height(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Height() As double
@@ -68,7 +65,6 @@ class OLPPrism(OLPShape):
     def num_base_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumBasePoints() As long (Read Only)
@@ -82,7 +78,6 @@ class OLPPrism(OLPShape):
     def add_base_point(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddBasePoint(DELOlpPositionRef iOrigin) As OlpTransform
@@ -107,7 +102,6 @@ class OLPPrism(OLPShape):
     def get_base_point(self, i_index: int, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBasePoint(long iIndex,DELOlpPositionRef iOrigin) As
@@ -136,7 +130,6 @@ class OLPPrism(OLPShape):
     def remove_base_point(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveBasePoint(long iIndex)
@@ -155,7 +148,6 @@ class OLPPrism(OLPShape):
     def set_base_point(self, i_index: int, i_origin: int, i_location: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBasePoint(long iIndex,DELOlpPositionRef iOrigin,OlpTransform
@@ -182,4 +174,4 @@ class OLPPrism(OLPShape):
         return self.com_object.SetBasePoint(i_index, i_origin, i_location.com_object)
 
     def __repr__(self):
-        return f'OLPPrism(name="{ self.name }")'
+        return f'OLPPrism(name="{self.name}")'

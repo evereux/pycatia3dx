@@ -14,10 +14,8 @@ from pycatia3dx.machining_use.manufacturing_feature_container import Manufacturi
 
 
 class ManufacturingFactories(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factories(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingActivityFactories() As
@@ -63,7 +60,6 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factory(self) -> ManufacturingContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingActivityFactory() As
@@ -85,7 +81,6 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_activity_factory_from_feature(self, ih_ref_object: AnyObject) -> ManufacturingContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingActivityFactoryFromFeature(AnyObject ihRefObject) As
@@ -106,12 +101,12 @@ class ManufacturingFactories(AnyObject):
         :param AnyObject ih_ref_object:
         :return: ManufacturingContainer
         """
-        return ManufacturingContainer(self.com_object.GetManufacturingActivityFactoryFromFeature(ih_ref_object.com_object))
+        return ManufacturingContainer(
+            self.com_object.GetManufacturingActivityFactoryFromFeature(ih_ref_object.com_object))
 
     def get_manufacturing_feature_factories(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatureFactories() As CATSafeArrayVariant
@@ -131,7 +126,6 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_feature_factory(self) -> ManufacturingFeatureContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatureFactory() As
@@ -153,7 +147,6 @@ class ManufacturingFactories(AnyObject):
     def get_manufacturing_feature_factory_from_feature(self, ih_ref_object: AnyObject) -> ManufacturingFeatureContainer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFeatureFactoryFromFeature(AnyObject ihRefObject) As
@@ -174,12 +167,12 @@ class ManufacturingFactories(AnyObject):
         :param AnyObject ih_ref_object:
         :return: ManufacturingFeatureContainer
         """
-        return ManufacturingFeatureContainer(self.com_object.GetManufacturingFeatureFactoryFromFeature(ih_ref_object.com_object))
+        return ManufacturingFeatureContainer(
+            self.com_object.GetManufacturingFeatureFactoryFromFeature(ih_ref_object.com_object))
 
     def get_manufacturing_resource_factory(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingResourceFactory() As AnyObject
@@ -196,4 +189,4 @@ class ManufacturingFactories(AnyObject):
         return AnyObject(self.com_object.GetManufacturingResourceFactory())
 
     def __repr__(self):
-        return f'ManufacturingFactories(name="{ self.name }")'
+        return f'ManufacturingFactories(name="{self.name}")'

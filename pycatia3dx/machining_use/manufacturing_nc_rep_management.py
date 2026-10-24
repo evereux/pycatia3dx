@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingNcRepManagement(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingNcRepManagement(AnyObject):
     def create_nc_rep(self, i_name: str, i_type: int, i_list_of_files_paths: tuple) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateNCRep(CATBSTR iName,long iType,CATSafeArrayVariant
@@ -68,4 +65,4 @@ class ManufacturingNcRepManagement(AnyObject):
         return AnyObject(self.com_object.CreateNCRep(i_name, i_type, i_list_of_files_paths))
 
     def __repr__(self):
-        return f'ManufacturingNcRepManagement(name="{ self.name }")'
+        return f'ManufacturingNcRepManagement(name="{self.name}")'

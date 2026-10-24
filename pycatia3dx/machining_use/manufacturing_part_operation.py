@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingPartOperation(ManufacturingActivity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_actual_stock_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetActualStockMode() As long
@@ -60,7 +58,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_machine(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMachine() As AnyObject
@@ -78,7 +75,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_machine_local_parameters(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMachineLocalParameters() As AnyObject
@@ -96,7 +92,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_machining_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMachiningAxis(CATSafeArrayVariant oOrigin,CATSafeArrayVariant
@@ -139,7 +134,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_programs(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPrograms() As CATSafeArrayVariant
@@ -157,7 +151,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def get_tool_change_location(self, o_from_machine: bool) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolChangeLocation(boolean oFromMachine) As
@@ -184,7 +177,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def insert_new_program(self, i_insertion_level: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func InsertNewProgram(AnyObject iInsertionLevel) As AnyObject
@@ -212,7 +204,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def move_program_after(self, i_program_to_move: AnyObject, i_insertion_level: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveProgramAfter(AnyObject iProgramToMove,AnyObject
@@ -242,7 +233,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def set_machine(self, i_machine: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMachine(AnyObject iMachine)
@@ -261,7 +251,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def set_machining_axis(self, i_machining_axis: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMachiningAxis(AnyObject iMachiningAxis)
@@ -281,7 +270,6 @@ class ManufacturingPartOperation(ManufacturingActivity):
     def set_tool_change_location(self, i_x: int, i_y: int, i_z: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolChangeLocation(long iX,long iY,long iZ)

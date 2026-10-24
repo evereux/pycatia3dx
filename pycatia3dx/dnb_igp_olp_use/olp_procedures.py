@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPProcedures(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class OLPProcedures(Collection):
     def create_robot_task(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRobotTask() As OlpProcedure
@@ -57,7 +55,6 @@ class OLPProcedures(Collection):
     def create_robot_task_with_motion_groups(self, i_motion_groups: tuple) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CreateRobotTaskWithMotionGroups(CATSafeArrayVariant iMotionGroups) As
@@ -99,7 +96,6 @@ class OLPProcedures(Collection):
     def item(self, i_index: CATVariant) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As OlpProcedure

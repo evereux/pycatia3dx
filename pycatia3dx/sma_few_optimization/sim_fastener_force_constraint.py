@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimFastenerForceConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimFastenerForceConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -93,7 +90,6 @@ class SimFastenerForceConstraint(AnyObject):
     def get_maximum_shear(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumShear(double oVal)
@@ -112,7 +108,6 @@ class SimFastenerForceConstraint(AnyObject):
     def get_maximum_tension(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumTension(double oVal)
@@ -131,7 +126,6 @@ class SimFastenerForceConstraint(AnyObject):
     def set_maximum_shear(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumShear(double iVal)
@@ -144,7 +138,6 @@ class SimFastenerForceConstraint(AnyObject):
     def set_maximum_tension(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumTension(double iVal)
@@ -161,4 +154,4 @@ class SimFastenerForceConstraint(AnyObject):
         return self.com_object.SetMaximumTension(i_val)
 
     def __repr__(self):
-        return f'SimFastenerForceConstraint(name="{ self.name }")'
+        return f'SimFastenerForceConstraint(name="{self.name}")'

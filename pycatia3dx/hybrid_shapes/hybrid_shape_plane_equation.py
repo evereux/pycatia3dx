@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneEquation(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -44,7 +42,6 @@ class HybridShapePlaneEquation(Plane):
     def a(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property A() As RealParam (Read Only)
@@ -72,7 +69,6 @@ class HybridShapePlaneEquation(Plane):
     def b(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property B() As RealParam (Read Only)
@@ -100,7 +96,6 @@ class HybridShapePlaneEquation(Plane):
     def c(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property C() As RealParam (Read Only)
@@ -129,7 +124,6 @@ class HybridShapePlaneEquation(Plane):
     def d(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property D() As Length (Read Only)
@@ -157,7 +151,6 @@ class HybridShapePlaneEquation(Plane):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RefAxisSystem() As Reference
@@ -194,7 +187,6 @@ class HybridShapePlaneEquation(Plane):
     def get_reference_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetReferencePoint() As Reference
@@ -212,7 +204,6 @@ class HybridShapePlaneEquation(Plane):
     def set_reference_point(self, i_reference_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetReferencePoint(Reference iReferencePoint)
@@ -229,4 +220,4 @@ class HybridShapePlaneEquation(Plane):
         return self.com_object.SetReferencePoint(i_reference_point.com_object)
 
     def __repr__(self):
-        return f'HybridShapePlaneEquation(name="{ self.name }")'
+        return f'HybridShapePlaneEquation(name="{self.name}")'

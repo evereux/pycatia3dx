@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimAmsEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimAmsEigensolver(AnyObject):
     def acoustic_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AcousticCouplingType() As
@@ -62,7 +59,6 @@ class SimAmsEigensolver(AnyObject):
     def damping_projection_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingProjectionFlag() As boolean
@@ -88,7 +84,6 @@ class SimAmsEigensolver(AnyObject):
     def maximum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumFrequency() As double
@@ -111,7 +106,6 @@ class SimAmsEigensolver(AnyObject):
     def minimum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequency() As double
@@ -134,7 +128,6 @@ class SimAmsEigensolver(AnyObject):
     def minimum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequencyFlag() As boolean
@@ -160,7 +153,6 @@ class SimAmsEigensolver(AnyObject):
     def number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfModes() As long
@@ -183,7 +175,6 @@ class SimAmsEigensolver(AnyObject):
     def residual_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResidualModesFlag() As boolean
@@ -209,7 +200,6 @@ class SimAmsEigensolver(AnyObject):
     def specified_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifiedModesFlag() As boolean
@@ -232,4 +222,4 @@ class SimAmsEigensolver(AnyObject):
         self.com_object.SpecifiedModesFlag = value
 
     def __repr__(self):
-        return f'SimAmsEigensolver(name="{ self.name }")'
+        return f'SimAmsEigensolver(name="{self.name}")'

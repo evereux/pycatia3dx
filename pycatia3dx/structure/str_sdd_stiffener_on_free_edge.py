@@ -18,7 +18,6 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StrSddStiffenerOnFreeEdge(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +55,6 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
     def sdd_support_plate_mngt(self) -> SddSupportPlateMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SddSupportPlateMngt() As SddSupportPlateMngt (Read
@@ -78,7 +76,6 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -104,7 +101,6 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
     def str_profile_crv(self) -> StrProfileCrv:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileCrv() As StrProfileCrv (Read Only)
@@ -118,7 +114,6 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
     def str_profile_on_limits(self) -> StrProfileOnLimits:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileOnLimits() As StrProfileOnLimits (Read
@@ -142,7 +137,6 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
     def str_profile_on_opening(self) -> StrProfileOnOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileOnOpening() As StrProfileOnOpening (Read

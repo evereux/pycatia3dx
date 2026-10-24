@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingGDTs(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +47,6 @@ class DrawingGDTs(Collection):
     ) -> DrawingGDT:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iPositionLeaderX,double iPositionLeaderY,double
@@ -99,7 +97,6 @@ class DrawingGDTs(Collection):
     def item(self, i_index: CATVariant) -> DrawingGDT:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingGDT
@@ -135,7 +132,6 @@ class DrawingGDTs(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

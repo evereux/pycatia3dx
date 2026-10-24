@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingSpecializedResource(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def get_attr_boolean(self, i_att_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttrBoolean(CATBSTR iAttName) As boolean
@@ -60,7 +58,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def get_attr_double(self, i_att_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttrDouble(CATBSTR iAttName) As double
@@ -81,7 +78,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def get_attr_integer(self, i_att_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttrInteger(CATBSTR iAttName) As long
@@ -102,7 +98,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def get_attr_string(self, i_att_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttrString(CATBSTR iAttName) As CATBSTR
@@ -123,7 +118,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def get_attr_time(self, i_att_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAttrTime(CATBSTR iAttName) As long
@@ -149,7 +143,6 @@ class ManufacturingSpecializedResource(AnyObject):
     ) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetListOfSpecializedAttributes(CATSafeArrayVariant
@@ -197,7 +190,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def set_attr_boolean(self, i_att_name: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttrBoolean(CATBSTR iAttName,boolean iValue)
@@ -219,7 +211,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def set_attr_double(self, i_att_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttrDouble(CATBSTR iAttName,double iValue)
@@ -241,7 +232,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def set_attr_integer(self, i_att_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttrInteger(CATBSTR iAttName,long iValue)
@@ -263,7 +253,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def set_attr_string(self, i_att_name: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttrString(CATBSTR iAttName,CATBSTR iValue)
@@ -285,7 +274,6 @@ class ManufacturingSpecializedResource(AnyObject):
     def set_attr_time(self, i_att_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttrTime(CATBSTR iAttName,long iValue)

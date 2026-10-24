@@ -15,7 +15,6 @@ from pycatia3dx.interfaces.window import Window
 class SpecsAndGeomWindow(Window):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -49,7 +48,6 @@ class SpecsAndGeomWindow(Window):
     def layout(self) -> CatSpecsAndGeomWindowLayout:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Layout() As CatSpecsAndGeomWindowLayout
@@ -79,7 +77,6 @@ class SpecsAndGeomWindow(Window):
     def specs_viewer(self) -> SpecsViewer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property SpecsViewer() As SpecsViewer (Read Only)

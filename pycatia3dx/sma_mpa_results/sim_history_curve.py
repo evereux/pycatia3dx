@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimHistoryCurve(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimHistoryCurve(AnyObject):
     def export(self, ics_file_name: str, ics_file_location: str, ie_file_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
@@ -74,7 +71,6 @@ class SimHistoryCurve(AnyObject):
     def export_to_plm_doc(self, ics_file_name: str, ie_file_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportToPLMDoc(CATBSTR icsFileName,SimFileType ieFileType)
@@ -104,7 +100,6 @@ class SimHistoryCurve(AnyObject):
     def get_min_max_values(self, od_min: float, od_max: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinMaxValues(double odMin,double odMax)
@@ -124,4 +119,4 @@ class SimHistoryCurve(AnyObject):
         return self.com_object.GetMinMaxValues(od_min, od_max)
 
     def __repr__(self):
-        return f'SimHistoryCurve(name="{ self.name }")'
+        return f'SimHistoryCurve(name="{self.name}")'

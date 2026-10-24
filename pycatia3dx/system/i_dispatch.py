@@ -15,7 +15,6 @@ from pycatia3dx.system_ts.i_unknown import IUnknown
 class IDispatch(IUnknown):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 

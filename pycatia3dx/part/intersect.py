@@ -12,10 +12,8 @@ from pycatia3dx.part.boolean_shape import BooleanShape
 
 
 class Intersect(BooleanShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,4 +49,4 @@ class Intersect(BooleanShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Intersect(name="{ self.name }")'
+        return f'Intersect(name="{self.name}")'

@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrSectionMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class StrSectionMngt(AnyObject):
     def anchor_point(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorPoint() As CATBSTR
@@ -87,7 +84,6 @@ class StrSectionMngt(AnyObject):
     def angle_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngleMode() As long
@@ -123,7 +119,6 @@ class StrSectionMngt(AnyObject):
     def flange_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlangeOrientation() As long
@@ -160,7 +155,6 @@ class StrSectionMngt(AnyObject):
     def ref_element_for_angle(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RefElementForAngle() As Reference
@@ -193,7 +187,6 @@ class StrSectionMngt(AnyObject):
     def web_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WebOrientation() As long
@@ -229,7 +222,6 @@ class StrSectionMngt(AnyObject):
     def get_angle(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As Parameter
@@ -252,7 +244,6 @@ class StrSectionMngt(AnyObject):
     def get_flange_anchor_point_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlangeAnchorPointOffset() As Parameter
@@ -275,7 +266,6 @@ class StrSectionMngt(AnyObject):
     def get_parameter(self, i_name: str) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iName) As Parameter
@@ -300,10 +290,10 @@ class StrSectionMngt(AnyObject):
         """
         return Parameter(self.com_object.GetParameter(i_name))
 
-    def get_placed_section_axis(self, i_lambda: float, o_first_dir: tuple, o_second_dir: tuple, o_third_dir: tuple, o_origin: tuple) -> tuple:
+    def get_placed_section_axis(self, i_lambda: float, o_first_dir: tuple, o_second_dir: tuple, o_third_dir: tuple,
+                                o_origin: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPlacedSectionAxis(double iLambda,CATSafeArrayVariant
@@ -352,7 +342,6 @@ class StrSectionMngt(AnyObject):
     def get_section_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSectionName() As CATBSTR
@@ -375,7 +364,6 @@ class StrSectionMngt(AnyObject):
     def get_web_anchor_point_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetWebAnchorPointOffset() As Parameter
@@ -398,7 +386,6 @@ class StrSectionMngt(AnyObject):
     def invert_flange_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertFlangeOrientation()
@@ -412,7 +399,6 @@ class StrSectionMngt(AnyObject):
     def invert_web_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertWebOrientation()
@@ -426,7 +412,6 @@ class StrSectionMngt(AnyObject):
     def set_section_name(self, i_section_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionName(CATBSTR iSectionName)
@@ -452,4 +437,4 @@ class StrSectionMngt(AnyObject):
         return self.com_object.SetSectionName(i_section_name)
 
     def __repr__(self):
-        return f'StrSectionMngt(name="{ self.name }")'
+        return f'StrSectionMngt(name="{self.name}")'

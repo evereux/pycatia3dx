@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SrmPlanningBreak(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SrmPlanningBreak(AnyObject):
     def limit(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Limit() As Reference (Read Only)
@@ -68,7 +65,6 @@ class SrmPlanningBreak(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As long (Read Only)
@@ -91,7 +87,6 @@ class SrmPlanningBreak(AnyObject):
     def get_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffset() As Parameter
@@ -111,4 +106,4 @@ class SrmPlanningBreak(AnyObject):
         return Parameter(self.com_object.GetOffset())
 
     def __repr__(self):
-        return f'SrmPlanningBreak(name="{ self.name }")'
+        return f'SrmPlanningBreak(name="{self.name}")'

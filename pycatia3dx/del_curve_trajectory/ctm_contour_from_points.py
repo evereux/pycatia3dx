@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmContourFromPoints(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class CtmContourFromPoints(AnyObject):
     def tag_group(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TagGroup() As AnyObject
@@ -69,4 +66,4 @@ class CtmContourFromPoints(AnyObject):
         self.com_object.TagGroup = value
 
     def __repr__(self):
-        return f'CtmContourFromPoints(name="{ self.name }")'
+        return f'CtmContourFromPoints(name="{self.name}")'

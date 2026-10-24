@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SsmToolSet(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SsmToolSet(AnyObject):
     def get_children(self, ol_child_objects: References) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetChildren(References olChildObjects)
@@ -58,4 +55,4 @@ class SsmToolSet(AnyObject):
         return self.com_object.GetChildren(ol_child_objects.com_object)
 
     def __repr__(self):
-        return f'SsmToolSet(name="{ self.name }")'
+        return f'SsmToolSet(name="{self.name}")'

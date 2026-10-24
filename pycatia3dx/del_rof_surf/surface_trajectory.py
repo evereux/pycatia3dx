@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SurfaceTrajectory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SurfaceTrajectory(AnyObject):
     def points_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointsCount() As short (Read Only)
@@ -59,7 +57,6 @@ class SurfaceTrajectory(AnyObject):
     def sag(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sag() As double
@@ -90,7 +87,6 @@ class SurfaceTrajectory(AnyObject):
     def stroke_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrokeCount() As short (Read Only)
@@ -113,7 +109,6 @@ class SurfaceTrajectory(AnyObject):
     def get_approach_distance(self, i_app_retract: int, o_app_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetApproachDistance(APPROACH_RETRACT iAppRetract,double
@@ -140,7 +135,6 @@ class SurfaceTrajectory(AnyObject):
     def get_approach_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetApproachTransformations(CATSafeArrayVariant
@@ -178,7 +172,6 @@ class SurfaceTrajectory(AnyObject):
     def get_global_position(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetGlobalPosition(CATSafeArrayVariant oGlobalPos)
@@ -215,7 +208,6 @@ class SurfaceTrajectory(AnyObject):
     def get_retract_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetRetractTransformations(CATSafeArrayVariant
@@ -253,7 +245,6 @@ class SurfaceTrajectory(AnyObject):
     def get_sweep_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetSweepDirection(CATSafeArrayVariant oSweepDirection)
@@ -290,7 +281,6 @@ class SurfaceTrajectory(AnyObject):
     def refresh_traj(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RefreshTraj()
@@ -306,7 +296,6 @@ class SurfaceTrajectory(AnyObject):
     def resize_stroke(self, stroke_index: int, stroke_side: int, i_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResizeStroke(short StrokeIndex,STROKE_SIDE StrokeSide,double
@@ -335,7 +324,6 @@ class SurfaceTrajectory(AnyObject):
     def resize_trajectory(self, stroke_side: int, extent: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResizeTrajectory(STROKE_SIDE StrokeSide,double extent)
@@ -360,7 +348,6 @@ class SurfaceTrajectory(AnyObject):
     def set_approach_distance(self, app_retract: int, i_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachDistance(APPROACH_RETRACT AppRetract,double
@@ -387,7 +374,6 @@ class SurfaceTrajectory(AnyObject):
     def set_approach_transformations(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetApproachTransformations(CATSafeArrayVariant
@@ -425,7 +411,6 @@ class SurfaceTrajectory(AnyObject):
     def set_global_position(self, i_global_pos: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetGlobalPosition(CATSafeArrayVariant iGlobalPos)
@@ -463,7 +448,6 @@ class SurfaceTrajectory(AnyObject):
     def set_retract_transformations(self, i_transformations: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetRetractTransformations(CATSafeArrayVariant
@@ -502,7 +486,6 @@ class SurfaceTrajectory(AnyObject):
     def set_sweep_direction(self, i_sweep_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetSweepDirection(CATSafeArrayVariant iSweepDirection)

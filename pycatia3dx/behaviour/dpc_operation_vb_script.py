@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DPCOperationVbScript(DPCOperation):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class DPCOperationVbScript(DPCOperation):
     def get_input(self, p_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInput(CATBSTR pName) As AnyObject
@@ -70,7 +68,6 @@ class DPCOperationVbScript(DPCOperation):
     def get_internal(self, p_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInternal(CATBSTR pName) As AnyObject
@@ -101,7 +98,6 @@ class DPCOperationVbScript(DPCOperation):
     def get_output(self, p_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOutput(CATBSTR pName) As AnyObject
@@ -131,7 +127,6 @@ class DPCOperationVbScript(DPCOperation):
     def put_internal(self, p_name: str, i_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutInternal(CATBSTR pName,AnyObject iValue)
@@ -162,7 +157,6 @@ class DPCOperationVbScript(DPCOperation):
     def put_output(self, p_name: str, i_value: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutOutput(CATBSTR pName,AnyObject iValue)
@@ -194,7 +188,6 @@ class DPCOperationVbScript(DPCOperation):
     def test_input(self, p_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestInput(CATBSTR pName) As long
@@ -223,7 +216,6 @@ class DPCOperationVbScript(DPCOperation):
     def test_internal(self, p_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestInternal(CATBSTR pName) As long
@@ -253,7 +245,6 @@ class DPCOperationVbScript(DPCOperation):
     def test_output(self, p_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TestOutput(CATBSTR pName) As long

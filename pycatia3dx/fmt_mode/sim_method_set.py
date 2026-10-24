@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimMethodSet(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimMethodSet(CATBaseDispatch):
     def item(self, i_index: CATVariant) -> SimMethod:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimMethod

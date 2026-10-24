@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_trigger_action import OLPTriggerAction
 
 
 class OLPActionPRun(OLPTriggerAction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPActionPRun(OLPTriggerAction):
     def arguments(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arguments() As OlpAstBranch
@@ -79,7 +76,6 @@ class OLPActionPRun(OLPTriggerAction):
     def job_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JobId() As CATBSTR
@@ -103,7 +99,6 @@ class OLPActionPRun(OLPTriggerAction):
     def procedure(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Procedure() As OlpProcedure
@@ -126,7 +121,6 @@ class OLPActionPRun(OLPTriggerAction):
     def sustain_simulation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SustainSimulation() As boolean
@@ -149,7 +143,6 @@ class OLPActionPRun(OLPTriggerAction):
     def assign_undefined_procedure(self, i_name: str, i_data_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedure(CATBSTR iName,DELOlpDataType
@@ -186,7 +179,6 @@ class OLPActionPRun(OLPTriggerAction):
     def assign_undefined_procedure_in_string_type(self, i_name: str, i_data_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedureInStringType(CATBSTR iName,CATBSTR
@@ -223,4 +215,4 @@ class OLPActionPRun(OLPTriggerAction):
         return self.com_object.AssignUndefinedProcedureInStringType(i_name, i_data_type)
 
     def __repr__(self):
-        return f'OLPActionPRun(name="{ self.name }")'
+        return f'OLPActionPRun(name="{self.name}")'

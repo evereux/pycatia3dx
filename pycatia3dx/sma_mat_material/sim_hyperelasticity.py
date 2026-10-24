@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimHyperelasticity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimHyperelasticity(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -92,7 +89,6 @@ class SimHyperelasticity(AnyObject):
     def moduli_time_scale(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModuliTimeScale() As
@@ -116,7 +112,6 @@ class SimHyperelasticity(AnyObject):
     def strain_energy_potential(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrainEnergyPotential() As
@@ -140,7 +135,6 @@ class SimHyperelasticity(AnyObject):
     def strain_energy_potential_order(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrainEnergyPotentialOrder() As
@@ -163,7 +157,6 @@ class SimHyperelasticity(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimHyperelasticityMaterialTableColumn
@@ -186,4 +179,4 @@ class SimHyperelasticity(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimHyperelasticity(name="{ self.name }")'
+        return f'SimHyperelasticity(name="{self.name}")'

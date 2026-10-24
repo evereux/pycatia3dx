@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimShellEdgeLoad(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimShellEdgeLoad(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -98,7 +95,6 @@ class SimShellEdgeLoad(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -113,7 +109,6 @@ class SimShellEdgeLoad(AnyObject):
     def force_per_length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ForcePerLength() As double
@@ -137,7 +132,6 @@ class SimShellEdgeLoad(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -153,7 +147,6 @@ class SimShellEdgeLoad(AnyObject):
     def traction_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TractionType() As SimShellEdgeLoadTractionType
@@ -173,4 +166,4 @@ class SimShellEdgeLoad(AnyObject):
         self.com_object.TractionType = value
 
     def __repr__(self):
-        return f'SimShellEdgeLoad(name="{ self.name }")'
+        return f'SimShellEdgeLoad(name="{self.name}")'

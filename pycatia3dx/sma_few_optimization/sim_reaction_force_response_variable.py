@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -83,7 +81,6 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -98,7 +95,6 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
     def direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As SimDesignResponseDirection
@@ -121,7 +117,6 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -136,7 +131,6 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
     def use_absolute_value_of_direction_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseAbsoluteValueOfDirectionFlag() As boolean
@@ -155,4 +149,4 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
         self.com_object.UseAbsoluteValueOfDirectionFlag = value
 
     def __repr__(self):
-        return f'SimReactionForceResponseVariable(name="{ self.name }")'
+        return f'SimReactionForceResponseVariable(name="{self.name}")'

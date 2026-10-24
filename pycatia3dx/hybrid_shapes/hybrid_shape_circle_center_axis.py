@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleCenterAxis(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -59,7 +57,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Axis() As Reference
@@ -90,7 +87,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Diameter() As Length (Read Only)
@@ -113,7 +109,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiameterMode() As boolean
@@ -148,7 +143,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -179,7 +173,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def projection_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ProjectionMode() As boolean
@@ -214,7 +207,6 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -233,4 +225,4 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         return Length(self.com_object.Radius)
 
     def __repr__(self):
-        return f'HybridShapeCircleCenterAxis(name="{ self.name }")'
+        return f'HybridShapeCircleCenterAxis(name="{self.name}")'

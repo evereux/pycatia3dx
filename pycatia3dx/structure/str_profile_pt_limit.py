@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfilePtLimit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrProfilePtLimit(AnyObject):
     def direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As Reference
@@ -73,7 +70,6 @@ class StrProfilePtLimit(AnyObject):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartPoint() As Reference
@@ -96,7 +92,6 @@ class StrProfilePtLimit(AnyObject):
     def up_to_limit(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpToLimit() As Reference
@@ -118,7 +113,6 @@ class StrProfilePtLimit(AnyObject):
     def get_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientation() As long
@@ -158,7 +152,6 @@ class StrProfilePtLimit(AnyObject):
     def reverse_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseDirection()
@@ -169,4 +162,4 @@ class StrProfilePtLimit(AnyObject):
         return self.com_object.ReverseDirection()
 
     def __repr__(self):
-        return f'StrProfilePtLimit(name="{ self.name }")'
+        return f'StrProfilePtLimit(name="{self.name}")'

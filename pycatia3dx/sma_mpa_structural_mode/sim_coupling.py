@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_section import SimConnecto
 
 
 class SimCoupling(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimCoupling(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -92,7 +89,6 @@ class SimCoupling(AnyObject):
     def connector_section(self) -> SimConnectorSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorSection() As SimConnectorSection (Read Only)
@@ -107,7 +103,6 @@ class SimCoupling(AnyObject):
     def first_support_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstSupportCouplingType() As SimCouplingCouplingType
@@ -130,7 +125,6 @@ class SimCoupling(AnyObject):
     def rotation1(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Rotation1() As boolean
@@ -158,7 +152,6 @@ class SimCoupling(AnyObject):
     def rotation2(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Rotation2() As boolean
@@ -186,7 +179,6 @@ class SimCoupling(AnyObject):
     def rotation3(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Rotation3() As boolean
@@ -214,7 +206,6 @@ class SimCoupling(AnyObject):
     def second_support_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondSupportCouplingType() As
@@ -238,7 +229,6 @@ class SimCoupling(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -278,7 +268,6 @@ class SimCoupling(AnyObject):
     def spring_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpringType() As SimSpringType
@@ -301,7 +290,6 @@ class SimCoupling(AnyObject):
     def translation1(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Translation1() As boolean
@@ -330,7 +318,6 @@ class SimCoupling(AnyObject):
     def translation2(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Translation2() As boolean
@@ -359,7 +346,6 @@ class SimCoupling(AnyObject):
     def translation3(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Translation3() As boolean
@@ -388,7 +374,6 @@ class SimCoupling(AnyObject):
     def use_spring_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseSpringFlag() As boolean
@@ -412,4 +397,4 @@ class SimCoupling(AnyObject):
         self.com_object.UseSpringFlag = value
 
     def __repr__(self):
-        return f'SimCoupling(name="{ self.name }")'
+        return f'SimCoupling(name="{self.name}")'

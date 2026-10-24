@@ -15,10 +15,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +64,6 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
     def analysis_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnalysisCase() As CATBaseDispatch
@@ -91,7 +88,6 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
     def fem_rep(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FEMRep(CATBaseDispatch ispFEMRep) (Write Only)
@@ -114,7 +110,6 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
     def features(self) -> SimDesignImprovementFeatures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Features() As SimDesignImprovementFeatures (Read
@@ -127,4 +122,4 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
         return SimDesignImprovementFeatures(self.com_object.Features)
 
     def __repr__(self):
-        return f'SimDesignImprovementStudyCase(name="{ self.name }")'
+        return f'SimDesignImprovementStudyCase(name="{self.name}")'

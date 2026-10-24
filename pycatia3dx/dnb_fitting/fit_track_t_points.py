@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class FitTrackTPoints(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class FitTrackTPoints(Collection):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertTPoint(CATVariant iIndex,CATSafeArrayVariant
@@ -98,7 +96,6 @@ class FitTrackTPoints(Collection):
     def item(self, i_index: CATVariant) -> FitTrackTPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As FitTrackTPoint
@@ -127,7 +124,6 @@ class FitTrackTPoints(Collection):
     def remove_t_point(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveTPoint(CATVariant iIndex)

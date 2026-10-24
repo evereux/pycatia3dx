@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingWeldings(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingWeldings(Collection):
     def add(self, i_symbol: int, i_position_x: float, i_position_y: float) -> DrawingWelding:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatWeldingSymbol iSymbol,double iPositionX,double iPositionY) As
@@ -84,7 +82,6 @@ class DrawingWeldings(Collection):
     def item(self, i_index: CATVariant) -> DrawingWelding:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingWelding
@@ -123,7 +120,6 @@ class DrawingWeldings(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

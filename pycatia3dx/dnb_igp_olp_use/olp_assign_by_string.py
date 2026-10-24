@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPAssignByString(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPAssignByString(OLPInstruction):
     def destination_expression(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DestinationExpression() As OlpAstBranch
@@ -66,7 +63,6 @@ class OLPAssignByString(OLPInstruction):
     def indexes_expression(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IndexesExpression() As OlpAstBranch
@@ -91,7 +87,6 @@ class OLPAssignByString(OLPInstruction):
     def source(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Source() As OlpAstBranch
@@ -114,7 +109,6 @@ class OLPAssignByString(OLPInstruction):
     def unset_indexes_expression(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnsetIndexesExpression()
@@ -125,4 +119,4 @@ class OLPAssignByString(OLPInstruction):
         return self.com_object.UnsetIndexesExpression()
 
     def __repr__(self):
-        return f'OLPAssignByString(name="{ self.name }")'
+        return f'OLPAssignByString(name="{self.name}")'

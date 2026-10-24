@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPFor(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPFor(OLPInstruction):
     def count_up(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CountUp() As boolean
@@ -67,7 +64,6 @@ class OLPFor(OLPInstruction):
     def end_expr(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndExpr() As OlpAstBranch
@@ -98,7 +94,6 @@ class OLPFor(OLPInstruction):
     def instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -113,7 +108,6 @@ class OLPFor(OLPInstruction):
     def loop_variable(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoopVariable() As OlpVariable (Read Only)
@@ -133,7 +127,6 @@ class OLPFor(OLPInstruction):
     def start_expr(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartExpr() As OlpAstBranch
@@ -161,4 +154,4 @@ class OLPFor(OLPInstruction):
         self.com_object.StartExpr = value
 
     def __repr__(self):
-        return f'OLPFor(name="{ self.name }")'
+        return f'OLPFor(name="{self.name}")'

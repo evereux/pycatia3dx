@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_shape import OLPShape
 
 
 class OLPToolVolume(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPToolVolume(AnyObject):
     def active(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Active() As boolean
@@ -66,7 +63,6 @@ class OLPToolVolume(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As long
@@ -92,7 +88,6 @@ class OLPToolVolume(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IndexSet() As boolean
@@ -116,7 +111,6 @@ class OLPToolVolume(AnyObject):
     def num_shapes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumShapes() As long (Read Only)
@@ -130,7 +124,6 @@ class OLPToolVolume(AnyObject):
     def add_shape(self, i_type: str) -> OLPShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddShape(CATBSTR iType) As OlpShape
@@ -152,7 +145,6 @@ class OLPToolVolume(AnyObject):
     def get_shape(self, i_index: int) -> OLPShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetShape(long iIndex) As OlpShape
@@ -174,7 +166,6 @@ class OLPToolVolume(AnyObject):
     def remove_shape(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveShape(long iIndex)
@@ -191,4 +182,4 @@ class OLPToolVolume(AnyObject):
         return self.com_object.RemoveShape(i_index)
 
     def __repr__(self):
-        return f'OLPToolVolume(name="{ self.name }")'
+        return f'OLPToolVolume(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_controller import OLPController
 
 
 class OLPMotionGroup(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class OLPMotionGroup(AnyObject):
     def has_robot(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasRobot() As boolean (Read Only)
@@ -59,7 +56,6 @@ class OLPMotionGroup(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As long (Read Only)
@@ -77,7 +73,6 @@ class OLPMotionGroup(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IndexSet() As boolean (Read Only)
@@ -93,7 +88,6 @@ class OLPMotionGroup(AnyObject):
     def primary_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrimaryDevice() As OlpController (Read Only)
@@ -108,7 +102,6 @@ class OLPMotionGroup(AnyObject):
     def get_devices(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDevices(DELOlpDeviceType iType) As CATSafeArrayVariant
@@ -129,4 +122,4 @@ class OLPMotionGroup(AnyObject):
         return self.com_object.GetDevices(i_type)
 
     def __repr__(self):
-        return f'OLPMotionGroup(name="{ self.name }")'
+        return f'OLPMotionGroup(name="{self.name}")'

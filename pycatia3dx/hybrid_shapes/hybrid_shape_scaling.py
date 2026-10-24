@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeScaling(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -59,7 +57,6 @@ class HybridShapeScaling(HybridShape):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Center() As Reference
@@ -92,7 +89,6 @@ class HybridShapeScaling(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CreationMode() As boolean
@@ -126,7 +122,6 @@ class HybridShapeScaling(HybridShape):
     def elem_to_scale(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToScale() As Reference
@@ -156,7 +151,6 @@ class HybridShapeScaling(HybridShape):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Ratio() As RealParam (Read Only)
@@ -171,7 +165,6 @@ class HybridShapeScaling(HybridShape):
     def ratio_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RatioValue() As double
@@ -201,7 +194,6 @@ class HybridShapeScaling(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -232,4 +224,4 @@ class HybridShapeScaling(HybridShape):
         self.com_object.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeScaling(name="{ self.name }")'
+        return f'HybridShapeScaling(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class StrProfileOnLimits(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class StrProfileOnLimits(AnyObject):
     def reference_support_plate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceSupportPlate(StructurePlate iStrPlate) (Write
@@ -74,7 +72,6 @@ class StrProfileOnLimits(AnyObject):
     def get_limits(self) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLimits() As References
@@ -98,7 +95,6 @@ class StrProfileOnLimits(AnyObject):
     def get_trace_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTraceOffset() As Parameter
@@ -121,7 +117,6 @@ class StrProfileOnLimits(AnyObject):
     def set_limits(self, i_list_of_limit_index: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetLimits(CATSafeArrayVariant iListOfLimitIndex)

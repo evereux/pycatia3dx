@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingComponent(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingComponent(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -75,7 +73,6 @@ class DrawingComponent(AnyObject):
     def comp_ref(self) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CompRef() As DrawingView (Read Only)
@@ -98,7 +95,6 @@ class DrawingComponent(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale2() As double
@@ -128,7 +124,6 @@ class DrawingComponent(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -161,7 +156,6 @@ class DrawingComponent(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -193,7 +187,6 @@ class DrawingComponent(AnyObject):
     def explode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Explode()
@@ -218,7 +211,6 @@ class DrawingComponent(AnyObject):
     def explode_and_select(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExplodeAndSelect()
@@ -239,7 +231,6 @@ class DrawingComponent(AnyObject):
     def expose_comp_ref(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExposeCompRef()
@@ -259,7 +250,6 @@ class DrawingComponent(AnyObject):
     def expose_comp_ref_in_sheet(self, i_sheet: DrawingSheet) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExposeCompRefInSheet(DrawingSheet iSheet)
@@ -289,7 +279,6 @@ class DrawingComponent(AnyObject):
     def flip(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Flip()
@@ -310,7 +299,6 @@ class DrawingComponent(AnyObject):
     def get_flip(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFlip() As boolean
@@ -330,7 +318,6 @@ class DrawingComponent(AnyObject):
     def get_matrix(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMatrix(CATSafeArrayVariant ioMatrix)
@@ -377,7 +364,6 @@ class DrawingComponent(AnyObject):
     def get_modifiable_object(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableObject(CATVariant iIndex) As AnyObject
@@ -398,7 +384,6 @@ class DrawingComponent(AnyObject):
     def get_modifiable_objects_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetModifiableObjectsCount() As long
@@ -418,7 +403,6 @@ class DrawingComponent(AnyObject):
     def set_matrix(self, i_matrix: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetMatrix(CATSafeArrayVariant iMatrix)

@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePositionTransform(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapePositionTransform(HybridShape):
     def initial_direction_computation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property InitialDirectionComputationMode() As long
@@ -85,7 +82,6 @@ class HybridShapePositionTransform(HybridShape):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Mode() As long
@@ -116,7 +112,6 @@ class HybridShapePositionTransform(HybridShape):
     def profile(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Profile() As Reference
@@ -138,7 +133,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_nb_pos_angle(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbPosAngle() As long
@@ -156,7 +150,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_nb_pos_coord(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbPosCoord() As long
@@ -174,7 +167,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_pos_angle(self, i_i: int) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosAngle(long iI) As Angle
@@ -197,7 +189,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_pos_coord(self, ii: int) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosCoord(long ii) As Length
@@ -220,7 +211,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_pos_point(self, ii: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosPoint(long ii) As Reference
@@ -243,7 +233,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_pos_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPosSwapAxes(long ii) As long
@@ -275,7 +264,6 @@ class HybridShapePositionTransform(HybridShape):
     def get_position_direction(self, i_i: int) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPositionDirection(long iI) As HybridShapeDirection
@@ -299,7 +287,6 @@ class HybridShapePositionTransform(HybridShape):
     def remove_all_pos_angle(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllPosAngle()
@@ -312,7 +299,6 @@ class HybridShapePositionTransform(HybridShape):
     def remove_all_pos_coord(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAllPosCoord()
@@ -325,7 +311,6 @@ class HybridShapePositionTransform(HybridShape):
     def set_pos_angle(self, i_i: int, i_angle: Angle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosAngle(long iI,Angle iAngle)
@@ -348,7 +333,6 @@ class HybridShapePositionTransform(HybridShape):
     def set_pos_coord(self, i_i: int, i_coordinate: Length) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosCoord(long iI,Length iCoordinate)
@@ -372,7 +356,6 @@ class HybridShapePositionTransform(HybridShape):
     def set_pos_point(self, i_i: int, i_elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosPoint(long iI,Reference iElem)
@@ -396,7 +379,6 @@ class HybridShapePositionTransform(HybridShape):
     def set_pos_swap_axes(self, ii: int, i_inversion: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosSwapAxes(long ii,long iInversion)
@@ -429,7 +411,6 @@ class HybridShapePositionTransform(HybridShape):
     def set_position_direction(self, i_i: int, i_elem: HybridShapeDirection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPositionDirection(long iI,HybridShapeDirection iElem)
@@ -452,4 +433,4 @@ class HybridShapePositionTransform(HybridShape):
         return self.com_object.SetPositionDirection(i_i, i_elem.com_object)
 
     def __repr__(self):
-        return f'HybridShapePositionTransfo(name="{ self.name }")'
+        return f'HybridShapePositionTransfo(name="{self.name}")'

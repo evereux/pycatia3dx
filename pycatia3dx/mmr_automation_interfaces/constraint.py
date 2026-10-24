@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Constraint(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +40,6 @@ class Constraint(AnyObject):
     def angle_sector(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property AngleSector() As CatConstraintAngleSector
@@ -83,7 +81,6 @@ class Constraint(AnyObject):
     def dimension(self) -> Dimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Dimension() As Dimension (Read Only)
@@ -107,7 +104,6 @@ class Constraint(AnyObject):
     def distance_config(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property DistanceConfig() As CatConstraintDistConfig
@@ -140,7 +136,6 @@ class Constraint(AnyObject):
     def distance_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property DistanceDirection() As CatConstraintDistDirection
@@ -169,7 +164,6 @@ class Constraint(AnyObject):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Mode() As CatConstraintMode
@@ -201,7 +195,6 @@ class Constraint(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Orientation() As CatConstraintOrientation
@@ -233,7 +226,6 @@ class Constraint(AnyObject):
     def reference_axis(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ReferenceAxis() As CatConstraintRefAxis
@@ -265,7 +257,6 @@ class Constraint(AnyObject):
     def reference_type(self) -> CatConstraintRefType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property ReferenceType() As CatConstraintRefType
@@ -295,7 +286,6 @@ class Constraint(AnyObject):
     def side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Side() As CatConstraintSide
@@ -326,7 +316,6 @@ class Constraint(AnyObject):
     def status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Status() As CatConstraintStatus (Read Only)
@@ -348,7 +337,6 @@ class Constraint(AnyObject):
     def type(self) -> CatConstraintType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Type() As CatConstraintType (Read Only)
@@ -368,7 +356,6 @@ class Constraint(AnyObject):
     def activate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Activate()
@@ -390,7 +377,6 @@ class Constraint(AnyObject):
     def deactivate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Deactivate()
@@ -410,7 +396,6 @@ class Constraint(AnyObject):
     def get_constraint_element(self, i_element_number: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetConstraintElement(long iElementNumber) As Reference
@@ -438,7 +423,6 @@ class Constraint(AnyObject):
     def get_constraint_visu_location(self, o_anchor_point: tuple, o_anchor_vector: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetConstraintVisuLocation(CATSafeArrayVariant
@@ -491,7 +475,6 @@ class Constraint(AnyObject):
     def is_inactive(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsInactive() As boolean
@@ -512,7 +495,6 @@ class Constraint(AnyObject):
     def set_constraint_element(self, i_element_number: int, i_new_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetConstraintElement(long iElementNumber,Reference
@@ -543,7 +525,6 @@ class Constraint(AnyObject):
     def set_constraint_visu_location(self, i_new_x: float, i_new_y: float, i_new_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetConstraintVisuLocation(double iNewX,double iNewY,double

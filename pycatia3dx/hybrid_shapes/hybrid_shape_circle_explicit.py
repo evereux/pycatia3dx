@@ -12,10 +12,8 @@ from pycatia3dx.hybrid_shapes.hybrid_shape_circle import HybridShapeCircle
 
 
 class HybridShapeCircleExplicit(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -48,4 +46,4 @@ class HybridShapeCircleExplicit(HybridShapeCircle):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'HybridShapeCircleExplicit(name="{ self.name }")'
+        return f'HybridShapeCircleExplicit(name="{self.name}")'

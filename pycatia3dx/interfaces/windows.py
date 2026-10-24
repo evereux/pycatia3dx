@@ -17,7 +17,6 @@ from pycatia3dx.system.collection import Collection
 class Windows(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class Windows(Collection):
     def arrange(self, i_style: CatArrangeStyle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Arrange(CatArrangeStyle iStyle)
@@ -66,7 +64,6 @@ class Windows(Collection):
     def item(self, i_index: int) -> Window:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(CATVariant iIndex) As Window

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimExportField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimExportField(AnyObject):
     def exclude_null_values(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExcludeNullValues(boolean ibExclude) (Write Only)
@@ -80,10 +77,10 @@ class SimExportField(AnyObject):
 
         self.com_object.ExcludeNullValues = value
 
-    def create_feature_linked_document(self, ics_document_name: str, ib_deformed: bool, ib_export_on_extrerior_values_only: bool) -> None:
+    def create_feature_linked_document(self, ics_document_name: str, ib_deformed: bool,
+                                       ib_export_on_extrerior_values_only: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFeatureLinkedDocument(CATBSTR icsDocumentName,boolean
@@ -111,12 +108,13 @@ class SimExportField(AnyObject):
         :param bool ib_export_on_extrerior_values_only:
         :return: None
         """
-        return self.com_object.CreateFeatureLinkedDocument(ics_document_name, ib_deformed, ib_export_on_extrerior_values_only)
+        return self.com_object.CreateFeatureLinkedDocument(ics_document_name, ib_deformed,
+                                                           ib_export_on_extrerior_values_only)
 
-    def write_to_file(self, ics_file_name: str, ics_file_directory: str, ib_deformed: bool, ib_export_on_extrerior_values_only: bool) -> None:
+    def write_to_file(self, ics_file_name: str, ics_file_directory: str, ib_deformed: bool,
+                      ib_export_on_extrerior_values_only: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub WriteToFile(CATBSTR icsFileName,CATBSTR icsFileDirectory,boolean
@@ -146,7 +144,8 @@ class SimExportField(AnyObject):
         :param bool ib_export_on_extrerior_values_only:
         :return: None
         """
-        return self.com_object.WriteToFile(ics_file_name, ics_file_directory, ib_deformed, ib_export_on_extrerior_values_only)
+        return self.com_object.WriteToFile(ics_file_name, ics_file_directory, ib_deformed,
+                                           ib_export_on_extrerior_values_only)
 
     def __repr__(self):
-        return f'SimExportField(name="{ self.name }")'
+        return f'SimExportField(name="{self.name}")'

@@ -14,10 +14,8 @@ from pycatia3dx.sketcher.sketch import Sketch
 
 
 class SketchBasedShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class SketchBasedShape(Shape):
     def sketch(self) -> Sketch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sketch() As Sketch (Read Only)
@@ -66,7 +63,6 @@ class SketchBasedShape(Shape):
     def set_profile_element(self, i_profile_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfileElement(Reference iProfileElement)
@@ -78,4 +74,4 @@ class SketchBasedShape(Shape):
         return self.com_object.SetProfileElement(i_profile_element.com_object)
 
     def __repr__(self):
-        return f'SketchBasedShape(name="{ self.name }")'
+        return f'SketchBasedShape(name="{self.name}")'

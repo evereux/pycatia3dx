@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ResourceTask2(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class ResourceTask2(AnyObject):
     def execution_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExecutionType() As DELRscTaskExecutionType (Read
@@ -82,7 +80,6 @@ class ResourceTask2(AnyObject):
     def instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As CATSafeArrayVariant (Read Only)
@@ -120,7 +117,6 @@ class ResourceTask2(AnyObject):
     def main_rsc_sequence(self) -> RscSequence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MainRscSequence() As RscSequence (Read Only)
@@ -146,7 +142,6 @@ class ResourceTask2(AnyObject):
     def rsc_const_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RscConstList() As CATSafeArrayVariant (Read Only)
@@ -177,7 +172,6 @@ class ResourceTask2(AnyObject):
     def rsc_local_var_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RscLocalVarList() As CATSafeArrayVariant (Read Only)
@@ -207,7 +201,6 @@ class ResourceTask2(AnyObject):
     def create_rsc_const(self, i_name: str, i_type: int, i_val: str) -> RscConst:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscConst(CATBSTR iName,DELRscDataEntityType iType,CATBSTR iVal) As
@@ -258,7 +251,6 @@ class ResourceTask2(AnyObject):
     def create_rsc_local_var(self, i_name: str, i_type: int) -> RscLocalVar:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRscLocalVar(CATBSTR iName,DELRscDataEntityType iType) As
@@ -306,7 +298,6 @@ class ResourceTask2(AnyObject):
     def create_spm_operation(self, i_before: bool, i_reference_instruction: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSPMOperation(boolean iBefore,AnyObject iReferenceInstruction) As
@@ -347,7 +338,6 @@ class ResourceTask2(AnyObject):
     def delete_rsc_const(self, i_const: RscConst) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteRscConst(RscConst iConst)
@@ -382,7 +372,6 @@ class ResourceTask2(AnyObject):
     def delete_rsc_local_var(self, i_local_var: RscLocalVar) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteRscLocalVar(RscLocalVar iLocalVar)
@@ -415,7 +404,6 @@ class ResourceTask2(AnyObject):
     def move_after(self, i_relative: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveAfter(AnyObject iRelative)
@@ -444,7 +432,6 @@ class ResourceTask2(AnyObject):
     def move_before(self, i_relative: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveBefore(AnyObject iRelative)

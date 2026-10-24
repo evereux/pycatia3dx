@@ -20,7 +20,6 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StructureMember(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class StructureMember(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -69,7 +67,6 @@ class StructureMember(StructureProfile):
     def str_profile_crv(self) -> StrProfileCrv:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileCrv() As StrProfileCrv (Read Only)
@@ -93,7 +90,6 @@ class StructureMember(StructureProfile):
     def str_profile_pt_length(self) -> StrProfilePtLength:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfilePtLength() As StrProfilePtLength (Read
@@ -118,7 +114,6 @@ class StructureMember(StructureProfile):
     def str_profile_pt_limit(self) -> StrProfilePtLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfilePtLimit() As StrProfilePtLimit (Read Only)
@@ -142,7 +137,6 @@ class StructureMember(StructureProfile):
     def str_profile_pt_pt(self) -> StrProfilePtPt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfilePtPt() As StrProfilePtPt (Read Only)
@@ -166,7 +160,6 @@ class StructureMember(StructureProfile):
     def str_profile_surf2_crvs(self) -> StrProfileSurf2Crvs:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileSurf2Crvs() As StrProfileSurf2Crvs (Read
@@ -191,7 +184,6 @@ class StructureMember(StructureProfile):
     def str_profile_surf_surf(self) -> StrProfileSurfSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileSurfSurf() As StrProfileSurfSurf (Read

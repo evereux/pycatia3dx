@@ -23,7 +23,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsAnalysisCase(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -62,7 +61,6 @@ class SimResultsAnalysisCase(AnyObject):
     def job_diagnostic_summary(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JobDiagnosticSummary() As CATBaseDispatch (Read Only)
@@ -77,7 +75,6 @@ class SimResultsAnalysisCase(AnyObject):
     def results_steps(self) -> SimResultsSteps:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResultsSteps() As SimResultsSteps (Read Only)
@@ -95,7 +92,6 @@ class SimResultsAnalysisCase(AnyObject):
     def scenario_analysis_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioAnalysisCase() As CATBaseDispatch (Read Only)
@@ -117,7 +113,6 @@ class SimResultsAnalysisCase(AnyObject):
     def add_field_plot_definitions(self, ilcs_files: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub AddFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)
@@ -159,7 +154,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_buckle_mode_sensor(self) -> SimBuckleModeSensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateBuckleModeSensor() As SimBuckleModeSensor
@@ -175,7 +169,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_custom_plot_by_id(self, ics_plot_id: str) -> SimFieldPlot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCustomPlotByID(CATBSTR icsPlotId) As SimFieldPlot
@@ -202,7 +195,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_export_field_from_plot(self, ip_field_plot: SimFieldPlot) -> SimExportField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateExportFieldFromPlot(SimFieldPlot ipFieldPlot) As
@@ -225,7 +217,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_field_plot(self, ie_plot_type: int) -> SimFieldPlot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFieldPlot(SimFieldPlotTypes iePlotType) As
@@ -253,7 +244,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_field_plot_by_id(self, ics_data_display_id: str, icb_activate: bool) -> SimFieldPlot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFieldPlotByID(CATBSTR icsDataDisplayId,boolean icbActivate) As
@@ -281,7 +271,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_frame_selector(self) -> SimFramesSelection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFrameSelector() As SimFramesSelection
@@ -297,7 +286,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_frequency_sensor(self) -> SimFrequencySensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFrequencySensor() As SimFrequencySensor
@@ -313,7 +301,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_history_plot(self) -> SimHistoryPlot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateHistoryPlot() As SimHistoryPlot
@@ -329,7 +316,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_resultant_sensor(self) -> SimResultantSensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateResultantSensor() As SimResultantSensor
@@ -345,7 +331,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_sensor(self) -> SimSensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSensor() As SimSensor
@@ -361,7 +346,6 @@ class SimResultsAnalysisCase(AnyObject):
     def create_sensor_by_id(self, ics_sensor_id: str) -> SimSensor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSensorByID(CATBSTR icsSensorID) As SimSensor
@@ -385,7 +369,6 @@ class SimResultsAnalysisCase(AnyObject):
     def delete_feature(self, isp_results_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteFeature(CATBaseDispatch ispResultsObject)
@@ -412,7 +395,6 @@ class SimResultsAnalysisCase(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ExportSensorOutputToFile(CATSafeArrayVariant ilSensors,CATBSTR
@@ -483,7 +465,6 @@ class SimResultsAnalysisCase(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ExportSensorOutputToPLM(CATSafeArrayVariant ilSensors,CATBSTR
@@ -549,7 +530,6 @@ class SimResultsAnalysisCase(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetListOfFieldPlotIDs(CATSafeArrayVariant ilFields,boolean
@@ -618,7 +598,6 @@ class SimResultsAnalysisCase(AnyObject):
     def get_set(self, ie_set_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSet(CATBSTR ieSetType) As CATBaseDispatch
@@ -657,7 +636,6 @@ class SimResultsAnalysisCase(AnyObject):
     def remove_field_plot_definitions(self, ilcs_files: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub RemoveFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)

@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SettingController(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -139,7 +138,6 @@ class SettingController(AnyObject):
     def commit(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Commit()
@@ -156,7 +154,6 @@ class SettingController(AnyObject):
     def reset_to_admin_values(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ResetToAdminValues()
@@ -173,7 +170,6 @@ class SettingController(AnyObject):
     def reset_to_admin_values_by_name(self, i_att_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub ResetToAdminValuesByName(CATSafeArrayVariant iAttList)
@@ -214,7 +210,6 @@ class SettingController(AnyObject):
     def rollback(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Rollback()
@@ -232,7 +227,6 @@ class SettingController(AnyObject):
     def save_repository(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SaveRepository()

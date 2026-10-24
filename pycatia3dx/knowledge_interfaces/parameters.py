@@ -26,7 +26,6 @@ from pycatia3dx.types.general import CATVariant
 class Parameters(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -56,7 +55,6 @@ class Parameters(Collection):
     def root_parameter_set(self) -> ParameterSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property RootParameterSet() As ParameterSet (Read Only)
@@ -72,7 +70,6 @@ class Parameters(Collection):
     def units(self) -> Units:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Units() As Units (Read Only)
@@ -86,7 +83,6 @@ class Parameters(Collection):
     def create_boolean(self, i_name: str, i_value: bool) -> BoolParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateBoolean(CATBSTR iName,boolean iValue) As BoolParam
@@ -121,7 +117,6 @@ class Parameters(Collection):
     def create_dimension(self, i_name: str, i_magnitude: str, i_value: float) -> Dimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateDimension(CATBSTR iName,CATBSTR iMagnitude,double iValue) As
@@ -167,7 +162,6 @@ class Parameters(Collection):
     def create_integer(self, i_name: str, i_value: int) -> IntParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateInteger(CATBSTR iName,long iValue) As IntParam
@@ -202,7 +196,6 @@ class Parameters(Collection):
     def create_list(self, i_name: str) -> ListParameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateList(CATBSTR iName) As ListParameter
@@ -233,7 +226,6 @@ class Parameters(Collection):
     def create_real(self, i_name: str, i_value: float) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateReal(CATBSTR iName,double iValue) As RealParam
@@ -268,7 +260,6 @@ class Parameters(Collection):
     def create_set_of_parameters(self, i_father: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub CreateSetOfParameters(AnyObject iFather)
@@ -288,7 +279,6 @@ class Parameters(Collection):
     def create_string(self, i_name: str, i_value: str) -> StrParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateString(CATBSTR iName,CATBSTR iValue) As StrParam
@@ -322,7 +312,6 @@ class Parameters(Collection):
     def get_name_to_use_in_relation(self, i_object: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetNameToUseInRelation(AnyObject iObject) As CATBSTR
@@ -345,7 +334,6 @@ class Parameters(Collection):
     def item(self, i_index: CATVariant) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Parameter
@@ -378,7 +366,6 @@ class Parameters(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Remove(CATVariant iIndex)
@@ -407,7 +394,6 @@ class Parameters(Collection):
     def sub_list(self, i_object: AnyObject, i_recursively: bool) -> 'Parameters':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func SubList(AnyObject iObject,boolean iRecursively) As

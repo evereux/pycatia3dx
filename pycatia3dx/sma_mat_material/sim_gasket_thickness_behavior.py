@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimGasketThicknessBehavior(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -81,7 +79,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def behavior_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BehaviorType() As
@@ -105,7 +102,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def loading_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadingMaterialTable() As SimMaterialTable (Read
@@ -121,7 +117,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def tensile_stiffness_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TensileStiffnessFactor() As double
@@ -144,7 +139,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def unloading_material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UnloadingMaterialTable() As SimMaterialTable (Read
@@ -160,7 +154,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def user_unloading_curve_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserUnloadingCurveFlag() As boolean
@@ -184,7 +177,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def yield_onset_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property YieldOnsetValue() As double
@@ -206,7 +198,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def get_loading_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -232,7 +223,6 @@ class SimGasketThicknessBehavior(AnyObject):
     def get_unloading_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func
@@ -256,4 +246,4 @@ class SimGasketThicknessBehavior(AnyObject):
         return SimTableColumn(self.com_object.GetUnloadingMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimGasketThicknessBehavior(name="{ self.name }")'
+        return f'SimGasketThicknessBehavior(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia3dx.measure.measurable_curve import MeasurableCurve
 class MeasurableCircle(MeasurableCurve):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class MeasurableCircle(MeasurableCurve):
     def get_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAngle() As double
@@ -65,7 +63,6 @@ class MeasurableCircle(MeasurableCurve):
     def get_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(double oXVector,double oYVector,double oZVector)
@@ -93,7 +90,6 @@ class MeasurableCircle(MeasurableCurve):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
@@ -121,7 +117,6 @@ class MeasurableCircle(MeasurableCurve):
     def get_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRadius() As double

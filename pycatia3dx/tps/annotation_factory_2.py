@@ -15,10 +15,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class AnnotationFactory2(Factory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class AnnotationFactory2(Factory):
     def create_coord_dimension(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCoordDimension(UserSurface iSurf) As Annotation2
@@ -65,7 +62,6 @@ class AnnotationFactory2(Factory):
     def create_datum(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDatum(UserSurface iSurf) As Annotation2
@@ -87,7 +83,6 @@ class AnnotationFactory2(Factory):
     def create_datum_reference_frame(self) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDatumReferenceFrame() As Annotation2
@@ -100,7 +95,6 @@ class AnnotationFactory2(Factory):
     def create_datum_target(self, i_surf: UserSurface, i_datum: Annotation2) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDatumTarget(UserSurface iSurf,Annotation2 iDatum) As
@@ -124,10 +118,10 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.com_object.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
-    def create_ditto_noa(self, i_surf: UserSurface, i_noa_type: str, i_ditto: DrawingComponent, i_stick_to_geometry_option: bool) -> Annotation2:
+    def create_ditto_noa(self, i_surf: UserSurface, i_noa_type: str, i_ditto: DrawingComponent,
+                         i_stick_to_geometry_option: bool) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateDittoNOA(UserSurface iSurf,CATBSTR iNOAType,DrawingComponent
@@ -161,12 +155,13 @@ class AnnotationFactory2(Factory):
         :param bool i_stick_to_geometry_option:
         :return: Annotation2
         """
-        return Annotation2(self.com_object.CreateDittoNOA(i_surf.com_object, i_noa_type, i_ditto.com_object, i_stick_to_geometry_option))
+        return Annotation2(self.com_object.CreateDittoNOA(i_surf.com_object, i_noa_type, i_ditto.com_object,
+                                                          i_stick_to_geometry_option))
 
-    def create_evoluate_datum(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float, i_with_leader: bool) -> Annotation2:
+    def create_evoluate_datum(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float,
+                              i_with_leader: bool) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateEvoluateDatum(UserSurface iSurf,double iX,double iY,double
@@ -203,10 +198,10 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.com_object.CreateEvoluateDatum(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
 
-    def create_evoluate_text(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float, i_with_leader: bool) -> Annotation2:
+    def create_evoluate_text(self, i_surf: UserSurface, i_x: float, i_y: float, i_z: float,
+                             i_with_leader: bool) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateEvoluateText(UserSurface iSurf,double iX,double iY,double iZ,boolean
@@ -245,7 +240,6 @@ class AnnotationFactory2(Factory):
     def create_flag_note(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateFlagNote(UserSurface iSurf) As Annotation2
@@ -266,7 +260,6 @@ class AnnotationFactory2(Factory):
     def create_gdt(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateGDT(UserSurface iSurf) As Annotation2
@@ -284,10 +277,10 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.com_object.CreateGDT(i_surf.com_object))
 
-    def create_non_semantic_dimension(self, i_surf: UserSurface, i_type: CATVariant, i_sub_type: CATVariant) -> Annotation2:
+    def create_non_semantic_dimension(self, i_surf: UserSurface, i_type: CATVariant,
+                                      i_sub_type: CATVariant) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateNonSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
@@ -315,7 +308,6 @@ class AnnotationFactory2(Factory):
     def create_roughness(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRoughness(UserSurface iSurf) As Annotation2
@@ -336,7 +328,6 @@ class AnnotationFactory2(Factory):
     def create_semantic_dimension(self, i_surf: UserSurface, i_type: CATVariant, i_sub_type: CATVariant) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
@@ -358,7 +349,6 @@ class AnnotationFactory2(Factory):
     def create_text(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateText(UserSurface iSurf) As Annotation2
@@ -379,7 +369,6 @@ class AnnotationFactory2(Factory):
     def create_text_noa(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTextNOA(UserSurface iSurf) As Annotation2
@@ -401,7 +390,6 @@ class AnnotationFactory2(Factory):
     def create_text_note_object_attribute(self, i_surf: UserSurface, i_noa_type: str) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTextNoteObjectAttribute(UserSurface iSurf,CATBSTR iNOAType) As
@@ -428,7 +416,6 @@ class AnnotationFactory2(Factory):
     def create_text_on_annot(self, i_text: str, i_annot: Annotation2) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateTextOnAnnot(CATBSTR iText,Annotation2 iAnnot) As
@@ -453,7 +440,6 @@ class AnnotationFactory2(Factory):
     def create_tolerance_with_drf(self, i_index: CATVariant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateToleranceWithDRF(CATVariant iIndex,UserSurface iSurf,Annotation2
@@ -470,7 +456,6 @@ class AnnotationFactory2(Factory):
     def create_tolerance_without_drf(self, i_index: CATVariant, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateToleranceWithoutDRF(CATVariant iIndex,UserSurface iSurf) As
@@ -486,7 +471,6 @@ class AnnotationFactory2(Factory):
     def create_weld(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateWeld(UserSurface iSurf) As Annotation2
@@ -507,7 +491,6 @@ class AnnotationFactory2(Factory):
     def instanciate_noa(self, i_noa: Annotation2, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func InstanciateNOA(Annotation2 iNoa,UserSurface iSurf) As
@@ -530,4 +513,4 @@ class AnnotationFactory2(Factory):
         return Annotation2(self.com_object.InstanciateNOA(i_noa.com_object, i_surf.com_object))
 
     def __repr__(self):
-        return f'AnnotationFactory2(name="{ self.name }")'
+        return f'AnnotationFactory2(name="{self.name}")'

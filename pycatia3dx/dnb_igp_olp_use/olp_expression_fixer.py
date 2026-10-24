@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPExpressionFixer(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class OLPExpressionFixer(AnyObject):
     def fix_subscripted_variables(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FixSubscriptedVariables() As boolean
@@ -75,7 +72,6 @@ class OLPExpressionFixer(AnyObject):
     def functions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Functions() As CATSafeArrayVariant (Read Only)
@@ -96,7 +92,6 @@ class OLPExpressionFixer(AnyObject):
     def literals(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Literals() As CATSafeArrayVariant (Read Only)
@@ -118,7 +113,6 @@ class OLPExpressionFixer(AnyObject):
     def operators(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Operators() As CATSafeArrayVariant (Read Only)
@@ -141,7 +135,6 @@ class OLPExpressionFixer(AnyObject):
     def variables(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Variables() As CATSafeArrayVariant (Read Only)
@@ -166,7 +159,6 @@ class OLPExpressionFixer(AnyObject):
     def fix(self, o_expr: OLPAstBranch) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Fix(OlpAstBranch oExpr) As boolean
@@ -199,7 +191,6 @@ class OLPExpressionFixer(AnyObject):
     def set_expression(self, i_expr: OLPAstBranch, i_instr: OLPInstruction) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExpression(OlpAstBranch iExpr,OlpInstruction iInstr)
@@ -225,7 +216,6 @@ class OLPExpressionFixer(AnyObject):
     def subsitute_function_name(self, i_find_function: str, i_replace_function: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubsituteFunctionName(CATBSTR iFindFunction,CATBSTR
@@ -254,7 +244,6 @@ class OLPExpressionFixer(AnyObject):
     def substitute_operator(self, i_find_operator: str, i_replace_operator: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SubstituteOperator(CATBSTR iFindOperator,CATBSTR
@@ -284,4 +273,4 @@ class OLPExpressionFixer(AnyObject):
         return self.com_object.SubstituteOperator(i_find_operator, i_replace_operator)
 
     def __repr__(self):
-        return f'OLPExpressionFixer(name="{ self.name }")'
+        return f'OLPExpressionFixer(name="{self.name}")'

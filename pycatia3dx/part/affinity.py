@@ -13,10 +13,8 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class Affinity(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +56,6 @@ class Affinity(Shape):
     def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HybridShape() As HybridShape (Read Only)
@@ -78,4 +75,4 @@ class Affinity(Shape):
         return HybridShape(self.com_object.HybridShape)
 
     def __repr__(self):
-        return f'Affinity(name="{ self.name }")'
+        return f'Affinity(name="{self.name}")'

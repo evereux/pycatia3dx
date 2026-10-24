@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscMotionProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -72,7 +70,6 @@ class RscMotionProfile(AnyObject):
     def acceleration_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccelerationValue() As double
@@ -108,7 +105,6 @@ class RscMotionProfile(AnyObject):
     def angular_acceleration_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularAccelerationValue() As double
@@ -141,7 +137,6 @@ class RscMotionProfile(AnyObject):
     def angular_speed_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularSpeedValue() As double
@@ -173,7 +168,6 @@ class RscMotionProfile(AnyObject):
     def motion_basis(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionBasis() As MotionBasis
@@ -209,7 +203,6 @@ class RscMotionProfile(AnyObject):
     def speed_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpeedValue() As double
@@ -241,4 +234,4 @@ class RscMotionProfile(AnyObject):
         self.com_object.SpeedValue = value
 
     def __repr__(self):
-        return f'RscMotionProfile(name="{ self.name }")'
+        return f'RscMotionProfile(name="{self.name}")'

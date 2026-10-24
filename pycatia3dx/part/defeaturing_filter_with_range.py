@@ -14,10 +14,8 @@ from pycatia3dx.part.defeaturing_filter import DefeaturingFilter
 
 
 class DefeaturingFilterWithRange(DefeaturingFilter):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_maximum_activity(self, i_range_id: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMaximumActivity(CATBSTR iRangeId) As boolean
@@ -54,7 +51,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_maximum_angle(self, i_range_id: str) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMaximumAngle(CATBSTR iRangeId) As Angle
@@ -67,7 +63,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_maximum_length(self, i_range_id: str) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMaximumLength(CATBSTR iRangeId) As Length
@@ -80,7 +75,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_maximum_value(self, i_range_id: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMaximumValue(CATBSTR iRangeId) As double
@@ -93,7 +87,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_minimum_activity(self, i_range_id: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMinimumActivity(CATBSTR iRangeId) As boolean
@@ -129,7 +122,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_minimum_angle(self, i_range_id: str) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMinimumAngle(CATBSTR iRangeId) As Angle
@@ -142,7 +134,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_minimum_length(self, i_range_id: str) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMinimumLength(CATBSTR iRangeId) As Length
@@ -155,7 +146,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def get_minimum_value(self, i_range_id: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func getMinimumValue(CATBSTR iRangeId) As double
@@ -206,7 +196,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def set_maximum_activity(self, i_range_id: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub setMaximumActivity(CATBSTR iRangeId,boolean iValue)
@@ -220,7 +209,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def set_maximum_value(self, i_range_id: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub setMaximumValue(CATBSTR iRangeId,double iValue)
@@ -234,7 +222,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
     def set_minimum_activity(self, i_range_id: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub setMinimumActivity(CATBSTR iRangeId,boolean iValue)
@@ -273,7 +260,6 @@ myFilter.setMaximumActivity(myRange,theMaxActivity)                |            
     def set_minimum_value(self, i_range_id: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub setMinimumValue(CATBSTR iRangeId,double iValue)
@@ -313,4 +299,4 @@ myFilter.setMaximumActivity(myRange,theMaxActivity)                |            
         return self.com_object.setMinimumValue(i_range_id, i_value)
 
     def __repr__(self):
-        return f'DefeaturingFilterWithRange(name="{ self.name }")'
+        return f'DefeaturingFilterWithRange(name="{self.name}")'

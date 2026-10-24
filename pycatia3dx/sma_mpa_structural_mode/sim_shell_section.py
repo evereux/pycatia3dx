@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_rebar_layers import SimRebarLayers
 
 
 class SimShellSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimShellSection(AnyObject):
     def all_rebar_layers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
@@ -92,7 +89,6 @@ class SimShellSection(AnyObject):
     def field_point_specified(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldPointSpecified() As boolean
@@ -118,7 +114,6 @@ class SimShellSection(AnyObject):
     def field_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldPoints() As long
@@ -141,7 +136,6 @@ class SimShellSection(AnyObject):
     def infinite_max_thickness_interval_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InfiniteMaxThicknessIntervalFlag() As boolean
@@ -164,7 +158,6 @@ class SimShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntegrationScheme() As
@@ -188,7 +181,6 @@ class SimShellSection(AnyObject):
     def interval(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Interval() As double
@@ -211,7 +203,6 @@ class SimShellSection(AnyObject):
     def interval_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntervalFlag() As boolean (Read Only)
@@ -232,7 +223,6 @@ class SimShellSection(AnyObject):
     def map_thickness_to_nodes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MapThicknessToNodesFlag() As boolean
@@ -258,7 +248,6 @@ class SimShellSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -281,7 +270,6 @@ class SimShellSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -304,7 +292,6 @@ class SimShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumIntPoints() As long
@@ -327,7 +314,6 @@ class SimShellSection(AnyObject):
     def offset_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetMethod() As SimShellSectionOffsetMethod
@@ -350,7 +336,6 @@ class SimShellSection(AnyObject):
     def offset_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetRatio() As double
@@ -374,7 +359,6 @@ class SimShellSection(AnyObject):
     def offset_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetValue() As double
@@ -398,7 +382,6 @@ class SimShellSection(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -413,7 +396,6 @@ class SimShellSection(AnyObject):
     def poisson_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonMethod() As SimShellSectionPoissonMethod
@@ -436,7 +418,6 @@ class SimShellSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonValue() As double
@@ -459,7 +440,6 @@ class SimShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreIntegrationFlag() As boolean
@@ -487,7 +467,6 @@ class SimShellSection(AnyObject):
     def rebar_layers_orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RebarLayersOrientation() As SimOrientation (Read
@@ -503,7 +482,6 @@ class SimShellSection(AnyObject):
     def rebars(self) -> SimRebarLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Rebars() As SimRebarLayers (Read Only)
@@ -518,7 +496,6 @@ class SimShellSection(AnyObject):
     def round_off_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RoundOffFlag() As boolean
@@ -546,7 +523,6 @@ class SimShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -586,7 +562,6 @@ class SimShellSection(AnyObject):
     def split_by_thickness_offset_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SplitByThicknessOffsetFlag() As boolean
@@ -614,7 +589,6 @@ class SimShellSection(AnyObject):
     def thickness_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessField() As SimScalarField (Read Only)
@@ -629,7 +603,6 @@ class SimShellSection(AnyObject):
     def thickness_grouping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessGroupingFlag() As boolean
@@ -652,7 +625,6 @@ class SimShellSection(AnyObject):
     def thickness_grouping_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessGroupingValue() As double
@@ -675,7 +647,6 @@ class SimShellSection(AnyObject):
     def thickness_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessType() As SimShellSectionThicknessType
@@ -698,7 +669,6 @@ class SimShellSection(AnyObject):
     def transverse_shear_stiffness_option_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TransverseShearStiffnessOptionFlag() As boolean
@@ -722,7 +692,6 @@ class SimShellSection(AnyObject):
     def uniform_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThickness() As double
@@ -746,7 +715,6 @@ class SimShellSection(AnyObject):
     def uniform_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThicknessFlag() As boolean (Read Only)
@@ -765,7 +733,6 @@ class SimShellSection(AnyObject):
     def add_rebar_layer(self, i_type: str, o_feature: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
@@ -780,7 +747,6 @@ class SimShellSection(AnyObject):
     def get_material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialBehavior() As CATBaseDispatch
@@ -799,7 +765,6 @@ class SimShellSection(AnyObject):
     def get_transverse_shear_stiffness_values(self, o_k11_value: float, o_k22_value: float, o_k12_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTransverseShearStiffnessValues(double oK11Value,double oK22Value,double
@@ -828,7 +793,6 @@ class SimShellSection(AnyObject):
     def set_material_behavior(self, i_behavior_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
@@ -854,7 +818,6 @@ class SimShellSection(AnyObject):
     def set_transverse_shear_stiffness_values(self, i_k11_value: float, i_k22_value: float, i_k12_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransverseShearStiffnessValues(double iK11Value,double iK22Value,double
@@ -881,4 +844,4 @@ class SimShellSection(AnyObject):
         return self.com_object.SetTransverseShearStiffnessValues(i_k11_value, i_k22_value, i_k12_value)
 
     def __repr__(self):
-        return f'SimShellSection(name="{ self.name }")'
+        return f'SimShellSection(name="{self.name}")'

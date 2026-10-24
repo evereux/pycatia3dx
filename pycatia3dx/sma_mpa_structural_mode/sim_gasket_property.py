@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_orientation import SimOrientation
 
 
 class SimGasketProperty(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimGasketProperty(AnyObject):
     def cross_sectional_area(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CrossSectionalArea() As double
@@ -99,7 +96,6 @@ class SimGasketProperty(AnyObject):
     def initial_gap(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialGap() As double
@@ -122,7 +118,6 @@ class SimGasketProperty(AnyObject):
     def initial_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialThicknessFlag() As boolean
@@ -150,7 +145,6 @@ class SimGasketProperty(AnyObject):
     def initial_thickness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialThicknessValue() As double
@@ -173,7 +167,6 @@ class SimGasketProperty(AnyObject):
     def initial_void(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialVoid() As double
@@ -196,7 +189,6 @@ class SimGasketProperty(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -219,7 +211,6 @@ class SimGasketProperty(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -242,7 +233,6 @@ class SimGasketProperty(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -257,7 +247,6 @@ class SimGasketProperty(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -297,7 +286,6 @@ class SimGasketProperty(AnyObject):
     def stabilization_stiffness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StabilizationStiffnessFlag() As boolean
@@ -325,7 +313,6 @@ class SimGasketProperty(AnyObject):
     def stabilization_stiffness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StabilizationStiffnessValue() As double
@@ -348,7 +335,6 @@ class SimGasketProperty(AnyObject):
     def thickness_only_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessOnlyFlag() As boolean
@@ -373,4 +359,4 @@ class SimGasketProperty(AnyObject):
         self.com_object.ThicknessOnlyFlag = value
 
     def __repr__(self):
-        return f'SimGasketProperty(name="{ self.name }")'
+        return f'SimGasketProperty(name="{self.name}")'

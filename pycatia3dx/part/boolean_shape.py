@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class BooleanShape(Shape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +48,6 @@ class BooleanShape(Shape):
     def body(self) -> 'Body':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Body() As Body (Read Only)
@@ -64,7 +62,6 @@ class BooleanShape(Shape):
     def set_operated_object(self, i_reference_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOperatedObject(Reference iReferenceObject)
@@ -78,7 +75,6 @@ class BooleanShape(Shape):
     def set_operating_volume(self, i_reference_object: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOperatingVolume(Reference iReferenceObject)

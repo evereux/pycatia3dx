@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class AGTCategoryMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class AGTCategoryMngt(AnyObject):
     def get_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCategory() As CATBSTR
@@ -61,7 +59,6 @@ class AGTCategoryMngt(AnyObject):
     def set_category(self, i_category: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCategory(CATBSTR iCategory)

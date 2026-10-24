@@ -16,7 +16,6 @@ from pycatia3dx.product_structure_client.vpm_rep_occurrences import VPMRepOccurr
 class VPMRootOccurrence(PLMOccurrence):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class VPMRootOccurrence(PLMOccurrence):
     def occurrences(self) -> VPMOccurrences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Occurrences() As VPMOccurrences (Read Only)
@@ -70,7 +68,6 @@ class VPMRootOccurrence(PLMOccurrence):
     def reference_root_occurrence_of(self) -> VPMReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceRootOccurrenceOf() As VPMReference (Read
@@ -97,7 +94,6 @@ class VPMRootOccurrence(PLMOccurrence):
     def rep_occurrences(self) -> VPMRepOccurrences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RepOccurrences() As VPMRepOccurrences (Read Only)

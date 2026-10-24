@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimCompositeShellSection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +76,6 @@ class SimCompositeShellSection(AnyObject):
     def composite_layup_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CompositeLayupType() As SimCompositeLayupType
@@ -101,7 +99,6 @@ class SimCompositeShellSection(AnyObject):
     def composite_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CompositeSupport() As CATBaseDispatch (Read Only)
@@ -121,7 +118,6 @@ class SimCompositeShellSection(AnyObject):
     def core_sampling_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoreSamplingDepth() As double
@@ -144,7 +140,6 @@ class SimCompositeShellSection(AnyObject):
     def core_sampling_depth_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoreSamplingDepthFlag() As boolean (Read Only)
@@ -164,7 +159,6 @@ class SimCompositeShellSection(AnyObject):
     def cut_pieces_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CutPiecesFlag() As boolean
@@ -193,7 +187,6 @@ class SimCompositeShellSection(AnyObject):
     def fiber_orientations_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FiberOrientationsFlag() As boolean (Read Only)
@@ -215,7 +208,6 @@ class SimCompositeShellSection(AnyObject):
     def field_point_specified_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldPointSpecifiedFlag() As boolean (Read Only)
@@ -230,7 +222,6 @@ class SimCompositeShellSection(AnyObject):
     def field_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FieldPoints() As long
@@ -253,7 +244,6 @@ class SimCompositeShellSection(AnyObject):
     def integration_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntegrationScheme() As
@@ -277,7 +267,6 @@ class SimCompositeShellSection(AnyObject):
     def layer_material_support(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LayerMaterialSupport() As CATBaseDispatch (Read Only)
@@ -302,7 +291,6 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NonstructuralPlyAngle() As double
@@ -325,7 +313,6 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NonstructuralPlyFlag() As boolean
@@ -352,7 +339,6 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_material(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NonstructuralPlyMaterial() As CATBaseDispatch
@@ -375,7 +361,6 @@ class SimCompositeShellSection(AnyObject):
     def nonstructural_ply_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NonstructuralPlyPosition() As
@@ -399,7 +384,6 @@ class SimCompositeShellSection(AnyObject):
     def num_int_points(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumIntPoints() As long
@@ -422,7 +406,6 @@ class SimCompositeShellSection(AnyObject):
     def num_int_points_per_layer_material(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumIntPointsPerLayerMaterial() As CATSafeArrayVariant
@@ -446,7 +429,6 @@ class SimCompositeShellSection(AnyObject):
     def offset_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetMethod() As
@@ -470,7 +452,6 @@ class SimCompositeShellSection(AnyObject):
     def offset_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetRatio() As double
@@ -494,7 +475,6 @@ class SimCompositeShellSection(AnyObject):
     def offset_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetValue() As double
@@ -518,7 +498,6 @@ class SimCompositeShellSection(AnyObject):
     def pre_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreIntegrationFlag() As boolean
@@ -546,7 +525,6 @@ class SimCompositeShellSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -586,7 +564,6 @@ class SimCompositeShellSection(AnyObject):
     def symmetrical_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SymmetricalFlag() As boolean
@@ -613,7 +590,6 @@ class SimCompositeShellSection(AnyObject):
     def create_grid(self, i_geometries: tuple, i_rosette: AnyObject) -> SimCompositeGrid:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CreateGrid(CATSafeArrayVariant iGeometries,CATBaseDispatch iRosette) As
@@ -659,7 +635,6 @@ class SimCompositeShellSection(AnyObject):
     def get_composite_parameters(self) -> SimCompositeParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCompositeParameters() As SimCompositeParameters

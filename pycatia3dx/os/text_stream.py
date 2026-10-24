@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class TextStream(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -38,7 +37,6 @@ class TextStream(AnyObject):
     def at_end_of_line(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property AtEndOfLine() As boolean (Read Only)
@@ -61,7 +59,6 @@ class TextStream(AnyObject):
     def at_end_of_stream(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property AtEndOfStream() As boolean (Read Only)
@@ -83,7 +80,6 @@ class TextStream(AnyObject):
     def close(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Close()
@@ -101,7 +97,6 @@ class TextStream(AnyObject):
     def read(self, i_num_of_char: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Read(long iNumOfChar) As CATBSTR
@@ -131,7 +126,6 @@ class TextStream(AnyObject):
     def read_line(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func ReadLine() As CATBSTR
@@ -155,7 +149,6 @@ class TextStream(AnyObject):
     def write(self, i_written_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Write(CATBSTR iWrittenString)

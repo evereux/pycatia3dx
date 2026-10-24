@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_reference import StrReference
 class StrPosDualRef(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class StrPosDualRef(AnyObject):
     def role(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Role() As CATBSTR (Read Only)
@@ -71,7 +69,6 @@ class StrPosDualRef(AnyObject):
     def get_ref1_data(self) -> StrReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRef1Data() As StrReference
@@ -95,7 +92,6 @@ class StrPosDualRef(AnyObject):
     def get_ref2_data(self) -> StrReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRef2Data() As StrReference

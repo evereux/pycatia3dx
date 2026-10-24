@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_foundation.sim_space_time_field import SimSpaceTimeField
 
 
 class SimSymmetricTensorField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimSymmetricTensorField(AnyObject):
     def space_time_field_data(self) -> SimSpaceTimeField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
@@ -54,7 +51,6 @@ class SimSymmetricTensorField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As
@@ -74,10 +70,10 @@ class SimSymmetricTensorField(AnyObject):
 
         self.com_object.VariationType = value
 
-    def get_uniform_tensor_components(self, o_comp11: float, o_comp22: float, o_comp33: float, o_comp12: float, o_comp13: float, o_comp23: float) -> None:
+    def get_uniform_tensor_components(self, o_comp11: float, o_comp22: float, o_comp33: float, o_comp12: float,
+                                      o_comp13: float, o_comp23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetUniformTensorComponents(double oComp11,double oComp22,double
@@ -112,10 +108,10 @@ class SimSymmetricTensorField(AnyObject):
         """
         return self.com_object.GetUniformTensorComponents(o_comp11, o_comp22, o_comp33, o_comp12, o_comp13, o_comp23)
 
-    def set_uniform_tensor_components(self, i_comp11: float, i_comp22: float, i_comp33: float, i_comp12: float, i_comp13: float, i_comp23: float) -> None:
+    def set_uniform_tensor_components(self, i_comp11: float, i_comp22: float, i_comp33: float, i_comp12: float,
+                                      i_comp13: float, i_comp23: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUniformTensorComponents(double iComp11,double iComp22,double
@@ -151,4 +147,4 @@ class SimSymmetricTensorField(AnyObject):
         return self.com_object.SetUniformTensorComponents(i_comp11, i_comp22, i_comp33, i_comp12, i_comp13, i_comp23)
 
     def __repr__(self):
-        return f'SimSymmetricTensorField(name="{ self.name }")'
+        return f'SimSymmetricTensorField(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class SimulationSpecifications(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class SimulationSpecifications(Collection):
     def item(self, i_index: CATVariant) -> SimulationObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimulationObject

@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SddPlateSubElementMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SddPlateSubElementMngt(AnyObject):
     def get_faces(self, i_name: int) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFaces(CATStrPlateFaceName iName) As References
@@ -60,4 +57,4 @@ class SddPlateSubElementMngt(AnyObject):
         return References(self.com_object.GetFaces(i_name))
 
     def __repr__(self):
-        return f'SddPlateSubElementMngt(name="{ self.name }")'
+        return f'SddPlateSubElementMngt(name="{self.name}")'

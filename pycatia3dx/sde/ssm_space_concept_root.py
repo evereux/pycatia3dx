@@ -13,10 +13,8 @@ from pycatia3dx.sde.ssm_space_concept_nodes import SsmSpaceConceptNodes
 
 
 class SsmSpaceConceptRoot(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SsmSpaceConceptRoot(AnyObject):
     def space_concept_nodes(self) -> SsmSpaceConceptNodes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
@@ -57,4 +54,4 @@ class SsmSpaceConceptRoot(AnyObject):
         return SsmSpaceConceptNodes(self.com_object.SpaceConceptNodes)
 
     def __repr__(self):
-        return f'SsmSpaceConceptRoot(name="{ self.name }")'
+        return f'SsmSpaceConceptRoot(name="{self.name}")'

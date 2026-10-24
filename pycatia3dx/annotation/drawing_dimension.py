@@ -18,7 +18,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingDimension(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class DrawingDimension(AnyObject):
     def cumulate_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CumulateMode() As boolean (Read Only)
@@ -65,7 +63,6 @@ class DrawingDimension(AnyObject):
     def dim_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimStatus() As CatDimAnalyse (Read Only)
@@ -86,7 +83,6 @@ class DrawingDimension(AnyObject):
     def dim_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimType() As CatDimType (Read Only)
@@ -107,7 +103,6 @@ class DrawingDimension(AnyObject):
     def dual_value(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DualValue() As CatDimDualDisplay
@@ -136,7 +131,6 @@ class DrawingDimension(AnyObject):
     def forshortened(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Forshortened() As boolean
@@ -165,7 +159,6 @@ class DrawingDimension(AnyObject):
     def half_dim_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HalfDimMode() As boolean
@@ -194,7 +187,6 @@ class DrawingDimension(AnyObject):
     def is_clipped(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsClipped() As boolean (Read Only)
@@ -214,7 +206,6 @@ class DrawingDimension(AnyObject):
     def nb_ext_line(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbExtLine() As long (Read Only)
@@ -235,7 +226,6 @@ class DrawingDimension(AnyObject):
     def nb_symb(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbSymb() As long (Read Only)
@@ -256,7 +246,6 @@ class DrawingDimension(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As Parameters (Read Only)
@@ -286,7 +275,6 @@ class DrawingDimension(AnyObject):
     def symbols_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SymbolsSide() As long
@@ -315,7 +303,6 @@ class DrawingDimension(AnyObject):
     def true_dim_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TrueDimMode() As boolean (Read Only)
@@ -336,7 +323,6 @@ class DrawingDimension(AnyObject):
     def value_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueAngle() As double
@@ -365,7 +351,6 @@ class DrawingDimension(AnyObject):
     def value_auto_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueAutoMode() As long
@@ -394,7 +379,6 @@ class DrawingDimension(AnyObject):
     def value_display(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueDisplay() As long
@@ -423,7 +407,6 @@ class DrawingDimension(AnyObject):
     def value_frame(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueFrame() As CatDimFrame
@@ -452,7 +435,6 @@ class DrawingDimension(AnyObject):
     def value_in_out(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueInOut() As long
@@ -481,7 +463,6 @@ class DrawingDimension(AnyObject):
     def value_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueOrientation() As CatDimOrientation
@@ -510,7 +491,6 @@ class DrawingDimension(AnyObject):
     def value_reference(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValueReference() As CatDimReference
@@ -538,7 +518,6 @@ class DrawingDimension(AnyObject):
     def get_boundary_box(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBoundaryBox(CATSafeArrayVariant oValues)
@@ -580,7 +559,6 @@ class DrawingDimension(AnyObject):
     def get_clip(self, x: float, y: float, o_kept_side: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetClip(double X,double Y,long oKeptSide)
@@ -615,7 +593,6 @@ class DrawingDimension(AnyObject):
     def get_dim_ext_line(self) -> DrawingDimExtLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDimExtLine() As DrawingDimExtLine
@@ -640,7 +617,6 @@ class DrawingDimension(AnyObject):
     def get_dim_line(self) -> DrawingDimLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDimLine() As DrawingDimLine
@@ -666,7 +642,6 @@ class DrawingDimension(AnyObject):
                        od_low_tol: float, o_display_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTolerances(long oTolType,CATBSTR oTolName,CATBSTR oUpTol,CATBSTR
@@ -711,7 +686,6 @@ class DrawingDimension(AnyObject):
     def get_value(self) -> DrawingDimValue:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue() As DrawingDimValue
@@ -735,7 +709,6 @@ class DrawingDimension(AnyObject):
     def move_value(self, x: float, y: float, sub_part: int, dim_angle_behavior: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveValue(double X,double Y,long SubPart,long
@@ -782,7 +755,6 @@ class DrawingDimension(AnyObject):
     def restore_value_position(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RestoreValuePosition()
@@ -800,7 +772,6 @@ class DrawingDimension(AnyObject):
     def set_clip(self, x: float, y: float, i_kept_side: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetClip(double X,double Y,long iKeptSide)
@@ -835,7 +806,6 @@ class DrawingDimension(AnyObject):
                        id_low_tol: float, display_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTolerances(long iTolType,CATBSTR itolName,CATBSTR iUpTol,CATBSTR
@@ -880,7 +850,6 @@ class DrawingDimension(AnyObject):
     def unclip(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Unclip()

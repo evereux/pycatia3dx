@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingUserParam(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +56,6 @@ class ManufacturingUserParam(AnyObject):
     def add_parameter(self, i_name: str, i_type: int, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddParameter(CATBSTR iName,long iType,long iPos)
@@ -87,7 +84,6 @@ class ManufacturingUserParam(AnyObject):
     def get_value_boolean(self, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueBoolean(CATBSTR iName) As boolean
@@ -111,7 +107,6 @@ class ManufacturingUserParam(AnyObject):
     def get_value_double(self, i_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueDouble(CATBSTR iName) As double
@@ -135,7 +130,6 @@ class ManufacturingUserParam(AnyObject):
     def get_value_long(self, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueLong(CATBSTR iName) As long
@@ -159,7 +153,6 @@ class ManufacturingUserParam(AnyObject):
     def get_value_parameter(self, i_name: str) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueParameter(CATBSTR iName) As Parameter
@@ -183,7 +176,6 @@ class ManufacturingUserParam(AnyObject):
     def get_value_str(self, i_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueStr(CATBSTR iName) As CATBSTR
@@ -207,7 +199,6 @@ class ManufacturingUserParam(AnyObject):
     def remove_parameter(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveParameter(CATBSTR iName)
@@ -229,7 +220,6 @@ class ManufacturingUserParam(AnyObject):
     def set_value_boolean(self, i_name: str, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueBoolean(CATBSTR iName,boolean iValue)
@@ -254,7 +244,6 @@ class ManufacturingUserParam(AnyObject):
     def set_value_double(self, i_name: str, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueDouble(CATBSTR iName,double iValue)
@@ -279,7 +268,6 @@ class ManufacturingUserParam(AnyObject):
     def set_value_long(self, i_name: str, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueLong(CATBSTR iName,long iValue)
@@ -304,7 +292,6 @@ class ManufacturingUserParam(AnyObject):
     def set_value_str(self, i_name: str, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValueStr(CATBSTR iName,CATBSTR iValue)
@@ -327,4 +314,4 @@ class ManufacturingUserParam(AnyObject):
         return self.com_object.SetValueStr(i_name, i_value)
 
     def __repr__(self):
-        return f'ManufacturingUserParam(name="{ self.name }")'
+        return f'ManufacturingUserParam(name="{self.name}")'

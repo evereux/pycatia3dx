@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimFramesSelection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +52,6 @@ class SimFramesSelection(AnyObject):
     def step_list(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StepList(CATSafeArrayVariant iStepsList) (Write Only)
@@ -90,7 +88,6 @@ class SimFramesSelection(AnyObject):
     def symbolic_frame_range(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SymbolicFrameRange(SimSymbolicFrameRangesEnum ieSymbolicFrameRange)
@@ -122,7 +119,6 @@ class SimFramesSelection(AnyObject):
     def set_frames(self, i_nb_frames: tuple, i_frame_index: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetFrames(CATSafeArrayVariant iNbFrames,CATSafeArrayVariant
@@ -162,7 +158,6 @@ class SimFramesSelection(AnyObject):
     def set_load_cases(self, i_nb_load_cases_in_step: tuple, i_load_case_id_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetLoadCases(CATSafeArrayVariant iNbLoadCasesInStep,CATSafeArrayVariant

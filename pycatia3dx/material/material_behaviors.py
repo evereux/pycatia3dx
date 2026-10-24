@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class MaterialBehaviors(PLMEntities):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class MaterialBehaviors(PLMEntities):
     def add_simulation_behavior(self) -> MaterialBehavior:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddSimulationBehavior() As MaterialBehavior
@@ -70,7 +68,6 @@ class MaterialBehaviors(PLMEntities):
     def get_behavior(self, i_index: CATVariant) -> MaterialBehavior:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetBehavior(CATVariant iIndex) As MaterialBehavior
@@ -101,7 +98,6 @@ class MaterialBehaviors(PLMEntities):
     def remove(self, i_behavior: MaterialBehavior) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(MaterialBehavior iBehavior)

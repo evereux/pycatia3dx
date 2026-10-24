@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimRemoteForce(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimRemoteForce(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimRemoteForce(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -115,7 +111,6 @@ class SimRemoteForce(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -130,7 +125,6 @@ class SimRemoteForce(AnyObject):
     def follower_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FollowerFlag() As boolean
@@ -160,7 +154,6 @@ class SimRemoteForce(AnyObject):
     def reference_point(self) -> SimPoint:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePoint() As SimPoint (Read Only)
@@ -175,7 +168,6 @@ class SimRemoteForce(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -190,7 +182,6 @@ class SimRemoteForce(AnyObject):
     def get_magnitude(self, o_fx: float, o_fy: float, o_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMagnitude(double oFx,double oFy,double oFz)
@@ -217,7 +208,6 @@ class SimRemoteForce(AnyObject):
     def set_magnitude(self, i_fx: float, i_fy: float, i_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMagnitude(double iFx,double iFy,double iFz)
@@ -242,4 +232,4 @@ class SimRemoteForce(AnyObject):
         return self.com_object.SetMagnitude(i_fx, i_fy, i_fz)
 
     def __repr__(self):
-        return f'SimRemoteForce(name="{ self.name }")'
+        return f'SimRemoteForce(name="{self.name}")'

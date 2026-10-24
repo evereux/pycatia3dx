@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimPrdRepFactory(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SimPrdRepFactory(CATBaseDispatch):
     def create_prd_rep(self, i_rep_type: str) -> VPMRepReference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePrdRep(CATBSTR iRepType) As VPMRepReference

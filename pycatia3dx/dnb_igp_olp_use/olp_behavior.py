@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variables import OLPVariables
 
 
 class OLPBehavior(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class OLPBehavior(AnyObject):
     def global_variables(self) -> OLPVariables:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalVariables() As OlpVariables (Read Only)
@@ -60,7 +57,6 @@ class OLPBehavior(AnyObject):
     def procedures(self) -> OLPProcedures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Procedures() As OlpProcedures (Read Only)
@@ -74,4 +70,4 @@ class OLPBehavior(AnyObject):
         return OLPProcedures(self.com_object.Procedures)
 
     def __repr__(self):
-        return f'OLPBehavior(name="{ self.name }")'
+        return f'OLPBehavior(name="{self.name}")'

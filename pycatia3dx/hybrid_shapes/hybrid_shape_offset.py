@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeOffset(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeOffset(HybridShape):
     def offset_direction(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OffsetDirection() As boolean
@@ -78,7 +75,6 @@ class HybridShapeOffset(HybridShape):
     def offset_value(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OffsetValue() As Length
@@ -101,7 +97,6 @@ class HybridShapeOffset(HybridShape):
     def offseted_object(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OffsetedObject() As Reference
@@ -125,7 +120,6 @@ class HybridShapeOffset(HybridShape):
     def suppress_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SuppressMode() As boolean
@@ -148,7 +142,6 @@ class HybridShapeOffset(HybridShape):
     def add_tricky_face(self, i_tricky_face: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddTrickyFace(Reference iTrickyFace)
@@ -162,7 +155,6 @@ class HybridShapeOffset(HybridShape):
     def get_tricky_face(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTrickyFace(long iRank) As Reference
@@ -177,7 +169,6 @@ class HybridShapeOffset(HybridShape):
     def remove_tricky_face(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveTrickyFace(long iRank)
@@ -192,7 +183,6 @@ class HybridShapeOffset(HybridShape):
     def set_offset_value(self, i_offset: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetOffsetValue(double iOffset)
@@ -205,4 +195,4 @@ class HybridShapeOffset(HybridShape):
         return self.com_object.SetOffsetValue(i_offset)
 
     def __repr__(self):
-        return f'HybridShapeOffset(name="{ self.name }")'
+        return f'HybridShapeOffset(name="{self.name}")'

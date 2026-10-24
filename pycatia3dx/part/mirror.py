@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Mirror(TransformationShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class Mirror(TransformationShape):
     def design_intent(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DesignIntent() As double
@@ -71,7 +68,6 @@ class Mirror(TransformationShape):
     def mirroring_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MirroringObject() As AnyObject (Read Only)
@@ -86,7 +82,6 @@ class Mirror(TransformationShape):
     def mirroring_plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MirroringPlane() As Reference
@@ -118,4 +113,4 @@ class Mirror(TransformationShape):
         self.com_object.MirroringPlane = value
 
     def __repr__(self):
-        return f'Mirror(name="{ self.name }")'
+        return f'Mirror(name="{self.name}")'

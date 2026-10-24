@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Wall(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class Wall(AnyObject):
     def agt_category_mngt(self) -> AGTCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
@@ -62,7 +60,6 @@ class Wall(AnyObject):
     def agt_material_mngt(self) -> AGTMaterialMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)

@@ -14,7 +14,6 @@ from pycatia3dx.plm_document.plm_document import PLMDocument
 class PLMDocumentServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class PLMDocumentServices(Service):
     ) -> PLMDocument:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func CreateDocument(CATSafeArrayVariant iAttrNames,CATSafeArrayVariant

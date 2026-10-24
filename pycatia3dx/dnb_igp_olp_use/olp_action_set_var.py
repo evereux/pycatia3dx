@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPActionSetVar(OLPTriggerAction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPActionSetVar(OLPTriggerAction):
     def destination(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Destination() As OlpVariable
@@ -68,7 +65,6 @@ class OLPActionSetVar(OLPTriggerAction):
     def destination_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DestinationExpress() As OlpAstBranch
@@ -91,7 +87,6 @@ class OLPActionSetVar(OLPTriggerAction):
     def source(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Source() As OlpAstBranch
@@ -117,4 +112,4 @@ class OLPActionSetVar(OLPTriggerAction):
         self.com_object.Source = value
 
     def __repr__(self):
-        return f'OLPActionSetVar(name="{ self.name }")'
+        return f'OLPActionSetVar(name="{self.name}")'

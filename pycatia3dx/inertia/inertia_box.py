@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class InertiaBox(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class InertiaBox(AnyObject):
     def get_bounding_box(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBoundingBox(CATSafeArrayVariant oBoundingBoxOrigin,CATSafeArrayVariant

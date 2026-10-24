@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrSequence(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +34,6 @@ class SpotDrSequence(AnyObject):
     def get_drill_rivet_profile(self, i_pos_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDrillRivetProfile(short iPosIndex) As AnyObject
@@ -61,7 +58,6 @@ class SpotDrSequence(AnyObject):
     def get_manufacturing_fastener(self, i_pos_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFastener(short iPosIndex) As AnyObject
@@ -85,7 +81,6 @@ class SpotDrSequence(AnyObject):
     def get_manufacturing_pattern(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingPattern() As AnyObject
@@ -106,7 +101,6 @@ class SpotDrSequence(AnyObject):
     def get_object_profile(self, i_pos_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetObjectProfile(short iPosIndex) As AnyObject
@@ -131,7 +125,6 @@ class SpotDrSequence(AnyObject):
     def get_position_coordinates(self, i_pos_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPositionCoordinates(short iPosIndex) As
@@ -160,7 +153,6 @@ class SpotDrSequence(AnyObject):
     def get_tool_profile(self, i_pos_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetToolProfile(short iPosIndex) As AnyObject
@@ -184,7 +176,6 @@ class SpotDrSequence(AnyObject):
     def set_drill_rivet_profile(self, i_pos_index: int, i_dr_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDrillRivetProfile(short iPosIndex,AnyObject iDRProfile)
@@ -210,7 +201,6 @@ class SpotDrSequence(AnyObject):
     def set_object_profile(self, i_pos_index: int, i_object_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObjectProfile(short iPosIndex,AnyObject iObjectProfile)
@@ -235,7 +225,6 @@ class SpotDrSequence(AnyObject):
     def set_position_coordinates(self, i_pos_index: int, i_fastener_pos_coords: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPositionCoordinates(short iPosIndex,CATSafeArrayVariant
@@ -265,7 +254,6 @@ class SpotDrSequence(AnyObject):
     def set_tool_profile(self, i_pos_index: int, i_tool_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetToolProfile(short iPosIndex,AnyObject iToolProfile)
@@ -288,4 +276,4 @@ class SpotDrSequence(AnyObject):
         return self.com_object.SetToolProfile(i_pos_index, i_tool_profile.com_object)
 
     def __repr__(self):
-        return f'SpotDrSequence(name="{ self.name }")'
+        return f'SpotDrSequence(name="{self.name}")'

@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCorner(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapeCorner(HybridShape):
     def begin_of_corner(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginOfCorner() As long
@@ -86,7 +83,6 @@ class HybridShapeCorner(HybridShape):
     def corner_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CornerType() As long
@@ -118,7 +114,6 @@ class HybridShapeCorner(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -153,7 +148,6 @@ class HybridShapeCorner(HybridShape):
     def discrimination_index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiscriminationIndex() As long
@@ -188,7 +182,6 @@ class HybridShapeCorner(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstElem() As Reference
@@ -223,7 +216,6 @@ class HybridShapeCorner(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstOrientation() As long
@@ -262,7 +254,6 @@ class HybridShapeCorner(HybridShape):
     def first_tangent_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstTangentOrientation() As long
@@ -296,7 +287,6 @@ class HybridShapeCorner(HybridShape):
     def on_vertex(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OnVertex() As boolean
@@ -328,7 +318,6 @@ class HybridShapeCorner(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -352,7 +341,6 @@ class HybridShapeCorner(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondElem() As Reference
@@ -388,7 +376,6 @@ class HybridShapeCorner(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondOrientation() As long
@@ -428,7 +415,6 @@ class HybridShapeCorner(HybridShape):
     def second_tangent_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondTangentOrientation() As long
@@ -462,7 +448,6 @@ class HybridShapeCorner(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -496,7 +481,6 @@ class HybridShapeCorner(HybridShape):
     def trim(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Trim() As boolean
@@ -531,7 +515,6 @@ class HybridShapeCorner(HybridShape):
     def trim_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TrimMode() As long
@@ -567,7 +550,6 @@ class HybridShapeCorner(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertFirstOrientation()
@@ -590,7 +572,6 @@ class HybridShapeCorner(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertSecondOrientation()
@@ -611,4 +592,4 @@ class HybridShapeCorner(HybridShape):
         return self.com_object.InvertSecondOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCorner(name="{ self.name }")'
+        return f'HybridShapeCorner(name="{self.name}")'

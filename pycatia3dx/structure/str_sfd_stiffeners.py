@@ -19,7 +19,6 @@ from pycatia3dx.types.general import CATVariant
 class StrSfdStiffeners(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class StrSfdStiffeners(Collection):
     def add_stiffener(self) -> StrSfdStiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddStiffener() As StrSfdStiffener
@@ -69,7 +67,6 @@ class StrSfdStiffeners(Collection):
     def add_stiffener_on_free_edge(self) -> StrSfdStiffenerOnFreeEdge:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddStiffenerOnFreeEdge() As StrSfdStiffenerOnFreeEdge
@@ -98,7 +95,6 @@ class StrSfdStiffeners(Collection):
     def item(self, i_index: CATVariant) -> StructureProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As StructureProfile
@@ -128,7 +124,6 @@ class StrSfdStiffeners(Collection):
     def remove(self, i_stiffener: StructureProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(StructureProfile iStiffener)

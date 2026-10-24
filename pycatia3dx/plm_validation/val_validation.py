@@ -15,10 +15,8 @@ from pycatia3dx.plm_validation.val_reviews import VALReviews
 
 
 class VALValidation(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class VALValidation(PLMEntity):
     def checks(self) -> VALChecks:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Checks() As VALChecks (Read Only)
@@ -57,7 +54,6 @@ class VALValidation(PLMEntity):
     def concerns(self) -> VALConcerns:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Concerns() As VALConcerns (Read Only)
@@ -72,7 +68,6 @@ class VALValidation(PLMEntity):
     def contexts(self) -> VALContexts:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Contexts() As VALContexts (Read Only)
@@ -87,7 +82,6 @@ class VALValidation(PLMEntity):
     def reviews(self) -> VALReviews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Reviews() As VALReviews (Read Only)
@@ -102,7 +96,6 @@ class VALValidation(PLMEntity):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -114,4 +107,4 @@ class VALValidation(PLMEntity):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'ValValidation(name="{ self.name }")'
+        return f'ValValidation(name="{self.name}")'

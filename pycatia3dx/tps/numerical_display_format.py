@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class NumericalDisplayFormat(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class NumericalDisplayFormat(AnyObject):
     def avilable_display_factor(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvilableDisplayFactor() As long (Read Only)
@@ -56,7 +53,6 @@ class NumericalDisplayFormat(AnyObject):
     def display_factor(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayFactor() As long
@@ -81,7 +77,6 @@ class NumericalDisplayFormat(AnyObject):
     def display_leading_zero(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayLeadingZero() As long
@@ -109,7 +104,6 @@ class NumericalDisplayFormat(AnyObject):
     def display_trailing_zero(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayTrailingZero() As long
@@ -137,7 +131,6 @@ class NumericalDisplayFormat(AnyObject):
     def format_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FormatName() As CATBSTR
@@ -162,7 +155,6 @@ class NumericalDisplayFormat(AnyObject):
     def precision(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Precision() As long
@@ -187,7 +179,6 @@ class NumericalDisplayFormat(AnyObject):
     def separator(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Separator() As long
@@ -229,4 +220,4 @@ class NumericalDisplayFormat(AnyObject):
         self.com_object.Separator = value
 
     def __repr__(self):
-        return f'NumericalDisplayFormat(name="{ self.name }")'
+        return f'NumericalDisplayFormat(name="{self.name}")'

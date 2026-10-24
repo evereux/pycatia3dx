@@ -15,10 +15,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_trigger_action import OLPTriggerAction
 
 
 class OLPTrigger(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class OLPTrigger(OLPInstruction):
     def condition_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConditionType() As DELOlpTriggerConditionType
@@ -68,7 +65,6 @@ class OLPTrigger(OLPInstruction):
     def distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Distance() As double
@@ -98,7 +94,6 @@ class OLPTrigger(OLPInstruction):
     def monitored_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MonitoredDevice() As OlpController
@@ -124,7 +119,6 @@ class OLPTrigger(OLPInstruction):
     def num_actions(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumActions() As long (Read Only)
@@ -140,7 +134,6 @@ class OLPTrigger(OLPInstruction):
     def plane_attached_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlaneAttachedDevice() As OlpController
@@ -165,7 +158,6 @@ class OLPTrigger(OLPInstruction):
     def plane_object_frame(self) -> OLPObjectFrameProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlaneObjectFrame() As OlpObjectFrameProfile
@@ -190,7 +182,6 @@ class OLPTrigger(OLPInstruction):
     def time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Time() As double
@@ -219,7 +210,6 @@ class OLPTrigger(OLPInstruction):
     def triggered_moves(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TriggeredMoves() As CATSafeArrayVariant (Read Only)
@@ -234,7 +224,6 @@ class OLPTrigger(OLPInstruction):
     def create_and_append_action(self, i_type: str) -> OLPTriggerAction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateAndAppendAction(CATBSTR iType) As OlpTriggerAction
@@ -252,7 +241,6 @@ class OLPTrigger(OLPInstruction):
     def create_unique_action(self, i_type: str) -> OLPTriggerAction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateUniqueAction(CATBSTR iType) As OlpTriggerAction
@@ -271,7 +259,6 @@ class OLPTrigger(OLPInstruction):
     def delete_action(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteAction(long iIndex)
@@ -286,7 +273,6 @@ class OLPTrigger(OLPInstruction):
     def get_action(self, i_index: int) -> OLPTriggerAction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAction(long iIndex) As OlpTriggerAction
@@ -301,7 +287,6 @@ class OLPTrigger(OLPInstruction):
     def get_plane(self, i_origin: int) -> OLPTransform:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPlane(DELOlpPositionRef iOrigin) As OlpTransform
@@ -320,7 +305,6 @@ class OLPTrigger(OLPInstruction):
     def set_plane(self, i_origin: int, i_plane: OLPTransform) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPlane(DELOlpPositionRef iOrigin,OlpTransform iPlane)
@@ -338,4 +322,4 @@ class OLPTrigger(OLPInstruction):
         return self.com_object.SetPlane(i_origin, i_plane.com_object)
 
     def __repr__(self):
-        return f'OLPTrigger(name="{ self.name }")'
+        return f'OLPTrigger(name="{self.name}")'

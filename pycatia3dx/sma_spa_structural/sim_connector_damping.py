@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorDamping(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimConnectorDamping(AnyObject):
     def damping(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Damping() As double
@@ -63,7 +60,6 @@ class SimConnectorDamping(AnyObject):
     def damping_order(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingOrder() As SimConnectorDampingDampingOrder
@@ -86,7 +82,6 @@ class SimConnectorDamping(AnyObject):
     def direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As SimDof (Read Only)
@@ -101,7 +96,6 @@ class SimConnectorDamping(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -115,7 +109,6 @@ class SimConnectorDamping(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimConnectorDampingTableColumn iTableColumnName) As
@@ -138,4 +131,4 @@ class SimConnectorDamping(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimConnectorDamping(name="{ self.name }")'
+        return f'SimConnectorDamping(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrOpeningLimitDimensionsMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class StrOpeningLimitDimensionsMngt(AnyObject):
     def get_first_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFirstOffset() As Parameter
@@ -67,7 +64,6 @@ class StrOpeningLimitDimensionsMngt(AnyObject):
     def get_second_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSecondOffset() As Parameter
@@ -92,7 +88,6 @@ class StrOpeningLimitDimensionsMngt(AnyObject):
     def invert(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Invert()
@@ -103,4 +98,4 @@ class StrOpeningLimitDimensionsMngt(AnyObject):
         return self.com_object.Invert()
 
     def __repr__(self):
-        return f'StrOpeningLimitDimensionsMngt(name="{ self.name }")'
+        return f'StrOpeningLimitDimensionsMngt(name="{self.name}")'

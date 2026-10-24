@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_table_columns import SimTableColumns
 
 
 class SimTable(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class SimTable(AnyObject):
     def empty_cells_in_table_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EmptyCellsInTableFlag() As boolean (Read Only)
@@ -76,7 +73,6 @@ class SimTable(AnyObject):
     def number_of_columns(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfColumns() As long (Read Only)
@@ -91,7 +87,6 @@ class SimTable(AnyObject):
     def number_of_rows(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfRows() As long (Read Only)
@@ -106,7 +101,6 @@ class SimTable(AnyObject):
     def table_columns(self) -> SimTableColumns:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TableColumns() As SimTableColumns (Read Only)
@@ -121,7 +115,6 @@ class SimTable(AnyObject):
     def delete_row(self, i_row: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteRow(long iRow)
@@ -140,7 +133,6 @@ class SimTable(AnyObject):
     def insert_row(self, i_row: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InsertRow(long iRow)
@@ -161,4 +153,4 @@ class SimTable(AnyObject):
         return self.com_object.InsertRow(i_row)
 
     def __repr__(self):
-        return f'SimTable(name="{ self.name }")'
+        return f'SimTable(name="{self.name}")'

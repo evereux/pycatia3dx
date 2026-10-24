@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Unit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +40,6 @@ class Unit(AnyObject):
     def magnitude(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Magnitude() As CATBSTR (Read Only)
@@ -57,7 +54,6 @@ class Unit(AnyObject):
     def symbol(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Symbol() As CATBSTR (Read Only)
@@ -71,7 +67,6 @@ class Unit(AnyObject):
     def convert_from_mks(self, i_value_in_mks: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ConvertFromMKS(double iValueInMKS) As double
@@ -94,7 +89,6 @@ class Unit(AnyObject):
     def convert_from_storage_unit(self, i_value_in_storage_unit: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ConvertFromStorageUnit(double iValueInStorageUnit) As
@@ -118,7 +112,6 @@ class Unit(AnyObject):
     def convert_to_mks(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ConvertToMKS(double iValueInThisUnit) As double
@@ -140,7 +133,6 @@ class Unit(AnyObject):
     def convert_to_storage_unit(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func ConvertToStorageUnit(double iValueInThisUnit) As double
@@ -161,4 +153,4 @@ class Unit(AnyObject):
         return self.com_object.ConvertToStorageUnit(i_value_in_this_unit)
 
     def __repr__(self):
-        return f'Unit(name="{ self.name }")'
+        return f'Unit(name="{self.name}")'

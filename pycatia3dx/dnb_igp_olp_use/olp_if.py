@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instructions import OLPInstructions
 
 
 class OLPIf(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPIf(OLPInstruction):
     def condition(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition() As OlpAstBranch
@@ -72,7 +69,6 @@ class OLPIf(OLPInstruction):
     def else_instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElseInstructions() As OlpInstructions (Read Only)
@@ -87,7 +83,6 @@ class OLPIf(OLPInstruction):
     def then_instructions(self) -> OLPInstructions:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThenInstructions() As OlpInstructions (Read Only)
@@ -99,4 +94,4 @@ class OLPIf(OLPInstruction):
         return OLPInstructions(self.com_object.ThenInstructions)
 
     def __repr__(self):
-        return f'OLPIf(name="{ self.name }")'
+        return f'OLPIf(name="{self.name}")'

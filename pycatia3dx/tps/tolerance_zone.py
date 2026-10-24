@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ToleranceZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ToleranceZone(AnyObject):
     def form(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Form() As CATBSTR
@@ -61,7 +58,6 @@ class ToleranceZone(AnyObject):
     def validated_tolerance_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValidatedToleranceValue() As boolean
@@ -86,7 +82,6 @@ class ToleranceZone(AnyObject):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As double
@@ -106,4 +101,4 @@ class ToleranceZone(AnyObject):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'ToleranceZone(name="{ self.name }")'
+        return f'ToleranceZone(name="{self.name}")'

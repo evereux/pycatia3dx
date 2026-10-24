@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTransitionControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +57,6 @@ class SimTransitionControl(AnyObject):
     def get_transition_distance(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetTransitionDistance(double oVal)
@@ -78,7 +75,6 @@ class SimTransitionControl(AnyObject):
     def set_transition_distance(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTransitionDistance(double iVal)
@@ -96,4 +92,4 @@ class SimTransitionControl(AnyObject):
         return self.com_object.SetTransitionDistance(i_val)
 
     def __repr__(self):
-        return f'SimTransitionControl(name="{ self.name }")'
+        return f'SimTransitionControl(name="{self.name}")'

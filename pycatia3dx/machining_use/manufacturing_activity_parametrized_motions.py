@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingActivityParametrizedMotions(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingActivityParametrizedMotions(AnyObject):
     def get_value(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValue(CATBSTR iName) As AnyObject
@@ -71,4 +68,4 @@ class ManufacturingActivityParametrizedMotions(AnyObject):
         return AnyObject(self.com_object.GetValue(i_name))
 
     def __repr__(self):
-        return f'ManufacturingActivityParametrizedMotions(name="{ self.name }")'
+        return f'ManufacturingActivityParametrizedMotions(name="{self.name}")'

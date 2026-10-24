@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class PLMSearches(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +53,6 @@ class PLMSearches(Collection):
     def current(self) -> PLMSearch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Current() As PLMSearch
@@ -88,7 +86,6 @@ class PLMSearches(Collection):
     def add(self) -> PLMSearch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As PLMSearch
@@ -113,7 +110,6 @@ class PLMSearches(Collection):
     def item(self, i_index: CATVariant) -> PLMSearch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As PLMSearch
@@ -153,7 +149,6 @@ class PLMSearches(Collection):
     def remove(self, i_plm_search_context: PLMSearch) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(PLMSearch iPLMSearchContext)

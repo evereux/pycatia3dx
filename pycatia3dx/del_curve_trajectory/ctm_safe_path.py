@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmSafePath(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class CtmSafePath(AnyObject):
     def is_approach(self, o_approach: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsApproach(boolean oApproach)
@@ -81,7 +78,6 @@ class CtmSafePath(AnyObject):
     def is_departure(self, o_depart: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsDeparture(boolean oDepart)
@@ -120,4 +116,4 @@ class CtmSafePath(AnyObject):
         return self.com_object.IsDeparture(o_depart)
 
     def __repr__(self):
-        return f'CtmSafePath(name="{ self.name }")'
+        return f'CtmSafePath(name="{self.name}")'

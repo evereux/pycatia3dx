@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbHoleAndPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class PcbHoleAndPattern(AnyObject):
     def associated_part_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssociatedPartName() As CATBSTR
@@ -74,7 +71,6 @@ class PcbHoleAndPattern(AnyObject):
     def hole_owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HoleOwner() As CATBSTR
@@ -108,7 +104,6 @@ class PcbHoleAndPattern(AnyObject):
     def hole_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HoleType() As CATBSTR
@@ -144,7 +139,6 @@ class PcbHoleAndPattern(AnyObject):
     def plating_style(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlatingStyle() As CATBSTR
@@ -174,4 +168,4 @@ class PcbHoleAndPattern(AnyObject):
         self.com_object.PlatingStyle = value
 
     def __repr__(self):
-        return f'PcbHoleAndPattern(name="{ self.name }")'
+        return f'PcbHoleAndPattern(name="{self.name}")'

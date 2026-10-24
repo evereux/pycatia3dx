@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class CtmContourFromCurves(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class CtmContourFromCurves(AnyObject):
     def get_curve_selection(self, o_curve_list: tuple, op_c_type: CtmCurveType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetCurveSelection(CATSafeArrayVariant oCurveList,CtmCurveType
@@ -92,7 +90,6 @@ class CtmContourFromCurves(AnyObject):
     def set_curve_selection(self, i_array_curve: tuple, i_array_leaf_prd: tuple, i_c_type: CtmCurveType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetCurveSelection(CATSafeArrayVariant iArrayCurve,CATSafeArrayVariant

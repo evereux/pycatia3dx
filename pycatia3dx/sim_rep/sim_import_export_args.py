@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimImportExportArgs(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimImportExportArgs(CATBaseDispatch):
     def parameters(self) -> SimParameterSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As SimParameterSet (Read Only)
@@ -51,7 +49,6 @@ class SimImportExportArgs(CATBaseDispatch):
     def set_path(self, i_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPath(CATBSTR iPath)
@@ -70,7 +67,6 @@ class SimImportExportArgs(CATBaseDispatch):
     def set_units(self, i_magnitudes: tuple, i_units: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetUnits(CATSafeArrayVariant iMagnitudes,CATSafeArrayVariant

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class SimLocalElementTypeAssignments(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -71,7 +70,6 @@ class SimLocalElementTypeAssignments(Collection):
     def add(self) -> SimLocalElementTypeAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As CATBaseDispatch
@@ -88,7 +86,6 @@ class SimLocalElementTypeAssignments(Collection):
     def item(self, i_index: CATVariant) -> SimLocalElementTypeAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -112,7 +109,6 @@ class SimLocalElementTypeAssignments(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

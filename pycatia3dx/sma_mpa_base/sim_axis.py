@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimAxis(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class SimAxis(AnyObject):
     def axis(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Axis() As CATBaseDispatch (Read Only)
@@ -54,7 +52,6 @@ class SimAxis(AnyObject):
     def axis_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisType() As SimAxisAxisType
@@ -78,7 +75,6 @@ class SimAxis(AnyObject):
     def get_axis(self, o_origin: SimMathPoint, o_vector: SimMathVector) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxis(SimMathPoint oOrigin,SimMathVector oVector)
@@ -101,7 +97,6 @@ class SimAxis(AnyObject):
     def set_axis(self, i_origin: SimMathPoint, i_vector: SimMathVector) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxis(SimMathPoint iOrigin,SimMathVector iVector)

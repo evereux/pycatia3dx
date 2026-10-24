@@ -16,7 +16,6 @@ from pycatia3dx.interfaces.window import Window
 class VisuServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -51,7 +50,6 @@ class VisuServices(Service):
     def cameras(self) -> Cameras:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Cameras() As Cameras (Read Only)
@@ -74,7 +72,6 @@ class VisuServices(Service):
     def current_filter(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property CurrentFilter() As CATBSTR
@@ -107,7 +104,6 @@ class VisuServices(Service):
     def current_layer(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property CurrentLayer() As CATBSTR
@@ -138,7 +134,6 @@ class VisuServices(Service):
     def see_hidden_elements(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property SeeHiddenElements() As boolean
@@ -168,7 +163,6 @@ class VisuServices(Service):
     def create_filter(self, i_filter_name: str, i_filter_definition: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub CreateFilter(CATBSTR iFilterName,CATBSTR
@@ -199,7 +193,6 @@ class VisuServices(Service):
     def new_window(self) -> Window:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func NewWindow() As Window
@@ -222,7 +215,6 @@ class VisuServices(Service):
     def remove_filter(self, i_filter_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub RemoveFilter(CATBSTR iFilterName)

@@ -56,7 +56,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ShapeFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -90,7 +89,6 @@ class ShapeFactory(Factory):
     def add_new_add(self, i_body_to_add: Body) -> Add:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAdd(Body iBodyToAdd) As Add
@@ -118,7 +116,6 @@ class ShapeFactory(Factory):
     ) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAffinity2(double XRatio,double YRatio,double ZRatio) As
@@ -147,7 +144,6 @@ class ShapeFactory(Factory):
     def add_new_assemble(self, i_body_to_assemble: Body) -> Assemble:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAssemble(Body iBodyToAssemble) As Assemble
@@ -170,7 +166,6 @@ class ShapeFactory(Factory):
     def add_new_auto_draft(self, i_draft_angle: float) -> AutoDraft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAutoDraft(double iDraftAngle) As AutoDraft
@@ -194,7 +189,6 @@ class ShapeFactory(Factory):
     def add_new_auto_fillet(self, i_fillet_radius: float, i_round_radius: float) -> AutoFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAutoFillet(double iFilletRadius,double iRoundRadius) As
@@ -222,7 +216,6 @@ class ShapeFactory(Factory):
     def add_new_axis_to_axis2(self, i_reference: Reference, i_target: Reference) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewAxisToAxis2(Reference iReference,Reference iTarget) As
@@ -248,7 +241,6 @@ class ShapeFactory(Factory):
     def add_new_blend(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewBlend() As AnyObject
@@ -272,7 +264,6 @@ class ShapeFactory(Factory):
     ) -> Chamfer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewChamfer(Reference iObjectToChamfer,CatChamferPropagation
@@ -349,7 +340,6 @@ class ShapeFactory(Factory):
     ) -> CircPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewCircPattern(AnyObject iShapeToCopy,long iNbOfCopiesInRadialDir,long
@@ -460,7 +450,6 @@ class ShapeFactory(Factory):
     ) -> CircPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewCircPatternofList(AnyObject iShapeToCopy,long
@@ -556,7 +545,6 @@ class ShapeFactory(Factory):
     def add_new_close_surface(self, i_close_element: Reference) -> CloseSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewCloseSurface(Reference iCloseElement) As
@@ -580,7 +568,6 @@ class ShapeFactory(Factory):
     def add_new_defeaturing(self) -> Defeaturing:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewDefeaturing() As Defeaturing
@@ -609,7 +596,6 @@ class ShapeFactory(Factory):
     ) -> Draft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewDraft(Reference iFaceToDraft,Reference
@@ -704,7 +690,6 @@ class ShapeFactory(Factory):
     ) -> ConstRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewEdgeFilletWithConstantRadius(Reference
@@ -739,7 +724,6 @@ class ShapeFactory(Factory):
     ) -> VarRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewEdgeFilletWithVaryingRadius(Reference
@@ -770,7 +754,6 @@ class ShapeFactory(Factory):
     def add_new_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewFaceFillet(Reference iF1,Reference iF2,double iRadius) As
@@ -805,7 +788,6 @@ class ShapeFactory(Factory):
     ) -> CircPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewGSDCircPattern(AnyObject iShapeToCopy,long
@@ -873,7 +855,6 @@ class ShapeFactory(Factory):
     ) -> RectPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewGSDRectPattern(AnyObject iShapeToCopy,long iNbOfCopiesInDir1,long
@@ -921,7 +902,6 @@ class ShapeFactory(Factory):
     def add_new_groove(self, i_sketch: Sketch) -> Groove:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewGroove(Sketch iSketch) As Groove
@@ -948,7 +928,6 @@ class ShapeFactory(Factory):
     def add_new_groove_from_ref(self, i_profile_elt: Reference) -> Groove:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewGrooveFromRef(Reference iProfileElt) As Groove
@@ -971,7 +950,6 @@ class ShapeFactory(Factory):
     def add_new_hole(self, i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHole(Reference iSupport,double iDepth) As Hole
@@ -1009,7 +987,6 @@ class ShapeFactory(Factory):
     ) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHoleFromPoint(double iX,double iY,double iZ,Reference
@@ -1059,7 +1036,6 @@ class ShapeFactory(Factory):
     def add_new_hole_from_ref_point(self, i_origin: Reference, i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHoleFromRefPoint(Reference iOrigin,Reference iSupport,double iDepth)
@@ -1091,7 +1067,6 @@ class ShapeFactory(Factory):
     def add_new_hole_from_sketch(self, i_sketch: Sketch, i_depth: float) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHoleFromSketch(Sketch iSketch,double iDepth) As
@@ -1131,7 +1106,6 @@ class ShapeFactory(Factory):
     ) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHoleWith2Constraints(double iX,double iY,double iZ,Reference
@@ -1200,7 +1174,6 @@ class ShapeFactory(Factory):
     ) -> Hole:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewHoleWithConstraint(double iX,double iY,double iZ,Reference
@@ -1259,7 +1232,6 @@ class ShapeFactory(Factory):
     def add_new_intersect(self, i_body_to_intersect: Body) -> Intersect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewIntersect(Body iBodyToIntersect) As Intersect
@@ -1282,7 +1254,6 @@ class ShapeFactory(Factory):
     def add_new_loft(self) -> Loft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewLoft() As AnyObject
@@ -1304,7 +1275,6 @@ class ShapeFactory(Factory):
     ) -> Partition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewManuOrAutoPartition(Reference iVolumeToBePartitioned,boolean
@@ -1348,7 +1318,6 @@ class ShapeFactory(Factory):
     def add_new_mirror(self, i_mirroring_element: Reference) -> Mirror:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewMirror(Reference iMirroringElement) As Mirror
@@ -1375,7 +1344,6 @@ class ShapeFactory(Factory):
     def add_new_pad(self, i_sketch: Sketch, i_height: float) -> Pad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewPad(Sketch iSketch,double iHeight) As Pad
@@ -1400,7 +1368,6 @@ class ShapeFactory(Factory):
     def add_new_pad_from_ref(self, i_profile_elt: Reference, i_height: float) -> Pad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewPadFromRef(Reference iProfileElt,double iHeight) As
@@ -1427,7 +1394,6 @@ class ShapeFactory(Factory):
     def add_new_partition(self, i_splitting_element: Reference, i_split_side: int) -> Split:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewPartition(Reference iSplittingElement,CatSplitSide iSplitSide) As
@@ -1446,7 +1412,6 @@ class ShapeFactory(Factory):
     def add_new_pocket(self, i_sketch: Sketch, i_height: float) -> Pocket:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewPocket(Sketch iSketch,double iHeight) As Pocket
@@ -1471,7 +1436,6 @@ class ShapeFactory(Factory):
     def add_new_pocket_from_ref(self, i_profile_elt: Reference, i_height: float) -> Pocket:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewPocketFromRef(Reference iProfileElt,double iHeight) As
@@ -1511,7 +1475,6 @@ class ShapeFactory(Factory):
     ) -> RectPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRectPattern(AnyObject iShapeToCopy,long iNbOfCopiesInDir1,long
@@ -1624,7 +1587,6 @@ class ShapeFactory(Factory):
     ) -> RectPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRectPatternofList(AnyObject iShapeToCopy,long iNbOfCopiesInDir1,long
@@ -1719,7 +1681,6 @@ class ShapeFactory(Factory):
     def add_new_remove(self, i_body_to_remove: Body) -> Remove:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRemove(Body iBodyToRemove) As Remove
@@ -1742,7 +1703,6 @@ class ShapeFactory(Factory):
     def add_new_remove_face(self, i_keep_faces: Reference, i_remove_faces: Reference) -> RemoveFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRemoveFace(Reference iKeepFaces,Reference iRemoveFaces) As
@@ -1768,7 +1728,6 @@ class ShapeFactory(Factory):
     def add_new_removed_blend(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRemovedBlend() As AnyObject
@@ -1784,7 +1743,6 @@ class ShapeFactory(Factory):
     def add_new_removed_loft(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRemovedLoft() As AnyObject
@@ -1805,7 +1763,6 @@ class ShapeFactory(Factory):
     ) -> ReplaceFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewReplaceFace(Reference iSplitPlane,Reference iRemoveFace,CatSplitSide
@@ -1842,7 +1799,6 @@ class ShapeFactory(Factory):
     def add_new_rib(self, i_sketch: Sketch, i_center_curve: Sketch) -> Rib:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRib(Sketch iSketch,Sketch iCenterCurve) As Rib
@@ -1869,7 +1825,6 @@ class ShapeFactory(Factory):
     def add_new_rib_from_ref(self, i_profile: Reference, i_center_curve: Reference) -> Rib:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewRibFromRef(Reference iProfile,Reference iCenterCurve) As
@@ -1897,7 +1852,6 @@ class ShapeFactory(Factory):
     def add_new_scaling(self, i_scaling_reference: Reference, i_factor: float) -> Scaling:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewScaling(Reference iScalingReference,double iFactor) As
@@ -1928,7 +1882,6 @@ class ShapeFactory(Factory):
     def add_new_sew_surface(self, i_sewing_element: Reference, i_sewing_side: int) -> SewSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSewSurface(Reference iSewingElement,CatSplitSide iSewingSide) As
@@ -1957,7 +1910,6 @@ class ShapeFactory(Factory):
     def add_new_shaft(self, i_sketch: Sketch) -> Shaft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewShaft(Sketch iSketch) As Shaft
@@ -1992,7 +1944,6 @@ class ShapeFactory(Factory):
     def add_new_shaft_from_ref(self, i_profile_elt: Reference) -> Shaft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewShaftFromRef(Reference iProfileElt) As Shaft
@@ -2020,7 +1971,6 @@ class ShapeFactory(Factory):
     ) -> Shell:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewShell(Reference iFaceToRemove,double iInternalThickness,double
@@ -2060,7 +2010,6 @@ class ShapeFactory(Factory):
     def add_new_slot(self, i_sketch: Sketch, i_center_curve: Sketch) -> Slot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSlot(Sketch iSketch,Sketch iCenterCurve) As Slot
@@ -2087,7 +2036,6 @@ class ShapeFactory(Factory):
     def add_new_slot_from_ref(self, i_profile: Reference, i_center_curve: Reference) -> Slot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSlotFromRef(Reference iProfile,Reference iCenterCurve) As
@@ -2115,7 +2063,6 @@ class ShapeFactory(Factory):
     def add_new_solid_combine(self, i_profile_elt_first: Reference, i_profile_elt_second: Reference) -> SolidCombine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSolidCombine(Reference iProfileEltFirst,Reference iProfileEltSecond)
@@ -2153,7 +2100,6 @@ class ShapeFactory(Factory):
     ) -> ConstRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSolidEdgeFilletWithConstantRadius(Reference
@@ -2199,7 +2145,6 @@ class ShapeFactory(Factory):
     ) -> VarRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSolidEdgeFilletWithVaryingRadius(Reference
@@ -2245,7 +2190,6 @@ class ShapeFactory(Factory):
     def add_new_solid_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSolidFaceFillet(Reference iF1,Reference iF2,double iRadius) As
@@ -2284,7 +2228,6 @@ class ShapeFactory(Factory):
     ) -> TritangentFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSolidTritangentFillet(Reference iF1,Reference iF2,Reference
@@ -2328,7 +2271,6 @@ class ShapeFactory(Factory):
     def add_new_split(self, i_splitting_element: Reference, i_split_side: int) -> Split:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSplit(Reference iSplittingElement,CatSplitSide iSplitSide) As
@@ -2357,7 +2299,6 @@ class ShapeFactory(Factory):
     def add_new_stiffener(self, i_sketch: Sketch) -> Stiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewStiffener(Sketch iSketch) As Stiffener
@@ -2384,7 +2325,6 @@ class ShapeFactory(Factory):
     def add_new_stiffener_from_ref(self, i_profile_elt: Reference) -> Stiffener:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewStiffenerFromRef(Reference iProfileElt) As
@@ -2414,7 +2354,6 @@ class ShapeFactory(Factory):
     ) -> ConstRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfaceEdgeFilletWithConstantRadius(Reference
@@ -2459,7 +2398,6 @@ class ShapeFactory(Factory):
     ) -> VarRadEdgeFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfaceEdgeFilletWithVaryingRadius(Reference
@@ -2506,7 +2444,6 @@ class ShapeFactory(Factory):
     def add_new_surface_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfaceFaceFillet(Reference iF1,Reference iF2,double iRadius) As
@@ -2545,7 +2482,6 @@ class ShapeFactory(Factory):
     ) -> TritangentFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfaceTritangentFillet(Reference iF1,Reference iF2,Reference
@@ -2589,7 +2525,6 @@ class ShapeFactory(Factory):
     def add_new_surfacic_auto_fillet(self, i_fillet_radius: float) -> AutoFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfacicAutoFillet(double iFilletRadius) As
@@ -2629,7 +2564,6 @@ class ShapeFactory(Factory):
     ) -> CircPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfacicCircPattern(AnyObject iShapeToCopy,long
@@ -2745,7 +2679,6 @@ class ShapeFactory(Factory):
     ) -> RectPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfacicRectPattern(AnyObject iShapeToCopy,long
@@ -2851,7 +2784,6 @@ class ShapeFactory(Factory):
     ) -> SewSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfacicSewSurface(long iType,Reference iSupportSurface,Reference
@@ -2898,7 +2830,6 @@ class ShapeFactory(Factory):
     ) -> UserPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewSurfacicUserPattern(AnyObject iShapeToCopy,long iNbOfCopies) As
@@ -2934,7 +2865,6 @@ class ShapeFactory(Factory):
     ) -> ThickSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewThickSurface(Reference iOffsetElement,long iIsensOffset,double
@@ -2976,7 +2906,6 @@ class ShapeFactory(Factory):
     def add_new_thickness(self, i_face_to_thicken: Reference, i_offset: float) -> Thickness:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewThickness(Reference iFaceToThicken,double iOffset) As
@@ -3008,7 +2937,6 @@ class ShapeFactory(Factory):
     def add_new_thread_with_out_ref(self) -> Thread:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewThreadWithOutRef() As Thread
@@ -3025,7 +2953,6 @@ class ShapeFactory(Factory):
     def add_new_thread_with_ref(self, i_lateral_face: Reference, i_limit_face: Reference) -> Thread:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewThreadWithRef(Reference iLateralFace,Reference iLimitFace) As
@@ -3055,7 +2982,6 @@ class ShapeFactory(Factory):
     def add_new_trim(self, i_body_to_trim: Body) -> Trim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewTrim(Body iBodyToTrim) As Trim
@@ -3083,7 +3009,6 @@ class ShapeFactory(Factory):
     ) -> TritangentFillet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewTritangentFillet(Reference iF1,Reference iF2,Reference iRemovedFace)
@@ -3110,7 +3035,6 @@ class ShapeFactory(Factory):
     def add_new_user_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewUserPattern(AnyObject iShapeToCopy,long iNbOfCopies) As
@@ -3137,7 +3061,6 @@ class ShapeFactory(Factory):
     def add_new_user_pattern_of_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewUserPatternofList(AnyObject iShapeToCopy,long iNbOfCopies) As
@@ -3165,7 +3088,6 @@ class ShapeFactory(Factory):
     def add_new_volume_add(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Add:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeAdd(Reference iBody1,Reference iBody2,double iType) As
@@ -3194,7 +3116,6 @@ class ShapeFactory(Factory):
     def add_new_volume_close_surface(self, i_close_element: Reference) -> CloseSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeCloseSurface(Reference iCloseElement) As
@@ -3218,7 +3139,6 @@ class ShapeFactory(Factory):
     def add_new_volume_intersect(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Intersect:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeIntersect(Reference iBody1,Reference iBody2,double iType) As
@@ -3247,7 +3167,6 @@ class ShapeFactory(Factory):
     def add_new_volume_remove(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Remove:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeRemove(Reference iBody1,Reference iBody2,double iType) As
@@ -3282,7 +3201,6 @@ class ShapeFactory(Factory):
     ) -> SewSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeSewSurface(long iType,Reference iSupportVolume,Reference
@@ -3330,7 +3248,6 @@ class ShapeFactory(Factory):
     ) -> Shell:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeShell(Reference iFaceToRemove,double iInternalThickness,double
@@ -3382,7 +3299,6 @@ class ShapeFactory(Factory):
     ) -> ThickSurface:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeThickSurface(Reference iOffsetElement,long iIsensOffset,double
@@ -3431,7 +3347,6 @@ class ShapeFactory(Factory):
     ) -> Thickness:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeThickness(Reference iFaceToThicken,double iOffset,long
@@ -3479,7 +3394,6 @@ class ShapeFactory(Factory):
     ) -> Trim:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumeTrim(Reference iSupportVolume,Reference iCuttingVolume) As
@@ -3523,7 +3437,6 @@ class ShapeFactory(Factory):
     ) -> Draft:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddNewVolumicDraft(Reference iFaceToDraft,Reference

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class GeometricElements(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -48,7 +47,6 @@ class GeometricElements(Collection):
     def item(self, i_index: CATVariant) -> GeometricElement:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As GeometricElement

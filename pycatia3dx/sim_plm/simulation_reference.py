@@ -14,10 +14,8 @@ from pycatia3dx.sim_plm.simulation_specifications import SimulationSpecification
 
 
 class SimulationReference(PLMEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class SimulationReference(PLMEntity):
     def model(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Model() As AnyObject (Read Only)
@@ -71,7 +68,6 @@ class SimulationReference(PLMEntity):
     def results(self) -> SimulationResults:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Results() As SimulationResults (Read Only)
@@ -99,7 +95,6 @@ class SimulationReference(PLMEntity):
     def specifications(self) -> SimulationSpecifications:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Specifications() As SimulationSpecifications (Read
@@ -125,4 +120,4 @@ class SimulationReference(PLMEntity):
         return SimulationSpecifications(self.com_object.Specifications)
 
     def __repr__(self):
-        return f'SimulationReference(name="{ self.name }")'
+        return f'SimulationReference(name="{self.name}")'

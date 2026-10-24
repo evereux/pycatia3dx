@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class ExpertReportObjects(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class ExpertReportObjects(Collection):
     def count_fail(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CountFail() As long (Read Only)
@@ -67,7 +65,6 @@ class ExpertReportObjects(Collection):
     def count_succeed(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CountSucceed() As long (Read Only)
@@ -90,7 +87,6 @@ class ExpertReportObjects(Collection):
     def fail_item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FailItem(CATVariant iIndex) As ExpertReportObject
@@ -120,7 +116,6 @@ class ExpertReportObjects(Collection):
     def item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As ExpertReportObject
@@ -149,7 +144,6 @@ class ExpertReportObjects(Collection):
     def succeed_item(self, i_index: CATVariant) -> ExpertReportObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func SucceedItem(CATVariant iIndex) As ExpertReportObject

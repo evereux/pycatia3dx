@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 
 
 class OLPRun(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPRun(OLPInstruction):
     def arguments(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arguments() As OlpAstBranch
@@ -78,7 +75,6 @@ class OLPRun(OLPInstruction):
     def procedure(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Procedure() As OlpProcedure
@@ -100,7 +96,6 @@ class OLPRun(OLPInstruction):
     def assign_undefined_procedure(self, i_name: str, i_data_type: int, i_direction: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedure(CATBSTR iName,DELOlpDataType
@@ -141,7 +136,6 @@ class OLPRun(OLPInstruction):
     def assign_undefined_procedure_in_string_type(self, i_name: str, i_data_type: str, i_direction: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AssignUndefinedProcedureInStringType(CATBSTR iName,CATBSTR
@@ -182,4 +176,4 @@ class OLPRun(OLPInstruction):
         return self.com_object.AssignUndefinedProcedureInStringType(i_name, i_data_type, i_direction)
 
     def __repr__(self):
-        return f'OLPRun(name="{ self.name }")'
+        return f'OLPRun(name="{self.name}")'

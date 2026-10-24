@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeExtremumPolar(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Angle() As Angle (Read Only)
@@ -68,7 +65,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def contour(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Contour() As Reference
@@ -91,7 +87,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def dir(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Dir() As HybridShapeDirection
@@ -114,7 +109,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def extremum_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtremumType() As short
@@ -137,7 +131,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def origin(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Origin() As Reference
@@ -160,7 +153,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -175,7 +167,6 @@ class HybridShapeExtremumPolar(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -195,4 +186,4 @@ class HybridShapeExtremumPolar(HybridShape):
         self.com_object.Support = value
 
     def __repr__(self):
-        return f'HybridShapeExtremumPolar(name="{ self.name }")'
+        return f'HybridShapeExtremumPolar(name="{self.name}")'

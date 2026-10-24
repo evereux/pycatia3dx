@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_math_axis import SimMathAxis
 
 
 class SimAxisSystem(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimAxisSystem(AnyObject):
     def axis_system(self) -> SimMathAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimMathAxis
@@ -62,7 +59,6 @@ class SimAxisSystem(AnyObject):
     def coordinate_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CoordinateType() As SimAxisSystemCoordinateType
@@ -85,7 +81,6 @@ class SimAxisSystem(AnyObject):
     def definition_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefinitionMode() As SimAxisSystemDefinitionMode
@@ -108,7 +103,6 @@ class SimAxisSystem(AnyObject):
     def local_axis_system(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LocalAxisSystem(AnyObject iAxis) (Write Only)
@@ -129,4 +123,4 @@ class SimAxisSystem(AnyObject):
         self.com_object.LocalAxisSystem = value
 
     def __repr__(self):
-        return f'SimAxisSystem(name="{ self.name }")'
+        return f'SimAxisSystem(name="{self.name}")'

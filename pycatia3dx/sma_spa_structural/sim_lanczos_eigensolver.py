@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimLanczosEigensolver(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimLanczosEigensolver(AnyObject):
     def acoustic_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AcousticCouplingType() As
@@ -62,7 +59,6 @@ class SimLanczosEigensolver(AnyObject):
     def damping_projection_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingProjectionFlag() As boolean
@@ -88,7 +84,6 @@ class SimLanczosEigensolver(AnyObject):
     def maximum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumFrequency() As double
@@ -111,7 +106,6 @@ class SimLanczosEigensolver(AnyObject):
     def maximum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumFrequencyFlag() As boolean
@@ -137,7 +131,6 @@ class SimLanczosEigensolver(AnyObject):
     def minimum_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequency() As double
@@ -160,7 +153,6 @@ class SimLanczosEigensolver(AnyObject):
     def minimum_frequency_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumFrequencyFlag() As boolean
@@ -186,7 +178,6 @@ class SimLanczosEigensolver(AnyObject):
     def number_of_modes(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfModes() As long
@@ -209,7 +200,6 @@ class SimLanczosEigensolver(AnyObject):
     def residual_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResidualModesFlag() As boolean
@@ -235,7 +225,6 @@ class SimLanczosEigensolver(AnyObject):
     def shift_point(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShiftPoint() As double
@@ -258,7 +247,6 @@ class SimLanczosEigensolver(AnyObject):
     def shift_point_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShiftPointFlag() As boolean
@@ -284,7 +272,6 @@ class SimLanczosEigensolver(AnyObject):
     def specified_modes_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifiedModesFlag() As boolean
@@ -307,4 +294,4 @@ class SimLanczosEigensolver(AnyObject):
         self.com_object.SpecifiedModesFlag = value
 
     def __repr__(self):
-        return f'SimLanczosEigensolver(name="{ self.name }")'
+        return f'SimLanczosEigensolver(name="{self.name}")'

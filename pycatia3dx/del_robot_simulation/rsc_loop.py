@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscLoop(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscLoop(RscInstruction):
     def condition(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition() As CATBSTR
@@ -93,7 +90,6 @@ class RscLoop(RscInstruction):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELRscLoopType
@@ -145,4 +141,4 @@ class RscLoop(RscInstruction):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'RscLoop(name="{ self.name }")'
+        return f'RscLoop(name="{self.name}")'

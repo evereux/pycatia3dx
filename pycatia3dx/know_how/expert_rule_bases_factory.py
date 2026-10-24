@@ -12,10 +12,8 @@ from pycatia3dx.know_how.expert_rule_base import ExpertRuleBase
 
 
 class ExpertRuleBasesFactory(KnowledgeFactory):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class ExpertRuleBasesFactory(KnowledgeFactory):
     def create_rule_base(self, i_name: str) -> ExpertRuleBase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateRuleBase(CATBSTR iName) As ExpertRuleBase
@@ -79,4 +76,4 @@ class ExpertRuleBasesFactory(KnowledgeFactory):
         return ExpertRuleBase(self.com_object.CreateRuleBase(i_name))
 
     def __repr__(self):
-        return f'ExpertRuleBasesFactory(name="{ self.name }")'
+        return f'ExpertRuleBasesFactory(name="{self.name}")'

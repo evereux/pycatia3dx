@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMassPerLength(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimMassPerLength(AnyObject):
     def contribution_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ContributionType() As
@@ -99,7 +96,6 @@ class SimMassPerLength(AnyObject):
     def magnitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Magnitude() As double
@@ -129,7 +125,6 @@ class SimMassPerLength(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -169,7 +164,6 @@ class SimMassPerLength(AnyObject):
     def total_mass_distribution_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TotalMassDistributionMethod() As
@@ -191,4 +185,4 @@ class SimMassPerLength(AnyObject):
         self.com_object.TotalMassDistributionMethod = value
 
     def __repr__(self):
-        return f'SimMassPerLength(name="{ self.name }")'
+        return f'SimMassPerLength(name="{self.name}")'

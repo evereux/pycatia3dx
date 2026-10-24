@@ -16,7 +16,6 @@ from pycatia3dx.system.collection import Collection
 class DrawingLeaders(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class DrawingLeaders(Collection):
     def add(self, i_head_point_x: float, i_head_point_y: float) -> DrawingLeader:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(double iHeadPointX,double iHeadPointY) As
@@ -78,7 +76,6 @@ class DrawingLeaders(Collection):
     def item(self, i_index: int) -> DrawingLeader:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As DrawingLeader
@@ -115,7 +112,6 @@ class DrawingLeaders(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(long iIndex)

@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimExtrusionControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimExtrusionControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -93,7 +90,6 @@ class SimExtrusionControl(AnyObject):
     def prevent_material_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PreventMaterialRemovalFlag() As boolean
@@ -115,4 +111,4 @@ class SimExtrusionControl(AnyObject):
         self.com_object.PreventMaterialRemovalFlag = value
 
     def __repr__(self):
-        return f'SimExtrusionControl(name="{ self.name }")'
+        return f'SimExtrusionControl(name="{self.name}")'

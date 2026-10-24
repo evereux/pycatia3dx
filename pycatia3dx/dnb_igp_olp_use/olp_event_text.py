@@ -11,10 +11,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_choreography_event import OLPChoreographyEve
 
 
 class OLPEventText(OLPChoreographyEvent):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class OLPEventText(OLPChoreographyEvent):
     def duration(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Duration() As double
@@ -68,7 +65,6 @@ class OLPEventText(OLPChoreographyEvent):
     def window_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WindowName() As CATBSTR
@@ -91,7 +87,6 @@ class OLPEventText(OLPChoreographyEvent):
     def window_text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WindowText() As CATBSTR
@@ -111,4 +106,4 @@ class OLPEventText(OLPChoreographyEvent):
         self.com_object.WindowText = value
 
     def __repr__(self):
-        return f'OLPEventText(name="{ self.name }")'
+        return f'OLPEventText(name="{self.name}")'

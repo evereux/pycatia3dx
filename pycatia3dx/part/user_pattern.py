@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class UserPattern(Pattern):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class UserPattern(Pattern):
     def anchor_point(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorPoint() As AnyObject
@@ -72,7 +69,6 @@ class UserPattern(Pattern):
     def feature_to_locate_positions(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureToLocatePositions() As AnyObject (Read Only)
@@ -92,7 +88,6 @@ class UserPattern(Pattern):
     def add_feature_to_locate_positions(self, i_feature_to_locate_positions: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddFeatureToLocatePositions(AnyObject
@@ -116,4 +111,4 @@ class UserPattern(Pattern):
         return self.com_object.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 
     def __repr__(self):
-        return f'UserPattern(name="{ self.name }")'
+        return f'UserPattern(name="{self.name}")'

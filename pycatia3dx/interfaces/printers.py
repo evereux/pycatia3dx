@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Printers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class Printers(Collection):
     def item(self, i_index: CATVariant) -> Printer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(CATVariant iIndex) As Printer

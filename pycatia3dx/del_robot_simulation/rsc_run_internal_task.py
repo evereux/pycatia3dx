@@ -13,10 +13,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscRunInternalTask(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class RscRunInternalTask(RscInstruction):
     def task(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Task() As AnyObject
@@ -94,4 +91,4 @@ class RscRunInternalTask(RscInstruction):
         self.com_object.Task = value
 
     def __repr__(self):
-        return f'RscRunInternalTask(name="{ self.name }")'
+        return f'RscRunInternalTask(name="{self.name}")'

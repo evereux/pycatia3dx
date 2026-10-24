@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ManufacturingMachineMotion(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class ManufacturingMachineMotion(AnyObject):
     def move_to(self, i_position_coordinates: tuple, i_direction_coordinates: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func MoveTo(CATSafeArrayVariant iPositionCoordinates,CATSafeArrayVariant
@@ -88,7 +86,6 @@ class ManufacturingMachineMotion(AnyObject):
     def move_to_manufacturing_fastener(self, i_manufacturing_fastener: AnyObject) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func MoveToManufacturingFastener(AnyObject iManufacturingFastener) As
@@ -112,7 +109,6 @@ class ManufacturingMachineMotion(AnyObject):
     def restore_position(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RestorePosition()

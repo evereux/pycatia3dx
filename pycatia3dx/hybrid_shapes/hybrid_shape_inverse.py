@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeInverse(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -40,7 +38,6 @@ class HybridShapeInverse(HybridShape):
     def element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element() As Reference
@@ -77,7 +74,6 @@ class HybridShapeInverse(HybridShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -97,4 +93,4 @@ class HybridShapeInverse(HybridShape):
         self.hybrid_shape_inverse.Orientation = value
 
     def __repr__(self):
-        return f'HybridShapeInverse(name="{ self.name }")'
+        return f'HybridShapeInverse(name="{self.name}")'

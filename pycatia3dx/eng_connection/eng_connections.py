@@ -17,7 +17,6 @@ from pycatia3dx.types import CATVariant
 class EngConnections(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class EngConnections(Collection):
     def add(self, i_type: int, i_impacteds: tuple) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CatEngConnectionType iType,CATSafeArrayVariant iImpacteds) As
@@ -116,7 +114,6 @@ class EngConnections(Collection):
     def item(self, i_index: CATVariant) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func Item(CATVariant iIndex) As EngConnection
@@ -140,7 +137,6 @@ class EngConnections(Collection):
     def remove(self, i_eng_cnt: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub Remove(CATVariant iEngCnt)

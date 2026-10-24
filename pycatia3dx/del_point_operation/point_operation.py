@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PointOperation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class PointOperation(AnyObject):
     def point_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointProfile() As AnyObject (Read Only)
@@ -77,7 +74,6 @@ class PointOperation(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -106,7 +102,6 @@ class PointOperation(AnyObject):
     def set_point_profile(self, i_point_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub set_PointProfile(AnyObject iPointProfile)
@@ -117,4 +112,4 @@ class PointOperation(AnyObject):
         return self.com_object.set_PointProfile(i_point_profile.com_object)
 
     def __repr__(self):
-        return f'PointOperation(name="{ self.name }")'
+        return f'PointOperation(name="{self.name}")'

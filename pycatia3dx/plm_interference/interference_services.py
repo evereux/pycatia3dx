@@ -13,10 +13,8 @@ from pycatia3dx.plm_interference.interference_simulation import InterferenceSimu
 
 
 class InterferenceServices(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,10 +34,10 @@ class InterferenceServices(Service):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_interference_simulation(self, i_reference: AnyObject, o_interference_simulation: InterferenceSimulation) -> None:
+    def create_interference_simulation(self, i_reference: AnyObject,
+                                       o_interference_simulation: InterferenceSimulation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateInterferenceSimulation(AnyObject iReference,InterferenceSimulation
@@ -90,12 +88,13 @@ class InterferenceServices(Service):
         :param InterferenceSimulation o_interference_simulation:
         :return: None
         """
-        return self.com_object.CreateInterferenceSimulation(i_reference.com_object, o_interference_simulation.com_object)
+        return self.com_object.CreateInterferenceSimulation(i_reference.com_object,
+                                                            o_interference_simulation.com_object)
 
-    def create_interference_simulation2(self, i_reference: AnyObject, i_group_computation_type2: int, o_interference_simulation: InterferenceSimulation) -> None:
+    def create_interference_simulation2(self, i_reference: AnyObject, i_group_computation_type2: int,
+                                        o_interference_simulation: InterferenceSimulation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateInterferenceSimulation2(AnyObject
@@ -181,7 +180,8 @@ class InterferenceServices(Service):
         :param InterferenceSimulation o_interference_simulation:
         :return: None
         """
-        return self.com_object.CreateInterferenceSimulation2(i_reference.com_object, i_group_computation_type2, o_interference_simulation.com_object)
+        return self.com_object.CreateInterferenceSimulation2(i_reference.com_object, i_group_computation_type2,
+                                                             o_interference_simulation.com_object)
 
     def __repr__(self):
-        return f'InterferenceServices(name="{ self.name }")'
+        return f'InterferenceServices(name="{self.name}")'

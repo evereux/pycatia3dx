@@ -15,7 +15,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimLinkAccess(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SimLinkAccess(CATBaseDispatch):
     def add_link(self, i_name: str, i_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddLink(CATBSTR iName,AnyObject iLink)
@@ -60,7 +58,6 @@ class SimLinkAccess(CATBaseDispatch):
     def add_link_with_context(self, i_attr_name: str, i_link: AnyObject, i_context: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddLinkWithContext(CATBSTR iAttrName,AnyObject iLink,VPMOccurrence
@@ -90,7 +87,6 @@ class SimLinkAccess(CATBaseDispatch):
     def get_all_links(self, i_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAllLinks(CATBSTR iName) As CATSafeArrayVariant
@@ -112,7 +108,6 @@ class SimLinkAccess(CATBaseDispatch):
     def get_nb_links(self, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbLinks(CATBSTR iName) As long
@@ -134,7 +129,6 @@ class SimLinkAccess(CATBaseDispatch):
     def remove_all_links(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAllLinks(CATBSTR iName)
@@ -153,7 +147,6 @@ class SimLinkAccess(CATBaseDispatch):
     def remove_link(self, i_name: str, i_link: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveLink(CATBSTR iName,AnyObject iLink)

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsBoundingBox(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SrsBoundingBox(AnyObject):
     def get_math_box(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMathBox(CATSafeArrayVariant oMathBox)
@@ -80,7 +78,6 @@ class SrsBoundingBox(AnyObject):
     def is_aft_at_origin(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAftAtOrigin() As boolean

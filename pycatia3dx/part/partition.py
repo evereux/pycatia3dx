@@ -13,10 +13,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class Partition(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class Partition(SurfaceBasedShape):
     def auto_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AutoMode() As boolean
@@ -67,7 +64,6 @@ class Partition(SurfaceBasedShape):
     def limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitType() As CatPartitionLimitType
@@ -98,7 +94,6 @@ class Partition(SurfaceBasedShape):
     def volume(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Volume() As Reference
@@ -118,4 +113,4 @@ class Partition(SurfaceBasedShape):
         self.com_object.Volume = value
 
     def __repr__(self):
-        return f'Partition(name="{ self.name }")'
+        return f'Partition(name="{self.name}")'

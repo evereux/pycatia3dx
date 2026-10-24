@@ -20,7 +20,6 @@ if TYPE_CHECKING:
 class TPSView(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class TPSView(AnyObject):
     def annotation_plane(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationPlane() As CATSafeArrayVariant (Read Only)
@@ -62,7 +60,6 @@ class TPSView(AnyObject):
     def annotation_sketch(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationSketch(AnyObject Layout2DLView)
@@ -91,7 +88,6 @@ class TPSView(AnyObject):
     def annotations(self) -> 'Annotations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Annotations() As Annotations (Read Only)
@@ -111,7 +107,6 @@ class TPSView(AnyObject):
     def display_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DisplayRatio(double RatioValue)
@@ -139,7 +134,6 @@ class TPSView(AnyObject):
     def view_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViewType() As long (Read Only)
@@ -163,7 +157,6 @@ class TPSView(AnyObject):
     def add_view_text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddViewText() As Text
@@ -181,7 +174,6 @@ class TPSView(AnyObject):
     def get_view_text(self) -> Text:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetViewText() As Text
@@ -199,7 +191,6 @@ class TPSView(AnyObject):
     def has_view_text(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasViewText() As boolean
@@ -212,7 +203,6 @@ class TPSView(AnyObject):
     def hyper_link_manager(self) -> TPSHyperLinksManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HyperLinkManager() As TPSHyperLinksManager

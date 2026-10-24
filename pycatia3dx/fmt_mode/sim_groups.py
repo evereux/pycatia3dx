@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class SimGroups(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class SimGroups(Collection):
     def add(self, i_type: str) -> SimGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iType) As CATBaseDispatch
@@ -65,7 +63,6 @@ class SimGroups(Collection):
     def item(self, i_index: CATVariant) -> SimGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As SimGroup
@@ -94,7 +91,6 @@ class SimGroups(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

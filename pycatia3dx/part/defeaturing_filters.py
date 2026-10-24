@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DefeaturingFilters(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class DefeaturingFilters(Collection):
     def add(self, i_filter_type_to_add: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iFilterTypeToAdd) As long
@@ -70,7 +68,6 @@ class DefeaturingFilters(Collection):
     def item(self, i_filter_id: CATVariant) -> DefeaturingFilter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iFilterId) As DefeaturingFilter
@@ -102,7 +99,6 @@ class DefeaturingFilters(Collection):
     def remove(self, i_filter_id: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iFilterId)

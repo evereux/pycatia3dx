@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ArcWtsManager(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class ArcWtsManager(AnyObject):
     def launch_wts_command(self, i_wts_primitive_file_name: str, i_show_wts_window: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LaunchWTSCommand(CATBSTR iWTSPrimitiveFileName,boolean
@@ -80,4 +77,4 @@ class ArcWtsManager(AnyObject):
         return self.com_object.LaunchWTSCommand(i_wts_primitive_file_name, i_show_wts_window)
 
     def __repr__(self):
-        return f'ArcWtsManager(name="{ self.name }")'
+        return f'ArcWtsManager(name="{self.name}")'

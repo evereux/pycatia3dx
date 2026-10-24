@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimOverhangControl(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimOverhangControl(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -93,7 +90,6 @@ class SimOverhangControl(AnyObject):
     def base_plane(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BasePlane() As SimBasePlaneType
@@ -116,7 +112,6 @@ class SimOverhangControl(AnyObject):
     def specify_support_frozen_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecifySupportFrozenFlag() As boolean
@@ -140,7 +135,6 @@ class SimOverhangControl(AnyObject):
     def get_maximum_overhang_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaximumOverhangAngle() As double
@@ -158,7 +152,6 @@ class SimOverhangControl(AnyObject):
     def set_maximum_overhang_angle(self, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumOverhangAngle(double iAngle)
@@ -175,4 +168,4 @@ class SimOverhangControl(AnyObject):
         return self.com_object.SetMaximumOverhangAngle(i_angle)
 
     def __repr__(self):
-        return f'SimOverhangControl(name="{ self.name }")'
+        return f'SimOverhangControl(name="{self.name}")'

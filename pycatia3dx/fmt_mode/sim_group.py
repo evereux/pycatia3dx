@@ -14,7 +14,6 @@ from pycatia3dx.types.general import CATVariant
 class SimGroup(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimGroup(AnyObject):
     def entity_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EntityType() As SimMeshEntityType
@@ -62,7 +60,6 @@ class SimGroup(AnyObject):
     def group_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GroupType() As CATBSTR (Read Only)
@@ -77,7 +74,6 @@ class SimGroup(AnyObject):
     def number_of_entities(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfEntities() As short (Read Only)
@@ -91,7 +87,6 @@ class SimGroup(AnyObject):
     def add_boundary(self, i_boundary: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddBoundary(AnyObject iBoundary)
@@ -112,7 +107,6 @@ class SimGroup(AnyObject):
     def get_attribute_value(self, i_attribute: str, o_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
@@ -135,7 +129,6 @@ class SimGroup(AnyObject):
     def get_numbering_labels(self, i_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberingLabels(SimMeshEntityType iType) As
@@ -155,7 +148,6 @@ class SimGroup(AnyObject):
     def remove_boundary(self, i_boundary: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveBoundary(AnyObject iBoundary)
@@ -176,7 +168,6 @@ class SimGroup(AnyObject):
     def remove_numbering(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveNumbering()
@@ -189,7 +180,6 @@ class SimGroup(AnyObject):
     def set_attribute_value(self, i_attribute_name: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iAttributeName,CATVariant
@@ -212,7 +202,6 @@ class SimGroup(AnyObject):
     def set_group_type(self, i_group_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGroupType(CATBSTR iGroupType)

@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_elasticities import SimCon
 
 
 class SimConnectorBehavior(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class SimConnectorBehavior(AnyObject):
     def connector_dampings(self) -> SimConnectorDampings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorDampings() As SimConnectorDampings (Read
@@ -57,7 +54,6 @@ class SimConnectorBehavior(AnyObject):
     def connector_elasticities(self) -> SimConnectorElasticities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorElasticities() As SimConnectorElasticities (Read
@@ -73,7 +69,6 @@ class SimConnectorBehavior(AnyObject):
     def get_reference_length(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferenceLength(SimDof iDegreeOfFreedom) As double
@@ -96,7 +91,6 @@ class SimConnectorBehavior(AnyObject):
     def get_reference_length_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReferenceLengthFlag(SimDof iDegreeOfFreedom) As
@@ -119,7 +113,6 @@ class SimConnectorBehavior(AnyObject):
     def set_reference_length(self, i_degree_of_freedom: int, i_reference_length: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetReferenceLength(SimDof iDegreeOfFreedom,double
@@ -143,7 +136,6 @@ class SimConnectorBehavior(AnyObject):
     def set_reference_length_flag(self, i_degree_of_freedom: int, i_reference_length_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetReferenceLengthFlag(SimDof iDegreeOfFreedom,boolean
@@ -165,4 +157,4 @@ class SimConnectorBehavior(AnyObject):
         return self.com_object.SetReferenceLengthFlag(i_degree_of_freedom, i_reference_length_flag)
 
     def __repr__(self):
-        return f'SimConnectorBehavior(name="{ self.name }")'
+        return f'SimConnectorBehavior(name="{self.name}")'

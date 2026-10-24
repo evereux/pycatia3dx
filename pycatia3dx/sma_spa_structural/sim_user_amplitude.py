@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimUserAmplitude(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -68,7 +66,6 @@ class SimUserAmplitude(AnyObject):
     def num_variables(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumVariables() As long
@@ -91,7 +88,6 @@ class SimUserAmplitude(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -106,7 +102,6 @@ class SimUserAmplitude(AnyObject):
     def table_column(self) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TableColumn() As SimTableColumn (Read Only)
@@ -118,4 +113,4 @@ class SimUserAmplitude(AnyObject):
         return SimTableColumn(self.com_object.TableColumn)
 
     def __repr__(self):
-        return f'SimUserAmplitude(name="{ self.name }")'
+        return f'SimUserAmplitude(name="{self.name}")'

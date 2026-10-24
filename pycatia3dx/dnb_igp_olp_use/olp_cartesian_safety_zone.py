@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_shape import OLPShape
 
 
 class OLPCartesianSafetyZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def active(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Active() As boolean
@@ -66,7 +63,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def index(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Index() As long
@@ -92,7 +88,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def index_set(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IndexSet() As boolean
@@ -116,7 +111,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def safe_inside(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SafeInside() As boolean
@@ -140,7 +134,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def shape_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShapeType() As CATBSTR
@@ -164,7 +157,6 @@ class OLPCartesianSafetyZone(AnyObject):
     def get_shape(self) -> OLPShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetShape() As OlpShape
@@ -176,4 +168,4 @@ class OLPCartesianSafetyZone(AnyObject):
         return OLPShape(self.com_object.GetShape())
 
     def __repr__(self):
-        return f'OLPCartesianSafetyZone(name="{ self.name }")'
+        return f'OLPCartesianSafetyZone(name="{self.name}")'

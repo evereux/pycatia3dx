@@ -14,10 +14,8 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class Revolution(SketchBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class Revolution(SketchBasedShape):
     def first_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstAngle() As Angle (Read Only)
@@ -70,7 +67,6 @@ class Revolution(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsThin() As boolean
@@ -106,7 +102,6 @@ class Revolution(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MergeEnd() As boolean
@@ -141,7 +136,6 @@ class Revolution(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeutralFiber() As boolean
@@ -178,7 +172,6 @@ class Revolution(SketchBasedShape):
     def revolute_axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RevoluteAxis() As Reference
@@ -206,7 +199,6 @@ class Revolution(SketchBasedShape):
     def second_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondAngle() As Angle (Read Only)
@@ -228,4 +220,4 @@ class Revolution(SketchBasedShape):
         return Angle(self.com_object.SecondAngle)
 
     def __repr__(self):
-        return f'Revolution(name="{ self.name }")'
+        return f'Revolution(name="{self.name}")'

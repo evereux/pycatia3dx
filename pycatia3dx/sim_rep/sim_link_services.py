@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimLinkServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SimLinkServices(Service):
     def get_occurrence(self, i_link: AnyObject) -> PLMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOccurrence(AnyObject iLink) As PLMOccurrence
@@ -61,7 +59,6 @@ class SimLinkServices(Service):
     def get_rep_instance(self, i_link: AnyObject) -> VPMRepInstance:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRepInstance(AnyObject iLink) As VPMRepInstance
@@ -85,7 +82,6 @@ class SimLinkServices(Service):
     def get_target(self, i_link: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTarget(AnyObject iLink) As AnyObject

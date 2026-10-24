@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingFeatureFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingFeatureFactory(AnyObject):
     def create_machining_feature(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateMachiningFeature(CATBSTR iType) As AnyObject
@@ -61,7 +58,6 @@ class ManufacturingFeatureFactory(AnyObject):
     def create_mfg_contour(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateMfgContour() As AnyObject
@@ -79,7 +75,6 @@ class ManufacturingFeatureFactory(AnyObject):
     def list_machining_feature(self, i_filter_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ListMachiningFeature(CATBSTR iFilterType) As
@@ -100,4 +95,4 @@ class ManufacturingFeatureFactory(AnyObject):
         return self.com_object.ListMachiningFeature(i_filter_type)
 
     def __repr__(self):
-        return f'ManufacturingFeatureFactory(name="{ self.name }")'
+        return f'ManufacturingFeatureFactory(name="{self.name}")'

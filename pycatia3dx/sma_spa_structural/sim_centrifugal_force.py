@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimCentrifugalForce(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimCentrifugalForce(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimCentrifugalForce(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -115,7 +111,6 @@ class SimCentrifugalForce(AnyObject):
     def line(self) -> SimAxis:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Line() As SimAxis (Read Only)
@@ -132,7 +127,6 @@ class SimCentrifugalForce(AnyObject):
     def rotational_velocity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RotationalVelocity() As double
@@ -153,4 +147,4 @@ class SimCentrifugalForce(AnyObject):
         self.com_object.RotationalVelocity = value
 
     def __repr__(self):
-        return f'SimCentrifugalForce(name="{ self.name }")'
+        return f'SimCentrifugalForce(name="{self.name}")'

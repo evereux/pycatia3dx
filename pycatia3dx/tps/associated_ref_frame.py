@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class AssociatedRefFrame(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class AssociatedRefFrame(AnyObject):
     def reference_frame(self) -> 'Annotation':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceFrame() As Annotation (Read Only)
@@ -59,7 +57,6 @@ class AssociatedRefFrame(AnyObject):
     def reference_frame2(self) -> 'Annotation2':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceFrame2() As Annotation2 (Read Only)

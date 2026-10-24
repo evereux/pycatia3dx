@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_data_entity import RscDataEntity
 
 
 class RscConst(RscDataEntity):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscConst(RscDataEntity):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As CATBSTR
@@ -87,4 +84,4 @@ class RscConst(RscDataEntity):
         self.com_object.Value = value
 
     def __repr__(self):
-        return f'RscConst(name="{ self.name }")'
+        return f'RscConst(name="{self.name}")'

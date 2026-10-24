@@ -11,10 +11,8 @@ from pycatia3dx.interfaces.service import Service
 
 
 class ElecImportFinalizerService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class ElecImportFinalizerService(Service):
     def finalize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
                 | Sub Finalize()
@@ -52,4 +49,4 @@ class ElecImportFinalizerService(Service):
         return self.com_object.Finalize()
 
     def __repr__(self):
-        return f'ElecImportFinalizerService(name="{ self.name }")'
+        return f'ElecImportFinalizerService(name="{self.name}")'

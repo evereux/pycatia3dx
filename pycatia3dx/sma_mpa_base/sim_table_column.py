@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimTableColumn(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +57,6 @@ class SimTableColumn(AnyObject):
     def data(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Data() As CATSafeArrayVariant
@@ -85,7 +82,6 @@ class SimTableColumn(AnyObject):
     def number_of_rows(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfRows() As long (Read Only)
@@ -99,7 +95,6 @@ class SimTableColumn(AnyObject):
     def get_cell_data(self, i_row: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellData(long iRow) As double
@@ -122,7 +117,6 @@ class SimTableColumn(AnyObject):
     def get_cell_long_data(self, i_row: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellLongData(long iRow) As long
@@ -145,7 +139,6 @@ class SimTableColumn(AnyObject):
     def get_cell_string_data(self, i_row: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellStringData(long iRow) As CATBSTR
@@ -168,7 +161,6 @@ class SimTableColumn(AnyObject):
     def get_empty_cell_flag(self, i_row: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEmptyCellFlag(long iRow) As boolean
@@ -191,7 +183,6 @@ class SimTableColumn(AnyObject):
     def set_cell_data(self, i_row: int, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellData(long iRow,double iValue)
@@ -217,7 +208,6 @@ class SimTableColumn(AnyObject):
     def set_cell_long_data(self, i_row: int, i_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellLongData(long iRow,long iValue)
@@ -243,7 +233,6 @@ class SimTableColumn(AnyObject):
     def set_cell_string_data(self, i_row: int, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellStringData(long iRow,CATBSTR iValue)
@@ -267,4 +256,4 @@ class SimTableColumn(AnyObject):
         return self.com_object.SetCellStringData(i_row, i_value)
 
     def __repr__(self):
-        return f'SimTableColumn(name="{ self.name }")'
+        return f'SimTableColumn(name="{self.name}")'

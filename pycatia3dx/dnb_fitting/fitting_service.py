@@ -14,10 +14,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class FittingService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class FittingService(Service):
     def add(self, i_context: AnyObject, i_type: str) -> FitTrack:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBaseDispatch iContext,CATBSTR iType) As FitTrack
@@ -102,7 +99,6 @@ class FittingService(Service):
     def count(self, i_context: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Count(CATBaseDispatch iContext) As long
@@ -139,7 +135,6 @@ class FittingService(Service):
     def item(self, i_context: AnyObject, i_index: CATVariant) -> FitTrack:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATBaseDispatch iContext,CATVariant iIndex) As
@@ -187,7 +182,6 @@ class FittingService(Service):
     def remove(self, i_context: AnyObject, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATBaseDispatch iContext,CATVariant iIndex)
@@ -227,4 +221,4 @@ class FittingService(Service):
         return self.com_object.Remove(i_context.com_object, i_index)
 
     def __repr__(self):
-        return f'FittingService(name="{ self.name }")'
+        return f'FittingService(name="{self.name}")'

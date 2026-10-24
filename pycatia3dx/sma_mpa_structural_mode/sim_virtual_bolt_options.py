@@ -11,10 +11,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimVirtualBoltOptions(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -87,7 +85,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def advanced_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AdvancedCouplingType() As
@@ -111,7 +108,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def allow_preload_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowPreloadFlag() As boolean
@@ -134,7 +130,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def bending_stiffness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BendingStiffness() As double
@@ -157,7 +152,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def connect_other_end_of_solid_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectOtherEndOfSolidFlag() As boolean
@@ -181,7 +175,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def connector_behavior(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorBehavior() As
@@ -205,7 +198,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def head_coupled_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadCoupledSurfaceType() As
@@ -229,7 +221,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def head_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadType() As SimVirtualBolt_BoltType
@@ -252,7 +243,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def interface_coupled_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterfaceCoupledSurfaceType() As
@@ -277,7 +267,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def interface_washer_diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterfaceWasherDiameter() As double
@@ -301,7 +290,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def intermediate_coupled_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntermediateCoupledSurfaceType() As
@@ -325,7 +313,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def intermediate_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntermediateCouplingType() As
@@ -349,7 +336,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def intermediate_washer_diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntermediateWasherDiameter() As double
@@ -372,7 +358,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def number_of_head_node_rings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfHeadNodeRings() As long
@@ -395,7 +380,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def number_of_interface_node_rings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfInterfaceNodeRings() As long
@@ -419,7 +403,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def number_of_intermediate_node_rings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfIntermediateNodeRings() As long
@@ -443,7 +426,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def number_of_nut_node_rings(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfNutNodeRings() As long
@@ -466,7 +448,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def nut_coupled_surface_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NutCoupledSurfaceType() As
@@ -490,7 +471,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def nut_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NutType() As SimVirtualBolt_BoltType
@@ -513,7 +493,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def solid_solid_connection_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolidSolidConnectionType() As
@@ -538,7 +517,6 @@ class SimVirtualBoltOptions(CATBaseDispatch):
     def torsional_stiffness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TorsionalStiffness() As double

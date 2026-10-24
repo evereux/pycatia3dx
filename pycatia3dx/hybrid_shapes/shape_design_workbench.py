@@ -12,10 +12,8 @@ from pycatia3dx.interfaces.workbench import Workbench
 
 
 class ShapeDesignWorkbench(Workbench):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -34,4 +32,4 @@ class ShapeDesignWorkbench(Workbench):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ShapeDesignWorkbench(name="{ self.name }")'
+        return f'ShapeDesignWorkbench(name="{self.name}")'

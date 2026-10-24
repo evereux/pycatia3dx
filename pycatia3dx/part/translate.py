@@ -13,10 +13,8 @@ from pycatia3dx.mmr_automation_interfaces.shape import Shape
 
 
 class Translate(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class Translate(Shape):
     def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HybridShape() As HybridShape (Read Only)
@@ -73,4 +70,4 @@ class Translate(Shape):
         return HybridShape(self.com_object.HybridShape)
 
     def __repr__(self):
-        return f'Translate(name="{ self.name }")'
+        return f'Translate(name="{self.name}")'

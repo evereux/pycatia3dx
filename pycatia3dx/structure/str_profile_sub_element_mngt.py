@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfileSubElementMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrProfileSubElementMngt(AnyObject):
     def get_edges(self, i_name_1: str, i_name_2: str) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEdges(CATBSTR iName_1,CATBSTR iName_2) As References
@@ -66,7 +63,6 @@ class StrProfileSubElementMngt(AnyObject):
     def get_faces(self, i_name: str) -> References:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFaces(CATBSTR iName) As References
@@ -89,4 +85,4 @@ class StrProfileSubElementMngt(AnyObject):
         return References(self.com_object.GetFaces(i_name))
 
     def __repr__(self):
-        return f'StrProfileSubElementMngt(name="{ self.name }")'
+        return f'StrProfileSubElementMngt(name="{self.name}")'

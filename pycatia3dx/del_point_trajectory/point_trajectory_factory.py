@@ -13,10 +13,8 @@ from pycatia3dx.del_point_trajectory.point_trajectory import PointTrajectory
 
 
 class PointTrajectoryFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class PointTrajectoryFactory(AnyObject):
     def create_point_trajectory(self, i_trajectory_type: str, i_name: str) -> PointTrajectory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePointTrajectory(CATBSTR iTrajectoryType,CATBSTR iName) As
@@ -80,7 +77,6 @@ class PointTrajectoryFactory(AnyObject):
     def destroy_point_trajectory(self, i_point_trajectory: PointTrajectory) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DestroyPointTrajectory(PointTrajectory iPointTrajectory)
@@ -107,4 +103,4 @@ class PointTrajectoryFactory(AnyObject):
         return self.com_object.DestroyPointTrajectory(i_point_trajectory.com_object)
 
     def __repr__(self):
-        return f'PointTrajectoryFactory(name="{ self.name }")'
+        return f'PointTrajectoryFactory(name="{self.name}")'

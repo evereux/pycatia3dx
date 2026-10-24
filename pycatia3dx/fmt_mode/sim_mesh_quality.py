@@ -13,7 +13,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class SimMeshQuality(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -34,7 +33,6 @@ class SimMeshQuality(CATBaseDispatch):
     def create_csv_file(self, i_path: str, i_overwrite: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateCSVFile(CATBSTR iPath,boolean iOverwrite)

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscGenericProfilesMgr(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -60,7 +58,6 @@ class RscGenericProfilesMgr(AnyObject):
     def create_generic_profile(self, i_profile_type: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateGenericProfile(DELRscControllerGenericProfilesType iProfileType) As
@@ -80,7 +77,6 @@ class RscGenericProfilesMgr(AnyObject):
     def get_current_generic_profile(self, i_profile_type: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCurrentGenericProfile(DELRscControllerGenericProfilesType iProfileType)
@@ -101,7 +97,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def get_generic_profile_by_name(self, i_profile_type: int, i_profile_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGenericProfileByName(DELRscControllerGenericProfilesType
@@ -124,7 +119,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def get_generic_profile_count(self, i_profile_type: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGenericProfileCount(DELRscControllerGenericProfilesType iProfileType)
@@ -144,7 +138,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def get_generic_profile_list(self, i_profile_type: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGenericProfileList(DELRscControllerGenericProfilesType iProfileType) As
@@ -177,7 +170,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def has_generic_profile(self, i_profile_type: int, i_profile_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasGenericProfile(DELRscControllerGenericProfilesType iProfileType,CATBSTR
@@ -216,7 +208,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def remove_generic_profile(self, i_profile_type: int, i_profile_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RemoveGenericProfile(DELRscControllerGenericProfilesType
@@ -256,7 +247,6 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
     def set_current_generic_profile(self, i_profile_type: int, i_profile_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrentGenericProfile(DELRscControllerGenericProfilesType
@@ -294,4 +284,4 @@ NewCurrentID.GetCurrentGenericProfile9DELRscControllerGenericProfilesType_Tool)
         return self.com_object.SetCurrentGenericProfile(i_profile_type, i_profile_name)
 
     def __repr__(self):
-        return f'RscGenericProfilesMgr(name="{ self.name }")'
+        return f'RscGenericProfilesMgr(name="{self.name}")'

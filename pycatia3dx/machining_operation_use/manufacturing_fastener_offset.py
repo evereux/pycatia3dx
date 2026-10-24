@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingFastenerOffset(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingFastenerOffset(AnyObject):
     def get_offset_values(self, i_index: int, o_value: float, o_param_name: str, o_param_sign: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOffsetValues(long iIndex,double oValue,CATBSTR oParamName,long
@@ -67,7 +64,6 @@ class ManufacturingFastenerOffset(AnyObject):
     def set_offset_param(self, i_index: int, i_param_name: str, i_param_sign: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOffsetParam(long iIndex,CATBSTR iParamName,long
@@ -94,7 +90,6 @@ class ManufacturingFastenerOffset(AnyObject):
     def set_offset_value(self, i_index: int, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOffsetValue(long iIndex,double iValue)
@@ -114,4 +109,4 @@ class ManufacturingFastenerOffset(AnyObject):
         return self.com_object.SetOffsetValue(i_index, i_value)
 
     def __repr__(self):
-        return f'ManufacturingFastenerOffset(name="{ self.name }")'
+        return f'ManufacturingFastenerOffset(name="{self.name}")'

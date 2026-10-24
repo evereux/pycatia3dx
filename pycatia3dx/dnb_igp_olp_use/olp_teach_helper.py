@@ -16,10 +16,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_procedure import OLPProcedure
 
 
 class OLPTeachHelper(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +47,6 @@ class OLPTeachHelper(Service):
     def current_ast_instruction(self) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentAstInstruction() As OlpAstNode (Read Only)
@@ -65,7 +62,6 @@ class OLPTeachHelper(Service):
     def current_ast_procedure(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentAstProcedure() As OLPAstBranch (Read Only)
@@ -80,7 +76,6 @@ class OLPTeachHelper(Service):
     def current_command(self) -> OLPCustomCommand:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentCommand() As OlpCustomCommand (Read Only)
@@ -97,7 +92,6 @@ class OLPTeachHelper(Service):
     def current_instruction(self) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentInstruction() As OlpInstruction (Read Only)
@@ -113,7 +107,6 @@ class OLPTeachHelper(Service):
     def current_procedure(self) -> OLPProcedure:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CurrentProcedure() As OlpProcedure (Read Only)
@@ -128,7 +121,6 @@ class OLPTeachHelper(Service):
     def edited_ast_nodes_new(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditedAstNodesNew() As CATSafeArrayVariant (Read
@@ -145,7 +137,6 @@ class OLPTeachHelper(Service):
     def edited_ast_nodes_previous(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EditedAstNodesPrevious() As CATSafeArrayVariant (Read
@@ -162,7 +153,6 @@ class OLPTeachHelper(Service):
     def is_teach_active(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsTeachActive() As boolean (Read Only)
@@ -178,7 +168,6 @@ class OLPTeachHelper(Service):
     def logical_keywords(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LogicalKeywords(CATSafeArrayVariant iKeywords) (Write
@@ -206,7 +195,6 @@ class OLPTeachHelper(Service):
     def new_instruction(self) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NewInstruction() As OlpInstruction (Read Only)
@@ -222,7 +210,6 @@ class OLPTeachHelper(Service):
     def position_access_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionAccessMode() As DELOlpAccessMode
@@ -258,7 +245,6 @@ class OLPTeachHelper(Service):
     def refresh_mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RefreshMode(CATBSTR iRefreshMode) (Write Only)
@@ -293,7 +279,6 @@ class OLPTeachHelper(Service):
     def supports_nrl_view(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportsNRLView(boolean iSupportsNRLView) (Write
@@ -318,7 +303,6 @@ class OLPTeachHelper(Service):
     def add_combo(self, i_editor_id: str, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddCombo(CATBSTR iEditorID,CATSafeArrayVariant iValues)
@@ -342,7 +326,6 @@ class OLPTeachHelper(Service):
     def add_custom_column(self, i_editor_id: str, i_column_title: str, i_applicable_applications: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddCustomColumn(CATBSTR iEditorID,CATBSTR iColumnTitle,CATSafeArrayVariant
@@ -372,7 +355,6 @@ class OLPTeachHelper(Service):
     def add_custom_command(self, i_group: str, i_command_name: str) -> OLPCustomCommand:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddCustomCommand(CATBSTR iGroup,CATBSTR iCommandName) As
@@ -401,4 +383,4 @@ class OLPTeachHelper(Service):
         return OLPCustomCommand(self.com_object.AddCustomCommand(i_group, i_command_name))
 
     def __repr__(self):
-        return f'OLPTeachHelper(name="{ self.name }")'
+        return f'OLPTeachHelper(name="{self.name}")'

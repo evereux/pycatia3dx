@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeAssemble(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -51,7 +49,6 @@ class HybridShapeAssemble(HybridShape):
     def invert(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Invert() As boolean
@@ -84,7 +81,6 @@ class HybridShapeAssemble(HybridShape):
     def add_element(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElement(Reference iElement)
@@ -113,7 +109,6 @@ class HybridShapeAssemble(HybridShape):
     def add_sub_element(self, i_sub_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddSubElement(Reference iSubElement)
@@ -134,7 +129,6 @@ class HybridShapeAssemble(HybridShape):
     def append_federated_element(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AppendFederatedElement(Reference iElement)
@@ -156,7 +150,6 @@ class HybridShapeAssemble(HybridShape):
     def get_angular_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetAngularTolerance() As double
@@ -174,7 +167,6 @@ class HybridShapeAssemble(HybridShape):
     def get_angular_tolerance_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetAngularToleranceMode() As boolean
@@ -192,7 +184,6 @@ class HybridShapeAssemble(HybridShape):
     def get_connex(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetConnex() As boolean
@@ -209,7 +200,6 @@ class HybridShapeAssemble(HybridShape):
     def get_deviation(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetDeviation() As double
@@ -227,7 +217,6 @@ class HybridShapeAssemble(HybridShape):
     def get_element(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElement(long iRank) As Reference
@@ -254,7 +243,6 @@ class HybridShapeAssemble(HybridShape):
     def get_elements_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetElementsSize() As long
@@ -280,7 +268,6 @@ class HybridShapeAssemble(HybridShape):
     def get_federated_element(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFederatedElement(long iRank) As Reference
@@ -305,7 +292,6 @@ class HybridShapeAssemble(HybridShape):
     def get_federated_elements_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFederatedElementsSize() As long
@@ -323,7 +309,6 @@ class HybridShapeAssemble(HybridShape):
     def get_federation_propagation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetFederationPropagation() As long
@@ -341,7 +326,6 @@ class HybridShapeAssemble(HybridShape):
     def get_healing_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetHealingMode() As boolean
@@ -359,7 +343,6 @@ class HybridShapeAssemble(HybridShape):
     def get_manifold(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetManifold() As boolean
@@ -376,7 +359,6 @@ class HybridShapeAssemble(HybridShape):
     def get_simplify(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSimplify() As boolean
@@ -393,7 +375,6 @@ class HybridShapeAssemble(HybridShape):
     def get_sub_element(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSubElement(long iRank) As Reference
@@ -413,7 +394,6 @@ class HybridShapeAssemble(HybridShape):
     def get_sub_elements_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSubElementsSize() As long
@@ -439,7 +419,6 @@ class HybridShapeAssemble(HybridShape):
     def get_suppress_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSuppressMode() As boolean
@@ -456,7 +435,6 @@ class HybridShapeAssemble(HybridShape):
     def get_tangency_continuity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTangencyContinuity() As boolean
@@ -473,7 +451,6 @@ class HybridShapeAssemble(HybridShape):
     def remove_element(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElement(long iRank)
@@ -499,7 +476,6 @@ class HybridShapeAssemble(HybridShape):
     def remove_federated_element(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveFederatedElement(long iRank)
@@ -518,7 +494,6 @@ class HybridShapeAssemble(HybridShape):
     def remove_sub_element(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSubElement(long iRank)
@@ -538,7 +513,6 @@ class HybridShapeAssemble(HybridShape):
     def replace_element(self, i_pos: int, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplaceElement(long iPos,Reference iElement)
@@ -567,7 +541,6 @@ class HybridShapeAssemble(HybridShape):
     def set_angular_tolerance(self, i_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngularTolerance(double iValue)
@@ -586,7 +559,6 @@ class HybridShapeAssemble(HybridShape):
     def set_angular_tolerance_mode(self, i_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetAngularToleranceMode(boolean iValue)
@@ -605,7 +577,6 @@ class HybridShapeAssemble(HybridShape):
     def set_connex(self, i_connex: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetConnex(boolean iConnex)
@@ -623,7 +594,6 @@ class HybridShapeAssemble(HybridShape):
     def set_deviation(self, ideviation: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetDeviation(double ideviation)
@@ -642,7 +612,6 @@ class HybridShapeAssemble(HybridShape):
     def set_federation_propagation(self, i_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetFederationPropagation(long iMode)
@@ -661,7 +630,6 @@ class HybridShapeAssemble(HybridShape):
     def set_healing_mode(self, i_heal: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetHealingMode(boolean iHeal)
@@ -680,7 +648,6 @@ class HybridShapeAssemble(HybridShape):
     def set_manifold(self, i_manifold: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetManifold(boolean iManifold)
@@ -698,7 +665,6 @@ class HybridShapeAssemble(HybridShape):
     def set_simplify(self, i_simplify: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSimplify(boolean iSimplify)
@@ -716,7 +682,6 @@ class HybridShapeAssemble(HybridShape):
     def set_suppress_mode(self, i_suppress_mode: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSuppressMode(boolean iSuppressMode)
@@ -734,7 +699,6 @@ class HybridShapeAssemble(HybridShape):
     def set_tangency_continuity(self, i_tangency_continuity: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetTangencyContinuity(boolean iTangencyContinuity)
@@ -750,4 +714,4 @@ class HybridShapeAssemble(HybridShape):
         return self.com_object.SetTangencyContinuity(i_tangency_continuity)
 
     def __repr__(self):
-        return f'HybridShapeAssemble(name="{ self.name }")'
+        return f'HybridShapeAssemble(name="{self.name}")'

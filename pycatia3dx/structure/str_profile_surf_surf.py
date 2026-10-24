@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfileSurfSurf(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class StrProfileSurfSurf(AnyObject):
     def first_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FirstSurface() As Reference
@@ -75,7 +72,6 @@ class StrProfileSurfSurf(AnyObject):
     def second_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SecondSurface() As Reference
@@ -106,7 +102,6 @@ class StrProfileSurfSurf(AnyObject):
     def get_first_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFirstOffset() As Parameter
@@ -127,7 +122,6 @@ class StrProfileSurfSurf(AnyObject):
     def get_second_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSecondOffset() As Parameter
@@ -146,4 +140,4 @@ class StrProfileSurfSurf(AnyObject):
         return Parameter(self.com_object.GetSecondOffset())
 
     def __repr__(self):
-        return f'StrProfileSurfSurf(name="{ self.name }")'
+        return f'StrProfileSurfSurf(name="{self.name}")'

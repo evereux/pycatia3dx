@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeTransfer(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -52,7 +50,6 @@ class HybridShapeTransfer(HybridShape):
     def element_to_transfer(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElementToTransfer() As Reference
@@ -75,7 +72,6 @@ class HybridShapeTransfer(HybridShape):
     def surface_to_unfold(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SurfaceToUnfold() As Reference
@@ -98,7 +94,6 @@ class HybridShapeTransfer(HybridShape):
     def type_of_transfer(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property TypeOfTransfer() As long
@@ -125,7 +120,6 @@ class HybridShapeTransfer(HybridShape):
     def unfold_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property UnfoldType() As long
@@ -153,7 +147,6 @@ class HybridShapeTransfer(HybridShape):
     def unfolded_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property UnfoldedSurface() As Reference
@@ -173,4 +166,4 @@ class HybridShapeTransfer(HybridShape):
         self.com_object.UnfoldedSurface = value
 
     def __repr__(self):
-        return f'HybridShapeTransfer(name="{ self.name }")'
+        return f'HybridShapeTransfer(name="{self.name}")'

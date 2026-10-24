@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingCoordDim(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrawingCoordDim(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -71,7 +69,6 @@ class DrawingCoordDim(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TextProperties() As DrawingTextProperties (Read Only)
@@ -94,7 +91,6 @@ class DrawingCoordDim(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -125,7 +121,6 @@ class DrawingCoordDim(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -157,7 +152,6 @@ class DrawingCoordDim(AnyObject):
     def get_coord_values(self, o_type: int, o_x: float, o_y: float, o_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCoordValues(long oType,double oX,double oY,double oZ)

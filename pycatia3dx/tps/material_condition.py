@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class MaterialCondition(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class MaterialCondition(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Modifier() As CATBSTR (Read Only)
@@ -50,4 +47,4 @@ class MaterialCondition(AnyObject):
         return self.com_object.Modifier
 
     def __repr__(self):
-        return f'MaterialCondition(name="{ self.name }")'
+        return f'MaterialCondition(name="{self.name}")'

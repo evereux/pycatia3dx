@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CtmCurveSamplerSpeed(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class CtmCurveSamplerSpeed(AnyObject):
     def sag(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sag() As double
@@ -77,7 +74,6 @@ class CtmCurveSamplerSpeed(AnyObject):
     def speed(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Speed() As double
@@ -111,4 +107,4 @@ class CtmCurveSamplerSpeed(AnyObject):
         self.com_object.Speed = value
 
     def __repr__(self):
-        return f'CtmCurveSamplerSpeed(name="{ self.name }")'
+        return f'CtmCurveSamplerSpeed(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Units(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -42,7 +41,6 @@ class Units(Collection):
     def item(self, i_index: CATVariant) -> Unit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Unit

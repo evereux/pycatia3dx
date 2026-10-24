@@ -12,10 +12,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class Boundary(Reference):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -97,4 +95,4 @@ class Boundary(Reference):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Boundary(name="{ self.name }")'
+        return f'Boundary(name="{self.name}")'

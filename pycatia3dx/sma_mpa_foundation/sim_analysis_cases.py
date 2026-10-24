@@ -15,10 +15,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class SimAnalysisCases(CATBaseDispatch):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -53,7 +51,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def application(self) -> Application:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Application() As Application (Read Only)
@@ -82,7 +79,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Count() As long (Read Only)
@@ -104,7 +100,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Name() As CATBSTR (Read Only)
@@ -130,7 +125,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def parent(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parent() As CATBaseDispatch (Read Only)
@@ -157,7 +151,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def add(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As CATBaseDispatch
@@ -173,7 +166,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def add_analysis_case(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddAnalysisCase(CATBSTR iType) As CATBaseDispatch
@@ -200,7 +192,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def clone(self, i_analysis_case: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Clone(CATBaseDispatch iAnalysisCase) As CATBaseDispatch
@@ -222,7 +213,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetItem(CATBSTR IDName) As CATBaseDispatch
@@ -247,7 +237,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -270,7 +259,6 @@ class SimAnalysisCases(CATBaseDispatch):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
@@ -289,4 +277,4 @@ class SimAnalysisCases(CATBaseDispatch):
         return self.com_object.Remove(i_index)
 
     def __repr__(self):
-        return f'SimAnalysisCases(name="{ self.name }")'
+        return f'SimAnalysisCases(name="{self.name}")'

@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class ListObject(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class ListObject(Collection):
     def add(self, i_item_value: PLMEntity) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(PLMEntity iItemValue)
@@ -69,7 +67,6 @@ class ListObject(Collection):
     def get(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get(CATVariant iIndex) As CATBaseDispatch
@@ -100,7 +97,6 @@ class ListObject(Collection):
     def item(self, i_index: CATVariant) -> PLMEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As PLMEntity
@@ -131,7 +127,6 @@ class ListObject(Collection):
     def remove(self, i_item_value: PLMEntity) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(PLMEntity iItemValue)

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class OLPDrillRivetAction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -64,7 +62,6 @@ class OLPDrillRivetAction(AnyObject):
     def waypoint_escape_motion_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointEscapeMotionType() As CATBSTR
@@ -91,7 +88,6 @@ class OLPDrillRivetAction(AnyObject):
     def waypoint_escape_zone(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointEscapeZone() As CATBSTR
@@ -113,7 +109,6 @@ class OLPDrillRivetAction(AnyObject):
     def waypoint_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointID() As CATBSTR
@@ -139,7 +134,6 @@ class OLPDrillRivetAction(AnyObject):
     def waypoint_safe_zone(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WaypointSafeZone() As CATBSTR
@@ -160,4 +154,4 @@ class OLPDrillRivetAction(AnyObject):
         self.com_object.WaypointSafeZone = value
 
     def __repr__(self):
-        return f'OLPDrillRivetAction(name="{ self.name }")'
+        return f'OLPDrillRivetAction(name="{self.name}")'

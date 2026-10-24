@@ -17,10 +17,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_robot_motion_target import OLPRobotMotionTar
 
 
 class OLPRobotMotion(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +54,6 @@ class OLPRobotMotion(OLPInstruction):
     def accuracy_profile(self) -> RscAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfile() As RscAccuracyProfile (Read Only)
@@ -81,7 +78,6 @@ class OLPRobotMotion(OLPInstruction):
     def accuracy_profile_olp(self) -> OLPAccuracyProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AccuracyProfileOlp() As OlpAccuracyProfile
@@ -114,7 +110,6 @@ class OLPRobotMotion(OLPInstruction):
     def global_position(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalPosition() As boolean
@@ -142,7 +137,6 @@ class OLPRobotMotion(OLPInstruction):
     def motion_profile(self) -> RscMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfile() As RscMotionProfile (Read Only)
@@ -159,7 +153,6 @@ class OLPRobotMotion(OLPInstruction):
     def motion_profile_olp(self) -> OLPMotionProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionProfileOlp() As OlpMotionProfile
@@ -191,7 +184,6 @@ class OLPRobotMotion(OLPInstruction):
     def motion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionType() As DELOlpMotionType
@@ -218,7 +210,6 @@ class OLPRobotMotion(OLPInstruction):
     def orientation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrientationMode() As DELOlpOrientationMode
@@ -245,7 +236,6 @@ class OLPRobotMotion(OLPInstruction):
     def position_comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionComment() As CATBSTR
@@ -283,7 +273,6 @@ class OLPRobotMotion(OLPInstruction):
     def position_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionName() As CATBSTR
@@ -312,7 +301,6 @@ class OLPRobotMotion(OLPInstruction):
     def position_number(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionNumber() As CATBSTR
@@ -341,7 +329,6 @@ class OLPRobotMotion(OLPInstruction):
     def position_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositionType() As CATBSTR
@@ -378,7 +365,6 @@ class OLPRobotMotion(OLPInstruction):
     def synchronization_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SynchronizationMode() As DELOlpSynchronizationMode
@@ -404,7 +390,6 @@ class OLPRobotMotion(OLPInstruction):
     def get_target(self, i_mg: OLPMotionGroup) -> OLPRobotMotionTarget:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTarget(OlpMotionGroup iMG) As OlpRobotMotionTarget
@@ -426,7 +411,6 @@ class OLPRobotMotion(OLPInstruction):
     def set_accuracy_params(self, i_fly_by: bool, i_accuracy_type: int, i_accuracy_value: float, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyParams(boolean iFlyBy,AccuracyType iAccuracyType,double
@@ -473,10 +457,10 @@ class OLPRobotMotion(OLPInstruction):
         """
         return self.com_object.SetAccuracyParams(i_fly_by, i_accuracy_type, i_accuracy_value, i_name)
 
-    def set_motion_params(self, i_basis: int, i_speed: float, i_accel_percent: float, i_angular_speed_percent: float, i_angular_accel_percent: float, i_name: str) -> None:
+    def set_motion_params(self, i_basis: int, i_speed: float, i_accel_percent: float, i_angular_speed_percent: float,
+                          i_angular_accel_percent: float, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionParams(MotionBasis iBasis,double iSpeed,double
@@ -494,7 +478,8 @@ class OLPRobotMotion(OLPInstruction):
         :param str i_name:
         :return: None
         """
-        return self.com_object.SetMotionParams(i_basis, i_speed, i_accel_percent, i_angular_speed_percent, i_angular_accel_percent, i_name)
+        return self.com_object.SetMotionParams(i_basis, i_speed, i_accel_percent, i_angular_speed_percent,
+                                               i_angular_accel_percent, i_name)
 
     def __repr__(self):
-        return f'OLPRobotMotion(name="{ self.name }")'
+        return f'OLPRobotMotion(name="{self.name}")'

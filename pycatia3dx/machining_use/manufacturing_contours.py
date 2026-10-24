@@ -12,10 +12,8 @@ from pycatia3dx.machining_use.manufacturing_agregate import ManufacturingAgregat
 
 
 class ManufacturingContours(ManufacturingAgregate):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingContours(ManufacturingAgregate):
     def add_element(self, i_member: AnyObject, i_notify: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddElement(AnyObject iMember,long iNotify)
@@ -62,4 +59,4 @@ class ManufacturingContours(ManufacturingAgregate):
         return self.com_object.AddElement(i_member.com_object, i_notify)
 
     def __repr__(self):
-        return f'ManufacturingContours(name="{ self.name }")'
+        return f'ManufacturingContours(name="{self.name}")'

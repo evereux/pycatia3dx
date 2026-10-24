@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPResourceControlDevice(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class OLPResourceControlDevice(AnyObject):
     def controller_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ControllerType() As CATBSTR
@@ -68,7 +66,6 @@ class OLPResourceControlDevice(AnyObject):
     def guns(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Guns() As CATSafeArrayVariant (Read Only)
@@ -84,7 +81,6 @@ class OLPResourceControlDevice(AnyObject):
     def motion_groups(self) -> OLPMotionGroups:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As OlpMotionGroups (Read Only)
@@ -99,7 +95,6 @@ class OLPResourceControlDevice(AnyObject):
     def origin_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OriginType() As DELOlpPositionRef
@@ -143,7 +138,6 @@ class OLPResourceControlDevice(AnyObject):
     def get_device_by_id(self, i_id: str, i_type: str) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceByID(CATBSTR iID,CATBSTR iType) As OlpController
@@ -169,7 +163,6 @@ class OLPResourceControlDevice(AnyObject):
     def get_gun_by_id(self, i_id: str, i_type: str) -> OLPGun:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGunByID(CATBSTR iID,CATBSTR iType) As OlpGun
@@ -196,7 +189,6 @@ class OLPResourceControlDevice(AnyObject):
     def get_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -223,7 +215,6 @@ class OLPResourceControlDevice(AnyObject):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As
@@ -248,7 +239,6 @@ class OLPResourceControlDevice(AnyObject):
     def get_robot_team(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRobotTeam() As DELMIAOlpRobotTeam
@@ -264,7 +254,6 @@ class OLPResourceControlDevice(AnyObject):
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant

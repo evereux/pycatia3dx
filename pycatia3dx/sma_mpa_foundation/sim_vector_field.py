@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimVectorField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SimVectorField(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As SimVectorFieldVariationType
@@ -60,7 +57,6 @@ class SimVectorField(AnyObject):
     def get_vector_components(self, o_x_comp: float, o_y_comp: float, o_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetVectorComponents(double oXComp,double oYComp,double
@@ -88,7 +84,6 @@ class SimVectorField(AnyObject):
     def set_vector_components(self, i_x_comp: float, i_y_comp: float, i_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVectorComponents(double iXComp,double iYComp,double
@@ -114,4 +109,4 @@ class SimVectorField(AnyObject):
         return self.com_object.SetVectorComponents(i_x_comp, i_y_comp, i_z_comp)
 
     def __repr__(self):
-        return f'SimVectorField(name="{ self.name }")'
+        return f'SimVectorField(name="{self.name}")'

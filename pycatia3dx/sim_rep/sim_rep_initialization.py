@@ -16,7 +16,6 @@ from pycatia3dx.types.general import Variant
 class SimRepInitialization(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +50,6 @@ class SimRepInitialization(CATBaseDispatch):
     def parameters(self) -> SimParameterSet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As SimParameterSet (Read Only)
@@ -66,7 +64,6 @@ class SimRepInitialization(CATBaseDispatch):
     def results(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Results() As CATSafeArrayVariant (Read Only)
@@ -80,7 +77,6 @@ class SimRepInitialization(CATBaseDispatch):
     def initialize_rep(self, i_parameter_set: SimParameterSet) -> Variant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitializeRep(SimParameterSet iParameterSet)

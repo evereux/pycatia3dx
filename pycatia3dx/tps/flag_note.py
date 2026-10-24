@@ -14,10 +14,8 @@ from pycatia3dx.types.general import CATVariant
 
 
 class FlagNote(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class FlagNote(AnyObject):
     def flag_note_text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FlagNoteText() As CATBSTR
@@ -68,7 +65,6 @@ class FlagNote(AnyObject):
     def text(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Text() As CATBSTR
@@ -95,7 +91,6 @@ class FlagNote(AnyObject):
     def add_url(self, i_url: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddURL(CATBSTR iUrl)
@@ -114,7 +109,6 @@ class FlagNote(AnyObject):
     def get2d_annot(self) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get2dAnnot() As DrawingText
@@ -127,7 +121,6 @@ class FlagNote(AnyObject):
     def get_nbr_url2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbrURL2() As long
@@ -145,7 +138,6 @@ class FlagNote(AnyObject):
     def modify_url(self, i_url: str, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
@@ -167,7 +159,6 @@ class FlagNote(AnyObject):
     def remove_url(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveURL(CATVariant iIndex)
@@ -186,7 +177,6 @@ class FlagNote(AnyObject):
     def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func TPSParallelOnScreen() As TPSParallelOnScreen
@@ -199,7 +189,6 @@ class FlagNote(AnyObject):
     def url(self, i_index: CATVariant) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func URL(CATVariant iIndex) As CATBSTR
@@ -218,4 +207,4 @@ class FlagNote(AnyObject):
         return self.com_object.URL(i_index)
 
     def __repr__(self):
-        return f'FlagNote(name="{ self.name }")'
+        return f'FlagNote(name="{self.name}")'

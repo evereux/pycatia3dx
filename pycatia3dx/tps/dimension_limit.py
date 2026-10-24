@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DimensionLimit(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class DimensionLimit(AnyObject):
     def dimension_limit_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DimensionLimitType() As CATBSTR
@@ -67,7 +64,6 @@ class DimensionLimit(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Modifier() As CATBSTR
@@ -90,7 +86,6 @@ class DimensionLimit(AnyObject):
     def nominalvalue(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Nominalvalue() As double (Read Only)
@@ -106,7 +101,6 @@ class DimensionLimit(AnyObject):
     def symetric_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SymetricValue() As boolean
@@ -130,7 +124,6 @@ class DimensionLimit(AnyObject):
     def tabulated_limit(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TabulatedLimit() As CATBSTR
@@ -154,7 +147,6 @@ class DimensionLimit(AnyObject):
     def validated_tolerance_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ValidatedToleranceValue() As boolean
@@ -178,7 +170,6 @@ class DimensionLimit(AnyObject):
     def limits(self, o_bottom: float, o_up: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Limits(double oBottom,double oUp)
@@ -201,7 +192,6 @@ class DimensionLimit(AnyObject):
     def put_limits(self, i_bottom: float, i_up: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PutLimits(double iBottom,double iUp)
@@ -222,4 +212,4 @@ class DimensionLimit(AnyObject):
         return self.com_object.PutLimits(i_bottom, i_up)
 
     def __repr__(self):
-        return f'DimensionLimit(name="{ self.name }")'
+        return f'DimensionLimit(name="{self.name}")'

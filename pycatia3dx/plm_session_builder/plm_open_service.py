@@ -17,7 +17,6 @@ from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccur
 class PLMOpenService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class PLMOpenService(Service):
     def plm_open(self, i_plm_entity: PLMEntity) -> VPMRootOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMOpen(PLMEntity iPLMEntity,Editor oEditor)
@@ -70,7 +68,6 @@ class PLMOpenService(Service):
     def plm_open_in_new_window(self, i_plm_entity: PLMEntity, o_editor: Editor) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMOpenInNewWindow(PLMEntity iPLMEntity,Editor oEditor)
@@ -95,7 +92,6 @@ class PLMOpenService(Service):
     def get_last_error(self, o_error_message: str, o_error_code: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub getLastError(CATBSTR oErrorMessage,long oErrorCode)

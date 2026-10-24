@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimResultsSet(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SimResultsSet(Collection):
     def item(self, i_identifier: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIdentifier) As CATBaseDispatch

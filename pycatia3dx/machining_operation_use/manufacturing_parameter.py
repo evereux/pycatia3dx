@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingParameter(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingParameter(AnyObject):
     def get_bool_value(self, i_name: str, o_value: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetBoolValue(CATBSTR iName,boolean oValue)
@@ -60,7 +57,6 @@ class ManufacturingParameter(AnyObject):
     def get_double_value(self, i_name: str, o_value: float, i_unit: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDoubleValue(CATBSTR iName,double oValue,long iUnit)
@@ -85,7 +81,6 @@ class ManufacturingParameter(AnyObject):
     def get_long_value(self, i_name: str, o_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLongValue(CATBSTR iName,long oValue)
@@ -107,7 +102,6 @@ class ManufacturingParameter(AnyObject):
     def get_string_value(self, i_name: str, o_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStringValue(CATBSTR iName,CATBSTR oValue)
@@ -129,7 +123,6 @@ class ManufacturingParameter(AnyObject):
     def get_value(self, i_name: str, o_value: Parameter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetValue(CATBSTR iName,Parameter oValue)
@@ -149,4 +142,4 @@ class ManufacturingParameter(AnyObject):
         return self.com_object.GetValue(i_name, o_value.com_object)
 
     def __repr__(self):
-        return f'ManufacturingParameter(name="{ self.name }")'
+        return f'ManufacturingParameter(name="{self.name}")'

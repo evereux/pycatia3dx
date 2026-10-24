@@ -16,7 +16,6 @@ from pycatia3dx.system.any_object import AnyObject
 class StrOpeningsMgr(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class StrOpeningsMgr(AnyObject):
     def get_available_standard_contours(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAvailableStandardContours(CATSafeArrayVariant
@@ -87,7 +85,6 @@ class StrOpeningsMgr(AnyObject):
     def get_available_standard_positioning_strategies(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAvailableStandardPositioningStrategies(CATSafeArrayVariant
@@ -135,7 +132,6 @@ class StrOpeningsMgr(AnyObject):
     def get_available_standard_positioning_strategies_for_profile(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetAvailableStandardPositioningStrategiesForProfile(CATSafeArrayVariant
@@ -184,7 +180,6 @@ class StrOpeningsMgr(AnyObject):
     def get_standard_contour_parms(self, i_contour_name: str) -> StrStandardContourParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStandardContourParms(CATBSTR iContourName) As
@@ -215,7 +210,6 @@ class StrOpeningsMgr(AnyObject):
     def get_standard_positioning_strategy_parms(self, i_pos_strategy_name: str) -> StrStandardPosStrategyParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStandardPositioningStrategyParms(CATBSTR iPosStrategyName) As
@@ -251,7 +245,6 @@ class StrOpeningsMgr(AnyObject):
                                                             i_pos_strategy_name: str) -> StrStandardPosStrategyParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetStandardPositioningStrategyParmsForProfile(CATBSTR iPosStrategyName) As

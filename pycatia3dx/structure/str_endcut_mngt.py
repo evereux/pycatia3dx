@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_endcut import StrEndcut
 class StrEndcutMngt(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class StrEndcutMngt(AnyObject):
     def add_endcut(self, i_extr: int) -> StrEndcut:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddEndcut(long iExtr) As StrEndcut
@@ -74,7 +72,6 @@ class StrEndcutMngt(AnyObject):
     def get_endcut(self, i_extr: int) -> StrEndcut:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetEndcut(long iExtr) As StrEndcut
@@ -103,7 +100,6 @@ class StrEndcutMngt(AnyObject):
     def remove_endcut(self, i_extr: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveEndcut(long iExtr)

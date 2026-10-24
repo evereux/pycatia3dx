@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrPlateExtrusionMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class StrPlateExtrusionMngt(AnyObject):
     def offset_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OffsetMode() As long
@@ -79,7 +76,6 @@ class StrPlateExtrusionMngt(AnyObject):
     def throw_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThrowOrientation() As long
@@ -129,7 +125,6 @@ class StrPlateExtrusionMngt(AnyObject):
     def get_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOffset() As Parameter
@@ -149,7 +144,6 @@ class StrPlateExtrusionMngt(AnyObject):
     def get_thickness(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetThickness() As Parameter
@@ -171,7 +165,6 @@ class StrPlateExtrusionMngt(AnyObject):
     def reverse_throw_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseThrowOrientation()
@@ -182,4 +175,4 @@ class StrPlateExtrusionMngt(AnyObject):
         return self.com_object.ReverseThrowOrientation()
 
     def __repr__(self):
-        return f'StrPlateExtrusionMngt(name="{ self.name }")'
+        return f'StrPlateExtrusionMngt(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.machining_use.manufacturing_generator_data import ManufacturingG
 
 
 class ManufacturingOutputGenerator(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def add_me_to_buffer(self, o_add_me: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddMeToBuffer(long oAddMe)
@@ -52,7 +49,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def generate_output_code(self, i_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateOutputCode(ManufacturingGeneratorData iData)
@@ -66,7 +62,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def get_apt_code(self, i_data: ManufacturingGeneratorData, o_code: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAPTCode(ManufacturingGeneratorData iData,CATBSTR oCode)
@@ -81,7 +76,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def get_current_object(self, o_current_object: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCurrentObject(long oCurrentObject)
@@ -95,7 +89,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def has_to_reset_modal_values(self, o_is_modal: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub HasToResetModalValues(long oIsModal)
@@ -109,7 +102,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def init_file_generator(self, i_format: str, i_file_name: str, o_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitFileGenerator(CATBSTR iFormat,CATBSTR
@@ -137,7 +129,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def is_modal(self, o_is_modal: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsModal(long oIsModal)
@@ -151,7 +142,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def is_similar_to(self, i_object: 'ManufacturingOutputGenerator') -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsSimilarTo(ManufacturingOutputGenerator iObject) As long
@@ -166,7 +156,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def run_file_generator(self, i_data: ManufacturingGeneratorData) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RunFileGenerator(ManufacturingGeneratorData iData)
@@ -187,7 +176,6 @@ class ManufacturingOutputGenerator(AnyObject):
     def set_current_object(self, i_current_object: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCurrentObject(long iCurrentObject)
@@ -199,4 +187,4 @@ class ManufacturingOutputGenerator(AnyObject):
         return self.com_object.SetCurrentObject(i_current_object)
 
     def __repr__(self):
-        return f'ManufacturingOutputGenerator(name="{ self.name }")'
+        return f'ManufacturingOutputGenerator(name="{self.name}")'

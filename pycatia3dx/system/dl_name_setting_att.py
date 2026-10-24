@@ -15,7 +15,6 @@ from pycatia3dx.system.setting_controller import SettingController
 class DLNameSettingAtt(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -48,7 +47,6 @@ class DLNameSettingAtt(SettingController):
     def dl_name_creation_right(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property DLNameCreationRight() As boolean
@@ -72,7 +70,6 @@ class DLNameSettingAtt(SettingController):
     def root_dl_name_creation_right(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property RootDLNameCreationRight() As boolean
@@ -95,7 +92,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name(self, i_dl_name: str, o_real_name_unix: str, o_real_name_nt: str, o_father: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetDLName(CATBSTR iDLName,CATBSTR oRealNameUnix,CATBSTR oRealNameNT,CATBSTR
@@ -134,7 +130,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name_creation_right_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDLNameCreationRightInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -151,7 +146,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name_exp(self, i_dl_name: str, o_real_name_unix: str, o_real_name_nt: str, o_father: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetDLNameExp(CATBSTR iDLName,CATBSTR oRealNameUnix,CATBSTR
@@ -190,7 +184,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name_info(self, i_dl_name: str, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDLNameInfo(CATBSTR iDLName,CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -253,7 +246,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDLNameList() As CATSafeArrayVariant
@@ -277,7 +269,6 @@ class DLNameSettingAtt(SettingController):
     def get_dl_name_sub_list(self, i_dl_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetDLNameSubList(CATBSTR iDLName) As CATSafeArrayVariant
@@ -309,7 +300,6 @@ class DLNameSettingAtt(SettingController):
     def get_root_dl_name_creation_right_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRootDLNameCreationRightInfo(CATBSTR AdminLevel,CATBSTR oLocked) As
@@ -327,7 +317,6 @@ class DLNameSettingAtt(SettingController):
     def remove_dl_name(self, i_dl_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub RemoveDLName(CATBSTR iDLName)
@@ -353,7 +342,6 @@ class DLNameSettingAtt(SettingController):
     def rename_dl_name(self, i_dl_name: str, i_new_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub RenameDLName(CATBSTR iDLName,CATBSTR iNewName)
@@ -383,7 +371,6 @@ class DLNameSettingAtt(SettingController):
                     i_verif_directory: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetDLName(CATBSTR iDLName,CATBSTR iRealNameUnix,CATBSTR iRealNameNT,CATBSTR
@@ -425,7 +412,6 @@ class DLNameSettingAtt(SettingController):
     def set_dl_name_creation_right_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetDLNameCreationRightLock(boolean iLocked)
@@ -440,7 +426,6 @@ class DLNameSettingAtt(SettingController):
     def set_dl_name_lock(self, i_dl_name: str, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetDLNameLock(CATBSTR iDLName,boolean iLocked)
@@ -473,7 +458,6 @@ class DLNameSettingAtt(SettingController):
     def set_root_dl_name_creation_right_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetRootDLNameCreationRightLock(boolean iLocked)

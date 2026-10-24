@@ -13,10 +13,8 @@ from pycatia3dx.part.repartition import Repartition
 
 
 class AngularRepartition(Repartition):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +45,6 @@ class AngularRepartition(Repartition):
     def angular_spacing(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AngularSpacing() As Angle (Read Only)
@@ -69,7 +66,6 @@ class AngularRepartition(Repartition):
     def instance_spacing(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InstanceSpacing() As Angle (Read Only)
@@ -88,4 +84,4 @@ class AngularRepartition(Repartition):
         return Angle(self.com_object.InstanceSpacing)
 
     def __repr__(self):
-        return f'AngularRepartition(name="{ self.name }")'
+        return f'AngularRepartition(name="{self.name}")'

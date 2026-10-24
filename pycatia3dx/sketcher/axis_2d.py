@@ -13,10 +13,8 @@ from pycatia3dx.sketcher.point_2d import Point2D
 
 
 class Axis2D(Geometry2D):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -41,7 +39,6 @@ class Axis2D(Geometry2D):
     def horizontal_reference(self) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HorizontalReference() As Line2D (Read Only)
@@ -59,7 +56,6 @@ class Axis2D(Geometry2D):
     def origin(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Origin() As Point2D (Read Only)
@@ -77,7 +73,6 @@ class Axis2D(Geometry2D):
     def vertical_reference(self) -> Line2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property VerticalReference() As Line2D (Read Only)
@@ -92,4 +87,4 @@ class Axis2D(Geometry2D):
         return Line2D(self.com_object.VerticalReference)
 
     def __repr__(self):
-        return f'Axis2D(name="{ self.name }")'
+        return f'Axis2D(name="{self.name}")'

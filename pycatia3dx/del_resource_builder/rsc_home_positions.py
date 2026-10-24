@@ -13,10 +13,8 @@ from pycatia3dx.types.general import Variant
 
 
 class RscHomePositions(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -65,7 +63,6 @@ class RscHomePositions(AnyObject):
     def home_position_dof_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HomePositionDOFCount() As long (Read Only)
@@ -92,7 +89,6 @@ class RscHomePositions(AnyObject):
     def list_home_position_i_ds(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListHomePositionIDs() As CATSafeArrayVariant (Read
@@ -133,7 +129,6 @@ class RscHomePositions(AnyObject):
     def create_home_position(self, i_home_position_name: str, i_home_values: tuple) -> Variant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateHomePosition(CATBSTR iHomePositionName,CATSafeArrayVariant
@@ -186,7 +181,6 @@ class RscHomePositions(AnyObject):
     def get_home_position_dof_type(self, i_dof_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomePositionDOFType(long iDOFIndex) As DELRscJointType
@@ -223,7 +217,6 @@ class RscHomePositions(AnyObject):
     def get_home_position_index(self, i_home_position_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomePositionIndex(CATBSTR iHomePositionName) As long
@@ -252,7 +245,6 @@ class RscHomePositions(AnyObject):
     def get_home_position_values(self, i_home_position_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetHomePositionValues(CATBSTR iHomePositionName) As
@@ -298,7 +290,6 @@ class RscHomePositions(AnyObject):
     def modify_home_position_index(self, i_home_position_name: str, i_new_home_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyHomePositionIndex(CATBSTR iHomePositionName,long
@@ -330,7 +321,6 @@ class RscHomePositions(AnyObject):
     def modify_home_position_name(self, i_home_position_old_name: str, i_home_position_new_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyHomePositionName(CATBSTR iHomePositionOldName,CATBSTR
@@ -363,7 +353,6 @@ MyHomeResource.ModifyHomePositionName(HomeID,NewHomeID)
     def remove_home_position(self, i_home_position_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveHomePosition(CATBSTR iHomePositionName)
@@ -389,7 +378,6 @@ MyHomeResource.ModifyHomePositionName(HomeID,NewHomeID)
     def set_home_position_values(self, i_home_position_name: str, i_home_values: tuple) -> Variant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHomePositionValues(CATBSTR iHomePositionName,CATSafeArrayVariant
@@ -445,4 +433,4 @@ MyHomeResource.ModifyHomePositionName(HomeID,NewHomeID)
         return self.com_object.SetHomePositionValues(i_home_position_name, i_home_values)
 
     def __repr__(self):
-        return f'RscHomePositions(name="{ self.name }")'
+        return f'RscHomePositions(name="{self.name}")'

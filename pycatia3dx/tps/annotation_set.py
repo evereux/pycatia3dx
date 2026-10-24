@@ -27,7 +27,6 @@ if TYPE_CHECKING:
 class AnnotationSet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +49,6 @@ class AnnotationSet(AnyObject):
     def active_view(self) -> TPSView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveView() As TPSView
@@ -78,7 +76,6 @@ class AnnotationSet(AnyObject):
     def an_empty_annotations_list(self) -> Annotations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnEmptyAnnotationsList() As Annotations (Read Only)
@@ -98,7 +95,6 @@ class AnnotationSet(AnyObject):
     def annotation_factory(self) -> AnnotationFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationFactory() As AnnotationFactory (Read Only)
@@ -119,7 +115,6 @@ class AnnotationSet(AnyObject):
     def annotation_factory2(self) -> AnnotationFactory2:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationFactory2() As AnnotationFactory2 (Read
@@ -140,7 +135,6 @@ class AnnotationSet(AnyObject):
     def annotation_set_pupose(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationSetPupose() As CATBSTR (Read Only)
@@ -165,7 +159,6 @@ class AnnotationSet(AnyObject):
     def annotation_set_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnotationSetType() As CatAnnotationSetType (Read
@@ -186,7 +179,6 @@ class AnnotationSet(AnyObject):
     def annotations(self) -> Annotations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Annotations() As Annotations (Read Only)
@@ -206,7 +198,6 @@ class AnnotationSet(AnyObject):
     def capture_factory(self) -> CaptureFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CaptureFactory() As CaptureFactory (Read Only)
@@ -226,7 +217,6 @@ class AnnotationSet(AnyObject):
     def captures(self) -> Captures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Captures() As Captures (Read Only)
@@ -246,7 +236,6 @@ class AnnotationSet(AnyObject):
     def kind_of_set(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KindOfSet() As CATBSTR (Read Only)
@@ -266,7 +255,6 @@ class AnnotationSet(AnyObject):
     def standard(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Standard() As CATBSTR (Read Only)
@@ -288,7 +276,6 @@ class AnnotationSet(AnyObject):
     def switch_on(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SwitchOn() As boolean
@@ -316,7 +303,6 @@ class AnnotationSet(AnyObject):
     def tps_view_factory(self) -> TPSViewFactory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPSViewFactory() As TPSViewFactory (Read Only)
@@ -336,7 +322,6 @@ class AnnotationSet(AnyObject):
     def tps_views(self) -> TPSViews:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TPSViews() As TPSViews (Read Only)
@@ -355,7 +340,6 @@ class AnnotationSet(AnyObject):
     def apply_result_with_link_when_copy_set_to(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyResultWithLinkWhenCopySetTo()
@@ -397,7 +381,6 @@ class AnnotationSet(AnyObject):
     def apply_view_re_use_when_copy_set_to(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ApplyViewReUseWhenCopySetTo()
@@ -419,7 +402,6 @@ class AnnotationSet(AnyObject):
     def global_copy_set_to(self, i_destination_part: 'Part') -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GlobalCopySetTo(Part iDestinationPart) As CATBSTR
@@ -441,7 +423,6 @@ class AnnotationSet(AnyObject):
     def global_copy_set_to_with_filter(self, i_destination_part: 'Part', i_capture_filter_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GlobalCopySetToWithFilter(Part iDestinationPart,CATBSTR
@@ -474,7 +455,6 @@ class AnnotationSet(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GlobalCopySetToWithFilterWithTransformation(Part
@@ -535,7 +515,6 @@ class AnnotationSet(AnyObject):
     def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transfo: tuple) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GlobalCopySetToWithTransformation(Part
@@ -583,7 +562,6 @@ class AnnotationSet(AnyObject):
     def hyper_link_manager(self) -> TPSHyperLinksManager:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HyperLinkManager() As TPSHyperLinksManager
@@ -596,7 +574,6 @@ class AnnotationSet(AnyObject):
     def isolate_links_of_noa(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub IsolateLinksOfNOA()
@@ -616,7 +593,6 @@ class AnnotationSet(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func LogicalGlobalCopySetTo(Part ipiTarget3DSR,CATSafeArrayVariant
@@ -664,7 +640,6 @@ class AnnotationSet(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func LogicalGlobalCopySetToWithFilter(Part ipiTarget3DSR,CATSafeArrayVariant
@@ -712,7 +687,6 @@ class AnnotationSet(AnyObject):
     def read_iso_default_properties(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func ReadISODefaultProperties(CATSafeArrayVariant oISODefaults) As
@@ -763,7 +737,6 @@ class AnnotationSet(AnyObject):
     def repair_delete_invalid_fta_features(self, options_to_repair_delete: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RepairDeleteInvalidFTAFeatures(long OptionsToRepairDelete)

@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimHarmonicResponseStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimHarmonicResponseStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimHarmonicResponseStep(SimStep):
     def interval_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IntervalType() As SimHarmonicResponseStepIntervalType
@@ -124,7 +120,6 @@ class SimHarmonicResponseStep(SimStep):
     def linear_load_cases(self) -> SimLinearLoadCases:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinearLoadCases() As SimLinearLoadCases (Read Only)
@@ -139,7 +134,6 @@ class SimHarmonicResponseStep(SimStep):
     def projection_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProjectionType() As
@@ -163,7 +157,6 @@ class SimHarmonicResponseStep(SimStep):
     def scale(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scale() As SimHarmonicResponseStepScaleType
@@ -186,7 +179,6 @@ class SimHarmonicResponseStep(SimStep):
     def scale_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleType() As SimHarmonicResponseStepScaleType
@@ -209,7 +201,6 @@ class SimHarmonicResponseStep(SimStep):
     def structural_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StructuralMaterialDampingFlag() As boolean
@@ -235,7 +226,6 @@ class SimHarmonicResponseStep(SimStep):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -250,7 +240,6 @@ class SimHarmonicResponseStep(SimStep):
     def viscous_material_damping_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ViscousMaterialDampingFlag() As boolean
@@ -275,7 +264,6 @@ class SimHarmonicResponseStep(SimStep):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimHarmonicResponseStepTableColumn iTableColumnName) As
@@ -297,4 +285,4 @@ class SimHarmonicResponseStep(SimStep):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimHarmonicResponseStep(name="{ self.name }")'
+        return f'SimHarmonicResponseStep(name="{self.name}")'

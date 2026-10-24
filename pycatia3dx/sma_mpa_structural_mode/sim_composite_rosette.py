@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_composite_rosette_type import SimCom
 
 
 class SimCompositeRosette(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SimCompositeRosette(AnyObject):
     def get_main_axis(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMainAxis() As CATBaseDispatch
@@ -55,7 +52,6 @@ class SimCompositeRosette(AnyObject):
     def get_rosette_cylinderical_transfer(self) -> SimCompositeRosetteType:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRosetteCylindericalTransfer() As
@@ -72,7 +68,6 @@ class SimCompositeRosette(AnyObject):
     def get_rosette_transfer_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRosetteTransferType() As
@@ -89,7 +84,6 @@ class SimCompositeRosette(AnyObject):
     def set_main_axis(self, i_axis_system: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMainAxis(CATBaseDispatch iAxisSystem)
@@ -108,7 +102,6 @@ class SimCompositeRosette(AnyObject):
     def set_rosette_transfer_type(self, i_rosette_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRosetteTransferType(SimCompositeRosetteTransferType
@@ -126,4 +119,4 @@ class SimCompositeRosette(AnyObject):
         return self.com_object.SetRosetteTransferType(i_rosette_type)
 
     def __repr__(self):
-        return f'SimCompositeRosette(name="{ self.name }")'
+        return f'SimCompositeRosette(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia3dx.product_structure_client.vpm_root_occurrence import VPMRootOccur
 class ProductSessionService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
 
@@ -50,7 +49,6 @@ class ProductSessionService(Service):
     def shape_3ds(self) -> Shape3Ds:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Property Shape3Ds() As Shape3Ds (Read Only)
@@ -66,7 +64,6 @@ class ProductSessionService(Service):
                                  i_second_root_occurrence: VPMRootOccurrence) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917))
                 | Func CompareRootOccurrences(VPMRootOccurrence

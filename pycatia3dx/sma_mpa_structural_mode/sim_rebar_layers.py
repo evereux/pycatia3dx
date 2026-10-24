@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class SimRebarLayers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +60,6 @@ class SimRebarLayers(Collection):
     def add(self) -> SimRebarLayer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As CATBaseDispatch
@@ -85,7 +83,6 @@ class SimRebarLayers(Collection):
     def item(self, i_index: CATVariant) -> SimRebarLayer:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -107,7 +104,6 @@ class SimRebarLayers(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)
@@ -126,7 +122,6 @@ class SimRebarLayers(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

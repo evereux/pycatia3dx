@@ -12,10 +12,8 @@ from pycatia3dx.sma_spa_structural.sim_analysis_restart_step_property import Sim
 
 
 class SimCoupledThermalStressExplicitStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -103,7 +100,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def bulk_viscosity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BulkViscosityFlag() As boolean
@@ -131,7 +127,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def element_by_element_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElementByElementFlag() As boolean
@@ -157,7 +152,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricNonLinearityFlag() As boolean
@@ -183,7 +177,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def improved_dt_method_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ImprovedDTMethodFlag() As boolean
@@ -208,7 +201,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def incrementation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IncrementationType() As SimTimeIncrementationScheme
@@ -231,7 +223,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def linear_bulk_viscosity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LinearBulkViscosity() As double
@@ -254,7 +245,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeIncrement() As double
@@ -278,7 +268,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def quadratic_bulk_viscosity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property QuadraticBulkViscosity() As double
@@ -301,7 +290,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
@@ -318,7 +306,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def scale_factor(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleFactor() As double
@@ -341,7 +328,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StepTime() As double
@@ -365,7 +351,6 @@ class SimCoupledThermalStressExplicitStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrement() As double
@@ -386,4 +371,4 @@ class SimCoupledThermalStressExplicitStep(SimStep):
         self.com_object.TimeIncrement = value
 
     def __repr__(self):
-        return f'SimCoupledThermalStressExplicitStep(name="{ self.name }")'
+        return f'SimCoupledThermalStressExplicitStep(name="{self.name}")'

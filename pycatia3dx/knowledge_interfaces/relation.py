@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class Relation(KnowledgeActivateObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -50,7 +49,6 @@ class Relation(KnowledgeActivateObject):
     def comment(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Comment() As CATBSTR
@@ -82,7 +80,6 @@ class Relation(KnowledgeActivateObject):
     def context(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Context() As AnyObject (Read Only)
@@ -104,7 +101,6 @@ class Relation(KnowledgeActivateObject):
     def nb_in_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property NbInParameters() As long (Read Only)
@@ -119,7 +115,6 @@ class Relation(KnowledgeActivateObject):
     def nb_out_parameters(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property NbOutParameters() As long (Read Only)
@@ -136,7 +131,6 @@ class Relation(KnowledgeActivateObject):
     def value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Value() As CATBSTR (Read Only)
@@ -161,7 +155,6 @@ class Relation(KnowledgeActivateObject):
     def get_in_parameter(self, i_index: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetInParameter(long iIndex) As AnyObject
@@ -199,7 +192,6 @@ class Relation(KnowledgeActivateObject):
     def get_out_parameter(self, i_index: int) -> 'Parameter':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetOutParameter(long iIndex) As Parameter
@@ -225,7 +217,6 @@ class Relation(KnowledgeActivateObject):
     def modify(self, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Modify(CATBSTR iValue)
@@ -245,7 +236,6 @@ class Relation(KnowledgeActivateObject):
     def rename(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Rename(CATBSTR iName)

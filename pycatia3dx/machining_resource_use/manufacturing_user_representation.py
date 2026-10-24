@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingUserRepresentation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -34,10 +32,10 @@ class ManufacturingUserRepresentation(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add_representation(self, i_cutting_type: str, i_name_representation: str, i_tool_represention: AnyObject, i_state: str) -> None:
+    def add_representation(self, i_cutting_type: str, i_name_representation: str, i_tool_represention: AnyObject,
+                           i_state: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRepresentation(CATBSTR iCuttingType,CATBSTR
@@ -65,12 +63,12 @@ class ManufacturingUserRepresentation(AnyObject):
         :param str i_state:
         :return: None
         """
-        return self.com_object.AddRepresentation(i_cutting_type, i_name_representation, i_tool_represention.com_object, i_state)
+        return self.com_object.AddRepresentation(i_cutting_type, i_name_representation, i_tool_represention.com_object,
+                                                 i_state)
 
     def add_representation_step(self, i_step_file_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRepresentationStep(CATBSTR iStepFilePath)
@@ -90,7 +88,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def compute_standard_representation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeStandardRepresentation()
@@ -103,7 +100,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def compute_worn_representation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeWornRepresentation()
@@ -116,7 +112,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def get_representation(self, i_cutting_type: str, i_state: str, i_name_representation: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRepresentation(CATBSTR iCuttingType,CATBSTR iState,CATBSTR
@@ -147,7 +142,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def hide(self, i_name_representation: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Hide(CATBSTR iNameRepresentation)
@@ -161,7 +155,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def is_existing_one_representation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsExistingOneRepresentation() As boolean
@@ -174,7 +167,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def is_existing_representation(self, i_cutting_type: str, i_name_representation: str, i_state: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsExistingRepresentation(CATBSTR iCuttingType,CATBSTR
@@ -203,7 +195,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def remove_all_representation(self, i_cutting_type: str, i_name_representation: str, i_state: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAllRepresentation(CATBSTR iCuttingType,CATBSTR
@@ -229,10 +220,10 @@ class ManufacturingUserRepresentation(AnyObject):
         """
         return self.com_object.RemoveAllRepresentation(i_cutting_type, i_name_representation, i_state)
 
-    def remove_representation(self, i_cutting_type: str, i_name_representation: str, i_tool_representation: AnyObject, i_state: str) -> None:
+    def remove_representation(self, i_cutting_type: str, i_name_representation: str, i_tool_representation: AnyObject,
+                              i_state: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRepresentation(CATBSTR iCuttingType,CATBSTR
@@ -260,12 +251,12 @@ class ManufacturingUserRepresentation(AnyObject):
         :param str i_state:
         :return: None
         """
-        return self.com_object.RemoveRepresentation(i_cutting_type, i_name_representation, i_tool_representation.com_object, i_state)
+        return self.com_object.RemoveRepresentation(i_cutting_type, i_name_representation,
+                                                    i_tool_representation.com_object, i_state)
 
     def show(self, i_name_representation: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Show(CATBSTR iNameRepresentation)
@@ -279,7 +270,6 @@ class ManufacturingUserRepresentation(AnyObject):
     def update_position(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UpdatePosition()
@@ -292,4 +282,4 @@ class ManufacturingUserRepresentation(AnyObject):
         return self.com_object.UpdatePosition()
 
     def __repr__(self):
-        return f'ManufacturingUserRepresentation(name="{ self.name }")'
+        return f'ManufacturingUserRepresentation(name="{self.name}")'

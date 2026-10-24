@@ -14,10 +14,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_object_frame_profile import OLPObjectFramePr
 
 
 class OLPUploadService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -56,7 +54,6 @@ class OLPUploadService(Service):
     def allow_device_param_update(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllowDeviceParamUpdate() As boolean
@@ -85,7 +82,6 @@ class OLPUploadService(Service):
     def create_cartesian_homes(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CreateCartesianHomes() As boolean
@@ -113,7 +109,6 @@ class OLPUploadService(Service):
     def create_homes_for_joint_targets(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CreateHomesForJointTargets() As boolean
@@ -141,7 +136,6 @@ class OLPUploadService(Service):
     def delete_referenced_tags_and_homes(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeleteReferencedTagsAndHomes() As boolean
@@ -169,7 +163,6 @@ class OLPUploadService(Service):
     def delete_unused_profiles(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeleteUnusedProfiles() As boolean
@@ -196,7 +189,6 @@ class OLPUploadService(Service):
     def files(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Files() As CATSafeArrayVariant
@@ -221,7 +213,6 @@ class OLPUploadService(Service):
     def replace_tasks(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReplaceTasks() As boolean
@@ -247,7 +238,6 @@ class OLPUploadService(Service):
     def resource(self) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Resource() As VPMOccurrence
@@ -272,7 +262,6 @@ class OLPUploadService(Service):
     def tasks_to_upload(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TasksToUpload() As CATSafeArrayVariant
@@ -303,7 +292,6 @@ class OLPUploadService(Service):
     def translator(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Translator() As CATBSTR
@@ -329,7 +317,6 @@ class OLPUploadService(Service):
     def translator_option(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TranslatorOption() As CATBSTR
@@ -354,7 +341,6 @@ class OLPUploadService(Service):
     def upload_object_frame_coords(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UploadObjectFrameCoords() As boolean
@@ -386,7 +372,6 @@ class OLPUploadService(Service):
     def use_design_position(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseDesignPosition() As DELOlpInitialPositionMode
@@ -411,7 +396,6 @@ class OLPUploadService(Service):
     def export_messages_to_file(self, i_file: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportMessagesToFile(CATBSTR iFile)
@@ -432,7 +416,6 @@ class OLPUploadService(Service):
     def finalize(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Finalize()
@@ -446,7 +429,6 @@ class OLPUploadService(Service):
     def get_object_frames(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetObjectFrames() As CATSafeArrayVariant
@@ -466,7 +448,6 @@ class OLPUploadService(Service):
     def parse(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Parse()
@@ -481,7 +462,6 @@ class OLPUploadService(Service):
     def post_process(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PostProcess()
@@ -492,10 +472,10 @@ class OLPUploadService(Service):
         """
         return self.com_object.PostProcess()
 
-    def set_part_for_object_frame(self, i_object_profile: OLPObjectFrameProfile, i_feature: AnyObject, i_part_occurrence: VPMOccurrence) -> None:
+    def set_part_for_object_frame(self, i_object_profile: OLPObjectFrameProfile, i_feature: AnyObject,
+                                  i_part_occurrence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPartForObjectFrame(OlpObjectFrameProfile iObjectProfile,AnyObject
@@ -519,12 +499,12 @@ class OLPUploadService(Service):
         :param VPMOccurrence i_part_occurrence:
         :return: None
         """
-        return self.com_object.SetPartForObjectFrame(i_object_profile.com_object, i_feature.com_object, i_part_occurrence.com_object)
+        return self.com_object.SetPartForObjectFrame(i_object_profile.com_object, i_feature.com_object,
+                                                     i_part_occurrence.com_object)
 
     def upload(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Upload()
@@ -535,4 +515,4 @@ class OLPUploadService(Service):
         return self.com_object.Upload()
 
     def __repr__(self):
-        return f'OLPUploadService(name="{ self.name }")'
+        return f'OLPUploadService(name="{self.name}")'

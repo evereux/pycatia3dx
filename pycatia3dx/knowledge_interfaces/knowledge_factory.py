@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class KnowledgeFactory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -45,7 +44,6 @@ class KnowledgeFactory(AnyObject):
     def collection(self) -> 'KnowledgeCollection':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Collection() As KnowledgeCollection (Read Only)
@@ -60,7 +58,6 @@ class KnowledgeFactory(AnyObject):
     def root(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Root() As CATBaseDispatch (Read Only)

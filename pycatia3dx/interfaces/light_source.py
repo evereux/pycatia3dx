@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class LightSource(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class LightSource(AnyObject):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetDirection(CATSafeArrayVariant oDirection)
@@ -77,7 +75,6 @@ class LightSource(AnyObject):
     def put_direction(self, o_direction: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PutDirection(CATSafeArrayVariant oDirection)

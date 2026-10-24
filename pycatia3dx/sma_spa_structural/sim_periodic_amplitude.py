@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPeriodicAmplitude(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -68,7 +66,6 @@ class SimPeriodicAmplitude(AnyObject):
     def circular_frequency(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CircularFrequency() As double
@@ -92,7 +89,6 @@ class SimPeriodicAmplitude(AnyObject):
     def initial_amplitude(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialAmplitude() As double
@@ -116,7 +112,6 @@ class SimPeriodicAmplitude(AnyObject):
     def starting_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartingTime() As double
@@ -139,7 +134,6 @@ class SimPeriodicAmplitude(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -153,7 +147,6 @@ class SimPeriodicAmplitude(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimPeriodicAmplitudeColumnType iTableColumnName) As
@@ -175,4 +168,4 @@ class SimPeriodicAmplitude(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimPeriodicAmplitude(name="{ self.name }")'
+        return f'SimPeriodicAmplitude(name="{self.name}")'

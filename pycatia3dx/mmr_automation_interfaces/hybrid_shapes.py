@@ -22,7 +22,6 @@ from pycatia3dx.types.general import CATVariant
 class HybridShapes(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -44,7 +43,6 @@ class HybridShapes(Collection):
     def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetBoundary(CATBSTR iLabel) As Boundary
@@ -67,7 +65,6 @@ class HybridShapes(Collection):
     def item(self, i_index: CATVariant) -> HybridShape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As HybridShape

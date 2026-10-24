@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_references import StrReferences
 class StrBreak(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class StrBreak(AnyObject):
     def splitting_elements(self) -> StrReferences:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SplittingElements() As StrReferences (Read Only)
@@ -62,7 +60,6 @@ class StrBreak(AnyObject):
     def break_(self, i_list_of_splitting_elements: StrReferences) -> StrObjects:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Break(StrReferences iListOfSplittingElements) As

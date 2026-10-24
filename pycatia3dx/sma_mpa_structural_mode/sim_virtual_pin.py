@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimVirtualPin(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimVirtualPin(AnyObject):
     def torsional_stiffness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TorsionalStiffness() As double
@@ -95,4 +92,4 @@ class SimVirtualPin(AnyObject):
         self.com_object.TorsionalStiffness = value
 
     def __repr__(self):
-        return f'SimVirtualPin(name="{ self.name }")'
+        return f'SimVirtualPin(name="{self.name}")'

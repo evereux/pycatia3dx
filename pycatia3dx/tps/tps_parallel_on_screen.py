@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class TPSParallelOnScreen(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class TPSParallelOnScreen(AnyObject):
     def parallel_on_screen(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ParallelOnScreen() As boolean
@@ -62,7 +59,6 @@ class TPSParallelOnScreen(AnyObject):
     def zoomable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Zoomable() As boolean
@@ -82,4 +78,4 @@ class TPSParallelOnScreen(AnyObject):
         self.com_object.Zoomable = value
 
     def __repr__(self):
-        return f'TpsParallelOnScreen(name="{ self.name }")'
+        return f'TpsParallelOnScreen(name="{self.name}")'

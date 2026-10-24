@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_motion_group import OLPMotionGroup
 class OLPMotionGroups(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class OLPMotionGroups(Collection):
     def item(self, i_index: int) -> OLPMotionGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpMotionGroup

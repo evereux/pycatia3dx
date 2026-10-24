@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimInelasticHeatFraction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimInelasticHeatFraction(AnyObject):
     def inelastic_heat_fraction(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InelasticHeatFraction() As double
@@ -97,4 +94,4 @@ class SimInelasticHeatFraction(AnyObject):
         self.com_object.InelasticHeatFraction = value
 
     def __repr__(self):
-        return f'SimInelasticHeatFraction(name="{ self.name }")'
+        return f'SimInelasticHeatFraction(name="{self.name}")'

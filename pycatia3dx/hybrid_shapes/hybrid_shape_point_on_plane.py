@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointOnPlane(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -49,7 +47,6 @@ class HybridShapePointOnPlane(Point):
     def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstDirection() As HybridShapeDirection
@@ -81,7 +78,6 @@ class HybridShapePointOnPlane(Point):
     def plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Plane() As Reference
@@ -114,7 +110,6 @@ class HybridShapePointOnPlane(Point):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -149,7 +144,6 @@ class HybridShapePointOnPlane(Point):
     def projection_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ProjectionSurface() As Reference
@@ -181,7 +175,6 @@ class HybridShapePointOnPlane(Point):
     def x_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property XOffset() As Length (Read Only)
@@ -204,7 +197,6 @@ class HybridShapePointOnPlane(Point):
     def y_offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property YOffset() As Length (Read Only)
@@ -226,7 +218,6 @@ class HybridShapePointOnPlane(Point):
     def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetSecondDirection(double oDirX,double oDirY,double oDirZ)
@@ -253,7 +244,6 @@ class HybridShapePointOnPlane(Point):
     def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSecondDirection(double iDirX,double iDirY,double iDirZ)
@@ -278,4 +268,4 @@ class HybridShapePointOnPlane(Point):
         return self.com_object.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
 
     def __repr__(self):
-        return f'HybridShapePointOnPlane(name="{ self.name }")'
+        return f'HybridShapePointOnPlane(name="{self.name}")'

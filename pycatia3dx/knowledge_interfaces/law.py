@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.relation import Relation
 
 
 class Law(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -44,7 +42,6 @@ class Law(Relation):
     def add_formal_parameter(self, i_name: str, i_magnitude: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub AddFormalParameter(CATBSTR iName,CATBSTR iMagnitude)
@@ -66,7 +63,6 @@ class Law(Relation):
     def remove_formal_parameter(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub RemoveFormalParameter(CATBSTR iName)
@@ -83,4 +79,4 @@ class Law(Relation):
         return self.com_object.RemoveFormalParameter(i_name)
 
     def __repr__(self):
-        return f'Law(name="{ self.name }")'
+        return f'Law(name="{self.name}")'

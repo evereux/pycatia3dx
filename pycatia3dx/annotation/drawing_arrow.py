@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingArrow(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrawingArrow(AnyObject):
     def head_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadSymbol() As CatSymbolType
@@ -66,7 +64,6 @@ class DrawingArrow(AnyObject):
     def head_target(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HeadTarget() As CATBaseDispatch
@@ -95,7 +92,6 @@ class DrawingArrow(AnyObject):
     def nb_interruption(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbInterruption() As long (Read Only)
@@ -116,7 +112,6 @@ class DrawingArrow(AnyObject):
     def nb_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbPoint() As long (Read Only)
@@ -137,7 +132,6 @@ class DrawingArrow(AnyObject):
     def scale_on_extremities(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScaleOnExtremities() As boolean
@@ -166,7 +160,6 @@ class DrawingArrow(AnyObject):
     def tail_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TailSymbol() As CatSymbolType
@@ -195,7 +188,6 @@ class DrawingArrow(AnyObject):
     def tail_target(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TailTarget() As CATBaseDispatch
@@ -224,7 +216,6 @@ class DrawingArrow(AnyObject):
                          i_second_point_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterruption(double iFirstPointX,double iFirstPointY,double
@@ -262,7 +253,6 @@ class DrawingArrow(AnyObject):
     def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(long iNum,double iX,double iY)
@@ -295,7 +285,6 @@ class DrawingArrow(AnyObject):
     def get_interruptions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
@@ -338,7 +327,6 @@ class DrawingArrow(AnyObject):
     def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPoint(long iNum,double oX,double oY)
@@ -368,7 +356,6 @@ class DrawingArrow(AnyObject):
     def get_points(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPoints(CATSafeArrayVariant oPoints) As long
@@ -410,7 +397,6 @@ class DrawingArrow(AnyObject):
     def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyPoint(long iNum,double iX,double iY)
@@ -442,7 +428,6 @@ class DrawingArrow(AnyObject):
     def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterruption(long iNum)
@@ -468,7 +453,6 @@ class DrawingArrow(AnyObject):
     def remove_point(self, i_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(long iNum)

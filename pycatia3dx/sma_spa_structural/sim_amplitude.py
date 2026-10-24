@@ -16,10 +16,8 @@ from pycatia3dx.sma_spa_structural.sim_user_amplitude import SimUserAmplitude
 
 
 class SimAmplitude(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimAmplitude(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -102,7 +99,6 @@ class SimAmplitude(AnyObject):
     def definition_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefinitionType() As SimAmplitudeDefinitionType
@@ -125,7 +121,6 @@ class SimAmplitude(AnyObject):
     def periodic_amplitude(self) -> SimPeriodicAmplitude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PeriodicAmplitude() As SimPeriodicAmplitude (Read
@@ -141,7 +136,6 @@ class SimAmplitude(AnyObject):
     def smooth_step_amplitude(self) -> SimSmoothStepAmplitude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SmoothStepAmplitude() As SimSmoothStepAmplitude (Read
@@ -157,7 +151,6 @@ class SimAmplitude(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -173,7 +166,6 @@ class SimAmplitude(AnyObject):
     def tabular_amplitude(self) -> SimTabularAmplitude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TabularAmplitude() As SimTabularAmplitude (Read Only)
@@ -188,7 +180,6 @@ class SimAmplitude(AnyObject):
     def time_span_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeSpanType() As SimAmplitudeTimeSpanType
@@ -211,7 +202,6 @@ class SimAmplitude(AnyObject):
     def user_amplitude(self) -> SimUserAmplitude:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserAmplitude() As SimUserAmplitude (Read Only)
@@ -223,4 +213,4 @@ class SimAmplitude(AnyObject):
         return SimUserAmplitude(self.com_object.UserAmplitude)
 
     def __repr__(self):
-        return f'SimAmplitude(name="{ self.name }")'
+        return f'SimAmplitude(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SemanticGDTCommonZone(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class SemanticGDTCommonZone(AnyObject):
     def modifier(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Modifier() As CATBSTR (Read Only)
@@ -52,4 +49,4 @@ class SemanticGDTCommonZone(AnyObject):
         return self.com_object.Modifier
 
     def __repr__(self):
-        return f'SemanticGdtCommonZone(name="{ self.name }")'
+        return f'SemanticGdtCommonZone(name="{self.name}")'

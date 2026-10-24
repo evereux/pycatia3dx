@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfileCrv(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrProfileCrv(AnyObject):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Curve() As Reference
@@ -73,7 +70,6 @@ class StrProfileCrv(AnyObject):
     def reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Reference() As Reference
@@ -108,7 +104,6 @@ class StrProfileCrv(AnyObject):
     def get_curve_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCurveOffset() As Parameter
@@ -128,4 +123,4 @@ class StrProfileCrv(AnyObject):
         return Parameter(self.com_object.GetCurveOffset())
 
     def __repr__(self):
-        return f'StrProfileCrv(name="{ self.name }")'
+        return f'StrProfileCrv(name="{self.name}")'

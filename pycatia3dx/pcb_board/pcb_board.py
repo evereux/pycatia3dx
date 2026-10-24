@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbBoard(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class PcbBoard(AnyObject):
     def owner(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Owner() As CATBSTR
@@ -69,7 +66,6 @@ class PcbBoard(AnyObject):
     def part(self) -> Pad:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Part() As Pad
@@ -88,10 +84,10 @@ class PcbBoard(AnyObject):
 
         self.com_object.Part = value
 
-    def create_pcbhole(self, i_hole: Hole, iplating_style: str, i_associated_part_name: str, i_hole_type: str, i_hole_owner: str) -> None:
+    def create_pcbhole(self, i_hole: Hole, iplating_style: str, i_associated_part_name: str, i_hole_type: str,
+                       i_hole_owner: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub create_pcbhole(Hole iHole,CATBSTR iplatingStyle,CATBSTR
@@ -146,12 +142,13 @@ class PcbBoard(AnyObject):
         :param str i_hole_owner:
         :return: None
         """
-        return self.com_object.create_pcbhole(i_hole.com_object, iplating_style, i_associated_part_name, i_hole_type, i_hole_owner)
+        return self.com_object.create_pcbhole(i_hole.com_object, iplating_style, i_associated_part_name, i_hole_type,
+                                              i_hole_owner)
 
-    def create_pcbpattern(self, i_pattern: Pattern, iplating_style: str, i_associated_part_name: str, i_hole_type: str, i_hole_owner: str) -> None:
+    def create_pcbpattern(self, i_pattern: Pattern, iplating_style: str, i_associated_part_name: str, i_hole_type: str,
+                          i_hole_owner: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub create_pcbpattern(Pattern iPattern,CATBSTR iplatingStyle,CATBSTR
@@ -211,12 +208,12 @@ class PcbBoard(AnyObject):
         :param str i_hole_owner:
         :return: None
         """
-        return self.com_object.create_pcbpattern(i_pattern.com_object, iplating_style, i_associated_part_name, i_hole_type, i_hole_owner)
+        return self.com_object.create_pcbpattern(i_pattern.com_object, iplating_style, i_associated_part_name,
+                                                 i_hole_type, i_hole_owner)
 
     def create_zone(self, zonetype: str, i_pad: Pad) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub create_zone(CATBSTR zonetype,Pad iPad)
@@ -254,4 +251,4 @@ class PcbBoard(AnyObject):
         return self.com_object.create_zone(zonetype, i_pad.com_object)
 
     def __repr__(self):
-        return f'PcbBoard(name="{ self.name }")'
+        return f'PcbBoard(name="{self.name}")'

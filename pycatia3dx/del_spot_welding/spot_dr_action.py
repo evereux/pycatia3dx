@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SpotDrAction(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SpotDrAction(AnyObject):
     def drill_rivet_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrillRivetProfile() As AnyObject
@@ -67,7 +65,6 @@ class SpotDrAction(AnyObject):
     def object_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ObjectProfile(AnyObject iObjectProfile)
@@ -98,7 +95,6 @@ class SpotDrAction(AnyObject):
     def tool_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolProfile(AnyObject iToolProfile)
@@ -128,7 +124,6 @@ class SpotDrAction(AnyObject):
     def add_instruction(self, ih_instruction: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInstruction(AnyObject ihInstruction)
@@ -167,7 +162,6 @@ class SpotDrAction(AnyObject):
     def get_manufacturing_fastener(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetManufacturingFastener() As AnyObject
@@ -188,7 +182,6 @@ class SpotDrAction(AnyObject):
     def get_position_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPositionCoordinates() As CATSafeArrayVariant
@@ -219,7 +212,6 @@ class SpotDrAction(AnyObject):
     def list_instructions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ListInstructions() As CATSafeArrayVariant
@@ -244,7 +236,6 @@ class SpotDrAction(AnyObject):
     def remove_instruction(self, ih_instruction: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInstruction(AnyObject ihInstruction)
@@ -267,7 +258,6 @@ class SpotDrAction(AnyObject):
     def set_position_coordinates(self, i_fastener_pos_coords: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetPositionCoordinates(CATSafeArrayVariant

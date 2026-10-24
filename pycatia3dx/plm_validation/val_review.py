@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class VALReview(PLMEntity):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class VALReview(PLMEntity):
     def reviews(self) -> 'VALReviews':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Reviews() As VALReviews (Read Only)
@@ -57,7 +55,6 @@ class VALReview(PLMEntity):
     def get_factory(self, i_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFactory(CATBSTR iType) As CATBaseDispatch

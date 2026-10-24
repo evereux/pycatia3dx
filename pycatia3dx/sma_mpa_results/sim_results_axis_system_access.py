@@ -13,10 +13,8 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 
 
 class SimResultsAxisSystemAccess(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -58,7 +56,6 @@ class SimResultsAxisSystemAccess(AnyObject):
     def axis(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Axis(CATBaseDispatch ispAxis) (Write Only)
@@ -78,4 +75,4 @@ class SimResultsAxisSystemAccess(AnyObject):
         self.com_object.Axis = value.com_object
 
     def __repr__(self):
-        return f'SimResultsAxisSystemAccess(name="{ self.name }")'
+        return f'SimResultsAxisSystemAccess(name="{self.name}")'

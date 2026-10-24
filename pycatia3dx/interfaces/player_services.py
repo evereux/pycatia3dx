@@ -13,7 +13,6 @@ from pycatia3dx.interfaces.service import Service
 class PlayerServices(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -37,7 +36,6 @@ class PlayerServices(Service):
     def play(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Play()
@@ -50,7 +48,6 @@ class PlayerServices(Service):
     def stop(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Stop()

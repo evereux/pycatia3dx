@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimVirtualBolt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimVirtualBolt(AnyObject):
     def axial_stiffness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxialStiffness() As double
@@ -98,7 +95,6 @@ class SimVirtualBolt(AnyObject):
     def bolt_head_radius1(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoltHeadRadius1() As double
@@ -121,7 +117,6 @@ class SimVirtualBolt(AnyObject):
     def bolt_head_radius2(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoltHeadRadius2() As double
@@ -144,7 +139,6 @@ class SimVirtualBolt(AnyObject):
     def nominal_diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NominalDiameter() As double
@@ -167,7 +161,6 @@ class SimVirtualBolt(AnyObject):
     def shear_stiffness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShearStiffness() As double
@@ -190,7 +183,6 @@ class SimVirtualBolt(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -230,7 +222,6 @@ class SimVirtualBolt(AnyObject):
     def stiffness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StiffnessFlag() As boolean (Read Only)
@@ -244,7 +235,6 @@ class SimVirtualBolt(AnyObject):
     def unset_stiffness(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnsetStiffness()
@@ -255,4 +245,4 @@ class SimVirtualBolt(AnyObject):
         return self.com_object.UnsetStiffness()
 
     def __repr__(self):
-        return f'SimVirtualBolt(name="{ self.name }")'
+        return f'SimVirtualBolt(name="{self.name}")'

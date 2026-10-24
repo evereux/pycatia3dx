@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimConnectorTranslation(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimConnectorTranslation(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimConnectorTranslation(AnyObject):
     def available_connector_components(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
@@ -115,7 +111,6 @@ class SimConnectorTranslation(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -130,7 +125,6 @@ class SimConnectorTranslation(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -146,7 +140,6 @@ class SimConnectorTranslation(AnyObject):
     def variation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariationType() As
@@ -169,7 +162,6 @@ class SimConnectorTranslation(AnyObject):
     def get_displacement(self, i_degree_of_freedom: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDisplacement(SimDof iDegreeOfFreedom) As double
@@ -192,7 +184,6 @@ class SimConnectorTranslation(AnyObject):
     def get_translation_activation_flag(self, i_degree_of_freedom: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTranslationActivationFlag(SimDof iDegreeOfFreedom) As
@@ -215,7 +206,6 @@ class SimConnectorTranslation(AnyObject):
     def set_displacement(self, i_degree_of_freedom: int, i_displacement: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDisplacement(SimDof iDegreeOfFreedom,double
@@ -239,7 +229,6 @@ class SimConnectorTranslation(AnyObject):
     def set_translation_activation_flag(self, i_degree_of_freedom: int, i_translation_activation_flag: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTranslationActivationFlag(SimDof iDegreeOfFreedom,boolean
@@ -261,4 +250,4 @@ class SimConnectorTranslation(AnyObject):
         return self.com_object.SetTranslationActivationFlag(i_degree_of_freedom, i_translation_activation_flag)
 
     def __repr__(self):
-        return f'SimConnectorTranslation(name="{ self.name }")'
+        return f'SimConnectorTranslation(name="{self.name}")'

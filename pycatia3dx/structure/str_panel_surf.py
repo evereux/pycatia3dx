@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrPanelSurf(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class StrPanelSurf(AnyObject):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Support() As Reference
@@ -76,7 +73,6 @@ class StrPanelSurf(AnyObject):
     def get_support_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSupportOffset() As Parameter
@@ -98,4 +94,4 @@ class StrPanelSurf(AnyObject):
         return Parameter(self.com_object.GetSupportOffset())
 
     def __repr__(self):
-        return f'StrPanelSurf(name="{ self.name }")'
+        return f'StrPanelSurf(name="{self.name}")'

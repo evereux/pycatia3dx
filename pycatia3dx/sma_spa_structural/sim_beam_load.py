@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimBeamLoad(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimBeamLoad(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -99,7 +96,6 @@ class SimBeamLoad(AnyObject):
     def component_system(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComponentSystem() As SimBeamLoadComponentSystem
@@ -122,7 +118,6 @@ class SimBeamLoad(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -137,7 +132,6 @@ class SimBeamLoad(AnyObject):
     def is_local_system_allowed(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsLocalSystemAllowed() As boolean (Read Only)
@@ -155,7 +149,6 @@ class SimBeamLoad(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -171,7 +164,6 @@ class SimBeamLoad(AnyObject):
     def uniform_magnitude_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformMagnitudeFlag() As boolean (Read Only)
@@ -189,7 +181,6 @@ class SimBeamLoad(AnyObject):
     def vector_field(self) -> SimVectorField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VectorField() As SimVectorField (Read Only)
@@ -203,7 +194,6 @@ class SimBeamLoad(AnyObject):
     def get_magnitude(self, o_fx: float, o_fy: float, o_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMagnitude(double oFx,double oFy,double oFz)
@@ -231,7 +221,6 @@ class SimBeamLoad(AnyObject):
     def set_magnitude(self, i_fx: float, i_fy: float, i_fz: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMagnitude(double iFx,double iFy,double iFz)
@@ -257,4 +246,4 @@ class SimBeamLoad(AnyObject):
         return self.com_object.SetMagnitude(i_fx, i_fy, i_fz)
 
     def __repr__(self):
-        return f'SimBeamLoad(name="{ self.name }")'
+        return f'SimBeamLoad(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MachineInstruction(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class MachineInstruction(AnyObject):
     def compute_axis_values(self, isp_surf: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeAxisValues(AnyObject ispSurf)
@@ -59,7 +57,6 @@ class MachineInstruction(AnyObject):
     def get_available_components_to_instruct(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAvailableComponentsToInstruct() As CATSafeArrayVariant
@@ -75,7 +72,6 @@ class MachineInstruction(AnyObject):
     def get_axis_involved(self, i_index: int, o_axis_involvement: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisInvolved(long iIndex,long oAxisInvolvement)
@@ -101,7 +97,6 @@ class MachineInstruction(AnyObject):
     def get_axis_involvement(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAxisInvolvement() As CATSafeArrayVariant
@@ -123,7 +118,6 @@ class MachineInstruction(AnyObject):
     def get_axis_value(self, i_index: int, o_axis_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisValue(long iIndex,double oAxisValue)
@@ -146,7 +140,6 @@ class MachineInstruction(AnyObject):
     def get_axis_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAxisValues() As CATSafeArrayVariant
@@ -163,7 +156,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_involved(self, i_device_component: AnyObject, i_index: int, o_axis_involvement: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDeviceAxisInvolved(AnyObject iDeviceComponent,long iIndex,long
@@ -195,7 +187,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_involvement(self, i_device_component: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceAxisInvolvement(AnyObject iDeviceComponent) As
@@ -225,7 +216,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_priority(self, i_device_component: AnyObject, i_index: int, o_axis_priority: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDeviceAxisPriority(AnyObject iDeviceComponent,long iIndex,long
@@ -253,7 +243,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_prioritys(self, i_device_component: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceAxisPrioritys(AnyObject iDeviceComponent) As
@@ -278,7 +267,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_value(self, i_device_component: AnyObject, i_index: int, o_axis_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDeviceAxisValue(AnyObject iDeviceComponent,long iIndex,double
@@ -307,7 +295,6 @@ class MachineInstruction(AnyObject):
     def get_device_axis_values(self, i_device_component: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDeviceAxisValues(AnyObject iDeviceComponent) As
@@ -332,7 +319,6 @@ class MachineInstruction(AnyObject):
     def get_feedrate_mode(self, o_feedrate_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFeedrateMode(long oFeedrateMode)
@@ -355,7 +341,6 @@ class MachineInstruction(AnyObject):
     def get_feedrate_values(self, o_linear_feedrate: float, o_angular_feedrate: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFeedrateValues(double oLinearFeedrate,double
@@ -379,7 +364,6 @@ class MachineInstruction(AnyObject):
     def get_instructed_component(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInstructedComponent() As AnyObject
@@ -396,7 +380,6 @@ class MachineInstruction(AnyObject):
     def get_list_of_instructed_component(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListOfInstructedComponent() As CATSafeArrayVariant
@@ -408,7 +391,6 @@ class MachineInstruction(AnyObject):
     def set_axis_involved(self, i_index: int, i_axis_involvement: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisInvolved(long iIndex,long iAxisInvolvement)
@@ -434,7 +416,6 @@ class MachineInstruction(AnyObject):
     def set_axis_involvement(self, i_axis_involvement: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAxisInvolvement(CATSafeArrayVariant iAxisInvolvement)
@@ -475,7 +456,6 @@ class MachineInstruction(AnyObject):
     def set_axis_priorities(self, i_axis_priority: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAxisPrioritys(CATSafeArrayVariant iAxisPriority)
@@ -513,7 +493,6 @@ class MachineInstruction(AnyObject):
     def set_axis_value(self, i_index: int, i_axis_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisValue(long iIndex,double iAxisValue)
@@ -536,7 +515,6 @@ class MachineInstruction(AnyObject):
     def set_axis_values(self, i_axis_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetAxisValues(CATSafeArrayVariant iAxisValues)
@@ -572,7 +550,6 @@ class MachineInstruction(AnyObject):
     def set_device_axis_involved(self, i_device_component: AnyObject, i_index: int, i_axis_involvement: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeviceAxisInvolved(AnyObject iDeviceComponent,long iIndex,long
@@ -604,7 +581,6 @@ class MachineInstruction(AnyObject):
     def set_device_axis_priority(self, i_device_component: AnyObject, i_index: int, i_axis_priority: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeviceAxisPriority(AnyObject iDeviceComponent,long iIndex,long
@@ -632,7 +608,6 @@ class MachineInstruction(AnyObject):
     def set_device_axis_value(self, i_device_component: AnyObject, i_index: int, i_axis_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDeviceAxisValue(AnyObject iDeviceComponent,long iIndex,double
@@ -661,7 +636,6 @@ class MachineInstruction(AnyObject):
     def set_feedrate_mode(self, i_feedrate_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFeedrateMode(long iFeedrateMode)
@@ -684,7 +658,6 @@ class MachineInstruction(AnyObject):
     def set_feedrate_values(self, i_linear_feedrate: float, i_angular_feedrate: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFeedrateValues(double iLinearFeedrate,double
@@ -708,7 +681,6 @@ class MachineInstruction(AnyObject):
     def set_instructed_component(self, i_device_component: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInstructedComponent(AnyObject iDeviceComponent)
@@ -728,7 +700,6 @@ class MachineInstruction(AnyObject):
     def set_list_of_instructed_component(self, i_list_components: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetListOfInstructedComponent(CATSafeArrayVariant

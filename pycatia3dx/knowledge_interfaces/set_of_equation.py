@@ -12,10 +12,8 @@ from pycatia3dx.knowledge_interfaces.relation import Relation
 
 
 class SetOfEquation(Relation):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -45,7 +43,6 @@ class SetOfEquation(Relation):
     def get_max_calculation_time(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetMaxCalculationTime() As long
@@ -61,7 +58,6 @@ class SetOfEquation(Relation):
     def get_precision(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetPrecision() As double
@@ -77,7 +73,6 @@ class SetOfEquation(Relation):
     def get_symbolic_transformations(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetSymbolcTransformations() As boolean
@@ -94,7 +89,6 @@ class SetOfEquation(Relation):
     def is_stop_dialog(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func IsStopDialog() As boolean
@@ -111,7 +105,6 @@ class SetOfEquation(Relation):
     def set_input_parameters(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetInputParameters(long iIndex)
@@ -132,7 +125,6 @@ class SetOfEquation(Relation):
     def set_max_calculation_time(self, i_max_time: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetMaxCalculationTime(long iMaxTime)
@@ -151,7 +143,6 @@ class SetOfEquation(Relation):
     def set_parameter_as_input(self, i_parameter: Parameter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetParameterAsInput(Parameter iParameter)
@@ -171,7 +162,6 @@ class SetOfEquation(Relation):
     def set_parameter_as_output(self, i_parameter: Parameter) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetParameterAsOutput(Parameter iParameter)
@@ -191,7 +181,6 @@ class SetOfEquation(Relation):
     def set_precision(self, i_eps: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetPrecision(double iEps)
@@ -210,7 +199,6 @@ class SetOfEquation(Relation):
     def use_stop_dialog(self, i_used: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub UseStopDialog(boolean iUsed)
@@ -230,7 +218,6 @@ class SetOfEquation(Relation):
     def use_symbolc_transformations(self, i_gauss: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub UseSymbolcTransformations(boolean iGauss)
@@ -248,4 +235,4 @@ class SetOfEquation(Relation):
         return self.com_object.UseSymbolcTransformations(i_gauss)
 
     def __repr__(self):
-        return f'SetOfEquation(name="{ self.name }")'
+        return f'SetOfEquation(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PcbObject(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class PcbObject(AnyObject):
     def electronic_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElectronicType() As CatElectronicType (Read Only)
@@ -63,7 +60,6 @@ class PcbObject(AnyObject):
     def remove_electronic_behaviour(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveElectronicBehaviour()
@@ -80,4 +76,4 @@ class PcbObject(AnyObject):
         return self.com_object.RemoveElectronicBehaviour()
 
     def __repr__(self):
-        return f'PcbObject(name="{ self.name }")'
+        return f'PcbObject(name="{self.name}")'

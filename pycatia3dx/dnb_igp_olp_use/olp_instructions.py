@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 class OLPInstructions(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -59,7 +58,6 @@ class OLPInstructions(Collection):
     ) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateInstruction(DELOlpInstructionType iType,OlpInstruction
@@ -104,7 +102,6 @@ class OLPInstructions(Collection):
                                          i_after_instruction: bool) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateInstructionFromTemplate(CATBSTR iLibrary,CATBSTR iTemplate,CATBSTR
@@ -159,7 +156,6 @@ class OLPInstructions(Collection):
                                        i_after_instruction: bool) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateInstructionTypeString(CATBSTR iType,OlpInstruction
@@ -205,7 +201,6 @@ class OLPInstructions(Collection):
     def delete_instruction(self, i_instruction: OLPInstruction) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteInstruction(OlpInstruction iInstruction)
@@ -224,7 +219,6 @@ class OLPInstructions(Collection):
     def item(self, i_index: int) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpInstruction
@@ -251,7 +245,6 @@ class OLPInstructions(Collection):
     def next(self, i_relative_instruction: OLPInstruction) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Next(OlpInstruction iRelativeInstruction) As
@@ -278,7 +271,6 @@ class OLPInstructions(Collection):
     def previous(self, i_relative_instruction: OLPInstruction) -> OLPInstruction:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Previous(OlpInstruction iRelativeInstruction) As

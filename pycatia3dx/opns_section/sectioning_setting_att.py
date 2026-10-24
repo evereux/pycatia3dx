@@ -12,10 +12,8 @@ from pycatia3dx.system.setting_controller import SettingController
 
 
 class SectioningSettingAtt(SettingController):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class SectioningSettingAtt(SettingController):
     def get_export_mode(self, o_export_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetExportMode(long oExportMode)
@@ -60,7 +57,6 @@ class SectioningSettingAtt(SettingController):
     def get_only_plane_dyn_mode(self, o_only_plane_dyn_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetOnlyPlaneDynMode(long oOnlyPlaneDynMode)
@@ -82,7 +78,6 @@ class SectioningSettingAtt(SettingController):
     def get_plane_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPlaneColor(long oR,long oG,long oB)
@@ -110,7 +105,6 @@ class SectioningSettingAtt(SettingController):
     def get_plane_transparency(self, o_plane_transparency: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPlaneTransparency(long oPlaneTransparency)
@@ -132,7 +126,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_contour_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionContourColor(long oR,long oG,long oB)
@@ -160,7 +153,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_contour_dominant_status(self, o_contour_dominant_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionContourDominantStatus(long
@@ -183,7 +175,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_info_disp_mode(self, o_section_info_disp_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionInfoDispMode(long oSectionInfoDispMode)
@@ -205,7 +196,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_mode(self, o_grid_view: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionMode(CATSectioningMode oGridView)
@@ -227,7 +217,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_plane_visu_mode(self, o_plane_visu_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionPlaneVisuMode(CATSectioningPlaneVisuMode
@@ -250,7 +239,6 @@ class SectioningSettingAtt(SettingController):
     def get_section_update_mode(self, o_section_update_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSectionUpdateMode(long oSectionUpdateMode)
@@ -272,7 +260,6 @@ class SectioningSettingAtt(SettingController):
     def get_thickness_line(self, o_thickness_line: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetThicknessLine(long oThicknessLine)
@@ -294,7 +281,6 @@ class SectioningSettingAtt(SettingController):
     def set_export_mode(self, i_export_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExportMode(long iExportMode)
@@ -316,7 +302,6 @@ class SectioningSettingAtt(SettingController):
     def set_only_plane_dyn_mode(self, i_only_plane_dyn_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOnlyPlaneDynMode(long iOnlyPlaneDynMode)
@@ -338,7 +323,6 @@ class SectioningSettingAtt(SettingController):
     def set_plane_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPlaneColor(long iR,long iG,long iB)
@@ -366,7 +350,6 @@ class SectioningSettingAtt(SettingController):
     def set_plane_transparency(self, i_plane_transparency: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPlaneTransparency(long iPlaneTransparency)
@@ -388,7 +371,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_contour_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionContourColor(long iR,long iG,long iB)
@@ -416,7 +398,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_contour_dominant_status(self, i_contour_dominant_status: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionContourDominantStatus(long
@@ -439,7 +420,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_info_disp_mode(self, i_section_info_disp_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionInfoDispMode(long iSectionInfoDispMode)
@@ -461,7 +441,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_mode(self, i_section_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionMode(CATSectioningMode iSectionMode)
@@ -483,7 +462,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_plane_visu_mode(self, i_plane_visu_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionPlaneVisuMode(CATSectioningPlaneVisuMode
@@ -506,7 +484,6 @@ class SectioningSettingAtt(SettingController):
     def set_section_update_mode(self, i_section_update_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSectionUpdateMode(long iSectionUpdateMode)
@@ -528,7 +505,6 @@ class SectioningSettingAtt(SettingController):
     def set_thickness_line(self, i_thickness_line: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetThicknessLine(long iThicknessLine)
@@ -548,4 +524,4 @@ class SectioningSettingAtt(SettingController):
         return self.com_object.SetThicknessLine(i_thickness_line)
 
     def __repr__(self):
-        return f'SectioningSettingAtt(name="{ self.name }")'
+        return f'SectioningSettingAtt(name="{self.name}")'

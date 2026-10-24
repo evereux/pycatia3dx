@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingViews(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +44,6 @@ class DrawingViews(Collection):
     def active_view(self) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveView() As DrawingView (Read Only)
@@ -74,7 +72,6 @@ class DrawingViews(Collection):
     def drawing_define_gen_view(self) -> 'DrawingDefineGenView':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrawingDefineGenView() As AnyObject (Read Only)
@@ -97,7 +94,6 @@ class DrawingViews(Collection):
     def add(self, i_drawing_view_name: str) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingViewName) As DrawingView
@@ -136,7 +132,6 @@ class DrawingViews(Collection):
                        i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddFrontView(double iXPt1,double iYPt1,CATBSTR iDrawingViewName,double
@@ -198,7 +193,6 @@ class DrawingViews(Collection):
                            i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddIsometricView(double iXPt1,double iYPt1,CATBSTR iDrawingViewName,double
@@ -260,7 +254,6 @@ class DrawingViews(Collection):
                             i_type: int) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddProjectionView(double iXPt1,double iYPt1,CATBSTR
@@ -312,7 +305,6 @@ class DrawingViews(Collection):
     def item(self, i_index: CATVariant) -> DrawingView:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingView
@@ -362,7 +354,6 @@ class DrawingViews(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

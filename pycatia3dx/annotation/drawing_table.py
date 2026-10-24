@@ -17,7 +17,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingTable(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingTable(AnyObject):
     def anchor_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnchorPoint() As CatTablePosition
@@ -74,7 +72,6 @@ class DrawingTable(AnyObject):
     def angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Angle() As double
@@ -104,7 +101,6 @@ class DrawingTable(AnyObject):
     def compute_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ComputeMode() As CatTableComputeMode
@@ -136,7 +132,6 @@ class DrawingTable(AnyObject):
     def leaders(self) -> DrawingLeaders:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Leaders() As DrawingLeaders (Read Only)
@@ -159,7 +154,6 @@ class DrawingTable(AnyObject):
     def number_of_columns(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfColumns() As long (Read Only)
@@ -180,7 +174,6 @@ class DrawingTable(AnyObject):
     def number_of_rows(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberOfRows() As long (Read Only)
@@ -201,7 +194,6 @@ class DrawingTable(AnyObject):
     def orientation_reference(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OrientationReference() As long
@@ -233,7 +225,6 @@ class DrawingTable(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TextProperties() As DrawingTextProperties (Read Only)
@@ -256,7 +247,6 @@ class DrawingTable(AnyObject):
     def x(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property x() As double
@@ -287,7 +277,6 @@ class DrawingTable(AnyObject):
     def y(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property y() As double
@@ -319,7 +308,6 @@ class DrawingTable(AnyObject):
     def add_column(self, i_col: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddColumn(long iCol)
@@ -346,7 +334,6 @@ class DrawingTable(AnyObject):
     def add_row(self, i_row: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRow(long iRow)
@@ -372,7 +359,6 @@ class DrawingTable(AnyObject):
     def get_cell_alignment(self, i_row: int, i_col: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellAlignment(long iRow,long iCol) As CatTablePosition
@@ -405,7 +391,6 @@ class DrawingTable(AnyObject):
     def get_cell_border_type(self, i_row: int, i_col: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellBorderType(long iRow,long iCol) As
@@ -444,7 +429,6 @@ class DrawingTable(AnyObject):
     def get_cell_name(self, i_row: int, i_col: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellName(long iRow,long iCol) As CATBSTR
@@ -476,7 +460,6 @@ class DrawingTable(AnyObject):
     def get_cell_object(self, i_row: int, i_col: int) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellObject(long iRow,long iCol) As DrawingText
@@ -509,7 +492,6 @@ class DrawingTable(AnyObject):
     def get_cell_string(self, i_row: int, i_col: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCellString(long iRow,long iCol) As CATBSTR
@@ -542,7 +524,6 @@ class DrawingTable(AnyObject):
     def get_cells_merge(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCellsMerge(CATSafeArrayVariant oListOfMergeCells)
@@ -585,7 +566,6 @@ class DrawingTable(AnyObject):
     def get_column_size(self, i_col: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetColumnSize(long iCol) As double
@@ -616,7 +596,6 @@ class DrawingTable(AnyObject):
                         o_nb_col: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMergeInfos(long iRow,long iCol,long oFirstRow,long oFirstCol,long
@@ -656,7 +635,6 @@ class DrawingTable(AnyObject):
     def get_row_size(self, i_row: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRowSize(long iRow) As double
@@ -686,7 +664,6 @@ class DrawingTable(AnyObject):
     def invert_mode(self, i_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InvertMode(CatTableInvertMode iMode)
@@ -706,7 +683,6 @@ class DrawingTable(AnyObject):
     def merge_cells(self, i_first_row: int, i_first_col: int, i_nb_row_merge: int, i_nb_col_merge: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MergeCells(long iFirstRow,long iFirstCol,long iNbRowMerge,long
@@ -739,7 +715,6 @@ class DrawingTable(AnyObject):
     def move(self, i_delta_x: float, i_delta_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Move(double iDeltaX,double iDeltaY)
@@ -769,7 +744,6 @@ class DrawingTable(AnyObject):
     def remove_column(self, i_col: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveColumn(long iCol)
@@ -795,7 +769,6 @@ class DrawingTable(AnyObject):
     def remove_row(self, i_row: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRow(long iRow)
@@ -821,7 +794,6 @@ class DrawingTable(AnyObject):
     def rotate(self, i_delta_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Rotate(double iDeltaAngle)
@@ -847,7 +819,6 @@ class DrawingTable(AnyObject):
     def set_cell_alignment(self, i_row: int, i_col: int, i_align: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellAlignment(long iRow,long iCol,CatTablePosition
@@ -882,7 +853,6 @@ class DrawingTable(AnyObject):
     def set_cell_border_type(self, i_row: int, i_col: int, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellBorderType(long iRow,long iCol,long iType)
@@ -940,7 +910,6 @@ class DrawingTable(AnyObject):
     def set_cell_image(self, i_row: int, i_col: int, i_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellImage(long iRow,long iCol,CATBSTR iPath)
@@ -974,7 +943,6 @@ class DrawingTable(AnyObject):
     def set_cell_name(self, i_row: int, i_col: int, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellName(long iRow,long iCol,CATBSTR iName)
@@ -1008,7 +976,6 @@ class DrawingTable(AnyObject):
     def set_cell_object(self, i_row: int, i_col: int, i_text: DrawingText) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellObject(long iRow,long iCol,DrawingText iText)
@@ -1041,7 +1008,6 @@ class DrawingTable(AnyObject):
     def set_cell_string(self, i_row: int, i_col: int, i_string: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCellString(long iRow,long iCol,CATBSTR iString)
@@ -1075,7 +1041,6 @@ class DrawingTable(AnyObject):
     def set_column_size(self, i_col: int, i_col_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetColumnSize(long iCol,double iColSize)
@@ -1106,7 +1071,6 @@ class DrawingTable(AnyObject):
     def set_row_size(self, i_row: int, i_row_size: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRowSize(long iRow,double iRowSize)
@@ -1137,7 +1101,6 @@ class DrawingTable(AnyObject):
     def un_merge_cells(self, i_row: int, i_col: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub UnMergeCells(long iRow,long iCol)

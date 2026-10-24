@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SpotDrAction2(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SpotDrAction2(AnyObject):
     def config(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Config() As short
@@ -67,7 +65,6 @@ class SpotDrAction2(AnyObject):
     def elbow_angle(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElbowAngle() As double
@@ -98,7 +95,6 @@ class SpotDrAction2(AnyObject):
     def interpolation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterpolationMode() As short
@@ -135,7 +131,6 @@ class SpotDrAction2(AnyObject):
     def motion_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionType() As short
@@ -170,7 +165,6 @@ class SpotDrAction2(AnyObject):
     def tcp_orientation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TCPOrientationMode() As short
@@ -203,7 +197,6 @@ class SpotDrAction2(AnyObject):
     def turn_numbers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TurnNumbers() As CATSafeArrayVariant
@@ -234,7 +227,6 @@ class SpotDrAction2(AnyObject):
     def turn_signs(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TurnSigns() As CATSafeArrayVariant
@@ -264,7 +256,6 @@ class SpotDrAction2(AnyObject):
     def get_auxiliary_axis_values(self, i_auxiliary_dev_mca: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA) As
@@ -290,7 +281,6 @@ class SpotDrAction2(AnyObject):
     def get_user_profiles_list(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUserProfilesList() As CATSafeArrayVariant
@@ -311,7 +301,6 @@ class SpotDrAction2(AnyObject):
     def set_auxiliary_axis_values(self, i_auxiliary_dev_mca: AnyObject, i_auxiliary_axis_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA,CATSafeArrayVariant
@@ -337,7 +326,6 @@ class SpotDrAction2(AnyObject):
     def set_user_profiles_list(self, i_user_profile_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub SetUserProfilesList(CATSafeArrayVariant iUserProfileList)

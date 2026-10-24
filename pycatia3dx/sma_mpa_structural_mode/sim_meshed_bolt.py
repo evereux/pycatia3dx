@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimMeshedBolt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -75,7 +73,6 @@ class SimMeshedBolt(AnyObject):
     def local_plane(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LocalPlane(AnyObject iPlane) (Write Only)
@@ -98,7 +95,6 @@ class SimMeshedBolt(AnyObject):
     def plane(self) -> SimMathPlane:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Plane() As SimMathPlane (Read Only)
@@ -113,7 +109,6 @@ class SimMeshedBolt(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -150,4 +145,4 @@ class SimMeshedBolt(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimMeshedBolt(name="{ self.name }")'
+        return f'SimMeshedBolt(name="{self.name}")'

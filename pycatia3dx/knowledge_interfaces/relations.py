@@ -25,7 +25,6 @@ from pycatia3dx.types.general import CATVariant
 class Relations(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -90,7 +89,6 @@ class Relations(Collection):
     def create_check(self, i_name: str, i_comment: str, i_check_body: str) -> Check:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateCheck(CATBSTR iName,CATBSTR iComment,CATBSTR iCheckBody) As
@@ -141,7 +139,6 @@ class Relations(Collection):
     ) -> DesignTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateDesignTableWithRepRef(CATBSTR iName,CATBSTR iComment,boolean
@@ -185,7 +182,6 @@ class Relations(Collection):
     ) -> Formula:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateFormula(CATBSTR iName,CATBSTR iComment,Parameter
@@ -236,7 +232,6 @@ class Relations(Collection):
     ) -> DesignTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateHorizontalDesignTableWithRepRef(CATBSTR iName,CATBSTR
@@ -277,7 +272,6 @@ class Relations(Collection):
     def create_law(self, i_name: str, i_comment: str, i_law_body: str) -> Law:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateLaw(CATBSTR iName,CATBSTR iComment,CATBSTR iLawBody) As
@@ -307,7 +301,6 @@ class Relations(Collection):
     def create_program(self, i_name: str, i_comment: str, i_program_body: str) -> Rule:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateProgram(CATBSTR iName,CATBSTR iComment,CATBSTR iProgramBody) As
@@ -353,7 +346,6 @@ class Relations(Collection):
     def create_rule_base(self, i_name: str) -> Relation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateRuleBase(CATBSTR iName) As Relation
@@ -377,7 +369,6 @@ class Relations(Collection):
     def create_set_of_equations(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func CreateSetOfEquations(CATBSTR iName,CATBSTR iComment,CATBSTR iFormulaBody)
@@ -408,7 +399,6 @@ class Relations(Collection):
     def create_set_of_relations(self, i_parent: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub CreateSetOfRelations(AnyObject iParent)
@@ -429,7 +419,6 @@ class Relations(Collection):
     def generate_xml_report_for_checks(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GenerateXMLReportForChecks(CATBSTR iName)
@@ -449,7 +438,6 @@ class Relations(Collection):
     def item(self, i_index: CATVariant) -> Relation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Relation
@@ -483,7 +471,6 @@ class Relations(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Remove(CATVariant iIndex)
@@ -513,7 +500,6 @@ class Relations(Collection):
     def sub_list(self, i_feature: AnyObject, i_recursively: bool) -> 'Relations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func SubList(AnyObject iFeature,boolean iRecursively) As

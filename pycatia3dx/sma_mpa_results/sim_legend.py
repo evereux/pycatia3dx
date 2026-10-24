@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimLegend(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -51,7 +50,6 @@ class SimLegend(AnyObject):
     def active_data(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveData() As boolean (Read Only)
@@ -66,7 +64,6 @@ class SimLegend(AnyObject):
     def nb_colors(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbColors() As long
@@ -93,7 +90,6 @@ class SimLegend(AnyObject):
     def nb_significant_digits(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NbSignificantDigits(long inNbSignificantDigits) (Write
@@ -117,7 +113,6 @@ class SimLegend(AnyObject):
     def number_format(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NumberFormat(long inNumberFormat) (Write Only)
@@ -141,7 +136,6 @@ class SimLegend(AnyObject):
     def style(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Style() As CATBSTR
@@ -164,7 +158,6 @@ class SimLegend(AnyObject):
     def are_min_max_values_imposed(self, ob_is_min_value_imposed: bool, ob_is_max_value_imposed: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AreMinMaxValuesImposed(boolean obIsMinValueImposed,boolean
@@ -192,7 +185,6 @@ class SimLegend(AnyObject):
     def get_color_modifiers(self, ob_smooth: bool, ob_inverse: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetColorModifiers(boolean obSmooth,boolean obInverse)
@@ -217,7 +209,6 @@ class SimLegend(AnyObject):
     def get_colors(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetColors(CATSafeArrayVariant opnColors,long onNumColors)
@@ -257,7 +248,6 @@ class SimLegend(AnyObject):
     def get_computed_min_max_range(self, od_min_value: float, od_max_value: float, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetComputedMinMaxRange(double odMinValue,double odMaxValue,boolean
@@ -293,7 +283,6 @@ class SimLegend(AnyObject):
     def get_data_list(self, ib_visible_only: bool, o_data_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDataList(boolean ibVisibleOnly,CATSafeArrayVariant
@@ -319,7 +308,6 @@ class SimLegend(AnyObject):
     def get_linear_values(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetLinearValues(CATSafeArrayVariant opdValues,long onNumValues,boolean
@@ -368,7 +356,6 @@ class SimLegend(AnyObject):
                           ib_allow_invalid: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinMaxValue(double odMinValue,double odMaxValue,boolean
@@ -413,7 +400,6 @@ class SimLegend(AnyObject):
     def get_number_display(self, on_number_format: int, on_nb_significant_digits: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNumberDisplay(long onNumberFormat,long
@@ -437,7 +423,6 @@ class SimLegend(AnyObject):
     def get_values(self, opd_values: tuple, on_num_values: int, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetValues(CATSafeArrayVariant opdValues,long onNumValues,boolean
@@ -493,7 +478,6 @@ class SimLegend(AnyObject):
     def has_empty_min_max_range(self, ib_computed: bool) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasEmptyMinMaxRange(boolean ibComputed) As boolean
@@ -526,7 +510,6 @@ class SimLegend(AnyObject):
     def reset_max_value(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetMaxValue()
@@ -543,7 +526,6 @@ class SimLegend(AnyObject):
     def reset_min_max_value(self, ib_reset_min: bool, ib_reset_max: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetMinMaxValue(boolean ibResetMin,boolean ibResetMax)
@@ -575,7 +557,6 @@ class SimLegend(AnyObject):
     def reset_min_value(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetMinValue()
@@ -592,7 +573,6 @@ class SimLegend(AnyObject):
     def set_color_modifiers(self, ib_smooth: bool, ib_inverse: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetColorModifiers(boolean ibSmooth,boolean ibInverse)
@@ -617,7 +597,6 @@ class SimLegend(AnyObject):
     def set_max_value(self, id_max_value: float, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaxValue(double idMaxValue,boolean ibCurrentUnits)
@@ -646,7 +625,6 @@ class SimLegend(AnyObject):
     def set_min_max_value(self, id_min_value: float, id_max_value: float, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinMaxValue(double idMinValue,double idMaxValue,boolean
@@ -680,7 +658,6 @@ class SimLegend(AnyObject):
     def set_min_value(self, id_min_value: float, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinValue(double idMinValue,boolean ibCurrentUnits)
@@ -712,7 +689,6 @@ class SimLegend(AnyObject):
     def start_animation_range(self, id_min_value: float, id_max_value: float, ib_current_units: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub StartAnimationRange(double idMinValue,double idMaxValue,boolean
@@ -750,7 +726,6 @@ class SimLegend(AnyObject):
     def stop_animation_range(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub StopAnimationRange()

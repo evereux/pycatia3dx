@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeCircleCtrRad(HybridShapeCircle):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -57,7 +55,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Center() As Reference
@@ -88,7 +85,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Diameter() As Length (Read Only)
@@ -112,7 +108,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DiameterMode() As boolean
@@ -146,7 +141,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstDirection() As HybridShapeDirection
@@ -180,7 +174,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Radius() As Length (Read Only)
@@ -202,7 +195,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -232,7 +224,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetSecondDirection(double oDirX,double oDirY,double oDirZ)
@@ -259,7 +250,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def is_geodesic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func IsGeodesic() As boolean
@@ -277,7 +267,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def set_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetGeometryOnSupport()
@@ -291,7 +280,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSecondDirection(double iDirX,double iDirY,double iDirZ)
@@ -318,7 +306,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
     def unset_geometry_on_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub UnsetGeometryOnSupport()
@@ -330,4 +317,4 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         return self.com_object.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircleCtrRad(name="{ self.name }")'
+        return f'HybridShapeCircleCtrRad(name="{self.name}")'

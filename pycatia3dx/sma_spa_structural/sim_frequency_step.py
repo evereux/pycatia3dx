@@ -14,10 +14,8 @@ from pycatia3dx.sma_spa_structural.sim_lanczos_eigensolver import SimLanczosEige
 
 
 class SimFrequencyStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimFrequencyStep(SimStep):
     def ams_solver(self) -> SimAmsEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AMSSolver() As SimAMSEigensolver (Read Only)
@@ -95,7 +92,6 @@ class SimFrequencyStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -118,7 +114,6 @@ class SimFrequencyStep(SimStep):
     def lanczos_solver(self) -> SimLanczosEigensolver:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LanczosSolver() As SimLanczosEigensolver (Read Only)
@@ -133,7 +128,6 @@ class SimFrequencyStep(SimStep):
     def restart_step_property(self) -> SimAnalysisRestartStepProperty:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
@@ -149,7 +143,6 @@ class SimFrequencyStep(SimStep):
     def solver_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SolverType() As SimFrequencyStepSolverType
@@ -169,4 +162,4 @@ class SimFrequencyStep(SimStep):
         self.com_object.SolverType = value
 
     def __repr__(self):
-        return f'SimFrequencyStep(name="{ self.name }")'
+        return f'SimFrequencyStep(name="{self.name}")'

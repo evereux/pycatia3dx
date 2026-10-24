@@ -12,10 +12,8 @@ from pycatia3dx.sma_spa_structural.sim_stabilization import SimStabilization
 
 
 class SimCoupledThermalElectricalStressStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -103,7 +100,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def creep_behavior_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CreepBehaviorFlag() As boolean
@@ -128,7 +124,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def creep_integration(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CreepIntegration() As SimCoupledCreepIntegration
@@ -151,7 +146,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def geometric_non_linearity_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GeometricNonLinearityFlag() As boolean
@@ -177,7 +171,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def initial_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InitialTimeIncrement() As double
@@ -202,7 +195,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def matrix_storage_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MatrixStorageScheme() As SimMatrixStorageScheme
@@ -225,7 +217,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def maximum_creep_strain_rate_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumCreepStrainRateIncrement() As double
@@ -249,7 +240,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def maximum_increments(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumIncrements() As long
@@ -274,7 +264,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def maximum_temperature_change(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTemperatureChange() As double
@@ -298,7 +287,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def maximum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaximumTimeIncrement() As double
@@ -323,7 +311,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def minimum_time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumTimeIncrement() As double
@@ -348,7 +335,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def rate_dependence(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RateDependence() As boolean
@@ -374,7 +360,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def stabilization(self) -> SimStabilization:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Stabilization() As SimStabilization (Read Only)
@@ -389,7 +374,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def step_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StepTime() As double
@@ -413,7 +397,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def thermal_response_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThermalResponseType() As
@@ -437,7 +420,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def time_increment(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrement() As double
@@ -461,7 +443,6 @@ class SimCoupledThermalElectricalStressStep(SimStep):
     def time_incrementation_scheme(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeIncrementationScheme() As
@@ -482,4 +463,4 @@ class SimCoupledThermalElectricalStressStep(SimStep):
         self.com_object.TimeIncrementationScheme = value
 
     def __repr__(self):
-        return f'SimCoupledThermalElectricalStressStep(name="{ self.name }")'
+        return f'SimCoupledThermalElectricalStressStep(name="{self.name}")'

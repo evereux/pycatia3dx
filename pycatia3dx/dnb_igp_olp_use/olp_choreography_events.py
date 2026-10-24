@@ -16,7 +16,6 @@ from pycatia3dx.dnb_igp_olp_use.olp_choreography_event import OLPChoreographyEve
 class OLPChoreographyEvents(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class OLPChoreographyEvents(Collection):
     def create_and_append_event(self, i_type: int) -> OLPChoreographyEvent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateAndAppendEvent(DELOlpChoreographyEventType iType) As
@@ -59,7 +57,6 @@ class OLPChoreographyEvents(Collection):
     def delete_event(self, i_event: OLPChoreographyEvent) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteEvent(OlpChoreographyEvent iEvent)
@@ -73,7 +70,6 @@ class OLPChoreographyEvents(Collection):
     def item(self, i_index: int) -> OLPChoreographyEvent:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(long iIndex) As OlpChoreographyEvent

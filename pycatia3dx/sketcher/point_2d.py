@@ -13,7 +13,6 @@ from pycatia3dx.sketcher.geometry_2d import Geometry2D
 class Point2D(Geometry2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -37,7 +36,6 @@ class Point2D(Geometry2D):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetCoordinates(CATSafeArrayVariant oPoint)
@@ -73,7 +71,6 @@ class Point2D(Geometry2D):
     def set_data(self, i_x: float, i_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetData(double iX,double iY)

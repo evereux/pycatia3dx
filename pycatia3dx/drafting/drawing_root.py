@@ -18,7 +18,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingRoot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class DrawingRoot(AnyObject):
     def active_sheet(self) -> DrawingSheet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActiveSheet() As DrawingSheet
@@ -80,7 +78,6 @@ class DrawingRoot(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Parameters() As Parameters (Read Only)
@@ -112,7 +109,6 @@ class DrawingRoot(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Relations() As Relations (Read Only)
@@ -144,7 +140,6 @@ class DrawingRoot(AnyObject):
     def sheets(self) -> DrawingSheets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Sheets() As DrawingSheets (Read Only)
@@ -176,7 +171,6 @@ class DrawingRoot(AnyObject):
     def standard(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Standard() As CATBSTR
@@ -212,7 +206,6 @@ class DrawingRoot(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Isolate()
@@ -239,7 +232,6 @@ class DrawingRoot(AnyObject):
     def load_3d_data(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Load3DData()
@@ -265,7 +257,6 @@ class DrawingRoot(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -291,7 +282,6 @@ class DrawingRoot(AnyObject):
     def reorder_sheets(self, i_ordered_sheets: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)

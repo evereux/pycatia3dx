@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class ArcWeldCSPProfiles(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class ArcWeldCSPProfiles(Collection):
     def add(self, i_profile: RscApplicativeProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(RscApplicativeProfile iProfile)
@@ -72,7 +70,6 @@ class ArcWeldCSPProfiles(Collection):
     def item(self, i_index: CATVariant) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As RscApplicativeProfile
@@ -101,7 +98,6 @@ class ArcWeldCSPProfiles(Collection):
     def remove(self, i_profile: RscApplicativeProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(RscApplicativeProfile iProfile)
@@ -127,7 +123,6 @@ class ArcWeldCSPProfiles(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()

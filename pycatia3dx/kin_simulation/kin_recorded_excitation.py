@@ -14,7 +14,6 @@ from pycatia3dx.sim_rep.sim_excitation import SimExcitation
 class KinRecordedExcitation(SimExcitation):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class KinRecordedExcitation(SimExcitation):
     def key_frames_size(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property KeyFramesSize() As long (Read Only)
@@ -59,7 +57,6 @@ class KinRecordedExcitation(SimExcitation):
     def get_key_frames_times(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetKeyFramesTimes(CATSafeArrayVariant oTimes)
@@ -102,7 +99,6 @@ class KinRecordedExcitation(SimExcitation):
     def get_key_frames_values(self, i_kin_cmd: KinCommand, o_values: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetKeyFramesValues(KinCommand iKinCmd,CATSafeArrayVariant
@@ -190,7 +186,6 @@ class KinRecordedExcitation(SimExcitation):
     def set_key_frames_times(self, i_times: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub SetKeyFramesTimes(CATSafeArrayVariant iTimes)
@@ -238,7 +233,6 @@ class KinRecordedExcitation(SimExcitation):
     def set_key_frames_values(self, i_kin_cmd: KinCommand, i_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub SetKeyFramesValues(KinCommand iKinCmd,CATSafeArrayVariant

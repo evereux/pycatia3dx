@@ -19,7 +19,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsPart(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SrsPart(AnyObject):
     def bounding_box(self) -> SrsBoundingBox:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoundingBox() As SrsBoundingBox (Read Only)
@@ -56,7 +54,6 @@ class SrsPart(AnyObject):
     def centre_line(self) -> SrsCentreLine:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CentreLine() As SrsCentreLine (Read Only)
@@ -70,7 +67,6 @@ class SrsPart(AnyObject):
     def mid_ship(self) -> SrsMidShip:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MidShip() As SrsMidShip (Read Only)
@@ -84,7 +80,6 @@ class SrsPart(AnyObject):
     def reference_surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceSurface() As Reference (Read Only)
@@ -98,7 +93,6 @@ class SrsPart(AnyObject):
     def srs_grid_sets(self) -> SrsGridSets:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SrsGridSets() As SrsGridSets (Read Only)

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscMotionController(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -73,7 +71,6 @@ class RscMotionController(AnyObject):
     def list_motion_groups(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListMotionGroups() As CATSafeArrayVariant (Read Only)
@@ -117,7 +114,6 @@ class RscMotionController(AnyObject):
     def motion_controller_context(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionControllerContext() As DELRscControllerDataContext (Read
@@ -150,7 +146,6 @@ class RscMotionController(AnyObject):
     def support_motion_controller(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportMotionController() As boolean (Read Only)
@@ -168,7 +163,6 @@ class RscMotionController(AnyObject):
     def get_list_controlled_resources(self, i_context: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetListControlledResources(AnyObject iContext) As
@@ -226,7 +220,6 @@ class RscMotionController(AnyObject):
     def get_motion_controller_type(self, i_controlled_resource: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionControllerType(AnyObject iControlledResource) As
@@ -260,7 +253,6 @@ class RscMotionController(AnyObject):
     def modify_control_display_name(self, i_controlled_resource: AnyObject, i_control_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ModifyControlDisplayName(AnyObject iControlledResource,CATBSTR
@@ -295,7 +287,6 @@ class RscMotionController(AnyObject):
     def retrieve_control_display_name(self, i_controlled_resource: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrieveControlDisplayName(AnyObject iControlledResource) As
@@ -328,7 +319,6 @@ class RscMotionController(AnyObject):
     def retrieve_controlled_mechanism(self, i_controlled_resource: AnyObject) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrieveControlledMechanism(AnyObject iControlledResource) As
@@ -360,7 +350,6 @@ class RscMotionController(AnyObject):
     def retrieve_dof_count(self, i_controlled_resource: AnyObject) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func RetrieveDOFCount(AnyObject iControlledResource) As long
@@ -389,4 +378,4 @@ class RscMotionController(AnyObject):
         return self.com_object.RetrieveDOFCount(i_controlled_resource.com_object)
 
     def __repr__(self):
-        return f'RscMotionController(name="{ self.name }")'
+        return f'RscMotionController(name="{self.name}")'

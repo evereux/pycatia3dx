@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 class StrOpeningsOnProfile(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class StrOpeningsOnProfile(Collection):
     def add(self) -> StrOpeningOnProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add() As StrOpeningOnProfile
@@ -72,7 +70,6 @@ class StrOpeningsOnProfile(Collection):
     def item(self, i_index: CATVariant) -> StrOpeningOnProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As StrOpeningOnProfile
@@ -101,7 +98,6 @@ class StrOpeningsOnProfile(Collection):
     def remove(self, i_opening_on_profile: StrOpeningOnProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(StrOpeningOnProfile iOpeningOnProfile)

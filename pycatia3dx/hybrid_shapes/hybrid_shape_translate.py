@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeTranslate(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -59,7 +57,6 @@ class HybridShapeTranslate(HybridShape):
     def coord_x_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CoordXValue() As double
@@ -82,7 +79,6 @@ class HybridShapeTranslate(HybridShape):
     def coord_y_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CoordYValue() As double
@@ -105,7 +101,6 @@ class HybridShapeTranslate(HybridShape):
     def coord_z_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CoordZValue() As double
@@ -128,7 +123,6 @@ class HybridShapeTranslate(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -158,7 +152,6 @@ class HybridShapeTranslate(HybridShape):
     def distance(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Distance() As Length (Read Only)
@@ -173,7 +166,6 @@ class HybridShapeTranslate(HybridShape):
     def distance_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DistanceValue() As double
@@ -203,7 +195,6 @@ class HybridShapeTranslate(HybridShape):
     def elem_to_translate(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToTranslate() As Reference
@@ -233,7 +224,6 @@ class HybridShapeTranslate(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstPoint() As Reference
@@ -256,7 +246,6 @@ class HybridShapeTranslate(HybridShape):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RefAxisSystem() As Reference
@@ -291,7 +280,6 @@ class HybridShapeTranslate(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondPoint() As Reference
@@ -314,7 +302,6 @@ class HybridShapeTranslate(HybridShape):
     def vector_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VectorType() As long
@@ -342,7 +329,6 @@ class HybridShapeTranslate(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As boolean
@@ -375,7 +361,6 @@ class HybridShapeTranslate(HybridShape):
     def get_creation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCreationMode() As long
@@ -403,7 +388,6 @@ class HybridShapeTranslate(HybridShape):
     def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetCreationMode(boolean iCreation)
@@ -426,4 +410,4 @@ class HybridShapeTranslate(HybridShape):
         return self.com_object.SetCreationMode(i_creation)
 
     def __repr__(self):
-        return f'HybridShapeTranslate(name="{ self.name }")'
+        return f'HybridShapeTranslate(name="{self.name}")'

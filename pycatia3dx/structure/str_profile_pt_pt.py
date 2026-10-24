@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfilePtPt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrProfilePtPt(AnyObject):
     def end_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property EndPoint() As Reference
@@ -71,7 +68,6 @@ class StrProfilePtPt(AnyObject):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartPoint() As Reference
@@ -101,4 +97,4 @@ class StrProfilePtPt(AnyObject):
         self.com_object.StartPoint = value
 
     def __repr__(self):
-        return f'StrProfilePtPt(name="{ self.name }")'
+        return f'StrProfilePtPt(name="{self.name}")'

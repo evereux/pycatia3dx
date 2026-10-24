@@ -16,10 +16,8 @@ from pycatia3dx.tps.envelop_condition import EnvelopCondition
 
 
 class Dimension3D(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class Dimension3D(AnyObject):
     def controled_radius(self) -> ControlledRadius:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ControledRadius() As ControledRadius
@@ -59,7 +56,6 @@ class Dimension3D(AnyObject):
     def dimension_limit(self) -> DimensionLimit:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DimensionLimit() As DimensionLimit
@@ -77,7 +73,6 @@ class Dimension3D(AnyObject):
     def dimension_pattern(self) -> DimensionPattern:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DimensionPattern() As DimensionPattern
@@ -95,7 +90,6 @@ class Dimension3D(AnyObject):
     def envelop_condition(self) -> EnvelopCondition:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func EnvelopCondition() As EnvelopCondition
@@ -113,7 +107,6 @@ class Dimension3D(AnyObject):
     def get2d_annot(self) -> DrawingDimension:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Get2dAnnot() As DrawingDimension
@@ -131,7 +124,6 @@ class Dimension3D(AnyObject):
     def has_a_controlled_radius(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAControledRadius() As boolean
@@ -152,7 +144,6 @@ class Dimension3D(AnyObject):
     def has_an_envelop_condition(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAnEnvelopCondition() As boolean
@@ -173,7 +164,6 @@ class Dimension3D(AnyObject):
     def has_dimension_limit(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasDimensionLimit() As boolean
@@ -193,7 +183,6 @@ class Dimension3D(AnyObject):
     def is_a_continuous_feature_applied(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsAContinuousFeatureApplied() As boolean
@@ -216,7 +205,6 @@ class Dimension3D(AnyObject):
     def is_a_dimension_pattern(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsADimensionPattern() As boolean
@@ -237,7 +225,6 @@ class Dimension3D(AnyObject):
     def move_value(self, x: float, y: float, sub_part: int, dim_angle_behavior: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MoveValue(double X,double Y,long SubPart,long
@@ -286,4 +273,4 @@ class Dimension3D(AnyObject):
         return self.com_object.MoveValue(x, y, sub_part, dim_angle_behavior)
 
     def __repr__(self):
-        return f'Dimension3D(name="{ self.name }")'
+        return f'Dimension3D(name="{self.name}")'

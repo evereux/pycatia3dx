@@ -12,10 +12,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscFor(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class RscFor(RscInstruction):
     def for_index(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ForIndex() As CATBSTR
@@ -97,7 +94,6 @@ class RscFor(RscInstruction):
     def from_(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property From() As CATBSTR
@@ -151,7 +147,6 @@ class RscFor(RscInstruction):
     def to(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property To() As CATBSTR
@@ -205,7 +200,6 @@ class RscFor(RscInstruction):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELRscForType
@@ -266,7 +260,6 @@ class RscFor(RscInstruction):
     def get_index(self) -> RscDataEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetIndex() As RscDataEntity
@@ -301,4 +294,4 @@ class RscFor(RscInstruction):
         return RscDataEntity(self.com_object.GetIndex())
 
     def __repr__(self):
-        return f'RscFor(name="{ self.name }")'
+        return f'RscFor(name="{self.name}")'

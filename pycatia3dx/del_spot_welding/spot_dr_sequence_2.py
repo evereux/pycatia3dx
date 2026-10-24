@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrSequence2(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +34,6 @@ class SpotDrSequence2(AnyObject):
     def get_auxiliary_axis_values(self, i_pos_index: int, i_auxiliary_dev_mca: AnyObject) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAuxiliaryAxisValues(short iPosIndex,AnyObject iAuxiliaryDevMCA) As
@@ -65,7 +62,6 @@ class SpotDrSequence2(AnyObject):
     def get_config(self, i_pos_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetConfig(short iPosIndex) As short
@@ -89,7 +85,6 @@ class SpotDrSequence2(AnyObject):
     def get_elbow_angle(self, i_pos_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElbowAngle(short iPosIndex) As double
@@ -113,7 +108,6 @@ class SpotDrSequence2(AnyObject):
     def get_interpolation_mode(self, i_pos_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterpolationMode(short iPosIndex) As short
@@ -143,7 +137,6 @@ class SpotDrSequence2(AnyObject):
     def get_motion_type(self, i_pos_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionType(short iPosIndex) As short
@@ -171,7 +164,6 @@ class SpotDrSequence2(AnyObject):
     def get_tcp_orientation_mode(self, i_pos_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTCPOrientationMode(short iPosIndex) As short
@@ -197,7 +189,6 @@ class SpotDrSequence2(AnyObject):
     def get_turn_numbers(self, i_pos_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTurnNumbers(short iPosIndex) As CATSafeArrayVariant
@@ -221,7 +212,6 @@ class SpotDrSequence2(AnyObject):
     def get_turn_signs(self, i_pos_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTurnSigns(short iPosIndex) As CATSafeArrayVariant
@@ -245,7 +235,6 @@ class SpotDrSequence2(AnyObject):
     def get_user_profile_list(self, i_pos_index: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUserProfileList(short iPosIndex) As
@@ -270,7 +259,6 @@ class SpotDrSequence2(AnyObject):
     def set_action_prefix_name(self, i_prefix_name_bstr: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetActionPrefixName(CATBSTR iPrefixNameBSTR)
@@ -290,10 +278,10 @@ class SpotDrSequence2(AnyObject):
         """
         return self.com_object.SetActionPrefixName(i_prefix_name_bstr)
 
-    def set_auxiliary_axis_values(self, i_pos_index: int, i_auxiliary_dev_mca: AnyObject, i_auxiliary_axis_values: tuple) -> None:
+    def set_auxiliary_axis_values(self, i_pos_index: int, i_auxiliary_dev_mca: AnyObject,
+                                  i_auxiliary_axis_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAuxiliaryAxisValues(short iPosIndex,AnyObject
@@ -318,12 +306,12 @@ class SpotDrSequence2(AnyObject):
         :param tuple i_auxiliary_axis_values:
         :return: None
         """
-        return self.com_object.SetAuxiliaryAxisValues(i_pos_index, i_auxiliary_dev_mca.com_object, i_auxiliary_axis_values)
+        return self.com_object.SetAuxiliaryAxisValues(i_pos_index, i_auxiliary_dev_mca.com_object,
+                                                      i_auxiliary_axis_values)
 
     def set_config(self, i_pos_index: int, i_config: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetConfig(short iPosIndex,short iConfig)
@@ -348,7 +336,6 @@ class SpotDrSequence2(AnyObject):
     def set_elbow_angle(self, i_pos_index: int, i_elbow_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetElbowAngle(short iPosIndex,double iElbowAngle)
@@ -373,7 +360,6 @@ class SpotDrSequence2(AnyObject):
     def set_interpolation_mode(self, i_pos_index: int, i_interpolation_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInterpolationMode(short iPosIndex,short
@@ -405,7 +391,6 @@ class SpotDrSequence2(AnyObject):
     def set_motion_type(self, i_pos_index: int, i_motion_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionType(short iPosIndex,short iMotionType)
@@ -434,7 +419,6 @@ class SpotDrSequence2(AnyObject):
     def set_tcp_orientation_mode(self, i_pos_index: int, i_orientation_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTCPOrientationMode(short iPosIndex,short
@@ -462,7 +446,6 @@ class SpotDrSequence2(AnyObject):
     def set_turn_numbers(self, i_pos_index: int, i_turn_numbers: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTurnNumbers(short iPosIndex,CATSafeArrayVariant
@@ -488,7 +471,6 @@ class SpotDrSequence2(AnyObject):
     def set_turn_signs(self, i_pos_index: int, i_turn_signs: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTurnSigns(short iPosIndex,CATSafeArrayVariant
@@ -514,7 +496,6 @@ class SpotDrSequence2(AnyObject):
     def set_user_profile_list(self, i_pos_index: int, i_user_profile_list: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUserProfileList(short iPosIndex,CATSafeArrayVariant
@@ -538,4 +519,4 @@ class SpotDrSequence2(AnyObject):
         return self.com_object.SetUserProfileList(i_pos_index, i_user_profile_list)
 
     def __repr__(self):
-        return f'SpotDrSequence2(name="{ self.name }")'
+        return f'SpotDrSequence2(name="{self.name}")'

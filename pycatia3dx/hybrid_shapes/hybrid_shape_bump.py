@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeBump(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -42,7 +40,6 @@ class HybridShapeBump(HybridShape):
     def body_to_bump(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BodyToBump() As Reference
@@ -65,7 +62,6 @@ class HybridShapeBump(HybridShape):
     def center_tension(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CenterTension() As RealParam
@@ -88,7 +84,6 @@ class HybridShapeBump(HybridShape):
     def continuity_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ContinuityType() As long
@@ -116,7 +111,6 @@ class HybridShapeBump(HybridShape):
     def deformation_center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DeformationCenter() As Reference
@@ -139,7 +133,6 @@ class HybridShapeBump(HybridShape):
     def deformation_dir(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DeformationDir() As Reference
@@ -162,7 +155,6 @@ class HybridShapeBump(HybridShape):
     def deformation_dist(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DeformationDist() As Length
@@ -189,7 +181,6 @@ class HybridShapeBump(HybridShape):
     def deformation_dist_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DeformationDistValue() As double
@@ -214,7 +205,6 @@ class HybridShapeBump(HybridShape):
     def limit_curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property LimitCurve() As Reference
@@ -237,7 +227,6 @@ class HybridShapeBump(HybridShape):
     def projection_dir(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ProjectionDir() As Reference
@@ -257,4 +246,4 @@ class HybridShapeBump(HybridShape):
         self.com_object.ProjectionDir = value
 
     def __repr__(self):
-        return f'HybridShapeBump(name="{ self.name }")'
+        return f'HybridShapeBump(name="{self.name}")'

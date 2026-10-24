@@ -20,7 +20,6 @@ from pycatia3dx.structure.str_opening_standard import StrOpeningStandard
 class StrOpening(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +49,6 @@ class StrOpening(AnyObject):
     def opening_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OpeningType() As CATStrOpeningMode
@@ -82,7 +80,6 @@ class StrOpening(AnyObject):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -108,7 +105,6 @@ class StrOpening(AnyObject):
     def str_opening_3d_object(self) -> StrOpening3DObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpening3DObject() As StrOpening3DObject (Read
@@ -133,7 +129,6 @@ class StrOpening(AnyObject):
     def str_opening_extrusion_mngt(self) -> StrOpeningExtrusionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningExtrusionMngt() As StrOpeningExtrusionMngt (Read
@@ -158,7 +153,6 @@ class StrOpening(AnyObject):
     def str_opening_limit_dimensions_mngt(self) -> StrOpeningLimitDimensionsMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningLimitDimensionsMngt() As StrOpeningLimitDimensionsMngt (Read
@@ -183,7 +177,6 @@ class StrOpening(AnyObject):
     def str_opening_output_profile(self) -> StrOpeningOutputProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningOutputProfile() As StrOpeningOutputProfile (Read
@@ -208,7 +201,6 @@ class StrOpening(AnyObject):
     def str_opening_standard(self) -> StrOpeningStandard:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningStandard() As StrOpeningStandard (Read

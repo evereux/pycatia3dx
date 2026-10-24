@@ -15,7 +15,6 @@ from pycatia3dx.structure.str_opening import StrOpening
 class StrOpeningOnProfile(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +43,6 @@ class StrOpeningOnProfile(AnyObject):
     def str_opening(self) -> StrOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpening() As StrOpening (Read Only)
@@ -73,7 +71,6 @@ class StrOpeningOnProfile(AnyObject):
     def inst_and_spac_for_spacing_offset_std_oop(self, i_instances: int, i_spacing: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InstAndSpacForSpacingOffsetStdOOP(long iInstances,CATBSTR

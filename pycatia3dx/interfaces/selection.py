@@ -18,7 +18,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Selection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -113,7 +112,6 @@ class Selection(AnyObject):
     def count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Count() As long (Read Only)
@@ -129,7 +127,6 @@ class Selection(AnyObject):
     def count2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Count2() As long (Read Only)
@@ -146,7 +143,6 @@ class Selection(AnyObject):
     def vis_properties(self) -> VisPropertySet:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property VisProperties() As VisPropertySet (Read Only)
@@ -176,7 +172,6 @@ class Selection(AnyObject):
     def add(self, i_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Add(AnyObject iObject)
@@ -222,7 +217,6 @@ class Selection(AnyObject):
     def clear(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Clear()
@@ -241,7 +235,6 @@ class Selection(AnyObject):
     def copy(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Copy()
@@ -264,7 +257,6 @@ class Selection(AnyObject):
     def cut(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Cut()
@@ -287,7 +279,6 @@ class Selection(AnyObject):
     def delete(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Delete()
@@ -309,7 +300,6 @@ class Selection(AnyObject):
     def filter_correspondence(self, i_filter_type: tuple) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func FilterCorrespondence(CATSafeArrayVariant iFilterType) As
@@ -550,7 +540,6 @@ class Selection(AnyObject):
     def find_object(self, i_object_type: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func FindObject(CATBSTR iObjectType) As AnyObject
@@ -588,7 +577,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func IndicateOrSelectElement2D(CATBSTR iMessage,CATSafeArrayVariant
@@ -807,7 +795,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func IndicateOrSelectElement3D(AnyObject iPlanarGeometricObject,CATBSTR
@@ -1017,7 +1004,6 @@ class Selection(AnyObject):
     def item(self, i_index: int) -> SelectedElement:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(long iIndex) As SelectedElement
@@ -1045,7 +1031,6 @@ class Selection(AnyObject):
     def item2(self, i_index: int) -> SelectedElement:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item2(long iIndex) As SelectedElement
@@ -1061,7 +1046,6 @@ class Selection(AnyObject):
     def paste(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Paste()
@@ -1082,7 +1066,6 @@ class Selection(AnyObject):
     def paste_from(self, i_objects: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PasteFrom(CATSafeArrayVariant iObjects)
@@ -1122,7 +1105,6 @@ class Selection(AnyObject):
     def paste_special(self, i_format: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PasteSpecial(CATBSTR iFormat)
@@ -1228,7 +1210,6 @@ class Selection(AnyObject):
     def remove(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Remove(long iIndex)
@@ -1255,7 +1236,6 @@ class Selection(AnyObject):
     def remove2(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Remove2(long iIndex)
@@ -1271,7 +1251,6 @@ class Selection(AnyObject):
     def search(self, i_string_bstr: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub Search(CATBSTR iStringBSTR)
@@ -1298,7 +1277,6 @@ class Selection(AnyObject):
     def select_element(self, i_filter_type: tuple, i_message: str, i_may_skip_interactive_selection: bool) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SelectElement(CATSafeArrayVariant iFilterType,CATBSTR iMessage,boolean
@@ -1758,7 +1736,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SelectElement2(CATSafeArrayVariant iFilterType,CATBSTR iMessage,boolean
@@ -1804,7 +1781,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SelectElement3(CATSafeArrayVariant iFilterType,CATBSTR iMessage,boolean
@@ -1855,7 +1831,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SelectElementOtherEditor(CATSafeArrayVariant iFilterType,CATBSTR
@@ -2029,7 +2004,6 @@ class Selection(AnyObject):
     ) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func SelectMultipleElements(CATSafeArrayVariant iFilterType,CATBSTR

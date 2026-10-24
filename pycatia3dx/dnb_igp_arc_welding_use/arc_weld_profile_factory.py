@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class ArcWeldProfileFactory(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -47,7 +46,6 @@ class ArcWeldProfileFactory(Collection):
     def create_profile(self, i_name: str) -> ArcWeldProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateProfile(CATBSTR iName) As ArcWeldProfile
@@ -76,7 +74,6 @@ class ArcWeldProfileFactory(Collection):
     def item(self, i_index: CATVariant) -> ArcWeldProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As ArcWeldProfile
@@ -105,7 +102,6 @@ class ArcWeldProfileFactory(Collection):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAll()
@@ -124,7 +120,6 @@ class ArcWeldProfileFactory(Collection):
     def remove_profile(self, o_profile: ArcWeldProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveProfile(ArcWeldProfile oProfile)

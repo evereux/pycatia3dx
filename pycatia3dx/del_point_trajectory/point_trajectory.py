@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class PointTrajectory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class PointTrajectory(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -66,7 +63,6 @@ class PointTrajectory(AnyObject):
     def add_point(self, i_fastener_occurrence: AnyObject, i_index: int, o_tag: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPoint(AnyObject iFastenerOccurrence,short iIndex,AnyObject
@@ -106,7 +102,6 @@ class PointTrajectory(AnyObject):
     def remove_point(self, i_tag: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemovePoint(AnyObject iTag)
@@ -132,4 +127,4 @@ class PointTrajectory(AnyObject):
         return self.com_object.RemovePoint(i_tag.com_object)
 
     def __repr__(self):
-        return f'PointTrajectory(name="{ self.name }")'
+        return f'PointTrajectory(name="{self.name}")'

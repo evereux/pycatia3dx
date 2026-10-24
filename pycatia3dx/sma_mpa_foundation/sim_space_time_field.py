@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_foundation.sim_step import SimStep
 
 
 class SimSpaceTimeField(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class SimSpaceTimeField(AnyObject):
     def absolute_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AbsoluteExteriorTolerance() As double
@@ -69,7 +66,6 @@ class SimSpaceTimeField(AnyObject):
     def driving_elset(self) -> SimPortRegion:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DrivingElset() As SimPortRegion
@@ -92,7 +88,6 @@ class SimSpaceTimeField(AnyObject):
     def increment(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Increment() As long
@@ -116,7 +111,6 @@ class SimSpaceTimeField(AnyObject):
     def interpolate_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InterpolateFlag() As boolean
@@ -147,7 +141,6 @@ class SimSpaceTimeField(AnyObject):
     def midside_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MidsideFlag() As boolean
@@ -177,7 +170,6 @@ class SimSpaceTimeField(AnyObject):
     def relative_exterior_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RelativeExteriorTolerance() As double
@@ -203,7 +195,6 @@ class SimSpaceTimeField(AnyObject):
     def scenario_analysis_case(self) -> SimAnalysisCase:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioAnalysisCase() As SimAnalysisCase
@@ -227,7 +218,6 @@ class SimSpaceTimeField(AnyObject):
     def scenario_step(self) -> SimStep:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ScenarioStep() As SimStep
@@ -251,7 +241,6 @@ class SimSpaceTimeField(AnyObject):
     def use_driving_elset_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseDrivingElsetFlag() As boolean
@@ -273,4 +262,4 @@ class SimSpaceTimeField(AnyObject):
         self.com_object.UseDrivingElsetFlag = value
 
     def __repr__(self):
-        return f'SimSpaceTimeField(name="{ self.name }")'
+        return f'SimSpaceTimeField(name="{self.name}")'

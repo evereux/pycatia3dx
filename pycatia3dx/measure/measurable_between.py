@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class MeasurableBetween(MeasurableInContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class MeasurableBetween(MeasurableInContext):
                  o_z_other_point: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AngleTo(AnyObject iOtherObject,CATSafeArrayVariant iOtherMathAxis,double
@@ -107,7 +105,6 @@ class MeasurableBetween(MeasurableInContext):
                         o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinTo(AnyObject iOtherObject,CATSafeArrayVariant
@@ -174,7 +171,6 @@ class MeasurableBetween(MeasurableInContext):
                            o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinToAS(AnyObject iOtherObject,AxisSystem iOtherMathAxis,double
@@ -236,7 +232,6 @@ class MeasurableBetween(MeasurableInContext):
                               o_x_other_point: float, o_y_other_point: float, o_z_other_point: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DistanceMinToPoint(double iXPoint,double iYPoint,double iZPoint,double
@@ -281,7 +276,6 @@ class MeasurableBetween(MeasurableInContext):
     def set_computation_mode(self, i_computation_mode: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetComputationMode(CATMeasurableModeOfCalc

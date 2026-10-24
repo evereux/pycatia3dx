@@ -19,7 +19,6 @@ from pycatia3dx.structure.sfd_sketch_based_plate import SfdSketchBasedPlate
 class SfdFactory(Factory):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class SfdFactory(Factory):
     def add_member(self, i_destination: Reference) -> SfdMember:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddMember(Reference iDestination) As SfdMember
@@ -80,7 +78,6 @@ class SfdFactory(Factory):
     def add_panel(self, i_destination: Reference, i_concave_mode: bool) -> SfdPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddPanel(Reference iDestination,boolean iConcaveMode) As
@@ -122,7 +119,6 @@ class SfdFactory(Factory):
     def add_sketch_based_panel(self, i_destination: Reference, i_position_mode: int) -> SfdSketchBasedPanel:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddSketchBasedPanel(Reference iDestination,short iPositionMode) As
@@ -170,7 +166,6 @@ class SfdFactory(Factory):
     def add_sketch_based_plate(self, i_destination: Reference, i_position_mode: int) -> SfdSketchBasedPlate:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func AddSketchBasedPlate(Reference iDestination,short iPositionMode) As
@@ -216,7 +211,6 @@ class SfdFactory(Factory):
     def init_resources(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitResources()

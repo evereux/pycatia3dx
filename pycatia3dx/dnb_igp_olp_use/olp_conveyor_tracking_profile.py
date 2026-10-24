@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_variable import OLPVariable
 
 
 class OLPConveyorTrackingProfile(OLPProfile):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +64,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def conveyor(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Conveyor() As OlpController
@@ -99,7 +96,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def inbound_offset_constant(self) -> OLPVariable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property InboundOffsetConstant() As OlpVariable (Read Only)
@@ -114,7 +110,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode() As DELOlpConveyorTrackingMode
@@ -140,7 +135,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def rail_device(self) -> OLPController:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RailDevice() As OlpController
@@ -164,7 +158,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def rail_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RailDirection() As short (Read Only)
@@ -182,7 +175,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def get_inbound_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInboundOffset() As double
@@ -202,7 +194,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def get_outbound_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOutboundOffset() As double
@@ -222,7 +213,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def get_rail_joint_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRailJointNumber() As short
@@ -244,7 +234,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def set_inbound_offset(self, i_offset: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInboundOffset(double iOffset,boolean iMatch)
@@ -270,7 +259,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def set_outbound_offset(self, i_offset: float, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOutboundOffset(double iOffset,boolean iMatch)
@@ -296,7 +284,6 @@ class OLPConveyorTrackingProfile(OLPProfile):
     def set_rail_joint_number(self, i_joint_number: int, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRailJointNumber(short iJointNumber,boolean iMatch)
@@ -322,4 +309,4 @@ class OLPConveyorTrackingProfile(OLPProfile):
         return self.com_object.SetRailJointNumber(i_joint_number, i_match)
 
     def __repr__(self):
-        return f'OLPConveyorTrackingProfile(name="{ self.name }")'
+        return f'OLPConveyorTrackingProfile(name="{self.name}")'

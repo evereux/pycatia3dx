@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimGlobalElementTypeAssignment(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -73,7 +71,6 @@ class SimGlobalElementTypeAssignment(AnyObject):
     def family(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Family() As CATBSTR
@@ -119,7 +116,6 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
     def topologies(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Topologies() As CATSafeArrayVariant (Read Only)
@@ -148,7 +144,6 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
     def candidate_formulations(self, i_topology: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CandidateFormulations(CATBSTR iTopology) As
@@ -163,7 +158,6 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
     def default_formulation(self, i_topology: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func DefaultFormulation(CATBSTR iTopology) As CATBSTR
@@ -177,7 +171,6 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
     def get_formulation(self, i_topology: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFormulation(CATBSTR iTopology) As CATBSTR
@@ -191,7 +184,6 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
     def set_formulation(self, i_topology: str, i_formulation: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFormulation(CATBSTR iTopology,CATBSTR iFormulation)
@@ -204,4 +196,4 @@ Standard-3D-Thermal/Displacement/Electric/Electrochemical/Pore                | 
         return self.com_object.SetFormulation(i_topology, i_formulation)
 
     def __repr__(self):
-        return f'SimGlobalElementTypeAssignment(name="{ self.name }")'
+        return f'SimGlobalElementTypeAssignment(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class DrawingTexts(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingTexts(Collection):
     def add(self, i_drawing_text: str, i_position_x: float, i_position_y: float) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iDrawingText,double iPositionX,double iPositionY) As
@@ -83,7 +81,6 @@ class DrawingTexts(Collection):
     def item(self, i_index: CATVariant) -> DrawingText:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As DrawingText
@@ -121,7 +118,6 @@ class DrawingTexts(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

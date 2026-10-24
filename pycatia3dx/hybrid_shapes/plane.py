@@ -14,7 +14,6 @@ from pycatia3dx.mmr_automation_interfaces.hybrid_shape import HybridShape
 class Plane(HybridShape):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -45,7 +44,6 @@ class Plane(HybridShape):
     def get_first_axis(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
@@ -89,7 +87,6 @@ class Plane(HybridShape):
     def get_origin(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -132,7 +129,6 @@ class Plane(HybridShape):
     def get_position(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPosition(double oX,double oY,double oZ)
@@ -190,7 +186,6 @@ class Plane(HybridShape):
     def get_second_axis(self) -> tuple | None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
@@ -231,11 +226,9 @@ class Plane(HybridShape):
             return result
         return None
 
-
     def is_a_ref_plane(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func IsARefPlane() As long
@@ -252,7 +245,6 @@ class Plane(HybridShape):
     def put_first_axis(self, i_first_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
@@ -297,7 +289,6 @@ class Plane(HybridShape):
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub PutOrigin(CATSafeArrayVariant iOrigin)
@@ -341,7 +332,6 @@ class Plane(HybridShape):
     def put_second_axis(self, i_second_axis: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
@@ -386,7 +376,6 @@ class Plane(HybridShape):
     def remove_position(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemovePosition()
@@ -400,7 +389,6 @@ class Plane(HybridShape):
     def set_position(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPosition(double iX,double iY,double iZ)

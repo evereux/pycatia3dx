@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeLineBiTangent(Line):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -43,7 +41,6 @@ class HybridShapeLineBiTangent(Line):
     def curve1(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve1() As Reference
@@ -76,7 +73,6 @@ class HybridShapeLineBiTangent(Line):
     def element2(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Element2() As Reference
@@ -109,7 +105,6 @@ class HybridShapeLineBiTangent(Line):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -139,7 +134,6 @@ class HybridShapeLineBiTangent(Line):
     def get_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetChoiceNo(long val1,long val2,long val3,long val4,long
@@ -214,7 +208,6 @@ class HybridShapeLineBiTangent(Line):
     def get_length_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetLengthType() As long
@@ -232,7 +225,6 @@ class HybridShapeLineBiTangent(Line):
     def set_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetChoiceNo(long val1,long val2,long val3,long val4,long
@@ -312,7 +304,6 @@ class HybridShapeLineBiTangent(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetLengthType(long iType)
@@ -329,4 +320,4 @@ class HybridShapeLineBiTangent(Line):
         return self.hybrid_shape_line_bi_tangent.SetLengthType(i_type)
 
     def __repr__(self):
-        return f'HybridShapeLineBiTangent(name="{ self.name }")'
+        return f'HybridShapeLineBiTangent(name="{self.name}")'

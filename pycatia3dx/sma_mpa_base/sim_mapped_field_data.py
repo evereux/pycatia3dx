@@ -15,10 +15,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimMappedFieldData(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class SimMappedFieldData(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -56,7 +53,6 @@ class SimMappedFieldData(AnyObject):
     def boundary_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoundaryTolerance() As double
@@ -81,7 +77,6 @@ class SimMappedFieldData(AnyObject):
     def data_source_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DataSourceType() As SimMappedFieldDataDataSourceType
@@ -104,7 +99,6 @@ class SimMappedFieldData(AnyObject):
     def negative_normal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NegativeNormalDistance() As double
@@ -129,7 +123,6 @@ class SimMappedFieldData(AnyObject):
     def neighborhood_tolerance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NeighborhoodTolerance() As double
@@ -154,7 +147,6 @@ class SimMappedFieldData(AnyObject):
     def positive_normal_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PositiveNormalDistance() As double
@@ -179,7 +171,6 @@ class SimMappedFieldData(AnyObject):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -194,7 +185,6 @@ class SimMappedFieldData(AnyObject):
     def tolerance_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToleranceType() As SimMappedFieldDataToleranceType
@@ -217,7 +207,6 @@ class SimMappedFieldData(AnyObject):
     def unmapped_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UnmappedValue() As double
@@ -240,7 +229,6 @@ class SimMappedFieldData(AnyObject):
     def vpm_document(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VPMDocument() As CATBaseDispatch
@@ -262,7 +250,6 @@ class SimMappedFieldData(AnyObject):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimMappedFieldDataTableColumn iTableColumnName) As
@@ -284,4 +271,4 @@ class SimMappedFieldData(AnyObject):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimMappedFieldData(name="{ self.name }")'
+        return f'SimMappedFieldData(name="{self.name}")'

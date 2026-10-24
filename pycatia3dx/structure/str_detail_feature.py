@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class StrDetailFeature(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class StrDetailFeature(AnyObject):
     def feature_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureName() As CATBSTR
@@ -74,7 +72,6 @@ class StrDetailFeature(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR
@@ -110,7 +107,6 @@ class StrDetailFeature(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCoordinates(CATSafeArrayVariant oCoordinate)
@@ -153,7 +149,6 @@ class StrDetailFeature(AnyObject):
     def get_parameters(self) -> StrParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameters() As StrParameters
@@ -176,7 +171,6 @@ class StrDetailFeature(AnyObject):
     def init_by_name(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub InitByName(CATBSTR iName)
@@ -197,7 +191,6 @@ class StrDetailFeature(AnyObject):
     def set_parameters(self, i_paramters: Parameters, i_param_role_list: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameters(Parameters iParamters,CATSafeArrayVariant
@@ -256,7 +249,6 @@ class StrDetailFeature(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

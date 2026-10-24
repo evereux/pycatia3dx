@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class Editor(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -48,7 +47,6 @@ class Editor(AnyObject):
     def active_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ActiveObject() As AnyObject (Read Only)
@@ -75,7 +73,6 @@ class Editor(AnyObject):
     def selection(self) -> 'Selection':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Selection() As Selection (Read Only)
@@ -100,7 +97,6 @@ class Editor(AnyObject):
     def get_service(self, i_service: str) -> EditorService:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetService(CATBSTR iService) As Service

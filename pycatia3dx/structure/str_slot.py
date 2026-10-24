@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_detail_feature import StrDetailFeature
 class StrSlot(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class StrSlot(AnyObject):
     def collars(self) -> StrCollars:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Collars() As StrCollars (Read Only)
@@ -64,7 +62,6 @@ class StrSlot(AnyObject):
     def str_detail_feature(self) -> StrDetailFeature:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrDetailFeature() As StrDetailFeature (Read Only)
@@ -78,7 +75,6 @@ class StrSlot(AnyObject):
     def get_penetrating_profile(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPenetratingProfile() As AnyObject
@@ -99,7 +95,6 @@ class StrSlot(AnyObject):
     def set_penetrating_profile(self, i_profile: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPenetratingProfile(Reference iProfile)

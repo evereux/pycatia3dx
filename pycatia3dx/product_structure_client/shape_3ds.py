@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Shape3Ds(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class Shape3Ds(Collection):
     def item(self, i_index: CATVariant) -> Shape3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As Shape3D

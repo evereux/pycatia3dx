@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Measure(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +36,6 @@ class Measure(AnyObject):
     def minimum_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MinimumDistance() As double (Read Only)
@@ -62,4 +59,4 @@ class Measure(AnyObject):
         return self.com_object.MinimumDistance
 
     def __repr__(self):
-        return f'Measure(name="{ self.name }")'
+        return f'Measure(name="{self.name}")'

@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class OLPDrillRivetCycles(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class OLPDrillRivetCycles(Collection):
     def append(self, i_cycle: OLPDrillRivetCycle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Append(OlpDrillRivetCycle iCycle)
@@ -62,7 +60,6 @@ class OLPDrillRivetCycles(Collection):
     def create_cycle(self, i_match: bool) -> OLPDrillRivetCycle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateCycle(boolean iMatch) As OlpDrillRivetCycle
@@ -87,7 +84,6 @@ class OLPDrillRivetCycles(Collection):
     def insert(self, i_index: int, i_cycle: OLPDrillRivetCycle) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Insert(short iIndex,OlpDrillRivetCycle iCycle)
@@ -112,7 +108,6 @@ class OLPDrillRivetCycles(Collection):
     def item(self, i_index: CATVariant) -> OLPDrillRivetCycle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As OlpDrillRivetCycle

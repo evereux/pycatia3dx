@@ -17,7 +17,6 @@ from pycatia3dx.system.collection import Collection
 class MLPSimuLayer(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -87,7 +86,6 @@ class MLPSimuLayer(AnyObject):
     def glued_layers(self) -> Collection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GluedLayers() As Collection (Read Only)
@@ -107,7 +105,6 @@ class MLPSimuLayer(AnyObject):
     def has_material(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasMaterial() As boolean (Read Only)
@@ -127,7 +124,6 @@ class MLPSimuLayer(AnyObject):
     def is_elastic(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsElastic() As boolean (Read Only)
@@ -147,7 +143,6 @@ class MLPSimuLayer(AnyObject):
     def is_glue(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsGlue() As boolean (Read Only)
@@ -167,7 +162,6 @@ class MLPSimuLayer(AnyObject):
     def is_grid_or_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsGridOrProfile() As boolean (Read Only)
@@ -187,7 +181,6 @@ class MLPSimuLayer(AnyObject):
     def layer_axis_system(self) -> AxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LayerAxisSystem() As AxisSystem (Read Only)
@@ -207,7 +200,6 @@ class MLPSimuLayer(AnyObject):
     def layer_material(self) -> PLMEntity:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LayerMaterial() As PLMEntity (Read Only)
@@ -227,7 +219,6 @@ class MLPSimuLayer(AnyObject):
     def stretch_ratio(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StretchRatio() As double (Read Only)
@@ -248,7 +239,6 @@ class MLPSimuLayer(AnyObject):
     def thickness_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessValue() As double (Read Only)
@@ -268,7 +258,6 @@ class MLPSimuLayer(AnyObject):
     def type_of_glue(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TypeOfGlue() As CATBSTR (Read Only)
@@ -287,7 +276,6 @@ class MLPSimuLayer(AnyObject):
     def glued_layers_at_position(self, i_x: float, i_y: float, i_z: float) -> Collection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GluedLayersAtPosition(float iX,float iY,float iZ) As

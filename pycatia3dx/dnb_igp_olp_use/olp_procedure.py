@@ -24,7 +24,6 @@ if TYPE_CHECKING:
 class OLPProcedure(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -50,7 +49,6 @@ class OLPProcedure(AnyObject):
     def ast(self) -> OLPAstNode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AST() As OlpAstNode
@@ -75,7 +73,6 @@ class OLPProcedure(AnyObject):
     def header(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Header() As CATBSTR
@@ -99,7 +96,6 @@ class OLPProcedure(AnyObject):
     def instructions(self) -> 'OLPInstructions':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Instructions() As OlpInstructions (Read Only)
@@ -128,7 +124,6 @@ class OLPProcedure(AnyObject):
     def local_variables(self) -> OLPVariables:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LocalVariables() As OlpVariables (Read Only)
@@ -144,7 +139,6 @@ class OLPProcedure(AnyObject):
     def motion_groups(self) -> OLPMotionGroups:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MotionGroups() As OlpMotionGroups (Read Only)
@@ -159,7 +153,6 @@ class OLPProcedure(AnyObject):
     def nrl_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NRLName() As CATBSTR
@@ -185,7 +178,6 @@ class OLPProcedure(AnyObject):
     def profiles(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Profiles() As CATSafeArrayVariant (Read Only)
@@ -201,7 +193,6 @@ class OLPProcedure(AnyObject):
     def program_id(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProgramID() As CATBSTR
@@ -226,7 +217,6 @@ class OLPProcedure(AnyObject):
     def program_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProgramType() As CATBSTR
@@ -251,7 +241,6 @@ class OLPProcedure(AnyObject):
     def task_description(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TaskDescription() As CATBSTR
@@ -276,7 +265,6 @@ class OLPProcedure(AnyObject):
     def template_file_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TemplateFileName() As CATBSTR
@@ -300,7 +288,6 @@ class OLPProcedure(AnyObject):
     def add_profile(self, i_profile: RscApplicativeProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProfile(RscApplicativeProfile iProfile)
@@ -323,7 +310,6 @@ class OLPProcedure(AnyObject):
     def get_parameter(self, i_profile_type: str, i_parameter_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
@@ -349,7 +335,6 @@ class OLPProcedure(AnyObject):
     def get_parameter_names(self, i_profile_type: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetParameterNames(CATBSTR iProfileType) As
@@ -373,7 +358,6 @@ class OLPProcedure(AnyObject):
     def get_profile(self, i_profile_type: str) -> RscApplicativeProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfile(CATBSTR iProfileType) As RscApplicativeProfile
@@ -397,7 +381,6 @@ class OLPProcedure(AnyObject):
     def get_profile_name(self, i_profile_type: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileName(CATBSTR iProfileType) As CATBSTR
@@ -419,7 +402,6 @@ class OLPProcedure(AnyObject):
     def get_profile_olp(self, i_profile_type: str) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
@@ -441,7 +423,6 @@ class OLPProcedure(AnyObject):
     def get_valid_program_types(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValidProgramTypes() As CATSafeArrayVariant
@@ -455,7 +436,6 @@ class OLPProcedure(AnyObject):
     def is_profile_set(self, i_profile_type: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsProfileSet(CATBSTR iProfileType) As boolean
@@ -477,7 +457,6 @@ class OLPProcedure(AnyObject):
     def set_parameter(self, i_profile_type: str, i_parameter_name: str, i_value: CATVariant, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
@@ -506,7 +485,6 @@ class OLPProcedure(AnyObject):
     def set_profile_name(self, i_profile_type: str, i_profile_name: str, i_match: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
@@ -532,7 +510,6 @@ class OLPProcedure(AnyObject):
     def set_profile_olp(self, i_profile: OLPProfile) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetProfileOlp(OlpProfile iProfile)

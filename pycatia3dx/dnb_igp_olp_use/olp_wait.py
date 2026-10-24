@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPWait(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -48,7 +46,6 @@ class OLPWait(OLPInstruction):
     def condition(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition() As OlpAstBranch
@@ -78,7 +75,6 @@ class OLPWait(OLPInstruction):
     def conveyor_tracking_profile(self) -> OLPConveyorTrackingProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConveyorTrackingProfile() As
@@ -103,7 +99,6 @@ class OLPWait(OLPInstruction):
     def is_conveyor_wait(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsConveyorWait() As boolean (Read Only)
@@ -119,7 +114,6 @@ class OLPWait(OLPInstruction):
     def is_pure_delay(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsPureDelay() As boolean (Read Only)
@@ -134,7 +128,6 @@ class OLPWait(OLPInstruction):
     def is_simple_conveyor_wait(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsSimpleConveyorWait() As boolean (Read Only)
@@ -150,7 +143,6 @@ class OLPWait(OLPInstruction):
     def time_out_express(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property TimeOutExpress() As OlpAstBranch
@@ -173,7 +165,6 @@ class OLPWait(OLPInstruction):
     def timeout(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Timeout() As double
@@ -197,7 +188,6 @@ class OLPWait(OLPInstruction):
     def use_timeout(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseTimeout() As boolean
@@ -221,7 +211,6 @@ class OLPWait(OLPInstruction):
     def make_pure_delay(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub MakePureDelay()
@@ -234,4 +223,4 @@ class OLPWait(OLPInstruction):
         return self.com_object.MakePureDelay()
 
     def __repr__(self):
-        return f'OLPWait(name="{ self.name }")'
+        return f'OLPWait(name="{self.name}")'

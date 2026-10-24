@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SpotDrManufacturingFastener(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def diameter(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Diameter(double iDiameter)
@@ -69,7 +67,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Length(double iLength)
@@ -100,7 +97,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def reference_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceName(CATBSTR iReferenceName)
@@ -131,7 +127,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def create_fastener_parameter(self, i_param_name: str, i_param_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateFastenerParameter(CATBSTR iParamName,CATVariant
@@ -146,7 +141,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_fastener_parameter(self, i_param_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetFastenerParameter(CATBSTR iParamName) As double
@@ -159,7 +153,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_position(self, o_xpos: float, o_ypos: float) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPosition(double oXpos,double oYpos) As double
@@ -187,7 +180,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def get_tangent(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTangent(double oXdir,double oYdir) As double
@@ -213,7 +205,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def remove_fastener_parameter(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveFastenerParameter(CATBSTR iName)
@@ -235,7 +226,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_fastener_parameter(self, i_param_name: str, i_param_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFastenerParameter(CATBSTR iParamName,CATVariant
@@ -250,7 +240,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_position(self, i_xpos: float, i_ypos: float, i_zpos: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPosition(double iXpos,double iYpos,double iZpos)
@@ -279,7 +268,6 @@ class SpotDrManufacturingFastener(AnyObject):
     def set_tangent(self, i_xdir: float, i_ydir: float, i_zdir: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTangent(double iXdir,double iYdir,double iZdir)

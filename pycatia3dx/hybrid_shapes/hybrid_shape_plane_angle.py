@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePlaneAngle(Plane):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapePlaneAngle(Plane):
     def angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Angle() As Angle (Read Only)
@@ -69,7 +66,6 @@ class HybridShapePlaneAngle(Plane):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -96,7 +92,6 @@ class HybridShapePlaneAngle(Plane):
     def plane(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Plane() As Reference
@@ -120,7 +115,6 @@ class HybridShapePlaneAngle(Plane):
     def projection_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ProjectionMode() As boolean
@@ -146,7 +140,6 @@ class HybridShapePlaneAngle(Plane):
     def revol_axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property RevolAxis() As Reference
@@ -168,4 +161,4 @@ class HybridShapePlaneAngle(Plane):
         self.com_object.RevolAxis = value
 
     def __repr__(self):
-        return f'HybridShapePlaneAngle(name="{ self.name }")'
+        return f'HybridShapePlaneAngle(name="{self.name}")'

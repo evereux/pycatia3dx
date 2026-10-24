@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class KinDressup(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -205,7 +204,6 @@ class KinDressup(AnyObject):
     def mechanism_products(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Property MechanismProducts() As CATSafeArrayVariant (Read
@@ -245,7 +243,6 @@ class KinDressup(AnyObject):
     def attach_dressup_product(self, i_mechanism_product: VPMOccurrence, i_attached_product: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub AttachDressupProduct(VPMOccurrence iMechanismProduct,VPMOccurrence
@@ -293,7 +290,6 @@ class KinDressup(AnyObject):
     def detach_dressup_product(self, i_attached_product: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Sub DetachDressupProduct(VPMOccurrence iAttachedProduct)
@@ -331,7 +327,6 @@ class KinDressup(AnyObject):
     def get_dressup_products(self, i_mechanism_product: VPMOccurrence) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
                 | Func GetDressupProducts(VPMOccurrence iMechanismProduct) As

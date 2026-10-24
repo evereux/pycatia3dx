@@ -17,7 +17,6 @@ from pycatia3dx.structure.str_standard_pos_strategy_parameters import StrStandar
 class StrOpeningStandard(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class StrOpeningStandard(AnyObject):
     def direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As Reference
@@ -77,7 +75,6 @@ class StrOpeningStandard(AnyObject):
     def direction_for_opening_on_profile(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectionForOpeningOnProfile() As boolean
@@ -116,7 +113,6 @@ class StrOpeningStandard(AnyObject):
     def limit_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitMode() As long
@@ -149,7 +145,6 @@ class StrOpeningStandard(AnyObject):
     def standard_mode_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StandardModeType() As CATStrOpeningSTDMode
@@ -189,7 +184,6 @@ class StrOpeningStandard(AnyObject):
     def get_contour(self, o_contour_name: str, o_list_contour_params: StrStandardContourParameters) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetContour(CATBSTR oContourName,StrStandardContourParameters
@@ -234,7 +228,6 @@ class StrOpeningStandard(AnyObject):
                                  o_list_pos_params: StrStandardPosStrategyParameters) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPositioningStrategy(CATBSTR
@@ -297,7 +290,6 @@ class StrOpeningStandard(AnyObject):
                                      i_list_pos_params: StrStandardPosStrategyParameters) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetContourAndPosStrategy(CATBSTR iContourName,StrStandardContourParameters
@@ -371,7 +363,6 @@ class StrOpeningStandard(AnyObject):
                                                  i_list_pos_params: StrStandardPosStrategyParameters) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetContourAndPosStrategyForProfile(CATBSTR
@@ -427,7 +418,6 @@ class StrOpeningStandard(AnyObject):
                                             i_anchor_point_name: str, i_cke_parm_angle: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMidDistOffsetPosStratParms(Reference iRefProfile,Reference
@@ -480,7 +470,6 @@ class StrOpeningStandard(AnyObject):
                                           i_anchor_point_name: str, i_cke_parm_angle: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOffsetOffsetPosStratParms(Reference iRefProfile,Reference
@@ -534,7 +523,6 @@ class StrOpeningStandard(AnyObject):
                                            i_anchor_point_name: str, i_cke_parm_angle: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSpacingOffsetPosStratParms(Reference iRefProfile,boolean

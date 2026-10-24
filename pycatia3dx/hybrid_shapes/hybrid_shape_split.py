@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSplit(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -56,7 +54,6 @@ class HybridShapeSplit(HybridShape):
     def automatic_extrapolation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property AutomaticExtrapolationMode() As boolean
@@ -82,7 +79,6 @@ class HybridShapeSplit(HybridShape):
     def both_sides_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BothSidesMode() As boolean
@@ -108,7 +104,6 @@ class HybridShapeSplit(HybridShape):
     def cutting_elem(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property CuttingElem() As Reference
@@ -140,7 +135,6 @@ class HybridShapeSplit(HybridShape):
     def elem_to_cut(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ElemToCut() As Reference
@@ -170,7 +164,6 @@ class HybridShapeSplit(HybridShape):
     def extrapolation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtrapolationType() As long
@@ -193,7 +186,6 @@ class HybridShapeSplit(HybridShape):
     def intersection_computation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property IntersectionComputation() As boolean
@@ -219,7 +211,6 @@ class HybridShapeSplit(HybridShape):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -282,7 +273,6 @@ class HybridShapeSplit(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Support() As Reference
@@ -314,7 +304,6 @@ class HybridShapeSplit(HybridShape):
     def volume_result(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property VolumeResult() As long
@@ -351,7 +340,6 @@ class HybridShapeSplit(HybridShape):
     def add_cutting_elem(self, i_elem: Reference, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddCuttingElem(Reference iElem,long iOrientation)
@@ -373,7 +361,6 @@ class HybridShapeSplit(HybridShape):
     def add_element_to_keep(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementToKeep(Reference iElement)
@@ -393,7 +380,6 @@ class HybridShapeSplit(HybridShape):
     def add_element_to_remove(self, i_element: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddElementToRemove(Reference iElement)
@@ -413,7 +399,6 @@ class HybridShapeSplit(HybridShape):
     def get_cutting_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCuttingElem(long iRank) As Reference
@@ -435,7 +420,6 @@ class HybridShapeSplit(HybridShape):
     def get_intersection(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetIntersection(long iRank) As Reference
@@ -456,7 +440,6 @@ class HybridShapeSplit(HybridShape):
     def get_kept_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetKeptElem(long iRank) As Reference
@@ -477,7 +460,6 @@ class HybridShapeSplit(HybridShape):
     def get_nb_cutting_elem(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbCuttingElem() As long
@@ -495,7 +477,6 @@ class HybridShapeSplit(HybridShape):
     def get_nb_elements_to_keep(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbElementsToKeep() As long
@@ -513,7 +494,6 @@ class HybridShapeSplit(HybridShape):
     def get_nb_elements_to_remove(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbElementsToRemove() As long
@@ -531,7 +511,6 @@ class HybridShapeSplit(HybridShape):
     def get_orientation(self, i_rank: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetOrientation(long iRank) As long
@@ -552,7 +531,6 @@ class HybridShapeSplit(HybridShape):
     def get_other_side(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetOtherSide() As Reference
@@ -570,7 +548,6 @@ class HybridShapeSplit(HybridShape):
     def get_removed_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetRemovedElem(long iRank) As Reference
@@ -591,7 +568,6 @@ class HybridShapeSplit(HybridShape):
     def invert_orientation(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertOrientation()
@@ -604,7 +580,6 @@ class HybridShapeSplit(HybridShape):
     def remove_cutting_elem(self, i_elem: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveCuttingElem(Reference iElem)
@@ -623,7 +598,6 @@ class HybridShapeSplit(HybridShape):
     def remove_element_to_keep(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToKeep(long iRank)
@@ -642,7 +616,6 @@ class HybridShapeSplit(HybridShape):
     def remove_element_to_remove(self, i_rank: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveElementToRemove(long iRank)
@@ -661,7 +634,6 @@ class HybridShapeSplit(HybridShape):
     def set_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetOrientation(long iRank,long iOrientation)
@@ -681,4 +653,4 @@ class HybridShapeSplit(HybridShape):
         return self.com_object.SetOrientation(i_rank, i_orientation)
 
     def __repr__(self):
-        return f'HybridShapeSplit(name="{ self.name }")'
+        return f'HybridShapeSplit(name="{self.name}")'

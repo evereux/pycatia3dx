@@ -14,7 +14,6 @@ from pycatia3dx.system.cat_base_dispatch import CATBaseDispatch
 class DrawingGenViewProperties(CATBaseDispatch):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def ann_callout_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AnnCalloutGenerationMode() As boolean
@@ -71,7 +69,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def approximate_parameter(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproximateParameter() As short
@@ -104,7 +101,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def auto_hidden_line_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AutoHiddenLineMode() As boolean
@@ -139,7 +135,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def axis_line_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisLineMode() As boolean
@@ -173,7 +168,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def centerline_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CenterlineMode() As boolean
@@ -207,7 +201,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def clash_detection_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ClashDetectionMode() As boolean
@@ -242,7 +235,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def color_inheritance_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ColorInheritanceMode() As Cat3DColorInheritanceMode
@@ -277,7 +269,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def fillet_representation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FilletRepresentation() As CatFilletRepresentation
@@ -312,7 +303,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def hidden_line_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HiddenLineMode() As CatHiddenLineMode
@@ -347,7 +337,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_print_precision_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ImagePrintPrecisionMode() As RasterLevelOfDetail
@@ -380,7 +369,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_view_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ImageViewMode() As CatGenViewRasterMode
@@ -416,7 +404,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def image_visu_precision_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ImageVisuPrecisionMode() As RasterLevelOfDetail
@@ -449,7 +436,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def limit_bounding_box(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LimitBoundingBox() As double
@@ -474,7 +460,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def occlusion_culling_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property OcclusionCullingMode() As boolean
@@ -509,7 +494,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def pattern_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PatternGenerationMode() As boolean
@@ -543,7 +527,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def points_projection_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointsProjectionMode() As CatPointsProjectionMode
@@ -578,7 +561,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def points_symbol(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PointsSymbol() As short
@@ -602,7 +584,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def polyhedral_data_integration(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PolyhedralDataIntegration() As boolean
@@ -637,7 +618,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def print_precision(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrintPrecision() As double
@@ -670,7 +650,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def representation_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RepresentationMode() As CatGenRepresentationMode
@@ -704,7 +683,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def scan_3d_reps_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scan3DRepsMode() As CatDftGenRepresentationPolicy
@@ -739,7 +717,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def shaded_background_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShadedBackgroundMode() As boolean
@@ -773,7 +750,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def smooth_edges_generation_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SmoothEdgesGenerationMode() As boolean
@@ -807,7 +783,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def thread_mode(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThreadMode() As boolean
@@ -841,7 +816,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def visu_precision(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VisuPrecision() As double
@@ -874,7 +848,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def wireframe_extraction_mode(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property WireframeExtractionMode() As CatWireframeMode
@@ -908,7 +881,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def retrieve_bck_color_property_for_op(self, ib_is_color_from_3d: bool, op_rgb_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RetrieveBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant
@@ -923,7 +895,6 @@ class DrawingGenViewProperties(CATBaseDispatch):
     def set_bck_color_property_for_op(self, ib_is_color_from_3d: bool, ip_rgb_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetBckColorPropertyForOp(boolean ibIsColorFrom3D,CATSafeArrayVariant

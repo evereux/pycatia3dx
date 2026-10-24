@@ -15,10 +15,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeSpline(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -54,7 +52,6 @@ class HybridShapeSpline(HybridShape):
     def add_point(self, ip_ia_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddPoint(Reference ipIAPoint)
@@ -70,10 +67,12 @@ class HybridShapeSpline(HybridShape):
         """
         return self.com_object.AddPoint(ip_ia_point.com_object)
 
-    def add_point_with_constraint_explicit(self, ip_ia_point: Reference, ip_ia_dir_tangency: HybridShapeDirection, i_tangency_norm: float, i_inverse_tangency: int, ip_ia_dir_curvature: HybridShapeDirection, i_curvature_radius: float) -> None:
+    def add_point_with_constraint_explicit(self, ip_ia_point: Reference, ip_ia_dir_tangency: HybridShapeDirection,
+                                           i_tangency_norm: float, i_inverse_tangency: int,
+                                           ip_ia_dir_curvature: HybridShapeDirection,
+                                           i_curvature_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddPointWithConstraintExplicit(Reference ipIAPoint,HybridShapeDirection
@@ -105,12 +104,14 @@ class HybridShapeSpline(HybridShape):
         :param float i_curvature_radius:
         :return: None
         """
-        return self.com_object.AddPointWithConstraintExplicit(ip_ia_point.com_object, ip_ia_dir_tangency.com_object, i_tangency_norm, i_inverse_tangency, ip_ia_dir_curvature.com_object, i_curvature_radius)
+        return self.com_object.AddPointWithConstraintExplicit(ip_ia_point.com_object, ip_ia_dir_tangency.com_object,
+                                                              i_tangency_norm, i_inverse_tangency,
+                                                              ip_ia_dir_curvature.com_object, i_curvature_radius)
 
-    def add_point_with_constraint_from_curve(self, ip_ia_point: Reference, ip_ia_curve_cst: Reference, i_tangency_norm: float, i_invert_value: int, i_crv_cst_type: int) -> None:
+    def add_point_with_constraint_from_curve(self, ip_ia_point: Reference, ip_ia_curve_cst: Reference,
+                                             i_tangency_norm: float, i_invert_value: int, i_crv_cst_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub AddPointWithConstraintFromCurve(Reference ipIAPoint,Reference
@@ -138,12 +139,12 @@ class HybridShapeSpline(HybridShape):
         :param int i_crv_cst_type:
         :return: None
         """
-        return self.com_object.AddPointWithConstraintFromCurve(ip_ia_point.com_object, ip_ia_curve_cst.com_object, i_tangency_norm, i_invert_value, i_crv_cst_type)
+        return self.com_object.AddPointWithConstraintFromCurve(ip_ia_point.com_object, ip_ia_curve_cst.com_object,
+                                                               i_tangency_norm, i_invert_value, i_crv_cst_type)
 
     def get_closure(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetClosure() As long
@@ -166,7 +167,6 @@ class HybridShapeSpline(HybridShape):
     def get_constraint_type(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetConstraintType(long iPos) As long
@@ -187,7 +187,6 @@ class HybridShapeSpline(HybridShape):
     def get_curvature_radius(self, i_pos: int) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetCurvatureRadius(long iPos) As Length
@@ -211,7 +210,6 @@ class HybridShapeSpline(HybridShape):
     def get_direction_inversion(self, i_pos: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetDirectionInversion(long iPos) As long
@@ -233,7 +231,6 @@ class HybridShapeSpline(HybridShape):
     def get_nb_control_point(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetNbControlPoint() As long
@@ -251,7 +248,6 @@ class HybridShapeSpline(HybridShape):
     def get_point(self, i_pos: int) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPoint(long iPos) As Reference
@@ -269,10 +265,11 @@ class HybridShapeSpline(HybridShape):
         """
         return Reference(self.com_object.GetPoint(i_pos))
 
-    def get_point_constraint_explicit(self, i_pos: int, op_ia_dir_tangency: HybridShapeDirection, o_tangency_norm: float, o_inverse_tangency: int, op_ia_dir_curvature: HybridShapeDirection, o_curvature_radius: float) -> None:
+    def get_point_constraint_explicit(self, i_pos: int, op_ia_dir_tangency: HybridShapeDirection,
+                                      o_tangency_norm: float, o_inverse_tangency: int,
+                                      op_ia_dir_curvature: HybridShapeDirection, o_curvature_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPointConstraintExplicit(long iPos,HybridShapeDirection
@@ -306,12 +303,14 @@ class HybridShapeSpline(HybridShape):
         :param float o_curvature_radius:
         :return: None
         """
-        return self.com_object.GetPointConstraintExplicit(i_pos, op_ia_dir_tangency.com_object, o_tangency_norm, o_inverse_tangency, op_ia_dir_curvature.com_object, o_curvature_radius)
+        return self.com_object.GetPointConstraintExplicit(i_pos, op_ia_dir_tangency.com_object, o_tangency_norm,
+                                                          o_inverse_tangency, op_ia_dir_curvature.com_object,
+                                                          o_curvature_radius)
 
-    def get_point_constraint_from_curve(self, i_pos: int, op_ia_curve_cst: Reference, o_tangency_norm: float, o_invert_value: int, o_crv_cst_type: int) -> None:
+    def get_point_constraint_from_curve(self, i_pos: int, op_ia_curve_cst: Reference, o_tangency_norm: float,
+                                        o_invert_value: int, o_crv_cst_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub GetPointConstraintFromCurve(long iPos,Reference opIACurveCst,double
@@ -340,12 +339,12 @@ class HybridShapeSpline(HybridShape):
         :param int o_crv_cst_type:
         :return: None
         """
-        return self.com_object.GetPointConstraintFromCurve(i_pos, op_ia_curve_cst.com_object, o_tangency_norm, o_invert_value, o_crv_cst_type)
+        return self.com_object.GetPointConstraintFromCurve(i_pos, op_ia_curve_cst.com_object, o_tangency_norm,
+                                                           o_invert_value, o_crv_cst_type)
 
     def get_point_position(self, ip_ia_point: Reference) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetPointPosition(Reference ipIAPoint) As long
@@ -366,7 +365,6 @@ class HybridShapeSpline(HybridShape):
     def get_spline_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSplineType() As long
@@ -384,7 +382,6 @@ class HybridShapeSpline(HybridShape):
     def get_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetSupport() As Reference
@@ -402,7 +399,6 @@ class HybridShapeSpline(HybridShape):
     def get_tangent_norm(self, i_pos: int) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Func GetTangentNorm(long iPos) As RealParam
@@ -426,7 +422,6 @@ class HybridShapeSpline(HybridShape):
     def invert_direction(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub InvertDirection(long iPos)
@@ -446,7 +441,6 @@ class HybridShapeSpline(HybridShape):
     def remove_all(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveAll()
@@ -459,7 +453,6 @@ class HybridShapeSpline(HybridShape):
     def remove_control_point(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveControlPoint(long iPos)
@@ -478,7 +471,6 @@ class HybridShapeSpline(HybridShape):
     def remove_curvature_radius_direction(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveCurvatureRadiusDirection(long iPos)
@@ -499,7 +491,6 @@ class HybridShapeSpline(HybridShape):
     def remove_curvature_radius_value(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveCurvatureRadiusValue(long iPos)
@@ -520,7 +511,6 @@ class HybridShapeSpline(HybridShape):
     def remove_support(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveSupport()
@@ -533,7 +523,6 @@ class HybridShapeSpline(HybridShape):
     def remove_tangent_direction(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveTangentDirection(long iPos)
@@ -554,7 +543,6 @@ class HybridShapeSpline(HybridShape):
     def remove_tension(self, i_pos: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub RemoveTension(long iPos)
@@ -574,7 +562,6 @@ class HybridShapeSpline(HybridShape):
     def replace_point_at_position(self, i_pos: int, i_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub ReplacePointAtPosition(long iPos,Reference iPoint)
@@ -596,7 +583,6 @@ class HybridShapeSpline(HybridShape):
     def set_closing(self, i_closing_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetClosing(long iClosingType)
@@ -615,7 +601,6 @@ class HybridShapeSpline(HybridShape):
     def set_point_after(self, i_pos: int, ip_ia_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPointAfter(long iPos,Reference ipIAPoint)
@@ -637,7 +622,6 @@ class HybridShapeSpline(HybridShape):
     def set_point_before(self, i_pos: int, ip_ia_point: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPointBefore(long iPos,Reference ipIAPoint)
@@ -656,10 +640,11 @@ class HybridShapeSpline(HybridShape):
         """
         return self.com_object.SetPointBefore(i_pos, ip_ia_point.com_object)
 
-    def set_point_constraint_explicit(self, i_pos: int, ip_ia_dir_tangency: HybridShapeDirection, i_tangency_norm: float, i_inverse_tangency: int, ip_ia_dir_curvature: HybridShapeDirection, i_curvature_radius: float) -> None:
+    def set_point_constraint_explicit(self, i_pos: int, ip_ia_dir_tangency: HybridShapeDirection,
+                                      i_tangency_norm: float, i_inverse_tangency: int,
+                                      ip_ia_dir_curvature: HybridShapeDirection, i_curvature_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPointConstraintExplicit(long iPos,HybridShapeDirection
@@ -693,12 +678,14 @@ class HybridShapeSpline(HybridShape):
         :param float i_curvature_radius:
         :return: None
         """
-        return self.com_object.SetPointConstraintExplicit(i_pos, ip_ia_dir_tangency.com_object, i_tangency_norm, i_inverse_tangency, ip_ia_dir_curvature.com_object, i_curvature_radius)
+        return self.com_object.SetPointConstraintExplicit(i_pos, ip_ia_dir_tangency.com_object, i_tangency_norm,
+                                                          i_inverse_tangency, ip_ia_dir_curvature.com_object,
+                                                          i_curvature_radius)
 
-    def set_point_constraint_from_curve(self, i_pos: int, ip_ia_curve_cst: Reference, i_tangency_norm: float, i_invert_value: int, i_crv_cst_type: int) -> None:
+    def set_point_constraint_from_curve(self, i_pos: int, ip_ia_curve_cst: Reference, i_tangency_norm: float,
+                                        i_invert_value: int, i_crv_cst_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetPointConstraintFromCurve(long iPos,Reference ipIACurveCst,double
@@ -727,12 +714,12 @@ class HybridShapeSpline(HybridShape):
         :param int i_crv_cst_type:
         :return: None
         """
-        return self.com_object.SetPointConstraintFromCurve(i_pos, ip_ia_curve_cst.com_object, i_tangency_norm, i_invert_value, i_crv_cst_type)
+        return self.com_object.SetPointConstraintFromCurve(i_pos, ip_ia_curve_cst.com_object, i_tangency_norm,
+                                                           i_invert_value, i_crv_cst_type)
 
     def set_spline_type(self, i_spline_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSplineType(long iSplineType)
@@ -752,7 +739,6 @@ class HybridShapeSpline(HybridShape):
     def set_support(self, i_support: Reference) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Sub SetSupport(Reference iSupport)
@@ -772,4 +758,4 @@ class HybridShapeSpline(HybridShape):
         return self.com_object.SetSupport(i_support.com_object)
 
     def __repr__(self):
-        return f'HybridShapeSpline(name="{ self.name }")'
+        return f'HybridShapeSpline(name="{self.name}")'

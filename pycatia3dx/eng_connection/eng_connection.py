@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class EngConnection(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class EngConnection(AnyObject):
     def activity(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activity() As boolean
@@ -60,7 +58,6 @@ class EngConnection(AnyObject):
     def assembly_constraints(self) -> AssemblyConstraints:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssemblyConstraints() As AssemblyConstraints (Read
@@ -90,7 +87,6 @@ class EngConnection(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CatEngConnectionType
@@ -113,7 +109,6 @@ class EngConnection(AnyObject):
     def compute_equivalent_type(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ComputeEquivalentType()
@@ -126,7 +121,6 @@ class EngConnection(AnyObject):
     def get_direction(self, i_nbp: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDirection(short iNbp) As CatEngConnectionDirection
@@ -157,7 +151,6 @@ class EngConnection(AnyObject):
     def get_impacted(self, inum_impacted: int, o_impacted: str, o_ctx_impacted: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetImpacted(short inumImpacted,CATBSTR oImpacted,CATBSTR
@@ -184,7 +177,6 @@ class EngConnection(AnyObject):
     def get_nb_impacteds(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNbImpacteds() As short
@@ -209,7 +201,6 @@ class EngConnection(AnyObject):
     def set_direction(self, i_nbp: int, i_direction: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDirection(short iNbp,CatEngConnectionDirection

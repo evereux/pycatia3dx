@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class Scaling2(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class Scaling2(Shape):
     def center(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Center() As Reference
@@ -87,7 +84,6 @@ class Scaling2(Shape):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Ratio() As RealParam (Read Only)
@@ -102,7 +98,6 @@ class Scaling2(Shape):
     def ratio_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RatioValue() As double
@@ -129,4 +124,4 @@ class Scaling2(Shape):
         self.com_object.RatioValue = value
 
     def __repr__(self):
-        return f'Scaling2(name="{ self.name }")'
+        return f'Scaling2(name="{self.name}")'

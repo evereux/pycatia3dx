@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimOptimizationSolverSettings(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -79,7 +77,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def density_update_strategy_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DensityUpdateStrategyType() As
@@ -103,7 +100,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def material_interpolation_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialInterpolationType() As
@@ -127,7 +123,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def nodal_update_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NodalUpdateType() As SimNodalUpdateType
@@ -150,7 +145,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def reference_mode_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferenceModeType() As SimReferenceModeType
@@ -173,7 +167,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def remove_soft_elements_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RemoveSoftElementsType() As SimRemoveSoftElementsType
@@ -196,7 +189,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def use_convergence_checks_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseConvergenceChecksFlag() As boolean
@@ -219,7 +211,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def use_mode_tracking_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseModeTrackingFlag() As boolean
@@ -242,7 +233,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def use_stablization_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UseStablizationFlag() As boolean
@@ -265,7 +255,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def vector_update_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VectorUpdateType() As SimVectorUpdateType
@@ -287,7 +276,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_density_value_change(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDensityValueChange(double oVal)
@@ -306,7 +294,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_filter_radius(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFilterRadius(double oVal)
@@ -325,7 +312,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_initial_density(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetInitialDensity(double oVal)
@@ -344,7 +330,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_iteration_number(self, o_val: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetIterationNumber(short oVal)
@@ -364,7 +349,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_lower_density(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetLowerDensity(double oVal)
@@ -383,7 +367,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_material_penalty_factor(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialPenaltyFactor(double oVal)
@@ -402,7 +385,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_maximum_density_change(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumDensityChange(double oVal)
@@ -421,7 +403,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_mode_number(self, o_val: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetModeNumber(short oVal)
@@ -440,7 +421,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_node_move_limit(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetNodeMoveLimit(double oVal)
@@ -459,7 +439,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_objective_function_change(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetObjectiveFunctionChange(double oVal)
@@ -478,7 +457,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def get_soft_delete_threshold(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetSoftDeleteThreshold(double oVal)
@@ -497,7 +475,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_density_value_change(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDensityValueChange(double iVal)
@@ -516,7 +493,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_filter_radius(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFilterRadius(double iVal)
@@ -535,7 +511,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_initial_density(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetInitialDensity(double iVal)
@@ -554,7 +529,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_iteration_number(self, i_val: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetIterationNumber(short iVal)
@@ -574,7 +548,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_lower_density(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetLowerDensity(double iVal)
@@ -593,7 +566,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_material_penalty_factor(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialPenaltyFactor(double iVal)
@@ -612,7 +584,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_maximum_density_change(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumDensityChange(double iVal)
@@ -631,7 +602,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_mode_number(self, i_val: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetModeNumber(short iVal)
@@ -650,7 +620,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_node_move_limit(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetNodeMoveLimit(double iVal)
@@ -669,7 +638,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_objective_function_change(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetObjectiveFunctionChange(double iVal)
@@ -688,7 +656,6 @@ class SimOptimizationSolverSettings(AnyObject):
     def set_soft_delete_threshold(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSoftDeleteThreshold(double iVal)
@@ -705,4 +672,4 @@ class SimOptimizationSolverSettings(AnyObject):
         return self.com_object.SetSoftDeleteThreshold(i_val)
 
     def __repr__(self):
-        return f'SimOptimizationSolverSettings(name="{ self.name }")'
+        return f'SimOptimizationSolverSettings(name="{self.name}")'

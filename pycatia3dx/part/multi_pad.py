@@ -12,10 +12,8 @@ from pycatia3dx.part.sketch_based_shape import SketchBasedShape
 
 
 class MultiPad(SketchBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,4 +37,4 @@ class MultiPad(SketchBasedShape):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'MultiPad(name="{ self.name }")'
+        return f'MultiPad(name="{self.name}")'

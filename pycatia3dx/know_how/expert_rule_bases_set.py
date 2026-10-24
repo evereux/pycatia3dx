@@ -11,10 +11,8 @@ from pycatia3dx.knowledge_interfaces.knowledge_set import KnowledgeSet
 
 
 class ExpertRuleBasesSet(KnowledgeSet):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,4 +43,4 @@ class ExpertRuleBasesSet(KnowledgeSet):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'ExpertRuleBasesSet(name="{ self.name }")'
+        return f'ExpertRuleBasesSet(name="{self.name}")'

@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscDataEntity(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +39,6 @@ class RscDataEntity(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As DELRscDataEntityType
@@ -95,4 +92,4 @@ class RscDataEntity(AnyObject):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'RscDataEntity(name="{ self.name }")'
+        return f'RscDataEntity(name="{self.name}")'

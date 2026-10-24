@@ -13,10 +13,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_ast_branch import OLPAstBranch
 
 
 class OLPVariable(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +44,6 @@ class OLPVariable(AnyObject):
     def alias_of(self) -> 'OLPVariable':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AliasOf() As OlpVariable (Read Only)
@@ -68,7 +65,6 @@ class OLPVariable(AnyObject):
     def all_aliases(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllAliases() As CATSafeArrayVariant (Read Only)
@@ -84,7 +80,6 @@ class OLPVariable(AnyObject):
     def array_dimensions(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ArrayDimensions() As CATSafeArrayVariant
@@ -112,7 +107,6 @@ class OLPVariable(AnyObject):
     def array_indexing(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ArrayIndexing() As CATSafeArrayVariant
@@ -142,7 +136,6 @@ class OLPVariable(AnyObject):
     def array_indexing_all(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ArrayIndexingAll() As long
@@ -172,7 +165,6 @@ class OLPVariable(AnyObject):
     def associated_object(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssociatedObject() As AnyObject (Read Only)
@@ -189,7 +181,6 @@ class OLPVariable(AnyObject):
     def associated_object_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AssociatedObjectType() As CATBSTR (Read Only)
@@ -206,7 +197,6 @@ class OLPVariable(AnyObject):
     def connection_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectionCount() As long (Read Only)
@@ -224,7 +214,6 @@ class OLPVariable(AnyObject):
     def data_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DataType() As DELOlpDataType (Read Only)
@@ -239,7 +228,6 @@ class OLPVariable(AnyObject):
     def data_type_in_string(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DataTypeInString() As CATBSTR (Read Only)
@@ -265,7 +253,6 @@ class OLPVariable(AnyObject):
     def default_value(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DefaultValue() As CATBSTR
@@ -291,7 +278,6 @@ class OLPVariable(AnyObject):
     def description(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Description() As CATBSTR
@@ -314,7 +300,6 @@ class OLPVariable(AnyObject):
     def has_default_value(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HasDefaultValue() As boolean (Read Only)
@@ -330,7 +315,6 @@ class OLPVariable(AnyObject):
     def io_address(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IOAddress() As CATBSTR
@@ -357,7 +341,6 @@ class OLPVariable(AnyObject):
     def io_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IODirection() As DELOlpIODirection (Read Only)
@@ -374,7 +357,6 @@ class OLPVariable(AnyObject):
     def is_alias(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsAlias() As boolean (Read Only)
@@ -395,7 +377,6 @@ class OLPVariable(AnyObject):
     def scope(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Scope() As AnyObject (Read Only)
@@ -411,7 +392,6 @@ class OLPVariable(AnyObject):
     def sub_type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubType() As CATBSTR (Read Only)
@@ -435,7 +415,6 @@ class OLPVariable(AnyObject):
     def subscript_constant(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubscriptConstant() As CATSafeArrayVariant
@@ -463,7 +442,6 @@ class OLPVariable(AnyObject):
     def subscript_is_constant(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubscriptIsConstant() As boolean (Read Only)
@@ -479,7 +457,6 @@ class OLPVariable(AnyObject):
     def subscripted_array(self) -> 'OLPVariable':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubscriptedArray() As OlpVariable (Read Only)
@@ -496,7 +473,6 @@ class OLPVariable(AnyObject):
     def subscripted_variable(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SubscriptedVariable() As boolean (Read Only)
@@ -518,7 +494,6 @@ class OLPVariable(AnyObject):
     def subscripts(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Subscripts() As OlpAstBranch
@@ -556,7 +531,6 @@ class OLPVariable(AnyObject):
     def variable_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariableType() As DELOlpVariableType (Read Only)
@@ -571,7 +545,6 @@ class OLPVariable(AnyObject):
     def variable_type2(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VariableType2() As CATBSTR (Read Only)
@@ -583,10 +556,10 @@ class OLPVariable(AnyObject):
 
         return self.com_object.VariableType2
 
-    def get_connection(self, i_index: int, o_resource_type: str, o_resource_name: str, o_io_name: str, o_io_direction: int, o_io_address: str, o_io_description: str) -> None:
+    def get_connection(self, i_index: int, o_resource_type: str, o_resource_name: str, o_io_name: str,
+                       o_io_direction: int, o_io_address: str, o_io_description: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetConnection(long iIndex,CATBSTR oResourceType,CATBSTR
@@ -661,12 +634,12 @@ class OLPVariable(AnyObject):
         :param str o_io_description:
         :return: None
         """
-        return self.com_object.GetConnection(i_index, o_resource_type, o_resource_name, o_io_name, o_io_direction, o_io_address, o_io_description)
+        return self.com_object.GetConnection(i_index, o_resource_type, o_resource_name, o_io_name, o_io_direction,
+                                             o_io_address, o_io_description)
 
     def has_alias_relation_with(self, i_variable: 'OLPVariable') -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func HasAliasRelationWith(OlpVariable iVariable) As boolean
@@ -679,4 +652,4 @@ class OLPVariable(AnyObject):
         return self.com_object.HasAliasRelationWith(i_variable.com_object)
 
     def __repr__(self):
-        return f'OLPVariable(name="{ self.name }")'
+        return f'OLPVariable(name="{self.name}")'

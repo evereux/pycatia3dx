@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingAgregate(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class ManufacturingAgregate(AnyObject):
     def get_element(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetElement(long iPosition) As AnyObject
@@ -65,7 +62,6 @@ class ManufacturingAgregate(AnyObject):
     def get_number_of_elements(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetNumberOfElements() As long
@@ -80,4 +76,4 @@ class ManufacturingAgregate(AnyObject):
         return self.com_object.GetNumberOfElements()
 
     def __repr__(self):
-        return f'ManufacturingAgregate(name="{ self.name }")'
+        return f'ManufacturingAgregate(name="{self.name}")'

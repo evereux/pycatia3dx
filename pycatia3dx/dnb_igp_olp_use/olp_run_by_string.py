@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPRunByString(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPRunByString(OLPInstruction):
     def arguments(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Arguments() As OlpAstBranch
@@ -77,7 +74,6 @@ class OLPRunByString(OLPInstruction):
     def procedure_expression(self) -> OLPAstBranch:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProcedureExpression() As OlpAstBranch
@@ -101,7 +97,6 @@ class OLPRunByString(OLPInstruction):
     def runnable_procedure_prefix(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RunnableProcedurePrefix() As CATBSTR
@@ -126,7 +121,6 @@ class OLPRunByString(OLPInstruction):
     def runnable_procedure_suffix(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RunnableProcedureSuffix() As CATBSTR
@@ -151,7 +145,6 @@ class OLPRunByString(OLPInstruction):
     def runnable_procedures(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RunnableProcedures() As CATSafeArrayVariant
@@ -177,4 +170,4 @@ class OLPRunByString(OLPInstruction):
         self.com_object.RunnableProcedures = value
 
     def __repr__(self):
-        return f'OLPRunByString(name="{ self.name }")'
+        return f'OLPRunByString(name="{self.name}")'

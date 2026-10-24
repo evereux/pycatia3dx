@@ -21,7 +21,6 @@ from pycatia3dx.types.shapes import shape_types
 class Shapes(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -43,7 +42,6 @@ class Shapes(Collection):
     def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func GetBoundary(CATBSTR iLabel) As Boundary
@@ -66,7 +64,6 @@ class Shapes(Collection):
     def item(self, i_index: CATVariant) -> Shape:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Func Item(CATVariant iIndex) As Shape

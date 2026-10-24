@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class CompositeTolerance(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class CompositeTolerance(AnyObject):
     def box_count(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BoxCount() As double (Read Only)
@@ -54,7 +51,6 @@ class CompositeTolerance(AnyObject):
     def value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Value() As double (Read Only)
@@ -71,4 +67,4 @@ class CompositeTolerance(AnyObject):
         return self.com_object.Value
 
     def __repr__(self):
-        return f'CompositeTolerance(name="{ self.name }")'
+        return f'CompositeTolerance(name="{self.name}")'

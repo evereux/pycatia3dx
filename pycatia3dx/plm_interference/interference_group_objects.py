@@ -19,7 +19,6 @@ from pycatia3dx.types.general import CATVariant
 class InterferenceGroupObjects(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class InterferenceGroupObjects(Collection):
     def add(self, i_plm_occurence: PLMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add(PLMOccurrence iPLMOccurence)
@@ -71,7 +69,6 @@ class InterferenceGroupObjects(Collection):
     def add2(self, i_vpm_occurence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Add2(VPMOccurrence iVPMOccurence)
@@ -91,7 +88,6 @@ class InterferenceGroupObjects(Collection):
     def item(self, i_index: CATVariant) -> VPMOccurrence:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -126,7 +122,6 @@ class InterferenceGroupObjects(Collection):
     def remove(self, i_plm_occurence: PLMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(PLMOccurrence iPLMOccurence)
@@ -156,7 +151,6 @@ class InterferenceGroupObjects(Collection):
     def remove2(self, i_vpm_occurence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove2(VPMOccurrence iVPMOccurence)

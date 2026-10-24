@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimStressConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimStressConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -91,7 +88,6 @@ class SimStressConstraint(AnyObject):
     def get_maximum_stress(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumStress(double oVal)
@@ -110,7 +106,6 @@ class SimStressConstraint(AnyObject):
     def set_maximum_stress(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumStress(double iVal)
@@ -127,4 +122,4 @@ class SimStressConstraint(AnyObject):
         return self.com_object.SetMaximumStress(i_val)
 
     def __repr__(self):
-        return f'SimStressConstraint(name="{ self.name }")'
+        return f'SimStressConstraint(name="{self.name}")'

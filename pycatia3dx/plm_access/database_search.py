@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DatabaseSearch(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,7 +56,6 @@ class DatabaseSearch(AnyObject):
     def all_minor_versions(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllMinorVersions(long iAllMinorVersions) (Write Only)
@@ -92,7 +90,6 @@ class DatabaseSearch(AnyObject):
     def base_type(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property BaseType(CATBSTR iBaseType) (Write Only)
@@ -129,7 +126,6 @@ class DatabaseSearch(AnyObject):
     def condition(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Condition(SearchCondition iCondition) (Write Only)
@@ -163,7 +159,6 @@ class DatabaseSearch(AnyObject):
     def extension(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Extension(CATBSTR iExtension) (Write Only)
@@ -199,7 +194,6 @@ class DatabaseSearch(AnyObject):
     def latest_version(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LatestVersion(long iLatestVersion) (Write Only)
@@ -233,7 +227,6 @@ class DatabaseSearch(AnyObject):
     def mode(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Mode(SearchMode iMode) (Write Only)
@@ -267,7 +260,6 @@ class DatabaseSearch(AnyObject):
     def page_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PageCount() As long (Read Only)
@@ -295,7 +287,6 @@ class DatabaseSearch(AnyObject):
     def results(self) -> PLMEntities:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Results() As PLMEntities (Read Only)
@@ -324,7 +315,6 @@ class DatabaseSearch(AnyObject):
     def search_count(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SearchCount() As long (Read Only)
@@ -355,7 +345,6 @@ class DatabaseSearch(AnyObject):
     def title(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Title(CATBSTR iTitle) (Write Only)
@@ -378,7 +367,6 @@ class DatabaseSearch(AnyObject):
     def add_easy_criteria(self, i_attr_id: str, i_attr_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddEasyCriteria(CATBSTR iAttrId,CATBSTR iAttrValue)
@@ -410,7 +398,6 @@ class DatabaseSearch(AnyObject):
     def add_extended_criteria(self, i_attr_id: str, i_attr_value: str, i_operator: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddExtendedCriteria(CATBSTR iAttrId,CATBSTR iAttrValue,SearchOperator
@@ -457,7 +444,6 @@ class DatabaseSearch(AnyObject):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddExtendedRangeCriteria(CATBSTR iAttrId,CATBSTR iAttrStartValue,CATBSTR
@@ -497,7 +483,6 @@ class DatabaseSearch(AnyObject):
     def add_predefined_criteria(self, i_criteria_with_pq_abbreviation: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddPredefinedCriteria(CATBSTR iCriteriaWithPQAbbreviation)
@@ -529,7 +514,6 @@ class DatabaseSearch(AnyObject):
     def next_page(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub NextPage()
@@ -552,7 +536,6 @@ class DatabaseSearch(AnyObject):
     def set_expert_expression(self, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetExpertExpression(CATBSTR iExpression)
@@ -581,7 +564,6 @@ class DatabaseSearch(AnyObject):
     def sort_by(self, i_sort_by_attr: str, i_sort_order: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SortBy(CATBSTR iSortByAttr,SearchSortOrder iSortOrder)

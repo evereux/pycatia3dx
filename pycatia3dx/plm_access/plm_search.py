@@ -14,7 +14,6 @@ from pycatia3dx.plm_application_context.plm_app_context import PLMAppContext
 class PLMSearch(PLMAppContext):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,7 +56,6 @@ class PLMSearch(PLMAppContext):
     def editor(self) -> Editor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Editor() As Editor (Read Only)
@@ -87,7 +85,6 @@ class PLMSearch(PLMAppContext):
     def type(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type(CATBSTR iTypeBSTR) (Write Only)
@@ -109,7 +106,6 @@ class PLMSearch(PLMAppContext):
     def add_attribute_criteria(self, i_attr_id_bstr: str, i_attr_value_bstr: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddAttributeCriteria(CATBSTR iAttrIdBSTR,CATBSTR
@@ -130,7 +126,6 @@ class PLMSearch(PLMAppContext):
     def search(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Search()

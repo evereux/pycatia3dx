@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeRevol(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -48,7 +46,6 @@ class HybridShapeRevol(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Axis() As Reference
@@ -85,7 +82,6 @@ class HybridShapeRevol(HybridShape):
     def begin_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginAngle() As Angle (Read Only)
@@ -114,7 +110,6 @@ class HybridShapeRevol(HybridShape):
     def begin_angle_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property BeginAngleOffset() As double
@@ -143,7 +138,6 @@ class HybridShapeRevol(HybridShape):
     def context(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Context() As long
@@ -180,7 +174,6 @@ class HybridShapeRevol(HybridShape):
     def end_angle(self) -> Angle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndAngle() As Angle (Read Only)
@@ -209,7 +202,6 @@ class HybridShapeRevol(HybridShape):
     def end_angle_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property EndAngleOffset() As double
@@ -238,7 +230,6 @@ class HybridShapeRevol(HybridShape):
     def first_limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstLimitType() As long
@@ -278,7 +269,6 @@ class HybridShapeRevol(HybridShape):
     def first_upto_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property FirstUptoElement() As Reference
@@ -309,7 +299,6 @@ class HybridShapeRevol(HybridShape):
     def orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation(boolean iOrientation)
@@ -335,7 +324,6 @@ class HybridShapeRevol(HybridShape):
     def profil(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Profil() As Reference
@@ -372,7 +360,6 @@ class HybridShapeRevol(HybridShape):
     def second_limit_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondLimitType() As long
@@ -412,7 +399,6 @@ class HybridShapeRevol(HybridShape):
     def second_upto_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property SecondUptoElement() As Reference
@@ -440,4 +426,4 @@ class HybridShapeRevol(HybridShape):
         self.com_object.SecondUptoElement = value
 
     def __repr__(self):
-        return f'HybridShapeRevol(name="{ self.name }")'
+        return f'HybridShapeRevol(name="{self.name}")'

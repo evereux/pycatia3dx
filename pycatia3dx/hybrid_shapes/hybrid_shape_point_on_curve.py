@@ -16,10 +16,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapePointOnCurve(Point):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -59,7 +57,6 @@ class HybridShapePointOnCurve(Point):
     def curve(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Curve() As Reference
@@ -95,7 +92,6 @@ class HybridShapePointOnCurve(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -126,7 +122,6 @@ class HybridShapePointOnCurve(Point):
     def distance_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property DistanceType() As long
@@ -167,7 +162,6 @@ class HybridShapePointOnCurve(Point):
     def offset(self) -> Length:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Offset() As Length (Read Only)
@@ -196,7 +190,6 @@ class HybridShapePointOnCurve(Point):
     def on_curve_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property OnCurveType() As long
@@ -221,7 +214,6 @@ class HybridShapePointOnCurve(Point):
     def orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Orientation() As long
@@ -261,7 +253,6 @@ class HybridShapePointOnCurve(Point):
     def point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Point() As Reference
@@ -304,7 +295,6 @@ class HybridShapePointOnCurve(Point):
     def ratio(self) -> RealParam:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Ratio() As RealParam (Read Only)
@@ -334,7 +324,6 @@ class HybridShapePointOnCurve(Point):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Type() As long (Read Only)
@@ -360,4 +349,4 @@ class HybridShapePointOnCurve(Point):
         return self.com_object.Type
 
     def __repr__(self):
-        return f'HybridShapePointOnCurve(name="{ self.name }")'
+        return f'HybridShapePointOnCurve(name="{self.name}")'

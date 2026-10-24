@@ -12,10 +12,8 @@ from pycatia3dx.part.surface_based_shape import SurfaceBasedShape
 
 
 class Split(SurfaceBasedShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class Split(SurfaceBasedShape):
     def splitting_side(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SplittingSide() As CatSplitSide
@@ -72,4 +69,4 @@ class Split(SurfaceBasedShape):
         self.com_object.SplittingSide = value
 
     def __repr__(self):
-        return f'Split(name="{ self.name }")'
+        return f'Split(name="{self.name}")'

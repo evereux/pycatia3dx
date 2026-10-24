@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class AGTDraughtStops(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class AGTDraughtStops(Collection):
     def item(self, i_index: CATVariant) -> AGTDraughtStop:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As AGTDraughtStop

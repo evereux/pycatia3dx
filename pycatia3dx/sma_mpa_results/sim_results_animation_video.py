@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimResultsAnimationVideo(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -49,7 +48,6 @@ class SimResultsAnimationVideo(AnyObject):
     def plot_height(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlotHeight() As long
@@ -72,7 +70,6 @@ class SimResultsAnimationVideo(AnyObject):
     def plot_width(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PlotWidth() As long
@@ -94,7 +91,6 @@ class SimResultsAnimationVideo(AnyObject):
     def create_movie(self, ics_file_path: str, ics_file_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateMovie(CATBSTR icsFilePath,CATBSTR icsFileName)
@@ -119,7 +115,6 @@ class SimResultsAnimationVideo(AnyObject):
     def get_list_of_codec_options(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetListOfCodecOptions(CATSafeArrayVariant ocsCodecOptions)
@@ -154,7 +149,6 @@ class SimResultsAnimationVideo(AnyObject):
     def set_codec(self, ics_codec: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCodec(CATBSTR icsCodec)
@@ -177,7 +171,6 @@ class SimResultsAnimationVideo(AnyObject):
                                 inb_compression_quality: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCompressionOptions(double idTempQualityRatio,boolean ibIsKeyFrameOn,long
@@ -211,7 +204,6 @@ class SimResultsAnimationVideo(AnyObject):
     def set_playback(self, ie_playback: int, id_value: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPlayback(SimAnimPlaybackTypes iePlayback,double
@@ -237,7 +229,6 @@ class SimResultsAnimationVideo(AnyObject):
                               inb_time_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRayTraceOptions(long inbCompressionQuality,boolean ibIsRayTraceOn,long
@@ -281,7 +272,6 @@ class SimResultsAnimationVideo(AnyObject):
                             inb_y_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetXYPlotOptions(boolean ibIncludeXYPlot,long inbHeight,long inbWidth,long

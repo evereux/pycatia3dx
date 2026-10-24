@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PrintArea(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class PrintArea(AnyObject):
     def activation_state(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ActivationState(boolean iActivated)
@@ -76,7 +74,6 @@ class PrintArea(AnyObject):
     def area_height(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaHeigth(double iHeigth)
@@ -111,7 +108,6 @@ class PrintArea(AnyObject):
     def area_low_x(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaLowX(double iX)
@@ -145,7 +141,6 @@ class PrintArea(AnyObject):
     def area_low_y(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaLowY(double iY)
@@ -179,7 +174,6 @@ class PrintArea(AnyObject):
     def area_width(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AreaWidth(double iWidth)
@@ -213,7 +207,6 @@ class PrintArea(AnyObject):
     def get_area(self, o_x: float, o_y: float, o_width: float, o_height: float, o_activated: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetArea(double oX,double oY,double oWidth,double oHeigth,boolean
@@ -256,7 +249,6 @@ class PrintArea(AnyObject):
     def set_area(self, i_x: float, i_y: float, i_width: float, i_height: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetArea(double iX,double iY,double iWidth,double iHeigth)

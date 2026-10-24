@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class DrawingDimExtLine(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +39,6 @@ class DrawingDimExtLine(AnyObject):
     def color(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Color() As long
@@ -69,7 +67,6 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_slant(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExtLineSlant() As double
@@ -98,7 +95,6 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ExtLineType() As long (Read Only)
@@ -119,7 +115,6 @@ class DrawingDimExtLine(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Thickness() As double
@@ -147,7 +142,6 @@ class DrawingDimExtLine(AnyObject):
     def add_interrupt(self, i_index: int, i_two_points: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddInterrupt(long iIndex,CATSafeArrayVariant iTwoPoints)
@@ -174,7 +168,6 @@ class DrawingDimExtLine(AnyObject):
     def get_funnel(self, i_index: int, o_mode: int, o_angle: float, o_height: float, o_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetFunnel(long iIndex,long oMode,double oAngle,double oHeight,double
@@ -212,7 +205,6 @@ class DrawingDimExtLine(AnyObject):
     def get_gap(self, i_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGap(long iIndex) As double
@@ -237,7 +229,6 @@ class DrawingDimExtLine(AnyObject):
     def get_geom_info(self, i_index: int, o_geom_infos: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeomInfo(long iIndex,CATSafeArrayVariant oGeomInfos)
@@ -266,7 +257,6 @@ class DrawingDimExtLine(AnyObject):
     def get_interrupt(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetInterrupt(long iIndex) As long
@@ -293,7 +283,6 @@ class DrawingDimExtLine(AnyObject):
     def get_overrun(self, i_index: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOverrun(long iIndex) As double
@@ -318,7 +307,6 @@ class DrawingDimExtLine(AnyObject):
     def get_visibility(self, i_index: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetVisibility(long iIndex) As long
@@ -343,7 +331,6 @@ class DrawingDimExtLine(AnyObject):
     def remove_interrupt(self, i_index: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveInterrupt(long iIndex)
@@ -367,7 +354,6 @@ class DrawingDimExtLine(AnyObject):
     def set_funnel(self, i_index: int, i_mode: int, i_angle: float, i_height: float, i_width: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFunnel(long iIndex,long iMode,double iAngle,double iHeight,double
@@ -405,7 +391,6 @@ class DrawingDimExtLine(AnyObject):
     def set_gap(self, i_index: int, i_gap: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetGap(long iIndex,double iGap)
@@ -431,7 +416,6 @@ class DrawingDimExtLine(AnyObject):
     def set_overrun(self, i_index: int, i_overrun: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetOverrun(long iIndex,double iOverrun)
@@ -457,7 +441,6 @@ class DrawingDimExtLine(AnyObject):
     def set_visibility(self, i_index: int, i_extline_visibility: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetVisibility(long iIndex,long iExtlineVisibility)

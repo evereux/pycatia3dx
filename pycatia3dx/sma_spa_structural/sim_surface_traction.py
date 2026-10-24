@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSurfaceTraction(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimSurfaceTraction(AnyObject):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -101,7 +98,6 @@ class SimSurfaceTraction(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -116,7 +112,6 @@ class SimSurfaceTraction(AnyObject):
     def constant_resultant_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConstantResultantFlag() As boolean
@@ -146,7 +141,6 @@ class SimSurfaceTraction(AnyObject):
     def feature_history(self) -> SimFeatureHistory:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FeatureHistory() As SimFeatureHistory (Read Only)
@@ -161,7 +155,6 @@ class SimSurfaceTraction(AnyObject):
     def follower_load_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FollowerLoadFlag() As boolean
@@ -190,7 +183,6 @@ class SimSurfaceTraction(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -206,7 +198,6 @@ class SimSurfaceTraction(AnyObject):
     def uniform_traction_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformTractionFlag() As boolean (Read Only)
@@ -224,7 +215,6 @@ class SimSurfaceTraction(AnyObject):
     def vector_field(self) -> SimGeneralVectorField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property VectorField() As SimGeneralVectorField (Read Only)
@@ -238,7 +228,6 @@ class SimSurfaceTraction(AnyObject):
     def get_uniform_traction(self, o_traction: float, o_x_comp: float, o_y_comp: float, o_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetUniformTraction(double oTraction,double oXComp,double oYComp,double
@@ -269,7 +258,6 @@ class SimSurfaceTraction(AnyObject):
     def set_uniform_traction(self, i_traction: float, i_x_comp: float, i_y_comp: float, i_z_comp: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUniformTraction(double iTraction,double iXComp,double iYComp,double
@@ -298,4 +286,4 @@ class SimSurfaceTraction(AnyObject):
         return self.com_object.SetUniformTraction(i_traction, i_x_comp, i_y_comp, i_z_comp)
 
     def __repr__(self):
-        return f'SimSurfaceTraction(name="{ self.name }")'
+        return f'SimSurfaceTraction(name="{self.name}")'

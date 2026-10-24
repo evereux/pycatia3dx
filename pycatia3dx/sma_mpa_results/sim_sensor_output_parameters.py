@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimSensorOutputParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -185,7 +183,6 @@ class SimSensorOutputParameters(AnyObject):
     def calculation_between_supports(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CalculationBetweenSupports() As SimCalculationBetweenSupports
@@ -213,7 +210,6 @@ class SimSensorOutputParameters(AnyObject):
     def create_global_support_parameters(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CreateGlobalSupportParameters() As boolean 
@@ -238,10 +234,10 @@ class SimSensorOutputParameters(AnyObject):
 
         self.com_object.CreateGlobalSupportParameters = value
 
-    def get_parameters(self, ob_max: bool, ob_min: bool, ob_abs_max: bool, ob_average: bool, ob_sum: bool, ob_last: bool) -> None:
+    def get_parameters(self, ob_max: bool, ob_min: bool, ob_abs_max: bool, ob_average: bool, ob_sum: bool,
+                       ob_last: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetParameters(boolean obMax,boolean obMin,boolean obAbsMax,boolean
@@ -278,7 +274,6 @@ class SimSensorOutputParameters(AnyObject):
     def get_value_per_support(self, ob_use_global_parameters: bool, oe_type: int, ob_create_parameter: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetValuePerSupport(boolean obUseGlobalParameters,SimValuePerSupportOption
@@ -303,10 +298,10 @@ class SimSensorOutputParameters(AnyObject):
         """
         return self.com_object.GetValuePerSupport(ob_use_global_parameters, oe_type, ob_create_parameter)
 
-    def set_parameters(self, ib_max: bool, ib_min: bool, ib_abs_max: bool, ib_average: bool, ib_sum: bool, ib_last: bool) -> None:
+    def set_parameters(self, ib_max: bool, ib_min: bool, ib_abs_max: bool, ib_average: bool, ib_sum: bool,
+                       ib_last: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetParameters(boolean ibMax,boolean ibMin,boolean ibAbsMax,boolean
@@ -351,7 +346,6 @@ class SimSensorOutputParameters(AnyObject):
     def set_value_per_support(self, ie_type: int, ib_create_parameter: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetValuePerSupport(SimValuePerSupportOption ieType,boolean
@@ -401,4 +395,4 @@ class SimSensorOutputParameters(AnyObject):
         return self.com_object.SetValuePerSupport(ie_type, ib_create_parameter)
 
     def __repr__(self):
-        return f'SimSensorOutputParameters(name="{ self.name }")'
+        return f'SimSensorOutputParameters(name="{self.name}")'

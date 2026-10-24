@@ -16,7 +16,6 @@ from pycatia3dx.interfaces.viewpoint_3d import ViewPoint3D
 class Viewer3D(Viewer):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -47,7 +46,6 @@ class Viewer3D(Viewer):
     def clipping_mode(self) -> CatClippingMode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property ClippingMode() As CatClippingMode
@@ -76,7 +74,6 @@ class Viewer3D(Viewer):
     def far_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property FarLimit() As double
@@ -109,7 +106,6 @@ class Viewer3D(Viewer):
     def foggy(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Foggy() As boolean
@@ -139,7 +135,6 @@ class Viewer3D(Viewer):
     def ground(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Ground() As boolean
@@ -168,7 +163,6 @@ class Viewer3D(Viewer):
     def light_sources(self) -> LightSources:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LightSources() As LightSources (Read Only)
@@ -189,7 +183,6 @@ class Viewer3D(Viewer):
     def lighting_intensity(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LightingIntensity() As double
@@ -219,7 +212,6 @@ class Viewer3D(Viewer):
     def lighting_mode(self) -> CatLightingMode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property LightingMode() As CatLightingMode
@@ -248,7 +240,6 @@ class Viewer3D(Viewer):
     def navigation_style(self) -> CatNavigationStyle:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property NavigationStyle() As CatNavigationStyle
@@ -277,7 +268,6 @@ class Viewer3D(Viewer):
     def near_limit(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property NearLimit() As double
@@ -310,7 +300,6 @@ class Viewer3D(Viewer):
     def rendering_mode(self) -> CatRenderingMode:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property RenderingMode() As CatRenderingMode
@@ -339,7 +328,6 @@ class Viewer3D(Viewer):
     def viewpoint_3d(self) -> ViewPoint3D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property Viewpoint3D() As Viewpoint3D
@@ -368,7 +356,6 @@ class Viewer3D(Viewer):
     def rotate(self, i_axis: tuple, i_angle: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Rotate(CATSafeArrayVariant iAxis,double iAngle)
@@ -408,7 +395,6 @@ class Viewer3D(Viewer):
     def translate(self, i_vector: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Translate(CATSafeArrayVariant iVector)

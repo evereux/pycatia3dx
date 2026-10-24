@@ -16,10 +16,8 @@ from pycatia3dx.sma_mpa_foundation.sim_steps import SimSteps
 
 
 class SimAnalysisCase(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -66,7 +64,6 @@ class SimAnalysisCase(AnyObject):
     def fem_rep(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FEMRep() As CATBaseDispatch
@@ -90,7 +87,6 @@ class SimAnalysisCase(AnyObject):
     def features(self) -> SimFeatures:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Features() As SimFeatures (Read Only)
@@ -105,7 +101,6 @@ class SimAnalysisCase(AnyObject):
     def global_element_type_assignment(self) -> SimGlobalElementTypeAssignment:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property GlobalElementTypeAssignment() As SimGlobalElementTypeAssignment (Read
@@ -121,7 +116,6 @@ class SimAnalysisCase(AnyObject):
     def local_element_type_assignments(self) -> SimLocalElementTypeAssignments:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LocalElementTypeAssignments() As SimLocalElementTypeAssignments (Read
@@ -137,7 +131,6 @@ class SimAnalysisCase(AnyObject):
     def results_analysis_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ResultsAnalysisCase() As CATBaseDispatch (Read Only)
@@ -153,7 +146,6 @@ class SimAnalysisCase(AnyObject):
     def steps(self) -> SimSteps:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Steps() As SimSteps (Read Only)
@@ -168,7 +160,6 @@ class SimAnalysisCase(AnyObject):
     def update_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UpdateFlag() As boolean (Read Only)
@@ -185,7 +176,6 @@ class SimAnalysisCase(AnyObject):
     def create_default_element_type_assignment(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateDefaultElementTypeAssignment()
@@ -199,7 +189,6 @@ class SimAnalysisCase(AnyObject):
     def delete_solver_restart_result(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteSolverRestartResult()
@@ -212,7 +201,6 @@ class SimAnalysisCase(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()
@@ -225,4 +213,4 @@ class SimAnalysisCase(AnyObject):
         return self.com_object.Update()
 
     def __repr__(self):
-        return f'SimAnalysisCase(name="{ self.name }")'
+        return f'SimAnalysisCase(name="{self.name}")'

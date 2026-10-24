@@ -14,10 +14,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class HybridShapeExtremum(HybridShape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
@@ -53,7 +51,6 @@ class HybridShapeExtremum(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction() As HybridShapeDirection
@@ -76,7 +73,6 @@ class HybridShapeExtremum(HybridShape):
     def direction2(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction2() As HybridShapeDirection
@@ -99,7 +95,6 @@ class HybridShapeExtremum(HybridShape):
     def direction3(self) -> HybridShapeDirection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property Direction3() As HybridShapeDirection
@@ -122,7 +117,6 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtremumType() As long
@@ -146,7 +140,6 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type2(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtremumType2() As long
@@ -170,7 +163,6 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type3(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ExtremumType3() As long
@@ -194,7 +186,6 @@ class HybridShapeExtremum(HybridShape):
     def reference_element(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
                 | Property ReferenceElement() As Reference
@@ -214,4 +205,4 @@ class HybridShapeExtremum(HybridShape):
         self.com_object.ReferenceElement = value
 
     def __repr__(self):
-        return f'HybridShapeExtremum(name="{ self.name }")'
+        return f'HybridShapeExtremum(name="{self.name}")'

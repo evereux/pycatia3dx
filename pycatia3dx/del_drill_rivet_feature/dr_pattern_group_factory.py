@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class DrPatternGroupFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +37,6 @@ class DrPatternGroupFactory(AnyObject):
     def create_pattern_group(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreatePatternGroup() As AnyObject
@@ -55,4 +52,4 @@ class DrPatternGroupFactory(AnyObject):
         return AnyObject(self.com_object.CreatePatternGroup())
 
     def __repr__(self):
-        return f'DrPatternGroupFactory(name="{ self.name }")'
+        return f'DrPatternGroupFactory(name="{self.name}")'

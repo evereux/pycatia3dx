@@ -14,7 +14,6 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class Ellipse2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -40,7 +39,6 @@ class Ellipse2D(Curve2D):
     def center_point(self) -> Point2D:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property CenterPoint() As Point2D
@@ -74,7 +72,6 @@ class Ellipse2D(Curve2D):
     def major_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property MajorRadius() As double (Read Only)
@@ -99,7 +96,6 @@ class Ellipse2D(Curve2D):
     def minor_radius(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property MinorRadius() As double (Read Only)
@@ -123,7 +119,6 @@ class Ellipse2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetCenter(CATSafeArrayVariant oCenter)
@@ -160,7 +155,6 @@ class Ellipse2D(Curve2D):
     def get_major_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
@@ -197,7 +191,6 @@ class Ellipse2D(Curve2D):
     def get_minor_axis(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
@@ -235,7 +228,6 @@ class Ellipse2D(Curve2D):
                  i_minor_radius: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetData(double iCenterX,double iCenterY,double iMajorX,double

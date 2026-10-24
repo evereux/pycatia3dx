@@ -13,7 +13,6 @@ from pycatia3dx.sketcher.curve_2d import Curve2D
 class Line2D(Curve2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -38,7 +37,6 @@ class Line2D(Curve2D):
     def get_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetDirection(CATSafeArrayVariant oDirection)
@@ -80,7 +78,6 @@ class Line2D(Curve2D):
     def get_origin(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub GetOrigin(CATSafeArrayVariant oOrigin)
@@ -118,7 +115,6 @@ class Line2D(Curve2D):
     def set_data(self, i_x: float, i_y: float, i_x_direction: float, i_y_direction: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetData(double iX,double iY,double iXDirection,double

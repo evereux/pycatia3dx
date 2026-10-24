@@ -13,10 +13,8 @@ from pycatia3dx.mode.reference import Reference
 
 
 class SurfaceBasedShape(Shape):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -45,7 +43,6 @@ class SurfaceBasedShape(Shape):
     def surface(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Surface() As Reference
@@ -65,4 +62,4 @@ class SurfaceBasedShape(Shape):
         self.com_object.Surface = value
 
     def __repr__(self):
-        return f'SurfaceBasedShape(name="{ self.name }")'
+        return f'SurfaceBasedShape(name="{self.name}")'

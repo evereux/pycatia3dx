@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Layout2DFactory(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -35,7 +34,6 @@ class Layout2DFactory(AnyObject):
     def create_2d_layout(self, i_standard_name: str) -> Layout2DRoot:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Create2DLayout(CATBSTR iStandardName) As Layout2DRoot

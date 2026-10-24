@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_connector_section import SimConnecto
 
 
 class SimConnector(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimConnector(AnyObject):
     def connector_coupling_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorCouplingType() As SimConnectorCouplingType
@@ -99,7 +96,6 @@ class SimConnector(AnyObject):
     def connector_section(self) -> SimConnectorSection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ConnectorSection() As SimConnectorSection (Read Only)
@@ -114,7 +110,6 @@ class SimConnector(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -151,4 +146,4 @@ class SimConnector(AnyObject):
         return self.com_object.SpecTreeCategory
 
     def __repr__(self):
-        return f'SimConnector(name="{ self.name }")'
+        return f'SimConnector(name="{self.name}")'

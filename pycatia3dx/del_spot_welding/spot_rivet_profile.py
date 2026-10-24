@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotRivetProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class SpotRivetProfile(AnyObject):
     def approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachDirection() As DELSpotRivetApproachDirection
@@ -74,7 +71,6 @@ class SpotRivetProfile(AnyObject):
     def hold_time(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HoldTime() As double
@@ -105,7 +101,6 @@ class SpotRivetProfile(AnyObject):
     def joint_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointDirection() As short
@@ -136,7 +131,6 @@ class SpotRivetProfile(AnyObject):
     def joint_number(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JointNumber() As short
@@ -167,7 +161,6 @@ class SpotRivetProfile(AnyObject):
     def part_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PartThickness() As double
@@ -198,7 +191,6 @@ class SpotRivetProfile(AnyObject):
     def push_depth(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PushDepth() As double
@@ -229,7 +221,6 @@ class SpotRivetProfile(AnyObject):
     def tool_close_position(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolClosePosition() As double
@@ -259,7 +250,6 @@ class SpotRivetProfile(AnyObject):
     def get_accuracy_profile(self, i_move: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAccuracyProfile(DELSpotRivetProfileMoves iMove) As
@@ -286,7 +276,6 @@ class SpotRivetProfile(AnyObject):
     def get_hold_time_parameter(self, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetHoldTimeParameter(CATBSTR oParamName,AnyObject
@@ -313,7 +302,6 @@ class SpotRivetProfile(AnyObject):
     def get_motion_profile(self, i_move: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionProfile(DELSpotRivetProfileMoves iMove) As
@@ -340,7 +328,6 @@ class SpotRivetProfile(AnyObject):
     def get_move_status(self, i_move: int, o_enabled: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
@@ -368,7 +355,6 @@ class SpotRivetProfile(AnyObject):
     def get_moving_tip_clearance_parameter(self, i_move: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
@@ -398,7 +384,6 @@ class SpotRivetProfile(AnyObject):
     def get_moving_tip_clearance_value(self, i_move: int, o_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
@@ -424,7 +409,6 @@ class SpotRivetProfile(AnyObject):
     def get_push_depth_parameter(self, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetPushDepthParameter(CATBSTR oParamName,AnyObject
@@ -451,7 +435,6 @@ class SpotRivetProfile(AnyObject):
     def get_stationary_tip_clearance_parameter(self, i_move: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
@@ -481,7 +464,6 @@ class SpotRivetProfile(AnyObject):
     def get_stationary_tip_clearance_value(self, i_move: int, o_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
@@ -507,7 +489,6 @@ class SpotRivetProfile(AnyObject):
     def set_accuracy_profile(self, i_move: int, ih_accuracy_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyProfile(DELSpotRivetProfileMoves iMove,AnyObject
@@ -535,7 +516,6 @@ class SpotRivetProfile(AnyObject):
     def set_hold_time_parameter(self, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetHoldTimeParameter(CATBSTR iParamName,AnyObject
@@ -562,7 +542,6 @@ class SpotRivetProfile(AnyObject):
     def set_motion_profile(self, i_move: int, ih_motion_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionProfile(DELSpotRivetProfileMoves iMove,AnyObject
@@ -590,7 +569,6 @@ class SpotRivetProfile(AnyObject):
     def set_move_status(self, i_move: int, i_enabled: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
@@ -618,7 +596,6 @@ class SpotRivetProfile(AnyObject):
     def set_moving_tip_clearance_parameter(self, i_move: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
@@ -649,7 +626,6 @@ class SpotRivetProfile(AnyObject):
     def set_moving_tip_clearance_value(self, i_move: int, i_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
@@ -677,7 +653,6 @@ class SpotRivetProfile(AnyObject):
     def set_push_depth_parameter(self, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPushDepthParameter(CATBSTR iParamName,AnyObject
@@ -704,7 +679,6 @@ class SpotRivetProfile(AnyObject):
     def set_stationary_tip_clearance_parameter(self, i_move: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
@@ -735,7 +709,6 @@ class SpotRivetProfile(AnyObject):
     def set_stationary_tip_clearance_value(self, i_move: int, i_tip_clearance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
@@ -761,4 +734,4 @@ class SpotRivetProfile(AnyObject):
         return self.com_object.SetStationaryTipClearanceValue(i_move, i_tip_clearance)
 
     def __repr__(self):
-        return f'SpotRivetProfile(name="{ self.name }")'
+        return f'SpotRivetProfile(name="{self.name}")'

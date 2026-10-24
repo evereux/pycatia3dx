@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ShiftedProfileTolerance(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class ShiftedProfileTolerance(AnyObject):
     def shift_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShiftValue() As double
@@ -63,7 +61,6 @@ class ShiftedProfileTolerance(AnyObject):
     def get_shift_direction(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetShiftDirection(CATSafeArrayVariant opDirection)
@@ -109,7 +106,6 @@ class ShiftedProfileTolerance(AnyObject):
     def get_shift_side(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetShiftSide(CATSafeArrayVariant opPoint)

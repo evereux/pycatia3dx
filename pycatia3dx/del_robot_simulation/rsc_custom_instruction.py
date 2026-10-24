@@ -11,10 +11,8 @@ from pycatia3dx.del_robot_simulation.rsc_instruction import RscInstruction
 
 
 class RscCustomInstruction(RscInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,4 +36,4 @@ class RscCustomInstruction(RscInstruction):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'RscCustomInstruction(name="{ self.name }")'
+        return f'RscCustomInstruction(name="{self.name}")'

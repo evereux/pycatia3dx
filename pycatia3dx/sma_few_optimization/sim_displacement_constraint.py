@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_axis_system import SimAxisSystem
 
 
 class SimDisplacementConstraint(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimDisplacementConstraint(AnyObject):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -93,7 +90,6 @@ class SimDisplacementConstraint(AnyObject):
     def load_case(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property LoadCase() As CATBaseDispatch (Read Only)
@@ -108,7 +104,6 @@ class SimDisplacementConstraint(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimDisplacementConstraintType
@@ -130,7 +125,6 @@ class SimDisplacementConstraint(AnyObject):
     def get_maximum_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumDisplacement(double oVal)
@@ -149,7 +143,6 @@ class SimDisplacementConstraint(AnyObject):
     def get_maximum_total_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaximumTotalDisplacement(double oVal)
@@ -168,7 +161,6 @@ class SimDisplacementConstraint(AnyObject):
     def get_minimum_displacement(self, o_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMinimumDisplacement(double oVal)
@@ -187,7 +179,6 @@ class SimDisplacementConstraint(AnyObject):
     def set_maximum_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumDisplacement(double iVal)
@@ -206,7 +197,6 @@ class SimDisplacementConstraint(AnyObject):
     def set_maximum_total_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaximumTotalDisplacement(double iVal)
@@ -225,7 +215,6 @@ class SimDisplacementConstraint(AnyObject):
     def set_minimum_displacement(self, i_val: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMinimumDisplacement(double iVal)
@@ -242,4 +231,4 @@ class SimDisplacementConstraint(AnyObject):
         return self.com_object.SetMinimumDisplacement(i_val)
 
     def __repr__(self):
-        return f'SimDisplacementConstraint(name="{ self.name }")'
+        return f'SimDisplacementConstraint(name="{self.name}")'

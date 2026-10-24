@@ -23,7 +23,6 @@ if TYPE_CHECKING:
 class MATPLMService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,7 +56,6 @@ class MATPLMService(Service):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialCore(AnyObject iSupport,MaterialGeneric
@@ -112,7 +110,6 @@ class MATPLMService(Service):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialCovering(AnyObject iSupport,Collection
@@ -162,7 +159,6 @@ class MATPLMService(Service):
     def get_materials_in_session(self, o_materials_in_session: Collection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMaterialsInSession(Collection oMaterialsInSession)
@@ -193,7 +189,6 @@ class MATPLMService(Service):
     def load_materials(self, i_vpm_reference: AnyObject, i_recursive: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub LoadMaterials(AnyObject iVPMReference,boolean iRecursive)
@@ -226,7 +221,6 @@ class MATPLMService(Service):
     def plm_create(self, i_user_type: str, o_plm_mat_entity: MaterialGeneric, o_editor: Editor) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMCreate(CATBSTR iUserType,MaterialGeneric oPLMMatEntity,Editor
@@ -273,7 +267,6 @@ class MATPLMService(Service):
     def remove_applied_material(self, i_applied_material: AppliedMaterial) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveAppliedMaterial(AppliedMaterial iAppliedMaterial)
@@ -304,7 +297,6 @@ class MATPLMService(Service):
     def set_display_msg_box(self, ibool_display_msg_box: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDisplayMsgBox(boolean iboolDisplayMsgBox)
@@ -339,7 +331,6 @@ class MATPLMService(Service):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialCore(AnyObject iSupport,MaterialGeneric
@@ -395,7 +386,6 @@ class MATPLMService(Service):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMaterialCovering(AnyObject iSupport,MaterialGeneric

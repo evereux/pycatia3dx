@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_opening import StrOpening
 class StrProfileOnOpening(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class StrProfileOnOpening(AnyObject):
     def opening(self) -> StrOpening:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Opening() As StrOpening
@@ -73,7 +71,6 @@ class StrProfileOnOpening(AnyObject):
     def get_trace_offset(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTraceOffset() As Parameter

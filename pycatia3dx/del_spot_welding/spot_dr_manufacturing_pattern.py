@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SpotDrManufacturingPattern(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +34,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def add_mft(self, i_mft: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddMFT(AnyObject iMFT)
@@ -55,7 +52,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_mft(self, i_position: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMFT(short iPosition) As AnyObject
@@ -77,7 +73,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_mf_ts(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMFTs() As CATSafeArrayVariant
@@ -95,7 +90,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetName() As CATBSTR
@@ -113,7 +107,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def get_owner(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOwner() As AnyObject
@@ -131,7 +124,6 @@ class SpotDrManufacturingPattern(AnyObject):
     def remove_mft(self, i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveMFT(short iPosition)
@@ -148,4 +140,4 @@ class SpotDrManufacturingPattern(AnyObject):
         return self.com_object.RemoveMFT(i_position)
 
     def __repr__(self):
-        return f'SpotDrManufacturingPattern(name="{ self.name }")'
+        return f'SpotDrManufacturingPattern(name="{self.name}")'

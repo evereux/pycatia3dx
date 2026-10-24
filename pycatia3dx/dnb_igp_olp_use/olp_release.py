@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_instruction import OLPInstruction
 
 
 class OLPRelease(OLPInstruction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPRelease(OLPInstruction):
     def products(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Products() As CATSafeArrayVariant (Read Only)
@@ -56,7 +53,6 @@ class OLPRelease(OLPInstruction):
     def add_product(self, i_vpm_occurrence: VPMOccurrence) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProduct(VPMOccurrence iVPMOccurrence)
@@ -75,7 +71,6 @@ class OLPRelease(OLPInstruction):
     def add_product_by_name(self, i_product: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddProductByName(CATBSTR iProduct)
@@ -96,4 +91,4 @@ class OLPRelease(OLPInstruction):
         return self.com_object.AddProductByName(i_product)
 
     def __repr__(self):
-        return f'OLPRelease(name="{ self.name }")'
+        return f'OLPRelease(name="{self.name}")'

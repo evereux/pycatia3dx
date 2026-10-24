@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class ProjectedToleranceZone(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -41,7 +40,6 @@ class ProjectedToleranceZone(AnyObject):
     def length(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Length() As double (Read Only)
@@ -58,7 +56,6 @@ class ProjectedToleranceZone(AnyObject):
     def position(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Position() As double (Read Only)
@@ -74,7 +71,6 @@ class ProjectedToleranceZone(AnyObject):
     def get_projected_tol_zone_reference(self, op_reference: tuple) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetProjectedTolZoneReference(CATSafeArrayVariant

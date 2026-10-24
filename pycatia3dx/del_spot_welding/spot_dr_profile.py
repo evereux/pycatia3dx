@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SpotDrProfile(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class SpotDrProfile(AnyObject):
     def approach_clearance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachClearance() As double
@@ -74,7 +72,6 @@ class SpotDrProfile(AnyObject):
     def approach_direction(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ApproachDirection() As DELDRApproachDirection
@@ -108,7 +105,6 @@ class SpotDrProfile(AnyObject):
     def precycle_feature(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PrecycleFeature() As DELDRProfilePrecycle
@@ -139,7 +135,6 @@ class SpotDrProfile(AnyObject):
     def retract_distance(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RetractDistance() As double
@@ -170,7 +165,6 @@ class SpotDrProfile(AnyObject):
     def tool_kin_simulation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ToolKinSimulation() As boolean
@@ -201,7 +195,6 @@ class SpotDrProfile(AnyObject):
     def add_user_cycle(self, i_name: str, o_cycle: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddUserCycle(CATBSTR iName,DELDRProfileCycle oCycle)
@@ -227,7 +220,6 @@ class SpotDrProfile(AnyObject):
     def get_accuracy_profile(self, i_move: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAccuracyProfile(DELDRProfileMoves iMove) As AnyObject
@@ -253,7 +245,6 @@ class SpotDrProfile(AnyObject):
     def get_approach_clearance_parameter(self, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetApproachClearanceParameter(CATBSTR oParamName,AnyObject
@@ -280,7 +271,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_accuracy_profile(self, i_cycle: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleAccuracyProfile(DELDRProfileCycle iCycle) As
@@ -307,7 +297,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_depth(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleDepth(DELDRProfileCycle iCycle) As double
@@ -332,7 +321,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_depth_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -363,7 +351,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_distance(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleDistance(DELDRProfileCycle iCycle) As double
@@ -388,7 +375,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_distance_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -419,7 +405,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_joint_direction(self, i_cycle: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleJointDirection(DELDRProfileCycle iCycle) As short
@@ -445,7 +430,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_joint_number(self, i_cycle: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleJointNumber(DELDRProfileCycle iCycle) As short
@@ -470,7 +454,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_motion_profile(self, i_cycle: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleMotionProfile(DELDRProfileCycle iCycle) As
@@ -497,7 +480,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_name(self, i_cycle: int) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleName(DELDRProfileCycle iCycle) As CATBSTR
@@ -522,7 +504,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_simulation_time(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleSimulationTime(DELDRProfileCycle iCycle) As
@@ -549,7 +530,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_simulation_time_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -580,7 +560,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_start_joint_values(self, i_cycle: int, o_tool_joint_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
@@ -608,7 +587,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpx_offset(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleTCPXOffset(DELDRProfileCycle iCycle) As double
@@ -633,7 +611,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpx_offset_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -664,7 +641,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpy_offset(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleTCPYOffset(DELDRProfileCycle iCycle) As double
@@ -689,7 +665,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpy_offset_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -720,7 +695,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpz_offset(self, i_cycle: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCycleTCPZOffset(DELDRProfileCycle iCycle) As double
@@ -745,7 +719,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tcpz_offset_parameter(self, i_cycle: int, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -776,7 +749,6 @@ class SpotDrProfile(AnyObject):
     def get_cycle_tool_profile(self, i_cycle: int, oh_tool_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
@@ -804,7 +776,6 @@ class SpotDrProfile(AnyObject):
     def get_cycles(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetCycles(CATSafeArrayVariant oCycleValues,CATSafeArrayVariant
@@ -844,7 +815,6 @@ class SpotDrProfile(AnyObject):
     def get_motion_profile(self, i_move: int) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMotionProfile(DELDRProfileMoves iMove) As AnyObject
@@ -870,7 +840,6 @@ class SpotDrProfile(AnyObject):
     def get_move_status(self, i_move: int, o_enabled: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetMoveStatus(DELDRProfileMoves iMove,boolean oEnabled)
@@ -897,7 +866,6 @@ class SpotDrProfile(AnyObject):
     def get_profile_type(self, o_profile_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetProfileType(DELDRProfileType oProfileType)
@@ -919,7 +887,6 @@ class SpotDrProfile(AnyObject):
     def get_retract_distance_parameter(self, o_param_name: str, o_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetRetractDistanceParameter(CATBSTR oParamName,AnyObject
@@ -946,7 +913,6 @@ class SpotDrProfile(AnyObject):
     def remove_user_cycle(self, i_cycle: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveUserCycle(DELDRProfileCycle iCycle)
@@ -970,7 +936,6 @@ class SpotDrProfile(AnyObject):
     def set_accuracy_profile(self, i_move: int, ih_accuracy_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAccuracyProfile(DELDRProfileMoves iMove,AnyObject
@@ -998,7 +963,6 @@ class SpotDrProfile(AnyObject):
     def set_approach_clearance_parameter(self, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApproachClearanceParameter(CATBSTR iParamName,AnyObject
@@ -1025,7 +989,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_accuracy_profile(self, i_cycle: int, ih_accuracy_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleAccuracyProfile(DELDRProfileCycle iCycle,AnyObject
@@ -1053,7 +1016,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_depth(self, i_cycle: int, i_depth: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleDepth(DELDRProfileCycle iCycle,double iDepth)
@@ -1079,7 +1041,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_depth_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1110,7 +1071,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_distance(self, i_cycle: int, i_distance: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleDistance(DELDRProfileCycle iCycle,double
@@ -1137,7 +1097,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_distance_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1168,7 +1127,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_joint_direction(self, i_cycle: int, i_joint_dir: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleJointDirection(DELDRProfileCycle iCycle,short
@@ -1196,7 +1154,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_joint_number(self, i_cycle: int, i_joint_num: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleJointNumber(DELDRProfileCycle iCycle,short
@@ -1223,7 +1180,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_motion_profile(self, i_cycle: int, ih_motion_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleMotionProfile(DELDRProfileCycle iCycle,AnyObject
@@ -1251,7 +1207,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_name(self, i_cycle: int, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleName(DELDRProfileCycle iCycle,CATBSTR iName)
@@ -1277,7 +1232,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_simulation_time(self, i_cycle: int, i_simulation_time: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleSimulationTime(DELDRProfileCycle iCycle,double
@@ -1305,7 +1259,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_simulation_time_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1336,7 +1289,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_start_joint_values(self, i_cycle: int, i_tool_joint_values: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
@@ -1364,7 +1316,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_status(self, i_cycle: int, i_status: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleStatus(DELDRProfileCycle iCycle,boolean iStatus)
@@ -1390,7 +1341,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpx_offset(self, i_cycle: int, i_tcpx_offset: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPXOffset(DELDRProfileCycle iCycle,double
@@ -1417,7 +1367,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpx_offset_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1448,7 +1397,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpy_offset(self, i_cycle: int, i_tcpy_offset: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPYOffset(DELDRProfileCycle iCycle,double
@@ -1475,7 +1423,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpy_offset_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1506,7 +1453,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpz_offset(self, i_cycle: int, i_tcpz_offset: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPZOffset(DELDRProfileCycle iCycle,double
@@ -1533,7 +1479,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tcpz_offset_parameter(self, i_cycle: int, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
@@ -1564,7 +1509,6 @@ class SpotDrProfile(AnyObject):
     def set_cycle_tool_profile(self, i_cycle: int, ih_tool_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
@@ -1592,7 +1536,6 @@ class SpotDrProfile(AnyObject):
     def set_motion_profile(self, i_move: int, ih_motion_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMotionProfile(DELDRProfileMoves iMove,AnyObject
@@ -1620,7 +1563,6 @@ class SpotDrProfile(AnyObject):
     def set_move_status(self, i_move: int, i_enabled: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetMoveStatus(DELDRProfileMoves iMove,boolean iEnabled)
@@ -1647,7 +1589,6 @@ class SpotDrProfile(AnyObject):
     def set_retract_distance_parameter(self, i_param_name: str, i_profile: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRetractDistanceParameter(CATBSTR iParamName,AnyObject

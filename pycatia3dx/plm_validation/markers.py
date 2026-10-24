@@ -18,7 +18,6 @@ from pycatia3dx.types.general import CATVariant
 class Markers(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class Markers(Collection):
     def add(self, i_text: str) -> Marker:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Add(CATBSTR iText) As Marker
@@ -76,7 +74,6 @@ class Markers(Collection):
     def add_shape(self, i_coordinates: tuple, i_text: str) -> Marker:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Func AddShape(CATSafeArrayVariant iCoordinates,CATBSTR iText) As
@@ -134,7 +131,6 @@ class Markers(Collection):
     def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As CATBaseDispatch
@@ -172,7 +168,6 @@ class Markers(Collection):
     def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Remove(CATVariant iIndex)

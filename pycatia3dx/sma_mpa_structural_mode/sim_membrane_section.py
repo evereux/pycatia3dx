@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_structural_mode.sim_rebar_layers import SimRebarLayers
 
 
 class SimMembraneSection(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -78,7 +76,6 @@ class SimMembraneSection(AnyObject):
     def all_rebar_layers(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
@@ -93,7 +90,6 @@ class SimMembraneSection(AnyObject):
     def material_behavior(self) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehavior() As CATBaseDispatch
@@ -116,7 +112,6 @@ class SimMembraneSection(AnyObject):
     def material_behavior_by_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialBehaviorByName() As CATBSTR
@@ -139,7 +134,6 @@ class SimMembraneSection(AnyObject):
     def orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As SimOrientation (Read Only)
@@ -154,7 +148,6 @@ class SimMembraneSection(AnyObject):
     def poisson_value(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonValue() As double
@@ -177,7 +170,6 @@ class SimMembraneSection(AnyObject):
     def poisson_value_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property PoissonValueFlag() As boolean
@@ -205,7 +197,6 @@ class SimMembraneSection(AnyObject):
     def rebar_layers_orientation(self) -> SimOrientation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RebarLayersOrientation() As SimOrientation (Read
@@ -221,7 +212,6 @@ class SimMembraneSection(AnyObject):
     def rebars(self) -> SimRebarLayers:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Rebars() As SimRebarLayers (Read Only)
@@ -236,7 +226,6 @@ class SimMembraneSection(AnyObject):
     def reduced_integration_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReducedIntegrationFlag() As boolean
@@ -264,7 +253,6 @@ class SimMembraneSection(AnyObject):
     def spec_tree_category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SpecTreeCategory() As CATBSTR (Read Only)
@@ -304,7 +292,6 @@ class SimMembraneSection(AnyObject):
     def thickness_field(self) -> SimScalarField:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ThicknessField() As SimScalarField (Read Only)
@@ -319,7 +306,6 @@ class SimMembraneSection(AnyObject):
     def uniform_thickness(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThickness() As double
@@ -343,7 +329,6 @@ class SimMembraneSection(AnyObject):
     def uniform_thickness_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UniformThicknessFlag() As boolean (Read Only)
@@ -362,7 +347,6 @@ class SimMembraneSection(AnyObject):
     def add_rebar_layer(self, i_type: str, o_feature: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
@@ -375,4 +359,4 @@ class SimMembraneSection(AnyObject):
         return self.com_object.AddRebarLayer(i_type, o_feature.com_object)
 
     def __repr__(self):
-        return f'SimMembraneSection(name="{ self.name }")'
+        return f'SimMembraneSection(name="{self.name}")'

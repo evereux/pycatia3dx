@@ -14,10 +14,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimTensileFailure(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -82,7 +80,6 @@ class SimTensileFailure(AnyObject):
     def deviatoric_stress_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DeviatoricStressStatus() As SimTensileFailureCriteria
@@ -113,7 +110,6 @@ class SimTensileFailure(AnyObject):
     def element_removal_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ElementRemovalFlag() As boolean
@@ -141,7 +137,6 @@ class SimTensileFailure(AnyObject):
     def hydro_stress_status(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property HydroStressStatus() As SimTensileFailureCriteria
@@ -172,7 +167,6 @@ class SimTensileFailure(AnyObject):
     def material_table(self) -> SimMaterialTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialTable() As SimMaterialTable (Read Only)
@@ -186,7 +180,6 @@ class SimTensileFailure(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimTensileFailureMaterialTableColumn
@@ -209,4 +202,4 @@ class SimTensileFailure(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimTensileFailure(name="{ self.name }")'
+        return f'SimTensileFailure(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimXRep(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +36,6 @@ class SimXRep(AnyObject):
     def file_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FileName() As CATBSTR
@@ -60,7 +58,6 @@ class SimXRep(AnyObject):
     def nav_rep_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property NavRepName() As CATBSTR
@@ -82,7 +79,6 @@ class SimXRep(AnyObject):
     def add_relation(self, i_pointed_object: AnyObject, i_relation_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddRelation(AnyObject iPointedObject,SimXRepRelationType
@@ -107,7 +103,6 @@ class SimXRep(AnyObject):
     def export_file(self, i_folder_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportFile(CATBSTR iFolderPath)
@@ -126,7 +121,6 @@ class SimXRep(AnyObject):
     def export_nav_rep(self, i_folder_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ExportNavRep(CATBSTR iFolderPath)
@@ -145,7 +139,6 @@ class SimXRep(AnyObject):
     def generate_nav_rep(self, i_file_path: str, i_length_unit: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GenerateNavRep(CATBSTR iFilePath,CATBSTR iLengthUnit)
@@ -176,7 +169,6 @@ class SimXRep(AnyObject):
     def import_file(self, i_folder_path: str, i_keep_nav_rep: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportFile(CATBSTR iFolderPath,boolean iKeepNavRep)
@@ -200,7 +192,6 @@ class SimXRep(AnyObject):
     def import_nav_rep(self, i_folder_path: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ImportNavRep(CATBSTR iFolderPath)
@@ -219,7 +210,6 @@ class SimXRep(AnyObject):
     def remove_relation(self, i_relation_pointed_object: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveRelation(AnyObject iRelationPointedObject)

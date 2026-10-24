@@ -19,7 +19,6 @@ if TYPE_CHECKING:
 class SrsGridFace(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class SrsGridFace(AnyObject):
     def category(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Category() As CATBSTR
@@ -74,7 +72,6 @@ class SrsGridFace(AnyObject):
     def orientation(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Orientation() As boolean (Read Only)
@@ -100,7 +97,6 @@ class SrsGridFace(AnyObject):
     def short_name(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ShortName() As CATBSTR
@@ -130,7 +126,6 @@ class SrsGridFace(AnyObject):
     def get_abs_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAbsOffset() As double
@@ -155,7 +150,6 @@ class SrsGridFace(AnyObject):
     def get_grid_set(self) -> 'SrsGridSet':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGridSet() As SrsGridSet
@@ -180,7 +174,6 @@ class SrsGridFace(AnyObject):
     def get_reference(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetReference() As Reference
@@ -205,7 +198,6 @@ class SrsGridFace(AnyObject):
     def get_rel_offset(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRelOffset() As double
@@ -230,7 +222,6 @@ class SrsGridFace(AnyObject):
     def is_origin_face(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func IsOriginFace() As boolean
@@ -257,7 +248,6 @@ class SrsGridFace(AnyObject):
     def reset_category(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ResetCategory()

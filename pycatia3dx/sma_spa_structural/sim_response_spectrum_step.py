@@ -13,10 +13,8 @@ from pycatia3dx.sma_spa_structural.sim_spectrum import SimSpectrum
 
 
 class SimResponseSpectrumStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimResponseSpectrumStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -100,7 +97,6 @@ class SimResponseSpectrumStep(SimStep):
     def axis_system(self) -> SimAxisSystem:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AxisSystem() As SimAxisSystem (Read Only)
@@ -115,7 +111,6 @@ class SimResponseSpectrumStep(SimStep):
     def damping_definition(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingDefinition() As
@@ -139,7 +134,6 @@ class SimResponseSpectrumStep(SimStep):
     def directional_summation_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DirectionalSummationMethod() As
@@ -163,7 +157,6 @@ class SimResponseSpectrumStep(SimStep):
     def missing_mass_method_flag(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MissingMassMethodFlag() As boolean
@@ -188,7 +181,6 @@ class SimResponseSpectrumStep(SimStep):
     def modal_summation_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModalSummationMethod() As
@@ -212,7 +204,6 @@ class SimResponseSpectrumStep(SimStep):
     def rigid_response_method(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RigidResponseMethod() As
@@ -235,7 +226,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_align_axis(self, i_direction_type: int) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetAlignAxis(SimResponseSpectrumStepDirectionType iDirectionType) As
@@ -258,7 +248,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_apply_directional_spectrum_flag(self, i_direction_type: int) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
@@ -283,7 +272,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_cut_off_frequency(self, i_direction_type: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCutOffFrequency(SimResponseSpectrumStepDirectionType iDirectionType) As
@@ -306,7 +294,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_periodic_region_frequency(self, i_direction_type: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
@@ -329,7 +316,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_rigid_region_frequency(self, i_direction_type: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
@@ -352,7 +338,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_scale_factor(self, i_direction_type: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType) As
@@ -375,7 +360,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_spectrum(self, i_direction_type: int) -> SimSpectrum:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType) As
@@ -398,7 +382,6 @@ class SimResponseSpectrumStep(SimStep):
     def get_time_duration(self, i_direction_type: int) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType) As
@@ -421,7 +404,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_align_axis(self, i_direction_type: int, i_align_axis: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAlignAxis(SimResponseSpectrumStepDirectionType
@@ -445,7 +427,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_apply_directional_spectrum_flag(self, i_direction_type: int, i_apply_spectrum: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
@@ -470,7 +451,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_cut_off_frequency(self, i_direction_type: int, i_frequency: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetCutOffFrequency(SimResponseSpectrumStepDirectionType
@@ -493,7 +473,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_periodic_region_frequency(self, i_direction_type: int, i_frequency: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
@@ -516,7 +495,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_rigid_region_frequency(self, i_direction_type: int, i_frequency: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
@@ -539,7 +517,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_scale_factor(self, i_direction_type: int, i_scale_factor: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType,double
@@ -562,7 +539,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_spectrum(self, i_direction_type: int, i_spectrum: SimSpectrum) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType,SimSpectrum
@@ -585,7 +561,6 @@ class SimResponseSpectrumStep(SimStep):
     def set_time_duration(self, i_direction_type: int, i_time_duration: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType,double
@@ -606,4 +581,4 @@ class SimResponseSpectrumStep(SimStep):
         return self.com_object.SetTimeDuration(i_direction_type, i_time_duration)
 
     def __repr__(self):
-        return f'SimResponseSpectrumStep(name="{ self.name }")'
+        return f'SimResponseSpectrumStep(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class Factory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -37,4 +35,4 @@ class Factory(AnyObject):
         self.com_object = com_object
 
     def __repr__(self):
-        return f'Factory(name="{ self.name }")'
+        return f'Factory(name="{self.name}")'

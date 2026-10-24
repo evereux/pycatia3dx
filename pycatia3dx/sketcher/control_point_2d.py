@@ -13,7 +13,6 @@ from pycatia3dx.sketcher.point_2d import Point2D
 class ControlPoint2D(Point2D):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +38,6 @@ class ControlPoint2D(Point2D):
     def curvature(self) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Curvature() As double
@@ -73,7 +71,6 @@ class ControlPoint2D(Point2D):
     def get_tangent(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub GetTangent(CATSafeArrayVariant oTangent)
@@ -110,7 +107,6 @@ class ControlPoint2D(Point2D):
     def set_tangent(self, i_tangent_x: float, i_tangent_y: float) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub SetTangent(double iTangentX,double iTangentY)
@@ -134,7 +130,6 @@ class ControlPoint2D(Point2D):
     def unset_curvature(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub UnsetCurvature()
@@ -147,7 +142,6 @@ class ControlPoint2D(Point2D):
     def unset_tangent(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub UnsetTangent()

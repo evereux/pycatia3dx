@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class SimPenetrationCheck(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -77,7 +75,6 @@ class SimPenetrationCheck(AnyObject):
     def type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As SimPenetrationCheckType
@@ -97,4 +94,4 @@ class SimPenetrationCheck(AnyObject):
         self.com_object.Type = value
 
     def __repr__(self):
-        return f'SimPenetrationCheck(name="{ self.name }")'
+        return f'SimPenetrationCheck(name="{self.name}")'

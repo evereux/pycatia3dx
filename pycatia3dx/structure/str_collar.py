@@ -16,7 +16,6 @@ from pycatia3dx.structure.str_parameters import StrParameters
 class StrCollar(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +42,6 @@ class StrCollar(AnyObject):
     def collar_parameters(self) -> StrParameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property CollarParameters() As StrParameters (Read Only)
@@ -79,7 +77,6 @@ class StrCollar(AnyObject):
     def material(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Material(CATBSTR iMaterial)
@@ -130,7 +127,6 @@ class StrCollar(AnyObject):
     def material_throw_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property MaterialThrowOrientation(CATStrCollarThrowOrientation
@@ -175,7 +171,6 @@ class StrCollar(AnyObject):
     def thickness(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Thickness() As Parameter (Read Only)
@@ -206,7 +201,6 @@ class StrCollar(AnyObject):
     def update(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Update()

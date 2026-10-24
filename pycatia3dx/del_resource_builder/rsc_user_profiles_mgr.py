@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class RscUserProfilesMgr(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -63,7 +62,6 @@ class RscUserProfilesMgr(Collection):
     def build_user_group(self, i_name: str) -> RscApplicativeProfilesGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func BuildUserGroup(CATBSTR iName) As
@@ -93,7 +91,6 @@ class RscUserProfilesMgr(Collection):
     def item(self, i_index: CATVariant) -> RscApplicativeProfilesGroup:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As RscApplicativeProfilesGroup
@@ -139,7 +136,6 @@ class RscUserProfilesMgr(Collection):
     def remove_user_group(self, i_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveUserGroup(CATBSTR iName)

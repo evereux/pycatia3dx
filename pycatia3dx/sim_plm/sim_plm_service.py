@@ -16,7 +16,6 @@ from pycatia3dx.sim_plm.simulation_reference import SimulationReference
 class SIMPLMService(Service):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -52,7 +51,6 @@ class SIMPLMService(Service):
     ) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub PLMCreate(CATBSTR iSimulationName,CATBSTR iSimulationType,PLMEntity

@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class PLMPlay(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class PLMPlay(AnyObject):
     def play(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Play()
@@ -49,7 +47,6 @@ class PLMPlay(AnyObject):
     def stop(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Stop()

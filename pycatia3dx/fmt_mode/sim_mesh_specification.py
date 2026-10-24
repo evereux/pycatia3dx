@@ -15,7 +15,6 @@ from pycatia3dx.types.general import CATVariant
 class SimMeshSpecification(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SimMeshSpecification(AnyObject):
     def type(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Type() As CATBSTR (Read Only)
@@ -52,7 +50,6 @@ class SimMeshSpecification(AnyObject):
     def get_attribute_value(self, i_attribute: str, o_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
@@ -75,7 +72,6 @@ class SimMeshSpecification(AnyObject):
     def set_attribute_value(self, i_attribute: str, i_value: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAttributeValue(CATBSTR iAttribute,CATVariant iValue)

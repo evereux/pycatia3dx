@@ -14,10 +14,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrProfilePtLength(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -40,7 +38,6 @@ class StrProfilePtLength(AnyObject):
     def direction(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Direction() As Reference
@@ -72,7 +69,6 @@ class StrProfilePtLength(AnyObject):
     def start_point(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StartPoint() As Reference
@@ -105,7 +101,6 @@ class StrProfilePtLength(AnyObject):
     def get_length(self) -> Parameter:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetLength() As Parameter
@@ -127,7 +122,6 @@ class StrProfilePtLength(AnyObject):
     def get_orientation(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOrientation() As long
@@ -166,7 +160,6 @@ class StrProfilePtLength(AnyObject):
     def reverse_direction(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ReverseDirection()
@@ -177,4 +170,4 @@ class StrProfilePtLength(AnyObject):
         return self.com_object.ReverseDirection()
 
     def __repr__(self):
-        return f'StrProfilePtLength(name="{ self.name }")'
+        return f'StrProfilePtLength(name="{self.name}")'

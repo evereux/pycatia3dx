@@ -17,7 +17,6 @@ from pycatia3dx.structure.structure_profile import StructureProfile
 class StrStiffener(StructureProfile):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +41,6 @@ class StrStiffener(StructureProfile):
     def str_break(self) -> StrBreak:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrBreak() As StrBreak (Read Only)
@@ -66,7 +64,6 @@ class StrStiffener(StructureProfile):
     def str_category_mngt(self) -> StrCategoryMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
@@ -90,7 +87,6 @@ class StrStiffener(StructureProfile):
     def str_profile_crv(self) -> StrProfileCrv:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileCrv() As StrProfileCrv (Read Only)
@@ -114,7 +110,6 @@ class StrStiffener(StructureProfile):
     def str_profile_surf_surf(self) -> StrProfileSurfSurf:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileSurfSurf() As StrProfileSurfSurf (Read

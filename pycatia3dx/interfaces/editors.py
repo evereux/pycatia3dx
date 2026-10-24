@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class Editors(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class Editors(Collection):
     def item(self, i_index: CATVariant) -> Editor:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func Item(CATVariant iIndex) As Editor

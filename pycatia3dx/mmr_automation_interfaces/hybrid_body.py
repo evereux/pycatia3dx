@@ -23,7 +23,6 @@ if TYPE_CHECKING:
 class HybridBody(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -50,7 +49,6 @@ class HybridBody(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property GeometricElements() As GeometricElements (Read Only)
@@ -80,7 +78,6 @@ class HybridBody(AnyObject):
     def hybrid_bodies(self) -> 'HybridBodies':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridBodies() As HybridBodies (Read Only)
@@ -101,7 +98,6 @@ class HybridBody(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridShapes() As HybridShapes (Read Only)
@@ -130,7 +126,6 @@ class HybridBody(AnyObject):
     def hybrid_sketches(self) -> Sketches:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property HybridSketches() As Sketches (Read Only)
@@ -151,7 +146,6 @@ class HybridBody(AnyObject):
     def append_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub AppendHybridShape(HybridShape iHybridShape)

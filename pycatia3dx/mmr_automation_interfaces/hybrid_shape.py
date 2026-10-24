@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class HybridShape(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
@@ -39,7 +37,6 @@ class HybridShape(AnyObject):
     def thickness(self) -> 'HybridShape':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Property Thickness() As HybridShape (Read Only)
@@ -64,7 +61,6 @@ class HybridShape(AnyObject):
     def append_hybrid_shape(self, i_hybrid_shape: 'HybridShape') -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub AppendHybridShape(HybridShape iHybridShape)
@@ -89,7 +85,6 @@ class HybridShape(AnyObject):
     def compute(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
                 | Sub Compute()
@@ -100,4 +95,4 @@ class HybridShape(AnyObject):
         return self.com_object.Compute()
 
     def __repr__(self):
-        return f'HybridShape(name="{ self.name }")'
+        return f'HybridShape(name="{self.name}")'

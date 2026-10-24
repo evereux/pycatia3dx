@@ -16,10 +16,8 @@ from pycatia3dx.sma_spa_structural.sim_random_global_damping import SimRandomGlo
 
 
 class SimRandomVibrationStep(SimStep):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -80,7 +78,6 @@ class SimRandomVibrationStep(SimStep):
     def activated(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Activated() As boolean
@@ -103,7 +100,6 @@ class SimRandomVibrationStep(SimStep):
     def damping_definition(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property DampingDefinition() As
@@ -127,7 +123,6 @@ class SimRandomVibrationStep(SimStep):
     def frequency_based_damping(self) -> SimFrequencyBasedDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property FrequencyBasedDamping() As SimFrequencyBasedDamping (Read
@@ -143,7 +138,6 @@ class SimRandomVibrationStep(SimStep):
     def mode_based_damping(self) -> SimModeBasedDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModeBasedDamping() As SimModeBasedDamping (Read Only)
@@ -158,7 +152,6 @@ class SimRandomVibrationStep(SimStep):
     def random_global_damping(self) -> SimRandomGlobalDamping:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property RandomGlobalDamping() As SimRandomGlobalDamping (Read
@@ -174,7 +167,6 @@ class SimRandomVibrationStep(SimStep):
     def table(self) -> SimTable:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Table() As SimTable (Read Only)
@@ -188,7 +180,6 @@ class SimRandomVibrationStep(SimStep):
     def get_table_column(self, i_table_column_name: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetTableColumn(SimRandomVibrationStepTableColumn iTableColumnName) As
@@ -210,4 +201,4 @@ class SimRandomVibrationStep(SimStep):
         return SimTableColumn(self.com_object.GetTableColumn(i_table_column_name))
 
     def __repr__(self):
-        return f'SimRandomVibrationStep(name="{ self.name }")'
+        return f'SimRandomVibrationStep(name="{self.name}")'

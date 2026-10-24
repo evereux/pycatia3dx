@@ -17,7 +17,6 @@ from pycatia3dx.types.general import CATVariant
 class KinJoints(Collection):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -39,7 +38,6 @@ class KinJoints(Collection):
     def exclude(self, i_index: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Exclude(CATVariant iIndex)
@@ -63,7 +61,6 @@ class KinJoints(Collection):
     def include(self, i_joint: EngConnection) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Include(EngConnection iJoint)
@@ -83,7 +80,6 @@ class KinJoints(Collection):
     def item(self, i_index: CATVariant) -> EngConnection:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func Item(CATVariant iIndex) As EngConnection

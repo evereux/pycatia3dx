@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscKinematicsRelations(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -54,7 +52,6 @@ class RscKinematicsRelations(AnyObject):
     def list_non_command_joints(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListNonCommandJoints() As CATSafeArrayVariant (Read
@@ -98,7 +95,6 @@ class RscKinematicsRelations(AnyObject):
     def list_user_variables_i_ds(self) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ListUserVariablesIDs() As CATSafeArrayVariant (Read
@@ -140,7 +136,6 @@ class RscKinematicsRelations(AnyObject):
     def support_kinematics_relations(self) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property SupportKinematicsRelations() As boolean (Read Only)
@@ -165,7 +160,6 @@ class RscKinematicsRelations(AnyObject):
     def clear_joint_relation_expression(self, i_joint: AnyObject) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ClearJointRelationExpression(AnyObject iJoint)
@@ -195,7 +189,6 @@ class RscKinematicsRelations(AnyObject):
     def create_user_variable_expression(self, i_user_var_id: str, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub CreateUserVariableExpression(CATBSTR iUserVarID,CATBSTR
@@ -230,7 +223,6 @@ class RscKinematicsRelations(AnyObject):
     def get_joint_relation_expression(self, i_joint: AnyObject) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetJointRelationExpression(AnyObject iJoint) As CATBSTR
@@ -261,7 +253,6 @@ class RscKinematicsRelations(AnyObject):
     def get_user_variable_expression(self, i_user_var_id: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetUserVariableExpression(CATBSTR iUserVarID) As CATBSTR
@@ -294,7 +285,6 @@ class RscKinematicsRelations(AnyObject):
     def remove_user_variable_expression(self, i_user_var_id: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveUserVariableExpression(CATBSTR iUserVarID)
@@ -328,7 +318,6 @@ class RscKinematicsRelations(AnyObject):
     def set_joint_relation_expression(self, i_joint: AnyObject, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetJointRelationExpression(AnyObject iJoint,CATBSTR
@@ -362,7 +351,6 @@ class RscKinematicsRelations(AnyObject):
     def set_user_variable_expression(self, i_user_var_id: str, i_expression: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetUserVariableExpression(CATBSTR iUserVarID,CATBSTR
@@ -398,7 +386,6 @@ class RscKinematicsRelations(AnyObject):
     def validate_kinematic_expression(self, i_user_expression: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func ValidateKinematicExpression(CATBSTR iUserExpression) As
@@ -433,4 +420,4 @@ class RscKinematicsRelations(AnyObject):
         return self.com_object.ValidateKinematicExpression(i_user_expression)
 
     def __repr__(self):
-        return f'RscKinematicsRelations(name="{ self.name }")'
+        return f'RscKinematicsRelations(name="{self.name}")'

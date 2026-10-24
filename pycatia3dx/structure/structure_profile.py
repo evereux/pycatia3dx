@@ -23,7 +23,6 @@ from pycatia3dx.structure.str_slots import StrSlots
 class StructureProfile(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -46,7 +45,6 @@ class StructureProfile(AnyObject):
     def profile_sub_elements(self) -> StrProfileSubElementMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProfileSubElements() As StrProfileSubElementMngt (Read
@@ -71,7 +69,6 @@ class StructureProfile(AnyObject):
     def profile_type(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ProfileType() As CATStrProfileMode
@@ -109,7 +106,6 @@ class StructureProfile(AnyObject):
     def str_endcut_mngt(self) -> StrEndcutMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrEndcutMngt() As StrEndcutMngt (Read Only)
@@ -133,7 +129,6 @@ class StructureProfile(AnyObject):
     def str_openings_mgr(self) -> StrOpeningsMgr:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
@@ -160,7 +155,6 @@ class StructureProfile(AnyObject):
     def str_profile_limit_mngt(self) -> StrProfileLimitMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrProfileLimitMngt() As StrProfileLimitMngt (Read
@@ -185,7 +179,6 @@ class StructureProfile(AnyObject):
     def str_section_mngt(self) -> StrSectionMngt:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSectionMngt() As StrSectionMngt (Read Only)
@@ -209,7 +202,6 @@ class StructureProfile(AnyObject):
     def str_slots(self) -> StrSlots:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSlots() As StrSlots (Read Only)
@@ -232,7 +224,6 @@ class StructureProfile(AnyObject):
     def get_canonic_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetCanonicSupport() As Reference
@@ -254,7 +245,6 @@ class StructureProfile(AnyObject):
     def get_delimited_support(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetDelimitedSupport() As Reference
@@ -276,7 +266,6 @@ class StructureProfile(AnyObject):
     def get_openings(self, i_type: int) -> StrOpenings:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOpenings(long iType) As StrOpenings
@@ -312,7 +301,6 @@ class StructureProfile(AnyObject):
     def get_openings_on_profile(self, i_type: int) -> StrOpeningsOnProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetOpeningsOnProfile(long iType) As StrOpeningsOnProfile

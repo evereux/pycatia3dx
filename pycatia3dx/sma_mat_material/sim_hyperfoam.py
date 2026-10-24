@@ -13,10 +13,8 @@ from pycatia3dx.sma_mpa_base.sim_table_column import SimTableColumn
 
 
 class SimHyperfoam(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -76,7 +74,6 @@ class SimHyperfoam(AnyObject):
     def moduli_time_scale(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ModuliTimeScale() As SimHyperfoamModuliTimeScale
@@ -99,7 +96,6 @@ class SimHyperfoam(AnyObject):
     def strain_energy_potential_order(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrainEnergyPotentialOrder() As
@@ -122,7 +118,6 @@ class SimHyperfoam(AnyObject):
     def get_material_table_column(self, i_material_table_column: int) -> SimTableColumn:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetMaterialTableColumn(SimHyperfoamMaterialTableColumn
@@ -145,4 +140,4 @@ class SimHyperfoam(AnyObject):
         return SimTableColumn(self.com_object.GetMaterialTableColumn(i_material_table_column))
 
     def __repr__(self):
-        return f'SimHyperfoam(name="{ self.name }")'
+        return f'SimHyperfoam(name="{self.name}")'

@@ -13,10 +13,8 @@ from pycatia3dx.del_spot_welding.spot_dr_operation import SpotDrOperation
 
 
 class SpotDrOperationFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class SpotDrOperationFactory(AnyObject):
     def create_operation(self, i_type: str, i_ref_act: AnyObject) -> SpotDrOperation:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateOperation(CATBSTR iType,AnyObject iRefAct) As
@@ -61,7 +58,6 @@ class SpotDrOperationFactory(AnyObject):
     def delete_operation(self, i_drill_rivet_operation: SpotDrOperation) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteOperation(SpotDrOperation iDrillRivetOperation)
@@ -81,4 +77,4 @@ class SpotDrOperationFactory(AnyObject):
         return self.com_object.DeleteOperation(i_drill_rivet_operation.com_object)
 
     def __repr__(self):
-        return f'SpotDrOperationFactory(name="{ self.name }")'
+        return f'SpotDrOperationFactory(name="{self.name}")'

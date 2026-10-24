@@ -15,7 +15,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SrsCentreLine(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -38,7 +37,6 @@ class SrsCentreLine(AnyObject):
     def reference_plane(self) -> SrsGridFace:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property ReferencePlane() As SrsGridFace (Read Only)

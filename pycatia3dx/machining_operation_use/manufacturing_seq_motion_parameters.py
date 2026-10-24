@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingSeqMotionParameters(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class ManufacturingSeqMotionParameters(AnyObject):
     def find_element(self, i_name: str) -> AnyObject:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func FindElement(CATBSTR iName) As AnyObject
@@ -59,7 +56,6 @@ class ManufacturingSeqMotionParameters(AnyObject):
     def get_value_boolean(self, i_name: str) -> bool:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueBoolean(CATBSTR iName) As boolean
@@ -81,7 +77,6 @@ class ManufacturingSeqMotionParameters(AnyObject):
     def get_value_double(self, i_name: str) -> float:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueDouble(CATBSTR iName) As double
@@ -103,7 +98,6 @@ class ManufacturingSeqMotionParameters(AnyObject):
     def get_value_long(self, i_name: str) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueLong(CATBSTR iName) As long
@@ -125,7 +119,6 @@ class ManufacturingSeqMotionParameters(AnyObject):
     def get_value_str(self, i_name: str) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetValueStr(CATBSTR iName) As CATBSTR
@@ -145,4 +138,4 @@ class ManufacturingSeqMotionParameters(AnyObject):
         return self.com_object.GetValueStr(i_name)
 
     def __repr__(self):
-        return f'ManufacturingSeqMotionParameters(name="{ self.name }")'
+        return f'ManufacturingSeqMotionParameters(name="{self.name}")'

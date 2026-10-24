@@ -20,7 +20,6 @@ if TYPE_CHECKING:
 class ReferenceFrame(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -185,7 +184,6 @@ class ReferenceFrame(AnyObject):
     def all_datums_simple(self) -> 'Annotations':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property AllDatumsSimple() As Annotations  (Read Only)
@@ -204,7 +202,6 @@ class ReferenceFrame(AnyObject):
     def frame(self, o_first_box: str, o_second_box: str, o_third_box: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub Frame(CATBSTR oFirstBox,CATBSTR oSecondBox,CATBSTR
@@ -228,7 +225,6 @@ class ReferenceFrame(AnyObject):
     def get_axis_system_ttrs(self, op_axis_system_ttrs: UserSurface) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetAxisSystemTTRS(UserSurface opAxisSystemTTRS)
@@ -251,7 +247,6 @@ class ReferenceFrame(AnyObject):
     def get_degrees_of_freedom(self, in_box: CATVariant, o_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetDegreesOfFreedom(CATVariant inBox,CATBSTR oValue)
@@ -292,7 +287,6 @@ class ReferenceFrame(AnyObject):
     def set_axis_system_ttrs(self, ip_axis_system_ttrs: UserSurface) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetAxisSystemTTRS(UserSurface ipAxisSystemTTRS)
@@ -317,7 +311,6 @@ class ReferenceFrame(AnyObject):
     def set_degrees_of_freedom(self, in_box: CATVariant, i_value: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetDegreesOfFreedom(CATVariant inBox,CATBSTR iValue)
@@ -361,7 +354,6 @@ class ReferenceFrame(AnyObject):
     def set_frame(self, i_first_box: str, i_second_box: str, i_third_box: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetFrame(CATBSTR iFirstBox,CATBSTR iSecondBox,CATBSTR

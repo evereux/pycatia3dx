@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class Move(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -43,7 +42,6 @@ class Move(AnyObject):
     def movable_object(self) -> 'Move':
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Property MovableObject() As Move (Read Only)
@@ -65,7 +63,6 @@ class Move(AnyObject):
     def apply(self, i_transformation_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
                 | Sub Apply(CATSafeArrayVariant iTransformationArray)

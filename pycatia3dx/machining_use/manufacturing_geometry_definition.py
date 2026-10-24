@@ -12,10 +12,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class ManufacturingGeometryDefinition(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -57,10 +55,10 @@ class ManufacturingGeometryDefinition(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def add_geometry(self, i_type: str, i_reference: AnyObject, i_product: AnyObject, i_verify: int, i_position: int) -> None:
+    def add_geometry(self, i_type: str, i_reference: AnyObject, i_product: AnyObject, i_verify: int,
+                     i_position: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddGeometry(CATBSTR iType,AnyObject iReference,AnyObject iProduct,long
@@ -99,7 +97,6 @@ class ManufacturingGeometryDefinition(AnyObject):
     def get_geometric_elements(self, i_type: str, i_all_geometric_elements: int, i_duplicate: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGeometricElements(CATBSTR iType,long iAllGeometricElements,long
@@ -145,7 +142,6 @@ class ManufacturingGeometryDefinition(AnyObject):
     def get_geometric_elements2(self, i_type: str, i_all_geometric_elements: int, i_duplicate: int) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func GetGeometricElements2(CATBSTR iType,long iAllGeometricElements,long
@@ -194,7 +190,6 @@ class ManufacturingGeometryDefinition(AnyObject):
     def get_geometric_references(self, i_type: str, o_list_geometries: tuple, o_list_products: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeometricReferences(CATBSTR iType,CATSafeArrayVariant
@@ -220,7 +215,6 @@ class ManufacturingGeometryDefinition(AnyObject):
     def get_geometric_references2(self, i_type: str, o_list_geometries: tuple, o_list_products: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub GetGeometricReferences2(CATBSTR iType,CATSafeArrayVariant
@@ -249,7 +243,6 @@ class ManufacturingGeometryDefinition(AnyObject):
     def remove_geometries(self, i_type: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub RemoveGeometries(CATBSTR iType)
@@ -266,4 +259,4 @@ class ManufacturingGeometryDefinition(AnyObject):
         return self.com_object.RemoveGeometries(i_type)
 
     def __repr__(self):
-        return f'ManufacturingGeometryDefinition(name="{ self.name }")'
+        return f'ManufacturingGeometryDefinition(name="{self.name}")'

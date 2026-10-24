@@ -12,10 +12,8 @@ from pycatia3dx.dnb_igp_olp_use.olp_trigger_action import OLPTriggerAction
 
 
 class OLPActionSetParam(OLPTriggerAction):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -42,7 +40,6 @@ class OLPActionSetParam(OLPTriggerAction):
     def profile(self) -> OLPProfile:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Profile() As OlpProfile
@@ -61,4 +58,4 @@ class OLPActionSetParam(OLPTriggerAction):
         self.com_object.Profile = value
 
     def __repr__(self):
-        return f'OLPActionSetParam(name="{ self.name }")'
+        return f'OLPActionSetParam(name="{self.name}")'

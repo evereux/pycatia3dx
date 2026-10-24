@@ -13,10 +13,8 @@ from pycatia3dx.system.cat_base_unknown import CATBaseUnknown
 
 
 class ArcOperationFactory(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -34,10 +32,10 @@ class ArcOperationFactory(AnyObject):
         super().__init__(com_object)
         self.com_object = com_object
 
-    def create_arc_operation(self, i_mode: int, i_reference_instruction: CATBaseUnknown, i_parent_seq: CATBaseUnknown, i_motion_group: CATBaseUnknown) -> CATBaseUnknown:
+    def create_arc_operation(self, i_mode: int, i_reference_instruction: CATBaseUnknown, i_parent_seq: CATBaseUnknown,
+                             i_motion_group: CATBaseUnknown) -> CATBaseUnknown:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Func CreateArcOperation(InsertMode iMode,CATBaseUnknown
@@ -50,12 +48,13 @@ class ArcOperationFactory(AnyObject):
         :param CATBaseUnknown i_motion_group:
         :return: CATBaseUnknown
         """
-        return CATBaseUnknown(self.com_object.CreateArcOperation(i_mode, i_reference_instruction.com_object, i_parent_seq.com_object, i_motion_group.com_object))
+        return CATBaseUnknown(
+            self.com_object.CreateArcOperation(i_mode, i_reference_instruction.com_object, i_parent_seq.com_object,
+                                               i_motion_group.com_object))
 
     def delete_arc_operation(self, isp_motion_activity: CATBaseUnknown) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeleteArcOperation(CATBaseUnknown ispMotionActivity)
@@ -66,4 +65,4 @@ class ArcOperationFactory(AnyObject):
         return self.com_object.DeleteArcOperation(isp_motion_activity.com_object)
 
     def __repr__(self):
-        return f'ArcOperationFactory(name="{ self.name }")'
+        return f'ArcOperationFactory(name="{self.name}")'

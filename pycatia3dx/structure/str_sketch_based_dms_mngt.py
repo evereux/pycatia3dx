@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class StrSketchBasedDMSMngt(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -43,7 +41,6 @@ class StrSketchBasedDMSMngt(AnyObject):
     def str_sketch(self) -> Reference:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property StrSketch() As Reference (Read Only)
@@ -75,7 +72,6 @@ class StrSketchBasedDMSMngt(AnyObject):
     def activate_sketch_contour(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub ActivateSketchContour()
@@ -96,7 +92,6 @@ class StrSketchBasedDMSMngt(AnyObject):
     def deactivate_sketch_contour(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub DeactivateSketchContour()
@@ -118,7 +113,6 @@ class StrSketchBasedDMSMngt(AnyObject):
     def set_str_sketch(self, i_ref_sketch_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetStrSketch(CATBSTR iRefSketchName)
@@ -129,4 +123,4 @@ class StrSketchBasedDMSMngt(AnyObject):
         return self.com_object.SetStrSketch(i_ref_sketch_name)
 
     def __repr__(self):
-        return f'StrSketchBasedDmsMngt(name="{ self.name }")'
+        return f'StrSketchBasedDmsMngt(name="{self.name}")'

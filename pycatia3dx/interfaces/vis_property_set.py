@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class VisPropertySet(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -122,7 +121,6 @@ class VisPropertySet(AnyObject):
     def get_layer(self) -> tuple[CatVisLayerType, int, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetLayer(CatVisLayerType oLayerType,long oLayerValue) As
@@ -169,7 +167,6 @@ class VisPropertySet(AnyObject):
     def get_pick(self) -> tuple[CatVisPropertyStatus, CatVisPropertyPick]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetPick(CatVisPropertyPick oPick) As CatVisPropertyStatus
@@ -194,7 +191,6 @@ class VisPropertySet(AnyObject):
     def get_real_color(self) -> tuple[CatVisPropertyStatus, int, int, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRealColor(long oRed,long oGreen,long oBlue) As
@@ -241,7 +237,6 @@ class VisPropertySet(AnyObject):
     def get_real_inheritance(self, i_property_type: CatVisPropertyType) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRealInheritance(CatVisPropertyType iPropertyType,long oInheritance) As
@@ -303,7 +298,6 @@ class VisPropertySet(AnyObject):
     def get_real_line_type(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRealLineType(long oLineType) As CatVisPropertyStatus
@@ -347,7 +341,6 @@ class VisPropertySet(AnyObject):
     def get_real_opacity(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRealOpacity(long oOpacity) As CatVisPropertyStatus
@@ -390,7 +383,6 @@ class VisPropertySet(AnyObject):
     def get_real_width(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetRealWidth(long oLineWidth) As CatVisPropertyStatus
@@ -433,7 +425,6 @@ class VisPropertySet(AnyObject):
     def get_show(self) -> tuple[CatVisPropertyStatus, CatVisPropertyShow]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetShow(CatVisPropertyShow oShow) As CatVisPropertyStatus
@@ -458,7 +449,6 @@ class VisPropertySet(AnyObject):
     def get_symbol_type(self) -> tuple[CatVisPropertyStatus, int, int, int, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetSymbolType(long oSymbolType) As CatVisPropertyStatus
@@ -501,7 +491,6 @@ class VisPropertySet(AnyObject):
     def get_visible_color(self) -> tuple[CatVisPropertyStatus, int, int, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetVisibleColor(long oRed,long oGreen,long oBlue) As
@@ -549,7 +538,6 @@ class VisPropertySet(AnyObject):
     def get_visible_inheritance(self, i_property_type: CatVisPropertyType) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetVisibleInheritance(CatVisPropertyType iPropertyType,long oInheritance)
@@ -588,7 +576,6 @@ class VisPropertySet(AnyObject):
     def get_visible_line_type(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetVisibleLineType(long oLineType) As
@@ -632,7 +619,6 @@ class VisPropertySet(AnyObject):
     def get_visible_opacity(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetVisibleOpacity(long oOpacity) As CatVisPropertyStatus
@@ -677,7 +663,6 @@ class VisPropertySet(AnyObject):
     def get_visible_width(self) -> tuple[CatVisPropertyStatus, int]:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetVisibleWidth(long oLineWidth) As CatVisPropertyStatus
@@ -720,7 +705,6 @@ class VisPropertySet(AnyObject):
     def reset_property(self, i_property_type: CatVisPropertyType) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub ResetProperty(CatVisPropertyType iPropertyType)
@@ -739,7 +723,6 @@ class VisPropertySet(AnyObject):
     def set_layer(self, i_layer_type: CatVisLayerType, i_layer_value: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetLayer(CatVisLayerType iLayerType,long iLayerValue)
@@ -773,7 +756,6 @@ class VisPropertySet(AnyObject):
     def set_pick(self, i_pick: CatVisPropertyPick) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetPick(CatVisPropertyPick iPick)
@@ -797,7 +779,6 @@ class VisPropertySet(AnyObject):
     def set_real_color(self, i_red: int, i_green: int, i_blue: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetRealColor(long iRed,long iGreen,long iBlue,long
@@ -841,7 +822,6 @@ class VisPropertySet(AnyObject):
     def set_real_line_type(self, i_line_type: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetRealLineType(long iLineType,long iInheritance)
@@ -880,7 +860,6 @@ class VisPropertySet(AnyObject):
     def set_real_opacity(self, i_opacity: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetRealOpacity(long iOpacity,long iInheritance)
@@ -916,7 +895,6 @@ class VisPropertySet(AnyObject):
     def set_real_width(self, i_line_width: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetRealWidth(long iLineWidth,long iInheritance)
@@ -955,7 +933,6 @@ class VisPropertySet(AnyObject):
     def set_show(self, i_show: CatVisPropertyShow) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetShow(CatVisPropertyShow iShow)
@@ -979,7 +956,6 @@ class VisPropertySet(AnyObject):
     def set_symbol_type(self, i_symbol_type: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetSymbolType(long iSymbolType)
@@ -1038,7 +1014,6 @@ class VisPropertySet(AnyObject):
     def set_visible_color(self, i_red: int, i_green: int, i_blue: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetVisibleColor(long iRed,long iGreen,long iBlue,long
@@ -1082,7 +1057,6 @@ class VisPropertySet(AnyObject):
     def set_visible_line_type(self, i_line_type: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetVisibleLineType(long iLineType,long iInheritance)
@@ -1121,7 +1095,6 @@ class VisPropertySet(AnyObject):
     def set_visible_opacity(self, i_opacity: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetVisibleOpacity(long iOpacity,long iInheritance)
@@ -1157,7 +1130,6 @@ class VisPropertySet(AnyObject):
     def set_visible_width(self, i_width: int, i_inheritance: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetVisibleWidth(long iWidth,long iInheritance)

@@ -16,7 +16,6 @@ from pycatia3dx.types.general import CATVariant
 class SettingRepository(SettingController):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
@@ -40,7 +39,6 @@ class SettingRepository(SettingController):
     def get_attr(self, i_attr_name: str) -> CATVariant:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetAttr(CATBSTR iAttrName) As CATVariant
@@ -66,7 +64,6 @@ class SettingRepository(SettingController):
     def get_attr_array(self, i_attr_name: str) -> tuple:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Func GetAttrArray(CATBSTR iAttrName) As CATSafeArrayVariant
@@ -92,7 +89,6 @@ class SettingRepository(SettingController):
     def get_attr_info(self, i_attr_name: str, admin_level: str, locked: str, o_modified: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub GetAttrInfo(CATBSTR iAttrName,CATBSTR AdminLevel,CATBSTR Locked,boolean
@@ -165,7 +161,6 @@ class SettingRepository(SettingController):
     def put_attr(self, i_attr_name: str, i_attr: CATVariant) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PutAttr(CATBSTR iAttrName,CATVariant iAttr)
@@ -192,7 +187,6 @@ class SettingRepository(SettingController):
     def put_attr_array(self, i_attr_name: str, i_array: tuple) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub PutAttrArray(CATBSTR iAttrName,CATSafeArrayVariant iArray)
@@ -219,7 +213,6 @@ class SettingRepository(SettingController):
     def set_attr_lock(self, i_attr_name: str, i_locked: bool) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
                 | Sub SetAttrLock(CATBSTR iAttrName,boolean iLocked)

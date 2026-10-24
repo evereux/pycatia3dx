@@ -14,7 +14,6 @@ from pycatia3dx.system.any_object import AnyObject
 class SimSeamWeld(AnyObject):
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -36,7 +35,6 @@ class SimSeamWeld(AnyObject):
     def add_all_compatible_fasteners_as_supports(self) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub AddAllCompatibleFastenersAsSupports()

@@ -13,10 +13,8 @@ from pycatia3dx.system.any_object import AnyObject
 
 
 class RscApplicativeProfile(AnyObject):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -61,7 +59,6 @@ class RscApplicativeProfile(AnyObject):
     def attributes(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property Attributes() As Parameters (Read Only)
@@ -95,7 +92,6 @@ class RscApplicativeProfile(AnyObject):
     def is_current(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsCurrent() As short (Read Only)
@@ -123,7 +119,6 @@ class RscApplicativeProfile(AnyObject):
     def is_user_defined(self) -> int:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property IsUserDefined() As short (Read Only)
@@ -153,7 +148,6 @@ class RscApplicativeProfile(AnyObject):
     def user_params(self) -> Parameters:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property UserParams() As Parameters (Read Only)
@@ -181,4 +175,4 @@ class RscApplicativeProfile(AnyObject):
         return Parameters(self.com_object.UserParams)
 
     def __repr__(self):
-        return f'RscApplicativeProfile(name="{ self.name }")'
+        return f'RscApplicativeProfile(name="{self.name}")'

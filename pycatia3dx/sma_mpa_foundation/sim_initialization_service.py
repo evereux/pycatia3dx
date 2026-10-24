@@ -11,10 +11,8 @@ from pycatia3dx.interfaces.service import Service
 
 
 class SimInitializationService(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -44,7 +42,6 @@ class SimInitializationService(Service):
     def set_simulation_initialization(self, i_app_name: str, i_type_name: str) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSimulationInitialization(CATBSTR iAppName,CATBSTR
@@ -86,7 +83,6 @@ class SimInitializationService(Service):
     def set_simulation_method(self, ip_simulation_method: int) -> None:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Sub SetSimulationMethod(SimInitializationServiceSimulationMethod
@@ -114,4 +110,4 @@ class SimInitializationService(Service):
         return self.com_object.SetSimulationMethod(ip_simulation_method)
 
     def __repr__(self):
-        return f'SimInitializationService(name="{ self.name }")'
+        return f'SimInitializationService(name="{self.name}")'

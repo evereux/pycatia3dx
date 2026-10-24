@@ -11,10 +11,8 @@ from pycatia3dx.interfaces.service import Service
 
 
 class OLPJavaArgs(Service):
-
     """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
@@ -37,7 +35,6 @@ class OLPJavaArgs(Service):
     def java_class_path(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JavaClassPath() As CATBSTR (Read Only)
@@ -51,7 +48,6 @@ class OLPJavaArgs(Service):
     def java_exe(self) -> str:
         """
         .. note::
-            :class: toggle
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 | Property JavaExe() As CATBSTR (Read Only)
@@ -62,4 +58,4 @@ class OLPJavaArgs(Service):
         return self.com_object.JavaExe
 
     def __repr__(self):
-        return f'OLPJavaArgs(name="{ self.name }")'
+        return f'OLPJavaArgs(name="{self.name}")'
