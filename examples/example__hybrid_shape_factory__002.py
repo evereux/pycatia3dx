@@ -2,7 +2,8 @@
     Example - Hybrid Shape Factory - 002
 
     Description:
-        Creates a new CATIA file and reads a csv file containing point data and adds to the new catia part.
+        Creates a new 3DShape and reads a csv file containing point data and
+        adds to the new 3DShape.
         Formatting of csv data should be:
             <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
         There should be no column name headers, just raw point data.

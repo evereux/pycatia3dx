@@ -47,6 +47,7 @@ class DrawingRoot(AnyObject):
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
                 Property ActiveSheet() As DrawingSheet
                     Retrieves or sets the active sheet of the drawing.
+
                     Warning: This method is not available with 2D Layout for 3D
                     Design.
                 

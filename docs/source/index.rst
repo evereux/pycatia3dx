@@ -9,5 +9,6 @@ pycatia3dx documentation
 
    installation
    getting_started
+   examples
    api_index
 

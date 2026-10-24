@@ -3,7 +3,7 @@
     Example - Hybrid Shape Factory - 003
 
     Description:
-        Draws a line between two points.
+        Creates a new 3DShape, creates two points and draws a line between them.
 
     Requirements:
         - CATIA running.
