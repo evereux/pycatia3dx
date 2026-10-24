@@ -17,12 +17,12 @@ class PcbObject(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PCBObject
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PCBObject
 
     
     """
@@ -37,20 +37,20 @@ class PcbObject(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElectronicType() As CatElectronicType (Read Only)
-                |     Gets the electronic type: Available types for a product: catBOARD,catPANEL or catCOMPONENT, Available types for a Hole: catPCBHole or catFCBHole, Available types for a Pad: catPBCArea Available types for a Pattern : catPCBHole if the patterned feature is Hole, catPCBArea if the patterned feature is Pad
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             This parameter is the type of the object ( catBOARD, catPANEL,
-                |             catCOMPONENT ) 
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property ElectronicType() As CatElectronicType (Read Only)
+                    Gets the electronic type: Available types for a product: catBOARD,catPANEL or catCOMPONENT, Available types for a Hole: catPCBHole or catFCBHole, Available types for a Pad: catPBCArea Available types for a Pattern : catPCBHole if the patterned feature is Hole, catPCBArea if the patterned feature is Pad
+                
+                    Parameters:
+                
+                        oType
+                            This parameter is the type of the object ( catBOARD, catPANEL,
+                            catCOMPONENT ) 
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: CatElectronicType
         """
@@ -62,14 +62,14 @@ class PcbObject(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveElectronicBehaviour()
-                |     Removes a PCB behaviour of an object.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed 
+                Sub RemoveElectronicBehaviour()
+                    Removes a PCB behaviour of an object.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed 
 
         :return: None
         """

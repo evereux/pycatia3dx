@@ -18,14 +18,14 @@ class SsmSpaceConceptRoot(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceConceptRoot
-                | 
-                | Role: This interface is specific to Space concept root
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceConceptRoot
+                
+                Role: This interface is specific to Space concept root
     
     """
 
@@ -39,14 +39,14 @@ class SsmSpaceConceptRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
-                | Only)
-                |     Gets space concept nodes present in it
-                | 
-                |     Parameters:
-                | 
-                |         olSpaceConceptNode
-                |             List of Space concept nodes. 
+                Property SpaceConceptNodes() As SsmSpaceConceptNodes (Read
+                Only)
+                    Gets space concept nodes present in it
+                
+                    Parameters:
+                
+                        olSpaceConceptNode
+                            List of Space concept nodes. 
 
         :return: SsmSpaceConceptNodes
         """

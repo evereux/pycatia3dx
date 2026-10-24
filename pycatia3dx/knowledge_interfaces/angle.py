@@ -17,27 +17,27 @@ class Angle(Dimension):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         KnowledgeIDLItf.RealParam
-                |                             KnowledgeIDLItf.Dimension
-                |                                 Angle
-                | 
-                | Represents the angle parameter.
-                | The following example shows how to create it:
-                | 
-                |  Dim aParmFact As CATIAParametersFactory
-                |  Set aParmFact   = ...
-                |  Dim angle1 As Angle
-                |  Set angle1  = aParmFact.CreateDimension("angle1", "ANGLE", 40.)
-                |  
-                | 
-                | See also:
-                |     ParametersFactory.CreateDimension
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        KnowledgeIDLItf.RealParam
+                                            KnowledgeIDLItf.Dimension
+                                                Angle
+                
+                Represents the angle parameter.
+                The following example shows how to create it:
+                
+                 Dim aParmFact As CATIAParametersFactory
+                 Set aParmFact   = ...
+                 Dim angle1 As Angle
+                 Set angle1  = aParmFact.CreateDimension("angle1", "ANGLE", 40.)
+                 
+                
+                See also:
+                    ParametersFactory.CreateDimension
     
     """
 

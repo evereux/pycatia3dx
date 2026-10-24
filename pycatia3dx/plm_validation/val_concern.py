@@ -17,15 +17,15 @@ class VALConcern(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALConcern
-                | 
-                | Allows management of Concern entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALConcern
+                
+                Allows management of Concern entity
     
     """
 
@@ -39,8 +39,8 @@ class VALConcern(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Published() As CATBaseDispatch
-                |     Returns the Published.
+                Property Published() As CATBaseDispatch
+                    Returns the Published.
 
         :return: AnyObject
         """
@@ -60,8 +60,8 @@ class VALConcern(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub LoadPublished()
-                |     Loads the Published.
+                Sub LoadPublished()
+                    Loads the Published.
 
         :return: None
         """

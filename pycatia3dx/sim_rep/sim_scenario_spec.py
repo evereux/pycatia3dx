@@ -25,14 +25,14 @@ class SimScenarioSpec(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimScenarioSpec
-                | 
-                | Represents the Scenario Specification
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimScenarioSpec
+                
+                Represents the Scenario Specification
     
     """
 
@@ -46,8 +46,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Excitations() As SimExcitations (Read Only)
-                |     Retrieves the collection of all Excitations. SimExcitations
+                Property Excitations() As SimExcitations (Read Only)
+                    Retrieves the collection of all Excitations. SimExcitations
 
         :return: SimExcitations
         """
@@ -60,8 +60,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsCurrent() As boolean (Read Only)
-                |     Returns the current state of a scenario.
+                Property IsCurrent() As boolean (Read Only)
+                    Returns the current state of a scenario.
 
         :return: bool
         """
@@ -74,8 +74,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Probes() As SimProbes (Read Only)
-                |     Retrieves the collection of all Excitations. SimProbes
+                Property Probes() As SimProbes (Read Only)
+                    Retrieves the collection of all Excitations. SimProbes
 
         :return: SimProbes
         """
@@ -88,8 +88,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioResult() As SimScenarioResult (Read Only)
-                |     Retrieves the Scenario Result associated to the scenario.
+                Property ScenarioResult() As SimScenarioResult (Read Only)
+                    Retrieves the Scenario Result associated to the scenario.
 
         :return: SimScenarioResult
         """
@@ -102,8 +102,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolverType() As CATBSTR (Read Only)
-                |     Returns the Solver Type of a scenario.
+                Property SolverType() As CATBSTR (Read Only)
+                    Returns the Solver Type of a scenario.
 
         :return: str
         """
@@ -115,8 +115,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddExcitation(SimExcitation iExcitation)
-                |     Reference an Excitation to the scenario SimExcitation
+                Sub AddExcitation(SimExcitation iExcitation)
+                    Reference an Excitation to the scenario SimExcitation
 
         :param SimExcitation i_excitation:
         :return: None
@@ -128,8 +128,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddProbe(SimProbe iProbe)
-                |     Reference a Probe to the scenario SimProbe
+                Sub AddProbe(SimProbe iProbe)
+                    Reference a Probe to the scenario SimProbe
 
         :param SimProbe i_probe:
         :return: None
@@ -141,8 +141,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBehaviors() As CATSafeArrayVariant
-                |     Gets behavior links.
+                Func GetBehaviors() As CATSafeArrayVariant
+                    Gets behavior links.
 
         :return: tuple
         """
@@ -153,8 +153,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveExcitation(SimExcitation iExcitation)
-                |     Unreference an Excitation to the scenario SimExcitation
+                Sub RemoveExcitation(SimExcitation iExcitation)
+                    Unreference an Excitation to the scenario SimExcitation
 
         :param SimExcitation i_excitation:
         :return: None
@@ -166,8 +166,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveProbe(SimProbe iProbe)
-                |     Unreference a Probe to the scenario SimProbe
+                Sub RemoveProbe(SimProbe iProbe)
+                    Unreference a Probe to the scenario SimProbe
 
         :param SimProbe i_probe:
         :return: None
@@ -179,8 +179,8 @@ class SimScenarioSpec(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrent()
-                |     Sets the scenario as current.
+                Sub SetCurrent()
+                    Sets the scenario as current.
 
         :return: None
         """

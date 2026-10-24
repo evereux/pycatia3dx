@@ -20,17 +20,17 @@ class SimExcitations(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimExcitations
-                | 
-                | Represents the collection of Simulation Excitations.
-                | 
-                | See also:
-                |     SimExcitation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimExcitations
+                
+                Represents the collection of Simulation Excitations.
+                
+                See also:
+                    SimExcitation
     
     """
 
@@ -43,22 +43,22 @@ class SimExcitations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
-                | SimExcitation
-                |     Creates a new Simulation Excitation and adds it to the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of Simulation Excitation to create. 
-                |         iCatalogName
-                |             The catalog base name with its extension. 
-                |         iClientId
-                |             The client id related to catalog. 
-                | 
-                |     Returns:
-                |         The created Simulation Excitation.
+                Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
+                SimExcitation
+                    Creates a new Simulation Excitation and adds it to the
+                    collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of Simulation Excitation to create. 
+                        iCatalogName
+                            The catalog base name with its extension. 
+                        iClientId
+                            The client id related to catalog. 
+                
+                    Returns:
+                        The created Simulation Excitation.
 
         :param str i_type:
         :param str i_catalog_name:
@@ -72,22 +72,22 @@ class SimExcitations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimExcitation
-                |     Returns a Simulation Excitation using its index from the simulation
-                |     excitations collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the simulation excitation to retrieve from the
-                |             collection of simulation excitations.
-                |             This index is the rank of the simulation excitation in the
-                |             collection. The index of the first simulation excitation in the collection is
-                |             1, and the index of the last simulation excitation is Count.
-                |             
-                | 
-                |     Returns:
-                |         The retrieved simulation excitation.
+                Func Item(CATVariant iIndex) As SimExcitation
+                    Returns a Simulation Excitation using its index from the simulation
+                    excitations collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the simulation excitation to retrieve from the
+                            collection of simulation excitations.
+                            This index is the rank of the simulation excitation in the
+                            collection. The index of the first simulation excitation in the collection is
+                            1, and the index of the last simulation excitation is Count.
+                            
+                
+                    Returns:
+                        The retrieved simulation excitation.
 
         :param CATVariant i_index:
         :return: SimExcitation
@@ -99,21 +99,21 @@ class SimExcitations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Simulation Excitation using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Simulation Excitation to retrieve from
-                |             the collection.
-                |             As a numeric, this index is the rank of the Simulation Excitation
-                |             in the collection. The index of the first Simulation Excitation in the
-                |             collection is 1, and the index of the last Simulation Excitation is
-                |             Count.
-                |             As a string, it is the name you assigned to the Simulation
-                |             Excitation using the Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Simulation Excitation using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Simulation Excitation to retrieve from
+                            the collection.
+                            As a numeric, this index is the rank of the Simulation Excitation
+                            in the collection. The index of the first Simulation Excitation in the
+                            collection is 1, and the index of the last Simulation Excitation is
+                            Count.
+                            As a string, it is the name you assigned to the Simulation
+                            Excitation using the Name object property.
 
         :param CATVariant i_index:
         :return: None

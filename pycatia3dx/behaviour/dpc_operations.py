@@ -20,31 +20,31 @@ class DPCOperations(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     DPCOperations
-                | 
-                | Represents the User Operations collection currently managed from a DPC
-                | Technogical Object.
-                | These operations belong to one object and can be reached by the GetItem method
-                | of CATIABase. For Instance onto a Root Product using
-                | Product.GetItem("CATGetDPCOperations") .
-                | 
-                | Example:
-                | 
-                |      Dim RootObj As Object
-                |      Set RootObj = CATIA.ActiveEditor.ActiveObject
-                |      Dim MyOperations As DPCOperations
-                |      Set MyOperations = RootObj.GetItem("CATGetDPCOperations")
-                |      ' Display the number of User Operations 
-                |      MsgBox ("There are " & MyOperations.Count & " User Operations in  " &
-                |      MyOperations.Name)
-                |      ' Run "MyUserOperation" User Operation
-                |      Dim MyUserOperation As DPCOperation
-                |      Set MyUserOperation = MyOperations.Operate("MyUserOperation")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    DPCOperations
+                
+                Represents the User Operations collection currently managed from a DPC
+                Technogical Object.
+                These operations belong to one object and can be reached by the GetItem method
+                of CATIABase. For Instance onto a Root Product using
+                Product.GetItem("CATGetDPCOperations") .
+                
+                Example:
+                
+                     Dim RootObj As Object
+                     Set RootObj = CATIA.ActiveEditor.ActiveObject
+                     Dim MyOperations As DPCOperations
+                     Set MyOperations = RootObj.GetItem("CATGetDPCOperations")
+                     ' Display the number of User Operations 
+                     MsgBox ("There are " & MyOperations.Count & " User Operations in  " &
+                     MyOperations.Name)
+                     ' Run "MyUserOperation" User Operation
+                     Dim MyUserOperation As DPCOperation
+                     Set MyUserOperation = MyOperations.Operate("MyUserOperation")
     
     """
 
@@ -57,29 +57,29 @@ class DPCOperations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As DPCOperation
-                |     Returns an Operation using its index or its name from the Operations
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Operation to retrieve from the
-                |             collection of Operations. As a numerics, this index is the rank of the
-                |             Operation in the collection. The index of the first Operation in the collection
-                |             is 1, and the index of the last Operation is Count. As a string, it is the name
-                |             assigned to the Operation. 
-                | 
-                |     Returns:
-                |         The retrieved Operation 
-                |     Example:
-                |         This example retrieves in ThisOp the fifth Operation in the collection
-                |         and in ThatOp the Operation named MyOp.
-                | 
-                |          Dim ThisOp As DPCOperation
-                |          Set ThisOp = listOperations.Item(5)
-                |          Dim ThatOp As DPCOperation
-                |          Set ThatOp = listOperations.Item("MyOp")
+                Func Item(CATVariant iIndex) As DPCOperation
+                    Returns an Operation using its index or its name from the Operations
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Operation to retrieve from the
+                            collection of Operations. As a numerics, this index is the rank of the
+                            Operation in the collection. The index of the first Operation in the collection
+                            is 1, and the index of the last Operation is Count. As a string, it is the name
+                            assigned to the Operation. 
+                
+                    Returns:
+                        The retrieved Operation 
+                    Example:
+                        This example retrieves in ThisOp the fifth Operation in the collection
+                        and in ThatOp the Operation named MyOp.
+                
+                         Dim ThisOp As DPCOperation
+                         Set ThisOp = listOperations.Item(5)
+                         Dim ThatOp As DPCOperation
+                         Set ThatOp = listOperations.Item("MyOp")
 
         :param CATVariant i_index:
         :return: DPCOperation
@@ -91,17 +91,17 @@ class DPCOperations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Operate(CATBSTR OperationName) As DPCOperation
-                |     Executes a user operation of the technological object. The wanted operation
-                |     is specified by its name.
-                | 
-                |     Parameters:
-                | 
-                |         OperationName
-                |             The name of the operation you want to launch. 
-                | 
-                |     Returns:
-                |         the operation
+                Func Operate(CATBSTR OperationName) As DPCOperation
+                    Executes a user operation of the technological object. The wanted operation
+                    is specified by its name.
+                
+                    Parameters:
+                
+                        OperationName
+                            The name of the operation you want to launch. 
+                
+                    Returns:
+                        the operation
 
         :param str operation_name:
         :return: DPCOperation

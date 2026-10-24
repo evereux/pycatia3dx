@@ -20,16 +20,16 @@ class MLPSimuLayers(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     MLPSimuLayers
-                | 
-                | Represents CATIAMLPSimuLayers that allow to have a list of
-                | CATIAMLPSimuLayer.
-                | Role: List ofCATIAMLPSimuLayer .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    MLPSimuLayers
+                
+                Represents CATIAMLPSimuLayers that allow to have a list of
+                CATIAMLPSimuLayer.
+                Role: List ofCATIAMLPSimuLayer .
     
     """
 
@@ -42,16 +42,16 @@ class MLPSimuLayers(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As MLPSimuLayer
-                |     Retrieves a layer with the specified name or index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The specified name/index of the object to retrieve
-                |             
-                |         oLayerSimu
-                |             The returned object
+                Func Item(CATVariant iIndex) As MLPSimuLayer
+                    Retrieves a layer with the specified name or index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The specified name/index of the object to retrieve
+                            
+                        oLayerSimu
+                            The returned object
 
         :param CATVariant i_index:
         :return: MLPSimuLayer

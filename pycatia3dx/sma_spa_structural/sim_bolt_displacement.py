@@ -17,52 +17,52 @@ class SimBoltDisplacement(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBoltDisplacement
-                | 
-                | Represents the Bolt Displacement object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimBoltDisplacement as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltDisplacement As SimBoltDisplacement
-                |      Set MyBoltDisplacement = MyFeatures.Add("SimBoltDisplacement")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimBoltDisplacement named
-                |     "Bolt Displacement.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltDisplacement As SimBoltDisplacement
-                |      Set MyBoltDisplacement = MyFeatures.Item("Bolt Displacement.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimBoltDisplacement
-                |     as following:
-                | 
-                |      ...
-                |      myBoltDisplacement = myFeatures.Add("SimBoltDisplacement")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimBoltDisplacement named "Bolt Displacement.1" as
-                |     following:
-                | 
-                |      ...
-                |      myBoltDisplacement = myFeatures.Item("Bolt Displacement.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBoltDisplacement
+                
+                Represents the Bolt Displacement object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimBoltDisplacement as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltDisplacement As SimBoltDisplacement
+                     Set MyBoltDisplacement = MyFeatures.Add("SimBoltDisplacement")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimBoltDisplacement named
+                    "Bolt Displacement.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltDisplacement As SimBoltDisplacement
+                     Set MyBoltDisplacement = MyFeatures.Item("Bolt Displacement.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimBoltDisplacement
+                    as following:
+                
+                     ...
+                     myBoltDisplacement = myFeatures.Add("SimBoltDisplacement")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimBoltDisplacement named "Bolt Displacement.1" as
+                    following:
+                
+                     ...
+                     myBoltDisplacement = myFeatures.Item("Bolt Displacement.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimBoltDisplacement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,8 +98,8 @@ class SimBoltDisplacement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -112,8 +112,8 @@ class SimBoltDisplacement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the magnitude.
+                Property Magnitude() As double
+                    Returns or sets the magnitude.
 
         :return: float
         """
@@ -134,9 +134,9 @@ class SimBoltDisplacement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage. 
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage. 
 
         :return: str
         """

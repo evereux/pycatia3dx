@@ -19,14 +19,14 @@ class SrmProxies(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SrmProxies
-                | 
-                | Object for SrmProxies
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SrmProxies
+                
+                Object for SrmProxies
     
     """
 
@@ -40,24 +40,24 @@ class SrmProxies(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AnyObject
-                |     Retrieves a SrmProxyPanel or SrmProxyProfile
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SrmProxy 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first item from the list of
-                |              SrmProxies.
-                |              
-                | 
-                |               Dim ObjSrmProxies As SrmProxies
-                |               Set ObjSrmProxies = iObjSrmDesignUnit.GetProxies(1)
-                |               Set ObjSrmProxy = ObjSrmProxies.Item(1)
+                Func Item(CATVariant iIndex) As AnyObject
+                    Retrieves a SrmProxyPanel or SrmProxyProfile
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SrmProxy 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first item from the list of
+                             SrmProxies.
+                             
+                
+                              Dim ObjSrmProxies As SrmProxies
+                              Set ObjSrmProxies = iObjSrmDesignUnit.GetProxies(1)
+                              Set ObjSrmProxy = ObjSrmProxies.Item(1)
 
         :param CATVariant i_index:
         :return: AnyObject

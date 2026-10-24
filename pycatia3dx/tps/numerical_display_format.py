@@ -17,15 +17,15 @@ class NumericalDisplayFormat(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NumericalDisplayFormat
-                | 
-                | Interface to manage numerical format properties of GST, DRF and Datum
-                | Target.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NumericalDisplayFormat
+                
+                Interface to manage numerical format properties of GST, DRF and Datum
+                Target.
     
     """
 
@@ -39,10 +39,10 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvilableDisplayFactor() As long (Read Only)
-                |     Retrieves or sets the maximun level of factor available to be
-                |     displayed.
-                |     It may vary according to the name of the format.
+                Property AvilableDisplayFactor() As long (Read Only)
+                    Retrieves or sets the maximun level of factor available to be
+                    displayed.
+                    It may vary according to the name of the format.
 
         :return: int
         """
@@ -55,10 +55,10 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DisplayFactor() As long
-                |     Retrieves or sets the level of factor to be displayed.
-                |     The numerical values associated to the annotation will be displayed as per
-                |     this Display Factor.
+                Property DisplayFactor() As long
+                    Retrieves or sets the level of factor to be displayed.
+                    The numerical values associated to the annotation will be displayed as per
+                    this Display Factor.
 
         :return: int
         """
@@ -79,13 +79,13 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DisplayLeadingZero() As long
-                |     Retrieves or sets the annotation DisplayLeadingZero.
-                |     The numerical values associated to the annotation will be displayed as per
-                |     this DisplayLeadingZero.
-                |     The integer value of onValue/inValue corresponding to:
-                |     0 : no display of LeadingZero.
-                |     1 : display the LeadingZero.
+                Property DisplayLeadingZero() As long
+                    Retrieves or sets the annotation DisplayLeadingZero.
+                    The numerical values associated to the annotation will be displayed as per
+                    this DisplayLeadingZero.
+                    The integer value of onValue/inValue corresponding to:
+                    0 : no display of LeadingZero.
+                    1 : display the LeadingZero.
 
         :return: int
         """
@@ -106,13 +106,13 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DisplayTrailingZero() As long
-                |     Retrieves or sets the annotation DisplayTrailingZero.
-                |     The numerical values associated to the annotation will be displayed as per
-                |     this DisplayTrailingZero.
-                |     The integer value of onValue/inValue corresponding to:
-                |     0 : no display of TrailingZero.
-                |     1 : display the TrailingZero.
+                Property DisplayTrailingZero() As long
+                    Retrieves or sets the annotation DisplayTrailingZero.
+                    The numerical values associated to the annotation will be displayed as per
+                    this DisplayTrailingZero.
+                    The integer value of onValue/inValue corresponding to:
+                    0 : no display of TrailingZero.
+                    1 : display the TrailingZero.
 
         :return: int
         """
@@ -133,10 +133,10 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FormatName() As CATBSTR
-                |     Retrieves or sets the format name.
-                |     The numerical values associated to the annotation will be displayed as per
-                |     this format.
+                Property FormatName() As CATBSTR
+                    Retrieves or sets the format name.
+                    The numerical values associated to the annotation will be displayed as per
+                    this format.
 
         :return: str
         """
@@ -157,10 +157,10 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Precision() As long
-                |     Retrieves or sets the precision of annotation.
-                |     The numerical values associated to the annotation will be displayed as per
-                |     this precision.
+                Property Precision() As long
+                    Retrieves or sets the precision of annotation.
+                    The numerical values associated to the annotation will be displayed as per
+                    this precision.
 
         :return: int
         """
@@ -181,30 +181,30 @@ class NumericalDisplayFormat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Separator() As long
-                |     Retrieves or sets the annotation separator.
-                |     The numerical values associated to the annotation will be displayed with
-                |     this seperator.
-                |     The integer value of onValue/inValue corresponding to:
-                |     0 ""
-                |     1 "/"
-                |     2 ":"
-                |     3 "("
-                |     4 ")"
-                |     5 "\\"
-                |     6 ","
-                |     7 "<
-                |     8 ">
-                |     9 "X"
-                |     10 "*"
-                |     11 "."
-                |     12 ";"
-                |     13 "+"
-                |     14 "["
-                |     15 "]"
-                |     16 "-"
-                |     17 "_"
-                |     18 " " 
+                Property Separator() As long
+                    Retrieves or sets the annotation separator.
+                    The numerical values associated to the annotation will be displayed with
+                    this seperator.
+                    The integer value of onValue/inValue corresponding to:
+                    0 ""
+                    1 "/"
+                    2 ":"
+                    3 "("
+                    4 ")"
+                    5 "\\"
+                    6 ","
+                    7 "<
+                    8 ">
+                    9 "X"
+                    10 "*"
+                    11 "."
+                    12 ";"
+                    13 "+"
+                    14 "["
+                    15 "]"
+                    16 "-"
+                    17 "_"
+                    18 " " 
 
         :return: int
         """

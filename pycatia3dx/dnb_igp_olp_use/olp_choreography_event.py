@@ -17,18 +17,18 @@ class OLPChoreographyEvent(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpChoreographyEvent
-                | 
-                | Represents a choreography event added to a motion instruction in a
-                | task.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpChoreographyEvent
+                
+                Represents a choreography event added to a motion instruction in a
+                task.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,10 +42,10 @@ class OLPChoreographyEvent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TraceModeAfter() As boolean
-                |     Trace mode.
-                |     Indicates if the event starts before or after the instruction is executed.
-                |     If False it starts before, if True it starts after.
+                Property TraceModeAfter() As boolean
+                    Trace mode.
+                    Indicates if the event starts before or after the instruction is executed.
+                    If False it starts before, if True it starts after.
 
         :return: bool
         """
@@ -66,8 +66,8 @@ class OLPChoreographyEvent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As DELOlpChoreographyEventType (Read Only)
-                |     Get the event type.
+                Property Type() As DELOlpChoreographyEventType (Read Only)
+                    Get the event type.
 
         :return: DELOlpChoreographyEventType
         """

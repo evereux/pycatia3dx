@@ -19,13 +19,13 @@ class SimPublicationServices(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SimPublicationServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SimPublicationServices
 
     
     """
@@ -40,23 +40,23 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreatePublication(VPMReference iReferenceProduct,AnyObject iLink,CATBSTR
-                | iPublicationName) As VPMPublication
-                |     Creates a publication.
-                | 
-                |     Parameters:
-                | 
-                |         iReferenceProduct:
-                |             The reference product which will contain the publication.
-                |             
-                |         iLink:
-                |             The link object corresponding to the object to publish.
-                |             
-                |         iPublicationName:
-                |             The name of the publication. 
-                | 
-                |     Returns:
-                |         The created publication.
+                Func CreatePublication(VPMReference iReferenceProduct,AnyObject iLink,CATBSTR
+                iPublicationName) As VPMPublication
+                    Creates a publication.
+                
+                    Parameters:
+                
+                        iReferenceProduct:
+                            The reference product which will contain the publication.
+                            
+                        iLink:
+                            The link object corresponding to the object to publish.
+                            
+                        iPublicationName:
+                            The name of the publication. 
+                
+                    Returns:
+                        The created publication.
 
         :param VPMReference i_reference_product:
         :param AnyObject i_link:
@@ -71,17 +71,17 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPublishedElement(VPMPublication iPublication,AnyObject
-                | oLink)
-                |     Retrieves the published element
-                | 
-                |     Parameters:
-                | 
-                |         iPublication:
-                |             The publication on which the published element should be retrieved.
-                |             
-                |         oLink:
-                |             The link object corresponding to the published element.
+                Sub GetPublishedElement(VPMPublication iPublication,AnyObject
+                oLink)
+                    Retrieves the published element
+                
+                    Parameters:
+                
+                        iPublication:
+                            The publication on which the published element should be retrieved.
+                            
+                        oLink:
+                            The link object corresponding to the published element.
 
         :param VPMPublication i_publication:
         :param AnyObject o_link:
@@ -94,17 +94,17 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ModifyPublishedElement(VPMPublication iPublication,AnyObject
-                | iLink)
-                |     Modifies the published element
-                | 
-                |     Parameters:
-                | 
-                |         iPublication:
-                |             The publication on which the published element should be changed.
-                |             
-                |         iLink:
-                |             The link object corresponding to the new object to publish.
+                Sub ModifyPublishedElement(VPMPublication iPublication,AnyObject
+                iLink)
+                    Modifies the published element
+                
+                    Parameters:
+                
+                        iPublication:
+                            The publication on which the published element should be changed.
+                            
+                        iLink:
+                            The link object corresponding to the new object to publish.
 
         :param VPMPublication i_publication:
         :param AnyObject i_link:
@@ -117,17 +117,17 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemovePublication(VPMReference iReferenceProduct,VPMPublication
-                | iPublication)
-                |     Removes a publication.
-                | 
-                |     Parameters:
-                | 
-                |         iReferenceProduct:
-                |             The reference product which contains the publication.
-                |             
-                |         iPublication:
-                |             The publication to remove.
+                Sub RemovePublication(VPMReference iReferenceProduct,VPMPublication
+                iPublication)
+                    Removes a publication.
+                
+                    Parameters:
+                
+                        iReferenceProduct:
+                            The reference product which contains the publication.
+                            
+                        iPublication:
+                            The publication to remove.
 
         :param VPMReference i_reference_product:
         :param VPMPublication i_publication:
@@ -140,17 +140,17 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemovePublicationByName(VPMReference iReferenceProduct,CATBSTR
-                | iPublicationName)
-                |     Removes a publication by its name.
-                | 
-                |     Parameters:
-                | 
-                |         iReferenceProduct:
-                |             The reference product which contains the publication.
-                |             
-                |         iPublicationName:
-                |             The publication's name to remove.
+                Sub RemovePublicationByName(VPMReference iReferenceProduct,CATBSTR
+                iPublicationName)
+                    Removes a publication by its name.
+                
+                    Parameters:
+                
+                        iReferenceProduct:
+                            The reference product which contains the publication.
+                            
+                        iPublicationName:
+                            The publication's name to remove.
 
         :param VPMReference i_reference_product:
         :param str i_publication_name:
@@ -164,26 +164,26 @@ class SimPublicationServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ReplaceAndRenamePublication(VPMPublication iPublication,CATBSTR
-                | iNewName,boolean iReroute) As VPMPublication
-                |     Replaces an existing Publication by a new identical Publication with a new
-                |     functional name.
-                | 
-                |     Parameters:
-                | 
-                |         iPublication
-                |             Original Publication to replace and rename. 
-                |         iNewName
-                |             Functional name of the new Publication.
-                |             Has to be unique and different from iOldPub's name
-                |             
-                |         iReroute
-                |             Flag indicating whether loaded links pointing iPublication should
-                |             be automatically rerouted. Only links that are loaded in session can be
-                |             rerouted, links that are not loaded will be broken.
-                |             
-                |         oNewPub
-                |             The new, renamed Publication.
+                Func ReplaceAndRenamePublication(VPMPublication iPublication,CATBSTR
+                iNewName,boolean iReroute) As VPMPublication
+                    Replaces an existing Publication by a new identical Publication with a new
+                    functional name.
+                
+                    Parameters:
+                
+                        iPublication
+                            Original Publication to replace and rename. 
+                        iNewName
+                            Functional name of the new Publication.
+                            Has to be unique and different from iOldPub's name
+                            
+                        iReroute
+                            Flag indicating whether loaded links pointing iPublication should
+                            be automatically rerouted. Only links that are loaded in session can be
+                            rerouted, links that are not loaded will be broken.
+                            
+                        oNewPub
+                            The new, renamed Publication.
 
         :param VPMPublication i_publication:
         :param str i_new_name:

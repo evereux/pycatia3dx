@@ -17,14 +17,14 @@ class NonSemanticDatum(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticDatum
-                | 
-                | Interface Managing Non Semantic Datum.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticDatum
+                
+                Interface Managing Non Semantic Datum.
     
     """
 
@@ -38,8 +38,8 @@ class NonSemanticDatum(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Label() As CATBSTR
-                |     Retrieves or sets Label. 
+                Property Label() As CATBSTR
+                    Retrieves or sets Label. 
 
         :return: str
         """

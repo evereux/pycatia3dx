@@ -17,16 +17,16 @@ class ManufacturingContainer(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingContainer
-                | 
-                | Interface to manage the machining activities container.
-                | Role: This interface allows to initialize the machining activities
-                | container.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingContainer
+                
+                Interface to manage the machining activities container.
+                Role: This interface allows to initialize the machining activities
+                container.
     
     """
 
@@ -39,13 +39,13 @@ class ManufacturingContainer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPartOperations() As CATSafeArrayVariant
-                |     Retrieves Part operations
-                | 
-                |     Parameters:
-                | 
-                |         oListOfPartOperations
-                |             List of Part Operations
+                Func GetPartOperations() As CATSafeArrayVariant
+                    Retrieves Part operations
+                
+                    Parameters:
+                
+                        oListOfPartOperations
+                            List of Part Operations
 
         :return: tuple
         """

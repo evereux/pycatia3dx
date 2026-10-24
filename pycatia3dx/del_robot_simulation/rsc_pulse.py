@@ -17,18 +17,18 @@ class RscPulse(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscPulse
-                | 
-                | Interface representing a Resource Pulse Instruction.
-                | 
-                | Role: This interface represents a RscPulse Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscPulse
+                
+                Interface representing a Resource Pulse Instruction.
+                
+                Role: This interface represents a RscPulse Instruction in a Resource
+                Task
     
     """
 
@@ -42,33 +42,33 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Delay() As double
-                |     Get/Set the pulse's delay.
-                | 
-                |     Returns:
-                |         oDelay The returned delay. 
-                |     Parameters:
-                | 
-                |         iDelay
-                |             The delay before pulse. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim Delay
-                |            Delay = oCreatedPulse.Delay
-                |            ......
-                |            oCreatedPulse.Delay = Delay
+                Property Delay() As double
+                    Get/Set the pulse's delay.
+                
+                    Returns:
+                        oDelay The returned delay. 
+                    Parameters:
+                
+                        iDelay
+                            The delay before pulse. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim Delay
+                           Delay = oCreatedPulse.Delay
+                           ......
+                           oCreatedPulse.Delay = Delay
 
         :return: float
         """
@@ -89,34 +89,34 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Duration() As double
-                |     Get/Set the pulse's duration.
-                | 
-                |     Returns:
-                |         oDuration The returned duration. 
-                |     Parameters:
-                | 
-                |         iDuration
-                |             The pulse duration. Duration value has to be different from zero.
-                |             
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim oDuration
-                |            oDuration = oCreatedPulse.Duration
-                |            ......
-                |            oCreatedPulse.Duration = oDuration
+                Property Duration() As double
+                    Get/Set the pulse's duration.
+                
+                    Returns:
+                        oDuration The returned duration. 
+                    Parameters:
+                
+                        iDuration
+                            The pulse duration. Duration value has to be different from zero.
+                            
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim oDuration
+                           oDuration = oCreatedPulse.Duration
+                           ......
+                           oCreatedPulse.Duration = oDuration
 
         :return: float
         """
@@ -137,33 +137,33 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PulseDataEntity() As RscDataEntity
-                |     Get/Set the pulsed Data Entity.
-                | 
-                |     Returns:
-                |         oPulseDataEntity The returned pulsed entity. 
-                |     Parameters:
-                | 
-                |         iPulseDataEntity
-                |             The new pulsed entity. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim PulseDataEntity As RscDataEntity
-                |            Set PulseDataEntity = oCreatedPulse.PulseDataEntity
-                |            ......
-                |            oCreatedPulse.PulseDataEntity = PulseDataEntity
+                Property PulseDataEntity() As RscDataEntity
+                    Get/Set the pulsed Data Entity.
+                
+                    Returns:
+                        oPulseDataEntity The returned pulsed entity. 
+                    Parameters:
+                
+                        iPulseDataEntity
+                            The new pulsed entity. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim PulseDataEntity As RscDataEntity
+                           Set PulseDataEntity = oCreatedPulse.PulseDataEntity
+                           ......
+                           oCreatedPulse.PulseDataEntity = PulseDataEntity
 
         :return: RscDataEntity
         """
@@ -184,33 +184,33 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As CATBSTR
-                |     Get/Set the Value pulsed to this Data Entity.
-                | 
-                |     Returns:
-                |         oValue The returned pulsed value. 
-                |     Parameters:
-                | 
-                |         iValue
-                |             The new pulsed value. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim Value
-                |            Value = oCreatedPulse.Value
-                |            ......
-                |            oCreatedPulse.Value = Value
+                Property Value() As CATBSTR
+                    Get/Set the Value pulsed to this Data Entity.
+                
+                    Returns:
+                        oValue The returned pulsed value. 
+                    Parameters:
+                
+                        iValue
+                            The new pulsed value. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim Value
+                           Value = oCreatedPulse.Value
+                           ......
+                           oCreatedPulse.Value = Value
 
         :return: str
         """
@@ -230,26 +230,26 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ActivateInvertMode()
-                |     Activates invert mode. With this mode, the value is no more a required
-                |     parameter. Pulse values are evaluated at the time the instruction is executed.
-                |     The first change inverts the value. The second change restores the previous
-                |     value (If duration is not infinite).
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Call ResourceSequence.CreateRscPulse(iIndex,oCreatedPulse)
-                |            Call  oCreatedPulse.ActivateInvertMode()
+                Sub ActivateInvertMode()
+                    Activates invert mode. With this mode, the value is no more a required
+                    parameter. Pulse values are evaluated at the time the instruction is executed.
+                    The first change inverts the value. The second change restores the previous
+                    value (If duration is not infinite).
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Call ResourceSequence.CreateRscPulse(iIndex,oCreatedPulse)
+                           Call  oCreatedPulse.ActivateInvertMode()
 
         :return: None
         """
@@ -260,23 +260,23 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeActivateInvertMode()
-                |     Deactivates invert mode.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Call  oCreatedPulse.DeActivateInvertMode()
+                Sub DeActivateInvertMode()
+                    Deactivates invert mode.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Call  oCreatedPulse.DeActivateInvertMode()
 
         :return: None
         """
@@ -287,31 +287,31 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasInfiniteDuration() As boolean
-                |     Returns if pulse has infinite duration.
-                | 
-                |     Returns:
-                |         oInfiniteDurationStatus Returns if pulse has infinite duration. Legal
-                |         values:
-                | 
-                |             TRUE : Infinite duration
-                |             FALSE : Finite duration
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim oInfiniteDurationStatus
-                |            oInfiniteDurationStatus = oCreatedPulse.HasInfiniteDuration()
+                Func HasInfiniteDuration() As boolean
+                    Returns if pulse has infinite duration.
+                
+                    Returns:
+                        oInfiniteDurationStatus Returns if pulse has infinite duration. Legal
+                        values:
+                
+                            TRUE : Infinite duration
+                            FALSE : Finite duration
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim oInfiniteDurationStatus
+                           oInfiniteDurationStatus = oCreatedPulse.HasInfiniteDuration()
 
         :return: bool
         """
@@ -322,31 +322,31 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsInvertModeActivated() As boolean
-                |     Returns if invert mode is activated.
-                | 
-                |     Returns:
-                |         oInvertModeActivationStatus Returns if invert mode is activated. Legal
-                |         values:
-                | 
-                |             TRUE : Invert mode activated
-                |             FALSE : Invert mode deactivated - Value is required.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Dim oInvertModeActivationStatus
-                |            oInvertModeActivationStatus = oCreatedPulse.IsInvertModeActivated()
+                Func IsInvertModeActivated() As boolean
+                    Returns if invert mode is activated.
+                
+                    Returns:
+                        oInvertModeActivationStatus Returns if invert mode is activated. Legal
+                        values:
+                
+                            TRUE : Invert mode activated
+                            FALSE : Invert mode deactivated - Value is required.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Dim oInvertModeActivationStatus
+                           oInvertModeActivationStatus = oCreatedPulse.IsInvertModeActivated()
 
         :return: bool
         """
@@ -357,23 +357,23 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInfiniteDuration()
-                |     Set infinite duration.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Call  oCreatedPulse.SetInfiniteDuration()
+                Sub SetInfiniteDuration()
+                    Set infinite duration.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Call  oCreatedPulse.SetInfiniteDuration()
 
         :return: None
         """
@@ -384,23 +384,23 @@ class RscPulse(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub UnSetDelay()
-                |     Unset delay.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedPulse As RscPulse
-                |            Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
-                |            Call  oCreatedPulse.UnSetDelay()
+                Sub UnSetDelay()
+                    Unset delay.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedPulse As RscPulse
+                           Set oCreatedPulse = ResourceSequence.CreateRscPulse(iIndex)
+                           Call  oCreatedPulse.UnSetDelay()
 
         :return: None
         """

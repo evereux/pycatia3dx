@@ -17,16 +17,16 @@ class ManufacturingResourceFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingResourceFactory
-                | 
-                | Interface to create manufacturing resources.
-                | Role: This interface offers services to create manufacturing
-                | resources
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingResourceFactory
+                
+                Interface to create manufacturing resources.
+                Role: This interface offers services to create manufacturing
+                resources
     
     """
 
@@ -39,25 +39,25 @@ class ManufacturingResourceFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateResource(CATBSTR iType,boolean iAddList) As
-                | AnyObject
-                |     This method is used to create a new manufacturing
-                |     resource.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the resource to create. 
-                |         oResource
-                |             Handler on the newly created resource of given type.
-                |             
-                | 
-                |     See also:
-                |         ManufacturingResource
-                |     Parameters:
-                | 
-                |         iAddList
-                |             Flag to add the resource into the resource List.
+                Func CreateResource(CATBSTR iType,boolean iAddList) As
+                AnyObject
+                    This method is used to create a new manufacturing
+                    resource.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the resource to create. 
+                        oResource
+                            Handler on the newly created resource of given type.
+                            
+                
+                    See also:
+                        ManufacturingResource
+                    Parameters:
+                
+                        iAddList
+                            Flag to add the resource into the resource List.
 
         :param str i_type:
         :param bool i_add_list:
@@ -70,26 +70,26 @@ class ManufacturingResourceFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateResource2(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
-                | iClientId,boolean iAddList) As AnyObject
-                |     This method is used to create a new user resource.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the resource to create. 
-                |         iCatalogName
-                |             the catalog base name 
-                |         iClientId
-                |             the client id related to catalog 
-                |         iAddList
-                |             Flag to add the resource into the resource List. 
-                |         oResource
-                |             Handler on the newly created resource of given type.
-                |             
-                | 
-                |     See also:
-                |         ManufacturingResource
+                Func CreateResource2(CATBSTR iType,CATBSTR iCatalogName,CATBSTR
+                iClientId,boolean iAddList) As AnyObject
+                    This method is used to create a new user resource.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the resource to create. 
+                        iCatalogName
+                            the catalog base name 
+                        iClientId
+                            the client id related to catalog 
+                        iAddList
+                            Flag to add the resource into the resource List. 
+                        oResource
+                            Handler on the newly created resource of given type.
+                            
+                
+                    See also:
+                        ManufacturingResource
 
         :param str i_type:
         :param str i_catalog_name:

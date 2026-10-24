@@ -18,12 +18,12 @@ class Weld(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Weld
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Weld
 
     
     """
@@ -37,8 +37,8 @@ class Weld(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingWelding
-                |     Retrieves Drafting Weld annotation.
+                Func Get2dAnnot() As DrawingWelding
+                    Retrieves Drafting Weld annotation.
 
         :return: DrawingWelding
         """
@@ -49,8 +49,8 @@ class Weld(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface. 
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface. 
 
         :return: TPSParallelOnScreen
         """

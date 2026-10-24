@@ -20,14 +20,14 @@ class StrSlots(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrSlots
-                | 
-                | Object for StrSlots
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrSlots
+                
+                Object for StrSlots
     
     """
 
@@ -40,19 +40,19 @@ class StrSlots(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As StrSlot
-                |     Adds a slot under this Panel / Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a slot under the
-                |              Panel/Profile.
-                |              
-                | 
-                |              Dim ObjStrSlots As StrSlots
-                |              Set ObjStrSlots = iObjSfdPanel.StrSlots
-                |              Set ObjStrSlot = ObjStrSlots.Add
+                Func Add() As StrSlot
+                    Adds a slot under this Panel / Profile.
+                
+                    Example:
+                
+                
+                             This example creates a slot under the
+                             Panel/Profile.
+                             
+                
+                             Dim ObjStrSlots As StrSlots
+                             Set ObjStrSlots = iObjSfdPanel.StrSlots
+                             Set ObjStrSlot = ObjStrSlots.Add
 
         :return: StrSlot
         """
@@ -63,22 +63,22 @@ class StrSlots(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrSlot
-                |     Returns a slot from a list of slots
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of StrSlot 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first slot from the list of
-                |              slots.
-                |              
-                | 
-                |               Set SlotReference = ListOfSlots.Item(1)
+                Func Item(CATVariant iIndex) As StrSlot
+                    Returns a slot from a list of slots
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of StrSlot 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first slot from the list of
+                             slots.
+                             
+                
+                              Set SlotReference = ListOfSlots.Item(1)
 
         :param CATVariant i_index:
         :return: StrSlot
@@ -90,21 +90,21 @@ class StrSlots(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StrSlot iSlot)
-                |     Removes the Slot.
-                | 
-                |     Parameters:
-                | 
-                |         iSlot
-                |             Slot 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example removes the slot.
-                |              
-                | 
-                |               ObjStrSlots.Remove ObjStrSlot
+                Sub Remove(StrSlot iSlot)
+                    Removes the Slot.
+                
+                    Parameters:
+                
+                        iSlot
+                            Slot 
+                
+                    Example:
+                
+                
+                             This example removes the slot.
+                             
+                
+                              ObjStrSlots.Remove ObjStrSlot
 
         :param StrSlot i_slot:
         :return: None

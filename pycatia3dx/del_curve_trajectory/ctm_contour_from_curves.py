@@ -17,17 +17,17 @@ class CtmContourFromCurves(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmContourFromCurves
-                | 
-                | Interface representing a Contour created from Curves.
-                | 
-                | Role: This interface is used to get and set the curve selection for a contour
-                | created from curves.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmContourFromCurves
+                
+                Interface representing a Contour created from Curves.
+                
+                Role: This interface is used to get and set the curve selection for a contour
+                created from curves.
     
     """
 
@@ -40,30 +40,30 @@ class CtmContourFromCurves(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetCurveSelection(CATSafeArrayVariant oCurveList,CtmCurveType
-                | opCType)
-                |     Get the Selection (Mfg Cells or Process ArcTrajectory).
+                Sub GetCurveSelection(CATSafeArrayVariant oCurveList,CtmCurveType
+                opCType)
+                    Get the Selection (Mfg Cells or Process ArcTrajectory).
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         opProcessTrajSO
-                |             The Process ArcTrajectory
-                |         CtmCurveType
-                |             The curve type
+                        opProcessTrajSO
+                            The Process ArcTrajectory
+                        CtmCurveType
+                            The curve type
                 |
-                |     Returns:
-                |         Retrieves the curve selection
-                |     Example:
+                    Returns:
+                        Retrieves the curve selection
+                    Example:
                 |
-                |          Dim oCurveTrajectory As CurveTrajectory
-                |                .........
-                |          Dim objContourCurves As CtmContourFromCurves
-                |          Dim oContours()
-                |          oCurveTrajectory.GetContours(oContours)
-                |          Set objContourCurves = oContours(0)
-                |          Dim oCurveList()
-                |          Call objContourCurves.GetCurveSelection(oCurveList,
-                |          RES_MFGCELL)
+                         Dim oCurveTrajectory As CurveTrajectory
+                               .........
+                         Dim objContourCurves As CtmContourFromCurves
+                         Dim oContours()
+                         oCurveTrajectory.GetContours(oContours)
+                         Set objContourCurves = oContours(0)
+                         Dim oCurveList()
+                         Call objContourCurves.GetCurveSelection(oCurveList,
+                         RES_MFGCELL)
 
         :param tuple o_curve_list:
         :param CtmCurveType op_c_type:
@@ -92,33 +92,33 @@ class CtmContourFromCurves(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetCurveSelection(CATSafeArrayVariant iArrayCurve,CATSafeArrayVariant
-                | iArrayLeafPrd,CtmCurveType iCType)
-                |     Set the Selection (Mfg Cells or Process ArcTrajectory).
+                Sub SetCurveSelection(CATSafeArrayVariant iArrayCurve,CATSafeArrayVariant
+                iArrayLeafPrd,CtmCurveType iCType)
+                    Set the Selection (Mfg Cells or Process ArcTrajectory).
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iCurveSO
-                |             The paths to the curves.
-                |         CtmCurveType
-                |             The curve type
-                |         Example:
+                        iCurveSO
+                            The paths to the curves.
+                        CtmCurveType
+                            The curve type
+                        Example:
                 |
-                |              Dim objContourCurves As CtmContourFromCurves
-                |                    .......
-                |             InputObjectType(0) = "Edge"
-                |             status = oSelection.SelectElement2(InputObjectType, "Select edge", False)
-                |             Set oCurve = oSelection.Item(1).Value
-                |             InputObjectType(0) = "VPMOccurrence"
-                |             oSelection.SelectElement2(InputObjectType, "Select product",
-                |             False)
-                |             Set oLeafProduct = oSelection.Item(1).Value
-                |             Dim iArrayCurve(0)
-                |             Set iArrayCurve(0) = oCurve
-                |             Dim iArrayLeafProd(0)
-                |             Set iArrayLeafProd(0) = oLeafProduct
-                |              Call objContourCurves.SetCurveSelection(iArrayCurve,
-                |              iArrayLeafPrd, RES_MFGCELL)
+                             Dim objContourCurves As CtmContourFromCurves
+                                   .......
+                            InputObjectType(0) = "Edge"
+                            status = oSelection.SelectElement2(InputObjectType, "Select edge", False)
+                            Set oCurve = oSelection.Item(1).Value
+                            InputObjectType(0) = "VPMOccurrence"
+                            oSelection.SelectElement2(InputObjectType, "Select product",
+                            False)
+                            Set oLeafProduct = oSelection.Item(1).Value
+                            Dim iArrayCurve(0)
+                            Set iArrayCurve(0) = oCurve
+                            Dim iArrayLeafProd(0)
+                            Set iArrayLeafProd(0) = oLeafProduct
+                             Call objContourCurves.SetCurveSelection(iArrayCurve,
+                             iArrayLeafPrd, RES_MFGCELL)
 
         :param tuple i_array_curve:
         :param tuple i_array_leaf_prd:

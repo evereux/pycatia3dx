@@ -17,14 +17,14 @@ class ManufacturingUserRepresentation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingUserRepresentation
-                | 
-                | Interface dedicated to manage user representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingUserRepresentation
+                
+                Interface dedicated to manage user representation.
     
     """
 
@@ -38,24 +38,24 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRepresentation(CATBSTR iCuttingType,CATBSTR
-                | iNameRepresentation,AnyObject iToolRepresention,CATBSTR
-                | iState)
-                |     Adds a User Representation to the Object following some
-                |     criteria.
-                | 
-                |     Parameters:
-                | 
-                |         iCuttingType
-                |             Define the type of cutting element (Cut,NoCut,Cleaner)
-                |             
-                |         iNameRepresentation
-                |             Define the name of representation (Static,Rotary,Worn ...)
-                |             
-                |         iToolRepresention
-                |             The representation to add. 
-                |         iState
-                |             Define the state of representation (Normal,Worn)
+                Sub AddRepresentation(CATBSTR iCuttingType,CATBSTR
+                iNameRepresentation,AnyObject iToolRepresention,CATBSTR
+                iState)
+                    Adds a User Representation to the Object following some
+                    criteria.
+                
+                    Parameters:
+                
+                        iCuttingType
+                            Define the type of cutting element (Cut,NoCut,Cleaner)
+                            
+                        iNameRepresentation
+                            Define the name of representation (Static,Rotary,Worn ...)
+                            
+                        iToolRepresention
+                            The representation to add. 
+                        iState
+                            Define the state of representation (Normal,Worn)
 
         :param str i_cutting_type:
         :param str i_name_representation:
@@ -71,14 +71,14 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRepresentationStep(CATBSTR iStepFilePath)
-                |     Adds a User Representation to the Object following some
-                |     criteria.
-                | 
-                |     Parameters:
-                | 
-                |         strStepFilePath
-                |             The file path of step file
+                Sub AddRepresentationStep(CATBSTR iStepFilePath)
+                    Adds a User Representation to the Object following some
+                    criteria.
+                
+                    Parameters:
+                
+                        strStepFilePath
+                            The file path of step file
 
         :param str i_step_file_path:
         :return: None
@@ -90,8 +90,8 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeStandardRepresentation()
-                |     Compute the standard representation
+                Sub ComputeStandardRepresentation()
+                    Compute the standard representation
 
         :return: None
         """
@@ -102,8 +102,8 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeWornRepresentation()
-                |     Compute the Worn representation
+                Sub ComputeWornRepresentation()
+                    Compute the Worn representation
 
         :return: None
         """
@@ -114,23 +114,23 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRepresentation(CATBSTR iCuttingType,CATBSTR iState,CATBSTR
-                | iNameRepresentation) As CATSafeArrayVariant
-                |     Returns a list of User Representation Associated to the Object following
-                |     some criteria.
-                | 
-                |     Parameters:
-                | 
-                |         iCuttingType
-                |             Define the type of cutting element (Cut,NoCut,Cleaner)
-                |             
-                |         iState
-                |             Define the state of representation (Normal,Worn) 
-                |         iNameRepresentation
-                |             Define the name of representation (Static,Rotary,Worn ...)
-                |             
-                |         oListofToolRepresentation
-                |             List of Tool Representation.
+                Func GetRepresentation(CATBSTR iCuttingType,CATBSTR iState,CATBSTR
+                iNameRepresentation) As CATSafeArrayVariant
+                    Returns a list of User Representation Associated to the Object following
+                    some criteria.
+                
+                    Parameters:
+                
+                        iCuttingType
+                            Define the type of cutting element (Cut,NoCut,Cleaner)
+                            
+                        iState
+                            Define the state of representation (Normal,Worn) 
+                        iNameRepresentation
+                            Define the name of representation (Static,Rotary,Worn ...)
+                            
+                        oListofToolRepresentation
+                            List of Tool Representation.
 
         :param str i_cutting_type:
         :param str i_state:
@@ -144,8 +144,8 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Hide(CATBSTR iNameRepresentation)
-                |     Hide Representation
+                Sub Hide(CATBSTR iNameRepresentation)
+                    Hide Representation
 
         :param str i_name_representation:
         :return: None
@@ -157,8 +157,8 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsExistingOneRepresentation() As boolean
-                |     Checking if at least one representation is assotiated.
+                Func IsExistingOneRepresentation() As boolean
+                    Checking if at least one representation is assotiated.
 
         :return: bool
         """
@@ -169,21 +169,21 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsExistingRepresentation(CATBSTR iCuttingType,CATBSTR
-                | iNameRepresentation,CATBSTR iState) As boolean
-                |     Checking if an Representation is assotiated to selected
-                |     criteria.
-                | 
-                |     Parameters:
-                | 
-                |         iCuttingType
-                |             Define the type of cutting element (Cut,NoCut,Cleaner)
-                |             
-                |         iNameRepresentation
-                |             Define the name of representation (Static,Rotary,Worn ...)
-                |             
-                |         iState
-                |             Define the state of representation (Normal,Worn)
+                Func IsExistingRepresentation(CATBSTR iCuttingType,CATBSTR
+                iNameRepresentation,CATBSTR iState) As boolean
+                    Checking if an Representation is assotiated to selected
+                    criteria.
+                
+                    Parameters:
+                
+                        iCuttingType
+                            Define the type of cutting element (Cut,NoCut,Cleaner)
+                            
+                        iNameRepresentation
+                            Define the name of representation (Static,Rotary,Worn ...)
+                            
+                        iState
+                            Define the state of representation (Normal,Worn)
 
         :param str i_cutting_type:
         :param str i_name_representation:
@@ -197,21 +197,21 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAllRepresentation(CATBSTR iCuttingType,CATBSTR
-                | iNameRepresentation,CATBSTR iState)
-                |     Removes All User Representation from the Object following some
-                |     criteria.
-                | 
-                |     Parameters:
-                | 
-                |         iCuttingType
-                |             Define the type of cutting element (Cut,NoCut,Cleaner)
-                |             
-                |         iNameRepresentation
-                |             Define the name of representation (Static,Rotary...)
-                |             
-                |         iState
-                |             Define the state of representation (Normal,Worn)
+                Sub RemoveAllRepresentation(CATBSTR iCuttingType,CATBSTR
+                iNameRepresentation,CATBSTR iState)
+                    Removes All User Representation from the Object following some
+                    criteria.
+                
+                    Parameters:
+                
+                        iCuttingType
+                            Define the type of cutting element (Cut,NoCut,Cleaner)
+                            
+                        iNameRepresentation
+                            Define the name of representation (Static,Rotary...)
+                            
+                        iState
+                            Define the state of representation (Normal,Worn)
 
         :param str i_cutting_type:
         :param str i_name_representation:
@@ -226,24 +226,24 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveRepresentation(CATBSTR iCuttingType,CATBSTR
-                | iNameRepresentation,AnyObject iToolRepresentation,CATBSTR
-                | iState)
-                |     Removes a User Representation from the Object following some
-                |     criteria.
-                | 
-                |     Parameters:
-                | 
-                |         iCuttingType
-                |             Define the type of cutting element (Cut,NoCut,Cleaner)
-                |             
-                |         iNameRepresentation
-                |             Define the name of representation (Static,Rotary ...)
-                |             
-                |         iToolRepresention
-                |             The representation to remove. 
-                |         iState
-                |             Define the state of representation (Normal,Worn)
+                Sub RemoveRepresentation(CATBSTR iCuttingType,CATBSTR
+                iNameRepresentation,AnyObject iToolRepresentation,CATBSTR
+                iState)
+                    Removes a User Representation from the Object following some
+                    criteria.
+                
+                    Parameters:
+                
+                        iCuttingType
+                            Define the type of cutting element (Cut,NoCut,Cleaner)
+                            
+                        iNameRepresentation
+                            Define the name of representation (Static,Rotary ...)
+                            
+                        iToolRepresention
+                            The representation to remove. 
+                        iState
+                            Define the state of representation (Normal,Worn)
 
         :param str i_cutting_type:
         :param str i_name_representation:
@@ -259,8 +259,8 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Show(CATBSTR iNameRepresentation)
-                |     Show Representation
+                Sub Show(CATBSTR iNameRepresentation)
+                    Show Representation
 
         :param str i_name_representation:
         :return: None
@@ -272,10 +272,10 @@ class ManufacturingUserRepresentation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub UpdatePosition()
-                |     Update Position of user representation After modification of user
-                |     representation or modification of base or mount point, Call this method to
-                |     update position of user representation
+                Sub UpdatePosition()
+                    Update Position of user representation After modification of user
+                    representation or modification of base or mount point, Call this method to
+                    update position of user representation
 
         :return: None
         """

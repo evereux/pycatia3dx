@@ -18,14 +18,14 @@ class SimConnectorSection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorSection
-                | 
-                | Represents the Connector Section object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorSection
+                
+                Represents the Connector Section object.
     
     """
 
@@ -39,8 +39,8 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActiveDOFs() As CATSafeArrayVariant (Read Only)
-                |     Returns the list of active DOFs. The list can contains the following values: 1 : the first translation DOF is active, 2 : the second translation DOF is active, 3 : the third translation DOF is active, 4 : the first rotation DOF is active, 5 : the second rotation DOF is active, 6 : the third rotation DOF is active.
+                Property ActiveDOFs() As CATSafeArrayVariant (Read Only)
+                    Returns the list of active DOFs. The list can contains the following values: 1 : the first translation DOF is active, 2 : the second translation DOF is active, 3 : the third translation DOF is active, 4 : the first rotation DOF is active, 5 : the second rotation DOF is active, 6 : the third rotation DOF is active.
 
         :return: tuple
         """
@@ -53,9 +53,9 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssembledConnectorType() As
-                | SimConnectorSectionAssembledConnectorType
-                |     Returns or sets the type of the Assembled connector.
+                Property AssembledConnectorType() As
+                SimConnectorSectionAssembledConnectorType
+                    Returns or sets the type of the Assembled connector.
 
         :return: int
         """
@@ -76,9 +76,9 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorBehavior() As SimConnectorBehavior (Read
-                | Only)
-                |     Returns the connector behavior.
+                Property ConnectorBehavior() As SimConnectorBehavior (Read
+                Only)
+                    Returns the connector behavior.
 
         :return: SimConnectorBehavior
         """
@@ -91,8 +91,8 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstAxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the first axis system.
+                Property FirstAxisSystem() As SimAxisSystem (Read Only)
+                    Returns the first axis system.
 
         :return: SimAxisSystem
         """
@@ -105,9 +105,9 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RotationalConnectorType() As
-                | SimConnectorSectionRotationalConnectorType
-                |     Returns or sets the type of the Rotational connector.
+                Property RotationalConnectorType() As
+                SimConnectorSectionRotationalConnectorType
+                    Returns or sets the type of the Rotational connector.
 
         :return: int
         """
@@ -128,8 +128,8 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondAxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the second axis system.
+                Property SecondAxisSystem() As SimAxisSystem (Read Only)
+                    Returns the second axis system.
 
         :return: SimAxisSystem
         """
@@ -142,9 +142,9 @@ class SimConnectorSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TranslationalConnectorType() As
-                | SimConnectorSectionTranslationalConnectorType
-                |     Returns or sets the type of the Translational connector. 
+                Property TranslationalConnectorType() As
+                SimConnectorSectionTranslationalConnectorType
+                    Returns or sets the type of the Translational connector. 
 
         :return: int
         """

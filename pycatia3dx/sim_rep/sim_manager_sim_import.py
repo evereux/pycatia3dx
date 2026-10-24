@@ -17,13 +17,13 @@ class SimManagerSimImport(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimManagerSIMImport
-                | 
-                | Represents the service to import data into a SIM manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimManagerSIMImport
+                
+                Represents the service to import data into a SIM manager.
     
     """
 
@@ -37,8 +37,8 @@ class SimManagerSimImport(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Args() As SimImportExportArgs (Read Only)
-                |     Gets the current arguments of the import operation.
+                Property Args() As SimImportExportArgs (Read Only)
+                    Gets the current arguments of the import operation.
 
         :return: SimImportExportArgs
         """
@@ -50,14 +50,14 @@ class SimManagerSimImport(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Import(CATBSTR iImporterId)
-                |     Imports data into this SIM manager thanks to a given SIM importer
-                |     (identified by its id) using the current import arguments.
-                | 
-                |     Parameters:
-                | 
-                |         iImporterId:
-                |             The importer id.
+                Sub Import(CATBSTR iImporterId)
+                    Imports data into this SIM manager thanks to a given SIM importer
+                    (identified by its id) using the current import arguments.
+                
+                    Parameters:
+                
+                        iImporterId:
+                            The importer id.
 
         :param str i_importer_id:
         :return: None

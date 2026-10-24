@@ -18,51 +18,51 @@ class SimCastingControl(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCastingControl
-                | 
-                | Represents the casting control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCastingControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCastingControl As SimCastingControl
-                |      Set MyCastingControl = MyFeatures.Add("SimCastingControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimCastingControl named "Casting Control.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCastingControl As SimCastingControl
-                |      Set MyCastingControl = MyFeatures.Item("Casting Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCastingControl as following:
-                | 
-                |      ...
-                |      MyCastingControl = MyFeatures.Add("SimCastingControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimCastingControl named "Casting Control.1" as following:
-                | 
-                |      ...
-                |      MyCastingControl = MyFeatures.Item("Casting Control.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCastingControl
+                
+                Represents the casting control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCastingControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCastingControl As SimCastingControl
+                     Set MyCastingControl = MyFeatures.Add("SimCastingControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimCastingControl named "Casting Control.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCastingControl As SimCastingControl
+                     Set MyCastingControl = MyFeatures.Item("Casting Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCastingControl as following:
+                
+                     ...
+                     MyCastingControl = MyFeatures.Add("SimCastingControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimCastingControl named "Casting Control.1" as following:
+                
+                     ...
+                     MyCastingControl = MyFeatures.Item("Casting Control.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimCastingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the casting control.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the casting control.
 
         :return: SimAxisSystem
         """
@@ -90,8 +90,8 @@ class SimCastingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Plane() As CATBaseDispatch (Read Only)
-                |     Returns the plane associated to the casting control.
+                Property Plane() As CATBaseDispatch (Read Only)
+                    Returns the plane associated to the casting control.
 
         :return: AnyObject
         """
@@ -104,10 +104,10 @@ class SimCastingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreventMaterialRemovalFlag() As boolean
-                |     Returns or sets the flag to prevent material removal in preserved region's shadow.
-                |     FALSE : No prevention for material removal,
-                |     TRUE : Prevention for material removal in applied.
+                Property PreventMaterialRemovalFlag() As boolean
+                    Returns or sets the flag to prevent material removal in preserved region's shadow.
+                    FALSE : No prevention for material removal,
+                    TRUE : Prevention for material removal in applied.
 
         :return: bool
         """
@@ -128,8 +128,8 @@ class SimCastingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimCastingControlType
-                |     Returns or sets the type of casting control.
+                Property Type() As SimCastingControlType
+                    Returns or sets the type of casting control.
 
         :return: int
         """

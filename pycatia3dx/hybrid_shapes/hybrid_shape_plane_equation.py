@@ -20,17 +20,17 @@ class HybridShapePlaneEquation(Plane):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneEquation
-                | 
-                | Plane define by an equation plane.
-                | Role: Allows to access data of the plane feature created by its cartesian equation. Plane equation is Ax+By+Cz = D.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneEquation
+                
+                Plane define by an equation plane.
+                Role: Allows to access data of the plane feature created by its cartesian equation. Plane equation is Ax+By+Cz = D.
     
     """
 
@@ -44,21 +44,21 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property A() As RealParam (Read Only)
-                |     Gets A coefficient for plane equation.
-                | 
-                |     Parameters:
-                | 
-                |         oA
-                |             A Coefficient of cartesian plane 
-                | 
-                |     See also:
-                |         RealParam
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property A() As RealParam (Read Only)
+                    Gets A coefficient for plane equation.
+                
+                    Parameters:
+                
+                        oA
+                            A Coefficient of cartesian plane 
+                
+                    See also:
+                        RealParam
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: RealParam
         """
@@ -71,21 +71,21 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property B() As RealParam (Read Only)
-                |     Gets B coefficient for plane equation.
-                | 
-                |     Parameters:
-                | 
-                |         oB
-                |             B Coefficient of cartesian plane 
-                | 
-                |     See also:
-                |         RealParam
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property B() As RealParam (Read Only)
+                    Gets B coefficient for plane equation.
+                
+                    Parameters:
+                
+                        oB
+                            B Coefficient of cartesian plane 
+                
+                    See also:
+                        RealParam
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: RealParam
         """
@@ -98,22 +98,22 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property C() As RealParam (Read Only)
-                |     Gets C coefficient for plane equation.
-                | 
-                |     Parameters:
-                | 
-                |         oC
-                |             C Coefficient of cartesian plane return value for CATScript
-                |             applications, with (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         RealParam
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property C() As RealParam (Read Only)
+                    Gets C coefficient for plane equation.
+                
+                    Parameters:
+                
+                        oC
+                            C Coefficient of cartesian plane return value for CATScript
+                            applications, with (IDLRETVAL) function type 
+                
+                    See also:
+                        RealParam
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: RealParam
         """
@@ -126,21 +126,21 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property D() As Length (Read Only)
-                |     Gets D coefficient for plane equation.
-                | 
-                |     Parameters:
-                | 
-                |         oD
-                |             D Coefficient of cartesian plane 
-                | 
-                |     See also:
-                |         Length
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property D() As Length (Read Only)
+                    Gets D coefficient for plane equation.
+                
+                    Parameters:
+                
+                        oD
+                            D Coefficient of cartesian plane 
+                
+                    See also:
+                        Length
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Length
         """
@@ -153,23 +153,23 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RefAxisSystem() As Reference
-                |     Returns or Sets the reference Axis System for PlaneEquation
-                |     feature.
-                |     This data is not mandatory, if element is null, the absolute axis system is
-                |     taken.
-                |     When an element is given, X, Y and Z are considered in this Axis
-                |     system.
-                |     If reference point is not specified, X,Y and Z are measured from origin of
-                |     this axis system.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oRefAxis the reference Axis System for
-                |         PlaneEquation feature.
-                | 
-                |          Dim oRefAxis As CATIAReference
-                |          Set oRefAxis  = PlaneEquation.RefAxisSystem
+                Property RefAxisSystem() As Reference
+                    Returns or Sets the reference Axis System for PlaneEquation
+                    feature.
+                    This data is not mandatory, if element is null, the absolute axis system is
+                    taken.
+                    When an element is given, X, Y and Z are considered in this Axis
+                    system.
+                    If reference point is not specified, X,Y and Z are measured from origin of
+                    this axis system.
+                
+                    Example
+                    :
+                        This example retrieves in oRefAxis the reference Axis System for
+                        PlaneEquation feature.
+                
+                         Dim oRefAxis As CATIAReference
+                         Set oRefAxis  = PlaneEquation.RefAxisSystem
 
         :return: Reference
         """
@@ -189,13 +189,13 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetReferencePoint() As Reference
-                |     Gets the reference point.
-                | 
-                |     Parameters:
-                | 
-                |         oReferencePoint
-                |             reference point
+                Func GetReferencePoint() As Reference
+                    Gets the reference point.
+                
+                    Parameters:
+                
+                        oReferencePoint
+                            reference point
 
         :return: Reference
         """
@@ -206,13 +206,13 @@ class HybridShapePlaneEquation(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetReferencePoint(Reference iReferencePoint)
-                |     Sets the reference point.
-                | 
-                |     Parameters:
-                | 
-                |         iReferencePoint
-                |             reference point
+                Sub SetReferencePoint(Reference iReferencePoint)
+                    Sets the reference point.
+                
+                    Parameters:
+                
+                        iReferencePoint
+                            reference point
 
         :param Reference i_reference_point:
         :return: None

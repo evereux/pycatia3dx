@@ -18,16 +18,16 @@ class StrPosAxisAdjustment(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrPosAxisAdjustment
-                | 
-                | Object to access a volatile parameter group for the positioning strategy axis
-                | adjustment This interface is used for Standard Opening Positioning Strategy
-                | specification data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrPosAxisAdjustment
+                
+                Object to access a volatile parameter group for the positioning strategy axis
+                adjustment This interface is used for Standard Opening Positioning Strategy
+                specification data.
     
     """
 
@@ -41,25 +41,25 @@ class StrPosAxisAdjustment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Role() As CATBSTR (Read Only)
-                |     Returns the role of this parameter. The role is specific to the element
-                |     from which this interface was retrieved.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the role of the parameter.
-                |              
-                | 
-                |              Dim ObjStrStandardPosStrategyParameters As
-                |              StrStandardPosStrategyParameters
-                |              Set ObjStrStandardPosStrategyParameters = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(StdPosStrategyName)
-                |              Dim ObjStrPosAxisAdjustment As
-                |              StrPosAxisAdjustment
-                |              Set ObjStrPosAxisAdjustment = ObjStrStandardPosStrategyParameters.Item(1)
-                |              If (TypeName(ObjStrPosAxisAdjustment) = "StrPosAxisAdjustment") Then
-                |                  StrRole = ObjStrPosAxisAdjustment.Role
-                |              End If
+                Property Role() As CATBSTR (Read Only)
+                    Returns the role of this parameter. The role is specific to the element
+                    from which this interface was retrieved.
+                
+                    Example:
+                
+                
+                             This example retrieves the role of the parameter.
+                             
+                
+                             Dim ObjStrStandardPosStrategyParameters As
+                             StrStandardPosStrategyParameters
+                             Set ObjStrStandardPosStrategyParameters = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(StdPosStrategyName)
+                             Dim ObjStrPosAxisAdjustment As
+                             StrPosAxisAdjustment
+                             Set ObjStrPosAxisAdjustment = ObjStrStandardPosStrategyParameters.Item(1)
+                             If (TypeName(ObjStrPosAxisAdjustment) = "StrPosAxisAdjustment") Then
+                                 StrRole = ObjStrPosAxisAdjustment.Role
+                             End If
 
         :return: str
         """
@@ -71,17 +71,17 @@ class StrPosAxisAdjustment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAngleParameter() As Parameter
-                |     Returns the CKE parameter for axis rotation (around Z).
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the parameter for axis
-                |              rotation.
-                |              
-                | 
-                |              Set AngleParm = ObjStrPosAxisAdjustment.GetAngleParameter
+                Func GetAngleParameter() As Parameter
+                    Returns the CKE parameter for axis rotation (around Z).
+                
+                    Example:
+                
+                
+                             This example retrieves the parameter for axis
+                             rotation.
+                             
+                
+                             Set AngleParm = ObjStrPosAxisAdjustment.GetAngleParameter
 
         :return: Parameter
         """
@@ -92,18 +92,18 @@ class StrPosAxisAdjustment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetUShiftParameter() As Parameter
-                |     Returns the CKE parameter for position U shift (along the final axis
-                |     X).
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the position U shift
-                |              parameter.
-                |              
-                | 
-                |              Set UShiftParm = ObjStrPosAxisAdjustment.GetUShiftParameter
+                Func GetUShiftParameter() As Parameter
+                    Returns the CKE parameter for position U shift (along the final axis
+                    X).
+                
+                    Example:
+                
+                
+                             This example retrieves the position U shift
+                             parameter.
+                             
+                
+                             Set UShiftParm = ObjStrPosAxisAdjustment.GetUShiftParameter
 
         :return: Parameter
         """
@@ -114,18 +114,18 @@ class StrPosAxisAdjustment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetVShiftParameter() As Parameter
-                |     Returns the CKE parameter for position V shift (along the final axis
-                |     Y).
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the position V shift
-                |              parameter.
-                |              
-                | 
-                |              Set VShiftParm = ObjStrPosAxisAdjustment.GetVShiftParameter
+                Func GetVShiftParameter() As Parameter
+                    Returns the CKE parameter for position V shift (along the final axis
+                    Y).
+                
+                    Example:
+                
+                
+                             This example retrieves the position V shift
+                             parameter.
+                             
+                
+                             Set VShiftParm = ObjStrPosAxisAdjustment.GetVShiftParameter
 
         :return: Parameter
         """

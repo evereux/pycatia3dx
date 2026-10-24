@@ -19,18 +19,18 @@ class Scaling(DressUpShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             Scaling
-                | 
-                | Represents the scaling shape.
-                | The scaling shape is made up of a scaling reference element, such as a point,
-                | and a scaling factor.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            Scaling
+                
+                Represents the scaling shape.
+                The scaling shape is made up of a scaling reference element, such as a point,
+                and a scaling factor.
     
     """
 
@@ -44,14 +44,14 @@ class Scaling(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Factor() As RealParam (Read Only)
-                |     Returns the scaling factor.
-                | 
-                |     Example:
-                |         The following example returns in factor the scaling factor of the
-                |         scaling firstScaling:
-                | 
-                |          Set factor = firstScaling.Factor
+                Property Factor() As RealParam (Read Only)
+                    Returns the scaling factor.
+                
+                    Example:
+                        The following example returns in factor the scaling factor of the
+                        scaling firstScaling:
+                
+                         Set factor = firstScaling.Factor
 
         :return: RealParam
         """
@@ -64,20 +64,20 @@ class Scaling(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScalingReference() As Reference
-                |     Returns or sets the scaling reference element. It can be a
-                |     point.
-                |     To set the property, you can use one of the following Boundary objects:
-                |     PlanarFace or Vertex.
-                | 
-                |     Example:
-                |         The following example returns in ref the scaling reference element of
-                |         the scaling firstScaling, and then sets it to the created
-                |         MyRef:
-                | 
-                |          Set ref = firstScaling.ScalingSupport
-                |          Set MyRef = part.CreateReferenceFromGeometry (Point)
-                |          firstScaling.ScalingSupport = MyRef
+                Property ScalingReference() As Reference
+                    Returns or sets the scaling reference element. It can be a
+                    point.
+                    To set the property, you can use one of the following Boundary objects:
+                    PlanarFace or Vertex.
+                
+                    Example:
+                        The following example returns in ref the scaling reference element of
+                        the scaling firstScaling, and then sets it to the created
+                        MyRef:
+                
+                         Set ref = firstScaling.ScalingSupport
+                         Set MyRef = part.CreateReferenceFromGeometry (Point)
+                         firstScaling.ScalingSupport = MyRef
 
         :return: Reference
         """

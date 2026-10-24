@@ -18,14 +18,14 @@ class Marker(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Marker
-                | 
-                | Represents a marker.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Marker
+                
+                Represents a marker.
     
     """
 
@@ -39,16 +39,16 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Angle() As double
-                |     Returns or sets the Angle of the marker.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Angle
-                |          
-                | 
-                |          Dim cMarker As Marker
-                |          cMarker.Angle = 45
+                Property Angle() As double
+                    Returns or sets the Angle of the marker.
+                
+                    Example:
+                
+                         This example sets the Angle
+                         
+                
+                         Dim cMarker As Marker
+                         cMarker.Angle = 45
 
         :return: float
         """
@@ -69,18 +69,18 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DocumentRef(CATBSTR iReference) (Write Only)
-                |     Sets a path of the document for Picture, Hyperlink and
-                |     Audio.
-                | 
-                |     Example:
-                | 
-                |          The following set the path to the document
-                |          
-                | 
-                |          Dim cMarker As Marker
-                |          Dim path As String
-                |          cMarker.DocumentRef path
+                Property DocumentRef(CATBSTR iReference) (Write Only)
+                    Sets a path of the document for Picture, Hyperlink and
+                    Audio.
+                
+                    Example:
+                
+                         The following set the path to the document
+                         
+                
+                         Dim cMarker As Marker
+                         Dim path As String
+                         cMarker.DocumentRef path
 
         :return: None
         """
@@ -101,16 +101,16 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Fill() As boolean
-                |     Returns or sets the Fill of the Marker.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Fill
-                |          
-                | 
-                |          Dim cMarker As Marker
-                |          cMarker.Fill = True
+                Property Fill() As boolean
+                    Returns or sets the Fill of the Marker.
+                
+                    Example:
+                
+                         This example sets the Fill
+                         
+                
+                         Dim cMarker As Marker
+                         cMarker.Fill = True
 
         :return: bool
         """
@@ -131,15 +131,15 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Frame() As boolean
-                |     Returns or sets the Frame of the Marker.
-                | 
-                |     Example:
-                | 
-                |          This example sets the Frame
+                Property Frame() As boolean
+                    Returns or sets the Frame of the Marker.
+                
+                    Example:
+                
+                         This example sets the Frame
                 |
-                |          Dim cMarker As Marker
-                |          cMarker.Frame = True
+                         Dim cMarker As Marker
+                         cMarker.Frame = True
 
         :return: bool
         """
@@ -160,18 +160,18 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the Marker. 2DLine 2DPen 2DCircle 2DRectangle 2DArrow
-                |     2DText, 3DText 2DPicture, 3DPicture 2DHyperlink, 3DHyperlink 2DAudio,
-                |     3DAudio
-                | 
-                |     Example:
-                | 
-                |          This example get the marker type
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the Marker. 2DLine 2DPen 2DCircle 2DRectangle 2DArrow
+                    2DText, 3DText 2DPicture, 3DPicture 2DHyperlink, 3DHyperlink 2DAudio,
+                    3DAudio
+                
+                    Example:
+                
+                         This example get the marker type
                 |
-                |          Dim cMarker As Marker
-                |          Dim myType As String 
-                |          myType = cMarker.Type
+                         Dim cMarker As Marker
+                         Dim myType As String 
+                         myType = cMarker.Type
 
         :return: str
         """
@@ -183,23 +183,23 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPointing() As MarkerPointing
-                |     Returns the pointing info related to a marker.
-                | 
-                |     Parameters:
-                | 
-                |         oPointing
-                |             The Pointing 
-                | 
-                |     Example:
+                Func GetPointing() As MarkerPointing
+                    Returns the pointing info related to a marker.
+                
+                    Parameters:
+                
+                        oPointing
+                            The Pointing 
+                
+                    Example:
                 |
-                |          Dim cMarker As Marker
-                |          Dim bIsPointing As boolean
-                |          bIsPointing = cMarker.IsPointing 
-                |          if(bIsPointing) then
-                |         Dim markerPointing As MarkerPointing
-                |         Set markerPointing = cMarker.GetPointing 
-                |          end if
+                         Dim cMarker As Marker
+                         Dim bIsPointing As boolean
+                         bIsPointing = cMarker.IsPointing 
+                         if(bIsPointing) then
+                        Dim markerPointing As MarkerPointing
+                        Set markerPointing = cMarker.GetPointing 
+                         end if
 
         :return: MarkerPointing
         """
@@ -210,34 +210,34 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPositions() As CATSafeArrayVariant
-                |     Returns the coordinates of the positions of the Marker.
-                | 
-                |     These positions depend on the type of the Marker. 2D Line: 2 positions (two
-                |     end points). 2D Arrow: 2 positions (head and tail points). 2D Rectangle: 2
-                |     positions (bottom left and top right corner). 2D Circle: 2 positions (center
-                |     and point through which it passes). 2D Freehand: 2 positions (series of
-                |     points). 2D & 3D Text, Picture, Hyperlink, Audio: 1 anchor position (top left
-                |     point).
-                | 
-                |     Parameters:
-                | 
-                |         oCoordinates
-                |             2D: oCoordinates (0) is the X coordinate of the first point
-                |             oCoordinates (1) is the Y coordinate of the first point oCoordinates (2) is the
-                |             X coordinate of the second point oCoordinates (3) is the Y coordinate of the
-                |             second point oCoordinates (n*2-2) is the X coordinate of the n-th point
-                |             oCoordinates (n*2-1) is the X coordinate of the n-th point 3D: oCoordinates (0)
-                |             is the X coordinate of the anchor point oCoordinates (1) is the Y coordinate of
-                |             the anchor point oCoordinates (2) is the Z coordinate of the anchor point
+                Func GetPositions() As CATSafeArrayVariant
+                    Returns the coordinates of the positions of the Marker.
+                
+                    These positions depend on the type of the Marker. 2D Line: 2 positions (two
+                    end points). 2D Arrow: 2 positions (head and tail points). 2D Rectangle: 2
+                    positions (bottom left and top right corner). 2D Circle: 2 positions (center
+                    and point through which it passes). 2D Freehand: 2 positions (series of
+                    points). 2D & 3D Text, Picture, Hyperlink, Audio: 1 anchor position (top left
+                    point).
+                
+                    Parameters:
+                
+                        oCoordinates
+                            2D: oCoordinates (0) is the X coordinate of the first point
+                            oCoordinates (1) is the Y coordinate of the first point oCoordinates (2) is the
+                            X coordinate of the second point oCoordinates (3) is the Y coordinate of the
+                            second point oCoordinates (n*2-2) is the X coordinate of the n-th point
+                            oCoordinates (n*2-1) is the X coordinate of the n-th point 3D: oCoordinates (0)
+                            is the X coordinate of the anchor point oCoordinates (1) is the Y coordinate of
+                            the anchor point oCoordinates (2) is the Z coordinate of the anchor point
                 |
-                |     Example:
-                | 
-                |          This example returns the 3D Text anchor position
+                    Example:
+                
+                         This example returns the 3D Text anchor position
                 |
-                |          Dim cMarker As Marker
-                |          Dim Pos (2)
-                |          Pos = cMarker.GetPositions
+                         Dim cMarker As Marker
+                         Dim Pos (2)
+                         Pos = cMarker.GetPositions
 
         :return: tuple
         """
@@ -248,14 +248,14 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsPointing() As boolean
-                |     Returns the check if pointing info exists.
-                | 
-                |     Example:
+                Func IsPointing() As boolean
+                    Returns the check if pointing info exists.
+                
+                    Example:
                 |
-                |          Dim cMarker As Marker
-                |          Dim bIsPointing As boolean
-                |          bIsPointing = cMarker.IsPointing
+                         Dim cMarker As Marker
+                         Dim bIsPointing As boolean
+                         bIsPointing = cMarker.IsPointing
 
         :return: bool
         """
@@ -266,37 +266,37 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetPositions(CATSafeArrayVariant iCoordinates)
-                |     Sets the coordinates of the positions of the Marker.
+                Sub SetPositions(CATSafeArrayVariant iCoordinates)
+                    Sets the coordinates of the positions of the Marker.
                 |
-                |     These positions depend on the type of the Marker. 2D Line: 2 positions (two
-                |     end points). 2D Arrow: 2 positions (head and tail points). 2D Rectangle: 2
-                |     positions (bottom left and top right corner). 2D Circle: 2 positions (center
-                |     and point through which it passes). 2D Freehand: 2 positions (series of
-                |     points). 2D & 3D Text, Picture, Hyperlink, Audio: 1 anchor position (top left
-                |     point).
+                    These positions depend on the type of the Marker. 2D Line: 2 positions (two
+                    end points). 2D Arrow: 2 positions (head and tail points). 2D Rectangle: 2
+                    positions (bottom left and top right corner). 2D Circle: 2 positions (center
+                    and point through which it passes). 2D Freehand: 2 positions (series of
+                    points). 2D & 3D Text, Picture, Hyperlink, Audio: 1 anchor position (top left
+                    point).
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iCoordinates
-                |             2D: iCoordinates (0) is the X coordinate of the first point
-                |             iCoordinates (1) is the Y coordinate of the first point iCoordinates (2) is the
-                |             X coordinate of the second point iCoordinates (3) is the Y coordinate of the
-                |             second point iCoordinates (n*2-2) is the X coordinate of the n-th point
-                |             iCoordinates (n*2-1) is the X coordinate of the n-th point 3D: iCoordinates (0)
-                |             is the X coordinate of the anchor point iCoordinates (1) is the Y coordinate of
-                |             the anchor point iCoordinates (2) is the Z coordinate of the anchor point
-                |
-                |
-                |     Example:
-                |
-                |          The following example set the 3D Text anchor position
+                        iCoordinates
+                            2D: iCoordinates (0) is the X coordinate of the first point
+                            iCoordinates (1) is the Y coordinate of the first point iCoordinates (2) is the
+                            X coordinate of the second point iCoordinates (3) is the Y coordinate of the
+                            second point iCoordinates (n*2-2) is the X coordinate of the n-th point
+                            iCoordinates (n*2-1) is the X coordinate of the n-th point 3D: iCoordinates (0)
+                            is the X coordinate of the anchor point iCoordinates (1) is the Y coordinate of
+                            the anchor point iCoordinates (2) is the Z coordinate of the anchor point
                 |
                 |
-                |          Dim Pos (2)
-                |          Dim cMarker As Marker
-                |          Pos (0) = 10, Pos (1) = 10, Pos (2) = 10
-                |          cMarker.SetPositions Pos
+                    Example:
+                |
+                         The following example set the 3D Text anchor position
+                |
+                |
+                         Dim Pos (2)
+                         Dim cMarker As Marker
+                         Pos (0) = 10, Pos (1) = 10, Pos (2) = 10
+                         cMarker.SetPositions Pos
 
         :param tuple i_coordinates:
         :return: None
@@ -324,15 +324,15 @@ class Marker(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the marker for account of modification if any.
-                | 
-                |     Example:
-                | 
-                |          This example will update the marker
+                Sub Update()
+                    Updates the marker for account of modification if any.
+                
+                    Example:
+                
+                         This example will update the marker
                 |
-                |          Dim cMarker As Marker
-                |          cMarker.Update
+                         Dim cMarker As Marker
+                         cMarker.Update
 
         :return: None
         """

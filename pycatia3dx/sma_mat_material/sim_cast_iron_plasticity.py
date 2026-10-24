@@ -19,52 +19,52 @@ class SimCastIronPlasticity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCastIronPlasticity
-                | 
-                | Represents the Cast Iron Plasticity object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimCastIronPlasticity
-                |     as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyCastIronPlasticity As SimCastIronPlasticity
-                |      Set MyCastIronPlasticity = MyMaterialOptions.Add("SimCastIronPlasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimCastIronPlasticity
-                |     named "Cast Iron Plasticity.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyCastIronPlasticity As SimCastIronPlasticity
-                |      Set MyCastIronPlasticity = MyMaterialOptions.Item("Cast Iron Plasticity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimCastIronPlasticity as following:
-                | 
-                |      ...
-                |      myCastIronPlasticity = myMaterialOptions.Add("SimCastIronPlasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimCastIronPlasticity named "Cast Iron Plasticity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myCastIronPlasticity = myMaterialOptions.Item("Cast Iron Plasticity.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCastIronPlasticity
+                
+                Represents the Cast Iron Plasticity object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimCastIronPlasticity
+                    as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyCastIronPlasticity As SimCastIronPlasticity
+                     Set MyCastIronPlasticity = MyMaterialOptions.Add("SimCastIronPlasticity")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimCastIronPlasticity
+                    named "Cast Iron Plasticity.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyCastIronPlasticity As SimCastIronPlasticity
+                     Set MyCastIronPlasticity = MyMaterialOptions.Item("Cast Iron Plasticity.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimCastIronPlasticity as following:
+                
+                     ...
+                     myCastIronPlasticity = myMaterialOptions.Add("SimCastIronPlasticity")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimCastIronPlasticity named "Cast Iron Plasticity.1" as
+                    following:
+                
+                     ...
+                     myCastIronPlasticity = myMaterialOptions.Item("Cast Iron Plasticity.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -78,9 +78,9 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CompressionHardeningMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the compression hardening material table.
+                Property CompressionHardeningMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the compression hardening material table.
 
         :return: SimMaterialTable
         """
@@ -93,9 +93,9 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlasticityMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the plastic material table.
+                Property PlasticityMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the plastic material table.
 
         :return: SimMaterialTable
         """
@@ -108,9 +108,9 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TensionHardeningMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the tension hardening material table.
+                Property TensionHardeningMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the tension hardening material table.
 
         :return: SimMaterialTable
         """
@@ -122,20 +122,20 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetCompressionHardeningMaterialTableColumn(SimCastIronPlasticityCompressionHardeningMaterialTableColumn iMaterialTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the Compression Hardening table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The Compression Hardening table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func
+                GetCompressionHardeningMaterialTableColumn(SimCastIronPlasticityCompressionHardeningMaterialTableColumn iMaterialTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the Compression Hardening table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The Compression Hardening table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -147,20 +147,20 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetPlasticityMaterialTableColumn(SimCastIronPlasticityPlasticityMaterialTableColumn iMaterialTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the plasticity table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The plasticity table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func
+                GetPlasticityMaterialTableColumn(SimCastIronPlasticityPlasticityMaterialTableColumn iMaterialTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the plasticity table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The plasticity table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -172,20 +172,20 @@ class SimCastIronPlasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetTensionHardeningMaterialTableColumn(SimCastIronPlasticityTensionHardeningMaterialTableColumn iMaterialTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the Tension Hardening table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The Tension Hardening table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func
+                GetTensionHardeningMaterialTableColumn(SimCastIronPlasticityTensionHardeningMaterialTableColumn iMaterialTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the Tension Hardening table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The Tension Hardening table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param SimCastIronPlasticityTensionHardeningMaterialTableColumn i_material_table_column:
         :return: SimTableColumn

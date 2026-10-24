@@ -19,51 +19,51 @@ class SimFailStrain(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFailStrain
-                | 
-                | Represents the Fail Strain object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimFailStrain as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFailStrain As SimFailStrain
-                |      Set MyFailStrain = MyMaterialOptions.Add("SimFailStrain")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimFailStrain named
-                |     "Fail Strain.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFailStrain As SimFailStrain
-                |      Set MyFailStrain = MyMaterialOptions.Item("Fail Strain.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimFailStrain as following:
-                | 
-                |      ...
-                |      myFailStrain = myMaterialOptions.Add("SimFailStrain")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimFailStrain named "Fail Strain.1" as following:
-                | 
-                |      ...
-                |      myFailStrain = myMaterialOptions.Item("Fail Strain.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFailStrain
+                
+                Represents the Fail Strain object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimFailStrain as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFailStrain As SimFailStrain
+                     Set MyFailStrain = MyMaterialOptions.Add("SimFailStrain")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimFailStrain named
+                    "Fail Strain.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFailStrain As SimFailStrain
+                     Set MyFailStrain = MyMaterialOptions.Item("Fail Strain.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimFailStrain as following:
+                
+                     ...
+                     myFailStrain = myMaterialOptions.Add("SimFailStrain")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimFailStrain named "Fail Strain.1" as following:
+                
+                     ...
+                     myFailStrain = myMaterialOptions.Item("Fail Strain.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimFailStrain(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Material table.
 
         :return: SimMaterialTable
         """
@@ -90,19 +90,19 @@ class SimFailStrain(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimFailStrainMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetMaterialTableColumn(SimFailStrainMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn

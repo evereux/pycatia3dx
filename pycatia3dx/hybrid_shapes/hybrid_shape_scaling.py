@@ -19,33 +19,33 @@ class HybridShapeScaling(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeScaling
-                | 
-                | Represents the hybrid shape scaling feature object.
-                | Role: To access the data of the hybrid shape feature object. This data
-                | includes:
-                | 
-                |     The element to be transformed using the scaling
-                |     The reference element for the scaling which is a point or a
-                |     plane
-                |     The ratio and its value
-                | 
-                | Use the CATIAHybridShapeFactory to create HybridShapeFeature
-                | object.
-                | 
-                | LICENSING INFORMATION: Creation of volume result requires GSO
-                | License
-                | if GSO License is not granted , setting of Volume context has not
-                | effect
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeScaling
+                
+                Represents the hybrid shape scaling feature object.
+                Role: To access the data of the hybrid shape feature object. This data
+                includes:
+                
+                    The element to be transformed using the scaling
+                    The reference element for the scaling which is a point or a
+                    plane
+                    The ratio and its value
+                
+                Use the CATIAHybridShapeFactory to create HybridShapeFeature
+                object.
+                
+                LICENSING INFORMATION: Creation of volume result requires GSO
+                License
+                if GSO License is not granted , setting of Volume context has not
+                effect
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -59,18 +59,18 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Center() As Reference
-                |     Returns or sets the reference element.This element can be a point or a
-                |     plane.
-                |     Sub-element(s) supported (see Boundary object): PlanarFace or
-                |     Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in RefElem the reference element for the Scaling
-                |         hybrid shape feature.
-                | 
-                |          Dim RefElem As Reference
-                |          Set RefElem = Scaling.Center
+                Property Center() As Reference
+                    Returns or sets the reference element.This element can be a point or a
+                    plane.
+                    Sub-element(s) supported (see Boundary object): PlanarFace or
+                    Vertex.
+                
+                    Example:
+                        This example retrieves in RefElem the reference element for the Scaling
+                        hybrid shape feature.
+                
+                         Dim RefElem As Reference
+                         Set RefElem = Scaling.Center
 
         :return: Reference
         """
@@ -91,19 +91,19 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CreationMode() As boolean
-                |     Returns or sets the creation mode(creation or
-                |     modification).
-                |     Legal values: True if the result is a creation feature and False if the
-                |     result is a modification feature.
-                | 
-                |     Example:
-                | 
-                |          This example sets that the mode of
-                |          the hybShpScaling hybrid shape scaling to creation
-                |          
-                | 
-                |          hybShpScaling.CreationMode = True
+                Property CreationMode() As boolean
+                    Returns or sets the creation mode(creation or
+                    modification).
+                    Legal values: True if the result is a creation feature and False if the
+                    result is a modification feature.
+                
+                    Example:
+                
+                         This example sets that the mode of
+                         the hybShpScaling hybrid shape scaling to creation
+                         
+                
+                         hybShpScaling.CreationMode = True
 
         :return: bool
         """
@@ -124,15 +124,15 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ElemToScale() As Reference
-                |     Returns or sets the element to scale.
-                | 
-                |     Example:
-                |         This example retrieves in Elem the element to scale for the Scaling
-                |         hybrid shape feature.
-                | 
-                |          Dim Elem As Reference
-                |          Set Elem = Scaling.ElemToScale
+                Property ElemToScale() As Reference
+                    Returns or sets the element to scale.
+                
+                    Example:
+                        This example retrieves in Elem the element to scale for the Scaling
+                        hybrid shape feature.
+                
+                         Dim Elem As Reference
+                         Set Elem = Scaling.ElemToScale
 
         :return: Reference
         """
@@ -153,8 +153,8 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Ratio() As RealParam (Read Only)
-                |     Returns the scaling ratio.
+                Property Ratio() As RealParam (Read Only)
+                    Returns the scaling ratio.
 
         :return: RealParam
         """
@@ -167,15 +167,15 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RatioValue() As double
-                |     Returns or sets the scaling ratio value.
-                | 
-                |     Example:
-                |         This example retrieves in Value the ratio value for the Scaling hybrid
-                |         shape feature.
-                | 
-                |          Dim Value As double
-                |          Set Value = Scaling.RatioValue
+                Property RatioValue() As double
+                    Returns or sets the scaling ratio value.
+                
+                    Example:
+                        This example retrieves in Value the ratio value for the Scaling hybrid
+                        shape feature.
+                
+                         Dim Value As double
+                         Set Value = Scaling.RatioValue
 
         :return: float
         """
@@ -196,19 +196,19 @@ class HybridShapeScaling(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property VolumeResult() As boolean
-                |     Returns or sets the volume result.
-                |     Legal values: True if the result of Scaling is required as volume (option
-                |     is effective only in case of volumes,requires GSO License) and False if it is
-                |     needed as surface .
-                | 
-                |     Example:
-                | 
-                |          This example sets that the result of
-                |          the hybShpScaling hybrid shape scaling is volume.
-                |          
-                | 
-                |          hybShpScaling.VolumeResult = True
+                Property VolumeResult() As boolean
+                    Returns or sets the volume result.
+                    Legal values: True if the result of Scaling is required as volume (option
+                    is effective only in case of volumes,requires GSO License) and False if it is
+                    needed as surface .
+                
+                    Example:
+                
+                         This example sets that the result of
+                         the hybShpScaling hybrid shape scaling is volume.
+                         
+                
+                         hybShpScaling.VolumeResult = True
 
         :return: bool
         """

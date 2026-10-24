@@ -20,14 +20,14 @@ class StrSfdPlates(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrSfdPlates
-                | 
-                | Object for SfdPlates
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrSfdPlates
+                
+                Object for SfdPlates
     
     """
 
@@ -40,25 +40,25 @@ class StrSfdPlates(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrSfdPlate
-                |     Returns a SfdPlate from the list of plates
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SfdPlate 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first plate from the list of
-                |              plate.
-                |              
-                | 
-                |               Dim ObjSfdPlateList As SfdPlates
-                |               Set ObjSfdPlateList = ObjSfdPlatesMngt.GetPlates
-                |               Dim ObjSfdPlate As SfdPlate
-                |               Set ObjSfdPlate = ObjSfdPlateList.Item(1)
+                Func Item(CATVariant iIndex) As StrSfdPlate
+                    Returns a SfdPlate from the list of plates
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SfdPlate 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first plate from the list of
+                             plate.
+                             
+                
+                              Dim ObjSfdPlateList As SfdPlates
+                              Set ObjSfdPlateList = ObjSfdPlatesMngt.GetPlates
+                              Dim ObjSfdPlate As SfdPlate
+                              Set ObjSfdPlate = ObjSfdPlateList.Item(1)
 
         :param CATVariant i_index:
         :return: StrSfdPlate

@@ -16,18 +16,18 @@ class RscLocalVar(RscDataEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscDataEntity
-                |                         RscLocalVar
-                | 
-                | Interface representing a Local Variable.
-                | 
-                | Role: This interface represents a RscLocalVar in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscDataEntity
+                                        RscLocalVar
+                
+                Interface representing a Local Variable.
+                
+                Role: This interface represents a RscLocalVar in a Resource
+                Task
     
     """
 
@@ -41,32 +41,32 @@ class RscLocalVar(RscDataEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefaultValue() As CATBSTR
-                |     Get/Set default value.
-                | 
-                |     Returns:
-                |         oDefaultValue The default value. 
-                |     Parameters:
-                | 
-                |         iDefaultValue
-                |             The new default value. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim iName As String
-                |            iName = "MyLocalVar"
-                |            Dim oLocalVar As RscLocalVar
-                |            Dim iType As DELRscDataEntityType
-                |            iType = DELRscDataEntityType_Integer
-                |            Set oLocalVar = oResourceTask.CreateRscLocalVar(iName, iType)
-                |            Dim DefaultValue
-                |            DefaultValue = oLocalVar.DefaultValue
-                |            ......
-                |            oLocalVar.DefaultValue = DefaultValue
+                Property DefaultValue() As CATBSTR
+                    Get/Set default value.
+                
+                    Returns:
+                        oDefaultValue The default value. 
+                    Parameters:
+                
+                        iDefaultValue
+                            The new default value. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim iName As String
+                           iName = "MyLocalVar"
+                           Dim oLocalVar As RscLocalVar
+                           Dim iType As DELRscDataEntityType
+                           iType = DELRscDataEntityType_Integer
+                           Set oLocalVar = oResourceTask.CreateRscLocalVar(iName, iType)
+                           Dim DefaultValue
+                           DefaultValue = oLocalVar.DefaultValue
+                           ......
+                           oLocalVar.DefaultValue = DefaultValue
 
         :return: str
         """
@@ -86,22 +86,22 @@ class RscLocalVar(RscDataEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub UnsetDefaultValue()
-                |     Unset default value.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim iName As String
-                |            iName = "MyLocalVar"
-                |            Dim oLocalVar As RscLocalVar
-                |            Dim iType As DELRscDataEntityType
-                |            iType = DELRscDataEntityType_Integer
-                |            Set oLocalVar = oResourceTask.CreateRscLocalVar(iName, iType)
-                |            Call oLocalVar.UnsetDefaultValue()
+                Sub UnsetDefaultValue()
+                    Unset default value.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim iName As String
+                           iName = "MyLocalVar"
+                           Dim oLocalVar As RscLocalVar
+                           Dim iType As DELRscDataEntityType
+                           iType = DELRscDataEntityType_Integer
+                           Set oLocalVar = oResourceTask.CreateRscLocalVar(iName, iType)
+                           Call oLocalVar.UnsetDefaultValue()
 
         :return: None
         """

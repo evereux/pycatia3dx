@@ -18,16 +18,16 @@ class Axis2D(Geometry2D):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             Axis2D
-                | 
-                | Interface defining a coordinate system in the 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            Axis2D
+                
+                Interface defining a coordinate system in the 2D Space.
     
     """
 
@@ -41,11 +41,11 @@ class Axis2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property HorizontalReference() As Line2D (Read Only)
-                |     Returns the 2D coordinate system horizontal axis.
-                | 
-                |     Returns:
-                |         oHorizontal The horizontal 2D line.
+                Property HorizontalReference() As Line2D (Read Only)
+                    Returns the 2D coordinate system horizontal axis.
+                
+                    Returns:
+                        oHorizontal The horizontal 2D line.
 
         :return: Line2D
         """
@@ -58,11 +58,11 @@ class Axis2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Origin() As Point2D (Read Only)
-                |     Returns the 2D coordinate system origin.
-                | 
-                |     Returns:
-                |         oOrigin The origin 2D point.
+                Property Origin() As Point2D (Read Only)
+                    Returns the 2D coordinate system origin.
+                
+                    Returns:
+                        oOrigin The origin 2D point.
 
         :return: Point2D
         """
@@ -75,11 +75,11 @@ class Axis2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property VerticalReference() As Line2D (Read Only)
-                |     Returns the 2D coordinate system vertical axis.
-                | 
-                |     Returns:
-                |         oVertical The vertical 2D line.
+                Property VerticalReference() As Line2D (Read Only)
+                    Returns the 2D coordinate system vertical axis.
+                
+                    Returns:
+                        oVertical The vertical 2D line.
 
         :return: Line2D
         """

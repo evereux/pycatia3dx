@@ -20,17 +20,17 @@ class AnnotationFactory2(Factory):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Factory
-                |                         AnnotationFactory2
-                | 
-                | Interface for the TPS Factory.
-                | This factory is implemented on the Set object. All the created specifications
-                | are added to the Set from which this interface is retrieved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Factory
+                                        AnnotationFactory2
+                
+                Interface for the TPS Factory.
+                This factory is implemented on the Set object. All the created specifications
+                are added to the Set from which this interface is retrieved.
     
     """
 
@@ -43,16 +43,16 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateCoordDimension(UserSurface iSurf) As Annotation2
-                |     Create a Coordinate Dimension
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the new Coordinate Dimension.
-                |             
-                |         oCoorddimension
-                |             The new created Coordinate dimension Feature.
+                Func CreateCoordDimension(UserSurface iSurf) As Annotation2
+                    Create a Coordinate Dimension
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the new Coordinate Dimension.
+                            
+                        oCoorddimension
+                            The new created Coordinate dimension Feature.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -64,16 +64,16 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDatum(UserSurface iSurf) As Annotation2
-                |     Create a Datum Feature.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Datum Feature.
-                |             
-                |         oDatum
-                |             The new created Datum Feature.
+                Func CreateDatum(UserSurface iSurf) As Annotation2
+                    Create a Datum Feature.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Datum Feature.
+                            
+                        oDatum
+                            The new created Datum Feature.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -85,8 +85,8 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDatumReferenceFrame() As Annotation2
-                |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
+                Func CreateDatumReferenceFrame() As Annotation2
+                    Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
         :return: Annotation2
         """
@@ -97,20 +97,20 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDatumTarget(UserSurface iSurf,Annotation2 iDatum) As
-                | Annotation2
-                |     Create a Datum Target.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Datum Target.
-                |             
-                |         iDatum
-                |             Datume Feature that is in relatino with the Datum Target.
-                |             
-                |         oDatum
-                |             The new created Datum Target.
+                Func CreateDatumTarget(UserSurface iSurf,Annotation2 iDatum) As
+                Annotation2
+                    Create a Datum Target.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Datum Target.
+                            
+                        iDatum
+                            Datume Feature that is in relatino with the Datum Target.
+                            
+                        oDatum
+                            The new created Datum Target.
 
         :param UserSurface i_surf:
         :param Annotation2 i_datum:
@@ -124,30 +124,30 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDittoNOA(UserSurface iSurf,CATBSTR iNOAType,DrawingComponent
-                | iDitto,boolean iStickToGeometryOption) As Annotation2
-                |     Create a "Ditto" NOA
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the created NOA.
-                |             
-                |         iNOAType
-                |             Type of the created NOA; this string defines the Type of Noa. This
-                |             type can be filtered using the Filter command. 
-                |         iDitto
-                |             The drawing component selected to provide NOA display.
-                |             
-                |         iStickToGeometryOption
-                |             This flag is TRUE to tell the factory that Stick Ditto
-                |             perpendicularly to geometry option is selected. In this case, the ditto is
-                |             instantiated without frame or leader and its origin point is stuck and set on
-                |             the selected geometry. In addition, the default anchor point position is the
-                |             middle center. This argument is to be set to FALSE if leader attachment to
-                |             point out geometry is expected. 
-                |         oNoa
-                |             The new created NOA.
+                Func CreateDittoNOA(UserSurface iSurf,CATBSTR iNOAType,DrawingComponent
+                iDitto,boolean iStickToGeometryOption) As Annotation2
+                    Create a "Ditto" NOA
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the created NOA.
+                            
+                        iNOAType
+                            Type of the created NOA; this string defines the Type of Noa. This
+                            type can be filtered using the Filter command. 
+                        iDitto
+                            The drawing component selected to provide NOA display.
+                            
+                        iStickToGeometryOption
+                            This flag is TRUE to tell the factory that Stick Ditto
+                            perpendicularly to geometry option is selected. In this case, the ditto is
+                            instantiated without frame or leader and its origin point is stuck and set on
+                            the selected geometry. In addition, the default anchor point position is the
+                            middle center. This argument is to be set to FALSE if leader attachment to
+                            point out geometry is expected. 
+                        oNoa
+                            The new created NOA.
 
         :param UserSurface i_surf:
         :param str i_noa_type:
@@ -164,30 +164,30 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateEvoluateDatum(UserSurface iSurf,double iX,double iY,double
-                | iZ,boolean iWithLeader) As Annotation2
-                |     Create a Datum Feature.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Datum Feature.
-                |             
-                |         iX
-                |             X coordinate. 
-                |         iY
-                |             Y coordinate. 
-                |         iZ
-                |             Z coordinate. 
-                |         iWithLeader
-                |             Create or not a leader on the annotation. If the leader is
-                |             requested: The activated TPSView shall not be parallel to the surface pointed
-                |             by the annotation Datum. If the activated TPSView is parallel to the surface
-                |             pointed: - The leader will be disconnected - The extremity of the leader will
-                |             be positioned at the origin of the part - The annotation Datum is created but
-                |             its status will be KO. 
-                |         oDatum
-                |             The new created Datum Feature.
+                Func CreateEvoluateDatum(UserSurface iSurf,double iX,double iY,double
+                iZ,boolean iWithLeader) As Annotation2
+                    Create a Datum Feature.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Datum Feature.
+                            
+                        iX
+                            X coordinate. 
+                        iY
+                            Y coordinate. 
+                        iZ
+                            Z coordinate. 
+                        iWithLeader
+                            Create or not a leader on the annotation. If the leader is
+                            requested: The activated TPSView shall not be parallel to the surface pointed
+                            by the annotation Datum. If the activated TPSView is parallel to the surface
+                            pointed: - The leader will be disconnected - The extremity of the leader will
+                            be positioned at the origin of the part - The annotation Datum is created but
+                            its status will be KO. 
+                        oDatum
+                            The new created Datum Feature.
 
         :param UserSurface i_surf:
         :param float i_x:
@@ -204,29 +204,29 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateEvoluateText(UserSurface iSurf,double iX,double iY,double iZ,boolean
-                | iWithLeader) As Annotation2
-                |     Create a Text.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Text. 
-                |         iX
-                |             X coordinate. 
-                |         iY
-                |             Y coordinate. 
-                |         iZ
-                |             Z coordinate. 
-                |         iWithLeader
-                |             Create or not a leader on the annotation. If the leader is
-                |             requested: The activated TPSView shall not be parallel to the surface pointed
-                |             by the annotation Text. If the activated TPSView is parallel to the surface
-                |             pointed: - The leader will be disconnected - The extremity of the leader will
-                |             be positioned at the origin of the part - The annotation Text is created but
-                |             its status will be KO. 
-                |         oText
-                |             The new created Text.
+                Func CreateEvoluateText(UserSurface iSurf,double iX,double iY,double iZ,boolean
+                iWithLeader) As Annotation2
+                    Create a Text.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Text. 
+                        iX
+                            X coordinate. 
+                        iY
+                            Y coordinate. 
+                        iZ
+                            Z coordinate. 
+                        iWithLeader
+                            Create or not a leader on the annotation. If the leader is
+                            requested: The activated TPSView shall not be parallel to the surface pointed
+                            by the annotation Text. If the activated TPSView is parallel to the surface
+                            pointed: - The leader will be disconnected - The extremity of the leader will
+                            be positioned at the origin of the part - The annotation Text is created but
+                            its status will be KO. 
+                        oText
+                            The new created Text.
 
         :param UserSurface i_surf:
         :param float i_x:
@@ -242,15 +242,15 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFlagNote(UserSurface iSurf) As Annotation2
-                |     Create a FlagNote.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Flag Note. 
-                |         oFlagNote
-                |             The new created Flag Note.
+                Func CreateFlagNote(UserSurface iSurf) As Annotation2
+                    Create a FlagNote.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Flag Note. 
+                        oFlagNote
+                            The new created Flag Note.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -262,15 +262,15 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateGDT(UserSurface iSurf) As Annotation2
-                |     Create a GDT
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the new GDT. 
-                |         oGDT
-                |             The new created GDT Feature.
+                Func CreateGDT(UserSurface iSurf) As Annotation2
+                    Create a GDT
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the new GDT. 
+                        oGDT
+                            The new created GDT Feature.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -283,20 +283,20 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateNonSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
-                | iSubType) As Annotation2
-                |     Creates a non semantic Dimension specification.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Dimension. 
-                |         iSubType
-                |             : 1 CATTPSDiameterDimension 2 CATTPSRadiusDimension 
-                |         iType
-                |             : 1 Linear Dimension 2 Angular Dimension 3 Second Linear Dim (Small diameter/radius for torus) 
-                |         oDimension
-                |             The new created Dimension.
+                Func CreateNonSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
+                iSubType) As Annotation2
+                    Creates a non semantic Dimension specification.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Dimension. 
+                        iSubType
+                            : 1 CATTPSDiameterDimension 2 CATTPSRadiusDimension 
+                        iType
+                            : 1 Linear Dimension 2 Angular Dimension 3 Second Linear Dim (Small diameter/radius for torus) 
+                        oDimension
+                            The new created Dimension.
 
         :param UserSurface i_surf:
         :param CATVariant i_type:
@@ -310,15 +310,15 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateRoughness(UserSurface iSurf) As Annotation2
-                |     Create a Roughness.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Roughness. 
-                |         oRoughness
-                |             The new created Roughness.
+                Func CreateRoughness(UserSurface iSurf) As Annotation2
+                    Create a Roughness.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Roughness. 
+                        oRoughness
+                            The new created Roughness.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -330,14 +330,14 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
-                | iSubType) As Annotation2
-                |     Creates a semantic Dimension specification.
-                | 
-                |     Parameters:
-                | 
-                |         oDimension
-                |             The new created Dimension.
+                Func CreateSemanticDimension(UserSurface iSurf,CATVariant iType,CATVariant
+                iSubType) As Annotation2
+                    Creates a semantic Dimension specification.
+                
+                    Parameters:
+                
+                        oDimension
+                            The new created Dimension.
 
         :param UserSurface i_surf:
         :param CATVariant i_type:
@@ -351,15 +351,15 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateText(UserSurface iSurf) As Annotation2
-                |     Create a Text.
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             User surface needed to construct the Text. 
-                |         oText
-                |             The new created Text.
+                Func CreateText(UserSurface iSurf) As Annotation2
+                    Create a Text.
+                
+                    Parameters:
+                
+                        iSurf
+                            User surface needed to construct the Text. 
+                        oText
+                            The new created Text.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -371,16 +371,16 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTextNOA(UserSurface iSurf) As Annotation2
-                |     Create a "Text" NOA
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the created NOA.
-                |             
-                |         oNoa
-                |             The new created NOA.
+                Func CreateTextNOA(UserSurface iSurf) As Annotation2
+                    Create a "Text" NOA
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the created NOA.
+                            
+                        oNoa
+                            The new created NOA.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -392,20 +392,20 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTextNoteObjectAttribute(UserSurface iSurf,CATBSTR iNOAType) As
-                | Annotation2
-                |     Create a "Text" NOA
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the created NOA.
-                |             
-                |         iNOAType
-                |             Type of the created NOA; this string defines the Type of Noa. This
-                |             type can be filtered using the Filter command. 
-                |         oNoa
-                |             The new created NOA.
+                Func CreateTextNoteObjectAttribute(UserSurface iSurf,CATBSTR iNOAType) As
+                Annotation2
+                    Create a "Text" NOA
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the created NOA.
+                            
+                        iNOAType
+                            Type of the created NOA; this string defines the Type of Noa. This
+                            type can be filtered using the Filter command. 
+                        oNoa
+                            The new created NOA.
 
         :param UserSurface i_surf:
         :param str i_noa_type:
@@ -418,18 +418,18 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTextOnAnnot(CATBSTR iText,Annotation2 iAnnot) As
-                | Annotation2
-                |     Create a Text grouped to an annotation.
-                | 
-                |     Parameters:
-                | 
-                |         iText
-                |             Character string that makes up the text. 
-                |         iAnnot
-                |             Annotation reference needed to group the Text. 
-                |         oText
-                |             The new created Text.
+                Func CreateTextOnAnnot(CATBSTR iText,Annotation2 iAnnot) As
+                Annotation2
+                    Create a Text grouped to an annotation.
+                
+                    Parameters:
+                
+                        iText
+                            Character string that makes up the text. 
+                        iAnnot
+                            Annotation reference needed to group the Text. 
+                        oText
+                            The new created Text.
 
         :param str i_text:
         :param Annotation2 i_annot:
@@ -442,9 +442,9 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateToleranceWithDRF(CATVariant iIndex,UserSurface iSurf,Annotation2
-                | iDRF) As Annotation2
-                |     Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity
+                Func CreateToleranceWithDRF(CATVariant iIndex,UserSurface iSurf,Annotation2
+                iDRF) As Annotation2
+                    Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity
 
         :param CATVariant i_index:
         :param UserSurface i_surf:
@@ -458,9 +458,9 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateToleranceWithoutDRF(CATVariant iIndex,UserSurface iSurf) As
-                | Annotation2
-                |     Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
+                Func CreateToleranceWithoutDRF(CATVariant iIndex,UserSurface iSurf) As
+                Annotation2
+                    Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
         :param CATVariant i_index:
         :param UserSurface i_surf:
@@ -473,15 +473,15 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateWeld(UserSurface iSurf) As Annotation2
-                |     Create a Weld
-                | 
-                |     Parameters:
-                | 
-                |         iSurf
-                |             The user surface on which you apply the new Weld. 
-                |         oWeld
-                |             The new created Weld Feature.
+                Func CreateWeld(UserSurface iSurf) As Annotation2
+                    Create a Weld
+                
+                    Parameters:
+                
+                        iSurf
+                            The user surface on which you apply the new Weld. 
+                        oWeld
+                            The new created Weld Feature.
 
         :param UserSurface i_surf:
         :return: Annotation2
@@ -493,18 +493,18 @@ class AnnotationFactory2(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func InstanciateNOA(Annotation2 iNoa,UserSurface iSurf) As
-                | Annotation2
-                |     Instanciate an NOA from a Reference NOA.
-                | 
-                |     Parameters:
-                | 
-                |         iNOA
-                |             Reference NOA. 
-                |         iSurf
-                |             User surface needed to construct the Dimension. 
-                |         oNOA
-                |             The new instanciated NOA. 
+                Func InstanciateNOA(Annotation2 iNoa,UserSurface iSurf) As
+                Annotation2
+                    Instanciate an NOA from a Reference NOA.
+                
+                    Parameters:
+                
+                        iNOA
+                            Reference NOA. 
+                        iSurf
+                            User surface needed to construct the Dimension. 
+                        oNOA
+                            The new instanciated NOA. 
 
         :param Annotation2 i_noa:
         :param UserSurface i_surf:

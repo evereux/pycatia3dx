@@ -18,14 +18,14 @@ class StrOpening3DObject(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrOpening3DObject
-                | 
-                | Object to manage the Structure Opening created using 3DObject.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrOpening3DObject
+                
+                Object to manage the Structure Opening created using 3DObject.
     
     """
 
@@ -39,19 +39,19 @@ class StrOpening3DObject(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntersectingElement() As Reference
-                |     Returns or Sets the element which defines the contour.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in IntersectingElement of the opening
-                |              created in 3DObject mode.
-                |              
-                | 
-                |              Dim ObjStrOpening3DObject As StrOpening3DObject
-                |              Set ObjStrOpening3DObject = ObjStrOpening.StrOpening3DObject
-                |              Set CylinderRef = ObjStrOpening3DObject.IntersectingElement
+                Property IntersectingElement() As Reference
+                    Returns or Sets the element which defines the contour.
+                
+                    Example:
+                
+                
+                             This example retrieves in IntersectingElement of the opening
+                             created in 3DObject mode.
+                             
+                
+                             Dim ObjStrOpening3DObject As StrOpening3DObject
+                             Set ObjStrOpening3DObject = ObjStrOpening.StrOpening3DObject
+                             Set CylinderRef = ObjStrOpening3DObject.IntersectingElement
 
         :return: Reference
         """

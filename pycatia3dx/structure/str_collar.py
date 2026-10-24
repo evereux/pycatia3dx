@@ -19,18 +19,18 @@ class StrCollar(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrCollar
-                | 
-                | Object to manage Collar on a Slot.
-                | Role: Allows accessing of Collars's data.
-                | 
-                | See also:
-                |     StrCollars
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrCollar
+                
+                Object to manage Collar on a Slot.
+                Role: Allows accessing of Collars's data.
+                
+                See also:
+                    StrCollars
     
     """
 
@@ -44,29 +44,29 @@ class StrCollar(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CollarParameters() As StrParameters (Read Only)
-                |     Gets the Collar Public Parameters. Valuate them as
-                |     required.
-                | 
-                |     Parameters:
-                | 
-                |         oListOfParameters
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the collar public parameters and evaluates
-                |              them to 205mm & 35deg respectively.
-                |              
-                | 
-                |              Dim ObjCollarParameters As StrParameters
-                |             Set ObjCollarParameters = iObjStrCollar.CollarParameters
-                |             Dim Width As Parameter
-                |              Set Width = ObjCollarParameters.Item(1)
-                |             Width.ValuateFromString("205mm")
-                |             Dim Angle As Parameter
-                |              Set Angle = ObjCollarParameters.Item(2)
-                |             Angle.ValuateFromString("35deg")
+                Property CollarParameters() As StrParameters (Read Only)
+                    Gets the Collar Public Parameters. Valuate them as
+                    required.
+                
+                    Parameters:
+                
+                        oListOfParameters
+                
+                    Example:
+                
+                
+                             This example retrieves the collar public parameters and evaluates
+                             them to 205mm & 35deg respectively.
+                             
+                
+                             Dim ObjCollarParameters As StrParameters
+                            Set ObjCollarParameters = iObjStrCollar.CollarParameters
+                            Dim Width As Parameter
+                             Set Width = ObjCollarParameters.Item(1)
+                            Width.ValuateFromString("205mm")
+                            Dim Angle As Parameter
+                             Set Angle = ObjCollarParameters.Item(2)
+                            Angle.ValuateFromString("35deg")
 
         :return: StrParameters
         """
@@ -79,36 +79,36 @@ class StrCollar(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Material(CATBSTR iMaterial)
-                |     Sets/Gets the Collar Material.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the Collar Material.
-                |              
-                |              
-                | 
-                |     Parameters:
-                | 
-                |         iMaterial
-                | 
-                |              iObjStrCollar.Material = "Steel A90"
-                |              
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the Collar Material.
-                |              
-                |              
-                | 
-                |     Parameters:
-                | 
-                |         oMaterial
-                | 
-                |              Dim oMaterial As String
-                |             oMaterial = iObjStrCollar.Material
+                Property Material(CATBSTR iMaterial)
+                    Sets/Gets the Collar Material.
+                
+                    Example:
+                
+                
+                             This example sets the Collar Material.
+                             
+                             
+                
+                    Parameters:
+                
+                        iMaterial
+                
+                             iObjStrCollar.Material = "Steel A90"
+                             
+                
+                    Example:
+                
+                
+                             This example gets the Collar Material.
+                             
+                             
+                
+                    Parameters:
+                
+                        oMaterial
+                
+                             Dim oMaterial As String
+                            oMaterial = iObjStrCollar.Material
 
         :return: str
         """
@@ -129,30 +129,30 @@ class StrCollar(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialThrowOrientation(CATStrCollarThrowOrientation
-                | iMaterialThrowOrientation)
-                |     Sets/gets the Collar Material Throw Orientation. (@see
-                |     CATStrUseCollarThrowOrientation) Valid values for Material Throw Orientation
-                |     are:
-                |     - 0 : - catStrCollarThrowOrientationInvert
-                |     - 1 : - catStrCollarThrowOrientationNormal
-                |     - 2 : - catStrCollarThrowOrientationCentered
-                | 
-                |     Example:
-                | 
-                |          This example sets the material throw orientation
-                | 
-                |     Parameters:
-                |         oMaterialThrowOrientation
-                |              Dim oMaterialThrowOrientation As
-                |              CATStrCollarThrowOrientation
-                |              oMaterialThrowOrientation = iObjStrCollar.MaterialThrowOrientation
+                Property MaterialThrowOrientation(CATStrCollarThrowOrientation
+                iMaterialThrowOrientation)
+                    Sets/gets the Collar Material Throw Orientation. (@see
+                    CATStrUseCollarThrowOrientation) Valid values for Material Throw Orientation
+                    are:
+                    - 0 : - catStrCollarThrowOrientationInvert
+                    - 1 : - catStrCollarThrowOrientationNormal
+                    - 2 : - catStrCollarThrowOrientationCentered
+                
+                    Example:
+                
+                         This example sets the material throw orientation
+                
+                    Parameters:
+                        oMaterialThrowOrientation
+                             Dim oMaterialThrowOrientation As
+                             CATStrCollarThrowOrientation
+                             oMaterialThrowOrientation = iObjStrCollar.MaterialThrowOrientation
                 |
-                |     Example:
-                |          This example gets the material throw orientation
-                |     Parameters:
-                |         iMaterialThrowOrientation
-                |              iObjStrCollar.MaterialThrowOrientation = 1
+                    Example:
+                         This example gets the material throw orientation
+                    Parameters:
+                        iMaterialThrowOrientation
+                             iObjStrCollar.MaterialThrowOrientation = 1
 
         :return: int
         """
@@ -173,25 +173,25 @@ class StrCollar(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Thickness() As Parameter (Read Only)
-                |     Gets the Collar Thickness. This property returns a Parameter (@see
-                |     CATIAParameter) to Thickness for Collar. Valuate it as per
-                |     required.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the Thickness. 
-                |              
-                |              
-                | 
-                |     Parameters:
-                | 
-                |         oThickness
-                | 
-                |              Dim oThickness As Parameter
-                |             Set oThickness = iObjStrCollar.Thickness
-                |             oThickness.ValuateFromString("20mm")
+                Property Thickness() As Parameter (Read Only)
+                    Gets the Collar Thickness. This property returns a Parameter (@see
+                    CATIAParameter) to Thickness for Collar. Valuate it as per
+                    required.
+                
+                    Example:
+                
+                
+                             This example sets the Thickness. 
+                             
+                             
+                
+                    Parameters:
+                
+                        oThickness
+                
+                             Dim oThickness As Parameter
+                            Set oThickness = iObjStrCollar.Thickness
+                            oThickness.ValuateFromString("20mm")
 
         :return: Parameter
         """
@@ -203,8 +203,8 @@ class StrCollar(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the Collars created. 
+                Sub Update()
+                    Updates the Collars created. 
 
         :return: None
         """

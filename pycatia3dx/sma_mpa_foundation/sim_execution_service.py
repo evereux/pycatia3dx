@@ -17,29 +17,29 @@ class SimExecutionService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SimExecutionService
-                | 
-                | Represents the Service to perform simulation execution.
-                | 
-                | Example:
-                |     Given a CATIA application object you can retrieve a SimExecutionService
-                |     object as following:
-                | 
-                |      Dim MyExecutionService As SimExecutionService
-                |      Set MyExecutionService = CATIA.GetSessionService("SimExecutionSerivce")
-                |      
-                | 
-                | Example in Python:
-                |     Given a CATIA application object you can retrieve a SimExecutionService
-                |     object as following:
-                | 
-                |      myExecutionService = CATIA.GetSessionService("SimExecutionSerivce")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SimExecutionService
+                
+                Represents the Service to perform simulation execution.
+                
+                Example:
+                    Given a CATIA application object you can retrieve a SimExecutionService
+                    object as following:
+                
+                     Dim MyExecutionService As SimExecutionService
+                     Set MyExecutionService = CATIA.GetSessionService("SimExecutionSerivce")
+                     
+                
+                Example in Python:
+                    Given a CATIA application object you can retrieve a SimExecutionService
+                    object as following:
+                
+                     myExecutionService = CATIA.GetSessionService("SimExecutionSerivce")
     
     """
 
@@ -52,18 +52,18 @@ class SimExecutionService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func BasicExecuteAll(AnyObject iSimulationReference) As
-                | boolean
-                |     Executes all analysis cases within a simulation reference.
-                | 
-                |     Parameters:
-                | 
-                |         iSimulationReference[in]
-                |             The simulation object. 
-                | 
-                |     Returns:
-                |         Boolean execution status TRUE if the simulation ran successfully. FALSE
-                |         if did not. 
+                Func BasicExecuteAll(AnyObject iSimulationReference) As
+                boolean
+                    Executes all analysis cases within a simulation reference.
+                
+                    Parameters:
+                
+                        iSimulationReference[in]
+                            The simulation object. 
+                
+                    Returns:
+                        Boolean execution status TRUE if the simulation ran successfully. FALSE
+                        if did not. 
 
         :param AnyObject i_simulation_reference:
         :return: bool

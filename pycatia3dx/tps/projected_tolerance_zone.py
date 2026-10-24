@@ -17,18 +17,18 @@ class ProjectedToleranceZone(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ProjectedToleranceZone
-                | 
-                | Interface for accessing projected tolerance zone information of a
-                | TPS.
-                | ========| Position Length / |<----------->|<----------->| Toleranced | | |
-                | Surface - - - +-------> +=============+ \\ |\\ \\ \\ \\ | Origin Direction Projected
-                | Tolerance Zone ========
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ProjectedToleranceZone
+                
+                Interface for accessing projected tolerance zone information of a
+                TPS.
+                ========| Position Length / |<----------->|<----------->| Toleranced | | |
+                Surface - - - +-------> +=============+ \\ |\\ \\ \\ \\ | Origin Direction Projected
+                Tolerance Zone ========
     
     """
 
@@ -42,10 +42,10 @@ class ProjectedToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Length() As double (Read Only)
-                |     Retrieves length of the projected tolerance zone (in millimeters). The
-                |     length defines the ending point of the tolerance zone. This point can be
-                |     computed by using Origin and Direction of the axis.
+                Property Length() As double (Read Only)
+                    Retrieves length of the projected tolerance zone (in millimeters). The
+                    length defines the ending point of the tolerance zone. This point can be
+                    computed by using Origin and Direction of the axis.
 
         :return: float
         """
@@ -58,10 +58,10 @@ class ProjectedToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Position() As double (Read Only)
-                |     Retrieves position of the projected tolerance zone (in millimeters). The
-                |     position defines the starting point of the tolerance zone. This point can be
-                |     computed by using Origin and Direction of the axis.
+                Property Position() As double (Read Only)
+                    Retrieves position of the projected tolerance zone (in millimeters). The
+                    position defines the starting point of the tolerance zone. This point can be
+                    computed by using Origin and Direction of the axis.
 
         :return: float
         """
@@ -73,28 +73,28 @@ class ProjectedToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetProjectedTolZoneReference(CATSafeArrayVariant
-                | opReference)
-                |     Retrieves reference axis of the projected tolerance zone. The returned
-                |     point and vector define a axis system that is used to defined the 3D position
-                |     of the tolerance zone.
+                Sub GetProjectedTolZoneReference(CATSafeArrayVariant
+                opReference)
+                    Retrieves reference axis of the projected tolerance zone. The returned
+                    point and vector define a axis system that is used to defined the 3D position
+                    of the tolerance zone.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         opReference
-                |             The first 3 values of opReference correspond to the X,Y and Z
-                |             values of the origin point respectively and the next 3 values correspond to the
-                |             X,Y and Z values of the direction respectively.
+                        opReference
+                            The first 3 values of opReference correspond to the X,Y and Z
+                            values of the origin point respectively and the next 3 values correspond to the
+                            X,Y and Z values of the direction respectively.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example gets the Projected Tolerance Zone reference in a VB
-                |          Script
-                |          Dim oTab(6) As CATSafeArrayVariant
-                |          Set projTol = annotation.ProjectedToleranceZone
-                |           projTol.GetProjectedTolZoneReference(oTab)
-                |           oStream.Write "Projected Tol Zone Reference Point : " & oTab(0) & " " & oTab(1) & " " & oTab(2) & sLF
-                |           oStream.Write "Projected Tol Zone Reference Vector : " & oTab(3) & " " & oTab(4) & " " & oTab(5) & sLF
+                         This example gets the Projected Tolerance Zone reference in a VB
+                         Script
+                         Dim oTab(6) As CATSafeArrayVariant
+                         Set projTol = annotation.ProjectedToleranceZone
+                          projTol.GetProjectedTolZoneReference(oTab)
+                          oStream.Write "Projected Tol Zone Reference Point : " & oTab(0) & " " & oTab(1) & " " & oTab(2) & sLF
+                          oStream.Write "Projected Tol Zone Reference Vector : " & oTab(3) & " " & oTab(4) & " " & oTab(5) & sLF
 
         :param tuple op_reference:
         :return: tuple

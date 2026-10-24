@@ -20,17 +20,17 @@ class SimProbes(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimProbes
-                | 
-                | Represents the collection of Simulation Probes.
-                | 
-                | See also:
-                |     SimProbe
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimProbes
+                
+                Represents the collection of Simulation Probes.
+                
+                See also:
+                    SimProbe
     
     """
 
@@ -43,22 +43,22 @@ class SimProbes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
-                | SimProbe
-                |     Creates a new Simulation Probe and adds it to the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of Simulation Probe to create. 
-                |         iCatalogName
-                |             The catalog base name with its extension. 
-                |         iClientId
-                |             The client id related to catalog. 
-                | 
-                |     Returns:
-                |         The created Simulation Probe.
+                Func Add(CATBSTR iType,CATBSTR iCatalogName,CATBSTR iClientId) As
+                SimProbe
+                    Creates a new Simulation Probe and adds it to the
+                    collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of Simulation Probe to create. 
+                        iCatalogName
+                            The catalog base name with its extension. 
+                        iClientId
+                            The client id related to catalog. 
+                
+                    Returns:
+                        The created Simulation Probe.
 
         :param str i_type:
         :param str i_catalog_name:
@@ -72,21 +72,21 @@ class SimProbes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimProbe
-                |     Returns a Simulation Probe using its index from the Simulation Probes
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Simulation Probe to retrieve from the collection
-                |             of Simulation Probes.
-                |             This index is the rank of the Simulation Probe in the collection.
-                |             The index of the first Simulation Probe in the collection is 1, and the index
-                |             of the last Simulation Probe is Count. 
-                | 
-                |     Returns:
-                |         The retrieved Simulation Probe.
+                Func Item(CATVariant iIndex) As SimProbe
+                    Returns a Simulation Probe using its index from the Simulation Probes
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Simulation Probe to retrieve from the collection
+                            of Simulation Probes.
+                            This index is the rank of the Simulation Probe in the collection.
+                            The index of the first Simulation Probe in the collection is 1, and the index
+                            of the last Simulation Probe is Count. 
+                
+                    Returns:
+                        The retrieved Simulation Probe.
 
         :param CATVariant i_index:
         :return: SimProbe
@@ -98,20 +98,20 @@ class SimProbes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Simulation Probe using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Simulation Probe to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the Simulation Probe in the
-                |             collection. The index of the first Simulation Probe in the collection is 1, and
-                |             the index of the last Simulation Probe is Count.
-                |             As a string, it is the name you assigned to the Simulation Probe
-                |             using the Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Simulation Probe using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Simulation Probe to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the Simulation Probe in the
+                            collection. The index of the first Simulation Probe in the collection is 1, and
+                            the index of the last Simulation Probe is Count.
+                            As a string, it is the name you assigned to the Simulation Probe
+                            using the Name object property.
 
         :param CATVariant i_index:
         :return: None

@@ -18,14 +18,14 @@ class SsmSpaceSystem(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceSystem
-                | 
-                | Role: This interface is specific to Space System
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceSystem
+                
+                Role: This interface is specific to Space System
     
     """
 
@@ -39,16 +39,16 @@ class SsmSpaceSystem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceManager() As SsmSpaceManager (Read Only)
-                |     Get Child SpaceManager
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceManager
-                |             output SpaceManager 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceManager() As SsmSpaceManager (Read Only)
+                    Get Child SpaceManager
+                
+                    Parameters:
+                
+                        oSpaceManager
+                            output SpaceManager 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: SsmSpaceManager
         """

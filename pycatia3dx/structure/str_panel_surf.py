@@ -19,15 +19,15 @@ class StrPanelSurf(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrPanelSurf
-                | 
-                | Object to manage an structure Panel created in surface mode.
-                | Role: To access Support of panel.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrPanelSurf
+                
+                Object to manage an structure Panel created in surface mode.
+                Role: To access Support of panel.
     
     """
 
@@ -41,21 +41,21 @@ class StrPanelSurf(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Support() As Reference
-                |     Returns or Sets the support of this Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets Support of the panel.
-                |              
-                | 
-                |               Dim PanelSupport As Reference
-                |               Set ObjPanelSupport = Manager.GetReferencePlane(ObjPart, 2, "CROSS.0")
-                |               Set PanelSupport = ObjPart.CreateReferenceFromObject(ObjPanelSupport)
-                |               Dim ObjStrPanelSurf As StrPanelSurf
-                |               Set ObjStrPanelSurf = ObjSfdPanel.StrPanelSurf
-                |               ObjStrPanelSurf.Support = PanelSupport
+                Property Support() As Reference
+                    Returns or Sets the support of this Panel.
+                
+                    Example:
+                
+                
+                             This example sets Support of the panel.
+                             
+                
+                              Dim PanelSupport As Reference
+                              Set ObjPanelSupport = Manager.GetReferencePlane(ObjPart, 2, "CROSS.0")
+                              Set PanelSupport = ObjPart.CreateReferenceFromObject(ObjPanelSupport)
+                              Dim ObjStrPanelSurf As StrPanelSurf
+                              Set ObjStrPanelSurf = ObjSfdPanel.StrPanelSurf
+                              ObjStrPanelSurf.Support = PanelSupport
 
         :return: Reference
         """
@@ -75,19 +75,19 @@ class StrPanelSurf(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSupportOffset() As Parameter
-                |     Returns the parameter offset applied on the user support of this SuperPlate
-                |     function.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves SupportOffset of the panel
-                |              support.
-                |              
-                | 
-                |               Dim OffsetParm As Parameter
-                |               Set OffsetParm = ObjStrPanelSurf.GetSupportOffset
+                Func GetSupportOffset() As Parameter
+                    Returns the parameter offset applied on the user support of this SuperPlate
+                    function.
+                
+                    Example:
+                
+                
+                             This example retrieves SupportOffset of the panel
+                             support.
+                             
+                
+                              Dim OffsetParm As Parameter
+                              Set OffsetParm = ObjStrPanelSurf.GetSupportOffset
 
         :return: Parameter
         """

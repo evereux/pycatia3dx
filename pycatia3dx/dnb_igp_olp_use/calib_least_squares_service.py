@@ -19,40 +19,40 @@ class CalibLeastSquaresService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         CalibLeastSquaresService
-                | 
-                | Service to calibrate a workpiece or resource.
-                | 
-                | Example: (VB.NET)
-                | 
-                |  Dim robot As VPMOccurrence = ...
-                |  Dim cell As VPMOccurrence = ...
-                |  Dim nominal As TagGroup = ... 
-                |  Dim measured As TagGroup = ... 
-                | 
-                |  Dim LSQService As CalibLeastSquaresService = CATIA.Application.GetSessionService("CalibLeastSquaresService")
-                |  Try
-                |    calibration.PartToCalibrate = robot
-                |    calibration.SetNominalPoints(nominal, cell, True)
-                |    calibration.SetMeasuredPoints(measured, cell, False)
-                |    calibration.DoCalibration(True, True)
-                |    If calibration.RMSError < 0.01 Then
-                |      calibration.ApplyCalibration()
-                |    End If
-                |  Catch ex As Exception
-                |    Dim errormsg As String = calibration.LastErrorMessage
-                |    If errormsg.Length > 0 Then
-                |      MsgBox(errormsg)
-                |    Else
-                |      MsgBox("calibration failed with no error")
-                |    End If
-                |  End Try
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        CalibLeastSquaresService
+                
+                Service to calibrate a workpiece or resource.
+                
+                Example: (VB.NET)
+                
+                 Dim robot As VPMOccurrence = ...
+                 Dim cell As VPMOccurrence = ...
+                 Dim nominal As TagGroup = ... 
+                 Dim measured As TagGroup = ... 
+                
+                 Dim LSQService As CalibLeastSquaresService = CATIA.Application.GetSessionService("CalibLeastSquaresService")
+                 Try
+                   calibration.PartToCalibrate = robot
+                   calibration.SetNominalPoints(nominal, cell, True)
+                   calibration.SetMeasuredPoints(measured, cell, False)
+                   calibration.DoCalibration(True, True)
+                   If calibration.RMSError < 0.01 Then
+                     calibration.ApplyCalibration()
+                   End If
+                 Catch ex As Exception
+                   Dim errormsg As String = calibration.LastErrorMessage
+                   If errormsg.Length > 0 Then
+                     MsgBox(errormsg)
+                   Else
+                     MsgBox("calibration failed with no error")
+                   End If
+                 End Try
     
     """
 
@@ -66,10 +66,10 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CalibrationDistance() As double (Read Only)
-                |     Output: Get the calibration distance.
-                |     This is the translation distance the part will be or has been moved. This
-                |     cannot be called before DoCalibration. Value is in meters.
+                Property CalibrationDistance() As double (Read Only)
+                    Output: Get the calibration distance.
+                    This is the translation distance the part will be or has been moved. This
+                    cannot be called before DoCalibration. Value is in meters.
 
         :return: float
         """
@@ -82,20 +82,20 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CalibrationOffset() As RscTransform (Read Only)
-                |     Output: Get the calibration transform.
-                |     This is the transform that will be or has been applied to the part
-                |     position. You can calculate the resulting part position before calling
-                |     ApplyCalibration as follows:
-                | 
-                | 
-                |      Dim PartPosition As RscTransform = LSQService.PartPosition
-                |      Dim CalibrationTransform As RscTransform = LSQService.CalibrationOffset
-                |      Dim CalibratedPosition as RscTransform = PartPosition.Multiply(CalibrationTransform)
-                | 
-                |      
-                | 
-                |     This cannot be called before DoCalibration.
+                Property CalibrationOffset() As RscTransform (Read Only)
+                    Output: Get the calibration transform.
+                    This is the transform that will be or has been applied to the part
+                    position. You can calculate the resulting part position before calling
+                    ApplyCalibration as follows:
+                
+                
+                     Dim PartPosition As RscTransform = LSQService.PartPosition
+                     Dim CalibrationTransform As RscTransform = LSQService.CalibrationOffset
+                     Dim CalibratedPosition as RscTransform = PartPosition.Multiply(CalibrationTransform)
+                
+                     
+                
+                    This cannot be called before DoCalibration.
 
         :return: RscTransform
         """
@@ -108,13 +108,13 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CalibrationRotation() As double (Read Only)
-                |     Output: Get the calibration rotation.
-                |     This is the amount the part will be rotated. This rotation value is about
-                |     an axis and incorporates the yaw pitch and roll values into a single number.
-                |     This is useful if you want to ensure only a small rotation will be applied by
-                |     ApplyCalibration. This cannot be called before DoCalibration. Value is in
-                |     radians.
+                Property CalibrationRotation() As double (Read Only)
+                    Output: Get the calibration rotation.
+                    This is the amount the part will be rotated. This rotation value is about
+                    an axis and incorporates the yaw pitch and roll values into a single number.
+                    This is useful if you want to ensure only a small rotation will be applied by
+                    ApplyCalibration. This cannot be called before DoCalibration. Value is in
+                    radians.
 
         :return: float
         """
@@ -127,14 +127,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreePitch() As boolean
-                |     Input: Get/Set if Pitch parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the Pitch coordinate of the part is free to be adjusted during the
-                |     calibration Default value is True if not set. This cannot be set after
-                |     DoCalibration.
+                Property FreePitch() As boolean
+                    Input: Get/Set if Pitch parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the Pitch coordinate of the part is free to be adjusted during the
+                    calibration Default value is True if not set. This cannot be set after
+                    DoCalibration.
 
         :return: bool
         """
@@ -155,14 +155,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreeRoll() As boolean
-                |     Input: Get/Set if Roll parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the Roll coordinate of the part is free to be adjusted during the
-                |     calibration Default value is True if not set. This cannot be set after
-                |     DoCalibration.
+                Property FreeRoll() As boolean
+                    Input: Get/Set if Roll parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the Roll coordinate of the part is free to be adjusted during the
+                    calibration Default value is True if not set. This cannot be set after
+                    DoCalibration.
 
         :return: bool
         """
@@ -183,13 +183,13 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreeX() As boolean
-                |     Input: Get/Set if X parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the X coordinate of the part is free to be adjusted during the
-                |     calibration This cannot be set after DoCalibration.
+                Property FreeX() As boolean
+                    Input: Get/Set if X parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the X coordinate of the part is free to be adjusted during the
+                    calibration This cannot be set after DoCalibration.
 
         :return: bool
         """
@@ -210,14 +210,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreeY() As boolean
-                |     Input: Get/Set if Y parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the Y coordinate of the part is free to be adjusted during the
-                |     calibration Default value is True if not set. This cannot be set after
-                |     DoCalibration.
+                Property FreeY() As boolean
+                    Input: Get/Set if Y parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the Y coordinate of the part is free to be adjusted during the
+                    calibration Default value is True if not set. This cannot be set after
+                    DoCalibration.
 
         :return: bool
         """
@@ -238,14 +238,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreeYaw() As boolean
-                |     Input: Get/Set if Yaw parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the Yaw coordinate of the part is free to be adjusted during the
-                |     calibration Default value is True if not set. This cannot be set after
-                |     DoCalibration.
+                Property FreeYaw() As boolean
+                    Input: Get/Set if Yaw parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the Yaw coordinate of the part is free to be adjusted during the
+                    calibration Default value is True if not set. This cannot be set after
+                    DoCalibration.
 
         :return: bool
         """
@@ -266,14 +266,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FreeZ() As boolean
-                |     Input: Get/Set if Z parameter is free.
-                |     Specifies the directions in which the resource may be translated during
-                |     adjustment. Unless the resource is known to be aligned with an axis or on a
-                |     plane, the [X, Y, Z] parameters should all be set Free during calibration. If
-                |     true, then the Z coordinate of the part is free to be adjusted during the
-                |     calibration Default value is True if not set. This cannot be set after
-                |     DoCalibration.
+                Property FreeZ() As boolean
+                    Input: Get/Set if Z parameter is free.
+                    Specifies the directions in which the resource may be translated during
+                    adjustment. Unless the resource is known to be aligned with an axis or on a
+                    plane, the [X, Y, Z] parameters should all be set Free during calibration. If
+                    true, then the Z coordinate of the part is free to be adjusted during the
+                    calibration Default value is True if not set. This cannot be set after
+                    DoCalibration.
 
         :return: bool
         """
@@ -294,10 +294,10 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LastErrorMessage() As CATBSTR (Read Only)
-                |     Output: Get the error message from the last function call, property set or
-                |     get.
-                |     The message is translated into the user's current language settings.
+                Property LastErrorMessage() As CATBSTR (Read Only)
+                    Output: Get the error message from the last function call, property set or
+                    get.
+                    The message is translated into the user's current language settings.
 
         :return: str
         """
@@ -310,13 +310,13 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaxRotationUncertainty() As double (Read Only)
-                |     Output: Get maximum rotational uncertainty.
-                |     This value represents the maximum of the uncertainties for the fit on the
-                |     parameters to be identified. Large uncertainty values are an indication that
-                |     the experimental observation strategy is flawed, even if the RMS fitting error
-                |     is small. This cannot be called before DoCalibration. This fails if Yaw, Pitch
-                |     and Roll parameters are all fixed. Value is in radians.
+                Property MaxRotationUncertainty() As double (Read Only)
+                    Output: Get maximum rotational uncertainty.
+                    This value represents the maximum of the uncertainties for the fit on the
+                    parameters to be identified. Large uncertainty values are an indication that
+                    the experimental observation strategy is flawed, even if the RMS fitting error
+                    is small. This cannot be called before DoCalibration. This fails if Yaw, Pitch
+                    and Roll parameters are all fixed. Value is in radians.
 
         :return: float
         """
@@ -329,13 +329,13 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaxTranslationUncertainty() As double (Read Only)
-                |     Output: Get maximum translation uncertainty.
-                |     This value represents the maximum of the uncertainties for the fit on the
-                |     parameters to be identified. Large uncertainty values are an indication that
-                |     the experimental observation strategy is flawed, even if the RMS fitting error
-                |     is small. This cannot be called before DoCalibration. This fails if X, Y, and Z
-                |     parameters are all fixed. Value is in meters.
+                Property MaxTranslationUncertainty() As double (Read Only)
+                    Output: Get maximum translation uncertainty.
+                    This value represents the maximum of the uncertainties for the fit on the
+                    parameters to be identified. Large uncertainty values are an indication that
+                    the experimental observation strategy is flawed, even if the RMS fitting error
+                    is small. This cannot be called before DoCalibration. This fails if X, Y, and Z
+                    parameters are all fixed. Value is in meters.
 
         :return: float
         """
@@ -348,14 +348,14 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MeasurementNoise() As double
-                |     Input: Get/Set the estimated measurement noise.
-                |     An estimate of the uncertainty of the positional measurements during the
-                |     calibration experiment. The measurement noise need only be an order of
-                |     magnitude estimate, for example 0.0001m or 0.001m. Min value for Noise
-                |     Measurement is 0.0001m which is also the default value if not
-                |     set.
-                |     Units are in meters. This cannot be set after DoCalibration.
+                Property MeasurementNoise() As double
+                    Input: Get/Set the estimated measurement noise.
+                    An estimate of the uncertainty of the positional measurements during the
+                    calibration experiment. The measurement noise need only be an order of
+                    magnitude estimate, for example 0.0001m or 0.001m. Min value for Noise
+                    Measurement is 0.0001m which is also the default value if not
+                    set.
+                    Units are in meters. This cannot be set after DoCalibration.
 
         :return: float
         """
@@ -376,10 +376,10 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIterations() As long (Read Only)
-                |     Output: Get the number of iterations it took for the LSQ algorithm to
-                |     converge.
-                |     This cannot be called before DoCalibration.
+                Property NumIterations() As long (Read Only)
+                    Output: Get the number of iterations it took for the LSQ algorithm to
+                    converge.
+                    This cannot be called before DoCalibration.
 
         :return: int
         """
@@ -392,11 +392,11 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PartPosition() As RscTransform (Read Only)
-                |     Output: Get the current part position.
-                |     If called before ApplyCalibration this will be the original (uncalibrated)
-                |     position. If called after ApplyCalibration this will be the newly calibrated
-                |     position. This cannot be called before setting the PartToCalibrate.
+                Property PartPosition() As RscTransform (Read Only)
+                    Output: Get the current part position.
+                    If called before ApplyCalibration this will be the original (uncalibrated)
+                    position. If called after ApplyCalibration this will be the newly calibrated
+                    position. This cannot be called before setting the PartToCalibrate.
 
         :return: RscTransform
         """
@@ -409,10 +409,10 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PartToCalibrate() As VPMOccurrence
-                |     Input: Get/Set the workpiece or resource to calibrate.
-                |     This is the occurrence of the product, robot or other resource to move
-                |     during the calibration. This must be set before calling DoCalibration.
+                Property PartToCalibrate() As VPMOccurrence
+                    Input: Get/Set the workpiece or resource to calibrate.
+                    This is the occurrence of the product, robot or other resource to move
+                    during the calibration. This must be set before calling DoCalibration.
 
         :return: VPMOccurrence
         """
@@ -433,11 +433,11 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RMSError() As double (Read Only)
-                |     Output: Get root mean square fitting error.
-                |     The root mean square fitting error on the points after adjusting the part
-                |     to the best fit possible. This cannot be called before DoCalibration. Value is
-                |     in meters.
+                Property RMSError() As double (Read Only)
+                    Output: Get root mean square fitting error.
+                    The root mean square fitting error on the points after adjusting the part
+                    to the best fit possible. This cannot be called before DoCalibration. Value is
+                    in meters.
 
         :return: float
         """
@@ -449,9 +449,9 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ApplyCalibration()
-                |     Action: Apply the calibration position to the part.
-                |     This must be called after DoCalibration and can only be called 1 time.
+                Sub ApplyCalibration()
+                    Action: Apply the calibration position to the part.
+                    This must be called after DoCalibration and can only be called 1 time.
 
         :return: None
         """
@@ -462,27 +462,27 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DoCalibration(boolean iWith3Pt,boolean iOrderTags)
-                |     Action: Do the calibration.
-                |     You must set the required inputs PartToCalibrate, SetNominalPoints,
-                |     SetMeasueredPoints before calling DoCalibration. After DoCalibration you can
-                |     get output values. You can repeat the calibration by changing input parameters
-                |     and calling DoCalibration again. If an error occurs this function will throw an
-                |     exception and you can call LastErrorMessage to get information about the
-                |     problem.
-                | 
-                |     Parameters:
-                | 
-                |         iWith3Pt
-                |             Do a 3Pt calibration before the LSQ calibration. The calibration is
-                |             done with 3 points chosen from the input tag groups. The purpose is to get the
-                |             part closer to the target so the least squares algorithm has a better chance of
-                |             conversion. If the parts are far apart or have a large rotation, it is
-                |             recommended to set this to True. 
-                |         iOrderTags
-                |             Automatically calculate the order of the measured and nominal tags.
-                |             If this is False, the tags are matched up in the order they are in the tag
-                |             group. If True, a best fit will be computed to order the tags.
+                Sub DoCalibration(boolean iWith3Pt,boolean iOrderTags)
+                    Action: Do the calibration.
+                    You must set the required inputs PartToCalibrate, SetNominalPoints,
+                    SetMeasueredPoints before calling DoCalibration. After DoCalibration you can
+                    get output values. You can repeat the calibration by changing input parameters
+                    and calling DoCalibration again. If an error occurs this function will throw an
+                    exception and you can call LastErrorMessage to get information about the
+                    problem.
+                
+                    Parameters:
+                
+                        iWith3Pt
+                            Do a 3Pt calibration before the LSQ calibration. The calibration is
+                            done with 3 points chosen from the input tag groups. The purpose is to get the
+                            part closer to the target so the least squares algorithm has a better chance of
+                            conversion. If the parts are far apart or have a large rotation, it is
+                            recommended to set this to True. 
+                        iOrderTags
+                            Automatically calculate the order of the measured and nominal tags.
+                            If this is False, the tags are matched up in the order they are in the tag
+                            group. If True, a best fit will be computed to order the tags.
 
         :param bool i_with3_pt:
         :param bool i_order_tags:
@@ -495,16 +495,16 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMeasuredPoints(TagGroup oPoints,VPMOccurrence
-                | oTagGroupOwner)
-                |     Input: Get measured calibration points.
-                | 
-                |     Parameters:
-                | 
-                |         oPoints
-                |             The tag group with the measured points. 
-                |         oTagGroupOwner
-                |             The owner occurrence of the tag group.
+                Sub GetMeasuredPoints(TagGroup oPoints,VPMOccurrence
+                oTagGroupOwner)
+                    Input: Get measured calibration points.
+                
+                    Parameters:
+                
+                        oPoints
+                            The tag group with the measured points. 
+                        oTagGroupOwner
+                            The owner occurrence of the tag group.
 
         :param TagGroup o_points:
         :param VPMOccurrence o_tag_group_owner:
@@ -517,16 +517,16 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetNominalPoints(TagGroup oPoints,VPMOccurrence
-                | oTagGroupOwner)
-                |     Input: Get nominal calibration points.
-                | 
-                |     Parameters:
-                | 
-                |         oPoints
-                |             The tag group with the nominal points. 
-                |         oTagGroupOwner
-                |             The owner occurrence of the tag group.
+                Sub GetNominalPoints(TagGroup oPoints,VPMOccurrence
+                oTagGroupOwner)
+                    Input: Get nominal calibration points.
+                
+                    Parameters:
+                
+                        oPoints
+                            The tag group with the nominal points. 
+                        oTagGroupOwner
+                            The owner occurrence of the tag group.
 
         :param TagGroup o_points:
         :param VPMOccurrence o_tag_group_owner:
@@ -539,24 +539,24 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMeasuredPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
-                | iForceDettach)
-                |     Input: Set measured calibration points.
-                |     This is the location the nominal points need to be moved to. This must be
-                |     set before calling DoCalibration and after setting PartToCalibrate. The
-                |     measured points cannot be attached to the part being calibrated. If the tag
-                |     group is not valid, this function will throw an exception and you can call
-                |     LastErrorMessage to get information about the problem.
-                | 
-                |     Parameters:
-                | 
-                |         iPoints
-                |             The tag group with the measured points. 
-                |         iTagGroupOwner
-                |             The owner occurrence of the tag group. 
-                |         iForceDettach
-                |             If set to true, the tag group will be detached from the part being
-                |             calibrated if it is attached to it.
+                Sub SetMeasuredPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
+                iForceDettach)
+                    Input: Set measured calibration points.
+                    This is the location the nominal points need to be moved to. This must be
+                    set before calling DoCalibration and after setting PartToCalibrate. The
+                    measured points cannot be attached to the part being calibrated. If the tag
+                    group is not valid, this function will throw an exception and you can call
+                    LastErrorMessage to get information about the problem.
+                
+                    Parameters:
+                
+                        iPoints
+                            The tag group with the measured points. 
+                        iTagGroupOwner
+                            The owner occurrence of the tag group. 
+                        iForceDettach
+                            If set to true, the tag group will be detached from the part being
+                            calibrated if it is attached to it.
 
         :param TagGroup i_points:
         :param VPMOccurrence i_tag_group_owner:
@@ -571,26 +571,26 @@ class CalibLeastSquaresService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNominalPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
-                | iForceAttachement)
-                |     Input: Set nominal calibration points.
-                |     This is the current simulation location of the points to be calibrated.
-                |     This must be set before calling DoCalibration and after setting
-                |     PartToCalibrate. The nominal points must be attached to the part being
-                |     calibrated. When the part is moved, by the calibration these points will then
-                |     be moved to the same location. If the tag group is not valid, this function
-                |     will throw an exception and you can call LastErrorMessage to get information
-                |     about the problem.
-                | 
-                |     Parameters:
-                | 
-                |         iPoints
-                |             The tag group with the nominal points. 
-                |         iTagGroupOwner
-                |             The owner occurrence of the tag group. 
-                |         iForceAttachement
-                |             If set to true, the tag group will be attached to the part to
-                |             calibrate, regardless if it is already attached. 
+                Sub SetNominalPoints(TagGroup iPoints,VPMOccurrence iTagGroupOwner,boolean
+                iForceAttachement)
+                    Input: Set nominal calibration points.
+                    This is the current simulation location of the points to be calibrated.
+                    This must be set before calling DoCalibration and after setting
+                    PartToCalibrate. The nominal points must be attached to the part being
+                    calibrated. When the part is moved, by the calibration these points will then
+                    be moved to the same location. If the tag group is not valid, this function
+                    will throw an exception and you can call LastErrorMessage to get information
+                    about the problem.
+                
+                    Parameters:
+                
+                        iPoints
+                            The tag group with the nominal points. 
+                        iTagGroupOwner
+                            The owner occurrence of the tag group. 
+                        iForceAttachement
+                            If set to true, the tag group will be attached to the part to
+                            calibrate, regardless if it is already attached. 
 
         :param TagGroup i_points:
         :param VPMOccurrence i_tag_group_owner:

@@ -16,19 +16,19 @@ class MeasurableCylinder(MeasurableSurface):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         CATOpnsMeasureIDLItf.MeasurableSurface
-                |                             MeasurableCylinder
-                | 
-                | Interface representing the measurement on a cylinder.
-                | Get the area, the center of gravity and the perimeter by inheritance. Get the
-                | radius, a point and the two limit points on the axis of the
-                | cylinder.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        CATOpnsMeasureIDLItf.MeasurableSurface
+                                            MeasurableCylinder
+                
+                Interface representing the measurement on a cylinder.
+                Get the area, the center of gravity and the perimeter by inheritance. Get the
+                radius, a point and the two limit points on the axis of the
+                cylinder.
     
     """
 
@@ -41,23 +41,23 @@ class MeasurableCylinder(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxis(double oXVector,double oYVector,double oZVector)
-                |     Retrieves the axis vector of the cylinder.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the axis vector of theMeasurableCylinder
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCylinder As MeasurableCylinder
-                |              Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
-                |              Dim theXVector As Double
-                |              Dim theYVector As Double
-                |              Dim theZVector As Double
-                |              theMeasurableCylinder.GetAxis theXVector, theYVector,
-                |              theZVector
+                Sub GetAxis(double oXVector,double oYVector,double oZVector)
+                    Retrieves the axis vector of the cylinder.
+                
+                    Example:
+                
+                           This example retrieves the axis vector of theMeasurableCylinder
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCylinder As MeasurableCylinder
+                             Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
+                             Dim theXVector As Double
+                             Dim theYVector As Double
+                             Dim theZVector As Double
+                             theMeasurableCylinder.GetAxis theXVector, theYVector,
+                             theZVector
 
         :return: tuple
         """
@@ -68,24 +68,24 @@ class MeasurableCylinder(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
-                |     Retrieves the position of a point on the axis of the
-                |     cylinder.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of a point on the axis of
-                |            theMeasurableCylinder measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCylinder As MeasurableCylinder
-                |              Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
-                |              Dim theXPoint As Double
-                |              Dim theYPoint As Double
-                |              Dim theZPoint As Double
-                |              theMeasurableCylinder.GetPoint theXPoint, theYPoint,
-                |              theZPoint
+                Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
+                    Retrieves the position of a point on the axis of the
+                    cylinder.
+                
+                    Example:
+                
+                           This example retrieves the position of a point on the axis of
+                           theMeasurableCylinder measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCylinder As MeasurableCylinder
+                             Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
+                             Dim theXPoint As Double
+                             Dim theYPoint As Double
+                             Dim theZPoint As Double
+                             theMeasurableCylinder.GetPoint theXPoint, theYPoint,
+                             theZPoint
 
         :return: tuple
         """
@@ -96,31 +96,31 @@ class MeasurableCylinder(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPoints(double oXStartPoint,double oYStartPoint,double
-                | oZStartPoint,double oXEndPoint,double oYEndPoint,double
-                | oZEndPoint)
-                |     Retrieves the position of the two limit points on the axis of the cylinder.
-                |     The distance between these points fit with the height of the
-                |     cylinder.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position the two limit points on the axis
-                |            of theMeasurableCylinder measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCylinder As MeasurableCylinder
-                |              Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
-                |              Dim theXStartPoint As Double
-                |              Dim theYStartPoint As Double
-                |              Dim theZStartPoint As Double
-                |              Dim theXEndPoint As Double
-                |              Dim theYEndPoint As Double
-                |              Dim theZEndPoint As Double
-                |              theMeasurableCylinder.GetPoints theXStartPoint, theYStartPoint,
-                |              theZStartPoint, theXEndPoint, theYEndPoint,
-                |              theZEndPoint
+                Sub GetPoints(double oXStartPoint,double oYStartPoint,double
+                oZStartPoint,double oXEndPoint,double oYEndPoint,double
+                oZEndPoint)
+                    Retrieves the position of the two limit points on the axis of the cylinder.
+                    The distance between these points fit with the height of the
+                    cylinder.
+                
+                    Example:
+                
+                           This example retrieves the position the two limit points on the axis
+                           of theMeasurableCylinder measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCylinder As MeasurableCylinder
+                             Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
+                             Dim theXStartPoint As Double
+                             Dim theYStartPoint As Double
+                             Dim theZStartPoint As Double
+                             Dim theXEndPoint As Double
+                             Dim theYEndPoint As Double
+                             Dim theZEndPoint As Double
+                             theMeasurableCylinder.GetPoints theXStartPoint, theYStartPoint,
+                             theZStartPoint, theXEndPoint, theYEndPoint,
+                             theZEndPoint
 
         :return: tuple
         """
@@ -132,20 +132,20 @@ class MeasurableCylinder(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRadius() As double
-                |     Retrieves the radius of the cylinder.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the Radius of theMeasurableCylinder
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableCylinder As MeasurableCylinder
-                |              Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
-                |              Dim theRadius As Double
-                |              theRadius = theMeasurableCylinder.GetRadius
+                Func GetRadius() As double
+                    Retrieves the radius of the cylinder.
+                
+                    Example:
+                
+                           This example retrieves the Radius of theMeasurableCylinder
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableCylinder As MeasurableCylinder
+                             Set theMeasurableCylinder = theMeasureService.GetMeasurable(theSelection, CAAMeasurableCylinder)
+                             Dim theRadius As Double
+                             theRadius = theMeasurableCylinder.GetRadius
 
         :return: float
         """

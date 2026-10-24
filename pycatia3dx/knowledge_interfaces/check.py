@@ -17,21 +17,21 @@ class Check(Relation):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeObject
-                |                        
-                |                        KnowledgeIDLItf.KnowledgeActivateObject
-                |                             KnowledgeIDLItf.Relation
-                |                                 Check
-                | 
-                | Represents the Knowledge check relation.
-                | 
-                | See also:
-                |     RelationsFactory.CreateCheck
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeObject
+                                       
+                                       KnowledgeIDLItf.KnowledgeActivateObject
+                                            KnowledgeIDLItf.Relation
+                                                Check
+                
+                Represents the Knowledge check relation.
+                
+                See also:
+                    RelationsFactory.CreateCheck
     
     """
 
@@ -45,9 +45,9 @@ class Check(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Diagnosis() As boolean (Read Only)
-                |     Returns the check diagnosis. True if the condition of the check is
-                |     verified. False otherwise.
+                Property Diagnosis() As boolean (Read Only)
+                    Returns the check diagnosis. True if the condition of the check is
+                    verified. False otherwise.
 
         :return: bool
         """
@@ -60,12 +60,12 @@ class Check(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Severity() As long
-                |     Returns or sets the check severity. The severity is the way the check will
-                |     manifest itself:
-                |     1:Silent
-                |     2:Information
-                |     3:Warning
+                Property Severity() As long
+                    Returns or sets the check severity. The severity is the way the check will
+                    manifest itself:
+                    1:Silent
+                    2:Information
+                    3:Warning
 
         :return: int
         """

@@ -17,14 +17,14 @@ class ManufacturingInstructionSetAction(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingInstructionSetAction
-                | 
-                | Interface for drilling riveting instruction set actions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingInstructionSetAction
+                
+                Interface for drilling riveting instruction set actions.
     
     """
 
@@ -38,8 +38,8 @@ class ManufacturingInstructionSetAction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActivationCondition() As CATBSTR
-                |     Returns or sets parameter name which drives the activation of the action.
+                Property ActivationCondition() As CATBSTR
+                    Returns or sets parameter name which drives the activation of the action.
 
         :return: str
         """
@@ -59,8 +59,8 @@ class ManufacturingInstructionSetAction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetType() As CATBSTR
-                |     Gets the type of action.
+                Func GetType() As CATBSTR
+                    Gets the type of action.
 
         :return: str
         """

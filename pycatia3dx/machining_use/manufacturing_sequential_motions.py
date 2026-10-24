@@ -16,15 +16,15 @@ class ManufacturingSequentialMotions(ManufacturingAgregate):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningUseItf.ManufacturingAgregate
-                |                         ManufacturingSequentialMotions
-                | 
-                | Interface allow to get sequential motions from an operation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningUseItf.ManufacturingAgregate
+                                        ManufacturingSequentialMotions
+                
+                Interface allow to get sequential motions from an operation
     
     """
 

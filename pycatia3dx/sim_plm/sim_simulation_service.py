@@ -19,23 +19,23 @@ class SimSimulationService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SimSimulationService
-                | 
-                | Represents the Service to return the root occurrence of the product referred by
-                | the simulation.
-                | 
-                | Example:
-                |     Given a CATIA application object you can retrieve a SimSimulationService
-                |     object as following:
-                | 
-                |      Dim MySimulationService As SimSimulationService
-                |      Set MySimulationService = CATIA.GetSessionService("SimSimulationService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SimSimulationService
+                
+                Represents the Service to return the root occurrence of the product referred by
+                the simulation.
+                
+                Example:
+                    Given a CATIA application object you can retrieve a SimSimulationService
+                    object as following:
+                
+                     Dim MySimulationService As SimSimulationService
+                     Set MySimulationService = CATIA.GetSessionService("SimSimulationService")
     
     """
 
@@ -48,19 +48,19 @@ class SimSimulationService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProductRootOccurrence(SimulationReference ipSimulationReference) As
-                | VPMRootOccurrence
-                |     Method to return the root occurrence of the product referred by the
-                |     simulation.
-                | 
-                |     Parameters:
-                | 
-                |         ipSimulationReference
-                |             The simulation whose product's root occurrence needs to be
-                |             determined. 
-                | 
-                |     Returns:
-                |         The VPMRootOccurrence object
+                Func GetProductRootOccurrence(SimulationReference ipSimulationReference) As
+                VPMRootOccurrence
+                    Method to return the root occurrence of the product referred by the
+                    simulation.
+                
+                    Parameters:
+                
+                        ipSimulationReference
+                            The simulation whose product's root occurrence needs to be
+                            determined. 
+                
+                    Returns:
+                        The VPMRootOccurrence object
 
         :param SimulationReference ip_simulation_reference:
         :return: VPMRootOccurrence
@@ -72,21 +72,21 @@ class SimSimulationService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSimulationReferenceFromObject(AnyObject iObject) As
-                | SimulationReference
-                |     Retrieves the Simulation object that aggregates a simulation
-                |     feature.
-                |     This service is valid only for Object stored in Scenario or Result
-                |     representation.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The Object stored in Scenario or Result representation.
-                |             
-                | 
-                |     Returns:
-                |         The simulation reference object 
+                Func GetSimulationReferenceFromObject(AnyObject iObject) As
+                SimulationReference
+                    Retrieves the Simulation object that aggregates a simulation
+                    feature.
+                    This service is valid only for Object stored in Scenario or Result
+                    representation.
+                
+                    Parameters:
+                
+                        iObject
+                            The Object stored in Scenario or Result representation.
+                            
+                
+                    Returns:
+                        The simulation reference object 
 
         :param AnyObject i_object:
         :return: SimulationReference

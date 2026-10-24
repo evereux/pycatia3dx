@@ -17,52 +17,52 @@ class SimAcousticCoupling(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAcousticCoupling
-                | 
-                | Represents the Acoustic Coupling object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimAcousticCoupling as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAcousticCoupling As SimAcousticCoupling
-                |      Set MyAcousticCoupling = MyAbstractions.Add("SimAcousticCoupling")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimAcousticCoupling
-                |     named "Acoustic Coupling.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAcousticCoupling As SimAcousticCoupling
-                |      Set MyAcousticCoupling = MyAbstractions.Item("Acoustic Coupling.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimAcousticCoupling as following:
-                | 
-                |      ...
-                |      myAcousticCoupling = myAbstractions.Add("SimAcousticCoupling")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimAcousticCoupling named "Acoustic Coupling.1" as
-                |     following:
-                | 
-                |      ...
-                |      myAcousticCoupling = myAbstractions.Item("Acoustic Coupling.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAcousticCoupling
+                
+                Represents the Acoustic Coupling object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimAcousticCoupling as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAcousticCoupling As SimAcousticCoupling
+                     Set MyAcousticCoupling = MyAbstractions.Add("SimAcousticCoupling")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimAcousticCoupling
+                    named "Acoustic Coupling.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAcousticCoupling As SimAcousticCoupling
+                     Set MyAcousticCoupling = MyAbstractions.Item("Acoustic Coupling.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimAcousticCoupling as following:
+                
+                     ...
+                     myAcousticCoupling = myAbstractions.Add("SimAcousticCoupling")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimAcousticCoupling named "Acoustic Coupling.1" as
+                    following:
+                
+                     ...
+                     myAcousticCoupling = myAbstractions.Item("Acoustic Coupling.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,15 +76,15 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdjustSecondarySurfaceInitialPositionFlag() As
-                | boolean
-                |     Retrieves a flag that determines whether the adjustment of the initial
-                |     position of the secondary surface is enabled or not.
-                |     TRUE: all tied nodes are moved in the initial
-                |     configuration.
-                | 
-                |     FALSE: prevents all tied nodes on the secondary surface from moving onto
-                |     the main surface.
+                Property AdjustSecondarySurfaceInitialPositionFlag() As
+                boolean
+                    Retrieves a flag that determines whether the adjustment of the initial
+                    position of the secondary surface is enabled or not.
+                    TRUE: all tied nodes are moved in the initial
+                    configuration.
+                
+                    FALSE: prevents all tied nodes on the secondary surface from moving onto
+                    the main surface.
 
         :return: bool
         """
@@ -105,8 +105,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
-                |     Deprecated R424
+                Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
+                    Deprecated R424
 
         :return: bool
         """
@@ -127,9 +127,9 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FormulationType() As
-                | SimAcousticCouplingFormulationType
-                |     Returns or sets the formulation type.
+                Property FormulationType() As
+                SimAcousticCouplingFormulationType
+                    Returns or sets the formulation type.
 
         :return: int
         """
@@ -150,8 +150,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MainSurface() As CATBaseDispatch (Read Only)
-                |     Returns the main surface.
+                Property MainSurface() As CATBaseDispatch (Read Only)
+                    Returns the main surface.
 
         :return: AnyObject
         """
@@ -164,9 +164,9 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MainSurfaceType() As
-                | SimAcousticCouplingMainSurfaceType
-                |     Returns or sets the main surface type.
+                Property MainSurfaceType() As
+                SimAcousticCouplingMainSurfaceType
+                    Returns or sets the main surface type.
 
         :return: int
         """
@@ -187,8 +187,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MasterSurface() As CATBaseDispatch (Read Only)
-                |     Deprecated R424
+                Property MasterSurface() As CATBaseDispatch (Read Only)
+                    Deprecated R424
 
         :return: AnyObject
         """
@@ -201,9 +201,9 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MasterSurfaceType() As
-                | SimAcousticCouplingMasterSurfaceType
-                |     Deprecated R424
+                Property MasterSurfaceType() As
+                SimAcousticCouplingMasterSurfaceType
+                    Deprecated R424
 
         :return: int
         """
@@ -224,8 +224,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionTolerance() As double
-                |     Returns or sets the position tolerance. Quantity: LENGTH, units: m.
+                Property PositionTolerance() As double
+                    Returns or sets the position tolerance. Quantity: LENGTH, units: m.
 
         :return: float
         """
@@ -246,13 +246,13 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionToleranceFlag() As boolean
-                |     Returns or sets the flag that determines if the position tolerance is
-                |     applied.
-                | 
-                |     TRUE: the position tolerance is applied.
-                | 
-                |     FALSE: the position tolertance is not applied.
+                Property PositionToleranceFlag() As boolean
+                    Returns or sets the flag that determines if the position tolerance is
+                    applied.
+                
+                    TRUE: the position tolerance is applied.
+                
+                    FALSE: the position tolertance is not applied.
 
         :return: bool
         """
@@ -273,8 +273,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondarySurface() As CATBaseDispatch (Read Only)
-                |     Returns the secondary surface.
+                Property SecondarySurface() As CATBaseDispatch (Read Only)
+                    Returns the secondary surface.
 
         :return: AnyObject
         """
@@ -287,8 +287,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SlaveSurface() As CATBaseDispatch (Read Only)
-                |     Deprecated R424
+                Property SlaveSurface() As CATBaseDispatch (Read Only)
+                    Deprecated R424
 
         :return: AnyObject
         """
@@ -300,8 +300,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SwapMainAndSecondary()
-                |     Swaps the main and secondary surfaces.
+                Sub SwapMainAndSecondary()
+                    Swaps the main and secondary surfaces.
 
         :return: None
         """
@@ -312,8 +312,8 @@ class SimAcousticCoupling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SwapMasterAndSlave()
-                |     Deprecated R424 
+                Sub SwapMasterAndSlave()
+                    Deprecated R424 
 
         :return: None
         """

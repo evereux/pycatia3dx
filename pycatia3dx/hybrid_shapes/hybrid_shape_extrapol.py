@@ -19,35 +19,35 @@ class HybridShapeExtrapol(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeExtrapol
-                | 
-                | Represents the hybrid shape extrapolation feature object.
-                | Role: To access the data of the hybrid shape affinity feature object. The
-                | hybrid shape extrapolation feature object is created by using an element (a
-                | curve or a surface), a boundary of this element (a point in case of curve
-                | extrapolation or a curve in case of surface extrapolation), and a limit (which
-                | can be specified by a length or a limit element).
-                | The continuity between the extrapolated element and the extrapolation can be
-                | either tangent continuity or curvature continuity.
-                | The extrapolation can be assembled or not with the extrapolated curve or
-                | surface. In case of surface extrapolation, extrapolation borders can
-                | be:
-                | 
-                |     Normal to the boundary of the extrapolated surface
-                |     Tangent to the edges of the extrapolated surface, that are adjacent to the
-                |     boundary
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeExtrapol
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeExtrapol
+                
+                Represents the hybrid shape extrapolation feature object.
+                Role: To access the data of the hybrid shape affinity feature object. The
+                hybrid shape extrapolation feature object is created by using an element (a
+                curve or a surface), a boundary of this element (a point in case of curve
+                extrapolation or a curve in case of surface extrapolation), and a limit (which
+                can be specified by a length or a limit element).
+                The continuity between the extrapolated element and the extrapolation can be
+                either tangent continuity or curvature continuity.
+                The extrapolation can be assembled or not with the extrapolated curve or
+                surface. In case of surface extrapolation, extrapolation borders can
+                be:
+                
+                    Normal to the boundary of the extrapolated surface
+                    Tangent to the edges of the extrapolated surface, that are adjacent to the
+                    boundary
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeExtrapol
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -61,13 +61,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BorderType() As long
-                |     Returns or sets the border type of extrapolation.
-                |     This applies for surface extrapolation only.
-                |     Legal values: the border type is either normal to the boundary of the
-                |     extrapolated surface (CATGSMNormalBorder(=0)), or tangent to the edges of the
-                |     extrapolated surface that are adjacent to the boundary
-                |     CATGSMTangentBorder(=1)).
+                Property BorderType() As long
+                    Returns or sets the border type of extrapolation.
+                    This applies for surface extrapolation only.
+                    Legal values: the border type is either normal to the boundary of the
+                    extrapolated surface (CATGSMNormalBorder(=0)), or tangent to the edges of the
+                    extrapolated surface that are adjacent to the boundary
+                    CATGSMTangentBorder(=1)).
 
         :return: int
         """
@@ -88,13 +88,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Boundary() As Reference
-                | 
-                |     This method is left available for compatibility reasons but it is
-                |     preferable to use the GetBoundary method instead.
-                | 
-                |     Migration instructions: use the signature that uses an integer as the first
-                |     argument.
+                Property Boundary() As Reference
+                
+                    This method is left available for compatibility reasons but it is
+                    preferable to use the GetBoundary method instead.
+                
+                    Migration instructions: use the signature that uses an integer as the first
+                    argument.
 
         :return: Reference
         """
@@ -115,10 +115,10 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ConstantLengthMode() As boolean
-                |     Returns or sets the constant distance mode in case of Length extrapolation
-                |     limit.
-                |     This applies in case of Length extrapolation limit.
+                Property ConstantLengthMode() As boolean
+                    Returns or sets the constant distance mode in case of Length extrapolation
+                    limit.
+                    This applies in case of Length extrapolation limit.
 
         :return: bool
         """
@@ -139,13 +139,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ContinuityType() As long
-                | 
-                |     This method is left available for compatibility reasons but it is
-                |     preferable to use the GetContinuityType method instead.
-                | 
-                |     Migration instructions: use the signature that uses an integer as the first
-                |     argument.
+                Property ContinuityType() As long
+                
+                    This method is left available for compatibility reasons but it is
+                    preferable to use the GetContinuityType method instead.
+                
+                    Migration instructions: use the signature that uses an integer as the first
+                    argument.
 
         :return: int
         """
@@ -166,10 +166,10 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ElemToExtrapol() As Reference
-                |     Returns or sets the curve or surface to extrapolate.
-                |     Sub-element(s) supported (see Boundary object): see Face , TriDimFeatEdge
-                |     or BiDimFeatEdge.
+                Property ElemToExtrapol() As Reference
+                    Returns or sets the curve or surface to extrapolate.
+                    Sub-element(s) supported (see Boundary object): see Face , TriDimFeatEdge
+                    or BiDimFeatEdge.
 
         :return: Reference
         """
@@ -190,13 +190,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ElemUntil() As Reference
-                | 
-                |     This method is left available for compatibility reasons but it is
-                |     preferable to use the GetElemUntil method instead.
-                | 
-                |     Migration instructions: use the signature that uses an integer as the first
-                |     argument.
+                Property ElemUntil() As Reference
+                
+                    This method is left available for compatibility reasons but it is
+                    preferable to use the GetElemUntil method instead.
+                
+                    Migration instructions: use the signature that uses an integer as the first
+                    argument.
 
         :return: Reference
         """
@@ -217,10 +217,10 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtendEdgesMode() As boolean
-                |     Returns or sets the extension of extrapolated edges mode.
-                |     This applies in case of tangent continuity mode, tangent border mode and
-                |     assembled result.
+                Property ExtendEdgesMode() As boolean
+                    Returns or sets the extension of extrapolated edges mode.
+                    This applies in case of tangent continuity mode, tangent border mode and
+                    assembled result.
 
         :return: bool
         """
@@ -241,10 +241,10 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtrapolBothSidesIdentically() As boolean
-                |     Returns or sets the the boolean telling if the second side is extrapolated
-                |     according to the first side's settings or to its own ones.
-                |     This applies in case the element to extrapol is a wire.
+                Property ExtrapolBothSidesIdentically() As boolean
+                    Returns or sets the the boolean telling if the second side is extrapolated
+                    according to the first side's settings or to its own ones.
+                    This applies in case the element to extrapol is a wire.
 
         :return: bool
         """
@@ -265,13 +265,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Length() As Length (Read Only)
-                | 
-                |     This method is left available for compatibility reasons but it is
-                |     preferable to use the GetLength method instead.
-                | 
-                |     Migration instructions: use the signature that uses an integer as the first
-                |     argument.
+                Property Length() As Length (Read Only)
+                
+                    This method is left available for compatibility reasons but it is
+                    preferable to use the GetLength method instead.
+                
+                    Migration instructions: use the signature that uses an integer as the first
+                    argument.
 
         :return: Length
         """
@@ -284,13 +284,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property LimitType() As long
-                | 
-                |     This method is left available for compatibility reasons but it is
-                |     preferable to use the GetLimitType method instead.
-                | 
-                |     Migration instructions: use the signature that uses an integer as the first
-                |     argument.
+                Property LimitType() As long
+                
+                    This method is left available for compatibility reasons but it is
+                    preferable to use the GetLimitType method instead.
+                
+                    Migration instructions: use the signature that uses an integer as the first
+                    argument.
 
         :return: int
         """
@@ -311,9 +311,9 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PropagationMode() As long
-                |     Returns or sets the propagation mode.
-                |     This applies in case of curvature extrapolation of a shell.
+                Property PropagationMode() As long
+                    Returns or sets the propagation mode.
+                    This applies in case of curvature extrapolation of a shell.
 
         :return: int
         """
@@ -334,11 +334,11 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the support surface.
-                |     This applies in case of tangent extrapolation of a wire. If a support
-                |     surface is given, the extrapolation will lie on it.
-                |     Sub-element(s) supported (see Boundary object): see Face.
+                Property Support() As Reference
+                    Returns or sets the support surface.
+                    This applies in case of tangent extrapolation of a wire. If a support
+                    surface is given, the extrapolation will lie on it.
+                    Sub-element(s) supported (see Boundary object): see Face.
 
         :return: Reference
         """
@@ -358,15 +358,15 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetBoundary(long iPos) As Reference
-                |     Returns or sets the iPos-th boundary of an extrapolated curve or surface
-                |     from which extrapolation begins. If iPos equals 0 or the number of
-                |     extrapolations, SetBoundary appends iBoundary to the list of
-                |     boundaries.
-                |     The boudary is a point for an extrapolated curve, or a curve for an
-                |     extrapolated surface.
-                |     Sub-element(s) supported (see Boundary object): see Face , TriDimFeatEdge
-                |     or BiDimFeatEdge.
+                Func GetBoundary(long iPos) As Reference
+                    Returns or sets the iPos-th boundary of an extrapolated curve or surface
+                    from which extrapolation begins. If iPos equals 0 or the number of
+                    extrapolations, SetBoundary appends iBoundary to the list of
+                    boundaries.
+                    The boudary is a point for an extrapolated curve, or a curve for an
+                    extrapolated surface.
+                    Sub-element(s) supported (see Boundary object): see Face , TriDimFeatEdge
+                    or BiDimFeatEdge.
 
         :param int i_pos:
         :return: Reference
@@ -378,13 +378,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetContinuityType(long iPos) As long
-                |     Returns or sets the continuity type between extrapolated element and
-                |     extrapolation at the iPos-th boundary. If iPos equals 0 or the number of
-                |     extrapolations, SetContinuityType appends iLim to the list of
-                |     lengths.
-                |     Legal values: the continuity type is either CATGSMTangentContinuity (=0) or
-                |     CATGSMCurvatureContinuity (=1).
+                Func GetContinuityType(long iPos) As long
+                    Returns or sets the continuity type between extrapolated element and
+                    extrapolation at the iPos-th boundary. If iPos equals 0 or the number of
+                    extrapolations, SetContinuityType appends iLim to the list of
+                    lengths.
+                    Legal values: the continuity type is either CATGSMTangentContinuity (=0) or
+                    CATGSMCurvatureContinuity (=1).
 
         :param int i_pos:
         :return: int
@@ -396,12 +396,12 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetElemUntil(long iPos) As Reference
-                |     Returns or sets the surface or volume specifying the limit of the
-                |     extrapolation that begins from the iPos-th boundary. If iPos equals 0 or the
-                |     number of extrapolations, SetElemUntil appends iElemUntil to the list of up-to
-                |     elements.
-                |     This applies when the limit type is CATGSMUpToElementLimit (=1).
+                Func GetElemUntil(long iPos) As Reference
+                    Returns or sets the surface or volume specifying the limit of the
+                    extrapolation that begins from the iPos-th boundary. If iPos equals 0 or the
+                    number of extrapolations, SetElemUntil appends iElemUntil to the list of up-to
+                    elements.
+                    This applies when the limit type is CATGSMUpToElementLimit (=1).
 
         :param int i_pos:
         :return: Reference
@@ -413,16 +413,16 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetInternalEdgesElement(long iPos) As Reference
-                |     Gets an element in the list of internal elements (vertex or
-                |     edges).
-                | 
-                |     Parameters:
-                | 
-                |         oInternalElement
-                |             internal element 
-                |         iPos
-                |             position of internal element to be retrieved.
+                Func GetInternalEdgesElement(long iPos) As Reference
+                    Gets an element in the list of internal elements (vertex or
+                    edges).
+                
+                    Parameters:
+                
+                        oInternalElement
+                            internal element 
+                        iPos
+                            position of internal element to be retrieved.
 
         :param int i_pos:
         :return: Reference
@@ -434,12 +434,12 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLength(long iPos) As Length
-                |     Returns or sets the length specifying the limit of the extrapolation that
-                |     begins from the iPos-th boundary. If iPos equals 0 or the number of
-                |     extrapolations, SetLength appends iLength to the list of
-                |     lengths.
-                |     This applies when the limit type is CATGSMLengthLimit (=0).
+                Func GetLength(long iPos) As Length
+                    Returns or sets the length specifying the limit of the extrapolation that
+                    begins from the iPos-th boundary. If iPos equals 0 or the number of
+                    extrapolations, SetLength appends iLength to the list of
+                    lengths.
+                    This applies when the limit type is CATGSMLengthLimit (=0).
 
         :param int i_pos:
         :return: Length
@@ -451,13 +451,13 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLimitType(long iPos) As long
-                |     Returns or sets the limit type of the extrapolation that begins from the
-                |     iPos-th boundary. If iPos equals 0 or the number of extrapolations,
-                |     SetLimitType appends iLim to the list of limit types.
-                |     The limit can be a length, a surface, or a volume.
-                |     Legal values: the limit type is either CATGSMLengthLimit(0) or
-                |     CATGSMUpToElementLimit(1).
+                Func GetLimitType(long iPos) As long
+                    Returns or sets the limit type of the extrapolation that begins from the
+                    iPos-th boundary. If iPos equals 0 or the number of extrapolations,
+                    SetLimitType appends iLim to the list of limit types.
+                    The limit can be a length, a surface, or a volume.
+                    Legal values: the limit type is either CATGSMLengthLimit(0) or
+                    CATGSMUpToElementLimit(1).
 
         :param int i_pos:
         :return: int
@@ -469,10 +469,10 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNumberOfExtrapolations(long oNumberOfExtrapolations)
-                |     Returns the number of extrapolations set. An extrapolation is specified by
-                |     a boundary of the element to extrapolate, a limit type, a limit and a
-                |     continuity type.
+                Sub GetNumberOfExtrapolations(long oNumberOfExtrapolations)
+                    Returns the number of extrapolations set. An extrapolation is specified by
+                    a boundary of the element to extrapolate, a limit type, a limit and a
+                    continuity type.
 
         :param int o_number_of_extrapolations:
         :return: None
@@ -484,16 +484,16 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func IsAssemble() As boolean
-                |     Retrieves whether extrapolation is assembled with extrapolated curve or
-                |     surface.
-                | 
-                |     Parameters:
-                | 
-                |         oAssemble
-                |             The assemble option
-                |             True when the extrapolation is assembled with extrapolated curve or
-                |             surface, and False otherwise
+                Func IsAssemble() As boolean
+                    Retrieves whether extrapolation is assembled with extrapolated curve or
+                    surface.
+                
+                    Parameters:
+                
+                        oAssemble
+                            The assemble option
+                            True when the extrapolation is assembled with extrapolated curve or
+                            surface, and False otherwise
 
         :return: bool
         """
@@ -504,8 +504,8 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllExtrapolationsExceptTheFirstOne()
-                |     Removes all extrapolations that may have been set, except the first one.
+                Sub RemoveAllExtrapolationsExceptTheFirstOne()
+                    Removes all extrapolations that may have been set, except the first one.
 
         :return: None
         """
@@ -516,8 +516,8 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllInternalEdgesElement()
-                |     Removes all internal elements.
+                Sub RemoveAllInternalEdgesElement()
+                    Removes all internal elements.
 
         :return: None
         """
@@ -528,8 +528,8 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveExtrapolation(long iPos)
-                |     Removes the iPos-th extrapolation that has been set.
+                Sub RemoveExtrapolation(long iPos)
+                    Removes the iPos-th extrapolation that has been set.
 
         :param int i_pos:
         :return: None
@@ -541,16 +541,16 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAssemble(boolean iAssemble)
-                |     Sets whether extrapolation is to be assembled with extrapolated curve or
-                |     surface.
-                | 
-                |     Parameters:
-                | 
-                |         iAssemble
-                |             The assemble option
-                |             True when the extrapolation is to be assembled with extrapolated
-                |             curve or surface, and False otherwise.
+                Sub SetAssemble(boolean iAssemble)
+                    Sets whether extrapolation is to be assembled with extrapolated curve or
+                    surface.
+                
+                    Parameters:
+                
+                        iAssemble
+                            The assemble option
+                            True when the extrapolation is to be assembled with extrapolated
+                            curve or surface, and False otherwise.
 
         :param bool i_assemble:
         :return: None
@@ -562,7 +562,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetBoundary(long iPos,Reference iBoundary)
+                Sub SetBoundary(long iPos,Reference iBoundary)
 
         :param int i_pos:
         :param Reference i_boundary:
@@ -575,7 +575,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetContinuityType(long iPos,long iLim)
+                Sub SetContinuityType(long iPos,long iLim)
 
         :param int i_pos:
         :param int i_lim:
@@ -588,7 +588,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetElemUntil(long iPos,Reference iElemUntil)
+                Sub SetElemUntil(long iPos,Reference iElemUntil)
 
         :param int i_pos:
         :param Reference i_elem_until:
@@ -601,8 +601,8 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLength(long iPos,Length iLength)
-                |     Do not use this method.
+                Sub SetLength(long iPos,Length iLength)
+                    Do not use this method.
 
         :param int i_pos:
         :param Length i_length:
@@ -615,7 +615,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLengthD(long iPos,double iLength)
+                Sub SetLengthD(long iPos,double iLength)
 
         :param int i_pos:
         :param float i_length:
@@ -628,7 +628,7 @@ class HybridShapeExtrapol(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLimitType(long iPos,long iLim)
+                Sub SetLimitType(long iPos,long iLim)
 
         :param int i_pos:
         :param int i_lim:

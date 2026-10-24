@@ -20,13 +20,13 @@ class SimPointFastenerPlacement(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimPointFastenerPlacement
-                | 
-                | Represents the Point Fastener Placement object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimPointFastenerPlacement
+                
+                Represents the Point Fastener Placement object.
     
     """
 
@@ -40,7 +40,7 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Application() As Application (Read Only)
+                Property Application() As Application (Read Only)
 
         :return: Application
         """
@@ -53,8 +53,8 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for point coordinates.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for point coordinates.
 
         :return: SimAxisSystem
         """
@@ -67,8 +67,8 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Clearance() As double
-                |     Returns or sets the clearance. Quantity: LENGTH, units: m.
+                Property Clearance() As double
+                    Returns or sets the clearance. Quantity: LENGTH, units: m.
 
         :return: float
         """
@@ -89,9 +89,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DistributionOptionOnLines() As
-                | SimPointFastenerPlacementDistributionOptionOnLine
-                |     Returns or sets the distribution option.
+                Property DistributionOptionOnLines() As
+                SimPointFastenerPlacementDistributionOptionOnLine
+                    Returns or sets the distribution option.
 
         :return: int
         """
@@ -112,9 +112,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FastenerPlacementMethod() As
-                | SimPointFastenerPlacementFastenerPlacementMethod
-                |     Returns or sets the fastener placement method.
+                Property FastenerPlacementMethod() As
+                SimPointFastenerPlacementFastenerPlacementMethod
+                    Returns or sets the fastener placement method.
 
         :return: int
         """
@@ -135,7 +135,7 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Name() As CATBSTR
+                Property Name() As CATBSTR
 
         :return: str
         """
@@ -156,8 +156,8 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfFastenersAlongLines() As long
-                |     Returns or sets the number of fasteners.
+                Property NumberOfFastenersAlongLines() As long
+                    Returns or sets the number of fasteners.
 
         :return: int
         """
@@ -178,8 +178,8 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfPointCoordinates() As long
-                |     Returns or sets the number of points through coordinates.
+                Property NumberOfPointCoordinates() As long
+                    Returns or sets the number of points through coordinates.
 
         :return: int
         """
@@ -200,7 +200,7 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parent() As CATBaseDispatch (Read Only)
+                Property Parent() As CATBaseDispatch (Read Only)
 
         :return: AnyObject
         """
@@ -213,9 +213,9 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointSpacingAlongLines() As double
-                |     Returns or sets the spacing between points on line. Quantity: LENGTH,
-                |     units: m.
+                Property PointSpacingAlongLines() As double
+                    Returns or sets the spacing between points on line. Quantity: LENGTH,
+                    units: m.
 
         :return: float
         """
@@ -236,8 +236,8 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointsCoordinates() As CATSafeArrayVariant
-                |     Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
+                Property PointsCoordinates() As CATSafeArrayVariant
+                    Returns or sets a list of points coordinate (x1, y1, z1, x2, y2, z2, ...).
 
         :return: tuple
         """
@@ -257,7 +257,7 @@ class SimPointFastenerPlacement(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetItem(CATBSTR IDName) As CATBaseDispatch
+                Func GetItem(CATBSTR IDName) As CATBaseDispatch
 
         :param str id_name:
         :return: AnyObject

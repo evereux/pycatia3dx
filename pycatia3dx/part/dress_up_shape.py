@@ -17,21 +17,21 @@ class DressUpShape(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         DressUpShape
-                | 
-                | Represents the shapes built with other shape sub-elements such as faces or
-                | edges.
-                | It is the base object for chamfers, drafts, fillets, scalings, shells, and
-                | thickness objects.
-                | 
-                | See also:
-                |     Chamfer, Draft, Fillet, Scaling, Shell, Thickness
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        DressUpShape
+                
+                Represents the shapes built with other shape sub-elements such as faces or
+                edges.
+                It is the base object for chamfers, drafts, fillets, scalings, shells, and
+                thickness objects.
+                
+                See also:
+                    Chamfer, Draft, Fillet, Scaling, Shell, Thickness
 
     """
 

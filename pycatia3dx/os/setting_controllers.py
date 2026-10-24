@@ -23,15 +23,15 @@ class SettingControllers(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SettingControllers
-                | 
-                | A collection of all the setting controllers objects currently managed by the
-                | application.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SettingControllers
+                
+                A collection of all the setting controllers objects currently managed by the
+                application.
     
     """
 
@@ -44,18 +44,18 @@ class SettingControllers(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func Item(CATBSTR iIndex) As SettingController
-                |     Returns a setting controller using its name from the setting controllers
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The name of the window to retrieve from the collection of setting
-                |             controller. As a string. 
-                | 
-                |     Returns:
-                |         The retrieved setting controller.
+                Func Item(CATBSTR iIndex) As SettingController
+                    Returns a setting controller using its name from the setting controllers
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The name of the window to retrieve from the collection of setting
+                            controller. As a string. 
+                
+                    Returns:
+                        The retrieved setting controller.
 
         Class Name           i_index
         DLNameSettingAtt     CATSysDLNameSettingCtrl

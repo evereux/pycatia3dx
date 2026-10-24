@@ -17,14 +17,14 @@ class ToleranceZone(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ToleranceZone
-                | 
-                | Interface for accessing tolerance zone informations of a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ToleranceZone
+                
+                Interface for accessing tolerance zone informations of a TPS.
     
     """
 
@@ -38,8 +38,8 @@ class ToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Form() As CATBSTR
-                |     Retrieves tolerance zone form.
+                Property Form() As CATBSTR
+                    Retrieves tolerance zone form.
 
         :return: str
         """
@@ -60,10 +60,10 @@ class ToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ValidatedToleranceValue() As boolean
-                |     Returns or sets whether the value for the dimension limit is
-                |     validated.
-                |     TRUE if it is validated.
+                Property ValidatedToleranceValue() As boolean
+                    Returns or sets whether the value for the dimension limit is
+                    validated.
+                    TRUE if it is validated.
 
         :return: bool
         """
@@ -84,8 +84,8 @@ class ToleranceZone(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As double
-                |     Retrieves tolerance zone value (in millimeters). 
+                Property Value() As double
+                    Retrieves tolerance zone value (in millimeters). 
 
         :return: float
         """

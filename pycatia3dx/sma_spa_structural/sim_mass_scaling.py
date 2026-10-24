@@ -17,51 +17,51 @@ class SimMassScaling(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMassScaling
-                | 
-                | Represents the Mass Scaling object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimMassScaling as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyMassScaling As SimMassScaling
-                |      Set MyMassScaling = MyFeatures.Add("SimMassScaling")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimMassScaling named "Mass
-                |     Scaling.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyMassScaling As SimMassScaling
-                |      Set MyMassScaling = MyFeatures.Item("Mass Scaling.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimMassScaling as
-                |     following:
-                | 
-                |      ...
-                |      myMassScaling = myFeatures.Add("SimMassScaling")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimMassScaling
-                |     named "Mass Scaling.1" as following:
-                | 
-                |      ...
-                |      myMassScaling = myFeatures.Item("Mass Scaling.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMassScaling
+                
+                Represents the Mass Scaling object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimMassScaling as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyMassScaling As SimMassScaling
+                     Set MyMassScaling = MyFeatures.Add("SimMassScaling")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimMassScaling named "Mass
+                    Scaling.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyMassScaling As SimMassScaling
+                     Set MyMassScaling = MyFeatures.Item("Mass Scaling.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimMassScaling as
+                    following:
+                
+                     ...
+                     myMassScaling = myFeatures.Add("SimMassScaling")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimMassScaling
+                    named "Mass Scaling.1" as following:
+                
+                     ...
+                     myMassScaling = myFeatures.Item("Mass Scaling.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,8 +75,8 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -97,9 +97,9 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Factor() As double
-                |     Returns or sets the scaling factor value. Quantity: DIMENSIONLESS, units:
-                |     None
+                Property Factor() As double
+                    Returns or sets the scaling factor value. Quantity: DIMENSIONLESS, units:
+                    None
 
         :return: float
         """
@@ -120,11 +120,11 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FactorFlag() As boolean
-                |     Returns or sets the flag that determines if the scaling factor is
-                |     specified.
-                |     TRUE: the scaling factor is specified.
-                |     FALSE: the scaling factor is not specified.
+                Property FactorFlag() As boolean
+                    Returns or sets the flag that determines if the scaling factor is
+                    specified.
+                    TRUE: the scaling factor is specified.
+                    FALSE: the scaling factor is not specified.
 
         :return: bool
         """
@@ -145,8 +145,8 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -159,8 +159,8 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Frequency() As long
-                |     Returns or sets the frequency value. Quantity: Integer, units: None
+                Property Frequency() As long
+                    Returns or sets the frequency value. Quantity: Integer, units: None
 
         :return: int
         """
@@ -181,11 +181,11 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the Mass Scaling Timing Mode is
-                |     Frequency.
-                |     TRUE: the Mass Scaling Timing Mode is Frequency.
-                |     FALSE: the Mass Scaling Timing Mode is Number interval.
+                Property FrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the Mass Scaling Timing Mode is
+                    Frequency.
+                    TRUE: the Mass Scaling Timing Mode is Frequency.
+                    FALSE: the Mass Scaling Timing Mode is Number interval.
 
         :return: bool
         """
@@ -206,9 +206,9 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MassScalingBehavior() As
-                | SimMassScalingMassScalingBehavior
-                |     Returns or sets the mass scaling action.
+                Property MassScalingBehavior() As
+                SimMassScalingMassScalingBehavior
+                    Returns or sets the mass scaling action.
 
         :return: SimMassScalingMassScalingBehavior
         """
@@ -229,9 +229,9 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MassScalingMethod() As
-                | SimMassScalingMassScalingMethod
-                |     Returns or sets the mass scaling type value.
+                Property MassScalingMethod() As
+                SimMassScalingMassScalingMethod
+                    Returns or sets the mass scaling type value.
 
         :return: SimMassScalingMassScalingMethod
         """
@@ -252,9 +252,9 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberInterval() As long
-                |     Returns or sets the the number interval value. Quantity: Integer, units:
-                |     None
+                Property NumberInterval() As long
+                    Returns or sets the the number interval value. Quantity: Integer, units:
+                    None
 
         :return: int
         """
@@ -275,9 +275,9 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -290,8 +290,8 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetTimeIncrement() As double
-                |     Returns or sets the target time increment value. Quantity: TIME, units: s
+                Property TargetTimeIncrement() As double
+                    Returns or sets the target time increment value. Quantity: TIME, units: s
 
         :return: float
         """
@@ -312,11 +312,11 @@ class SimMassScaling(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetTimeIncrementFlag() As boolean
-                |     Returns or sets the flag that determines if the target time increment is
-                |     specified.
-                |     TRUE: the target time increment is specified.
-                |     FALSE: the target time increment is not specified. 
+                Property TargetTimeIncrementFlag() As boolean
+                    Returns or sets the flag that determines if the target time increment is
+                    specified.
+                    TRUE: the target time increment is specified.
+                    FALSE: the target time increment is not specified. 
 
         :return: bool
         """

@@ -17,24 +17,24 @@ class PLMSearchService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMSearchService
-                | 
-                | 
-                | Deprecated:
-                |     R216 Use SearchService instead. Interface representing the service to get a
-                |     new PLMSearch object.
-                | 
-                |     Example of how to retrieve such an object using
-                |     Application.GetSessionService:
-                | 
-                |      Dim aSearchSrv as PLMSearchService
-                |      Set aSearchSrv = CATIA.GetSessionService("PLMSearch")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMSearchService
+                
+                
+                Deprecated:
+                    R216 Use SearchService instead. Interface representing the service to get a
+                    new PLMSearch object.
+                
+                    Example of how to retrieve such an object using
+                    Application.GetSessionService:
+                
+                     Dim aSearchSrv as PLMSearchService
+                     Set aSearchSrv = CATIA.GetSessionService("PLMSearch")
     
     """
 
@@ -48,9 +48,9 @@ class PLMSearchService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Searches() As PLMSearches (Read Only)
-                |     Returns the collection of the PLM Searches currently managed by the
-                |     PLMSearch service.
+                Property Searches() As PLMSearches (Read Only)
+                    Returns the collection of the PLM Searches currently managed by the
+                    PLMSearch service.
 
         :return: PLMSearches
         """

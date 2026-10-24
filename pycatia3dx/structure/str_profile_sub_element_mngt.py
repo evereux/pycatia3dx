@@ -18,16 +18,16 @@ class StrProfileSubElementMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrProfileSubElementMngt
-                | 
-                | Interface representing the Structure Detail Design Profile Sub
-                | Elements.
-                | Role: This interface manages the SDD Profile Sub Elements.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrProfileSubElementMngt
+                
+                Interface representing the Structure Detail Design Profile Sub
+                Elements.
+                Role: This interface manages the SDD Profile Sub Elements.
     
     """
 
@@ -40,19 +40,19 @@ class StrProfileSubElementMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetEdges(CATBSTR iName_1,CATBSTR iName_2) As References
-                |     Returns the CATIAReference objects.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in oListOfEdges from
-                |              StrProfileSubElementMngt object.
-                |              
-                | 
-                |              Dim oListOfEdges As References
-                |              Set oListOfEdges = oObjSddProfileSubElementMngt.GetEdges("Start", "WebInner-")
+                Func GetEdges(CATBSTR iName_1,CATBSTR iName_2) As References
+                    Returns the CATIAReference objects.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in oListOfEdges from
+                             StrProfileSubElementMngt object.
+                             
+                
+                             Dim oListOfEdges As References
+                             Set oListOfEdges = oObjSddProfileSubElementMngt.GetEdges("Start", "WebInner-")
 
         :param str i_name_1:
         :param str i_name_2:
@@ -65,19 +65,19 @@ class StrProfileSubElementMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFaces(CATBSTR iName) As References
-                |     Returns the CATIAReference objects.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in oListOfFaces from
-                |              StrProfileSubElementMngt object.
-                |              
-                | 
-                |              Dim oListOfFaces As References
-                |              Set oListOfFaces = oObjSddProfileSubElementMngt.GetFaces("WebInner+")
+                Func GetFaces(CATBSTR iName) As References
+                    Returns the CATIAReference objects.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in oListOfFaces from
+                             StrProfileSubElementMngt object.
+                             
+                
+                             Dim oListOfFaces As References
+                             Set oListOfFaces = oObjSddProfileSubElementMngt.GetFaces("WebInner+")
 
         :param str i_name:
         :return: References

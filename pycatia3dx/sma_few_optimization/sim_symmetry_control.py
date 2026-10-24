@@ -17,53 +17,53 @@ class SimSymmetryControl(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSymmetryControl
-                | 
-                | Represents the symmetry control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimSymmetryControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MySymmetryControl As SimSymmetryControl
-                |      Set MySymmetryControl = MyFeatures.Add("SimSymmetryControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimSymmetryControl named " Symmetry Control.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MySymmetryControl As SimSymmetryControl
-                |      Set MySymmetryControl = MyFeatures.Item("Symmetry Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimSymmetryControl as following:
-                | 
-                |      ...
-                |      MySymmetryControl = MyFeatures.Add("SimSymmetryControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimSymmetryControl named "Symmetry Control.1" as
-                |     following:
-                | 
-                |      ...
-                |      MySymmetryControl = MyFeatures.Item("Symmetry Control.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSymmetryControl
+                
+                Represents the symmetry control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimSymmetryControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MySymmetryControl As SimSymmetryControl
+                     Set MySymmetryControl = MyFeatures.Add("SimSymmetryControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimSymmetryControl named " Symmetry Control.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MySymmetryControl As SimSymmetryControl
+                     Set MySymmetryControl = MyFeatures.Item("Symmetry Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimSymmetryControl as following:
+                
+                     ...
+                     MySymmetryControl = MyFeatures.Add("SimSymmetryControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimSymmetryControl named "Symmetry Control.1" as
+                    following:
+                
+                     ...
+                     MySymmetryControl = MyFeatures.Item("Symmetry Control.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -77,8 +77,8 @@ class SimSymmetryControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Plane() As CATBaseDispatch (Read Only)
-                |     Returns the plane associated to the Symmetry Control.
+                Property Plane() As CATBaseDispatch (Read Only)
+                    Returns the plane associated to the Symmetry Control.
 
         :return: AnyObject
         """

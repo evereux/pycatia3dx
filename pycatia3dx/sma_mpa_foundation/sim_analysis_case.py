@@ -21,38 +21,38 @@ class SimAnalysisCase(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAnalysisCase
-                | 
-                | Represents the Analysis Case object.
-                | Base class for structural and thermal analysis case objects.
-                | 
-                | Example:
-                |     Given a SimAnalysisCases collection you can retrieve a SimAnalysisCase
-                |     object named as "Structural Analysis Case.1" through the following
-                |     code:
-                | 
-                |      Dim MyAnalysisCases As SimAnalysisCases
-                |      ...
-                |      Dim MyAnalysisCase As CATBaseDispatch
-                |      Set MyAnalysisCase = MyAnalysisCases.Item("Structural Analysis Case.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAnalysisCases collection you can retrieve a SimAnalysisCase
-                |     object named as "Structural Analysis Case.1" through the following
-                |     code:
-                | 
-                |      ...
-                |      myAnalysisCase = myAnalysisCases.Item("Structural Analysis Case.1")
-                |      
-                | 
-                | See also:
-                |     SimAnalysisCases
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAnalysisCase
+                
+                Represents the Analysis Case object.
+                Base class for structural and thermal analysis case objects.
+                
+                Example:
+                    Given a SimAnalysisCases collection you can retrieve a SimAnalysisCase
+                    object named as "Structural Analysis Case.1" through the following
+                    code:
+                
+                     Dim MyAnalysisCases As SimAnalysisCases
+                     ...
+                     Dim MyAnalysisCase As CATBaseDispatch
+                     Set MyAnalysisCase = MyAnalysisCases.Item("Structural Analysis Case.1")
+                     
+                
+                Example in Python:
+                    Given a SimAnalysisCases collection you can retrieve a SimAnalysisCase
+                    object named as "Structural Analysis Case.1" through the following
+                    code:
+                
+                     ...
+                     myAnalysisCase = myAnalysisCases.Item("Structural Analysis Case.1")
+                     
+                
+                See also:
+                    SimAnalysisCases
     
     """
 
@@ -66,9 +66,9 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FEMRep() As CATBaseDispatch
-                |     Retrieves the FEM representation associated to the analysis case. Retrieved
-                |     value will be empty in case no FEMRep is associated with the analysis case.
+                Property FEMRep() As CATBaseDispatch
+                    Retrieves the FEM representation associated to the analysis case. Retrieved
+                    value will be empty in case no FEMRep is associated with the analysis case.
 
         :return: AnyObject
         """
@@ -89,8 +89,8 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Features() As SimFeatures (Read Only)
-                |     Retrieves the collection of available features.
+                Property Features() As SimFeatures (Read Only)
+                    Retrieves the collection of available features.
 
         :return: SimFeatures
         """
@@ -103,9 +103,9 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalElementTypeAssignment() As SimGlobalElementTypeAssignment (Read
-                | Only)
-                |     Retrieves the Global Element Type Assignment.
+                Property GlobalElementTypeAssignment() As SimGlobalElementTypeAssignment (Read
+                Only)
+                    Retrieves the Global Element Type Assignment.
 
         :return: SimGlobalElementTypeAssignment
         """
@@ -118,9 +118,9 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LocalElementTypeAssignments() As SimLocalElementTypeAssignments (Read
-                | Only)
-                |     Retrieves the Local Element Type Assignments collection.
+                Property LocalElementTypeAssignments() As SimLocalElementTypeAssignments (Read
+                Only)
+                    Retrieves the Local Element Type Assignments collection.
 
         :return: SimLocalElementTypeAssignments
         """
@@ -133,9 +133,9 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResultsAnalysisCase() As CATBaseDispatch (Read Only)
-                |     Retrieves the corresponding analysis case result. Retireved value will be
-                |     empty in case on results analysis case is associated with the analysis case.
+                Property ResultsAnalysisCase() As CATBaseDispatch (Read Only)
+                    Retrieves the corresponding analysis case result. Retireved value will be
+                    empty in case on results analysis case is associated with the analysis case.
 
         :return: AnyObject
         """
@@ -148,8 +148,8 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Steps() As SimSteps (Read Only)
-                |     Retrieves the collection of steps.
+                Property Steps() As SimSteps (Read Only)
+                    Retrieves the collection of steps.
 
         :return: SimSteps
         """
@@ -162,11 +162,11 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UpdateFlag() As boolean (Read Only)
-                |     Returns the flag that specificies if the analysis case is
-                |     up-to-date.
-                |     TRUE : the analysis case is up-to-date.
-                |     FALSE : the analysis case is out of date and needs to be updated.
+                Property UpdateFlag() As boolean (Read Only)
+                    Returns the flag that specificies if the analysis case is
+                    up-to-date.
+                    TRUE : the analysis case is up-to-date.
+                    FALSE : the analysis case is out of date and needs to be updated.
 
         :return: bool
         """
@@ -178,9 +178,9 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateDefaultElementTypeAssignment()
-                |     Creates default element type assignment for the analysis case. The analysis
-                |     case must have a step underneath it for this method to be successful.
+                Sub CreateDefaultElementTypeAssignment()
+                    Creates default element type assignment for the analysis case. The analysis
+                    case must have a step underneath it for this method to be successful.
 
         :return: None
         """
@@ -191,8 +191,8 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteSolverRestartResult()
-                |     Deletes the restart data of the analysis case.
+                Sub DeleteSolverRestartResult()
+                    Deletes the restart data of the analysis case.
 
         :return: None
         """
@@ -203,10 +203,10 @@ class SimAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Performs an update on the analysis case. The analysis case will visit all
-                |     contained features and perform update on each. A failure of any feature to
-                |     update properly will stop the update cycle and return. 
+                Sub Update()
+                    Performs an update on the analysis case. The analysis case will visit all
+                    contained features and perform update on each. A failure of any feature to
+                    update properly will stop the update cycle and return. 
 
         :return: None
         """

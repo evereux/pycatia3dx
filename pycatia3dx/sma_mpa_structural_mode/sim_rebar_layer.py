@@ -17,51 +17,51 @@ class SimRebarLayer(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRebarLayer
-                | 
-                | Represents the Rebar Layer object.
-                | 
-                | Example:
-                |     Given a SimShellSection object, you can create a SimRebarLayer as
-                |     following:
-                | 
-                |      Dim MyShellSection As SimShellSection
-                |      ...
-                |      Dim MyRebarLayer As SimRebarLayer
-                |      Set MyRebarLayer = MyShellSection.Add("SimRebarLayer")
-                |      
-                | 
-                |     Given a SimShellSection object, you can retrieve a SimRebarLayer named
-                |     "Rebar Layer.1" as following:
-                | 
-                |      Dim MyShellSection As SimShellSection
-                |      ...
-                |      Dim MyRebarLayer As SimRebarLayer
-                |      Set MyRebarLayer = MyShellSection.Item("Rebar Layer.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimShellSection object myShellSection, you can create a
-                |     SimRebarLayer as following:
-                | 
-                |      ...
-                |      myRebarLayer = myShellSection.Add("SimRebarLayer")
-                |      
-                | 
-                |     Given a SimShellSection object myShellSection, you can retrieve a
-                |     SimRebarLayer named "Rebar Layer.1" as following:
-                | 
-                |      ...
-                |      myRebarLayer = myShellSection.Item("Rebar Layer.1")
-                |      
-                | 
-                | See also:
-                |     CATIAFmtShellSection
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRebarLayer
+                
+                Represents the Rebar Layer object.
+                
+                Example:
+                    Given a SimShellSection object, you can create a SimRebarLayer as
+                    following:
+                
+                     Dim MyShellSection As SimShellSection
+                     ...
+                     Dim MyRebarLayer As SimRebarLayer
+                     Set MyRebarLayer = MyShellSection.Add("SimRebarLayer")
+                     
+                
+                    Given a SimShellSection object, you can retrieve a SimRebarLayer named
+                    "Rebar Layer.1" as following:
+                
+                     Dim MyShellSection As SimShellSection
+                     ...
+                     Dim MyRebarLayer As SimRebarLayer
+                     Set MyRebarLayer = MyShellSection.Item("Rebar Layer.1")
+                     
+                
+                Example in Python:
+                    Given a SimShellSection object myShellSection, you can create a
+                    SimRebarLayer as following:
+                
+                     ...
+                     myRebarLayer = myShellSection.Add("SimRebarLayer")
+                     
+                
+                    Given a SimShellSection object myShellSection, you can retrieve a
+                    SimRebarLayer named "Rebar Layer.1" as following:
+                
+                     ...
+                     myRebarLayer = myShellSection.Item("Rebar Layer.1")
+                     
+                
+                See also:
+                    CATIAFmtShellSection
     
     """
 
@@ -75,8 +75,8 @@ class SimRebarLayer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the simulation material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the simulation material behavior.
 
         :return: AnyObject
         """
@@ -97,8 +97,8 @@ class SimRebarLayer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -119,8 +119,8 @@ class SimRebarLayer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarGeometryType() As SimRebarGeometryType
-                |     Returns or Sets the Geometry Type used for the Rebar.
+                Property RebarGeometryType() As SimRebarGeometryType
+                    Returns or Sets the Geometry Type used for the Rebar.
 
         :return: int
         """
@@ -140,9 +140,9 @@ class SimRebarLayer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRebarAttribute(double oRebarAttributeValue) As
-                | SimRebarAttributeType
-                |     Returns or Sets the Attribute Type used for the Rebar.
+                Func GetRebarAttribute(double oRebarAttributeValue) As
+                SimRebarAttributeType
+                    Returns or Sets the Attribute Type used for the Rebar.
 
         :param float o_rebar_attribute_value:
         :return: int
@@ -154,8 +154,8 @@ class SimRebarLayer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRebarAttribute(double iRebarAttributeValue,SimRebarAttributeType
-                | oRebarAttribute)
+                Sub SetRebarAttribute(double iRebarAttributeValue,SimRebarAttributeType
+                oRebarAttribute)
 
         :param float i_rebar_attribute_value:
         :param int o_rebar_attribute:

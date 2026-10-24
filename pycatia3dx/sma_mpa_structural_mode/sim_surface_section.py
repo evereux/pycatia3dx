@@ -19,14 +19,14 @@ class SimSurfaceSection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSurfaceSection
-                | 
-                | Represents the Surface Section object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSurfaceSection
+                
+                Represents the Surface Section object.
     
     """
 
@@ -40,8 +40,8 @@ class SimSurfaceSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: tuple
         """
@@ -54,8 +54,8 @@ class SimSurfaceSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Density() As double
-                |     Mass density per unit area value. Quantity: SURFACICMASS, units: m_2
+                Property Density() As double
+                    Mass density per unit area value. Quantity: SURFACICMASS, units: m_2
 
         :return: float
         """
@@ -76,9 +76,9 @@ class SimSurfaceSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarLayersOrientation() As SimOrientation (Read
-                | Only)
-                |     Returns the Orientation of the Rebar Layers associated with the section.
+                Property RebarLayersOrientation() As SimOrientation (Read
+                Only)
+                    Returns the Orientation of the Rebar Layers associated with the section.
 
         :return: SimOrientation
         """
@@ -91,8 +91,8 @@ class SimSurfaceSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rebars() As SimRebarLayers (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property Rebars() As SimRebarLayers (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: SimRebarLayers
         """
@@ -104,8 +104,8 @@ class SimSurfaceSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
-                |     Adds a Rebar Layer to the section. 
+                Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
+                    Adds a Rebar Layer to the section. 
 
         :param str i_type:
         :param AnyObject o_feature:

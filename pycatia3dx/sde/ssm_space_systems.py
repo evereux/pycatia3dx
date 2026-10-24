@@ -20,14 +20,14 @@ class SsmSpaceSystems(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SsmSpaceSystems
-                | 
-                | Role: This interface is collection of Space system
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SsmSpaceSystems
+                
+                Role: This interface is collection of Space system
     
     """
 
@@ -40,13 +40,13 @@ class SsmSpaceSystems(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SsmSpaceSystem
-                |     Retrieves a Space Space system
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Space Space system
+                Func Item(CATVariant iIndex) As SsmSpaceSystem
+                    Retrieves a Space Space system
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Space Space system
 
         :param CATVariant i_index:
         :return: SsmSpaceSystem

@@ -16,17 +16,17 @@ class Add(BooleanShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.BooleanShape
-                |                             Add
-                | 
-                | Represents the add, or union boolean operation.
-                | It is performed between a body and the current shape.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.BooleanShape
+                                            Add
+                
+                Represents the add, or union boolean operation.
+                It is performed between a body and the current shape.
 
     """
 

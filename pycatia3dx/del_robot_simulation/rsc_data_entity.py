@@ -17,17 +17,17 @@ class RscDataEntity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscDataEntity
-                | 
-                | Interface representing a Data Entity.
-                | 
-                | Role: This interface represents a RscDataEntity in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscDataEntity
+                
+                Interface representing a Data Entity.
+                
+                Role: This interface represents a RscDataEntity in a Resource
+                Task
     
     """
 
@@ -41,42 +41,42 @@ class RscDataEntity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As DELRscDataEntityType
-                |     Get/Set the type of the data entity.
-                | 
-                |     Returns:
-                |         oDataType The data entity type. 
-                |     Parameters:
-                | 
-                |         iDataType
-                |             The data entity type. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iAssignedEntity As RscDataEntity
-                |            Dim iAssignedValue
-                |            ......
-                |            Dim oCreatedAssignment As RscAssignment
-                |            Call ResourceSequence.CreateRscAssignment(iIndex,iAssignedEntity,iAssignedValue,oCreatedAssignment)
-                |            Dim AssignedDataEntity As RscDataEntity
-                |            AssignedDataEntity = oCreatedAssignment.AssignedDataEntity
-                |            Dim oDataType As DELRscDataEntityType
-                |            oDataType=AssignedDataEntity.Type
-                |            ......
-                |            oDataType=DELRscDataEntityType_String
-                |            AssignedDataEntity.Type = oDataType
-                |            
-                |     See also:
-                |         DELRscDataEntityType
+                Property Type() As DELRscDataEntityType
+                    Get/Set the type of the data entity.
+                
+                    Returns:
+                        oDataType The data entity type. 
+                    Parameters:
+                
+                        iDataType
+                            The data entity type. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iAssignedEntity As RscDataEntity
+                           Dim iAssignedValue
+                           ......
+                           Dim oCreatedAssignment As RscAssignment
+                           Call ResourceSequence.CreateRscAssignment(iIndex,iAssignedEntity,iAssignedValue,oCreatedAssignment)
+                           Dim AssignedDataEntity As RscDataEntity
+                           AssignedDataEntity = oCreatedAssignment.AssignedDataEntity
+                           Dim oDataType As DELRscDataEntityType
+                           oDataType=AssignedDataEntity.Type
+                           ......
+                           oDataType=DELRscDataEntityType_String
+                           AssignedDataEntity.Type = oDataType
+                           
+                    See also:
+                        DELRscDataEntityType
 
         :return: DELRscDataEntityType
         """

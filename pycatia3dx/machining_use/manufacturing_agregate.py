@@ -17,19 +17,19 @@ class ManufacturingAgregate(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingAgregate
-                | 
-                | Interface to manage manufacturing aggregate.
-                | 
-                | The aggregate contains many elements that can be sorted according to their
-                | types.
-                | The type of the elements is the name of an interface that all these elements
-                | implement.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingAgregate
+                
+                Interface to manage manufacturing aggregate.
+                
+                The aggregate contains many elements that can be sorted according to their
+                types.
+                The type of the elements is the name of an interface that all these elements
+                implement.
     
     """
 
@@ -42,17 +42,17 @@ class ManufacturingAgregate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetElement(long iPosition) As AnyObject
-                |     Returns the element of a given type and for a given position in the
-                |     aggregate.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position of the element in the agregate 
-                | 
-                |     Returns:
-                |         The element of the given type and the given position in the aggregate
+                Func GetElement(long iPosition) As AnyObject
+                    Returns the element of a given type and for a given position in the
+                    aggregate.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position of the element in the agregate 
+                
+                    Returns:
+                        The element of the given type and the given position in the aggregate
 
         :param int i_position:
         :return: AnyObject
@@ -64,12 +64,12 @@ class ManufacturingAgregate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfElements() As long
-                |     Returns the count of elements of a given type in the
-                |     aggregate.
-                | 
-                |     Returns:
-                |         The number of elements of the given type
+                Func GetNumberOfElements() As long
+                    Returns the count of elements of a given type in the
+                    aggregate.
+                
+                    Returns:
+                        The number of elements of the given type
 
         :return: int
         """

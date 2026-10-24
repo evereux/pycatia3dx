@@ -19,17 +19,17 @@ class Sweep(SketchBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             Sweep
-                | 
-                | Represents the sweep shape.
-                | It is the base object for ribs and slots.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            Sweep
+                
+                Represents the sweep shape.
+                It is the base object for ribs and slots.
     
     """
 
@@ -43,17 +43,17 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorDirReverse() As boolean
-                |     Returns the Sweep AnchorDirReverse flag (for Sweep Move Profile
-                |     only).
-                |     It returns TRUE if Anchor reverse direction is required , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oAnchorDirReverse The oAnchorDirReverse flag as a
-                |         boolean
-                | 
-                |         Example:
+                Property AnchorDirReverse() As boolean
+                    Returns the Sweep AnchorDirReverse flag (for Sweep Move Profile
+                    only).
+                    It returns TRUE if Anchor reverse direction is required , FALSE if
+                    not.
+                
+                    Returns:
+                        oAnchorDirReverse The oAnchorDirReverse flag as a
+                        boolean
+                
+                        Example:
 
         :return: bool
         """
@@ -74,15 +74,15 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CenterCurve() As Sketch (Read Only)
-                |     Returns the sketch used as the sweep center curve. The sweep is built along
-                |     this sketch.
-                | 
-                |     Example:
-                |         The following example returns in centerCurve the sketch used as center
-                |         curve by the firstSweep sweep object:
-                | 
-                |          Set centerCurve = firstSweep.CenterCurve
+                Property CenterCurve() As Sketch (Read Only)
+                    Returns the sketch used as the sweep center curve. The sweep is built along
+                    this sketch.
+                
+                    Example:
+                        The following example returns in centerCurve the sketch used as center
+                        curve by the firstSweep sweep object:
+                
+                         Set centerCurve = firstSweep.CenterCurve
 
         :return: Sketch
         """
@@ -95,10 +95,10 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CenterCurveElement() As Reference
-                |     Returns or sets the center curve .
-                |     To set the property, you can use the following Boundary object:
-                |     TriDimFeatEdge.
+                Property CenterCurveElement() As Reference
+                    Returns or sets the center curve .
+                    To set the property, you can use the following Boundary object:
+                    TriDimFeatEdge.
 
         :return: Reference
         """
@@ -119,21 +119,21 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsThin() As boolean
-                |     Returns the Sweep thin flag.
-                |     It returns TRUE if the Sweep is a thin Sweep , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsThin The thin flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in thinFlag the thin flag of Sweep
-                |             firstSweep, and then sets it so that it will be now thin
-                |             :
-                | 
-                |              Set thinFlag = firstSweep.IsThin
-                |              firstSweep.IsThin = TRUE
+                Property IsThin() As boolean
+                    Returns the Sweep thin flag.
+                    It returns TRUE if the Sweep is a thin Sweep , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsThin The thin flag as a boolean
+                
+                        Example:
+                            The following example saves in thinFlag the thin flag of Sweep
+                            firstSweep, and then sets it so that it will be now thin
+                            :
+                
+                             Set thinFlag = firstSweep.IsThin
+                             firstSweep.IsThin = TRUE
 
         :return: bool
         """
@@ -154,20 +154,20 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MergeEnd() As boolean
-                |     Returns the Sweep merge end flag (for thin Sweep only).
-                |     It returns TRUE if merge ends is required , FALSE if not.
-                | 
-                |     Returns:
-                |         oIsMergeEnd The merge end flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in MergeEndFlag the merge end flag of
-                |             Sweep firstSweep, and then sets it so that merge end will be required
-                |             :
-                | 
-                |              Set MergeEndFlag = firstSweep.IsMergeEnd
-                |              firstSweep.IsMergeEnd = TRUE
+                Property MergeEnd() As boolean
+                    Returns the Sweep merge end flag (for thin Sweep only).
+                    It returns TRUE if merge ends is required , FALSE if not.
+                
+                    Returns:
+                        oIsMergeEnd The merge end flag as a boolean
+                
+                        Example:
+                            The following example saves in MergeEndFlag the merge end flag of
+                            Sweep firstSweep, and then sets it so that merge end will be required
+                            :
+                
+                             Set MergeEndFlag = firstSweep.IsMergeEnd
+                             firstSweep.IsMergeEnd = TRUE
 
         :return: bool
         """
@@ -188,8 +188,8 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MergeMode() As CatMergeMode
-                |     Returns or sets the end mode .
+                Property MergeMode() As CatMergeMode
+                    Returns or sets the end mode .
 
         :return: CatMergeMode
         """
@@ -210,17 +210,17 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MoveProfileToPath() As boolean
-                |     Returns the Sweep MoveProfileToPath flag (for Sweep Move Profile
-                |     only).
-                |     It returns TRUE if move profile is required , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsMoveProfileToPath The MoveProfileToPath flag as a
-                |         boolean
-                | 
-                |         Example:
+                Property MoveProfileToPath() As boolean
+                    Returns the Sweep MoveProfileToPath flag (for Sweep Move Profile
+                    only).
+                    It returns TRUE if move profile is required , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsMoveProfileToPath The MoveProfileToPath flag as a
+                        boolean
+                
+                        Example:
 
         :return: bool
         """
@@ -241,22 +241,22 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NeutralFiber() As boolean
-                |     Returns the Sweep neutral fiber flag (for thin Sweep
-                |     only).
-                |     It returns TRUE if the Sweep is a neutral fiber Sweep , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsNeutralFiber The neutral fiber flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in NeutralFiberFlag the neutral fiber
-                |             flag of Sweep firstSweep, and then sets it so that it will be now neutral fiber
-                |             :
-                | 
-                |              Set NeutralFiberFlag = firstSweep.IsNeutralFiber
-                |              firstSweep.IsNeutralFiber = TRUE
+                Property NeutralFiber() As boolean
+                    Returns the Sweep neutral fiber flag (for thin Sweep
+                    only).
+                    It returns TRUE if the Sweep is a neutral fiber Sweep , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsNeutralFiber The neutral fiber flag as a boolean
+                
+                        Example:
+                            The following example saves in NeutralFiberFlag the neutral fiber
+                            flag of Sweep firstSweep, and then sets it so that it will be now neutral fiber
+                            :
+                
+                             Set NeutralFiberFlag = firstSweep.IsNeutralFiber
+                             firstSweep.IsNeutralFiber = TRUE
 
         :return: bool
         """
@@ -277,17 +277,17 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NormalAxisDirReverse() As boolean
-                |     Returns the Sweep NormalAxisDirReverse flag (for Sweep Move Profile
-                |     only).
-                |     It returns TRUE if Normal Axis reverse direction is required , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oNormalAxisDirReverse The oNormalAxisDirReverse flag as a
-                |         boolean
-                | 
-                |         Example:
+                Property NormalAxisDirReverse() As boolean
+                    Returns the Sweep NormalAxisDirReverse flag (for Sweep Move Profile
+                    only).
+                    It returns TRUE if Normal Axis reverse direction is required , FALSE if
+                    not.
+                
+                    Returns:
+                        oNormalAxisDirReverse The oNormalAxisDirReverse flag as a
+                        boolean
+                
+                        Example:
 
         :return: bool
         """
@@ -308,11 +308,11 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PullingDirElement() As Reference
-                |     Returns or sets the pulling direction .
-                |     To set the property, you can use one of the following Boundary objects:
-                |     PlanarFace, RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge,
-                |     RectilinearMonoDimFeatEdge.
+                Property PullingDirElement() As Reference
+                    Returns or sets the pulling direction .
+                    To set the property, you can use one of the following Boundary objects:
+                    PlanarFace, RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge,
+                    RectilinearMonoDimFeatEdge.
 
         :return: Reference
         """
@@ -333,9 +333,9 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceSurfaceElement() As Reference
-                |     Returns or sets the reference surface .
-                |     To set the property, you can use the following Boundary object: Face.
+                Property ReferenceSurfaceElement() As Reference
+                    Returns or sets the reference surface .
+                    To set the property, you can use the following Boundary object: Face.
 
         :return: Reference
         """
@@ -355,8 +355,8 @@ class Sweep(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetKeepAngleOption()
-                |     Actives KeepAngleOption. 
+                Sub SetKeepAngleOption()
+                    Actives KeepAngleOption. 
 
         :return: None
         """

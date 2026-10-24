@@ -17,58 +17,58 @@ class SimFrequencyConstraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFrequencyConstraint
-                | 
-                | Represents the frequency constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimFrequencyConstraint as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyFrequencyConstraint As SimFrequencyConstraint
-                |      Set MyFrequencyConstraint = MyFeatures.Add("SimFrequencyConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimFrequencyConstraint named "Frequency Constraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyFrequencyConstraint As SimFrequencyConstraint
-                |      Set MyFrequencyConstraint = MyFeatures.Item("Frequency Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimFrequencyConstraint as following:
-                | 
-                |      ...
-                |      MyFrequencyConstraint = MyFeatures.Add("SimFrequencyConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimFrequencyConstraint named "Frequency Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyFrequencyConstraint = MyFeatures.Item("Frequency Constraint.1")
-                |      
-                | 
-                | Warning:
-                |     You will also have to take care of methods with array parameters. Refer
-                |     "About Microsoft Automation Languages, Debug, and Compatibility" in the
-                |     documentation. 
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFrequencyConstraint
+                
+                Represents the frequency constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimFrequencyConstraint as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyFrequencyConstraint As SimFrequencyConstraint
+                     Set MyFrequencyConstraint = MyFeatures.Add("SimFrequencyConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimFrequencyConstraint named "Frequency Constraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyFrequencyConstraint As SimFrequencyConstraint
+                     Set MyFrequencyConstraint = MyFeatures.Item("Frequency Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimFrequencyConstraint as following:
+                
+                     ...
+                     MyFrequencyConstraint = MyFeatures.Add("SimFrequencyConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimFrequencyConstraint named "Frequency Constraint.1" as
+                    following:
+                
+                     ...
+                     MyFrequencyConstraint = MyFeatures.Item("Frequency Constraint.1")
+                     
+                
+                Warning:
+                    You will also have to take care of methods with array parameters. Refer
+                    "About Microsoft Automation Languages, Debug, and Compatibility" in the
+                    documentation. 
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -82,8 +82,8 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """
@@ -95,13 +95,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaximumFrequency() As CATSafeArrayVariant
-                |     Gets the minimum frequency.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Maximum frequency value Quantity: REAL, units: None
+                Func GetMaximumFrequency() As CATSafeArrayVariant
+                    Gets the minimum frequency.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Maximum frequency value Quantity: REAL, units: None
 
         :return: tuple
         """
@@ -112,13 +112,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMinimumFrequency() As CATSafeArrayVariant
-                |     Gets the minimum frequency.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Minimum frequency value Quantity: REAL, units: None
+                Func GetMinimumFrequency() As CATSafeArrayVariant
+                    Gets the minimum frequency.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Minimum frequency value Quantity: REAL, units: None
 
         :return: tuple
         """
@@ -129,13 +129,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfModes() As long
-                |     Gets the mode number.
-                | 
-                |     Parameters:
-                | 
-                |         oModeNumber
-                |             [out] Number of minimum mode Quantity: REAL, units: None
+                Func GetNumberOfModes() As long
+                    Gets the mode number.
+                
+                    Parameters:
+                
+                        oModeNumber
+                            [out] Number of minimum mode Quantity: REAL, units: None
 
         :return: int
         """
@@ -146,13 +146,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetMaximumFrequency(CATSafeArrayVariant iVal)
-                |     Sets the minimum frequency.
+                Sub SetMaximumFrequency(CATSafeArrayVariant iVal)
+                    Sets the minimum frequency.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iVal
-                |             [in] Maximum frequency value Quantity: REAL, units: None
+                        iVal
+                            [in] Maximum frequency value Quantity: REAL, units: None
 
         :param tuple i_val:
         :return: None
@@ -180,13 +180,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetMinimumFrequency(CATSafeArrayVariant iVal)
-                |     Sets the minimum frequency.
+                Sub SetMinimumFrequency(CATSafeArrayVariant iVal)
+                    Sets the minimum frequency.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iVal
-                |             [in] Minimum frequency value Quantity: REAL, units: None
+                        iVal
+                            [in] Minimum frequency value Quantity: REAL, units: None
 
         :param tuple i_val:
         :return: None
@@ -214,13 +214,13 @@ class SimFrequencyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNumberOfModes(long oNumberofModes)
-                |     Sets the mode number.
-                | 
-                |     Parameters:
-                | 
-                |         iModeNumber
-                |             [in] Number of maximum mode Quantity: REAL, units: None
+                Sub SetNumberOfModes(long oNumberofModes)
+                    Sets the mode number.
+                
+                    Parameters:
+                
+                        iModeNumber
+                            [in] Number of maximum mode Quantity: REAL, units: None
 
         :param int o_numberof_modes:
         :return: None

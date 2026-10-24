@@ -17,17 +17,17 @@ class ManufacturingToolPathManagement(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingToolPathManagement
-                | 
-                | Interface on the operation to manage links between it and its tool
-                | path.
-                | Role: DELIMfgToolPathManagement has methods to set, retrieve and remove tool
-                | path on the operation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingToolPathManagement
+                
+                Interface on the operation to manage links between it and its tool
+                path.
+                Role: DELIMfgToolPathManagement has methods to set, retrieve and remove tool
+                path on the operation
     
     """
 
@@ -41,8 +41,8 @@ class ManufacturingToolPathManagement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HasAToolPath() As boolean (Read Only)
-                |     Indicates if the operation owns a tool path.
+                Property HasAToolPath() As boolean (Read Only)
+                    Indicates if the operation owns a tool path.
 
         :return: bool
         """
@@ -54,19 +54,19 @@ class ManufacturingToolPathManagement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetToolPathLimitZ(double oZmin,double oZmax)
-                |     Get the min and max Z of tool path.
-                | 
-                |     Parameters:
-                | 
-                |         oZmin
-                |             return the mininum of Z in tool path 
-                |         oZmax
-                |             return the maxinum of Z in tool path 
-                | 
-                |     Returns:
-                |         E_FAIL if no tool path found and toolpath don't contain machining
-                |         motion
+                Sub GetToolPathLimitZ(double oZmin,double oZmax)
+                    Get the min and max Z of tool path.
+                
+                    Parameters:
+                
+                        oZmin
+                            return the mininum of Z in tool path 
+                        oZmax
+                            return the maxinum of Z in tool path 
+                
+                    Returns:
+                        E_FAIL if no tool path found and toolpath don't contain machining
+                        motion
 
         :param float o_zmin:
         :param float o_zmax:

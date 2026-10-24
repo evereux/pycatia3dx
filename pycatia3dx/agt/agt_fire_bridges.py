@@ -20,15 +20,15 @@ class AGTFireBridges(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AGTFireBridges
-                | 
-                | Object for AGTFireBridges.
-                | To retrieve FireBridge from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AGTFireBridges
+                
+                Object for AGTFireBridges.
+                To retrieve FireBridge from collection.
     
     """
 
@@ -41,31 +41,31 @@ class AGTFireBridges(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AGTFireBridge
-                |     Retrieves a FireBridge from the collection of FireBridge.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of FireBridge 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ThisFireBridge the second FireBridge,
-                |              
-                |              and in ThisFireBridge the FireBridge named MyFireBridge.2 in the
-                |              FireBridge collection. 
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim ThisAGTRoot As AGTRoot
-                |              Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              Dim ThisFireBridge As AGTFireBridge
-                |              Set ThisFireBridge = ThisAGTRoot.FireBridges.Item(2)
-                |              Dim ThisFireBridge As AGTFireBridge
-                |              Set ThisFireBridge = ThisAGTRoot.FireBridges.Item("MyFireBridge.2")
+                Func Item(CATVariant iIndex) As AGTFireBridge
+                    Retrieves a FireBridge from the collection of FireBridge.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of FireBridge 
+                
+                    Example:
+                
+                
+                             This example retrieves in ThisFireBridge the second FireBridge,
+                             
+                             and in ThisFireBridge the FireBridge named MyFireBridge.2 in the
+                             FireBridge collection. 
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim ThisAGTRoot As AGTRoot
+                             Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
+                             Dim ThisFireBridge As AGTFireBridge
+                             Set ThisFireBridge = ThisAGTRoot.FireBridges.Item(2)
+                             Dim ThisFireBridge As AGTFireBridge
+                             Set ThisFireBridge = ThisAGTRoot.FireBridges.Item("MyFireBridge.2")
 
         :param CATVariant i_index:
         :return: AGTFireBridge

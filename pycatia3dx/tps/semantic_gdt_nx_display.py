@@ -18,15 +18,15 @@ class SemanticGDTNxDisplay(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SemanticGDTNxDisplay
-                | 
-                | Interface to distinguish Collection of features from Separate features
-                | GDT.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SemanticGDTNxDisplay
+                
+                Interface to distinguish Collection of features from Separate features
+                GDT.
     
     """
 
@@ -40,8 +40,8 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InstanceCount() As long (Read Only)
-                |     Gets count of instances.
+                Property InstanceCount() As long (Read Only)
+                    Gets count of instances.
 
         :return: int
         """
@@ -53,15 +53,15 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CommonZone() As SemanticGDTCommonZone
-                |     Gets the GDT on the Common Zone interface to access CZ modifier
-                |     information. Method is only returning a valid object if ISO Standard is
-                |     applied.
-                | 
-                |     Parameters:
-                | 
-                |         oCommonZone
-                |             Common Zone related information.
+                Func CommonZone() As SemanticGDTCommonZone
+                    Gets the GDT on the Common Zone interface to access CZ modifier
+                    information. Method is only returning a valid object if ISO Standard is
+                    applied.
+                
+                    Parameters:
+                
+                        oCommonZone
+                            Common Zone related information.
 
         :return: SemanticGDTCommonZone
         """
@@ -72,18 +72,18 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsACollection() As boolean
-                |     Checks if GDT is Collection of Features. In ISO Standard, GDT may have a CZ
-                |     modifier on tolerance value.
-                | 
-                |     Parameters:
-                | 
-                |         oIsColl
-                | 
-                |                 TRUE: The GDT is applied on several elements considered as a
-                |                 collection
-                |                 FALSE: The GDT is not applied with a collection consideration.
-                |                 It must be a separate.
+                Func IsACollection() As boolean
+                    Checks if GDT is Collection of Features. In ISO Standard, GDT may have a CZ
+                    modifier on tolerance value.
+                
+                    Parameters:
+                
+                        oIsColl
+                
+                                TRUE: The GDT is applied on several elements considered as a
+                                collection
+                                FALSE: The GDT is not applied with a collection consideration.
+                                It must be a separate.
 
         :return: bool
         """
@@ -94,18 +94,18 @@ class SemanticGDTNxDisplay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsASeparate() As boolean
-                |     Checks if GDT is Separate Features. In ASME Standard this is indicated with
-                |     the "INDIVIDUALLY" text linked to the GDT.
-                | 
-                |     Parameters:
-                | 
-                |         oIsSeparate
-                | 
-                |                 TRUE: The GDT is applied on several elements as many separate
-                |                 specifications.
-                |                 FALSE: The GDT is not applied with a separate consideration. It
-                |                 must be a collection.
+                Func IsASeparate() As boolean
+                    Checks if GDT is Separate Features. In ASME Standard this is indicated with
+                    the "INDIVIDUALLY" text linked to the GDT.
+                
+                    Parameters:
+                
+                        oIsSeparate
+                
+                                TRUE: The GDT is applied on several elements as many separate
+                                specifications.
+                                FALSE: The GDT is not applied with a separate consideration. It
+                                must be a collection.
 
         :return: bool
         """

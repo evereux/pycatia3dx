@@ -17,27 +17,27 @@ class HybridShapeCircleExplicit(HybridShapeCircle):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircleExplicit
-                | 
-                | Represents the hybrid shape circle object explicitely defined.
-                | Role: To access the data of the hybrid shape circle object.
-                | 
-                | This data includes:
-                | 
-                |     ??????????????
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircleExplicit
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircleExplicit
+                
+                Represents the hybrid shape circle object explicitely defined.
+                Role: To access the data of the hybrid shape circle object.
+                
+                This data includes:
+                
+                    ??????????????
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircleExplicit
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 

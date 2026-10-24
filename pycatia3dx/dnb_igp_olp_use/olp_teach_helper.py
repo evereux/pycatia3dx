@@ -21,21 +21,21 @@ class OLPTeachHelper(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         OlpTeachHelper
-                | 
-                | Native Robot Language(NRL) Teach customization.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) NRL Teach command.
-                | This interface is used to customize the commands available in NRL teach and to
-                | retrieve information about the state of NRL teach when one of those commands is
-                | executed.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        OlpTeachHelper
+                
+                Native Robot Language(NRL) Teach customization.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) NRL Teach command.
+                This interface is used to customize the commands available in NRL teach and to
+                retrieve information about the state of NRL teach when one of those commands is
+                executed.
     
     """
 
@@ -49,9 +49,9 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentAstInstruction() As OlpAstNode (Read Only)
-                |     The AST node for the current line selected in NRL teach.
-                |     This will return NULL if there is no instruction selected.
+                Property CurrentAstInstruction() As OlpAstNode (Read Only)
+                    The AST node for the current line selected in NRL teach.
+                    This will return NULL if there is no instruction selected.
 
         :return: OLPAstNode
         """
@@ -64,8 +64,8 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentAstProcedure() As OLPAstBranch (Read Only)
-                |     The AST node for the current task selected in NRL teach.
+                Property CurrentAstProcedure() As OLPAstBranch (Read Only)
+                    The AST node for the current task selected in NRL teach.
 
         :return: OLPAstBranch
         """
@@ -78,10 +78,10 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentCommand() As OlpCustomCommand (Read Only)
-                |     The command currently being executed.
-                |     This will only return a valid value during the call to MacroRunCommand.
-                |     Otherwise, a NULL value is returned.
+                Property CurrentCommand() As OlpCustomCommand (Read Only)
+                    The command currently being executed.
+                    This will only return a valid value during the call to MacroRunCommand.
+                    Otherwise, a NULL value is returned.
 
         :return: OLPCustomCommand
         """
@@ -94,9 +94,9 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentInstruction() As OlpInstruction (Read Only)
-                |     The instruction selected in Teach.
-                |     This will return NULL if there is no instruction selected.
+                Property CurrentInstruction() As OlpInstruction (Read Only)
+                    The instruction selected in Teach.
+                    This will return NULL if there is no instruction selected.
 
         :return: OLPInstruction
         """
@@ -109,8 +109,8 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CurrentProcedure() As OlpProcedure (Read Only)
-                |     The task displayed in Teach.
+                Property CurrentProcedure() As OlpProcedure (Read Only)
+                    The task displayed in Teach.
 
         :return: OLPProcedure
         """
@@ -123,10 +123,10 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditedAstNodesNew() As CATSafeArrayVariant (Read
-                | Only)
-                |     The value of the AST node(s) after they were edited by the user. All
-                |     objects in the list are of type OlpAstNode.
+                Property EditedAstNodesNew() As CATSafeArrayVariant (Read
+                Only)
+                    The value of the AST node(s) after they were edited by the user. All
+                    objects in the list are of type OlpAstNode.
 
         :return: tuple
         """
@@ -139,10 +139,10 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditedAstNodesPrevious() As CATSafeArrayVariant (Read
-                | Only)
-                |     The value of the AST node(s) before they were edited by the user. All
-                |     objects in the list are of type OlpAstNode.
+                Property EditedAstNodesPrevious() As CATSafeArrayVariant (Read
+                Only)
+                    The value of the AST node(s) before they were edited by the user. All
+                    objects in the list are of type OlpAstNode.
 
         :return: tuple
         """
@@ -155,9 +155,9 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsTeachActive() As boolean (Read Only)
-                |     Returns TRUE when teach is active. For example when the current download is
-                |     performed for display in NRL Teach. Used in MacroDownload.
+                Property IsTeachActive() As boolean (Read Only)
+                    Returns TRUE when teach is active. For example when the current download is
+                    performed for display in NRL Teach. Used in MacroDownload.
 
         :return: bool
         """
@@ -170,13 +170,13 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LogicalKeywords(CATSafeArrayVariant iKeywords) (Write
-                | Only)
-                |     Set the list logical keywords to be highlighted in NRL
-                |     teach.
-                |     Each value must be a string. Normally this is keywords like IF, WHILE, FOR,
-                |     etc. which are colored in blue. These words are only colored if the
-                |     OlpAstLeaf.Type is delAstKEYWORD. Used in MacroGetTranslatorInfo.
+                Property LogicalKeywords(CATSafeArrayVariant iKeywords) (Write
+                Only)
+                    Set the list logical keywords to be highlighted in NRL
+                    teach.
+                    Each value must be a string. Normally this is keywords like IF, WHILE, FOR,
+                    etc. which are colored in blue. These words are only colored if the
+                    OlpAstLeaf.Type is delAstKEYWORD. Used in MacroGetTranslatorInfo.
 
         :return: None
         """
@@ -197,9 +197,9 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NewInstruction() As OlpInstruction (Read Only)
-                |     The newly created instruction in Teach.
-                |     This will return NULL if no new instruction was created.
+                Property NewInstruction() As OlpInstruction (Read Only)
+                    The newly created instruction in Teach.
+                    This will return NULL if no new instruction was created.
 
         :return: OLPInstruction
         """
@@ -212,21 +212,21 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionAccessMode() As DELOlpAccessMode
-                |     Set the type of position access mode Must be set during
-                |     MacroGetTranslatorInfo. Enabling Get or GetAndSet may cause slightly slower
-                |     performance in NRL teach. Valid values are:
-                | 
-                |     delOlpNoAccess
-                |         Translators cannot use any method or property related to robot motion
-                |         positions in NRL teach. This is the default value.
-                |     delOlpGetAccess
-                |         Translators can get position related property values or call methods
-                |         that return position related values but cannot call methods or properties that
-                |         modify positions or related values.
-                |     delOlpGetAndSetAccess
-                |         Translator can call any methods, including ones that modify robot
-                |         motion positions and related properties.
+                Property PositionAccessMode() As DELOlpAccessMode
+                    Set the type of position access mode Must be set during
+                    MacroGetTranslatorInfo. Enabling Get or GetAndSet may cause slightly slower
+                    performance in NRL teach. Valid values are:
+                
+                    delOlpNoAccess
+                        Translators cannot use any method or property related to robot motion
+                        positions in NRL teach. This is the default value.
+                    delOlpGetAccess
+                        Translators can get position related property values or call methods
+                        that return position related values but cannot call methods or properties that
+                        modify positions or related values.
+                    delOlpGetAndSetAccess
+                        Translator can call any methods, including ones that modify robot
+                        motion positions and related properties.
 
         :return: int
         """
@@ -247,20 +247,20 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RefreshMode(CATBSTR iRefreshMode) (Write Only)
-                |     Set the type of refresh needed on the task after an edit operation.
-                |     Valid values are:
-                |     - Download : Full download of task is performed. This will
-                |       ensure everything is up to date but takes the most time.
-                |       This is the default value if RefreshMode is not set.
-                |     - AstInstruction : Only the AST nodes for the modified
-                |       instruction have been changed. This just refreshes the UI
-                |       for the current AST instruction. The AST must already have
-                |       been updated by the translator.
-                |     - AstTask : Some AST nodes throughout the task have been changed.
-                |       This refreshed the entire task display UI. The AST must
-                |       have already been updated by the translator.
-                |     - None : No refresh is needed.
+                Property RefreshMode(CATBSTR iRefreshMode) (Write Only)
+                    Set the type of refresh needed on the task after an edit operation.
+                    Valid values are:
+                    - Download : Full download of task is performed. This will
+                      ensure everything is up to date but takes the most time.
+                      This is the default value if RefreshMode is not set.
+                    - AstInstruction : Only the AST nodes for the modified
+                      instruction have been changed. This just refreshes the UI
+                      for the current AST instruction. The AST must already have
+                      been updated by the translator.
+                    - AstTask : Some AST nodes throughout the task have been changed.
+                      This refreshed the entire task display UI. The AST must
+                      have already been updated by the translator.
+                    - None : No refresh is needed.
 
         :return: None
         """
@@ -281,11 +281,11 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SupportsNRLView(boolean iSupportsNRLView) (Write
-                | Only)
-                |     Set whether the translator supports the NRL view feature of NRL
-                |     teach.
-                |     Used in MacroGetTranslatorInfo.
+                Property SupportsNRLView(boolean iSupportsNRLView) (Write
+                Only)
+                    Set whether the translator supports the NRL view feature of NRL
+                    teach.
+                    Used in MacroGetTranslatorInfo.
 
         :return: None
         """
@@ -305,17 +305,17 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddCombo(CATBSTR iEditorID,CATSafeArrayVariant iValues)
-                |     Declare a combo for an NRL teach editor.
-                | 
-                |     Parameters:
-                | 
-                |         iEditorID
-                |             The editor ID to add the combo for. 
-                |         iValues
-                |             The list of values the user can pick from when editing a combo
-                |             or editablecombo with the given editor ID. All objects in the list are of type
-                |             OlpAstNode.
+                Sub AddCombo(CATBSTR iEditorID,CATSafeArrayVariant iValues)
+                    Declare a combo for an NRL teach editor.
+                
+                    Parameters:
+                
+                        iEditorID
+                            The editor ID to add the combo for. 
+                        iValues
+                            The list of values the user can pick from when editing a combo
+                            or editablecombo with the given editor ID. All objects in the list are of type
+                            OlpAstNode.
 
         :param str i_editor_id:
         :param tuple i_values:
@@ -328,22 +328,22 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddCustomColumn(CATBSTR iEditorID,CATBSTR iColumnTitle,CATSafeArrayVariant
-                | iApplicableApplications)
-                |     Declare a NRL teach editor as available as a teach table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iEditorID
-                |             The editor ID to enable as a custom column. 
-                |         iColumnTitle
-                |             Title to display for the column. 
-                |         iApplicableApplications
-                |             Applications to show this column for. This is a list of strings.
-                |             Each value should correspond to a value in the Robot Applications preference.
-                |             If the list is blank the column will be available to be added for all
-                |             applications.
+                Sub AddCustomColumn(CATBSTR iEditorID,CATBSTR iColumnTitle,CATSafeArrayVariant
+                iApplicableApplications)
+                    Declare a NRL teach editor as available as a teach table
+                    column.
+                
+                    Parameters:
+                
+                        iEditorID
+                            The editor ID to enable as a custom column. 
+                        iColumnTitle
+                            Title to display for the column. 
+                        iApplicableApplications
+                            Applications to show this column for. This is a list of strings.
+                            Each value should correspond to a value in the Robot Applications preference.
+                            If the list is blank the column will be available to be added for all
+                            applications.
 
         :param str i_editor_id:
         :param str i_column_title:
@@ -357,24 +357,24 @@ class OLPTeachHelper(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddCustomCommand(CATBSTR iGroup,CATBSTR iCommandName) As
-                | OlpCustomCommand
-                |     Add a new command to Teach.
-                | 
-                |     Parameters:
-                | 
-                |         iGroup
-                |             The name of the group to place the command in.
-                |             This is the name displayed for the group and also the identifier
-                |             for the group. The group is created automatically when a new ID is specified
-                |             here. 
-                |         iCommandName
-                |             The name of the command to add.
-                |             The command's Name and OlpCustomCommand.MainCommand properties are
-                |             both initialized to this value. 
-                | 
-                |     Returns:
-                |         The created command. 
+                Func AddCustomCommand(CATBSTR iGroup,CATBSTR iCommandName) As
+                OlpCustomCommand
+                    Add a new command to Teach.
+                
+                    Parameters:
+                
+                        iGroup
+                            The name of the group to place the command in.
+                            This is the name displayed for the group and also the identifier
+                            for the group. The group is created automatically when a new ID is specified
+                            here. 
+                        iCommandName
+                            The name of the command to add.
+                            The command's Name and OlpCustomCommand.MainCommand properties are
+                            both initialized to this value. 
+                
+                    Returns:
+                        The created command. 
 
         :param str i_group:
         :param str i_command_name:

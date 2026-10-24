@@ -21,25 +21,25 @@ class HybridShapeExtremumPolar(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeExtremumPolar
-                | 
-                | Represents the hybrid shape extremum polar feature.
-                | Role: To access the data of the extremum polar feature . This data
-                | includes:
-                | 
-                |     The contour
-                |     The support (if exist )
-                |     The direction of evaluation
-                |     The extermum type
-                | 
-                | Use the HybridShapeFactory.AddNewExtremumPolarto create a
-                | HybridShapeExtremumPolar object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeExtremumPolar
+                
+                Represents the hybrid shape extremum polar feature.
+                Role: To access the data of the extremum polar feature . This data
+                includes:
+                
+                    The contour
+                    The support (if exist )
+                    The direction of evaluation
+                    The extermum type
+                
+                Use the HybridShapeFactory.AddNewExtremumPolarto create a
+                HybridShapeExtremumPolar object.
     
     """
 
@@ -53,8 +53,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Angle() As Angle (Read Only)
-                |     returns the resulting angle of extremum.
+                Property Angle() As Angle (Read Only)
+                    returns the resulting angle of extremum.
 
         :return: Angle
         """
@@ -67,8 +67,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Contour() As Reference
-                |     returns or sets the input contour.
+                Property Contour() As Reference
+                    returns or sets the input contour.
 
         :return: Reference
         """
@@ -89,8 +89,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Dir() As HybridShapeDirection
-                |     returns or sets the direction of computation.
+                Property Dir() As HybridShapeDirection
+                    returns or sets the direction of computation.
 
         :return: HybridShapeDirection
         """
@@ -111,8 +111,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtremumType() As short
-                |     returns or sets the type of extremum.
+                Property ExtremumType() As short
+                    returns or sets the type of extremum.
 
         :return: int
         """
@@ -133,8 +133,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Origin() As Reference
-                |     returns or sets the origin of the polar axis.
+                Property Origin() As Reference
+                    returns or sets the origin of the polar axis.
 
         :return: Reference
         """
@@ -155,8 +155,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Radius() As Length (Read Only)
-                |     returns the resulting radius of extremum.
+                Property Radius() As Length (Read Only)
+                    returns the resulting radius of extremum.
 
         :return: Length
         """
@@ -169,8 +169,8 @@ class HybridShapeExtremumPolar(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     returns or sets the support (if exist).
+                Property Support() As Reference
+                    returns or sets the support (if exist).
 
         :return: Reference
         """

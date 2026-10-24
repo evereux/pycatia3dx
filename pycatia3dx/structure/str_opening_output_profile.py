@@ -18,22 +18,22 @@ class StrOpeningOutputProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrOpeningOutputProfile
-                | 
-                | Object to manage the Structure Opening in OutputProfile mode.
-                | An Opening can specify the length of the negative extrusion will be done thanks
-                | to the limit. A limit is a keyword that applies to the OutputProfile and
-                | StandardOpening modes only. It applies to both sides of the contour and can
-                | be:
-                | - UpToLast: the opening will pierce everything in both direction of the support
-                | plane of the contour.
-                | - Dimensions: the user can specify two offsets piloting the length of the
-                | extrusion removal.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrOpeningOutputProfile
+                
+                Object to manage the Structure Opening in OutputProfile mode.
+                An Opening can specify the length of the negative extrusion will be done thanks
+                to the limit. A limit is a keyword that applies to the OutputProfile and
+                StandardOpening modes only. It applies to both sides of the contour and can
+                be:
+                - UpToLast: the opening will pierce everything in both direction of the support
+                plane of the contour.
+                - Dimensions: the user can specify two offsets piloting the length of the
+                extrusion removal.
     
     """
 
@@ -47,18 +47,18 @@ class StrOpeningOutputProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As Reference
-                |     Returns or Sets the direction of extrusion of this
-                |     Opening.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in Direction of the
-                |              opening.
-                |              
-                | 
-                |              Set RefDirection = ObjStrOpeningOutputProfile.Direction
+                Property Direction() As Reference
+                    Returns or Sets the direction of extrusion of this
+                    Opening.
+                
+                    Example:
+                
+                
+                             This example retrieves in Direction of the
+                             opening.
+                             
+                
+                             Set RefDirection = ObjStrOpeningOutputProfile.Direction
 
         :return: Reference
         """
@@ -79,18 +79,18 @@ class StrOpeningOutputProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LimitMode() As long
-                |     Returns or Sets the LimitMode.of the opening LimitMode can be UpToLast(0)
-                |     or Dimensions(1)
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in LimitMode of the
-                |              opening.
-                |              
-                | 
-                |              lLimitMode = ObjStrOpeningOutputProfile.LimitMode
+                Property LimitMode() As long
+                    Returns or Sets the LimitMode.of the opening LimitMode can be UpToLast(0)
+                    or Dimensions(1)
+                
+                    Example:
+                
+                
+                             This example retrieves in LimitMode of the
+                             opening.
+                             
+                
+                             lLimitMode = ObjStrOpeningOutputProfile.LimitMode
 
         :return: int
         """
@@ -111,20 +111,20 @@ class StrOpeningOutputProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OutputProfile() As Reference
-                |     Returns or Sets the output profile.of the opening
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in OutputProfile of the opening created in
-                |              sketch mode.
-                |              
-                | 
-                |              Dim ObjStrOpeningOutputProfile As
-                |              StrOpeningOutputProfile
-                |              Set ObjStrOpeningOutputProfile = ObjStrOpening.StrOpeningOutputProfile
-                |              Set RefOutPutProfile = ObjStrOpeningOutputProfile.OutputProfile
+                Property OutputProfile() As Reference
+                    Returns or Sets the output profile.of the opening
+                
+                    Example:
+                
+                
+                             This example retrieves in OutputProfile of the opening created in
+                             sketch mode.
+                             
+                
+                             Dim ObjStrOpeningOutputProfile As
+                             StrOpeningOutputProfile
+                             Set ObjStrOpeningOutputProfile = ObjStrOpening.StrOpeningOutputProfile
+                             Set RefOutPutProfile = ObjStrOpeningOutputProfile.OutputProfile
 
         :return: Reference
         """

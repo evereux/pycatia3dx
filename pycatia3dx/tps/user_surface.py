@@ -17,12 +17,12 @@ class UserSurface(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     UserSurface
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    UserSurface
 
     
     """
@@ -36,13 +36,13 @@ class UserSurface(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddReference(Reference iSupport)
-                |     Add a surface in a User Surface Support
-                | 
-                |     Parameters:
-                | 
-                |         iSupport
-                |             The surface that you want to add in the User Surface.
+                Sub AddReference(Reference iSupport)
+                    Add a surface in a User Surface Support
+                
+                    Parameters:
+                
+                        iSupport
+                            The surface that you want to add in the User Surface.
 
         :param Reference i_support:
         :return: None
@@ -54,13 +54,13 @@ class UserSurface(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddUserSurface(UserSurface iUserSurf)
-                |     Add a User Surface Support in a User Surface Node
-                | 
-                |     Parameters:
-                | 
-                |         iUserSurf
-                |             The User Surface Support that you want to add in the User Surface.
+                Sub AddUserSurface(UserSurface iUserSurf)
+                    Add a User Surface Support in a User Surface Node
+                
+                    Parameters:
+                
+                        iUserSurf
+                            The User Surface Support that you want to add in the User Surface.
 
         :param UserSurface i_user_surf:
         :return: None

@@ -17,27 +17,27 @@ class Person(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Person
-                | 
-                | Represents the current connected Person.
-                | Role: Allows getting current session information about the current connected
-                | Person.
-                | 
-                | Example:
-                | 
-                |      This example shows how to retrieve the current connected Person from the
-                |      PnOService service.
-                |      
-                | 
-                |      Dim zePnOService as PnOService
-                |      Set zePnOService = CATIA.GetSessionService("PnOService") 
-                |      Dim zePerson as Person
-                |      Set zePerson = zePnOService.Person
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Person
+                
+                Represents the current connected Person.
+                Role: Allows getting current session information about the current connected
+                Person.
+                
+                Example:
+                
+                     This example shows how to retrieve the current connected Person from the
+                     PnOService service.
+                     
+                
+                     Dim zePnOService as PnOService
+                     Set zePnOService = CATIA.GetSessionService("PnOService") 
+                     Dim zePerson as Person
+                     Set zePerson = zePnOService.Person
     
     """
 
@@ -51,18 +51,18 @@ class Person(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CollaborativeSpaceID() As CATBSTR (Read Only)
-                |     Returns the Collaborative Space ID of the connected
-                |     Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the Collaborative Space ID of the
-                |          connected Person.
-                |          
-                | 
-                |          Dim zeCollaborativeSpaceID As String
-                |          Set zeCollaborativeSpaceID = zePerson.CollaborativeSpaceID
+                Property CollaborativeSpaceID() As CATBSTR (Read Only)
+                    Returns the Collaborative Space ID of the connected
+                    Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the Collaborative Space ID of the
+                         connected Person.
+                         
+                
+                         Dim zeCollaborativeSpaceID As String
+                         Set zeCollaborativeSpaceID = zePerson.CollaborativeSpaceID
 
         :return: str
         """
@@ -75,17 +75,17 @@ class Person(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrganizationID() As CATBSTR (Read Only)
-                |     Returns the Organization ID of the connected Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the Organization ID of the
-                |          connected Person.
-                |          
-                | 
-                |          Dim zeOrganizationID As String
-                |          Set zeOrganizationID = zePerson.OrganizationID
+                Property OrganizationID() As CATBSTR (Read Only)
+                    Returns the Organization ID of the connected Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the Organization ID of the
+                         connected Person.
+                         
+                
+                         Dim zeOrganizationID As String
+                         Set zeOrganizationID = zePerson.OrganizationID
 
         :return: str
         """
@@ -98,17 +98,17 @@ class Person(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PersonID() As CATBSTR (Read Only)
-                |     Returns the Person ID of the connected Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the Person ID of the connected
-                |          Person.
-                |          
-                | 
-                |          Dim zePersonID As String
-                |          Set zePersonID = zePerson.PersonID
+                Property PersonID() As CATBSTR (Read Only)
+                    Returns the Person ID of the connected Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the Person ID of the connected
+                         Person.
+                         
+                
+                         Dim zePersonID As String
+                         Set zePersonID = zePerson.PersonID
 
         :return: str
         """
@@ -121,16 +121,16 @@ class Person(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RoleID() As CATBSTR (Read Only)
-                |     Returns the Role ID of the connected Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the Role ID of the connected
-                |          Person.
+                Property RoleID() As CATBSTR (Read Only)
+                    Returns the Role ID of the connected Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the Role ID of the connected
+                         Person.
                 |
-                |          Dim zeRoleID As String
-                |          Set zeRoleID = zePerson.RoleID
+                         Dim zeRoleID As String
+                         Set zeRoleID = zePerson.RoleID
         :return: str
         """
 

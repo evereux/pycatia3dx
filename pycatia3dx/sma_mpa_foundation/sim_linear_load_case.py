@@ -18,33 +18,33 @@ class SimLinearLoadCase(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLinearLoadCase
-                | 
-                | Represents the Linear Load Case object.
-                | 
-                | Example:
-                |     Given a SimLinearLoadCases collection you can retrieve a SimLinearLoadCase
-                |     object named as "Linear Load Case.1" through the following
-                |     code:
-                | 
-                |      Dim MyLinearLoadCases As SimLinearLoadCases
-                |      ...
-                |      Dim MyLinearLoadCase As CATBaseDispatch
-                |      Set MyLinearLoadCase = MyLinearLoadCases.Item("Linear Load Cases.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimLinearLoadCases collection you can retrieve a SimLinearLoadCase
-                |     object named as "Linear Load Case.1" through the following
-                |     code:
-                | 
-                |      ...
-                |      myLinearLoadCase = myLinearLoadCases.Item("Linear Load Cases.1")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLinearLoadCase
+                
+                Represents the Linear Load Case object.
+                
+                Example:
+                    Given a SimLinearLoadCases collection you can retrieve a SimLinearLoadCase
+                    object named as "Linear Load Case.1" through the following
+                    code:
+                
+                     Dim MyLinearLoadCases As SimLinearLoadCases
+                     ...
+                     Dim MyLinearLoadCase As CATBaseDispatch
+                     Set MyLinearLoadCase = MyLinearLoadCases.Item("Linear Load Cases.1")
+                     
+                
+                Example in Python:
+                    Given a SimLinearLoadCases collection you can retrieve a SimLinearLoadCase
+                    object named as "Linear Load Case.1" through the following
+                    code:
+                
+                     ...
+                     myLinearLoadCase = myLinearLoadCases.Item("Linear Load Cases.1")
     
     """
 
@@ -58,8 +58,8 @@ class SimLinearLoadCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureStates() As SimFeatureStates (Read Only)
-                |     Retrieves the collection of feature states.
+                Property FeatureStates() As SimFeatureStates (Read Only)
+                    Retrieves the collection of feature states.
 
         :return: SimFeatureStates
         """
@@ -71,15 +71,15 @@ class SimLinearLoadCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AppendLoadCaseContents(SimLinearLoadCase iSourceLoadCase)
-                |     This method appends the contents of the source load case into the current
-                |     load case. The source load case is not modified. Previous contents of the
-                |     destination load case are left unchanged.
-                | 
-                |     Parameters:
-                | 
-                |         iSourceLoadCase[in]
-                |             The linear load case that should be appended. 
+                Sub AppendLoadCaseContents(SimLinearLoadCase iSourceLoadCase)
+                    This method appends the contents of the source load case into the current
+                    load case. The source load case is not modified. Previous contents of the
+                    destination load case are left unchanged.
+                
+                    Parameters:
+                
+                        iSourceLoadCase[in]
+                            The linear load case that should be appended. 
 
         :param SimLinearLoadCase i_source_load_case:
         :return: None

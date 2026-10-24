@@ -19,19 +19,19 @@ class OLPBehavior(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpBehavior
-                | 
-                | Interface for accessing a resource's behavior.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved from a
-                | OlpTranslatorHelper.Behavior.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpBehavior
+                
+                Interface for accessing a resource's behavior.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved from a
+                OlpTranslatorHelper.Behavior.
     
     """
 
@@ -45,8 +45,8 @@ class OLPBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalVariables() As OlpVariables (Read Only)
-                |     The global variables, IO, and constants in this behavior.
+                Property GlobalVariables() As OlpVariables (Read Only)
+                    The global variables, IO, and constants in this behavior.
 
         :return: OLPVariables
         """
@@ -59,10 +59,10 @@ class OLPBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Procedures() As OlpProcedures (Read Only)
-                |     All procedures (robot tasks) for this behavior.
-                |     To get a list of the procedures being downloaded use
-                |     OlpTranslatorHelper.Tasks 
+                Property Procedures() As OlpProcedures (Read Only)
+                    All procedures (robot tasks) for this behavior.
+                    To get a list of the procedures being downloaded use
+                    OlpTranslatorHelper.Tasks 
 
         :return: OLPProcedures
         """

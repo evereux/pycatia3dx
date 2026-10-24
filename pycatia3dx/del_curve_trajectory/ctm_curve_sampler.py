@@ -17,17 +17,17 @@ class CtmCurveSampler(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmCurveSampler
-                | 
-                | Interface representing the curve sampler.
-                | 
-                | Role: This interface is used to get and set start and end offsets for Curve
-                | trajectory.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmCurveSampler
+                
+                Interface representing the curve sampler.
+                
+                Role: This interface is used to get and set start and end offsets for Curve
+                trajectory.
     
     """
 
@@ -41,17 +41,17 @@ class CtmCurveSampler(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndOffset() As double
-                |     Returns or sets the end offset for the curve. The offset indicates the
-                |     distance from the end of the curve at which sampling will end, and a tag will
-                |     be placed at the end. 
-                | Example:
-                | 
-                |      Dim objSampler As CtmCurveSampler
-                |            ........
-                |      Dim oEndOffset As Double
-                |      objSampler.EndOffset = 12
-                |      oEndOffset = objSampler.EndOffset
+                Property EndOffset() As double
+                    Returns or sets the end offset for the curve. The offset indicates the
+                    distance from the end of the curve at which sampling will end, and a tag will
+                    be placed at the end. 
+                Example:
+                
+                     Dim objSampler As CtmCurveSampler
+                           ........
+                     Dim oEndOffset As Double
+                     objSampler.EndOffset = 12
+                     oEndOffset = objSampler.EndOffset
 
         :return: float
         """
@@ -72,17 +72,17 @@ class CtmCurveSampler(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartOffset() As double
-                |     Returns or sets the start offset for the curve. The offset indicates the
-                |     distance along the curve at which sampling will start, after a tag has been
-                |     placed at the start of the curve. 
-                | Example:
-                | 
-                |      Dim objSampler As CtmCurveSampler
-                |            ........
-                |      Dim oStartOffset As Double
-                |      objSampler.StartOffset = 10
-                |      oStartOffset = objSampler.StartOffset 
+                Property StartOffset() As double
+                    Returns or sets the start offset for the curve. The offset indicates the
+                    distance along the curve at which sampling will start, after a tag has been
+                    placed at the start of the curve. 
+                Example:
+                
+                     Dim objSampler As CtmCurveSampler
+                           ........
+                     Dim oStartOffset As Double
+                     objSampler.StartOffset = 10
+                     oStartOffset = objSampler.StartOffset 
 
         :return: float
         """

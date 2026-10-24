@@ -18,16 +18,16 @@ class Prism(SketchBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             Prism
-                | 
-                | Prism-based features in Part Design : base for pad or pocket.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            Prism
+                
+                Prism-based features in Part Design : base for pad or pocket.
     
     """
 
@@ -41,20 +41,20 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DirectionOrientation() As CatPrismOrientation
-                |     Returns the prism direction orientation.
-                | 
-                |     Returns:
-                |         oOrientation The direction orientation (see CatPrismOrientation for
-                |         list of possible types)
-                | 
-                |         Example:
-                |             The following example saves in dirOrientation the direction
-                |             orientation of prism firstPrism, and then sets it so that the direction will be
-                |             now inversed :
-                | 
-                |              Set dirOrientation = firstPrism.DirectionOrientation
-                |              firstPrism.DirectionOrientation = catInverseOrientation
+                Property DirectionOrientation() As CatPrismOrientation
+                    Returns the prism direction orientation.
+                
+                    Returns:
+                        oOrientation The direction orientation (see CatPrismOrientation for
+                        list of possible types)
+                
+                        Example:
+                            The following example saves in dirOrientation the direction
+                            orientation of prism firstPrism, and then sets it so that the direction will be
+                            now inversed :
+                
+                             Set dirOrientation = firstPrism.DirectionOrientation
+                             firstPrism.DirectionOrientation = catInverseOrientation
 
         :return: CatPrismOrientation
         """
@@ -75,20 +75,20 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DirectionType() As CatPrismExtrusionDirection
-                |     Returns the prism direction type.
-                | 
-                |     Returns:
-                |         oDirType The direction type (see CatPrismExtrusionDirection for list of
-                |         possible types)
-                | 
-                |         Example:
-                |             The following example saves in dirType the direction type of prism
-                |             firstPrism, and then sets it so that the direction will be now normal to the
-                |             sketch :
-                | 
-                |              Set dirType = firstPrism.DirectionType
-                |              firstPrism.DirectionType = catNormalToSketchDirection
+                Property DirectionType() As CatPrismExtrusionDirection
+                    Returns the prism direction type.
+                
+                    Returns:
+                        oDirType The direction type (see CatPrismExtrusionDirection for list of
+                        possible types)
+                
+                        Example:
+                            The following example saves in dirType the direction type of prism
+                            firstPrism, and then sets it so that the direction will be now normal to the
+                            sketch :
+                
+                             Set dirType = firstPrism.DirectionType
+                             firstPrism.DirectionType = catNormalToSketchDirection
 
         :return: CatPrismExtrusionDirection
         """
@@ -109,19 +109,19 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstLimit() As Limit (Read Only)
-                |     Returns the first prism limit (one of the two).
-                |     This limit manages the way the prism is ended.
-                | 
-                |     Returns:
-                |         oFirstLimit The first limit (see Limit for more
-                |         information)
-                | 
-                |         Example:
-                |             The following example returns in firstLimit the first limit of
-                |             prism firstPrism:
-                | 
-                |              Set firstLimit = firstPrism.FirstLimit
+                Property FirstLimit() As Limit (Read Only)
+                    Returns the first prism limit (one of the two).
+                    This limit manages the way the prism is ended.
+                
+                    Returns:
+                        oFirstLimit The first limit (see Limit for more
+                        information)
+                
+                        Example:
+                            The following example returns in firstLimit the first limit of
+                            prism firstPrism:
+                
+                             Set firstLimit = firstPrism.FirstLimit
 
         :return: Limit
         """
@@ -134,21 +134,21 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsSymmetric() As boolean
-                |     Returns the prism symmetry flag.
-                |     It returns TRUE if the prism is symmetric (from the base sketch), FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsSymmetric The symmetry flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in symFlag the symmetry flag of prism
-                |             firstPrism, and then sets it so that it will be now symmetric (from the base
-                |             sketch) :
-                | 
-                |              Set symFlag = firstPrism.IsSymmetric
-                |              firstPrism.IsSymmetric = TRUE
+                Property IsSymmetric() As boolean
+                    Returns the prism symmetry flag.
+                    It returns TRUE if the prism is symmetric (from the base sketch), FALSE if
+                    not.
+                
+                    Returns:
+                        oIsSymmetric The symmetry flag as a boolean
+                
+                        Example:
+                            The following example saves in symFlag the symmetry flag of prism
+                            firstPrism, and then sets it so that it will be now symmetric (from the base
+                            sketch) :
+                
+                             Set symFlag = firstPrism.IsSymmetric
+                             firstPrism.IsSymmetric = TRUE
 
         :return: bool
         """
@@ -169,21 +169,21 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsThin() As boolean
-                |     Returns the prism thin flag.
-                |     It returns TRUE if the prism is a thin prism , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsThin The thin flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in thinFlag the thin flag of prism
-                |             firstPrism, and then sets it so that it will be now thin
-                |             :
-                | 
-                |              Set thinFlag = firstPrism.IsThin
-                |              firstPrism.IsThin = TRUE
+                Property IsThin() As boolean
+                    Returns the prism thin flag.
+                    It returns TRUE if the prism is a thin prism , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsThin The thin flag as a boolean
+                
+                        Example:
+                            The following example saves in thinFlag the thin flag of prism
+                            firstPrism, and then sets it so that it will be now thin
+                            :
+                
+                             Set thinFlag = firstPrism.IsThin
+                             firstPrism.IsThin = TRUE
 
         :return: bool
         """
@@ -204,20 +204,20 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MergeEnd() As boolean
-                |     Returns the prism merge end flag (for thin prism only).
-                |     It returns TRUE if merge ends is required , FALSE if not.
-                | 
-                |     Returns:
-                |         oIsMergeEnd The merge end flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in MergeEndFlag the merge end flag of
-                |             prism firstPrism, and then sets it so that merge end will be required
-                |             :
-                | 
-                |              Set MergeEndFlag = firstPrism.IsMergeEnd
-                |              firstPrism.IsMergeEnd = TRUE
+                Property MergeEnd() As boolean
+                    Returns the prism merge end flag (for thin prism only).
+                    It returns TRUE if merge ends is required , FALSE if not.
+                
+                    Returns:
+                        oIsMergeEnd The merge end flag as a boolean
+                
+                        Example:
+                            The following example saves in MergeEndFlag the merge end flag of
+                            prism firstPrism, and then sets it so that merge end will be required
+                            :
+                
+                             Set MergeEndFlag = firstPrism.IsMergeEnd
+                             firstPrism.IsMergeEnd = TRUE
 
         :return: bool
         """
@@ -238,22 +238,22 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NeutralFiber() As boolean
-                |     Returns the prism neutral fiber flag (for thin prism
-                |     only).
-                |     It returns TRUE if the prism is a neutral fiber prism , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsNeutralFiber The neutral fiber flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in NeutralFiberFlag the neutral fiber
-                |             flag of prism firstPrism, and then sets it so that it will be now neutral fiber
-                |             :
-                | 
-                |              Set NeutralFiberFlag = firstPrism.IsNeutralFiber
-                |              firstPrism.IsNeutralFiber = TRUE
+                Property NeutralFiber() As boolean
+                    Returns the prism neutral fiber flag (for thin prism
+                    only).
+                    It returns TRUE if the prism is a neutral fiber prism , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsNeutralFiber The neutral fiber flag as a boolean
+                
+                        Example:
+                            The following example saves in NeutralFiberFlag the neutral fiber
+                            flag of prism firstPrism, and then sets it so that it will be now neutral fiber
+                            :
+                
+                             Set NeutralFiberFlag = firstPrism.IsNeutralFiber
+                             firstPrism.IsNeutralFiber = TRUE
 
         :return: bool
         """
@@ -274,19 +274,19 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondLimit() As Limit (Read Only)
-                |     Returns the second prism limit (one of the two).
-                |     This limit manages the way the prism is ended.
-                | 
-                |     Returns:
-                |         oSecondLimit The second limit (see Limit for more
-                |         information)
-                | 
-                |         Example:
-                |             The following example returns in secondLimit the second limit of
-                |             prism firstPrism:
-                | 
-                |              Set secondLimit = firstPrism.SecondLimit
+                Property SecondLimit() As Limit (Read Only)
+                    Returns the second prism limit (one of the two).
+                    This limit manages the way the prism is ended.
+                
+                    Returns:
+                        oSecondLimit The second limit (see Limit for more
+                        information)
+                
+                        Example:
+                            The following example returns in secondLimit the second limit of
+                            prism firstPrism:
+                
+                             Set secondLimit = firstPrism.SecondLimit
 
         :return: Limit
         """
@@ -298,22 +298,22 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDirection(CATSafeArrayVariant ioDirection)
-                |     Returns the prism direction with absolute coordinates.
-                |     It needs a safe array with 3 elements : X, Y, Z direction coordinates The array must be previously initialized
-                | 
-                |     Returns:
-                |         ioDirection The direction coordinates
-                | 
-                |         Example:
-                |             The following example returns in dirArray the direction coordinates
-                |             of prism firstPrism:
-                | 
-                |              Dim dirArray(2)
-                |              Call firstPrism.GetDirection(dirArray)
-                |              Set x = dirArray[1]
-                |              Set y = dirArray[2]
-                |              Set z = dirArray[3]
+                Sub GetDirection(CATSafeArrayVariant ioDirection)
+                    Returns the prism direction with absolute coordinates.
+                    It needs a safe array with 3 elements : X, Y, Z direction coordinates The array must be previously initialized
+                
+                    Returns:
+                        ioDirection The direction coordinates
+                
+                        Example:
+                            The following example returns in dirArray the direction coordinates
+                            of prism firstPrism:
+                
+                             Dim dirArray(2)
+                             Call firstPrism.GetDirection(dirArray)
+                             Set x = dirArray[1]
+                             Set y = dirArray[2]
+                             Set z = dirArray[3]
 
         :return: tuple
         """
@@ -340,7 +340,7 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetProfileElement(Reference oProfileElement)
+                Sub GetProfileElement(Reference oProfileElement)
 
         :param Reference o_profile_element:
         :return: None
@@ -352,15 +352,15 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ReverseInnerSide()
-                |     Reverses the prism inner side when the profile is open. This is useful for
-                |     finding the shape to reach.
-                | 
-                |     Example:
-                |         The following example reverses the current inner side of prism
-                |         firstPrism :
-                | 
-                |          firstPrism.ReverseInnerSide
+                Sub ReverseInnerSide()
+                    Reverses the prism inner side when the profile is open. This is useful for
+                    finding the shape to reach.
+                
+                    Example:
+                        The following example reverses the current inner side of prism
+                        firstPrism :
+                
+                         firstPrism.ReverseInnerSide
 
         :return: None
         """
@@ -371,25 +371,25 @@ class Prism(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDirection(Reference iLine)
-                |     Sets the prism associative direction.
-                | 
-                |     Parameters:
-                | 
-                |         iLine
-                |             The support direction reference (see Reference for more
-                |             information)
-                |             This reference can be valuated with a reference to a line or an
-                |             edge.
-                |             The following Boundary objects are supported: PlanarFace,
-                |             RectilinearTriDimFeatEdge and
-                |             RectilinearBiDimFeatEdge.
-                | 
-                |             Example:
-                |                 The following example sets the prism direction reference of
-                |                 prism firstPrism with prismDirRef line :
-                | 
-                |                  firstPrism.SetDirection prismDirRef
+                Sub SetDirection(Reference iLine)
+                    Sets the prism associative direction.
+                
+                    Parameters:
+                
+                        iLine
+                            The support direction reference (see Reference for more
+                            information)
+                            This reference can be valuated with a reference to a line or an
+                            edge.
+                            The following Boundary objects are supported: PlanarFace,
+                            RectilinearTriDimFeatEdge and
+                            RectilinearBiDimFeatEdge.
+                
+                            Example:
+                                The following example sets the prism direction reference of
+                                prism firstPrism with prismDirRef line :
+                
+                                 firstPrism.SetDirection prismDirRef
 
         :param Reference i_line:
         :return: None

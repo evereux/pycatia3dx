@@ -18,36 +18,36 @@ class RscApplicativeProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscApplicativeProfile
-                | 
-                | Interface to manage Applicative Profiles.
-                | Role: This interface provides methods to retrieve information related to
-                | Applicative Profiles.
-                | 
-                | Example:
-                | 
-                |      This example code shows how to retrieve an applicative profile
-                |      interface.
-                | 
-                |      The examples here are written in Visual Studio Tools for Applications
-                |      (VSTA) VB.NET
-                |      
-                | 
-                |      ' Select an applicative profile
-                |      Dim selector As INFITF.Selection = CATIA.ActiveEditor.Selection
-                |      Dim type(0) As Object
-                |      type(0) = "RscApplicativeProfile"
-                |      selector.SelectElement2(type, "Select AP", False)
-                |      Dim applicativeProfile As DELResourceBuilderIDLTypeLib.RscApplicativeProfile = selector.Item(1).Value
-                | 
-                |      ' Display the name of the profile
-                |      MsgBox(" Name of selected Applicative Profile is " &
-                |      applicativeProfile.Name)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscApplicativeProfile
+                
+                Interface to manage Applicative Profiles.
+                Role: This interface provides methods to retrieve information related to
+                Applicative Profiles.
+                
+                Example:
+                
+                     This example code shows how to retrieve an applicative profile
+                     interface.
+                
+                     The examples here are written in Visual Studio Tools for Applications
+                     (VSTA) VB.NET
+                     
+                
+                     ' Select an applicative profile
+                     Dim selector As INFITF.Selection = CATIA.ActiveEditor.Selection
+                     Dim type(0) As Object
+                     type(0) = "RscApplicativeProfile"
+                     selector.SelectElement2(type, "Select AP", False)
+                     Dim applicativeProfile As DELResourceBuilderIDLTypeLib.RscApplicativeProfile = selector.Item(1).Value
+                
+                     ' Display the name of the profile
+                     MsgBox(" Name of selected Applicative Profile is " &
+                     applicativeProfile.Name)
     
     """
 
@@ -61,27 +61,27 @@ class RscApplicativeProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Attributes() As Parameters (Read Only)
-                |     Retrieves the attributes for this profile.
-                |     Attributes are the parameters which always exist for a particular profile
-                |     type. Profiles in a user profile group do not have any attributes. Attributes
-                |     cannot be added or removed. Only the value can be changed. If there are no
-                |     attributes, this function succeeds and returns an empty list of
-                |     parameters.
-                | 
-                |     Example:
-                | 
-                |      ' Get the profile attributes for this profile
-                |      Dim profileAttributes As KnowledgewareTypeLib.Parameters = applicativeProfile.Attributes
-                | 
-                |      ' Display the profile attributes
-                |      If profileAttributes IsNot Nothing Then
-                |          For Each Param As KnowledgewareTypeLib.Parameter In
-                |          profileAttributes
-                |              Dim paramName As String = Param.Name
-                |              MsgBox(Param.Name & " = " & Param.ValueAsString)
-                |          Next
-                |      End If
+                Property Attributes() As Parameters (Read Only)
+                    Retrieves the attributes for this profile.
+                    Attributes are the parameters which always exist for a particular profile
+                    type. Profiles in a user profile group do not have any attributes. Attributes
+                    cannot be added or removed. Only the value can be changed. If there are no
+                    attributes, this function succeeds and returns an empty list of
+                    parameters.
+                
+                    Example:
+                
+                     ' Get the profile attributes for this profile
+                     Dim profileAttributes As KnowledgewareTypeLib.Parameters = applicativeProfile.Attributes
+                
+                     ' Display the profile attributes
+                     If profileAttributes IsNot Nothing Then
+                         For Each Param As KnowledgewareTypeLib.Parameter In
+                         profileAttributes
+                             Dim paramName As String = Param.Name
+                             MsgBox(Param.Name & " = " & Param.ValueAsString)
+                         Next
+                     End If
 
         :return: Parameters
         """
@@ -94,21 +94,21 @@ class RscApplicativeProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsCurrent() As short (Read Only)
-                |     Retrieves whether this profile is the current profile or
-                |     not.
-                |     See RscApplicativeProfilesGroup.CurrentProfile
-                | 
-                |     Example:
-                | 
-                |      ' Determine if the profile is the current profile
-                |      Dim isCurrent As Short = applicativeProfile.IsCurrent
-                | 
-                |      If isCurrent = 0 Then
-                |         MsgBox "The profile is not the current profile"
-                |      Else
-                |         MsgBox "The profile is the current profile"
-                |      End If
+                Property IsCurrent() As short (Read Only)
+                    Retrieves whether this profile is the current profile or
+                    not.
+                    See RscApplicativeProfilesGroup.CurrentProfile
+                
+                    Example:
+                
+                     ' Determine if the profile is the current profile
+                     Dim isCurrent As Short = applicativeProfile.IsCurrent
+                
+                     If isCurrent = 0 Then
+                        MsgBox "The profile is not the current profile"
+                     Else
+                        MsgBox "The profile is the current profile"
+                     End If
 
         :return: int
         """
@@ -121,23 +121,23 @@ class RscApplicativeProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsUserDefined() As short (Read Only)
-                |     Retrieves whether this profile is user defined or not.
-                |     User defined profiles do not have Attributes and groups of user defined
-                |     profiles are managed by RscUserProfilesMgr. Profiles and profile groups which
-                |     are not user defined are managed by
-                |     RscApplicativeProfilesMgr.
-                | 
-                |     Example:
-                | 
-                |      ' Determine if the profile is user defined
-                |      Dim isCurrent As Short = applicativeProfile.IsUserDefined
-                | 
-                |      If isCurrent = 0 Then
-                |         MsgBox "The profile is not user defined"
-                |      Else
-                |         MsgBox "The profile is user defined"
-                |      End If
+                Property IsUserDefined() As short (Read Only)
+                    Retrieves whether this profile is user defined or not.
+                    User defined profiles do not have Attributes and groups of user defined
+                    profiles are managed by RscUserProfilesMgr. Profiles and profile groups which
+                    are not user defined are managed by
+                    RscApplicativeProfilesMgr.
+                
+                    Example:
+                
+                     ' Determine if the profile is user defined
+                     Dim isCurrent As Short = applicativeProfile.IsUserDefined
+                
+                     If isCurrent = 0 Then
+                        MsgBox "The profile is not user defined"
+                     Else
+                        MsgBox "The profile is user defined"
+                     End If
 
         :return: int
         """
@@ -150,24 +150,24 @@ class RscApplicativeProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserParams() As Parameters (Read Only)
-                |     Retrieves the user defined parameters for this profile.
-                |     If there are no user parameters, this function succeeds and returns an
-                |     empty list of parameters.
-                | 
-                |     Example:
-                | 
-                |      ' Get user defined params on this profile
-                |      Dim userParams As KnowledgewareTypeLib.Parameters = applicativeProfile.UserParams
-                | 
-                |      ' Display the user parameters
-                |      If userParams IsNot Nothing Then
-                |          For Each Param As KnowledgewareTypeLib.Parameter In
-                |          userParams
-                |              Dim paramName As String = Param.Name
-                |              MsgBox(Param.Name & " = " & Param.ValueAsString)
-                |          Next
-                |      End If
+                Property UserParams() As Parameters (Read Only)
+                    Retrieves the user defined parameters for this profile.
+                    If there are no user parameters, this function succeeds and returns an
+                    empty list of parameters.
+                
+                    Example:
+                
+                     ' Get user defined params on this profile
+                     Dim userParams As KnowledgewareTypeLib.Parameters = applicativeProfile.UserParams
+                
+                     ' Display the user parameters
+                     If userParams IsNot Nothing Then
+                         For Each Param As KnowledgewareTypeLib.Parameter In
+                         userParams
+                             Dim paramName As String = Param.Name
+                             MsgBox(Param.Name & " = " & Param.ValueAsString)
+                         Next
+                     End If
 
         :return: Parameters
         """

@@ -21,29 +21,29 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         StrSddStiffenerOnFreeEdge
-                | 
-                | Object to manage SDD Stiffener On Free Edge.
-                | Role: Allows accessing and setting of Stiffener On Free Edge
-                | data.
-                | 
-                | See also:
-                |     SddStiffenerMngt
-                | Example:
-                | 
-                | 
-                |          This example retrieves in SddStiffenerOnFreeEdge.
-                |          
-                | 
-                |          Dim ObjSddStiffenerOnFreeEdge As
-                |          StrSddStiffenerOnFreeEdge
-                |          Set ObjSddStiffenerOnFreeEdge = ObjSddProductStiffenerOnFreeEdge.StrSddStiffenerOnFreeEdge
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        StrSddStiffenerOnFreeEdge
+                
+                Object to manage SDD Stiffener On Free Edge.
+                Role: Allows accessing and setting of Stiffener On Free Edge
+                data.
+                
+                See also:
+                    SddStiffenerMngt
+                Example:
+                
+                
+                         This example retrieves in SddStiffenerOnFreeEdge.
+                         
+                
+                         Dim ObjSddStiffenerOnFreeEdge As
+                         StrSddStiffenerOnFreeEdge
+                         Set ObjSddStiffenerOnFreeEdge = ObjSddProductStiffenerOnFreeEdge.StrSddStiffenerOnFreeEdge
     
     """
 
@@ -57,15 +57,15 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddSupportPlateMngt() As SddSupportPlateMngt (Read
-                | Only)
-                |     Returns the SddSupportPlateMngt object. SddSupportPlateMngt can be used to
-                |     manage the Reference Support Plate and other support Plates.
-                |     
-                |     This example retrieves SddSupportPlateMngt of the
-                |     StrSddStiffenerOnFreeEdge.
-                | 
-                |      Set ObjStrCategoryMngt = ObjStrSddStiffenerOnFreeEdge.SddSupportPlateMngt
+                Property SddSupportPlateMngt() As SddSupportPlateMngt (Read
+                Only)
+                    Returns the SddSupportPlateMngt object. SddSupportPlateMngt can be used to
+                    manage the Reference Support Plate and other support Plates.
+                    
+                    This example retrieves SddSupportPlateMngt of the
+                    StrSddStiffenerOnFreeEdge.
+                
+                     Set ObjStrCategoryMngt = ObjStrSddStiffenerOnFreeEdge.SddSupportPlateMngt
 
         :return: SddSupportPlateMngt
         """
@@ -78,19 +78,19 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object. StrCategoryMngt can be used to set the
-                |     category depending on whether to create a Stiffener On Free Edge or a Face
-                |     Plate.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrCategoryMngt of the
-                |              StrSddStiffenerOnFreeEdge.
-                |              
-                | 
-                |              Set ObjStrCategoryMngt = ObjStrSddStiffenerOnFreeEdge.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object. StrCategoryMngt can be used to set the
+                    category depending on whether to create a Stiffener On Free Edge or a Face
+                    Plate.
+                
+                    Example:
+                
+                
+                             This example retrieves StrCategoryMngt of the
+                             StrSddStiffenerOnFreeEdge.
+                             
+                
+                             Set ObjStrCategoryMngt = ObjStrSddStiffenerOnFreeEdge.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -103,7 +103,7 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileCrv() As StrProfileCrv (Read Only)
+                Property StrProfileCrv() As StrProfileCrv (Read Only)
 
         :return: StrProfileCrv
         """
@@ -116,17 +116,17 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileOnLimits() As StrProfileOnLimits (Read
-                | Only)
-                |     The Stiffener On Free Edge can be of the following three types depending on
-                |     the web support: -> Stiffener On Free Edge on a Limit of Plate. -> Stiffener On
-                |     Free Edge on the edge of the opening on the Plate. -> Stiffener On Free Edge on
-                |     a Limit extracted Curve of the Plate. - This is possible by using GSMExtract in
-                |     contextual menu in the UI. - When we use this CATIASddStiffenerOnFreeEdge
-                |     interface, the curve has to extracted prior to creation of Stiffener On Free
-                |     Edge. The three properties below allow access to the specific type of profile.
-                |     Please refer to StrProfileOnLimits, StrProfileOnOpening or StrProfileCrv as the
-                |     case may be for further details.
+                Property StrProfileOnLimits() As StrProfileOnLimits (Read
+                Only)
+                    The Stiffener On Free Edge can be of the following three types depending on
+                    the web support: -> Stiffener On Free Edge on a Limit of Plate. -> Stiffener On
+                    Free Edge on the edge of the opening on the Plate. -> Stiffener On Free Edge on
+                    a Limit extracted Curve of the Plate. - This is possible by using GSMExtract in
+                    contextual menu in the UI. - When we use this CATIASddStiffenerOnFreeEdge
+                    interface, the curve has to extracted prior to creation of Stiffener On Free
+                    Edge. The three properties below allow access to the specific type of profile.
+                    Please refer to StrProfileOnLimits, StrProfileOnOpening or StrProfileCrv as the
+                    case may be for further details.
 
         :return: StrProfileOnLimits
         """
@@ -139,8 +139,8 @@ class StrSddStiffenerOnFreeEdge(StructureProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrProfileOnOpening() As StrProfileOnOpening (Read
-                | Only)
+                Property StrProfileOnOpening() As StrProfileOnOpening (Read
+                Only)
 
         :return: StrProfileOnOpening
         """

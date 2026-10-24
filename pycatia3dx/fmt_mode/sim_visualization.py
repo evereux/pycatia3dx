@@ -18,14 +18,14 @@ class SimVisualization(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimVisualization
-                | 
-                | Represents the collection of Visualization Features.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimVisualization
+                
+                Represents the collection of Visualization Features.
     
     """
 
@@ -39,17 +39,17 @@ class SimVisualization(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new Visualization Feature and adds it to the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of Vizualiation Feature to create. 
-                | 
-                |     Returns:
-                |         The created Vizualiation Feature.
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new Visualization Feature and adds it to the
+                    collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of Vizualiation Feature to create. 
+                
+                    Returns:
+                        The created Vizualiation Feature.
 
         :param str i_type:
         :return: AnyObject
@@ -61,23 +61,23 @@ class SimVisualization(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Vizualiation Feature using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Vizualiation Feature to retrieve from
-                |             the collection.
-                |             As a numeric, this index is the rank of the Vizualiation Feature in
-                |             the collection. The index of the first Vizualiation Feature in the collection
-                |             is 1, and the index of the last Vizualiation Feature is
-                |             Count.
-                |             As a string, it is the name you assigned to the Vizualiation
-                |             Feature using the Name oject property. 
-                | 
-                |     Returns:
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Vizualiation Feature using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Vizualiation Feature to retrieve from
+                            the collection.
+                            As a numeric, this index is the rank of the Vizualiation Feature in
+                            the collection. The index of the first Vizualiation Feature in the collection
+                            is 1, and the index of the last Vizualiation Feature is
+                            Count.
+                            As a string, it is the name you assigned to the Vizualiation
+                            Feature using the Name oject property. 
+                
+                    Returns:
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -89,21 +89,21 @@ class SimVisualization(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Vizualiation Feature using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Vizualiation Feature to retrieve from
-                |             the collection.
-                |             As a numeric, this index is the rank of the Vizualiation Feature in
-                |             the collection. The index of the first Vizualiation Feature in the collection
-                |             is 1, and the index of the last Vizualiation Feature is
-                |             Count.
-                |             As a string, it is the name you assigned to the Vizualiation
-                |             Feature using the Name oject property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Vizualiation Feature using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Vizualiation Feature to retrieve from
+                            the collection.
+                            As a numeric, this index is the rank of the Vizualiation Feature in
+                            the collection. The index of the first Vizualiation Feature in the collection
+                            is 1, and the index of the last Vizualiation Feature is
+                            Count.
+                            As a string, it is the name you assigned to the Vizualiation
+                            Feature using the Name oject property.
 
         :param CATVariant i_index:
         :return: None

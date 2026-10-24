@@ -17,15 +17,15 @@ class CompositeTolerance(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CompositeTolerance
-                | 
-                | Interface for accessing composite tolerance on a TPS.
-                | (ASME norm only)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CompositeTolerance
+                
+                Interface for accessing composite tolerance on a TPS.
+                (ASME norm only)
     
     """
 
@@ -39,8 +39,8 @@ class CompositeTolerance(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoxCount() As double (Read Only)
-                |     Retrieves datum count.
+                Property BoxCount() As double (Read Only)
+                    Retrieves datum count.
 
         :return: float
         """
@@ -53,13 +53,13 @@ class CompositeTolerance(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As double (Read Only)
-                |     Retrieves value (in millimeters).
-                | 
-                |     Parameters:
-                | 
-                |         oValue
-                |             Positive or equal to -1 which means not valuated. 
+                Property Value() As double (Read Only)
+                    Retrieves value (in millimeters).
+                
+                    Parameters:
+                
+                        oValue
+                            Positive or equal to -1 which means not valuated. 
 
         :return: float
         """

@@ -18,17 +18,17 @@ class TaskManager(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TaskManager
-                | 
-                | Interface representing a Resource Task.
-                | 
-                | Role: This interface is used to create and manage tasks on a
-                | resource
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TaskManager
+                
+                Interface representing a Resource Task.
+                
+                Role: This interface is used to create and manage tasks on a
+                resource
     
     """
 
@@ -42,19 +42,19 @@ class TaskManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TaskList() As CATSafeArrayVariant (Read Only)
-                |     Retrieves the list of task on the resource
-                | 
-                |     Returns:
-                |         oTaskList The list of tasks on the resource 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTaskManager As TaskManager
-                |                   ......
-                |         Dim oTasks
-                |         oTasks = objTaskManager.TaskList
+                Property TaskList() As CATSafeArrayVariant (Read Only)
+                    Retrieves the list of task on the resource
+                
+                    Returns:
+                        oTaskList The list of tasks on the resource 
+                    Example:
+                
+                           
+                
+                           Dim objTaskManager As TaskManager
+                                  ......
+                        Dim oTasks
+                        oTasks = objTaskManager.TaskList
 
         :return: tuple
         """
@@ -66,23 +66,23 @@ class TaskManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTask() As ResourceTask
-                |     Create a new Robot/Device task If method is called on the resource
-                |     reference, task is created under the reference If method is called on resource
-                |     occurrence, task is created under its first organizational-physical parent. If
-                |     method is called on motion group, task is created for the main
-                |     device of the motion based on the above two conditions.
-                | 
-                |     Returns:
-                |         oCreatedTask The created task. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTaskManager As TaskManager
-                |                   ......
-                |            Dim oRscTask As AnyObject
-                |         Call objTaskManager.CreateTask(oRscTask)
+                Func CreateTask() As ResourceTask
+                    Create a new Robot/Device task If method is called on the resource
+                    reference, task is created under the reference If method is called on resource
+                    occurrence, task is created under its first organizational-physical parent. If
+                    method is called on motion group, task is created for the main
+                    device of the motion based on the above two conditions.
+                
+                    Returns:
+                        oCreatedTask The created task. 
+                    Example:
+                
+                           
+                
+                           Dim objTaskManager As TaskManager
+                                  ......
+                           Dim oRscTask As AnyObject
+                        Call objTaskManager.CreateTask(oRscTask)
 
         :return: ResourceTask
         """
@@ -93,20 +93,20 @@ class TaskManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteTask(AnyObject iTask)
-                |     Deletes a task on the resource
-                | 
-                |     Returns:
-                |         iTask The task to delete 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTaskManager As TaskManager
-                |                   ......
-                |         Dim oRscTask As ResourceTask
-                |                   ......
-                |            Call objTaskManager.DeleteTask(oRscTask)
+                Sub DeleteTask(AnyObject iTask)
+                    Deletes a task on the resource
+                
+                    Returns:
+                        iTask The task to delete 
+                    Example:
+                
+                           
+                
+                           Dim objTaskManager As TaskManager
+                                  ......
+                        Dim oRscTask As ResourceTask
+                                  ......
+                           Call objTaskManager.DeleteTask(oRscTask)
 
         :param AnyObject i_task:
         :return: None
@@ -118,20 +118,20 @@ class TaskManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub DeleteTasks(CATSafeArrayVariant iTaskList)
-                |     Deletes a list of task on the resource
+                Sub DeleteTasks(CATSafeArrayVariant iTaskList)
+                    Deletes a list of task on the resource
                 |
-                |     Returns:
-                |         iTaskList The lits of tasks to delete
-                |     Example:
+                    Returns:
+                        iTaskList The lits of tasks to delete
+                    Example:
                 |
                 |
                 |
-                |            Dim objTaskManager As TaskManager
-                |                   ......
-                |         Dim oTasks
-                |                   ......
-                |         Call objTaskManager.DeleteTasks(oTasks)
+                           Dim objTaskManager As TaskManager
+                                  ......
+                        Dim oTasks
+                                  ......
+                        Call objTaskManager.DeleteTasks(oTasks)
 
         :param tuple i_task_list:
         :return: None

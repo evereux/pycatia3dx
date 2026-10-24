@@ -17,52 +17,52 @@ class SimAcousticAbsorber(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAcousticAbsorber
-                | 
-                | Represents the Acoustic Absorber object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimAcousticAbsorber as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAcousticAbsorber As SimAcousticAbsorber
-                |      Set MyAcousticAbsorber = MyAbstractions.Add("SimAcousticAbsorber")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimAcousticAbsorber
-                |     named "Acoustic Absorber.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAcousticAbsorber As SimAcousticAbsorber
-                |      Set MyAcousticAbsorber = MyAbstractions.Item("Acoustic Absorber.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimAcousticAbsorber as following:
-                | 
-                |      ...
-                |      myAcousticAbsorber = myAbstractions.Add("SimAcousticAbsorber")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimAcousticAbsorber named "Acoustic Absorber.1" as
-                |     following:
-                | 
-                |      ...
-                |      myAcousticAbsorber = myAbstractions.Item("Acoustic Absorber.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAcousticAbsorber
+                
+                Represents the Acoustic Absorber object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimAcousticAbsorber as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAcousticAbsorber As SimAcousticAbsorber
+                     Set MyAcousticAbsorber = MyAbstractions.Add("SimAcousticAbsorber")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimAcousticAbsorber
+                    named "Acoustic Absorber.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAcousticAbsorber As SimAcousticAbsorber
+                     Set MyAcousticAbsorber = MyAbstractions.Item("Acoustic Absorber.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimAcousticAbsorber as following:
+                
+                     ...
+                     myAcousticAbsorber = myAbstractions.Add("SimAcousticAbsorber")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimAcousticAbsorber named "Acoustic Absorber.1" as
+                    following:
+                
+                     ...
+                     myAcousticAbsorber = myAbstractions.Item("Acoustic Absorber.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,8 +76,8 @@ class SimAcousticAbsorber(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -98,8 +98,8 @@ class SimAcousticAbsorber(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -120,33 +120,33 @@ class SimAcousticAbsorber(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """

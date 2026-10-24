@@ -32,14 +32,14 @@ class SemanticGDT(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SemanticGDT
-                | 
-                | Interface managing Semantic GDT.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SemanticGDT
+                
+                Interface managing Semantic GDT.
     
     """
 
@@ -52,15 +52,15 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AssociatedRefFrame() As AssociatedRefFrame
-                | 
-                |     Role: Returns the annotation on the AssociatedRefFrame
-                |     interface.
-                | 
-                |     Parameters:
-                | 
-                |         oAssRefFra
-                |             The AssociatedRefFrame.
+                Func AssociatedRefFrame() As AssociatedRefFrame
+                
+                    Role: Returns the annotation on the AssociatedRefFrame
+                    interface.
+                
+                    Parameters:
+                
+                        oAssRefFra
+                            The AssociatedRefFrame.
 
         :return: AssociatedRefFrame
         """
@@ -71,14 +71,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CompositeTolerance() As CompositeTolerance
-                | 
-                |     Role: Returns the CompositeTolerance interface.
-                | 
-                |     Parameters:
-                | 
-                |         oCompTol
-                |             The CompositeTolerance.
+                Func CompositeTolerance() As CompositeTolerance
+                
+                    Role: Returns the CompositeTolerance interface.
+                
+                    Parameters:
+                
+                        oCompTol
+                            The CompositeTolerance.
 
         :return: CompositeTolerance
         """
@@ -89,19 +89,19 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FrameExtensions(long iFrameExtentIndex) As
-                | SemanticGDTFrameExtension
-                | 
-                |     Role: Gets the Auxiliary Features at given Index applied on
-                |     GDT.
-                | 
-                |     Parameters:
-                | 
-                |         iFrameExtentIndex
-                |             Index of the Frame Extension to retrieve. 
-                |         oAuxiliaryFeatures
-                |             The list of Auxiliary Features specified on GDT (implies ISO
-                |             Standard applied).
+                Func FrameExtensions(long iFrameExtentIndex) As
+                SemanticGDTFrameExtension
+                
+                    Role: Gets the Auxiliary Features at given Index applied on
+                    GDT.
+                
+                    Parameters:
+                
+                        iFrameExtentIndex
+                            Index of the Frame Extension to retrieve. 
+                        oAuxiliaryFeatures
+                            The list of Auxiliary Features specified on GDT (implies ISO
+                            Standard applied).
 
         :param int i_frame_extent_index:
         :return: SemanticGDTFrameExtension
@@ -113,14 +113,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FreeState() As FreeState
-                | 
-                |     Role: Returns the FreeState interface.
-                | 
-                |     Parameters:
-                | 
-                |         oFreeState
-                |             The FreeState.
+                Func FreeState() As FreeState
+                
+                    Role: Returns the FreeState interface.
+                
+                    Parameters:
+                
+                        oFreeState
+                            The FreeState.
 
         :return: FreeState
         """
@@ -131,20 +131,20 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasACenteredElement() As boolean
-                | 
-                |     Role: Checks if the geometrical specification has a centered
-                |     element.
-                |     Precondition: Median Feature characteristics is valid only for ISO
-                |     standard
-                | 
-                |     Parameters:
-                | 
-                |         oHasCenterElt
-                | 
-                |                 TRUE: The GDT has a center element
-                |                 FALSE: The GDT has not a center element or standard different
-                |                 from ISO.
+                Func HasACenteredElement() As boolean
+                
+                    Role: Checks if the geometrical specification has a centered
+                    element.
+                    Precondition: Median Feature characteristics is valid only for ISO
+                    standard
+                
+                    Parameters:
+                
+                        oHasCenterElt
+                
+                                TRUE: The GDT has a center element
+                                FALSE: The GDT has not a center element or standard different
+                                from ISO.
 
         :return: bool
         """
@@ -155,21 +155,21 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasAFrameExtension() As long
-                | 
-                |     Role: Checks if the geometrical specification wears a frame extension
-                |     specification.
-                |     Precondition: Intersection Plane, Orientation Plane, Collection Plane or
-                |     Direction Feature are only meaningful in ISO Standard.
-                | 
-                |     Parameters:
-                | 
-                |         oFrameExtentNumber
-                | 
-                |                 Greater than 0: The GDT has oFrameExtentNumber frame
-                |                 extensions
-                |                 Equal or less than 0: The GDT has not a frame extension or
-                |                 standard different from ISO (value is -1).
+                Func HasAFrameExtension() As long
+                
+                    Role: Checks if the geometrical specification wears a frame extension
+                    specification.
+                    Precondition: Intersection Plane, Orientation Plane, Collection Plane or
+                    Direction Feature are only meaningful in ISO Standard.
+                
+                    Parameters:
+                
+                        oFrameExtentNumber
+                
+                                Greater than 0: The GDT has oFrameExtentNumber frame
+                                extensions
+                                Equal or less than 0: The GDT has not a frame extension or
+                                standard different from ISO (value is -1).
 
         :return: int
         """
@@ -180,16 +180,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasAFreeState() As boolean
-                | 
-                |     Role: Checks if the GDT has a Free State.
-                | 
-                |     Parameters:
-                | 
-                |         oHasAFreeState
-                | 
-                |                 TRUE: There is a Free State
-                |                 FALSE: There is no Free State
+                Func HasAFreeState() As boolean
+                
+                    Role: Checks if the GDT has a Free State.
+                
+                    Parameters:
+                
+                        oHasAFreeState
+                
+                                TRUE: There is a Free State
+                                FALSE: There is no Free State
 
         :return: bool
         """
@@ -200,16 +200,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasAMaterialCondition() As boolean
-                | 
-                |     Role: Checks if the GDT has a Material Condition.
-                | 
-                |     Parameters:
-                | 
-                |         oHasMatCond
-                | 
-                |                 TRUE: A Material Condition exits
-                |                 FALSE: There is no Material Condition
+                Func HasAMaterialCondition() As boolean
+                
+                    Role: Checks if the GDT has a Material Condition.
+                
+                    Parameters:
+                
+                        oHasMatCond
+                
+                                TRUE: A Material Condition exits
+                                FALSE: There is no Material Condition
 
         :return: bool
         """
@@ -220,16 +220,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasAParticularTolElem() As boolean
-                | 
-                |     Role: Checks if the GDT has a Particuler Element.
-                | 
-                |     Parameters:
-                | 
-                |         oHasAParTolElem
-                | 
-                |                 TRUE: There is a Particuler Element
-                |                 FALSE: There is no Particuler Element
+                Func HasAParticularTolElem() As boolean
+                
+                    Role: Checks if the GDT has a Particuler Element.
+                
+                    Parameters:
+                
+                        oHasAParTolElem
+                
+                                TRUE: There is a Particuler Element
+                                FALSE: There is no Particuler Element
 
         :return: bool
         """
@@ -240,16 +240,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasATangentPlane() As boolean
-                | 
-                |     Role: Checks if the GDT has a Tangent Plane Modifier.
-                | 
-                |     Parameters:
-                | 
-                |         oIsATangentPlane
-                | 
-                |                 TRUE: There has a Tangent Plane
-                |                 FALSE: There has not Tangent Plane
+                Func HasATangentPlane() As boolean
+                
+                    Role: Checks if the GDT has a Tangent Plane Modifier.
+                
+                    Parameters:
+                
+                        oIsATangentPlane
+                
+                                TRUE: There has a Tangent Plane
+                                FALSE: There has not Tangent Plane
 
         :return: bool
         """
@@ -260,19 +260,19 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
-                | 
-                |     Role: Checks if the GDT has a Tolerance Per Unit Basis Restricted
-                |     Value.
-                | 
-                |     Parameters:
-                | 
-                |         oHasATolRes
-                | 
-                |                 TRUE: There is a Tolerance Per Unit Basis Restricted
-                |                 Value
-                |                 FALSE: There is no Tolerance Per Unit Basis Restricted
-                |                 Value
+                Func HasATolerancePerUnitBasisRestrictiveValue() As boolean
+                
+                    Role: Checks if the GDT has a Tolerance Per Unit Basis Restricted
+                    Value.
+                
+                    Parameters:
+                
+                        oHasATolRes
+                
+                                TRUE: There is a Tolerance Per Unit Basis Restricted
+                                Value
+                                FALSE: There is no Tolerance Per Unit Basis Restricted
+                                Value
 
         :return: bool
         """
@@ -283,16 +283,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsACompositeTolerance() As boolean
-                | 
-                |     Role: Checks if the GDT is a Composite Tolerance.
-                | 
-                |     Parameters:
-                | 
-                |         oIsACompTol
-                | 
-                |                 TRUE: There is a Composite Tolerance
-                |                 FALSE: There is no Composite Tolerance
+                Func IsACompositeTolerance() As boolean
+                
+                    Role: Checks if the GDT is a Composite Tolerance.
+                
+                    Parameters:
+                
+                        oIsACompTol
+                
+                                TRUE: There is a Composite Tolerance
+                                FALSE: There is no Composite Tolerance
 
         :return: bool
         """
@@ -303,16 +303,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAProjectedToleranceZone() As boolean
-                | 
-                |     Role: Checks if the GDT is a Projected Zone.
-                | 
-                |     Parameters:
-                | 
-                |         oIsAProjTolZone
-                | 
-                |                 TRUE: There is a Projected Zone
-                |                 FALSE: There is no Projected Zone
+                Func IsAProjectedToleranceZone() As boolean
+                
+                    Role: Checks if the GDT is a Projected Zone.
+                
+                    Parameters:
+                
+                        oIsAProjTolZone
+                
+                                TRUE: There is a Projected Zone
+                                FALSE: There is no Projected Zone
 
         :return: bool
         """
@@ -323,16 +323,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAShiftedProfileTolerance() As boolean
-                | 
-                |     Role: Checks if the GDT is a Shifted Profile Tolerance.
-                | 
-                |     Parameters:
-                | 
-                |         oIsAShiftProTol
-                | 
-                |                 TRUE: There is a Shifted Profile Tolerance
-                |                 FALSE: There is no Shifted Profile Tolerance
+                Func IsAShiftedProfileTolerance() As boolean
+                
+                    Role: Checks if the GDT is a Shifted Profile Tolerance.
+                
+                    Parameters:
+                
+                        oIsAShiftProTol
+                
+                                TRUE: There is a Shifted Profile Tolerance
+                                FALSE: There is no Shifted Profile Tolerance
 
         :return: bool
         """
@@ -343,16 +343,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAToleranceUnitBasisValue() As boolean
-                | 
-                |     Role: Checks if the GDT is a Tolerance Unit Basis Value.
-                | 
-                |     Parameters:
-                | 
-                |         oIsATolUnitBas
-                | 
-                |                 TRUE: A Tolerance Zone exits
-                |                 FALSE: There is no Tolerance Zone
+                Func IsAToleranceUnitBasisValue() As boolean
+                
+                    Role: Checks if the GDT is a Tolerance Unit Basis Value.
+                
+                    Parameters:
+                
+                        oIsATolUnitBas
+                
+                                TRUE: A Tolerance Zone exits
+                                FALSE: There is no Tolerance Zone
 
         :return: bool
         """
@@ -363,16 +363,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAToleranceZone() As boolean
-                | 
-                |     Role: Checks if a Tolerance Zone exists.
-                | 
-                |     Parameters:
-                | 
-                |         oIsATolZone
-                | 
-                |                 TRUE: A Tolerance Zone exits
-                |                 FALSE: There is no Tolerance Zone
+                Func IsAToleranceZone() As boolean
+                
+                    Role: Checks if a Tolerance Zone exists.
+                
+                    Parameters:
+                
+                        oIsATolZone
+                
+                                TRUE: A Tolerance Zone exits
+                                FALSE: There is no Tolerance Zone
 
         :return: bool
         """
@@ -383,16 +383,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAnAssociatedRefFrame() As boolean
-                | 
-                |     Role: Checks if the GDT is an Associated Reference Frame.
-                | 
-                |     Parameters:
-                | 
-                |         oIsAnAssRefFra
-                | 
-                |                 TRUE: There is an Associated Reference Frame
-                |                 FALSE: There is no Associated Reference Frame
+                Func IsAnAssociatedRefFrame() As boolean
+                
+                    Role: Checks if the GDT is an Associated Reference Frame.
+                
+                    Parameters:
+                
+                        oIsAnAssRefFra
+                
+                                TRUE: There is an Associated Reference Frame
+                                FALSE: There is no Associated Reference Frame
 
         :return: bool
         """
@@ -403,17 +403,17 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAppliedOnMultipleEntities() As boolean
-                | 
-                |     Role: Checks if the geometrical specification is applied onto multiple
-                |     geometries.
-                | 
-                |     Parameters:
-                | 
-                |         oIsAPattern
-                | 
-                |                 TRUE: The GDT is applied on Nx elements
-                |                 FALSE: The GDT is applied on a unique surface.
+                Func IsAppliedOnMultipleEntities() As boolean
+                
+                    Role: Checks if the geometrical specification is applied onto multiple
+                    geometries.
+                
+                    Parameters:
+                
+                        oIsAPattern
+                
+                                TRUE: The GDT is applied on Nx elements
+                                FALSE: The GDT is applied on a unique surface.
 
         :return: bool
         """
@@ -424,14 +424,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func MaterialCondition() As MaterialCondition
-                | 
-                |     Role: Returns the MaterialCondition interface.
-                | 
-                |     Parameters:
-                | 
-                |         oMatCond
-                |             The Material Condition.
+                Func MaterialCondition() As MaterialCondition
+                
+                    Role: Returns the MaterialCondition interface.
+                
+                    Parameters:
+                
+                        oMatCond
+                            The Material Condition.
 
         :return: MaterialCondition
         """
@@ -442,14 +442,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func MedianFeature() As MedianFeature
-                | 
-                |     Role: Gets the GDT on the Median Feature interface.
-                | 
-                |     Parameters:
-                | 
-                |         oMedianFeat
-                |             The Median Feature.
+                Func MedianFeature() As MedianFeature
+                
+                    Role: Gets the GDT on the Median Feature interface.
+                
+                    Parameters:
+                
+                        oMedianFeat
+                            The Median Feature.
 
         :return: MedianFeature
         """
@@ -460,15 +460,15 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NxDisplay() As SemanticGDTNxDisplay
-                | 
-                |     Role: Gets the GDT on the handle to read Nx instance count, Collection or
-                |     Separate type of the geometrical specification.
-                | 
-                |     Parameters:
-                | 
-                |         oNxDisplay
-                |             Behavior to qualify Nx application context of this GDT.
+                Func NxDisplay() As SemanticGDTNxDisplay
+                
+                    Role: Gets the GDT on the handle to read Nx instance count, Collection or
+                    Separate type of the geometrical specification.
+                
+                    Parameters:
+                
+                        oNxDisplay
+                            Behavior to qualify Nx application context of this GDT.
 
         :return: SemanticGDTNxDisplay
         """
@@ -479,14 +479,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ParticularTolElem() As ParticularTolElem
-                | 
-                |     Role: Returns the ParticularTolElem interface.
-                | 
-                |     Parameters:
-                | 
-                |         oParTolElem
-                |             The ParticularTolElem.
+                Func ParticularTolElem() As ParticularTolElem
+                
+                    Role: Returns the ParticularTolElem interface.
+                
+                    Parameters:
+                
+                        oParTolElem
+                            The ParticularTolElem.
 
         :return: ParticularTolElem
         """
@@ -497,14 +497,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ProjectedToleranceZone() As ProjectedToleranceZone
-                | 
-                |     Role: Returns the ProjectedToleranceZone interface.
-                | 
-                |     Parameters:
-                | 
-                |         oProjTolZone
-                |             The ProjectedToleranceZone.
+                Func ProjectedToleranceZone() As ProjectedToleranceZone
+                
+                    Role: Returns the ProjectedToleranceZone interface.
+                
+                    Parameters:
+                
+                        oProjTolZone
+                            The ProjectedToleranceZone.
 
         :return: ProjectedToleranceZone
         """
@@ -515,14 +515,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ShiftedProfileTolerance() As ShiftedProfileTolerance
-                | 
-                |     Role: Returns the ShiftedProfileTolerance interface.
-                | 
-                |     Parameters:
-                | 
-                |         oShiftProTol
-                |             The ShiftedProfileTolerance.
+                Func ShiftedProfileTolerance() As ShiftedProfileTolerance
+                
+                    Role: Returns the ShiftedProfileTolerance interface.
+                
+                    Parameters:
+                
+                        oShiftProTol
+                            The ShiftedProfileTolerance.
 
         :return: ShiftedProfileTolerance
         """
@@ -533,9 +533,9 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                | 
-                |     Role: Gets the annotation on TPSParallelOnScreen interface.
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                
+                    Role: Gets the annotation on TPSParallelOnScreen interface.
 
         :return: TpsParallelOnScreen
         """
@@ -546,14 +546,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TangentPlane() As TangentPlane
-                | 
-                |     Role: Returns the Tangent Plane interface.
-                | 
-                |     Parameters:
-                | 
-                |         oTangentPlane
-                |             The Tangent Plane.
+                Func TangentPlane() As TangentPlane
+                
+                    Role: Returns the Tangent Plane interface.
+                
+                    Parameters:
+                
+                        oTangentPlane
+                            The Tangent Plane.
 
         :return: TangentPlane
         """
@@ -564,16 +564,16 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TolerancePerUnitBasisRestrictiveValue() As
-                | TolerancePerUnitBasisRestrictiveValue
-                | 
-                |     Role: Returns the TolerancePerUnitBasisRestrictiveValue
-                |     interface.
-                | 
-                |     Parameters:
-                | 
-                |         oTolRes
-                |             The TolerancePerUnitBasisRestrictiveValue.
+                Func TolerancePerUnitBasisRestrictiveValue() As
+                TolerancePerUnitBasisRestrictiveValue
+                
+                    Role: Returns the TolerancePerUnitBasisRestrictiveValue
+                    interface.
+                
+                    Parameters:
+                
+                        oTolRes
+                            The TolerancePerUnitBasisRestrictiveValue.
 
         :return: TolerancePerUnitBasisRestrictiveValue
         """
@@ -584,14 +584,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
-                | 
-                |     Role: Returns the ToleranceUnitBasisValue interface.
-                | 
-                |     Parameters:
-                | 
-                |         oTolUnitBas
-                |             The Tolerance Unit Basis Value.
+                Func ToleranceUnitBasisValue() As ToleranceUnitBasisValue
+                
+                    Role: Returns the ToleranceUnitBasisValue interface.
+                
+                    Parameters:
+                
+                        oTolUnitBas
+                            The Tolerance Unit Basis Value.
 
         :return: ToleranceUnitBasisValue
         """
@@ -602,14 +602,14 @@ class SemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ToleranceZone() As ToleranceZone
-                | 
-                |     Role: Returns the ToleranceZone interface.
-                | 
-                |     Parameters:
-                | 
-                |         oTolZone
-                |             The Tolerance Zone. 
+                Func ToleranceZone() As ToleranceZone
+                
+                    Role: Returns the ToleranceZone interface.
+                
+                    Parameters:
+                
+                        oTolZone
+                            The Tolerance Zone. 
 
         :return: ToleranceZone
         """

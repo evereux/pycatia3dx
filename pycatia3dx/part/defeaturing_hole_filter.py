@@ -17,16 +17,16 @@ class DefeaturingHoleFilter(DefeaturingFilterWithRange):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.DefeaturingFilter
-                |                        CATPartIDLItf.DefeaturingFilterWithRange
-                |                             DefeaturingHoleFilter
-                | 
-                | Represents the defeaturing hole filter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.DefeaturingFilter
+                                       CATPartIDLItf.DefeaturingFilterWithRange
+                                            DefeaturingHoleFilter
+                
+                Represents the defeaturing hole filter.
 
     """
 

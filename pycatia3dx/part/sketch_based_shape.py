@@ -19,20 +19,20 @@ class SketchBasedShape(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         SketchBasedShape
-                | 
-                | Represents the shapes based on sketched 2D geometry.
-                | It is the base object for prisms, holes, revolutions, stiffeners, and
-                | sweeps.
-                | 
-                | See also:
-                |     Prism, Hole, Revolution, Stiffener, Sweep
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        SketchBasedShape
+                
+                Represents the shapes based on sketched 2D geometry.
+                It is the base object for prisms, holes, revolutions, stiffeners, and
+                sweeps.
+                
+                See also:
+                    Prism, Hole, Revolution, Stiffener, Sweep
     
     """
 
@@ -46,14 +46,14 @@ class SketchBasedShape(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sketch() As Sketch (Read Only)
-                |     Returns the sketch the shape is based on.
-                | 
-                |     Example:
-                |         The following example returns the sketch a pad named firstPad is based
-                |         on:
-                | 
-                |          Set sketchPad = firstPad.Sketch
+                Property Sketch() As Sketch (Read Only)
+                    Returns the sketch the shape is based on.
+                
+                    Example:
+                        The following example returns the sketch a pad named firstPad is based
+                        on:
+                
+                         Set sketchPad = firstPad.Sketch
 
         :return: Sketch
         """
@@ -65,8 +65,8 @@ class SketchBasedShape(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfileElement(Reference iProfileElement)
-                |     Returns or sets a profile element. 
+                Sub SetProfileElement(Reference iProfileElement)
+                    Returns or sets a profile element. 
 
         :param Reference i_profile_element:
         :return: None

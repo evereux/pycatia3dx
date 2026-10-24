@@ -19,18 +19,18 @@ class OLPChoreographyEvents(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpChoreographyEvents
-                | 
-                | Object to manage the choreography events for a robot motion.
-                | 
-                | see OlpRobotMotionTarget.Choreography This interface can only be used by a
-                | translator within the Robotics Off-line Programming (OLP) Download or Upload
-                | command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpChoreographyEvents
+                
+                Object to manage the choreography events for a robot motion.
+                
+                see OlpRobotMotionTarget.Choreography This interface can only be used by a
+                translator within the Robotics Off-line Programming (OLP) Download or Upload
+                command.
     
     """
 
@@ -43,11 +43,11 @@ class OLPChoreographyEvents(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateAndAppendEvent(DELOlpChoreographyEventType iType) As
-                | OlpChoreographyEvent
-                |     Create a choreography event.
-                |     The new event is returned and is appended to the list of events for this
-                |     move.
+                Func CreateAndAppendEvent(DELOlpChoreographyEventType iType) As
+                OlpChoreographyEvent
+                    Create a choreography event.
+                    The new event is returned and is appended to the list of events for this
+                    move.
 
         :param int i_type:
         :return: OLPChoreographyEvent
@@ -59,8 +59,8 @@ class OLPChoreographyEvents(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteEvent(OlpChoreographyEvent iEvent)
-                |     Delete a choreography event.
+                Sub DeleteEvent(OlpChoreographyEvent iEvent)
+                    Delete a choreography event.
 
         :param OLPChoreographyEvent i_event:
         :return: None
@@ -72,9 +72,9 @@ class OLPChoreographyEvents(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(long iIndex) As OlpChoreographyEvent
-                |     Get a choreography event.
-                |     Index starts at 1. 
+                Func Item(long iIndex) As OlpChoreographyEvent
+                    Get a choreography event.
+                    Index starts at 1. 
 
         :param int i_index:
         :return: OLPChoreographyEvent

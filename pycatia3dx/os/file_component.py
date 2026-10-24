@@ -21,18 +21,18 @@ class FileComponent(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FileComponent
-                | 
-                | Represents the file object.
-                | Role: The file object allows to manipulate files with UNIX and Windows. Use it
-                | instead of the one of Visual Basic to make portable macros. Its gives access to
-                | information about the file and can open a file as a TextStream
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FileComponent
+                
+                Represents the file object.
+                Role: The file object allows to manipulate files with UNIX and Windows. Use it
+                instead of the one of Visual Basic to make portable macros. Its gives access to
+                information about the file and can open a file as a TextStream
+                object.
     
     """
 
@@ -46,14 +46,14 @@ class FileComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ParentFolder() As Folder
-                |     Returns or sets the parent folder of the file.
-                | 
-                |     Example:
-                |         This example sets the folder ParentFold as parent of the file TestFile.
-                |         This moves the file into ParentFold.
-                | 
-                |          TestFile.ParentFolder
+                Property ParentFolder() As Folder
+                    Returns or sets the parent folder of the file.
+                
+                    Example:
+                        This example sets the folder ParentFold as parent of the file TestFile.
+                        This moves the file into ParentFold.
+                
+                         TestFile.ParentFolder
 
         :return: Folder
         """
@@ -75,15 +75,15 @@ class FileComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Path() As CATBSTR (Read Only)
-                |     Returns the full path of the file.
-                | 
-                |     Example:
-                |         This example retrieves in FilePath the path of the File
-                |         TestFile.
-                | 
-                |          Dim FilePath As String
-                |          FilePath = TestFile.Path
+                Property Path() As CATBSTR (Read Only)
+                    Returns the full path of the file.
+                
+                    Example:
+                        This example retrieves in FilePath the path of the File
+                        TestFile.
+                
+                         Dim FilePath As String
+                         FilePath = TestFile.Path
 
         :return: str
         """

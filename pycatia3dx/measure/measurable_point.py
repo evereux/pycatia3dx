@@ -16,16 +16,16 @@ class MeasurablePoint(MeasurableInContext):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurablePoint
-                | 
-                | Interface representing the measurement on a point.
-                | Get the point coordinates.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurablePoint
+                
+                Interface representing the measurement on a point.
+                Get the point coordinates.
     
     """
 
@@ -38,23 +38,23 @@ class MeasurablePoint(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
-                |     Retrieves the position of the point.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of theMeasurablePoint
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurablePoint As MeasurablePoint
-                |              Set theMeasurablePoint = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePoint)
-                |              Dim theXPoint As Double
-                |              Dim theYPoint As Double
-                |              Dim theZPoint As Double
-                |              theMeasurablePoint.GetPoint theXPoint, theYPoint,
-                |              theZPoint
+                Sub GetPoint(double oXPoint,double oYPoint,double oZPoint)
+                    Retrieves the position of the point.
+                
+                    Example:
+                
+                           This example retrieves the position of theMeasurablePoint
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurablePoint As MeasurablePoint
+                             Set theMeasurablePoint = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePoint)
+                             Dim theXPoint As Double
+                             Dim theYPoint As Double
+                             Dim theZPoint As Double
+                             theMeasurablePoint.GetPoint theXPoint, theYPoint,
+                             theZPoint
 
         :return: tuple
         """

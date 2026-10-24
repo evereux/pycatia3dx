@@ -17,24 +17,24 @@ class SimDynClashResult(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SIMDynClashResult
-                | 
-                | Represents the simulation dynamic clash results.
-                | These results can be retrieved through
-                | SIMDynClashServices.RetrieveResults.
-                | Note: the rest of the documentation will use the following
-                | variable.
-                | 
-                |      Dim MyDynClashResult As SIMDynClashResult
-                | 
-                | 
-                | See also:
-                |     SIMDynClashServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SIMDynClashResult
+                
+                Represents the simulation dynamic clash results.
+                These results can be retrieved through
+                SIMDynClashServices.RetrieveResults.
+                Note: the rest of the documentation will use the following
+                variable.
+                
+                     Dim MyDynClashResult As SIMDynClashResult
+                
+                
+                See also:
+                    SIMDynClashServices
     
     """
 
@@ -48,13 +48,13 @@ class SimDynClashResult(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ClashType() As long (Read Only)
-                |     Indicates if there is any clash to report.
-                | 
-                |     Example:
-                | 
-                |      Dim bClashType As Boolean
-                |      bClashType = MyDynClash.ClashType
+                Property ClashType() As long (Read Only)
+                    Indicates if there is any clash to report.
+                
+                    Example:
+                
+                     Dim bClashType As Boolean
+                     bClashType = MyDynClash.ClashType
 
         :return: int
         """
@@ -66,15 +66,15 @@ class SimDynClashResult(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCollidingPart(long iIndex) As AnyObject
-                |     Indicates if the colliding part. There are 2 of them
-                | 
-                |     Example:
-                | 
-                |      Dim MyPart1
-                |      Dim MyPart2
-                |      MyPart1 = MyDynClashResult.GetCollidingPart(1)
-                |      MyPart2 = MyDynClashResult.GetCollidingPart(2)
+                Func GetCollidingPart(long iIndex) As AnyObject
+                    Indicates if the colliding part. There are 2 of them
+                
+                    Example:
+                
+                     Dim MyPart1
+                     Dim MyPart2
+                     MyPart1 = MyDynClashResult.GetCollidingPart(1)
+                     MyPart2 = MyDynClashResult.GetCollidingPart(2)
 
         :param int i_index:
         :return: AnyObject
@@ -86,13 +86,13 @@ class SimDynClashResult(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iParameterID) As double
-                |     Indicates if the colliding part. There are 2 of them
-                | 
-                |     Example:
-                | 
-                |      Dim MyValue As Double
-                |      MyValue = MyDynClashResult.GetParameter("PENETRATION")
+                Func GetParameter(CATBSTR iParameterID) As double
+                    Indicates if the colliding part. There are 2 of them
+                
+                    Example:
+                
+                     Dim MyValue As Double
+                     MyValue = MyDynClashResult.GetParameter("PENETRATION")
 
         :param str i_parameter_id:
         :return: float

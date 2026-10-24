@@ -19,14 +19,14 @@ class StrProfileOnOpening(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrProfileOnOpening
-                | 
-                | Object to manage a Profile built on an Opening
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrProfileOnOpening
+                
+                Object to manage a Profile built on an Opening
     
     """
 
@@ -40,20 +40,20 @@ class StrProfileOnOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Opening() As StrOpening
-                |     Returns or Sets the Opening on which this Profile will be
-                |     built.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Opening on which the profile will be
-                |              built.
-                |              
-                | 
-                |              Dim ObjStrProfileOnOpening As StrProfileOnOpening
-                |              Set ObjStrProfileOnOpening = ObjSfdStiffenerOnFreeEdge.StrProfileOnOpening
-                |              Set ObjStrOpening = ObjStrProfileOnOpening.Opening
+                Property Opening() As StrOpening
+                    Returns or Sets the Opening on which this Profile will be
+                    built.
+                
+                    Example:
+                
+                
+                             This example retrieves Opening on which the profile will be
+                             built.
+                             
+                
+                             Dim ObjStrProfileOnOpening As StrProfileOnOpening
+                             Set ObjStrProfileOnOpening = ObjSfdStiffenerOnFreeEdge.StrProfileOnOpening
+                             Set ObjStrOpening = ObjStrProfileOnOpening.Opening
 
         :return: StrOpening
         """
@@ -73,18 +73,18 @@ class StrProfileOnOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTraceOffset() As Parameter
-                |     Returns the TraceOffset offset.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in CurveOffset of the
-                |              curve.
-                |              
-                | 
-                |               Dim OffsetParm As Parameter
-                |               Set OffsetParm = ObjStrProfileOnOpening.GetTraceOffset
+                Func GetTraceOffset() As Parameter
+                    Returns the TraceOffset offset.
+                
+                    Example:
+                
+                
+                             This example retrieves in CurveOffset of the
+                             curve.
+                             
+                
+                              Dim OffsetParm As Parameter
+                              Set OffsetParm = ObjStrProfileOnOpening.GetTraceOffset
 
         :return: Parameter
         """

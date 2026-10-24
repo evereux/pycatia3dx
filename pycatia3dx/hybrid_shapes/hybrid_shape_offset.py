@@ -19,27 +19,27 @@ class HybridShapeOffset(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeOffset
-                | 
-                | Represents the hybrid shape offset feature object.
-                | Role: To access the data of the hybrid shape offset feature object. This data
-                | includes:
-                | 
-                |     The element to offset
-                |     The offset direction
-                |     The offset value
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeOffset
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeOffset
+                
+                Represents the hybrid shape offset feature object.
+                Role: To access the data of the hybrid shape offset feature object. This data
+                includes:
+                
+                    The element to offset
+                    The offset direction
+                    The offset value
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeOffset
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -53,10 +53,10 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OffsetDirection() As boolean
-                |     Returns or sets whether the offset direction is to be
-                |     inverted.
-                |     True to invert the offset direction.
+                Property OffsetDirection() As boolean
+                    Returns or sets whether the offset direction is to be
+                    inverted.
+                    True to invert the offset direction.
 
         :return: bool
         """
@@ -77,8 +77,8 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OffsetValue() As Length
-                |     Returns or sets the offset value.
+                Property OffsetValue() As Length
+                    Returns or sets the offset value.
 
         :return: Length
         """
@@ -99,9 +99,9 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OffsetedObject() As Reference
-                |     Returns or sets the face to offset.
-                |     Sub-element(s) supported (see Boundary object): Face.
+                Property OffsetedObject() As Reference
+                    Returns or sets the face to offset.
+                    Sub-element(s) supported (see Boundary object): Face.
 
         :return: Reference
         """
@@ -122,9 +122,9 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SuppressMode() As boolean
-                |     Returns or sets suppress mode.
-                |     True to activate suppress mode
+                Property SuppressMode() As boolean
+                    Returns or sets suppress mode.
+                    True to activate suppress mode
 
         :return: bool
         """
@@ -144,8 +144,8 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddTrickyFace(Reference iTrickyFace)
-                |     Adds a tricky face object on the object.
+                Sub AddTrickyFace(Reference iTrickyFace)
+                    Adds a tricky face object on the object.
 
         :param Reference i_tricky_face:
         :return: None
@@ -157,9 +157,9 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetTrickyFace(long iRank) As Reference
-                |     Returns the invalid face object on the object.
-                |     param : iRank =position of faces ionvalid for offset
+                Func GetTrickyFace(long iRank) As Reference
+                    Returns the invalid face object on the object.
+                    param : iRank =position of faces ionvalid for offset
 
         :param int i_rank:
         :return: Reference
@@ -171,9 +171,9 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveTrickyFace(long iRank)
-                |     Remove the tricky face object on the object.
-                |     param : iRank =position of the face in the list of TrickyFaces
+                Sub RemoveTrickyFace(long iRank)
+                    Remove the tricky face object on the object.
+                    param : iRank =position of the face in the list of TrickyFaces
 
         :param int i_rank:
         :return: None
@@ -185,9 +185,9 @@ class HybridShapeOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetOffsetValue(double iOffset)
-                |     Set Offset value with input as double.
-                |     To be replaced in further release by integration in the pragma put_xxx
+                Sub SetOffsetValue(double iOffset)
+                    Set Offset value with input as double.
+                    To be replaced in further release by integration in the pragma put_xxx
 
         :param float i_offset:
         :return: None

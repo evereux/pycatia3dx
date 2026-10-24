@@ -18,16 +18,16 @@ class TagFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TagFactory
-                | 
-                | Interface representing a Tag Factory.
-                | 
-                | Role: This interface is used to create tags.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TagFactory
+                
+                Interface representing a Tag Factory.
+                
+                Role: This interface is used to create tags.
     
     """
 
@@ -40,26 +40,26 @@ class TagFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTag(CATBSTR iTagName) As TagPoint
-                |     Creates a Tag. Each Tag is associated with a Name and a parent
-                |     TagGroup.
-                | 
-                |     Parameters:
-                | 
-                |         iTagName
-                |             Name of the Tag to be created. 
-                | 
-                |     Returns:
-                |         oTag Newly created Tag. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagFactory As TagFactory
-                |                   ......
-                |         Dim oTag As Tag
-                |         Dim NameTag As String
-                |         Set oTag = objTagFactory.CreateTag(NameTag)
+                Func CreateTag(CATBSTR iTagName) As TagPoint
+                    Creates a Tag. Each Tag is associated with a Name and a parent
+                    TagGroup.
+                
+                    Parameters:
+                
+                        iTagName
+                            Name of the Tag to be created. 
+                
+                    Returns:
+                        oTag Newly created Tag. 
+                    Example:
+                
+                           
+                
+                           Dim objTagFactory As TagFactory
+                                  ......
+                        Dim oTag As Tag
+                        Dim NameTag As String
+                        Set oTag = objTagFactory.CreateTag(NameTag)
 
         :param str i_tag_name:
         :return: TagPoint

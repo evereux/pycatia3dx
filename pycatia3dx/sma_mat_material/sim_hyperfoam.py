@@ -18,51 +18,51 @@ class SimHyperfoam(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHyperfoam
-                | 
-                | Represents the Hyperfoam object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimHyperfoam as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyHyperfoam As SimHyperfoam
-                |      Set MyHyperfoam = MyMaterialOptions.Add("SimHyperfoam")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimHyperfoam named
-                |     "Hyperfoam.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyHyperfoam As SimHyperfoam
-                |      Set MyHyperfoam = MyMaterialOptions.Item("Hyperfoam.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimHyperfoam as following:
-                | 
-                |      ...
-                |      myHyperfoam = myMaterialOptions.Add("SimHyperfoam")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimHyperfoam named "Hyperfoam.1" as following:
-                | 
-                |      ...
-                |      myHyperfoam = myMaterialOptions.Item("Hyperfoam.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHyperfoam
+                
+                Represents the Hyperfoam object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimHyperfoam as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyHyperfoam As SimHyperfoam
+                     Set MyHyperfoam = MyMaterialOptions.Add("SimHyperfoam")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimHyperfoam named
+                    "Hyperfoam.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyHyperfoam As SimHyperfoam
+                     Set MyHyperfoam = MyMaterialOptions.Item("Hyperfoam.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimHyperfoam as following:
+                
+                     ...
+                     myHyperfoam = myMaterialOptions.Add("SimHyperfoam")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimHyperfoam named "Hyperfoam.1" as following:
+                
+                     ...
+                     myHyperfoam = myMaterialOptions.Item("Hyperfoam.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -76,8 +76,8 @@ class SimHyperfoam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModuliTimeScale() As SimHyperfoamModuliTimeScale
-                |     Moduli time scale.
+                Property ModuliTimeScale() As SimHyperfoamModuliTimeScale
+                    Moduli time scale.
 
         :return: int
         """
@@ -98,9 +98,9 @@ class SimHyperfoam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrainEnergyPotentialOrder() As
-                | SimHyperfoamStrainEnergyPotentialOrder
-                |     Returns or sets the strain energy potential order.
+                Property StrainEnergyPotentialOrder() As
+                SimHyperfoamStrainEnergyPotentialOrder
+                    Returns or sets the strain energy potential order.
 
         :return: int
         """
@@ -120,19 +120,19 @@ class SimHyperfoam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimHyperfoamMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimHyperfoamMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

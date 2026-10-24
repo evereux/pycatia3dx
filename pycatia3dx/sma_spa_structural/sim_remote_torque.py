@@ -18,51 +18,51 @@ class SimRemoteTorque(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRemoteTorque
-                | 
-                | Represents the Remote Torque object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimRemoteTorque as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyRemoteTorque As SimRemoteTorque
-                |      Set MyRemoteTorque = MyFeatures.Add("SimRemoteTorque")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimRemoteTorque named
-                |     "Remote Torque.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyRemoteTorque As SimRemoteTorque
-                |      Set MyRemoteTorque = MyFeatures.Item("Remote Torque.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimRemoteTorque as
-                |     following:
-                | 
-                |      ...
-                |      myRemoteTorque = myFeatures.Add("SimRemoteTorque")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimRemoteTorque
-                |     named "Remote Torque.1" as following:
-                | 
-                |      ...
-                |      myRemoteTorque = myFeatures.Item("Remote Torque.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRemoteTorque
+                
+                Represents the Remote Torque object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimRemoteTorque as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyRemoteTorque As SimRemoteTorque
+                     Set MyRemoteTorque = MyFeatures.Add("SimRemoteTorque")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimRemoteTorque named
+                    "Remote Torque.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyRemoteTorque As SimRemoteTorque
+                     Set MyRemoteTorque = MyFeatures.Item("Remote Torque.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimRemoteTorque as
+                    following:
+                
+                     ...
+                     myRemoteTorque = myFeatures.Add("SimRemoteTorque")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimRemoteTorque
+                    named "Remote Torque.1" as following:
+                
+                     ...
+                     myRemoteTorque = myFeatures.Item("Remote Torque.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,8 +98,8 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the remote torque.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the remote torque.
 
         :return: SimAxisSystem
         """
@@ -112,8 +112,8 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -126,15 +126,15 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FollowerFlag() As boolean
-                |     Returns or sets the flag that determines if the remote torque remains
-                |     normal to the support as it deforms.
-                | 
-                |     TRUE: the remote torque remains normal to the support as it
-                |     deforms.
-                | 
-                |     FALSE: the remote torque remains in its original orientation as the support
-                |     deforms.
+                Property FollowerFlag() As boolean
+                    Returns or sets the flag that determines if the remote torque remains
+                    normal to the support as it deforms.
+                
+                    TRUE: the remote torque remains normal to the support as it
+                    deforms.
+                
+                    FALSE: the remote torque remains in its original orientation as the support
+                    deforms.
 
         :return: bool
         """
@@ -155,9 +155,9 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -169,19 +169,19 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMagnitude(double oFx,double oFy,double oFz)
-                |     Retrieves the magnitude.
-                | 
-                |     Parameters:
-                | 
-                |         oFx[out]
-                |             X component of the remote torque. Quantity: MOMENT, units: N_m
-                |             
-                |         oFy[out]
-                |             Y component of the remote torque. Quantity: MOMENT, units: N_m
-                |             
-                |         oFz[out]
-                |             Z component of the remote torque. Quantity: MOMENT, units: N_m
+                Sub GetMagnitude(double oFx,double oFy,double oFz)
+                    Retrieves the magnitude.
+                
+                    Parameters:
+                
+                        oFx[out]
+                            X component of the remote torque. Quantity: MOMENT, units: N_m
+                            
+                        oFy[out]
+                            Y component of the remote torque. Quantity: MOMENT, units: N_m
+                            
+                        oFz[out]
+                            Z component of the remote torque. Quantity: MOMENT, units: N_m
 
         :param float o_fx:
         :param float o_fy:
@@ -195,19 +195,19 @@ class SimRemoteTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMagnitude(double iFx,double iFy,double iFz)
-                |     Sets the magnitude.
-                | 
-                |     Parameters:
-                | 
-                |         iFx[in]
-                |             X component of the remote torque. Quantity: MOMENT, units: N_m
-                |             
-                |         iFy[in]
-                |             Y component of the remote torque. Quantity: MOMENT, units: N_m
-                |             
-                |         iFz[in]
-                |             Z component of the remote torque. Quantity: MOMENT, units: N_m
+                Sub SetMagnitude(double iFx,double iFy,double iFz)
+                    Sets the magnitude.
+                
+                    Parameters:
+                
+                        iFx[in]
+                            X component of the remote torque. Quantity: MOMENT, units: N_m
+                            
+                        iFy[in]
+                            Y component of the remote torque. Quantity: MOMENT, units: N_m
+                            
+                        iFz[in]
+                            Z component of the remote torque. Quantity: MOMENT, units: N_m
 
         :param float i_fx:
         :param float i_fy:

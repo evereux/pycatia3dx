@@ -17,14 +17,14 @@ class SimResultRepManager(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimResultRepManager
-                | 
-                | Represents the Result Rep Manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimResultRepManager
+                
+                Represents the Result Rep Manager.
     
     """
 
@@ -38,8 +38,8 @@ class SimResultRepManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioResults() As SimScenarioResults (Read Only)
-                |     Retrieves the collection of all scenario results. SimScenarioResults
+                Property ScenarioResults() As SimScenarioResults (Read Only)
+                    Retrieves the collection of all scenario results. SimScenarioResults
 
         :return: SimScenarioResults
         """

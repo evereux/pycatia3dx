@@ -17,55 +17,55 @@ class SimCenterOfGravityConstraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCenterOfGravityConstraint
-                | 
-                | Represents the Center of gravity constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCenterOfGravityConstraint as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCenterOfGravityConstraint As
-                |      SimCenterOfGravityConstraint
-                |      Set MyCenterOfGravityConstraint = MyFeatures.Add("SimCenterOfGravityConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimCenterOfGravityConstraint named "Center Of Gravity Constraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCenterOfGravityConstraint As
-                |      SimCenterOfGravityConstraint
-                |      Set MyCenterOfGravityConstraint = MyFeatures.Item("Center Of Gravity Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCenterOfGravityConstraint as following:
-                | 
-                |      ...
-                |      MyCenterOfGravityConstraint = MyFeatures.Add("SimCenterOfGravityConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimCenterOfGravityConstraint named "Center Of Gravity Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyCenterOfGravityConstraint = MyFeatures.Item("Center Of Gravity Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCenterOfGravityConstraint
+                
+                Represents the Center of gravity constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCenterOfGravityConstraint as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCenterOfGravityConstraint As
+                     SimCenterOfGravityConstraint
+                     Set MyCenterOfGravityConstraint = MyFeatures.Add("SimCenterOfGravityConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimCenterOfGravityConstraint named "Center Of Gravity Constraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCenterOfGravityConstraint As
+                     SimCenterOfGravityConstraint
+                     Set MyCenterOfGravityConstraint = MyFeatures.Item("Center Of Gravity Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCenterOfGravityConstraint as following:
+                
+                     ...
+                     MyCenterOfGravityConstraint = MyFeatures.Add("SimCenterOfGravityConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimCenterOfGravityConstraint named "Center Of Gravity Constraint.1" as
+                    following:
+                
+                     ...
+                     MyCenterOfGravityConstraint = MyFeatures.Item("Center Of Gravity Constraint.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -79,9 +79,9 @@ class SimCenterOfGravityConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondSupport() As CATBaseDispatch (Read Only)
-                |     Returns the Second Suppport (geometric entity) in order to define a new COG
-                |     location
+                Property SecondSupport() As CATBaseDispatch (Read Only)
+                    Returns the Second Suppport (geometric entity) in order to define a new COG
+                    location
 
         :return: AnyObject
         """
@@ -94,8 +94,8 @@ class SimCenterOfGravityConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimCenterOfGravityConstraintType
-                |     Returns or sets the type of Center Of Gravity constraint.
+                Property Type() As SimCenterOfGravityConstraintType
+                    Returns or sets the type of Center Of Gravity constraint.
 
         :return: int
         """
@@ -115,13 +115,13 @@ class SimCenterOfGravityConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTolerance(double oVal)
-                |     Gets the tolerance for the center of gravity constraint.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: Value, units: No units
+                Sub GetTolerance(double oVal)
+                    Gets the tolerance for the center of gravity constraint.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: Value, units: No units
 
         :param float o_val:
         :return: None
@@ -133,17 +133,17 @@ class SimCenterOfGravityConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTolerance(double iVal)
-                |     Sets the tolerance for the center of gravity constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Value, units: No units
-                |             
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Sub SetTolerance(double iVal)
+                    Sets the tolerance for the center of gravity constraint.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Value, units: No units
+                            
+                
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param float i_val:
         :return: None

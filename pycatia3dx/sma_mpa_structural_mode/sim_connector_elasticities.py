@@ -20,35 +20,35 @@ class SimConnectorElasticities(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimConnectorElasticities
-                | 
-                | Represents the Connector Elasticities collection.
-                | 
-                | Example:
-                |     Given a SimConnectorBehavior object you can retrieve a
-                |     SimConnectorElasticities collection as following:
-                | 
-                |      Dim MyConnectorBehavior As SimConnectorBehavior
-                |      ...
-                |      Dim MyConnectorDampings As SimConnectorElasticities
-                |      Set MyConnectorDampings = MyConnectorBehavior.ConnectorElasticities
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimConnectorBehavior object you can retrieve a
-                |     SimConnectorElasticities collection as following:
-                | 
-                |      ...
-                |      myConnectorDampings = myConnectorBehavior.ConnectorElasticities
-                |      
-                | 
-                | See also:
-                |     SimConnectorBehavior
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimConnectorElasticities
+                
+                Represents the Connector Elasticities collection.
+                
+                Example:
+                    Given a SimConnectorBehavior object you can retrieve a
+                    SimConnectorElasticities collection as following:
+                
+                     Dim MyConnectorBehavior As SimConnectorBehavior
+                     ...
+                     Dim MyConnectorDampings As SimConnectorElasticities
+                     Set MyConnectorDampings = MyConnectorBehavior.ConnectorElasticities
+                     
+                
+                Example in Python:
+                    Given a SimConnectorBehavior object you can retrieve a
+                    SimConnectorElasticities collection as following:
+                
+                     ...
+                     myConnectorDampings = myConnectorBehavior.ConnectorElasticities
+                     
+                
+                See also:
+                    SimConnectorBehavior
     
     """
 
@@ -61,19 +61,19 @@ class SimConnectorElasticities(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(SimDof iDegreeOfFreedom) As CATBaseDispatch
-                |     Creates a connector elasticity object and returns it.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom for which the connector elasticity will be
-                |             created. 
-                |         ospConnectorElasticity[out]
-                |             The created connector elasticity. 
-                | 
-                |     Returns:
-                |         The SimConnectorElasticity object
+                Func Add(SimDof iDegreeOfFreedom) As CATBaseDispatch
+                    Creates a connector elasticity object and returns it.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom for which the connector elasticity will be
+                            created. 
+                        ospConnectorElasticity[out]
+                            The created connector elasticity. 
+                
+                    Returns:
+                        The SimConnectorElasticity object
 
         :param int i_degree_of_freedom:
         :return: SimConnectorElasticity
@@ -85,17 +85,17 @@ class SimConnectorElasticities(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Connector Elasticity from the collection of Connector
-                |     Elasticities.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Connector Elasticity. 
-                | 
-                |     Returns:
-                |         The SimConnectorElasticity object
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Connector Elasticity from the collection of Connector
+                    Elasticities.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Connector Elasticity. 
+                
+                    Returns:
+                        The SimConnectorElasticity object
 
         :param CATVariant i_index:
         :return: SimConnectorElasticity
@@ -107,14 +107,14 @@ class SimConnectorElasticities(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(SimDof iDegreeOfFreedom)
-                |     Removes the specified connector elasticity.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom for which the connector elasticity will be
-                |             removed.
+                Sub Remove(SimDof iDegreeOfFreedom)
+                    Removes the specified connector elasticity.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom for which the connector elasticity will be
+                            removed.
 
         :param int i_degree_of_freedom:
         :return: None
@@ -126,8 +126,8 @@ class SimConnectorElasticities(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAll()
-                |     Removes all connector elasticities. 
+                Sub RemoveAll()
+                    Removes all connector elasticities. 
 
         :return: None
         """

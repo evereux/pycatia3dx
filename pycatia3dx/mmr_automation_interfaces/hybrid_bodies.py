@@ -21,14 +21,14 @@ class HybridBodies(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     HybridBodies
-                | 
-                | A collection of the HybridBody objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    HybridBodies
+                
+                A collection of the HybridBody objects.
     
     """
 
@@ -41,18 +41,18 @@ class HybridBodies(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Add() As HybridBody
-                |     Creates a new hybrid body and adds it to the HybridBodies collection. This
-                |     body becomes the current one
-                | 
-                |     Returns:
-                |         The created body 
-                |     Example:
-                |         The following example creates a body named newHybridBody in the hybrid
-                |         body collection of the rootPart part in the 3D shape. NewPartBody becomes the
-                |         current body.
-                | 
-                |          Set newHybridBody = rootPart.HybridBodies.Add
+                Func Add() As HybridBody
+                    Creates a new hybrid body and adds it to the HybridBodies collection. This
+                    body becomes the current one
+                
+                    Returns:
+                        The created body 
+                    Example:
+                        The following example creates a body named newHybridBody in the hybrid
+                        body collection of the rootPart part in the 3D shape. NewPartBody becomes the
+                        current body.
+                
+                         Set newHybridBody = rootPart.HybridBodies.Add
 
         :return: HybridBody
         """
@@ -63,30 +63,30 @@ class HybridBodies(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Item(CATVariant iIndex) As HybridBody
-                |     Returns a body using its index or its name from the Bodies
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the hybrid body to retrieve from the
-                |             collection of hybrid bodies. As a numerics, this index is the rank of the
-                |             hybrid body in the collection. The index of the first hybrid body in the
-                |             collection is 1, and the index of the last hybrid body is Count. As a string,
-                |             it is the name you assigned to the hybrid body using the AnyObject.Name
-                |             property. 
-                | 
-                |     Returns:
-                |         The retrieved hybrid body 
-                |     Example:
-                |         This example retrieves in ThisHybridBody the fifth hybrid body in the
-                |         collection and in ThatHybridBody the hybrid body named MyHybridBody in the
-                |         hybrid body collection of the 3D shape.
-                | 
-                |          Set hybridBodyColl = rootPart.HybridBodies
-                |          Set ThisHybridBody = hybridBodyColl.Item(5)
-                |          Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
+                Func Item(CATVariant iIndex) As HybridBody
+                    Returns a body using its index or its name from the Bodies
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the hybrid body to retrieve from the
+                            collection of hybrid bodies. As a numerics, this index is the rank of the
+                            hybrid body in the collection. The index of the first hybrid body in the
+                            collection is 1, and the index of the last hybrid body is Count. As a string,
+                            it is the name you assigned to the hybrid body using the AnyObject.Name
+                            property. 
+                
+                    Returns:
+                        The retrieved hybrid body 
+                    Example:
+                        This example retrieves in ThisHybridBody the fifth hybrid body in the
+                        collection and in ThatHybridBody the hybrid body named MyHybridBody in the
+                        hybrid body collection of the 3D shape.
+                
+                         Set hybridBodyColl = rootPart.HybridBodies
+                         Set ThisHybridBody = hybridBodyColl.Item(5)
+                         Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
 
         :param CATVariant i_index:
         :return: HybridBody

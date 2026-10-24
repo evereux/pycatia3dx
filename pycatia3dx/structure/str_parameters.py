@@ -20,14 +20,14 @@ class StrParameters(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrParameters
-                | 
-                | Object for collection of Parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrParameters
+                
+                Object for collection of Parameters.
     
     """
 
@@ -40,25 +40,25 @@ class StrParameters(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Parameter
-                |     Returns a parameter from the collection of parameters
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the parameter 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves first parameter from list of
-                |              Parameters.
-                |              
-                | 
-                |               Dim ObjStrParamters As StrParamters
-                |               Set ObjStrParamters = ObjStrDetailFeature.GetParameters
-                |               Dim OffsetParameter As Parameter
-                |               Set OffsetParameter = ObjStrParamters.Item(1)
+                Func Item(CATVariant iIndex) As Parameter
+                    Returns a parameter from the collection of parameters
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the parameter 
+                
+                    Example:
+                
+                
+                             This example retrieves first parameter from list of
+                             Parameters.
+                             
+                
+                              Dim ObjStrParamters As StrParamters
+                              Set ObjStrParamters = ObjStrDetailFeature.GetParameters
+                              Dim OffsetParameter As Parameter
+                              Set OffsetParameter = ObjStrParamters.Item(1)
 
         :param CATVariant i_index:
         :return: Parameter

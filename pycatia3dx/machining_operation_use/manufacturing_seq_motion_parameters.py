@@ -17,14 +17,14 @@ class ManufacturingSeqMotionParameters(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingSeqMotionParameters
-                | 
-                | Interface to allow to set/get parameters of sequential motion.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingSeqMotionParameters
+                
+                Interface to allow to set/get parameters of sequential motion.
     
     """
 
@@ -37,16 +37,16 @@ class ManufacturingSeqMotionParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindElement(CATBSTR iName) As AnyObject
-                |     Retrieves , if possible , CKE object describing parameter on the sequential
-                |     motion
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         oParm
-                |             The parameter value modelized by a AnyObject
+                Func FindElement(CATBSTR iName) As AnyObject
+                    Retrieves , if possible , CKE object describing parameter on the sequential
+                    motion
+                
+                    Parameters:
+                
+                        iName
+                            The parameter name 
+                        oParm
+                            The parameter value modelized by a AnyObject
 
         :param str i_name:
         :return: AnyObject
@@ -58,16 +58,16 @@ class ManufacturingSeqMotionParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueBoolean(CATBSTR iName) As boolean
-                |     Retrieves the value for a string type parameter on the manufacturing
-                |     sequential motion.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         oValue
-                |             The parameter value
+                Func GetValueBoolean(CATBSTR iName) As boolean
+                    Retrieves the value for a string type parameter on the manufacturing
+                    sequential motion.
+                
+                    Parameters:
+                
+                        iName
+                            The parameter name 
+                        oValue
+                            The parameter value
 
         :param str i_name:
         :return: bool
@@ -79,16 +79,16 @@ class ManufacturingSeqMotionParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueDouble(CATBSTR iName) As double
-                |     Retrieves the value for a double type parameter on the manufacturing
-                |     sequential motion.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         oValue
-                |             The parameter value
+                Func GetValueDouble(CATBSTR iName) As double
+                    Retrieves the value for a double type parameter on the manufacturing
+                    sequential motion.
+                
+                    Parameters:
+                
+                        iName
+                            The parameter name 
+                        oValue
+                            The parameter value
 
         :param str i_name:
         :return: float
@@ -100,16 +100,16 @@ class ManufacturingSeqMotionParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueLong(CATBSTR iName) As long
-                |     Retrieves the value for an integer type parameter on the manufacturing
-                |     sequential motion.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         oValue
-                |             The parameter value
+                Func GetValueLong(CATBSTR iName) As long
+                    Retrieves the value for an integer type parameter on the manufacturing
+                    sequential motion.
+                
+                    Parameters:
+                
+                        iName
+                            The parameter name 
+                        oValue
+                            The parameter value
 
         :param str i_name:
         :return: int
@@ -121,16 +121,16 @@ class ManufacturingSeqMotionParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueStr(CATBSTR iName) As CATBSTR
-                |     Retrieves the value for a string type parameter on the manufacturing
-                |     sequential motion.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The parameter name 
-                |         oValue
-                |             The parameter value
+                Func GetValueStr(CATBSTR iName) As CATBSTR
+                    Retrieves the value for a string type parameter on the manufacturing
+                    sequential motion.
+                
+                    Parameters:
+                
+                        iName
+                            The parameter name 
+                        oValue
+                            The parameter value
 
         :param str i_name:
         :return: str

@@ -18,18 +18,18 @@ class PointOperationFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PointOperationFactory
-                | 
-                | Interface representing the Point Operation Factory to create and delete Point
-                | Operations.
-                | 
-                | Role: This interface is used to create and delete Point
-                | Operations
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PointOperationFactory
+                
+                Interface representing the Point Operation Factory to create and delete Point
+                Operations.
+                
+                Role: This interface is used to create and delete Point
+                Operations
     
     """
 
@@ -43,47 +43,47 @@ class PointOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreatePointOperation(CATBSTR iType,AnyObject irefInst,boolean
-                | iBefore,AnyObject iTag,AnyObject iTagOwnerOcc) As
-                | PointOperation
-                |     Creates a Point Operation.
-                | 
-                |     Returns:
-                |         oPointOperation The created Point Operation. 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of Point Operation to create (could be "Weld", "Rivet").
-                |             
-                |         irefInst
-                |             The reference instruction before/after which the Point Operation
-                |             has to be created. If Reference Instruction is NULL, the instruction will be
-                |             created at the end 
-                |         iBefore
-                |             Create before the reference instruction or not. 
-                |         iTag
-                |             The Tag target for the Point Operation. This parameter cannot be
-                |             NULL 
-                |         iTagOwnerOcc
-                |             Tag target's Owner Occurrence. If this parameter is NULL, first
-                |             occurrence of the Owner is used. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objPointOperationFactory As
-                |             PointOperationFactory
-                |             Dim ATag As Tag
-                |                   ......
-                |             Dim objTagOwnerOcc As AnyObject
-                |             Dim objRefAct As AnyObject
-                |             Dim CreateBefore As Boolean
-                |             CreateBefore = FALSE
-                |                   ......
-                |                   ......
-                |             Dim oPointOperation As PointOperation
-                |             Set oPointOperation = objPointOperationFactory.CreatePointOperation("Weld", objRefAct, CreateBefore, ATag, objTagOwnerOcc)
+                Func CreatePointOperation(CATBSTR iType,AnyObject irefInst,boolean
+                iBefore,AnyObject iTag,AnyObject iTagOwnerOcc) As
+                PointOperation
+                    Creates a Point Operation.
+                
+                    Returns:
+                        oPointOperation The created Point Operation. 
+                    Parameters:
+                
+                        iType
+                            Type of Point Operation to create (could be "Weld", "Rivet").
+                            
+                        irefInst
+                            The reference instruction before/after which the Point Operation
+                            has to be created. If Reference Instruction is NULL, the instruction will be
+                            created at the end 
+                        iBefore
+                            Create before the reference instruction or not. 
+                        iTag
+                            The Tag target for the Point Operation. This parameter cannot be
+                            NULL 
+                        iTagOwnerOcc
+                            Tag target's Owner Occurrence. If this parameter is NULL, first
+                            occurrence of the Owner is used. 
+                
+                    Example:
+                
+                           
+                
+                            Dim objPointOperationFactory As
+                            PointOperationFactory
+                            Dim ATag As Tag
+                                  ......
+                            Dim objTagOwnerOcc As AnyObject
+                            Dim objRefAct As AnyObject
+                            Dim CreateBefore As Boolean
+                            CreateBefore = FALSE
+                                  ......
+                                  ......
+                            Dim oPointOperation As PointOperation
+                            Set oPointOperation = objPointOperationFactory.CreatePointOperation("Weld", objRefAct, CreateBefore, ATag, objTagOwnerOcc)
 
         :param str i_type:
         :param AnyObject iref_inst:
@@ -101,24 +101,24 @@ class PointOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeletePointOperation(PointOperation iPointOperation)
-                |     Deletes Point Operation.
-                | 
-                |     Parameters:
-                | 
-                |         iPointOperation
-                |             The Point Operation to delete 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objResTask As ResourceTask
-                |                   ......
-                |             Dim objPointOperation As PointOperation
-                |                   ......
-                |             Call
-                |             objResTask.DeletePointOperation(objPointOperation)
+                Sub DeletePointOperation(PointOperation iPointOperation)
+                    Deletes Point Operation.
+                
+                    Parameters:
+                
+                        iPointOperation
+                            The Point Operation to delete 
+                
+                    Example:
+                
+                           
+                
+                            Dim objResTask As ResourceTask
+                                  ......
+                            Dim objPointOperation As PointOperation
+                                  ......
+                            Call
+                            objResTask.DeletePointOperation(objPointOperation)
 
         :param PointOperation i_point_operation:
         :return: None

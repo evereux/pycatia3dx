@@ -18,15 +18,15 @@ class Factory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Factory
-                | 
-                | Abstract object gathering behaviours of all objects being a
-                | factory.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Factory
+                
+                Abstract object gathering behaviours of all objects being a
+                factory.
     
     """
 

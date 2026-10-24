@@ -19,12 +19,12 @@ class SpotRivetProfileFactory(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SpotRivetProfileFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SpotRivetProfileFactory
 
     
     """
@@ -38,16 +38,16 @@ class SpotRivetProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateRivetProfile(SpotRivetProfile oSpotRivetProfile)
-                |     This method creates a Spot-Rivet profile
-                | 
-                |     Parameters:
-                | 
-                |         oSpotRivetProfile,
-                |             newly created DrillRivet profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub CreateRivetProfile(SpotRivetProfile oSpotRivetProfile)
+                    This method creates a Spot-Rivet profile
+                
+                    Parameters:
+                
+                        oSpotRivetProfile,
+                            newly created DrillRivet profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param SpotRivetProfile o_spot_rivet_profile:
         :return: None
@@ -59,16 +59,16 @@ class SpotRivetProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DestroyRivetProfile(SpotRivetProfile iSpotRivetProfile)
-                |     This method destroys the Spot-Rivet profile
-                | 
-                |     Parameters:
-                | 
-                |         iSpotRivetProfile,
-                |             Spot-Rivet profile to be destroyed. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DestroyRivetProfile(SpotRivetProfile iSpotRivetProfile)
+                    This method destroys the Spot-Rivet profile
+                
+                    Parameters:
+                
+                        iSpotRivetProfile,
+                            Spot-Rivet profile to be destroyed. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param SpotRivetProfile i_spot_rivet_profile:
         :return: None

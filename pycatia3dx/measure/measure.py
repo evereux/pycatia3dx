@@ -17,14 +17,14 @@ class Measure(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Measure
-                | 
-                | Represents a Measure.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Measure
+                
+                Represents a Measure.
     
     """
 
@@ -38,20 +38,20 @@ class Measure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumDistance() As double (Read Only)
-                |     Returns or sets the minimum distance value for the computation of Measure
-                |     Between.
-                | 
-                |     The minimum distance value must be greater than 0.
-                | 
-                |     Example:
-                | 
-                |             The example retrieves the minimum distance value of NewMeasure
-                |             Distance.
-                |             
-                | 
-                |             Dim MinimumValue As double
-                |             MinimumValue = NewMeasure.MinimumDistance
+                Property MinimumDistance() As double (Read Only)
+                    Returns or sets the minimum distance value for the computation of Measure
+                    Between.
+                
+                    The minimum distance value must be greater than 0.
+                
+                    Example:
+                
+                            The example retrieves the minimum distance value of NewMeasure
+                            Distance.
+                            
+                
+                            Dim MinimumValue As double
+                            MinimumValue = NewMeasure.MinimumDistance
 
         :return: float
         """

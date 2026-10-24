@@ -17,16 +17,16 @@ class MeasurableAxisSystem(MeasurableInContext):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurableAxisSystem
-                | 
-                | Interface representing the measurement on an axis system.
-                | Get the position of the axis system.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurableAxisSystem
+                
+                Interface representing the measurement on an axis system.
+                Get the position of the axis system.
     
     """
 
@@ -39,53 +39,53 @@ class MeasurableAxisSystem(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxis(CATSafeArrayVariant ioAxisPosition)
-                |     Retrieves the information of the axis system.
-                | 
-                |     Parameters:
-                | 
-                |         ioAxisPosition
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
-                | 
-                |                 ioAxisPosition(0) is the X coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(1) is the Y coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(2) is the Z coordinate of the origin of the axis
-                |                 system
-                |                 ioAxisPosition(3) is the X coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(4) is the Y coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(5) is the Z coordinate of the first direction of
-                |                 the axis system
-                |                 ioAxisPosition(6) is the X coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(7) is the Y coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(8) is the Z coordinate of the second direction
-                |                 of the axis system
-                |                 ioAxisPosition(9) is the X coordinate of the third direction of
-                |                 the axis system
-                |                 ioAxisPosition(10) is the Y coordinate of the third direction
-                |                 of the axis system
-                |                 ioAxisPosition(11) is the Z coordinate of the third direction
-                |                 of the axis system 
-                | 
-                |     Example:
-                | 
-                |            This example retrieves information of the axis system of
-                |            theMeasurableAxisSystem measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableAxisSystem As
-                |              MeasurableAxisSystem
-                |              Set theMeasurableAxisSystem = theMeasureService.GetMeasurable(theSelection, CAAMeasurableAxisSystem)
-                |              Dim theAxisPosition(11)
-                |              theMeasurableAxisSystem.GetAxisSystem
-                |              theAxisPosition
+                Sub GetAxis(CATSafeArrayVariant ioAxisPosition)
+                    Retrieves the information of the axis system.
+                
+                    Parameters:
+                
+                        ioAxisPosition
+                            The information of the axis system with respect to the product
+                            coordinate system:
+                
+                                ioAxisPosition(0) is the X coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(1) is the Y coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(2) is the Z coordinate of the origin of the axis
+                                system
+                                ioAxisPosition(3) is the X coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(4) is the Y coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(5) is the Z coordinate of the first direction of
+                                the axis system
+                                ioAxisPosition(6) is the X coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(7) is the Y coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(8) is the Z coordinate of the second direction
+                                of the axis system
+                                ioAxisPosition(9) is the X coordinate of the third direction of
+                                the axis system
+                                ioAxisPosition(10) is the Y coordinate of the third direction
+                                of the axis system
+                                ioAxisPosition(11) is the Z coordinate of the third direction
+                                of the axis system 
+                
+                    Example:
+                
+                           This example retrieves information of the axis system of
+                           theMeasurableAxisSystem measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableAxisSystem As
+                             MeasurableAxisSystem
+                             Set theMeasurableAxisSystem = theMeasureService.GetMeasurable(theSelection, CAAMeasurableAxisSystem)
+                             Dim theAxisPosition(11)
+                             theMeasurableAxisSystem.GetAxisSystem
+                             theAxisPosition
 
         :return: None
         """

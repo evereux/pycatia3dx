@@ -20,14 +20,14 @@ class StrSfdPlate(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrSfdPlate
-                | 
-                | Object to filter Structure Functional Modeler functions Plate.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrSfdPlate
+                
+                Object to filter Structure Functional Modeler functions Plate.
     
     """
 
@@ -41,20 +41,20 @@ class StrSfdPlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Flanges() As StrFlanges (Read Only)
-                |     Returns the StrFlanges object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrFlanges the StrFlanges
-                |              object
-                |              of the SfdPlate.
-                |              
-                | 
-                |              Dim ObjStrFlanges As StrFlanges
-                |              Set ObjStrFlanges = iObjSfdPlate.Flanges
+                Property Flanges() As StrFlanges (Read Only)
+                    Returns the StrFlanges object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrFlanges the StrFlanges
+                             object
+                             of the SfdPlate.
+                             
+                
+                             Dim ObjStrFlanges As StrFlanges
+                             Set ObjStrFlanges = iObjSfdPlate.Flanges
 
         :return: StrFlanges
         """
@@ -67,22 +67,22 @@ class StrSfdPlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SfdPlate.
-                |              
-                | 
-                |              Dim ObjSfdPlate As SfdPlate
-                |              Set ObjSfdPlate = ObjSfdPlates.Item(1)
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt
-                |              Set ObjStrMaterialMngt = ObjSfdPlate.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SfdPlate.
+                             
+                
+                             Dim ObjSfdPlate As SfdPlate
+                             Set ObjSfdPlate = ObjSfdPlates.Item(1)
+                             Dim ObjStrMaterialMngt As StrMaterialMngt
+                             Set ObjStrMaterialMngt = ObjSfdPlate.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -95,22 +95,22 @@ class StrSfdPlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
-                | Only)
-                |     Returns the StrPlateExtrusionMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrPlateExtrusionMngt the
-                |              StrPlateExtrusionMngt object
-                |              of the SfdPlate.
-                |              
-                | 
-                |              Dim ObjStrPlateExtrusionMngt As
-                |              StrPlateExtrusionMngt
-                |              Set ObjStrPlateExtrusionMngt = ObjSfdPlate.StrPlateExtrusionMngt
+                Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
+                Only)
+                    Returns the StrPlateExtrusionMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrPlateExtrusionMngt the
+                             StrPlateExtrusionMngt object
+                             of the SfdPlate.
+                             
+                
+                             Dim ObjStrPlateExtrusionMngt As
+                             StrPlateExtrusionMngt
+                             Set ObjStrPlateExtrusionMngt = ObjSfdPlate.StrPlateExtrusionMngt
 
         :return: StrPlateExtrusionMngt
         """

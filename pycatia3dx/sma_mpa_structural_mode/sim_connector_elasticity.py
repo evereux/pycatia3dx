@@ -18,14 +18,14 @@ class SimConnectorElasticity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorElasticity
-                | 
-                | Represents the Connector Elasticity object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorElasticity
+                
+                Represents the Connector Elasticity object.
     
     """
 
@@ -39,8 +39,8 @@ class SimConnectorElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDof (Read Only)
-                |     Returns the DOF on which the elasticity connector is defined.
+                Property Direction() As SimDof (Read Only)
+                    Returns the DOF on which the elasticity connector is defined.
 
         :return: int
         """
@@ -53,9 +53,9 @@ class SimConnectorElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElasticityOrder() As
-                | SimConnectorElasticityElasticityOrder
-                |     Returns or sets the elasticity order.
+                Property ElasticityOrder() As
+                SimConnectorElasticityElasticityOrder
+                    Returns or sets the elasticity order.
 
         :return: int
         """
@@ -76,8 +76,8 @@ class SimConnectorElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Stiffness() As double
-                |     Returns or sets the stiffness. Quantity: FORCE, units: kg_s2
+                Property Stiffness() As double
+                    Returns or sets the stiffness. Quantity: FORCE, units: kg_s2
 
         :return: float
         """
@@ -98,8 +98,8 @@ class SimConnectorElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the elasticity behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the elasticity behavior.
 
         :return: SimTable
         """
@@ -111,18 +111,18 @@ class SimConnectorElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimConnectorElasticityTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the elasticity
-                |     behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName
-                |             [in] The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimConnectorElasticityTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the elasticity
+                    behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName
+                            [in] The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

@@ -16,13 +16,13 @@ class OLPJavaArgs(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         OlpJavaArgs
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        OlpJavaArgs
 
     
     """
@@ -37,7 +37,7 @@ class OLPJavaArgs(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JavaClassPath() As CATBSTR (Read Only)
+                Property JavaClassPath() As CATBSTR (Read Only)
 
         :return: str
         """
@@ -50,7 +50,7 @@ class OLPJavaArgs(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JavaExe() As CATBSTR (Read Only)
+                Property JavaExe() As CATBSTR (Read Only)
 
         :return: str
         """

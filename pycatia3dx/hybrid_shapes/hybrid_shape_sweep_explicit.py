@@ -21,26 +21,26 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeSweep
-                |                             HybridShapeSweepExplicit
-                | 
-                | Represents the hybrid shape Sweep explicit feature object.
-                | Role: To access the data of the hybrid shape sweep explicit feature
-                | object.
-                | 
-                | LICENSING INFORMATION: Creation of volume result requires GSO
-                | License
-                | if GSO License is not granted , setting of Volume context has not
-                | effect
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeSweep
+                                            HybridShapeSweepExplicit
+                
+                Represents the hybrid shape Sweep explicit feature object.
+                Role: To access the data of the hybrid shape sweep explicit feature
+                object.
+                
+                LICENSING INFORMATION: Creation of volume result requires GSO
+                License
+                if GSO License is not granted , setting of Volume context has not
+                effect
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,20 +54,20 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLaw() As Reference
-                |     Returns or sets the angle law feature associated to the reference
-                |     surface.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Angle law element. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Property AngleLaw() As Reference
+                    Returns or sets the angle law feature associated to the reference
+                    surface.
+                
+                    Parameters:
+                
+                        oElem
+                            Angle law element. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -88,16 +88,16 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLawInversion() As long
-                |     Returns or sets the angle law inversion information.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Angle law inversion information. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Property AngleLawInversion() As long
+                    Returns or sets the angle law inversion information.
+                
+                    Parameters:
+                
+                        oElem
+                            Angle law inversion information. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: int
         """
@@ -118,17 +118,17 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLawType() As long
-                |     Returns or sets the angle law type associated to the reference
-                |     surface.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Angle law type. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Property AngleLawType() As long
+                    Returns or sets the angle law type associated to the reference
+                    surface.
+                
+                    Parameters:
+                
+                        oElem
+                            Angle law type. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: int
         """
@@ -149,12 +149,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CanonicalDetection() As long
-                |     Returns or sets whether canonical surfaces of the swept surface are
-                |     detected.
-                |     Legal values:
-                |     0 No detection of canonical surface is performed.
-                |     2 Detection of canonical surfaces is performed.
+                Property CanonicalDetection() As long
+                    Returns or sets whether canonical surfaces of the swept surface are
+                    detected.
+                    Legal values:
+                    0 No detection of canonical surface is performed.
+                    2 Detection of canonical surfaces is performed.
 
         :return: int
         """
@@ -175,21 +175,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Context() As long
-                |     Returns or sets the context on Sweep feature.
-                | 
-                |         0 This option creates Swept surface.
-                |         1 This option creates Swept volume.
-                | 
-                | 
-                |     Note: Setting volume result requires GSO License.
-                | 
-                |     Example:
-                |         This example retrieves in oContext the context for the Sweep hybrid
-                |         shape feature.
-                | 
-                |          Dim oContext
-                |          Set oContext = Sweep.Context
+                Property Context() As long
+                    Returns or sets the context on Sweep feature.
+                
+                        0 This option creates Swept surface.
+                        1 This option creates Swept volume.
+                
+                
+                    Note: Setting volume result requires GSO License.
+                
+                    Example:
+                        This example retrieves in oContext the context for the Sweep hybrid
+                        shape feature.
+                
+                         Dim oContext
+                         Set oContext = Sweep.Context
 
         :return: int
         """
@@ -210,22 +210,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstGuideCrv() As Reference
-                |     Gets the first guide curve.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Guide curve. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property FirstGuideCrv() As Reference
+                    Gets the first guide curve.
+                
+                    Parameters:
+                
+                        oElem
+                            Guide curve. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -246,9 +246,9 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property GuideDeviation() As Length (Read Only)
-                |     Returns deviation value (length) from guide curves allowed during sweeping
-                |     operation in order to smooth it.
+                Property GuideDeviation() As Length (Read Only)
+                    Returns deviation value (length) from guide curves allowed during sweeping
+                    operation in order to smooth it.
 
         :return: Length
         """
@@ -261,12 +261,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property GuideDeviationActivity() As boolean
-                |     Returns or sets information whether a deviation from guide curves is
-                |     allowed or not.
-                |     Gives the information on performing smoothing during sweeping
-                |     operation.
-                |     TRUE or FALSE (FALSE if not specified).
+                Property GuideDeviationActivity() As boolean
+                    Returns or sets information whether a deviation from guide curves is
+                    allowed or not.
+                    Gives the information on performing smoothing during sweeping
+                    operation.
+                    TRUE or FALSE (FALSE if not specified).
 
         :return: bool
         """
@@ -287,20 +287,20 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property GuideProjection() As boolean
-                |     Returns or sets the projection of the guide curve onto the reference plane
-                |     in order to use it as spine, in pulling direction case only. Removes Spine if
-                |     GuideProjection is set to TRUE.
-                |     Legal values: True projection is required and False if not
-                | 
-                |     Example:
-                | 
-                |          This example sets that the GuideProjection mode of
-                |          the Sweep hybrid shape sweep explicit feature to
-                |          True.
-                |          
-                | 
-                |          Sweep.GuideProjection = True
+                Property GuideProjection() As boolean
+                    Returns or sets the projection of the guide curve onto the reference plane
+                    in order to use it as spine, in pulling direction case only. Removes Spine if
+                    GuideProjection is set to TRUE.
+                    Legal values: True projection is required and False if not
+                
+                    Example:
+                
+                         This example sets that the GuideProjection mode of
+                         the Sweep hybrid shape sweep explicit feature to
+                         True.
+                         
+                
+                         Sweep.GuideProjection = True
 
         :return: bool
         """
@@ -321,22 +321,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Mode() As long
-                |     Returns or sets positioning mode used for the profile.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                | 
-                |             Values :
-                |             = 1 - CATGSMPositionMode_NoneOrPositioned : no positioning,
-                | 
-                |             = 2 - CATGSMPositionMode_ExplicitSweep : the explicit profile is to be moved from its initial plane to the first sweep plane,
-                | 
-                |             = 3 - CATGSMPositionMode_Develop : === DO NOT USE IN THIS CASE === 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Property Mode() As long
+                    Returns or sets positioning mode used for the profile.
+                
+                    Parameters:
+                
+                        oElem
+                
+                            Values :
+                            = 1 - CATGSMPositionMode_NoneOrPositioned : no positioning,
+                
+                            = 2 - CATGSMPositionMode_ExplicitSweep : the explicit profile is to be moved from its initial plane to the first sweep plane,
+                
+                            = 3 - CATGSMPositionMode_Develop : === DO NOT USE IN THIS CASE === 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: int
         """
@@ -357,21 +357,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PositionMode() As long
-                |     Returns or sets positioning mode.
-                |     Legal values:
-                | 
-                |     0
-                |         CATGSMPositionMode_NoneOrPositioned. 
-                |     1
-                |         CATGSMPositionMode_ExplicitSweep. if a positioning operation is
-                |         done.
-                | 
-                | Example:
-                |     This example retrieves in oPosMode the position mode for the Sweep hybrid
-                |     shape feature.
-                | 
-                |      oPosMode = Sweep.PositionMode
+                Property PositionMode() As long
+                    Returns or sets positioning mode.
+                    Legal values:
+                
+                    0
+                        CATGSMPositionMode_NoneOrPositioned. 
+                    1
+                        CATGSMPositionMode_ExplicitSweep. if a positioning operation is
+                        done.
+                
+                Example:
+                    This example retrieves in oPosMode the position mode for the Sweep hybrid
+                    shape feature.
+                
+                     oPosMode = Sweep.PositionMode
 
         :return: int
         """
@@ -392,22 +392,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PositionedProfile() As Reference
-                |     Returns or sets the positioning transformation associated to the explicit
-                |     swept surface and which result corresponds to the positioned
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Positioning transformation / positioned profile. return value for
-                |             CATScript applications, with (IDLRETVAL) function type
-                |             
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Property PositionedProfile() As Reference
+                    Returns or sets the positioning transformation associated to the explicit
+                    swept surface and which result corresponds to the positioned
+                    profile.
+                
+                    Parameters:
+                
+                        oElem
+                            Positioning transformation / positioned profile. return value for
+                            CATScript applications, with (IDLRETVAL) function type
+                            
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -428,22 +428,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Profile() As Reference
-                |     Gets the profile to be swept out.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Profile element. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Profile() As Reference
+                    Gets the profile to be swept out.
+                
+                    Parameters:
+                
+                        oElem
+                            Profile element. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -464,29 +464,29 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ProfileXAxisComputationMode() As long
-                |     Returns or sets the computation mode of the X axis (or direction) of the
-                |     initial axis system (on the profile). Default value is
-                |     CATGSMPositionDirCompMode_None when PosDirection(OutputDirection) is not
-                |     specified and CATGSMPositionDirCompMode_User if OutputDirection is
-                |     specified.
-                |     Legal values:
-                | 
-                |     0
-                |         CATGSMPositionDirCompMode_None. No X axis specified. 
-                |     1
-                |         CATGSMPositionDirCompMode_Tangent: the X axis is implicitly the tangent
-                |         of the profile at the origin (the origin then HAS to be on the
-                |         profile)
-                |     2
-                |         CATGSMPositionDirCompMode_User: the X axis is specified by a direction
-                |         via SetPosDirection(UserInputDirection, 1)
-                | 
-                | Example:
-                |     This example retrieves in oDirCompMode the Profile X Axis ComputationMode
-                |     for the Sweep hybrid shape feature.
-                | 
-                |      oDirCompMode = Sweep.ProfileXAxisComputationMode
+                Property ProfileXAxisComputationMode() As long
+                    Returns or sets the computation mode of the X axis (or direction) of the
+                    initial axis system (on the profile). Default value is
+                    CATGSMPositionDirCompMode_None when PosDirection(OutputDirection) is not
+                    specified and CATGSMPositionDirCompMode_User if OutputDirection is
+                    specified.
+                    Legal values:
+                
+                    0
+                        CATGSMPositionDirCompMode_None. No X axis specified. 
+                    1
+                        CATGSMPositionDirCompMode_Tangent: the X axis is implicitly the tangent
+                        of the profile at the origin (the origin then HAS to be on the
+                        profile)
+                    2
+                        CATGSMPositionDirCompMode_User: the X axis is specified by a direction
+                        via SetPosDirection(UserInputDirection, 1)
+                
+                Example:
+                    This example retrieves in oDirCompMode the Profile X Axis ComputationMode
+                    for the Sweep hybrid shape feature.
+                
+                     oDirCompMode = Sweep.ProfileXAxisComputationMode
 
         :return: int
         """
@@ -507,17 +507,17 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PullingDirection() As HybridShapeDirection
-                |     Gets or sets the pulling direction
-                |     If the direction is specified, the plane normal to this direction is taken
-                |     as reference surface.
-                | 
-                |     Example:
-                |         This example retrieves in ohDir the pulling direction feature for the
-                |         Sweep hybrid shape feature.
-                | 
-                |          Dim ohDir As CATIAHybridShapeDirection
-                |          Set ohDir = Sweep.PullingDirection
+                Property PullingDirection() As HybridShapeDirection
+                    Gets or sets the pulling direction
+                    If the direction is specified, the plane normal to this direction is taken
+                    as reference surface.
+                
+                    Example:
+                        This example retrieves in ohDir the pulling direction feature for the
+                        Sweep hybrid shape feature.
+                
+                         Dim ohDir As CATIAHybridShapeDirection
+                         Set ohDir = Sweep.PullingDirection
 
         :return: HybridShapeDirection
         """
@@ -538,17 +538,17 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Reference() As Reference
-                |     Returns or sets the reference surface (optional).
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Reference surface. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
+                Property Reference() As Reference
+                    Returns or sets the reference surface (optional).
+                
+                    Parameters:
+                
+                        oElem
+                            Reference surface. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
 
         :return: Reference
         """
@@ -569,22 +569,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondGuideCrv() As Reference
-                |     Gets the second guide curve (optional).
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Guide curve. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property SecondGuideCrv() As Reference
+                    Gets the second guide curve (optional).
+                
+                    Parameters:
+                
+                        oElem
+                            Guide curve. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -605,10 +605,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SmoothActivity() As boolean
-                |     Returns or sets information whether sweeping operation is smoothed or
-                |     not.
-                |     TRUE or FALSE (FALSE if not specified).
+                Property SmoothActivity() As boolean
+                    Returns or sets information whether sweeping operation is smoothed or
+                    not.
+                    TRUE or FALSE (FALSE if not specified).
 
         :return: bool
         """
@@ -629,8 +629,8 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SmoothAngleThreshold() As Angle (Read Only)
-                |     Returns angular threshold.
+                Property SmoothAngleThreshold() As Angle (Read Only)
+                    Returns angular threshold.
 
         :return: Angle
         """
@@ -643,11 +643,11 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SolutionNo() As long
-                |     Returns or sets the choice number, which corresponds to each solution of a
-                |     given explicit sweep case.
-                |     For example: a explicit sweep with reference surface leads to four possible
-                |     solutions.
+                Property SolutionNo() As long
+                    Returns or sets the choice number, which corresponds to each solution of a
+                    given explicit sweep case.
+                    For example: a explicit sweep with reference surface leads to four possible
+                    solutions.
 
         :return: int
         """
@@ -668,19 +668,19 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Spine() As Reference
-                |     Returns or sets the spine (optional) for sweep operation.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Spine curve. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Property Spine() As Reference
+                    Returns or sets the spine (optional) for sweep operation.
+                
+                    Parameters:
+                
+                        oElem
+                            Spine curve. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -701,15 +701,15 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SubType() As long
-                |     Returns or sets the explicit sweep subtype.
-                |     Legal subtype values are:
-                |     1 Explicit profile swept surface defined with reference
-                |     surface
-                |     2 Explicit profile swept surface defined with two guide
-                |     curves
-                |     3 Explicit profile swept surface defined with pulling
-                |     direction
+                Property SubType() As long
+                    Returns or sets the explicit sweep subtype.
+                    Legal subtype values are:
+                    1 Explicit profile swept surface defined with reference
+                    surface
+                    2 Explicit profile swept surface defined with two guide
+                    curves
+                    3 Explicit profile swept surface defined with pulling
+                    direction
 
         :return: int
         """
@@ -729,21 +729,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetAngleRef(long ii) As Angle
-                |     Gets the angle value associated to the reference surface.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Angle value index (1: start value, 2: end value). 
-                |         oElem
-                |             Angle value. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Angle
-                |     See also:
-                |         HybridShapeFactory
+                Func GetAngleRef(long ii) As Angle
+                    Gets the angle value associated to the reference surface.
+                
+                    Parameters:
+                
+                        iI
+                            Angle value index (1: start value, 2: end value). 
+                        oElem
+                            Angle value. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Angle
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: Angle
@@ -755,11 +755,11 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFittingPoints(Reference opIAElemA,Reference opIAElemB)
-                |     Gets the fitting points : located in the profile plane, these points are used for two-guide swept surfaces to determine guide intersection locations.
-                |     param opIAElem1 Fitting point associated to the first
-                |     guide
-                |     param opIAElem2 Fitting point associated to the second guide
+                Sub GetFittingPoints(Reference opIAElemA,Reference opIAElemB)
+                    Gets the fitting points : located in the profile plane, these points are used for two-guide swept surfaces to determine guide intersection locations.
+                    param opIAElem1 Fitting point associated to the first
+                    guide
+                    param opIAElem2 Fitting point associated to the second guide
 
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
@@ -772,14 +772,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetLongitudinalRelimiters(Reference opIAElemA,Reference
-                | opIAElemB)
-                | 
-                |     Deprecated:
-                |         V5R16 CATHybridShapeSweepExplicit#GetRelimiters Returns the elements
-                |         relimiting the spine (or the default spine).
-                |         param : opIAElem1 First relimiting feature (plane or point)
-                |         param : opIAElem2 Second relimiting feature (plane or point)
+                Sub GetLongitudinalRelimiters(Reference opIAElemA,Reference
+                opIAElemB)
+                
+                    Deprecated:
+                        V5R16 CATHybridShapeSweepExplicit#GetRelimiters Returns the elements
+                        relimiting the spine (or the default spine).
+                        param : opIAElem1 First relimiting feature (plane or point)
+                        param : opIAElem2 Second relimiting feature (plane or point)
 
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
@@ -792,9 +792,9 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbAngle(long oAng)
-                |     Returns the number of Angles.
-                |     param : oAng Number of Angle.
+                Sub GetNbAngle(long oAng)
+                    Returns the number of Angles.
+                    param : oAng Number of Angle.
 
         :param int o_ang:
         :return: None
@@ -806,9 +806,9 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbGuide(long oNum)
-                |     Gets the number of guides curves.
-                |     param : oNum Number of guide curves.
+                Sub GetNbGuide(long oNum)
+                    Gets the number of guides curves.
+                    param : oNum Number of guide curves.
 
         :param int o_num:
         :return: None
@@ -820,10 +820,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbPosAngle(long oPosAng)
-                |     Gets the number of numerical positioning parameters corresponding to angles
-                |     from the default positions of the X axes.
-                |     param : oPosAng Number of parameters
+                Sub GetNbPosAngle(long oPosAng)
+                    Gets the number of numerical positioning parameters corresponding to angles
+                    from the default positions of the X axes.
+                    param : oPosAng Number of parameters
 
         :param int o_pos_ang:
         :return: None
@@ -835,10 +835,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbPosCoord(long oPosCoord)
-                |     Gets the number of numerical positioning parameters corresponding to
-                |     coordinates of the new axes systems origins.
-                |     param oPosCoord Number of parameters
+                Sub GetNbPosCoord(long oPosCoord)
+                    Gets the number of numerical positioning parameters corresponding to
+                    coordinates of the new axes systems origins.
+                    param oPosCoord Number of parameters
 
         :param int o_pos_coord:
         :return: None
@@ -850,23 +850,23 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosAngle(long ii) As Angle
-                |     Gets angles if both profile and first sweep plane axis systems from default
-                |     positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Index of numerical positioning coordinates in profile (value 1) or
-                |             first sweep plane (value 2) axis system. 
-                |         oElem
-                |             Angle value. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Angle
-                |     See also:
-                |         HybridShapeFactory
+                Func GetPosAngle(long ii) As Angle
+                    Gets angles if both profile and first sweep plane axis systems from default
+                    positions.
+                
+                    Parameters:
+                
+                        iI
+                            Index of numerical positioning coordinates in profile (value 1) or
+                            first sweep plane (value 2) axis system. 
+                        oElem
+                            Angle value. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Angle
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: Angle
@@ -878,24 +878,24 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosCoord(long ii) As Length
-                |     Gets translations coordinates if both profile axis system and first sweep
-                |     plane axis system from default positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Index of numerical positioning coordinates in profile (value 1 or
-                |             2) or first sweep plane (value 3 or 4) axis system.
-                |             
-                |         oElem
-                |             Coordinate value. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Length
-                |     See also:
-                |         HybridShapeFactory
+                Func GetPosCoord(long ii) As Length
+                    Gets translations coordinates if both profile axis system and first sweep
+                    plane axis system from default positions.
+                
+                    Parameters:
+                
+                        iI
+                            Index of numerical positioning coordinates in profile (value 1 or
+                            2) or first sweep plane (value 3 or 4) axis system.
+                            
+                        oElem
+                            Coordinate value. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Length
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: Length
@@ -907,21 +907,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosDirection(long ii) As Reference
-                |     Gets the positioning directions : profile plane or first sweep plane X-axis direction.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Plane index : 1 for profile plane, 2 for first sweep plane. 
-                |         oElem
-                |             Direction element. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Func GetPosDirection(long ii) As Reference
+                    Gets the positioning directions : profile plane or first sweep plane X-axis direction.
+                
+                    Parameters:
+                
+                        iI
+                            Plane index : 1 for profile plane, 2 for first sweep plane. 
+                        oElem
+                            Direction element. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: Reference
@@ -933,22 +933,22 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosPoint(long ii) As Reference
-                |     Gets the points designated as the origins of the profile plane and first
-                |     sweep plane.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Plane index : 1 for profile plane, 2 for first sweep plane. 
-                |         oElem
-                |             Origin point. return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Func GetPosPoint(long ii) As Reference
+                    Gets the points designated as the origins of the profile plane and first
+                    sweep plane.
+                
+                    Parameters:
+                
+                        iI
+                            Plane index : 1 for profile plane, 2 for first sweep plane. 
+                        oElem
+                            Origin point. return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: Reference
@@ -960,25 +960,25 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosSwapAxes(long ii) As long
-                |     Gets axes inversion from previous definition for both profile plane and
-                |     first sweep plane.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Axis system index (1 for profile plane, 2 for first sweep plane).
-                |             
-                |         oElem
-                |             Inversion value:
-                |             Inversion values :
-                |             = 1 - CATGSMAxisInversionMode_None : no axis inverted.
-                |             = 2 - CATGSMAxisInversionMode_X : only X axis inverted.
-                |             = 3 - CATGSMAxisInversionMode_Y : only Y axis inverted.
-                |             = 4 - CATGSMAxisInversionMode_Both : both axes inverted. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Func GetPosSwapAxes(long ii) As long
+                    Gets axes inversion from previous definition for both profile plane and
+                    first sweep plane.
+                
+                    Parameters:
+                
+                        iI
+                            Axis system index (1 for profile plane, 2 for first sweep plane).
+                            
+                        oElem
+                            Inversion value:
+                            Inversion values :
+                            = 1 - CATGSMAxisInversionMode_None : no axis inverted.
+                            = 2 - CATGSMAxisInversionMode_X : only X axis inverted.
+                            = 3 - CATGSMAxisInversionMode_Y : only Y axis inverted.
+                            = 4 - CATGSMAxisInversionMode_Both : both axes inverted. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :return: int
@@ -990,24 +990,24 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetRelimiters(Reference opIAElem1,long opOrient1,Reference opIAElem2,long
-                | opOrient2)
-                |     Retrieves the elements relimiting the spine (or the default
-                |     spine).
-                | 
-                |     Parameters:
-                | 
-                |         opIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         opOrient1
-                |             Split direction for the first relimitation
-                |             0 means that the beginning of the spine (considering its
-                |             orientation) is removed, 1 means that the end of the spine is removed
-                |             
-                |         opIAElem2
-                |             The second relimiting feature (plane or point) 
-                |         opOrient2
-                |             Split direction for the second relimitation
+                Sub GetRelimiters(Reference opIAElem1,long opOrient1,Reference opIAElem2,long
+                opOrient2)
+                    Retrieves the elements relimiting the spine (or the default
+                    spine).
+                
+                    Parameters:
+                
+                        opIAElem1
+                            The first relimiting feature (plane or point) 
+                        opOrient1
+                            Split direction for the first relimitation
+                            0 means that the beginning of the spine (considering its
+                            orientation) is removed, 1 means that the end of the spine is removed
+                            
+                        opIAElem2
+                            The second relimiting feature (plane or point) 
+                        opOrient2
+                            Split direction for the second relimitation
 
         :param Reference op_ia_elem1:
         :param int op_orient1:
@@ -1022,12 +1022,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub IsSketchAxisUsedAsDefault(boolean oBoolean)
-                |     Queries status wherere Sketch axis used as default or not.
-                |     In case of a sketch profile, specify if the 2D sketch axis must be used as
-                |     default planar profile axis (for positioning purpose) or
-                |     not.
-                |     param oBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
+                Sub IsSketchAxisUsedAsDefault(boolean oBoolean)
+                    Queries status wherere Sketch axis used as default or not.
+                    In case of a sketch profile, specify if the 2D sketch axis must be used as
+                    default planar profile axis (for positioning purpose) or
+                    not.
+                    param oBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
 
         :param bool o_boolean:
         :return: None
@@ -1039,8 +1039,8 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAngle()
-                |     Removes an Angle.
+                Sub RemoveAngle()
+                    Removes an Angle.
 
         :return: None
         """
@@ -1051,8 +1051,8 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveFittingPoints()
-                |     Removes the fitting points.
+                Sub RemoveFittingPoints()
+                    Removes the fitting points.
 
         :return: None
         """
@@ -1063,8 +1063,8 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveGuide()
-                |     Removes a guide curve.
+                Sub RemoveGuide()
+                    Removes a guide curve.
 
         :return: None
         """
@@ -1075,18 +1075,18 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAngleRef(long ii,double Elem)
-                |     Sets the angle value associated to the reference surface.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Angle value index (1: start value, 2: end value). 
-                |         iElem
-                |             Angle value. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetAngleRef(long ii,double Elem)
+                    Sets the angle value associated to the reference surface.
+                
+                    Parameters:
+                
+                        iI
+                            Angle value index (1: start value, 2: end value). 
+                        iElem
+                            Angle value. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param float elem:
@@ -1099,14 +1099,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetFittingPoints(Reference ipIAElemA,Reference ipIAElemB)
-                |     Sets the fitting points.
-                |     Does not work with NULL_var values, Use RemoveFittingPoints() method
-                |     instead.
-                |     param ipIAElem1 Fitting point associated to the first guide (must not be
-                |     equal to NULL_var)
-                |     param ipIAElem2 Fitting point associated to the second guide (can be equal
-                |     to NULL_var)
+                Sub SetFittingPoints(Reference ipIAElemA,Reference ipIAElemB)
+                    Sets the fitting points.
+                    Does not work with NULL_var values, Use RemoveFittingPoints() method
+                    instead.
+                    param ipIAElem1 Fitting point associated to the first guide (must not be
+                    equal to NULL_var)
+                    param ipIAElem2 Fitting point associated to the second guide (can be equal
+                    to NULL_var)
 
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
@@ -1119,10 +1119,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetGuideDeviation(double iLength)
-                |     Sets deviation value (length) from guide curves allowed during sweeping.
-                |     operation in order to smooth it.
-                |     param : iLength Numerical value.
+                Sub SetGuideDeviation(double iLength)
+                    Sets deviation value (length) from guide curves allowed during sweeping.
+                    operation in order to smooth it.
+                    param : iLength Numerical value.
 
         :param float i_length:
         :return: None
@@ -1134,14 +1134,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLongitudinalRelimiters(Reference ipIAElemA,Reference
-                | ipIAElemB)
-                | 
-                |     Deprecated:
-                |         V5R16 CATHybridShapeSweepExplicit#SetRelimiters Sets the elements
-                |         relimiting the spine (or the default spine).
-                |         param : ipIAElem1 First relimiting feature (plane or point)
-                |         param : ipIAElem2 Second relimiting feature (plane or point)
+                Sub SetLongitudinalRelimiters(Reference ipIAElemA,Reference
+                ipIAElemB)
+                
+                    Deprecated:
+                        V5R16 CATHybridShapeSweepExplicit#SetRelimiters Sets the elements
+                        relimiting the spine (or the default spine).
+                        param : ipIAElem1 First relimiting feature (plane or point)
+                        param : ipIAElem2 Second relimiting feature (plane or point)
 
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
@@ -1154,20 +1154,20 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosAngle(long ii,double Elem)
-                |     Sets angles if both profile and first sweep plane axis systems from default
-                |     positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Index of numerical positioning coordinates in profile (value 1) or
-                |             first sweep plane (value 2) axis system. 
-                |         iElem
-                |             Angle value. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetPosAngle(long ii,double Elem)
+                    Sets angles if both profile and first sweep plane axis systems from default
+                    positions.
+                
+                    Parameters:
+                
+                        iI
+                            Index of numerical positioning coordinates in profile (value 1) or
+                            first sweep plane (value 2) axis system. 
+                        iElem
+                            Angle value. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param float elem:
@@ -1180,21 +1180,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosCoord(long ii,double Elem)
-                |     Sets translations coordinates if both profile axis system and first sweep
-                |     plane axis system from default positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Index of numerical positioning coordinates in profile (value 1 or
-                |             2) or first sweep plane (value 3 or 4) axis system.
-                |             
-                |         iElem
-                |             Coordinate value. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetPosCoord(long ii,double Elem)
+                    Sets translations coordinates if both profile axis system and first sweep
+                    plane axis system from default positions.
+                
+                    Parameters:
+                
+                        iI
+                            Index of numerical positioning coordinates in profile (value 1 or
+                            2) or first sweep plane (value 3 or 4) axis system.
+                            
+                        iElem
+                            Coordinate value. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param float elem:
@@ -1207,20 +1207,20 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosDirection(long ii,Reference Elem)
-                |     Sets the positioning directions : profile plane or first sweep plane X-axis direction.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Plane index : 1 for profile plane, 2 for first sweep plane. 
-                |         iElem
-                |             Direction element. 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetPosDirection(long ii,Reference Elem)
+                    Sets the positioning directions : profile plane or first sweep plane X-axis direction.
+                
+                    Parameters:
+                
+                        iI
+                            Plane index : 1 for profile plane, 2 for first sweep plane. 
+                        iElem
+                            Direction element. 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param Reference elem:
@@ -1233,21 +1233,21 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosPoint(long ii,Reference Elem)
-                |     Sets the points designated as the origins of the profile plane and first
-                |     sweep plane.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Plane index : 1 for profile plane, 2 for first sweep plane. 
-                |         iElem
-                |             Origin point. 
-                | 
-                |     See also:
-                |         Reference
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetPosPoint(long ii,Reference Elem)
+                    Sets the points designated as the origins of the profile plane and first
+                    sweep plane.
+                
+                    Parameters:
+                
+                        iI
+                            Plane index : 1 for profile plane, 2 for first sweep plane. 
+                        iElem
+                            Origin point. 
+                
+                    See also:
+                        Reference
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param Reference elem:
@@ -1260,26 +1260,26 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosSwapAxes(long ii,long Elem)
-                |     Sets axes inversion from previous definition for both profile plane and
-                |     first sweep plane.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             Axis system index (1 for profile plane, 2 for first sweep plane).
-                |             
-                |         iElem
-                |             Inversion value:
-                | 
-                |             Inversion values :
-                |             = 1 - CATGSMAxisInversionMode_None : no axis inverted.
-                |             = 2 - CATGSMAxisInversionMode_X : only X axis inverted.
-                |             = 3 - CATGSMAxisInversionMode_Y : only Y axis inverted.
-                |             = 4 - CATGSMAxisInversionMode_Both : both axes inverted. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetPosSwapAxes(long ii,long Elem)
+                    Sets axes inversion from previous definition for both profile plane and
+                    first sweep plane.
+                
+                    Parameters:
+                
+                        iI
+                            Axis system index (1 for profile plane, 2 for first sweep plane).
+                            
+                        iElem
+                            Inversion value:
+                
+                            Inversion values :
+                            = 1 - CATGSMAxisInversionMode_None : no axis inverted.
+                            = 2 - CATGSMAxisInversionMode_X : only X axis inverted.
+                            = 3 - CATGSMAxisInversionMode_Y : only Y axis inverted.
+                            = 4 - CATGSMAxisInversionMode_Both : both axes inverted. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param int ii:
         :param int elem:
@@ -1292,24 +1292,24 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetRelimiters(Reference ipIAElem1,long ipOrient1,Reference ipIAElem2,long
-                | ipOrient2)
-                |     Sets the elements relimiting the spine (or the default
-                |     spine).
-                | 
-                |     Parameters:
-                | 
-                |         ipIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         ipOrient1
-                |             Split direction for the first relimitation
-                |             0 means that the beginning of the spine (considering its
-                |             orientation) is removed, 1 means that the end of the spine is removed
-                |             
-                |         ipIAElem2
-                |             The second relimiting feature (plane or point) 
-                |         ipOrient2
-                |             Split direction for the second relimitation
+                Sub SetRelimiters(Reference ipIAElem1,long ipOrient1,Reference ipIAElem2,long
+                ipOrient2)
+                    Sets the elements relimiting the spine (or the default
+                    spine).
+                
+                    Parameters:
+                
+                        ipIAElem1
+                            The first relimiting feature (plane or point) 
+                        ipOrient1
+                            Split direction for the first relimitation
+                            0 means that the beginning of the spine (considering its
+                            orientation) is removed, 1 means that the end of the spine is removed
+                            
+                        ipIAElem2
+                            The second relimiting feature (plane or point) 
+                        ipOrient2
+                            Split direction for the second relimitation
 
         :param Reference ip_ia_elem1:
         :param int ip_orient1:
@@ -1324,9 +1324,9 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSmoothAngleThreshold(double iAngle)
-                |     Sets angular threshold.
-                |     param : iAngle Numerical value.
+                Sub SetSmoothAngleThreshold(double iAngle)
+                    Sets angular threshold.
+                    param : iAngle Numerical value.
 
         :param float i_angle:
         :return: None
@@ -1338,12 +1338,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub UseSketchAxisAsDefault(boolean iBoolean)
-                |     Uses Sketch Axis As Default.
-                |     In case of a sketch profile, specify if the 2D sketch axis must be used as
-                |     default planar profile axis (for positioning purpose) or
-                |     not.
-                |     param iBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
+                Sub UseSketchAxisAsDefault(boolean iBoolean)
+                    Uses Sketch Axis As Default.
+                    In case of a sketch profile, specify if the 2D sketch axis must be used as
+                    default planar profile axis (for positioning purpose) or
+                    not.
+                    param iBoolean TRUE if the 2D sketch axis must be used, FALSE if not.
 
         :param bool i_boolean:
         :return: None

@@ -18,21 +18,21 @@ class PLMNewService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMNewService
-                | 
-                | Interface representing the PLMNew service.
-                | It can be retreives using the
-                | Application.GetSessionService("PLMNewService")
-                | Role: provides the services to create and edit in authoring session a new PLM
-                | entity. In case this product is not granted the PLMCreate method of the
-                | interface fails. The data are created in the default authoring customization
-                | domain (environment).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMNewService
+                
+                Interface representing the PLMNew service.
+                It can be retreives using the
+                Application.GetSessionService("PLMNewService")
+                Role: provides the services to create and edit in authoring session a new PLM
+                entity. In case this product is not granted the PLMCreate method of the
+                interface fails. The data are created in the default authoring customization
+                domain (environment).
     
     """
 
@@ -45,27 +45,27 @@ class PLMNewService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PLMCreate(CATBSTR iUserType,Editor oEditor)
-                |     Creates a new PLM entity corresponding to a given user
-                |     type.
-                |     Role:This method creates a PLM entity according to the first
-                |     argument.
-                | 
-                |     The PLM Attributes of the created object are initialized using the
-                |     Initialization Business Logic Rule. The creation will fail if all the mandatory
-                |     attributes are not filled by the Business Logic Rule.
-                | 
-                |     The PLM entity is created in the authoring customization defined by the
-                |     current PLM Environment.
-                | 
-                |     Parameters:
-                | 
-                |         iUserType
-                |             The user type to identify the entity to create.
-                |             Legal values: 3DShape: to create a 3D Representation, Drawing: to
-                |             create a Drawing Representation, 
-                |         oEditor
-                |             The resulting editor on the newly created data.
+                Sub PLMCreate(CATBSTR iUserType,Editor oEditor)
+                    Creates a new PLM entity corresponding to a given user
+                    type.
+                    Role:This method creates a PLM entity according to the first
+                    argument.
+                
+                    The PLM Attributes of the created object are initialized using the
+                    Initialization Business Logic Rule. The creation will fail if all the mandatory
+                    attributes are not filled by the Business Logic Rule.
+                
+                    The PLM entity is created in the authoring customization defined by the
+                    current PLM Environment.
+                
+                    Parameters:
+                
+                        iUserType
+                            The user type to identify the entity to create.
+                            Legal values: 3DShape: to create a 3D Representation, Drawing: to
+                            create a Drawing Representation, 
+                        oEditor
+                            The resulting editor on the newly created data.
 
         :param str i_user_type: Examples: "3DShape", "Drawing". Also, "3DPart"  and "VPMReference" license permitting.
         :return: Editor
@@ -77,29 +77,29 @@ class PLMNewService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttributeID,CATVariant
-                | iAttributeValue)
-                |     PreSets the PLM Attribute value for the next entity creation (
-                |     PLMCreate).
-                |     Role: this method valuates a PLM attribute with the given value int the
-                |     next PLM Creation. After next creation, values are flushed. the value will be
-                |     set on the created object if the attribute is found in the create mask of the
-                |     object and its right access is read/write ( attribute can be modified
-                |     interactively) When setting the value on the object, same rules as interactive
-                |     modification in terms of Business Logic are applied ( Propagation, check,
-                |     Finalization )
-                | 
-                |     Parameters:
-                | 
-                |         iAttrName
-                |             Attribute name. 
-                |         iAttrValue
-                |             Attribute value.
-                |             example for strings, enumerates : SetAttributeValue "Attribute Name", "Attribute Value"
-                |             example for integers : SetAttributeValue "Attribute Name",
-                |             8 example for reals, dimensions : SetAttributeValue "Attribute Name",
-                |             10.25 If the type of the attribute is a Date, value must be provided as "mm/dd/yyyy" format.
-                |             If the type of the attribute is a list, IT IS NOT SUPPORTED.
+                Sub SetAttributeValue(CATBSTR iAttributeID,CATVariant
+                iAttributeValue)
+                    PreSets the PLM Attribute value for the next entity creation (
+                    PLMCreate).
+                    Role: this method valuates a PLM attribute with the given value int the
+                    next PLM Creation. After next creation, values are flushed. the value will be
+                    set on the created object if the attribute is found in the create mask of the
+                    object and its right access is read/write ( attribute can be modified
+                    interactively) When setting the value on the object, same rules as interactive
+                    modification in terms of Business Logic are applied ( Propagation, check,
+                    Finalization )
+                
+                    Parameters:
+                
+                        iAttrName
+                            Attribute name. 
+                        iAttrValue
+                            Attribute value.
+                            example for strings, enumerates : SetAttributeValue "Attribute Name", "Attribute Value"
+                            example for integers : SetAttributeValue "Attribute Name",
+                            8 example for reals, dimensions : SetAttributeValue "Attribute Name",
+                            10.25 If the type of the attribute is a Date, value must be provided as "mm/dd/yyyy" format.
+                            If the type of the attribute is a list, IT IS NOT SUPPORTED.
 
         :param str i_attribute_id:
         :param CATVariant i_attribute_value:

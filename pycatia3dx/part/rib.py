@@ -17,20 +17,20 @@ class Rib(Sweep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             CATPartIDLItf.Sweep
-                |                                 Rib
-                | 
-                | Represents the rib shape.
-                | The rib shape is made up of a profile represented by a sketch swept along a
-                | center curve represented by another sketch. This is a "positive" shape: it adds
-                | material to the body it belongs to.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            CATPartIDLItf.Sweep
+                                                Rib
+                
+                Represents the rib shape.
+                The rib shape is made up of a profile represented by a sketch swept along a
+                center curve represented by another sketch. This is a "positive" shape: it adds
+                material to the body it belongs to.
 
     """
 

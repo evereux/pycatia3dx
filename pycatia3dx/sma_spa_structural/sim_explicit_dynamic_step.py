@@ -17,52 +17,52 @@ class SimExplicitDynamicStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimExplicitDynamicStep
-                | 
-                | Represents the Explicit Dynamic Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimExplicitDynamicStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyExplicitDynamicStep As SimExplicitDynamicStep
-                |      Set MyExplicitDynamicStep = MySteps.Add("SimExplicitDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimExplicitDynamicStep named
-                |     "Explicit Dynamic Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyExplicitDynamicStep As SimExplicitDynamicStep
-                |      Set MyExplicitDynamicStep = MySteps.Item("Explicit Dynamic Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimExplicitDynamicStep as
-                |     following:
-                | 
-                |      ...
-                |      myExplicitDynamicStep = mySteps.Add("SimExplicitDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimExplicitDynamicStep
-                |     named "Explicit Dynamic Step.1" as following:
-                | 
-                |      ...
-                |      myExplicitDynamicStep = mySteps.Item("Explicit Dynamic Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimExplicitDynamicStep
+                
+                Represents the Explicit Dynamic Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimExplicitDynamicStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyExplicitDynamicStep As SimExplicitDynamicStep
+                     Set MyExplicitDynamicStep = MySteps.Add("SimExplicitDynamicStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimExplicitDynamicStep named
+                    "Explicit Dynamic Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyExplicitDynamicStep As SimExplicitDynamicStep
+                     Set MyExplicitDynamicStep = MySteps.Item("Explicit Dynamic Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimExplicitDynamicStep as
+                    following:
+                
+                     ...
+                     myExplicitDynamicStep = mySteps.Add("SimExplicitDynamicStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimExplicitDynamicStep
+                    named "Explicit Dynamic Step.1" as following:
+                
+                     ...
+                     myExplicitDynamicStep = mySteps.Item("Explicit Dynamic Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -76,8 +76,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,11 +98,11 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdiabaticHeatingEffectsFlag() As boolean
-                | 
-                |     TRUE: Adiabatic heating effects is activated.
-                | 
-                |     FALSE: Adiabatic heating effects is desactivated.
+                Property AdiabaticHeatingEffectsFlag() As boolean
+                
+                    TRUE: Adiabatic heating effects is activated.
+                
+                    FALSE: Adiabatic heating effects is desactivated.
 
         :return: bool
         """
@@ -123,13 +123,13 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BulkViscosityFlag() As boolean
-                |     Returns or sets the flag that determines if the bulk viscosity parameters
-                |     are enabled.
-                | 
-                |     TRUE: The bulk viscosity parameters are enabled.
-                | 
-                |     FALSE: The bulk viscosity parameters are disabled.
+                Property BulkViscosityFlag() As boolean
+                    Returns or sets the flag that determines if the bulk viscosity parameters
+                    are enabled.
+                
+                    TRUE: The bulk viscosity parameters are enabled.
+                
+                    FALSE: The bulk viscosity parameters are disabled.
 
         :return: bool
         """
@@ -150,12 +150,12 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElementByElementFlag() As boolean
-                | 
-                |     TRUE: Element by element time incrementation calculation is
-                |     activated.
-                | 
-                |     FALSE: Element by element time incrementation calculation is desactivate.
+                Property ElementByElementFlag() As boolean
+                
+                    TRUE: Element by element time incrementation calculation is
+                    activated.
+                
+                    FALSE: Element by element time incrementation calculation is desactivate.
 
         :return: bool
         """
@@ -176,9 +176,9 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FixedIncrementationScheme() As
-                | SimExplicitDynamicStepFixedIncrementationTypeEnm
-                |     Returns or sets the retrieved Fixed incrementation type.
+                Property FixedIncrementationScheme() As
+                SimExplicitDynamicStepFixedIncrementationTypeEnm
+                    Returns or sets the retrieved Fixed incrementation type.
 
         :return: SimExplicitDynamicStepFixedIncrementationTypeEnm
         """
@@ -199,13 +199,13 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                | 
-                |     TRUE: the step is geometrically non linear.
-                | 
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                
+                    TRUE: the step is geometrically non linear.
+                
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -226,11 +226,11 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ImprovedDTMethodFlag() As boolean
-                | 
-                |     TRUE: Improved DT method option is activated.
-                | 
-                |     FALSE: Improve DT method option is deactivated.
+                Property ImprovedDTMethodFlag() As boolean
+                
+                    TRUE: Improved DT method option is activated.
+                
+                    FALSE: Improve DT method option is deactivated.
 
         :return: bool
         """
@@ -251,8 +251,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LinearBulkViscosity() As double
-                |     Returns or sets the linear bulk viscosity parameter.
+                Property LinearBulkViscosity() As double
+                    Returns or sets the linear bulk viscosity parameter.
 
         :return: float
         """
@@ -273,8 +273,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the retrieved maximum increments.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the retrieved maximum increments.
 
         :return: float
         """
@@ -295,13 +295,13 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrementFlag() As boolean
-                |     Returns or sets the flag that determines if the maximum time increment is
-                |     enabled.
-                | 
-                |     TRUE: The maximum time increment is enabled.
-                | 
-                |     FALSE: The maximum time increment is disabled.
+                Property MaximumTimeIncrementFlag() As boolean
+                    Returns or sets the flag that determines if the maximum time increment is
+                    enabled.
+                
+                    TRUE: The maximum time increment is enabled.
+                
+                    FALSE: The maximum time increment is disabled.
 
         :return: bool
         """
@@ -322,8 +322,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property QuadraticBulkViscosity() As double
-                |     Returns or sets the quadratic bulk viscosity parameter.
+                Property QuadraticBulkViscosity() As double
+                    Returns or sets the quadratic bulk viscosity parameter.
 
         :return: float
         """
@@ -344,9 +344,9 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the Explicit Dynamic step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the Explicit Dynamic step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -359,8 +359,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleFactor() As double
-                |     Returns or sets the retrieved scale factor.
+                Property ScaleFactor() As double
+                    Returns or sets the retrieved scale factor.
 
         :return: float
         """
@@ -381,8 +381,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the retrieved total time for the Explicit dynamic step.
+                Property StepTime() As double
+                    Returns or sets the retrieved total time for the Explicit dynamic step.
 
         :return: float
         """
@@ -403,8 +403,8 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the retrieved time increment for the Explicit Dynamic step.
+                Property TimeIncrement() As double
+                    Returns or sets the retrieved time increment for the Explicit Dynamic step.
 
         :return: float
         """
@@ -425,10 +425,10 @@ class SimExplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the retrieved incrementation type for the Explicit Dynamic
-                |     step. 
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the retrieved incrementation type for the Explicit Dynamic
+                    step. 
 
         :return: SimTimeIncrementationScheme
         """

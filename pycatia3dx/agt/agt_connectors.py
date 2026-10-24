@@ -20,15 +20,15 @@ class AGTConnectors(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AGTConnectors
-                | 
-                | Object for Connectors.
-                | To retrieve a Connector from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AGTConnectors
+                
+                Object for Connectors.
+                To retrieve a Connector from collection.
     
     """
 
@@ -41,33 +41,33 @@ class AGTConnectors(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AGTConnector
-                |     Retrieves a Connector from the collection of Connector.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Connector 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Connector from the list of
-                |              Connectors
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim MyAGTRoot As AGTRoot
-                |              Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              'Get a second Connector from the list of Connector by
-                |              index
-                |              Dim ConnectorByIndex As AGTConnectors
-                |              Set ConnectorByIndex = MyAGTRoot.Connectors.Item(2)
-                |              'Get a Connector named "MyConnector.2" from the list of Connector
-                |              by name
-                |              Dim ConnectorByName As AGTConnectors
-                |              Set ConnectorByName = MyAGTRoot.Connectors.Item("MyConnector.2")
+                Func Item(CATVariant iIndex) As AGTConnector
+                    Retrieves a Connector from the collection of Connector.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Connector 
+                
+                    Example:
+                
+                
+                             This example retrieves Connector from the list of
+                             Connectors
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim MyAGTRoot As AGTRoot
+                             Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
+                             'Get a second Connector from the list of Connector by
+                             index
+                             Dim ConnectorByIndex As AGTConnectors
+                             Set ConnectorByIndex = MyAGTRoot.Connectors.Item(2)
+                             'Get a Connector named "MyConnector.2" from the list of Connector
+                             by name
+                             Dim ConnectorByName As AGTConnectors
+                             Set ConnectorByName = MyAGTRoot.Connectors.Item("MyConnector.2")
 
         :param CATVariant i_index:
         :return: AGTConnector

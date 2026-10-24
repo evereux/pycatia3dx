@@ -17,16 +17,16 @@ class ManufacturingMachine(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMachine
-                | 
-                | Interface dedicated to Machine objects management.
-                | Role: This interface offers services to manage mainly the Machine
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMachine
+                
+                Interface dedicated to Machine objects management.
+                Role: This interface offers services to manage mainly the Machine
+                object.
     
     """
 
@@ -39,22 +39,22 @@ class ManufacturingMachine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPostProcessorFile() As CATBSTR
-                |     Retrieves the post processor file associated to the
-                |     Machine.
-                | 
-                |     Parameters:
-                | 
-                |         oFilePath
-                |             The path to the PP Library file associated to the Machine.
-                |             
-                | 
-                |     Returns:
-                |         Return code.
-                |         Legal values:
-                | 
-                |             S_OK: the file is defined
-                |             E_FAIL: otherwise
+                Func GetPostProcessorFile() As CATBSTR
+                    Retrieves the post processor file associated to the
+                    Machine.
+                
+                    Parameters:
+                
+                        oFilePath
+                            The path to the PP Library file associated to the Machine.
+                            
+                
+                    Returns:
+                        Return code.
+                        Legal values:
+                
+                            S_OK: the file is defined
+                            E_FAIL: otherwise
 
         :return: str
         """

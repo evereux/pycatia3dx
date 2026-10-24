@@ -17,52 +17,52 @@ class SimImplicitDynamicStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimImplicitDynamicStep
-                | 
-                | Represents the Implicit Dynamic Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimImplicitDynamicStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyImplicitDynamicStep As SimImplicitDynamicStep
-                |      Set MyImplicitDynamicStep = MySteps.Add("SimImplicitDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimImplicitDynamicStep named
-                |     "Implicit Dynamic Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyImplicitDynamicStep As SimImplicitDynamicStep
-                |      Set MyImplicitDynamicStep = MySteps.Item("Implicit Dynamic Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimImplicitDynamicStep as
-                |     following:
-                | 
-                |      ...
-                |      myImplicitDynamicStep = mySteps.Add("SimImplicitDynamicStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimImplicitDynamicStep
-                |     named "Implicit Dynamic Step.1" as following:
-                | 
-                |      ...
-                |      myImplicitDynamicStep = mySteps.Item("Implicit Dynamic Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimImplicitDynamicStep
+                
+                Represents the Implicit Dynamic Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimImplicitDynamicStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyImplicitDynamicStep As SimImplicitDynamicStep
+                     Set MyImplicitDynamicStep = MySteps.Add("SimImplicitDynamicStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimImplicitDynamicStep named
+                    "Implicit Dynamic Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyImplicitDynamicStep As SimImplicitDynamicStep
+                     Set MyImplicitDynamicStep = MySteps.Item("Implicit Dynamic Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimImplicitDynamicStep as
+                    following:
+                
+                     ...
+                     myImplicitDynamicStep = mySteps.Add("SimImplicitDynamicStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimImplicitDynamicStep
+                    named "Implicit Dynamic Step.1" as following:
+                
+                     ...
+                     myImplicitDynamicStep = mySteps.Item("Implicit Dynamic Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -76,8 +76,8 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,8 +98,8 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicationType() As SimApplicationType
-                |     Returns or sets the application type for the Implicit Dynamic step.
+                Property ApplicationType() As SimApplicationType
+                    Returns or sets the application type for the Implicit Dynamic step.
 
         :return: SimApplicationType
         """
@@ -120,13 +120,13 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                | 
-                |     TRUE: the step is geometrically non linear.
-                | 
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                
+                    TRUE: the step is geometrically non linear.
+                
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -147,9 +147,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the Implicit Dynamic
-                |     step.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the Implicit Dynamic
+                    step.
 
         :return: float
         """
@@ -170,9 +170,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the Implicit Dynamic
-                |     step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the Implicit Dynamic
+                    step.
 
         :return: SimMatrixStorageScheme
         """
@@ -193,9 +193,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the Implicit Dynamic
-                |     step.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the Implicit Dynamic
+                    step.
 
         :return: int
         """
@@ -216,9 +216,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the Implicit Dynamic
-                |     step.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the Implicit Dynamic
+                    step.
 
         :return: float
         """
@@ -239,9 +239,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the Implicit Dynamic
-                |     step.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the Implicit Dynamic
+                    step.
 
         :return: float
         """
@@ -262,9 +262,9 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the Implicit Dynamic step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the Implicit Dynamic step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -277,8 +277,8 @@ class SimImplicitDynamicStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the retrieved total time for the Implicit dynamic step.
+                Property StepTime() As double
+                    Returns or sets the retrieved total time for the Implicit dynamic step.
 
         :return: float
         """

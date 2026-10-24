@@ -20,28 +20,28 @@ class HybridShapeSpline(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeSpline
-                | 
-                | Represents the hybrid shape spline feature object.
-                | Role: To access the data of the hybrid shape spline feature object. This data
-                | includes:
-                | 
-                |     The support surface
-                |     The control points
-                |     The tension at each control point
-                |     The curvature radius at each control point
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeAffinity
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeSpline
+                
+                Represents the hybrid shape spline feature object.
+                Role: To access the data of the hybrid shape spline feature object. This data
+                includes:
+                
+                    The support surface
+                    The control points
+                    The tension at each control point
+                    The curvature radius at each control point
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeAffinity
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,13 +54,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddPoint(Reference ipIAPoint)
-                |     Add a new point .
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             Point element.
+                Sub AddPoint(Reference ipIAPoint)
+                    Add a new point .
+                
+                    Parameters:
+                
+                        iPoint
+                            Point element.
 
         :param Reference ip_ia_point:
         :return: None
@@ -75,26 +75,26 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddPointWithConstraintExplicit(Reference ipIAPoint,HybridShapeDirection
-                | ipIADirTangency,double iTangencyNorm,long iInverseTangency,HybridShapeDirection
-                | ipIADirCurvature,double iCurvatureRadius)
-                |     Add a new point with explicit tangency and curvature.
-                | 
-                |     Parameters:
-                | 
-                |         ipIAPoint
-                |             Point element. 
-                |         ipIADirTangency
-                |             Tangent direction. 
-                |         iTangencyNorm
-                |             Tension. 
-                |         iInverseTangency
-                |             Flag to reverse tangent direction (value can be 1 or -1).
-                |             
-                |         ipIADirCurvature
-                |             Curvature direction. 
-                |         iCurvatureRadius
-                |             Curvature radius value.
+                Sub AddPointWithConstraintExplicit(Reference ipIAPoint,HybridShapeDirection
+                ipIADirTangency,double iTangencyNorm,long iInverseTangency,HybridShapeDirection
+                ipIADirCurvature,double iCurvatureRadius)
+                    Add a new point with explicit tangency and curvature.
+                
+                    Parameters:
+                
+                        ipIAPoint
+                            Point element. 
+                        ipIADirTangency
+                            Tangent direction. 
+                        iTangencyNorm
+                            Tension. 
+                        iInverseTangency
+                            Flag to reverse tangent direction (value can be 1 or -1).
+                            
+                        ipIADirCurvature
+                            Curvature direction. 
+                        iCurvatureRadius
+                            Curvature radius value.
 
         :param Reference ip_ia_point:
         :param HybridShapeDirection ip_ia_dir_tangency:
@@ -114,23 +114,23 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddPointWithConstraintFromCurve(Reference ipIAPoint,Reference
-                | ipIACurveCst,double iTangencyNorm,long iInvertValue,long
-                | iCrvCstType)
-                |     Add a new point with tangency/curvature from a curve.
-                | 
-                |     Parameters:
-                | 
-                |         ipIAPoint
-                |             Point element. 
-                |         ipIACurveCst
-                |             Curvature direction. 
-                |         iTangencyNorm
-                |             tension factor for tangency. 
-                |         iInvertValue
-                |             Orientation for tangent 
-                |         iCrvCstType
-                |             Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
+                Sub AddPointWithConstraintFromCurve(Reference ipIAPoint,Reference
+                ipIACurveCst,double iTangencyNorm,long iInvertValue,long
+                iCrvCstType)
+                    Add a new point with tangency/curvature from a curve.
+                
+                    Parameters:
+                
+                        ipIAPoint
+                            Point element. 
+                        ipIACurveCst
+                            Curvature direction. 
+                        iTangencyNorm
+                            tension factor for tangency. 
+                        iInvertValue
+                            Orientation for tangent 
+                        iCrvCstType
+                            Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
 
         :param Reference ip_ia_point:
         :param Reference ip_ia_curve_cst:
@@ -147,18 +147,18 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetClosure() As long
-                |     Gets whether the curve is closed.
-                | 
-                |     Parameters:
-                | 
-                |         oClosed
-                |             Closing flag
-                | 
-                |             1
-                |                 for a closed curve
-                |             0
-                |                 for an open curve
+                Func GetClosure() As long
+                    Gets whether the curve is closed.
+                
+                    Parameters:
+                
+                        oClosed
+                            Closing flag
+                
+                            1
+                                for a closed curve
+                            0
+                                for an open curve
 
         :return: int
         """
@@ -169,15 +169,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetConstraintType(long iPos) As long
-                |     Returns the ControlPoint type at the given position.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         oCstType
-                |             Type of Control point (CstType=0 : not defined / CstType=1 : Explicit / CstType=2 : FromCurve)
+                Func GetConstraintType(long iPos) As long
+                    Returns the ControlPoint type at the given position.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        oCstType
+                            Type of Control point (CstType=0 : not defined / CstType=1 : Explicit / CstType=2 : FromCurve)
 
         :param int i_pos:
         :return: int
@@ -189,18 +189,18 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetCurvatureRadius(long iPos) As Length
-                |     Returns the curvature radius value for each point of the
-                |     spline.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point in the spline.
-                |             Legal values: first position is 1. The position cannot be 0.
-                |             
-                |         oRadius
-                |             The curvature radius value at this point
+                Func GetCurvatureRadius(long iPos) As Length
+                    Returns the curvature radius value for each point of the
+                    spline.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point in the spline.
+                            Legal values: first position is 1. The position cannot be 0.
+                            
+                        oRadius
+                            The curvature radius value at this point
 
         :param int i_pos:
         :return: Length
@@ -212,16 +212,16 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetDirectionInversion(long iPos) As long
-                |     Gets the orientation of the tangent direction .
-                | 
-                |     Parameters:
-                | 
-                |         oInvertFlag
-                |             invert flag = 1 No Inversion = -1 Invert 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Func GetDirectionInversion(long iPos) As long
+                    Gets the orientation of the tangent direction .
+                
+                    Parameters:
+                
+                        oInvertFlag
+                            invert flag = 1 No Inversion = -1 Invert 
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: int
@@ -233,13 +233,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbControlPoint() As long
-                |     Returns the number of control points.
-                | 
-                |     Parameters:
-                | 
-                |         oNbCtrPt
-                |             The number of control points.
+                Func GetNbControlPoint() As long
+                    Returns the number of control points.
+                
+                    Parameters:
+                
+                        oNbCtrPt
+                            The number of control points.
 
         :return: int
         """
@@ -250,15 +250,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPoint(long iPos) As Reference
-                |     Returns the Point at the given position.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         opIAPoint
-                |             Type of Control point (TypeCtrPoint =1 : Explicit / TypeCtrPoint =2 : FromCurve)
+                Func GetPoint(long iPos) As Reference
+                    Returns the Point at the given position.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        opIAPoint
+                            Type of Control point (TypeCtrPoint =1 : Explicit / TypeCtrPoint =2 : FromCurve)
 
         :param int i_pos:
         :return: Reference
@@ -272,28 +272,28 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPointConstraintExplicit(long iPos,HybridShapeDirection
-                | opIADirTangency,double oTangencyNorm,long oInverseTangency,HybridShapeDirection
-                | opIADirCurvature,double oCurvatureRadius)
-                |     Returns the Constraint of the point at iPos.
-                |     Available for Explicit Point Constraint type (CstType =1 from
-                |     GetContraintType)
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         opIADirTangency
-                |             Tangent direction. 
-                |         oTangencyNorm
-                |             Tension. 
-                |         oInverseTangency
-                |             Flag to reverse tangent direction (value can be 1 or -1).
-                |             
-                |         opIADirCurvature
-                |             Curvature direction. 
-                |         oCurvatureRadius
-                |             Curvature radius value.
+                Sub GetPointConstraintExplicit(long iPos,HybridShapeDirection
+                opIADirTangency,double oTangencyNorm,long oInverseTangency,HybridShapeDirection
+                opIADirCurvature,double oCurvatureRadius)
+                    Returns the Constraint of the point at iPos.
+                    Available for Explicit Point Constraint type (CstType =1 from
+                    GetContraintType)
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        opIADirTangency
+                            Tangent direction. 
+                        oTangencyNorm
+                            Tension. 
+                        oInverseTangency
+                            Flag to reverse tangent direction (value can be 1 or -1).
+                            
+                        opIADirCurvature
+                            Curvature direction. 
+                        oCurvatureRadius
+                            Curvature radius value.
 
         :param int i_pos:
         :param HybridShapeDirection op_ia_dir_tangency:
@@ -313,24 +313,24 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPointConstraintFromCurve(long iPos,Reference opIACurveCst,double
-                | oTangencyNorm,long oInvertValue,long oCrvCstType)
-                |     Returns the Constraint of the point at iPos.
-                |     Available for FromCurve Point Constraint type (CstType =2 from
-                |     GetContraintType)
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         opIACurveCst
-                |             Curvature direction. 
-                |         oTangencyNorm
-                |             tension factor for tangency. 
-                |         oInvertValue
-                |             Orientation for tangent 
-                |         oCrvCstType
-                |             Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
+                Sub GetPointConstraintFromCurve(long iPos,Reference opIACurveCst,double
+                oTangencyNorm,long oInvertValue,long oCrvCstType)
+                    Returns the Constraint of the point at iPos.
+                    Available for FromCurve Point Constraint type (CstType =2 from
+                    GetContraintType)
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        opIACurveCst
+                            Curvature direction. 
+                        oTangencyNorm
+                            tension factor for tangency. 
+                        oInvertValue
+                            Orientation for tangent 
+                        oCrvCstType
+                            Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
 
         :param int i_pos:
         :param Reference op_ia_curve_cst:
@@ -347,15 +347,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPointPosition(Reference ipIAPoint) As long
-                |     Returns the position of a given point.
-                | 
-                |     Parameters:
-                | 
-                |         ipIAPoint
-                |             Point 
-                |         oPos
-                |             The position of the point (=0 Point Not in Spline)
+                Func GetPointPosition(Reference ipIAPoint) As long
+                    Returns the position of a given point.
+                
+                    Parameters:
+                
+                        ipIAPoint
+                            Point 
+                        oPos
+                            The position of the point (=0 Point Not in Spline)
 
         :param Reference ip_ia_point:
         :return: int
@@ -367,13 +367,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSplineType() As long
-                |     Gets the spline type.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             = 0 : Cubic Type Spline. = 1 : WilsonFowler Type Spline.
+                Func GetSplineType() As long
+                    Gets the spline type.
+                
+                    Parameters:
+                
+                        oType
+                            = 0 : Cubic Type Spline. = 1 : WilsonFowler Type Spline.
 
         :return: int
         """
@@ -384,13 +384,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSupport() As Reference
-                |     Gets the support surface.
-                | 
-                |     Parameters:
-                | 
-                |         oSupport
-                |             Supporting surface for spline (if exist)
+                Func GetSupport() As Reference
+                    Gets the support surface.
+                
+                    Parameters:
+                
+                        oSupport
+                            Supporting surface for spline (if exist)
 
         :return: Reference
         """
@@ -401,18 +401,18 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetTangentNorm(long iPos) As RealParam
-                |     Returns the tension for each point of the spline.
-                |     The tension is the tangent norm at the given point.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point in the spline.
-                |             Legal values: first position is 1. The position cannot be 0.
-                |             
-                |         oTension
-                |             The tension at this point
+                Func GetTangentNorm(long iPos) As RealParam
+                    Returns the tension for each point of the spline.
+                    The tension is the tangent norm at the given point.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point in the spline.
+                            Legal values: first position is 1. The position cannot be 0.
+                            
+                        oTension
+                            The tension at this point
 
         :param int i_pos:
         :return: RealParam
@@ -424,14 +424,14 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InvertDirection(long iPos)
-                |     Inverts the orientation of the tangent direction .
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Sub InvertDirection(long iPos)
+                    Inverts the orientation of the tangent direction .
+                
+                    Parameters:
+                
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: None
@@ -443,8 +443,8 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAll()
-                |     Removes all elements in the list of points.
+                Sub RemoveAll()
+                    Removes all elements in the list of points.
 
         :return: None
         """
@@ -455,13 +455,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveControlPoint(long iPos)
-                |     Removes a point at the given position.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to remove
+                Sub RemoveControlPoint(long iPos)
+                    Removes a point at the given position.
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to remove
 
         :param int i_pos:
         :return: None
@@ -473,15 +473,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveCurvatureRadiusDirection(long iPos)
-                |     Removes Curvature Radius Direction for the given point of the
-                |     spline.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Sub RemoveCurvatureRadiusDirection(long iPos)
+                    Removes Curvature Radius Direction for the given point of the
+                    spline.
+                
+                    Parameters:
+                
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: None
@@ -493,15 +493,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveCurvatureRadiusValue(long iPos)
-                |     Removes Curvature Radius Value for the given point of the
-                |     spline.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Sub RemoveCurvatureRadiusValue(long iPos)
+                    Removes Curvature Radius Value for the given point of the
+                    spline.
+                
+                    Parameters:
+                
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: None
@@ -513,8 +513,8 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveSupport()
-                |     Removes the support surface.
+                Sub RemoveSupport()
+                    Removes the support surface.
 
         :return: None
         """
@@ -525,15 +525,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveTangentDirection(long iPos)
-                |     Removes tangent Direction for the given point of the
-                |     spline.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Sub RemoveTangentDirection(long iPos)
+                    Removes tangent Direction for the given point of the
+                    spline.
+                
+                    Parameters:
+                
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: None
@@ -545,14 +545,14 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveTension(long iPos)
-                |     Removes the Tension for the given point of the spline.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             Position of point in spline First Position is 1 Position 0 return
-                |             E_FAIL
+                Sub RemoveTension(long iPos)
+                    Removes the Tension for the given point of the spline.
+                
+                    Parameters:
+                
+                        iPos
+                            Position of point in spline First Position is 1 Position 0 return
+                            E_FAIL
 
         :param int i_pos:
         :return: None
@@ -564,15 +564,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ReplacePointAtPosition(long iPos,Reference iPoint)
-                |     Replaces a point in the list at the given position.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             Point 
-                |         iPos
-                |             Replace position
+                Sub ReplacePointAtPosition(long iPos,Reference iPoint)
+                    Replaces a point in the list at the given position.
+                
+                    Parameters:
+                
+                        oPoint
+                            Point 
+                        iPos
+                            Replace position
 
         :param int i_pos:
         :param Reference i_point:
@@ -585,13 +585,13 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetClosing(long iClosingType)
-                |     Activates the closing option of the spline.
-                | 
-                |     Parameters:
-                | 
-                |         iClosingType
-                |             The spline closing option
+                Sub SetClosing(long iClosingType)
+                    Activates the closing option of the spline.
+                
+                    Parameters:
+                
+                        iClosingType
+                            The spline closing option
 
         :param int i_closing_type:
         :return: None
@@ -603,15 +603,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPointAfter(long iPos,Reference ipIAPoint)
-                |     Sets the Point After a given position.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position reference (0 < position < Nbpt) 
-                |         ipIAPoint
-                |             Point
+                Sub SetPointAfter(long iPos,Reference ipIAPoint)
+                    Sets the Point After a given position.
+                
+                    Parameters:
+                
+                        iPos
+                            The position reference (0 < position < Nbpt) 
+                        ipIAPoint
+                            Point
 
         :param int i_pos:
         :param Reference ip_ia_point:
@@ -624,15 +624,15 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPointBefore(long iPos,Reference ipIAPoint)
-                |     Sets the Point Before a given position.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position reference (1 < position < Nbpt+1) 
-                |         ipIAPoint
-                |             Point
+                Sub SetPointBefore(long iPos,Reference ipIAPoint)
+                    Sets the Point Before a given position.
+                
+                    Parameters:
+                
+                        iPos
+                            The position reference (1 < position < Nbpt+1) 
+                        ipIAPoint
+                            Point
 
         :param int i_pos:
         :param Reference ip_ia_point:
@@ -647,28 +647,28 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPointConstraintExplicit(long iPos,HybridShapeDirection
-                | ipIADirTangency,double iTangencyNorm,long iInverseTangency,HybridShapeDirection
-                | ipIADirCurvature,double iCurvatureRadius)
-                |     Sets the Constraint of the point at iPos.
-                |     Available for Explicit Point Constraint type (CstType =1 from
-                |     GetContraintType)
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         ipIADirTangency
-                |             Tangent direction. 
-                |         iTangencyNorm
-                |             Tension. 
-                |         iInverseTangency
-                |             Flag to reverse tangent direction (value can be 1 or -1).
-                |             
-                |         ipIADirCurvature
-                |             Curvature direction. 
-                |         iCurvatureRadius
-                |             Curvature radius value.
+                Sub SetPointConstraintExplicit(long iPos,HybridShapeDirection
+                ipIADirTangency,double iTangencyNorm,long iInverseTangency,HybridShapeDirection
+                ipIADirCurvature,double iCurvatureRadius)
+                    Sets the Constraint of the point at iPos.
+                    Available for Explicit Point Constraint type (CstType =1 from
+                    GetContraintType)
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        ipIADirTangency
+                            Tangent direction. 
+                        iTangencyNorm
+                            Tension. 
+                        iInverseTangency
+                            Flag to reverse tangent direction (value can be 1 or -1).
+                            
+                        ipIADirCurvature
+                            Curvature direction. 
+                        iCurvatureRadius
+                            Curvature radius value.
 
         :param int i_pos:
         :param HybridShapeDirection ip_ia_dir_tangency:
@@ -688,24 +688,24 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPointConstraintFromCurve(long iPos,Reference ipIACurveCst,double
-                | iTangencyNorm,long iInvertValue,long iCrvCstType)
-                |     Sets the Constraint of the point at iPos.
-                |     Available for From Curve Point Constraint type (CstType =2 from
-                |     GetContraintType)
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position of the point to retrieve 
-                |         ipIACurveCst
-                |             Curvature direction. 
-                |         iTangencyNorm
-                |             tension factor for tangency. 
-                |         iInvertValue
-                |             Orientation for tangent 
-                |         iCrvCstType
-                |             Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
+                Sub SetPointConstraintFromCurve(long iPos,Reference ipIACurveCst,double
+                iTangencyNorm,long iInvertValue,long iCrvCstType)
+                    Sets the Constraint of the point at iPos.
+                    Available for From Curve Point Constraint type (CstType =2 from
+                    GetContraintType)
+                
+                    Parameters:
+                
+                        iPos
+                            The position of the point to retrieve 
+                        ipIACurveCst
+                            Curvature direction. 
+                        iTangencyNorm
+                            tension factor for tangency. 
+                        iInvertValue
+                            Orientation for tangent 
+                        iCrvCstType
+                            Continuity type for Curve Constraint (1=Tangency , 2-= Curvature).
 
         :param int i_pos:
         :param Reference ip_ia_curve_cst:
@@ -722,14 +722,14 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSplineType(long iSplineType)
-                |     Sets the spline type.
-                | 
-                |     Parameters:
-                | 
-                |         iSplineType
-                |             The spline type
-                |             Legal values: Cubic spline (0) or WilsonFowler (1)
+                Sub SetSplineType(long iSplineType)
+                    Sets the spline type.
+                
+                    Parameters:
+                
+                        iSplineType
+                            The spline type
+                            Legal values: Cubic spline (0) or WilsonFowler (1)
 
         :param int i_spline_type:
         :return: None
@@ -741,16 +741,16 @@ class HybridShapeSpline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSupport(Reference iSupport)
-                |     Sets the spline support surface.
-                |     Have your "tangent direction" tangent to this support is
-                |     recommended.
-                | 
-                |     Parameters:
-                | 
-                |         iSupport
-                |             The spline support surface.
-                |             Sub-element(s) supported (see Boundary object): Face.
+                Sub SetSupport(Reference iSupport)
+                    Sets the spline support surface.
+                    Have your "tangent direction" tangent to this support is
+                    recommended.
+                
+                    Parameters:
+                
+                        iSupport
+                            The spline support surface.
+                            Sub-element(s) supported (see Boundary object): Face.
 
         :param Reference i_support:
         :return: None

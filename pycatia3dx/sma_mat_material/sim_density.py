@@ -19,51 +19,51 @@ class SimDensity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDensity
-                | 
-                | Represents the Density object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimDensity as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyDensity As SimDensity
-                |      Set MyDensity = MyMaterialOptions.Add("SimDensity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimDensity named
-                |     "Density.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyDensity As SimDensity
-                |      Set MyDensity = MyMaterialOptions.Item("Density.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimDensity as following:
-                | 
-                |      ...
-                |      myDensity = myMaterialOptions.Add("SimDensity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimDensity named "Density.1" as following:
-                | 
-                |      ...
-                |      myDensity = myMaterialOptions.Item("Density.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDensity
+                
+                Represents the Density object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimDensity as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyDensity As SimDensity
+                     Set MyDensity = MyMaterialOptions.Add("SimDensity")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimDensity named
+                    "Density.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyDensity As SimDensity
+                     Set MyDensity = MyMaterialOptions.Item("Density.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimDensity as following:
+                
+                     ...
+                     myDensity = myMaterialOptions.Add("SimDensity")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimDensity named "Density.1" as following:
+                
+                     ...
+                     myDensity = myMaterialOptions.Item("Density.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimDensity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreMaterialDensity() As double (Read Only)
-                |     Returns the core material density value. Quantity: DENSITY, Units: kg_m3
+                Property CoreMaterialDensity() As double (Read Only)
+                    Returns the core material density value. Quantity: DENSITY, Units: kg_m3
 
         :return: float
         """
@@ -91,14 +91,14 @@ class SimDensity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoreMaterialDensityFlag() As boolean
-                |     Returns or sets the flag that determines if the core material density is
-                |     used instead of the material table.
-                | 
-                |     TRUE: The core material density is used instead of the material
-                |     table.
-                | 
-                |     FALSE: The material table is used instead of the core material density.
+                Property CoreMaterialDensityFlag() As boolean
+                    Returns or sets the flag that determines if the core material density is
+                    used instead of the material table.
+                
+                    TRUE: The core material density is used instead of the material
+                    table.
+                
+                    FALSE: The material table is used instead of the core material density.
 
         :return: bool
         """
@@ -119,8 +119,8 @@ class SimDensity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -132,19 +132,19 @@ class SimDensity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimDensityMaterialTableColumn iMaterialTableColumn)
-                | As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetMaterialTableColumn(SimDensityMaterialTableColumn iMaterialTableColumn)
+                As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn

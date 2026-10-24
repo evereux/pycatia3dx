@@ -18,35 +18,35 @@ class SimFeatureStates(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimFeatureStates
-                | 
-                | Represents the Feature States Collection.
-                | 
-                | Example:
-                |     Given a SimStep object you can retrieve a SimFeatureStates collection as
-                |     following:
-                | 
-                |      Dim MyStaticStep As SimStaticStep
-                |      ...
-                |      Dim MyFeatureStates As SimFeatureStates
-                |      Set MyFeatureStates = MyStaticStep.FeatureStates
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimStep object you can retrieve a SimFeatureStates collection as
-                |     following:
-                | 
-                |      ...
-                |      myFeatureStates = myStaticStep.FeatureStates
-                |      
-                | 
-                | See also:
-                |     SimStep
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimFeatureStates
+                
+                Represents the Feature States Collection.
+                
+                Example:
+                    Given a SimStep object you can retrieve a SimFeatureStates collection as
+                    following:
+                
+                     Dim MyStaticStep As SimStaticStep
+                     ...
+                     Dim MyFeatureStates As SimFeatureStates
+                     Set MyFeatureStates = MyStaticStep.FeatureStates
+                     
+                
+                Example in Python:
+                    Given a SimStep object you can retrieve a SimFeatureStates collection as
+                    following:
+                
+                     ...
+                     myFeatureStates = myStaticStep.FeatureStates
+                     
+                
+                See also:
+                    SimStep
     
     """
 
@@ -60,17 +60,17 @@ class SimFeatureStates(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateFeatureState(CATBaseDispatch iFeature)
-                |     Creates a Feature State object and returns it. The Feature State is created
-                |     in the context of a SimStep, SimLoadSet, or SimLoadCase. When created in a
-                |     SimStep, corresponding Feature States are created in the downstream Steps. When
-                |     created in a SimLoadSet or SimLoadCase, a single Feature State is
-                |     created.
-                | 
-                |     Parameters:
-                | 
-                |         iFeature
-                |             The Feature for which feature state object has to be created.
+                Sub CreateFeatureState(CATBaseDispatch iFeature)
+                    Creates a Feature State object and returns it. The Feature State is created
+                    in the context of a SimStep, SimLoadSet, or SimLoadCase. When created in a
+                    SimStep, corresponding Feature States are created in the downstream Steps. When
+                    created in a SimLoadSet or SimLoadCase, a single Feature State is
+                    created.
+                
+                    Parameters:
+                
+                        iFeature
+                            The Feature for which feature state object has to be created.
 
         :param AnyObject i_feature:
         :return: None
@@ -82,17 +82,17 @@ class SimFeatureStates(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Feature State from the collection of Feature
-                |     States.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Feature State. 
-                | 
-                |     Returns:
-                |         The retrieved SimFeatureState object
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Feature State from the collection of Feature
+                    States.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Feature State. 
+                
+                    Returns:
+                        The retrieved SimFeatureState object
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -104,17 +104,17 @@ class SimFeatureStates(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Feature State from the collection of Feature States. The Feature
-                |     State is removed in the context of a SimStep, SimLoadSet, or SimLoadCase. When
-                |     removed from a SimStep, all Feature States referencing the same Feature are
-                |     removed in the upstream and downstream Steps. When removed from a SimLoadSet or
-                |     SimLoadCase, a single Feature State is removed.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Feature State. 
+                Sub Remove(CATVariant iIndex)
+                    Removes a Feature State from the collection of Feature States. The Feature
+                    State is removed in the context of a SimStep, SimLoadSet, or SimLoadCase. When
+                    removed from a SimStep, all Feature States referencing the same Feature are
+                    removed in the upstream and downstream Steps. When removed from a SimLoadSet or
+                    SimLoadCase, a single Feature State is removed.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Feature State. 
 
         :param CATVariant i_index:
         :return: None

@@ -19,51 +19,51 @@ class SimShellSection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimShellSection
-                | 
-                | Represents the Shell Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimShellSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyShellSection As SimShellSection
-                |      Set MyShellSection = MyProperties.Add("SimShellSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimShellSection named
-                |     "Shell Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyShellSection As SimShellSection
-                |      Set MyShellSection = MyProperties.Item("Shell Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a SimShellSection
-                |     as following:
-                | 
-                |      ...
-                |      myShellSection = myProperties.Add("SimShellSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimShellSection named "Shell Section.1" as following:
-                | 
-                |      ...
-                |      myShellSection = myProperties.Item("Shell Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimShellSection
+                
+                Represents the Shell Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimShellSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyShellSection As SimShellSection
+                     Set MyShellSection = MyProperties.Add("SimShellSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimShellSection named
+                    "Shell Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyShellSection As SimShellSection
+                     Set MyShellSection = MyProperties.Item("Shell Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a SimShellSection
+                    as following:
+                
+                     ...
+                     myShellSection = myProperties.Add("SimShellSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimShellSection named "Shell Section.1" as following:
+                
+                     ...
+                     myShellSection = myProperties.Item("Shell Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -77,8 +77,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property AllRebarLayers() As CATSafeArrayVariant (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: tuple
         """
@@ -91,11 +91,11 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldPointSpecified() As boolean
-                |     Returns or sets the FieldPointSpecified flag .
-                |     TRUE: the FieldPointSpecified flag is set .
-                | 
-                |     FALSE: the FieldPointSpecified flag is not set .
+                Property FieldPointSpecified() As boolean
+                    Returns or sets the FieldPointSpecified flag .
+                    TRUE: the FieldPointSpecified flag is set .
+                
+                    FALSE: the FieldPointSpecified flag is not set .
 
         :return: bool
         """
@@ -116,8 +116,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldPoints() As long
-                |     Returns or sets the number of integration points used for the section.
+                Property FieldPoints() As long
+                    Returns or sets the number of integration points used for the section.
 
         :return: int
         """
@@ -138,8 +138,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InfiniteMaxThicknessIntervalFlag() As boolean
-                |     deprecated R426. Please use IntervalFlag PROPERTY
+                Property InfiniteMaxThicknessIntervalFlag() As boolean
+                    deprecated R426. Please use IntervalFlag PROPERTY
 
         :return: bool
         """
@@ -160,9 +160,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntegrationScheme() As
-                | SimShellSectionIntegrationScheme
-                |     Returns or sets the integration method used for the section.
+                Property IntegrationScheme() As
+                SimShellSectionIntegrationScheme
+                    Returns or sets the integration method used for the section.
 
         :return: int
         """
@@ -183,8 +183,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Interval() As double
-                |     Returns or sets the interval value. Quantity: LENGTH, units: m
+                Property Interval() As double
+                    Returns or sets the interval value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -205,14 +205,14 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntervalFlag() As boolean (Read Only)
-                |     Returns the flag that determines if the thickness interval range value is
-                |     taken as "Unlimited" or as specified by the user.
-                |     TRUE: the thickness interval range value is considered as unlimited and
-                |     user must not specify any value.
-                | 
-                |     FALSE: the thickness interval range value is to be specified by
-                |     user.
+                Property IntervalFlag() As boolean (Read Only)
+                    Returns the flag that determines if the thickness interval range value is
+                    taken as "Unlimited" or as specified by the user.
+                    TRUE: the thickness interval range value is considered as unlimited and
+                    user must not specify any value.
+                
+                    FALSE: the thickness interval range value is to be specified by
+                    user.
 
         :return: bool
         """
@@ -225,11 +225,11 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MapThicknessToNodesFlag() As boolean
-                |     Returns or sets the MapThicknessToNodes flag .
-                |     TRUE: the MapThicknessToNodes flag is set .
-                | 
-                |     FALSE: the MapThicknessToNodes flag is not set .
+                Property MapThicknessToNodesFlag() As boolean
+                    Returns or sets the MapThicknessToNodes flag .
+                    TRUE: the MapThicknessToNodes flag is set .
+                
+                    FALSE: the MapThicknessToNodes flag is not set .
 
         :return: bool
         """
@@ -250,8 +250,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -272,8 +272,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -294,8 +294,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumIntPoints() As long
-                |     Returns or sets the number of integration points used for the section.
+                Property NumIntPoints() As long
+                    Returns or sets the number of integration points used for the section.
 
         :return: int
         """
@@ -316,8 +316,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetMethod() As SimShellSectionOffsetMethod
-                |     Returns or sets the offset method used for the section.
+                Property OffsetMethod() As SimShellSectionOffsetMethod
+                    Returns or sets the offset method used for the section.
 
         :return: int
         """
@@ -338,9 +338,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetRatio() As double
-                |     Returns or sets the offset ratio used for section. Quantity: Real, units:
-                |     None
+                Property OffsetRatio() As double
+                    Returns or sets the offset ratio used for section. Quantity: Real, units:
+                    None
 
         :return: float
         """
@@ -361,9 +361,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetValue() As double
-                |     Returns or sets the offset value used for the section. Quantity: LENGTH,
-                |     units: m
+                Property OffsetValue() As double
+                    Returns or sets the offset value used for the section. Quantity: LENGTH,
+                    units: m
 
         :return: float
         """
@@ -384,8 +384,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the section.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the section.
 
         :return: SimOrientation
         """
@@ -398,8 +398,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonMethod() As SimShellSectionPoissonMethod
-                |     Poisson method used for the section.
+                Property PoissonMethod() As SimShellSectionPoissonMethod
+                    Poisson method used for the section.
 
         :return: int
         """
@@ -420,8 +420,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PoissonValue() As double
-                |     Poisson's ratio value. Quantity: Real, units: None
+                Property PoissonValue() As double
+                    Poisson's ratio value. Quantity: Real, units: None
 
         :return: float
         """
@@ -442,13 +442,13 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreIntegrationFlag() As boolean
-                |     Returns or sets the flag that determines if the shell is integrated before
-                |     analysis.
-                | 
-                |     TRUE: the shell is integrated before analysis.
-                | 
-                |     FALSE: the shell is integrated during the solution.
+                Property PreIntegrationFlag() As boolean
+                    Returns or sets the flag that determines if the shell is integrated before
+                    analysis.
+                
+                    TRUE: the shell is integrated before analysis.
+                
+                    FALSE: the shell is integrated during the solution.
 
         :return: bool
         """
@@ -469,9 +469,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RebarLayersOrientation() As SimOrientation (Read
-                | Only)
-                |     Returns the Orientation of the Rebar Layers associated with the section.
+                Property RebarLayersOrientation() As SimOrientation (Read
+                Only)
+                    Returns the Orientation of the Rebar Layers associated with the section.
 
         :return: SimOrientation
         """
@@ -484,8 +484,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Rebars() As SimRebarLayers (Read Only)
-                |     Returns the Rebar Layers associated with the section.
+                Property Rebars() As SimRebarLayers (Read Only)
+                    Returns the Rebar Layers associated with the section.
 
         :return: SimRebarLayers
         """
@@ -498,13 +498,13 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RoundOffFlag() As boolean
-                |     Returns or sets the round off flag that rounds off the thickness or offset
-                |     values upto 4 decimal places.
-                |     TRUE: the thickness interval range value is rounded off.
-                | 
-                |     FALSE: the thickness interval range value is not rounded
-                |     off.
+                Property RoundOffFlag() As boolean
+                    Returns or sets the round off flag that rounds off the thickness or offset
+                    values upto 4 decimal places.
+                    TRUE: the thickness interval range value is rounded off.
+                
+                    FALSE: the thickness interval range value is not rounded
+                    off.
 
         :return: bool
         """
@@ -525,33 +525,33 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -564,13 +564,13 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplitByThicknessOffsetFlag() As boolean
-                |     Returns or sets the interval flag that determines whether the section is to
-                |     be grouped according to thickness interval or not.
-                |     TRUE: the section will be grouped in different sections.
-                | 
-                |     FALSE: the section will not be grouped in different
-                |     sections.
+                Property SplitByThicknessOffsetFlag() As boolean
+                    Returns or sets the interval flag that determines whether the section is to
+                    be grouped according to thickness interval or not.
+                    TRUE: the section will be grouped in different sections.
+                
+                    FALSE: the section will not be grouped in different
+                    sections.
 
         :return: bool
         """
@@ -591,8 +591,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessField() As SimScalarField (Read Only)
-                |     Returns the thickness field.
+                Property ThicknessField() As SimScalarField (Read Only)
+                    Returns the thickness field.
 
         :return: SimScalarField
         """
@@ -605,8 +605,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessGroupingFlag() As boolean
-                |     deprecated R426. Please use SplitByThicknessOffsetFlag PROPERTY
+                Property ThicknessGroupingFlag() As boolean
+                    deprecated R426. Please use SplitByThicknessOffsetFlag PROPERTY
 
         :return: bool
         """
@@ -627,8 +627,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessGroupingValue() As double
-                |     deprecated R426. Please use Interval PROPERTY
+                Property ThicknessGroupingValue() As double
+                    deprecated R426. Please use Interval PROPERTY
 
         :return: float
         """
@@ -649,8 +649,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThicknessType() As SimShellSectionThicknessType
-                |     Returns or sets the thickness type.
+                Property ThicknessType() As SimShellSectionThicknessType
+                    Returns or sets the thickness type.
 
         :return: int
         """
@@ -671,9 +671,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TransverseShearStiffnessOptionFlag() As boolean
-                |     CATBoolean TRUE the transverse shear stiffness option is enabled FALSE the
-                |     transverse shear stiffness option is disabled
+                Property TransverseShearStiffnessOptionFlag() As boolean
+                    CATBoolean TRUE the transverse shear stiffness option is enabled FALSE the
+                    transverse shear stiffness option is disabled
 
         :return: bool
         """
@@ -694,9 +694,9 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThickness() As double
-                |     Returns or sets the uniform thickness value used for the section. Quantity:
-                |     LENGTH, units: m
+                Property UniformThickness() As double
+                    Returns or sets the uniform thickness value used for the section. Quantity:
+                    LENGTH, units: m
 
         :return: float
         """
@@ -717,13 +717,13 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformThicknessFlag() As boolean (Read Only)
-                |     Returns or sets the flag that determines if the shell thickness is
-                |     uniform.
-                | 
-                |     TRUE: the shell thickness is uniform.
-                | 
-                |     FALSE: the shell thickness is not uniform.
+                Property UniformThicknessFlag() As boolean (Read Only)
+                    Returns or sets the flag that determines if the shell thickness is
+                    uniform.
+                
+                    TRUE: the shell thickness is uniform.
+                
+                    FALSE: the shell thickness is not uniform.
 
         :return: bool
         """
@@ -735,8 +735,8 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
-                |     Adds a Rebar Layer to the section.
+                Sub AddRebarLayer(CATBSTR iType,CATBaseDispatch oFeature)
+                    Adds a Rebar Layer to the section.
 
         :param str i_type:
         :param AnyObject o_feature:
@@ -749,14 +749,14 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialBehavior() As CATBaseDispatch
-                | 
-                |     Deprecated:
-                |         R418 Retrieves the material behavior. 
-                |     Returns:
-                |         The material behavior. 
-                |     Returns:
-                |         S_OK if successful.
+                Func GetMaterialBehavior() As CATBaseDispatch
+                
+                    Deprecated:
+                        R418 Retrieves the material behavior. 
+                    Returns:
+                        The material behavior. 
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -767,21 +767,21 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTransverseShearStiffnessValues(double oK11Value,double oK22Value,double
-                | oK12Value)
-                |     Retrieves the shell section's transverse shear stiffness
-                |     values.
-                | 
-                |     Parameters:
-                | 
-                |         oK11Value
-                |             [out] Shear stiffness K11. Quantity: FORCE, Units: N
-                |             
-                |         oK22Value
-                |             [out] Shear stiffness K22. Quantity: FORCE, Units: N
-                |             
-                |         oK12Value
-                |             [out] Shear stiffness K12. Quantity: FORCE, Units: N
+                Sub GetTransverseShearStiffnessValues(double oK11Value,double oK22Value,double
+                oK12Value)
+                    Retrieves the shell section's transverse shear stiffness
+                    values.
+                
+                    Parameters:
+                
+                        oK11Value
+                            [out] Shear stiffness K11. Quantity: FORCE, Units: N
+                            
+                        oK22Value
+                            [out] Shear stiffness K22. Quantity: FORCE, Units: N
+                            
+                        oK12Value
+                            [out] Shear stiffness K12. Quantity: FORCE, Units: N
 
         :param float o_k11_value:
         :param float o_k22_value:
@@ -795,20 +795,20 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
-                | 
-                |     Deprecated:
-                |         R418 Sets the material behavior. 
-                |     Parameters:
-                | 
-                |         iBehaviorName
-                |             [in] Alias (name) of the simulation material behavior. Default
-                |             behavior is set if the specified behavior is not found. If multiple behaviors
-                |             have the same alias, the first one found is selected.
-                |             
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub SetMaterialBehavior(CATBSTR iBehaviorName)
+                
+                    Deprecated:
+                        R418 Sets the material behavior. 
+                    Parameters:
+                
+                        iBehaviorName
+                            [in] Alias (name) of the simulation material behavior. Default
+                            behavior is set if the specified behavior is not found. If multiple behaviors
+                            have the same alias, the first one found is selected.
+                            
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str i_behavior_name:
         :return: None
@@ -820,21 +820,21 @@ class SimShellSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransverseShearStiffnessValues(double iK11Value,double iK22Value,double
-                | iK12Value)
-                |     Sets the shell section's transverse shear stiffness
-                |     values.
-                | 
-                |     Parameters:
-                | 
-                |         iK11Value
-                |             [in] Shear stiffness K11. Quantity: FORCE, Units: N
-                |             
-                |         iK22Value
-                |             [in] Shear stiffness K22. Quantity: FORCE, Units: N
-                |             
-                |         iK12Value
-                |             [in] Shear stiffness K12. Quantity: FORCE, Units: N
+                Sub SetTransverseShearStiffnessValues(double iK11Value,double iK22Value,double
+                iK12Value)
+                    Sets the shell section's transverse shear stiffness
+                    values.
+                
+                    Parameters:
+                
+                        iK11Value
+                            [in] Shear stiffness K11. Quantity: FORCE, Units: N
+                            
+                        iK22Value
+                            [in] Shear stiffness K22. Quantity: FORCE, Units: N
+                            
+                        iK12Value
+                            [in] Shear stiffness K12. Quantity: FORCE, Units: N
 
         :param float i_k11_value:
         :param float i_k22_value:

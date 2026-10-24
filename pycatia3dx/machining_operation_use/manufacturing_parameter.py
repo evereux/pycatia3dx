@@ -17,15 +17,15 @@ class ManufacturingParameter(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingParameter
-                | 
-                | This interface is used to handle with Enumeration Parameters for
-                | Manufacturing
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingParameter
+                
+                This interface is used to handle with Enumeration Parameters for
+                Manufacturing
     
     """
 
@@ -38,15 +38,15 @@ class ManufacturingParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetBoolValue(CATBSTR iName,boolean oValue)
-                |     Get boolean value of parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter 
-                |         oValue
-                |             The boolean value
+                Sub GetBoolValue(CATBSTR iName,boolean oValue)
+                    Get boolean value of parameter
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter 
+                        oValue
+                            The boolean value
 
         :param str i_name:
         :param bool o_value:
@@ -59,17 +59,17 @@ class ManufacturingParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDoubleValue(CATBSTR iName,double oValue,long iUnit)
-                |     Get double value of parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter 
-                |         oValue
-                |             The double value 
-                |         iUnit
-                |             The unit value (default: 0)
+                Sub GetDoubleValue(CATBSTR iName,double oValue,long iUnit)
+                    Get double value of parameter
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter 
+                        oValue
+                            The double value 
+                        iUnit
+                            The unit value (default: 0)
 
         :param str i_name:
         :param float o_value:
@@ -83,15 +83,15 @@ class ManufacturingParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLongValue(CATBSTR iName,long oValue)
-                |     Get integer value of parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter 
-                |         oValue
-                |             The double value
+                Sub GetLongValue(CATBSTR iName,long oValue)
+                    Get integer value of parameter
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter 
+                        oValue
+                            The double value
 
         :param str i_name:
         :param int o_value:
@@ -104,15 +104,15 @@ class ManufacturingParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetStringValue(CATBSTR iName,CATBSTR oValue)
-                |     Get string value of parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter 
-                |         oValue
-                |             The string value
+                Sub GetStringValue(CATBSTR iName,CATBSTR oValue)
+                    Get string value of parameter
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter 
+                        oValue
+                            The string value
 
         :param str i_name:
         :param str o_value:
@@ -125,15 +125,15 @@ class ManufacturingParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetValue(CATBSTR iName,Parameter oValue)
-                |     Get CATICkeParm value of parameter
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the parameter 
-                |         oValue
-                |             The CATICkeParm value
+                Sub GetValue(CATBSTR iName,Parameter oValue)
+                    Get CATICkeParm value of parameter
+                
+                    Parameters:
+                
+                        iName
+                            The name of the parameter 
+                        oValue
+                            The CATICkeParm value
 
         :param str i_name:
         :param Parameter o_value:

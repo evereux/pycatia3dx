@@ -19,51 +19,51 @@ class SimFluidCapacity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFluidCapacity
-                | 
-                | Represents the Fluid Capacity object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimFluidCapacity as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFluidCapacity As SimFluidCapacity
-                |      Set MyFluidCapacity = MyMaterialOptions.Add("SimFluidCapacity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimFluidCapacity
-                |     named "Fluid Capacity.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFluidCapacity As SimFluidCapacity
-                |      Set MyFluidCapacity = MyMaterialOptions.Item("Fluid Capacity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimFluidCapacity as following:
-                | 
-                |      ...
-                |      myFluidCapacity = myMaterialOptions.Add("SimFluidCapacity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimFluidCapacity named "Fluid Capacity.1" as following:
-                | 
-                |      ...
-                |      myFluidCapacity = myMaterialOptions.Item("Fluid Capacity.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFluidCapacity
+                
+                Represents the Fluid Capacity object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimFluidCapacity as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFluidCapacity As SimFluidCapacity
+                     Set MyFluidCapacity = MyMaterialOptions.Add("SimFluidCapacity")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimFluidCapacity
+                    named "Fluid Capacity.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFluidCapacity As SimFluidCapacity
+                     Set MyFluidCapacity = MyMaterialOptions.Item("Fluid Capacity.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimFluidCapacity as following:
+                
+                     ...
+                     myFluidCapacity = myMaterialOptions.Add("SimFluidCapacity")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimFluidCapacity named "Fluid Capacity.1" as following:
+                
+                     ...
+                     myFluidCapacity = myMaterialOptions.Item("Fluid Capacity.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,18 +77,18 @@ class SimFluidCapacity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FluidCapacityInput() As SimFluidCapacityInput
-                |     Returns or sets the fluid capacity input.
-                | 
-                |     Parameters:
-                | 
-                |         oFluidCapacityInput[out]
-                |             The input to the fluid capacity. 
-                |         iFluidCapacityInput[in]
-                |             The input to the fluid capacity. 
-                | 
-                |     Returns:
-                |         S_OK if successful. E_FAIL if failed.
+                Property FluidCapacityInput() As SimFluidCapacityInput
+                    Returns or sets the fluid capacity input.
+                
+                    Parameters:
+                
+                        oFluidCapacityInput[out]
+                            The input to the fluid capacity. 
+                        iFluidCapacityInput[in]
+                            The input to the fluid capacity. 
+                
+                    Returns:
+                        S_OK if successful. E_FAIL if failed.
 
         :return: SimFluidCapacityInput
         """
@@ -109,16 +109,16 @@ class SimFluidCapacity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
-                | 
-                |     Parameters:
-                | 
-                |         oMaterialTable[out]
-                |             The material table. 
-                | 
-                |     Returns:
-                |         S_OK if successful. E_FAIL if failed.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
+                
+                    Parameters:
+                
+                        oMaterialTable[out]
+                            The material table. 
+                
+                    Returns:
+                        S_OK if successful. E_FAIL if failed.
 
         :return: SimMaterialTable
         """
@@ -130,24 +130,24 @@ class SimFluidCapacity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimFluidCapacityMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                |         oMaterialTableColumn[out]
-                |             The table column object. This value will be NULL_var in case the
-                |             specified column is not found in the table. 
-                | 
-                |     Returns:
-                |         S_OK if successful. S_FALSE if the supplied
-                |         SimFluidCapacityMaterialTableColumn enum is valid but the column does not exist
-                |         currently or exists currently but is not active. E_INVALIDARG if the supplied
-                |         SimFluidCapacityMaterialTableColumn enum is invalid. E_FAIL otherwise.
+                Func GetMaterialTableColumn(SimFluidCapacityMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                        oMaterialTableColumn[out]
+                            The table column object. This value will be NULL_var in case the
+                            specified column is not found in the table. 
+                
+                    Returns:
+                        S_OK if successful. S_FALSE if the supplied
+                        SimFluidCapacityMaterialTableColumn enum is valid but the column does not exist
+                        currently or exists currently but is not active. E_INVALIDARG if the supplied
+                        SimFluidCapacityMaterialTableColumn enum is invalid. E_FAIL otherwise.
 
         :param int i_material_table_column:
         :return: SimTableColumn

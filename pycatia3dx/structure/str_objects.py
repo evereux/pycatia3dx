@@ -19,14 +19,14 @@ class StrObjects(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrObjects
-                | 
-                | Object for StrObjects
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrObjects
+                
+                Object for StrObjects
     
     """
 
@@ -39,24 +39,24 @@ class StrObjects(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AnyObject
-                |     Retrieves a structure object
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of structure object 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first item from the list of
-                |              StrObjects.
-                |              
-                | 
-                |               Dim ObjStrObjects As StrObjects
-                |               Set ObjStrObjects = ObjStrBreak.Break(ListOfSplitRef)
-                |               Set ObjStructureObject = ObjStrObjects.Item(1)
+                Func Item(CATVariant iIndex) As AnyObject
+                    Retrieves a structure object
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of structure object 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first item from the list of
+                             StrObjects.
+                             
+                
+                              Dim ObjStrObjects As StrObjects
+                              Set ObjStrObjects = ObjStrBreak.Break(ListOfSplitRef)
+                              Set ObjStructureObject = ObjStrObjects.Item(1)
 
         :param CATVariant i_index:
         :return: AnyObject

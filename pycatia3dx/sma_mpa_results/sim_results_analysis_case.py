@@ -26,30 +26,30 @@ class SimResultsAnalysisCase(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimResultsAnalysisCase
-                | 
-                | Represents the results analysis case and can be used to access the data in the
-                | case.
-                | Example:
-                | 
-                |  Given a SimResultsManager object, you can create a SimResultsAnalysisCase
-                |  object as following.
-                |  The index starts from 1.
-                |  
-                | 
-                |   Dim oResultsAnalysisCases As SimResultsAnalysisCases
-                |   Set oResultsAnalysisCases = oResultsManager.ResultsAnalysisCases
-                |   Dim oResultsAnalysisCase 'As SimResultsAnalysisCase
-                |   Set oResultsAnalysisCase = oResultsAnalysisCases.Item(1)
-                |  
-                | 
-                | See also:
-                |     SimResultsManager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimResultsAnalysisCase
+                
+                Represents the results analysis case and can be used to access the data in the
+                case.
+                Example:
+                
+                 Given a SimResultsManager object, you can create a SimResultsAnalysisCase
+                 object as following.
+                 The index starts from 1.
+                 
+                
+                  Dim oResultsAnalysisCases As SimResultsAnalysisCases
+                  Set oResultsAnalysisCases = oResultsManager.ResultsAnalysisCases
+                  Dim oResultsAnalysisCase 'As SimResultsAnalysisCase
+                  Set oResultsAnalysisCase = oResultsAnalysisCases.Item(1)
+                 
+                
+                See also:
+                    SimResultsManager
     
     """
 
@@ -63,8 +63,8 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JobDiagnosticSummary() As CATBaseDispatch (Read Only)
-                |     Returns the SimJobDiagnosticSummary.
+                Property JobDiagnosticSummary() As CATBaseDispatch (Read Only)
+                    Returns the SimJobDiagnosticSummary.
 
         :return: AnyObject
         """
@@ -77,11 +77,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResultsSteps() As SimResultsSteps (Read Only)
-                |     Returns the available steps.
-                | 
-                |     See also:
-                |         SMAIAMpaResultsSteps
+                Property ResultsSteps() As SimResultsSteps (Read Only)
+                    Returns the available steps.
+                
+                    See also:
+                        SMAIAMpaResultsSteps
 
         :return: SimResultsSteps
         """
@@ -94,16 +94,16 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioAnalysisCase() As CATBaseDispatch (Read Only)
-                |     Returns the scenario analysis case. The actual returned type could be
-                |     either SimThermalAnalysisCase or
-                |     SimStructuralAnalysisCase depending on the type of analysis that was
-                |     run.
-                | 
-                |     Parameters:
-                | 
-                |         ospScenarioAnalysisCase
-                |             The analysis case.
+                Property ScenarioAnalysisCase() As CATBaseDispatch (Read Only)
+                    Returns the scenario analysis case. The actual returned type could be
+                    either SimThermalAnalysisCase or
+                    SimStructuralAnalysisCase depending on the type of analysis that was
+                    run.
+                
+                    Parameters:
+                
+                        ospScenarioAnalysisCase
+                            The analysis case.
 
         :return: AnyObject
         """
@@ -115,20 +115,20 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub AddFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)
-                |     Adds the Field Plot definitions .xml files. It is OK to add the same file
-                |     multiple times, but you will have to call RemoveFieldPlotDefinitions just as
-                |     many times to have those definitions ignored.
+                Sub AddFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)
+                    Adds the Field Plot definitions .xml files. It is OK to add the same file
+                    multiple times, but you will have to call RemoveFieldPlotDefinitions just as
+                    many times to have those definitions ignored.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilcsFiles
-                |             Name(s) of the Field Plot defintion XML files. The string for a
-                |             filename can
-                |             begin with an environment variable which will be treated like a
-                |             'path'.
-                |             Example:
-                |             $CATReffilesPath/FEM/SMAHvcModelDescription.xml
+                        ilcsFiles
+                            Name(s) of the Field Plot defintion XML files. The string for a
+                            filename can
+                            begin with an environment variable which will be treated like a
+                            'path'.
+                            Example:
+                            $CATReffilesPath/FEM/SMAHvcModelDescription.xml
 
         :param tuple ilcs_files:
         :return: None
@@ -156,11 +156,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateBuckleModeSensor() As SimBuckleModeSensor
-                |     Creates a BuckleMode Sensor.
-                | 
-                |     Returns:
-                |         Creates and returns the BuckleMode Sensor object
+                Func CreateBuckleModeSensor() As SimBuckleModeSensor
+                    Creates a BuckleMode Sensor.
+                
+                    Returns:
+                        Creates and returns the BuckleMode Sensor object
 
         :return: SimBuckleModeSensor
         """
@@ -171,21 +171,21 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateCustomPlotByID(CATBSTR icsPlotId) As SimFieldPlot
-                |     Creates a Field Plot as defined in a plot definition XML file. Also the
-                |     user can set any user definations for the plot. User will have to call the
-                |     Get/Set SimFieldPlot::FieldDefination() to set any extra defination value for
-                |     the plot. The SimFieldPlot::ActivationStatus() can be called to set the
-                |     actiation status. The plot is not refreshed after creation. The
-                |     SimFieldPlot::Refresh() method has to be called.
-                | 
-                |     Parameters:
-                | 
-                |         icsPlotId
-                |             The ID of the Plot as specified in the XML file 
-                | 
-                |     Returns:
-                |         Returns an interface to the created Field Plot
+                Func CreateCustomPlotByID(CATBSTR icsPlotId) As SimFieldPlot
+                    Creates a Field Plot as defined in a plot definition XML file. Also the
+                    user can set any user definations for the plot. User will have to call the
+                    Get/Set SimFieldPlot::FieldDefination() to set any extra defination value for
+                    the plot. The SimFieldPlot::ActivationStatus() can be called to set the
+                    actiation status. The plot is not refreshed after creation. The
+                    SimFieldPlot::Refresh() method has to be called.
+                
+                    Parameters:
+                
+                        icsPlotId
+                            The ID of the Plot as specified in the XML file 
+                
+                    Returns:
+                        Returns an interface to the created Field Plot
 
         :param str ics_plot_id:
         :return: SimFieldPlot
@@ -197,17 +197,17 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateExportFieldFromPlot(SimFieldPlot ipFieldPlot) As
-                | SimExportField
-                |     Creates a export field plot.
-                | 
-                |     Parameters:
-                | 
-                |         ipFieldPlot
-                |             Field plot to export 
-                | 
-                |     Returns:
-                |         The Export Field Plot object
+                Func CreateExportFieldFromPlot(SimFieldPlot ipFieldPlot) As
+                SimExportField
+                    Creates a export field plot.
+                
+                    Parameters:
+                
+                        ipFieldPlot
+                            Field plot to export 
+                
+                    Returns:
+                        The Export Field Plot object
 
         :param SimFieldPlot ip_field_plot:
         :return: SimExportField
@@ -219,22 +219,22 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFieldPlot(SimFieldPlotTypes iePlotType) As
-                | SimFieldPlot
-                |     Creates a user defined Field Plot. User will have to call the Get/Set
-                |     SimFieldPlot::FieldDefination() to set all the values for the plot. The plot is
-                |     not refreshed after creation. The SimFieldPlot::Refresh() method has to be
-                |     called.
-                | 
-                |     Parameters:
-                | 
-                |         iePlotType
-                |             The type of plot to be created such as countour, symbol,
-                |             iso-countour, color code. All the type are specified in
-                |             SMAIAMpaFieldPlotTypeEnums.idl file. 
-                | 
-                |     Returns:
-                |         Returns an interface to the created Field Plot
+                Func CreateFieldPlot(SimFieldPlotTypes iePlotType) As
+                SimFieldPlot
+                    Creates a user defined Field Plot. User will have to call the Get/Set
+                    SimFieldPlot::FieldDefination() to set all the values for the plot. The plot is
+                    not refreshed after creation. The SimFieldPlot::Refresh() method has to be
+                    called.
+                
+                    Parameters:
+                
+                        iePlotType
+                            The type of plot to be created such as countour, symbol,
+                            iso-countour, color code. All the type are specified in
+                            SMAIAMpaFieldPlotTypeEnums.idl file. 
+                
+                    Returns:
+                        Returns an interface to the created Field Plot
 
         :param int ie_plot_type:
         :return: SimFieldPlot
@@ -246,21 +246,21 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFieldPlotByID(CATBSTR icsDataDisplayId,boolean icbActivate) As
-                | SimFieldPlot
-                |     Creates a Field Plot as defined in a plot definition XML file. The plot is
-                |     refreshed immediately after creation.
-                | 
-                |     Parameters:
-                | 
-                |         icsDataDisplayId
-                |             The ID of the Plot as specified in the XML file 
-                |         icbActivate
-                |             If passed as TRUE, the Field Plot will be displayed once it is
-                |             created. The default is FALSE 
-                | 
-                |     Returns:
-                |         Returns an interface to the created Field Plot
+                Func CreateFieldPlotByID(CATBSTR icsDataDisplayId,boolean icbActivate) As
+                SimFieldPlot
+                    Creates a Field Plot as defined in a plot definition XML file. The plot is
+                    refreshed immediately after creation.
+                
+                    Parameters:
+                
+                        icsDataDisplayId
+                            The ID of the Plot as specified in the XML file 
+                        icbActivate
+                            If passed as TRUE, the Field Plot will be displayed once it is
+                            created. The default is FALSE 
+                
+                    Returns:
+                        Returns an interface to the created Field Plot
 
         :param str ics_data_display_id:
         :param bool icb_activate:
@@ -273,11 +273,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFrameSelector() As SimFramesSelection
-                |     Creates a frame selection.
-                | 
-                |     Returns:
-                |         Creates and returns frame selection object
+                Func CreateFrameSelector() As SimFramesSelection
+                    Creates a frame selection.
+                
+                    Returns:
+                        Creates and returns frame selection object
 
         :return: SimFramesSelection
         """
@@ -288,11 +288,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateFrequencySensor() As SimFrequencySensor
-                |     Creates a frequency sensor.
-                | 
-                |     Returns:
-                |         Creates and returns the frequency sensor object
+                Func CreateFrequencySensor() As SimFrequencySensor
+                    Creates a frequency sensor.
+                
+                    Returns:
+                        Creates and returns the frequency sensor object
 
         :return: SimFrequencySensor
         """
@@ -303,11 +303,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateHistoryPlot() As SimHistoryPlot
-                |     Creates a History Plot.
-                | 
-                |     Returns:
-                |         Creates and returns the History Plot object.
+                Func CreateHistoryPlot() As SimHistoryPlot
+                    Creates a History Plot.
+                
+                    Returns:
+                        Creates and returns the History Plot object.
 
         :return: SimHistoryPlot
         """
@@ -318,11 +318,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateResultantSensor() As SimResultantSensor
-                |     Creates a resultant sensor.
-                | 
-                |     Returns:
-                |         Creates and returns the resultant sensor object
+                Func CreateResultantSensor() As SimResultantSensor
+                    Creates a resultant sensor.
+                
+                    Returns:
+                        Creates and returns the resultant sensor object
 
         :return: SimResultantSensor
         """
@@ -333,11 +333,11 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSensor() As SimSensor
-                |     Creates a basic sensor.
-                | 
-                |     Returns:
-                |         Creates and returns the basic sensor object
+                Func CreateSensor() As SimSensor
+                    Creates a basic sensor.
+                
+                    Returns:
+                        Creates and returns the basic sensor object
 
         :return: SimSensor
         """
@@ -348,18 +348,18 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSensorByID(CATBSTR icsSensorID) As SimSensor
-                |     Creates a sensor using field plot definition defined in XML description
-                |     library files.
-                | 
-                |     Parameters:
-                | 
-                |         icsSensorID
-                |             The ID of the Field Plot as specified in the XML file as sensor ID.
-                |             
-                | 
-                |     Returns:
-                |         The new Sensor object.
+                Func CreateSensorByID(CATBSTR icsSensorID) As SimSensor
+                    Creates a sensor using field plot definition defined in XML description
+                    library files.
+                
+                    Parameters:
+                
+                        icsSensorID
+                            The ID of the Field Plot as specified in the XML file as sensor ID.
+                            
+                
+                    Returns:
+                        The new Sensor object.
 
         :param str ics_sensor_id:
         :return: SimSensor
@@ -371,13 +371,13 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteFeature(CATBaseDispatch ispResultsObject)
-                |     Deletes an object created by this factory.
-                | 
-                |     Parameters:
-                | 
-                |         ispResultsObject
-                |             The results object to delete
+                Sub DeleteFeature(CATBaseDispatch ispResultsObject)
+                    Deletes an object created by this factory.
+                
+                    Parameters:
+                
+                        ispResultsObject
+                            The results object to delete
 
         :param AnyObject isp_results_object:
         :return: None
@@ -397,30 +397,30 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ExportSensorOutputToFile(CATSafeArrayVariant ilSensors,CATBSTR
-                | icsFileName,CATBSTR icsFileLocation,SimFileType ieFileType,boolean
-                | ibAxisData,SimColumnSeparator ieColumnSep)
-                |     Exports sensor output to a file on disk.
+                Sub ExportSensorOutputToFile(CATSafeArrayVariant ilSensors,CATBSTR
+                icsFileName,CATBSTR icsFileLocation,SimFileType ieFileType,boolean
+                ibAxisData,SimColumnSeparator ieColumnSep)
+                    Exports sensor output to a file on disk.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilSensors:
-                |             The sensors whose output is to be exported.
-                |         icsFileName:
-                |             The name of the file.
-                |         icsFileLocation:
-                |             The path of the file.
-                |         ieFileType:
-                |             The file type.
-                |         ibAxisData:
-                |             Whether to export the axis directions. It is applicable only for
-                |             resultant sensor. For other sensors, it will be ignored.
+                        ilSensors:
+                            The sensors whose output is to be exported.
+                        icsFileName:
+                            The name of the file.
+                        icsFileLocation:
+                            The path of the file.
+                        ieFileType:
+                            The file type.
+                        ibAxisData:
+                            Whether to export the axis directions. It is applicable only for
+                            resultant sensor. For other sensors, it will be ignored.
                 |
-                |         ieColumnSep:
-                |             Column separator.
+                        ieColumnSep:
+                            Column separator.
                 |
-                |     Returns:
-                |         S_OK on success, E_UNEXPECTED on failure.
+                    Returns:
+                        S_OK on success, E_UNEXPECTED on failure.
 
         :param tuple il_sensors:
         :param str ics_file_name:
@@ -467,28 +467,28 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ExportSensorOutputToPLM(CATSafeArrayVariant ilSensors,CATBSTR
-                | icsFileName,SimFileType ieFileType,boolean ibAxisData,SimColumnSeparator
-                | ieColumnSep)
-                |     Exports sensor output as PLM document.
+                Sub ExportSensorOutputToPLM(CATSafeArrayVariant ilSensors,CATBSTR
+                icsFileName,SimFileType ieFileType,boolean ibAxisData,SimColumnSeparator
+                ieColumnSep)
+                    Exports sensor output as PLM document.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilSensors:
-                |             The sensors whose output is to be exported.
-                |         icsFileName:
-                |             The name of the file.
-                |         ieFileType:
-                |             The file type.
-                |         ibAxisData:
-                |             Whether to export the axis directions. It is applicable only for
-                |             resultant sensor. For other sensors, it will be ignored.
+                        ilSensors:
+                            The sensors whose output is to be exported.
+                        icsFileName:
+                            The name of the file.
+                        ieFileType:
+                            The file type.
+                        ibAxisData:
+                            Whether to export the axis directions. It is applicable only for
+                            resultant sensor. For other sensors, it will be ignored.
                 |
-                |         ieColumnSep:
-                |             Column separator.
+                        ieColumnSep:
+                            Column separator.
                 |
-                |     Returns:
-                |         S_OK on success, E_UNEXPECTED on failure.
+                    Returns:
+                        S_OK on success, E_UNEXPECTED on failure.
 
         :param tuple il_sensors:
         :param str ics_file_name:
@@ -532,39 +532,39 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetListOfFieldPlotIDs(CATSafeArrayVariant ilFields,boolean
-                | ibIncludeDefaults,boolean ibIncludeUndMesh,CATSafeArrayVariant
-                | olFieldPlotIds)
-                |     Gets a list of creatable Field Plot IDs from the plot definition
-                |     files.
-                |     Read the Field Plot definition files specified in calls to AddField
-                |     PlotDefinitions and, optionally, the default definitions, and return a list of
-                |     Field Plot Ids for the defined Field Plots. The returned list can be filtered
-                |     to only include Field Plot Ids for which all required fields appear is a
-                |     provided list of fields. It is always filtered to only include Field Plot Ids
-                |     for Plots that are completely supported by the available
-                |     data.
+                Sub GetListOfFieldPlotIDs(CATSafeArrayVariant ilFields,boolean
+                ibIncludeDefaults,boolean ibIncludeUndMesh,CATSafeArrayVariant
+                olFieldPlotIds)
+                    Gets a list of creatable Field Plot IDs from the plot definition
+                    files.
+                    Read the Field Plot definition files specified in calls to AddField
+                    PlotDefinitions and, optionally, the default definitions, and return a list of
+                    Field Plot Ids for the defined Field Plots. The returned list can be filtered
+                    to only include Field Plot Ids for which all required fields appear is a
+                    provided list of fields. It is always filtered to only include Field Plot Ids
+                    for Plots that are completely supported by the available
+                    data.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilFields
-                |             If an empty list, the list of existing fields in the model is
-                |             used.
-                |             The returned list of Field Plot Ids is filtered to exclude the Ids
-                |             of Field Plots
-                |             referencing fields that are not in the list or fields that are not
-                |             in the model
-                |         olPlotIds
-                |             The returned list of Field Plot Id strings.
-                |         ibIncludeDefaults
-                |             If TRUE (default) include the internal Field Plot definitions
-                |             in
-                |             addition to definitions passed to AddField PlotDefinitions.
+                        ilFields
+                            If an empty list, the list of existing fields in the model is
+                            used.
+                            The returned list of Field Plot Ids is filtered to exclude the Ids
+                            of Field Plots
+                            referencing fields that are not in the list or fields that are not
+                            in the model
+                        olPlotIds
+                            The returned list of Field Plot Id strings.
+                        ibIncludeDefaults
+                            If TRUE (default) include the internal Field Plot definitions
+                            in
+                            addition to definitions passed to AddField PlotDefinitions.
                 |
-                |         ibIncludeUndMesh
-                |             If TRUE (default) and ibIncludeDefaults is TRUE, include
-                |             the
-                |             Field Plot Id for the undeformed mesh.
+                        ibIncludeUndMesh
+                            If TRUE (default) and ibIncludeDefaults is TRUE, include
+                            the
+                            Field Plot Id for the undeformed mesh.
 
         :param tuple il_fields:
         :param bool ib_include_defaults:
@@ -600,33 +600,33 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSet(CATBSTR ieSetType) As CATBaseDispatch
-                |     Gets a list of result features created within this
-                |     Manager.
-                | 
-                |     Parameters:
-                | 
-                |         ieSetType
-                |             The type of Set to access such as field plot, sensors, frequency
-                |             sensors and resultant sensors. The keyword for various sets are as follows: 1.
-                |             Field plot set: "FieldPlotSet". 2. Sensor set: "SensorSet". 3. Resultant sensor
-                |             set: "ResultantSensorSet". 4. Frequency sensor set: "FrequencySensorSet". 5.
-                |             BuckleMode sensor set: "BuckleModeSensorSet". 6. Historyplot set:
-                |             "HistoryPlotSet". 7. User csys set: "UserCsysSet". 8. Display group set:
-                |             "DisplayGroupSet". 
-                | 
-                |     Returns:
-                |         The set of specified results feature.
-                | 
-                |         Example:
-                |             The following example returns in FieldPlotSet the field plot set
-                |             created in MyResultsAnalysisCase :
-                | 
-                |              Dim MyResultsAnalysisCase As
-                |              SimResultsAnalysisCase
-                |              Set MyResultsAnalysisCase = ...
-                |              Dim FieldPlotsResultsSet As SimResultsSet
-                |              Set FieldPlotsResultsSet = MyResultsAnalysisCase.GetSet("FieldPlotSet")
+                Func GetSet(CATBSTR ieSetType) As CATBaseDispatch
+                    Gets a list of result features created within this
+                    Manager.
+                
+                    Parameters:
+                
+                        ieSetType
+                            The type of Set to access such as field plot, sensors, frequency
+                            sensors and resultant sensors. The keyword for various sets are as follows: 1.
+                            Field plot set: "FieldPlotSet". 2. Sensor set: "SensorSet". 3. Resultant sensor
+                            set: "ResultantSensorSet". 4. Frequency sensor set: "FrequencySensorSet". 5.
+                            BuckleMode sensor set: "BuckleModeSensorSet". 6. Historyplot set:
+                            "HistoryPlotSet". 7. User csys set: "UserCsysSet". 8. Display group set:
+                            "DisplayGroupSet". 
+                
+                    Returns:
+                        The set of specified results feature.
+                
+                        Example:
+                            The following example returns in FieldPlotSet the field plot set
+                            created in MyResultsAnalysisCase :
+                
+                             Dim MyResultsAnalysisCase As
+                             SimResultsAnalysisCase
+                             Set MyResultsAnalysisCase = ...
+                             Dim FieldPlotsResultsSet As SimResultsSet
+                             Set FieldPlotsResultsSet = MyResultsAnalysisCase.GetSet("FieldPlotSet")
 
         :param str ie_set_type:
         :return: AnyObject
@@ -638,14 +638,14 @@ class SimResultsAnalysisCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub RemoveFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)
-                |     Retracts filename(s) of XML file(s) that contain Field Plot
-                |     definitions.
+                Sub RemoveFieldPlotDefinitions(CATSafeArrayVariant ilcsFiles)
+                    Retracts filename(s) of XML file(s) that contain Field Plot
+                    definitions.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilcsFiles
-                |             Name(s) of the Field Plot defintion XML files to no longer consider
+                        ilcsFiles
+                            Name(s) of the Field Plot defintion XML files to no longer consider
 
         :param tuple ilcs_files:
         :return: None

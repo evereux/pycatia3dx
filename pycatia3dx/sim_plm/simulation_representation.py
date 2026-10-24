@@ -18,19 +18,19 @@ class SimulationRepresentation(SimulationObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         CATSimPLMIDLItf.SimulationObject
-                |                             SimulationRepresentation
-                | 
-                | Interface representing SIMULATION data referenced by a
-                | category.
-                | Objects that can implement this interface are Authoring Simulation
-                | representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        CATSimPLMIDLItf.SimulationObject
+                                            SimulationRepresentation
+                
+                Interface representing SIMULATION data referenced by a
+                category.
+                Objects that can implement this interface are Authoring Simulation
+                representation.
     
     """
 
@@ -44,21 +44,21 @@ class SimulationRepresentation(SimulationObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Root() As AnyObject (Read Only)
-                |     Retrieves Root Feature of a Simlation representation.
-                |     Role: This method retrieves a pointer on the Root Feature of a Simlation
-                |     representation
-                | 
-                |     Parameters:
-                | 
-                |         oRepRoot
-                | 
-                |     Returns:
-                |         An HRESULT value
-                | 
-                |             S_OK The pointer on the Root Feature is correctly
-                |             retrieved
-                |             E_FAIL Otherwise.
+                Property Root() As AnyObject (Read Only)
+                    Retrieves Root Feature of a Simlation representation.
+                    Role: This method retrieves a pointer on the Root Feature of a Simlation
+                    representation
+                
+                    Parameters:
+                
+                        oRepRoot
+                
+                    Returns:
+                        An HRESULT value
+                
+                            S_OK The pointer on the Root Feature is correctly
+                            retrieved
+                            E_FAIL Otherwise.
 
         :return: AnyObject
         """

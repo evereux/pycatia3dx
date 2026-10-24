@@ -17,27 +17,27 @@ class RealParam(Parameter):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         RealParam
-                | 
-                | Represents the real parameter.
-                | The following example shows how to create it:
-                | 
-                |  Dim aParmFact as ParametersFactory
-                |  Set aParmFact = ...
-                |  Dim density As RealParam
-                |  Set density = aParmFact.CreateReal("density", 2.5)
-                |  
-                | 
-                | The real parameter is the base object for dimensions.
-                | 
-                | See also:
-                |     Dimension, ParametersFactory.CreateReal
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        RealParam
+                
+                Represents the real parameter.
+                The following example shows how to create it:
+                
+                 Dim aParmFact as ParametersFactory
+                 Set aParmFact = ...
+                 Dim density As RealParam
+                 Set density = aParmFact.CreateReal("density", 2.5)
+                 
+                
+                The real parameter is the base object for dimensions.
+                
+                See also:
+                    Dimension, ParametersFactory.CreateReal
     
     """
 
@@ -51,17 +51,17 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property MaximumTolerance() As double
-                |     Returns or sets the value of the maximum tolerance of a parameter. Units
-                |     are expressed in the IS unit system.
-                | 
-                |     Example:
-                |         This example sets the MaximumTolerance value to 0 if its value is
-                |         bigger than 0:
-                | 
-                |          If (Length.MaximumTolerance < 0.0)  Then
-                |              Length.MaximumTolerance = 0.0
-                |          End If
+                Property MaximumTolerance() As double
+                    Returns or sets the value of the maximum tolerance of a parameter. Units
+                    are expressed in the IS unit system.
+                
+                    Example:
+                        This example sets the MaximumTolerance value to 0 if its value is
+                        bigger than 0:
+                
+                         If (Length.MaximumTolerance < 0.0)  Then
+                             Length.MaximumTolerance = 0.0
+                         End If
 
         :return: float
         """
@@ -82,17 +82,17 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property MinimumTolerance() As double
-                |     Returns or sets the value of the minimum tolerance of a parameter. Units
-                |     are expressed in the IS unit system.
-                | 
-                |     Example:
-                |         This example sets the MinimumTolerance value to 0 if its value is
-                |         bigger than 0:
-                | 
-                |          If (Length.MinimumTolerance > 0.0)  Then
-                |              Length.MinimumTolerance = 0.0
-                |          End If
+                Property MinimumTolerance() As double
+                    Returns or sets the value of the minimum tolerance of a parameter. Units
+                    are expressed in the IS unit system.
+                
+                    Example:
+                        This example sets the MinimumTolerance value to 0 if its value is
+                        bigger than 0:
+                
+                         If (Length.MinimumTolerance > 0.0)  Then
+                             Length.MinimumTolerance = 0.0
+                         End If
 
         :return: float
         """
@@ -113,18 +113,18 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMax() As double
-                |     Returns or sets the value of the upper bound that the parameter object
-                |     value can take.
-                | 
-                |     Example:
-                |         This example sets the RangeMax value to 0 if its value is smaller than
-                |         0:
-                | 
-                |          If (Length.RangeMax < 0.0 and Length.RangeMaxValidity <> 0) 
-                |          Then
-                |              Length.RangeMax = 0.0
-                |          End If
+                Property RangeMax() As double
+                    Returns or sets the value of the upper bound that the parameter object
+                    value can take.
+                
+                    Example:
+                        This example sets the RangeMax value to 0 if its value is smaller than
+                        0:
+                
+                         If (Length.RangeMax < 0.0 and Length.RangeMaxValidity <> 0) 
+                         Then
+                             Length.RangeMax = 0.0
+                         End If
 
         :return: float
         """
@@ -145,16 +145,16 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMaxValidity() As long
-                |     Returns or sets the type of the upper bound of the
-                |     parameter.
-                | 
-                |     0
-                |         the upper bound is meaningless 
-                |     1
-                |         the upper bound can be reached 
-                |     2
-                |         the upper bound cannot be reached
+                Property RangeMaxValidity() As long
+                    Returns or sets the type of the upper bound of the
+                    parameter.
+                
+                    0
+                        the upper bound is meaningless 
+                    1
+                        the upper bound can be reached 
+                    2
+                        the upper bound cannot be reached
 
         :return: int
         """
@@ -175,18 +175,18 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMin() As double
-                |     Returns or sets the value of the lower bound that the parameter object
-                |     value can take.
-                | 
-                |     Example:
-                |         This example sets the RangeMin value to 0 if its value is bigger than
-                |         0:
-                | 
-                |          If (Length.RangeMin > 0.0 and Length.RangeMinValidity <> 0) 
-                |          Then
-                |              Length.RangeMin = 0.0
-                |          End If
+                Property RangeMin() As double
+                    Returns or sets the value of the lower bound that the parameter object
+                    value can take.
+                
+                    Example:
+                        This example sets the RangeMin value to 0 if its value is bigger than
+                        0:
+                
+                         If (Length.RangeMin > 0.0 and Length.RangeMinValidity <> 0) 
+                         Then
+                             Length.RangeMin = 0.0
+                         End If
 
         :return: float
         """
@@ -207,16 +207,16 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMinValidity() As long
-                |     Returns or sets the type of the lower bound of the
-                |     parameter.
-                | 
-                |     0
-                |         the lower bound is meaningless 
-                |     1
-                |         the lower bound can be reached 
-                |     2
-                |         the lower bound cannot be reached
+                Property RangeMinValidity() As long
+                    Returns or sets the type of the lower bound of the
+                    parameter.
+                
+                    0
+                        the lower bound is meaningless 
+                    1
+                        the lower bound can be reached 
+                    2
+                        the lower bound cannot be reached
 
         :return: int
         """
@@ -237,18 +237,18 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Value() As double
-                |     Returns or sets the value of the real parameter. Units are expressed in the
-                |     IS unit system, except for lengths expressed in millimeters, and angles
-                |     expressed in decimal degrees.
-                | 
-                |     Example:
-                |         This example sets the density value to 1 if its value is greater than
-                |         2.5:
-                | 
-                |          If (density.Value > 2.5)  Then
-                |              density.Value = 1
-                |          End If
+                Property Value() As double
+                    Returns or sets the value of the real parameter. Units are expressed in the
+                    IS unit system, except for lengths expressed in millimeters, and angles
+                    expressed in decimal degrees.
+                
+                    Example:
+                        This example sets the density value to 1 if its value is greater than
+                        2.5:
+                
+                         If (density.Value > 2.5)  Then
+                             density.Value = 1
+                         End If
 
         :return: float
         """
@@ -268,24 +268,24 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
-                |     Returns an array containing the different values that the real param can
-                |     take in the case of multiple values.
+                Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
+                    Returns an array containing the different values that the real param can
+                    take in the case of multiple values.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oSafeArray
-                |             the array containing the different values.
+                        oSafeArray
+                            the array containing the different values.
                 |
-                |             Example:
+                            Example:
                 |
-                |                  Dim enumValues () as Variant
-                |                  ReDim enumValues (aRealParameter.GetEnumerateValuesSize() -
-                |                  1)
-                |                  aRealParameter.GetEnumerateValues(enumValues)
-                |                  For i = LBound(enumValues) to UBound(enumValues)
-                |                    ...
-                |                  Next
+                                 Dim enumValues () as Variant
+                                 ReDim enumValues (aRealParameter.GetEnumerateValuesSize() -
+                                 1)
+                                 aRealParameter.GetEnumerateValues(enumValues)
+                                 For i = LBound(enumValues) to UBound(enumValues)
+                                   ...
+                                 Next
 
         :return: tuple
         """
@@ -312,11 +312,11 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetEnumerateValuesSize() As long
-                |     Returns the number of enumerate values.
-                | 
-                |     Returns:
-                |         number of enumerate values
+                Func GetEnumerateValuesSize() As long
+                    Returns the number of enumerate values.
+                
+                    Returns:
+                        number of enumerate values
 
         :return: int
         """
@@ -327,27 +327,27 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func IsEqualTo(double iValueToCompare) As boolean
-                |     Tests the equality of the parameter value with a given
-                |     value.
-                | 
-                |     Parameters:
-                | 
-                |         iValueToCompare
-                |             The value to compare the parameter value with 
-                | 
-                |     Returns:
-                |         Indicates if the parameter values are equal or not
-                | 
-                |         True
-                |             If the current value of the parameter (the one get by the get_Value
-                |             property, for dimensions notice that it is not the MKS value) is equal to the
-                |             one given in argument. Notice that two values are considered as equal if their
-                |             difference is insignificant faced with the two compared values. This method
-                |             allows you to avoid problems due to computation
-                |             errors.
-                |         False
-                |             If the two values are different.
+                Func IsEqualTo(double iValueToCompare) As boolean
+                    Tests the equality of the parameter value with a given
+                    value.
+                
+                    Parameters:
+                
+                        iValueToCompare
+                            The value to compare the parameter value with 
+                
+                    Returns:
+                        Indicates if the parameter values are equal or not
+                
+                        True
+                            If the current value of the parameter (the one get by the get_Value
+                            property, for dimensions notice that it is not the MKS value) is equal to the
+                            one given in argument. Notice that two values are considered as equal if their
+                            difference is insignificant faced with the two compared values. This method
+                            allows you to avoid problems due to computation
+                            errors.
+                        False
+                            If the two values are different.
 
         :param float i_value_to_compare:
         :return: bool
@@ -359,14 +359,14 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
-                |     Sets an array containing the different values that the real param can take
-                |     in the case of multiple values.
+                Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
+                    Sets an array containing the different values that the real param can take
+                    in the case of multiple values.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iSafeArray
-                |             possible values
+                        iSafeArray
+                            possible values
 
         :param tuple i_safe_array:
         :return: None
@@ -394,8 +394,8 @@ class RealParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SuppressEnumerateValues()
-                |     Resets the status of the object to a single value object.
+                Sub SuppressEnumerateValues()
+                    Resets the status of the object to a single value object.
 
         :return: None
         """

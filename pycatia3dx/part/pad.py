@@ -17,20 +17,20 @@ class Pad(Prism):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             CATPartIDLItf.Prism
-                |                                 Pad
-                | 
-                | Represents the pad shape.
-                | A pad is created by extruding a profile represented by a sketch in one or two
-                | opposite directions. It is a "positive" shape: it adds material to the body it
-                | belongs to.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            CATPartIDLItf.Prism
+                                                Pad
+                
+                Represents the pad shape.
+                A pad is created by extruding a profile represented by a sketch in one or two
+                opposite directions. It is a "positive" shape: it adds material to the body it
+                belongs to.
 
     """
 

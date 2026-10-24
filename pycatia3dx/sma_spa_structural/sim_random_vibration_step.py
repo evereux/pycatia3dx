@@ -21,52 +21,52 @@ class SimRandomVibrationStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimRandomVibrationStep
-                | 
-                | Represents the Random Vibration Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimRandomVibrationStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyRandomVibrationStep As SimRandomVibrationStep
-                |      Set MyRandomVibrationStep = MySteps.Add("SimRandomVibrationStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimRandomVibrationStep named
-                |     "Random Vibration Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyRandomVibrationStep As SimRandomVibrationStep
-                |      Set MyRandomVibrationStep = MySteps.Item("Random Vibration Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimRandomVibrationStep as
-                |     following:
-                | 
-                |      ...
-                |      myRandomVibrationStep = mySteps.Add("SimRandomVibrationStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimRandomVibrationStep
-                |     named "Random Vibration Step.1" as following:
-                | 
-                |      ...
-                |      myRandomVibrationStep = mySteps.Item("Random Vibration Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimRandomVibrationStep
+                
+                Represents the Random Vibration Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimRandomVibrationStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyRandomVibrationStep As SimRandomVibrationStep
+                     Set MyRandomVibrationStep = MySteps.Add("SimRandomVibrationStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimRandomVibrationStep named
+                    "Random Vibration Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyRandomVibrationStep As SimRandomVibrationStep
+                     Set MyRandomVibrationStep = MySteps.Item("Random Vibration Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimRandomVibrationStep as
+                    following:
+                
+                     ...
+                     myRandomVibrationStep = mySteps.Add("SimRandomVibrationStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimRandomVibrationStep
+                    named "Random Vibration Step.1" as following:
+                
+                     ...
+                     myRandomVibrationStep = mySteps.Item("Random Vibration Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -80,8 +80,8 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -102,9 +102,9 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingDefinition() As
-                | SimRandomVibrationStepDampingDefinition
-                |     Returns or sets the damping definition.
+                Property DampingDefinition() As
+                SimRandomVibrationStepDampingDefinition
+                    Returns or sets the damping definition.
 
         :return: SimRandomVibrationStepDampingDefinition
         """
@@ -125,9 +125,9 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyBasedDamping() As SimFrequencyBasedDamping (Read
-                | Only)
-                |     Returns the frequency based damping.
+                Property FrequencyBasedDamping() As SimFrequencyBasedDamping (Read
+                Only)
+                    Returns the frequency based damping.
 
         :return: SimFrequencyBasedDamping
         """
@@ -140,8 +140,8 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModeBasedDamping() As SimModeBasedDamping (Read Only)
-                |     Returns the mode based damping.
+                Property ModeBasedDamping() As SimModeBasedDamping (Read Only)
+                    Returns the mode based damping.
 
         :return: SimModeBasedDamping
         """
@@ -154,9 +154,9 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RandomGlobalDamping() As SimRandomGlobalDamping (Read
-                | Only)
-                |     Returns the random global damping.
+                Property RandomGlobalDamping() As SimRandomGlobalDamping (Read
+                Only)
+                    Returns the random global damping.
 
         :return: SimRandomGlobalDamping
         """
@@ -169,8 +169,8 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the random vibration step behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the random vibration step behavior.
 
         :return: SimTable
         """
@@ -182,18 +182,18 @@ class SimRandomVibrationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimRandomVibrationStepTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the random
-                |     vibration step behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimRandomVibrationStepTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the random
+                    vibration step behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

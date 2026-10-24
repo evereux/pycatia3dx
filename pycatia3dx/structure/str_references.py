@@ -20,14 +20,14 @@ class StrReferences(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrReferences
-                | 
-                | Object to Add cutting elements to the collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrReferences
+                
+                Object to Add cutting elements to the collection.
     
     """
 
@@ -40,26 +40,26 @@ class StrReferences(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(Reference iReference)
-                |     Adds a reference in the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iReference
-                |             Reference. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example Adds refernces to the list of
-                |              StrRefernces.
-                |              
-                | 
-                |               Dim ListOfCuttingRefs As StrReferences
-                |               Set ListOfCuttingRefs = ObjSfdPlatesMngt.CuttingElements
-                |               'add the references of cutting elements in the
-                |               list
-                |               ListOfCuttingRefs.Add CuttingElemRef
+                Sub Add(Reference iReference)
+                    Adds a reference in the collection.
+                
+                    Parameters:
+                
+                        iReference
+                            Reference. 
+                
+                    Example:
+                
+                
+                             This example Adds refernces to the list of
+                             StrRefernces.
+                             
+                
+                              Dim ListOfCuttingRefs As StrReferences
+                              Set ListOfCuttingRefs = ObjSfdPlatesMngt.CuttingElements
+                              'add the references of cutting elements in the
+                              list
+                              ListOfCuttingRefs.Add CuttingElemRef
 
         :param Reference i_reference:
         :return: None
@@ -71,23 +71,23 @@ class StrReferences(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Reference
-                |     Returns a reference from the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of the Reference to be retrieved. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first plate from the list of
-                |              plate.
-                |              
-                | 
-                |               Dim ObjReference As Reference
-                |               Set ObjReference = ListOfCuttingRefs.Item(1)
+                Func Item(CATVariant iIndex) As Reference
+                    Returns a reference from the collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of the Reference to be retrieved. 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first plate from the list of
+                             plate.
+                             
+                
+                              Dim ObjReference As Reference
+                              Set ObjReference = ListOfCuttingRefs.Item(1)
 
         :param CATVariant i_index:
         :return: Reference

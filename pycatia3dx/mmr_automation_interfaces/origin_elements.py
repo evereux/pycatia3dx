@@ -18,17 +18,17 @@ class OriginElements(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OriginElements
-                | 
-                | Represents the part's 3D reference axis system.
-                | It allows an easy access to 3D reference axis system of a Part object thru the
-                | three planes XY, YZ, and ZX.
-                | See Part for parent object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OriginElements
+                
+                Represents the part's 3D reference axis system.
+                It allows an easy access to 3D reference axis system of a Part object thru the
+                three planes XY, YZ, and ZX.
+                See Part for parent object.
     
     """
 
@@ -42,16 +42,16 @@ class OriginElements(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property PlaneXY() As AnyObject (Read Only)
-                |     Returns the XY plane of the part 3D reference axis system.
-                | 
-                |     Example:
-                |         The following example returns in plnXY the XY plane of the partRoot
-                |         part from the 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set plnXY = partRoot.originElements.PlaneXY
+                Property PlaneXY() As AnyObject (Read Only)
+                    Returns the XY plane of the part 3D reference axis system.
+                
+                    Example:
+                        The following example returns in plnXY the XY plane of the partRoot
+                        part from the 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set plnXY = partRoot.originElements.PlaneXY
 
         :return: AnyObject
         """
@@ -64,16 +64,16 @@ class OriginElements(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property PlaneYZ() As AnyObject (Read Only)
-                |     Returns the YZ plane of the part 3D reference axis system.
-                | 
-                |     Example:
-                |         The following example returns in plnYZ the YZ plane of the partRoot
-                |         part from the the 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set plnYZ = partRoot.originElements.PlaneYZ
+                Property PlaneYZ() As AnyObject (Read Only)
+                    Returns the YZ plane of the part 3D reference axis system.
+                
+                    Example:
+                        The following example returns in plnYZ the YZ plane of the partRoot
+                        part from the the 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set plnYZ = partRoot.originElements.PlaneYZ
 
         :return: AnyObject
         """
@@ -86,16 +86,16 @@ class OriginElements(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property PlaneZX() As AnyObject (Read Only)
-                |     Returns the ZX plane of the part 3D reference axis system.
-                | 
-                |     Example:
-                |         The following example returns in plnZX the ZX plane of the partRoot
-                |         part from the 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set plnZX = partRoot.originElements.PlaneZX
+                Property PlaneZX() As AnyObject (Read Only)
+                    Returns the ZX plane of the part 3D reference axis system.
+                
+                    Example:
+                        The following example returns in plnZX the ZX plane of the partRoot
+                        part from the 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set plnZX = partRoot.originElements.PlaneZX
 
         :return: AnyObject
         """

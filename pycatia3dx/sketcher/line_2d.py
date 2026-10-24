@@ -16,17 +16,17 @@ class Line2D(Curve2D):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             CATSketcherIDLItf.Curve2D
-                |                                 Line2D
-                | 
-                | Class defining a line in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            CATSketcherIDLItf.Curve2D
+                                                Line2D
+                
+                Class defining a line in 2D Space.
     
     """
 
@@ -39,21 +39,21 @@ class Line2D(Curve2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Returns the unit-vector pointing in the direction of the
-                |     line.
-                | 
-                |     Parameters:
-                | 
-                |         oDirection
-                | 
-                |               oDirection[0]: The X Coordinate of the unit vector pointing in
-                |               the 
-                |               direction of the line
-                |               oDirection[1]
-                |               oDirection[1] The Y Coordinate of the unit vector pointing in
-                |               the
-                |               direction of the line
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Returns the unit-vector pointing in the direction of the
+                    line.
+                
+                    Parameters:
+                
+                        oDirection
+                
+                              oDirection[0]: The X Coordinate of the unit vector pointing in
+                              the 
+                              direction of the line
+                              oDirection[1]
+                              oDirection[1] The Y Coordinate of the unit vector pointing in
+                              the
+                              direction of the line
 
         :return: tuple
         """
@@ -80,17 +80,17 @@ class Line2D(Curve2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Returns a point lying on the line.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                | 
-                |               oPoint[0]: The X Coordinate of a point lying on the
-                |               line
-                |               oPoint[1]: The Y Coordinate of a point lying on the
-                |               line
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Returns a point lying on the line.
+                
+                    Parameters:
+                
+                        oPoint
+                
+                              oPoint[0]: The X Coordinate of a point lying on the
+                              line
+                              oPoint[1]: The Y Coordinate of a point lying on the
+                              line
 
         :return: tuple
         """
@@ -117,22 +117,22 @@ class Line2D(Curve2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SetData(double iX,double iY,double iXDirection,double
-                | iYDirection)
-                |     Modifies the caracteristics of the infinite line.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X Coordinate of a point lying on the line 
-                |         iY
-                |             The Y Coordinate of a point lying on the line 
-                |         iXDirection
-                |             The X Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                |         iYDirection
-                |             The Y Coordinate of the unit vector pointing in the direction of
-                |             the line
+                Sub SetData(double iX,double iY,double iXDirection,double
+                iYDirection)
+                    Modifies the caracteristics of the infinite line.
+                
+                    Parameters:
+                
+                        iX
+                            The X Coordinate of a point lying on the line 
+                        iY
+                            The Y Coordinate of a point lying on the line 
+                        iXDirection
+                            The X Coordinate of the unit vector pointing in the direction of
+                            the line 
+                        iYDirection
+                            The Y Coordinate of the unit vector pointing in the direction of
+                            the line
 
         :param float i_x:
         :param float i_y:

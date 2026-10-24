@@ -17,15 +17,15 @@ class SsmToolSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmToolSet
-                | 
-                | Role: This interface is specific to InternalSpaceSet,SpaceCellSet Of Space
-                | Manager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmToolSet
+                
+                Role: This interface is specific to InternalSpaceSet,SpaceCellSet Of Space
+                Manager
     
     """
 
@@ -38,16 +38,16 @@ class SsmToolSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetChildren(References olChildObjects)
-                |     Get the list of children
+                Sub GetChildren(References olChildObjects)
+                    Get the list of children
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         olChildObjects
-                |             output list of child
+                        olChildObjects
+                            output list of child
                 |
-                |     Returns:
-                |         Error code of function.
+                    Returns:
+                        Error code of function.
 
         :param References ol_child_objects:
         :return: None

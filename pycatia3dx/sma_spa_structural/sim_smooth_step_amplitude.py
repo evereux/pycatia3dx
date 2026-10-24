@@ -18,45 +18,45 @@ class SimSmoothStepAmplitude(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSmoothStepAmplitude
-                | 
-                | Represents the Smooth Step Amplitude object.
-                | 
-                | The creation of SimSmoothStepAmplitude directly from SimFeatures is deprecated
-                | R425. The new procedure is to create SimAmplitude from SimFeatures and retrieve
-                | the SimSmoothStepAmplitude. The following example demonstrates
-                | this.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimSmoothStepAmplitude as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAmplitude As SimAmplitude
-                |      Set MyAmplitude = MyFeatures.Add("SimAmplitude")
-                |      MyAmplitude.DefinitionType = SimAmplitudeSmoothStepDefinition
-                |      Dim MySmoothStepAmplitude As SimSmoothStepAmplitude
-                |      Set MySmoothStepAmplitude = MyAmplitude.SmoothStepAmplitude
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimSmoothStepAmplitude as following:
-                | 
-                |      ...
-                |      myAmplitude = myFeatures.Add("SimAmplitude")
-                |      myAmplitude.DefinitionType = SimAmplitudeSmoothStepDefinition
-                |      mySmoothStepAmplitude = myAmplitude.SmoothStepAmplitude
-                |      
-                | 
-                | See also:
-                |     SimFeatures, SimAmplitude
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSmoothStepAmplitude
+                
+                Represents the Smooth Step Amplitude object.
+                
+                The creation of SimSmoothStepAmplitude directly from SimFeatures is deprecated
+                R425. The new procedure is to create SimAmplitude from SimFeatures and retrieve
+                the SimSmoothStepAmplitude. The following example demonstrates
+                this.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimSmoothStepAmplitude as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAmplitude As SimAmplitude
+                     Set MyAmplitude = MyFeatures.Add("SimAmplitude")
+                     MyAmplitude.DefinitionType = SimAmplitudeSmoothStepDefinition
+                     Dim MySmoothStepAmplitude As SimSmoothStepAmplitude
+                     Set MySmoothStepAmplitude = MyAmplitude.SmoothStepAmplitude
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimSmoothStepAmplitude as following:
+                
+                     ...
+                     myAmplitude = myFeatures.Add("SimAmplitude")
+                     myAmplitude.DefinitionType = SimAmplitudeSmoothStepDefinition
+                     mySmoothStepAmplitude = myAmplitude.SmoothStepAmplitude
+                     
+                
+                See also:
+                    SimFeatures, SimAmplitude
     
     """
 
@@ -70,8 +70,8 @@ class SimSmoothStepAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DomainType() As SimSmoothStepAmplitudeDomainType
-                |     Returns or sets the domain type.
+                Property DomainType() As SimSmoothStepAmplitudeDomainType
+                    Returns or sets the domain type.
 
         :return: SimSmoothStepAmplitudeDomainType
         """
@@ -92,8 +92,8 @@ class SimSmoothStepAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the smooth step amplitude behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the smooth step amplitude behavior.
 
         :return: SimTable
         """
@@ -105,18 +105,18 @@ class SimSmoothStepAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimSmoothStepAmplitudeTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the smooth step
-                |     amplitude behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimSmoothStepAmplitudeTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the smooth step
+                    amplitude behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

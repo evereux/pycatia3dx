@@ -17,17 +17,17 @@ class DeviceMotionActivity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DeviceMotionActivity
-                | 
-                | Interface representing a DeviceMotion.
-                | 
-                | Role: This interface is used to get and set motion attributes on a device
-                | motion
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DeviceMotionActivity
+                
+                Interface representing a DeviceMotion.
+                
+                Role: This interface is used to get and set motion attributes on a device
+                motion
     
     """
 
@@ -41,23 +41,23 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccuracyProfile() As AnyObject
-                |     This property returns and sets Accuracy profile used by the device
-                |     Motion.
-                | 
-                |     Returns:
-                |         oAccuracyProfile The Accuracy profile used. 
-                |     Parameters:
-                | 
-                |         iAccuracyProfile
-                |             The Accuracy profile to use. 
-                | 
-                |     Example:
+                Property AccuracyProfile() As AnyObject
+                    This property returns and sets Accuracy profile used by the device
+                    Motion.
+                
+                    Returns:
+                        oAccuracyProfile The Accuracy profile used. 
+                    Parameters:
+                
+                        iAccuracyProfile
+                            The Accuracy profile to use. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oAccuracyProfile
-                |         Set oAccuracyProfile = objDeviceMotion.AccuracyProfile
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oAccuracyProfile
+                        Set oAccuracyProfile = objDeviceMotion.AccuracyProfile
 
         :return: AnyObject
         """
@@ -78,20 +78,20 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HomeTarget() As CATBSTR
-                |     This property returns and sets the Home target of the device
-                |     motion.
-                | 
-                |     Returns:
-                |         oHomeTarget The Home Target Name. 
-                |     Parameters:
-                | 
-                |         iHomeTarget
-                |             The Home Target Name. 
-                | 
-                |     Example:
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
+                Property HomeTarget() As CATBSTR
+                    This property returns and sets the Home target of the device
+                    motion.
+                
+                    Returns:
+                        oHomeTarget The Home Target Name. 
+                    Parameters:
+                
+                        iHomeTarget
+                            The Home Target Name. 
+                
+                    Example:
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
 
         :return: str
         """
@@ -112,26 +112,26 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JointTarget() As CATSafeArrayVariant
-                |     This property returns and sets the Joint target of the device
-                |     motion.
-                | 
-                |     Returns:
-                |         oJointTarget The List of Joint DOF values. 
-                |     Parameters:
-                | 
-                |         iJointTarget
-                |             The List of Joint DOF values. 
-                | 
-                |     Example:
+                Property JointTarget() As CATSafeArrayVariant
+                    This property returns and sets the Joint target of the device
+                    motion.
+                
+                    Returns:
+                        oJointTarget The List of Joint DOF values. 
+                    Parameters:
+                
+                        iJointTarget
+                            The List of Joint DOF values. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oJointTarget
-                |                   ......
-                |         Dim oTempDeviceMotion As AnyObject
-                |         Set oTempDeviceMotion = objDeviceMotion
-                |         oTempDeviceMotion.JointTarget = oJointTarget
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oJointTarget
+                                  ......
+                        Dim oTempDeviceMotion As AnyObject
+                        Set oTempDeviceMotion = objDeviceMotion
+                        oTempDeviceMotion.JointTarget = oJointTarget
 
         :return: tuple
         """
@@ -152,26 +152,26 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeepAccuracyProfile() As boolean
-                |     This property determines whether the Accuracy profile stored in the device
-                |     motion is to used during simulation. Keep Accuracy Profile TRUE is profile
-                |     stored is not to be used. FALSE is profile stored is to be
-                |     used.
-                | 
-                |     Returns:
-                |         oKeepAccuracyProfile The Keep Accuracy Profile mode. 
-                |     Parameters:
-                | 
-                |         iKeepAccuracyProfile
-                |             The Keep Accuracy Profile mode. 
-                | 
-                |     Example:
+                Property KeepAccuracyProfile() As boolean
+                    This property determines whether the Accuracy profile stored in the device
+                    motion is to used during simulation. Keep Accuracy Profile TRUE is profile
+                    stored is not to be used. FALSE is profile stored is to be
+                    used.
+                
+                    Returns:
+                        oKeepAccuracyProfile The Keep Accuracy Profile mode. 
+                    Parameters:
+                
+                        iKeepAccuracyProfile
+                            The Keep Accuracy Profile mode. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim iKeepAccuracyProfile As Boolean
-                |         iKeepAccuracyProfile = False
-                |         objDeviceMotion.KeepAccuracyProfile = iKeepAccuracyProfile
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim iKeepAccuracyProfile As Boolean
+                        iKeepAccuracyProfile = False
+                        objDeviceMotion.KeepAccuracyProfile = iKeepAccuracyProfile
 
         :return: bool
         """
@@ -192,25 +192,25 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeepMotionProfile() As boolean
-                |     This property determines whether the Motion profile stored in the device
-                |     motion is to used during simulation. Keep Motion Profile TRUE is profile stored
-                |     is not to be used. FALSE is profile stored is to be used.
-                | 
-                |     Returns:
-                |         oKeepMotionProfile The Keep Motion Profile mode. 
-                |     Parameters:
-                | 
-                |         iKeepMotionProfile
-                |             The Keep Motion Profile mode. 
-                | 
-                |     Example:
+                Property KeepMotionProfile() As boolean
+                    This property determines whether the Motion profile stored in the device
+                    motion is to used during simulation. Keep Motion Profile TRUE is profile stored
+                    is not to be used. FALSE is profile stored is to be used.
+                
+                    Returns:
+                        oKeepMotionProfile The Keep Motion Profile mode. 
+                    Parameters:
+                
+                        iKeepMotionProfile
+                            The Keep Motion Profile mode. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim iKeepMotionProfile As Boolean
-                |         iKeepMotionProfile = False
-                |         objDeviceMotion.KeepMotionProfile = iKeepMotionProfile
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim iKeepMotionProfile As Boolean
+                        iKeepMotionProfile = False
+                        objDeviceMotion.KeepMotionProfile = iKeepMotionProfile
 
         :return: bool
         """
@@ -231,18 +231,18 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionGroups() As CATSafeArrayVariant (Read Only)
-                |     Retreives the list of motion groups managed by the device
-                |     motion.
-                | 
-                |     Returns:
-                |         oMotionGroups The list of motion groups. 
-                |     Example:
+                Property MotionGroups() As CATSafeArrayVariant (Read Only)
+                    Retreives the list of motion groups managed by the device
+                    motion.
+                
+                    Returns:
+                        oMotionGroups The list of motion groups. 
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oMotionGroups
-                |         oMotionGroups = objDeviceMotion.MotionGroups
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oMotionGroups
+                        oMotionGroups = objDeviceMotion.MotionGroups
 
         :return: tuple
         """
@@ -255,23 +255,23 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionProfile() As AnyObject
-                |     This property returns and sets Motion profile used by the device
-                |     motion.
-                | 
-                |     Returns:
-                |         oMotionProfile The Motion profile used. 
-                |     Parameters:
-                | 
-                |         iMotionProfile
-                |             The Motion profile to use. 
-                | 
-                |     Example:
+                Property MotionProfile() As AnyObject
+                    This property returns and sets Motion profile used by the device
+                    motion.
+                
+                    Returns:
+                        oMotionProfile The Motion profile used. 
+                    Parameters:
+                
+                        iMotionProfile
+                            The Motion profile to use. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oMotionProfile
-                |         Set oMotionProfile = objDeviceMotion.MotionProfile
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oMotionProfile
+                        Set oMotionProfile = objDeviceMotion.MotionProfile
 
         :return: AnyObject
         """
@@ -292,21 +292,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetList() As CATSafeArrayVariant (Read Only)
-                |     This property retrieves the Target List of the device
-                |     motion.
-                | 
-                |     Parameters:
-                | 
-                |         oTargetList
-                |             The List of Targets. 
-                | 
-                |     Example:
+                Property TargetList() As CATSafeArrayVariant (Read Only)
+                    This property retrieves the Target List of the device
+                    motion.
+                
+                    Parameters:
+                
+                        oTargetList
+                            The List of Targets. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oTargetList
-                |         oTargetList = objDeviceMotion.TargetList
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oTargetList
+                        oTargetList = objDeviceMotion.TargetList
 
         :return: tuple
         """
@@ -319,21 +319,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetType() As short (Read Only)
-                |     This property retrieves the Target Type of the device motion. Target can be
-                |     Joint(index=0) or Home(index=1)
-                | 
-                |     Parameters:
-                | 
-                |         oTargetType
-                |             Type of the Target. 
-                | 
-                |     Example:
+                Property TargetType() As short (Read Only)
+                    This property retrieves the Target Type of the device motion. Target can be
+                    Joint(index=0) or Home(index=1)
+                
+                    Parameters:
+                
+                        oTargetType
+                            Type of the Target. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oTargetType
-                |         oTargetType = objDeviceMotion.TargetType
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oTargetType
+                        oTargetType = objDeviceMotion.TargetType
 
         :return: int
         """
@@ -346,23 +346,23 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserProfileList() As CATSafeArrayVariant
-                |     This property returns and sets the user profiles used by the device
-                |     motion.
-                | 
-                |     Returns:
-                |         oUserProfileList The List of User profiles used. 
-                |     Parameters:
-                | 
-                |         iUserProfileList
-                |             The List of User profiles to be used. 
-                | 
-                |     Example:
+                Property UserProfileList() As CATSafeArrayVariant
+                    This property returns and sets the user profiles used by the device
+                    motion.
+                
+                    Returns:
+                        oUserProfileList The List of User profiles used. 
+                    Parameters:
+                
+                        iUserProfileList
+                            The List of User profiles to be used. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oUserProfileList
-                |         oUserProfileList = objDeviceMotion.UserProfileList
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oUserProfileList
+                        oUserProfileList = objDeviceMotion.UserProfileList
 
         :return: tuple
         """
@@ -382,21 +382,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA) As
-                | CATBSTR
-                |     Retrieves the underlying Auxillary device Home.
-                | 
-                |     Parameters:
-                | 
-                |         iAuxillaryDevMCA
-                |             The MCA for the auxiliary device 
-                |         oHomeName
-                |             Home name used for the given Auxillary device. 
-                | 
-                |     Example:
+                Func GetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA) As
+                CATBSTR
+                    Retrieves the underlying Auxillary device Home.
+                
+                    Parameters:
+                
+                        iAuxillaryDevMCA
+                            The MCA for the auxiliary device 
+                        oHomeName
+                            Home name used for the given Auxillary device. 
+                
+                    Example:
                 |
-                |            Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
+                           Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
 
         :param AnyObject i_auxillary_dev_mca:
         :return: str
@@ -408,21 +408,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA) As
-                | CATSafeArrayVariant
-                |     Retrieves the Auxillary device Joint values.
-                | 
-                |     Parameters:
-                | 
-                |         iAuxillaryDevMCA
-                |             The MCA for the auxiliary device 
-                |         oAuxillaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Example:
+                Func GetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA) As
+                CATSafeArrayVariant
+                    Retrieves the Auxillary device Joint values.
+                
+                    Parameters:
+                
+                        iAuxillaryDevMCA
+                            The MCA for the auxiliary device 
+                        oAuxillaryAxisValues
+                            List of joint values of the device. 
+                
+                    Example:
                 |
-                |            Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
+                           Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
 
         :param AnyObject i_auxillary_dev_mca:
         :return: tuple
@@ -434,23 +434,23 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTargetListForMotionGroup(AnyObject iMotionGroup) As
-                | CATSafeArrayVariant
-                |     This property retrieves the Target List for a specific motion
-                |     group.
-                | 
-                |     Parameters:
-                | 
-                |         oTargetList
-                |             The List of Targets. 
-                | 
-                |     Example:
+                Func GetTargetListForMotionGroup(AnyObject iMotionGroup) As
+                CATSafeArrayVariant
+                    This property retrieves the Target List for a specific motion
+                    group.
+                
+                    Parameters:
+                
+                        oTargetList
+                            The List of Targets. 
+                
+                    Example:
                 |
-                |         Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
-                |         Dim oTargetListForMG(10)
-                |         Call objDeviceMotion.GetTargetListForMotionGroup(iMotionGroup,
-                |         oTargetListForMG)
+                        Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
+                        Dim oTargetListForMG(10)
+                        Call objDeviceMotion.GetTargetListForMotionGroup(iMotionGroup,
+                        oTargetListForMG)
 
         :param AnyObject i_motion_group:
         :return: tuple
@@ -462,21 +462,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA,CATBSTR
-                | iHomeName)
-                |     Sets the underlying Auxillary device Home.
-                | 
-                |     Parameters:
-                | 
-                |         iAuxillaryDevMCA
-                |             The MCA for the auxiliary device 
-                |         iHomeName
-                |             Home name set for the given Auxillary device. 
-                | 
-                |     Example:
+                Sub SetAuxillaryAxisHome(AnyObject iAuxillaryDevMCA,CATBSTR
+                iHomeName)
+                    Sets the underlying Auxillary device Home.
+                
+                    Parameters:
+                
+                        iAuxillaryDevMCA
+                            The MCA for the auxiliary device 
+                        iHomeName
+                            Home name set for the given Auxillary device. 
+                
+                    Example:
                 |
-                |            Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
+                           Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
 
         :param AnyObject i_auxillary_dev_mca:
         :param str i_home_name:
@@ -489,21 +489,21 @@ class DeviceMotionActivity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA,CATSafeArrayVariant
-                | iAuxillaryAxisValues)
-                |     Sets the Auxillary device Joint values.
-                | 
-                |     Parameters:
-                | 
-                |         iAuxillaryDevMCA
-                |             The MCA for the auxiliary device 
-                |         iAuxillaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Example:
+                Sub SetAuxillaryAxisValues(AnyObject iAuxillaryDevMCA,CATSafeArrayVariant
+                iAuxillaryAxisValues)
+                    Sets the Auxillary device Joint values.
+                
+                    Parameters:
+                
+                        iAuxillaryDevMCA
+                            The MCA for the auxiliary device 
+                        iAuxillaryAxisValues
+                            List of joint values of the device. 
+                
+                    Example:
                 |
-                |            Dim objDeviceMotion As DeviceMotionActivity
-                |                   ......
+                           Dim objDeviceMotion As DeviceMotionActivity
+                                  ......
 
         :param AnyObject i_auxillary_dev_mca:
         :param tuple i_auxillary_axis_values:

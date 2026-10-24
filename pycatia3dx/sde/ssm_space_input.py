@@ -18,15 +18,15 @@ class SsmSpaceInput(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceInput
-                | 
-                | Role: This interface is specific to External
-                | volume/BoundingBox
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceInput
+                
+                Role: This interface is specific to External
+                volume/BoundingBox
     
     """
 
@@ -40,16 +40,16 @@ class SsmSpaceInput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceElement() As Reference (Read Only)
-                |     Get SpaceElement
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceElement
-                |             [out] SpaceElement 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property SpaceElement() As Reference (Read Only)
+                    Get SpaceElement
+                
+                    Parameters:
+                
+                        oSpaceElement
+                            [out] SpaceElement 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: Reference
         """

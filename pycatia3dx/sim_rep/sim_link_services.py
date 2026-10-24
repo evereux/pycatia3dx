@@ -19,13 +19,13 @@ class SimLinkServices(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SimLinkServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SimLinkServices
 
     
     """
@@ -39,17 +39,17 @@ class SimLinkServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOccurrence(AnyObject iLink) As PLMOccurrence
-                |     Gets the occurrence which contains the target of the link.
-                | 
-                |     Parameters:
-                | 
-                |         iLink:
-                |             The link on which the occurrence must be retrieved.
-                |             
-                | 
-                |     Returns:
-                |         The occurrence.
+                Func GetOccurrence(AnyObject iLink) As PLMOccurrence
+                    Gets the occurrence which contains the target of the link.
+                
+                    Parameters:
+                
+                        iLink:
+                            The link on which the occurrence must be retrieved.
+                            
+                
+                    Returns:
+                        The occurrence.
 
         :param AnyObject i_link:
         :return: PLMOccurrence
@@ -61,18 +61,18 @@ class SimLinkServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRepInstance(AnyObject iLink) As VPMRepInstance
-                |     Gets the rep instance which contains the target of the
-                |     link.
-                | 
-                |     Parameters:
-                | 
-                |         iLink:
-                |             The link on which the rep instance must be retrieved.
-                |             
-                | 
-                |     Returns:
-                |         The rep instance.
+                Func GetRepInstance(AnyObject iLink) As VPMRepInstance
+                    Gets the rep instance which contains the target of the
+                    link.
+                
+                    Parameters:
+                
+                        iLink:
+                            The link on which the rep instance must be retrieved.
+                            
+                
+                    Returns:
+                        The rep instance.
 
         :param AnyObject i_link:
         :return: VPMRepInstance
@@ -84,16 +84,16 @@ class SimLinkServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTarget(AnyObject iLink) As AnyObject
-                |     Gets the target of the link.
-                | 
-                |     Parameters:
-                | 
-                |         iLink:
-                |             The link on which the target must be retrieved. 
-                | 
-                |     Returns:
-                |         The link target.
+                Func GetTarget(AnyObject iLink) As AnyObject
+                    Gets the target of the link.
+                
+                    Parameters:
+                
+                        iLink:
+                            The link on which the target must be retrieved. 
+                
+                    Returns:
+                        The link target.
 
         :param AnyObject i_link:
         :return: AnyObject

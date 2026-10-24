@@ -17,37 +17,37 @@ class RscControllerAttributesAccess(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscControllerAttributesAccess
-                | 
-                | Interface to access the controller attributes.
-                | Role: This interface a method to access the controller attribute object. From
-                | then, user can access of properties.
-                | 
-                | Example:
-                |     Let assume there is a robot opened as a root entity in a given
-                |     editor.
-                | 
-                |      Dim MainResource As Variant
-                |      Set MainResource = CATIA.ActiveEditor.ActiveObject
-                | 
-                |      Dim MySelectedResource As RscControllerAttributesAccess
-                |      Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
-                |      
-                |      If Not MySelectedResource Is Nothing Then
-                | 
-                |      End If
-                | 
-                | Note:API documentation will include sample code referring to:
-                | 
-                |     MySelectedResource as a variable of type
-                |     RscControllerAttributesAccess.
-                |     MainResource as the resource to be simulated (can be obtained through
-                |     selection or model scanning.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscControllerAttributesAccess
+                
+                Interface to access the controller attributes.
+                Role: This interface a method to access the controller attribute object. From
+                then, user can access of properties.
+                
+                Example:
+                    Let assume there is a robot opened as a root entity in a given
+                    editor.
+                
+                     Dim MainResource As Variant
+                     Set MainResource = CATIA.ActiveEditor.ActiveObject
+                
+                     Dim MySelectedResource As RscControllerAttributesAccess
+                     Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
+                     
+                     If Not MySelectedResource Is Nothing Then
+                
+                     End If
+                
+                Note:API documentation will include sample code referring to:
+                
+                    MySelectedResource as a variable of type
+                    RscControllerAttributesAccess.
+                    MainResource as the resource to be simulated (can be obtained through
+                    selection or model scanning.
     
     """
 
@@ -60,33 +60,33 @@ class RscControllerAttributesAccess(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func RetrieveControllerAttributesObject() As AnyObject
-                |     Initializes the simulation for a given control entity. The motion group is
-                |     a control entity to drive properly the kinematics assembly. This API must be
-                |     called before any usage of this object API. To retrieve existing motion group,
-                |     please use RscMotionController.ListMotionGroups.
-                | 
-                |     Parameters:
-                | 
-                |         iRscControlEntity
-                |             Motion group object. When simulating the current resource, the
-                |             motion group object must be passed as an input
-                |             parameter.
-                | 
-                |             Example:
-                | 
-                |              'retrieval of the resource
-                |              Dim MainResource As Variant
-                |              Set MainResource = CATIA.ActiveEditor.ActiveObject
-                | 
-                |              Dim MySelectedResource As
-                |              RscControllerAttributesAccess
-                |              Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
-                |              
-                |              If Not MySelectedResource Is Nothing Then
-                |                Dim RscMCA
-                |                RscMCA = MySelectedResource.RetrieveControllerAttributesObject
-                |              End If
+                Func RetrieveControllerAttributesObject() As AnyObject
+                    Initializes the simulation for a given control entity. The motion group is
+                    a control entity to drive properly the kinematics assembly. This API must be
+                    called before any usage of this object API. To retrieve existing motion group,
+                    please use RscMotionController.ListMotionGroups.
+                
+                    Parameters:
+                
+                        iRscControlEntity
+                            Motion group object. When simulating the current resource, the
+                            motion group object must be passed as an input
+                            parameter.
+                
+                            Example:
+                
+                             'retrieval of the resource
+                             Dim MainResource As Variant
+                             Set MainResource = CATIA.ActiveEditor.ActiveObject
+                
+                             Dim MySelectedResource As
+                             RscControllerAttributesAccess
+                             Set MySelectedResource = MainResource.GetItem("CAARscControllerAttributesAccess")
+                             
+                             If Not MySelectedResource Is Nothing Then
+                               Dim RscMCA
+                               RscMCA = MySelectedResource.RetrieveControllerAttributesObject
+                             End If
 
         :return: AnyObject
         """

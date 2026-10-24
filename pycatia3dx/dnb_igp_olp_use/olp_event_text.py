@@ -16,22 +16,22 @@ class OLPEventText(OLPChoreographyEvent):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpChoreographyEvent
-                |                         OlpEventText
-                | 
-                | Represents a text choreography event added to a motion instruction in a
-                | task.
-                | 
-                | This can be used to add text popups to accompany motion instructions and
-                | set/get properties
-                | such as WindowName, WindowText and Duration of the text event.
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpChoreographyEvent
+                                        OlpEventText
+                
+                Represents a text choreography event added to a motion instruction in a
+                task.
+                
+                This can be used to add text popups to accompany motion instructions and
+                set/get properties
+                such as WindowName, WindowText and Duration of the text event.
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -45,8 +45,8 @@ class OLPEventText(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Duration() As double
-                |     Get/Set the duration of the text event. Default value is 0 (infinite)
+                Property Duration() As double
+                    Get/Set the duration of the text event. Default value is 0 (infinite)
 
         :return: float
         """
@@ -67,8 +67,8 @@ class OLPEventText(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WindowName() As CATBSTR
-                |     Get/Set the title of the Text Window used for Choreography Events
+                Property WindowName() As CATBSTR
+                    Get/Set the title of the Text Window used for Choreography Events
 
         :return: str
         """
@@ -89,8 +89,8 @@ class OLPEventText(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WindowText() As CATBSTR
-                |     Get/Set the text of the Text Window used for Choreography Events
+                Property WindowText() As CATBSTR
+                    Get/Set the text of the Text Window used for Choreography Events
 
         :return: str
         """

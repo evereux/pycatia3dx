@@ -17,12 +17,12 @@ class CtmCurveSamplerSpeed(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmCurveSamplerSpeed
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmCurveSamplerSpeed
 
     
     """
@@ -37,25 +37,25 @@ class CtmCurveSamplerSpeed(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sag() As double
-                |     Returns or sets the sag parameter used by this sampler. This parameter
-                |     controls how closely to space the points in regions of high curvature. The sag
-                |     distance is the maximum distance between the chord passing through two
-                |     consecutive points and the curve. If the sag is less the value of this
-                |     parameter, then the spacing points will be controlled by the distance
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         oSag
-                |             The sag parameter. 
-                |         Example:
-                | 
-                |              Dim objSpeedSampler As CtmCurveSamplerSpeed
-                |                    ........
-                |              Dim oSag As Double
-                |              objSpeedSampler.Sag = 12.4
-                |              oSag = objSpeedSampler.Sag
+                Property Sag() As double
+                    Returns or sets the sag parameter used by this sampler. This parameter
+                    controls how closely to space the points in regions of high curvature. The sag
+                    distance is the maximum distance between the chord passing through two
+                    consecutive points and the curve. If the sag is less the value of this
+                    parameter, then the spacing points will be controlled by the distance
+                    parameter.
+                
+                    Parameters:
+                
+                        oSag
+                            The sag parameter. 
+                        Example:
+                
+                             Dim objSpeedSampler As CtmCurveSamplerSpeed
+                                   ........
+                             Dim oSag As Double
+                             objSpeedSampler.Sag = 12.4
+                             oSag = objSpeedSampler.Sag
 
         :return: float
         """
@@ -76,22 +76,22 @@ class CtmCurveSamplerSpeed(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Speed() As double
-                |     Returns or sets the speed parameter used by this sampler. The sag parameter
-                |     could override the speed and generate the positions closer together in areas of
-                |     high curvature.
-                | 
-                |     Parameters:
-                | 
-                |         oSpeed
-                |             The speed parameter, in m/s 
-                |         Example:
-                | 
-                |              Dim objSpeedSampler As CtmCurveSamplerSpeed
-                |                    ........
-                |              Dim oSpeed As Double
-                |              objSpeedSampler.Speed = 5.5
-                |              oSpeed = objSpeedSampler.Speed
+                Property Speed() As double
+                    Returns or sets the speed parameter used by this sampler. The sag parameter
+                    could override the speed and generate the positions closer together in areas of
+                    high curvature.
+                
+                    Parameters:
+                
+                        oSpeed
+                            The speed parameter, in m/s 
+                        Example:
+                
+                             Dim objSpeedSampler As CtmCurveSamplerSpeed
+                                   ........
+                             Dim oSpeed As Double
+                             objSpeedSampler.Speed = 5.5
+                             oSpeed = objSpeedSampler.Speed
 
         :return: float
         """

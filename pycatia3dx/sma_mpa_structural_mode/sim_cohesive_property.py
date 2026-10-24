@@ -18,52 +18,52 @@ class SimCohesiveProperty(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCohesiveProperty
-                | 
-                | Represents the Cohesive Property object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimCohesiveProperty as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCohesiveProperty As SimCohesiveProperty
-                |      Set MyCohesiveProperty = MyProperties.Add("SimCohesiveProperty")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimCohesiveProperty named
-                |     "Cohesive Property.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MyCohesiveProperty As SimCohesiveProperty
-                |      Set MyCohesiveProperty = MyProperties.Item("Cohesive Property.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a
-                |     SimCohesiveProperty as following:
-                | 
-                |      ...
-                |      myCohesiveProperty = myProperties.Add("SimCohesiveProperty")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimCohesiveProperty named "Cohesive Property.1" as
-                |     following:
-                | 
-                |      ...
-                |      myCohesiveProperty = myProperties.Item("Cohesive Property.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCohesiveProperty
+                
+                Represents the Cohesive Property object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimCohesiveProperty as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCohesiveProperty As SimCohesiveProperty
+                     Set MyCohesiveProperty = MyProperties.Add("SimCohesiveProperty")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimCohesiveProperty named
+                    "Cohesive Property.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MyCohesiveProperty As SimCohesiveProperty
+                     Set MyCohesiveProperty = MyProperties.Item("Cohesive Property.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a
+                    SimCohesiveProperty as following:
+                
+                     ...
+                     myCohesiveProperty = myProperties.Add("SimCohesiveProperty")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimCohesiveProperty named "Cohesive Property.1" as
+                    following:
+                
+                     ...
+                     myCohesiveProperty = myProperties.Item("Cohesive Property.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -77,13 +77,13 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DisableElementDeletionFlag() As boolean
-                |     Returns or sets the flag that determines if the disable element deletion
-                |     option is used.
-                | 
-                |     TRUE: the disable element deletion is used.
-                | 
-                |     FALSE: the disable element deletion is not used.
+                Property DisableElementDeletionFlag() As boolean
+                    Returns or sets the flag that determines if the disable element deletion
+                    option is used.
+                
+                    TRUE: the disable element deletion is used.
+                
+                    FALSE: the disable element deletion is not used.
 
         :return: bool
         """
@@ -104,13 +104,13 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialThicknessFlag() As boolean
-                |     Returns or sets the flag that determines if the inital thickness is
-                |     used.
-                | 
-                |     TRUE: the inital thickness is used.
-                | 
-                |     FALSE: the inital thickness is not used.
+                Property InitialThicknessFlag() As boolean
+                    Returns or sets the flag that determines if the inital thickness is
+                    used.
+                
+                    TRUE: the inital thickness is used.
+                
+                    FALSE: the inital thickness is not used.
 
         :return: bool
         """
@@ -131,8 +131,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialThicknessValue() As double
-                |     Returns or sets the initial thickness value. Quantity: LENGTH, units: m
+                Property InitialThicknessValue() As double
+                    Returns or sets the initial thickness value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -153,8 +153,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -175,8 +175,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -197,13 +197,13 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumDamageFlag() As boolean
-                |     Returns or sets the flag that determines if the maximum damage is
-                |     used.
-                | 
-                |     TRUE: the maximum damage is used.
-                | 
-                |     FALSE: the maximum damage is not used.
+                Property MaximumDamageFlag() As boolean
+                    Returns or sets the flag that determines if the maximum damage is
+                    used.
+                
+                    TRUE: the maximum damage is used.
+                
+                    FALSE: the maximum damage is not used.
 
         :return: bool
         """
@@ -224,8 +224,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumDamageValue() As double
-                |     Returns or sets the maximum damage value.
+                Property MaximumDamageValue() As double
+                    Returns or sets the maximum damage value.
 
         :return: float
         """
@@ -246,9 +246,9 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MechanicalResponse() As SimCohesiveMechanicalResponse
-                |     Returns or sets the Mechanical response: TractionSeparation, Continuum,
-                |     Gasket
+                Property MechanicalResponse() As SimCohesiveMechanicalResponse
+                    Returns or sets the Mechanical response: TractionSeparation, Continuum,
+                    Gasket
 
         :return: SimCohesiveMechanicalResponse
         """
@@ -269,8 +269,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the property.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the property.
 
         :return: SimOrientation
         """
@@ -283,13 +283,13 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OutOfPlaneThicknessFlag() As boolean
-                |     Returns or sets the flag that determines if the out-of-plane thickness is
-                |     used.
-                | 
-                |     TRUE: the out-of-plane thickness is used.
-                | 
-                |     FALSE: the out-of-plane thickness is not used.
+                Property OutOfPlaneThicknessFlag() As boolean
+                    Returns or sets the flag that determines if the out-of-plane thickness is
+                    used.
+                
+                    TRUE: the out-of-plane thickness is used.
+                
+                    FALSE: the out-of-plane thickness is not used.
 
         :return: bool
         """
@@ -310,9 +310,9 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OutOfPlaneThicknessValue() As double
-                |     Returns or sets the out-of-plane thickness value. Quantity: LENGTH, units:
-                |     m
+                Property OutOfPlaneThicknessValue() As double
+                    Returns or sets the out-of-plane thickness value. Quantity: LENGTH, units:
+                    m
 
         :return: float
         """
@@ -333,33 +333,33 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -372,13 +372,13 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViscosityCoefficientFlag() As boolean
-                |     Returns or sets the flag that determines if the viscosity coefficient is
-                |     used.
-                | 
-                |     TRUE: the viscosity coefficient is used.
-                | 
-                |     FALSE: the viscosity coefficient is not used.
+                Property ViscosityCoefficientFlag() As boolean
+                    Returns or sets the flag that determines if the viscosity coefficient is
+                    used.
+                
+                    TRUE: the viscosity coefficient is used.
+                
+                    FALSE: the viscosity coefficient is not used.
 
         :return: bool
         """
@@ -399,8 +399,8 @@ class SimCohesiveProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViscosityCoefficientValue() As double
-                |     Returns or sets the viscosity coefficient value. 
+                Property ViscosityCoefficientValue() As double
+                    Returns or sets the viscosity coefficient value. 
 
         :return: float
         """

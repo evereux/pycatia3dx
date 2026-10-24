@@ -18,34 +18,34 @@ class SimHistorySensor(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHistorySensor
-                | 
-                | Represents the history sensor.
-                | Role:Creating the history sensor feature using the
-                | SimHistorySensorFactory::CreateSensor. Then set the different API's provided in
-                | this interface and update the history sensor using and the
-                | SimHistorySensor.Update() method.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a Sensor object as
-                |  following.
-                |  
-                | 
-                |  Dim oHistorySensor As SimHistorySensor
-                |  Set oHistorySensor = oResultsAnalysisCase.CreateHistorySensor
-                |  oHistorySensor.Variable = "ALLAE"
-                |  oHistorySensor.InvariantQuantity = SimScalar
-                |  oHistorySensor.SetAllTimeBasedSteps
-                |  oSensor.Update
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHistorySensor
+                
+                Represents the history sensor.
+                Role:Creating the history sensor feature using the
+                SimHistorySensorFactory::CreateSensor. Then set the different API's provided in
+                this interface and update the history sensor using and the
+                SimHistorySensor.Update() method.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a Sensor object as
+                 following.
+                 
+                
+                 Dim oHistorySensor As SimHistorySensor
+                 Set oHistorySensor = oResultsAnalysisCase.CreateHistorySensor
+                 oHistorySensor.Variable = "ALLAE"
+                 oHistorySensor.InvariantQuantity = SimScalar
+                 oHistorySensor.SetAllTimeBasedSteps
+                 oSensor.Update
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
     
     """
 
@@ -59,10 +59,10 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
-                | Only)
-                |     Sets the component type for the quantity. Refer the
-                |     SMAIAMpaQuantityEnums.idl file all the available enum types.
+                Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
+                Only)
+                    Sets the component type for the quantity. Refer the
+                    SMAIAMpaQuantityEnums.idl file all the available enum types.
 
         :return: int
         """
@@ -83,10 +83,10 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
-                | Only)
-                |     Sets the invariant type for the quantity. Refer the
-                |     SMAIAMpaQuantityEnums.idl file all the available enum types.
+                Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
+                Only)
+                    Sets the invariant type for the quantity. Refer the
+                    SMAIAMpaQuantityEnums.idl file all the available enum types.
 
         :return: int
         """
@@ -107,10 +107,10 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LastValue(boolean ibFlag) (Write Only)
-                |     Creates the parameter for the last value. The parameter will be created
-                |     only if a single sub-region is specified through SetSupport() API. If there are
-                |     no regions and sub-regions, the last value will be created for whole model.
+                Property LastValue(boolean ibFlag) (Write Only)
+                    Creates the parameter for the last value. The parameter will be created
+                    only if a single sub-region is specified through SetSupport() API. If there are
+                    no regions and sub-regions, the last value will be created for whole model.
 
         :return: bool
         """
@@ -131,10 +131,10 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SensorOutputParameter() As SimSensorOutputParameters
-                |     Gets/Sets the sensor output parameters object.
-                |     Refer @see #SMAIAMpaSensorOutputParameters about how to set the different
-                |     parameter creation criteria.
+                Property SensorOutputParameter() As SimSensorOutputParameters
+                    Gets/Sets the sensor output parameters object.
+                    Refer @see #SMAIAMpaSensorOutputParameters about how to set the different
+                    parameter creation criteria.
 
         :return: SimSensorOutputParameters
         """
@@ -155,9 +155,9 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Variable(CATBSTR icsVariableType) (Write Only)
-                |     Specifies the variable on which the history sensor is to be created. For
-                |     example the variable can be S, RT, UT etc.
+                Property Variable(CATBSTR icsVariableType) (Write Only)
+                    Specifies the variable on which the history sensor is to be created. For
+                    example the variable can be S, RT, UT etc.
 
         :return: str
         """
@@ -177,10 +177,10 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAllTimeBasedSteps()
-                |     Sets the all the time based steps available. Suppose there are two static
-                |     steps, then this option will create a curve that will have the combined range
-                |     of step 1 and step 2.
+                Sub SetAllTimeBasedSteps()
+                    Sets the all the time based steps available. Suppose there are two static
+                    steps, then this option will create a curve that will have the combined range
+                    of step 1 and step 2.
 
         :return: None
         """
@@ -191,20 +191,20 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetComplex(SimComplexValues ieComplexValue,double
-                | iValueAtAngle)
-                |     Sets the complex type and angle. The complex options are dependent on the
-                |     complex options that are set while creating the step.
-                | 
-                |     Parameters:
-                | 
-                |         ieComplexValue
-                |             Sets the complex type. The available options can be found in
-                |             SMAIAMpaSensorEnums.idl 
-                |         iValueAtAngle
-                |             Sets the complex angle value. Specify the value of the angle. To be
-                |             set only when SimComplexValues::SimValueAtAngle option is used for setting the
-                |             complex value.
+                Sub SetComplex(SimComplexValues ieComplexValue,double
+                iValueAtAngle)
+                    Sets the complex type and angle. The complex options are dependent on the
+                    complex options that are set while creating the step.
+                
+                    Parameters:
+                
+                        ieComplexValue
+                            Sets the complex type. The available options can be found in
+                            SMAIAMpaSensorEnums.idl 
+                        iValueAtAngle
+                            Sets the complex angle value. Specify the value of the angle. To be
+                            set only when SimComplexValues::SimValueAtAngle option is used for setting the
+                            complex value.
 
         :param ie_complex_value:
         :param float i_value_at_angle:
@@ -217,19 +217,19 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
-                | ibAbsoluteMaxFlag)
-                |     Sets the parameters for which the values are to be
-                |     calculated.
-                | 
-                |     Parameters:
-                | 
-                |         ibMaxFlag
-                |             Set true to create the maximum extrema parameter. 
-                |         ibMinFlag
-                |             Set true to create the minimum extrema parameter. 
-                |         ibAbsoluteMaxFlag
-                |             Set true to create the absolute maximum extrema parameter.
+                Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
+                ibAbsoluteMaxFlag)
+                    Sets the parameters for which the values are to be
+                    calculated.
+                
+                    Parameters:
+                
+                        ibMaxFlag
+                            Set true to create the maximum extrema parameter. 
+                        ibMinFlag
+                            Set true to create the minimum extrema parameter. 
+                        ibAbsoluteMaxFlag
+                            Set true to create the absolute maximum extrema parameter.
 
         :param bool ib_max_flag:
         :param bool ib_min_flag:
@@ -243,21 +243,21 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
-                | inLoadCaseIndex)
-                |     Sets the step, frame and load case information needed to create the history
-                |     Sensor.
-                | 
-                |     Parameters:
-                | 
-                |         icsPersistentStepID
-                |             The persistent ID of the step. 
-                |         inFrameIndex
-                |             The frame index. The index starts from 1. This option is needed
-                |             only in case of multiple load cases. 
-                |         inLoadCaseIndex
-                |             The load case index. The index starts from 1. It is needed if a
-                |             load case is present in the step.
+                Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
+                inLoadCaseIndex)
+                    Sets the step, frame and load case information needed to create the history
+                    Sensor.
+                
+                    Parameters:
+                
+                        icsPersistentStepID
+                            The persistent ID of the step. 
+                        inFrameIndex
+                            The frame index. The index starts from 1. This option is needed
+                            only in case of multiple load cases. 
+                        inLoadCaseIndex
+                            The load case index. The index starts from 1. It is needed if a
+                            load case is present in the step.
 
         :param str ics_persistent_step_id:
         :param int in_frame_index:
@@ -271,26 +271,26 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetSupport(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
-                | ilnbSubRegionIndices,CATSafeArrayVariant ilsSubRegions)
-                |     Sets the support for creating the history Sensor such as regions and
-                |     sub-regions. a) No need to call this method if the history sensor is to be
-                |     created on the whole model since there are no supports to be selected. b) In
-                |     case of supports available all the three parameters must be
-                |     set.
+                Sub SetSupport(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
+                ilnbSubRegionIndices,CATSafeArrayVariant ilsSubRegions)
+                    Sets the support for creating the history Sensor such as regions and
+                    sub-regions. a) No need to call this method if the history sensor is to be
+                    created on the whole model since there are no supports to be selected. b) In
+                    case of supports available all the three parameters must be
+                    set.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilsRegions
-                |             It is the array of strings which specifies the name of the
-                |             region(s).
-                |         ilnbSubRegionIndices
-                |             It is the array of integers. Specifies the number of sub-regions
-                |             selected in a region. For example if "Region 1" and "Region 2" is selected and
-                |             one needs to select 2 and 3 sub-regions respectively from the regions, one will
-                |             have to specify it as [2,3].
-                |         ilsSubRegions
-                |             Specifies the name of the sub-regions. For example "Node 1".
+                        ilsRegions
+                            It is the array of strings which specifies the name of the
+                            region(s).
+                        ilnbSubRegionIndices
+                            It is the array of integers. Specifies the number of sub-regions
+                            selected in a region. For example if "Region 1" and "Region 2" is selected and
+                            one needs to select 2 and 3 sub-regions respectively from the regions, one will
+                            have to specify it as [2,3].
+                        ilsSubRegions
+                            Specifies the name of the sub-regions. For example "Node 1".
 
         :param tuple ils_regions:
         :param tuple ilnb_sub_region_indices:
@@ -320,28 +320,28 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetSupport2(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
-                | ilnbSubRegionIndices,CATSafeArrayVariant ilsSubRegions)
-                |     Sets the second support for creating the history Sensor. Calling
-                |     SetSupport() is mandatory if the second support is to be set. The
-                |     put_SensorOutputParameter() will have to be used to set the parameters if the
-                |     second support is specified. a) No need to call this method if the history
-                |     sensor is to be created on the whole model on only Support 1 is enough. b) In
-                |     case of supports available all the three parameters must be
-                |     set.
+                Sub SetSupport2(CATSafeArrayVariant ilsRegions,CATSafeArrayVariant
+                ilnbSubRegionIndices,CATSafeArrayVariant ilsSubRegions)
+                    Sets the second support for creating the history Sensor. Calling
+                    SetSupport() is mandatory if the second support is to be set. The
+                    put_SensorOutputParameter() will have to be used to set the parameters if the
+                    second support is specified. a) No need to call this method if the history
+                    sensor is to be created on the whole model on only Support 1 is enough. b) In
+                    case of supports available all the three parameters must be
+                    set.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ilsRegions
-                |             It is the array of strings which specifies the name of the
-                |             region(s).
-                |         ilnbSubRegionIndices
-                |             It is the array of integers. Specifies the number of sub-regions
-                |             selected in a region. For example if "Region 1" and "Region 2" is selected and
-                |             one needs to select 2 and 3 sub-regions respectively from the regions, one will
-                |             have to specify it as [2,3].
-                |         ilsSubRegions
-                |             Specifies the name of the sub-regions. For example "Node 1".
+                        ilsRegions
+                            It is the array of strings which specifies the name of the
+                            region(s).
+                        ilnbSubRegionIndices
+                            It is the array of integers. Specifies the number of sub-regions
+                            selected in a region. For example if "Region 1" and "Region 2" is selected and
+                            one needs to select 2 and 3 sub-regions respectively from the regions, one will
+                            have to specify it as [2,3].
+                        ilsSubRegions
+                            Specifies the name of the sub-regions. For example "Node 1".
 
         :param tuple ils_regions:
         :param tuple ilnb_sub_region_indices:
@@ -371,9 +371,9 @@ class SimHistorySensor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Creates the history sensor. This method needs to be called at the end after
-                |     setting all the above attributes. 
+                Sub Update()
+                    Creates the history sensor. This method needs to be called at the end after
+                    setting all the above attributes. 
 
         :return: None
         """

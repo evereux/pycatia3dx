@@ -18,19 +18,19 @@ class StrEndcutMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrEndcutMngt
-                | 
-                | Object to manage Structure Functional Modeler Endcuts on the
-                | Profile.
-                | Role: To Manage Endcuts.
-                | 
-                | See also:
-                |     StrDetailFeature, StrEndcut, StrProfileLimitMngt
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrEndcutMngt
+                
+                Object to manage Structure Functional Modeler Endcuts on the
+                Profile.
+                Role: To Manage Endcuts.
+                
+                See also:
+                    StrDetailFeature, StrEndcut, StrProfileLimitMngt
     
     """
 
@@ -43,26 +43,26 @@ class StrEndcutMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddEndcut(long iExtr) As StrEndcut
-                |     Returns an Endcut created under this Profile Role:Create a Endcut under
-                |     this Profile at a specific extremity.
-                | 
-                |     Parameters:
-                | 
-                |         iExtr
-                |             Extremity, 1 for start, 2 for end. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates an Endcut at start of
-                |              profile.
-                |              
-                | 
-                |              Dim ObjStrEndcutMngt As StrEndcutMngt
-                |              Set ObjStrEndcutMngt = ObjSfdStiffener.StrEndcutMngt
-                |              Dim ObjStrEndcut as StrEndcut
-                |              Set ObjStrEndcut = ObjStrEndcutMngt.AddEndcut(1)
+                Func AddEndcut(long iExtr) As StrEndcut
+                    Returns an Endcut created under this Profile Role:Create a Endcut under
+                    this Profile at a specific extremity.
+                
+                    Parameters:
+                
+                        iExtr
+                            Extremity, 1 for start, 2 for end. 
+                
+                    Example:
+                
+                
+                             This example creates an Endcut at start of
+                             profile.
+                             
+                
+                             Dim ObjStrEndcutMngt As StrEndcutMngt
+                             Set ObjStrEndcutMngt = ObjSfdStiffener.StrEndcutMngt
+                             Dim ObjStrEndcut as StrEndcut
+                             Set ObjStrEndcut = ObjStrEndcutMngt.AddEndcut(1)
 
         :param int i_extr:
         :return: StrEndcut
@@ -74,23 +74,23 @@ class StrEndcutMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetEndcut(long iExtr) As StrEndcut
-                |     Returns the Endcut that is at a specific extremity of this
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         iExtr
-                |             Extremity, 1 for start, 2 for end. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves start Endcut of profile.
-                |              
-                | 
-                |               Dim ObjStrEndcut As StrEndcut
-                |               Set ObjStrEndcut = ObjStrEndcutMngt.GetEndcut(1)
+                Func GetEndcut(long iExtr) As StrEndcut
+                    Returns the Endcut that is at a specific extremity of this
+                    profile.
+                
+                    Parameters:
+                
+                        iExtr
+                            Extremity, 1 for start, 2 for end. 
+                
+                    Example:
+                
+                
+                             This example retrieves start Endcut of profile.
+                             
+                
+                              Dim ObjStrEndcut As StrEndcut
+                              Set ObjStrEndcut = ObjStrEndcutMngt.GetEndcut(1)
 
         :param int i_extr:
         :return: StrEndcut
@@ -102,22 +102,22 @@ class StrEndcutMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveEndcut(long iExtr)
-                |     Removes the Endcut that is at a specific extremity of this
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         iExtr
-                |             Extremity, 1 for start, 2 for end. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example removes start Endcut of profile.
-                |              
-                | 
-                |               ObjStrEndcutMngt.RemoveEndcut (1)
+                Sub RemoveEndcut(long iExtr)
+                    Removes the Endcut that is at a specific extremity of this
+                    profile.
+                
+                    Parameters:
+                
+                        iExtr
+                            Extremity, 1 for start, 2 for end. 
+                
+                    Example:
+                
+                
+                             This example removes start Endcut of profile.
+                             
+                
+                              ObjStrEndcutMngt.RemoveEndcut (1)
 
         :param int i_extr:
         :return: None

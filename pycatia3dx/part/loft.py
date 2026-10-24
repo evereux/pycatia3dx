@@ -18,21 +18,21 @@ class Loft(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         Loft
-                | 
-                | Loft feature.
-                | Manipulation of solid Loft feature. Allows to access data of the Loft feature
-                | created by the CATIAShapeFactory. This solid feature is created from an
-                | underlying HybridShapeLoft aggregated by the Loft.
-                | 
-                | See also:
-                |     ShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        Loft
+                
+                Loft feature.
+                Manipulation of solid Loft feature. Allows to access data of the Loft feature
+                created by the CATIAShapeFactory. This solid feature is created from an
+                underlying HybridShapeLoft aggregated by the Loft.
+                
+                See also:
+                    ShapeFactory
     
     """
 
@@ -46,16 +46,16 @@ class Loft(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HybridShape() As HybridShape (Read Only)
-                |     Gets the underlying HybridShapeLoft.
-                | 
-                |     Example:
-                |         The following example explains how to retrieve the underlying
-                |         HybridShape Loft
-                | 
-                |           Dim oHybridShape as AnyObject
-                |           Set oHybridShape=oLoft.HybridShape
-                |           oHybridShape.SectionCoupling = 2
+                Property HybridShape() As HybridShape (Read Only)
+                    Gets the underlying HybridShapeLoft.
+                
+                    Example:
+                        The following example explains how to retrieve the underlying
+                        HybridShape Loft
+                
+                          Dim oHybridShape as AnyObject
+                          Set oHybridShape=oLoft.HybridShape
+                          oHybridShape.SectionCoupling = 2
 
         :return: HybridShape
         """

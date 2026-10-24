@@ -17,12 +17,12 @@ class SpotDrSequence2(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrSequence2
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrSequence2
 
     
     """
@@ -36,22 +36,22 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAuxiliaryAxisValues(short iPosIndex,AnyObject iAuxiliaryDevMCA) As
-                | CATSafeArrayVariant
-                |     Retrieves the Auxiliary device Joint values for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iAuxiliaryDevMCA
-                |             The List of User profiles to be used. 
-                |         oAuxiliaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetAuxiliaryAxisValues(short iPosIndex,AnyObject iAuxiliaryDevMCA) As
+                CATSafeArrayVariant
+                    Retrieves the Auxiliary device Joint values for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iAuxiliaryDevMCA
+                            The List of User profiles to be used. 
+                        oAuxiliaryAxisValues
+                            List of joint values of the device. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param AnyObject i_auxiliary_dev_mca:
@@ -64,18 +64,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetConfig(short iPosIndex) As short
-                |     Gets the Robot Configuration for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iConfig
-                |             The Robot Configuration 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetConfig(short iPosIndex) As short
+                    Gets the Robot Configuration for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iConfig
+                            The Robot Configuration 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: int
@@ -87,18 +87,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetElbowAngle(short iPosIndex) As double
-                |     Gets the Elbow angle for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oElbowAngle
-                |             The Elbow angle. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetElbowAngle(short iPosIndex) As double
+                    Gets the Elbow angle for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oElbowAngle
+                            The Elbow angle. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: float
@@ -110,24 +110,24 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetInterpolationMode(short iPosIndex) As short
-                |     Gets the Interpolation Mode for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oInterpolationMode
-                |             The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
-                |             1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
-                |             end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
-                |             applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
-                |             robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
-                |             and the turn values in the robot motion is applied at the end of move
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetInterpolationMode(short iPosIndex) As short
+                    Gets the Interpolation Mode for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oInterpolationMode
+                            The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
+                            1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
+                            end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
+                            applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
+                            robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
+                            and the turn values in the robot motion is applied at the end of move
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: int
@@ -139,22 +139,22 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionType(short iPosIndex) As short
-                |     Gets the Motion Type for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oMotionType
-                |             The Motion Type. 0 for JointMOVE, // Interpolated movement of
-                |             joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
-                |             // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
-                |             circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
-                |             fashionon 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetMotionType(short iPosIndex) As short
+                    Gets the Motion Type for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oMotionType
+                            The Motion Type. 0 for JointMOVE, // Interpolated movement of
+                            joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
+                            // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
+                            circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
+                            fashionon 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: int
@@ -166,20 +166,20 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPOrientationMode(short iPosIndex) As short
-                |     Gets the TCP Orientation Mode for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oOrientationMode
-                |             The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
-                |             TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetTCPOrientationMode(short iPosIndex) As short
+                    Gets the TCP Orientation Mode for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oOrientationMode
+                            The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
+                            TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: int
@@ -191,18 +191,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTurnNumbers(short iPosIndex) As CATSafeArrayVariant
-                |     Gets the Turn Numbers for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oTurnNumbers
-                |             List of Turn Numbers. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetTurnNumbers(short iPosIndex) As CATSafeArrayVariant
+                    Gets the Turn Numbers for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oTurnNumbers
+                            List of Turn Numbers. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: tuple
@@ -214,18 +214,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTurnSigns(short iPosIndex) As CATSafeArrayVariant
-                |     Gets the Turn Signs for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oTurnSigns
-                |             List of Turn Signs. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetTurnSigns(short iPosIndex) As CATSafeArrayVariant
+                    Gets the Turn Signs for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oTurnSigns
+                            List of Turn Signs. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: tuple
@@ -237,19 +237,19 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetUserProfileList(short iPosIndex) As
-                | CATSafeArrayVariant
-                |     Gets the user profiles for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oUserProfileList
-                |             The List of User profiles to be used. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetUserProfileList(short iPosIndex) As
+                CATSafeArrayVariant
+                    Gets the user profiles for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oUserProfileList
+                            The List of User profiles to be used. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: tuple
@@ -261,17 +261,17 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetActionPrefixName(CATBSTR iPrefixNameBSTR)
-                |     Sets the Prefix for the Actions in the Sequence
-                | 
-                |     Parameters:
-                | 
-                |         iPrefixNameBSTR
-                |             The prefix to be used for the Actions inside the sequence
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetActionPrefixName(CATBSTR iPrefixNameBSTR)
+                    Sets the Prefix for the Actions in the Sequence
+                
+                    Parameters:
+                
+                        iPrefixNameBSTR
+                            The prefix to be used for the Actions inside the sequence
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param str i_prefix_name_bstr:
         :return: None
@@ -284,22 +284,22 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAuxiliaryAxisValues(short iPosIndex,AnyObject
-                | iAuxiliaryDevMCA,CATSafeArrayVariant iAuxiliaryAxisValues)
-                |     Sets the Auxiliary device Joint values for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iAuxiliaryDevMCA
-                |             The List of User profiles to be used. 
-                |         iAuxiliaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetAuxiliaryAxisValues(short iPosIndex,AnyObject
+                iAuxiliaryDevMCA,CATSafeArrayVariant iAuxiliaryAxisValues)
+                    Sets the Auxiliary device Joint values for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iAuxiliaryDevMCA
+                            The List of User profiles to be used. 
+                        iAuxiliaryAxisValues
+                            List of joint values of the device. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param AnyObject i_auxiliary_dev_mca:
@@ -314,18 +314,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetConfig(short iPosIndex,short iConfig)
-                |     Sets the Robot Configuration for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oConfig
-                |             The Robot Configuration 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetConfig(short iPosIndex,short iConfig)
+                    Sets the Robot Configuration for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oConfig
+                            The Robot Configuration 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param int i_config:
@@ -338,18 +338,18 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetElbowAngle(short iPosIndex,double iElbowAngle)
-                |     Sets the Elbow angle for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iElbowAngle
-                |             The Elbow angle. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetElbowAngle(short iPosIndex,double iElbowAngle)
+                    Sets the Elbow angle for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iElbowAngle
+                            The Elbow angle. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param float i_elbow_angle:
@@ -362,25 +362,25 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInterpolationMode(short iPosIndex,short
-                | iInterpolationMode)
-                |     Sets the Interpolation Mode for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iInterpolationMode
-                |             The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
-                |             1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
-                |             end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
-                |             applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
-                |             robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
-                |             and the turn values in the robot motion is applied at the end of move
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetInterpolationMode(short iPosIndex,short
+                iInterpolationMode)
+                    Sets the Interpolation Mode for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iInterpolationMode
+                            The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
+                            1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
+                            end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
+                            applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
+                            robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
+                            and the turn values in the robot motion is applied at the end of move
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param int i_interpolation_mode:
@@ -393,22 +393,22 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMotionType(short iPosIndex,short iMotionType)
-                |     Sets the Motion Type for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iMotionType
-                |             The Motion Type. 0 for JointMOVE, // Interpolated movement of
-                |             joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
-                |             // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
-                |             circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
-                |             fashionon 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetMotionType(short iPosIndex,short iMotionType)
+                    Sets the Motion Type for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iMotionType
+                            The Motion Type. 0 for JointMOVE, // Interpolated movement of
+                            joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
+                            // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
+                            circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
+                            fashionon 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param int i_motion_type:
@@ -421,21 +421,21 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTCPOrientationMode(short iPosIndex,short
-                | iOrientationMode)
-                |     Sets the TCP Orientation Mode for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iOrientationMode
-                |             The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
-                |             TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetTCPOrientationMode(short iPosIndex,short
+                iOrientationMode)
+                    Sets the TCP Orientation Mode for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iOrientationMode
+                            The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
+                            TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param int i_orientation_mode:
@@ -448,19 +448,19 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTurnNumbers(short iPosIndex,CATSafeArrayVariant
-                | iTurnNumbers)
-                |     Sets the Turn Numbers for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iTurnNumbers
-                |             List of Turn Numbers. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetTurnNumbers(short iPosIndex,CATSafeArrayVariant
+                iTurnNumbers)
+                    Sets the Turn Numbers for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iTurnNumbers
+                            List of Turn Numbers. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param tuple i_turn_numbers:
@@ -473,19 +473,19 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTurnSigns(short iPosIndex,CATSafeArrayVariant
-                | iTurnSigns)
-                |     Sets the Turn Signs for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iTurnSigns
-                |             List of Turn Signs. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetTurnSigns(short iPosIndex,CATSafeArrayVariant
+                iTurnSigns)
+                    Sets the Turn Signs for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iTurnSigns
+                            List of Turn Signs. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param tuple i_turn_signs:
@@ -498,19 +498,19 @@ class SpotDrSequence2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUserProfileList(short iPosIndex,CATSafeArrayVariant
-                | iUserProfileList)
-                |     Sets the user profiles for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iUserProfileList
-                |             The List of User profiles to be used. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error 
+                Sub SetUserProfileList(short iPosIndex,CATSafeArrayVariant
+                iUserProfileList)
+                    Sets the user profiles for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iUserProfileList
+                            The List of User profiles to be used. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error 
 
         :param int i_pos_index:
         :param tuple i_user_profile_list:

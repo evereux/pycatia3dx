@@ -18,36 +18,36 @@ class SimConnectionServices(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectionServices
-                | 
-                | Represents the connection services to create fastener
-                | connections.
-                | 
-                | Example:
-                |     Given a SimFemRoot object, you can retrieve a SimConnectionServices as
-                |     following:
-                | 
-                |      Dim myFEMRepRoot As SimFemRoot
-                |      ...
-                |      Dim myConnectionServices As SimConnectionServices
-                |      Set myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFemRoot object, you can retrieve a SimConnectionServices as
-                |     following:
-                | 
-                |      ...
-                |      myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
-                |      
-                | 
-                | See also:
-                |     SimFemRoot
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectionServices
+                
+                Represents the connection services to create fastener
+                connections.
+                
+                Example:
+                    Given a SimFemRoot object, you can retrieve a SimConnectionServices as
+                    following:
+                
+                     Dim myFEMRepRoot As SimFemRoot
+                     ...
+                     Dim myConnectionServices As SimConnectionServices
+                     Set myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
+                     
+                
+                Example in Python:
+                    Given a SimFemRoot object, you can retrieve a SimConnectionServices as
+                    following:
+                
+                     ...
+                     myConnectionServices = myFEMRepRoot.GetItem("SimConnectionServices")
+                     
+                
+                See also:
+                    SimFemRoot
     
     """
 
@@ -60,22 +60,22 @@ class SimConnectionServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateLinesFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
-                | iPrefix,CATVariant iTolerance)
-                |     Automatically creates line fasteners by giving an handlers list containing
-                |     lines.
+                Sub CreateLinesFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
+                iPrefix,CATVariant iTolerance)
+                    Automatically creates line fasteners by giving an handlers list containing
+                    lines.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iHandlers
-                |             [in] List of lines or geometrical set containing the candidates
-                |             lines.
-                |         iPrefix
-                |             [in] Prefix for the name of all created fastener connections.
+                        iHandlers
+                            [in] List of lines or geometrical set containing the candidates
+                            lines.
+                        iPrefix
+                            [in] Prefix for the name of all created fastener connections.
                 |
-                |         iTolerance
-                |             [in] Double value used to limit the projection of the line on the
-                |             supports.
+                        iTolerance
+                            [in] Double value used to limit the projection of the line on the
+                            supports.
 
         :param tuple i_handlers:
         :param str i_prefix:
@@ -105,22 +105,22 @@ class SimConnectionServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreatePointsFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
-                | iPrefix,CATVariant iTolerance)
-                |     Automatically creates point fasteners by giving an handlers list containing
-                |     point.
+                Sub CreatePointsFromSearch(CATSafeArrayVariant iHandlers,CATBSTR
+                iPrefix,CATVariant iTolerance)
+                    Automatically creates point fasteners by giving an handlers list containing
+                    point.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iHandlers
-                |             [in] List of points or geometrical set containing the candidates
-                |             points.
-                |         iPrefix
-                |             [in] Prefix for the name of all created fastener connections.
+                        iHandlers
+                            [in] List of points or geometrical set containing the candidates
+                            points.
+                        iPrefix
+                            [in] Prefix for the name of all created fastener connections.
                 |
-                |         iTolerance
-                |             [in] Double value used to limit the projection of the point on the
-                |             supports.
+                        iTolerance
+                            [in] Double value used to limit the projection of the point on the
+                            supports.
 
         :param tuple i_handlers:
         :param str i_prefix:
@@ -150,13 +150,13 @@ class SimConnectionServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ImportFromFSR(CATBSTR iPrefix)
-                |     Creates points fastener from importing FSR Products.
-                | 
-                |     Parameters:
-                | 
-                |         iPrefix
-                |             [in] Prefix for the name of all created fastener connections.
+                Sub ImportFromFSR(CATBSTR iPrefix)
+                    Creates points fastener from importing FSR Products.
+                
+                    Parameters:
+                
+                        iPrefix
+                            [in] Prefix for the name of all created fastener connections.
 
         :param str i_prefix:
         :return: None
@@ -168,16 +168,16 @@ class SimConnectionServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ImportFromXML(CATBSTR iXMLFilePath,CATBSTR iPrefix)
-                |     Creates fastener connections from an XML file import containing all
-                |     necessary data.
-                | 
-                |     Parameters:
-                | 
-                |         iXMLFilePath
-                |             [in] Full path of the XML file to import. 
-                |         iPrefix
-                |             [in] Prefix for the name of all created fastener connections.
+                Sub ImportFromXML(CATBSTR iXMLFilePath,CATBSTR iPrefix)
+                    Creates fastener connections from an XML file import containing all
+                    necessary data.
+                
+                    Parameters:
+                
+                        iXMLFilePath
+                            [in] Full path of the XML file to import. 
+                        iPrefix
+                            [in] Prefix for the name of all created fastener connections.
 
         :param str i_xml_file_path:
         :param str i_prefix:

@@ -17,15 +17,15 @@ class ManufacturingWireEdmMachine(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingWireEDMMachine
-                | 
-                | Interface representing Wire EDM Machine.
-                | Role: This interface retrieves data from Wire EDM Machine.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingWireEDMMachine
+                
+                Interface representing Wire EDM Machine.
+                Role: This interface retrieves data from Wire EDM Machine.
     
     """
 
@@ -38,20 +38,20 @@ class ManufacturingWireEdmMachine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTechnoSetList() As CATSafeArrayVariant
-                |     Retrieves the TechnoSets defined on the Machine.
-                | 
-                |     Parameters:
-                | 
-                |         oListTechnoSets
-                |             Techno Sets defined on the Machine. 
-                | 
-                |     Returns:
-                |         Return code.
-                |         Legal values:
-                | 
-                |             S_OK: the List is defined
-                |             E_FAIL: otherwise
+                Func GetTechnoSetList() As CATSafeArrayVariant
+                    Retrieves the TechnoSets defined on the Machine.
+                
+                    Parameters:
+                
+                        oListTechnoSets
+                            Techno Sets defined on the Machine. 
+                
+                    Returns:
+                        Return code.
+                        Legal values:
+                
+                            S_OK: the List is defined
+                            E_FAIL: otherwise
 
         :return: tuple
         """

@@ -18,15 +18,15 @@ class DatumTarget(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DatumTarget
-                | 
-                | Interface for Datum Target TPS (datum entity).
-                | TPS for Technological Product Specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DatumTarget
+                
+                Interface for Datum Target TPS (datum entity).
+                TPS for Technological Product Specifications.
     
     """
 
@@ -40,8 +40,8 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Datum() As AnyObject (Read Only)
-                |     Retrieves simple datum, the target belongs to.
+                Property Datum() As AnyObject (Read Only)
+                    Retrieves simple datum, the target belongs to.
 
         :return: AnyObject
         """
@@ -54,8 +54,8 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Label() As CATBSTR
-                |     Retrieves Label.
+                Property Label() As CATBSTR
+                    Retrieves Label.
 
         :return: str
         """
@@ -75,17 +75,17 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAreaForm(CATBSTR oAreaForm)
-                |     Gets the form of the target area.
-                | 
-                |     Parameters:
-                | 
-                |         oAreaForm
-                |             Form of the target area. Legal values are:- Point, Circular,
-                |             Rectangular. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Form has been correctly retrieved. E_FAIL or E_NOIMPL : Area Form cannot be retrieved.
+                Sub GetAreaForm(CATBSTR oAreaForm)
+                    Gets the form of the target area.
+                
+                    Parameters:
+                
+                        oAreaForm
+                            Form of the target area. Legal values are:- Point, Circular,
+                            Rectangular. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Form has been correctly retrieved. E_FAIL or E_NOIMPL : Area Form cannot be retrieved.
 
         :param str o_area_form:
         :return: None
@@ -97,16 +97,16 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCircularAreaSize(double oAreaSize)
-                |     Gets the size of the circular area.
-                | 
-                |     Parameters:
-                | 
-                |         oAreaSize
-                |             Size of the Circular target area. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
+                Sub GetCircularAreaSize(double oAreaSize)
+                    Gets the size of the circular area.
+                
+                    Parameters:
+                
+                        oAreaSize
+                            Size of the Circular target area. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
 
         :param float o_area_size:
         :return: None
@@ -118,16 +118,16 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMovableDirectionTTRS(UserSurface opDirectionTTRS)
-                |     Gets the movable Direction TTRS.
-                | 
-                |     Parameters:
-                | 
-                |         ospDirectionTTRS
-                |             Movable Direction TTRS 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the movable direction has been correctly retrieved. E_FAIL or E_NOIMPL : movable direction cannot be retrieved.
+                Sub GetMovableDirectionTTRS(UserSurface opDirectionTTRS)
+                    Gets the movable Direction TTRS.
+                
+                    Parameters:
+                
+                        ospDirectionTTRS
+                            Movable Direction TTRS 
+                
+                    Returns:
+                        HRESULT S_OK:- the movable direction has been correctly retrieved. E_FAIL or E_NOIMPL : movable direction cannot be retrieved.
 
         :param UserSurface op_direction_ttrs:
         :return: None
@@ -139,18 +139,18 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRectangularAreaSize(double oLength,double oWidth)
-                |     Gets the size of the rectangular area.
-                | 
-                |     Parameters:
-                | 
-                |         oLength
-                |             Length of the Rectangular target area. 
-                |         oWidth
-                |             Width of the Rectangular target area. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
+                Sub GetRectangularAreaSize(double oLength,double oWidth)
+                    Gets the size of the rectangular area.
+                
+                    Parameters:
+                
+                        oLength
+                            Length of the Rectangular target area. 
+                        oWidth
+                            Width of the Rectangular target area. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
 
         :param float o_length:
         :param float o_width:
@@ -163,17 +163,17 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAreaForm(CATBSTR iAreaForm)
-                |     Sets the form of the target area.
-                | 
-                |     Parameters:
-                | 
-                |         iAreaForm
-                |             Form of the target area. Legal values are:- Point, Circular,
-                |             Rectangular. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Form has been correctly set. E_FAIL or E_NOIMPL : Area Form cannot be set.
+                Sub SetAreaForm(CATBSTR iAreaForm)
+                    Sets the form of the target area.
+                
+                    Parameters:
+                
+                        iAreaForm
+                            Form of the target area. Legal values are:- Point, Circular,
+                            Rectangular. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Form has been correctly set. E_FAIL or E_NOIMPL : Area Form cannot be set.
 
         :param str i_area_form:
         :return: None
@@ -185,16 +185,16 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCircularAreaSize(double iAreaSize)
-                |     Sets the size of the circular area.
-                | 
-                |     Parameters:
-                | 
-                |         iAreaSize
-                |             Size of the Circular target area. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set.
+                Sub SetCircularAreaSize(double iAreaSize)
+                    Sets the size of the circular area.
+                
+                    Parameters:
+                
+                        iAreaSize
+                            Size of the Circular target area. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set.
 
         :param float i_area_size:
         :return: None
@@ -206,17 +206,17 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMovableDirectionTTRS(UserSurface ipDirectionTTRS)
-                |     Sets the movable Direction TTRS.
-                | 
-                |     Parameters:
-                | 
-                |         ispDirectionTTRS
-                |             Movable Direction TTRS If the ipDirectionTTRS is NULL_var, the
-                |             direction TTRS inside the model is removed. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the movable direction has been correctly set. E_FAIL or E_NOIMPL : movable direction cannot be set.
+                Sub SetMovableDirectionTTRS(UserSurface ipDirectionTTRS)
+                    Sets the movable Direction TTRS.
+                
+                    Parameters:
+                
+                        ispDirectionTTRS
+                            Movable Direction TTRS If the ipDirectionTTRS is NULL_var, the
+                            direction TTRS inside the model is removed. 
+                
+                    Returns:
+                        HRESULT S_OK:- the movable direction has been correctly set. E_FAIL or E_NOIMPL : movable direction cannot be set.
 
         :param UserSurface ip_direction_ttrs:
         :return: None
@@ -228,18 +228,18 @@ class DatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRectangularAreaSize(double iLength,double iWidth)
-                |     Sets the size of the rectangular area.
-                | 
-                |     Parameters:
-                | 
-                |         iLength
-                |             Length of the Rectangular target area. 
-                |         iWidth
-                |             Width of the Rectangular target area. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set. 
+                Sub SetRectangularAreaSize(double iLength,double iWidth)
+                    Sets the size of the rectangular area.
+                
+                    Parameters:
+                
+                        iLength
+                            Length of the Rectangular target area. 
+                        iWidth
+                            Width of the Rectangular target area. 
+                
+                    Returns:
+                        HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set. 
 
         :param float i_length:
         :param float i_width:

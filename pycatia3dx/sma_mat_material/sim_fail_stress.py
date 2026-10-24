@@ -19,51 +19,51 @@ class SimFailStress(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimFailStress
-                | 
-                | Represents the Fail Stress object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimFailStress as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFailStress As SimFailStress
-                |      Set MyFailStress = MyMaterialOptions.Add("SimFailStress")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimFailStress named
-                |     "Fail Stress.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyFailStress As SimFailStress
-                |      Set MyFailStress = MyMaterialOptions.Item("Fail Stress.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimFailStress as following:
-                | 
-                |      ...
-                |      myFailStress = myMaterialOptions.Add("SimFailStress")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimFailStress named "Fail Stress.1" as following:
-                | 
-                |      ...
-                |      myFailStress = myMaterialOptions.Item("Fail Stress.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimFailStress
+                
+                Represents the Fail Stress object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimFailStress as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFailStress As SimFailStress
+                     Set MyFailStress = MyMaterialOptions.Add("SimFailStress")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimFailStress named
+                    "Fail Stress.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyFailStress As SimFailStress
+                     Set MyFailStress = MyMaterialOptions.Item("Fail Stress.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimFailStress as following:
+                
+                     ...
+                     myFailStress = myMaterialOptions.Add("SimFailStress")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimFailStress named "Fail Stress.1" as following:
+                
+                     ...
+                     myFailStress = myMaterialOptions.Item("Fail Stress.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimFailStress(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Material table.
 
         :return: SimMaterialTable
         """
@@ -90,19 +90,19 @@ class SimFailStress(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimFailStressMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetMaterialTableColumn(SimFailStressMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn

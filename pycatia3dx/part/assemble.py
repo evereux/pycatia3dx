@@ -17,19 +17,19 @@ class Assemble(BooleanShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.BooleanShape
-                |                             Assemble
-                | 
-                | Represents the assemble boolean operation.
-                | It is performed between a body and the current shape. An assemble operation
-                | adds material if the body is "positive" and remove material if the body is
-                | "negative".
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.BooleanShape
+                                            Assemble
+                
+                Represents the assemble boolean operation.
+                It is performed between a body and the current shape. An assemble operation
+                adds material if the body is "positive" and remove material if the body is
+                "negative".
 
     """
 

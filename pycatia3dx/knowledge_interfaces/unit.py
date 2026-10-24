@@ -17,18 +17,18 @@ class Unit(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Unit
-                | 
-                | Represents CATIAUnit object.
-                | This interface allows convertion.
-                | 
-                | See also:
-                |     Units.Item, Dimension.Unit
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Unit
+                
+                Represents CATIAUnit object.
+                This interface allows convertion.
+                
+                See also:
+                    Units.Item, Dimension.Unit
     
     """
 
@@ -42,8 +42,8 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Magnitude() As CATBSTR (Read Only)
-                |     Returns the magnitude associated to the unit.
+                Property Magnitude() As CATBSTR (Read Only)
+                    Returns the magnitude associated to the unit.
 
         :return: str
         """
@@ -56,8 +56,8 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Symbol() As CATBSTR (Read Only)
-                |     Returns the symbol associated to the unit.
+                Property Symbol() As CATBSTR (Read Only)
+                    Returns the symbol associated to the unit.
 
         :return: str
         """
@@ -69,17 +69,17 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func ConvertFromMKS(double iValueInMKS) As double
-                |     Convert the initial value (expressed in MKS unit) in its equivalent in the
-                |     current unit.
-                | 
-                |     Parameters:
-                | 
-                |         iValueInMKS
-                |             The initial value in MKS unit. 
-                | 
-                |     Returns:
-                |         The final value in the current unit.
+                Func ConvertFromMKS(double iValueInMKS) As double
+                    Convert the initial value (expressed in MKS unit) in its equivalent in the
+                    current unit.
+                
+                    Parameters:
+                
+                        iValueInMKS
+                            The initial value in MKS unit. 
+                
+                    Returns:
+                        The final value in the current unit.
 
         :param float i_value_in_mks:
         :return: float
@@ -91,18 +91,18 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func ConvertFromStorageUnit(double iValueInStorageUnit) As
-                | double
-                |     Convert the initial value (expressed in storage unit) in its equivalent in
-                |     the current unit.
-                | 
-                |     Parameters:
-                | 
-                |         iValueInStorageUnit
-                |             The initial value in storage unit. 
-                | 
-                |     Returns:
-                |         oValueInThisUnit The final value in the current unit.
+                Func ConvertFromStorageUnit(double iValueInStorageUnit) As
+                double
+                    Convert the initial value (expressed in storage unit) in its equivalent in
+                    the current unit.
+                
+                    Parameters:
+                
+                        iValueInStorageUnit
+                            The initial value in storage unit. 
+                
+                    Returns:
+                        oValueInThisUnit The final value in the current unit.
 
         :param float i_value_in_storage_unit:
         :return: float
@@ -114,16 +114,16 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func ConvertToMKS(double iValueInThisUnit) As double
-                |     Convert the initial value in its equivalent in MKS unit.
-                | 
-                |     Parameters:
-                | 
-                |         iValueInThisUnit
-                |             The initial value in the current unit. 
-                | 
-                |     Returns:
-                |         oValueInMKS The final value in the corresponding MKS unit.
+                Func ConvertToMKS(double iValueInThisUnit) As double
+                    Convert the initial value in its equivalent in MKS unit.
+                
+                    Parameters:
+                
+                        iValueInThisUnit
+                            The initial value in the current unit. 
+                
+                    Returns:
+                        oValueInMKS The final value in the corresponding MKS unit.
 
         :param float i_value_in_this_unit:
         :return: float
@@ -135,17 +135,17 @@ class Unit(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func ConvertToStorageUnit(double iValueInThisUnit) As double
-                |     Convert the initial value in its equivalent in storage
-                |     unit.
-                | 
-                |     Parameters:
-                | 
-                |         iValueInThisUnit
-                |             The initial value in the current unit. 
-                | 
-                |     Returns:
-                |         oValueInStorageUnit The final value in the corresponding storage unit.
+                Func ConvertToStorageUnit(double iValueInThisUnit) As double
+                    Convert the initial value in its equivalent in storage
+                    unit.
+                
+                    Parameters:
+                
+                        iValueInThisUnit
+                            The initial value in the current unit. 
+                
+                    Returns:
+                        oValueInStorageUnit The final value in the corresponding storage unit.
 
         :param float i_value_in_this_unit:
         :return: float

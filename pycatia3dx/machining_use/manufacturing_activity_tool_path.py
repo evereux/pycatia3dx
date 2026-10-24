@@ -17,14 +17,14 @@ class ManufacturingActivityToolPath(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingActivityToolPath
-                | 
-                | Interface to compute the tool path of an activity.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingActivityToolPath
+                
+                Interface to compute the tool path of an activity.
     
     """
 
@@ -37,8 +37,8 @@ class ManufacturingActivityToolPath(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeAndSetToolPath()
-                |     Compute and set Tool Path for this operation
+                Sub ComputeAndSetToolPath()
+                    Compute and set Tool Path for this operation
 
         :return: None
         """

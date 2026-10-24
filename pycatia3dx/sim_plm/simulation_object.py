@@ -16,18 +16,18 @@ class SimulationObject(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         SimulationObject
-                | 
-                | Interface representing SIMULATION data referenced by a
-                | category.
-                | Objects that can implement this interface are Authoring Simulation
-                | representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        SimulationObject
+                
+                Interface representing SIMULATION data referenced by a
+                category.
+                Objects that can implement this interface are Authoring Simulation
+                representation.
 
     """
 

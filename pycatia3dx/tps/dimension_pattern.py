@@ -17,14 +17,14 @@ class DimensionPattern(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DimensionPattern
-                | 
-                | Interface to dimension pattern.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DimensionPattern
+                
+                Interface to dimension pattern.
     
     """
 
@@ -38,8 +38,8 @@ class DimensionPattern(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InstanceCount() As double (Read Only)
-                |     Get count of instances. 
+                Property InstanceCount() As double (Read Only)
+                    Get count of instances. 
 
         :return: float
         """

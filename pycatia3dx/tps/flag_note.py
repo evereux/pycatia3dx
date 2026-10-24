@@ -19,14 +19,14 @@ class FlagNote(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FlagNote
-                | 
-                | Interface for the TPS Flag Note object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FlagNote
+                
+                Interface for the TPS Flag Note object.
     
     """
 
@@ -40,13 +40,13 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FlagNoteText() As CATBSTR
-                |     Retrieves or sets Flag Text.
-                | 
-                |     Parameters:
-                | 
-                |         oText
-                |             Returned Flag text.
+                Property FlagNoteText() As CATBSTR
+                    Retrieves or sets Flag Text.
+                
+                    Parameters:
+                
+                        oText
+                            Returned Flag text.
 
         :return: str
         """
@@ -67,13 +67,13 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Retrieves or sets Flag Text Representation.
-                | 
-                |     Parameters:
-                | 
-                |         oText
-                |             Returned text for graphical representation.
+                Property Text() As CATBSTR
+                    Retrieves or sets Flag Text Representation.
+                
+                    Parameters:
+                
+                        oText
+                            Returned text for graphical representation.
 
         :return: str
         """
@@ -93,13 +93,13 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddURL(CATBSTR iUrl)
-                |     Sets an URL.
-                | 
-                |     Parameters:
-                | 
-                |         iUrl
-                |             URL to Set
+                Sub AddURL(CATBSTR iUrl)
+                    Sets an URL.
+                
+                    Parameters:
+                
+                        iUrl
+                            URL to Set
 
         :param str i_url:
         :return: None
@@ -111,8 +111,8 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingText
-                |     Retrieves Drafting text.
+                Func Get2dAnnot() As DrawingText
+                    Retrieves Drafting text.
 
         :return: DrawingText
         """
@@ -123,13 +123,13 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbrURL2() As long
-                |     Gets the number of URL.
-                | 
-                |     Parameters:
-                | 
-                |         oNumberOfURL
-                |             returns param oNumberOfURL.
+                Func GetNbrURL2() As long
+                    Gets the number of URL.
+                
+                    Parameters:
+                
+                        oNumberOfURL
+                            returns param oNumberOfURL.
 
         :return: int
         """
@@ -140,15 +140,15 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
-                |     Modifies a URL.
-                | 
-                |     Parameters:
-                | 
-                |         iUrl
-                |             URL to Set. 
-                |         iIndex
-                |             index of the URL to modify.
+                Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
+                    Modifies a URL.
+                
+                    Parameters:
+                
+                        iUrl
+                            URL to Set. 
+                        iIndex
+                            index of the URL to modify.
 
         :param str i_url:
         :param CATVariant i_index:
@@ -161,13 +161,13 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveURL(CATVariant iIndex)
-                |     Remove a URL.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             position of the URL to remove.
+                Sub RemoveURL(CATVariant iIndex)
+                    Remove a URL.
+                
+                    Parameters:
+                
+                        iIndex
+                            position of the URL to remove.
 
         :param CATVariant i_index:
         :return: None
@@ -179,8 +179,8 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface.
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface.
 
         :return: TPSParallelOnScreen
         """
@@ -191,15 +191,15 @@ class FlagNote(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func URL(CATVariant iIndex) As CATBSTR
-                |     Retrieves url.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of url. 
-                |         oUrl
-                |             url 
+                Func URL(CATVariant iIndex) As CATBSTR
+                    Retrieves url.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of url. 
+                        oUrl
+                            url 
 
         :param CATVariant i_index:
         :return: str

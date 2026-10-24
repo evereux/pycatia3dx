@@ -19,28 +19,28 @@ class HybridShapePlaneAngle(Plane):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneAngle
-                | 
-                | Represents the hybrid shape plane angle feature object.
-                | Role: To access the data of the hybrid shape plane angle feature object,
-                | created with an angle to another plane. This data includes:
-                | 
-                |     The rotation axis
-                |     The rotation angle
-                |     The reference plane
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapePlaneAngle
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneAngle
+                
+                Represents the hybrid shape plane angle feature object.
+                Role: To access the data of the hybrid shape plane angle feature object,
+                created with an angle to another plane. This data includes:
+                
+                    The rotation axis
+                    The rotation angle
+                    The reference plane
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapePlaneAngle
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,8 +54,8 @@ class HybridShapePlaneAngle(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Angle() As Angle (Read Only)
-                |     Returns the rotation angle.
+                Property Angle() As Angle (Read Only)
+                    Returns the rotation angle.
 
         :return: Angle
         """
@@ -68,12 +68,12 @@ class HybridShapePlaneAngle(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Returns or sets the plane orientation.
-                |     Role: The orientation allows you to invert the plane from the reference
-                |     plane.
-                |     Legal values: the orientation is 1 if the plane orientation is not
-                |     inverted, and -1 otherwise.
+                Property Orientation() As long
+                    Returns or sets the plane orientation.
+                    Role: The orientation allows you to invert the plane from the reference
+                    plane.
+                    Legal values: the orientation is 1 if the plane orientation is not
+                    inverted, and -1 otherwise.
 
         :return: int
         """
@@ -94,9 +94,9 @@ class HybridShapePlaneAngle(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Plane() As Reference
-                |     Returns or sets the reference plane.
-                |     Sub-element(s) supported (see Boundary object): PlanarFace.
+                Property Plane() As Reference
+                    Returns or sets the reference plane.
+                    Sub-element(s) supported (see Boundary object): PlanarFace.
 
         :return: Reference
         """
@@ -117,11 +117,11 @@ class HybridShapePlaneAngle(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ProjectionMode() As boolean
-                |     Gets or sets the projection mode status. ProjectionMode = TRUE : Rotation axis will be projected on to reference plane. = FALSE(default) : Rotation axis will be as it is. This example retrieves in ProjMode the projection mode status for the PlaneAngle hybrid shape feature.
-                | 
-                |      Dim ProjMode As boolean
-                |      ProjMode = PlaneAngle.ProjectionMode
+                Property ProjectionMode() As boolean
+                    Gets or sets the projection mode status. ProjectionMode = TRUE : Rotation axis will be projected on to reference plane. = FALSE(default) : Rotation axis will be as it is. This example retrieves in ProjMode the projection mode status for the PlaneAngle hybrid shape feature.
+                
+                     Dim ProjMode As boolean
+                     ProjMode = PlaneAngle.ProjectionMode
 
         :return: bool
         """
@@ -142,10 +142,10 @@ class HybridShapePlaneAngle(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RevolAxis() As Reference
-                |     Returns or sets the rotation axis.
-                |     Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
-                |     RectilinearBiDimFeatEdge or RectilinearMonoDimFeatEdge.
+                Property RevolAxis() As Reference
+                    Returns or sets the rotation axis.
+                    Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
+                    RectilinearBiDimFeatEdge or RectilinearMonoDimFeatEdge.
 
         :return: Reference
         """

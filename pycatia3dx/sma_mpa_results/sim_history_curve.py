@@ -17,16 +17,16 @@ class SimHistoryCurve(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimHistoryCurve
-                | 
-                | Represents the history curve.
-                | Role:This Interface can be retrieved using
-                | SMAIAMpaHistoryPlot::GetHistoryCurveList() method.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimHistoryCurve
+                
+                Represents the history curve.
+                Role:This Interface can be retrieved using
+                SMAIAMpaHistoryPlot::GetHistoryCurveList() method.
     
     """
 
@@ -39,27 +39,27 @@ class SimHistoryCurve(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
-                | ieFileType)
-                |     Exports the curve values in the specified file format at the given
-                |     location. The first column has the abscissa values and the second column has
-                |     the ordinate values. The first row specifies the abscissa and ordinate
-                |     units.
-                | 
-                |     Parameters:
-                | 
-                |         icsFileName
-                |             The name of the file. If not specified, the name of the curve will
-                |             be taken by default. 
-                |         icsFileLocation
-                |             The location at which the exported file needs to be created.
-                |             
-                |         ieFileType
-                |             The file types. The available options can be found in
-                |             SMAIAMpaFileTypeEnum class. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub Export(CATBSTR icsFileName,CATBSTR icsFileLocation,SimFileType
+                ieFileType)
+                    Exports the curve values in the specified file format at the given
+                    location. The first column has the abscissa values and the second column has
+                    the ordinate values. The first row specifies the abscissa and ordinate
+                    units.
+                
+                    Parameters:
+                
+                        icsFileName
+                            The name of the file. If not specified, the name of the curve will
+                            be taken by default. 
+                        icsFileLocation
+                            The location at which the exported file needs to be created.
+                            
+                        ieFileType
+                            The file types. The available options can be found in
+                            SMAIAMpaFileTypeEnum class. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str ics_file_name:
         :param str ics_file_location:
@@ -73,23 +73,23 @@ class SimHistoryCurve(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportToPLMDoc(CATBSTR icsFileName,SimFileType ieFileType)
-                |     Exports the curve values in the specified file format in the database as
-                |     VPMDocument. The first column has the abscissa values and the second column has
-                |     the ordinate values. The first row specifies the abscissa and ordinate
-                |     units.
-                | 
-                |     Parameters:
-                | 
-                |         icsFileName
-                |             The name of the file. If not specified, the name of the curve will
-                |             be taken by default. 
-                |         ieFileType
-                |             The file types. The available options can be found in
-                |             SMAIAMpaFileTypeEnum class. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub ExportToPLMDoc(CATBSTR icsFileName,SimFileType ieFileType)
+                    Exports the curve values in the specified file format in the database as
+                    VPMDocument. The first column has the abscissa values and the second column has
+                    the ordinate values. The first row specifies the abscissa and ordinate
+                    units.
+                
+                    Parameters:
+                
+                        icsFileName
+                            The name of the file. If not specified, the name of the curve will
+                            be taken by default. 
+                        ieFileType
+                            The file types. The available options can be found in
+                            SMAIAMpaFileTypeEnum class. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param str ics_file_name:
         :param int ie_file_type:
@@ -102,15 +102,15 @@ class SimHistoryCurve(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMinMaxValues(double odMin,double odMax)
-                |     Retrieves the minimum and maximum values of the curve.
-                | 
-                |     Parameters:
-                | 
-                |         odMin
-                |             Returns the minimum value. 
-                |         odMax
-                |             Returns the maximum value. 
+                Sub GetMinMaxValues(double odMin,double odMax)
+                    Retrieves the minimum and maximum values of the curve.
+                
+                    Parameters:
+                
+                        odMin
+                            Returns the minimum value. 
+                        odMax
+                            Returns the maximum value. 
 
         :param float od_min:
         :param float od_max:

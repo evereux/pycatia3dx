@@ -16,15 +16,15 @@ class VALCheck(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALCheck
-                | 
-                | Allows management of Check entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALCheck
+                
+                Allows management of Check entity
     
     """
 

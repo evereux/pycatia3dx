@@ -17,19 +17,19 @@ class HybridShapeCurveExplicit(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeCurveExplicit
-                | 
-                | Represents the hybrid shape Curve explicit feature object.
-                | Role: Declare hybrid shape Curve explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewCurveDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeCurveExplicit
+                
+                Represents the hybrid shape Curve explicit feature object.
+                Role: Declare hybrid shape Curve explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewCurveDatum
     
     """
 

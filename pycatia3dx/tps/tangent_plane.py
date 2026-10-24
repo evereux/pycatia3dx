@@ -17,14 +17,14 @@ class TangentPlane(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TangentPlane
-                | 
-                | Interface for accessing Tangent Plane modifier on a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TangentPlane
+                
+                Interface for accessing Tangent Plane modifier on a TPS.
     
     """
 
@@ -38,8 +38,8 @@ class TangentPlane(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR
-                |     Retrieves Tangent Plane modifier. 
+                Property Modifier() As CATBSTR
+                    Retrieves Tangent Plane modifier. 
 
         :return: str
         """

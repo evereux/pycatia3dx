@@ -17,17 +17,17 @@ class FitTrackTPoint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FitTrackTPoint
-                | 
-                | Represents the FitTrackTPoint.
-                | 
-                | Role: FitTrackTPoint is an object that reprsents each Transient Anchor Point in
-                | the Trajectory of a FitTrack.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FitTrackTPoint
+                
+                Represents the FitTrackTPoint.
+                
+                Role: FitTrackTPoint is an object that reprsents each Transient Anchor Point in
+                the Trajectory of a FitTrack.
     
     """
 
@@ -41,20 +41,20 @@ class FitTrackTPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Duration(double iDuration)
-                |     Returns or sets the TPoint Duration.
-                | 
-                |     Example:
-                | 
-                |             This example first sets the TPoint duration to 5 and then returns
-                |             it in TPointDur.
-                |           
-                | 
-                |           Dim TPointDur As Double
-                |           TPointDur = 5.0
-                | 
-                |           myFitTPoint.Duration = TPointDur
-                |           TPointDur = myFitTPoint.Duration
+                Property Duration(double iDuration)
+                    Returns or sets the TPoint Duration.
+                
+                    Example:
+                
+                            This example first sets the TPoint duration to 5 and then returns
+                            it in TPointDur.
+                          
+                
+                          Dim TPointDur As Double
+                          TPointDur = 5.0
+                
+                          myFitTPoint.Duration = TPointDur
+                          TPointDur = myFitTPoint.Duration
 
         :return: float
         """
@@ -75,31 +75,31 @@ class FitTrackTPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Position(CATSafeArrayVariant iMatrix)
-                |     Returns or sets the TPoint Position.
-                | 
-                |     Example:
-                | 
-                |             This example first sets the TPoint Position and then returns it in
-                |             TPointPos.
-                |           
-                | 
-                |           Dim TPointPos(11)
-                |           TPointPos(0) = 1
-                |           TPointPos(1) = 0
-                |           TPointPos(2) = 0
-                |           TPointPos(3) = 0
-                |           TPointPos(4) = 1
-                |           TPointPos(5) = 0
-                |           TPointPos(6) = 0
-                |           TPointPos(7) = 0
-                |           TPointPos(8) = 1
-                |           TPointPos(9) = 100
-                |           TPointPos(10) = 0
-                |           TPointPos(11) = 0
-                | 
-                |           myFitTPoint.Position = TPointPos
-                |           TPointPos = myFitTPoint.Position
+                Property Position(CATSafeArrayVariant iMatrix)
+                    Returns or sets the TPoint Position.
+                
+                    Example:
+                
+                            This example first sets the TPoint Position and then returns it in
+                            TPointPos.
+                          
+                
+                          Dim TPointPos(11)
+                          TPointPos(0) = 1
+                          TPointPos(1) = 0
+                          TPointPos(2) = 0
+                          TPointPos(3) = 0
+                          TPointPos(4) = 1
+                          TPointPos(5) = 0
+                          TPointPos(6) = 0
+                          TPointPos(7) = 0
+                          TPointPos(8) = 1
+                          TPointPos(9) = 100
+                          TPointPos(10) = 0
+                          TPointPos(11) = 0
+                
+                          myFitTPoint.Position = TPointPos
+                          TPointPos = myFitTPoint.Position
 
         :return: tuple
         """

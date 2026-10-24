@@ -17,23 +17,23 @@ class PnOService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PnOService
-                | 
-                | Represents the service to access the current connected Person.
-                | 
-                | Example:
-                | 
-                |      This example shows how to retrieve the PnO Service.
-                |      
-                | 
-                |       Dim zePnOService as PnOService
-                |       Set zePnOService = CATIA.GetSessionService("PnOService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PnOService
+                
+                Represents the service to access the current connected Person.
+                
+                Example:
+                
+                     This example shows how to retrieve the PnO Service.
+                     
+                
+                      Dim zePnOService as PnOService
+                      Set zePnOService = CATIA.GetSessionService("PnOService")
     
     """
 
@@ -47,18 +47,18 @@ class PnOService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Person() As Person (Read Only)
-                |     Returns a Person object that represents the current connected
-                |     Person.
-                | 
-                |     Example:
-                | 
-                |          This example shows how to retrieve the current connected
-                |          Person.
-                |          
-                | 
-                |          Dim zePerson as Person
-                |          Set zePerson = zePnOService.Person
+                Property Person() As Person (Read Only)
+                    Returns a Person object that represents the current connected
+                    Person.
+                
+                    Example:
+                
+                         This example shows how to retrieve the current connected
+                         Person.
+                         
+                
+                         Dim zePerson as Person
+                         Set zePerson = zePnOService.Person
 
         :return: Person
         """

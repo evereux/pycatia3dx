@@ -18,16 +18,16 @@ class AssemblyConstraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AssemblyConstraint
-                | 
-                | This interface is implemented by the Assembly Constraint.
-                | 
-                | Role: Contains API to manage the Assembly Constraint.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AssemblyConstraint
+                
+                This interface is implemented by the Assembly Constraint.
+                
+                Role: Contains API to manage the Assembly Constraint.
     
     """
 
@@ -41,8 +41,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activity() As boolean
-                |     Returns/Sets the Assembly Constraint Activity.
+                Property Activity() As boolean
+                    Returns/Sets the Assembly Constraint Activity.
 
         :return: bool
         """
@@ -63,8 +63,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mode() As CatAssemblyConstraintMode
-                |     Sets/Gets the mode of the constraint.
+                Property Mode() As CatAssemblyConstraintMode
+                    Sets/Gets the mode of the constraint.
 
         :return: int
         """
@@ -85,8 +85,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CatAssemblyConstraintType
-                |     Returns/Sets the Assembly Constraint Type.
+                Property Type() As CatAssemblyConstraintType
+                    Returns/Sets the Assembly Constraint Type.
 
         :return: int
         """
@@ -106,23 +106,23 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaxValue(short inbv) As double
-                |     Gets a maximal value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iNbv
-                |             [in] The value identifier. 
-                |         oValue
-                |             [out] The value in CATIA System Units(mm and degrees).
-                |             
-                | 
-                |     Returns:
-                | 
-                |         TRUE
-                |             if the value is defined. 
-                |         FALSE
-                |             if the value is UNSET.
+                Func GetMaxValue(short inbv) As double
+                    Gets a maximal value of the constraint.
+                
+                    Parameters:
+                
+                        iNbv
+                            [in] The value identifier. 
+                        oValue
+                            [out] The value in CATIA System Units(mm and degrees).
+                            
+                
+                    Returns:
+                
+                        TRUE
+                            if the value is defined. 
+                        FALSE
+                            if the value is UNSET.
 
         :param int inbv:
         :return: float
@@ -134,8 +134,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaxValueAsParam(short inbv) As Parameter
-                |     Returns the Parameter corresponding to a maximum value of the constraint.
+                Func GetMaxValueAsParam(short inbv) As Parameter
+                    Returns the Parameter corresponding to a maximum value of the constraint.
 
         :param int inbv:
         :return: Parameter
@@ -147,23 +147,23 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMinValue(short inbv) As double
-                |     Gets a minimal value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iNbv
-                |             [in] The value identifier. 
-                |         oValue
-                |             [out] The value in CATIA System Units(mm and degrees).
-                |             
-                | 
-                |     Returns:
-                | 
-                |         TRUE
-                |             if the value is defined. 
-                |         FALSE
-                |             if the value is UNSET.
+                Func GetMinValue(short inbv) As double
+                    Gets a minimal value of the constraint.
+                
+                    Parameters:
+                
+                        iNbv
+                            [in] The value identifier. 
+                        oValue
+                            [out] The value in CATIA System Units(mm and degrees).
+                            
+                
+                    Returns:
+                
+                        TRUE
+                            if the value is defined. 
+                        FALSE
+                            if the value is UNSET.
 
         :param int inbv:
         :return: float
@@ -175,8 +175,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMinValueAsParam(short inbv) As Parameter
-                |     Returns the Parameter corresponding to a minimum value of the constraint.
+                Func GetMinValueAsParam(short inbv) As Parameter
+                    Returns the Parameter corresponding to a minimum value of the constraint.
 
         :param int inbv:
         :return: Parameter
@@ -188,12 +188,12 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbOptions() As short
-                |     Gets the number of possible options for this constraint.
-                | 
-                |     Returns:
-                | 
-                |         The number of the options.
+                Func GetNbOptions() As short
+                    Gets the number of possible options for this constraint.
+                
+                    Returns:
+                
+                        The number of the options.
 
         :return: int
         """
@@ -204,20 +204,20 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbSupports() As short
-                |     Returns number of support.
-                | 
-                |     Parameters:
-                | 
-                |         onbSupport
-                |             [out] the number of support. 
-                | 
-                |     Returns:
-                | 
-                |         the number of support
-                |             if the operation is successful. 
-                |         Zero
-                |             if the operation is failed.
+                Func GetNbSupports() As short
+                    Returns number of support.
+                
+                    Parameters:
+                
+                        onbSupport
+                            [out] the number of support. 
+                
+                    Returns:
+                
+                        the number of support
+                            if the operation is successful. 
+                        Zero
+                            if the operation is failed.
 
         :return: int
         """
@@ -228,8 +228,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbValues() As short
-                |     Returns the number of values in the constraint.
+                Func GetNbValues() As short
+                    Returns the number of values in the constraint.
 
         :return: int
         """
@@ -240,21 +240,21 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOption(short inumOption) As
-                | CatAssemblyConstraintOption
-                |     Gets an option of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         inumOption
-                |             [in] The value identifier. 
-                | 
-                |     Returns:
-                | 
-                |         a CatAssemblyConstraintOption
-                |             if the operation is successful. 
-                |         nothing
-                |             if the operation is failed.
+                Func GetOption(short inumOption) As
+                CatAssemblyConstraintOption
+                    Gets an option of the constraint.
+                
+                    Parameters:
+                
+                        inumOption
+                            [in] The value identifier. 
+                
+                    Returns:
+                
+                        a CatAssemblyConstraintOption
+                            if the operation is successful. 
+                        nothing
+                            if the operation is failed.
 
         :param int inum_option:
         :return: int
@@ -266,20 +266,20 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetSupport(short inumSupport,boolean ibFold,CATBSTR oSupport,CATBSTR
-                | oCtxSupport)
-                |     Returns support.
-                | 
-                |     Parameters:
-                | 
-                |         inumSupport
-                |             [in] the Support number. 
-                |         oSupport
-                |             [out] the Support as
-                |             string:"Product.1\\Product.2\\Rep1.1\\ObjectName". If the Object has no name, the
-                |             TypeName is returned. 
-                |         oCtxSupport
-                |             [out] the context of the Support as string.
+                Sub GetSupport(short inumSupport,boolean ibFold,CATBSTR oSupport,CATBSTR
+                oCtxSupport)
+                    Returns support.
+                
+                    Parameters:
+                
+                        inumSupport
+                            [in] the Support number. 
+                        oSupport
+                            [out] the Support as
+                            string:"Product.1\\Product.2\\Rep1.1\\ObjectName". If the Object has no name, the
+                            TypeName is returned. 
+                        oCtxSupport
+                            [out] the context of the Support as string.
 
         :param int inum_support:
         :param bool ib_fold:
@@ -294,22 +294,22 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValue(short inbv) As double
-                |     Gets a value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iNbv
-                |             [in] The value identifier. 
-                |         oValue
-                |             [out] The value in CATIA System Units(mm and degrees).
+                Func GetValue(short inbv) As double
+                    Gets a value of the constraint.
+                
+                    Parameters:
+                
+                        iNbv
+                            [in] The value identifier. 
+                        oValue
+                            [out] The value in CATIA System Units(mm and degrees).
                 |
-                |     Returns:
-                | 
-                |         TRUE
-                |             if the value is defined. 
-                |         FALSE
-                |             if the value is UNSET.
+                    Returns:
+                
+                        TRUE
+                            if the value is defined. 
+                        FALSE
+                            if the value is UNSET.
 
         :param int inbv:
         :return: float
@@ -321,8 +321,8 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueAsParam(short inbv) As Parameter
-                |     Returns the Parameter corresponding to a value of the constraint.
+                Func GetValueAsParam(short inbv) As Parameter
+                    Returns the Parameter corresponding to a value of the constraint.
 
         :param int inbv:
         :return: Parameter
@@ -334,15 +334,15 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaxValue(short inbv,double ival)
-                |     Sets a maximal value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iNbv
-                |             [in] The value identifier. 
-                |         ival
-                |             [in] The minimun value in CATIA System Units(mm and degrees).
+                Sub SetMaxValue(short inbv,double ival)
+                    Sets a maximal value of the constraint.
+                
+                    Parameters:
+                
+                        iNbv
+                            [in] The value identifier. 
+                        ival
+                            [in] The minimun value in CATIA System Units(mm and degrees).
 
         :param int inbv:
         :param float ival:
@@ -355,15 +355,15 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMinValue(short inbv,double ival)
-                |     Sets a minimal value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         iNbv
-                |             [in] The value identifier. 
-                |         ival
-                |             [in] The minimun value in CATIA System Units(mm and degrees).
+                Sub SetMinValue(short inbv,double ival)
+                    Sets a minimal value of the constraint.
+                
+                    Parameters:
+                
+                        iNbv
+                            [in] The value identifier. 
+                        ival
+                            [in] The minimun value in CATIA System Units(mm and degrees).
 
         :param int inbv:
         :param float ival:
@@ -376,16 +376,16 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOption(short inumOption,CatAssemblyConstraintOption
-                | ioption)
-                |     Sets the options number of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         inumOption
-                |             [in] The value identifier. 
-                |         iOption
-                |             [in] The option.
+                Sub SetOption(short inumOption,CatAssemblyConstraintOption
+                ioption)
+                    Sets the options number of the constraint.
+                
+                    Parameters:
+                
+                        inumOption
+                            [in] The value identifier. 
+                        iOption
+                            [in] The option.
 
         :param int inum_option:
         :param int ioption:
@@ -398,15 +398,15 @@ class AssemblyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetValue(short inbv,double ival)
-                |     Sets a value of the constraint.
-                | 
-                |     Parameters:
-                | 
-                |         inbv
-                |             [in] The value identifier. 
-                |         ival
-                |             [in] The value in CATIA System Units(mm and degrees).
+                Sub SetValue(short inbv,double ival)
+                    Sets a value of the constraint.
+                
+                    Parameters:
+                
+                        inbv
+                            [in] The value identifier. 
+                        ival
+                            [in] The value in CATIA System Units(mm and degrees).
 
         :param int inbv:
         :param float ival:

@@ -18,21 +18,21 @@ class ArcWeldProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ArcWeldProfile
-                | 
-                | Represents an object that is Arc Welding profile Role: Arc Welding profile
-                | contains description of arc welding parameters associated with a particular arc
-                | welding trajectory.
-                | Each arc weld profile consists of three weld sections (Start Weld, Weld and End
-                | Weld) and of a flag that defines the Flying Start status.
-                | 
-                | See also:
-                |     DELMIAArcWeldSection, ArcWeldCSPProfiles
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ArcWeldProfile
+                
+                Represents an object that is Arc Welding profile Role: Arc Welding profile
+                contains description of arc welding parameters associated with a particular arc
+                welding trajectory.
+                Each arc weld profile consists of three weld sections (Start Weld, Weld and End
+                Weld) and of a flag that defines the Flying Start status.
+                
+                See also:
+                    DELMIAArcWeldSection, ArcWeldCSPProfiles
     
     """
 
@@ -46,20 +46,20 @@ class ArcWeldProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ControllerName() As CATBSTR (Read Only)
-                |     Returns the name of robot controller that the profile is associated
-                |     with
-                | 
-                |     Parameters:
-                | 
-                |         CATBSTR
-                |             The name of the robot controller
-                | 
-                |             Example:
-                |                 The following example returns a collection of
-                |                 profiles:
-                | 
-                |                   String MyProfiles = ArcWeldProfile.StartWeld.Profiles
+                Property ControllerName() As CATBSTR (Read Only)
+                    Returns the name of robot controller that the profile is associated
+                    with
+                
+                    Parameters:
+                
+                        CATBSTR
+                            The name of the robot controller
+                
+                            Example:
+                                The following example returns a collection of
+                                profiles:
+                
+                                  String MyProfiles = ArcWeldProfile.StartWeld.Profiles
 
         :return: str
         """
@@ -72,20 +72,20 @@ class ArcWeldProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndWeld() As ArcWeldProfileSection (Read Only)
-                |     Returns a reference to End Weld section of Arc Welding
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         DELMIAArcWeldProfileSection
-                |             Reference to End Weld Section
-                | 
-                |             Example:
-                |                 The following example returns a reference to an
-                 |                End Weld Section
+                Property EndWeld() As ArcWeldProfileSection (Read Only)
+                    Returns a reference to End Weld section of Arc Welding
+                    profile.
+                
+                    Parameters:
+                
+                        DELMIAArcWeldProfileSection
+                            Reference to End Weld Section
+                
+                            Example:
+                                The following example returns a reference to an
+                                End Weld Section
                 |
-                |                   DELMIAArcWeldProfileSection MySection = ArcWeldProfile.EndWeld
+                                  DELMIAArcWeldProfileSection MySection = ArcWeldProfile.EndWeld
 
         :return: ArcWeldProfileSection
         """
@@ -98,19 +98,19 @@ class ArcWeldProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FlyingStart() As boolean
-                |     Returns a Flying Start flag.
-                | 
-                |     Parameters:
-                | 
-                |         boolean
-                |             Flag
-                | 
-                |             Example:
-                |                 The following example returns Flying Start
-                |                 flag
-                | 
-                |                   boolean MyFlag = ArcWeldProfile.FlyingStart
+                Property FlyingStart() As boolean
+                    Returns a Flying Start flag.
+                
+                    Parameters:
+                
+                        boolean
+                            Flag
+                
+                            Example:
+                                The following example returns Flying Start
+                                flag
+                
+                                  boolean MyFlag = ArcWeldProfile.FlyingStart
 
         :return: bool
         """
@@ -131,20 +131,20 @@ class ArcWeldProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartWeld() As ArcWeldProfileSection (Read Only)
-                |     Returns a reference to Start Weld section of Arc Welding
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         DELMIAArcWeldProfileSection
-                |             Reference to Start Weld Section
-                | 
-                |             Example:
-                |                 The following example returns a reference to a Start Weld
-                |                 Section
-                | 
-                |                   DELMIAArcWeldProfileSection MySection = ArcWeldProfile.StartWeld
+                Property StartWeld() As ArcWeldProfileSection (Read Only)
+                    Returns a reference to Start Weld section of Arc Welding
+                    profile.
+                
+                    Parameters:
+                
+                        DELMIAArcWeldProfileSection
+                            Reference to Start Weld Section
+                
+                            Example:
+                                The following example returns a reference to a Start Weld
+                                Section
+                
+                                  DELMIAArcWeldProfileSection MySection = ArcWeldProfile.StartWeld
 
         :return: ArcWeldProfileSection
         """
@@ -157,20 +157,20 @@ class ArcWeldProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Weld() As ArcWeldProfileSection (Read Only)
-                |     Returns a reference to Weld section of Arc Welding
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         DELMIAArcWeldProfileSection
-                |             Reference to Weld Section
-                | 
-                |             Example:
-                |                 The following example returns a reference to a Weld
-                |                 Section
-                | 
-                |                   DELMIAArcWeldProfileSection MySection = ArcWeldProfile.Weld
+                Property Weld() As ArcWeldProfileSection (Read Only)
+                    Returns a reference to Weld section of Arc Welding
+                    profile.
+                
+                    Parameters:
+                
+                        DELMIAArcWeldProfileSection
+                            Reference to Weld Section
+                
+                            Example:
+                                The following example returns a reference to a Weld
+                                Section
+                
+                                  DELMIAArcWeldProfileSection MySection = ArcWeldProfile.Weld
 
         :return: ArcWeldProfileSection
         """

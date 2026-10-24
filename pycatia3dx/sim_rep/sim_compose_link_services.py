@@ -20,11 +20,11 @@ class SimComposeLinkServices(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimComposeLinkServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimComposeLinkServices
 
     
     """
@@ -43,24 +43,24 @@ class SimComposeLinkServices(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance
-                | iVPMRepInstance,Reference iCATIAReference) As AnyObject
-                |     Creates a Link memory object to be used later for persistent
-                |     Link.
-                | 
-                |     Parameters:
-                | 
-                |         iPLMOccurrence
-                |             The path to reach the target. It is optional, and must be a
-                |             CATIAVPMOccurrence ou CATIAVPMRootOccurrence. 
-                |         iVPMRepInstance
-                |             The Product Representation Reference containing the target. It is
-                |             optional. 
-                |         iCATIAReference
-                |             The target object. It is optional. 
-                | 
-                |     Returns:
-                |         The CATIABase to be used to create a link.
+                Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance
+                iVPMRepInstance,Reference iCATIAReference) As AnyObject
+                    Creates a Link memory object to be used later for persistent
+                    Link.
+                
+                    Parameters:
+                
+                        iPLMOccurrence
+                            The path to reach the target. It is optional, and must be a
+                            CATIAVPMOccurrence ou CATIAVPMRootOccurrence. 
+                        iVPMRepInstance
+                            The Product Representation Reference containing the target. It is
+                            optional. 
+                        iCATIAReference
+                            The target object. It is optional. 
+                
+                    Returns:
+                        The CATIABase to be used to create a link.
 
         :param PLMOccurrence i_plm_occurrence:
         :param VPMRepInstance i_vpm_rep_instance:

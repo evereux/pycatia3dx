@@ -18,27 +18,27 @@ class Symmetry(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         Symmetry
-                | 
-                | Represents the shape symmetry feature object.
-                | This solid feature is created from an underlying HybridShapeSymmetry aggregated
-                | by the Symmetry. Role: To access the data of the symmetry shape feature object.
-                | The data includes:
-                | 
-                |     The element to be transformed
-                |     The reference element which can be a point, a line or a
-                |     plane
-                | 
-                | Use the CATIAShapeFactory to create ShapeFeature object.
-                | 
-                | See also:
-                |     ShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        Symmetry
+                
+                Represents the shape symmetry feature object.
+                This solid feature is created from an underlying HybridShapeSymmetry aggregated
+                by the Symmetry. Role: To access the data of the symmetry shape feature object.
+                The data includes:
+                
+                    The element to be transformed
+                    The reference element which can be a point, a line or a
+                    plane
+                
+                Use the CATIAShapeFactory to create ShapeFeature object.
+                
+                See also:
+                    ShapeFactory
     
     """
 
@@ -52,16 +52,16 @@ class Symmetry(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HybridShape() As HybridShape (Read Only)
-                |     Gets the underlying HybridShapeSymmetry.
-                | 
-                |     Example:
-                |         The following example explains how to retrieve the underlying
-                |         HybridShape Symmetry
-                | 
-                |           Dim oHybridShape as AnyObject
-                |           Set oHybridShape=oSymmetry.HybridShape
-                |           oHybridShape.SectionCoupling = 2
+                Property HybridShape() As HybridShape (Read Only)
+                    Gets the underlying HybridShapeSymmetry.
+                
+                    Example:
+                        The following example explains how to retrieve the underlying
+                        HybridShape Symmetry
+                
+                          Dim oHybridShape as AnyObject
+                          Set oHybridShape=oSymmetry.HybridShape
+                          oHybridShape.SectionCoupling = 2
 
         :return: HybridShape
         """

@@ -22,25 +22,25 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    KnowHowIDLItf.ExpertRuleBaseComponentRuntime
-                |                         ExpertRuleSetRuntime
-                | 
-                | Represents the ExpertRuleSet object in the rule base.
-                | Example of how to retrieve a runtime expert rule set.
-                | 
-                |  Dim RBRO as ExpertRuleBaseRuntime
-                |  Set RBRO = ...
-                |  Dim RSRO as ExpertRuleSetRuntime
-                |  Set RSRO = RBRO.RuleSet.ExpertRuleBaseComponentRuntimes.Item("Rule1")
-                |  
-                | 
-                | See also:
-                |     ExpertRuleBaseRuntime.RuleSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   KnowHowIDLItf.ExpertRuleBaseComponentRuntime
+                                        ExpertRuleSetRuntime
+                
+                Represents the ExpertRuleSet object in the rule base.
+                Example of how to retrieve a runtime expert rule set.
+                
+                 Dim RBRO as ExpertRuleBaseRuntime
+                 Set RBRO = ...
+                 Dim RSRO as ExpertRuleSetRuntime
+                 Set RSRO = RBRO.RuleSet.ExpertRuleBaseComponentRuntimes.Item("Rule1")
+                 
+                
+                See also:
+                    ExpertRuleBaseRuntime.RuleSet
     
     """
 
@@ -54,9 +54,9 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExpertRuleBaseComponentRuntimes() As ExpertRuleBaseComponentRuntimes
-                | (Read Only)
-                |     Returns the list of the RuleBaseComponent.
+                Property ExpertRuleBaseComponentRuntimes() As ExpertRuleBaseComponentRuntimes
+                (Read Only)
+                    Returns the list of the RuleBaseComponent.
 
         :return: ExpertRuleBaseComponentRuntimes
         """
@@ -69,19 +69,19 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RuleSetEdition() As ExpertRuleSet (Read Only)
-                |     Returns the editable object corresponding to this ruleset. Be careful that,
-                |     according to your licence, or the type of ruleset you're handling, you may not
-                |     have the right to edit the ruleset.
-                | 
-                |     Example:
-                | 
-                |          Dim aRuleSetEdition As ExpertRuleSet
-                |          Set aRuleSetEdition = aRuleSetRuntime.RuleSetEdition
-                | 
-                |          If not(aRuleSetEdition is Nothing) Then
-                |            ' .. some actions
-                |          End if
+                Property RuleSetEdition() As ExpertRuleSet (Read Only)
+                    Returns the editable object corresponding to this ruleset. Be careful that,
+                    according to your licence, or the type of ruleset you're handling, you may not
+                    have the right to edit the ruleset.
+                
+                    Example:
+                
+                         Dim aRuleSetEdition As ExpertRuleSet
+                         Set aRuleSetEdition = aRuleSetRuntime.RuleSetEdition
+                
+                         If not(aRuleSetEdition is Nothing) Then
+                           ' .. some actions
+                         End if
 
         :return: ExpertRuleSet
         """
@@ -93,18 +93,18 @@ class ExpertRuleSetRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Status() As long
-                |     Returns the Status of the ruleset: 1=OK, 0=KO.
-                | 
-                |     Example:
-                | 
-                |          Dim RuleSet1 As ExpertRuleSet 
-                |          Set RuleSet1 = RuleSet.ExpertGenericRuleBaseComponentRuntimes.Item("RuleSet1")
-                |          status = RuleSet1.Status ()
-                |          
-                | 
-                |     Returns:
-                |         Status of the ruleset
+                Func Status() As long
+                    Returns the Status of the ruleset: 1=OK, 0=KO.
+                
+                    Example:
+                
+                         Dim RuleSet1 As ExpertRuleSet 
+                         Set RuleSet1 = RuleSet.ExpertGenericRuleBaseComponentRuntimes.Item("RuleSet1")
+                         status = RuleSet1.Status ()
+                         
+                
+                    Returns:
+                        Status of the ruleset
 
         :return: int
         """

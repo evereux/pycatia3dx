@@ -18,51 +18,51 @@ class SimPlanarSymmetry(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPlanarSymmetry
-                | 
-                | Represents the Planar Symmetry object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimPlanarSymmetry as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPlanarSymmetry As SimPlanarSymmetry
-                |      Set MyPlanarSymmetry = MyFeatures.Add("SimPlanarSymmetry")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimPlanarSymmetry named
-                |     "Planar Symmetry.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyPlanarSymmetry As SimPlanarSymmetry
-                |      Set MyPlanarSymmetry = MyFeatures.Item("Planar Symmetry.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimPlanarSymmetry
-                |     as following:
-                | 
-                |      ...
-                |      myPlanarSymmetry = myFeatures.Add("SimPlanarSymmetry")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimPlanarSymmetry
-                |     named "Planar Symmetry.1" as following:
-                | 
-                |      ...
-                |      myPlanarSymmetry = myFeatures.Item("Planar Symmetry.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPlanarSymmetry
+                
+                Represents the Planar Symmetry object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimPlanarSymmetry as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPlanarSymmetry As SimPlanarSymmetry
+                     Set MyPlanarSymmetry = MyFeatures.Add("SimPlanarSymmetry")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimPlanarSymmetry named
+                    "Planar Symmetry.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyPlanarSymmetry As SimPlanarSymmetry
+                     Set MyPlanarSymmetry = MyFeatures.Item("Planar Symmetry.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimPlanarSymmetry
+                    as following:
+                
+                     ...
+                     myPlanarSymmetry = myFeatures.Add("SimPlanarSymmetry")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimPlanarSymmetry
+                    named "Planar Symmetry.1" as following:
+                
+                     ...
+                     myPlanarSymmetry = myFeatures.Item("Planar Symmetry.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimPlanarSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,8 +98,8 @@ class SimPlanarSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -112,8 +112,8 @@ class SimPlanarSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Plane() As SimMathPlane (Read Only)
-                |     Returns the plane of the planar symmetry restraint.
+                Property Plane() As SimMathPlane (Read Only)
+                    Returns the plane of the planar symmetry restraint.
 
         :return: SimMathPlane
         """
@@ -126,11 +126,11 @@ class SimPlanarSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlaneSupport() As CATBaseDispatch (Read Only)
-                |     Returns the plane support of the planar symmetry restraint.
-                |     
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Property PlaneSupport() As CATBaseDispatch (Read Only)
+                    Returns the plane support of the planar symmetry restraint.
+                    
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: AnyObject
         """

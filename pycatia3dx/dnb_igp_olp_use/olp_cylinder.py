@@ -17,20 +17,20 @@ class OLPCylinder(OLPShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpShape
-                |                         OlpCylinder
-                | 
-                | A 3D cylinder.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object is used with OlpCartesianSafetyZone and
-                | OlpToolVolume
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpShape
+                                        OlpCylinder
+                
+                A 3D cylinder.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object is used with OlpCartesianSafetyZone and
+                OlpToolVolume
     
     """
 
@@ -44,8 +44,8 @@ class OLPCylinder(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Height() As double
-                |     Get/Set the height in meters.
+                Property Height() As double
+                    Get/Set the height in meters.
 
         :return: float
         """
@@ -66,8 +66,8 @@ class OLPCylinder(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Radius() As double
-                |     Get/Set the radius in meters.
+                Property Radius() As double
+                    Get/Set the radius in meters.
 
         :return: float
         """
@@ -87,19 +87,19 @@ class OLPCylinder(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBaseCenter(DELOlpPositionRef iOrigin) As OlpTransform
-                |     Get the center of the circle at the base of the cylinder.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                | 
-                |     Returns:
-                |         The location.
+                Func GetBaseCenter(DELOlpPositionRef iOrigin) As OlpTransform
+                    Get the center of the circle at the base of the cylinder.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                
+                    Returns:
+                        The location.
 
         :param int i_origin:
         :return: OLPTransform
@@ -111,19 +111,19 @@ class OLPCylinder(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBaseCenter(DELOlpPositionRef iOrigin,OlpTransform
-                | iLocation)
-                |     Set the center of the circle at the base of the cylinder.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                |         iLocation
-                |             The location. 
+                Sub SetBaseCenter(DELOlpPositionRef iOrigin,OlpTransform
+                iLocation)
+                    Set the center of the circle at the base of the cylinder.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                        iLocation
+                            The location. 
 
         :param int i_origin:
         :param OlpTransform i_location:

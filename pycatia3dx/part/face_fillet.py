@@ -19,19 +19,19 @@ class FaceFillet(Fillet):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             CATPartIDLItf.Fillet
-                |                                 FaceFillet
-                | 
-                | Represents the face fillet shape.
-                | A face fillet shape is built between two faces with a fillet
-                | radius.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            CATPartIDLItf.Fillet
+                                                FaceFillet
+                
+                Represents the face fillet shape.
+                A face fillet shape is built between two faces with a fillet
+                radius.
     
     """
 
@@ -45,18 +45,18 @@ class FaceFillet(Fillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstFace() As Reference
-                |     Returns or sets the first limiting face.
-                |     To set the property, you can use the following Boundary object:
-                |     Face.
-                | 
-                |     Example:
-                |         The following example returns in face1 the first limiting face of the
-                |         face fillet firstFaceFillet, and then sets it to
-                |         NewFace1:
-                | 
-                |          Set face1 = firstFaceFillet.FirstFace
-                |          firstFaceFillet.FirstFace = NewFace1
+                Property FirstFace() As Reference
+                    Returns or sets the first limiting face.
+                    To set the property, you can use the following Boundary object:
+                    Face.
+                
+                    Example:
+                        The following example returns in face1 the first limiting face of the
+                        face fillet firstFaceFillet, and then sets it to
+                        NewFace1:
+                
+                         Set face1 = firstFaceFillet.FirstFace
+                         firstFaceFillet.FirstFace = NewFace1
 
         :return: Reference
         """
@@ -77,14 +77,14 @@ class FaceFillet(Fillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Radius() As Length (Read Only)
-                |     Returns the face fillet radius.
-                | 
-                |     Example:
-                |         The following example returns in radius the fillet radius of the face
-                |         fillet firstFaceFillet:
-                | 
-                |          Set radius = firstFaceFillet.Radius
+                Property Radius() As Length (Read Only)
+                    Returns the face fillet radius.
+                
+                    Example:
+                        The following example returns in radius the fillet radius of the face
+                        fillet firstFaceFillet:
+                
+                         Set radius = firstFaceFillet.Radius
 
         :return: Length
         """
@@ -97,18 +97,18 @@ class FaceFillet(Fillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondFace() As Reference
-                |     Returns or sets the second limiting face.
-                |     To set the property, you can use the following Boundary object:
-                |     Face.
-                | 
-                |     Example:
-                |         The following example returns in face2 the second limiting face of the
-                |         face fillet firstFaceFillet, and then sets it to
-                |         NewFace2:
-                | 
-                |          Set face2 = firstFaceFillet.SecondFace
-                |          firstFaceFillet.SecondFace = NewFace2
+                Property SecondFace() As Reference
+                    Returns or sets the second limiting face.
+                    To set the property, you can use the following Boundary object:
+                    Face.
+                
+                    Example:
+                        The following example returns in face2 the second limiting face of the
+                        face fillet firstFaceFillet, and then sets it to
+                        NewFace2:
+                
+                         Set face2 = firstFaceFillet.SecondFace
+                         firstFaceFillet.SecondFace = NewFace2
 
         :return: Reference
         """

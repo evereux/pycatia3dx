@@ -18,17 +18,17 @@ class CaptureFactory(Factory):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Factory
-                |                         CaptureFactory
-                | 
-                | Interface for the Capture Factory.
-                | This factory is implemented on the Set object. All the created Captures are
-                | added to the Set from which this interface is retrieved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Factory
+                                        CaptureFactory
+                
+                Interface for the Capture Factory.
+                This factory is implemented on the Set object. All the created Captures are
+                added to the Set from which this interface is retrieved.
     
     """
 
@@ -41,13 +41,13 @@ class CaptureFactory(Factory):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateCapture() As Capture
-                |     Create a Capture.
-                | 
-                |     Parameters:
-                | 
-                |         oCapture
-                |             The new created Capture. 
+                Func CreateCapture() As Capture
+                    Create a Capture.
+                
+                    Parameters:
+                
+                        oCapture
+                            The new created Capture. 
 
         :return: Capture
         """

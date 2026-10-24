@@ -16,13 +16,13 @@ class SimManagerSimAccess(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimManagerSIMAccess
-                | 
-                | Interface to access the SIM document of a SIM manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimManagerSIMAccess
+                
+                Interface to access the SIM document of a SIM manager.
     
     """
 
@@ -36,24 +36,24 @@ class SimManagerSimAccess(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ManifestPath() As CATBSTR (Read Only)
-                |     Returns the manifest path of the SIM document of this SIM
-                |     manager.
-                |     Role: if necessary, this method will download and check out the SIM files
-                |     of the SIM document so that it can be accessed.
-                |     Warning:
-                | 
-                |         Do NOT write to the SIM document if it is currently accessed by this
-                |         SIM manager.
-                |         The manifest path is NOT guaranteed to be the same on each
-                |         call.
-                |         The operations performed by this method can NOT be
-                |         undone.
-                |         The operations performed by this method MAY be time
-                |         consuming.
-                | 
-                |     Note: The returned path can be empty if the SIM document is either
-                |     currently accessed by this SIM manager or empty.
+                Property ManifestPath() As CATBSTR (Read Only)
+                    Returns the manifest path of the SIM document of this SIM
+                    manager.
+                    Role: if necessary, this method will download and check out the SIM files
+                    of the SIM document so that it can be accessed.
+                    Warning:
+                
+                        Do NOT write to the SIM document if it is currently accessed by this
+                        SIM manager.
+                        The manifest path is NOT guaranteed to be the same on each
+                        call.
+                        The operations performed by this method can NOT be
+                        undone.
+                        The operations performed by this method MAY be time
+                        consuming.
+                
+                    Note: The returned path can be empty if the SIM document is either
+                    currently accessed by this SIM manager or empty.
 
         :return: str
         """
@@ -65,22 +65,22 @@ class SimManagerSimAccess(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub NotifyManifestModification()
-                |     Notifies this SIM manager that the manifest of its SIM document has been
-                |     modified.
-                |     Role: This method will parse the manifest to detect modifications and make
-                |     sure that modified and newly created SIM files of the SIM document get checked
-                |     in.
-                |     Warning:
-                | 
-                |         This method will fail if the SIM document is currently accessed by this
-                |         SIM manager.
-                |         The SIM file paths are NOT guaranteed to be unchanged by this
-                |         call.
-                |         The operations performed by this method can NOT be
-                |         undone.
-                |         The operations performed by this method are NOT time
-                |         consuming.
+                Sub NotifyManifestModification()
+                    Notifies this SIM manager that the manifest of its SIM document has been
+                    modified.
+                    Role: This method will parse the manifest to detect modifications and make
+                    sure that modified and newly created SIM files of the SIM document get checked
+                    in.
+                    Warning:
+                
+                        This method will fail if the SIM document is currently accessed by this
+                        SIM manager.
+                        The SIM file paths are NOT guaranteed to be unchanged by this
+                        call.
+                        The operations performed by this method can NOT be
+                        undone.
+                        The operations performed by this method are NOT time
+                        consuming.
 
         :return: None
         """

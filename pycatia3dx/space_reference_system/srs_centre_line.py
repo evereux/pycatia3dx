@@ -18,14 +18,14 @@ class SrsCentreLine(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsCentreLine
-                | 
-                | Role: Allows accessing of Centre Line's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsCentreLine
+                
+                Role: Allows accessing of Centre Line's data.
     
     """
 
@@ -39,7 +39,7 @@ class SrsCentreLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePlane() As SrsGridFace (Read Only)
+                Property ReferencePlane() As SrsGridFace (Read Only)
 
         :return: SrsGridFace
         """

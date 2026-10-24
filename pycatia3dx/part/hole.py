@@ -22,16 +22,16 @@ class Hole(SketchBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             Hole
-                | 
-                | Hole Feature in Part Design.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            Hole
+                
+                Hole Feature in Part Design.
     
     """
 
@@ -45,20 +45,20 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorMode() As CatHoleAnchorMode
-                |     Returns the hole anchor mode.
-                |     This information is pertinent when hole type is Counterbored or
-                |     Counterdrilled only.
-                | 
-                |     Returns:
-                |         oMode The hole anchor mode (see CatHoleAnchorMode for list of possible
-                |         types)
-                | 
-                |         Example:
-                |             The following example returns in holeAnchorMode the anchor mode of
-                |             hole firstHole:
-                | 
-                |              Set holeAnchorMode = firstHole.AnchorMode
+                Property AnchorMode() As CatHoleAnchorMode
+                    Returns the hole anchor mode.
+                    This information is pertinent when hole type is Counterbored or
+                    Counterdrilled only.
+                
+                    Returns:
+                        oMode The hole anchor mode (see CatHoleAnchorMode for list of possible
+                        types)
+                
+                        Example:
+                            The following example returns in holeAnchorMode the anchor mode of
+                            hole firstHole:
+                
+                             Set holeAnchorMode = firstHole.AnchorMode
 
         :return: CatHoleAnchorMode
         """
@@ -79,19 +79,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BottomAngle() As Angle (Read Only)
-                |     Returns the hole bottom angle.
-                |     This call is valid when the hole bottom type is : VBottom.
-                | 
-                |     Returns:
-                |         oBottomAngle An Angle object controlling the hole bottom angle (see
-                |         Angle for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeBottomAngle the bottom angle
-                |             of hole firstHole:
-                | 
-                |              Set holeBottomAngle = firstHole.BottomAngle
+                Property BottomAngle() As Angle (Read Only)
+                    Returns the hole bottom angle.
+                    This call is valid when the hole bottom type is : VBottom.
+                
+                    Returns:
+                        oBottomAngle An Angle object controlling the hole bottom angle (see
+                        Angle for more information)
+                
+                        Example:
+                            The following example returns in holeBottomAngle the bottom angle
+                            of hole firstHole:
+                
+                             Set holeBottomAngle = firstHole.BottomAngle
 
         :return: Angle
         """
@@ -104,19 +104,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BottomLimit() As Limit (Read Only)
-                |     Returns the bottom limit.
-                |     This call is valid when the hole bottom type is : BlindHole or ThruHole.
-                | 
-                |     Returns:
-                |         oBottomLimit A Limit object controlling the hole bottom limit (see
-                |         Limit for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeBottomLimit the bottom limit
-                |             of hole firstHole:
-                | 
-                |              Set holeBottomLimit = firstHole.BottomLimit
+                Property BottomLimit() As Limit (Read Only)
+                    Returns the bottom limit.
+                    This call is valid when the hole bottom type is : BlindHole or ThruHole.
+                
+                    Returns:
+                        oBottomLimit A Limit object controlling the hole bottom limit (see
+                        Limit for more information)
+                
+                        Example:
+                            The following example returns in holeBottomLimit the bottom limit
+                            of hole firstHole:
+                
+                             Set holeBottomLimit = firstHole.BottomLimit
 
         :return: Limit
         """
@@ -129,18 +129,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BottomType() As CatHoleBottomType
-                |     Returns the hole bottom type.
-                | 
-                |     Returns:
-                |         oBottomType The hole bottom type (see CatHoleBottomType for list of
-                |         possible types)
-                | 
-                |         Example:
-                |             The following example returns in holeBottomType the bottom type of
-                |             hole firstHole:
-                | 
-                |              Set holeBottomType = firstHole.BottomType
+                Property BottomType() As CatHoleBottomType
+                    Returns the hole bottom type.
+                
+                    Returns:
+                        oBottomType The hole bottom type (see CatHoleBottomType for list of
+                        possible types)
+                
+                        Example:
+                            The following example returns in holeBottomType the bottom type of
+                            hole firstHole:
+                
+                             Set holeBottomType = firstHole.BottomType
 
         :return: CatHoleBottomType
         """
@@ -161,18 +161,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CounterDrilledMode() As CatCDHoleMode
-                |     Returns the mode of a counterdrilled hole .
-                | 
-                |     Returns:
-                |         CDMode Value of the counterdrilled mode (see CatCDHoleMode for list of
-                |         possible types)
-                | 
-                |         Example:
-                |             The following example returns in CDMode the CDMode of hole
-                |             firsthole:
-                | 
-                |              Set CDMode = firsthole.CounterDrilledMode
+                Property CounterDrilledMode() As CatCDHoleMode
+                    Returns the mode of a counterdrilled hole .
+                
+                    Returns:
+                        CDMode Value of the counterdrilled mode (see CatCDHoleMode for list of
+                        possible types)
+                
+                        Example:
+                            The following example returns in CDMode the CDMode of hole
+                            firsthole:
+                
+                             Set CDMode = firsthole.CounterDrilledMode
 
         :return: CatCDHoleMode
         """
@@ -193,18 +193,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CounterSunkMode() As CatCSHoleMode
-                |     Returns the mode of a countersunk hole .
-                | 
-                |     Returns:
-                |         CSMode Value of the countersunk mode (see CatCSHoleMode for list of
-                |         possible types)
-                | 
-                |         Example:
-                |             The following example returns in CSMode the CSMode of hole
-                |             firsthole:
-                | 
-                |              Set CSMode = firsthole.CounterSunkMode
+                Property CounterSunkMode() As CatCSHoleMode
+                    Returns the mode of a countersunk hole .
+                
+                    Returns:
+                        CSMode Value of the countersunk mode (see CatCSHoleMode for list of
+                        possible types)
+                
+                        Example:
+                            The following example returns in CSMode the CSMode of hole
+                            firsthole:
+                
+                             Set CSMode = firsthole.CounterSunkMode
 
         :return: CatCSHoleMode
         """
@@ -225,18 +225,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Diameter() As Length (Read Only)
-                |     Returns the hole diameter.
-                | 
-                |     Returns:
-                |         oDiameter A Length object controlling the hole diameter (see Length for
-                |         more information)
-                | 
-                |         Example:
-                |             The following example returns in holeDiam the diameter of hole
-                |             firstHole:
-                | 
-                |              Set holeDiam = firstHole.Diameter
+                Property Diameter() As Length (Read Only)
+                    Returns the hole diameter.
+                
+                    Returns:
+                        oDiameter A Length object controlling the hole diameter (see Length for
+                        more information)
+                
+                        Example:
+                            The following example returns in holeDiam the diameter of hole
+                            firstHole:
+                
+                             Set holeDiam = firstHole.Diameter
 
         :return: Length
         """
@@ -249,19 +249,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadAngle() As Angle (Read Only)
-                |     Returns the hole head angle.
-                |     This call is valid when the hole type is : Tapered or Counterdrilled or Countersunk.
-                | 
-                |     Returns:
-                |         oHeadAngle An Angle object controlling the hole head angle (see Angle
-                |         for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeHeadAngle the head angle of
-                |             hole firstHole:
-                | 
-                |              Set holeHeadAngle = firstHole.HeadAngle
+                Property HeadAngle() As Angle (Read Only)
+                    Returns the hole head angle.
+                    This call is valid when the hole type is : Tapered or Counterdrilled or Countersunk.
+                
+                    Returns:
+                        oHeadAngle An Angle object controlling the hole head angle (see Angle
+                        for more information)
+                
+                        Example:
+                            The following example returns in holeHeadAngle the head angle of
+                            hole firstHole:
+                
+                             Set holeHeadAngle = firstHole.HeadAngle
 
         :return: Angle
         """
@@ -274,19 +274,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadDepth() As Length (Read Only)
-                |     Returns the hole head depth.
-                |     This call is valid when the hole type is : Counterbored or Counterdrilled or Countersunk.
-                | 
-                |     Returns:
-                |         oHeadDepth A Length object controlling the hole head depth (see Length
-                |         for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeHeadDepth the head depth of
-                |             hole firstHole:
-                | 
-                |              Set holeHeadDepth = firstHole.HeadDepth
+                Property HeadDepth() As Length (Read Only)
+                    Returns the hole head depth.
+                    This call is valid when the hole type is : Counterbored or Counterdrilled or Countersunk.
+                
+                    Returns:
+                        oHeadDepth A Length object controlling the hole head depth (see Length
+                        for more information)
+                
+                        Example:
+                            The following example returns in holeHeadDepth the head depth of
+                            hole firstHole:
+                
+                             Set holeHeadDepth = firstHole.HeadDepth
 
         :return: Length
         """
@@ -299,19 +299,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadDiameter() As Length (Read Only)
-                |     Returns the hole head diameter.
-                |     This call is valid when the hole type is : Counterbored or Counterdrilled or Countersunk.
-                | 
-                |     Returns:
-                |         oHeadDiameter A Length object controlling the hole head diameter (see
-                |         Length for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeHeadDiam the head diameter of
-                |             hole firstHole:
-                | 
-                |              Set holeHeadDiam = firstHole.HeadDiameter
+                Property HeadDiameter() As Length (Read Only)
+                    Returns the hole head diameter.
+                    This call is valid when the hole type is : Counterbored or Counterdrilled or Countersunk.
+                
+                    Returns:
+                        oHeadDiameter A Length object controlling the hole head diameter (see
+                        Length for more information)
+                
+                        Example:
+                            The following example returns in holeHeadDiam the head diameter of
+                            hole firstHole:
+                
+                             Set holeHeadDiam = firstHole.HeadDiameter
 
         :return: Length
         """
@@ -324,20 +324,20 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HoleThreadDescription() As StrParam (Read Only)
-                |     Returns the hole thread description parameter. This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                |     This call is valid only when a standard/user design table
-                |     exists
-                | 
-                |     Returns:
-                |         oThreadDescParam A Parameter object controlling the hole thread
-                |         description (see StrParam for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadDescription the thread
-                |             description (M12 etc) of hole firstHole:
-                | 
-                |              Set holeThreadDescription = firstHole.HoleThreadDescription
+                Property HoleThreadDescription() As StrParam (Read Only)
+                    Returns the hole thread description parameter. This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                    This call is valid only when a standard/user design table
+                    exists
+                
+                    Returns:
+                        oThreadDescParam A Parameter object controlling the hole thread
+                        description (see StrParam for more information)
+                
+                        Example:
+                            The following example returns in holeThreadDescription the thread
+                            description (M12 etc) of hole firstHole:
+                
+                             Set holeThreadDescription = firstHole.HoleThreadDescription
 
         :return: StrParam
         """
@@ -350,19 +350,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadDepth() As Length (Read Only)
-                |     Returns the hole thread depth.
-                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                | 
-                |     Returns:
-                |         oThreadDepth A Length object controlling the hole thread depth (see
-                |         Length for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadDepth the thread depth
-                |             of hole firstHole:
-                | 
-                |              Set holeThreadDepth = firstHole.ThreadDepth
+                Property ThreadDepth() As Length (Read Only)
+                    Returns the hole thread depth.
+                    This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                
+                    Returns:
+                        oThreadDepth A Length object controlling the hole thread depth (see
+                        Length for more information)
+                
+                        Example:
+                            The following example returns in holeThreadDepth the thread depth
+                            of hole firstHole:
+                
+                             Set holeThreadDepth = firstHole.ThreadDepth
 
         :return: Length
         """
@@ -375,19 +375,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadDiameter() As Length (Read Only)
-                |     Returns the hole thread diameter.
-                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                | 
-                |     Returns:
-                |         oThreadDiameter A Length object controlling the hole thread diameter
-                |         (see Length for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadDiameter the thread
-                |             diameter of hole firstHole:
-                | 
-                |              Set holeThreadDiameter = firstHole.ThreadDiameter
+                Property ThreadDiameter() As Length (Read Only)
+                    Returns the hole thread diameter.
+                    This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                
+                    Returns:
+                        oThreadDiameter A Length object controlling the hole thread diameter
+                        (see Length for more information)
+                
+                        Example:
+                            The following example returns in holeThreadDiameter the thread
+                            diameter of hole firstHole:
+                
+                             Set holeThreadDiameter = firstHole.ThreadDiameter
 
         :return: Length
         """
@@ -400,19 +400,19 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadPitch() As Length (Read Only)
-                |     Returns the hole thread pitch.
-                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                | 
-                |     Returns:
-                |         oThreadPitch A Length object controlling the hole thread pitch (see
-                |         Length for more information)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadPitch the thread pitch
-                |             of hole firstHole:
-                | 
-                |              Set holeThreadPitch = firstHole.ThreadPitch
+                Property ThreadPitch() As Length (Read Only)
+                    Returns the hole thread pitch.
+                    This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                
+                    Returns:
+                        oThreadPitch A Length object controlling the hole thread pitch (see
+                        Length for more information)
+                
+                        Example:
+                            The following example returns in holeThreadPitch the thread pitch
+                            of hole firstHole:
+                
+                             Set holeThreadPitch = firstHole.ThreadPitch
 
         :return: Length
         """
@@ -425,18 +425,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadSide() As CatHoleThreadSide
-                |     Returns the hole thread side.
-                | 
-                |     Returns:
-                |         oThreadSide The hole thread side (see CatHoleThreadSide for list of
-                |         possible sides)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadSide the thread side of
-                |             hole firstHole:
-                | 
-                |              Set holeThreadSide = firstHole.ThreadSide
+                Property ThreadSide() As CatHoleThreadSide
+                    Returns the hole thread side.
+                
+                    Returns:
+                        oThreadSide The hole thread side (see CatHoleThreadSide for list of
+                        possible sides)
+                
+                        Example:
+                            The following example returns in holeThreadSide the thread side of
+                            hole firstHole:
+                
+                             Set holeThreadSide = firstHole.ThreadSide
 
         :return: CatHoleThreadSide
         """
@@ -457,18 +457,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThreadingMode() As CatHoleThreadingMode
-                |     Returns the hole threading mode.
-                | 
-                |     Returns:
-                |         oThreadingMode The hole threading mode (see CatHoleThreadingMode for
-                |         list of possible types)
-                | 
-                |         Example:
-                |             The following example returns in holeThreadingMode the threading
-                |             mode of hole firstHole:
-                | 
-                |              Set holeThreadingMode = firstHole.ThreadingMode
+                Property ThreadingMode() As CatHoleThreadingMode
+                    Returns the hole threading mode.
+                
+                    Returns:
+                        oThreadingMode The hole threading mode (see CatHoleThreadingMode for
+                        list of possible types)
+                
+                        Example:
+                            The following example returns in holeThreadingMode the threading
+                            mode of hole firstHole:
+                
+                             Set holeThreadingMode = firstHole.ThreadingMode
 
         :return: CatHoleThreadingMode
         """
@@ -489,18 +489,18 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CatHoleType
-                |     Returns the hole type.
-                | 
-                |     Returns:
-                |         oType The hole type (see CatHoleType for list of possible
-                |         types)
-                | 
-                |         Example:
-                |             The following example returns in holeType the type of hole
-                |             firstHole:
-                | 
-                |              Set holeType = firstHole.Type
+                Property Type() As CatHoleType
+                    Returns the hole type.
+                
+                    Returns:
+                        oType The hole type (see CatHoleType for list of possible
+                        types)
+                
+                        Example:
+                            The following example returns in holeType the type of hole
+                            firstHole:
+                
+                             Set holeType = firstHole.Type
 
         :return: CatHoleType
         """
@@ -520,23 +520,23 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
-                | iStandardType)
-                |     Creates a Standard Thread design table .
-                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                | 
-                |     Parameters:
-                | 
-                |         iStandardType
-                |             Standard type for thread (see CatHoleThreadStandard for list of
-                |             possible types)
-                | 
-                |             Example:
-                |                 The following example creates a standard table for
-                |                 MetricThinPitch for hole firstHole:
-                | 
-                |                  firstHole.CreateStandardThreadDesignTable
-                |                  catHoleMetricThinPitch
+                Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
+                iStandardType)
+                    Creates a Standard Thread design table .
+                    This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                
+                    Parameters:
+                
+                        iStandardType
+                            Standard type for thread (see CatHoleThreadStandard for list of
+                            possible types)
+                
+                            Example:
+                                The following example creates a standard table for
+                                MetricThinPitch for hole firstHole:
+                
+                                 firstHole.CreateStandardThreadDesignTable
+                                 catHoleMetricThinPitch
 
         :param int i_standard_type:
         :return: None
@@ -548,35 +548,35 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateUserStandardDesignTable(CATBSTR iStandardName,CATBSTR
-                | iPath)
-                |     Creates a UserStandard Thread design table .
-                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
-                | 
-                |     Parameters:
-                | 
-                |         iStandardName
-                |             Name of the UserStandard thread. iStandardName should be empty if
-                |             filepath is to be defined. 
-                |         iPath
-                |             Path of the UserStandard file. iPath is empty if the filepath is
-                |             already defined through CATReffilesPath.
-                | 
-                |             Example1:
-                |                 The following example creates a standard table for UserStandard
-                |                 for hole firstHole. The file path is already defined thru
-                |                 CATReffilesPath:
-                | 
-                |                  firstHole.CreateUserStandardDesignTable
-                |                  "UserStandard",""
-                | 
-                |             Example2:
-                |                 The following example creates a standard table for UserStandard
-                |                 for hole firstHole when file path is not defined thru
-                |                 CATReffilesPath:
-                | 
-                |                  firstHole.CreateUserStandardDesignTable
-                |                  "","E:\\user\\standard\\UserStandard.txt"
+                Sub CreateUserStandardDesignTable(CATBSTR iStandardName,CATBSTR
+                iPath)
+                    Creates a UserStandard Thread design table .
+                    This call is valid when the hole threading mode is : CATThreadedHoleThreading.
+                
+                    Parameters:
+                
+                        iStandardName
+                            Name of the UserStandard thread. iStandardName should be empty if
+                            filepath is to be defined. 
+                        iPath
+                            Path of the UserStandard file. iPath is empty if the filepath is
+                            already defined through CATReffilesPath.
+                
+                            Example1:
+                                The following example creates a standard table for UserStandard
+                                for hole firstHole. The file path is already defined thru
+                                CATReffilesPath:
+                
+                                 firstHole.CreateUserStandardDesignTable
+                                 "UserStandard",""
+                
+                            Example2:
+                                The following example creates a standard table for UserStandard
+                                for hole firstHole when file path is not defined thru
+                                CATReffilesPath:
+                
+                                 firstHole.CreateUserStandardDesignTable
+                                 "","E:\\user\\standard\\UserStandard.txt"
 
         :param str i_standard_name:
         :param str i_path:
@@ -589,21 +589,21 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDirection(CATSafeArrayVariant ioDirection)
-                |     Returns the hole direction with absolute coordinates.
-                |     It provides a safe array with 3 elements : X, Y, Z direction coordinates
-                | 
-                |     Returns:
-                |         oDirection The direction coordinates
-                | 
-                |         Example:
-                |             The following example returns in dirArray the direction coordinates
-                |             of hole firstHole:
-                | 
-                |              Call firstHole.GetDirection dirArray
-                |              Set x = dirArray[1]
-                |              Set y = dirArray[2]
-                |              Set z = dirArray[3]
+                Sub GetDirection(CATSafeArrayVariant ioDirection)
+                    Returns the hole direction with absolute coordinates.
+                    It provides a safe array with 3 elements : X, Y, Z direction coordinates
+                
+                    Returns:
+                        oDirection The direction coordinates
+                
+                        Example:
+                            The following example returns in dirArray the direction coordinates
+                            of hole firstHole:
+                
+                             Call firstHole.GetDirection dirArray
+                             Set x = dirArray[1]
+                             Set y = dirArray[2]
+                             Set z = dirArray[3]
 
         :return: tuple
         """
@@ -632,21 +632,21 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetOrigin(CATSafeArrayVariant ioOrigin)
-                |     Returns the origin point which the hole is anchored to.
-                |     This point belongs to a tangent plane.
-                | 
-                |     Returns:
-                |         oOrigin A Safe Array made up of 3 doubles : X, Y, Z - Hole origin point coordinates
-                | 
-                |         Example:
-                |             The following example returns in coordArray the coordinates of hole
-                |             firstHole:
-                | 
-                |              Call firstHole.GetOrigin coordArray
-                |              Set x = coordArray[1]
-                |              Set y = coordArray[2]
-                |              Set z = coordArray[3]
+                Sub GetOrigin(CATSafeArrayVariant ioOrigin)
+                    Returns the origin point which the hole is anchored to.
+                    This point belongs to a tangent plane.
+                
+                    Returns:
+                        oOrigin A Safe Array made up of 3 doubles : X, Y, Z - Hole origin point coordinates
+                
+                        Example:
+                            The following example returns in coordArray the coordinates of hole
+                            firstHole:
+                
+                             Call firstHole.GetOrigin coordArray
+                             Set x = coordArray[1]
+                             Set y = coordArray[2]
+                             Set z = coordArray[3]
 
         :return: tuple
         """
@@ -675,14 +675,14 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Reverse()
-                |     Reverses the hole direction .
-                | 
-                |     Example:
-                |         The following example reverses the current direction of hole
-                |         firstHole:
-                | 
-                |          firstHole.Reverse()
+                Sub Reverse()
+                    Reverses the hole direction .
+                
+                    Example:
+                        The following example reverses the current direction of hole
+                        firstHole:
+                
+                         firstHole.Reverse()
 
         :return: None
         """
@@ -693,24 +693,24 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDirection(Reference iDirection)
-                |     Sets the hole associative direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDirection
-                |             A Reference object to an edge or a line (see Reference for more
-                |             information)
-                |             The following Boundary objects are supported:
-                |             RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
-                |             RectilinearMonoDimFeatEdge.
-                | 
-                |             Example:
-                |                 The following example sets the support direction of hole
-                |                 firstHole with holeDirRef direction reference
-                |                 :
-                | 
-                |                  firstHole.SetDirection holeDirref
+                Sub SetDirection(Reference iDirection)
+                    Sets the hole associative direction.
+                
+                    Parameters:
+                
+                        iDirection
+                            A Reference object to an edge or a line (see Reference for more
+                            information)
+                            The following Boundary objects are supported:
+                            RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
+                            RectilinearMonoDimFeatEdge.
+                
+                            Example:
+                                The following example sets the support direction of hole
+                                firstHole with holeDirRef direction reference
+                                :
+                
+                                 firstHole.SetDirection holeDirref
 
         :param Reference i_direction:
         :return: None
@@ -722,25 +722,25 @@ class Hole(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOrigin(double iX,double iY,double iZ)
-                |     Sets the origin point which the hole is anchored to.
-                |     If mandatory, the entry point will be projected onto a tangent
-                |     plane.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             Origin point x absolute coordinate 
-                |         iY
-                |             Origin point y absolute coordinate 
-                |         iZ
-                |             Origin point z absolute coordinate
-                | 
-                |             Example:
-                |                 The following example sets the coordinates of hole firstHole to
-                |                 10., 20., -5. :
-                | 
-                |                  firstHole.SetOrigin 10., 20., 5.
+                Sub SetOrigin(double iX,double iY,double iZ)
+                    Sets the origin point which the hole is anchored to.
+                    If mandatory, the entry point will be projected onto a tangent
+                    plane.
+                
+                    Parameters:
+                
+                        iX
+                            Origin point x absolute coordinate 
+                        iY
+                            Origin point y absolute coordinate 
+                        iZ
+                            Origin point z absolute coordinate
+                
+                            Example:
+                                The following example sets the coordinates of hole firstHole to
+                                10., 20., -5. :
+                
+                                 firstHole.SetOrigin 10., 20., 5.
 
         :param float i_x:
         :param float i_y:

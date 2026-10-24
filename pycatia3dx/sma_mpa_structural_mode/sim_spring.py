@@ -18,51 +18,51 @@ class SimSpring(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpring
-                | 
-                | Represents the Spring object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimSpring as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MySpring As SimSpring
-                |      Set MySpring = MyMCXProperties.Add("SimSpring")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimSpring named
-                |     "Spring.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MySpring As SimSpring
-                |      Set MySpring = MyMCXProperties.Item("Spring.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a SimSpring
-                |     as following:
-                | 
-                |      ...
-                |      mySpring = myMCXProperties.Add("SimSpring")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimSpring named "Spring.1" as following:
-                | 
-                |      ...
-                |      mySpring = myMCXProperties.Item("Spring.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpring
+                
+                Represents the Spring object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimSpring as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MySpring As SimSpring
+                     Set MySpring = MyMCXProperties.Add("SimSpring")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimSpring named
+                    "Spring.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MySpring As SimSpring
+                     Set MySpring = MyMCXProperties.Item("Spring.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a SimSpring
+                    as following:
+                
+                     ...
+                     mySpring = myMCXProperties.Add("SimSpring")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimSpring named "Spring.1" as following:
+                
+                     ...
+                     mySpring = myMCXProperties.Item("Spring.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -76,8 +76,8 @@ class SimSpring(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorSection() As SimConnectorSection (Read Only)
-                |     Returns the connector section.
+                Property ConnectorSection() As SimConnectorSection (Read Only)
+                    Returns the connector section.
 
         :return: SimConnectorSection
         """
@@ -90,33 +90,33 @@ class SimSpring(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -129,8 +129,8 @@ class SimSpring(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpringType() As SimSpringType
-                |     Returns or sets the type of the SMAMpaSpringType. 
+                Property SpringType() As SimSpringType
+                    Returns or sets the type of the SMAMpaSpringType. 
 
         :return: int
         """

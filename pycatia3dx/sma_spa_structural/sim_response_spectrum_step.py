@@ -18,52 +18,52 @@ class SimResponseSpectrumStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimResponseSpectrumStep
-                | 
-                | Represents the Response Spectrum Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimResponseSpectrumStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyResponseSpectrumStep As SimResponseSpectrumStep
-                |      Set MyResponseSpectrumStep = MySteps.Add("SimResponseSpectrumStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimResponseSpectrumStep named
-                |     "Response Spectrum Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyResponseSpectrumStep As SimResponseSpectrumStep
-                |      Set MyResponseSpectrumStep = MySteps.Item("Response Spectrum Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimResponseSpectrumStep
-                |     as following:
-                | 
-                |      ...
-                |      myResponseSpectrumStep = mySteps.Add("SimResponseSpectrumStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimResponseSpectrumStep
-                |     named "Response Spectrum Step.1" as following:
-                | 
-                |      ...
-                |      myResponseSpectrumStep = mySteps.Item("Response Spectrum Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimResponseSpectrumStep
+                
+                Represents the Response Spectrum Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimResponseSpectrumStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyResponseSpectrumStep As SimResponseSpectrumStep
+                     Set MyResponseSpectrumStep = MySteps.Add("SimResponseSpectrumStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimResponseSpectrumStep named
+                    "Response Spectrum Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyResponseSpectrumStep As SimResponseSpectrumStep
+                     Set MyResponseSpectrumStep = MySteps.Item("Response Spectrum Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimResponseSpectrumStep
+                    as following:
+                
+                     ...
+                     myResponseSpectrumStep = mySteps.Add("SimResponseSpectrumStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimResponseSpectrumStep
+                    named "Response Spectrum Step.1" as following:
+                
+                     ...
+                     myResponseSpectrumStep = mySteps.Item("Response Spectrum Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -77,8 +77,8 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,8 +99,8 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -113,9 +113,9 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingDefinition() As
-                | SimResponseSpectrumStepDampingDefinition
-                |     Returns or sets the damping definition.
+                Property DampingDefinition() As
+                SimResponseSpectrumStepDampingDefinition
+                    Returns or sets the damping definition.
 
         :return: SimResponseSpectrumStepDampingDefinition
         """
@@ -136,9 +136,9 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DirectionalSummationMethod() As
-                | SimResponseSpectrumStepDirectionalSummationMethod
-                |     Returns or sets the directional summation method.
+                Property DirectionalSummationMethod() As
+                SimResponseSpectrumStepDirectionalSummationMethod
+                    Returns or sets the directional summation method.
 
         :return: SimResponseSpectrumStepDirectionalSummationMethod
         """
@@ -159,10 +159,10 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MissingMassMethodFlag() As boolean
-                |     Returns or sets the missing mass method flag.
-                |     TRUE: the missing mass method is used.
-                |     FALSE: the missing mass method is not used.
+                Property MissingMassMethodFlag() As boolean
+                    Returns or sets the missing mass method flag.
+                    TRUE: the missing mass method is used.
+                    FALSE: the missing mass method is not used.
 
         :return: bool
         """
@@ -183,9 +183,9 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModalSummationMethod() As
-                | SimResponseSpectrumStepModalSummationMethod
-                |     Returns or sets the modal summation method.
+                Property ModalSummationMethod() As
+                SimResponseSpectrumStepModalSummationMethod
+                    Returns or sets the modal summation method.
 
         :return: SimResponseSpectrumStepModalSummationMethod
         """
@@ -206,9 +206,9 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RigidResponseMethod() As
-                | SimResponseSpectrumStepRigidResponseMethod
-                |     Returns or sets the rigid response method.
+                Property RigidResponseMethod() As
+                SimResponseSpectrumStepRigidResponseMethod
+                    Returns or sets the rigid response method.
 
         :return: SimResponseSpectrumStepRigidResponseMethod
         """
@@ -228,17 +228,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAlignAxis(SimResponseSpectrumStepDirectionType iDirectionType) As
-                | SimResponseSpectrumStepAlignAxisType
-                |     Retrieves the axis used to align the data of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         The axis to align with.
+                Func GetAlignAxis(SimResponseSpectrumStepDirectionType iDirectionType) As
+                SimResponseSpectrumStepAlignAxisType
+                    Retrieves the axis used to align the data of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        The axis to align with.
 
         :param int i_direction_type:
         :return: int
@@ -250,19 +250,19 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
-                | iDirectionType) As boolean
-                |     Retrieves the flag used to determine if spectrum data is applied in a given
-                |     direction. Only applicable for second and third direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         TRUE: the spectrum data is applied.
-                |         FALSE: the spectrum data is not applied.
+                Func GetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
+                iDirectionType) As boolean
+                    Retrieves the flag used to determine if spectrum data is applied in a given
+                    direction. Only applicable for second and third direction.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        TRUE: the spectrum data is applied.
+                        FALSE: the spectrum data is not applied.
 
         :param int i_direction_type:
         :return: bool
@@ -274,17 +274,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCutOffFrequency(SimResponseSpectrumStepDirectionType iDirectionType) As
-                | double
-                |     Retrieves the cut-off frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Func GetCutOffFrequency(SimResponseSpectrumStepDirectionType iDirectionType) As
+                double
+                    Retrieves the cut-off frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :return: float
@@ -296,17 +296,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
-                | iDirectionType) As double
-                |     Retrieves the periodic region frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Func GetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
+                iDirectionType) As double
+                    Retrieves the periodic region frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :return: float
@@ -318,17 +318,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
-                | iDirectionType) As double
-                |     Retrieves the rigid region frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Func GetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
+                iDirectionType) As double
+                    Retrieves the rigid region frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :return: float
@@ -340,17 +340,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType) As
-                | double
-                |     Retrieves the scale factor of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         Scale factor value. Quantity: DIMENSIONLESS, Units: None.
+                Func GetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType) As
+                double
+                    Retrieves the scale factor of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        Scale factor value. Quantity: DIMENSIONLESS, Units: None.
 
         :param int i_direction_type:
         :return: float
@@ -362,17 +362,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType) As
-                | SimSpectrum
-                |     Retrieves the response spectrum in a specific direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         The spectrum.
+                Func GetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType) As
+                SimSpectrum
+                    Retrieves the response spectrum in a specific direction.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        The spectrum.
 
         :param int i_direction_type:
         :return: SimSpectrum
@@ -384,17 +384,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType) As
-                | double
-                |     Retrieves the time duration of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                | 
-                |     Returns:
-                |         Time duration value. Quantity: TIME, Units: s.
+                Func GetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType) As
+                double
+                    Retrieves the time duration of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                
+                    Returns:
+                        Time duration value. Quantity: TIME, Units: s.
 
         :param int i_direction_type:
         :return: float
@@ -406,17 +406,17 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAlignAxis(SimResponseSpectrumStepDirectionType
-                | iDirectionType,SimResponseSpectrumStepAlignAxisType
-                | iAlignAxis)
-                |     Sets the axis used to align the data of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iAlignAxis[in]
-                |             The axis to align with.
+                Sub SetAlignAxis(SimResponseSpectrumStepDirectionType
+                iDirectionType,SimResponseSpectrumStepAlignAxisType
+                iAlignAxis)
+                    Sets the axis used to align the data of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iAlignAxis[in]
+                            The axis to align with.
 
         :param int i_direction_type:
         :param int i_align_axis:
@@ -429,18 +429,18 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
-                | iDirectionType,boolean iApplySpectrum)
-                |     Sets the flag used to determine if spectrum data is applied in a given
-                |     direction. Only applicable for second and third direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iApplySpectrum[in]
-                |             TRUE: the spectrum data is applied.
-                |             FALSE: the spectrum data is not applied.
+                Sub SetApplyDirectionalSpectrumFlag(SimResponseSpectrumStepDirectionType
+                iDirectionType,boolean iApplySpectrum)
+                    Sets the flag used to determine if spectrum data is applied in a given
+                    direction. Only applicable for second and third direction.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iApplySpectrum[in]
+                            TRUE: the spectrum data is applied.
+                            FALSE: the spectrum data is not applied.
 
         :param int i_direction_type:
         :param bool i_apply_spectrum:
@@ -453,16 +453,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCutOffFrequency(SimResponseSpectrumStepDirectionType
-                | iDirectionType,double iFrequency)
-                |     Sets the cut-off frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iFrequency[in]
-                |             Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Sub SetCutOffFrequency(SimResponseSpectrumStepDirectionType
+                iDirectionType,double iFrequency)
+                    Sets the cut-off frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iFrequency[in]
+                            Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :param float i_frequency:
@@ -475,16 +475,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
-                | iDirectionType,double iFrequency)
-                |     Sets the periodic region frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iFrequency[in]
-                |             Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Sub SetPeriodicRegionFrequency(SimResponseSpectrumStepDirectionType
+                iDirectionType,double iFrequency)
+                    Sets the periodic region frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iFrequency[in]
+                            Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :param float i_frequency:
@@ -497,16 +497,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
-                | iDirectionType,double iFrequency)
-                |     Sets the rigid region frequency of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iFrequency[in]
-                |             Frequency value. Quantity: FREQUENCY, Units: Hz.
+                Sub SetRigidRegionFrequency(SimResponseSpectrumStepDirectionType
+                iDirectionType,double iFrequency)
+                    Sets the rigid region frequency of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iFrequency[in]
+                            Frequency value. Quantity: FREQUENCY, Units: Hz.
 
         :param int i_direction_type:
         :param float i_frequency:
@@ -519,16 +519,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType,double
-                | iScaleFactor)
-                |     Sets the scale factor of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iScaleFactor[in]
-                |             Scale factor value. Quantity: DIMENSIONLESS, Units: None.
+                Sub SetScaleFactor(SimResponseSpectrumStepDirectionType iDirectionType,double
+                iScaleFactor)
+                    Sets the scale factor of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iScaleFactor[in]
+                            Scale factor value. Quantity: DIMENSIONLESS, Units: None.
 
         :param int i_direction_type:
         :param float i_scale_factor:
@@ -541,16 +541,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType,SimSpectrum
-                | iSpectrum)
-                |     Sets the response spectrum in a specific direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         ispSpectrum[in]
-                |             The spectrum.
+                Sub SetSpectrum(SimResponseSpectrumStepDirectionType iDirectionType,SimSpectrum
+                iSpectrum)
+                    Sets the response spectrum in a specific direction.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        ispSpectrum[in]
+                            The spectrum.
 
         :param int i_direction_type:
         :param SimSpectrum i_spectrum:
@@ -563,16 +563,16 @@ class SimResponseSpectrumStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType,double
-                | iTimeDuration)
-                |     Sets the time duration of a spectrum.
-                | 
-                |     Parameters:
-                | 
-                |         iDirectionType[in]
-                |             The spectrum direction. 
-                |         iTimeDuration[in]
-                |             Time duration value. Quantity: TIME, Units: s. 
+                Sub SetTimeDuration(SimResponseSpectrumStepDirectionType iDirectionType,double
+                iTimeDuration)
+                    Sets the time duration of a spectrum.
+                
+                    Parameters:
+                
+                        iDirectionType[in]
+                            The spectrum direction. 
+                        iTimeDuration[in]
+                            Time duration value. Quantity: TIME, Units: s. 
 
         :param int i_direction_type:
         :param float i_time_duration:

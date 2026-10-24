@@ -17,16 +17,16 @@ class CtmCurveSamplerNumber(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmCurveSamplerNumber
-                | 
-                | Interface representing the curve sampler number.
-                | 
-                | Role: This interface is used to get and set number of samples.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmCurveSamplerNumber
+                
+                Interface representing the curve sampler number.
+                
+                Role: This interface is used to get and set number of samples.
     
     """
 
@@ -40,22 +40,22 @@ class CtmCurveSamplerNumber(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfSamples() As short
-                |     Returns or sets the number of samples parameter used by this sampler. This
-                |     parameter controls how many samples are created along the curve. All samples
-                |     will be an equal distance apart.
-                | 
-                |     Parameters:
-                | 
-                |         oNumSamples
-                |             The number of samples. 
-                |         Example:
-                | 
-                |              Dim objNumberSampler As CtmCurveSamplerNumber
-                |                    ........
-                |              Dim oNumberOfSamples
-                |              objNumberSampler.NumberOfSamples = 4
-                |              oNumberOfSamples = objNumberSampler.NumberOfSamples 
+                Property NumberOfSamples() As short
+                    Returns or sets the number of samples parameter used by this sampler. This
+                    parameter controls how many samples are created along the curve. All samples
+                    will be an equal distance apart.
+                
+                    Parameters:
+                
+                        oNumSamples
+                            The number of samples. 
+                        Example:
+                
+                             Dim objNumberSampler As CtmCurveSamplerNumber
+                                   ........
+                             Dim oNumberOfSamples
+                             objNumberSampler.NumberOfSamples = 4
+                             oNumberOfSamples = objNumberSampler.NumberOfSamples 
 
         :return: int
         """

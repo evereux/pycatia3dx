@@ -22,17 +22,17 @@ class KnowledgeFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeFactory
-                | 
-                | Generic factory for creating Knowledge objects.
-                | 
-                | See also:
-                |     KnowledgeSet.Factory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeFactory
+                
+                Generic factory for creating Knowledge objects.
+                
+                See also:
+                    KnowledgeSet.Factory
     
     """
 
@@ -46,8 +46,8 @@ class KnowledgeFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Collection() As KnowledgeCollection (Read Only)
-                |     Returns the collection of Knowledge objects owned by the root.
+                Property Collection() As KnowledgeCollection (Read Only)
+                    Returns the collection of Knowledge objects owned by the root.
 
         :return: KnowledgeCollection
         """
@@ -60,8 +60,8 @@ class KnowledgeFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Root() As CATBaseDispatch (Read Only)
-                |     Returns the object on which the objects will be created.
+                Property Root() As CATBaseDispatch (Read Only)
+                    Returns the object on which the objects will be created.
 
         :return: AnyObject
         """

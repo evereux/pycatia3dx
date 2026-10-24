@@ -17,12 +17,12 @@ class SpotDrManufacturingPatternFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrManufacturingPatternFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrManufacturingPatternFactory
 
     
     """
@@ -36,17 +36,17 @@ class SpotDrManufacturingPatternFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateDRManufacturingPattern(AnyObject ohMfgPattern,CATSafeArrayVariant
-                | iListOfMfgFasteners)
-                |     Creates a DR Manufacturing pattern.
-                | 
-                |     Parameters:
-                | 
-                |         ohMfgPattern
-                |             The newly created pattern. 
-                |         iListOfMfgFasteners
-                |             List of manufacturing fasteners to add in the pattern. Array of
-                |             CATIABase pointers
+                Sub CreateDRManufacturingPattern(AnyObject ohMfgPattern,CATSafeArrayVariant
+                iListOfMfgFasteners)
+                    Creates a DR Manufacturing pattern.
+                
+                    Parameters:
+                
+                        ohMfgPattern
+                            The newly created pattern. 
+                        iListOfMfgFasteners
+                            List of manufacturing fasteners to add in the pattern. Array of
+                            CATIABase pointers
 
         :param AnyObject oh_mfg_pattern:
         :param tuple i_list_of_mfg_fasteners:
@@ -59,13 +59,13 @@ class SpotDrManufacturingPatternFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteDRManufacturingPattern(AnyObject ihMfgPattern)
-                |     Deletes a DR Manufacturing pattern.
-                | 
-                |     Parameters:
-                | 
-                |         ihMfgPattern
-                |             Pattern to be deleted. 
+                Sub DeleteDRManufacturingPattern(AnyObject ihMfgPattern)
+                    Deletes a DR Manufacturing pattern.
+                
+                    Parameters:
+                
+                        ihMfgPattern
+                            Pattern to be deleted. 
 
         :param AnyObject ih_mfg_pattern:
         :return: None

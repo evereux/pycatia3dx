@@ -18,19 +18,19 @@ class Repartition(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Repartition
-                | 
-                | Represents the repartition.
-                | A repartition is a set of objects used by the pattern shapes. It is the base
-                | object for linear and angular repartitions.
-                | 
-                | See also:
-                |     LinearRepartition, AngularRepartition
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Repartition
+                
+                Represents the repartition.
+                A repartition is a set of objects used by the pattern shapes. It is the base
+                object for linear and angular repartitions.
+                
+                See also:
+                    LinearRepartition, AngularRepartition
     
     """
 
@@ -44,14 +44,14 @@ class Repartition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InstancesCount() As IntParam (Read Only)
-                |     Returns the total number of copied shapes.
-                | 
-                |     Example:
-                |         The following example returns in Nb the number of shapes of the
-                |         repartition firstRepartition:
-                | 
-                |          Set Nb = firstRepartition.InstancesCount
+                Property InstancesCount() As IntParam (Read Only)
+                    Returns the total number of copied shapes.
+                
+                    Example:
+                        The following example returns in Nb the number of shapes of the
+                        repartition firstRepartition:
+                
+                         Set Nb = firstRepartition.InstancesCount
 
         :return: IntParam
         """

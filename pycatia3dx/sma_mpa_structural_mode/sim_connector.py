@@ -18,51 +18,51 @@ class SimConnector(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnector
-                | 
-                | Represents the Connector object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimConnector as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyConnector As SimConnector
-                |      Set MyConnector = MyMCXProperties.Add("SimConnector")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimConnector named
-                |     "Connector.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyConnector As SimConnector
-                |      Set MyConnector = MyMCXProperties.Item("Connector.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimConnector as following:
-                | 
-                |      ...
-                |      myConnector = myMCXProperties.Add("SimConnector")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimConnector named "Connector.1" as following:
-                | 
-                |      ...
-                |      myConnector = myMCXProperties.Item("Connector.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnector
+                
+                Represents the Connector object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimConnector as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyConnector As SimConnector
+                     Set MyConnector = MyMCXProperties.Add("SimConnector")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimConnector named
+                    "Connector.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyConnector As SimConnector
+                     Set MyConnector = MyMCXProperties.Item("Connector.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimConnector as following:
+                
+                     ...
+                     myConnector = myMCXProperties.Add("SimConnector")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimConnector named "Connector.1" as following:
+                
+                     ...
+                     myConnector = myMCXProperties.Item("Connector.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -76,8 +76,8 @@ class SimConnector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorCouplingType() As SimConnectorCouplingType
-                |     Returns or sets the type of connector coupling.
+                Property ConnectorCouplingType() As SimConnectorCouplingType
+                    Returns or sets the type of connector coupling.
 
         :return: int
         """
@@ -98,8 +98,8 @@ class SimConnector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorSection() As SimConnectorSection (Read Only)
-                |     Returns the connector section.
+                Property ConnectorSection() As SimConnectorSection (Read Only)
+                    Returns the connector section.
 
         :return: SimConnectorSection
         """
@@ -112,33 +112,33 @@ class SimConnector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """

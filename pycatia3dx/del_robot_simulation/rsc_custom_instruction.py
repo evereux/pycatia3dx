@@ -16,18 +16,18 @@ class RscCustomInstruction(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscCustomInstruction
-                | 
-                | Interface representing a Resource Custom Instruction.
-                | 
-                | Role: This interface represents a Resource Custom Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscCustomInstruction
+                
+                Interface representing a Resource Custom Instruction.
+                
+                Role: This interface represents a Resource Custom Instruction in a Resource
+                Task
 
     """
 

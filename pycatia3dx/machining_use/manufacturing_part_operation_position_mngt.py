@@ -16,16 +16,16 @@ class ManufacturingPartOperationPositionMngt(ManufacturingAgregate):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningUseItf.ManufacturingAgregate
-                |                         ManufacturingPartOperationPositionMngt
-                | 
-                | Interface representing the list of position of the Part
-                | Operation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningUseItf.ManufacturingAgregate
+                                        ManufacturingPartOperationPositionMngt
+                
+                Interface representing the list of position of the Part
+                Operation
     
     """
 

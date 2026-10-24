@@ -26,18 +26,18 @@ class OrderedGeometricalSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OrderedGeometricalSet
-                | 
-                | The object is an ordered geometrical set.
-                | The ordered geometrical set manages a set of hybrid shapes, a set of bodies and
-                | a set of ordered geometrical sets.
-                | It belongs to the OrderedGeometricalSets collection of a Part or
-                | OrderedGeometricalSet object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OrderedGeometricalSet
+                
+                The object is an ordered geometrical set.
+                The ordered geometrical set manages a set of hybrid shapes, a set of bodies and
+                a set of ordered geometrical sets.
+                It belongs to the OrderedGeometricalSets collection of a Part or
+                OrderedGeometricalSet object.
     
     """
 
@@ -51,14 +51,14 @@ class OrderedGeometricalSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Bodies() As Bodies (Read Only)
-                |     Returns the ordered geometrical set's Bodies collection.
-                | 
-                |     Example:
-                |         The following example returns in bodyColl the collection of bodies of
-                |         the ordered geometrical set OrderedGeometricalSet1 :
-                | 
-                |          Set bodyColl = OrderedGeometricalSet1.Bodies
+                Property Bodies() As Bodies (Read Only)
+                    Returns the ordered geometrical set's Bodies collection.
+                
+                    Example:
+                        The following example returns in bodyColl the collection of bodies of
+                        the ordered geometrical set OrderedGeometricalSet1 :
+                
+                         Set bodyColl = OrderedGeometricalSet1.Bodies
 
         :return: Bodies
         """
@@ -71,23 +71,23 @@ class OrderedGeometricalSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property HybridShapes() As HybridShapes (Read Only)
-                |     Returns the list of hybrid shapes included in the ordered geometrical
-                |     set.
-                | 
-                |     Returns:
-                |         oHybridShapes The list of hybrid shapes in the ordered geometrical set
-                |         (@see CATIAHybridShapes
-                |         for more information).
-                | 
-                |         Example:
-                |             The following example returns in HybridShapes1 the list
-                |             of
-                |             hybrid shapes in the ordered geometrical
-                |             setOrderedGeometricalSet1:
-                | 
-                |              Dim HybridShapes1 As HybridShapes
-                |              Set HybridShapes1 = OrderedGeometricalSet1.HybridShapes
+                Property HybridShapes() As HybridShapes (Read Only)
+                    Returns the list of hybrid shapes included in the ordered geometrical
+                    set.
+                
+                    Returns:
+                        oHybridShapes The list of hybrid shapes in the ordered geometrical set
+                        (@see CATIAHybridShapes
+                        for more information).
+                
+                        Example:
+                            The following example returns in HybridShapes1 the list
+                            of
+                            hybrid shapes in the ordered geometrical
+                            setOrderedGeometricalSet1:
+                
+                             Dim HybridShapes1 As HybridShapes
+                             Set HybridShapes1 = OrderedGeometricalSet1.HybridShapes
 
         :return: HybridShapes
         """
@@ -100,17 +100,17 @@ class OrderedGeometricalSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
-                | Only)
-                |     Returns the ordered geometrical set's OrderedGeometricalSets
-                |     collection.
-                | 
-                |     Example:
-                |         The following example returns in OrderedGeometricalSetColl the
-                |         collection of ordered geometrical set of the ordered geometrical set
-                |         OrderedGeometricalSet1 :
-                | 
-                |          Set OrderedGeometricalSetColl = OrderedGeometricalSet1.OrderedGeometricalSets
+                Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
+                Only)
+                    Returns the ordered geometrical set's OrderedGeometricalSets
+                    collection.
+                
+                    Example:
+                        The following example returns in OrderedGeometricalSetColl the
+                        collection of ordered geometrical set of the ordered geometrical set
+                        OrderedGeometricalSet1 :
+                
+                         Set OrderedGeometricalSetColl = OrderedGeometricalSet1.OrderedGeometricalSets
 
         :return: OrderedGeometricalSets
         """
@@ -123,16 +123,16 @@ class OrderedGeometricalSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OrderedSketches() As Sketches (Read Only)
-                |     Returns the ordered geometrical set's Sketches collection. These sketches
-                |     are those inside the ordered geometrical set at all
-                |     levels.
-                | 
-                |     Example:
-                |         The following example returns in sketchesCollection the collection of
-                |         sketches of an ordered geometrical set :
-                | 
-                |          Set sketchesCollection = OrderedGeometricalSet1.OrderedSketches
+                Property OrderedSketches() As Sketches (Read Only)
+                    Returns the ordered geometrical set's Sketches collection. These sketches
+                    are those inside the ordered geometrical set at all
+                    levels.
+                
+                    Example:
+                        The following example returns in sketchesCollection the collection of
+                        sketches of an ordered geometrical set :
+                
+                         Set sketchesCollection = OrderedGeometricalSet1.OrderedSketches
 
         :return: Sketches
         """
@@ -144,20 +144,20 @@ class OrderedGeometricalSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub InsertHybridShape(HybridShape iHybridShape)
-                |     Inserts a hybrid shape to the ordered geometrical set.
-                | 
-                |     Parameters:
-                | 
-                |         iHybridShape
-                |             The hybrid shape to insert. 
-                | 
-                |     Example:
-                |         This example inserts the hybrid shape HybridShape1 to the ordered
-                |         geometrical set OrderedGeometricalSet1:
-                | 
-                |          OrderedGeometricalSet1.InsertHybridShape
-                |          (HybridShape1)
+                Sub InsertHybridShape(HybridShape iHybridShape)
+                    Inserts a hybrid shape to the ordered geometrical set.
+                
+                    Parameters:
+                
+                        iHybridShape
+                            The hybrid shape to insert. 
+                
+                    Example:
+                        This example inserts the hybrid shape HybridShape1 to the ordered
+                        geometrical set OrderedGeometricalSet1:
+                
+                         OrderedGeometricalSet1.InsertHybridShape
+                         (HybridShape1)
 
         :param HybridShape i_hybrid_shape:
         :return: None

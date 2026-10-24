@@ -21,20 +21,20 @@ class ConstRadEdgeFillet(EdgeFillet):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             CATPartIDLItf.Fillet
-                |                                 CATPartIDLItf.EdgeFillet
-                |                                     ConstRadEdgeFillet
-                | 
-                | Represents the edge fillet shape with a constant radius.
-                | The resulting shape is made up of edge fillets built with a constant
-                | radius.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            CATPartIDLItf.Fillet
+                                                CATPartIDLItf.EdgeFillet
+                                                    ConstRadEdgeFillet
+                
+                Represents the edge fillet shape with a constant radius.
+                The resulting shape is made up of edge fillets built with a constant
+                radius.
     
     """
 
@@ -48,16 +48,16 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ObjectsToFillet() As References (Read Only)
-                |     Returns the collection of reference elements to be
-                |     filleted.
-                | 
-                |     Example:
-                |         The following example returns in elements the reference elements to be
-                |         filleted of the constant radius edge fillet
-                |         firstCstEdgeFillet:
-                | 
-                |          Set elements = firstCstEdgeFillet.ObjectsToFillet
+                Property ObjectsToFillet() As References (Read Only)
+                    Returns the collection of reference elements to be
+                    filleted.
+                
+                    Example:
+                        The following example returns in elements the reference elements to be
+                        filleted of the constant radius edge fillet
+                        firstCstEdgeFillet:
+                
+                         Set elements = firstCstEdgeFillet.ObjectsToFillet
 
         :return: References
         """
@@ -70,14 +70,14 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Radius() As Length (Read Only)
-                |     Returns the edge fillet constant radius.
-                | 
-                |     Example:
-                |         The following example returns in radius the radius of the constant
-                |         radius edge fillet firstCstEdgeFillet:
-                | 
-                |          Set radius = firstCstEdgeFillet.Radius
+                Property Radius() As Length (Read Only)
+                    Returns the edge fillet constant radius.
+                
+                    Example:
+                        The following example returns in radius the radius of the constant
+                        radius edge fillet firstCstEdgeFillet:
+                
+                         Set radius = firstCstEdgeFillet.Radius
 
         :return: Length
         """
@@ -89,23 +89,23 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddObjectToFillet(Reference iObjectToFillet)
-                |     Adds a new sub-element to be filleted. This sub-element is usually an
-                |     edge.
-                | 
-                |     Parameters:
-                | 
-                |         iObjectToFillet
-                |             The sub-element to be filleted
-                |             The following Boundary object is supported: TriDimFeatEdge.
-                |             
-                | 
-                |     Example:
-                |         The following example adds a new geometrical element element to be
-                |         filleted by the constant radius edge fillet
-                |         firstCstEdgeFillet:
-                | 
-                |          firstCstEdgeFillet.AddObjectToFillet(element)
+                Sub AddObjectToFillet(Reference iObjectToFillet)
+                    Adds a new sub-element to be filleted. This sub-element is usually an
+                    edge.
+                
+                    Parameters:
+                
+                        iObjectToFillet
+                            The sub-element to be filleted
+                            The following Boundary object is supported: TriDimFeatEdge.
+                            
+                
+                    Example:
+                        The following example adds a new geometrical element element to be
+                        filleted by the constant radius edge fillet
+                        firstCstEdgeFillet:
+                
+                         firstCstEdgeFillet.AddObjectToFillet(element)
 
         :param Reference i_object_to_fillet:
         :return: None
@@ -117,14 +117,14 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func SwitchToVarFilletType() As VarRadEdgeFillet
-                |     Changes the type of EdgeFillet to variable EdgeFillet and return
-                |     it.
-                | 
-                |     Parameters:
-                | 
-                |         opVarFillet
-                |             The opVarFillet is the variable edge fillet
+                Func SwitchToVarFilletType() As VarRadEdgeFillet
+                    Changes the type of EdgeFillet to variable EdgeFillet and return
+                    it.
+                
+                    Parameters:
+                
+                        opVarFillet
+                            The opVarFillet is the variable edge fillet
 
         :return: VarRadEdgeFillet
         """
@@ -135,23 +135,23 @@ class ConstRadEdgeFillet(EdgeFillet):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub WithdrawObjectToFillet(Reference iObjectToWithdraw)
-                |     Withdraws a sub-element from those to be filleted. This sub-element is
-                |     usually an edge.
-                | 
-                |     Parameters:
-                | 
-                |         iObjectToWithdraw
-                |             The sub-element to withdraw
-                |             The following Boundary object is supported: TriDimFeatEdge.
-                |             
-                | 
-                |     Example:
-                |         The following example withdraws the geometrical element element from
-                |         those to be filleted by the constant radius edge fillet
-                |         firstCstEdgeFillet:
-                | 
-                |          firstCstEdgeFillet.WithdrawObjectToFillet(element)
+                Sub WithdrawObjectToFillet(Reference iObjectToWithdraw)
+                    Withdraws a sub-element from those to be filleted. This sub-element is
+                    usually an edge.
+                
+                    Parameters:
+                
+                        iObjectToWithdraw
+                            The sub-element to withdraw
+                            The following Boundary object is supported: TriDimFeatEdge.
+                            
+                
+                    Example:
+                        The following example withdraws the geometrical element element from
+                        those to be filleted by the constant radius edge fillet
+                        firstCstEdgeFillet:
+                
+                         firstCstEdgeFillet.WithdrawObjectToFillet(element)
 
         :param Reference i_object_to_withdraw:
         :return: None

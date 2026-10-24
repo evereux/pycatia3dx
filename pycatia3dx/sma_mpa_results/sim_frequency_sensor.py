@@ -16,37 +16,37 @@ class SimFrequencySensor(SimSensorBase):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaResultsIDLItf.SimSensorBase
-                |                         SimFrequencySensor
-                | 
-                | Represents the frequency sensor.
-                | Role:After creating the frequency sensor, one needs to set the frame selection
-                | to the sensor using
-                | the SimSensorBase.FrameSelector()
-                | and update the sensor using and the SimSensorBase.Update()
-                | method.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a Frequency Sensor
-                |  object as following.
-                |  
-                | 
-                |  Dim oFrequencySensor As SimFrequencySensor
-                |  Set oFrequencySensor = ResultsAnalysisCase.CreateFrequencySensor
-                |  Dim oFrameSelection As SimFramesSelection
-                |  Set oFrameSelection = ResultsAnalysisCase.CreateFrameSelector
-                |  oFrameSelection.SymbolicFrameRange = SimLastFrameOfEachStep
-                |  oFrequencySensor.FrameSelector = oFrameSelection
-                |  oFrequencySensor.Update
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaResultsIDLItf.SimSensorBase
+                                        SimFrequencySensor
+                
+                Represents the frequency sensor.
+                Role:After creating the frequency sensor, one needs to set the frame selection
+                to the sensor using
+                the SimSensorBase.FrameSelector()
+                and update the sensor using and the SimSensorBase.Update()
+                method.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a Frequency Sensor
+                 object as following.
+                 
+                
+                 Dim oFrequencySensor As SimFrequencySensor
+                 Set oFrequencySensor = ResultsAnalysisCase.CreateFrequencySensor
+                 Dim oFrameSelection As SimFramesSelection
+                 Set oFrameSelection = ResultsAnalysisCase.CreateFrameSelector
+                 oFrameSelection.SymbolicFrameRange = SimLastFrameOfEachStep
+                 oFrequencySensor.FrameSelector = oFrameSelection
+                 oFrequencySensor.Update
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
 
     """
 

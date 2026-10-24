@@ -17,14 +17,14 @@ class SimNumbering(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimNumbering
-                | 
-                | Represents a numbering specification.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimNumbering
+                
+                Represents a numbering specification.
     
     """
 
@@ -37,15 +37,15 @@ class SimNumbering(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAttributeValue(CATBSTR iAttribute,long oValue)
-                |     Retrieves the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The name of attribute. 
-                |         oValue:
-                |             The value of the attribute.
+                Sub GetAttributeValue(CATBSTR iAttribute,long oValue)
+                    Retrieves the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The name of attribute. 
+                        oValue:
+                            The value of the attribute.
 
         :param str i_attribute:
         :param int o_value:
@@ -58,8 +58,8 @@ class SimNumbering(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitializeNumberingValues()
-                |     Initialize numbering values
+                Sub InitializeNumberingValues()
+                    Initialize numbering values
 
         :return: None
         """
@@ -70,18 +70,18 @@ class SimNumbering(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttribute,long iValue)
-                |     Sets the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The name of attribute. 
-                |         iValue:
-                |             The value of the attribute. 
-                | 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Sub SetAttributeValue(CATBSTR iAttribute,long iValue)
+                    Sets the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The name of attribute. 
+                        iValue:
+                            The value of the attribute. 
+                
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param str i_attribute:
         :param int i_value:

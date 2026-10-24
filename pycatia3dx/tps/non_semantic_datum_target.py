@@ -17,14 +17,14 @@ class NonSemanticDatumTarget(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticDatumTarget
-                | 
-                | Interface Managing Non Semantic Datum Target.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticDatumTarget
+                
+                Interface Managing Non Semantic Datum Target.
     
     """
 
@@ -38,8 +38,8 @@ class NonSemanticDatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LowLabel() As CATBSTR
-                |     Retrieves or sets Lower Label.
+                Property LowLabel() As CATBSTR
+                    Retrieves or sets Lower Label.
 
         :return: str
         """
@@ -60,13 +60,13 @@ class NonSemanticDatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TypeSpecifier() As CATBSTR
-                |     Retrieves or sets the type of specifier.
-                |     Legal values:
-                | 
-                |         None
-                |         Square
-                |         Diameter
+                Property TypeSpecifier() As CATBSTR
+                    Retrieves or sets the type of specifier.
+                    Legal values:
+                
+                        None
+                        Square
+                        Diameter
 
         :return: str
         """
@@ -87,8 +87,8 @@ class NonSemanticDatumTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UpLabel() As CATBSTR
-                |     Retrieves or sets Upper Label. 
+                Property UpLabel() As CATBSTR
+                    Retrieves or sets Upper Label. 
 
         :return: str
         """

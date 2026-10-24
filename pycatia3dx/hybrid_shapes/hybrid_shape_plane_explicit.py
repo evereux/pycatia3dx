@@ -17,20 +17,20 @@ class HybridShapePlaneExplicit(Plane):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneExplicit
-                | 
-                | Represents the hybrid shape Plane explicit feature object.
-                | Role: Declare hybrid shape Plane explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewPlaneDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneExplicit
+                
+                Represents the hybrid shape Plane explicit feature object.
+                Role: Declare hybrid shape Plane explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewPlaneDatum
     
     """
 

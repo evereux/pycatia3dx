@@ -20,14 +20,14 @@ class SsmSpaceConceptRoots(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SsmSpaceConceptRoots
-                | 
-                | Role: This interface is collection of Space Concept root
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SsmSpaceConceptRoots
+                
+                Role: This interface is collection of Space Concept root
     
     """
 
@@ -40,13 +40,13 @@ class SsmSpaceConceptRoots(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SsmSpaceConceptRoot
-                |     Retrieves a Space Concept root
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Space Concept root 
+                Func Item(CATVariant iIndex) As SsmSpaceConceptRoot
+                    Retrieves a Space Concept root
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Space Concept root 
 
         :param CATVariant i_index:
         :return: SsmSpaceConceptRoot

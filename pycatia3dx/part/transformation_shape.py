@@ -17,20 +17,20 @@ class TransformationShape(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         TransformationShape
-                | 
-                | Represents the shapes based on a transformation of another
-                | shape.
-                | It is the base object for mirrors and patterns.
-                | 
-                | See also:
-                |     Mirror, Pattern, RectPattern, CircPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        TransformationShape
+                
+                Represents the shapes based on a transformation of another
+                shape.
+                It is the base object for mirrors and patterns.
+                
+                See also:
+                    Mirror, Pattern, RectPattern, CircPattern
 
     """
 

@@ -17,38 +17,38 @@ class SimDesignImprovementDesignVariable(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDesignImprovementDesignVariable
-                | 
-                | Represents the Design Improvement Design Variable.
-                | Base class for Design Improvement Design Variable.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimDesignImprovementDesignVariable named "Design Space.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDesignVariable As
-                |      SimDesignImprovementDesignVariable
-                |      Set MyDesignVariable = MyFeatures.Item("Design Space.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimDesignImprovementDesignVariable object as following:
-                | 
-                |      ...
-                |      MyDesignVariable  = MyFeatures.Item("Design Space.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDesignImprovementDesignVariable
+                
+                Represents the Design Improvement Design Variable.
+                Base class for Design Improvement Design Variable.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimDesignImprovementDesignVariable named "Design Space.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDesignVariable As
+                     SimDesignImprovementDesignVariable
+                     Set MyDesignVariable = MyFeatures.Item("Design Space.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimDesignImprovementDesignVariable object as following:
+                
+                     ...
+                     MyDesignVariable  = MyFeatures.Item("Design Space.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 

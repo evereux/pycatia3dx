@@ -22,14 +22,14 @@ class StrSfdStiffeners(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrSfdStiffeners
-                | 
-                | Object for SfdStiffeners
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrSfdStiffeners
+                
+                Object for SfdStiffeners
     
     """
 
@@ -42,23 +42,23 @@ class StrSfdStiffeners(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddStiffener() As StrSfdStiffener
-                |     Returns the stiffener created For setting further attributes please refer
-                |     to StrCategoryMngt, StrMaterialMngt, StrSectionMngt, StrProfileLimitMngt
-                |     interfaces.
-                |     Role: Creates a Stiffener with all the data structure.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a Stiffener on a SfdPanel.
-                |              
-                | 
-                |               'Get SfdStiffeners object
-                |               Dim ObjSfdStiffeners As SfdStiffeners
-                |               Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
-                |               'Create a stiffener
-                |               Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
+                Func AddStiffener() As StrSfdStiffener
+                    Returns the stiffener created For setting further attributes please refer
+                    to StrCategoryMngt, StrMaterialMngt, StrSectionMngt, StrProfileLimitMngt
+                    interfaces.
+                    Role: Creates a Stiffener with all the data structure.
+                
+                    Example:
+                
+                
+                             This example creates a Stiffener on a SfdPanel.
+                             
+                
+                              'Get SfdStiffeners object
+                              Dim ObjSfdStiffeners As SfdStiffeners
+                              Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
+                              'Create a stiffener
+                              Set ObjSfdStiffener = ObjSfdStiffeners.AddStiffener
 
         :return: StrSfdStiffener
         """
@@ -69,24 +69,24 @@ class StrSfdStiffeners(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddStiffenerOnFreeEdge() As StrSfdStiffenerOnFreeEdge
-                |     Returns the created StiffenerOnFreeEdge For setting further attributes
-                |     please refer to StrCategoryMngt, StrMaterialMngt, StrSectionMngt,
-                |     StrProfileLimitMngt interfaces.
-                |     Role: Create a StiffenerOnFreeEdge.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a StiffenerOnFreeEdge on a
-                |              SfdPanel.
-                |              
-                | 
-                |               'Get SfdStiffeners object
-                |               Dim ObjSfdStiffeners As SfdStiffeners
-                |               Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
-                |               'Create a stiffener on free edge
-                |               Set ObjSfdStiffenerOnFreeEdge = ObjSfdStiffeners.AddStiffenerOnFreeEdge
+                Func AddStiffenerOnFreeEdge() As StrSfdStiffenerOnFreeEdge
+                    Returns the created StiffenerOnFreeEdge For setting further attributes
+                    please refer to StrCategoryMngt, StrMaterialMngt, StrSectionMngt,
+                    StrProfileLimitMngt interfaces.
+                    Role: Create a StiffenerOnFreeEdge.
+                
+                    Example:
+                
+                
+                             This example creates a StiffenerOnFreeEdge on a
+                             SfdPanel.
+                             
+                
+                              'Get SfdStiffeners object
+                              Dim ObjSfdStiffeners As SfdStiffeners
+                              Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
+                              'Create a stiffener on free edge
+                              Set ObjSfdStiffenerOnFreeEdge = ObjSfdStiffeners.AddStiffenerOnFreeEdge
 
         :return: StrSfdStiffenerOnFreeEdge
         """
@@ -97,24 +97,24 @@ class StrSfdStiffeners(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StructureProfile
-                |     Returns a SfdStiffener or SfdStiffenerOnFreeEdge
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of SfdStiffener or SfdStiffenerOnFreeEdge
-                |             
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first item from the list of
-                |              stiffeners/SFEs.
-                |              
-                | 
-                |               Dim ObjSfdStiffener As SfdProfile
-                |               Set ObjSfdStiffener = ObjSfdStiffenerList.Item(1)
+                Func Item(CATVariant iIndex) As StructureProfile
+                    Returns a SfdStiffener or SfdStiffenerOnFreeEdge
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of SfdStiffener or SfdStiffenerOnFreeEdge
+                            
+                
+                    Example:
+                
+                
+                             This example retrieves  the first item from the list of
+                             stiffeners/SFEs.
+                             
+                
+                              Dim ObjSfdStiffener As SfdProfile
+                              Set ObjSfdStiffener = ObjSfdStiffenerList.Item(1)
 
         :param CATVariant i_index:
         :return: StructureProfile
@@ -126,13 +126,13 @@ class StrSfdStiffeners(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StructureProfile iStiffener)
-                |     Removes a Stiffener of this Panel.
-                | 
-                |     Parameters:
-                | 
-                |         iStiffener
-                |             Stiffener. 
+                Sub Remove(StructureProfile iStiffener)
+                    Removes a Stiffener of this Panel.
+                
+                    Parameters:
+                
+                        iStiffener
+                            Stiffener. 
 
         :param StructureProfile i_stiffener:
         :return: None

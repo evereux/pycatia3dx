@@ -22,21 +22,21 @@ class PLMProductService(Service):
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMProductService
-                | 
-                | Interface representing service to manage VPM Editor content.
-                | 
-                | PLMProductService object can be retrieved from Editor object thanks to the
-                | GetService method with the string "PLMProductService" as
-                | input.
-                | The get_EditedContent method implementation returns the root Product of the
-                | editor.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMProductService
+                
+                Interface representing service to manage VPM Editor content.
+                
+                PLMProductService object can be retrieved from Editor object thanks to the
+                GetService method with the string "PLMProductService" as
+                input.
+                The get_EditedContent method implementation returns the root Product of the
+                editor.
     
     """
 
@@ -50,8 +50,8 @@ class PLMProductService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Property EditedContent() As PLMEntities (Read Only)
-                |     Returns Root entities of active Editor, first of which is the root Product.
+                Property EditedContent() As PLMEntities (Read Only)
+                    Returns Root entities of active Editor, first of which is the root Product.
 
         :return: PLMEntities
         """
@@ -64,8 +64,8 @@ class PLMProductService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917)
-                | Property RootOccurrence() As VPMRootOccurrence (Read Only)
-                |     Returns the Root Product Occurrence being edited in current VPM Editor.
+                Property RootOccurrence() As VPMRootOccurrence (Read Only)
+                    Returns the Root Product Occurrence being edited in current VPM Editor.
 
         :return: VPMRootOccurrence
         """
@@ -78,24 +78,24 @@ class PLMProductService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-01-04 12:20:59.068917))
-                | Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance
-                | iVPMRepInstance,Reference iCATIAReference) As AnyObject
-                |     Creates a Link memory object to be used later for persistent
-                |     Link.
-                | 
-                |     Parameters:
-                | 
-                |         iPLMOccurrence
-                |             The path to reach the target. It is optional, and must be a
-                |             CATIAVPMOccurrence ou CATIAVPMRootOccurrence. 
-                |         iVPMRepInstance
-                |             The Product Representation Reference containing the target. It is
-                |             optional. 
-                |         iCATIAReference
-                |             The target object. It is optional. 
-                | 
-                |     Returns:
-                |         The CATIABase to be used to create a link.
+                Func ComposeLink(PLMOccurrence iPLMOccurrence,VPMRepInstance
+                iVPMRepInstance,Reference iCATIAReference) As AnyObject
+                    Creates a Link memory object to be used later for persistent
+                    Link.
+                
+                    Parameters:
+                
+                        iPLMOccurrence
+                            The path to reach the target. It is optional, and must be a
+                            CATIAVPMOccurrence ou CATIAVPMRootOccurrence. 
+                        iVPMRepInstance
+                            The Product Representation Reference containing the target. It is
+                            optional. 
+                        iCATIAReference
+                            The target object. It is optional. 
+                
+                    Returns:
+                        The CATIABase to be used to create a link.
 
         :param PLMOccurrence i_plm_occurrence:
         :param VPMRepInstance i_vpm_rep_instance:

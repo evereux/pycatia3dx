@@ -18,12 +18,12 @@ class SpotDrOperationFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrOperationFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrOperationFactory
 
     
     """
@@ -37,17 +37,17 @@ class SpotDrOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateOperation(CATBSTR iType,AnyObject iRefAct) As
-                | SpotDrOperation
-                |     This method creates a DrillRivet operation
-                | 
-                |     Parameters:
-                | 
-                |         oDrillRivetOperation,
-                |             newly created DrillRivet operation 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func CreateOperation(CATBSTR iType,AnyObject iRefAct) As
+                SpotDrOperation
+                    This method creates a DrillRivet operation
+                
+                    Parameters:
+                
+                        oDrillRivetOperation,
+                            newly created DrillRivet operation 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_type:
         :param AnyObject i_ref_act:
@@ -60,16 +60,16 @@ class SpotDrOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteOperation(SpotDrOperation iDrillRivetOperation)
-                |     This method deletes the passed DrillRivet operation
-                | 
-                |     Parameters:
-                | 
-                |         iDrillRivetOperation,
-                |             DrillRivet operation to be deleted. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DeleteOperation(SpotDrOperation iDrillRivetOperation)
+                    This method deletes the passed DrillRivet operation
+                
+                    Parameters:
+                
+                        iDrillRivetOperation,
+                            DrillRivet operation to be deleted. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param SpotDrOperation i_drill_rivet_operation:
         :return: None

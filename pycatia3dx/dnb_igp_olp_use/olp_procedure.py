@@ -27,17 +27,17 @@ class OLPProcedure(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpProcedure
-                | 
-                | Represents a robot task or other procedure.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpProcedure
+                
+                Represents a robot task or other procedure.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -51,10 +51,10 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AST() As OlpAstNode
-                |     The AST corresponding to this procedure.
-                |     Used to identify which portion of the robot program(s) correspond to this
-                |     procedure.
+                Property AST() As OlpAstNode
+                    The AST corresponding to this procedure.
+                    Used to identify which portion of the robot program(s) correspond to this
+                    procedure.
 
         :return: OLPAstNode
         """
@@ -75,9 +75,9 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Header() As CATBSTR
-                |     The task header.
-                |     This is used to store any header from an uploaded program.
+                Property Header() As CATBSTR
+                    The task header.
+                    This is used to store any header from an uploaded program.
 
         :return: str
         """
@@ -98,22 +98,22 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     The instructions contained in the task.
-                |     The collection of instructions is in execution order. The logic of the task
-                |     is represented as a tree. For example an "IF" instruction contains 2 sub-lists
-                |     of instructions: one for the main branch and one for the else branch. In the
-                |     following task, Instructions would contain 3 instructions: RobotMotion.1, the
-                |     "if", and RobotMotion.4
-                | 
-                |         Task
-                |             RobotMotion.1
-                |             if (in1=TRUE)
-                |                 RobotMotion.2
-                |                 out1=TRUE
-                |             else
-                |                 RobotMotion.3
-                |             RobotMotion.4
+                Property Instructions() As OlpInstructions (Read Only)
+                    The instructions contained in the task.
+                    The collection of instructions is in execution order. The logic of the task
+                    is represented as a tree. For example an "IF" instruction contains 2 sub-lists
+                    of instructions: one for the main branch and one for the else branch. In the
+                    following task, Instructions would contain 3 instructions: RobotMotion.1, the
+                    "if", and RobotMotion.4
+                
+                        Task
+                            RobotMotion.1
+                            if (in1=TRUE)
+                                RobotMotion.2
+                                out1=TRUE
+                            else
+                                RobotMotion.3
+                            RobotMotion.4
 
         :return: OLPInstructions
         """
@@ -126,9 +126,9 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LocalVariables() As OlpVariables (Read Only)
-                |     The variables, IO, and constants defined in this
-                |     procedure.
+                Property LocalVariables() As OlpVariables (Read Only)
+                    The variables, IO, and constants defined in this
+                    procedure.
 
         :return: OLPVariables
         """
@@ -141,8 +141,8 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionGroups() As OlpMotionGroups (Read Only)
-                |     The motion groups that are controlled by this task.
+                Property MotionGroups() As OlpMotionGroups (Read Only)
+                    The motion groups that are controlled by this task.
 
         :return: OLPMotionGroups
         """
@@ -155,11 +155,11 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NRLName() As CATBSTR
-                |     The name of the native robot langage procedure.
-                |     Translators should set this during download to enable mapping of simulation
-                |     tasks to the corresponding native program. If unset, this is inferred from the
-                |     OlpIDFixer if used for fixing the NRL program name.
+                Property NRLName() As CATBSTR
+                    The name of the native robot langage procedure.
+                    Translators should set this during download to enable mapping of simulation
+                    tasks to the corresponding native program. If unset, this is inferred from the
+                    OlpIDFixer if used for fixing the NRL program name.
 
         :return: str
         """
@@ -180,9 +180,9 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Profiles() As CATSafeArrayVariant (Read Only)
-                |     Get all applicative and user profiles used for this
-                |     procedure.
+                Property Profiles() As CATSafeArrayVariant (Read Only)
+                    Get all applicative and user profiles used for this
+                    procedure.
 
         :return: tuple
         """
@@ -195,10 +195,10 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProgramID() As CATBSTR
-                |     The program ID.
-                |     This is a string value stored on the task. If a BCD Number is used, this
-                |     property should be used to store it.
+                Property ProgramID() As CATBSTR
+                    The program ID.
+                    This is a string value stored on the task. If a BCD Number is used, this
+                    property should be used to store it.
 
         :return: str
         """
@@ -219,10 +219,10 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProgramType() As CATBSTR
-                |     The program type.
-                |     This is stored as a string value, but functionality is limited to valid
-                |     values. A list of valid values can be retrieved with GetValidTypes.
+                Property ProgramType() As CATBSTR
+                    The program type.
+                    This is stored as a string value, but functionality is limited to valid
+                    values. A list of valid values can be retrieved with GetValidTypes.
 
         :return: str
         """
@@ -243,10 +243,10 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TaskDescription() As CATBSTR
-                |     The task description.
-                |     This is used to store any task information from an uploaded program to be
-                |     displayed as the task's description.
+                Property TaskDescription() As CATBSTR
+                    The task description.
+                    This is used to store any task information from an uploaded program to be
+                    displayed as the task's description.
 
         :return: str
         """
@@ -267,10 +267,10 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TemplateFileName() As CATBSTR
-                |     The template file name.
-                |     This is used to store the file name (without a path) to the file to be used
-                |     for a template download.
+                Property TemplateFileName() As CATBSTR
+                    The template file name.
+                    This is used to store the file name (without a path) to the file to be used
+                    for a template download.
 
         :return: str
         """
@@ -290,17 +290,17 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddProfile(RscApplicativeProfile iProfile)
-                |     Add an applicative or user profile.
-                | 
-                |     Any profile instances of this type already set on this procedure are
-                |     removed, so that only 1 instance of a given profile type is ever set on a
-                |     procedure.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The profile instance to add.
+                Sub AddProfile(RscApplicativeProfile iProfile)
+                    Add an applicative or user profile.
+                
+                    Any profile instances of this type already set on this procedure are
+                    removed, so that only 1 instance of a given profile type is ever set on a
+                    procedure.
+                
+                    Parameters:
+                
+                        iProfile
+                            The profile instance to add.
 
         :param RscApplicativeProfile i_profile:
         :return: None
@@ -312,19 +312,19 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
-                | CATVariant
-                |     Get applicative profile parameter value.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
+                CATVariant
+                    Get applicative profile parameter value.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -337,18 +337,18 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterNames(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get all applicative and user profile parameter names for a profile
-                |     type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type. 
-                | 
-                |     Returns:
-                |         The list of parameter names as strings.
+                Func GetParameterNames(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get all applicative and user profile parameter names for a profile
+                    type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type. 
+                
+                    Returns:
+                        The list of parameter names as strings.
 
         :param str i_profile_type:
         :return: tuple
@@ -360,18 +360,18 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfile(CATBSTR iProfileType) As RscApplicativeProfile
-                |     Get the applicative or user profile of a specific type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The profile group type as returned by
-                |             RscApplicativeProfilesGroup.ProfileType 
-                | 
-                |     Returns:
-                |         The profile. If no profile of this type is set then this value is NULL
-                |         (or Nothing) but function succeeds.
+                Func GetProfile(CATBSTR iProfileType) As RscApplicativeProfile
+                    Get the applicative or user profile of a specific type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The profile group type as returned by
+                            RscApplicativeProfilesGroup.ProfileType 
+                
+                    Returns:
+                        The profile. If no profile of this type is set then this value is NULL
+                        (or Nothing) but function succeeds.
 
         :param str i_profile_type:
         :return: RscApplicativeProfile
@@ -383,16 +383,16 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileName(CATBSTR iProfileType) As CATBSTR
-                |     Get applicative profile instance name.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         The profile instance name
+                Func GetProfileName(CATBSTR iProfileType) As CATBSTR
+                    Get applicative profile instance name.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        The profile instance name
 
         :param str i_profile_type:
         :return: str
@@ -404,16 +404,16 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
-                |     Get a applicative or user profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The type of profile to return. 
-                | 
-                |     Returns:
-                |         The profile. Only 1 instance of a profile can be assigned to a motion.
+                Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
+                    Get a applicative or user profile.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The type of profile to return. 
+                
+                    Returns:
+                        The profile. Only 1 instance of a profile can be assigned to a motion.
 
         :param str i_profile_type:
         :return: OLPProfile
@@ -425,9 +425,9 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValidProgramTypes() As CATSafeArrayVariant
-                |     Get the list of valid Program Types for ProgramType. This will return a
-                |     list of strings.
+                Func GetValidProgramTypes() As CATSafeArrayVariant
+                    Get the list of valid Program Types for ProgramType. This will return a
+                    list of strings.
 
         :return: tuple
         """
@@ -438,16 +438,16 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsProfileSet(CATBSTR iProfileType) As boolean
-                |     Identify if profile type is set.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         TRUE if profile has be set.
+                Func IsProfileSet(CATBSTR iProfileType) As boolean
+                    Identify if profile type is set.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        TRUE if profile has be set.
 
         :param str i_profile_type:
         :return: bool
@@ -459,20 +459,20 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
-                | iValue,boolean iMatch)
-                |     Set applicative profile parameter value.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value. 
-                |         iMatch
-                |             If TRUE use parameter to find existing applicative profile
+                Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
+                iValue,boolean iMatch)
+                    Set applicative profile parameter value.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                        iValue
+                            The parameter value. 
+                        iMatch
+                            If TRUE use parameter to find existing applicative profile
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -487,18 +487,18 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
-                | iMatch)
-                |     Get applicative profile instance name.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iProfileName
-                |             The profile instance name 
-                |         iMatch
-                |             If TRUE use name to find existing applicative profile
+                Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
+                iMatch)
+                    Get applicative profile instance name.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iProfileName
+                            The profile instance name 
+                        iMatch
+                            If TRUE use name to find existing applicative profile
 
         :param str i_profile_type:
         :param str i_profile_name:
@@ -512,13 +512,13 @@ class OLPProcedure(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfileOlp(OlpProfile iProfile)
-                |     Set a applicative or user profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The profile. 
+                Sub SetProfileOlp(OlpProfile iProfile)
+                    Set a applicative or user profile.
+                
+                    Parameters:
+                
+                        iProfile
+                            The profile. 
 
         :param OLPProfile i_profile:
         :return: None

@@ -17,53 +17,53 @@ class SimContactVirtualPart(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimContactVirtualPart
-                | 
-                | Represents the Virtual Contact object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimContactVirtualPart as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyContactVirtualPart As SimContactVirtualPart
-                |      Set MyContactVirtualPart = MyAbstractions.Add("SimContactVirtualPart")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimContactVirtualPart
-                |     named "Contact Virtual Part.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyContactVirtualPart As SimContactVirtualPart
-                |      Set MyContactVirtualPart = MyAbstractions.Item("Contact Virtual Part.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimContactVirtualPart as following:
-                | 
-                |      ...
-                |      myContactVirtualPart = myAbstractions.Add("SimContactVirtualPart")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimContactVirtualPart named "Contact Virtual Part.1" as
-                |     following:
-                | 
-                |      ...
-                |      myContactVirtualPart= myAbstractions.Item("Contact Virtual
-                |      Part.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimContactVirtualPart
+                
+                Represents the Virtual Contact object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimContactVirtualPart as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyContactVirtualPart As SimContactVirtualPart
+                     Set MyContactVirtualPart = MyAbstractions.Add("SimContactVirtualPart")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimContactVirtualPart
+                    named "Contact Virtual Part.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyContactVirtualPart As SimContactVirtualPart
+                     Set MyContactVirtualPart = MyAbstractions.Item("Contact Virtual Part.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimContactVirtualPart as following:
+                
+                     ...
+                     myContactVirtualPart = myAbstractions.Add("SimContactVirtualPart")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimContactVirtualPart named "Contact Virtual Part.1" as
+                    following:
+                
+                     ...
+                     myContactVirtualPart= myAbstractions.Item("Contact Virtual
+                     Part.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -77,9 +77,9 @@ class SimContactVirtualPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ContactVirtualPartReferencePointInputMode() As
-                | SimContactVirtualPartReferencePointInputMode
-                |     Returns or sets the Compatible Shell distribution method.
+                Property ContactVirtualPartReferencePointInputMode() As
+                SimContactVirtualPartReferencePointInputMode
+                    Returns or sets the Compatible Shell distribution method.
 
         :return: int
         """
@@ -100,9 +100,9 @@ class SimContactVirtualPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialClearance() As double
-                |     Initial Clearance between the model and the contact virtual part. Quantity:
-                |     LENGTH, units: m
+                Property InitialClearance() As double
+                    Initial Clearance between the model and the contact virtual part. Quantity:
+                    LENGTH, units: m
 
         :return: float
         """
@@ -123,8 +123,8 @@ class SimContactVirtualPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePoint() As SimPoint (Read Only)
-                |     Returns the reference point.
+                Property ReferencePoint() As SimPoint (Read Only)
+                    Returns the reference point.
 
         :return: SimPoint
         """
@@ -137,33 +137,33 @@ class SimContactVirtualPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """

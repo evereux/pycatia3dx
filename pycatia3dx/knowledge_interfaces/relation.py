@@ -22,22 +22,22 @@ class Relation(KnowledgeActivateObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeObject
-                |                        
-                |                        KnowledgeIDLItf.KnowledgeActivateObject
-                |                             Relation
-                | 
-                | Represents the relation object.
-                | It is an abstract object which is not intended to be created as such, but from
-                | which the check, design table, formula, rule, objects derive.
-                | 
-                | See also:
-                |     Check, DesignTable, Formula, Rule
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeObject
+                                       
+                                       KnowledgeIDLItf.KnowledgeActivateObject
+                                            Relation
+                
+                Represents the relation object.
+                It is an abstract object which is not intended to be created as such, but from
+                which the check, design table, formula, rule, objects derive.
+                
+                See also:
+                    Check, DesignTable, Formula, Rule
     
     """
 
@@ -51,17 +51,17 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Comment() As CATBSTR
-                |     Returns or sets the comment associated with the relation. The comment
-                |     explains the relation's purpose. It is passed as the second input argument of
-                |     the relation creation methods of the Relations collection.
-                | 
-                |     Example:
-                |         This example retrieves the maximummass relation comment and displays it
-                |         in a message box:
-                | 
-                |          relcomment = maximummass.Comment
-                |          MsgBox "maximummass comment : " & relcomment
+                Property Comment() As CATBSTR
+                    Returns or sets the comment associated with the relation. The comment
+                    explains the relation's purpose. It is passed as the second input argument of
+                    the relation creation methods of the Relations collection.
+                
+                    Example:
+                        This example retrieves the maximummass relation comment and displays it
+                        in a message box:
+                
+                         relcomment = maximummass.Comment
+                         MsgBox "maximummass comment : " & relcomment
 
         :return: str
         """
@@ -82,15 +82,15 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Context() As AnyObject (Read Only)
-                |     Returns the context of the parameter.
-                |     The context of a parameter can be a mechanical part, a product, a drafting,
-                |     or a process root, depending on where the parameter is.
-                | 
-                |     Returns:
-                |         The context 
-                |     See also:
-                |         Part, CATIAProduct, CATIADrawing, CATIAProcess
+                Property Context() As AnyObject (Read Only)
+                    Returns the context of the parameter.
+                    The context of a parameter can be a mechanical part, a product, a drafting,
+                    or a process root, depending on where the parameter is.
+                
+                    Returns:
+                        The context 
+                    See also:
+                        Part, CATIAProduct, CATIADrawing, CATIAProcess
 
         :return: AnyObject
         """
@@ -103,8 +103,8 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property NbInParameters() As long (Read Only)
-                |     Returns the number of input parameters of the relation.
+                Property NbInParameters() As long (Read Only)
+                    Returns the number of input parameters of the relation.
 
         :return: int
         """
@@ -117,10 +117,10 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property NbOutParameters() As long (Read Only)
-                |     Returns the number of output parameters of the relation.
-                |     The output parameters of the relation are those constrained by the
-                |     relation.
+                Property NbOutParameters() As long (Read Only)
+                    Returns the number of output parameters of the relation.
+                    The output parameters of the relation are those constrained by the
+                    relation.
 
         :return: int
         """
@@ -133,19 +133,19 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Value() As CATBSTR (Read Only)
-                |     Returns the definition of the relation. It returns an empty string if the
-                |     relation is not an expressional one (for example for a design table). The
-                |     definition is the body to be executed to compute one or several parameters. It
-                |     is passed as the last input argument of the relation creation methods of the
-                |     Relations collection.
-                | 
-                |     Example:
-                |         This example retrieves the maximummass relation definition and displays
-                |         it in a message box:
-                | 
-                |          reldef = maximummass.Value
-                |          MsgBox "maximummass relation is defined as " & reldef
+                Property Value() As CATBSTR (Read Only)
+                    Returns the definition of the relation. It returns an empty string if the
+                    relation is not an expressional one (for example for a design table). The
+                    definition is the body to be executed to compute one or several parameters. It
+                    is passed as the last input argument of the relation creation methods of the
+                    Relations collection.
+                
+                    Example:
+                        This example retrieves the maximummass relation definition and displays
+                        it in a message box:
+                
+                         reldef = maximummass.Value
+                         MsgBox "maximummass relation is defined as " & reldef
 
         :return: str
         """
@@ -157,32 +157,32 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetInParameter(long iIndex) As AnyObject
-                |     Returns an input parameter of the relation.
-                |     This method can return an object that is not a parameter, that is, you
-                |     cannot handle it as a Parameter object. For example, in a relation
-                |     like
-                | 
-                |     Area.1 = area(PartBody\\Pad.1\\Sketch.1)
-                | 
-                |     the object PartBody\\Pad.1\\Sketch.1 is a sketch and not a
-                |     parameter.
-                |     To use such an object, call the Visual Basic TypeName function to retrieve
-                |     its real type.
-                | 
-                |      Dim objectType
-                |      objectType = TypeName(oParameter)
-                |      If objectType = "Parameter" Then
-                |      ...
-                |      
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                | 
-                |     Returns:
-                |         The searched input parameter index in the relation.
-                |         Legal values: 1 ≤ iIndex ≤ NbInParameters
+                Func GetInParameter(long iIndex) As AnyObject
+                    Returns an input parameter of the relation.
+                    This method can return an object that is not a parameter, that is, you
+                    cannot handle it as a Parameter object. For example, in a relation
+                    like
+                
+                    Area.1 = area(PartBody\\Pad.1\\Sketch.1)
+                
+                    the object PartBody\\Pad.1\\Sketch.1 is a sketch and not a
+                    parameter.
+                    To use such an object, call the Visual Basic TypeName function to retrieve
+                    its real type.
+                
+                     Dim objectType
+                     objectType = TypeName(oParameter)
+                     If objectType = "Parameter" Then
+                     ...
+                     
+                
+                    Parameters:
+                
+                        iIndex
+                
+                    Returns:
+                        The searched input parameter index in the relation.
+                        Legal values: 1 ≤ iIndex ≤ NbInParameters
 
         :param int i_index:
         :return: AnyObject
@@ -194,19 +194,19 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetOutParameter(long iIndex) As Parameter
-                |     Returns an output parameter of the relation. Use TypeName method on the
-                |     returned parameter to get the real type of the parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The searched input parameter index in the
-                |             relation.
-                |             Legal values: 1 ≤ iIndex ≤ NbOutParameters 
-                | 
-                |     Returns:
-                |         the output parameter
+                Func GetOutParameter(long iIndex) As Parameter
+                    Returns an output parameter of the relation. Use TypeName method on the
+                    returned parameter to get the real type of the parameter.
+                
+                    Parameters:
+                
+                        iIndex
+                            The searched input parameter index in the
+                            relation.
+                            Legal values: 1 ≤ iIndex ≤ NbOutParameters 
+                
+                    Returns:
+                        the output parameter
 
         :param int i_index:
         :return: Parameter
@@ -219,14 +219,14 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Modify(CATBSTR iValue)
-                |     Modifies the relation.
-                | 
-                |     Parameters:
-                | 
-                |         iValue
-                |             The new relation value Except on formula, this method requires the
-                |             KWA license (Knowledge Advisor).
+                Sub Modify(CATBSTR iValue)
+                    Modifies the relation.
+                
+                    Parameters:
+                
+                        iValue
+                            The new relation value Except on formula, this method requires the
+                            KWA license (Knowledge Advisor).
 
         :param str i_value:
         :return: None
@@ -238,13 +238,13 @@ class Relation(KnowledgeActivateObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Rename(CATBSTR iName)
-                |     Renames the relation.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The new relation name
+                Sub Rename(CATBSTR iName)
+                    Renames the relation.
+                
+                    Parameters:
+                
+                        iName
+                            The new relation name
 
         :param str i_name:
         :return: None

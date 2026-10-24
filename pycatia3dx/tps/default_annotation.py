@@ -17,16 +17,16 @@ class DefaultAnnotation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DefaultAnnotation
-                | 
-                | This interface is used to get information about default
-                | annotation.
-                | Ther is two kinds of default annotation : - with a manual selection - with a selection automatic
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DefaultAnnotation
+                
+                This interface is used to get information about default
+                annotation.
+                Ther is two kinds of default annotation : - with a manual selection - with a selection automatic
     
     """
 
@@ -40,14 +40,14 @@ class DefaultAnnotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LinkWiGeomType() As CATBSTR (Read Only)
-                |     Get the type of link between the default annotation and the geometry.
-                |     Return E_FAIL if the annotation is not a default one.
-                | 
-                |     Parameters:
-                | 
-                |         oLinkWiGeom
-                |             Type of link.
+                Property LinkWiGeomType() As CATBSTR (Read Only)
+                    Get the type of link between the default annotation and the geometry.
+                    Return E_FAIL if the annotation is not a default one.
+                
+                    Parameters:
+                
+                        oLinkWiGeom
+                            Type of link.
 
         :return: str
         """
@@ -60,14 +60,14 @@ class DefaultAnnotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SearchAlgoType() As CATBSTR (Read Only)
-                |     Get the type of search algo to find geometry on which the annotation apply
-                |     to. Return E_FAIL if the annotation is not a default one.
-                | 
-                |     Parameters:
-                | 
-                |         oAlgo
-                |             Type of algo.
+                Property SearchAlgoType() As CATBSTR (Read Only)
+                    Get the type of search algo to find geometry on which the annotation apply
+                    to. Return E_FAIL if the annotation is not a default one.
+                
+                    Parameters:
+                
+                        oAlgo
+                            Type of algo.
 
         :return: str
         """
@@ -79,14 +79,14 @@ class DefaultAnnotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsInAutomaticSearchMode() As boolean
-                |     Get the type of search algo Return E_FAIL if the annotation is not a
-                |     default one.
-                | 
-                |     Parameters:
-                | 
-                |         oIsAutoMode
-                |             oIsAutoMode = TRUE if Automatic mode 
+                Func IsInAutomaticSearchMode() As boolean
+                    Get the type of search algo Return E_FAIL if the annotation is not a
+                    default one.
+                
+                    Parameters:
+                
+                        oIsAutoMode
+                            oIsAutoMode = TRUE if Automatic mode 
 
         :return: bool
         """

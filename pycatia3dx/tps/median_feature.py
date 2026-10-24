@@ -17,15 +17,15 @@ class MedianFeature(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MedianFeature
-                | 
-                | Interface for accessing Median Feature modifier on a Semantic GDT (ISO Standard
-                | only).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MedianFeature
+                
+                Interface for accessing Median Feature modifier on a Semantic GDT (ISO Standard
+                only).
     
     """
 
@@ -39,14 +39,14 @@ class MedianFeature(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR (Read Only)
-                |     Retrieves Median Feature modifier display.
-                |     Empty string is returned if modifier not applied; this could suggest that
-                |     either:
-                |     _ Median Feature modifier display has been formally switched
-                |     off,
-                |     _ Median Feature is not displayed if Dimension of Visualization is existing
-                |     for given GDT. 
+                Property Modifier() As CATBSTR (Read Only)
+                    Retrieves Median Feature modifier display.
+                    Empty string is returned if modifier not applied; this could suggest that
+                    either:
+                    _ Median Feature modifier display has been formally switched
+                    off,
+                    _ Median Feature is not displayed if Dimension of Visualization is existing
+                    for given GDT. 
 
         :return: str
         """

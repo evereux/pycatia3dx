@@ -18,16 +18,16 @@ class MeasureBetween(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MeasureBetween
-                | 
-                | Represents the MeasureBetween.
-                | The MeasureBetween is the measurement between two set of the selections of the
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MeasureBetween
+                
+                Represents the MeasureBetween.
+                The MeasureBetween is the measurement between two set of the selections of the
+                object.
     
     """
 
@@ -40,19 +40,19 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Compute()
-                |     To calculate the measure between.
-                | 
-                |     Example:
-                | 
-                |            This example Set the direction of MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              theMeasureBetween.Compute
+                Sub Compute()
+                    To calculate the measure between.
+                
+                    Example:
+                
+                           This example Set the direction of MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             theMeasureBetween.Compute
 
         :return: None
         """
@@ -63,22 +63,22 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAngle() As double
-                |     Get the angle result from the measure between.
-                | 
-                |     Returns:
-                |         The angle. It should be get after the "Compute" 
-                |     Example:
-                | 
-                |            This example Set the direction of MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim result As Double
-                |              result = theMeasureBetween.GetAngle
+                Func GetAngle() As double
+                    Get the angle result from the measure between.
+                
+                    Returns:
+                        The angle. It should be get after the "Compute" 
+                    Example:
+                
+                           This example Set the direction of MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim result As Double
+                             result = theMeasureBetween.GetAngle
 
         :return: float
         """
@@ -89,55 +89,55 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
-                | oAxisPositioning)
-                |     Get the position of the axis system of the object with respect to the
-                |     absolute axis system. This position corresponds to the product positioning
-                |     matrix. All coordinates are internally computed using the axis system of the
-                |     object. To provide these coordinates with respect to absolute axis system, it
-                |     is required to know the position of the axis system of the
-                |     object.
+                Sub GetAxisSystemFromMeasure(CATSafeArrayVariant
+                oAxisPositioning)
+                    Get the position of the axis system of the object with respect to the
+                    absolute axis system. This position corresponds to the product positioning
+                    matrix. All coordinates are internally computed using the axis system of the
+                    object. To provide these coordinates with respect to absolute axis system, it
+                    is required to know the position of the axis system of the
+                    object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ioAxisPosition
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
+                        ioAxisPosition
+                            The information of the axis system with respect to the product
+                            coordinate system:
                 |
-                |                 iAxisPositioning(0) is the X coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(1) is the Y coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(2) is the Z coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(3) is the X coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(4) is the Y coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(5) is the Z coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(6) is the X coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(7) is the Y coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(8) is the Z coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(9) is the X coordinate of the third direction
-                |                 of the axis system
-                |                 iAxisPositioning(10) is the Y coordinate of the third direction
-                |                 of the axis system
-                |                 iAxisPositioning(11) is the Z coordinate of the third direction
-                |                 of the axis system
+                                iAxisPositioning(0) is the X coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(1) is the Y coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(2) is the Z coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(3) is the X coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(4) is the Y coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(5) is the Z coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(6) is the X coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(7) is the Y coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(8) is the Z coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(9) is the X coordinate of the third direction
+                                of the axis system
+                                iAxisPositioning(10) is the Y coordinate of the third direction
+                                of the axis system
+                                iAxisPositioning(11) is the Z coordinate of the third direction
+                                of the axis system
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example get the axis system of theMeasureBetween
-                |            computation.
+                           This example get the axis system of theMeasureBetween
+                           computation.
                 |
                 |
-                |              Dim theAxisPositioning(11)
-                |              theMeasureBetween.GetAxisSystemFromMeasure
-                |              theAxisPositioning
+                             Dim theAxisPositioning(11)
+                             theMeasureBetween.GetAxisSystemFromMeasure
+                             theAxisPositioning
 
         :return: tuple
         """
@@ -164,33 +164,33 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetBandAnalysisParameters(double oMinDistance,double oMaxDistance,double
-                | oAccuracy)
-                |     Get the Band Analysis Parameters.
-                | 
-                |     Parameters:
-                | 
-                |         oMinDistance
-                |             The minimum distance 
-                |         oMaxDistance
-                |             The maximum 
-                |         oAccuracy
-                |             The accuracy 
-                | 
-                |     Example:
-                | 
-                |            This example Get the Band Analysis Parameters of
-                |            MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              Dim theMinDistance As Double
-                |              Dim theMaxDistance As Double
-                |              Dim theAccuracy As Double
-                |              theMeasureBetween.GetBandAnalysisParameters theMinDistance
-                |              theMaxDistance theAccuracy
+                Sub GetBandAnalysisParameters(double oMinDistance,double oMaxDistance,double
+                oAccuracy)
+                    Get the Band Analysis Parameters.
+                
+                    Parameters:
+                
+                        oMinDistance
+                            The minimum distance 
+                        oMaxDistance
+                            The maximum 
+                        oAccuracy
+                            The accuracy 
+                
+                    Example:
+                
+                           This example Get the Band Analysis Parameters of
+                           MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             Dim theMinDistance As Double
+                             Dim theMaxDistance As Double
+                             Dim theAccuracy As Double
+                             theMeasureBetween.GetBandAnalysisParameters theMinDistance
+                             theMaxDistance theAccuracy
 
         :return: tuple[float, float, float]
         """
@@ -201,26 +201,26 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetComponents(CATSafeArrayVariant oComponents)
-                |     Get the Components result from the measure between.
+                Sub GetComponents(CATSafeArrayVariant oComponents)
+                    Get the Components result from the measure between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oComponents
-                |             The components. The components should be get after the "Compute"
-                |
-                |
-                |     Example:
-                |
-                |            This example Set the direction of MeasureBetween.
+                        oComponents
+                            The components. The components should be get after the "Compute"
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim meausreComponents
-                |              meausreComponents = theMeasureBetween.GetComponents
+                    Example:
+                |
+                           This example Set the direction of MeasureBetween.
+                |
+                |
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim meausreComponents
+                             meausreComponents = theMeasureBetween.GetComponents
 
         :return: tuple
         """
@@ -250,27 +250,27 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetComputationMode(CATMeasurableModeOfCalc
-                | oComputationMode)
-                |     Get the mode of computation of the object.
-                | 
-                |     Parameters:
-                | 
-                |         oComputationMode
-                |             The mode of computation The computation mode of the object can be:
-                |             Exact, Approximate or ExactElseApprox. 
-                | 
-                |     Example:
-                | 
-                |            This example get the computation mode of
-                |            MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              Dim theComputationType As CATMeasurableModeOfCalc
-                |              theComputationType = theMeasureBetween.GetComputationMode
+                Sub GetComputationMode(CATMeasurableModeOfCalc
+                oComputationMode)
+                    Get the mode of computation of the object.
+                
+                    Parameters:
+                
+                        oComputationMode
+                            The mode of computation The computation mode of the object can be:
+                            Exact, Approximate or ExactElseApprox. 
+                
+                    Example:
+                
+                           This example get the computation mode of
+                           MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             Dim theComputationType As CATMeasurableModeOfCalc
+                             theComputationType = theMeasureBetween.GetComputationMode
 
         :return: CATMeasurableModeOfCalc
         """
@@ -281,22 +281,22 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDistance() As double
-                |     Get the distance result from the measure.
-                | 
-                |     Returns:
-                |         The distance. It should be get after the "Compute" 
-                |     Example:
-                | 
-                |            This example Set the direction of MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim result As Double
-                |              result = theMeasureBetween.GetDistance
+                Func GetDistance() As double
+                    Get the distance result from the measure.
+                
+                    Returns:
+                        The distance. It should be get after the "Compute" 
+                    Example:
+                
+                           This example Set the direction of MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim result As Double
+                             result = theMeasureBetween.GetDistance
 
         :return: float
         """
@@ -307,30 +307,30 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDistanceMeasureType(CATOpnsMeasureDistanceType
-                | oDistanceMeasureType)
-                |     Get the distance measure type on the measure between.
-                | 
-                |     Parameters:
-                | 
-                |         oDistanceMeasureType
-                |             The distance measure type The distance measure type can be:
-                |             catOpnsMinimumDistance, catOpnsMaximumDistance, catOpnsMaximumDistance12,
-                |             catOpnsMinimumDistanceAlongDir, catOpnsBandAnalysis, catOpnsUnknownDistance
-                |             @see CATOpnsMeasureDistanceType 
-                | 
-                |     Example:
-                | 
-                |            This example get the DistanceMeasureType from theMeasureBetween
-                |            computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim theDistanceType
-                |              theDistanceType = theMeasureBetween.GetDistanceMeasureType
+                Sub GetDistanceMeasureType(CATOpnsMeasureDistanceType
+                oDistanceMeasureType)
+                    Get the distance measure type on the measure between.
+                
+                    Parameters:
+                
+                        oDistanceMeasureType
+                            The distance measure type The distance measure type can be:
+                            catOpnsMinimumDistance, catOpnsMaximumDistance, catOpnsMaximumDistance12,
+                            catOpnsMinimumDistanceAlongDir, catOpnsBandAnalysis, catOpnsUnknownDistance
+                            @see CATOpnsMeasureDistanceType 
+                
+                    Example:
+                
+                           This example get the DistanceMeasureType from theMeasureBetween
+                           computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim theDistanceType
+                             theDistanceType = theMeasureBetween.GetDistanceMeasureType
 
         :return: CATOpnsMeasureDistanceType
         """
@@ -341,31 +341,31 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetExtensionMode(CATOpnsMeasureExtensionMode
-                | oRefExtentMode,CATOpnsMeasureExtensionMode oTargetExtentMode)
-                |     Get the mode of extension of the object.
-                | 
-                |     Parameters:
-                | 
-                |         oRefExtentMode
-                |             The extension mode for reference 
-                |         oTargetExtentMode
-                |             The extension mode for target The extension mode of the object can
-                |             be: catOpnsFiniteExtend, catOpnsInfiniteExtend 
-                | 
-                |     Example:
-                | 
-                |            This example get the extension mode of
-                |            MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              Dim theExtensionMode1
-                |              Dim theExtensionMode2
-                |              theMeasureBetween.GetExtensionMode theExtensionMode1
-                |              theExtensionMode2
+                Sub GetExtensionMode(CATOpnsMeasureExtensionMode
+                oRefExtentMode,CATOpnsMeasureExtensionMode oTargetExtentMode)
+                    Get the mode of extension of the object.
+                
+                    Parameters:
+                
+                        oRefExtentMode
+                            The extension mode for reference 
+                        oTargetExtentMode
+                            The extension mode for target The extension mode of the object can
+                            be: catOpnsFiniteExtend, catOpnsInfiniteExtend 
+                
+                    Example:
+                
+                           This example get the extension mode of
+                           MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             Dim theExtensionMode1
+                             Dim theExtensionMode2
+                             theMeasureBetween.GetExtensionMode theExtensionMode1
+                             theExtensionMode2
 
 
         :return: tuple[CATOpnsMeasureExtensionMode, CATOpnsMeasureExtensionMode]
@@ -377,26 +377,26 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetFirstPointCoordinates(CATSafeArrayVariant oCoordinates)
-                |     Get the First Point Coordinates from the measure between.
+                Sub GetFirstPointCoordinates(CATSafeArrayVariant oCoordinates)
+                    Get the First Point Coordinates from the measure between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCoordinates
-                |             The coordinates. The point coordinates should be get after the
-                |             "Compute"
+                        oCoordinates
+                            The coordinates. The point coordinates should be get after the
+                            "Compute"
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example Set the direction of MeasureBetween.
+                           This example Set the direction of MeasureBetween.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim result
-                |              result = theMeasureBetween.GetFirstPointCoordinates
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim result
+                             result = theMeasureBetween.GetFirstPointCoordinates
 
         :return: tuple[float, float, float]
         """
@@ -424,25 +424,25 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetFirstSelection(CATSafeArrayVariant oFirstSelections)
-                |     Get the first selected objects of the measure Between.
+                Sub GetFirstSelection(CATSafeArrayVariant oFirstSelections)
+                    Get the first selected objects of the measure Between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oFirstSelections
-                |             The first set of the selected objects
+                        oFirstSelections
+                            The first set of the selected objects
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example get the first selected objects of
-                |            theMeasureBetween/tt>.
+                           This example get the first selected objects of
+                           theMeasureBetween/tt>.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              Dim theSelection
-                |              theSelection = theMeasureBetween.GetFirstSelection
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             Dim theSelection
+                             theSelection = theMeasureBetween.GetFirstSelection
 
         :return: tuple
         """
@@ -471,25 +471,25 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetResultComputationType() As CATResultCalcType
-                |     Get the resulting type of computation of the object. The resulting type of
-                |     the object can be: Exact, Approximate or Mixed.
-                | 
-                |     Returns:
-                |         The resulting type In case of measures between, this method must be
-                |         called after distance or angle computation 
-                |     Example:
-                | 
-                |            This example get the ResultComputationType for theMeasureBetween
-                |            computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim theComputationType As CATResultCalcType
-                |              theComputationType = theMeasureBetween.GetResultComputationType
+                Func GetResultComputationType() As CATResultCalcType
+                    Get the resulting type of computation of the object. The resulting type of
+                    the object can be: Exact, Approximate or Mixed.
+                
+                    Returns:
+                        The resulting type In case of measures between, this method must be
+                        called after distance or angle computation 
+                    Example:
+                
+                           This example get the ResultComputationType for theMeasureBetween
+                           computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim theComputationType As CATResultCalcType
+                             theComputationType = theMeasureBetween.GetResultComputationType
 
         :return: CATResultCalcType
         """
@@ -500,27 +500,27 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetSecondPointCoordinates(CATSafeArrayVariant
-                | oCoordinates)
-                |     Get the Second Point Coordinates from the measure between.
+                Sub GetSecondPointCoordinates(CATSafeArrayVariant
+                oCoordinates)
+                    Get the Second Point Coordinates from the measure between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCoordinates
-                |             The coordinates. The point coordinates should be get after the
-                |             "Compute"
+                        oCoordinates
+                            The coordinates. The point coordinates should be get after the
+                            "Compute"
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example Set the direction of MeasureBetween.
+                           This example Set the direction of MeasureBetween.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim result
-                |              result = theMeasureBetween.GetSecondPointCoordinates
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim result
+                             result = theMeasureBetween.GetSecondPointCoordinates
 
         :return: tuple[float, float, float]
         """
@@ -549,25 +549,25 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetSecondSelection(CATSafeArrayVariant oSecondSelections)
-                |     Get the second selected objects of the measure Between.
+                Sub GetSecondSelection(CATSafeArrayVariant oSecondSelections)
+                    Get the second selected objects of the measure Between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oSecondSelections
-                |             The second set of the selected objects
+                        oSecondSelections
+                            The second set of the selected objects
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example get the second selected objects of
-                |            theMeasureBetween.
+                           This example get the second selected objects of
+                           theMeasureBetween.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              Dim theSelection
-                |              theSelection = theMeasureBetween.GetSecondSelection
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             Dim theSelection
+                             theSelection = theMeasureBetween.GetSecondSelection
 
         :return: tuple
         """
@@ -594,34 +594,34 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetSelectionCalculationTypes(CATResultCalcType
-                | oFirstCalculationType,CATResultCalcType
-                | oSecondCalculationType)
-                |     Get the Selection Calculation Types. The Selection Calculation Types the
-                |     measure can be: Exact, Approximate or Mixed.
-                | 
-                |     Parameters:
-                | 
-                |         oFirstCalculationType
-                |             The first Selection Calculation Type 
-                |         oSecondCalculationType
-                |             The second Selection Calculation Type 
-                | 
-                |     Example:
-                | 
-                |            This example Get the Selection Calculation Types for
-                |            theMeasureBetween computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              Dim firstSelectionCalculationType
-                |              Dim secondSelectionCalculationType
-                |              theMeasureBetween.GetSelectionCalculationTypes
-                |              firstSelectionCalculationType,
-                |              secondSelectionCalculationType
+                Sub GetSelectionCalculationTypes(CATResultCalcType
+                oFirstCalculationType,CATResultCalcType
+                oSecondCalculationType)
+                    Get the Selection Calculation Types. The Selection Calculation Types the
+                    measure can be: Exact, Approximate or Mixed.
+                
+                    Parameters:
+                
+                        oFirstCalculationType
+                            The first Selection Calculation Type 
+                        oSecondCalculationType
+                            The second Selection Calculation Type 
+                
+                    Example:
+                
+                           This example Get the Selection Calculation Types for
+                           theMeasureBetween computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             Dim firstSelectionCalculationType
+                             Dim secondSelectionCalculationType
+                             theMeasureBetween.GetSelectionCalculationTypes
+                             firstSelectionCalculationType,
+                             secondSelectionCalculationType
 
         :return: tuple[CATResultCalcType, CATResultCalcType]
         """
@@ -632,28 +632,28 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAlongDirection(double iXVector,double iYVector,double
-                | iZVector)
-                |     Set the direction of measure between along direction.
-                | 
-                |     Parameters:
-                | 
-                |         iXVector
-                |             The X coordinate of the vector 
-                |         iYVector
-                |             The Y coordinate of the vector 
-                |         iZVector
-                |             The Z coordinate of the vector 
-                | 
-                |     Example:
-                | 
-                |            This example Set the direction of MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              theMeasureBetween.SetAlongDirection 0.0 0.0 1.0
+                Sub SetAlongDirection(double iXVector,double iYVector,double
+                iZVector)
+                    Set the direction of measure between along direction.
+                
+                    Parameters:
+                
+                        iXVector
+                            The X coordinate of the vector 
+                        iYVector
+                            The Y coordinate of the vector 
+                        iZVector
+                            The Z coordinate of the vector 
+                
+                    Example:
+                
+                           This example Set the direction of MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             theMeasureBetween.SetAlongDirection 0.0 0.0 1.0
 
         :param float i_x_vector:
         :param float i_y_vector:
@@ -667,67 +667,67 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
-                | iAxisPositioning)
-                |     Set the position of the axis system of the object with respect to the
-                |     absolute axis system. This position corresponds to the product positioning
-                |     matrix. All coordinates are internally computed using the axis system of the
-                |     object. To provide these coordinates with respect to absolute axis system, it
-                |     is required to know the position of the axis system of the
-                |     object.
+                Sub SetAxisSystemOnMeasure(CATSafeArrayVariant
+                iAxisPositioning)
+                    Set the position of the axis system of the object with respect to the
+                    absolute axis system. This position corresponds to the product positioning
+                    matrix. All coordinates are internally computed using the axis system of the
+                    object. To provide these coordinates with respect to absolute axis system, it
+                    is required to know the position of the axis system of the
+                    object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ioAxisPosition
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
+                        ioAxisPosition
+                            The information of the axis system with respect to the product
+                            coordinate system:
                 |
-                |                 iAxisPositioning(0) is the X coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(1) is the Y coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(2) is the Z coordinate of the origin of the
-                |                 axis system
-                |                 iAxisPositioning(3) is the X coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(4) is the Y coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(5) is the Z coordinate of the first direction
-                |                 of the axis system
-                |                 iAxisPositioning(6) is the X coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(7) is the Y coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(8) is the Z coordinate of the second direction
-                |                 of the axis system
-                |                 iAxisPositioning(9) is the X coordinate of the third direction
-                |                 of the axis system
-                |                 iAxisPositioning(10) is the Y coordinate of the third direction
-                |                 of the axis system
-                |                 iAxisPositioning(11) is the Z coordinate of the third direction
-                |                 of the axis system
+                                iAxisPositioning(0) is the X coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(1) is the Y coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(2) is the Z coordinate of the origin of the
+                                axis system
+                                iAxisPositioning(3) is the X coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(4) is the Y coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(5) is the Z coordinate of the first direction
+                                of the axis system
+                                iAxisPositioning(6) is the X coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(7) is the Y coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(8) is the Z coordinate of the second direction
+                                of the axis system
+                                iAxisPositioning(9) is the X coordinate of the third direction
+                                of the axis system
+                                iAxisPositioning(10) is the Y coordinate of the third direction
+                                of the axis system
+                                iAxisPositioning(11) is the Z coordinate of the third direction
+                                of the axis system
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example set the axis system for theMeasureBetween
-                |            computation.
+                           This example set the axis system for theMeasureBetween
+                           computation.
                 |
                 |
-                |              Dim theAxisPositioning(11)
-                |              theAxisPositioning(0) = 0
-                |              theAxisPositioning(1) = 0
-                |              theAxisPositioning(2) = 0
-                |              theAxisPositioning(3) = 1
-                |              theAxisPositioning(4) = 0
-                |              theAxisPositioning(5) = 0
-                |              theAxisPositioning(6) = 0
-                |              theAxisPositioning(7) = 1
-                |              theAxisPositioning(8) = 0
-                |              theAxisPositioning(9) = 0
-                |              theAxisPositioning(10) = 0
-                |              theAxisPositioning(11) = 1
-                |              theMeasureBetween.SetAxisSystemOnMeasure
-                |              theAxisPositioning
+                             Dim theAxisPositioning(11)
+                             theAxisPositioning(0) = 0
+                             theAxisPositioning(1) = 0
+                             theAxisPositioning(2) = 0
+                             theAxisPositioning(3) = 1
+                             theAxisPositioning(4) = 0
+                             theAxisPositioning(5) = 0
+                             theAxisPositioning(6) = 0
+                             theAxisPositioning(7) = 1
+                             theAxisPositioning(8) = 0
+                             theAxisPositioning(9) = 0
+                             theAxisPositioning(10) = 0
+                             theAxisPositioning(11) = 1
+                             theMeasureBetween.SetAxisSystemOnMeasure
+                             theAxisPositioning
 
         :param tuple i_axis_positioning:
         :return: None
@@ -755,30 +755,30 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBandAnalysisParameters(double iMinDistance,double iMaxDistance,double
-                | iAccuracy)
-                |     Set the Band Analysis Parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iMinDistance
-                |             The minimum distance 
-                |         iMaxDistance
-                |             The maximum 
-                |         iAccuracy
-                |             The accuracy 
-                | 
-                |     Example:
-                | 
-                |            This example Set the Band Analysis Parameters of
-                |            MeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              theMeasureBetween.SetBandAnalysisParameters 1.0 2.0
-                |              1.0
+                Sub SetBandAnalysisParameters(double iMinDistance,double iMaxDistance,double
+                iAccuracy)
+                    Set the Band Analysis Parameters.
+                
+                    Parameters:
+                
+                        iMinDistance
+                            The minimum distance 
+                        iMaxDistance
+                            The maximum 
+                        iAccuracy
+                            The accuracy 
+                
+                    Example:
+                
+                           This example Set the Band Analysis Parameters of
+                           MeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             theMeasureBetween.SetBandAnalysisParameters 1.0 2.0
+                             1.0
 
         :param float i_min_distance:
         :param float i_max_distance:
@@ -792,27 +792,27 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetComputationMode(CATMeasurableModeOfCalc
-                | iComputationMode)
-                |     Set the mode of computation of the object.
-                | 
-                |     Parameters:
-                | 
-                |         iComputationMode
-                |             The mode of computation The computation mode of the object can be:
-                |             Exact, Approximate or ExactElseApprox. 
-                | 
-                |     Example:
-                | 
-                |            This example get the computation mode of
-                |            theMeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              theMeasureBetween.SetComputationMode
-                |              MeasExactElseApproxCalculation
+                Sub SetComputationMode(CATMeasurableModeOfCalc
+                iComputationMode)
+                    Set the mode of computation of the object.
+                
+                    Parameters:
+                
+                        iComputationMode
+                            The mode of computation The computation mode of the object can be:
+                            Exact, Approximate or ExactElseApprox. 
+                
+                    Example:
+                
+                           This example get the computation mode of
+                           theMeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             theMeasureBetween.SetComputationMode
+                             MeasExactElseApproxCalculation
 
         :param CATMeasurableModeOfCalc i_computation_mode:
         :return: None
@@ -824,30 +824,30 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDistanceMeasureType(CATOpnsMeasureDistanceType
-                | iDistanceMeasureType)
-                |     Set the distance measure type on the measure between.
-                | 
-                |     Parameters:
-                | 
-                |         iDistanceMeasureType
-                |             The distance measure type The distance measure type can be:
-                |             catOpnsMinimumDistance, catOpnsMaximumDistance, catOpnsMaximumDistance12,
-                |             catOpnsMinimumDistanceAlongDir, catOpnsBandAnalysis, catOpnsUnknownDistance
-                |             @see CATOpnsMeasureDistanceType 
-                | 
-                |     Example:
-                | 
-                |            This example Set the DistanceMeasureType for theMeasureBetween
-                |            computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              theMeasureBetween.SetDistanceMeasureType
-                |              catOpnsMinimumDistanceAlongDir
+                Sub SetDistanceMeasureType(CATOpnsMeasureDistanceType
+                iDistanceMeasureType)
+                    Set the distance measure type on the measure between.
+                
+                    Parameters:
+                
+                        iDistanceMeasureType
+                            The distance measure type The distance measure type can be:
+                            catOpnsMinimumDistance, catOpnsMaximumDistance, catOpnsMaximumDistance12,
+                            catOpnsMinimumDistanceAlongDir, catOpnsBandAnalysis, catOpnsUnknownDistance
+                            @see CATOpnsMeasureDistanceType 
+                
+                    Example:
+                
+                           This example Set the DistanceMeasureType for theMeasureBetween
+                           computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             theMeasureBetween.SetDistanceMeasureType
+                             catOpnsMinimumDistanceAlongDir
 
         :param CATOpnsMeasureDistanceType i_distance_measure_type:
         :return: None
@@ -860,29 +860,29 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetExtensionMode(CATOpnsMeasureExtensionMode
-                | iRefExtentMode,CATOpnsMeasureExtensionMode iTargetExtentMode)
-                |     Set the mode of extension of the object.
-                | 
-                |     Parameters:
-                | 
-                |         iRefExtentMode
-                |             The extension mode for reference 
-                |         iTargetExtentMode
-                |             The extension mode for target The extension mode of the object can
-                |             be: catOpnsFiniteExtend, catOpnsInfiniteExtend 
-                | 
-                |     Example:
-                | 
-                |            This example set the extension mode of
-                |            theMeasureBetween.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              theMeasureBetween.SetExtensionMode catOpnsFiniteExtend
-                |              catOpnsFiniteExtend
+                Sub SetExtensionMode(CATOpnsMeasureExtensionMode
+                iRefExtentMode,CATOpnsMeasureExtensionMode iTargetExtentMode)
+                    Set the mode of extension of the object.
+                
+                    Parameters:
+                
+                        iRefExtentMode
+                            The extension mode for reference 
+                        iTargetExtentMode
+                            The extension mode for target The extension mode of the object can
+                            be: catOpnsFiniteExtend, catOpnsInfiniteExtend 
+                
+                    Example:
+                
+                           This example set the extension mode of
+                           theMeasureBetween.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             theMeasureBetween.SetExtensionMode catOpnsFiniteExtend
+                             catOpnsFiniteExtend
 
         :param CATOpnsMeasureExtensionMode i_ref_extent_mode:
         :param CATOpnsMeasureExtensionMode i_target_extent_mode:
@@ -895,24 +895,24 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetFirstSelection(CATSafeArrayVariant iFirstSelections)
-                |     Set the selected objects of the measure Between.
+                Sub SetFirstSelection(CATSafeArrayVariant iFirstSelections)
+                    Set the selected objects of the measure Between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iFirstSelections
-                |             The first set of the selected objects
+                        iFirstSelections
+                            The first set of the selected objects
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example set the first selected objects of
-                |            theMeasureBetween.
+                           This example set the first selected objects of
+                           theMeasureBetween.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween()
-                |              theMeasureBetween.SetFirstSelection theSelections
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween()
+                             theMeasureBetween.SetFirstSelection theSelections
 
         :param tuple i_first_selections:
         :return: None
@@ -940,30 +940,30 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetResultComputationType(CATResultCalcType
-                | iComputationType)
-                |     Set the resulting type of computation of the object. The computation mode
-                |     of the object can be: Exact, Approximate or Mixed.
-                | 
-                |     Parameters:
-                | 
-                |         iComputationType
-                |             The type of computation In case of measures between, this method
-                |             must be called after distance or angle computation
-                |             
-                | 
-                |     Example:
-                | 
-                |            This example get the ResultComputationType for theMeasureBetween
-                |            computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              theMeasureBetween.SetResultComputationType
-                |              ResMixedCalculation
+                Sub SetResultComputationType(CATResultCalcType
+                iComputationType)
+                    Set the resulting type of computation of the object. The computation mode
+                    of the object can be: Exact, Approximate or Mixed.
+                
+                    Parameters:
+                
+                        iComputationType
+                            The type of computation In case of measures between, this method
+                            must be called after distance or angle computation
+                            
+                
+                    Example:
+                
+                           This example get the ResultComputationType for theMeasureBetween
+                           computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             theMeasureBetween.SetResultComputationType
+                             ResMixedCalculation
 
         :param CATResultCalcType i_computation_type:
         :return: None
@@ -977,25 +977,25 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetSecondSelection(CATSafeArrayVariant iSecondSelections)
-                |     Set the second selected objects of the measure Between.
+                Sub SetSecondSelection(CATSafeArrayVariant iSecondSelections)
+                    Set the second selected objects of the measure Between.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iSecondSelections
-                |             The second set of the selected objects
+                        iSecondSelections
+                            The second set of the selected objects
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example set the second selected objects of
-                |            theMeasureBetween.
+                           This example set the second selected objects of
+                           theMeasureBetween.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween()
-                |              theMeasureBetween.SetSecondSelection
-                |              theSelections
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween()
+                             theMeasureBetween.SetSecondSelection
+                             theSelections
 
         :param tuple i_second_selections:
         :return: None
@@ -1026,31 +1026,31 @@ class MeasureBetween(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSelectionCalculationTypes(CATResultCalcType
-                | iFirstCalculationType,CATResultCalcType
-                | iSecondCalculationType)
-                |     Set the Selection Calculation Types. The Selection Calculation Types the
-                |     measure can be: Exact, Approximate or Mixed.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstCalculationType
-                |             The first Selection Calculation Type 
-                |         iSecondCalculationType
-                |             The second Selection Calculation Type 
-                | 
-                |     Example:
-                | 
-                |            This example Set the Selection Calculation Types for
-                |            theMeasureBetween computation.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |              Dim theMeasureBetween As MeasureBetween
-                |              Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
-                |              ...
-                |              theMeasureBetween.SetSelectionCalculationTypes
-                |              ResMixedCalculation, ResMixedCalculation
+                Sub SetSelectionCalculationTypes(CATResultCalcType
+                iFirstCalculationType,CATResultCalcType
+                iSecondCalculationType)
+                    Set the Selection Calculation Types. The Selection Calculation Types the
+                    measure can be: Exact, Approximate or Mixed.
+                
+                    Parameters:
+                
+                        iFirstCalculationType
+                            The first Selection Calculation Type 
+                        iSecondCalculationType
+                            The second Selection Calculation Type 
+                
+                    Example:
+                
+                           This example Set the Selection Calculation Types for
+                           theMeasureBetween computation.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                             Dim theMeasureBetween As MeasureBetween
+                             Set theMeasureBetween = theMeasureService.GetMeasureBetween(theSelection1, theSelection2)
+                             ...
+                             theMeasureBetween.SetSelectionCalculationTypes
+                             ResMixedCalculation, ResMixedCalculation
 
         :param CATResultCalcType i_first_calculation_type:
         :param CATResultCalcType i_second_calculation_type:

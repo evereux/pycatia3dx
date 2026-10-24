@@ -16,18 +16,18 @@ class MeasurableSphere(MeasurableSurface):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         CATOpnsMeasureIDLItf.MeasurableSurface
-                |                             MeasurableSphere
-                | 
-                | Interface representing the measurement on a sphere.
-                | Get the area, the center of gravity and the perimeter by inheritance. Get the
-                | radius and the center point.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        CATOpnsMeasureIDLItf.MeasurableSurface
+                                            MeasurableSphere
+                
+                Interface representing the measurement on a sphere.
+                Get the area, the center of gravity and the perimeter by inheritance. Get the
+                radius and the center point.
     
     """
 
@@ -40,23 +40,23 @@ class MeasurableSphere(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
-                |     Retrieves the position of the center of the sphere.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of the center of
-                |            theMeasurableSphere measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSphere As MeasurableSphere
-                |              Set theMeasurableSphere = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSphere)
-                |              Dim theXCenter As Double
-                |              Dim theYCenter As Double
-                |              Dim theZCenter As Double
-                |              theMeasurableSphere.GetCenter theXCenter, theYCenter,
-                |              theZCenter
+                Sub GetCenter(double oXCenter,double oYCenter,double oZCenter)
+                    Retrieves the position of the center of the sphere.
+                
+                    Example:
+                
+                           This example retrieves the position of the center of
+                           theMeasurableSphere measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSphere As MeasurableSphere
+                             Set theMeasurableSphere = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSphere)
+                             Dim theXCenter As Double
+                             Dim theYCenter As Double
+                             Dim theZCenter As Double
+                             theMeasurableSphere.GetCenter theXCenter, theYCenter,
+                             theZCenter
 
         :return: None
         """
@@ -67,20 +67,20 @@ class MeasurableSphere(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRadius() As double
-                |     Retrieves the radius of the sphere.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the Radius of theMeasurableSphere
-                |            measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSphere As MeasurableSphere
-                |              Set theMeasurableSphere = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSphere)
-                |              Dim theRadius As Double
-                |              theRadius = theMeasurableSphere.GetRadius
+                Func GetRadius() As double
+                    Retrieves the radius of the sphere.
+                
+                    Example:
+                
+                           This example retrieves the Radius of theMeasurableSphere
+                           measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSphere As MeasurableSphere
+                             Set theMeasurableSphere = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSphere)
+                             Dim theRadius As Double
+                             theRadius = theMeasurableSphere.GetRadius
 
         :return: float
         """

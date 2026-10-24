@@ -20,16 +20,16 @@ class MeasurableService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         MeasurableService
-                | 
-                | Interface representing the service to retrieve a measurable.
-                | CATIApplication.ActiveEditor.GetService("MeasurableService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        MeasurableService
+                
+                Interface representing the service to retrieve a measurable.
+                CATIApplication.ActiveEditor.GetService("MeasurableService")
     
     """
 
@@ -42,19 +42,19 @@ class MeasurableService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMeasurable(AnyObject iMeasuredItem,CATMeasurableType iType) As
-                | MeasurableInContext
-                |     Retrieves the measurable object
-                | 
-                |     Example:
-                | 
-                |            This example get the Measurable from given
-                |            MeasurableType.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSurface As MeasurableSurface
-                |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
+                Func GetMeasurable(AnyObject iMeasuredItem,CATMeasurableType iType) As
+                MeasurableInContext
+                    Retrieves the measurable object
+                
+                    Example:
+                
+                           This example get the Measurable from given
+                           MeasurableType.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSurface As MeasurableSurface
+                             Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
 
         :param AnyObject i_measured_item:
         :param CATMeasurableType i_type:

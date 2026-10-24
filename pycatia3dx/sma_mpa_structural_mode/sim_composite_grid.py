@@ -19,15 +19,15 @@ class SimCompositeGrid(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeGrid
-                | 
-                | Represents the Composite Grid object.
-                | Given a SimCompositeShellSection object, you can retrieve a SimCompositeCells as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeShellSection.idl to create/retrieve a SimCompositeShellSection. .... i)Dim myCompositeGrid As SimCompositeGrid Set myCompositeGrid = myCompShellSection.CreateGrid or ii) Dim MyLinkServices As SimLinkServices ... Set MyLinkServices = oEditor.GetService("SimLinkServices") Dim myCPDSupport As SimCompositeSupportDefinition Set myCPDSupport = myCompShellSection.CompositeSupport Dim mycpdLinkAccess As SimLinkAccess Set mycpdLinkAccess = myCPDSupport.GetItem("SimLinkAccess") Dim AllLinks AllLinks = mycpdLinkAccess.GetAllLinks("ConnectorList") ...Loop for listSize = UBound(AllLinks) - LBound(AllLinks) + 1 if needed.. Set CompSupport = AllLinks(0) Dim myCompositeGrid As SimCompositeGrid Set myCompositeGrid = MyLinkServices.GetTarget(CompSupport)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeGrid
+                
+                Represents the Composite Grid object.
+                Given a SimCompositeShellSection object, you can retrieve a SimCompositeCells as below: Dim myCompShellSection As SimCompositeShellSection .... Refer SMAIAMpaCompositeShellSection.idl to create/retrieve a SimCompositeShellSection. .... i)Dim myCompositeGrid As SimCompositeGrid Set myCompositeGrid = myCompShellSection.CreateGrid or ii) Dim MyLinkServices As SimLinkServices ... Set MyLinkServices = oEditor.GetService("SimLinkServices") Dim myCPDSupport As SimCompositeSupportDefinition Set myCPDSupport = myCompShellSection.CompositeSupport Dim mycpdLinkAccess As SimLinkAccess Set mycpdLinkAccess = myCPDSupport.GetItem("SimLinkAccess") Dim AllLinks AllLinks = mycpdLinkAccess.GetAllLinks("ConnectorList") ...Loop for listSize = UBound(AllLinks) - LBound(AllLinks) + 1 if needed.. Set CompSupport = AllLinks(0) Dim myCompositeGrid As SimCompositeGrid Set myCompositeGrid = MyLinkServices.GetTarget(CompSupport)
     
     """
 
@@ -40,11 +40,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddNewRefGroup() As SimCompositeGridElemRefGroup
-                |     Creates a new element reference group for the grid.
-                | 
-                |     Returns:
-                |         Created element reference group.
+                Func AddNewRefGroup() As SimCompositeGridElemRefGroup
+                    Creates a new element reference group for the grid.
+                
+                    Returns:
+                        Created element reference group.
 
         :return: SimCompositeGridElemRefGroup
         """
@@ -55,14 +55,14 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateCellsFromFile(CATBSTR iPath)
-                |     Creates cells in the grid with the reference elements and laminate from a
-                |     file
-                | 
-                |     Parameters:
-                | 
-                |         iPath
-                |             [in] Path to read the data eg. D:\\GridData\\GridData.xls
+                Sub CreateCellsFromFile(CATBSTR iPath)
+                    Creates cells in the grid with the reference elements and laminate from a
+                    file
+                
+                    Parameters:
+                
+                        iPath
+                            [in] Path to read the data eg. D:\\GridData\\GridData.xls
 
         :param str i_path:
         :return: None
@@ -74,14 +74,14 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateFileFromCells(CATBSTR iPath)
-                |     Writes the all the cells in the grid with the reference elements and lamina
-                |     to a file.
-                | 
-                |     Parameters:
-                | 
-                |         iPath
-                |             [in] Path to write the data eg. D:\\GridData\\GridData.xls
+                Sub CreateFileFromCells(CATBSTR iPath)
+                    Writes the all the cells in the grid with the reference elements and lamina
+                    to a file.
+                
+                    Parameters:
+                
+                        iPath
+                            [in] Path to write the data eg. D:\\GridData\\GridData.xls
 
         :param str i_path:
         :return: None
@@ -93,16 +93,16 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCell(short iCellIndex) As CATBaseDispatch
-                |     Retreives the cell in the grid corresponding to te index.
-                | 
-                |     Parameters:
-                | 
-                |         iCellIndex
-                |             [in] Index of the cell in Grid. 
-                | 
-                |     Returns:
-                |         Grid cell correcponding to the index.
+                Func GetCell(short iCellIndex) As CATBaseDispatch
+                    Retreives the cell in the grid corresponding to te index.
+                
+                    Parameters:
+                
+                        iCellIndex
+                            [in] Index of the cell in Grid. 
+                
+                    Returns:
+                        Grid cell correcponding to the index.
 
         :param int i_cell_index:
         :return: AnyObject
@@ -114,11 +114,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCells() As CATSafeArrayVariant
-                |     Retreives the list of all the cells in the grid.
-                | 
-                |     Returns:
-                |         All grid cells in the grid.
+                Func GetCells() As CATSafeArrayVariant
+                    Retreives the list of all the cells in the grid.
+                
+                    Returns:
+                        All grid cells in the grid.
 
         :return: tuple
         """
@@ -129,11 +129,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCellsCount() As short
-                |     Retreives the count of cells in the grid.
-                | 
-                |     Returns:
-                |         Number of cells in the grid.
+                Func GetCellsCount() As short
+                    Retreives the count of cells in the grid.
+                
+                    Returns:
+                        Number of cells in the grid.
 
         :return: int
         """
@@ -144,11 +144,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDrapingDirection() As boolean
-                |     Retreives the draping direction.
-                | 
-                |     Returns:
-                |         Draping direction of grid.
+                Func GetDrapingDirection() As boolean
+                    Retreives the draping direction.
+                
+                    Returns:
+                        Draping direction of grid.
 
         :return: bool
         """
@@ -159,11 +159,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetElementRefGroups() As CATSafeArrayVariant
-                |     Retreives all the element reference group of the grid.
-                | 
-                |     Returns:
-                |         List of all element reference group of the grid.
+                Func GetElementRefGroups() As CATSafeArrayVariant
+                    Retreives all the element reference group of the grid.
+                
+                    Returns:
+                        List of all element reference group of the grid.
 
         :return: tuple
         """
@@ -174,11 +174,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRosette() As SimCompositeRosette
-                |     Retreives the Rosette of the grid.
-                | 
-                |     Returns:
-                |         Rosette of the grid.
+                Func GetRosette() As SimCompositeRosette
+                    Retreives the Rosette of the grid.
+                
+                    Returns:
+                        Rosette of the grid.
 
         :return: SimCompositeRosette
         """
@@ -189,11 +189,11 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSurface() As CATBaseDispatch
-                |     Retreives the surface of the grid.
-                | 
-                |     Returns:
-                |         Surface of the grid.
+                Func GetSurface() As CATBaseDispatch
+                    Retreives the surface of the grid.
+                
+                    Returns:
+                        Surface of the grid.
 
         :return: AnyObject
         """
@@ -204,13 +204,13 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDrapingDirection(boolean iDrapingDirecion)
-                |     Sets the draping direction.
-                | 
-                |     Parameters:
-                | 
-                |         iDrapingDirecion
-                |             [in] Draping direction to be set to the grid.
+                Sub SetDrapingDirection(boolean iDrapingDirecion)
+                    Sets the draping direction.
+                
+                    Parameters:
+                
+                        iDrapingDirecion
+                            [in] Draping direction to be set to the grid.
 
         :param bool i_draping_direcion:
         :return: None
@@ -222,13 +222,13 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRosette(SimCompositeRosette iRosette)
-                |     Sets the Rosette of the grid.
-                | 
-                |     Parameters:
-                | 
-                |         iRosette
-                |             [in] Rosette of the grid.
+                Sub SetRosette(SimCompositeRosette iRosette)
+                    Sets the Rosette of the grid.
+                
+                    Parameters:
+                
+                        iRosette
+                            [in] Rosette of the grid.
 
         :param SimCompositeRosette i_rosette:
         :return: None
@@ -240,14 +240,14 @@ class SimCompositeGrid(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSplitElement(CATBaseDispatch iSplitElem)
-                |     Split the cell in the grid with respect to the specified reference
-                |     element.
-                | 
-                |     Parameters:
-                | 
-                |         iSplitElem
-                |             [in] Reference/cutting geometry. 
+                Sub SetSplitElement(CATBaseDispatch iSplitElem)
+                    Split the cell in the grid with respect to the specified reference
+                    element.
+                
+                    Parameters:
+                
+                        iSplitElem
+                            [in] Reference/cutting geometry. 
 
         :param AnyObject i_split_elem:
         :return: None

@@ -17,14 +17,14 @@ class SimAmsEigensolver(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAMSEigensolver
-                | 
-                | Represents the A M S Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAMSEigensolver
+                
+                Represents the A M S Eigensolver object.
     
     """
 
@@ -38,9 +38,9 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AcousticCouplingType() As
-                | SimAMSEigensolverAcousticCouplingType
-                |     Returns or sets the acoustic coupling type.
+                Property AcousticCouplingType() As
+                SimAMSEigensolverAcousticCouplingType
+                    Returns or sets the acoustic coupling type.
 
         :return: int
         """
@@ -61,11 +61,11 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingProjectionFlag() As boolean
-                |     Returns or sets the flag that determines if the damping projection option
-                |     is used.
-                |     TRUE : the damping projection option is used.
-                |     FALSE : the damping projection option is not used.
+                Property DampingProjectionFlag() As boolean
+                    Returns or sets the flag that determines if the damping projection option
+                    is used.
+                    TRUE : the damping projection option is used.
+                    FALSE : the damping projection option is not used.
 
         :return: bool
         """
@@ -86,8 +86,8 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumFrequency() As double
-                |     Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MaximumFrequency() As double
+                    Returns or sets the maximum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -108,8 +108,8 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequency() As double
-                |     Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
+                Property MinimumFrequency() As double
+                    Returns or sets the minimum frequency. Quantity: FREQUENCY, units: Hz.
 
         :return: float
         """
@@ -130,11 +130,11 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumFrequencyFlag() As boolean
-                |     Returns or sets the flag that determines if the minimum frequency is
-                |     specified.
-                |     TRUE : the minimum frequency is specified.
-                |     FALSE : the minimum frequency is not specified.
+                Property MinimumFrequencyFlag() As boolean
+                    Returns or sets the flag that determines if the minimum frequency is
+                    specified.
+                    TRUE : the minimum frequency is specified.
+                    FALSE : the minimum frequency is not specified.
 
         :return: bool
         """
@@ -155,8 +155,8 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfModes() As long
-                |     Returns or sets the number of modes.
+                Property NumberOfModes() As long
+                    Returns or sets the number of modes.
 
         :return: int
         """
@@ -177,11 +177,11 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ResidualModesFlag() As boolean
-                |     Returns or sets the flag that determines if the residual modes option is
-                |     used.
-                |     TRUE : the residual modes option is used.
-                |     FALSE : the residual modes option is not used.
+                Property ResidualModesFlag() As boolean
+                    Returns or sets the flag that determines if the residual modes option is
+                    used.
+                    TRUE : the residual modes option is used.
+                    FALSE : the residual modes option is not used.
 
         :return: bool
         """
@@ -202,11 +202,11 @@ class SimAmsEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecifiedModesFlag() As boolean
-                |     Returns or sets the flag that determines if the number of eigenvalues to be
-                |     calculated is specified.
-                |     TRUE : the number of eigenvalues to be calculated is specified.
-                |     FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
+                Property SpecifiedModesFlag() As boolean
+                    Returns or sets the flag that determines if the number of eigenvalues to be
+                    calculated is specified.
+                    TRUE : the number of eigenvalues to be calculated is specified.
+                    FALSE : all the eigenvalues from the minimum frequency of interest up to the maximum frequency of interest will be calculated. 
 
         :return: bool
         """

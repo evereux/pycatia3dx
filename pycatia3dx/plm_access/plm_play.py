@@ -17,14 +17,14 @@ class PLMPlay(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMPlay
-                | 
-                | Allows to manage the execution of a playable object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMPlay
+                
+                Allows to manage the execution of a playable object.
     
     """
 
@@ -37,8 +37,8 @@ class PLMPlay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Play()
-                |     Plays the animation
+                Sub Play()
+                    Plays the animation
 
         :return: None
         """
@@ -49,8 +49,8 @@ class PLMPlay(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Stop()
-                |     Stops the animation
+                Sub Stop()
+                    Stops the animation
 
         :return: None
         """

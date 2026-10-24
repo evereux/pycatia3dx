@@ -17,18 +17,18 @@ class IntParam(Parameter):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         IntParam
-                | 
-                | Represents the integer parameter.
-                | 
-                | See also:
-                |     ParametersFactory.CreateInteger
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        IntParam
+                
+                Represents the integer parameter.
+                
+                See also:
+                    ParametersFactory.CreateInteger
     
     """
 
@@ -42,18 +42,18 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMax() As long
-                |     Returns or sets the value of the upper bound that the parameter object
-                |     value can take.
-                | 
-                |     Example:
-                |         This example sets the RangeMax value to 0 if its value is smaller than
-                |         0:
-                | 
-                |          If (Length.RangeMax < 0.0 and Length.RangeMaxValidity <> 0) 
-                |          Then
-                |              Length.RangeMax = 0.0
-                |          End If
+                Property RangeMax() As long
+                    Returns or sets the value of the upper bound that the parameter object
+                    value can take.
+                
+                    Example:
+                        This example sets the RangeMax value to 0 if its value is smaller than
+                        0:
+                
+                         If (Length.RangeMax < 0.0 and Length.RangeMaxValidity <> 0) 
+                         Then
+                             Length.RangeMax = 0.0
+                         End If
 
         :return: int
         """
@@ -74,16 +74,16 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMaxValidity() As long
-                |     Returns or sets the type of the upper bound of the
-                |     parameter.
-                | 
-                |     0
-                |         the upper bound is meaningless 
-                |     1
-                |         the upper bound can be reached 
-                |     2
-                |         the upper bound cannot be reached
+                Property RangeMaxValidity() As long
+                    Returns or sets the type of the upper bound of the
+                    parameter.
+                
+                    0
+                        the upper bound is meaningless 
+                    1
+                        the upper bound can be reached 
+                    2
+                        the upper bound cannot be reached
 
         :return: int
         """
@@ -104,18 +104,18 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMin() As long
-                |     Returns or sets the value of the lower bound that the parameter object
-                |     value can take.
-                | 
-                |     Example:
-                |         This example sets the RangeMin value to 0 if its value is bigger than
-                |         0:
-                | 
-                |          If (Length.RangeMin > 0.0 and Length.RangeMinValidity <> 0) 
-                |          Then
-                |              Length.RangeMin = 0.0
-                |          End If
+                Property RangeMin() As long
+                    Returns or sets the value of the lower bound that the parameter object
+                    value can take.
+                
+                    Example:
+                        This example sets the RangeMin value to 0 if its value is bigger than
+                        0:
+                
+                         If (Length.RangeMin > 0.0 and Length.RangeMinValidity <> 0) 
+                         Then
+                             Length.RangeMin = 0.0
+                         End If
 
         :return: int
         """
@@ -136,16 +136,16 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property RangeMinValidity() As long
-                |     Returns or sets the type of the lower bound of the
-                |     parameter.
-                | 
-                |     0
-                |         the lower bound is meaningless 
-                |     1
-                |         the lower bound can be reached 
-                |     2
-                |         the lower bound cannot be reached
+                Property RangeMinValidity() As long
+                    Returns or sets the type of the lower bound of the
+                    parameter.
+                
+                    0
+                        the lower bound is meaningless 
+                    1
+                        the lower bound can be reached 
+                    2
+                        the lower bound cannot be reached
 
         :return: int
         """
@@ -166,17 +166,17 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Value() As long
-                |     Returns or sets the value of the integer parameter. Units are expressed in
-                |     the IS unit system.
-                | 
-                |     Example:
-                |         This example sets the year value to 0 if its value is equal to
-                |         2000:
-                | 
-                |          If (year.Value = 2000)  Then
-                |              year.Value = 0
-                |          End If
+                Property Value() As long
+                    Returns or sets the value of the integer parameter. Units are expressed in
+                    the IS unit system.
+                
+                    Example:
+                        This example sets the year value to 0 if its value is equal to
+                        2000:
+                
+                         If (year.Value = 2000)  Then
+                             year.Value = 0
+                         End If
 
         :return: int
         """
@@ -196,23 +196,23 @@ class IntParam(Parameter):
             .. note::
     
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                    | Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
-                    |     Returns an array containing the different values that the int param can
-                    |     takein the case of multiple values.
+                    Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
+                        Returns an array containing the different values that the int param can
+                        takein the case of multiple values.
                     |
-                    |     Parameters:
+                        Parameters:
                     |
-                    |         oSafeArray
-                    |             the array
+                            oSafeArray
+                                the array
                     |
-                    |             Example:
+                                Example:
                     |
-                    |                  Dim enumValues () as Variant
-                    |                  ReDim enumValues (anIntegerParameter.GetEnumerateValuesSize()
-                    |                  - 1)
-                    |                 anIntegerParameter.GetEnumerateValues(enumValues)                |                  For i = LBound(enumValues) to UBound(enumValues)
-                    |                    ...
-                    |                  Next
+                                     Dim enumValues () as Variant
+                                     ReDim enumValues (anIntegerParameter.GetEnumerateValuesSize()
+                                     - 1)
+                                    anIntegerParameter.GetEnumerateValues(enumValues)                                 For i = LBound(enumValues) to UBound(enumValues)
+                                       ...
+                                     Next
 
             :param tuple o_safe_array:
             :return: None
@@ -240,11 +240,11 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetEnumerateValuesSize() As long
-                |     Returns the number of enumerate values.
-                | 
-                |     Returns:
-                |         the number of enumerate values.
+                Func GetEnumerateValuesSize() As long
+                    Returns the number of enumerate values.
+                
+                    Returns:
+                        the number of enumerate values.
 
         :return: int
         """
@@ -255,14 +255,14 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
-                |     Sets an array containing the different values that the real param can take
-                |     in the case of multiple values.
+                Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
+                    Sets an array containing the different values that the real param can take
+                    in the case of multiple values.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iSafeArray
-                |             the different possible values
+                        iSafeArray
+                            the different possible values
 
         :param tuple i_safe_array:
         :return: None
@@ -290,8 +290,8 @@ class IntParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SuppressEnumerateValues()
-                |     Resets the status of the object to a single value object.
+                Sub SuppressEnumerateValues()
+                    Resets the status of the object to a single value object.
 
         :return: None
         """

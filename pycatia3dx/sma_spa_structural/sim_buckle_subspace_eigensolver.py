@@ -17,14 +17,14 @@ class SimBuckleSubspaceEigensolver(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBuckleSubspaceEigensolver
-                | 
-                | Represents the Buckle Subspace Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBuckleSubspaceEigensolver
+                
+                Represents the Buckle Subspace Eigensolver object.
     
     """
 
@@ -38,8 +38,8 @@ class SimBuckleSubspaceEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIterations() As long
-                |     Returns or sets the maximum number of iterations.
+                Property MaximumIterations() As long
+                    Returns or sets the maximum number of iterations.
 
         :return: int
         """
@@ -60,8 +60,8 @@ class SimBuckleSubspaceEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfEigenvalues() As long
-                |     Returns or sets the number of Eigen values. 
+                Property NumberOfEigenvalues() As long
+                    Returns or sets the number of Eigen values. 
 
         :return: int
         """

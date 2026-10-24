@@ -19,57 +19,57 @@ class SimDisplacementResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimDisplacementResponseVariable
-                | 
-                | Represents the displacement response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDisplacementResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDisplacementResponseVariable As
-                |      SimDisplacementResponseVariable
-                |      Set MyDisplacementResponseVariable = MyFeatures.Add("SimDisplacementResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimDisplacementResponseVariable named "Displacement Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDisplacementResponseVariable As
-                |      SimDisplacementResponseVariable
-                |      Set MyDisplacementResponseVariable = MyFeatures.Item("Displacement Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDisplacementResponseVariable as following:
-                | 
-                |      ...
-                |      MyDisplacementResponseVariable = MyFeatures.Add("SimDisplacementResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimDisplacementResponseVariable named "Displacement Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyDisplacementResponseVariable = MyFeatures.Item("Displacement Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimDisplacementResponseVariable
+                
+                Represents the displacement response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDisplacementResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDisplacementResponseVariable As
+                     SimDisplacementResponseVariable
+                     Set MyDisplacementResponseVariable = MyFeatures.Add("SimDisplacementResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimDisplacementResponseVariable named "Displacement Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDisplacementResponseVariable As
+                     SimDisplacementResponseVariable
+                     Set MyDisplacementResponseVariable = MyFeatures.Item("Displacement Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDisplacementResponseVariable as following:
+                
+                     ...
+                     MyDisplacementResponseVariable = MyFeatures.Add("SimDisplacementResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimDisplacementResponseVariable named "Displacement Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyDisplacementResponseVariable = MyFeatures.Item("Displacement Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -83,8 +83,8 @@ class SimDisplacementResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the displacement design response.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the displacement design response.
 
         :return: SimAxisSystem
         """
@@ -97,8 +97,8 @@ class SimDisplacementResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDesignResponseDirection
-                |     Returns or sets the direction of displacement design response.
+                Property Direction() As SimDesignResponseDirection
+                    Returns or sets the direction of displacement design response.
 
         :return: int
         """
@@ -119,8 +119,8 @@ class SimDisplacementResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """
@@ -133,7 +133,7 @@ class SimDisplacementResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseAbsoluteValueOfDirectionFlag() As boolean
+                Property UseAbsoluteValueOfDirectionFlag() As boolean
 
         :return: bool
         """

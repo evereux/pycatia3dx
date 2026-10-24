@@ -19,27 +19,27 @@ class HybridShapeExtremum(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeExtremum
-                | 
-                | Represents the hybrid shape extremum feature object.
-                | Role: To access the data of the hybrid shape extremum feature object. This data
-                | includes:
-                | 
-                |     The three directions into which the extremum is detected
-                |     The object onto which the extremum is detected
-                |     The extremum type of each direction
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeExtremum
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeExtremum
+                
+                Represents the hybrid shape extremum feature object.
+                Role: To access the data of the hybrid shape extremum feature object. This data
+                includes:
+                
+                    The three directions into which the extremum is detected
+                    The object onto which the extremum is detected
+                    The extremum type of each direction
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeExtremum
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -53,8 +53,8 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction() As HybridShapeDirection
-                |     Returns or sets the direction into which the extremum is detected.
+                Property Direction() As HybridShapeDirection
+                    Returns or sets the direction into which the extremum is detected.
 
         :return: HybridShapeDirection
         """
@@ -75,8 +75,8 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction2() As HybridShapeDirection
-                |     Returns or sets the second direction into which the extremum is detected.
+                Property Direction2() As HybridShapeDirection
+                    Returns or sets the second direction into which the extremum is detected.
 
         :return: HybridShapeDirection
         """
@@ -97,8 +97,8 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction3() As HybridShapeDirection
-                |     Returns or sets the third direction into which the extremum is detected.
+                Property Direction3() As HybridShapeDirection
+                    Returns or sets the third direction into which the extremum is detected.
 
         :return: HybridShapeDirection
         """
@@ -119,9 +119,9 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtremumType() As long
-                |     Returns or sets the extremum type.
-                |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
+                Property ExtremumType() As long
+                    Returns or sets the extremum type.
+                    Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
         """
@@ -142,9 +142,9 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtremumType2() As long
-                |     Returns or sets the extremum type of the second direction.
-                |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
+                Property ExtremumType2() As long
+                    Returns or sets the extremum type of the second direction.
+                    Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
         """
@@ -165,9 +165,9 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ExtremumType3() As long
-                |     Returns or sets the extremum type of the third direction.
-                |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
+                Property ExtremumType3() As long
+                    Returns or sets the extremum type of the third direction.
+                    Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
         """
@@ -188,8 +188,8 @@ class HybridShapeExtremum(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ReferenceElement() As Reference
-                |     Returns or sets the object on which the extremum is detected.
+                Property ReferenceElement() As Reference
+                    Returns or sets the object on which the extremum is detected.
 
         :return: Reference
         """

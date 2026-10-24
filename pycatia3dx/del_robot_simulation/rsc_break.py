@@ -16,18 +16,18 @@ class RscBreak(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscBreak
-                | 
-                | Interface representing a Resource Break Instruction.
-                | 
-                | Role: This interface represents a RscBreak Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscBreak
+                
+                Interface representing a Resource Break Instruction.
+                
+                Role: This interface represents a RscBreak Instruction in a Resource
+                Task
 
     """
 

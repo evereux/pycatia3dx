@@ -19,15 +19,15 @@ class StrSlot(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrSlot
-                | 
-                | Object to manage Structure Functional Slot.
-                | Role: Allows accessing and setting of Slot's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrSlot
+                
+                Object to manage Structure Functional Slot.
+                Role: Allows accessing and setting of Slot's data.
     
     """
 
@@ -41,17 +41,17 @@ class StrSlot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Collars() As StrCollars (Read Only)
-                |     Returns StrCollars objects.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Collar objects.
-                |              
-                | 
-                |              Dim ObjStrCollars As StrCollars
-                |              Set ObjStrCollars = iObjStrSlot.Collars
+                Property Collars() As StrCollars (Read Only)
+                    Returns StrCollars objects.
+                
+                    Example:
+                
+                
+                             This example retrieves Collar objects.
+                             
+                
+                             Dim ObjStrCollars As StrCollars
+                             Set ObjStrCollars = iObjStrSlot.Collars
 
         :return: StrCollars
         """
@@ -64,8 +64,8 @@ class StrSlot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrDetailFeature() As StrDetailFeature (Read Only)
-                |     Returns the StrDetailFeature object.
+                Property StrDetailFeature() As StrDetailFeature (Read Only)
+                    Returns the StrDetailFeature object.
 
         :return: StrDetailFeature
         """
@@ -77,16 +77,16 @@ class StrSlot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPenetratingProfile() As AnyObject
-                |     Returns the penetrating profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the penetrating profile.
-                |              
-                | 
-                |              Set PenetratingProfile = ObjStrSlot.GetPenetratingProfile
+                Func GetPenetratingProfile() As AnyObject
+                    Returns the penetrating profile.
+                
+                    Example:
+                
+                
+                             This example retrieves the penetrating profile.
+                             
+                
+                             Set PenetratingProfile = ObjStrSlot.GetPenetratingProfile
 
         :return: AnyObject
         """
@@ -97,25 +97,25 @@ class StrSlot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPenetratingProfile(Reference iProfile)
-                |     Sets the penetrating profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             Profile. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the penetrating profile.
-                |              
-                | 
-                |              ObjStrSlot As StrSlot
-                |              Set ObjStrSlot = ObjStrSlots.Add
-                |              Dim penetratingElem As Reference
-                |              Set penetratingElem = ObjPart.CreateReferenceFromObject(ObjSfdStiffener)
-                |              ObjStrSlot.SetPenetratingProfile penetratingElem
+                Sub SetPenetratingProfile(Reference iProfile)
+                    Sets the penetrating profile.
+                
+                    Parameters:
+                
+                        iProfile
+                            Profile. 
+                
+                    Example:
+                
+                
+                             This example sets the penetrating profile.
+                             
+                
+                             ObjStrSlot As StrSlot
+                             Set ObjStrSlot = ObjStrSlots.Add
+                             Dim penetratingElem As Reference
+                             Set penetratingElem = ObjPart.CreateReferenceFromObject(ObjSfdStiffener)
+                             ObjStrSlot.SetPenetratingProfile penetratingElem
 
         :param Reference i_profile:
         :return: None

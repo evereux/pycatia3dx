@@ -19,19 +19,19 @@ class KnowledgeServices(Service):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         KnowledgeServices
-                | 
-                | Interface allowing the access to Knowledge services.
-                | Example of how to retrieve such an object.
-                | 
-                |  Dim aKServ as KnowledgeServices
-                |  Set aKServ = CATIA.GetSessionService("KnowledgeServices")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        KnowledgeServices
+                
+                Interface allowing the access to Knowledge services.
+                Example of how to retrieve such an object.
+                
+                 Dim aKServ as KnowledgeServices
+                 Set aKServ = CATIA.GetSessionService("KnowledgeServices")
     
     """
 
@@ -45,8 +45,8 @@ class KnowledgeServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Units() As Units (Read Only)
-                |     Returns the collection of units.
+                Property Units() As Units (Read Only)
+                    Returns the collection of units.
 
         :return: Units
         """
@@ -58,20 +58,20 @@ class KnowledgeServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetKnowledgeCollection(AnyObject iRoot,KnowledgeSetType iKSetType) As
-                | KnowledgeCollection
-                |     Retrieves a Knowledge collection-like aspect of an object.
-                | 
-                |     Parameters:
-                | 
-                |         iRoot
-                |             The object on which to access Knowledge components
-                |             
-                |         iKSetType
-                |             Type of the wanted Knowledge components 
-                | 
-                |     Returns:
-                |         a KnowledgeCollection
+                Func GetKnowledgeCollection(AnyObject iRoot,KnowledgeSetType iKSetType) As
+                KnowledgeCollection
+                    Retrieves a Knowledge collection-like aspect of an object.
+                
+                    Parameters:
+                
+                        iRoot
+                            The object on which to access Knowledge components
+                            
+                        iKSetType
+                            Type of the wanted Knowledge components 
+                
+                    Returns:
+                        a KnowledgeCollection
 
         :param AnyObject i_root:
         :param int i_k_set_type:

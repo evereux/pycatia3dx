@@ -20,14 +20,14 @@ class DraftDomains(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     DraftDomains
-                | 
-                | The collection of draft domains used by the draft shape.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    DraftDomains
+                
+                The collection of draft domains used by the draft shape.
     
     """
 
@@ -40,28 +40,28 @@ class DraftDomains(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As DraftDomain
-                |     Returns a draft domain using its index or its name from the DraftDomains
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the draft domain to retrieve from the
-                |             collection of draft domains. As a numerics, this index is the rank of the draft
-                |             domain in the collection. The index of the first draft domain in the collection
-                |             is 1, and the index of the last draft domain is Count. As a string, it is the
-                |             name you assigned to the draft domain using the AnyObject.Name property.
-                |             
-                | 
-                |     Returns:
-                |         The retrieved draft domain
-                | 
-                |         Example:
-                |             The following example returns in domain the third draft domain of
-                |             the firstDraftDomains collection:
-                | 
-                |              Set domain = firstDraftDomains.Item(3)
+                Func Item(CATVariant iIndex) As DraftDomain
+                    Returns a draft domain using its index or its name from the DraftDomains
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the draft domain to retrieve from the
+                            collection of draft domains. As a numerics, this index is the rank of the draft
+                            domain in the collection. The index of the first draft domain in the collection
+                            is 1, and the index of the last draft domain is Count. As a string, it is the
+                            name you assigned to the draft domain using the AnyObject.Name property.
+                            
+                
+                    Returns:
+                        The retrieved draft domain
+                
+                        Example:
+                            The following example returns in domain the third draft domain of
+                            the firstDraftDomains collection:
+                
+                             Set domain = firstDraftDomains.Item(3)
 
         :param CATVariant i_index:
         :return: DraftDomain

@@ -18,28 +18,28 @@ class HybridShapeTrim(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeTrim
-                | 
-                | Represents the hybrid shape trim object.
-                | Role: To access the data of the hybrid shape trim object. This data
-                | includes:
-                | 
-                |     The first element (surface or curve) to be trimmed
-                |     The second element (surface or curve) to be trimmed
-                |     The orientation corresponding to the first element
-                |     The orientation corresponding to the second element
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeTrim
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeTrim
+                
+                Represents the hybrid shape trim object.
+                Role: To access the data of the hybrid shape trim object. This data
+                includes:
+                
+                    The first element (surface or curve) to be trimmed
+                    The second element (surface or curve) to be trimmed
+                    The orientation corresponding to the first element
+                    The orientation corresponding to the second element
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeTrim
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -53,11 +53,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AutomaticExtrapolationMode() As boolean
-                |     Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode = TRUE : Automatic extrapolation mode is on. = FALSE : Automatic extrapolation mode is off. This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the Trim hybrid shape feature.
-                | 
-                |      Dim AutoExtrapolMode As boolean
-                |      AutoExtrapolMode = Trim.AutomaticExtrapolationMode
+                Property AutomaticExtrapolationMode() As boolean
+                    Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode = TRUE : Automatic extrapolation mode is on. = FALSE : Automatic extrapolation mode is off. This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the Trim hybrid shape feature.
+                
+                     Dim AutoExtrapolMode As boolean
+                     AutoExtrapolMode = Trim.AutomaticExtrapolationMode
 
         :return: bool
         """
@@ -78,11 +78,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Connex() As boolean
-                |     Gets or sets connected mode. Connex = TRUE : the check of connexity is enable. Connex = FALSE : the check of connexity is disable. This example retrieves in Connex the connected mode for the Trim hybrid shape feature.
-                | 
-                |      Dim Connex As boolean
-                |      Connex = Trim.Connex
+                Property Connex() As boolean
+                    Gets or sets connected mode. Connex = TRUE : the check of connexity is enable. Connex = FALSE : the check of connexity is disable. This example retrieves in Connex the connected mode for the Trim hybrid shape feature.
+                
+                     Dim Connex As boolean
+                     Connex = Trim.Connex
 
         :return: bool
         """
@@ -103,20 +103,20 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstElem() As Reference
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the first element to
-                |         be trimmed. 
-                |     Example:
-                | 
-                |          This example retrieves in Surface1 the first element to be trimmed
-                |          
-                |          for the hybTrim hybrid shape feature.
-                |          
-                | 
-                |          Dim Surface1 As Reference
-                |          Set Surface1 = hybTrim.FirstElem
+                Property FirstElem() As Reference
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the first element to
+                        be trimmed. 
+                    Example:
+                
+                         This example retrieves in Surface1 the first element to be trimmed
+                         
+                         for the hybTrim hybrid shape feature.
+                         
+                
+                         Dim Surface1 As Reference
+                         Set Surface1 = hybTrim.FirstElem
 
         :return: Reference
         """
@@ -137,39 +137,39 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstOrientation() As long
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the
-                |         first orientation used to compute the trim.
-                |         Role: The orientation specifies the kept parts of the first element to
-                |         be trimmed.
-                | 
-                |             When trimming surfaces:
-                |                 If orientation value is 1: kept parts are specified by the
-                |                 "natural" normal to the second object
-                |                 If orientation value is -1: kept parts are specified by the
-                |                 inverse of the "natural" normal to the second
-                |                 object
-                |             When trimming curves:
-                |                 If orientation value is 1: kept parts are from the beginning of
-                |                 the curve to the first intersection, and, if there is one, from the second to
-                |                 the third intersection and so on until the end of the
-                |                 curve
-                |                 If orientation value is -1: kept parts are from the first
-                |                 intersection to the second (if there is one), and, if there is one, from the
-                |                 third to the fourth and so on until the end of the
-                |                 curve.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in firstOrient the orientation
-                |          of
-                |          the first element used by the hybTrim hybrid shape
-                |          feature.
-                | 
-                |          Dim firstOrient As long
-                |          Set firstOrient = hybTrim.FirstOrientation
+                Property FirstOrientation() As long
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the
+                        first orientation used to compute the trim.
+                        Role: The orientation specifies the kept parts of the first element to
+                        be trimmed.
+                
+                            When trimming surfaces:
+                                If orientation value is 1: kept parts are specified by the
+                                "natural" normal to the second object
+                                If orientation value is -1: kept parts are specified by the
+                                inverse of the "natural" normal to the second
+                                object
+                            When trimming curves:
+                                If orientation value is 1: kept parts are from the beginning of
+                                the curve to the first intersection, and, if there is one, from the second to
+                                the third intersection and so on until the end of the
+                                curve
+                                If orientation value is -1: kept parts are from the first
+                                intersection to the second (if there is one), and, if there is one, from the
+                                third to the fourth and so on until the end of the
+                                curve.
+                
+                    Example:
+                
+                         This example retrieves in firstOrient the orientation
+                         of
+                         the first element used by the hybTrim hybrid shape
+                         feature.
+                
+                         Dim firstOrient As long
+                         Set firstOrient = hybTrim.FirstOrientation
 
         :return: int
         """
@@ -190,11 +190,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property IntersectionComputation() As boolean
-                |     Gets or sets Intersection computation mode. IntersectionComputation = TRUE : Intersection is computed. = FALSE : Intersection is not computed. This example retrieves in Intersection the Intersection computation mode for the Trim hybrid shape feature.
-                | 
-                |      Dim Intersection As boolean
-                |      Intersection = Trim.IntersectionComputation
+                Property IntersectionComputation() As boolean
+                    Gets or sets Intersection computation mode. IntersectionComputation = TRUE : Intersection is computed. = FALSE : Intersection is not computed. This example retrieves in Intersection the Intersection computation mode for the Trim hybrid shape feature.
+                
+                     Dim Intersection As boolean
+                     Intersection = Trim.IntersectionComputation
 
         :return: bool
         """
@@ -215,11 +215,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property KeepAllPieces() As boolean
-                |     Gets or Sets keep all pieces mode. Used for the trim pieces of shells only KeepAllPieces=TRUE : all the pieces are kept during update, KeepAllPieces=FALSE : only chosen pieces are kept during update (default). This example retrieves in KeepAllPieces the Keep All Pieces mode for the Trim hybrid shape feature.
-                | 
-                |      Dim bKeepAllPieces As boolean
-                |      bKeepAllPieces = Trim.KeepAllPieces
+                Property KeepAllPieces() As boolean
+                    Gets or Sets keep all pieces mode. Used for the trim pieces of shells only KeepAllPieces=TRUE : all the pieces are kept during update, KeepAllPieces=FALSE : only chosen pieces are kept during update (default). This example retrieves in KeepAllPieces the Keep All Pieces mode for the Trim hybrid shape feature.
+                
+                     Dim bKeepAllPieces As boolean
+                     bKeepAllPieces = Trim.KeepAllPieces
 
         :return: bool
         """
@@ -240,11 +240,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Manifold() As boolean
-                |     Gets or sets manifold mode. Manifold = TRUE : the check of manifold is enable. Manifold = FALSE : the check of manifold is disable. This example retrieves in Manifold the manifold mode for the Trim hybrid shape feature.
-                | 
-                |      Dim Manifold As boolean
-                |      Connex = Trim.Manifold
+                Property Manifold() As boolean
+                    Gets or sets manifold mode. Manifold = TRUE : the check of manifold is enable. Manifold = FALSE : the check of manifold is disable. This example retrieves in Manifold the manifold mode for the Trim hybrid shape feature.
+                
+                     Dim Manifold As boolean
+                     Connex = Trim.Manifold
 
         :return: bool
         """
@@ -265,11 +265,11 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Mode() As long
-                |     Gets or sets Trim mode. Mode = 1 : Standard. = 2 : Pieces. This example retrieves in Mode the mode for the Trim hybrid shape feature.
-                | 
-                |      Dim Mode As long
-                |      Mode = Trim.Mode
+                Property Mode() As long
+                    Gets or sets Trim mode. Mode = 1 : Standard. = 2 : Pieces. This example retrieves in Mode the mode for the Trim hybrid shape feature.
+                
+                     Dim Mode As long
+                     Mode = Trim.Mode
 
         :return: int
         """
@@ -290,20 +290,20 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondElem() As Reference
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the second element
-                |         to be trimmed. 
-                |     Example:
-                | 
-                |          This example retrieves in Surface2 the second element to be trimmed
-                |          
-                |          for the hybTrim hybrid shape trim object.
-                |          
-                | 
-                |          Dim Surface2 As Reference
-                |          Set Surface2 = hybTrim.SecondElem
+                Property SecondElem() As Reference
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#GetElem Returns or sets the second element
+                        to be trimmed. 
+                    Example:
+                
+                         This example retrieves in Surface2 the second element to be trimmed
+                         
+                         for the hybTrim hybrid shape trim object.
+                         
+                
+                         Dim Surface2 As Reference
+                         Set Surface2 = hybTrim.SecondElem
 
         :return: Reference
         """
@@ -324,39 +324,39 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondOrientation() As long
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the
-                |         second orientation used to compute the trim.
-                |         Role: The orientation specifies the kept parts of the second element to
-                |         be trimmed.
-                | 
-                |             When trimming surfaces:
-                |                 If orientation value is 1: kept parts are specified by the
-                |                 "natural" normal to the first object
-                |                 If orientation value is -1: kept parts are specified by the
-                |                 inverse of the "natural" normal to the first
-                |                 object
-                |             When trimming curves:
-                |                 If orientation value is 1: kept parts are from the beginning of
-                |                 the curve to the first intersection, and, if there is one, from the second to
-                |                 the third intersection and so on until the end of the
-                |                 curve
-                |                 If orientation value is -1: kept parts are from the first
-                |                 intersection to the second (if there is one), and, if there is one, from the
-                |                 third to the fourth and so on until the end of the
-                |                 curve.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in secondOrient the orientation
-                |          of
-                |          the second element used by the hybTrim hybrid shape trim
-                |          object.
-                | 
-                |          Dim secondOrient As long
-                |          Set secondOrient = hybTrim.SecondOrientation
+                Property SecondOrientation() As long
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#GetPreviousOrientation Returns or sets the
+                        second orientation used to compute the trim.
+                        Role: The orientation specifies the kept parts of the second element to
+                        be trimmed.
+                
+                            When trimming surfaces:
+                                If orientation value is 1: kept parts are specified by the
+                                "natural" normal to the first object
+                                If orientation value is -1: kept parts are specified by the
+                                inverse of the "natural" normal to the first
+                                object
+                            When trimming curves:
+                                If orientation value is 1: kept parts are from the beginning of
+                                the curve to the first intersection, and, if there is one, from the second to
+                                the third intersection and so on until the end of the
+                                curve
+                                If orientation value is -1: kept parts are from the first
+                                intersection to the second (if there is one), and, if there is one, from the
+                                third to the fourth and so on until the end of the
+                                curve.
+                
+                    Example:
+                
+                         This example retrieves in secondOrient the orientation
+                         of
+                         the second element used by the hybTrim hybrid shape trim
+                         object.
+                
+                         Dim secondOrient As long
+                         Set secondOrient = hybTrim.SecondOrientation
 
         :return: int
         """
@@ -377,20 +377,20 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Simplify() As boolean
-                |     Returns or sets whether the simplification of the resulting topology is or
-                |     should be activated.
-                |     Legal values: True to activate the simplification, and False
-                |     otherwise.
-                | 
-                |     Example:
-                | 
-                |           This example activates the simplification of the resulting topology
-                |           of
-                |          the hybTrim hybrid shape trim object.
-                |          
-                | 
-                |           hybTrim.Simplify = True
+                Property Simplify() As boolean
+                    Returns or sets whether the simplification of the resulting topology is or
+                    should be activated.
+                    Legal values: True to activate the simplification, and False
+                    otherwise.
+                
+                    Example:
+                
+                          This example activates the simplification of the resulting topology
+                          of
+                         the hybTrim hybrid shape trim object.
+                         
+                
+                          hybTrim.Simplify = True
 
         :return: bool
         """
@@ -411,20 +411,20 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the support element.
-                |     This support element may not exist.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in supportElement the support
-                |          element
-                |          of the hybTrim hybrid shape trim object.
-                |          
-                | 
-                |          Dim supportElement As Reference
-                |          Set supportElement = hybTrim.Support
+                Property Support() As Reference
+                    Returns or sets the support element.
+                    This support element may not exist.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                
+                         This example retrieves in supportElement the support
+                         element
+                         of the hybTrim hybrid shape trim object.
+                         
+                
+                         Dim supportElement As Reference
+                         Set supportElement = hybTrim.Support
 
         :return: Reference
         """
@@ -444,14 +444,14 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddElementToKeep(Reference iElement)
-                |     Adds an element to specifications. This element will be
-                |     kept.
-                | 
-                |     Parameters:
-                | 
-                |         iElement
-                |             Element to keep.
+                Sub AddElementToKeep(Reference iElement)
+                    Adds an element to specifications. This element will be
+                    kept.
+                
+                    Parameters:
+                
+                        iElement
+                            Element to keep.
 
         :param Reference i_element:
         :return: None
@@ -463,14 +463,14 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddElementToRemove(Reference iElement)
-                |     Adds an element to specifications. This element will be
-                |     removed.
-                | 
-                |     Parameters:
-                | 
-                |         iElement
-                |             Element to remove.
+                Sub AddElementToRemove(Reference iElement)
+                    Adds an element to specifications. This element will be
+                    removed.
+                
+                    Parameters:
+                
+                        iElement
+                            Element to remove.
 
         :param Reference i_element:
         :return: None
@@ -482,19 +482,19 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddPieceCutter(long iRank,long iCutterElem,long
-                | iOrientation)
-                |     Add piece Cutting element and its orientation. Used for trim pieces of
-                |     shells only
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element (piece) 
-                |         iCutterElemIdx
-                |             index is the index of input shell except in case of multiple intersection between shells where Index=IndexInputShell+NbInputShells*(1-iw) (whith iw=1... : wire index in case of multiple intersection) 
-                |         iOrientation
-                |             cutter element orientation
+                Sub AddPieceCutter(long iRank,long iCutterElem,long
+                iOrientation)
+                    Add piece Cutting element and its orientation. Used for trim pieces of
+                    shells only
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element (piece) 
+                        iCutterElemIdx
+                            index is the index of input shell except in case of multiple intersection between shells where Index=IndexInputShell+NbInputShells*(1-iw) (whith iw=1... : wire index in case of multiple intersection) 
+                        iOrientation
+                            cutter element orientation
 
         :param int i_rank:
         :param int i_cutter_elem:
@@ -508,15 +508,15 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetElem(long iRank) As Reference
-                |     Gets the trimmed feature at a given index.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of one of the trimmed features 
-                |         oElem
-                |             trimmed feature
+                Func GetElem(long iRank) As Reference
+                    Gets the trimmed feature at a given index.
+                
+                    Parameters:
+                
+                        iRank
+                            Index of one of the trimmed features 
+                        oElem
+                            trimmed feature
 
         :param int i_rank:
         :return: Reference
@@ -528,15 +528,15 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetKeptElem(long iRank) As Reference
-                |     Gets the kept feature at a given index.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Kept feature 
-                |         iRank
-                |             Index of one of the kept features
+                Func GetKeptElem(long iRank) As Reference
+                    Gets the kept feature at a given index.
+                
+                    Parameters:
+                
+                        oElem
+                            Kept feature 
+                        iRank
+                            Index of one of the kept features
 
         :param int i_rank:
         :return: Reference
@@ -548,14 +548,14 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbElem() As long
-                |     Gets the number of elements: couple(element, index of portion to keep on
-                |     element).
-                | 
-                |     Parameters:
-                | 
-                |         oNbElem
-                |             Number of elements
+                Func GetNbElem() As long
+                    Gets the number of elements: couple(element, index of portion to keep on
+                    element).
+                
+                    Parameters:
+                
+                        oNbElem
+                            Number of elements
 
         :return: int
         """
@@ -566,13 +566,13 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbElementsToKeep() As long
-                |     Gets the number of elements to keep.
-                | 
-                |     Parameters:
-                | 
-                |         oNbElementsToKeep
-                |             Number of elements to keep
+                Func GetNbElementsToKeep() As long
+                    Gets the number of elements to keep.
+                
+                    Parameters:
+                
+                        oNbElementsToKeep
+                            Number of elements to keep
 
         :return: int
         """
@@ -583,13 +583,13 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbElementsToRemove() As long
-                |     Gets the number of elements to remove.
-                | 
-                |     Parameters:
-                | 
-                |         oNbElementsToRemove
-                |             Number of elements to remove
+                Func GetNbElementsToRemove() As long
+                    Gets the number of elements to remove.
+                
+                    Parameters:
+                
+                        oNbElementsToRemove
+                            Number of elements to remove
 
         :return: int
         """
@@ -600,17 +600,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNextOrientation(long iRank) As long
-                |     Gets Orientation used to compute the feature, referring to the next trimmed
-                |     element.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             index (of one of the trimmed features) - 1 iRank must be greater
-                |             than 1 and lower than the number of elements - 1 
-                |         oOrientation
-                |             Orientation
+                Func GetNextOrientation(long iRank) As long
+                    Gets Orientation used to compute the feature, referring to the next trimmed
+                    element.
+                
+                    Parameters:
+                
+                        iRank
+                            index (of one of the trimmed features) - 1 iRank must be greater
+                            than 1 and lower than the number of elements - 1 
+                        oOrientation
+                            Orientation
 
         :param int i_rank:
         :return: int
@@ -622,21 +622,21 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPieceCutter(long iRank,long iCutterIndex,long oCutterElemIdx,long
-                | oOrientation)
-                |     Gets piece Cutting element and its orientation. Used for trim pieces of
-                |     shells only
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element (piece) 
-                |         oCutterElemIdx
-                |             index is the index of input shell except in case of multiple intersection between shells where Index=IndexInputShell+NbInputShells*(1-iw) (whith iw=1... : wire index in case of multiple intersection) 
-                |         oCutterElem
-                |             cutter element 
-                |         oOrientation
-                |             cutter element orientation
+                Sub GetPieceCutter(long iRank,long iCutterIndex,long oCutterElemIdx,long
+                oOrientation)
+                    Gets piece Cutting element and its orientation. Used for trim pieces of
+                    shells only
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element (piece) 
+                        oCutterElemIdx
+                            index is the index of input shell except in case of multiple intersection between shells where Index=IndexInputShell+NbInputShells*(1-iw) (whith iw=1... : wire index in case of multiple intersection) 
+                        oCutterElem
+                            cutter element 
+                        oOrientation
+                            cutter element orientation
 
         :param int i_rank:
         :param int i_cutter_index:
@@ -651,17 +651,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPieceDiscriminationIndex(long iRank,long oIndex)
-                |     Gets the discrimination index. Used for the trim pieces of shells
-                |     only
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element (piece) 
-                |         oIndex
-                |             Discrimination Index Used to discrimine pieces when cutters
-                |             orientations are not enough
+                Sub GetPieceDiscriminationIndex(long iRank,long oIndex)
+                    Gets the discrimination index. Used for the trim pieces of shells
+                    only
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element (piece) 
+                        oIndex
+                            Discrimination Index Used to discrimine pieces when cutters
+                            orientations are not enough
 
         :param int i_rank:
         :param int o_index:
@@ -674,15 +674,15 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPieceNbCutters(long iRank) As long
-                |     Gets the number of cutters of a piece. Used for trim pieces of shells
-                |     only
-                | 
-                |     Parameters:
-                | 
-                |         oNbCutters
-                |             Number of cutters (except in case of multiple intersection between
-                |             shells)
+                Func GetPieceNbCutters(long iRank) As long
+                    Gets the number of cutters of a piece. Used for trim pieces of shells
+                    only
+                
+                    Parameters:
+                
+                        oNbCutters
+                            Number of cutters (except in case of multiple intersection between
+                            shells)
 
         :param int i_rank:
         :return: int
@@ -694,16 +694,16 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPortionToKeep(long iRank) As long
-                |     Gets a portion to keep number, giving the index of the element. Used for
-                |     trim pieces of wires
-                | 
-                |     Parameters:
-                | 
-                |         oPortionNumber
-                |             Index of portion to keep on the element 
-                |         iRank
-                |             Index of the trimmed element
+                Func GetPortionToKeep(long iRank) As long
+                    Gets a portion to keep number, giving the index of the element. Used for
+                    trim pieces of wires
+                
+                    Parameters:
+                
+                        oPortionNumber
+                            Index of portion to keep on the element 
+                        iRank
+                            Index of the trimmed element
 
         :param int i_rank:
         :return: int
@@ -715,17 +715,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPreviousOrientation(long iRank) As long
-                |     Gets Orientation used to compute the feature, referring to the previous
-                |     trimmed element.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             index (of one of the trimmed features) - 1 iRank must be greater
-                |             than 1 and lower than the number of elements - 1 
-                |         oOrientation
-                |             Orientation
+                Func GetPreviousOrientation(long iRank) As long
+                    Gets Orientation used to compute the feature, referring to the previous
+                    trimmed element.
+                
+                    Parameters:
+                
+                        iRank
+                            index (of one of the trimmed features) - 1 iRank must be greater
+                            than 1 and lower than the number of elements - 1 
+                        oOrientation
+                            Orientation
 
         :param int i_rank:
         :return: int
@@ -737,15 +737,15 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetRemovedElem(long iRank) As Reference
-                |     Gets the removed feature at a given index.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Removed feature 
-                |         iRank
-                |             Index of one of the removed features
+                Func GetRemovedElem(long iRank) As Reference
+                    Gets the removed feature at a given index.
+                
+                    Parameters:
+                
+                        oElem
+                            Removed feature 
+                        iRank
+                            Index of one of the removed features
 
         :param int i_rank:
         :return: Reference
@@ -757,17 +757,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InvertFirstOrientation()
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the first
-                |         orientation used to compute the trim. 
-                |     Example:
-                | 
-                |          This example inverts the first orientation to compute
-                |          the hybTrim hybrid shape trim object.
-                | 
-                |          hybTrim.InvertFirstOrientation
+                Sub InvertFirstOrientation()
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the first
+                        orientation used to compute the trim. 
+                    Example:
+                
+                         This example inverts the first orientation to compute
+                         the hybTrim hybrid shape trim object.
+                
+                         hybTrim.InvertFirstOrientation
 
         :return: None
         """
@@ -778,15 +778,15 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InvertSecondOrientation()
-                | 
-                |     Deprecated:
-                |         V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the second
-                |         orientation used to compute the trim. This example inverts the first
-                |         orientation to compute the hybTrim hybrid shape trim
-                |         object.
-                | 
-                |          hybTrim.InvertSecondOrientation
+                Sub InvertSecondOrientation()
+                
+                    Deprecated:
+                        V5R17 CATIAHybridShapeTrim#SetPreviousOrientation Inverts the second
+                        orientation used to compute the trim. This example inverts the first
+                        orientation to compute the hybTrim hybrid shape trim
+                        object.
+                
+                         hybTrim.InvertSecondOrientation
 
         :return: None
         """
@@ -797,13 +797,13 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveElementToKeep(long iRank)
-                |     Removes an element from specifications.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the kept element.
+                Sub RemoveElementToKeep(long iRank)
+                    Removes an element from specifications.
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the kept element.
 
         :param int i_rank:
         :return: None
@@ -815,13 +815,13 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveElementToRemove(long iRank)
-                |     Removes an element from specifications.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the removed element.
+                Sub RemoveElementToRemove(long iRank)
+                    Removes an element from specifications.
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the removed element.
 
         :param int i_rank:
         :return: None
@@ -833,16 +833,16 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemovePieceCutter(long iRank,long iCutterIndex)
-                |     Remove piece Cutting element and its orientation. Used for trim pieces of
-                |     shells only
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element (piece) 
-                |         iCutterIndex
-                |             Index in cutters list
+                Sub RemovePieceCutter(long iRank,long iCutterIndex)
+                    Remove piece Cutting element and its orientation. Used for trim pieces of
+                    shells only
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element (piece) 
+                        iCutterIndex
+                            Index in cutters list
 
         :param int i_rank:
         :param int i_cutter_index:
@@ -855,16 +855,16 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetElem(long iRank,Reference iElem)
-                |     Modifies the trimmed feature at a given index. Use AddElem method to
-                |     specify a new trimmed element
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of one of the trimmed features 
-                |         iElem
-                |             trimmed feature
+                Sub SetElem(long iRank,Reference iElem)
+                    Modifies the trimmed feature at a given index. Use AddElem method to
+                    specify a new trimmed element
+                
+                    Parameters:
+                
+                        iRank
+                            Index of one of the trimmed features 
+                        iElem
+                            trimmed feature
 
         :param int i_rank:
         :param Reference i_elem:
@@ -877,17 +877,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetNextOrientation(long iRank,long iOrientation)
-                |     Sets the orientation used to compute the feature, referring to the next
-                |     trimmed element.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             index (of one of the trimmed features) - 1 iRank must be greater
-                |             than 1 and lower than the number of elements - 1 
-                |         iOrientation
-                |             Orientation
+                Sub SetNextOrientation(long iRank,long iOrientation)
+                    Sets the orientation used to compute the feature, referring to the next
+                    trimmed element.
+                
+                    Parameters:
+                
+                        iRank
+                            index (of one of the trimmed features) - 1 iRank must be greater
+                            than 1 and lower than the number of elements - 1 
+                        iOrientation
+                            Orientation
 
         :param int i_rank:
         :param int i_orientation:
@@ -900,17 +900,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPieceDiscriminationIndex(long iRank,long iIndex)
-                |     Sets the discrimination index. Used for the trim pieces of shells
-                |     only
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element (piece) 
-                |         iIndex
-                |             Discrimination Index Used to discrimine pieces when cutters
-                |             orientations are not enough
+                Sub SetPieceDiscriminationIndex(long iRank,long iIndex)
+                    Sets the discrimination index. Used for the trim pieces of shells
+                    only
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element (piece) 
+                        iIndex
+                            Discrimination Index Used to discrimine pieces when cutters
+                            orientations are not enough
 
         :param int i_rank:
         :param int i_index:
@@ -923,16 +923,16 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPortionToKeep(long iRank,long iPortionNumber)
-                |     Sets a portion to keep number in Pieces mode. Used for trim pieces of
-                |     wires
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             Index of the trimmed element 
-                |         iPortionNumber
-                |             Index of portion to keep on the element
+                Sub SetPortionToKeep(long iRank,long iPortionNumber)
+                    Sets a portion to keep number in Pieces mode. Used for trim pieces of
+                    wires
+                
+                    Parameters:
+                
+                        iRank
+                            Index of the trimmed element 
+                        iPortionNumber
+                            Index of portion to keep on the element
 
         :param int i_rank:
         :param int i_portion_number:
@@ -945,17 +945,17 @@ class HybridShapeTrim(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPreviousOrientation(long iRank,long iOrientation)
-                |     Sets the orientation used to compute the feature, referring to the previous
-                |     trimmed element.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             index (of one of the trimmed features) - 1 iRank must be greater
-                |             than 1 and lower than the number of elements - 1 
-                |         iOrientation
-                |             Orientation
+                Sub SetPreviousOrientation(long iRank,long iOrientation)
+                    Sets the orientation used to compute the feature, referring to the previous
+                    trimmed element.
+                
+                    Parameters:
+                
+                        iRank
+                            index (of one of the trimmed features) - 1 iRank must be greater
+                            than 1 and lower than the number of elements - 1 
+                        iOrientation
+                            Orientation
 
         :param int i_rank:
         :param int i_orientation:

@@ -18,19 +18,19 @@ class OLPPulse(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpPulse
-                | 
-                | An instruction used to asynchronously change the value of an external
-                | output.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpPulse
+                
+                An instruction used to asynchronously change the value of an external
+                output.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -44,8 +44,8 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Delay() As double
-                |     Get/Set the delay value in seconds.
+                Property Delay() As double
+                    Get/Set the delay value in seconds.
 
         :return: float
         """
@@ -66,8 +66,8 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DelayExpress() As OlpAstBranch
-                |     Get/Set the timeout value in expression.
+                Property DelayExpress() As OlpAstBranch
+                    Get/Set the timeout value in expression.
 
         :return: OLPAstBranch
         """
@@ -88,10 +88,10 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Destination() As OlpVariable
-                |     The variable which is being assigned.
-                |     You can retrieve an existing variable using OlpInstruction.FindVariable or
-                |     create a new one using OlpVariables.
+                Property Destination() As OlpVariable
+                    The variable which is being assigned.
+                    You can retrieve an existing variable using OlpInstruction.FindVariable or
+                    create a new one using OlpVariables.
 
         :return: OLPVariable
         """
@@ -112,8 +112,8 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DestinationExpress() As OlpAstBranch
-                |     The variable which is being assigned as an expression.
+                Property DestinationExpress() As OlpAstBranch
+                    The variable which is being assigned as an expression.
 
         :return: OLPAstBranch
         """
@@ -134,9 +134,9 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Duration() As double
-                |     Get/Set the duration value in seconds.
-                |     Only get the duration value if UseDuration is set to True.
+                Property Duration() As double
+                    Get/Set the duration value in seconds.
+                    Only get the duration value if UseDuration is set to True.
 
         :return: float
         """
@@ -157,8 +157,8 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DurationExpress() As OlpAstBranch
-                |     Get/Set the timeout value in expression.
+                Property DurationExpress() As OlpAstBranch
+                    Get/Set the timeout value in expression.
 
         :return: OLPAstBranch
         """
@@ -179,13 +179,13 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Source() As OlpAstBranch
-                |     The expression that evaluates to the value being assigned.
-                |     When set the OlpAstBranch.Value of the AST tree is used for the expression.
-                |     When retrieved the DELMIA expression is parsed and is returned in the format
-                |     expected by OlpExpressionFixerDownload. You can find more information on the
-                |     OLP Expression AST format in the documentation under Automation | Robotics |
-                |     Robotics Offline Programming | Offline Programming Expression Translation.
+                Property Source() As OlpAstBranch
+                    The expression that evaluates to the value being assigned.
+                    When set the OlpAstBranch.Value of the AST tree is used for the expression.
+                    When retrieved the DELMIA expression is parsed and is returned in the format
+                    expected by OlpExpressionFixerDownload. You can find more information on the
+                    OLP Expression AST format in the documentation under Automation | Robotics |
+                    Robotics Offline Programming | Offline Programming Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -206,10 +206,10 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SourceType() As DELOlpPulseType
-                |     Get/Set the type of Pulse value.
-                |     This is a simple way to access the most common types of pulsed values. If
-                |     this property is set, the Source expression is automatically generated.
+                Property SourceType() As DELOlpPulseType
+                    Get/Set the type of Pulse value.
+                    This is a simple way to access the most common types of pulsed values. If
+                    this property is set, the Source expression is automatically generated.
 
         :return: DELOlpPulseType
         """
@@ -230,10 +230,10 @@ class OLPPulse(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseDuration() As boolean
-                |     Get/Set whether the duration is used.
-                |     If False, then the duration is effectively infinity and the Duration
-                |     property should not be retrieved. If True, then the Duration value is used.
+                Property UseDuration() As boolean
+                    Get/Set whether the duration is used.
+                    If False, then the duration is effectively infinity and the Duration
+                    property should not be retrieved. If True, then the Duration value is used.
 
         :return: bool
         """

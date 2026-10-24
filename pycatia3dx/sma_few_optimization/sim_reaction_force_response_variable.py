@@ -19,57 +19,57 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimReactionForceResponseVariable
-                | 
-                | Represents the reaction force response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimReactionForceResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyReactionForcesResponseVariable As
-                |      SimReactionForceResponseVariable
-                |      Set MyReactionForcesResponseVariable = MyFeatures.Add("SimReactionForceResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimReactionForceResponseVariable named "Reaction Force Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyReactionForcesResponseVariable As
-                |      SimReactionForceResponseVariable
-                |      Set MyReactionForcesResponseVariable = MyFeatures.Item("Reaction Force Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimReactionForceResponseVariable as following:
-                | 
-                |      ...
-                |      MyReactionForcesResponseVariable = MyFeatures.Add("SimReactionForceResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimReactionForceResponseVariable named "Reaction Force Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyReactionForcesResponseVariable = MyFeatures.Item("Reaction Force Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimReactionForceResponseVariable
+                
+                Represents the reaction force response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimReactionForceResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyReactionForcesResponseVariable As
+                     SimReactionForceResponseVariable
+                     Set MyReactionForcesResponseVariable = MyFeatures.Add("SimReactionForceResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimReactionForceResponseVariable named "Reaction Force Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyReactionForcesResponseVariable As
+                     SimReactionForceResponseVariable
+                     Set MyReactionForcesResponseVariable = MyFeatures.Item("Reaction Force Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimReactionForceResponseVariable as following:
+                
+                     ...
+                     MyReactionForcesResponseVariable = MyFeatures.Add("SimReactionForceResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimReactionForceResponseVariable named "Reaction Force Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyReactionForcesResponseVariable = MyFeatures.Item("Reaction Force Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -83,8 +83,8 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the displacement design response.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the displacement design response.
 
         :return: SimAxisSystem
         """
@@ -97,8 +97,8 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDesignResponseDirection
-                |     Returns or sets the direction of displacement design response.
+                Property Direction() As SimDesignResponseDirection
+                    Returns or sets the direction of displacement design response.
 
         :return: int
         """
@@ -119,8 +119,8 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """
@@ -133,7 +133,7 @@ class SimReactionForceResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseAbsoluteValueOfDirectionFlag() As boolean
+                Property UseAbsoluteValueOfDirectionFlag() As boolean
 
         :return: bool
         """

@@ -17,51 +17,51 @@ class SimCyclicSymmetry(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCyclicSymmetry
-                | 
-                | Represents the Cyclic Symmetry object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimCyclicSymmetry as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyCyclicSymmetry As SimCyclicSymmetry
-                |      Set MyCyclicSymmetry = MyAbstractions.Add("SimCyclicSymmetry")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimCyclicSymmetry named
-                |     "Cyclic Symmetry.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyCyclicSymmetry As SimCyclicSymmetry
-                |      Set MyCyclicSymmetry = MyAbstractions.Item("Cyclic Symmetry.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimCyclicSymmetry as following:
-                | 
-                |      ...
-                |      myCyclicSymmetry = myAbstractions.Add("SimCyclicSymmetry")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimCyclicSymmetry named "Cyclic Symmetry.1" as following:
-                | 
-                |      ...
-                |      myCyclicSymmetry = myAbstractions.Item("Cyclic Symmetry.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCyclicSymmetry
+                
+                Represents the Cyclic Symmetry object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimCyclicSymmetry as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyCyclicSymmetry As SimCyclicSymmetry
+                     Set MyCyclicSymmetry = MyAbstractions.Add("SimCyclicSymmetry")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimCyclicSymmetry named
+                    "Cyclic Symmetry.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyCyclicSymmetry As SimCyclicSymmetry
+                     Set MyCyclicSymmetry = MyAbstractions.Item("Cyclic Symmetry.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimCyclicSymmetry as following:
+                
+                     ...
+                     myCyclicSymmetry = myAbstractions.Add("SimCyclicSymmetry")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimCyclicSymmetry named "Cyclic Symmetry.1" as following:
+                
+                     ...
+                     myCyclicSymmetry = myAbstractions.Item("Cyclic Symmetry.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -75,15 +75,15 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdjustSecondarySurfaceInitialPositionFlag() As
-                | boolean
-                |     Retrieves a flag that determines whether the adjustment of the initial
-                |     position of the secondary surface is enabled or not.
-                |     TRUE: all tied nodes are moved in the initial
-                |     configuration.
-                | 
-                |     FALSE: prevents all tied nodes on the secondary surface from moving onto
-                |     the main surface.
+                Property AdjustSecondarySurfaceInitialPositionFlag() As
+                boolean
+                    Retrieves a flag that determines whether the adjustment of the initial
+                    position of the secondary surface is enabled or not.
+                    TRUE: all tied nodes are moved in the initial
+                    configuration.
+                
+                    FALSE: prevents all tied nodes on the secondary surface from moving onto
+                    the main surface.
 
         :return: bool
         """
@@ -104,8 +104,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
-                |     deprecated R425
+                Property AdjustSlaveSurfaceInitialPositionFlag() As boolean
+                    deprecated R425
 
         :return: bool
         """
@@ -126,10 +126,10 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisOfSymmetry() As SimAxis (Read Only)
-                |     Returns the axis of symmetry. The graphical user interface editor for this
-                |     feature only supports geometric axis types. See SimAxisAxisType for additional
-                |     information.
+                Property AxisOfSymmetry() As SimAxis (Read Only)
+                    Returns the axis of symmetry. The graphical user interface editor for this
+                    feature only supports geometric axis types. See SimAxisAxisType for additional
+                    information.
 
         :return: SimAxis
         """
@@ -142,8 +142,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MainSurface() As CATBaseDispatch (Read Only)
-                |     Returns the main surface.
+                Property MainSurface() As CATBaseDispatch (Read Only)
+                    Returns the main surface.
 
         :return: AnyObject
         """
@@ -156,8 +156,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MasterSurface() As CATBaseDispatch (Read Only)
-                |     deprecated R425.
+                Property MasterSurface() As CATBaseDispatch (Read Only)
+                    deprecated R425.
 
         :return: AnyObject
         """
@@ -170,8 +170,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfSectors() As long
-                |     Returns or sets the number of sectors.
+                Property NumberOfSectors() As long
+                    Returns or sets the number of sectors.
 
         :return: int
         """
@@ -192,9 +192,9 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionTolerance() As double
-                |     Returns or sets the position tolerance, which is the distance within which
-                |     slave nodes will be tied to the master surface. Quantity: LENGTH, units: mm
+                Property PositionTolerance() As double
+                    Returns or sets the position tolerance, which is the distance within which
+                    slave nodes will be tied to the master surface. Quantity: LENGTH, units: mm
 
         :return: float
         """
@@ -215,13 +215,13 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionToleranceFlag() As boolean
-                |     Returns or Sets the flag that determines whether the position tolerance is
-                |     used to tie nodes.
-                |     TRUE: specifying position tolerance is allowed.
-                | 
-                |     FALSE: position tolerance will be calculated automatically based on the
-                |     element formulations and types of surfaces used in the constraints.
+                Property PositionToleranceFlag() As boolean
+                    Returns or Sets the flag that determines whether the position tolerance is
+                    used to tie nodes.
+                    TRUE: specifying position tolerance is allowed.
+                
+                    FALSE: position tolerance will be calculated automatically based on the
+                    element formulations and types of surfaces used in the constraints.
 
         :return: bool
         """
@@ -242,8 +242,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondarySurface() As CATBaseDispatch (Read Only)
-                |     Returns the secondary surface.
+                Property SecondarySurface() As CATBaseDispatch (Read Only)
+                    Returns the secondary surface.
 
         :return: AnyObject
         """
@@ -256,8 +256,8 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SlaveSurface() As CATBaseDispatch (Read Only)
-                |     deprecated R425
+                Property SlaveSurface() As CATBaseDispatch (Read Only)
+                    deprecated R425
 
         :return: AnyObject
         """
@@ -270,33 +270,33 @@ class SimCyclicSymmetry(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """

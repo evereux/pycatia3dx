@@ -19,18 +19,18 @@ class OLPTestCase(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpTestCase
-                | 
-                | A test case instruction (TEST, SELECT, SWITCH, CASE).
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpTestCase
+                
+                A test case instruction (TEST, SELECT, SWITCH, CASE).
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -44,8 +44,8 @@ class OLPTestCase(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Cases() As OlpCases (Read Only)
-                |     The list of cases.
+                Property Cases() As OlpCases (Read Only)
+                    The list of cases.
 
         :return: OLPCases
         """
@@ -58,10 +58,10 @@ class OLPTestCase(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefaultCaseInstructions() As OlpInstructions (Read
-                | Only)
-                |     The default case if no other case is matched.
-                |     This method will return Nothing if there is no default case.
+                Property DefaultCaseInstructions() As OlpInstructions (Read
+                Only)
+                    The default case if no other case is matched.
+                    This method will return Nothing if there is no default case.
 
         :return: OLPInstructions
         """
@@ -74,14 +74,14 @@ class OLPTestCase(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Expression() As OlpAstBranch
-                |     The expression that determines which branch is executed.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation.
+                Property Expression() As OlpAstBranch
+                    The expression that determines which branch is executed.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -102,10 +102,10 @@ class OLPTestCase(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HasDefaultCase() As boolean
-                |     Get/Set whether the test case instruction has a default
-                |     case.
-                |     The default case is executed if no other case matches. 
+                Property HasDefaultCase() As boolean
+                    Get/Set whether the test case instruction has a default
+                    case.
+                    The default case is executed if no other case matches. 
 
         :return: bool
         """

@@ -18,15 +18,15 @@ class KinSubCommand(KinCommand):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATKinMechanismIDLItf.KinCommand
-                |                         KinSubCommand
-                | 
-                | The interface to access a CATIAKinSubCommand.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATKinMechanismIDLItf.KinCommand
+                                        KinSubCommand
+                
+                The interface to access a CATIAKinSubCommand.
     
     """
 
@@ -40,14 +40,14 @@ class KinSubCommand(KinCommand):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubMechanism() As KinMechanism (Read Only)
-                |     Returns the sub mechanism owner of the kinematics sub command. An empty
-                |     value means that the command is directly under the macro mechanism
-                |     it-self
-                | 
-                |     Parameters:
-                | 
-                |         oSubMechanism
+                Property SubMechanism() As KinMechanism (Read Only)
+                    Returns the sub mechanism owner of the kinematics sub command. An empty
+                    value means that the command is directly under the macro mechanism
+                    it-self
+                
+                    Parameters:
+                
+                        oSubMechanism
 
         :return: KinMechanism
         """
@@ -60,15 +60,15 @@ class KinSubCommand(KinCommand):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubMechanismProductOccurrence() As VPMOccurrence (Read
-                | Only)
-                |     Returns the VPMOccurrence owner of the sub mechanism. An empty value means
-                |     that the command is directly under the macro mechanism
-                |     it-self
-                | 
-                |     Parameters:
-                | 
-                |         oSubMechanismProdOcc
+                Property SubMechanismProductOccurrence() As VPMOccurrence (Read
+                Only)
+                    Returns the VPMOccurrence owner of the sub mechanism. An empty value means
+                    that the command is directly under the macro mechanism
+                    it-self
+                
+                    Parameters:
+                
+                        oSubMechanismProdOcc
 
         :return: VPMOccurrence
         """

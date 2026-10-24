@@ -18,18 +18,18 @@ class ListParameter(Parameter):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         ListParameter
-                | 
-                | Represents a CATIAListParameter.
-                | 
-                | See also:
-                |     ParametersFactory.CreateList
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        ListParameter
+                
+                Represents a CATIAListParameter.
+                
+                See also:
+                    ParametersFactory.CreateList
     
     """
 
@@ -43,8 +43,8 @@ class ListParameter(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ValueList() As List (Read Only)
-                |     Returns or sets the value of the List object.
+                Property ValueList() As List (Read Only)
+                    Returns or sets the value of the List object.
 
         :return: List
         """

@@ -17,20 +17,20 @@ class OLPTransform(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpTransform
-                | 
-                | Represents an interface that handles basic parameters of a
-                | transform.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A new transform can be created with
-                | OlpTranslatorHelper.CreateTransform.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpTransform
+                
+                Represents an interface that handles basic parameters of a
+                transform.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A new transform can be created with
+                OlpTranslatorHelper.CreateTransform.
     
     """
 
@@ -44,9 +44,9 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsIdentity() As boolean (Read Only)
-                |     True if this transform is an identity transform.
-                |     X, Y, Z, Yaw, Pitch, and Roll are all zero for an identity transform.
+                Property IsIdentity() As boolean (Read Only)
+                    True if this transform is an identity transform.
+                    X, Y, Z, Yaw, Pitch, and Roll are all zero for an identity transform.
 
         :return: bool
         """
@@ -58,24 +58,24 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxisAngle(double oVx,double oVy,double oVz,double
-                | oAngle)
-                |     Method returns the Euler Axis-Angle representation of the
-                |     transform.
-                |     This method assumes returns an unary axis vector and an angle in
-                |     rad
-                |     Role NA
-                | 
-                |     Parameters:
-                | 
-                |         oVx
-                |             X component of rotation vector 
-                |         oVy
-                |             Y component of rotation vector 
-                |         oVz
-                |             Z component of rotation vector 
-                |         oAngle
-                |             Angle (in radians) to rotate around Vx,Vy,Vz
+                Sub GetAxisAngle(double oVx,double oVy,double oVz,double
+                oAngle)
+                    Method returns the Euler Axis-Angle representation of the
+                    transform.
+                    This method assumes returns an unary axis vector and an angle in
+                    rad
+                    Role NA
+                
+                    Parameters:
+                
+                        oVx
+                            X component of rotation vector 
+                        oVy
+                            Y component of rotation vector 
+                        oVz
+                            Z component of rotation vector 
+                        oAngle
+                            Angle (in radians) to rotate around Vx,Vy,Vz
 
         :param float o_vx:
         :param float o_vy:
@@ -90,20 +90,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetOAT(double oO,double oA,double oT)
-                |     Method returns orientation of the transform in form of Kawasaki
-                |     OAT
-                |     Role: Used in robot programming languages such as AS by
-                |     Kawasaki.
-                | 
-                |     Parameters:
-                | 
-                |         oO
-                |             O component of orientation in degrees 
-                |         oA
-                |             A component of orientation in degrees 
-                |         oT
-                |             T component of orientation in degrees
+                Sub GetOAT(double oO,double oA,double oT)
+                    Method returns orientation of the transform in form of Kawasaki
+                    OAT
+                    Role: Used in robot programming languages such as AS by
+                    Kawasaki.
+                
+                    Parameters:
+                
+                        oO
+                            O component of orientation in degrees 
+                        oA
+                            A component of orientation in degrees 
+                        oT
+                            T component of orientation in degrees
 
         :param float o_o:
         :param float o_a:
@@ -117,23 +117,23 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetQuaternions(double oQ1,double oQ2,double oQ3,double
-                | oQ4)
-                |     Method returns orientation of the transform in form of
-                |     quaternions.
-                |     Role: Used in robot programming languages such as Rapid by
-                |     ABB.
-                | 
-                |     Parameters:
-                | 
-                |         oQ1
-                |             1st quaternion value. (W) 
-                |         oQ2
-                |             2nd quaternion value. (X) 
-                |         oQ3
-                |             3rd quaternion value. (Y) 
-                |         oQ4
-                |             4th quaternion value. (Z)
+                Sub GetQuaternions(double oQ1,double oQ2,double oQ3,double
+                oQ4)
+                    Method returns orientation of the transform in form of
+                    quaternions.
+                    Role: Used in robot programming languages such as Rapid by
+                    ABB.
+                
+                    Parameters:
+                
+                        oQ1
+                            1st quaternion value. (W) 
+                        oQ2
+                            2nd quaternion value. (X) 
+                        oQ3
+                            3rd quaternion value. (Y) 
+                        oQ4
+                            4th quaternion value. (Z)
 
         :param float o_q1:
         :param float o_q2:
@@ -148,18 +148,18 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRPY(double oRoll,double oPitch,double oYaw)
-                |     Method returns Roll, Pitch and Yaw values of the
-                |     transform.
-                | 
-                |     Parameters:
-                | 
-                |         oRoll
-                |             Roll angle of the transform in radians 
-                |         oPitch
-                |             Pitch angle of the transform in radians 
-                |         oYaw
-                |             Yaw angle of the transform in radians
+                Sub GetRPY(double oRoll,double oPitch,double oYaw)
+                    Method returns Roll, Pitch and Yaw values of the
+                    transform.
+                
+                    Parameters:
+                
+                        oRoll
+                            Roll angle of the transform in radians 
+                        oPitch
+                            Pitch angle of the transform in radians 
+                        oYaw
+                            Yaw angle of the transform in radians
 
         :param float o_roll:
         :param float o_pitch:
@@ -173,20 +173,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRPY2(double oRoll,double oPitch,double oYaw)
-                |     Method returns Roll, Pitch and Yaw values of the
-                |     transform.
-                |     Role: Used to get alternative rpy solution as needed by
-                |     Kobelco.
-                | 
-                |     Parameters:
-                | 
-                |         oRoll
-                |             Roll angle of the transform in radians 
-                |         oPitch
-                |             Pitch angle of the transform in radians 
-                |         oYaw
-                |             Yaw angle of the transform in radians
+                Sub GetRPY2(double oRoll,double oPitch,double oYaw)
+                    Method returns Roll, Pitch and Yaw values of the
+                    transform.
+                    Role: Used to get alternative rpy solution as needed by
+                    Kobelco.
+                
+                    Parameters:
+                
+                        oRoll
+                            Roll angle of the transform in radians 
+                        oPitch
+                            Pitch angle of the transform in radians 
+                        oYaw
+                            Yaw angle of the transform in radians
 
         :param float o_roll:
         :param float o_pitch:
@@ -200,23 +200,23 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRotationVector(double oVx,double oVy,double oVz)
-                |     Method returns the rotation vector components of the
-                |     transform.
-                |     Rotation Vector is a vector with the same orientation as
-                |     the
-                |     Euler axis representation of the rotation matrix, with its
-                |     length equal to the angle of rotation in radians
-                |     Role: Used for UniversalRobots rotation representation
-                | 
-                |     Parameters:
-                | 
-                |         oVx
-                |             X component of rotation vector 
-                |         oVy
-                |             Y component of rotation vector 
-                |         oVz
-                |             Z component of rotation vector
+                Sub GetRotationVector(double oVx,double oVy,double oVz)
+                    Method returns the rotation vector components of the
+                    transform.
+                    Rotation Vector is a vector with the same orientation as
+                    the
+                    Euler axis representation of the rotation matrix, with its
+                    length equal to the angle of rotation in radians
+                    Role: Used for UniversalRobots rotation representation
+                
+                    Parameters:
+                
+                        oVx
+                            X component of rotation vector 
+                        oVy
+                            Y component of rotation vector 
+                        oVz
+                            Z component of rotation vector
 
         :param float o_vx:
         :param float o_vy:
@@ -230,17 +230,17 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetXYZ(double oX,double oY,double oZ)
-                |     Method returns X, Y and Z values of the transform.
-                | 
-                |     Parameters:
-                | 
-                |         oX
-                |             X coordinate of the transform in meters 
-                |         oY
-                |             Y coordinate of the transform in meters 
-                |         oZ
-                |             Z coordinate of the transform in meters
+                Sub GetXYZ(double oX,double oY,double oZ)
+                    Method returns X, Y and Z values of the transform.
+                
+                    Parameters:
+                
+                        oX
+                            X coordinate of the transform in meters 
+                        oY
+                            Y coordinate of the transform in meters 
+                        oZ
+                            Z coordinate of the transform in meters
 
         :param float o_x:
         :param float o_y:
@@ -254,20 +254,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetZYZ(double oZ1,double oY,double oZ2)
-                |     Method returns orientation of the transform in form of ZYZ Euler
-                |     angles
-                |     Role: Used in robot programming languages such as Daihen
-                |     ASCII.
-                | 
-                |     Parameters:
-                | 
-                |         oZ1
-                |             Z component of orientation in degrees 
-                |         oY
-                |             Y component of orientation in degrees 
-                |         oZ2
-                |             Z component of orientation in degrees
+                Sub GetZYZ(double oZ1,double oY,double oZ2)
+                    Method returns orientation of the transform in form of ZYZ Euler
+                    angles
+                    Role: Used in robot programming languages such as Daihen
+                    ASCII.
+                
+                    Parameters:
+                
+                        oZ1
+                            Z component of orientation in degrees 
+                        oY
+                            Y component of orientation in degrees 
+                        oZ2
+                            Z component of orientation in degrees
 
         :param float o_z1:
         :param float o_y:
@@ -281,14 +281,14 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Inverse() As OlpTransform
-                |     Method returns an inverse of the current transform.
-                |     Role: The method calculates and returns a transform that is the inverse of
-                |     the current transform. Location parameters of the current transform will not be
-                |     modified
-                | 
-                |     Returns:
-                |         Transform that is the inverse of the current transform.
+                Func Inverse() As OlpTransform
+                    Method returns an inverse of the current transform.
+                    Role: The method calculates and returns a transform that is the inverse of
+                    the current transform. Location parameters of the current transform will not be
+                    modified
+                
+                    Returns:
+                        Transform that is the inverse of the current transform.
 
         :return: OLPTransform
         """
@@ -299,15 +299,15 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsEqualTo(OlpTransform iTransform) As boolean
-                |     Test if 2 transforms are equivalent.
-                |     Role: 2 transforms are equivalent if the positions are within 0.01mm and
-                |     the rotation is within 0.01 radians. Two transforms may be equivalent even if
-                |     the euler angles are not equal due to the problems of multiple equivalent euler
-                |     angle combinations.
-                | 
-                |     Returns:
-                |         TRUE if the transforms are equivalent.
+                Func IsEqualTo(OlpTransform iTransform) As boolean
+                    Test if 2 transforms are equivalent.
+                    Role: 2 transforms are equivalent if the positions are within 0.01mm and
+                    the rotation is within 0.01 radians. Two transforms may be equivalent even if
+                    the euler angles are not equal due to the problems of multiple equivalent euler
+                    angle combinations.
+                
+                    Returns:
+                        TRUE if the transforms are equivalent.
 
         :param OLPTransform i_transform:
         :return: bool
@@ -319,20 +319,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Multiply(OlpTransform iTransform) As OlpTransform
-                |     Method performs post-multiplication of the current transform with the
-                |     transform passed as an argument.
-                |     Role: The method returns a result of multiplication of the current
-                |     transform with the transform passed as an argument. Location parameters of the
-                |     current transform will not be modified
-                | 
-                |     Parameters:
-                | 
-                |         iTransform
-                |             Transform to use in post-multiplication 
-                | 
-                |     Returns:
-                |         The result of the multiplication.
+                Func Multiply(OlpTransform iTransform) As OlpTransform
+                    Method performs post-multiplication of the current transform with the
+                    transform passed as an argument.
+                    Role: The method returns a result of multiplication of the current
+                    transform with the transform passed as an argument. Location parameters of the
+                    current transform will not be modified
+                
+                    Parameters:
+                
+                        iTransform
+                            Transform to use in post-multiplication 
+                
+                    Returns:
+                        The result of the multiplication.
 
         :param OLPTransform i_transform:
         :return: OLPTransform
@@ -344,24 +344,24 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAxisAngle(double iVx,double iVy,double iVz,double
-                | iAngle)
-                |     Method sets the Euler Axis-Angle representation of the
-                |     transform.
-                |     This method assumes returns an unary axis vector and an angle in
-                |     rad
-                |     Role NA
-                | 
-                |     Parameters:
-                | 
-                |         iVx
-                |             X component of rotation vector 
-                |         iVy
-                |             Y component of rotation vector 
-                |         iVz
-                |             Z component of rotation vector 
-                |         iAngle
-                |             Angle (in radians) to rotate around Vx,Vy,Vz
+                Sub SetAxisAngle(double iVx,double iVy,double iVz,double
+                iAngle)
+                    Method sets the Euler Axis-Angle representation of the
+                    transform.
+                    This method assumes returns an unary axis vector and an angle in
+                    rad
+                    Role NA
+                
+                    Parameters:
+                
+                        iVx
+                            X component of rotation vector 
+                        iVy
+                            Y component of rotation vector 
+                        iVz
+                            Z component of rotation vector 
+                        iAngle
+                            Angle (in radians) to rotate around Vx,Vy,Vz
 
         :param float i_vx:
         :param float i_vy:
@@ -377,30 +377,30 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNSAVectors(double iNx,double iNy,double iNz,double iSx,double iSy,double
-                | iSz,double iAx,double iAy,double iAz)
-                |     Method sets the vector components of the transform.
-                | 
-                |     Parameters:
-                | 
-                |         iNx
-                |             X component of x vector 
-                |         iNy
-                |             Y component of x vector 
-                |         iNz
-                |             Z component of x vector 
-                |         iSx
-                |             X component of y vector 
-                |         iSy
-                |             Y component of y vector 
-                |         iSz
-                |             Z component of y vector 
-                |         iAx
-                |             X component of z vector 
-                |         iAy
-                |             Y component of z vector 
-                |         iAz
-                |             Z component of z vector
+                Sub SetNSAVectors(double iNx,double iNy,double iNz,double iSx,double iSy,double
+                iSz,double iAx,double iAy,double iAz)
+                    Method sets the vector components of the transform.
+                
+                    Parameters:
+                
+                        iNx
+                            X component of x vector 
+                        iNy
+                            Y component of x vector 
+                        iNz
+                            Z component of x vector 
+                        iSx
+                            X component of y vector 
+                        iSy
+                            Y component of y vector 
+                        iSz
+                            Z component of y vector 
+                        iAx
+                            X component of z vector 
+                        iAy
+                            Y component of z vector 
+                        iAz
+                            Z component of z vector
 
         :param float i_nx:
         :param float i_ny:
@@ -420,20 +420,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOAT(double iO,double iA,double iT)
-                |     Method sets orientation of the transform in form of Kawasaki
-                |     OAT
-                |     Role: Used in robot programming languages such as AS by
-                |     Kawasaki.
-                | 
-                |     Parameters:
-                | 
-                |         iO
-                |             O component of orientation in degrees 
-                |         iA
-                |             A component of orientation in degrees 
-                |         iT
-                |             T component of orientation in degrees
+                Sub SetOAT(double iO,double iA,double iT)
+                    Method sets orientation of the transform in form of Kawasaki
+                    OAT
+                    Role: Used in robot programming languages such as AS by
+                    Kawasaki.
+                
+                    Parameters:
+                
+                        iO
+                            O component of orientation in degrees 
+                        iA
+                            A component of orientation in degrees 
+                        iT
+                            T component of orientation in degrees
 
         :param float i_o:
         :param float i_a:
@@ -447,23 +447,23 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetQuaternions(double iQ1,double iQ2,double iQ3,double
-                | iQ4)
-                |     Method sets orientation of the transform in form of
-                |     quaternions.
-                |     Role: Used in robot programming languages such as Rapid by
-                |     ABB.
-                | 
-                |     Parameters:
-                | 
-                |         iQ1
-                |             1st quaternion value. (W) 
-                |         iQ2
-                |             2nd quaternion value. (X) 
-                |         iQ3
-                |             3rd quaternion value. (Y) 
-                |         iQ4
-                |             4th quaternion value. (Z)
+                Sub SetQuaternions(double iQ1,double iQ2,double iQ3,double
+                iQ4)
+                    Method sets orientation of the transform in form of
+                    quaternions.
+                    Role: Used in robot programming languages such as Rapid by
+                    ABB.
+                
+                    Parameters:
+                
+                        iQ1
+                            1st quaternion value. (W) 
+                        iQ2
+                            2nd quaternion value. (X) 
+                        iQ3
+                            3rd quaternion value. (Y) 
+                        iQ4
+                            4th quaternion value. (Z)
 
         :param float i_q1:
         :param float i_q2:
@@ -478,17 +478,17 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRPY(double iRoll,double iPitch,double iYaw)
-                |     Method sets orientation of the transform in RPY format
-                | 
-                |     Parameters:
-                | 
-                |         iRoll
-                |             Roll angle of the transform in radians 
-                |         iPitch
-                |             Pitch angle of the transform in radians 
-                |         iYaw
-                |             Yaw angle of the transform in radians
+                Sub SetRPY(double iRoll,double iPitch,double iYaw)
+                    Method sets orientation of the transform in RPY format
+                
+                    Parameters:
+                
+                        iRoll
+                            Roll angle of the transform in radians 
+                        iPitch
+                            Pitch angle of the transform in radians 
+                        iYaw
+                            Yaw angle of the transform in radians
 
         :param float i_roll:
         :param float i_pitch:
@@ -502,23 +502,23 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRotationVector(double iVx,double iVy,double iVz)
-                |     Method sets the rotation vector components of the
-                |     transform.
-                |     A Rotation Vector is a vector with the same orientation as
-                |     the
-                |     Euler axis representation of the rotation matrix, with its
-                |     length equal to the angle of rotation in radians
-                |     Role: Used for UniversalRobots rotation representation
-                | 
-                |     Parameters:
-                | 
-                |         iVx
-                |             X component of rotation vector 
-                |         iVy
-                |             Y component of rotation vector 
-                |         iVz
-                |             Z component of rotation vector
+                Sub SetRotationVector(double iVx,double iVy,double iVz)
+                    Method sets the rotation vector components of the
+                    transform.
+                    A Rotation Vector is a vector with the same orientation as
+                    the
+                    Euler axis representation of the rotation matrix, with its
+                    length equal to the angle of rotation in radians
+                    Role: Used for UniversalRobots rotation representation
+                
+                    Parameters:
+                
+                        iVx
+                            X component of rotation vector 
+                        iVy
+                            Y component of rotation vector 
+                        iVz
+                            Z component of rotation vector
 
         :param float i_vx:
         :param float i_vy:
@@ -532,17 +532,17 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetXYZ(double iX,double iY,double iZ)
-                |     Method set X, Y and Z values of the transform.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             X coordinate of the transform in meters 
-                |         iY
-                |             Y coordinate of the transform in meters 
-                |         iZ
-                |             Z coordinate of the transform in meters
+                Sub SetXYZ(double iX,double iY,double iZ)
+                    Method set X, Y and Z values of the transform.
+                
+                    Parameters:
+                
+                        iX
+                            X coordinate of the transform in meters 
+                        iY
+                            Y coordinate of the transform in meters 
+                        iZ
+                            Z coordinate of the transform in meters
 
         :param float i_x:
         :param float i_y:
@@ -556,20 +556,20 @@ class OLPTransform(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetZYZ(double iZ1,double iY,double iZ2)
-                |     Method converts ZYZ angles to Euler angles (RPY) and sets
-                |     it
-                |     Role: Used in robot programming languages such as Daihen
-                |     ASCII.
-                | 
-                |     Parameters:
-                | 
-                |         iZ1
-                |             Z component of orientation in degrees 
-                |         iY
-                |             Y component of orientation in degrees 
-                |         iZ2
-                |             Z component of orientation in degrees 
+                Sub SetZYZ(double iZ1,double iY,double iZ2)
+                    Method converts ZYZ angles to Euler angles (RPY) and sets
+                    it
+                    Role: Used in robot programming languages such as Daihen
+                    ASCII.
+                
+                    Parameters:
+                
+                        iZ1
+                            Z component of orientation in degrees 
+                        iY
+                            Y component of orientation in degrees 
+                        iZ2
+                            Z component of orientation in degrees 
 
         :param float i_z1:
         :param float i_y:

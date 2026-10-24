@@ -17,14 +17,14 @@ class ManufacturingActivityToolAxis(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingActivityToolAxis
-                | 
-                | Interface to handle with Tool Axis of Manufacturing Activity.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingActivityToolAxis
+                
+                Interface to handle with Tool Axis of Manufacturing Activity.
     
     """
 
@@ -38,23 +38,23 @@ class ManufacturingActivityToolAxis(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetToolAxis(double oToolAxisX,double oToolAxisY,double oToolAxisZ,long
-                | oType,CATBSTR oMode)
-                |     Retrieves the tool axis information.
-                | 
-                |     Parameters:
-                | 
-                |         oToolAxis
-                |             X Y Z the tool axis coordinates 
-                |         oType
-                |             the tool axis type 
-                | 
-                |     See also:
-                |         DELIMfgActivityToolAxis::MfgTypeOfToolAxis
-                |     Parameters:
-                | 
-                |         oMode
-                |             the tool axis mode
+                Sub GetToolAxis(double oToolAxisX,double oToolAxisY,double oToolAxisZ,long
+                oType,CATBSTR oMode)
+                    Retrieves the tool axis information.
+                
+                    Parameters:
+                
+                        oToolAxis
+                            X Y Z the tool axis coordinates 
+                        oType
+                            the tool axis type 
+                
+                    See also:
+                        DELIMfgActivityToolAxis::MfgTypeOfToolAxis
+                    Parameters:
+                
+                        oMode
+                            the tool axis mode
 
         :param float o_tool_axis_x:
         :param float o_tool_axis_y:
@@ -70,16 +70,16 @@ class ManufacturingActivityToolAxis(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetToolAxis(double iToolAxisX,double iToolAxisY,double iToolAxisZ,CATBSTR
-                | iMode)
-                |     Sets the tool axis information.
-                | 
-                |     Parameters:
-                | 
-                |         iToolAxis
-                |             X Y Z the tool axis coordinates 
-                |         oMode
-                |             the tool axis mode ("Manual")
+                Sub SetToolAxis(double iToolAxisX,double iToolAxisY,double iToolAxisZ,CATBSTR
+                iMode)
+                    Sets the tool axis information.
+                
+                    Parameters:
+                
+                        iToolAxis
+                            X Y Z the tool axis coordinates 
+                        oMode
+                            the tool axis mode ("Manual")
 
         :param float i_tool_axis_x:
         :param float i_tool_axis_y:

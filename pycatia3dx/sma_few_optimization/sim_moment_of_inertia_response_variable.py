@@ -17,57 +17,57 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimMomentOfInertiaResponseVariable
-                | 
-                | Represents the moment of inertia response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMomentOfInertiaResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMomentOfInertiaResponseVariable As
-                |      SimMomentOfInertiaResponseVariable
-                |      Set MyMomentOfInertiaResponseVariable = MyFeatures.Add("SimMomentOfInertiaResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimMomentOfInertiaResponseVariable named "Moment Of Inertia Response
-                |     Variable.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMomentOfInertiaResponseVariable As
-                |      SimMomentOfInertiaResponseVariable
-                |      Set MyMomentOfInertiaResponseVariable = MyFeatures.Item("Moment Of Inertia Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMomentOfInertiaResponseVariable as following:
-                | 
-                |      ...
-                |      MyMomentOfInertiaResponseVariable = MyFeatures.Add("SimMomentOfInertiaResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimMomentOfInertiaResponseVariable named "Moment Of Inertia Response
-                |     Variable.1" as following:
-                | 
-                |      ...
-                |      MyMomentOfInertiaResponseVariable = MyFeatures.Item("Moment Of Inertia Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimMomentOfInertiaResponseVariable
+                
+                Represents the moment of inertia response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMomentOfInertiaResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMomentOfInertiaResponseVariable As
+                     SimMomentOfInertiaResponseVariable
+                     Set MyMomentOfInertiaResponseVariable = MyFeatures.Add("SimMomentOfInertiaResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimMomentOfInertiaResponseVariable named "Moment Of Inertia Response
+                    Variable.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMomentOfInertiaResponseVariable As
+                     SimMomentOfInertiaResponseVariable
+                     Set MyMomentOfInertiaResponseVariable = MyFeatures.Item("Moment Of Inertia Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMomentOfInertiaResponseVariable as following:
+                
+                     ...
+                     MyMomentOfInertiaResponseVariable = MyFeatures.Add("SimMomentOfInertiaResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimMomentOfInertiaResponseVariable named "Moment Of Inertia Response
+                    Variable.1" as following:
+                
+                     ...
+                     MyMomentOfInertiaResponseVariable = MyFeatures.Item("Moment Of Inertia Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -81,8 +81,8 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the displacement design response.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the displacement design response.
 
         :return: SimAxisSystem
         """
@@ -95,8 +95,8 @@ class SimMomentOfInertiaResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Component() As SimMomentOfInertiaComponent
-                |     Returns or sets the component of Moment of Inertia Design Response.
+                Property Component() As SimMomentOfInertiaComponent
+                    Returns or sets the component of Moment of Inertia Design Response.
 
         :return: int
         """

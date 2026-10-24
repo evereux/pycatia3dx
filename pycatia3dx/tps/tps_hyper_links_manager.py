@@ -18,17 +18,17 @@ class TPSHyperLinksManager(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSHyperLinksManager
-                | 
-                | Interface for the Technological Product Specification (TPS)
-                | objects.
-                | Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
-                | specification related to surfaces.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSHyperLinksManager
+                
+                Interface for the Technological Product Specification (TPS)
+                objects.
+                Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
+                specification related to surfaces.
     
     """
 
@@ -41,13 +41,13 @@ class TPSHyperLinksManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbrURL2() As long
-                |     Gets the number of URL.
-                | 
-                |     Parameters:
-                | 
-                |         oNumberOfURL
-                |             returns param oNumberOfURL.
+                Func GetNbrURL2() As long
+                    Gets the number of URL.
+                
+                    Parameters:
+                
+                        oNumberOfURL
+                            returns param oNumberOfURL.
 
         :return: int
         """
@@ -58,15 +58,15 @@ class TPSHyperLinksManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func URL(CATVariant iIndex) As CATBSTR
-                |     Retrieves URL.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of URL. 
-                |         oUrl
-                |             URL 
+                Func URL(CATVariant iIndex) As CATBSTR
+                    Retrieves URL.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of URL. 
+                        oUrl
+                            URL 
 
         :param CATVariant i_index:
         :return: str

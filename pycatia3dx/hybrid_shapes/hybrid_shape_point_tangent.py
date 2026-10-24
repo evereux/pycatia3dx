@@ -19,30 +19,30 @@ class HybridShapePointTangent(Point):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Point
-                |                             HybridShapePointTangent
-                | 
-                | Point Tangent.
-                | Role: Allows to access data of the point feature created as follow
-                | :
-                | The tangent to the curve at this point is colinear to a given
-                | direction.
-                | Note: The resulting feature can contain several points.
-                | 
-                | See also:
-                |     Length
-                | See also:
-                |     Reference
-                | See also:
-                |     HybridShapeDirection
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Point
+                                            HybridShapePointTangent
+                
+                Point Tangent.
+                Role: Allows to access data of the point feature created as follow
+                :
+                The tangent to the curve at this point is colinear to a given
+                direction.
+                Note: The resulting feature can contain several points.
+                
+                See also:
+                    Length
+                See also:
+                    Reference
+                See also:
+                    HybridShapeDirection
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -56,17 +56,17 @@ class HybridShapePointTangent(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Curve() As Reference
-                |     Returns or Gets the supporting curve.
-                |     Sub-element(s) supported (see Boundary object): Edge.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oCurve the supporting Curve for the
-                |         PointTangent feature.
-                | 
-                |          Dim oCurve As CATIAReference   
-                |          Set oCurve  = PointTangent.Curve
+                Property Curve() As Reference
+                    Returns or Gets the supporting curve.
+                    Sub-element(s) supported (see Boundary object): Edge.
+                
+                    Example
+                    :
+                        This example retrieves in oCurve the supporting Curve for the
+                        PointTangent feature.
+                
+                         Dim oCurve As CATIAReference   
+                         Set oCurve  = PointTangent.Curve
 
         :return: Reference
         """
@@ -87,16 +87,16 @@ class HybridShapePointTangent(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction() As HybridShapeDirection
-                |     Returns or Sets the direction.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oDirection the tangent direction use to
-                |         compute on supporting curve the PointTangent feature.
-                | 
-                |          Dim oDirection As CATIAHybridShapeDirection
-                |          Set oDirection  = PointTangent.Direction
+                Property Direction() As HybridShapeDirection
+                    Returns or Sets the direction.
+                
+                    Example
+                    :
+                        This example retrieves in oDirection the tangent direction use to
+                        compute on supporting curve the PointTangent feature.
+                
+                         Dim oDirection As CATIAHybridShapeDirection
+                         Set oDirection  = PointTangent.Direction
 
         :return: HybridShapeDirection
         """

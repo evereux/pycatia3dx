@@ -18,31 +18,31 @@ class SimLoadSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLoadSet
-                | 
-                | Represents the Load Set object.
-                | 
-                | Example:
-                |     Given a SimFeatures collection you can retrieve a SimLoadSet object named
-                |     as "Load Set.1" through the following code:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyLoadSet As CATBaseDispatch
-                |      Set MyLoadSet = MyFeatures.Item("Load Set.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures collection you can retrieve a SimLoadSet object named
-                |     as "Load Set.1" through the following code:
-                | 
-                |      ...
-                |      myLoadSet = myFeatures.Item("Load Set.1")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLoadSet
+                
+                Represents the Load Set object.
+                
+                Example:
+                    Given a SimFeatures collection you can retrieve a SimLoadSet object named
+                    as "Load Set.1" through the following code:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyLoadSet As CATBaseDispatch
+                     Set MyLoadSet = MyFeatures.Item("Load Set.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures collection you can retrieve a SimLoadSet object named
+                    as "Load Set.1" through the following code:
+                
+                     ...
+                     myLoadSet = myFeatures.Item("Load Set.1")
     
     """
 
@@ -56,8 +56,8 @@ class SimLoadSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureStates() As SimFeatureStates (Read Only)
-                |     Retrieves the collection of available feature states. 
+                Property FeatureStates() As SimFeatureStates (Read Only)
+                    Retrieves the collection of available feature states. 
 
         :return: SimFeatureStates
         """

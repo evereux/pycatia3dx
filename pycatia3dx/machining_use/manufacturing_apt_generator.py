@@ -16,18 +16,18 @@ class ManufacturingAptGenerator(ManufacturingOutputGenerator):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    MachiningUseItf.ManufacturingOutputGenerator
-                |                         ManufacturingAPTGenerator
-                | 
-                | Generator of APT output machining code.
-                | 
-                | See also:
-                |     DELMIAManufacturingOutputGenerator
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   MachiningUseItf.ManufacturingOutputGenerator
+                                        ManufacturingAPTGenerator
+                
+                Generator of APT output machining code.
+                
+                See also:
+                    DELMIAManufacturingOutputGenerator
     
     """
 

@@ -20,14 +20,14 @@ class AppliedMaterials(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AppliedMaterials
-                | 
-                | Manages material application collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AppliedMaterials
+                
+                Manages material application collection.
     
     """
 
@@ -40,24 +40,24 @@ class AppliedMaterials(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(AppliedMaterial iAppliedMaterial)
-                |     Allow to add an applied-material.
-                | 
-                |     Parameters:
-                | 
-                |         iAppliedMaterial
-                |             the applied-material to add 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to add an
-                |          applied-material.
-                |            
-                | 
-                |            Dim ListAppliedMaterial As CATIAAppliedMaterials
-                |            Dim iAppliedMaterial As CATIAAppliedMaterial
-                |            ...
-                |            ListAppliedMaterial.Add iAppliedMaterial
+                Sub Add(AppliedMaterial iAppliedMaterial)
+                    Allow to add an applied-material.
+                
+                    Parameters:
+                
+                        iAppliedMaterial
+                            the applied-material to add 
+                
+                    Example:
+                
+                         This example shows you how to add an
+                         applied-material.
+                           
+                
+                           Dim ListAppliedMaterial As CATIAAppliedMaterials
+                           Dim iAppliedMaterial As CATIAAppliedMaterial
+                           ...
+                           ListAppliedMaterial.Add iAppliedMaterial
 
         :param AppliedMaterial i_applied_material:
         :return: None
@@ -69,26 +69,26 @@ class AppliedMaterials(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AppliedMaterial
-                |     Allow to get an applied-material.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index in the list 
-                |         oAppliedMaterial
-                |             the retrieved applied-material 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to get an
-                |          applied-material.
-                |            
-                | 
-                |            Dim ListAppliedMaterial As CATIAAppliedMaterials
-                |            Dim oAppliedMaterial As CATIAAppliedMaterial
-                |            ...
-                |            Set oAppliedMaterial = ListAppliedMaterial.Item (1)
+                Func Item(CATVariant iIndex) As AppliedMaterial
+                    Allow to get an applied-material.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index in the list 
+                        oAppliedMaterial
+                            the retrieved applied-material 
+                
+                    Example:
+                
+                         This example shows you how to get an
+                         applied-material.
+                           
+                
+                           Dim ListAppliedMaterial As CATIAAppliedMaterials
+                           Dim oAppliedMaterial As CATIAAppliedMaterial
+                           ...
+                           Set oAppliedMaterial = ListAppliedMaterial.Item (1)
 
         :param CATVariant i_index:
         :return: AppliedMaterial
@@ -100,24 +100,24 @@ class AppliedMaterials(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(AppliedMaterial iAppliedMaterial)
-                |     Allow to remove an applied-material.
-                | 
-                |     Parameters:
-                | 
-                |         iAppliedMaterial
-                |             the applied-material to remove 
-                | 
-                |     Example:
-                | 
-                |          This example shows you how to remove an
-                |          applied-material.
-                |            
-                | 
-                |            Dim ListAppliedMaterial As CATIAAppliedMaterials
-                |            Dim iAppliedMaterial As CATIAAppliedMaterial
-                |            ...
-                |            ListAppliedMaterial.Remove iAppliedMaterial
+                Sub Remove(AppliedMaterial iAppliedMaterial)
+                    Allow to remove an applied-material.
+                
+                    Parameters:
+                
+                        iAppliedMaterial
+                            the applied-material to remove 
+                
+                    Example:
+                
+                         This example shows you how to remove an
+                         applied-material.
+                           
+                
+                           Dim ListAppliedMaterial As CATIAAppliedMaterials
+                           Dim iAppliedMaterial As CATIAAppliedMaterial
+                           ...
+                           ListAppliedMaterial.Remove iAppliedMaterial
 
         :param AppliedMaterial i_applied_material:
         :return: None

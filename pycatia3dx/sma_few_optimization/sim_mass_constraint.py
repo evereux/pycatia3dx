@@ -17,52 +17,52 @@ class SimMassConstraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMassConstraint
-                | 
-                | Represents the mass constraint object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMassConstraint as following :
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMassConstraint As SimMassConstraint
-                |      Set MyMassConstraint = MyFeatures.Add("SimMassConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures< / code> object, you can retrieve a
-                |     SimMassConstraint< / code> named " Mass Constraint.1" as following
-                |     :
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMassConstraint As SimMassConstraint
-                |      Set MyMassConstraint = MyFeatures.Item("Mass Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMassConstraint as following:
-                | 
-                |      ...
-                |      MyMassConstraint = MyFeatures.Add("SimMassConstraint")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimMassConstraint named "Mass Constraint.1" as following:
-                | 
-                |      ...
-                |      MyMassConstraint = MyFeatures.Item("Mass Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMassConstraint
+                
+                Represents the mass constraint object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMassConstraint as following :
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMassConstraint As SimMassConstraint
+                     Set MyMassConstraint = MyFeatures.Add("SimMassConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures< / code> object, you can retrieve a
+                    SimMassConstraint< / code> named " Mass Constraint.1" as following
+                    :
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMassConstraint As SimMassConstraint
+                     Set MyMassConstraint = MyFeatures.Item("Mass Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMassConstraint as following:
+                
+                     ...
+                     MyMassConstraint = MyFeatures.Add("SimMassConstraint")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimMassConstraint named "Mass Constraint.1" as following:
+                
+                     ...
+                     MyMassConstraint = MyFeatures.Item("Mass Constraint.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimMassConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimMassConstraintType
-                |     Returns or sets the type of mass constraint.
+                Property Type() As SimMassConstraintType
+                    Returns or sets the type of mass constraint.
 
         :return: int
         """
@@ -97,13 +97,13 @@ class SimMassConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAbsoluteMassTarget(double oVal)
-                |     Gets the absolute mass target.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: WEIGHT, units:kg
+                Sub GetAbsoluteMassTarget(double oVal)
+                    Gets the absolute mass target.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: WEIGHT, units:kg
 
         :param float o_val:
         :return: None
@@ -115,13 +115,13 @@ class SimMassConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTargetMassRatio(double oVal)
-                |     Gets the relative mass target.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: WEIGHT, units:%
+                Sub GetTargetMassRatio(double oVal)
+                    Gets the relative mass target.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: WEIGHT, units:%
 
         :param float o_val:
         :return: None
@@ -133,13 +133,13 @@ class SimMassConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAbsoluteMassTarget(double iVal)
-                |     Sets the absolute mass target.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: WEIGHT, units:kg
+                Sub SetAbsoluteMassTarget(double iVal)
+                    Sets the absolute mass target.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: WEIGHT, units:kg
 
         :param float i_val:
         :return: None
@@ -151,13 +151,13 @@ class SimMassConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTargetMassRatio(double iVal)
-                |     Sets the relative mass target.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: WEIGHT, units:%
+                Sub SetTargetMassRatio(double iVal)
+                    Sets the relative mass target.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: WEIGHT, units:%
 
         :param float i_val:
         :return: None

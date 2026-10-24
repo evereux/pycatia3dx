@@ -18,18 +18,18 @@ class OLPIf(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpIf
-                | 
-                | A conditional instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpIf
+                
+                A conditional instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,14 +43,14 @@ class OLPIf(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Condition() As OlpAstBranch
-                |     The expression that determines which branch is executed.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation.
+                Property Condition() As OlpAstBranch
+                    The expression that determines which branch is executed.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -71,8 +71,8 @@ class OLPIf(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElseInstructions() As OlpInstructions (Read Only)
-                |     The list of instructions executed if the condition is false.
+                Property ElseInstructions() As OlpInstructions (Read Only)
+                    The list of instructions executed if the condition is false.
 
         :return: OLPInstructions
         """
@@ -85,8 +85,8 @@ class OLPIf(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThenInstructions() As OlpInstructions (Read Only)
-                |     The list of instructions executed if the condition is true.
+                Property ThenInstructions() As OlpInstructions (Read Only)
+                    The list of instructions executed if the condition is true.
 
         :return: OLPInstructions
         """

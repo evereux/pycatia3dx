@@ -18,14 +18,14 @@ class Text(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Text
-                | 
-                | Interface for the TPS Text object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Text
+                
+                Interface for the TPS Text object.
     
     """
 
@@ -39,8 +39,8 @@ class Text(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Gets the annotation's text.
+                Property Text() As CATBSTR
+                    Gets the annotation's text.
 
         :return: str
         """
@@ -60,8 +60,8 @@ class Text(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingText
-                |     Retrieves Drafting text.
+                Func Get2dAnnot() As DrawingText
+                    Retrieves Drafting text.
 
         :return: DrawingText
         """
@@ -72,8 +72,8 @@ class Text(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface. 
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface. 
 
         :return: TPSParallelOnScreen
         """

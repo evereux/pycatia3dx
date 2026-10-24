@@ -23,28 +23,28 @@ class ExpertRuleBaseRuntime(Relation):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeObject
-                |                        
-                |                        KnowledgeIDLItf.KnowledgeActivateObject
-                |                             KnowledgeIDLItf.Relation
-                |                                 ExpertRuleBaseRuntime
-                | 
-                | Represents the Runtime part of the RuleBase.
-                | Example of how to retrieve such an object.
-                | 
-                |  Dim RBSet as ExpertRuleBasesSet
-                |  Set RBSet = ...
-                |  Dim RB as ExpertRuleBaseRuntime
-                |  Set RB = RBSet.Collection.Item(1)
-                |  
-                | 
-                | See also:
-                |     ExpertRuleBasesSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeObject
+                                       
+                                       KnowledgeIDLItf.KnowledgeActivateObject
+                                            KnowledgeIDLItf.Relation
+                                                ExpertRuleBaseRuntime
+                
+                Represents the Runtime part of the RuleBase.
+                Example of how to retrieve such an object.
+                
+                 Dim RBSet as ExpertRuleBasesSet
+                 Set RBSet = ...
+                 Dim RB as ExpertRuleBaseRuntime
+                 Set RB = RBSet.Collection.Item(1)
+                 
+                
+                See also:
+                    ExpertRuleBasesSet
     
     """
 
@@ -58,14 +58,14 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReportDescriptionLength() As CatDescriptionLengthType
-                |     Returns or sets the Report Description Length (For Text option
-                |     only).
-                | 
-                |     0
-                |         ShortText 
-                |     1
-                |         LongText
+                Property ReportDescriptionLength() As CatDescriptionLengthType
+                    Returns or sets the Report Description Length (For Text option
+                    only).
+                
+                    0
+                        ShortText 
+                    1
+                        LongText
 
         :return: int
         """
@@ -86,17 +86,17 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReportOutPutFormat() As CatOutPutFormatType
-                |     Returns or sets the Report OutPut Format.
-                | 
-                |     0
-                |         Html 
-                |     1
-                |         Text 
-                |     2
-                |         Print 
-                |     3
-                |         Email
+                Property ReportOutPutFormat() As CatOutPutFormatType
+                    Returns or sets the Report OutPut Format.
+                
+                    0
+                        Html 
+                    1
+                        Text 
+                    2
+                        Print 
+                    3
+                        Email
 
         :return: int
         """
@@ -117,8 +117,8 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReportPath() As CATBSTR
-                |     Returns or sets the Report output path.
+                Property ReportPath() As CATBSTR
+                    Returns or sets the Report output path.
 
         :return: str
         """
@@ -139,15 +139,15 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReportShowResult() As CatShowResultType
-                |     Returns or sets the option for sorting the report.
-                | 
-                |     0
-                |         ByRule 
-                |     1
-                |         ByObject 
-                |     2
-                |         ByState
+                Property ReportShowResult() As CatShowResultType
+                    Returns or sets the option for sorting the report.
+                
+                    0
+                        ByRule 
+                    1
+                        ByObject 
+                    2
+                        ByState
 
         :return: int
         """
@@ -168,27 +168,27 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RuleBaseEdition() As ExpertRuleBase (Read Only)
-                |     Returns the editable object corresponding to this rulebase. Be careful
-                |     that, according to your licence, or the type of rulebase you're handling, you
-                |     may not have the right to edit the rulebase.
-                | 
-                |     Parameters:
-                | 
-                |         oRuleBaseEdition
-                |             the editable object corresponding to this rulebase
-                |             
-                | 
-                |     Returns:
-                |         the editable object corresponding to this rulebase. 
-                |     Example:
-                | 
-                |          Dim aRBEdition As CATIAExpertRuleBase
-                |          Set aRBEdition = aRBRuntime.RuleBaseEdition
-                | 
-                |          If not(aRBEdition is Nothing) Then
-                |            ' .. action on the editable rulebase
-                |          End if
+                Property RuleBaseEdition() As ExpertRuleBase (Read Only)
+                    Returns the editable object corresponding to this rulebase. Be careful
+                    that, according to your licence, or the type of rulebase you're handling, you
+                    may not have the right to edit the rulebase.
+                
+                    Parameters:
+                
+                        oRuleBaseEdition
+                            the editable object corresponding to this rulebase
+                            
+                
+                    Returns:
+                        the editable object corresponding to this rulebase. 
+                    Example:
+                
+                         Dim aRBEdition As CATIAExpertRuleBase
+                         Set aRBEdition = aRBRuntime.RuleBaseEdition
+                
+                         If not(aRBEdition is Nothing) Then
+                           ' .. action on the editable rulebase
+                         End if
 
         :return: ExpertRuleBase
         """
@@ -201,9 +201,9 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RuleSet() As ExpertRuleSet (Read Only)
-                |     Returns the Set linked to the RuleBase. This is the main RuleSet that
-                |     contains all the RuleBase components.
+                Property RuleSet() As ExpertRuleSet (Read Only)
+                    Returns the Set linked to the RuleBase. This is the main RuleSet that
+                    contains all the RuleBase components.
 
         :return: ExpertRuleSet
         """
@@ -216,8 +216,8 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolveType() As CatSolveType
-                |     Returns or sets the solve option.
+                Property SolveType() As CatSolveType
+                    Returns or sets the solve option.
 
         :return: int
         """
@@ -238,15 +238,15 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TextVisualization() As CatVisualizationType
-                |     Returns or sets the Report option for visualization.
-                | 
-                |     0
-                |         Passed 
-                |     1
-                |         Failed 
-                |     2
-                |         Both
+                Property TextVisualization() As CatVisualizationType
+                    Returns or sets the Report option for visualization.
+                
+                    0
+                        Passed 
+                    1
+                        Failed 
+                    2
+                        Both
 
         :return: int
         """
@@ -267,17 +267,17 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WorkingMode() As CatWorkingMode
-                |     Returns or sets the WorkingMode option.
-                | 
-                |     0
-                |         WholeObjects 
-                |     1
-                |         OccurenceObjects 
-                |     2
-                |         PLMObjects 
-                |     3
-                |         AllOccurenceObjects
+                Property WorkingMode() As CatWorkingMode
+                    Returns or sets the WorkingMode option.
+                
+                    0
+                        WholeObjects 
+                    1
+                        OccurenceObjects 
+                    2
+                        PLMObjects 
+                    3
+                        AllOccurenceObjects
 
         :return: int
         """
@@ -297,11 +297,11 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AccurateType() As CATBSTR
-                |     Returns as a string the type of component.
-                | 
-                |     Returns:
-                |         A string among ("ExpertRuleBase", "ExpertRuleBaseRuntime")
+                Func AccurateType() As CATBSTR
+                    Returns as a string the type of component.
+                
+                    Returns:
+                        A string among ("ExpertRuleBase", "ExpertRuleBaseRuntime")
 
         :return: str
         """
@@ -312,26 +312,26 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddFact(AnyObject iFact)
-                |     Adds new fact to the rule base resolution.
-                | 
-                |     Parameters:
-                | 
-                |         iFact
-                |             Fact to be added 
-                | 
-                |     Example:
-                | 
-                |          Dim aRuleBaseSet as ExpertRuleBasesSet
-                |          Set aRuleBaseSet  = ...
-                |          Dim rulebase as ExpertRuleBaseRuntime
-                |          Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                | 
-                |          Dim part1 as Part
-                |          Set part1 = ...
-                |          Dim pad3 as Shape
-                |          Set pad3 = part1.MainBody.Shapes.Item("Pad3")
-                |          rulebase.AddFact (pad3)
+                Sub AddFact(AnyObject iFact)
+                    Adds new fact to the rule base resolution.
+                
+                    Parameters:
+                
+                        iFact
+                            Fact to be added 
+                
+                    Example:
+                
+                         Dim aRuleBaseSet as ExpertRuleBasesSet
+                         Set aRuleBaseSet  = ...
+                         Dim rulebase as ExpertRuleBaseRuntime
+                         Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                
+                         Dim part1 as Part
+                         Set part1 = ...
+                         Dim pad3 as Shape
+                         Set pad3 = part1.MainBody.Shapes.Item("Pad3")
+                         rulebase.AddFact (pad3)
 
         :param AnyObject i_fact:
         :return: None
@@ -343,13 +343,13 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRootOfFacts(AnyObject iRootFacts)
-                |     Adds a new root of facts to the rule base.
-                | 
-                |     Parameters:
-                | 
-                |         iRootFacts
-                |             root of facts to be added.
+                Sub AddRootOfFacts(AnyObject iRootFacts)
+                    Adds a new root of facts to the rule base.
+                
+                    Parameters:
+                
+                        iRootFacts
+                            root of facts to be added.
 
         :param AnyObject i_root_facts:
         :return: None
@@ -361,18 +361,18 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Deduce()
-                |     Launch a Forward chaining Solve on the current RuleBase. 
-                | Example:
-                | 
-                |      Dim aRuleBaseSet as ExpertRuleBasesSet
-                |      Set aRuleBaseSet  = ...
-                |      Dim rulebase as ExpertRuleBaseRuntime
-                |      Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                |      rulebase.Deduce ()
-                |      
-                | 
-                |     To operate this solve, you must have the Knowledge Expert Runtime license.
+                Sub Deduce()
+                    Launch a Forward chaining Solve on the current RuleBase. 
+                Example:
+                
+                     Dim aRuleBaseSet as ExpertRuleBasesSet
+                     Set aRuleBaseSet  = ...
+                     Dim rulebase as ExpertRuleBaseRuntime
+                     Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                     rulebase.Deduce ()
+                     
+                
+                    To operate this solve, you must have the Knowledge Expert Runtime license.
 
         :return: None
         """
@@ -383,16 +383,16 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Fingerprint() As boolean
-                |     Returns the Fingerprint information. The fingerprint indicates
-                |     if the last result of the rulebase is relevant regarding to
-                |     the objects the rule base has checked. In other words, if the
-                |     part has evolved since last Deduce, the fingerprint is false.
-                |     Be careful : on volatile rulebases ( ExpertRuleBase.VolatileCopy ),
-                |     it raises an error.
-                | 
-                |     Returns:
-                |         Fingerprint information
+                Func Fingerprint() As boolean
+                    Returns the Fingerprint information. The fingerprint indicates
+                    if the last result of the rulebase is relevant regarding to
+                    the objects the rule base has checked. In other words, if the
+                    part has evolved since last Deduce, the fingerprint is false.
+                    Be careful : on volatile rulebases ( ExpertRuleBase.VolatileCopy ),
+                    it raises an error.
+                
+                    Returns:
+                        Fingerprint information
 
         :return: bool
         """
@@ -403,11 +403,11 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfRootsOfFacts() As long
-                |     Retrieves the number of roots of facts of the rule base.
-                | 
-                |     Returns:
-                |         Number of roots of facts.
+                Func GetNumberOfRootsOfFacts() As long
+                    Retrieves the number of roots of facts of the rule base.
+                
+                    Returns:
+                        Number of roots of facts.
 
         :return: int
         """
@@ -418,13 +418,13 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetRootsOfFacts(CATSafeArrayVariant oRootsOfFacts)
-                |     Retrieves all the roots of facts from the rule base.
+                Sub GetRootsOfFacts(CATSafeArrayVariant oRootsOfFacts)
+                    Retrieves all the roots of facts from the rule base.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oRootsOfFacts
-                |             array of roots of facts.
+                        oRootsOfFacts
+                            array of roots of facts.
 
         :param tuple o_roots_of_facts:
         :return: None
@@ -452,19 +452,19 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Import(ExpertRuleSet iRuleSet,boolean iForce)
-                |     Import from RuleSet.
-                | 
-                |     Parameters:
-                | 
-                |         iRuleSet
-                |             CATIAExpertRuleSet : the RuleSet user want to import. 
-                |         iForce
-                |             Boolean : if True (= 1), then if imported rules already
-                |             exist in target representation, rules of target representation are replaced.
-                | 
-                |         To operate this import, you must have the Knowledge Expert Runtime
-                |         license.
+                Sub Import(ExpertRuleSet iRuleSet,boolean iForce)
+                    Import from RuleSet.
+                
+                    Parameters:
+                
+                        iRuleSet
+                            CATIAExpertRuleSet : the RuleSet user want to import. 
+                        iForce
+                            Boolean : if True (= 1), then if imported rules already
+                            exist in target representation, rules of target representation are replaced.
+                
+                        To operate this import, you must have the Knowledge Expert Runtime
+                        license.
 
         :param ExpertRuleSet i_rule_set:
         :param bool i_force:
@@ -477,26 +477,26 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ReloadFact(AnyObject iFact)
-                |     Reloads a fact in the rule base resolution.
-                | 
-                |     Parameters:
-                | 
-                |         iFact
-                |             Fact to be reloaded 
-                | 
-                |     Example:
-                | 
-                |          Dim aRuleBaseSet as ExpertRuleBasesSet
-                |          Set aRuleBaseSet  = ...
-                |          Dim rulebase as ExpertRuleBaseRuntime
-                |          Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                | 
-                |          Dim part1 as Part
-                |          Set part1 = ...
-                |          Dim pad3 as Shape
-                |          Set pad3 = part1.MainBody.Shapes.Item("Pad3")
-                |          rulebase.ReloadFact (pad3)
+                Sub ReloadFact(AnyObject iFact)
+                    Reloads a fact in the rule base resolution.
+                
+                    Parameters:
+                
+                        iFact
+                            Fact to be reloaded 
+                
+                    Example:
+                
+                         Dim aRuleBaseSet as ExpertRuleBasesSet
+                         Set aRuleBaseSet  = ...
+                         Dim rulebase as ExpertRuleBaseRuntime
+                         Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                
+                         Dim part1 as Part
+                         Set part1 = ...
+                         Dim pad3 as Shape
+                         Set pad3 = part1.MainBody.Shapes.Item("Pad3")
+                         rulebase.ReloadFact (pad3)
 
         :param AnyObject i_fact:
         :return: None
@@ -508,26 +508,26 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveFact(AnyObject iFact)
-                |     Removes a fact from the rule base resolution.
-                | 
-                |     Parameters:
-                | 
-                |         iFact
-                |             Fact to be removed 
-                | 
-                |     Example:
-                | 
-                |          Dim aRuleBaseSet as ExpertRuleBasesSet
-                |          Set aRuleBaseSet  = ...
-                |          Dim rulebase as ExpertRuleBaseRuntime
-                |          Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                | 
-                |          Dim part1 as Part
-                |          Set part1 = ...
-                |          Dim pad3 as Shape
-                |          Set pad3 = part1.MainBody.Shapes.Item("Pad3")
-                |          rulebase.RemoveFact (pad3)
+                Sub RemoveFact(AnyObject iFact)
+                    Removes a fact from the rule base resolution.
+                
+                    Parameters:
+                
+                        iFact
+                            Fact to be removed 
+                
+                    Example:
+                
+                         Dim aRuleBaseSet as ExpertRuleBasesSet
+                         Set aRuleBaseSet  = ...
+                         Dim rulebase as ExpertRuleBaseRuntime
+                         Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                
+                         Dim part1 as Part
+                         Set part1 = ...
+                         Dim pad3 as Shape
+                         Set pad3 = part1.MainBody.Shapes.Item("Pad3")
+                         rulebase.RemoveFact (pad3)
 
         :param AnyObject i_fact:
         :return: None
@@ -539,13 +539,13 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveRootOfFacts(AnyObject iRootFacts)
-                |     Removes a root of facts from the rule base.
-                | 
-                |     Parameters:
-                | 
-                |         iRootFacts
-                |             root of facts to be removed.
+                Sub RemoveRootOfFacts(AnyObject iRootFacts)
+                    Removes a root of facts from the rule base.
+                
+                    Parameters:
+                
+                        iRootFacts
+                            root of facts to be removed.
 
         :param AnyObject i_root_facts:
         :return: None
@@ -557,13 +557,13 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Report(boolean reallyStartBrowser)
-                |     Launch a Report. The default output format is HTML
-                | 
-                |     Parameters:
-                | 
-                |         reallyStartBrowser
-                |             Boolean : if True (= 1), then the browser is started on the report To operate this solve, you must have the Knowledge Expert Runtime license.
+                Sub Report(boolean reallyStartBrowser)
+                    Launch a Report. The default output format is HTML
+                
+                    Parameters:
+                
+                        reallyStartBrowser
+                            Boolean : if True (= 1), then the browser is started on the report To operate this solve, you must have the Knowledge Expert Runtime license.
 
         :param bool really_start_browser:
         :return: None
@@ -575,24 +575,24 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Solve(boolean iCompleteSolve)
-                |     Launch a Forward chaining Solve on the current RuleBase.
-                | 
-                |     Parameters:
-                | 
-                |         iCompleteSolve
-                |             Boolean : if False (= 0), use this value when you use AddFact 
-                |         Example:
-                | 
-                |              Dim aRuleBaseSet as ExpertRuleBasesSet
-                |              Set aRuleBaseSet  = ...
-                |              Dim rulebase as ExpertRuleBaseRuntime
-                |              Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                |              rulebase.Solve(false) ()
-                |              
-                | 
-                |         To operate this solve, you must have the Knowledge Expert Runtime
-                |         license.
+                Sub Solve(boolean iCompleteSolve)
+                    Launch a Forward chaining Solve on the current RuleBase.
+                
+                    Parameters:
+                
+                        iCompleteSolve
+                            Boolean : if False (= 0), use this value when you use AddFact 
+                        Example:
+                
+                             Dim aRuleBaseSet as ExpertRuleBasesSet
+                             Set aRuleBaseSet  = ...
+                             Dim rulebase as ExpertRuleBaseRuntime
+                             Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                             rulebase.Solve(false) ()
+                             
+                
+                        To operate this solve, you must have the Knowledge Expert Runtime
+                        license.
 
         :param bool i_complete_solve:
         :return: None
@@ -604,25 +604,25 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SolveWithLoad(boolean iCompleteSolve)
-                |     Launch a Forward chaining Solve on the current RuleBase. All
-                |     representations not loaded will be loaded.
-                | 
-                |     Parameters:
-                | 
-                |         iCompleteSolve
-                |             Boolean : if False (= 0), use this value when you use AddFact 
-                |         Example:
-                | 
-                |              Dim aRuleBaseSet as ExpertRuleBasesSet
-                |              Set aRuleBaseSet  = ...
-                |              Dim rulebase as ExpertRuleBaseRuntime
-                |              Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
-                |              rulebase.SolveWithLoad(false) ()
-                |              
-                | 
-                |         To operate this solve, you must have the Knowledge Expert Runtime
-                |         license.
+                Sub SolveWithLoad(boolean iCompleteSolve)
+                    Launch a Forward chaining Solve on the current RuleBase. All
+                    representations not loaded will be loaded.
+                
+                    Parameters:
+                
+                        iCompleteSolve
+                            Boolean : if False (= 0), use this value when you use AddFact 
+                        Example:
+                
+                             Dim aRuleBaseSet as ExpertRuleBasesSet
+                             Set aRuleBaseSet  = ...
+                             Dim rulebase as ExpertRuleBaseRuntime
+                             Set rulebase = aRuleBaseSet.Collection.Item("RuleBase")
+                             rulebase.SolveWithLoad(false) ()
+                             
+                
+                        To operate this solve, you must have the Knowledge Expert Runtime
+                        license.
 
         :param bool i_complete_solve:
         :return: None
@@ -634,14 +634,14 @@ class ExpertRuleBaseRuntime(Relation):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func SynchronizeStatus() As boolean
-                |     Returns the Synchronize information. The synchronize status
-                |     indicates for a linked rule base if the rulebase is synchronized.
-                |     Be careful : on volatile rulebases ( ExpertRuleBase.VolatileCopy ),
-                |     it raises an error.
-                | 
-                |     Returns:
-                |         Synchronize status
+                Func SynchronizeStatus() As boolean
+                    Returns the Synchronize information. The synchronize status
+                    indicates for a linked rule base if the rulebase is synchronized.
+                    Be careful : on volatile rulebases ( ExpertRuleBase.VolatileCopy ),
+                    it raises an error.
+                
+                    Returns:
+                        Synchronize status
 
         :return: bool
         """

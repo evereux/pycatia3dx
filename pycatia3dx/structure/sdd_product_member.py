@@ -19,16 +19,16 @@ class SddProductMember(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddProductMember
-                | 
-                | Object for representing Structure Detail Design Product
-                | Member.
-                | Role: To manage the SDD member at product level.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddProductMember
+                
+                Object for representing Structure Detail Design Product
+                Member.
+                Role: To manage the SDD member at product level.
     
     """
 
@@ -42,21 +42,21 @@ class SddProductMember(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SddMember() As SddMember (Read Only)
-                |     Returns the Member geometric function into this SDD product
-                |     Member.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjSddMember the SddMember
-                |              object
-                |              of the SddProductMember
-                |              
-                | 
-                |              Dim ObjSddMember As SddMember 
-                |              Set ObjSddMember = ObjSddProductMember.SddMember
+                Property SddMember() As SddMember (Read Only)
+                    Returns the Member geometric function into this SDD product
+                    Member.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjSddMember the SddMember
+                             object
+                             of the SddProductMember
+                             
+                
+                             Dim ObjSddMember As SddMember 
+                             Set ObjSddMember = ObjSddProductMember.SddMember
 
         :return: SddMember
         """
@@ -69,22 +69,22 @@ class SddProductMember(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SddProductMember
-                |              
-                | 
-                |              Dim ObjSddProductMember As SddProductMember
-                |              Set ObjSddProductMember = ObjSddFactory.AddProductMember
-                |              Dim ObjMaterialMngt As StrMaterialMngt
-                |              Set ObjMaterialMngt = ObjSddProductMember.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjMaterialMngt the StrMaterialMngt
+                             object
+                             of the SddProductMember
+                             
+                
+                             Dim ObjSddProductMember As SddProductMember
+                             Set ObjSddProductMember = ObjSddFactory.AddProductMember
+                             Dim ObjMaterialMngt As StrMaterialMngt
+                             Set ObjMaterialMngt = ObjSddProductMember.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -96,8 +96,8 @@ class SddProductMember(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the plate
+                Sub Update()
+                    Updates the plate
 
         :return: None
         """

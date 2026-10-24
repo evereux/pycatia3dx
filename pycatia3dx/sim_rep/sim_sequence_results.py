@@ -19,14 +19,14 @@ class SimSequenceResults(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSequenceResults
-                | 
-                | Interface representing Simulation Sequence Results.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSequenceResults
+                
+                Interface representing Simulation Sequence Results.
     
     """
 
@@ -40,8 +40,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsCurrent() As boolean (Read Only)
-                |     Retrieves the current status of the sequence results.
+                Property IsCurrent() As boolean (Read Only)
+                    Retrieves the current status of the sequence results.
 
         :return: bool
         """
@@ -54,8 +54,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsSuccessfullyComputed() As boolean (Read Only)
-                |     Retrieves the compute status of the sequence results.
+                Property IsSuccessfullyComputed() As boolean (Read Only)
+                    Retrieves the compute status of the sequence results.
 
         :return: bool
         """
@@ -68,8 +68,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioResults() As SimScenarioResults (Read Only)
-                |     Retrieves the collection of all scenario results. SimScenarioResults
+                Property ScenarioResults() As SimScenarioResults (Read Only)
+                    Retrieves the collection of all scenario results. SimScenarioResults
 
         :return: SimScenarioResults
         """
@@ -82,8 +82,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioToCompute() As SimScenarioSpec
-                |     Sets or retrieves the scenario to compute.
+                Property ScenarioToCompute() As SimScenarioSpec
+                    Sets or retrieves the scenario to compute.
 
         :return: SimScenarioSpec
         """
@@ -104,8 +104,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sequence() As SimSequence (Read Only)
-                |     Retrieves the sequence associated to this sequence results. SimSequence
+                Property Sequence() As SimSequence (Read Only)
+                    Retrieves the sequence associated to this sequence results. SimSequence
 
         :return: SimSequence
         """
@@ -117,8 +117,8 @@ class SimSequenceResults(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update(SimScenarioSpec ispScenarioToCompute)
-                |     Updates and computes the specified scenario. SimScenarioSpec
+                Sub Update(SimScenarioSpec ispScenarioToCompute)
+                    Updates and computes the specified scenario. SimScenarioSpec
 
         :param SimScenarioSpec isp_scenario_to_compute:
         :return: None

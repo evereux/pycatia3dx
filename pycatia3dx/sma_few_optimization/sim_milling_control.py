@@ -17,51 +17,51 @@ class SimMillingControl(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMillingControl
-                | 
-                | Represents the casting control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMillingControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMillingControl As SimMillingControl
-                |      Set MyMillingControl = MyFeatures.Add("SimMillingControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimMillingControl named "Milling Control.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyMillingControl As SimMillingControl
-                |      Set MyMillingControl = MyFeatures.Item("Milling Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimMillingControl as following:
-                | 
-                |      ...
-                |      MyMillingControl = MyFeatures.Add("SimMillingControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimMillingControl named "Milling Variable.1" as following:
-                | 
-                |      ...
-                |      MyMillingControl = MyFeatures.Item("Milling Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMillingControl
+                
+                Represents the casting control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMillingControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMillingControl As SimMillingControl
+                     Set MyMillingControl = MyFeatures.Add("SimMillingControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimMillingControl named "Milling Control.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyMillingControl As SimMillingControl
+                     Set MyMillingControl = MyFeatures.Item("Milling Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimMillingControl as following:
+                
+                     ...
+                     MyMillingControl = MyFeatures.Add("SimMillingControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimMillingControl named "Milling Variable.1" as following:
+                
+                     ...
+                     MyMillingControl = MyFeatures.Item("Milling Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -75,8 +75,8 @@ class SimMillingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MillingAxis() As CATBaseDispatch (Read Only)
-                |     Returns the milling axis direction.
+                Property MillingAxis() As CATBaseDispatch (Read Only)
+                    Returns the milling axis direction.
 
         :return: AnyObject
         """
@@ -89,10 +89,10 @@ class SimMillingControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PreventMaterialRemovalFlag() As boolean
-                |     Returns or sets the flag to prevent material removal in preserved region's shadow.
-                |     FALSE : No prevention for material removal,
-                |     TRUE : Prevention for material removal in applied.
+                Property PreventMaterialRemovalFlag() As boolean
+                    Returns or sets the flag to prevent material removal in preserved region's shadow.
+                    FALSE : No prevention for material removal,
+                    TRUE : Prevention for material removal in applied.
 
         :return: bool
         """

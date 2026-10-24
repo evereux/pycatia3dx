@@ -18,17 +18,17 @@ class Camera3D(Camera):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Camera
-                |                         Camera3D
-                | 
-                | Represents a 3D camera.
-                | The 3D camera stores a 3D viewpoint, that is a Viewpoint3D
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Camera
+                                        Camera3D
+                
+                Represents a 3D camera.
+                The 3D camera stores a 3D viewpoint, that is a Viewpoint3D
+                object.
     
     """
 
@@ -42,20 +42,20 @@ class Camera3D(Camera):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Viewpoint3D() As Viewpoint3D
-                |     Returns or sets the 3D viewpoint of a 3D camera.
-                | 
-                |     Example:
-                |         Assume the active window is a SpecsAndGeomWindow object. This example
-                |         retrieves the Viewpoint3D of the active 3D viewer and creates from it a
-                |         Camera3D you handle using the MyCamera variable. Then the camera zoom is set to
-                |         2, and the camera's viewpoint is assigned to the active
-                |         viewer.
-                | 
-                |          Dim MyCamera As Camera3D
-                |          Set MyCamera = CATIA.ActiveWindow.ActiveViewer.NewCamera()
-                |          MyCamera.Viewpoint3D.Zoom = 2
-                |          CATIA.ActiveWindow.ActiveViewer.Viewpoint3D = MyCamera.Viewpoint3D
+                Property Viewpoint3D() As Viewpoint3D
+                    Returns or sets the 3D viewpoint of a 3D camera.
+                
+                    Example:
+                        Assume the active window is a SpecsAndGeomWindow object. This example
+                        retrieves the Viewpoint3D of the active 3D viewer and creates from it a
+                        Camera3D you handle using the MyCamera variable. Then the camera zoom is set to
+                        2, and the camera's viewpoint is assigned to the active
+                        viewer.
+                
+                         Dim MyCamera As Camera3D
+                         Set MyCamera = CATIA.ActiveWindow.ActiveViewer.NewCamera()
+                         MyCamera.Viewpoint3D.Zoom = 2
+                         CATIA.ActiveWindow.ActiveViewer.Viewpoint3D = MyCamera.Viewpoint3D
 
         :return: Viewpoint3D
         """

@@ -17,14 +17,14 @@ class Shape3D(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Shape3D
-                | 
-                | Represents the 3DShape Representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Shape3D
+                
+                Represents the 3DShape Representation.
     
     """
 
@@ -38,14 +38,14 @@ class Shape3D(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Part() As CATBaseDispatch (Read Only)
-                |     Returns the root Part object from the current 3D shape.
-                | 
-                |     Example:
-                |         The following example retrieves in RootPart the root Part object of the
-                |         active 3D shape:
-                | 
-                |          Set RootPart = Shape3D.Part
+                Property Part() As CATBaseDispatch (Read Only)
+                    Returns the root Part object from the current 3D shape.
+                
+                    Example:
+                        The following example retrieves in RootPart the root Part object of the
+                        active 3D shape:
+                
+                         Set RootPart = Shape3D.Part
 
         :return: AnyObject
         """

@@ -18,18 +18,18 @@ class UserPattern(Pattern):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.TransformationShape
-                |                             CATPartIDLItf.Pattern
-                |                                 UserPattern
-                | 
-                | Represents the user pattern.
-                | The shape is copied along user's positions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.TransformationShape
+                                            CATPartIDLItf.Pattern
+                                                UserPattern
+                
+                Represents the user pattern.
+                The shape is copied along user's positions.
     
     """
 
@@ -43,14 +43,14 @@ class UserPattern(Pattern):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorPoint() As AnyObject
-                |     Returns the anchor point of the user pattern.
-                | 
-                |     Example:
-                |         The following example returns in anchor the anchor point of the Pattern
-                |         firstPattern:
-                | 
-                |          Set anchor = firstPattern.AnchorPoint
+                Property AnchorPoint() As AnyObject
+                    Returns the anchor point of the user pattern.
+                
+                    Example:
+                        The following example returns in anchor the anchor point of the Pattern
+                        firstPattern:
+                
+                         Set anchor = firstPattern.AnchorPoint
 
         :return: AnyObject
         """
@@ -71,14 +71,14 @@ class UserPattern(Pattern):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureToLocatePositions() As AnyObject (Read Only)
-                |     Returns the collection of feature to locate instances.
-                | 
-                |     Example:
-                |         The following example returns in list the list of feature to locate
-                |         instances of the Pattern firstPattern:
-                | 
-                |          Set list = firstPattern.FeatureToLocatePositions
+                Property FeatureToLocatePositions() As AnyObject (Read Only)
+                    Returns the collection of feature to locate instances.
+                
+                    Example:
+                        The following example returns in list the list of feature to locate
+                        instances of the Pattern firstPattern:
+                
+                         Set list = firstPattern.FeatureToLocatePositions
 
         :return: AnyObject
         """
@@ -90,20 +90,20 @@ class UserPattern(Pattern):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddFeatureToLocatePositions(AnyObject
-                | iFeatureToLocatePositions)
-                |     Adds a new feature to locate instances.
-                | 
-                |     Parameters:
-                | 
-                |         iFeatureToLocatePositions
-                |             The new object containing points of positioning 
-                | 
-                |     Example:
-                |         The following example adds the new feature to locate instances
-                |         of the Pattern firstPattern:
-                | 
-                |          call firstPattern.AddFeatureToLocatePositions(object)
+                Sub AddFeatureToLocatePositions(AnyObject
+                iFeatureToLocatePositions)
+                    Adds a new feature to locate instances.
+                
+                    Parameters:
+                
+                        iFeatureToLocatePositions
+                            The new object containing points of positioning 
+                
+                    Example:
+                        The following example adds the new feature to locate instances
+                        of the Pattern firstPattern:
+                
+                         call firstPattern.AddFeatureToLocatePositions(object)
 
         :param AnyObject i_feature_to_locate_positions:
         :return: None

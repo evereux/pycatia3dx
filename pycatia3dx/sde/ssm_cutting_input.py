@@ -18,14 +18,14 @@ class SsmCuttingInput(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmCuttingInput
-                | 
-                | Role: This interface is specific to Cutting input
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmCuttingInput
+                
+                Role: This interface is specific to Cutting input
     
     """
 
@@ -39,16 +39,16 @@ class SsmCuttingInput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InputElement() As Reference (Read Only)
-                |     Get InputElement
-                | 
-                |     Parameters:
-                | 
-                |         oInputElement
-                |             [out] InputElement 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property InputElement() As Reference (Read Only)
+                    Get InputElement
+                
+                    Parameters:
+                
+                        oInputElement
+                            [out] InputElement 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: Reference
         """

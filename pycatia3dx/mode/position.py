@@ -17,18 +17,18 @@ class Position(Move):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfModelInterfaces.Move
-                |                         Position
-                | 
-                | Interface to manage object position.
-                | Role:The position object is the 3D-axis system associated with an object. This
-                | interface provides methods to retrieve or set the relative or absolute position
-                | of the item, in the coordinate space of the context.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfModelInterfaces.Move
+                                        Position
+                
+                Interface to manage object position.
+                Role:The position object is the 3D-axis system associated with an object. This
+                interface provides methods to retrieve or set the relative or absolute position
+                of the item, in the coordinate space of the context.
     
     """
 
@@ -41,28 +41,28 @@ class Position(Move):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAbsComponents(CATSafeArrayVariant oAxisComponentsArray)
-                |     Returns the object's position in a global context. This returns the 3D-axis
-                |     system associated with the object.
+                Sub GetAbsComponents(CATSafeArrayVariant oAxisComponentsArray)
+                    Returns the object's position in a global context. This returns the 3D-axis
+                    system associated with the object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oAxisComponentsArray
-                |             The array used to store the twelve components retrieved from the
-                |             objet's position. The first nine represent succcessively the components of the
-                |             x-axis, y-axis, and z-axis. The last three represent the coordinates of the
-                |             origin point.
+                        oAxisComponentsArray
+                            The array used to store the twelve components retrieved from the
+                            objet's position. The first nine represent succcessively the components of the
+                            x-axis, y-axis, and z-axis. The last three represent the coordinates of the
+                            origin point.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example retrieves in oAxisComponentsArray
-                |          the 3D-axis system components from
-                |          the Position object associated with MyObject:
+                         This example retrieves in oAxisComponentsArray
+                         the 3D-axis system components from
+                         the Position object associated with MyObject:
                 |
                 |
-                |          Dim oAxisComponentsArray ( 11 )
-                |          MyObject.Position.GetAbsComponents
-                |          oAxisComponentsArray
+                         Dim oAxisComponentsArray ( 11 )
+                         MyObject.Position.GetAbsComponents
+                         oAxisComponentsArray
 
         :param tuple o_axis_components_array:
         :return: None
@@ -90,27 +90,27 @@ class Position(Move):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetComponents(CATSafeArrayVariant oAxisComponentsArray)
-                |     Returns relative object's position. This returns the 3D-axis system
-                |     associated with the object.
+                Sub GetComponents(CATSafeArrayVariant oAxisComponentsArray)
+                    Returns relative object's position. This returns the 3D-axis system
+                    associated with the object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oAxisComponentsArray
-                |             The array used to store the twelve components retrieved from the
-                |             objet's position. The first nine represent succcessively the components of the
-                |             x-axis, y-axis, and z-axis. The last three represent the coordinates of the
-                |             origin point.
+                        oAxisComponentsArray
+                            The array used to store the twelve components retrieved from the
+                            objet's position. The first nine represent succcessively the components of the
+                            x-axis, y-axis, and z-axis. The last three represent the coordinates of the
+                            origin point.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example retrieves in oAxisComponentsArray
-                |          the 3D-axis system components from
-                |          the Position object associated with MyObject:
+                         This example retrieves in oAxisComponentsArray
+                         the 3D-axis system components from
+                         the Position object associated with MyObject:
                 |
                 |
-                |          Dim oAxisComponentsArray ( 11 )
-                |          MyObject.Position.GetComponents oAxisComponentsArray
+                         Dim oAxisComponentsArray ( 11 )
+                         MyObject.Position.GetComponents oAxisComponentsArray
 
         :return: tuple
         """
@@ -137,46 +137,46 @@ class Position(Move):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetAbsComponents(CATSafeArrayVariant iAxisComponentsArray)
-                |     Sets the object's position in an absolute 3D-coordinates space (global
-                |     context). This sets the 3D-axis system associated with the
-                |     object.
+                Sub SetAbsComponents(CATSafeArrayVariant iAxisComponentsArray)
+                    Sets the object's position in an absolute 3D-coordinates space (global
+                    context). This sets the 3D-axis system associated with the
+                    object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iAxisComponentsArray
-                |             The array initialized with the components to set to the object's
-                |             position. The first nine represent succcessively the components of the x-axis,
-                |             y-axis, and z-axis. The last three represent the coordinates of the origin
-                |             point.
+                        iAxisComponentsArray
+                            The array initialized with the components to set to the object's
+                            position. The first nine represent succcessively the components of the x-axis,
+                            y-axis, and z-axis. The last three represent the coordinates of the origin
+                            point.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example sets the 3D-axis system components stored
-                |          in
-                |          iAxisComponentsArray to
-                |          the Position object associated with MyObject:
+                         This example sets the 3D-axis system components stored
+                         in
+                         iAxisComponentsArray to
+                         the Position object associated with MyObject:
                 |
                 |
-                |          Dim iAxisComponentsArray( 11 )
-                |          ' x axis components
-                |          iAxisComponentsArray( 0 )  = 1.000
-                |          iAxisComponentsArray( 1 )  = 0
-                |          iAxisComponentsArray( 2 )  = 0.707
-                |          ' y axis components
-                |          iAxisComponentsArray( 3 )  = 0
-                |          iAxisComponentsArray( 4 )  = 0
-                |          iAxisComponentsArray( 5 )  = 0.707
-                |          ' z axis components
-                |          iAxisComponentsArray( 6 )  = 0
-                |          iAxisComponentsArray( 7 )  = -0.707
-                |          iAxisComponentsArray( 8 )  = 0.707
-                |          ' origin point coordinates
-                |          iAxisComponentsArray( 9 )  = 1.000
-                |          iAxisComponentsArray( 10 ) = 2.000
-                |          iAxisComponentsArray( 11 ) = 3.000
-                |          MyObject.Position.SetAbsComponents
-                |          iAxisComponentsArray
+                         Dim iAxisComponentsArray( 11 )
+                         ' x axis components
+                         iAxisComponentsArray( 0 )  = 1.000
+                         iAxisComponentsArray( 1 )  = 0
+                         iAxisComponentsArray( 2 )  = 0.707
+                         ' y axis components
+                         iAxisComponentsArray( 3 )  = 0
+                         iAxisComponentsArray( 4 )  = 0
+                         iAxisComponentsArray( 5 )  = 0.707
+                         ' z axis components
+                         iAxisComponentsArray( 6 )  = 0
+                         iAxisComponentsArray( 7 )  = -0.707
+                         iAxisComponentsArray( 8 )  = 0.707
+                         ' origin point coordinates
+                         iAxisComponentsArray( 9 )  = 1.000
+                         iAxisComponentsArray( 10 ) = 2.000
+                         iAxisComponentsArray( 11 ) = 3.000
+                         MyObject.Position.SetAbsComponents
+                         iAxisComponentsArray
 
         :param tuple i_axis_components_array:
         :return: None
@@ -204,44 +204,44 @@ class Position(Move):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetComponents(CATSafeArrayVariant iAxisComponentsArray)
-                |     Sets the relative object's position. This sets the 3D-axis system
-                |     associated with the object.
+                Sub SetComponents(CATSafeArrayVariant iAxisComponentsArray)
+                    Sets the relative object's position. This sets the 3D-axis system
+                    associated with the object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iAxisComponentsArray
-                |             The array initialized with the components to set to the object's
-                |             position. The first nine represent succcessively the components of the x-axis,
-                |             y-axis, and z-axis. The last three represent the coordinates of the origin
-                |             point.
+                        iAxisComponentsArray
+                            The array initialized with the components to set to the object's
+                            position. The first nine represent succcessively the components of the x-axis,
+                            y-axis, and z-axis. The last three represent the coordinates of the origin
+                            point.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example sets the 3D-axis system components stored
-                |          in
-                |          iAxisComponentsArray to
-                |          the Position object associated with MyObject:
+                         This example sets the 3D-axis system components stored
+                         in
+                         iAxisComponentsArray to
+                         the Position object associated with MyObject:
                 |
                 |
-                |          Dim iAxisComponentsArray( 11 )
-                |          ' x axis components
-                |          iAxisComponentsArray( 0 )  = 1.000
-                |          iAxisComponentsArray( 1 )  = 0
-                |          iAxisComponentsArray( 2 )  = 0.707
-                |          ' y axis components
-                |          iAxisComponentsArray( 3 )  = 0
-                |          iAxisComponentsArray( 4 )  = 0
-                |          iAxisComponentsArray( 5 )  = 0.707
-                |          ' z axis components
-                |          iAxisComponentsArray( 6 )  = 0
-                |          iAxisComponentsArray( 7 )  = -0.707
-                |          iAxisComponentsArray( 8 )  = 0.707
-                |          ' origin point coordinates
-                |          iAxisComponentsArray( 9 )  = 1.000
-                |          iAxisComponentsArray( 10 ) = 2.000
-                |          iAxisComponentsArray( 11 ) = 3.000
-                |          MyObject.Position.SetComponents iAxisComponentsArray
+                         Dim iAxisComponentsArray( 11 )
+                         ' x axis components
+                         iAxisComponentsArray( 0 )  = 1.000
+                         iAxisComponentsArray( 1 )  = 0
+                         iAxisComponentsArray( 2 )  = 0.707
+                         ' y axis components
+                         iAxisComponentsArray( 3 )  = 0
+                         iAxisComponentsArray( 4 )  = 0
+                         iAxisComponentsArray( 5 )  = 0.707
+                         ' z axis components
+                         iAxisComponentsArray( 6 )  = 0
+                         iAxisComponentsArray( 7 )  = -0.707
+                         iAxisComponentsArray( 8 )  = 0.707
+                         ' origin point coordinates
+                         iAxisComponentsArray( 9 )  = 1.000
+                         iAxisComponentsArray( 10 ) = 2.000
+                         iAxisComponentsArray( 11 ) = 3.000
+                         MyObject.Position.SetComponents iAxisComponentsArray
 
         :param tuple i_axis_components_array:
         :return: None

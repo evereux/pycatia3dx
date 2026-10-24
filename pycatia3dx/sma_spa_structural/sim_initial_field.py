@@ -17,51 +17,51 @@ class SimInitialField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInitialField
-                | 
-                | Represents the Initial Field object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimInitialField as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialField As SimInitialField
-                |      Set MyInitialField = MyFeatures.Add("SimInitialField")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimInitialField named
-                |     "Initial Field.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyInitialField As SimInitialField
-                |      Set MyInitialField = MyFeatures.Item("Initial Field.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimInitialField as
-                |     following:
-                | 
-                |      ...
-                |      myInitialField = myFeatures.Add("SimInitialField")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimInitialField
-                |     named "Initial Field.1" as following:
-                | 
-                |      ...
-                |      myInitialField = myFeatures.Item("Initial Field.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInitialField
+                
+                Represents the Initial Field object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimInitialField as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialField As SimInitialField
+                     Set MyInitialField = MyFeatures.Add("SimInitialField")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimInitialField named
+                    "Initial Field.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyInitialField As SimInitialField
+                     Set MyInitialField = MyFeatures.Item("Initial Field.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimInitialField as
+                    following:
+                
+                     ...
+                     myInitialField = myFeatures.Add("SimInitialField")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimInitialField
+                    named "Initial Field.1" as following:
+                
+                     ...
+                     myInitialField = myFeatures.Item("Initial Field.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,8 +75,8 @@ class SimInitialField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -97,8 +97,8 @@ class SimInitialField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FieldVariableNumber() As long
-                |     Returns or sets the field variable number.
+                Property FieldVariableNumber() As long
+                    Returns or sets the field variable number.
 
         :return: int
         """
@@ -119,9 +119,9 @@ class SimInitialField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -134,9 +134,9 @@ class SimInitialField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Returns or sets the uniform magnitude. Quantity: DIMENSIONLESS, units:
-                |     None. 
+                Property UniformMagnitude() As double
+                    Returns or sets the uniform magnitude. Quantity: DIMENSIONLESS, units:
+                    None. 
 
         :return: float
         """

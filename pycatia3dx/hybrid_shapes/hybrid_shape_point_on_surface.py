@@ -20,27 +20,27 @@ class HybridShapePointOnSurface(Point):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Point
-                |                             HybridShapePointOnSurface
-                | 
-                | Represents the Point on Surface feature objects.
-                | Role: Allows to access data of the point feature created with a geodesic
-                | distance in a direction to a reference point on a surface
-                | 
-                | See also:
-                |     Length
-                | See also:
-                |     Reference
-                | See also:
-                |     HybridShapeDirection
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Point
+                                            HybridShapePointOnSurface
+                
+                Represents the Point on Surface feature objects.
+                Role: Allows to access data of the point feature created with a geodesic
+                distance in a direction to a reference point on a surface
+                
+                See also:
+                    Length
+                See also:
+                    Reference
+                See also:
+                    HybridShapeDirection
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,17 +54,17 @@ class HybridShapePointOnSurface(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction() As HybridShapeDirection
-                |     Returns or Sets the direction from the reference point in which the point
-                |     is computed.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oDirection the direction from the reference
-                |         point for PointOnSurface feature.
-                | 
-                |          Dim oDirection As CATIAHybridShapeDirection
-                |          Set oDirection  = PointOnSurface.Direction
+                Property Direction() As HybridShapeDirection
+                    Returns or Sets the direction from the reference point in which the point
+                    is computed.
+                
+                    Example
+                    :
+                        This example retrieves in oDirection the direction from the reference
+                        point for PointOnSurface feature.
+                
+                         Dim oDirection As CATIAHybridShapeDirection
+                         Set oDirection  = PointOnSurface.Direction
 
         :return: HybridShapeDirection
         """
@@ -85,16 +85,16 @@ class HybridShapePointOnSurface(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Offset() As Length (Read Only)
-                |     Returns the geodesic length.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oGeodesicOffset the offset (Geodesic Length)
-                |         from the reference point for PointOnSurface feature.
-                | 
-                |          Dim oGeodesicOffset As CATIAReference
-                |          Set oGeodesicOffset  = PointOnSurface.GeodesicOffset
+                Property Offset() As Length (Read Only)
+                    Returns the geodesic length.
+                
+                    Example
+                    :
+                        This example retrieves in oGeodesicOffset the offset (Geodesic Length)
+                        from the reference point for PointOnSurface feature.
+                
+                         Dim oGeodesicOffset As CATIAReference
+                         Set oGeodesicOffset  = PointOnSurface.GeodesicOffset
 
         :return: Length
         """
@@ -107,20 +107,20 @@ class HybridShapePointOnSurface(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Returns or Sets the reference point.
-                |     This data is not mandatory.
-                |     If no point is given, the middle point on the surface is
-                |     taken.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oPointRef the reference point for
-                |         PointOnSurface feature.
-                | 
-                |          Dim oPointRef As CATIAReference
-                |          Set oPointRef  = PointOnSurface.PointRef
+                Property Point() As Reference
+                    Returns or Sets the reference point.
+                    This data is not mandatory.
+                    If no point is given, the middle point on the surface is
+                    taken.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example
+                    :
+                        This example retrieves in oPointRef the reference point for
+                        PointOnSurface feature.
+                
+                         Dim oPointRef As CATIAReference
+                         Set oPointRef  = PointOnSurface.PointRef
 
         :return: Reference
         """
@@ -141,17 +141,17 @@ class HybridShapePointOnSurface(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Surface() As Reference
-                |     Returns or Sets the surface.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oSurface the supporting surface for
-                |         PointOnSurface feature.
-                | 
-                |          Dim oSurface As CATIAReference
-                |          Set oSurface  = PointOnSurface.Surface
+                Property Surface() As Reference
+                    Returns or Sets the surface.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example
+                    :
+                        This example retrieves in oSurface the supporting surface for
+                        PointOnSurface feature.
+                
+                         Dim oSurface As CATIAReference
+                         Set oSurface  = PointOnSurface.Surface
 
         :return: Reference
         """

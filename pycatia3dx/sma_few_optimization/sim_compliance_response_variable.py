@@ -18,57 +18,57 @@ class SimComplianceResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimComplianceResponseVariable
-                | 
-                | Represents the compliance response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimComplianceResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyComplianceResponseVariable As
-                |      SimComplianceResponseVariable
-                |      Set MyComplianceResponseVariable = MyFeatures.Add("SimComplianceResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimComplianceResponseVariable named "Compliance Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyComplianceResponseVariable As
-                |      SimComplianceResponseVariable
-                |      Set MyComplianceResponseVariable = MyFeatures.Item("Compliance Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimComplianceResponseVariable as following:
-                | 
-                |      ...
-                |      MyComplianceResponseVariable = MyFeatures.Add("SimComplianceResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimComplianceResponseVariable named "Compliance Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyComplianceResponseVariable = MyFeatures.Item("Compliance Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimComplianceResponseVariable
+                
+                Represents the compliance response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimComplianceResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyComplianceResponseVariable As
+                     SimComplianceResponseVariable
+                     Set MyComplianceResponseVariable = MyFeatures.Add("SimComplianceResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimComplianceResponseVariable named "Compliance Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyComplianceResponseVariable As
+                     SimComplianceResponseVariable
+                     Set MyComplianceResponseVariable = MyFeatures.Item("Compliance Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimComplianceResponseVariable as following:
+                
+                     ...
+                     MyComplianceResponseVariable = MyFeatures.Add("SimComplianceResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimComplianceResponseVariable named "Compliance Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyComplianceResponseVariable = MyFeatures.Item("Compliance Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -82,8 +82,8 @@ class SimComplianceResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """

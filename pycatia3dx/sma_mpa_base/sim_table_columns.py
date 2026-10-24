@@ -21,35 +21,35 @@ class SimTableColumns(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimTableColumns
-                | 
-                | Represents the Table-Columns object.
-                | 
-                | Example:
-                |     Given a SimTable object you can retrieve a SimTableColumns collection as
-                |     following:
-                | 
-                |      Dim MyTable As SimTable
-                |      ...
-                |      Dim MyTableColumns As SimTableColumns
-                |      Set MyTableColumns = MyTableColumns.TableColumns
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimTable object you can retrieve a SimTableColumns collection as
-                |     following:
-                | 
-                |      ...
-                |      myTableColumns = myTableColumns.TableColumns
-                |      
-                | 
-                | See also:
-                |     SimTable
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimTableColumns
+                
+                Represents the Table-Columns object.
+                
+                Example:
+                    Given a SimTable object you can retrieve a SimTableColumns collection as
+                    following:
+                
+                     Dim MyTable As SimTable
+                     ...
+                     Dim MyTableColumns As SimTableColumns
+                     Set MyTableColumns = MyTableColumns.TableColumns
+                     
+                
+                Example in Python:
+                    Given a SimTable object you can retrieve a SimTableColumns collection as
+                    following:
+                
+                     ...
+                     myTableColumns = myTableColumns.TableColumns
+                     
+                
+                See also:
+                    SimTable
     
     """
 
@@ -62,17 +62,17 @@ class SimTableColumns(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a table column from the collection of table
-                |     columns.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the table column. 
-                | 
-                |     Returns:
-                |         The SimTableColumn object 
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a table column from the collection of table
+                    columns.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the table column. 
+                
+                    Returns:
+                        The SimTableColumn object 
 
         :param CATVariant i_index:
         :return: SimTableColumn

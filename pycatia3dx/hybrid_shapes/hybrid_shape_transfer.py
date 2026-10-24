@@ -18,27 +18,27 @@ class HybridShapeTransfer(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeTransfer
-                | 
-                | Represents the hybrid shape Transfer feature object.
-                | Role: To access the data of the hybrid shape Transfer feature object. This data
-                | includes:
-                | 
-                |     The element to transfer
-                |     The surface to unfold
-                |     The unfolded surface
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeTransfer
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeTransfer
+                
+                Represents the hybrid shape Transfer feature object.
+                Role: To access the data of the hybrid shape Transfer feature object. This data
+                includes:
+                
+                    The element to transfer
+                    The surface to unfold
+                    The unfolded surface
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeTransfer
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -52,8 +52,8 @@ class HybridShapeTransfer(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ElementToTransfer() As Reference
-                |     Returns or sets the element to transfer.
+                Property ElementToTransfer() As Reference
+                    Returns or sets the element to transfer.
 
         :return: Reference
         """
@@ -74,8 +74,8 @@ class HybridShapeTransfer(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SurfaceToUnfold() As Reference
-                |     Returns or sets the surface to unfold.
+                Property SurfaceToUnfold() As Reference
+                    Returns or sets the surface to unfold.
 
         :return: Reference
         """
@@ -96,12 +96,12 @@ class HybridShapeTransfer(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TypeOfTransfer() As long
-                |     Returns or sets the type of transfer.
-                | 
-                |         0= The type of surface is not defined
-                |         1= The type of transfer is folded to unfolded
-                |         2= The type of surface is unfolded to folded
+                Property TypeOfTransfer() As long
+                    Returns or sets the type of transfer.
+                
+                        0= The type of surface is not defined
+                        1= The type of transfer is folded to unfolded
+                        2= The type of surface is unfolded to folded
 
         :return: int
         """
@@ -122,13 +122,13 @@ class HybridShapeTransfer(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property UnfoldType() As long
-                |     Returns or sets the type of unfold to take into account during
-                |     transfer.
-                | 
-                |         0= The type is undefined
-                |         1= The surface to unfold is ruled,
-                |         2= the surface to unfold is all
+                Property UnfoldType() As long
+                    Returns or sets the type of unfold to take into account during
+                    transfer.
+                
+                        0= The type is undefined
+                        1= The surface to unfold is ruled,
+                        2= the surface to unfold is all
 
         :return: int
         """
@@ -149,8 +149,8 @@ class HybridShapeTransfer(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property UnfoldedSurface() As Reference
-                |     Returns or sets the unfolded surface.
+                Property UnfoldedSurface() As Reference
+                    Returns or sets the unfolded surface.
 
         :return: Reference
         """

@@ -16,19 +16,19 @@ class PLMPropagateService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMPropagateService
-                | 
-                | Interface representing the Save service.
-                | It can be retreives using the
-                | Application.GetSessionService("PLMPropagateService")
-                | Role: provides the service to propagate modifications to the PLM provider
-                | repository.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMPropagateService
+                
+                Interface representing the Save service.
+                It can be retreives using the
+                Application.GetSessionService("PLMPropagateService")
+                Role: provides the service to propagate modifications to the PLM provider
+                repository.
     
     """
 
@@ -41,8 +41,8 @@ class PLMPropagateService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PLMPropagate()
-                |     Propagate CATIAEditor modifications to the PLM provider repository.
+                Sub PLMPropagate()
+                    Propagate CATIAEditor modifications to the PLM provider repository.
 
         :return: None
         """
@@ -53,10 +53,10 @@ class PLMPropagateService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Save()
-                | 
-                |     Deprecated:
-                |         V6R2011x
+                Sub Save()
+                
+                    Deprecated:
+                        V6R2011x
 
         :return: None
         """
@@ -67,17 +67,17 @@ class PLMPropagateService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub getLastError(CATBSTR oErrorMessage,long oErrorCode)
-                |     Retrieves the diagnosis related to the last call to Save.
-                | 
-                |     Parameters:
-                | 
-                |         oErrorMessage
-                |             The error message. 
-                |         oErrorCode
-                |             The error code.
-                |             Legal values: 0: action successfully performed, other values:
-                |             action failed.
+                Sub getLastError(CATBSTR oErrorMessage,long oErrorCode)
+                    Retrieves the diagnosis related to the last call to Save.
+                
+                    Parameters:
+                
+                        oErrorMessage
+                            The error message. 
+                        oErrorCode
+                            The error code.
+                            Legal values: 0: action successfully performed, other values:
+                            action failed.
 
         :param str o_error_message:
         :param int o_error_code:

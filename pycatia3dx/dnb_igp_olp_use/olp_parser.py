@@ -19,20 +19,20 @@ class OLPParser(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpParser
-                | 
-                | Parser for compiling a Native Robot Language program using Flex and
-                | Bison.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | Output of the parsed NRL program is the Abstract Syntax Tree (AST). This object
-                | can be retrieved using OlpTranslatorHelper.CreateParser
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpParser
+                
+                Parser for compiling a Native Robot Language program using Flex and
+                Bison.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                Output of the parsed NRL program is the Abstract Syntax Tree (AST). This object
+                can be retrieved using OlpTranslatorHelper.CreateParser
     
     """
 
@@ -46,15 +46,15 @@ class OLPParser(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AstRoot(OLPAstBranch iAST) (Write Only)
-                |     Used to set the root of the Abstract Syntax Tree (AST). All AST branches
-                |     and leaves created during parse will be descendents of this
-                |     root.
-                | 
-                |     Parameters:
-                | 
-                |         iAST
-                |             The AST root node.
+                Property AstRoot(OLPAstBranch iAST) (Write Only)
+                    Used to set the root of the Abstract Syntax Tree (AST). All AST branches
+                    and leaves created during parse will be descendents of this
+                    root.
+                
+                    Parameters:
+                
+                        iAST
+                            The AST root node.
 
         :return: None
         """
@@ -75,16 +75,16 @@ class OLPParser(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ErrorReporter(OlpErrorReporter iReporter) (Write
-                | Only)
-                |     The object used to log any parse errors.
-                |     All warnings and errors will be displayed using this
-                |     reporter.
-                | 
-                |     Parameters:
-                | 
-                |         iReporter
-                |             The error reporter to use.
+                Property ErrorReporter(OlpErrorReporter iReporter) (Write
+                Only)
+                    The object used to log any parse errors.
+                    All warnings and errors will be displayed using this
+                    reporter.
+                
+                    Parameters:
+                
+                        iReporter
+                            The error reporter to use.
 
         :return: None
         """
@@ -104,15 +104,15 @@ class OLPParser(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Parse(CATBSTR iFile)
-                |     Used to parse the absolute file name sent. The parser generates the
-                |     Abstract Syntax Tree (AST) starting from the root set in AstRoot. Errors and
-                |     warnings are displayed using the ErrorReporter.
-                | 
-                |     Parameters:
-                | 
-                |         iFile
-                |             The file to parse.
+                Sub Parse(CATBSTR iFile)
+                    Used to parse the absolute file name sent. The parser generates the
+                    Abstract Syntax Tree (AST) starting from the root set in AstRoot. Errors and
+                    warnings are displayed using the ErrorReporter.
+                
+                    Parameters:
+                
+                        iFile
+                            The file to parse.
 
         :param str i_file:
         :return: None
@@ -124,13 +124,13 @@ class OLPParser(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ParseString(CATBSTR iText)
-                |     Used to parse a string rather than a file.
-                | 
-                |     Parameters:
-                | 
-                |         iText
-                |             The text to parse. 
+                Sub ParseString(CATBSTR iText)
+                    Used to parse a string rather than a file.
+                
+                    Parameters:
+                
+                        iText
+                            The text to parse. 
 
         :param str i_text:
         :return: None

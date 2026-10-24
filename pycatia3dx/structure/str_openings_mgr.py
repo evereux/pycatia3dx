@@ -19,14 +19,14 @@ class StrOpeningsMgr(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrOpeningsMgr
-                | 
-                | Object representing the Structure Openings Manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrOpeningsMgr
+                
+                Object representing the Structure Openings Manager.
     
     """
 
@@ -39,28 +39,28 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAvailableStandardContours(CATSafeArrayVariant
-                | oListContourNames)
-                |     Retrieves the Standard Opening contour names available for creating a
-                |     Standard Opening.
+                Sub GetAvailableStandardContours(CATSafeArrayVariant
+                oListContourNames)
+                    Retrieves the Standard Opening contour names available for creating a
+                    Standard Opening.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oListContourNames
-                |             The list of internal names of the available Standard Opening
-                |             contours.
+                        oListContourNames
+                            The list of internal names of the available Standard Opening
+                            contours.
                 |
-                |     Example:
-                |
-                |
-                |              This example retrieves available contours.
+                    Example:
                 |
                 |
-                |               Dim ObjStrOpeningsMgr As StrOpeningsMgr
-                |               Set ObjStrOpeningsMgr = ObjSfdPanel.StrOpeningsMgr
-                |               Dim ContourNames() As Variant
-                |               ObjStrOpeningsMgr.GetAvailableStandardContours
-                |               ContourNames
+                             This example retrieves available contours.
+                |
+                |
+                              Dim ObjStrOpeningsMgr As StrOpeningsMgr
+                              Set ObjStrOpeningsMgr = ObjSfdPanel.StrOpeningsMgr
+                              Dim ContourNames() As Variant
+                              ObjStrOpeningsMgr.GetAvailableStandardContours
+                              ContourNames
 
         :return: tuple
         """
@@ -87,27 +87,27 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAvailableStandardPositioningStrategies(CATSafeArrayVariant
-                | oListStrategyNames)
-                |     Retrieves the available positioning strategies for Parametric Feature
-                |     Instances.
+                Sub GetAvailableStandardPositioningStrategies(CATSafeArrayVariant
+                oListStrategyNames)
+                    Retrieves the available positioning strategies for Parametric Feature
+                    Instances.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oListStrategyNames
-                |             The list of internal names of the available positioning strategies.
-                |
-                |
-                |     Example:
+                        oListStrategyNames
+                            The list of internal names of the available positioning strategies.
                 |
                 |
-                |              This example retrieves available positioing
-                |              strategies.
+                    Example:
                 |
                 |
-                |              Dim StdPosStrategyNames() As Variant
-                |              ObjStrOpeningsMgr.GetAvailableStandardPositioningStrategies
-                |              StdPosStrategyNames
+                             This example retrieves available positioing
+                             strategies.
+                |
+                |
+                             Dim StdPosStrategyNames() As Variant
+                             ObjStrOpeningsMgr.GetAvailableStandardPositioningStrategies
+                             StdPosStrategyNames
 
         :return: tuple
         """
@@ -134,28 +134,28 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetAvailableStandardPositioningStrategiesForProfile(CATSafeArrayVariant
-                | oListStrategyNames)
-                |     Retrieves the available positioning strategies for
-                |     Profile.
+                Sub GetAvailableStandardPositioningStrategiesForProfile(CATSafeArrayVariant
+                oListStrategyNames)
+                    Retrieves the available positioning strategies for
+                    Profile.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oListStrategyNames
-                |             The list of internal names of the available positioning strategies
-                |             for profile.
+                        oListStrategyNames
+                            The list of internal names of the available positioning strategies
+                            for profile.
                 |
-                |     Example:
-                |
-                |
-                |              This example retrieves available positioing strategies for
-                |              profile.
+                    Example:
                 |
                 |
-                |              Dim StdPosStrategyNames() As Variant
+                             This example retrieves available positioing strategies for
+                             profile.
                 |
-                |             ObjStrOpeningsMgr.GetAvailableStandardPositioningStrategiesForProfile
-                |             StdPosStrategyNames
+                |
+                             Dim StdPosStrategyNames() As Variant
+                |
+                            ObjStrOpeningsMgr.GetAvailableStandardPositioningStrategiesForProfile
+                            StdPosStrategyNames
 
         :return: tuple
         """
@@ -182,25 +182,25 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStandardContourParms(CATBSTR iContourName) As
-                | StrStandardContourParameters
-                |     Returns the parameters used for a Standard Opening contour. The parameters
-                |     are represented by non-persistent objects that define the role and Cke
-                |     parameter pointer. The roles returned are internal names.
-                | 
-                |     Parameters:
-                | 
-                |         iContourName
-                |             The contour name. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves contour parameters.
-                |              
-                | 
-                |               Dim ContourParms As StrStandardContourParameters
-                |               Set ContourParms = ObjStrOpeningsMgr.GetStandardContourParms(iContourName)
+                Func GetStandardContourParms(CATBSTR iContourName) As
+                StrStandardContourParameters
+                    Returns the parameters used for a Standard Opening contour. The parameters
+                    are represented by non-persistent objects that define the role and Cke
+                    parameter pointer. The roles returned are internal names.
+                
+                    Parameters:
+                
+                        iContourName
+                            The contour name. 
+                
+                    Example:
+                
+                
+                             This example retrieves contour parameters.
+                             
+                
+                              Dim ContourParms As StrStandardContourParameters
+                              Set ContourParms = ObjStrOpeningsMgr.GetStandardContourParms(iContourName)
 
         :param str i_contour_name:
         :return: StrStandardContourParameters
@@ -212,28 +212,28 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStandardPositioningStrategyParms(CATBSTR iPosStrategyName) As
-                | StrStandardPosStrategyParameters
-                |     Returns the parameters for a Positioning Strategy. The returned parameters
-                |     is a list of volatile objects, each representing a generic group of
-                |     specification data for the positioning strategies. Each volatile object knows
-                |     its role for the positioning strategy and a set of related
-                |     parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iPosStrategyName
-                |             The internal name of the positioning strategy. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Pos strategy parameters.
-                |              
-                | 
-                |               Dim StdPosStrategyParms As
-                |               StrStandardPosStrategyParameters
-                |               Set StdPosStrategyParms = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(iStdPosStrategyName)
+                Func GetStandardPositioningStrategyParms(CATBSTR iPosStrategyName) As
+                StrStandardPosStrategyParameters
+                    Returns the parameters for a Positioning Strategy. The returned parameters
+                    is a list of volatile objects, each representing a generic group of
+                    specification data for the positioning strategies. Each volatile object knows
+                    its role for the positioning strategy and a set of related
+                    parameters.
+                
+                    Parameters:
+                
+                        iPosStrategyName
+                            The internal name of the positioning strategy. 
+                
+                    Example:
+                
+                
+                             This example retrieves Pos strategy parameters.
+                             
+                
+                              Dim StdPosStrategyParms As
+                              StrStandardPosStrategyParameters
+                              Set StdPosStrategyParms = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(iStdPosStrategyName)
 
         :param str i_pos_strategy_name:
         :return: StrStandardPosStrategyParameters
@@ -247,30 +247,30 @@ class StrOpeningsMgr(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStandardPositioningStrategyParmsForProfile(CATBSTR iPosStrategyName) As
-                | StrStandardPosStrategyParameters
-                |     Returns the parameters for a Positioning Strategy on profile. The returned
-                |     parameters is a list of volatile objects, each representing a generic group of
-                |     specification data for the positioning strategies. Each volatile object knows
-                |     its role for the positioning strategy and a set of related
-                |     parameters.
-                | 
-                |     Parameters:
-                | 
-                |         iPosStrategyName
-                |             The internal name of the positioning strategy. 
-                |         oListPosParams
-                |             The list of positioning strategy parameters. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Pos strategy parameters.
-                |              
-                | 
-                |               Dim StdPosStrategyParms As
-                |               StrStandardPosStrategyParameters
-                |               Set StdPosStrategyParms = ObjStrOpeningsMgr.GetStandardPositioningStrategyParmsForProfile(PosStratName)
+                Func GetStandardPositioningStrategyParmsForProfile(CATBSTR iPosStrategyName) As
+                StrStandardPosStrategyParameters
+                    Returns the parameters for a Positioning Strategy on profile. The returned
+                    parameters is a list of volatile objects, each representing a generic group of
+                    specification data for the positioning strategies. Each volatile object knows
+                    its role for the positioning strategy and a set of related
+                    parameters.
+                
+                    Parameters:
+                
+                        iPosStrategyName
+                            The internal name of the positioning strategy. 
+                        oListPosParams
+                            The list of positioning strategy parameters. 
+                
+                    Example:
+                
+                
+                             This example retrieves Pos strategy parameters.
+                             
+                
+                              Dim StdPosStrategyParms As
+                              StrStandardPosStrategyParameters
+                              Set StdPosStrategyParms = ObjStrOpeningsMgr.GetStandardPositioningStrategyParmsForProfile(PosStratName)
 
         :param str i_pos_strategy_name:
         :return: StrStandardPosStrategyParameters

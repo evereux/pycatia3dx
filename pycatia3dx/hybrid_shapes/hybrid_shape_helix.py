@@ -21,26 +21,26 @@ class HybridShapeHelix(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeHelix
-                | 
-                | Represents the hybrid shape helix feature object.
-                | Role: Allows to access data of the Helix feature. This data
-                | includes:
-                | 
-                |     axis
-                |     a starting point
-                |     a pitch
-                |     a height
-                |     2 angle values
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeHelix
+                
+                Represents the hybrid shape helix feature object.
+                Role: Allows to access data of the Helix feature. This data
+                includes:
+                
+                    axis
+                    a starting point
+                    a pitch
+                    a height
+                    2 angle values
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -54,15 +54,15 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Axis() As Reference
-                |     Reads / Changes the Helix axis.
-                | 
-                |     Parameters:
-                | 
-                |         Axis
-                |             Helix axis.
-                |             Sub-element(s) supported (see Boundary object):
-                |             CATIARectlinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
+                Property Axis() As Reference
+                    Reads / Changes the Helix axis.
+                
+                    Parameters:
+                
+                        Axis
+                            Helix axis.
+                            Sub-element(s) supported (see Boundary object):
+                            CATIARectlinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
 
         :return: Reference
         """
@@ -83,14 +83,14 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ClockwiseRevolution() As boolean
-                |     Reads / Modifies the sense of revolutions .
-                | 
-                |     Parameters:
-                | 
-                |         Clockwise
-                |             FALSE means that revolutions are counter-clockwise. TRUE means that
-                |             revolutions are clockwise.
+                Property ClockwiseRevolution() As boolean
+                    Reads / Modifies the sense of revolutions .
+                
+                    Parameters:
+                
+                        Clockwise
+                            FALSE means that revolutions are counter-clockwise. TRUE means that
+                            revolutions are clockwise.
 
         :return: bool
         """
@@ -111,13 +111,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Height() As Length (Read Only)
-                |     Reads the height of the Helix.
-                | 
-                |     Parameters:
-                | 
-                |         oHeight
-                |             Height.
+                Property Height() As Length (Read Only)
+                    Reads the height of the Helix.
+                
+                    Parameters:
+                
+                        oHeight
+                            Height.
 
         :return: Length
         """
@@ -130,14 +130,14 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property InvertAxis() As boolean
-                |     Reads / Modifies the orientation .
-                | 
-                |     Parameters:
-                | 
-                |         Invert
-                |             FALSE means that there is no invertion (natural orientation). TRUE
-                |             to invert this orientation.
+                Property InvertAxis() As boolean
+                    Reads / Modifies the orientation .
+                
+                    Parameters:
+                
+                        Invert
+                            FALSE means that there is no invertion (natural orientation). TRUE
+                            to invert this orientation.
 
         :return: bool
         """
@@ -158,13 +158,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Pitch() As Length (Read Only)
-                |     Reads the pitch of the Helix.
-                | 
-                |     Parameters:
-                | 
-                |         oPitch
-                |             Pitch.
+                Property Pitch() As Length (Read Only)
+                    Reads the pitch of the Helix.
+                
+                    Parameters:
+                
+                        oPitch
+                            Pitch.
 
         :return: Length
         """
@@ -177,13 +177,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Pitch2() As Length (Read Only)
-                |     Reads the Helix pitch2.
-                | 
-                |     Parameters:
-                | 
-                |         Pitch2
-                |             Pitch2 for Helix.
+                Property Pitch2() As Length (Read Only)
+                    Reads the Helix pitch2.
+                
+                    Parameters:
+                
+                        Pitch2
+                            Pitch2 for Helix.
 
         :return: Length
         """
@@ -196,13 +196,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PitchLawType() As long
-                |     Reads / Changes the Helix pitch law type.
-                | 
-                |     Parameters:
-                | 
-                |         LawType
-                |             LawType for Helix.
+                Property PitchLawType() As long
+                    Reads / Changes the Helix pitch law type.
+                
+                    Parameters:
+                
+                        LawType
+                            LawType for Helix.
 
         :return: int
         """
@@ -223,13 +223,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Profile() As Reference
-                |     Reads / Changes the Helix profile.
-                | 
-                |     Parameters:
-                | 
-                |         Profile
-                |             Profile for Helix.
+                Property Profile() As Reference
+                    Reads / Changes the Helix profile.
+                
+                    Parameters:
+                
+                        Profile
+                            Profile for Helix.
 
         :return: Reference
         """
@@ -250,13 +250,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RevolNumber() As RealParam (Read Only)
-                |     Reads the revolution number of the Helix.
-                | 
-                |     Parameters:
-                | 
-                |         oNbRevol
-                |             Revolutions.
+                Property RevolNumber() As RealParam (Read Only)
+                    Reads the revolution number of the Helix.
+                
+                    Parameters:
+                
+                        oNbRevol
+                            Revolutions.
 
         :return: RealParam
         """
@@ -269,13 +269,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartingAngle() As Angle (Read Only)
-                |     Reads the helix starting angle.
-                | 
-                |     Parameters:
-                | 
-                |         oStartingAngle
-                |             Starting angle.
+                Property StartingAngle() As Angle (Read Only)
+                    Reads the helix starting angle.
+                
+                    Parameters:
+                
+                        oStartingAngle
+                            Starting angle.
 
         :return: Angle
         """
@@ -288,15 +288,15 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartingPoint() As Reference
-                |     Reads / Changes the starting point of the Helix. The starting point must
-                |     not be on the Helix axis.
-                | 
-                |     Parameters:
-                | 
-                |         StartingPoint
-                |             Starting point.
-                |             Sub-element(s) supported (see Boundary object): Vertex.
+                Property StartingPoint() As Reference
+                    Reads / Changes the starting point of the Helix. The starting point must
+                    not be on the Helix axis.
+                
+                    Parameters:
+                
+                        StartingPoint
+                            Starting point.
+                            Sub-element(s) supported (see Boundary object): Vertex.
 
         :return: Reference
         """
@@ -317,13 +317,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TaperAngle() As Angle (Read Only)
-                |     Reads the helix taper angle.
-                | 
-                |     Parameters:
-                | 
-                |         oTaperAngle
-                |             Taper angle.
+                Property TaperAngle() As Angle (Read Only)
+                    Reads the helix taper angle.
+                
+                    Parameters:
+                
+                        oTaperAngle
+                            Taper angle.
 
         :return: Angle
         """
@@ -336,14 +336,14 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TaperOutward() As boolean
-                |     Reads / Modifies the taper angle sense of variation.
-                | 
-                |     Parameters:
-                | 
-                |         TaperOutward
-                |             FALSE means that helix radius decreases. TRUE means that helix
-                |             radius increases.
+                Property TaperOutward() As boolean
+                    Reads / Modifies the taper angle sense of variation.
+                
+                    Parameters:
+                
+                        TaperOutward
+                            FALSE means that helix radius decreases. TRUE means that helix
+                            radius increases.
 
         :return: bool
         """
@@ -363,13 +363,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetHeight(double iHeight)
-                |     Sets the helix height.
-                | 
-                |     Parameters:
-                | 
-                |         iHeight
-                |             Height.
+                Sub SetHeight(double iHeight)
+                    Sets the helix height.
+                
+                    Parameters:
+                
+                        iHeight
+                            Height.
 
         :param float i_height:
         :return: None
@@ -381,13 +381,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPitch(double iPitch)
-                |     Sets the helix pitch.
-                | 
-                |     Parameters:
-                | 
-                |         iPitch
-                |             Pitch.
+                Sub SetPitch(double iPitch)
+                    Sets the helix pitch.
+                
+                    Parameters:
+                
+                        iPitch
+                            Pitch.
 
         :param float i_pitch:
         :return: None
@@ -399,13 +399,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPitch2(double iPitch2)
-                |     Changes the Helix pitch2 .
-                | 
-                |     Parameters:
-                | 
-                |         Pitch2
-                |             Pitch2 for Helix.
+                Sub SetPitch2(double iPitch2)
+                    Changes the Helix pitch2 .
+                
+                    Parameters:
+                
+                        Pitch2
+                            Pitch2 for Helix.
 
         :param float i_pitch2:
         :return: None
@@ -417,13 +417,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetRevolutionNumber(double iNbRevol)
-                |     Changes the Revolution Numbers.
-                | 
-                |     Parameters:
-                | 
-                |         NbRevol
-                |             Number of revolutions for Helix.
+                Sub SetRevolutionNumber(double iNbRevol)
+                    Changes the Revolution Numbers.
+                
+                    Parameters:
+                
+                        NbRevol
+                            Number of revolutions for Helix.
 
         :param float i_nb_revol:
         :return: None
@@ -435,13 +435,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetStartingAngle(double iStartingAngle)
-                |     Sets the helix starting angle.
-                | 
-                |     Parameters:
-                | 
-                |         oTaperAngle
-                |             Starting angle.
+                Sub SetStartingAngle(double iStartingAngle)
+                    Sets the helix starting angle.
+                
+                    Parameters:
+                
+                        oTaperAngle
+                            Starting angle.
 
         :param float i_starting_angle:
         :return: None
@@ -453,13 +453,13 @@ class HybridShapeHelix(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetTaperAngle(double iTaperAngle)
-                |     Sets the helix taper angle.
-                | 
-                |     Parameters:
-                | 
-                |         iTaperAngle
-                |             Taper angle.
+                Sub SetTaperAngle(double iTaperAngle)
+                    Sets the helix taper angle.
+                
+                    Parameters:
+                
+                        iTaperAngle
+                            Taper angle.
 
         :param float i_taper_angle:
         :return: None

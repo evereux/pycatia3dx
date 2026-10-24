@@ -18,22 +18,22 @@ class AngularRepartition(Repartition):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.Repartition
-                |                         AngularRepartition
-                | 
-                | Represents the angular repartition.
-                | It is used by the circular pattern. It is made up of a number of times the
-                | shape is copied and of an angular spacing between two consecutive copies of the
-                | shape along a crown. The number of times the shape is copied is accessible
-                | using the Repartition.InstancesCount property.
-                | 
-                | See also:
-                |     CircPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.Repartition
+                                        AngularRepartition
+                
+                Represents the angular repartition.
+                It is used by the circular pattern. It is made up of a number of times the
+                shape is copied and of an angular spacing between two consecutive copies of the
+                shape along a crown. The number of times the shape is copied is accessible
+                using the Repartition.InstancesCount property.
+                
+                See also:
+                    CircPattern
     
     """
 
@@ -47,15 +47,15 @@ class AngularRepartition(Repartition):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AngularSpacing() As Angle (Read Only)
-                |     Returns the angle between two consecutive copies of a shape along the
-                |     repartition crown.
-                | 
-                |     Example:
-                |         The following example returns in AngSpace1 the angular spacing of the
-                |         angular repartition firstRepartition:
-                | 
-                |          Set AngSpace1 = firstRepartition.AngularSpacing
+                Property AngularSpacing() As Angle (Read Only)
+                    Returns the angle between two consecutive copies of a shape along the
+                    repartition crown.
+                
+                    Example:
+                        The following example returns in AngSpace1 the angular spacing of the
+                        angular repartition firstRepartition:
+                
+                         Set AngSpace1 = firstRepartition.AngularSpacing
 
         :return: Angle
         """
@@ -68,15 +68,15 @@ class AngularRepartition(Repartition):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InstanceSpacing() As Angle (Read Only)
-                |     Returns the angle at which the pattern spacing is done for unequal angular
-                |     spacing mode.
-                | 
-                |     Example:
-                |         The following example returns in AngSpace1 the angular spacing of the
-                |         angular repartition firstRepartition:
-                | 
-                |          Set AngSpace1 = firstRepartition.AngularSpacing
+                Property InstanceSpacing() As Angle (Read Only)
+                    Returns the angle at which the pattern spacing is done for unequal angular
+                    spacing mode.
+                
+                    Example:
+                        The following example returns in AngSpace1 the angular spacing of the
+                        angular repartition firstRepartition:
+                
+                         Set AngSpace1 = firstRepartition.AngularSpacing
 
         :return: Angle
         """

@@ -19,51 +19,51 @@ class SimSpecificHeat(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpecificHeat
-                | 
-                | Represents the Specific Heat object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimSpecificHeat as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MySpecificHeat As SimSpecificHeat
-                |      Set MySpecificHeat = MyMaterialOptions.Add("SimSpecificHeat")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimSpecificHeat named
-                |     "Specific Heat.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MySpecificHeat As SimSpecificHeat
-                |      Set MySpecificHeat = MyMaterialOptions.Item("Specific Heat.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimSpecificHeat as following:
-                | 
-                |      ...
-                |      mySpecificHeat = myMaterialOptions.Add("SimSpecificHeat")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimSpecificHeat named "Specific Heat.1" as following:
-                | 
-                |      ...
-                |      mySpecificHeat = myMaterialOptions.Item("Specific Heat.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpecificHeat
+                
+                Represents the Specific Heat object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimSpecificHeat as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MySpecificHeat As SimSpecificHeat
+                     Set MySpecificHeat = MyMaterialOptions.Add("SimSpecificHeat")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimSpecificHeat named
+                    "Specific Heat.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MySpecificHeat As SimSpecificHeat
+                     Set MySpecificHeat = MyMaterialOptions.Item("Specific Heat.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimSpecificHeat as following:
+                
+                     ...
+                     mySpecificHeat = myMaterialOptions.Add("SimSpecificHeat")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimSpecificHeat named "Specific Heat.1" as following:
+                
+                     ...
+                     mySpecificHeat = myMaterialOptions.Item("Specific Heat.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimSpecificHeat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Material table.
 
         :return: SimMaterialTable
         """
@@ -91,8 +91,8 @@ class SimSpecificHeat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecificHeatType() As SimSpecificHeatSpecificHeatType
-                |     Specific heat type.
+                Property SpecificHeatType() As SimSpecificHeatSpecificHeatType
+                    Specific heat type.
 
         :return: int
         """
@@ -112,19 +112,19 @@ class SimSpecificHeat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimSpecificHeatMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimSpecificHeatMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

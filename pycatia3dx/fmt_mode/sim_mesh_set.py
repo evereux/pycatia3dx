@@ -17,14 +17,14 @@ class SimMeshSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMeshSet
-                | 
-                | Represents a Mesh Set.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMeshSet
+                
+                Represents a Mesh Set.
     
     """
 
@@ -38,8 +38,8 @@ class SimMeshSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MeshParts() As SimMeshParts (Read Only)
-                |     Returns the Mesh Part collection from the current Mesh Set.
+                Property MeshParts() As SimMeshParts (Read Only)
+                    Returns the Mesh Part collection from the current Mesh Set.
 
         :return: SimMeshParts
         """
@@ -51,8 +51,8 @@ class SimMeshSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Launches the update of all the Mesh Parts contained by the Mesh Set.
+                Sub Update()
+                    Launches the update of all the Mesh Parts contained by the Mesh Set.
 
         :return: None
         """

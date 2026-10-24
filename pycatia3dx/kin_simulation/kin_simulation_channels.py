@@ -20,14 +20,14 @@ class KinSimulationChannels(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     KinSimulationChannels
-                | 
-                | The collection of KinSimulationChannel.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    KinSimulationChannels
+                
+                The collection of KinSimulationChannel.
     
     """
 
@@ -40,18 +40,18 @@ class KinSimulationChannels(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iChannelRank) As KinSimulationChannel
-                |     Returns a KinSimulationChannel using its rank inside the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iChannelRank
-                |             Rank of the KinSimulationChannel inside the collection. It starts
-                |             at 1. iChannelRank is a number. 
-                | 
-                |     Returns:
-                |         A KinSimulationChannel.
+                Func Item(CATVariant iChannelRank) As KinSimulationChannel
+                    Returns a KinSimulationChannel using its rank inside the
+                    collection.
+                
+                    Parameters:
+                
+                        iChannelRank
+                            Rank of the KinSimulationChannel inside the collection. It starts
+                            at 1. iChannelRank is a number. 
+                
+                    Returns:
+                        A KinSimulationChannel.
 
         :param CATVariant i_channel_rank:
         :return: KinSimulationChannel

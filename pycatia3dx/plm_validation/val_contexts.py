@@ -18,14 +18,14 @@ class VALContexts(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     VALContexts
-                | 
-                | A collection of Contexts.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    VALContexts
+                
+                A collection of Contexts.
     
     """
 
@@ -39,21 +39,21 @@ class VALContexts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(AnyObject iContext)
-                |     Creates a Context and adds it to the Context collection.
-                | 
-                |     Parameters:
-                | 
-                |         iContext
-                |             The Context 
-                | 
-                |     Example:
-                | 
-                |             This example creates a new Context in the cContexts
-                |             collection.
+                Sub Add(AnyObject iContext)
+                    Creates a Context and adds it to the Context collection.
+                
+                    Parameters:
+                
+                        iContext
+                            The Context 
+                
+                    Example:
+                
+                            This example creates a new Context in the cContexts
+                            collection.
                 |
-                |             Dim oNewContextText As Context
-                |             Set oNewContextText = cContexts.Add
+                            Dim oNewContextText As Context
+                            Set oNewContextText = cContexts.Add
 
         :param AnyObject i_context:
         :return: None
@@ -65,33 +65,33 @@ class VALContexts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Context using its index from the Contexts
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Context to retrieve from the
-                |             collection of Contexts. As a numerics, this index is the rank of the Context in
-                |             the collection. The index of the first Context in the collection is 1, and the
-                |             index of the last Context is Count. As a string, it is the name you assigned to
-                |             the Context. 
-                | 
-                |     Returns:
-                |         The retrieved Context 
-                |     Example:
-                | 
-                |             This example retrieves in oContext1 the ninth
-                |             Context,
-                |             and in oContext2 the Context named
-                |             Context3 from the cContexts collection. 
-                |             
-                | 
-                |             Dim oContext1 As Context
-                |             Set oContext1 = cContexts.Item(9)
-                |             Dim oContext2 As Context
-                |             Set oContext2 = cContexts.Item("Context3")
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Context using its index from the Contexts
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Context to retrieve from the
+                            collection of Contexts. As a numerics, this index is the rank of the Context in
+                            the collection. The index of the first Context in the collection is 1, and the
+                            index of the last Context is Count. As a string, it is the name you assigned to
+                            the Context. 
+                
+                    Returns:
+                        The retrieved Context 
+                    Example:
+                
+                            This example retrieves in oContext1 the ninth
+                            Context,
+                            and in oContext2 the Context named
+                            Context3 from the cContexts collection. 
+                            
+                
+                            Dim oContext1 As Context
+                            Set oContext1 = cContexts.Item(9)
+                            Dim oContext2 As Context
+                            Set oContext2 = cContexts.Item("Context3")
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -103,16 +103,16 @@ class VALContexts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Load()
-                |     Loads all Contexts from the Contexts collection.
-                | 
-                |     Example:
-                | 
-                |             The following example loads all Contexts from the cContexts
-                |             collection.
-                |             
-                | 
-                |             cContexts.Load
+                Sub Load()
+                    Loads all Contexts from the Contexts collection.
+                
+                    Example:
+                
+                            The following example loads all Contexts from the cContexts
+                            collection.
+                            
+                
+                            cContexts.Load
 
         :return: None
         """
@@ -123,26 +123,26 @@ class VALContexts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Context from the Contexts collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Context to retrieve from the
-                |             collection of Contexts. As a numerics, this index is the rank of the Context in
-                |             the collection. The index of the first Context in the collection is 1, and the
-                |             index of the last Context is Count. As a string, it is the name you assigned to
-                |             the Context. 
-                | 
-                |     Example:
-                | 
-                |             The following example removes the tenth Context and the Context
-                |             named
-                |             Context2 from the cContexts collection.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Context from the Contexts collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Context to retrieve from the
+                            collection of Contexts. As a numerics, this index is the rank of the Context in
+                            the collection. The index of the first Context in the collection is 1, and the
+                            index of the last Context is Count. As a string, it is the name you assigned to
+                            the Context. 
+                
+                    Example:
+                
+                            The following example removes the tenth Context and the Context
+                            named
+                            Context2 from the cContexts collection.
                 |
-                |             cContexts.Remove(10)
-                |             cContexts.Remove("Context2")
+                            cContexts.Remove(10)
+                            cContexts.Remove("Context2")
 
         :param CATVariant i_index:
         :return: None

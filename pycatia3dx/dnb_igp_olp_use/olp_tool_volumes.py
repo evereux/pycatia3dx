@@ -19,18 +19,18 @@ class OLPToolVolumes(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpToolVolumes
-                | 
-                | A list of tool volumes.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using OlpController.ToolVolumes
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpToolVolumes
+                
+                A list of tool volumes.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using OlpController.ToolVolumes
     
     """
 
@@ -43,11 +43,11 @@ class OLPToolVolumes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Create() As OlpToolVolume
-                |     Create a new tool volume.
-                | 
-                |     Returns:
-                |         The created tool volume.
+                Func Create() As OlpToolVolume
+                    Create a new tool volume.
+                
+                    Returns:
+                        The created tool volume.
 
         :return: OLPToolVolume
         """
@@ -58,13 +58,13 @@ class OLPToolVolumes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Delete(OlpToolVolume iToolVolume)
-                |     Delete a tool volume.
-                | 
-                |     Parameters:
-                | 
-                |         iToolVolume
-                |             The tool volume to delete.
+                Sub Delete(OlpToolVolume iToolVolume)
+                    Delete a tool volume.
+                
+                    Parameters:
+                
+                        iToolVolume
+                            The tool volume to delete.
 
         :param OLPToolVolume i_tool_volume:
         :return: None
@@ -76,17 +76,17 @@ class OLPToolVolumes(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(long iIndex) As OlpToolVolume
-                |     Get a tool volume by index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The tool volume index in collection (not the index property).
-                |             
-                | 
-                |     Returns:
-                |         The tool volume. 
+                Func Item(long iIndex) As OlpToolVolume
+                    Get a tool volume by index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The tool volume index in collection (not the index property).
+                            
+                
+                    Returns:
+                        The tool volume. 
 
         :param int i_index:
         :return: OLPToolVolume

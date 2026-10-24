@@ -17,14 +17,14 @@ class SrmProxyMember(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrmProxyMember
-                | 
-                | Object to manage the Proxy Member.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrmProxyMember
+                
+                Object to manage the Proxy Member.
 
     """
 

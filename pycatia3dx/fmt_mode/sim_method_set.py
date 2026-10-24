@@ -18,14 +18,14 @@ class SimMethodSet(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimMethodSet
-                | 
-                | Interface representing the simulation set that owns method
-                | objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimMethodSet
+                
+                Interface representing the simulation set that owns method
+                objects.
     
     """
 
@@ -38,20 +38,20 @@ class SimMethodSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimMethod
-                |     Returns a method using its index from the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the method to retrieve from the
-                |             collection.
-                |             This index is the rank of the method in the collection. The index
-                |             of the first method in the collection is 1, and the index of the last method is
-                |             Count. 
-                | 
-                |     Returns:
-                |         The retrieved method.
+                Func Item(CATVariant iIndex) As SimMethod
+                    Returns a method using its index from the collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the method to retrieve from the
+                            collection.
+                            This index is the rank of the method in the collection. The index
+                            of the first method in the collection is 1, and the index of the last method is
+                            Count. 
+                
+                    Returns:
+                        The retrieved method.
 
         :param CATVariant i_index:
         :return: SimMethod

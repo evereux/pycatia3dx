@@ -17,15 +17,15 @@ class SsmManufacturingSpace(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmManufacturingSpace
-                | 
-                | Role: This interface is specific to Space Manufacturing
-                | reference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmManufacturingSpace
+                
+                Role: This interface is specific to Space Manufacturing
+                reference
 
     """
 

@@ -18,21 +18,21 @@ class Dimension(RealParam):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         KnowledgeIDLItf.RealParam
-                |                             Dimension
-                | 
-                | Represents the dimension parameter.
-                | It is an abstract object which is not intended to be created as such, but from
-                | which the length and angle parameters derive.
-                | 
-                | See also:
-                |     Length, Angle
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        KnowledgeIDLItf.RealParam
+                                            Dimension
+                
+                Represents the dimension parameter.
+                It is an abstract object which is not intended to be created as such, but from
+                which the length and angle parameters derive.
+                
+                See also:
+                    Length, Angle
     
     """
 
@@ -46,8 +46,8 @@ class Dimension(RealParam):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Unit() As Unit (Read Only)
-                |     Returns the unit used for this dimension object.
+                Property Unit() As Unit (Read Only)
+                    Returns the unit used for this dimension object.
 
         :return: Unit
         """
@@ -59,30 +59,30 @@ class Dimension(RealParam):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func ValueAsString2(long iNbDecimals,boolean iShowTrailingZeros) As
-                | CATBSTR
-                |     Gets the value of the parameter as a string, with a given
-                |     precision.
-                | 
-                |     Parameters:
-                | 
-                |         iNbDecimals
-                |             the maximum number of decimal places to use to generate the string
-                |             (minimum 0, maximum 9) 
-                |         iShowTrailingZeros
-                |             this argument says if trailing zeros have to be shown
-                |             
-                | 
-                |     Returns:
-                |         oValue the value of the parameter 
-                | 
-                | Example:
-                |     This example gets the value of the existing dimension parameter and shows
-                |     it in a message box
-                | 
-                |      Dim str
-                |      str = dimension.ValueAsString2
-                |      MsgBox str
+                Func ValueAsString2(long iNbDecimals,boolean iShowTrailingZeros) As
+                CATBSTR
+                    Gets the value of the parameter as a string, with a given
+                    precision.
+                
+                    Parameters:
+                
+                        iNbDecimals
+                            the maximum number of decimal places to use to generate the string
+                            (minimum 0, maximum 9) 
+                        iShowTrailingZeros
+                            this argument says if trailing zeros have to be shown
+                            
+                
+                    Returns:
+                        oValue the value of the parameter 
+                
+                Example:
+                    This example gets the value of the existing dimension parameter and shows
+                    it in a message box
+                
+                     Dim str
+                     str = dimension.ValueAsString2
+                     MsgBox str
 
         :param int i_nb_decimals:
         :param bool i_show_trailing_zeros:

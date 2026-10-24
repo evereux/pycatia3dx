@@ -21,28 +21,28 @@ class HybridShapePositionTransform(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapePositionTransfo
-                | 
-                | Represents the hybrid shape position transformation feature
-                | object.
-                | Role: To access the data of the hybrid shape position transformation feature
-                | object. This data includes:
-                | 
-                |     The positioning mode
-                |     The profile to be positioned
-                |     The initila and target planes
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapePositionTransfo
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapePositionTransfo
+                
+                Represents the hybrid shape position transformation feature
+                object.
+                Role: To access the data of the hybrid shape position transformation feature
+                object. This data includes:
+                
+                    The positioning mode
+                    The profile to be positioned
+                    The initila and target planes
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapePositionTransfo
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -56,14 +56,14 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property InitialDirectionComputationMode() As long
-                |     Gets or sets the computation mode of the X axis (or direction) of the
-                |     initial axis system.
-                | 
-                |     Parameters:
-                | 
-                |         oDirCompMode
-                |             computation mode = 0 : no X axis specified = 1 : the X axis is implicitly the tangent of the profile at the origin(the origin then HAS to be on the profile). = 2 : the X axis is specified by a direction by SetPositionDirection(1,UserInputDirection).
+                Property InitialDirectionComputationMode() As long
+                    Gets or sets the computation mode of the X axis (or direction) of the
+                    initial axis system.
+                
+                    Parameters:
+                
+                        oDirCompMode
+                            computation mode = 0 : no X axis specified = 1 : the X axis is implicitly the tangent of the profile at the origin(the origin then HAS to be on the profile). = 2 : the X axis is specified by a direction by SetPositionDirection(1,UserInputDirection).
 
         :return: int
         """
@@ -84,16 +84,16 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Mode() As long
-                |     Returns or sets the positioning mode.
-                |     Legal values:
-                | 
-                |     CATGSMPositionMode_NoneOrPositioned
-                |         No positioning
-                |     CATGSMPositionMode_ExplicitSweep
-                |         The explicit profile is to be moved from its initial plane to the first
-                |         sweep plane
-                |     CATGSMPositionMode_Develop
+                Property Mode() As long
+                    Returns or sets the positioning mode.
+                    Legal values:
+                
+                    CATGSMPositionMode_NoneOrPositioned
+                        No positioning
+                    CATGSMPositionMode_ExplicitSweep
+                        The explicit profile is to be moved from its initial plane to the first
+                        sweep plane
+                    CATGSMPositionMode_Develop
 
         :return: int
         """
@@ -114,8 +114,8 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Profile() As Reference
-                |     Returns or sets the profile to be positioned.
+                Property Profile() As Reference
+                    Returns or sets the profile to be positioned.
 
         :return: Reference
         """
@@ -135,13 +135,13 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbPosAngle() As long
-                |     Gets the number of numerical positioning parameters : first axis direction angles.
-                | 
-                |     Parameters:
-                | 
-                |         oI
-                |             Number of parameters
+                Func GetNbPosAngle() As long
+                    Gets the number of numerical positioning parameters : first axis direction angles.
+                
+                    Parameters:
+                
+                        oI
+                            Number of parameters
 
         :return: int
         """
@@ -152,13 +152,13 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNbPosCoord() As long
-                |     Gets the number of numerical positioning parameters : origin planar coordinates.
-                | 
-                |     Parameters:
-                | 
-                |         oI
-                |             Number of parameters
+                Func GetNbPosCoord() As long
+                    Gets the number of numerical positioning parameters : origin planar coordinates.
+                
+                    Parameters:
+                
+                        oI
+                            Number of parameters
 
         :return: int
         """
@@ -169,17 +169,17 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosAngle(long iI) As Angle
-                |     Returns angles of both initial and target coordinate systems from default
-                |     positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The index of numerical positioning angles in initial (value 1) or
-                |             target (value 2) axis system. 
-                |         oAngle
-                |             The angle value.
+                Func GetPosAngle(long iI) As Angle
+                    Returns angles of both initial and target coordinate systems from default
+                    positions.
+                
+                    Parameters:
+                
+                        iI
+                            The index of numerical positioning angles in initial (value 1) or
+                            target (value 2) axis system. 
+                        oAngle
+                            The angle value.
 
         :param int i_i:
         :return: Angle
@@ -191,17 +191,17 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosCoord(long ii) As Length
-                |     Returns translation coordinates if both initial and target coordinate
-                |     systems from default positions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The iIndex of numerical positioning coordinates in initial (value 1
-                |             or 2) or target (value 3 or 4) coordinate system. 
-                |         oCoordinate
-                |             The coordinate value
+                Func GetPosCoord(long ii) As Length
+                    Returns translation coordinates if both initial and target coordinate
+                    systems from default positions.
+                
+                    Parameters:
+                
+                        iI
+                            The iIndex of numerical positioning coordinates in initial (value 1
+                            or 2) or target (value 3 or 4) coordinate system. 
+                        oCoordinate
+                            The coordinate value
 
         :param int ii:
         :return: Length
@@ -213,17 +213,17 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosPoint(long ii) As Reference
-                |     Returns the points designated as the origins of the initial and target
-                |     planes.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The plane index: 1 for initial one, 2 for target one
-                |             
-                |         oElem
-                |             The origin point
+                Func GetPosPoint(long ii) As Reference
+                    Returns the points designated as the origins of the initial and target
+                    planes.
+                
+                    Parameters:
+                
+                        iI
+                            The plane index: 1 for initial one, 2 for target one
+                            
+                        oElem
+                            The origin point
 
         :param int ii:
         :return: Reference
@@ -235,26 +235,26 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPosSwapAxes(long ii) As long
-                |     Returns axis inversion from previous definitions for both initial and
-                |     target planes.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The coordinate system index: 1 for initial one, 2 for target one
-                |             
-                |         oInversion
-                |             The inversion value:
-                | 
-                |             CATGSMAxisInversionMode_None
-                |                 No axis inverted
-                |             CATGSMAxisInversionMode_X
-                |                 Only the X axis iq inverted
-                |             CATGSMAxisInversionMode_Y
-                |                 Only the Y axis is inverted
-                |             CATGSMAxisInversionMode_Both
-                |                 Both axes inverted
+                Func GetPosSwapAxes(long ii) As long
+                    Returns axis inversion from previous definitions for both initial and
+                    target planes.
+                
+                    Parameters:
+                
+                        iI
+                            The coordinate system index: 1 for initial one, 2 for target one
+                            
+                        oInversion
+                            The inversion value:
+                
+                            CATGSMAxisInversionMode_None
+                                No axis inverted
+                            CATGSMAxisInversionMode_X
+                                Only the X axis iq inverted
+                            CATGSMAxisInversionMode_Y
+                                Only the Y axis is inverted
+                            CATGSMAxisInversionMode_Both
+                                Both axes inverted
 
         :param int ii:
         :return: int
@@ -266,18 +266,18 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPositionDirection(long iI) As HybridShapeDirection
-                |     Returns the positioning directions.
-                |     The positioning direction can be initial or target plane X-axis
-                |     direction.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The plane index: 1 for initial one, 2 for target one
-                |             
-                |         oElem
-                |             The direction element
+                Func GetPositionDirection(long iI) As HybridShapeDirection
+                    Returns the positioning directions.
+                    The positioning direction can be initial or target plane X-axis
+                    direction.
+                
+                    Parameters:
+                
+                        iI
+                            The plane index: 1 for initial one, 2 for target one
+                            
+                        oElem
+                            The direction element
 
         :param int i_i:
         :return: HybridShapeDirection
@@ -289,8 +289,8 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllPosAngle()
-                |     Removes all numerical positioning parameters : first axis direction angles.
+                Sub RemoveAllPosAngle()
+                    Removes all numerical positioning parameters : first axis direction angles.
 
         :return: None
         """
@@ -301,8 +301,8 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllPosCoord()
-                |     Removes all numerical positioning parameters : origin planar coordinates.
+                Sub RemoveAllPosCoord()
+                    Removes all numerical positioning parameters : origin planar coordinates.
 
         :return: None
         """
@@ -313,16 +313,16 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosAngle(long iI,Angle iAngle)
-                |     Sets angles of both initial and target coordinate systems.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The index of numerical positioning angles in initial (value 1) or
-                |             target (value 2) axis system. 
-                |         iAngle
-                |             The angle value.
+                Sub SetPosAngle(long iI,Angle iAngle)
+                    Sets angles of both initial and target coordinate systems.
+                
+                    Parameters:
+                
+                        iI
+                            The index of numerical positioning angles in initial (value 1) or
+                            target (value 2) axis system. 
+                        iAngle
+                            The angle value.
 
         :param int i_i:
         :param Angle i_angle:
@@ -335,17 +335,17 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosCoord(long iI,Length iCoordinate)
-                |     Sets translation coordinates of both initial and target coordinate
-                |     systems.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The iIndex of numerical positioning coordinates in initial (value 1
-                |             or 2) or target (value 3 or 4) coordinate system. 
-                |         iCoordinate
-                |             The coordinate value
+                Sub SetPosCoord(long iI,Length iCoordinate)
+                    Sets translation coordinates of both initial and target coordinate
+                    systems.
+                
+                    Parameters:
+                
+                        iI
+                            The iIndex of numerical positioning coordinates in initial (value 1
+                            or 2) or target (value 3 or 4) coordinate system. 
+                        iCoordinate
+                            The coordinate value
 
         :param int i_i:
         :param Length i_coordinate:
@@ -358,17 +358,17 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosPoint(long iI,Reference iElem)
-                |     Sets the points designated as the origins of the initial and target
-                |     planes.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The plane index: 1 for initial one, 2 for target one
-                |             
-                |         iElem
-                |             The origin point
+                Sub SetPosPoint(long iI,Reference iElem)
+                    Sets the points designated as the origins of the initial and target
+                    planes.
+                
+                    Parameters:
+                
+                        iI
+                            The plane index: 1 for initial one, 2 for target one
+                            
+                        iElem
+                            The origin point
 
         :param int i_i:
         :param Reference i_elem:
@@ -381,26 +381,26 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosSwapAxes(long ii,long iInversion)
-                |     Sets axis inversion from previous definitions for both initial and target
-                |     planes.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The coordinate system index: 1 for initial one, 2 for target one
-                |             
-                |         iInversion
-                |             The inversion value:
-                | 
-                |             CATGSMAxisInversionMode_None
-                |                 No axis inverted
-                |             CATGSMAxisInversionMode_X
-                |                 Only the X axis iq inverted
-                |             CATGSMAxisInversionMode_Y
-                |                 Only the Y axis is inverted
-                |             CATGSMAxisInversionMode_Both
-                |                 Both axes inverted
+                Sub SetPosSwapAxes(long ii,long iInversion)
+                    Sets axis inversion from previous definitions for both initial and target
+                    planes.
+                
+                    Parameters:
+                
+                        iI
+                            The coordinate system index: 1 for initial one, 2 for target one
+                            
+                        iInversion
+                            The inversion value:
+                
+                            CATGSMAxisInversionMode_None
+                                No axis inverted
+                            CATGSMAxisInversionMode_X
+                                Only the X axis iq inverted
+                            CATGSMAxisInversionMode_Y
+                                Only the Y axis is inverted
+                            CATGSMAxisInversionMode_Both
+                                Both axes inverted
 
         :param int ii:
         :param int i_inversion:
@@ -413,18 +413,18 @@ class HybridShapePositionTransform(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPositionDirection(long iI,HybridShapeDirection iElem)
-                |     Sets the positioning directions.
-                |     The positioning direction can be initial or target plane X-axis
-                |     direction.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The plane index: 1 for initial one, 2 for target one
-                |             
-                |         iElem
-                |             The direction element
+                Sub SetPositionDirection(long iI,HybridShapeDirection iElem)
+                    Sets the positioning directions.
+                    The positioning direction can be initial or target plane X-axis
+                    direction.
+                
+                    Parameters:
+                
+                        iI
+                            The plane index: 1 for initial one, 2 for target one
+                            
+                        iElem
+                            The direction element
 
         :param int i_i:
         :param HybridShapeDirection i_elem:

@@ -17,15 +17,15 @@ class MeasureSettingAtt(SettingController):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         MeasureSettingAtt
-                | 
-                | The interface to access a CATIAMeasureSettingAtt.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    System.SettingController
+                                        MeasureSettingAtt
+                
+                The interface to access a CATIAMeasureSettingAtt.
     
     """
 
@@ -38,20 +38,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAutoAttachMoveStatus(long oAutoUpdateInPrd)
+                Sub GetAutoAttachMoveStatus(long oAutoUpdateInPrd)
                 |
-                |        Gets the Status whether Automatic update of Measure on the Product is
-                |        enabled.
+                       Gets the Status whether Automatic update of Measure on the Product is
+                       enabled.
                 |
-                |      Parameters:
-                |          oAutoUpdateInPart
-                |               true: Update Enabled
-                |               false: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
-                |          
-                |          virtual int MyFunction (int Arg1) = 0;
+                     Parameters:
+                         oAutoUpdateInPart
+                              true: Update Enabled
+                              false: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
+                         
+                         virtual int MyFunction (int Arg1) = 0;
 
         :param int o_auto_update_in_prd:
         :return: None
@@ -63,20 +63,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetBorderColor(long oR,long oG,long oB)
+                Sub GetBorderColor(long oR,long oG,long oB)
                 |
-                |        Get the the Measure Border Color.
+                       Get the the Measure Border Color.
                 |
-                |      Parameters:
-                |          oR
-                |             the red component of the color.
-                |          oG
-                |             the green component of the color.
-                |          oB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oR
+                            the red component of the color.
+                         oG
+                            the green component of the color.
+                         oB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_r:
         :param int o_g:
@@ -90,17 +90,17 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetBorderStatus(long ochkBorder)
+                Sub GetBorderStatus(long ochkBorder)
                 |
-                |        Gets the Status whether Border of Measure is enabled.
+                       Gets the Status whether Border of Measure is enabled.
                 |
-                |      Parameters:
-                |          ochkBorder
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ochkBorder
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ochk_border:
         :return: None
@@ -112,17 +112,17 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFillStatus(long ochkFill)
+                Sub GetFillStatus(long ochkFill)
                 |
-                |        Gets the Status whether Fill of Measure is enabled.
+                       Gets the Status whether Fill of Measure is enabled.
                 |
-                |      Parameters:
-                |          ochkFill
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ochkFill
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ochk_fill:
         :return: None
@@ -134,20 +134,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFillStyle(long oFillStyle)
+                Sub GetFillStyle(long oFillStyle)
                 |
-                |        get the Fill Style of Measure 
+                       get the Fill Style of Measure 
                 |
-                |      Parameters:
-                |          oFillStyle
-                |               1: Solid Fill
-                |               2: Gradient Left To Right
-                |               3: Gradient Right To Left
-                |               4: Gradient Top to Bottom
-                |               5 : Gradient Bottom to Top
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oFillStyle
+                              1: Solid Fill
+                              2: Gradient Left To Right
+                              3: Gradient Right To Left
+                              4: Gradient Top to Bottom
+                              5 : Gradient Bottom to Top
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_fill_style:
         :return: None
@@ -159,20 +159,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLineColor(long oR,long oG,long oB)
+                Sub GetLineColor(long oR,long oG,long oB)
                 |
-                |        Get the Textbox color for Measure. 
+                       Get the Textbox color for Measure. 
                 |
-                |      Parameters:
-                |          oR
-                |             the red component of the color.
-                |          oG
-                |             the green component of the color.
-                |          oB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oR
+                            the red component of the color.
+                         oG
+                            the green component of the color.
+                         oB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_r:
         :param int o_g:
@@ -186,16 +186,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLineWidth(long oLineWidth)
+                Sub GetLineWidth(long oLineWidth)
                 |
-                |        Get the Line width for Measure
+                       Get the Line width for Measure
                 |
-                |      Parameters:
-                |          oLineWidth
-                |               Line Width.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oLineWidth
+                              Line Width.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_line_width:
         :return: None
@@ -207,18 +207,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMeasureOnlyShownElementsStatus(long ochkStatus)
+                Sub GetMeasureOnlyShownElementsStatus(long ochkStatus)
                 |
-                |        Gets the Status whether Measure Only Shown Elements for Measure is
-                |        enabled.
+                       Gets the Status whether Measure Only Shown Elements for Measure is
+                       enabled.
                 |
-                |      Parameters:
-                |          ochkStatus
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ochkStatus
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ochk_status:
         :return: None
@@ -230,18 +230,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetProductUpdateStatus(long oAutoUpdateInPrd)
+                Sub GetProductUpdateStatus(long oAutoUpdateInPrd)
                 |
-                |        Gets the Status whether Automatic update of Measure on the Product is
-                |        enabled.
+                       Gets the Status whether Automatic update of Measure on the Product is
+                       enabled.
                 |
-                |      Parameters:
-                |          oAutoUpdateInPart
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oAutoUpdateInPart
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_auto_update_in_prd:
         :return: None
@@ -253,20 +253,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextBoxColor(long oR,long oG,long oB)
+                Sub GetTextBoxColor(long oR,long oG,long oB)
                 |
-                |        Get the Textbox color for Measure. 
+                       Get the Textbox color for Measure. 
                 |
-                |      Parameters:
-                |          oR
-                |             the red component of the color.
-                |          oG
-                |             the green component of the color.
-                |          oB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oR
+                            the red component of the color.
+                         oG
+                            the green component of the color.
+                         oB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_r:
         :param int o_g:
@@ -280,16 +280,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextBoxTransparency(long oTransparency)
+                Sub GetTextBoxTransparency(long oTransparency)
                 |
-                |        Get the Measure Text box Tranparency.
+                       Get the Measure Text box Tranparency.
                 |
-                |      Parameters:
-                |          oTransparency
-                |               Transparency Value.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oTransparency
+                              Transparency Value.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_transparency:
         :return: None
@@ -301,20 +301,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextColor(long oR,long oG,long oB)
+                Sub GetTextColor(long oR,long oG,long oB)
                 |
-                |        Get the Measure Text Color.
+                       Get the Measure Text Color.
                 |
-                |      Parameters:
-                |          oR
-                |             the red component of the color.
-                |          oG
-                |             the green component of the color.
-                |          oB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oR
+                            the red component of the color.
+                         oG
+                            the green component of the color.
+                         oB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_r:
         :param int o_g:
@@ -328,15 +328,15 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextFont(CATBSTR oString)
-                |        Get the Measure Text Font.
+                Sub GetTextFont(CATBSTR oString)
+                       Get the Measure Text Font.
                 |
-                |      Parameters:
-                |          oString
-                |               Font Name.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oString
+                              Font Name.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param str o_string:
         :return: None
@@ -348,16 +348,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextFontIndex(long oTextFontIndex)
+                Sub GetTextFontIndex(long oTextFontIndex)
                 |
-                |        Get the Measure Text Font Index.
+                       Get the Measure Text Font Index.
                 |
-                |      Parameters:
-                |          oTextFontIndex
-                |               Font Index.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oTextFontIndex
+                              Font Index.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_text_font_index:
         :return: None
@@ -369,16 +369,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTextSize(float oTextSize)
+                Sub GetTextSize(float oTextSize)
                 |
-                |        Get the Measure Text Size.
+                       Get the Measure Text Size.
                 |
-                |      Parameters:
-                |          oTextSize
-                |               Text size.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oTextSize
+                              Text size.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param float o_text_size:
         :return: None
@@ -390,18 +390,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTildeShownStatus(long oTildeStatus)
+                Sub GetTildeShownStatus(long oTildeStatus)
                 |
-                |        Gets the Status whether Tilde Shown for Measure is
-                |        enabled.
+                       Gets the Status whether Tilde Shown for Measure is
+                       enabled.
                 |
-                |      Parameters:
-                |          oTildeStatus
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oTildeStatus
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int o_tilde_status:
         :return: None
@@ -413,18 +413,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAutoAttachMoveStatus(long iAutoUpdateInPrd)
+                Sub SetAutoAttachMoveStatus(long iAutoUpdateInPrd)
                 |
-                |        Sets the Status whether Automatic update of Measure on the Product is
-                |        enabled.
+                       Sets the Status whether Automatic update of Measure on the Product is
+                       enabled.
                 |
-                |      Parameters:
-                |          iAutoUpdateInPart
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iAutoUpdateInPart
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_auto_update_in_prd:
         :return: None
@@ -436,20 +436,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBorderColor(long iR,long iG,long iB)
+                Sub SetBorderColor(long iR,long iG,long iB)
                 |
-                |        Set the Measure Border Color.
+                       Set the Measure Border Color.
                 |
-                |      Parameters:
-                |          iR
-                |             the red component of the color.
-                |          iG
-                |             the green component of the color.
-                |          iB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iR
+                            the red component of the color.
+                         iG
+                            the green component of the color.
+                         iB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_r:
         :param int i_g:
@@ -463,17 +463,17 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBorderStatus(long ichkBorder)
+                Sub SetBorderStatus(long ichkBorder)
                 |
-                |        Sets the Status whether Border of Measure is enabled.
+                       Sets the Status whether Border of Measure is enabled.
                 |
-                |      Parameters:
-                |          ichkBorder
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ichkBorder
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ichk_border:
         :return: None
@@ -485,17 +485,17 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFillStatus(long ichkFill)
+                Sub SetFillStatus(long ichkFill)
                 |
-                |        Sets the Status whether Fill of Measure is enabled.
+                       Sets the Status whether Fill of Measure is enabled.
                 |
-                |      Parameters:
-                |          ichkFill
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ichkFill
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ichk_fill:
         :return: None
@@ -507,20 +507,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFillStyle(long iFillStyle)
+                Sub SetFillStyle(long iFillStyle)
                 |
-                |        Sets the Fill Style of Measure
+                       Sets the Fill Style of Measure
                 |
-                |      Parameters:
-                |          iFillStyle
-                |               1: Solid Fill
-                |               2: Gradient Left To Right
-                |               3: Gradient Right To Left
-                |               4: Gradient Top to Bottom
-                |               5 : Gradient Bottom to Top
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iFillStyle
+                              1: Solid Fill
+                              2: Gradient Left To Right
+                              3: Gradient Right To Left
+                              4: Gradient Top to Bottom
+                              5 : Gradient Bottom to Top
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_fill_style:
         :return: None
@@ -532,20 +532,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLineColor(long iR,long iG,long iB)
+                Sub SetLineColor(long iR,long iG,long iB)
                 |
-                |        Set the Line color for Measure. 
+                       Set the Line color for Measure. 
                 |
-                |      Parameters:
-                |          iR
-                |             the red component of the color.
-                |          iG
-                |             the green component of the color.
-                |          iB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iR
+                            the red component of the color.
+                         iG
+                            the green component of the color.
+                         iB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_r:
         :param int i_g:
@@ -559,18 +559,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLineWidth(long iLineWidth)
+                Sub SetLineWidth(long iLineWidth)
                 |
-                |        Set the Line width for Measure
+                       Set the Line width for Measure
                 |
-                |      Parameters:
-                |          iLineWidth
-                |               Line Width.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
-                |          
-                |          long MyFunction (long Arg1);
+                     Parameters:
+                         iLineWidth
+                              Line Width.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
+                         
+                         long MyFunction (long Arg1);
 
         :param int i_line_width:
         :return: None
@@ -582,18 +582,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMeasureOnlyShownElementsStatus(long ichkStatus)
+                Sub SetMeasureOnlyShownElementsStatus(long ichkStatus)
                 |
-                |        Sets the Status whether Measure Only Shown Elements for Measure is
-                |        enabled.
+                       Sets the Status whether Measure Only Shown Elements for Measure is
+                       enabled.
                 |
-                |      Parameters:
-                |          ichkStatus
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         ichkStatus
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int ichk_status:
         :return: None
@@ -605,18 +605,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProductUpdateStatus(long iAutoUpdateInPrd)
+                Sub SetProductUpdateStatus(long iAutoUpdateInPrd)
                 |
-                |        Sets the Status whether Automatic update of Measure on the Product is
-                |        enabled.
+                       Sets the Status whether Automatic update of Measure on the Product is
+                       enabled.
                 |
-                |      Parameters:
-                |          iAutoUpdateInPart
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iAutoUpdateInPart
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_auto_update_in_prd:
         :return: None
@@ -628,20 +628,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextBoxColor(long iR,long iG,long iB)
+                Sub SetTextBoxColor(long iR,long iG,long iB)
                 |
-                |        Set the Textbox color for Measure. 
+                       Set the Textbox color for Measure. 
                 |
-                |      Parameters:
-                |          oR
-                |             the red component of the color.
-                |          oG
-                |             the green component of the color.
-                |          oB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oR
+                            the red component of the color.
+                         oG
+                            the green component of the color.
+                         oB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_r:
         :param int i_g:
@@ -655,16 +655,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextBoxTransparency(long iTransparency)
+                Sub SetTextBoxTransparency(long iTransparency)
                 |
-                |        Set the Measure Text box Tranparency.
+                       Set the Measure Text box Tranparency.
                 |
-                |      Parameters:
-                |          iTransparency
-                |               Transparency Value.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iTransparency
+                              Transparency Value.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_transparency:
         :return: None
@@ -676,20 +676,20 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextColor(long iR,long iG,long iB)
+                Sub SetTextColor(long iR,long iG,long iB)
                 |
-                |        Set the Measure Text Color.
+                       Set the Measure Text Color.
                 |
-                |      Parameters:
-                |          iR
-                |             the red component of the color.
-                |          iG
-                |             the green component of the color.
-                |          iB
-                |             the blue component of the color.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iR
+                            the red component of the color.
+                         iG
+                            the green component of the color.
+                         iB
+                            the blue component of the color.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_r:
         :param int i_g:
@@ -703,16 +703,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextFont(CATBSTR iString)
+                Sub SetTextFont(CATBSTR iString)
                 |
-                |        Set the Measure Text Font.
+                       Set the Measure Text Font.
                 |
-                |      Parameters:
-                |          iString
-                |               Font Name.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iString
+                              Font Name.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param str i_string:
         :return: None
@@ -724,16 +724,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextFontIndex(long iTextFontIndex)
+                Sub SetTextFontIndex(long iTextFontIndex)
                 |
-                |        Set the Measure Text Font Index.
+                       Set the Measure Text Font Index.
                 |
-                |      Parameters:
-                |          oTextFontIndex
-                |               Font Index.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         oTextFontIndex
+                              Font Index.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param int i_text_font_index:
         :return: None
@@ -745,16 +745,16 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTextSize(float iTextSize)
+                Sub SetTextSize(float iTextSize)
                 |
-                |        Set the Measure Text Size.
+                       Set the Measure Text Size.
                 |
-                |      Pyarameters:
-                |          iTextSize
-                |               Text size.
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Pyarameters:
+                         iTextSize
+                              Text size.
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
 
         :param float i_text_size:
         :return: None
@@ -766,18 +766,18 @@ class MeasureSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTildeShownStatus(long iTildeStatus)
+                Sub SetTildeShownStatus(long iTildeStatus)
                 |
-                |        Sets the Status whether Tilde Shown for Measure is
-                |        enabled.
+                       Sets the Status whether Tilde Shown for Measure is
+                       enabled.
                 |
-                |      Parameters:
-                |          iTildeStatus
-                |               1: Update Enabled
-                |               0: Update Disabled
-                |      Returns:
-                |           S_OK: Success
-                |           E_FAIL: Failure
+                     Parameters:
+                         iTildeStatus
+                              1: Update Enabled
+                              0: Update Disabled
+                     Returns:
+                          S_OK: Success
+                          E_FAIL: Failure
         :param int i_tilde_status:
         :return: None
         """

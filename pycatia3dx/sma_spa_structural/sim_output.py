@@ -17,53 +17,53 @@ class SimOutput(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimOutput
-                | 
-                | Represents the Output object.
-                | The examples below use the SimFieldOutput object. The same pattern applies to
-                | SimHistoryOutput.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimOutput as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyOutput As SimOutput
-                |      Set MyOutput = MyFeatures.Add("SimFieldOutput")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimOutput named "Output.1"
-                |     as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyOutput As SimOutput
-                |      Set MyOutput = MyFeatures.Item("Output.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimOutput as
-                |     following:
-                | 
-                |      ...
-                |      myOutput = myFeatures.Add("SimFieldOutput")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimOutput named
-                |     "Output.1" as following:
-                | 
-                |      ...
-                |      myOutput = myFeatures.Item("Output.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimOutput
+                
+                Represents the Output object.
+                The examples below use the SimFieldOutput object. The same pattern applies to
+                SimHistoryOutput.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimOutput as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyOutput As SimOutput
+                     Set MyOutput = MyFeatures.Add("SimFieldOutput")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimOutput named "Output.1"
+                    as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyOutput As SimOutput
+                     Set MyOutput = MyFeatures.Item("Output.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimOutput as
+                    following:
+                
+                     ...
+                     myOutput = myFeatures.Add("SimFieldOutput")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimOutput named
+                    "Output.1" as following:
+                
+                     ...
+                     myOutput = myFeatures.Item("Output.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -77,8 +77,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,12 +99,12 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExactTimeFlag() As boolean
-                |     Returns or sets the flag that determines if the results are saved at the
-                |     exact time.
-                |     TRUE: the results are saved at the exact time.
-                |     FALSE: the results are saved at the increment ending immediately after the
-                |     time.
+                Property ExactTimeFlag() As boolean
+                    Returns or sets the flag that determines if the results are saved at the
+                    exact time.
+                    TRUE: the results are saved at the exact time.
+                    FALSE: the results are saved at the increment ending immediately after the
+                    time.
 
         :return: bool
         """
@@ -125,8 +125,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -139,8 +139,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyIncrements() As long
-                |     Output frequency in increments.
+                Property FrequencyIncrements() As long
+                    Output frequency in increments.
 
         :return: int
         """
@@ -161,8 +161,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyType() As SimOutputFrequencyType
-                |     Returns or sets the output request frequency.
+                Property FrequencyType() As SimOutputFrequencyType
+                    Returns or sets the output request frequency.
 
         :return: SimOutputFrequencyType
         """
@@ -183,9 +183,9 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ListOfOutputVariables() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of output variable identifiers.
+                Property ListOfOutputVariables() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of output variable identifiers.
 
         :return: tuple
         """
@@ -198,8 +198,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Location() As SimOutputElementLocation
-                |     Returns or sets the Element Location enum.
+                Property Location() As SimOutputElementLocation
+                    Returns or sets the Element Location enum.
 
         :return: SimOutputElementLocation
         """
@@ -220,8 +220,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberInterval() As long
-                |     Number of intervals during the step at which output is to be saved.
+                Property NumberInterval() As long
+                    Number of intervals during the step at which output is to be saved.
 
         :return: int
         """
@@ -242,9 +242,9 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OutputGroup() As SimOutputOutputGroup (Read Only)
-                |     Returns the output group of the selected output, which can be either field
-                |     or history.
+                Property OutputGroup() As SimOutputOutputGroup (Read Only)
+                    Returns the output group of the selected output, which can be either field
+                    or history.
 
         :return: SimOutputOutputGroup
         """
@@ -257,9 +257,9 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SectionPointSelectionType() As
-                | SimOutputSectionPointSelectionType
-                |     Returns or sets the section point selection type.
+                Property SectionPointSelectionType() As
+                SimOutputSectionPointSelectionType
+                    Returns or sets the section point selection type.
 
         :return: SimOutputSectionPointSelectionType
         """
@@ -280,8 +280,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SectionPoints() As CATSafeArrayVariant
-                |     Returns or sets the sections points.
+                Property SectionPoints() As CATSafeArrayVariant
+                    Returns or sets the sections points.
 
         :return: tuple
         """
@@ -302,9 +302,9 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -317,8 +317,8 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeInterval() As double
-                |     Time interval at which output is to be saved.
+                Property TimeInterval() As double
+                    Time interval at which output is to be saved.
 
         :return: float
         """
@@ -338,16 +338,16 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddOutputVariable(CATBSTR iVariableIdentifier)
-                |     Adds an output variable.
-                | 
-                |     Parameters:
-                | 
-                |         iVariableIdentifier[in]
-                |             The identifier of the output variable to add. Check the UI and/or
-                |             main documentation for the list of authorized values. Examples of valid strings
-                |             are: "S" for stress components, "S11" for Stress component 11, "SP" for
-                |             Principal Stresses, "U" for Translations and Rotations, etc.
+                Sub AddOutputVariable(CATBSTR iVariableIdentifier)
+                    Adds an output variable.
+                
+                    Parameters:
+                
+                        iVariableIdentifier[in]
+                            The identifier of the output variable to add. Check the UI and/or
+                            main documentation for the list of authorized values. Examples of valid strings
+                            are: "S" for stress components, "S11" for Stress component 11, "SP" for
+                            Principal Stresses, "U" for Translations and Rotations, etc.
 
         :param str i_variable_identifier:
         :return: None
@@ -359,17 +359,17 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetSectionPointByLayer(boolean oTop,boolean oMiddle,boolean
-                | oBottom)
-                |     Retrieves the section points by layer.
-                |     Only applicable when the section point selection type is
-                |     ByLayer.
-                | 
-                |     Parameters:
-                | 
-                |         oTop[out]
-                |         oMiddle[out]
-                |         oBottom[out]
+                Sub GetSectionPointByLayer(boolean oTop,boolean oMiddle,boolean
+                oBottom)
+                    Retrieves the section points by layer.
+                    Only applicable when the section point selection type is
+                    ByLayer.
+                
+                    Parameters:
+                
+                        oTop[out]
+                        oMiddle[out]
+                        oBottom[out]
 
         :param bool o_top:
         :param bool o_middle:
@@ -383,16 +383,16 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveOutputVariable(CATBSTR iVariableIdentifier)
-                |     Removes an output variable.
-                | 
-                |     Parameters:
-                | 
-                |         iVariableIdentifier[in]
-                |             The identifier of the output variable to remove. Check the UI
-                |             and/or main documentation for the list of authorized values. Examples of valid
-                |             strings are: "S" for stress components, "S11" for Stress component 11, "SP" for
-                |             Principal Stresses, "U" for Translations and Rotations, etc.
+                Sub RemoveOutputVariable(CATBSTR iVariableIdentifier)
+                    Removes an output variable.
+                
+                    Parameters:
+                
+                        iVariableIdentifier[in]
+                            The identifier of the output variable to remove. Check the UI
+                            and/or main documentation for the list of authorized values. Examples of valid
+                            strings are: "S" for stress components, "S11" for Stress component 11, "SP" for
+                            Principal Stresses, "U" for Translations and Rotations, etc.
 
         :param str i_variable_identifier:
         :return: None
@@ -404,17 +404,17 @@ class SimOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSectionPointByLayer(boolean iTop,boolean iMiddle,boolean
-                | iBottom)
-                |     Sets the section points by layer.
-                |     Only applicable is the section point selection type is
-                |     ByLayer.
-                | 
-                |     Parameters:
-                | 
-                |         iTop[in]
-                |         iMiddle[in]
-                |         iBottom[in]
+                Sub SetSectionPointByLayer(boolean iTop,boolean iMiddle,boolean
+                iBottom)
+                    Sets the section points by layer.
+                    Only applicable is the section point selection type is
+                    ByLayer.
+                
+                    Parameters:
+                
+                        iTop[in]
+                        iMiddle[in]
+                        iBottom[in]
 
         :param bool i_top:
         :param bool i_middle:

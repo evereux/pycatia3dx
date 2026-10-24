@@ -20,15 +20,15 @@ class AGTInsulations(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AGTInsulations
-                | 
-                | Object for AGTInsulations.
-                | To retrieve Insulation from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AGTInsulations
+                
+                Object for AGTInsulations.
+                To retrieve Insulation from collection.
     
     """
 
@@ -41,31 +41,31 @@ class AGTInsulations(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AGTInsulation
-                |     Retrieves a Insulation from the collection of Insulation.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of AGTInsulation 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ThisInsulation the second Insulation,
-                |              
-                |              and in ThisInsulation the Insulation named MyInsulation.2 in the
-                |              Insulation collection. 
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim ThisAGTRoot As AGTRoot
-                |              Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              Dim ThisInsulation As AGTInsulation
-                |              Set ThisInsulation = ThisAGTRoot.Insulations.Item(2)
-                |              Dim ThisInsulation As AGTInsulation
-                |              Set ThisInsulation = ThisAGTRoot.Insulations.Item("MyInsulation.2")
+                Func Item(CATVariant iIndex) As AGTInsulation
+                    Retrieves a Insulation from the collection of Insulation.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of AGTInsulation 
+                
+                    Example:
+                
+                
+                             This example retrieves in ThisInsulation the second Insulation,
+                             
+                             and in ThisInsulation the Insulation named MyInsulation.2 in the
+                             Insulation collection. 
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim ThisAGTRoot As AGTRoot
+                             Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
+                             Dim ThisInsulation As AGTInsulation
+                             Set ThisInsulation = ThisAGTRoot.Insulations.Item(2)
+                             Dim ThisInsulation As AGTInsulation
+                             Set ThisInsulation = ThisAGTRoot.Insulations.Item("MyInsulation.2")
 
         :param CATVariant i_index:
         :return: AGTInsulation

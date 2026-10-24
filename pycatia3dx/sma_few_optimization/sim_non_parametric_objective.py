@@ -17,54 +17,54 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementObjective
-                |                         SimNonParametricObjective
-                | 
-                | Represents the optimization task object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimNonParametricObjective as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyOptimizationTask As SimNonParametricObjective
-                |      Set MyOptimizationTask = MyFeatures.Add("SimNonParametricObjective")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimNonParametricObjective named "Optimization Task.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyOptimizationTask As SimNonParametricObjective
-                |      Set MyOptimizationTask = MyFeatures.Item("Optimization Task.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimNonParametricObjective as following:
-                | 
-                |      ...
-                |      MyOptimizationTask = MyFeatures.Add("SimNonParametricObjective")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimNonParametricObjective named "Optimization Task.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyOptimizationTask = MyFeatures.Item("Optimization Task.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementObjective
+                                        SimNonParametricObjective
+                
+                Represents the optimization task object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimNonParametricObjective as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyOptimizationTask As SimNonParametricObjective
+                     Set MyOptimizationTask = MyFeatures.Add("SimNonParametricObjective")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimNonParametricObjective named "Optimization Task.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyOptimizationTask As SimNonParametricObjective
+                     Set MyOptimizationTask = MyFeatures.Item("Optimization Task.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimNonParametricObjective as following:
+                
+                     ...
+                     MyOptimizationTask = MyFeatures.Add("SimNonParametricObjective")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimNonParametricObjective named "Optimization Task.1" as
+                    following:
+                
+                     ...
+                     MyOptimizationTask = MyFeatures.Item("Optimization Task.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -78,8 +78,8 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetMassType() As SimOptimizationTargetMassType
-                |     Returns or sets the type of mass target
+                Property TargetMassType() As SimOptimizationTargetMassType
+                    Returns or sets the type of mass target
 
         :return: int
         """
@@ -100,8 +100,8 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimOptimizationTaskType
-                |     Returns or sets the type of optimization task.
+                Property Type() As SimOptimizationTaskType
+                    Returns or sets the type of optimization task.
 
         :return: int
         """
@@ -121,15 +121,15 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddDesignResponse(AnyObject iDesignResponse,double iWeight,double
-                | iReferenceValue)
-                |     Adds the number of design responses that needs to used in the
-                |     objective
-                | 
-                |     Parameters:
-                | 
-                |         iDesignResponse
-                |             [in], iWeight [in], iReferenceValue [in]
+                Sub AddDesignResponse(AnyObject iDesignResponse,double iWeight,double
+                iReferenceValue)
+                    Adds the number of design responses that needs to used in the
+                    objective
+                
+                    Parameters:
+                
+                        iDesignResponse
+                            [in], iWeight [in], iReferenceValue [in]
 
         :param AnyObject i_design_response:
         :param float i_weight:
@@ -143,13 +143,13 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAbsoluteTargetMass(double oVal)
-                |     Gets the Absolute Target Mass.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: MASS, units:kg
+                Sub GetAbsoluteTargetMass(double oVal)
+                    Gets the Absolute Target Mass.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: MASS, units:kg
 
         :param float o_val:
         :return: None
@@ -161,13 +161,13 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTargetMassRatio(double oVal)
-                |     Gets the Relative Target Mass.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Constraint value. Quantity: VALUE, units: Percentage
+                Sub GetTargetMassRatio(double oVal)
+                    Gets the Relative Target Mass.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Constraint value. Quantity: VALUE, units: Percentage
 
         :param float o_val:
         :return: None
@@ -179,13 +179,13 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAbsoluteTargetMass(double iVal)
-                |     Sets the Absolute Target Mass.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: MASS, units:kg
+                Sub SetAbsoluteTargetMass(double iVal)
+                    Sets the Absolute Target Mass.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: MASS, units:kg
 
         :param float i_val:
         :return: None
@@ -197,13 +197,13 @@ class SimNonParametricObjective(SimDesignImprovementObjective):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTargetMassRatio(double iVal)
-                |     Sets the Relative Target Mass.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: VALUE, units:Percentage
+                Sub SetTargetMassRatio(double iVal)
+                    Sets the Relative Target Mass.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: VALUE, units:Percentage
 
         :param float i_val:
         :return: None

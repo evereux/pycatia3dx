@@ -18,15 +18,15 @@ class ManufacturingEnumParameter(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingEnumParameter
-                | 
-                | This interface is used to handle with Enumeration Parameters for
-                | Manufacturing
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingEnumParameter
+                
+                This interface is used to handle with Enumeration Parameters for
+                Manufacturing
     
     """
 
@@ -39,13 +39,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMode() As Parameter
-                |     Retrieves the value for mode.
-                | 
-                |     Parameters:
-                | 
-                |         oMode
-                |             The return value
+                Func GetMode() As Parameter
+                    Retrieves the value for mode.
+                
+                    Parameters:
+                
+                        oMode
+                            The return value
 
         :return: Parameter
         """
@@ -56,13 +56,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetModeBool() As boolean
-                |     Retrieves the value for mode.
-                | 
-                |     Parameters:
-                | 
-                |         oMode
-                |             The return value
+                Func GetModeBool() As boolean
+                    Retrieves the value for mode.
+                
+                    Parameters:
+                
+                        oMode
+                            The return value
 
         :return: bool
         """
@@ -73,13 +73,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetModeStr() As CATBSTR
-                |     Retrieves the value for mode.
-                | 
-                |     Parameters:
-                | 
-                |         oMode
-                |             The return value
+                Func GetModeStr() As CATBSTR
+                    Retrieves the value for mode.
+                
+                    Parameters:
+                
+                        oMode
+                            The return value
 
         :return: str
         """
@@ -90,13 +90,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetObject() As AnyObject
-                |     Retrieves the value of mode.
-                | 
-                |     Parameters:
-                | 
-                |         oValue
-                |             The return value
+                Func GetObject() As AnyObject
+                    Retrieves the value of mode.
+                
+                    Parameters:
+                
+                        oValue
+                            The return value
 
         :return: AnyObject
         """
@@ -107,13 +107,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetModeBool(boolean iMode)
-                |     Set the value for mode.
-                | 
-                |     Parameters:
-                | 
-                |         iMode
-                |             The value to set
+                Sub SetModeBool(boolean iMode)
+                    Set the value for mode.
+                
+                    Parameters:
+                
+                        iMode
+                            The value to set
 
         :param bool i_mode:
         :return: None
@@ -125,13 +125,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetModeStr(CATBSTR iMode)
-                |     Set the value for mode.
-                | 
-                |     Parameters:
-                | 
-                |         iMode
-                |             The value to set
+                Sub SetModeStr(CATBSTR iMode)
+                    Set the value for mode.
+                
+                    Parameters:
+                
+                        iMode
+                            The value to set
 
         :param str i_mode:
         :return: None
@@ -143,13 +143,13 @@ class ManufacturingEnumParameter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetObject(AnyObject iValue)
-                |     Set the value of mode.
-                | 
-                |     Parameters:
-                | 
-                |         iValue
-                |             The value to set
+                Sub SetObject(AnyObject iValue)
+                    Set the value of mode.
+                
+                    Parameters:
+                
+                        iValue
+                            The value to set
 
         :param AnyObject i_value:
         :return: None

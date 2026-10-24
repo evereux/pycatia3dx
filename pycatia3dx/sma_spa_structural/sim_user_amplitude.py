@@ -18,43 +18,43 @@ class SimUserAmplitude(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimUserAmplitude
-                | 
-                | Represents the User Amplitude object.
-                | 
-                | Given a SimFeatures object, you can create SimAmplitude and retrieve the
-                | SimUserAmplitude. The following example demonstrates this.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimUserAmplitude as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAmplitude As SimAmplitude
-                |      Set MyAmplitude = MyFeatures.Add("SimAmplitude")
-                |      MyAmplitude.DefinitionType = SimAmplitudeUserDefinition
-                |      Dim MyUserAmplitude As SimUserAmplitude
-                |      Set MyUserAmplitude = MyAmplitude.UserAmplitude
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimUserAmplitude as following:
-                | 
-                |      ...
-                |      myAmplitude = myFeatures.Add("SimAmplitude")
-                |      myAmplitude.DefinitionType = SimAmplitudeUserDefinition
-                |      myUserAmplitude = myAmplitude.UserAmplitude
-                |      
-                | 
-                | See also:
-                |     SimFeatures, SimAmplitude
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimUserAmplitude
+                
+                Represents the User Amplitude object.
+                
+                Given a SimFeatures object, you can create SimAmplitude and retrieve the
+                SimUserAmplitude. The following example demonstrates this.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimUserAmplitude as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAmplitude As SimAmplitude
+                     Set MyAmplitude = MyFeatures.Add("SimAmplitude")
+                     MyAmplitude.DefinitionType = SimAmplitudeUserDefinition
+                     Dim MyUserAmplitude As SimUserAmplitude
+                     Set MyUserAmplitude = MyAmplitude.UserAmplitude
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimUserAmplitude as following:
+                
+                     ...
+                     myAmplitude = myFeatures.Add("SimAmplitude")
+                     myAmplitude.DefinitionType = SimAmplitudeUserDefinition
+                     myUserAmplitude = myAmplitude.UserAmplitude
+                     
+                
+                See also:
+                    SimFeatures, SimAmplitude
     
     """
 
@@ -68,8 +68,8 @@ class SimUserAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumVariables() As long
-                |     Returns or sets the num variables.
+                Property NumVariables() As long
+                    Returns or sets the num variables.
 
         :return: int
         """
@@ -90,8 +90,8 @@ class SimUserAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table.
+                Property Table() As SimTable (Read Only)
+                    Returns the table.
 
         :return: SimTable
         """
@@ -104,8 +104,8 @@ class SimUserAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TableColumn() As SimTableColumn (Read Only)
-                |     Returns the table column. 
+                Property TableColumn() As SimTableColumn (Read Only)
+                    Returns the table column. 
 
         :return: SimTableColumn
         """

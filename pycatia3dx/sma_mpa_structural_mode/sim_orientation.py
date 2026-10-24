@@ -17,14 +17,14 @@ class SimOrientation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimOrientation
-                | 
-                | Represents the Orientation object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimOrientation
+                
+                Represents the Orientation object.
     
     """
 
@@ -38,8 +38,8 @@ class SimOrientation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AngleOfRotation() As double
-                |     Returns or sets the angle of rotation. Quantity: ANGLE, units: Degree
+                Property AngleOfRotation() As double
+                    Returns or sets the angle of rotation. Quantity: ANGLE, units: Degree
 
         :return: float
         """
@@ -60,8 +60,8 @@ class SimOrientation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisOfRotation() As SimOrientationAxisOfRotation
-                |     Returns or sets the axis of rotation.
+                Property AxisOfRotation() As SimOrientationAxisOfRotation
+                    Returns or sets the axis of rotation.
 
         :return: int
         """
@@ -82,8 +82,8 @@ class SimOrientation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the mass.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the mass.
 
         :return: SimAxisSystem
         """
@@ -96,13 +96,13 @@ class SimOrientation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationFlag() As boolean
-                |     Returns or sets the flag that determines if the orientation is
-                |     enabled.
-                | 
-                |     TRUE: the orientation is enabled.
-                | 
-                |     FALSE: the orientation is not enabled. 
+                Property OrientationFlag() As boolean
+                    Returns or sets the flag that determines if the orientation is
+                    enabled.
+                
+                    TRUE: the orientation is enabled.
+                
+                    FALSE: the orientation is not enabled. 
 
         :return: bool
         """

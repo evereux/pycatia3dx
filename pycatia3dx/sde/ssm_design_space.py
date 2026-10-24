@@ -17,14 +17,14 @@ class SsmDesignSpace(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmDesignSpace
-                | 
-                | Role: This interface is specific to Space design reference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmDesignSpace
+                
+                Role: This interface is specific to Space design reference
     
     """
 
@@ -38,11 +38,11 @@ class SsmDesignSpace(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FloorArea() As double (Read Only)
-                |     Get Floor Area Attribute
-                | 
-                |     Returns:
-                |         Floor area (in MKS). 
+                Property FloorArea() As double (Read Only)
+                    Get Floor Area Attribute
+                
+                    Returns:
+                        Floor area (in MKS). 
 
         :return: float
         """

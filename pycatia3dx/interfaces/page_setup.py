@@ -19,18 +19,18 @@ class PageSetup(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PageSetup
-                | 
-                | Represents the page setup.
-                | The page setup is the object that stores data which defines how your documents
-                | and images are actually printed on paper. This data includes namely the paper
-                | size, the orientation, the bottom, top, right, and left margins, the zoom
-                | factor, the banner, and the printing quality.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PageSetup
+                
+                Represents the page setup.
+                The page setup is the object that stores data which defines how your documents
+                and images are actually printed on paper. This data includes namely the paper
+                size, the orientation, the bottom, top, right, and left margins, the zoom
+                factor, the banner, and the printing quality.
     
     """
 
@@ -44,39 +44,39 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Banner() As CATBSTR
-                |     Returns or sets the banner text. The banner text is added to the print and
-                |     can include variables, such as the user who prints, the date and time of
-                |     printing. Available variables are:
-                | 
-                |     $USER
-                |         The user name 
-                |     $HOST
-                |         The workstation name 
-                |     $SCALE
-                |         The print scale 
-                |     $TIME
-                |         The print time 
-                |     $DATE
-                |         The print date 
-                |     $DAY
-                |         The print day 
-                |     $MONTH
-                |         The print month 
-                |     $YEAR
-                |         The print year 
-                | 
-                |     The default banner is:
-                | 
-                |      Printed by $USER on $DATE $TIME
-                |      
-                | 
-                |     Example:
-                |         This example sets the banner text to the following:
-                |         Printed by $USER at scale $SCALE on $MONTH/$DAY/$YEAR
-                |         for the SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.Banner = "Printed by $USER at scale $SCALE on $MONTH/$DAY/$YEAR"
+                Property Banner() As CATBSTR
+                    Returns or sets the banner text. The banner text is added to the print and
+                    can include variables, such as the user who prints, the date and time of
+                    printing. Available variables are:
+                
+                    $USER
+                        The user name 
+                    $HOST
+                        The workstation name 
+                    $SCALE
+                        The print scale 
+                    $TIME
+                        The print time 
+                    $DATE
+                        The print date 
+                    $DAY
+                        The print day 
+                    $MONTH
+                        The print month 
+                    $YEAR
+                        The print year 
+                
+                    The default banner is:
+                
+                     Printed by $USER on $DATE $TIME
+                     
+                
+                    Example:
+                        This example sets the banner text to the following:
+                        Printed by $USER at scale $SCALE on $MONTH/$DAY/$YEAR
+                        for the SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.Banner = "Printed by $USER at scale $SCALE on $MONTH/$DAY/$YEAR"
 
         :return: str
         """
@@ -97,16 +97,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property BannerPosition() As CatBannerPosition
-                |     Returns or sets the banner position. The banner can be located on the top,
-                |     bottom, left, or right side of the page. catBannerPositionNone removes the
-                |     banner.
-                | 
-                |     Example:
-                |         This example sets the banner on the top side of the page for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.BannerPosition = CatBannerPositionTop
+                Property BannerPosition() As CatBannerPosition
+                    Returns or sets the banner position. The banner can be located on the top,
+                    bottom, left, or right side of the page. catBannerPositionNone removes the
+                    banner.
+                
+                    Example:
+                        This example sets the banner on the top side of the page for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.BannerPosition = CatBannerPositionTop
 
         :return: CatBannerPosition
         """
@@ -127,15 +127,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property BannerSize() As float
-                |     Returns or sets Banner Size. Banner size could range from 0.1 mm to 10.0 mm
-                |     Default value is 2.4 mm
-                | 
-                |     Example:
-                |         This example sets banner size for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.BannerSize = 1.1
+                Property BannerSize() As float
+                    Returns or sets Banner Size. Banner size could range from 0.1 mm to 10.0 mm
+                    Default value is 2.4 mm
+                
+                    Example:
+                        This example sets banner size for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.BannerSize = 1.1
 
         :return: float
         """
@@ -156,17 +156,17 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Bottom() As float
-                |     Returns or sets the lower left corner location with respect to the bottom
-                |     of the sheet of paper. This is the distance of the document or the image to
-                |     print lower left corner to the paper lower left corner.
-                | 
-                |     Example:
-                |         This example sets the location of the lower left corner of the document
-                |         or the image to print at 40 mm from the paper lower left corner for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.Bottom = 40
+                Property Bottom() As float
+                    Returns or sets the lower left corner location with respect to the bottom
+                    of the sheet of paper. This is the distance of the document or the image to
+                    print lower left corner to the paper lower left corner.
+                
+                    Example:
+                        This example sets the location of the lower left corner of the document
+                        or the image to print at 40 mm from the paper lower left corner for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.Bottom = 40
 
         :return: float
         """
@@ -187,16 +187,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property BottomMargin() As float
-                |     Returns or sets the bottom margin. The bottom margin is a strip in which
-                |     nothing is printed, located at the bottom of the page, which height is
-                |     expressed in mm.
-                | 
-                |     Example:
-                |         This example sets the bottom margin for the SetupForMyPrint page setup
-                |         to 10 mm.
-                | 
-                |          SetupForMyPrint.BottomMargin = 10
+                Property BottomMargin() As float
+                    Returns or sets the bottom margin. The bottom margin is a strip in which
+                    nothing is printed, located at the bottom of the page, which height is
+                    expressed in mm.
+                
+                    Example:
+                        This example sets the bottom margin for the SetupForMyPrint page setup
+                        to 10 mm.
+                
+                         SetupForMyPrint.BottomMargin = 10
 
         :return: float
         """
@@ -217,14 +217,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Color() As CatPrintColor
-                |     Returns or sets the color mode to use when printing.
-                | 
-                |     Example:
-                |         This example sets the color mode to GreyScale for the SetupForMyPrint
-                |         page setup.
-                | 
-                |          SetupForMyPrint.Color = catColorGreyScale
+                Property Color() As CatPrintColor
+                    Returns or sets the color mode to use when printing.
+                
+                    Example:
+                        This example sets the color mode to GreyScale for the SetupForMyPrint
+                        page setup.
+                
+                         SetupForMyPrint.Color = catColorGreyScale
 
         :return: CatPrintColor
         """
@@ -245,14 +245,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Dpi() As float
-                |     Returns or sets the printing dpi.
-                | 
-                |     Example:
-                |         This example sets the printing dpi for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.Dpi = 150.
+                Property Dpi() As float
+                    Returns or sets the printing dpi.
+                
+                    Example:
+                        This example sets the printing dpi for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.Dpi = 150.
 
         :return: float
         """
@@ -273,15 +273,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Gamma() As float
-                |     Returns or sets Gamma factor for print. Gamma value could range from 0.1 to
-                |     5.0 Default value is 1.0
-                | 
-                |     Example:
-                |         This example sets Gamma factor for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.Gamma = 1.2
+                Property Gamma() As float
+                    Returns or sets Gamma factor for print. Gamma value could range from 0.1 to
+                    5.0 Default value is 1.0
+                
+                    Example:
+                        This example sets Gamma factor for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.Gamma = 1.2
 
         :return: float
         """
@@ -302,17 +302,17 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Left() As float
-                |     Returns or sets the lower left corner location with respect to the left of
-                |     the sheet of paper. This is the distance of the document or the image to print
-                |     lower left corner to the paper lower left corner.
-                | 
-                |     Example:
-                |         This example sets the location of the lower left corner of the document
-                |         or the image to print at 25 mm from the paper lower left corner for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.Left = 25
+                Property Left() As float
+                    Returns or sets the lower left corner location with respect to the left of
+                    the sheet of paper. This is the distance of the document or the image to print
+                    lower left corner to the paper lower left corner.
+                
+                    Example:
+                        This example sets the location of the lower left corner of the document
+                        or the image to print at 25 mm from the paper lower left corner for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.Left = 25
 
         :return: float
         """
@@ -333,16 +333,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LeftMargin() As float
-                |     Returns or sets the left margin. The left margin is a strip in which
-                |     nothing is printed, located at the left of the page, which width is expressed
-                |     in mm.
-                | 
-                |     Example:
-                |         This example sets the left margin for the SetupForMyPrint page setup to
-                |         10 mm.
-                | 
-                |          SetupForMyPrint.LeftMargin = 10
+                Property LeftMargin() As float
+                    Returns or sets the left margin. The left margin is a strip in which
+                    nothing is printed, located at the left of the page, which width is expressed
+                    in mm.
+                
+                    Example:
+                        This example sets the left margin for the SetupForMyPrint page setup to
+                        10 mm.
+                
+                         SetupForMyPrint.LeftMargin = 10
 
         :return: float
         """
@@ -363,15 +363,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LineCap() As CatPrintLineCap
-                |     Returns or sets Line cap for print. Refer to CatPrintLineCap Default value
-                |     is catPrintFlat
-                | 
-                |     Example:
-                |         This example sets Line cap for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.LineCap = catPrintFlat
+                Property LineCap() As CatPrintLineCap
+                    Returns or sets Line cap for print. Refer to CatPrintLineCap Default value
+                    is catPrintFlat
+                
+                    Example:
+                        This example sets Line cap for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.LineCap = catPrintFlat
 
         :return: CatPrintLineCap
         """
@@ -392,15 +392,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LineTypeOverlappingCheck() As boolean
-                |     Returns or sets text Line type overlap check option for print. Default
-                |     value is FALSE
-                | 
-                |     Example:
-                |         This example sets Line type overlapping check option for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.LineTypeOverlappingCheck = True
+                Property LineTypeOverlappingCheck() As boolean
+                    Returns or sets text Line type overlap check option for print. Default
+                    value is FALSE
+                
+                    Example:
+                        This example sets Line type overlapping check option for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.LineTypeOverlappingCheck = True
 
         :return: bool
         """
@@ -421,16 +421,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LineTypeSpecification() As CatPrintLineSpecification
-                |     Returns or sets Line type specification for print. Refer to
-                |     CatPrintLineSpecification Default value is
-                |     catPrintAbsolute
-                | 
-                |     Example:
-                |         This example sets Line type specification for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.LineTypeSpecification = catPrintAbsolute
+                Property LineTypeSpecification() As CatPrintLineSpecification
+                    Returns or sets Line type specification for print. Refer to
+                    CatPrintLineSpecification Default value is
+                    catPrintAbsolute
+                
+                    Example:
+                        This example sets Line type specification for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.LineTypeSpecification = catPrintAbsolute
 
         :return: CatPrintLineSpecification
         """
@@ -451,16 +451,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LineWidthSpecification() As CatPrintLineSpecification
-                |     Returns or sets Line width specification for print. Refer to
-                |     CatPrintLineSpecification Default value is
-                |     catPrintAbsolute
-                | 
-                |     Example:
-                |         This example sets Line width specification for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.LineWidthSpecification = catPrintAbsolute
+                Property LineWidthSpecification() As CatPrintLineSpecification
+                    Returns or sets Line width specification for print. Refer to
+                    CatPrintLineSpecification Default value is
+                    catPrintAbsolute
+                
+                    Example:
+                        This example sets Line width specification for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.LineWidthSpecification = catPrintAbsolute
 
         :return: int
         """
@@ -481,16 +481,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Logo() As CATBSTR
-                |     Returns or sets the file containing the logo image. The logo is printed
-                |     with the banner.
-                | 
-                |     Example:
-                |         This example sets the logo file to the following file:
-                |         e:\\users\\psr\\Images\\Logo.tif for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.Logo = "e:\\users\\psr\\Images\\Logo.tif"
+                Property Logo() As CATBSTR
+                    Returns or sets the file containing the logo image. The logo is printed
+                    with the banner.
+                
+                    Example:
+                        This example sets the logo file to the following file:
+                        e:\\users\\psr\\Images\\Logo.tif for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.Logo = "e:\\users\\psr\\Images\\Logo.tif"
 
         :return: str
         """
@@ -511,15 +511,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LogoVisibility() As boolean
-                |     Returns or sets LogoVisibility option for print. Default value is
-                |     FALSE
-                | 
-                |     Example:
-                |         This example sets LogoVisibility option for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.LogoVisibility = True
+                Property LogoVisibility() As boolean
+                    Returns or sets LogoVisibility option for print. Default value is
+                    FALSE
+                
+                    Example:
+                        This example sets LogoVisibility option for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.LogoVisibility = True
 
         :return: bool
         """
@@ -540,18 +540,18 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property MaximumSize() As boolean
-                |     Returns or sets whether the document or the image should be printed at the
-                |     maximum size with respect to the page size and margins.
-                |     True if the document or the image is printed with the maximum size. This
-                |     overrides the location properties, that is Left and Bottom, and the Zoom
-                |     property values.
-                | 
-                |     Example:
-                |         This example requests to print the document or the image with the
-                |         SetupForMyPrint page setup at maximum size.
-                | 
-                |          SetupForMyPrint.MaximumSize = True
+                Property MaximumSize() As boolean
+                    Returns or sets whether the document or the image should be printed at the
+                    maximum size with respect to the page size and margins.
+                    True if the document or the image is printed with the maximum size. This
+                    overrides the location properties, that is Left and Bottom, and the Zoom
+                    property values.
+                
+                    Example:
+                        This example requests to print the document or the image with the
+                        SetupForMyPrint page setup at maximum size.
+                
+                         SetupForMyPrint.MaximumSize = True
 
         :return: bool
         """
@@ -572,14 +572,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Orientation() As CatPaperOrientation
-                |     Returns or sets the paper orientation.
-                | 
-                |     Example:
-                |         This example sets the paper orientation for the SetupForMyPrint page
-                |         setup to catPaperLandscape.
-                | 
-                |          SetupForMyPrint.Orientation = catPaperLandscape
+                Property Orientation() As CatPaperOrientation
+                    Returns or sets the paper orientation.
+                
+                    Example:
+                        This example sets the paper orientation for the SetupForMyPrint page
+                        setup to catPaperLandscape.
+                
+                         SetupForMyPrint.Orientation = catPaperLandscape
 
         :return: CatPaperOrientation
         """
@@ -600,14 +600,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property PaperHeight() As float
-                |     Returns or sets the paper height.
-                | 
-                |     Example:
-                |         This example sets the page height for the SetupForMyPrint page setup to
-                |         297 mm..
-                | 
-                |          SetupForMyPrint.PaperHeight = 297
+                Property PaperHeight() As float
+                    Returns or sets the paper height.
+                
+                    Example:
+                        This example sets the page height for the SetupForMyPrint page setup to
+                        297 mm..
+                
+                         SetupForMyPrint.PaperHeight = 297
 
         :return: float
         """
@@ -628,14 +628,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property PaperSize() As CatPaperSize
-                |     Returns or sets the paper size.
-                | 
-                |     Example:
-                |         This example sets the page size for the SetupForMyPrint page setup to
-                |         catPaperA4.
-                | 
-                |          SetupForMyPrint.PaperSize = catPaperA4
+                Property PaperSize() As CatPaperSize
+                    Returns or sets the paper size.
+                
+                    Example:
+                        This example sets the page size for the SetupForMyPrint page setup to
+                        catPaperA4.
+                
+                         SetupForMyPrint.PaperSize = catPaperA4
 
         :return: CatPaperSize
         """
@@ -656,14 +656,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property PaperWidth() As float
-                |     Returns or sets the paper width.
-                | 
-                |     Example:
-                |         This example sets the page width for the SetupForMyPrint page setup to
-                |         210 mm..
-                | 
-                |          SetupForMyPrint.PaperWidth = 210
+                Property PaperWidth() As float
+                    Returns or sets the paper width.
+                
+                    Example:
+                        This example sets the page width for the SetupForMyPrint page setup to
+                        210 mm..
+                
+                         SetupForMyPrint.PaperWidth = 210
 
         :return: float
         """
@@ -684,14 +684,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property PrintRenderingMode() As CatPrintRenderingMode
-                |     Returns or sets the printing rendering mode.
-                | 
-                |     Example:
-                |         This example sets the printing rendering mode for the SetupForMyPrint
-                |         page setup.
-                | 
-                |          SetupForMyPrint.PrintRenderingMode = CatPrintRenderingModeDefault
+                Property PrintRenderingMode() As CatPrintRenderingMode
+                    Returns or sets the printing rendering mode.
+                
+                    Example:
+                        This example sets the printing rendering mode for the SetupForMyPrint
+                        page setup.
+                
+                         SetupForMyPrint.PrintRenderingMode = CatPrintRenderingModeDefault
 
         :return: CatPrintRenderingMode
         """
@@ -712,15 +712,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Quality() As CatPrintQuality
-                |     Returns or sets the printing quality. Refer to
-                |     CatPrintQuality
-                | 
-                |     Example:
-                |         This example sets the printing quality to draft for the SetupForMyPrint
-                |         page setup.
-                | 
-                |          SetupForMyPrint.Quality = catPrintQualityDraft
+                Property Quality() As CatPrintQuality
+                    Returns or sets the printing quality. Refer to
+                    CatPrintQuality
+                
+                    Example:
+                        This example sets the printing quality to draft for the SetupForMyPrint
+                        page setup.
+                
+                         SetupForMyPrint.Quality = catPrintQualityDraft
 
         :return: CatPrintQuality
         """
@@ -741,16 +741,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property RightMargin() As float
-                |     Returns or sets the right margin. The right margin is a strip in which
-                |     nothing is printed, located at the right of the page, which width is expressed
-                |     in mm.
-                | 
-                |     Example:
-                |         This example sets the right margin for the SetupForMyPrint page setup
-                |         to 12 mm.
-                | 
-                |          SetupForMyPrint.RightMargin = 12
+                Property RightMargin() As float
+                    Returns or sets the right margin. The right margin is a strip in which
+                    nothing is printed, located at the right of the page, which width is expressed
+                    in mm.
+                
+                    Example:
+                        This example sets the right margin for the SetupForMyPrint page setup
+                        to 12 mm.
+                
+                         SetupForMyPrint.RightMargin = 12
 
         :return: float
         """
@@ -771,16 +771,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Rotation() As CatImageRotation
-                |     Returns or sets the rotation of the document or the image to print.
-                |     Rotations angles can be 0, 90, 180, and 270 degrees counted
-                |     clockwise.
-                | 
-                |     Example:
-                |         This example sets the rotation to 90 degrees clockwise for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.Rotation = catImageRotation90
+                Property Rotation() As CatImageRotation
+                    Returns or sets the rotation of the document or the image to print.
+                    Rotations angles can be 0, 90, 180, and 270 degrees counted
+                    clockwise.
+                
+                    Example:
+                        This example sets the rotation to 90 degrees clockwise for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.Rotation = catImageRotation90
 
         :return: CatImageRotation
         """
@@ -801,20 +801,20 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Scaling1To1() As boolean
-                |     Returns or sets whether the document or the image should be printed with a
-                |     zoom factor equals to 1 and the image to print lower left corner on the paper
-                |     lower corner.
-                |     True if the document or the image is printed with the zoom factor equals to
-                |     1 and the image to print lower left corner on the paper lower corner. This
-                |     overrides the location properties, that is Left and Bottom, and the Zoom
-                |     property values.
-                | 
-                |     Example:
-                |         This example requests to print the document or the image with the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.Scaling1To1 = True
+                Property Scaling1To1() As boolean
+                    Returns or sets whether the document or the image should be printed with a
+                    zoom factor equals to 1 and the image to print lower left corner on the paper
+                    lower corner.
+                    True if the document or the image is printed with the zoom factor equals to
+                    1 and the image to print lower left corner on the paper lower corner. This
+                    overrides the location properties, that is Left and Bottom, and the Zoom
+                    property values.
+                
+                    Example:
+                        This example requests to print the document or the image with the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.Scaling1To1 = True
 
         :return: bool
         """
@@ -835,15 +835,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property TextBlanking() As boolean
-                |     Returns or sets the text blanking option in print Text will be printed in
-                |     blanking rectangle Default value is FALSE
-                | 
-                |     Example:
-                |         This example sets the text blanking option for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.TextBlanking = True
+                Property TextBlanking() As boolean
+                    Returns or sets the text blanking option in print Text will be printed in
+                    blanking rectangle Default value is FALSE
+                
+                    Example:
+                        This example sets the text blanking option for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.TextBlanking = True
 
         :return: bool
         """
@@ -864,15 +864,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property TextScaling() As boolean
-                |     Returns or sets text scaling option for print. Default value is
-                |     TRUE
-                | 
-                |     Example:
-                |         This example sets text scaling option for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.TextScaling = True
+                Property TextScaling() As boolean
+                    Returns or sets text scaling option for print. Default value is
+                    TRUE
+                
+                    Example:
+                        This example sets text scaling option for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.TextScaling = True
 
         :return: bool
         """
@@ -893,16 +893,16 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property TopMargin() As float
-                |     Returns or sets the top margin. The top margin is a strip in which nothing
-                |     is printed, located at the top of the page, which height is expressed in
-                |     mm.
-                | 
-                |     Example:
-                |         This example sets the top margin for the SetupForMyPrint page setup to
-                |         15 mm.
-                | 
-                |          SetupForMyPrint.TopMargin = 15
+                Property TopMargin() As float
+                    Returns or sets the top margin. The top margin is a strip in which nothing
+                    is printed, located at the top of the page, which height is expressed in
+                    mm.
+                
+                    Example:
+                        This example sets the top margin for the SetupForMyPrint page setup to
+                        15 mm.
+                
+                         SetupForMyPrint.TopMargin = 15
 
         :return: float
         """
@@ -923,15 +923,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Use3DAccuracy() As boolean
-                |     Returns or sets Use3DAccuracy option for print. Default value is
-                |     FALSE
-                | 
-                |     Example:
-                |         This example sets Use3DAccuracy option for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.Use3DAccuracy = True
+                Property Use3DAccuracy() As boolean
+                    Returns or sets Use3DAccuracy option for print. Default value is
+                    FALSE
+                
+                    Example:
+                        This example sets Use3DAccuracy option for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.Use3DAccuracy = True
 
         :return: bool
         """
@@ -952,14 +952,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property UseImageSize() As boolean
-                |     Returns or sets the paper size to the image size.
-                | 
-                |     Example:
-                |         This example sets the paper size to image size for the SetupForMyPrint
-                |         page setup.
-                | 
-                |          SetupForMyPrint.UseImageSize = True
+                Property UseImageSize() As boolean
+                    Returns or sets the paper size to the image size.
+                
+                    Example:
+                        This example sets the paper size to image size for the SetupForMyPrint
+                        page setup.
+                
+                         SetupForMyPrint.UseImageSize = True
 
         :return: bool
         """
@@ -980,15 +980,15 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property WhiteVectorsInBlack() As boolean
-                |     Returns or sets the white vectors in black option. white vectors will be
-                |     printed in black if set to True Default value is TRUE
-                | 
-                |     Example:
-                |         This example sets the Print White Vectors In Black option for the
-                |         SetupForMyPrint page setup.
-                | 
-                |          SetupForMyPrint.WhiteVectorsInBlack = True
+                Property WhiteVectorsInBlack() As boolean
+                    Returns or sets the white vectors in black option. white vectors will be
+                    printed in black if set to True Default value is TRUE
+                
+                    Example:
+                        This example sets the Print White Vectors In Black option for the
+                        SetupForMyPrint page setup.
+                
+                         SetupForMyPrint.WhiteVectorsInBlack = True
 
         :return: bool
         """
@@ -1009,14 +1009,14 @@ class PageSetup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Zoom() As float
-                |     Returns or sets the zoom factor to use when printing.
-                | 
-                |     Example:
-                |         This example sets the zoom factor to 1.5 for the SetupForMyPrint page
-                |         setup.
-                | 
-                |          SetupForMyPrint.Zoom = 1.5
+                Property Zoom() As float
+                    Returns or sets the zoom factor to use when printing.
+                
+                    Example:
+                        This example sets the zoom factor to 1.5 for the SetupForMyPrint page
+                        setup.
+                
+                         SetupForMyPrint.Zoom = 1.5
 
         :return: float
         """

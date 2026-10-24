@@ -17,18 +17,18 @@ class RscAssignment(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscAssignment
-                | 
-                | Interface representing a Resource Assignment Instruction.
-                | 
-                | Role: This interface represents a RscAssignment Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscAssignment
+                
+                Interface representing a Resource Assignment Instruction.
+                
+                Role: This interface represents a RscAssignment Instruction in a Resource
+                Task
     
     """
 
@@ -42,36 +42,36 @@ class RscAssignment(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssignedDataEntity() As RscDataEntity
-                |     Set/Get the assigned Data Entity.
-                | 
-                |     Returns:
-                |         oAssignedEntity The returned assigned entity. 
-                |     Parameters:
-                | 
-                |         iAssignedEntity
-                |             The new assigned entity. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iAssignedEntity As RscDataEntity
-                |            Dim iAssignedValue As String
-                |            ......
-                |            Dim oCreatedAssignment As RscAssignment
-                |            Set oCreatedAssignment = ResourceSequence.CreateRscAssignment(iIndex, iAssignedEntity, iAssignedValue)
-                |            Dim AssignedDataEntity
-                |            AssignedDataEntity = oCreatedAssignment.AssignedDataEntity
-                |            ......
-                |            oCreatedAssignment.AssignedDataEntity = AssignedDataEntity
+                Property AssignedDataEntity() As RscDataEntity
+                    Set/Get the assigned Data Entity.
+                
+                    Returns:
+                        oAssignedEntity The returned assigned entity. 
+                    Parameters:
+                
+                        iAssignedEntity
+                            The new assigned entity. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iAssignedEntity As RscDataEntity
+                           Dim iAssignedValue As String
+                           ......
+                           Dim oCreatedAssignment As RscAssignment
+                           Set oCreatedAssignment = ResourceSequence.CreateRscAssignment(iIndex, iAssignedEntity, iAssignedValue)
+                           Dim AssignedDataEntity
+                           AssignedDataEntity = oCreatedAssignment.AssignedDataEntity
+                           ......
+                           oCreatedAssignment.AssignedDataEntity = AssignedDataEntity
 
         :return: RscDataEntity
         """
@@ -92,36 +92,36 @@ class RscAssignment(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value(CATBSTR iValue)
-                |     Set/Get the Value assigned to this Data Entity.
-                | 
-                |     Parameters:
-                | 
-                |         iValue
-                |             The new assigned value. 
-                | 
-                |     Returns:
-                |         oValue The returned assigned value. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim iAssignedEntity As RscDataEntity
-                |            Dim iAssignedValue As String
-                |            ......
-                |            Dim oCreatedAssignment As RscAssignment
-                |            Set oCreatedAssignment = ResourceSequence.CreateRscAssignment(iIndex, iAssignedEntity, iAssignedValue)
-                |            Dim oValue As String
-                |            oValue = oCreatedAssignment.Value
-                |            ......
-                |            oCreatedAssignment.Value = oValue
+                Property Value(CATBSTR iValue)
+                    Set/Get the Value assigned to this Data Entity.
+                
+                    Parameters:
+                
+                        iValue
+                            The new assigned value. 
+                
+                    Returns:
+                        oValue The returned assigned value. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iIndex
+                           iIndex=-1
+                           Dim iAssignedEntity As RscDataEntity
+                           Dim iAssignedValue As String
+                           ......
+                           Dim oCreatedAssignment As RscAssignment
+                           Set oCreatedAssignment = ResourceSequence.CreateRscAssignment(iIndex, iAssignedEntity, iAssignedValue)
+                           Dim oValue As String
+                           oValue = oCreatedAssignment.Value
+                           ......
+                           oCreatedAssignment.Value = oValue
 
         :return: str
         """

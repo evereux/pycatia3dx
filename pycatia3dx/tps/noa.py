@@ -20,14 +20,14 @@ class Noa(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Noa
-                | 
-                | Interface for the TPS Noa object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Noa
+                
+                Interface for the TPS Noa object.
     
     """
 
@@ -41,13 +41,13 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FlagText() As CATBSTR
-                |     Retrieves or sets Flag Text.
-                | 
-                |     Parameters:
-                | 
-                |         oText
-                |             Returned text for NOA hidden text.
+                Property FlagText() As CATBSTR
+                    Retrieves or sets Flag Text.
+                
+                    Parameters:
+                
+                        oText
+                            Returned text for NOA hidden text.
 
         :return: str
         """
@@ -68,13 +68,13 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Retrieves or sets Text Representation.
-                | 
-                |     Parameters:
-                | 
-                |         oText
-                |             Returned text for graphical representation.
+                Property Text() As CATBSTR
+                    Retrieves or sets Text Representation.
+                
+                    Parameters:
+                
+                        oText
+                            Returned text for graphical representation.
 
         :return: str
         """
@@ -94,13 +94,13 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddURL(CATBSTR iUrl)
-                |     Sets an URL.
-                | 
-                |     Parameters:
-                | 
-                |         iUrl
-                |             URL to Set
+                Sub AddURL(CATBSTR iUrl)
+                    Sets an URL.
+                
+                    Parameters:
+                
+                        iUrl
+                            URL to Set
 
         :param str i_url:
         :return: None
@@ -112,8 +112,8 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingText
-                |     Retrieves Drafting text.
+                Func Get2dAnnot() As DrawingText
+                    Retrieves Drafting text.
 
         :return: DrawingText
         """
@@ -124,8 +124,8 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDitto() As DrawingComponent
-                |     Gets the ditto as a DrawingComponent of the Noa entity.
+                Func GetDitto() As DrawingComponent
+                    Gets the ditto as a DrawingComponent of the Noa entity.
 
         :return: DrawingComponent
         """
@@ -136,16 +136,16 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetModifiableText(CATVariant iIndex) As AnyObject
-                |     Gets by index a modifiable Text included in the ditto which represents this
-                |     NOA.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of the modifiable text. 
-                |         oText
-                |             returns a CATIADrawingText
+                Func GetModifiableText(CATVariant iIndex) As AnyObject
+                    Gets by index a modifiable Text included in the ditto which represents this
+                    NOA.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of the modifiable text. 
+                        oText
+                            returns a CATIADrawingText
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -157,15 +157,15 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetModifiableTextsCount() As long
-                |     Gets the number of modifiable texts included in the ditto which represents
-                |     this NOA.
-                | 
-                |     Parameters:
-                | 
-                |         oCount
-                |             returns the number of modifiable text included into the ditto which
-                |             represents this NOA.
+                Func GetModifiableTextsCount() As long
+                    Gets the number of modifiable texts included in the ditto which represents
+                    this NOA.
+                
+                    Parameters:
+                
+                        oCount
+                            returns the number of modifiable text included into the ditto which
+                            represents this NOA.
 
         :return: int
         """
@@ -176,13 +176,13 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbrURL2() As long
-                |     Gets the number of URL.
-                | 
-                |     Parameters:
-                | 
-                |         oNumberOfURL
-                |             returns param oNumberOfURL.
+                Func GetNbrURL2() As long
+                    Gets the number of URL.
+                
+                    Parameters:
+                
+                        oNumberOfURL
+                            returns param oNumberOfURL.
 
         :return: int
         """
@@ -193,15 +193,15 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
-                |     Modifies an URL.
-                | 
-                |     Parameters:
-                | 
-                |         iUrl
-                |             URL to Set. 
-                |         iIndex
-                |             index of the URL to modify.
+                Sub ModifyURL(CATBSTR iUrl,CATVariant iIndex)
+                    Modifies an URL.
+                
+                    Parameters:
+                
+                        iUrl
+                            URL to Set. 
+                        iIndex
+                            index of the URL to modify.
 
         :param str i_url:
         :param CATVariant i_index:
@@ -214,13 +214,13 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveURL(CATVariant iIndex)
-                |     Removes an URL.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             position of the URL to remove.
+                Sub RemoveURL(CATVariant iIndex)
+                    Removes an URL.
+                
+                    Parameters:
+                
+                        iIndex
+                            position of the URL to remove.
 
         :param CATVariant i_index:
         :return: None
@@ -232,8 +232,8 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface.
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface.
 
         :return: TPSParallelOnScreen
         """
@@ -244,15 +244,15 @@ class Noa(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func URL(CATVariant iIndex) As CATBSTR
-                |     Retrieves url.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of url. 
-                |         oUrl
-                |             url 
+                Func URL(CATVariant iIndex) As CATBSTR
+                    Retrieves url.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of url. 
+                        oUrl
+                            url 
 
         :param CATVariant i_index:
         :return: str

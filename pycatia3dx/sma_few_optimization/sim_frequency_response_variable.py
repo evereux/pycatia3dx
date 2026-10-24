@@ -16,57 +16,57 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimFrequencyResponseVariable
-                | 
-                | Represents the Frequency response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimFrequencyResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyFrequencyResponseVariable As
-                |      SimFrequencyResponseVariable
-                |      Set MyFrequencyResponseVariable = MyFeatures.Add("SimFrequencyResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimFrequencyResponseVariable named "Frequency Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim SimFrequencyResponseVariable As
-                |      SimFrequencyResponseVariable
-                |      Set MyFrequencyResponseVariable = MyFeatures.Item("Frequency Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimFrequencyResponseVariable as following:
-                | 
-                |      ...
-                |      MyFrequencyResponseVariable = MyFeatures.Add("SimFrequencyResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimFrequencyResponseVariable named "Frequency Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyFrequencyResponseVariable = MyFeatures.Item("Frequency Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimFrequencyResponseVariable
+                
+                Represents the Frequency response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimFrequencyResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyFrequencyResponseVariable As
+                     SimFrequencyResponseVariable
+                     Set MyFrequencyResponseVariable = MyFeatures.Add("SimFrequencyResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimFrequencyResponseVariable named "Frequency Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim SimFrequencyResponseVariable As
+                     SimFrequencyResponseVariable
+                     Set MyFrequencyResponseVariable = MyFeatures.Item("Frequency Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimFrequencyResponseVariable as following:
+                
+                     ...
+                     MyFrequencyResponseVariable = MyFeatures.Add("SimFrequencyResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimFrequencyResponseVariable named "Frequency Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyFrequencyResponseVariable = MyFeatures.Item("Frequency Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -80,8 +80,8 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimFrequencyResponseVariableType
-                |     Returns or sets the type of frequency force design response.
+                Property Type() As SimFrequencyResponseVariableType
+                    Returns or sets the type of frequency force design response.
 
         :return: int
         """
@@ -101,13 +101,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaxMode(short oMaxMode)
-                |     Gets the maximum mode.
-                | 
-                |     Parameters:
-                | 
-                |         oMaxMode
-                |             [out] Number of maximum mode Quantity: REAL, units: None
+                Sub GetMaxMode(short oMaxMode)
+                    Gets the maximum mode.
+                
+                    Parameters:
+                
+                        oMaxMode
+                            [out] Number of maximum mode Quantity: REAL, units: None
 
         :param int o_max_mode:
         :return: None
@@ -119,13 +119,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMinMode(short oMinMode)
-                |     Gets the minimum mode.
-                | 
-                |     Parameters:
-                | 
-                |         oMinMode
-                |             [out] Number of minimum mode Quantity: REAL, units: None
+                Sub GetMinMode(short oMinMode)
+                    Gets the minimum mode.
+                
+                    Parameters:
+                
+                        oMinMode
+                            [out] Number of minimum mode Quantity: REAL, units: None
 
         :param int o_min_mode:
         :return: None
@@ -137,13 +137,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetModeNumber(short oModeNumber)
-                |     Gets the mode number.
-                | 
-                |     Parameters:
-                | 
-                |         oModeNumber
-                |             [out] Number of minimum mode Quantity: REAL, units: None
+                Sub GetModeNumber(short oModeNumber)
+                    Gets the mode number.
+                
+                    Parameters:
+                
+                        oModeNumber
+                            [out] Number of minimum mode Quantity: REAL, units: None
 
         :param int o_mode_number:
         :return: None
@@ -155,13 +155,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaxMode(short iMaxMode)
-                |     Sets the maximum mode.
-                | 
-                |     Parameters:
-                | 
-                |         iMaxMode
-                |             [in] Number of maximum mode Quantity: REAL, units: None
+                Sub SetMaxMode(short iMaxMode)
+                    Sets the maximum mode.
+                
+                    Parameters:
+                
+                        iMaxMode
+                            [in] Number of maximum mode Quantity: REAL, units: None
 
         :param int i_max_mode:
         :return: None
@@ -173,13 +173,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMinMode(short iMinMode)
-                |     Sets the minimum mode.
-                | 
-                |     Parameters:
-                | 
-                |         iMinMode
-                |             [in] Number of minimum mode Quantity: REAL, units: None
+                Sub SetMinMode(short iMinMode)
+                    Sets the minimum mode.
+                
+                    Parameters:
+                
+                        iMinMode
+                            [in] Number of minimum mode Quantity: REAL, units: None
 
         :param int i_min_mode:
         :return: None
@@ -191,13 +191,13 @@ class SimFrequencyResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetModeNumber(short iModeNumber)
-                |     Sets the mode number.
-                | 
-                |     Parameters:
-                | 
-                |         iModeNumber
-                |             [in] Number of maximum mode Quantity: REAL, units: None
+                Sub SetModeNumber(short iModeNumber)
+                    Sets the mode number.
+                
+                    Parameters:
+                
+                        iModeNumber
+                            [in] Number of maximum mode Quantity: REAL, units: None
 
         :param int i_mode_number:
         :return: None

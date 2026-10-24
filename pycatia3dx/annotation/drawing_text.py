@@ -19,14 +19,14 @@ class DrawingText(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrawingText
-                | 
-                | Represents a drawing text in a drawing view.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrawingText
+                
+                Represents a drawing text in a drawing view.
     
     """
 
@@ -40,14 +40,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorPosition() As CatTextAnchorPosition
-                |     Returns or sets the anchor position of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the anchor position of the MyText drawing text to top
-                |         left position.
-                | 
-                |          MyText.AnchorPosition = TopLeft
+                Property AnchorPosition() As CatTextAnchorPosition
+                    Returns or sets the anchor position of the drawing text.
+                
+                    Example:
+                        This example sets the anchor position of the MyText drawing text to top
+                        left position.
+                
+                         MyText.AnchorPosition = TopLeft
 
         :return: int
         """
@@ -68,19 +68,19 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Angle() As double
-                |     Returns or sets the angle of the drawing text. The angle is measured
-                |     between the axis system of the drawing view and the local axis system of the
-                |     drawing text. The angle is measured in radians and is counted
-                |     counterclockwise.
-                | 
-                |     Example:
-                |         This example sets the angle of the MyText drawing Text to 90 degrees
-                |         clockwise. You first need to compute the angle in degrees and set the minus
-                |         sign to indicate the rotation is clockwise.
-                | 
-                |          Angle90Clockwise = -90
-                |          MyText.Angle = Angle90Clockwise
+                Property Angle() As double
+                    Returns or sets the angle of the drawing text. The angle is measured
+                    between the axis system of the drawing view and the local axis system of the
+                    drawing text. The angle is measured in radians and is counted
+                    counterclockwise.
+                
+                    Example:
+                        This example sets the angle of the MyText drawing Text to 90 degrees
+                        clockwise. You first need to compute the angle in degrees and set the minus
+                        sign to indicate the rotation is clockwise.
+                
+                         Angle90Clockwise = -90
+                         MyText.Angle = Angle90Clockwise
 
         :return: float
         """
@@ -101,15 +101,15 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssociativeElement() As CATBaseDispatch
-                |     Returns or sets the associative object of the drawing
-                |     text.
-                | 
-                |     Example:
-                |         This example sets an associative line of the MyText drawing text to top
-                |         left position.
-                | 
-                |          MyText.AssociativeElement = line
+                Property AssociativeElement() As CATBaseDispatch
+                    Returns or sets the associative object of the drawing
+                    text.
+                
+                    Example:
+                        This example sets an associative line of the MyText drawing text to top
+                        left position.
+                
+                         MyText.AssociativeElement = line
 
         :return: AnyObject
         """
@@ -130,14 +130,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrameType() As CatTextFrameType
-                |     Returns or sets the frame type of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the frame type of the MyText drawing text to an
-                |         ellipse.
-                | 
-                |          MyText.FrameType = catEllipse
+                Property FrameType() As CatTextFrameType
+                    Returns or sets the frame type of the drawing text.
+                
+                    Example:
+                        This example sets the frame type of the MyText drawing text to an
+                        ellipse.
+                
+                         MyText.FrameType = catEllipse
 
         :return: int
         """
@@ -158,15 +158,15 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Leaders() As DrawingLeaders (Read Only)
-                |     Returns the drawing leader collection of the drawing text.
-                | 
-                |     Example:
-                |         This example retrieves in LeaderCollection the collection of leaders of
-                |         the MyText drawing text.
-                | 
-                |          Dim LeaderCollection As DrawingLeaders
-                |          Set LeaderCollection = MyText.Leaders
+                Property Leaders() As DrawingLeaders (Read Only)
+                    Returns the drawing leader collection of the drawing text.
+                
+                    Example:
+                        This example retrieves in LeaderCollection the collection of leaders of
+                        the MyText drawing text.
+                
+                         Dim LeaderCollection As DrawingLeaders
+                         Set LeaderCollection = MyText.Leaders
 
         :return: DrawingLeaders
         """
@@ -179,14 +179,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LockEdition() As boolean
-                |     Returns or sets the LockEdition property of the text.
-                | 
-                |     Example:
-                |         This example retrieves the x coordinate of the text MyText drawing
-                |         text.
-                | 
-                |          LockEdition = MyText.LockEdition
+                Property LockEdition() As boolean
+                    Returns or sets the LockEdition property of the text.
+                
+                    Example:
+                        This example retrieves the x coordinate of the text MyText drawing
+                        text.
+                
+                         LockEdition = MyText.LockEdition
 
         :return: bool
         """
@@ -207,14 +207,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NbLink() As long (Read Only)
-                |     Returns the number of attributes link
-                | 
-                |     Example:
-                |         This example gets number of attributes link of MyText drawing
-                |         text.
-                | 
-                |          nbLink = MyText.NbLink
+                Property NbLink() As long (Read Only)
+                    Returns the number of attributes link
+                
+                    Example:
+                        This example gets number of attributes link of MyText drawing
+                        text.
+                
+                         nbLink = MyText.NbLink
 
         :return: int
         """
@@ -227,17 +227,17 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationReference() As long
-                |     Returns or sets the orientation reference of the drawing
-                |     text.
-                |     0 : Sheet orientation
-                |     1 : View/Label/2Dcomponent orientation
-                | 
-                |     Example:
-                |         This example sets the orientation reference of MyText drawing text to
-                |         sheet orientation
-                | 
-                |          MyText.OrientationReference = 0
+                Property OrientationReference() As long
+                    Returns or sets the orientation reference of the drawing
+                    text.
+                    0 : Sheet orientation
+                    1 : View/Label/2Dcomponent orientation
+                
+                    Example:
+                        This example sets the orientation reference of MyText drawing text to
+                        sheet orientation
+                
+                         MyText.OrientationReference = 0
 
         :return: int
         """
@@ -258,14 +258,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Returns or sets character string that makes up the text.
-                | 
-                |     Example:
-                |         This example retrieves in CharString the character string of the MyText
-                |         drawing text.
-                | 
-                |          CharString = MyText.Text
+                Property Text() As CATBSTR
+                    Returns or sets character string that makes up the text.
+                
+                    Example:
+                        This example retrieves in CharString the character string of the MyText
+                        drawing text.
+                
+                         CharString = MyText.Text
 
         :return: str
         """
@@ -286,17 +286,17 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TextProperties() As DrawingTextProperties (Read Only)
-                |     Returns the text properties of the drawing text. Allows to modify the whole
-                |     text properties. To manage a sub part of the text use
-                |     GetParameterOnSubString
-                | 
-                |     Example:
-                |         This example retrieves in TextProperties the text properties of the
-                |         MyText drawing text.
-                | 
-                |          Dim TextProperties As DrawingTextProperties
-                |          Set TextProperties = MyText.TextProperties
+                Property TextProperties() As DrawingTextProperties (Read Only)
+                    Returns the text properties of the drawing text. Allows to modify the whole
+                    text properties. To manage a sub part of the text use
+                    GetParameterOnSubString
+                
+                    Example:
+                        This example retrieves in TextProperties the text properties of the
+                        MyText drawing text.
+                
+                         Dim TextProperties As DrawingTextProperties
+                         Set TextProperties = MyText.TextProperties
 
         :return: DrawingTextProperties
         """
@@ -309,14 +309,14 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WrappingWidth() As double
-                |     Returns or sets the wrapping width of the drawing text.
-                | 
-                |     Example:
-                |         This example sets the wrapping width of the MyText drawing text to
-                |         50.
-                | 
-                |          MyText.WrappingWidth = 50.
+                Property WrappingWidth() As double
+                    Returns or sets the wrapping width of the drawing text.
+                
+                    Example:
+                        This example sets the wrapping width of the MyText drawing text to
+                        50.
+                
+                         MyText.WrappingWidth = 50.
 
         :return: float
         """
@@ -337,16 +337,16 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property x() As double
-                |     Returns or sets the x coordinate of the text. It is expressed with respect
-                |     to the current view coordinate system. This coordinate, like any length, is
-                |     measured in meters.
-                | 
-                |     Example:
-                |         This example retrieves the x coordinate of the text MyText drawing
-                |         text.
-                | 
-                |          X = MyText.x
+                Property x() As double
+                    Returns or sets the x coordinate of the text. It is expressed with respect
+                    to the current view coordinate system. This coordinate, like any length, is
+                    measured in meters.
+                
+                    Example:
+                        This example retrieves the x coordinate of the text MyText drawing
+                        text.
+                
+                         X = MyText.x
 
         :return: float
         """
@@ -367,18 +367,18 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property y() As double
-                |     Returns or sets the y coordinate of the text. It is expressed with respect
-                |     to the view coordinate system. This coordinate, like any length, is measured in
-                |     meters.
-                | 
-                |     Example:
-                |         This example sets the y coordinate of the text MyText drawing text to 5
-                |         inches. You need first to convert the 5 inches into
-                |         meters.
-                | 
-                |          NewYCoordinate = 5*25.4/1000
-                |          MyText.y =  NewYCoordinate
+                Property y() As double
+                    Returns or sets the y coordinate of the text. It is expressed with respect
+                    to the view coordinate system. This coordinate, like any length, is measured in
+                    meters.
+                
+                    Example:
+                        This example sets the y coordinate of the text MyText drawing text to 5
+                        inches. You need first to convert the 5 inches into
+                        meters.
+                
+                         NewYCoordinate = 5*25.4/1000
+                         MyText.y =  NewYCoordinate
 
         :return: float
         """
@@ -398,21 +398,21 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ActivateFrame(CatTextFrameType itype)
-                |     Activates the text frame of the drawing text.
-                | 
-                |     Example:
-                |         This example adds a rectangle frame to MyText drawing
-                |         text.
-                | 
-                |          CatTextFrameType ityp = catRectangle
-                |          MyText.ActivateFrame(itype)
-                |          
-                | 
-                |         This example removes the frame to MyText drawing text.
-                | 
-                |          CatTextFrameType ityp = catNone
-                |          MyText.ActivateFrame(itype)
+                Sub ActivateFrame(CatTextFrameType itype)
+                    Activates the text frame of the drawing text.
+                
+                    Example:
+                        This example adds a rectangle frame to MyText drawing
+                        text.
+                
+                         CatTextFrameType ityp = catRectangle
+                         MyText.ActivateFrame(itype)
+                         
+                
+                        This example removes the frame to MyText drawing text.
+                
+                         CatTextFrameType ityp = catNone
+                         MyText.ActivateFrame(itype)
 
         :param int itype:
         :return: None
@@ -424,24 +424,24 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFontName(long iFirst,long inbCharacter) As CATBSTR
-                |     Returns the font name on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                | 
-                |     Returns:
-                |         oFontName The name of the font 
-                |     Example:
-                |         This example gets the MyText drawing text font.
-                | 
-                |          oFontName = MyText.GetFontName(0, 0)
+                Func GetFontName(long iFirst,long inbCharacter) As CATBSTR
+                    Returns the font name on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                
+                    Returns:
+                        oFontName The name of the font 
+                    Example:
+                        This example gets the MyText drawing text font.
+                
+                         oFontName = MyText.GetFontName(0, 0)
 
         :param int i_first:
         :param int inb_character:
@@ -454,24 +454,24 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFontSize(long iFirst,long inbCharacter) As double
-                |     Returns the font size on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                | 
-                |     Returns:
-                |         oFontSize The size of the font 
-                |     Example:
-                |         This example gets the MyText font size.
-                | 
-                |          oFontSize = MyText.GetFontSize(0, 0)
+                Func GetFontSize(long iFirst,long inbCharacter) As double
+                    Returns the font size on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                
+                    Returns:
+                        oFontSize The size of the font 
+                    Example:
+                        This example gets the MyText font size.
+                
+                         oFontSize = MyText.GetFontSize(0, 0)
 
         :param int i_first:
         :param int inb_character:
@@ -484,15 +484,15 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetModifiableIn2DComponentInstances() As boolean
-                |     Returns if the text is modifiable or not in 2D component instances. The
-                |     text must own to a 2D component (NOT to a view)
-                | 
-                |     Example:
-                |         This example retrieves if MyText drawing text is modifiable or
-                |         not
-                | 
-                |          IsModifiable = MyText.GetModifiableIn2DComponentInstances
+                Func GetModifiableIn2DComponentInstances() As boolean
+                    Returns if the text is modifiable or not in 2D component instances. The
+                    text must own to a 2D component (NOT to a view)
+                
+                    Example:
+                        This example retrieves if MyText drawing text is modifiable or
+                        not
+                
+                         IsModifiable = MyText.GetModifiableIn2DComponentInstances
 
         :return: bool
         """
@@ -503,24 +503,24 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterLink(long iIndex) As CATBaseDispatch
-                |     Returns the pointed parameter link
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the pointed parameter link. 1 <= iIndex <=
-                |             NbLink
-                | 
-                |             Example:
-                |                 This example gets the first parameter link of MyText drawing
-                |                 text.
-                | 
-                |                  Dim MyParm As Parameter
-                |                  MyParm = MyText.GetParameterLink(1)
-                |                  If MyParm.Value<>"Front view" Then
-                |                    'Do something
-                |                  End If
+                Func GetParameterLink(long iIndex) As CATBaseDispatch
+                    Returns the pointed parameter link
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the pointed parameter link. 1 <= iIndex <=
+                            NbLink
+                
+                            Example:
+                                This example gets the first parameter link of MyText drawing
+                                text.
+                
+                                 Dim MyParm As Parameter
+                                 MyParm = MyText.GetParameterLink(1)
+                                 If MyParm.Value<>"Front view" Then
+                                   'Do something
+                                 End If
 
         :param int i_index:
         :return: AnyObject
@@ -532,31 +532,31 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterOnSubString(CatTextProperty iParam,long iFirst,long
-                | inbCharacter) As long
-                |     Returns a property on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The drawing text property 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                | 
-                |     Returns:
-                |         oval The value corresponding to the property 
-                |     Example:
-                |         This example gets the parameter Italic on MyText drawing
-                |         text.
-                | 
-                |          CatTextProperty iParam = catItalic 
-                |          iFirst = 0
-                |          inbCharacter = 0
-                |          oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
+                Func GetParameterOnSubString(CatTextProperty iParam,long iFirst,long
+                inbCharacter) As long
+                    Returns a property on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iParam
+                            The drawing text property 
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                
+                    Returns:
+                        oval The value corresponding to the property 
+                    Example:
+                        This example gets the parameter Italic on MyText drawing
+                        text.
+                
+                         CatTextProperty iParam = catItalic 
+                         iFirst = 0
+                         inbCharacter = 0
+                         oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
 
         :param int i_param:
         :param int i_first:
@@ -571,24 +571,24 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InsertAttributeLink(long iFirst,long inbCharacter,CATBaseDispatch
-                | iOwnerAtt,CATBSTR iTypeInternalName,CATBSTR iAttInternalName)
-                |     Replace the given selection by the given attribute value
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character from which the parameter is inserted
-                |             
-                |         inbCharacter
-                |             The number of characters the parameter will replace
-                |             
-                |         iOwnerAtt
-                |             Owner of the attribute 
-                |         iTypeInternalName
-                |             The internal name of the owner type 
-                |         iAttInternalName
-                |             The internal name of the attribute
+                Sub InsertAttributeLink(long iFirst,long inbCharacter,CATBaseDispatch
+                iOwnerAtt,CATBSTR iTypeInternalName,CATBSTR iAttInternalName)
+                    Replace the given selection by the given attribute value
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character from which the parameter is inserted
+                            
+                        inbCharacter
+                            The number of characters the parameter will replace
+                            
+                        iOwnerAtt
+                            Owner of the attribute 
+                        iTypeInternalName
+                            The internal name of the owner type 
+                        iAttInternalName
+                            The internal name of the attribute
 
         :param int i_first:
         :param int inb_character:
@@ -605,30 +605,30 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InsertVariable(long iFirst,long inbCharacter,CATBaseDispatch
-                | ibase)
-                |     Sets a Parameter in a string of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character from which the parameter is inserted
-                |             
-                |         inbCharacter
-                |             The number of characters the parameter will replace
-                |             
-                |         iParameter
-                |             The parameter to be inserted 
-                |         Example:
-                |             This example sets a parameter right at the end of MyText drawing
-                |             text.
-                | 
-                |              Dim MyDrawing as DrawingDrawing
-                |              Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |              Dim iParameter As Parameter
-                |              Set iParameter = MyDrawing.Parameters.Item("Drawing\\Sheet.1\\ViewMakeUp.1\\Scale")
-                | 
-                |              MyText.InsertVariable 0, 0, iParameter
+                Sub InsertVariable(long iFirst,long inbCharacter,CATBaseDispatch
+                ibase)
+                    Sets a Parameter in a string of the drawing text.
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character from which the parameter is inserted
+                            
+                        inbCharacter
+                            The number of characters the parameter will replace
+                            
+                        iParameter
+                            The parameter to be inserted 
+                        Example:
+                            This example sets a parameter right at the end of MyText drawing
+                            text.
+                
+                             Dim MyDrawing as DrawingDrawing
+                             Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                             Dim iParameter As Parameter
+                             Set iParameter = MyDrawing.Parameters.Item("Drawing\\Sheet.1\\ViewMakeUp.1\\Scale")
+                
+                             MyText.InsertVariable 0, 0, iParameter
 
         :param int i_first:
         :param int inb_character:
@@ -642,26 +642,26 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFontName(long iFirst,long inbCharacter,CATBSTR
-                | iFontName)
-                |     Sets the font size on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                |         iFontName
-                |             The name of the font
-                | 
-                |             Example:
-                |                 This example sets the MyText drawing text font as Courrier 10
-                |                 BT.
-                | 
-                |                  MyText.SetFontName 0,  0, "Courrier 10 BT"
+                Sub SetFontName(long iFirst,long inbCharacter,CATBSTR
+                iFontName)
+                    Sets the font size on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                        iFontName
+                            The name of the font
+                
+                            Example:
+                                This example sets the MyText drawing text font as Courrier 10
+                                BT.
+                
+                                 MyText.SetFontName 0,  0, "Courrier 10 BT"
 
         :param int i_first:
         :param int inb_character:
@@ -675,25 +675,25 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFontSize(long iFirst,long inbCharacter,double
-                | iFontSize)
-                |     Sets the font size on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                |         iFontSize
-                |             The size of the font 
-                |         Example:
-                |             This example sets the MyText font size to 3.5.
-                | 
-                |              iFontSize = 3.5
-                |              MyText.SetFontSize 0,  0, iFontSize
+                Sub SetFontSize(long iFirst,long inbCharacter,double
+                iFontSize)
+                    Sets the font size on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                        iFontSize
+                            The size of the font 
+                        Example:
+                            This example sets the MyText font size to 3.5.
+                
+                             iFontSize = 3.5
+                             MyText.SetFontSize 0,  0, iFontSize
 
         :param int i_first:
         :param int inb_character:
@@ -707,16 +707,16 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetModifiableIn2DComponentInstances()
-                |     Sets the text as modifiable in 2D component instances.The text must own to
-                |     a 2D component (NOT to a view).then ,its content will be modifiable inside
-                |     instances of this 2D component.
-                | 
-                |     Example:
-                |         This example sets the MyText drawing text as
-                |         modifiable.
-                | 
-                |          MyText.SetModifiableIn2DComponentInstances
+                Sub SetModifiableIn2DComponentInstances()
+                    Sets the text as modifiable in 2D component instances.The text must own to
+                    a 2D component (NOT to a view).then ,its content will be modifiable inside
+                    instances of this 2D component.
+                
+                    Example:
+                        This example sets the MyText drawing text as
+                        modifiable.
+                
+                         MyText.SetModifiableIn2DComponentInstances
 
         :return: None
         """
@@ -727,32 +727,32 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameterOnSubString(CatTextProperty iParam,long iFirst,long
-                | inbCharacter,long iVal)
-                |     Sets a property on a substring of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The drawing text property 
-                |         iFirst
-                |             The first character to which the property should apply
-                |             
-                |         inbCharacter
-                |             The number of characters to which the property should apply
-                |             
-                |         iVal
-                |             The value to be applied according to the property 
-                |         Example:
-                |             This example sets all MyText drawing text in bold
-                |             character.
-                | 
-                |              CatTextProperty iParam = catBold 
-                |              iFirst = 0
-                |              inbCharacter = 0
-                |              ival = 1
-                |              MyText.SetParameterOnsubString iParam, iFirst, inbCharacter,
-                |              ival
+                Sub SetParameterOnSubString(CatTextProperty iParam,long iFirst,long
+                inbCharacter,long iVal)
+                    Sets a property on a substring of the drawing text.
+                
+                    Parameters:
+                
+                        iParam
+                            The drawing text property 
+                        iFirst
+                            The first character to which the property should apply
+                            
+                        inbCharacter
+                            The number of characters to which the property should apply
+                            
+                        iVal
+                            The value to be applied according to the property 
+                        Example:
+                            This example sets all MyText drawing text in bold
+                            character.
+                
+                             CatTextProperty iParam = catBold 
+                             iFirst = 0
+                             inbCharacter = 0
+                             ival = 1
+                             MyText.SetParameterOnsubString iParam, iFirst, inbCharacter,
+                             ival
 
         :param int i_param:
         :param int i_first:
@@ -767,19 +767,19 @@ class DrawingText(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SolveLink(CATBaseDispatch ipObj)
-                |     Resolve Link Template of the drawing text.
-                | 
-                |     Parameters:
-                | 
-                |         ipObj
-                |             The object on wich the link template of the text will be solved.
-                |             
-                |         Example:
-                |             This example solve the link template of MyText drawing
-                |             text.
-                | 
-                |              MyText.SolveLink ipObj
+                Sub SolveLink(CATBaseDispatch ipObj)
+                    Resolve Link Template of the drawing text.
+                
+                    Parameters:
+                
+                        ipObj
+                            The object on wich the link template of the text will be solved.
+                            
+                        Example:
+                            This example solve the link template of MyText drawing
+                            text.
+                
+                             MyText.SolveLink ipObj
 
         :param AnyObject ip_obj:
         :return: None

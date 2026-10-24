@@ -17,12 +17,12 @@ class SpotDrOperation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrOperation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrOperation
 
     
     """
@@ -36,27 +36,27 @@ class SpotDrOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCartesianTarget() As CATSafeArrayVariant
-                |     Gets the Robot Cartesian target of the specified motion
-                |     group.
-                | 
-                |     Parameters:
-                | 
-                |         oMathTransformation
-                |             The absolute Transformation. Array of double containing 12 elements
-                |             9 rotational vector and u translational vector
-                |             Matrix= a11 a12 a13 Vector= u1
-                |             a21 a22 a23 u2
-                |             a31 a32 a33 u3
-                | 
-                |     Returns:
-                |         An HRESULT.
-                |         Legal values:
-                | 
-                |         S_OK
-                |             Cartesian target successfully set
-                |         E_FAIL
-                |             Cartesian target could not be set successfully
+                Func GetCartesianTarget() As CATSafeArrayVariant
+                    Gets the Robot Cartesian target of the specified motion
+                    group.
+                
+                    Parameters:
+                
+                        oMathTransformation
+                            The absolute Transformation. Array of double containing 12 elements
+                            9 rotational vector and u translational vector
+                            Matrix= a11 a12 a13 Vector= u1
+                            a21 a22 a23 u2
+                            a31 a32 a33 u3
+                
+                    Returns:
+                        An HRESULT.
+                        Legal values:
+                
+                        S_OK
+                            Cartesian target successfully set
+                        E_FAIL
+                            Cartesian target could not be set successfully
 
         :return: tuple
         """
@@ -67,48 +67,48 @@ class SpotDrOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPatternPos(AnyObject ospPatternPos,AnyObject
-                | ospPatternPosOwner)
-                |     Gets the Pattern Position link
-                | 
-                |     Example:
-                | 
-                |            
-                |      Gets the Pattern Position link
-                |        
-                | 
-                | 
-                |       
-                |      Parameters:
-                | 
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
-                |          ospPatternPos
-                | 
-                |            
-                |                   The Pattern Position
-                |                
-                |              
-                |                 
-                |          ospPatternPosOwner
-                | 
-                |            
-                |                   The Pattern Position Owner (product Occ in Root
-                |                   context)
-                |                
-                |              
-                | 
-                | 
-                |       
-                |      Returns: 
-                |      
-                |       
-                |                S_OK = Success.
-                |               E_FAIL = Error
+                Sub GetPatternPos(AnyObject ospPatternPos,AnyObject
+                ospPatternPosOwner)
+                    Gets the Pattern Position link
+                
+                    Example:
+                
+                           
+                     Gets the Pattern Position link
+                       
+                
+                
+                      
+                     Parameters:
+                
+                      
+                
+                            
+                
+                
+                            
+                         ospPatternPos
+                
+                           
+                                  The Pattern Position
+                               
+                             
+                                
+                         ospPatternPosOwner
+                
+                           
+                                  The Pattern Position Owner (product Occ in Root
+                                  context)
+                               
+                             
+                
+                
+                      
+                     Returns: 
+                     
+                      
+                               S_OK = Success.
+                              E_FAIL = Error
 
         :param AnyObject osp_pattern_pos:
         :param AnyObject osp_pattern_pos_owner:
@@ -121,28 +121,28 @@ class SpotDrOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetCartesianTarget(CATSafeArrayVariant
-                | iMathTransformation)
-                |     Sets the Robot Cartesian target of the specified motion
-                |     group.
+                Sub SetCartesianTarget(CATSafeArrayVariant
+                iMathTransformation)
+                    Sets the Robot Cartesian target of the specified motion
+                    group.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iMathTransformation
-                |             The absolute Transformation. Array of double containing 12 elements
-                |             9 rotational vector and u translational vector
-                |             Matrix= a11 a12 a13 Vector= u1
-                |             a21 a22 a23 u2
-                |             a31 a32 a33 u3
+                        iMathTransformation
+                            The absolute Transformation. Array of double containing 12 elements
+                            9 rotational vector and u translational vector
+                            Matrix= a11 a12 a13 Vector= u1
+                            a21 a22 a23 u2
+                            a31 a32 a33 u3
                 |
-                |     Returns:
-                |         An HRESULT.
-                |         Legal values:
+                    Returns:
+                        An HRESULT.
+                        Legal values:
                 |
-                |         S_OK
-                |             Cartesian target successfully set
-                |         E_FAIL
-                |             Cartesian target could not be set succesfully
+                        S_OK
+                            Cartesian target successfully set
+                        E_FAIL
+                            Cartesian target could not be set succesfully
 
         :param tuple i_math_transformation:
         :return: None
@@ -170,22 +170,22 @@ class SpotDrOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPatternPos(AnyObject ipPatternPos,AnyObject
-                | ipPatternPosOwner)
-                |     Sets the Pattern Position link
-                | 
-                |     Example:
-                |      Sets the Pattern Position link
+                Sub SetPatternPos(AnyObject ipPatternPos,AnyObject
+                ipPatternPosOwner)
+                    Sets the Pattern Position link
+                
+                    Example:
+                     Sets the Pattern Position link
                 |
-                |      Parameters:
-                |          ipPatternPos
-                |                   The Pattern Position
-                |          ipPatternPosOwner
-                |                   The Pattern Position Owner (product Occ in Root
-                |                   context)
-                |      Returns:
-                |               S_OK = Success.
-                |               E_FAIL = Error
+                     Parameters:
+                         ipPatternPos
+                                  The Pattern Position
+                         ipPatternPosOwner
+                                  The Pattern Position Owner (product Occ in Root
+                                  context)
+                     Returns:
+                              S_OK = Success.
+                              E_FAIL = Error
 
         :param AnyObject ip_pattern_pos:
         :param AnyObject ip_pattern_pos_owner:

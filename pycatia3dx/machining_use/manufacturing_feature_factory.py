@@ -17,15 +17,15 @@ class ManufacturingFeatureFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingFeatureFactory
-                | 
-                | Interface dedicated to machining features creation.
-                | Role: This interface is used to create new machining features.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingFeatureFactory
+                
+                Interface dedicated to machining features creation.
+                Role: This interface is used to create new machining features.
     
     """
 
@@ -38,17 +38,17 @@ class ManufacturingFeatureFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateMachiningFeature(CATBSTR iType) As AnyObject
-                |     Creates a new machining feature.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of feature (ex: MfgInstructionSet, MfgOffsetPosition)
-                |             
-                | 
-                |     Returns:
-                |         The created machining feature
+                Func CreateMachiningFeature(CATBSTR iType) As AnyObject
+                    Creates a new machining feature.
+                
+                    Parameters:
+                
+                        iType
+                            The type of feature (ex: MfgInstructionSet, MfgOffsetPosition)
+                            
+                
+                    Returns:
+                        The created machining feature
 
         :param str i_type:
         :return: AnyObject
@@ -60,13 +60,13 @@ class ManufacturingFeatureFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateMfgContour() As AnyObject
-                |     Creates a new Manufacturing continuous contour.
-                | 
-                |     Parameters:
-                | 
-                |         oContour
-                |             The newly created Manufacturing Contour
+                Func CreateMfgContour() As AnyObject
+                    Creates a new Manufacturing continuous contour.
+                
+                    Parameters:
+                
+                        oContour
+                            The newly created Manufacturing Contour
 
         :return: AnyObject
         """
@@ -77,17 +77,17 @@ class ManufacturingFeatureFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ListMachiningFeature(CATBSTR iFilterType) As
-                | CATSafeArrayVariant
-                |     Gets existing machining features.
-                | 
-                |     Parameters:
-                | 
-                |         iFilterType
-                |             To filter returned features with a dedicated type 
-                | 
-                |     Returns:
-                |         The list of machining features
+                Func ListMachiningFeature(CATBSTR iFilterType) As
+                CATSafeArrayVariant
+                    Gets existing machining features.
+                
+                    Parameters:
+                
+                        iFilterType
+                            To filter returned features with a dedicated type 
+                
+                    Returns:
+                        The list of machining features
 
         :param str i_filter_type:
         :return: tuple

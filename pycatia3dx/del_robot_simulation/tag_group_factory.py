@@ -18,16 +18,16 @@ class TagGroupFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TagGroupFactory
-                | 
-                | Interface representing a TagGroup Factory.
-                | 
-                | Role: This interface is used to create tag groups.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TagGroupFactory
+                
+                Interface representing a TagGroup Factory.
+                
+                Role: This interface is used to create tag groups.
     
     """
 
@@ -40,25 +40,25 @@ class TagGroupFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateTagGroup(CATBSTR iTagGroupName) As TagGroup
-                |     Creates a Tag Group.
-                | 
-                |     Parameters:
-                | 
-                |         iTagGroupName
-                |             Name of the TagGroup to be created. 
-                | 
-                |     Returns:
-                |         oTagGroup Newly created TagGroup. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagGroupFactory As TagGroupFactory
-                |                   ......
-                |         Dim NameTagGroup As String
-                |                   ......
-                |         Set oTagGroup = oTagGroupFactory.CreateTagGroup(NameTagGroup)
+                Func CreateTagGroup(CATBSTR iTagGroupName) As TagGroup
+                    Creates a Tag Group.
+                
+                    Parameters:
+                
+                        iTagGroupName
+                            Name of the TagGroup to be created. 
+                
+                    Returns:
+                        oTagGroup Newly created TagGroup. 
+                    Example:
+                
+                           
+                
+                           Dim objTagGroupFactory As TagGroupFactory
+                                  ......
+                        Dim NameTagGroup As String
+                                  ......
+                        Set oTagGroup = oTagGroupFactory.CreateTagGroup(NameTagGroup)
 
         :param str i_tag_group_name:
         :return: TagGroup

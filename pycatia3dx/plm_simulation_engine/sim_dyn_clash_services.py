@@ -17,27 +17,27 @@ class SimDynClashServices(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SIMDynClashServices
-                | 
-                | Represents the simulation dynamic clash.
-                | The dynamic clash is used to compute clash when objects are moving. Make sure
-                | to call to UpdateClashAgent after modification.
-                | Example:
-                | 
-                |      Dim MyDynClash As SIMDynClashServices
-                |      
-                |      'service retrieval'
-                |      Set MyDynClash = CATIA.ActiveEditor.GetService("SIMDynClashServices")
-                | 
-                | 
-                | See also:
-                |     SIMDynClashResult
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SIMDynClashServices
+                
+                Represents the simulation dynamic clash.
+                The dynamic clash is used to compute clash when objects are moving. Make sure
+                to call to UpdateClashAgent after modification.
+                Example:
+                
+                     Dim MyDynClash As SIMDynClashServices
+                     
+                     'service retrieval'
+                     Set MyDynClash = CATIA.ActiveEditor.GetService("SIMDynClashServices")
+                
+                
+                See also:
+                    SIMDynClashResult
     
     """
 
@@ -51,13 +51,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ClashAnalysisMode() As boolean
-                |     Indicates if the current dynamic clash is active or not.
-                | 
-                |     Example:
-                | 
-                |      Dim bClashAnalysisMode As Boolean
-                |      bClashAnalysisMode = MyDynClash.ClashAnalysisMode
+                Property ClashAnalysisMode() As boolean
+                    Indicates if the current dynamic clash is active or not.
+                
+                    Example:
+                
+                     Dim bClashAnalysisMode As Boolean
+                     bClashAnalysisMode = MyDynClash.ClashAnalysisMode
 
         :return: bool
         """
@@ -78,13 +78,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ClashStatus() As boolean (Read Only)
-                |     Indicates if there is any clash to report.
-                | 
-                |     Example:
-                | 
-                |      Dim bClashStatus As Boolean
-                |      bClashStatus = MyDynClash.ClashStatus
+                Property ClashStatus() As boolean (Read Only)
+                    Indicates if there is any clash to report.
+                
+                    Example:
+                
+                     Dim bClashStatus As Boolean
+                     bClashStatus = MyDynClash.ClashStatus
 
         :return: bool
         """
@@ -97,13 +97,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ClearanceAnalysisMode() As boolean
-                |     Indicates if the current dynamic clash is active or not.
-                | 
-                |     Example:
-                | 
-                |      Dim bClearanceAnalysisMode As Boolean
-                |      bClearanceAnalysisMode = MyDynClearance.ClearanceAnalysisMode
+                Property ClearanceAnalysisMode() As boolean
+                    Indicates if the current dynamic clash is active or not.
+                
+                    Example:
+                
+                     Dim bClearanceAnalysisMode As Boolean
+                     bClearanceAnalysisMode = MyDynClearance.ClearanceAnalysisMode
 
         :return: bool
         """
@@ -124,13 +124,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ContactAnalysisMode() As boolean
-                |     Indicates if the current dynamic clash is active or not.
-                | 
-                |     Example:
-                | 
-                |      Dim bContactAnalysisMode As Boolean
-                |      bContactAnalysisMode = MyDynContact.ContactAnalysisMode
+                Property ContactAnalysisMode() As boolean
+                    Indicates if the current dynamic clash is active or not.
+                
+                    Example:
+                
+                     Dim bContactAnalysisMode As Boolean
+                     bContactAnalysisMode = MyDynContact.ContactAnalysisMode
 
         :return: bool
         """
@@ -151,13 +151,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PenetrationReporting() As boolean
-                |     Indicates if the current dynamic clash is active or not.
-                | 
-                |     Example:
-                | 
-                |      Dim bPenetrationReporting As Boolean
-                |      bPenetrationReporting = MyDynClash.PenetrationReporting
+                Property PenetrationReporting() As boolean
+                    Indicates if the current dynamic clash is active or not.
+                
+                    Example:
+                
+                     Dim bPenetrationReporting As Boolean
+                     bPenetrationReporting = MyDynClash.PenetrationReporting
 
         :return: bool
         """
@@ -177,22 +177,22 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddExclusionObject(AnyObject iObject) As long
-                |     Add an element to the list. The returned value will indicate
-                |     if:
-                | 
-                |         0: if the object is invalid
-                |         N: the object location.
-                | 
-                |     If the object is already in the list, the API will succeed and
-                |     return
-                | 
-                |     Example:
-                | 
-                |      Dim MyObject
-                |      'please perform object object valuation'
-                |      Dim iLocation As Integer
-                |      iLocation = MyDynClearance.AddExclusionObject(MyObject)
+                Func AddExclusionObject(AnyObject iObject) As long
+                    Add an element to the list. The returned value will indicate
+                    if:
+                
+                        0: if the object is invalid
+                        N: the object location.
+                
+                    If the object is already in the list, the API will succeed and
+                    return
+                
+                    Example:
+                
+                     Dim MyObject
+                     'please perform object object valuation'
+                     Dim iLocation As Integer
+                     iLocation = MyDynClearance.AddExclusionObject(MyObject)
 
         :param AnyObject i_object:
         :return: int
@@ -204,15 +204,15 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func GetExclusionList(CATSafeArrayVariant oList) As long
-                |     Gets the list and size of the elements that needs to be
-                |     excluded.
+                Func GetExclusionList(CATSafeArrayVariant oList) As long
+                    Gets the list and size of the elements that needs to be
+                    excluded.
                 |
-                |     Example:
+                    Example:
                 |
-                |      Dim MyExclusionList() As CATVariant
-                |      Dim iListSize As Integer
-                |      iListSize = MyDynClearance.GetExclusionList(MyExclusionList)
+                     Dim MyExclusionList() As CATVariant
+                     Dim iListSize As Integer
+                     iListSize = MyDynClearance.GetExclusionList(MyExclusionList)
 
         :return: tuple
         """
@@ -239,19 +239,19 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func LocateExclusionObject(AnyObject iObject) As long
-                |     Locate an element in the list. The returned value will indicate
-                |     if:
-                | 
-                |         0: if the object is invalid or missing
-                |         N: the object location.
-                | 
-                |     Example:
-                | 
-                |      Dim MyObject
-                |      'please perform object object valuation'
-                |      Dim iLocation As Integer
-                |      iLocation = MyDynClearance.LocateExclusionObject(MyObject)
+                Func LocateExclusionObject(AnyObject iObject) As long
+                    Locate an element in the list. The returned value will indicate
+                    if:
+                
+                        0: if the object is invalid or missing
+                        N: the object location.
+                
+                    Example:
+                
+                     Dim MyObject
+                     'please perform object object valuation'
+                     Dim iLocation As Integer
+                     iLocation = MyDynClearance.LocateExclusionObject(MyObject)
 
         :param AnyObject i_object:
         :return: int
@@ -263,19 +263,19 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func RemoveExclusionObject(AnyObject iObject) As long
-                |     Remove an element from the list. The returned value will indicate
-                |     if:
-                | 
-                |         0: if the object is invalid or missing
-                |         N: the object location before removal.
-                | 
-                |     Example:
-                | 
-                |      Dim MyObject
-                |      'please perform object object valuation'
-                |      Dim iLocation As Integer
-                |      iLocation = MyDynClearance.RemoveExclusionObject(MyObject)
+                Func RemoveExclusionObject(AnyObject iObject) As long
+                    Remove an element from the list. The returned value will indicate
+                    if:
+                
+                        0: if the object is invalid or missing
+                        N: the object location before removal.
+                
+                    Example:
+                
+                     Dim MyObject
+                     'please perform object object valuation'
+                     Dim iLocation As Integer
+                     iLocation = MyDynClearance.RemoveExclusionObject(MyObject)
 
         :param AnyObject i_object:
         :return: int
@@ -287,18 +287,18 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func RetrieveResults(CATSafeArrayVariant oList) As long
-                |     Retrieve the results of the current clashes as a list of
-                |     SIMDynClashResult.
+                Func RetrieveResults(CATSafeArrayVariant oList) As long
+                    Retrieve the results of the current clashes as a list of
+                    SIMDynClashResult.
                 |
-                |     Example:
+                    Example:
                 |
-                |      Dim MyExclusionList() As CATVariant
-                |      Dim iListSize As Integer
-                |      iListSize = MyDynClearance.RetrieveResults(MyExclusionList)
+                     Dim MyExclusionList() As CATVariant
+                     Dim iListSize As Integer
+                     iListSize = MyDynClearance.RetrieveResults(MyExclusionList)
                 |
-                |     See also:
-                |         SIMDynClashResult
+                    See also:
+                        SIMDynClashResult
 
         :return: tuple
         """
@@ -325,13 +325,13 @@ class SimDynClashServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub UpdateClashAgent()
-                |     Make sure to call this API after any changes to update the
-                |     service.
-                | 
-                |     Example:
-                | 
-                |      MyDynClearance.UpdateClashAgent
+                Sub UpdateClashAgent()
+                    Make sure to call this API after any changes to update the
+                    service.
+                
+                    Example:
+                
+                     MyDynClearance.UpdateClashAgent
 
         :return: None
         """

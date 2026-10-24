@@ -23,18 +23,18 @@ class OLPController(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpController
-                | 
-                | Interface for accessing a device (or controller's) properties.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved from a OlpMotionGroup.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpController
+                
+                Interface for accessing a device (or controller's) properties.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved from a OlpMotionGroup.
     
     """
 
@@ -48,8 +48,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccelerationMode() As DELOlpAccelerationMode
-                |     The property AccelerationMode.
+                Property AccelerationMode() As DELOlpAccelerationMode
+                    The property AccelerationMode.
 
         :return: DELOlpAccelerationMode
         """
@@ -70,8 +70,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccuracyProfileList() As OlpProfiles (Read Only)
-                |     The list of all accuracy profiles for this robot.
+                Property AccuracyProfileList() As OlpProfiles (Read Only)
+                    The list of all accuracy profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -84,8 +84,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicationType() As CATBSTR
-                |     The property ApplicationType.
+                Property ApplicationType() As CATBSTR
+                    The property ApplicationType.
 
         :return: str
         """
@@ -106,9 +106,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicativeProfilesMgr() As RscApplicativeProfilesMgr (Read
-                | Only)
-                |     The applicative profiles manager for this device.
+                Property ApplicativeProfilesMgr() As RscApplicativeProfilesMgr (Read
+                Only)
+                    The applicative profiles manager for this device.
 
         :return: RscApplicativeProfilesMgr
         """
@@ -121,8 +121,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CFrameRivetProfileList() As OlpProfiles (Read Only)
-                |     The list of all CFrameRivet profiles for this robot.
+                Property CFrameRivetProfileList() As OlpProfiles (Read Only)
+                    The list of all CFrameRivet profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -135,9 +135,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CartesianSafetyZones() As OlpCartesianSafetyZones (Read
-                | Only)
-                |     The list of all Cartesian safety zones.
+                Property CartesianSafetyZones() As OlpCartesianSafetyZones (Read
+                Only)
+                    The list of all Cartesian safety zones.
 
         :return: OLPCartesianSafetyZones
         """
@@ -150,9 +150,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConveyorTrackingProfileList() As OlpProfiles (Read
-                | Only)
-                |     The list of all conveyor tracking profiles for this robot.
+                Property ConveyorTrackingProfileList() As OlpProfiles (Read
+                Only)
+                    The list of all conveyor tracking profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -165,8 +165,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeviceID() As CATBSTR (Read Only)
-                |     The native robot language ID of this device set in the device mapping tab.
+                Property DeviceID() As CATBSTR (Read Only)
+                    The native robot language ID of this device set in the device mapping tab.
 
         :return: str
         """
@@ -179,8 +179,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeviceType() As DELOlpDeviceType (Read Only)
-                |     The type of this device (robot, rail, etc.)
+                Property DeviceType() As DELOlpDeviceType (Read Only)
+                    The type of this device (robot, rail, etc.)
 
         :return: DELOlpDeviceType
         """
@@ -193,9 +193,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeviceTypeString() As CATBSTR (Read Only)
-                |     The type of this device as a string ("Robot", "Rail", "Tool",
-                |     "WorkpiecePositioner" or "Conveyor").
+                Property DeviceTypeString() As CATBSTR (Read Only)
+                    The type of this device as a string ("Robot", "Rail", "Tool",
+                    "WorkpiecePositioner" or "Conveyor").
 
         :return: str
         """
@@ -208,8 +208,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrillProfileList() As OlpProfiles (Read Only)
-                |     The list of all Drill profiles for this robot.
+                Property DrillProfileList() As OlpProfiles (Read Only)
+                    The list of all Drill profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -222,8 +222,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrillRivetProfileList() As OlpProfiles (Read Only)
-                |     The list of all Drill-Rivet profiles for this robot.
+                Property DrillRivetProfileList() As OlpProfiles (Read Only)
+                    The list of all Drill-Rivet profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -236,11 +236,11 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeartBeat() As double
-                |     Get the heart beat for a device.
-                | 
-                |     Returns:
-                |         The heart beat of the current device.
+                Property HeartBeat() As double
+                    Get the heart beat for a device.
+                
+                    Returns:
+                        The heart beat of the current device.
 
         :return: float
         """
@@ -261,9 +261,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HomePositions() As CATSafeArrayVariant (Read Only)
-                |     The list of home position names for this device.
-                |     Each item in the list is a string.
+                Property HomePositions() As CATSafeArrayVariant (Read Only)
+                    The list of home position names for this device.
+                    Each item in the list is a string.
 
         :return: tuple
         """
@@ -276,8 +276,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaxLinearAccel() As double
-                |     The property MaxLinearAccel.
+                Property MaxLinearAccel() As double
+                    The property MaxLinearAccel.
 
         :return: float
         """
@@ -298,10 +298,10 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaxLinearSpeed() As double
-                |     Maximum linear speed of a robot.
-                |     Value is in m/s. This will fail if this is not the controller for a robot.
-                |     Use DeviceType to determine if this is a robot.
+                Property MaxLinearSpeed() As double
+                    Maximum linear speed of a robot.
+                    Value is in m/s. This will fail if this is not the controller for a robot.
+                    Use DeviceType to determine if this is a robot.
 
         :return: float
         """
@@ -322,9 +322,9 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModelNumber() As CATBSTR (Read Only)
-                |     The robot model number as assigned by manufacturer. For example: SK16,
-                |     R2000iA-165F, KR125-2, SH133-01, ...
+                Property ModelNumber() As CATBSTR (Read Only)
+                    The robot model number as assigned by manufacturer. For example: SK16,
+                    R2000iA-165F, KR125-2, SH133-01, ...
 
         :return: str
         """
@@ -337,8 +337,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionProfileList() As OlpProfiles (Read Only)
-                |     The list of all motion profiles for this robot.
+                Property MotionProfileList() As OlpProfiles (Read Only)
+                    The list of all motion profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -351,8 +351,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumJoints() As long (Read Only)
-                |     Number of joints in this device.
+                Property NumJoints() As long (Read Only)
+                    Number of joints in this device.
 
         :return: int
         """
@@ -365,8 +365,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ObjectFrameProfileList() As OlpProfiles (Read Only)
-                |     The list of all object frame profiles for this robot.
+                Property ObjectFrameProfileList() As OlpProfiles (Read Only)
+                    The list of all object frame profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -379,8 +379,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PaintProfileList() As OlpProfiles (Read Only)
-                |     The list of all paint profiles for this robot.
+                Property PaintProfileList() As OlpProfiles (Read Only)
+                    The list of all paint profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -393,10 +393,10 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Postures() As CATSafeArrayVariant (Read Only)
-                |     The list of valid postures for this robot.
-                |     Each item in the list is a string. This will fail if this is not the
-                |     controller for a robot. Use DeviceType to determine if this is a robot.
+                Property Postures() As CATSafeArrayVariant (Read Only)
+                    The list of valid postures for this robot.
+                    Each item in the list is a string. This will fail if this is not the
+                    controller for a robot. Use DeviceType to determine if this is a robot.
 
         :return: tuple
         """
@@ -409,12 +409,12 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RailDirection() As DELOlpAxisDirection (Read Only)
-                |     Get the rail direction for a rail device.
-                | 
-                |     Returns:
-                |         The axis direction of the movement of the rail device. It doesn't make
-                |         sense for devices of any other types.
+                Property RailDirection() As DELOlpAxisDirection (Read Only)
+                    Get the rail direction for a rail device.
+                
+                    Returns:
+                        The axis direction of the movement of the rail device. It doesn't make
+                        sense for devices of any other types.
 
         :return: DELOlpAxisDirection
         """
@@ -427,8 +427,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RivetProfileList() As OlpProfiles (Read Only)
-                |     The list of all Rivet profiles for this robot.
+                Property RivetProfileList() As OlpProfiles (Read Only)
+                    The list of all Rivet profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -441,8 +441,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SingularityTolerance() As double
-                |     The property SingularityTolerance.
+                Property SingularityTolerance() As double
+                    The property SingularityTolerance.
 
         :return: float
         """
@@ -463,8 +463,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpotProfileList() As OlpProfiles (Read Only)
-                |     The list of all spot profiles for this robot.
+                Property SpotProfileList() As OlpProfiles (Read Only)
+                    The list of all spot profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -477,8 +477,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolProfileList() As OlpProfiles (Read Only)
-                |     The list of all tool profiles for this robot.
+                Property ToolProfileList() As OlpProfiles (Read Only)
+                    The list of all tool profiles for this robot.
 
         :return: OLPProfiles
         """
@@ -491,8 +491,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolVolumes() As OlpToolVolumes (Read Only)
-                |     The list of all safety zone tool volumes for this robot.
+                Property ToolVolumes() As OlpToolVolumes (Read Only)
+                    The list of all safety zone tool volumes for this robot.
 
         :return: OLPToolVolumes
         """
@@ -505,11 +505,11 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TurnMode() As DELOlpTurnMode
-                |     Indicates whether this robot uses turn numbers, turn signs,
-                |     etc.
-                |     This will fail if this is not the controller for a robot. Use DeviceType to
-                |     determine if this is a robot.
+                Property TurnMode() As DELOlpTurnMode
+                    Indicates whether this robot uses turn numbers, turn signs,
+                    etc.
+                    This will fail if this is not the controller for a robot. Use DeviceType to
+                    determine if this is a robot.
 
         :return: DELOlpTurnMode
         """
@@ -530,8 +530,8 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserProfilesMgr() As RscUserProfilesMgr (Read Only)
-                |     The user profiles manager for this device.
+                Property UserProfilesMgr() As RscUserProfilesMgr (Read Only)
+                    The user profiles manager for this device.
 
         :return: RscUserProfilesMgr
         """
@@ -543,21 +543,21 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetApplicativeProfileList(CATBSTR iProfileType) As
-                | OlpProfiles
-                |     Get a specific type of applicative profile or user
-                |     profile.
-                |     The user profile does not need to exist yet. Setting a parameter on a new
-                |     user profile group, will automatically create the
-                |     parameters."
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The profile type 
-                | 
-                |     Returns:
-                |         The collection of profiles.
+                Func GetApplicativeProfileList(CATBSTR iProfileType) As
+                OlpProfiles
+                    Get a specific type of applicative profile or user
+                    profile.
+                    The user profile does not need to exist yet. Setting a parameter on a new
+                    user profile group, will automatically create the
+                    parameters."
+                
+                    Parameters:
+                
+                        iProfileType
+                            The profile type 
+                
+                    Returns:
+                        The collection of profiles.
 
         :param str i_profile_type:
         :return: OLPProfiles
@@ -569,26 +569,26 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBaseLocation(DELOlpPositionRef iOrigin) As
-                | OlpTransform
-                |     The location of the device's base.
-                |     The device base location may be different from the device's product origin.
-                |     This location was set when the device model was created. If the device is
-                |     mounted on a rail, the base location is taken at the rail
-                |     origin.
-                |     This will fail if this is not the controller for a robot. Use DeviceType to
-                |     determine if this is a robot.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The reference coordinate frame for the base
-                |             location.
-                |             delOlpMount and delOlpRobotBase are not a valid origins.
-                |             
-                | 
-                |     Returns:
-                |         The location of the device's base relative to the specified origin.
+                Func GetBaseLocation(DELOlpPositionRef iOrigin) As
+                OlpTransform
+                    The location of the device's base.
+                    The device base location may be different from the device's product origin.
+                    This location was set when the device model was created. If the device is
+                    mounted on a rail, the base location is taken at the rail
+                    origin.
+                    This will fail if this is not the controller for a robot. Use DeviceType to
+                    determine if this is a robot.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The reference coordinate frame for the base
+                            location.
+                            delOlpMount and delOlpRobotBase are not a valid origins.
+                            
+                
+                    Returns:
+                        The location of the device's base relative to the specified origin.
 
         :param int i_origin:
         :return: OLPTransform
@@ -600,21 +600,21 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetConveyorDirection(OlpController iRobot) As
-                | DELOlpAxisDirection
-                |     Get the conveyor direction.
-                | 
-                |     Parameters:
-                | 
-                |         iRobot
-                |             The robot of interest. If the controller has only one robot,
-                |             "Nothing" can be used alternatively in place of the name of robot.
-                |             
-                | 
-                |     Returns:
-                |         The robot base coordinate axis that the conveyor travels along. If the
-                |         conveyor is out of alignment with the robot base coordinates by more than 2
-                |         degrees, this call will fail.
+                Func GetConveyorDirection(OlpController iRobot) As
+                DELOlpAxisDirection
+                    Get the conveyor direction.
+                
+                    Parameters:
+                
+                        iRobot
+                            The robot of interest. If the controller has only one robot,
+                            "Nothing" can be used alternatively in place of the name of robot.
+                            
+                
+                    Returns:
+                        The robot base coordinate axis that the conveyor travels along. If the
+                        conveyor is out of alignment with the robot base coordinates by more than 2
+                        degrees, this call will fail.
 
         :param OLPController i_robot:
         :return: DELOlpAxisDirection
@@ -626,21 +626,21 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDOFParameter(long iDOFIndex,CATBSTR iParameterName) As
-                | CATVariant
-                |     Get a mapped DOF parameter by name for the current
-                |     controller.
-                | 
-                |     Parameters:
-                | 
-                |         iDOFIndex
-                |             The DOF's index. 
-                |         iParameterName
-                |             The parameter name to find 
-                | 
-                |     Returns:
-                |         oValue the mapped parameter value for the current controller and DOF
-                |         index
+                Func GetDOFParameter(long iDOFIndex,CATBSTR iParameterName) As
+                CATVariant
+                    Get a mapped DOF parameter by name for the current
+                    controller.
+                
+                    Parameters:
+                
+                        iDOFIndex
+                            The DOF's index. 
+                        iParameterName
+                            The parameter name to find 
+                
+                    Returns:
+                        oValue the mapped parameter value for the current controller and DOF
+                        index
 
         :param int i_dof_index:
         :param str i_parameter_name:
@@ -653,19 +653,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetHardLimit(long iJointIndex,double oUpperLimit,double
-                | oLowerLimit)
-                |     Get the upper and lower hard limits for the given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint's index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         oUpperLimit the joint's upper hard limit oLowerLimit the joint's lower
-                |         hard limit
+                Sub GetHardLimit(long iJointIndex,double oUpperLimit,double
+                oLowerLimit)
+                    Get the upper and lower hard limits for the given joint.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint's index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        oUpperLimit the joint's upper hard limit oLowerLimit the joint's lower
+                        hard limit
 
         :param int i_joint_index:
         :param float o_upper_limit:
@@ -679,18 +679,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetHomePosition(CATBSTR iHomeName) As CATSafeArrayVariant
-                |     Get the joint values for a home position.
-                | 
-                |     Parameters:
-                | 
-                |         iHomeName
-                |             The name of the home position. 
-                | 
-                |     Returns:
-                |         The array of joint values. Each value in the array is a double. The
-                |         joint values are in MKS units. The units depend on the joint type. The number
-                |         of values must be the same as the number of joints for the device.
+                Func GetHomePosition(CATBSTR iHomeName) As CATSafeArrayVariant
+                    Get the joint values for a home position.
+                
+                    Parameters:
+                
+                        iHomeName
+                            The name of the home position. 
+                
+                    Returns:
+                        The array of joint values. Each value in the array is a double. The
+                        joint values are in MKS units. The units depend on the joint type. The number
+                        of values must be the same as the number of joints for the device.
 
         :param str i_home_name:
         :return: tuple
@@ -702,17 +702,17 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointAccelTime(long iJointIndex) As double
-                |     Get the acceleration time of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         The accel time in seconds
+                Func GetJointAccelTime(long iJointIndex) As double
+                    Get the acceleration time of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        The accel time in seconds
 
         :param int i_joint_index:
         :return: float
@@ -724,18 +724,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointType(long iJointIndex) As DELOlpJointType
-                |     Get the type of a joint (linear, rotational) in this
-                |     device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         The type of joint.
+                Func GetJointType(long iJointIndex) As DELOlpJointType
+                    Get the type of a joint (linear, rotational) in this
+                    device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        The type of joint.
 
         :param int i_joint_index:
         :return: DELOlpJointType
@@ -747,18 +747,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaxJointAccel(long iJointIndex) As double
-                |     Get the max acceleration of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         The acceleration units are m/s^2 for linear joints and rad/s^2 for
-                |         rotational joints
+                Func GetMaxJointAccel(long iJointIndex) As double
+                    Get the max acceleration of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        The acceleration units are m/s^2 for linear joints and rad/s^2 for
+                        rotational joints
 
         :param int i_joint_index:
         :return: float
@@ -770,18 +770,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaxJointSpeed(long iJointIndex) As double
-                |     Get the max speed of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         The speed units are m/s for linear joints and rad/s for rotational
-                |         joints
+                Func GetMaxJointSpeed(long iJointIndex) As double
+                    Get the max speed of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        The speed units are m/s for linear joints and rad/s for rotational
+                        joints
 
         :param int i_joint_index:
         :return: float
@@ -793,20 +793,20 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
-                | CATVariant
-                |     Get applicative profile parameter value directly on the motion controller
-                |     (MCA).
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
+                CATVariant
+                    Get applicative profile parameter value directly on the motion controller
+                    (MCA).
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -819,18 +819,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterNames(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get all applicative and user profile parameter names for a profile
-                |     type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type. 
-                | 
-                |     Returns:
-                |         The list of parameter names as strings.
+                Func GetParameterNames(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get all applicative and user profile parameter names for a profile
+                    type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type. 
+                
+                    Returns:
+                        The list of parameter names as strings.
 
         :param str i_profile_type:
         :return: tuple
@@ -842,19 +842,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetSoftLimit(long iJointIndex,double oUpperLimit,double
-                | oLowerLimit)
-                |     Get the upper and lower soft limits for the given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint's index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                | 
-                |     Returns:
-                |         oUpperLimit the joint's upper soft limit oLowerLimit the joint's lower
-                |         soft limit
+                Sub GetSoftLimit(long iJointIndex,double oUpperLimit,double
+                oLowerLimit)
+                    Get the upper and lower soft limits for the given joint.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint's index. The 1st joint is 1 the last joint is NumJoints
+                            
+                
+                    Returns:
+                        oUpperLimit the joint's upper soft limit oLowerLimit the joint's lower
+                        soft limit
 
         :param int i_joint_index:
         :param float o_upper_limit:
@@ -868,45 +868,45 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBaseLocation(DELOlpPositionRef iOrigin,OlpTransform
-                | iLocation)
-                |     Set the base location of the resource. It does not move the
-                |     resource.
-                |     The behavior is different depending on the type of device. Use DeviceType
-                |     to determine if this is a robot or a conveyor. SetBaseLocation is ignored if
-                |     update device parameters has been unchecked by the user.
-                | 
-                |     For robots, this sets the robot origin by specifying the robot base
-                |     location relative to it. If the device is mounted on an aux device rail, the
-                |     base location is taken at the rail origin. This will fail if this is not the
-                |     controller for a robot.
-                | 
-                |     For conveyors, this sets the base frame of the conveyor that is the
-                |     tracking frame origin.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             Valid values for robots are
-                | 
-                |                 delOlpUserDefined - The origin type will be set to user defined
-                |                 regardless of the position set.
-                |                 delOlpRobotOrigin - The origin type will be computed
-                |                 automatically based on the location. If the transform is 0, delOlpRailOrigin
-                |                 will be used, if the transform matches the robot's location in the cell
-                |                 delOlpStation will be used.
-                | 
-                |             Valid values for conveyors are
-                | 
-                |                 delOlpWorld
-                |                 delOlpStation
-                |                 delOlpRailOrigin
-                |                 delOlpRobotBase
-                |                 delOlpUserDefined
-                |                 delOlpRobotOrigin
-                | 
-                |         iLocation
-                |             The location of the device's base relative to the robot origin.
+                Sub SetBaseLocation(DELOlpPositionRef iOrigin,OlpTransform
+                iLocation)
+                    Set the base location of the resource. It does not move the
+                    resource.
+                    The behavior is different depending on the type of device. Use DeviceType
+                    to determine if this is a robot or a conveyor. SetBaseLocation is ignored if
+                    update device parameters has been unchecked by the user.
+                
+                    For robots, this sets the robot origin by specifying the robot base
+                    location relative to it. If the device is mounted on an aux device rail, the
+                    base location is taken at the rail origin. This will fail if this is not the
+                    controller for a robot.
+                
+                    For conveyors, this sets the base frame of the conveyor that is the
+                    tracking frame origin.
+                
+                    Parameters:
+                
+                        iOrigin
+                            Valid values for robots are
+                
+                                delOlpUserDefined - The origin type will be set to user defined
+                                regardless of the position set.
+                                delOlpRobotOrigin - The origin type will be computed
+                                automatically based on the location. If the transform is 0, delOlpRailOrigin
+                                will be used, if the transform matches the robot's location in the cell
+                                delOlpStation will be used.
+                
+                            Valid values for conveyors are
+                
+                                delOlpWorld
+                                delOlpStation
+                                delOlpRailOrigin
+                                delOlpRobotBase
+                                delOlpUserDefined
+                                delOlpRobotOrigin
+                
+                        iLocation
+                            The location of the device's base relative to the robot origin.
 
         :param int i_origin:
         :param OLPTransform i_location:
@@ -919,19 +919,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDOFParameter(long iDOFIndex,CATBSTR iParameterName,CATVariant
-                | iValue)
-                |     Set a DOF mapped parameter by name for the current
-                |     controller.
-                | 
-                |     Parameters:
-                | 
-                |         iDOFIndex
-                |             The DOF's index. 
-                |         iParameterName
-                |             The parameter name to find 
-                |         iValue
-                |             The value to set for the parameter and DOF index
+                Sub SetDOFParameter(long iDOFIndex,CATBSTR iParameterName,CATVariant
+                iValue)
+                    Set a DOF mapped parameter by name for the current
+                    controller.
+                
+                    Parameters:
+                
+                        iDOFIndex
+                            The DOF's index. 
+                        iParameterName
+                            The parameter name to find 
+                        iValue
+                            The value to set for the parameter and DOF index
 
         :param int i_dof_index:
         :param str i_parameter_name:
@@ -945,19 +945,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHardLimit(long iJointIndex,double iUpperLimit,double
-                | iLowerLimit)
-                |     Set the upper and lower hard limits for the given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint's index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                |         iUpperLimit
-                |             the joint's upper hard limit to set 
-                |         iLowerLimit
-                |             the joint's lower hard limit to set
+                Sub SetHardLimit(long iJointIndex,double iUpperLimit,double
+                iLowerLimit)
+                    Set the upper and lower hard limits for the given joint.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint's index. The 1st joint is 1 the last joint is NumJoints
+                            
+                        iUpperLimit
+                            the joint's upper hard limit to set 
+                        iLowerLimit
+                            the joint's lower hard limit to set
 
         :param int i_joint_index:
         :param float i_upper_limit:
@@ -971,18 +971,18 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHomePosition(CATBSTR iHomeName,CATSafeArrayVariant
-                | iValues)
-                |     Set the joint values for a home position.
-                | 
-                |     Parameters:
-                | 
-                |         iHomeName
-                |             The name of the home position. 
-                |         iValues
-                |             The array of joint values. Each value in the array is a double. The
-                |             joint values are in MKS units. The units depend on the joint type. The number
-                |             of values must be the same as the number of joints for the device.
+                Sub SetHomePosition(CATBSTR iHomeName,CATSafeArrayVariant
+                iValues)
+                    Set the joint values for a home position.
+                
+                    Parameters:
+                
+                        iHomeName
+                            The name of the home position. 
+                        iValues
+                            The array of joint values. Each value in the array is a double. The
+                            joint values are in MKS units. The units depend on the joint type. The number
+                            of values must be the same as the number of joints for the device.
 
         :param str i_home_name:
         :param tuple i_values:
@@ -995,16 +995,16 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetJointAccelTime(long iJointIndex,double iAccel)
-                |     Set the acceleration time of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                |         iAccel
-                |             The accel time in seconds
+                Sub SetJointAccelTime(long iJointIndex,double iAccel)
+                    Set the acceleration time of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                        iAccel
+                            The accel time in seconds
 
         :param int i_joint_index:
         :param float i_accel:
@@ -1017,17 +1017,17 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaxJointAccel(long iJointIndex,double iAccel)
-                |     Get the max acceleration of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                |         iAccel
-                |             The acceleration units are m/s^2 for linear joints and rad/s^2 for
-                |             rotational joints
+                Sub SetMaxJointAccel(long iJointIndex,double iAccel)
+                    Get the max acceleration of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                        iAccel
+                            The acceleration units are m/s^2 for linear joints and rad/s^2 for
+                            rotational joints
 
         :param int i_joint_index:
         :param float i_accel:
@@ -1040,17 +1040,17 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaxJointSpeed(long iJointIndex,double iSpeed)
-                |     Set the max speed of a joint in this device.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                |         iSpeed
-                |             The speed units are m/s for linear joints and rad/s for rotational
-                |             joints
+                Sub SetMaxJointSpeed(long iJointIndex,double iSpeed)
+                    Set the max speed of a joint in this device.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint index. The 1st joint is 1 the last joint is NumJoints
+                            
+                        iSpeed
+                            The speed units are m/s for linear joints and rad/s for rotational
+                            joints
 
         :param int i_joint_index:
         :param float i_speed:
@@ -1063,19 +1063,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
-                | iValue)
-                |     Set applicative profile parameter value directly on the motion controller
-                |     (MCA).
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value.
+                Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
+                iValue)
+                    Set applicative profile parameter value directly on the motion controller
+                    (MCA).
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                        iValue
+                            The parameter value.
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -1089,19 +1089,19 @@ class OLPController(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSoftLimit(long iJointIndex,double iUpperLimit,double
-                | iLowerLimit)
-                |     Set the upper and lower soft limits for the given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJointIndex
-                |             The joint's index. The 1st joint is 1 the last joint is NumJoints
-                |             
-                |         iUpperLimit
-                |             the joint's upper soft limit to set 
-                |         iLowerLimit
-                |             the joint's lower soft limit to set 
+                Sub SetSoftLimit(long iJointIndex,double iUpperLimit,double
+                iLowerLimit)
+                    Set the upper and lower soft limits for the given joint.
+                
+                    Parameters:
+                
+                        iJointIndex
+                            The joint's index. The 1st joint is 1 the last joint is NumJoints
+                            
+                        iUpperLimit
+                            the joint's upper soft limit to set 
+                        iLowerLimit
+                            the joint's lower soft limit to set 
 
         :param int i_joint_index:
         :param float i_upper_limit:

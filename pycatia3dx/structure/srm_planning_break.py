@@ -19,14 +19,14 @@ class SrmPlanningBreak(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrmPlanningBreak
-                | 
-                | Object to manage the Planning Break the design unit.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrmPlanningBreak
+                
+                Object to manage the Planning Break the design unit.
     
     """
 
@@ -40,21 +40,21 @@ class SrmPlanningBreak(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Limit() As Reference (Read Only)
-                |     Returns the limit of this planning break.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Limit object of the
-                |              SrmPlanningBreak.
-                |              
-                | 
-                |              Dim StartPB As SrmPlanningBreak
-                |              Dim EndPB As SrmPlanningBreak
-                |              ObjSrmProxyProfile.GetPlanningBreaks StartPB,
-                |              EndPB
-                |              Set LimitObj = StartPB.Limit
+                Property Limit() As Reference (Read Only)
+                    Returns the limit of this planning break.
+                
+                    Example:
+                
+                
+                             This example retrieves Limit object of the
+                             SrmPlanningBreak.
+                             
+                
+                             Dim StartPB As SrmPlanningBreak
+                             Dim EndPB As SrmPlanningBreak
+                             ObjSrmProxyProfile.GetPlanningBreaks StartPB,
+                             EndPB
+                             Set LimitObj = StartPB.Limit
 
         :return: Reference
         """
@@ -67,17 +67,17 @@ class SrmPlanningBreak(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As long (Read Only)
-                |     Returns the Orientation of this planning break.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Orientation object of the
-                |              SrmPlanningBreak.
-                |              
-                | 
-                |              LimitObj = ObjStartSrmPB.Orientation
+                Property Orientation() As long (Read Only)
+                    Returns the Orientation of this planning break.
+                
+                    Example:
+                
+                
+                             This example retrieves Orientation object of the
+                             SrmPlanningBreak.
+                             
+                
+                             LimitObj = ObjStartSrmPB.Orientation
 
         :return: int
         """
@@ -89,17 +89,17 @@ class SrmPlanningBreak(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOffset() As Parameter
-                |     Returns the offset of this planning break.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves oOffset SrmPlanningBreak.
-                |              
-                | 
-                |              Dim parmOffset As Parameter
-                |              Set parmOffset = ObjStartSrmPB.GetOffset
+                Func GetOffset() As Parameter
+                    Returns the offset of this planning break.
+                
+                    Example:
+                
+                
+                             This example retrieves oOffset SrmPlanningBreak.
+                             
+                
+                             Dim parmOffset As Parameter
+                             Set parmOffset = ObjStartSrmPB.GetOffset
 
         :return: Parameter
         """

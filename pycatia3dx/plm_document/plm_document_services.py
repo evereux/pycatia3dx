@@ -17,13 +17,13 @@ class PLMDocumentServices(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         PLMDocumentServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        PLMDocumentServices
 
     
     """
@@ -43,25 +43,25 @@ class PLMDocumentServices(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func CreateDocument(CATSafeArrayVariant iAttrNames,CATSafeArrayVariant
-                | iAttrValues,CATSafeArrayVariant iFilePathNames,CATSafeArrayVariant
-                | iFileComment) As PLMDocument
-                |     Create Document object with given attributes
+                Func CreateDocument(CATSafeArrayVariant iAttrNames,CATSafeArrayVariant
+                iAttrValues,CATSafeArrayVariant iFilePathNames,CATSafeArrayVariant
+                iFileComment) As PLMDocument
+                    Create Document object with given attributes
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iAttrNames
-                |             Contains list of attributes to be passed while creation
+                        iAttrNames
+                            Contains list of attributes to be passed while creation
                 |
-                |         iAttrValues
-                |             Contains list of attribute values corresponding to the attributes
-                |             passed.
-                |         iFilePathNames
-                |             Contains list of file paths to be connected to the Document.
+                        iAttrValues
+                            Contains list of attribute values corresponding to the attributes
+                            passed.
+                        iFilePathNames
+                            Contains list of file paths to be connected to the Document.
                 |
-                |         iFileComment
-                |             Contains list of each file comment
-                |         oDocument
+                        iFileComment
+                            Contains list of each file comment
+                        oDocument
 
         :param tuple i_attr_names:
         :param tuple i_attr_values:

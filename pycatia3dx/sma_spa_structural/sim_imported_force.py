@@ -18,51 +18,51 @@ class SimImportedForce(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimImportedForce
-                | 
-                | Represents the Imported Force object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimImportedForce as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyImportedForce As SimImportedForce
-                |      Set MyImportedForce = MyFeatures.Add("SimImportedForce")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimImportedForce named
-                |     "Imported Force.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyImportedForce As SimImportedForce
-                |      Set MyImportedForce = MyFeatures.Item("Imported Force.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimImportedForce as
-                |     following:
-                | 
-                |      ...
-                |      myImportedForce = myFeatures.Add("SimImportedForce")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimImportedForce
-                |     named "Imported Force.1" as following:
-                | 
-                |      ...
-                |      myImportedForce = myFeatures.Item("Imported Force.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimImportedForce
+                
+                Represents the Imported Force object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimImportedForce as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyImportedForce As SimImportedForce
+                     Set MyImportedForce = MyFeatures.Add("SimImportedForce")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimImportedForce named
+                    "Imported Force.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyImportedForce As SimImportedForce
+                     Set MyImportedForce = MyFeatures.Item("Imported Force.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimImportedForce as
+                    following:
+                
+                     ...
+                     myImportedForce = myFeatures.Add("SimImportedForce")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimImportedForce
+                    named "Imported Force.1" as following:
+                
+                     ...
+                     myImportedForce = myFeatures.Item("Imported Force.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,8 +98,8 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -112,8 +112,8 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -126,10 +126,10 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FollowerFlag() As boolean
-                |     Returns or sets the follower flag.
-                |     TRUE: the load follows the deformation.
-                |     FALSE: the load does not follows the deformation.
+                Property FollowerFlag() As boolean
+                    Returns or sets the follower flag.
+                    TRUE: the load follows the deformation.
+                    FALSE: the load does not follows the deformation.
 
         :return: bool
         """
@@ -150,9 +150,9 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -165,8 +165,8 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartColumn() As long
-                |     Returns or sets the start column.
+                Property StartColumn() As long
+                    Returns or sets the start column.
 
         :return: int
         """
@@ -187,8 +187,8 @@ class SimImportedForce(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VPMDocument() As CATBaseDispatch
-                |     Returns or sets the VPM document. 
+                Property VPMDocument() As CATBaseDispatch
+                    Returns or sets the VPM document. 
 
         :return: AnyObject
         """

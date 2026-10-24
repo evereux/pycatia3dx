@@ -18,52 +18,52 @@ class CylindricalFace(Face):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfModelInterfaces.Reference
-                |                         CATMmrAutomationInterfaces.Boundary
-                |                             CATMmrAutomationInterfaces.Face
-                |                                 CylindricalFace
-                | 
-                | 2-D boundary with a cylindrical geometry.
-                | Role: This Boundary object may be, for example, the lateral face of a
-                | cylinder.
-                | You will create a CylindricalFace object using the Shapes.GetBoundary ,
-                | HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
-                | method. Then, you pass it to the operator (such as
-                | ShapeFactory.AddNewCircPattern ).
-                | The lifetime of a CylindricalFace object is limited, see
-                | Boundary.
-                | 
-                | Example:
-                |     This example asks the end user to select a shape to pattern and a
-                |     cylindrical face, and creates a circular pattern of the shape. The cylindrical
-                |     face specifies the rotation axis.
-                | 
-                |      Dim InputObjectType(0)
-                |      Set Editor = CATIA.ActiveEditor
-                |      Set Selection = Editor.Selection
-                |      'We propose to the user that he select the shape to
-                |      pattern
-                |      InputObjectType(0)="SketchBasedShape"
-                |      Status=Selection.SelectElement2(InputObjectType,"Select the shape to
-                |      pattern",true)
-                |      if (Status = "cancel") then Exit Sub
-                |      Set Shape = Selection.Item(1).Value
-                |      Selection.Clear
-                |      'We propose to the user that he select the cylindrical
-                |      face
-                |      InputObjectType(0)="CylindricalFace"
-                |      Status=Selection.SelectElement2(InputObjectType,"Select the cylindrical
-                |      face",true)
-                |      if (Status = "cancel") then Exit Sub
-                |      Set CylindricalFace = Selection.Item(1).Value
-                |      Set Part = Editor.ActiveObject
-                |      Set RotationCenter = Part.CreateReferenceFromName("")
-                |      Set CircPattern = ShapeFactory.AddNewCircPattern(Shape,1,4,20.0,45.0,1,4,RotationCenter,CylindricalFace,True,0.0,True)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfModelInterfaces.Reference
+                                        CATMmrAutomationInterfaces.Boundary
+                                            CATMmrAutomationInterfaces.Face
+                                                CylindricalFace
+                
+                2-D boundary with a cylindrical geometry.
+                Role: This Boundary object may be, for example, the lateral face of a
+                cylinder.
+                You will create a CylindricalFace object using the Shapes.GetBoundary ,
+                HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
+                method. Then, you pass it to the operator (such as
+                ShapeFactory.AddNewCircPattern ).
+                The lifetime of a CylindricalFace object is limited, see
+                Boundary.
+                
+                Example:
+                    This example asks the end user to select a shape to pattern and a
+                    cylindrical face, and creates a circular pattern of the shape. The cylindrical
+                    face specifies the rotation axis.
+                
+                     Dim InputObjectType(0)
+                     Set Editor = CATIA.ActiveEditor
+                     Set Selection = Editor.Selection
+                     'We propose to the user that he select the shape to
+                     pattern
+                     InputObjectType(0)="SketchBasedShape"
+                     Status=Selection.SelectElement2(InputObjectType,"Select the shape to
+                     pattern",true)
+                     if (Status = "cancel") then Exit Sub
+                     Set Shape = Selection.Item(1).Value
+                     Selection.Clear
+                     'We propose to the user that he select the cylindrical
+                     face
+                     InputObjectType(0)="CylindricalFace"
+                     Status=Selection.SelectElement2(InputObjectType,"Select the cylindrical
+                     face",true)
+                     if (Status = "cancel") then Exit Sub
+                     Set CylindricalFace = Selection.Item(1).Value
+                     Set Part = Editor.ActiveObject
+                     Set RotationCenter = Part.CreateReferenceFromName("")
+                     Set CircPattern = ShapeFactory.AddNewCircPattern(Shape,1,4,20.0,45.0,1,4,RotationCenter,CylindricalFace,True,0.0,True)
     
     """
 
@@ -76,17 +76,17 @@ class CylindricalFace(Face):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Returns the direction of the cylindrical face axis
-                | 
-                |     Parameters:
-                | 
-                |         oDirection[0]
-                |             The X Coordinate of the axis direction 
-                |         oDirection[1]
-                |             The Y Coordinate of the axis direction 
-                |         oDirection[2]
-                |             The Z Coordinate of the axis direction
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Returns the direction of the cylindrical face axis
+                
+                    Parameters:
+                
+                        oDirection[0]
+                            The X Coordinate of the axis direction 
+                        oDirection[1]
+                            The Y Coordinate of the axis direction 
+                        oDirection[2]
+                            The Z Coordinate of the axis direction
 
         :return: tuple
         """
@@ -113,17 +113,17 @@ class CylindricalFace(Face):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Returns the origin of the cylindrical face axis.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin[0]
-                |             The X Coordinate of the axis origin 
-                |         oOrigin[1]
-                |             The Y Coordinate of the axis origin 
-                |         oOrigin[2]
-                |             The Z Coordinate of the axis origin
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Returns the origin of the cylindrical face axis.
+                
+                    Parameters:
+                
+                        oOrigin[0]
+                            The X Coordinate of the axis origin 
+                        oOrigin[1]
+                            The Y Coordinate of the axis origin 
+                        oOrigin[2]
+                            The Z Coordinate of the axis origin
 
         :return: tuple
         """

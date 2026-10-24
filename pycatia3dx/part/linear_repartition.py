@@ -18,22 +18,22 @@ class LinearRepartition(Repartition):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.Repartition
-                |                         LinearRepartition
-                | 
-                | Represents the linear repartition.
-                | It is used by the rectangular and circular patterns. It is made up of a number
-                | of times the shape is copied and of a spacing distance between two consecutive
-                | copies of this shape along a direction. The number of times the shape is copied
-                | is accessible using the Repartition.InstancesCount property.
-                | 
-                | See also:
-                |     RectPattern, CircPattern
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.Repartition
+                                        LinearRepartition
+                
+                Represents the linear repartition.
+                It is used by the rectangular and circular patterns. It is made up of a number
+                of times the shape is copied and of a spacing distance between two consecutive
+                copies of this shape along a direction. The number of times the shape is copied
+                is accessible using the Repartition.InstancesCount property.
+                
+                See also:
+                    RectPattern, CircPattern
     
     """
 
@@ -47,15 +47,15 @@ class LinearRepartition(Repartition):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Spacing() As Length (Read Only)
-                |     Returns the distance between two consecutive shapes along the repartition
-                |     direction.
-                | 
-                |     Example:
-                |         The following example returns in space1 the spacing distance of the
-                |         linear repartition firstRepartition:
-                | 
-                |          Set space1 = firstRepartition.Spacing
+                Property Spacing() As Length (Read Only)
+                    Returns the distance between two consecutive shapes along the repartition
+                    direction.
+                
+                    Example:
+                        The following example returns in space1 the spacing distance of the
+                        linear repartition firstRepartition:
+                
+                         Set space1 = firstRepartition.Spacing
 
         :return: Length
         """

@@ -17,19 +17,19 @@ class VSOVectorField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VSOVectorField
-                | 
-                | Interface representing a RSO Vector Field.
-                | 
-                | Role: Components that implement CATIAVSOVectorField are Virtual to Real Shape
-                | Morphind vector fields.
-                | 
-                | ClassReference, Class#MethodReference, #InternalMethod...
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VSOVectorField
+                
+                Interface representing a RSO Vector Field.
+                
+                Role: Components that implement CATIAVSOVectorField are Virtual to Real Shape
+                Morphind vector fields.
+                
+                ClassReference, Class#MethodReference, #InternalMethod...
     
     """
 

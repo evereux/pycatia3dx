@@ -21,16 +21,16 @@ class HybridShapeSweepLine(HybridShapeSweep):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeSweep
-                |                             HybridShapeSweepLine
-                | 
-                | Represents the sweep line object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeSweep
+                                            HybridShapeSweepLine
+                
+                Represents the sweep line object.
     
     """
 
@@ -44,8 +44,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLaw() As Reference
-                |     Returns or sets the angular law.
+                Property AngleLaw() As Reference
+                    Returns or sets the angular law.
 
         :return: Reference
         """
@@ -66,12 +66,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLawInversion() As long
-                |     Returns or sets whether the angular law has to be
-                |     inverted.
-                |     Legal angular law inversion values are:
-                |     0 The angular law has NOT to be inverted
-                |     1 The angular law has to be inverted
+                Property AngleLawInversion() As long
+                    Returns or sets whether the angular law has to be
+                    inverted.
+                    Legal angular law inversion values are:
+                    0 The angular law has NOT to be inverted
+                    1 The angular law has to be inverted
 
         :return: int
         """
@@ -92,15 +92,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AngleLawType() As long
-                |     Returns or sets the angular law type.
-                |     Legal angular law type values are:
-                |     0 Undefined law type (CATGSMBasicLawType_None)
-                |     1 Constant law type (CATGSMBasicLawType_Constant)
-                |     2 Linear law type (CATGSMBasicLawType_Linear)
-                |     3 S law type (CATGSMBasicLawType_SType)
-                |     4 Law specified by a GSD law feature
-                |     (CATGSMBasicLawType_Advanced)
+                Property AngleLawType() As long
+                    Returns or sets the angular law type.
+                    Legal angular law type values are:
+                    0 Undefined law type (CATGSMBasicLawType_None)
+                    1 Constant law type (CATGSMBasicLawType_Constant)
+                    2 Linear law type (CATGSMBasicLawType_Linear)
+                    3 S law type (CATGSMBasicLawType_SType)
+                    4 Law specified by a GSD law feature
+                    (CATGSMBasicLawType_Advanced)
 
         :return: int
         """
@@ -121,12 +121,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CanonicalDetection() As long
-                |     Returns or sets whether canonical surfaces of the swept surface are
-                |     detected.
-                |     Legal values:
-                |     0 No detection of canonical surface is performed.
-                |     2 Detection of canonical surfaces is performed.
+                Property CanonicalDetection() As long
+                    Returns or sets whether canonical surfaces of the swept surface are
+                    detected.
+                    Legal values:
+                    0 No detection of canonical surface is performed.
+                    2 Detection of canonical surfaces is performed.
 
         :return: int
         """
@@ -147,21 +147,21 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Context() As long
-                |     Returns or sets the context on Sweep feature.
-                | 
-                |         0 This option creates Swept surface.
-                |         1 This option creates Swept volume.
-                | 
-                | 
-                |     Note: Setting volume result requires GSO License.
-                | 
-                |     Example:
-                |         This example retrieves in oContext the context for the Sweep hybrid
-                |         shape feature.
-                | 
-                |          Dim oContext
-                |          Set oContext = Sweep.Context
+                Property Context() As long
+                    Returns or sets the context on Sweep feature.
+                
+                        0 This option creates Swept surface.
+                        1 This option creates Swept volume.
+                
+                
+                    Note: Setting volume result requires GSO License.
+                
+                    Example:
+                        This example retrieves in oContext the context for the Sweep hybrid
+                        shape feature.
+                
+                         Dim oContext
+                         Set oContext = Sweep.Context
 
         :return: int
         """
@@ -182,8 +182,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DraftComputationMode() As long
-                |     Returns or sets the draft computation mode.
+                Property DraftComputationMode() As long
+                    Returns or sets the draft computation mode.
 
         :return: int
         """
@@ -204,16 +204,16 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DraftDirection() As HybridShapeDirection
-                |     Returns or sets the draft direction.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oDirection the direction of the LinearSweep
-                |         feature.
-                | 
-                |          Dim oDirection As CATIAHybridShapeDirection
-                |          Set oDirection = LinearSweep.DraftDirection
+                Property DraftDirection() As HybridShapeDirection
+                    Returns or sets the draft direction.
+                
+                    Example
+                    :
+                        This example retrieves in oDirection the direction of the LinearSweep
+                        feature.
+                
+                         Dim oDirection As CATIAHybridShapeDirection
+                         Set oDirection = LinearSweep.DraftDirection
 
         :return: HybridShapeDirection
         """
@@ -234,8 +234,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstGuideCrv() As Reference
-                |     Returns or sets the sweep operation first guide curve.
+                Property FirstGuideCrv() As Reference
+                    Returns or sets the sweep operation first guide curve.
 
         :return: Reference
         """
@@ -256,8 +256,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstGuideSurf() As Reference
-                |     Returns or sets the sweep operation first guide surface.
+                Property FirstGuideSurf() As Reference
+                    Returns or sets the sweep operation first guide surface.
 
         :return: Reference
         """
@@ -278,8 +278,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstLengthLaw() As Reference
-                |     Returns or sets the first length law useful in some linear sweep types.
+                Property FirstLengthLaw() As Reference
+                    Returns or sets the first length law useful in some linear sweep types.
 
         :return: Reference
         """
@@ -300,12 +300,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstLengthLawInversion() As long
-                |     Returns or sets whether the first length law has to be
-                |     inverted.
-                |     Legal length law inversion values are:
-                |     0 The length law has NOT to be inverted
-                |     1 The length law has to be inverted
+                Property FirstLengthLawInversion() As long
+                    Returns or sets whether the first length law has to be
+                    inverted.
+                    Legal length law inversion values are:
+                    0 The length law has NOT to be inverted
+                    1 The length law has to be inverted
 
         :return: int
         """
@@ -326,9 +326,9 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property GuideDeviation() As Length (Read Only)
-                |     Returns the deviation value (length) from guide curves allowed during a
-                |     sweeping operation in order to smooth it.
+                Property GuideDeviation() As Length (Read Only)
+                    Returns the deviation value (length) from guide curves allowed during a
+                    sweeping operation in order to smooth it.
 
         :return: Length
         """
@@ -341,13 +341,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property GuideDeviationActivity() As boolean
-                |     Returns or sets whether a deviation from guide curves is
-                |     allowed.
-                |     This property gives the information on performing smoothing during sweeping
-                |     operation.
-                |     TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE
-                |     if not specified).
+                Property GuideDeviationActivity() As boolean
+                    Returns or sets whether a deviation from guide curves is
+                    allowed.
+                    This property gives the information on performing smoothing during sweeping
+                    operation.
+                    TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE
+                    if not specified).
 
         :return: bool
         """
@@ -368,26 +368,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Mode() As long
-                |     Returns or sets the linear sweep mode.
-                |     Legal mode values are:
-                |     0 Undefined linear profile swept surface
-                |     (CATGSMLinearSweep_None)
-                |     1 Linear profile swept surface defined by two guide curves
-                |     (CATGSMLinearSweep_TwoGuides)
-                |     2 Linear profile swept surface defined by a guide curve and an angle
-                |     (CATGSMLinearSweep_GuideAndAngleCurve)
-                |     3 Linear profile swept surface defined by a guide curve and a middle curve
-                |     (CATGSMLinearSweep_GuideAndMiddle)
-                |     4 Linear profile swept surface defined by a guide curve and an angle from
-                |     a reference surface
-                |     (CATGSMLinearSweep_GuideAndRefSurfaceAngle)
-                |     5 Linear profile swept surface defined by a guide curve and a tangency
-                |     surface (CATGSMLinearSweep_GuideAndTangencySurface)
-                |     6 Linear profile swept surface defined by a guide curve and a draft
-                |     directio (CATGSMLinearSweep_GuideAndDraftDirection)
-                |     7 Linear profile swept surface defined by two tangency surfaces
-                |     (CATGSMLinearSweep_TwoTangencySurfaces)
+                Property Mode() As long
+                    Returns or sets the linear sweep mode.
+                    Legal mode values are:
+                    0 Undefined linear profile swept surface
+                    (CATGSMLinearSweep_None)
+                    1 Linear profile swept surface defined by two guide curves
+                    (CATGSMLinearSweep_TwoGuides)
+                    2 Linear profile swept surface defined by a guide curve and an angle
+                    (CATGSMLinearSweep_GuideAndAngleCurve)
+                    3 Linear profile swept surface defined by a guide curve and a middle curve
+                    (CATGSMLinearSweep_GuideAndMiddle)
+                    4 Linear profile swept surface defined by a guide curve and an angle from
+                    a reference surface
+                    (CATGSMLinearSweep_GuideAndRefSurfaceAngle)
+                    5 Linear profile swept surface defined by a guide curve and a tangency
+                    surface (CATGSMLinearSweep_GuideAndTangencySurface)
+                    6 Linear profile swept surface defined by a guide curve and a draft
+                    directio (CATGSMLinearSweep_GuideAndDraftDirection)
+                    7 Linear profile swept surface defined by two tangency surfaces
+                    (CATGSMLinearSweep_TwoTangencySurfaces)
 
         :return: int
         """
@@ -408,8 +408,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondGuideCrv() As Reference
-                |     Returns or sets the sweep operation second guide curve.
+                Property SecondGuideCrv() As Reference
+                    Returns or sets the sweep operation second guide curve.
 
         :return: Reference
         """
@@ -430,8 +430,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondGuideSurf() As Reference
-                |     Returns or sets the sweep operation second guide surface.
+                Property SecondGuideSurf() As Reference
+                    Returns or sets the sweep operation second guide surface.
 
         :return: Reference
         """
@@ -452,8 +452,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondLengthLaw() As Reference
-                |     Returns or sets second length law useful in some linear sweep types.
+                Property SecondLengthLaw() As Reference
+                    Returns or sets second length law useful in some linear sweep types.
 
         :return: Reference
         """
@@ -474,12 +474,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondLengthLawInversion() As long
-                |     Returns or sets whether the second length law has to be
-                |     inverted.
-                |     Legal length law inversion values are:
-                |     0 The length law has NOT to be inverted
-                |     1 The length law has to be inverted
+                Property SecondLengthLawInversion() As long
+                    Returns or sets whether the second length law has to be
+                    inverted.
+                    Legal length law inversion values are:
+                    0 The length law has NOT to be inverted
+                    1 The length law has to be inverted
 
         :return: int
         """
@@ -500,14 +500,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondTrimOption() As long
-                |     Returns or sets the trim option for the second tangency
-                |     surface.
-                | 
-                |     Legal trim option values are:
-                |     0 No trim computed or trim undefined
-                |     (CATGSMSweepTrimMode_None)
-                |     1 Trim computed (CATGSMSweepTrimMode_On)
+                Property SecondTrimOption() As long
+                    Returns or sets the trim option for the second tangency
+                    surface.
+                
+                    Legal trim option values are:
+                    0 No trim computed or trim undefined
+                    (CATGSMSweepTrimMode_None)
+                    1 Trim computed (CATGSMSweepTrimMode_On)
 
         :return: int
         """
@@ -528,10 +528,10 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SmoothActivity() As boolean
-                |     Returns whether the sweeping operation is smoothed.
-                |     TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if
-                |     not specified).
+                Property SmoothActivity() As boolean
+                    Returns whether the sweeping operation is smoothed.
+                    TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if
+                    not specified).
 
         :return: bool
         """
@@ -552,8 +552,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SmoothAngleThreshold() As Angle (Read Only)
-                |     Returns the angular threshold.
+                Property SmoothAngleThreshold() As Angle (Read Only)
+                    Returns the angular threshold.
 
         :return: Angle
         """
@@ -566,11 +566,11 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SolutionNo() As long
-                |     Returns or sets the choice number, which corresponds to each solution of a
-                |     given linear sweep case.
-                |     For example: a linear sweep with reference surface leads to four possible
-                |     solutions.
+                Property SolutionNo() As long
+                    Returns or sets the choice number, which corresponds to each solution of a
+                    given linear sweep case.
+                    For example: a linear sweep with reference surface leads to four possible
+                    solutions.
 
         :return: int
         """
@@ -591,8 +591,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Spine() As Reference
-                |     Returns or sets the sweep operation spine (optional).
+                Property Spine() As Reference
+                    Returns or sets the sweep operation spine (optional).
 
         :return: Reference
         """
@@ -613,13 +613,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TrimOption() As long
-                |     Returns or sets the trim option.
-                | 
-                |     Legal trim option values are:
-                |     0 No trim computed or trim undefined
-                |     (CATGSMSweepTrimMode_None)
-                |     1 Trim computed (CATGSMSweepTrimMode_On)
+                Property TrimOption() As long
+                    Returns or sets the trim option.
+                
+                    Legal trim option values are:
+                    0 No trim computed or trim undefined
+                    (CATGSMSweepTrimMode_None)
+                    1 Trim computed (CATGSMSweepTrimMode_On)
 
         :return: int
         """
@@ -639,17 +639,17 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddDraftAngleDefinitionLocation(Reference ipIALocElem,double
-                | iAng)
-                |     Adds a draft angle location.
-                | 
-                |     Parameters:
-                | 
-                |         ipIALocElem
-                |             The geometric element where the draft angle applies
-                |             
-                |         iAng
-                |             The draft angle
+                Sub AddDraftAngleDefinitionLocation(Reference ipIALocElem,double
+                iAng)
+                    Adds a draft angle location.
+                
+                    Parameters:
+                
+                        ipIALocElem
+                            The geometric element where the draft angle applies
+                            
+                        iAng
+                            The draft angle
 
         :param Reference ip_ia_loc_elem:
         :param float i_ang:
@@ -662,17 +662,17 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetAngle(long iI) As Angle
-                |     Returns the angle values useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The angle value index 
-                | 
-                |     Returns:
-                |         The angle value
+                Func GetAngle(long iI) As Angle
+                    Returns the angle values useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        iI
+                            The angle value index 
+                
+                    Returns:
+                        The angle value
 
         :param int i_i:
         :return: Angle
@@ -684,26 +684,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetAngularLaw(Angle opStartAng,Angle opEndAng,long
-                | oLawType)
-                |     Retrieves the angular law useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         opStartAng
-                |             The angular law start value 
-                |         opEndAng
-                |             The angular law end value 
-                |         oLawType
-                |             The angular law type
-                |             Legal angular law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub GetAngularLaw(Angle opStartAng,Angle opEndAng,long
+                oLawType)
+                    Retrieves the angular law useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        opStartAng
+                            The angular law start value 
+                        opEndAng
+                            The angular law end value 
+                        oLawType
+                            The angular law type
+                            Legal angular law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param Angle op_start_ang:
         :param Angle op_end_ang:
@@ -718,42 +718,42 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetChoiceNbSurfaces(long oSurfOri1,long oSurfOri2,long oSurfCouplOri1,long
-                | oSurfCouplOri2,long oNo)
-                |     Gets a sequence which identifies a solution amongst all possibilities of a
-                |     line-profile swept surface, case
-                |     CATGSMLinearSweep_TwoTangencySurfaces.
-                | 
-                |     Parameters:
-                | 
-                |         oSurfOri1
-                |             This orientation determines the location of the results with regard
-                |             to the first surface. Possible values are:
-                |             * +1 : the result is in the semi-space defined by the normal to the surface,
-                |             * -1 : the result is in the semi-space defined by the opposite to the normal to the surface,
-                |             * 0 : no orientation is specified, all the results are output,
-                |             * 2 : the result changes of semi-space along the spine.
-                |         oSurfOri2
-                |             This orientation determines the location of the results with regard
-                |             to the second surface. Possible values are as for oSurfOri1.
-                |             
-                |         oSurfCouplOri1
-                |             This orientation determines the location of the results with regard
-                |             to the trihedron defined by the the spine, the normal to the first surface and
-                |             the tangent to the linear profile. Possible values
-                |             are:
-                |             * +1 : the output results are such that the triedron is counter clockwise,
-                |             * -1 : the output results are such that the triedron is clockwise,
-                |             * 0 : no orientation is specified, all the results are output,
-                |             * 2 : the orientation of the trihedron changes along the spine. 
-                |         oSurfCouplOri2
-                |             This orientation determines the location of the results with regard
-                |             to the trihedron defined by the the spine, the normal to the second surface and
-                |             the tangent to the linear profile. Possible values are as for oSurfCouplOri1.
-                |             
-                |         oNo
-                |             Given the previous orientations, solution number in a distance
-                |             ordered list.
+                Sub GetChoiceNbSurfaces(long oSurfOri1,long oSurfOri2,long oSurfCouplOri1,long
+                oSurfCouplOri2,long oNo)
+                    Gets a sequence which identifies a solution amongst all possibilities of a
+                    line-profile swept surface, case
+                    CATGSMLinearSweep_TwoTangencySurfaces.
+                
+                    Parameters:
+                
+                        oSurfOri1
+                            This orientation determines the location of the results with regard
+                            to the first surface. Possible values are:
+                            * +1 : the result is in the semi-space defined by the normal to the surface,
+                            * -1 : the result is in the semi-space defined by the opposite to the normal to the surface,
+                            * 0 : no orientation is specified, all the results are output,
+                            * 2 : the result changes of semi-space along the spine.
+                        oSurfOri2
+                            This orientation determines the location of the results with regard
+                            to the second surface. Possible values are as for oSurfOri1.
+                            
+                        oSurfCouplOri1
+                            This orientation determines the location of the results with regard
+                            to the trihedron defined by the the spine, the normal to the first surface and
+                            the tangent to the linear profile. Possible values
+                            are:
+                            * +1 : the output results are such that the triedron is counter clockwise,
+                            * -1 : the output results are such that the triedron is clockwise,
+                            * 0 : no orientation is specified, all the results are output,
+                            * 2 : the orientation of the trihedron changes along the spine. 
+                        oSurfCouplOri2
+                            This orientation determines the location of the results with regard
+                            to the trihedron defined by the the spine, the normal to the second surface and
+                            the tangent to the linear profile. Possible values are as for oSurfCouplOri1.
+                            
+                        oNo
+                            Given the previous orientations, solution number in a distance
+                            ordered list.
 
         :param int o_surf_ori1:
         :param int o_surf_ori2:
@@ -769,20 +769,20 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetChoiceNo(long oVal1,long oVal2,long oVal3)
-                |     Retrieves the choice number associated with each solution of a given linear
-                |     sweep case.
-                |     Example: a linear sweep with one guide curve and a tangency surface may
-                |     lead to several possible solutions.
-                | 
-                |     Parameters:
-                | 
-                |         oVal1
-                |             The solution number (from 1 to n) 
-                |         oVal2
-                |             In the example, the shell orientation : -1, +1 or 0 (both +1 and -1) 
-                |         val3
-                |             In the example, the wire orientation : -1, +1 or 0 (both +1 and -1)
+                Sub GetChoiceNo(long oVal1,long oVal2,long oVal3)
+                    Retrieves the choice number associated with each solution of a given linear
+                    sweep case.
+                    Example: a linear sweep with one guide curve and a tangency surface may
+                    lead to several possible solutions.
+                
+                    Parameters:
+                
+                        oVal1
+                            The solution number (from 1 to n) 
+                        oVal2
+                            In the example, the shell orientation : -1, +1 or 0 (both +1 and -1) 
+                        val3
+                            In the example, the wire orientation : -1, +1 or 0 (both +1 and -1)
 
         :param int o_val1:
         :param int o_val2:
@@ -796,19 +796,19 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetDraftAngleDefinitionLocation(long iLoc,Reference opIAElement,Angle
-                | oAngle)
-                |     Retrieves the draft angle location element.
-                | 
-                |     Parameters:
-                | 
-                |         iLoc
-                |             The draft angle location position in the list 
-                |         opIAElement
-                |             The geometric element at that location and where the draft angle
-                |             applies 
-                |         oAngle
-                |             The draft angle
+                Sub GetDraftAngleDefinitionLocation(long iLoc,Reference opIAElement,Angle
+                oAngle)
+                    Retrieves the draft angle location element.
+                
+                    Parameters:
+                
+                        iLoc
+                            The draft angle location position in the list 
+                        opIAElement
+                            The geometric element at that location and where the draft angle
+                            applies 
+                        oAngle
+                            The draft angle
 
         :param int i_loc:
         :param Reference op_ia_element:
@@ -822,13 +822,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetDraftAngleDefinitionLocationsNb(long oCount)
-                |     Retrieves the draft angle location list size.
-                | 
-                |     Parameters:
-                | 
-                |         oCount
-                |             The draft angle location list size
+                Sub GetDraftAngleDefinitionLocationsNb(long oCount)
+                    Retrieves the draft angle location list size.
+                
+                    Parameters:
+                
+                        oCount
+                            The draft angle location list size
 
         :param int o_count:
         :return: None
@@ -840,32 +840,32 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFirstLengthDefinitionType(long oFirstType,Reference
-                | opIAElem)
-                |     Retrieves the first length definition type.
-                | 
-                |     Parameters:
-                | 
-                |         oFirstType
-                |             The first length definition type
-                |             Legal length definition types are:
-                |             0 Undefined length type
-                |             (CATGSMLinearSweepLengthType_None)
-                |             1 Length of the swept line in the sweeping plane from the guide
-                |             curve (CATGSMLinearSweepLengthType_Standard)
-                |             2 No numerical value is required, equivalent to standard length at
-                |             zero (CATGSMLinearSweepLengthType_FromCurve)
-                |             3 Up to or from a geometrical reference (a surface)
-                |             (CATGSMLinearSweepLengthType_Reference)
-                |             4 Only for draft surfaces, the length is computed in the draft
-                |             direction from an extremum point on the guide curve
-                |             (CATGSMLinearSweepLengthType_FromExtremum)
-                |             5 Only for draft surfaces, the length will be used in a way
-                |             similar to euclidean parallel curve distance on the swept surface
-                |             (CATGSMLinearSweepLengthType_AlongSurface)
-                |         opIAElem
-                |             The geometric element where the first length definition type
-                |             applies
+                Sub GetFirstLengthDefinitionType(long oFirstType,Reference
+                opIAElem)
+                    Retrieves the first length definition type.
+                
+                    Parameters:
+                
+                        oFirstType
+                            The first length definition type
+                            Legal length definition types are:
+                            0 Undefined length type
+                            (CATGSMLinearSweepLengthType_None)
+                            1 Length of the swept line in the sweeping plane from the guide
+                            curve (CATGSMLinearSweepLengthType_Standard)
+                            2 No numerical value is required, equivalent to standard length at
+                            zero (CATGSMLinearSweepLengthType_FromCurve)
+                            3 Up to or from a geometrical reference (a surface)
+                            (CATGSMLinearSweepLengthType_Reference)
+                            4 Only for draft surfaces, the length is computed in the draft
+                            direction from an extremum point on the guide curve
+                            (CATGSMLinearSweepLengthType_FromExtremum)
+                            5 Only for draft surfaces, the length will be used in a way
+                            similar to euclidean parallel curve distance on the swept surface
+                            (CATGSMLinearSweepLengthType_AlongSurface)
+                        opIAElem
+                            The geometric element where the first length definition type
+                            applies
 
         :param int o_first_type:
         :param Reference op_ia_elem:
@@ -878,26 +878,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFirstLengthLaw(Length oLength1,Length oLength2,long
-                | oLawType)
-                |     Retrieves the first length law useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         oLength1
-                |             The length law start value 
-                |         oLength2
-                |             The length law end value 
-                |         oLawType
-                |             The length law type
-                |             Legal length law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub GetFirstLengthLaw(Length oLength1,Length oLength2,long
+                oLawType)
+                    Retrieves the first length law useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        oLength1
+                            The length law start value 
+                        oLength2
+                            The length law end value 
+                        oLawType
+                            The length law type
+                            Legal length law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param Length o_length1:
         :param Length o_length2:
@@ -911,17 +911,17 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLength(long iI) As Length
-                |     Returns the length values useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The length value index 
-                | 
-                |     Returns:
-                |         The length value
+                Func GetLength(long iI) As Length
+                    Returns the length values useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        iI
+                            The length value index 
+                
+                    Returns:
+                        The length value
 
         :param int i_i:
         :return: Length
@@ -933,15 +933,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetLengthLawTypes(long oFirstType,long oSecondType)
-                |     Gets length law types.
-                | 
-                |     Parameters:
-                | 
-                |         oFirstType
-                |             First type of law. 
-                |         oSecondType
-                |             Second type of law. oFirstType and oSecondType = 0 : Undefined law type = 1 : Constant law type = 2 : Linear law type = 3 : S law type = 4 : Law specified by a GSD law feature = 5 : Law specified by a set of points and parameters
+                Sub GetLengthLawTypes(long oFirstType,long oSecondType)
+                    Gets length law types.
+                
+                    Parameters:
+                
+                        oFirstType
+                            First type of law. 
+                        oSecondType
+                            Second type of law. oFirstType and oSecondType = 0 : Undefined law type = 1 : Constant law type = 2 : Linear law type = 3 : S law type = 4 : Law specified by a GSD law feature = 5 : Law specified by a set of points and parameters
 
         :param int o_first_type:
         :param int o_second_type:
@@ -954,18 +954,18 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetLongitudinalRelimiters(Reference opIAElem1,Reference
-                | opIAElem2)
-                | 
-                |     Deprecated:
-                |         V5R16 CATHybridShapeSweepLine#GetRelimiters Retrieves the elements
-                |         relimiting the spine (or the default spine). 
-                |     Parameters:
-                | 
-                |         opIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         opIAElem2
-                |             The second relimiting feature (plane or point)
+                Sub GetLongitudinalRelimiters(Reference opIAElem1,Reference
+                opIAElem2)
+                
+                    Deprecated:
+                        V5R16 CATHybridShapeSweepLine#GetRelimiters Retrieves the elements
+                        relimiting the spine (or the default spine). 
+                    Parameters:
+                
+                        opIAElem1
+                            The first relimiting feature (plane or point) 
+                        opIAElem2
+                            The second relimiting feature (plane or point)
 
         :param Reference op_ia_elem1:
         :param Reference op_ia_elem2:
@@ -978,13 +978,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbAngle(long oAng)
-                |     Retrieves the number of angles.
-                | 
-                |     Parameters:
-                | 
-                |         oAng
-                |             The number of angles
+                Sub GetNbAngle(long oAng)
+                    Retrieves the number of angles.
+                
+                    Parameters:
+                
+                        oAng
+                            The number of angles
 
         :param int o_ang:
         :return: None
@@ -996,13 +996,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbGuideCrv(long oNum)
-                |     Retrieves the number of guides curves.
-                | 
-                |     Parameters:
-                | 
-                |         oNum
-                |             The number of guide curves
+                Sub GetNbGuideCrv(long oNum)
+                    Retrieves the number of guides curves.
+                
+                    Parameters:
+                
+                        oNum
+                            The number of guide curves
 
         :param int o_num:
         :return: None
@@ -1014,13 +1014,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbGuideSur(long oNum)
-                |     Retrieves the number of guide surfaces.
-                | 
-                |     Parameters:
-                | 
-                |         oNum
-                |             The number of guides surfaces
+                Sub GetNbGuideSur(long oNum)
+                    Retrieves the number of guide surfaces.
+                
+                    Parameters:
+                
+                        oNum
+                            The number of guides surfaces
 
         :param int o_num:
         :return: None
@@ -1032,13 +1032,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetNbLength(long oLen)
-                |     Retrieves the number of lengths.
-                | 
-                |     Parameters:
-                | 
-                |         oLen
-                |             The number of lengths
+                Sub GetNbLength(long oLen)
+                    Retrieves the number of lengths.
+                
+                    Parameters:
+                
+                        oLen
+                            The number of lengths
 
         :param int o_len:
         :return: None
@@ -1050,24 +1050,24 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetRelimiters(Reference opIAElem1,long opOrient1,Reference opIAElem2,long
-                | opOrient2)
-                |     Retrieves the elements relimiting the spine (or the default
-                |     spine).
-                | 
-                |     Parameters:
-                | 
-                |         opIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         opOrient1
-                |             Split direction for the first relimitation
-                |             0 means that the beginning of the spine (considering its
-                |             orientation) is removed, 1 means that the end of the spine is removed
-                |             
-                |         opIAElem2
-                |             The second relimiting feature (plane or point) 
-                |         opOrient2
-                |             Split direction for the second relimitation
+                Sub GetRelimiters(Reference opIAElem1,long opOrient1,Reference opIAElem2,long
+                opOrient2)
+                    Retrieves the elements relimiting the spine (or the default
+                    spine).
+                
+                    Parameters:
+                
+                        opIAElem1
+                            The first relimiting feature (plane or point) 
+                        opOrient1
+                            Split direction for the first relimitation
+                            0 means that the beginning of the spine (considering its
+                            orientation) is removed, 1 means that the end of the spine is removed
+                            
+                        opIAElem2
+                            The second relimiting feature (plane or point) 
+                        opOrient2
+                            Split direction for the second relimitation
 
         :param Reference op_ia_elem1:
         :param int op_orient1:
@@ -1082,32 +1082,32 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetSecondLengthDefinitionType(long oSecondType,Reference
-                | opIAElem)
-                |     Retrieves the second length definition type.
-                | 
-                |     Parameters:
-                | 
-                |         oSecondType
-                |             The second length definition type
-                |             Legal length definition types are:
-                |             0 Undefined length type
-                |             (CATGSMLinearSweepLengthType_None)
-                |             1 Length of the swept line in the sweeping plane from the guide
-                |             curve (CATGSMLinearSweepLengthType_Standard)
-                |             2 No numerical value is required, equivalent to standard length at
-                |             zero (CATGSMLinearSweepLengthType_FromCurve)
-                |             3 Up to or from a geometrical reference (a surface)
-                |             (CATGSMLinearSweepLengthType_Reference)
-                |             4 Only for draft surfaces, the length is computed in the draft
-                |             direction from an extremum point on the guide curve
-                |             (CATGSMLinearSweepLengthType_FromExtremum)
-                |             5 Only for draft surfaces, the length will be used in a way
-                |             similar to euclidean parallel curve distance on the swept surface
-                |             (CATGSMLinearSweepLengthType_AlongSurface)
-                |         opIAElem
-                |             The geometric element where the second length definition type
-                |             applies
+                Sub GetSecondLengthDefinitionType(long oSecondType,Reference
+                opIAElem)
+                    Retrieves the second length definition type.
+                
+                    Parameters:
+                
+                        oSecondType
+                            The second length definition type
+                            Legal length definition types are:
+                            0 Undefined length type
+                            (CATGSMLinearSweepLengthType_None)
+                            1 Length of the swept line in the sweeping plane from the guide
+                            curve (CATGSMLinearSweepLengthType_Standard)
+                            2 No numerical value is required, equivalent to standard length at
+                            zero (CATGSMLinearSweepLengthType_FromCurve)
+                            3 Up to or from a geometrical reference (a surface)
+                            (CATGSMLinearSweepLengthType_Reference)
+                            4 Only for draft surfaces, the length is computed in the draft
+                            direction from an extremum point on the guide curve
+                            (CATGSMLinearSweepLengthType_FromExtremum)
+                            5 Only for draft surfaces, the length will be used in a way
+                            similar to euclidean parallel curve distance on the swept surface
+                            (CATGSMLinearSweepLengthType_AlongSurface)
+                        opIAElem
+                            The geometric element where the second length definition type
+                            applies
 
         :param int o_second_type:
         :param Reference op_ia_elem:
@@ -1120,26 +1120,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetSecondLengthLaw(Length oLength1,Length oLength2,long
-                | oLawType)
-                |     Retrieves the second length law useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         oLength1
-                |             The length law start value 
-                |         oLength2
-                |             The length law end value 
-                |         oLawType
-                |             The length law type
-                |             Legal length law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub GetSecondLengthLaw(Length oLength1,Length oLength2,long
+                oLawType)
+                    Retrieves the second length law useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        oLength1
+                            The length law start value 
+                        oLength2
+                            The length law end value 
+                        oLawType
+                            The length law type
+                            Legal length law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param Length o_length1:
         :param Length o_length2:
@@ -1153,19 +1153,19 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InsertDraftAngleDefinitionLocation(Reference iElem,Angle iAngle,long
-                | iPos)
-                |     Inserts a geometrical element and a value necessary for draft angle
-                |     definition after a given position in the lists.
-                | 
-                |     Parameters:
-                | 
-                |         iElem
-                |             Geometrical element 
-                |         iAngle
-                |             Angular parameter 
-                |         iPos
-                |             Position in lists. To insert in the beginning of the list put iPos = 0.
+                Sub InsertDraftAngleDefinitionLocation(Reference iElem,Angle iAngle,long
+                iPos)
+                    Inserts a geometrical element and a value necessary for draft angle
+                    definition after a given position in the lists.
+                
+                    Parameters:
+                
+                        iElem
+                            Geometrical element 
+                        iAngle
+                            Angular parameter 
+                        iPos
+                            Position in lists. To insert in the beginning of the list put iPos = 0.
 
         :param Reference i_elem:
         :param Angle i_angle:
@@ -1179,9 +1179,9 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllDraftAngleDefinitionLocations()
-                |     Removes all geometrical elements and values necessary for draft angle
-                |     definition.
+                Sub RemoveAllDraftAngleDefinitionLocations()
+                    Removes all geometrical elements and values necessary for draft angle
+                    definition.
 
         :return: None
         """
@@ -1192,8 +1192,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAngle()
-                |     Removes an angle.
+                Sub RemoveAngle()
+                    Removes an angle.
 
         :return: None
         """
@@ -1204,13 +1204,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveDraftAngleDefinitionLocationPosition(long iPos)
-                |     Removes a draft angle location.
-                | 
-                |     Parameters:
-                | 
-                |         iPos
-                |             The position in the list of the draft angle location to remove
+                Sub RemoveDraftAngleDefinitionLocationPosition(long iPos)
+                    Removes a draft angle location.
+                
+                    Parameters:
+                
+                        iPos
+                            The position in the list of the draft angle location to remove
 
         :param int i_pos:
         :return: None
@@ -1222,8 +1222,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveGuideCrv()
-                |     Removes a guide curve.
+                Sub RemoveGuideCrv()
+                    Removes a guide curve.
 
         :return: None
         """
@@ -1234,8 +1234,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveGuideSur()
-                |     Removes a guide surface.
+                Sub RemoveGuideSur()
+                    Removes a guide surface.
 
         :return: None
         """
@@ -1246,8 +1246,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveLength()
-                |     Removes a length.
+                Sub RemoveLength()
+                    Removes a length.
 
         :return: None
         """
@@ -1258,15 +1258,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAngle(long iI,double iElem)
-                |     Sets the angle values useful in some linear sweep types.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The angle value index 
-                |         iElem
-                |             The angle value
+                Sub SetAngle(long iI,double iElem)
+                    Sets the angle values useful in some linear sweep types.
+                
+                    Parameters:
+                
+                        iI
+                            The angle value index 
+                        iElem
+                            The angle value
 
         :param int i_i:
         :param float i_elem:
@@ -1279,25 +1279,25 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetAngularLaw(double iStartAng,double iEndAng,long
-                | iLawType)
-                |     Sets the angular law useful in some linear sweep types.
-                | 
-                |     Parameters:
-                | 
-                |         iStartAng
-                |             The angular law start value 
-                |         iEndAng
-                |             The angular law end value 
-                |         iLawType
-                |             The angular law type
-                |             Legal angular law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub SetAngularLaw(double iStartAng,double iEndAng,long
+                iLawType)
+                    Sets the angular law useful in some linear sweep types.
+                
+                    Parameters:
+                
+                        iStartAng
+                            The angular law start value 
+                        iEndAng
+                            The angular law end value 
+                        iLawType
+                            The angular law type
+                            Legal angular law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param float i_start_ang:
         :param float i_end_ang:
@@ -1312,42 +1312,42 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetChoiceNbSurfaces(long iSurfOri1,long iSurfOri2,long iSurfCouplOri1,long
-                | iSurfCouplOri2,long iNo)
-                |     Sets a sequence which identifies a solution amongst all possibilities of a
-                |     line-profile swept surface, case
-                |     CATGSMLinearSweep_TwoTangencySurfaces.
-                | 
-                |     Parameters:
-                | 
-                |         iSurfOri1
-                |             This orientation determines the location of the results with regard
-                |             to the first surface. Possible values are:
-                |             * +1 : the result is in the semi-space defined by the normal to the surface,
-                |             * -1 : the result is in the semi-space defined by the opposite to the normal to the ,
-                |             * 0 : no orientation is specified, all the results are output,
-                |             * 2 : the result changes of semi-space along the spine.
-                |         iSurfOri2
-                |             This orientation determines the location of the results with regard
-                |             to the second surface. Possible values are as for iSurfOri1.
-                |             
-                |         iSurfCouplOri1
-                |             This orientation determines the location of the results with regard
-                |             to the trihedron defined by the the spine, the normal to the first surface and
-                |             the tangent to the linear profile. Possible values
-                |             are:
-                |             * +1 : the output results are such that the triedron is counter clockwise,
-                |             * -1 : the output results are such that the triedron is clockwise,
-                |             * 0 : no orientation is specified, all the results are output,
-                |             * 2 : the orientation of the trihedron changes along the spine. 
-                |         iSurfCouplOri2
-                |             This orientation determines the location of the results with regard
-                |             to the trihedron defined by the the spine, the normal to the second surface and
-                |             the tangent to the linear profile. Possible values are as for iSurfCouplOri2.
-                |             
-                |         iNo
-                |             Given the previous orientations, solution number in a distance
-                |             ordered list.
+                Sub SetChoiceNbSurfaces(long iSurfOri1,long iSurfOri2,long iSurfCouplOri1,long
+                iSurfCouplOri2,long iNo)
+                    Sets a sequence which identifies a solution amongst all possibilities of a
+                    line-profile swept surface, case
+                    CATGSMLinearSweep_TwoTangencySurfaces.
+                
+                    Parameters:
+                
+                        iSurfOri1
+                            This orientation determines the location of the results with regard
+                            to the first surface. Possible values are:
+                            * +1 : the result is in the semi-space defined by the normal to the surface,
+                            * -1 : the result is in the semi-space defined by the opposite to the normal to the ,
+                            * 0 : no orientation is specified, all the results are output,
+                            * 2 : the result changes of semi-space along the spine.
+                        iSurfOri2
+                            This orientation determines the location of the results with regard
+                            to the second surface. Possible values are as for iSurfOri1.
+                            
+                        iSurfCouplOri1
+                            This orientation determines the location of the results with regard
+                            to the trihedron defined by the the spine, the normal to the first surface and
+                            the tangent to the linear profile. Possible values
+                            are:
+                            * +1 : the output results are such that the triedron is counter clockwise,
+                            * -1 : the output results are such that the triedron is clockwise,
+                            * 0 : no orientation is specified, all the results are output,
+                            * 2 : the orientation of the trihedron changes along the spine. 
+                        iSurfCouplOri2
+                            This orientation determines the location of the results with regard
+                            to the trihedron defined by the the spine, the normal to the second surface and
+                            the tangent to the linear profile. Possible values are as for iSurfCouplOri2.
+                            
+                        iNo
+                            Given the previous orientations, solution number in a distance
+                            ordered list.
 
         :param int i_surf_ori1:
         :param int i_surf_ori2:
@@ -1363,20 +1363,20 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetChoiceNo(long iVal1,long iVal2,long iVal3)
-                |     Sets the choice number associated with each solution of a given linear
-                |     sweep case.
-                |     Example: a linear sweep with one guide curve and a tangency surface may
-                |     lead to several possible solutions.
-                | 
-                |     Parameters:
-                | 
-                |         iVal1
-                |             The solution number (from 1 to n) 
-                |         iVal2
-                |             In the example, the shell orientation : -1, +1 or 0 (both +1 and -1) 
-                |         iVal3
-                |             In the example, the wire orientation : -1, +1 or 0 (both +1 and -1)
+                Sub SetChoiceNo(long iVal1,long iVal2,long iVal3)
+                    Sets the choice number associated with each solution of a given linear
+                    sweep case.
+                    Example: a linear sweep with one guide curve and a tangency surface may
+                    lead to several possible solutions.
+                
+                    Parameters:
+                
+                        iVal1
+                            The solution number (from 1 to n) 
+                        iVal2
+                            In the example, the shell orientation : -1, +1 or 0 (both +1 and -1) 
+                        iVal3
+                            In the example, the wire orientation : -1, +1 or 0 (both +1 and -1)
 
         :param int i_val1:
         :param int i_val2:
@@ -1390,32 +1390,32 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetFirstLengthDefinitionType(long iFirstType,Reference
-                | ipIAElem)
-                |     Sets the first length definition type.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstType
-                |             The first length definition type
-                |             Legal length definition types are:
-                |             0 Undefined length type
-                |             (CATGSMLinearSweepLengthType_None)
-                |             1 Length of the swept line in the sweeping plane from the guide
-                |             curve (CATGSMLinearSweepLengthType_Standard)
-                |             2 No numerical value is required, equivalent to standard length at
-                |             zero (CATGSMLinearSweepLengthType_FromCurve)
-                |             3 Up to or from a geometrical reference (a surface)
-                |             (CATGSMLinearSweepLengthType_Reference)
-                |             4 Only for draft surfaces, the length is computed in the draft
-                |             direction from an extremum point on the guide curve
-                |             (CATGSMLinearSweepLengthType_FromExtremum)
-                |             5 Only for draft surfaces, the length will be used in a way
-                |             similar to euclidean parallel curve distance on the swept surface
-                |             (CATGSMLinearSweepLengthType_AlongSurface)
-                |         ipIAElem
-                |             The geometric element where the first length definition type
-                |             applies
+                Sub SetFirstLengthDefinitionType(long iFirstType,Reference
+                ipIAElem)
+                    Sets the first length definition type.
+                
+                    Parameters:
+                
+                        iFirstType
+                            The first length definition type
+                            Legal length definition types are:
+                            0 Undefined length type
+                            (CATGSMLinearSweepLengthType_None)
+                            1 Length of the swept line in the sweeping plane from the guide
+                            curve (CATGSMLinearSweepLengthType_Standard)
+                            2 No numerical value is required, equivalent to standard length at
+                            zero (CATGSMLinearSweepLengthType_FromCurve)
+                            3 Up to or from a geometrical reference (a surface)
+                            (CATGSMLinearSweepLengthType_Reference)
+                            4 Only for draft surfaces, the length is computed in the draft
+                            direction from an extremum point on the guide curve
+                            (CATGSMLinearSweepLengthType_FromExtremum)
+                            5 Only for draft surfaces, the length will be used in a way
+                            similar to euclidean parallel curve distance on the swept surface
+                            (CATGSMLinearSweepLengthType_AlongSurface)
+                        ipIAElem
+                            The geometric element where the first length definition type
+                            applies
 
         :param int i_first_type:
         :param Reference ip_ia_elem:
@@ -1428,26 +1428,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetFirstLengthLaw(double iLength1,double iLength2,long
-                | iLawType)
-                |     Sets the first length law useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         iLength1
-                |             The length law start value 
-                |         iLength2
-                |             The length law end value 
-                |         iLawType
-                |             The length law type
-                |             Legal length law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub SetFirstLengthLaw(double iLength1,double iLength2,long
+                iLawType)
+                    Sets the first length law useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        iLength1
+                            The length law start value 
+                        iLength2
+                            The length law end value 
+                        iLawType
+                            The length law type
+                            Legal length law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param float i_length1:
         :param float i_length2:
@@ -1461,14 +1461,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetGuideDeviation(double iLength)
-                |     Sets the deviation value (length) from guide curves allowed during sweeping
-                |     operation in order to smooth it.
-                | 
-                |     Parameters:
-                | 
-                |         iLength
-                |             The deviation value
+                Sub SetGuideDeviation(double iLength)
+                    Sets the deviation value (length) from guide curves allowed during sweeping
+                    operation in order to smooth it.
+                
+                    Parameters:
+                
+                        iLength
+                            The deviation value
 
         :param float i_length:
         :return: None
@@ -1480,15 +1480,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLength(long iI,double iElem)
-                |     Sets the linear values useful in some linear sweep types.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             The linear value index 
-                |         iElem
-                |             The linear value
+                Sub SetLength(long iI,double iElem)
+                    Sets the linear values useful in some linear sweep types.
+                
+                    Parameters:
+                
+                        iI
+                            The linear value index 
+                        iElem
+                            The linear value
 
         :param int i_i:
         :param float i_elem:
@@ -1501,15 +1501,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLengthLawTypes(long iFirstType,long iSecondType)
-                |     Sets length law types.
-                | 
-                |     Parameters:
-                | 
-                |         iFirstType
-                |             First type of law. 
-                |         iSecondType
-                |             Second type of law. iFirstType and iSecondType = 0 : Undefined law type = 1 : Constant law type = 2 : Linear law type = 3 : S law type = 4 : Law specified by a GSD law feature = 5 : Law specified by a set of points and parameters
+                Sub SetLengthLawTypes(long iFirstType,long iSecondType)
+                    Sets length law types.
+                
+                    Parameters:
+                
+                        iFirstType
+                            First type of law. 
+                        iSecondType
+                            Second type of law. iFirstType and iSecondType = 0 : Undefined law type = 1 : Constant law type = 2 : Linear law type = 3 : S law type = 4 : Law specified by a GSD law feature = 5 : Law specified by a set of points and parameters
 
         :param int i_first_type:
         :param int i_second_type:
@@ -1522,18 +1522,18 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLongitudinalRelimiters(Reference ipIAElem1,Reference
-                | ipIAElem2)
-                | 
-                |     Deprecated:
-                |         V5R16 CATHybridShapeSweepLine#SetRelimiters Sets the elements
-                |         relimiting the spine (or the default spine). 
-                |     Parameters:
-                | 
-                |         ipIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         ipIAElem2
-                |             The second relimiting feature (plane or point)
+                Sub SetLongitudinalRelimiters(Reference ipIAElem1,Reference
+                ipIAElem2)
+                
+                    Deprecated:
+                        V5R16 CATHybridShapeSweepLine#SetRelimiters Sets the elements
+                        relimiting the spine (or the default spine). 
+                    Parameters:
+                
+                        ipIAElem1
+                            The first relimiting feature (plane or point) 
+                        ipIAElem2
+                            The second relimiting feature (plane or point)
 
         :param Reference ip_ia_elem1:
         :param Reference ip_ia_elem2:
@@ -1546,24 +1546,24 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetRelimiters(Reference ipIAElem1,long ipOrient1,Reference ipIAElem2,long
-                | ipOrient2)
-                |     Sets the elements relimiting the spine (or the default
-                |     spine).
-                | 
-                |     Parameters:
-                | 
-                |         ipIAElem1
-                |             The first relimiting feature (plane or point) 
-                |         ipOrient1
-                |             Split direction for the first relimitation
-                |             0 means that the beginning of the spine (considering its
-                |             orientation) is removed, 1 means that the end of the spine is removed
-                |             
-                |         ipIAElem2
-                |             The second relimiting feature (plane or point) 
-                |         ipOrient2
-                |             Split direction for the second relimitation
+                Sub SetRelimiters(Reference ipIAElem1,long ipOrient1,Reference ipIAElem2,long
+                ipOrient2)
+                    Sets the elements relimiting the spine (or the default
+                    spine).
+                
+                    Parameters:
+                
+                        ipIAElem1
+                            The first relimiting feature (plane or point) 
+                        ipOrient1
+                            Split direction for the first relimitation
+                            0 means that the beginning of the spine (considering its
+                            orientation) is removed, 1 means that the end of the spine is removed
+                            
+                        ipIAElem2
+                            The second relimiting feature (plane or point) 
+                        ipOrient2
+                            Split direction for the second relimitation
 
         :param Reference ip_ia_elem1:
         :param int ip_orient1:
@@ -1578,32 +1578,32 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSecondLengthDefinitionType(long iSecondType,Reference
-                | ipIAElem)
-                |     Sets the second length definition type.
-                | 
-                |     Parameters:
-                | 
-                |         iSecondType
-                |             The second length definition type
-                |             Legal length definition types are:
-                |             0 Undefined length type
-                |             (CATGSMLinearSweepLengthType_None)
-                |             1 Length of the swept line in the sweeping plane from the guide
-                |             curve (CATGSMLinearSweepLengthType_Standard)
-                |             2 No numerical value is required, equivalent to standard length at
-                |             zero (CATGSMLinearSweepLengthType_FromCurve)
-                |             3 Up to or from a geometrical reference (a surface)
-                |             (CATGSMLinearSweepLengthType_Reference)
-                |             4 Only for draft surfaces, the length is computed in the draft
-                |             direction from an extremum point on the guide curve
-                |             (CATGSMLinearSweepLengthType_FromExtremum)
-                |             5 Only for draft surfaces, the length will be used in a way
-                |             similar to euclidean parallel curve distance on the swept surface
-                |             (CATGSMLinearSweepLengthType_AlongSurface)
-                |         ipIAElem
-                |             The geometric element where the second length definition type
-                |             applies
+                Sub SetSecondLengthDefinitionType(long iSecondType,Reference
+                ipIAElem)
+                    Sets the second length definition type.
+                
+                    Parameters:
+                
+                        iSecondType
+                            The second length definition type
+                            Legal length definition types are:
+                            0 Undefined length type
+                            (CATGSMLinearSweepLengthType_None)
+                            1 Length of the swept line in the sweeping plane from the guide
+                            curve (CATGSMLinearSweepLengthType_Standard)
+                            2 No numerical value is required, equivalent to standard length at
+                            zero (CATGSMLinearSweepLengthType_FromCurve)
+                            3 Up to or from a geometrical reference (a surface)
+                            (CATGSMLinearSweepLengthType_Reference)
+                            4 Only for draft surfaces, the length is computed in the draft
+                            direction from an extremum point on the guide curve
+                            (CATGSMLinearSweepLengthType_FromExtremum)
+                            5 Only for draft surfaces, the length will be used in a way
+                            similar to euclidean parallel curve distance on the swept surface
+                            (CATGSMLinearSweepLengthType_AlongSurface)
+                        ipIAElem
+                            The geometric element where the second length definition type
+                            applies
 
         :param int i_second_type:
         :param Reference ip_ia_elem:
@@ -1616,26 +1616,26 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSecondLengthLaw(double iLength1,double iLength2,long
-                | iLawType)
-                |     Sets the second length law useful in some linear sweep
-                |     types.
-                | 
-                |     Parameters:
-                | 
-                |         iLength1
-                |             The length law start value 
-                |         iLength2
-                |             The length law end value 
-                |         iLawType
-                |             The length law type
-                |             Legal length law type values are:
-                |             0 Undefined law type (CATGSMBasicLawType_None)
-                |             1 Constant law type (CATGSMBasicLawType_Constant)
-                |             2 Linear law type (CATGSMBasicLawType_Linear)
-                |             3 S law type (CATGSMBasicLawType_SType)
-                |             4 Law specified by a GSD law feature
-                |             (CATGSMBasicLawType_Advanced)
+                Sub SetSecondLengthLaw(double iLength1,double iLength2,long
+                iLawType)
+                    Sets the second length law useful in some linear sweep
+                    types.
+                
+                    Parameters:
+                
+                        iLength1
+                            The length law start value 
+                        iLength2
+                            The length law end value 
+                        iLawType
+                            The length law type
+                            Legal length law type values are:
+                            0 Undefined law type (CATGSMBasicLawType_None)
+                            1 Constant law type (CATGSMBasicLawType_Constant)
+                            2 Linear law type (CATGSMBasicLawType_Linear)
+                            3 S law type (CATGSMBasicLawType_SType)
+                            4 Law specified by a GSD law feature
+                            (CATGSMBasicLawType_Advanced)
 
         :param float i_length1:
         :param float i_length2:
@@ -1649,13 +1649,13 @@ class HybridShapeSweepLine(HybridShapeSweep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSmoothAngleThreshold(double iAngle)
-                |     Sets the angular threshold.
-                | 
-                |     Parameters:
-                | 
-                |         iAngle
-                |             The angle numerical value
+                Sub SetSmoothAngleThreshold(double iAngle)
+                    Sets the angular threshold.
+                
+                    Parameters:
+                
+                        iAngle
+                            The angle numerical value
 
         :param float i_angle:
         :return: None

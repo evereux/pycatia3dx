@@ -22,15 +22,15 @@ class MaterialBehavior(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         MaterialBehavior
-                | 
-                | Represents a Material Behavior.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        MaterialBehavior
+                
+                Represents a Material Behavior.
     
     """
 
@@ -44,8 +44,8 @@ class MaterialBehavior(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BehaviorOptions() As MaterialBehaviorOptions (Read
-                | Only)
+                Property BehaviorOptions() As MaterialBehaviorOptions (Read
+                Only)
 
         :return: MaterialBehaviorOptions
         """

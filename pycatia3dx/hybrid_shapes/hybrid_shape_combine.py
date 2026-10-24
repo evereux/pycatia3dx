@@ -19,24 +19,24 @@ class HybridShapeCombine(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeCombine
-                | 
-                | Represents the hybrid shape combined curve object.
-                | Role: To access the data of the hybrid shape combined curve object. This data
-                | includes:
-                | 
-                |     The three curves to which the circle is tangent
-                |     The surface that supports the circle
-                |     The orientation of each curve.
-                | 
-                | Use the HybridShapeFactory object to create a HybridShapeCombine
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeCombine
+                
+                Represents the hybrid shape combined curve object.
+                Role: To access the data of the hybrid shape combined curve object. This data
+                includes:
+                
+                    The three curves to which the circle is tangent
+                    The surface that supports the circle
+                    The orientation of each curve.
+                
+                Use the HybridShapeFactory object to create a HybridShapeCombine
+                object.
     
     """
 
@@ -50,19 +50,19 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction1() As HybridShapeDirection
-                |     Returns or sets the first direction used to create the combined curve. The
-                |     first direction is the direction along which the first curve is
-                |     extruded.
-                | 
-                |     Example:
-                | 
-                |          This example sets firstDir as the first direction to create the
-                |          combined curve
-                |          hybCombCurve.
-                |          
-                | 
-                |          hybCombCurve.Direction1 = firstDir
+                Property Direction1() As HybridShapeDirection
+                    Returns or sets the first direction used to create the combined curve. The
+                    first direction is the direction along which the first curve is
+                    extruded.
+                
+                    Example:
+                
+                         This example sets firstDir as the first direction to create the
+                         combined curve
+                         hybCombCurve.
+                         
+                
+                         hybCombCurve.Direction1 = firstDir
 
         :return: HybridShapeDirection
         """
@@ -83,19 +83,19 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction2() As HybridShapeDirection
-                |     Returns or sets the second direction used to create the combined
-                |     curve.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in secondDir the second direction
-                |          used
-                |          to create the combined curve hybCombCurve.
-                |          
-                | 
-                |          Dim secondDir As CATIAHybridShapeDirection
-                |          Set secondDir = hybCombCurve.Direction2
+                Property Direction2() As HybridShapeDirection
+                    Returns or sets the second direction used to create the combined
+                    curve.
+                
+                    Example:
+                
+                         This example retrieves in secondDir the second direction
+                         used
+                         to create the combined curve hybCombCurve.
+                         
+                
+                         Dim secondDir As CATIAHybridShapeDirection
+                         Set secondDir = hybCombCurve.Direction2
 
         :return: HybridShapeDirection
         """
@@ -116,20 +116,20 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Elem1() As Reference
-                |     Returns or sets the first curve used to create the combined
-                |     curve.
-                |     Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                | 
-                |          This example sets firstCurve as the first curve to create the combined
-                |          curve
-                |          hybCombCurve.
-                |          
-                | 
-                |          hybCombCurve.Elem1 = firstCurve
+                Property Elem1() As Reference
+                    Returns or sets the first curve used to create the combined
+                    curve.
+                    Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
+                    BiDimFeatEdge.
+                
+                    Example:
+                
+                         This example sets firstCurve as the first curve to create the combined
+                         curve
+                         hybCombCurve.
+                         
+                
+                         hybCombCurve.Elem1 = firstCurve
 
         :return: Reference
         """
@@ -150,21 +150,21 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Elem2() As Reference
-                |     Returns or sets the second curve used to create the combined
-                |     curve.
-                |     Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
-                |     BiDimFeatEdge.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in secondCurve the second curve used to
-                |          create
-                |          the combined curve hybCombCurve.
-                |          
-                | 
-                |          Dim secondCurve As CATIAReference
-                |          Set secondCurve = hybCombCurve.Elem2
+                Property Elem2() As Reference
+                    Returns or sets the second curve used to create the combined
+                    curve.
+                    Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
+                    BiDimFeatEdge.
+                
+                    Example:
+                
+                         This example retrieves in secondCurve the second curve used to
+                         create
+                         the combined curve hybCombCurve.
+                         
+                
+                         Dim secondCurve As CATIAReference
+                         Set secondCurve = hybCombCurve.Elem2
 
         :return: Reference
         """
@@ -185,24 +185,24 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property NearestSolution() As long
-                |     Returns or sets whether the combined curve is or should be created as the
-                |     curve closest to the first curve.
-                |     Role: The nearest solution indicates whether the created combined curve is
-                |     the one closest to the first curve if there are several possible combined
-                |     curves, or if all these possible combined curves are
-                |     created..
-                |     Legal values: 0 for the nearest solution and 1 for all possible
-                |     solutions.
-                | 
-                |     Example:
-                | 
-                |          This example sets the nearest solution mode to create the combined
-                |          curve
-                |          hybCombCurve closest to the first curve.
-                |          
-                | 
-                |          hybCombCurve.NearestSolution = 1
+                Property NearestSolution() As long
+                    Returns or sets whether the combined curve is or should be created as the
+                    curve closest to the first curve.
+                    Role: The nearest solution indicates whether the created combined curve is
+                    the one closest to the first curve if there are several possible combined
+                    curves, or if all these possible combined curves are
+                    created..
+                    Legal values: 0 for the nearest solution and 1 for all possible
+                    solutions.
+                
+                    Example:
+                
+                         This example sets the nearest solution mode to create the combined
+                         curve
+                         hybCombCurve closest to the first curve.
+                         
+                
+                         hybCombCurve.NearestSolution = 1
 
         :return: int
         """
@@ -223,26 +223,26 @@ class HybridShapeCombine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SolutionTypeCombine() As long
-                |     Returns or sets whether the curves that create the combined curve are or
-                |     should be extruded along normals to the curve planes or along given
-                |     directions.
-                |     Role: The curves that make up the combined curve are each extruded along a
-                |     direction. This direction can be the normal to the curve plane, or can be set
-                |     to a given direction. This is valid for the two curves
-                |     altogether.
-                |     Legal values: 0 for the normal to the curve planes (default mode), 1 for
-                |     given directions
-                | 
-                |     Example:
-                | 
-                |          This example sets that the combined curve hybCombCurve should be
-                |          created
-                |          by extruding the two curves along the normals to their
-                |          planes.
-                |          
-                | 
-                |          hybCombCurve.SolutionTypeCombine = 0
+                Property SolutionTypeCombine() As long
+                    Returns or sets whether the curves that create the combined curve are or
+                    should be extruded along normals to the curve planes or along given
+                    directions.
+                    Role: The curves that make up the combined curve are each extruded along a
+                    direction. This direction can be the normal to the curve plane, or can be set
+                    to a given direction. This is valid for the two curves
+                    altogether.
+                    Legal values: 0 for the normal to the curve planes (default mode), 1 for
+                    given directions
+                
+                    Example:
+                
+                         This example sets that the combined curve hybCombCurve should be
+                         created
+                         by extruding the two curves along the normals to their
+                         planes.
+                         
+                
+                         hybCombCurve.SolutionTypeCombine = 0
 
         :return: int
         """

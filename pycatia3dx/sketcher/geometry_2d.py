@@ -16,15 +16,15 @@ class Geometry2D(GeometricElement):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         Geometry2D
-                | 
-                | 2D wireframe geometric element.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        Geometry2D
+                
+                2D wireframe geometric element.
     
     """
 
@@ -38,13 +38,13 @@ class Geometry2D(GeometricElement):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Construction() As boolean
-                |     Returns or Sets the construction mode of the 2D geometry.
-                | 
-                |     Parameters:
-                | 
-                |         oConstruction
-                |             The boolean to activate the construction mode.
+                Property Construction() As boolean
+                    Returns or Sets the construction mode of the 2D geometry.
+                
+                    Parameters:
+                
+                        oConstruction
+                            The boolean to activate the construction mode.
 
         :return: bool
         """
@@ -65,13 +65,13 @@ class Geometry2D(GeometricElement):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ReportName() As long
-                |     Returns or Sets the report name of the 2D geometry.
-                | 
-                |     Parameters:
-                | 
-                |         oReportName
-                |             The integer value of the report name
+                Property ReportName() As long
+                    Returns or Sets the report name of the 2D geometry.
+                
+                    Parameters:
+                
+                        oReportName
+                            The integer value of the report name
 
         :return: int
         """

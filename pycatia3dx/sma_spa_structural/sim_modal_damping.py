@@ -18,14 +18,14 @@ class SimModalDamping(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimModalDamping
-                | 
-                | Represents the Modal Damping object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimModalDamping
+                
+                Represents the Modal Damping object.
     
     """
 
@@ -39,8 +39,8 @@ class SimModalDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingType() As SimModalDampingDampingType
-                |     Returns or sets the damping type.
+                Property DampingType() As SimModalDampingDampingType
+                    Returns or sets the damping type.
 
         :return: SimModalDampingDampingType
         """
@@ -61,8 +61,8 @@ class SimModalDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the modal damping behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the modal damping behavior.
 
         :return: SimTable
         """
@@ -74,18 +74,18 @@ class SimModalDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimModalDampingTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the modal damping
-                |     behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimModalDampingTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the modal damping
+                    behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

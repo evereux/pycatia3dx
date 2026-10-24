@@ -20,15 +20,15 @@ class Walls(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Walls
-                | 
-                | Object for Walls.
-                | To retrieve a wall from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Walls
+                
+                Object for Walls.
+                To retrieve a wall from collection.
     
     """
 
@@ -41,32 +41,32 @@ class Walls(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Wall
-                |     Retrieves a Wall from the collection of Wall.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Wall 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Wall from the list of
-                |              walls
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim MyAGTRoot As AGTRoot
-                |              Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              'Get a second wall from the list of wall by index
-                |              Dim WallByIndex As Wall
-                |              Set WallByIndex = MyAGTRoot.Walls.Item(2)
-                |              'Get a wall named "MyWall.2" from the list of wall by
-                |              name
-                |              Dim WallByName As Wall
-                |              Set WallByName = MyAGTRoot.Walls.Item("MyWall.2")
+                Func Item(CATVariant iIndex) As Wall
+                    Retrieves a Wall from the collection of Wall.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Wall 
+                
+                    Example:
+                
+                
+                             This example retrieves Wall from the list of
+                             walls
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim MyAGTRoot As AGTRoot
+                             Set MyAGTRoot = myPart.GetItem("CATAGTRoot")
+                             'Get a second wall from the list of wall by index
+                             Dim WallByIndex As Wall
+                             Set WallByIndex = MyAGTRoot.Walls.Item(2)
+                             'Get a wall named "MyWall.2" from the list of wall by
+                             name
+                             Dim WallByName As Wall
+                             Set WallByName = MyAGTRoot.Walls.Item("MyWall.2")
 
         :param CATVariant i_index:
         :return: Wall

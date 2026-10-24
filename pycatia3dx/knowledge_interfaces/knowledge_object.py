@@ -18,14 +18,14 @@ class KnowledgeObject(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeObject
-                | 
-                | Interface to access a CATIAKnowledgeObject.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeObject
+                
+                Interface to access a CATIAKnowledgeObject.
     
     """
 
@@ -39,9 +39,9 @@ class KnowledgeObject(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Hidden() As boolean
-                |     Returns or sets whether the relation is hidden or should be hidden or
-                |     not.
+                Property Hidden() As boolean
+                    Returns or sets whether the relation is hidden or should be hidden or
+                    not.
 
         :return: bool
         """
@@ -62,9 +62,9 @@ class KnowledgeObject(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property IsConst() As boolean
-                |     Returns or sets whether the relation is Const or should be Const or
-                |     not.
+                Property IsConst() As boolean
+                    Returns or sets whether the relation is Const or should be Const or
+                    not.
 
         :return: bool
         """

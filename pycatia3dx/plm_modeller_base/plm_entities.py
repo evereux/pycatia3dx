@@ -20,14 +20,14 @@ class PLMEntities(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     PLMEntities
-                | 
-                | A collection of PLM Entity objects.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    PLMEntities
+                
+                A collection of PLM Entity objects.
     
     """
 
@@ -40,20 +40,20 @@ class PLMEntities(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As PLMEntity
-                |     Returns a PLM Entity object from its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             Index of the PLMEntity to retrieve from the collection of
-                |             PLMEntities. As a numerics, this index is the rank of the PLMEntity in the
-                |             collection. The index of the first PLMEntity in the collection is 1, and the
-                |             index of the last PLMEntity is returned by Collection.get_Count method.
-                |             
-                | 
-                |     Returns:
-                |         Retrieved PLMEntity.
+                Func Item(CATVariant iIndex) As PLMEntity
+                    Returns a PLM Entity object from its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            Index of the PLMEntity to retrieve from the collection of
+                            PLMEntities. As a numerics, this index is the rank of the PLMEntity in the
+                            collection. The index of the first PLMEntity in the collection is 1, and the
+                            index of the last PLMEntity is returned by Collection.get_Count method.
+                            
+                
+                    Returns:
+                        Retrieved PLMEntity.
 
         :param CATVariant i_index:
         :return: PLMEntity

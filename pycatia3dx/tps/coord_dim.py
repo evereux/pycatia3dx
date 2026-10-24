@@ -17,12 +17,12 @@ class CoordDim(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CoordDim
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CoordDim
 
     
     """
@@ -36,8 +36,8 @@ class CoordDim(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingCoordDim
-                |     Retrieves Drafting Coordinate dimension. 
+                Func Get2dAnnot() As DrawingCoordDim
+                    Retrieves Drafting Coordinate dimension. 
 
         :return: DrawingCoordDim
         """

@@ -17,14 +17,14 @@ class SrsBoundingBox(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsBoundingBox
-                | 
-                | Object for SrsBoundingBox.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsBoundingBox
+                
+                Object for SrsBoundingBox.
     
     """
 
@@ -37,23 +37,23 @@ class SrsBoundingBox(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetMathBox(CATSafeArrayVariant oMathBox)
-                |     Get MathBox to a bounding box feature.
+                Sub GetMathBox(CATSafeArrayVariant oMathBox)
+                    Get MathBox to a bounding box feature.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oMathBox
-                |             bounding box which limits the space where the refence planes exist.
-                |
-                |
-                |     Example:
+                        oMathBox
+                            bounding box which limits the space where the refence planes exist.
                 |
                 |
-                |              This example retrieves the bounding box feature.
+                    Example:
                 |
                 |
-                |               Dim oMathBox(5) As Variant
-                |               ObjSrsBoundingBox.GetMathBox oMathBox.
+                             This example retrieves the bounding box feature.
+                |
+                |
+                              Dim oMathBox(5) As Variant
+                              ObjSrsBoundingBox.GetMathBox oMathBox.
 
         :return: tuple
         """
@@ -80,21 +80,21 @@ class SrsBoundingBox(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAftAtOrigin() As boolean
-                |     Gets the orientation of a shape representation of a ship.
-                | 
-                |     Returns:
-                |         The orientation of the bounding box (TRUE means that orientation is the
-                |         same as direction) 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the shape representation of a
-                |              ship.
-                |              
-                | 
-                |               Dim BoolIsAftAtOrigin As Boolean
-                |               BoolIsAftAtOrigin = ObjSrsBoundingBox.IsAftAtOrigin
+                Func IsAftAtOrigin() As boolean
+                    Gets the orientation of a shape representation of a ship.
+                
+                    Returns:
+                        The orientation of the bounding box (TRUE means that orientation is the
+                        same as direction) 
+                    Example:
+                
+                
+                             This example retrieves the shape representation of a
+                             ship.
+                             
+                
+                              Dim BoolIsAftAtOrigin As Boolean
+                              BoolIsAftAtOrigin = ObjSrsBoundingBox.IsAftAtOrigin
 
         :return: bool
         """

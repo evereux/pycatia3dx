@@ -17,14 +17,14 @@ class SimVectorField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimVectorField
-                | 
-                | Represents the Vector Field object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimVectorField
+                
+                Represents the Vector Field object.
     
     """
 
@@ -38,8 +38,8 @@ class SimVectorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As SimVectorFieldVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As SimVectorFieldVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -59,20 +59,20 @@ class SimVectorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetVectorComponents(double oXComp,double oYComp,double
-                | oZComp)
-                |     Retrieves the vector components.
-                |     Only applicable when the variation type is set to
-                |     SimVectorFieldUniform.
-                | 
-                |     Parameters:
-                | 
-                |         oXComp[out]
-                |             X component of the vector. 
-                |         oYComp[out]
-                |             Y component of the vector. 
-                |         oZComp[out]
-                |             Z component of the vector.
+                Sub GetVectorComponents(double oXComp,double oYComp,double
+                oZComp)
+                    Retrieves the vector components.
+                    Only applicable when the variation type is set to
+                    SimVectorFieldUniform.
+                
+                    Parameters:
+                
+                        oXComp[out]
+                            X component of the vector. 
+                        oYComp[out]
+                            Y component of the vector. 
+                        oZComp[out]
+                            Z component of the vector.
 
         :param float o_x_comp:
         :param float o_y_comp:
@@ -86,20 +86,20 @@ class SimVectorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetVectorComponents(double iXComp,double iYComp,double
-                | iZComp)
-                |     Sets the vector components.
-                |     Only applicable when the variation type is set to
-                |     SimVectorFieldUniform.
-                | 
-                |     Parameters:
-                | 
-                |         iXComp[in]
-                |             X component of the vector. 
-                |         iYComp[in]
-                |             Y component of the vector. 
-                |         iZComp[in]
-                |             Z component of the vector. 
+                Sub SetVectorComponents(double iXComp,double iYComp,double
+                iZComp)
+                    Sets the vector components.
+                    Only applicable when the variation type is set to
+                    SimVectorFieldUniform.
+                
+                    Parameters:
+                
+                        iXComp[in]
+                            X component of the vector. 
+                        iYComp[in]
+                            Y component of the vector. 
+                        iZComp[in]
+                            Z component of the vector. 
 
         :param float i_x_comp:
         :param float i_y_comp:

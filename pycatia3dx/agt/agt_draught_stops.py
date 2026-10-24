@@ -20,15 +20,15 @@ class AGTDraughtStops(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AGTDraughtStops
-                | 
-                | Object for AGTDraughtStops.
-                | To retrieve DraughtStop from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AGTDraughtStops
+                
+                Object for AGTDraughtStops.
+                To retrieve DraughtStop from collection.
     
     """
 
@@ -41,32 +41,32 @@ class AGTDraughtStops(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AGTDraughtStop
-                |     Retrieves a DraughtStop from the collection of
-                |     DraughtStop.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of DraughtStop. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ThisDraughtStop the second DraughtStop,
-                |              
-                |              and in ThisDraughtStop the DraughtStop named MyDraughtStop.2 in
-                |              the DraughtStop collection. 
-                |              
-                | 
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim ThisAGTRoot As AGTRoot
-                |              Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              Dim ThisDraughtStop As AGTDraughtStop
-                |              Set ThisDraughtStop = ThisAGTRoot.DraughtStops.Item(2)
-                |              Dim ThisDraughtStop As AGTDraughtStop
-                |              Set ThisDraughtStop = ThisAGTRoot.DraughtStops.Item("MyDraughtStop.2")
+                Func Item(CATVariant iIndex) As AGTDraughtStop
+                    Retrieves a DraughtStop from the collection of
+                    DraughtStop.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of DraughtStop. 
+                
+                    Example:
+                
+                
+                             This example retrieves in ThisDraughtStop the second DraughtStop,
+                             
+                             and in ThisDraughtStop the DraughtStop named MyDraughtStop.2 in
+                             the DraughtStop collection. 
+                             
+                
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim ThisAGTRoot As AGTRoot
+                             Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
+                             Dim ThisDraughtStop As AGTDraughtStop
+                             Set ThisDraughtStop = ThisAGTRoot.DraughtStops.Item(2)
+                             Dim ThisDraughtStop As AGTDraughtStop
+                             Set ThisDraughtStop = ThisAGTRoot.DraughtStops.Item("MyDraughtStop.2")
 
         :param CATVariant i_index:
         :return: AGTDraughtStop

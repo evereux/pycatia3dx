@@ -17,17 +17,17 @@ class CtmSafePath(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmSafePath
-                | 
-                | Interface representing a Path.
-                | 
-                | Role: This interface is used to see if a path is an Approach or
-                | Departure.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmSafePath
+                
+                Interface representing a Path.
+                
+                Role: This interface is used to see if a path is an Approach or
+                Departure.
     
     """
 
@@ -40,35 +40,35 @@ class CtmSafePath(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub IsApproach(boolean oApproach)
-                |     Validates type of safe path
-                | 
-                |     Parameters:
-                | 
-                |         oApproach
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
-                |         Legal values:
-                | 
-                |         TRUE
-                |             The safe path is an approach path.
-                |         FALSE
-                |             The safe path is not an approach path.
-                | 
-                |     Example:
-                | 
-                |          Dim oCurveTrajectory As CurveTrajectory
-                |                ........
-                |          Dim oApproach
-                |          Call oCurveTrajectory.GetApproach(oApproach)
-                |          If oApproach Is Nothing Then
-                |          Call oCurveTrajectory.CreateApproach(oApproach)
-                |          End If
-                |          Dim oPath As CtmSafePath
-                |          Set oPath = oApproach
-                |          Dim oBool As Boolean
-                |          Call oPath.IsApproach(oBool)
+                Sub IsApproach(boolean oApproach)
+                    Validates type of safe path
+                
+                    Parameters:
+                
+                        oApproach
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
+                        Legal values:
+                
+                        TRUE
+                            The safe path is an approach path.
+                        FALSE
+                            The safe path is not an approach path.
+                
+                    Example:
+                
+                         Dim oCurveTrajectory As CurveTrajectory
+                               ........
+                         Dim oApproach
+                         Call oCurveTrajectory.GetApproach(oApproach)
+                         If oApproach Is Nothing Then
+                         Call oCurveTrajectory.CreateApproach(oApproach)
+                         End If
+                         Dim oPath As CtmSafePath
+                         Set oPath = oApproach
+                         Dim oBool As Boolean
+                         Call oPath.IsApproach(oBool)
 
         :param bool o_approach:
         :return: None
@@ -80,35 +80,35 @@ class CtmSafePath(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub IsDeparture(boolean oDepart)
-                |     Validates type of safe path
-                | 
-                |     Parameters:
-                | 
-                |         oDepart
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
-                |         Legal values:
-                | 
-                |         TRUE
-                |             The safe path is an departure path.
-                |         FALSE
-                |             The safe path is not a departure path.
-                | 
-                |     Example:
-                | 
-                |          Dim oCurveTrajectory As CurveTrajectory
-                |                ........
-                |          Dim oApproach
-                |          Call oCurveTrajectory.GetApproach(oApproach)
-                |          If oApproach Is Nothing Then
-                |          Call oCurveTrajectory.CreateApproach(oApproach)
-                |          End If
-                |          Dim oPath As CtmSafePath
-                |          Set oPath = oApproach
-                |          Dim oBool As Boolean
-                |          Call oPath.IsDeparture(oBool)
+                Sub IsDeparture(boolean oDepart)
+                    Validates type of safe path
+                
+                    Parameters:
+                
+                        oDepart
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
+                        Legal values:
+                
+                        TRUE
+                            The safe path is an departure path.
+                        FALSE
+                            The safe path is not a departure path.
+                
+                    Example:
+                
+                         Dim oCurveTrajectory As CurveTrajectory
+                               ........
+                         Dim oApproach
+                         Call oCurveTrajectory.GetApproach(oApproach)
+                         If oApproach Is Nothing Then
+                         Call oCurveTrajectory.CreateApproach(oApproach)
+                         End If
+                         Dim oPath As CtmSafePath
+                         Set oPath = oApproach
+                         Dim oBool As Boolean
+                         Call oPath.IsDeparture(oBool)
 
         :param bool o_depart:
         :return: None

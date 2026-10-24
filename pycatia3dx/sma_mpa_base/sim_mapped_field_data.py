@@ -20,14 +20,14 @@ class SimMappedFieldData(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMappedFieldData
-                | 
-                | Represents the Mapped Field Data object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMappedFieldData
+                
+                Represents the Mapped Field Data object.
     
     """
 
@@ -41,8 +41,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -55,10 +55,10 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoundaryTolerance() As double
-                |     Returns or sets the boundary tolerance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property BoundaryTolerance() As double
+                    Returns or sets the boundary tolerance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -79,8 +79,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DataSourceType() As SimMappedFieldDataDataSourceType
-                |     Returns or sets the data source type.
+                Property DataSourceType() As SimMappedFieldDataDataSourceType
+                    Returns or sets the data source type.
 
         :return: int
         """
@@ -101,10 +101,10 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NegativeNormalDistance() As double
-                |     Returns or sets the negative normal distance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property NegativeNormalDistance() As double
+                    Returns or sets the negative normal distance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -125,10 +125,10 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NeighborhoodTolerance() As double
-                |     Returns or sets the neighborhood tolerance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property NeighborhoodTolerance() As double
+                    Returns or sets the neighborhood tolerance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -149,10 +149,10 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositiveNormalDistance() As double
-                |     Returns or sets the positive normal distance. If tolerance type is set to
-                |     Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
-                |     Quantity: LENGTH, units: m
+                Property PositiveNormalDistance() As double
+                    Returns or sets the positive normal distance. If tolerance type is set to
+                    Relative: Quantity: Real, units: none If tolerance type is set to Absolute:
+                    Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -173,8 +173,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the field data table.
+                Property Table() As SimTable (Read Only)
+                    Returns the field data table.
 
         :return: SimTable
         """
@@ -187,8 +187,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToleranceType() As SimMappedFieldDataToleranceType
-                |     Returns or sets the tolerance type.
+                Property ToleranceType() As SimMappedFieldDataToleranceType
+                    Returns or sets the tolerance type.
 
         :return: int
         """
@@ -209,8 +209,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UnmappedValue() As double
-                |     Returns or sets the field value outside the mapped region.
+                Property UnmappedValue() As double
+                    Returns or sets the field value outside the mapped region.
 
         :return: float
         """
@@ -231,8 +231,8 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VPMDocument() As CATBaseDispatch
-                |     Returns or sets the VPM document.
+                Property VPMDocument() As CATBaseDispatch
+                    Returns or sets the VPM document.
 
         :return: AnyObject
         """
@@ -252,18 +252,18 @@ class SimMappedFieldData(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimMappedFieldDataTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the field data table. Only applicable when
-                |     the Data Source Type is set to Table.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimMappedFieldDataTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the field data table. Only applicable when
+                    the Data Source Type is set to Table.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

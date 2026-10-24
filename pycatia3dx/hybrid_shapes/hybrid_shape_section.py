@@ -18,20 +18,20 @@ class HybridShapeSection(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeSection
-                | 
-                | Interface to hybrid shape section feature.
-                | Role: Allows you to access data of the Hybrid Shape Section
-                | feature.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewSection
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeSection
+                
+                Interface to hybrid shape section feature.
+                Role: Allows you to access data of the Hybrid Shape Section
+                feature.
+                
+                See also:
+                    HybridShapeFactory.AddNewSection
     
     """
 
@@ -45,20 +45,20 @@ class HybridShapeSection(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SectionPlane() As Reference
-                |     Returns or sets the section plane..
-                | 
-                |     Parameters:
-                | 
-                |         oPlane
-                |             The section oPlane
-                | 
-                |             Example:
-                |                 This example retrieves in RefPlane the plane of the
-                |                 section
-                | 
-                |                  Dim RefPlane As Reference 
-                |                  Set RefPlane = HybridShapeSection.SectionPlane
+                Property SectionPlane() As Reference
+                    Returns or sets the section plane..
+                
+                    Parameters:
+                
+                        oPlane
+                            The section oPlane
+                
+                            Example:
+                                This example retrieves in RefPlane the plane of the
+                                section
+                
+                                 Dim RefPlane As Reference 
+                                 Set RefPlane = HybridShapeSection.SectionPlane
 
         :return: Reference
         """

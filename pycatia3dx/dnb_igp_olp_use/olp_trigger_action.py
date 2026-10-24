@@ -17,17 +17,17 @@ class OLPTriggerAction(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpTriggerAction
-                | 
-                | A trigger action.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpTriggerAction
+                
+                A trigger action.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -41,9 +41,9 @@ class OLPTriggerAction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Get the action type.
-                |     Valid types are "GunActivate", "SetParam" and "SetVar" 
+                Property Type() As CATBSTR (Read Only)
+                    Get the action type.
+                    Valid types are "GunActivate", "SetParam" and "SetVar" 
 
         :return: str
         """

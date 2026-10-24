@@ -17,15 +17,15 @@ class ManufacturingContours(ManufacturingAgregate):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningUseItf.ManufacturingAgregate
-                |                         ManufacturingContours
-                | 
-                | Interface to represent the features of type contour.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningUseItf.ManufacturingAgregate
+                                        ManufacturingContours
+                
+                Interface to represent the features of type contour.
     
     """
 
@@ -38,19 +38,19 @@ class ManufacturingContours(ManufacturingAgregate):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddElement(AnyObject iMember,long iNotify)
-                |     Adds an element in the aggregate.
-                | 
-                |     Parameters:
-                | 
-                |         iMember
-                |             The element to add 
-                |         iNotify
-                |             The flag to indicate whether an event is sent.
-                |             Legal values:
-                | 
-                |                 = 1 : an event is sent to notify the change
-                |                 other value : no event sent
+                Sub AddElement(AnyObject iMember,long iNotify)
+                    Adds an element in the aggregate.
+                
+                    Parameters:
+                
+                        iMember
+                            The element to add 
+                        iNotify
+                            The flag to indicate whether an event is sent.
+                            Legal values:
+                
+                                = 1 : an event is sent to notify the change
+                                other value : no event sent
 
         :param AnyObject i_member:
         :param int i_notify:

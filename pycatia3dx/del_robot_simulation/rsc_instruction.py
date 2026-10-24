@@ -18,17 +18,17 @@ class RscInstruction(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscInstruction
-                | 
-                | Interface representing a Resource Instruction.
-                | 
-                | Role: This interface represents a Resource Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscInstruction
+                
+                Interface representing a Resource Instruction.
+                
+                Role: This interface represents a Resource Instruction in a Resource
+                Task
     
     """
 
@@ -42,27 +42,27 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FatherInstruction() As RscInstruction (Read Only)
-                |     Retrieve the Father Sequence.
-                | 
-                |     Returns:
-                |         oFatherInstr The returned Father Sequence. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim FatherInstruction As RscInstruction
-                |            Set FatherInstruction = oInstr.FatherInstruction
+                Property FatherInstruction() As RscInstruction (Read Only)
+                    Retrieve the Father Sequence.
+                
+                    Returns:
+                        oFatherInstr The returned Father Sequence. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim FatherInstruction As RscInstruction
+                           Set FatherInstruction = oInstr.FatherInstruction
 
         :return: RscInstruction
         """
@@ -75,27 +75,27 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GotoInstructions() As CATSafeArrayVariant (Read Only)
-                |     Get all Goto instruction pointing to this label.
-                | 
-                |     Returns:
-                |         oList The list of instructions. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim GotoInstructions
-                |            GotoInstructions = oInstr.GotoInstructions
+                Property GotoInstructions() As CATSafeArrayVariant (Read Only)
+                    Get all Goto instruction pointing to this label.
+                
+                    Returns:
+                        oList The list of instructions. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim GotoInstructions
+                           GotoInstructions = oInstr.GotoInstructions
 
         :return: tuple
         """
@@ -108,27 +108,27 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Index() As short (Read Only)
-                |     Retrieve the index in the father Sequence.
-                | 
-                |     Returns:
-                |         oIndex The returned Index. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim Index
-                |            Index = oInstr.Index
+                Property Index() As short (Read Only)
+                    Retrieve the index in the father Sequence.
+                
+                    Returns:
+                        oIndex The returned Index. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim Index
+                           Index = oInstr.Index
 
         :return: int
         """
@@ -141,35 +141,35 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Label() As CATBSTR
-                |     Get/Set the label associated to this instruction.
-                |     Role: label are target of Goto instruction
-                | 
-                |     Returns:
-                |         oLabel The label 
-                |     Parameters:
-                | 
-                |         iLabel
-                |             The label 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            ......
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim sLabel
-                |            sLabel = oInstr.Label
-                |            ......
-                |            oInstr.Label = sLabel
+                Property Label() As CATBSTR
+                    Get/Set the label associated to this instruction.
+                    Role: label are target of Goto instruction
+                
+                    Returns:
+                        oLabel The label 
+                    Parameters:
+                
+                        iLabel
+                            The label 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           ......
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim sLabel
+                           sLabel = oInstr.Label
+                           ......
+                           oInstr.Label = sLabel
 
         :return: str
         """
@@ -189,35 +189,35 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDataEntityFromName(CATBSTR iName) As RscDataEntity
-                |     Retrieve a data entity from its name.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the data entity that is visible from the current
-                |             instruction. 
-                | 
-                |     Returns:
-                |         oEntity The retrieved data entity. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim iName
-                |            ...
-                |            Dim oEntity As RscDataEntity
-                |            Set  oEntity= oInstr.GetDataEntityFromName(iName)
+                Func GetDataEntityFromName(CATBSTR iName) As RscDataEntity
+                    Retrieve a data entity from its name.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the data entity that is visible from the current
+                            instruction. 
+                
+                    Returns:
+                        oEntity The retrieved data entity. 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim iName
+                           ...
+                           Dim oEntity As RscDataEntity
+                           Set  oEntity= oInstr.GetDataEntityFromName(iName)
 
         :param str i_name:
         :return: RscDataEntity
@@ -229,40 +229,40 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Move(DELRscMoveParameter iParam)
-                |     Move the current instruction in the parent sequence.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The move parameter. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            ResourceSequence = oResourceTask.RscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim iParam As DELRscMoveParameter
-                |            Set iParam = DELRscMoveParameter_Forward
-                |            ...
-                |            Call  oInstr.Move(iParam)
-                |            
-                | 
-                | 
-                |          
-                |          
-                | 
-                |     See also:
-                |         DELRscMoveParameter
+                Sub Move(DELRscMoveParameter iParam)
+                    Move the current instruction in the parent sequence.
+                
+                    Parameters:
+                
+                        iParam
+                            The move parameter. 
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           ResourceSequence = oResourceTask.RscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim iParam As DELRscMoveParameter
+                           Set iParam = DELRscMoveParameter_Forward
+                           ...
+                           Call  oInstr.Move(iParam)
+                           
+                
+                
+                         
+                         
+                
+                    See also:
+                        DELRscMoveParameter
 
         :param int i_param:
         :return: None
@@ -274,39 +274,39 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MoveToOtherSequence(RscInstruction iInSequence,short
-                | iIndex)
-                |     Move the current instruction in a target sequence.
-                |     Note:The target sequence must be in the same Task as the current
-                |     instruction
-                | 
-                |     Parameters:
-                | 
-                |         iInSequence
-                |             The target sequence. 
-                |         iIndex
-                |             The index in the sequence where to move the instruction.
-                |             
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Dim iInSequence
-                |            Dim iIndex
-                |            ...
-                |            Call 
-                |            oInstr.MoveToOtherSequence(iInSequence,iIndex)
+                Sub MoveToOtherSequence(RscInstruction iInSequence,short
+                iIndex)
+                    Move the current instruction in a target sequence.
+                    Note:The target sequence must be in the same Task as the current
+                    instruction
+                
+                    Parameters:
+                
+                        iInSequence
+                            The target sequence. 
+                        iIndex
+                            The index in the sequence where to move the instruction.
+                            
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Dim iInSequence
+                           Dim iIndex
+                           ...
+                           Call 
+                           oInstr.MoveToOtherSequence(iInSequence,iIndex)
 
         :param RscInstruction i_in_sequence:
         :param int i_index:
@@ -319,24 +319,24 @@ class RscInstruction(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveLabel()
-                |     Remove the label associated to this instruction.
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim oInstructions
-                |            oInstructions = ResourceSequence.Instructions
-                |            
-                |            Dim oInstr As RscInstruction
-                |            Set oInstr = oInstructions(0)
-                |            Call  oInstr.RemoveLabel()
+                Sub RemoveLabel()
+                    Remove the label associated to this instruction.
+                
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim oInstructions
+                           oInstructions = ResourceSequence.Instructions
+                           
+                           Dim oInstr As RscInstruction
+                           Set oInstr = oInstructions(0)
+                           Call  oInstr.RemoveLabel()
 
         :return: None
         """

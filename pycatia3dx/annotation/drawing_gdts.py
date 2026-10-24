@@ -20,15 +20,15 @@ class DrawingGDTs(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     DrawingGDTs
-                | 
-                | A collection of all the drawing GDTs currently managed by a drawing view of
-                | drawing sheet in a drawing document.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    DrawingGDTs
+                
+                A collection of all the drawing GDTs currently managed by a drawing view of
+                drawing sheet in a drawing document.
     
     """
 
@@ -49,31 +49,31 @@ class DrawingGDTs(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(double iPositionLeaderX,double iPositionLeaderY,double
-                | iPositionX,double iPositionY,long iGDTSymbol,CATBSTR iText) As
-                | DrawingGDT
-                |     Creates a drawing GDT and adds it to the drawing GDTs collection. This
-                |     drawing GDT becomes the active one.
-                | 
-                |     Parameters:
-                | 
-                |         iPositionLeaderX,
-                |             iPositionLeaderY The drawing leader of the GDT x and y coordinates,
-                |             expressed in millimeters, and expressed with respect to the view coordinate
-                |             system 
-                |         iPositionX,
-                |             iPositionY The drawing GDT x and y coordinates, expressed in
-                |             millimeters, and expressed with respect to the view coordinate system
-                |             
-                |         iGDTSymbol
-                |             The symbol to use in the first row. 
-                | 
-                |     See also:
-                |         CATIADrawingGDT::GetToleranceType
-                |     Parameters:
-                | 
-                |         iText
-                |             The text of the iGDTSymbol
+                Func Add(double iPositionLeaderX,double iPositionLeaderY,double
+                iPositionX,double iPositionY,long iGDTSymbol,CATBSTR iText) As
+                DrawingGDT
+                    Creates a drawing GDT and adds it to the drawing GDTs collection. This
+                    drawing GDT becomes the active one.
+                
+                    Parameters:
+                
+                        iPositionLeaderX,
+                            iPositionLeaderY The drawing leader of the GDT x and y coordinates,
+                            expressed in millimeters, and expressed with respect to the view coordinate
+                            system 
+                        iPositionX,
+                            iPositionY The drawing GDT x and y coordinates, expressed in
+                            millimeters, and expressed with respect to the view coordinate system
+                            
+                        iGDTSymbol
+                            The symbol to use in the first row. 
+                
+                    See also:
+                        CATIADrawingGDT::GetToleranceType
+                    Parameters:
+                
+                        iText
+                            The text of the iGDTSymbol
 
         :param float i_position_leader_x:
         :param float i_position_leader_y:
@@ -99,30 +99,30 @@ class DrawingGDTs(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As DrawingGDT
-                |     Returns a drawing GDT using its index from the drawing GDTs
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the drawing GDT to retrieve from the collection of
-                |             drawing GDTs. As a numerics, this index is the rank of the drawing GDT in the
-                |             collection. The index of the first drawing GDT in the collection is 1, and the
-                |             index of the last drawing GDT is Count. 
-                | 
-                |     Returns:
-                |         The retrieved drawing GDT 
-                | 
-                | Example:
-                |     This example retrieves in ThisDrawingGDT the second drawing GDT, in the
-                |     drawing GDT collection of the active view in the active sheet, in the active
-                |     document supposed to be a drawing document.
-                | 
-                |      Dim MyView  As DrawingView
-                |      Set MyView  = MySheet.Views.ActiveView
-                |      Dim ThisDrawingGDT As DrawingGDT
-                |      Set ThisDrawingGDT = MyView.GDTs.Item(2)
+                Func Item(CATVariant iIndex) As DrawingGDT
+                    Returns a drawing GDT using its index from the drawing GDTs
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the drawing GDT to retrieve from the collection of
+                            drawing GDTs. As a numerics, this index is the rank of the drawing GDT in the
+                            collection. The index of the first drawing GDT in the collection is 1, and the
+                            index of the last drawing GDT is Count. 
+                
+                    Returns:
+                        The retrieved drawing GDT 
+                
+                Example:
+                    This example retrieves in ThisDrawingGDT the second drawing GDT, in the
+                    drawing GDT collection of the active view in the active sheet, in the active
+                    document supposed to be a drawing document.
+                
+                     Dim MyView  As DrawingView
+                     Set MyView  = MySheet.Views.ActiveView
+                     Dim ThisDrawingGDT As DrawingGDT
+                     Set ThisDrawingGDT = MyView.GDTs.Item(2)
 
         :param CATVariant i_index:
         :return: DrawingGDT
@@ -134,25 +134,25 @@ class DrawingGDTs(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a drawing GDT from the drawing GDTs collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the drawing GDT to remove from the collection of
-                |             drawing GDTs. As a numerics, this index is the rank of the drawing GDTs in the
-                |             collection. The index of the first drawing GDT in the collection is 1, and the
-                |             index of the last drawing GDT is Count. 
-                | 
-                |     Example:
-                |         The following example removes the third drawing GDT from the drawing
-                |         GDT collection of the active view of the active document, supposed to be a
-                |         drawing document.
-                | 
-                |          Dim MyView As DrawingView
-                |          Set MyView  = MySheet.Views.ActiveView
-                |          MyView.GDTs.Remove(3)
+                Sub Remove(CATVariant iIndex)
+                    Removes a drawing GDT from the drawing GDTs collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the drawing GDT to remove from the collection of
+                            drawing GDTs. As a numerics, this index is the rank of the drawing GDTs in the
+                            collection. The index of the first drawing GDT in the collection is 1, and the
+                            index of the last drawing GDT is Count. 
+                
+                    Example:
+                        The following example removes the third drawing GDT from the drawing
+                        GDT collection of the active view of the active document, supposed to be a
+                        drawing document.
+                
+                         Dim MyView As DrawingView
+                         Set MyView  = MySheet.Views.ActiveView
+                         MyView.GDTs.Remove(3)
 
         :param CATVariant i_index:
         :return: None

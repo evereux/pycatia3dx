@@ -18,23 +18,23 @@ class OLPWait(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpWait
-                | 
-                | A wait instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This is an instruction that waits for the condition expression to evaluate to
-                | true. If the timeout is enabled and the specified amount of time elapses before
-                | the condition is satisfied, then execution proceeds to the next
-                | instruction. This instruction can also be used as a pure
-                | delay.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpWait
+                
+                A wait instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This is an instruction that waits for the condition expression to evaluate to
+                true. If the timeout is enabled and the specified amount of time elapses before
+                the condition is satisfied, then execution proceeds to the next
+                instruction. This instruction can also be used as a pure
+                delay.
     
     """
 
@@ -48,15 +48,15 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Condition() As OlpAstBranch
-                |     The expression that must evaluate to true before execution
-                |     continues.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation.
+                Property Condition() As OlpAstBranch
+                    The expression that must evaluate to true before execution
+                    continues.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -77,10 +77,10 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConveyorTrackingProfile() As
-                | OlpConveyorTrackingProfile
-                |     Get/Set the conveyor tracking profile associated with the wait instruction
-                |     if this is a conveyor tracking wait.
+                Property ConveyorTrackingProfile() As
+                OlpConveyorTrackingProfile
+                    Get/Set the conveyor tracking profile associated with the wait instruction
+                    if this is a conveyor tracking wait.
 
         :return: OLPConveyorTrackingProfile
         """
@@ -101,9 +101,9 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsConveyorWait() As boolean (Read Only)
-                |     Get/Set whether the wait instruction is waiting for a conveyor to reach a
-                |     certain position.
+                Property IsConveyorWait() As boolean (Read Only)
+                    Get/Set whether the wait instruction is waiting for a conveyor to reach a
+                    certain position.
 
         :return: bool
         """
@@ -116,8 +116,8 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsPureDelay() As boolean (Read Only)
-                |     Indicates if this instruction is used as a pure delay.
+                Property IsPureDelay() As boolean (Read Only)
+                    Indicates if this instruction is used as a pure delay.
 
         :return: bool
         """
@@ -130,9 +130,9 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsSimpleConveyorWait() As boolean (Read Only)
-                |     Get/Set whether the wait instruction is in the simple format waiting for
-                |     the conveyor to reach the inbound offset of the conveyor tracking profile.
+                Property IsSimpleConveyorWait() As boolean (Read Only)
+                    Get/Set whether the wait instruction is in the simple format waiting for
+                    the conveyor to reach the inbound offset of the conveyor tracking profile.
 
         :return: bool
         """
@@ -145,8 +145,8 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeOutExpress() As OlpAstBranch
-                |     Get/Set the timeout value in expression.
+                Property TimeOutExpress() As OlpAstBranch
+                    Get/Set the timeout value in expression.
 
         :return: OLPAstBranch
         """
@@ -167,9 +167,9 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Timeout() As double
-                |     Get/Set the timeout value in seconds.
-                |     Only get the timeout value if UseTimeout is set to True.
+                Property Timeout() As double
+                    Get/Set the timeout value in seconds.
+                    Only get the timeout value if UseTimeout is set to True.
 
         :return: float
         """
@@ -190,10 +190,10 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseTimeout() As boolean
-                |     Get/Set whether the wait instruction uses a timeout.
-                |     If False, then the timeout is effectively infinity and the Timeout property
-                |     should not be retrieved. If True, then the Timeout value is used.
+                Property UseTimeout() As boolean
+                    Get/Set whether the wait instruction uses a timeout.
+                    If False, then the timeout is effectively infinity and the Timeout property
+                    should not be retrieved. If True, then the Timeout value is used.
 
         :return: bool
         """
@@ -213,10 +213,10 @@ class OLPWait(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub MakePureDelay()
-                |     Sets the condition such that this instruction is a pure
-                |     delay.
-                |     After calling this function you should set the delay time using Timeout.
+                Sub MakePureDelay()
+                    Sets the condition such that this instruction is a pure
+                    delay.
+                    After calling this function you should set the delay time using Timeout.
 
         :return: None
         """

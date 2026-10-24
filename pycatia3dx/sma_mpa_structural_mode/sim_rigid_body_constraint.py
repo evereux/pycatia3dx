@@ -17,52 +17,52 @@ class SimRigidBodyConstraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRigidBodyConstraint
-                | 
-                | Represents the Rigid Body Constraint object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimRigidBodyConstraint as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyRigidBodyConstraint As SimRigidBodyConstraint
-                |      Set MyRigidBodyConstraint = MyAbstractions.Add("SimRigidBodyConstraint")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimRigidBodyConstraint
-                |     named "Rigid Body Constraint.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyRigidBodyConstraint As SimRigidBodyConstraint
-                |      Set MyRigidBodyConstraint = MyAbstractions.Item("Rigid Body Constraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimRigidBodyConstraint as following:
-                | 
-                |      ...
-                |      myRigidBodyConstraint = myAbstractions.Add("SimRigidBodyConstraint")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimRigidBodyConstraint named "Rigid Body Constraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      myRigidBodyConstraint = myAbstractions.Item("Rigid Body Constraint.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRigidBodyConstraint
+                
+                Represents the Rigid Body Constraint object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimRigidBodyConstraint as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyRigidBodyConstraint As SimRigidBodyConstraint
+                     Set MyRigidBodyConstraint = MyAbstractions.Add("SimRigidBodyConstraint")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimRigidBodyConstraint
+                    named "Rigid Body Constraint.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyRigidBodyConstraint As SimRigidBodyConstraint
+                     Set MyRigidBodyConstraint = MyAbstractions.Item("Rigid Body Constraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimRigidBodyConstraint as following:
+                
+                     ...
+                     myRigidBodyConstraint = myAbstractions.Add("SimRigidBodyConstraint")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimRigidBodyConstraint named "Rigid Body Constraint.1" as
+                    following:
+                
+                     ...
+                     myRigidBodyConstraint = myAbstractions.Item("Rigid Body Constraint.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,8 +76,8 @@ class SimRigidBodyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PinSupport() As CATBaseDispatch (Read Only)
-                |     Returns the pin node support of the rigid body constraint.
+                Property PinSupport() As CATBaseDispatch (Read Only)
+                    Returns the pin node support of the rigid body constraint.
 
         :return: AnyObject
         """
@@ -90,8 +90,8 @@ class SimRigidBodyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePoint() As SimPoint (Read Only)
-                |     Returns the point object for the reference point.
+                Property ReferencePoint() As SimPoint (Read Only)
+                    Returns the point object for the reference point.
 
         :return: SimPoint
         """
@@ -104,9 +104,9 @@ class SimRigidBodyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePointInputMode() As
-                | SimRigidBodyConstraintReferencePointInputMode
-                |     Returns or sets the location type of the reference point.
+                Property ReferencePointInputMode() As
+                SimRigidBodyConstraintReferencePointInputMode
+                    Returns or sets the location type of the reference point.
 
         :return: int
         """
@@ -127,33 +127,33 @@ class SimRigidBodyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -166,8 +166,8 @@ class SimRigidBodyConstraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TieSupport() As CATBaseDispatch (Read Only)
-                |     Returns the tie node support of the rigid body constraint.
+                Property TieSupport() As CATBaseDispatch (Read Only)
+                    Returns the tie node support of the rigid body constraint.
 
         :return: AnyObject
         """

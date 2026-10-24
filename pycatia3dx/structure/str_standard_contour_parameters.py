@@ -20,14 +20,14 @@ class StrStandardContourParameters(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrStandardContourParameters
-                | 
-                | Object for Standard Contour Parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrStandardContourParameters
+                
+                Object for Standard Contour Parameters.
     
     """
 
@@ -40,26 +40,26 @@ class StrStandardContourParameters(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrParameter
-                |     Returns a standard contour parameter
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the standard contour parameter
-                |             
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first StandardContourParameter from
-                |              the list.
-                |              
-                | 
-                |               Dim ObjStrStandardContourParameters As
-                |               StrStandardContourParameters
-                |               Set ObjStrStandardContourParameters = ObjStrOpeningsMgr.GetStandardContourParms(ContourName)
-                |               Set ObjStrParameter = ObjStrStandardContourParameters.Item(1)
+                Func Item(CATVariant iIndex) As StrParameter
+                    Returns a standard contour parameter
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the standard contour parameter
+                            
+                
+                    Example:
+                
+                
+                             This example retrieves  the first StandardContourParameter from
+                             the list.
+                             
+                
+                              Dim ObjStrStandardContourParameters As
+                              StrStandardContourParameters
+                              Set ObjStrStandardContourParameters = ObjStrOpeningsMgr.GetStandardContourParms(ContourName)
+                              Set ObjStrParameter = ObjStrStandardContourParameters.Item(1)
 
         :param CATVariant i_index:
         :return: StrParameter

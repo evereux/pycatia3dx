@@ -18,17 +18,17 @@ class RemoveFace(DressUpShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             RemoveFace
-                | 
-                | Represents the Remove Face operation.
-                | It removes a face or a set of faces.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            RemoveFace
+                
+                Represents the Remove Face operation.
+                It removes a face or a set of faces.
     
     """
 
@@ -42,14 +42,14 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeepFace(Reference iKeepFace) (Write Only)
-                |     Adds a new face to be Kept.
-                | 
-                |     Parameters:
-                | 
-                |         iKeepFace
-                |             The new face to process
-                |             The following Boundary object is supported: Face.
+                Property KeepFace(Reference iKeepFace) (Write Only)
+                    Adds a new face to be Kept.
+                
+                    Parameters:
+                
+                        iKeepFace
+                            The new face to process
+                            The following Boundary object is supported: Face.
 
         :return: None
         """
@@ -70,8 +70,8 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeepFaces() As References (Read Only)
-                |     Get the specified faces to be kept.
+                Property KeepFaces() As References (Read Only)
+                    Get the specified faces to be kept.
 
         :return: References
         """
@@ -84,8 +84,8 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Propagation() As References (Read Only)
-                |     Get the faces that will be removed.
+                Property Propagation() As References (Read Only)
+                    Get the faces that will be removed.
 
         :return: References
         """
@@ -98,14 +98,14 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RemoveFace(Reference iRemoveFace) (Write Only)
-                |     Adds a new face to be removed.
-                | 
-                |     Parameters:
-                | 
-                |         iRemoveFace
-                |             The new face to process
-                |             The following Boundary object is supported: Face.
+                Property RemoveFace(Reference iRemoveFace) (Write Only)
+                    Adds a new face to be removed.
+                
+                    Parameters:
+                
+                        iRemoveFace
+                            The new face to process
+                            The following Boundary object is supported: Face.
 
         :return: None
         """
@@ -126,8 +126,8 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RemoveFaces() As References (Read Only)
-                |     Get the specified faces to be removed.
+                Property RemoveFaces() As References (Read Only)
+                    Get the specified faces to be removed.
 
         :return: References
         """
@@ -139,14 +139,14 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub remove_KeepFace(Reference iKeepFace)
-                |     Removes a face to be Kept.
-                | 
-                |     Parameters:
-                | 
-                |         iKeepFace
-                |             The new face to process
-                |             The following Boundary object is supported: Face.
+                Sub remove_KeepFace(Reference iKeepFace)
+                    Removes a face to be Kept.
+                
+                    Parameters:
+                
+                        iKeepFace
+                            The new face to process
+                            The following Boundary object is supported: Face.
 
         :param Reference i_keep_face:
         :return: None
@@ -158,14 +158,14 @@ class RemoveFace(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub remove_RemoveFace(Reference iRemoveFace)
-                |     Removes a face to be removed.
-                | 
-                |     Parameters:
-                | 
-                |         iRemoveFace
-                |             The new face to process
-                |             The following Boundary object is supported: Face. 
+                Sub remove_RemoveFace(Reference iRemoveFace)
+                    Removes a face to be removed.
+                
+                    Parameters:
+                
+                        iRemoveFace
+                            The new face to process
+                            The following Boundary object is supported: Face. 
 
         :param Reference i_remove_face:
         :return: None

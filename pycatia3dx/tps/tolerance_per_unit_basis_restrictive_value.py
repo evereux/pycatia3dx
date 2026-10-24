@@ -17,16 +17,16 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TolerancePerUnitBasisRestrictiveValue
-                | 
-                | Interface for accessing tolerance per unit basis restrictive value on a
-                | TPS.
-                | (ASME norm only)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TolerancePerUnitBasisRestrictiveValue
+                
+                Interface for accessing tolerance per unit basis restrictive value on a
+                TPS.
+                (ASME norm only)
     
     """
 
@@ -40,13 +40,13 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As double
-                |     Retrieves value (in millimeters).
-                | 
-                |     Parameters:
-                | 
-                |         oValue
-                |             Positive or equal to -1 which means not valuated. 
+                Property Value() As double
+                    Retrieves value (in millimeters).
+                
+                    Parameters:
+                
+                        oValue
+                            Positive or equal to -1 which means not valuated. 
 
         :return: float
         """

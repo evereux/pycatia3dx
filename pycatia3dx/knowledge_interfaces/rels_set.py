@@ -16,18 +16,18 @@ class RelsSet(KnowledgeSet):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeSet
-                |                         RelsSet
-                | 
-                | Knowledge set representing a relations set.
-                | 
-                | See also:
-                |     KnowledgeObjects.GetKnowledgeRootSet
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeSet
+                                        RelsSet
+                
+                Knowledge set representing a relations set.
+                
+                See also:
+                    KnowledgeObjects.GetKnowledgeRootSet
     
     """
 

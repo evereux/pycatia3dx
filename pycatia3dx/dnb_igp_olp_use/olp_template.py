@@ -17,18 +17,18 @@ class OLPTemplate(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpTemplate
-                | 
-                | A template instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpTemplate
+                
+                A template instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,8 +42,8 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     Returns the list of instructions in the template.
+                Property Instructions() As OlpInstructions (Read Only)
+                    Returns the list of instructions in the template.
 
         :return: OLPInstructions
         """
@@ -56,8 +56,8 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LibraryName() As CATBSTR (Read Only)
-                |     Returns library name of the template.
+                Property LibraryName() As CATBSTR (Read Only)
+                    Returns library name of the template.
 
         :return: str
         """
@@ -70,8 +70,8 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubType() As CATBSTR (Read Only)
-                |     Returns subtype of the template.
+                Property SubType() As CATBSTR (Read Only)
+                    Returns subtype of the template.
 
         :return: str
         """
@@ -84,8 +84,8 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TemplateName() As CATBSTR (Read Only)
-                |     Returns name of the template.
+                Property TemplateName() As CATBSTR (Read Only)
+                    Returns name of the template.
 
         :return: str
         """
@@ -98,8 +98,8 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TemplateType() As CATBSTR (Read Only)
-                |     Returns type of the template.
+                Property TemplateType() As CATBSTR (Read Only)
+                    Returns type of the template.
 
         :return: str
         """
@@ -112,11 +112,11 @@ class OLPTemplate(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WaypointID() As CATBSTR
-                |     Get/Set the waypoint ID.
-                |     The waypoint ID is defined on waypoint motions and also on motions that
-                |     declare the closest waypoint. For actions, the WaypointID can be retrieved from
-                |     the OlpRobotMotionTarget or from the OlpTemplate that represents the action.
+                Property WaypointID() As CATBSTR
+                    Get/Set the waypoint ID.
+                    The waypoint ID is defined on waypoint motions and also on motions that
+                    declare the closest waypoint. For actions, the WaypointID can be retrieved from
+                    the OlpRobotMotionTarget or from the OlpTemplate that represents the action.
 
         :return: str
         """

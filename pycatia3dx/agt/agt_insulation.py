@@ -18,15 +18,15 @@ class AGTInsulation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTInsulation
-                | 
-                | Object for AGTInsulation.
-                | To return the management object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTInsulation
+                
+                Object for AGTInsulation.
+                To return the management object.
     
     """
 
@@ -40,19 +40,19 @@ class AGTInsulation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
-                |     Returns the AGTCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjCategoryMngt the AGTCategoryMngt
-                |              object of the AGTInsulation.
-                |              
-                | 
-                |              Dim ObjCategoryMngt As AGTCategoryMngt 
-                |              Set ObjCategoryMngt = ObjAGTInsulation.AGTCategoryMngt
+                Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
+                    Returns the AGTCategoryMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjCategoryMngt the AGTCategoryMngt
+                             object of the AGTInsulation.
+                             
+                
+                             Dim ObjCategoryMngt As AGTCategoryMngt 
+                             Set ObjCategoryMngt = ObjAGTInsulation.AGTCategoryMngt
 
         :return: AGTCategoryMngt
         """
@@ -65,19 +65,19 @@ class AGTInsulation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
-                |     Returns the AGTMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjMaterialMngt the AGTMaterialMngt
-                |              object of the AGTInsulation.
-                |              
-                | 
-                |              Dim ObjMaterialMngt As AGTMaterialMngt 
-                |              Set ObjMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
+                Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
+                    Returns the AGTMaterialMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjMaterialMngt the AGTMaterialMngt
+                             object of the AGTInsulation.
+                             
+                
+                             Dim ObjMaterialMngt As AGTMaterialMngt 
+                             Set ObjMaterialMngt = ObjAGTInsulation.AGTMaterialMngt
 
         :return: AGTMaterialMngt
         """

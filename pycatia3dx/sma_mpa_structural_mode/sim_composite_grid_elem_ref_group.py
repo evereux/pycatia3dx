@@ -18,16 +18,16 @@ class SimCompositeGridElemRefGroup(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimCompositeGridElemRefGroup
-                | 
-                | Represents the Composite Cells Elements Reference group
-                | object.
-                | Given a SimCompositeGrid object, you can retrieve a SimCompositeCellsElemRefGroup as below: ... Refer SMAIAMpaCompositeGrid.idl to create/retrieve SimCompositeGrid. ... Dim myCompositeRefElemGroup As SimCompositeCellsElemRefGroup Set myCompositeRefElemGroup = myCompositeGrid.AddNewRefGroup or Dim listElemsGrp listElemsGrp = myCompositeGrid.GetElementRefGroups ...Loop for listSize = UBound(listElemsGrp) - LBound(listElemsGrp) + 1 if needed.. myCompositeRefElemGroup = listElemsGrp(0)
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimCompositeGridElemRefGroup
+                
+                Represents the Composite Cells Elements Reference group
+                object.
+                Given a SimCompositeGrid object, you can retrieve a SimCompositeCellsElemRefGroup as below: ... Refer SMAIAMpaCompositeGrid.idl to create/retrieve SimCompositeGrid. ... Dim myCompositeRefElemGroup As SimCompositeCellsElemRefGroup Set myCompositeRefElemGroup = myCompositeGrid.AddNewRefGroup or Dim listElemsGrp listElemsGrp = myCompositeGrid.GetElementRefGroups ...Loop for listSize = UBound(listElemsGrp) - LBound(listElemsGrp) + 1 if needed.. myCompositeRefElemGroup = listElemsGrp(0)
     
     """
 
@@ -40,11 +40,11 @@ class SimCompositeGridElemRefGroup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddNewElemRef() As SimCompositeGridElemRef
-                |     Creates a new reference element inside the group.
-                | 
-                |     Returns:
-                |         New reference element of the group.
+                Func AddNewElemRef() As SimCompositeGridElemRef
+                    Creates a new reference element inside the group.
+                
+                    Returns:
+                        New reference element of the group.
 
         :return: SimCompositeGridElemRef
         """
@@ -55,11 +55,11 @@ class SimCompositeGridElemRefGroup(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetElementRefs() As CATSafeArrayVariant
-                |     Retreives all reference elements in the group.
-                | 
-                |     Returns:
-                |         List of all reference elements in the group. 
+                Func GetElementRefs() As CATSafeArrayVariant
+                    Retreives all reference elements in the group.
+                
+                    Returns:
+                        List of all reference elements in the group. 
 
         :return: tuple
         """

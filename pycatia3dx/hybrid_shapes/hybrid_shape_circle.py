@@ -20,32 +20,32 @@ class HybridShapeCircle(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeCircle
-                | 
-                | Represents the hybrid shape circle object.
-                | Role: To access the data of the hybrid shape circle object.
-                | 
-                | This data includes:
-                | 
-                |     The circle radius
-                |     Two circle center
-                |     The circle arc limitation mode
-                |     The circle start and end angles
-                | 
-                | All interfaces for different type of circle derivates
-                | HybridShapeCircle.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircle
-                | objects.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeCircle
+                
+                Represents the hybrid shape circle object.
+                Role: To access the data of the hybrid shape circle object.
+                
+                This data includes:
+                
+                    The circle radius
+                    Two circle center
+                    The circle arc limitation mode
+                    The circle start and end angles
+                
+                All interfaces for different type of circle derivates
+                HybridShapeCircle.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircle
+                objects.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -59,17 +59,17 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AxisComputation() As boolean
-                |     Returns or sets the axis computation mode.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the axis computation mode of
-                |          the hybShpCircle
-                |          
-                | 
-                |          Dim axisComp As Boolean
-                |          axisComp = hybShpCircle.AxisComputation
+                Property AxisComputation() As boolean
+                    Returns or sets the axis computation mode.
+                
+                    Example:
+                
+                         This example retrieves the axis computation mode of
+                         the hybShpCircle
+                         
+                
+                         Dim axisComp As Boolean
+                         axisComp = hybShpCircle.AxisComputation
 
         :return: bool
         """
@@ -90,22 +90,22 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property AxisDirection() As HybridShapeDirection
-                |     Role: To get_Direction on the object.
-                | 
-                |     Parameters:
-                | 
-                |         oDir
-                |             return value for CATScript applications, with (IDLRETVAL) function
-                |             type 
-                | 
-                |     See also:
-                |         HybridShapeDirection
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property AxisDirection() As HybridShapeDirection
+                    Role: To get_Direction on the object.
+                
+                    Parameters:
+                
+                        oDir
+                            return value for CATScript applications, with (IDLRETVAL) function
+                            type 
+                
+                    See also:
+                        HybridShapeDirection
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: HybridShapeDirection
         """
@@ -126,15 +126,15 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndAngle() As Angle (Read Only)
-                |     Returns the circle end angle.
-                | 
-                |     Example:
-                |         This example retrieves in ShpCircleEndAngle the end angle of the
-                |         ShpCircle hybrid shape circle.
-                | 
-                |          Dim ShpCircleEndAngle As Angle
-                |          ShpCircleEndAngle = ShpCircle.EndAngle
+                Property EndAngle() As Angle (Read Only)
+                    Returns the circle end angle.
+                
+                    Example:
+                        This example retrieves in ShpCircleEndAngle the end angle of the
+                        ShpCircle hybrid shape circle.
+                
+                         Dim ShpCircleEndAngle As Angle
+                         ShpCircleEndAngle = ShpCircle.EndAngle
 
         :return: Angle
         """
@@ -147,15 +147,15 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartAngle() As Angle (Read Only)
-                |     Returns the circle start angle.
-                | 
-                |     Example:
-                |         This example retrieves in ShpCircleStartAngle the end angle of the
-                |         ShpCircle hybrid shape circle.
-                | 
-                |          Dim ShpCircleStartAngle As Angle
-                |          ShpCircleStartAngle = ShpCircle.StartAngle
+                Property StartAngle() As Angle (Read Only)
+                    Returns the circle start angle.
+                
+                    Example:
+                        This example retrieves in ShpCircleStartAngle the end angle of the
+                        ShpCircle hybrid shape circle.
+                
+                         Dim ShpCircleStartAngle As Angle
+                         ShpCircleStartAngle = ShpCircle.StartAngle
 
         :return: Angle
         """
@@ -167,24 +167,24 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetAxis(long iPosition,Reference oAxis)
-                |     Returns the axis of the Circle.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of axis to be retrived. 3 - CATGSMAxisLineType_NormalToCircle
-                |             2 - CATGSMAxisLineType_NormalToDirection 1 -
-                |             CATGSMAxisLineType_AlignedWithDirection 
-                |         oAxis
-                |             Reference to the element.
-                | 
-                |             Example:
-                |                 This example retrieves the axis of the circle. HybShpCircle
-                |                 hybrid shape circle.
-                | 
-                |                  Dim AxisRef As Reference
-                |                  HybShpCircle.GetAxis 1, AxisRef
+                Sub GetAxis(long iPosition,Reference oAxis)
+                    Returns the axis of the Circle.
+                
+                    Parameters:
+                
+                        iType
+                            Type of axis to be retrived. 3 - CATGSMAxisLineType_NormalToCircle
+                            2 - CATGSMAxisLineType_NormalToDirection 1 -
+                            CATGSMAxisLineType_AlignedWithDirection 
+                        oAxis
+                            Reference to the element.
+                
+                            Example:
+                                This example retrieves the axis of the circle. HybShpCircle
+                                hybrid shape circle.
+                
+                                 Dim AxisRef As Reference
+                                 HybShpCircle.GetAxis 1, AxisRef
 
         :param int i_position:
         :return: Reference
@@ -197,14 +197,14 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetCenter(double oCenterX,double oCenterY,double oCenterZ)
-                |     Gets the mathematical center of the circle. This information is available
-                |     once the circle has been computed.
-                | 
-                |     Parameters:
-                | 
-                |         oCenterX,
-                |             oCenterY, oCenterZ, circle center
+                Sub GetCenter(double oCenterX,double oCenterY,double oCenterZ)
+                    Gets the mathematical center of the circle. This information is available
+                    once the circle has been computed.
+                
+                    Parameters:
+                
+                        oCenterX,
+                            oCenterY, oCenterZ, circle center
 
         :return: tuple
         """
@@ -215,29 +215,29 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
-                |     Returns the circle center.
-                | 
-                |     Parameters:
-                | 
-                |         oCenter
-                |             The circle center. It is returned as an array of three coordinates
-                |             in SafeArrayVariant 
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleCenter the center of the
-                |         HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleCenter
-                |          ReDim HybShpCircleCenter(2)
-                |          ShpCircle.GetFreeRadius(HybShpCircleCenter)
-                |          
-                | 
-                |         You can access each center coordinate as follows:
-                | 
-                |             x is in HybShpCircleCenter(0)
-                |             y is in HybShpCircleCenter(1)
-                |             z is in HybShpCircleCenter(2)
+                Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
+                    Returns the circle center.
+                
+                    Parameters:
+                
+                        oCenter
+                            The circle center. It is returned as an array of three coordinates
+                            in SafeArrayVariant 
+                
+                    Example:
+                        This example retrieves in HybShpCircleCenter the center of the
+                        HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleCenter
+                         ReDim HybShpCircleCenter(2)
+                         ShpCircle.GetFreeRadius(HybShpCircleCenter)
+                         
+                
+                        You can access each center coordinate as follows:
+                
+                            x is in HybShpCircleCenter(0)
+                            y is in HybShpCircleCenter(1)
+                            z is in HybShpCircleCenter(2)
 
         :param tuple io_center:
         :return: None
@@ -265,20 +265,20 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFreeRadius(double oRadius)
-                |     Returns the circle radius.
-                | 
-                |     Parameters:
-                | 
-                |         oRadius
-                |             The circle radius 
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleRadius the radius of the
-                |         HybShpCircle hybrid shape circle.
-                | 
-                |          double HybShpCircleRadius
-                |          ShpCircle.GetFreeRadius(HybShpCircleRadius)
+                Sub GetFreeRadius(double oRadius)
+                    Returns the circle radius.
+                
+                    Parameters:
+                
+                        oRadius
+                            The circle radius 
+                
+                    Example:
+                        This example retrieves in HybShpCircleRadius the radius of the
+                        HybShpCircle hybrid shape circle.
+                
+                         double HybShpCircleRadius
+                         ShpCircle.GetFreeRadius(HybShpCircleRadius)
 
         :param float o_radius:
         :return: None
@@ -290,13 +290,13 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLimitation() As long
-                |     Gets the limitation type for the circle.
-                | 
-                |     Parameters:
-                | 
-                |         oLimit
-                |             (Angles = 0, Whole = 1, Trimmed = 2, Complementary = 3). circle limitation
+                Func GetLimitation() As long
+                    Gets the limitation type for the circle.
+                
+                    Parameters:
+                
+                        oLimit
+                            (Angles = 0, Whole = 1, Trimmed = 2, Complementary = 3). circle limitation
 
         :return: int
         """
@@ -307,29 +307,29 @@ class HybridShapeCircle(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLimitation(long iLimitation)
-                |     Set the circle limitation type.
-                | 
-                |     Parameters:
-                | 
-                |         iLimitation
-                |             The circle limitation type
-                |             Legal values:
-                | 
-                |             0
-                |                 Angles 
-                |             1
-                |                 Whole 
-                |             2
-                |                 Trimmed 
-                |             3
-                |                 Complementary 
-                | 
-                |     Example:
-                |         This example sets the limitiation type of the ShpCircle hybrid shape
-                |         circle to trim.
-                | 
-                |          ShpCircle.SetLimitation 2
+                Sub SetLimitation(long iLimitation)
+                    Set the circle limitation type.
+                
+                    Parameters:
+                
+                        iLimitation
+                            The circle limitation type
+                            Legal values:
+                
+                            0
+                                Angles 
+                            1
+                                Whole 
+                            2
+                                Trimmed 
+                            3
+                                Complementary 
+                
+                    Example:
+                        This example sets the limitiation type of the ShpCircle hybrid shape
+                        circle to trim.
+                
+                         ShpCircle.SetLimitation 2
 
         :param int i_limitation:
         :return: None

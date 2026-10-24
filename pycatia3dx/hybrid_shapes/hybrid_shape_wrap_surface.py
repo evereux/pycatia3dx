@@ -18,28 +18,28 @@ class HybridShapeWrapSurface(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeWrapSurface
-                | 
-                | Represents the hybrid shape wrap surface object.
-                | Role: To access the data of the hybrid shape wrap surface
-                | object.
-                | 
-                | This data includes:
-                | 
-                |     Two definition surfaces (refrence and target), who define the
-                |     deformation
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeWrapSurface
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeWrapSurface
+                
+                Represents the hybrid shape wrap surface object.
+                Role: To access the data of the hybrid shape wrap surface
+                object.
+                
+                This data includes:
+                
+                    Two definition surfaces (refrence and target), who define the
+                    deformation
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeWrapSurface
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -53,19 +53,19 @@ class HybridShapeWrapSurface(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DeformationMode() As long
-                |     Returns or sets whether the wrap surface is or should be created as
-                |     a"Normal" or with a "3D" deformation mode.
-                |     Legal values: 2 for the normal solution and 1 for 3D
-                |     solution.
-                | 
-                |     Example:
-                | 
-                |          This example sets the mode to create the wrap surface
-                |          hybWrapSurface with a 3D deformation mode.
-                |          
-                | 
-                |          hybWrapSurface.3D deformation mode = 1
+                Property DeformationMode() As long
+                    Returns or sets whether the wrap surface is or should be created as
+                    a"Normal" or with a "3D" deformation mode.
+                    Legal values: 2 for the normal solution and 1 for 3D
+                    solution.
+                
+                    Example:
+                
+                         This example sets the mode to create the wrap surface
+                         hybWrapSurface with a 3D deformation mode.
+                         
+                
+                         hybWrapSurface.3D deformation mode = 1
 
         :return: int
         """
@@ -86,14 +86,14 @@ class HybridShapeWrapSurface(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ReferenceSurface() As Reference
-                |     Returns or sets the reference surface of the WrapSurface.
-                | 
-                |     Example:
-                |         This example retrieves in ReferenceSurface the surface to deform of the
-                |         ShpWrapSurface hybrid shape WrapSurface feature.
-                | 
-                |          ReferenceSurface = ShpWrapSurface.Surface
+                Property ReferenceSurface() As Reference
+                    Returns or sets the reference surface of the WrapSurface.
+                
+                    Example:
+                        This example retrieves in ReferenceSurface the surface to deform of the
+                        ShpWrapSurface hybrid shape WrapSurface feature.
+                
+                         ReferenceSurface = ShpWrapSurface.Surface
 
         :return: Reference
         """
@@ -114,15 +114,15 @@ class HybridShapeWrapSurface(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Surface() As Reference
-                |     Returns or sets the reference surface to deform of the
-                |     WrapSurface.
-                | 
-                |     Example:
-                |         This example retrieves in SurfaceToDeform the surface to deform of the
-                |         ShpWrapSurface hybrid shape WrapSurface feature.
-                | 
-                |          SurfaceToDeform = ShpWrapSurface.Surface
+                Property Surface() As Reference
+                    Returns or sets the reference surface to deform of the
+                    WrapSurface.
+                
+                    Example:
+                        This example retrieves in SurfaceToDeform the surface to deform of the
+                        ShpWrapSurface hybrid shape WrapSurface feature.
+                
+                         SurfaceToDeform = ShpWrapSurface.Surface
 
         :return: Reference
         """
@@ -143,14 +143,14 @@ class HybridShapeWrapSurface(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TargetSurface() As Reference
-                |     Returns or sets the target surface of the WrapSurface.
-                | 
-                |     Example:
-                |         This example retrieves in TargetSurface the surface to deform of the
-                |         ShpWrapSurface hybrid shape WrapSurface feature.
-                | 
-                |          TargetSurface = ShpWrapSurface.Surface
+                Property TargetSurface() As Reference
+                    Returns or sets the target surface of the WrapSurface.
+                
+                    Example:
+                        This example retrieves in TargetSurface the surface to deform of the
+                        ShpWrapSurface hybrid shape WrapSurface feature.
+                
+                         TargetSurface = ShpWrapSurface.Surface
 
         :return: Reference
         """

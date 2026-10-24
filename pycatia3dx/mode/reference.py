@@ -17,19 +17,19 @@ class Reference(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Reference
-                | 
-                | Represents an object pointing to another object.
-                | This other object can be either a wireframe GeometricElement object such as a
-                | plane or a line, or a boundary representation object such as a face, a vertex
-                | or an edge. It may be, in particular, a Boundary object. References are created
-                | using appropriate methods for parts. They are then passed to an object to
-                | enable associativity with the referenced object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Reference
+                
+                Represents an object pointing to another object.
+                This other object can be either a wireframe GeometricElement object such as a
+                plane or a line, or a boundary representation object such as a face, a vertex
+                or an edge. It may be, in particular, a Boundary object. References are created
+                using appropriate methods for parts. They are then passed to an object to
+                enable associativity with the referenced object.
     
     """
 
@@ -43,17 +43,17 @@ class Reference(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property DisplayName() As CATBSTR (Read Only)
-                |     Returns the name of the referenced object. The name of the referenced
-                |     object is either the name displayed in the specification tree for a
-                |     GeometricElement object or a character string defining the reference for a
-                |     boundary object.
-                | 
-                |     Example:
-                |         The following example returns in StrName the displayable name of
-                |         reference FirstRef:
-                | 
-                |          StrName = FirstRef.DisplayName
+                Property DisplayName() As CATBSTR (Read Only)
+                    Returns the name of the referenced object. The name of the referenced
+                    object is either the name displayed in the specification tree for a
+                    GeometricElement object or a character string defining the reference for a
+                    boundary object.
+                
+                    Example:
+                        The following example returns in StrName the displayable name of
+                        reference FirstRef:
+                
+                         StrName = FirstRef.DisplayName
 
         :return: str
         """
@@ -65,23 +65,23 @@ class Reference(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func ComposeWith(Reference iReference) As Reference
-                |     Composes a reference with another reference thus creating a new composite
-                |     reference.
-                | 
-                |     Parameters:
-                | 
-                |         iReference
-                |             The reference to be composed with the current
-                |             reference.
-                | 
-                |             Example:
-                |                 The following example returns in CompositeRef the reference
-                |                 resulting from the composition of the FirstRef and SecondRef
-                |                 references.
-                | 
-                |                  Dim CompositeRef As Reference
-                |                  Set CompositeRef = FirstRef.ComposeWith(SecondRef)
+                Func ComposeWith(Reference iReference) As Reference
+                    Composes a reference with another reference thus creating a new composite
+                    reference.
+                
+                    Parameters:
+                
+                        iReference
+                            The reference to be composed with the current
+                            reference.
+                
+                            Example:
+                                The following example returns in CompositeRef the reference
+                                resulting from the composition of the FirstRef and SecondRef
+                                references.
+                
+                                 Dim CompositeRef As Reference
+                                 Set CompositeRef = FirstRef.ComposeWith(SecondRef)
 
         :param Reference i_reference:
         :return: Reference

@@ -18,17 +18,17 @@ class MeasureService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         MeasureService
-                | 
-                | Interface representing the service to retrieve a measure between or
-                | item.
-                | CATIApplication.ActiveEditor.GetService("MeasureService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        MeasureService
+                
+                Interface representing the service to retrieve a measure between or
+                item.
+                CATIApplication.ActiveEditor.GetService("MeasureService")
     
     """
 
@@ -41,26 +41,26 @@ class MeasureService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func GetMeasureBetween(CATSafeArrayVariant iFirstSelections,CATSafeArrayVariant
-                | iSecondSelections) As MeasureBetween
-                |     Retrieves the Measure Between
+                Func GetMeasureBetween(CATSafeArrayVariant iFirstSelections,CATSafeArrayVariant
+                iSecondSelections) As MeasureBetween
+                    Retrieves the Measure Between
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iFirstSelections
-                |             The first set of the selected objects
-                |         iSecondSelections
-                |             The second set of the selected objects
+                        iFirstSelections
+                            The first set of the selected objects
+                        iSecondSelections
+                            The second set of the selected objects
                 |
-                |     Returns:
-                |         The Measure Between
+                    Returns:
+                        The Measure Between
                 |
-                |         Example:
-                |             This example get the MeasureBetween.
+                        Example:
+                            This example get the MeasureBetween.
                 |
-                |                Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |                Dim theMeasureBetween As MeasureBetween
-                |                Set theMeasureBetween = theMeasureService.GetMeasureBetween(FirstSelections, SecondSelections)
+                               Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                               Dim theMeasureBetween As MeasureBetween
+                               Set theMeasureBetween = theMeasureService.GetMeasureBetween(FirstSelections, SecondSelections)
 
         :param tuple i_first_selections:
         :param tuple i_second_selections:
@@ -77,24 +77,24 @@ class MeasureService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func GetMeasureItem(CATSafeArrayVariant iSelections) As
-                | MeasureItem
-                |     Retrieves the Measure Item
+                Func GetMeasureItem(CATSafeArrayVariant iSelections) As
+                MeasureItem
+                    Retrieves the Measure Item
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iSelections
-                |             The set of the selected objects
+                        iSelections
+                            The set of the selected objects
                 |
-                |     Returns:
-                |         The Measure Item
+                    Returns:
+                        The Measure Item
                 |
-                |         Example:
-                |             This example get the MeasureItem.
+                        Example:
+                            This example get the MeasureItem.
                 |
-                |                Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
-                |                Dim theMeasureItem As MeasureItem
-                |                Set theMeasureItem = theMeasureService.GetMeasureItem(theSelection)
+                               Set theMeasureService = CATIA.ActiveEditor.GetService("MeasureService")
+                               Dim theMeasureItem As MeasureItem
+                               Set theMeasureItem = theMeasureService.GetMeasureItem(theSelection)
 
         :param tuple i_selections:
         :return: MeasureItem

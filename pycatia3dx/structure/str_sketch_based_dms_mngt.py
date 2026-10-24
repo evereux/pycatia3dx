@@ -18,18 +18,18 @@ class StrSketchBasedDMSMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrSketchBasedDMSMngt
-                | 
-                | Object to manage Delimited Molded Surface for
-                | StrSketchBasedPanel.
-                | 
-                | Role: To manage StrSketchBasedPanel's Delimited Molded
-                | Surface.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrSketchBasedDMSMngt
+                
+                Object to manage Delimited Molded Surface for
+                StrSketchBasedPanel.
+                
+                Role: To manage StrSketchBasedPanel's Delimited Molded
+                Surface.
     
     """
 
@@ -43,26 +43,26 @@ class StrSketchBasedDMSMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSketch() As Reference (Read Only)
-                |     Returns or sets the Reference Sketch.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example sets the ReferenceSketch in RefSketch as
-                |              Reference.
-                |              of SfdSketchBasedPanel or SfdSketchBasedPlate.
-                |              
-                | 
-                |              'get Reference Sketch
-                |              Dim RefSketch As Reference
-                |              set RefSketch = ObjSfdSketchBasedPanel.ReferenceSketch("SAMPLE_RCO_2LIMITS_KB")
-                |             
-                |              'set DMS
-                |              Dim PanelDMS As StrSketchBasedDMSMngt
-                |              Set PanelDMS = oObjSfdSketchBasedPanel.StrSketchBasedDMSMngt
-                |              PanelDMS.StrSketch = RefSketch
+                Property StrSketch() As Reference (Read Only)
+                    Returns or sets the Reference Sketch.
+                
+                    Example:
+                
+                         
+                
+                             This example sets the ReferenceSketch in RefSketch as
+                             Reference.
+                             of SfdSketchBasedPanel or SfdSketchBasedPlate.
+                             
+                
+                             'get Reference Sketch
+                             Dim RefSketch As Reference
+                             set RefSketch = ObjSfdSketchBasedPanel.ReferenceSketch("SAMPLE_RCO_2LIMITS_KB")
+                            
+                             'set DMS
+                             Dim PanelDMS As StrSketchBasedDMSMngt
+                             Set PanelDMS = oObjSfdSketchBasedPanel.StrSketchBasedDMSMngt
+                             PanelDMS.StrSketch = RefSketch
 
         :return: Reference
         """
@@ -74,16 +74,16 @@ class StrSketchBasedDMSMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ActivateSketchContour()
-                |     Returns the Sketch Contour activated successfuly or not
-                | 
-                |     Example:
-                | 
-                | 
-                |              With new algorithm of parametric panel/plate, Sketch need to
-                |              activate before call update(or build) of feature
-                |              This example show activate sketch contour before update the
-                |              Parametric panel/Plate
+                Sub ActivateSketchContour()
+                    Returns the Sketch Contour activated successfuly or not
+                
+                    Example:
+                
+                
+                             With new algorithm of parametric panel/plate, Sketch need to
+                             activate before call update(or build) of feature
+                             This example show activate sketch contour before update the
+                             Parametric panel/Plate
 
         :return: None
         """
@@ -94,17 +94,17 @@ class StrSketchBasedDMSMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeactivateSketchContour()
-                |     Returns the Sketch Contour deactivated successfuly or not
-                | 
-                |     Example:
-                | 
-                | 
-                |              With new algorithm of parametric panel/plate, Sketch need to
-                |              deactivate when parametric panel/plate input
-                |              modified
-                |              This example show deactivate sketch contour after modified the
-                |              Parametric panel/Plate
+                Sub DeactivateSketchContour()
+                    Returns the Sketch Contour deactivated successfuly or not
+                
+                    Example:
+                
+                
+                             With new algorithm of parametric panel/plate, Sketch need to
+                             deactivate when parametric panel/plate input
+                             modified
+                             This example show deactivate sketch contour after modified the
+                             Parametric panel/Plate
 
         :return: None
         """
@@ -115,7 +115,7 @@ class StrSketchBasedDMSMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStrSketch(CATBSTR iRefSketchName)
+                Sub SetStrSketch(CATBSTR iRefSketchName)
 
         :param str i_ref_sketch_name:
         :return: None

@@ -17,54 +17,54 @@ class SimConnectorRotationVelocity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorRotationVelocity
-                | 
-                | Represents the Connector Rotation Velocity object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimConnectorRotationVelocity
-                |     as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorRotationVelocity As
-                |      SimConnectorRotationVelocity
-                |      Set MyConnectorRotationVelocity = MyFeatures.Add("SimConnectorRotationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimConnectorRotationVelocity
-                |     named "Connector Rotation Velocity.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorRotationVelocity As
-                |      SimConnectorRotationVelocity
-                |      Set MyConnectorRotationVelocity = MyFeatures.Item("Connector Rotation Velocity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimConnectorRotationVelocity as following:
-                | 
-                |      ...
-                |      myConnectorRotationVelocity = myFeatures.Add("SimConnectorRotationVelocity")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimConnectorRotationVelocity named "Connector Rotation Velocity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myConnectorRotationVelocity = myFeatures.Item("Connector Rotation Velocity.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorRotationVelocity
+                
+                Represents the Connector Rotation Velocity object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimConnectorRotationVelocity
+                    as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorRotationVelocity As
+                     SimConnectorRotationVelocity
+                     Set MyConnectorRotationVelocity = MyFeatures.Add("SimConnectorRotationVelocity")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimConnectorRotationVelocity
+                    named "Connector Rotation Velocity.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorRotationVelocity As
+                     SimConnectorRotationVelocity
+                     Set MyConnectorRotationVelocity = MyFeatures.Item("Connector Rotation Velocity.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimConnectorRotationVelocity as following:
+                
+                     ...
+                     myConnectorRotationVelocity = myFeatures.Add("SimConnectorRotationVelocity")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimConnectorRotationVelocity named "Connector Rotation Velocity.1" as
+                    following:
+                
+                     ...
+                     myConnectorRotationVelocity = myFeatures.Item("Connector Rotation Velocity.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -78,8 +78,8 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,14 +100,14 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of available connector components of relative
-                |     motion.
-                |     The list can contains the following values:
-                |     1 : the first rotation DOF is available.
-                |     2 : the second rotation DOF is available.
-                |     3 : the third rotation DOF is available.
+                Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of available connector components of relative
+                    motion.
+                    The list can contains the following values:
+                    1 : the first rotation DOF is available.
+                    2 : the second rotation DOF is available.
+                    3 : the third rotation DOF is available.
 
         :return: tuple
         """
@@ -120,8 +120,8 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -134,9 +134,9 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -149,9 +149,9 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As
-                | SimConnectorRotationVelocityVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As
+                SimConnectorRotationVelocityVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -171,16 +171,16 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRotationVelocity(SimDof iDegreeOfFreedom) As double
-                |     Retrieves the velocity value for a degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom.
-                |             Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         oRotationVelocity[out]
-                |             The velocity value. Quantity: ANGULAR_VELOCITY, Units: turns_s.
+                Func GetRotationVelocity(SimDof iDegreeOfFreedom) As double
+                    Retrieves the velocity value for a degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom.
+                            Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        oRotationVelocity[out]
+                            The velocity value. Quantity: ANGULAR_VELOCITY, Units: turns_s.
 
         :param SimDof i_degree_of_freedom:
         :return: float
@@ -192,20 +192,20 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom) As
-                | boolean
-                |     Retrieves the flag which determines if a rotation velocity is active on a
-                |     degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom.
-                |             Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         oRotationVelocityActivationFlag[out]
-                |             The activation flag.
-                |             TRUE : the rotation velocity is active for the specified DOF.
-                |             FALSE : the rotation velocity is not active for the specified DOF.
+                Func GetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom) As
+                boolean
+                    Retrieves the flag which determines if a rotation velocity is active on a
+                    degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom.
+                            Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        oRotationVelocityActivationFlag[out]
+                            The activation flag.
+                            TRUE : the rotation velocity is active for the specified DOF.
+                            FALSE : the rotation velocity is not active for the specified DOF.
 
         :param int i_degree_of_freedom:
         :return: bool
@@ -217,17 +217,17 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRotationVelocity(SimDof iDegreeOfFreedom,double
-                | iRotationVelocity)
-                |     Sets the velocity value for a degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom.
-                |             Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         iRotationVelocity[in]
-                |             The velocity value. Quantity: ANGULAR_VELOCITY, Units: turns_s.
+                Sub SetRotationVelocity(SimDof iDegreeOfFreedom,double
+                iRotationVelocity)
+                    Sets the velocity value for a degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom.
+                            Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        iRotationVelocity[in]
+                            The velocity value. Quantity: ANGULAR_VELOCITY, Units: turns_s.
 
         :param int i_degree_of_freedom:
         :param float i_rotation_velocity:
@@ -241,20 +241,20 @@ class SimConnectorRotationVelocity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom,boolean
-                | iRotationVelocityActivationFlag)
-                |     Set the flag which determines if a rotation velocity is active on a degree
-                |     of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom.
-                |             Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         iRotationVelocityActivationFlag[in]
-                |             The activation flag.
-                |             TRUE : the rotation velocity is active for the specified DOF.
-                |             FALSE : the rotation velocity is not active for the specified DOF. 
+                Sub SetRotationVelocityActivationFlag(SimDof iDegreeOfFreedom,boolean
+                iRotationVelocityActivationFlag)
+                    Set the flag which determines if a rotation velocity is active on a degree
+                    of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom.
+                            Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        iRotationVelocityActivationFlag[in]
+                            The activation flag.
+                            TRUE : the rotation velocity is active for the specified DOF.
+                            FALSE : the rotation velocity is not active for the specified DOF. 
 
         :param int i_degree_of_freedom:
         :param bool i_rotation_velocity_activation_flag:

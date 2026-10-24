@@ -20,18 +20,18 @@ class StrUserConnection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrUserConnection
-                | 
-                | Object to manage UserConnection.
-                | Role: Allows accessing and setting of UserConnection's data.
-                | 
-                | See also:
-                |     StrUserConnections
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrUserConnection
+                
+                Object to manage UserConnection.
+                Role: Allows accessing and setting of UserConnection's data.
+                
+                See also:
+                    StrUserConnections
     
     """
 
@@ -45,19 +45,19 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntersectingElement() As AnyObject
-                |     Returns or sets an intersecting element
-                |     Role: It is used for calculating intersection point between reference
-                |     element and the intersecting element.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in IntersectingElement of the
-                |              UserConnection.
-                |              
-                | 
-                |              Set IntersectElem = ObjStrUserConnection.IntersectingElement
+                Property IntersectingElement() As AnyObject
+                    Returns or sets an intersecting element
+                    Role: It is used for calculating intersection point between reference
+                    element and the intersecting element.
+                
+                    Example:
+                
+                
+                             This example retrieves in IntersectingElement of the
+                             UserConnection.
+                             
+                
+                             Set IntersectElem = ObjStrUserConnection.IntersectingElement
 
         :return: AnyObject
         """
@@ -78,19 +78,19 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceElement() As AnyObject
-                |     Returns or sets Reference Object
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example returns ReferenceElement of the
-                |              opening.
-                |              
-                | 
-                |              Dim ObjStrUserConnection As StrUserConnection
-                |              Set ObjStrUserConnection = ObjStrUserConnections.Add
-                |              Set ReElem = ObjStrUserConnection.ReferenceElement
+                Property ReferenceElement() As AnyObject
+                    Returns or sets Reference Object
+                
+                    Example:
+                
+                
+                             This example returns ReferenceElement of the
+                             opening.
+                             
+                
+                             Dim ObjStrUserConnection As StrUserConnection
+                             Set ObjStrUserConnection = ObjStrUserConnections.Add
+                             Set ReElem = ObjStrUserConnection.ReferenceElement
 
         :return: AnyObject
         """
@@ -111,17 +111,17 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns StrCategoryMngt
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves StrCategoryMngt of the
-                |              UserConnection.
-                |              
-                | 
-                |              Set ObjCategoryMngt = ObjStrUserConnection.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns StrCategoryMngt
+                
+                    Example:
+                
+                
+                             This example retrieves StrCategoryMngt of the
+                             UserConnection.
+                             
+                
+                             Set ObjCategoryMngt = ObjStrUserConnection.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -134,17 +134,17 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrDetailFeature() As StrDetailFeature (Read Only)
-                |     Returns StrDetailFeature
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example returns StrDetailFeature of the
-                |              UserConnection.
-                |              
-                | 
-                |              Set ObjDetailFeature = ObjStrUserConnection.StrDetailFeature
+                Property StrDetailFeature() As StrDetailFeature (Read Only)
+                    Returns StrDetailFeature
+                
+                    Example:
+                
+                
+                             This example returns StrDetailFeature of the
+                             UserConnection.
+                             
+                
+                             Set ObjDetailFeature = ObjStrUserConnection.StrDetailFeature
 
         :return: StrDetailFeature
         """
@@ -156,13 +156,13 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddConnectedObject(Reference iConnectedObj)
-                |     Adds an object to ConnectedObject List
-                | 
-                |     Parameters:
-                | 
-                |         iConnectedObj
-                |             Connected Object.
+                Sub AddConnectedObject(Reference iConnectedObj)
+                    Adds an object to ConnectedObject List
+                
+                    Parameters:
+                
+                        iConnectedObj
+                            Connected Object.
 
         :param Reference i_connected_obj:
         :return: None
@@ -174,8 +174,8 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetConnectedObjects() As StrObjects
-                |     Returns list of ConnectedObject
+                Func GetConnectedObjects() As StrObjects
+                    Returns list of ConnectedObject
 
         :return: StrObjects
         """
@@ -186,13 +186,13 @@ class StrUserConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveConnectedObject(Reference iConnectedObj)
-                |     Removes an object from ConnectedObject List
-                | 
-                |     Parameters:
-                | 
-                |         iConnectedObj
-                |             Connected Object. 
+                Sub RemoveConnectedObject(Reference iConnectedObj)
+                    Removes an object from ConnectedObject List
+                
+                    Parameters:
+                
+                        iConnectedObj
+                            Connected Object. 
 
         :param Reference i_connected_obj:
         :return: None

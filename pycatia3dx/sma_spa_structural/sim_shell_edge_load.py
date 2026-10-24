@@ -17,51 +17,51 @@ class SimShellEdgeLoad(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimShellEdgeLoad
-                | 
-                | Represents the Shell Edge Load object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimShellEdgeLoad as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyShellEdgeLoad As SimShellEdgeLoad
-                |      Set MyShellEdgeLoad = MyFeatures.Add("SimShellEdgeLoad")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimShellEdgeLoad named
-                |     "Shell Edge Load.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyShellEdgeLoad As SimShellEdgeLoad
-                |      Set MyShellEdgeLoad = MyFeatures.Item("Shell Edge Load.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimShellEdgeLoad as
-                |     following:
-                | 
-                |      ...
-                |      myShellEdgeLoad = myFeatures.Add("SimShellEdgeLoad")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimShellEdgeLoad
-                |     named "Shell Edge Load.1" as following:
-                | 
-                |      ...
-                |      myShellEdgeLoad = myFeatures.Item("Shell Edge Load.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimShellEdgeLoad
+                
+                Represents the Shell Edge Load object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimShellEdgeLoad as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyShellEdgeLoad As SimShellEdgeLoad
+                     Set MyShellEdgeLoad = MyFeatures.Add("SimShellEdgeLoad")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimShellEdgeLoad named
+                    "Shell Edge Load.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyShellEdgeLoad As SimShellEdgeLoad
+                     Set MyShellEdgeLoad = MyFeatures.Item("Shell Edge Load.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimShellEdgeLoad as
+                    following:
+                
+                     ...
+                     myShellEdgeLoad = myFeatures.Add("SimShellEdgeLoad")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimShellEdgeLoad
+                    named "Shell Edge Load.1" as following:
+                
+                     ...
+                     myShellEdgeLoad = myFeatures.Item("Shell Edge Load.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,8 +75,8 @@ class SimShellEdgeLoad(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -97,8 +97,8 @@ class SimShellEdgeLoad(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -111,9 +111,9 @@ class SimShellEdgeLoad(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ForcePerLength() As double
-                |     Returns or sets the force per length. Quantity: FORCE_PER_LENGTH, Units:
-                |     kg_s2.
+                Property ForcePerLength() As double
+                    Returns or sets the force per length. Quantity: FORCE_PER_LENGTH, Units:
+                    kg_s2.
 
         :return: float
         """
@@ -134,9 +134,9 @@ class SimShellEdgeLoad(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -149,8 +149,8 @@ class SimShellEdgeLoad(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TractionType() As SimShellEdgeLoadTractionType
-                |     Returns or sets the traction type. 
+                Property TractionType() As SimShellEdgeLoadTractionType
+                    Returns or sets the traction type. 
 
         :return: SimShellEdgeLoadTractionType
         """

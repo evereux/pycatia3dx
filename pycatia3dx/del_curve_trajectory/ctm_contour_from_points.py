@@ -17,17 +17,17 @@ class CtmContourFromPoints(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CtmContourFromPoints
-                | 
-                | Interface representing a Contour created from Points.
-                | 
-                | Role: This interface is used to get and set the parameters of a contour created
-                | from a Tag group.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CtmContourFromPoints
+                
+                Interface representing a Contour created from Points.
+                
+                Role: This interface is used to get and set the parameters of a contour created
+                from a Tag group.
     
     """
 
@@ -41,16 +41,16 @@ class CtmContourFromPoints(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagGroup() As AnyObject
-                |     Get the tag group that provided the initial tags.
-                | 
-                |     Parameters:
-                | 
-                |         ospTagGroup
-                |             The tag group. 
-                | 
-                |     Returns:
-                |         The tag group 
+                Property TagGroup() As AnyObject
+                    Get the tag group that provided the initial tags.
+                
+                    Parameters:
+                
+                        ospTagGroup
+                            The tag group. 
+                
+                    Returns:
+                        The tag group 
 
         :return: AnyObject
         """

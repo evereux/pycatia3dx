@@ -17,51 +17,51 @@ class SimBoltTorque(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBoltTorque
-                | 
-                | Represents the Bolt Torque object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimBoltTorque as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltTorque As SimBoltTorque
-                |      Set MyBoltTorque = MyFeatures.Add("SimBoltTorque")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimBoltTorque named "Bolt
-                |     Torque.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyBoltTorque As SimBoltTorque
-                |      Set MyBoltTorque = MyFeatures.Item("Bolt Torque.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimBoltTorque as
-                |     following:
-                | 
-                |      ...
-                |      myBoltTorque = myFeatures.Add("SimBoltTorque")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimBoltTorque
-                |     named "Bolt Torque.1" as following:
-                | 
-                |      ...
-                |      myBoltTorque = myFeatures.Item("Bolt Torque.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBoltTorque
+                
+                Represents the Bolt Torque object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimBoltTorque as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltTorque As SimBoltTorque
+                     Set MyBoltTorque = MyFeatures.Add("SimBoltTorque")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimBoltTorque named "Bolt
+                    Torque.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyBoltTorque As SimBoltTorque
+                     Set MyBoltTorque = MyFeatures.Item("Bolt Torque.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimBoltTorque as
+                    following:
+                
+                     ...
+                     myBoltTorque = myFeatures.Add("SimBoltTorque")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimBoltTorque
+                    named "Bolt Torque.1" as following:
+                
+                     ...
+                     myBoltTorque = myFeatures.Item("Bolt Torque.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -75,8 +75,8 @@ class SimBoltTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -97,8 +97,8 @@ class SimBoltTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -111,8 +111,8 @@ class SimBoltTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the magnitude. Quantity: TORQUE, units: N_m
+                Property Magnitude() As double
+                    Returns or sets the magnitude. Quantity: TORQUE, units: N_m
 
         :return: float
         """
@@ -133,9 +133,9 @@ class SimBoltTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -148,9 +148,9 @@ class SimBoltTorque(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TorqueCoefficient() As double
-                |     Returns or sets the torque coefficient. Quantity: DIMENSIONLESS, units:
-                |     None 
+                Property TorqueCoefficient() As double
+                    Returns or sets the torque coefficient. Quantity: DIMENSIONLESS, units:
+                    None 
 
         :return: float
         """

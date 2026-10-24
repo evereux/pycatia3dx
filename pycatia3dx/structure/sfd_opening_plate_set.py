@@ -17,26 +17,26 @@ class SfdOpeningPlateSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdOpeningPlateSet
-                | 
-                | Object to filter a Structure Functional Modeler OpeningPlateSet by
-                | adhesion.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example shows how to retrieve SfdOpeningPlateSet
-                |          object.
-                |          
-                | 
-                |          Dim ObjSfdOpeningPlateSet As SfdOpeningPlateSet
-                |          Set ObjSfdOpeningPlateSet=
-                |          ObjStrOpening.GetItem("SfdOpeningPlateSet")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdOpeningPlateSet
+                
+                Object to filter a Structure Functional Modeler OpeningPlateSet by
+                adhesion.
+                
+                Example:
+                
+                
+                         This example shows how to retrieve SfdOpeningPlateSet
+                         object.
+                         
+                
+                         Dim ObjSfdOpeningPlateSet As SfdOpeningPlateSet
+                         Set ObjSfdOpeningPlateSet=
+                         ObjStrOpening.GetItem("SfdOpeningPlateSet")
 
     """
 

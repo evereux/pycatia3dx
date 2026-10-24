@@ -18,18 +18,18 @@ class TagModelServices(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TagModelServices
-                | 
-                | Interface representing services exposed by Tag Model Entities and
-                | Context.
-                | 
-                | Role: This interface is used to provide servives to access tag model entities
-                | in a given context.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TagModelServices
+                
+                Interface representing services exposed by Tag Model Entities and
+                Context.
+                
+                Role: This interface is used to provide servives to access tag model entities
+                in a given context.
     
     """
 
@@ -42,23 +42,23 @@ class TagModelServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteTagGroup(TagGroup iTagGroup)
-                |     Deletes a Tag Group in a given context.
-                | 
-                |     Parameters:
-                | 
-                |         iTagGroup
-                |             The Tag Group to delete 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTagModelServices As TagModelServices
-                |                   ......
-                |         Dim oTagGroup As TagGroup
-                |                   ......
-                |         Call objTagModelServices.DeleteTagGroup(oTagGroup)
+                Sub DeleteTagGroup(TagGroup iTagGroup)
+                    Deletes a Tag Group in a given context.
+                
+                    Parameters:
+                
+                        iTagGroup
+                            The Tag Group to delete 
+                
+                    Example:
+                
+                           
+                
+                           Dim objTagModelServices As TagModelServices
+                                  ......
+                        Dim oTagGroup As TagGroup
+                                  ......
+                        Call objTagModelServices.DeleteTagGroup(oTagGroup)
 
         :param TagGroup i_tag_group:
         :return: None
@@ -70,17 +70,17 @@ class TagModelServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllTagGroups() As CATSafeArrayVariant
-                |     Retreives the list of tag groups in a give context
-                | 
-                |     Returns:
-                |         oTagGroupList The List of Tag Groups 
-                |     Example:
+                Func GetAllTagGroups() As CATSafeArrayVariant
+                    Retreives the list of tag groups in a give context
+                
+                    Returns:
+                        oTagGroupList The List of Tag Groups 
+                    Example:
                 |
-                |         Dim objTagModelServices As TagModelServices
-                |                   ......
-                |         Dim oTaggroups
-                |         oTaggroups = oTagModelServices.GetAllTagGroups()
+                        Dim objTagModelServices As TagModelServices
+                                  ......
+                        Dim oTaggroups
+                        oTaggroups = oTagModelServices.GetAllTagGroups()
 
         :return: tuple
         """

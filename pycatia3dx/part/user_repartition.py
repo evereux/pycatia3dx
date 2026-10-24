@@ -18,18 +18,18 @@ class UserRepartition(Repartition):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.Repartition
-                |                         UserRepartition
-                | 
-                | Represents the User Pattern repartition.
-                | It is made up of a number of times the shape is copied and the location of
-                | instances. The number of times the shape is copied is accessible using the
-                | Repartition.InstancesCount property.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.Repartition
+                                        UserRepartition
+                
+                Represents the User Pattern repartition.
+                It is made up of a number of times the shape is copied and the location of
+                instances. The number of times the shape is copied is accessible using the
+                Repartition.InstancesCount property.
     
     """
 
@@ -43,14 +43,14 @@ class UserRepartition(Repartition):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureToLocatePositions() As AnyObject (Read Only)
-                |     Returns the collection of feature to locate instances.
-                | 
-                |     Example:
-                |         The following example returns in list the list of feature to locate
-                |         instances of the Pattern firstPattern:
-                | 
-                |          Set list = firstPattern.FeatureToLocatePositions
+                Property FeatureToLocatePositions() As AnyObject (Read Only)
+                    Returns the collection of feature to locate instances.
+                
+                    Example:
+                        The following example returns in list the list of feature to locate
+                        instances of the Pattern firstPattern:
+                
+                         Set list = firstPattern.FeatureToLocatePositions
 
         :return: AnyObject
         """
@@ -62,20 +62,20 @@ class UserRepartition(Repartition):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddFeatureToLocatePositions(AnyObject
-                | iFeatureToLocatePositions)
-                |     Adds a new feature to locate instances.
-                | 
-                |     Parameters:
-                | 
-                |         iFeatureToLocatePositions
-                |             The new face to process 
-                | 
-                |     Example:
-                |         The following example adds the new feature to locate instances
-                |         of the Pattern firstPattern:
-                | 
-                |          call firstPattern.AddFeatureToLocatePositions(face)
+                Sub AddFeatureToLocatePositions(AnyObject
+                iFeatureToLocatePositions)
+                    Adds a new feature to locate instances.
+                
+                    Parameters:
+                
+                        iFeatureToLocatePositions
+                            The new face to process 
+                
+                    Example:
+                        The following example adds the new feature to locate instances
+                        of the Pattern firstPattern:
+                
+                         call firstPattern.AddFeatureToLocatePositions(face)
 
         :param AnyObject i_feature_to_locate_positions:
         :return: None

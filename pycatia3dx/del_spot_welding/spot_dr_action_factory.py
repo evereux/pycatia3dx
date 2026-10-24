@@ -21,12 +21,12 @@ class SpotDrActionFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrActionFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrActionFactory
 
     
     """
@@ -41,27 +41,27 @@ class SpotDrActionFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDrillRivetAction(SpotDrProfile
-                | iSpotDrProfile,SpotDrManufacturingFastener iFastener,short iIndex) As
-                | SpotDrAction
-                |     This method creates a DrillRivet action
-                | 
-                |     Parameters:
-                | 
-                |         iSpotDrProfile,
-                |             Drill-Rivet Profile to assign.Targets are created depending on the
-                |             DRProfile Type. 
-                |         iFastener,
-                |             The Fastener will be used to set the target location .
-                |             
-                |         iIndex,
-                |             Index where to create the instruction.If passed as -1 SpotDrAction
-                |             is created at the end of the Top sequence. 
-                |         oDrillRivetAction,
-                |             newly created DrillRivet action 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func CreateDrillRivetAction(SpotDrProfile
+                iSpotDrProfile,SpotDrManufacturingFastener iFastener,short iIndex) As
+                SpotDrAction
+                    This method creates a DrillRivet action
+                
+                    Parameters:
+                
+                        iSpotDrProfile,
+                            Drill-Rivet Profile to assign.Targets are created depending on the
+                            DRProfile Type. 
+                        iFastener,
+                            The Fastener will be used to set the target location .
+                            
+                        iIndex,
+                            Index where to create the instruction.If passed as -1 SpotDrAction
+                            is created at the end of the Top sequence. 
+                        oDrillRivetAction,
+                            newly created DrillRivet action 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param SpotDrProfile i_spot_dr_profile:
         :param SpotDrManufacturingFastener i_fastener:
@@ -77,29 +77,29 @@ class SpotDrActionFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateDrillRivetActions(SpotDrProfile
-                | iSpotDrProfile,SpotDrManufacturingPattern iPattern,short iIndex,boolean
-                | iOptimizeCycleTime) As CATSafeArrayVariant
-                |     This method creates a DrillRivet action
-                | 
-                |     Parameters:
-                | 
-                |         iSpotDrProfile,
-                |             Drill-Rivet Profile to assign.Targets are created depending on the
-                |             DRProfile Type. 
-                |         iPattern,The
-                |             Fasteners in the Pattern will be used to set the target location .
-                |             
-                |         iIndex,
-                |             Index where to create the instruction.If passed as -1 SpotDrAction
-                |             is created at the end of the Top sequence. 
-                |         iOptimizeCycleTime,Is
-                |             Cycle Time Optimization enabled. 
-                |         oDrillRivetActions,
-                |             Newly created DrillRivet actions 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func CreateDrillRivetActions(SpotDrProfile
+                iSpotDrProfile,SpotDrManufacturingPattern iPattern,short iIndex,boolean
+                iOptimizeCycleTime) As CATSafeArrayVariant
+                    This method creates a DrillRivet action
+                
+                    Parameters:
+                
+                        iSpotDrProfile,
+                            Drill-Rivet Profile to assign.Targets are created depending on the
+                            DRProfile Type. 
+                        iPattern,The
+                            Fasteners in the Pattern will be used to set the target location .
+                            
+                        iIndex,
+                            Index where to create the instruction.If passed as -1 SpotDrAction
+                            is created at the end of the Top sequence. 
+                        iOptimizeCycleTime,Is
+                            Cycle Time Optimization enabled. 
+                        oDrillRivetActions,
+                            Newly created DrillRivet actions 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param SpotDrProfile i_spot_dr_profile:
         :param SpotDrManufacturingPattern i_pattern:
@@ -115,16 +115,16 @@ class SpotDrActionFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteDrillRivetAction(AnyObject iDrillRivetAction)
-                |     This method deletes the DrillRivet action
-                | 
-                |     Parameters:
-                | 
-                |         iDrillRivetAction,
-                |             DrillRivet action to be deleted. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DeleteDrillRivetAction(AnyObject iDrillRivetAction)
+                    This method deletes the DrillRivet action
+                
+                    Parameters:
+                
+                        iDrillRivetAction,
+                            DrillRivet action to be deleted. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param AnyObject i_drill_rivet_action:
         :return: None

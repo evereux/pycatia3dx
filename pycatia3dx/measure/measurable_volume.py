@@ -16,16 +16,16 @@ class MeasurableVolume(MeasurableInContext):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurableVolume
-                | 
-                | Interface representing the measurement on a volume.
-                | Get the volume, the area and the center of gravity.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurableVolume
+                
+                Interface representing the measurement on a volume.
+                Get the volume, the area and the center of gravity.
     
     """
 
@@ -38,21 +38,21 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetArea() As double
-                |     Retrieves the wet area of the volume.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the wet area of theMeasurableVolume
-                |            measure.
-                |            The area unit given by oArea is m²
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableVolume As MeasurableVolume
-                |              Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
-                |              Dim theArea As Double
-                |              theArea = theMeasurableVolume.GetArea
+                Func GetArea() As double
+                    Retrieves the wet area of the volume.
+                
+                    Example:
+                
+                           This example retrieves the wet area of theMeasurableVolume
+                           measure.
+                           The area unit given by oArea is m²
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableVolume As MeasurableVolume
+                             Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
+                             Dim theArea As Double
+                             theArea = theMeasurableVolume.GetArea
 
         :return: float
         """
@@ -63,24 +63,24 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
-                |     Retrieves the position of the center of gravity of a
-                |     volume.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of the center of gravity of
-                |            theMeasurableVolume measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableVolume As MeasurableVolume
-                |              Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
-                |              Dim theXCOfG As Double
-                |              Dim theYCOfG As Double
-                |              Dim theZCOfG As Double
-                |              theMeasurableVolume.GetCOG theXCOfG, theYCOfG,
-                |              theZCOfG
+                Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
+                    Retrieves the position of the center of gravity of a
+                    volume.
+                
+                    Example:
+                
+                           This example retrieves the position of the center of gravity of
+                           theMeasurableVolume measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableVolume As MeasurableVolume
+                             Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
+                             Dim theXCOfG As Double
+                             Dim theYCOfG As Double
+                             Dim theZCOfG As Double
+                             theMeasurableVolume.GetCOG theXCOfG, theYCOfG,
+                             theZCOfG
 
         :return: tuple
         """
@@ -91,21 +91,21 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetVolume() As double
-                |     Retrieves the volume.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the volume of theMeasurableVolume
-                |            measure.
-                |            The area unit given by oArea is m^3
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableVolume As MeasurableVolume
-                |              Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
-                |              Dim theVolume As Double
-                |              theVolume = theMeasurableVolume.GetVolume
+                Func GetVolume() As double
+                    Retrieves the volume.
+                
+                    Example:
+                
+                           This example retrieves the volume of theMeasurableVolume
+                           measure.
+                           The area unit given by oArea is m^3
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableVolume As MeasurableVolume
+                             Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
+                             Dim theVolume As Double
+                             theVolume = theMeasurableVolume.GetVolume
 
         :return: float
         """
@@ -116,29 +116,29 @@ class MeasurableVolume(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetVolume_Area_COfG(double oVolume,double oArea,double oXCOfG,double
-                | oYCOfG,double oZCOfG)
-                |     Retrieves the volume, the wet area and the center of gravity of the volume.
-                |     All Units are MKS units (mm, m2 and m3)
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the wet area of theMeasurableVolume
-                |            measure.
-                |            The area unit given by oVolume is m^3
-                |            The area unit given by oArea is m²
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableVolume As MeasurableVolume
-                |              Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
-                |              Dim theVolume As Double
-                |              Dim theArea As Double
-                |              Dim theXCOfG As Double
-                |              Dim theYCOfG As Double
-                |              Dim theZCOfG As Double
-                |              theMeasurableVolume.GetVolume_Area_COfG theVolume, theArea,
-                |              theXCOfG, theYCOfG, theZCOfG
+                Sub GetVolume_Area_COfG(double oVolume,double oArea,double oXCOfG,double
+                oYCOfG,double oZCOfG)
+                    Retrieves the volume, the wet area and the center of gravity of the volume.
+                    All Units are MKS units (mm, m2 and m3)
+                
+                    Example:
+                
+                           This example retrieves the wet area of theMeasurableVolume
+                           measure.
+                           The area unit given by oVolume is m^3
+                           The area unit given by oArea is m²
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableVolume As MeasurableVolume
+                             Set theMeasurableVolume = theMeasureService.GetMeasurable(theSelection, CAAMeasurableVolume)
+                             Dim theVolume As Double
+                             Dim theArea As Double
+                             Dim theXCOfG As Double
+                             Dim theYCOfG As Double
+                             Dim theZCOfG As Double
+                             theMeasurableVolume.GetVolume_Area_COfG theVolume, theArea,
+                             theXCOfG, theYCOfG, theZCOfG
 
         :return: tuple
         """

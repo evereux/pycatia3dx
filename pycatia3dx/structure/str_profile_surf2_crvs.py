@@ -18,14 +18,14 @@ class StrProfileSurf2Crvs(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrProfileSurf2Crvs
-                | 
-                | Object to manage Profile created with one plane and two curves
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrProfileSurf2Crvs
+                
+                Object to manage Profile created with one plane and two curves
     
     """
 
@@ -39,16 +39,16 @@ class StrProfileSurf2Crvs(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstCurve() As Reference
-                |     Returns or Sets the Profile's first curve.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the first curve of the Profile 
-                |              
-                | 
-                |              Set RefSurface = ObjStrProfileSurf2Crvs.FirstCurve
+                Property FirstCurve() As Reference
+                    Returns or Sets the Profile's first curve.
+                
+                    Example:
+                
+                
+                             This example gets the first curve of the Profile 
+                             
+                
+                             Set RefSurface = ObjStrProfileSurf2Crvs.FirstCurve
 
         :return: Reference
         """
@@ -69,17 +69,17 @@ class StrProfileSurf2Crvs(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondCurve() As Reference
-                |     Returns or Sets the Profile's second curve.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the second curve of the Profile
-                |              
-                |              
-                | 
-                |              Set RefSurface = ObjStrProfileSurf2Crvs.SecondCurve
+                Property SecondCurve() As Reference
+                    Returns or Sets the Profile's second curve.
+                
+                    Example:
+                
+                
+                             This example gets the second curve of the Profile
+                             
+                             
+                
+                             Set RefSurface = ObjStrProfileSurf2Crvs.SecondCurve
 
         :return: Reference
         """
@@ -100,19 +100,19 @@ class StrProfileSurf2Crvs(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Surface() As Reference
-                |     Returns or Sets the Profile's surface.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the first surface of the Profile 
-                |              
-                |              
-                | 
-                |              Dim ObjStrProfileSurf2Crvs As StrProfileSurf2Crvs
-                |              Set ObjStrProfileSurf2Crvs = ObjSfdMember.StrProfileSurf2Crvs
-                |              Set RefSurface = ObjStrProfileSurf2Crvs.Surface
+                Property Surface() As Reference
+                    Returns or Sets the Profile's surface.
+                
+                    Example:
+                
+                
+                             This example gets the first surface of the Profile 
+                             
+                             
+                
+                             Dim ObjStrProfileSurf2Crvs As StrProfileSurf2Crvs
+                             Set ObjStrProfileSurf2Crvs = ObjSfdMember.StrProfileSurf2Crvs
+                             Set RefSurface = ObjStrProfileSurf2Crvs.Surface
 
         :return: Reference
         """

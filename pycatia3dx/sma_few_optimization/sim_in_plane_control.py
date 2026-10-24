@@ -17,36 +17,36 @@ class SimInPlaneControl(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimInPlaneControl
-                | 
-                | Represents the In Plane Control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimInPlaneControl as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      Dim MyLocalOptimizationArea As SimLocalOptimizationArea
-                |      ...
-                |      Dim MyInPlaneControl As SimInPlaneControl
-                |      Set MyInPlaneControl = MyFeatures.AddSubFeature("SimInPlaneControl", MyLocalOptimizationArea)
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimInPlaneControl as following:
-                | 
-                |      ...
-                |      MyInPlaneControl = MyFeatures.AddSubFeature("SimInPlaneControl", MyLocalOptimizationArea)
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimInPlaneControl
+                
+                Represents the In Plane Control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimInPlaneControl as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     Dim MyLocalOptimizationArea As SimLocalOptimizationArea
+                     ...
+                     Dim MyInPlaneControl As SimInPlaneControl
+                     Set MyInPlaneControl = MyFeatures.AddSubFeature("SimInPlaneControl", MyLocalOptimizationArea)
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimInPlaneControl as following:
+                
+                     ...
+                     MyInPlaneControl = MyFeatures.AddSubFeature("SimInPlaneControl", MyLocalOptimizationArea)
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 

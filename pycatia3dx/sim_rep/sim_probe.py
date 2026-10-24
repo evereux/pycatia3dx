@@ -21,14 +21,14 @@ class SimProbe(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimProbe
-                | 
-                | Represents the Simulation Probe
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimProbe
+                
+                Represents the Simulation Probe
     
     """
 
@@ -42,14 +42,14 @@ class SimProbe(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioSpec() As SimScenarioSpec (Read Only)
-                |     Gets the scenario aggregating this probe(return Nothing if the probe is not
-                |     aggregated by a scenario). SimScenarioSpec
-                | 
-                |     Parameters:
-                | 
-                |         oScenarioSpec[out]
-                |             The scenario aggregating this probe.
+                Property ScenarioSpec() As SimScenarioSpec (Read Only)
+                    Gets the scenario aggregating this probe(return Nothing if the probe is not
+                    aggregated by a scenario). SimScenarioSpec
+                
+                    Parameters:
+                
+                        oScenarioSpec[out]
+                            The scenario aggregating this probe.
 
         :return: SimScenarioSpec
         """

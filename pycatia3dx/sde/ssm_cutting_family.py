@@ -18,15 +18,15 @@ class SsmCuttingFamily(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmCuttingFamily
-                | 
-                | Role: This interface is specific to CuttingFamily Of Space
-                | Manager
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmCuttingFamily
+                
+                Role: This interface is specific to CuttingFamily Of Space
+                Manager
     
     """
 
@@ -39,16 +39,16 @@ class SsmCuttingFamily(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetChildren(SsmCuttingInputs olChildObjects)
-                |     Get the list of children
-                | 
-                |     Parameters:
-                | 
-                |         olChildObjects
-                |             output list of child 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Sub GetChildren(SsmCuttingInputs olChildObjects)
+                    Get the list of children
+                
+                    Parameters:
+                
+                        olChildObjects
+                            output list of child 
+                
+                    Returns:
+                        Error code of function. 
 
         :param SsmCuttingInputs ol_child_objects:
         :return: None

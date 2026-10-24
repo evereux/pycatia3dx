@@ -17,16 +17,16 @@ class DrPatternGroupFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrPatternGroupFactory
-                | 
-                | Interface implemented by pattern group and manufacturing product used to create
-                | pattern groups.
-                | Role: This interface allows creation of pattern groups.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrPatternGroupFactory
+                
+                Interface implemented by pattern group and manufacturing product used to create
+                pattern groups.
+                Role: This interface allows creation of pattern groups.
     
     """
 
@@ -39,13 +39,13 @@ class DrPatternGroupFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreatePatternGroup() As AnyObject
-                |     Creates a pattern group.
-                | 
-                |     Parameters:
-                | 
-                |         oDrPatternGroup
-                |             The newly created pattern group. 
+                Func CreatePatternGroup() As AnyObject
+                    Creates a pattern group.
+                
+                    Parameters:
+                
+                        oDrPatternGroup
+                            The newly created pattern group. 
 
         :return: AnyObject
         """

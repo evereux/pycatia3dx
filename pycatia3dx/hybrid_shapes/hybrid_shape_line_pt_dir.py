@@ -20,30 +20,30 @@ class HybridShapeLinePtDir(Line):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Line
-                |                             HybridShapeLinePtDir
-                | 
-                | Line defined by a point and a direction.
-                | Role: To access data of the line feature created by using a passing point and a
-                | direction.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeLinePtDir
-                | object.
-                | 
-                | See also:
-                |     Reference
-                | See also:
-                |     Length
-                | See also:
-                |     HybridShapeDirection
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Line
+                                            HybridShapeLinePtDir
+                
+                Line defined by a point and a direction.
+                Role: To access data of the line feature created by using a passing point and a
+                direction.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeLinePtDir
+                object.
+                
+                See also:
+                    Reference
+                See also:
+                    Length
+                See also:
+                    HybridShapeDirection
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -57,16 +57,16 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BeginOffset() As Length (Read Only)
-                |     Returns the start length of the line.
-                |     Start length : extension of the line, beginning at the starting point
-                | 
-                |     Example:
-                |         This example retrieves in oStart the beginning offset length for the
-                |         LinePtDir hybrid shape feature.
-                | 
-                |          Dim oStart As  CATIALength 
-                |          Set oStart = LinePtDir.BeginOffset
+                Property BeginOffset() As Length (Read Only)
+                    Returns the start length of the line.
+                    Start length : extension of the line, beginning at the starting point
+                
+                    Example:
+                        This example retrieves in oStart the beginning offset length for the
+                        LinePtDir hybrid shape feature.
+                
+                         Dim oStart As  CATIALength 
+                         Set oStart = LinePtDir.BeginOffset
 
         :return: Length
         """
@@ -79,15 +79,15 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Dir() As HybridShapeDirection
-                |     Returns or Sets the direction of the line.
-                | 
-                |     Example:
-                |         This example retrieves in oDir the direction for the LinePtDir hybrid
-                |         shape feature.
-                | 
-                |          Dim oDir As CATIAHybridShapeDirection
-                |          Set oDir = LinePtDir.Dir
+                Property Dir() As HybridShapeDirection
+                    Returns or Sets the direction of the line.
+                
+                    Example:
+                        This example retrieves in oDir the direction for the LinePtDir hybrid
+                        shape feature.
+                
+                         Dim oDir As CATIAHybridShapeDirection
+                         Set oDir = LinePtDir.Dir
 
         :return: HybridShapeDirection
         """
@@ -108,16 +108,16 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndOffset() As Length (Read Only)
-                |     Returns the end length of the line.
-                |     End length : extension of the line, beginning at the ending point
-                | 
-                |     Example:
-                |         This example retrieves in oEnd the starting length for the LinePtDir
-                |         hybrid shape feature.
-                | 
-                |          Dim oEnd As  CATIALength 
-                |          Set oEnd = LinePtDir.EndOffset
+                Property EndOffset() As Length (Read Only)
+                    Returns the end length of the line.
+                    End length : extension of the line, beginning at the ending point
+                
+                    Example:
+                        This example retrieves in oEnd the starting length for the LinePtDir
+                        hybrid shape feature.
+                
+                         Dim oEnd As  CATIALength 
+                         Set oEnd = LinePtDir.EndOffset
 
         :return: Length
         """
@@ -130,18 +130,18 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Returns or Sets the line orientation.
-                |     Orientation allows to reverse the line direction from the reference
-                |     point.
-                |     For a line of L length, it is the same as creating this line with -L length : Orientation : can be 1 or -1
-                | 
-                |     Example:
-                |         This example retrieves in oOrientation the starting length for the
-                |         LinePtDir hybrid shape feature.
-                | 
-                |          Dim oOrientation As long
-                |          Set oOrientation = LinePtDir.Orientation
+                Property Orientation() As long
+                    Returns or Sets the line orientation.
+                    Orientation allows to reverse the line direction from the reference
+                    point.
+                    For a line of L length, it is the same as creating this line with -L length : Orientation : can be 1 or -1
+                
+                    Example:
+                        This example retrieves in oOrientation the starting length for the
+                        LinePtDir hybrid shape feature.
+                
+                         Dim oOrientation As long
+                         Set oOrientation = LinePtDir.Orientation
 
         :return: int
         """
@@ -162,16 +162,16 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Returns or Sets the starting point of the line.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in oPoint the starting point for the LinePtDir
-                |         hybrid shape feature.
-                | 
-                |          Dim oPoint As Reference
-                |          Set oPoint = LinePtDir.Point
+                Property Point() As Reference
+                    Returns or Sets the starting point of the line.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in oPoint the starting point for the LinePtDir
+                        hybrid shape feature.
+                
+                         Dim oPoint As Reference
+                         Set oPoint = LinePtDir.Point
 
         :return: Reference
         """
@@ -192,18 +192,18 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or Sets the supporting surface.
-                |     Note: the support surface is not mandatory for LinePtDir
-                | 
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in oSurface the supporting surface (if it exist)
-                |         for the LinePtDir hybrid shape feature.
-                | 
-                |          Dim oSurface As Reference 
-                |          Set oSurface = LinePtDir.Surface
+                Property Support() As Reference
+                    Returns or Sets the supporting surface.
+                    Note: the support surface is not mandatory for LinePtDir
+                
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in oSurface the supporting surface (if it exist)
+                        for the LinePtDir hybrid shape feature.
+                
+                         Dim oSurface As Reference 
+                         Set oSurface = LinePtDir.Surface
 
         :return: Reference
         """
@@ -223,13 +223,13 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLengthType() As long
-                |     Gets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Func GetLengthType() As long
+                    Gets the length type Default is 0.
+                
+                    Parameters:
+                
+                        oType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :return: int
         """
@@ -240,14 +240,14 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSymmetricalExtension() As boolean
-                |     Gets whether the symmetrical extension of the line is
-                |     active.
-                | 
-                |     Parameters:
-                | 
-                |         oSym
-                |             Symetry flag
+                Func GetSymmetricalExtension() As boolean
+                    Gets whether the symmetrical extension of the line is
+                    active.
+                
+                    Parameters:
+                
+                        oSym
+                            Symetry flag
 
         :return: bool
         """
@@ -258,8 +258,8 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveSupport()
-                |     Removes the support surface.
+                Sub RemoveSupport()
+                    Removes the support surface.
 
         :return: None
         """
@@ -270,13 +270,13 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLengthType(long iType)
-                |     Sets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Sub SetLengthType(long iType)
+                    Sets the length type Default is 0.
+                
+                    Parameters:
+                
+                        iType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
         :return: None
@@ -288,13 +288,13 @@ class HybridShapeLinePtDir(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSymmetricalExtension(boolean iSym)
-                |     Sets the symmetrical extension of the line (start = -end).
-                | 
-                |     Parameters:
-                | 
-                |         iSym
-                |             Symetry flag
+                Sub SetSymmetricalExtension(boolean iSym)
+                    Sets the symmetrical extension of the line (start = -end).
+                
+                    Parameters:
+                
+                        iSym
+                            Symetry flag
 
         :param bool i_sym:
         :return: None

@@ -16,29 +16,29 @@ class SimFieldPlotOptions(SimFieldPlot):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaResultsIDLItf.SimFieldPlot
-                |                         SimFieldPlotOptions
-                | 
-                | Represents the field plot rendering options.
-                | Role:After creating the field plot, one can set the various options provided in
-                | this interface.
-                | The Update method needs to be called at the end after setting all the
-                | options.
-                | Example:
-                | 
-                |  Given a field plot object, you can set the various options.
-                |  
-                | 
-                |  Dim oFieldPlotOptions As SimFieldPlotOptions
-                |  Set oFieldPlotOptions = oFieldPlot.GetItem("SimFieldPlotOptions")
-                |  oFieldPlotOptions.Transparency = False
-                |  oFieldPlotOptions.SetShowLabels False, False
-                |  oFieldPlotOptions.Update
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaResultsIDLItf.SimFieldPlot
+                                        SimFieldPlotOptions
+                
+                Represents the field plot rendering options.
+                Role:After creating the field plot, one can set the various options provided in
+                this interface.
+                The Update method needs to be called at the end after setting all the
+                options.
+                Example:
+                
+                 Given a field plot object, you can set the various options.
+                 
+                
+                 Dim oFieldPlotOptions As SimFieldPlotOptions
+                 Set oFieldPlotOptions = oFieldPlot.GetItem("SimFieldPlotOptions")
+                 oFieldPlotOptions.Transparency = False
+                 oFieldPlotOptions.SetShowLabels False, False
+                 oFieldPlotOptions.Update
     
     """
 
@@ -52,10 +52,10 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExteriorRenderStyle(SimRenderStyle ieStyle) (Write
-                | Only)
-                |     Sets the exterior render style for the model. The SimRenderStyle enum can
-                |     be found in SMAIAMpaFieldPlotEnums file
+                Property ExteriorRenderStyle(SimRenderStyle ieStyle) (Write
+                Only)
+                    Sets the exterior render style for the model. The SimRenderStyle enum can
+                    be found in SMAIAMpaFieldPlotEnums file
 
         :return: bool
         """
@@ -76,9 +76,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExteriorSymbols(boolean ibExtSymbol) (Write Only)
-                |     Sets the exterior symbols to the field plot. Set True to show the exterior
-                |     symbol.
+                Property ExteriorSymbols(boolean ibExtSymbol) (Write Only)
+                    Sets the exterior symbols to the field plot. Set True to show the exterior
+                    symbol.
 
         :return: bool
         """
@@ -99,8 +99,8 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HideModel(boolean ibHideModel) (Write Only)
-                |     Hides the model and only shows the symbols.
+                Property HideModel(boolean ibHideModel) (Write Only)
+                    Hides the model and only shows the symbols.
 
         :return: bool
         """
@@ -121,10 +121,10 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsocontourRenderStyle(SimRenderStyle ieStyle) (Write
-                | Only)
-                |     Sets the iso-contour render style. The SimRenderStyle enum can be found in
-                |     SMAIAMpaFieldPlotEnums file
+                Property IsocontourRenderStyle(SimRenderStyle ieStyle) (Write
+                Only)
+                    Sets the iso-contour render style. The SimRenderStyle enum can be found in
+                    SMAIAMpaFieldPlotEnums file
 
         :return: bool
         """
@@ -145,9 +145,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ModelRenderStyle(SimRenderStyle ieStyle) (Write Only)
-                |     Sets the render style for the model. The SimRenderStyle enum can be found
-                |     in SMAIAMpaFieldPlotEnums file
+                Property ModelRenderStyle(SimRenderStyle ieStyle) (Write Only)
+                    Sets the render style for the model. The SimRenderStyle enum can be found
+                    in SMAIAMpaFieldPlotEnums file
 
         :return: bool
         """
@@ -168,10 +168,10 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SectionPointsLocation(SimSectionPointLocation ieLocation) (Write
-                | Only)
-                |     Specifies the section point location. The SimSectionPointLocation enum can
-                |     be found in SMAIAMpaFieldPlotEnums file.
+                Property SectionPointsLocation(SimSectionPointLocation ieLocation) (Write
+                Only)
+                    Specifies the section point location. The SimSectionPointLocation enum can
+                    be found in SMAIAMpaFieldPlotEnums file.
 
         :return: bool
         """
@@ -192,8 +192,8 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShowIsocontourEdges(boolean ibShowEdges) (Write Only)
-                |     Displays the isocontour edges.
+                Property ShowIsocontourEdges(boolean ibShowEdges) (Write Only)
+                    Displays the isocontour edges.
 
         :return: bool
         """
@@ -214,9 +214,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SymbolDensity(double idValue) (Write Only)
-                |     Sets the symbol density to the field plot. The value ranges from 1 to
-                |     100.
+                Property SymbolDensity(double idValue) (Write Only)
+                    Sets the symbol density to the field plot. The value ranges from 1 to
+                    100.
 
         :return: bool
         """
@@ -237,9 +237,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Transparency(boolean ibTransperency) (Write Only)
-                |     Sets the transparency to the field plot. Set True to make it
-                |     transparent.
+                Property Transparency(boolean ibTransperency) (Write Only)
+                    Sets the transparency to the field plot. Set True to make it
+                    transparent.
 
         :return: bool
         """
@@ -260,9 +260,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TransparentIsocontours(boolean ibTransparency) (Write
-                | Only)
-                |     Sets the transparency of the iso-contours.
+                Property TransparentIsocontours(boolean ibTransparency) (Write
+                Only)
+                    Sets the transparency of the iso-contours.
 
         :return: bool
         """
@@ -282,18 +282,18 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNodeSymbolAttributes(SimNodeSymbolType ieSymbolType,double
-                | idValue,boolean ibUseDepthEffect)
-                |     Sets the node symbol attributes. The value ranges from 1 to
-                |     100.
-                | 
-                |     Parameters:
-                | 
-                |         SimNodeSymbolType
-                |             Specifies the symbol type. See SimNodeSymbolType for more options
-                |             
-                |         ibUseDepthEffect
-                |             Set True to show the depth effect.
+                Sub SetNodeSymbolAttributes(SimNodeSymbolType ieSymbolType,double
+                idValue,boolean ibUseDepthEffect)
+                    Sets the node symbol attributes. The value ranges from 1 to
+                    100.
+                
+                    Parameters:
+                
+                        SimNodeSymbolType
+                            Specifies the symbol type. See SimNodeSymbolType for more options
+                            
+                        ibUseDepthEffect
+                            Set True to show the depth effect.
 
         :param int ie_symbol_type:
         :param float id_value:
@@ -307,22 +307,22 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetShellStyle(SimShellStyle ieShellStyle,SimThicknessDataSourceType
-                | ieSourceType,double idScaleFactor)
-                |     Specifies the shell styles options.
-                | 
-                |     Parameters:
-                | 
-                |         ieShellStyle
-                |             Specifies the shell style. The SimShellStyles enum can be found in
-                |             SMAIAMpaFieldPlotEnums file. 
-                |         ieSourceType
-                |             Specify the thickness data source for the rendering thickness. The
-                |             SimThicknessDataSourceType enum can be found in SMAIAMpaFieldPlotEnums file.
-                |             
-                |         idScaleFactor
-                |             Specifies the Thickness Scale Factor, expressed as a multiplier, to
-                |             enhance visibility.
+                Sub SetShellStyle(SimShellStyle ieShellStyle,SimThicknessDataSourceType
+                ieSourceType,double idScaleFactor)
+                    Specifies the shell styles options.
+                
+                    Parameters:
+                
+                        ieShellStyle
+                            Specifies the shell style. The SimShellStyles enum can be found in
+                            SMAIAMpaFieldPlotEnums file. 
+                        ieSourceType
+                            Specify the thickness data source for the rendering thickness. The
+                            SimThicknessDataSourceType enum can be found in SMAIAMpaFieldPlotEnums file.
+                            
+                        idScaleFactor
+                            Specifies the Thickness Scale Factor, expressed as a multiplier, to
+                            enhance visibility.
 
         :param int ie_shell_style:
         :param int ie_source_type:
@@ -336,16 +336,16 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetShowLabels(boolean ibNodeLabels,boolean
-                | ibElementLabels)
-                |     Displays the node and element and labels.
-                | 
-                |     Parameters:
-                | 
-                |         ibNodeLabels
-                |             Set true to show the node labels. 
-                |         ibElementLabels
-                |             Set true to show the element labels.
+                Sub SetShowLabels(boolean ibNodeLabels,boolean
+                ibElementLabels)
+                    Displays the node and element and labels.
+                
+                    Parameters:
+                
+                        ibNodeLabels
+                            Set true to show the node labels. 
+                        ibElementLabels
+                            Set true to show the element labels.
 
         :param bool ib_node_labels:
         :param bool ib_element_labels:
@@ -358,17 +358,17 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetShowSPHDisplay(boolean ibShowParticles,boolean
-                | ibShowSurface)
-                |     Specifies the SPH display options. If both the options are set True, the
-                |     SPH particle as well as SPH surface will be shown.
-                | 
-                |     Parameters:
-                | 
-                |         ibShowParticles
-                |             Set True to show the SPH particles. 
-                |         ibShowSurface
-                |             Set True to show the SPH surface.
+                Sub SetShowSPHDisplay(boolean ibShowParticles,boolean
+                ibShowSurface)
+                    Specifies the SPH display options. If both the options are set True, the
+                    SPH particle as well as SPH surface will be shown.
+                
+                    Parameters:
+                
+                        ibShowParticles
+                            Set True to show the SPH particles. 
+                        ibShowSurface
+                            Set True to show the SPH surface.
 
         :param bool ib_show_particles:
         :param bool ib_show_surface:
@@ -381,21 +381,21 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetThreshold(SimThresholdType ieThresholdType,double idValue,boolean
-                | ibShowExtrema)
-                |     Specifies the threshold type to set the measurement criteria. It also
-                |     displays the minimum and maximum values in the plot.
-                | 
-                |     Parameters:
-                | 
-                |         ieThresholdType
-                |             Specifies the threshold type. The SimThresholdType enum can be
-                |             found in SMAIAMpaFieldPlotEnums file. 
-                |         idValue
-                |             Specifies the upper or the lower limit depending on the threshold
-                |             type. 
-                |         ibShowExtrema
-                |             True to display the extrema on the plot.
+                Sub SetThreshold(SimThresholdType ieThresholdType,double idValue,boolean
+                ibShowExtrema)
+                    Specifies the threshold type to set the measurement criteria. It also
+                    displays the minimum and maximum values in the plot.
+                
+                    Parameters:
+                
+                        ieThresholdType
+                            Specifies the threshold type. The SimThresholdType enum can be
+                            found in SMAIAMpaFieldPlotEnums file. 
+                        idValue
+                            Specifies the upper or the lower limit depending on the threshold
+                            type. 
+                        ibShowExtrema
+                            True to display the extrema on the plot.
 
         :param int ie_threshold_type:
         :param float id_value:
@@ -409,20 +409,20 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetVisibleEdges(SimVisibleEdges ieEdgeType,double
-                | idEdgeAngle)
-                |     Specifies the way in which the edges will be displayed.
-                | 
-                |     Parameters:
-                | 
-                |         ieEdgeType
-                |             Set the type of edge option. The SimVisibleEdges enum can be found
-                |             in SMAIAMpaFieldPlotEnums file. 
-                |         idEdgeAngle
-                |             This option is valid only for SimOutline option only. The edge
-                |             angle is the minimum angle between adjoining element faces in order for an edge
-                |             to be shown in the display. The edge angle must be greater than zero and less
-                |             than or equal to 90°.
+                Sub SetVisibleEdges(SimVisibleEdges ieEdgeType,double
+                idEdgeAngle)
+                    Specifies the way in which the edges will be displayed.
+                
+                    Parameters:
+                
+                        ieEdgeType
+                            Set the type of edge option. The SimVisibleEdges enum can be found
+                            in SMAIAMpaFieldPlotEnums file. 
+                        idEdgeAngle
+                            This option is valid only for SimOutline option only. The edge
+                            angle is the minimum angle between adjoining element faces in order for an edge
+                            to be shown in the display. The edge angle must be greater than zero and less
+                            than or equal to 90°.
 
         :param int ie_edge_type:
         :param float id_edge_angle:
@@ -435,9 +435,9 @@ class SimFieldPlotOptions(SimFieldPlot):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the field plot. This method should be called at the end after
-                |     setting all the above attributes.
+                Sub Update()
+                    Updates the field plot. This method should be called at the end after
+                    setting all the above attributes.
 
         :return: None
         """

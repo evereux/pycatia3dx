@@ -18,51 +18,51 @@ class SimRibControl(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimRibControl
-                | 
-                | Represents the rib control object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a SimRibControl
-                |     as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyRibControl As SimRibControl
-                |      Set MyRibControl = MyFeatures.Add("SimRibControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimRibControl named "Rib Control.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyRibControl As SimRibControl
-                |      Set MyRibControl = MyFeatures.Item("Rib Control.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a SimRibControl
-                |     as following:
-                | 
-                |      ...
-                |      MyRibControl = MyFeatures.Add("SimRibControl")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimRibControl named "Rib Control.1" as following:
-                | 
-                |      ...
-                |      MyRibControl = MyFeatures.Item("Rib Control.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimRibControl
+                
+                Represents the rib control object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a SimRibControl
+                    as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyRibControl As SimRibControl
+                     Set MyRibControl = MyFeatures.Add("SimRibControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimRibControl named "Rib Control.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyRibControl As SimRibControl
+                     Set MyRibControl = MyFeatures.Item("Rib Control.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a SimRibControl
+                    as following:
+                
+                     ...
+                     MyRibControl = MyFeatures.Add("SimRibControl")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimRibControl named "Rib Control.1" as following:
+                
+                     ...
+                     MyRibControl = MyFeatures.Item("Rib Control.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimRibControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the rib control.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the rib control.
 
         :return: SimAxisSystem
         """
@@ -89,13 +89,13 @@ class SimRibControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRibDistance(double oVal)
-                |     Gets the Rib Distance.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Distance value. Quantity: Distance, units: m
+                Sub GetRibDistance(double oVal)
+                    Gets the Rib Distance.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Distance value. Quantity: Distance, units: m
 
         :param float o_val:
         :return: None
@@ -107,13 +107,13 @@ class SimRibControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRibThickness(double oVal)
-                |     Gets the Rib Thickness.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Thickness value. Quantity: Thickness, units: m
+                Sub GetRibThickness(double oVal)
+                    Gets the Rib Thickness.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Thickness value. Quantity: Thickness, units: m
 
         :param float o_val:
         :return: None
@@ -125,13 +125,13 @@ class SimRibControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRibDistance(double iVal)
-                |     Sets the Rib Distance.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Constraint value. Quantity: Distance, units: m
+                Sub SetRibDistance(double iVal)
+                    Sets the Rib Distance.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Constraint value. Quantity: Distance, units: m
 
         :param float i_val:
         :return: None
@@ -143,13 +143,13 @@ class SimRibControl(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRibThickness(double iVal)
-                |     Sets the Rib Thickness.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Thickness value. Quantity: Thickness, units: m
+                Sub SetRibThickness(double iVal)
+                    Sets the Rib Thickness.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Thickness value. Quantity: Thickness, units: m
 
         :param float i_val:
         :return: None

@@ -18,17 +18,17 @@ class SfdMember(StructureMember):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATStrIDLItf.StructureProfile
-                |                         CATStrIDLItf.StructureMember
-                |                             SfdMember
-                | 
-                | Object to manage Structure Functional Modeler Member.
-                | Role: Allows accessing and setting of Sfd Member's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATStrIDLItf.StructureProfile
+                                        CATStrIDLItf.StructureMember
+                                            SfdMember
+                
+                Object to manage Structure Functional Modeler Member.
+                Role: Allows accessing and setting of Sfd Member's data.
     
     """
 
@@ -42,23 +42,23 @@ class SfdMember(StructureMember):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjMaterialMngt the
-                |              MaterialMngt
-                |              object of the SfdMember
-                |              
-                | 
-                |              'Here RefGeometricalSet is reference to the
-                |              GeometricalSet
-                |              Set ObjSfdMember = ObjSfdFactory.AddMember(RefGeometricalSet)
-                |              Dim ObjMaterialMngt As StrMaterialMngt 
-                |              Set ObjMaterialMngt = ObjSfdMember.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjMaterialMngt the
+                             MaterialMngt
+                             object of the SfdMember
+                             
+                
+                             'Here RefGeometricalSet is reference to the
+                             GeometricalSet
+                             Set ObjSfdMember = ObjSfdFactory.AddMember(RefGeometricalSet)
+                             Dim ObjMaterialMngt As StrMaterialMngt 
+                             Set ObjMaterialMngt = ObjSfdMember.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -71,20 +71,20 @@ class SfdMember(StructureMember):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrUserConnections() As StrUserConnections (Read
-                | Only)
-                |     Returns the UserConnections that are inside this object.See
-                |     StrUserConnection interface.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the UserConnections inside this
-                |              object.
-                |              
-                | 
-                |               Dim ListOfUserConnections As StrUserConnections
-                |               Set ListOfUserConnections = ObjSfdMember.StrUserConnections
+                Property StrUserConnections() As StrUserConnections (Read
+                Only)
+                    Returns the UserConnections that are inside this object.See
+                    StrUserConnection interface.
+                
+                    Example:
+                
+                
+                             This example retrieves the UserConnections inside this
+                             object.
+                             
+                
+                              Dim ListOfUserConnections As StrUserConnections
+                              Set ListOfUserConnections = ObjSfdMember.StrUserConnections
 
         :return: StrUserConnections
         """

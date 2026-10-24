@@ -17,14 +17,14 @@ class SimBuckleLanczosEigensolver(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimBuckleLanczosEigensolver
-                | 
-                | Represents the Buckle Lanczos Eigensolver object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimBuckleLanczosEigensolver
+                
+                Represents the Buckle Lanczos Eigensolver object.
     
     """
 
@@ -38,8 +38,8 @@ class SimBuckleLanczosEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumEigenvalue() As double
-                |     Returns or sets the maximum Eigen value.
+                Property MaximumEigenvalue() As double
+                    Returns or sets the maximum Eigen value.
 
         :return: float
         """
@@ -60,11 +60,11 @@ class SimBuckleLanczosEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumEigenvalueSet() As boolean
-                |     Returns or sets the flag that determines if the maximum Eigen value is
-                |     specified.
-                |     TRUE : the maximum Eigen value is specified.
-                |     FALSE : the maximum Eigen value is not specified.
+                Property MaximumEigenvalueSet() As boolean
+                    Returns or sets the flag that determines if the maximum Eigen value is
+                    specified.
+                    TRUE : the maximum Eigen value is specified.
+                    FALSE : the maximum Eigen value is not specified.
 
         :return: bool
         """
@@ -85,8 +85,8 @@ class SimBuckleLanczosEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumEigenvalue() As double
-                |     Returns or sets the minimum Eigen value.
+                Property MinimumEigenvalue() As double
+                    Returns or sets the minimum Eigen value.
 
         :return: float
         """
@@ -107,11 +107,11 @@ class SimBuckleLanczosEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumEigenvalueSet() As boolean
-                |     Returns or sets the flag that determines if the minimum Eigen value is
-                |     specified.
-                |     TRUE : the minimum Eigen value is specified.
-                |     FALSE : the minimum Eigen value is not specified.
+                Property MinimumEigenvalueSet() As boolean
+                    Returns or sets the flag that determines if the minimum Eigen value is
+                    specified.
+                    TRUE : the minimum Eigen value is specified.
+                    FALSE : the minimum Eigen value is not specified.
 
         :return: bool
         """
@@ -132,8 +132,8 @@ class SimBuckleLanczosEigensolver(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfEigenvalues() As long
-                |     Returns or sets the number of Eigen values. 
+                Property NumberOfEigenvalues() As long
+                    Returns or sets the number of Eigen values. 
 
         :return: int
         """

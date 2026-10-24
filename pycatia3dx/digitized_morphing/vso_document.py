@@ -17,21 +17,21 @@ class VSODocument(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VSODocument
-                | 
-                | Interface representing a RSO Document feature.
-                | 
-                | Role: Components that implement CATIAVSODocument are Virtual to Real Shape
-                | Morphind documents linked to an external element (SIMULIA result, VPM Document,
-                | ...) This interface allows to synchronize the document with its
-                | reference.
-                | 
-                | ClassReference, Class#MethodReference, #InternalMethod...
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VSODocument
+                
+                Interface representing a RSO Document feature.
+                
+                Role: Components that implement CATIAVSODocument are Virtual to Real Shape
+                Morphind documents linked to an external element (SIMULIA result, VPM Document,
+                ...) This interface allows to synchronize the document with its
+                reference.
+                
+                ClassReference, Class#MethodReference, #InternalMethod...
     
     """
 
@@ -44,7 +44,7 @@ class VSODocument(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Synchronize()
+                Sub Synchronize()
 
         :return: None
         """

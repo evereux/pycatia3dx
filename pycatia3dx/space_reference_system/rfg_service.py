@@ -20,15 +20,15 @@ class RfgService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         RfgService
-                | 
-                | Service related to reference planes and Ref surface
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        RfgService
+                
+                Service related to reference planes and Ref surface
     
     """
 
@@ -41,13 +41,13 @@ class RfgService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateProjectData(Part iActiveRepPart)
-                |     creates ProjectData
-                | 
-                |     Parameters:
-                | 
-                |         iActiveRepPart
-                |             part where ProjectData will be created.
+                Sub CreateProjectData(Part iActiveRepPart)
+                    creates ProjectData
+                
+                    Parameters:
+                
+                        iActiveRepPart
+                            part where ProjectData will be created.
 
         :param Part i_active_rep_part:
         :return: None
@@ -59,18 +59,18 @@ class RfgService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateRefSurfaceFeature(Reference iPart,Reference
-                | iProjectData)
-                |     creates a Reference Surface (like Hull)
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             part where reference surface feature will be created.
-                |             
-                |         iProjectData
-                |             openbody in the part where reference surface feature will be
-                |             created.
+                Sub CreateRefSurfaceFeature(Reference iPart,Reference
+                iProjectData)
+                    creates a Reference Surface (like Hull)
+                
+                    Parameters:
+                
+                        iPart
+                            part where reference surface feature will be created.
+                            
+                        iProjectData
+                            openbody in the part where reference surface feature will be
+                            created.
 
         :param Reference i_part:
         :param Reference i_project_data:
@@ -84,34 +84,34 @@ class RfgService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetReferencePlane(Part iPart,CATVariant iPlaneSystemIndex,CATVariant
-                | iPlaneIndex) As RfgGridFace
-                |     Returns a reference plane in the specific PlaneSystems.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             Parent part of the plane. 
-                |         iPlaneSystemIndex
-                |             Represents the plane system.
-                |             1 : DECK
-                |             2 : CROSS
-                |             3 : LONG 
-                |         iPlaneIndex
-                |             part where ProjectData will be created. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in RefPlane the reference planes contained
-                |              into the 1st PlaneSystem,
-                |              and which has CROSS.12 as a name.
-                |              
-                | 
-                |              Dim ObjRfgService As RfgService
-                |              Set ObjRfgService = CATIA.ActiveEditor.GetService("RfgService")
-                |              Dim RefPlane As RfgGridFace
-                |              Set RefPlane = ObjRfgService.GetReferencePlane ObjPart, 2, "CROSS.12"
+                Func GetReferencePlane(Part iPart,CATVariant iPlaneSystemIndex,CATVariant
+                iPlaneIndex) As RfgGridFace
+                    Returns a reference plane in the specific PlaneSystems.
+                
+                    Parameters:
+                
+                        iPart
+                            Parent part of the plane. 
+                        iPlaneSystemIndex
+                            Represents the plane system.
+                            1 : DECK
+                            2 : CROSS
+                            3 : LONG 
+                        iPlaneIndex
+                            part where ProjectData will be created. 
+                
+                    Example:
+                
+                
+                             This example retrieves in RefPlane the reference planes contained
+                             into the 1st PlaneSystem,
+                             and which has CROSS.12 as a name.
+                             
+                
+                             Dim ObjRfgService As RfgService
+                             Set ObjRfgService = CATIA.ActiveEditor.GetService("RfgService")
+                             Dim RefPlane As RfgGridFace
+                             Set RefPlane = ObjRfgService.GetReferencePlane ObjPart, 2, "CROSS.12"
 
         :param Part i_part:
         :param CATVariant i_plane_system_index:
@@ -125,14 +125,14 @@ class RfgService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SynchronizePlanes(Part iPart)
-                |     Synchronize the local reference planes to the external plane
-                |     definition.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             This part's reference planes will be synchronized.
+                Sub SynchronizePlanes(Part iPart)
+                    Synchronize the local reference planes to the external plane
+                    definition.
+                
+                    Parameters:
+                
+                        iPart
+                            This part's reference planes will be synchronized.
 
         :param Part i_part:
         :return: None
@@ -144,14 +144,14 @@ class RfgService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SynchronizeRefSurface(Part iPart)
-                |     Synchronize the import of the reference surface with the external reference
-                |     surface definition.
-                | 
-                |     Parameters:
-                | 
-                |         iPart
-                |             This part's reference Surface will be synchronized.
+                Sub SynchronizeRefSurface(Part iPart)
+                    Synchronize the import of the reference surface with the external reference
+                    surface definition.
+                
+                    Parameters:
+                
+                        iPart
+                            This part's reference Surface will be synchronized.
 
         :param Part i_part:
         :return: None

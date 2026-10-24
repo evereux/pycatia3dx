@@ -17,14 +17,14 @@ class SimMeshTopology(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMeshTopology
-                | 
-                | Represents Mesh Virtual Topology.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMeshTopology
+                
+                Represents Mesh Virtual Topology.
     
     """
 
@@ -38,7 +38,7 @@ class SimMeshTopology(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dimension() As short (Read Only)
+                Property Dimension() As short (Read Only)
 
         :return: int
         """

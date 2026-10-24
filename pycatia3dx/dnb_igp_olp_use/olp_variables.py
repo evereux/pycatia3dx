@@ -20,21 +20,21 @@ class OLPVariables(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpVariables
-                | 
-                | A list of variables.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A variable can be an external IO, a procedure argument, a constant, or a
-                | regular variable.
-                | This can be retrieved from OlpProcedure.LocalVariables or from
-                | OlpBehavior.GlobalVariables
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpVariables
+                
+                A list of variables.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A variable can be an external IO, a procedure argument, a constant, or a
+                regular variable.
+                This can be retrieved from OlpProcedure.LocalVariables or from
+                OlpBehavior.GlobalVariables
     
     """
 
@@ -48,9 +48,9 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Filter() As DELOlpVariableType
-                |     Filter the collection to only contain variables of a specific
-                |     type.
+                Property Filter() As DELOlpVariableType
+                    Filter the collection to only contain variables of a specific
+                    type.
 
         :return: DELOlpVariableType
         """
@@ -71,21 +71,21 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FilterInString() As CATBSTR
-                |     This is an extended version of the Filter property, whose enum type does
-                |     not include Alias and any future types. Use "Alias" to filter the new alias
-                |     type of variables
-                |     Given the name of the aliased object, an alias named "iName" will be
-                |     retrieved if existing, or created otherwise. The alias variable is returned in
-                |     either case.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the alias to be retrieved or created. 
-                |         iAliasOf
-                |             The name of the aliased variable Use string "Position" to create a
-                |             position constant
+                Property FilterInString() As CATBSTR
+                    This is an extended version of the Filter property, whose enum type does
+                    not include Alias and any future types. Use "Alias" to filter the new alias
+                    type of variables
+                    Given the name of the aliased object, an alias named "iName" will be
+                    retrieved if existing, or created otherwise. The alias variable is returned in
+                    either case.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the alias to be retrieved or created. 
+                        iAliasOf
+                            The name of the aliased variable Use string "Position" to create a
+                            position constant
 
         :return: str
         """
@@ -105,20 +105,20 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateAlias(CATBSTR iName,CATBSTR iAliasOf) As
-                | OlpVariable
-                |     Create or retrieve an alias variable.
-                |     Given the name of the aliased object, an alias named "iName" will be
-                |     retrieved if existing, or created otherwise. The alias variable is returned in
-                |     either case.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the alias to be retrieved or created. 
-                |         iAliasOf
-                |             The name of the aliased variable Use string "Position" to create a
-                |             position constant
+                Func GetOrCreateAlias(CATBSTR iName,CATBSTR iAliasOf) As
+                OlpVariable
+                    Create or retrieve an alias variable.
+                    Given the name of the aliased object, an alias named "iName" will be
+                    retrieved if existing, or created otherwise. The alias variable is returned in
+                    either case.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the alias to be retrieved or created. 
+                        iAliasOf
+                            The name of the aliased variable Use string "Position" to create a
+                            position constant
 
         :param str i_name:
         :param str i_alias_of:
@@ -131,13 +131,13 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateConst(CATBSTR iName,DELOlpDataType iDataType,CATBSTR iValue) As
-                | OlpVariable
-                |     Create a constant.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
+                Func GetOrCreateConst(CATBSTR iName,DELOlpDataType iDataType,CATBSTR iValue) As
+                OlpVariable
+                    Create a constant.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
 
         :param str i_name:
         :param int i_data_type:
@@ -151,21 +151,21 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateConstInStringType(CATBSTR iName,CATBSTR iDataType,CATBSTR
-                | iValue) As OlpVariable
-                |     Create a constant.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
-                | 
-                |     Parameters:
-                | 
-                |         iDataType
-                |             The string type of constant to get or create. The type is the same
-                |             as the DELOlpDataType enum but without the delOlp prefix. For example if the
-                |             intended type is delOlpInteger, use string "Integer". Use string "Position" to
-                |             create a position constant
+                Func GetOrCreateConstInStringType(CATBSTR iName,CATBSTR iDataType,CATBSTR
+                iValue) As OlpVariable
+                    Create a constant.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
+                
+                    Parameters:
+                
+                        iDataType
+                            The string type of constant to get or create. The type is the same
+                            as the DELOlpDataType enum but without the delOlp prefix. For example if the
+                            intended type is delOlpInteger, use string "Integer". Use string "Position" to
+                            create a position constant
 
         :param str i_name:
         :param str i_data_type:
@@ -179,18 +179,18 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateIO(CATBSTR iName,DELOlpDataType iDataType,DELOlpIODirection
-                | iDirection) As OlpVariable
-                |     Create an IO variable.
-                |     If this is the variables collection for a OlpProcedure, then the IO is a
-                |     procedure argument. The order the procedure arguments are created in must match
-                |     the calling order in the OlpRun instruction. If this is the variables
-                |     collection for a OlpBehavior then the IO is an external
-                |     IO.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
+                Func GetOrCreateIO(CATBSTR iName,DELOlpDataType iDataType,DELOlpIODirection
+                iDirection) As OlpVariable
+                    Create an IO variable.
+                    If this is the variables collection for a OlpProcedure, then the IO is a
+                    procedure argument. The order the procedure arguments are created in must match
+                    the calling order in the OlpRun instruction. If this is the variables
+                    collection for a OlpBehavior then the IO is an external
+                    IO.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
 
         :param str i_name:
         :param int i_data_type:
@@ -204,26 +204,26 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateIOInStringType(CATBSTR iName,CATBSTR
-                | iDataType,DELOlpIODirection iDirection) As OlpVariable
-                |     Create an IO variable.
-                |     If this is the variables collection for a OlpProcedure, then the IO is a
-                |     procedure argument. The order the procedure arguments are created in must match
-                |     the calling order in the OlpRun instruction. If this is the variables
-                |     collection for a OlpBehavior then the IO is an external
-                |     IO.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
-                | 
-                |     Parameters:
-                | 
-                |         iDataType
-                |             The string type of IO to get or create. The type is the same as the
-                |             DELOlpDataType enum but without the delOlp prefix. For example if the intended
-                |             type is delOlpInteger, use string "Integer". Use string "Position" to create a
-                |             position IO
+                Func GetOrCreateIOInStringType(CATBSTR iName,CATBSTR
+                iDataType,DELOlpIODirection iDirection) As OlpVariable
+                    Create an IO variable.
+                    If this is the variables collection for a OlpProcedure, then the IO is a
+                    procedure argument. The order the procedure arguments are created in must match
+                    the calling order in the OlpRun instruction. If this is the variables
+                    collection for a OlpBehavior then the IO is an external
+                    IO.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
+                
+                    Parameters:
+                
+                        iDataType
+                            The string type of IO to get or create. The type is the same as the
+                            DELOlpDataType enum but without the delOlp prefix. For example if the intended
+                            type is delOlpInteger, use string "Integer". Use string "Position" to create a
+                            position IO
 
         :param str i_name:
         :param str i_data_type:
@@ -237,13 +237,13 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateLocalVar(CATBSTR iName,DELOlpDataType iDataType) As
-                | OlpVariable
-                |     Create a local variable.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
+                Func GetOrCreateLocalVar(CATBSTR iName,DELOlpDataType iDataType) As
+                OlpVariable
+                    Create a local variable.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
 
         :param str i_name:
         :param int i_data_type:
@@ -256,21 +256,21 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateLocalVarInStringType(CATBSTR iName,CATBSTR iDataType) As
-                | OlpVariable
-                |     Create a local variable.
-                |     If a variable with this name already exists at this scope, it will be used
-                |     instead of creating a new variable. If that variable does not match the other
-                |     parameters specified, a warning will be issued, but the variable will still be
-                |     returned.
-                | 
-                |     Parameters:
-                | 
-                |         iDataType
-                |             The string type of local variable to get or create. The type is the
-                |             same as the DELOlpDataType enum but without the delOlp prefix. For example if
-                |             the intended type is delOlpInteger, use string "Integer". Use string "Position"
-                |             to create a position variable
+                Func GetOrCreateLocalVarInStringType(CATBSTR iName,CATBSTR iDataType) As
+                OlpVariable
+                    Create a local variable.
+                    If a variable with this name already exists at this scope, it will be used
+                    instead of creating a new variable. If that variable does not match the other
+                    parameters specified, a warning will be issued, but the variable will still be
+                    returned.
+                
+                    Parameters:
+                
+                        iDataType
+                            The string type of local variable to get or create. The type is the
+                            same as the DELOlpDataType enum but without the delOlp prefix. For example if
+                            the intended type is delOlpInteger, use string "Integer". Use string "Position"
+                            to create a position variable
 
         :param str i_name:
         :param str i_data_type:
@@ -283,14 +283,14 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateSubscriptedVariable(OlpVariable iArrayVariable) As
-                | OlpVariable
-                |     Create a subscripted variable.
-                |     A subscripted variable is the combination of the array name and a
-                |     subscript. You can use a subscripted variable anyplace an ordinary variable can
-                |     go. For example x[3] is a subscripted variable. Subscripted variables are not
-                |     saved or stored anywhere until they are set on an instruction either as the
-                |     target of an assignment or in an expression.
+                Func GetOrCreateSubscriptedVariable(OlpVariable iArrayVariable) As
+                OlpVariable
+                    Create a subscripted variable.
+                    A subscripted variable is the combination of the array name and a
+                    subscript. You can use a subscripted variable anyplace an ordinary variable can
+                    go. For example x[3] is a subscripted variable. Subscripted variables are not
+                    saved or stored anywhere until they are set on an instruction either as the
+                    target of an assignment or in an expression.
 
         :param OLPVariable i_array_variable:
         :return: OLPVariable
@@ -302,10 +302,10 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrCreateTimer(CATBSTR iName) As OlpVariable
-                |     Create a timer variable.
-                |     If a timer with this name already exists at this scope, it will be used
-                |     instead of creating a new variable.
+                Func GetOrCreateTimer(CATBSTR iName) As OlpVariable
+                    Create a timer variable.
+                    If a timer with this name already exists at this scope, it will be used
+                    instead of creating a new variable.
 
         :param str i_name:
         :return: OLPVariable
@@ -317,22 +317,22 @@ class OLPVariables(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As OlpVariable
-                |     Retrieve a variable by its name or index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             If iIndex is a string, then a variable with that name is returned,
-                |             regardless of the current filter. If the index is a number, it is the index of
-                |             the variable in the collection with the current filter applied. The index of
-                |             the first parameter in the collection is 1, and the index of the last parameter
-                |             is Count. 
-                | 
-                |     Returns:
-                |         The variable retrieved. If the variable name was not found, Nothing is
-                |         returned but the function succeeds. If the index is out of bounds, the function
-                |         fails. 
+                Func Item(CATVariant iIndex) As OlpVariable
+                    Retrieve a variable by its name or index.
+                
+                    Parameters:
+                
+                        iIndex
+                            If iIndex is a string, then a variable with that name is returned,
+                            regardless of the current filter. If the index is a number, it is the index of
+                            the variable in the collection with the current filter applied. The index of
+                            the first parameter in the collection is 1, and the index of the last parameter
+                            is Count. 
+                
+                    Returns:
+                        The variable retrieved. If the variable name was not found, Nothing is
+                        returned but the function succeeds. If the index is out of bounds, the function
+                        fails. 
 
         :param CATVariant i_index:
         :return: OLPVariable

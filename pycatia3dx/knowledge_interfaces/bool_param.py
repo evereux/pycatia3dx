@@ -17,25 +17,25 @@ class BoolParam(EnumParam):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         KnowledgeIDLItf.EnumParam
-                |                             BoolParam
-                | 
-                | Represents the boolean parameter.
-                | The following example shows how to create it:
-                | 
-                |  Dim aParmFact As CATIAParametersFactory
-                |  Set aParmFact   = ...
-                |  Dim availability As BooleanParam
-                |  Set availability = aParmFact.CreateBoolean("availability", True)
-                | 
-                | See also:
-                |     ParametersFactory.CreateBoolean
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        KnowledgeIDLItf.EnumParam
+                                            BoolParam
+                
+                Represents the boolean parameter.
+                The following example shows how to create it:
+                
+                 Dim aParmFact As CATIAParametersFactory
+                 Set aParmFact   = ...
+                 Dim availability As BooleanParam
+                 Set availability = aParmFact.CreateBoolean("availability", True)
+                
+                See also:
+                    ParametersFactory.CreateBoolean
     
     """
 
@@ -49,16 +49,16 @@ class BoolParam(EnumParam):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Value() As boolean
-                |     Returns or sets the value of the boolean parameter.
-                | 
-                |     Example:
-                |         This example sets the availability boolean parameter value to True if
-                |         its value is False:
-                | 
-                |          If (availability.Value = False)  Then
-                |              availability.Value = True
-                |          End If
+                Property Value() As boolean
+                    Returns or sets the value of the boolean parameter.
+                
+                    Example:
+                        This example sets the availability boolean parameter value to True if
+                        its value is False:
+                
+                         If (availability.Value = False)  Then
+                             availability.Value = True
+                         End If
 
         :return: bool
         """

@@ -19,57 +19,57 @@ class SimReactionMomentResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimReactionMomentResponseVariable
-                | 
-                | Represents the reaction moment response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimReactionMomentResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyReactionMomentResponseVariable As
-                |      SimReactionMomentResponseVariable
-                |      Set MyReactionMomentResponseVariable = MyFeatures.Add("SimReactionMomentResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimReactionMomentResponseVariable named "Reaction Moment Response Variable.1"
-                |     as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyReactionMomentResponseVariable As
-                |      SimReactionMomentResponseVariable
-                |      Set MyReactionMomentResponseVariable = MyFeatures.Item("Reaction moment Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimReactionMomentResponseVariable as following:
-                | 
-                |      ...
-                |      MyReactionMomentResponseVariable = MyFeatures.Add("SimReactionMomentResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimReactionMomentResponseVariable named "Reaction Moment Response Variable.1"
-                |     as following:
-                | 
-                |      ...
-                |      MyReactionMomentResponseVariable = MyFeatures.Item("Reaction Moment Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimReactionMomentResponseVariable
+                
+                Represents the reaction moment response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimReactionMomentResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyReactionMomentResponseVariable As
+                     SimReactionMomentResponseVariable
+                     Set MyReactionMomentResponseVariable = MyFeatures.Add("SimReactionMomentResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimReactionMomentResponseVariable named "Reaction Moment Response Variable.1"
+                    as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyReactionMomentResponseVariable As
+                     SimReactionMomentResponseVariable
+                     Set MyReactionMomentResponseVariable = MyFeatures.Item("Reaction moment Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimReactionMomentResponseVariable as following:
+                
+                     ...
+                     MyReactionMomentResponseVariable = MyFeatures.Add("SimReactionMomentResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimReactionMomentResponseVariable named "Reaction Moment Response Variable.1"
+                    as following:
+                
+                     ...
+                     MyReactionMomentResponseVariable = MyFeatures.Item("Reaction Moment Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -83,8 +83,8 @@ class SimReactionMomentResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the displacement design response.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the displacement design response.
 
         :return: SimAxisSystem
         """
@@ -97,8 +97,8 @@ class SimReactionMomentResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDesignResponseDirection
-                |     Returns or sets the direction of displacement design response.
+                Property Direction() As SimDesignResponseDirection
+                    Returns or sets the direction of displacement design response.
 
         :return: int
         """
@@ -119,8 +119,8 @@ class SimReactionMomentResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase.
 
         :return: AnyObject
         """
@@ -133,7 +133,7 @@ class SimReactionMomentResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseAbsoluteValueOfDirectionFlag() As boolean
+                Property UseAbsoluteValueOfDirectionFlag() As boolean
 
         :return: bool
         """

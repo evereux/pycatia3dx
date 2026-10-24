@@ -18,17 +18,17 @@ class SemanticGDTFrameExtension(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SemanticGDTFrameExtension
-                | 
-                | Interface to parse Semantic GDT auxiliary feature.
-                | 
-                | Its allows getting information of Intersection Plane, Orientation Plane,
-                | Collection Plane or Direction Feature. (ISO Standard only).
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SemanticGDTFrameExtension
+                
+                Interface to parse Semantic GDT auxiliary feature.
+                
+                Its allows getting information of Intersection Plane, Orientation Plane,
+                Collection Plane or Direction Feature. (ISO Standard only).
     
     """
 
@@ -42,20 +42,20 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DirectionSpecification() As CATBSTR (Read Only)
-                |     Gets the direction specification.
-                | 
-                |     Parameters:
-                | 
-                |         oDirSpec
-                |             The Direction of Specification.
-                |             List of legal values are the same as the ones obtained using
-                |             SuperType property (equals to "FTA_Orientation") from Annotation2 augmented by
-                |             specific type "FTA_Symmetry":
-                |             oDirSpec = "FTA_Parallelism"
-                |             oDirSpec = "FTA_Perpendicularity"
-                |             oDirSpec = "FTA_Angularity"
-                |             oDirSpec = "FTA_Symmetry"
+                Property DirectionSpecification() As CATBSTR (Read Only)
+                    Gets the direction specification.
+                
+                    Parameters:
+                
+                        oDirSpec
+                            The Direction of Specification.
+                            List of legal values are the same as the ones obtained using
+                            SuperType property (equals to "FTA_Orientation") from Annotation2 augmented by
+                            specific type "FTA_Symmetry":
+                            oDirSpec = "FTA_Parallelism"
+                            oDirSpec = "FTA_Perpendicularity"
+                            oDirSpec = "FTA_Angularity"
+                            oDirSpec = "FTA_Symmetry"
 
         :return: str
         """
@@ -68,18 +68,18 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Gets the Type.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             The Type.
-                |             List of types available:
-                |             Type = "FTA_IntersectionPlane"
-                |             Type = "FTA_OrientationPlane"
-                |             Type = "FTA_CollectionPlane"
-                |             Type = "FTA_DirectionFeature"
+                Property Type() As CATBSTR (Read Only)
+                    Gets the Type.
+                
+                    Parameters:
+                
+                        oType
+                            The Type.
+                            List of types available:
+                            Type = "FTA_IntersectionPlane"
+                            Type = "FTA_OrientationPlane"
+                            Type = "FTA_CollectionPlane"
+                            Type = "FTA_DirectionFeature"
 
         :return: str
         """
@@ -91,14 +91,14 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DirectionReference() As DatumSimple
-                |     Returns the Datum Feature used as reference to specify auxiliary
-                |     feature.
-                | 
-                |     Parameters:
-                | 
-                |         oDatumFeature
-                |             The Datum Feature.
+                Func DirectionReference() As DatumSimple
+                    Returns the Datum Feature used as reference to specify auxiliary
+                    feature.
+                
+                    Parameters:
+                
+                        oDatumFeature
+                            The Datum Feature.
 
         :return: DatumSimple
         """
@@ -109,15 +109,15 @@ class SemanticGDTFrameExtension(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Orientation() As double
-                |     Retrieves orientation angle when DirectionSpecification is
-                |     "FTA_Angularity".
-                |     These values are expressed in degrees.
-                | 
-                |     Parameters:
-                | 
-                |         oOrientation
-                |             The orientation value with respect to Datum Feature reference.
+                Func Orientation() As double
+                    Retrieves orientation angle when DirectionSpecification is
+                    "FTA_Angularity".
+                    These values are expressed in degrees.
+                
+                    Parameters:
+                
+                        oOrientation
+                            The orientation value with respect to Datum Feature reference.
 
         :return: float
         """

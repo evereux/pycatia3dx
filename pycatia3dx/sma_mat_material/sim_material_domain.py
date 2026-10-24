@@ -19,28 +19,28 @@ class SimMaterialDomain(MaterialDomainContent):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMaterialIDLItf.MaterialDomainContent
-                |                         SimMaterialDomain
-                | 
-                | Represents the Simulation Material Domain object.
-                | 
-                | Example:
-                |     Given a MaterialDomains object, you can create and retrieve a
-                |     SimMaterialDomain object as following:
-                | 
-                |      Dim MyMaterialDomains As MaterialDomains
-                |      ...
-                |      Dim MyMaterialDomain As MaterialDomain
-                |      MyMaterialDomains.Add "dsc_matref_rep_SmaOptions",
-                |      MyMaterialDomain
-                | 
-                |      Dim MySimulationDomain As SimMaterialDomain
-                |      Set MySimulationDomain = MyMaterialDomain.MaterialDomainContent
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMaterialIDLItf.MaterialDomainContent
+                                        SimMaterialDomain
+                
+                Represents the Simulation Material Domain object.
+                
+                Example:
+                    Given a MaterialDomains object, you can create and retrieve a
+                    SimMaterialDomain object as following:
+                
+                     Dim MyMaterialDomains As MaterialDomains
+                     ...
+                     Dim MyMaterialDomain As MaterialDomain
+                     MyMaterialDomains.Add "dsc_matref_rep_SmaOptions",
+                     MyMaterialDomain
+                
+                     Dim MySimulationDomain As SimMaterialDomain
+                     Set MySimulationDomain = MyMaterialDomain.MaterialDomainContent
     
     """
 
@@ -54,8 +54,8 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Behaviors() As SimMaterialBehaviors (Read Only)
-                |     Retrieves a collection of all behaviors in the material domain.
+                Property Behaviors() As SimMaterialBehaviors (Read Only)
+                    Retrieves a collection of all behaviors in the material domain.
 
         :return: SimMaterialBehaviors
         """
@@ -68,8 +68,8 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefaultBehavior() As CATBaseDispatch
-                |     Default material behavior on a simulation domain.
+                Property DefaultBehavior() As CATBaseDispatch
+                    Default material behavior on a simulation domain.
 
         :return: AnyObject
         """
@@ -90,8 +90,8 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Material() As CATBaseDispatch (Read Only)
-                |     Retrieves material reference of simulation domain.
+                Property Material() As CATBaseDispatch (Read Only)
+                    Retrieves material reference of simulation domain.
 
         :return: AnyObject
         """
@@ -104,8 +104,8 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Options() As SimMaterialOptions (Read Only)
-                |     Retrieves a collection of all material options in the material domain.
+                Property Options() As SimMaterialOptions (Read Only)
+                    Retrieves a collection of all material options in the material domain.
 
         :return: SimMaterialOptions
         """
@@ -117,18 +117,18 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DuplicateAndAddMaterialOption(CATBaseDispatch ipMatOptionSource) As
-                | CATBaseDispatch
-                |     Duplicates and adds a material option in a simulation
-                |     domain.
-                | 
-                |     Parameters:
-                | 
-                |         ispMatOptionSource
-                |             Material option to be duplicated. 
-                | 
-                |     Returns:
-                |         Duplicated material option.
+                Func DuplicateAndAddMaterialOption(CATBaseDispatch ipMatOptionSource) As
+                CATBaseDispatch
+                    Duplicates and adds a material option in a simulation
+                    domain.
+                
+                    Parameters:
+                
+                        ispMatOptionSource
+                            Material option to be duplicated. 
+                
+                    Returns:
+                        Duplicated material option.
 
         :param AnyObject ip_mat_option_source:
         :return: AnyObject
@@ -140,12 +140,12 @@ class SimMaterialDomain(MaterialDomainContent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SyncAllBehaviors()
-                |     Synchronises all material behaviors. This should be done after
-                |     modifications to individual material options and behaviors within a material
-                |     domain are completed and before the material domain is used elsewhere. It is
-                |     not necessary to sync the material domain after each modification to a material
-                |     domain or behavior 
+                Sub SyncAllBehaviors()
+                    Synchronises all material behaviors. This should be done after
+                    modifications to individual material options and behaviors within a material
+                    domain are completed and before the material domain is used elsewhere. It is
+                    not necessary to sync the material domain after each modification to a material
+                    domain or behavior 
 
         :return: None
         """

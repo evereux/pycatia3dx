@@ -17,55 +17,55 @@ class SimOptimizationSolverSettings(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimOptimizationSolverSettings
-                | 
-                | Represents the optimization solver settings object.
-                | 
-                | Example:< / strong>< / dt>
-                |     Given a SimDesignImprovementFeatures< / code> object, you can create a
-                |     SimOptimizationSolverSettings< / code> as following :
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyOptimizationSolverSettings As
-                |      SimOptimizationSolverSettings
-                |      Set MyOptimizationSolverSettings = MyFeatures.Add("SimOptimizationSolverSettings")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures< / code> object, you can retrieve a
-                |     SimOptimizationSolverSettings< / code> named " Optimization Solver Settings.1"
-                |     as following :
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyOptimizationSolverSettings As
-                |      SimOptimizationSolverSettings
-                |      Set MyOptimizationSolverSettings = MyFeatures.Item("Optimization Solver Settings.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimOptimizationSolverSettings as following:
-                | 
-                |      ...
-                |      MyOptimizationSolverSettings = MyFeatures.Add("SimOptimizationSolverSettings")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimOptimizationSolverSettings named "Optimization Solver Settings.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyOptimizationSolverSettings = MyFeatures.Item("Optimization Solver Settings.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimOptimizationSolverSettings
+                
+                Represents the optimization solver settings object.
+                
+                Example:< / strong>< / dt>
+                    Given a SimDesignImprovementFeatures< / code> object, you can create a
+                    SimOptimizationSolverSettings< / code> as following :
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyOptimizationSolverSettings As
+                     SimOptimizationSolverSettings
+                     Set MyOptimizationSolverSettings = MyFeatures.Add("SimOptimizationSolverSettings")
+                     
+                
+                    Given a SimDesignImprovementFeatures< / code> object, you can retrieve a
+                    SimOptimizationSolverSettings< / code> named " Optimization Solver Settings.1"
+                    as following :
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyOptimizationSolverSettings As
+                     SimOptimizationSolverSettings
+                     Set MyOptimizationSolverSettings = MyFeatures.Item("Optimization Solver Settings.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimOptimizationSolverSettings as following:
+                
+                     ...
+                     MyOptimizationSolverSettings = MyFeatures.Add("SimOptimizationSolverSettings")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimOptimizationSolverSettings named "Optimization Solver Settings.1" as
+                    following:
+                
+                     ...
+                     MyOptimizationSolverSettings = MyFeatures.Item("Optimization Solver Settings.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -79,9 +79,9 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DensityUpdateStrategyType() As
-                | SimDensityUpdateStrategyType
-                |     Returns or sets the type of density update strategy.
+                Property DensityUpdateStrategyType() As
+                SimDensityUpdateStrategyType
+                    Returns or sets the type of density update strategy.
 
         :return: int
         """
@@ -102,9 +102,9 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialInterpolationType() As
-                | SimMaterialInterpolationType
-                |     Returns or sets the type of material interpolation.
+                Property MaterialInterpolationType() As
+                SimMaterialInterpolationType
+                    Returns or sets the type of material interpolation.
 
         :return: int
         """
@@ -125,8 +125,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NodalUpdateType() As SimNodalUpdateType
-                |     Returns or sets the type of nodal update.
+                Property NodalUpdateType() As SimNodalUpdateType
+                    Returns or sets the type of nodal update.
 
         :return: int
         """
@@ -147,8 +147,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceModeType() As SimReferenceModeType
-                |     Returns or sets the type of reference mode.
+                Property ReferenceModeType() As SimReferenceModeType
+                    Returns or sets the type of reference mode.
 
         :return: SimReferenceModeType
         """
@@ -169,8 +169,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RemoveSoftElementsType() As SimRemoveSoftElementsType
-                |     Returns or sets the type of remove soft elements.
+                Property RemoveSoftElementsType() As SimRemoveSoftElementsType
+                    Returns or sets the type of remove soft elements.
 
         :return: SimRemoveSoftElementsType
         """
@@ -191,8 +191,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseConvergenceChecksFlag() As boolean
-                |     Returns or sets the flag for activate convergence checks .
+                Property UseConvergenceChecksFlag() As boolean
+                    Returns or sets the flag for activate convergence checks .
 
         :return: bool
         """
@@ -213,8 +213,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseModeTrackingFlag() As boolean
-                |     Returns or sets the flag for activate mode tracking .
+                Property UseModeTrackingFlag() As boolean
+                    Returns or sets the flag for activate mode tracking .
 
         :return: bool
         """
@@ -235,8 +235,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UseStablizationFlag() As boolean
-                |     Returns or sets the enable stabilization flag for minimize mass objective .
+                Property UseStablizationFlag() As boolean
+                    Returns or sets the enable stabilization flag for minimize mass objective .
 
         :return: bool
         """
@@ -257,8 +257,8 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VectorUpdateType() As SimVectorUpdateType
-                |     Returns or sets the type of vector update.
+                Property VectorUpdateType() As SimVectorUpdateType
+                    Returns or sets the type of vector update.
 
         :return: int
         """
@@ -278,13 +278,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDensityValueChange(double oVal)
-                |     Sets the change in density values
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Change value. Quantity: REAL, units:None
+                Sub GetDensityValueChange(double oVal)
+                    Sets the change in density values
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Change value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -296,13 +296,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetFilterRadius(double oVal)
-                |     Gets the filter radius
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Radius value. Quantity: REAL, units:None
+                Sub GetFilterRadius(double oVal)
+                    Gets the filter radius
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Radius value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -314,13 +314,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetInitialDensity(double oVal)
-                |     Gets the initial density.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Density Value. Quantity: REAL, units:None
+                Sub GetInitialDensity(double oVal)
+                    Gets the initial density.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Density Value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -332,14 +332,14 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetIterationNumber(short oVal)
-                |     Gets the iteration from which the convergence checks
-                |     activates
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Iteration value. Quantity: REAL, units:None
+                Sub GetIterationNumber(short oVal)
+                    Gets the iteration from which the convergence checks
+                    activates
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Iteration value. Quantity: REAL, units:None
 
         :param int o_val:
         :return: None
@@ -351,13 +351,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLowerDensity(double oVal)
-                |     Gets the lower density limit.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] lower density value. Quantity: REAL, units:None
+                Sub GetLowerDensity(double oVal)
+                    Gets the lower density limit.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] lower density value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -369,13 +369,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaterialPenaltyFactor(double oVal)
-                |     Gets the material penalty factor.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Penalty value. Quantity: REAL, units:None
+                Sub GetMaterialPenaltyFactor(double oVal)
+                    Gets the material penalty factor.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Penalty value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -387,13 +387,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMaximumDensityChange(double oVal)
-                |     Gets the maximum density change per iteration.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Change Value. Quantity: REAL, units:None
+                Sub GetMaximumDensityChange(double oVal)
+                    Gets the maximum density change per iteration.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Change Value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -405,13 +405,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetModeNumber(short oVal)
-                |     Sets the number of modes to track
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Mode value. Quantity: REAL, units:None
+                Sub GetModeNumber(short oVal)
+                    Sets the number of modes to track
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Mode value. Quantity: REAL, units:None
 
         :param int o_val:
         :return: None
@@ -423,13 +423,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetNodeMoveLimit(double oVal)
-                |     Gets the node move limit
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Move value. Quantity: REAL, units:None
+                Sub GetNodeMoveLimit(double oVal)
+                    Gets the node move limit
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Move value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -441,13 +441,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetObjectiveFunctionChange(double oVal)
-                |     Gets the change in objective function
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Change value. Quantity: REAL, units:None
+                Sub GetObjectiveFunctionChange(double oVal)
+                    Gets the change in objective function
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Change value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -459,13 +459,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetSoftDeleteThreshold(double oVal)
-                |     Gets the soft delete threshold values.
-                | 
-                |     Parameters:
-                | 
-                |         oVal
-                |             [out] Threshold value. Quantity: REAL, units:None
+                Sub GetSoftDeleteThreshold(double oVal)
+                    Gets the soft delete threshold values.
+                
+                    Parameters:
+                
+                        oVal
+                            [out] Threshold value. Quantity: REAL, units:None
 
         :param float o_val:
         :return: None
@@ -477,13 +477,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDensityValueChange(double iVal)
-                |     Sets the change in density values
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Change value. Quantity: REAL, units:None
+                Sub SetDensityValueChange(double iVal)
+                    Sets the change in density values
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Change value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -495,13 +495,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFilterRadius(double iVal)
-                |     Sets the filter radius
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Radius value. Quantity: REAL, units:None
+                Sub SetFilterRadius(double iVal)
+                    Sets the filter radius
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Radius value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -513,13 +513,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInitialDensity(double iVal)
-                |     Sets the initial density.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Density Value. Quantity: REAL, units:None
+                Sub SetInitialDensity(double iVal)
+                    Sets the initial density.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Density Value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -531,14 +531,14 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetIterationNumber(short iVal)
-                |     Sets the iteration from which the convergence checks
-                |     activates
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Iteration value. Quantity: REAL, units:None
+                Sub SetIterationNumber(short iVal)
+                    Sets the iteration from which the convergence checks
+                    activates
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Iteration value. Quantity: REAL, units:None
 
         :param int i_val:
         :return: None
@@ -550,13 +550,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLowerDensity(double iVal)
-                |     Sets the lower density limit.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] lower density value. Quantity: REAL, units:None
+                Sub SetLowerDensity(double iVal)
+                    Sets the lower density limit.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] lower density value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -568,13 +568,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterialPenaltyFactor(double iVal)
-                |     Sets the material penalty factor.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Penalty value. Quantity: REAL, units:None
+                Sub SetMaterialPenaltyFactor(double iVal)
+                    Sets the material penalty factor.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Penalty value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -586,13 +586,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaximumDensityChange(double iVal)
-                |     Sets the maximum density change per iteration.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Change Value. Quantity: REAL, units:None
+                Sub SetMaximumDensityChange(double iVal)
+                    Sets the maximum density change per iteration.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Change Value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -604,13 +604,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetModeNumber(short iVal)
-                |     Sets the number of modes to track
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Mode value. Quantity: REAL, units:None
+                Sub SetModeNumber(short iVal)
+                    Sets the number of modes to track
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Mode value. Quantity: REAL, units:None
 
         :param int i_val:
         :return: None
@@ -622,13 +622,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetNodeMoveLimit(double iVal)
-                |     Sets the node move limit
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Move value. Quantity: REAL, units:None
+                Sub SetNodeMoveLimit(double iVal)
+                    Sets the node move limit
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Move value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -640,13 +640,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetObjectiveFunctionChange(double iVal)
-                |     Sets the change in objective function
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Change value. Quantity: REAL, units:None
+                Sub SetObjectiveFunctionChange(double iVal)
+                    Sets the change in objective function
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Change value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None
@@ -658,13 +658,13 @@ class SimOptimizationSolverSettings(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSoftDeleteThreshold(double iVal)
-                |     Sets the soft delete threshold values.
-                | 
-                |     Parameters:
-                | 
-                |         iVal
-                |             [in] Threshold value. Quantity: REAL, units:None
+                Sub SetSoftDeleteThreshold(double iVal)
+                    Sets the soft delete threshold values.
+                
+                    Parameters:
+                
+                        iVal
+                            [in] Threshold value. Quantity: REAL, units:None
 
         :param float i_val:
         :return: None

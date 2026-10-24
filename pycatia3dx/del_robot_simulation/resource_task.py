@@ -17,17 +17,17 @@ class ResourceTask(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ResourceTask
-                | 
-                | Interface representing a Resource Task.
-                | 
-                | Role: This interface is used to create and get motion activities from task and
-                | retieve/assign the attributes of task.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ResourceTask
+                
+                Interface representing a Resource Task.
+                
+                Role: This interface is used to create and get motion activities from task and
+                retieve/assign the attributes of task.
     
     """
 
@@ -41,18 +41,18 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Context() As AnyObject (Read Only)
-                |     This property returns the context where the task is
-                |     created.
-                | 
-                |     Returns:
-                |         oContext The Context 
-                |     Example:
+                Property Context() As AnyObject (Read Only)
+                    This property returns the context where the task is
+                    created.
+                
+                    Returns:
+                        oContext The Context 
+                    Example:
                 |
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objContext
-                |            set objContext=objResTask.Context
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objContext
+                           set objContext=objResTask.Context
 
         :return: AnyObject
         """
@@ -65,19 +65,19 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionActivities() As CATSafeArrayVariant (Read Only)
-                |     Retreives the list of motion activities from the task.
-                | 
-                |     Returns:
-                |         oMotionActivities The list of motion activities. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim MotionActivities
-                |            MotionActivities=objResTask.MotionActivities
+                Property MotionActivities() As CATSafeArrayVariant (Read Only)
+                    Retreives the list of motion activities from the task.
+                
+                    Returns:
+                        oMotionActivities The list of motion activities. 
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim MotionActivities
+                           MotionActivities=objResTask.MotionActivities
 
         :return: tuple
         """
@@ -90,19 +90,19 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionGroups() As CATSafeArrayVariant (Read Only)
-                |     Retreives the list of motion groups from the task.
-                | 
-                |     Returns:
-                |         oMotionGroups The list of motion groups. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim MotionGroups
-                |            MotionGroups=objResTask.MotionGroups
+                Property MotionGroups() As CATSafeArrayVariant (Read Only)
+                    Retreives the list of motion groups from the task.
+                
+                    Returns:
+                        oMotionGroups The list of motion groups. 
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim MotionGroups
+                           MotionGroups=objResTask.MotionGroups
 
         :return: tuple
         """
@@ -115,21 +115,21 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrimaryMCA() As AnyObject (Read Only)
-                |     Retreives primary MCA which is the MCA for the owning
-                |     resource
-                | 
-                |     Returns:
-                |         oMCA The MCA of the owning resource in the task context.
-                |         
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objMCA
-                |            set objMCA=objResTask.PrimaryMCA
+                Property PrimaryMCA() As AnyObject (Read Only)
+                    Retreives primary MCA which is the MCA for the owning
+                    resource
+                
+                    Returns:
+                        oMCA The MCA of the owning resource in the task context.
+                        
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objMCA
+                           set objMCA=objResTask.PrimaryMCA
 
         :return: AnyObject
         """
@@ -142,20 +142,20 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Resource() As AnyObject (Read Only)
-                |     This property returns the resource for which the task is
-                |     created.
-                | 
-                |     Returns:
-                |         oResource The resource 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objResource
-                |            set objResource=objResTask.Resource
+                Property Resource() As AnyObject (Read Only)
+                    This property returns the resource for which the task is
+                    created.
+                
+                    Returns:
+                        oResource The resource 
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objResource
+                           set objResource=objResTask.Resource
 
         :return: AnyObject
         """
@@ -168,20 +168,20 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TaskType() As CATBSTR (Read Only)
-                |     This property returns the type of the task.
-                | 
-                |     Returns:
-                |         oType The Type of the task which can either RobotTask or DeviceTask.
-                |         
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  Type as string
-                |            Type=objResTask.TaskType
+                Property TaskType() As CATBSTR (Read Only)
+                    This property returns the type of the task.
+                
+                    Returns:
+                        oType The Type of the task which can either RobotTask or DeviceTask.
+                        
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  Type as string
+                           Type=objResTask.TaskType
 
         :return: str
         """
@@ -194,23 +194,23 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TrajectoryReference() As AnyObject (Read Only)
-                |     Retreives Trajectory reference of the task.
-                | 
-                |     Returns:
-                |         oTrajectory The trajectory set as reference. 
-                |     Returns:
-                |         oTrajectory The product occurrence which aggregates the trajectory (in
-                |         case the trajectory is in PRODUCT DAG). In case the trajectory is not in
-                |         PRODUCT DAG then Root Product is returned. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objTrajectory
-                |            set objTrajectory=objResTask.TrajectoryReference
+                Property TrajectoryReference() As AnyObject (Read Only)
+                    Retreives Trajectory reference of the task.
+                
+                    Returns:
+                        oTrajectory The trajectory set as reference. 
+                    Returns:
+                        oTrajectory The product occurrence which aggregates the trajectory (in
+                        case the trajectory is in PRODUCT DAG). In case the trajectory is not in
+                        PRODUCT DAG then Root Product is returned. 
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objTrajectory
+                           set objTrajectory=objResTask.TrajectoryReference
 
         :return: AnyObject
         """
@@ -222,33 +222,33 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateMotionActivity(boolean iBefore,AnyObject iReferenceInstruction) As
-                | AnyObject
-                |     Creates a motion activity.
-                | 
-                |     Returns:
-                |         oCreatedMotionAct The created motion activity. 
-                |     Parameters:
-                | 
-                |         iBefore
-                |             Create before the reference instruction or not. 
-                |         iReferenceInstruction
-                |             The reference instruction after which the motion activity and its
-                |             instrution has to be created. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objNewMotionAct As RobotMotion
-                |            Dim  objRefMotionAct As RobotMotion
-                |            Dim  CreateBefore As Boolean
-                |            CreateBefore = FALSE
-                |                   ......
-                |            Call objResTask.CreateMotionActivity(CreateBefore, objRefMotionAct,
-                |            objNewMotionAct)
+                Func CreateMotionActivity(boolean iBefore,AnyObject iReferenceInstruction) As
+                AnyObject
+                    Creates a motion activity.
+                
+                    Returns:
+                        oCreatedMotionAct The created motion activity. 
+                    Parameters:
+                
+                        iBefore
+                            Create before the reference instruction or not. 
+                        iReferenceInstruction
+                            The reference instruction after which the motion activity and its
+                            instrution has to be created. 
+                
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objNewMotionAct As RobotMotion
+                           Dim  objRefMotionAct As RobotMotion
+                           Dim  CreateBefore As Boolean
+                           CreateBefore = FALSE
+                                  ......
+                           Call objResTask.CreateMotionActivity(CreateBefore, objRefMotionAct,
+                           objNewMotionAct)
 
         :param bool i_before:
         :param AnyObject i_reference_instruction:
@@ -261,34 +261,34 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSPMOperation(boolean iBefore,AnyObject iReferenceInstruction) As
-                | AnyObject
-                |     Creates an SPMOperation under a DeviceTask (not supported for
-                |     RobotTask)
-                | 
-                |     Returns:
-                |         oCreatedSPMOp The created SPMOperation. 
-                |     Parameters:
-                | 
-                |         iBefore
-                |             Create before the reference instruction or not. 
-                |         iReferenceInstruction
-                |             The reference instruction before/after which the SPMOperation has
-                |             to be created. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objNewSPMOp As SPMOperation
-                |            Dim  objRefAct As DeviceMotion
-                |            Dim  CreateBefore As Boolean
-                |            CreateBefore = FALSE
-                |                   ......
-                |            Call objResTask.CreateSPMOperation(CreateBefore, objRefAct,
-                |            objNewSPMOp)
+                Func CreateSPMOperation(boolean iBefore,AnyObject iReferenceInstruction) As
+                AnyObject
+                    Creates an SPMOperation under a DeviceTask (not supported for
+                    RobotTask)
+                
+                    Returns:
+                        oCreatedSPMOp The created SPMOperation. 
+                    Parameters:
+                
+                        iBefore
+                            Create before the reference instruction or not. 
+                        iReferenceInstruction
+                            The reference instruction before/after which the SPMOperation has
+                            to be created. 
+                
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objNewSPMOp As SPMOperation
+                           Dim  objRefAct As DeviceMotion
+                           Dim  CreateBefore As Boolean
+                           CreateBefore = FALSE
+                                  ......
+                           Call objResTask.CreateSPMOperation(CreateBefore, objRefAct,
+                           objNewSPMOp)
 
         :param bool i_before:
         :param AnyObject i_reference_instruction:
@@ -301,24 +301,24 @@ class ResourceTask(AnyObject):
             .. note::
     
                 3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                    | Sub DeleteMotionActivities(CATSafeArrayVariant
-                    | iMotionActivities)
-                    |     Deletes a list of motion activities.
+                    Sub DeleteMotionActivities(CATSafeArrayVariant
+                    iMotionActivities)
+                        Deletes a list of motion activities.
                     |
-                    |     Parameters:
+                        Parameters:
                     |
-                    |         iMotionActivities
-                    |             The list if motion activities to delete
+                            iMotionActivities
+                                The list if motion activities to delete
                     |
-                    |     Example:
+                        Example:
                     |
                     |
                     |
-                    |            Dim objResTask As ResourceTask
-                    |                   ......
-                    |            Dim  objMotionActivities
-                    |                   ......
-                    |            Call objResTask.DeleteMotionActivities(oMotionActivities)
+                               Dim objResTask As ResourceTask
+                                      ......
+                               Dim  objMotionActivities
+                                      ......
+                               Call objResTask.DeleteMotionActivities(oMotionActivities)
 
             :param tuple i_motion_activities:
             :return: None
@@ -346,23 +346,23 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteMotionActivity(AnyObject iMotionActivity)
-                |     Deletes a motion activity.
-                | 
-                |     Parameters:
-                | 
-                |         iMotionActivity
-                |             The motion activity to delete 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objMotionAct As RobotMotion
-                |                   ......
-                |            Call objResTask.DeleteMotionActivity(objMotionAct)
+                Sub DeleteMotionActivity(AnyObject iMotionActivity)
+                    Deletes a motion activity.
+                
+                    Parameters:
+                
+                        iMotionActivity
+                            The motion activity to delete 
+                
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objMotionAct As RobotMotion
+                                  ......
+                           Call objResTask.DeleteMotionActivity(objMotionAct)
 
         :param AnyObject i_motion_activity:
         :return: None
@@ -374,26 +374,26 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTrajectoryReference(AnyObject oTrajectory,AnyObject
-                | oTrajectoryOwner)
-                |     Retreives Trajectory reference of the task.
-                | 
-                |     Returns:
-                |         oTrajectory The trajectory set as reference. 
-                |     Returns:
-                |         oTrajectoryOwner The product occurrence which aggregates the trajectory
-                |         (in case the trajectory is in PRODUCT DAG). In case the trajectory is not in
-                |         PRODUCT DAG then Root Product is returned. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objTrajectory As AnyObject
-                |            Dim  objTrajectoryOwner As TrajectoryOwner
-                |            Call objResTask.GetTrajectoryReference objTrajectory
-                |            objTrajectoryOwner
+                Sub GetTrajectoryReference(AnyObject oTrajectory,AnyObject
+                oTrajectoryOwner)
+                    Retreives Trajectory reference of the task.
+                
+                    Returns:
+                        oTrajectory The trajectory set as reference. 
+                    Returns:
+                        oTrajectoryOwner The product occurrence which aggregates the trajectory
+                        (in case the trajectory is in PRODUCT DAG). In case the trajectory is not in
+                        PRODUCT DAG then Root Product is returned. 
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objTrajectory As AnyObject
+                           Dim  objTrajectoryOwner As TrajectoryOwner
+                           Call objResTask.GetTrajectoryReference objTrajectory
+                           objTrajectoryOwner
 
         :param AnyObject o_trajectory:
         :param AnyObject o_trajectory_owner:
@@ -406,28 +406,28 @@ class ResourceTask(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTrajectoryReference(AnyObject iTrajectory,AnyObject
-                | iTrajectoryOwner)
-                |     Sets the Trajectory reference of the task.
-                | 
-                |     Parameters:
-                | 
-                |         iTrajectory
-                |             The Trajectory to be set for reference. 
-                |         iTrajectoryOwner
-                |             The product occurrence which aggregates the Trajectory (in case the
-                |             Trajectory is in PRODUCT DAG). 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objResTask As ResourceTask
-                |                   ......
-                |            Dim  objTrajectory As AnyObject
-                |            Dim  objTrajectoryOwner As TrajectoryOwner
-                |                   ......
-                |            Call objResTask.SetTrajectoryReference(objTrajectory,objTrajectoryOwner)
+                Sub SetTrajectoryReference(AnyObject iTrajectory,AnyObject
+                iTrajectoryOwner)
+                    Sets the Trajectory reference of the task.
+                
+                    Parameters:
+                
+                        iTrajectory
+                            The Trajectory to be set for reference. 
+                        iTrajectoryOwner
+                            The product occurrence which aggregates the Trajectory (in case the
+                            Trajectory is in PRODUCT DAG). 
+                
+                    Example:
+                
+                           
+                
+                           Dim objResTask As ResourceTask
+                                  ......
+                           Dim  objTrajectory As AnyObject
+                           Dim  objTrajectoryOwner As TrajectoryOwner
+                                  ......
+                           Call objResTask.SetTrajectoryReference(objTrajectory,objTrajectoryOwner)
 
         :param AnyObject i_trajectory:
         :param AnyObject i_trajectory_owner:

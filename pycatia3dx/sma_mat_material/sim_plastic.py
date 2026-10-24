@@ -19,51 +19,51 @@ class SimPlastic(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPlastic
-                | 
-                | Represents the Plastic object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimPlastic as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyPlastic As SimPlastic
-                |      Set MyPlastic = MyMaterialOptions.Add("SimPlastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimPlastic named
-                |     "Plastic.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyPlastic As SimPlastic
-                |      Set MyPlastic = MyMaterialOptions.Item("Plastic.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimPlastic as following:
-                | 
-                |      ...
-                |      myPlastic = myMaterialOptions.Add("SimPlastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimPlastic named "Plastic.1" as following:
-                | 
-                |      ...
-                |      myPlastic = myMaterialOptions.Item("Plastic.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPlastic
+                
+                Represents the Plastic object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimPlastic as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyPlastic As SimPlastic
+                     Set MyPlastic = MyMaterialOptions.Add("SimPlastic")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimPlastic named
+                    "Plastic.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyPlastic As SimPlastic
+                     Set MyPlastic = MyMaterialOptions.Item("Plastic.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimPlastic as following:
+                
+                     ...
+                     myPlastic = myMaterialOptions.Add("SimPlastic")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimPlastic named "Plastic.1" as following:
+                
+                     ...
+                     myPlastic = myMaterialOptions.Item("Plastic.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,9 +77,9 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsotropicMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the material table pointer to Isotropic table.
+                Property IsotropicMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the material table pointer to Isotropic table.
 
         :return: SimMaterialTable
         """
@@ -92,9 +92,9 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KinematicMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the material table pointer to kinematic table.
+                Property KinematicMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the material table pointer to kinematic table.
 
         :return: SimMaterialTable
         """
@@ -107,8 +107,8 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfBackStresses() As long
-                |     Returns or sets the number of backstresses.
+                Property NumberOfBackStresses() As long
+                    Returns or sets the number of backstresses.
 
         :return: int
         """
@@ -129,8 +129,8 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlasticHardening() As SimPlasticPlasticHardening
-                |     Returns or sets the type of hardening.
+                Property PlasticHardening() As SimPlasticPlasticHardening
+                    Returns or sets the type of hardening.
 
         :return: int
         """
@@ -151,9 +151,9 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlasticYieldCriterion() As
-                | SimPlasticPlasticYieldCriteria
-                |     Returns or sets the type of plastic yield criteria.
+                Property PlasticYieldCriterion() As
+                SimPlasticPlasticYieldCriteria
+                    Returns or sets the type of plastic yield criteria.
 
         :return: SimPlasticPlasticYieldCriteria
         """
@@ -174,9 +174,9 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PotentialMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the material table pointer to potential table.
+                Property PotentialMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the material table pointer to potential table.
 
         :return: SimMaterialTable
         """
@@ -188,19 +188,19 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetIsotropicMaterialTableColumn(SimPlasticIsotropicMaterialTableColumn
-                | iIsotropicMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the Isotropic table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iIsotropicMaterialTableColumn[in]
-                |             The Isotropic table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetIsotropicMaterialTableColumn(SimPlasticIsotropicMaterialTableColumn
+                iIsotropicMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the Isotropic table
+                    column.
+                
+                    Parameters:
+                
+                        iIsotropicMaterialTableColumn[in]
+                            The Isotropic table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_isotropic_material_table_column:
         :return: SimTableColumn
@@ -212,19 +212,19 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetKinematicMaterialTableColumn(SimPlasticKinematicMaterialTableColumn
-                | iKinematicMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the Kinematic table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iKinematicMaterialTableColumn[in]
-                |             The Kinematic table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetKinematicMaterialTableColumn(SimPlasticKinematicMaterialTableColumn
+                iKinematicMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the Kinematic table
+                    column.
+                
+                    Parameters:
+                
+                        iKinematicMaterialTableColumn[in]
+                            The Kinematic table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_kinematic_material_table_column:
         :return: SimTableColumn
@@ -236,19 +236,19 @@ class SimPlastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPotentialMaterialTableColumn(SimPlasticPotentialMaterialTableColumn
-                | iPotentialMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the Potential table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iPotentialMaterialTableColumn[in]
-                |             The Potential table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetPotentialMaterialTableColumn(SimPlasticPotentialMaterialTableColumn
+                iPotentialMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the Potential table
+                    column.
+                
+                    Parameters:
+                
+                        iPotentialMaterialTableColumn[in]
+                            The Potential table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_potential_material_table_column:
         :return: SimTableColumn

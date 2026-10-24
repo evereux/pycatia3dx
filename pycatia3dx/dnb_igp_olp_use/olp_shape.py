@@ -17,19 +17,19 @@ class OLPShape(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpShape
-                | 
-                | A 3D shape.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object is used with OlpCartesianSafetyZone and
-                | OlpToolVolume
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpShape
+                
+                A 3D shape.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object is used with OlpCartesianSafetyZone and
+                OlpToolVolume
     
     """
 
@@ -43,9 +43,9 @@ class OLPShape(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShapeType() As CATBSTR (Read Only)
-                |     Get the shape type.
-                |     Can be one of "Sphere", "Prism", "Cylinder", or "Capsule".
+                Property ShapeType() As CATBSTR (Read Only)
+                    Get the shape type.
+                    Can be one of "Sphere", "Prism", "Cylinder", or "Capsule".
 
         :return: str
         """

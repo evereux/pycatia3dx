@@ -18,12 +18,12 @@ class ArcOperation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ArcOperation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ArcOperation
 
     
     """
@@ -38,17 +38,17 @@ class ArcOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ArcProfile() As CATBaseUnknown
-                |     Gets the Arc profile for the ArcOperation
-                | 
-                |     Parameters:
-                | 
-                |         oArcProfile,
-                |             ArcProfile for the current ArcOperation [out, IUnknown#Release]
-                |             
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Property ArcProfile() As CATBaseUnknown
+                    Gets the Arc profile for the ArcOperation
+                
+                    Parameters:
+                
+                        oArcProfile,
+                            ArcProfile for the current ArcOperation [out, IUnknown#Release]
+                            
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :return: CATBaseUnknown
         """

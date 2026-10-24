@@ -18,52 +18,52 @@ class SimAppliedRotation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAppliedRotation
-                | 
-                | Represents the Applied Rotation object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAppliedRotation as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAppliedRotation As SimAppliedRotation
-                |      Set MyAppliedRotation = MyFeatures.Add("SimAppliedRotation")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimAppliedRotation named
-                |     "Applied Rotation.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAppliedRotation As SimAppliedRotation
-                |      Set MyAppliedRotation = MyFeatures.Item("Applied Rotation.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimAppliedRotation
-                |     as following:
-                | 
-                |      ...
-                |      myAppliedRotation = myFeatures.Add("SimAppliedRotation")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimAppliedRotation named "Applied Rotation.1" as
-                |     following:
-                | 
-                |      ...
-                |      myAppliedRotation = myFeatures.Item("Applied Rotation.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAppliedRotation
+                
+                Represents the Applied Rotation object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAppliedRotation as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAppliedRotation As SimAppliedRotation
+                     Set MyAppliedRotation = MyFeatures.Add("SimAppliedRotation")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimAppliedRotation named
+                    "Applied Rotation.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAppliedRotation As SimAppliedRotation
+                     Set MyAppliedRotation = MyFeatures.Item("Applied Rotation.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimAppliedRotation
+                    as following:
+                
+                     ...
+                     myAppliedRotation = myFeatures.Add("SimAppliedRotation")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimAppliedRotation named "Applied Rotation.1" as
+                    following:
+                
+                     ...
+                     myAppliedRotation = myFeatures.Item("Applied Rotation.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -77,8 +77,8 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,8 +99,8 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -113,8 +113,8 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Dof() As SimDof
-                |     Returns or sets the degree of freedom on which the rotation is applied.
+                Property Dof() As SimDof
+                    Returns or sets the degree of freedom on which the rotation is applied.
 
         :return: int
         """
@@ -135,8 +135,8 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -149,8 +149,8 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the magnitude. Quantity: ANGLE, units: Degree
+                Property Magnitude() As double
+                    Returns or sets the magnitude. Quantity: ANGLE, units: Degree
 
         :return: float
         """
@@ -171,9 +171,9 @@ class SimAppliedRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage. 
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage. 
 
         :return: str
         """

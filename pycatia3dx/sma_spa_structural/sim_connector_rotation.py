@@ -17,52 +17,52 @@ class SimConnectorRotation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorRotation
-                | 
-                | Represents the Connector Rotation object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimConnectorRotation as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorRotation As SimConnectorRotation
-                |      Set MyConnectorRotation = MyFeatures.Add("SimConnectorRotation")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimConnectorRotation named
-                |     "Connector Rotation.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorRotation As SimConnectorRotation
-                |      Set MyConnectorRotation = MyFeatures.Item("Connector Rotation.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimConnectorRotation as following:
-                | 
-                |      ...
-                |      myConnectorRotation = myFeatures.Add("SimConnectorRotation")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimConnectorRotation named "Connector Rotation.1" as
-                |     following:
-                | 
-                |      ...
-                |      myConnectorRotation = myFeatures.Item("Connector Rotation.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorRotation
+                
+                Represents the Connector Rotation object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimConnectorRotation as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorRotation As SimConnectorRotation
+                     Set MyConnectorRotation = MyFeatures.Add("SimConnectorRotation")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimConnectorRotation named
+                    "Connector Rotation.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorRotation As SimConnectorRotation
+                     Set MyConnectorRotation = MyFeatures.Item("Connector Rotation.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimConnectorRotation as following:
+                
+                     ...
+                     myConnectorRotation = myFeatures.Add("SimConnectorRotation")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimConnectorRotation named "Connector Rotation.1" as
+                    following:
+                
+                     ...
+                     myConnectorRotation = myFeatures.Item("Connector Rotation.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,13 +98,13 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of available connector components of relative
-                |     motion. The list can contains the following values:
-                |     1 : the first rotation DOF is available,
-                |     2 : the second rotation DOF is available,
-                |     3 : the third rotation DOF is available.
+                Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of available connector components of relative
+                    motion. The list can contains the following values:
+                    1 : the first rotation DOF is available,
+                    2 : the second rotation DOF is available,
+                    3 : the third rotation DOF is available.
 
         :return: tuple
         """
@@ -117,8 +117,8 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -131,9 +131,9 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -146,8 +146,8 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As SimConnectorRotationVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As SimConnectorRotationVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -167,17 +167,17 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAngle(SimDof iDegreeOfFreedom) As double
-                |     Retrieves the angle value for a specific degree of
-                |     freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                | 
-                |     Returns:
-                |         The angle value. Quantity: ANGLE, units: deg
+                Func GetAngle(SimDof iDegreeOfFreedom) As double
+                    Retrieves the angle value for a specific degree of
+                    freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                
+                    Returns:
+                        The angle value. Quantity: ANGLE, units: deg
 
         :param SimDof i_degree_of_freedom:
         :return: float
@@ -189,17 +189,17 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRotationActivationFlag(SimDof iDegreeOfFreedom) As
-                | boolean
-                |     Retrieves the flag which determines if a rotation is active on a particular
-                |     degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         oRotationActivationFlag[out]
-                |             The activation flag. TRUE : the rotation is active for the specified DoF, FALSE : the rotation is not active for the specified DoF.
+                Func GetRotationActivationFlag(SimDof iDegreeOfFreedom) As
+                boolean
+                    Retrieves the flag which determines if a rotation is active on a particular
+                    degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        oRotationActivationFlag[out]
+                            The activation flag. TRUE : the rotation is active for the specified DoF, FALSE : the rotation is not active for the specified DoF.
 
         :param int i_degree_of_freedom:
         :return: bool
@@ -211,15 +211,15 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAngle(SimDof iDegreeOfFreedom,double iAngle)
-                |     Sets the angle value for a specific degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         iAngle[in]
-                |             The angle value. Quantity: ANGLE, units: deg
+                Sub SetAngle(SimDof iDegreeOfFreedom,double iAngle)
+                    Sets the angle value for a specific degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        iAngle[in]
+                            The angle value. Quantity: ANGLE, units: deg
 
         :param int i_degree_of_freedom:
         :param float i_angle:
@@ -232,18 +232,18 @@ class SimConnectorRotation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRotationActivationFlag(SimDof iDegreeOfFreedom,boolean
-                | iRotationActivationFlag)
-                |     Set the flag which determines if a rotation is active on a particular
-                |     degree of freedom.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
-                |         iRotationActivationFlag[in]
-                |             The activation flag. TRUE : the rotation is active for the specified DoF, FALSE : the rotation is not active for the specified DoF. 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Sub SetRotationActivationFlag(SimDof iDegreeOfFreedom,boolean
+                iRotationActivationFlag)
+                    Set the flag which determines if a rotation is active on a particular
+                    degree of freedom.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. Valid input values are : SimRotation1, SimRotation2 and SimRotation3 
+                        iRotationActivationFlag[in]
+                            The activation flag. TRUE : the rotation is active for the specified DoF, FALSE : the rotation is not active for the specified DoF. 
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param int i_degree_of_freedom:
         :param bool i_rotation_activation_flag:

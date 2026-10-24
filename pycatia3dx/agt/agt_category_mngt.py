@@ -17,15 +17,15 @@ class AGTCategoryMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTCategoryMngt
-                | 
-                | Object to manage category.
-                | To access category of structure object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTCategoryMngt
+                
+                Object to manage category.
+                To access category of structure object.
     
     """
 
@@ -38,19 +38,19 @@ class AGTCategoryMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCategory() As CATBSTR
-                |     Returns the category of this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in category of insulation
-                |              object.
-                |              
-                | 
-                |              Dim ObjAGTCategoryMngt As AGTMaterialMngt
-                |              Set ObjAGTCategoryMngt = ObjAGTInsulation.AGTCategoryMngt
-                |              AGTCategory = ObjAGTCategoryMngt.GetCategory
+                Func GetCategory() As CATBSTR
+                    Returns the category of this object.
+                
+                    Example:
+                
+                
+                             This example retrieves in category of insulation
+                             object.
+                             
+                
+                             Dim ObjAGTCategoryMngt As AGTMaterialMngt
+                             Set ObjAGTCategoryMngt = ObjAGTInsulation.AGTCategoryMngt
+                             AGTCategory = ObjAGTCategoryMngt.GetCategory
 
         :return: str
         """
@@ -61,21 +61,21 @@ class AGTCategoryMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCategory(CATBSTR iCategory)
-                |     Sets the category of this object.
-                | 
-                |     Parameters:
-                | 
-                |         iCategory
-                |             New category of the object. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets category of object.
-                |              
-                | 
-                |              ObjAGTCategoryMngt.SetCategory "AGTInsulation"
+                Sub SetCategory(CATBSTR iCategory)
+                    Sets the category of this object.
+                
+                    Parameters:
+                
+                        iCategory
+                            New category of the object. 
+                
+                    Example:
+                
+                
+                             This example sets category of object.
+                             
+                
+                             ObjAGTCategoryMngt.SetCategory "AGTInsulation"
 
         :param str i_category:
         :return: None

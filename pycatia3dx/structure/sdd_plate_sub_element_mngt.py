@@ -18,16 +18,16 @@ class SddPlateSubElementMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddPlateSubElementMngt
-                | 
-                | Interface representing the Structure Detail Design Plate Sub
-                | Elements.
-                | Role: This interface manages the SDD Plate Sub Elements.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddPlateSubElementMngt
+                
+                Interface representing the Structure Detail Design Plate Sub
+                Elements.
+                Role: This interface manages the SDD Plate Sub Elements.
     
     """
 
@@ -40,16 +40,16 @@ class SddPlateSubElementMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFaces(CATStrPlateFaceName iName) As References
-                |     Returns the CATIAReference objects.
-                | 
-                |     Example:
+                Func GetFaces(CATStrPlateFaceName iName) As References
+                    Returns the CATIAReference objects.
+                
+                    Example:
                 |
-                |              This example retrieves in oListOfFaces from SddPlateSubElementMngt
-                |              object.
+                             This example retrieves in oListOfFaces from SddPlateSubElementMngt
+                             object.
                 |
-                |              Dim oListOfFaces As References
-                |              Set oListOfFaces = oObjSddPlateSubElementMngt.GetFaces(1)
+                             Dim oListOfFaces As References
+                             Set oListOfFaces = oObjSddPlateSubElementMngt.GetFaces(1)
 
         :param int i_name:
         :return: References

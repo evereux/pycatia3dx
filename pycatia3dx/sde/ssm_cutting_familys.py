@@ -20,14 +20,14 @@ class SsmCuttingFamilys(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SsmCuttingFamilys
-                | 
-                | Role: This interface is collection of Cutting Family
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SsmCuttingFamilys
+                
+                Role: This interface is collection of Cutting Family
     
     """
 
@@ -40,13 +40,13 @@ class SsmCuttingFamilys(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SsmCuttingFamily
-                |     Retrieves a Cutting Family
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of Cutting Family 
+                Func Item(CATVariant iIndex) As SsmCuttingFamily
+                    Retrieves a Cutting Family
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of Cutting Family 
 
         :param CATVariant i_index:
         :return: SsmCuttingFamily

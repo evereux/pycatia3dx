@@ -18,45 +18,45 @@ class SimTabularAmplitude(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimTabularAmplitude
-                | 
-                | Represents the Tabular Amplitude object.
-                | 
-                | The creation of SimTabularAmplitude directly from SimFeatures is @deprecated
-                | R425. The new procedure is to create SimAmplitude from SimFeatures and retrieve
-                | the SimTabularAmplitude. The following example demonstrates
-                | this.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimTabularAmplitude as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAmplitude As SimAmplitude
-                |      Set MyAmplitude = MyFeatures.Add("SimAmplitude")
-                |      MyAmplitude.DefinitionType = SimAmplitudeTabularDefinition
-                |      Dim MyTabularAmplitude As SimTabularAmplitude
-                |      Set MyTabularAmplitude = MyAmplitude.TabularAmplitude
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object, you can create a SimAmplitude and retrieve the
-                |     SimTabularAmplitude as following:
-                | 
-                |      ...
-                |      myAmplitude = myFeatures.Add("SimAmplitude")
-                |      myAmplitude.DefinitionType = SimAmplitudeTabularDefinition
-                |      myTabularAmplitude = myAmplitude.TabularAmplitude
-                |      
-                | 
-                | See also:
-                |     SimFeatures, SimAmplitude
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimTabularAmplitude
+                
+                Represents the Tabular Amplitude object.
+                
+                The creation of SimTabularAmplitude directly from SimFeatures is @deprecated
+                R425. The new procedure is to create SimAmplitude from SimFeatures and retrieve
+                the SimTabularAmplitude. The following example demonstrates
+                this.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimTabularAmplitude as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAmplitude As SimAmplitude
+                     Set MyAmplitude = MyFeatures.Add("SimAmplitude")
+                     MyAmplitude.DefinitionType = SimAmplitudeTabularDefinition
+                     Dim MyTabularAmplitude As SimTabularAmplitude
+                     Set MyTabularAmplitude = MyAmplitude.TabularAmplitude
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object, you can create a SimAmplitude and retrieve the
+                    SimTabularAmplitude as following:
+                
+                     ...
+                     myAmplitude = myFeatures.Add("SimAmplitude")
+                     myAmplitude.DefinitionType = SimAmplitudeTabularDefinition
+                     myTabularAmplitude = myAmplitude.TabularAmplitude
+                     
+                
+                See also:
+                    SimFeatures, SimAmplitude
     
     """
 
@@ -70,8 +70,8 @@ class SimTabularAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DomainType() As SimTabularAmplitudeDomainType
-                |     Returns or sets the domain type.
+                Property DomainType() As SimTabularAmplitudeDomainType
+                    Returns or sets the domain type.
 
         :return: SimTabularAmplitudeDomainType
         """
@@ -92,8 +92,8 @@ class SimTabularAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SmoothingValue() As double
-                |     Returns or sets the smoothing value. Quantity: DIMENSIONLESS, units: None
+                Property SmoothingValue() As double
+                    Returns or sets the smoothing value. Quantity: DIMENSIONLESS, units: None
 
         :return: float
         """
@@ -114,10 +114,10 @@ class SimTabularAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                | 
-                |     Deprecated:
-                |         R425
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                
+                    Deprecated:
+                        R425
 
         :return: str
         """
@@ -130,8 +130,8 @@ class SimTabularAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the tabular amplitude behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the tabular amplitude behavior.
 
         :return: SimTable
         """
@@ -143,18 +143,18 @@ class SimTabularAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimTabularAmplitudeTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the tabular
-                |     amplitude behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimTabularAmplitudeTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the tabular
+                    amplitude behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

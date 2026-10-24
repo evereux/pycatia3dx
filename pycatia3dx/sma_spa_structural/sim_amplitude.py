@@ -21,51 +21,51 @@ class SimAmplitude(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAmplitude
-                | 
-                | Represents the Amplitude object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimAmplitude as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAmplitude As SimAmplitude
-                |      Set MyAmplitude = MyFeatures.Add("SimAmplitude")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimAmplitude named
-                |     "Amplitude.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyAmplitude As SimAmplitude
-                |      Set MyAmplitude = MyFeatures.Item("Amplitude.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimAmplitude as
-                |     following:
-                | 
-                |      ...
-                |      myAmplitude = myFeatures.Add("SimAmplitude")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a SimAmplitude
-                |     named "Amplitude.1" as following:
-                | 
-                |      ...
-                |      myAmplitude = myFeatures.Item("Amplitude.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAmplitude
+                
+                Represents the Amplitude object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimAmplitude as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAmplitude As SimAmplitude
+                     Set MyAmplitude = MyFeatures.Add("SimAmplitude")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimAmplitude named
+                    "Amplitude.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyAmplitude As SimAmplitude
+                     Set MyAmplitude = MyFeatures.Item("Amplitude.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimAmplitude as
+                    following:
+                
+                     ...
+                     myAmplitude = myFeatures.Add("SimAmplitude")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a SimAmplitude
+                    named "Amplitude.1" as following:
+                
+                     ...
+                     myAmplitude = myFeatures.Item("Amplitude.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -79,8 +79,8 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,8 +101,8 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefinitionType() As SimAmplitudeDefinitionType
-                |     Returns or sets the definition type.
+                Property DefinitionType() As SimAmplitudeDefinitionType
+                    Returns or sets the definition type.
 
         :return: int
         """
@@ -123,9 +123,9 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PeriodicAmplitude() As SimPeriodicAmplitude (Read
-                | Only)
-                |     Returns the periodic amplitude.
+                Property PeriodicAmplitude() As SimPeriodicAmplitude (Read
+                Only)
+                    Returns the periodic amplitude.
 
         :return: SimPeriodicAmplitude
         """
@@ -138,9 +138,9 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SmoothStepAmplitude() As SimSmoothStepAmplitude (Read
-                | Only)
-                |     Returns the smooth step amplitude.
+                Property SmoothStepAmplitude() As SimSmoothStepAmplitude (Read
+                Only)
+                    Returns the smooth step amplitude.
 
         :return: SimSmoothStepAmplitude
         """
@@ -153,9 +153,9 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -168,8 +168,8 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TabularAmplitude() As SimTabularAmplitude (Read Only)
-                |     Returns the tabular amplitude.
+                Property TabularAmplitude() As SimTabularAmplitude (Read Only)
+                    Returns the tabular amplitude.
 
         :return: SimTabularAmplitude
         """
@@ -182,8 +182,8 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeSpanType() As SimAmplitudeTimeSpanType
-                |     Returns or sets the time span type.
+                Property TimeSpanType() As SimAmplitudeTimeSpanType
+                    Returns or sets the time span type.
 
         :return: int
         """
@@ -204,8 +204,8 @@ class SimAmplitude(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserAmplitude() As SimUserAmplitude (Read Only)
-                |     Returns the user amplitude. 
+                Property UserAmplitude() As SimUserAmplitude (Read Only)
+                    Returns the user amplitude. 
 
         :return: SimUserAmplitude
         """

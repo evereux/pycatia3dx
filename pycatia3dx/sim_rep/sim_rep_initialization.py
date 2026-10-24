@@ -19,26 +19,26 @@ class SimRepInitialization(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimRepInitialization
-                | 
-                | Represents the simulation representation initialization
-                | services.
-                | Role: Initialize simulation representation with contents.
-                | 
-                | Example:
-                | 
-                |      This example shows how to retrieve the initialization service from the
-                |      representation reference:
-                |      
-                | 
-                |      Dim myRepRef As VPMRepReference
-                |      Set myRepRef = ...
-                |      Dim myRepInitialization As SimRepInitialization
-                |      Set myRepInitialization = myRepRef.GetItem("SimRepInitialization")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimRepInitialization
+                
+                Represents the simulation representation initialization
+                services.
+                Role: Initialize simulation representation with contents.
+                
+                Example:
+                
+                     This example shows how to retrieve the initialization service from the
+                     representation reference:
+                     
+                
+                     Dim myRepRef As VPMRepReference
+                     Set myRepRef = ...
+                     Dim myRepInitialization As SimRepInitialization
+                     Set myRepInitialization = myRepRef.GetItem("SimRepInitialization")
     
     """
 
@@ -52,8 +52,8 @@ class SimRepInitialization(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parameters() As SimParameterSet (Read Only)
-                |     Gets the parameters of the initialization operation.
+                Property Parameters() As SimParameterSet (Read Only)
+                    Gets the parameters of the initialization operation.
 
         :return: SimParameterSet
         """
@@ -66,8 +66,8 @@ class SimRepInitialization(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Results() As CATSafeArrayVariant (Read Only)
-                |     Gets the list of features created during the initialization operation.
+                Property Results() As CATSafeArrayVariant (Read Only)
+                    Gets the list of features created during the initialization operation.
 
         :return: tuple
         """
@@ -79,36 +79,36 @@ class SimRepInitialization(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InitializeRep(SimParameterSet iParameterSet)
-                |     Initialize a simulation representation.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterSet
-                |             The parameter set which contains all the objects and values to
-                |             initialize the representation.
-                | 
-                |                 "Mode" (string) : define the initialization method (mandatory)
-                |                 Legal values:
-                |                     "GlobalImport" : Initialize an Abstraction Shape with a list of 3D Shape.
-                |                 "3DShapes" (array of variant) : array of 3D shape representation occurrence.
-                | 
-                |     Example:
-                | 
-                |          This exemple returns the Asbtraction Shape initialized with the bodies
-                |          of 3d Shape.
-                |          
-                | 
-                |          Dim my3DShapeOcc as VPMRepOccurrence
-                |          Set my3DShapeOcc = ...
-                |          Dim myParamSet As SimParameterSet
-                |          Set myParamSet = myRepInitialization.Parameters
-                |          myParamSet.SetStringParameter "Mode", "GlobalImport"
-                |          Dim my3DShapeArray(0) As Variant
-                |          Set my3DShapeArray(0) = my3DShapeOcc
-                |          myParamSet.SetObjectArrayParameter "3DShapes",
-                |          my3DShapeArray
-                |          myRepInitialization.InitializeRep myParamSet
+                Sub InitializeRep(SimParameterSet iParameterSet)
+                    Initialize a simulation representation.
+                
+                    Parameters:
+                
+                        iParameterSet
+                            The parameter set which contains all the objects and values to
+                            initialize the representation.
+                
+                                "Mode" (string) : define the initialization method (mandatory)
+                                Legal values:
+                                    "GlobalImport" : Initialize an Abstraction Shape with a list of 3D Shape.
+                                "3DShapes" (array of variant) : array of 3D shape representation occurrence.
+                
+                    Example:
+                
+                         This exemple returns the Asbtraction Shape initialized with the bodies
+                         of 3d Shape.
+                         
+                
+                         Dim my3DShapeOcc as VPMRepOccurrence
+                         Set my3DShapeOcc = ...
+                         Dim myParamSet As SimParameterSet
+                         Set myParamSet = myRepInitialization.Parameters
+                         myParamSet.SetStringParameter "Mode", "GlobalImport"
+                         Dim my3DShapeArray(0) As Variant
+                         Set my3DShapeArray(0) = my3DShapeOcc
+                         myParamSet.SetObjectArrayParameter "3DShapes",
+                         my3DShapeArray
+                         myRepInitialization.InitializeRep myParamSet
 
         :param SimParameterSet i_parameter_set:
         :return: Variant

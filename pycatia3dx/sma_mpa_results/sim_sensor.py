@@ -17,37 +17,37 @@ class SimSensor(SimSensorBase):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaResultsIDLItf.SimSensorBase
-                |                         SimSensor
-                | 
-                | Represents the sensor.
-                | Role:After creating the sensor, one needs set the different API's provided in
-                | the Interface.
-                | Then set the frame selection to the sensor using the
-                | SimSensorBase.FrameSelector()
-                | and update the sensor using and the SimSensorBase.Update()
-                | method.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a Sensor object as
-                |  following.
-                |  
-                | 
-                |  Dim oSensor As SimSensor
-                |  Set oSensor = oResultsAnalysisCase.CreateSensor
-                |  Dim oFrameSelection As SimFramesSelection
-                |  Set oFrameSelection = oResultsAnalysisCase.CreateFrameSelector
-                |  oFrameSelection.SymbolicFrameRange = SimAllFrames
-                |  oSensor.FrameSelector = oFrameSelection
-                |  oSensor.Update
-                |  
-                | 
-                | SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaResultsIDLItf.SimSensorBase
+                                        SimSensor
+                
+                Represents the sensor.
+                Role:After creating the sensor, one needs set the different API's provided in
+                the Interface.
+                Then set the frame selection to the sensor using the
+                SimSensorBase.FrameSelector()
+                and update the sensor using and the SimSensorBase.Update()
+                method.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a Sensor object as
+                 following.
+                 
+                
+                 Dim oSensor As SimSensor
+                 Set oSensor = oResultsAnalysisCase.CreateSensor
+                 Dim oFrameSelection As SimFramesSelection
+                 Set oFrameSelection = oResultsAnalysisCase.CreateFrameSelector
+                 oFrameSelection.SymbolicFrameRange = SimAllFrames
+                 oSensor.FrameSelector = oFrameSelection
+                 oSensor.Update
+                 
+                
+                SimResultsAnalysisCase
     
     """
 
@@ -61,9 +61,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Annotation(boolean ibShow) (Write Only)
-                |     Shows the annotation on the sensor. The annotation includes the steps,
-                |     frame and parameters information.
+                Property Annotation(boolean ibShow) (Write Only)
+                    Shows the annotation on the sensor. The annotation includes the steps,
+                    frame and parameters information.
 
         :return: bool
         """
@@ -84,8 +84,8 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Averaging(SimAveraging ieAveraging) (Write Only)
-                |     Sets the option for averaging of values.
+                Property Averaging(SimAveraging ieAveraging) (Write Only)
+                    Sets the option for averaging of values.
 
         :return: int
         """
@@ -106,8 +106,8 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CombineBaseState(boolean ibCombine) (Write Only)
-                |     Includes the base state for perturbation for sensor calculation.
+                Property CombineBaseState(boolean ibCombine) (Write Only)
+                    Includes the base state for perturbation for sensor calculation.
 
         :return: bool
         """
@@ -128,9 +128,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ComplexValue(SimComplexValues ieComplexValue) (Write
-                | Only)
-                |     Sets the complex value.
+                Property ComplexValue(SimComplexValues ieComplexValue) (Write
+                Only)
+                    Sets the complex value.
 
         :return: int
         """
@@ -151,15 +151,15 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ComplexValueAtAngle(double iValueAtAngle) (Write
-                | Only)
-                |     Sets the complex angle value. Specify the value of the angle. To be set
-                |     only when
-                |     SimComplexValues::SimValueAtAngle option is used for setting the complex
-                |     value.
-                | 
-                |     See also:
-                |         ComplexValue
+                Property ComplexValueAtAngle(double iValueAtAngle) (Write
+                Only)
+                    Sets the complex angle value. Specify the value of the angle. To be set
+                    only when
+                    SimComplexValues::SimValueAtAngle option is used for setting the complex
+                    value.
+                
+                    See also:
+                        ComplexValue
 
         :return: int
         """
@@ -180,10 +180,10 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
-                | Only)
-                |     Sets the component type for the quantity. Refer the
-                |     SMAIAMpaQuantityEnums.idl file all the available enum types.
+                Property ComponentQuantity(SimQuantityComponentEnum ieComponent) (Write
+                Only)
+                    Sets the component type for the quantity. Refer the
+                    SMAIAMpaQuantityEnums.idl file all the available enum types.
 
         :return: int
         """
@@ -204,9 +204,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ComputeQuantityBeforeAveraging(boolean ibQuantityBeforeAveraging)
-                | (Write Only)
-                |     Sets the value as True to compute the quantity before averaging.
+                Property ComputeQuantityBeforeAveraging(boolean ibQuantityBeforeAveraging)
+                (Write Only)
+                    Sets the value as True to compute the quantity before averaging.
 
         :return: bool
         """
@@ -227,14 +227,14 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CoordinateSystem(CATBSTR icsCoordinateSystem) (Write
-                | Only)
-                |     Sets the coordinate system for the transform type. This is the name of the
-                |     coordinate system.
-                |     To be set if transform type is set as user defined.
-                | 
-                |     See also:
-                |         TransformType
+                Property CoordinateSystem(CATBSTR icsCoordinateSystem) (Write
+                Only)
+                    Sets the coordinate system for the transform type. This is the name of the
+                    coordinate system.
+                    To be set if transform type is set as user defined.
+                
+                    See also:
+                        TransformType
 
         :return: str
         """
@@ -255,9 +255,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DeformationEffects(boolean ibDeformationEffects) (Write
-                | Only)
-                |     Sets the deformation effects.
+                Property DeformationEffects(boolean ibDeformationEffects) (Write
+                Only)
+                    Sets the deformation effects.
 
         :return: bool
         """
@@ -278,10 +278,10 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
-                | Only)
-                |     Sets the invariant type for the quantity. Refer the
-                |     SMAIAMpaQuantityEnums.idl file all the available enum types.
+                Property InvariantQuantity(SimQuantityInvariantEnum ieInvariant) (Write
+                Only)
+                    Sets the invariant type for the quantity. Refer the
+                    SMAIAMpaQuantityEnums.idl file all the available enum types.
 
         :return: int
         """
@@ -302,8 +302,8 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Location(SimLocation ieLocation) (Write Only)
-                |     Sets the location at which the results should be evaluated.
+                Property Location(SimLocation ieLocation) (Write Only)
+                    Sets the location at which the results should be evaluated.
 
         :return: int
         """
@@ -324,8 +324,8 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PlyType(CATBSTR icsPlyType) (Write Only)
-                |     Sets the ply type. Complete name of the ply needs to be given.
+                Property PlyType(CATBSTR icsPlyType) (Write Only)
+                    Sets the ply type. Complete name of the ply needs to be given.
 
         :return: str
         """
@@ -346,10 +346,10 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrincipalDirection(boolean ibPrincipleDirection) (Write
-                | Only)
-                |     Sets the Principal directions. Set true to evaluate tensors in the three
-                |     principal directions.
+                Property PrincipalDirection(boolean ibPrincipleDirection) (Write
+                Only)
+                    Sets the Principal directions. Set true to evaluate tensors in the three
+                    principal directions.
 
         :return: bool
         """
@@ -370,9 +370,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProcessingType(SimProcessingTypes ieProcessingType) (Write
-                | Only)
-                |     Sets the processing type for the sensor.
+                Property ProcessingType(SimProcessingTypes ieProcessingType) (Write
+                Only)
+                    Sets the processing type for the sensor.
 
         :return: int
         """
@@ -393,9 +393,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property QuantityType(CATBSTR icsQuantity) (Write Only)
-                |      @deprecated R425 Use InvariantQuantity or ComponentQuantity Sets the
-                |      quantity type.
+                Property QuantityType(CATBSTR icsQuantity) (Write Only)
+                     @deprecated R425 Use InvariantQuantity or ComponentQuantity Sets the
+                     quantity type.
 
         :return: str
         """
@@ -416,10 +416,10 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SensorOutputParameter() As SimSensorOutputParameters
-                |     Gets/Sets the sensor output parameters object.
-                |     SMAIAMpaSensorOutputParameters about how to set the different parameter
-                |     creation criteria.
+                Property SensorOutputParameter() As SimSensorOutputParameters
+                    Gets/Sets the sensor output parameters object.
+                    SMAIAMpaSensorOutputParameters about how to set the different parameter
+                    creation criteria.
 
         :return: SimSensorOutputParameters
         """
@@ -440,15 +440,15 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TransformType(SimTransformTypes ieTransfromType) (Write
-                | Only)
-                |     Sets the transform type. The transform type can be either none or user
-                |     defined.
-                |     For user defined, the coordinate system needs to be
-                |     specified.
-                | 
-                |     See also:
-                |         CoordinateSystem
+                Property TransformType(SimTransformTypes ieTransfromType) (Write
+                Only)
+                    Sets the transform type. The transform type can be either none or user
+                    defined.
+                    For user defined, the coordinate system needs to be
+                    specified.
+                
+                    See also:
+                        CoordinateSystem
 
         :return: int
         """
@@ -469,9 +469,9 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariableType(CATBSTR icsVariableType) (Write Only)
-                |     Specifies the variable on which the sensor is to be created. For example
-                |     the variable can be S, RT, UT etc.
+                Property VariableType(CATBSTR icsVariableType) (Write Only)
+                    Specifies the variable on which the sensor is to be created. For example
+                    the variable can be S, RT, UT etc.
 
         :return: str
         """
@@ -493,29 +493,29 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
-                | ibAbsoluteMaxFlag,boolean ibParameterForEachStepFlag,boolean
-                | ibParameterForEachFrameOrLoadCaseFlag)
-                |     Sets the parameters for which the values are to be
-                |     calculated.
-                | 
-                |     Parameters:
-                | 
-                |         ibMaxFlag
-                |             Set true to create the maximum extrema parameter. 
-                |         ibMinFlag
-                |             Set true to create the minimum extrema parameter. 
-                |         ibAbsoluteMaxFlag
-                |             Set true to create the absolute maximum extrema parameter.
-                |             
-                |         ibParameterForEachStepFlag
-                |             Set true to create the parameters for each step. 
-                |         ibParameterForEachFrameOrLoadCaseFlag
-                |             Set true to create the parameters for each frame of load case.
-                |             
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub SetParameters(boolean ibMaxFlag,boolean ibMinFlag,boolean
+                ibAbsoluteMaxFlag,boolean ibParameterForEachStepFlag,boolean
+                ibParameterForEachFrameOrLoadCaseFlag)
+                    Sets the parameters for which the values are to be
+                    calculated.
+                
+                    Parameters:
+                
+                        ibMaxFlag
+                            Set true to create the maximum extrema parameter. 
+                        ibMinFlag
+                            Set true to create the minimum extrema parameter. 
+                        ibAbsoluteMaxFlag
+                            Set true to create the absolute maximum extrema parameter.
+                            
+                        ibParameterForEachStepFlag
+                            Set true to create the parameters for each step. 
+                        ibParameterForEachFrameOrLoadCaseFlag
+                            Set true to create the parameters for each frame of load case.
+                            
+                
+                    Returns:
+                        S_OK if successful.
 
         :param bool ib_max_flag:
         :param bool ib_min_flag:
@@ -533,25 +533,25 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSupport1(SimSelectionType iEnumSupportType,CATSafeArrayVariant
-                | ilscusSupport)
-                |     Sets one or more supports for the specified type
-                | 
-                |     Parameters:
-                | 
-                |         iEnumSupportType
-                |             The support type like Display groups, Node sets, mesh groups etc
-                |             
-                |         ilscusSupport
-                |             Array of support strings or features of specified type
-                |             
-                | 
-                |     Example:
-                | 
-                |          Dim eSelectionType 'As SimSelectionType
-                |          eSelectionType = SimDisplayGroups
-                |          oResSensorOptions.SetSupport1 eSelectionType,
-                |          MySupports
+                Sub SetSupport1(SimSelectionType iEnumSupportType,CATSafeArrayVariant
+                ilscusSupport)
+                    Sets one or more supports for the specified type
+                
+                    Parameters:
+                
+                        iEnumSupportType
+                            The support type like Display groups, Node sets, mesh groups etc
+                            
+                        ilscusSupport
+                            Array of support strings or features of specified type
+                            
+                
+                    Example:
+                
+                         Dim eSelectionType 'As SimSelectionType
+                         eSelectionType = SimDisplayGroups
+                         oResSensorOptions.SetSupport1 eSelectionType,
+                         MySupports
 
         :param int i_enum_support_type:
         :param tuple ilscus_support:
@@ -564,26 +564,26 @@ class SimSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSupport2(SimSelectionType iEnumSupportType,CATSafeArrayVariant
-                | ilscusSupport)
-                |     Sets one or more string based supports for the specified
-                |     type
-                | 
-                |     Parameters:
-                | 
-                |         iEnumSupportType
-                |             The support type like Display groups, Node sets, mesh groups etc
-                |             
-                |         ilscusSupport
-                |             Array of support strings or features of specified type
-                |             
-                | 
-                |     Example:
-                | 
-                |           Dim eSelectionType 'As SimSelectionType
-                |          eSelectionType = SimDisplayGroups
-                |          oResSensorOptions.SetSupport2 eSelectionType,
-                |          MySupports
+                Sub SetSupport2(SimSelectionType iEnumSupportType,CATSafeArrayVariant
+                ilscusSupport)
+                    Sets one or more string based supports for the specified
+                    type
+                
+                    Parameters:
+                
+                        iEnumSupportType
+                            The support type like Display groups, Node sets, mesh groups etc
+                            
+                        ilscusSupport
+                            Array of support strings or features of specified type
+                            
+                
+                    Example:
+                
+                          Dim eSelectionType 'As SimSelectionType
+                         eSelectionType = SimDisplayGroups
+                         oResSensorOptions.SetSupport2 eSelectionType,
+                         MySupports
 
         :param int i_enum_support_type:
         :param tuple ilscus_support:

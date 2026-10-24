@@ -18,54 +18,54 @@ class SimStaticStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimStaticStep
-                | 
-                | Represents the Static Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimStaticStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticStep As SimStaticStep
-                |      Set MyStaticStep = MySteps.Add("SimStaticStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimStaticStep named "Static
-                |     Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticStep As SimStaticStep
-                |      Set MyStaticStep = MySteps.Item("Static Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimStaticStep as
-                |     following:
-                | 
-                |      ...
-                |      myStaticStep = mySteps.Add("SimStaticStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimStaticStep named
-                |     "Static Step.1" as following:
-                | 
-                |      ...
-                |      myStaticStep = mySteps.Item("Static Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
-                | See also:
-                |     SimAnalysisRestartStepProperty
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimStaticStep
+                
+                Represents the Static Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimStaticStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticStep As SimStaticStep
+                     Set MyStaticStep = MySteps.Add("SimStaticStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimStaticStep named "Static
+                    Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticStep As SimStaticStep
+                     Set MyStaticStep = MySteps.Item("Static Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimStaticStep as
+                    following:
+                
+                     ...
+                     myStaticStep = mySteps.Add("SimStaticStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimStaticStep named
+                    "Static Step.1" as following:
+                
+                     ...
+                     myStaticStep = mySteps.Item("Static Step.1")
+                     
+                
+                See also:
+                    SimSteps
+                See also:
+                    SimAnalysisRestartStepProperty
     
     """
 
@@ -79,8 +79,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,13 +101,13 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GeometricNonLinearityFlag() As boolean
-                |     Returns or sets the flag that determines if the step is geometrically non
-                |     linear.
-                | 
-                |     TRUE: the step is geometrically non linear.
-                | 
-                |     FALSE: the step is not geometrically non linear.
+                Property GeometricNonLinearityFlag() As boolean
+                    Returns or sets the flag that determines if the step is geometrically non
+                    linear.
+                
+                    TRUE: the step is geometrically non linear.
+                
+                    FALSE: the step is not geometrically non linear.
 
         :return: bool
         """
@@ -128,8 +128,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time for the increments of the static step.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time for the increments of the static step.
 
         :return: float
         """
@@ -150,8 +150,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the type of the matrix storage for the static step.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the type of the matrix storage for the static step.
 
         :return: SimMatrixStorageScheme
         """
@@ -172,8 +172,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments for the static step.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments for the static step.
 
         :return: int
         """
@@ -194,8 +194,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time for the increments of the static step.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time for the increments of the static step.
 
         :return: float
         """
@@ -216,8 +216,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time for the increments of the static step.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time for the increments of the static step.
 
         :return: float
         """
@@ -238,9 +238,9 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the static step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the static step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -253,8 +253,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Stabilization() As SimStabilization (Read Only)
-                |     Returns the stabilization for the static step.
+                Property Stabilization() As SimStabilization (Read Only)
+                    Returns the stabilization for the static step.
 
         :return: SimStabilization
         """
@@ -267,8 +267,8 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the total time for the static step.
+                Property StepTime() As double
+                    Returns or sets the total time for the static step.
 
         :return: float
         """
@@ -289,9 +289,9 @@ class SimStaticStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the incrementation type for the static step.
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the incrementation type for the static step.
 
         :return: SimTimeIncrementationScheme
         """

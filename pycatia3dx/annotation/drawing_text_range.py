@@ -16,18 +16,18 @@ class DrawingTextRange(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 DrawingTextRange
-                | 
-                | Represents a drawing text range, or contiguous area, in a drawing
-                | text.
-                | 
-                | A range is a contiguous area in a drawing text defined by the position of a
-                | starting and ending character, or by the position of a starting character and a
-                | length expressed in number of characters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                DrawingTextRange
+                
+                Represents a drawing text range, or contiguous area, in a drawing
+                text.
+                
+                A range is a contiguous area in a drawing text defined by the position of a
+                starting and ending character, or by the position of a starting character and a
+                length expressed in number of characters.
     
     """
 
@@ -41,15 +41,15 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Length() As long (Read Only)
-                |     Returns the number of characters of the drawing text
-                |     range.
-                | 
-                |     Example:
-                |         This example retrieves in NbChar the number of characters of the
-                |         MyTextRange drawing text range.
-                | 
-                |          NbChar = MyTextRange.Length
+                Property Length() As long (Read Only)
+                    Returns the number of characters of the drawing text
+                    range.
+                
+                    Example:
+                        This example retrieves in NbChar the number of characters of the
+                        MyTextRange drawing text range.
+                
+                         NbChar = MyTextRange.Length
 
         :return: int
         """
@@ -62,15 +62,15 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Start() As long (Read Only)
-                |     Returns the starting character position of the drawing text
-                |     range.
-                | 
-                |     Example:
-                |         This example retrieves in StartCharPosthe starting character position
-                |         of the MyTextRange drawing text range.
-                | 
-                |          StartCharPos = MyTextRange.Start
+                Property Start() As long (Read Only)
+                    Returns the starting character position of the drawing text
+                    range.
+                
+                    Example:
+                        This example retrieves in StartCharPosthe starting character position
+                        of the MyTextRange drawing text range.
+                
+                         StartCharPos = MyTextRange.Start
 
         :return: int
         """
@@ -83,22 +83,22 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Text() As CATBSTR
-                |     Returns or sets the character string making up the drawing text
-                |     range.
-                | 
-                |     Example:
-                |         This example sets in text the character string that makes up the
-                |         MyTextRange drawing text range.
-                | 
-                |          Set textRange = MyWelding.GetTextRange (catWeldingUp)
-                |          MyTextRange.Text = text
-                |          Set MyTextProperties = MyWelding.TextProperties
-                |          MyTextProperties.Update
-                |          
-                | 
-                |     See also:
-                |         DrawingTextProperties.Update
+                Property Text() As CATBSTR
+                    Returns or sets the character string making up the drawing text
+                    range.
+                
+                    Example:
+                        This example sets in text the character string that makes up the
+                        MyTextRange drawing text range.
+                
+                         Set textRange = MyWelding.GetTextRange (catWeldingUp)
+                         MyTextRange.Text = text
+                         Set MyTextProperties = MyWelding.TextProperties
+                         MyTextProperties.Update
+                         
+                
+                    See also:
+                        DrawingTextProperties.Update
 
         :return: str
         """
@@ -118,29 +118,29 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTextRange(long iStart,long iEnd) As DrawingTextRange
-                |     Returns a drawing text range within another drawing text range. The text
-                |     range is retrieved using its starting and ending character
-                |     positions.
-                | 
-                |     Parameters:
-                | 
-                |         iStart
-                |             The position of the drawing text range starting character
-                |             
-                |         iEnd
-                |             The position of the drawing text range ending character
-                |             
-                | 
-                |     Example:
-                |         This example retrieves in extractedTextRange the drawing text range
-                |         that begins at the eighth character and end at the fifteenth character of the
-                |         MyTextRange drawing text range.
-                | 
-                |          Dim extractedTextRange As DrawingTextRange
-                |          start = 8
-                |          end = 15
-                |          extractedTextRange = MyTextRange.GetTextRange(start, end)
+                Func GetTextRange(long iStart,long iEnd) As DrawingTextRange
+                    Returns a drawing text range within another drawing text range. The text
+                    range is retrieved using its starting and ending character
+                    positions.
+                
+                    Parameters:
+                
+                        iStart
+                            The position of the drawing text range starting character
+                            
+                        iEnd
+                            The position of the drawing text range ending character
+                            
+                
+                    Example:
+                        This example retrieves in extractedTextRange the drawing text range
+                        that begins at the eighth character and end at the fifteenth character of the
+                        MyTextRange drawing text range.
+                
+                         Dim extractedTextRange As DrawingTextRange
+                         start = 8
+                         end = 15
+                         extractedTextRange = MyTextRange.GetTextRange(start, end)
 
         :param int i_start:
         :param int i_end:
@@ -153,28 +153,28 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InsertAfter(CATBSTR iString)
-                |     Inserts a character string at the end of the drawing text
-                |     range.
-                | 
-                |     Parameters:
-                | 
-                |         iString
-                |             The character string to be added 
-                | 
-                |     Example:
-                |         This example inserts the String character string at the end of the
-                |         MyTextRange drawing text range.
-                | 
-                |          String = "String to insert after"
-                |          Set textRange = MyWelding.GetTextRange (catWeldingUp)
-                |          MyTextRange.InsertAfter(String)
-                |          Set MyTextProperties = MyWelding.TextProperties
-                |          MyTextProperties.Update
-                |          
-                | 
-                | See also:
-                |     DrawingTextProperties.Update
+                Sub InsertAfter(CATBSTR iString)
+                    Inserts a character string at the end of the drawing text
+                    range.
+                
+                    Parameters:
+                
+                        iString
+                            The character string to be added 
+                
+                    Example:
+                        This example inserts the String character string at the end of the
+                        MyTextRange drawing text range.
+                
+                         String = "String to insert after"
+                         Set textRange = MyWelding.GetTextRange (catWeldingUp)
+                         MyTextRange.InsertAfter(String)
+                         Set MyTextProperties = MyWelding.TextProperties
+                         MyTextProperties.Update
+                         
+                
+                See also:
+                    DrawingTextProperties.Update
 
         :param str i_string:
         :return: None
@@ -186,28 +186,28 @@ class DrawingTextRange(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InsertBefore(CATBSTR iString)
-                |     Inserts a character string at the beginning of the drawing text
-                |     range.
-                | 
-                |     Parameters:
-                | 
-                |         iString
-                |             The character string to be added 
-                | 
-                |     Example:
-                |         This example inserts the String character string at the beginning of
-                |         the MyTextRange drawing text range.
-                | 
-                |          String = "String to insert before"
-                |          Set textRange = MyWelding.GetTextRange (catWeldingUp)
-                |          MyTextRange.InsertBefore(String)
-                |          Set MyTextProperties = MyWelding.TextProperties
-                |          MyTextProperties.Update
-                |          
-                | 
-                | See also:
-                |     DrawingTextProperties.Update
+                Sub InsertBefore(CATBSTR iString)
+                    Inserts a character string at the beginning of the drawing text
+                    range.
+                
+                    Parameters:
+                
+                        iString
+                            The character string to be added 
+                
+                    Example:
+                        This example inserts the String character string at the beginning of
+                        the MyTextRange drawing text range.
+                
+                         String = "String to insert before"
+                         Set textRange = MyWelding.GetTextRange (catWeldingUp)
+                         MyTextRange.InsertBefore(String)
+                         Set MyTextProperties = MyWelding.TextProperties
+                         MyTextProperties.Update
+                         
+                
+                See also:
+                    DrawingTextProperties.Update
 
         :param str i_string:
         :return: None

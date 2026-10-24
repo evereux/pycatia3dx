@@ -28,18 +28,18 @@ class SfdSketchBasedPanel(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdSketchBasedPanel
-                | 
-                | Object to manage the Structure Functional Modeler SketchBasedPanel
-                | object.
-                | Role: Allows accessing and setting of SketchBasedPanel's data.
-                | 
-                | See also:
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdSketchBasedPanel
+                
+                Object to manage the Structure Functional Modeler SketchBasedPanel
+                object.
+                Role: Allows accessing and setting of SketchBasedPanel's data.
+                
+                See also:
     
     """
 
@@ -53,20 +53,20 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrCategoryMngt As StrCategoryMngt
-                |              Set ObjStrCategoryMngt = ObjSfdSketchBasedPanel.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrCategoryMngt As StrCategoryMngt
+                             Set ObjStrCategoryMngt = ObjSfdSketchBasedPanel.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -79,20 +79,20 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjMaterialMngt As StrMaterialMngt
-                |              Set ObjMaterialMngt = ObjSfdSketchBasedPanel.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjMaterialMngt the StrMaterialMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjMaterialMngt As StrMaterialMngt
+                             Set ObjMaterialMngt = ObjSfdSketchBasedPanel.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -105,20 +105,20 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
-                |     Returns the StrOpeningsMgr object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrOpeningsMgr As StrOpeningsMgr
-                |              Set ObjStrOpeningsMgr = ObjSfdSketchBasedPanel.StrOpeningsMgr
+                Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
+                    Returns the StrOpeningsMgr object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrOpeningsMgr As StrOpeningsMgr
+                             Set ObjStrOpeningsMgr = ObjSfdSketchBasedPanel.StrOpeningsMgr
 
         :return: StrOpeningsMgr
         """
@@ -131,20 +131,20 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
-                |     Returns the StrPanelLimitMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrPanelLimitMngt the
-                |              StrPanelLimitMngt object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrPanelLimitMngt As StrPanelLimitMngt
-                |              Set ObjStrPanelLimitMngt = ObjSfdSketchBasedPanel.StrPanelLimitMngt
+                Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
+                    Returns the StrPanelLimitMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrPanelLimitMngt the
+                             StrPanelLimitMngt object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrPanelLimitMngt As StrPanelLimitMngt
+                             Set ObjStrPanelLimitMngt = ObjSfdSketchBasedPanel.StrPanelLimitMngt
 
         :return: StrPanelLimitMngt
         """
@@ -157,25 +157,25 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelSurf() As StrPanelSurf (Read Only)
-                |     Returns the StrPanelSurf object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjSfdPanelSupport the StrPanelSurf
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjSfdFactory As SfdFactory
-                |              Set ObjSfdFactory = ObjPart.GetCustomerFactory("SfdFactory")
-                |              Dim ObjSfdSketchBasedPanel As SfdSketchBasedPanel
-                |              
-                |              Set ObjSfdSketchBasedPanel = ObjSfdFactory.AddSketchBasedPanel(iDestPart, 5)
-                |              Dim ObjSfdPanelSupport As StrPanelSurf
-                |              Set ObjSfdPanelSupport = ObjSfdSketchBasedPanel.StrPanelSurf
+                Property StrPanelSurf() As StrPanelSurf (Read Only)
+                    Returns the StrPanelSurf object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjSfdPanelSupport the StrPanelSurf
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjSfdFactory As SfdFactory
+                             Set ObjSfdFactory = ObjPart.GetCustomerFactory("SfdFactory")
+                             Dim ObjSfdSketchBasedPanel As SfdSketchBasedPanel
+                             
+                             Set ObjSfdSketchBasedPanel = ObjSfdFactory.AddSketchBasedPanel(iDestPart, 5)
+                             Dim ObjSfdPanelSupport As StrPanelSurf
+                             Set ObjSfdPanelSupport = ObjSfdSketchBasedPanel.StrPanelSurf
 
         :return: StrPanelSurf
         """
@@ -188,22 +188,22 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
-                | Only)
-                |     Returns the StrPlateExtrusionMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrPlateExtrusionMngt the
-                |              StrPlateExtrusionMngt object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrPlateExtrusionMngt As
-                |              StrPlateExtrusionMngt
-                |              Set ObjStrPlateExtrusionMngt = ObjSfdSketchBasedPanel.StrPlateExtrusionMngt
+                Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
+                Only)
+                    Returns the StrPlateExtrusionMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrPlateExtrusionMngt the
+                             StrPlateExtrusionMngt object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrPlateExtrusionMngt As
+                             StrPlateExtrusionMngt
+                             Set ObjStrPlateExtrusionMngt = ObjSfdSketchBasedPanel.StrPlateExtrusionMngt
 
         :return: StrPlateExtrusionMngt
         """
@@ -216,38 +216,38 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrReferenceSketchPublicParameters() As
-                | StrReferenceSketchPublicParameters (Read Only)
-                |     Returns the CATIAStrReferenceSketchPublicParameters to the Reference Sketch
-                |     Public Parameters used in creation of SketchBasedPlate
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         oListPublicParms
-                |             The list of the Reference Sketch Public Parameters available for
-                |             modification. 
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrReferenceSketchPublicParms, the
-                |              list of available
-                |                public parameters for the selected reference
-                |                sketch.
-                | 
-                |              Dim ObjStrReferenceSketchPublicParms As
-                |              StrReferenceSketchPublicParameters
-                |              Set ObjStrReferenceSketchPublicParms = oObjSfdSketchBasedPanel.StrReferenceSketchPublicParameters
-                | 
-                | 
-                |              It then modifies the first public parameter so obtained in the
-                |              list to 2000mm.
-                | 
-                |              Dim ObjPublicParm As Parameter
-                |              Set ObjPublicParm = ObjStrReferenceSketchPublicParms.Item(1)
-                |              ObjPublicParm.ValuateFromString ("2000mm")
+                Property StrReferenceSketchPublicParameters() As
+                StrReferenceSketchPublicParameters (Read Only)
+                    Returns the CATIAStrReferenceSketchPublicParameters to the Reference Sketch
+                    Public Parameters used in creation of SketchBasedPlate
+                    object.
+                
+                    Parameters:
+                
+                        oListPublicParms
+                            The list of the Reference Sketch Public Parameters available for
+                            modification. 
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrReferenceSketchPublicParms, the
+                             list of available
+                               public parameters for the selected reference
+                               sketch.
+                
+                             Dim ObjStrReferenceSketchPublicParms As
+                             StrReferenceSketchPublicParameters
+                             Set ObjStrReferenceSketchPublicParms = oObjSfdSketchBasedPanel.StrReferenceSketchPublicParameters
+                
+                
+                             It then modifies the first public parameter so obtained in the
+                             list to 2000mm.
+                
+                             Dim ObjPublicParm As Parameter
+                             Set ObjPublicParm = ObjStrReferenceSketchPublicParms.Item(1)
+                             ObjPublicParm.ValuateFromString ("2000mm")
 
         :return: StrReferenceSketchPublicParameters
         """
@@ -260,20 +260,20 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSfdPlatesMngt() As StrSfdPlatesMngt (Read Only)
-                |     Returns the SfdPlatesMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjSfdPlatesMngt the SfdPlatesMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjSfdPlatesMngt As SfdPlatesMngt
-                |              Set ObjSfdPlatesMngt = ObjSfdSketchBasedPanel.SfdPlatesMngt
+                Property StrSfdPlatesMngt() As StrSfdPlatesMngt (Read Only)
+                    Returns the SfdPlatesMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjSfdPlatesMngt the SfdPlatesMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjSfdPlatesMngt As SfdPlatesMngt
+                             Set ObjSfdPlatesMngt = ObjSfdSketchBasedPanel.SfdPlatesMngt
 
         :return: StrSfdPlatesMngt
         """
@@ -286,22 +286,22 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSketchBasedDMSMngt() As StrSketchBasedDMSMngt (Read
-                | Only)
-                |     Returns the StrSketchBasedDMSMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrSketchBasedDMSMngt the
-                |              StrSketchBasedDMSMngt object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrSketchBasedDMSMngt As
-                |              StrSketchBasedDMSMngt
-                |              Set ObjStrSketchBasedDMSMngt = ObjSfdSketchBasedPanel.SfdStrSketchBasedDMSMngt
+                Property StrSketchBasedDMSMngt() As StrSketchBasedDMSMngt (Read
+                Only)
+                    Returns the StrSketchBasedDMSMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrSketchBasedDMSMngt the
+                             StrSketchBasedDMSMngt object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrSketchBasedDMSMngt As
+                             StrSketchBasedDMSMngt
+                             Set ObjStrSketchBasedDMSMngt = ObjSfdSketchBasedPanel.SfdStrSketchBasedDMSMngt
 
         :return: StrSketchBasedDMSMngt
         """
@@ -314,17 +314,17 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSlots() As StrSlots (Read Only)
-                |     Returns the Slots that are inside this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrSlots object.
-                |              
-                | 
-                |               Dim ListOfSlots As StrSlots
-                |               Set ListOfSlots = ObjSfdSketchBasedPanel.StrSlots
+                Property StrSlots() As StrSlots (Read Only)
+                    Returns the Slots that are inside this object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrSlots object.
+                             
+                
+                              Dim ListOfSlots As StrSlots
+                              Set ListOfSlots = ObjSfdSketchBasedPanel.StrSlots
 
         :return: StrSlots
         """
@@ -336,30 +336,30 @@ class SfdSketchBasedPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOpenings(long iType) As StrOpenings
-                |     Returns the list of Openings that are inside this object.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Opening you want to retreive:
-                |             - 0: All
-                |             - 1: Openings piercing the Plates inside the
-                |             OpeningPlateSet
-                |             - 2: Openings piercing the Plates and interrupting the Profiles
-                |             inside the OpeningPlateProfileSet
-                |             - 3: Openings piercing the Profile inside the OpeningProfileSet
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves all type of Openings
-                |              
-                | 
-                |              Dim ObjStrOpenings As StrOpenings
-                |              Set ObjStrOpenings = ObjSfdSketchBasedPanel.GetOpenings(0)
+                Func GetOpenings(long iType) As StrOpenings
+                    Returns the list of Openings that are inside this object.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Opening you want to retreive:
+                            - 0: All
+                            - 1: Openings piercing the Plates inside the
+                            OpeningPlateSet
+                            - 2: Openings piercing the Plates and interrupting the Profiles
+                            inside the OpeningPlateProfileSet
+                            - 3: Openings piercing the Profile inside the OpeningProfileSet
+                            
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves all type of Openings
+                             
+                
+                             Dim ObjStrOpenings As StrOpenings
+                             Set ObjStrOpenings = ObjSfdSketchBasedPanel.GetOpenings(0)
 
         :param int i_type:
         :return: StrOpenings

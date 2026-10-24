@@ -20,39 +20,39 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignExplorationStudyCase
-                |                         SimDesignImprovementStudyCase
-                | 
-                | Represents the Optimization Case object.
-                | Base class for topology, shape and bead design improvement study
-                | objects.
-                | 
-                | Example:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimDesignImprovementStudyCase object named as "Topology Optimization Case.1"
-                |     through the following code:
-                | 
-                |      Dim MyAnalysisCases As SimAnalysisCases
-                |      ...
-                |      Dim MyOptimizationCase As SimDesignImprovementStudyCase
-                |      Set MyOptimizationCase = MyAnalysisCases.Item("Topology Optimization Case.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimDesignImprovementStudyCase object as following:
-                | 
-                |      ...
-                |      MyOptimizationCase  = MyAnalysisCases.Item("Topology Design Improvement Study.1")
-                |      
-                | 
-                | See also:
-                |     SimAnalysisCases
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignExplorationStudyCase
+                                        SimDesignImprovementStudyCase
+                
+                Represents the Optimization Case object.
+                Base class for topology, shape and bead design improvement study
+                objects.
+                
+                Example:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimDesignImprovementStudyCase object named as "Topology Optimization Case.1"
+                    through the following code:
+                
+                     Dim MyAnalysisCases As SimAnalysisCases
+                     ...
+                     Dim MyOptimizationCase As SimDesignImprovementStudyCase
+                     Set MyOptimizationCase = MyAnalysisCases.Item("Topology Optimization Case.1")
+                     
+                
+                Example in Python:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimDesignImprovementStudyCase object as following:
+                
+                     ...
+                     MyOptimizationCase  = MyAnalysisCases.Item("Topology Design Improvement Study.1")
+                     
+                
+                See also:
+                    SimAnalysisCases
     
     """
 
@@ -66,10 +66,10 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnalysisCase() As CATBaseDispatch
-                |     Retrieves the analysis case associated to the design improvement study
-                |     case. Retrieved value will be empty in case no analysis case is associated with
-                |     the design improvement study case.
+                Property AnalysisCase() As CATBaseDispatch
+                    Retrieves the analysis case associated to the design improvement study
+                    case. Retrieved value will be empty in case no analysis case is associated with
+                    the design improvement study case.
 
         :return: AnyObject
         """
@@ -90,8 +90,8 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FEMRep(CATBaseDispatch ispFEMRep) (Write Only)
-                |     Associates the FEM representation to the design improvement study case.
+                Property FEMRep(CATBaseDispatch ispFEMRep) (Write Only)
+                    Associates the FEM representation to the design improvement study case.
 
         :return: None
         """
@@ -112,9 +112,9 @@ class SimDesignImprovementStudyCase(SimDesignExplorationStudyCase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Features() As SimDesignImprovementFeatures (Read
-                | Only)
-                |     Retrieves the collection of available design improvement study features.
+                Property Features() As SimDesignImprovementFeatures (Read
+                Only)
+                    Retrieves the collection of available design improvement study features.
 
         :return: SimDesignImprovementFeatures
         """

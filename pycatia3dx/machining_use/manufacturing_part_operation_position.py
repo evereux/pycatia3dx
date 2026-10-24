@@ -18,14 +18,14 @@ class ManufacturingPartOperationPosition(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingPartOperationPosition
-                | 
-                | Interface representing Part Operation Position
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingPartOperationPosition
+                
+                Interface representing Part Operation Position
     
     """
 
@@ -38,8 +38,8 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAlias() As CATBSTR
-                |     Get the alias of the position
+                Func GetAlias() As CATBSTR
+                    Get the alias of the position
 
         :return: str
         """
@@ -50,19 +50,19 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAttachStatus() As boolean
-                |     Returns if the position is attached/detached on the
-                |     machine
-                | 
-                |     Parameters:
-                | 
-                |         isAttached
-                | 
-                |             Legal values: TRUE if the position is attached, FALSE else
-                |             
-                | 
-                |     Returns:
-                |         E_FAIL if the position is not mounted
+                Func GetAttachStatus() As boolean
+                    Returns if the position is attached/detached on the
+                    machine
+                
+                    Parameters:
+                
+                        isAttached
+                
+                            Legal values: TRUE if the position is attached, FALSE else
+                            
+                
+                    Returns:
+                        E_FAIL if the position is not mounted
 
         :return: bool
         """
@@ -73,14 +73,14 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPartOperation() As ManufacturingPartOperation
-                |     Associates a product to the Part Operation.
-                | 
-                |     Parameters:
-                | 
-                |         iProduct
-                |             The product to be associated. If iProduct is NULL_var, the
-                |             previously associated product is removed.
+                Func GetPartOperation() As ManufacturingPartOperation
+                    Associates a product to the Part Operation.
+                
+                    Parameters:
+                
+                        iProduct
+                            The product to be associated. If iProduct is NULL_var, the
+                            previously associated product is removed.
 
         :return: ManufacturingPartOperation
         """
@@ -91,14 +91,14 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProduct() As AnyObject
-                |     Retrieves the product associated to the Part Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oProduct
-                |             The associated product. If we are in File Based context, oProduct
-                |             is a reference If we are in Manufacturing Hub context, oProduct is an instance
+                Func GetProduct() As AnyObject
+                    Retrieves the product associated to the Part Operation.
+                
+                    Parameters:
+                
+                        oProduct
+                            The associated product. If we are in File Based context, oProduct
+                            is a reference If we are in Manufacturing Hub context, oProduct is an instance
 
         :return: AnyObject
         """
@@ -109,13 +109,13 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProductOccurrence() As AnyObject
-                |     Retrieves the product associated to the Part Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oProduct
-                |             The associated product. It is an Occurance
+                Func GetProductOccurrence() As AnyObject
+                    Retrieves the product associated to the Part Operation.
+                
+                    Parameters:
+                
+                        oProduct
+                            The associated product. It is an Occurance
 
         :return: AnyObject
         """
@@ -126,18 +126,18 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRotaryPlanes() As AnyObject
-                |     Retrieves the rotary planes associated to the Part
-                |     Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oRotaryPlanes
-                |             The rotary planes. Use CATIMfgAgregate on oRotaryPlanes to access
-                |             each plane. 
-                | 
-                |     Returns:
-                |         E_FAIL if the rotary planes is not defined.
+                Func GetRotaryPlanes() As AnyObject
+                    Retrieves the rotary planes associated to the Part
+                    Operation.
+                
+                    Parameters:
+                
+                        oRotaryPlanes
+                            The rotary planes. Use CATIMfgAgregate on oRotaryPlanes to access
+                            each plane. 
+                
+                    Returns:
+                        E_FAIL if the rotary planes is not defined.
 
         :return: AnyObject
         """
@@ -148,17 +148,17 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSafetyPlaneSO() As AnyObject
-                |     Retrieves the safety plane associated to the Part
-                |     Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oSafetyPlane
-                |             The safety plane. 
-                | 
-                |     Returns:
-                |         E_FAIL if the safety plane is not defined.
+                Func GetSafetyPlaneSO() As AnyObject
+                    Retrieves the safety plane associated to the Part
+                    Operation.
+                
+                    Parameters:
+                
+                        oSafetyPlane
+                            The safety plane. 
+                
+                    Returns:
+                        E_FAIL if the safety plane is not defined.
 
         :return: AnyObject
         """
@@ -169,15 +169,15 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTopPlaneDirectionInversion() As long
-                |     Gets the top plane direction inversion value.
-                | 
-                |     Parameters:
-                | 
-                |         oMode
-                | 
-                |             Legal values: 1 if the top plane direction has been inverted, 0
-                |             otherwise
+                Func GetTopPlaneDirectionInversion() As long
+                    Gets the top plane direction inversion value.
+                
+                    Parameters:
+                
+                        oMode
+                
+                            Legal values: 1 if the top plane direction has been inverted, 0
+                            otherwise
 
         :return: int
         """
@@ -188,18 +188,18 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTransitionPlanes() As AnyObject
-                |     Retrieves the transition planes associated to the Part
-                |     Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oTransitionPlanes
-                |             The transition planes. Use CATIMfgAgregate on oTransitionPlanes to
-                |             access each plane. 
-                | 
-                |     Returns:
-                |         E_FAIL if the transition planes is not defined.
+                Func GetTransitionPlanes() As AnyObject
+                    Retrieves the transition planes associated to the Part
+                    Operation.
+                
+                    Parameters:
+                
+                        oTransitionPlanes
+                            The transition planes. Use CATIMfgAgregate on oTransitionPlanes to
+                            access each plane. 
+                
+                    Returns:
+                        E_FAIL if the transition planes is not defined.
 
         :return: AnyObject
         """
@@ -210,13 +210,13 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAlias(CATBSTR iNewAlias)
-                |     Set the alias of the position
-                | 
-                |     Parameters:
-                | 
-                |         iNewAlias
-                |             Alias of the position
+                Sub SetAlias(CATBSTR iNewAlias)
+                    Set the alias of the position
+                
+                    Parameters:
+                
+                        iNewAlias
+                            Alias of the position
 
         :param str i_new_alias:
         :return: None
@@ -228,14 +228,14 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProduct(AnyObject iProduct)
-                |     Associates a product to the Part Operation.
-                | 
-                |     Parameters:
-                | 
-                |         iProduct
-                |             The product to be associated. If iProduct is NULL_var, the
-                |             previously associated product is removed.
+                Sub SetProduct(AnyObject iProduct)
+                    Associates a product to the Part Operation.
+                
+                    Parameters:
+                
+                        iProduct
+                            The product to be associated. If iProduct is NULL_var, the
+                            previously associated product is removed.
 
         :param AnyObject i_product:
         :return: None
@@ -247,16 +247,16 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSafetyPlaneSO(AnyObject iSafetyPlane)
-                |     Set the safety plane associated to the Part Operation.
-                | 
-                |     Parameters:
-                | 
-                |         iSafetyPlane
-                |             The safety plane. 
-                | 
-                |     Returns:
-                |         E_FAIL if the safety plane is not defined.
+                Sub SetSafetyPlaneSO(AnyObject iSafetyPlane)
+                    Set the safety plane associated to the Part Operation.
+                
+                    Parameters:
+                
+                        iSafetyPlane
+                            The safety plane. 
+                
+                    Returns:
+                        E_FAIL if the safety plane is not defined.
 
         :param AnyObject i_safety_plane:
         :return: None
@@ -268,19 +268,19 @@ class ManufacturingPartOperationPosition(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTopPlaneDirectionInversion(long iMode)
-                |     Sets the top plane direction inversion value in order to determine the
-                |     traverse box position relatively to the top plane.
-                | 
-                |     Parameters:
-                | 
-                |         iMode
-                | 
-                |             Legal values: 1 if the top plane direction is to be inverted, 0
-                |             otherwise 
-                | 
-                |     Returns:
-                |         E_INVALIDARG if iMode is different from 0 or 1.
+                Sub SetTopPlaneDirectionInversion(long iMode)
+                    Sets the top plane direction inversion value in order to determine the
+                    traverse box position relatively to the top plane.
+                
+                    Parameters:
+                
+                        iMode
+                
+                            Legal values: 1 if the top plane direction is to be inverted, 0
+                            otherwise 
+                
+                    Returns:
+                        E_INVALIDARG if iMode is different from 0 or 1.
 
         :param int i_mode:
         :return: None

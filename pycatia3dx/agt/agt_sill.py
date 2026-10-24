@@ -18,15 +18,15 @@ class AGTSill(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTSill
-                | 
-                | Object for AGTSill.
-                | To return the management object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTSill
+                
+                Object for AGTSill.
+                To return the management object.
     
     """
 
@@ -40,16 +40,16 @@ class AGTSill(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
-                |     Returns the AGTCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |              This example retrieves in ObjCategoryMngt the AGTCategoryMngt
-                |              object of the AGTSill.
+                Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
+                    Returns the AGTCategoryMngt object.
+                
+                    Example:
+                
+                             This example retrieves in ObjCategoryMngt the AGTCategoryMngt
+                             object of the AGTSill.
                 |
-                |              Dim ObjCategoryMngt As AGTCategoryMngt 
-                |              Set ObjCategoryMngt = ObjAGTSill.AGTCategoryMngt
+                             Dim ObjCategoryMngt As AGTCategoryMngt 
+                             Set ObjCategoryMngt = ObjAGTSill.AGTCategoryMngt
 
         :return: AGTCategoryMngt
         """
@@ -62,16 +62,16 @@ class AGTSill(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
-                |     Returns the AGTMaterialMngt object.
-                | 
-                |     Example:
+                Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
+                    Returns the AGTMaterialMngt object.
+                
+                    Example:
                 |
-                |              This example retrieves in ObjMaterialMngt the AGTMaterialMngt
-                |              object of the AGTSill.
+                             This example retrieves in ObjMaterialMngt the AGTMaterialMngt
+                             object of the AGTSill.
                 |
-                |              Dim ObjMaterialMngt As AGTMaterialMngt 
-                |              Set ObjMaterialMngt = ObjAGTSill.AGTMaterialMngt
+                             Dim ObjMaterialMngt As AGTMaterialMngt 
+                             Set ObjMaterialMngt = ObjAGTSill.AGTMaterialMngt
 
         :return: AGTMaterialMngt
         """

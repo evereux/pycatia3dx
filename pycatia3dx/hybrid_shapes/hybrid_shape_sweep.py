@@ -18,23 +18,23 @@ class HybridShapeSweep(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeSweep
-                | 
-                | Represents the hybrid shape Sweep feature object.
-                | Role: Declare hybrid shape Sweep root feature object. All interfaces for
-                | different type of sweep derives HybridShapeSweep.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeSweep
-                | objects.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeSweep
+                
+                Represents the hybrid shape Sweep feature object.
+                Role: Declare hybrid shape Sweep root feature object. All interfaces for
+                different type of sweep derives HybridShapeSweep.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeSweep
+                objects.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -48,10 +48,10 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property C0VerticesMode() As boolean
-                |     Returns or sets the management mode of C0 vertices as twisted
-                |     areas.
-                |     TRUE or FALSE.
+                Property C0VerticesMode() As boolean
+                    Returns or sets the management mode of C0 vertices as twisted
+                    areas.
+                    TRUE or FALSE.
 
         :return: bool
         """
@@ -72,8 +72,8 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FillTwistedAreas() As long
-                |     Returns or sets the fill twisted areas mode.
+                Property FillTwistedAreas() As long
+                    Returns or sets the fill twisted areas mode.
 
         :return: int
         """
@@ -94,8 +94,8 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SetbackValue() As double
-                |     Returns or sets the setback value.
+                Property SetbackValue() As double
+                    Returns or sets the setback value.
 
         :return: float
         """
@@ -115,16 +115,16 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddCutPoints(Reference iElement1,Reference iElement2)
-                |     Sets two cut points on the master guide. These points define a zone to be
-                |     kept on the final swept surface.
-                | 
-                |     Parameters:
-                | 
-                |         iElement1
-                |             First / start cut point. 
-                |         iElement2
-                |             Second / end cut point.
+                Sub AddCutPoints(Reference iElement1,Reference iElement2)
+                    Sets two cut points on the master guide. These points define a zone to be
+                    kept on the final swept surface.
+                
+                    Parameters:
+                
+                        iElement1
+                            First / start cut point. 
+                        iElement2
+                            Second / end cut point.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -137,16 +137,16 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddFillPoints(Reference iElement1,Reference iElement2)
-                |     Sets two fill points on the master guide. These points define a zone to be
-                |     filled on the final swept surface.
-                | 
-                |     Parameters:
-                | 
-                |         iElement1
-                |             First / start fill point. 
-                |         iElement2
-                |             Second / end fill point.
+                Sub AddFillPoints(Reference iElement1,Reference iElement2)
+                    Sets two fill points on the master guide. These points define a zone to be
+                    filled on the final swept surface.
+                
+                    Parameters:
+                
+                        iElement1
+                            First / start fill point. 
+                        iElement2
+                            Second / end fill point.
 
         :param Reference i_element1:
         :param Reference i_element2:
@@ -159,7 +159,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetCutPoint(long iRank) As Reference
+                Func GetCutPoint(long iRank) As Reference
 
         :param int i_rank:
         :return: Reference
@@ -171,7 +171,7 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetFillPoint(long iRank) As Reference
+                Func GetFillPoint(long iRank) As Reference
 
         :param int i_rank:
         :return: Reference
@@ -183,8 +183,8 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllCutPoints()
-                |     Removes all cut points.
+                Sub RemoveAllCutPoints()
+                    Removes all cut points.
 
         :return: None
         """
@@ -195,8 +195,8 @@ class HybridShapeSweep(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveAllFillPoints()
-                |     Removes all fill points.
+                Sub RemoveAllFillPoints()
+                    Removes all fill points.
 
         :return: None
         """

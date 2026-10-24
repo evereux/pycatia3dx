@@ -17,15 +17,15 @@ class SimMethod(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMethod
-                | 
-                | Interface representing method used to create data inside the FEM
-                | representation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMethod
+                
+                Interface representing method used to create data inside the FEM
+                representation.
     
     """
 
@@ -38,8 +38,8 @@ class SimMethod(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Run()
-                |     Execute the method.
+                Sub Run()
+                    Execute the method.
 
         :return: None
         """

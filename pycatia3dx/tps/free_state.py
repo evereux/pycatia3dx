@@ -17,14 +17,14 @@ class FreeState(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     FreeState
-                | 
-                | Interface for accessing Free State modifier on a TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    FreeState
+                
+                Interface for accessing Free State modifier on a TPS.
     
     """
 
@@ -38,8 +38,8 @@ class FreeState(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR
-                |     Retrieves Free State modifier. 
+                Property Modifier() As CATBSTR
+                    Retrieves Free State modifier. 
 
         :return: str
         """

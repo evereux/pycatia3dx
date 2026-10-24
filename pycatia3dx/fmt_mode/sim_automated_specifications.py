@@ -20,15 +20,15 @@ class SimAutomatedSpecifications(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimAutomatedSpecifications
-                | 
-                | Represents the collection of Simulation automated
-                | specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimAutomatedSpecifications
+                
+                Represents the collection of Simulation automated
+                specifications.
     
     """
 
@@ -41,24 +41,24 @@ class SimAutomatedSpecifications(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimGenerativeSpecification
-                |     Returns a generative specification using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the generative specification to retrieve
-                |             from the collection.
-                |             As a numeric, this index is the rank of the generative
-                |             specification in the collection. The index of the first generative
-                |             specification in the collection is 1, and the index of the last generative
-                |             specification is Count.
-                |             As a string, it is the name you assigned to the generative
-                |             specification using the Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved genrative specification.
+                Func Item(CATVariant iIndex) As SimGenerativeSpecification
+                    Returns a generative specification using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the generative specification to retrieve
+                            from the collection.
+                            As a numeric, this index is the rank of the generative
+                            specification in the collection. The index of the first generative
+                            specification in the collection is 1, and the index of the last generative
+                            specification is Count.
+                            As a string, it is the name you assigned to the generative
+                            specification using the Name object property. 
+                
+                    Returns:
+                        The retrieved genrative specification.
 
         :param CATVariant i_index:
         :return: SimGenerativeSpecification

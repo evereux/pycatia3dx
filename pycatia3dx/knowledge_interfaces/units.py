@@ -20,17 +20,17 @@ class Units(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Units
-                | 
-                | Represents the collection of Units.
-                | 
-                | See also:
-                |     KnowledgeObjects.Units
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Units
+                
+                Represents the collection of Units.
+                
+                See also:
+                    KnowledgeObjects.Units
     
     """
 
@@ -43,27 +43,27 @@ class Units(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Item(CATVariant iIndex) As Unit
-                |     Returns a unit using its index or its name from the Parameters
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the unit to retrieve from the collection
-                |             of parameters. As a numerics, this index is the rank of the unit in the
-                |             collection. The index of the first unit in the collection is 1, and the index
-                |             of the last parameter is Count. As a string, it is the name you assigned to the
-                |             parameter using the AnyObject.Name property or when creating the parameter.
-                |             
-                | 
-                |     Returns:
-                |         Unit retrieved 
-                |     Example:
-                |         This example retrieves the millimeter unit in the units
-                |         collection:
-                | 
-                |          Set unitmm = units.Item("mm")
+                Func Item(CATVariant iIndex) As Unit
+                    Returns a unit using its index or its name from the Parameters
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the unit to retrieve from the collection
+                            of parameters. As a numerics, this index is the rank of the unit in the
+                            collection. The index of the first unit in the collection is 1, and the index
+                            of the last parameter is Count. As a string, it is the name you assigned to the
+                            parameter using the AnyObject.Name property or when creating the parameter.
+                            
+                
+                    Returns:
+                        Unit retrieved 
+                    Example:
+                        This example retrieves the millimeter unit in the units
+                        collection:
+                
+                         Set unitmm = units.Item("mm")
 
         :param CATVariant i_index:
         :return: Unit

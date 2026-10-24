@@ -19,20 +19,20 @@ class Revolution(SketchBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             Revolution
-                | 
-                | Represents the revolution-based shapes.
-                | It is the base objects for shaft and grooves.
-                | 
-                | See also:
-                |     Shaft, Groove
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            Revolution
+                
+                Represents the revolution-based shapes.
+                It is the base objects for shaft and grooves.
+                
+                See also:
+                    Shaft, Groove
     
     """
 
@@ -46,17 +46,17 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstAngle() As Angle (Read Only)
-                |     Returns the revolution first angle. This angle is computed around the
-                |     revolution axis, starting from the sketch plane trace on the plane
-                |     perpendicular to the revolution axis, and is counted positive clockwise when
-                |     looking at this plane in the revolution axis direction.
-                | 
-                |     Example:
-                |         The following example returns in firstAngle the first angle of the
-                |         MyRevolution revolution object:
-                | 
-                |          Set firstAngle = MyRevolution.FirstAngle
+                Property FirstAngle() As Angle (Read Only)
+                    Returns the revolution first angle. This angle is computed around the
+                    revolution axis, starting from the sketch plane trace on the plane
+                    perpendicular to the revolution axis, and is counted positive clockwise when
+                    looking at this plane in the revolution axis direction.
+                
+                    Example:
+                        The following example returns in firstAngle the first angle of the
+                        MyRevolution revolution object:
+                
+                         Set firstAngle = MyRevolution.FirstAngle
 
         :return: Angle
         """
@@ -69,21 +69,21 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IsThin() As boolean
-                |     Returns the Revol thin flag.
-                |     It returns TRUE if the Revol is a thin Revol , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsThin The thin flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in thinFlag the thin flag of Revol
-                |             firstRevol, and then sets it so that it will be now thin
-                |             :
-                | 
-                |              Set thinFlag = firstRevol.IsThin
-                |              firstRevol.IsThin = TRUE
+                Property IsThin() As boolean
+                    Returns the Revol thin flag.
+                    It returns TRUE if the Revol is a thin Revol , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsThin The thin flag as a boolean
+                
+                        Example:
+                            The following example saves in thinFlag the thin flag of Revol
+                            firstRevol, and then sets it so that it will be now thin
+                            :
+                
+                             Set thinFlag = firstRevol.IsThin
+                             firstRevol.IsThin = TRUE
 
         :return: bool
         """
@@ -104,20 +104,20 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MergeEnd() As boolean
-                |     Returns the Revol merge end flag (for thin Revol only).
-                |     It returns TRUE if merge ends is required , FALSE if not.
-                | 
-                |     Returns:
-                |         oIsMergeEnd The merge end flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in MergeEndFlag the merge end flag of
-                |             Revol firstRevol, and then sets it so that merge end will be required
-                |             :
-                | 
-                |              Set MergeEndFlag = firstRevol.IsMergeEnd
-                |              firstRevol.IsMergeEnd = TRUE
+                Property MergeEnd() As boolean
+                    Returns the Revol merge end flag (for thin Revol only).
+                    It returns TRUE if merge ends is required , FALSE if not.
+                
+                    Returns:
+                        oIsMergeEnd The merge end flag as a boolean
+                
+                        Example:
+                            The following example saves in MergeEndFlag the merge end flag of
+                            Revol firstRevol, and then sets it so that merge end will be required
+                            :
+                
+                             Set MergeEndFlag = firstRevol.IsMergeEnd
+                             firstRevol.IsMergeEnd = TRUE
 
         :return: bool
         """
@@ -138,22 +138,22 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NeutralFiber() As boolean
-                |     Returns the Revol neutral fiber flag (for thin Revol
-                |     only).
-                |     It returns TRUE if the Revol is a neutral fiber Revol , FALSE if
-                |     not.
-                | 
-                |     Returns:
-                |         oIsNeutralFiber The neutral fiber flag as a boolean
-                | 
-                |         Example:
-                |             The following example saves in NeutralFiberFlag the neutral fiber
-                |             flag of Revol firstRevol, and then sets it so that it will be now neutral fiber
-                |             :
-                | 
-                |              Set NeutralFiberFlag = firstRevol.IsNeutralFiber
-                |              firstRevol.IsNeutralFiber = TRUE
+                Property NeutralFiber() As boolean
+                    Returns the Revol neutral fiber flag (for thin Revol
+                    only).
+                    It returns TRUE if the Revol is a neutral fiber Revol , FALSE if
+                    not.
+                
+                    Returns:
+                        oIsNeutralFiber The neutral fiber flag as a boolean
+                
+                        Example:
+                            The following example saves in NeutralFiberFlag the neutral fiber
+                            flag of Revol firstRevol, and then sets it so that it will be now neutral fiber
+                            :
+                
+                             Set NeutralFiberFlag = firstRevol.IsNeutralFiber
+                             firstRevol.IsNeutralFiber = TRUE
 
         :return: bool
         """
@@ -174,13 +174,13 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RevoluteAxis() As Reference
-                |     Returns or sets the rotation axis for Revol.
-                |     To set the property, you can use one of the following Boundary objects:
-                |     RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge or
-                |     RectilinearMonoDimFeatEdge.
-                | 
-                |     Example: This example retrieves in RevoluteAxis the rotation axis for the Rotate axis of the Revol feature Dim RevoluteAxis As Reference Set RevoluteAxis = Rotate.Axis
+                Property RevoluteAxis() As Reference
+                    Returns or sets the rotation axis for Revol.
+                    To set the property, you can use one of the following Boundary objects:
+                    RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge or
+                    RectilinearMonoDimFeatEdge.
+                
+                    Example: This example retrieves in RevoluteAxis the rotation axis for the Rotate axis of the Revol feature Dim RevoluteAxis As Reference Set RevoluteAxis = Rotate.Axis
 
         :return: Reference
         """
@@ -201,18 +201,18 @@ class Revolution(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondAngle() As Angle (Read Only)
-                |     Returns the revolution second angle. This angle is computed around the
-                |     revolution axis, starting from the sketch plane trace on the plane
-                |     perpendicular to the revolution axis, and is counted positive counterclockwise
-                |     when looking at this plane in the revolution axis direction. Its default value
-                |     is 0.
-                | 
-                |     Example:
-                |         The following example returns in secondAngle the second angle of the
-                |         MyRevolution revolution object:
-                | 
-                |          Set secondAngle = MyRevolution.SecondAngle
+                Property SecondAngle() As Angle (Read Only)
+                    Returns the revolution second angle. This angle is computed around the
+                    revolution axis, starting from the sketch plane trace on the plane
+                    perpendicular to the revolution axis, and is counted positive counterclockwise
+                    when looking at this plane in the revolution axis direction. Its default value
+                    is 0.
+                
+                    Example:
+                        The following example returns in secondAngle the second angle of the
+                        MyRevolution revolution object:
+                
+                         Set secondAngle = MyRevolution.SecondAngle
 
         :return: Angle
         """

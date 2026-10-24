@@ -17,16 +17,16 @@ class ManufacturingComputePmaParameters(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingComputePMAParameters
-                | 
-                | Interface to compute and get PMA Parameters: - MfgMinimumCornerRadius -
-                | MfgMinimumChannelWidth - MfgMaximumChannelWidth - Depth - MfgBottomFilletRadius
-                | - BottomColor
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingComputePMAParameters
+                
+                Interface to compute and get PMA Parameters: - MfgMinimumCornerRadius -
+                MfgMinimumChannelWidth - MfgMaximumChannelWidth - Depth - MfgBottomFilletRadius
+                - BottomColor
     
     """
 
@@ -39,12 +39,12 @@ class ManufacturingComputePmaParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeParameters()
-                |     This function computes the PMA parameters and stores for 2DMA
-                |     feature
-                | 
-                |     Returns:
-                |         S_OK or E_FAIL
+                Sub ComputeParameters()
+                    This function computes the PMA parameters and stores for 2DMA
+                    feature
+                
+                    Returns:
+                        S_OK or E_FAIL
 
         :return: None
         """
@@ -55,16 +55,16 @@ class ManufacturingComputePmaParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterDoubleValue(CATBSTR iName) As double
-                |     Get double parameter
-                | 
-                |     Parameters:
-                | 
-                |         return
-                |             double value 
-                | 
-                |     Returns:
-                |         S_OK or E_FAIL
+                Func GetParameterDoubleValue(CATBSTR iName) As double
+                    Get double parameter
+                
+                    Parameters:
+                
+                        return
+                            double value 
+                
+                    Returns:
+                        S_OK or E_FAIL
 
         :param str i_name:
         :return: float
@@ -76,16 +76,16 @@ class ManufacturingComputePmaParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterStringValue(CATBSTR iName) As CATBSTR
-                |     Get string parameter
-                | 
-                |     Parameters:
-                | 
-                |         return
-                |             string value 
-                | 
-                |     Returns:
-                |         S_OK or E_FAIL
+                Func GetParameterStringValue(CATBSTR iName) As CATBSTR
+                    Get string parameter
+                
+                    Parameters:
+                
+                        return
+                            string value 
+                
+                    Returns:
+                        S_OK or E_FAIL
 
         :param str i_name:
         :return: str

@@ -19,26 +19,26 @@ class HybridShapeUnfold(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeUnfold
-                | 
-                | Represents the hybrid shape Unfold feature object.
-                | Role: To access the data of the hybrid shape Unfold feature object. This data
-                | includes:
-                | 
-                |     The shell to unfold
-                |     The edges to tear
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeUnfold
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeUnfold
+                
+                Represents the hybrid shape Unfold feature object.
+                Role: To access the data of the hybrid shape Unfold feature object. This data
+                includes:
+                
+                    The shell to unfold
+                    The edges to tear
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeUnfold
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -52,8 +52,8 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DirectionToUnfold() As Reference
-                |     Returns or sets the direction to unfold.
+                Property DirectionToUnfold() As Reference
+                    Returns or sets the direction to unfold.
 
         :return: Reference
         """
@@ -74,13 +74,13 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EdgeToTearPositioningOrientation() As long
-                |     Returns or sets the positioning orientation when the reference origin is
-                |     located on an edge to tear.
-                | 
-                |         0= The orientation is undefined
-                |         1= The orientation is the default one
-                |         2= The orientation is inversed
+                Property EdgeToTearPositioningOrientation() As long
+                    Returns or sets the positioning orientation when the reference origin is
+                    located on an edge to tear.
+                
+                        0= The orientation is undefined
+                        1= The orientation is the default one
+                        2= The orientation is inversed
 
         :return: int
         """
@@ -101,8 +101,8 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OriginToUnfold() As Reference
-                |     Returns or sets the origin to unfold.
+                Property OriginToUnfold() As Reference
+                    Returns or sets the origin to unfold.
 
         :return: Reference
         """
@@ -123,10 +123,10 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SurfaceToUnfold() As Reference
-                |     Returns or sets the surface to unfold.
-                |     Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge and
-                |     BiDimFeatEdge.
+                Property SurfaceToUnfold() As Reference
+                    Returns or sets the surface to unfold.
+                    Sub-element(s) supported (see Boundary object): Face, TriDimFeatEdge and
+                    BiDimFeatEdge.
 
         :return: Reference
         """
@@ -147,12 +147,12 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SurfaceType() As long
-                |     Returns or sets the type of surface to unfold.
-                | 
-                |         0= The type of surface is not defined
-                |         1= The type of surface is ruled
-                |         2= The type of surface is all
+                Property SurfaceType() As long
+                    Returns or sets the type of surface to unfold.
+                
+                        0= The type of surface is not defined
+                        1= The type of surface is ruled
+                        2= The type of surface is all
 
         :return: int
         """
@@ -173,22 +173,22 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TargetDirection() As HybridShapeDirection
-                |     Role: Retrieves target direction on the object.
-                | 
-                |     Parameters:
-                | 
-                |         oDir
-                |             return value for CATScript applications, with (IDLRETVAL) function
-                |             type 
-                | 
-                |     See also:
-                |         HybridShapeDirection
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property TargetDirection() As HybridShapeDirection
+                    Role: Retrieves target direction on the object.
+                
+                    Parameters:
+                
+                        oDir
+                            return value for CATScript applications, with (IDLRETVAL) function
+                            type 
+                
+                    See also:
+                        HybridShapeDirection
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: HybridShapeDirection
         """
@@ -209,18 +209,18 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TargetOrientationMode() As long
-                |     Returns or sets the mode for target surface orientation.
-                | 
-                |         0= No axis inversion
-                |         1= U inversion axis
-                |         2= V inversion axis
-                |         3= U inversion axis and V inversion axis
-                |         4= U inversion axis and swap U and V axis
-                |         5= V inversion axis and swap U and V axis
-                |         6= U inversion axis, V inversion axis and swap U and V
-                |         axis
-                |         7= Swap U and V axis
+                Property TargetOrientationMode() As long
+                    Returns or sets the mode for target surface orientation.
+                
+                        0= No axis inversion
+                        1= U inversion axis
+                        2= V inversion axis
+                        3= U inversion axis and V inversion axis
+                        4= U inversion axis and swap U and V axis
+                        5= V inversion axis and swap U and V axis
+                        6= U inversion axis, V inversion axis and swap U and V
+                        axis
+                        7= Swap U and V axis
 
         :return: int
         """
@@ -241,22 +241,22 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TargetOrigin() As Reference
-                |     Role: Retrieves target origin on the object.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             return value for CATScript applications, with (IDLRETVAL) function
-                |             type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property TargetOrigin() As Reference
+                    Role: Retrieves target origin on the object.
+                
+                    Parameters:
+                
+                        oElem
+                            return value for CATScript applications, with (IDLRETVAL) function
+                            type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -277,9 +277,9 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property TargetPlane() As Reference
-                |     Returns or sets the target plane.
-                |     Sub-element(s) supported (see Boundary object):
+                Property TargetPlane() As Reference
+                    Returns or sets the target plane.
+                    Sub-element(s) supported (see Boundary object):
 
         :return: Reference
         """
@@ -299,22 +299,22 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddEdgeToTear(Reference iElement)
-                |     Adds an edge to tear.
-                | 
-                |     Parameters:
-                | 
-                |         iEdge
-                |             The edge to tear to add to the hybrid shape feature
-                |             object.
-                |             Sub-element(s) supported (see Boundary object): Edge
-                |             
-                | 
-                |     Examples:
-                |         The following example adds the iElement feature object to the
-                |         HybridShapeUnfold object.
-                | 
-                |          HybridShapeUnfold.AddEdgeToTear iElement
+                Sub AddEdgeToTear(Reference iElement)
+                    Adds an edge to tear.
+                
+                    Parameters:
+                
+                        iEdge
+                            The edge to tear to add to the hybrid shape feature
+                            object.
+                            Sub-element(s) supported (see Boundary object): Edge
+                            
+                
+                    Examples:
+                        The following example adds the iElement feature object to the
+                        HybridShapeUnfold object.
+                
+                         HybridShapeUnfold.AddEdgeToTear iElement
 
         :param Reference i_element:
         :return: None
@@ -326,20 +326,20 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddElementToTransfer(Reference iElement,long
-                | iTypeOfTransfer)
-                |     Appends an element to transfer.
-                | 
-                |     Parameters:
-                | 
-                |         iElement
-                |             Specification to transfer 
-                |         iTypeOfTransfer
-                |             type of tranfer
-                | 
-                |                 0= No transfer mode specified
-                |                 1= Folded to unfolded
-                |                 2= Unfolded to folded
+                Sub AddElementToTransfer(Reference iElement,long
+                iTypeOfTransfer)
+                    Appends an element to transfer.
+                
+                    Parameters:
+                
+                        iElement
+                            Specification to transfer 
+                        iTypeOfTransfer
+                            type of tranfer
+                
+                                0= No transfer mode specified
+                                1= Folded to unfolded
+                                2= Unfolded to folded
 
         :param Reference i_element:
         :param int i_type_of_transfer:
@@ -352,21 +352,21 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetEdgeToTear(long iRank) As Reference
-                |     Retrieves an element used by the hybrid shape unfold feature
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             The rank of the element to read. 
-                | 
-                |     Examples:
-                |         The following example gets the oElement feature object of the
-                |         HybridShapeUnfold object at the position iRank.
-                | 
-                |          Dim oElement As Reference
-                |          Set oElement = HybridShapeUnfold.GetEdgeToTear (iRank).
+                Func GetEdgeToTear(long iRank) As Reference
+                    Retrieves an element used by the hybrid shape unfold feature
+                    object.
+                
+                    Parameters:
+                
+                        iRank
+                            The rank of the element to read. 
+                
+                    Examples:
+                        The following example gets the oElement feature object of the
+                        HybridShapeUnfold object at the position iRank.
+                
+                         Dim oElement As Reference
+                         Set oElement = HybridShapeUnfold.GetEdgeToTear (iRank).
 
         :param int i_rank:
         :return: Reference
@@ -378,22 +378,22 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetElementToTransfer(long iRank,Reference opElement,long
-                | oTypeOfTransfer)
-                |     Gets an element to transfer.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             the position of the specification to get 
-                |         opElement
-                |             Specification to transfer 
-                |         oTypeOfTransfer
-                |             type of tranfer
-                | 
-                |                 0= No transfer mode specified
-                |                 1= Folded to unfolded
-                |                 2= Unfolded to folded
+                Sub GetElementToTransfer(long iRank,Reference opElement,long
+                oTypeOfTransfer)
+                    Gets an element to transfer.
+                
+                    Parameters:
+                
+                        iRank
+                            the position of the specification to get 
+                        opElement
+                            Specification to transfer 
+                        oTypeOfTransfer
+                            type of tranfer
+                
+                                0= No transfer mode specified
+                                1= Folded to unfolded
+                                2= Unfolded to folded
 
         :param int i_rank:
         :param Reference op_element:
@@ -407,20 +407,20 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveEdgeToTear(long iRank)
-                |     Removes an element used by the hybrid shape unfold feature
-                |     object.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             The rank of the element to remove. 
-                | 
-                |     Examples:
-                |         The following example removes the feature object from the
-                |         HybridShapeUnfold object at the position iRank.
-                | 
-                |          HybridShapeUnfold.RemoveEdgeToTear iRank.
+                Sub RemoveEdgeToTear(long iRank)
+                    Removes an element used by the hybrid shape unfold feature
+                    object.
+                
+                    Parameters:
+                
+                        iRank
+                            The rank of the element to remove. 
+                
+                    Examples:
+                        The following example removes the feature object from the
+                        HybridShapeUnfold object at the position iRank.
+                
+                         HybridShapeUnfold.RemoveEdgeToTear iRank.
 
         :param int i_rank:
         :return: None
@@ -432,13 +432,13 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveElementToTransfer(long iRank)
-                |     Remove an elements to transfer.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             the position of the specification to remove
+                Sub RemoveElementToTransfer(long iRank)
+                    Remove an elements to transfer.
+                
+                    Parameters:
+                
+                        iRank
+                            the position of the specification to remove
 
         :param int i_rank:
         :return: None
@@ -450,15 +450,15 @@ class HybridShapeUnfold(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ReplaceElementsToTransfer(long iRank,Reference iElement)
-                |     Replace an elements to transfer.
-                | 
-                |     Parameters:
-                | 
-                |         iRank
-                |             the position of the specification to replace 
-                |         iElement
-                |             the specification to transfer to append.
+                Sub ReplaceElementsToTransfer(long iRank,Reference iElement)
+                    Replace an elements to transfer.
+                
+                    Parameters:
+                
+                        iRank
+                            the position of the specification to replace 
+                        iElement
+                            the specification to transfer to append.
 
         :param int i_rank:
         :param Reference i_element:

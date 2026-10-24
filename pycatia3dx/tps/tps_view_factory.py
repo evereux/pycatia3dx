@@ -19,16 +19,16 @@ class TPSViewFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSViewFactory
-                | 
-                | Interface for the TPS Factory.
-                | This factory is implemented on the Set object. All the created views are added
-                | to the Set from which this interface is retrieved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSViewFactory
+                
+                Interface for the TPS Factory.
+                This factory is implemented on the Set object. All the created views are added
+                to the Set from which this interface is retrieved.
     
     """
 
@@ -41,16 +41,16 @@ class TPSViewFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateView(Reference iPlane,CATVariant iViewType) As
-                | TPSView
-                | 
-                |     Parameters:
-                | 
-                |         iPlane
-                |             The surface needed to construct the View. The following Boundary
-                |             object is supported: PlanarFace. 
-                |         iViewType
-                |             1 : Front View. 2 : Section View. 3 : Cut View. 
+                Func CreateView(Reference iPlane,CATVariant iViewType) As
+                TPSView
+                
+                    Parameters:
+                
+                        iPlane
+                            The surface needed to construct the View. The following Boundary
+                            object is supported: PlanarFace. 
+                        iViewType
+                            1 : Front View. 2 : Section View. 3 : Cut View. 
 
         :param Reference i_plane:
         :param CATVariant i_view_type:

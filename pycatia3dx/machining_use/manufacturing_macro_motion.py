@@ -17,14 +17,14 @@ class ManufacturingMacroMotion(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMacroMotion
-                | 
-                | Interface to manage the motions of macros.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMacroMotion
+                
+                Interface to manage the motions of macros.
     
     """
 
@@ -37,13 +37,13 @@ class ManufacturingMacroMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteElementaryMotion(long iPosition)
-                |     Deletes an elementary motion in the macro motion.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position of the motion to delete in the sequence
+                Sub DeleteElementaryMotion(long iPosition)
+                    Deletes an elementary motion in the macro motion.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position of the motion to delete in the sequence
 
         :param int i_position:
         :return: None
@@ -55,16 +55,16 @@ class ManufacturingMacroMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetElementaryMotion(long iPosition) As AnyObject
-                |     Access to an elementary macro motion.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position of the motion to access. 
-                | 
-                |     Returns:
-                |         The corresponding motion found.
+                Func GetElementaryMotion(long iPosition) As AnyObject
+                    Access to an elementary macro motion.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position of the motion to access. 
+                
+                    Returns:
+                        The corresponding motion found.
 
         :param int i_position:
         :return: AnyObject
@@ -76,11 +76,11 @@ class ManufacturingMacroMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfElementaryMotions() As long
-                |     Returns the number of elementary macro motions.
-                | 
-                |     Returns:
-                |         The number of elementary macro motions.
+                Func GetNumberOfElementaryMotions() As long
+                    Returns the number of elementary macro motions.
+                
+                    Returns:
+                        The number of elementary macro motions.
 
         :return: int
         """
@@ -91,33 +91,33 @@ class ManufacturingMacroMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func InsertElementaryMotion(long iPosition,CATBSTR iMotionType) As
-                | AnyObject
-                |     Inserts an elementary motion in the macro motion.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The position in the sequence. 
-                |         iMotionType
-                |             The type of motion to add. Authorized values are :
-                | 
-                |                 MfgMacroClearanceMotion
-                |                 MfgMacroElementaryAxialMotion
-                |                 MfgMacroElementaryHorizontalMotion
-                |                 MfgMacroElementaryCircularMotion
-                |                 MfgMacroPPWord
-                |                 MfgMacroElementaryRampingMotion
-                |                 MfgMacroElementaryGoToAPlaneMotion
-                |                 MfgMacroElementaryGoToAPointMotion
-                |                 MfgMacroElementaryDeltaLnDistMotion
-                |                 MfgMacroElementaryToolAxisMotion
-                |                 MfgMacroElementaryHelixMotion
-                |                 MfgMacroElementaryGoToALineMotion
-                |                 MfgMacroElementarySimultaneousAxisMotion
-                | 
-                |     Returns:
-                |         The new motion.
+                Func InsertElementaryMotion(long iPosition,CATBSTR iMotionType) As
+                AnyObject
+                    Inserts an elementary motion in the macro motion.
+                
+                    Parameters:
+                
+                        iPosition
+                            The position in the sequence. 
+                        iMotionType
+                            The type of motion to add. Authorized values are :
+                
+                                MfgMacroClearanceMotion
+                                MfgMacroElementaryAxialMotion
+                                MfgMacroElementaryHorizontalMotion
+                                MfgMacroElementaryCircularMotion
+                                MfgMacroPPWord
+                                MfgMacroElementaryRampingMotion
+                                MfgMacroElementaryGoToAPlaneMotion
+                                MfgMacroElementaryGoToAPointMotion
+                                MfgMacroElementaryDeltaLnDistMotion
+                                MfgMacroElementaryToolAxisMotion
+                                MfgMacroElementaryHelixMotion
+                                MfgMacroElementaryGoToALineMotion
+                                MfgMacroElementarySimultaneousAxisMotion
+                
+                    Returns:
+                        The new motion.
 
         :param int i_position:
         :param str i_motion_type:

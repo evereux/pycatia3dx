@@ -19,52 +19,52 @@ class SimUltimateStrength(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimUltimateStrength
-                | 
-                | Represents the Ultimate Strength object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimUltimateStrength as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyUltimateStrength As SimUltimateStrength
-                |      Set MyUltimateStrength = MyMaterialOptions.Add("SimUltimateStrength")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimUltimateStrength
-                |     named "Ultimate Strength.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyUltimateStrength As SimUltimateStrength
-                |      Set MyUltimateStrength = MyMaterialOptions.Item("Ultimate Strength.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimUltimateStrength as following:
-                | 
-                |      ...
-                |      myUltimateStrength = myMaterialOptions.Add("SimUltimateStrength")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimUltimateStrength named "Ultimate Strength.1" as
-                |     following:
-                | 
-                |      ...
-                |      myUltimateStrength = myMaterialOptions.Item("Ultimate Strength.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimUltimateStrength
+                
+                Represents the Ultimate Strength object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimUltimateStrength as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyUltimateStrength As SimUltimateStrength
+                     Set MyUltimateStrength = MyMaterialOptions.Add("SimUltimateStrength")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimUltimateStrength
+                    named "Ultimate Strength.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyUltimateStrength As SimUltimateStrength
+                     Set MyUltimateStrength = MyMaterialOptions.Item("Ultimate Strength.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimUltimateStrength as following:
+                
+                     ...
+                     myUltimateStrength = myMaterialOptions.Add("SimUltimateStrength")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimUltimateStrength named "Ultimate Strength.1" as
+                    following:
+                
+                     ...
+                     myUltimateStrength = myMaterialOptions.Item("Ultimate Strength.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -78,9 +78,9 @@ class SimUltimateStrength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialCompressiveTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the compressive material table.
+                Property MaterialCompressiveTable() As SimMaterialTable (Read
+                Only)
+                    Returns the compressive material table.
 
         :return: SimMaterialTable
         """
@@ -93,9 +93,9 @@ class SimUltimateStrength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTensileTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the tensile material table.
+                Property MaterialTensileTable() As SimMaterialTable (Read
+                Only)
+                    Returns the tensile material table.
 
         :return: SimMaterialTable
         """
@@ -107,20 +107,20 @@ class SimUltimateStrength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetMaterialCompressiveTableColumn(SimUltimateStrengthMaterialCompressiveTableColumn iMaterialCompressiveTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the specified table column in compressive
-                |     table.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialCompressiveTableColumn[in]
-                |             The compressive table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func
+                GetMaterialCompressiveTableColumn(SimUltimateStrengthMaterialCompressiveTableColumn iMaterialCompressiveTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the specified table column in compressive
+                    table.
+                
+                    Parameters:
+                
+                        iMaterialCompressiveTableColumn[in]
+                            The compressive table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_compressive_table_column:
         :return: SimTableColumn
@@ -132,20 +132,20 @@ class SimUltimateStrength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetMaterialTensileTableColumn(SimUltimateStrengthMaterialTensileTableColumn
-                | iMaterialTensileTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table column in tensile
-                |     table.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTensileTableColumn[in]
-                |             The tensile table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func
+                GetMaterialTensileTableColumn(SimUltimateStrengthMaterialTensileTableColumn
+                iMaterialTensileTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table column in tensile
+                    table.
+                
+                    Parameters:
+                
+                        iMaterialTensileTableColumn[in]
+                            The tensile table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_tensile_table_column:
         :return: SimTableColumn

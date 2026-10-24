@@ -18,27 +18,27 @@ class LicenseSettingAtt(SettingController):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     System.SettingController
-                |                         LicenseSettingAtt
-                | 
-                | Interface to handle the licensing settings.
-                | Role: This interface is implemented by a component which represents the
-                | controller of the static Licenses.
-                | To access this property page:
-                | Click the Options command in the Tools menu
-                | Click General
-                | Click the Licensing Property Page
-                | 
-                | This interface defines:
-                | A method to set each License
-                | A method to get the value of each License
-                | A method to lock/unlock each parameter
-                | A method to retrieve the information concerning each parameter
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    System.SettingController
+                                        LicenseSettingAtt
+                
+                Interface to handle the licensing settings.
+                Role: This interface is implemented by a component which represents the
+                controller of the static Licenses.
+                To access this property page:
+                Click the Options command in the Tools menu
+                Click General
+                Click the Licensing Property Page
+                
+                This interface defines:
+                A method to set each License
+                A method to get the value of each License
+                A method to lock/unlock each parameter
+                A method to retrieve the information concerning each parameter
     
     """
 
@@ -52,12 +52,12 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Frequency() As float
-                |     Retrieves or Sets the contact frequency.
-                |     Role: Retrieves or sets the value of the parameter describing the server
-                |     contact frequency. Note that a null value represents the maximum contact
-                |     frequency value in minutes. For more information about the range and maximum,
-                |     refers to the Infrastructure documentation.
+                Property Frequency() As float
+                    Retrieves or Sets the contact frequency.
+                    Role: Retrieves or sets the value of the parameter describing the server
+                    contact frequency. Note that a null value represents the maximum contact
+                    frequency value in minutes. For more information about the range and maximum,
+                    refers to the Infrastructure documentation.
 
         :return: float
         """
@@ -78,11 +78,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property NodelockAlert() As long
-                |     Retrieves or Sets the license expiry alert.
-                |     Role: Retrieves or sets the value of the parameter describing the
-                |     license expiry alert in days. For more information about the range and
-                |     maximum, refers to the Infrastructure documentation.
+                Property NodelockAlert() As long
+                    Retrieves or Sets the license expiry alert.
+                    Role: Retrieves or sets the value of the parameter describing the
+                    license expiry alert in days. For more information about the range and
+                    maximum, refers to the Infrastructure documentation.
 
         :return: int
         """
@@ -103,11 +103,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ServerTimeOut() As float
-                |     Retrieves or Sets the server time out.
-                |     Role: Retrieves or sets the value of the parameter describing the licensing
-                |     server time out in minutes. For more information about the range and maximum,
-                |     refers to the Infrastructure documentation.
+                Property ServerTimeOut() As float
+                    Retrieves or Sets the server time out.
+                    Role: Retrieves or sets the value of the parameter describing the licensing
+                    server time out in minutes. For more information about the range and maximum,
+                    refers to the Infrastructure documentation.
 
         :return: float
         """
@@ -128,11 +128,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ShowLicense() As boolean
-                |     Retrieves or Sets the show license .
-                |     Role: Retrieves or sets the value of the parameter describing the complete
-                |     license information. When the parameter is set, the user gets more information
-                |     about the reason of the failure to request a license.
+                Property ShowLicense() As boolean
+                    Retrieves or Sets the show license .
+                    Role: Retrieves or sets the value of the parameter describing the complete
+                    license information. When the parameter is set, the user gets more information
+                    about the reason of the failure to request a license.
 
         :return: bool
         """
@@ -152,11 +152,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetFrequencyInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the Frequency setting
-                |     parameter.
-                |     Refer to SettingController for a detailed description.
+                Func GetFrequencyInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the Frequency setting
+                    parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
@@ -169,29 +169,29 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetLicense(CATBSTR iLicense) As CATBSTR
-                |     Retrieves the value of the license.
-                |     Role: Retrieves the mapping between a name of a license and the value of
-                |     the license. The license does not need to be returned by GetLicensesList(). But
-                |     if the license is not installed the license will be
-                |     "NotRequested"
-                | 
-                |     Parameters:
-                | 
-                |         iLicense
-                |             the name of the License: "PMG.prd", "_MD2.slt+", "_MD2.slt+GSD" for
-                |             example.
-                |             "PMG.prd" represent the license of the product PMG
-                |             "_MD2.slt+" represent the license of the solution
-                |             MD2
-                |             "_MD2.slt+GSD" represent the license of the solution MD2, with the
-                |             AddOn product GSD 
-                | 
-                |     Returns:
-                |         the value of the License:
-                |         Not requested : License is not Requested.
-                |         key : the name of the license, the default available license has been chosen by the user. License is Requested.
-                |         License Number : a specific license number has been chosen by the user. License is Requested.
+                Func GetLicense(CATBSTR iLicense) As CATBSTR
+                    Retrieves the value of the license.
+                    Role: Retrieves the mapping between a name of a license and the value of
+                    the license. The license does not need to be returned by GetLicensesList(). But
+                    if the license is not installed the license will be
+                    "NotRequested"
+                
+                    Parameters:
+                
+                        iLicense
+                            the name of the License: "PMG.prd", "_MD2.slt+", "_MD2.slt+GSD" for
+                            example.
+                            "PMG.prd" represent the license of the product PMG
+                            "_MD2.slt+" represent the license of the solution
+                            MD2
+                            "_MD2.slt+GSD" represent the license of the solution MD2, with the
+                            AddOn product GSD 
+                
+                    Returns:
+                        the value of the License:
+                        Not requested : License is not Requested.
+                        key : the name of the license, the default available license has been chosen by the user. License is Requested.
+                        License Number : a specific license number has been chosen by the user. License is Requested.
 
         :param str i_license:
         :return: str
@@ -203,10 +203,10 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetLicenseInfo(CATBSTR iLicense,CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the License setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Func GetLicenseInfo(CATBSTR iLicense,CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the License setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str i_license:
         :param str io_admin_level:
@@ -220,33 +220,33 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetLicensesList(long iDefaultLicenses) As
-                | CATSafeArrayVariant
-                |     Retrieves the list of the requested or locked licenses.
-                |     Role: Retrieves the list of the requested or locked licenses.
-                |     There is no
-                |     SetLicensesList() because the list is initialized using
-                |     LUM.
-                | 
-                |     Parameters:
-                | 
-                |         iDefaultLicenses
-                |             If iDefaultLicenses!=0 and the settings are empty,
-                |             returns the default licenses, that is, the visible
-                |             nodolocked licenses. If iDefaultLicenses = 0 and
-                |             the settings are empty, returns the selected licenses
-                |             (not yet stored, because not yet validated by OK button).
-                | 
-                |     Returns:
-                |         The array of Licenses.
-                |         character meaning in license name:
-                |         "_": internal notation for a license configuration
-                |         "+": you chose "Any license" mode, example of returned value:
-                |         _ME1.slt+FS1
-                |         When the return value is a serial number (_ME1.slt_SerialNumber), you
-                |         have chosen the "Explicit" license mode. In this case
-                |         the add on product is not
-                |         indicated in the license name.
+                Func GetLicensesList(long iDefaultLicenses) As
+                CATSafeArrayVariant
+                    Retrieves the list of the requested or locked licenses.
+                    Role: Retrieves the list of the requested or locked licenses.
+                    There is no
+                    SetLicensesList() because the list is initialized using
+                    LUM.
+                
+                    Parameters:
+                
+                        iDefaultLicenses
+                            If iDefaultLicenses!=0 and the settings are empty,
+                            returns the default licenses, that is, the visible
+                            nodolocked licenses. If iDefaultLicenses = 0 and
+                            the settings are empty, returns the selected licenses
+                            (not yet stored, because not yet validated by OK button).
+                
+                    Returns:
+                        The array of Licenses.
+                        character meaning in license name:
+                        "_": internal notation for a license configuration
+                        "+": you chose "Any license" mode, example of returned value:
+                        _ME1.slt+FS1
+                        When the return value is a serial number (_ME1.slt_SerialNumber), you
+                        have chosen the "Explicit" license mode. In this case
+                        the add on product is not
+                        indicated in the license name.
 
         :param int i_default_licenses:
         :return: tuple
@@ -258,33 +258,33 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetLicensesListInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the LicensesList setting
-                |     parameter.
-                |     Role: Retrieves information about the LicensesList setting locking state
-                |     (global lock for the LicensesList). It is used to get the lock status of the
-                |     List of the Licenses. If the LicensesList is locked all the licenses are
-                |     locked. When the licenses are locked, it means that an administrator has locked
-                |     the attribute. It does not means that an administrator has changed the value of
-                |     the attribute. The value of the setting is not updatable because it refers to a
-                |     lock on a list. That is why the return value is false.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                |             Level of administrator. 
-                |         ioLocked
-                |             Locked/Unlocked. 
-                | 
-                |     Returns:
-                |         False.
-                |         Information returned in the dump:
-                |         Parameter 1 : "Value taken in case of reset" : useless. Default value : "Default value"
-                |         Parameter 2 : "Locking state" value : unlocked / locked / locked at Admin Level n
-                |         Parameter 3 : "Returned value" : useless, default value : False
-                | 
-                |         Refer to SettingController for a detailed description.
+                Func GetLicensesListInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the LicensesList setting
+                    parameter.
+                    Role: Retrieves information about the LicensesList setting locking state
+                    (global lock for the LicensesList). It is used to get the lock status of the
+                    List of the Licenses. If the LicensesList is locked all the licenses are
+                    locked. When the licenses are locked, it means that an administrator has locked
+                    the attribute. It does not means that an administrator has changed the value of
+                    the attribute. The value of the setting is not updatable because it refers to a
+                    lock on a list. That is why the return value is false.
+                
+                    Parameters:
+                
+                        ioAdminLevel
+                            Level of administrator. 
+                        ioLocked
+                            Locked/Unlocked. 
+                
+                    Returns:
+                        False.
+                        Information returned in the dump:
+                        Parameter 1 : "Value taken in case of reset" : useless. Default value : "Default value"
+                        Parameter 2 : "Locking state" value : unlocked / locked / locked at Admin Level n
+                        Parameter 3 : "Returned value" : useless, default value : False
+                
+                        Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
@@ -297,11 +297,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetNodelockAlertInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the license expiry alert setting
-                |     parameter.
-                |     Refer to SettingController for a detailed description.
+                Func GetNodelockAlertInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the license expiry alert setting
+                    parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
@@ -314,10 +314,10 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetServerTimeOutInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the TimeOut setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Func GetServerTimeOutInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the TimeOut setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
@@ -330,11 +330,11 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetShowLicenseInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
-                | boolean
-                |     Retrieves information about the ShowLicense setting
-                |     parameter.
-                |     Refer to SettingController for a detailed description.
+                Func GetShowLicenseInfo(CATBSTR ioAdminLevel,CATBSTR ioLocked) As
+                boolean
+                    Retrieves information about the ShowLicense setting
+                    parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
@@ -347,9 +347,9 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetFrequencyLock(boolean iLock)
-                |     Locks or unlocks the Frequency setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Sub SetFrequencyLock(boolean iLock)
+                    Locks or unlocks the Frequency setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param bool i_lock:
         :return: None
@@ -361,25 +361,25 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetLicense(CATBSTR iLicense,CATBSTR iValue)
-                |     Sets the License.
-                |     Role: Sets the value of the license.
-                | 
-                |     Parameters:
-                | 
-                |         iLicense
-                |             the name of the License: "PMG.prd", "_MD2.slt+", "_MD2.slt+gSD" for
-                |             example.
-                |             "PMG.prd" represent the license of the product PMG
-                |             "_MD2.slt+" represent the license of the solution
-                |             MD2
-                |             "_MD2.slt+GSD" represent the license of the solution MD2, with the
-                |             AddOn product GSD 
-                |         iValue
-                |             the value of the License:
-                |             Not requested : License is not Requested.
-                |             key : the name of the license, the default available license has been chosen by the user. License is Requested.
-                |             License Number : a specific license number has been chosen by the user. License is Requested.
+                Sub SetLicense(CATBSTR iLicense,CATBSTR iValue)
+                    Sets the License.
+                    Role: Sets the value of the license.
+                
+                    Parameters:
+                
+                        iLicense
+                            the name of the License: "PMG.prd", "_MD2.slt+", "_MD2.slt+gSD" for
+                            example.
+                            "PMG.prd" represent the license of the product PMG
+                            "_MD2.slt+" represent the license of the solution
+                            MD2
+                            "_MD2.slt+GSD" represent the license of the solution MD2, with the
+                            AddOn product GSD 
+                        iValue
+                            the value of the License:
+                            Not requested : License is not Requested.
+                            key : the name of the license, the default available license has been chosen by the user. License is Requested.
+                            License Number : a specific license number has been chosen by the user. License is Requested.
 
         :param str i_license:
         :param str i_value:
@@ -392,9 +392,9 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetLicenseLock(CATBSTR iLicense,boolean iLock)
-                |     Locks or unlocks the License setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Sub SetLicenseLock(CATBSTR iLicense,boolean iLock)
+                    Locks or unlocks the License setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param str i_license:
         :param bool i_lock:
@@ -407,21 +407,21 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetLicensesListLock(boolean iLock)
-                |     Locks or unlocks the LicensesList setting parameter.
-                |     Role:Locks or unlocks the LicensesList setting parameter. Locks or unlocks
-                |     the parameter describing the list of installed licenses, if the operation is
-                |     allowed in the current administrated environment. It is the global lock on all
-                |     the licenses. When the LicenseList is locked all the licenses are locked. When
-                |     the LicenseList is unlocked all the licenses are unlocked.
-                | 
-                |     Parameters:
-                | 
-                |         iLock
-                |             the locking operation to be performed:
-                |             True: to lock the parameter.
-                |             False: to unlock the parameter.
-                |             Refer to SettingController for a detailed description.
+                Sub SetLicensesListLock(boolean iLock)
+                    Locks or unlocks the LicensesList setting parameter.
+                    Role:Locks or unlocks the LicensesList setting parameter. Locks or unlocks
+                    the parameter describing the list of installed licenses, if the operation is
+                    allowed in the current administrated environment. It is the global lock on all
+                    the licenses. When the LicenseList is locked all the licenses are locked. When
+                    the LicenseList is unlocked all the licenses are unlocked.
+                
+                    Parameters:
+                
+                        iLock
+                            the locking operation to be performed:
+                            True: to lock the parameter.
+                            False: to unlock the parameter.
+                            Refer to SettingController for a detailed description.
 
         :param bool i_lock:
         :return: None
@@ -433,10 +433,10 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetNodelockAlertLock(boolean iLock)
-                |     Locks or unlocks the license expiry alert setting
-                |     parameter.
-                |     Refer to SettingController for a detailed description.
+                Sub SetNodelockAlertLock(boolean iLock)
+                    Locks or unlocks the license expiry alert setting
+                    parameter.
+                    Refer to SettingController for a detailed description.
 
         :param bool i_lock:
         :return: None
@@ -448,9 +448,9 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetServerTimeOutLock(boolean iLock)
-                |     Locks or unlocks the TimeOut setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Sub SetServerTimeOutLock(boolean iLock)
+                    Locks or unlocks the TimeOut setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param bool i_lock:
         :return: None
@@ -462,9 +462,9 @@ class LicenseSettingAtt(SettingController):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Sub SetShowLicenseLock(boolean iLock)
-                |     Locks or unlocks the ShowLicense setting parameter.
-                |     Refer to SettingController for a detailed description.
+                Sub SetShowLicenseLock(boolean iLock)
+                    Locks or unlocks the ShowLicense setting parameter.
+                    Refer to SettingController for a detailed description.
 
         :param bool i_lock:
         :return: None

@@ -18,55 +18,55 @@ class SimSubstructureGenerationStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimSubstructureGenerationStep
-                | 
-                | Represents the Substructure Generation Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimSubstructureGenerationStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySubstructureGenerationStep As
-                |      SimSubstructureGenerationStep
-                |      Set MySubstructureGenerationStep = MySteps.Add("SubstructureGenerationStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimSubstructureGenerationStep
-                |     named "Substructure Generation Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MySubstructureGenerationStep As
-                |      SimSubstructureGenerationStep
-                |      Set MySubstructureGenerationStep = MySteps.Item("Substructure Generation Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimSubstructureGenerationStep as following:
-                | 
-                |      ...
-                |      mySubstructureGenerationStep = mySteps.Add("SimSubstructureGenerationStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimSubstructureGenerationStep named "Substructure Generation Step.1" as
-                |     following:
-                | 
-                |      ...
-                |      mySubstructureGenerationStep = mySteps.Item("Substructure Generation Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimSubstructureGenerationStep
+                
+                Represents the Substructure Generation Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimSubstructureGenerationStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySubstructureGenerationStep As
+                     SimSubstructureGenerationStep
+                     Set MySubstructureGenerationStep = MySteps.Add("SubstructureGenerationStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimSubstructureGenerationStep
+                    named "Substructure Generation Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MySubstructureGenerationStep As
+                     SimSubstructureGenerationStep
+                     Set MySubstructureGenerationStep = MySteps.Item("Substructure Generation Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimSubstructureGenerationStep as following:
+                
+                     ...
+                     mySubstructureGenerationStep = mySteps.Add("SimSubstructureGenerationStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimSubstructureGenerationStep named "Substructure Generation Step.1" as
+                    following:
+                
+                     ...
+                     mySubstructureGenerationStep = mySteps.Item("Substructure Generation Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -80,8 +80,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -102,9 +102,9 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FrequencyForDependentProperties() As double
-                |     Returns or sets the frequency at which the solver evaluates
-                |     frequency-dependent material properties. Quantity: FREQUENCY, Units: Hz.
+                Property FrequencyForDependentProperties() As double
+                    Returns or sets the frequency at which the solver evaluates
+                    frequency-dependent material properties. Quantity: FREQUENCY, Units: Hz.
 
         :return: float
         """
@@ -125,9 +125,9 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalDamping() As SimGeneralGlobalDamping (Read
-                | Only)
-                |     Returns the global damping.
+                Property GlobalDamping() As SimGeneralGlobalDamping (Read
+                Only)
+                    Returns the global damping.
 
         :return: SimGeneralGlobalDamping
         """
@@ -140,11 +140,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GravityLoadVectorsFlag() As boolean
-                |     Returns or sets the flag that determines if the gravity vectors will be
-                |     generated.
-                |     TRUE: the gravity vectors will be generated.
-                |     FALSE: the gravity vectors will not be generated.
+                Property GravityLoadVectorsFlag() As boolean
+                    Returns or sets the flag that determines if the gravity vectors will be
+                    generated.
+                    TRUE: the gravity vectors will be generated.
+                    FALSE: the gravity vectors will not be generated.
 
         :return: bool
         """
@@ -165,8 +165,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InterfaceSupport() As CATBaseDispatch (Read Only)
-                |     Returns the interface support.
+                Property InterfaceSupport() As CATBaseDispatch (Read Only)
+                    Returns the interface support.
 
         :return: AnyObject
         """
@@ -179,11 +179,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionAnalysisDataFlag() As boolean
-                |     Returns or sets the flag that determines if the Simpack flexible body will
-                |     be generated.
-                |     TRUE: the Simpack flexible body will be generated.
-                |     FALSE: the Simpack flexible body will not be generated.
+                Property MotionAnalysisDataFlag() As boolean
+                    Returns or sets the flag that determines if the Simpack flexible body will
+                    be generated.
+                    TRUE: the Simpack flexible body will be generated.
+                    FALSE: the Simpack flexible body will not be generated.
 
         :return: bool
         """
@@ -204,8 +204,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RecoveryDomain() As CATBaseDispatch (Read Only)
-                |     Returns the recovery domain.
+                Property RecoveryDomain() As CATBaseDispatch (Read Only)
+                    Returns the recovery domain.
 
         :return: AnyObject
         """
@@ -218,11 +218,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RecoveryDomainFlag() As boolean
-                |     Returns or sets the flag that determines if the recovery domain is
-                |     specified.
-                |     TRUE: the recovery domain is specified.
-                |     FALSE: the recovery domain is not specified.
+                Property RecoveryDomainFlag() As boolean
+                    Returns or sets the flag that determines if the recovery domain is
+                    specified.
+                    TRUE: the recovery domain is specified.
+                    FALSE: the recovery domain is not specified.
 
         :return: bool
         """
@@ -243,11 +243,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReducedMassMatrixFlag() As boolean
-                |     Returns or sets the flag that determines if a reduced mass matrix will be
-                |     generated.
-                |     TRUE: reduced mass matrix will be generated.
-                |     FALSE: reduced mass matrix will not be generated.
+                Property ReducedMassMatrixFlag() As boolean
+                    Returns or sets the flag that determines if a reduced mass matrix will be
+                    generated.
+                    TRUE: reduced mass matrix will be generated.
+                    FALSE: reduced mass matrix will not be generated.
 
         :return: bool
         """
@@ -268,11 +268,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReducedStructuralDampingMatrixFlag() As boolean
-                |     Returns or sets the flag that determines if a reduced structural damping
-                |     matrix will be generated.
-                |     TRUE: reduced structural damping matrix will be generated.
-                |     FALSE: reduced structural damping matrix will not be generated.
+                Property ReducedStructuralDampingMatrixFlag() As boolean
+                    Returns or sets the flag that determines if a reduced structural damping
+                    matrix will be generated.
+                    TRUE: reduced structural damping matrix will be generated.
+                    FALSE: reduced structural damping matrix will not be generated.
 
         :return: bool
         """
@@ -293,11 +293,11 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReducedViscousDampingMatrixFlag() As boolean
-                |     Returns or sets the flag that determines if a reduced viscous damping
-                |     matrix will be generated.
-                |     TRUE: reduced viscous damping matrix will be generated.
-                |     FALSE: reduced viscous damping matrix will not be generated.
+                Property ReducedViscousDampingMatrixFlag() As boolean
+                    Returns or sets the flag that determines if a reduced viscous damping
+                    matrix will be generated.
+                    TRUE: reduced viscous damping matrix will be generated.
+                    FALSE: reduced viscous damping matrix will not be generated.
 
         :return: bool
         """
@@ -318,8 +318,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubstructureFEM() As CATBaseDispatch (Read Only)
-                |     Returns the substructure FEM.
+                Property SubstructureFEM() As CATBaseDispatch (Read Only)
+                    Returns the substructure FEM.
 
         :return: AnyObject
         """
@@ -332,9 +332,9 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SubstructureIdentifier() As long
-                |     Returns or sets the substructure identifier. Quantity: DIMENSIONLESS,
-                |     Units: None.
+                Property SubstructureIdentifier() As long
+                    Returns or sets the substructure identifier. Quantity: DIMENSIONLESS,
+                    Units: None.
 
         :return: int
         """
@@ -354,8 +354,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSubstructureFEM() As CATBaseDispatch
-                |     Creates the substructure FEM.
+                Func CreateSubstructureFEM() As CATBaseDispatch
+                    Creates the substructure FEM.
 
         :return: AnyObject
         """
@@ -366,8 +366,8 @@ class SimSubstructureGenerationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveSubstructureFEM()
-                |     Removes the substructure FEM. 
+                Sub RemoveSubstructureFEM()
+                    Removes the substructure FEM. 
 
         :return: None
         """

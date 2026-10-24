@@ -17,14 +17,14 @@ class ManufacturingActivityCompensation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingActivityCompensation
-                | 
-                | Interface to manage compensation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingActivityCompensation
+                
+                Interface to manage compensation.
     
     """
 
@@ -37,13 +37,13 @@ class ManufacturingActivityCompensation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValueLong() As long
-                |     Retrieves the value of corrector number.
-                | 
-                |     Parameters:
-                | 
-                |         oCorrectorNumber
-                |             The corrector number
+                Func GetValueLong() As long
+                    Retrieves the value of corrector number.
+                
+                    Parameters:
+                
+                        oCorrectorNumber
+                            The corrector number
 
         :return: int
         """

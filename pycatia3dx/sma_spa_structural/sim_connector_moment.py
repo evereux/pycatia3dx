@@ -17,52 +17,52 @@ class SimConnectorMoment(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorMoment
-                | 
-                | Represents the Connector Moment object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a SimConnectorMoment as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorMoment As SimConnectorMoment
-                |      Set MyConnectorMoment = MyFeatures.Add("SimConnectorMoment")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a SimConnectorMoment named
-                |     "Connector Moment.1" as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorMoment As SimConnectorMoment
-                |      Set MyConnectorMoment = MyFeatures.Item("Connector Moment.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a SimConnectorMoment
-                |     as following:
-                | 
-                |      ...
-                |      myConnectorMoment = myFeatures.Add("SimConnectorMoment")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimConnectorMoment named "Connector Moment.1" as
-                |     following:
-                | 
-                |      ...
-                |      myConnectorMoment = myFeatures.Item("Connector Moment.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorMoment
+                
+                Represents the Connector Moment object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a SimConnectorMoment as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorMoment As SimConnectorMoment
+                     Set MyConnectorMoment = MyFeatures.Add("SimConnectorMoment")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a SimConnectorMoment named
+                    "Connector Moment.1" as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorMoment As SimConnectorMoment
+                     Set MyConnectorMoment = MyFeatures.Item("Connector Moment.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a SimConnectorMoment
+                    as following:
+                
+                     ...
+                     myConnectorMoment = myFeatures.Add("SimConnectorMoment")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimConnectorMoment named "Connector Moment.1" as
+                    following:
+                
+                     ...
+                     myConnectorMoment = myFeatures.Item("Connector Moment.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -76,8 +76,8 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -98,13 +98,13 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of available connector components of relative
-                |     motion. The list can contains the following values:
-                |     4 : the first rotation DOF is available,
-                |     5 : the second rotation DOF is available,
-                |     6 : the third rotation DOF is available.
+                Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of available connector components of relative
+                    motion. The list can contains the following values:
+                    4 : the first rotation DOF is available,
+                    5 : the second rotation DOF is available,
+                    6 : the third rotation DOF is available.
 
         :return: tuple
         """
@@ -117,8 +117,8 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -131,9 +131,9 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. See SimFeatures.GetSpecTreeCategory for usage.
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. See SimFeatures.GetSpecTreeCategory for usage.
 
         :return: str
         """
@@ -145,19 +145,19 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMagnitude(double oFx,double oFy,double oFz)
-                |     Retrieves the magnitude.
-                | 
-                |     Parameters:
-                | 
-                |         oFx[out]
-                |             X component of the moment. Quantity: MOMENT, units: NM
-                |             
-                |         oFy[out]
-                |             Y component of the moment. Quantity: MOMENT, units: NM
-                |             
-                |         oFz[out]
-                |             Z component of the moment. Quantity: MOMENT, units: NM
+                Sub GetMagnitude(double oFx,double oFy,double oFz)
+                    Retrieves the magnitude.
+                
+                    Parameters:
+                
+                        oFx[out]
+                            X component of the moment. Quantity: MOMENT, units: NM
+                            
+                        oFy[out]
+                            Y component of the moment. Quantity: MOMENT, units: NM
+                            
+                        oFz[out]
+                            Z component of the moment. Quantity: MOMENT, units: NM
 
         :param float o_fx:
         :param float o_fy:
@@ -171,19 +171,19 @@ class SimConnectorMoment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMagnitude(double iFx,double iFy,double iFz)
-                |     Sets the magnitude.
-                | 
-                |     Parameters:
-                | 
-                |         iFx[in]
-                |             X component of the moment. Quantity: MOMENT, units: NM
-                |             
-                |         iFy[in]
-                |             Y component of the moment. Quantity: MOMENT, units: NM
-                |             
-                |         iFz[in]
-                |             Z component of the moment. Quantity: MOMENT, units: NM
+                Sub SetMagnitude(double iFx,double iFy,double iFz)
+                    Sets the magnitude.
+                
+                    Parameters:
+                
+                        iFx[in]
+                            X component of the moment. Quantity: MOMENT, units: NM
+                            
+                        iFy[in]
+                            Y component of the moment. Quantity: MOMENT, units: NM
+                            
+                        iFz[in]
+                            Z component of the moment. Quantity: MOMENT, units: NM
 
         :param float i_fx:
         :param float i_fy:

@@ -19,16 +19,16 @@ class StrSectionMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrSectionMngt
-                | 
-                | Object to manage Structure Functional Modeler section applied to a
-                | Profile.
-                | Role: To access section parameters of Structure profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrSectionMngt
+                
+                Object to manage Structure Functional Modeler section applied to a
+                Profile.
+                Role: To access section parameters of Structure profile.
     
     """
 
@@ -42,30 +42,30 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AnchorPoint() As CATBSTR
-                |     Returns or Sets the anchor point of this Profile.
-                |     Legal Values:
-                |     catStrBottomCenter
-                |     catStrBottomLeft
-                |     catStrBottomRight
-                |     catStrGravity
-                |     catStrTopCenter
-                |     catStrTopLeft
-                |     catStrTopRight
-                |     catStrCenterCenter
-                |     catStrCenterLeft
-                |     catStrCenterRight
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the anchor point of the
-                |              Profile.
-                |              
-                | 
-                |               Dim ObjStrSectionMngt As StrSectionMngt
-                |               Set ObjStrSectionMngt = ObjSfdStiffener.StrSectionMngt
-                |               AnchorPoint = ObjStrSectionMngt.AnchorPoint
+                Property AnchorPoint() As CATBSTR
+                    Returns or Sets the anchor point of this Profile.
+                    Legal Values:
+                    catStrBottomCenter
+                    catStrBottomLeft
+                    catStrBottomRight
+                    catStrGravity
+                    catStrTopCenter
+                    catStrTopLeft
+                    catStrTopRight
+                    catStrCenterCenter
+                    catStrCenterLeft
+                    catStrCenterRight
+                
+                    Example:
+                
+                
+                             This example retrieves  the anchor point of the
+                             Profile.
+                             
+                
+                              Dim ObjStrSectionMngt As StrSectionMngt
+                              Set ObjStrSectionMngt = ObjSfdStiffener.StrSectionMngt
+                              AnchorPoint = ObjStrSectionMngt.AnchorPoint
 
         :return: str
         """
@@ -86,21 +86,21 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AngleMode() As long
-                |     Returns or Sets the angle mode of this stiffener function.
-                |     Legal values :
-                |     -1 : undefined mode
-                |     1 : normal to plate
-                |     0 : along plane
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the angle mode of this
-                |              Profile.
-                |              
-                | 
-                |               AngleMode = ObjStrSectionMngt.AngleMode
+                Property AngleMode() As long
+                    Returns or Sets the angle mode of this stiffener function.
+                    Legal values :
+                    -1 : undefined mode
+                    1 : normal to plate
+                    0 : along plane
+                
+                    Example:
+                
+                
+                             This example retrieves  the angle mode of this
+                             Profile.
+                             
+                
+                              AngleMode = ObjStrSectionMngt.AngleMode
 
         :return: int
         """
@@ -121,22 +121,22 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FlangeOrientation() As long
-                |     Returns or Sets the Flange orientation of the positioned section of this
-                |     Profile.
-                |     Legal values :
-                |     -1 : Invert
-                |     1 : Normal
-                |     0 : Unknown orientation
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves flange orientation of the section of the
-                |              profile.
-                |              
-                | 
-                |               FlangeOrientation = ObjStrSectionMngt.FlangeOrientation
+                Property FlangeOrientation() As long
+                    Returns or Sets the Flange orientation of the positioned section of this
+                    Profile.
+                    Legal values :
+                    -1 : Invert
+                    1 : Normal
+                    0 : Unknown orientation
+                
+                    Example:
+                
+                
+                             This example retrieves flange orientation of the section of the
+                             profile.
+                             
+                
+                              FlangeOrientation = ObjStrSectionMngt.FlangeOrientation
 
         :return: int
         """
@@ -157,18 +157,18 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RefElementForAngle() As Reference
-                |     Returns or Sets the reference element used in "AlongPlane" mode for this
-                |     Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves reference element for the
-                |              profile.
-                |              
-                | 
-                |               RefElement = ObjStrSectionMngt.RefElementForAngle
+                Property RefElementForAngle() As Reference
+                    Returns or Sets the reference element used in "AlongPlane" mode for this
+                    Profile.
+                
+                    Example:
+                
+                
+                             This example retrieves reference element for the
+                             profile.
+                             
+                
+                              RefElement = ObjStrSectionMngt.RefElementForAngle
 
         :return: Reference
         """
@@ -189,22 +189,22 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WebOrientation() As long
-                |     Returns or Sets the Web orientation of the positioned section of this
-                |     Profile.
-                |     Legal values :
-                |     -1 : Invert
-                |     1 : Normal
-                |     0 : Unknown orientation
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves web orientation of the section of the
-                |              profile.
-                |              
-                | 
-                |               WebOrientation = ObjStrSectionMngt.WebOrientation
+                Property WebOrientation() As long
+                    Returns or Sets the Web orientation of the positioned section of this
+                    Profile.
+                    Legal values :
+                    -1 : Invert
+                    1 : Normal
+                    0 : Unknown orientation
+                
+                    Example:
+                
+                
+                             This example retrieves web orientation of the section of the
+                             profile.
+                             
+                
+                              WebOrientation = ObjStrSectionMngt.WebOrientation
 
         :return: int
         """
@@ -224,18 +224,18 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAngle() As Parameter
-                |     Returns the section's angle for this Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the section's angle for the
-                |              profile.
-                |              
-                | 
-                |               Dim ParmAngle As Parameter
-                |               Set ParmAngle = ObjStrSectionMngt.GetAngle
+                Func GetAngle() As Parameter
+                    Returns the section's angle for this Profile.
+                
+                    Example:
+                
+                
+                             This example retrieves the section's angle for the
+                             profile.
+                             
+                
+                              Dim ParmAngle As Parameter
+                              Set ParmAngle = ObjStrSectionMngt.GetAngle
 
         :return: Parameter
         """
@@ -246,18 +246,18 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetFlangeAnchorPointOffset() As Parameter
-                |     Returns the Flange Anchor Point Offset parameter.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the flange anchor point
-                |              offset.
-                |              
-                | 
-                |               Dim ParamFlangeAnchorPointOffset As Parameter
-                |               Set ParamFlangeAnchorPointOffset = ObjStrSectionMngt.GetFlangeAnchorPointOffset
+                Func GetFlangeAnchorPointOffset() As Parameter
+                    Returns the Flange Anchor Point Offset parameter.
+                
+                    Example:
+                
+                
+                             This example retrieves the flange anchor point
+                             offset.
+                             
+                
+                              Dim ParamFlangeAnchorPointOffset As Parameter
+                              Set ParamFlangeAnchorPointOffset = ObjStrSectionMngt.GetFlangeAnchorPointOffset
 
         :return: Parameter
         """
@@ -268,22 +268,22 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iName) As Parameter
-                |     Returns a KWE parameter in the section document.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             Name of the parameter. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the parameter in the section
-                |              document.
-                |              
-                | 
-                |               Set Param = ObjStrSectionMngt.GetParameter "ParamName"
+                Func GetParameter(CATBSTR iName) As Parameter
+                    Returns a KWE parameter in the section document.
+                
+                    Parameters:
+                
+                        iName
+                            Name of the parameter. 
+                
+                    Example:
+                
+                
+                             This example retrieves the parameter in the section
+                             document.
+                             
+                
+                              Set Param = ObjStrSectionMngt.GetParameter "ParamName"
 
         :param str i_name:
         :return: Parameter
@@ -296,39 +296,39 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPlacedSectionAxis(double iLambda,CATSafeArrayVariant
-                | oFirstDir,CATSafeArrayVariant oSecondDir,CATSafeArrayVariant
-                | oThirdDir,CATSafeArrayVariant oOrigin)
-                |     Computes the axis used to place the section on the guide
-                |     curve.
-                | 
-                |     Parameters:
-                | 
-                |         iLambda
-                |             Curvilinear abscide on the specified domain. Value in [0. , 1.].
-                |             
-                |         oFirstDir
-                |             FirstAxis. 
-                |         oSecondDir
-                |             SecondAxis. 
-                |         oThirdDir
-                |             ThirdAxis. 
-                |         oOrigin
-                |             OriginAxis. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the section's angle for the
-                |              profile.
-                |              
-                | 
-                |               Dim FirstDir() As Variant
-                |               Dim SecondDir() As Variant
-                |               Dim ThirdDir() As Variant
-                |               Dim Origin() As Variant
-                |               ObjStrSectionMngt.GetPlacedSectionAxis 0.5, FirstDir, SecondDir,
-                |               ThirdDir, Origin
+                Sub GetPlacedSectionAxis(double iLambda,CATSafeArrayVariant
+                oFirstDir,CATSafeArrayVariant oSecondDir,CATSafeArrayVariant
+                oThirdDir,CATSafeArrayVariant oOrigin)
+                    Computes the axis used to place the section on the guide
+                    curve.
+                
+                    Parameters:
+                
+                        iLambda
+                            Curvilinear abscide on the specified domain. Value in [0. , 1.].
+                            
+                        oFirstDir
+                            FirstAxis. 
+                        oSecondDir
+                            SecondAxis. 
+                        oThirdDir
+                            ThirdAxis. 
+                        oOrigin
+                            OriginAxis. 
+                
+                    Example:
+                
+                
+                             This example retrieves the section's angle for the
+                             profile.
+                             
+                
+                              Dim FirstDir() As Variant
+                              Dim SecondDir() As Variant
+                              Dim ThirdDir() As Variant
+                              Dim Origin() As Variant
+                              ObjStrSectionMngt.GetPlacedSectionAxis 0.5, FirstDir, SecondDir,
+                              ThirdDir, Origin
 
         :param float i_lambda:
         :param tuple o_first_dir:
@@ -344,18 +344,18 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSectionName() As CATBSTR
-                |     Returns the section name of the section used by this
-                |     Profile.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example gets the section name of the
-                |              profile.
-                |              
-                | 
-                |               SectionName = ObjStrSectionMngt.GetSectionName
+                Func GetSectionName() As CATBSTR
+                    Returns the section name of the section used by this
+                    Profile.
+                
+                    Example:
+                
+                
+                             This example gets the section name of the
+                             profile.
+                             
+                
+                              SectionName = ObjStrSectionMngt.GetSectionName
 
         :return: str
         """
@@ -366,18 +366,18 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetWebAnchorPointOffset() As Parameter
-                |     Returns the Web Anchor Point offset parameter.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the web anchor point
-                |              offset.
-                |              
-                | 
-                |               Dim WebAnchorPointOffset As Parameter
-                |               Set WebAnchorPointOffset = ObjStrSectionMngt.GetWebAnchorPointOffset
+                Func GetWebAnchorPointOffset() As Parameter
+                    Returns the Web Anchor Point offset parameter.
+                
+                    Example:
+                
+                
+                             This example retrieves the web anchor point
+                             offset.
+                             
+                
+                              Dim WebAnchorPointOffset As Parameter
+                              Set WebAnchorPointOffset = ObjStrSectionMngt.GetWebAnchorPointOffset
 
         :return: Parameter
         """
@@ -388,9 +388,9 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InvertFlangeOrientation()
-                |     Inverts the Flange orientation of the positioned section of this Profile.
-                |     It is equivalent a XFlip.
+                Sub InvertFlangeOrientation()
+                    Inverts the Flange orientation of the positioned section of this Profile.
+                    It is equivalent a XFlip.
 
         :return: None
         """
@@ -401,9 +401,9 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub InvertWebOrientation()
-                |     Inverts the Web orientation of the positioned section of this Profile. It
-                |     is equivalent to a YFlip.
+                Sub InvertWebOrientation()
+                    Inverts the Web orientation of the positioned section of this Profile. It
+                    is equivalent to a YFlip.
 
         :return: None
         """
@@ -414,22 +414,22 @@ class StrSectionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSectionName(CATBSTR iSectionName)
-                |     Sets the section name on this Profile.
-                | 
-                |     Parameters:
-                | 
-                |         iSectionName
-                |             Section name. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets the section name of the
-                |              profile.
-                |              
-                | 
-                |               ObjStrSectionMngt.SetSectionName "SectionName"
+                Sub SetSectionName(CATBSTR iSectionName)
+                    Sets the section name on this Profile.
+                
+                    Parameters:
+                
+                        iSectionName
+                            Section name. 
+                
+                    Example:
+                
+                
+                             This example sets the section name of the
+                             profile.
+                             
+                
+                              ObjStrSectionMngt.SetSectionName "SectionName"
 
         :param str i_section_name:
         :return: None

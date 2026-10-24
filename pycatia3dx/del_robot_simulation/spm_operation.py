@@ -17,16 +17,16 @@ class SpmOperation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SPMOperation
-                | 
-                | Interface representing an SPMOperation.
-                | 
-                | Role: This interface is used to work with SPMOperations
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SPMOperation
+                
+                Interface representing an SPMOperation.
+                
+                Role: This interface is used to work with SPMOperations
     
     """
 
@@ -39,23 +39,23 @@ class SpmOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportProcessPoints(CATBSTR filePath)
-                |     Export Process Points of Motion activities under this SPMOperation to an
-                |     external file.
-                | 
-                |     Parameters:
-                | 
-                |         filePath
-                |             Path of file to which Process points' data will be exported.
-                |             
-                | 
-                |     Example:
-                | 
-                |           Dim objSPMOp As SPMOperation
-                |                   ......
-                |         Dim filePath as String
-                |           filePath = "D:\\user1\\SPMOperation\\ExportProcessPoints.xls"
-                |         Call objSPMOp.ExportProcessPoints(filePath)
+                Sub ExportProcessPoints(CATBSTR filePath)
+                    Export Process Points of Motion activities under this SPMOperation to an
+                    external file.
+                
+                    Parameters:
+                
+                        filePath
+                            Path of file to which Process points' data will be exported.
+                            
+                
+                    Example:
+                
+                          Dim objSPMOp As SPMOperation
+                                  ......
+                        Dim filePath as String
+                          filePath = "D:\\user1\\SPMOperation\\ExportProcessPoints.xls"
+                        Call objSPMOp.ExportProcessPoints(filePath)
 
         :param str file_path:
         :return: None
@@ -67,23 +67,23 @@ class SpmOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllMotionActivities() As CATSafeArrayVariant
-                |     Retrieves all the Motion activities under this
-                |     SPMOperation.
-                | 
-                |     Parameters:
-                | 
-                |         olMotionActivities
-                |             List of all the motion activities created. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |           Dim objSPMOp As SPMOperation
-                |                   ......
-                |         Dim oMotionActList(10)
-                |         Call objSPMOp.GetAllMotionActivities(oMotionActList)
+                Func GetAllMotionActivities() As CATSafeArrayVariant
+                    Retrieves all the Motion activities under this
+                    SPMOperation.
+                
+                    Parameters:
+                
+                        olMotionActivities
+                            List of all the motion activities created. 
+                
+                    Example:
+                
+                           
+                
+                          Dim objSPMOp As SPMOperation
+                                  ......
+                        Dim oMotionActList(10)
+                        Call objSPMOp.GetAllMotionActivities(oMotionActList)
 
         :return: tuple
         """
@@ -94,24 +94,24 @@ class SpmOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ImportProcessPoints(CATBSTR filePath)
-                |     Import Process Points from an external file to Motion activities under this
-                |     SPMOperation.
-                | 
-                |     Parameters:
-                | 
-                |         filePath
-                |             Path of file containing the Process points' data 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |           Dim objSPMOp As SPMOperation
-                |                   ......
-                |         Dim filePath as String
-                |           filePath = "D:\\user1\\SPMOperation\\ImportProcessPoints.xls"
-                |         Call objSPMOp.ImportProcessPoints(filePath)
+                Sub ImportProcessPoints(CATBSTR filePath)
+                    Import Process Points from an external file to Motion activities under this
+                    SPMOperation.
+                
+                    Parameters:
+                
+                        filePath
+                            Path of file containing the Process points' data 
+                
+                    Example:
+                
+                           
+                
+                          Dim objSPMOp As SPMOperation
+                                  ......
+                        Dim filePath as String
+                          filePath = "D:\\user1\\SPMOperation\\ImportProcessPoints.xls"
+                        Call objSPMOp.ImportProcessPoints(filePath)
 
         :param str file_path:
         :return: None

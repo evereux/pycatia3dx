@@ -18,14 +18,14 @@ class SimTopologySpecification(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimTopologySpecification
-                | 
-                | Represents a Local Topology Specification.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimTopologySpecification
+                
+                Represents a Local Topology Specification.
     
     """
 
@@ -39,8 +39,8 @@ class SimTopologySpecification(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the Local Topology Specification.
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the Local Topology Specification.
 
         :return: str
         """
@@ -52,16 +52,16 @@ class SimTopologySpecification(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
-                |     Retrieves the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The identifier of the attribute. 
-                | 
-                |     Returns:
-                |         The value of the Local Topology Specification attribute.
+                Sub GetAttributeValue(CATBSTR iAttribute,CATVariant oValue)
+                    Retrieves the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The identifier of the attribute. 
+                
+                    Returns:
+                        The value of the Local Topology Specification attribute.
 
         :param str i_attribute:
         :param CATVariant o_value:
@@ -74,15 +74,15 @@ class SimTopologySpecification(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iAttribute,CATVariant iValue)
-                |     Sets the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iAttribute:
-                |             The identifier of the attribute. 
-                |         iValue:
-                |             The value of the Local Topology Specification attribute.
+                Sub SetAttributeValue(CATBSTR iAttribute,CATVariant iValue)
+                    Sets the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iAttribute:
+                            The identifier of the attribute. 
+                        iValue:
+                            The value of the Local Topology Specification attribute.
 
         :param str i_attribute:
         :param CATVariant i_value:

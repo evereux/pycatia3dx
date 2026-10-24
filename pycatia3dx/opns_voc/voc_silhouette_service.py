@@ -17,16 +17,16 @@ class VocSilhouetteService(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VOCSilhouetteService
-                | 
-                | Represents the CATIAVOCSilhouetteService.
-                | Role: To provide the services to create VOC product:
-                | Silhouettes
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VOCSilhouetteService
+                
+                Represents the CATIAVOCSilhouetteService.
+                Role: To provide the services to create VOC product:
+                Silhouettes
     
     """
 
@@ -41,32 +41,32 @@ class VocSilhouetteService(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,CATSafeArrayVariant iListOfViewPoints,double
-                | iSilhouetteAcc,double iAccuracyForSimplification)
-                | 
-                |     Deprecated:
-                |         R2020x Use CATEVOCServices::ComputeASilhouette
-                |         (VOCServices.ComputeASilhouette) Compute a Silhouette.
-                |         
-                |     Parameters:
-                | 
-                |         iProductsToTreat
-                |             List of Products to take into account 
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
-                |             
-                |         iListOfViewPoints
-                |             A list of view points 
-                |         iSilhouetteAcc
-                |             Accuracy for the computation. 
-                |         iAccuracyForSimplification
-                |             Accuracy for the simplification. 
-                | 
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure 
+                Sub CreateASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,CATSafeArrayVariant iListOfViewPoints,double
+                iSilhouetteAcc,double iAccuracyForSimplification)
+                
+                    Deprecated:
+                        R2020x Use CATEVOCServices::ComputeASilhouette
+                        (VOCServices.ComputeASilhouette) Compute a Silhouette.
+                        
+                    Parameters:
+                
+                        iProductsToTreat
+                            List of Products to take into account 
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
+                            
+                        iListOfViewPoints
+                            A list of view points 
+                        iSilhouetteAcc
+                            Accuracy for the computation. 
+                        iAccuracyForSimplification
+                            Accuracy for the simplification. 
+                
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure 
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:

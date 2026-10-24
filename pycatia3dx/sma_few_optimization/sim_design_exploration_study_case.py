@@ -17,37 +17,37 @@ class SimDesignExplorationStudyCase(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimDesignExplorationStudyCase
-                | 
-                | Represents the Design Exploration Study Case object.
-                | Base class for design exploration study cases.
-                | 
-                | Example:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimDesignExplorationStudyCase object named as "Topology Optimization Case.1"
-                |     through the following code:
-                | 
-                |      Dim MyAnalysisCases As SimAnalysisCases
-                |      ...
-                |      Dim MyOptimizationCase As SimDesignExplorationStudyCase
-                |      Set MyOptimizationCase = MyAnalysisCases.Item("Topology Design Improvement Study.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAnalysisCases collection you can retrieve a
-                |     SimDesignExplorationStudyCase object as following:
-                | 
-                |      ...
-                |      MyOptimizationCase  = MyAnalysisCases.Item("Topology Design Improvement Study.1")
-                |      
-                | 
-                | See also:
-                |     SimAnalysisCases
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimDesignExplorationStudyCase
+                
+                Represents the Design Exploration Study Case object.
+                Base class for design exploration study cases.
+                
+                Example:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimDesignExplorationStudyCase object named as "Topology Optimization Case.1"
+                    through the following code:
+                
+                     Dim MyAnalysisCases As SimAnalysisCases
+                     ...
+                     Dim MyOptimizationCase As SimDesignExplorationStudyCase
+                     Set MyOptimizationCase = MyAnalysisCases.Item("Topology Design Improvement Study.1")
+                     
+                
+                Example in Python:
+                    Given a SimAnalysisCases collection you can retrieve a
+                    SimDesignExplorationStudyCase object as following:
+                
+                     ...
+                     MyOptimizationCase  = MyAnalysisCases.Item("Topology Design Improvement Study.1")
+                     
+                
+                See also:
+                    SimAnalysisCases
     
     """
 

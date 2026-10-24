@@ -17,21 +17,21 @@ class Shaft(Revolution):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             CATPartIDLItf.Revolution
-                |                                 Shaft
-                | 
-                | Represents the shaft shape.
-                | A shaft is made up of a sketch, used as the shaft profile, and containing an
-                | axis, used as the revolution axis, and two limiting angles around this axis.
-                | This is a "positive" shape: it adds material to the body it belongs
-                | to.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            CATPartIDLItf.Revolution
+                                                Shaft
+                
+                Represents the shaft shape.
+                A shaft is made up of a sketch, used as the shaft profile, and containing an
+                axis, used as the revolution axis, and two limiting angles around this axis.
+                This is a "positive" shape: it adds material to the body it belongs
+                to.
 
     """
 

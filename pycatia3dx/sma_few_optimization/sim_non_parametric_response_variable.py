@@ -17,39 +17,39 @@ class SimNonParametricResponseVariable(SimDesignImprovementResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                         SimNonParametricResponseVariable
-                | 
-                | Represents the Non-Parametric Response Variable.
-                | Base class for Non-Parametric Response Variable.
-                | 
-                | Example:
-                |     Given a SimNonParametricFeatures object, you can retrieve a
-                |     SimNonParametricResponseVariable named "ResponseVariable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyResponseVariable As
-                |      SimNonParametricResponseVariable
-                |      Set MyResponseVariable = MyFeatures.Item("ResponseVariable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures collection, you can retrieve a
-                |     SimNonParametricResponseVariable object as following:
-                | 
-                |      ...
-                |      MyResponseVariable  = MyFeatures.Item("Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                        SimNonParametricResponseVariable
+                
+                Represents the Non-Parametric Response Variable.
+                Base class for Non-Parametric Response Variable.
+                
+                Example:
+                    Given a SimNonParametricFeatures object, you can retrieve a
+                    SimNonParametricResponseVariable named "ResponseVariable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyResponseVariable As
+                     SimNonParametricResponseVariable
+                     Set MyResponseVariable = MyFeatures.Item("ResponseVariable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures collection, you can retrieve a
+                    SimNonParametricResponseVariable object as following:
+                
+                     ...
+                     MyResponseVariable  = MyFeatures.Item("Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 

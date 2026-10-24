@@ -34,18 +34,18 @@ class Part(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Part
-                | 
-                | The root level object inside a 3D shape.
-                | Role: It aggregates all the objects making up the 3D shape.
-                | It provides many factories and collections. The collections list only the
-                | direct children. Selection.Search allows to get all objects of one
-                | type.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Part
+                
+                The root level object inside a 3D shape.
+                Role: It aggregates all the objects making up the 3D shape.
+                It provides many factories and collections. The collections list only the
+                direct children. Selection.Search allows to get all objects of one
+                type.
     
     """
 
@@ -59,19 +59,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property AnnotationSets() As Collection (Read Only)
-                |     Returns the collection object containing the annotation sets. All the
-                |     annotation sets that are aggregated in the part might be accessed thru that
-                |     collection.
-                | 
-                |     Example:
-                |         The following example returns in annotationSets the annotation sets of
-                |         the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim annotationSets As AnnotationSets
-                |          Set annotationSets = partRoot.AnnotationSets
+                Property AnnotationSets() As Collection (Read Only)
+                    Returns the collection object containing the annotation sets. All the
+                    annotation sets that are aggregated in the part might be accessed thru that
+                    collection.
+                
+                    Example:
+                        The following example returns in annotationSets the annotation sets of
+                        the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim annotationSets As AnnotationSets
+                         Set annotationSets = partRoot.AnnotationSets
 
         :return: AnnotationSets
         """
@@ -84,19 +84,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property AxisSystems() As AxisSystems (Read Only)
-                |     Returns the collection object containing the coordinate systems. All the
-                |     coordinate systems that are aggregated in the part might be accessed thru that
-                |     collection.
-                | 
-                |     Example:
-                |         The following example returns in axisSystems the coordinate systems of
-                |         the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim axisSystems As AxisSystems
-                |          Set axisSystems = partRoot.AxisSystems
+                Property AxisSystems() As AxisSystems (Read Only)
+                    Returns the collection object containing the coordinate systems. All the
+                    coordinate systems that are aggregated in the part might be accessed thru that
+                    collection.
+                
+                    Example:
+                        The following example returns in axisSystems the coordinate systems of
+                        the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim axisSystems As AxisSystems
+                         Set axisSystems = partRoot.AxisSystems
 
         :return: AxisSystems
         """
@@ -109,19 +109,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Bodies() As Bodies (Read Only)
-                |     Returns the collection object containing the bodies that are direct
-                |     children of the part.
-                |     It does not return all the bodies of the part, particularly the bodies in a
-                |     boolean operation.
-                | 
-                |     Example:
-                |         The following example returns in bodiesColl the collection of the
-                |         bodies of the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set bodiesColl = partRoot.Bodies
+                Property Bodies() As Bodies (Read Only)
+                    Returns the collection object containing the bodies that are direct
+                    children of the part.
+                    It does not return all the bodies of the part, particularly the bodies in a
+                    boolean operation.
+                
+                    Example:
+                        The following example returns in bodiesColl the collection of the
+                        bodies of the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set bodiesColl = partRoot.Bodies
 
         :return: Bodies
         """
@@ -134,18 +134,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Constraints() As Constraints (Read Only)
-                |     Returns the collection object containing the part constraints. Only 3D
-                |     constraints are concerned here, 2D constraints are managed in
-                |     sketches.
-                | 
-                |     Example:
-                |         The following example returns in csts the constraints of the active 3D
-                |         shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set csts = partRoot.Constraints
+                Property Constraints() As Constraints (Read Only)
+                    Returns the collection object containing the part constraints. Only 3D
+                    constraints are concerned here, 2D constraints are managed in
+                    sketches.
+                
+                    Example:
+                        The following example returns in csts the constraints of the active 3D
+                        shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set csts = partRoot.Constraints
 
         :return: Constraints
         """
@@ -158,16 +158,16 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Density() As double (Read Only)
-                |     Returns the part density.
-                | 
-                |     Example:
-                |         The following example displays the density of the
-                |         part:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          MsgBox "The density is " & partRoot.Density
+                Property Density() As double (Read Only)
+                    Returns the part density.
+                
+                    Example:
+                        The following example displays the density of the
+                        part:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         MsgBox "The density is " & partRoot.Density
 
         :return: float
         """
@@ -180,18 +180,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property GeometricElements() As GeometricElements (Read Only)
-                |     Returns the collection object containing the part geometrical elements.
-                |     Only 3D elements are concerned here, 2D elements are managed in sketches. The
-                |     origin elements are also accessible thru that collection.
-                | 
-                |     Example:
-                |         The following example returns in geomElts the 3D elements of the active
-                |         3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set geomElts = partRoot.GeometricElements
+                Property GeometricElements() As GeometricElements (Read Only)
+                    Returns the collection object containing the part geometrical elements.
+                    Only 3D elements are concerned here, 2D elements are managed in sketches. The
+                    origin elements are also accessible thru that collection.
+                
+                    Example:
+                        The following example returns in geomElts the 3D elements of the active
+                        3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set geomElts = partRoot.GeometricElements
 
         :return: GeometricElements
         """
@@ -204,17 +204,17 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property HybridBodies() As HybridBodies (Read Only)
-                |     Returns the collection object containing the hybrid bodies that are direct
-                |     children of the part.
-                | 
-                |     Example:
-                |         The following example returns in hybridBodiesColl the collection of
-                |         hybrid bodies of the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set hybridBodiesColl = partRoot.HybridBodies
+                Property HybridBodies() As HybridBodies (Read Only)
+                    Returns the collection object containing the hybrid bodies that are direct
+                    children of the part.
+                
+                    Example:
+                        The following example returns in hybridBodiesColl the collection of
+                        hybrid bodies of the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set hybridBodiesColl = partRoot.HybridBodies
 
         :return: HybridBodies
         """
@@ -227,18 +227,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property HybridShapeFactory() As Factory (Read Only)
-                |     Returns the part hybrid shape factory. It allows the creation of hybrid
-                |     shapes in the part.
-                | 
-                |     Example:
-                |         The following example returns in hybridShapeFact the hybrid shape
-                |         factory of the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim hybridShapeFact As Factory
-                |          Set hybridShapeFact = partRoot.HybridShapeFactory
+                Property HybridShapeFactory() As Factory (Read Only)
+                    Returns the part hybrid shape factory. It allows the creation of hybrid
+                    shapes in the part.
+                
+                    Example:
+                        The following example returns in hybridShapeFact the hybrid shape
+                        factory of the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim hybridShapeFact As Factory
+                         Set hybridShapeFact = partRoot.HybridShapeFactory
 
         :return: Factory
         """
@@ -251,18 +251,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property InWorkObject() As AnyObject
-                |     Returns or sets the in work object of the part. The in work object is the
-                |     object after which a new object is added.
-                | 
-                |     Example:
-                | 
-                |      Set editor = CATIA.ActiveEditor
-                |      Set partRoot = editor.ActiveObject
-                |      partRoot.InWorkObject = cylindricPad
-                |      If ( partRoot.InWorkObject <> cylindricPad ) Then
-                |           MsgBox "There is a big problem"
-                |      End If
+                Property InWorkObject() As AnyObject
+                    Returns or sets the in work object of the part. The in work object is the
+                    object after which a new object is added.
+                
+                    Example:
+                
+                     Set editor = CATIA.ActiveEditor
+                     Set partRoot = editor.ActiveObject
+                     partRoot.InWorkObject = cylindricPad
+                     If ( partRoot.InWorkObject <> cylindricPad ) Then
+                          MsgBox "There is a big problem"
+                     End If
 
         :return: AnyObject
         """
@@ -283,17 +283,17 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property MainBody() As Body
-                |     Returns or sets the main body of the part.
-                | 
-                |     Example:
-                |         The following example returns the main body of the active 3D
-                |         shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim mainBody As Body
-                |          Set mainBody=partRoot.MainBody
+                Property MainBody() As Body
+                    Returns or sets the main body of the part.
+                
+                    Example:
+                        The following example returns the main body of the active 3D
+                        shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim mainBody As Body
+                         Set mainBody=partRoot.MainBody
 
         :return: Body
         """
@@ -314,18 +314,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
-                | Only)
-                |     Returns the collection object containing the ordered geometrical sets of
-                |     the part.
-                | 
-                |     Example:
-                |         The following example returns in ogsColl the collection of ordered
-                |         geometrical sets of the active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set ogsColl = partRoot.OrderedGeometricalSets
+                Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
+                Only)
+                    Returns the collection object containing the ordered geometrical sets of
+                    the part.
+                
+                    Example:
+                        The following example returns in ogsColl the collection of ordered
+                        geometrical sets of the active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set ogsColl = partRoot.OrderedGeometricalSets
 
         :return: OrderedGeometricalSets
         """
@@ -338,17 +338,17 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property OriginElements() As OriginElements (Read Only)
-                |     Returns the object defining the part 3D reference axis
-                |     system.
-                | 
-                |     Example:
-                |         The following example returns in originElts the origin of the active 3D
-                |         shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set originElts = partRoot.OriginElements
+                Property OriginElements() As OriginElements (Read Only)
+                    Returns the object defining the part 3D reference axis
+                    system.
+                
+                    Example:
+                        The following example returns in originElts the origin of the active 3D
+                        shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set originElts = partRoot.OriginElements
 
         :return: OriginElements
         """
@@ -361,19 +361,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Parameters() As Parameters (Read Only)
-                |     Returns the collection object containing the part parameters. All the
-                |     parameters that are aggregated in the different objects of the part might be
-                |     accessed thru that collection.
-                | 
-                |     Example:
-                |         The following example returns in params the parameters of the active 3D
-                |         shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim params As Parameters
-                |          Set params = partRoot.Parameters
+                Property Parameters() As Parameters (Read Only)
+                    Returns the collection object containing the part parameters. All the
+                    parameters that are aggregated in the different objects of the part might be
+                    accessed thru that collection.
+                
+                    Example:
+                        The following example returns in params the parameters of the active 3D
+                        shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim params As Parameters
+                         Set params = partRoot.Parameters
 
         :return: Parameters
         """
@@ -386,18 +386,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Relations() As Relations (Read Only)
-                |     Returns the collection object containing the part relations. All the
-                |     relations that are used to valuate the parameters of the part might be accessed
-                |     thru that collection.
-                | 
-                |     Example:
-                |         The following example returns in rels the relations of the active 3D
-                |         shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set rels = partRoot.Relations
+                Property Relations() As Relations (Read Only)
+                    Returns the collection object containing the part relations. All the
+                    relations that are used to valuate the parameters of the part might be accessed
+                    thru that collection.
+                
+                    Example:
+                        The following example returns in rels the relations of the active 3D
+                        shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set rels = partRoot.Relations
 
         :return: Relations
         """
@@ -410,18 +410,18 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ShapeFactory() As Factory (Read Only)
-                |     Returns the part shape factory. It allows the creation of shapes in the
-                |     part.
-                | 
-                |     Example:
-                |         The following example returns in shapeFact the shape factory of the
-                |         active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim shapeFact As Factory
-                |          Set shapeFact = partRoot.ShapeFactory
+                Property ShapeFactory() As Factory (Read Only)
+                    Returns the part shape factory. It allows the creation of shapes in the
+                    part.
+                
+                    Example:
+                        The following example returns in shapeFact the shape factory of the
+                        active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim shapeFact As Factory
+                         Set shapeFact = partRoot.ShapeFactory
 
         :return: Factory
         """
@@ -434,19 +434,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property UserSurfaces() As Collection (Read Only)
-                |     Returns the collection object containing the user surfaces. All the user
-                |     surfaces that are aggregated in the part might be accessed thru that
-                |     collection.
-                | 
-                |     Example:
-                |         The following example returns in userSurfaces the user surfaces of the
-                |         active 3D shape:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Dim userSurfaces As UserSurfaces
-                |          Set userSurfaces = partRoot.UserSurfaces
+                Property UserSurfaces() As Collection (Read Only)
+                    Returns the collection object containing the user surfaces. All the user
+                    surfaces that are aggregated in the part might be accessed thru that
+                    collection.
+                
+                    Example:
+                        The following example returns in userSurfaces the user surfaces of the
+                        active 3D shape:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Dim userSurfaces As UserSurfaces
+                         Set userSurfaces = partRoot.UserSurfaces
 
         :return: UserSurfaces
         """
@@ -458,22 +458,22 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Activate(AnyObject iObject)
-                |     Unsuppresses an object for the update process. A unsuppressed object is
-                |     again taken into account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to unsuppress for the update process 
-                | 
-                |     Example:
-                |         The following example unsuppresses the pad1 pad:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          partRoot.Activate(pad1)
+                Sub Activate(AnyObject iObject)
+                    Unsuppresses an object for the update process. A unsuppressed object is
+                    again taken into account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to unsuppress for the update process 
+                
+                    Example:
+                        The following example unsuppresses the pad1 pad:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         partRoot.Activate(pad1)
 
         :param AnyObject i_object:
         :return: None
@@ -485,24 +485,24 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateReferenceFromBRepName(CATBSTR iLabel,AnyObject iObjectContext) As
-                | Reference
-                |     Creates a reference from a GenericNaming label. This allows manipulation of
-                |     B-Rep (Type Functinal and Relimited) that are not easy to
-                |     access.
-                | 
-                |     Parameters:
-                | 
-                |         iLabel
-                |             The GenericNaming identification for an object. This is a cryptic
-                |             form for "the edge surrounded by the face extruded from line.12 of sketch.4 and
-                |             the face...") 
-                |         iObjectContext
-                |             The Object Context of Resolution This is the feature used for label
-                |             GenericNaming resolution 
-                | 
-                |     Returns:
-                |         The reference to a B-Rep sub-element such a face or an edge
+                Func CreateReferenceFromBRepName(CATBSTR iLabel,AnyObject iObjectContext) As
+                Reference
+                    Creates a reference from a GenericNaming label. This allows manipulation of
+                    B-Rep (Type Functinal and Relimited) that are not easy to
+                    access.
+                
+                    Parameters:
+                
+                        iLabel
+                            The GenericNaming identification for an object. This is a cryptic
+                            form for "the edge surrounded by the face extruded from line.12 of sketch.4 and
+                            the face...") 
+                        iObjectContext
+                            The Object Context of Resolution This is the feature used for label
+                            GenericNaming resolution 
+                
+                    Returns:
+                        The reference to a B-Rep sub-element such a face or an edge
 
         :param str i_label:
         :param AnyObject i_object_context:
@@ -515,19 +515,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateReferenceFromName(CATBSTR iLabel) As Reference
-                |     Creates a reference from a GenericNaming label. This allows manipulation of
-                |     B-Rep (type Functional Only) that are not easy to access.
-                | 
-                |     Parameters:
-                | 
-                |         iLabel
-                |             The GenericNaming identification for an object. This is a cryptic
-                |             form for "the edge surrounded by the face extruded from line.12 of sketch.4 and
-                |             the face...") 
-                | 
-                |     Returns:
-                |         The reference to a B-Rep sub-element such a face or an edge
+                Func CreateReferenceFromName(CATBSTR iLabel) As Reference
+                    Creates a reference from a GenericNaming label. This allows manipulation of
+                    B-Rep (type Functional Only) that are not easy to access.
+                
+                    Parameters:
+                
+                        iLabel
+                            The GenericNaming identification for an object. This is a cryptic
+                            form for "the edge surrounded by the face extruded from line.12 of sketch.4 and
+                            the face...") 
+                
+                    Returns:
+                        The reference to a B-Rep sub-element such a face or an edge
 
         :param str i_label:
         :return: Reference
@@ -539,19 +539,19 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func CreateReferenceFromObject(AnyObject iObject) As Reference
-                |     Creates a reference from a operator. Use of reference allows a uniform
-                |     handling of B-Rep and non B-Rep objects.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The geometric object to be referenced. It can be a plane, a line or
-                |             a point. 
-                | 
-                |     Returns:
-                |         The reference to the object. This way, a direction can be either an
-                |         edge of a pad or a 3D line.
+                Func CreateReferenceFromObject(AnyObject iObject) As Reference
+                    Creates a reference from a operator. Use of reference allows a uniform
+                    handling of B-Rep and non B-Rep objects.
+                
+                    Parameters:
+                
+                        iObject
+                            The geometric object to be referenced. It can be a plane, a line or
+                            a point. 
+                
+                    Returns:
+                        The reference to the object. This way, a direction can be either an
+                        edge of a pad or a 3D line.
 
         :param AnyObject i_object:
         :return: Reference
@@ -563,27 +563,27 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func FindObjectByName(CATBSTR iObjName) As AnyObject
-                |     Finds an object that is not a collection by its name. Scan in depth among
-                |     all the direct and indirect children (expensive, but hard to
-                |     escape).
-                | 
-                |     Parameters:
-                | 
-                |         iObjName
-                |             The name to be searched 
-                | 
-                |     Returns:
-                |         The object, if found 
-                |     Example:
-                |         The following example tests if the object was found:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set obj = partRoot.FindObjectByName("Wrong name")
-                |          If TypeName(obj)="Nothing" Then
-                |               MsgBox "Object not found"
-                |          End If
+                Func FindObjectByName(CATBSTR iObjName) As AnyObject
+                    Finds an object that is not a collection by its name. Scan in depth among
+                    all the direct and indirect children (expensive, but hard to
+                    escape).
+                
+                    Parameters:
+                
+                        iObjName
+                            The name to be searched 
+                
+                    Returns:
+                        The object, if found 
+                    Example:
+                        The following example tests if the object was found:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set obj = partRoot.FindObjectByName("Wrong name")
+                         If TypeName(obj)="Nothing" Then
+                              MsgBox "Object not found"
+                         End If
 
         :param str i_obj_name:
         :return: AnyObject
@@ -595,23 +595,23 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Freeze(AnyObject iObject)
-                |     Prevent an object from being updated. A suppressed object is not taken into
-                |     account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to suppress from being updated 
-                | 
-                |     Example:
-                |         The following example suppresses the pad1 pad from being
-                |         updated:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          partRoot.Inactivate(pad1)
+                Sub Freeze(AnyObject iObject)
+                    Prevent an object from being updated. A suppressed object is not taken into
+                    account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to suppress from being updated 
+                
+                    Example:
+                        The following example suppresses the pad1 pad from being
+                        updated:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         partRoot.Inactivate(pad1)
 
         :param AnyObject i_object:
         :return: None
@@ -623,15 +623,15 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetCustomerFactory(CATBSTR iFactoryIID) As Factory
-                |     Returns a customer factory from a code string defined by the customer. It
-                |     allows a customer to define its own factory to create its own
-                |     objects.
-                | 
-                |     Parameters:
-                | 
-                |         iFactoryIID
-                |             The code name of the factory
+                Func GetCustomerFactory(CATBSTR iFactoryIID) As Factory
+                    Returns a customer factory from a code string defined by the customer. It
+                    allows a customer to define its own factory to create its own
+                    objects.
+                
+                    Parameters:
+                
+                        iFactoryIID
+                            The code name of the factory
 
         :param str i_factory_iid:
         :return: Factory
@@ -643,23 +643,23 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Inactivate(AnyObject iObject)
-                |     Suppresses an object from being updated. A suppressed object is not taken
-                |     into account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to suppress from being updated 
-                | 
-                |     Example:
-                |         The following example suppresses the pad1 pad from being
-                |         updated:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          partRoot.Inactivate(pad1)
+                Sub Inactivate(AnyObject iObject)
+                    Suppresses an object from being updated. A suppressed object is not taken
+                    into account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to suppress from being updated 
+                
+                    Example:
+                        The following example suppresses the pad1 pad from being
+                        updated:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         partRoot.Inactivate(pad1)
 
         :param AnyObject i_object:
         :return: None
@@ -671,23 +671,23 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func IsFrozen(AnyObject iObject) As boolean
-                |     Indicates whether an object is frozen. A deactivated object is not taken
-                |     into account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to examine 
-                | 
-                |     Example:
-                |         The following example returns in isInactive whether the pad1 pad is
-                |         deactivated:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          isInactive = partRoot.IsInactive(pad1)
+                Func IsFrozen(AnyObject iObject) As boolean
+                    Indicates whether an object is frozen. A deactivated object is not taken
+                    into account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to examine 
+                
+                    Example:
+                        The following example returns in isInactive whether the pad1 pad is
+                        deactivated:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         isInactive = partRoot.IsInactive(pad1)
 
         :param AnyObject i_object:
         :return: bool
@@ -699,23 +699,23 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func IsInactive(AnyObject iObject) As boolean
-                |     Indicates whether an object is deactivated. A deactivated object is not
-                |     taken into account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to examine 
-                | 
-                |     Example:
-                |         The following example returns in isInactive whether the pad1 pad is
-                |         deactivated:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          isInactive = partRoot.IsInactive(pad1)
+                Func IsInactive(AnyObject iObject) As boolean
+                    Indicates whether an object is deactivated. A deactivated object is not
+                    taken into account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to examine 
+                
+                    Example:
+                        The following example returns in isInactive whether the pad1 pad is
+                        deactivated:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         isInactive = partRoot.IsInactive(pad1)
 
         :param AnyObject i_object:
         :return: bool
@@ -727,24 +727,24 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func IsUpToDate(AnyObject iObject) As boolean
-                |     Indicates whether an object needs to be updated. An object which is not
-                |     up-to-date has not be calculated with the last
-                |     specifications.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to examine 
-                | 
-                |     Example:
-                |         The following example returns in isuptodate whether the pad1 pad is
-                |         up-to-date:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          isuptodate = partRoot.IsUpToDate(pad1)
+                Func IsUpToDate(AnyObject iObject) As boolean
+                    Indicates whether an object needs to be updated. An object which is not
+                    up-to-date has not be calculated with the last
+                    specifications.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to examine 
+                
+                    Example:
+                        The following example returns in isuptodate whether the pad1 pad is
+                        up-to-date:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         isuptodate = partRoot.IsUpToDate(pad1)
 
         :param AnyObject i_object:
         :return: bool
@@ -756,22 +756,22 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Unfreeze(AnyObject iObject)
-                |     Authorize an object for the update process. A unsuppressed object is again
-                |     taken into account for the calculation of the part.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to unsuppress for the update process 
-                | 
-                |     Example:
-                |         The following example unsuppresses the pad1 pad:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          partRoot.Activate(pad1)
+                Sub Unfreeze(AnyObject iObject)
+                    Authorize an object for the update process. A unsuppressed object is again
+                    taken into account for the calculation of the part.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to unsuppress for the update process 
+                
+                    Example:
+                        The following example unsuppresses the pad1 pad:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         partRoot.Activate(pad1)
 
         :param AnyObject i_object:
         :return: None
@@ -783,17 +783,17 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub Update()
-                |     Updates of the part result with respect to its specifications. Any
-                |     composing specification that hasn't its result up-to-date will recompute it,
-                |     thus propagating changes to the whole part.
-                | 
-                |     Example:
-                |         The following example updates the part:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          partRoot.Update
+                Sub Update()
+                    Updates of the part result with respect to its specifications. Any
+                    composing specification that hasn't its result up-to-date will recompute it,
+                    thus propagating changes to the whole part.
+                
+                    Example:
+                        The following example updates the part:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         partRoot.Update
 
         :return: None
         """
@@ -804,23 +804,23 @@ class Part(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub UpdateObject(AnyObject iObject)
-                |     Updates an object with respect to its specifications. Any composing
-                |     specification of the object that hasn't its result up-to-date will recompute
-                |     it, thus propagating changes to the object.
-                | 
-                |     Parameters:
-                | 
-                |         iObject
-                |             The object to be updated 
-                | 
-                |     Example:
-                |         The following example updates Pad.1:
-                | 
-                |          Set editor = CATIA.ActiveEditor
-                |          Set partRoot = editor.ActiveObject
-                |          Set pad1 = partRoot.FindObjectByName("Pad.1")
-                |          partRoot.UpdateObject(pad1)
+                Sub UpdateObject(AnyObject iObject)
+                    Updates an object with respect to its specifications. Any composing
+                    specification of the object that hasn't its result up-to-date will recompute
+                    it, thus propagating changes to the object.
+                
+                    Parameters:
+                
+                        iObject
+                            The object to be updated 
+                
+                    Example:
+                        The following example updates Pad.1:
+                
+                         Set editor = CATIA.ActiveEditor
+                         Set partRoot = editor.ActiveObject
+                         Set pad1 = partRoot.FindObjectByName("Pad.1")
+                         partRoot.UpdateObject(pad1)
 
         :param AnyObject i_object:
         :return: None

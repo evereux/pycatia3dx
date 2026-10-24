@@ -17,13 +17,13 @@ class SimParameterSet(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimParameterSet
-                | 
-                | Represents a string-keyed set of parameters of varying type.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimParameterSet
+                
+                Represents a string-keyed set of parameters of varying type.
     
     """
 
@@ -36,17 +36,17 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDoubleArrayParameter(CATBSTR iParameterName) As
-                | CATSafeArrayVariant
-                |     Gets the values of a parameter which is a list of reals.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter values.
+                Func GetDoubleArrayParameter(CATBSTR iParameterName) As
+                CATSafeArrayVariant
+                    Gets the values of a parameter which is a list of reals.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter values.
 
         :param str i_parameter_name:
         :return: tuple
@@ -58,16 +58,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDoubleParameter(CATBSTR iParameterName) As double
-                |     Gets the value of a parameter which is a single real.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetDoubleParameter(CATBSTR iParameterName) As double
+                    Gets the value of a parameter which is a single real.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_parameter_name:
         :return: float
@@ -79,18 +79,18 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetIntegerArrayParameter(CATBSTR iParameterName) As
-                | CATSafeArrayVariant
-                |     Gets the values of a parameter which is a list of
-                |     integers.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter values.
+                Func GetIntegerArrayParameter(CATBSTR iParameterName) As
+                CATSafeArrayVariant
+                    Gets the values of a parameter which is a list of
+                    integers.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter values.
 
         :param str i_parameter_name:
         :return: tuple
@@ -102,16 +102,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetIntegerParameter(CATBSTR iParameterName) As long
-                |     Gets the value of a parameter which is a single integer.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetIntegerParameter(CATBSTR iParameterName) As long
+                    Gets the value of a parameter which is a single integer.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_parameter_name:
         :return: int
@@ -123,17 +123,17 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetObjectArrayParameter(CATBSTR iParameterName) As
-                | CATSafeArrayVariant
-                |     Gets the values of a parameter which is a list of objects.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter values.
+                Func GetObjectArrayParameter(CATBSTR iParameterName) As
+                CATSafeArrayVariant
+                    Gets the values of a parameter which is a list of objects.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter values.
 
         :param str i_parameter_name:
         :return: tuple
@@ -145,17 +145,17 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetObjectParameter(CATBSTR iParameterName) As
-                | CATBaseDispatch
-                |     Gets the value of a parameter which is a single object.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetObjectParameter(CATBSTR iParameterName) As
+                CATBaseDispatch
+                    Gets the value of a parameter which is a single object.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_parameter_name:
         :return: AnyObject
@@ -167,17 +167,17 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStringArrayParameter(CATBSTR iParameterName) As
-                | CATSafeArrayVariant
-                |     Gets the values of a parameter which is a list of strings.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter values.
+                Func GetStringArrayParameter(CATBSTR iParameterName) As
+                CATSafeArrayVariant
+                    Gets the values of a parameter which is a list of strings.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter values.
 
         :param str i_parameter_name:
         :return: tuple
@@ -189,16 +189,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetStringParameter(CATBSTR iParameterName) As CATBSTR
-                |     Gets the value of a parameter which is a single string.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetStringParameter(CATBSTR iParameterName) As CATBSTR
+                    Gets the value of a parameter which is a single string.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_parameter_name:
         :return: str
@@ -210,16 +210,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDoubleArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
-                | iDoubleValues)
-                |     Sets the values of a parameter which is a list of reals.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iDoubleValues:
-                |             The parameter values.
+                Sub SetDoubleArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
+                iDoubleValues)
+                    Sets the values of a parameter which is a list of reals.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iDoubleValues:
+                            The parameter values.
 
         :param str i_parameter_name:
         :param tuple i_double_values:
@@ -232,16 +232,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDoubleParameter(CATBSTR iParameterName,double
-                | iDoubleValue)
-                |     Sets the value of a parameter which is a single real.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iDoubleValue:
-                |             The parameter value.
+                Sub SetDoubleParameter(CATBSTR iParameterName,double
+                iDoubleValue)
+                    Sets the value of a parameter which is a single real.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iDoubleValue:
+                            The parameter value.
 
         :param str i_parameter_name:
         :param float i_double_value:
@@ -254,17 +254,17 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetIntegerArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
-                | iIntegerValues)
-                |     Sets the values of a parameter which is a list of
-                |     integers.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iIntegerValues:
-                |             The parameter values.
+                Sub SetIntegerArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
+                iIntegerValues)
+                    Sets the values of a parameter which is a list of
+                    integers.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iIntegerValues:
+                            The parameter values.
 
         :param str i_parameter_name:
         :param tuple i_integer_values:
@@ -277,16 +277,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetIntegerParameter(CATBSTR iParameterName,long
-                | iIntegerValue)
-                |     Sets the value of a parameter which is a single integer.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iIntegerValue:
-                |             The parameter value.
+                Sub SetIntegerParameter(CATBSTR iParameterName,long
+                iIntegerValue)
+                    Sets the value of a parameter which is a single integer.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iIntegerValue:
+                            The parameter value.
 
         :param str i_parameter_name:
         :param int i_integer_value:
@@ -299,16 +299,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetObjectArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
-                | iObjectValues)
-                |     Sets the values of a parameter which is a list of objects.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iObjectValues:
-                |             The parameter values.
+                Sub SetObjectArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
+                iObjectValues)
+                    Sets the values of a parameter which is a list of objects.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iObjectValues:
+                            The parameter values.
 
         :param str i_parameter_name:
         :param tuple i_object_values:
@@ -321,16 +321,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetObjectParameter(CATBSTR iParameterName,CATBaseDispatch
-                | iObjectValue)
-                |     Sets the value of a parameter which is a single object.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iObjectValue:
-                |             The parameter value.
+                Sub SetObjectParameter(CATBSTR iParameterName,CATBaseDispatch
+                iObjectValue)
+                    Sets the value of a parameter which is a single object.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iObjectValue:
+                            The parameter value.
 
         :param str i_parameter_name:
         :param AnyObject i_object_value:
@@ -343,16 +343,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStringArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
-                | iStringValues)
-                |     Sets the values of a parameter which is a list of strings.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iStringValues:
-                |             The parameter values.
+                Sub SetStringArrayParameter(CATBSTR iParameterName,CATSafeArrayVariant
+                iStringValues)
+                    Sets the values of a parameter which is a list of strings.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iStringValues:
+                            The parameter values.
 
         :param str i_parameter_name:
         :param tuple i_string_values:
@@ -365,16 +365,16 @@ class SimParameterSet(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStringParameter(CATBSTR iParameterName,CATBSTR
-                | iStringValue)
-                |     Sets the value of a parameter which is a single string.
-                | 
-                |     Parameters:
-                | 
-                |         iParameterName:
-                |             The parameter name. 
-                |         iStringValue:
-                |             The parameter value.
+                Sub SetStringParameter(CATBSTR iParameterName,CATBSTR
+                iStringValue)
+                    Sets the value of a parameter which is a single string.
+                
+                    Parameters:
+                
+                        iParameterName:
+                            The parameter name. 
+                        iStringValue:
+                            The parameter value.
 
         :param str i_parameter_name:
         :param str i_string_value:

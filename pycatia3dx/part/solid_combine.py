@@ -18,16 +18,16 @@ class SolidCombine(SketchBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             SolidCombine
-                | 
-                | The interface to access a CATIASolidCombine.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            SolidCombine
+                
+                The interface to access a CATIASolidCombine.
     
     """
 
@@ -41,17 +41,17 @@ class SolidCombine(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstComponentDirection() As Reference
-                |     Returns or sets the direction of first component of
-                |     SolidCombine.
-                | 
-                |     Example:
-                |         The following example returns in firstDirection the direction of first
-                |         component of firstSolidCombine SolidCombine feature, and then sets it to the
-                |         firstDirection2 direction element.
-                | 
-                |          Set firstDirection = firstSolidCombine.FirstComponentDirection
-                |          Set firstSolidCombine.FirstComponentDirection = firstDirection2
+                Property FirstComponentDirection() As Reference
+                    Returns or sets the direction of first component of
+                    SolidCombine.
+                
+                    Example:
+                        The following example returns in firstDirection the direction of first
+                        component of firstSolidCombine SolidCombine feature, and then sets it to the
+                        firstDirection2 direction element.
+                
+                         Set firstDirection = firstSolidCombine.FirstComponentDirection
+                         Set firstSolidCombine.FirstComponentDirection = firstDirection2
 
         :return: Reference
         """
@@ -72,17 +72,17 @@ class SolidCombine(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FirstComponentProfile() As Reference
-                |     Returns or sets the profile of first component of
-                |     SolidCombine.
-                | 
-                |     Example:
-                |         The following example returns in firstProfile the profile of first
-                |         component of firstSolidCombine SolidCombine feature, and then sets it to the
-                |         firstProfile2 profile element:
-                | 
-                |          Set firstProfile = firstSolidCombine.FirstComponentProfile
-                |          Set firstSolidCombine.FirstComponentProfile = firstProfile2
+                Property FirstComponentProfile() As Reference
+                    Returns or sets the profile of first component of
+                    SolidCombine.
+                
+                    Example:
+                        The following example returns in firstProfile the profile of first
+                        component of firstSolidCombine SolidCombine feature, and then sets it to the
+                        firstProfile2 profile element:
+                
+                         Set firstProfile = firstSolidCombine.FirstComponentProfile
+                         Set firstSolidCombine.FirstComponentProfile = firstProfile2
 
         :return: Reference
         """
@@ -103,17 +103,17 @@ class SolidCombine(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondComponentDirection() As Reference
-                |     Returns or sets the direction of second component of
-                |     SolidCombine.
-                | 
-                |     Example:
-                |         The following example returns in secondDirection the direction of
-                |         second component of firstSolidCombine SolidCombine feature, and then sets it to
-                |         the secondDirection2 direction element.
-                | 
-                |          Set secondDirection = firstSolidCombine.SecondComponentDirection
-                |          Set firstSolidCombine.SecondComponentDirection = secondDirection2
+                Property SecondComponentDirection() As Reference
+                    Returns or sets the direction of second component of
+                    SolidCombine.
+                
+                    Example:
+                        The following example returns in secondDirection the direction of
+                        second component of firstSolidCombine SolidCombine feature, and then sets it to
+                        the secondDirection2 direction element.
+                
+                         Set secondDirection = firstSolidCombine.SecondComponentDirection
+                         Set firstSolidCombine.SecondComponentDirection = secondDirection2
 
         :return: Reference
         """
@@ -134,17 +134,17 @@ class SolidCombine(SketchBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SecondComponentProfile() As Reference
-                |     Returns or sets the profile of second component of
-                |     SolidCombine.
-                | 
-                |     Example:
-                |         The following example returns in secondProfile the profile of second
-                |         component of firstSolidCombine SolidCombine feature, and then sets it to the
-                |         secondProfile2 profile element:
-                | 
-                |          Set secondProfile = firstSolidCombine.SecondComponentProfile
-                |          Set firstSolidCombine.SecondComponentProfile = secondProfile2
+                Property SecondComponentProfile() As Reference
+                    Returns or sets the profile of second component of
+                    SolidCombine.
+                
+                    Example:
+                        The following example returns in secondProfile the profile of second
+                        component of firstSolidCombine SolidCombine feature, and then sets it to the
+                        secondProfile2 profile element:
+                
+                         Set secondProfile = firstSolidCombine.SecondComponentProfile
+                         Set firstSolidCombine.SecondComponentProfile = secondProfile2
 
         :return: Reference
         """

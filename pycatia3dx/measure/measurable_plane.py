@@ -17,18 +17,18 @@ class MeasurablePlane(MeasurableSurface):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         CATOpnsMeasureIDLItf.MeasurableSurface
-                |                             MeasurablePlane
-                | 
-                | Interface representing the measurement on a plane.
-                | Get the area, the center of gravity and the perimeter by inheritance. Get the
-                | plane informations.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        CATOpnsMeasureIDLItf.MeasurableSurface
+                                            MeasurablePlane
+                
+                Interface representing the measurement on a plane.
+                Get the area, the center of gravity and the perimeter by inheritance. Get the
+                plane informations.
     
     """
 
@@ -41,42 +41,42 @@ class MeasurablePlane(MeasurableSurface):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetPlane(CATSafeArrayVariant ioPlane)
-                |     Retrieves informations of the plane.
+                Sub GetPlane(CATSafeArrayVariant ioPlane)
+                    Retrieves informations of the plane.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         ioPlane
-                |             The informations of the plane with respect to the product
-                |             coordinate system:
+                        ioPlane
+                            The informations of the plane with respect to the product
+                            coordinate system:
                 |
-                |                 ioPlane(0) is the X coordinate of the origin
-                |                 ioPlane(1) is the Y coordinate of the origin
-                |                 ioPlane(2) is the Z coordinate of the origin
-                |                 ioPlane(3) is the X coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(4) is the Y coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(5) is the Z coordinate of the first direction of the
-                |                 plane
-                |                 ioPlane(6) is the X coordinate of the second direction of the
-                |                 plane
-                |                 ioPlane(7) is the Y coordinate of the second direction of the
-                |                 plane
-                |                 ioPlane(8) is the Z coordinate of the second direction of the
-                |                 plane
+                                ioPlane(0) is the X coordinate of the origin
+                                ioPlane(1) is the Y coordinate of the origin
+                                ioPlane(2) is the Z coordinate of the origin
+                                ioPlane(3) is the X coordinate of the first direction of the
+                                plane
+                                ioPlane(4) is the Y coordinate of the first direction of the
+                                plane
+                                ioPlane(5) is the Z coordinate of the first direction of the
+                                plane
+                                ioPlane(6) is the X coordinate of the second direction of the
+                                plane
+                                ioPlane(7) is the Y coordinate of the second direction of the
+                                plane
+                                ioPlane(8) is the Z coordinate of the second direction of the
+                                plane
                 |
-                |     Example:
+                    Example:
                 |
-                |            This example retrieves informations of the plane of
-                |            theMeasurablePlane measure.
+                           This example retrieves informations of the plane of
+                           theMeasurablePlane measure.
                 |
                 |
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurablePlane As MeasurablePlane
-                |              Set theMeasurablePlane = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePlane)
-                |              Dim thePlane(8)
-                |              theMeasurablePlane.GetPlane thePlane
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurablePlane As MeasurablePlane
+                             Set theMeasurablePlane = theMeasureService.GetMeasurable(theSelection, CAAMeasurablePlane)
+                             Dim thePlane(8)
+                             theMeasurablePlane.GetPlane thePlane
 
         :return: tuple
         """

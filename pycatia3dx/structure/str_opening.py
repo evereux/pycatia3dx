@@ -23,21 +23,21 @@ class StrOpening(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrOpening
-                | 
-                | Object to define a Structure Opening.
-                | The list of interfaces involved into the Opening are: -
-                | CATIAStrOpeningOutputProfile / 3DObject / Standard: for the creation
-                | mode
-                | Role: Allows accessing and setting of Opening's data.
-                | 
-                | See also:
-                |     StrOpenings
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrOpening
+                
+                Object to define a Structure Opening.
+                The list of interfaces involved into the Opening are: -
+                CATIAStrOpeningOutputProfile / 3DObject / Standard: for the creation
+                mode
+                Role: Allows accessing and setting of Opening's data.
+                
+                See also:
+                    StrOpenings
     
     """
 
@@ -51,17 +51,17 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OpeningType() As CATStrOpeningMode
-                |     Returns or Sets Opening's type. Legal Values: - catStrOpeningModeUndefined : undefined opening. - catStrOpeningMode3DObject : opening creation using other mode. - catStrOpeningModeOutputProfile : opening creation using sketch. - catStrOpeningModeStandard : Standard opening mode.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets OpeningType of the SfdOpening to the Sketch
-                |              mode.
-                |              
-                | 
-                |              ObjStrOpening.OpeningType = catStrOpeningModeOutputProfile
+                Property OpeningType() As CATStrOpeningMode
+                    Returns or Sets Opening's type. Legal Values: - catStrOpeningModeUndefined : undefined opening. - catStrOpeningMode3DObject : opening creation using other mode. - catStrOpeningModeOutputProfile : opening creation using sketch. - catStrOpeningModeStandard : Standard opening mode.
+                
+                    Example:
+                
+                
+                             This example sets OpeningType of the SfdOpening to the Sketch
+                             mode.
+                             
+                
+                             ObjStrOpening.OpeningType = catStrOpeningModeOutputProfile
 
         :return: CATStrOpeningMode
         """
@@ -82,19 +82,19 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrCategoryMngt
-                |              object.
-                |              
-                | 
-                |              Dim ObjStrOpening As StrOpening
-                |              Set ObjStrOpening = ObjStrOpenings.Add
-                |              Set ObjStrCategoryMngt = ObjStrOpening.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrCategoryMngt
+                             object.
+                             
+                
+                             Dim ObjStrOpening As StrOpening
+                             Set ObjStrOpening = ObjStrOpenings.Add
+                             Set ObjStrCategoryMngt = ObjStrOpening.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -107,18 +107,18 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpening3DObject() As StrOpening3DObject (Read
-                | Only)
-                |     Returns the StrOpening3DObject object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrOpening3DObject
-                |              object.
-                |              
-                | 
-                |              Set ObjStrOpening3DObject = ObjStrOpening.StrOpening3DObject
+                Property StrOpening3DObject() As StrOpening3DObject (Read
+                Only)
+                    Returns the StrOpening3DObject object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrOpening3DObject
+                             object.
+                             
+                
+                             Set ObjStrOpening3DObject = ObjStrOpening.StrOpening3DObject
 
         :return: StrOpening3DObject
         """
@@ -131,18 +131,18 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningExtrusionMngt() As StrOpeningExtrusionMngt (Read
-                | Only)
-                |     Returns the StrOpeningExtrusionMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrOpeningExtrusionMngt
-                |              object.
-                |              
-                | 
-                |              Set ObjStrOpeningExtrusionMngt = ObjStrOpening.StrOpeningExtrusionMngt
+                Property StrOpeningExtrusionMngt() As StrOpeningExtrusionMngt (Read
+                Only)
+                    Returns the StrOpeningExtrusionMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrOpeningExtrusionMngt
+                             object.
+                             
+                
+                             Set ObjStrOpeningExtrusionMngt = ObjStrOpening.StrOpeningExtrusionMngt
 
         :return: StrOpeningExtrusionMngt
         """
@@ -155,18 +155,18 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningLimitDimensionsMngt() As StrOpeningLimitDimensionsMngt (Read
-                | Only)
-                |     Returns the StrOpeningLimitDimensionsMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrOpeningLimitDimensionsMngt
-                |              object.
-                |              
-                | 
-                |              Set ObjStrOpeningLimitDimensionsMngt = ObjStrOpening.StrOpeningLimitDimensionsMngt
+                Property StrOpeningLimitDimensionsMngt() As StrOpeningLimitDimensionsMngt (Read
+                Only)
+                    Returns the StrOpeningLimitDimensionsMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrOpeningLimitDimensionsMngt
+                             object.
+                             
+                
+                             Set ObjStrOpeningLimitDimensionsMngt = ObjStrOpening.StrOpeningLimitDimensionsMngt
 
         :return: StrOpeningLimitDimensionsMngt
         """
@@ -179,18 +179,18 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningOutputProfile() As StrOpeningOutputProfile (Read
-                | Only)
-                |     Returns the StrOpeningOutputProfile object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrOpeningOutputProfile
-                |              object.
-                |              
-                | 
-                |              Set ObjStrOpeningOutputProfile = ObjStrOpening.StrOpeningOutputProfile
+                Property StrOpeningOutputProfile() As StrOpeningOutputProfile (Read
+                Only)
+                    Returns the StrOpeningOutputProfile object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrOpeningOutputProfile
+                             object.
+                             
+                
+                             Set ObjStrOpeningOutputProfile = ObjStrOpening.StrOpeningOutputProfile
 
         :return: StrOpeningOutputProfile
         """
@@ -203,18 +203,18 @@ class StrOpening(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningStandard() As StrOpeningStandard (Read
-                | Only)
-                |     Returns the StrOpeningStandard object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrOpeningStandard
-                |              object.
-                |              
-                | 
-                |              Set ObjStrOpeningStandard = ObjStrOpening.StrOpeningStandard
+                Property StrOpeningStandard() As StrOpeningStandard (Read
+                Only)
+                    Returns the StrOpeningStandard object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrOpeningStandard
+                             object.
+                             
+                
+                             Set ObjStrOpeningStandard = ObjStrOpening.StrOpeningStandard
 
         :return: StrOpeningStandard
         """

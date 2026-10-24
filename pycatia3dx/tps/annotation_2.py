@@ -35,17 +35,17 @@ class Annotation2(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Annotation2
-                | 
-                | Interface for the Technological Product Specification (TPS)
-                | objects.
-                | Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
-                | specification related to surfaces.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Annotation2
+                
+                Interface for the Technological Product Specification (TPS)
+                objects.
+                Leaf entity in the Design Pattern Composite. TPS modeler enables definition of
+                specification related to surfaces.
     
     """
 
@@ -59,22 +59,22 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SuperType() As CATBSTR (Read Only)
-                |     Gets the Super Type.
-                | 
-                |     Parameters:
-                | 
-                |         oSuperType
-                |             The Super Type.
-                | 
-                |             The list of SuperType available:
-                |             "FTA_NonSemantic"
-                |             "FTA_Form"
-                |             "FTA_Dimension"
-                |             "FTA_Position"
-                |             "FTA_Datum"
-                |             "FTA_Orientation"
-                |             "FTA_RunOut"
+                Property SuperType() As CATBSTR (Read Only)
+                    Gets the Super Type.
+                
+                    Parameters:
+                
+                        oSuperType
+                            The Super Type.
+                
+                            The list of SuperType available:
+                            "FTA_NonSemantic"
+                            "FTA_Form"
+                            "FTA_Dimension"
+                            "FTA_Position"
+                            "FTA_Datum"
+                            "FTA_Orientation"
+                            "FTA_RunOut"
 
         :return: str
         """
@@ -87,13 +87,13 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TPSStatus() As CATBSTR (Read Only)
-                |     Gets the TPS Status.
-                | 
-                |     Parameters:
-                | 
-                |         oStatus
-                |             The Status.
+                Property TPSStatus() As CATBSTR (Read Only)
+                    Gets the TPS Status.
+                
+                    Parameters:
+                
+                        oStatus
+                            The Status.
 
         :return: str
         """
@@ -106,63 +106,63 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Gets the Type.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             The Type.
-                | 
-                |             List of types available ordered by SuperType:
-                |             SuperType = "FTA_NonSemantic"
-                |             Type = "FTA_Text"
-                |             Type = "FTA_FlagNote"
-                |             Type = "FTA_Roughness"
-                |             Type = "FTA_Weld"
-                |             Type = "FTA_Noa"
-                |             Type = "FTA_NonSemanticDatum"
-                |             Type = "FTA_NonSemanticTarget"
-                |             Type = "FTA_NonSemanticGDT"
-                |             Type = "FTA_NonSemanticDimension"
-                | 
-                |             SuperType = "FTA_Form"
-                |             Type = "FTA_Flatness"
-                |             Type = "FTA_Straightness"
-                |             Type = "FTA_Circularity"
-                |             Type = "FTA_Cylindricity"
-                |             Type = "FTA_ProfileOfAnyLine"
-                |             Type = "FTA_ProfileOfASurface"
-                |             Type = "FTA_PatternTruePos"
-                | 
-                |             SuperType = "FTA_Dimension"
-                |             Type = "FTA_LinearDimension"
-                |             Type = "FTA_AngularDimension"
-                |             Type = "FTA_SecondLinearDimension"
-                |             Type = "FTA_ChamferDimension"
-                |             Type = "FTA_BasicDimension"
-                | 
-                |             SuperType = "FTA_Position"
-                |             Type = "FTA_TruePosition"
-                |             Type = "FTA_Concentricity"
-                |             Type = "FTA_Symmetry"
-                |             Type = "FTA_PositionOfAnyLine"
-                |             Type = "FTA_PositionOfASurface"
-                | 
-                |             SuperType = "FTA_Datum"
-                |             Type = "FTA_DatumSimple"
-                |             Type = "FTA_DatumTarget"
-                |             Type = "FTA_DatumSystem"
-                |             Type = "FTA_ReferenceFrame"
-                | 
-                |             SuperType = "FTA_Orientation"
-                |             Type = "FTA_Parallelism"
-                |             Type = "FTA_Perpendicularity"
-                |             Type = "FTA_Angularity"
-                | 
-                |             SuperType = "FTA_RunOut"
-                |             Type = "FTA_TotalRunOut"
-                |             Type = "FTA_CircularRunOut"
+                Property Type() As CATBSTR (Read Only)
+                    Gets the Type.
+                
+                    Parameters:
+                
+                        oType
+                            The Type.
+                
+                            List of types available ordered by SuperType:
+                            SuperType = "FTA_NonSemantic"
+                            Type = "FTA_Text"
+                            Type = "FTA_FlagNote"
+                            Type = "FTA_Roughness"
+                            Type = "FTA_Weld"
+                            Type = "FTA_Noa"
+                            Type = "FTA_NonSemanticDatum"
+                            Type = "FTA_NonSemanticTarget"
+                            Type = "FTA_NonSemanticGDT"
+                            Type = "FTA_NonSemanticDimension"
+                
+                            SuperType = "FTA_Form"
+                            Type = "FTA_Flatness"
+                            Type = "FTA_Straightness"
+                            Type = "FTA_Circularity"
+                            Type = "FTA_Cylindricity"
+                            Type = "FTA_ProfileOfAnyLine"
+                            Type = "FTA_ProfileOfASurface"
+                            Type = "FTA_PatternTruePos"
+                
+                            SuperType = "FTA_Dimension"
+                            Type = "FTA_LinearDimension"
+                            Type = "FTA_AngularDimension"
+                            Type = "FTA_SecondLinearDimension"
+                            Type = "FTA_ChamferDimension"
+                            Type = "FTA_BasicDimension"
+                
+                            SuperType = "FTA_Position"
+                            Type = "FTA_TruePosition"
+                            Type = "FTA_Concentricity"
+                            Type = "FTA_Symmetry"
+                            Type = "FTA_PositionOfAnyLine"
+                            Type = "FTA_PositionOfASurface"
+                
+                            SuperType = "FTA_Datum"
+                            Type = "FTA_DatumSimple"
+                            Type = "FTA_DatumTarget"
+                            Type = "FTA_DatumSystem"
+                            Type = "FTA_ReferenceFrame"
+                
+                            SuperType = "FTA_Orientation"
+                            Type = "FTA_Parallelism"
+                            Type = "FTA_Perpendicularity"
+                            Type = "FTA_Angularity"
+                
+                            SuperType = "FTA_RunOut"
+                            Type = "FTA_TotalRunOut"
+                            Type = "FTA_CircularRunOut"
 
         :return: str
         """
@@ -175,14 +175,14 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Z(double iZ) (Write Only)
-                |     method get_Z will never be exposed. Sets the offset of the
-                |     annotation.
-                | 
-                |     Parameters:
-                | 
-                |         iZ
-                |             The offset.
+                Property Z(double iZ) (Write Only)
+                    method get_Z will never be exposed. Sets the offset of the
+                    annotation.
+                
+                    Parameters:
+                
+                        iZ
+                            The offset.
 
         :return: None
         """
@@ -202,8 +202,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddLeader()
-                |     Adds a leader.
+                Sub AddLeader()
+                    Adds a leader.
 
         :return: None
         """
@@ -214,8 +214,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Coordinatedimension() As CoordDim
-                |     Retrieves the FTA co coordinate dimension.
+                Func Coordinatedimension() As CoordDim
+                    Retrieves the FTA co coordinate dimension.
 
         :return: CoordDim
         """
@@ -226,8 +226,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DatumSimple() As DatumSimple
-                |     Gets the annotation on the DatumSimple interface.
+                Func DatumSimple() As DatumSimple
+                    Gets the annotation on the DatumSimple interface.
 
         :return: DatumSimple
         """
@@ -238,8 +238,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DatumTarget() As DatumTarget
-                |     Gets the annotation on the DatumTarget interface.
+                Func DatumTarget() As DatumTarget
+                    Gets the annotation on the DatumTarget interface.
 
         :return: DatumTarget
         """
@@ -250,8 +250,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func DefaultAnnotation() As DefaultAnnotation
-                |     Gets the annotation on the DefaultAnnotation interface.
+                Func DefaultAnnotation() As DefaultAnnotation
+                    Gets the annotation on the DefaultAnnotation interface.
 
         :return: DefaultAnnotation
         """
@@ -262,13 +262,13 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Dimension3D() As Dimension3D
-                |     Gets the 3D Dimension on the 3D Dimension interface.
-                | 
-                |     Parameters:
-                | 
-                |         oDim
-                |             The 3D Dimension.
+                Func Dimension3D() As Dimension3D
+                    Gets the 3D Dimension on the 3D Dimension interface.
+                
+                    Parameters:
+                
+                        oDim
+                            The 3D Dimension.
 
         :return: Dimension3D
         """
@@ -279,13 +279,13 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FlagNote() As FlagNote
-                |     Gets the annotation on the FlagNote interface.
-                | 
-                |     Parameters:
-                | 
-                |         oFlagNote
-                |             The annotation Flag Note.
+                Func FlagNote() As FlagNote
+                    Gets the annotation on the FlagNote interface.
+                
+                    Parameters:
+                
+                        oFlagNote
+                            The annotation Flag Note.
 
         :return: FlagNote
         """
@@ -296,17 +296,17 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetGeometricalComponentName(short iIndex) As CATBSTR
-                |     Gets the Geometrical Component name at given index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the geometrical component; this value is greater or
-                |             equal to 1 and lower or equal to the value returned by
-                |             GetNbrOfGeometricalComponent. 
-                |         oComponentName
-                |             The name of the geometrical component.
+                Func GetGeometricalComponentName(short iIndex) As CATBSTR
+                    Gets the Geometrical Component name at given index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the geometrical component; this value is greater or
+                            equal to 1 and lower or equal to the value returned by
+                            GetNbrOfGeometricalComponent. 
+                        oComponentName
+                            The name of the geometrical component.
 
         :param int i_index:
         :return: str
@@ -318,22 +318,22 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbrOfGeometricalComponent() As short
-                |     Gets the number of geometrical components.
-                | 
-                |     Parameters:
-                | 
-                |         oGeomLinkNbr
-                |             The number of links to the geometry employed by this
-                |             annotation.
-                |             The returned value is comprise in between 1 and N (N is at most the
-                |             total of geometrical links existing under the
-                |             annotation).
-                |             The amount of Geometrical Component sent back may be different from
-                |             the annotation total links to the geometry because
-                |             sometimes
-                |             the Group of Surfaces may point to the same geometrical component
-                |             participating to the definition of several User Surfaces.
+                Func GetNbrOfGeometricalComponent() As short
+                    Gets the number of geometrical components.
+                
+                    Parameters:
+                
+                        oGeomLinkNbr
+                            The number of links to the geometry employed by this
+                            annotation.
+                            The returned value is comprise in between 1 and N (N is at most the
+                            total of geometrical links existing under the
+                            annotation).
+                            The amount of Geometrical Component sent back may be different from
+                            the annotation total links to the geometry because
+                            sometimes
+                            the Group of Surfaces may point to the same geometrical component
+                            participating to the definition of several User Surfaces.
 
         :return: int
         """
@@ -344,8 +344,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
-                |     Gets the geometry on which the Annotation is applied to.
+                Sub GetSurfaces(CATSafeArrayVariant oSafeArray)
+                    Gets the geometry on which the Annotation is applied to.
 
         :return: tuple
         """
@@ -372,8 +372,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSurfacesCount() As long
-                |     Counts the geometry on which the Annotation is applied to.
+                Func GetSurfacesCount() As long
+                    Counts the geometry on which the Annotation is applied to.
 
         :return: int
         """
@@ -384,9 +384,9 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HasAVisualizationDimension() As boolean
-                |     Checks if the Annotation uses a visualization dimension for its attachment
-                |     to the geometry.
+                Func HasAVisualizationDimension() As boolean
+                    Checks if the Annotation uses a visualization dimension for its attachment
+                    to the geometry.
 
         :return: bool
         """
@@ -397,8 +397,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func HyperLinkManager() As TPSHyperLinksManager
-                |     Gets the annotation on HyperLinks manager interface.
+                Func HyperLinkManager() As TPSHyperLinksManager
+                    Gets the annotation on HyperLinks manager interface.
 
         :return: TpsHyperLinksManager
         """
@@ -409,8 +409,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsAConsumableAnnotation() As boolean
-                |     Checks if the Annotation is a Consumable Annotation.
+                Func IsAConsumableAnnotation() As boolean
+                    Checks if the Annotation is a Consumable Annotation.
 
         :return: bool
         """
@@ -421,8 +421,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsADefaultAnnotation() As boolean
-                |     Checks if the Annotation is a Default Annotation.
+                Func IsADefaultAnnotation() As boolean
+                    Checks if the Annotation is a Default Annotation.
 
         :return: bool
         """
@@ -433,8 +433,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ModifyVisu()
-                |     To refresh the 3D visualization.
+                Sub ModifyVisu()
+                    To refresh the 3D visualization.
 
         :return: None
         """
@@ -445,8 +445,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Noa() As Noa
-                |     Gets the annotation on the Noa interface.
+                Func Noa() As Noa
+                    Gets the annotation on the Noa interface.
 
         :return: Noa
         """
@@ -457,8 +457,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NonSemanticDatum() As NonSemanticDatum
-                |     Gets the annotation on the DatumSimple interface.
+                Func NonSemanticDatum() As NonSemanticDatum
+                    Gets the annotation on the DatumSimple interface.
 
         :return: NonSemanticDatum
         """
@@ -469,8 +469,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NonSemanticDatumTarget() As NonSemanticDatumTarget
-                |     Gets the annotation on the DatumSimple interface.
+                Func NonSemanticDatumTarget() As NonSemanticDatumTarget
+                    Gets the annotation on the DatumSimple interface.
 
         :return: NonSemanticDatumTarget
         """
@@ -481,8 +481,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NonSemanticDimension() As NonSemanticDimension
-                |     Gets the annotation on the DatumSimple interface.
+                Func NonSemanticDimension() As NonSemanticDimension
+                    Gets the annotation on the DatumSimple interface.
 
         :return: NonSemanticDimension
         """
@@ -493,8 +493,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func NonSemanticGDT() As NonSemanticGDT
-                |     Gets the annotation on the DatumSimple interface.
+                Func NonSemanticGDT() As NonSemanticGDT
+                    Gets the annotation on the DatumSimple interface.
 
         :return: NonSemanticGDT
         """
@@ -505,8 +505,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ReferenceFrame() As ReferenceFrame
-                |     Gets the annotation on the ReferenceFrame interface.
+                Func ReferenceFrame() As ReferenceFrame
+                    Gets the annotation on the ReferenceFrame interface.
 
         :return: ReferenceFrame
         """
@@ -517,8 +517,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Roughness() As Roughness
-                |     Gets the annotation on the Roughness interface.
+                Func Roughness() As Roughness
+                    Gets the annotation on the Roughness interface.
 
         :return: Roughness
         """
@@ -529,8 +529,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func SemanticGDT() As SemanticGDT
-                |     Gets the annotation on the DatumSimple interface.
+                Func SemanticGDT() As SemanticGDT
+                    Gets the annotation on the DatumSimple interface.
 
         :return: SemanticGDT
         """
@@ -541,35 +541,35 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
-                | iCheckNameUnicityOption)
-                |     Sets the Geometrical Component name at given index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the geometrical component; this value is greater or
-                |             equal to 1 and lower or equal to the value returned by
-                |             GetNbrOfGeometricalComponent.
-                |             The user is allowed to pass a 0 value as index; in this case, an
-                |             automatic renaming is triggered.
-                |             In this case the usual path of a geometrical component (for
-                |             instance Face/Name of the feature/Body.1) is used to extract the logical name
-                |             to apply "Name of the feature".
-                |             Pay attention that geometrical component name must be unique; this
-                |             method is exiting in error whenever the unicity is of geometrical component is
-                |             broken.
-                |             The renaming processing is given up without any change when an
-                |             already existing name is passed to this method or when automatic processing
-                |             faces naming ambiguity. 
-                |         iNewName
-                |             The string used to rename the geometrical component.
-                |             
-                |         iCheckNameUnicityOption
-                |             Option to trigger an addition verification during renaming to
-                |             guarantee that the entire set of Geometrical Components in the
-                |             representation
-                |             have a different name.
+                Sub SetGeometricalComponentName(short iIndex,CATBSTR iNewName,boolean
+                iCheckNameUnicityOption)
+                    Sets the Geometrical Component name at given index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the geometrical component; this value is greater or
+                            equal to 1 and lower or equal to the value returned by
+                            GetNbrOfGeometricalComponent.
+                            The user is allowed to pass a 0 value as index; in this case, an
+                            automatic renaming is triggered.
+                            In this case the usual path of a geometrical component (for
+                            instance Face/Name of the feature/Body.1) is used to extract the logical name
+                            to apply "Name of the feature".
+                            Pay attention that geometrical component name must be unique; this
+                            method is exiting in error whenever the unicity is of geometrical component is
+                            broken.
+                            The renaming processing is given up without any change when an
+                            already existing name is passed to this method or when automatic processing
+                            faces naming ambiguity. 
+                        iNewName
+                            The string used to rename the geometrical component.
+                            
+                        iCheckNameUnicityOption
+                            Option to trigger an addition verification during renaming to
+                            guarantee that the entire set of Geometrical Components in the
+                            representation
+                            have a different name.
 
         :param int i_index:
         :param str i_new_name:
@@ -583,16 +583,16 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetXY(double iX,double iY)
-                |     method GetXY will never be exposed. Sets TPS coordinates in the
-                |     view.
-                | 
-                |     Parameters:
-                | 
-                |         oX
-                |             The X coordinate. 
-                |         oY
-                |             The Y coordinate.
+                Sub SetXY(double iX,double iY)
+                    method GetXY will never be exposed. Sets TPS coordinates in the
+                    view.
+                
+                    Parameters:
+                
+                        oX
+                            The X coordinate. 
+                        oY
+                            The Y coordinate.
 
         :param float i_x:
         :param float i_y:
@@ -605,13 +605,13 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Text() As Text
-                |     Gets the annotation on the Text interface.
-                | 
-                |     Parameters:
-                | 
-                |         oText
-                |             The annotation Text.
+                Func Text() As Text
+                    Gets the annotation on the Text interface.
+                
+                    Parameters:
+                
+                        oText
+                            The annotation Text.
 
         :return: Text
         """
@@ -622,13 +622,13 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub TransfertToView(TPSView iView)
-                |     Moves the annotation in another view.
-                | 
-                |     Parameters:
-                | 
-                |         iView
-                |             The destination view.
+                Sub TransfertToView(TPSView iView)
+                    Moves the annotation in another view.
+                
+                    Parameters:
+                
+                        iView
+                            The destination view.
 
         :param TPSView i_view:
         :return: None
@@ -640,15 +640,15 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func VisualizationDimension() As Dimension3D
-                |     Gets the dimension visualization associated with the
-                |     annotation.
-                | 
-                |     Parameters:
-                | 
-                |         oDim
-                |             The visualization Dimension oDim employed by the annotation to
-                |             display its link to the geometry.
+                Func VisualizationDimension() As Dimension3D
+                    Gets the dimension visualization associated with the
+                    annotation.
+                
+                    Parameters:
+                
+                        oDim
+                            The visualization Dimension oDim employed by the annotation to
+                            display its link to the geometry.
 
         :return: Dimension3D
         """
@@ -659,8 +659,8 @@ class Annotation2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Weld() As Weld
-                |     Gets the annotation on the Weld interface. 
+                Func Weld() As Weld
+                    Gets the annotation on the Weld interface. 
 
         :return: Weld
         """

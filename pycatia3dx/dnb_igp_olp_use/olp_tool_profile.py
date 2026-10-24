@@ -18,34 +18,34 @@ class OLPToolProfile(OLPProfile):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpProfile
-                |                         OlpToolProfile
-                | 
-                | The tool profile interface used for translating robot
-                | programs.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | 
-                | The behavior of this object depends on where it was retrieved from. If the
-                | object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
-                | object is used to configure the tool properties of that motion. The parameters
-                | specified with the iMatch input equal to TRUE will be used to find an existing
-                | profile to reuse for this motion. If no matching profile is found a new one
-                | will be created. If the object was retrieved from OlpController.ToolProfileList
-                | then any modifications to this object will change an existing or new profile's
-                | values directly.
-                | 
-                | You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
-                | OlpRobotMotionTarget until values have been set.
-                | 
-                | Any set methods which don't have the iMatch input and the writable properties
-                | assume iMatch=FALSE.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpProfile
+                                        OlpToolProfile
+                
+                The tool profile interface used for translating robot
+                programs.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                
+                The behavior of this object depends on where it was retrieved from. If the
+                object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
+                object is used to configure the tool properties of that motion. The parameters
+                specified with the iMatch input equal to TRUE will be used to find an existing
+                profile to reuse for this motion. If no matching profile is found a new one
+                will be created. If the object was retrieved from OlpController.ToolProfileList
+                then any modifications to this object will change an existing or new profile's
+                values directly.
+                
+                You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
+                OlpRobotMotionTarget until values have been set.
+                
+                Any set methods which don't have the iMatch input and the writable properties
+                assume iMatch=FALSE.
     
     """
 
@@ -59,8 +59,8 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FixedTCP() As boolean
-                |     Get/Set whether this tool profile is a fixed TCP tool profile.
+                Property FixedTCP() As boolean
+                    Get/Set whether this tool profile is a fixed TCP tool profile.
 
         :return: bool
         """
@@ -81,8 +81,8 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mass() As double
-                |     Tool mass in kilograms.
+                Property Mass() As double
+                    Tool mass in kilograms.
 
         :return: float
         """
@@ -102,15 +102,15 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAttachedDevice() As OlpController
-                |     Gets the associated controlling device for this tool
-                |     profile.
-                |     This controlling device might not exist if the tool device does not contain
-                |     any mechanisms. In this case, this property will be NULL
-                | 
-                |     Returns:
-                |         The attached device controller. It might be nothing if there is no
-                |         device attached.
+                Func GetAttachedDevice() As OlpController
+                    Gets the associated controlling device for this tool
+                    profile.
+                    This controlling device might not exist if the tool device does not contain
+                    any mechanisms. In this case, this property will be NULL
+                
+                    Returns:
+                        The attached device controller. It might be nothing if there is no
+                        device attached.
 
         :return: OLPController
         """
@@ -121,17 +121,17 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCentroid(double oX,double oY,double oZ)
-                |     Gets the centroid of the tool.
-                | 
-                |     Parameters:
-                | 
-                |         oX
-                |             The X Coordinate in m. 
-                |         oY
-                |             The Y Coordinate in m. 
-                |         oZ
-                |             The Z Coordinate in m.
+                Sub GetCentroid(double oX,double oY,double oZ)
+                    Gets the centroid of the tool.
+                
+                    Parameters:
+                
+                        oX
+                            The X Coordinate in m. 
+                        oY
+                            The Y Coordinate in m. 
+                        oZ
+                            The Z Coordinate in m.
 
         :param float o_x:
         :param float o_y:
@@ -145,24 +145,24 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetInertia(double oXX,double oYY,double oZZ,double oXY,double oYZ,double
-                | oZX)
-                |     Gets the underlying coefficient of tool inertia
-                | 
-                |     Parameters:
-                | 
-                |         oXX
-                |             The XX coefficient. 
-                |         oYY
-                |             The YY coefficient. 
-                |         oZZ
-                |             The ZZ coefficient. 
-                |         oXY
-                |             The XY coefficient. 
-                |         oYZ
-                |             The YZ coefficient. 
-                |         oZX
-                |             The ZX coefficient.
+                Sub GetInertia(double oXX,double oYY,double oZZ,double oXY,double oYZ,double
+                oZX)
+                    Gets the underlying coefficient of tool inertia
+                
+                    Parameters:
+                
+                        oXX
+                            The XX coefficient. 
+                        oYY
+                            The YY coefficient. 
+                        oZZ
+                            The ZZ coefficient. 
+                        oXY
+                            The XY coefficient. 
+                        oYZ
+                            The YZ coefficient. 
+                        oZX
+                            The ZX coefficient.
 
         :param float o_xx:
         :param float o_yy:
@@ -179,24 +179,24 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
-                |     Get the transform that represents the TCP location.
-                |     For normal (mobile) tool profiles, this is the offset from the robot mount
-                |     plate to the TCP. For fixed TCP tool profiles, this is the transform from the
-                |     iOrigin location to the TCP.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The location that the transform is relative to.
-                |             For normal (mobile) tool profiles this must be delOlpMount. For
-                |             fixed TCP tool profiles it can be any other value except delOlpRobotBase since
-                |             that would mean that the fixed TCP moves with the rail position (when the robot
-                |             is on a rail). Instead of delOlpRobotBase you should use delOlpRailOrigin.
-                |             
-                | 
-                |     Returns:
-                |         The TCP transform.
+                Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
+                    Get the transform that represents the TCP location.
+                    For normal (mobile) tool profiles, this is the offset from the robot mount
+                    plate to the TCP. For fixed TCP tool profiles, this is the transform from the
+                    iOrigin location to the TCP.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The location that the transform is relative to.
+                            For normal (mobile) tool profiles this must be delOlpMount. For
+                            fixed TCP tool profiles it can be any other value except delOlpRobotBase since
+                            that would mean that the fixed TCP moves with the rail position (when the robot
+                            is on a rail). Instead of delOlpRobotBase you should use delOlpRailOrigin.
+                            
+                
+                    Returns:
+                        The TCP transform.
 
         :param int i_origin:
         :return: OLPTransform
@@ -208,17 +208,17 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttachedDevice(OlpController iAttachedDevice,boolean
-                | iMatch)
-                |     Sets the associated controlling device for this tool
-                |     profile.
-                |     The device is of type DELMIAOlpController, and it must have a valid
-                |     attachment to the main MCA.
-                | 
-                |     Parameters:
-                | 
-                |         The
-                |             target device controller.
+                Sub SetAttachedDevice(OlpController iAttachedDevice,boolean
+                iMatch)
+                    Sets the associated controlling device for this tool
+                    profile.
+                    The device is of type DELMIAOlpController, and it must have a valid
+                    attachment to the main MCA.
+                
+                    Parameters:
+                
+                        The
+                            target device controller.
 
         :param OLPController i_attached_device:
         :param bool i_match:
@@ -231,17 +231,17 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCentroid(double iX,double iY,double iZ)
-                |     Sets the centroid of the tool.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X Coordinate in m. 
-                |         iY
-                |             The Y Coordinate in m. 
-                |         iZ
-                |             The Z Coordinate in m.
+                Sub SetCentroid(double iX,double iY,double iZ)
+                    Sets the centroid of the tool.
+                
+                    Parameters:
+                
+                        iX
+                            The X Coordinate in m. 
+                        iY
+                            The Y Coordinate in m. 
+                        iZ
+                            The Z Coordinate in m.
 
         :param float i_x:
         :param float i_y:
@@ -255,20 +255,20 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCentroidMatch(double iX,double iY,double iZ,boolean
-                | iMatch)
-                |     Sets the centroid of the tool.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X Coordinate in m. 
-                |         iY
-                |             The Y Coordinate in m. 
-                |         iZ
-                |             The Z Coordinate in m. 
-                |         iMatch
-                |             Should the parameter be used to find a controller profile match?
+                Sub SetCentroidMatch(double iX,double iY,double iZ,boolean
+                iMatch)
+                    Sets the centroid of the tool.
+                
+                    Parameters:
+                
+                        iX
+                            The X Coordinate in m. 
+                        iY
+                            The Y Coordinate in m. 
+                        iZ
+                            The Z Coordinate in m. 
+                        iMatch
+                            Should the parameter be used to find a controller profile match?
 
         :param float i_x:
         :param float i_y:
@@ -283,15 +283,15 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetFixedTCPMatch(boolean iIsFixedTCP,boolean iMatch)
-                |     Set whether this tool profile is a fixed TCP tool profile.
-                | 
-                |     Parameters:
-                | 
-                |         iIsFixedTCP
-                |             Tool profile is for a fixed tool.
-                |         iMatch
-                |             Should the parameter be used to find a controller profile match?
+                Sub SetFixedTCPMatch(boolean iIsFixedTCP,boolean iMatch)
+                    Set whether this tool profile is a fixed TCP tool profile.
+                
+                    Parameters:
+                
+                        iIsFixedTCP
+                            Tool profile is for a fixed tool.
+                        iMatch
+                            Should the parameter be used to find a controller profile match?
 
         :param bool i_is_fixed_tcp:
         :param bool i_match:
@@ -304,24 +304,24 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInertia(double iXX,double iYY,double iZZ,double iXY,double iYZ,double
-                | iZX)
-                |     Sets the underlying coefficient of tool inertia
-                | 
-                |     Parameters:
-                | 
-                |         iXX
-                |             The XX coefficient. 
-                |         iYY
-                |             The YY coefficient. 
-                |         iZZ
-                |             The ZZ coefficient. 
-                |         iXY
-                |             The XY coefficient. 
-                |         iYZ
-                |             The YZ coefficient. 
-                |         iZX
-                |             The ZX coefficient.
+                Sub SetInertia(double iXX,double iYY,double iZZ,double iXY,double iYZ,double
+                iZX)
+                    Sets the underlying coefficient of tool inertia
+                
+                    Parameters:
+                
+                        iXX
+                            The XX coefficient. 
+                        iYY
+                            The YY coefficient. 
+                        iZZ
+                            The ZZ coefficient. 
+                        iXY
+                            The XY coefficient. 
+                        iYZ
+                            The YZ coefficient. 
+                        iZX
+                            The ZX coefficient.
 
         :param float i_xx:
         :param float i_yy:
@@ -339,26 +339,26 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetInertiaMatch(double iXX,double iYY,double iZZ,double iXY,double
-                | iYZ,double iZX,boolean iMatch)
-                |     Sets the underlying coefficient of tool inertia
-                | 
-                |     Parameters:
-                | 
-                |         iXX
-                |             The XX coefficient. 
-                |         iYY
-                |             The YY coefficient. 
-                |         iZZ
-                |             The ZZ coefficient. 
-                |         iXY
-                |             The XY coefficient. 
-                |         iYZ
-                |             The YZ coefficient. 
-                |         iZX
-                |             The ZX coefficient. 
-                |         iMatch
-                |             Should the parameter be used to find a controller profile match?
+                Sub SetInertiaMatch(double iXX,double iYY,double iZZ,double iXY,double
+                iYZ,double iZX,boolean iMatch)
+                    Sets the underlying coefficient of tool inertia
+                
+                    Parameters:
+                
+                        iXX
+                            The XX coefficient. 
+                        iYY
+                            The YY coefficient. 
+                        iZZ
+                            The ZZ coefficient. 
+                        iXY
+                            The XY coefficient. 
+                        iYZ
+                            The YZ coefficient. 
+                        iZX
+                            The ZX coefficient. 
+                        iMatch
+                            Should the parameter be used to find a controller profile match?
 
         :param float i_xx:
         :param float i_yy:
@@ -376,15 +376,15 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMassMatch(double iMass,boolean iMatch)
-                |     Set the tool mass in kilograms.
-                | 
-                |     Parameters:
-                | 
-                |         iMass
-                |             Tool profile mass.
-                |         iMatch
-                |             Should the parameter be used to find a controller profile match?
+                Sub SetMassMatch(double iMass,boolean iMatch)
+                    Set the tool mass in kilograms.
+                
+                    Parameters:
+                
+                        iMass
+                            Tool profile mass.
+                        iMatch
+                            Should the parameter be used to find a controller profile match?
 
         :param float i_mass:
         :param bool i_match:
@@ -397,22 +397,22 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform iTCP)
-                |     Set the transform that represents the TCP location.
-                |     For normal (mobile) tool profiles, this is the offset from the transform
-                |     from the robot mount plate to the TCP. For fixed TCP tool profiles, this is the
-                |     transform from the robot base, world, etc. to the TCP, depending on the value
-                |     of the parameter iOrigin.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The location that the transform is relative to.
-                |             For normal (mobile) tool profiles this must be delOlpMount. For
-                |             fixed TCP tool profiles it can be any other value.
-                |             
-                |         iTCP
-                |             The TCP transform.
+                Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform iTCP)
+                    Set the transform that represents the TCP location.
+                    For normal (mobile) tool profiles, this is the offset from the transform
+                    from the robot mount plate to the TCP. For fixed TCP tool profiles, this is the
+                    transform from the robot base, world, etc. to the TCP, depending on the value
+                    of the parameter iOrigin.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The location that the transform is relative to.
+                            For normal (mobile) tool profiles this must be delOlpMount. For
+                            fixed TCP tool profiles it can be any other value.
+                            
+                        iTCP
+                            The TCP transform.
 
         :param int i_origin:
         :param OLPTransform i_tcp:
@@ -425,25 +425,25 @@ class OLPToolProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransformMatch(DELOlpPositionRef iOrigin,OlpTransform iTCP,boolean
-                | iMatch)
-                |     Set the transform that represents the TCP location.
-                |     For normal (mobile) tool profiles, this is the offset from the transform
-                |     from the robot mount plate to the TCP. For fixed TCP tool profiles, this is the
-                |     transform from the robot base, world, etc. to the TCP, depending on the value
-                |     of the parameter iOrigin.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The location that the transform is relative to.
-                |             For normal (mobile) tool profiles this must be delOlpMount. For
-                |             fixed TCP tool profiles it can be any other value.
-                |             
-                |         iTCP
-                |             The TCP transform. 
-                |         iMatch
-                |             Should the parameter be used to find a controller profile match?
+                Sub SetTransformMatch(DELOlpPositionRef iOrigin,OlpTransform iTCP,boolean
+                iMatch)
+                    Set the transform that represents the TCP location.
+                    For normal (mobile) tool profiles, this is the offset from the transform
+                    from the robot mount plate to the TCP. For fixed TCP tool profiles, this is the
+                    transform from the robot base, world, etc. to the TCP, depending on the value
+                    of the parameter iOrigin.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The location that the transform is relative to.
+                            For normal (mobile) tool profiles this must be delOlpMount. For
+                            fixed TCP tool profiles it can be any other value.
+                            
+                        iTCP
+                            The TCP transform. 
+                        iMatch
+                            Should the parameter be used to find a controller profile match?
 
         :param int i_origin:
         :param OLPTransform i_tcp:

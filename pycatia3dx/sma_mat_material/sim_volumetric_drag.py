@@ -19,51 +19,51 @@ class SimVolumetricDrag(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimVolumetricDrag
-                | 
-                | Represents the Volumetric Drag object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimVolumetricDrag as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyVolumetricDrag As SimVolumetricDrag
-                |      Set MyVolumetricDrag = MyMaterialOptions.Add("SimVolumetricDrag")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimVolumetricDrag
-                |     named "Volumetric Drag.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyVolumetricDrag As SimVolumetricDrag
-                |      Set MyVolumetricDrag = MyMaterialOptions.Item("Volumetric Drag.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimVolumetricDrag as following:
-                | 
-                |      ...
-                |      myVolumetricDrag = myMaterialOptions.Add("SimVolumetricDrag")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimVolumetricDrag named "Volumetric Drag.1" as following:
-                | 
-                |      ...
-                |      myVolumetricDrag = myMaterialOptions.Item("Volumetric Drag.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimVolumetricDrag
+                
+                Represents the Volumetric Drag object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimVolumetricDrag as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyVolumetricDrag As SimVolumetricDrag
+                     Set MyVolumetricDrag = MyMaterialOptions.Add("SimVolumetricDrag")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimVolumetricDrag
+                    named "Volumetric Drag.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyVolumetricDrag As SimVolumetricDrag
+                     Set MyVolumetricDrag = MyMaterialOptions.Item("Volumetric Drag.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimVolumetricDrag as following:
+                
+                     ...
+                     myVolumetricDrag = myMaterialOptions.Add("SimVolumetricDrag")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimVolumetricDrag named "Volumetric Drag.1" as following:
+                
+                     ...
+                     myVolumetricDrag = myMaterialOptions.Item("Volumetric Drag.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimVolumetricDrag(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the Volumetric Drag material table data.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the Volumetric Drag material table data.
 
         :return: SimMaterialTable
         """
@@ -90,19 +90,19 @@ class SimVolumetricDrag(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimVolumetricDragMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimVolumetricDragMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

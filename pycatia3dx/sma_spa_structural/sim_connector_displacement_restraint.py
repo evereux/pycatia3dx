@@ -17,55 +17,55 @@ class SimConnectorDisplacementRestraint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimConnectorDisplacementRestraint
-                | 
-                | Represents the Connector Displacement Restraint object.
-                | 
-                | Example:
-                |     Given a SimFeatures object, you can create a
-                |     SimConnectorDisplacementRestraint as following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorDisplacementRestraint As
-                |      SimConnectorDisplacementRestraint
-                |      Set MyConnectorDisplacementRestraint = MyFeatures.Add("SimConnectorDisplacementRestraint")
-                |      
-                | 
-                |     Given a SimFeatures object, you can retrieve a
-                |     SimConnectorDisplacementRestraint named "Connector Displacement Restraint.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimFeatures
-                |      ...
-                |      Dim MyConnectorDisplacementRestraint As
-                |      SimConnectorDisplacementRestraint
-                |      Set MyConnectorDisplacementRestraint = MyFeatures.Item("Connector Displacement Restraint.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimFeatures object myFeatures, you can create a
-                |     SimConnectorDisplacementRestraint as following:
-                | 
-                |      ...
-                |      myConnectorDisplacementRestraint = myFeatures.Add("SimConnectorDisplacementRestraint")
-                |      
-                | 
-                |     Given a SimFeatures object myFeatures, you can retrieve a
-                |     SimConnectorDisplacementRestraint named "Connector Displacement Restraint.1" as
-                |     following:
-                | 
-                |      ...
-                |      myConnectorDisplacementRestraint = myFeatures.Item("Connector Displacement Restraint.1")
-                |      
-                | 
-                | See also:
-                |     SimFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimConnectorDisplacementRestraint
+                
+                Represents the Connector Displacement Restraint object.
+                
+                Example:
+                    Given a SimFeatures object, you can create a
+                    SimConnectorDisplacementRestraint as following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorDisplacementRestraint As
+                     SimConnectorDisplacementRestraint
+                     Set MyConnectorDisplacementRestraint = MyFeatures.Add("SimConnectorDisplacementRestraint")
+                     
+                
+                    Given a SimFeatures object, you can retrieve a
+                    SimConnectorDisplacementRestraint named "Connector Displacement Restraint.1" as
+                    following:
+                
+                     Dim MyFeatures As SimFeatures
+                     ...
+                     Dim MyConnectorDisplacementRestraint As
+                     SimConnectorDisplacementRestraint
+                     Set MyConnectorDisplacementRestraint = MyFeatures.Item("Connector Displacement Restraint.1")
+                     
+                
+                Example in Python:
+                    Given a SimFeatures object myFeatures, you can create a
+                    SimConnectorDisplacementRestraint as following:
+                
+                     ...
+                     myConnectorDisplacementRestraint = myFeatures.Add("SimConnectorDisplacementRestraint")
+                     
+                
+                    Given a SimFeatures object myFeatures, you can retrieve a
+                    SimConnectorDisplacementRestraint named "Connector Displacement Restraint.1" as
+                    following:
+                
+                     ...
+                     myConnectorDisplacementRestraint = myFeatures.Item("Connector Displacement Restraint.1")
+                     
+                
+                See also:
+                    SimFeatures
     
     """
 
@@ -79,8 +79,8 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -101,9 +101,9 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of available connector components of relative motion. The list can contains the following values: 1 : the first translation DOF is available, 2 : the second translation DOF is available, 3 : the third translation DOF is available, 4 : the first rotation DOF is available, 5 : the second rotation DOF is available, 6 : the third rotation DOF is available.
+                Property AvailableConnectorComponents() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of available connector components of relative motion. The list can contains the following values: 1 : the first translation DOF is available, 2 : the second translation DOF is available, 3 : the third translation DOF is available, 4 : the first rotation DOF is available, 5 : the second rotation DOF is available, 6 : the third rotation DOF is available.
 
         :return: tuple
         """
@@ -116,8 +116,8 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureHistory() As SimFeatureHistory (Read Only)
-                |     Returns the feature history.
+                Property FeatureHistory() As SimFeatureHistory (Read Only)
+                    Returns the feature history.
 
         :return: SimFeatureHistory
         """
@@ -130,33 +130,33 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -168,18 +168,18 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDofRestraint(SimDof iDegreeOfFreedom) As boolean
-                |     Retrieves the flag that determines if the displacement is restrained in the
-                |     specified DOF.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. 
-                | 
-                |     Returns:
-                |         TRUE: the specified DOF is restrained.
-                |         FALSE: the specified DOF is not restrained.
+                Func GetDofRestraint(SimDof iDegreeOfFreedom) As boolean
+                    Retrieves the flag that determines if the displacement is restrained in the
+                    specified DOF.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. 
+                
+                    Returns:
+                        TRUE: the specified DOF is restrained.
+                        FALSE: the specified DOF is not restrained.
 
         :param SimDof i_degree_of_freedom:
         :return: bool
@@ -191,18 +191,18 @@ class SimConnectorDisplacementRestraint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDofRestraint(SimDof iDegreeOfFreedom,boolean
-                | iRestraintFlag)
-                |     Sets the flag that determines if the displacement is restrained in the
-                |     specified DOF.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom. 
-                |         iRestraintFlag[in]
-                |             TRUE: the specified DOF is restrained.
-                |             FALSE: the specified DOF is not restrained. 
+                Sub SetDofRestraint(SimDof iDegreeOfFreedom,boolean
+                iRestraintFlag)
+                    Sets the flag that determines if the displacement is restrained in the
+                    specified DOF.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom. 
+                        iRestraintFlag[in]
+                            TRUE: the specified DOF is restrained.
+                            FALSE: the specified DOF is not restrained. 
 
         :param SimDof i_degree_of_freedom:
         :param bool i_restraint_flag:

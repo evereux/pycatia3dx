@@ -17,14 +17,14 @@ class SimXRep(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimXRep
-                | 
-                | Represents a XRep.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimXRep
+                
+                Represents a XRep.
     
     """
 
@@ -38,8 +38,8 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FileName() As CATBSTR
-                |     Sets or retrieves the data file name associated to the XRep.
+                Property FileName() As CATBSTR
+                    Sets or retrieves the data file name associated to the XRep.
 
         :return: str
         """
@@ -60,8 +60,8 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NavRepName() As CATBSTR
-                |     Sets or retrieves the nav rep file name associated to the XRep.
+                Property NavRepName() As CATBSTR
+                    Sets or retrieves the nav rep file name associated to the XRep.
 
         :return: str
         """
@@ -81,18 +81,18 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRelation(AnyObject iPointedObject,SimXRepRelationType
-                | iRelationType)
-                |     Adds a relation to the XRep.
-                | 
-                |     Parameters:
-                | 
-                |         iPointedObject:
-                |             The link object that represent the pointed object.
-                |             
-                |         iRelationType:
-                |             The kind of relation, depending on the linked objects.
-                |             PLMProductService.ComposeLink
+                Sub AddRelation(AnyObject iPointedObject,SimXRepRelationType
+                iRelationType)
+                    Adds a relation to the XRep.
+                
+                    Parameters:
+                
+                        iPointedObject:
+                            The link object that represent the pointed object.
+                            
+                        iRelationType:
+                            The kind of relation, depending on the linked objects.
+                            PLMProductService.ComposeLink
 
         :param AnyObject i_pointed_object:
         :param int i_relation_type:
@@ -105,13 +105,13 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportFile(CATBSTR iFolderPath)
-                |     Exports the data of the XRep to a data file.
-                | 
-                |     Parameters:
-                | 
-                |         iFolderPath:
-                |             The path of the folder in which the data file will be exported.
+                Sub ExportFile(CATBSTR iFolderPath)
+                    Exports the data of the XRep to a data file.
+                
+                    Parameters:
+                
+                        iFolderPath:
+                            The path of the folder in which the data file will be exported.
 
         :param str i_folder_path:
         :return: None
@@ -123,13 +123,13 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportNavRep(CATBSTR iFolderPath)
-                |     Exports the data of the XRep to a data file.
-                | 
-                |     Parameters:
-                | 
-                |         iFolderPath:
-                |             The path of the folder in which the navrep file will be exported.
+                Sub ExportNavRep(CATBSTR iFolderPath)
+                    Exports the data of the XRep to a data file.
+                
+                    Parameters:
+                
+                        iFolderPath:
+                            The path of the folder in which the navrep file will be exported.
 
         :param str i_folder_path:
         :return: None
@@ -141,24 +141,24 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GenerateNavRep(CATBSTR iFilePath,CATBSTR iLengthUnit)
-                |     Generates a navrep file from a data file and imports it into the X
-                |     representation.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             The path of the data file from which the navrep file will be
-                |             generated. 
-                |         iLengthUnit
-                |             The length unit of the data file.
-                |             Legal values:
-                | 
-                |             METER
-                |             INCH
-                |             FOOT
-                |             YARD
-                |             ...
+                Sub GenerateNavRep(CATBSTR iFilePath,CATBSTR iLengthUnit)
+                    Generates a navrep file from a data file and imports it into the X
+                    representation.
+                
+                    Parameters:
+                
+                        iFilePath
+                            The path of the data file from which the navrep file will be
+                            generated. 
+                        iLengthUnit
+                            The length unit of the data file.
+                            Legal values:
+                
+                            METER
+                            INCH
+                            FOOT
+                            YARD
+                            ...
 
         :param str i_file_path:
         :param str i_length_unit:
@@ -171,17 +171,17 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ImportFile(CATBSTR iFolderPath,boolean iKeepNavRep)
-                |     Imports a data file in the XRep.
-                | 
-                |     Parameters:
-                | 
-                |         iFolderPath:
-                |             The path of the folder from which the data file will be imported.
-                |             
-                |         iKeepNavRep:
-                |             Tells whether the existing navrep (if any) will be kept or replaced
-                |             by the default one.
+                Sub ImportFile(CATBSTR iFolderPath,boolean iKeepNavRep)
+                    Imports a data file in the XRep.
+                
+                    Parameters:
+                
+                        iFolderPath:
+                            The path of the folder from which the data file will be imported.
+                            
+                        iKeepNavRep:
+                            Tells whether the existing navrep (if any) will be kept or replaced
+                            by the default one.
 
         :param str i_folder_path:
         :param bool i_keep_nav_rep:
@@ -194,13 +194,13 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ImportNavRep(CATBSTR iFolderPath)
-                |     Imports a navrep file in the XRep.
-                | 
-                |     Parameters:
-                | 
-                |         iFolderPath:
-                |             The path of the folder from which the navrep file will be imported.
+                Sub ImportNavRep(CATBSTR iFolderPath)
+                    Imports a navrep file in the XRep.
+                
+                    Parameters:
+                
+                        iFolderPath:
+                            The path of the folder from which the navrep file will be imported.
 
         :param str i_folder_path:
         :return: None
@@ -212,14 +212,14 @@ class SimXRep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveRelation(AnyObject iRelationPointedObject)
-                |     Removes a relation from the XRep.
-                | 
-                |     Parameters:
-                | 
-                |         iRelationPointedObject:
-                |             The link object that represent the pointed object, stored into the
-                |             relation. PLMProductService.ComposeLink
+                Sub RemoveRelation(AnyObject iRelationPointedObject)
+                    Removes a relation from the XRep.
+                
+                    Parameters:
+                
+                        iRelationPointedObject:
+                            The link object that represent the pointed object, stored into the
+                            relation. PLMProductService.ComposeLink
 
         :param AnyObject i_relation_pointed_object:
         :return: None

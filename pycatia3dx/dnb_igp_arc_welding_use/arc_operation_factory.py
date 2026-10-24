@@ -18,12 +18,12 @@ class ArcOperationFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ArcOperationFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ArcOperationFactory
 
     
     """
@@ -38,9 +38,9 @@ class ArcOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateArcOperation(InsertMode iMode,CATBaseUnknown
-                | iReferenceInstruction,CATBaseUnknown iParentSeq,CATBaseUnknown iMotionGroup) As
-                | CATBaseUnknown
+                Func CreateArcOperation(InsertMode iMode,CATBaseUnknown
+                iReferenceInstruction,CATBaseUnknown iParentSeq,CATBaseUnknown iMotionGroup) As
+                CATBaseUnknown
 
         :param int i_mode:
         :param CATBaseUnknown i_reference_instruction:
@@ -57,7 +57,7 @@ class ArcOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteArcOperation(CATBaseUnknown ispMotionActivity)
+                Sub DeleteArcOperation(CATBaseUnknown ispMotionActivity)
 
         :param CATBaseUnknown isp_motion_activity:
         :return: None

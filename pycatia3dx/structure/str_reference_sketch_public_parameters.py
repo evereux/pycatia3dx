@@ -19,28 +19,28 @@ class StrReferenceSketchPublicParameters(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrReferenceSketchPublicParameters
-                | 
-                | Object for Public parameters collection of Reference Sketch used in Sketch
-                | Based Panel or Sketch Based Plate creation.
-                | Obtained from function call GetReferenceSketchPublicParameters on
-                | SfdSketchBasedPanel.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example retrieves StrReferenceSketchPublicParameters from the
-                |          object.
-                |          
-                | 
-                |           Dim ObjStrReferenceSketchPublicParms As
-                |           StrReferenceSketchPublicParameters
-                |           Set ObjStrReferenceSketchPublicParms = ObjSfdSketchBasedPanel.GetReferenceSketchPublicParameters
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrReferenceSketchPublicParameters
+                
+                Object for Public parameters collection of Reference Sketch used in Sketch
+                Based Panel or Sketch Based Plate creation.
+                Obtained from function call GetReferenceSketchPublicParameters on
+                SfdSketchBasedPanel.
+                
+                Example:
+                
+                
+                         This example retrieves StrReferenceSketchPublicParameters from the
+                         object.
+                         
+                
+                          Dim ObjStrReferenceSketchPublicParms As
+                          StrReferenceSketchPublicParameters
+                          Set ObjStrReferenceSketchPublicParms = ObjSfdSketchBasedPanel.GetReferenceSketchPublicParameters
     
     """
 
@@ -53,23 +53,23 @@ class StrReferenceSketchPublicParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Count() As long
-                |     Returns the number of public parameters exposed by the reference
-                |     sketch.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example obtains the number of public parameters available for
-                |              editing
-                |              
-                | 
-                |              Dim ObjStrReferenceSketchPublicParms As
-                |              StrReferenceSketchPublicParameters
-                |              Set ObjStrReferenceSketchPublicParms = oObjSfdSketchBasedPlate.StrReferenceSketchPublicParameters
-                |              Dim NCount As Integer
-                |              Set NCount = ObjStrReferenceSketchPublicParms.Count
+                Func Count() As long
+                    Returns the number of public parameters exposed by the reference
+                    sketch.
+                
+                    Example:
+                
+                         
+                
+                             This example obtains the number of public parameters available for
+                             editing
+                             
+                
+                             Dim ObjStrReferenceSketchPublicParms As
+                             StrReferenceSketchPublicParameters
+                             Set ObjStrReferenceSketchPublicParms = oObjSfdSketchBasedPlate.StrReferenceSketchPublicParameters
+                             Dim NCount As Integer
+                             Set NCount = ObjStrReferenceSketchPublicParms.Count
 
         :return: int
         """
@@ -80,25 +80,25 @@ class StrReferenceSketchPublicParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As Parameter
-                |     Returns the public parameter of reference sketch at location
-                |     iIndex.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index location of the public parameter 
-                | 
-                |     Example:
-                | 
-                | 
-                |             This example retrieves the public parameter at location 1 and
-                |             modifies it to
-                |              20mm
-                | 
-                |              Dim ObjPublicParm As Parameter
-                |              Set ObjPublicParm = ObjStrReferenceSketchPublicParms.Item(1)
-                |              ObjPublicParm.ValuateFromString("200mm")
+                Func Item(CATVariant iIndex) As Parameter
+                    Returns the public parameter of reference sketch at location
+                    iIndex.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index location of the public parameter 
+                
+                    Example:
+                
+                
+                            This example retrieves the public parameter at location 1 and
+                            modifies it to
+                             20mm
+                
+                             Dim ObjPublicParm As Parameter
+                             Set ObjPublicParm = ObjStrReferenceSketchPublicParms.Item(1)
+                             ObjPublicParm.ValuateFromString("200mm")
 
         :param CATVariant i_index:
         :return: Parameter

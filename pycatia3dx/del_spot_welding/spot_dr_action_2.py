@@ -17,12 +17,12 @@ class SpotDrAction2(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrAction2
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrAction2
 
     
     """
@@ -37,16 +37,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Config() As short
-                |     Gets the Robot Configuration for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         iConfig
-                |             The Robot Configuration 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property Config() As short
+                    Gets the Robot Configuration for the DR Action
+                
+                    Parameters:
+                
+                        iConfig
+                            The Robot Configuration 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: int
         """
@@ -67,16 +67,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ElbowAngle() As double
-                |     Gets the Elbow angle for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oElbowAngle
-                |             The Elbow angle. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property ElbowAngle() As double
+                    Gets the Elbow angle for the DR Action
+                
+                    Parameters:
+                
+                        oElbowAngle
+                            The Elbow angle. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: float
         """
@@ -97,22 +97,22 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InterpolationMode() As short
-                |     Gets the Interpolation Mode for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oInterpolationMode
-                |             The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
-                |             1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
-                |             end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
-                |             applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
-                |             robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
-                |             and the turn values in the robot motion is applied at the end of move
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property InterpolationMode() As short
+                    Gets the Interpolation Mode for the DR Action
+                
+                    Parameters:
+                
+                        oInterpolationMode
+                            The Interpolation Mode. 0 for NEARMODE, // Shortest Angle Strategy
+                            1 for KEEPCFG_KEEPTURN // The posture and the turn values are unchanged at the
+                            end of move 2 for KEEPCFG_SETTURN, // The turn values in the robot motion is
+                            applied at the end of move 3 for SETCFG_KEEPTURN, // The posture set in the
+                            robot motion is applied at the end of move 4 for SETCFG_SETTURN // The posture
+                            and the turn values in the robot motion is applied at the end of move
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: int
         """
@@ -133,20 +133,20 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionType() As short
-                |     Gets the Motion Type for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oMotionType
-                |             The Motion Type. 0 for JointMOVE, // Interpolated movement of
-                |             joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
-                |             // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
-                |             circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
-                |             fashionon 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property MotionType() As short
+                    Gets the Motion Type for the DR Action
+                
+                    Parameters:
+                
+                        oMotionType
+                            The Motion Type. 0 for JointMOVE, // Interpolated movement of
+                            joints 1 for LINEARMOVE // The TCP moves in a linear fashion 2 for PREDEFINED,
+                            // PREDEFINED MOVE, JOINT Interpolated 3 for CIRCULAR, // The TCP moves in a
+                            circular fashion 4 for CIRCULARVIA // via point in the TCP moves in a circular
+                            fashionon 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: int
         """
@@ -167,18 +167,18 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TCPOrientationMode() As short
-                |     Gets the TCP Orientation Mode for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oOrientationMode
-                |             The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
-                |             TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property TCPOrientationMode() As short
+                    Gets the TCP Orientation Mode for the DR Action
+                
+                    Parameters:
+                
+                        oOrientationMode
+                            The TCP Orientation Mode 0 for TCPOrientOneAxis 1 for
+                            TCPOrientTwoAxis 2 for TCPOrientThreeAxis 3 for TCPOrientWristAxis
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: int
         """
@@ -199,16 +199,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TurnNumbers() As CATSafeArrayVariant
-                |     Gets the Turn Numbers for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oTurnNumbers
-                |             List of Turn Numbers. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property TurnNumbers() As CATSafeArrayVariant
+                    Gets the Turn Numbers for the DR Action
+                
+                    Parameters:
+                
+                        oTurnNumbers
+                            List of Turn Numbers. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: tuple
         """
@@ -229,16 +229,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TurnSigns() As CATSafeArrayVariant
-                |     Gets the Turn Signs for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oTurnSigns
-                |             List of Turn Signs. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Property TurnSigns() As CATSafeArrayVariant
+                    Gets the Turn Signs for the DR Action
+                
+                    Parameters:
+                
+                        oTurnSigns
+                            List of Turn Signs. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: tuple
         """
@@ -258,20 +258,20 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA) As
-                | CATSafeArrayVariant
-                |     Retrieves the Auxiliary device Joint values for the DR
-                |     Action
-                | 
-                |     Parameters:
-                | 
-                |         iAuxiliaryDevMCA
-                |             The List of User profiles to be used. 
-                |         oAuxiliaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA) As
+                CATSafeArrayVariant
+                    Retrieves the Auxiliary device Joint values for the DR
+                    Action
+                
+                    Parameters:
+                
+                        iAuxiliaryDevMCA
+                            The List of User profiles to be used. 
+                        oAuxiliaryAxisValues
+                            List of joint values of the device. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param AnyObject i_auxiliary_dev_mca:
         :return: tuple
@@ -283,16 +283,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetUserProfilesList() As CATSafeArrayVariant
-                |     Gets the user profiles for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         oUserProfileList
-                |             The List of User profiles to be used. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetUserProfilesList() As CATSafeArrayVariant
+                    Gets the user profiles for the DR Action
+                
+                    Parameters:
+                
+                        oUserProfileList
+                            The List of User profiles to be used. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :return: tuple
         """
@@ -303,19 +303,19 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA,CATSafeArrayVariant
-                | iAuxiliaryAxisValues)
-                |     Sets the Auxiliary device Joint values for the DR Action
-                | 
-                |     Parameters:
-                | 
-                |         iAuxiliaryDevMCA
-                |             The List of User profiles to be used. 
-                |         iAuxiliaryAxisValues
-                |             List of joint values of the device. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetAuxiliaryAxisValues(AnyObject iAuxiliaryDevMCA,CATSafeArrayVariant
+                iAuxiliaryAxisValues)
+                    Sets the Auxiliary device Joint values for the DR Action
+                
+                    Parameters:
+                
+                        iAuxiliaryDevMCA
+                            The List of User profiles to be used. 
+                        iAuxiliaryAxisValues
+                            List of joint values of the device. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param AnyObject i_auxiliary_dev_mca:
         :param tuple i_auxiliary_axis_values:
@@ -328,16 +328,16 @@ class SpotDrAction2(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetUserProfilesList(CATSafeArrayVariant iUserProfileList)
-                |     Sets the user profiles for the DR Action
+                Sub SetUserProfilesList(CATSafeArrayVariant iUserProfileList)
+                    Sets the user profiles for the DR Action
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iUserProfileList
-                |             The List of User profiles to be used.
+                        iUserProfileList
+                            The List of User profiles to be used.
                 |
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param tuple i_user_profile_list:
         :return: None

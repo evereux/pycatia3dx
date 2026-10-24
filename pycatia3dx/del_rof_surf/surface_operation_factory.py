@@ -18,16 +18,16 @@ class SurfaceOperationFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SurfaceOperationFactory
-                | 
-                | Interface to create and destroy a Surface Operation.
-                | Role: This interface provides methods to create and destroy Surface
-                | Operations.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SurfaceOperationFactory
+                
+                Interface to create and destroy a Surface Operation.
+                Role: This interface provides methods to create and destroy Surface
+                Operations.
     
     """
 
@@ -42,36 +42,36 @@ class SurfaceOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSurfaceOperation(CATBSTR iOperationType,CATBaseUnknown
-                | irefInstr,SurfaceOperationPosition iPosition,CATBaseUnknown
-                | ipTag,CATBaseUnknown ipTagOwnerOcc,CATBaseUnknown iParentSeq) As
-                | CATBaseUnknown
-                |     This method creates a SurfaceOperation
-                | 
-                |     Parameters:
-                | 
-                |         iOperationType,
-                |             input the Operation type. The approved list of Operation type is
-                |             listed in \\win_b64\\resources\\msgcatalog\\DELApprovedOperationTypes.txt
-                |             
-                |         oSurfaceOperation,
-                |             newly created SurfaceOperation. 
-                |         irefInstr,
-                |             reference activity relative to which the new Surface operation is to be created. If irefInstr = NULL, create the Surface operation at the end of the Surface task valid irefInstr should be set to create Surface operation as a child 
-                |         iPosition,
-                |             position of the Surface Operation to be created. 
-                |         ipTag,
-                |             the Target Tag for the Surface Operation 
-                |         ipTagOwnerOcc,
-                |             the Target Tag's Owner Occurrence 
-                |         iParentSeq,
-                |             Parent sequence in which the MotionActivity will be created. This
-                |             argument is manadatory if iPosition is 'Begin' or 'End'. If iPosition is
-                |             'Before' or 'After' and if this argument is NULL, MotionActivity is created in
-                |             the MainSequence of the Task. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func CreateSurfaceOperation(CATBSTR iOperationType,CATBaseUnknown
+                irefInstr,SurfaceOperationPosition iPosition,CATBaseUnknown
+                ipTag,CATBaseUnknown ipTagOwnerOcc,CATBaseUnknown iParentSeq) As
+                CATBaseUnknown
+                    This method creates a SurfaceOperation
+                
+                    Parameters:
+                
+                        iOperationType,
+                            input the Operation type. The approved list of Operation type is
+                            listed in \\win_b64\\resources\\msgcatalog\\DELApprovedOperationTypes.txt
+                            
+                        oSurfaceOperation,
+                            newly created SurfaceOperation. 
+                        irefInstr,
+                            reference activity relative to which the new Surface operation is to be created. If irefInstr = NULL, create the Surface operation at the end of the Surface task valid irefInstr should be set to create Surface operation as a child 
+                        iPosition,
+                            position of the Surface Operation to be created. 
+                        ipTag,
+                            the Target Tag for the Surface Operation 
+                        ipTagOwnerOcc,
+                            the Target Tag's Owner Occurrence 
+                        iParentSeq,
+                            Parent sequence in which the MotionActivity will be created. This
+                            argument is manadatory if iPosition is 'Begin' or 'End'. If iPosition is
+                            'Before' or 'After' and if this argument is NULL, MotionActivity is created in
+                            the MainSequence of the Task. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_operation_type:
         :param CATBaseUnknown iref_instr:
@@ -91,16 +91,16 @@ class SurfaceOperationFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteSurfaceOperation(CATBaseUnknown iSurfaceOperation)
-                |     This method destroys a SurfaceOperation
-                | 
-                |     Parameters:
-                | 
-                |         ispSurfaceOperation,
-                |             SurfaceOperation to be destroyed. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub DeleteSurfaceOperation(CATBaseUnknown iSurfaceOperation)
+                    This method destroys a SurfaceOperation
+                
+                    Parameters:
+                
+                        ispSurfaceOperation,
+                            SurfaceOperation to be destroyed. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param CATBaseUnknown i_surface_operation:
         :return: None

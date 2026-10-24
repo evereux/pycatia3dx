@@ -19,14 +19,14 @@ class StrProfileCrv(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrProfileCrv
-                | 
-                | Object to manage Profile created with 1 curve
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrProfileCrv
+                
+                Object to manage Profile created with 1 curve
     
     """
 
@@ -40,18 +40,18 @@ class StrProfileCrv(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Curve() As Reference
-                |     Returns or Sets the Profile's curve.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the curve of the profile.
-                |              
-                | 
-                |               Dim ObjStrProfileCrv As StrProfileCrv
-                |               Set ObjStrProfileCrv = ObjSfdMember.StrProfileCrv
-                |               Set RefCurve = ObjStrProfileCrv.Curve
+                Property Curve() As Reference
+                    Returns or Sets the Profile's curve.
+                
+                    Example:
+                
+                
+                             This example retrieves the curve of the profile.
+                             
+                
+                              Dim ObjStrProfileCrv As StrProfileCrv
+                              Set ObjStrProfileCrv = ObjSfdMember.StrProfileCrv
+                              Set RefCurve = ObjStrProfileCrv.Curve
 
         :return: Reference
         """
@@ -72,21 +72,21 @@ class StrProfileCrv(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Reference() As Reference
-                |     Returns or Sets the curve's reference.
-                |     Role Returns or Sets the curve's reference. When the profile is a stiffener
-                |     on curve, or stiffener on free edge, you must set the delimited molded surface
-                |     of the panel.
-                | 
-                |     See also:
-                |         SfdPanel.GetDelimitedSupport
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Reference of the profile.
-                |              
-                | 
-                |               Set RefReference = ObjStrProfileCrv.Reference
+                Property Reference() As Reference
+                    Returns or Sets the curve's reference.
+                    Role Returns or Sets the curve's reference. When the profile is a stiffener
+                    on curve, or stiffener on free edge, you must set the delimited molded surface
+                    of the panel.
+                
+                    See also:
+                        SfdPanel.GetDelimitedSupport
+                    Example:
+                
+                
+                             This example retrieves Reference of the profile.
+                             
+                
+                              Set RefReference = ObjStrProfileCrv.Reference
 
         :return: Reference
         """
@@ -106,17 +106,17 @@ class StrProfileCrv(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCurveOffset() As Parameter
-                |     Returns the geodesic offset of the curve.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves Offset of the curve.
-                |              
-                | 
-                |               Dim OffsetParm As Parameter
-                |               Set OffsetParm = ObjStrProfile.GetCurveOffset
+                Func GetCurveOffset() As Parameter
+                    Returns the geodesic offset of the curve.
+                
+                    Example:
+                
+                
+                             This example retrieves Offset of the curve.
+                             
+                
+                              Dim OffsetParm As Parameter
+                              Set OffsetParm = ObjStrProfile.GetCurveOffset
 
         :return: Parameter
         """

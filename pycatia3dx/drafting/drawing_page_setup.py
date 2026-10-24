@@ -17,22 +17,22 @@ class DrawingPageSetup(PageSetup):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.PageSetup
-                |                         DrawingPageSetup
-                | 
-                | Represents the page setup for the drawing representations.
-                | 
-                | The page setup is the object that stores data which defines how your
-                | representations and images are actually printed on paper. This data includes
-                | namely the paper size, the orientation, the bottom, top, right, and left
-                | margins, the zoom factor, the banner, the printing quality, the choice of the
-                | best orientation, and the choice to fit either the drawing sheet format or the
-                | printer format.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.PageSetup
+                                        DrawingPageSetup
+                
+                Represents the page setup for the drawing representations.
+                
+                The page setup is the object that stores data which defines how your
+                representations and images are actually printed on paper. This data includes
+                namely the paper size, the orientation, the bottom, top, right, and left
+                margins, the zoom factor, the banner, the printing quality, the choice of the
+                best orientation, and the choice to fit either the drawing sheet format or the
+                printer format.
     
     """
 
@@ -46,15 +46,15 @@ class DrawingPageSetup(PageSetup):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ChooseBestOrientation() As boolean
-                |     Activates or deactivates the choice of the best
-                |     orientation.
-                | 
-                |     Example:
-                |         This example requests the best orientation to be chosen for
-                |         MySheet.
-                | 
-                |          MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
+                Property ChooseBestOrientation() As boolean
+                    Activates or deactivates the choice of the best
+                    orientation.
+                
+                    Example:
+                        This example requests the best orientation to be chosen for
+                        MySheet.
+                
+                         MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
 
         :return: bool
         """
@@ -75,13 +75,13 @@ class DrawingPageSetup(PageSetup):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FitToPrinterFormat() As boolean
-                |     Fits the format of the print to the printer format.
-                | 
-                |     Example:
-                |         This example turns this calculation on.
-                | 
-                |          MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
+                Property FitToPrinterFormat() As boolean
+                    Fits the format of the print to the printer format.
+                
+                    Example:
+                        This example turns this calculation on.
+                
+                         MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
 
         :return: bool
         """
@@ -102,13 +102,13 @@ class DrawingPageSetup(PageSetup):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FitToSheetFormat() As boolean
-                |     Fits the format of the print to the sheet format.
-                | 
-                |     Example:
-                |         This example turns this calculation on.
-                | 
-                |          MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
+                Property FitToSheetFormat() As boolean
+                    Fits the format of the print to the sheet format.
+                
+                    Example:
+                        This example turns this calculation on.
+                
+                         MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
 
         :return: bool
         """

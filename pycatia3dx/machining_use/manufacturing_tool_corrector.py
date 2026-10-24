@@ -17,16 +17,16 @@ class ManufacturingToolCorrector(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingToolCorrector
-                | 
-                | Interface dedicated to Tool Corrector objects management.
-                | Role: This interface offers services to manage mainly the tools
-                | parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingToolCorrector
+                
+                Interface dedicated to Tool Corrector objects management.
+                Role: This interface offers services to manage mainly the tools
+                parameters.
     
     """
 
@@ -40,22 +40,22 @@ class ManufacturingToolCorrector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetValues(CATBSTR oPoint,long oNumber,long oLengthNumber,long
-                | oRadiusNumber,double oDiameter,long iUnit)
-                |     Get the values according to a Corrector. Returns HRESULT.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                |             : Type point as CATUnicodeString (Ex: P1, ..., P9) 
-                |         oNumber
-                |             : Corrector number as Integer 
-                |         oLengthNumber
-                |             : Length Corrector number as Integer 
-                |         oRadiusNumber
-                |             : Radius Corrector number as Integer 
-                |         oDiameter
-                |             : Tool diameter for this point as Double
+                Sub GetValues(CATBSTR oPoint,long oNumber,long oLengthNumber,long
+                oRadiusNumber,double oDiameter,long iUnit)
+                    Get the values according to a Corrector. Returns HRESULT.
+                
+                    Parameters:
+                
+                        oPoint
+                            : Type point as CATUnicodeString (Ex: P1, ..., P9) 
+                        oNumber
+                            : Corrector number as Integer 
+                        oLengthNumber
+                            : Length Corrector number as Integer 
+                        oRadiusNumber
+                            : Radius Corrector number as Integer 
+                        oDiameter
+                            : Tool diameter for this point as Double
 
         :param str o_point:
         :param int o_number:
@@ -73,20 +73,20 @@ class ManufacturingToolCorrector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetValues(CATBSTR iPoint,CATSafeArrayVariant
-                | iListNumbers,CATSafeArrayVariant iListLengthNumbers,CATSafeArrayVariant
-                | iListRadiusNumbers,CATSafeArrayVariant iListDiameters,long
-                | iUnit)
-                |     Set the values according to a Corrector. Returns HRESULT.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             : Type point as CATUnicodeString (Ex: P1,... P9) 
-                |         iListNumbers
-                |             : List of corrector numbers as CATListOfInt 
-                |         iListLengthNumbers
-                |             : List of corrector numbers as CATListOfInt
+                Sub SetValues(CATBSTR iPoint,CATSafeArrayVariant
+                iListNumbers,CATSafeArrayVariant iListLengthNumbers,CATSafeArrayVariant
+                iListRadiusNumbers,CATSafeArrayVariant iListDiameters,long
+                iUnit)
+                    Set the values according to a Corrector. Returns HRESULT.
+                
+                    Parameters:
+                
+                        iPoint
+                            : Type point as CATUnicodeString (Ex: P1,... P9) 
+                        iListNumbers
+                            : List of corrector numbers as CATListOfInt 
+                        iListLengthNumbers
+                            : List of corrector numbers as CATListOfInt
 
         :param str i_point:
         :param tuple i_list_numbers:

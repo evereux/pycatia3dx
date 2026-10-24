@@ -17,21 +17,21 @@ class SearchService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SearchService
-                | 
-                | This Interface is starting point to automate the search.
-                | 
-                | Example of how to retrieve such an object using
-                | Application.GetSessionService:
-                | 
-                |   Dim aSearchSrv as SearchService
-                |   Set aSearchSrv = CATIA.GetSessionService("Search")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SearchService
+                
+                This Interface is starting point to automate the search.
+                
+                Example of how to retrieve such an object using
+                Application.GetSessionService:
+                
+                  Dim aSearchSrv as SearchService
+                  Set aSearchSrv = CATIA.GetSessionService("Search")
     
     """
 
@@ -45,9 +45,9 @@ class SearchService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DatabaseSearch() As DatabaseSearch (Read Only)
-                |     Returns a Search object that can prepare search with the database. This
-                |     provides APIs to simulate the "Advanced Search" provided in the UI.
+                Property DatabaseSearch() As DatabaseSearch (Read Only)
+                    Returns a Search object that can prepare search with the database. This
+                    provides APIs to simulate the "Advanced Search" provided in the UI.
 
         :return: DatabaseSearch
         """
@@ -60,8 +60,8 @@ class SearchService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Title(CATBSTR iTitle) (Write Only)
-                |     Sets the title of the Search Browser.
+                Property Title(CATBSTR iTitle) (Write Only)
+                    Sets the title of the Search Browser.
 
         :return: None
         """
@@ -81,8 +81,8 @@ class SearchService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Search()
-                |     Launch the Search and display the results in the Search Browser.
+                Sub Search()
+                    Launch the Search and display the results in the Search Browser.
 
         :return: None
         """

@@ -17,15 +17,15 @@ class VALValidationService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         VALValidationService
-                | 
-                | Provides services around Validation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        VALValidationService
+                
+                Provides services around Validation
     
     """
 
@@ -39,8 +39,8 @@ class VALValidationService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Validation() As VALValidation (Read Only)
-                |     Returns the Validation of the current editor.
+                Property Validation() As VALValidation (Read Only)
+                    Returns the Validation of the current editor.
 
         :return: VALValidation
         """

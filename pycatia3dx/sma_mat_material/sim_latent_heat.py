@@ -19,51 +19,51 @@ class SimLatentHeat(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimLatentHeat
-                | 
-                | Represents the Latent Heat object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimLatentHeat as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyLatentHeat As SimLatentHeat
-                |      Set MyLatentHeat = MyMaterialOptions.Add("SimLatentHeat")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimLatentHeat named
-                |     "Latent Heat.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyLatentHeat As SimLatentHeat
-                |      Set MyLatentHeat = MyMaterialOptions.Item("Latent Heat.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimLatentHeat as following:
-                | 
-                |      ...
-                |      myLatentHeat = myMaterialOptions.Add("SimLatentHeat")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimLatentHeat named "Latent Heat.1" as following:
-                | 
-                |      ...
-                |      myLatentHeat = myMaterialOptions.Item("Latent Heat.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimLatentHeat
+                
+                Represents the Latent Heat object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimLatentHeat as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyLatentHeat As SimLatentHeat
+                     Set MyLatentHeat = MyMaterialOptions.Add("SimLatentHeat")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimLatentHeat named
+                    "Latent Heat.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyLatentHeat As SimLatentHeat
+                     Set MyLatentHeat = MyMaterialOptions.Item("Latent Heat.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimLatentHeat as following:
+                
+                     ...
+                     myLatentHeat = myMaterialOptions.Add("SimLatentHeat")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimLatentHeat named "Latent Heat.1" as following:
+                
+                     ...
+                     myLatentHeat = myMaterialOptions.Item("Latent Heat.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimLatentHeat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the latent heat material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the latent heat material table.
 
         :return: SimMaterialTable
         """
@@ -90,19 +90,19 @@ class SimLatentHeat(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimLatentHeatMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimLatentHeatMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

@@ -18,19 +18,19 @@ class File(FileComponent):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfOSIDLItf.FileComponent
-                |                         File
-                | 
-                | Represents the file object.
-                | Role: The file object allows to manipulate files with UNIX and Windows. Use it
-                | instead of the one of Visual Basic to make portable macros. Its gives access to
-                | information about the file and can open a file as a TextStream
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfOSIDLItf.FileComponent
+                                        File
+                
+                Represents the file object.
+                Role: The file object allows to manipulate files with UNIX and Windows. Use it
+                instead of the one of Visual Basic to make portable macros. Its gives access to
+                information about the file and can open a file as a TextStream
+                object.
     
     """
 
@@ -44,15 +44,15 @@ class File(FileComponent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Size() As long (Read Only)
-                |     Returns the size of the file.
-                | 
-                |     Example:
-                |         This example retrieves in FileSize the size of the File
-                |         TestFile.
-                | 
-                |          Dim FileSize As Long
-                |          FileSize = TestFile.Size
+                Property Size() As long (Read Only)
+                    Returns the size of the file.
+                
+                    Example:
+                        This example retrieves in FileSize the size of the File
+                        TestFile.
+                
+                         Dim FileSize As Long
+                         FileSize = TestFile.Size
 
         :return: int
         """
@@ -65,16 +65,16 @@ class File(FileComponent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the file. For instance, if the file has a .txt or .doc
-                |     extension, its type will be "Text Document".
-                | 
-                |     Example:
-                |         This example retrieves in FileType the type of the File
-                |         TestFile.
-                | 
-                |          Dim FileType As String
-                |          FileSize = TestFile.Size
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the file. For instance, if the file has a .txt or .doc
+                    extension, its type will be "Text Document".
+                
+                    Example:
+                        This example retrieves in FileType the type of the File
+                        TestFile.
+                
+                         Dim FileType As String
+                         FileSize = TestFile.Size
 
         :return: str
         """
@@ -86,17 +86,17 @@ class File(FileComponent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func OpenAsTextStream(CATBSTR iMode) As TextStream
-                |     Opens the file and retrieves it as a TextSteam object. Parameter iMode can
-                |     have the value "ForReading", "ForWriting" or
-                |     "ForAppending".
-                | 
-                |     Example:
-                |         This example opens the file TestFile for reading and retrieves in the
-                |         text stream TextStr.
-                | 
-                |          Dim TextStr As CATIATextSteam
-                |          Set TextStr = TestFile.OpenAsTextStream("ForReading")
+                Func OpenAsTextStream(CATBSTR iMode) As TextStream
+                    Opens the file and retrieves it as a TextSteam object. Parameter iMode can
+                    have the value "ForReading", "ForWriting" or
+                    "ForAppending".
+                
+                    Example:
+                        This example opens the file TestFile for reading and retrieves in the
+                        text stream TextStr.
+                
+                         Dim TextStr As CATIATextSteam
+                         Set TextStr = TestFile.OpenAsTextStream("ForReading")
 
         :param str i_mode:
         :return: TextStream

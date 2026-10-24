@@ -23,14 +23,14 @@ class Sketches(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Sketches
-                | 
-                | The body's collection of sketches not yet used by any shape.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Sketches
+                
+                The body's collection of sketches not yet used by any shape.
     
     """
 
@@ -43,27 +43,27 @@ class Sketches(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Add(Reference iPlane) As Sketch
-                |     Creates a new sketch and adds it to the sketch collection. The sketch
-                |     creation implies to specify a supporting plane. Once created, the sketch
-                |     exists, but is empty. You must use the Sketch.OpenEdition method to begin to
-                |     edit it.
-                | 
-                |     Parameters:
-                | 
-                |         iPlane
-                |             The sketch supporting plane
-                |             The following Boundary object is supported: PlanarFace.
-                |             
-                | 
-                |     Returns:
-                |         oNewSketch The created sketch 
-                |     Example:
-                |         This example creates the newSketch sketch on the XY plane of the myPart
-                |         part:
-                | 
-                |          Set XYPlane = myPart.OriginElements.PlaneXY()
-                |          Set newSketch = myPart.Sketches.Add(XYPlane)
+                Func Add(Reference iPlane) As Sketch
+                    Creates a new sketch and adds it to the sketch collection. The sketch
+                    creation implies to specify a supporting plane. Once created, the sketch
+                    exists, but is empty. You must use the Sketch.OpenEdition method to begin to
+                    edit it.
+                
+                    Parameters:
+                
+                        iPlane
+                            The sketch supporting plane
+                            The following Boundary object is supported: PlanarFace.
+                            
+                
+                    Returns:
+                        oNewSketch The created sketch 
+                    Example:
+                        This example creates the newSketch sketch on the XY plane of the myPart
+                        part:
+                
+                         Set XYPlane = myPart.OriginElements.PlaneXY()
+                         Set newSketch = myPart.Sketches.Add(XYPlane)
 
         :param Reference i_plane:
         :return: Sketch
@@ -75,17 +75,17 @@ class Sketches(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetBoundary(CATBSTR iLabel) As Boundary
-                |     Returns a boundary using its label.
-                | 
-                |     Parameters:
-                | 
-                |         iLabel
-                |             Identification of the Boundary object. See Reference.DisplayName.
-                |             
-                | 
-                |     Returns:
-                |         The retrieved boundary
+                Func GetBoundary(CATBSTR iLabel) As Boundary
+                    Returns a boundary using its label.
+                
+                    Parameters:
+                
+                        iLabel
+                            Identification of the Boundary object. See Reference.DisplayName.
+                            
+                
+                    Returns:
+                        The retrieved boundary
 
         :param str i_label:
         :return: Boundary
@@ -97,26 +97,26 @@ class Sketches(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func Item(CATVariant iIndex) As Sketch
-                |     Returns a sketch using its index or its name from the Sketches
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the sketch to retrieve from the collection
-                |             of sketches. As a numerics, this index is the rank of the sketch in the
-                |             collection. The index of the first sketch in the collection is 1, and the index
-                |             of the last sketch is Count. As a string, it is the name you assigned to the
-                |             sketch using the AnyObject.Name property. 
-                | 
-                |     Returns:
-                |         The retrieved sketch 
-                |     Example:
-                |         This example retrieves the last item in the collection
-                |         sketches.
-                | 
-                |          Set lastSketch = sketchList.Item(sketchList.Count)
+                Func Item(CATVariant iIndex) As Sketch
+                    Returns a sketch using its index or its name from the Sketches
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the sketch to retrieve from the collection
+                            of sketches. As a numerics, this index is the rank of the sketch in the
+                            collection. The index of the first sketch in the collection is 1, and the index
+                            of the last sketch is Count. As a string, it is the name you assigned to the
+                            sketch using the AnyObject.Name property. 
+                
+                    Returns:
+                        The retrieved sketch 
+                    Example:
+                        This example retrieves the last item in the collection
+                        sketches.
+                
+                         Set lastSketch = sketchList.Item(sketchList.Count)
 
         :param CATVariant i_index:
         :return: Sketch

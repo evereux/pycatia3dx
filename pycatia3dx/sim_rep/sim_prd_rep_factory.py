@@ -17,14 +17,14 @@ class SimPrdRepFactory(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimPrdRepFactory
-                | 
-                | Represents the service to create simulation product
-                | representations.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimPrdRepFactory
+                
+                Represents the service to create simulation product
+                representations.
     
     """
 
@@ -37,18 +37,18 @@ class SimPrdRepFactory(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreatePrdRep(CATBSTR iRepType) As VPMRepReference
-                |     Creates a simulation product representation.
-                | 
-                |     Parameters:
-                | 
-                |         iRepType:
-                |             The type of representation to create.
-                |             Legal values: "FEM", "XRep", or "AbstractionShape"
-                |             
-                | 
-                |     Returns:
-                |         The created simulation product representation.
+                Func CreatePrdRep(CATBSTR iRepType) As VPMRepReference
+                    Creates a simulation product representation.
+                
+                    Parameters:
+                
+                        iRepType:
+                            The type of representation to create.
+                            Legal values: "FEM", "XRep", or "AbstractionShape"
+                            
+                
+                    Returns:
+                        The created simulation product representation.
 
         :param str i_rep_type:
         :return: VPMRepReference

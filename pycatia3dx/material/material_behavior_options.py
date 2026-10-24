@@ -21,12 +21,12 @@ class MaterialBehaviorOptions(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     MaterialBehaviorOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    MaterialBehaviorOptions
 
     
     """
@@ -40,15 +40,15 @@ class MaterialBehaviorOptions(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Add(CATBaseDispatch iMaterialBehaviorOption,short oIndex)
-                |     Allow to add an option in list.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialBehaviorOption
-                |             The option to add to this behavior. 
-                |         oIndex
-                |             Index of the added Option in the list.
+                Sub Add(CATBaseDispatch iMaterialBehaviorOption,short oIndex)
+                    Allow to add an option in list.
+                
+                    Parameters:
+                
+                        iMaterialBehaviorOption
+                            The option to add to this behavior. 
+                        oIndex
+                            Index of the added Option in the list.
 
         :param AnyObject i_material_behavior_option:
         :param int o_index:
@@ -61,15 +61,15 @@ class MaterialBehaviorOptions(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOption(CATVariant iIndex) As CATBaseDispatch
-                |     Allow to retrieve an option in list.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The option index to retrieve. 
-                |         oMaterialOption
-                |             The material option.
+                Func GetOption(CATVariant iIndex) As CATBaseDispatch
+                    Allow to retrieve an option in list.
+                
+                    Parameters:
+                
+                        iIndex
+                            The option index to retrieve. 
+                        oMaterialOption
+                            The material option.
 
         :param CATVariant i_index:
         :return: MaterialBehavior
@@ -81,13 +81,13 @@ class MaterialBehaviorOptions(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Allow to remove an option in list.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The option index to remove.
+                Sub Remove(CATVariant iIndex)
+                    Allow to remove an option in list.
+                
+                    Parameters:
+                
+                        iIndex
+                            The option index to remove.
 
         :param CATVariant i_index:
         :return: None

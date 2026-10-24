@@ -18,16 +18,16 @@ class ManufacturingFeatureContainer(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingFeatureContainer
-                | 
-                | Interface to manage the feature container.
-                | Role: This interface allows to initialize the feature
-                | container.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingFeatureContainer
+                
+                Interface to manage the feature container.
+                Role: This interface allows to initialize the feature
+                container.
     
     """
 
@@ -40,13 +40,13 @@ class ManufacturingFeatureContainer(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingView() As ManufacturingView
-                |     Retrieves the manufacturing view
-                | 
-                |     Parameters:
-                | 
-                |         oMfgView
-                |             Manufacturing View
+                Func GetManufacturingView() As ManufacturingView
+                    Retrieves the manufacturing view
+                
+                    Parameters:
+                
+                        oMfgView
+                            Manufacturing View
 
         :return: ManufacturingView
         """

@@ -20,14 +20,14 @@ class SsmMoldedSurfaceLmt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmMoldedSurfaceLmt
-                | 
-                | Role: This interface is specific to molded surfaces
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmMoldedSurfaceLmt
+                
+                Role: This interface is specific to molded surfaces
     
     """
 
@@ -40,21 +40,21 @@ class SsmMoldedSurfaceLmt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetLimitingObject(long iIndexLimit) As Reference
-                |     Get the Limiting Object on the Panel
-                | 
-                |     Parameters:
-                | 
-                |         oLimitingObject
-                |             [out] Limit Feature to be retrieved. Can be a geometric curves,
-                |             surfaces or a SFD Profile, or a SFD Panel. The exported feature is retrieved if
-                |             possible, otherwise the import. 
-                |         iIndexLimit
-                |             [int] Position of the limit to be retrieved. 
-                | 
-                |     Returns:
-                |         S_OK if everything ran ok. If the method fails you can obtain the
-                |         diagnosis of the error by unstacking the error in the HRESULT.
+                Func GetLimitingObject(long iIndexLimit) As Reference
+                    Get the Limiting Object on the Panel
+                
+                    Parameters:
+                
+                        oLimitingObject
+                            [out] Limit Feature to be retrieved. Can be a geometric curves,
+                            surfaces or a SFD Profile, or a SFD Panel. The exported feature is retrieved if
+                            possible, otherwise the import. 
+                        iIndexLimit
+                            [int] Position of the limit to be retrieved. 
+                
+                    Returns:
+                        S_OK if everything ran ok. If the method fails you can obtain the
+                        diagnosis of the error by unstacking the error in the HRESULT.
 
         :param int i_index_limit:
         :return: Reference
@@ -67,26 +67,26 @@ class SsmMoldedSurfaceLmt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLimitingObjects(References oLimitingObjects,CATSafeArrayVariant
-                | oListOfOrientations,SsmParameters oListOfOffset)
-                |     Get the list of Limiting Objects, the limit orientations and the limit
-                |     offsets on the Panel
-                | 
-                |     Parameters:
-                | 
-                |         oLimitingObjects
-                |             [out] Can be a geometric curves, surfaces or a SFD Profile, or a
-                |             SFD Panel. The exported feature is retrieved if possible, otherwise the import.
-                |             
-                |         oListOfOrientations
-                |             [out] List of the Limit Orientations. 
-                |         oListOfOffset
-                |             [out] List of the Limit offsets .list of knowledge parameters. see
-                |             CATICkeParm. 
-                | 
-                |     Returns:
-                |         S_OK if everything ran ok. If the method fails you can obtain the
-                |         diagnosis of the error by unstacking the error in the HRESULT.
+                Sub GetLimitingObjects(References oLimitingObjects,CATSafeArrayVariant
+                oListOfOrientations,SsmParameters oListOfOffset)
+                    Get the list of Limiting Objects, the limit orientations and the limit
+                    offsets on the Panel
+                
+                    Parameters:
+                
+                        oLimitingObjects
+                            [out] Can be a geometric curves, surfaces or a SFD Profile, or a
+                            SFD Panel. The exported feature is retrieved if possible, otherwise the import.
+                            
+                        oListOfOrientations
+                            [out] List of the Limit Orientations. 
+                        oListOfOffset
+                            [out] List of the Limit offsets .list of knowledge parameters. see
+                            CATICkeParm. 
+                
+                    Returns:
+                        S_OK if everything ran ok. If the method fails you can obtain the
+                        diagnosis of the error by unstacking the error in the HRESULT.
 
         :param References o_limiting_objects:
         :param tuple o_list_of_orientations:
@@ -101,29 +101,29 @@ class SsmMoldedSurfaceLmt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOrientation(long iIndexLimit) As long
-                |     Returns the Orientation for a limit at the position iIndexLimit on the
-                |     Panel.
-                | 
-                |     Parameters:
-                | 
-                |         iIndexLimit
-                |             Position of the orientation's limit. If iIndexLimit == -1 (default value): the last limit orientation is retrieved. If iIndexLimit > 0 : the index of the limit the wish to retrieve.
-                |             Orientation values can be:
-                |             -1 = InvertOrientation
-                |             0 = UnknownOrientation
-                |             1 = SameOrientation
-                |             8 = Inside
-                |             9 = Outside 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the Orientation of the last limit of
-                |              panel.
-                |              
-                | 
-                |              lOrientation = ObjStrPanelLimitMngt.GetOrientation -1
+                Func GetOrientation(long iIndexLimit) As long
+                    Returns the Orientation for a limit at the position iIndexLimit on the
+                    Panel.
+                
+                    Parameters:
+                
+                        iIndexLimit
+                            Position of the orientation's limit. If iIndexLimit == -1 (default value): the last limit orientation is retrieved. If iIndexLimit > 0 : the index of the limit the wish to retrieve.
+                            Orientation values can be:
+                            -1 = InvertOrientation
+                            0 = UnknownOrientation
+                            1 = SameOrientation
+                            8 = Inside
+                            9 = Outside 
+                
+                    Example:
+                
+                
+                             This example retrieves the Orientation of the last limit of
+                             panel.
+                             
+                
+                             lOrientation = ObjStrPanelLimitMngt.GetOrientation -1
 
         :param int i_index_limit:
         :return: int

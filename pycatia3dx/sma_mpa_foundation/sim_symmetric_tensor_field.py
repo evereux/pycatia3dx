@@ -18,14 +18,14 @@ class SimSymmetricTensorField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSymmetricTensorField
-                | 
-                | Represents the Symmetric Tensor Field object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSymmetricTensorField
+                
+                Represents the Symmetric Tensor Field object.
     
     """
 
@@ -39,8 +39,8 @@ class SimSymmetricTensorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
-                |     Returns the space time field data.
+                Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
+                    Returns the space time field data.
 
         :return: SimSpaceTimeField
         """
@@ -53,9 +53,9 @@ class SimSymmetricTensorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As
-                | SimSymmetricTensorFieldVariationType
-                |     Returns or sets the variation type.
+                Property VariationType() As
+                SimSymmetricTensorFieldVariationType
+                    Returns or sets the variation type.
 
         :return: int
         """
@@ -76,27 +76,27 @@ class SimSymmetricTensorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetUniformTensorComponents(double oComp11,double oComp22,double
-                | oComp33,double oComp12,double oComp13,double oComp23)
-                |     Retrieves the symmetric tensor components.
-                | 
-                |     Parameters:
-                | 
-                |         oComp11[out]
-                |             The 11 component of the tensor. 
-                |         oComp22[out]
-                |             The 22 component of the tensor. 
-                |         oComp33[out]
-                |             The 33 component of the tensor. 
-                |         oComp12[out]
-                |             The 12 component of the tensor. 
-                |         oComp13[out]
-                |             The 13 component of the tensor. 
-                |         oComp23[out]
-                |             The 23 component of the tensor. 
-                | 
-                |     Returns:
-                |         S_OK if successful.
+                Sub GetUniformTensorComponents(double oComp11,double oComp22,double
+                oComp33,double oComp12,double oComp13,double oComp23)
+                    Retrieves the symmetric tensor components.
+                
+                    Parameters:
+                
+                        oComp11[out]
+                            The 11 component of the tensor. 
+                        oComp22[out]
+                            The 22 component of the tensor. 
+                        oComp33[out]
+                            The 33 component of the tensor. 
+                        oComp12[out]
+                            The 12 component of the tensor. 
+                        oComp13[out]
+                            The 13 component of the tensor. 
+                        oComp23[out]
+                            The 23 component of the tensor. 
+                
+                    Returns:
+                        S_OK if successful.
 
         :param float o_comp11:
         :param float o_comp22:
@@ -114,27 +114,27 @@ class SimSymmetricTensorField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUniformTensorComponents(double iComp11,double iComp22,double
-                | iComp33,double iComp12,double iComp13,double iComp23)
-                |     Sets the symmetric tensor components.
-                | 
-                |     Parameters:
-                | 
-                |         iComp11[in]
-                |             The 11 component of the tensor. 
-                |         iComp22[in]
-                |             The 22 component of the tensor. 
-                |         iComp33[in]
-                |             The 33 component of the tensor. 
-                |         iComp12[in]
-                |             The 12 component of the tensor. 
-                |         iComp13[in]
-                |             The 13 component of the tensor. 
-                |         iComp23[in]
-                |             The 23 component of the tensor. 
-                | 
-                |     Returns:
-                |         S_OK if successful. 
+                Sub SetUniformTensorComponents(double iComp11,double iComp22,double
+                iComp33,double iComp12,double iComp13,double iComp23)
+                    Sets the symmetric tensor components.
+                
+                    Parameters:
+                
+                        iComp11[in]
+                            The 11 component of the tensor. 
+                        iComp22[in]
+                            The 22 component of the tensor. 
+                        iComp33[in]
+                            The 33 component of the tensor. 
+                        iComp12[in]
+                            The 12 component of the tensor. 
+                        iComp13[in]
+                            The 13 component of the tensor. 
+                        iComp23[in]
+                            The 23 component of the tensor. 
+                
+                    Returns:
+                        S_OK if successful. 
 
         :param float i_comp11:
         :param float i_comp22:

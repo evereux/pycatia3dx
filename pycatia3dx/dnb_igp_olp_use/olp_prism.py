@@ -17,21 +17,21 @@ class OLPPrism(OLPShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpShape
-                |                         OlpPrism
-                | 
-                | A 3D prism.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | The prism is constructed of 2 identical parallel polygons, joined by
-                | rectangular faces. This object is used with OlpCartesianSafetyZone and
-                | OlpToolVolume
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpShape
+                                        OlpPrism
+                
+                A 3D prism.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                The prism is constructed of 2 identical parallel polygons, joined by
+                rectangular faces. This object is used with OlpCartesianSafetyZone and
+                OlpToolVolume
     
     """
 
@@ -45,8 +45,8 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Height() As double
-                |     Get/Set the height in meters.
+                Property Height() As double
+                    Get/Set the height in meters.
 
         :return: float
         """
@@ -67,8 +67,8 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumBasePoints() As long (Read Only)
-                |     Get the number of base points.
+                Property NumBasePoints() As long (Read Only)
+                    Get the number of base points.
 
         :return: int
         """
@@ -80,19 +80,19 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddBasePoint(DELOlpPositionRef iOrigin) As OlpTransform
-                |     Append a corner point of the base polygon.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                | 
-                |     Returns:
-                |         The location.
+                Func AddBasePoint(DELOlpPositionRef iOrigin) As OlpTransform
+                    Append a corner point of the base polygon.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                
+                    Returns:
+                        The location.
 
         :param int i_origin:
         :return: OLPTransform
@@ -104,22 +104,22 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBasePoint(long iIndex,DELOlpPositionRef iOrigin) As
-                | OlpTransform
-                |     Get a corner of the base polygon.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the point. 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                | 
-                |     Returns:
-                |         The location.
+                Func GetBasePoint(long iIndex,DELOlpPositionRef iOrigin) As
+                OlpTransform
+                    Get a corner of the base polygon.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the point. 
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                
+                    Returns:
+                        The location.
 
         :param int i_index:
         :param int i_origin:
@@ -132,13 +132,13 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveBasePoint(long iIndex)
-                |     Remove a corner of the base polygon.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the point.
+                Sub RemoveBasePoint(long iIndex)
+                    Remove a corner of the base polygon.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the point.
 
         :param int i_index:
         :return: None
@@ -150,21 +150,21 @@ class OLPPrism(OLPShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBasePoint(long iIndex,DELOlpPositionRef iOrigin,OlpTransform
-                | iLocation)
-                |     Set a corner of the base polygon.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the point. 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
-                |             should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
-                |             
-                |         iLocation
-                |             The location. 
+                Sub SetBasePoint(long iIndex,DELOlpPositionRef iOrigin,OlpTransform
+                iLocation)
+                    Set a corner of the base polygon.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the point. 
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            For tool volumes, this should be delOlpMount, for Cartesian Safety Zones it
+                            should be one of delOlpWorld, delOlpStation, or delOlpRailOrigin
+                            
+                        iLocation
+                            The location. 
 
         :param int i_index:
         :param int i_origin:

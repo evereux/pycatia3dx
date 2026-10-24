@@ -18,14 +18,14 @@ class SimBehaviors(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimBehaviors
-                | 
-                | Represents the collection of simulation behaviors.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimBehaviors
+                
+                Represents the collection of simulation behaviors.
     
     """
 
@@ -39,16 +39,16 @@ class SimBehaviors(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new behavior and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of behavior to create. 
-                | 
-                |     Returns:
-                |         The created behavior
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a new behavior and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType
+                            The type of behavior to create. 
+                
+                    Returns:
+                        The created behavior
 
         :param str i_type:
         :return: AnyObject
@@ -60,22 +60,22 @@ class SimBehaviors(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a behavior using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the behavior to retrieve from the
-                |             collection of properties.
-                |             As a numeric, this index is the rank of the behavior in the
-                |             collection. The index of the first behavior in the collection is 1, and the
-                |             index of the last behavior is Count.
-                |             As a string, it is the name you assigned to the behavior using the
-                |             Name oject property. 
-                | 
-                |     Returns:
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a behavior using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the behavior to retrieve from the
+                            collection of properties.
+                            As a numeric, this index is the rank of the behavior in the
+                            collection. The index of the first behavior in the collection is 1, and the
+                            index of the last behavior is Count.
+                            As a string, it is the name you assigned to the behavior using the
+                            Name oject property. 
+                
+                    Returns:
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -87,20 +87,20 @@ class SimBehaviors(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a behavior using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the behavior to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the behavior in the
-                |             collection. The index of the first behavior in the collection is 1, and the
-                |             index of the last behavior is Count.
-                |             As a string, it is the name you assigned to the behavior using the
-                |             Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a behavior using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the behavior to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the behavior in the
+                            collection. The index of the first behavior in the collection is 1, and the
+                            index of the last behavior is Count.
+                            As a string, it is the name you assigned to the behavior using the
+                            Name object property.
 
         :param CATVariant i_index:
         :return: None

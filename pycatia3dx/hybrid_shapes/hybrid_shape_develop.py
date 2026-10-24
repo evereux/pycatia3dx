@@ -20,34 +20,34 @@ class HybridShapeDevelop(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeDevelop
-                | 
-                | Represents the hybrid shape develop feature object.
-                | Role: To access the data of the hybrid shape develop feature object. This data
-                | includes:
-                | 
-                |     The developing mode
-                |     The positining mode used for the 2D wire
-                |     The 2D wire to be developed
-                |     The positioning transformation
-                |     The support revolution surface on which the development is
-                |     operated
-                |     The point designated as the origin of the planar 2D wire
-                |     The direction corresponding to the first axis of the planar axis system
-                |     related to the planar 2D wire
-                |     The development origin on the support surface
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeDevelop
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeDevelop
+                
+                Represents the hybrid shape develop feature object.
+                Role: To access the data of the hybrid shape develop feature object. This data
+                includes:
+                
+                    The developing mode
+                    The positining mode used for the 2D wire
+                    The 2D wire to be developed
+                    The positioning transformation
+                    The support revolution surface on which the development is
+                    operated
+                    The point designated as the origin of the planar 2D wire
+                    The direction corresponding to the first axis of the planar axis system
+                    related to the planar 2D wire
+                    The development origin on the support surface
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeDevelop
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -61,14 +61,14 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Mode() As long
-                |     Returns or sets the developing mode.
-                |     Legal values:
-                | 
-                |     CATGSMDevelopMethod_DevDev
-                |         Develop / develop algorithm
-                |     CATGSMDevelopMethod_DevProj
-                |         Develop / project algorithm
+                Property Mode() As long
+                    Returns or sets the developing mode.
+                    Legal values:
+                
+                    CATGSMDevelopMethod_DevDev
+                        Develop / develop algorithm
+                    CATGSMDevelopMethod_DevProj
+                        Develop / project algorithm
 
         :return: int
         """
@@ -89,15 +89,15 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ModePos() As long
-                |     Returns or sets the positioning mode used for the 2D wire.
-                |     Legal values:
-                | 
-                |     CATGSMPositionMode_NoneOrPositioned
-                |         No positioning 
-                |     CATGSMPositionMode_ExplicitSweep
-                |     CATGSMPositionMode_Develop
-                |         The 2D wire is to be moved from its initial position
+                Property ModePos() As long
+                    Returns or sets the positioning mode used for the 2D wire.
+                    Legal values:
+                
+                    CATGSMPositionMode_NoneOrPositioned
+                        No positioning 
+                    CATGSMPositionMode_ExplicitSweep
+                    CATGSMPositionMode_Develop
+                        The 2D wire is to be moved from its initial position
 
         :return: int
         """
@@ -118,11 +118,11 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PlaneAxisDirection() As Reference
-                |     Returns or sets the direction corresponding to the first axis of the planar
-                |     axis system related to the planar 2D wire.
-                |     Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
-                |     BiDimFeatEdge or RectilinearMonoDimFeatEdge.
+                Property PlaneAxisDirection() As Reference
+                    Returns or sets the direction corresponding to the first axis of the planar
+                    axis system related to the planar 2D wire.
+                    Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
+                    BiDimFeatEdge or RectilinearMonoDimFeatEdge.
 
         :return: Reference
         """
@@ -143,10 +143,10 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PlaneAxisOrigin() As Reference
-                |     Returns or sets the point designated as the origin of the planar 2D
-                |     wire.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
+                Property PlaneAxisOrigin() As Reference
+                    Returns or sets the point designated as the origin of the planar 2D
+                    wire.
+                    Sub-element(s) supported (see Boundary object): Vertex.
 
         :return: Reference
         """
@@ -167,10 +167,10 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PointOnSupport() As Reference
-                |     Returns or sets the development origin on the support
-                |     surface.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
+                Property PointOnSupport() As Reference
+                    Returns or sets the development origin on the support
+                    surface.
+                    Sub-element(s) supported (see Boundary object): Vertex.
 
         :return: Reference
         """
@@ -191,10 +191,10 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PositionedWire() As Reference
-                |     Returns or sets the positioning transformation.
-                |     Role: To retrieve or set the positioning transformation associated to the
-                |     develop feature and which result corresponds to the positioned 2D wire.
+                Property PositionedWire() As Reference
+                    Returns or sets the positioning transformation.
+                    Role: To retrieve or set the positioning transformation associated to the
+                    develop feature and which result corresponds to the positioned 2D wire.
 
         :return: Reference
         """
@@ -215,10 +215,10 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the support revolution surface on which the development is
-                |     operated.
-                |     Sub-element(s) supported (see Boundary object): Face.
+                Property Support() As Reference
+                    Returns or sets the support revolution surface on which the development is
+                    operated.
+                    Sub-element(s) supported (see Boundary object): Face.
 
         :return: Reference
         """
@@ -239,10 +239,10 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property WireToDevelop() As Reference
-                |     Returns or sets the 2D wire to be developed.
-                |     Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
-                |     BiDimFeatEdge.
+                Property WireToDevelop() As Reference
+                    Returns or sets the 2D wire to be developed.
+                    Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
+                    BiDimFeatEdge.
 
         :return: Reference
         """
@@ -262,13 +262,13 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPlaneAxisAngle() As Angle
-                |     Retrieves the rotation angle.
-                |     Role: The rotation angle is expressed in the planar coordinate system
-                |     related to the 2D planar wire from its default position.
-                | 
-                |     Returns:
-                |         The rotation value
+                Func GetPlaneAxisAngle() As Angle
+                    Retrieves the rotation angle.
+                    Role: The rotation angle is expressed in the planar coordinate system
+                    related to the 2D planar wire from its default position.
+                
+                    Returns:
+                        The rotation value
 
         :return: Angle
         """
@@ -279,21 +279,21 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPlaneAxisCoord(long iCoorIdx) As Length
-                |     Retrieves the translation coordinates.
-                |     Role: The translation coordinates are expressed with respect to the planar
-                |     coordinate system related to the 2D planar wire from its default position.
-                |     GetPlaneAxisCoord retrieves one coordinate at a time.
-                | 
-                |     Parameters:
-                | 
-                |         iCoorIdx
-                |             The coordinate index
-                |             Legal values
-                |             : 1 for X and 2 for Y 
-                | 
-                |     Returns:
-                |         The coordinate value
+                Func GetPlaneAxisCoord(long iCoorIdx) As Length
+                    Retrieves the translation coordinates.
+                    Role: The translation coordinates are expressed with respect to the planar
+                    coordinate system related to the 2D planar wire from its default position.
+                    GetPlaneAxisCoord retrieves one coordinate at a time.
+                
+                    Parameters:
+                
+                        iCoorIdx
+                            The coordinate index
+                            Legal values
+                            : 1 for X and 2 for Y 
+                
+                    Returns:
+                        The coordinate value
 
         :param int i_coor_idx:
         :return: Length
@@ -305,27 +305,27 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetPlaneAxisSwapAxes(long ii) As long
-                |     Retrieves the inversion axes from their previous
-                |     definitions.
-                | 
-                |     Parameters:
-                | 
-                |         iI
-                |             == NOT USED YET == Must always be set to 0 
-                | 
-                |     Returns:
-                |         The inversion value
-                |         Legal values:
-                | 
-                |         CATGSMAxisInversionMode_None
-                |             No axis inverted 
-                |         CATGSMAxisInversionMode_X
-                |             Only the X axis is inverted
-                |         CATGSMAxisInversionMode_Y
-                |             Only the Y axis is inverted
-                |         CATGSMAxisInversionMode_Both
-                |             Both axes are inverted
+                Func GetPlaneAxisSwapAxes(long ii) As long
+                    Retrieves the inversion axes from their previous
+                    definitions.
+                
+                    Parameters:
+                
+                        iI
+                            == NOT USED YET == Must always be set to 0 
+                
+                    Returns:
+                        The inversion value
+                        Legal values:
+                
+                        CATGSMAxisInversionMode_None
+                            No axis inverted 
+                        CATGSMAxisInversionMode_X
+                            Only the X axis is inverted
+                        CATGSMAxisInversionMode_Y
+                            Only the Y axis is inverted
+                        CATGSMAxisInversionMode_Both
+                            Both axes are inverted
 
         :param int ii:
         :return: int
@@ -337,15 +337,15 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPlaneAxisAngle(double iAngle)
-                |     Sets the rotation angle.
-                |     Role: The rotation angle is expressed in the planar coordinate system
-                |     related to the 2D planar wire from its default position.
-                | 
-                |     Parameters:
-                | 
-                |         iAngle
-                |             The rotation angle value.
+                Sub SetPlaneAxisAngle(double iAngle)
+                    Sets the rotation angle.
+                    Role: The rotation angle is expressed in the planar coordinate system
+                    related to the 2D planar wire from its default position.
+                
+                    Parameters:
+                
+                        iAngle
+                            The rotation angle value.
 
         :param float i_angle:
         :return: None
@@ -357,20 +357,20 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPlaneAxisCoord(long iCoorIdx,double iCoordValue)
-                |     Sets the translation coordinates.
-                |     Role: The translation coordinates are expressed with respect to the planar
-                |     coordinate system related to the 2D planar wire from its default position.
-                |     SetPlaneAxisCoord sets one coordinate at a time.
-                | 
-                |     Parameters:
-                | 
-                |         iCoorIdx
-                |             The coordinate index
-                |             Legal values
-                |             : 1 for X and 2 for Y 
-                |         iCoordValue
-                |             The coordinate value
+                Sub SetPlaneAxisCoord(long iCoorIdx,double iCoordValue)
+                    Sets the translation coordinates.
+                    Role: The translation coordinates are expressed with respect to the planar
+                    coordinate system related to the 2D planar wire from its default position.
+                    SetPlaneAxisCoord sets one coordinate at a time.
+                
+                    Parameters:
+                
+                        iCoorIdx
+                            The coordinate index
+                            Legal values
+                            : 1 for X and 2 for Y 
+                        iCoordValue
+                            The coordinate value
 
         :param int i_coor_idx:
         :param float i_coord_value:
@@ -383,25 +383,25 @@ class HybridShapeDevelop(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPlaneAxisSwapAxes(long iIdx,long iInversionValue)
-                |     Sets the inversion axes from their previous definitions.
-                | 
-                |     Parameters:
-                | 
-                |         iIdx
-                |             == NOT USED YET == Must always be set to 0 
-                |         iInversionValue
-                |             The inversion value
-                |             Legal values:
-                | 
-                |             CATGSMAxisInversionMode_None
-                |                 No axis inverted 
-                |             CATGSMAxisInversionMode_X
-                |                 Only the X axis is inverted
-                |             CATGSMAxisInversionMode_Y
-                |                 Only the Y axis is inverted
-                |             CATGSMAxisInversionMode_Both
-                |                 Both axes are inverted
+                Sub SetPlaneAxisSwapAxes(long iIdx,long iInversionValue)
+                    Sets the inversion axes from their previous definitions.
+                
+                    Parameters:
+                
+                        iIdx
+                            == NOT USED YET == Must always be set to 0 
+                        iInversionValue
+                            The inversion value
+                            Legal values:
+                
+                            CATGSMAxisInversionMode_None
+                                No axis inverted 
+                            CATGSMAxisInversionMode_X
+                                Only the X axis is inverted
+                            CATGSMAxisInversionMode_Y
+                                Only the Y axis is inverted
+                            CATGSMAxisInversionMode_Both
+                                Both axes are inverted
 
         :param int i_idx:
         :param int i_inversion_value:

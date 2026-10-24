@@ -19,33 +19,33 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircleCenterAxis
-                | 
-                | Represents the hybrid shape circle object defined using a point and
-                | axis/line.
-                | Role: To access the data of the hybrid shape circle center axis
-                | object.
-                | 
-                | This data includes:
-                | 
-                |     Point
-                |     Axis/Line
-                |     Value of radius/diameter
-                |     Diameter Mode
-                |     Projection Mode
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircleCenterAxis
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewCircleCenterAxis
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircleCenterAxis
+                
+                Represents the hybrid shape circle object defined using a point and
+                axis/line.
+                Role: To access the data of the hybrid shape circle center axis
+                object.
+                
+                This data includes:
+                
+                    Point
+                    Axis/Line
+                    Value of radius/diameter
+                    Diameter Mode
+                    Projection Mode
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircleCenterAxis
+                object.
+                
+                See also:
+                    HybridShapeFactory.AddNewCircleCenterAxis
     
     """
 
@@ -59,16 +59,16 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Axis() As Reference
-                |     Returns or sets the Axis of the circle.
-                | 
-                |     Example:
-                |         This example retrieves in CircleAxis the Axis of plane in which circle
-                |         is lying from HybShpCircle hybrid shape circle center axis
-                |         feature
-                | 
-                |          Dim CircleAxis As Reference 
-                |          Set CircleAxis = HybShpCircle.Axis
+                Property Axis() As Reference
+                    Returns or sets the Axis of the circle.
+                
+                    Example:
+                        This example retrieves in CircleAxis the Axis of plane in which circle
+                        is lying from HybShpCircle hybrid shape circle center axis
+                        feature
+                
+                         Dim CircleAxis As Reference 
+                         Set CircleAxis = HybShpCircle.Axis
 
         :return: Reference
         """
@@ -89,16 +89,16 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Diameter() As Length (Read Only)
-                |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
-                |     only if DiameterMode is set to True. 
-                | 
-                | Example:
-                |     This example retrieves in HybShpCircleDiameter the diameter of the
-                |     HybShpCircle hybrid shape circle center axis feature
-                | 
-                |      Dim HybShpCircleDiameter As Length
-                |      HybShpCircleDiameter = HybShpCircle.Diameter
+                Property Diameter() As Length (Read Only)
+                    Returns the circle diameter. It is expressed as a Length literal. Succeeds
+                    only if DiameterMode is set to True. 
+                
+                Example:
+                    This example retrieves in HybShpCircleDiameter the diameter of the
+                    HybShpCircle hybrid shape circle center axis feature
+                
+                     Dim HybShpCircleDiameter As Length
+                     HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
         """
@@ -111,20 +111,20 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property DiameterMode() As boolean
-                |     Returns or sets the DiameterMode.
-                |     Legal values: True implies diameter False implies radius (default). When
-                |     DiameterMode is changed, Radius/Diameter value, which is stored will not be
-                |     modified.
-                | 
-                |     Example:
-                | 
-                |           This example sets that the DiameterMode of
-                |           the HybShpCircle hybrid shape circle center axis
-                |           feature
-                |           
-                | 
-                |           HybShpCircle.DiameterMode = True
+                Property DiameterMode() As boolean
+                    Returns or sets the DiameterMode.
+                    Legal values: True implies diameter False implies radius (default). When
+                    DiameterMode is changed, Radius/Diameter value, which is stored will not be
+                    modified.
+                
+                    Example:
+                
+                          This example sets that the DiameterMode of
+                          the HybShpCircle hybrid shape circle center axis
+                          feature
+                          
+                
+                          HybShpCircle.DiameterMode = True
 
         :return: bool
         """
@@ -145,16 +145,16 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Point() As Reference
-                |     Returns or sets the Point of the circle.
-                | 
-                |     Example:
-                |         This example retrieves in CirclePoint the point used for center
-                |         computation from HybShpCircle hybrid shape circle center axis
-                |         feature
-                | 
-                |          Dim CirclePoint As Reference 
-                |          Set CirclePoint = HybShpCircle.Point
+                Property Point() As Reference
+                    Returns or sets the Point of the circle.
+                
+                    Example:
+                        This example retrieves in CirclePoint the point used for center
+                        computation from HybShpCircle hybrid shape circle center axis
+                        feature
+                
+                         Dim CirclePoint As Reference 
+                         Set CirclePoint = HybShpCircle.Point
 
         :return: Reference
         """
@@ -175,20 +175,20 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property ProjectionMode() As boolean
-                |     Returns or sets the ProjectionMode.
-                |     Legal values: True (default) implies point will be projected on to
-                |     axis/line False implies that point will be center of the
-                |     circle.
-                | 
-                |     Example:
-                | 
-                |           This example sets that the ProjectionMode of
-                |           the HybShpCircle hybrid shape circle center axis
-                |           feature
-                |           
-                | 
-                |           HybShpCircle.ProjectionMode = True
+                Property ProjectionMode() As boolean
+                    Returns or sets the ProjectionMode.
+                    Legal values: True (default) implies point will be projected on to
+                    axis/line False implies that point will be center of the
+                    circle.
+                
+                    Example:
+                
+                          This example sets that the ProjectionMode of
+                          the HybShpCircle hybrid shape circle center axis
+                          feature
+                          
+                
+                          HybShpCircle.ProjectionMode = True
 
         :return: bool
         """
@@ -209,15 +209,15 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Radius() As Length (Read Only)
-                |     Returns the circle radius. It is expressed as a Length literal. Succeeds
-                |     only if DiameterMode is set to False. 
-                | Example:
-                |     This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
-                |     hybrid shape circle center axis feature
-                | 
-                |      Dim HybShpCircleRadius As Length
-                |      HybShpCircleRadius = HybShpCircle.Radius
+                Property Radius() As Length (Read Only)
+                    Returns the circle radius. It is expressed as a Length literal. Succeeds
+                    only if DiameterMode is set to False. 
+                Example:
+                    This example retrieves in HybShpCircleRadius the radius of the HybShpCircle
+                    hybrid shape circle center axis feature
+                
+                     Dim HybShpCircleRadius As Length
+                     HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
         """

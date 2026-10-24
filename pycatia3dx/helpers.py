@@ -1,6 +1,5 @@
 from typing import TYPE_CHECKING, Any
 
-from pycatia3dx.del_resource_builder.rsc_applicative_profiles_group import RscApplicativeProfilesGroup
 from pycatia3dx.types.bodies import body_types
 from pycatia3dx.types.hybrid_shapes import hybrid_shape_types
 from pycatia3dx.types.parameters_and_relations import parameter_and_relation_types

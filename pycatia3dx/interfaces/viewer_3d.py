@@ -19,22 +19,22 @@ class Viewer3D(Viewer):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Viewer
-                |                         Viewer3D
-                | 
-                | Represents a 3D viewer.
-                | The 3D viewer aggregates a 3D viewpoint to display a 3D scene. In addition, the
-                | Viewer3D object manages the lighting, the depth effects, the navigation style,
-                | and the rendering mode.
-                | 
-                | See also:
-                |     Viewpoint3D, CatLightingMode, CatNavigationStyle,
-                |     CatRenderingMode
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Viewer
+                                        Viewer3D
+                
+                Represents a 3D viewer.
+                The 3D viewer aggregates a 3D viewpoint to display a 3D scene. In addition, the
+                Viewer3D object manages the lighting, the depth effects, the navigation style,
+                and the rendering mode.
+                
+                See also:
+                    Viewpoint3D, CatLightingMode, CatNavigationStyle,
+                    CatRenderingMode
     
     """
 
@@ -48,14 +48,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ClippingMode() As CatClippingMode
-                |     Returns or sets the clipping mode.
-                | 
-                |     Example:
-                |         This example sets the depth effect for the My3DViewer 3D viewer to
-                |         catClippingModeNearAndFar.
-                | 
-                |          My3DViewer.ClippingMode = catClippingModeNearAndFar
+                Property ClippingMode() As CatClippingMode
+                    Returns or sets the clipping mode.
+                
+                    Example:
+                        This example sets the depth effect for the My3DViewer 3D viewer to
+                        catClippingModeNearAndFar.
+                
+                         My3DViewer.ClippingMode = catClippingModeNearAndFar
 
         :return: CatClippingMode
         """
@@ -76,18 +76,18 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property FarLimit() As double
-                |     Returns or sets the far limit for the far clipping plane. The distance is
-                |     measured from the eye location, that is the origin of the viewpoint, and is
-                |     expressed in model unit. The far clipping plane is available with the
-                |     catClippingModeFar and catClippingModeNearAndFar values of the CatClippingMode
-                |     enumeration only.
-                | 
-                |     Example:
-                |         This example sets the far limit for the far clipping plane of the
-                |         My3DViewer 3D viewer to 150 model units.
-                | 
-                |          My3DViewer.FarLimit = 150
+                Property FarLimit() As double
+                    Returns or sets the far limit for the far clipping plane. The distance is
+                    measured from the eye location, that is the origin of the viewpoint, and is
+                    expressed in model unit. The far clipping plane is available with the
+                    catClippingModeFar and catClippingModeNearAndFar values of the CatClippingMode
+                    enumeration only.
+                
+                    Example:
+                        This example sets the far limit for the far clipping plane of the
+                        My3DViewer 3D viewer to 150 model units.
+                
+                         My3DViewer.FarLimit = 150
 
         :return: float
         """
@@ -108,15 +108,15 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Foggy() As boolean
-                |     Returns or sets the fog mode. Useful when clipping is
-                |     enabled.
-                | 
-                |     Example:
-                |         This example sets the fog on for the My3DViewer 3D
-                |         viewer:
-                | 
-                |          My3DViewer.Foggy = True
+                Property Foggy() As boolean
+                    Returns or sets the fog mode. Useful when clipping is
+                    enabled.
+                
+                    Example:
+                        This example sets the fog on for the My3DViewer 3D
+                        viewer:
+                
+                         My3DViewer.Foggy = True
 
         :return: bool
         """
@@ -137,14 +137,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Ground() As boolean
-                |     Returns or sets the ground displaying mode.
-                | 
-                |     Example:
-                |         This example makes the ground visible for the My3DViewer 3D
-                |         viewer:
-                | 
-                |          My3DViewer.Ground = True
+                Property Ground() As boolean
+                    Returns or sets the ground displaying mode.
+                
+                    Example:
+                        This example makes the ground visible for the My3DViewer 3D
+                        viewer:
+                
+                         My3DViewer.Ground = True
 
         :return: bool
         """
@@ -165,14 +165,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LightSources() As LightSources (Read Only)
-                |     Returns the viewer's light source collection.
-                | 
-                |     Example:
-                |         This example retrieves the light source collection for the My3DViewer
-                |         3D viewer in VPLightSources.
-                | 
-                |          Set VPLightSources = My3DViewer.LightSources
+                Property LightSources() As LightSources (Read Only)
+                    Returns the viewer's light source collection.
+                
+                    Example:
+                        This example retrieves the light source collection for the My3DViewer
+                        3D viewer in VPLightSources.
+                
+                         Set VPLightSources = My3DViewer.LightSources
 
         :return: LightSources
         """
@@ -185,15 +185,15 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LightingIntensity() As double
-                |     Returns or sets the lighting intensity. The lighting intensity ranges
-                |     between 0 and 1.
-                | 
-                |     Example:
-                |         This example sets the lighting intensity for the My3DViewer 3D viewer
-                |         to 0.35.
-                | 
-                |          My3DViewer.LightingIntensity = 0.35
+                Property LightingIntensity() As double
+                    Returns or sets the lighting intensity. The lighting intensity ranges
+                    between 0 and 1.
+                
+                    Example:
+                        This example sets the lighting intensity for the My3DViewer 3D viewer
+                        to 0.35.
+                
+                         My3DViewer.LightingIntensity = 0.35
 
         :return: float
         """
@@ -214,14 +214,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property LightingMode() As CatLightingMode
-                |     Returns or sets the lighting mode.
-                | 
-                |     Example:
-                |         This example sets the lighting mode for the My3DViewer 3D viewer to
-                |         catInfiniteLightSource.
-                | 
-                |          My3DViewer.LightingMode = catInfiniteLightSource
+                Property LightingMode() As CatLightingMode
+                    Returns or sets the lighting mode.
+                
+                    Example:
+                        This example sets the lighting mode for the My3DViewer 3D viewer to
+                        catInfiniteLightSource.
+                
+                         My3DViewer.LightingMode = catInfiniteLightSource
 
         :return: CatLightingMode
         """
@@ -242,14 +242,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property NavigationStyle() As CatNavigationStyle
-                |     Returns or sets the navigation style.
-                | 
-                |     Example:
-                |         This example sets the navigation style for the My3DViewer 3D viewer to
-                |         catNavigationWalk.
-                | 
-                |          My3DViewer.NavigationStyle = catNavigationWalk
+                Property NavigationStyle() As CatNavigationStyle
+                    Returns or sets the navigation style.
+                
+                    Example:
+                        This example sets the navigation style for the My3DViewer 3D viewer to
+                        catNavigationWalk.
+                
+                         My3DViewer.NavigationStyle = catNavigationWalk
 
         :return: CatNavigationStyle
         """
@@ -270,18 +270,18 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property NearLimit() As double
-                |     Returns or sets the near limit for the near clipping plane. The distance is
-                |     measured from the eye location, that is the origin of the viewpoint, and is
-                |     expressed in model unit. The near clipping plane is available with the
-                |     catClippingModeNear and catClippingModeNearAndFar values of the CatClippingMode
-                |     enumeration only.
-                | 
-                |     Example:
-                |         This example sets the near limit for the near clipping plane of the
-                |         My3DViewer 3D viewer to 75 model units.
-                | 
-                |          My3DViewer.NearLimit = 75
+                Property NearLimit() As double
+                    Returns or sets the near limit for the near clipping plane. The distance is
+                    measured from the eye location, that is the origin of the viewpoint, and is
+                    expressed in model unit. The near clipping plane is available with the
+                    catClippingModeNear and catClippingModeNearAndFar values of the CatClippingMode
+                    enumeration only.
+                
+                    Example:
+                        This example sets the near limit for the near clipping plane of the
+                        My3DViewer 3D viewer to 75 model units.
+                
+                         My3DViewer.NearLimit = 75
 
         :return: float
         """
@@ -302,14 +302,14 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property RenderingMode() As CatRenderingMode
-                |     Returns or sets the rendering mode.
-                | 
-                |     Example:
-                |         This example sets the rendering mode for the My3DViewer 3D viewer to
-                |         catRenderShadingWithEdges.
-                | 
-                |          My3DViewer.RenderingMode = catRenderShadingWithEdges
+                Property RenderingMode() As CatRenderingMode
+                    Returns or sets the rendering mode.
+                
+                    Example:
+                        This example sets the rendering mode for the My3DViewer 3D viewer to
+                        catRenderShadingWithEdges.
+                
+                         My3DViewer.RenderingMode = catRenderShadingWithEdges
 
         :return: CatRenderingMode
         """
@@ -330,15 +330,15 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Viewpoint3D() As Viewpoint3D
-                |     Returns or sets the 3D viewpoint of a 3D viewer.
-                | 
-                |     Example:
-                |         This example retrieves the Nice3DViewpoint 3D viewpoint from the
-                |         My3DViewer 3D viewer.
-                | 
-                |          Dim Nice3DViewpoint As Viewpoint3D
-                |          Set Nice3DViewpoint = My3DViewer.Viewpoint3D
+                Property Viewpoint3D() As Viewpoint3D
+                    Returns or sets the 3D viewpoint of a 3D viewer.
+                
+                    Example:
+                        This example retrieves the Nice3DViewpoint 3D viewpoint from the
+                        My3DViewer 3D viewer.
+                
+                         Dim Nice3DViewpoint As Viewpoint3D
+                         Set Nice3DViewpoint = My3DViewer.Viewpoint3D
 
         :return: Viewpoint3D
         """
@@ -358,17 +358,17 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub Rotate(CATSafeArrayVariant iAxis,double iAngle)
-                |     Applies a rotation. The rotation of iAngle degrees is applied to the
-                |     viewer's contents around the axis iAxis (an array of 3 Variants), the invariant
-                |     point being the target (ie: Origin +
-                |     FocusDistance*SightDirection).
+                Sub Rotate(CATSafeArrayVariant iAxis,double iAngle)
+                    Applies a rotation. The rotation of iAngle degrees is applied to the
+                    viewer's contents around the axis iAxis (an array of 3 Variants), the invariant
+                    point being the target (ie: Origin +
+                    FocusDistance*SightDirection).
                 |
-                |     Example:
-                |         This applies a rotation of 10 degrees around the Up Direction to the
-                |         contents of the MyViewer3D viewer.
+                    Example:
+                        This applies a rotation of 10 degrees around the Up Direction to the
+                        contents of the MyViewer3D viewer.
                 |
-                |          MyViewer3D.Rotate MyViewer3D.UpDirection, 10
+                         MyViewer3D.Rotate MyViewer3D.UpDirection, 10
 
         :param tuple i_axis:
         :param float i_angle:
@@ -397,15 +397,15 @@ class Viewer3D(Viewer):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub Translate(CATSafeArrayVariant iVector)
-                |     Applies a translation. The translation vector is iVector (an array of 3
-                |     Variants).
+                Sub Translate(CATSafeArrayVariant iVector)
+                    Applies a translation. The translation vector is iVector (an array of 3
+                    Variants).
                 |
-                |     Example:
-                |         This applies a translation along (1, 1, 1) to the contents of the
-                |         MyViewer3D viewer.
+                    Example:
+                        This applies a translation along (1, 1, 1) to the contents of the
+                        MyViewer3D viewer.
                 |
-                |          MyViewer3D.Translate Array(1, 1, 1)
+                         MyViewer3D.Translate Array(1, 1, 1)
 
         :param tuple i_vector:
         :return: None

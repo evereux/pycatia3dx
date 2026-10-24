@@ -19,51 +19,51 @@ class SimProofStress(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimProofStress
-                | 
-                | Represents the Proof Stress object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimProofStress as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyProofStress As SimProofStress
-                |      Set MyProofStress = MyMaterialOptions.Add("SimProofStress")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimProofStress named
-                |     "Proof Stress.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyProofStress As SimProofStress
-                |      Set MyProofStress = MyMaterialOptions.Item("Proof Stress.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimProofStress as following:
-                | 
-                |      ...
-                |      myProofStress = myMaterialOptions.Add("SimProofStress")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimProofStress named "Proof Stress.1" as following:
-                | 
-                |      ...
-                |      myProofStress = myMaterialOptions.Item("Proof Stress.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimProofStress
+                
+                Represents the Proof Stress object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimProofStress as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyProofStress As SimProofStress
+                     Set MyProofStress = MyMaterialOptions.Add("SimProofStress")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimProofStress named
+                    "Proof Stress.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyProofStress As SimProofStress
+                     Set MyProofStress = MyMaterialOptions.Item("Proof Stress.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimProofStress as following:
+                
+                     ...
+                     myProofStress = myMaterialOptions.Add("SimProofStress")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimProofStress named "Proof Stress.1" as following:
+                
+                     ...
+                     myProofStress = myMaterialOptions.Item("Proof Stress.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimProofStress(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -90,19 +90,19 @@ class SimProofStress(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimProofStressMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimProofStressMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

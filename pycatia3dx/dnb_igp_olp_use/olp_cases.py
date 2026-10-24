@@ -19,17 +19,17 @@ class OLPCases(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpCases
-                | 
-                | A list of case blocks for a test case instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpCases
+                
+                A list of case blocks for a test case instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,8 +42,8 @@ class OLPCases(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddNewCase() As OlpCase
-                |     Create a new case and add it to the end.
+                Func AddNewCase() As OlpCase
+                    Create a new case and add it to the end.
 
         :return: OLPCase
         """
@@ -54,17 +54,17 @@ class OLPCases(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(long iIndex) As OlpCase
-                |     Retrieve a case by its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the first case in the collection is 1, and the index
-                |             of the last parameter is Count. 
-                | 
-                |     Returns:
-                |         The case retrieved. If the index is out of bounds, the function fails.
+                Func Item(long iIndex) As OlpCase
+                    Retrieve a case by its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the first case in the collection is 1, and the index
+                            of the last parameter is Count. 
+                
+                    Returns:
+                        The case retrieved. If the index is out of bounds, the function fails.
 
         :param int i_index:
         :return: OLPCase

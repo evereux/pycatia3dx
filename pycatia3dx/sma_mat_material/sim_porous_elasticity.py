@@ -19,52 +19,52 @@ class SimPorousElasticity(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPorousElasticity
-                | 
-                | Represents the Porous Elasticity object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimPorousElasticity as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyPorousElasticity As SimPorousElasticity
-                |      Set MyPorousElasticity = MyMaterialOptions.Add("SimPorousElasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimPorousElasticity
-                |     named "Porous Elasticity.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyPorousElasticity As SimPorousElasticity
-                |      Set MyPorousElasticity = MyMaterialOptions.Item("Porous Elasticity.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimPorousElasticity as following:
-                | 
-                |      ...
-                |      myPorousElasticity = myMaterialOptions.Add("SimPorousElasticity")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimPorousElasticity named "Porous Elasticity.1" as
-                |     following:
-                | 
-                |      ...
-                |      myPorousElasticity = myMaterialOptions.Item("Porous Elasticity.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPorousElasticity
+                
+                Represents the Porous Elasticity object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimPorousElasticity as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyPorousElasticity As SimPorousElasticity
+                     Set MyPorousElasticity = MyMaterialOptions.Add("SimPorousElasticity")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimPorousElasticity
+                    named "Porous Elasticity.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyPorousElasticity As SimPorousElasticity
+                     Set MyPorousElasticity = MyMaterialOptions.Item("Porous Elasticity.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimPorousElasticity as following:
+                
+                     ...
+                     myPorousElasticity = myMaterialOptions.Add("SimPorousElasticity")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimPorousElasticity named "Porous Elasticity.1" as
+                    following:
+                
+                     ...
+                     myPorousElasticity = myMaterialOptions.Item("Porous Elasticity.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -78,8 +78,8 @@ class SimPorousElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -92,11 +92,11 @@ class SimPorousElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShearType() As SimPorousElasticityShearType
-                |     Returns or sets the ShearType. The deviatoric elastic behavior of a porous
-                |     material can be defined in two ways. Defines the deviatoric behavior with a
-                |     constant shear modulus G for SHEAR=G Defines the instantaneous shear modulus
-                |     from the bulk modulus and Poisson's ratio for SHEAR=POISSON
+                Property ShearType() As SimPorousElasticityShearType
+                    Returns or sets the ShearType. The deviatoric elastic behavior of a porous
+                    material can be defined in two ways. Defines the deviatoric behavior with a
+                    constant shear modulus G for SHEAR=G Defines the instantaneous shear modulus
+                    from the bulk modulus and Poisson's ratio for SHEAR=POISSON
 
         :return: int
         """
@@ -116,19 +116,19 @@ class SimPorousElasticity(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimPorousElasticityMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimPorousElasticityMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param SimPorousElasticityMaterialTableColumn i_material_table_column:
         :return: SimTableColumn

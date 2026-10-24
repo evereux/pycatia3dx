@@ -19,18 +19,18 @@ class OLPFor(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpFor
-                | 
-                | A for loop instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpFor
+                
+                A for loop instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -44,8 +44,8 @@ class OLPFor(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CountUp() As boolean
-                |     Indicates if the variable is incremented or decremented each iteration.
+                Property CountUp() As boolean
+                    Indicates if the variable is incremented or decremented each iteration.
 
         :return: bool
         """
@@ -66,16 +66,16 @@ class OLPFor(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndExpr() As OlpAstBranch
-                |     The final value of the loop variable.
-                |     Looping is terminated when the loop variable is equal to this
-                |     expression.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation.
+                Property EndExpr() As OlpAstBranch
+                    The final value of the loop variable.
+                    Looping is terminated when the loop variable is equal to this
+                    expression.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation.
 
         :return: OLPAstBranch
         """
@@ -96,8 +96,8 @@ class OLPFor(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     The list of instructions in the loop.
+                Property Instructions() As OlpInstructions (Read Only)
+                    The list of instructions in the loop.
 
         :return: OLPInstructions
         """
@@ -110,13 +110,13 @@ class OLPFor(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoopVariable() As OlpVariable (Read Only)
-                |     The counter that is incremented or decremented in the
-                |     loop.
-                |     Inside the loop instructions, it cannot be modified. The variable used
-                |     cannot be set, the name can be changed by retrieving the loop variable and then
-                |     setting the Name property. On the loop variable the OlpVariable.Scope is the
-                |     OlpInstructions in this for loop and OlpVariable.DefaultValue cannot be used.
+                Property LoopVariable() As OlpVariable (Read Only)
+                    The counter that is incremented or decremented in the
+                    loop.
+                    Inside the loop instructions, it cannot be modified. The variable used
+                    cannot be set, the name can be changed by retrieving the loop variable and then
+                    setting the Name property. On the loop variable the OlpVariable.Scope is the
+                    OlpInstructions in this for loop and OlpVariable.DefaultValue cannot be used.
 
         :return: OLPVariable
         """
@@ -129,16 +129,16 @@ class OLPFor(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartExpr() As OlpAstBranch
-                |     The initial value of the loop variable.
-                |     When looping starts, the loop variable is assigned this
-                |     value.
-                |     When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation. 
+                Property StartExpr() As OlpAstBranch
+                    The initial value of the loop variable.
+                    When looping starts, the loop variable is assigned this
+                    value.
+                    When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation. 
 
         :return: OLPAstBranch
         """

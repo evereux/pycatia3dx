@@ -16,19 +16,19 @@ class OLPEventVisibility(OLPChoreographyEvent):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpChoreographyEvent
-                |                         OlpEventVisibility
-                | 
-                | Represents a visibility (hide/show) choreography event added to a motion
-                | instruction in a task.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpChoreographyEvent
+                                        OlpEventVisibility
+                
+                Represents a visibility (hide/show) choreography event added to a motion
+                instruction in a task.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,8 +42,8 @@ class OLPEventVisibility(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Duration() As double
-                |     Get/Set the duration of the event. Default value is 0 (infinite)
+                Property Duration() As double
+                    Get/Set the duration of the event. Default value is 0 (infinite)
 
         :return: float
         """
@@ -64,9 +64,9 @@ class OLPEventVisibility(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Show() As boolean
-                |     Get/Set whether this event hides or shows the product(s). If TRUE they are
-                |     shown, if FALSE, they are hidden.
+                Property Show() As boolean
+                    Get/Set whether this event hides or shows the product(s). If TRUE they are
+                    shown, if FALSE, they are hidden.
 
         :return: bool
         """
@@ -86,17 +86,17 @@ class OLPEventVisibility(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddProductByName(CATBSTR iName)
-                |     Adds a product to the Visibility activity by name.
-                |     The current editor is searched for product that contain this name. If the
-                |     name is not found a warning is posted, but the function succeeds. If multiple
-                |     matches are found, they are all added, but a warning is
-                |     issued.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the product to hide or show.
+                Sub AddProductByName(CATBSTR iName)
+                    Adds a product to the Visibility activity by name.
+                    The current editor is searched for product that contain this name. If the
+                    name is not found a warning is posted, but the function succeeds. If multiple
+                    matches are found, they are all added, but a warning is
+                    issued.
+                
+                    Parameters:
+                
+                        iName
+                            The name of the product to hide or show.
 
         :param str i_name:
         :return: None
@@ -108,8 +108,8 @@ class OLPEventVisibility(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProductNames() As CATSafeArrayVariant
-                |     Get all the product names being hidden or shown.
+                Func GetProductNames() As CATSafeArrayVariant
+                    Get all the product names being hidden or shown.
 
         :return: tuple
         """
@@ -120,8 +120,8 @@ class OLPEventVisibility(OLPChoreographyEvent):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveProductByName(CATBSTR iName)
-                |     Remove a product from the list.
+                Sub RemoveProductByName(CATBSTR iName)
+                    Remove a product from the list.
 
         :param str i_name:
         :return: None

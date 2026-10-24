@@ -22,19 +22,19 @@ class OLPDrillRivetCycle(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpDrillRivetCycle
-                | 
-                | Interface representing a cycle within a
-                | OlpDrillRivetProfile This interface can only be used by a translator within the
-                | Robotics Off-line Programming (OLP) Download or Upload command. A cycle in
-                | itself does not exist, as it is part of its containing
-                | DELMIAOlpDrillRivetProfile Use this interface to modify data related to a cycle
-                | within a profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpDrillRivetCycle
+                
+                Interface representing a cycle within a
+                OlpDrillRivetProfile This interface can only be used by a translator within the
+                Robotics Off-line Programming (OLP) Download or Upload command. A cycle in
+                itself does not exist, as it is part of its containing
+                DELMIAOlpDrillRivetProfile Use this interface to modify data related to a cycle
+                within a profile.
     
     """
 
@@ -47,12 +47,12 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAccuracyProfile() As OlpAccuracyProfile
-                |     Get the accuracy profile which controls the motion planning for this
-                |     cycle.
-                | 
-                |     Returns:
-                |         The accuracy profile.
+                Func GetAccuracyProfile() As OlpAccuracyProfile
+                    Get the accuracy profile which controls the motion planning for this
+                    cycle.
+                
+                    Returns:
+                        The accuracy profile.
 
         :return: OLPAccuracyProfile
         """
@@ -63,11 +63,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllProcessSchedules() As CATSafeArrayVariant
-                |     Get all linked applicative profile schedules.
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetAllProcessSchedules() As CATSafeArrayVariant
+                    Get all linked applicative profile schedules.
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :return: tuple
         """
@@ -78,12 +78,12 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCloseInPositiveDirection() As boolean
-                |     Get whether the direction the tool closes when the joint values go up
-                |     (positive).
-                | 
-                |     Returns:
-                |         TRUE if closes in positive direction. FALSE otherwise.
+                Func GetCloseInPositiveDirection() As boolean
+                    Get whether the direction the tool closes when the joint values go up
+                    (positive).
+                
+                    Returns:
+                        TRUE if closes in positive direction. FALSE otherwise.
 
         :return: bool
         """
@@ -94,15 +94,15 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleType() As CATBSTR
-                |     Get the cycle type.
-                |     Valid cycle types are:
-                | 
-                |         DRILL
-                |         RIVET
-                | 
-                |     Returns:
-                |         The cycle type
+                Func GetCycleType() As CATBSTR
+                    Get the cycle type.
+                    Valid cycle types are:
+                
+                        DRILL
+                        RIVET
+                
+                    Returns:
+                        The cycle type
 
         :return: str
         """
@@ -113,22 +113,22 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDimension(CATBSTR iDimensionName) As double
-                |     Get a dimension of the process.
-                | 
-                |     Parameters:
-                | 
-                |         iDimensionName
-                |             Valid dimensions are:
-                | 
-                |                 DRILL
-                |                     DRILLDEPTH
-                |                     BREAKTHROUGH
-                |                 RIVET
-                |                     DISTANCE
-                | 
-                | Returns:
-                |     The value in meters.
+                Func GetDimension(CATBSTR iDimensionName) As double
+                    Get a dimension of the process.
+                
+                    Parameters:
+                
+                        iDimensionName
+                            Valid dimensions are:
+                
+                                DRILL
+                                    DRILLDEPTH
+                                    BREAKTHROUGH
+                                RIVET
+                                    DISTANCE
+                
+                Returns:
+                    The value in meters.
 
         :param str i_dimension_name:
         :return: float
@@ -140,26 +140,26 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDimensionLink(CATBSTR iDimensionName,OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to a dimension
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iDimensionName
-                |             Valid dimensions are:
-                | 
-                |                 DRILL
-                |                     DEPTH
-                |                     BREAKTHROUGH
-                |                 RIVET
-                |                     DISTANCE
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetDimensionLink(CATBSTR iDimensionName,OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to a dimension
+                    parameter.
+                
+                    Parameters:
+                
+                        iDimensionName
+                            Valid dimensions are:
+                
+                                DRILL
+                                    DEPTH
+                                    BREAKTHROUGH
+                                RIVET
+                                    DISTANCE
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param str i_dimension_name:
         :param OLPProfile o_profile:
@@ -173,11 +173,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetEnabled() As boolean
-                |     Get the cycle enabled state
-                | 
-                |     Returns:
-                |         oEnabled The cycle enabled state
+                Func GetEnabled() As boolean
+                    Get the cycle enabled state
+                
+                    Returns:
+                        oEnabled The cycle enabled state
 
         :return: bool
         """
@@ -188,12 +188,12 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetEnabledDynamicDrillingMode() As boolean
-                |     This method is only valid for Drill Profiles Get the enabled state of the
-                |     dynamic drilling mode
-                | 
-                |     Returns:
-                |         iEnabled The enabled state of the dynamic drilling mode
+                Func GetEnabledDynamicDrillingMode() As boolean
+                    This method is only valid for Drill Profiles Get the enabled state of the
+                    dynamic drilling mode
+                
+                    Returns:
+                        iEnabled The enabled state of the dynamic drilling mode
 
         :return: bool
         """
@@ -204,11 +204,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetHoldTime() As double
-                |     Get the hold time parameter of the process.
-                | 
-                |     Returns:
-                |         The value in seconds.
+                Func GetHoldTime() As double
+                    Get the hold time parameter of the process.
+                
+                    Returns:
+                        The value in seconds.
 
         :return: float
         """
@@ -219,17 +219,17 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to the hold time
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to the hold time
+                    parameter.
+                
+                    Parameters:
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param OLPProfile o_profile:
         :param str o_controller_param_name:
@@ -242,12 +242,12 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetHomeName() As CATBSTR
-                |     Get the home name for the gun's closed position.
-                | 
-                |     Returns:
-                |         The home name. This is blank if the joint values don't correspond to a
-                |         home name.
+                Func GetHomeName() As CATBSTR
+                    Get the home name for the gun's closed position.
+                
+                    Returns:
+                        The home name. This is blank if the joint values don't correspond to a
+                        home name.
 
         :return: str
         """
@@ -258,11 +258,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointNumber() As short
-                |     Get the joint number manipulated by this cycle.
-                | 
-                |     Returns:
-                |         The joint number
+                Func GetJointNumber() As short
+                    Get the joint number manipulated by this cycle.
+                
+                    Returns:
+                        The joint number
 
         :return: int
         """
@@ -273,11 +273,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointValue() As CATSafeArrayVariant
-                |     Get the tool joint values for the closed position.
-                | 
-                |     Returns:
-                |         The value in meters. Rotational joints are not supported.
+                Func GetJointValue() As CATSafeArrayVariant
+                    Get the tool joint values for the closed position.
+                
+                    Returns:
+                        The value in meters. Rotational joints are not supported.
 
         :return: tuple
         """
@@ -288,12 +288,12 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionProfile() As OlpMotionProfile
-                |     Get the motion profile which controls the motion planning for this
-                |     cycle.
-                | 
-                |     Returns:
-                |         The motion profile.
+                Func GetMotionProfile() As OlpMotionProfile
+                    Get the motion profile which controls the motion planning for this
+                    cycle.
+                
+                    Returns:
+                        The motion profile.
 
         :return: OLPMotionProfile
         """
@@ -304,11 +304,11 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetName() As CATBSTR
-                |     Get the cycle name.
-                | 
-                |     Returns:
-                |         The cycle name
+                Func GetName() As CATBSTR
+                    Get the cycle name.
+                
+                    Returns:
+                        The cycle name
 
         :return: str
         """
@@ -319,17 +319,17 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProcessSchedules(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get linked applicative profile schedules by type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetProcessSchedules(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get linked applicative profile schedules by type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :param str i_profile_type:
         :return: tuple
@@ -341,16 +341,16 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileProcessType() As CATBSTR
-                |     Get the cycle's parent profile process type.
-                |     Valid profile process types are:
-                | 
-                |         DRILL
-                |         RIVET
-                |         DRILL-RIVET
-                | 
-                |     Returns:
-                |         The cycle's parent profile process type
+                Func GetProfileProcessType() As CATBSTR
+                    Get the cycle's parent profile process type.
+                    Valid profile process types are:
+                
+                        DRILL
+                        RIVET
+                        DRILL-RIVET
+                
+                    Returns:
+                        The cycle's parent profile process type
 
         :return: str
         """
@@ -361,14 +361,14 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPOffset() As OlpTransform
-                |     Get the TCP offset for this cycle.
-                | 
-                |     The offest is applied to the TCP during simulation for of this
-                |     cycle.
-                | 
-                |     Returns:
-                |         The offset.
+                Func GetTCPOffset() As OlpTransform
+                    Get the TCP offset for this cycle.
+                
+                    The offest is applied to the TCP during simulation for of this
+                    cycle.
+                
+                    Returns:
+                        The offset.
 
         :return: OLPTransform
         """
@@ -379,29 +379,29 @@ class OLPDrillRivetCycle(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPOffsetLink(CATBSTR iCoordinateName,OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the parameter that is linked to 1 coordinate of the TCP offset for this
-                |     cycle.
-                |     The parameter can be linked to a parameter in a user profile or a parameter
-                |     of the manufacturing fastener.
-                | 
-                |     Parameters:
-                | 
-                |         iCoordinateName
-                |             Valid cooridnate names are:
-                | 
-                |                 x
-                |                 y
-                |                 z
-                |                 yaw
-                |                 pitch
-                |                 roll
-                | 
-                |         oProfile
-                |             The applicative profile. In case of a parameter linked to the
-                |             manufacturing fastener the profile is Nothing. 
-                |         oControllerParamName
+                Sub GetTCPOffsetLink(CATBSTR iCoordinateName,OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the parameter that is linked to 1 coordinate of the TCP offset for this
+                    cycle.
+                    The parameter can be linked to a parameter in a user profile or a parameter
+                    of the manufacturing fastener.
+                
+                    Parameters:
+                
+                        iCoordinateName
+                            Valid cooridnate names are:
+                
+                                x
+                                y
+                                z
+                                yaw
+                                pitch
+                                roll
+                
+                        oProfile
+                            The applicative profile. In case of a parameter linked to the
+                            manufacturing fastener the profile is Nothing. 
+                        oControllerParamName
                 |             The name of the linked parameter. It must be a parameter with the
                 |             dimension length or angle.
 

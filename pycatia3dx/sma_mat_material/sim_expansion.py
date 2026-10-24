@@ -19,51 +19,51 @@ class SimExpansion(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimExpansion
-                | 
-                | Represents the Expansion object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimExpansion as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyExpansion As SimExpansion
-                |      Set MyExpansion = MyMaterialOptions.Add("SimExpansion")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a SimExpansion named
-                |     "Expansion.1" as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyExpansion As SimExpansion
-                |      Set MyExpansion = MyMaterialOptions.Item("Expansion.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimExpansion as following:
-                | 
-                |      ...
-                |      myExpansion = myMaterialOptions.Add("SimExpansion")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimExpansion named "Expansion.1" as following:
-                | 
-                |      ...
-                |      myExpansion = myMaterialOptions.Item("Expansion.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimExpansion
+                
+                Represents the Expansion object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimExpansion as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyExpansion As SimExpansion
+                     Set MyExpansion = MyMaterialOptions.Add("SimExpansion")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a SimExpansion named
+                    "Expansion.1" as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyExpansion As SimExpansion
+                     Set MyExpansion = MyMaterialOptions.Item("Expansion.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimExpansion as following:
+                
+                     ...
+                     myExpansion = myMaterialOptions.Add("SimExpansion")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimExpansion named "Expansion.1" as following:
+                
+                     ...
+                     myExpansion = myMaterialOptions.Item("Expansion.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -77,8 +77,8 @@ class SimExpansion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExpansionType() As SimExpansionExpansionType
-                |     Returns or sets the ExpansionType.
+                Property ExpansionType() As SimExpansionExpansionType
+                    Returns or sets the ExpansionType.
 
         :return: SimExpansionExpansionType
         """
@@ -99,8 +99,8 @@ class SimExpansion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -113,8 +113,8 @@ class SimExpansion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceTemperature() As double
-                |     Returns or sets the reference temperature. Quantity: TEMPRTRE, units: Kdeg
+                Property ReferenceTemperature() As double
+                    Returns or sets the reference temperature. Quantity: TEMPRTRE, units: Kdeg
 
         :return: float
         """
@@ -134,19 +134,19 @@ class SimExpansion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimExpansionMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func GetMaterialTableColumn(SimExpansionMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn

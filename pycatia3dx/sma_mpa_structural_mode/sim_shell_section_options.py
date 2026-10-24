@@ -16,25 +16,25 @@ class SimShellSectionOptions(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimShellSectionOptions
-                | 
-                | Represents the shell section options.
-                | Role:After creating the shell section, you can set the various options provided
-                | in this interface.
-                | Example:
-                | 
-                |  Given a shell section object, you can set the various
-                |  options.
-                |  
-                | 
-                |  Dim oShellSectionOptions As SimShellSectionOptions
-                |  Set oShellSectionOptions = oShellSection.GetItem("SimShellSectionOptions")
-                |  oShellSectionOptions.SplitByThicknessOffsetFlag = True
-                |  oShellSectionOptions.Interval = 0.002
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimShellSectionOptions
+                
+                Represents the shell section options.
+                Role:After creating the shell section, you can set the various options provided
+                in this interface.
+                Example:
+                
+                 Given a shell section object, you can set the various
+                 options.
+                 
+                
+                 Dim oShellSectionOptions As SimShellSectionOptions
+                 Set oShellSectionOptions = oShellSection.GetItem("SimShellSectionOptions")
+                 oShellSectionOptions.SplitByThicknessOffsetFlag = True
+                 oShellSectionOptions.Interval = 0.002
     
     """
 
@@ -48,8 +48,8 @@ class SimShellSectionOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Interval() As double
-                |     Returns or sets the thickness grouping value. Quantity: LENGTH, units: m
+                Property Interval() As double
+                    Returns or sets the thickness grouping value. Quantity: LENGTH, units: m
 
         :return: float
         """
@@ -70,14 +70,14 @@ class SimShellSectionOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntervalFlag() As boolean (Read Only)
-                |     Returns the flag that determines if the thickness interval range value is
-                |     taken as "Unlimited" or as specified by the user.
-                |     TRUE: the thickness interval range value is considered as unlimited and
-                |     user must not specify any value.
-                | 
-                |     FALSE: the thickness interval range value is to be specified by
-                |     user.
+                Property IntervalFlag() As boolean (Read Only)
+                    Returns the flag that determines if the thickness interval range value is
+                    taken as "Unlimited" or as specified by the user.
+                    TRUE: the thickness interval range value is considered as unlimited and
+                    user must not specify any value.
+                
+                    FALSE: the thickness interval range value is to be specified by
+                    user.
 
         :return: bool
         """
@@ -90,13 +90,13 @@ class SimShellSectionOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RoundOffFlag() As boolean
-                |     Returns or sets the round off flag that rounds off the thickness or offset
-                |     values upto 4 decimal places.
-                |     TRUE: the thickness interval range value is rounded off.
-                | 
-                |     FALSE: the thickness interval range value is not rounded
-                |     off.
+                Property RoundOffFlag() As boolean
+                    Returns or sets the round off flag that rounds off the thickness or offset
+                    values upto 4 decimal places.
+                    TRUE: the thickness interval range value is rounded off.
+                
+                    FALSE: the thickness interval range value is not rounded
+                    off.
 
         :return: bool
         """
@@ -117,14 +117,14 @@ class SimShellSectionOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplitByThicknessOffsetFlag() As boolean
-                |     Returns or sets the thickness grouping flag that determines whether the
-                |     section is to be grouped according to thickness interval or
-                |     not.
-                |     TRUE: the section will be grouped in different sections.
-                | 
-                |     FALSE: the section will not be grouped in different
-                |     sections.
+                Property SplitByThicknessOffsetFlag() As boolean
+                    Returns or sets the thickness grouping flag that determines whether the
+                    section is to be grouped according to thickness interval or
+                    not.
+                    TRUE: the section will be grouped in different sections.
+                
+                    FALSE: the section will not be grouped in different
+                    sections.
 
         :return: bool
         """

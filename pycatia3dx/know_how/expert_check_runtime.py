@@ -22,31 +22,31 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    KnowHowIDLItf.ExpertRuleBaseComponentRuntime
-                |                         ExpertCheckRuntime
-                | 
-                | Runtime part of a check.
-                | The following example shows how to access the Check check1 from an existing
-                | RuleSet RS1 of the RuleBase RB1.
-                | 
-                |  Dim rulebasesset As ExpertRuleBasesSet
-                |  Set rulebasesset = ...
-                |  Dim Rulebase As ExpertRuleBaseRuntime
-                |  Set RuleBase = rulebasesset.Collection.Item("RB1")
-                |  Dim Ruleset As ExpertRuleSetRuntime
-                |  Set RuleSet = RuleBase.RuleSet.ExpertRuleBaseComponentRuntimes.Item("RS1")
-                |  Dim CheckRO As ExpertCheckRuntime
-                |  Set CheckRO = RuleSet.ExpertRuleBaseComponentRuntimes.Item("Check1")
-                |  
-                | 
-                | See also:
-                |     ExpertRuleBasesSet, ExpertRuleBaseRuntime,
-                |     ExpertRuleSetRuntime
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   KnowHowIDLItf.ExpertRuleBaseComponentRuntime
+                                        ExpertCheckRuntime
+                
+                Runtime part of a check.
+                The following example shows how to access the Check check1 from an existing
+                RuleSet RS1 of the RuleBase RB1.
+                
+                 Dim rulebasesset As ExpertRuleBasesSet
+                 Set rulebasesset = ...
+                 Dim Rulebase As ExpertRuleBaseRuntime
+                 Set RuleBase = rulebasesset.Collection.Item("RB1")
+                 Dim Ruleset As ExpertRuleSetRuntime
+                 Set RuleSet = RuleBase.RuleSet.ExpertRuleBaseComponentRuntimes.Item("RS1")
+                 Dim CheckRO As ExpertCheckRuntime
+                 Set CheckRO = RuleSet.ExpertRuleBaseComponentRuntimes.Item("Check1")
+                 
+                
+                See also:
+                    ExpertRuleBasesSet, ExpertRuleBaseRuntime,
+                    ExpertRuleSetRuntime
     
     """
 
@@ -60,10 +60,10 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AutomaticCorrect() As boolean
-                |     Returns or sets the status of the automatic correction facility. When set
-                |     to TRUE, the check automatically calls the user function defined by
-                |     put_CorrectFunction when it fails.
+                Property AutomaticCorrect() As boolean
+                    Returns or sets the status of the automatic correction facility. When set
+                    to TRUE, the check automatically calls the user function defined by
+                    put_CorrectFunction when it fails.
 
         :return: bool
         """
@@ -84,19 +84,19 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CheckEdition() As ExpertCheck (Read Only)
-                |     Returns the editable object corresponding to this check. Be careful that,
-                |     according to your licence, or the type of check you're handling, you may not
-                |     have the right to edit the check.
-                | 
-                |     Example:
-                | 
-                |          Dim aCheckEdition As ExpertCheck
-                |          Set aCheckEdition = aCheckRuntime.CheckEdition
-                | 
-                |          If not(aCheckEdition is Nothing) Then
-                |            CATIA.SystemService.Print aCheckEdition.Body
-                |          End if
+                Property CheckEdition() As ExpertCheck (Read Only)
+                    Returns the editable object corresponding to this check. Be careful that,
+                    according to your licence, or the type of check you're handling, you may not
+                    have the right to edit the check.
+                
+                    Example:
+                
+                         Dim aCheckEdition As ExpertCheck
+                         Set aCheckEdition = aCheckRuntime.CheckEdition
+                
+                         If not(aCheckEdition is Nothing) Then
+                           CATIA.SystemService.Print aCheckEdition.Body
+                         End if
 
         :return: ExpertCheck
         """
@@ -109,8 +109,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CorrectFunction() As CATBSTR
-                |     Returns or sets the body to be called in order to correct the check.
+                Property CorrectFunction() As CATBSTR
+                    Returns or sets the body to be called in order to correct the check.
 
         :return: str
         """
@@ -131,8 +131,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CorrectFunctionComment() As CATBSTR
-                |     Returns or sets the comment of the correct function of the check.
+                Property CorrectFunctionComment() As CATBSTR
+                    Returns or sets the comment of the correct function of the check.
 
         :return: str
         """
@@ -153,18 +153,18 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CorrectFunctionType() As long
-                |     Returns or sets the type of the body to be called in order to correct the
-                |     check.
-                | 
-                |     1
-                |         Visual Basic 
-                |     2
-                |         Comment 
-                |     3
-                |         Http 
-                |     4
-                |         User Function
+                Property CorrectFunctionType() As long
+                    Returns or sets the type of the body to be called in order to correct the
+                    check.
+                
+                    1
+                        Visual Basic 
+                    2
+                        Comment 
+                    3
+                        Http 
+                    4
+                        User Function
 
         :return: int
         """
@@ -185,9 +185,9 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Failures() As ExpertReportObjects (Read Only)
-                |     Returns the list of the tuples that don't satisfy this check. You must have
-                |     the Knowledge Expert runtime license to navigate in results.
+                Property Failures() As ExpertReportObjects (Read Only)
+                    Returns the list of the tuples that don't satisfy this check. You must have
+                    the Knowledge Expert runtime license to navigate in results.
 
         :return: ExpertReportObjects
         """
@@ -200,8 +200,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Help() As CATBSTR
-                |     Returns or sets the contextual help of the check object.
+                Property Help() As CATBSTR
+                    Returns or sets the contextual help of the check object.
 
         :return: str
         """
@@ -222,8 +222,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Justification() As CATBSTR
-                |     Returns or sets the reason why the check was overridden.
+                Property Justification() As CATBSTR
+                    Returns or sets the reason why the check was overridden.
 
         :return: str
         """
@@ -244,10 +244,10 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Priority() As double
-                |     Returns or sets the priority of the check. The priority of expert checks
-                |     indicates the order in which the checks are evaluated. Checks with the same
-                |     priority are evaluated in the order of their creation.
+                Property Priority() As double
+                    Returns or sets the priority of the check. The priority of expert checks
+                    indicates the order in which the checks are evaluated. Checks with the same
+                    priority are evaluated in the order of their creation.
 
         :return: float
         """
@@ -268,9 +268,9 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Succeeds() As ExpertReportObjects (Read Only)
-                |     Returns the list of the tuples that satisfy this check. You must have the
-                |     Knowledge Expert runtime license to navigate in results.
+                Property Succeeds() As ExpertReportObjects (Read Only)
+                    Returns the list of the tuples that satisfy this check. You must have the
+                    Knowledge Expert runtime license to navigate in results.
 
         :return: ExpertReportObjects
         """
@@ -282,8 +282,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Correct()
-                |     Applies the "correction" function on failed elements.
+                Sub Correct()
+                    Applies the "correction" function on failed elements.
 
         :return: None
         """
@@ -294,8 +294,8 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Highlight()
-                |     Highlights the Failures on the check.
+                Sub Highlight()
+                    Highlights the Failures on the check.
 
         :return: None
         """
@@ -306,17 +306,17 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Status() As long
-                |     Returns the Status of the check.
-                | 
-                |     Example:
-                | 
-                |          Dim Check1 As ExpertCheck 
-                |          Set Check1 = RuleSet.ExpertRuleBaseComponentRuntimes.Item("Check1")
-                |          status = Check1.Status ()
+                Func Status() As long
+                    Returns the Status of the check.
+                
+                    Example:
+                
+                         Dim Check1 As ExpertCheck 
+                         Set Check1 = RuleSet.ExpertRuleBaseComponentRuntimes.Item("Check1")
+                         status = Check1.Status ()
                 |
-                |     Returns:
-                |         1=OK, 0=KO.
+                    Returns:
+                        1=OK, 0=KO.
 
         :return: int
         """

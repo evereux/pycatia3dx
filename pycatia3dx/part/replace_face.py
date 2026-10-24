@@ -18,18 +18,18 @@ class ReplaceFace(SurfaceBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             ReplaceFace
-                | 
-                | Represents the Replace Face operation.
-                | It replaces a face or a set of faces obtained by tangency continuity by a
-                | replacing element, such as a surface or a face or a skin.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            ReplaceFace
+                
+                Represents the Replace Face operation.
+                It replaces a face or a set of faces obtained by tangency continuity by a
+                replacing element, such as a surface or a face or a skin.
     
     """
 
@@ -43,8 +43,8 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RemoveFace() As References (Read Only)
-                |     Returns the face to be removed.
+                Property RemoveFace() As References (Read Only)
+                    Returns the face to be removed.
 
         :return: References
         """
@@ -57,10 +57,10 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplittingSide() As CatSplitSide
-                |     Returns or sets the splitting side . The splitting side is the side of the
-                |     body kept after the splitting. A positive side refers to the same orientation
-                |     than the splitting element normal vector.
+                Property SplittingSide() As CatSplitSide
+                    Returns or sets the splitting side . The splitting side is the side of the
+                    body kept after the splitting. A positive side refers to the same orientation
+                    than the splitting element normal vector.
 
         :return: CatSplitSide
         """
@@ -80,8 +80,8 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddRemoveFace(Reference iRemoveFace)
-                |     Sets the face to be removed.
+                Sub AddRemoveFace(Reference iRemoveFace)
+                    Sets the face to be removed.
 
         :param Reference i_remove_face:
         :return: None
@@ -93,8 +93,8 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddSplitPlane(Reference iSplitPlane)
-                |     Sets the replacing element.
+                Sub AddSplitPlane(Reference iSplitPlane)
+                    Sets the replacing element.
 
         :param Reference i_split_plane:
         :return: None
@@ -106,8 +106,8 @@ class ReplaceFace(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteRemoveFace(Reference iRemoveFace)
-                |     Remove the face to be removed. 
+                Sub DeleteRemoveFace(Reference iRemoveFace)
+                    Remove the face to be removed. 
 
         :param Reference i_remove_face:
         :return: None

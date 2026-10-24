@@ -18,14 +18,14 @@ class SsmSpaceFolder(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpaceFolder
-                | 
-                | Role: This interface is specific to Space Folder
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpaceFolder
+                
+                Role: This interface is specific to Space Folder
     
     """
 
@@ -39,16 +39,16 @@ class SsmSpaceFolder(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Spaces() As SsmSpaces (Read Only)
-                |     Get Space References
-                | 
-                |     Parameters:
-                | 
-                |         output
-                |             list of SpaceRef as a list of CATBaseUnknown 
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property Spaces() As SsmSpaces (Read Only)
+                    Get Space References
+                
+                    Parameters:
+                
+                        output
+                            list of SpaceRef as a list of CATBaseUnknown 
+                
+                    Returns:
+                        Error code of function. 
 
         :return: SsmSpaces
         """

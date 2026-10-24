@@ -22,17 +22,17 @@ class VPMRepReference(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VPMRepReference
-                | 
-                | Represents the PLM Product Representation Reference.
-                | A PLM Product Representation Reference contains geometrical or technological
-                | data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VPMRepReference
+                
+                Represents the PLM Product Representation Reference.
+                A PLM Product Representation Reference contains geometrical or technological
+                data.
     
     """
 
@@ -46,25 +46,25 @@ class VPMRepReference(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Father() As VPMReference (Read Only)
-                |     Returns the parent PLM Product Reference.
-                |     Role: This method only works for a once instantiable PLM Product
-                |     Representation Reference. It returns the PLM Product Reference containing the
-                |     unique instance of the current PLM Product Representation
-                |     Reference.
-                | 
-                |     Example:
-                | 
-                |             This first example shows you how to get the PLM Product Reference
-                |             containing the unique instance of the 
-                |             current PLM Product Representation Reference.
-                |            
-                | 
-                |          
-                |            Dim  oProdRepRef As VPMRepReference
-                |            .....
-                |            Dim  oProdRefAsParent  As VPMReference
-                |            Set oProdRefAsParent = oProdRepRef.Father
+                Property Father() As VPMReference (Read Only)
+                    Returns the parent PLM Product Reference.
+                    Role: This method only works for a once instantiable PLM Product
+                    Representation Reference. It returns the PLM Product Reference containing the
+                    unique instance of the current PLM Product Representation
+                    Reference.
+                
+                    Example:
+                
+                            This first example shows you how to get the PLM Product Reference
+                            containing the unique instance of the 
+                            current PLM Product Representation Reference.
+                           
+                
+                         
+                           Dim  oProdRepRef As VPMRepReference
+                           .....
+                           Dim  oProdRefAsParent  As VPMReference
+                           Set oProdRefAsParent = oProdRepRef.Father
 
         :return: VPMReference
         """
@@ -77,21 +77,21 @@ class VPMRepReference(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ParentRepInstances() As ParentVPMRepInstances (Read
-                | Only)
-                |     Returns the set of Parent PLM Representation Instances of a Representation
-                |     Reference.
-                | 
-                |     Example:
-                | 
-                |            This example shows you how to get the PLM Product Representation
-                |            Instances parent of a PLM Representation Reference.
-                |            
-                | 
-                |              Dim  oProdRepRef  As VPMRepReference
-                |              .....
-                |              Dim  cListRepInstances As ParentVPMRepInstances
-                |              Set  cListRepInstances = oProdRepRef.ParentRepInstances
+                Property ParentRepInstances() As ParentVPMRepInstances (Read
+                Only)
+                    Returns the set of Parent PLM Representation Instances of a Representation
+                    Reference.
+                
+                    Example:
+                
+                           This example shows you how to get the PLM Product Representation
+                           Instances parent of a PLM Representation Reference.
+                           
+                
+                             Dim  oProdRepRef  As VPMRepReference
+                             .....
+                             Dim  cListRepInstances As ParentVPMRepInstances
+                             Set  cListRepInstances = oProdRepRef.ParentRepInstances
 
         :return: ParentVPMRepInstances
         """

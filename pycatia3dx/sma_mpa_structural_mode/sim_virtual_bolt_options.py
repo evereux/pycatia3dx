@@ -16,64 +16,64 @@ class SimVirtualBoltOptions(CATBaseDispatch):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 SimVirtualBoltOptions
-                | 
-                | Represents the Virtual Bolt object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimVirtualBolt as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualBolt As SimVirtualBolt
-                |      Set MyVirtualBolt = MyMCXProperties.Add("SimVirtualBolt")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimVirtualBolt named
-                |     "Virtual Bolt.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualBolt As SimVirtualBolt
-                |      Set MyVirtualBolt = MyMCXProperties.Item("Virtual Bolt.1")
-                |      
-                | 
-                | Given a SimVirtualBolt object myVirtualBolt, you can retrieve a
-                | SimVirtualBoltOptions as following:
-                | 
-                |  ...
-                |  Dim myVirtualBoltOptions As SimVirtualBoltOptions
-                |  Set myVirtualBoltOptions = myVirtualBolt.GetItem("SimVirtualBoltOptions")
-                |  
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimVirtualBolt as following:
-                | 
-                |      ...
-                |      myVirtualBolt = myMCXProperties.Add("SimVirtualBolt")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimVirtualBolt named "Virtual Bolt.1" as following:
-                | 
-                |      ...
-                |      myVirtualBolt = myMCXProperties.Item("Virtual Bolt.1")
-                |      
-                | 
-                | Given a SimVirtualBolt object myVirtualBolt, you can retrieve a
-                | SimVirtualBoltOptions as following:
-                | 
-                |  ...
-                |  Set myVirtualBoltOptions = myVirtualBolt.GetItem("SimVirtualBoltOptions")
-                |  
-                | 
-                | See also:
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                SimVirtualBoltOptions
+                
+                Represents the Virtual Bolt object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimVirtualBolt as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualBolt As SimVirtualBolt
+                     Set MyVirtualBolt = MyMCXProperties.Add("SimVirtualBolt")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimVirtualBolt named
+                    "Virtual Bolt.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualBolt As SimVirtualBolt
+                     Set MyVirtualBolt = MyMCXProperties.Item("Virtual Bolt.1")
+                     
+                
+                Given a SimVirtualBolt object myVirtualBolt, you can retrieve a
+                SimVirtualBoltOptions as following:
+                
+                 ...
+                 Dim myVirtualBoltOptions As SimVirtualBoltOptions
+                 Set myVirtualBoltOptions = myVirtualBolt.GetItem("SimVirtualBoltOptions")
+                 
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimVirtualBolt as following:
+                
+                     ...
+                     myVirtualBolt = myMCXProperties.Add("SimVirtualBolt")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimVirtualBolt named "Virtual Bolt.1" as following:
+                
+                     ...
+                     myVirtualBolt = myMCXProperties.Item("Virtual Bolt.1")
+                     
+                
+                Given a SimVirtualBolt object myVirtualBolt, you can retrieve a
+                SimVirtualBoltOptions as following:
+                
+                 ...
+                 Set myVirtualBoltOptions = myVirtualBolt.GetItem("SimVirtualBoltOptions")
+                 
+                
+                See also:
     
     """
 
@@ -87,9 +87,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AdvancedCouplingType() As
-                | SimVirtualBoltAdvancedCouplingType
-                |     Returns or sets the coupling type.
+                Property AdvancedCouplingType() As
+                SimVirtualBoltAdvancedCouplingType
+                    Returns or sets the coupling type.
 
         :return: int
         """
@@ -110,8 +110,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowPreloadFlag() As boolean
-                |     Returns or sets the allow preload flag.
+                Property AllowPreloadFlag() As boolean
+                    Returns or sets the allow preload flag.
 
         :return: bool
         """
@@ -132,8 +132,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BendingStiffness() As double
-                |     Returns or sets the Bending stiffness.
+                Property BendingStiffness() As double
+                    Returns or sets the Bending stiffness.
 
         :return: float
         """
@@ -154,9 +154,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectOtherEndOfSolidFlag() As boolean
-                |     Returns or sets the Connect Other end of solid flag (Applicable only for
-                |     beam mechanical behavior).
+                Property ConnectOtherEndOfSolidFlag() As boolean
+                    Returns or sets the Connect Other end of solid flag (Applicable only for
+                    beam mechanical behavior).
 
         :return: bool
         """
@@ -177,9 +177,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConnectorBehavior() As
-                | SimVirtualBoltMechanicalBehavior
-                |     Returns or sets the bolt mechanical behavior (construct).
+                Property ConnectorBehavior() As
+                SimVirtualBoltMechanicalBehavior
+                    Returns or sets the bolt mechanical behavior (construct).
 
         :return: int
         """
@@ -200,9 +200,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadCoupledSurfaceType() As
-                | SimVirtualBoltCoupledSurfaceType
-                |     Returns or sets the bolt head coupled surface type.
+                Property HeadCoupledSurfaceType() As
+                SimVirtualBoltCoupledSurfaceType
+                    Returns or sets the bolt head coupled surface type.
 
         :return: int
         """
@@ -223,8 +223,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HeadType() As SimVirtualBolt_BoltType
-                |     Returns or sets the head type for bolt.
+                Property HeadType() As SimVirtualBolt_BoltType
+                    Returns or sets the head type for bolt.
 
         :return: int
         """
@@ -245,10 +245,10 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InterfaceCoupledSurfaceType() As
-                | SimVirtualBoltCoupledSurfaceType
-                |     Returns or sets the bolt interface coupled surface type(Applicable only for
-                |     beam mechanical behavior).
+                Property InterfaceCoupledSurfaceType() As
+                SimVirtualBoltCoupledSurfaceType
+                    Returns or sets the bolt interface coupled surface type(Applicable only for
+                    beam mechanical behavior).
 
         :return: int
         """
@@ -269,9 +269,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InterfaceWasherDiameter() As double
-                |     Returns or sets the bolt interface washer diameter value(Applicable only
-                |     for beam mechanical behavior).
+                Property InterfaceWasherDiameter() As double
+                    Returns or sets the bolt interface washer diameter value(Applicable only
+                    for beam mechanical behavior).
 
         :return: float
         """
@@ -292,9 +292,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntermediateCoupledSurfaceType() As
-                | SimVirtualBoltCoupledSurfaceType
-                |     Returns or sets the intermediate coupled surface type.
+                Property IntermediateCoupledSurfaceType() As
+                SimVirtualBoltCoupledSurfaceType
+                    Returns or sets the intermediate coupled surface type.
 
         :return: int
         """
@@ -315,9 +315,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntermediateCouplingType() As
-                | SimVirtualBoltIntermediateCouplingType
-                |     Returns or sets the coupling type.
+                Property IntermediateCouplingType() As
+                SimVirtualBoltIntermediateCouplingType
+                    Returns or sets the coupling type.
 
         :return: int
         """
@@ -338,8 +338,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntermediateWasherDiameter() As double
-                |     Returns or sets the bolt intermediate washer diameter value.
+                Property IntermediateWasherDiameter() As double
+                    Returns or sets the bolt intermediate washer diameter value.
 
         :return: float
         """
@@ -360,8 +360,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfHeadNodeRings() As long
-                |     Returns or sets the number of head node rings.
+                Property NumberOfHeadNodeRings() As long
+                    Returns or sets the number of head node rings.
 
         :return: int
         """
@@ -382,9 +382,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfInterfaceNodeRings() As long
-                |     Returns or sets the number of interface node rings(Applicable only for beam
-                |     mechanical behavior).
+                Property NumberOfInterfaceNodeRings() As long
+                    Returns or sets the number of interface node rings(Applicable only for beam
+                    mechanical behavior).
 
         :return: int
         """
@@ -405,9 +405,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfIntermediateNodeRings() As long
-                |     Returns or sets the number of intermediate node rings(Applicable only for
-                |     beam mechanical behavior).
+                Property NumberOfIntermediateNodeRings() As long
+                    Returns or sets the number of intermediate node rings(Applicable only for
+                    beam mechanical behavior).
 
         :return: int
         """
@@ -428,8 +428,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfNutNodeRings() As long
-                |     Returns or sets the number of nut node rings.
+                Property NumberOfNutNodeRings() As long
+                    Returns or sets the number of nut node rings.
 
         :return: int
         """
@@ -450,9 +450,9 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NutCoupledSurfaceType() As
-                | SimVirtualBoltCoupledSurfaceType
-                |     Returns or sets the bolt nut coupled surface type.
+                Property NutCoupledSurfaceType() As
+                SimVirtualBoltCoupledSurfaceType
+                    Returns or sets the bolt nut coupled surface type.
 
         :return: int
         """
@@ -473,8 +473,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NutType() As SimVirtualBolt_BoltType
-                |     Returns or sets the nut type for bolt.
+                Property NutType() As SimVirtualBolt_BoltType
+                    Returns or sets the nut type for bolt.
 
         :return: int
         """
@@ -495,10 +495,10 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolidSolidConnectionType() As
-                | SimVirtualBoltSolidSolidConnectionType
-                |     Returns or sets the Solid Solid interface connection type.(Applicable only
-                |     for beam mechanical behavior).
+                Property SolidSolidConnectionType() As
+                SimVirtualBoltSolidSolidConnectionType
+                    Returns or sets the Solid Solid interface connection type.(Applicable only
+                    for beam mechanical behavior).
 
         :return: int
         """
@@ -519,8 +519,8 @@ class SimVirtualBoltOptions(CATBaseDispatch):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TorsionalStiffness() As double
-                |     Returns or sets the Torsional stiffness. 
+                Property TorsionalStiffness() As double
+                    Returns or sets the Torsional stiffness. 
 
         :return: float
         """

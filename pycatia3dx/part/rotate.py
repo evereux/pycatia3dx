@@ -20,27 +20,27 @@ class Rotate(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         Rotate
-                | 
-                | Represents the shape rotate feature object.
-                | This solid feature is created from an underlying HybridShapeRotate aggregated
-                | by the Rotate. Role: To access the data of the hybrid shape rotate feature
-                | object. This data includes:
-                | 
-                |     The element to be rotated
-                |     The rotation axis
-                |     The angle and its value
-                | 
-                | Use the CATIAShapeFactory to create ShapeFeature object.
-                | 
-                | See also:
-                |     ShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        Rotate
+                
+                Represents the shape rotate feature object.
+                This solid feature is created from an underlying HybridShapeRotate aggregated
+                by the Rotate. Role: To access the data of the hybrid shape rotate feature
+                object. This data includes:
+                
+                    The element to be rotated
+                    The rotation axis
+                    The angle and its value
+                
+                Use the CATIAShapeFactory to create ShapeFeature object.
+                
+                See also:
+                    ShapeFactory
     
     """
 
@@ -54,8 +54,8 @@ class Rotate(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Angle() As Angle (Read Only)
-                |     Returns the rotation angle.
+                Property Angle() As Angle (Read Only)
+                    Returns the rotation angle.
 
         :return: Angle
         """
@@ -68,14 +68,14 @@ class Rotate(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AngleValue() As double
-                |     Returns or sets the rotation angle value.
-                | 
-                |     Example: This example retrieves in AngleValue the angle value for the
-                |     Rotate hybrid shape feature.
-                | 
-                |      Dim AngleValue As double
-                |      Set AngleValue = Rotate.AngleValue
+                Property AngleValue() As double
+                    Returns or sets the rotation angle value.
+                
+                    Example: This example retrieves in AngleValue the angle value for the
+                    Rotate hybrid shape feature.
+                
+                     Dim AngleValue As double
+                     Set AngleValue = Rotate.AngleValue
 
         :return: float
         """
@@ -96,17 +96,17 @@ class Rotate(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Axis() As Reference
-                |     Returns or sets the rotation axis.
-                |     To set the property, you can use one of the following Boundary objects:
-                |     RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge or
-                |     RectilinearMonoDimFeatEdge.
-                | 
-                |     Example: This example retrieves in RotationAxis the rotation axis for the
-                |     Rotate hybrid shape feature.
-                | 
-                |      Dim RotationAxis As Reference
-                |      Set RotationAxis = Rotate.Axis
+                Property Axis() As Reference
+                    Returns or sets the rotation axis.
+                    To set the property, you can use one of the following Boundary objects:
+                    RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge or
+                    RectilinearMonoDimFeatEdge.
+                
+                    Example: This example retrieves in RotationAxis the rotation axis for the
+                    Rotate hybrid shape feature.
+                
+                     Dim RotationAxis As Reference
+                     Set RotationAxis = Rotate.Axis
 
         :return: Reference
         """
@@ -127,16 +127,16 @@ class Rotate(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HybridShape() As HybridShape (Read Only)
-                |     Gets the underlying HybridShapeRotate.
-                | 
-                |     Example:
-                |         The following example explains how to retrieve the underlying
-                |         HybridShape Rotate
-                | 
-                |           Dim oHybridShape as AnyObject
-                |           Set oHybridShape=oRotate.HybridShape
-                |           oHybridShape.SectionCoupling = 2
+                Property HybridShape() As HybridShape (Read Only)
+                    Gets the underlying HybridShapeRotate.
+                
+                    Example:
+                        The following example explains how to retrieve the underlying
+                        HybridShape Rotate
+                
+                          Dim oHybridShape as AnyObject
+                          Set oHybridShape=oRotate.HybridShape
+                          oHybridShape.SectionCoupling = 2
 
         :return: HybridShape
         """

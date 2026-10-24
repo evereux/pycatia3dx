@@ -17,15 +17,15 @@ class ParticularTolElem(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ParticularTolElem
-                | 
-                | Interface for accessing particular geometry of the toleranced
-                | element.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ParticularTolElem
+                
+                Interface for accessing particular geometry of the toleranced
+                element.
     
     """
 
@@ -39,13 +39,13 @@ class ParticularTolElem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ParticularGeometry() As CATBSTR (Read Only)
-                |     Retrieves particular geometry of the toleranced element.
-                | 
-                |     Parameters:
-                | 
-                |         oPartGeom
-                |             : Not Defined CenterElement Surface Unsupported 
+                Property ParticularGeometry() As CATBSTR (Read Only)
+                    Retrieves particular geometry of the toleranced element.
+                
+                    Parameters:
+                
+                        oPartGeom
+                            : Not Defined CenterElement Surface Unsupported 
 
         :return: str
         """

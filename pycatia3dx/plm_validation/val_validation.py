@@ -20,15 +20,15 @@ class VALValidation(PLMEntity):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PLMModelerBaseIDLItf.PLMEntity
-                |                         VALValidation
-                | 
-                | Allows management of Validation entity
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PLMModelerBaseIDLItf.PLMEntity
+                                        VALValidation
+                
+                Allows management of Validation entity
     
     """
 
@@ -42,8 +42,8 @@ class VALValidation(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Checks() As VALChecks (Read Only)
-                |     Returns the Checks collection.
+                Property Checks() As VALChecks (Read Only)
+                    Returns the Checks collection.
 
         :return: VALChecks
         """
@@ -56,8 +56,8 @@ class VALValidation(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Concerns() As VALConcerns (Read Only)
-                |     Returns the Concerns collection.
+                Property Concerns() As VALConcerns (Read Only)
+                    Returns the Concerns collection.
 
         :return: VALConcerns
         """
@@ -70,8 +70,8 @@ class VALValidation(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Contexts() As VALContexts (Read Only)
-                |     Returns the Contexts collection.
+                Property Contexts() As VALContexts (Read Only)
+                    Returns the Contexts collection.
 
         :return: VALContexts
         """
@@ -84,8 +84,8 @@ class VALValidation(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Reviews() As VALReviews (Read Only)
-                |     Returns the Reviews collection.
+                Property Reviews() As VALReviews (Read Only)
+                    Returns the Reviews collection.
 
         :return: VALReviews
         """
@@ -98,8 +98,8 @@ class VALValidation(PLMEntity):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the type of the Validation ("Product", "Simulation" or "Image").
+                Property Type() As CATBSTR (Read Only)
+                    Returns the type of the Validation ("Product", "Simulation" or "Image").
 
         :return: str
         """

@@ -19,55 +19,55 @@ class SimGasketTransverseShearElastic(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGasketTransverseShearElastic
-                | 
-                | Represents the Gasket Transverse Shear Elastic object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a
-                |     SimGasketTransverseShearElastic as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyGasketTransverseShearElastic As
-                |      SimGasketTransverseShearElastic
-                |      Set MyGasketTransverseShearElastic = MyMaterialOptions.Add("SimGasketTransverseShearElastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a
-                |     SimGasketTransverseShearElastic named "Gasket Transverse Shear Elastic.1" as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyGasketTransverseShearElastic As
-                |      SimGasketTransverseShearElastic
-                |      Set MyGasketTransverseShearElastic = MyMaterialOptions.Item("Gasket Transverse Shear Elastic.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimGasketTransverseShearElastic as following:
-                | 
-                |      ...
-                |      myGasketTransverseShearElastic = myMaterialOptions.Add("SimGasketTransverseShearElastic")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimGasketTransverseShearElastic named "Gasket Transverse Shear Elastic.1" as
-                |     following:
-                | 
-                |      ...
-                |      myGasketTransverseShearElastic = myMaterialOptions.Item("Gasket Transverse Shear Elastic.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGasketTransverseShearElastic
+                
+                Represents the Gasket Transverse Shear Elastic object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a
+                    SimGasketTransverseShearElastic as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyGasketTransverseShearElastic As
+                     SimGasketTransverseShearElastic
+                     Set MyGasketTransverseShearElastic = MyMaterialOptions.Add("SimGasketTransverseShearElastic")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a
+                    SimGasketTransverseShearElastic named "Gasket Transverse Shear Elastic.1" as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyGasketTransverseShearElastic As
+                     SimGasketTransverseShearElastic
+                     Set MyGasketTransverseShearElastic = MyMaterialOptions.Item("Gasket Transverse Shear Elastic.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimGasketTransverseShearElastic as following:
+                
+                     ...
+                     myGasketTransverseShearElastic = myMaterialOptions.Add("SimGasketTransverseShearElastic")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimGasketTransverseShearElastic named "Gasket Transverse Shear Elastic.1" as
+                    following:
+                
+                     ...
+                     myGasketTransverseShearElastic = myMaterialOptions.Item("Gasket Transverse Shear Elastic.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -81,8 +81,8 @@ class SimGasketTransverseShearElastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialTable() As SimMaterialTable (Read Only)
-                |     Returns the material table.
+                Property MaterialTable() As SimMaterialTable (Read Only)
+                    Returns the material table.
 
         :return: SimMaterialTable
         """
@@ -95,8 +95,8 @@ class SimGasketTransverseShearElastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UnitType() As SimGasketTransverseShearElasticUnitType
-                |     Returns or sets the unit type.
+                Property UnitType() As SimGasketTransverseShearElasticUnitType
+                    Returns or sets the unit type.
 
         :return: SimGasketTransverseShearElasticUnitType
         """
@@ -116,19 +116,19 @@ class SimGasketTransverseShearElastic(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialTableColumn(SimGasketTransverseShearElasticMaterialTableColumn
-                | iMaterialTableColumn) As SimTableColumn
-                |     Retrieves the column object for the specified table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The specified table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func GetMaterialTableColumn(SimGasketTransverseShearElasticMaterialTableColumn
+                iMaterialTableColumn) As SimTableColumn
+                    Retrieves the column object for the specified table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The specified table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param i_material_table_column:
         :return: SimTableColumn

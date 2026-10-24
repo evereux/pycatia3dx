@@ -17,51 +17,51 @@ class SimVirtualPin(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimVirtualPin
-                | 
-                | Represents the Virtual Pin object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimVirtualPin as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualPin As SimVirtualPin
-                |      Set MyVirtualPin = MyMCXProperties.Add("SimVirtualPin")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimVirtualPin named
-                |     "Virtual Pin.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualPin As SimVirtualPin
-                |      Set MyVirtualPin = MyMCXProperties.Item("Virtual Pin.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimVirtualPin as following:
-                | 
-                |      ...
-                |      myVirtualPin = myMCXProperties.Add("SimVirtualPin")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimVirtualPin named "Virtual Pin.1" as following:
-                | 
-                |      ...
-                |      myVirtualPin = myMCXProperties.Item("Virtual Pin.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimVirtualPin
+                
+                Represents the Virtual Pin object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimVirtualPin as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualPin As SimVirtualPin
+                     Set MyVirtualPin = MyMCXProperties.Add("SimVirtualPin")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimVirtualPin named
+                    "Virtual Pin.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualPin As SimVirtualPin
+                     Set MyVirtualPin = MyMCXProperties.Item("Virtual Pin.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimVirtualPin as following:
+                
+                     ...
+                     myVirtualPin = myMCXProperties.Add("SimVirtualPin")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimVirtualPin named "Virtual Pin.1" as following:
+                
+                     ...
+                     myVirtualPin = myMCXProperties.Item("Virtual Pin.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -75,8 +75,8 @@ class SimVirtualPin(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TorsionalStiffness() As double
-                |     Returns or sets the torsional stiffness value. 
+                Property TorsionalStiffness() As double
+                    Returns or sets the torsional stiffness value. 
 
         :return: float
         """

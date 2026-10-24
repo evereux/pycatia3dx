@@ -19,15 +19,15 @@ class SfdNavigation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdNavigation
-                | 
-                | Object to manage to retrieve the SFD Panel/Profile from any
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdNavigation
+                
+                Object to manage to retrieve the SFD Panel/Profile from any
+                object.
     
     """
 
@@ -40,21 +40,21 @@ class SfdNavigation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPanel() As SfdPanel
-                |     Returns the SFD Panel.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example shows how to call GetPanel method
-                |              
-                | 
-                |              Dim ObjSfdNavigation As SfdNavigation
-                |              ObjSelection.Add ObjSfdStiffener
-                |              Set ObjSfdNavigation = ObjSelection.FindObject("CATIASfdNavigation")
-                |              Dim ObjSfdPanel As SfdPanel
-                |              Set ObjSfdPanel = ObjSfdNavigation.GetPanel
+                Func GetPanel() As SfdPanel
+                    Returns the SFD Panel.
+                
+                    Example:
+                
+                         
+                
+                             This example shows how to call GetPanel method
+                             
+                
+                             Dim ObjSfdNavigation As SfdNavigation
+                             ObjSelection.Add ObjSfdStiffener
+                             Set ObjSfdNavigation = ObjSelection.FindObject("CATIASfdNavigation")
+                             Dim ObjSfdPanel As SfdPanel
+                             Set ObjSfdPanel = ObjSfdNavigation.GetPanel
 
         :return: SfdPanel
         """
@@ -65,8 +65,8 @@ class SfdNavigation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfile() As StructureProfile
-                |     Returns the SFD Profile. 
+                Func GetProfile() As StructureProfile
+                    Returns the SFD Profile. 
 
         :return: StructureProfile
         """

@@ -19,14 +19,14 @@ class SimSpecsRepManager(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSpecsRepManager
-                | 
-                | Interface representing Specifications Rep Manager.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSpecsRepManager
+                
+                Interface representing Specifications Rep Manager.
     
     """
 
@@ -40,8 +40,8 @@ class SimSpecsRepManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Excitations() As SimExcitations (Read Only)
-                |     Retrieves the collection of all Excitations. SimExcitations
+                Property Excitations() As SimExcitations (Read Only)
+                    Retrieves the collection of all Excitations. SimExcitations
 
         :return: SimExcitations
         """
@@ -54,8 +54,8 @@ class SimSpecsRepManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Probes() As SimProbes (Read Only)
-                |     Retrieves the collection of all Excitations. SimProbes
+                Property Probes() As SimProbes (Read Only)
+                    Retrieves the collection of all Excitations. SimProbes
 
         :return: SimProbes
         """
@@ -68,8 +68,8 @@ class SimSpecsRepManager(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
-                |     Retrieves the collection of all scenario specifications. SimScenarioSpecs
+                Property ScenarioSpecs() As SimScenarioSpecs (Read Only)
+                    Retrieves the collection of all scenario specifications. SimScenarioSpecs
 
         :return: SimScenarioSpecs
         """

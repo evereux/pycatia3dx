@@ -17,36 +17,36 @@ class SimAnalysisRestartStepProperty(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAnalysisRestartStepProperty
-                | 
-                | Represents the restart property for a step.
-                | The SimAnalysisRestartStepProperty is an object that provides access to restart
-                | options on the step object in the upstream SimAnalysisCase.
-                | 
-                | Example:
-                |     This example demonstrates how to retrieve the
-                |     SimAnalysisRestartStepProperty object from a SimStaticStep. The same pattern
-                |     applies to all supported steps.
-                | 
-                |      Dim MyStaticStep As SimStaticStep
-                |      ...
-                |      Dim MyRestartStepProperty As
-                |      SimAnalysisRestartStepProperty
-                |      Set MyRestartStepProperty = MyStaticStep.RestartStepProperty
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      MyRestartStepProperty = MyStaticStep.RestartStepProperty
-                |      
-                | 
-                | See also:
-                |     SimAnalysisRestart
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAnalysisRestartStepProperty
+                
+                Represents the restart property for a step.
+                The SimAnalysisRestartStepProperty is an object that provides access to restart
+                options on the step object in the upstream SimAnalysisCase.
+                
+                Example:
+                    This example demonstrates how to retrieve the
+                    SimAnalysisRestartStepProperty object from a SimStaticStep. The same pattern
+                    applies to all supported steps.
+                
+                     Dim MyStaticStep As SimStaticStep
+                     ...
+                     Dim MyRestartStepProperty As
+                     SimAnalysisRestartStepProperty
+                     Set MyRestartStepProperty = MyStaticStep.RestartStepProperty
+                     
+                
+                Example in Python:
+                
+                     MyRestartStepProperty = MyStaticStep.RestartStepProperty
+                     
+                
+                See also:
+                    SimAnalysisRestart
     
     """
 
@@ -60,11 +60,11 @@ class SimAnalysisRestartStepProperty(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GenerateFlag() As boolean
-                |     Returns or sets the flag that determines if the restart generation is
-                |     requested.
-                |     True: the restart generation is requested.
-                |     False: the restart generation is not requested. 
+                Property GenerateFlag() As boolean
+                    Returns or sets the flag that determines if the restart generation is
+                    requested.
+                    True: the restart generation is requested.
+                    False: the restart generation is not requested. 
 
         :return: bool
         """

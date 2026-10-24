@@ -17,18 +17,18 @@ class OLPGrab(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpGrab
-                | 
-                | An instruction for grabbing a part.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpGrab
+                
+                An instruction for grabbing a part.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -42,8 +42,8 @@ class OLPGrab(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Products() As CATSafeArrayVariant (Read Only)
-                |     Retrieves the list of products to be grabbed.
+                Property Products() As CATSafeArrayVariant (Read Only)
+                    Retrieves the list of products to be grabbed.
 
         :return: tuple
         """
@@ -55,13 +55,13 @@ class OLPGrab(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddProduct(VPMOccurrence iProductToAdd)
-                |     Adds a product to the Grab activity.
-                | 
-                |     Parameters:
-                | 
-                |         iVPMOccurrence
-                |             The product to grab.
+                Sub AddProduct(VPMOccurrence iProductToAdd)
+                    Adds a product to the Grab activity.
+                
+                    Parameters:
+                
+                        iVPMOccurrence
+                            The product to grab.
 
         :param VPMOccurrence i_product_to_add:
         :return: None
@@ -73,17 +73,17 @@ class OLPGrab(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddProductByName(CATBSTR iName)
-                |     Adds a product to the Grab activity by name.
-                |     The current editor is searched for products that contain this name. If the
-                |     name is not found a warning is posted, but the function succeeds. If multiple
-                |     matches are found, they are all added, but a warning is
-                |     issued.
-                | 
-                |     Parameters:
-                | 
-                |         iProduct
-                |             The name of the product to grab. 
+                Sub AddProductByName(CATBSTR iName)
+                    Adds a product to the Grab activity by name.
+                    The current editor is searched for products that contain this name. If the
+                    name is not found a warning is posted, but the function succeeds. If multiple
+                    matches are found, they are all added, but a warning is
+                    issued.
+                
+                    Parameters:
+                
+                        iProduct
+                            The name of the product to grab. 
 
         :param str i_name:
         :return: None

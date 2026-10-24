@@ -17,14 +17,14 @@ class ManufacturingInstructionSetParam(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingInstructionSetParam
-                | 
-                | Interface for drilling riveting instruction set parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingInstructionSetParam
+                
+                Interface for drilling riveting instruction set parameters.
     
     """
 
@@ -38,8 +38,8 @@ class ManufacturingInstructionSetParam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DefaultValue() As CATBSTR
-                |     Returns or sets the default value.
+                Property DefaultValue() As CATBSTR
+                    Returns or sets the default value.
 
         :return: str
         """
@@ -60,9 +60,9 @@ class ManufacturingInstructionSetParam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MappingRule() As CATBSTR
-                |     Returns or sets the mapping rule to evaluate it. It fails when parameter is
-                |     public or when iMappingRule syntax is not valid.
+                Property MappingRule() As CATBSTR
+                    Returns or sets the mapping rule to evaluate it. It fails when parameter is
+                    public or when iMappingRule syntax is not valid.
 
         :return: str
         """
@@ -83,9 +83,9 @@ class ManufacturingInstructionSetParam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Public() As boolean
-                |     Returns or sets whether the parameter is public. (i.e. evaluated in
-                |     drilling riveting operation)
+                Property Public() As boolean
+                    Returns or sets whether the parameter is public. (i.e. evaluated in
+                    drilling riveting operation)
 
         :return: bool
         """
@@ -105,20 +105,20 @@ class ManufacturingInstructionSetParam(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetType() As long
-                |     Gets parameter type.
-                | 
-                |     Returns:
-                | 
-                |             0:Boolean
-                |             1:Integer
-                |             2:Real
-                |             3:String
-                |             4:Length
-                |             5:Angle
-                |             6:Time
-                |             7:LinearFeedRate
-                |             8:AngularFeedRate
+                Func GetType() As long
+                    Gets parameter type.
+                
+                    Returns:
+                
+                            0:Boolean
+                            1:Integer
+                            2:Real
+                            3:String
+                            4:Length
+                            5:Angle
+                            6:Time
+                            7:LinearFeedRate
+                            8:AngularFeedRate
 
         :return: int
         """

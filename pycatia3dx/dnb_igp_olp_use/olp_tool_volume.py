@@ -18,18 +18,18 @@ class OLPToolVolume(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpToolVolume
-                | 
-                | A simplified tool volume.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using OlpToolVolumes
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpToolVolume
+                
+                A simplified tool volume.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using OlpToolVolumes
     
     """
 
@@ -43,8 +43,8 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Active() As boolean
-                |     Get/Set whether the zone is active.
+                Property Active() As boolean
+                    Get/Set whether the zone is active.
 
         :return: bool
         """
@@ -65,11 +65,11 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Index() As long
-                |     Get the zone index.
-                |     In some robot languages an index is used to identify the zone. If the Index
-                |     property is not set (IndexIsSet returns FALSE), then getting the Index will
-                |     fail.
+                Property Index() As long
+                    Get the zone index.
+                    In some robot languages an index is used to identify the zone. If the Index
+                    property is not set (IndexIsSet returns FALSE), then getting the Index will
+                    fail.
 
         :return: int
         """
@@ -90,9 +90,9 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IndexSet() As boolean
-                |     Get whether an index is set for the zone.
-                |     If not set, then getting the Index property will fail.
+                Property IndexSet() As boolean
+                    Get whether an index is set for the zone.
+                    If not set, then getting the Index property will fail.
 
         :return: bool
         """
@@ -113,8 +113,8 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumShapes() As long (Read Only)
-                |     Get the number of shapes.
+                Property NumShapes() As long (Read Only)
+                    Get the number of shapes.
 
         :return: int
         """
@@ -126,16 +126,16 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddShape(CATBSTR iType) As OlpShape
-                |     Append a new shape.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Can be one of "Sphere", "Box", or "Capsule". 
-                | 
-                |     Returns:
-                |         The new shape.
+                Func AddShape(CATBSTR iType) As OlpShape
+                    Append a new shape.
+                
+                    Parameters:
+                
+                        iType
+                            Can be one of "Sphere", "Box", or "Capsule". 
+                
+                    Returns:
+                        The new shape.
 
         :param str i_type:
         :return: OLPShape
@@ -147,16 +147,16 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetShape(long iIndex) As OlpShape
-                |     Get one of the shapes.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the shape. 
-                | 
-                |     Returns:
-                |         The shape.
+                Func GetShape(long iIndex) As OlpShape
+                    Get one of the shapes.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the shape. 
+                
+                    Returns:
+                        The shape.
 
         :param int i_index:
         :return: OLPShape
@@ -168,13 +168,13 @@ class OLPToolVolume(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveShape(long iIndex)
-                |     Remove shape.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the shape. 
+                Sub RemoveShape(long iIndex)
+                    Remove shape.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the shape. 
 
         :param int i_index:
         :return: None

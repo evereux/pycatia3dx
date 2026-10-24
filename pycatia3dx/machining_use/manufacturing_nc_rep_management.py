@@ -17,15 +17,15 @@ class ManufacturingNcRepManagement(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingNCRepManagement
-                | 
-                | Interface dedicated to NC Rep management.
-                | Role: This interface offers services to manage NC Rer.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingNCRepManagement
+                
+                Interface dedicated to NC Rep management.
+                Role: This interface offers services to manage NC Rer.
     
     """
 
@@ -38,24 +38,24 @@ class ManufacturingNcRepManagement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateNCRep(CATBSTR iName,long iType,CATSafeArrayVariant
-                | iListOfFilesPaths) As AnyObject
-                |     CreateNCRep
-                |     Create a new NC Rep and aggregate it under the machining
-                |     cell:
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             PLM external id of the rep 
-                |         iType
-                |             iType: Type of the rep (1:APT, 2:ISO, 3:CLF) 
-                |         iListOfFilesPaths
-                |             iListOfFilePaths: List of paths of files to add in the rep
-                |             (optional argument) 
-                | 
-                |     Returns:
-                |         The PLM rep reference of the rep. NULL_var when an error occurs
+                Func CreateNCRep(CATBSTR iName,long iType,CATSafeArrayVariant
+                iListOfFilesPaths) As AnyObject
+                    CreateNCRep
+                    Create a new NC Rep and aggregate it under the machining
+                    cell:
+                
+                    Parameters:
+                
+                        iName
+                            PLM external id of the rep 
+                        iType
+                            iType: Type of the rep (1:APT, 2:ISO, 3:CLF) 
+                        iListOfFilesPaths
+                            iListOfFilePaths: List of paths of files to add in the rep
+                            (optional argument) 
+                
+                    Returns:
+                        The PLM rep reference of the rep. NULL_var when an error occurs
 
         :param str i_name:
         :param int i_type:

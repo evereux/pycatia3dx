@@ -19,52 +19,52 @@ class SimHarmonicResponseStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimHarmonicResponseStep
-                | 
-                | Represents the Harmonic Response Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimHarmonicResponseStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyHarmonicResponseStep As SimHarmonicResponseStep
-                |      Set MyHarmonicResponseStep = MySteps.Add("SimHarmonicResponseStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimHarmonicResponseStep named
-                |     "Harmonic Response Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyHarmonicResponseStep As SimHarmonicResponseStep
-                |      Set MyHarmonicResponseStep = MySteps.Item("Harmonic Response Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimHarmonicResponseStep
-                |     as following:
-                | 
-                |      ...
-                |      myHarmonicResponseStep = mySteps.Add("SimHarmonicResponseStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimHarmonicResponseStep
-                |     named "Harmonic Response Step.1" as following:
-                | 
-                |      ...
-                |      myHarmonicResponseStep = mySteps.Item("Harmonic Response Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimHarmonicResponseStep
+                
+                Represents the Harmonic Response Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimHarmonicResponseStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyHarmonicResponseStep As SimHarmonicResponseStep
+                     Set MyHarmonicResponseStep = MySteps.Add("SimHarmonicResponseStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimHarmonicResponseStep named
+                    "Harmonic Response Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyHarmonicResponseStep As SimHarmonicResponseStep
+                     Set MyHarmonicResponseStep = MySteps.Item("Harmonic Response Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimHarmonicResponseStep
+                    as following:
+                
+                     ...
+                     myHarmonicResponseStep = mySteps.Add("SimHarmonicResponseStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimHarmonicResponseStep
+                    named "Harmonic Response Step.1" as following:
+                
+                     ...
+                     myHarmonicResponseStep = mySteps.Item("Harmonic Response Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -78,8 +78,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,8 +100,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property IntervalType() As SimHarmonicResponseStepIntervalType
-                |     Returns or sets the interval type.
+                Property IntervalType() As SimHarmonicResponseStepIntervalType
+                    Returns or sets the interval type.
 
         :return: SimHarmonicResponseStepIntervalType
         """
@@ -122,8 +122,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LinearLoadCases() As SimLinearLoadCases (Read Only)
-                |     Returns the list of all linear load cases.
+                Property LinearLoadCases() As SimLinearLoadCases (Read Only)
+                    Returns the list of all linear load cases.
 
         :return: SimLinearLoadCases
         """
@@ -136,9 +136,9 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProjectionType() As
-                | SimHarmonicResponseStepProjectionType
-                |     Returns or sets the projection type.
+                Property ProjectionType() As
+                SimHarmonicResponseStepProjectionType
+                    Returns or sets the projection type.
 
         :return: SimHarmonicResponseStepProjectionType
         """
@@ -159,8 +159,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Scale() As SimHarmonicResponseStepScaleType
-                |     Deprecated R425 Use ScaleType property.
+                Property Scale() As SimHarmonicResponseStepScaleType
+                    Deprecated R425 Use ScaleType property.
 
         :return: SimHarmonicResponseStepScaleType
         """
@@ -181,8 +181,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ScaleType() As SimHarmonicResponseStepScaleType
-                |     Returns or sets the scale type.
+                Property ScaleType() As SimHarmonicResponseStepScaleType
+                    Returns or sets the scale type.
 
         :return: SimHarmonicResponseStepScaleType
         """
@@ -203,11 +203,11 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StructuralMaterialDampingFlag() As boolean
-                |     Returns or sets the flag that determines if the structural material damping
-                |     option is used.
-                |     TRUE : the structural material damping option is used.
-                |     FALSE : the structural material damping option is not used.
+                Property StructuralMaterialDampingFlag() As boolean
+                    Returns or sets the flag that determines if the structural material damping
+                    option is used.
+                    TRUE : the structural material damping option is used.
+                    FALSE : the structural material damping option is not used.
 
         :return: bool
         """
@@ -228,8 +228,8 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the hamornic response step behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the hamornic response step behavior.
 
         :return: SimTable
         """
@@ -242,11 +242,11 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ViscousMaterialDampingFlag() As boolean
-                |     Returns or sets the flag that determines if the viscous material damping
-                |     option is used.
-                |     TRUE : the viscous material damping option is used.
-                |     FALSE : the viscous material damping option is not used.
+                Property ViscousMaterialDampingFlag() As boolean
+                    Returns or sets the flag that determines if the viscous material damping
+                    option is used.
+                    TRUE : the viscous material damping option is used.
+                    FALSE : the viscous material damping option is not used.
 
         :return: bool
         """
@@ -266,18 +266,18 @@ class SimHarmonicResponseStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimHarmonicResponseStepTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the hamornic
-                |     response step behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimHarmonicResponseStepTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the hamornic
+                    response step behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

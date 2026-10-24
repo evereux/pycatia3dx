@@ -18,12 +18,12 @@ class NonSemanticGDT(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     NonSemanticGDT
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    NonSemanticGDT
 
     
     """
@@ -37,8 +37,8 @@ class NonSemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Get2dAnnot() As DrawingGDT
-                |     Retrieves Drafting GDT.
+                Func Get2dAnnot() As DrawingGDT
+                    Retrieves Drafting GDT.
 
         :return: DrawingGDT
         """
@@ -49,8 +49,8 @@ class NonSemanticGDT(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TPSParallelOnScreen() As TPSParallelOnScreen
-                |     Gets the annotation on TPSParallelOnScreen interface. 
+                Func TPSParallelOnScreen() As TPSParallelOnScreen
+                    Gets the annotation on TPSParallelOnScreen interface. 
 
         :return: TPSParallelOnScreen
         """

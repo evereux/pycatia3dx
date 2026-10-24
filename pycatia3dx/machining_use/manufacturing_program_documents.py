@@ -17,16 +17,16 @@ class ManufacturingProgramDocuments(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingProgramDocuments
-                | 
-                | Interface dedicated to published documents of a manufacturing
-                | program.
-                | It is implemented on ManufacturingProgram object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingProgramDocuments
+                
+                Interface dedicated to published documents of a manufacturing
+                program.
+                It is implemented on ManufacturingProgram object.
     
     """
 
@@ -39,8 +39,8 @@ class ManufacturingProgramDocuments(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPublishedDocuments() As CATSafeArrayVariant
-                |     Retrieve PLM documents attached to the manufacturing program.
+                Func GetPublishedDocuments() As CATSafeArrayVariant
+                    Retrieve PLM documents attached to the manufacturing program.
 
         :return: tuple
         """
@@ -51,15 +51,15 @@ class ManufacturingProgramDocuments(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Publish(CATBSTR iFilePath)
-                |     Create a PLM document and attach it to the manufacturing program. When a
-                |     document with same file name already exists, it updates its
-                |     content.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             The full path of file to add to the document.
+                Sub Publish(CATBSTR iFilePath)
+                    Create a PLM document and attach it to the manufacturing program. When a
+                    document with same file name already exists, it updates its
+                    content.
+                
+                    Parameters:
+                
+                        iFilePath
+                            The full path of file to add to the document.
 
         :param str i_file_path:
         :return: None

@@ -16,57 +16,57 @@ class SimAbsoluteMassResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimAbsoluteMassResponseVariable
-                | 
-                | Represents the absolute mass response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimAbsoluteMassResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyAbsoluteMassResponseVariable As
-                |      SimAbsoluteMassResponseVariable
-                |      Set MyAbsoluteMassResponseVariable = MyFeatures.Add("SimAbsoluteMassResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimAbsoluteMassResponseVariable named "Absolute Mass Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyAbsoluteMassResponseVariable As
-                |      SimAbsoluteMassResponseVariable
-                |      Set MyAbsoluteMassResponseVariable = MyFeatures.Item("Absolute Mass Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimAbsoluteMassResponseVariable as following:
-                | 
-                |      ...
-                |      MyAbsoluteMassResponseVariable = MyFeatures.Add("SimAbsoluteMassResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimAbsoluteMassResponseVariable named "Absolute Mass Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyAbsoluteMassResponseVariable = MyFeatures.Item("Absolute Mass Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimAbsoluteMassResponseVariable
+                
+                Represents the absolute mass response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimAbsoluteMassResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyAbsoluteMassResponseVariable As
+                     SimAbsoluteMassResponseVariable
+                     Set MyAbsoluteMassResponseVariable = MyFeatures.Add("SimAbsoluteMassResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimAbsoluteMassResponseVariable named "Absolute Mass Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyAbsoluteMassResponseVariable As
+                     SimAbsoluteMassResponseVariable
+                     Set MyAbsoluteMassResponseVariable = MyFeatures.Item("Absolute Mass Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimAbsoluteMassResponseVariable as following:
+                
+                     ...
+                     MyAbsoluteMassResponseVariable = MyFeatures.Add("SimAbsoluteMassResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimAbsoluteMassResponseVariable named "Absolute Mass Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyAbsoluteMassResponseVariable = MyFeatures.Item("Absolute Mass Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 

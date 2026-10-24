@@ -18,20 +18,20 @@ class SurfaceBasedShape(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         SurfaceBasedShape
-                | 
-                | Represents the shapes based on Surface.
-                | It is the base object for Split , SewSurface , CloseSurface and ThickSurface
-                | shapes.
-                | 
-                | See also:
-                |     Split, SewSurface, CloseSurface, ThickSurface
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        SurfaceBasedShape
+                
+                Represents the shapes based on Surface.
+                It is the base object for Split , SewSurface , CloseSurface and ThickSurface
+                shapes.
+                
+                See also:
+                    Split, SewSurface, CloseSurface, ThickSurface
     
     """
 
@@ -45,8 +45,8 @@ class SurfaceBasedShape(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Surface() As Reference
-                |     Returns or sets the surface. 
+                Property Surface() As Reference
+                    Returns or sets the surface. 
 
         :return: Reference
         """

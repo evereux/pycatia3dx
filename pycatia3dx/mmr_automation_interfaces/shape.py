@@ -18,20 +18,20 @@ class Shape(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Shape
-                | 
-                | Represents the Shape object.
-                | It is an abstract object which is not intended to be created as such, from
-                | which all objects having a shape representation derive.
-                | 
-                | See also:
-                |     SketchBasedShape, BooleanShape, DressUpShape,
-                |     TransformationShape
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Shape
+                
+                Represents the Shape object.
+                It is an abstract object which is not intended to be created as such, from
+                which all objects having a shape representation derive.
+                
+                See also:
+                    SketchBasedShape, BooleanShape, DressUpShape,
+                    TransformationShape
     
     """
 

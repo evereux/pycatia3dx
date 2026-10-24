@@ -18,14 +18,14 @@ class SsmSpace(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SsmSpace
-                | 
-                | Role: This interface is specific to Space reference
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SsmSpace
+                
+                Role: This interface is specific to Space reference
     
     """
 
@@ -39,11 +39,11 @@ class SsmSpace(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Volume() As double (Read Only)
-                |     Get Stable Volume Attribute
-                | 
-                |     Returns:
-                |         Volume (in MKS).
+                Property Volume() As double (Read Only)
+                    Get Stable Volume Attribute
+                
+                    Returns:
+                        Volume (in MKS).
 
         :return: float
         """
@@ -56,17 +56,17 @@ class SsmSpace(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VolumeGeom() As Reference (Read Only)
-                |     Get Volume Geometry
-                | 
-                |     Parameters:
-                | 
-                |         oSpaceGeometry
-                |             output space volume geometry (Space Cell or Space Cell Group)
-                |             
-                | 
-                |     Returns:
-                |         Error code of function. 
+                Property VolumeGeom() As Reference (Read Only)
+                    Get Volume Geometry
+                
+                    Parameters:
+                
+                        oSpaceGeometry
+                            output space volume geometry (Space Cell or Space Cell Group)
+                            
+                
+                    Returns:
+                        Error code of function. 
 
         :return: Reference
         """

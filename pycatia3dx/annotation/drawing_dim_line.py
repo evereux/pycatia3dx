@@ -17,17 +17,17 @@ class DrawingDimLine(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrawingDimLine
-                | 
-                | Manages dimension line of a dimension in drawing view.
-                | 
-                | This interface is obtained from DrawingDimension.GetDimLine
-                | method.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrawingDimLine
+                
+                Manages dimension line of a dimension in drawing view.
+                
+                This interface is obtained from DrawingDimension.GetDimLine
+                method.
     
     """
 
@@ -41,14 +41,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Color() As long
-                |     Returns or sets color of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves color of dimension line MyDimLine drawing
-                |         dimension.
-                | 
-                |          oColorDimLine = MyDimLine.Color
+                Property Color() As long
+                    Returns or sets color of dimension line.
+                
+                    Example:
+                        This example retrieves color of dimension line MyDimLine drawing
+                        dimension.
+                
+                         oColorDimLine = MyDimLine.Color
 
         :return: int
         """
@@ -69,14 +69,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimLineGraphRep() As CatDimLineGraphRep
-                |     Returns or graphic representation of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves graphic representation of dimension line
-                |         MyDimLine drawing dimension.
-                | 
-                |          odimLineGraphRep = MyDimLine.DimLineGraphRep
+                Property DimLineGraphRep() As CatDimLineGraphRep
+                    Returns or graphic representation of dimension line.
+                
+                    Example:
+                        This example retrieves graphic representation of dimension line
+                        MyDimLine drawing dimension.
+                
+                         odimLineGraphRep = MyDimLine.DimLineGraphRep
 
         :return: int
         """
@@ -97,14 +97,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimLineOrientation() As CatDimOrientation
-                |     Returns or orientation of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves orientation of dimension line MyDimLine drawing
-                |         dimension.
-                | 
-                |          odimLineOrient = MyDimLine.DimLineOrientation
+                Property DimLineOrientation() As CatDimOrientation
+                    Returns or orientation of dimension line.
+                
+                    Example:
+                        This example retrieves orientation of dimension line MyDimLine drawing
+                        dimension.
+                
+                         odimLineOrient = MyDimLine.DimLineOrientation
 
         :return: int
         """
@@ -125,14 +125,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimLineReference() As CatDimReference
-                |     Returns or reference of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves reference of dimension line MyDimLine drawing
-                |         dimension.
-                | 
-                |          odimLineRef = MyDimLine.DimLineReference
+                Property DimLineReference() As CatDimReference
+                    Returns or reference of dimension line.
+                
+                    Example:
+                        This example retrieves reference of dimension line MyDimLine drawing
+                        dimension.
+                
+                         odimLineRef = MyDimLine.DimLineReference
 
         :return: int
         """
@@ -153,14 +153,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimLineRep() As CatDimLineRep (Read Only)
-                |     Returns or representation of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves representation of dimension line MyDimLine
-                |         drawing dimension.
-                | 
-                |          odimLineRep = MyDimLine.DimLineRep
+                Property DimLineRep() As CatDimLineRep (Read Only)
+                    Returns or representation of dimension line.
+                
+                    Example:
+                        This example retrieves representation of dimension line MyDimLine
+                        drawing dimension.
+                
+                         odimLineRep = MyDimLine.DimLineRep
 
         :return: int
         """
@@ -173,14 +173,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DimLineType() As long (Read Only)
-                |     Returns type of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves type of dimension line MyDimLine drawing
-                |         dimension.
-                | 
-                |          odimLineType = MyDimLine.DimLineType
+                Property DimLineType() As long (Read Only)
+                    Returns type of dimension line.
+                
+                    Example:
+                        This example retrieves type of dimension line MyDimLine drawing
+                        dimension.
+                
+                         odimLineType = MyDimLine.DimLineType
 
         :return: int
         """
@@ -193,14 +193,14 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Thickness() As double
-                |     Returns or sets thickness of dimension line.
-                | 
-                |     Example:
-                |         This example retrieves thickness of dimension line MyDimLine drawing
-                |         dimension.
-                | 
-                |          oThickDimLine = MyDimLine.Thickness
+                Property Thickness() As double
+                    Returns or sets thickness of dimension line.
+                
+                    Example:
+                        This example retrieves thickness of dimension line MyDimLine drawing
+                        dimension.
+                
+                         oThickDimLine = MyDimLine.Thickness
 
         :return: float
         """
@@ -220,20 +220,20 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetDimLineDir(double oDirX,double oDirY)
-                |     Returns direction of a dimension line in case of a catDimUserDefined
-                |     representation mode. To retrieve the representation mode:
-                |     DrawingDimLine.get_DimLineRep.
-                | 
-                |     Parameters:
-                | 
-                |         oDirX,oDirY
-                |             The components of the direction vector 
-                |         Example:
-                |             This example retrieves the direction vector of a dimension line
-                |             MyDimLine drawing dimension.
-                | 
-                |              MyDimLine.GetDimLineDir oDirX, oDirY
+                Sub GetDimLineDir(double oDirX,double oDirY)
+                    Returns direction of a dimension line in case of a catDimUserDefined
+                    representation mode. To retrieve the representation mode:
+                    DrawingDimLine.get_DimLineRep.
+                
+                    Parameters:
+                
+                        oDirX,oDirY
+                            The components of the direction vector 
+                        Example:
+                            This example retrieves the direction vector of a dimension line
+                            MyDimLine drawing dimension.
+                
+                             MyDimLine.GetDimLineDir oDirX, oDirY
 
         :param float o_dir_x:
         :param float o_dir_y:
@@ -246,18 +246,18 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
-                |     Get geometrical infomation of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         oGeomInfos
-                |             geometrical information. 
-                |         Example:
-                |             This example gets geometrical infomation of MyDimLine
-                |             path.
-                | 
-                |              MyDimLine.GetGeomInfo(oGeomInfos)
+                Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
+                    Get geometrical infomation of dimension line.
+                
+                    Parameters:
+                
+                        oGeomInfos
+                            geometrical information. 
+                        Example:
+                            This example gets geometrical infomation of MyDimLine
+                            path.
+                
+                             MyDimLine.GetGeomInfo(oGeomInfos)
 
         :return: tuple
         """
@@ -284,19 +284,19 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSymbColor(long Index) As long
-                |     Get symbol color of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         oColorSymb
-                |             symbol color. 
-                |         Example:
-                |             This example gets symbol color of MyDimLine path.
-                | 
-                |              ColorSymb = MyDimLine.GetSymbColor(Index)
+                Func GetSymbColor(long Index) As long
+                    Get symbol color of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        oColorSymb
+                            symbol color. 
+                        Example:
+                            This example gets symbol color of MyDimLine path.
+                
+                             ColorSymb = MyDimLine.GetSymbColor(Index)
 
         :param int index:
         :return: int
@@ -308,20 +308,20 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSymbThickness(long Index) As double
-                |     Get symbol thickness of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         oThickSymb
-                |             symbol thickness. 
-                |         Example:
-                |             This example gets symbol thickness of MyDimLine
-                |             path.
-                | 
-                |              ThickSymb = MyDimLine.GetSymbThickness(Index)
+                Func GetSymbThickness(long Index) As double
+                    Get symbol thickness of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        oThickSymb
+                            symbol thickness. 
+                        Example:
+                            This example gets symbol thickness of MyDimLine
+                            path.
+                
+                             ThickSymb = MyDimLine.GetSymbThickness(Index)
 
         :param int index:
         :return: float
@@ -333,19 +333,19 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSymbType(long Index) As CatDimSymbols
-                |     Get symbol type of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         oTypeSymb
-                |             symbol type. 
-                |         Example:
-                |             This example gets symbol type of MyDimLine path.
-                | 
-                |              typeSymb = MyDimLine.GetSymbType(Index)
+                Func GetSymbType(long Index) As CatDimSymbols
+                    Get symbol type of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        oTypeSymb
+                            symbol type. 
+                        Example:
+                            This example gets symbol type of MyDimLine path.
+                
+                             typeSymb = MyDimLine.GetSymbType(Index)
 
         :param int index:
         :return: int
@@ -357,19 +357,19 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSymbColor(long Index,long iColorSymb)
-                |     Set symbol color of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         oColorSymb
-                |             symbol color. 
-                |         Example:
-                |             This example sets symbol color of MyDimLine path.
-                | 
-                |              MyDimLine.SetSymbColor(Index, iColorSymb)
+                Sub SetSymbColor(long Index,long iColorSymb)
+                    Set symbol color of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        oColorSymb
+                            symbol color. 
+                        Example:
+                            This example sets symbol color of MyDimLine path.
+                
+                             MyDimLine.SetSymbColor(Index, iColorSymb)
 
         :param int index:
         :param int i_color_symb:
@@ -382,20 +382,20 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSymbThickness(long Index,double iThickSymb)
-                |     Set symbol thickness of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         oThickSymb
-                |             symbol thickness. 
-                |         Example:
-                |             This example sets symbol thickness of MyDimLine
-                |             path.
-                | 
-                |              MyDimLine.GetSymbThickness(Index, iThickSymb)
+                Sub SetSymbThickness(long Index,double iThickSymb)
+                    Set symbol thickness of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        oThickSymb
+                            symbol thickness. 
+                        Example:
+                            This example sets symbol thickness of MyDimLine
+                            path.
+                
+                             MyDimLine.GetSymbThickness(Index, iThickSymb)
 
         :param int index:
         :param float i_thick_symb:
@@ -408,19 +408,19 @@ class DrawingDimLine(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSymbType(long Index,CatDimSymbols iSymbType)
-                |     Set symbol type of dimension line.
-                | 
-                |     Parameters:
-                | 
-                |         Index
-                |             1:first symbol 2:second symbol 3:leader symbol 
-                |         iSymbType
-                |             symbol type. 
-                |         Example:
-                |             This example sets symbol type of MyDimLine path.
-                | 
-                |              MyDimLine.SetSymbType(Index, iSymbType)
+                Sub SetSymbType(long Index,CatDimSymbols iSymbType)
+                    Set symbol type of dimension line.
+                
+                    Parameters:
+                
+                        Index
+                            1:first symbol 2:second symbol 3:leader symbol 
+                        iSymbType
+                            symbol type. 
+                        Example:
+                            This example sets symbol type of MyDimLine path.
+                
+                             MyDimLine.SetSymbType(Index, iSymbType)
 
         :param int index:
         :param int i_symb_type:

@@ -17,30 +17,30 @@ class RscKinematicsRelations(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     RscKinematicsRelations
-                | 
-                | Interface to access the resource symbolic kinematics
-                | relations.
-                | Role: This interface provides methods to access the kinematics
-                | relations.
-                | This API manages the different symbolic kinematics relations on a resource
-                | controller. There are used to define the formulaes on non-command joint to be
-                | fonction of command joints.
-                | 
-                | Example:
-                |     Let assume there is a robot opened as a root entity in a given
-                |     editor.
-                | 
-                |      Dim MainResource As Variant
-                |      Set MainResource = CATIA.ActiveEditor.ActiveObject
-                | 
-                |      Dim MySelectedResource As RscKinematicsRelations
-                |      Set MySelectedResource = MainResource.GetItem("CAARscKinematicsRelations")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    RscKinematicsRelations
+                
+                Interface to access the resource symbolic kinematics
+                relations.
+                Role: This interface provides methods to access the kinematics
+                relations.
+                This API manages the different symbolic kinematics relations on a resource
+                controller. There are used to define the formulaes on non-command joint to be
+                fonction of command joints.
+                
+                Example:
+                    Let assume there is a robot opened as a root entity in a given
+                    editor.
+                
+                     Dim MainResource As Variant
+                     Set MainResource = CATIA.ActiveEditor.ActiveObject
+                
+                     Dim MySelectedResource As RscKinematicsRelations
+                     Set MySelectedResource = MainResource.GetItem("CAARscKinematicsRelations")
     
     """
 
@@ -54,37 +54,37 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ListNonCommandJoints() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of non-command joint of the current resource that can have
-                |     relations. Rigid joints are not included in the output
-                |     list.
-                | 
-                |     Returns:
-                |         List of non-command joints managed by the current
-                |         resource.
-                | 
-                |         Example:
-                | 
-                |          Dim ListJoints 'array for VBScript
-                |          ListJoints = MySelectedResource.ListNonCommandJoints
-                |          Dim NbJoint As Integer
-                |          NbJoint = UBound(ListJoints) + 1
-                |          'uncomment next line to display value
-                |          'MsgBox ("Number of non-command joint: " &
-                |          CStr(NbJoint))
-                |          Dim MyJoint
-                |          For II = LBound(ListJoints) To UBound(ListJoints)
-                |            MyJoint = ListJoints(II)
-                |            'uncomment next line to display value
-                |            'MsgBox ("My joint name is:" & MyJoint.Name)
-                |          Next
-                | 
-                |         Note: previous example is for CATScript. In case of VBA, the syntax is
-                |         slightly different for array declaration:
-                | 
-                |          Dim ListJoints() As Variant 'array for VBA
-                |          ListJoints = MySelectedResource.ListNonCommandJoints
+                Property ListNonCommandJoints() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of non-command joint of the current resource that can have
+                    relations. Rigid joints are not included in the output
+                    list.
+                
+                    Returns:
+                        List of non-command joints managed by the current
+                        resource.
+                
+                        Example:
+                
+                         Dim ListJoints 'array for VBScript
+                         ListJoints = MySelectedResource.ListNonCommandJoints
+                         Dim NbJoint As Integer
+                         NbJoint = UBound(ListJoints) + 1
+                         'uncomment next line to display value
+                         'MsgBox ("Number of non-command joint: " &
+                         CStr(NbJoint))
+                         Dim MyJoint
+                         For II = LBound(ListJoints) To UBound(ListJoints)
+                           MyJoint = ListJoints(II)
+                           'uncomment next line to display value
+                           'MsgBox ("My joint name is:" & MyJoint.Name)
+                         Next
+                
+                        Note: previous example is for CATScript. In case of VBA, the syntax is
+                        slightly different for array declaration:
+                
+                         Dim ListJoints() As Variant 'array for VBA
+                         ListJoints = MySelectedResource.ListNonCommandJoints
 
         :return: tuple
         """
@@ -97,35 +97,35 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ListUserVariablesIDs() As CATSafeArrayVariant (Read
-                | Only)
-                |     Returns the list of existing user variables defined.
-                | 
-                |     Returns:
-                |         The list of user variables defined on the current
-                |         resource.
-                | 
-                |         Example:
-                | 
-                |          Dim ListUserVarID 'array for VBScript
-                |          ListUserVarID = MySelectedResource.ListUserVariablesIDs
-                |          Dim NbVariables As Integer
-                |          NbVariables = UBound(ListUserVarID) + 1
-                |          'uncomment next line to display value
-                |          'MsgBox ("Number of user variables: " &
-                |          CStr(NbVariables))
-                |          Dim UserVarID As String
-                |          For II = LBound(ListUserVarID) To UBound(ListUserVarID)
-                |            UserVarID = ListUserVarID(II)
-                |            'uncomment next line to display value
-                |            'MsgBox ("UserVarID:" & UserVarID)
-                |          Next
-                | 
-                |         Note: previous example is for CATScript. In case of VBA, the syntax is
-                |         slightly different for array declaration:
-                | 
-                |          Dim ListUserVarID() As Variant 'array for VBA
-                |          ListUserVarID = MySelectedResource.ListUserVariablesIDs
+                Property ListUserVariablesIDs() As CATSafeArrayVariant (Read
+                Only)
+                    Returns the list of existing user variables defined.
+                
+                    Returns:
+                        The list of user variables defined on the current
+                        resource.
+                
+                        Example:
+                
+                         Dim ListUserVarID 'array for VBScript
+                         ListUserVarID = MySelectedResource.ListUserVariablesIDs
+                         Dim NbVariables As Integer
+                         NbVariables = UBound(ListUserVarID) + 1
+                         'uncomment next line to display value
+                         'MsgBox ("Number of user variables: " &
+                         CStr(NbVariables))
+                         Dim UserVarID As String
+                         For II = LBound(ListUserVarID) To UBound(ListUserVarID)
+                           UserVarID = ListUserVarID(II)
+                           'uncomment next line to display value
+                           'MsgBox ("UserVarID:" & UserVarID)
+                         Next
+                
+                        Note: previous example is for CATScript. In case of VBA, the syntax is
+                        slightly different for array declaration:
+                
+                         Dim ListUserVarID() As Variant 'array for VBA
+                         ListUserVarID = MySelectedResource.ListUserVariablesIDs
 
         :return: tuple
         """
@@ -138,19 +138,19 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SupportKinematicsRelations() As boolean (Read Only)
-                |     Indicates if the current resource supports symbolic kinematics
-                |     relations.
-                | 
-                |     Parameters:
-                | 
-                |         oSupportKinematicsRelations
-                |             [out] TRUE if the resource node is OK (FALSE otherwise).
-                |             
-                | 
-                |     Returns:
-                |         Indicates if the current resource supports symbolic kinematics
-                |         relations.
+                Property SupportKinematicsRelations() As boolean (Read Only)
+                    Indicates if the current resource supports symbolic kinematics
+                    relations.
+                
+                    Parameters:
+                
+                        oSupportKinematicsRelations
+                            [out] TRUE if the resource node is OK (FALSE otherwise).
+                            
+                
+                    Returns:
+                        Indicates if the current resource supports symbolic kinematics
+                        relations.
 
         :return: bool
         """
@@ -162,24 +162,24 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ClearJointRelationExpression(AnyObject iJoint)
-                |     Removes the expression for a given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             [in] Input parameter for the joint retrieved through
-                |             ListNonCommandJoints. 
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not modify to the
-                |             data.
-                |             E_INVALIDARG in case the argument is not valid.
-                |             E_FAIL otherwise.
+                Sub ClearJointRelationExpression(AnyObject iJoint)
+                    Removes the expression for a given joint.
+                
+                    Parameters:
+                
+                        iJoint
+                            [in] Input parameter for the joint retrieved through
+                            ListNonCommandJoints. 
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not modify to the
+                            data.
+                            E_INVALIDARG in case the argument is not valid.
+                            E_FAIL otherwise.
 
         :param AnyObject i_joint:
         :return: None
@@ -191,28 +191,28 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateUserVariableExpression(CATBSTR iUserVarID,CATBSTR
-                | iExpression)
-                |     Creates a new user variable with its related expression.
-                | 
-                |     Parameters:
-                | 
-                |         iUserVarID
-                |             [in] String input parameter that must different from
-                |             ListUserVariablesIDs. 
-                |         iExpression
-                |             [in] Expression assigned to the current user variable.
-                |             
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed modify to the
-                |             data.
-                |             E_INVALIDARG in case the argument is not valid.
-                |             E_FAIL otherwise.
+                Sub CreateUserVariableExpression(CATBSTR iUserVarID,CATBSTR
+                iExpression)
+                    Creates a new user variable with its related expression.
+                
+                    Parameters:
+                
+                        iUserVarID
+                            [in] String input parameter that must different from
+                            ListUserVariablesIDs. 
+                        iExpression
+                            [in] Expression assigned to the current user variable.
+                            
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed modify to the
+                            data.
+                            E_INVALIDARG in case the argument is not valid.
+                            E_FAIL otherwise.
 
         :param str i_user_var_id:
         :param str i_expression:
@@ -225,25 +225,25 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointRelationExpression(AnyObject iJoint) As CATBSTR
-                |     Retrieves the expression for a given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             [in] Input parameter for the joint retrieved through
-                |             ListNonCommandJoints. 
-                |         oExpression
-                |             [out] Expression assigned to the current joint. 
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed to access the
-                |             data.
-                |             E_FAIL otherwise.
+                Func GetJointRelationExpression(AnyObject iJoint) As CATBSTR
+                    Retrieves the expression for a given joint.
+                
+                    Parameters:
+                
+                        iJoint
+                            [in] Input parameter for the joint retrieved through
+                            ListNonCommandJoints. 
+                        oExpression
+                            [out] Expression assigned to the current joint. 
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed to access the
+                            data.
+                            E_FAIL otherwise.
 
         :param AnyObject i_joint:
         :return: str
@@ -255,27 +255,27 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetUserVariableExpression(CATBSTR iUserVarID) As CATBSTR
-                |     Retrieves the user variable expression for a given user variable
-                |     names.
-                | 
-                |     Parameters:
-                | 
-                |         iUserVarID
-                |             [in] String input parameter through ListUserVariablesIDs.
-                |             
-                |         oExpression
-                |             [out] Expression assigned to the current user variable.
-                |             
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed to access the
-                |             data.
-                |             E_FAIL otherwise.
+                Func GetUserVariableExpression(CATBSTR iUserVarID) As CATBSTR
+                    Retrieves the user variable expression for a given user variable
+                    names.
+                
+                    Parameters:
+                
+                        iUserVarID
+                            [in] String input parameter through ListUserVariablesIDs.
+                            
+                        oExpression
+                            [out] Expression assigned to the current user variable.
+                            
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed to access the
+                            data.
+                            E_FAIL otherwise.
 
         :param str i_user_var_id:
         :return: str
@@ -287,28 +287,28 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveUserVariableExpression(CATBSTR iUserVarID)
-                |     Removes an existing a new user variable with its related
-                |     expression.
-                | 
-                |     Parameters:
-                | 
-                |         iUserVarID
-                |             [in] String input parameter through ListUserVariablesIDs.
-                |             
-                |         iExpression
-                |             [in] Expression assigned to the current user variable.
-                |             
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed modify to the
-                |             data.
-                |             E_INVALIDARG in case the argument is not valid.
-                |             E_FAIL otherwise.
+                Sub RemoveUserVariableExpression(CATBSTR iUserVarID)
+                    Removes an existing a new user variable with its related
+                    expression.
+                
+                    Parameters:
+                
+                        iUserVarID
+                            [in] String input parameter through ListUserVariablesIDs.
+                            
+                        iExpression
+                            [in] Expression assigned to the current user variable.
+                            
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed modify to the
+                            data.
+                            E_INVALIDARG in case the argument is not valid.
+                            E_FAIL otherwise.
 
         :param str i_user_var_id:
         :return: None
@@ -320,27 +320,27 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetJointRelationExpression(AnyObject iJoint,CATBSTR
-                | iExpression)
-                |     Sets the expression for a given joint.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             [in] Input parameter for the joint retrieved through
-                |             ListNonCommandJoints. 
-                |         iExpression
-                |             [in] Expression to assigned to the current joint. 
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not modify to the
-                |             data.
-                |             E_INVALIDARG in case the argument is not valid.
-                |             E_FAIL otherwise.
+                Sub SetJointRelationExpression(AnyObject iJoint,CATBSTR
+                iExpression)
+                    Sets the expression for a given joint.
+                
+                    Parameters:
+                
+                        iJoint
+                            [in] Input parameter for the joint retrieved through
+                            ListNonCommandJoints. 
+                        iExpression
+                            [in] Expression to assigned to the current joint. 
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not modify to the
+                            data.
+                            E_INVALIDARG in case the argument is not valid.
+                            E_FAIL otherwise.
 
         :param AnyObject i_joint:
         :param str i_expression:
@@ -353,29 +353,29 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetUserVariableExpression(CATBSTR iUserVarID,CATBSTR
-                | iExpression)
-                |     Retrieves the user variable expression for a given user variable
-                |     names.
-                | 
-                |     Parameters:
-                | 
-                |         iUserVarID
-                |             [in] String input parameter through ListUserVariablesIDs.
-                |             
-                |         iExpression
-                |             [in] Expression assigned to the current user variable.
-                |             
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed to modify to the
-                |             data.
-                |             E_INVALIDARG in case the argument is not valid.
-                |             E_FAIL otherwise.
+                Sub SetUserVariableExpression(CATBSTR iUserVarID,CATBSTR
+                iExpression)
+                    Retrieves the user variable expression for a given user variable
+                    names.
+                
+                    Parameters:
+                
+                        iUserVarID
+                            [in] String input parameter through ListUserVariablesIDs.
+                            
+                        iExpression
+                            [in] Expression assigned to the current user variable.
+                            
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed to modify to the
+                            data.
+                            E_INVALIDARG in case the argument is not valid.
+                            E_FAIL otherwise.
 
         :param str i_user_var_id:
         :param str i_expression:
@@ -388,31 +388,31 @@ class RscKinematicsRelations(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ValidateKinematicExpression(CATBSTR iUserExpression) As
-                | long
-                |     Validates the user variable expression. This method is called by any user
-                |     variable edition API. It is meant to help callers understand better the types
-                |     of errors.
-                | 
-                |     Parameters:
-                | 
-                |         iUserExpression
-                |             [in] Expression assigned to the current user variable.
-                |             
-                |         oErrorCode
-                |             [out] Error code indicating the type of error:
-                | 
-                |                 0: no error
-                |                 1:.
-                | 
-                |     Returns:
-                |         An HRESULT value.
-                |         Legal values:
-                | 
-                |             S_OK if the operation succeeds
-                |             E_ACCESSDENIED in case the user is not allowed to access the
-                |             data.
-                |             E_FAIL otherwise.
+                Func ValidateKinematicExpression(CATBSTR iUserExpression) As
+                long
+                    Validates the user variable expression. This method is called by any user
+                    variable edition API. It is meant to help callers understand better the types
+                    of errors.
+                
+                    Parameters:
+                
+                        iUserExpression
+                            [in] Expression assigned to the current user variable.
+                            
+                        oErrorCode
+                            [out] Error code indicating the type of error:
+                
+                                0: no error
+                                1:.
+                
+                    Returns:
+                        An HRESULT value.
+                        Legal values:
+                
+                            S_OK if the operation succeeds
+                            E_ACCESSDENIED in case the user is not allowed to access the
+                            data.
+                            E_FAIL otherwise.
 
         :param str i_user_expression:
         :return: int

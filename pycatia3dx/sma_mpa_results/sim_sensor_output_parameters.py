@@ -17,161 +17,161 @@ class SimSensorOutputParameters(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSensorOutputParameters
-                | 
-                | The class to set the output parameters for History and Field
-                | sensors.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSensorOutputParameters
+                
+                The class to set the output parameters for History and Field
+                sensors.
                 |
-                | Example:
-                |  Given a SimHistorySensor object, you can retrieve the
-                |  SimSensorOutputParameters object as following.
+                Example:
+                 Given a SimHistorySensor object, you can retrieve the
+                 SimSensorOutputParameters object as following.
                 |
-                |  Example: 
-                |      Dim oSensorOutputParam As SimSensorOutputParameters
-                |      Get oSensorOutputParam = myHistorySensor.GetSensorOutputParameter()
+                 Example: 
+                     Dim oSensorOutputParam As SimSensorOutputParameters
+                     Get oSensorOutputParam = myHistorySensor.GetSensorOutputParameter()
                 |
-                |      #SimHistorySensor  #SimSensor
+                     #SimHistorySensor  #SimSensor
                 |
-                |  Property Index
-                |     CalculationBetweenSupports
-                | 	      Gets/Sets the option used to create calculation between
-                |         supports.
-                |     CreateGlobalSupportParameters
-                | 	      If 2 supports are present and atleast one of them have multiple selections
-                |         in it, the Global parameters will be created based on the options set in the
-                |         SetParameters() method.
+                 Property Index
+                    CalculationBetweenSupports
+                	      Gets/Sets the option used to create calculation between
+                        supports.
+                    CreateGlobalSupportParameters
+                	      If 2 supports are present and atleast one of them have multiple selections
+                        in it, the Global parameters will be created based on the options set in the
+                        SetParameters() method.
                 |
-                |  Method Index
-                |     GetParameters
-                | 	      Gets the option used to create the global values per
-                |         support.
-                |     GetValuePerSupport
-                | 	      Gets the values per support option.
-                |     SetParameters
-                | 	      Sets the parameter creation criteria.
-                |     SetValuePerSupport
-                | 	      Sets the value per support option.
+                 Method Index
+                    GetParameters
+                	      Gets the option used to create the global values per
+                        support.
+                    GetValuePerSupport
+                	      Gets the values per support option.
+                    SetParameters
+                	      Sets the parameter creation criteria.
+                    SetValuePerSupport
+                	      Sets the value per support option.
                 |
-                | Properties
-                |     Property CalculationBetweenSupports() As SimCalculationBetweenSupports
-                |         Gets/Sets the option used to create calculation between supports. The
-                |         available option can be found in the SimCalculationBetweenSupports
-                |         enum.
-                |         The parameter for this will be created by default if there are 2 valid
-                |         supports.
-                |     Property CreateGlobalSupportParameters() As boolean
-                |         If 2 supports are present and atleast one of them have multiple selections
-                |         in it, the Global parameters will be created based on the options set in the
-                |         SetParameters() method.
-                |         This method must be called to create the global values for support
-                |         parameter. One parameter will be created per support. True to create the
-                |         parameter else false.
+                Properties
+                    Property CalculationBetweenSupports() As SimCalculationBetweenSupports
+                        Gets/Sets the option used to create calculation between supports. The
+                        available option can be found in the SimCalculationBetweenSupports
+                        enum.
+                        The parameter for this will be created by default if there are 2 valid
+                        supports.
+                    Property CreateGlobalSupportParameters() As boolean
+                        If 2 supports are present and atleast one of them have multiple selections
+                        in it, the Global parameters will be created based on the options set in the
+                        SetParameters() method.
+                        This method must be called to create the global values for support
+                        parameter. One parameter will be created per support. True to create the
+                        parameter else false.
                 |
-                | Methods
-                |     Sub GetParameters(boolean obMax,boolean obMin,boolean obAbsMax,boolean
-                |                       obAverage,boolean obSum,boolean obLast)
-                |         Gets the option used to create the global values per
-                |         support.
+                Methods
+                    Sub GetParameters(boolean obMax,boolean obMin,boolean obAbsMax,boolean
+                                      obAverage,boolean obSum,boolean obLast)
+                        Gets the option used to create the global values per
+                        support.
                 |
-                |    Parameters:
-                |          obMax
-                |                The maximum parameter.
-                |          obMin
-                |                The minimum parameter.
-                |          obAbsMax
-                |                The absolute maximum parameter.
-                |          obAverage
-                |                The average parameter.
-                |          obSum
-                |                The sum parameter.
-                |          obLast
-                |                The last parameter. It is used only for History
-                |                sensors.
+                   Parameters:
+                         obMax
+                               The maximum parameter.
+                         obMin
+                               The minimum parameter.
+                         obAbsMax
+                               The absolute maximum parameter.
+                         obAverage
+                               The average parameter.
+                         obSum
+                               The sum parameter.
+                         obLast
+                               The last parameter. It is used only for History
+                               sensors.
                 |
-                | Sub GetValuePerSupport(boolean obUseGlobalParameters,SimValuePerSupportOption
-                |                        oeType,boolean obCreateParameter)
-                |      Gets the values per support option.
+                Sub GetValuePerSupport(boolean obUseGlobalParameters,SimValuePerSupportOption
+                                       oeType,boolean obCreateParameter)
+                     Gets the values per support option.
                 |
-                |     Parameters:
-                |          obUseGlobalParameters
-                |                It will return true if parameters set using the the
-                |                SetParameters() are used for computation.
-                |          oeType
-                |                The option used for value per support
-                |                computation.
-                |          obCreateParameter
-                |                True if the parameters are created.
+                    Parameters:
+                         obUseGlobalParameters
+                               It will return true if parameters set using the the
+                               SetParameters() are used for computation.
+                         oeType
+                               The option used for value per support
+                               computation.
+                         obCreateParameter
+                               True if the parameters are created.
                 |
-                | Sub SetParameters(boolean ibMax,boolean ibMin,boolean ibAbsMax,boolean
-                |                   ibAverage,boolean ibSum,boolean ibLast)
-                |      Sets the parameter creation criteria. It will be used to create the Global
-                |      parameters. 
-                |      It will be used to create Value per support parameters only in below 2
-                |      cases:
-                |      Case1: When only Support1 is present and it has a single selection. Whole
-                |      model is also considered as single selection.
-                |      Case2: When Support1 and Support2 are present and each have only a sigle
-                |      selection.
-                |      For all other cases it will be used to create the Global value per
-                |      support. 
+                Sub SetParameters(boolean ibMax,boolean ibMin,boolean ibAbsMax,boolean
+                                  ibAverage,boolean ibSum,boolean ibLast)
+                     Sets the parameter creation criteria. It will be used to create the Global
+                     parameters. 
+                     It will be used to create Value per support parameters only in below 2
+                     cases:
+                     Case1: When only Support1 is present and it has a single selection. Whole
+                     model is also considered as single selection.
+                     Case2: When Support1 and Support2 are present and each have only a sigle
+                     selection.
+                     For all other cases it will be used to create the Global value per
+                     support. 
                 |
-                |      Parameters:
-                |          ibMax
-                |                The maximum parameter.
-                |          ibMin
-                |                The minimum parameter.
-                |          ibAbsMax
-                |                The absolute maximum parameter.
-                |          ibAverage
-                |                The average parameter.
-                |          ibSum
-                |                The sum parameter.
-                |          ibLast
-                |                The last parameter. It is used only for History
-                |                sensors.
+                     Parameters:
+                         ibMax
+                               The maximum parameter.
+                         ibMin
+                               The minimum parameter.
+                         ibAbsMax
+                               The absolute maximum parameter.
+                         ibAverage
+                               The average parameter.
+                         ibSum
+                               The sum parameter.
+                         ibLast
+                               The last parameter. It is used only for History
+                               sensors.
                 |
-                | Sub SetValuePerSupport(SimValuePerSupportOption ieType,boolean
-                |                        ibCreateParameter)
-                |        Sets the value per support option. The criteria selected in
-                |        SimValuePerSupportOption will be used to compute the global value per
-                |        support.
-                |        will be used.
-                |        For following two cases, the the options set in SetParameters() will be
-                |        used for value per support parameter creation:
-                |        Case1: When only Support1 is present and it has a single selection.
-                |        Whole model is also considered as single selection.
-                |        Case2: When Support1 and Support2 are present and each have only a sigle
-                |        selection.
-                |        For all other cases ibUseAsGlobalParameters must be set to
-                |        false.
+                Sub SetValuePerSupport(SimValuePerSupportOption ieType,boolean
+                                       ibCreateParameter)
+                       Sets the value per support option. The criteria selected in
+                       SimValuePerSupportOption will be used to compute the global value per
+                       support.
+                       will be used.
+                       For following two cases, the the options set in SetParameters() will be
+                       used for value per support parameter creation:
+                       Case1: When only Support1 is present and it has a single selection.
+                       Whole model is also considered as single selection.
+                       Case2: When Support1 and Support2 are present and each have only a sigle
+                       selection.
+                       For all other cases ibUseAsGlobalParameters must be set to
+                       false.
                 |
-                |      Parameters:
-                |          ieType
-                |                The option used for value per support computation.
-                |                
-                |                For e.g. if SimAverage is selected here then the average of each
-                |                selections will be computed and its parameters will be
-                |                created.
-                |                If in the Global value per support(i.e. the one set using the
-                |                SetParameters()) the criteria used in Maximum, then we first compute averages
-                |                of all the selections and then find the maximum
-                |                value from the averages. Thus the Global parameter is computed
-                |                based on value per support option.
-                |                If None is selected, the global value per support will be
-                |                computed based on the SetParameters() criteria and the ibCreateParameter will
-                |                be considered as False.
-                |                The SimNone option is not allowed in case all the Global
-                |                criteria are set to false i.e. all inputs in SetParameters() are set to false.
-                |                Any other option than None must be set.
-                |          ibCreateParameter
-                |                True if the parameters are to be created. One parameter will be
-                |                created per selection. For e.g. Support1 has 2 regions and Support2 has 3
-                |                regions, total 5 parameters will be created.
+                     Parameters:
+                         ieType
+                               The option used for value per support computation.
+                               
+                               For e.g. if SimAverage is selected here then the average of each
+                               selections will be computed and its parameters will be
+                               created.
+                               If in the Global value per support(i.e. the one set using the
+                               SetParameters()) the criteria used in Maximum, then we first compute averages
+                               of all the selections and then find the maximum
+                               value from the averages. Thus the Global parameter is computed
+                               based on value per support option.
+                               If None is selected, the global value per support will be
+                               computed based on the SetParameters() criteria and the ibCreateParameter will
+                               be considered as False.
+                               The SimNone option is not allowed in case all the Global
+                               criteria are set to false i.e. all inputs in SetParameters() are set to false.
+                               Any other option than None must be set.
+                         ibCreateParameter
+                               True if the parameters are to be created. One parameter will be
+                               created per selection. For e.g. Support1 has 2 regions and Support2 has 3
+                               regions, total 5 parameters will be created.
 
     """
 
@@ -185,13 +185,13 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CalculationBetweenSupports() As SimCalculationBetweenSupports
+                Property CalculationBetweenSupports() As SimCalculationBetweenSupports
                 |
-                |      Gets/Sets the option used to create calculation between supports. The
-                |      available option can be found in the SimCalculationBetweenSupports
-                |      enum.
-                |      The parameter for this will be created by default if there are 2 valid
-                |      supports.
+                     Gets/Sets the option used to create calculation between supports. The
+                     available option can be found in the SimCalculationBetweenSupports
+                     enum.
+                     The parameter for this will be created by default if there are 2 valid
+                     supports.
 
         :return: int
         """
@@ -212,14 +212,14 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CreateGlobalSupportParameters() As boolean 
+                Property CreateGlobalSupportParameters() As boolean 
                 |
-                |      If 2 supports are present and atleast one of them have multiple selections
-                |      in it, the Global parameters will be created based on the options set in the
-                |      SetParameters() method. 
-                |      This method must be called to create the global values for support
-                |      parameter. One parameter will be created per support. True to create the
-                |      parameter else false.
+                     If 2 supports are present and atleast one of them have multiple selections
+                     in it, the Global parameters will be created based on the options set in the
+                     SetParameters() method. 
+                     This method must be called to create the global values for support
+                     parameter. One parameter will be created per support. True to create the
+                     parameter else false.
 
         :return: bool
         """
@@ -240,26 +240,26 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetParameters(boolean obMax,boolean obMin,boolean obAbsMax,boolean
-                | obAverage,boolean obSum,boolean obLast)
+                Sub GetParameters(boolean obMax,boolean obMin,boolean obAbsMax,boolean
+                obAverage,boolean obSum,boolean obLast)
                 |
-                |      Gets the option used to create the global values per
-                |      support.
+                     Gets the option used to create the global values per
+                     support.
                 |
-                |      Parameters:
-                |          obMax
-                |                The maximum parameter.
-                |          obMin
-                |                The minimum parameter.
-                |          obAbsMax
-                |                The absolute maximum parameter.
-                |          obAverage
-                |                The average parameter.
-                |          obSum
-                |                The sum parameter.
-                |          obLast
-                |                The last parameter. It is used only for History
-                |                sensors.
+                     Parameters:
+                         obMax
+                               The maximum parameter.
+                         obMin
+                               The minimum parameter.
+                         obAbsMax
+                               The absolute maximum parameter.
+                         obAverage
+                               The average parameter.
+                         obSum
+                               The sum parameter.
+                         obLast
+                               The last parameter. It is used only for History
+                               sensors.
 
         :param bool ob_max:
         :param bool ob_min:
@@ -276,20 +276,20 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetValuePerSupport(boolean obUseGlobalParameters,SimValuePerSupportOption
-                | oeType,boolean obCreateParameter)
+                Sub GetValuePerSupport(boolean obUseGlobalParameters,SimValuePerSupportOption
+                oeType,boolean obCreateParameter)
                 |
-                |      Gets the values per support option.
+                     Gets the values per support option.
                 |
-                |      Parameters:
-                |          obUseGlobalParameters
-                |                It will return true if parameters set using the the
-                |                SetParameters() are used for computation.
-                |          oeType
-                |                The option used for value per support
-                |                computation.
-                |          obCreateParameter
-                |                True if the parameters are created.
+                     Parameters:
+                         obUseGlobalParameters
+                               It will return true if parameters set using the the
+                               SetParameters() are used for computation.
+                         oeType
+                               The option used for value per support
+                               computation.
+                         obCreateParameter
+                               True if the parameters are created.
 
         :param bool ob_use_global_parameters:
         :param int oe_type:
@@ -304,34 +304,34 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameters(boolean ibMax,boolean ibMin,boolean ibAbsMax,boolean
-                | ibAverage,boolean ibSum,boolean ibLast)
+                Sub SetParameters(boolean ibMax,boolean ibMin,boolean ibAbsMax,boolean
+                ibAverage,boolean ibSum,boolean ibLast)
                 |
-                |      Sets the parameter creation criteria. It will be used to create the Global
-                |      parameters. 
-                |      It will be used to create Value per support parameters only in below 2
-                |      cases:
-                |      Case1: When only Support1 is present and it has a single selection. Whole
-                |      model is also considered as single selection.
-                |      Case2: When Support1 and Support2 are present and each have only a sigle
-                |      selection.
-                |      For all other cases it will be used to create the Global value per
-                |      support. 
+                     Sets the parameter creation criteria. It will be used to create the Global
+                     parameters. 
+                     It will be used to create Value per support parameters only in below 2
+                     cases:
+                     Case1: When only Support1 is present and it has a single selection. Whole
+                     model is also considered as single selection.
+                     Case2: When Support1 and Support2 are present and each have only a sigle
+                     selection.
+                     For all other cases it will be used to create the Global value per
+                     support. 
                 |
-                |      Parameters:
-                |          ibMax
-                |                The maximum parameter.
-                |          ibMin
-                |                The minimum parameter.
-                |          ibAbsMax
-                |                The absolute maximum parameter.
-                |          ibAverage
-                |                The average parameter.
-                |          ibSum
-                |                The sum parameter.
-                |          ibLast
-                |                The last parameter. It is used only for History
-                |                sensors.
+                     Parameters:
+                         ibMax
+                               The maximum parameter.
+                         ibMin
+                               The minimum parameter.
+                         ibAbsMax
+                               The absolute maximum parameter.
+                         ibAverage
+                               The average parameter.
+                         ibSum
+                               The sum parameter.
+                         ibLast
+                               The last parameter. It is used only for History
+                               sensors.
 
         :param bool ib_max:
         :param bool ib_min:
@@ -348,45 +348,45 @@ class SimSensorOutputParameters(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetValuePerSupport(SimValuePerSupportOption ieType,boolean
-                | ibCreateParameter)
+                Sub SetValuePerSupport(SimValuePerSupportOption ieType,boolean
+                ibCreateParameter)
                 |
-                |        Sets the value per support option. The criteria selected in
-                |        SimValuePerSupportOption will be used to compute the global value per
-                |        support.
-                |        will be used.
-                |        For following two cases, the the options set in SetParameters() will be
-                |        used for value per support parameter creation:
-                |        Case1: When only Support1 is present and it has a single selection.
-                |        Whole model is also considered as single selection.
-                |        Case2: When Support1 and Support2 are present and each have only a sigle
-                |        selection.
-                |        For all other cases ibUseAsGlobalParameters must be set to
-                |        false.
+                       Sets the value per support option. The criteria selected in
+                       SimValuePerSupportOption will be used to compute the global value per
+                       support.
+                       will be used.
+                       For following two cases, the the options set in SetParameters() will be
+                       used for value per support parameter creation:
+                       Case1: When only Support1 is present and it has a single selection.
+                       Whole model is also considered as single selection.
+                       Case2: When Support1 and Support2 are present and each have only a sigle
+                       selection.
+                       For all other cases ibUseAsGlobalParameters must be set to
+                       false.
                 |
-                |      Parameters:
-                |          ieType
-                |                The option used for value per support computation.
-                |                
-                |                For e.g. if SimAverage is selected here then the average of each
-                |                selections will be computed and its parameters will be
-                |                created.
-                |                If in the Global value per support(i.e. the one set using the
-                |                SetParameters()) the criteria used in Maximum, then we first compute averages
-                |                of all the selections and then find the maximum
-                |                value from the averages. Thus the Global parameter is computed
-                |                based on value per support option.
-                |                If None is selected, the global value per support will be
-                |                computed based on the SetParameters() criteria and the ibCreateParameter will
-                |                be considered as False.
-                |                The SimNone option is not allowed in case all the Global
-                |                criteria are set to false i.e. all inputs in SetParameters() are set to false.
-                |                Any other option than None must be set.
+                     Parameters:
+                         ieType
+                               The option used for value per support computation.
+                               
+                               For e.g. if SimAverage is selected here then the average of each
+                               selections will be computed and its parameters will be
+                               created.
+                               If in the Global value per support(i.e. the one set using the
+                               SetParameters()) the criteria used in Maximum, then we first compute averages
+                               of all the selections and then find the maximum
+                               value from the averages. Thus the Global parameter is computed
+                               based on value per support option.
+                               If None is selected, the global value per support will be
+                               computed based on the SetParameters() criteria and the ibCreateParameter will
+                               be considered as False.
+                               The SimNone option is not allowed in case all the Global
+                               criteria are set to false i.e. all inputs in SetParameters() are set to false.
+                               Any other option than None must be set.
                 |
-                |          ibCreateParameter
-                |                True if the parameters are to be created. One parameter will be
-                |                created per selection. For e.g. Support1 has 2 regions and Support2 has 3
-                |                regions, total 5 parameters will be created.
+                         ibCreateParameter
+                               True if the parameters are to be created. One parameter will be
+                               created per selection. For e.g. Support1 has 2 regions and Support2 has 3
+                               regions, total 5 parameters will be created.
 
         :param SimValuePerSupportOption ie_type:
         :param bool ib_create_parameter:

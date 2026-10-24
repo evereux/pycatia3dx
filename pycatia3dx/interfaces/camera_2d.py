@@ -18,17 +18,17 @@ class Camera2D(Camera):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Camera
-                |                         Camera2D
-                | 
-                | Represents a 2D camera.
-                | The 2D camera stores a 2D viewpoint, that is a Viewpoint2D
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Camera
+                                        Camera2D
+                
+                Represents a 2D camera.
+                The 2D camera stores a 2D viewpoint, that is a Viewpoint2D
+                object.
     
     """
 
@@ -42,19 +42,19 @@ class Camera2D(Camera):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Viewpoint2D() As Viewpoint2D
-                |     Returns or sets the 2D viewpoint of a 2D camera.
-                | 
-                |     Example:
-                |         Assume the active window is a SpecsAndGeomWindow object. This example
-                |         retrieves the Viewpoint2D of the SpecsViewer and creates from it a Camera2D you
-                |         handle using the MyCamera variable. Then the camera zoom is set to 2, and the
-                |         camera's viewpoint is assigned to the SpecsViewer.
-                | 
-                |          Dim MyCamera As Camera
-                |          Set MyCamera = CATIA.ActiveWindow.SpecsViewer.NewCamera()
-                |          MyCamera.Viewpoint2D.Zoom = 2
-                |          CATIA.ActiveWindow.SpecsViewer.Viewpoint2D = MyCamera.Viewpoint2D
+                Property Viewpoint2D() As Viewpoint2D
+                    Returns or sets the 2D viewpoint of a 2D camera.
+                
+                    Example:
+                        Assume the active window is a SpecsAndGeomWindow object. This example
+                        retrieves the Viewpoint2D of the SpecsViewer and creates from it a Camera2D you
+                        handle using the MyCamera variable. Then the camera zoom is set to 2, and the
+                        camera's viewpoint is assigned to the SpecsViewer.
+                
+                         Dim MyCamera As Camera
+                         Set MyCamera = CATIA.ActiveWindow.SpecsViewer.NewCamera()
+                         MyCamera.Viewpoint2D.Zoom = 2
+                         CATIA.ActiveWindow.SpecsViewer.Viewpoint2D = MyCamera.Viewpoint2D
 
         :return: Viewpoint2D
         """

@@ -19,16 +19,16 @@ class StrOpeningsOnProfile(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrOpeningsOnProfile
-                | 
-                | Object for StrOpeningsOnProfile.
-                | Role: To access an opening from a collection of openings on
-                | profile.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrOpeningsOnProfile
+                
+                Object for StrOpeningsOnProfile.
+                Role: To access an opening from a collection of openings on
+                profile.
     
     """
 
@@ -42,26 +42,26 @@ class StrOpeningsOnProfile(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As StrOpeningOnProfile
-                |     Adds a opening to the profile. (@see
-                |     CATIAStrOpeningOnProfile)
-                | 
-                |     Parameters:
-                | 
-                |         oOpeningOnProfile
-                |             New opening added to profile. 
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example creates a opening on the profile.
-                |              
-                | 
-                |               Dim ObjStrOpeningsOnProfile As
-                |               StrOpeningsOnProfile
-                |               Set ObjStrOpeningsOnProfile = iObjSfdStiffener.OpeningsOnProfile(0)
-                |               Set oObjSfdOpeningOnProfile = ObjStrOpeningsOnProfile.Add
+                Func Add() As StrOpeningOnProfile
+                    Adds a opening to the profile. (@see
+                    CATIAStrOpeningOnProfile)
+                
+                    Parameters:
+                
+                        oOpeningOnProfile
+                            New opening added to profile. 
+                
+                    Example:
+                
+                         
+                
+                             This example creates a opening on the profile.
+                             
+                
+                              Dim ObjStrOpeningsOnProfile As
+                              StrOpeningsOnProfile
+                              Set ObjStrOpeningsOnProfile = iObjSfdStiffener.OpeningsOnProfile(0)
+                              Set oObjSfdOpeningOnProfile = ObjStrOpeningsOnProfile.Add
 
         :return: StrOpeningOnProfile
         """
@@ -72,23 +72,23 @@ class StrOpeningsOnProfile(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrOpeningOnProfile
-                |     Returns a opening from a list of openings on profile. (@see
-                |     CATIAStrOpeningOnProfile)
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of StrOpening. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first opening from the list of
-                |              openings on profile.
-                |              
-                | 
-                |               Set oObjSfdOpeningOnProfile = ObjStrOpeningsOnProfile.Item(1)
+                Func Item(CATVariant iIndex) As StrOpeningOnProfile
+                    Returns a opening from a list of openings on profile. (@see
+                    CATIAStrOpeningOnProfile)
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of StrOpening. 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first opening from the list of
+                             openings on profile.
+                             
+                
+                              Set oObjSfdOpeningOnProfile = ObjStrOpeningsOnProfile.Item(1)
 
         :param CATVariant i_index:
         :return: StrOpeningOnProfile
@@ -100,23 +100,23 @@ class StrOpeningsOnProfile(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StrOpeningOnProfile iOpeningOnProfile)
-                |     Removes the Opening on profile.
-                | 
-                |     Parameters:
-                | 
-                |         iOpeningOnProfile
-                |             The opening object to be removed. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example removes the opening 
-                | 
-                |              ObjStrOpeningOnProfile 
+                Sub Remove(StrOpeningOnProfile iOpeningOnProfile)
+                    Removes the Opening on profile.
+                
+                    Parameters:
+                
+                        iOpeningOnProfile
+                            The opening object to be removed. 
+                
+                    Example:
+                
+                
+                             This example removes the opening 
+                
+                             ObjStrOpeningOnProfile 
                 |
-                |               ObjStrOpeningsOnProfile.Remove
-                |               ObjStrOpeningOnProfile
+                              ObjStrOpeningsOnProfile.Remove
+                              ObjStrOpeningOnProfile
 
         :param StrOpeningOnProfile i_opening_on_profile:
         :return: None

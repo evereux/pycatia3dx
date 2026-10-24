@@ -16,16 +16,16 @@ class MeasurableSurface(MeasurableInContext):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATOpnsMeasureIDLItf.MeasurableInContext
-                |                         MeasurableSurface
-                | 
-                | Interface representing the measurement on a surface.
-                | Get the area, the center of gravity and the perimeter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATOpnsMeasureIDLItf.MeasurableInContext
+                                        MeasurableSurface
+                
+                Interface representing the measurement on a surface.
+                Get the area, the center of gravity and the perimeter.
     
     """
 
@@ -38,21 +38,21 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetArea() As double
-                |     Retrieves the area of the surface.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the area of theMeasurableSurface
-                |            measure.
-                |            The area unit given by oArea is m²
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSurface As MeasurableSurface
-                |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
-                |              Dim theArea As Double
-                |              theArea = theMeasurableSurface.GetArea
+                Func GetArea() As double
+                    Retrieves the area of the surface.
+                
+                    Example:
+                
+                           This example retrieves the area of theMeasurableSurface
+                           measure.
+                           The area unit given by oArea is m²
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSurface As MeasurableSurface
+                             Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
+                             Dim theArea As Double
+                             theArea = theMeasurableSurface.GetArea
 
         :return: float
         """
@@ -63,27 +63,27 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetArea_COfG(double oArea,double oXCOfG,double oYCOfG,double
-                | oZCOfG)
-                |     Retrieves the area and the position of the center of gravity of the
-                |     surface.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the area and the position of the center of
-                |            gravity of theMeasurableSurface measure.
-                |            The area unit given by oArea is m²
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSurface As MeasurableSurface
-                |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
-                |              Dim theArea As Double
-                |              Dim theXCOfG As Double
-                |              Dim theYCOfG As Double
-                |              Dim theZCOfG As Double
-                |              theMeasurableSurface.GetCOG theArea, theXCOfG, theYCOfG,
-                |              theZCOfG
+                Sub GetArea_COfG(double oArea,double oXCOfG,double oYCOfG,double
+                oZCOfG)
+                    Retrieves the area and the position of the center of gravity of the
+                    surface.
+                
+                    Example:
+                
+                           This example retrieves the area and the position of the center of
+                           gravity of theMeasurableSurface measure.
+                           The area unit given by oArea is m²
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSurface As MeasurableSurface
+                             Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
+                             Dim theArea As Double
+                             Dim theXCOfG As Double
+                             Dim theYCOfG As Double
+                             Dim theZCOfG As Double
+                             theMeasurableSurface.GetCOG theArea, theXCOfG, theYCOfG,
+                             theZCOfG
 
         :return: tuple
         """
@@ -94,24 +94,24 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
-                |     Retrieves the position of the center of gravity of a
-                |     surface.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the position of the center of gravity of
-                |            theMeasurableSurface measure.
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSurface As MeasurableSurface
-                |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
-                |              Dim theXCOfG As Double
-                |              Dim theYCOfG As Double
-                |              Dim theZCOfG As Double
-                |              theMeasurableSurface.GetCOG theXCOfG, theYCOfG,
-                |              theZCOfG
+                Sub GetCOfG(double oXCOfG,double oYCOfG,double oZCOfG)
+                    Retrieves the position of the center of gravity of a
+                    surface.
+                
+                    Example:
+                
+                           This example retrieves the position of the center of gravity of
+                           theMeasurableSurface measure.
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSurface As MeasurableSurface
+                             Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
+                             Dim theXCOfG As Double
+                             Dim theYCOfG As Double
+                             Dim theZCOfG As Double
+                             theMeasurableSurface.GetCOG theXCOfG, theYCOfG,
+                             theZCOfG
 
         :return: tuple
         """
@@ -122,21 +122,21 @@ class MeasurableSurface(MeasurableInContext):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPerimeter() As double
-                |     Retrieves the perimeter of the surface.
-                | 
-                |     Example:
-                | 
-                |            This example retrieves the area of theMeasurableSurface
-                |            measure.
-                |            The area unit given by oArea is m²
-                |            
-                | 
-                |              Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
-                |              Dim theMeasurableSurface As MeasurableSurface
-                |              Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
-                |              Dim thePerimeter As Double
-                |              thePerimeter = theMeasurableSurface.GetPerimeter
+                Func GetPerimeter() As double
+                    Retrieves the perimeter of the surface.
+                
+                    Example:
+                
+                           This example retrieves the area of theMeasurableSurface
+                           measure.
+                           The area unit given by oArea is m²
+                           
+                
+                             Set theMeasureService = CATIA.ActiveEditor.GetService("MeasurableService")
+                             Dim theMeasurableSurface As MeasurableSurface
+                             Set theMeasurableSurface = theMeasureService.GetMeasurable(theSelection, CAAMeasurableSurface)
+                             Dim thePerimeter As Double
+                             thePerimeter = theMeasurableSurface.GetPerimeter
 
         :return: float
         """

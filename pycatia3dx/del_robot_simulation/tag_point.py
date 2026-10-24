@@ -17,17 +17,17 @@ class TagPoint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TagPoint
-                | 
-                | Interface representing a Tag.
-                | 
-                | Role: This interface is used to retrieve/assign the attributes from the
-                | tag.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TagPoint
+                
+                Interface representing a Tag.
+                
+                Role: This interface is used to retrieve/assign the attributes from the
+                tag.
     
     """
 
@@ -41,25 +41,25 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Axis() As CATSafeArrayVariant
-                |     This property returns and sets the relative location of the tag w.r.t to
-                |     ist logical owner.
-                | 
-                |     Returns:
-                |         oAxis The Axis of the tag. 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             The Axis of the tag. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTag As TagPoint
-                |                   ......
-                |         Dim oAxis
-                |         oAxis = objTag.Axis
+                Property Axis() As CATSafeArrayVariant
+                    This property returns and sets the relative location of the tag w.r.t to
+                    ist logical owner.
+                
+                    Returns:
+                        oAxis The Axis of the tag. 
+                    Parameters:
+                
+                        iAxis
+                            The Axis of the tag. 
+                
+                    Example:
+                
+                           
+                
+                           Dim objTag As TagPoint
+                                  ......
+                        Dim oAxis
+                        oAxis = objTag.Axis
 
         :return: tuple
         """
@@ -80,24 +80,24 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR
-                |     This property returns and sets the Type of the tag.
-                | 
-                |     Returns:
-                |         oType The Type of the tag. 
-                |     Parameters:
-                | 
-                |         iType
-                |             The Type of the tag. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTag As TagPoint
-                |                   ......
-                |         Dim oType
-                |         oType = objTag.Type
+                Property Type() As CATBSTR
+                    This property returns and sets the Type of the tag.
+                
+                    Returns:
+                        oType The Type of the tag. 
+                    Parameters:
+                
+                        iType
+                            The Type of the tag. 
+                
+                    Example:
+                
+                           
+                
+                           Dim objTag As TagPoint
+                                  ......
+                        Dim oType
+                        oType = objTag.Type
 
         :return: str
         """
@@ -117,33 +117,33 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAbsoluteAxis(AnyObject iContext,AnyObject iTagOwner) As
-                | CATSafeArrayVariant
-                |     Retrieves the underlying axis of the Tag. This will return the Tag's
-                |     location wrt the specified context If no context is specified, this will return
-                |     the Tag's location wrt the global context
-                | 
-                |     Parameters:
-                | 
-                |         iContext
-                |             The context in which Tag's location is required 
-                |         iTagOwner
-                |             Occurrence of the Tag owner product in the root context.
-                |             
-                | 
-                |     Returns:
-                |         oAxis The underlying Axis. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTag As TagPoint
-                |                   ......
-                |         Dim iContext, iTagOwner
-                |                   ......
-                |         Dim oAbsAxis(0 To 5)
-                |         Call objTag.GetAbsoluteAxis(iContext, iTagOwner,
-                |         oAbsAxis)
+                Func GetAbsoluteAxis(AnyObject iContext,AnyObject iTagOwner) As
+                CATSafeArrayVariant
+                    Retrieves the underlying axis of the Tag. This will return the Tag's
+                    location wrt the specified context If no context is specified, this will return
+                    the Tag's location wrt the global context
+                
+                    Parameters:
+                
+                        iContext
+                            The context in which Tag's location is required 
+                        iTagOwner
+                            Occurrence of the Tag owner product in the root context.
+                            
+                
+                    Returns:
+                        oAxis The underlying Axis. 
+                    Example:
+                
+                           
+                
+                           Dim objTag As TagPoint
+                                  ......
+                        Dim iContext, iTagOwner
+                                  ......
+                        Dim oAbsAxis(0 To 5)
+                        Call objTag.GetAbsoluteAxis(iContext, iTagOwner,
+                        oAbsAxis)
 
         :param AnyObject i_context:
         :param AnyObject i_tag_owner:
@@ -156,29 +156,29 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetName(CATBSTR oPrefix,CATBSTR oIndex,CATBSTR oSuffix)
-                |     Retrieves the name of the tag.
-                | 
-                |     Parameters:
-                | 
-                |         oPrefix
-                |             The Prefix used in the tag name. 
-                |         oIndex
-                |             The Index used in the tag name. 
-                |         oSuffix
-                |             The Suffix used in the tag name. 
-                | 
-                |     Returns:
-                |         oAxis The underlying Axis. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTag As TagPoint
-                |                   ......
-                |         Dim oPrefix As String, oIndex As String, oSuffix As
-                |         String
-                |         Call objTag.GetName(oPrefix, oIndex, oSuffix)
+                Sub GetName(CATBSTR oPrefix,CATBSTR oIndex,CATBSTR oSuffix)
+                    Retrieves the name of the tag.
+                
+                    Parameters:
+                
+                        oPrefix
+                            The Prefix used in the tag name. 
+                        oIndex
+                            The Index used in the tag name. 
+                        oSuffix
+                            The Suffix used in the tag name. 
+                
+                    Returns:
+                        oAxis The underlying Axis. 
+                    Example:
+                
+                           
+                
+                           Dim objTag As TagPoint
+                                  ......
+                        Dim oPrefix As String, oIndex As String, oSuffix As
+                        String
+                        Call objTag.GetName(oPrefix, oIndex, oSuffix)
 
         :param str o_prefix:
         :param str o_index:
@@ -192,34 +192,34 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetAbsoluteAxis(CATSafeArrayVariant iAxis,AnyObject iContext,AnyObject
-                | iTagOwner)
-                |     Sets axis of the Tag. This will set the Tag's location wrt the specified
-                |     context If no context is specified, this will set the Tag's location wrt the
-                |     global context
+                Sub SetAbsoluteAxis(CATSafeArrayVariant iAxis,AnyObject iContext,AnyObject
+                iTagOwner)
+                    Sets axis of the Tag. This will set the Tag's location wrt the specified
+                    context If no context is specified, this will set the Tag's location wrt the
+                    global context
                 |
-                |     Returns:
-                |         iAxis The underlying Axis.
-                |     Parameters:
+                    Returns:
+                        iAxis The underlying Axis.
+                    Parameters:
                 |
-                |         iContext
-                |             The context in which Tag's location is required
-                |         iTagOwner
-                |             Occurrence of the Tag owner product in the root context.
-                |
-                |
-                |     Example:
+                        iContext
+                            The context in which Tag's location is required
+                        iTagOwner
+                            Occurrence of the Tag owner product in the root context.
                 |
                 |
+                    Example:
                 |
-                |            Dim objTag As TagPoint
-                |         Dim iContext, iTagOwner
-                |                   ......
-                |         Dim oAbsAxis(0 To 5)
-                |                   ......
-                |         Call oTag.SetAbsoluteAxis(iContext, iTagOwner,
-                |         oAbsAxis)
-                |                   ......
+                |
+                |
+                           Dim objTag As TagPoint
+                        Dim iContext, iTagOwner
+                                  ......
+                        Dim oAbsAxis(0 To 5)
+                                  ......
+                        Call oTag.SetAbsoluteAxis(iContext, iTagOwner,
+                        oAbsAxis)
+                                  ......
 
         :param tuple i_axis:
         :param AnyObject i_context:
@@ -249,30 +249,30 @@ class TagPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetName(CATBSTR iPrefix,CATBSTR iIndex,CATBSTR iSuffix)
-                |     Sets the name of the tag.
-                | 
-                |     Parameters:
-                | 
-                |         iPrefix
-                |             The Prefix used in the tag name. 
-                |         iIndex
-                |             The Index used in the tag name. 
-                |         iSuffix
-                |             The Suffix used in the tag name. 
-                | 
-                |     Returns:
-                |         oAxis The underlying Axis. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTag As TagPoint
-                |                   ......
-                |         Dim oPrefix As String, oIndex As String, oSuffix As
-                |         String
-                |                   ......
-                |         Call objTag.SetName(oPrefix, oIndex, oSuffix)
+                Sub SetName(CATBSTR iPrefix,CATBSTR iIndex,CATBSTR iSuffix)
+                    Sets the name of the tag.
+                
+                    Parameters:
+                
+                        iPrefix
+                            The Prefix used in the tag name. 
+                        iIndex
+                            The Index used in the tag name. 
+                        iSuffix
+                            The Suffix used in the tag name. 
+                
+                    Returns:
+                        oAxis The underlying Axis. 
+                    Example:
+                
+                           
+                
+                           Dim objTag As TagPoint
+                                  ......
+                        Dim oPrefix As String, oIndex As String, oSuffix As
+                        String
+                                  ......
+                        Call objTag.SetName(oPrefix, oIndex, oSuffix)
 
         :param str i_prefix:
         :param str i_index:

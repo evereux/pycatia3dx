@@ -20,18 +20,18 @@ class VPMRepOccurrences(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     VPMRepOccurrences
-                | 
-                | Interface representing a list of PLM Rep Occurrences.
-                | 
-                | Role : This collections contains the list of PLM Rep Occurrences
-                | under a PLM Occurrence Use : In order to retrieve this collection,
-                | please refer to the service :
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    VPMRepOccurrences
+                
+                Interface representing a list of PLM Rep Occurrences.
+                
+                Role : This collections contains the list of PLM Rep Occurrences
+                under a PLM Occurrence Use : In order to retrieve this collection,
+                please refer to the service :
     
     """
 
@@ -44,33 +44,33 @@ class VPMRepOccurrences(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As VPMRepOccurrence
-                |     Returns a PLM Rep Occurrence from its index.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the PLM Rep Occurrence to retrieve from the
-                |             collection. As a numerics, this index is the rank of the rep occurrence in the
-                |             collection. The index of the first rep occurrence in the collection is 1, and
-                |             the index of the last rep occurrence is returned by Collection.get_Count
-                |             method. 
-                | 
-                |     Returns:
-                |         The retrieved PLM Rep Occurrence. 
-                |     Example:
-                | 
-                |             This example shows you how to retrieve the third rep occurrence
-                |             beneath an occurrence (oOccurrenceToScan)
-                |            
-                | 
-                |            Dim  oRepOccurrenceToRetrieve  As VPMRepOccurrence
-                |            Dim oOccurrenceToScan As VPMOccurrence
-                |            ...
-                |            Dim  cListRepOccurrences As VPMRepOccurrences
-                |            Set cListOccurrences = oOccurrenceToScan.RepOccurrences
-                |            ...
-                |            Set  oRepOccurrenceToRetrieve = cListOccurrences.Item( 3 )
+                Func Item(CATVariant iIndex) As VPMRepOccurrence
+                    Returns a PLM Rep Occurrence from its index.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the PLM Rep Occurrence to retrieve from the
+                            collection. As a numerics, this index is the rank of the rep occurrence in the
+                            collection. The index of the first rep occurrence in the collection is 1, and
+                            the index of the last rep occurrence is returned by Collection.get_Count
+                            method. 
+                
+                    Returns:
+                        The retrieved PLM Rep Occurrence. 
+                    Example:
+                
+                            This example shows you how to retrieve the third rep occurrence
+                            beneath an occurrence (oOccurrenceToScan)
+                           
+                
+                           Dim  oRepOccurrenceToRetrieve  As VPMRepOccurrence
+                           Dim oOccurrenceToScan As VPMOccurrence
+                           ...
+                           Dim  cListRepOccurrences As VPMRepOccurrences
+                           Set cListOccurrences = oOccurrenceToScan.RepOccurrences
+                           ...
+                           Set  oRepOccurrenceToRetrieve = cListOccurrences.Item( 3 )
 
         :param CATVariant i_index:
         :return: VPMRepOccurrence

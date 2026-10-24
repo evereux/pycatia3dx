@@ -17,17 +17,17 @@ class CloseSurface(SurfaceBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             CloseSurface
-                | 
-                | Represents the Close feature.
-                | It Closes a skin .
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            CloseSurface
+                
+                Represents the Close feature.
+                It Closes a skin .
 
     """
 

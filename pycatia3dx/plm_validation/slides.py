@@ -21,14 +21,14 @@ class Slides(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Slides
-                | 
-                | A collection of Slides.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    Slides
+                
+                A collection of Slides.
     
     """
 
@@ -41,22 +41,22 @@ class Slides(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As Slide
-                |     Creates a Slide and adds it to the Slide collection.
-                | 
-                |     Parameters:
-                | 
-                |         iSlide
-                |             The Slide 
-                | 
-                |     Example:
-                | 
-                |             This example creates a new Slide in the cSlides
-                |             collection.
-                |             
-                | 
-                |             Dim oNewSlideText As Slide
-                |             Set oNewSlideText = cSlides.Add
+                Func Add() As Slide
+                    Creates a Slide and adds it to the Slide collection.
+                
+                    Parameters:
+                
+                        iSlide
+                            The Slide 
+                
+                    Example:
+                
+                            This example creates a new Slide in the cSlides
+                            collection.
+                            
+                
+                            Dim oNewSlideText As Slide
+                            Set oNewSlideText = cSlides.Add
 
         :return: Slide
         """
@@ -67,32 +67,32 @@ class Slides(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Slide using its index from the Slides
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Slide to retrieve from the collection
-                |             of Slides. As a numerics, this index is the rank of the Slide in the
-                |             collection. The index of the first Slide in the collection is 1, and the index
-                |             of the last Slide is Count. As a string, it is the name you assigned to the
-                |             Slide. 
-                | 
-                |     Returns:
-                |         The retrieved Slide 
-                |     Example:
-                | 
-                |             This example retrieves in oSlide1 the ninth Slide,
-                |             and in oSlide2 the Slide named
-                |             Slide3 from the cSlides collection. 
-                |             
-                | 
-                |             Dim oSlide1 As Slide
-                |             Set oSlide1 = cSlides.Item(9)
-                |             Dim oSlide2 As Slide
-                |             Set oSlide2 = cSlides.Item("Slide3")
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Slide using its index from the Slides
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Slide to retrieve from the collection
+                            of Slides. As a numerics, this index is the rank of the Slide in the
+                            collection. The index of the first Slide in the collection is 1, and the index
+                            of the last Slide is Count. As a string, it is the name you assigned to the
+                            Slide. 
+                
+                    Returns:
+                        The retrieved Slide 
+                    Example:
+                
+                            This example retrieves in oSlide1 the ninth Slide,
+                            and in oSlide2 the Slide named
+                            Slide3 from the cSlides collection. 
+                            
+                
+                            Dim oSlide1 As Slide
+                            Set oSlide1 = cSlides.Item(9)
+                            Dim oSlide2 As Slide
+                            Set oSlide2 = cSlides.Item("Slide3")
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -104,27 +104,27 @@ class Slides(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Slide from the Slides collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Slide to retrieve from the collection
-                |             of Slides. As a numerics, this index is the rank of the Slide in the
-                |             collection. The index of the first Slide in the collection is 1, and the index
-                |             of the last Slide is Count. As a string, it is the name you assigned to the
-                |             Slide. 
-                | 
-                |     Example:
-                | 
-                |             The following example removes the tenth Slide and the Slide
-                |             named
-                |             Slide2 from the cSlides collection.
-                |             
-                | 
-                |             cSlides.Remove(10)
-                |             cSlides.Remove("Slide2")
+                Sub Remove(CATVariant iIndex)
+                    Removes a Slide from the Slides collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Slide to retrieve from the collection
+                            of Slides. As a numerics, this index is the rank of the Slide in the
+                            collection. The index of the first Slide in the collection is 1, and the index
+                            of the last Slide is Count. As a string, it is the name you assigned to the
+                            Slide. 
+                
+                    Example:
+                
+                            The following example removes the tenth Slide and the Slide
+                            named
+                            Slide2 from the cSlides collection.
+                            
+                
+                            cSlides.Remove(10)
+                            cSlides.Remove("Slide2")
 
         :param CATVariant i_index:
         :return: None

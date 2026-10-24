@@ -18,20 +18,20 @@ class HybridShapeSpine(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeSpine
-                | 
-                | Represents the hybrid spine curve feature object.
-                | Role:Use the CATIAHybridShapeFactory to create a HybridShapeSpine
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeSpine
+                
+                Represents the hybrid spine curve feature object.
+                Role:Use the CATIAHybridShapeFactory to create a HybridShapeSpine
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -45,9 +45,9 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Gets or Sets the orientation. Orientation by reference with the normal to
-                |     the first section/plane
+                Property Orientation() As long
+                    Gets or Sets the orientation. Orientation by reference with the normal to
+                    the first section/plane
 
         :return: int
         """
@@ -68,8 +68,8 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property StartPoint() As Reference
-                |     Returns or sets the start point of the spine.
+                Property StartPoint() As Reference
+                    Returns or sets the start point of the spine.
 
         :return: Reference
         """
@@ -89,13 +89,13 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddGuide(Reference iGuide)
-                |     Adds a guide to the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         iGuide
-                |             The guide curve to be added
+                Sub AddGuide(Reference iGuide)
+                    Adds a guide to the spine curve.
+                
+                    Parameters:
+                
+                        iGuide
+                            The guide curve to be added
 
         :param Reference i_guide:
         :return: None
@@ -107,15 +107,15 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub AddSection(Reference iSection)
-                |     Adds a section or a plane to the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         iSection
-                |             The section curve or plane to be added
-                | 
-                |             Sub-element(s) supported (see Boundary object): PlanarFace.
+                Sub AddSection(Reference iSection)
+                    Adds a section or a plane to the spine curve.
+                
+                    Parameters:
+                
+                        iSection
+                            The section curve or plane to be added
+                
+                            Sub-element(s) supported (see Boundary object): PlanarFace.
 
         :param Reference i_section:
         :return: None
@@ -127,15 +127,15 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetGuide(long iIdx,Reference opIAGuide)
-                |     Retrieves a guide .
-                | 
-                |     Parameters:
-                | 
-                |         iIdx
-                |             The index of the guide 
-                |         opIAGuide
-                |             The guide retrieved
+                Sub GetGuide(long iIdx,Reference opIAGuide)
+                    Retrieves a guide .
+                
+                    Parameters:
+                
+                        iIdx
+                            The index of the guide 
+                        opIAGuide
+                            The guide retrieved
 
         :param int i_idx:
         :param Reference op_ia_guide:
@@ -148,13 +148,13 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNumberOfGuides() As long
-                |     Retrieves number of guides in a spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         oNbGuides
-                |             Number of guides in a spine curve
+                Func GetNumberOfGuides() As long
+                    Retrieves number of guides in a spine curve.
+                
+                    Parameters:
+                
+                        oNbGuides
+                            Number of guides in a spine curve
 
         :return: int
         """
@@ -165,13 +165,13 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetNumberOfSections() As long
-                |     Retrieves number of sections in a spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         oNbSections
-                |             Number of sections in a spine curve
+                Func GetNumberOfSections() As long
+                    Retrieves number of sections in a spine curve.
+                
+                    Parameters:
+                
+                        oNbSections
+                            Number of sections in a spine curve
 
         :return: int
         """
@@ -182,15 +182,15 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetSection(long iIdx,Reference oSection)
-                |     Retrieves a section or a plane.
-                | 
-                |     Parameters:
-                | 
-                |         iIdx
-                |             The index of the section 
-                |         oSection
-                |             The section retrieved
+                Sub GetSection(long iIdx,Reference oSection)
+                    Retrieves a section or a plane.
+                
+                    Parameters:
+                
+                        iIdx
+                            The index of the section 
+                        oSection
+                            The section retrieved
 
         :param int i_idx:
         :param Reference o_section:
@@ -203,16 +203,16 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ModifyGuideCurve(Reference ipIAGuide,Reference
-                | ipIANewGuide)
-                |     Modifies a guide from the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         ipIAGuide
-                |             The guide curve to be replaced. 
-                |         ipIANewGuide
-                |             The new guide curve or plane which replaces the old one.
+                Sub ModifyGuideCurve(Reference ipIAGuide,Reference
+                ipIANewGuide)
+                    Modifies a guide from the spine curve.
+                
+                    Parameters:
+                
+                        ipIAGuide
+                            The guide curve to be replaced. 
+                        ipIANewGuide
+                            The new guide curve or plane which replaces the old one.
 
         :param Reference ip_ia_guide:
         :param Reference ip_ia_new_guide:
@@ -225,16 +225,16 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ModifySectionCurve(Reference ipIASection,Reference
-                | ipIANewSection)
-                |     Modifies a section or a plane from the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         ipIASection
-                |             The section curve or plane to be replaced. 
-                |         ipIANewSection
-                |             The new section curve or plane which replaces the old one.
+                Sub ModifySectionCurve(Reference ipIASection,Reference
+                ipIANewSection)
+                    Modifies a section or a plane from the spine curve.
+                
+                    Parameters:
+                
+                        ipIASection
+                            The section curve or plane to be replaced. 
+                        ipIANewSection
+                            The new section curve or plane which replaces the old one.
 
         :param Reference ip_ia_section:
         :param Reference ip_ia_new_section:
@@ -247,13 +247,13 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveGuide(Reference iGuide)
-                |     Removes a guide from the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         iGuide
-                |             The guide curve to be removed.
+                Sub RemoveGuide(Reference iGuide)
+                    Removes a guide from the spine curve.
+                
+                    Parameters:
+                
+                        iGuide
+                            The guide curve to be removed.
 
         :param Reference i_guide:
         :return: None
@@ -265,14 +265,14 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveSection(Reference iSection)
-                |     Removes a section or a plane from the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         iSection
-                |             The section curve or plane to be removed.
-                |             Sub-element(s) supported (see Boundary object): PlanarFace.
+                Sub RemoveSection(Reference iSection)
+                    Removes a section or a plane from the spine curve.
+                
+                    Parameters:
+                
+                        iSection
+                            The section curve or plane to be removed.
+                            Sub-element(s) supported (see Boundary object): PlanarFace.
 
         :param Reference i_section:
         :return: None
@@ -284,15 +284,15 @@ class HybridShapeSpine(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetStartPoint(Reference iPoint)
-                |     Sets the start point of the spine curve.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             The point to be set as the spine curve start
-                |             point.
-                |             Sub-element(s) supported (see Boundary object): Vertex.
+                Sub SetStartPoint(Reference iPoint)
+                    Sets the start point of the spine curve.
+                
+                    Parameters:
+                
+                        iPoint
+                            The point to be set as the spine curve start
+                            point.
+                            Sub-element(s) supported (see Boundary object): Vertex.
 
         :param Reference i_point:
         :return: None

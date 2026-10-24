@@ -17,16 +17,16 @@ class ManufacturingMachineMotion(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMachineMotion
-                | 
-                | Interface dedicated to machine positioning.
-                | Role: This interface offers services to move the machine at applicative
-                | positions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMachineMotion
+                
+                Interface dedicated to machine positioning.
+                Role: This interface offers services to move the machine at applicative
+                positions.
     
     """
 
@@ -39,27 +39,27 @@ class ManufacturingMachineMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Func MoveTo(CATSafeArrayVariant iPositionCoordinates,CATSafeArrayVariant
-                | iDirectionCoordinates) As boolean
-                |     Move the current machine at given position.
+                Func MoveTo(CATSafeArrayVariant iPositionCoordinates,CATSafeArrayVariant
+                iDirectionCoordinates) As boolean
+                    Move the current machine at given position.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iPositionCoordinates
-                |             The point where to move the machine, as an array of 3 values.
+                        iPositionCoordinates
+                            The point where to move the machine, as an array of 3 values.
                 |
-                |         iDirectionCoordinates
-                |             The axial direction where to move the machine, as an array of 3
-                |             values.
-                |         obIsReachable
-                |             Get whether the position is reachable.
+                        iDirectionCoordinates
+                            The axial direction where to move the machine, as an array of 3
+                            values.
+                        obIsReachable
+                            Get whether the position is reachable.
                 |
-                |     Returns:
-                |         Return code.
-                |         Legal values:
+                    Returns:
+                        Return code.
+                        Legal values:
                 |
-                |             S_OK: move is successful
-                |             E_FAIL: otherwise
+                            S_OK: move is successful
+                            E_FAIL: otherwise
 
         :param tuple i_position_coordinates:
         :param tuple i_direction_coordinates:
@@ -88,18 +88,18 @@ class ManufacturingMachineMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func MoveToManufacturingFastener(AnyObject iManufacturingFastener) As
-                | boolean
-                |     Move the current machine at position of given manufacturing
-                |     fastener.
-                | 
-                |     Parameters:
-                | 
-                |         iManufacturingFastener
-                |             The manufacturing fastener where to move the machine.
-                |             
-                |         obIsReachable
-                |             Get whether the position is reachable.
+                Func MoveToManufacturingFastener(AnyObject iManufacturingFastener) As
+                boolean
+                    Move the current machine at position of given manufacturing
+                    fastener.
+                
+                    Parameters:
+                
+                        iManufacturingFastener
+                            The manufacturing fastener where to move the machine.
+                            
+                        obIsReachable
+                            Get whether the position is reachable.
 
         :param AnyObject i_manufacturing_fastener:
         :return: bool
@@ -111,8 +111,8 @@ class ManufacturingMachineMotion(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RestorePosition()
-                |     Restore the machine at its original position.
+                Sub RestorePosition()
+                    Restore the machine at its original position.
 
         :return: None
         """

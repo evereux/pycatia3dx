@@ -17,20 +17,20 @@ class HybridShapeLineExplicit(Line):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Line
-                |                             HybridShapeLineExplicit
-                | 
-                | Represents the hybrid shape line explicit feature object.
-                | Role: Declare hybrid shape line explicit feature object.
-                | 
-                | See also:
-                |     HybridShapeFactory.AddNewLineDatum
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Line
+                                            HybridShapeLineExplicit
+                
+                Represents the hybrid shape line explicit feature object.
+                Role: Declare hybrid shape line explicit feature object.
+                
+                See also:
+                    HybridShapeFactory.AddNewLineDatum
     
     """
 

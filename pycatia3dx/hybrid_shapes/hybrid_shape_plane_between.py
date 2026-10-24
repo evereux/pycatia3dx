@@ -19,14 +19,14 @@ class HybridShapePlaneBetween(Plane):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Plane
-                |                             HybridShapePlaneBetween
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Plane
+                                            HybridShapePlaneBetween
 
     
     """
@@ -41,16 +41,16 @@ class HybridShapePlaneBetween(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstElement() As Reference
-                |     Returns or sets the first reference Plane.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in RefPlane1 the first reference Plane for the
-                |         PlaneBetween hybrid shape feature.
-                | 
-                |          Dim RefPlane1 As Reference
-                |          Set RefPlane1 = PlaneBetween.FirstPlane
+                Property FirstElement() As Reference
+                    Returns or sets the first reference Plane.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in RefPlane1 the first reference Plane for the
+                        PlaneBetween hybrid shape feature.
+                
+                         Dim RefPlane1 As Reference
+                         Set RefPlane1 = PlaneBetween.FirstPlane
 
         :return: Reference
         """
@@ -71,16 +71,16 @@ class HybridShapePlaneBetween(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Returns or sets the orientation. Role:
-                |     Orientation = 1 means that distance is measured from the second Plane
-                | 
-                |     Example:
-                |         This example retrieves in Orient the orientation for the PlaneBetween
-                |         hybrid shape feature.
-                | 
-                |          Dim Orient As long
-                |          Set Orient = PlaneBetween.Orientation
+                Property Orientation() As long
+                    Returns or sets the orientation. Role:
+                    Orientation = 1 means that distance is measured from the second Plane
+                
+                    Example:
+                        This example retrieves in Orient the orientation for the PlaneBetween
+                        hybrid shape feature.
+                
+                         Dim Orient As long
+                         Set Orient = PlaneBetween.Orientation
 
         :return: int
         """
@@ -101,16 +101,16 @@ class HybridShapePlaneBetween(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Ratio() As RealParam (Read Only)
-                |     Get the ratio. Role:
-                |     if d1 is the distance between the first Plane and the created Plane, and d2 is the distance between the first Plane and the second Plane, then ratio = d1/d2.
-                | 
-                |     Example:
-                |         This example retrieves in ratio the orientation for the PlaneBetween
-                |         hybrid shape feature.
-                | 
-                |          Dim ratio  As CATIARealParam
-                |          Get ratio = PlaneBetween.Ratio
+                Property Ratio() As RealParam (Read Only)
+                    Get the ratio. Role:
+                    if d1 is the distance between the first Plane and the created Plane, and d2 is the distance between the first Plane and the second Plane, then ratio = d1/d2.
+                
+                    Example:
+                        This example retrieves in ratio the orientation for the PlaneBetween
+                        hybrid shape feature.
+                
+                         Dim ratio  As CATIARealParam
+                         Get ratio = PlaneBetween.Ratio
 
         :return: RealParam
         """
@@ -123,16 +123,16 @@ class HybridShapePlaneBetween(Plane):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondElement() As Reference
-                |     Returns or sets the second reference Plane.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in RefPlane2 the second reference Plane for the
-                |         PlaneBetween hybrid shape feature.
-                | 
-                |          Dim RefPlane2 As Reference
-                |          Set RefPlane2 = PlaneBetween.SecondPlane
+                Property SecondElement() As Reference
+                    Returns or sets the second reference Plane.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in RefPlane2 the second reference Plane for the
+                        PlaneBetween hybrid shape feature.
+                
+                         Dim RefPlane2 As Reference
+                         Set RefPlane2 = PlaneBetween.SecondPlane
 
         :return: Reference
         """

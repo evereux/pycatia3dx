@@ -16,18 +16,18 @@ class RscReturn(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscReturn
-                | 
-                | Interface representing a Resource Return Instruction.
-                | 
-                | Role: This interface represents a RscReturn Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscReturn
+                
+                Interface representing a Resource Return Instruction.
+                
+                Role: This interface represents a RscReturn Instruction in a Resource
+                Task
 
     """
 

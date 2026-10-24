@@ -17,12 +17,12 @@ class SpotDrSequence(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrSequence
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrSequence
 
     
     """
@@ -36,19 +36,19 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDrillRivetProfile(short iPosIndex) As AnyObject
-                |     Get the assigned Drill-Rivet Profile for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oDRProfile
-                |             Assigned Drill-Rivet Profile 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetDrillRivetProfile(short iPosIndex) As AnyObject
+                    Get the assigned Drill-Rivet Profile for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oDRProfile
+                            Assigned Drill-Rivet Profile 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: AnyObject
@@ -60,18 +60,18 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingFastener(short iPosIndex) As AnyObject
-                |     Get the Fastener associated to the specified index.
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         opFastener
-                |             Manufacturing Fastener. 
-                | 
-                |     Returns:
-                |         S_OK = Successfully get the handle to Manufacturing Fastener. E_FAIL = Failed to get the associated Manufacturing Fastener.
+                Func GetManufacturingFastener(short iPosIndex) As AnyObject
+                    Get the Fastener associated to the specified index.
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        opFastener
+                            Manufacturing Fastener. 
+                
+                    Returns:
+                        S_OK = Successfully get the handle to Manufacturing Fastener. E_FAIL = Failed to get the associated Manufacturing Fastener.
 
         :param int i_pos_index:
         :return: AnyObject
@@ -83,16 +83,16 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetManufacturingPattern() As AnyObject
-                |     Get the Pattern associated to the Sequence
-                | 
-                |     Parameters:
-                | 
-                |         opPattern
-                |             Manufacturing Pattern. 
-                | 
-                |     Returns:
-                |         S_OK = Successfully get the handle to Manufacturing Pattern. E_FAIL = Failed to get the associated Manufacturing Pattern.
+                Func GetManufacturingPattern() As AnyObject
+                    Get the Pattern associated to the Sequence
+                
+                    Parameters:
+                
+                        opPattern
+                            Manufacturing Pattern. 
+                
+                    Returns:
+                        S_OK = Successfully get the handle to Manufacturing Pattern. E_FAIL = Failed to get the associated Manufacturing Pattern.
 
         :return: AnyObject
         """
@@ -103,19 +103,19 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetObjectProfile(short iPosIndex) As AnyObject
-                |     Get the assigned Object Frame Profile for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oObjectProfile
-                |             Assigned Object Frame Profile 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetObjectProfile(short iPosIndex) As AnyObject
+                    Get the assigned Object Frame Profile for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oObjectProfile
+                            Assigned Object Frame Profile 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: AnyObject
@@ -127,23 +127,23 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPositionCoordinates(short iPosIndex) As
-                | CATSafeArrayVariant
-                |     Gets the position coordinates(like X, Y, Z, Y, P, R) for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oFastenerPosCoords
-                |             The X, Y, Z, Y, P, R values of pattern position The position are of
-                |             double type. The values get via CATSafeArrayVariant for oFastenerPosCoords is
-                |             array of double pointers, having 6 position values.
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetPositionCoordinates(short iPosIndex) As
+                CATSafeArrayVariant
+                    Gets the position coordinates(like X, Y, Z, Y, P, R) for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oFastenerPosCoords
+                            The X, Y, Z, Y, P, R values of pattern position The position are of
+                            double type. The values get via CATSafeArrayVariant for oFastenerPosCoords is
+                            array of double pointers, having 6 position values.
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: tuple
@@ -155,18 +155,18 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetToolProfile(short iPosIndex) As AnyObject
-                |     Get the assigned Tool Profile for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         oToolProfile
-                |             Assigned ToolProfile 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Func GetToolProfile(short iPosIndex) As AnyObject
+                    Get the assigned Tool Profile for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        oToolProfile
+                            Assigned ToolProfile 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :return: AnyObject
@@ -178,19 +178,19 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDrillRivetProfile(short iPosIndex,AnyObject iDRProfile)
-                |     Get the assigned Drill-Rivet Profile for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iDRProfile
-                |             Drill-Rivet Profile to Assign. 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetDrillRivetProfile(short iPosIndex,AnyObject iDRProfile)
+                    Get the assigned Drill-Rivet Profile for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iDRProfile
+                            Drill-Rivet Profile to Assign. 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param AnyObject i_dr_profile:
@@ -203,18 +203,18 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetObjectProfile(short iPosIndex,AnyObject iObjectProfile)
-                |     Set the Object Frame Profile for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iObjectProfile
-                |             Object Frame Profile to Assign 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetObjectProfile(short iPosIndex,AnyObject iObjectProfile)
+                    Set the Object Frame Profile for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iObjectProfile
+                            Object Frame Profile to Assign 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param AnyObject i_object_profile:
@@ -227,23 +227,23 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPositionCoordinates(short iPosIndex,CATSafeArrayVariant
-                | iFastenerPosCoords)
-                |     Sets the position coordinates(like X, Y, Z, Y, P, R) for the specified
-                |     index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iFastenerPosCoords
-                |             The X, Y, Z, Y, P, R values of pattern position The position are of
-                |             double type. The values get via CATSafeArrayVariant for oFastenerPosCoords is
-                |             array of double pointers, having 6 position values.
-                |             
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error
+                Sub SetPositionCoordinates(short iPosIndex,CATSafeArrayVariant
+                iFastenerPosCoords)
+                    Sets the position coordinates(like X, Y, Z, Y, P, R) for the specified
+                    index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iFastenerPosCoords
+                            The X, Y, Z, Y, P, R values of pattern position The position are of
+                            double type. The values get via CATSafeArrayVariant for oFastenerPosCoords is
+                            array of double pointers, having 6 position values.
+                            
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error
 
         :param int i_pos_index:
         :param tuple i_fastener_pos_coords:
@@ -256,18 +256,18 @@ class SpotDrSequence(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetToolProfile(short iPosIndex,AnyObject iToolProfile)
-                |     Set the Tool Profile for the specified index
-                | 
-                |     Parameters:
-                | 
-                |         iPosIndex
-                |             The position Index 
-                |         iToolProfile
-                |             Tool Profile to Assign 
-                | 
-                |     Returns:
-                |         S_OK = Success. E_FAIL = Error 
+                Sub SetToolProfile(short iPosIndex,AnyObject iToolProfile)
+                    Set the Tool Profile for the specified index
+                
+                    Parameters:
+                
+                        iPosIndex
+                            The position Index 
+                        iToolProfile
+                            Tool Profile to Assign 
+                
+                    Returns:
+                        S_OK = Success. E_FAIL = Error 
 
         :param int i_pos_index:
         :param AnyObject i_tool_profile:

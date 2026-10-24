@@ -18,35 +18,35 @@ class SimConnectorDampings(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimConnectorDampings
-                | 
-                | Represents the Connector Dampings collection.
-                | 
-                | Example:
-                |     Given a SimConnectorBehavior object you can retrieve a SimConnectorDampings
-                |     collection as following:
-                | 
-                |      Dim MyConnectorBehavior As SimConnectorBehavior
-                |      ...
-                |      Dim MyConnectorDampings As SimConnectorDampings
-                |      Set MyConnectorDampings = MyConnectorBehavior.ConnectorDampings
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimConnectorBehavior object you can retrieve a SimConnectorDampings
-                |     collection as following:
-                | 
-                |      ...
-                |      myConnectorDampings = myConnectorBehavior.ConnectorDampings
-                |      
-                | 
-                | See also:
-                |     SimConnectorBehavior
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimConnectorDampings
+                
+                Represents the Connector Dampings collection.
+                
+                Example:
+                    Given a SimConnectorBehavior object you can retrieve a SimConnectorDampings
+                    collection as following:
+                
+                     Dim MyConnectorBehavior As SimConnectorBehavior
+                     ...
+                     Dim MyConnectorDampings As SimConnectorDampings
+                     Set MyConnectorDampings = MyConnectorBehavior.ConnectorDampings
+                     
+                
+                Example in Python:
+                    Given a SimConnectorBehavior object you can retrieve a SimConnectorDampings
+                    collection as following:
+                
+                     ...
+                     myConnectorDampings = myConnectorBehavior.ConnectorDampings
+                     
+                
+                See also:
+                    SimConnectorBehavior
     
     """
 
@@ -60,19 +60,19 @@ class SimConnectorDampings(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(SimDof iDegreeOfFreedom) As CATBaseDispatch
-                |     Creates a Connector Damping object and returns it.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom for which the Connector Damping will be
-                |             created. 
-                |         ospConnectorDamping[out]
-                |             The created Connector Damping. 
-                | 
-                |     Returns:
-                |         The SimConnectorDamping object
+                Func Add(SimDof iDegreeOfFreedom) As CATBaseDispatch
+                    Creates a Connector Damping object and returns it.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom for which the Connector Damping will be
+                            created. 
+                        ospConnectorDamping[out]
+                            The created Connector Damping. 
+                
+                    Returns:
+                        The SimConnectorDamping object
 
         :param int i_degree_of_freedom:
         :return: AnyObject
@@ -84,17 +84,17 @@ class SimConnectorDampings(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Connector Damping from the collection of Connector
-                |     Dampings.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Connector Damping. 
-                | 
-                |     Returns:
-                |         The SimConnectorDamping object
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Connector Damping from the collection of Connector
+                    Dampings.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Connector Damping. 
+                
+                    Returns:
+                        The SimConnectorDamping object
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -106,14 +106,14 @@ class SimConnectorDampings(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(SimDof iDegreeOfFreedom)
-                |     Removes the specified Connector Damping.
-                | 
-                |     Parameters:
-                | 
-                |         iDegreeOfFreedom[in]
-                |             The degree of freedom for which the Connector Damping will be
-                |             removed.
+                Sub Remove(SimDof iDegreeOfFreedom)
+                    Removes the specified Connector Damping.
+                
+                    Parameters:
+                
+                        iDegreeOfFreedom[in]
+                            The degree of freedom for which the Connector Damping will be
+                            removed.
 
         :param int i_degree_of_freedom:
         :return: None
@@ -125,8 +125,8 @@ class SimConnectorDampings(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAll()
-                |     Removes all Connector Dampings. 
+                Sub RemoveAll()
+                    Removes all Connector Dampings. 
 
         :return: None
         """

@@ -17,51 +17,51 @@ class SimMassPerLength(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMassPerLength
-                | 
-                | Represents the Mass Per Length object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimMassPerLength as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyMassPerLength As SimMassPerLength
-                |      Set MyMassPerLength = MyAbstractions.Add("SimMassPerLength")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimMassPerLength named
-                |     "Mass Per Length.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyMassPerLength As SimMassPerLength
-                |      Set MyMassPerLength = MyAbstractions.Item("Mass Per Length.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimMassPerLength as following:
-                | 
-                |      ...
-                |      myMassPerLength = myAbstractions.Add("SimMassPerLength")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimMassPerLength named "Mass Per Length.1" as following:
-                | 
-                |      ...
-                |      myMassPerLength = myAbstractions.Item("Mass Per Length.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMassPerLength
+                
+                Represents the Mass Per Length object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimMassPerLength as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyMassPerLength As SimMassPerLength
+                     Set MyMassPerLength = MyAbstractions.Add("SimMassPerLength")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimMassPerLength named
+                    "Mass Per Length.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyMassPerLength As SimMassPerLength
+                     Set MyMassPerLength = MyAbstractions.Item("Mass Per Length.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimMassPerLength as following:
+                
+                     ...
+                     myMassPerLength = myAbstractions.Add("SimMassPerLength")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimMassPerLength named "Mass Per Length.1" as following:
+                
+                     ...
+                     myMassPerLength = myAbstractions.Item("Mass Per Length.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -75,9 +75,9 @@ class SimMassPerLength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ContributionType() As
-                | SimNonstructuralMassApplicationMethod
-                |     Returns or sets the nonstructural mass contribution type.
+                Property ContributionType() As
+                SimNonstructuralMassApplicationMethod
+                    Returns or sets the nonstructural mass contribution type.
 
         :return: int
         """
@@ -98,15 +98,15 @@ class SimMassPerLength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the mass magnitude used for the nonstructural
-                |     mass.
-                |     If the contribution type is TotalMass then the unit is : Quantity: MASS, units: Kg.
-                |     Else the unit depends of the feature's type :
-                | 
-                |         MassPerVolume : Quantity: DENSITY, units: Kg_m3
-                |         MassPerArea : Quantity: SURFACICMASS, units: Kg_m2
-                |         MassPerLength : Quantity: LINEMASS, units: Kg_m
+                Property Magnitude() As double
+                    Returns or sets the mass magnitude used for the nonstructural
+                    mass.
+                    If the contribution type is TotalMass then the unit is : Quantity: MASS, units: Kg.
+                    Else the unit depends of the feature's type :
+                
+                        MassPerVolume : Quantity: DENSITY, units: Kg_m3
+                        MassPerArea : Quantity: SURFACICMASS, units: Kg_m2
+                        MassPerLength : Quantity: LINEMASS, units: Kg_m
 
         :return: float
         """
@@ -127,33 +127,33 @@ class SimMassPerLength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -166,10 +166,10 @@ class SimMassPerLength(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TotalMassDistributionMethod() As
-                | SimNonstructuralMassTotalMassDistributionMethod
-                |     Returns or sets the mass distribution used for the selected type of
-                |     nonstructural mass. 
+                Property TotalMassDistributionMethod() As
+                SimNonstructuralMassTotalMassDistributionMethod
+                    Returns or sets the mass distribution used for the selected type of
+                    nonstructural mass. 
 
         :return: int
         """

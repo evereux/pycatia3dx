@@ -20,12 +20,12 @@ class StrFlanges(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrFlanges
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrFlanges
 
     
     """
@@ -39,23 +39,23 @@ class StrFlanges(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As StrFlange
-                |     Adds a flange under this Plate. (@see CATIAStrFlange)
-                | 
-                |     Parameters:
-                | 
-                |         oFlange
-                |             Flange 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example creates a flange under this plate.
-                |              
-                | 
-                |               Dim ObjStrFlanges As StrFlanges
-                |               Set ObjStrFlanges = iObjSfdPlate.Flanges
-                |              Set oObjStrFlange = ObjStrFlanges.Add
+                Func Add() As StrFlange
+                    Adds a flange under this Plate. (@see CATIAStrFlange)
+                
+                    Parameters:
+                
+                        oFlange
+                            Flange 
+                
+                    Example:
+                
+                
+                             This example creates a flange under this plate.
+                             
+                
+                              Dim ObjStrFlanges As StrFlanges
+                              Set ObjStrFlanges = iObjSfdPlate.Flanges
+                             Set oObjStrFlange = ObjStrFlanges.Add
 
         :return: StrFlange
         """
@@ -66,23 +66,23 @@ class StrFlanges(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As StrFlange
-                |     Returns a flange from a list of flanges. (@see
-                |     CATIAStrFlange)
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of StrFlange 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves  the first flange from the list of
-                |              flanges.
-                |              
-                | 
-                |               Set FlangeReference = ListOfFlanges.Item(1)
+                Func Item(CATVariant iIndex) As StrFlange
+                    Returns a flange from a list of flanges. (@see
+                    CATIAStrFlange)
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of StrFlange 
+                
+                    Example:
+                
+                
+                             This example retrieves  the first flange from the list of
+                             flanges.
+                             
+                
+                              Set FlangeReference = ListOfFlanges.Item(1)
 
         :param CATVariant i_index:
         :return: StrFlange
@@ -94,21 +94,21 @@ class StrFlanges(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(StrFlange iFlange)
-                |     Removes the Flange.
-                | 
-                |     Parameters:
-                | 
-                |         iFlange
-                |             Flange 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example removes the flange.
-                |              
-                | 
-                |               ObjStrFlanges.Remove ObjStrFlange
+                Sub Remove(StrFlange iFlange)
+                    Removes the Flange.
+                
+                    Parameters:
+                
+                        iFlange
+                            Flange 
+                
+                    Example:
+                
+                
+                             This example removes the flange.
+                             
+                
+                              ObjStrFlanges.Remove ObjStrFlange
 
         :param StrFlange i_flange:
         :return: None

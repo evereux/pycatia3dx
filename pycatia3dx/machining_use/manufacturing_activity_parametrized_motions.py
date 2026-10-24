@@ -17,14 +17,14 @@ class ManufacturingActivityParametrizedMotions(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingActivityParametrizedMotions
-                | 
-                | Interface to get the macros of an operation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingActivityParametrizedMotions
+                
+                Interface to get the macros of an operation.
     
     """
 
@@ -37,30 +37,30 @@ class ManufacturingActivityParametrizedMotions(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetValue(CATBSTR iName) As AnyObject
-                |     Gets the macro corresponding to the given type.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The type of the macro wanted. Authorized values
-                |             are:
-                | 
-                |                 MfgApproachMacro
-                |                 MfgRetractMacro
-                |                 MfgReturnOneLevelMacro
-                |                 MfgReturnTwoLevelMacro
-                |                 MfgLinkingMacro
-                |                 MfgReturnFinishPathMacro
-                |                 MfgClearanceMacro
-                |                 MfgBetweenPassesMacro
-                |                 MfgAutomaticRoughingMacro (for roughing
-                |                 operation)
-                |                 MfgPreRoughingMacro (for roughing operation)
-                |                 MfgPostRoughingMacro (for roughing operation)
-                | 
-                |     Returns:
-                |         The corresponding macro found.
+                Func GetValue(CATBSTR iName) As AnyObject
+                    Gets the macro corresponding to the given type.
+                
+                    Parameters:
+                
+                        iName
+                            The type of the macro wanted. Authorized values
+                            are:
+                
+                                MfgApproachMacro
+                                MfgRetractMacro
+                                MfgReturnOneLevelMacro
+                                MfgReturnTwoLevelMacro
+                                MfgLinkingMacro
+                                MfgReturnFinishPathMacro
+                                MfgClearanceMacro
+                                MfgBetweenPassesMacro
+                                MfgAutomaticRoughingMacro (for roughing
+                                operation)
+                                MfgPreRoughingMacro (for roughing operation)
+                                MfgPostRoughingMacro (for roughing operation)
+                
+                    Returns:
+                        The corresponding macro found.
 
         :param str i_name:
         :return: AnyObject

@@ -19,29 +19,29 @@ class HybridShapeLinePtPt(Line):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Line
-                |                             HybridShapeLinePtPt
-                | 
-                | Represents the hybrid shape line between two points feature
-                | object.
-                | Role: To access the data of the line feature created between two
-                | points.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeLinePtPt
-                | object.
-                | 
-                | See also:
-                |     Reference
-                | See also:
-                |     Length
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Line
+                                            HybridShapeLinePtPt
+                
+                Represents the hybrid shape line between two points feature
+                object.
+                Role: To access the data of the line feature created between two
+                points.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeLinePtPt
+                object.
+                
+                See also:
+                    Reference
+                See also:
+                    Length
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -55,16 +55,16 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property BeginOffset() As Length (Read Only)
-                |     Returns the start length of the line.
-                |     Start length : extension of the line, beginning at the starting point
-                | 
-                |     Example:
-                |         This example retrieves in oStart the beginning offset length for the
-                |         LinePtPt hybrid shape feature.
-                | 
-                |          Dim oStart As  CATIALength 
-                |          Set oStart = LinePtPt.BeginOffset
+                Property BeginOffset() As Length (Read Only)
+                    Returns the start length of the line.
+                    Start length : extension of the line, beginning at the starting point
+                
+                    Example:
+                        This example retrieves in oStart the beginning offset length for the
+                        LinePtPt hybrid shape feature.
+                
+                         Dim oStart As  CATIALength 
+                         Set oStart = LinePtPt.BeginOffset
 
         :return: Length
         """
@@ -77,16 +77,16 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property EndOffset() As Length (Read Only)
-                |     Returns the end length of the line.
-                |     End length : extension of the line, beginning at the ending point
-                | 
-                |     Example:
-                |         This example retrieves in oEnd the starting length for the LinePtPt
-                |         hybrid shape feature.
-                | 
-                |          Dim oEnd As  CATIALength 
-                |          Set oEnd = LinePtPt.EndOffset
+                Property EndOffset() As Length (Read Only)
+                    Returns the end length of the line.
+                    End length : extension of the line, beginning at the ending point
+                
+                    Example:
+                        This example retrieves in oEnd the starting length for the LinePtPt
+                        hybrid shape feature.
+                
+                         Dim oEnd As  CATIALength 
+                         Set oEnd = LinePtPt.EndOffset
 
         :return: Length
         """
@@ -99,17 +99,17 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PtExtremity() As Reference
-                |     Returns or Sets the extremity point of the LinePtPt(Second
-                |     Point).
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in oPtExtremity the ending point for the
-                |         LinePtPt hybrid shape feature.
-                | 
-                |          Dim oPtExtremity As Reference 
-                |          Set oPtExtremity = LinePtPt.PtExtremity
+                Property PtExtremity() As Reference
+                    Returns or Sets the extremity point of the LinePtPt(Second
+                    Point).
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in oPtExtremity the ending point for the
+                        LinePtPt hybrid shape feature.
+                
+                         Dim oPtExtremity As Reference 
+                         Set oPtExtremity = LinePtPt.PtExtremity
 
         :return: Reference
         """
@@ -130,17 +130,17 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PtOrigine() As Reference
-                |     Returns or Sets the origin point of the LinePtPt(First
-                |     point).
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in oPtOrigine the initial point for the LinePtPt
-                |         hybrid shape feature.
-                | 
-                |          Dim oPtOrigine As Reference 
-                |          Set oPtOrigine = LinePtPt.PtOrigine
+                Property PtOrigine() As Reference
+                    Returns or Sets the origin point of the LinePtPt(First
+                    point).
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in oPtOrigine the initial point for the LinePtPt
+                        hybrid shape feature.
+                
+                         Dim oPtOrigine As Reference 
+                         Set oPtOrigine = LinePtPt.PtOrigine
 
         :return: Reference
         """
@@ -161,18 +161,18 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or Sets the supporting surface.
-                |     Note: the support surface is not mandatory for LinePtPt
-                | 
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in oSurface the supporting surface (if it exist)
-                |         for the LinePtPt hybrid shape feature.
-                | 
-                |          Dim oSurface As Reference 
-                |          Set oSurface = LinePtPt.Surface
+                Property Support() As Reference
+                    Returns or Sets the supporting surface.
+                    Note: the support surface is not mandatory for LinePtPt
+                
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in oSurface the supporting surface (if it exist)
+                        for the LinePtPt hybrid shape feature.
+                
+                         Dim oSurface As Reference 
+                         Set oSurface = LinePtPt.Surface
 
         :return: Reference
         """
@@ -192,13 +192,13 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetLengthType() As long
-                |     Gets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Func GetLengthType() As long
+                    Gets the length type Default is 0.
+                
+                    Parameters:
+                
+                        oType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :return: int
         """
@@ -209,14 +209,14 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func GetSymmetricalExtension() As boolean
-                |     Gets whether the symmetrical extension of the line is
-                |     active.
-                | 
-                |     Parameters:
-                | 
-                |         oSym
-                |             Symetry flag
+                Func GetSymmetricalExtension() As boolean
+                    Gets whether the symmetrical extension of the line is
+                    active.
+                
+                    Parameters:
+                
+                        oSym
+                            Symetry flag
 
         :return: bool
         """
@@ -227,8 +227,8 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveSupport()
-                |     Removes the support surface.
+                Sub RemoveSupport()
+                    Removes the support surface.
 
         :return: None
         """
@@ -239,13 +239,13 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetLengthType(long iType)
-                |     Sets the length type Default is 0.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                Sub SetLengthType(long iType)
+                    Sets the length type Default is 0.
+                
+                    Parameters:
+                
+                        iType
+                            The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
         :return: None
@@ -257,13 +257,13 @@ class HybridShapeLinePtPt(Line):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetSymmetricalExtension(boolean iSym)
-                |     Sets the symmetrical extension of the line (start = -end).
-                | 
-                |     Parameters:
-                | 
-                |         iSym
-                |             Symetry flag
+                Sub SetSymmetricalExtension(boolean iSym)
+                    Sets the symmetrical extension of the line (start = -end).
+                
+                    Parameters:
+                
+                        iSym
+                            Symetry flag
 
         :param bool i_sym:
         :return: None

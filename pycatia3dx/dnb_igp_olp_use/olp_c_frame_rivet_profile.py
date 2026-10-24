@@ -19,19 +19,19 @@ class OLPCFrameRivetProfile(OLPProfile):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpProfile
-                |                         OlpCFrameRivetProfile
-                | 
-                | A CFrameRivet profile used for translating a robot program.
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command. If the OlpRobotMotionTarget is
-                | part of a OlpDrillRivetAction , it must be of Rivet type. This profile cannot
-                | be assigned to targets within Drill or DrillRivet Actions.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpProfile
+                                        OlpCFrameRivetProfile
+                
+                A CFrameRivet profile used for translating a robot program.
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command. If the OlpRobotMotionTarget is
+                part of a OlpDrillRivetAction , it must be of Rivet type. This profile cannot
+                be assigned to targets within Drill or DrillRivet Actions.
     
     """
 
@@ -45,8 +45,8 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApproachStage() As OlpDrillRivetStage
-                |     The approach stage object which allows configuration via its methods
+                Property ApproachStage() As OlpDrillRivetStage
+                    The approach stage object which allows configuration via its methods
 
         :return: OLPDrillRivetStage
         """
@@ -67,8 +67,8 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndStage() As OlpDrillRivetStage
-                |     The end stage object which allows configuration via its methods
+                Property EndStage() As OlpDrillRivetStage
+                    The end stage object which allows configuration via its methods
 
         :return: OLPDrillRivetStage
         """
@@ -89,8 +89,8 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RetractStage() As OlpDrillRivetStage
-                |     The retract stage object which allows configuration via its methods
+                Property RetractStage() As OlpDrillRivetStage
+                    The retract stage object which allows configuration via its methods
 
         :return: OLPDrillRivetStage
         """
@@ -111,8 +111,8 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StartStage() As OlpDrillRivetStage
-                |     The start stage object which allows configuration via its methods
+                Property StartStage() As OlpDrillRivetStage
+                    The start stage object which allows configuration via its methods
 
         :return: OLPDrillRivetStage
         """
@@ -132,12 +132,12 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAccuracyProfile() As OlpAccuracyProfile
-                |     Get the accuracy profile for the rivet stage of this
-                |     profile.
-                | 
-                |     Returns:
-                |         The accuracy profile.
+                Func GetAccuracyProfile() As OlpAccuracyProfile
+                    Get the accuracy profile for the rivet stage of this
+                    profile.
+                
+                    Returns:
+                        The accuracy profile.
 
         :return: OLPAccuracyProfile
         """
@@ -148,11 +148,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllProcessSchedules() As CATSafeArrayVariant
-                |     Get all linked applicative profile schedules.
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetAllProcessSchedules() As CATSafeArrayVariant
+                    Get all linked applicative profile schedules.
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :return: tuple
         """
@@ -163,11 +163,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetApproachDirection() As DELOlpAxisDirection
-                |     Get the direction the robot approaches the point from.
-                | 
-                |     Returns:
-                |         The TCP axis direction.
+                Func GetApproachDirection() As DELOlpAxisDirection
+                    Get the direction the robot approaches the point from.
+                
+                    Returns:
+                        The TCP axis direction.
 
         :return: DELOlpAxisDirection
         """
@@ -178,13 +178,13 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCloseInPositiveDirection() As boolean
-                |     This method is only applicable for Rivet and CGun Rivet Profiles Get
-                |     whether the direction the tool closes when the joint values go up
-                |     (positive).
-                | 
-                |     Returns:
-                |         TRUE if closes in positive direction. FALSE otherwise.
+                Func GetCloseInPositiveDirection() As boolean
+                    This method is only applicable for Rivet and CGun Rivet Profiles Get
+                    whether the direction the tool closes when the joint values go up
+                    (positive).
+                
+                    Returns:
+                        TRUE if closes in positive direction. FALSE otherwise.
 
         :return: bool
         """
@@ -195,11 +195,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetHoldTime() As double
-                |     Get the hold time parameter of the process.
-                | 
-                |     Returns:
-                |         The value in seconds.
+                Func GetHoldTime() As double
+                    Get the hold time parameter of the process.
+                
+                    Returns:
+                        The value in seconds.
 
         :return: float
         """
@@ -210,17 +210,17 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to the hold time
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetHoldTimeLink(OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to the hold time
+                    parameter.
+                
+                    Parameters:
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param OLPProfile o_profile:
         :param str o_controller_param_name:
@@ -233,12 +233,12 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetHomeName() As CATBSTR
-                |     Get the home name for the gun's closed position.
-                | 
-                |     Returns:
-                |         The home name. This is blank if the joint values don't correspond to a
-                |         home name.
+                Func GetHomeName() As CATBSTR
+                    Get the home name for the gun's closed position.
+                
+                    Returns:
+                        The home name. This is blank if the joint values don't correspond to a
+                        home name.
 
         :return: str
         """
@@ -249,11 +249,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointNumber() As short
-                |     Get the joint number assigned to this rivet gun.
-                | 
-                |     Returns:
-                |         The joint number
+                Func GetJointNumber() As short
+                    Get the joint number assigned to this rivet gun.
+                
+                    Returns:
+                        The joint number
 
         :return: int
         """
@@ -264,11 +264,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointValue() As CATSafeArrayVariant
-                |     Get the tool joint values for the closed position.
-                | 
-                |     Returns:
-                |         The value in meters. Rotational joints are not supported.
+                Func GetJointValue() As CATSafeArrayVariant
+                    Get the tool joint values for the closed position.
+                
+                    Returns:
+                        The value in meters. Rotational joints are not supported.
 
         :return: tuple
         """
@@ -279,12 +279,12 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionProfile() As OlpMotionProfile
-                |     Get the motion profile for the rivet stage of this
-                |     profile.
-                | 
-                |     Returns:
-                |         The motion profile.
+                Func GetMotionProfile() As OlpMotionProfile
+                    Get the motion profile for the rivet stage of this
+                    profile.
+                
+                    Returns:
+                        The motion profile.
 
         :return: OLPMotionProfile
         """
@@ -295,11 +295,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPartThickness() As double
-                |     Gets the part thickness assigned to this rivet gun
-                | 
-                |     Returns:
-                |         The thickness in meters
+                Func GetPartThickness() As double
+                    Gets the part thickness assigned to this rivet gun
+                
+                    Returns:
+                        The thickness in meters
 
         :return: float
         """
@@ -310,17 +310,17 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProcessSchedules(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get linked applicative profile schedules by type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                Func GetProcessSchedules(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get linked applicative profile schedules by type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :param str i_profile_type:
         :return: tuple
@@ -332,11 +332,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPushDepth() As double
-                |     Get the rivet push depth.
-                | 
-                |     Returns:
-                |         The value in seconds.
+                Func GetPushDepth() As double
+                    Get the rivet push depth.
+                
+                    Returns:
+                        The value in seconds.
 
         :return: float
         """
@@ -347,17 +347,17 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPushDepthLink(OlpProfile oProfile,CATBSTR
-                | oControllerParamName)
-                |     Get the schedule parameter that is linked to the push depth
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         oProfile
-                |             The applicative profile. 
-                |         oControllerParamName
-                |             The name of the linked parameter.
+                Sub GetPushDepthLink(OlpProfile oProfile,CATBSTR
+                oControllerParamName)
+                    Get the schedule parameter that is linked to the push depth
+                    parameter.
+                
+                    Parameters:
+                
+                        oProfile
+                            The applicative profile. 
+                        oControllerParamName
+                            The name of the linked parameter.
 
         :param OlpProfile o_profile:
         :param str o_controller_param_name:
@@ -370,11 +370,11 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetToolKinSimulation() As boolean
-                |     Get whether the gun motion is simulated.
-                | 
-                |     Returns:
-                |         TRUE if the motion is simulated. FALSE if not simulated.
+                Func GetToolKinSimulation() As boolean
+                    Get whether the gun motion is simulated.
+                
+                    Returns:
+                        TRUE if the motion is simulated. FALSE if not simulated.
 
         :return: bool
         """
@@ -385,17 +385,17 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
-                |     Get whether this profile has a linked applicative profile schedule for a
-                |     type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         True if the schedule is set.
+                Func IsProcessScheduleSet(CATBSTR iProfileType) As boolean
+                    Get whether this profile has a linked applicative profile schedule for a
+                    type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        True if the schedule is set.
 
         :param str i_profile_type:
         :return: bool
@@ -407,17 +407,17 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
-                | iMatch)
-                |     Set the accuracy profile for the rivet stage of this
-                |     profile
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The accuracy profile. 
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetAccuracyProfile(OlpAccuracyProfile iProfile,boolean
+                iMatch)
+                    Set the accuracy profile for the rivet stage of this
+                    profile
+                
+                    Parameters:
+                
+                        iProfile
+                            The accuracy profile. 
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param OLPAccuracyProfile i_profile:
         :param bool i_match:
@@ -430,14 +430,14 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
-                | iMatch)
-                |     Set all linked applicative profile schedules.
-                |     This will remove all currently linked profiles if they are not also in this
-                |     list.
+                Sub SetAllProcessSchedules(CATSafeArrayVariant iProfiles,boolean
+                iMatch)
+                    Set all linked applicative profile schedules.
+                    This will remove all currently linked profiles if they are not also in this
+                    list.
                 |
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :param tuple i_profiles:
         :param bool i_match:
@@ -466,16 +466,16 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetApproachDirection(DELOlpAxisDirection iApproachDirection,boolean
-                | iMatch)
-                |     Set the direction the robot approaches the point from.
-                | 
-                |     Parameters:
-                | 
-                |         iApproachDirection
-                |             The tool axis direction. 
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetApproachDirection(DELOlpAxisDirection iApproachDirection,boolean
+                iMatch)
+                    Set the direction the robot approaches the point from.
+                
+                    Parameters:
+                
+                        iApproachDirection
+                            The tool axis direction. 
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param int i_approach_direction:
         :param bool i_match:
@@ -488,18 +488,18 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCloseInPositiveDirection(boolean iIsPositiveDirection,boolean
-                | iMatch)
-                |     Set whether the direction the tool closes when the joint values go up
-                |     (positive).
-                | 
-                |     Parameters:
-                | 
-                |         iIsPositiveDirection
-                |             TRUE if closes in positive direction. FALSE otherwise.
-                |             
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetCloseInPositiveDirection(boolean iIsPositiveDirection,boolean
+                iMatch)
+                    Set whether the direction the tool closes when the joint values go up
+                    (positive).
+                
+                    Parameters:
+                
+                        iIsPositiveDirection
+                            TRUE if closes in positive direction. FALSE otherwise.
+                            
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param bool i_is_positive_direction:
         :param bool i_match:
@@ -512,15 +512,15 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHoldTime(double iTime,boolean iMatch)
-                |     Set the hold time parameter of the process.
-                | 
-                |     Parameters:
-                | 
-                |         iTime
-                |             The value in seconds. 
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetHoldTime(double iTime,boolean iMatch)
+                    Set the hold time parameter of the process.
+                
+                    Parameters:
+                
+                        iTime
+                            The value in seconds. 
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param float i_time:
         :param bool i_match:
@@ -533,18 +533,18 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHoldTimeLink(OlpProfile iProfile,CATBSTR
-                | iControllerParamName)
-                |     Set the user profile schedule parameter that is linked to the hold time
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The applicative profile. 
-                |         iControllerParamName
-                |             The name of the linked parameter. It must be a parameter with the
-                |             dimension time.
+                Sub SetHoldTimeLink(OlpProfile iProfile,CATBSTR
+                iControllerParamName)
+                    Set the user profile schedule parameter that is linked to the hold time
+                    parameter.
+                
+                    Parameters:
+                
+                        iProfile
+                            The applicative profile. 
+                        iControllerParamName
+                            The name of the linked parameter. It must be a parameter with the
+                            dimension time.
 
         :param OLPProfile i_profile:
         :param str i_controller_param_name:
@@ -557,25 +557,25 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHomeName(CATBSTR iHome,boolean iMatch)
-                |     Set the home name for the gun's closed position.
-                |     You may set any combination of joint values, home names, and dimensions to
-                |     set the tool position for each phase. Any missing values will be calculated. If
-                |     a home name is specified and does not exist but no joint values are specified,
-                |     0's will be assumed and a warning displayed. If a home name is not specified
-                |     but is needed (e.g. for the closed position) a name will be generated. If a
-                |     missing value cannot be calculated because not enough information was specified
-                |     a warning will be issued. For some tools or applications, the tool position is
-                |     not supported. A warning will be generated that the DELMIA simulation does not
-                |     support this if a value is set if this is the case. For example, breakthrough
-                |     only applies to drilling.
-                | 
-                |     Parameters:
-                | 
-                |         iHome
-                |             The home name 
-                |         iMatch
-                |             if true the home name will be used in the matching process
+                Sub SetHomeName(CATBSTR iHome,boolean iMatch)
+                    Set the home name for the gun's closed position.
+                    You may set any combination of joint values, home names, and dimensions to
+                    set the tool position for each phase. Any missing values will be calculated. If
+                    a home name is specified and does not exist but no joint values are specified,
+                    0's will be assumed and a warning displayed. If a home name is not specified
+                    but is needed (e.g. for the closed position) a name will be generated. If a
+                    missing value cannot be calculated because not enough information was specified
+                    a warning will be issued. For some tools or applications, the tool position is
+                    not supported. A warning will be generated that the DELMIA simulation does not
+                    support this if a value is set if this is the case. For example, breakthrough
+                    only applies to drilling.
+                
+                    Parameters:
+                
+                        iHome
+                            The home name 
+                        iMatch
+                            if true the home name will be used in the matching process
 
         :param str i_home:
         :param bool i_match:
@@ -588,15 +588,15 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetJointNumber(short iJointNumber,boolean iMatch)
-                |     Set the joint number assigned to this rivet gun.
-                | 
-                |     Parameters:
-                | 
-                |         iJointNumber
-                |             The joint number. 
-                |         iMatch
-                |             If true, the joint number must match.
+                Sub SetJointNumber(short iJointNumber,boolean iMatch)
+                    Set the joint number assigned to this rivet gun.
+                
+                    Parameters:
+                
+                        iJointNumber
+                            The joint number. 
+                        iMatch
+                            If true, the joint number must match.
 
         :param int i_joint_number:
         :param bool i_match:
@@ -609,16 +609,16 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetJointValue(CATSafeArrayVariant iValues,boolean iMatch)
-                |     Set the tool joint values for the closed position.
+                Sub SetJointValue(CATSafeArrayVariant iValues,boolean iMatch)
+                    Set the tool joint values for the closed position.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iValues
-                |             An array of joint values in meters. Rotational joints are not
-                |             supported.
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                        iValues
+                            An array of joint values in meters. Rotational joints are not
+                            supported.
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param tuple i_values:
         :param bool i_match:
@@ -647,16 +647,16 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMotionProfile(OlpMotionProfile iProfile,boolean iMatch)
-                |     Set the motion profile for the rivet stage of this
-                |     profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The motion profile. 
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetMotionProfile(OlpMotionProfile iProfile,boolean iMatch)
+                    Set the motion profile for the rivet stage of this
+                    profile.
+                
+                    Parameters:
+                
+                        iProfile
+                            The motion profile. 
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param OLPMotionProfile i_profile:
         :param bool i_match:
@@ -669,15 +669,15 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPartThickness(double iPartThickness,boolean iMatch)
-                |     Set the part thickness assigned to this rivet gun
-                | 
-                |     Parameters:
-                | 
-                |         iPartThickness
-                |             The thickness in meters 
-                |         iMatch
-                |             If true, the part thickness must match.
+                Sub SetPartThickness(double iPartThickness,boolean iMatch)
+                    Set the part thickness assigned to this rivet gun
+                
+                    Parameters:
+                
+                        iPartThickness
+                            The thickness in meters 
+                        iMatch
+                            If true, the part thickness must match.
 
         :param float i_part_thickness:
         :param bool i_match:
@@ -690,19 +690,19 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
-                | iMatch)
-                |     Set linked applicative profile schedules by type.
-                |     You must also call a SetXLink method to link at least 1 parameter of a user
-                |     profile to this profile.
+                Sub SetProcessSchedules(CATSafeArrayVariant iProfiles,boolean
+                iMatch)
+                    Set linked applicative profile schedules by type.
+                    You must also call a SetXLink method to link at least 1 parameter of a user
+                    profile to this profile.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProfileType
-                |             The applicative profile type.
+                        iProfileType
+                            The applicative profile type.
                 |
-                |     Returns:
-                |         A list of profiles. Empty if none.
+                    Returns:
+                        A list of profiles. Empty if none.
 
         :param tuple i_profiles:
         :param bool i_match:
@@ -731,19 +731,19 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
-                | iMatch)
-                |     Clear a linked applicative profile schedule for a type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iMatch
-                |             If iMatch is TRUE then this profile must not be linked to an
-                |             existing spot profile for it to match. However if the default values of the
-                |             profile have the same meaning as having the profile unset, then a profile set
-                |             with default values will also match.
+                Sub SetProcessSchedulesToNothing(CATBSTR iProfileType,boolean
+                iMatch)
+                    Clear a linked applicative profile schedule for a type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iMatch
+                            If iMatch is TRUE then this profile must not be linked to an
+                            existing spot profile for it to match. However if the default values of the
+                            profile have the same meaning as having the profile unset, then a profile set
+                            with default values will also match.
 
         :param str i_profile_type:
         :param bool i_match:
@@ -756,15 +756,15 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPushDepth(double iDepth,boolean iMatch)
-                |     Set the rivet push depth.
-                | 
-                |     Parameters:
-                | 
-                |         iDepth
-                |             The depth in meters 
-                |         iMatch
-                |             If TRUE use value to find existing profile.
+                Sub SetPushDepth(double iDepth,boolean iMatch)
+                    Set the rivet push depth.
+                
+                    Parameters:
+                
+                        iDepth
+                            The depth in meters 
+                        iMatch
+                            If TRUE use value to find existing profile.
 
         :param float i_depth:
         :param bool i_match:
@@ -777,18 +777,18 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPushDepthLink(OlpProfile iProfile,CATBSTR
-                | iControllerParamName)
-                |     Set the user profile schedule parameter that is linked to the push depth
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The applicative profile. 
-                |         iControllerParamName
-                |             The name of the linked parameter. It must be a parameter with the
-                |             dimension time.
+                Sub SetPushDepthLink(OlpProfile iProfile,CATBSTR
+                iControllerParamName)
+                    Set the user profile schedule parameter that is linked to the push depth
+                    parameter.
+                
+                    Parameters:
+                
+                        iProfile
+                            The applicative profile. 
+                        iControllerParamName
+                            The name of the linked parameter. It must be a parameter with the
+                            dimension time.
 
         :param OLPProfile i_profile:
         :param str i_controller_param_name:
@@ -801,16 +801,16 @@ class OLPCFrameRivetProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetToolKinSimulation(boolean iEnabled,boolean iMatch)
-                |     Set whether the gun motion is simulated.
-                | 
-                |     Parameters:
-                | 
-                |         iIsPositiveDirection
-                |             TRUE if the motion is simulated. FALSE if not simulated.
-                |             
-                |         iMatch
-                |             If TRUE use value to find existing profile. 
+                Sub SetToolKinSimulation(boolean iEnabled,boolean iMatch)
+                    Set whether the gun motion is simulated.
+                
+                    Parameters:
+                
+                        iIsPositiveDirection
+                            TRUE if the motion is simulated. FALSE if not simulated.
+                            
+                        iMatch
+                            If TRUE use value to find existing profile. 
 
         :param bool i_enabled:
         :param bool i_match:

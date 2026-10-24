@@ -17,18 +17,18 @@ class EnumParam(Parameter):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.Parameter
-                |                         EnumParam
-                | 
-                | Represents the enum parameter.
-                | 
-                | See also:
-                |     BoolParam
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.Parameter
+                                        EnumParam
+                
+                Represents the enum parameter.
+                
+                See also:
+                    BoolParam
     
     """
 
@@ -42,18 +42,18 @@ class EnumParam(Parameter):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property ValueEnum() As CATBSTR
-                |     Returns or sets the value of the EnumParameter object. Units are expressed
-                |     in the IS unit system, except for lengths expressed in millimeters, and angles
-                |     expressed in decimal degrees.
-                | 
-                |     Example:
-                |         This example sets the param1 value to 1 if its value is greater than
-                |         2.5:
-                | 
-                |          If (density.Value > 2.5)  Then
-                |              density.Value = 1
-                |          End If
+                Property ValueEnum() As CATBSTR
+                    Returns or sets the value of the EnumParameter object. Units are expressed
+                    in the IS unit system, except for lengths expressed in millimeters, and angles
+                    expressed in decimal degrees.
+                
+                    Example:
+                        This example sets the param1 value to 1 if its value is greater than
+                        2.5:
+                
+                         If (density.Value > 2.5)  Then
+                             density.Value = 1
+                         End If
 
         :return: str
         """

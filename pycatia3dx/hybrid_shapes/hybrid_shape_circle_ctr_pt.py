@@ -18,30 +18,30 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.HybridShapeCircle
-                |                             HybridShapeCircleCtrPt
-                | 
-                | Represents the hybrid shape circle object defined using a center and a point on
-                | the circle.
-                | Role: To access the data of the hybrid shape circle object.
-                | 
-                | This data includes:
-                | 
-                |     The circle center
-                |     The point on the circle
-                |     The surface that supports the circle
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeCircleCtrPt
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.HybridShapeCircle
+                                            HybridShapeCircleCtrPt
+                
+                Represents the hybrid shape circle object defined using a center and a point on
+                the circle.
+                Role: To access the data of the hybrid shape circle object.
+                
+                This data includes:
+                
+                    The circle center
+                    The point on the circle
+                    The surface that supports the circle
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeCircleCtrPt
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -55,16 +55,16 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Center() As Reference
-                |     Returns or sets the circle center.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleCenter the center of the
-                |         HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleCenter As Reference
-                |          HybShpCircleCenter = HybShpCircle.Center
+                Property Center() As Reference
+                    Returns or sets the circle center.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves in HybShpCircleCenter the center of the
+                        HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleCenter As Reference
+                         HybShpCircleCenter = HybShpCircle.Center
 
         :return: Reference
         """
@@ -85,16 +85,16 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CrossingPoint() As Reference
-                |     Returns or sets the circle passing point.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example:
-                |         This example retrieves the passing point of the HybShpCircle hybrid
-                |         shape circle in HybShpCirclePassingPoint point.
-                | 
-                |          Dim HybShpCirclePassingPoint As Reference
-                |          Set HybShpCirclePassingPoint = HybShpCircle.CrossingPoint
+                Property CrossingPoint() As Reference
+                    Returns or sets the circle passing point.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example:
+                        This example retrieves the passing point of the HybShpCircle hybrid
+                        shape circle in HybShpCirclePassingPoint point.
+                
+                         Dim HybShpCirclePassingPoint As Reference
+                         Set HybShpCirclePassingPoint = HybShpCircle.CrossingPoint
 
         :return: Reference
         """
@@ -115,16 +115,16 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Support() As Reference
-                |     Returns or sets the circle support surface.
-                |     Sub-element(s) supported (see Boundary object): Face.
-                | 
-                |     Example:
-                |         This example retrieves in HybShpCircleSupportSurf the support surface
-                |         of the HybShpCircle hybrid shape circle.
-                | 
-                |          Dim HybShpCircleSupportSurf As Reference 
-                |          HybShpCircleSupportSurf = HybShpCircle.Support
+                Property Support() As Reference
+                    Returns or sets the circle support surface.
+                    Sub-element(s) supported (see Boundary object): Face.
+                
+                    Example:
+                        This example retrieves in HybShpCircleSupportSurf the support surface
+                        of the HybShpCircle hybrid shape circle.
+                
+                         Dim HybShpCircleSupportSurf As Reference 
+                         HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
         """
@@ -144,13 +144,13 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func IsGeodesic() As boolean
-                |     Queries whether the circle is geodesic or not.
-                | 
-                |     Parameters:
-                | 
-                |         oGeod
-                |             geodesic type : when TRUE, the circle is geodesic.
+                Func IsGeodesic() As boolean
+                    Queries whether the circle is geodesic or not.
+                
+                    Parameters:
+                
+                        oGeod
+                            geodesic type : when TRUE, the circle is geodesic.
 
         :return: bool
         """
@@ -161,9 +161,9 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetGeometryOnSupport()
-                |     Sets GeometryOnSupport of circle.
-                |     It puts the circle on the surface.
+                Sub SetGeometryOnSupport()
+                    Sets GeometryOnSupport of circle.
+                    It puts the circle on the surface.
 
         :return: None
         """
@@ -174,9 +174,9 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub UnsetGeometryOnSupport()
-                |     Inactivates GeometryOnSupport of circle.
-                |     Note: The circle becomes euclidean.
+                Sub UnsetGeometryOnSupport()
+                    Inactivates GeometryOnSupport of circle.
+                    Note: The circle becomes euclidean.
 
         :return: None
         """

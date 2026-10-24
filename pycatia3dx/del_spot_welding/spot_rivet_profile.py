@@ -17,19 +17,19 @@ class SpotRivetProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotRivetProfile
-                | 
-                | Represents an object that is Spot-Rivet profile Role: Spot-Rivet profile
-                | contains description of Spot-Rivet parameters associated with a particular
-                | Rivet operation.
-                | 
-                | See also:
-                |     SpotRivetProfile
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotRivetProfile
+                
+                Represents an object that is Spot-Rivet profile Role: Spot-Rivet profile
+                contains description of Spot-Rivet parameters associated with a particular
+                Rivet operation.
+                
+                See also:
+                    SpotRivetProfile
     
     """
 
@@ -43,16 +43,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApproachDirection() As DELSpotRivetApproachDirection
-                |     This method gets the Approach Direction
-                | 
-                |     Parameters:
-                | 
-                |         oApproachDirection,
-                |             Approach Direction 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ApproachDirection() As DELSpotRivetApproachDirection
+                    This method gets the Approach Direction
+                
+                    Parameters:
+                
+                        oApproachDirection,
+                            Approach Direction 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: DELSpotRivetApproachDirection
         """
@@ -73,16 +73,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HoldTime() As double
-                |     This method gets the Hold Time
-                | 
-                |     Parameters:
-                | 
-                |         oHoldTime,
-                |             Hold Time 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property HoldTime() As double
+                    This method gets the Hold Time
+                
+                    Parameters:
+                
+                        oHoldTime,
+                            Hold Time 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -103,16 +103,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JointDirection() As short
-                |     This method gets the Joint Direction
-                | 
-                |     Parameters:
-                | 
-                |         oJointDirection,
-                |             Joint Direction 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property JointDirection() As short
+                    This method gets the Joint Direction
+                
+                    Parameters:
+                
+                        oJointDirection,
+                            Joint Direction 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: int
         """
@@ -133,16 +133,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property JointNumber() As short
-                |     This method gets the Joint Number
-                | 
-                |     Parameters:
-                | 
-                |         oJointNumber,
-                |             Joint Number 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property JointNumber() As short
+                    This method gets the Joint Number
+                
+                    Parameters:
+                
+                        oJointNumber,
+                            Joint Number 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: int
         """
@@ -163,16 +163,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PartThickness() As double
-                |     This method gets the Part Thickness
-                | 
-                |     Parameters:
-                | 
-                |         oPartThickness,
-                |             Part Thickness 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property PartThickness() As double
+                    This method gets the Part Thickness
+                
+                    Parameters:
+                
+                        oPartThickness,
+                            Part Thickness 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -193,16 +193,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PushDepth() As double
-                |     This method gets the Push Depth
-                | 
-                |     Parameters:
-                | 
-                |         oPushDepth,
-                |             Push Depth 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property PushDepth() As double
+                    This method gets the Push Depth
+                
+                    Parameters:
+                
+                        oPushDepth,
+                            Push Depth 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -223,16 +223,16 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolClosePosition() As double
-                |     This method gets the Tool Close Position
-                | 
-                |     Parameters:
-                | 
-                |         oToolClosePosition,
-                |             Tool Close Position 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ToolClosePosition() As double
+                    This method gets the Tool Close Position
+                
+                    Parameters:
+                
+                        oToolClosePosition,
+                            Tool Close Position 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -252,21 +252,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAccuracyProfile(DELSpotRivetProfileMoves iMove) As
-                | AnyObject
-                |     This method gets the Accuracy profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         ohAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetAccuracyProfile(DELSpotRivetProfileMoves iMove) As
+                AnyObject
+                    This method gets the Accuracy profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        ohAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :return: AnyObject
@@ -278,20 +278,20 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetHoldTimeParameter(CATBSTR oParamName,AnyObject
-                | oProfile)
-                |     This method gets the Hold Time applicative profile and the attribute
-                |     name
-                | 
-                |     Parameters:
-                | 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetHoldTimeParameter(CATBSTR oParamName,AnyObject
+                oProfile)
+                    This method gets the Hold Time applicative profile and the attribute
+                    name
+                
+                    Parameters:
+                
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str o_param_name:
         :param AnyObject o_profile:
@@ -304,21 +304,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionProfile(DELSpotRivetProfileMoves iMove) As
-                | AnyObject
-                |     This method gets the Motion profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         ohMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetMotionProfile(DELSpotRivetProfileMoves iMove) As
+                AnyObject
+                    This method gets the Motion profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        ohMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :return: AnyObject
@@ -330,21 +330,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
-                | oEnabled)
-                |     This method gets the Move status associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         oEnabled,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
+                oEnabled)
+                    This method gets the Move status associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        oEnabled,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param bool o_enabled:
@@ -357,22 +357,22 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Moving Tip Clearance parameter associated with the
-                |     given Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Valid Moves : Approach, Start, Action, Complete, Retract 
-                |         oParamName,
-                |             Input parameter name. 
-                |         oProfile,
-                |             Output Moving Tip Clearance profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Moving Tip Clearance parameter associated with the
+                    given Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Valid Moves : Approach, Start, Action, Complete, Retract 
+                        oParamName,
+                            Input parameter name. 
+                        oProfile,
+                            Output Moving Tip Clearance profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param str o_param_name:
@@ -386,19 +386,19 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
-                | oTipClearance)
-                |     This method gets the Moving Tip Clearance value
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Valid Moves : Approach, Start, Action, Complete, Retract 
-                |         oTipClearance,
-                |             Moving Tip Clearance value 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
+                oTipClearance)
+                    This method gets the Moving Tip Clearance value
+                
+                    Parameters:
+                
+                        iMove,
+                            Valid Moves : Approach, Start, Action, Complete, Retract 
+                        oTipClearance,
+                            Moving Tip Clearance value 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param float o_tip_clearance:
@@ -411,20 +411,20 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPushDepthParameter(CATBSTR oParamName,AnyObject
-                | oProfile)
-                |     This method gets the Push Depth applicative profile and the attribute
-                |     name
-                | 
-                |     Parameters:
-                | 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetPushDepthParameter(CATBSTR oParamName,AnyObject
+                oProfile)
+                    This method gets the Push Depth applicative profile and the attribute
+                    name
+                
+                    Parameters:
+                
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str o_param_name:
         :param AnyObject o_profile:
@@ -437,22 +437,22 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Stationary Tip Clearance parameter associated with the
-                |     given Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Valid Moves : Approach, Start, Action, Complete, Retract 
-                |         oParamName,
-                |             Input parameter name. 
-                |         oProfile,
-                |             Output Stationary Tip Clearance profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Stationary Tip Clearance parameter associated with the
+                    given Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Valid Moves : Approach, Start, Action, Complete, Retract 
+                        oParamName,
+                            Input parameter name. 
+                        oProfile,
+                            Output Stationary Tip Clearance profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param str o_param_name:
@@ -466,19 +466,19 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
-                | oTipClearance)
-                |     This method gets the Stationary Tip Clearance value
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Valid Moves : Approach, Start, Action, Complete, Retract 
-                |         oTipClearance,
-                |             Stationary Tip Clearance value 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
+                oTipClearance)
+                    This method gets the Stationary Tip Clearance value
+                
+                    Parameters:
+                
+                        iMove,
+                            Valid Moves : Approach, Start, Action, Complete, Retract 
+                        oTipClearance,
+                            Stationary Tip Clearance value 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param float o_tip_clearance:
@@ -491,21 +491,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAccuracyProfile(DELSpotRivetProfileMoves iMove,AnyObject
-                | ihAccuracyProfile)
-                |     This method sets the Accuracy profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         ihAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetAccuracyProfile(DELSpotRivetProfileMoves iMove,AnyObject
+                ihAccuracyProfile)
+                    This method sets the Accuracy profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        ihAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param AnyObject ih_accuracy_profile:
@@ -518,20 +518,20 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetHoldTimeParameter(CATBSTR iParamName,AnyObject
-                | iProfile)
-                |     This method sets the Hold Time applicative profile and the attribute
-                |     name
-                | 
-                |     Parameters:
-                | 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetHoldTimeParameter(CATBSTR iParamName,AnyObject
+                iProfile)
+                    This method sets the Hold Time applicative profile and the attribute
+                    name
+                
+                    Parameters:
+                
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_param_name:
         :param AnyObject i_profile:
@@ -544,21 +544,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMotionProfile(DELSpotRivetProfileMoves iMove,AnyObject
-                | ihMotionProfile)
-                |     This method sets the Motion profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         ihMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMotionProfile(DELSpotRivetProfileMoves iMove,AnyObject
+                ihMotionProfile)
+                    This method sets the Motion profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        ihMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param AnyObject ih_motion_profile:
@@ -571,21 +571,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
-                | iEnabled)
-                |     This method sets the Move status associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         iEnabled,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMoveStatus(DELSpotRivetProfileMoves iMove,boolean
+                iEnabled)
+                    This method sets the Move status associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        iEnabled,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param bool i_enabled:
@@ -598,23 +598,23 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Moving Tip Clearance parameter associated with the
-                |     given Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Spot-Rivet Move type. Valid values: Approach, Start, Action,
-                |             Complete, Retract 
-                |         iParamName,
-                |             parameter name 
-                |         iProfile,
-                |             Moving Tip Clearance profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMovingTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Moving Tip Clearance parameter associated with the
+                    given Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Spot-Rivet Move type. Valid values: Approach, Start, Action,
+                            Complete, Retract 
+                        iParamName,
+                            parameter name 
+                        iProfile,
+                            Moving Tip Clearance profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param str i_param_name:
@@ -628,21 +628,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
-                | iTipClearance)
-                |     This method sets the Moving Tip Clearance value associated with the given
-                |     Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Spot-Rivet Move type. Valid values: Approach, Start, Action,
-                |             Complete, Retract 
-                |         iTipClearance,
-                |             Moving Tip Clearance Value. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMovingTipClearanceValue(DELSpotRivetProfileMoves iMove,double
+                iTipClearance)
+                    This method sets the Moving Tip Clearance value associated with the given
+                    Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Spot-Rivet Move type. Valid values: Approach, Start, Action,
+                            Complete, Retract 
+                        iTipClearance,
+                            Moving Tip Clearance Value. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param float i_tip_clearance:
@@ -655,20 +655,20 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPushDepthParameter(CATBSTR iParamName,AnyObject
-                | iProfile)
-                |     This method sets the Push Depth applicative profile and the attribute
-                |     name
-                | 
-                |     Parameters:
-                | 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetPushDepthParameter(CATBSTR iParamName,AnyObject
+                iProfile)
+                    This method sets the Push Depth applicative profile and the attribute
+                    name
+                
+                    Parameters:
+                
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_param_name:
         :param AnyObject i_profile:
@@ -681,23 +681,23 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Stationary Tip Clearance profile associated with the
-                |     given Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Spot-Rivet Move type. Valid values: Approach, Start, Action,
-                |             Complete, Retract 
-                |         iParamName,
-                |             parameter name 
-                |         iProfile,
-                |             Stationary Tip Clearance profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetStationaryTipClearanceParameter(DELSpotRivetProfileMoves iMove,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Stationary Tip Clearance profile associated with the
+                    given Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Spot-Rivet Move type. Valid values: Approach, Start, Action,
+                            Complete, Retract 
+                        iParamName,
+                            parameter name 
+                        iProfile,
+                            Stationary Tip Clearance profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param str i_param_name:
@@ -711,21 +711,21 @@ class SpotRivetProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
-                | iTipClearance)
-                |     This method sets the Stationary Tip Clearance value associated with the
-                |     given Spot-Rivet Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Spot-Rivet Move type. Valid values: Approach, Start, Action,
-                |             Complete, Retract 
-                |         iTipClearance,
-                |             Stationary Tip Clearance Value. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub SetStationaryTipClearanceValue(DELSpotRivetProfileMoves iMove,double
+                iTipClearance)
+                    This method sets the Stationary Tip Clearance value associated with the
+                    given Spot-Rivet Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Spot-Rivet Move type. Valid values: Approach, Start, Action,
+                            Complete, Retract 
+                        iTipClearance,
+                            Stationary Tip Clearance Value. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param int i_move:
         :param float i_tip_clearance:

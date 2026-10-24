@@ -17,16 +17,16 @@ class ControlledRadius(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ControledRadius
-                | 
-                | Interface for accessing Controled Radius modifier on a linear TPS (ASME norm
-                | only).
-                | This interface is exposed only by radius linear TPS.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ControledRadius
+                
+                Interface for accessing Controled Radius modifier on a linear TPS (ASME norm
+                only).
+                This interface is exposed only by radius linear TPS.
     
     """
 
@@ -40,8 +40,8 @@ class ControlledRadius(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Modifier() As CATBSTR (Read Only)
-                |     Retrieves Controled Radius modifier. 
+                Property Modifier() As CATBSTR (Read Only)
+                    Retrieves Controled Radius modifier. 
 
         :return: str
         """

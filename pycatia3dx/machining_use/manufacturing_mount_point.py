@@ -17,16 +17,16 @@ class ManufacturingMountPoint(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMountPoint
-                | 
-                | Interface to manage mount point of tool, tool assembly, holder, insert
-                | .
-                | ..
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMountPoint
+                
+                Interface to manage mount point of tool, tool assembly, holder, insert
+                .
+                ..
     
     """
 
@@ -39,18 +39,18 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxisBasePoint(AnyObject ospAxisSystem,AnyObject oFatherProduct,boolean
-                | iInside)
-                |     Returns the axis which defines the base point of the Tool.
-                | 
-                |     Parameters:
-                | 
-                |         ospAxisSystem
-                |             : the axis system AxisSystem 
-                |         oFatherProduct
-                |             : first father product (in general: 3DPart) 
-                |         iInside
-                |             : to cover the structure (default false)
+                Sub GetAxisBasePoint(AnyObject ospAxisSystem,AnyObject oFatherProduct,boolean
+                iInside)
+                    Returns the axis which defines the base point of the Tool.
+                
+                    Parameters:
+                
+                        ospAxisSystem
+                            : the axis system AxisSystem 
+                        oFatherProduct
+                            : first father product (in general: 3DPart) 
+                        iInside
+                            : to cover the structure (default false)
 
         :param AnyObject osp_axis_system:
         :param AnyObject o_father_product:
@@ -65,18 +65,18 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAxisMachineMountPoint(AnyObject ospAxisSystem,AnyObject
-                | oFatherProduct,boolean iInside)
-                |     Returns the axis which defines the mount point of the Tool
-                | 
-                |     Parameters:
-                | 
-                |         ospAxisSystem
-                |             : the axis system AxisSystem 
-                |         oFatherProduct
-                |             : first father product (in general: 3DPart) 
-                |         iInside
-                |             : to cover the structure (default false)
+                Sub GetAxisMachineMountPoint(AnyObject ospAxisSystem,AnyObject
+                oFatherProduct,boolean iInside)
+                    Returns the axis which defines the mount point of the Tool
+                
+                    Parameters:
+                
+                        ospAxisSystem
+                            : the axis system AxisSystem 
+                        oFatherProduct
+                            : first father product (in general: 3DPart) 
+                        iInside
+                            : to cover the structure (default false)
 
         :param AnyObject osp_axis_system:
         :param AnyObject o_father_product:
@@ -91,16 +91,16 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetBasePoint(boolean iInside) As CATSafeArrayVariant
-                |     Returns the matrix transformation which allows to define the positionning
-                |     of the tool assembly
-                | 
-                |     Parameters:
-                | 
-                |         oMountTransfo
-                |             : the matrix transformation 
-                |         iInside
-                |             : to cover the structure (Default: False)
+                Func GetBasePoint(boolean iInside) As CATSafeArrayVariant
+                    Returns the matrix transformation which allows to define the positionning
+                    of the tool assembly
+                
+                    Parameters:
+                
+                        oMountTransfo
+                            : the matrix transformation 
+                        iInside
+                            : to cover the structure (Default: False)
 
         :param bool i_inside:
         :return: tuple
@@ -112,17 +112,17 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMachineMountPoint(boolean iInside) As
-                | CATSafeArrayVariant
-                |     Returns the matrix transformation which allows to define the positionning
-                |     of the tool assembly
-                | 
-                |     Parameters:
-                | 
-                |         oMountTransfo
-                |             : the matrix transformation 
-                |         iInside
-                |             : to cover the structure (Default: False)
+                Func GetMachineMountPoint(boolean iInside) As
+                CATSafeArrayVariant
+                    Returns the matrix transformation which allows to define the positionning
+                    of the tool assembly
+                
+                    Parameters:
+                
+                        oMountTransfo
+                            : the matrix transformation 
+                        iInside
+                            : to cover the structure (Default: False)
 
         :param bool i_inside:
         :return: tuple
@@ -134,13 +134,13 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveBasePoint()
-                |     Remove the axis Base Point defined for Tool.
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             : the axis
+                Sub RemoveBasePoint()
+                    Remove the axis Base Point defined for Tool.
+                
+                    Parameters:
+                
+                        iAxis
+                            : the axis
 
         :return: None
         """
@@ -151,13 +151,13 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveMachineMountPoint()
-                |     Remove the axis Mount Point defined for Tool.
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             : the axis
+                Sub RemoveMachineMountPoint()
+                    Remove the axis Mount Point defined for Tool.
+                
+                    Parameters:
+                
+                        iAxis
+                            : the axis
 
         :return: None
         """
@@ -168,15 +168,15 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetBasePoint(AnyObject iAxis,AnyObject iFatherProduct)
-                |     Set the axis which defines the base point of the Tool.
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             : the axis system CATIMf3DAxisSystem 
-                |         iFatherProduct
-                |             : first father product (in general: 3DPart)
+                Sub SetBasePoint(AnyObject iAxis,AnyObject iFatherProduct)
+                    Set the axis which defines the base point of the Tool.
+                
+                    Parameters:
+                
+                        iAxis
+                            : the axis system CATIMf3DAxisSystem 
+                        iFatherProduct
+                            : first father product (in general: 3DPart)
 
         :param AnyObject i_axis:
         :param AnyObject i_father_product:
@@ -189,17 +189,17 @@ class ManufacturingMountPoint(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMachineMountPoint(AnyObject iAxis,AnyObject
-                | iFatherProduct)
-                |     Set the matrix transformation which allows to define the positionning of
-                |     the tool assembly
-                | 
-                |     Parameters:
-                | 
-                |         iAxis
-                |             : the 3D axis system CATIMf3DAxisSystem 
-                |         iFatherProduct
-                |             : first father product (in general: 3DPart)
+                Sub SetMachineMountPoint(AnyObject iAxis,AnyObject
+                iFatherProduct)
+                    Set the matrix transformation which allows to define the positionning of
+                    the tool assembly
+                
+                    Parameters:
+                
+                        iAxis
+                            : the 3D axis system CATIMf3DAxisSystem 
+                        iFatherProduct
+                            : first father product (in general: 3DPart)
 
         :param AnyObject i_axis:
         :param AnyObject i_father_product:

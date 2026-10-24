@@ -19,14 +19,14 @@ class Layout2DSheet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Layout2DSheet
-                | 
-                | The interface to access a Layout2D Sheet.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Layout2DSheet
+                
+                The interface to access a Layout2D Sheet.
     
     """
 
@@ -40,14 +40,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As CatPaperOrientation
-                |     Returns or sets the paper orientation.
-                | 
-                |     Example:
-                |         This example sets the paper orientation for the MySheet Layout2D sheet
-                |         to catPaperLandscape.
-                | 
-                |          MySheet.Orientation = catPaperLandscape
+                Property Orientation() As CatPaperOrientation
+                    Returns or sets the paper orientation.
+                
+                    Example:
+                        This example sets the paper orientation for the MySheet Layout2D sheet
+                        to catPaperLandscape.
+                
+                         MySheet.Orientation = catPaperLandscape
 
         :return: int
         """
@@ -68,15 +68,15 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PageSetup() As DrawingPageSetup (Read Only)
-                |     Returns the page setup.
-                | 
-                |     Example:
-                |         This example returns the page setup for the MySheet Layout2D
-                |         sheet.
-                | 
-                |          Dim MySheetPageSetup As DrawingPageSetup
-                |          Set MySheetPageSetup = MySheet.PageSetup
+                Property PageSetup() As DrawingPageSetup (Read Only)
+                    Returns the page setup.
+                
+                    Example:
+                        This example returns the page setup for the MySheet Layout2D
+                        sheet.
+                
+                         Dim MySheetPageSetup As DrawingPageSetup
+                         Set MySheetPageSetup = MySheet.PageSetup
 
         :return: DrawingPageSetup
         """
@@ -89,18 +89,18 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PaperHeight() As double
-                |     Gets or Sets the paper width of the layout sheet.
-                | 
-                |     Parameters:
-                | 
-                |         oPaperHeight
-                | 
-                |             Example:
-                |                 This example get the height of the
-                |                 Layout2DSheet1.
-                | 
-                |                  Layout2DSheet1.GetPaperHeight oPaperHeight
+                Property PaperHeight() As double
+                    Gets or Sets the paper width of the layout sheet.
+                
+                    Parameters:
+                
+                        oPaperHeight
+                
+                            Example:
+                                This example get the height of the
+                                Layout2DSheet1.
+                
+                                 Layout2DSheet1.GetPaperHeight oPaperHeight
 
         :return: float
         """
@@ -121,14 +121,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PaperName() As CATBSTR
-                |     Returns or sets the paper format name.
-                | 
-                |     Example:
-                |         This example sets the paper format name for the MySheet Layout2D sheet
-                |         to DSFormat1.
-                | 
-                |          MySheet.PaperName = DSFormat1
+                Property PaperName() As CATBSTR
+                    Returns or sets the paper format name.
+                
+                    Example:
+                        This example sets the paper format name for the MySheet Layout2D sheet
+                        to DSFormat1.
+                
+                         MySheet.PaperName = DSFormat1
 
         :return: str
         """
@@ -149,14 +149,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PaperSize() As CatPaperSize
-                |     Returns or sets the paper size.
-                | 
-                |     Example:
-                |         This example sets the page size for the MySheet Layout2D sheet to
-                |         catPaperA4.
-                | 
-                |          MySheet.PaperSize = catPaperA4
+                Property PaperSize() As CatPaperSize
+                    Returns or sets the paper size.
+                
+                    Example:
+                        This example sets the page size for the MySheet Layout2D sheet to
+                        catPaperA4.
+                
+                         MySheet.PaperSize = catPaperA4
 
         :return: int
         """
@@ -177,17 +177,17 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PaperWidth() As double
-                |     Gets or Sets the paper width of the layout sheet.
-                | 
-                |     Parameters:
-                | 
-                |         oPaperWidth
-                | 
-                |             Example:
-                |                 This example get the width of the Sheet1.
-                | 
-                |                  Sheet1.GetPaperWidth oPaperWidth
+                Property PaperWidth() As double
+                    Gets or Sets the paper width of the layout sheet.
+                
+                    Parameters:
+                
+                        oPaperWidth
+                
+                            Example:
+                                This example get the width of the Sheet1.
+                
+                                 Sheet1.GetPaperWidth oPaperWidth
 
         :return: float
         """
@@ -208,15 +208,15 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrintArea() As PrintArea (Read Only)
-                |     Returns the print area definition object.
-                | 
-                |     Example:
-                |         This example returns the print area for the MySheet Layout2D sheet
-                |         2DL.
-                | 
-                |          Dim MyPrintArea As PrintArea
-                |          Set MyPrintArea = MySheet.PrintArea
+                Property PrintArea() As PrintArea (Read Only)
+                    Returns the print area definition object.
+                
+                    Example:
+                        This example returns the print area for the MySheet Layout2D sheet
+                        2DL.
+                
+                         Dim MyPrintArea As PrintArea
+                         Set MyPrintArea = MySheet.PrintArea
 
         :return: PrintArea
         """
@@ -229,14 +229,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProjectionMethod() As CatSheetProjectionMethod
-                |     Returns or sets the sheet projection mode .
-                | 
-                |     Example:
-                |         This example sets the projection mode of the MySheet Layout2D sheet to
-                |         catFirstAngle.
-                | 
-                |          MySheet.ProjectionMethod = catFirstAngle
+                Property ProjectionMethod() As CatSheetProjectionMethod
+                    Returns or sets the sheet projection mode .
+                
+                    Example:
+                        This example sets the projection mode of the MySheet Layout2D sheet to
+                        catFirstAngle.
+                
+                         MySheet.ProjectionMethod = catFirstAngle
 
         :return: int
         """
@@ -257,14 +257,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SheetScale() As double
-                |     Returns or sets the scale of the Layout2D sheet.
-                | 
-                |     Example:
-                |         This example sets the scale of the MySheet Layout2D sheet to
-                |         0.5.
-                | 
-                |          MySheet.SheetScale = 0.5
+                Property SheetScale() As double
+                    Returns or sets the scale of the Layout2D sheet.
+                
+                    Example:
+                        This example sets the scale of the MySheet Layout2D sheet to
+                        0.5.
+                
+                         MySheet.SheetScale = 0.5
 
         :return: float
         """
@@ -285,27 +285,27 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SheetStyle(CATBSTR iSheetStyleName) (Write Only)
-                |     Sets the sheet Style. The available Sheet style name is obtained from
-                |     CATIADrawingService
-                | 
-                |     Example:
-                |         This example sets the sheet Style for the MySheet drawing
-                |         sheet.
-                | 
-                |          myDrawingService As DrawingService 
-                |          Set myDrawingService = CATIA.ActiveEditor.GetService("CATDrawingService")
-                |          Set myDrawingRoot = CATIA.ActiveEditor.ActiveObject
-                |          myStdname = myLayoutRoot.Standard
-                |          nbsheetStyle = myDrawingService.NumberOfSheetStyle(myStdname)
-                |          Dim mylstSheetStyle(0) 'as CATSafeArrayVariant
-                |          ReDim mylstSheetStyle(nbsheetStyle - 1)
-                |          myNewSheetStyle = mylstSheetStyle(nbsheetStyle-1)
-                |          MySheet.SheetStyle = myNewSheetStyle
-                |          
-                | 
-                |     See also:
-                |         DrawingService
+                Property SheetStyle(CATBSTR iSheetStyleName) (Write Only)
+                    Sets the sheet Style. The available Sheet style name is obtained from
+                    CATIADrawingService
+                
+                    Example:
+                        This example sets the sheet Style for the MySheet drawing
+                        sheet.
+                
+                         myDrawingService As DrawingService 
+                         Set myDrawingService = CATIA.ActiveEditor.GetService("CATDrawingService")
+                         Set myDrawingRoot = CATIA.ActiveEditor.ActiveObject
+                         myStdname = myLayoutRoot.Standard
+                         nbsheetStyle = myDrawingService.NumberOfSheetStyle(myStdname)
+                         Dim mylstSheetStyle(0) 'as CATSafeArrayVariant
+                         ReDim mylstSheetStyle(nbsheetStyle - 1)
+                         myNewSheetStyle = mylstSheetStyle(nbsheetStyle-1)
+                         MySheet.SheetStyle = myNewSheetStyle
+                         
+                
+                    See also:
+                        DrawingService
 
         :return: bool
         """
@@ -326,16 +326,16 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Views() As Layout2DViews (Read Only)
-                |     Returns the Layout2D view collection of the Layout2D
-                |     sheet.
-                | 
-                |     Example:
-                |         This example retrieves in ViewCollection the collection of views 2DL of
-                |         the MySheet Layout2D sheet.
-                | 
-                |          Dim ViewCollection As Layout2DViews
-                |          Set ViewCollection = MySheet.Views.
+                Property Views() As Layout2DViews (Read Only)
+                    Returns the Layout2D view collection of the Layout2D
+                    sheet.
+                
+                    Example:
+                        This example retrieves in ViewCollection the collection of views 2DL of
+                        the MySheet Layout2D sheet.
+                
+                         Dim ViewCollection As Layout2DViews
+                         Set ViewCollection = MySheet.Views.
 
         :return: Layout2DViews
         """
@@ -348,13 +348,13 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VisuIn3D() As CatVisuIn3DMode
-                |     Set/Get the 3D visualization mode of the sheet in the 3D Viewer ie in the
-                |     3D windows and in the background of each view in every 2D
-                |     context.
-                | 
-                |     See also:
-                |         CatVisuIn3DMode
+                Property VisuIn3D() As CatVisuIn3DMode
+                    Set/Get the 3D visualization mode of the sheet in the 3D Viewer ie in the
+                    3D windows and in the background of each view in every 2D
+                    context.
+                
+                    See also:
+                        CatVisuIn3DMode
 
         :return: int
         """
@@ -374,16 +374,16 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Activate()
-                |     Activates the Layout2D sheet. Activating a Layout2D sheet means that this
-                |     Layout2D sheet is the one on which the end user is now working. The window in
-                |     the application's window collection which contains this Layout2D sheet becomes
-                |     the active one.
-                | 
-                |     Example:
-                |         This example activates the MySheet layout2dsheet.
-                | 
-                |          MySheet.Activate
+                Sub Activate()
+                    Activates the Layout2D sheet. Activating a Layout2D sheet means that this
+                    Layout2D sheet is the one on which the end user is now working. The window in
+                    the application's window collection which contains this Layout2D sheet becomes
+                    the active one.
+                
+                    Example:
+                        This example activates the MySheet layout2dsheet.
+                
+                         MySheet.Activate
 
         :return: None
         """
@@ -394,14 +394,14 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsDetail() As boolean
-                |     Checks whether the sheet is a detail sheet.
-                |     TRUE if the sheet is a detail sheet.
-                | 
-                |     Example:
-                |         This example checks whether MySheet is a detail sheet.
-                | 
-                |          IsDetail = MySheet.IsDetail
+                Func IsDetail() As boolean
+                    Checks whether the sheet is a detail sheet.
+                    TRUE if the sheet is a detail sheet.
+                
+                    Example:
+                        This example checks whether MySheet is a detail sheet.
+                
+                         IsDetail = MySheet.IsDetail
 
         :return: bool
         """
@@ -412,22 +412,22 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PrintOut(CatRenderingMode iRenderingMode)
-                |     Prints the Layout2D sheet according to its page setup on the default
-                |     printer.
-                | 
-                |     Parameters:
-                | 
-                |         iRenderingMode
-                |             The rendering mode to use for the backgrounds of the views in the
-                |             sheet.
-                | 
-                |             Example:
-                |                 This example prints the Layout2DSheet1 on the default
-                |                 printer.
-                | 
-                |                  Layout2DSheet1.PrintOut
-                |                  catRenderShadingWithEdges
+                Sub PrintOut(CatRenderingMode iRenderingMode)
+                    Prints the Layout2D sheet according to its page setup on the default
+                    printer.
+                
+                    Parameters:
+                
+                        iRenderingMode
+                            The rendering mode to use for the backgrounds of the views in the
+                            sheet.
+                
+                            Example:
+                                This example prints the Layout2DSheet1 on the default
+                                printer.
+                
+                                 Layout2DSheet1.PrintOut
+                                 catRenderShadingWithEdges
 
         :param int i_rendering_mode:
         :return: None
@@ -439,17 +439,17 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PrintOut2()
-                |     Prints the Layout2D sheet according to its page setup on the default
-                |     printer. If a rendering mode has been stored on the 2D Layout, it is used
-                |     during print process for the backgrounds. Otherwise, "Shading with edges"
-                |     rendering mode is used.
-                | 
-                |     Example:
-                |         This example prints the Layout2DSheet1 on the default
-                |         printer.
-                | 
-                |          Layout2DSheet1.PrintOut2
+                Sub PrintOut2()
+                    Prints the Layout2D sheet according to its page setup on the default
+                    printer. If a rendering mode has been stored on the 2D Layout, it is used
+                    during print process for the backgrounds. Otherwise, "Shading with edges"
+                    rendering mode is used.
+                
+                    Example:
+                        This example prints the Layout2DSheet1 on the default
+                        printer.
+                
+                         Layout2DSheet1.PrintOut2
 
         :return: None
         """
@@ -460,24 +460,24 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PrintToFile(CATBSTR fileName,CatRenderingMode
-                | iRenderingMode)
-                |     Prints the Layout2D sheet according its page setup in a file instead of
-                |     being sent to a printer.
-                | 
-                |     Parameters:
-                | 
-                |         fileName
-                |             The full pathname of the file receiving the data. 
-                |         iRenderingMode
-                |             The rendering mode to use for the backgrounds of the views in the
-                |             sheet. 
-                | 
-                |     Example:
-                |         This example prints the Layout2DSheet1 in a file.
-                | 
-                |          Layout2DSheet1.PrintToFile
-                |          "e:\\temp\\sheet1.prn",catRenderShadingWithEdges
+                Sub PrintToFile(CATBSTR fileName,CatRenderingMode
+                iRenderingMode)
+                    Prints the Layout2D sheet according its page setup in a file instead of
+                    being sent to a printer.
+                
+                    Parameters:
+                
+                        fileName
+                            The full pathname of the file receiving the data. 
+                        iRenderingMode
+                            The rendering mode to use for the backgrounds of the views in the
+                            sheet. 
+                
+                    Example:
+                        This example prints the Layout2DSheet1 in a file.
+                
+                         Layout2DSheet1.PrintToFile
+                         "e:\\temp\\sheet1.prn",catRenderShadingWithEdges
 
         :param str file_name:
         :param int i_rendering_mode:
@@ -490,21 +490,21 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub PrintToFile2(CATBSTR fileName)
-                |     Prints the Layout2D sheet according its page setup in a file instead of
-                |     being sent to a printer. If a rendering mode has been stored on the 2D Layout,
-                |     it is used during print process for the backgrounds. Otherwise, "Shading with
-                |     edges" rendering mode is used.
-                | 
-                |     Parameters:
-                | 
-                |         fileName
-                |             The full pathname of the file receiving the data. 
-                | 
-                |     Example:
-                |         This example prints the Layout2DSheet1 in a file.
-                | 
-                |          Layout2DSheet1.PrintToFile2 "e:\\temp\\sheet1.prn"
+                Sub PrintToFile2(CATBSTR fileName)
+                    Prints the Layout2D sheet according its page setup in a file instead of
+                    being sent to a printer. If a rendering mode has been stored on the 2D Layout,
+                    it is used during print process for the backgrounds. Otherwise, "Shading with
+                    edges" rendering mode is used.
+                
+                    Parameters:
+                
+                        fileName
+                            The full pathname of the file receiving the data. 
+                
+                    Example:
+                        This example prints the Layout2DSheet1 in a file.
+                
+                         Layout2DSheet1.PrintToFile2 "e:\\temp\\sheet1.prn"
 
         :param str file_name:
         :return: None
@@ -516,33 +516,33 @@ class Layout2DSheet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
-                |     Changes the positions of the views in this sheet according to the given
-                |     ordered list. iOrderedViews is the result of a permutation applied to the list
-                |     of all the views of this sheet with the following constraint: the two first
-                |     elements of the list must be respectively the sheet's mainview and background
-                |     view.
+                Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
+                    Changes the positions of the views in this sheet according to the given
+                    ordered list. iOrderedViews is the result of a permutation applied to the list
+                    of all the views of this sheet with the following constraint: the two first
+                    elements of the list must be respectively the sheet's mainview and background
+                    view.
                 |
-                |     Example:
-                |         This example modifies the views order of a sheet made of a mainview, a
-                |         backgroundview and two user-created views. (user-created views are
-                |         inverted).
+                    Example:
+                        This example modifies the views order of a sheet made of a mainview, a
+                        backgroundview and two user-created views. (user-created views are
+                        inverted).
                 |
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Set myLayout =  myPart.GetItem("CATLayoutRoot")
-                |          Set drwviewsorder = myLayout.Sheets.ActiveSheet
-                |          Set drwviews = drwviewsorder.Views
-                |          Set mainview = drwviews.item(1)
-                |          Set backview = drwviews.item(2)
-                |          Set view1 = drwviews.item(3)
-                |          Set view2 = drwviews.item(4)
-                |          newvieworder = Array(mainview, backview, view2, view1)
-                |          drwviewsorder.reorder_Views(newvieworder)
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Set myLayout =  myPart.GetItem("CATLayoutRoot")
+                         Set drwviewsorder = myLayout.Sheets.ActiveSheet
+                         Set drwviews = drwviewsorder.Views
+                         Set mainview = drwviews.item(1)
+                         Set backview = drwviews.item(2)
+                         Set view1 = drwviews.item(3)
+                         Set view2 = drwviews.item(4)
+                         newvieworder = Array(mainview, backview, view2, view1)
+                         drwviewsorder.reorder_Views(newvieworder)
                 |
                 |
                 |
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :param tuple i_ordered_views:
         :return: None

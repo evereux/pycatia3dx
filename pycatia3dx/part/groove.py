@@ -17,21 +17,21 @@ class Groove(Revolution):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SketchBasedShape
-                |                             CATPartIDLItf.Revolution
-                |                                 Groove
-                | 
-                | Represents the groove shape.
-                | A groove is made up of a sketch, used as the groove profile, containing an
-                | axis, used as the revolution axis, and two limiting angles around this axis.
-                | This is a "negative" shape: it removes material from the body it belongs
-                | to.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SketchBasedShape
+                                            CATPartIDLItf.Revolution
+                                                Groove
+                
+                Represents the groove shape.
+                A groove is made up of a sketch, used as the groove profile, containing an
+                axis, used as the revolution axis, and two limiting angles around this axis.
+                This is a "negative" shape: it removes material from the body it belongs
+                to.
 
     """
 

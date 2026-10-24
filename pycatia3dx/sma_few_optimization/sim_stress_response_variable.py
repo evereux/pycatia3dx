@@ -18,55 +18,55 @@ class SimStressResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimStressResponseVariable
-                | 
-                | Represents the stress response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStressResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStressResponseVariable As SimStressResponseVariable
-                |      Set MyStressResponseVariable = MyFeatures.Add("SimStressResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimStressResponseVariable named "Stress Response Variable.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyStressResponseVariable As SimStressResponseVariable
-                |      Set MyStressResponseVariable = MyFeatures.Item("Stress Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimStressResponseVariable as following:
-                | 
-                |      ...
-                |      MyStressResponseVariable = MyFeatures.Add("SimStressResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimStressResponseVariable named "Stress Response Variable.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyStressResponseVariable = MyFeatures.Item("Stress Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimStressResponseVariable
+                
+                Represents the stress response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStressResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStressResponseVariable As SimStressResponseVariable
+                     Set MyStressResponseVariable = MyFeatures.Add("SimStressResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimStressResponseVariable named "Stress Response Variable.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyStressResponseVariable As SimStressResponseVariable
+                     Set MyStressResponseVariable = MyFeatures.Item("Stress Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimStressResponseVariable as following:
+                
+                     ...
+                     MyStressResponseVariable = MyFeatures.Add("SimStressResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimStressResponseVariable named "Stress Response Variable.1" as
+                    following:
+                
+                     ...
+                     MyStressResponseVariable = MyFeatures.Item("Stress Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -80,8 +80,8 @@ class SimStressResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadCase() As CATBaseDispatch (Read Only)
-                |     Returns the Linear Loadcase used for the stress constraint.
+                Property LoadCase() As CATBaseDispatch (Read Only)
+                    Returns the Linear Loadcase used for the stress constraint.
 
         :return: AnyObject
         """

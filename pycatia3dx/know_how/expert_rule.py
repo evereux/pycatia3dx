@@ -16,19 +16,19 @@ class ExpertRule(ExpertRuleRuntime):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    KnowHowIDLItf.ExpertRuleBaseComponentRuntime
-                |                         KnowHowIDLItf.ExpertRuleRuntime
-                |                             ExpertRule
-                | 
-                | Represents the edition part of a rule.
-                | 
-                | See also:
-                |     ExpertRuleRuntime.RuleEdition, ExpertRuleSet.CreateRule
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   KnowHowIDLItf.ExpertRuleBaseComponentRuntime
+                                        KnowHowIDLItf.ExpertRuleRuntime
+                                            ExpertRule
+                
+                Represents the edition part of a rule.
+                
+                See also:
+                    ExpertRuleRuntime.RuleEdition, ExpertRuleSet.CreateRule
     
     """
 
@@ -42,11 +42,11 @@ class ExpertRule(ExpertRuleRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Body() As CATBSTR
-                |     Returns or sets the string that defines the body of a Rule.
-                |     For instance: "if ( H\\Diameter > 20mm ) H\\Activity = FALSE"
-                |     To modify the variable, you need to have the Knowledge Expert
-                |     Buildtime license.
+                Property Body() As CATBSTR
+                    Returns or sets the string that defines the body of a Rule.
+                    For instance: "if ( H\\Diameter > 20mm ) H\\Activity = FALSE"
+                    To modify the variable, you need to have the Knowledge Expert
+                    Buildtime license.
 
         :return: str
         """
@@ -67,8 +67,8 @@ class ExpertRule(ExpertRuleRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Language() As long
-                |     Returns or sets the language of a rule.
+                Property Language() As long
+                    Returns or sets the language of a rule.
 
         :return: int
         """
@@ -89,10 +89,10 @@ class ExpertRule(ExpertRuleRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Variables() As CATBSTR
-                |     Returns or sets the variables scope of the Rule. For instance: "H:Hole;
-                |     P: Pad" To modify the variable, you need to have the Knowledge Expert Buildtime
-                |     license.
+                Property Variables() As CATBSTR
+                    Returns or sets the variables scope of the Rule. For instance: "H:Hole;
+                    P: Pad" To modify the variable, you need to have the Knowledge Expert Buildtime
+                    license.
 
         :return: str
         """

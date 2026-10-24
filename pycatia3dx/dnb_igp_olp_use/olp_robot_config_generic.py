@@ -17,20 +17,20 @@ class OLPRobotConfigGeneric(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpRobotConfigGeneric
-                | 
-                | A robot configuration.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A configuration is the robot posture and the turn numbers or turn signs used to
-                | define a unique inverse kinematics solution for a Cartesian
-                | position.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpRobotConfigGeneric
+                
+                A robot configuration.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A configuration is the robot posture and the turn numbers or turn signs used to
+                define a unique inverse kinematics solution for a Cartesian
+                position.
     
     """
 
@@ -44,10 +44,10 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NRLConfig() As CATBSTR
-                |     The native robot language config string.
-                |     Property to temporarily store config information as a string during
-                |     MacroUpload so that it is available during MacroSetConfigs.
+                Property NRLConfig() As CATBSTR
+                    The native robot language config string.
+                    Property to temporarily store config information as a string during
+                    MacroUpload so that it is available during MacroSetConfigs.
 
         :return: str
         """
@@ -68,10 +68,10 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Posture() As CATBSTR
-                |     The robot posture.
-                |     This defines the relationship between links. You can retrieve a list of all
-                |     valid postures from OlpController.Postures.
+                Property Posture() As CATBSTR
+                    The robot posture.
+                    This defines the relationship between links. You can retrieve a list of all
+                    valid postures from OlpController.Postures.
 
         :return: str
         """
@@ -91,14 +91,14 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetPostureFlag() As CATBSTR
-                |     Get the posture flag based on current configuration and
-                |     turns
-                | 
-                |     Parameters:
-                | 
-                |         oPostureFlag
-                |             Four digit hexadecimal posture flag.
+                Func GetPostureFlag() As CATBSTR
+                    Get the posture flag based on current configuration and
+                    turns
+                
+                    Parameters:
+                
+                        oPostureFlag
+                            Four digit hexadecimal posture flag.
 
         :return: str
         """
@@ -109,18 +109,18 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTurnNumber(short iJoint) As short
-                |     Get the number of turns for a joint.
-                |     This is valid only if the robot uses turn numbers.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             The joint number. The first joint is 1. The last joint is
-                |             OlpController.NumJoints 
-                | 
-                |     Returns:
-                |         The number of turns.
+                Func GetTurnNumber(short iJoint) As short
+                    Get the number of turns for a joint.
+                    This is valid only if the robot uses turn numbers.
+                
+                    Parameters:
+                
+                        iJoint
+                            The joint number. The first joint is 1. The last joint is
+                            OlpController.NumJoints 
+                
+                    Returns:
+                        The number of turns.
 
         :param int i_joint:
         :return: int
@@ -132,18 +132,18 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTurnSign(short iJoint) As DELOlpTurnSignType
-                |     Get the turn sign for a joint.
-                |     This is valid only if the robot uses turn signs.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             The joint number. The first joint is 1. The last joint is
-                |             OlpController.NumJoints 
-                | 
-                |     Returns:
-                |         The turn sign.
+                Func GetTurnSign(short iJoint) As DELOlpTurnSignType
+                    Get the turn sign for a joint.
+                    This is valid only if the robot uses turn signs.
+                
+                    Parameters:
+                
+                        iJoint
+                            The joint number. The first joint is 1. The last joint is
+                            OlpController.NumJoints 
+                
+                    Returns:
+                        The turn sign.
 
         :param int i_joint:
         :return: DELOlpTurnSignType
@@ -155,13 +155,13 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPostureFlag(CATBSTR iPostureFlag)
-                |     Set the configuration and turns based on the posture flag.
-                | 
-                |     Parameters:
-                | 
-                |         iPostureFlag
-                |             Four digit hexadecimal posture flag.
+                Sub SetPostureFlag(CATBSTR iPostureFlag)
+                    Set the configuration and turns based on the posture flag.
+                
+                    Parameters:
+                
+                        iPostureFlag
+                            Four digit hexadecimal posture flag.
 
         :param str i_posture_flag:
         :return: None
@@ -173,17 +173,17 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTurnNumber(short iJoint,short iTurns)
-                |     Set the number of turns for a joint.
-                |     This is valid only if the robot uses turn numbers.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             The joint number. The first joint is 1. The last joint is
-                |             OlpController.NumJoints 
-                |         iTurns
-                |             The number of turns.
+                Sub SetTurnNumber(short iJoint,short iTurns)
+                    Set the number of turns for a joint.
+                    This is valid only if the robot uses turn numbers.
+                
+                    Parameters:
+                
+                        iJoint
+                            The joint number. The first joint is 1. The last joint is
+                            OlpController.NumJoints 
+                        iTurns
+                            The number of turns.
 
         :param int i_joint:
         :param int i_turns:
@@ -196,17 +196,17 @@ class OLPRobotConfigGeneric(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTurnSign(short iJoint,DELOlpTurnSignType iTurns)
-                |     Set the turn sign for a joint.
-                |     This is valid only if the robot uses turn signs.
-                | 
-                |     Parameters:
-                | 
-                |         iJoint
-                |             The joint number. The first joint is 1. The last joint is
-                |             OlpController.NumJoints 
-                |         iTurns
-                |             The turn sign. 
+                Sub SetTurnSign(short iJoint,DELOlpTurnSignType iTurns)
+                    Set the turn sign for a joint.
+                    This is valid only if the robot uses turn signs.
+                
+                    Parameters:
+                
+                        iJoint
+                            The joint number. The first joint is 1. The last joint is
+                            OlpController.NumJoints 
+                        iTurns
+                            The turn sign. 
 
         :param int i_joint:
         :param int i_turns:

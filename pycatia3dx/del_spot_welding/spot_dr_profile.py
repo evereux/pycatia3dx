@@ -17,20 +17,20 @@ class SpotDrProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrProfile
-                | 
-                | Represents an object that is Spot Drilling-Riveting profile Role: Spot
-                | Drilling-Riveting profile contains description of Spot Drilling-Riveting
-                | parameters associated with a particular Spot Drilling-Riveting
-                | operation.
-                | 
-                | See also:
-                |     SpotDrProfile
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrProfile
+                
+                Represents an object that is Spot Drilling-Riveting profile Role: Spot
+                Drilling-Riveting profile contains description of Spot Drilling-Riveting
+                parameters associated with a particular Spot Drilling-Riveting
+                operation.
+                
+                See also:
+                    SpotDrProfile
     
     """
 
@@ -44,16 +44,16 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApproachClearance() As double
-                |     This method gets the Approach Clearance
-                | 
-                |     Parameters:
-                | 
-                |         oApproachClearance,
-                |             Approach Clearance 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ApproachClearance() As double
+                    This method gets the Approach Clearance
+                
+                    Parameters:
+                
+                        oApproachClearance,
+                            Approach Clearance 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -74,19 +74,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApproachDirection() As DELDRApproachDirection
-                |     This method gets the Direction in which the Tool
-                |     approaches
-                | 
-                |     Parameters:
-                | 
-                |         oApproachDirection,
-                |             Tool Approach Direction Valid values: ApproachXPlus,
-                |             ApproachXMinus, ApproachYPlus, ApproachYMinus, ApproachZPlus, ApproachZMinus
-                |             
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ApproachDirection() As DELDRApproachDirection
+                    This method gets the Direction in which the Tool
+                    approaches
+                
+                    Parameters:
+                
+                        oApproachDirection,
+                            Tool Approach Direction Valid values: ApproachXPlus,
+                            ApproachXMinus, ApproachYPlus, ApproachYMinus, ApproachZPlus, ApproachZMinus
+                            
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: DELDRApproachDirection
         """
@@ -107,16 +107,16 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PrecycleFeature() As DELDRProfilePrecycle
-                |     This method gets the associated PreCycle feature
-                | 
-                |     Parameters:
-                | 
-                |         oPreCycle,
-                |             Valid Values: None, Hole, Rivet or Bolt 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property PrecycleFeature() As DELDRProfilePrecycle
+                    This method gets the associated PreCycle feature
+                
+                    Parameters:
+                
+                        oPreCycle,
+                            Valid Values: None, Hole, Rivet or Bolt 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: DELDRProfilePrecycle
         """
@@ -137,16 +137,16 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RetractDistance() As double
-                |     This method gets the Retract Distance
-                | 
-                |     Parameters:
-                | 
-                |         oRetractDistance,
-                |             Retract Distance 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property RetractDistance() As double
+                    This method gets the Retract Distance
+                
+                    Parameters:
+                
+                        oRetractDistance,
+                            Retract Distance 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: float
         """
@@ -167,17 +167,17 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolKinSimulation() As boolean
-                |     This method gets whether tool kinematic simulation is enabled or
-                |     not
-                | 
-                |     Parameters:
-                | 
-                |         oEnabled,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Property ToolKinSimulation() As boolean
+                    This method gets whether tool kinematic simulation is enabled or
+                    not
+                
+                    Parameters:
+                
+                        oEnabled,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: bool
         """
@@ -197,19 +197,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddUserCycle(CATBSTR iName,DELDRProfileCycle oCycle)
-                |     This method adds a user specified cycle in the profile
-                | 
-                |     Parameters:
-                | 
-                |         iName,
-                |             Name of the Cycle 
-                |         oCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub AddUserCycle(CATBSTR iName,DELDRProfileCycle oCycle)
+                    This method adds a user specified cycle in the profile
+                
+                    Parameters:
+                
+                        iName,
+                            Name of the Cycle 
+                        oCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_name:
         :param int o_cycle:
@@ -222,20 +222,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAccuracyProfile(DELDRProfileMoves iMove) As AnyObject
-                |     This method gets the Accuracy profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Retract
-                |             
-                |         ohAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetAccuracyProfile(DELDRProfileMoves iMove) As AnyObject
+                    This method gets the Accuracy profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Retract
+                            
+                        ohAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :return: AnyObject
@@ -247,20 +247,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetApproachClearanceParameter(CATBSTR oParamName,AnyObject
-                | oProfile)
-                |     This method gets the Approach Clearance applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetApproachClearanceParameter(CATBSTR oParamName,AnyObject
+                oProfile)
+                    This method gets the Approach Clearance applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str o_param_name:
         :param AnyObject o_profile:
@@ -273,21 +273,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleAccuracyProfile(DELDRProfileCycle iCycle) As
-                | AnyObject
-                |     This method gets the Accuracy profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ohAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleAccuracyProfile(DELDRProfileCycle iCycle) As
+                AnyObject
+                    This method gets the Accuracy profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ohAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: AnyObject
@@ -299,19 +299,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleDepth(DELDRProfileCycle iCycle) As double
-                |     This method gets the Depth associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oDepth,
-                |             Depth 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleDepth(DELDRProfileCycle iCycle) As double
+                    This method gets the Depth associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oDepth,
+                            Depth 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -323,23 +323,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle Depth applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle Depth applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -353,19 +353,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleDistance(DELDRProfileCycle iCycle) As double
-                |     This method gets the Distance associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oDistance,
-                |             Distance 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleDistance(DELDRProfileCycle iCycle) As double
+                    This method gets the Distance associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oDistance,
+                            Distance 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -377,23 +377,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle Distance applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle Distance applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -407,20 +407,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleJointDirection(DELDRProfileCycle iCycle) As short
-                |     This method gets the Direction in which the Joint Moves for the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oJointDir,
-                |             Joint Direction - Positive or Negative 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleJointDirection(DELDRProfileCycle iCycle) As short
+                    This method gets the Direction in which the Joint Moves for the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oJointDir,
+                            Joint Direction - Positive or Negative 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: int
@@ -432,19 +432,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleJointNumber(DELDRProfileCycle iCycle) As short
-                |     This method gets the Joint Number associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oJointNum,
-                |             Joint Number 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleJointNumber(DELDRProfileCycle iCycle) As short
+                    This method gets the Joint Number associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oJointNum,
+                            Joint Number 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: int
@@ -456,21 +456,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleMotionProfile(DELDRProfileCycle iCycle) As
-                | AnyObject
-                |     This method gets the Motion profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ohMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleMotionProfile(DELDRProfileCycle iCycle) As
+                AnyObject
+                    This method gets the Motion profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ohMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: AnyObject
@@ -482,19 +482,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleName(DELDRProfileCycle iCycle) As CATBSTR
-                |     This method gets the Cycle name associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oCycleName,
-                |             Cycle Name 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleName(DELDRProfileCycle iCycle) As CATBSTR
+                    This method gets the Cycle name associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oCycleName,
+                            Cycle Name 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: str
@@ -506,21 +506,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleSimulationTime(DELDRProfileCycle iCycle) As
-                | double
-                |     This method gets the Simulation Time associated to the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oSimulationTime,
-                |             Simulation Time 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleSimulationTime(DELDRProfileCycle iCycle) As
+                double
+                    This method gets the Simulation Time associated to the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oSimulationTime,
+                            Simulation Time 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -532,23 +532,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle Simulation Time applicative profile/parameter
-                |     and the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle Simulation Time applicative profile/parameter
+                    and the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -562,21 +562,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
-                | oToolJointValues)
-                |     This method gets the Joint Values of the Tool associated to the Tool
-                |     Starting Position for the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oToolJointValues,
-                |             List of Joint Values 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
+                oToolJointValues)
+                    This method gets the Joint Values of the Tool associated to the Tool
+                    Starting Position for the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oToolJointValues,
+                            List of Joint Values 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param tuple o_tool_joint_values:
@@ -589,19 +589,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleTCPXOffset(DELDRProfileCycle iCycle) As double
-                |     This method gets the TCP X Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oTCPXOffset,
-                |             TCP X Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleTCPXOffset(DELDRProfileCycle iCycle) As double
+                    This method gets the TCP X Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oTCPXOffset,
+                            TCP X Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -613,23 +613,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle TCP X Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle TCP X Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -643,19 +643,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleTCPYOffset(DELDRProfileCycle iCycle) As double
-                |     This method gets the TCP Y Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oTCPYOffset,
-                |             TCP Y Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleTCPYOffset(DELDRProfileCycle iCycle) As double
+                    This method gets the TCP Y Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oTCPYOffset,
+                            TCP Y Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -667,23 +667,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle TCP Y Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle TCP Y Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -697,19 +697,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCycleTCPZOffset(DELDRProfileCycle iCycle) As double
-                |     This method gets the TCP Z Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oTCPZOffset,
-                |             TCP Z Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetCycleTCPZOffset(DELDRProfileCycle iCycle) As double
+                    This method gets the TCP Z Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oTCPZOffset,
+                            TCP Z Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: float
@@ -721,23 +721,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | oParamName,AnyObject oProfile)
-                |     This method gets the Cycle TCP Z Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                oParamName,AnyObject oProfile)
+                    This method gets the Cycle TCP Z Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str o_param_name:
@@ -751,21 +751,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
-                | ohToolProfile)
-                |     This method gets the Tool profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ohToolProfile,
-                |             Tool profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
+                ohToolProfile)
+                    This method gets the Tool profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ohToolProfile,
+                            Tool profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param AnyObject oh_tool_profile:
@@ -778,19 +778,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetCycles(CATSafeArrayVariant oCycleValues,CATSafeArrayVariant
-                | oEnabledStatus)
-                |     This method gets the list of cycles involved in the action
+                Sub GetCycles(CATSafeArrayVariant oCycleValues,CATSafeArrayVariant
+                oEnabledStatus)
+                    This method gets the list of cycles involved in the action
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oCycleValues,
-                |             List of cycles that have been defined
-                |         oEnabledStatus,
-                |             List of cycles that are enabled
+                        oCycleValues,
+                            List of cycles that have been defined
+                        oEnabledStatus,
+                            List of cycles that are enabled
                 |
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :return: tuple
         """
@@ -817,20 +817,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMotionProfile(DELDRProfileMoves iMove) As AnyObject
-                |     This method gets the Motion profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Retract
-                |             
-                |         ohMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Func GetMotionProfile(DELDRProfileMoves iMove) As AnyObject
+                    This method gets the Motion profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Retract
+                            
+                        ohMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :return: AnyObject
@@ -842,20 +842,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetMoveStatus(DELDRProfileMoves iMove,boolean oEnabled)
-                |     This method gets the Move status associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         oEnabled,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetMoveStatus(DELDRProfileMoves iMove,boolean oEnabled)
+                    This method gets the Move status associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        oEnabled,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param bool o_enabled:
@@ -868,16 +868,16 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetProfileType(DELDRProfileType oProfileType)
-                |     This method gets the profile type
-                | 
-                |     Parameters:
-                | 
-                |         oProfileType,
-                |             Valid Values : DrillOnly, RivetOnly, DrillRivet 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetProfileType(DELDRProfileType oProfileType)
+                    This method gets the profile type
+                
+                    Parameters:
+                
+                        oProfileType,
+                            Valid Values : DrillOnly, RivetOnly, DrillRivet 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int o_profile_type:
         :return: None
@@ -889,20 +889,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetRetractDistanceParameter(CATBSTR oParamName,AnyObject
-                | oProfile)
-                |     This method gets the Retract Distance applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         oParamName,
-                |             Associated Attribute Name 
-                |         oProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub GetRetractDistanceParameter(CATBSTR oParamName,AnyObject
+                oProfile)
+                    This method gets the Retract Distance applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        oParamName,
+                            Associated Attribute Name 
+                        oProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str o_param_name:
         :param AnyObject o_profile:
@@ -915,18 +915,18 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveUserCycle(DELDRProfileCycle iCycle)
-                |     This method removes a user specified cycle from the
-                |     profile
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub RemoveUserCycle(DELDRProfileCycle iCycle)
+                    This method removes a user specified cycle from the
+                    profile
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :return: None
@@ -938,21 +938,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAccuracyProfile(DELDRProfileMoves iMove,AnyObject
-                | ihAccuracyProfile)
-                |     This method sets the Accuracy profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Retract
-                |             
-                |         ihAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetAccuracyProfile(DELDRProfileMoves iMove,AnyObject
+                ihAccuracyProfile)
+                    This method sets the Accuracy profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Retract
+                            
+                        ihAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param AnyObject ih_accuracy_profile:
@@ -965,20 +965,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetApproachClearanceParameter(CATBSTR iParamName,AnyObject
-                | iProfile)
-                |     This method sets the Approach Clearance applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetApproachClearanceParameter(CATBSTR iParamName,AnyObject
+                iProfile)
+                    This method sets the Approach Clearance applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param str i_param_name:
         :param AnyObject i_profile:
@@ -991,21 +991,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleAccuracyProfile(DELDRProfileCycle iCycle,AnyObject
-                | ihAccuracyProfile)
-                |     This method sets the Accuracy profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ihAccuracyProfile,
-                |             Accuracy profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleAccuracyProfile(DELDRProfileCycle iCycle,AnyObject
+                ihAccuracyProfile)
+                    This method sets the Accuracy profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ihAccuracyProfile,
+                            Accuracy profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param AnyObject ih_accuracy_profile:
@@ -1018,19 +1018,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleDepth(DELDRProfileCycle iCycle,double iDepth)
-                |     This method sets the Depth associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iDepth,
-                |             Depth 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleDepth(DELDRProfileCycle iCycle,double iDepth)
+                    This method sets the Depth associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iDepth,
+                            Depth 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_depth:
@@ -1043,23 +1043,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle Depth applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleDepthParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle Depth applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1073,20 +1073,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleDistance(DELDRProfileCycle iCycle,double
-                | iDistance)
-                |     This method sets the Distance associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iDistance,
-                |             Distance 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleDistance(DELDRProfileCycle iCycle,double
+                iDistance)
+                    This method sets the Distance associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iDistance,
+                            Distance 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_distance:
@@ -1099,23 +1099,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle Distance applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleDistanceParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle Distance applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1129,21 +1129,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleJointDirection(DELDRProfileCycle iCycle,short
-                | iJointDir)
-                |     This method sets the Direction in which the Joint Moves for the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iJointDir,
-                |             Joint Direction - Positive or Negative 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleJointDirection(DELDRProfileCycle iCycle,short
+                iJointDir)
+                    This method sets the Direction in which the Joint Moves for the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iJointDir,
+                            Joint Direction - Positive or Negative 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param int i_joint_dir:
@@ -1156,20 +1156,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleJointNumber(DELDRProfileCycle iCycle,short
-                | iJointNum)
-                |     This method sets the Joint Number associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iJointNum,
-                |             Joint Number 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleJointNumber(DELDRProfileCycle iCycle,short
+                iJointNum)
+                    This method sets the Joint Number associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iJointNum,
+                            Joint Number 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param int i_joint_num:
@@ -1182,21 +1182,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleMotionProfile(DELDRProfileCycle iCycle,AnyObject
-                | ihMotionProfile)
-                |     This method sets the Motion profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ihMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleMotionProfile(DELDRProfileCycle iCycle,AnyObject
+                ihMotionProfile)
+                    This method sets the Motion profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ihMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param AnyObject ih_motion_profile:
@@ -1209,19 +1209,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleName(DELDRProfileCycle iCycle,CATBSTR iName)
-                |     This method sets the cycle name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iCycleName,
-                |             Name of the Cycle 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleName(DELDRProfileCycle iCycle,CATBSTR iName)
+                    This method sets the cycle name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iCycleName,
+                            Name of the Cycle 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_name:
@@ -1234,21 +1234,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleSimulationTime(DELDRProfileCycle iCycle,double
-                | iSimulationTime)
-                |     This method sets the Simulation Time associated to the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iSimulationTime,
-                |             Simulation Time 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleSimulationTime(DELDRProfileCycle iCycle,double
+                iSimulationTime)
+                    This method sets the Simulation Time associated to the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iSimulationTime,
+                            Simulation Time 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_simulation_time:
@@ -1261,23 +1261,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle Simulation Time applicative profile/parameter
-                |     and the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleSimulationTimeParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle Simulation Time applicative profile/parameter
+                    and the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1291,21 +1291,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
-                | iToolJointValues)
-                |     This method sets the Joint Values of the Tool associated to the Tool
-                |     Starting Position for the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iToolJointValues,
-                |             List of Joint Values 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleStartJointValues(DELDRProfileCycle iCycle,CATSafeArrayVariant
+                iToolJointValues)
+                    This method sets the Joint Values of the Tool associated to the Tool
+                    Starting Position for the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iToolJointValues,
+                            List of Joint Values 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param tuple i_tool_joint_values:
@@ -1318,19 +1318,19 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleStatus(DELDRProfileCycle iCycle,boolean iStatus)
-                |     This method Sets the cycle status
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iStatus,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleStatus(DELDRProfileCycle iCycle,boolean iStatus)
+                    This method Sets the cycle status
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iStatus,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param bool i_status:
@@ -1343,20 +1343,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPXOffset(DELDRProfileCycle iCycle,double
-                | iTCPXOffset)
-                |     This method sets the TCP X Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iTCPXOffset,
-                |             TCP X Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPXOffset(DELDRProfileCycle iCycle,double
+                iTCPXOffset)
+                    This method sets the TCP X Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iTCPXOffset,
+                            TCP X Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_tcpx_offset:
@@ -1369,23 +1369,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle TCP X Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPXOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle TCP X Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1399,20 +1399,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPYOffset(DELDRProfileCycle iCycle,double
-                | iTCPYOffset)
-                |     This method sets the TCP Y Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iTCPYOffset,
-                |             TCP Y Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPYOffset(DELDRProfileCycle iCycle,double
+                iTCPYOffset)
+                    This method sets the TCP Y Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iTCPYOffset,
+                            TCP Y Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_tcpy_offset:
@@ -1425,23 +1425,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle TCP Y Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPYOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle TCP Y Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1455,20 +1455,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPZOffset(DELDRProfileCycle iCycle,double
-                | iTCPZOffset)
-                |     This method sets the TCP Z Offset associated to the cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iTCPZOffset,
-                |             TCP Z Offset 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPZOffset(DELDRProfileCycle iCycle,double
+                iTCPZOffset)
+                    This method sets the TCP Z Offset associated to the cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iTCPZOffset,
+                            TCP Z Offset 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param float i_tcpz_offset:
@@ -1481,23 +1481,23 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
-                | iParamName,AnyObject iProfile)
-                |     This method sets the Cycle TCP Z Offset applicative profile/parameter and
-                |     the attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleTCPZOffsetParameter(DELDRProfileCycle iCycle,CATBSTR
+                iParamName,AnyObject iProfile)
+                    This method sets the Cycle TCP Z Offset applicative profile/parameter and
+                    the attribute name
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param str i_param_name:
@@ -1511,21 +1511,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
-                | ihToolProfile)
-                |     This method sets the Tool profile associated with the
-                |     cycle
-                | 
-                |     Parameters:
-                | 
-                |         iCycle,
-                |             Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
-                |             User7 
-                |         ihToolProfile,
-                |             Tool profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetCycleToolProfile(DELDRProfileCycle iCycle,AnyObject
+                ihToolProfile)
+                    This method sets the Tool profile associated with the
+                    cycle
+                
+                    Parameters:
+                
+                        iCycle,
+                            Valid Values: Drill, CounterSink, RivetBolt, Sealant, User1 to
+                            User7 
+                        ihToolProfile,
+                            Tool profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_cycle:
         :param AnyObject ih_tool_profile:
@@ -1538,21 +1538,21 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMotionProfile(DELDRProfileMoves iMove,AnyObject
-                | ihMotionProfile)
-                |     This method sets the Motion profile associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Retract
-                |             
-                |         ihMotionProfile,
-                |             Motion profile. 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMotionProfile(DELDRProfileMoves iMove,AnyObject
+                ihMotionProfile)
+                    This method sets the Motion profile associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Retract
+                            
+                        ihMotionProfile,
+                            Motion profile. 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param AnyObject ih_motion_profile:
@@ -1565,20 +1565,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMoveStatus(DELDRProfileMoves iMove,boolean iEnabled)
-                |     This method sets the Move status associated with the given Drill-Rivet
-                |     Move
-                | 
-                |     Parameters:
-                | 
-                |         iMove,
-                |             Drill-Rivet Move type. Valid values: Approach, Action, Retract
-                |             
-                |         iEnabled,
-                |             TRUE or FALSE 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure.
+                Sub SetMoveStatus(DELDRProfileMoves iMove,boolean iEnabled)
+                    This method sets the Move status associated with the given Drill-Rivet
+                    Move
+                
+                    Parameters:
+                
+                        iMove,
+                            Drill-Rivet Move type. Valid values: Approach, Action, Retract
+                            
+                        iEnabled,
+                            TRUE or FALSE 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure.
 
         :param int i_move:
         :param bool i_enabled:
@@ -1591,20 +1591,20 @@ class SpotDrProfile(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRetractDistanceParameter(CATBSTR iParamName,AnyObject
-                | iProfile)
-                |     This method sets the Retract Distance applicative profile/parameter and the
-                |     attribute name
-                | 
-                |     Parameters:
-                | 
-                |         iParamName,
-                |             Associated Attribute Name 
-                |         iProfile,
-                |             Associated Profile 
-                | 
-                |     Returns:
-                |         S_OK on success and E_FAIL on failure. 
+                Sub SetRetractDistanceParameter(CATBSTR iParamName,AnyObject
+                iProfile)
+                    This method sets the Retract Distance applicative profile/parameter and the
+                    attribute name
+                
+                    Parameters:
+                
+                        iParamName,
+                            Associated Attribute Name 
+                        iProfile,
+                            Associated Profile 
+                
+                    Returns:
+                        S_OK on success and E_FAIL on failure. 
 
         :param str i_param_name:
         :param AnyObject i_profile:

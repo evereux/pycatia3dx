@@ -16,55 +16,55 @@ class SimCoupledThermalElectricStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimCoupledThermalElectricStep
-                | 
-                | Represents the Coupled Thermal Electric Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimCoupledThermalElectricStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectricStep As
-                |      SimCoupledThermalElectricStep
-                |      Set MyCoupledThermalElectricStep = MySteps.Add("SimCoupledThermalElectricStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimCoupledThermalElectricStep
-                |     named "Coupled Thermal Electric Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyCoupledThermalElectricStep As
-                |      SimCoupledThermalElectricStep
-                |      Set MyCoupledThermalElectricStep = MySteps.Item("Coupled Thermal Electric Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a
-                |     SimCoupledThermalElectricStep as following:
-                | 
-                |      ...
-                |      myCoupledThermalElectricStep = mySteps.Add("SimCoupledThermalElectricStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimCoupledThermalElectricStep named "Coupled Thermal Electric Step.1" as
-                |     following:
-                | 
-                |      ...
-                |      myCoupledThermalElectricStep = mySteps.Item("Coupled Thermal Electric Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimCoupledThermalElectricStep
+                
+                Represents the Coupled Thermal Electric Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimCoupledThermalElectricStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectricStep As
+                     SimCoupledThermalElectricStep
+                     Set MyCoupledThermalElectricStep = MySteps.Add("SimCoupledThermalElectricStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimCoupledThermalElectricStep
+                    named "Coupled Thermal Electric Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyCoupledThermalElectricStep As
+                     SimCoupledThermalElectricStep
+                     Set MyCoupledThermalElectricStep = MySteps.Item("Coupled Thermal Electric Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a
+                    SimCoupledThermalElectricStep as following:
+                
+                     ...
+                     myCoupledThermalElectricStep = mySteps.Add("SimCoupledThermalElectricStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimCoupledThermalElectricStep named "Coupled Thermal Electric Step.1" as
+                    following:
+                
+                     ...
+                     myCoupledThermalElectricStep = mySteps.Item("Coupled Thermal Electric Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -78,8 +78,8 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -100,11 +100,11 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EndAtSteadyStateFlag() As boolean
-                |     Returns or sets the end at steady state flag. Only applicable when the
-                |     thermal response type is Transient.
-                |     TRUE: end at steady state.
-                |     FALSE: do not end at steady state.
+                Property EndAtSteadyStateFlag() As boolean
+                    Returns or sets the end at steady state flag. Only applicable when the
+                    thermal response type is Transient.
+                    TRUE: end at steady state.
+                    FALSE: do not end at steady state.
 
         :return: bool
         """
@@ -125,9 +125,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InitialTimeIncrement() As double
-                |     Returns or sets the initial time increment of the Coupled Thermal Electric
-                |     step. Only applicable when the incrementation scheme is Automatic.
+                Property InitialTimeIncrement() As double
+                    Returns or sets the initial time increment of the Coupled Thermal Electric
+                    step. Only applicable when the incrementation scheme is Automatic.
 
         :return: float
         """
@@ -148,8 +148,8 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the matrix storage scheme.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the matrix storage scheme.
 
         :return: SimMatrixStorageScheme
         """
@@ -170,9 +170,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumIncrements() As long
-                |     Returns or sets the maximum number of increments of the Coupled Thermal
-                |     Electric step. Only applicable when the incrementation scheme is Automatic.
+                Property MaximumIncrements() As long
+                    Returns or sets the maximum number of increments of the Coupled Thermal
+                    Electric step. Only applicable when the incrementation scheme is Automatic.
 
         :return: int
         """
@@ -193,9 +193,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTemperatureChange() As double
-                |     Returns or sets the maximum temperature change. Only applicable when the
-                |     incrementation scheme is Automatic, and the thermal response type is Transient.
+                Property MaximumTemperatureChange() As double
+                    Returns or sets the maximum temperature change. Only applicable when the
+                    incrementation scheme is Automatic, and the thermal response type is Transient.
 
         :return: float
         """
@@ -216,9 +216,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaximumTimeIncrement() As double
-                |     Returns or sets the maximum time increment of the Coupled Thermal Electric
-                |     step. Only applicable when the incrementation scheme is Automatic.
+                Property MaximumTimeIncrement() As double
+                    Returns or sets the maximum time increment of the Coupled Thermal Electric
+                    step. Only applicable when the incrementation scheme is Automatic.
 
         :return: float
         """
@@ -239,9 +239,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MinimumTimeIncrement() As double
-                |     Returns or sets the minimum time increment of the Coupled Thermal Electric
-                |     step. Only applicable when the incrementation scheme is Automatic.
+                Property MinimumTimeIncrement() As double
+                    Returns or sets the minimum time increment of the Coupled Thermal Electric
+                    step. Only applicable when the incrementation scheme is Automatic.
 
         :return: float
         """
@@ -262,8 +262,8 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolutionTechnique() As SimCoupledSolutionTechnique
-                |     Returns or sets the solution technique.
+                Property SolutionTechnique() As SimCoupledSolutionTechnique
+                    Returns or sets the solution technique.
 
         :return: SimCoupledSolutionTechnique
         """
@@ -284,8 +284,8 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StepTime() As double
-                |     Returns or sets the step time for the Coupled Thermal Electric step.
+                Property StepTime() As double
+                    Returns or sets the step time for the Coupled Thermal Electric step.
 
         :return: float
         """
@@ -306,9 +306,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TemperatureChangeRate() As double
-                |     Returns or sets the temperature change rate. Only applicable when the
-                |     thermal response type is Transient.
+                Property TemperatureChangeRate() As double
+                    Returns or sets the temperature change rate. Only applicable when the
+                    thermal response type is Transient.
 
         :return: float
         """
@@ -329,9 +329,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThermalResponseType() As
-                | SimCoupledThermalResponseType
-                |     Returns or sets the thermal response type.
+                Property ThermalResponseType() As
+                SimCoupledThermalResponseType
+                    Returns or sets the thermal response type.
 
         :return: SimCoupledThermalResponseType
         """
@@ -352,9 +352,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrement() As double
-                |     Returns or sets the time increment of the Coupled Thermal Electric step.
-                |     Only applicable when the incrementation scheme is Fixed.
+                Property TimeIncrement() As double
+                    Returns or sets the time increment of the Coupled Thermal Electric step.
+                    Only applicable when the incrementation scheme is Fixed.
 
         :return: float
         """
@@ -375,9 +375,9 @@ class SimCoupledThermalElectricStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TimeIncrementationScheme() As
-                | SimTimeIncrementationScheme
-                |     Returns or sets the time incrementation scheme. 
+                Property TimeIncrementationScheme() As
+                SimTimeIncrementationScheme
+                    Returns or sets the time incrementation scheme. 
 
         :return: SimTimeIncrementationScheme
         """

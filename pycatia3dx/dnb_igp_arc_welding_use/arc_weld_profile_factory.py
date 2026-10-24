@@ -20,22 +20,22 @@ class ArcWeldProfileFactory(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     ArcWeldProfileFactory
-                | 
-                | Represents a factory whose primary purpose is to create and delete an arc weld
-                | profile Role: A Section interface allows access to weld parameters that are
-                | specific for a particular section of weld trajectory.
-                | There are three such sections - Start Weld, Weld and End Weld section. Each
-                | section contains a reference to a particular set of weld
-                | parameters.
-                | 
-                | See also:
-                |     ArcWeldProfile, ArcWeldCSPProfiles
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    ArcWeldProfileFactory
+                
+                Represents a factory whose primary purpose is to create and delete an arc weld
+                profile Role: A Section interface allows access to weld parameters that are
+                specific for a particular section of weld trajectory.
+                There are three such sections - Start Weld, Weld and End Weld section. Each
+                section contains a reference to a particular set of weld
+                parameters.
+                
+                See also:
+                    ArcWeldProfile, ArcWeldCSPProfiles
     
     """
 
@@ -48,23 +48,23 @@ class ArcWeldProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateProfile(CATBSTR iName) As ArcWeldProfile
-                |     Creates an arc weld profile
-                | 
-                |     Parameters:
-                | 
-                |         DELMIARscApplicativeProfile
-                |             Name to be assigned to the profile 
-                |         DELMIAArcWeldProfile
-                |             Arc Weld profile that gets created by the arc weld factory. Profile
-                |             is created on the MCA (robot controller).
-                | 
-                |             Example:
-                |                 The following example creates an arc weld profile by using an
-                |                 arc welding factory
-                | 
-                |                   ArcWeldProfileProfile.CreateProfile
-                |                   MyArcWeldProfile
+                Func CreateProfile(CATBSTR iName) As ArcWeldProfile
+                    Creates an arc weld profile
+                
+                    Parameters:
+                
+                        DELMIARscApplicativeProfile
+                            Name to be assigned to the profile 
+                        DELMIAArcWeldProfile
+                            Arc Weld profile that gets created by the arc weld factory. Profile
+                            is created on the MCA (robot controller).
+                
+                            Example:
+                                The following example creates an arc weld profile by using an
+                                arc welding factory
+                
+                                  ArcWeldProfileProfile.CreateProfile
+                                  MyArcWeldProfile
 
         :param str i_name:
         :return: ArcWeldProfile
@@ -76,23 +76,23 @@ class ArcWeldProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As ArcWeldProfile
-                |     Returns a reference to a particular ARW profile based on its index or its
-                |     name
-                | 
-                |     Parameters:
-                | 
-                |         CATVariant
-                |             Index (1-based) or controller-specific profile name
-                |             
-                |         DELMIARscApplicativeProfile
-                |             CSP profile
-                | 
-                |             Example:
-                |                 The following example returns a reference to a particular CSP
-                |                 profile:
-                | 
-                |                   DELMIAArcWeldProfile MyProfile = ArcWeldProfileFactory.Item(1)
+                Func Item(CATVariant iIndex) As ArcWeldProfile
+                    Returns a reference to a particular ARW profile based on its index or its
+                    name
+                
+                    Parameters:
+                
+                        CATVariant
+                            Index (1-based) or controller-specific profile name
+                            
+                        DELMIARscApplicativeProfile
+                            CSP profile
+                
+                            Example:
+                                The following example returns a reference to a particular CSP
+                                profile:
+                
+                                  DELMIAArcWeldProfile MyProfile = ArcWeldProfileFactory.Item(1)
 
         :param CATVariant i_index:
         :return: ArcWeldProfile
@@ -104,14 +104,14 @@ class ArcWeldProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAll()
-                |     Removes all arc weld profiles
-                | 
-                |     Example:
-                |         The following example deletes all arc weld profiles by using an arc
-                |         welding factory
-                | 
-                |           ArcWeldProfileProfile.RemoveAll()
+                Sub RemoveAll()
+                    Removes all arc weld profiles
+                
+                    Example:
+                        The following example deletes all arc weld profiles by using an arc
+                        welding factory
+                
+                          ArcWeldProfileProfile.RemoveAll()
 
         :return: None
         """
@@ -122,22 +122,22 @@ class ArcWeldProfileFactory(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveProfile(ArcWeldProfile oProfile)
-                |     Removes an arc weld profile
-                | 
-                |     Parameters:
-                | 
-                |         DELMIAArcWeldProfile
-                |             Arc Weld profile that gets deleted by the arc weld factory. Profile
-                |             is stored on MCA (robot controller) and is deleted off
-                |             it.
-                | 
-                |             Example:
-                |                 The following example deletes an arc weld profile by using an
-                |                 arc welding factory
-                | 
-                |                   ArcWeldProfileProfile.RemoveProfile
-                |                   MyArcWeldProfile
+                Sub RemoveProfile(ArcWeldProfile oProfile)
+                    Removes an arc weld profile
+                
+                    Parameters:
+                
+                        DELMIAArcWeldProfile
+                            Arc Weld profile that gets deleted by the arc weld factory. Profile
+                            is stored on MCA (robot controller) and is deleted off
+                            it.
+                
+                            Example:
+                                The following example deletes an arc weld profile by using an
+                                arc welding factory
+                
+                                  ArcWeldProfileProfile.RemoveProfile
+                                  MyArcWeldProfile
 
         :param ArcWeldProfile o_profile:
         :return: None

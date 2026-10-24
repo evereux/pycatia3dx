@@ -16,18 +16,18 @@ class OLPGoto(OLPInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpInstruction
-                |                         OlpGoto
-                | 
-                | A goto instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpInstruction
+                                        OlpGoto
+                
+                A goto instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -41,13 +41,13 @@ class OLPGoto(OLPInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetInstruction() As OlpInstruction
-                |     The instruction to jump to.
-                | 
-                |     The label text associated with a goto is set on the instruction using the
-                |     OlpInstruction.Label property. If an instruction is referenced from a Goto but
-                |     no label text is set, a value will be automatically assigned to the
-                |     label.
+                Property TargetInstruction() As OlpInstruction
+                    The instruction to jump to.
+                
+                    The label text associated with a goto is set on the instruction using the
+                    OlpInstruction.Label property. If an instruction is referenced from a Goto but
+                    no label text is set, a value will be automatically assigned to the
+                    label.
 
         :return: OLPInstruction
         """

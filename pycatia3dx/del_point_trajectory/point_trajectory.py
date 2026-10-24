@@ -17,17 +17,17 @@ class PointTrajectory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PointTrajectory
-                | 
-                | Interface representing a PointTrajectory.
-                | 
-                | Role: This interface is used to get and set attributes specific to a Point
-                | Trajectory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PointTrajectory
+                
+                Interface representing a PointTrajectory.
+                
+                Role: This interface is used to get and set attributes specific to a Point
+                Trajectory
     
     """
 
@@ -41,19 +41,19 @@ class PointTrajectory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     This property returns the type of the Point Trajectory
-                | 
-                |     Returns:
-                |         oType The type of the Point Trajectory. 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim objTrajectory As PointTrajectory
-                |                   ......
-                |         Dim oType
-                |         oType = objTrajectory.Type
+                Property Type() As CATBSTR (Read Only)
+                    This property returns the type of the Point Trajectory
+                
+                    Returns:
+                        oType The type of the Point Trajectory. 
+                    Example:
+                
+                           
+                
+                           Dim objTrajectory As PointTrajectory
+                                  ......
+                        Dim oType
+                        oType = objTrajectory.Type
 
         :return: str
         """
@@ -65,32 +65,32 @@ class PointTrajectory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddPoint(AnyObject iFastenerOccurrence,short iIndex,AnyObject
-                | oTag)
-                |     Creates a new Tag in the Point Trajectory. If no context is specified, this
-                |     will return the Tag's location wrt the global context
-                | 
-                |     Parameters:
-                | 
-                |         iFastenerOccurrence
-                |             Occurrence of the Fastener to which this tag has to be linked. If
-                |             there is no fastener occurrence, set it to NULL. 
-                |         iIndex
-                |             Index at which the tag is created. Set it to -1 to create tag at
-                |             the end 
-                |         oTag
-                |             Created Tag. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objPointrajectory As PointTrajectory
-                |             Dim objTag As Tag
-                |             Dim objFastenerOcc As AnyObject
-                |                   ......
-                |             Call objPointrajectory.AddPoint(objFastenerOcc, -1,
-                |             objTag)
+                Sub AddPoint(AnyObject iFastenerOccurrence,short iIndex,AnyObject
+                oTag)
+                    Creates a new Tag in the Point Trajectory. If no context is specified, this
+                    will return the Tag's location wrt the global context
+                
+                    Parameters:
+                
+                        iFastenerOccurrence
+                            Occurrence of the Fastener to which this tag has to be linked. If
+                            there is no fastener occurrence, set it to NULL. 
+                        iIndex
+                            Index at which the tag is created. Set it to -1 to create tag at
+                            the end 
+                        oTag
+                            Created Tag. 
+                
+                    Example:
+                
+                           
+                
+                            Dim objPointrajectory As PointTrajectory
+                            Dim objTag As Tag
+                            Dim objFastenerOcc As AnyObject
+                                  ......
+                            Call objPointrajectory.AddPoint(objFastenerOcc, -1,
+                            objTag)
 
         :param AnyObject i_fastener_occurrence:
         :param int i_index:
@@ -104,22 +104,22 @@ class PointTrajectory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemovePoint(AnyObject iTag)
-                |     Deletes a Tag.
-                | 
-                |     Parameters:
-                | 
-                |         iTag
-                |             The Tag to delete 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objPointrajectory As PointTrajectory
-                |             Dim objTag As Tag
-                |                   ......
-                |             Call objPointrajectory.RemovePoint(objTag)
+                Sub RemovePoint(AnyObject iTag)
+                    Deletes a Tag.
+                
+                    Parameters:
+                
+                        iTag
+                            The Tag to delete 
+                
+                    Example:
+                
+                           
+                
+                            Dim objPointrajectory As PointTrajectory
+                            Dim objTag As Tag
+                                  ......
+                            Call objPointrajectory.RemovePoint(objTag)
 
         :param AnyObject i_tag:
         :return: None

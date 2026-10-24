@@ -17,16 +17,16 @@ class ManufacturingMachinableAreaMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMachinableAreaMngt
-                | 
-                | Interface dedicated to machinable area feature managment.
-                | Role: This interface delivers services on machinable area
-                | features
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMachinableAreaMngt
+                
+                Interface dedicated to machinable area feature managment.
+                Role: This interface delivers services on machinable area
+                features
     
     """
 
@@ -39,13 +39,13 @@ class ManufacturingMachinableAreaMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAllDatas() As CATSafeArrayVariant
-                |     Gets all the data in the Manufacturing Machinable Feature.
-                | 
-                |     Parameters:
-                | 
-                |         oDatas
-                |             The list of data
+                Func GetAllDatas() As CATSafeArrayVariant
+                    Gets all the data in the Manufacturing Machinable Feature.
+                
+                    Parameters:
+                
+                        oDatas
+                            The list of data
 
         :return: tuple
         """

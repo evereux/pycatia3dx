@@ -16,23 +16,23 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeObject
-                |                        
-                |                        KnowledgeIDLItf.KnowledgeActivateObject
-                |                             KnowledgeIDLItf.Relation
-                |                                KnowHowIDLItf.ExpertRuleBaseRuntime
-                |                                     ExpertRuleBase
-                | 
-                | Represents the RuleBase object that can be edited.
-                | 
-                | See also:
-                |     ExpertRuleBaseRuntime.RuleBaseEdition,
-                |     ExpertRuleBasesFactory.CreateRuleBase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeObject
+                                       
+                                       KnowledgeIDLItf.KnowledgeActivateObject
+                                            KnowledgeIDLItf.Relation
+                                               KnowHowIDLItf.ExpertRuleBaseRuntime
+                                                    ExpertRuleBase
+                
+                Represents the RuleBase object that can be edited.
+                
+                See also:
+                    ExpertRuleBaseRuntime.RuleBaseEdition,
+                    ExpertRuleBasesFactory.CreateRuleBase
     
     """
 
@@ -45,13 +45,13 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func VolatileCopy() As ExpertRuleBaseRuntime
-                |     Copy the persistent rulebase in a unpersistent unchangeable
-                |     rulebase.
-                | 
-                |     Returns:
-                |         A volatile copy of the rulebase To use this method, you must have the
-                |         Knowledge Expert 1 license (runtime)
+                Func VolatileCopy() As ExpertRuleBaseRuntime
+                    Copy the persistent rulebase in a unpersistent unchangeable
+                    rulebase.
+                
+                    Returns:
+                        A volatile copy of the rulebase To use this method, you must have the
+                        Knowledge Expert 1 license (runtime)
 
         :return: ExpertRuleBaseRuntime
         """

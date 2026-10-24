@@ -17,65 +17,65 @@ class SimEulerianMaterialAssignment(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimEulerianMaterialAssignment
-                | 
-                | Represents the Eulerian Material Assignment object.
-                | 
-                | Example:
-                |     Given a SimEulerianProperty object, you can create a
-                |     SimEulerianMaterialAssignment as following:
-                | 
-                |      Dim MyEulerianProperty As SimEulerianProperty
-                |      ...
-                |      Dim MyMaterialAssignments As
-                |      SimEulerianMaterialAssignments
-                |      Set MyMaterialAssignments = MyEulerianProperty.MaterialAssignments
-                |      ...
-                |      Dim MyMaterialAssignment As SimEulerianMaterialAssignment
-                |      Set MyMaterialAssignment = MyMaterialAssignments.Add
-                |      
-                | 
-                |     Given a SimEulerianProperty object, you can retrieve a
-                |     SimEulerianMaterialAssignment named "Eulerian Material Assignment.1" as
-                |     following:
-                | 
-                |      Dim MyEulerianProperty As SimEulerianProperty
-                |      ...
-                |      Dim MyMaterialAssignments As
-                |      SimEulerianMaterialAssignments
-                |      Set MyMaterialAssignments = MyEulerianProperty.MaterialAssignments
-                |      ...
-                |      Dim MyMaterialAssignment As SimEulerianMaterialAssignment
-                |      Set MyMaterialAssignment = MyMaterialAssignments.Item("Eulerian Material Assignment.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimEulerianProperty object myEulerianProperty, you can create a
-                |     SimEulerianMaterialAssignment as following:
-                | 
-                |      ...
-                |      myMaterialAssignments = myEulerianProperty.MaterialAssignments
-                |      ...
-                |      myMaterialAssignment = myMaterialAssignments.Add
-                |      
-                | 
-                |     Given a SimEulerianProperty object myEulerianProperty, you can retrieve a
-                |     SimEulerianMaterialAssignment named "Eulerian Material Assignment.1" as
-                |     following:
-                | 
-                |      ...
-                |      myMaterialAssignments = myEulerianProperty.MaterialAssignments
-                |      ...
-                |      myMaterialAssignment = myMaterialAssignments.Item("Eulerian Material Assignment.1")
-                |      
-                | 
-                | See also:
-                |     SMAIAMpaEulerianMaterialAssignments
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimEulerianMaterialAssignment
+                
+                Represents the Eulerian Material Assignment object.
+                
+                Example:
+                    Given a SimEulerianProperty object, you can create a
+                    SimEulerianMaterialAssignment as following:
+                
+                     Dim MyEulerianProperty As SimEulerianProperty
+                     ...
+                     Dim MyMaterialAssignments As
+                     SimEulerianMaterialAssignments
+                     Set MyMaterialAssignments = MyEulerianProperty.MaterialAssignments
+                     ...
+                     Dim MyMaterialAssignment As SimEulerianMaterialAssignment
+                     Set MyMaterialAssignment = MyMaterialAssignments.Add
+                     
+                
+                    Given a SimEulerianProperty object, you can retrieve a
+                    SimEulerianMaterialAssignment named "Eulerian Material Assignment.1" as
+                    following:
+                
+                     Dim MyEulerianProperty As SimEulerianProperty
+                     ...
+                     Dim MyMaterialAssignments As
+                     SimEulerianMaterialAssignments
+                     Set MyMaterialAssignments = MyEulerianProperty.MaterialAssignments
+                     ...
+                     Dim MyMaterialAssignment As SimEulerianMaterialAssignment
+                     Set MyMaterialAssignment = MyMaterialAssignments.Item("Eulerian Material Assignment.1")
+                     
+                
+                Example in Python:
+                    Given a SimEulerianProperty object myEulerianProperty, you can create a
+                    SimEulerianMaterialAssignment as following:
+                
+                     ...
+                     myMaterialAssignments = myEulerianProperty.MaterialAssignments
+                     ...
+                     myMaterialAssignment = myMaterialAssignments.Add
+                     
+                
+                    Given a SimEulerianProperty object myEulerianProperty, you can retrieve a
+                    SimEulerianMaterialAssignment named "Eulerian Material Assignment.1" as
+                    following:
+                
+                     ...
+                     myMaterialAssignments = myEulerianProperty.MaterialAssignments
+                     ...
+                     myMaterialAssignment = myMaterialAssignments.Item("Eulerian Material Assignment.1")
+                     
+                
+                See also:
+                    SMAIAMpaEulerianMaterialAssignments
     
     """
 
@@ -89,8 +89,8 @@ class SimEulerianMaterialAssignment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the simulation material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the simulation material behavior.
 
         :return: AnyObject
         """
@@ -111,8 +111,8 @@ class SimEulerianMaterialAssignment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Returns or sets the simulation material behavior by name.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Returns or sets the simulation material behavior by name.
 
         :return: str
         """
@@ -133,9 +133,9 @@ class SimEulerianMaterialAssignment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialLocation() As SimEulerianMaterialLocation
-                |     Returns or Sets the Material Location used for the Eulerian Material
-                |     Assignment (only for Computed Volume Fraction Type).
+                Property MaterialLocation() As SimEulerianMaterialLocation
+                    Returns or Sets the Material Location used for the Eulerian Material
+                    Assignment (only for Computed Volume Fraction Type).
 
         :return: SimEulerianMaterialLocation
         """
@@ -156,9 +156,9 @@ class SimEulerianMaterialAssignment(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VolumeFractionType() As SimEulerianVolumeFractionType
-                |     Returns or Sets the Volume Fraction Type used for the Eulerian Material
-                |     Assignment. 
+                Property VolumeFractionType() As SimEulerianVolumeFractionType
+                    Returns or Sets the Volume Fraction Type used for the Eulerian Material
+                    Assignment. 
 
         :return: SimEulerianVolumeFractionType
         """

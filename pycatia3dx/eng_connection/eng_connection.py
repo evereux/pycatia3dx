@@ -17,14 +17,14 @@ class EngConnection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     EngConnection
-                | 
-                | Interface representing an Engineering Connection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    EngConnection
+                
+                Interface representing an Engineering Connection.
     
     """
 
@@ -38,8 +38,8 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activity() As boolean
-                |     Returns/Sets the Engineering Connection Activity.
+                Property Activity() As boolean
+                    Returns/Sets the Engineering Connection Activity.
 
         :return: bool
         """
@@ -60,23 +60,23 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AssemblyConstraints() As AssemblyConstraints (Read
-                | Only)
-                |     Returns the list of Assembly contraints contained in the Engineering
-                |     Connection.
-                | 
-                |     Parameters:
-                | 
-                |         oListAssemblyConstraints
-                |             [out] the list of Assembly Constraints. The Assembly Constraint is
-                |             identified by a CATIAAssemblyConstraint 
-                | 
-                |     Returns:
-                | 
-                |         an AssemblyConstraints
-                |             if the operation is successful. 
-                |         Nothing
-                |             if the operation is failed.
+                Property AssemblyConstraints() As AssemblyConstraints (Read
+                Only)
+                    Returns the list of Assembly contraints contained in the Engineering
+                    Connection.
+                
+                    Parameters:
+                
+                        oListAssemblyConstraints
+                            [out] the list of Assembly Constraints. The Assembly Constraint is
+                            identified by a CATIAAssemblyConstraint 
+                
+                    Returns:
+                
+                        an AssemblyConstraints
+                            if the operation is successful. 
+                        Nothing
+                            if the operation is failed.
 
         :return: int
         """
@@ -89,9 +89,9 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CatEngConnectionType
-                |     Returns/Sets the type of Engineering Connection.
-                |     Role: The type can be "Undefined".
+                Property Type() As CatEngConnectionType
+                    Returns/Sets the type of Engineering Connection.
+                    Role: The type can be "Undefined".
 
         :return: int
         """
@@ -111,8 +111,8 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeEquivalentType()
-                |     Compute and set the equivalent type.
+                Sub ComputeEquivalentType()
+                    Compute and set the equivalent type.
 
         :return: None
         """
@@ -123,24 +123,24 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDirection(short iNbp) As CatEngConnectionDirection
-                |     Returns the direction of the Engineering Connection.
-                |     Role: The direction specifies for each impacted if the instances can move
-                |     .
-                | 
-                |     Parameters:
-                | 
-                |         inbp
-                |             [in] Impacted instance identifier. 
-                |         odir
-                |             [out] the direction. 
-                | 
-                |     Returns:
-                | 
-                |         an CatEngConnectionDirection
-                |             if the operation is successful. 
-                |         Nothing
-                |             if the operation is failed.
+                Func GetDirection(short iNbp) As CatEngConnectionDirection
+                    Returns the direction of the Engineering Connection.
+                    Role: The direction specifies for each impacted if the instances can move
+                    .
+                
+                    Parameters:
+                
+                        inbp
+                            [in] Impacted instance identifier. 
+                        odir
+                            [out] the direction. 
+                
+                    Returns:
+                
+                        an CatEngConnectionDirection
+                            if the operation is successful. 
+                        Nothing
+                            if the operation is failed.
 
         :param int i_nbp:
         :return: int
@@ -153,19 +153,19 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetImpacted(short inumImpacted,CATBSTR oImpacted,CATBSTR
-                | oCtxImpacted)
-                |     Returns impacted.
-                | 
-                |     Parameters:
-                | 
-                |         inumImpacted
-                |             [in] the impacted number. 
-                |         oImpacted
-                |             [out] the impacted as string:"Product.1\\Product.2".
-                |             
-                |         oCtxImpacted
-                |             [out] the context of the impacted as string.
+                Sub GetImpacted(short inumImpacted,CATBSTR oImpacted,CATBSTR
+                oCtxImpacted)
+                    Returns impacted.
+                
+                    Parameters:
+                
+                        inumImpacted
+                            [in] the impacted number. 
+                        oImpacted
+                            [out] the impacted as string:"Product.1\\Product.2".
+                            
+                        oCtxImpacted
+                            [out] the context of the impacted as string.
 
         :param int inum_impacted:
         :param str o_impacted:
@@ -179,20 +179,20 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNbImpacteds() As short
-                |     Returns number of impacted.
-                | 
-                |     Parameters:
-                | 
-                |         onbImpacted
-                |             [out] the number of impacted. 
-                | 
-                |     Returns:
-                | 
-                |         the number of impacted
-                |             if the operation is successful. 
-                |         Zero
-                |             if the operation is failed.
+                Func GetNbImpacteds() As short
+                    Returns number of impacted.
+                
+                    Parameters:
+                
+                        onbImpacted
+                            [out] the number of impacted. 
+                
+                    Returns:
+                
+                        the number of impacted
+                            if the operation is successful. 
+                        Zero
+                            if the operation is failed.
 
         :return: int
         """
@@ -203,18 +203,18 @@ class EngConnection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDirection(short iNbp,CatEngConnectionDirection
-                | iDirection)
-                |     Sets the direction in the Engineering Connection.
-                |     Role: The direction specifies for each impacted if the instance can move.
-                |     The default value is CATEngConnectionsTools::Can Move"
-                | 
-                |     Parameters:
-                | 
-                |         inbp
-                |             [in] Impacted instance identifier. 
-                |         odir
-                |             [out] the CatEngConnectionDirection.
+                Sub SetDirection(short iNbp,CatEngConnectionDirection
+                iDirection)
+                    Sets the direction in the Engineering Connection.
+                    Role: The direction specifies for each impacted if the instance can move.
+                    The default value is CATEngConnectionsTools::Can Move"
+                
+                    Parameters:
+                
+                        inbp
+                            [in] Impacted instance identifier. 
+                        odir
+                            [out] the CatEngConnectionDirection.
 
         :param int i_nbp:
         :param CatEngConnectionDirection i_direction:

@@ -17,53 +17,53 @@ class SimPenetrationCheck(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPenetrationCheck
-                | 
-                | Represents the penetration check object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimPenetrationCheck as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyPenetrationCheck As SimPenetrationCheck
-                |      Set MyPenetrationCheck = MyFeatures.Add("SimPenetrationCheck")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimPenetrationCheck named "Penetration Check.1" as
-                |     following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyPenetrationCheck As SimPenetrationCheck
-                |      Set MyPenetrationCheck = MyFeatures.Item("Penetration Check.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimPenetrationCheck as following:
-                | 
-                |      ...
-                |      MyPenetrationCheck = MyFeatures.Add("SimPenetrationCheck")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimPenetrationCheck named "Penetration Check.1" as
-                |     following:
-                | 
-                |      ...
-                |      MyPenetrationCheck = MyFeatures.Item("Penetration Check.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPenetrationCheck
+                
+                Represents the penetration check object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimPenetrationCheck as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyPenetrationCheck As SimPenetrationCheck
+                     Set MyPenetrationCheck = MyFeatures.Add("SimPenetrationCheck")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimPenetrationCheck named "Penetration Check.1" as
+                    following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyPenetrationCheck As SimPenetrationCheck
+                     Set MyPenetrationCheck = MyFeatures.Item("Penetration Check.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimPenetrationCheck as following:
+                
+                     ...
+                     MyPenetrationCheck = MyFeatures.Add("SimPenetrationCheck")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimPenetrationCheck named "Penetration Check.1" as
+                    following:
+                
+                     ...
+                     MyPenetrationCheck = MyFeatures.Item("Penetration Check.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -77,8 +77,8 @@ class SimPenetrationCheck(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As SimPenetrationCheckType
-                |     Returns or sets the type of Penetration Check.
+                Property Type() As SimPenetrationCheckType
+                    Returns or sets the type of Penetration Check.
 
         :return: int
         """

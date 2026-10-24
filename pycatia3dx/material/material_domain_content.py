@@ -17,16 +17,16 @@ class MaterialDomainContent(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MaterialDomainContent
-                | 
-                | Represents a Material applicative Domain content.
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MaterialDomainContent
+                
+                Represents a Material applicative Domain content.
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
     
     """
 

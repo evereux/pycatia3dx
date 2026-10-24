@@ -19,25 +19,25 @@ class HybridShapePointCoord(Point):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         CATGSMIDLItf.Point
-                |                             HybridShapePointCoord
-                | 
-                | Point defined by coordinates.
-                | Role: To access data of the point feature created with its cartesian
-                | coordinates.
-                | 
-                | See also:
-                |     Length
-                | See also:
-                |     Reference
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        CATGSMIDLItf.Point
+                                            HybridShapePointCoord
+                
+                Point defined by coordinates.
+                Role: To access data of the point feature created with its cartesian
+                coordinates.
+                
+                See also:
+                    Length
+                See also:
+                    Reference
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -51,22 +51,22 @@ class HybridShapePointCoord(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property PtRef() As Reference
-                |     Returns or Sets the reference point for PointCoord
-                |     feature.
-                |     This data is not mandatory, if element is null, the origin point is
-                |     taken.
-                |     When an element is given, X, Y and Z are measured starting from this
-                |     point.
-                |     Sub-element(s) supported (see Boundary object): Vertex.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oPtRef the reference point for PointCoord
-                |         feature.
-                | 
-                |          Dim oPtRef As CATIAReference
-                |          Set oPtRef  = PointCoord.PtRef
+                Property PtRef() As Reference
+                    Returns or Sets the reference point for PointCoord
+                    feature.
+                    This data is not mandatory, if element is null, the origin point is
+                    taken.
+                    When an element is given, X, Y and Z are measured starting from this
+                    point.
+                    Sub-element(s) supported (see Boundary object): Vertex.
+                
+                    Example
+                    :
+                        This example retrieves in oPtRef the reference point for PointCoord
+                        feature.
+                
+                         Dim oPtRef As CATIAReference
+                         Set oPtRef  = PointCoord.PtRef
 
         :return: Reference
         """
@@ -87,23 +87,23 @@ class HybridShapePointCoord(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property RefAxisSystem() As Reference
-                |     Returns or Sets the reference Axis System for PointCoord
-                |     feature.
-                |     This data is not mandatory, if element is null, the absolute axis system is
-                |     taken.
-                |     When an element is given, X, Y and Z are considered in this Axis
-                |     system.
-                |     If reference point is not specified, X,Y and Z are measured from origin of
-                |     this axis system. *
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oRefAxis the reference Axis System for
-                |         PointCoord feature.
-                | 
-                |          Dim oRefAxis As CATIAReference
-                |          Set oRefAxis  = PointCoord.RefAxisSystem
+                Property RefAxisSystem() As Reference
+                    Returns or Sets the reference Axis System for PointCoord
+                    feature.
+                    This data is not mandatory, if element is null, the absolute axis system is
+                    taken.
+                    When an element is given, X, Y and Z are considered in this Axis
+                    system.
+                    If reference point is not specified, X,Y and Z are measured from origin of
+                    this axis system. *
+                
+                    Example
+                    :
+                        This example retrieves in oRefAxis the reference Axis System for
+                        PointCoord feature.
+                
+                         Dim oRefAxis As CATIAReference
+                         Set oRefAxis  = PointCoord.RefAxisSystem
 
         :return: Reference
         """
@@ -124,16 +124,16 @@ class HybridShapePointCoord(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property X() As Length (Read Only)
-                |     Returns X coordinate of the point.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oX the X coordinate for the PointCoord hybrid
-                |         shape feature.
-                | 
-                |          Dim oX As CATIALength
-                |          Set oX = PointCoord.X
+                Property X() As Length (Read Only)
+                    Returns X coordinate of the point.
+                
+                    Example
+                    :
+                        This example retrieves in oX the X coordinate for the PointCoord hybrid
+                        shape feature.
+                
+                         Dim oX As CATIALength
+                         Set oX = PointCoord.X
 
         :return: Length
         """
@@ -146,16 +146,16 @@ class HybridShapePointCoord(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Y() As Length (Read Only)
-                |     Returns Y coordinate of the point.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oY the Y coordinate for the PointCoord hybrid
-                |         shape feature.
-                | 
-                |          Dim oY As CATIALength
-                |          Set oY = PointCoord.Y
+                Property Y() As Length (Read Only)
+                    Returns Y coordinate of the point.
+                
+                    Example
+                    :
+                        This example retrieves in oY the Y coordinate for the PointCoord hybrid
+                        shape feature.
+                
+                         Dim oY As CATIALength
+                         Set oY = PointCoord.Y
 
         :return: Length
         """
@@ -168,16 +168,16 @@ class HybridShapePointCoord(Point):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Z() As Length (Read Only)
-                |     Returns Z coordinate of the point.
-                | 
-                |     Example
-                |     :
-                |         This example retrieves in oZ the Z coordinate for the PointCoord hybrid
-                |         shape feature.
-                | 
-                |          Dim oZ As CATIALength
-                |          Set oZ = PointCoord.Z
+                Property Z() As Length (Read Only)
+                    Returns Z coordinate of the point.
+                
+                    Example
+                    :
+                        This example retrieves in oZ the Z coordinate for the PointCoord hybrid
+                        shape feature.
+                
+                         Dim oZ As CATIALength
+                         Set oZ = PointCoord.Z
 
         :return: Length
         """

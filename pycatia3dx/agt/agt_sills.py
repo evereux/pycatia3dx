@@ -20,15 +20,15 @@ class AGTSills(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     AGTSills
-                | 
-                | Object for AGTSills.
-                | To retrieve Sill from collection.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    AGTSills
+                
+                Object for AGTSills.
+                To retrieve Sill from collection.
     
     """
 
@@ -41,28 +41,28 @@ class AGTSills(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As AGTSill
-                |     Retrieves a Sill from the collection of Sill.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of AGTSill 
-                | 
-                |     Example:
+                Func Item(CATVariant iIndex) As AGTSill
+                    Retrieves a Sill from the collection of Sill.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of AGTSill 
+                
+                    Example:
                 |
-                |              This example retrieves in ThisSill the second Sill,
-                |              
-                |              and in ThisSill the Sill named MySill.2 in the Sill collection.
-                |              
-                |              Dim myPart as CATIAPart
-                |              Set myPart = CATIA.ActiveEditor.ActievObject
-                |              Dim ThisAGTRoot As AGTRoot
-                |              Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
-                |              Dim ThisSill As AGTSill
-                |              Set ThisSill = ThisAGTRoot.Sills.Item(2)
-                |              Dim ThisSill As AGTSill
-                |              Set ThisSill = ThisAGTRoot.Sills.Item("MySill.2")
+                             This example retrieves in ThisSill the second Sill,
+                             
+                             and in ThisSill the Sill named MySill.2 in the Sill collection.
+                             
+                             Dim myPart as CATIAPart
+                             Set myPart = CATIA.ActiveEditor.ActievObject
+                             Dim ThisAGTRoot As AGTRoot
+                             Set ThisAGTRoot = myPart.GetItem("CATAGTRoot")
+                             Dim ThisSill As AGTSill
+                             Set ThisSill = ThisAGTRoot.Sills.Item(2)
+                             Dim ThisSill As AGTSill
+                             Set ThisSill = ThisAGTRoot.Sills.Item("MySill.2")
 
         :param CATVariant i_index:
         :return: AGTSill

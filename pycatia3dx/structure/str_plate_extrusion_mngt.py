@@ -18,16 +18,16 @@ class StrPlateExtrusionMngt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StrPlateExtrusionMngt
-                | 
-                | Object to manage Structure Functional Modeler Plate/Panel
-                | Geometry.
-                | Role: To access geometrical parameters of plate.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StrPlateExtrusionMngt
+                
+                Object to manage Structure Functional Modeler Plate/Panel
+                Geometry.
+                Role: To access geometrical parameters of plate.
     
     """
 
@@ -41,23 +41,23 @@ class StrPlateExtrusionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetMode() As long
-                |     Returns or Sets the OffsetMode used to create this
-                |     Plate/Panel.
-                |     Legal values:
-                |     -1 : undefined mode
-                |     0 : Offset
-                |     1 : Center
-                |     2 : Flush
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in OffsetMode of the
-                |              plate.
-                |              
-                | 
-                |              lOffsetMode = ObjStrPlateExtrusionMngt.OffsetMode
+                Property OffsetMode() As long
+                    Returns or Sets the OffsetMode used to create this
+                    Plate/Panel.
+                    Legal values:
+                    -1 : undefined mode
+                    0 : Offset
+                    1 : Center
+                    2 : Flush
+                
+                    Example:
+                
+                
+                             This example retrieves in OffsetMode of the
+                             plate.
+                             
+                
+                             lOffsetMode = ObjStrPlateExtrusionMngt.OffsetMode
 
         :return: int
         """
@@ -78,36 +78,36 @@ class StrPlateExtrusionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ThrowOrientation() As long
-                |     Returns or Sets the ThrowOrientation of this object. Legal values for
-                |     ThrowOrientation:
-                |     -1 = InvertOrientation
-                |     0 = UnknownOrientation
-                |     1 = SameOrientation
-                |     2 = X+ ( X+ vector = ( 1, 0, 0) )
-                |     3 = X- ( X- vector = (-1, 0, 0) )
-                |     4 = Y+ ( Y+ vector = ( 0, 1, 0) )
-                |     5 = Y- ( Y- vector = ( 0,-1, 0) )
-                |     6 = Z+ ( Z+ vector = ( 0, 0, 1) )
-                |     7 = Z- ( Z- vector = ( 0, 0,-1) )
-                |     8 = Inside
-                |     9 = Outside
-                |     10 = Inboard ( Toward center line )
-                |     11 = Outboard ( Opposite of previous one )
-                |     12 = Inboard ( Toward midship )
-                |     13 = Outboard ( Opposite of previous one )
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ThrowOrientation of the
-                |              plate.
-                |              
-                | 
-                |              Dim ObjStrPlateExtrusionMngt As
-                |              StrPlateExtrusionMngt
-                |              Set ObjStrPlateExtrusionMngt = ObjSfdPanel.StrPlateExtrusionMngt
-                |              lThrowOrientation = ObjStrPlateExtrusionMngt.ThrowOrientation
+                Property ThrowOrientation() As long
+                    Returns or Sets the ThrowOrientation of this object. Legal values for
+                    ThrowOrientation:
+                    -1 = InvertOrientation
+                    0 = UnknownOrientation
+                    1 = SameOrientation
+                    2 = X+ ( X+ vector = ( 1, 0, 0) )
+                    3 = X- ( X- vector = (-1, 0, 0) )
+                    4 = Y+ ( Y+ vector = ( 0, 1, 0) )
+                    5 = Y- ( Y- vector = ( 0,-1, 0) )
+                    6 = Z+ ( Z+ vector = ( 0, 0, 1) )
+                    7 = Z- ( Z- vector = ( 0, 0,-1) )
+                    8 = Inside
+                    9 = Outside
+                    10 = Inboard ( Toward center line )
+                    11 = Outboard ( Opposite of previous one )
+                    12 = Inboard ( Toward midship )
+                    13 = Outboard ( Opposite of previous one )
+                
+                    Example:
+                
+                
+                             This example retrieves in ThrowOrientation of the
+                             plate.
+                             
+                
+                             Dim ObjStrPlateExtrusionMngt As
+                             StrPlateExtrusionMngt
+                             Set ObjStrPlateExtrusionMngt = ObjSfdPanel.StrPlateExtrusionMngt
+                             lThrowOrientation = ObjStrPlateExtrusionMngt.ThrowOrientation
 
         :return: int
         """
@@ -127,15 +127,15 @@ class StrPlateExtrusionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOffset() As Parameter
-                |     Returns Offset of this Plate / Panel. The offset cannot be greater than
-                |     Thickness / 2. 
-                | Example
-                | :
-                |     This example retrieves in offset of the plate.
-                | 
-                |       Dim ParmOffset As Parameter
-                |       Set ParmOffset = ObjStrPlateExtrusionMngt.GetOffset
+                Func GetOffset() As Parameter
+                    Returns Offset of this Plate / Panel. The offset cannot be greater than
+                    Thickness / 2. 
+                Example
+                :
+                    This example retrieves in offset of the plate.
+                
+                      Dim ParmOffset As Parameter
+                      Set ParmOffset = ObjStrPlateExtrusionMngt.GetOffset
 
         :return: Parameter
         """
@@ -146,17 +146,17 @@ class StrPlateExtrusionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetThickness() As Parameter
-                |     Returns Thickness parameter of this Plate / Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in thickness of the plate.
-                |              
-                | 
-                |               Dim ParmThickness As Parameter
-                |               Set ParmThickness = ObjStrPlateExtrusionMngt.GetThickness
+                Func GetThickness() As Parameter
+                    Returns Thickness parameter of this Plate / Panel.
+                
+                    Example:
+                
+                
+                             This example retrieves in thickness of the plate.
+                             
+                
+                              Dim ParmThickness As Parameter
+                              Set ParmThickness = ObjStrPlateExtrusionMngt.GetThickness
 
         :return: Parameter
         """
@@ -167,8 +167,8 @@ class StrPlateExtrusionMngt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ReverseThrowOrientation()
-                |     Reverses Throw Orientation of this Plate / Panel. 
+                Sub ReverseThrowOrientation()
+                    Reverses Throw Orientation of this Plate / Panel. 
 
         :return: None
         """

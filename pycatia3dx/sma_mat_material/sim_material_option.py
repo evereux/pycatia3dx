@@ -17,26 +17,26 @@ class SimMaterialOption(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMaterialOption
-                | 
-                | Represents the material option object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a SimMaterialOption for
-                |     any material option as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyPlastic As SimPlastic
-                |      Set MyPlastic = MyMaterialOptions.Add("SimPlastic")
-                |      ...
-                |      Dim MyOption As SimMaterialOption
-                |      Set MyOption = MyPlastic.GetItem("SimMaterialOption")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMaterialOption
+                
+                Represents the material option object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a SimMaterialOption for
+                    any material option as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyPlastic As SimPlastic
+                     Set MyPlastic = MyMaterialOptions.Add("SimPlastic")
+                     ...
+                     Dim MyOption As SimMaterialOption
+                     Set MyOption = MyPlastic.GetItem("SimMaterialOption")
     
     """
 
@@ -49,16 +49,16 @@ class SimMaterialOption(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateSubOption(CATBSTR iType) As CATBaseDispatch
-                |     Creates a new material suboption under a material option.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of the material suboption. 
-                | 
-                |     Returns:
-                |         Created material option.
+                Func CreateSubOption(CATBSTR iType) As CATBaseDispatch
+                    Creates a new material suboption under a material option.
+                
+                    Parameters:
+                
+                        iType
+                            Type of the material suboption. 
+                
+                    Returns:
+                        Created material option.
 
         :param str i_type:
         :return: AnyObject
@@ -70,8 +70,8 @@ class SimMaterialOption(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParentOption() As CATBaseDispatch
-                |     Retrieves the parent material option of a suboption.
+                Func GetParentOption() As CATBaseDispatch
+                    Retrieves the parent material option of a suboption.
 
         :return: AnyObject
         """
@@ -82,8 +82,8 @@ class SimMaterialOption(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSubOptions() As CATSafeArrayVariant
-                |     Retrieves the suboptions of a material option.
+                Func GetSubOptions() As CATSafeArrayVariant
+                    Retrieves the suboptions of a material option.
 
         :return: tuple
         """
@@ -94,8 +94,8 @@ class SimMaterialOption(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsSubOption() As boolean
-                |     Checks if a material option is a suboption of other material option.
+                Func IsSubOption() As boolean
+                    Checks if a material option is a suboption of other material option.
 
         :return: bool
         """
@@ -106,8 +106,8 @@ class SimMaterialOption(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveSubOption(CATBaseDispatch iMaterialSubOption)
-                |     Removes the material suboption from a material option. 
+                Sub RemoveSubOption(CATBaseDispatch iMaterialSubOption)
+                    Removes the material suboption from a material option. 
 
         :param AnyObject i_material_sub_option:
         :return: None

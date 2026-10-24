@@ -18,25 +18,25 @@ class SpecsAndGeomWindow(Window):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Window
-                |                         SpecsAndGeomWindow
-                | 
-                | Represents a window featuring a specification viewer and a geometry
-                | viewer.
-                | The specification viewer is located in the left part of the window and displays
-                | the document's specification tree. The geometry viewer is located in the right
-                | part of the window and displays the document's geometry, and can thus be a
-                | Viewer2D or a Viewer3D, according to the document type. Even if generally the
-                | two viewers are simultaneously displayed, one viewer or the other can be hidden
-                | thanks to the CatSpecsAndGeomWindowLayout enumeration.
-                | 
-                | See also:
-                |     CatSpecsAndGeomWindowLayout
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Window
+                                        SpecsAndGeomWindow
+                
+                Represents a window featuring a specification viewer and a geometry
+                viewer.
+                The specification viewer is located in the left part of the window and displays
+                the document's specification tree. The geometry viewer is located in the right
+                part of the window and displays the document's geometry, and can thus be a
+                Viewer2D or a Viewer3D, according to the document type. Even if generally the
+                two viewers are simultaneously displayed, one viewer or the other can be hidden
+                thanks to the CatSpecsAndGeomWindowLayout enumeration.
+                
+                See also:
+                    CatSpecsAndGeomWindowLayout
     
     """
 
@@ -50,15 +50,15 @@ class SpecsAndGeomWindow(Window):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Layout() As CatSpecsAndGeomWindowLayout
-                |     Returns or sets the specification and geometry window
-                |     layout.
-                | 
-                |     Example:
-                |         This example sets the specification and geometry window layout for the
-                |         MyCADWindow window to catWindowGeomOnly.
-                | 
-                |          MyCADWindow.Layout = catWindowGeomOnly
+                Property Layout() As CatSpecsAndGeomWindowLayout
+                    Returns or sets the specification and geometry window
+                    layout.
+                
+                    Example:
+                        This example sets the specification and geometry window layout for the
+                        MyCADWindow window to catWindowGeomOnly.
+                
+                         MyCADWindow.Layout = catWindowGeomOnly
 
         :return: CatSpecsAndGeomWindowLayout
         """
@@ -79,15 +79,15 @@ class SpecsAndGeomWindow(Window):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property SpecsViewer() As SpecsViewer (Read Only)
-                |     Returns the specifications viewer.
-                | 
-                |     Example:
-                |         This example retrieves the specification viewer for the MyCADWindow
-                |         window.
-                | 
-                |          Dim MyViewer As Viewer
-                |          Set MyViewer = MyCADWindow.SpecsViewer
+                Property SpecsViewer() As SpecsViewer (Read Only)
+                    Returns the specifications viewer.
+                
+                    Example:
+                        This example retrieves the specification viewer for the MyCADWindow
+                        window.
+                
+                         Dim MyViewer As Viewer
+                         Set MyViewer = MyCADWindow.SpecsViewer
 
         :return: SpecsViewer
         """

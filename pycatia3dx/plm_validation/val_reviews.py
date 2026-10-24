@@ -21,14 +21,14 @@ class VALReviews(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     VALReviews
-                | 
-                | A collection of Reviews.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    VALReviews
+                
+                A collection of Reviews.
     
     """
 
@@ -41,18 +41,18 @@ class VALReviews(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As VALReview
-                |     Creates a Review and adds it to the Review collection.
-                | 
-                |     Returns:
-                |         The created Review 
-                |     Example:
-                | 
-                |             This example creates a new Review in the cReviews
-                |             collection.
+                Func Add() As VALReview
+                    Creates a Review and adds it to the Review collection.
+                
+                    Returns:
+                        The created Review 
+                    Example:
+                
+                            This example creates a new Review in the cReviews
+                            collection.
                 |
-                |             Dim oNewReviewText As Review
-                |             Set oNewReviewText = cReviews.Add
+                            Dim oNewReviewText As Review
+                            Set oNewReviewText = cReviews.Add
 
         :return: VALReview
         """
@@ -63,32 +63,32 @@ class VALReviews(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Review using its index from the Reviews
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Review to retrieve from the collection
-                |             of Reviews. As a numerics, this index is the rank of the Review in the
-                |             collection. The index of the first Review in the collection is 1, and the index
-                |             of the last Review is Count. As a string, it is the name you assigned to the
-                |             Review. 
-                | 
-                |     Returns:
-                |         The retrieved Review 
-                |     Example:
-                | 
-                |             This example retrieves in oReview1 the ninth
-                |             Review,
-                |             and in oReview2 the Review named
-                |             Review3 from the cReviews collection. 
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Review using its index from the Reviews
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Review to retrieve from the collection
+                            of Reviews. As a numerics, this index is the rank of the Review in the
+                            collection. The index of the first Review in the collection is 1, and the index
+                            of the last Review is Count. As a string, it is the name you assigned to the
+                            Review. 
+                
+                    Returns:
+                        The retrieved Review 
+                    Example:
+                
+                            This example retrieves in oReview1 the ninth
+                            Review,
+                            and in oReview2 the Review named
+                            Review3 from the cReviews collection. 
                 |
-                |             Dim oReview1 As Review
-                |             Set oReview1 = cReviews.Item(9)
-                |             Dim oReview2 As Review
-                |             Set oReview2 = cReviews.Item("Review3")
+                            Dim oReview1 As Review
+                            Set oReview1 = cReviews.Item(9)
+                            Dim oReview2 As Review
+                            Set oReview2 = cReviews.Item("Review3")
 
         :param CATVariant i_index:
         :return: AnyObject
@@ -100,26 +100,26 @@ class VALReviews(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Review from the Reviews collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the Review to retrieve from the collection
-                |             of Reviews. As a numerics, this index is the rank of the Review in the
-                |             collection. The index of the first Review in the collection is 1, and the index
-                |             of the last Review is Count. As a string, it is the name you assigned to the
-                |             Review. 
-                | 
-                |     Example:
-                | 
-                |             The following example removes the tenth Review and the Review
-                |             named
-                |             Review2 from the cReviews collection.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Review from the Reviews collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the Review to retrieve from the collection
+                            of Reviews. As a numerics, this index is the rank of the Review in the
+                            collection. The index of the first Review in the collection is 1, and the index
+                            of the last Review is Count. As a string, it is the name you assigned to the
+                            Review. 
+                
+                    Example:
+                
+                            The following example removes the tenth Review and the Review
+                            named
+                            Review2 from the cReviews collection.
                 |
-                |             cReviews.Remove(10)
-                |             cReviews.Remove("Review2")
+                            cReviews.Remove(10)
+                            cReviews.Remove("Review2")
 
         :param CATVariant i_index:
         :return: None

@@ -16,16 +16,16 @@ class Point2D(Geometry2D):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             Point2D
-                | 
-                | Class defining a point in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            Point2D
+                
+                Class defining a point in 2D Space.
     
     """
 
@@ -38,15 +38,15 @@ class Point2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetCoordinates(CATSafeArrayVariant oPoint)
-                |     Returns the coordinates of the point.
-                | 
-                |     Parameters:
-                | 
-                |         oPoint
-                | 
-                |               oPoint[0]: The X Coordinate of the point
-                |               oPoint[1]The Y Coordinate of the point
+                Sub GetCoordinates(CATSafeArrayVariant oPoint)
+                    Returns the coordinates of the point.
+                
+                    Parameters:
+                
+                        oPoint
+                
+                              oPoint[0]: The X Coordinate of the point
+                              oPoint[1]The Y Coordinate of the point
 
         :return: tuple
         """
@@ -73,16 +73,16 @@ class Point2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub SetData(double iX,double iY)
-                |     Modifies the coordinates of the point.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             The X Coordinate of the point 
-                |         iY
-                |             The Y Coordinate of the point
-                |             The Y Coordinate of the point
+                Sub SetData(double iX,double iY)
+                    Modifies the coordinates of the point.
+                
+                    Parameters:
+                
+                        iX
+                            The X Coordinate of the point 
+                        iY
+                            The Y Coordinate of the point
+                            The Y Coordinate of the point
 
         :param float i_x:
         :param float i_y:

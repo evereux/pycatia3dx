@@ -20,14 +20,14 @@ class SimMeshPart(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMeshPart
-                | 
-                | Represents a Mesh Part.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMeshPart
+                
+                Represents a Mesh Part.
     
     """
 
@@ -41,8 +41,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Construction() As boolean
-                |     Returns the construction status of an Mesh Part.
+                Property Construction() As boolean
+                    Returns the construction status of an Mesh Part.
 
         :return: bool
         """
@@ -63,8 +63,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     Returns the Mesh Part type.
+                Property Type() As CATBSTR (Read Only)
+                    Returns the Mesh Part type.
 
         :return: str
         """
@@ -77,8 +77,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UpdateStatus() As boolean (Read Only)
-                |     Returns the Update Status of a meshpart.
+                Property UpdateStatus() As boolean (Read Only)
+                    Returns the Update Status of a meshpart.
 
         :return: bool
         """
@@ -90,16 +90,16 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddSupport(AnyObject iSupport)
-                |     Creates a new support and add it to the support description of the Mesh
-                |     Part.
-                | 
-                |     Parameters:
-                | 
-                |         iSupport:
-                |             The link object that represents the geometry to
-                |             mesh.
-                |             PLMProductService.ComposeLink
+                Sub AddSupport(AnyObject iSupport)
+                    Creates a new support and add it to the support description of the Mesh
+                    Part.
+                
+                    Parameters:
+                
+                        iSupport:
+                            The link object that represents the geometry to
+                            mesh.
+                            PLMProductService.ComposeLink
 
         :param AnyObject i_support:
         :return: None
@@ -111,20 +111,20 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
-                | oValue)
-                |     Retrieves the value corresponding to the given attribute.
-                | 
-                |     Parameters:
-                | 
-                |         iSetType:
-                |             The identifier of the set specification.
-                |             Legal values: "Mesh" or "Topology". 
-                |         iAttribute:
-                |             The name of attribute. 
-                | 
-                |     Returns:
-                |         The value of the global mesh attribute.
+                Sub GetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
+                oValue)
+                    Retrieves the value corresponding to the given attribute.
+                
+                    Parameters:
+                
+                        iSetType:
+                            The identifier of the set specification.
+                            Legal values: "Mesh" or "Topology". 
+                        iAttribute:
+                            The name of attribute. 
+                
+                    Returns:
+                        The value of the global mesh attribute.
 
         :param str i_set_type:
         :param str i_attribute:
@@ -138,13 +138,13 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetGroups() As SimGroups
-                |     Returns the group collection from the Mesh Part.
-                | 
-                |     See also:
-                |         SimGroups
-                |     Returns:
-                |         The associated collection of groups.
+                Func GetGroups() As SimGroups
+                    Returns the group collection from the Mesh Part.
+                
+                    See also:
+                        SimGroups
+                    Returns:
+                        The associated collection of groups.
 
         :return: SimGroups
         """
@@ -155,14 +155,14 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMeshSpecifications() As SimMeshSpecifications
-                |     Returns the local mesh specification collection from the Mesh
-                |     Part.
-                | 
-                |     See also:
-                |         SimMeshSpecifications
-                |     Returns:
-                |         The associated collection of mesh specification.
+                Func GetMeshSpecifications() As SimMeshSpecifications
+                    Returns the local mesh specification collection from the Mesh
+                    Part.
+                
+                    See also:
+                        SimMeshSpecifications
+                    Returns:
+                        The associated collection of mesh specification.
 
         :return: SimMeshSpecifications
         """
@@ -173,13 +173,13 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfSupports() As long
-                |     Retrieves the number of Mesh Part supports.
-                | 
-                |     Parameters:
-                | 
-                |         oNbSupports
-                |             Number of Mesh Part supports.
+                Func GetNumberOfSupports() As long
+                    Retrieves the number of Mesh Part supports.
+                
+                    Parameters:
+                
+                        oNbSupports
+                            Number of Mesh Part supports.
 
         :return: int
         """
@@ -190,14 +190,14 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberingLabels(SimMeshEntityType iType) As
-                | CATSafeArrayVariant
-                |     Retrieves all the numbering labels of current object
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Type of mesh entity: simMeshNodeEntity or simMeshElementEntity.
+                Func GetNumberingLabels(SimMeshEntityType iType) As
+                CATSafeArrayVariant
+                    Retrieves all the numbering labels of current object
+                
+                    Parameters:
+                
+                        iType
+                            Type of mesh entity: simMeshNodeEntity or simMeshElementEntity.
 
         :param int i_type:
         :return: tuple
@@ -209,8 +209,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParentMeshParts() As CATSafeArrayVariant
-                |     Retrieves the parent mesh parts.
+                Func GetParentMeshParts() As CATSafeArrayVariant
+                    Retrieves the parent mesh parts.
 
         :return: tuple
         """
@@ -221,8 +221,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetRuleAttribute(SimMeshingRuleAttr iAttr) As CATBSTR
-                |     Retrieve meshing rule PLM attribute
+                Func GetRuleAttribute(SimMeshingRuleAttr iAttr) As CATBSTR
+                    Retrieve meshing rule PLM attribute
 
         :param int i_attr:
         :return: str
@@ -234,14 +234,14 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetSupports() As CATSafeArrayVariant
-                |     Retrieves all the Mesh Part supports from the support
-                |     description.
-                | 
-                |     Parameters:
-                | 
-                |         oSupports
-                |             The Mesh Part supports.
+                Func GetSupports() As CATSafeArrayVariant
+                    Retrieves all the Mesh Part supports from the support
+                    description.
+                
+                    Parameters:
+                
+                        oSupports
+                            The Mesh Part supports.
 
         :return: tuple
         """
@@ -252,14 +252,14 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTopologySpecifications() As SimTopologySpecifications
-                |     Returns the local topology specification collection from the Mesh
-                |     Part.
-                | 
-                |     See also:
-                |         SimTopologySpecifications
-                |     Returns:
-                |         The associated collection of topology specifications.
+                Func GetTopologySpecifications() As SimTopologySpecifications
+                    Returns the local topology specification collection from the Mesh
+                    Part.
+                
+                    See also:
+                        SimTopologySpecifications
+                    Returns:
+                        The associated collection of topology specifications.
 
         :return: SimTopologySpecifications
         """
@@ -270,21 +270,21 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
-                | iSupport)
-                |     Removes an external reference corresponding to the given
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iSetType:
-                |             The identifier of the set specification.
-                |             Legal values: "Mesh" or "Topology". 
-                |         iAttribute:
-                |             The name of parameter. 
-                |         iSupport:
-                |             The link object that represents the geometry.
-                |             PLMProductService.ComposeLink
+                Sub RemoveExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
+                iSupport)
+                    Removes an external reference corresponding to the given
+                    parameter.
+                
+                    Parameters:
+                
+                        iSetType:
+                            The identifier of the set specification.
+                            Legal values: "Mesh" or "Topology". 
+                        iAttribute:
+                            The name of parameter. 
+                        iSupport:
+                            The link object that represents the geometry.
+                            PLMProductService.ComposeLink
 
         :param str i_set_type:
         :param str i_attribute:
@@ -298,8 +298,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveNumbering()
-                |     Removes numbering specification.
+                Sub RemoveNumbering()
+                    Removes numbering specification.
 
         :return: None
         """
@@ -310,16 +310,16 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveSupport(AnyObject iSupport)
-                |     Removes a support to the support description of the Mesh
-                |     Part.
-                | 
-                |     Parameters:
-                | 
-                |         iSupport:
-                |             The link object that represents the geometry to remove from support
-                |             list.
-                |             PLMProductService.ComposeLink
+                Sub RemoveSupport(AnyObject iSupport)
+                    Removes a support to the support description of the Mesh
+                    Part.
+                
+                    Parameters:
+                
+                        iSupport:
+                            The link object that represents the geometry to remove from support
+                            list.
+                            PLMProductService.ComposeLink
 
         :param AnyObject i_support:
         :return: None
@@ -331,19 +331,19 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
-                | iValue)
-                |     Sets the value corresponding to the given parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iSetType:
-                |             The identifier of the set specification.
-                |             Legal values: "Mesh" or "Topology". 
-                |         iAttribute:
-                |             The name of attribute. 
-                |         iValue:
-                |             The value of the global mesh attribute.
+                Sub SetAttributeValue(CATBSTR iSetType,CATBSTR iAttribute,CATVariant
+                iValue)
+                    Sets the value corresponding to the given parameter.
+                
+                    Parameters:
+                
+                        iSetType:
+                            The identifier of the set specification.
+                            Legal values: "Mesh" or "Topology". 
+                        iAttribute:
+                            The name of attribute. 
+                        iValue:
+                            The value of the global mesh attribute.
 
         :param str i_set_type:
         :param str i_attribute:
@@ -357,21 +357,21 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
-                | iSupport)
-                |     Creates an external reference corresponding to the given
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iSetType:
-                |             The identifier of the set specification.
-                |             Legal values: "Mesh" or "Topology". 
-                |         iAttribute:
-                |             The name of parameter. 
-                |         iSupport:
-                |             The link object that represents the geometry.
-                |             PLMProductService.ComposeLink
+                Sub SetExternalReference(CATBSTR iSetType,CATBSTR iAttribute,AnyObject
+                iSupport)
+                    Creates an external reference corresponding to the given
+                    parameter.
+                
+                    Parameters:
+                
+                        iSetType:
+                            The identifier of the set specification.
+                            Legal values: "Mesh" or "Topology". 
+                        iAttribute:
+                            The name of parameter. 
+                        iSupport:
+                            The link object that represents the geometry.
+                            PLMProductService.ComposeLink
 
         :param str i_set_type:
         :param str i_attribute:
@@ -385,24 +385,24 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMeshPartsToCapture(CATSafeArrayVariant iMeshParts)
-                |     Sets the list of candidate Mesh Parts for capture.
-                | 
-                |     Parameters:
-                | 
-                |         iMeshParts:
-                |             Safe array of Mesh Parts. 
-                | 
-                |     Example:
-                | 
-                |          This exemple sets the Mesh Part named "Surface Mesh.1" as Mesh Part to
-                |          
-                |          capture for the MyMeshPart Mesh Part:
-                |          
-                | 
-                |          Dim captures1(0)
-                |          Set captures1(0) = MyMeshParts.GetItem("Surface Mesh.1")
-                |          MyMeshPart.SetMeshPartsToCapture captures1
+                Sub SetMeshPartsToCapture(CATSafeArrayVariant iMeshParts)
+                    Sets the list of candidate Mesh Parts for capture.
+                
+                    Parameters:
+                
+                        iMeshParts:
+                            Safe array of Mesh Parts. 
+                
+                    Example:
+                
+                         This exemple sets the Mesh Part named "Surface Mesh.1" as Mesh Part to
+                         
+                         capture for the MyMeshPart Mesh Part:
+                         
+                
+                         Dim captures1(0)
+                         Set captures1(0) = MyMeshParts.GetItem("Surface Mesh.1")
+                         MyMeshPart.SetMeshPartsToCapture captures1
 
         :return: tuple
         """
@@ -429,15 +429,15 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetRule(CATBSTR iRuleName,CATBSTR iExtension)
-                |     Sets the Mesh Part rule.
-                | 
-                |     Parameters:
-                | 
-                |         iRuleName:
-                |             The name of the rule. 
-                |         iExtension:
-                |             The extension of the rule.
+                Sub SetRule(CATBSTR iRuleName,CATBSTR iExtension)
+                    Sets the Mesh Part rule.
+                
+                    Parameters:
+                
+                        iRuleName:
+                            The name of the rule. 
+                        iExtension:
+                            The extension of the rule.
 
         :param str i_rule_name:
         :param str i_extension:
@@ -450,8 +450,8 @@ class SimMeshPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Launches the update of a Mesh Part.
+                Sub Update()
+                    Launches the update of a Mesh Part.
 
         :return: None
         """

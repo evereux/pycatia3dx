@@ -17,23 +17,23 @@ class Plane(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         Plane
-                | 
-                | Represents the hybrid shape Plane feature object.
-                | Role: Declare hybrid shape Plane root feature object. All interfaces for
-                | different type of Plane derives HybridShapePlane.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapePlane
-                | objects.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        Plane
+                
+                Represents the hybrid shape Plane feature object.
+                Role: Declare hybrid shape Plane root feature object. All interfaces for
+                different type of Plane derives HybridShapePlane.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapePlane
+                objects.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -46,20 +46,20 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
-                |     Returns the coordinates of the first plane axis.
-                | 
-                |     Parameters:
-                | 
-                |         oFirstAxis[0]
-                |             The X Coordinate of the first plane axis 
-                |         oFirstAxis[1]
-                |             The Y Coordinate of the first plane axis 
-                |         oFirstAxis[2]
-                |             The Z Coordinate of the first plane axis 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
+                    Returns the coordinates of the first plane axis.
+                
+                    Parameters:
+                
+                        oFirstAxis[0]
+                            The X Coordinate of the first plane axis 
+                        oFirstAxis[1]
+                            The Y Coordinate of the first plane axis 
+                        oFirstAxis[2]
+                            The Z Coordinate of the first plane axis 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -89,20 +89,20 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Returns the origin of the plane.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin[0]
-                |             The X Coordinate of the plane origin 
-                |         oOrigin[1]
-                |             The Y Coordinate of the plane origin 
-                |         oOrigin[2]
-                |             The Z Coordinate of the plane origin 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Returns the origin of the plane.
+                
+                    Parameters:
+                
+                        oOrigin[0]
+                            The X Coordinate of the plane origin 
+                        oOrigin[1]
+                            The Y Coordinate of the plane origin 
+                        oOrigin[2]
+                            The Z Coordinate of the plane origin 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -131,20 +131,20 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetPosition(double oX,double oY,double oZ)
-                |     Gets the position where the plane is displayed.
-                | 
-                |     Parameters:
-                | 
-                |         oX
-                |             X coordinates 
-                |         oY
-                |             Y coordinates 
-                |         oZ
-                |             Z coordinates 
-                | 
-                |     Returns:
-                |         S_OK if the position has been set before, E_FAIL else.
+                Sub GetPosition(double oX,double oY,double oZ)
+                    Gets the position where the plane is displayed.
+                
+                    Parameters:
+                
+                        oX
+                            X coordinates 
+                        oY
+                            Y coordinates 
+                        oZ
+                            Z coordinates 
+                
+                    Returns:
+                        S_OK if the position has been set before, E_FAIL else.
 
         :param float o_x:
         :param float o_y:
@@ -188,20 +188,20 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
-                |     Returns the coordinates of the second plane axis.
-                | 
-                |     Parameters:
-                | 
-                |         oSecondAxis[0]
-                |             The X Coordinate of the second plane axis 
-                |         oSecondAxis[1]
-                |             The Y Coordinate of the second plane axis 
-                |         oSecondAxis[2]
-                |             The Z Coordinate of the second plane axis 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
+                    Returns the coordinates of the second plane axis.
+                
+                    Parameters:
+                
+                        oSecondAxis[0]
+                            The X Coordinate of the second plane axis 
+                        oSecondAxis[1]
+                            The Y Coordinate of the second plane axis 
+                        oSecondAxis[2]
+                            The Z Coordinate of the second plane axis 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -231,12 +231,12 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Func IsARefPlane() As long
-                |     Queries whether the plane is a reference plane (fixed axis
-                |     plane).
-                | 
-                |     Returns:
-                |         0 when the plane is a reference plane, 1 else.
+                Func IsARefPlane() As long
+                    Queries whether the plane is a reference plane (fixed axis
+                    plane).
+                
+                    Returns:
+                        0 when the plane is a reference plane, 1 else.
 
         :return: bool
         """
@@ -247,23 +247,23 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
-                |     Sets the first axis. The first plane axis must be a point-direction
-                |     line.
-                |     Note: This method can only be used on CATIAHybridShapePlane2Lines
-                |     feature
-                | 
-                |     Parameters:
-                | 
-                |         iFirstAxis[0]
-                |             The X Coordinate of the first plane axis 
-                |         iFirstAxis[1]
-                |             The Y Coordinate of the first plane axis 
-                |         iFirstAxis[2]
-                |             The Z Coordinate of the first plane axis 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
+                    Sets the first axis. The first plane axis must be a point-direction
+                    line.
+                    Note: This method can only be used on CATIAHybridShapePlane2Lines
+                    feature
+                
+                    Parameters:
+                
+                        iFirstAxis[0]
+                            The X Coordinate of the first plane axis 
+                        iFirstAxis[1]
+                            The Y Coordinate of the first plane axis 
+                        iFirstAxis[2]
+                            The Z Coordinate of the first plane axis 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param tuple i_first_axis:
         :return: None
@@ -291,22 +291,22 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub PutOrigin(CATSafeArrayVariant iOrigin)
-                |     Sets the origin of the plane.
-                |     Note: This method can only be used on CATIAHybridShapePlane2Lines
-                |     feature
+                Sub PutOrigin(CATSafeArrayVariant iOrigin)
+                    Sets the origin of the plane.
+                    Note: This method can only be used on CATIAHybridShapePlane2Lines
+                    feature
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iOrigin[0]
-                |             The X Coordinate of the plane origin
-                |         iOrigin[1]
-                |             The Y Coordinate of the plane origin
-                |         iOrigin[2]
-                |             The Z Coordinate of the plane origin
+                        iOrigin[0]
+                            The X Coordinate of the plane origin
+                        iOrigin[1]
+                            The Y Coordinate of the plane origin
+                        iOrigin[2]
+                            The Z Coordinate of the plane origin
                 |
-                |     See also:
-                |         HybridShapeFactory
+                    See also:
+                        HybridShapeFactory
 
         :param tuple i_origin:
         :return: None
@@ -334,23 +334,23 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
-                |     Sets the coordinates of the second plane axis. The second plane axis must
-                |     be a point-direction line
-                |     Note: This method can only be used on CATIAHybridShapePlane2Lines
-                |     feature
-                | 
-                |     Parameters:
-                | 
-                |         iSecondAxis[0]
-                |             The X Coordinate of the second plane axis 
-                |         iSecondAxis[1]
-                |             The Y Coordinate of the second plane axis 
-                |         iSecondAxis[2]
-                |             The Z Coordinate of the second plane axis 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
+                    Sets the coordinates of the second plane axis. The second plane axis must
+                    be a point-direction line
+                    Note: This method can only be used on CATIAHybridShapePlane2Lines
+                    feature
+                
+                    Parameters:
+                
+                        iSecondAxis[0]
+                            The X Coordinate of the second plane axis 
+                        iSecondAxis[1]
+                            The Y Coordinate of the second plane axis 
+                        iSecondAxis[2]
+                            The Z Coordinate of the second plane axis 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param tuple i_second_axis:
         :return: None
@@ -378,9 +378,9 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemovePosition()
-                |     Removes reference position of a plane.
-                |     Note: When removed, the plane is displayed at its default position.
+                Sub RemovePosition()
+                    Removes reference position of a plane.
+                    Note: When removed, the plane is displayed at its default position.
 
         :return: None
         """
@@ -391,17 +391,17 @@ class Plane(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetPosition(double iX,double iY,double iZ)
-                |     Sets the position where the plane is displayed.
-                | 
-                |     Parameters:
-                | 
-                |         iX
-                |             X coordinates 
-                |         iY
-                |             Y coordinates 
-                |         iZ
-                |             Z coordinates
+                Sub SetPosition(double iX,double iY,double iZ)
+                    Sets the position where the plane is displayed.
+                
+                    Parameters:
+                
+                        iX
+                            X coordinates 
+                        iY
+                            Y coordinates 
+                        iZ
+                            Z coordinates
 
         :param float i_x:
         :param float i_y:

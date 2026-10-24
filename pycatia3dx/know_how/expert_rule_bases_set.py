@@ -16,25 +16,25 @@ class ExpertRuleBasesSet(KnowledgeSet):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     KnowledgeIDLItf.KnowledgeSet
-                |                         ExpertRuleBasesSet
-                | 
-                | Interface representing the set of rule bases.
-                | Example : how to create an ExpertRuleBasesSet
-                | 
-                |  Dim part As VPMRepReference
-                |  Set part = ...
-                |  Dim rulebasesset As ExpertRuleBasesSet
-                |  Set rulebasesset = part.GetItem("KnowledgeObjects").GetKnowledgeRootSet(True, 3)
-                |  
-                | 
-                | See also:
-                |     KnowledgeObjects
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    KnowledgeIDLItf.KnowledgeSet
+                                        ExpertRuleBasesSet
+                
+                Interface representing the set of rule bases.
+                Example : how to create an ExpertRuleBasesSet
+                
+                 Dim part As VPMRepReference
+                 Set part = ...
+                 Dim rulebasesset As ExpertRuleBasesSet
+                 Set rulebasesset = part.GetItem("KnowledgeObjects").GetKnowledgeRootSet(True, 3)
+                 
+                
+                See also:
+                    KnowledgeObjects
     
     """
 

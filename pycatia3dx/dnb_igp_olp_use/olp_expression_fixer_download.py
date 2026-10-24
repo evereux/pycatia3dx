@@ -18,24 +18,24 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpExpressionFixer
-                |                         OlpExpressionFixerDownload
-                | 
-                | An object for translating expressions from DELMIA expressions in the native
-                | robot language.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A new expression fixer can be created with
-                | OlpTranslatorHelper.CreateExprFixerDownload.
-                | You can find more information on the OLP Expression AST format in the
-                | documentation under Automation | Robotics | Robotics Offline Programming |
-                | Offline Programming Expression Translation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpExpressionFixer
+                                        OlpExpressionFixerDownload
+                
+                An object for translating expressions from DELMIA expressions in the native
+                robot language.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A new expression fixer can be created with
+                OlpTranslatorHelper.CreateExprFixerDownload.
+                You can find more information on the OLP Expression AST format in the
+                documentation under Automation | Robotics | Robotics Offline Programming |
+                Offline Programming Expression Translation.
     
     """
 
@@ -49,14 +49,14 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowBinaryNumbers(boolean iAllowed) (Write Only)
-                |     Set whether integers can be expressed as binary numbers in the
-                |     expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If a binary number is found and this is FALSE,
-                |     then a warning will be added and OlpExpressionFixer.Fix will return FALSE. In
-                |     this case you should skip downloading the instruction because it will result in
-                |     a compilation error in the program. Default value is TRUE.
+                Property AllowBinaryNumbers(boolean iAllowed) (Write Only)
+                    Set whether integers can be expressed as binary numbers in the
+                    expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If a binary number is found and this is FALSE,
+                    then a warning will be added and OlpExpressionFixer.Fix will return FALSE. In
+                    this case you should skip downloading the instruction because it will result in
+                    a compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -77,14 +77,14 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowConditionalExpr(boolean iAllowed) (Write Only)
-                |     Set whether conditional expressions (if...then...else...) are allowed in
-                |     the expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If a conditional expressions is found and this
-                |     is FALSE, then a warning will be added and OlpExpressionFixer.Fix will return
-                |     FALSE. In this case you should skip downloading the instruction because it will
-                |     result in a compilation error in the program. Default value is TRUE.
+                Property AllowConditionalExpr(boolean iAllowed) (Write Only)
+                    Set whether conditional expressions (if...then...else...) are allowed in
+                    the expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If a conditional expressions is found and this
+                    is FALSE, then a warning will be added and OlpExpressionFixer.Fix will return
+                    FALSE. In this case you should skip downloading the instruction because it will
+                    result in a compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -105,11 +105,11 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowConstants(boolean iAllowed) (Write Only)
-                |     Set whether constants are allowed in the expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If FALSE, then all constants in the expression
-                |     are replaced by their literal values. Default value is TRUE.
+                Property AllowConstants(boolean iAllowed) (Write Only)
+                    Set whether constants are allowed in the expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If FALSE, then all constants in the expression
+                    are replaced by their literal values. Default value is TRUE.
 
         :return: bool
         """
@@ -130,13 +130,13 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowFunctions(boolean iAllowed) (Write Only)
-                |     Set whether function calls are allowed in the expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If a function is found and this is FALSE, then
-                |     a warning will be added and OlpExpressionFixer.Fix will return FALSE. In this
-                |     case you should skip downloading the instruction because it will result in a
-                |     compilation error in the program. Default value is TRUE.
+                Property AllowFunctions(boolean iAllowed) (Write Only)
+                    Set whether function calls are allowed in the expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If a function is found and this is FALSE, then
+                    a warning will be added and OlpExpressionFixer.Fix will return FALSE. In this
+                    case you should skip downloading the instruction because it will result in a
+                    compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -157,14 +157,14 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowHexNumbers(boolean iAllowed) (Write Only)
-                |     Set whether integers can be expressed as hexadecimal numbers in the
-                |     expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If a hexadecimal number is found and this is
-                |     FALSE, then a warning will be added and OlpExpressionFixer.Fix will return
-                |     FALSE. In this case you should skip downloading the instruction because it will
-                |     result in a compilation error in the program. Default value is TRUE.
+                Property AllowHexNumbers(boolean iAllowed) (Write Only)
+                    Set whether integers can be expressed as hexadecimal numbers in the
+                    expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If a hexadecimal number is found and this is
+                    FALSE, then a warning will be added and OlpExpressionFixer.Fix will return
+                    FALSE. In this case you should skip downloading the instruction because it will
+                    result in a compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -185,13 +185,13 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowParentheses(boolean iAllowed) (Write Only)
-                |     Set whether parentheses are allowed in the expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If parentheses are found and this is FALSE,
-                |     then a warning will be added and OlpExpressionFixer.Fix will return FALSE. In
-                |     this case you should skip downloading the instruction because it will result in
-                |     a compilation error in the program. Default value is TRUE.
+                Property AllowParentheses(boolean iAllowed) (Write Only)
+                    Set whether parentheses are allowed in the expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If parentheses are found and this is FALSE,
+                    then a warning will be added and OlpExpressionFixer.Fix will return FALSE. In
+                    this case you should skip downloading the instruction because it will result in
+                    a compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -212,15 +212,15 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AllowScientificNotation(boolean iAllowed) (Write
-                | Only)
-                |     Set whether doubles can be expressed in scientific notation in the
-                |     expression.
-                |     Only needs to be set once before the first call to set
-                |     OlpExpressionFixer.SetExpression If a number in scientific notation is found
-                |     and this is FALSE, then a warning will be added and OlpExpressionFixer.Fix will
-                |     return FALSE. In this case you should skip downloading the instruction because
-                |     it will result in a compilation error in the program. Default value is TRUE.
+                Property AllowScientificNotation(boolean iAllowed) (Write
+                Only)
+                    Set whether doubles can be expressed in scientific notation in the
+                    expression.
+                    Only needs to be set once before the first call to set
+                    OlpExpressionFixer.SetExpression If a number in scientific notation is found
+                    and this is FALSE, then a warning will be added and OlpExpressionFixer.Fix will
+                    return FALSE. In this case you should skip downloading the instruction because
+                    it will result in a compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -241,13 +241,13 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EnforceValidFunctions(boolean iEnforce) (Write Only)
-                |     Set whether all valid function calls must be added to the
-                |     SubsituteFunctionName list.
-                |     If TRUE and a function that is not in the list is encountered, then a
-                |     warning will be added and OlpExpressionFixer.Fix will return FALSE. In this
-                |     case you should skip downloading the instruction because it will result in a
-                |     compilation error in the program. Default value is TRUE.
+                Property EnforceValidFunctions(boolean iEnforce) (Write Only)
+                    Set whether all valid function calls must be added to the
+                    SubsituteFunctionName list.
+                    If TRUE and a function that is not in the list is encountered, then a
+                    warning will be added and OlpExpressionFixer.Fix will return FALSE. In this
+                    case you should skip downloading the instruction because it will result in a
+                    compilation error in the program. Default value is TRUE.
 
         :return: bool
         """
@@ -267,23 +267,23 @@ class OLPExpressionFixerDownload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SubsituteVariable(OlpVariable iBMVar,OlpAstNode iNRLVar)
-                |     Set the variable substitutions to make.
-                |     You only need to set a variable substitution for a variable one time and
-                |     all instances of the variable in the expression will be substituted. You can
-                |     find all variables in the expression using OlpExpressionFixer.Variables. This
-                |     function must be called after setting OlpExpressionFixer.SetExpression but
-                |     before and OlpExpressionFixer.Fix. Any variable substitutions are cleared after
-                |     calling Fix.
-                | 
-                |     Parameters:
-                | 
-                |         iBMVar
-                |             The DELMIA variable to replace. 
-                |         iBMVar
-                |             The robot language variable to replace it with.
-                |             This AST node will be cloned to replace all variables of this type.
-                |             The original AST node will not be used, so you can use it over and over again.
+                Sub SubsituteVariable(OlpVariable iBMVar,OlpAstNode iNRLVar)
+                    Set the variable substitutions to make.
+                    You only need to set a variable substitution for a variable one time and
+                    all instances of the variable in the expression will be substituted. You can
+                    find all variables in the expression using OlpExpressionFixer.Variables. This
+                    function must be called after setting OlpExpressionFixer.SetExpression but
+                    before and OlpExpressionFixer.Fix. Any variable substitutions are cleared after
+                    calling Fix.
+                
+                    Parameters:
+                
+                        iBMVar
+                            The DELMIA variable to replace. 
+                        iBMVar
+                            The robot language variable to replace it with.
+                            This AST node will be cloned to replace all variables of this type.
+                            The original AST node will not be used, so you can use it over and over again.
 
         :param OlpVariable i_bm_var:
         :param OlpAstNode i_nrl_var:

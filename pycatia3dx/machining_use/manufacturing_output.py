@@ -17,14 +17,14 @@ class ManufacturingOutput(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingOutput
-                | 
-                | Object that represents the output machining code.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingOutput
+                
+                Object that represents the output machining code.
     
     """
 
@@ -37,8 +37,8 @@ class ManufacturingOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CloseStream()
-                |     Close the Stream.
+                Sub CloseStream()
+                    Close the Stream.
 
         :return: None
         """
@@ -49,8 +49,8 @@ class ManufacturingOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Flush()
-                |     Flush all Data in the Stream.
+                Sub Flush()
+                    Flush all Data in the Stream.
 
         :return: None
         """
@@ -61,8 +61,8 @@ class ManufacturingOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub NewLine()
-                |     Create a New Line in the underlying output stream.
+                Sub NewLine()
+                    Create a New Line in the underlying output stream.
 
         :return: None
         """
@@ -73,8 +73,8 @@ class ManufacturingOutput(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub write_Chars(CATBSTR iText)
-                |     Write the specified string to the underlying output stream.
+                Sub write_Chars(CATBSTR iText)
+                    Write the specified string to the underlying output stream.
 
         :param str i_text:
         :return: None

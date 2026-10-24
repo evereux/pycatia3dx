@@ -18,23 +18,23 @@ class Line(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         Line
-                | 
-                | Represents the hybrid shape Line feature object.
-                | Role: Declare hybrid shape Line root feature object. All interfaces for
-                | different type of Line derives HybridShapeLine.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapeLine
-                | objects.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        Line
+                
+                Represents the hybrid shape Line feature object.
+                Role: Declare hybrid shape Line root feature object. All interfaces for
+                different type of Line derives HybridShapeLine.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapeLine
+                objects.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -48,15 +48,15 @@ class Line(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property FirstUptoElem() As Reference
-                |     Role: Gets the First upto element of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oFirstUpto
-                | 
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else
+                Property FirstUptoElem() As Reference
+                    Role: Gets the First upto element of the line.
+                
+                    Parameters:
+                
+                        oFirstUpto
+                
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else
 
         :return: Reference
         """
@@ -77,15 +77,15 @@ class Line(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property SecondUptoElem() As Reference
-                |     Role: Gets the Second upto element of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oSecondUpto
-                | 
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else
+                Property SecondUptoElem() As Reference
+                    Role: Gets the Second upto element of the line.
+                
+                    Parameters:
+                
+                        oSecondUpto
+                
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else
 
         :return: Reference
         """
@@ -105,28 +105,28 @@ class Line(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetDirection(CATSafeArrayVariant oDirection)
-                |     Role: Returns the unit-vector pointing in the direction of the
-                |     line.
-                | 
-                |     Parameters:
-                | 
-                |         oDirection
-                |         oDirection[0]
-                |             The X Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                |         oDirection[1]
-                |             The Y Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                |         oDirection[2]
-                |             The Z Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                | 
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetDirection(CATSafeArrayVariant oDirection)
+                    Role: Returns the unit-vector pointing in the direction of the
+                    line.
+                
+                    Parameters:
+                
+                        oDirection
+                        oDirection[0]
+                            The X Coordinate of the unit vector pointing in the direction of
+                            the line 
+                        oDirection[1]
+                            The Y Coordinate of the unit vector pointing in the direction of
+                            the line 
+                        oDirection[2]
+                            The Z Coordinate of the unit vector pointing in the direction of
+                            the line 
+                
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -155,25 +155,25 @@ class Line(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetOrigin(CATSafeArrayVariant oOrigin)
-                |     Role: Returns the origin of the line.
-                | 
-                |     Parameters:
-                | 
-                |         oOrigin
-                |         oOrigin[0]
-                |             The X Coordinate of a point lying on the line 
-                |         oOrigin[1]
-                |             The Y Coordinate of a point lying on the line 
-                |         oOrigin[2]
-                |             The Z Coordinate of a point lying on the line The Origin is
-                |             evaluated from the geometry of the line. 
-                | 
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetOrigin(CATSafeArrayVariant oOrigin)
+                    Role: Returns the origin of the line.
+                
+                    Parameters:
+                
+                        oOrigin
+                        oOrigin[0]
+                            The X Coordinate of a point lying on the line 
+                        oOrigin[1]
+                            The Y Coordinate of a point lying on the line 
+                        oOrigin[2]
+                            The Z Coordinate of a point lying on the line The Origin is
+                            evaluated from the geometry of the line. 
+                
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -202,28 +202,28 @@ class Line(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub PutDirection(CATSafeArrayVariant iDirection)
-                |     Role: Sets the unit-vector pointing in the direction of the
-                |     line.
-                | 
-                |     Parameters:
-                | 
-                |         iDirection
-                |         iDirection[0]
-                |             The X Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                |         iDirection[1]
-                |             The Y Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                |         iDirection[2]
-                |             The Z Coordinate of the unit vector pointing in the direction of
-                |             the line 
-                | 
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Sub PutDirection(CATSafeArrayVariant iDirection)
+                    Role: Sets the unit-vector pointing in the direction of the
+                    line.
+                
+                    Parameters:
+                
+                        iDirection
+                        iDirection[0]
+                            The X Coordinate of the unit vector pointing in the direction of
+                            the line 
+                        iDirection[1]
+                            The Y Coordinate of the unit vector pointing in the direction of
+                            the line 
+                        iDirection[2]
+                            The Z Coordinate of the unit vector pointing in the direction of
+                            the line 
+                
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :param tuple i_direction:
         :return: None

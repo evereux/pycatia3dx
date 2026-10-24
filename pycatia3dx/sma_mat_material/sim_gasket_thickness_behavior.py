@@ -19,55 +19,55 @@ class SimGasketThicknessBehavior(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimGasketThicknessBehavior
-                | 
-                | Represents the Gasket Thickness Behavior object.
-                | 
-                | Example:
-                |     Given a SimMaterialOptions object, you can create a
-                |     SimGasketThicknessBehavior as following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyGasketThicknessBehavior As
-                |      SimGasketThicknessBehavior
-                |      Set MyGasketThicknessBehavior = MyMaterialOptions.Add("SimGasketThicknessBehavior")
-                |      
-                | 
-                |     Given a SimMaterialOptions object, you can retrieve a
-                |     SimGasketThicknessBehavior named "Gasket Thickness Behavior.1" as
-                |     following:
-                | 
-                |      Dim MyMaterialOptions As SimMaterialOptions
-                |      ...
-                |      Dim MyGasketThicknessBehavior As
-                |      SimGasketThicknessBehavior
-                |      Set MyGasketThicknessBehavior = MyMaterialOptions.Item("Gasket Thickness Behavior.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMaterialOptions object myMaterialOptions, you can create a
-                |     SimGasketThicknessBehavior as following:
-                | 
-                |      ...
-                |      myGasketThicknessBehavior = myMaterialOptions.Add("SimGasketThicknessBehavior")
-                |      
-                | 
-                |     Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
-                |     SimGasketThicknessBehavior named "Gasket Thickness Behavior.1" as
-                |     following:
-                | 
-                |      ...
-                |      myGasketThicknessBehavior = myMaterialOptions.Item("Gasket Thickness Behavior.1")
-                |      
-                | 
-                | See also:
-                |     SimMaterialOptions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimGasketThicknessBehavior
+                
+                Represents the Gasket Thickness Behavior object.
+                
+                Example:
+                    Given a SimMaterialOptions object, you can create a
+                    SimGasketThicknessBehavior as following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyGasketThicknessBehavior As
+                     SimGasketThicknessBehavior
+                     Set MyGasketThicknessBehavior = MyMaterialOptions.Add("SimGasketThicknessBehavior")
+                     
+                
+                    Given a SimMaterialOptions object, you can retrieve a
+                    SimGasketThicknessBehavior named "Gasket Thickness Behavior.1" as
+                    following:
+                
+                     Dim MyMaterialOptions As SimMaterialOptions
+                     ...
+                     Dim MyGasketThicknessBehavior As
+                     SimGasketThicknessBehavior
+                     Set MyGasketThicknessBehavior = MyMaterialOptions.Item("Gasket Thickness Behavior.1")
+                     
+                
+                Example in Python:
+                    Given a SimMaterialOptions object myMaterialOptions, you can create a
+                    SimGasketThicknessBehavior as following:
+                
+                     ...
+                     myGasketThicknessBehavior = myMaterialOptions.Add("SimGasketThicknessBehavior")
+                     
+                
+                    Given a SimMaterialOptions object myMaterialOptions, you can retrieve a
+                    SimGasketThicknessBehavior named "Gasket Thickness Behavior.1" as
+                    following:
+                
+                     ...
+                     myGasketThicknessBehavior = myMaterialOptions.Item("Gasket Thickness Behavior.1")
+                     
+                
+                See also:
+                    SimMaterialOptions
     
     """
 
@@ -81,9 +81,9 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BehaviorType() As
-                | SimGasketThicknessBehaviorBehaviorType
-                |     Returns or sets the behavior type.
+                Property BehaviorType() As
+                SimGasketThicknessBehaviorBehaviorType
+                    Returns or sets the behavior type.
 
         :return: int
         """
@@ -104,9 +104,9 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LoadingMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the material loading table.
+                Property LoadingMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the material loading table.
 
         :return: SimMaterialTable
         """
@@ -119,8 +119,8 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TensileStiffnessFactor() As double
-                |     Returns or sets the tensile stiffness factor. Quantity: Real, Units: None
+                Property TensileStiffnessFactor() As double
+                    Returns or sets the tensile stiffness factor. Quantity: Real, Units: None
 
         :return: float
         """
@@ -141,9 +141,9 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UnloadingMaterialTable() As SimMaterialTable (Read
-                | Only)
-                |     Returns the material unloading table.
+                Property UnloadingMaterialTable() As SimMaterialTable (Read
+                Only)
+                    Returns the material unloading table.
 
         :return: SimMaterialTable
         """
@@ -156,9 +156,9 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserUnloadingCurveFlag() As boolean
-                |     This boolean will be TRUE if an unloading curve is specified, FALSE
-                |     otherwise.
+                Property UserUnloadingCurveFlag() As boolean
+                    This boolean will be TRUE if an unloading curve is specified, FALSE
+                    otherwise.
 
         :return: bool
         """
@@ -179,8 +179,8 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property YieldOnsetValue() As double
-                |     Returns or sets the yield onset value. Quantity: Real, Units: None
+                Property YieldOnsetValue() As double
+                    Returns or sets the yield onset value. Quantity: Real, Units: None
 
         :return: float
         """
@@ -200,20 +200,20 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetLoadingMaterialTableColumn(SimGasketThicknessBehaviorLoadingMaterialTableColumn iMaterialTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the loading material table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The loading material table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table.
+                Func
+                GetLoadingMaterialTableColumn(SimGasketThicknessBehaviorLoadingMaterialTableColumn iMaterialTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the loading material table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The loading material table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table.
 
         :param int i_material_table_column:
         :return: SimTableColumn
@@ -225,20 +225,20 @@ class SimGasketThicknessBehavior(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func
-                | GetUnloadingMaterialTableColumn(SimGasketThicknessBehaviorUnloadingMaterialTableColumn iMaterialTableColumn) As SimTableColum
-                | n
-                |     Retrieves the column object for the unloading material table
-                |     column.
-                | 
-                |     Parameters:
-                | 
-                |         iMaterialTableColumn[in]
-                |             The unloading material table table column. 
-                | 
-                |     Returns:
-                |         The table column object. This value will be NULL_var in case the
-                |         specified column is not found in the table. 
+                Func
+                GetUnloadingMaterialTableColumn(SimGasketThicknessBehaviorUnloadingMaterialTableColumn iMaterialTableColumn) As SimTableColum
+                n
+                    Retrieves the column object for the unloading material table
+                    column.
+                
+                    Parameters:
+                
+                        iMaterialTableColumn[in]
+                            The unloading material table table column. 
+                
+                    Returns:
+                        The table column object. This value will be NULL_var in case the
+                        specified column is not found in the table. 
 
         :param int i_material_table_column:
         :return: SimTableColumn

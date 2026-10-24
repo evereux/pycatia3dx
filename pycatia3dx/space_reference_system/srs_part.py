@@ -22,14 +22,14 @@ class SrsPart(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SrsPart
-                | 
-                | Role: Allows accessing of Part's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SrsPart
+                
+                Role: Allows accessing of Part's data.
     
     """
 
@@ -43,7 +43,7 @@ class SrsPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoundingBox() As SrsBoundingBox (Read Only)
+                Property BoundingBox() As SrsBoundingBox (Read Only)
 
         :return: SrsBoundingBox
         """
@@ -56,7 +56,7 @@ class SrsPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CentreLine() As SrsCentreLine (Read Only)
+                Property CentreLine() As SrsCentreLine (Read Only)
 
         :return: SrsCentreLine
         """
@@ -69,7 +69,7 @@ class SrsPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MidShip() As SrsMidShip (Read Only)
+                Property MidShip() As SrsMidShip (Read Only)
 
         :return: SrsMidShip
         """
@@ -82,7 +82,7 @@ class SrsPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferenceSurface() As Reference (Read Only)
+                Property ReferenceSurface() As Reference (Read Only)
 
         :return: Reference
         """
@@ -95,7 +95,7 @@ class SrsPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SrsGridSets() As SrsGridSets (Read Only)
+                Property SrsGridSets() As SrsGridSets (Read Only)
 
         :return: SrsGridSets
         """

@@ -17,52 +17,52 @@ class SimAnalyticRigidSurface(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimAnalyticRigidSurface
-                | 
-                | Represents the Analytic Rigid Surface object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimAnalyticRigidSurface as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAnalyticRigidSurface As SimAnalyticRigidSurface
-                |      Set MyAnalyticRigidSurface = MyAbstractions.Add("SimAnalyticRigidSurface")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimAnalyticRigidSurface
-                |     named "Analytic Rigid Surface.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyAnalyticRigidSurface As SimAnalyticRigidSurface
-                |      Set MyAnalyticRigidSurface = MyAbstractions.Item("Analytic Rigid Surface.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimAnalyticRigidSurface as following:
-                | 
-                |      ...
-                |      myAnalyticRigidSurface = myAbstractions.Add("SimAnalyticRigidSurface")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimAnalyticRigidSurface named "Analytic Rigid Surface.1" as
-                |     following:
-                | 
-                |      ...
-                |      myAnalyticRigidSurface = myAbstractions.Item("Analytic Rigid Surface.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimAnalyticRigidSurface
+                
+                Represents the Analytic Rigid Surface object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimAnalyticRigidSurface as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAnalyticRigidSurface As SimAnalyticRigidSurface
+                     Set MyAnalyticRigidSurface = MyAbstractions.Add("SimAnalyticRigidSurface")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimAnalyticRigidSurface
+                    named "Analytic Rigid Surface.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyAnalyticRigidSurface As SimAnalyticRigidSurface
+                     Set MyAnalyticRigidSurface = MyAbstractions.Item("Analytic Rigid Surface.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimAnalyticRigidSurface as following:
+                
+                     ...
+                     myAnalyticRigidSurface = myAbstractions.Add("SimAnalyticRigidSurface")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimAnalyticRigidSurface named "Analytic Rigid Surface.1" as
+                    following:
+                
+                     ...
+                     myAnalyticRigidSurface = myAbstractions.Item("Analytic Rigid Surface.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,8 +76,8 @@ class SimAnalyticRigidSurface(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ReferencePoint() As SimPoint (Read Only)
-                |     Returns the reference point.
+                Property ReferencePoint() As SimPoint (Read Only)
+                    Returns the reference point.
 
         :return: SimPoint
         """
@@ -90,33 +90,33 @@ class SimAnalyticRigidSurface(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -129,16 +129,16 @@ class SimAnalyticRigidSurface(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SurfaceSideFlag() As boolean
-                |     Returns or sets the flag that determines if the analytic rigid surface
-                |     orientation is flipped with respect to the selected
-                |     support.
-                | 
-                |     TRUE: the analytic rigid surface orientation is flipped with respect to the
-                |     selected support.
-                | 
-                |     FALSE: the analytic rigid surface orientation is not flipped with respect
-                |     to the selected support. 
+                Property SurfaceSideFlag() As boolean
+                    Returns or sets the flag that determines if the analytic rigid surface
+                    orientation is flipped with respect to the selected
+                    support.
+                
+                    TRUE: the analytic rigid surface orientation is flipped with respect to the
+                    selected support.
+                
+                    FALSE: the analytic rigid surface orientation is not flipped with respect
+                    to the selected support. 
 
         :return: bool
         """

@@ -19,17 +19,17 @@ class OLPCase(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpCase
-                | 
-                | A case block for a test case instruction.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpCase
+                
+                A case block for a test case instruction.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
     
     """
 
@@ -43,8 +43,8 @@ class OLPCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As OlpInstructions (Read Only)
-                |     The list of instructions executed if the case is matched.
+                Property Instructions() As OlpInstructions (Read Only)
+                    The list of instructions executed if the case is matched.
 
         :return: OLPInstructions
         """
@@ -57,15 +57,15 @@ class OLPCase(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Values() As OlpAstBranch
-                |     The expression that determines when this case is executed.
-                |     Multiple values can be specified if they are seperated by comma operators
-                |     (,). When set, the OlpAstBranch.Value of the AST tree is used for the
-                |     expression. When retrieved, the DELMIA expression is parsed and is returned in
-                |     the format expected by OlpExpressionFixerDownload. You can find more
-                |     information on the OLP Expression AST format in the documentation under
-                |     Automation | Robotics | Robotics Offline Programming | Offline Programming
-                |     Expression Translation. 
+                Property Values() As OlpAstBranch
+                    The expression that determines when this case is executed.
+                    Multiple values can be specified if they are seperated by comma operators
+                    (,). When set, the OlpAstBranch.Value of the AST tree is used for the
+                    expression. When retrieved, the DELMIA expression is parsed and is returned in
+                    the format expected by OlpExpressionFixerDownload. You can find more
+                    information on the OLP Expression AST format in the documentation under
+                    Automation | Robotics | Robotics Offline Programming | Offline Programming
+                    Expression Translation. 
 
         :return: OLPAstBranch
         """

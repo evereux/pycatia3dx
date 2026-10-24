@@ -18,15 +18,15 @@ class HybridShapeInverse(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapeInverse
-                | 
-                | The Inverse feature : an Inverse is made up of a face to process and one Inverse parameter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapeInverse
+                
+                The Inverse feature : an Inverse is made up of a face to process and one Inverse parameter.
     
     """
 
@@ -40,22 +40,22 @@ class HybridShapeInverse(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Element() As Reference
-                |     Role: To get the element inverted.
-                | 
-                |     Parameters:
-                | 
-                |         oElem
-                |             Element inverted return value for CATScript applications, with
-                |             (IDLRETVAL) function type 
-                | 
-                |     See also:
-                |         Reference
-                |     Returns:
-                |         HRESULT S_OK if Ok E_FAIL else return error code for C++
-                |         Implementations 
-                |     See also:
-                |         HybridShapeFactory
+                Property Element() As Reference
+                    Role: To get the element inverted.
+                
+                    Parameters:
+                
+                        oElem
+                            Element inverted return value for CATScript applications, with
+                            (IDLRETVAL) function type 
+                
+                    See also:
+                        Reference
+                    Returns:
+                        HRESULT S_OK if Ok E_FAIL else return error code for C++
+                        Implementations 
+                    See also:
+                        HybridShapeFactory
 
         :return: Reference
         """
@@ -76,8 +76,8 @@ class HybridShapeInverse(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Orientation() As long
-                |     Gets or sets the element's orientation. Orientation = 1 : the element is not inverted. = -1 : the element is inverted, = 2 : the element can not be inverted. Orientation can not be set to 2.
+                Property Orientation() As long
+                    Gets or sets the element's orientation. Orientation = 1 : the element is not inverted. = -1 : the element is inverted, = 2 : the element can not be inverted. Orientation can not be set to 2.
 
         :return: int
         """

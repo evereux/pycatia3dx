@@ -17,20 +17,20 @@ class VSOMorphing(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VSOMorphing
-                | 
-                | Interface representing a RSO Morphing feature.
-                | 
-                | Role: Components that implement CATIAVSOMorphing are Virtual to Real Shape
-                | Morphind features. This interface allows adding new vector fields as input
-                | morphing laws.
-                | 
-                | ClassReference, Class#MethodReference, #InternalMethod...
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VSOMorphing
+                
+                Interface representing a RSO Morphing feature.
+                
+                Role: Components that implement CATIAVSOMorphing are Virtual to Real Shape
+                Morphind features. This interface allows adding new vector fields as input
+                morphing laws.
+                
+                ClassReference, Class#MethodReference, #InternalMethod...
     
     """
 
@@ -43,8 +43,8 @@ class VSOMorphing(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddVectorField(AnyObject iVectorField,double iScale,boolean
-                | iCopyVectorFieldAsResult)
+                Sub AddVectorField(AnyObject iVectorField,double iScale,boolean
+                iCopyVectorFieldAsResult)
 
         :param AnyObject i_vector_field:
         :param float i_scale:

@@ -19,24 +19,24 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpExpressionFixer
-                |                         OlpExpressionFixerUpload
-                | 
-                | An object for translating expressions from the native robot language into
-                | DELMIA expressions.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | A new transform can be created with
-                | OlpTranslatorHelper.CreateExprFixerUpload.
-                | You can find more information on the OLP Expression AST format in the
-                | documentation under Automation | Robotics | Robotics Offline Programming |
-                | Offline Programming Expression Translation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpExpressionFixer
+                                        OlpExpressionFixerUpload
+                
+                An object for translating expressions from the native robot language into
+                DELMIA expressions.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                A new transform can be created with
+                OlpTranslatorHelper.CreateExprFixerUpload.
+                You can find more information on the OLP Expression AST format in the
+                documentation under Automation | Robotics | Robotics Offline Programming |
+                Offline Programming Expression Translation.
     
     """
 
@@ -49,21 +49,21 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SubsituteVariable(OlpAstNode iNRLVar,OlpVariable iBMVar)
-                |     Set the variable substitutions to make.
-                |     You only need to set a variable substitution for a variable one time and
-                |     all instances of the variable in the expression will be substituted. You can
-                |     find all variables in the expression using OlpExpressionFixer.Variables. This
-                |     function must be called after setting OlpExpressionFixer.SetExpression but
-                |     before and OlpExpressionFixer.Fix. Any variable substitutions are cleared after
-                |     calling Fix.
-                | 
-                |     Parameters:
-                | 
-                |         iNRLVar
-                |             The robot program variable to replace. 
-                |         iBMVar
-                |             The DELMIA variable to replace it with.
+                Sub SubsituteVariable(OlpAstNode iNRLVar,OlpVariable iBMVar)
+                    Set the variable substitutions to make.
+                    You only need to set a variable substitution for a variable one time and
+                    all instances of the variable in the expression will be substituted. You can
+                    find all variables in the expression using OlpExpressionFixer.Variables. This
+                    function must be called after setting OlpExpressionFixer.SetExpression but
+                    before and OlpExpressionFixer.Fix. Any variable substitutions are cleared after
+                    calling Fix.
+                
+                    Parameters:
+                
+                        iNRLVar
+                            The robot program variable to replace. 
+                        iBMVar
+                            The DELMIA variable to replace it with.
 
         :param OLPAstNode i_nrl_var:
         :param OLPVariable i_bm_var:
@@ -77,33 +77,33 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SubsituteVariableGetOrCreate(OlpAstNode iNRLVar,CATBSTR
-                | iName,DELOlpVariableType iType,DELOlpDataType iDataType,DELOlpIODirection
-                | iDirection,AnyObject iScope,CATBSTR iDefaultValue)
-                |     Set the variable substitutions to make.
-                |     See SubsituteVariable for details on variable substitution. Everything from
-                |     there applies here.
-                |     Set all the variable parameters if the variable may not have been created
-                |     yet. This is most common for languages that don't have explicit variable
-                |     declarations. It will be created if it does not yet exist.
-                | 
-                |     Parameters:
-                | 
-                |         iNRLVar
-                |             The robot program variable to replace. 
-                |         iName
-                |             The new variable name. 
-                |         iType
-                |             The variable type 
-                |         iDataType
-                |             The variable data type. 
-                |         iDirection
-                |             Whether the variable is "in" or "out". 
-                |         iScope
-                |             The scope is either a DELMIAOlpProcedure or a DELMIAOlpBehavior.
-                |             
-                |         iDefaultValue
-                |             Default value can be an empty string.
+                Sub SubsituteVariableGetOrCreate(OlpAstNode iNRLVar,CATBSTR
+                iName,DELOlpVariableType iType,DELOlpDataType iDataType,DELOlpIODirection
+                iDirection,AnyObject iScope,CATBSTR iDefaultValue)
+                    Set the variable substitutions to make.
+                    See SubsituteVariable for details on variable substitution. Everything from
+                    there applies here.
+                    Set all the variable parameters if the variable may not have been created
+                    yet. This is most common for languages that don't have explicit variable
+                    declarations. It will be created if it does not yet exist.
+                
+                    Parameters:
+                
+                        iNRLVar
+                            The robot program variable to replace. 
+                        iName
+                            The new variable name. 
+                        iType
+                            The variable type 
+                        iDataType
+                            The variable data type. 
+                        iDirection
+                            Whether the variable is "in" or "out". 
+                        iScope
+                            The scope is either a DELMIAOlpProcedure or a DELMIAOlpBehavior.
+                            
+                        iDefaultValue
+                            Default value can be an empty string.
 
         :param OLPAstNode i_nrl_var:
         :param str i_name:
@@ -124,36 +124,36 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SubsituteVariableGetOrCreateInStringType(OlpAstNode iNRLVar,CATBSTR
-                | iName,DELOlpVariableType iType,CATBSTR iDataType,DELOlpIODirection
-                | iDirection,AnyObject iScope,CATBSTR iDefaultValue)
-                |     Set the variable substitutions to make.
-                |     See SubsituteVariable for details on variable substitution. Everything from
-                |     there applies here.
-                |     Set all the variable parameters if the variable may not have been created
-                |     yet. This is most common for languages that don't have explicit variable
-                |     declarations. It will be created if it does not yet exist.
-                | 
-                |     Parameters:
-                | 
-                |         iNRLVar
-                |             The robot program variable to replace. 
-                |         iName
-                |             The new variable name. 
-                |         iType
-                |             The variable type 
-                |         iDataType
-                |             The data type, in string, to get or create. It is the same as the
-                |             DELOlpDataType enum but without the delOlp prefix. For example if the intended
-                |             type is delOlpInteger, use string "Integer". Use string "Position" for position
-                |             variable 
-                |         iDirection
-                |             Whether the variable is "in" or "out". 
-                |         iScope
-                |             The scope is either a DELMIAOlpProcedure or a DELMIAOlpBehavior.
-                |             
-                |         iDefaultValue
-                |             Default value can be an empty string.
+                Sub SubsituteVariableGetOrCreateInStringType(OlpAstNode iNRLVar,CATBSTR
+                iName,DELOlpVariableType iType,CATBSTR iDataType,DELOlpIODirection
+                iDirection,AnyObject iScope,CATBSTR iDefaultValue)
+                    Set the variable substitutions to make.
+                    See SubsituteVariable for details on variable substitution. Everything from
+                    there applies here.
+                    Set all the variable parameters if the variable may not have been created
+                    yet. This is most common for languages that don't have explicit variable
+                    declarations. It will be created if it does not yet exist.
+                
+                    Parameters:
+                
+                        iNRLVar
+                            The robot program variable to replace. 
+                        iName
+                            The new variable name. 
+                        iType
+                            The variable type 
+                        iDataType
+                            The data type, in string, to get or create. It is the same as the
+                            DELOlpDataType enum but without the delOlp prefix. For example if the intended
+                            type is delOlpInteger, use string "Integer". Use string "Position" for position
+                            variable 
+                        iDirection
+                            Whether the variable is "in" or "out". 
+                        iScope
+                            The scope is either a DELMIAOlpProcedure or a DELMIAOlpBehavior.
+                            
+                        iDefaultValue
+                            Default value can be an empty string.
 
         :param OLPAstNode i_nrl_var:
         :param str i_name:
@@ -173,23 +173,23 @@ class OLPExpressionFixerUpload(OLPExpressionFixer):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SubsituteVariableNameOnly(OlpAstNode iNRLVar,CATBSTR
-                | iName)
-                |     Set the variable substitutions to make.
-                |     See SubsituteVariable for details on variable substitution. Everything from
-                |     there applies here.
-                |     This version of the function allows you to set the name if the variable
-                |     that has been already created. This is most likely the case for languages that
-                |     have explicit variable declarations. However, if the name used in DELMIA is the
-                |     same as the robot program, then you don't need to call this
-                |     function.
-                | 
-                |     Parameters:
-                | 
-                |         iNRLVar
-                |             The robot program variable to replace. 
-                |         iName
-                |             The new variable name. 
+                Sub SubsituteVariableNameOnly(OlpAstNode iNRLVar,CATBSTR
+                iName)
+                    Set the variable substitutions to make.
+                    See SubsituteVariable for details on variable substitution. Everything from
+                    there applies here.
+                    This version of the function allows you to set the name if the variable
+                    that has been already created. This is most likely the case for languages that
+                    have explicit variable declarations. However, if the name used in DELMIA is the
+                    same as the robot program, then you don't need to call this
+                    function.
+                
+                    Parameters:
+                
+                        iNRLVar
+                            The robot program variable to replace. 
+                        iName
+                            The new variable name. 
 
         :param OLPAstNode i_nrl_var:
         :param str i_name:

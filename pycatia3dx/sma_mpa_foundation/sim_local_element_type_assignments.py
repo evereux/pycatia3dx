@@ -21,45 +21,45 @@ class SimLocalElementTypeAssignments(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimLocalElementTypeAssignments
-                | 
-                | Represents the Local Element Type Assignments collection
-                | object.
-                | 
-                | Example:
-                |     This example demonstrates how to retrieve the
-                |     SimLocalElementTypeAssignments object from a SimAnalysisCase, and use the Add,
-                |     Item, and Remove methods.
-                | 
-                |      Dim MyAnalysisCase As SimAnalysisCase
-                |      ...
-                |      Dim MyLocalElementTypeAssignments As
-                |      SimLocalElementTypeAssignments
-                |      Set MyLocalElementTypeAssignments = MyAnalysisCase.LocalElementTypeAssignments
-                |      Dim MyLocalElementTypeAssignment As
-                |      SimLocalElementTypeAssignment
-                |      Set MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Add
-                |      Set MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Item("Local Element Type Assignment.1")
-                |      MyLocalElementTypeAssignments.Remove "Local Element Type
-                |      Assignment.1"
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      MyLocalElementTypeAssignments = MyAnalysisCase.LocalElementTypeAssignments
-                |      MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Add()
-                |      MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Item("Local Element Type Assignment.1")
-                |      MyLocalElementTypeAssignments.Remove( )"Local Element Type
-                |      Assignment.1")
-                |      
-                | 
-                | See also:
-                |     SimLocalElementTypeAssignment
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimLocalElementTypeAssignments
+                
+                Represents the Local Element Type Assignments collection
+                object.
+                
+                Example:
+                    This example demonstrates how to retrieve the
+                    SimLocalElementTypeAssignments object from a SimAnalysisCase, and use the Add,
+                    Item, and Remove methods.
+                
+                     Dim MyAnalysisCase As SimAnalysisCase
+                     ...
+                     Dim MyLocalElementTypeAssignments As
+                     SimLocalElementTypeAssignments
+                     Set MyLocalElementTypeAssignments = MyAnalysisCase.LocalElementTypeAssignments
+                     Dim MyLocalElementTypeAssignment As
+                     SimLocalElementTypeAssignment
+                     Set MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Add
+                     Set MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Item("Local Element Type Assignment.1")
+                     MyLocalElementTypeAssignments.Remove "Local Element Type
+                     Assignment.1"
+                     
+                
+                Example in Python:
+                
+                     MyLocalElementTypeAssignments = MyAnalysisCase.LocalElementTypeAssignments
+                     MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Add()
+                     MyLocalElementTypeAssignment = MyLocalElementTypeAssignments.Item("Local Element Type Assignment.1")
+                     MyLocalElementTypeAssignments.Remove( )"Local Element Type
+                     Assignment.1")
+                     
+                
+                See also:
+                    SimLocalElementTypeAssignment
     
     """
 
@@ -72,12 +72,12 @@ class SimLocalElementTypeAssignments(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add() As CATBaseDispatch
-                |     Creates an Local Element Type Assignment object and returns
-                |     it.
-                | 
-                |     Returns:
-                |         A SimLocalElementTypeAssignment object
+                Func Add() As CATBaseDispatch
+                    Creates an Local Element Type Assignment object and returns
+                    it.
+                
+                    Returns:
+                        A SimLocalElementTypeAssignment object
 
         :return: SimLocalElementTypeAssignment
         """
@@ -88,18 +88,18 @@ class SimLocalElementTypeAssignments(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a Local Element Type Assignment from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or name of the Local Element Type Assignment.
-                |             
-                | 
-                |     Returns:
-                |         The SimLocalElementTypeAssignment object
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a Local Element Type Assignment from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or name of the Local Element Type Assignment.
+                            
+                
+                    Returns:
+                        The SimLocalElementTypeAssignment object
 
         :param CATVariant i_index:
         :return: SimLocalElementTypeAssignment
@@ -111,14 +111,14 @@ class SimLocalElementTypeAssignments(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes an Local Element Type Assignment object from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index of the Local Element Type Assignment. 
+                Sub Remove(CATVariant iIndex)
+                    Removes an Local Element Type Assignment object from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index of the Local Element Type Assignment. 
 
         :param CATVariant i_index:
         :return: None

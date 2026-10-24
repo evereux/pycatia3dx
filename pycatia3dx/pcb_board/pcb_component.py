@@ -17,12 +17,12 @@ class PcbComponent(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PCBComponent
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PCBComponent
 
     
     """
@@ -37,14 +37,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CAPACITANCE() As CATBSTR
-                |     Gets and sets the CAPACITANCE Type of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property CAPACITANCE() As CATBSTR
+                    Gets and sets the CAPACITANCE Type of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -65,15 +65,15 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property POWEROPR() As CATBSTR
-                |     Gets and sets the Operating power rating of a component. The possible value
-                |     are MECHANICAL or ELECTRICAL
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property POWEROPR() As CATBSTR
+                    Gets and sets the Operating power rating of a component. The possible value
+                    are MECHANICAL or ELECTRICAL
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -94,14 +94,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property POWER_MAX() As CATBSTR
-                |     Gets and sets the POWER MAX of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property POWER_MAX() As CATBSTR
+                    Gets and sets the POWER MAX of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -122,14 +122,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PackageNumber() As CATBSTR
-                |     Gets and sets the Package number of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property PackageNumber() As CATBSTR
+                    Gets and sets the Package number of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -150,14 +150,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RESISTANCE() As CATBSTR
-                |     Gets and sets the RESISTANCE of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property RESISTANCE() As CATBSTR
+                    Gets and sets the RESISTANCE of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -178,14 +178,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property THERM_COND() As CATBSTR
-                |     Gets and sets the thermal conductivity of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property THERM_COND() As CATBSTR
+                    Gets and sets the thermal conductivity of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -206,15 +206,15 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property THETA_JB() As CATBSTR
-                |     Gets and sets the junction to board thermal resistance of a
-                |     component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property THETA_JB() As CATBSTR
+                    Gets and sets the junction to board thermal resistance of a
+                    component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -235,15 +235,15 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property THETA_JC() As CATBSTR
-                |     Gets and sets junction to case thermal resistance of a
-                |     component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed
+                Property THETA_JC() As CATBSTR
+                    Gets and sets junction to case thermal resistance of a
+                    component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed
 
         :return: str
         """
@@ -264,14 +264,14 @@ class PcbComponent(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TOLERANCE() As CATBSTR
-                |     Gets and sets the TOLERANCE of a component.
-                | 
-                |     Returns:
-                | 
-                |             The result of the method:
-                |             S_OK if succeeded
-                |             E_FAIL if failed 
+                Property TOLERANCE() As CATBSTR
+                    Gets and sets the TOLERANCE of a component.
+                
+                    Returns:
+                
+                            The result of the method:
+                            S_OK if succeeded
+                            E_FAIL if failed 
 
         :return: str
         """

@@ -18,18 +18,18 @@ class RscRunServiceTask(RscInstruction):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DELRobotSimulationIDLItf.RscInstruction
-                |                         RscRunServiceTask
-                | 
-                | Interface representing a Resource RunServiceTask Instruction.
-                | 
-                | Role: This interface represents a RscRunServiceTask Instruction in a Resource
-                | Task
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DELRobotSimulationIDLItf.RscInstruction
+                                        RscRunServiceTask
+                
+                Interface representing a Resource RunServiceTask Instruction.
+                
+                Role: This interface represents a RscRunServiceTask Instruction in a Resource
+                Task
     
     """
 
@@ -43,39 +43,39 @@ class RscRunServiceTask(RscInstruction):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Task() As AnyObject
-                |     Assigns/Retrieves the Service Task to run
-                | 
-                |     Parameters:
-                | 
-                |         iRscRunServiceTask
-                |             The Run Task to be assigned 
-                | 
-                |     Returns:
-                |         oRscRunServiceTask The associated Run Task 
-                |     Example:
-                | 
-                |            
-                | 
-                |            Dim oResourceTask As ResourceTask2
-                |            ......
-                |            Dim ResourceSequence As RscSequence
-                |            Set ResourceSequence = oResourceTask.MainRscSequence
-                |            ......
-                |            Dim iTask
-                |            .....
-                |            Dim iIndex
-                |            iIndex=-1
-                |            Dim oCreatedRscRunServiceTask 
-                |            Set oCreatedRscRunServiceTask = ResourceSequence.CreateRscRunServiceTask(iTask, iIndex)
-                | 
-                |            Dim ResourceRunServiceTask As RscRunServiceTask
-                |            Set ResourceRunServiceTask = oCreatedRscRunServiceTask
-                |            ......
-                |            Dim RscServiceTask
-                |            RscServiceTask=ResourceRunServiceTask.Task
-                |            ......
-                |            ResourceRunServiceTask.Task = RscServiceTask
+                Property Task() As AnyObject
+                    Assigns/Retrieves the Service Task to run
+                
+                    Parameters:
+                
+                        iRscRunServiceTask
+                            The Run Task to be assigned 
+                
+                    Returns:
+                        oRscRunServiceTask The associated Run Task 
+                    Example:
+                
+                           
+                
+                           Dim oResourceTask As ResourceTask2
+                           ......
+                           Dim ResourceSequence As RscSequence
+                           Set ResourceSequence = oResourceTask.MainRscSequence
+                           ......
+                           Dim iTask
+                           .....
+                           Dim iIndex
+                           iIndex=-1
+                           Dim oCreatedRscRunServiceTask 
+                           Set oCreatedRscRunServiceTask = ResourceSequence.CreateRscRunServiceTask(iTask, iIndex)
+                
+                           Dim ResourceRunServiceTask As RscRunServiceTask
+                           Set ResourceRunServiceTask = oCreatedRscRunServiceTask
+                           ......
+                           Dim RscServiceTask
+                           RscServiceTask=ResourceRunServiceTask.Task
+                           ......
+                           ResourceRunServiceTask.Task = RscServiceTask
 
         :return: AnyObject
         """

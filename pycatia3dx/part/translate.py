@@ -18,28 +18,28 @@ class Translate(Shape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         Translate
-                | 
-                | Represents the hybrid shape translate feature object.
-                | This solid feature is created from an underlying HybridShapeTranslate
-                | aggregated by the Translate. Role: To access the data of the hybrid shape
-                | translate feature object. This data includes:
-                | 
-                |     The element to translate
-                |     The translation direction
-                |     The translation distance and its value
-                | 
-                | Use the CATIAHybridShapeFactory to create HybridShapeFeature
-                | object.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        Translate
+                
+                Represents the hybrid shape translate feature object.
+                This solid feature is created from an underlying HybridShapeTranslate
+                aggregated by the Translate. Role: To access the data of the hybrid shape
+                translate feature object. This data includes:
+                
+                    The element to translate
+                    The translation direction
+                    The translation distance and its value
+                
+                Use the CATIAHybridShapeFactory to create HybridShapeFeature
+                object.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -53,16 +53,16 @@ class Translate(Shape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HybridShape() As HybridShape (Read Only)
-                |     Gets the underlying HybridShapeTranslate.
-                | 
-                |     Example:
-                |         The following example explains how to retrieve the underlying
-                |         HybridShape Translate
-                | 
-                |           Dim oHybridShape as AnyObject
-                |           Set oHybridShape=oTranslate.HybridShape
-                |           oHybridShape.ElemToTranslate = reference1
+                Property HybridShape() As HybridShape (Read Only)
+                    Gets the underlying HybridShapeTranslate.
+                
+                    Example:
+                        The following example explains how to retrieve the underlying
+                        HybridShape Translate
+                
+                          Dim oHybridShape as AnyObject
+                          Set oHybridShape=oTranslate.HybridShape
+                          oHybridShape.ElemToTranslate = reference1
 
         :return: HybridShape
         """

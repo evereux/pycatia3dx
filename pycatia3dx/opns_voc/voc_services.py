@@ -17,16 +17,16 @@ class VocServices(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     VOCServices
-                | 
-                | Represents the VOCServices Role: To provide the services to create VOC
-                | products: Wrapping, Thickness, Offset, Simplification,
-                | SweptVolumes
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    VOCServices
+                
+                Represents the VOCServices Role: To provide the services to create VOC
+                products: Wrapping, Thickness, Offset, Simplification,
+                SweptVolumes
     
     """
 
@@ -46,42 +46,42 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub Compute3DCut(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,CATSafeArrayVariant iBoxExtremities,long iCutType,long
-                | iBordertypes)
-                |     Compute 3D Cut
+                Sub Compute3DCut(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,CATSafeArrayVariant iBoxExtremities,long iCutType,long
+                iBordertypes)
+                    Compute 3D Cut
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create a thickness
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to create a thickness
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iBoxExtremities
-                |             2 Extreme points of 3D Cut Box, List of 6 coordinates min &
-                |             max.
+                        iBoxExtremities
+                            2 Extreme points of 3D Cut Box, List of 6 coordinates min &
+                            max.
                 |
-                |                 iBoxExtremities(0) is the Xmin
-                |                 iBoxExtremities(1) is the Xmax
-                |                 iBoxExtremities(2) is the Ymin
-                |                 iBoxExtremities(3) is the Ymax
-                |                 iBoxExtremities(4) is the Zmin
-                |                 iBoxExtremities(5) is the Zmax
+                                iBoxExtremities(0) is the Xmin
+                                iBoxExtremities(1) is the Xmax
+                                iBoxExtremities(2) is the Ymin
+                                iBoxExtremities(3) is the Ymax
+                                iBoxExtremities(4) is the Zmin
+                                iBoxExtremities(5) is the Zmax
                 |
-                |         iCutType
-                |             Type of Cut. Possible values 1 or 2. 1 to Cuts the inner parts of
-                |             the products. 2 to Cuts the outer parts of the products.
+                        iCutType
+                            Type of Cut. Possible values 1 or 2. 1 to Cuts the inner parts of
+                            the products. 2 to Cuts the outer parts of the products.
                 |
-                |         iBordertypes
-                |             To set behavior on Border. Possible values 1, 2 or 3. 1 to Cuts the
-                |             triangles. 2 to Keeps completely or partially included triangles. 3 to Keeps
-                |             completely included triangles only.
+                        iBordertypes
+                            To set behavior on Border. Possible values 1, 2 or 3. 1 to Cuts the
+                            triangles. 2 to Keeps completely or partially included triangles. 3 to Keeps
+                            completely included triangles only.
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -127,35 +127,35 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ComputeASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,CATSafeArrayVariant iListOfViewPoints,double
-                | iSilhouetteAcc,boolean iPerformSimplification,double
-                | iAccuracyForSimplification)
-                |     Compute a Silhouette.
+                Sub ComputeASilhouette(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,CATSafeArrayVariant iListOfViewPoints,double
+                iSilhouetteAcc,boolean iPerformSimplification,double
+                iAccuracyForSimplification)
+                    Compute a Silhouette.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to take into account
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to take into account
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iListOfViewPoints
-                |             A list of viewpoints. This list should contain minimum of 1
-                |             viewpoint to compute Silhouette result.
-                |         iSilhouetteAcc
-                |             Accuracy for the computation.
-                |         iPerformSimplification
-                |             TRUE to perform a Simplification at the end.
-                |         iAccuracyForSimplification
-                |             Accuracy for simplification. See documentation. This value is taken
-                |             into account only if iPerformSimplification is TRUE
+                        iListOfViewPoints
+                            A list of viewpoints. This list should contain minimum of 1
+                            viewpoint to compute Silhouette result.
+                        iSilhouetteAcc
+                            Accuracy for the computation.
+                        iPerformSimplification
+                            TRUE to perform a Simplification at the end.
+                        iAccuracyForSimplification
+                            Accuracy for simplification. See documentation. This value is taken
+                            into account only if iPerformSimplification is TRUE
                 |
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -209,55 +209,55 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeASweptVolume(CATBaseDispatch iSweptAble,CATSafeArrayVariant
-                | iProductsToTreat,VPMReference iProductReference,double
-                | iFilteringParameter,boolean iPerformSilhouette,double
-                | iSilhouetteAccuracy,double iWrappingGrain,long iEnvelopeType,double
-                | ioffsetRatio,boolean iCubic,boolean iPerformSimplification,double
-                | iSimplificationAccuracy)
-                |     Compute a Swept Volume with wrapping & simplification
-                | 
-                |     Parameters:
-                | 
-                |         iSweptAble
-                |             The Sweptable entity, which may be an Animation (Simulation
-                |             Result), a Manikin, etc... 
-                |         iProductsToTreat
-                |             List of Products to sweep 
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
-                |             
-                |         iFilteringParameter
-                |             Filtering parameter. See documentation. 
-                |         iPerformSilhouette
-                |             TRUE to perform a Silhouette at the end of the swept volume.
-                |             
-                |         iSilhouetteAccuracy
-                |             Accuracy for Silhouette. See documentation. This value is taken
-                |             into account only if iPerformSilhouette is TRUE 
-                |         iWrappingGrain
-                |             Grain size. See documentation. 
-                |         iEnvelopeType
-                |             Possible values 0 or 1. 0 for computation using convex envelope. 1
-                |             for computation using simple envelope. 
-                |         ioffsetRatio
-                |             The offset ratio, range from 0 to 1. Offset ratio is applicable
-                |             only for simple envelope type. 
-                |         iCubic
-                |             Put to TRUE to generate only cubic representation.
-                |             
-                |         iPerformSimplification
-                |             TRUE to perform a Simplification at the end of the wrapping.
-                |             
-                |         iSimplificationAccuracy
-                |             Accuracy for simplification. See documentation. This value is taken
-                |             into account only if iPerformSimplification is TRUE
-                |             
-                | 
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                Sub ComputeASweptVolume(CATBaseDispatch iSweptAble,CATSafeArrayVariant
+                iProductsToTreat,VPMReference iProductReference,double
+                iFilteringParameter,boolean iPerformSilhouette,double
+                iSilhouetteAccuracy,double iWrappingGrain,long iEnvelopeType,double
+                ioffsetRatio,boolean iCubic,boolean iPerformSimplification,double
+                iSimplificationAccuracy)
+                    Compute a Swept Volume with wrapping & simplification
+                
+                    Parameters:
+                
+                        iSweptAble
+                            The Sweptable entity, which may be an Animation (Simulation
+                            Result), a Manikin, etc... 
+                        iProductsToTreat
+                            List of Products to sweep 
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
+                            
+                        iFilteringParameter
+                            Filtering parameter. See documentation. 
+                        iPerformSilhouette
+                            TRUE to perform a Silhouette at the end of the swept volume.
+                            
+                        iSilhouetteAccuracy
+                            Accuracy for Silhouette. See documentation. This value is taken
+                            into account only if iPerformSilhouette is TRUE 
+                        iWrappingGrain
+                            Grain size. See documentation. 
+                        iEnvelopeType
+                            Possible values 0 or 1. 0 for computation using convex envelope. 1
+                            for computation using simple envelope. 
+                        ioffsetRatio
+                            The offset ratio, range from 0 to 1. Offset ratio is applicable
+                            only for simple envelope type. 
+                        iCubic
+                            Put to TRUE to generate only cubic representation.
+                            
+                        iPerformSimplification
+                            TRUE to perform a Simplification at the end of the wrapping.
+                            
+                        iSimplificationAccuracy
+                            Accuracy for simplification. See documentation. This value is taken
+                            into account only if iPerformSimplification is TRUE
+                            
+                
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param AnyObject i_swept_able:
         :param tuple i_products_to_treat:
@@ -300,32 +300,32 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ComputeAThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iOffsetValue1,double iOffsetValue2,boolean
-                | iUseConstraints,CATSafeArrayVariant iConstraints)
-                |     Compute a Thickness
+                Sub ComputeAThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iOffsetValue1,double iOffsetValue2,boolean
+                iUseConstraints,CATSafeArrayVariant iConstraints)
+                    Compute a Thickness
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create a thickness
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to create a thickness
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iOffsetValue1
-                |             First offset. See documentation.
-                |         iOffsetValue2
-                |             Second offset. See documentation.
-                |         iUseConstraints
-                |             Put TRUE to consider Constraints.
-                |         iConstraints
-                |             Constraints array. This value is taken into account only if
-                |             iUseConstraints is TRUE
+                        iOffsetValue1
+                            First offset. See documentation.
+                        iOffsetValue2
+                            Second offset. See documentation.
+                        iUseConstraints
+                            Put TRUE to consider Constraints.
+                        iConstraints
+                            Constraints array. This value is taken into account only if
+                            iUseConstraints is TRUE
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -374,38 +374,38 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ComputeAVibrationVolume(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,CATBSTR iFilePath,double iAccuracy,long iEnvelopeType,boolean
-                | iPerformSimplification,double iSimplificationAccuracy)
-                |     Compute a Vibration Volume using a position file with
-                |     simplification
+                Sub ComputeAVibrationVolume(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,CATBSTR iFilePath,double iAccuracy,long iEnvelopeType,boolean
+                iPerformSimplification,double iSimplificationAccuracy)
+                    Compute a Vibration Volume using a position file with
+                    simplification
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to take into account
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to take into account
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iFilePath
-                |             The complete path of the position file (formats .txt, .VDA & .mvf).
+                        iFilePath
+                            The complete path of the position file (formats .txt, .VDA & .mvf).
                 |
-                |         iAccuracy
-                |             Accuracy of the computation.
-                |         iEnvelopeType
-                |             Possible values 0 or 1. 0 for computation using convex envelope. 1
-                |             for computation using simple envelope.
-                |         iPerformSimplification
-                |             TRUE to perform a Simplification at the end.
-                |         iSimplificationAccuracy
-                |             Accuracy for simplification. See documentation.ss This value is
-                |             taken into account only if iPerformSimplification is TRUE
+                        iAccuracy
+                            Accuracy of the computation.
+                        iEnvelopeType
+                            Possible values 0 or 1. 0 for computation using convex envelope. 1
+                            for computation using simple envelope.
+                        iPerformSimplification
+                            TRUE to perform a Simplification at the end.
+                        iSimplificationAccuracy
+                            Accuracy for simplification. See documentation.ss This value is
+                            taken into account only if iPerformSimplification is TRUE
                 |
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -456,39 +456,39 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ComputeAVibrationVolumeFromTrack(CATBaseDispatch
-                | iSweptAble,CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iAccuracy,long iEnvelopeType,boolean
-                | iPerformSimplification,double iSimplificationAccuracy)
-                |     Compute a Vibration Volume using a track with
-                |     Simplification
-                | 
-                |     Parameters:
-                | 
-                |         iSweptAble
-                |             The Sweptable entity, which may be an Animation (Simulation
-                |             Result), a Manikin, etc... 
-                |         iProductsToTreat
-                |             List of Products to take into account 
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
-                |             
-                |         iAccuracy
-                |             Accuracy of the computation. 
-                |         iEnvelopeType
-                |             Possible values 0 or 1. 0 for computation using convex envelope. 1
-                |             for computation using simple envelope. 
-                |         iPerformSimplification
-                |             TRUE to perform a Simplification at the end. 
-                |         iSimplificationAccuracy
-                |             Accuracy for simplification. See documentation. This value is taken
-                |             into account only if iPerformSimplification is TRUE
-                |             
-                | 
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                Sub ComputeAVibrationVolumeFromTrack(CATBaseDispatch
+                iSweptAble,CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iAccuracy,long iEnvelopeType,boolean
+                iPerformSimplification,double iSimplificationAccuracy)
+                    Compute a Vibration Volume using a track with
+                    Simplification
+                
+                    Parameters:
+                
+                        iSweptAble
+                            The Sweptable entity, which may be an Animation (Simulation
+                            Result), a Manikin, etc... 
+                        iProductsToTreat
+                            List of Products to take into account 
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
+                            
+                        iAccuracy
+                            Accuracy of the computation. 
+                        iEnvelopeType
+                            Possible values 0 or 1. 0 for computation using convex envelope. 1
+                            for computation using simple envelope. 
+                        iPerformSimplification
+                            TRUE to perform a Simplification at the end. 
+                        iSimplificationAccuracy
+                            Accuracy for simplification. See documentation. This value is taken
+                            into account only if iPerformSimplification is TRUE
+                            
+                
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param AnyObject i_swept_able:
         :param tuple i_products_to_treat:
@@ -524,42 +524,42 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ComputeAWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iWrappingGrain,long iEnvelopeType,double
-                | ioffsetRatio,boolean iCubic,boolean iPerformSimplification,double
-                | iSimplificationAccuracy)
-                |     Compute a Wrapping
+                Sub ComputeAWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iWrappingGrain,long iEnvelopeType,double
+                ioffsetRatio,boolean iCubic,boolean iPerformSimplification,double
+                iSimplificationAccuracy)
+                    Compute a Wrapping
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to wrap
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to wrap
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iWrappingGrain
-                |             Grain size. See documentation.
-                |         iEnvelopeType
-                |             Possible values 0 or 1. 0 for computation using convex envelope. 1
-                |             for computation using simple envelope.
-                |         ioffsetRatio
-                |             The offset ratio, range from 0 to 1. Offset ratio is applicable
-                |             only for Simple envelope type.
-                |         iCubic
-                |             Put to TRUE to generate only cubic representation.
+                        iWrappingGrain
+                            Grain size. See documentation.
+                        iEnvelopeType
+                            Possible values 0 or 1. 0 for computation using convex envelope. 1
+                            for computation using simple envelope.
+                        ioffsetRatio
+                            The offset ratio, range from 0 to 1. Offset ratio is applicable
+                            only for Simple envelope type.
+                        iCubic
+                            Put to TRUE to generate only cubic representation.
                 |
-                |         iPerformSimplification
-                |             Put to TRUE to perform a Simplification at the end of the wrapping.
+                        iPerformSimplification
+                            Put to TRUE to perform a Simplification at the end of the wrapping.
                 |
-                |         iSimplificationAccuracy
-                |             Accuracy for simplification. See documentation. This value is taken
-                |             into account only if iPerformSimplification is TRUE
+                        iSimplificationAccuracy
+                            Accuracy for simplification. See documentation. This value is taken
+                            into account only if iPerformSimplification is TRUE
                 |
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -610,33 +610,33 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ComputeAnOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iOffsetValue,boolean
-                | iUseConstraints,CATSafeArrayVariant iConstraints)
-                |     Compute an Offset
+                Sub ComputeAnOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iOffsetValue,boolean
+                iUseConstraints,CATSafeArrayVariant iConstraints)
+                    Compute an Offset
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create an offset
-                |         iProductReference
-                |             Reference Product. Offset results will be computed with respect to
-                |             the reference product position.
-                |         iOffsetValue
-                |             Offset. See documentation.
-                |         iUseConstraints
-                |             Put TRUE to consider Constraints.
-                |         iConstraints
-                |             Constraints array. This value is taken into account only if
-                |             iUseConstraints is TRUE
+                        iProductsToTreat
+                            List of Products to create an offset
+                        iProductReference
+                            Reference Product. Offset results will be computed with respect to
+                            the reference product position.
+                        iOffsetValue
+                            Offset. See documentation.
+                        iUseConstraints
+                            Put TRUE to consider Constraints.
+                        iConstraints
+                            Constraints array. This value is taken into account only if
+                            iUseConstraints is TRUE
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_INVALIDARG:Failure: invalid argument passed to the
-                |         API.
-                |         E_FAIL:Failure
-                |         E_OUTOFMEMORY:Failure: insufficient memory
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_INVALIDARG:Failure: invalid argument passed to the
+                        API.
+                        E_FAIL:Failure
+                        E_OUTOFMEMORY:Failure: insufficient memory
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -680,40 +680,40 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateFreeSpaceInBoxArea(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iFreeSpaceGrain,CATSafeArrayVariant
-                | iBoxExtremities)
-                |     Compute a free space result with "In box area" option. "In box area" free
-                |     space type is considered in this API.
+                Sub CreateFreeSpaceInBoxArea(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iFreeSpaceGrain,CATSafeArrayVariant
+                iBoxExtremities)
+                    Compute a free space result with "In box area" option. "In box area" free
+                    space type is considered in this API.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create free space.
-                |         iProductReference
-                |             Reference Product. Free space results will be computed with respect
-                |             to the reference product position.
-                |         iFreeSpaceGrain
-                |             Free space accuracy. Free space accuracy must be greater than
-                |             0.0001.
-                |         iBoxExtremities
-                |             2 Extreme points of free space box, List of 6 coordinates min &
-                |             max.
+                        iProductsToTreat
+                            List of Products to create free space.
+                        iProductReference
+                            Reference Product. Free space results will be computed with respect
+                            to the reference product position.
+                        iFreeSpaceGrain
+                            Free space accuracy. Free space accuracy must be greater than
+                            0.0001.
+                        iBoxExtremities
+                            2 Extreme points of free space box, List of 6 coordinates min &
+                            max.
                 |
-                |                 iBoxExtremities(0) is the Xmin
-                |                 iBoxExtremities(1) is the Xmax
-                |                 iBoxExtremities(2) is the Ymin
-                |                 iBoxExtremities(3) is the Ymax
-                |                 iBoxExtremities(4) is the Zmin
-                |                 iBoxExtremities(5) is the Zmax
+                                iBoxExtremities(0) is the Xmin
+                                iBoxExtremities(1) is the Xmax
+                                iBoxExtremities(2) is the Ymin
+                                iBoxExtremities(3) is the Ymax
+                                iBoxExtremities(4) is the Zmin
+                                iBoxExtremities(5) is the Zmax
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_INVALIDARG:Failure: invalid argument passed to the
-                |         API.
-                |         E_FAIL:Failure
-                |         E_OUTOFMEMORY:Failure: insufficient memory
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_INVALIDARG:Failure: invalid argument passed to the
+                        API.
+                        E_FAIL:Failure
+                        E_OUTOFMEMORY:Failure: insufficient memory
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -756,48 +756,48 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateFreeSpaceInClosedArea(CATSafeArrayVariant
-                | iProductsToTreat,VPMReference iProductReference,double
-                | iFreeSpaceGrain,CATSafeArrayVariant iBoxExtremities,CATSafeArrayVariant
-                | iInitPoint)
-                |     Compute a free space result with "In nearly closed area" option. "In nearly
-                |     closed area" free space type is considered in this API.
+                Sub CreateFreeSpaceInClosedArea(CATSafeArrayVariant
+                iProductsToTreat,VPMReference iProductReference,double
+                iFreeSpaceGrain,CATSafeArrayVariant iBoxExtremities,CATSafeArrayVariant
+                iInitPoint)
+                    Compute a free space result with "In nearly closed area" option. "In nearly
+                    closed area" free space type is considered in this API.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create free space.
-                |         iProductReference
-                |             Reference Product. Free space results will be computed with respect
-                |             to the reference product position.
-                |         iFreeSpaceGrain
-                |             Free space accuracy. Free space accuracy must be greater than
-                |             0.0001.
-                |         iBoxExtremities
-                |             2 Extreme points of free space box, List of 6 coordinates min &
-                |             max.
+                        iProductsToTreat
+                            List of Products to create free space.
+                        iProductReference
+                            Reference Product. Free space results will be computed with respect
+                            to the reference product position.
+                        iFreeSpaceGrain
+                            Free space accuracy. Free space accuracy must be greater than
+                            0.0001.
+                        iBoxExtremities
+                            2 Extreme points of free space box, List of 6 coordinates min &
+                            max.
                 |
-                |                 iBoxExtremities(0) is the Xmin
-                |                 iBoxExtremities(1) is the Xmax
-                |                 iBoxExtremities(2) is the Ymin
-                |                 iBoxExtremities(3) is the Ymax
-                |                 iBoxExtremities(4) is the Zmin
-                |                 iBoxExtremities(5) is the Zmax
+                                iBoxExtremities(0) is the Xmin
+                                iBoxExtremities(1) is the Xmax
+                                iBoxExtremities(2) is the Ymin
+                                iBoxExtremities(3) is the Ymax
+                                iBoxExtremities(4) is the Zmin
+                                iBoxExtremities(5) is the Zmax
                 |
-                |         iInitPoint
-                |             Inflation point of free space.
+                        iInitPoint
+                            Inflation point of free space.
                 |
-                |                 iInitPoint(0) is X coordinate
-                |                 iInitPoint(1) is Y coordinate
-                |                 iInitPoint(2) is Z coordinate
+                                iInitPoint(0) is X coordinate
+                                iInitPoint(1) is Y coordinate
+                                iInitPoint(2) is Z coordinate
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_INVALIDARG:Failure: invalid argument passed to the
-                |         API.
-                |         E_FAIL:Failure
-                |         E_OUTOFMEMORY:Failure: insufficient memory
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_INVALIDARG:Failure: invalid argument passed to the
+                        API.
+                        E_FAIL:Failure
+                        E_OUTOFMEMORY:Failure: insufficient memory
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -840,27 +840,27 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iOffsetValue)
-                |     Compute an Offset
+                Sub CreateOffset(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iOffsetValue)
+                    Compute an Offset
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create an offset
-                |         iProductReference
-                |             Reference Product. Offset results will be computed with respect to
-                |             the reference product position.
-                |         iOffsetValue
-                |             Offset. See documentation.
+                        iProductsToTreat
+                            List of Products to create an offset
+                        iProductReference
+                            Reference Product. Offset results will be computed with respect to
+                            the reference product position.
+                        iOffsetValue
+                            Offset. See documentation.
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_INVALIDARG:Failure: invalid argument passed to the
-                |         API.
-                |         E_FAIL:Failure
-                |         E_OUTOFMEMORY:Failure: insufficient memory
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_INVALIDARG:Failure: invalid argument passed to the
+                        API.
+                        E_FAIL:Failure
+                        E_OUTOFMEMORY:Failure: insufficient memory
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -900,64 +900,64 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateOffsetAlongFixedVectors(CATSafeArrayVariant
-                | iProductsToTreat,VPMReference iProductReference,CATSafeArrayVariant
-                | iVectors,CATSafeArrayVariant iOffsetValues)
-                |     Compute an Offset along fixed vectors.
+                Sub CreateOffsetAlongFixedVectors(CATSafeArrayVariant
+                iProductsToTreat,VPMReference iProductReference,CATSafeArrayVariant
+                iVectors,CATSafeArrayVariant iOffsetValues)
+                    Compute an Offset along fixed vectors.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create an offset
-                |         iProductReference
-                |             Reference Product. Offset results will be computed with respect to
-                |             the reference product position.
-                |         iVectors
-                |             List of 3 direction Vectors.:
+                        iProductsToTreat
+                            List of Products to create an offset
+                        iProductReference
+                            Reference Product. Offset results will be computed with respect to
+                            the reference product position.
+                        iVectors
+                            List of 3 direction Vectors.:
                 |
-                |                 iVectors(0) is the X coordinate of the first direction of the
-                |                 axis system
-                |                 iVectors(1) is the Y coordinate of the first direction of the
-                |                 axis system
-                |                 iVectors(2) is the Z coordinate of the first direction of the
-                |                 axis system
-                |                 iVectors(3) is the X coordinate of the second direction of the
-                |                 axis system
-                |                 iVectors(4) is the Y coordinate of the second direction of the
-                |                 axis system
-                |                 iVectors(5) is the Z coordinate of the second direction of the
-                |                 axis system
-                |                 iVectors(6) is the X coordinate of the third direction of the
-                |                 axis system
-                |                 iVectors(7) is the Y coordinate of the third direction of the
-                |                 axis system
-                |                 iVectors(8) is the Z coordinate of the third direction of the
-                |                 axis system
+                                iVectors(0) is the X coordinate of the first direction of the
+                                axis system
+                                iVectors(1) is the Y coordinate of the first direction of the
+                                axis system
+                                iVectors(2) is the Z coordinate of the first direction of the
+                                axis system
+                                iVectors(3) is the X coordinate of the second direction of the
+                                axis system
+                                iVectors(4) is the Y coordinate of the second direction of the
+                                axis system
+                                iVectors(5) is the Z coordinate of the second direction of the
+                                axis system
+                                iVectors(6) is the X coordinate of the third direction of the
+                                axis system
+                                iVectors(7) is the Y coordinate of the third direction of the
+                                axis system
+                                iVectors(8) is the Z coordinate of the third direction of the
+                                axis system
                 |
-                |         iOffsetValues
-                |             List of 6 Offset min & max values along the
-                |             direction.
+                        iOffsetValues
+                            List of 6 Offset min & max values along the
+                            direction.
                 |
-                |                 iOffsetValues(0) is the Min offset along first direction of the
-                |                 axis system
-                |                 iOffsetValues(1) is the Max offset along first direction of the
-                |                 axis system
-                |                 iOffsetValues(2) is the Min offset along second direction of
-                |                 the axis system
-                |                 iOffsetValues(3) is the Max offset along second direction of
-                |                 the axis system
-                |                 iOffsetValues(4) is the Min offset along third direction of the
-                |                 axis system
-                |                 iOffsetValues(5) is the Max offset along third direction of the
-                |                 axis system
+                                iOffsetValues(0) is the Min offset along first direction of the
+                                axis system
+                                iOffsetValues(1) is the Max offset along first direction of the
+                                axis system
+                                iOffsetValues(2) is the Min offset along second direction of
+                                the axis system
+                                iOffsetValues(3) is the Max offset along second direction of
+                                the axis system
+                                iOffsetValues(4) is the Min offset along third direction of the
+                                axis system
+                                iOffsetValues(5) is the Max offset along third direction of the
+                                axis system
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_INVALIDARG:Failure: invalid argument passed to the
-                |         API.
-                |         E_FAIL:Failure
-                |         E_OUTOFMEMORY:Failure: insufficient memory
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_INVALIDARG:Failure: invalid argument passed to the
+                        API.
+                        E_FAIL:Failure
+                        E_OUTOFMEMORY:Failure: insufficient memory
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -998,24 +998,24 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateSimplification(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iSimplificationAccuracy)
-                |     Compute a Simplification
+                Sub CreateSimplification(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iSimplificationAccuracy)
+                    Compute a Simplification
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to simplify
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to simplify
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iSimplificationAccuracy
-                |             Accuracy. See documentation.
+                        iSimplificationAccuracy
+                            Accuracy. See documentation.
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -1055,28 +1055,28 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateSweptVolumes(CATBaseDispatch iSweptAble,CATSafeArrayVariant
-                | iProductsToTreat,VPMReference iProductReference,double
-                | iFilteringParameter)
-                |     Compute a Swept Volume
-                | 
-                |     Parameters:
-                | 
-                |         iSweptAble
-                |             The Sweptable entity, which may be a Animation (Simulation Result),
-                |             a Manikin, etc... 
-                |         iProductsToTreat
-                |             List of Products to sweep 
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
-                |             
-                |         iFilteringParameter
-                |             Filtering parameter. See documentation. 
-                | 
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                Sub CreateSweptVolumes(CATBaseDispatch iSweptAble,CATSafeArrayVariant
+                iProductsToTreat,VPMReference iProductReference,double
+                iFilteringParameter)
+                    Compute a Swept Volume
+                
+                    Parameters:
+                
+                        iSweptAble
+                            The Sweptable entity, which may be a Animation (Simulation Result),
+                            a Manikin, etc... 
+                        iProductsToTreat
+                            List of Products to sweep 
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
+                            
+                        iFilteringParameter
+                            Filtering parameter. See documentation. 
+                
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param AnyObject i_swept_able:
         :param tuple i_products_to_treat:
@@ -1102,26 +1102,26 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iOffsetValue1,double iOffsetValue2)
-                |     Compute a Thickness
+                Sub CreateThickness(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iOffsetValue1,double iOffsetValue2)
+                    Compute a Thickness
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to create a thickness
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to create a thickness
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iOffsetValue1
-                |             First offset. See documentation.
-                |         iOffsetValue2
-                |             Second offset. See documentation.
+                        iOffsetValue1
+                            First offset. See documentation.
+                        iOffsetValue2
+                            Second offset. See documentation.
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:
@@ -1164,30 +1164,30 @@ class VocServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub CreateWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference
-                | iProductReference,double iWrappingGrain,boolean iPerformSimplification,double
-                | iSimplificationAccuracy)
-                |     Compute a Wrapping
+                Sub CreateWrapping(CATSafeArrayVariant iProductsToTreat,VPMReference
+                iProductReference,double iWrappingGrain,boolean iPerformSimplification,double
+                iSimplificationAccuracy)
+                    Compute a Wrapping
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iProductsToTreat
-                |             List of Products to wrap
-                |         iProductReference
-                |             Reference Product. In this case, volume is computed accordingly.
+                        iProductsToTreat
+                            List of Products to wrap
+                        iProductReference
+                            Reference Product. In this case, volume is computed accordingly.
                 |
-                |         iWrappingGrain
-                |             Grain size. See documentation.
-                |         iPerformSimplification
-                |             Put to 1 to perform a Simplification at the end of the wrapping.
+                        iWrappingGrain
+                            Grain size. See documentation.
+                        iPerformSimplification
+                            Put to 1 to perform a Simplification at the end of the wrapping.
                 |
-                |         iSimplificationAccuracy
-                |             Accuracy for simplification. See documentation.
+                        iSimplificationAccuracy
+                            Accuracy for simplification. See documentation.
                 |
-                |     Returns:
-                |         Legal values:
-                |         S_OK:Success
-                |         E_FAIL:Failure
+                    Returns:
+                        Legal values:
+                        S_OK:Success
+                        E_FAIL:Failure
 
         :param tuple i_products_to_treat:
         :param VPMReference i_product_reference:

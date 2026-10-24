@@ -17,25 +17,25 @@ class SfdOpeningProfile(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdOpeningProfile
-                | 
-                | Object to filter a Structure Functional Modeler Opening for Profile by
-                | adhesion.
-                | 
-                | Example:
-                | 
-                | 
-                |          This example shows how to retrieve SfdOpeningProfile
-                |          object.
-                |          
-                | 
-                |          Dim ObjSfdOpeningProfile As SfdOpeningProfile
-                |          Set ObjSfdOpeningProfile = ObjStrOpening.GetItem("SfdOpeningProfile")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdOpeningProfile
+                
+                Object to filter a Structure Functional Modeler Opening for Profile by
+                adhesion.
+                
+                Example:
+                
+                
+                         This example shows how to retrieve SfdOpeningProfile
+                         object.
+                         
+                
+                         Dim ObjSfdOpeningProfile As SfdOpeningProfile
+                         Set ObjSfdOpeningProfile = ObjStrOpening.GetItem("SfdOpeningProfile")
 
     """
 

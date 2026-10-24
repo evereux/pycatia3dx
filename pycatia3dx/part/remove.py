@@ -17,17 +17,17 @@ class Remove(BooleanShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.BooleanShape
-                |                             Remove
-                | 
-                | Represents the remove, or substract boolean operation.
-                | It is performed between a body and the current shape.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.BooleanShape
+                                            Remove
+                
+                Represents the remove, or substract boolean operation.
+                It is performed between a body and the current shape.
 
     """
 

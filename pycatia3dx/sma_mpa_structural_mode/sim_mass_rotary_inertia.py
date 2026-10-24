@@ -17,52 +17,52 @@ class SimMassRotaryInertia(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimMassRotaryInertia
-                | 
-                | Represents the Mass Rotary Inertia object.
-                | 
-                | Example:
-                |     Given a SimAbstractions object, you can create a SimMassRotaryInertia as
-                |     following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyMassRotaryInertia As SimMassRotaryInertia
-                |      Set MyMassRotaryInertia = MyAbstractions.Add("SimMassRotaryInertia")
-                |      
-                | 
-                |     Given a SimAbstractions object, you can retrieve a SimMassRotaryInertia
-                |     named "Mass Rotary Inertia.1" as following:
-                | 
-                |      Dim MyAbstractions As SimAbstractions
-                |      ...
-                |      Dim MyMassRotaryInertia As SimMassRotaryInertia
-                |      Set MyMassRotaryInertia = MyAbstractions.Item("Mass Rotary Inertia.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimAbstractions object myAbstractions, you can create a
-                |     SimMassRotaryInertia as following:
-                | 
-                |      ...
-                |      myMassRotaryInertia = myAbstractions.Add("SimMassRotaryInertia")
-                |      
-                | 
-                |     Given a SimAbstractions object myAbstractions, you can retrieve a
-                |     SimMassRotaryInertia named "Mass Rotary Inertia.1" as
-                |     following:
-                | 
-                |      ...
-                |      myMassRotaryInertia = myAbstractions.Item("Mass Rotary Inertia.1")
-                |      
-                | 
-                | See also:
-                |     SimAbstractions
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimMassRotaryInertia
+                
+                Represents the Mass Rotary Inertia object.
+                
+                Example:
+                    Given a SimAbstractions object, you can create a SimMassRotaryInertia as
+                    following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyMassRotaryInertia As SimMassRotaryInertia
+                     Set MyMassRotaryInertia = MyAbstractions.Add("SimMassRotaryInertia")
+                     
+                
+                    Given a SimAbstractions object, you can retrieve a SimMassRotaryInertia
+                    named "Mass Rotary Inertia.1" as following:
+                
+                     Dim MyAbstractions As SimAbstractions
+                     ...
+                     Dim MyMassRotaryInertia As SimMassRotaryInertia
+                     Set MyMassRotaryInertia = MyAbstractions.Item("Mass Rotary Inertia.1")
+                     
+                
+                Example in Python:
+                    Given a SimAbstractions object myAbstractions, you can create a
+                    SimMassRotaryInertia as following:
+                
+                     ...
+                     myMassRotaryInertia = myAbstractions.Add("SimMassRotaryInertia")
+                     
+                
+                    Given a SimAbstractions object myAbstractions, you can retrieve a
+                    SimMassRotaryInertia named "Mass Rotary Inertia.1" as
+                    following:
+                
+                     ...
+                     myMassRotaryInertia = myAbstractions.Item("Mass Rotary Inertia.1")
+                     
+                
+                See also:
+                    SimAbstractions
     
     """
 
@@ -76,8 +76,8 @@ class SimMassRotaryInertia(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system.
 
         :return: SimAxisSystem
         """
@@ -90,8 +90,8 @@ class SimMassRotaryInertia(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InertiaTensor() As CATSafeArrayVariant
-                |     All six components of the rotary inertia tensor, in this order : I11, I22, I33, I12, I13, I23. Quantity: INERTIAMOMENT, units: Kg_m2
+                Property InertiaTensor() As CATSafeArrayVariant
+                    All six components of the rotary inertia tensor, in this order : I11, I22, I33, I12, I13, I23. Quantity: INERTIAMOMENT, units: Kg_m2
 
         :return: tuple
         """
@@ -112,8 +112,8 @@ class SimMassRotaryInertia(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Magnitude() As double
-                |     Returns or sets the magnitude. Quantity: MASS, units: Kg
+                Property Magnitude() As double
+                    Returns or sets the magnitude. Quantity: MASS, units: Kg
 
         :return: float
         """
@@ -134,33 +134,33 @@ class SimMassRotaryInertia(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """

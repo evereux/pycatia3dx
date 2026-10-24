@@ -18,52 +18,52 @@ class SimDesignEnvelope(SimDesignImprovementDesignVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementDesignVariable
-                |                         SimDesignEnvelope
-                | 
-                | Represents the Design Space object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDesignEnvelope as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDesignSpace As SimDesignEnvelope
-                |      Set MyDesignSpace = MyFeatures.Add("SimDesignEnvelope")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimDesignEnvelope named "Design Space.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyDesignSpace As SimDesignEnvelope
-                |      Set MyDesignSpace = MyFeatures.Item("Design Space.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimDesignEnvelope as following:
-                | 
-                |      ...
-                |      MyDesignSpace = MyFeatures.Add("SimDesignEnvelope")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimDesignEnvelope named "Design Space.1" as following:
-                | 
-                |      ...
-                |      MyDesignSpace = MyFeatures.Item("Design Space.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementDesignVariable
+                                        SimDesignEnvelope
+                
+                Represents the Design Space object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDesignEnvelope as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDesignSpace As SimDesignEnvelope
+                     Set MyDesignSpace = MyFeatures.Add("SimDesignEnvelope")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimDesignEnvelope named "Design Space.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyDesignSpace As SimDesignEnvelope
+                     Set MyDesignSpace = MyFeatures.Item("Design Space.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimDesignEnvelope as following:
+                
+                     ...
+                     MyDesignSpace = MyFeatures.Add("SimDesignEnvelope")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimDesignEnvelope named "Design Space.1" as following:
+                
+                     ...
+                     MyDesignSpace = MyFeatures.Item("Design Space.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -76,25 +76,25 @@ class SimDesignEnvelope(SimDesignImprovementDesignVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As CATBaseDispatch
-                |     Creates a Preserved Region or Local optimization Area feature object and
-                |     returns it.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The Feature Type to be created. Possible values for iType
-                |             are:
-                | 
-                |                 For Add:
-                |                     SimLocalOptimizationArea : Creates a design local optimization area feature. It is of type SimLocalOptimizationArea.
-                |                     SimPreservedRegion : Creates a preserved region feature. It is of type SimPreservedRegion.
-                |                     iParent
-                |                         The Optimization feature under which the new has to be
-                |                         created 
-                | 
-                |     Returns:
-                |         The created feature object.
+                Func Add(CATBSTR iType) As CATBaseDispatch
+                    Creates a Preserved Region or Local optimization Area feature object and
+                    returns it.
+                
+                    Parameters:
+                
+                        iType
+                            The Feature Type to be created. Possible values for iType
+                            are:
+                
+                                For Add:
+                                    SimLocalOptimizationArea : Creates a design local optimization area feature. It is of type SimLocalOptimizationArea.
+                                    SimPreservedRegion : Creates a preserved region feature. It is of type SimPreservedRegion.
+                                    iParent
+                                        The Optimization feature under which the new has to be
+                                        created 
+                
+                    Returns:
+                        The created feature object.
 
         :param str i_type:
         :return: AnyObject

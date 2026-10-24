@@ -27,15 +27,15 @@ class StructurePlate(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     StructurePlate
-                | 
-                | Object to manage the Structure Plate object.
-                | Role: Allows accessing and setting of Plate's data.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    StructurePlate
+                
+                Object to manage the Structure Plate object.
+                Role: Allows accessing and setting of Plate's data.
     
     """
 
@@ -49,11 +49,11 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PanelType() As CATStrPanelMode
-                |     Returns the Panel's type.
-                |     values:
-                |     catStrPanelModeUndefined: Undefined
-                |     catStrPanelModeSurf: Panel defined by a surface
+                Property PanelType() As CATStrPanelMode
+                    Returns the Panel's type.
+                    values:
+                    catStrPanelModeUndefined: Undefined
+                    catStrPanelModeSurf: Panel defined by a surface
 
         :return: CATStrPanelMode
         """
@@ -74,18 +74,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrAdvPanel() As StrAdvPanel (Read Only)
-                |     Returns the StrAdvPanel object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrAdvPanel the StrAdvPanel
-                |              object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrAdvPanel = ObjStrPlate.StrAdvPanel
+                Property StrAdvPanel() As StrAdvPanel (Read Only)
+                    Returns the StrAdvPanel object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrAdvPanel the StrAdvPanel
+                             object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrAdvPanel = ObjStrPlate.StrAdvPanel
 
         :return: StrAdvPanel
         """
@@ -98,18 +98,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrBreak() As StrBreak (Read Only)
-                |     Returns the StrBreak object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrBreak the StrBreak
-                |              object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrBreak = ObjStrPlate.StrBreak
+                Property StrBreak() As StrBreak (Read Only)
+                    Returns the StrBreak object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrBreak the StrBreak
+                             object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrBreak = ObjStrPlate.StrBreak
 
         :return: StrBreak
         """
@@ -122,18 +122,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
-                |              object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrCategoryMngt = ObjStrPlate.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
+                             object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrCategoryMngt = ObjStrPlate.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -146,18 +146,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
-                |     Returns the StrOpeningsMgr object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
-                |              object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrOpeningsMgr = ObjStrPlate.StrOpeningsMgr
+                Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
+                    Returns the StrOpeningsMgr object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
+                             object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrOpeningsMgr = ObjStrPlate.StrOpeningsMgr
 
         :return: StrOpeningsMgr
         """
@@ -170,18 +170,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
-                |     Returns the StrPanelLimitMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrPanelLimitMngt the
-                |              StrPanelLimitMngt object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrPanelLimitMngt = ObjStrPlate.StrPanelLimitMngt
+                Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
+                    Returns the StrPanelLimitMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrPanelLimitMngt the
+                             StrPanelLimitMngt object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrPanelLimitMngt = ObjStrPlate.StrPanelLimitMngt
 
         :return: StrPanelLimitMngt
         """
@@ -194,18 +194,18 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelSurf() As StrPanelSurf (Read Only)
-                |     Returns the StrPanelSurf object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrPanelSurf the StrPanelLimitMngt
-                |              object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrPanelSurf = ObjStrPlate.StrPanelSurf
+                Property StrPanelSurf() As StrPanelSurf (Read Only)
+                    Returns the StrPanelSurf object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrPanelSurf the StrPanelLimitMngt
+                             object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrPanelSurf = ObjStrPlate.StrPanelSurf
 
         :return: StrPanelSurf
         """
@@ -218,19 +218,19 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
-                | Only)
-                |     Returns the StrPlateExtrusionMngt object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves in ObjStrPlateExtrusionMngt the
-                |              StrPlateExtrusionMngt object
-                |              of the StrPlate
-                |              
-                | 
-                |              Set ObjStrPlateExtrusionMngt = ObjStrPlate.StrPlateExtrusionMngt
+                Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
+                Only)
+                    Returns the StrPlateExtrusionMngt object.
+                
+                    Example:
+                
+                
+                             This example retrieves in ObjStrPlateExtrusionMngt the
+                             StrPlateExtrusionMngt object
+                             of the StrPlate
+                             
+                
+                             Set ObjStrPlateExtrusionMngt = ObjStrPlate.StrPlateExtrusionMngt
 
         :return: StrPlateExtrusionMngt
         """
@@ -243,17 +243,17 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSlots() As StrSlots (Read Only)
-                |     Returns the Slots that are inside this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrSlots object.
-                |              
-                | 
-                |               Dim ListOfSlots As StrSlots
-                |               Set ListOfSlots = ObjSddPanel.StrSlots
+                Property StrSlots() As StrSlots (Read Only)
+                    Returns the Slots that are inside this object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrSlots object.
+                             
+                
+                              Dim ListOfSlots As StrSlots
+                              Set ListOfSlots = ObjSddPanel.StrSlots
 
         :return: StrSlots
         """
@@ -265,17 +265,17 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCanonicSupport() As Reference
-                |     Returns the Canonical MoldedSurface of this plate.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves CanonicSupport of the
-                |              plate.
-                |              
-                | 
-                |              Set RefCanonicSupport = ObjSfdPanel.GetCanonicSupport
+                Func GetCanonicSupport() As Reference
+                    Returns the Canonical MoldedSurface of this plate.
+                
+                    Example:
+                
+                
+                             This example retrieves CanonicSupport of the
+                             plate.
+                             
+                
+                             Set RefCanonicSupport = ObjSfdPanel.GetCanonicSupport
 
         :return: Reference
         """
@@ -286,17 +286,17 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDelimitedSupport() As Reference
-                |     Returns the delimited MoldedSurface of this Plate.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves DelimitedSupport of the
-                |              plate.
-                |              
-                | 
-                |              Set RefDelimitedSupport = ObjSfdPanel.GetDelimitedSupport
+                Func GetDelimitedSupport() As Reference
+                    Returns the delimited MoldedSurface of this Plate.
+                
+                    Example:
+                
+                
+                             This example retrieves DelimitedSupport of the
+                             plate.
+                             
+                
+                             Set RefDelimitedSupport = ObjSfdPanel.GetDelimitedSupport
 
         :return: Reference
         """
@@ -307,30 +307,30 @@ class StructurePlate(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOpenings(long iType) As StrOpenings
-                |     Returns the list of Openings that are inside this object.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Opening you want to retrieve:
-                |             - 0: All
-                |             - 1: Openings piercing the Plates inside the
-                |             OpeningPlateSet
-                |             - 2: Openings piercing the Plates and interrupting the Profiles
-                |             inside the OpeningPlateProfileSet
-                |             - 3: Openings piercing the Profile inside the OpeningProfileSet
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves all type of Openings
-                |              
-                | 
-                |              Dim ObjStrOpenings As StrOpenings
-                |              Set ObjStrOpenings = ObjSddPlate.GetOpenings(0)
+                Func GetOpenings(long iType) As StrOpenings
+                    Returns the list of Openings that are inside this object.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Opening you want to retrieve:
+                            - 0: All
+                            - 1: Openings piercing the Plates inside the
+                            OpeningPlateSet
+                            - 2: Openings piercing the Plates and interrupting the Profiles
+                            inside the OpeningPlateProfileSet
+                            - 3: Openings piercing the Profile inside the OpeningProfileSet
+                            
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves all type of Openings
+                             
+                
+                             Dim ObjStrOpenings As StrOpenings
+                             Set ObjStrOpenings = ObjSddPlate.GetOpenings(0)
 
         :param int i_type:
         :return: StrOpenings

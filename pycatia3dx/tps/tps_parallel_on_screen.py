@@ -17,15 +17,15 @@ class TPSParallelOnScreen(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     TPSParallelOnScreen
-                | 
-                | Interface for Parallel On Screen.
-                | TPS for Technological Product Specifications.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    TPSParallelOnScreen
+                
+                Interface for Parallel On Screen.
+                TPS for Technological Product Specifications.
     
     """
 
@@ -39,8 +39,8 @@ class TPSParallelOnScreen(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ParallelOnScreen() As boolean
-                |     Retrieves the Parallel On Screen for the annotation.
+                Property ParallelOnScreen() As boolean
+                    Retrieves the Parallel On Screen for the annotation.
 
         :return: bool
         """
@@ -61,8 +61,8 @@ class TPSParallelOnScreen(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Zoomable() As boolean
-                |     Retrieves the Zoomable for the annotation. 
+                Property Zoomable() As boolean
+                    Retrieves the Zoomable for the annotation. 
 
         :return: bool
         """

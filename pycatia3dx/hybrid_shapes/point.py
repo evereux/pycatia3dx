@@ -17,23 +17,23 @@ class Point(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         Point
-                | 
-                | Represents the hybrid shape Point feature object.
-                | Role: Declare hybrid shape Point root feature object. All interfaces for
-                | different type of Point derives HybridShapePoint.
-                | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapePoint
-                | objects.
-                | 
-                | See also:
-                |     HybridShapeFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        Point
+                
+                Represents the hybrid shape Point feature object.
+                Role: Declare hybrid shape Point root feature object. All interfaces for
+                different type of Point derives HybridShapePoint.
+                
+                Use the CATIAHybridShapeFactory to create a HybridShapePoint
+                objects.
+                
+                See also:
+                    HybridShapeFactory
     
     """
 
@@ -46,16 +46,16 @@ class Point(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
-                |     Gets cartesian coordinates of the point.
-                | 
-                |     Parameters:
-                | 
-                |         oCoordinates
-                |             coordinates of the point. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
+                    Gets cartesian coordinates of the point.
+                
+                    Parameters:
+                
+                        oCoordinates
+                            coordinates of the point. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :return: tuple
         """
@@ -86,18 +86,18 @@ class Point(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
-                |     Sets cartesian coordinates of the point.
-                |     Note: SetCoordinates can only be used on CATIAHybridShapePointCoord
-                |     feature
-                | 
-                |     Parameters:
-                | 
-                |         iCoordinates
-                |             coordinates of the point. 
-                | 
-                |     See also:
-                |         HybridShapeFactory
+                Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
+                    Sets cartesian coordinates of the point.
+                    Note: SetCoordinates can only be used on CATIAHybridShapePointCoord
+                    feature
+                
+                    Parameters:
+                
+                        iCoordinates
+                            coordinates of the point. 
+                
+                    See also:
+                        HybridShapeFactory
 
         :param tuple o_coordinates:
         :return: None

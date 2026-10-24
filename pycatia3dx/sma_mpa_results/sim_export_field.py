@@ -17,36 +17,36 @@ class SimExportField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimExportField
-                | 
-                | Exports the field data.
-                | Role: Field data is the data collected from plot creation. You can export a
-                | customized set of field data to a .csv file for later analysis. The Export
-                | Field Data feature creates a text file in a tabular format usable by programs
-                | such as Microsoft Excel.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a SimExportField object
-                |  as following.
-                |  
-                | 
-                |  Dim oResultsSet As SimResultsSet
-                |  Set oResultsSet = oResultsAnalysisCase.GetSet("FieldPlots")
-                | 
-                |  Dim oFieldPlot As SimFieldPlot
-                |  Set oFieldPlot = oResultsSet.Item(1)
-                | 
-                |  Dim oExportField As SimExportField
-                |  Set oExportField = oResultsAnalysisCase.CreateExportFieldFromPlot(oFieldPlot)
-                |  
-                | 
-                | See also:
-                |     SimResultsAnalysisCase
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimExportField
+                
+                Exports the field data.
+                Role: Field data is the data collected from plot creation. You can export a
+                customized set of field data to a .csv file for later analysis. The Export
+                Field Data feature creates a text file in a tabular format usable by programs
+                such as Microsoft Excel.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a SimExportField object
+                 as following.
+                 
+                
+                 Dim oResultsSet As SimResultsSet
+                 Set oResultsSet = oResultsAnalysisCase.GetSet("FieldPlots")
+                
+                 Dim oFieldPlot As SimFieldPlot
+                 Set oFieldPlot = oResultsSet.Item(1)
+                
+                 Dim oExportField As SimExportField
+                 Set oExportField = oResultsAnalysisCase.CreateExportFieldFromPlot(oFieldPlot)
+                 
+                
+                See also:
+                    SimResultsAnalysisCase
     
     """
 
@@ -60,9 +60,9 @@ class SimExportField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ExcludeNullValues(boolean ibExclude) (Write Only)
-                |     Excludes the entities with no values. It must be called before the
-                |     WriteToFile() or CreateFeatureLinkedDocument() methods.
+                Property ExcludeNullValues(boolean ibExclude) (Write Only)
+                    Excludes the entities with no values. It must be called before the
+                    WriteToFile() or CreateFeatureLinkedDocument() methods.
 
         :return: bool
         """
@@ -83,25 +83,25 @@ class SimExportField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateFeatureLinkedDocument(CATBSTR icsDocumentName,boolean
-                | ibDeformed,boolean ibExportOnExtreriorValuesOnly)
-                |     Creates the Tabular Field Export.
-                |     Creates new ExportField feature and PLM document which will be linked to
-                |     this feature.
-                | 
-                |     Parameters:
-                | 
-                |         icsDocumentName
-                |             The name of document 
-                |         icsFileDirectory
-                |             The path of the directory where the file is to be stored. Directory
-                |             must be created else it will fail 
-                |         ibDeformed
-                |             If this is true it will allow user to export values for deform mesh
-                |             
-                |         ibExportOnExtreriorValuesOnly
-                |             If this is true this will allow user to export values from exterior
-                |             only (outer hull)
+                Sub CreateFeatureLinkedDocument(CATBSTR icsDocumentName,boolean
+                ibDeformed,boolean ibExportOnExtreriorValuesOnly)
+                    Creates the Tabular Field Export.
+                    Creates new ExportField feature and PLM document which will be linked to
+                    this feature.
+                
+                    Parameters:
+                
+                        icsDocumentName
+                            The name of document 
+                        icsFileDirectory
+                            The path of the directory where the file is to be stored. Directory
+                            must be created else it will fail 
+                        ibDeformed
+                            If this is true it will allow user to export values for deform mesh
+                            
+                        ibExportOnExtreriorValuesOnly
+                            If this is true this will allow user to export values from exterior
+                            only (outer hull)
 
         :param str ics_document_name:
         :param bool ib_deformed:
@@ -117,26 +117,26 @@ class SimExportField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub WriteToFile(CATBSTR icsFileName,CATBSTR icsFileDirectory,boolean
-                | ibDeformed,boolean ibExportOnExtreriorValuesOnly)
-                |     Exports the Field to .csv file.
-                |     If user uses the same file name in same location multiple times then file
-                |     will be overwritten.
-                |     Warning : Overwriting of file will fail, either user uses read-only file to overwrite or file is opened.
-                | 
-                |     Parameters:
-                | 
-                |         icsFileName
-                |             The name of file 
-                |         icsFileDirectory
-                |             The path of the directory where the file is to be stored. Directory
-                |             must be created else it will fail 
-                |         ibDeformed
-                |             If this is true it will allow user to export values for deform mesh
-                |             
-                |         ibExportOnExtreriorValuesOnly
-                |             If this is true this will allow user to export values from exterior
-                |             only (outer hull) 
+                Sub WriteToFile(CATBSTR icsFileName,CATBSTR icsFileDirectory,boolean
+                ibDeformed,boolean ibExportOnExtreriorValuesOnly)
+                    Exports the Field to .csv file.
+                    If user uses the same file name in same location multiple times then file
+                    will be overwritten.
+                    Warning : Overwriting of file will fail, either user uses read-only file to overwrite or file is opened.
+                
+                    Parameters:
+                
+                        icsFileName
+                            The name of file 
+                        icsFileDirectory
+                            The path of the directory where the file is to be stored. Directory
+                            must be created else it will fail 
+                        ibDeformed
+                            If this is true it will allow user to export values for deform mesh
+                            
+                        ibExportOnExtreriorValuesOnly
+                            If this is true this will allow user to export values from exterior
+                            only (outer hull) 
 
         :param str ics_file_name:
         :param str ics_file_directory:

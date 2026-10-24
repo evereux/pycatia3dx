@@ -17,16 +17,16 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATPartIDLItf.DefeaturingFilter
-                |                        CATPartIDLItf.DefeaturingFilterWithRange
-                |                             DefeaturingFilletFilter
-                | 
-                | Represents the defeaturing fillet filter.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATPartIDLItf.DefeaturingFilter
+                                       CATPartIDLItf.DefeaturingFilterWithRange
+                                            DefeaturingFilletFilter
+                
+                Represents the defeaturing fillet filter.
 
     """
 

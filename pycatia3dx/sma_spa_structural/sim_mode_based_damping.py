@@ -18,29 +18,29 @@ class SimModeBasedDamping(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimModeBasedDamping
-                | 
-                | Represents the Mode Based Damping object.
-                | 
-                | Example:
-                |     This example demonstrates how to retrieve the SimModeBasedDamping object
-                |     from a SimRandomVibrationStep. The same pattern applies to all supported
-                |     steps.
-                | 
-                |      Dim MyRandomVibrationStep As SimRandomVibrationStep
-                |      ...
-                |      Dim MyModeBasedDamping As SimModeBasedDamping
-                |      Set MyModeBasedDamping = MyRandomVibrationStep.ModeBasedDamping
-                |      
-                | 
-                | Example in Python:
-                | 
-                |      MyModeBasedDamping = MyRandomVibrationStep.ModeBasedDamping
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimModeBasedDamping
+                
+                Represents the Mode Based Damping object.
+                
+                Example:
+                    This example demonstrates how to retrieve the SimModeBasedDamping object
+                    from a SimRandomVibrationStep. The same pattern applies to all supported
+                    steps.
+                
+                     Dim MyRandomVibrationStep As SimRandomVibrationStep
+                     ...
+                     Dim MyModeBasedDamping As SimModeBasedDamping
+                     Set MyModeBasedDamping = MyRandomVibrationStep.ModeBasedDamping
+                     
+                
+                Example in Python:
+                
+                     MyModeBasedDamping = MyRandomVibrationStep.ModeBasedDamping
     
     """
 
@@ -54,8 +54,8 @@ class SimModeBasedDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DampingType() As SimModeBasedDampingDampingType
-                |     Returns or sets the damping type.
+                Property DampingType() As SimModeBasedDampingDampingType
+                    Returns or sets the damping type.
 
         :return: SimModeBasedDampingDampingType
         """
@@ -76,8 +76,8 @@ class SimModeBasedDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Table() As SimTable (Read Only)
-                |     Returns the table that determines the damping behavior.
+                Property Table() As SimTable (Read Only)
+                    Returns the table that determines the damping behavior.
 
         :return: SimTable
         """
@@ -89,18 +89,18 @@ class SimModeBasedDamping(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTableColumn(SimModeBasedDampingTableColumn iTableColumnName) As
-                | SimTableColumn
-                |     Retrieves a specific column of the table that determines the damping
-                |     behavior.
-                | 
-                |     Parameters:
-                | 
-                |         iTableColumnName[in]
-                |             The table column name. 
-                | 
-                |     Returns:
-                |         The table column. 
+                Func GetTableColumn(SimModeBasedDampingTableColumn iTableColumnName) As
+                SimTableColumn
+                    Retrieves a specific column of the table that determines the damping
+                    behavior.
+                
+                    Parameters:
+                
+                        iTableColumnName[in]
+                            The table column name. 
+                
+                    Returns:
+                        The table column. 
 
         :param int i_table_column_name:
         :return: SimTableColumn

@@ -17,20 +17,20 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingMOLocalMachiningAxisSystem
-                | 
-                | Interface to set,retrieve and remove Local Machining Axis System from an
-                | operation.
-                | Before calling any function to get/set/remove Machining Axis System, its better
-                | to check if operation supports Local Machining Axis System. It can be done
-                | using function IsLocalAxisSystemSupported.
-                | Role: DELMIAMfgMOLocalMachiningAxisSystem has methods to Set,retrieve and
-                | remove Machining Axis System for a Machining Operation.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingMOLocalMachiningAxisSystem
+                
+                Interface to set,retrieve and remove Local Machining Axis System from an
+                operation.
+                Before calling any function to get/set/remove Machining Axis System, its better
+                to check if operation supports Local Machining Axis System. It can be done
+                using function IsLocalAxisSystemSupported.
+                Role: DELMIAMfgMOLocalMachiningAxisSystem has methods to Set,retrieve and
+                remove Machining Axis System for a Machining Operation.
     
     """
 
@@ -43,18 +43,18 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetLocalAxisSystem(AnyObject oLocalAxisSystem)
-                |     Returns the Machining Axis System assigned on Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oLocalAxisSystem
-                |             Machining Axis System assigned on Operation. It would support
-                |             DELMIAMfgMachiningAxisSystem. 
-                | 
-                |     Returns:
-                |         S_OK - if found, S_FALSE - if no axis system assigned, E_FAIL in case
-                |         of error.
+                Sub GetLocalAxisSystem(AnyObject oLocalAxisSystem)
+                    Returns the Machining Axis System assigned on Operation.
+                
+                    Parameters:
+                
+                        oLocalAxisSystem
+                            Machining Axis System assigned on Operation. It would support
+                            DELMIAMfgMachiningAxisSystem. 
+                
+                    Returns:
+                        S_OK - if found, S_FALSE - if no axis system assigned, E_FAIL in case
+                        of error.
 
         :param AnyObject o_local_axis_system:
         :return: None
@@ -66,20 +66,20 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub IsLocalAxisSystemSupported(boolean oIsSupported)
-                |     Few operations support DELMIAMfgMOLocalMachiningAxisSystem but don't
-                |     support Local Machining Axis System. This function checks if the operations
-                |     supports Local Machining Axis System. This function must be called before
-                |     Assigning/Retriving Machining Axis System.
-                | 
-                |     Parameters:
-                | 
-                |         oIsSupported
-                |             TRUE - if operation supports Local Machining Axis System.
-                |             
-                | 
-                |     Returns:
-                |         S_OK - if operation supports Local Machining Axis System.
+                Sub IsLocalAxisSystemSupported(boolean oIsSupported)
+                    Few operations support DELMIAMfgMOLocalMachiningAxisSystem but don't
+                    support Local Machining Axis System. This function checks if the operations
+                    supports Local Machining Axis System. This function must be called before
+                    Assigning/Retriving Machining Axis System.
+                
+                    Parameters:
+                
+                        oIsSupported
+                            TRUE - if operation supports Local Machining Axis System.
+                            
+                
+                    Returns:
+                        S_OK - if operation supports Local Machining Axis System.
 
         :param bool o_is_supported:
         :return: None
@@ -91,12 +91,12 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveLocalAxisSystem()
-                |     Removes the Machining Axis System assigned on Operation. It just removes
-                |     the link.
-                | 
-                |     Returns:
-                |         S_OK in case of success
+                Sub RemoveLocalAxisSystem()
+                    Removes the Machining Axis System assigned on Operation. It just removes
+                    the link.
+                
+                    Returns:
+                        S_OK in case of success
 
         :return: None
         """
@@ -107,18 +107,18 @@ class ManufacturingMoLocalMachiningAxisSystem(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetLocalAxisSystem(AnyObject iLocalAxisSystem)
-                |     Sets a Machining Axis System on Operation.
-                | 
-                |     Parameters:
-                | 
-                |         iLocalAxisSystem
-                |             Machining Axis System to add. It should be MfgMachiningAxisSystem
-                |             feature supporting DELMIAMfgMachiningAxisSystem interface.
-                |             
-                | 
-                |     Returns:
-                |         S_OK in case of success.
+                Sub SetLocalAxisSystem(AnyObject iLocalAxisSystem)
+                    Sets a Machining Axis System on Operation.
+                
+                    Parameters:
+                
+                        iLocalAxisSystem
+                            Machining Axis System to add. It should be MfgMachiningAxisSystem
+                            feature supporting DELMIAMfgMachiningAxisSystem interface.
+                            
+                
+                    Returns:
+                        S_OK in case of success.
 
         :param AnyObject i_local_axis_system:
         :return: None

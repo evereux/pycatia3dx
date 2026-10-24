@@ -17,18 +17,18 @@ class Split(SurfaceBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             Split
-                | 
-                | Represents the split operation.
-                | It splits a shape using a splitting element, such as a surface, a face or a
-                | plane.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            Split
+                
+                Represents the split operation.
+                It splits a shape using a splitting element, such as a surface, a face or a
+                plane.
     
     """
 
@@ -42,18 +42,18 @@ class Split(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SplittingSide() As CatSplitSide
-                |     Returns or sets the splitting side . The splitting side is the side of the
-                |     splitting element kept after the split. A positive side refers to the same
-                |     orientation than the splitting element normal vector.
-                | 
-                |     Example:
-                |         The following example returns in sptSide the splitting side of the
-                |         split shape mySplit, and then sets it to
-                |         catPositiveSide:
-                | 
-                |          Set sptSide = mySplit.SplittingSide
-                |          mySplit.SplittingSide = catPositiveSide
+                Property SplittingSide() As CatSplitSide
+                    Returns or sets the splitting side . The splitting side is the side of the
+                    splitting element kept after the split. A positive side refers to the same
+                    orientation than the splitting element normal vector.
+                
+                    Example:
+                        The following example returns in sptSide the splitting side of the
+                        split shape mySplit, and then sets it to
+                        catPositiveSide:
+                
+                         Set sptSide = mySplit.SplittingSide
+                         mySplit.SplittingSide = catPositiveSide
 
         :return: CatSplitSide
         """

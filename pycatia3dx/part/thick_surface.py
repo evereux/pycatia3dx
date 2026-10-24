@@ -18,20 +18,20 @@ class ThickSurface(SurfaceBasedShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.SurfaceBasedShape
-                |                             ThickSurface
-                | 
-                | Represents the ThickSurface feature.
-                | It thicks surface using an offset element (such as a surface or a skin) and two
-                | offset values TopOffset and Botoffset. TopOffset is the offset between the
-                | offset element and the top skin of the feature. BotOffset is the offset between
-                | the offset element and the bottom skin of the feature.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.SurfaceBasedShape
+                                            ThickSurface
+                
+                Represents the ThickSurface feature.
+                It thicks surface using an offset element (such as a surface or a skin) and two
+                offset values TopOffset and Botoffset. TopOffset is the offset between the
+                offset element and the top skin of the feature. BotOffset is the offset between
+                the offset element and the bottom skin of the feature.
     
     """
 
@@ -45,14 +45,14 @@ class ThickSurface(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BotOffset() As Length (Read Only)
-                |     Returns the value of the bottom offset.
-                | 
-                |     Example:
-                |         The following example returns in botoffset the bottom offset of the
-                |         thicksurface firstThickSurface:
-                | 
-                |          Set botoffset = firstThickSurface.BotOffset
+                Property BotOffset() As Length (Read Only)
+                    Returns the value of the bottom offset.
+                
+                    Example:
+                        The following example returns in botoffset the bottom offset of the
+                        thicksurface firstThickSurface:
+                
+                         Set botoffset = firstThickSurface.BotOffset
 
         :return: Length
         """
@@ -65,15 +65,15 @@ class ThickSurface(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetSide() As long (Read Only)
-                |     Returns the offset direction (defines in regards of the normal direction)
-                |     .
-                | 
-                |     Example:
-                |         The following example returns in offsetside the side of the
-                |         ThickSurface firstThickSurface:
-                | 
-                |          Set offsetside = firstThickSurface.OffsetSide
+                Property OffsetSide() As long (Read Only)
+                    Returns the offset direction (defines in regards of the normal direction)
+                    .
+                
+                    Example:
+                        The following example returns in offsetside the side of the
+                        ThickSurface firstThickSurface:
+                
+                         Set offsetside = firstThickSurface.OffsetSide
 
         :return: int
         """
@@ -86,14 +86,14 @@ class ThickSurface(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TopOffset() As Length (Read Only)
-                |     Returns the value of the top offset.
-                | 
-                |     Example:
-                |         The following example returns in topoffset the top offset of the
-                |         ThickSurface firstThickSurface:
-                | 
-                |          Set topoffset = firstThickSurface.TopOffset
+                Property TopOffset() As Length (Read Only)
+                    Returns the value of the top offset.
+                
+                    Example:
+                        The following example returns in topoffset the top offset of the
+                        ThickSurface firstThickSurface:
+                
+                         Set topoffset = firstThickSurface.TopOffset
 
         :return: Length
         """
@@ -105,14 +105,14 @@ class ThickSurface(SurfaceBasedShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub swap_OffsetSide()
-                |     Swap the side of the offset. 
-                | 
-                | Example:
-                |     The following example changes the side of the ThickSurface
-                |     firstThickSurface:
-                | 
-                |      call firstThickSurface.swap_OffsetSide()
+                Sub swap_OffsetSide()
+                    Swap the side of the offset. 
+                
+                Example:
+                    The following example changes the side of the ThickSurface
+                    firstThickSurface:
+                
+                     call firstThickSurface.swap_OffsetSide()
 
         :return: None
         """

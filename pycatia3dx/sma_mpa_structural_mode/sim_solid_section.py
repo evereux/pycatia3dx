@@ -18,51 +18,51 @@ class SimSolidSection(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimSolidSection
-                | 
-                | Represents the Solid Section object.
-                | 
-                | Example:
-                |     Given a SimProperties object, you can create a SimSolidSection as
-                |     following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MySolidSection As SimSolidSection
-                |      Set MySolidSection = MyProperties.Add("SimSolidSection")
-                |      
-                | 
-                |     Given a SimProperties object, you can retrieve a SimSolidSection named
-                |     "Solid Section.1" as following:
-                | 
-                |      Dim MyProperties As SimProperties
-                |      ...
-                |      Dim MySolidSection As SimSolidSection
-                |      Set MySolidSection = MyProperties.Item("Solid Section.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimProperties object myProperties, you can create a SimSolidSection
-                |     as following:
-                | 
-                |      ...
-                |      mySolidSection = myProperties.Add("SimSolidSection")
-                |      
-                | 
-                |     Given a SimProperties object myProperties, you can retrieve a
-                |     SimSolidSection named "Solid Section.1" as following:
-                | 
-                |      ...
-                |      mySolidSection = myProperties.Item("Solid Section.1")
-                |      
-                | 
-                | See also:
-                |     SimProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimSolidSection
+                
+                Represents the Solid Section object.
+                
+                Example:
+                    Given a SimProperties object, you can create a SimSolidSection as
+                    following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MySolidSection As SimSolidSection
+                     Set MySolidSection = MyProperties.Add("SimSolidSection")
+                     
+                
+                    Given a SimProperties object, you can retrieve a SimSolidSection named
+                    "Solid Section.1" as following:
+                
+                     Dim MyProperties As SimProperties
+                     ...
+                     Dim MySolidSection As SimSolidSection
+                     Set MySolidSection = MyProperties.Item("Solid Section.1")
+                     
+                
+                Example in Python:
+                    Given a SimProperties object myProperties, you can create a SimSolidSection
+                    as following:
+                
+                     ...
+                     mySolidSection = myProperties.Add("SimSolidSection")
+                     
+                
+                    Given a SimProperties object myProperties, you can retrieve a
+                    SimSolidSection named "Solid Section.1" as following:
+                
+                     ...
+                     mySolidSection = myProperties.Item("Solid Section.1")
+                     
+                
+                See also:
+                    SimProperties
     
     """
 
@@ -76,8 +76,8 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehavior() As CATBaseDispatch
-                |     Returns or sets the material behavior.
+                Property MaterialBehavior() As CATBaseDispatch
+                    Returns or sets the material behavior.
 
         :return: AnyObject
         """
@@ -98,8 +98,8 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MaterialBehaviorByName() As CATBSTR
-                |     Alias (name) of the simulation material behavior.
+                Property MaterialBehaviorByName() As CATBSTR
+                    Alias (name) of the simulation material behavior.
 
         :return: str
         """
@@ -120,8 +120,8 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Orientation() As SimOrientation (Read Only)
-                |     Returns the orientation used for the section.
+                Property Orientation() As SimOrientation (Read Only)
+                    Returns the orientation used for the section.
 
         :return: SimOrientation
         """
@@ -134,33 +134,33 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -172,14 +172,14 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetMaterialBehavior() As CATBaseDispatch
-                | 
-                |     Deprecated:
-                |         R418 Retrieves the material behavior. 
-                |     Returns:
-                |         The material behavior. 
-                |     Returns:
-                |         S_OK if successful.
+                Func GetMaterialBehavior() As CATBaseDispatch
+                
+                    Deprecated:
+                        R418 Retrieves the material behavior. 
+                    Returns:
+                        The material behavior. 
+                    Returns:
+                        S_OK if successful.
 
         :return: AnyObject
         """
@@ -190,20 +190,20 @@ class SimSolidSection(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMaterialBehavior(CATBSTR iBehaviorName)
-                | 
-                |     Deprecated:
-                |         R418 Sets the material behavior. 
-                |     Parameters:
-                | 
-                |         iBehaviorName
-                |             [in] Alias (name) of the simulation material behavior. Default
-                |             behavior is set if the specified behavior is not found. If multiple behaviors
-                |             have the same alias, the first one found is selected.
-                |             
-                | 
-                |     Returns:
-                |         S_OK if successful. 
+                Sub SetMaterialBehavior(CATBSTR iBehaviorName)
+                
+                    Deprecated:
+                        R418 Sets the material behavior. 
+                    Parameters:
+                
+                        iBehaviorName
+                            [in] Alias (name) of the simulation material behavior. Default
+                            behavior is set if the specified behavior is not found. If multiple behaviors
+                            have the same alias, the first one found is selected.
+                            
+                
+                    Returns:
+                        S_OK if successful. 
 
         :param str i_behavior_name:
         :return: None

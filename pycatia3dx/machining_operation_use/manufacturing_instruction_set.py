@@ -17,14 +17,14 @@ class ManufacturingInstructionSet(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     ManufacturingInstructionSet
-                | 
-                | Interface defining drilling riveting instruction set.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    ManufacturingInstructionSet
+                
+                Interface defining drilling riveting instruction set.
     
     """
 
@@ -38,12 +38,12 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property InsertMode() As long
-                |     Returns or sets insert mode of local instruction set.
-                | 
-                |         0: Replace
-                |         1: Insert After
-                |         2: Insert Before
+                Property InsertMode() As long
+                    Returns or sets insert mode of local instruction set.
+                
+                        0: Replace
+                        1: Insert After
+                        2: Insert Before
 
         :return: int
         """
@@ -64,12 +64,12 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Usage() As long
-                |     Returns or sets scope of usage.
-                | 
-                |         0: Any
-                |         1: Local
-                |         2: Global
+                Property Usage() As long
+                    Returns or sets scope of usage.
+                
+                        0: Any
+                        1: Local
+                        2: Global
 
         :return: int
         """
@@ -89,22 +89,22 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddAction(long iMode,CATBSTR iActionType) As AnyObject
-                |     Adds an action.
-                | 
-                |     Parameters:
-                | 
-                |         iActionType
-                |             Authorized values are :
-                | 
-                |                 MfgInstructionSetMotionMove
-                |                 MfgInstructionSetMotionVisibility
-                |                 MfgInstructionSetMotionDwell
-                |                 MfgInstructionSetMotionTCP
-                |                 MfgInstructionSetMotionPP
-                | 
-                |     Returns:
-                |         The created action
+                Func AddAction(long iMode,CATBSTR iActionType) As AnyObject
+                    Adds an action.
+                
+                    Parameters:
+                
+                        iActionType
+                            Authorized values are :
+                
+                                MfgInstructionSetMotionMove
+                                MfgInstructionSetMotionVisibility
+                                MfgInstructionSetMotionDwell
+                                MfgInstructionSetMotionTCP
+                                MfgInstructionSetMotionPP
+                
+                    Returns:
+                        The created action
 
         :param int i_mode:
         :param str i_action_type:
@@ -117,26 +117,26 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func AddParameter(long iType) As AnyObject
-                |     Adds a parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             Authorized values are:
-                | 
-                |                 0:Boolean
-                |                 1:Integer
-                |                 2:Real
-                |                 3:String
-                |                 4:Length
-                |                 5:Angle
-                |                 6:Time
-                |                 7:LinearFeedRate
-                |                 8:AngularFeedRate
-                | 
-                |     Returns:
-                |         The created parameter
+                Func AddParameter(long iType) As AnyObject
+                    Adds a parameter.
+                
+                    Parameters:
+                
+                        iType
+                            Authorized values are:
+                
+                                0:Boolean
+                                1:Integer
+                                2:Real
+                                3:String
+                                4:Length
+                                5:Angle
+                                6:Time
+                                7:LinearFeedRate
+                                8:AngularFeedRate
+                
+                    Returns:
+                        The created parameter
 
         :param int i_type:
         :return: AnyObject
@@ -148,13 +148,13 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteAction(long iMode,long iPosition)
-                |     Deletes an action.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The index of action to delete
+                Sub DeleteAction(long iMode,long iPosition)
+                    Deletes an action.
+                
+                    Parameters:
+                
+                        iPosition
+                            The index of action to delete
 
         :param int i_mode:
         :param int i_position:
@@ -167,13 +167,13 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteParameter(long iPosition)
-                |     Deletes a parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The index of parameter to delete
+                Sub DeleteParameter(long iPosition)
+                    Deletes a parameter.
+                
+                    Parameters:
+                
+                        iPosition
+                            The index of parameter to delete
 
         :param int i_position:
         :return: None
@@ -185,16 +185,16 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAction(long iMode,long iPosition) As AnyObject
-                |     Gets an action.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The index of action to access. 
-                | 
-                |     Returns:
-                |         The corresponding action
+                Func GetAction(long iMode,long iPosition) As AnyObject
+                    Gets an action.
+                
+                    Parameters:
+                
+                        iPosition
+                            The index of action to access. 
+                
+                    Returns:
+                        The corresponding action
 
         :param int i_mode:
         :param int i_position:
@@ -207,13 +207,13 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfActions(long iMode) As long
-                |     Returns the number of actions.
-                | 
-                |     Parameters:
-                | 
-                |         oNumber
-                |             The number of actions
+                Func GetNumberOfActions(long iMode) As long
+                    Returns the number of actions.
+                
+                    Parameters:
+                
+                        oNumber
+                            The number of actions
 
         :param int i_mode:
         :return: int
@@ -225,11 +225,11 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetNumberOfParameters() As long
-                |     Returns the number of parameters.
-                | 
-                |     Returns:
-                |         The number of parameters
+                Func GetNumberOfParameters() As long
+                    Returns the number of parameters.
+                
+                    Returns:
+                        The number of parameters
 
         :return: int
         """
@@ -240,16 +240,16 @@ class ManufacturingInstructionSet(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(long iPosition) As AnyObject
-                |     Gets a parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             The index of parameter to access. 
-                | 
-                |     Returns:
-                |         The corresponding parameter
+                Func GetParameter(long iPosition) As AnyObject
+                    Gets a parameter.
+                
+                    Parameters:
+                
+                        iPosition
+                            The index of parameter to access. 
+                
+                    Returns:
+                        The corresponding parameter
 
         :param int i_position:
         :return: AnyObject

@@ -18,35 +18,35 @@ class SimStep(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimStep
-                | 
-                | Represents the Step object.
-                | 
-                | Example:
-                |     Given a SimSteps collection you can retrieve a SimStep object named as
-                |     "Static Step.1" through the following code:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStep As CATBaseDispatch
-                |      Set MyStep = MyAnalysisCases.Item("Static Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps collection you can retrieve a SimStep object named as
-                |     "Static Step.1" through the following code:
-                | 
-                |      ...
-                |      myStep = myAnalysisCases.Item("Static Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimStep
+                
+                Represents the Step object.
+                
+                Example:
+                    Given a SimSteps collection you can retrieve a SimStep object named as
+                    "Static Step.1" through the following code:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStep As CATBaseDispatch
+                     Set MyStep = MyAnalysisCases.Item("Static Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps collection you can retrieve a SimStep object named as
+                    "Static Step.1" through the following code:
+                
+                     ...
+                     myStep = myAnalysisCases.Item("Static Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -60,8 +60,8 @@ class SimStep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property FeatureStates() As SimFeatureStates (Read Only)
-                |     Retrieves the collection of all available feature sets.
+                Property FeatureStates() As SimFeatureStates (Read Only)
+                    Retrieves the collection of all available feature sets.
 
         :return: SimFeatureStates
         """
@@ -73,10 +73,10 @@ class SimStep(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateAnalysisDefaultOutputRequests()
-                |     Creates default output requests for the step. 
-                | 
-                | Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
+                Sub CreateAnalysisDefaultOutputRequests()
+                    Creates default output requests for the step. 
+                
+                Copyright © 1999-2024, Dassault Systèmes. All rights reserved.
 
         :return: None
         """

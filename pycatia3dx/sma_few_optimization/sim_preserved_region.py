@@ -17,37 +17,37 @@ class SimPreservedRegion(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimPreservedRegion
-                | 
-                | Represents the Frozen Region object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimPreservedRegion as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      Dim MyDesignSpace As SimDesignEnvelope
-                |      
-                | 
-                |      Dim MyFrozenRegion As SimPreservedRegion
-                |      Set MyFrozenRegion = MyFeatures.AddSubFeature("SimPreservedRegion", MyDesignSpace)
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimPreservedRegion as following:
-                | 
-                |      ...
-                |      MyFrozenRegion = MyFeatures.AddSubFeature("SimPreservedRegion", MyDesignSpace)
-                |      
-                | 
-                | See also:
-                |     SMAIAFeaOptimizationFeatureSet SMAIAFeaDesignArea
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimPreservedRegion
+                
+                Represents the Frozen Region object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimPreservedRegion as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     Dim MyDesignSpace As SimDesignEnvelope
+                     
+                
+                     Dim MyFrozenRegion As SimPreservedRegion
+                     Set MyFrozenRegion = MyFeatures.AddSubFeature("SimPreservedRegion", MyDesignSpace)
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimPreservedRegion as following:
+                
+                     ...
+                     MyFrozenRegion = MyFeatures.AddSubFeature("SimPreservedRegion", MyDesignSpace)
+                     
+                
+                See also:
+                    SMAIAFeaOptimizationFeatureSet SMAIAFeaDesignArea
     
     """
 

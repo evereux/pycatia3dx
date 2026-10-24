@@ -22,20 +22,20 @@ class Editor(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Editor
-                | 
-                | Represents an editor.
-                | In the Model View Controller paradigm, the editor plays the Controller role.
-                | The editor federates all the objects that can be interactively edited in the
-                | same window. It holds the current workbench and thus maintains the list of all
-                | the commands that can be launched from menus and toolbars when this window is
-                | active to edit the objects it controls according to the root object PLM
-                | type.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Editor
+                
+                Represents an editor.
+                In the Model View Controller paradigm, the editor plays the Controller role.
+                The editor federates all the objects that can be interactively edited in the
+                same window. It holds the current workbench and thus maintains the list of all
+                the commands that can be launched from menus and toolbars when this window is
+                active to edit the objects it controls according to the root object PLM
+                type.
     
     """
 
@@ -49,10 +49,10 @@ class Editor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property ActiveObject() As AnyObject (Read Only)
-                |     Returns the active object.
-                |     The active object provides editing commands for itself or its content.
-                |     There is only one active object at a time per editor.
+                Property ActiveObject() As AnyObject (Read Only)
+                    Returns the active object.
+                    The active object provides editing commands for itself or its content.
+                    There is only one active object at a time per editor.
 
         :return: AnyObject
         """
@@ -75,18 +75,18 @@ class Editor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Property Selection() As Selection (Read Only)
-                |     Returns the selection object.
-                |     The selection object contains the objects the end user selected, usually
-                |     with the mouse, and which are candidates as subjects for the next
-                |     action.
-                | 
-                |     Example:
-                |         This example returns in Select1 the selection object of the active
-                |         editor.
-                | 
-                |          Dim Select1 As Selection
-                |          Set Select1 = CATIA.ActiveEditor.Selection
+                Property Selection() As Selection (Read Only)
+                    Returns the selection object.
+                    The selection object contains the objects the end user selected, usually
+                    with the mouse, and which are candidates as subjects for the next
+                    action.
+                
+                    Example:
+                        This example returns in Select1 the selection object of the active
+                        editor.
+                
+                         Dim Select1 As Selection
+                         Set Select1 = CATIA.ActiveEditor.Selection
 
         :return: Selection
         """
@@ -99,23 +99,23 @@ class Editor(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-13 15:35:27.265802)
-                | Func GetService(CATBSTR iService) As Service
-                |     Returns the specified service.
-                | 
-                |     Parameters:
-                | 
-                |         iService
-                |             The identifier of the service to be retrieved 
-                | 
-                |     Returns:
-                |         The specified service
-                | 
-                |         Example:
-                |             This example retrieves in Service1 the VisuServices editor's
-                |             visualization service from the active editor.
-                | 
-                |              Dim Service1 As Service
-                |              Set Service1 = CATIA.ActiveEditor.GetService("VisuServices")
+                Func GetService(CATBSTR iService) As Service
+                    Returns the specified service.
+                
+                    Parameters:
+                
+                        iService
+                            The identifier of the service to be retrieved 
+                
+                    Returns:
+                        The specified service
+                
+                        Example:
+                            This example retrieves in Service1 the VisuServices editor's
+                            visualization service from the active editor.
+                
+                             Dim Service1 As Service
+                             Set Service1 = CATIA.ActiveEditor.GetService("VisuServices")
 
         :param str i_service:
         :return: AnyService

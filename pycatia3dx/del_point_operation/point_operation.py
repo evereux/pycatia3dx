@@ -17,17 +17,17 @@ class PointOperation(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     PointOperation
-                | 
-                | Interface representing a PointOperation.
-                | 
-                | Role: This interface is used to get and set attributes specific to Point
-                | Operation
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    PointOperation
+                
+                Interface representing a PointOperation.
+                
+                Role: This interface is used to get and set attributes specific to Point
+                Operation
     
     """
 
@@ -41,29 +41,29 @@ class PointOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PointProfile() As AnyObject (Read Only)
-                |     This property returns and sets Point profile used by the Point
-                |     Operation.
-                | 
-                |     Returns:
-                |         oPointProfile The Point profile (Spot weld or Rivet Profile) used.
-                |         
-                |     Parameters:
-                | 
-                |         iPointProfile
-                |             Spot weld or Rivet Profile to be set as application profile to the
-                |             Point Operation. 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objPointOperation As PointOperation
-                |             ....
-                |             Dim oSpotProfile As SpotWeldProfile
-                |             ....
-                |             Set objPointOperation.PointProfile = oSpotProfile
-                |             Set oSpotProfile = objPointOperation.PointProfile
+                Property PointProfile() As AnyObject (Read Only)
+                    This property returns and sets Point profile used by the Point
+                    Operation.
+                
+                    Returns:
+                        oPointProfile The Point profile (Spot weld or Rivet Profile) used.
+                        
+                    Parameters:
+                
+                        iPointProfile
+                            Spot weld or Rivet Profile to be set as application profile to the
+                            Point Operation. 
+                
+                    Example:
+                
+                           
+                
+                            Dim objPointOperation As PointOperation
+                            ....
+                            Dim oSpotProfile As SpotWeldProfile
+                            ....
+                            Set objPointOperation.PointProfile = oSpotProfile
+                            Set oSpotProfile = objPointOperation.PointProfile
 
         :return: AnyObject
         """
@@ -76,23 +76,23 @@ class PointOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As CATBSTR (Read Only)
-                |     This property retrieves the Type of the Point Operation.
-                | 
-                |     Parameters:
-                | 
-                |         oType
-                |             Type of the Point Operation. The value could be either "Weld" or
-                |             "Rivet" 
-                | 
-                |     Example:
-                | 
-                |            
-                | 
-                |             Dim objPointOperation As PointOperation
-                |                   ......
-                |             Dim opType As String
-                |             opType = objPointOperation.Type
+                Property Type() As CATBSTR (Read Only)
+                    This property retrieves the Type of the Point Operation.
+                
+                    Parameters:
+                
+                        oType
+                            Type of the Point Operation. The value could be either "Weld" or
+                            "Rivet" 
+                
+                    Example:
+                
+                           
+                
+                            Dim objPointOperation As PointOperation
+                                  ......
+                            Dim opType As String
+                            opType = objPointOperation.Type
 
         :return: str
         """
@@ -104,7 +104,7 @@ class PointOperation(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub set_PointProfile(AnyObject iPointProfile)
+                Sub set_PointProfile(AnyObject iPointProfile)
 
         :param AnyObject i_point_profile:
         :return: None

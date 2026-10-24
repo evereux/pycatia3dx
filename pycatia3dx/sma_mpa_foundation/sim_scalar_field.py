@@ -18,14 +18,14 @@ class SimScalarField(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimScalarField
-                | 
-                | Represents the Scalar Field object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimScalarField
+                
+                Represents the Scalar Field object.
     
     """
 
@@ -39,8 +39,8 @@ class SimScalarField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MappedFieldData() As SimMappedFieldData (Read Only)
-                |     Returns the mapped field data.
+                Property MappedFieldData() As SimMappedFieldData (Read Only)
+                    Returns the mapped field data.
 
         :return: SimMappedFieldData
         """
@@ -53,8 +53,8 @@ class SimScalarField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
-                |     Returns the space time field data.
+                Property SpaceTimeFieldData() As SimSpaceTimeField (Read Only)
+                    Returns the space time field data.
 
         :return: SimSpaceTimeField
         """
@@ -67,8 +67,8 @@ class SimScalarField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UniformMagnitude() As double
-                |     Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
+                Property UniformMagnitude() As double
+                    Returns or sets the magnitude. Quantity: PRESSURE, units: N_m2
 
         :return: float
         """
@@ -89,8 +89,8 @@ class SimScalarField(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property VariationType() As SimScalarFieldVariationType
-                |     Returns or sets the variation type. 
+                Property VariationType() As SimScalarFieldVariationType
+                    Returns or sets the variation type. 
 
         :return: int
         """

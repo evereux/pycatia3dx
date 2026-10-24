@@ -17,14 +17,14 @@ class GeometricElement(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     GeometricElement
-                | 
-                | 2D or 3D wireframe geometric element.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    GeometricElement
+                
+                2D or 3D wireframe geometric element.
     
     """
 
@@ -38,11 +38,11 @@ class GeometricElement(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property GeometricType() As CatGeometricType (Read Only)
-                |     Returns the type of the underlying geometrical element
-                | 
-                |     Returns:
-                |         The Specific type of the geometric interface
+                Property GeometricType() As CatGeometricType (Read Only)
+                    Returns the type of the underlying geometrical element
+                
+                    Returns:
+                        The Specific type of the geometric interface
 
         :return: int
         """

@@ -35,30 +35,30 @@ class OLPRobotMotionTarget(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpRobotMotionTarget
-                | 
-                | Represents a target position of a robot motion.
-                | 
-                | Each motion group has a target position. This interface can only be used by a
-                | translator within the Robotics Off-line Programming (OLP) Download or Upload
-                | command.
-                | 
-                | The name of a robot motion target is the tag name. For targets which are not of
-                | type tag target, you should not get or set the name.
-                | 
-                | Example: (VB.NET)
-                | 
-                |  Dim Motion As OlpRobotMotion
-                |  Dim Group As OlpMotionGroup
-                |  Dim Target As OlpRobotMotionTarget = Motion.GetTarget(Group)
-                |  If Target.TargetType = delOlpTagTarget Then
-                |     MsgBox Target.Name
-                |  End If
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpRobotMotionTarget
+                
+                Represents a target position of a robot motion.
+                
+                Each motion group has a target position. This interface can only be used by a
+                translator within the Robotics Off-line Programming (OLP) Download or Upload
+                command.
+                
+                The name of a robot motion target is the tag name. For targets which are not of
+                type tag target, you should not get or set the name.
+                
+                Example: (VB.NET)
+                
+                 Dim Motion As OlpRobotMotion
+                 Dim Group As OlpMotionGroup
+                 Dim Target As OlpRobotMotionTarget = Motion.GetTarget(Group)
+                 If Target.TargetType = delOlpTagTarget Then
+                    MsgBox Target.Name
+                 End If
     
     """
 
@@ -72,10 +72,10 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccuracyProfile() As RscAccuracyProfile
-                | 
-                |     Deprecated:
-                |         R425 AccuracyProfileOlp
+                Property AccuracyProfile() As RscAccuracyProfile
+                
+                    Deprecated:
+                        R425 AccuracyProfileOlp
 
         :return: RscAccuracyProfile
         """
@@ -96,18 +96,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AccuracyProfileOlp() As OlpAccuracyProfile
-                |     Get/Set the accuracy profile associated with the
-                |     instruction.
-                | 
-                |     This property will return a valid object even for new motions so it can be
-                |     used to set accuracy values.
-                | 
-                |     This object is used to configure the accuracy properties of the motion. The
-                |     parameters specified with the iMatch input equal to TRUE will be used to find
-                |     an existing profile to reuse for this motion. If no matching profile is found a
-                |     new one will be created. To modify a profile directly please use
-                |     OlpController.AccuracyProfileList.
+                Property AccuracyProfileOlp() As OlpAccuracyProfile
+                    Get/Set the accuracy profile associated with the
+                    instruction.
+                
+                    This property will return a valid object even for new motions so it can be
+                    used to set accuracy values.
+                
+                    This object is used to configure the accuracy properties of the motion. The
+                    parameters specified with the iMatch input equal to TRUE will be used to find
+                    an existing profile to reuse for this motion. If no matching profile is found a
+                    new one will be created. To modify a profile directly please use
+                    OlpController.AccuracyProfileList.
 
         :return: OLPAccuracyProfile
         """
@@ -128,15 +128,15 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicationType() As DELOlpInstructionType
-                |     Get/Set the application type being done at this target (spot welding, arc
-                |     welding, etc).
-                | 
-                |     Setting this value is mandatory for robot tasks which control multiple
-                |     motion groups, otherwise all targets will be assumed to be robot motions. The
-                |     specific motion instruction type used to create the robot motion is ignored in
-                |     these cases until OlpRobotMotionTarget.ApplicationType is
-                |     set.
+                Property ApplicationType() As DELOlpInstructionType
+                    Get/Set the application type being done at this target (spot welding, arc
+                    welding, etc).
+                
+                    Setting this value is mandatory for robot tasks which control multiple
+                    motion groups, otherwise all targets will be assumed to be robot motions. The
+                    specific motion instruction type used to create the robot motion is ignored in
+                    these cases until OlpRobotMotionTarget.ApplicationType is
+                    set.
 
         :return: DELOlpInstructionType
         """
@@ -157,13 +157,13 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicationTypeString() As CATBSTR
-                |     Get/Set the application type as a string being done at this target (spot
-                |     welding, arc welding, etc).
-                | 
-                |     This property is redundant to ApplicationType but must be used for new
-                |     applications where the application has not yet been added to
-                |     DELOlpInstructionType.
+                Property ApplicationTypeString() As CATBSTR
+                    Get/Set the application type as a string being done at this target (spot
+                    welding, arc welding, etc).
+                
+                    This property is redundant to ApplicationType but must be used for new
+                    applications where the application has not yet been added to
+                    DELOlpInstructionType.
 
         :return: str
         """
@@ -184,11 +184,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ApplicativeProfiles() As CATSafeArrayVariant (Read
-                | Only)
-                | 
-                |     Deprecated:
-                |         R425 GetParameter GetProfileName IsProfileSet
+                Property ApplicativeProfiles() As CATSafeArrayVariant (Read
+                Only)
+                
+                    Deprecated:
+                        R425 GetParameter GetProfileName IsProfileSet
 
         :return: tuple
         """
@@ -201,18 +201,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property CFrameRivetProfile() As OlpCFrameRivetProfile
-                |     Get/Set the CFrameRivet profile associated with the
-                |     instruction.
-                | 
-                |     This property will return a valid object even for new targets so it can be
-                |     used to set accuracy values.
-                | 
-                |     This object is used to configure the rivet parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.CFrameRivetProfileList.
+                Property CFrameRivetProfile() As OlpCFrameRivetProfile
+                    Get/Set the CFrameRivet profile associated with the
+                    instruction.
+                
+                    This property will return a valid object even for new targets so it can be
+                    used to set accuracy values.
+                
+                    This object is used to configure the rivet parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.CFrameRivetProfileList.
 
         :return: OLPCFrameRivetProfile
         """
@@ -233,9 +233,9 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Choreography() As OlpChoreographyEvents (Read Only)
-                |     Get choreography manager to access and create choregraphy for this
-                |     motion.
+                Property Choreography() As OlpChoreographyEvents (Read Only)
+                    Get choreography manager to access and create choregraphy for this
+                    motion.
 
         :return: OLPChoreographyEvents
         """
@@ -248,8 +248,8 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConveyorTaughtPosition() As double
-                |     Get/Set the conveyor taught position in meters.
+                Property ConveyorTaughtPosition() As double
+                    Get/Set the conveyor taught position in meters.
 
         :return: float
         """
@@ -270,8 +270,8 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConveyorTracking() As boolean
-                |     Get/Set whether this target is tracking a conveyor.
+                Property ConveyorTracking() As boolean
+                    Get/Set whether this target is tracking a conveyor.
 
         :return: bool
         """
@@ -292,18 +292,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ConveyorTrackingProfile() As
-                | OlpConveyorTrackingProfile
-                |     Get/Set the conveyor tracking profile.
-                | 
-                |     This property will return a valid object without being set even for new
-                |     motions so it can be used to set tracking parameters.
-                | 
-                |     This object is used to configure the tracking parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found, a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.ConveyorTrackingProfileList.
+                Property ConveyorTrackingProfile() As
+                OlpConveyorTrackingProfile
+                    Get/Set the conveyor tracking profile.
+                
+                    This property will return a valid object without being set even for new
+                    motions so it can be used to set tracking parameters.
+                
+                    This object is used to configure the tracking parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found, a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.ConveyorTrackingProfileList.
 
         :return: OLPConveyorTrackingProfile
         """
@@ -324,17 +324,17 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrillProfile() As OlpDrillRivetProfile
-                |     Get/Set the drill profile associated with the instruction.
-                | 
-                |     This property will return a valid object even for new targets so it can be
-                |     used to set accuracy values.
-                | 
-                |     This object is used to configure the drill parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.DrillProfileList.
+                Property DrillProfile() As OlpDrillRivetProfile
+                    Get/Set the drill profile associated with the instruction.
+                
+                    This property will return a valid object even for new targets so it can be
+                    used to set accuracy values.
+                
+                    This object is used to configure the drill parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.DrillProfileList.
 
         :return: OLPDrillRivetProfile
         """
@@ -355,18 +355,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DrillRivetProfile() As OlpDrillRivetProfile
-                |     Get/Set the drill-rivet profile associated with the
-                |     instruction.
-                | 
-                |     This property will return a valid object even for new targets so it can be
-                |     used to set accuracy values.
-                | 
-                |     This object is used to configure the drill-rivet parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.DrillRivetProfileList.
+                Property DrillRivetProfile() As OlpDrillRivetProfile
+                    Get/Set the drill-rivet profile associated with the
+                    instruction.
+                
+                    This property will return a valid object even for new targets so it can be
+                    used to set accuracy values.
+                
+                    This object is used to configure the drill-rivet parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.DrillRivetProfileList.
 
         :return: OLPDrillRivetProfile
         """
@@ -387,12 +387,12 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GenericConfig() As OlpRobotConfigGeneric (Read Only)
-                |     Get the config used for this target.
-                | 
-                |     This is the generic DELMIA config which includes the posture and turn
-                |     numbers/turn signs used for determining a unique inverse kinematics solution
-                |     for a given Cartesian position.
+                Property GenericConfig() As OlpRobotConfigGeneric (Read Only)
+                    Get the config used for this target.
+                
+                    This is the generic DELMIA config which includes the posture and turn
+                    numbers/turn signs used for determining a unique inverse kinematics solution
+                    for a given Cartesian position.
 
         :return: OLPRobotConfigGeneric
         """
@@ -405,17 +405,17 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property GlobalPosition() As boolean
-                |     Get/Set whether this target uses a global position (not just local to this
-                |     task).
-                | 
-                |     Global positions are treated specially during upload. Global cartesian
-                |     positions are uploaded as tag targets in a dedicated tag group and their
-                |     position is locked against accidental modification. This is to prevent
-                |     accidental modification of a position that is used in other tasks so that the
-                |     behavior of the other tasks is not affected. Global joint targets are uploaded
-                |     as home positions. Home positions cannot be modified directly in teach eacher,
-                |     which also prevents accidental modification.
+                Property GlobalPosition() As boolean
+                    Get/Set whether this target uses a global position (not just local to this
+                    task).
+                
+                    Global positions are treated specially during upload. Global cartesian
+                    positions are uploaded as tag targets in a dedicated tag group and their
+                    position is locked against accidental modification. This is to prevent
+                    accidental modification of a position that is used in other tasks so that the
+                    behavior of the other tasks is not affected. Global joint targets are uploaded
+                    as home positions. Home positions cannot be modified directly in teach eacher,
+                    which also prevents accidental modification.
 
         :return: bool
         """
@@ -436,26 +436,26 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Home() As CATBSTR
-                |     Get/Set the home name used for the primary device in this
-                |     target.
-                | 
-                |     An empty string means that no home is used for this position. The target
-                |     type will be assumed to be a home target if a home position is set. See
-                |     TargetType for how to override this.
-                | 
-                |     Both device joint values and a home name can be specified.
-                | 
-                |         If the home name exists and device joints are set then the joint values
-                |         should match the existing home name or a warning will be
-                |         issued.
-                |         If the home name exists and device joints are not set, then the home
-                |         name is used as is.
-                |         If the home name does not exist and device joints are set then the home
-                |         name will be created using the specified joint values.
-                |         If the home name does not exist and device joints are not set then the
-                |         home name will be created with joint values of all zero and a warning will be
-                |         issued.
+                Property Home() As CATBSTR
+                    Get/Set the home name used for the primary device in this
+                    target.
+                
+                    An empty string means that no home is used for this position. The target
+                    type will be assumed to be a home target if a home position is set. See
+                    TargetType for how to override this.
+                
+                    Both device joint values and a home name can be specified.
+                
+                        If the home name exists and device joints are set then the joint values
+                        should match the existing home name or a warning will be
+                        issued.
+                        If the home name exists and device joints are not set, then the home
+                        name is used as is.
+                        If the home name does not exist and device joints are set then the home
+                        name will be created using the specified joint values.
+                        If the home name does not exist and device joints are not set then the
+                        home name will be created with joint values of all zero and a warning will be
+                        issued.
 
         :return: str
         """
@@ -476,19 +476,19 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HomeSet() As CATBSTR
-                |     Get/Set the home set name.
-                |     Home sets are used to group home positions during upload for re-use. Any
-                |     home positions with the same name in the same set can be re-used for multiple
-                |     moves. For a home position to be re-used it must also have the same joint
-                |     values. There is also a special "Global" home set that includes all existing
-                |     home positions. If a home position is in the "Global" homeset, a home position
-                |     that existed before the upload that has te same name will be reused and if the
-                |     uploaded joint values are different, the existing home position will be updated
-                |     with the new joint values. By default, when the HomeSet name has not been set,
-                |     any GlobalPosition homes are in the "Global" home set. All other homes are in a
-                |     set for their task. Home set names are not stored so during download this
-                |     proprty is unset.
+                Property HomeSet() As CATBSTR
+                    Get/Set the home set name.
+                    Home sets are used to group home positions during upload for re-use. Any
+                    home positions with the same name in the same set can be re-used for multiple
+                    moves. For a home position to be re-used it must also have the same joint
+                    values. There is also a special "Global" home set that includes all existing
+                    home positions. If a home position is in the "Global" homeset, a home position
+                    that existed before the upload that has te same name will be reused and if the
+                    uploaded joint values are different, the existing home position will be updated
+                    with the new joint values. By default, when the HomeSet name has not been set,
+                    any GlobalPosition homes are in the "Global" home set. All other homes are in a
+                    set for their task. Home set names are not stored so during download this
+                    proprty is unset.
 
         :return: str
         """
@@ -509,21 +509,21 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property KeepTagPosition() As boolean
-                |     Do not update the tag position.
-                |     In NRLTeach, modification of other properties, like the object frame, aux
-                |     axis values, etc could impact the tag position even if SetTransform has not
-                |     been called. The APIs are designed to work in robot coordinates (not simulation
-                |     coordinates). This means the target transform is relative to the object frame.
-                |     For example, if the tag is attached to the part and the part is attached to an
-                |     aux positioner, and the object frame is stationary (not attached to the
-                |     positioner), updating the positioner angle on the move and keeping the same
-                |     x,y,z,w,p,r of the target, the target is kept in the same position relative to
-                |     the object frame but has moved relative to the part so the tag position
-                |     changes. This is effective only for the current macro call and will be reset to
-                |     FALSE after the macro finishes. This cannot be set to TRUE for new moves, moves
-                |     that are not tag targets, and you cannot set the target (e.g. SetTransform,
-                |     SetDeviceJoints for the robot, Home) before or after setting this to True.
+                Property KeepTagPosition() As boolean
+                    Do not update the tag position.
+                    In NRLTeach, modification of other properties, like the object frame, aux
+                    axis values, etc could impact the tag position even if SetTransform has not
+                    been called. The APIs are designed to work in robot coordinates (not simulation
+                    coordinates). This means the target transform is relative to the object frame.
+                    For example, if the tag is attached to the part and the part is attached to an
+                    aux positioner, and the object frame is stationary (not attached to the
+                    positioner), updating the positioner angle on the move and keeping the same
+                    x,y,z,w,p,r of the target, the target is kept in the same position relative to
+                    the object frame but has moved relative to the part so the tag position
+                    changes. This is effective only for the current macro call and will be reset to
+                    FALSE after the macro finishes. This cannot be set to TRUE for new moves, moves
+                    that are not tag targets, and you cannot set the target (e.g. SetTransform,
+                    SetDeviceJoints for the robot, Home) before or after setting this to True.
 
         :return: bool
         """
@@ -544,10 +544,10 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionProfile() As RscMotionProfile
-                | 
-                |     Deprecated:
-                |         R215 MotionProfileOlp
+                Property MotionProfile() As RscMotionProfile
+                
+                    Deprecated:
+                        R215 MotionProfileOlp
 
         :return: RscMotionProfile
         """
@@ -568,18 +568,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionProfileOlp() As OlpMotionProfile
-                |     Get/Set the motion profile associated with the
-                |     instruction.
-                | 
-                |     This property will return a valid object without being set even for new
-                |     motions so it can be used to set speed values.
-                | 
-                |     This object is used to configure the speed properties of the motion. The
-                |     parameters specified with the iMatch input equal to TRUE will be used to find
-                |     an existing profile to reuse for this motion. If no matching profile is found a
-                |     new one will be created. To modify a profile directly please use
-                |     OlpController.MotionProfileList.
+                Property MotionProfileOlp() As OlpMotionProfile
+                    Get/Set the motion profile associated with the
+                    instruction.
+                
+                    This property will return a valid object without being set even for new
+                    motions so it can be used to set speed values.
+                
+                    This object is used to configure the speed properties of the motion. The
+                    parameters specified with the iMatch input equal to TRUE will be used to find
+                    an existing profile to reuse for this motion. If no matching profile is found a
+                    new one will be created. To modify a profile directly please use
+                    OlpController.MotionProfileList.
 
         :return: OLPMotionProfile
         """
@@ -600,8 +600,8 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MotionType() As DELOlpMotionType
-                |     Get/Set the motion type used for this target.
+                Property MotionType() As DELOlpMotionType
+                    Get/Set the motion type used for this target.
 
         :return: DELOlpMotionType
         """
@@ -622,11 +622,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ObjectFrameProfile() As OlpObjectFrameProfile
-                |     Get/Set the object frame profile used for this target.
-                | 
-                |     The object frame profile must be from the primary device's
-                |     controller.
+                Property ObjectFrameProfile() As OlpObjectFrameProfile
+                    Get/Set the object frame profile used for this target.
+                
+                    The object frame profile must be from the primary device's
+                    controller.
 
         :return: OLPObjectFrameProfile
         """
@@ -647,26 +647,26 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OffsetType() As DELOlpOffsetType
-                |     Get/Set the type of offset.
-                | 
-                |     An Offset adjusts the primary taget of the robot. The offset can be a joint
-                |     offset or a Cartesian offset. Cartesian offsets can be relative to the TCP
-                |     (tool frame), the object frame used by this target, or the station (task
-                |     context frame). Station frames are not used unless the translator calls
-                |     OlpTranslatorHelper.SetSupportedFeature with the input "StationOffset" (see
-                |     DELOlpOffsetType for more details). All types of offsets can include joint
-                |     value offsets for the aux devices. delOlpNoOffset is returned if the target
-                |     does not have an offset. Setting a different OffsetType after setting a
-                |     Cartesian offset using SetCartesianOffset or after setting a joint offset for
-                |     the robot with SetJointOffset will clear the offset values. It will not clear
-                |     the joint offsets for the aux devices. The default value if not set during
-                |     upload is delOlpNoOffset. The delOlpJointOffset type is NOT supported for
-                |     upload.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
+                Property OffsetType() As DELOlpOffsetType
+                    Get/Set the type of offset.
+                
+                    An Offset adjusts the primary taget of the robot. The offset can be a joint
+                    offset or a Cartesian offset. Cartesian offsets can be relative to the TCP
+                    (tool frame), the object frame used by this target, or the station (task
+                    context frame). Station frames are not used unless the translator calls
+                    OlpTranslatorHelper.SetSupportedFeature with the input "StationOffset" (see
+                    DELOlpOffsetType for more details). All types of offsets can include joint
+                    value offsets for the aux devices. delOlpNoOffset is returned if the target
+                    does not have an offset. Setting a different OffsetType after setting a
+                    Cartesian offset using SetCartesianOffset or after setting a joint offset for
+                    the robot with SetJointOffset will clear the offset values. It will not clear
+                    the joint offsets for the aux devices. The default value if not set during
+                    upload is delOlpNoOffset. The delOlpJointOffset type is NOT supported for
+                    upload.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
 
         :return: DELOlpOffsetType
         """
@@ -687,9 +687,9 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property OrientationMode() As DELOlpOrientationMode
-                |     Get/Set the orientation mode used for this target.
-                |     This is not available if MotionType set to joint.
+                Property OrientationMode() As DELOlpOrientationMode
+                    Get/Set the orientation mode used for this target.
+                    This is not available if MotionType set to joint.
 
         :return: DELOlpOrientationMode
         """
@@ -710,12 +710,12 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PositionVariable() As OlpPositionVariable
-                |     Get/Set position variable.
-                | 
-                |     A target can be specified with a position variable, in place of Cartesian
-                |     or joint values. The DELMIAOlpVariable in this case will be of type "Position"
-                |     as its DataTypeInString property.
+                Property PositionVariable() As OlpPositionVariable
+                    Get/Set position variable.
+                
+                    A target can be specified with a position variable, in place of Cartesian
+                    or joint values. The DELMIAOlpVariable in this case will be of type "Position"
+                    as its DataTypeInString property.
 
         :return: OLPPositionVariable
         """
@@ -736,27 +736,27 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ProcessType() As DELOlpProcessType
-                |     Get/Set the type of process operation being done at this
-                |     target.
-                | 
-                |     This is used with tags in specialized trajectories. On upload, the value
-                |     can only be set to a limited number of options based on the type of robot
-                |     motion being created.
-                | 
-                |         Robot Motions: only delOlpUndefinedProcess can be set.
-                |         Spot Operations: only delOlpUndefinedProcess can be
-                |         set.
-                |         Point Operations: only delOlpUndefinedProcess can be
-                |         set.
-                |         Arc Operations: can be set to delOlpStartWeld, delOlpWeld, or
-                |         delOlpEndWeld.
-                |         Sealant Operations: can be set to delOlpStartProcess, delOlpMidProcess,
-                |         or delOlpEndProcess.
-                |         Path Adhesive Operations: can be set to delOlpStartProcess,
-                |         delOlpMidProcess, or delOlpEndProcess.
-                |         Seam Search Operations: can be set to delOlpViaPoint or
-                |         delOlpTouchPoint.
+                Property ProcessType() As DELOlpProcessType
+                    Get/Set the type of process operation being done at this
+                    target.
+                
+                    This is used with tags in specialized trajectories. On upload, the value
+                    can only be set to a limited number of options based on the type of robot
+                    motion being created.
+                
+                        Robot Motions: only delOlpUndefinedProcess can be set.
+                        Spot Operations: only delOlpUndefinedProcess can be
+                        set.
+                        Point Operations: only delOlpUndefinedProcess can be
+                        set.
+                        Arc Operations: can be set to delOlpStartWeld, delOlpWeld, or
+                        delOlpEndWeld.
+                        Sealant Operations: can be set to delOlpStartProcess, delOlpMidProcess,
+                        or delOlpEndProcess.
+                        Path Adhesive Operations: can be set to delOlpStartProcess,
+                        delOlpMidProcess, or delOlpEndProcess.
+                        Seam Search Operations: can be set to delOlpViaPoint or
+                        delOlpTouchPoint.
 
         :return: DELOlpProcessType
         """
@@ -777,9 +777,9 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RedundantAngle() As double
-                |     Get/Set the reduntant angle value for a 7 degree of freedom robot's
-                |     cartesian target.
+                Property RedundantAngle() As double
+                    Get/Set the reduntant angle value for a 7 degree of freedom robot's
+                    cartesian target.
 
         :return: float
         """
@@ -800,25 +800,25 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RelativeMoveType() As DELOlpRelativeMoveType
-                |     Get/Set whether this is a relative move.
-                | 
-                |     A relative move, moves the robot the specified distance or joint values
-                |     relative to the current position of the robot. A relative move can be a joint
-                |     move or a Cartesian move. In both cases, the relative move coordinates are
-                |     stored and retrieved from the robot using the usual methods. GetTransform and
-                |     SetTranform for Cartesian relative moves or or GetDeviceJoints and
-                |     SetDeviceJoints for joint relative moves. The TargetType will match the
-                |     relative move type. The default value if not set during upload is
-                |     delOlpNoRelative.
-                | 
-                |     To use relative moves, you must call
-                |     OlpTranslatorHelper.SetSupportedFeature with the input "RelativeMotion"
-                |     otherwise this function will fail and the target retreived from GetTransform
-                |     and GetDeviceJoints will be the resulting target motion of the relative motion
-                |     instead of the relative values stored on the move. This result may not be
-                |     correct depending on the complexity of the program, in which case a warning
-                |     will be issued.
+                Property RelativeMoveType() As DELOlpRelativeMoveType
+                    Get/Set whether this is a relative move.
+                
+                    A relative move, moves the robot the specified distance or joint values
+                    relative to the current position of the robot. A relative move can be a joint
+                    move or a Cartesian move. In both cases, the relative move coordinates are
+                    stored and retrieved from the robot using the usual methods. GetTransform and
+                    SetTranform for Cartesian relative moves or or GetDeviceJoints and
+                    SetDeviceJoints for joint relative moves. The TargetType will match the
+                    relative move type. The default value if not set during upload is
+                    delOlpNoRelative.
+                
+                    To use relative moves, you must call
+                    OlpTranslatorHelper.SetSupportedFeature with the input "RelativeMotion"
+                    otherwise this function will fail and the target retreived from GetTransform
+                    and GetDeviceJoints will be the resulting target motion of the relative motion
+                    instead of the relative values stored on the move. This result may not be
+                    correct depending on the complexity of the program, in which case a warning
+                    will be issued.
 
         :return: DELOlpRelativeMoveType
         """
@@ -839,17 +839,17 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RivetProfile() As OlpDrillRivetProfile
-                |     Get/Set the rivet profile associated with the instruction.
-                | 
-                |     This property will return a valid object even for new targets so it can be
-                |     used to set accuracy values.
-                | 
-                |     This object is used to configure the rivet parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.RivetProfileList.
+                Property RivetProfile() As OlpDrillRivetProfile
+                    Get/Set the rivet profile associated with the instruction.
+                
+                    This property will return a valid object even for new targets so it can be
+                    used to set accuracy values.
+                
+                    This object is used to configure the rivet parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.RivetProfileList.
 
         :return: OLPDrillRivetProfile
         """
@@ -870,18 +870,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpotProfile() As OlpSpotProfile
-                |     Get/Set the spot profile associated with the instruction.
-                | 
-                |     This property will return a valid object without being set even for new
-                |     motions so it can be used to set spot parameters. This property is only valid
-                |     for spot operations.
-                | 
-                |     This object is used to configure the spot parameters. The parameters
-                |     specified with the iMatch input equal to TRUE will be used to find an existing
-                |     profile to reuse for this motion. If no matching profile is found, a new one
-                |     will be created. To modify a profile directly please use
-                |     OlpController.SpotProfileList.
+                Property SpotProfile() As OlpSpotProfile
+                    Get/Set the spot profile associated with the instruction.
+                
+                    This property will return a valid object without being set even for new
+                    motions so it can be used to set spot parameters. This property is only valid
+                    for spot operations.
+                
+                    This object is used to configure the spot parameters. The parameters
+                    specified with the iMatch input equal to TRUE will be used to find an existing
+                    profile to reuse for this motion. If no matching profile is found, a new one
+                    will be created. To modify a profile directly please use
+                    OlpController.SpotProfileList.
 
         :return: OLPSpotProfile
         """
@@ -902,13 +902,13 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Tag() As OlpTag (Read Only)
-                |     Get the tag.
-                | 
-                |     Getting the tag will fail if the target is not a tag target. For a new
-                |     motion target, getting the tag will fail until after the macro has finished.
-                |     The main purpose of this function is to get an object which can be used with ID
-                |     fixer to generate a unique position name.
+                Property Tag() As OlpTag (Read Only)
+                    Get the tag.
+                
+                    Getting the tag will fail if the target is not a tag target. For a new
+                    motion target, getting the tag will fail until after the macro has finished.
+                    The main purpose of this function is to get an object which can be used with ID
+                    fixer to generate a unique position name.
 
         :return: OLPTag
         """
@@ -921,11 +921,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagGroupName() As CATBSTR
-                |     Get/Set the tag group name.
-                | 
-                |     Use the AnyObject.Name property to get/set the tag name for this
-                |     target.
+                Property TagGroupName() As CATBSTR
+                    Get/Set the tag group name.
+                
+                    Use the AnyObject.Name property to get/set the tag name for this
+                    target.
 
         :return: str
         """
@@ -946,13 +946,13 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagGroupType() As DELOlpTagGroupType
-                |     Get/Set the tag group type (spot welding, arc welding,
-                |     etc).
-                | 
-                |     Usually the tag group type matches the ApplicationType. If the value is not
-                |     set then the tag group type for the application will be
-                |     used.
+                Property TagGroupType() As DELOlpTagGroupType
+                    Get/Set the tag group type (spot welding, arc welding,
+                    etc).
+                
+                    Usually the tag group type matches the ApplicationType. If the value is not
+                    set then the tag group type for the application will be
+                    used.
 
         :return: DELOlpTagGroupType
         """
@@ -973,15 +973,15 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TagGroupTypeString() As CATBSTR
-                |     Get/Set the tag group type as a string (spot welding, arc welding,
-                |     etc).
-                | 
-                |     This property is redundant to TagGroupType but must be used for new
-                |     applications where the application has not yet been added to
-                |     DELOlpTagGroupType. Usually the tag group type matches the ApplicationType. If
-                |     this value is not set then the tag group type for the application will be
-                |     used.
+                Property TagGroupTypeString() As CATBSTR
+                    Get/Set the tag group type as a string (spot welding, arc welding,
+                    etc).
+                
+                    This property is redundant to TagGroupType but must be used for new
+                    applications where the application has not yet been added to
+                    DELOlpTagGroupType. Usually the tag group type matches the ApplicationType. If
+                    this value is not set then the tag group type for the application will be
+                    used.
 
         :return: str
         """
@@ -1002,32 +1002,32 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property TargetType() As DELOlpTargetType
-                |     Get/Set the target type used for this target.
-                | 
-                |     The target type does not need to be specified. It will be automatically
-                |     inferred from the type of robot motion and how the target position has been
-                |     set.
-                | 
-                |     This property can be set to override the inferred target type. For example
-                |     if SetDeviceJoints has been called, you can have a tag target created by
-                |     setting this property to delOlpTagTarget.
-                | 
-                |         Spot Operations: a tag target will always be created and cannot be
-                |         overridden.
-                |         Point Operations: a tag target will always be created and cannot be
-                |         overridden.
-                |         Arc Operations: a tag target will always be created and cannot be
-                |         overridden.
-                |         Seam Search Operations: a tag target will always be created and cannot
-                |         be overridden.
-                |         If SetTransform is called, a tag target will be created. This can be
-                |         overridden.
-                |         If SetDeviceJoints is called for the primary device and Home is not
-                |         set, a joint target will be created. This can be
-                |         overridden.
-                |         If Home is set, a home target will be created. This can be
-                |         overridden.
+                Property TargetType() As DELOlpTargetType
+                    Get/Set the target type used for this target.
+                
+                    The target type does not need to be specified. It will be automatically
+                    inferred from the type of robot motion and how the target position has been
+                    set.
+                
+                    This property can be set to override the inferred target type. For example
+                    if SetDeviceJoints has been called, you can have a tag target created by
+                    setting this property to delOlpTagTarget.
+                
+                        Spot Operations: a tag target will always be created and cannot be
+                        overridden.
+                        Point Operations: a tag target will always be created and cannot be
+                        overridden.
+                        Arc Operations: a tag target will always be created and cannot be
+                        overridden.
+                        Seam Search Operations: a tag target will always be created and cannot
+                        be overridden.
+                        If SetTransform is called, a tag target will be created. This can be
+                        overridden.
+                        If SetDeviceJoints is called for the primary device and Home is not
+                        set, a joint target will be created. This can be
+                        overridden.
+                        If Home is set, a home target will be created. This can be
+                        overridden.
 
         :return: DELOlpTargetType
         """
@@ -1048,11 +1048,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ToolProfile() As OlpToolProfile
-                |     Get/Set the tool profile used for this target.
-                | 
-                |     The tool profile must be from the primary device's
-                |     controller.
+                Property ToolProfile() As OlpToolProfile
+                    Get/Set the tool profile used for this target.
+                
+                    The tool profile must be from the primary device's
+                    controller.
 
         :return: OLPToolProfile
         """
@@ -1073,11 +1073,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WaypointID() As CATBSTR
-                |     Get/Set the waypoint ID.
-                |     The waypoint ID is defined on waypoint motions and also on motions that
-                |     declare the closest waypoint. For actions, the WaypointID can be retrieved from
-                |     the target or from the OlpTemplate that represents the action.
+                Property WaypointID() As CATBSTR
+                    Get/Set the waypoint ID.
+                    The waypoint ID is defined on waypoint motions and also on motions that
+                    declare the closest waypoint. For actions, the WaypointID can be retrieved from
+                    the target or from the OlpTemplate that represents the action.
 
         :return: str
         """
@@ -1098,9 +1098,9 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WaypointParentID() As CATBSTR
-                |     Get/Set the waypoint parent ID.
-                |     The waypoint parent ID is only defined on waypoint motions.
+                Property WaypointParentID() As CATBSTR
+                    Get/Set the waypoint parent ID.
+                    The waypoint parent ID is only defined on waypoint motions.
 
         :return: str
         """
@@ -1120,10 +1120,10 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddApplicativeProfile(RscApplicativeProfile iProfile)
-                | 
-                |     Deprecated:
-                |         R425 SetParameter SetProfileName
+                Sub AddApplicativeProfile(RscApplicativeProfile iProfile)
+                
+                    Deprecated:
+                        R425 SetParameter SetProfileName
 
         :param RscApplicativeProfile i_profile:
         :return: None
@@ -1135,11 +1135,11 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetApplicativeProfile(CATBSTR iProfileType) As
-                | RscApplicativeProfile
-                | 
-                |     Deprecated:
-                |         R425 GetParameter GetProfileName IsProfileSet
+                Func GetApplicativeProfile(CATBSTR iProfileType) As
+                RscApplicativeProfile
+                
+                    Deprecated:
+                        R425 GetParameter GetProfileName IsProfileSet
 
         :param str i_profile_type:
         :return: RscApplicativeProfile
@@ -1151,19 +1151,19 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetAuxHome(OlpController iDevice) As CATBSTR
-                |     Get the home position for a specific aux device.
-                | 
-                |     The device must be part of the motion group used for this
-                |     target.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to get the home position for. 
-                | 
-                |     Returns:
-                |         The home name.
+                Func GetAuxHome(OlpController iDevice) As CATBSTR
+                    Get the home position for a specific aux device.
+                
+                    The device must be part of the motion group used for this
+                    target.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to get the home position for. 
+                
+                    Returns:
+                        The home name.
 
         :param OLPController i_device:
         :return: str
@@ -1175,19 +1175,19 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCartesianOffset() As OlpTransform
-                |     Get the Cartesian offset.
-                | 
-                |     The offest is in the frame of reference retrieved by OffsetType. This
-                |     function will fail if the OffsetType is delOlpNoOffset or
-                |     delOlpJointOffset.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Returns:
-                |         The offset.
+                Func GetCartesianOffset() As OlpTransform
+                    Get the Cartesian offset.
+                
+                    The offest is in the frame of reference retrieved by OffsetType. This
+                    function will fail if the OffsetType is delOlpNoOffset or
+                    delOlpJointOffset.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Returns:
+                        The offset.
 
         :return: OLPTransform
         """
@@ -1198,48 +1198,48 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDeviceJoints(OlpController iDevice) As
-                | CATSafeArrayVariant
-                |     Get the joint values for a specific device.
-                | 
-                |     The device must be part of the motion group used for this
-                |     target.
-                | 
-                |     Example: (VB.NET)
-                | 
-                |      Dim Group As OlpMotionGroup
-                |      Dim Target As OlpRobotMotionTarget
-                |      Dim Device As OlpController = Group.PrimaryDevice
-                |      Dim AuxDeviceJointValues() As Object = Target.GetDeviceJoints(Device)
-                |      
-                |      ' get the 1st joint value - arrays in VB.NET are 0 based.
-                |      Dim Joint1 As Double = AuxDeviceJointValues(0)
-                |      
-                |      ' display as a string with units - joint indexes are 1
-                |      based
-                |      If Device.GetJointType(1) = DELOlpJointType.delOlpLinearJoint Then
-                |          MsgBox("Joint 1 : " & Joint1.ToString & "mm")
-                |      Else
-                |          MsgBox("Joint 1 : " & Joint1.ToString & "rad")
-                |      End If
-                |      
-                | 
-                |     In the case of an offset motion when a translator supports offsets,
-                |     GetDeviceJoints for the robot returns the robot's joint values at the main
-                |     target (without the offset).
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to get the joint values for. 
-                | 
-                |     Returns:
-                |         The array of joint values. Each value in the array is a double. The
-                |         joint values are in MKS units. The units depend on the joint
-                |         type.
-                | 
-                |             Linear joints - units are in m.
-                |             Rotational joints - units are in rad.
+                Func GetDeviceJoints(OlpController iDevice) As
+                CATSafeArrayVariant
+                    Get the joint values for a specific device.
+                
+                    The device must be part of the motion group used for this
+                    target.
+                
+                    Example: (VB.NET)
+                
+                     Dim Group As OlpMotionGroup
+                     Dim Target As OlpRobotMotionTarget
+                     Dim Device As OlpController = Group.PrimaryDevice
+                     Dim AuxDeviceJointValues() As Object = Target.GetDeviceJoints(Device)
+                     
+                     ' get the 1st joint value - arrays in VB.NET are 0 based.
+                     Dim Joint1 As Double = AuxDeviceJointValues(0)
+                     
+                     ' display as a string with units - joint indexes are 1
+                     based
+                     If Device.GetJointType(1) = DELOlpJointType.delOlpLinearJoint Then
+                         MsgBox("Joint 1 : " & Joint1.ToString & "mm")
+                     Else
+                         MsgBox("Joint 1 : " & Joint1.ToString & "rad")
+                     End If
+                     
+                
+                    In the case of an offset motion when a translator supports offsets,
+                    GetDeviceJoints for the robot returns the robot's joint values at the main
+                    target (without the offset).
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to get the joint values for. 
+                
+                    Returns:
+                        The array of joint values. Each value in the array is a double. The
+                        joint values are in MKS units. The units depend on the joint
+                        type.
+                
+                            Linear joints - units are in m.
+                            Rotational joints - units are in rad.
 
         :param OLPController i_device:
         :return: tuple
@@ -1251,27 +1251,27 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetJointOffset(OlpController iDevice) As
-                | CATSafeArrayVariant
-                |     Get the joint offset for a device.
-                | 
-                |     This function will return the joint offsets for any device in the motion
-                |     group controlled by this target. This function will fail for the primary device
-                |     of the motion group if the OffsetType is not delOlpJointOffset. This function
-                |     can be called for aux devices for all types of offsets except
-                |     delOlpNoOffset.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to get the joint offset values for. 
-                | 
-                |     Returns:
-                |         The offset.
+                Func GetJointOffset(OlpController iDevice) As
+                CATSafeArrayVariant
+                    Get the joint offset for a device.
+                
+                    This function will return the joint offsets for any device in the motion
+                    group controlled by this target. This function will fail for the primary device
+                    of the motion group if the OffsetType is not delOlpJointOffset. This function
+                    can be called for aux devices for all types of offsets except
+                    delOlpNoOffset.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to get the joint offset values for. 
+                
+                    Returns:
+                        The offset.
 
         :param OLPController i_device:
         :return: tuple
@@ -1283,19 +1283,19 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
-                | CATVariant
-                |     Get applicative profile parameter value.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                | 
-                |     Returns:
-                |         The parameter value.
+                Func GetParameter(CATBSTR iProfileType,CATBSTR iParameterName) As
+                CATVariant
+                    Get applicative profile parameter value.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                
+                    Returns:
+                        The parameter value.
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -1308,25 +1308,25 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterFromParent(CATBSTR iProfileType,CATBSTR iParameterName) As
-                | CATVariant
-                |     Get a parameter from a profile set on the multi-move sequence that contains
-                |     this motion.
-                | 
-                |     This function will return the value of a specified parameter on a profile
-                |     set on the multi-move sequence this motion instruction is contained within. If
-                |     no profile type is specified, this function will fail. If no parameter is
-                |     specified, this function will fail.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The type of profile to check for this parameter. 
-                |         iParameterName
-                |             The the parameter to get the value of. 
-                | 
-                |     Returns:
-                |         The value.
+                Func GetParameterFromParent(CATBSTR iProfileType,CATBSTR iParameterName) As
+                CATVariant
+                    Get a parameter from a profile set on the multi-move sequence that contains
+                    this motion.
+                
+                    This function will return the value of a specified parameter on a profile
+                    set on the multi-move sequence this motion instruction is contained within. If
+                    no profile type is specified, this function will fail. If no parameter is
+                    specified, this function will fail.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The type of profile to check for this parameter. 
+                        iParameterName
+                            The the parameter to get the value of. 
+                
+                    Returns:
+                        The value.
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -1339,18 +1339,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameterNames(CATBSTR iProfileType) As
-                | CATSafeArrayVariant
-                |     Get all applicative and user profile parameter names for a profile
-                |     type.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type. 
-                | 
-                |     Returns:
-                |         The list of parameter names as strings.
+                Func GetParameterNames(CATBSTR iProfileType) As
+                CATSafeArrayVariant
+                    Get all applicative and user profile parameter names for a profile
+                    type.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type. 
+                
+                    Returns:
+                        The list of parameter names as strings.
 
         :param str i_profile_type:
         :return: tuple
@@ -1362,20 +1362,20 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetPositionVariableOffset(OlpPositionVariable oOffset,DELOlpOffsetType
-                | oReferenceFrame)
-                |     Get the position variable offset.
-                | 
-                |     The offest is in the frame of reference retrieved by OffsetType. This
-                |     function will fail if the OffsetType is delOlpNoOffset or delOlpJointOffset. It
-                |     also fails if the offset is not a position variable.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Returns:
-                |         The offset as position variable.
+                Sub GetPositionVariableOffset(OlpPositionVariable oOffset,DELOlpOffsetType
+                oReferenceFrame)
+                    Get the position variable offset.
+                
+                    The offest is in the frame of reference retrieved by OffsetType. This
+                    function will fail if the OffsetType is delOlpNoOffset or delOlpJointOffset. It
+                    also fails if the offset is not a position variable.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Returns:
+                        The offset as position variable.
 
         :param OLPPositionVariable o_offset:
         :param int o_reference_frame:
@@ -1388,16 +1388,16 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileName(CATBSTR iProfileType) As CATBSTR
-                |     Get applicative profile instance name.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         The profile instance name
+                Func GetProfileName(CATBSTR iProfileType) As CATBSTR
+                    Get applicative profile instance name.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        The profile instance name
 
         :param str i_profile_type:
         :return: str
@@ -1409,22 +1409,22 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileNameFromParent(CATBSTR iProfileType) As CATBSTR
-                |     Get the name of the profile of a specified type on the multi-move sequence
-                |     that contains this motion.
-                | 
-                |     This function will return the name of the profile of a specified type on
-                |     the multi-move sequence that contains this motion. If there is no profile of
-                |     the specified type set on the sequence, or if there is no sequence associated
-                |     with the target, it will return "".
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The type of profile to find the name of. 
-                | 
-                |     Returns:
-                |         The name of the profile set on the parent sequence.
+                Func GetProfileNameFromParent(CATBSTR iProfileType) As CATBSTR
+                    Get the name of the profile of a specified type on the multi-move sequence
+                    that contains this motion.
+                
+                    This function will return the name of the profile of a specified type on
+                    the multi-move sequence that contains this motion. If there is no profile of
+                    the specified type set on the sequence, or if there is no sequence associated
+                    with the target, it will return "".
+                
+                    Parameters:
+                
+                        iProfileType
+                            The type of profile to find the name of. 
+                
+                    Returns:
+                        The name of the profile set on the parent sequence.
 
         :param str i_profile_type:
         :return: str
@@ -1436,16 +1436,16 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
-                |     Get a applicative or user profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The type of profile to return. 
-                | 
-                |     Returns:
-                |         The profile. Only 1 instance of a profile can be assigned to a motion.
+                Func GetProfileOlp(CATBSTR iProfileType) As OlpProfile
+                    Get a applicative or user profile.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The type of profile to return. 
+                
+                    Returns:
+                        The profile. Only 1 instance of a profile can be assigned to a motion.
 
         :param str i_profile_type:
         :return: OLPProfile
@@ -1457,41 +1457,41 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
-                |     Get the target location as a Cartesian position.
-                | 
-                |     Translators should always treat the Cartesian position as being relative to
-                |     the object frame. The object frame is relative to iOrigin (the origin of the
-                |     coordinate system used by the translator).
-                | 
-                |     The same origin reference must be used when getting the object frame
-                |     location and the Cartesian position. See
-                |     OlpObjectFrameProfile.GetTransform.
-                | 
-                |     If an object frame's position has not been set then the Cartesian position
-                |     is relative to iOrigin. This is because the object frame is assumed to be zero
-                |     (an Identity transform) relative to any specified origin. The object frame is
-                |     not set if X, Y, Z, Yaw, Pitch, and Roll components are internally stored as
-                |     zero. The object frame is stored relative to the station in most
-                |     cases.
-                | 
-                |     For Fixed TCP motions, the origin must be delOlpMount. The object frame is
-                |     always relative to the mount plate for fixed TCP motions.
-                | 
-                |     If the user has selected the part coordinates option, then for tag targets
-                |     which are attached (or owned by) a part other than the station, the transform
-                |     will be relative to the part's origin and the object frame is ignored.
-                |     Translators should not modify their behavior when the customer has selected
-                |     part coordinates.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             
-                | 
-                |     Returns:
-                |         The target location.
+                Func GetTransform(DELOlpPositionRef iOrigin) As OlpTransform
+                    Get the target location as a Cartesian position.
+                
+                    Translators should always treat the Cartesian position as being relative to
+                    the object frame. The object frame is relative to iOrigin (the origin of the
+                    coordinate system used by the translator).
+                
+                    The same origin reference must be used when getting the object frame
+                    location and the Cartesian position. See
+                    OlpObjectFrameProfile.GetTransform.
+                
+                    If an object frame's position has not been set then the Cartesian position
+                    is relative to iOrigin. This is because the object frame is assumed to be zero
+                    (an Identity transform) relative to any specified origin. The object frame is
+                    not set if X, Y, Z, Yaw, Pitch, and Roll components are internally stored as
+                    zero. The object frame is stored relative to the station in most
+                    cases.
+                
+                    For Fixed TCP motions, the origin must be delOlpMount. The object frame is
+                    always relative to the mount plate for fixed TCP motions.
+                
+                    If the user has selected the part coordinates option, then for tag targets
+                    which are attached (or owned by) a part other than the station, the transform
+                    will be relative to the part's origin and the object frame is ignored.
+                    Translators should not modify their behavior when the customer has selected
+                    part coordinates.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            
+                
+                    Returns:
+                        The target location.
 
         :param int i_origin:
         :return: OLPTransform
@@ -1503,14 +1503,14 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsOffsetPositionVariable() As boolean
-                |     Query if there is position variable offset.
-                | 
-                |     This will return true only if there is an offset AND the offset is a
-                |     position variable.
-                | 
-                |     Returns:
-                |         True if there is an offset as position variable, False otherwise.
+                Func IsOffsetPositionVariable() As boolean
+                    Query if there is position variable offset.
+                
+                    This will return true only if there is an offset AND the offset is a
+                    position variable.
+                
+                    Returns:
+                        True if there is an offset as position variable, False otherwise.
 
         :return: bool
         """
@@ -1521,16 +1521,16 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsProfileSet(CATBSTR iProfileType) As boolean
-                |     Identify if profile type is set.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                | 
-                |     Returns:
-                |         TRUE if profile has be set.
+                Func IsProfileSet(CATBSTR iProfileType) As boolean
+                    Identify if profile type is set.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                
+                    Returns:
+                        TRUE if profile has be set.
 
         :param str i_profile_type:
         :return: bool
@@ -1542,22 +1542,22 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func IsProfileSetOnParent(CATBSTR iProfileType) As boolean
-                |     Check whether a profile is active on the multi-move sequence that contains
-                |     this motion.
-                | 
-                |     This function will return True if the profile type specified is set on the
-                |     multi-move sequence this motion instruction is contained within. It will return
-                |     False if the profile type is not set or if there is no multi-move sequence
-                |     associated with the motion.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The type of profile to check for. 
-                | 
-                |     Returns:
-                |         the boolean for whether or not the profile is set.
+                Func IsProfileSetOnParent(CATBSTR iProfileType) As boolean
+                    Check whether a profile is active on the multi-move sequence that contains
+                    this motion.
+                
+                    This function will return True if the profile type specified is set on the
+                    multi-move sequence this motion instruction is contained within. It will return
+                    False if the profile type is not set or if there is no multi-move sequence
+                    associated with the motion.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The type of profile to check for. 
+                
+                    Returns:
+                        the boolean for whether or not the profile is set.
 
         :param str i_profile_type:
         :return: bool
@@ -1569,42 +1569,42 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAccuracyParams(boolean iFlyBy,AccuracyType iAccuracyType,double
-                | iAccuracyValue,CATBSTR iName)
-                |     Set the accuracy profile for this target using the
-                |     parameters.
-                | 
-                |     This method is obsolete. It is recommended that you use AccuracyProfileOlp
-                |     instead of this method. It may be deprecated in the
-                |     future.
-                | 
-                |     This function may use an existing profile or create a new one based on
-                |     these rules:
-                | 
-                |         If profile with the name exists, its values will be changed to match
-                |         these values.
-                |         If a profile with these values exists, its name will be changed. Note:
-                |         The Default profile is ignored in this case because their name cannot be
-                |         changed.
-                |         If neither of the above, it will be created with these
-                |         values.
-                | 
-                |     Parameters:
-                | 
-                |         iFlyBy
-                |             If true, then fly by is on. 
-                |         iAccuracyType
-                |             The method used for calculating the accuracy. 
-                |         iAccuracyValue
-                |             The accuracy value: units are in MKS and depend upon the value of
-                |             iAccuracyType.
-                | 
-                |                 ACCURACY_TYPE_SPEED - units are a percentage. 1.0 is
-                |                 100%.
-                |                 ACCURACY_TYPE_DISTANCE - units are in mm.
-                | 
-                |         Name
-                |             The name of the profile to find/create.
+                Sub SetAccuracyParams(boolean iFlyBy,AccuracyType iAccuracyType,double
+                iAccuracyValue,CATBSTR iName)
+                    Set the accuracy profile for this target using the
+                    parameters.
+                
+                    This method is obsolete. It is recommended that you use AccuracyProfileOlp
+                    instead of this method. It may be deprecated in the
+                    future.
+                
+                    This function may use an existing profile or create a new one based on
+                    these rules:
+                
+                        If profile with the name exists, its values will be changed to match
+                        these values.
+                        If a profile with these values exists, its name will be changed. Note:
+                        The Default profile is ignored in this case because their name cannot be
+                        changed.
+                        If neither of the above, it will be created with these
+                        values.
+                
+                    Parameters:
+                
+                        iFlyBy
+                            If true, then fly by is on. 
+                        iAccuracyType
+                            The method used for calculating the accuracy. 
+                        iAccuracyValue
+                            The accuracy value: units are in MKS and depend upon the value of
+                            iAccuracyType.
+                
+                                ACCURACY_TYPE_SPEED - units are a percentage. 1.0 is
+                                100%.
+                                ACCURACY_TYPE_DISTANCE - units are in mm.
+                
+                        Name
+                            The name of the profile to find/create.
 
         :param bool i_fly_by:
         :param AccuracyType i_accuracy_type:
@@ -1619,18 +1619,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAuxHome(OlpController iDevice,CATBSTR iHomeName)
-                |     Set the home position for a specific aux device.
-                | 
-                |     The device must be part of the motion group used for this
-                |     target.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to set the home position for. 
-                |         iHomeName
-                |             The home name.
+                Sub SetAuxHome(OlpController iDevice,CATBSTR iHomeName)
+                    Set the home position for a specific aux device.
+                
+                    The device must be part of the motion group used for this
+                    target.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to set the home position for. 
+                        iHomeName
+                            The home name.
 
         :param OLPController i_device:
         :param str i_home_name:
@@ -1643,25 +1643,25 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCartesianOffset(OlpTransform iOffset,DELOlpOffsetType
-                | iReferenceFrame)
-                |     Set the Cartesian offset.
-                | 
-                |     You must specify both the offset and the reference frame as an offset type.
-                |     The function will fail if you specify delOlpNoOffset or delOlpJointOffset. This
-                |     function will also change the value of OffsetType. Cartesian offsets can only
-                |     be set if a robot is in the motion group.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Parameters:
-                | 
-                |         iOffset
-                |             The joint offset values. 
-                |         iReferenceFrame
-                |             The reference frame the offset values are defined in.
+                Sub SetCartesianOffset(OlpTransform iOffset,DELOlpOffsetType
+                iReferenceFrame)
+                    Set the Cartesian offset.
+                
+                    You must specify both the offset and the reference frame as an offset type.
+                    The function will fail if you specify delOlpNoOffset or delOlpJointOffset. This
+                    function will also change the value of OffsetType. Cartesian offsets can only
+                    be set if a robot is in the motion group.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Parameters:
+                
+                        iOffset
+                            The joint offset values. 
+                        iReferenceFrame
+                            The reference frame the offset values are defined in.
 
         :param OLPTransform i_offset:
         :param int i_reference_frame:
@@ -1674,25 +1674,25 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetDeviceJoints(OlpController iDevice,CATSafeArrayVariant
-                | iValues)
-                |     Set the joint values for a specific device.
-                | 
-                |     The device must be part of the motion group used for this
-                |     target.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to set the joint values for. 
-                |         iValues
-                |             The array of joint values. Each value in the array is a double. The
-                |             joint values are in MKS units. The units depend on the joint type. The number
-                |             of values must be the same as the number of joints for the
-                |             device.
-                | 
-                |                 Linear joints - units are in m.
-                |                 Rotational joints - units are in rad.
+                Sub SetDeviceJoints(OlpController iDevice,CATSafeArrayVariant
+                iValues)
+                    Set the joint values for a specific device.
+                
+                    The device must be part of the motion group used for this
+                    target.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to set the joint values for. 
+                        iValues
+                            The array of joint values. Each value in the array is a double. The
+                            joint values are in MKS units. The units depend on the joint type. The number
+                            of values must be the same as the number of joints for the
+                            device.
+                
+                                Linear joints - units are in m.
+                                Rotational joints - units are in rad.
 
         :param OLPController i_device:
         :param tuple i_values:
@@ -1705,27 +1705,27 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetJointOffset(OlpController iDevice,CATSafeArrayVariant
-                | iOffset)
-                |     Set the joint offset for a device.
-                | 
-                |     This function will set the joint offsets for any device in the motion group
-                |     controlled by this target. This function will set the offset type to
-                |     delOlpJointOffset if called for the primary device. When called for an aux
-                |     device, if the offset type is currently delOlpNoOffset, it will be change dto
-                |     delOlpJointOffset but it will not be changed if the offset type is
-                |     Cartesian.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to set the joint offset values for. 
-                |         iOffset
-                |             The joint offset values.
+                Sub SetJointOffset(OlpController iDevice,CATSafeArrayVariant
+                iOffset)
+                    Set the joint offset for a device.
+                
+                    This function will set the joint offsets for any device in the motion group
+                    controlled by this target. This function will set the offset type to
+                    delOlpJointOffset if called for the primary device. When called for an aux
+                    device, if the offset type is currently delOlpNoOffset, it will be change dto
+                    delOlpJointOffset but it will not be changed if the offset type is
+                    Cartesian.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to set the joint offset values for. 
+                        iOffset
+                            The joint offset values.
 
         :param OLPController i_device:
         :param tuple i_offset:
@@ -1739,12 +1739,12 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetMotionParams(MotionBasis iBasis,double iSpeed,double
-                | iAccelPercent,double iAngularSpeedPercent,double iAngularAccelPercent,CATBSTR
-                | iName)
-                | 
-                |     Deprecated:
-                |         R215 MotionProfileOlp
+                Sub SetMotionParams(MotionBasis iBasis,double iSpeed,double
+                iAccelPercent,double iAngularSpeedPercent,double iAngularAccelPercent,CATBSTR
+                iName)
+                
+                    Deprecated:
+                        R215 MotionProfileOlp
 
         :param MotionBasis i_basis:
         :param float i_speed:
@@ -1763,21 +1763,21 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetOffsetBaseTarget(OlpRobotMotionTarget iBaseTarget)
-                |     Set the base target / tag for this offset motion.
-                | 
-                |     To calculate offset amount for uploading a motion, its base target is
-                |     needed in addition to offset type, where delOlpJointOffset is not supported
-                |     yet.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the motion will
-                |     be uploaded as the normal target.
-                | 
-                |     Parameters:
-                | 
-                |         iBaseTarget
-                |             The base target to set.
+                Sub SetOffsetBaseTarget(OlpRobotMotionTarget iBaseTarget)
+                    Set the base target / tag for this offset motion.
+                
+                    To calculate offset amount for uploading a motion, its base target is
+                    needed in addition to offset type, where delOlpJointOffset is not supported
+                    yet.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the motion will
+                    be uploaded as the normal target.
+                
+                    Parameters:
+                
+                        iBaseTarget
+                            The base target to set.
 
         :param OLPRobotMotionTarget i_base_target:
         :return: None
@@ -1789,20 +1789,20 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
-                | iValue,boolean iMatch)
-                |     Set applicative profile parameter value.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iParameterName
-                |             The parameter name 
-                |         iValue
-                |             The parameter value. 
-                |         iMatch
-                |             If TRUE use parameter to find existing applicative profile
+                Sub SetParameter(CATBSTR iProfileType,CATBSTR iParameterName,CATVariant
+                iValue,boolean iMatch)
+                    Set applicative profile parameter value.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iParameterName
+                            The parameter name 
+                        iValue
+                            The parameter value. 
+                        iMatch
+                            If TRUE use parameter to find existing applicative profile
 
         :param str i_profile_type:
         :param str i_parameter_name:
@@ -1817,26 +1817,26 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetPositionVariableOffset(OlpPositionVariable iOffse,DELOlpOffsetType
-                | iReferenceFrame)
-                |     Set the Cartesian offset using the position variable.
-                | 
-                |     You must specify both the offset as a position variable and the reference
-                |     frame as an offset type. The function will fail if you specify delOlpNoOffset
-                |     or delOlpJointOffset. This function will also change the value of OffsetType.
-                |     Cartesian offsets can only be set if a robot is in the motion
-                |     group.
-                | 
-                |     To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
-                |     the input "OffsetMotion" otherwise this function will fail and the offset will
-                |     be directly included in the normal target.
-                | 
-                |     Parameters:
-                | 
-                |         iOffset
-                |             The offset as position variable. 
-                |         iReferenceFrame
-                |             The reference frame the offset values are defined in.
+                Sub SetPositionVariableOffset(OlpPositionVariable iOffse,DELOlpOffsetType
+                iReferenceFrame)
+                    Set the Cartesian offset using the position variable.
+                
+                    You must specify both the offset as a position variable and the reference
+                    frame as an offset type. The function will fail if you specify delOlpNoOffset
+                    or delOlpJointOffset. This function will also change the value of OffsetType.
+                    Cartesian offsets can only be set if a robot is in the motion
+                    group.
+                
+                    To use offsets, you must call OlpTranslatorHelper.SetSupportedFeature with
+                    the input "OffsetMotion" otherwise this function will fail and the offset will
+                    be directly included in the normal target.
+                
+                    Parameters:
+                
+                        iOffset
+                            The offset as position variable. 
+                        iReferenceFrame
+                            The reference frame the offset values are defined in.
 
         :param OLPPositionVariable i_offse:
         :param int i_reference_frame:
@@ -1849,18 +1849,18 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
-                | iMatch)
-                |     Get applicative profile instance name.
-                | 
-                |     Parameters:
-                | 
-                |         iProfileType
-                |             The applicative profile type 
-                |         iProfileName
-                |             The profile instance name 
-                |         iMatch
-                |             If TRUE use name to find existing applicative profile
+                Sub SetProfileName(CATBSTR iProfileType,CATBSTR iProfileName,boolean
+                iMatch)
+                    Get applicative profile instance name.
+                
+                    Parameters:
+                
+                        iProfileType
+                            The applicative profile type 
+                        iProfileName
+                            The profile instance name 
+                        iMatch
+                            If TRUE use name to find existing applicative profile
 
         :param str i_profile_type:
         :param str i_profile_name:
@@ -1874,13 +1874,13 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetProfileOlp(OlpProfile iProfile)
-                |     Set a applicative or user profile.
-                | 
-                |     Parameters:
-                | 
-                |         iProfile
-                |             The profile.
+                Sub SetProfileOlp(OlpProfile iProfile)
+                    Set a applicative or user profile.
+                
+                    Parameters:
+                
+                        iProfile
+                            The profile.
 
         :param OLPProfile i_profile:
         :return: None
@@ -1892,20 +1892,20 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform
-                | iTarget)
-                |     Set the target location as a Cartesian position.
-                | 
-                |     See GetTransform for details.
-                | 
-                |     Parameters:
-                | 
-                |         iOrigin
-                |             The origin of the coordinate system being used by the translator.
-                |             
-                | 
-                |     Returns:
-                |         The target location.
+                Sub SetTransform(DELOlpPositionRef iOrigin,OlpTransform
+                iTarget)
+                    Set the target location as a Cartesian position.
+                
+                    See GetTransform for details.
+                
+                    Parameters:
+                
+                        iOrigin
+                            The origin of the coordinate system being used by the translator.
+                            
+                
+                    Returns:
+                        The target location.
 
         :param int i_origin:
         :param OLPTransform i_target:
@@ -1918,22 +1918,22 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetWristJoints(double iJ4,double iJ5,double iJ6)
-                |     Method sets orientation of the transform using wrist
-                |     joints
-                |     When using this method, you need to set both the Cartesian posision with
-                |     SetTransform and call SetWristJoints. The Orientation from SetTransform will be
-                |     ignored when calculating the target location. Role: Used in robot programming
-                |     languages such as Kobelco.
-                | 
-                |     Parameters:
-                | 
-                |         iJ4
-                |             joint 4 value in radians 
-                |         iJ5
-                |             joint 5 value in radians 
-                |         iJ6
-                |             joint 6 value in radians
+                Sub SetWristJoints(double iJ4,double iJ5,double iJ6)
+                    Method sets orientation of the transform using wrist
+                    joints
+                    When using this method, you need to set both the Cartesian posision with
+                    SetTransform and call SetWristJoints. The Orientation from SetTransform will be
+                    ignored when calculating the target location. Role: Used in robot programming
+                    languages such as Kobelco.
+                
+                    Parameters:
+                
+                        iJ4
+                            joint 4 value in radians 
+                        iJ5
+                            joint 5 value in radians 
+                        iJ6
+                            joint 6 value in radians
 
         :param float i_j4:
         :param float i_j5:
@@ -1947,25 +1947,25 @@ class OLPRobotMotionTarget(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func TryGetDeviceJoints(OlpController iDevice,CATSafeArrayVariant oValues) As
-                | boolean
-                |     Try to get the joint values for a specific device.
-                | 
-                |     This works the same as GetDeviceJoints, but it also returns the
-                |     reachability status. It does not log any errors if the position is not
-                |     reachable.
-                | 
-                |     Parameters:
-                | 
-                |         iDevice
-                |             The device to get the joint values for. 
-                |         oValues
-                |             The array of joint values. Each value in the array is a double. The
-                |             joint values are in MKS units. The units depend on the joint type. see
-                |             GetDeviceJoints 
-                | 
-                |     Returns:
-                |         TRUE if the position is reachable, FALSE if not reachable.
+                Func TryGetDeviceJoints(OlpController iDevice,CATSafeArrayVariant oValues) As
+                boolean
+                    Try to get the joint values for a specific device.
+                
+                    This works the same as GetDeviceJoints, but it also returns the
+                    reachability status. It does not log any errors if the position is not
+                    reachable.
+                
+                    Parameters:
+                
+                        iDevice
+                            The device to get the joint values for. 
+                        oValues
+                            The array of joint values. Each value in the array is a double. The
+                            joint values are in MKS units. The units depend on the joint type. see
+                            GetDeviceJoints 
+                
+                    Returns:
+                        TRUE if the position is reachable, FALSE if not reachable.
 
         :param OLPController i_device:
         :param tuple o_values:

@@ -18,57 +18,57 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
-                |                        SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
-                |                             SimCenterOfGravityResponseVariable
-                | 
-                | Represents the center of gravity response variable object.
-                | 
-                | Example:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCenterOfGravityResponseVariable as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCenterOfGravityResponseVariable As
-                |      SimCenterOfGravityResponseVariable
-                |      Set MyCenterOfGravityResponseVariable = MyFeatures.Add("SimCenterOfGravityResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object, you can retrieve a
-                |     SimCenterOfGravityResponseVariable named "Center of Gravity Response
-                |     Variable.1" as following:
-                | 
-                |      Dim MyFeatures As SimDesignImprovementFeatures
-                |      ...
-                |      Dim MyCenterOfGravityResponseVariable As
-                |      SimCenterOfGravityResponseVariable
-                |      Set MyCenterOfGravityResponseVariable = MyFeatures.Item("Center of Gravity Response Variable.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimDesignImprovementFeatures object, you can create a
-                |     SimCenterOfGravityResponseVariable as following:
-                | 
-                |      ...
-                |      MyCenterOfGravityResponseVariable = MyFeatures.Add("SimCenterOfGravityResponseVariable")
-                |      
-                | 
-                |     Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
-                |     SimCenterOfGravityResponseVariable named "Center of Gravity Response
-                |     Variable.1" as following:
-                | 
-                |      ...
-                |      MyCenterOfGravityResponseVariable = MyFeatures.Item("Center of Gravity Response Variable.1")
-                |      
-                | 
-                | See also:
-                |     SimDesignImprovementFeatures
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   SMAFeaOptimizationIDLItf.SimDesignImprovementResponseVariable
+                                       SMAFeaOptimizationIDLItf.SimNonParametricResponseVariable
+                                            SimCenterOfGravityResponseVariable
+                
+                Represents the center of gravity response variable object.
+                
+                Example:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCenterOfGravityResponseVariable as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCenterOfGravityResponseVariable As
+                     SimCenterOfGravityResponseVariable
+                     Set MyCenterOfGravityResponseVariable = MyFeatures.Add("SimCenterOfGravityResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object, you can retrieve a
+                    SimCenterOfGravityResponseVariable named "Center of Gravity Response
+                    Variable.1" as following:
+                
+                     Dim MyFeatures As SimDesignImprovementFeatures
+                     ...
+                     Dim MyCenterOfGravityResponseVariable As
+                     SimCenterOfGravityResponseVariable
+                     Set MyCenterOfGravityResponseVariable = MyFeatures.Item("Center of Gravity Response Variable.1")
+                     
+                
+                Example in Python:
+                    Given a SimDesignImprovementFeatures object, you can create a
+                    SimCenterOfGravityResponseVariable as following:
+                
+                     ...
+                     MyCenterOfGravityResponseVariable = MyFeatures.Add("SimCenterOfGravityResponseVariable")
+                     
+                
+                    Given a SimDesignImprovementFeatures object MyFeatures, you can retrieve a
+                    SimCenterOfGravityResponseVariable named "Center of Gravity Response
+                    Variable.1" as following:
+                
+                     ...
+                     MyCenterOfGravityResponseVariable = MyFeatures.Item("Center of Gravity Response Variable.1")
+                     
+                
+                See also:
+                    SimDesignImprovementFeatures
     
     """
 
@@ -82,8 +82,8 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxisSystem() As SimAxisSystem (Read Only)
-                |     Returns the axis system used for the Center of Gravity design response.
+                Property AxisSystem() As SimAxisSystem (Read Only)
+                    Returns the axis system used for the Center of Gravity design response.
 
         :return: SimAxisSystem
         """
@@ -96,8 +96,8 @@ class SimCenterOfGravityResponseVariable(SimNonParametricResponseVariable):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Direction() As SimDesignResponseDirection
-                |     Returns or sets the direction of Center of Gravity design response.
+                Property Direction() As SimDesignResponseDirection
+                    Returns or sets the direction of Center of Gravity design response.
 
         :return: int
         """

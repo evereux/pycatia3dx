@@ -18,16 +18,16 @@ class OLPSimulationOptions(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpSimulationOptions
-                | 
-                | Simulation Options.
-                | 
-                | With this interface, the customer can access the options used to execute robot programs. All robots in a given cell share the same set of simulation options. A sample script, where the value of a parameter named "FN80" is retrieved, looks like this: Dim Helper As OlpTranslatorHelperLA = CATIA.Application.GetSessionService("OlpTranslatorHelper") Dim SimOptions as OlpSimulationOptions = Helper.SimulationOptions Dim FNValue as Boolean = SimOptions.GetParameter("FN80") This interface can only be used by a translator within the Robotics Off-line Programming (OLP) Download or Upload command.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpSimulationOptions
+                
+                Simulation Options.
+                
+                With this interface, the customer can access the options used to execute robot programs. All robots in a given cell share the same set of simulation options. A sample script, where the value of a parameter named "FN80" is retrieved, looks like this: Dim Helper As OlpTranslatorHelperLA = CATIA.Application.GetSessionService("OlpTranslatorHelper") Dim SimOptions as OlpSimulationOptions = Helper.SimulationOptions Dim FNValue as Boolean = SimOptions.GetParameter("FN80") This interface can only be used by a translator within the Robotics Off-line Programming (OLP) Download or Upload command.
     
     """
 
@@ -41,10 +41,10 @@ class OLPSimulationOptions(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ParameterNames() As CATSafeArrayVariant (Read Only)
-                |     Get the list of all parameter names.
-                |     Retrieve the list of all parameter names that can be retrieved with
-                |     OlpSimulationOptions.GetParameter.
+                Property ParameterNames() As CATSafeArrayVariant (Read Only)
+                    Get the list of all parameter names.
+                    Retrieve the list of all parameter names that can be retrieved with
+                    OlpSimulationOptions.GetParameter.
 
         :return: tuple
         """
@@ -56,8 +56,8 @@ class OLPSimulationOptions(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetParameter(CATBSTR iParameterName) As CATVariant
-                |     Returns the value of the queried parameter. 
+                Func GetParameter(CATBSTR iParameterName) As CATVariant
+                    Returns the value of the queried parameter. 
 
         :param str i_parameter_name:
         :return: CATVariant

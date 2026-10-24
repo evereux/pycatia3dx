@@ -16,43 +16,43 @@ class OLPMotionProfile(OLPProfile):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DNBIgpOlpUseItf.OlpProfile
-                |                         OlpMotionProfile
-                | 
-                | A motion profile used for translating a robot program.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | 
-                | The behavior of this object depends on where it was retrieved from. If the
-                | object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
-                | object is used to configure the speed properties of that motion. The parameters
-                | specified with the iMatch input equal to TRUE will be used to find an existing
-                | profile to reuse for this motion. If no matching profile is found a new one
-                | will be created. If the object was retrieved from
-                | OlpController.MotionProfileList then any modifications to this object will
-                | change an existing or new profile's values directly.
-                | 
-                | There are 2 types of methods on this object. Some methods provide direct access
-                | to the motion profile parameters as available in the dialog. Other methods,
-                | called Template Methods, get and set all the speed/acceleration parameters as a
-                | group. Each template assumes there are fixed values for some of the parameters.
-                | The get template methods generate messages if the parameters which would have
-                | fixed values are not correct. The set template methods set all the fixed values
-                | in addition to the input arguments.
-                | 
-                | You cannot call methods which Get values for the incorrect Basis. For example,
-                | if IsTimeBasis returns FALSE, then GetTime will fail. You should also not call
-                | a template method like GetTCPAngular if TimeLinearAngularBasis returned
-                | delOlpLinearBasis.
-                | 
-                | You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
-                | OlpRobotMotionTarget until values have been set.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DNBIgpOlpUseItf.OlpProfile
+                                        OlpMotionProfile
+                
+                A motion profile used for translating a robot program.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                
+                The behavior of this object depends on where it was retrieved from. If the
+                object was retrieved from an OlpRobotMotion or OlpRobotMotionTarget then this
+                object is used to configure the speed properties of that motion. The parameters
+                specified with the iMatch input equal to TRUE will be used to find an existing
+                profile to reuse for this motion. If no matching profile is found a new one
+                will be created. If the object was retrieved from
+                OlpController.MotionProfileList then any modifications to this object will
+                change an existing or new profile's values directly.
+                
+                There are 2 types of methods on this object. Some methods provide direct access
+                to the motion profile parameters as available in the dialog. Other methods,
+                called Template Methods, get and set all the speed/acceleration parameters as a
+                group. Each template assumes there are fixed values for some of the parameters.
+                The get template methods generate messages if the parameters which would have
+                fixed values are not correct. The set template methods set all the fixed values
+                in addition to the input arguments.
+                
+                You cannot call methods which Get values for the incorrect Basis. For example,
+                if IsTimeBasis returns FALSE, then GetTime will fail. You should also not call
+                a template method like GetTCPAngular if TimeLinearAngularBasis returned
+                delOlpLinearBasis.
+                
+                You cannot call Get methods for profiles retrieved from a new OlpRobotMotion or
+                OlpRobotMotionTarget until values have been set.
     
     """
 
@@ -65,30 +65,30 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetJointAsPercent(double oSpeedPercent,double
-                | oAccelPercent)
-                |     Template Method: Get the joint speed and acceleration as a
-                |     percentage.
-                |     Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
-                |     following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed and Acceleration are specified as a percentage. (Notice
-                |         message posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oSpeedPercent
-                |             Joint speed as a percentage (1.0 is 100%). 
-                |         oAccelPercent
-                |             Joint acceleration as a percentage (1.0 is 100%).
+                Sub GetJointAsPercent(double oSpeedPercent,double
+                oAccelPercent)
+                    Template Method: Get the joint speed and acceleration as a
+                    percentage.
+                    Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
+                    following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed and Acceleration are specified as a percentage. (Notice
+                        message posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oSpeedPercent
+                            Joint speed as a percentage (1.0 is 100%). 
+                        oAccelPercent
+                            Joint acceleration as a percentage (1.0 is 100%).
 
         :param float o_speed_percent:
         :param float o_accel_percent:
@@ -102,30 +102,30 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetJointAsPercentWithDecel(double oSpeedPercent,double oAccelPercent,double
-                | oDecelPercent)
-                |     Template Method: Get the joint speed, acceleration and deceleration as a
-                |     percentage.
-                |     Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
-                |     following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed and Acceleration are specified as a percentage. (Notice
-                |         message posted if specified in absolute units)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oSpeed
-                |             Joint speed as a percentage (1.0 is 100%). 
-                |         oAccel
-                |             Joint acceleration as a percentage (1.0 is 100%). 
-                |         oDecel
-                |             Joint deceleration as a percentage (1.0 is 100%).
+                Sub GetJointAsPercentWithDecel(double oSpeedPercent,double oAccelPercent,double
+                oDecelPercent)
+                    Template Method: Get the joint speed, acceleration and deceleration as a
+                    percentage.
+                    Joint speed/acceleration is equal to the linear TCP speed/acceleration. The
+                    following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed and Acceleration are specified as a percentage. (Notice
+                        message posted if specified in absolute units)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oSpeed
+                            Joint speed as a percentage (1.0 is 100%). 
+                        oAccel
+                            Joint acceleration as a percentage (1.0 is 100%). 
+                        oDecel
+                            Joint deceleration as a percentage (1.0 is 100%).
 
         :param float o_speed_percent:
         :param float o_accel_percent:
@@ -139,20 +139,20 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPAccelAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular acceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The acceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPAccelAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular acceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The acceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -164,20 +164,20 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPAccelLinear(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP linear acceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in m/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The acceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPAccelLinear(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP linear acceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in m/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The acceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -189,29 +189,29 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPAngular(double oTCPSpeedAbs,double oTCPAccelPercent)
-                |     Template Method: Get the TCP angular speed and
-                |     acceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Angular Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Angular Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Angular Acceleration is equal to Angular Deceleration. (Warning message
-                |         posted if different)
-                |         Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
-                |         device maximum (Warning message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Angular TCP speed in absolute units (rad/s). 
-                |         oTCPAccelPercent
-                |             Angular TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPAngular(double oTCPSpeedAbs,double oTCPAccelPercent)
+                    Template Method: Get the TCP angular speed and
+                    acceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Angular Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Angular Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Angular Acceleration is equal to Angular Deceleration. (Warning message
+                        posted if different)
+                        Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
+                        device maximum (Warning message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Angular TCP speed in absolute units (rad/s). 
+                        oTCPAccelPercent
+                            Angular TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -225,31 +225,31 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPAngularWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
-                | oTCPDecelPercent)
-                |     Template Method: Get the TCP angular speed, acceleration and
-                |     deceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Angular Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Angular Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
-                |         device maximum (Warning message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Angular TCP speed in absolute units (rad/s). 
-                |         oTCPAccelPercent
-                |             Angular TCP acceleration as a percentage (1.0 is 100%).
-                |             
-                |         oTCPDecelPercent
-                |             Angular TCP deceleration as a percentage (1.0 is 100%).
+                Sub GetTCPAngularWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
+                oTCPDecelPercent)
+                    Template Method: Get the TCP angular speed, acceleration and
+                    deceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Angular Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Angular Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Speed, Linear Acceleration, Linear Deceleration are all 100% or
+                        device maximum (Warning message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Angular TCP speed in absolute units (rad/s). 
+                        oTCPAccelPercent
+                            Angular TCP acceleration as a percentage (1.0 is 100%).
+                            
+                        oTCPDecelPercent
+                            Angular TCP deceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -263,20 +263,20 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPDecelAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular deceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The deceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPDecelAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular deceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The deceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -288,20 +288,20 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPDecelLinear(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP linear deceleration.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in m/s^2 if Absolute is specified. 
-                | 
-                |     Returns:
-                |         The deceleration in the specified units, converted if needed, but no
-                |         messages are reported.
+                Func GetTCPDecelLinear(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP linear deceleration.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in m/s^2 if Absolute is specified. 
+                
+                    Returns:
+                        The deceleration in the specified units, converted if needed, but no
+                        messages are reported.
 
         :param int i_units:
         :return: float
@@ -313,30 +313,30 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinear(double oTCPSpeedAbs,double oTCPAccelPercent)
-                |     Template Method: Get the TCP linear speed and
-                |     acceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinear(double oTCPSpeedAbs,double oTCPAccelPercent)
+                    Template Method: Get the TCP linear speed and
+                    acceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -349,23 +349,23 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearNoAccel(double oTCPSpeedAbs)
-                |     Template Method: Get the TCP linear speed.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration, Linear Deceleration, Angular Speed, Angular
-                |         Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
-                |         message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s).
+                Sub GetTCPLinearNoAccel(double oTCPSpeedAbs)
+                    Template Method: Get the TCP linear speed.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration, Linear Deceleration, Angular Speed, Angular
+                        Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
+                        message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s).
 
         :param float o_tcp_speed_abs:
         :return: None
@@ -377,27 +377,27 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearNoAccelWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
-                | oUnits)
-                |     Template Method: Get the TCP linear speed and the units it is specified
-                |     in.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Acceleration, Linear Deceleration, Angular Speed, Angular
-                |         Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
-                |         message posted if different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeed
-                |             Linear TCP speed either as percentage or in absolute units.
-                |             
-                |         oUnits
-                |             Indicates if the speed is in percent (1.0 is 100%) or in absolute
-                |             units (m/s).
+                Sub GetTCPLinearNoAccelWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
+                oUnits)
+                    Template Method: Get the TCP linear speed and the units it is specified
+                    in.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Acceleration, Linear Deceleration, Angular Speed, Angular
+                        Acceleration, and Angular Deceleration are all 100% or device maximum (Warning
+                        message posted if different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeed
+                            Linear TCP speed either as percentage or in absolute units.
+                            
+                        oUnits
+                            Indicates if the speed is in percent (1.0 is 100%) or in absolute
+                            units (m/s).
 
         :param float o_tcp_speed:
         :param int o_units:
@@ -411,32 +411,32 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
-                | oTCPDecelPercent)
-                |     Template Method: Get the TCP linear speed, acceleration and
-                |     deceleration.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Speed is specified in absolute units. (Notice message posted if
-                |         specified as a percentage)
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
-                |         or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeedAbs
-                |             Linear TCP speed in absolute units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
-                |             
-                |         oTCPDecelPercent
-                |             Linear TCP deceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinearWithDecel(double oTCPSpeedAbs,double oTCPAccelPercent,double
+                oTCPDecelPercent)
+                    Template Method: Get the TCP linear speed, acceleration and
+                    deceleration.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Speed is specified in absolute units. (Notice message posted if
+                        specified as a percentage)
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Angular Speed, Angular Acceleration, Angular Deceleration are all 100%
+                        or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeedAbs
+                            Linear TCP speed in absolute units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
+                            
+                        oTCPDecelPercent
+                            Linear TCP deceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed_abs:
         :param float o_tcp_accel_percent:
@@ -450,33 +450,33 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub GetTCPLinearWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
-                | oUnits,double oTCPAccelPercent)
-                |     Template Method: Get the TCP linear speed and the units it is specified in
-                |     and acceleration as a percentage.
-                |     The following rules are checked for other parameters of the motion
-                |     profile.
-                | 
-                |         Linear Acceleration is specified as a percentage. (Notice message
-                |         posted if specified in absolute units)
-                |         Linear Acceleration is equal to Linear Deceleration. (Warning message
-                |         posted if different)
-                |         Angular Speed, Angular Acceleration, and Angular Deceleration are all
-                |         100% or device maximum (Warning message posted if
-                |         different)
-                |         Basis is Speed/Acceleration (Error if different). You should check
-                |         IsTimeBasis before calling this method.
-                | 
-                |     Parameters:
-                | 
-                |         oTCPSpeed
-                |             Linear TCP speed either as percentage or in absolute units.
-                |             
-                |         oUnits
-                |             Indicates if the speed is in percent (1.0 is 100%) or in absolute
-                |             units (m/s). 
-                |         oTCPAccelPercent
-                |             Linear TCP acceleration as a percentage (1.0 is 100%).
+                Sub GetTCPLinearWithUnits(double oTCPSpeed,DELOlpMotionProfileUnits
+                oUnits,double oTCPAccelPercent)
+                    Template Method: Get the TCP linear speed and the units it is specified in
+                    and acceleration as a percentage.
+                    The following rules are checked for other parameters of the motion
+                    profile.
+                
+                        Linear Acceleration is specified as a percentage. (Notice message
+                        posted if specified in absolute units)
+                        Linear Acceleration is equal to Linear Deceleration. (Warning message
+                        posted if different)
+                        Angular Speed, Angular Acceleration, and Angular Deceleration are all
+                        100% or device maximum (Warning message posted if
+                        different)
+                        Basis is Speed/Acceleration (Error if different). You should check
+                        IsTimeBasis before calling this method.
+                
+                    Parameters:
+                
+                        oTCPSpeed
+                            Linear TCP speed either as percentage or in absolute units.
+                            
+                        oUnits
+                            Indicates if the speed is in percent (1.0 is 100%) or in absolute
+                            units (m/s). 
+                        oTCPAccelPercent
+                            Linear TCP acceleration as a percentage (1.0 is 100%).
 
         :param float o_tcp_speed:
         :param int o_units:
@@ -490,16 +490,16 @@ class OLPMotionProfile(OLPProfile):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits) As
-                | double
-                |     Get TCP angular speed.
-                |     This fails if IsTimeBasis returns TRUE.
-                | 
-                |     Parameters:
-                | 
-                |         iUnits
-                |             The units to get the value in. 1.0 is 100% if Percent is specified.
-                |             Value is in rad/s if Absolute is specified. 
+                Func GetTCPSpeedAngular(DELOlpMotionProfileUnits iUnits) As
+                double
+                    Get TCP angular speed.
+                    This fails if IsTimeBasis returns TRUE.
+                
+                    Parameters:
+                
+                        iUnits
+                            The units to get the value in. 1.0 is 100% if Percent is specified.
+                            Value is in rad/s if Absolute is specified. 
                 | 
                 |     Returns:
                 |         The speed in the specified units, converted if needed, but no messages

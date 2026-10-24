@@ -18,15 +18,15 @@ class AGTConnector(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     AGTConnector
-                | 
-                | Object for Connector.
-                | To return the management object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    AGTConnector
+                
+                Object for Connector.
+                To return the management object.
     
     """
 
@@ -40,19 +40,19 @@ class AGTConnector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
-                |     Returns the AGTCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjCategoryMngt the AGTCategoryMngt
-                |              object of the Connector.
-                |              
-                | 
-                |              Dim ObjCategoryMngt As AGTCategoryMngt 
-                |              Set ObjCategoryMngt = ObjConnector.AGTCategoryMngt
+                Property AGTCategoryMngt() As AGTCategoryMngt (Read Only)
+                    Returns the AGTCategoryMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjCategoryMngt the AGTCategoryMngt
+                             object of the Connector.
+                             
+                
+                             Dim ObjCategoryMngt As AGTCategoryMngt 
+                             Set ObjCategoryMngt = ObjConnector.AGTCategoryMngt
 
         :return: AGTCategoryMngt
         """
@@ -65,19 +65,19 @@ class AGTConnector(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
-                |     Returns the AGTMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjMaterialMngt the AGTMaterialMngt
-                |              object of the Connector.
-                |              
-                | 
-                |              Dim ObjMaterialMngt As AGTMaterialMngt 
-                |              Set ObjMaterialMngt = ObjConnector.AGTMaterialMngt
+                Property AGTMaterialMngt() As AGTMaterialMngt (Read Only)
+                    Returns the AGTMaterialMngt object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjMaterialMngt the AGTMaterialMngt
+                             object of the Connector.
+                             
+                
+                             Dim ObjMaterialMngt As AGTMaterialMngt 
+                             Set ObjMaterialMngt = ObjConnector.AGTMaterialMngt
 
         :return: AGTMaterialMngt
         """

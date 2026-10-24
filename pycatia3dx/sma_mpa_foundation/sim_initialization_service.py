@@ -16,22 +16,22 @@ class SimInitializationService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         SimInitializationService
-                | 
-                | Represents the Service to initialize simulation.
-                | 
-                | Example:
-                |     Given a CATIA application object you can retrieve a
-                |     SimInitializationService object as following:
-                | 
-                |      Dim MyInitializationService As SimInitializationService
-                |      Set MyInitializationService = CATIA.GetSessionService("SimInitializationService")
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        SimInitializationService
+                
+                Represents the Service to initialize simulation.
+                
+                Example:
+                    Given a CATIA application object you can retrieve a
+                    SimInitializationService object as following:
+                
+                     Dim MyInitializationService As SimInitializationService
+                     Set MyInitializationService = CATIA.GetSessionService("SimInitializationService")
     
     """
 
@@ -44,35 +44,35 @@ class SimInitializationService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSimulationInitialization(CATBSTR iAppName,CATBSTR
-                | iTypeName)
-                |     Initializes the simulation object for the specified simulation app and
-                |     type. This method must be called prior to the creation of the simulation. This
-                |     method will fail if the simulation object already contains an analysis case.
-                |     The simulation cannot be opened interactively if a product is not assigned. The
-                |     product must be assigned directly during the simulation
-                |     creation.
-                | 
-                |     Parameters:
-                | 
-                |         iAppName
-                |             The simulation app expected to open the
-                |             simulation.
-                |             Valid App Names
-                | 
-                |                 "SimMechanicalScenarioCreation"
-                |                 "SimStructuralScenarioCreation"
-                |                 "SimLinearStructuralScenarioCreation"
-                |                 "SimLinearStructuralValidation"
-                | 
-                |         iTypeName
-                |             The simulation type expected.
-                |             Valid Simulation Type Names
-                | 
-                |                 "SimGeneral"
-                |                 "SimStructural"
-                |                 "SimThermal"
-                |                 "SimThermalStructural"
+                Sub SetSimulationInitialization(CATBSTR iAppName,CATBSTR
+                iTypeName)
+                    Initializes the simulation object for the specified simulation app and
+                    type. This method must be called prior to the creation of the simulation. This
+                    method will fail if the simulation object already contains an analysis case.
+                    The simulation cannot be opened interactively if a product is not assigned. The
+                    product must be assigned directly during the simulation
+                    creation.
+                
+                    Parameters:
+                
+                        iAppName
+                            The simulation app expected to open the
+                            simulation.
+                            Valid App Names
+                
+                                "SimMechanicalScenarioCreation"
+                                "SimStructuralScenarioCreation"
+                                "SimLinearStructuralScenarioCreation"
+                                "SimLinearStructuralValidation"
+                
+                        iTypeName
+                            The simulation type expected.
+                            Valid Simulation Type Names
+                
+                                "SimGeneral"
+                                "SimStructural"
+                                "SimThermal"
+                                "SimThermalStructural"
 
         :param str i_app_name:
         :param str i_type_name:
@@ -85,24 +85,24 @@ class SimInitializationService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetSimulationMethod(SimInitializationServiceSimulationMethod
-                | ipSimulationMethod)
-                | 
-                |     Deprecated:
-                |         R422 See SetSimulationInitialization
-                | 
-                |         Initializes the simulation object per the specified simulation method.
-                |         This method must be called prior to the creation of the simulation. This
-                |         involves the modification of simulation object so that it opens up in the
-                |         corresponding App as well as creation of an analysis case corresponding to the
-                |         simulation method. This method will fail if the simulation object already
-                |         contains an analysis case. The simulation cannot be opened interactively if a
-                |         product is not assigned. The product must be assigned directly during the
-                |         simulation creation. 
-                |     Parameters:
-                | 
-                |         ipSimulationMethod
-                |             The simulation method used for initialization. 
+                Sub SetSimulationMethod(SimInitializationServiceSimulationMethod
+                ipSimulationMethod)
+                
+                    Deprecated:
+                        R422 See SetSimulationInitialization
+                
+                        Initializes the simulation object per the specified simulation method.
+                        This method must be called prior to the creation of the simulation. This
+                        involves the modification of simulation object so that it opens up in the
+                        corresponding App as well as creation of an analysis case corresponding to the
+                        simulation method. This method will fail if the simulation object already
+                        contains an analysis case. The simulation cannot be opened interactively if a
+                        product is not assigned. The product must be assigned directly during the
+                        simulation creation. 
+                    Parameters:
+                
+                        ipSimulationMethod
+                            The simulation method used for initialization. 
 
         :param int ip_simulation_method:
         :return: None

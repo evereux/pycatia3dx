@@ -19,16 +19,16 @@ class SddProductStiffenerOnFreeEdge(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SddProductStiffenerOnFreeEdge
-                | 
-                | Object for representing Structure Detail Design Product Stiffener On Free
-                | Edge.
-                | Role: To manage SDD Stiffener On Free Edge at product level.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SddProductStiffenerOnFreeEdge
+                
+                Object for representing Structure Detail Design Product Stiffener On Free
+                Edge.
+                Role: To manage SDD Stiffener On Free Edge at product level.
     
     """
 
@@ -42,20 +42,20 @@ class SddProductStiffenerOnFreeEdge(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SddProductStiffener
-                |              
-                | 
-                |              Dim ObjStrMaterialMngt As StrMaterialMngt 
-                |              Set ObjStrMaterialMngt = ObjSddProductStiffenerOnFreeEdge.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrMaterialMngt the StrMaterialMngt
+                             object
+                             of the SddProductStiffener
+                             
+                
+                             Dim ObjStrMaterialMngt As StrMaterialMngt 
+                             Set ObjStrMaterialMngt = ObjSddProductStiffenerOnFreeEdge.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -68,10 +68,10 @@ class SddProductStiffenerOnFreeEdge(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSddStiffenerOnFreeEdge() As StrSddStiffenerOnFreeEdge (Read
-                | Only)
-                |     Returns the Stiffener On Free Edge geometric function in this SDD product
-                |     Stiffener On Free Edge.
+                Property StrSddStiffenerOnFreeEdge() As StrSddStiffenerOnFreeEdge (Read
+                Only)
+                    Returns the Stiffener On Free Edge geometric function in this SDD product
+                    Stiffener On Free Edge.
 
         :return: StrSddStiffenerOnFreeEdge
         """
@@ -83,8 +83,8 @@ class SddProductStiffenerOnFreeEdge(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates the plate 
+                Sub Update()
+                    Updates the plate 
 
         :return: None
         """

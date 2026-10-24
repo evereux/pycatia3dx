@@ -18,19 +18,19 @@ class OLPErrorReporter(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     OlpErrorReporter
-                | 
-                | Interface for reporting translation warnings and errors.
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | This object can be retrieved using
-                | OlpTranslatorHelper.ErrorReporter
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    OlpErrorReporter
+                
+                Interface for reporting translation warnings and errors.
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                This object can be retrieved using
+                OlpTranslatorHelper.ErrorReporter
     
     """
 
@@ -43,16 +43,16 @@ class OLPErrorReporter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddConditionalError(CATBSTR iMsg)
-                |     Add an error message only if no error already exists.
-                |     Otherwise this message is added as a trace with level all traces. This is
-                |     intended for adding an "unexpected" error message when you don't know if some
-                |     other code already logged the error.
-                | 
-                |     Parameters:
-                | 
-                |         iMsg
-                |             The CATUnicodeString which is the message to add.
+                Sub AddConditionalError(CATBSTR iMsg)
+                    Add an error message only if no error already exists.
+                    Otherwise this message is added as a trace with level all traces. This is
+                    intended for adding an "unexpected" error message when you don't know if some
+                    other code already logged the error.
+                
+                    Parameters:
+                
+                        iMsg
+                            The CATUnicodeString which is the message to add.
 
         :param str i_msg:
         :return: None
@@ -65,24 +65,24 @@ class OLPErrorReporter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
-                | iAssociatedV6Object,OlpAstNode iAssociatedAstNode)
-                |     Add a new message that will be displayed to the user.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of message. 
-                |         iMsg
-                |             The message to add. 
-                |         iAssociatedV6Object
-                |             An optional V6 object which is associated with the error. Used to
-                |             help the user know where the error occured so they can correct it.
-                |             
-                |         iAssociatedAstNode
-                |             An optional AST node which is associated with the error. Used to
-                |             display the file and line number of the error in the input or output NRL
-                |             program.
+                Sub AddMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
+                iAssociatedV6Object,OlpAstNode iAssociatedAstNode)
+                    Add a new message that will be displayed to the user.
+                
+                    Parameters:
+                
+                        iType
+                            The type of message. 
+                        iMsg
+                            The message to add. 
+                        iAssociatedV6Object
+                            An optional V6 object which is associated with the error. Used to
+                            help the user know where the error occured so they can correct it.
+                            
+                        iAssociatedAstNode
+                            An optional AST node which is associated with the error. Used to
+                            display the file and line number of the error in the input or output NRL
+                            program.
 
         :param int i_type:
         :param str i_msg:
@@ -98,24 +98,24 @@ class OLPErrorReporter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddTrace(DELOlpTraceLevel iLevel,CATBSTR iMsg,CATBaseDispatch
-                | iAssociatedObject)
-                |     Add a new debug trace message. This message will be written to the console
-                |     if traces are enabled.
-                | 
-                |     Parameters:
-                | 
-                |         iLevel
-                |             The importance of this trace. The trace will only get logged if the
-                |             current tracing mode is set to accept traces of this importance or higher.
-                |             Tracing mode is set by the environment variable DNB_OLP_TRACES which can be set
-                |             to All, User, or None. 
-                |         iMsg
-                |             The message to add. 
-                |         iAssociatedObject
-                |             An optional object which is associated with the error. The name of
-                |             the object will be appended to the trace message in the form: "Message Text -
-                |             ObjectName" for example "Translating - MotionProfile.1"
+                Sub AddTrace(DELOlpTraceLevel iLevel,CATBSTR iMsg,CATBaseDispatch
+                iAssociatedObject)
+                    Add a new debug trace message. This message will be written to the console
+                    if traces are enabled.
+                
+                    Parameters:
+                
+                        iLevel
+                            The importance of this trace. The trace will only get logged if the
+                            current tracing mode is set to accept traces of this importance or higher.
+                            Tracing mode is set by the environment variable DNB_OLP_TRACES which can be set
+                            to All, User, or None. 
+                        iMsg
+                            The message to add. 
+                        iAssociatedObject
+                            An optional object which is associated with the error. The name of
+                            the object will be appended to the trace message in the form: "Message Text -
+                            ObjectName" for example "Translating - MotionProfile.1"
 
         :param int i_level:
         :param str i_msg:
@@ -130,33 +130,33 @@ class OLPErrorReporter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AddUniqueMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
-                | iAssociatedV6Object,OlpAstNode iAssociatedAstNode,CATBSTR iID)
-                |     Add a unique message that will be displayed to the user.
-                |     All messages with the given ID will be displayed as a single message to the
-                |     user.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of message. 
-                |         iMsg
-                |             The message to add. 
-                |         iAssociatedV6Object
-                |             An optional V6 object which is associated with the error. Used to
-                |             help the user know where the error occured so they can correct it.
-                |             
-                |         iAssociatedAstNode
-                |             An optional AST node which is associated with the error. Used to
-                |             display the file and line number of the error in the input or output NRL
-                |             program. 
-                |         iID
-                |             The ID of the message to add. All messages with this ID will be
-                |             displayed to the user as a single message. The recommended format for the
-                |             message id is [Translator].[Class].[Message].[SubMessage] [Translator] - for
-                |             example "DELMIAFanuc" etc. [Class] - the C++ or VB class name that generates
-                |             the message [Message] - the message key [SubMessage] - an optional sub message
-                |             key
+                Sub AddUniqueMessage(DELOlpMessageType iType,CATBSTR iMsg,CATBaseDispatch
+                iAssociatedV6Object,OlpAstNode iAssociatedAstNode,CATBSTR iID)
+                    Add a unique message that will be displayed to the user.
+                    All messages with the given ID will be displayed as a single message to the
+                    user.
+                
+                    Parameters:
+                
+                        iType
+                            The type of message. 
+                        iMsg
+                            The message to add. 
+                        iAssociatedV6Object
+                            An optional V6 object which is associated with the error. Used to
+                            help the user know where the error occured so they can correct it.
+                            
+                        iAssociatedAstNode
+                            An optional AST node which is associated with the error. Used to
+                            display the file and line number of the error in the input or output NRL
+                            program. 
+                        iID
+                            The ID of the message to add. All messages with this ID will be
+                            displayed to the user as a single message. The recommended format for the
+                            message id is [Translator].[Class].[Message].[SubMessage] [Translator] - for
+                            example "DELMIAFanuc" etc. [Class] - the C++ or VB class name that generates
+                            the message [Message] - the message key [SubMessage] - an optional sub message
+                            key
 
         :param int i_type:
         :param str i_msg:
@@ -173,23 +173,23 @@ class OLPErrorReporter(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub OverrideMessageSeverity(DELOlpMessageType iSeverity,CATBSTR
-                | iID)
-                |     Override the message severity for a particular message ID. This can be any
-                |     infrastructure message or a message create by the translator. The message must
-                |     be added with an ID to be able to override it. The severity specified here will
-                |     be used in place of whatever message type is used. This must be called before
-                |     the message is added the 1st time.
-                | 
-                |     Parameters:
-                | 
-                |         iSeverity
-                |             The type of message. 
-                |         iID
-                |             The ID of the message to override. See AddUniqueMessage for more
-                |             details on the ID. You can set the environment variable
-                |             DELMIA_OLP_DISPLAY_ERROR_MESSAGE_ID=1 to display the message IDs in the
-                |             message. 
+                Sub OverrideMessageSeverity(DELOlpMessageType iSeverity,CATBSTR
+                iID)
+                    Override the message severity for a particular message ID. This can be any
+                    infrastructure message or a message create by the translator. The message must
+                    be added with an ID to be able to override it. The severity specified here will
+                    be used in place of whatever message type is used. This must be called before
+                    the message is added the 1st time.
+                
+                    Parameters:
+                
+                        iSeverity
+                            The type of message. 
+                        iID
+                            The ID of the message to override. See AddUniqueMessage for more
+                            details on the ID. You can set the environment variable
+                            DELMIA_OLP_DISPLAY_ERROR_MESSAGE_ID=1 to display the message IDs in the
+                            message. 
 
         :param int i_severity:
         :param str i_id:

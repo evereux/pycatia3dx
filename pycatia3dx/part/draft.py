@@ -19,18 +19,18 @@ class Draft(DressUpShape):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.Shape
-                |                         CATPartIDLItf.DressUpShape
-                |                             Draft
-                | 
-                | Represents the draft shape.
-                | A draft shape is made up of draft domains (at least one) and of a parting
-                | element.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.Shape
+                                        CATPartIDLItf.DressUpShape
+                                            Draft
+                
+                Represents the draft shape.
+                A draft shape is made up of draft domains (at least one) and of a parting
+                element.
     
     """
 
@@ -44,14 +44,14 @@ class Draft(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property DraftDomains() As DraftDomains (Read Only)
-                |     Returns the collection of draft domains.
-                | 
-                |     Example:
-                |         The following example returns in list the collection of draft domains
-                |         of the firstDraft draft:
-                | 
-                |          Set list = firstDraft.DraftDomains
+                Property DraftDomains() As DraftDomains (Read Only)
+                    Returns the collection of draft domains.
+                
+                    Example:
+                        The following example returns in list the collection of draft domains
+                        of the firstDraft draft:
+                
+                         Set list = firstDraft.DraftDomains
 
         :return: DraftDomains
         """
@@ -64,16 +64,16 @@ class Draft(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Mode() As CatDraftMode
-                |     Returns or sets the draft mode.
-                | 
-                |     Example:
-                |         The following example returns in mode the draft mode of the firstDraft
-                |         draft, and then sets it to
-                |         CatReflectKeepFaceDraftMode:
-                | 
-                |          Set mode = firstDraft.Mode
-                |          Set firstDraft.Mode = CatReflectKeepFaceDraftMode
+                Property Mode() As CatDraftMode
+                    Returns or sets the draft mode.
+                
+                    Example:
+                        The following example returns in mode the draft mode of the firstDraft
+                        draft, and then sets it to
+                        CatReflectKeepFaceDraftMode:
+                
+                         Set mode = firstDraft.Mode
+                         Set firstDraft.Mode = CatReflectKeepFaceDraftMode
 
         :return: CatDraftMode
         """
@@ -94,18 +94,18 @@ class Draft(DressUpShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PartingElement() As Reference
-                |     Returns or sets the draft parting element.
-                |     To set the property, you can use the following Boundary object:
-                |     PlanarFace.
-                | 
-                |     Example:
-                |         The following example returns in element the parting element of the
-                |         firstDraft draft, and then sets it to the element2 geometrical
-                |         element:
-                | 
-                |          Set element = firstDraft.PartingElement
-                |          Set firstDraft.PartingElement = element2
+                Property PartingElement() As Reference
+                    Returns or sets the draft parting element.
+                    To set the property, you can use the following Boundary object:
+                    PlanarFace.
+                
+                    Example:
+                        The following example returns in element the parting element of the
+                        firstDraft draft, and then sets it to the element2 geometrical
+                        element:
+                
+                         Set element = firstDraft.PartingElement
+                         Set firstDraft.PartingElement = element2
 
         :return: Reference
         """

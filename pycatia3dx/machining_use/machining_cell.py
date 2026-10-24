@@ -17,16 +17,16 @@ class MachiningCell(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     MachiningCell
-                | 
-                | Interface to manage the machining cell.
-                | Role: This interface offers services to manage the machining
-                | cell.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    MachiningCell
+                
+                Interface to manage the machining cell.
+                Role: This interface offers services to manage the machining
+                cell.
     
     """
 
@@ -39,8 +39,8 @@ class MachiningCell(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrent()
-                |     Set the machining cell current.
+                Sub SetCurrent()
+                    Set the machining cell current.
 
         :return: None
         """
@@ -51,8 +51,8 @@ class MachiningCell(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetCurrentMachine(AnyObject iMachine)
-                |     Set the given machine as current.
+                Sub SetCurrentMachine(AnyObject iMachine)
+                    Set the given machine as current.
 
         :param AnyObject i_machine:
         :return: None

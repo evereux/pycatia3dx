@@ -17,12 +17,12 @@ class Layout2DServices(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Layout2DServices
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    Layout2DServices
 
     
     """
@@ -36,32 +36,32 @@ class Layout2DServices(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub ImportFromDrawing(CATSafeArrayVariant iObjects,CatImportFromDrawingOption
-                | iOption,CATSafeArrayVariant oResults)
-                |     Import in a 2DLayout a drawing view array. Drawing views with generative
-                |     behavior and detail views are not managed. Views are copied in active 2DLayout
-                |     sheet. Last copied view is set as active view.
+                Sub ImportFromDrawing(CATSafeArrayVariant iObjects,CatImportFromDrawingOption
+                iOption,CATSafeArrayVariant oResults)
+                    Import in a 2DLayout a drawing view array. Drawing views with generative
+                    behavior and detail views are not managed. Views are copied in active 2DLayout
+                    sheet. Last copied view is set as active view.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         iObjects
-                |             [in] The array of views to copy
-                |         iOption
-                |             [in] This parameter is not used. All view content is copied and
-                |             isolated.
-                |         oResults
-                |             [inout] The array of views copied in 2DLayout
+                        iObjects
+                            [in] The array of views to copy
+                        iOption
+                            [in] This parameter is not used. All view content is copied and
+                            isolated.
+                        oResults
+                            [inout] The array of views copied in 2DLayout
                 |
-                |     Example:
-                |         The following example retrieves this service from
-                |         2DLayout
+                    Example:
+                        The following example retrieves this service from
+                        2DLayout
                 |
-                |          Dim myPart As CATIAPart
-                |          Set myPart = CATIA.ActiveEditor.ActiveObject
-                |          Dim MyRoot As Layout2DRoot
-                |          Set MyRoot = myPart.GetItem("CATLayoutRoot")
-                |          Dim layoutServices As Layout2DServices
-                |          Set layoutServices = MyRoot.GetItem("CATLayout2DServices")
+                         Dim myPart As CATIAPart
+                         Set myPart = CATIA.ActiveEditor.ActiveObject
+                         Dim MyRoot As Layout2DRoot
+                         Set MyRoot = myPart.GetItem("CATLayoutRoot")
+                         Dim layoutServices As Layout2DServices
+                         Set layoutServices = MyRoot.GetItem("CATLayout2DServices")
 
         :param tuple i_objects:
         :param CatImportFromDrawingOption i_option:

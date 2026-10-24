@@ -18,14 +18,14 @@ class StrStandardPosStrategyParameters(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     StrStandardPosStrategyParameters
-                | 
-                | Object for Standard positioning strategy Parameters.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    StrStandardPosStrategyParameters
+                
+                Object for Standard positioning strategy Parameters.
     
     """
 
@@ -39,23 +39,23 @@ class StrStandardPosStrategyParameters(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As CATBaseDispatch
-                |     Returns a standard positioning parameter
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the standard positioning parameter
+                Func Item(CATVariant iIndex) As CATBaseDispatch
+                    Returns a standard positioning parameter
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the name of the standard positioning parameter
                 |
-                |     Example:
-                | 
-                |              This example retrieves the first StandardPosStrategyParameter from
-                |              the list.
+                    Example:
+                
+                             This example retrieves the first StandardPosStrategyParameter from
+                             the list.
                 |
-                |               Dim ObjStrStandardPosStrategyParameters As
-                |               StrStandardPosStrategyParameters
-                |               Set ObjStrStandardPosStrategyParameters = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(StdPosStrategyName)
-                |               Set ObjStdPosParm = ObjStrStandardPosStrategyParameters.Item(1)
+                              Dim ObjStrStandardPosStrategyParameters As
+                              StrStandardPosStrategyParameters
+                              Set ObjStrStandardPosStrategyParameters = ObjStrOpeningsMgr.GetStandardPositioningStrategyParms(StdPosStrategyName)
+                              Set ObjStdPosParm = ObjStrStandardPosStrategyParameters.Item(1)
 
         :param CATVariant i_index:
         :return: AnyObject

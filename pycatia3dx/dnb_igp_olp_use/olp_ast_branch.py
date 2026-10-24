@@ -21,19 +21,19 @@ class OLPAstBranch(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     OlpAstBranch
-                | 
-                | Represents a branch node of the Abstract Syntax Tree (AST).
-                | 
-                | This interface can only be used by a translator within the Robotics Off-line
-                | Programming (OLP) Download or Upload command.
-                | An OLP AST is a parsed version of a robot program in the native language of the
-                | robot. A branch is a collection of nodes.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    OlpAstBranch
+                
+                Represents a branch node of the Abstract Syntax Tree (AST).
+                
+                This interface can only be used by a translator within the Robotics Off-line
+                Programming (OLP) Download or Upload command.
+                An OLP AST is a parsed version of a robot program in the native language of the
+                robot. A branch is a collection of nodes.
     
     """
 
@@ -47,11 +47,11 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Children() As CATSafeArrayVariant (Read Only)
-                |     Returns all children as an array.
-                |     Each item in the list is an OlpAstNode. You can also iterate directly on
-                |     this branch collection using the syntax. For Each node as OlpAstNode In branch
-                |     ... Next
+                Property Children() As CATSafeArrayVariant (Read Only)
+                    Returns all children as an array.
+                    Each item in the list is an OlpAstNode. You can also iterate directly on
+                    this branch collection using the syntax. For Each node as OlpAstNode In branch
+                    ... Next
 
         :return: tuple
         """
@@ -64,8 +64,8 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditableType() As DELOlpEditableType
-                |     Editor type to create for a node that can be edited in NRL teach.
+                Property EditableType() As DELOlpEditableType
+                    Editor type to create for a node that can be edited in NRL teach.
 
         :return: DELOlpEditableType
         """
@@ -86,10 +86,10 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditableTypeString() As CATBSTR
-                |     Editor type to create for a node that can be edited in NRL teach. Valid
-                |     string values are "None", "String", "Int", "Double", "Combo" and
-                |     "EditableCombo".
+                Property EditableTypeString() As CATBSTR
+                    Editor type to create for a node that can be edited in NRL teach. Valid
+                    string values are "None", "String", "Int", "Double", "Combo" and
+                    "EditableCombo".
 
         :return: str
         """
@@ -110,11 +110,11 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property EditorId() As CATBSTR
-                |     Editor ID for a node that can be edited in NRL teach. Set to a value that
-                |     identifies the type of attribute being edited. When the user modifies the
-                |     value, the translator can query the editor ID to know how to process the
-                |     modification.
+                Property EditorId() As CATBSTR
+                    Editor ID for a node that can be edited in NRL teach. Set to a value that
+                    identifies the type of attribute being edited. When the user modifies the
+                    value, the translator can query the editor ID to know how to process the
+                    modification.
 
         :return: str
         """
@@ -135,12 +135,12 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property HiddenInstructions() As CATSafeArrayVariant
-                |     The list of instructions that should be hidden in the teach table. These
-                |     instructions will be hidden in teach when custom columns are enabled. This is a
-                |     subset of OlpAstNode.Instructions. If it has not been set, the associated
-                |     hidden instructions are retrieved from the parent. Each value in the array is a
-                |     OlpInstruction.
+                Property HiddenInstructions() As CATSafeArrayVariant
+                    The list of instructions that should be hidden in the teach table. These
+                    instructions will be hidden in teach when custom columns are enabled. This is a
+                    subset of OlpAstNode.Instructions. If it has not been set, the associated
+                    hidden instructions are retrieved from the parent. Each value in the array is a
+                    OlpInstruction.
 
         :return: tuple
         """
@@ -161,11 +161,11 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Id() As CATBSTR
-                |     Identifies the function of the node or otherwise helps the translator find
-                |     a node among its siblings.
-                |     For example an id could be used to identify a part of a motion statement
-                |     (speed) or to identify the variable name in a list of declarations.
+                Property Id() As CATBSTR
+                    Identifies the function of the node or otherwise helps the translator find
+                    a node among its siblings.
+                    For example an id could be used to identify a part of a motion statement
+                    (speed) or to identify the variable name in a list of declarations.
 
         :return: str
         """
@@ -186,10 +186,10 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Instructions() As CATSafeArrayVariant
-                |     The DELMIA instructions associated with this AST node. If it has not been
-                |     set, the associated instructions are retrieved from the parent. Each value in
-                |     the array is a OlpInstruction.
+                Property Instructions() As CATSafeArrayVariant
+                    The DELMIA instructions associated with this AST node. If it has not been
+                    set, the associated instructions are retrieved from the parent. Each value in
+                    the array is a OlpInstruction.
 
         :return: tuple
         """
@@ -210,9 +210,9 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Type() As DELOlpAstNodeType
-                |     Classifies the language element stored in this node.
-                |     For example: keyword, variable, comment, statement, or header.
+                Property Type() As DELOlpAstNodeType
+                    Classifies the language element stored in this node.
+                    For example: keyword, variable, comment, statement, or header.
 
         :return: DELOlpAstNodeType
         """
@@ -233,9 +233,9 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Value() As CATBSTR (Read Only)
-                |     The unparsed text contained by this node and all its children, without line
-                |     endings. The value can only be set for leaf nodes.
+                Property Value() As CATBSTR (Read Only)
+                    The unparsed text contained by this node and all its children, without line
+                    endings. The value can only be set for leaf nodes.
 
         :return: str
         """
@@ -248,9 +248,9 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ValueWithEOL() As CATBSTR (Read Only)
-                |     The unparsed text contained by this node and all its children, with line
-                |     endings. The value can only be set for leaf nodes.
+                Property ValueWithEOL() As CATBSTR (Read Only)
+                    The unparsed text contained by this node and all its children, with line
+                    endings. The value can only be set for leaf nodes.
 
         :return: str
         """
@@ -262,15 +262,15 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Append(OlpAstNode iChild)
-                |     Append a child node to this collection.
-                |     NULL values are ignored. They are not appended but the function still
-                |     succeeds.
-                | 
-                |     Parameters:
-                | 
-                |         iChild
-                |             The child to append.
+                Sub Append(OlpAstNode iChild)
+                    Append a child node to this collection.
+                    NULL values are ignored. They are not appended but the function still
+                    succeeds.
+                
+                    Parameters:
+                
+                        iChild
+                            The child to append.
 
         :param OLPAstNode i_child:
         :return: None
@@ -282,8 +282,8 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AppendEOL()
-                |     Create and append a leaf node whose value is a new line.
+                Sub AppendEOL()
+                    Create and append a leaf node whose value is a new line.
 
         :return: None
         """
@@ -294,18 +294,18 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AppendLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR
-                | iValue)
-                |     Create and append a leaf node to this collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The new node's type. 
-                |         iID
-                |             The new node's ID. 
-                |         iValue
-                |             The new node's value.
+                Sub AppendLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR
+                iValue)
+                    Create and append a leaf node to this collection.
+                
+                    Parameters:
+                
+                        iType
+                            The new node's type. 
+                        iID
+                            The new node's ID. 
+                        iValue
+                            The new node's value.
 
         :param int i_type:
         :param str i_id:
@@ -319,8 +319,8 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub AppendSpace()
-                |     Create and append a leaf node whose value is a single space.
+                Sub AppendSpace()
+                    Create and append a leaf node whose value is a single space.
 
         :return: None
         """
@@ -331,13 +331,13 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Clone() As OlpAstNode
-                |     Create a deep copy of the node.
-                |     A node cannot have 2 parents, so you must clone it before adding it to
-                |     another branch.
-                | 
-                |     Returns:
-                |         The new copy.
+                Func Clone() As OlpAstNode
+                    Create a deep copy of the node.
+                    A node cannot have 2 parents, so you must clone it before adding it to
+                    another branch.
+                
+                    Returns:
+                        The new copy.
 
         :return: OLPAstNode
         """
@@ -348,21 +348,21 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateBranch(DELOlpAstNodeType iType,CATBSTR iID) As
-                | OlpAstBranch
-                |     Creates a new branch node. The new node is not added to the children of
-                |     this branch.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The new node's type. 
-                |         iID
-                |             The new node's ID. 
-                |         oNode
-                | 
-                |     Returns:
-                |         The created node.
+                Func CreateBranch(DELOlpAstNodeType iType,CATBSTR iID) As
+                OlpAstBranch
+                    Creates a new branch node. The new node is not added to the children of
+                    this branch.
+                
+                    Parameters:
+                
+                        iType
+                            The new node's type. 
+                        iID
+                            The new node's ID. 
+                        oNode
+                
+                    Returns:
+                        The created node.
 
         :param int i_type:
         :param str i_id:
@@ -375,23 +375,23 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func CreateLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR iValue) As
-                | OlpAstLeaf
-                |     Creates a new leaf node. The new node is not added to the children of this
-                |     branch.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The new node's type. 
-                |         iID
-                |             The new node's ID. 
-                |         iValue
-                |             The new node's value. 
-                |         oNode
-                | 
-                |     Returns:
-                |         The created node.
+                Func CreateLeaf(DELOlpAstNodeType iType,CATBSTR iID,CATBSTR iValue) As
+                OlpAstLeaf
+                    Creates a new leaf node. The new node is not added to the children of this
+                    branch.
+                
+                    Parameters:
+                
+                        iType
+                            The new node's type. 
+                        iID
+                            The new node's ID. 
+                        iValue
+                            The new node's value. 
+                        oNode
+                
+                    Returns:
+                        The created node.
 
         :param int i_type:
         :param str i_id:
@@ -405,20 +405,20 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ExistsChildByID(CATBSTR iID,OlpAstNode oChild) As boolean
-                |     Tests for existence of a child node with given id and if found returns it.
-                |     It is assumed that the ID is unique among all children of this
-                |     node.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The ID of the child to find. 
-                |         oChild
-                |             The child, if found. 
-                | 
-                |     Returns:
-                |         0 if not found, -1 if found
+                Func ExistsChildByID(CATBSTR iID,OlpAstNode oChild) As boolean
+                    Tests for existence of a child node with given id and if found returns it.
+                    It is assumed that the ID is unique among all children of this
+                    node.
+                
+                    Parameters:
+                
+                        iID
+                            The ID of the child to find. 
+                        oChild
+                            The child, if found. 
+                
+                    Returns:
+                        0 if not found, -1 if found
 
         :param str i_id:
         :param OLPAstNode o_child:
@@ -431,21 +431,21 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ExistsChildByType(DELOlpAstNodeType iType,OlpAstNode oChild) As
-                | boolean
-                |     Tests for existence of a child node with given type and if found returns
-                |     it. It is assumed that the ID is unique among all children of this
-                |     node.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the child to find. 
-                |         oChild
-                |             The child, if found. 
-                | 
-                |     Returns:
-                |         0 if not found, -1 if found
+                Func ExistsChildByType(DELOlpAstNodeType iType,OlpAstNode oChild) As
+                boolean
+                    Tests for existence of a child node with given type and if found returns
+                    it. It is assumed that the ID is unique among all children of this
+                    node.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the child to find. 
+                        oChild
+                            The child, if found. 
+                
+                    Returns:
+                        0 if not found, -1 if found
 
         :param int i_type:
         :param OLPAstNode o_child:
@@ -458,20 +458,20 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ExistsChildrenByID(CATBSTR iID,CATSafeArrayVariant oChildren) As
-                | boolean
-                |     Tests for existence of children with given id and if found returns a list
-                |     of nodes.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The ID of the children to find. 
-                |         oChildren
-                |             The children, if found. 
-                | 
-                |     Returns:
-                |         0 if not found, -1 if found
+                Func ExistsChildrenByID(CATBSTR iID,CATSafeArrayVariant oChildren) As
+                boolean
+                    Tests for existence of children with given id and if found returns a list
+                    of nodes.
+                
+                    Parameters:
+                
+                        iID
+                            The ID of the children to find. 
+                        oChildren
+                            The children, if found. 
+                
+                    Returns:
+                        0 if not found, -1 if found
 
         :param str i_id:
         :param tuple o_children:
@@ -484,17 +484,17 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ExistsChildrenByType(DELOlpAstNodeType iType,CATSafeArrayVariant
-                | oChildren) As boolean
-                |     Tests for existence of children with given type and if found returns a list
-                |     of nodes.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the children to find. 
-                |         oChildren
-                |             The children, if found.
+                Func ExistsChildrenByType(DELOlpAstNodeType iType,CATSafeArrayVariant
+                oChildren) As boolean
+                    Tests for existence of children with given type and if found returns a list
+                    of nodes.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the children to find. 
+                        oChildren
+                            The children, if found.
 
         :param int i_type:
         :param tuple o_children:
@@ -507,15 +507,15 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
-                |     Exports the node in XML form at the desired filepath.
-                | 
-                |     Parameters:
-                | 
-                |         iFilePath
-                |             The path to the export file 
-                |         iPrettyPrint
-                |             Pretty print the outputted XML
+                Sub ExportToFile(CATBSTR iFilePath,boolean iPrettyPrint)
+                    Exports the node in XML form at the desired filepath.
+                
+                    Parameters:
+                
+                        iFilePath
+                            The path to the export file 
+                        iPrettyPrint
+                            Pretty print the outputted XML
 
         :param str i_file_path:
         :param bool i_pretty_print:
@@ -528,19 +528,19 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindChildByID(CATBSTR iID) As OlpAstNode
-                |     Finds a child node which has the id and returns it. If a child with that ID
-                |     does not exist, an error is generated. It is assumed that the ID is unique
-                |     among all children of this node. The ID search is case
-                |     insensitive.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The ID of the child to find. 
-                | 
-                |     Returns:
-                |         The found child.
+                Func FindChildByID(CATBSTR iID) As OlpAstNode
+                    Finds a child node which has the id and returns it. If a child with that ID
+                    does not exist, an error is generated. It is assumed that the ID is unique
+                    among all children of this node. The ID search is case
+                    insensitive.
+                
+                    Parameters:
+                
+                        iID
+                            The ID of the child to find. 
+                
+                    Returns:
+                        The found child.
 
         :param str i_id:
         :return: OLPAstNode
@@ -552,18 +552,18 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindChildByType(DELOlpAstNodeType iType) As OlpAstNode
-                |     Finds a child node which has the specified type and returns it. If a child
-                |     with that type does not exist, an error is generated. It is assumed that only 1
-                |     node has the given type.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the child to find. 
-                | 
-                |     Returns:
-                |         The found child.
+                Func FindChildByType(DELOlpAstNodeType iType) As OlpAstNode
+                    Finds a child node which has the specified type and returns it. If a child
+                    with that type does not exist, an error is generated. It is assumed that only 1
+                    node has the given type.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the child to find. 
+                
+                    Returns:
+                        The found child.
 
         :param int i_type:
         :return: OLPAstNode
@@ -575,18 +575,18 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindChildrenByID(CATBSTR iID) As CATSafeArrayVariant
-                |     Finds each child node which has the id and returns a list of nodes. If a
-                |     child with that ID does not exist, an error is generated. The ID search is case
-                |     insensitive.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The ID of the children to find. 
-                | 
-                |     Returns:
-                |         The found children.
+                Func FindChildrenByID(CATBSTR iID) As CATSafeArrayVariant
+                    Finds each child node which has the id and returns a list of nodes. If a
+                    child with that ID does not exist, an error is generated. The ID search is case
+                    insensitive.
+                
+                    Parameters:
+                
+                        iID
+                            The ID of the children to find. 
+                
+                    Returns:
+                        The found children.
 
         :param str i_id:
         :return: tuple
@@ -598,19 +598,19 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindChildrenByType(DELOlpAstNodeType iType) As
-                | CATSafeArrayVariant
-                |     Finds each child node which has the type and returns a list of nodes. If a
-                |     child with that type does not exist, an error is
-                |     generated.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of the children to find. 
-                | 
-                |     Returns:
-                |         The found children.
+                Func FindChildrenByType(DELOlpAstNodeType iType) As
+                CATSafeArrayVariant
+                    Finds each child node which has the type and returns a list of nodes. If a
+                    child with that type does not exist, an error is
+                    generated.
+                
+                    Parameters:
+                
+                        iType
+                            The type of the children to find. 
+                
+                    Returns:
+                        The found children.
 
         :param int i_type:
         :return: tuple
@@ -622,22 +622,22 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindGrandChildDoubleValue(CATBSTR iID) As double
-                |     Finds a child node which has the specified ID and then finds a child of
-                |     that node which is of type CONST_DOUBLE and returns the value of that node as a
-                |     double.
-                |     If the child or grandchild node is not found, or if the value is cannot be
-                |     converted to an double, an error is generated. It is assumed that only 1 node
-                |     has the given ID or type. The ID search is case
-                |     insensitive.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The id of the child to find. 
-                | 
-                |     Returns:
-                |         The value of the grandchild node.
+                Func FindGrandChildDoubleValue(CATBSTR iID) As double
+                    Finds a child node which has the specified ID and then finds a child of
+                    that node which is of type CONST_DOUBLE and returns the value of that node as a
+                    double.
+                    If the child or grandchild node is not found, or if the value is cannot be
+                    converted to an double, an error is generated. It is assumed that only 1 node
+                    has the given ID or type. The ID search is case
+                    insensitive.
+                
+                    Parameters:
+                
+                        iID
+                            The id of the child to find. 
+                
+                    Returns:
+                        The value of the grandchild node.
 
         :param str i_id:
         :return: float
@@ -649,22 +649,22 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func FindGrandChildIntValue(CATBSTR iID) As long
-                |     Finds a child node which has the specified ID and then finds a child of
-                |     that node which is of type CONST_INTEGER and returns the value of that node as
-                |     an integer.
-                |     If the child or grandchild node is not found, or if the value is cannot be
-                |     converted to an integer, an error is generated. It is assumed that only 1 node
-                |     has the given ID or type. The ID search is case
-                |     insensitive.
-                | 
-                |     Parameters:
-                | 
-                |         iID
-                |             The id of the child to find. 
-                | 
-                |     Returns:
-                |         The value of the grandchild node.
+                Func FindGrandChildIntValue(CATBSTR iID) As long
+                    Finds a child node which has the specified ID and then finds a child of
+                    that node which is of type CONST_INTEGER and returns the value of that node as
+                    an integer.
+                    If the child or grandchild node is not found, or if the value is cannot be
+                    converted to an integer, an error is generated. It is assumed that only 1 node
+                    has the given ID or type. The ID search is case
+                    insensitive.
+                
+                    Parameters:
+                
+                        iID
+                            The id of the child to find. 
+                
+                    Returns:
+                        The value of the grandchild node.
 
         :param str i_id:
         :return: int
@@ -676,23 +676,23 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Insert(OlpAstNode iRelativeChild,boolean iBefore,OlpAstNode
-                | iChild)
-                |     Insert a child node to this collection.
-                |     NULL values are ignored. They are not inserted but the function still
-                |     succeeds.
-                | 
-                |     Parameters:
-                | 
-                |         iRelativeChild
-                |             The child to insert before or after. If NULL then the child is
-                |             inserted at beginning (if iBefore is TRUE), or at the end (if iBefore is
-                |             FALSE). 
-                |         iBefore
-                |             If true iChild is inserted before iRelativeChild, otherwise after.
-                |             
-                |         iChild
-                |             The child to insert.
+                Sub Insert(OlpAstNode iRelativeChild,boolean iBefore,OlpAstNode
+                iChild)
+                    Insert a child node to this collection.
+                    NULL values are ignored. They are not inserted but the function still
+                    succeeds.
+                
+                    Parameters:
+                
+                        iRelativeChild
+                            The child to insert before or after. If NULL then the child is
+                            inserted at beginning (if iBefore is TRUE), or at the end (if iBefore is
+                            FALSE). 
+                        iBefore
+                            If true iChild is inserted before iRelativeChild, otherwise after.
+                            
+                        iChild
+                            The child to insert.
 
         :param OLPAstNode i_relative_child:
         :param bool i_before:
@@ -706,21 +706,21 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As OlpAstNode
-                |     Retrieves a child node using its index or its ID.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the ID of the node to retrieve from the collection of
-                |             nodes. As a number, this index is the index of the parameter in the collection.
-                |             The index of the first parameter in the collection is 1, and the index of the
-                |             last parameter is Count. As a string, it is the ID you assigned to the node
-                |             using the OlpAstNode.Id property or when the node was created.
-                |             
-                | 
-                |     Returns:
-                |         The node retrieved.
+                Func Item(CATVariant iIndex) As OlpAstNode
+                    Retrieves a child node using its index or its ID.
+                
+                    Parameters:
+                
+                        iIndex
+                            The index or the ID of the node to retrieve from the collection of
+                            nodes. As a number, this index is the index of the parameter in the collection.
+                            The index of the first parameter in the collection is 1, and the index of the
+                            last parameter is Count. As a string, it is the ID you assigned to the node
+                            using the OlpAstNode.Id property or when the node was created.
+                            
+                
+                    Returns:
+                        The node retrieved.
 
         :param CATVariant i_index:
         :return: OLPAstNode
@@ -732,15 +732,15 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(OlpAstNode iChild)
-                |     Remove a child node from the branch.
-                |     NULL values are ignored. They are not removed but the function still
-                |     succeeds.
-                | 
-                |     Parameters:
-                | 
-                |         iChild
-                |             The child to remove.
+                Sub Remove(OlpAstNode iChild)
+                    Remove a child node from the branch.
+                    NULL values are ignored. They are not removed but the function still
+                    succeeds.
+                
+                    Parameters:
+                
+                        iChild
+                            The child to remove.
 
         :param OLPAstNode i_child:
         :return: None
@@ -752,8 +752,8 @@ class OLPAstBranch(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub RemoveAll()
-                |     Remove all child nodes from the branch.
+                Sub RemoveAll()
+                    Remove all child nodes from the branch.
 
         :return: None
         """

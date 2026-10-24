@@ -20,20 +20,20 @@ class HybridShape3DCurveOffset(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShape3DCurveOffset
-                | 
-                | Represents the hybrid shape 3DCurve Offset operation feature.
-                | Role: Allows you to access data of the 3D Curve Offset feature created by using
-                | a curve, a direction and three literal parameters
-                | 
-                | Use the HybridShapeFactory.AddNew3DCurveOffset to create a
-                | HybridShape3DCurveOffset object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShape3DCurveOffset
+                
+                Represents the hybrid shape 3DCurve Offset operation feature.
+                Role: Allows you to access data of the 3D Curve Offset feature created by using
+                a curve, a direction and three literal parameters
+                
+                Use the HybridShapeFactory.AddNew3DCurveOffset to create a
+                HybridShape3DCurveOffset object.
     
     """
 
@@ -47,8 +47,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CornerRadiusValue() As Length
-                |     Returns or sets the Corner Radius Value.
+                Property CornerRadiusValue() As Length
+                    Returns or sets the Corner Radius Value.
 
         :return: Length
         """
@@ -69,8 +69,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CornerTensionValue() As double
-                |     Returns or sets the Corner Tension Value.
+                Property CornerTensionValue() As double
+                    Returns or sets the Corner Tension Value.
 
         :return: float
         """
@@ -91,8 +91,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property CurveToOffset() As Reference
-                |     Returns or sets the curve to offset.
+                Property CurveToOffset() As Reference
+                    Returns or sets the curve to offset.
 
         :return: Reference
         """
@@ -113,8 +113,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Direction() As HybridShapeDirection
-                |     Returns or sets the direction.
+                Property Direction() As HybridShapeDirection
+                    Returns or sets the direction.
 
         :return: HybridShapeDirection
         """
@@ -135,8 +135,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property InvertDirection() As boolean
-                |     Returns or sets the direction orientation.
+                Property InvertDirection() As boolean
+                    Returns or sets the direction orientation.
 
         :return: bool
         """
@@ -157,8 +157,8 @@ class HybridShape3DCurveOffset(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property OffsetValue() As Length
-                |     Returns or sets the OffsetValue.
+                Property OffsetValue() As Length
+                    Returns or sets the OffsetValue.
 
         :return: Length
         """

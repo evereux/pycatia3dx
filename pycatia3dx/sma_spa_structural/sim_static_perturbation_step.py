@@ -17,53 +17,53 @@ class SimStaticPerturbationStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimStaticPerturbationStep
-                | 
-                | Represents the Static Perturbation Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimStaticPerturbationStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticPerturbationStep As SimStaticPerturbationStep
-                |      Set MyStaticPerturbationStep = MySteps.Add("SimStaticPerturbationStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimStaticPerturbationStep named
-                |     "Static Perturbation Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyStaticPerturbationStep As SimStaticPerturbationStep
-                |      Set MyStaticPerturbationStep = MySteps.Item("Static Perturbation Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimStaticPerturbationStep
-                |     as following:
-                | 
-                |      ...
-                |      myStaticPerturbationStep = mySteps.Add("SimStaticPerturbationStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a
-                |     SimStaticPerturbationStep named "Static Perturbation Step.1" as
-                |     following:
-                | 
-                |      ...
-                |      myStaticPerturbationStep = mySteps.Item("Static Perturbation Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimStaticPerturbationStep
+                
+                Represents the Static Perturbation Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimStaticPerturbationStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticPerturbationStep As SimStaticPerturbationStep
+                     Set MyStaticPerturbationStep = MySteps.Add("SimStaticPerturbationStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimStaticPerturbationStep named
+                    "Static Perturbation Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyStaticPerturbationStep As SimStaticPerturbationStep
+                     Set MyStaticPerturbationStep = MySteps.Item("Static Perturbation Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimStaticPerturbationStep
+                    as following:
+                
+                     ...
+                     myStaticPerturbationStep = mySteps.Add("SimStaticPerturbationStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a
+                    SimStaticPerturbationStep named "Static Perturbation Step.1" as
+                    following:
+                
+                     ...
+                     myStaticPerturbationStep = mySteps.Item("Static Perturbation Step.1")
+                     
+                
+                See also:
+                    SimSteps
     
     """
 
@@ -77,8 +77,8 @@ class SimStaticPerturbationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -99,8 +99,8 @@ class SimStaticPerturbationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LinearLoadCases() As SimLinearLoadCases (Read Only)
-                |     Returns the list of all linear load cases.
+                Property LinearLoadCases() As SimLinearLoadCases (Read Only)
+                    Returns the list of all linear load cases.
 
         :return: SimLinearLoadCases
         """
@@ -113,8 +113,8 @@ class SimStaticPerturbationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property MatrixStorageScheme() As SimMatrixStorageScheme
-                |     Returns or sets the matrix storage scheme.
+                Property MatrixStorageScheme() As SimMatrixStorageScheme
+                    Returns or sets the matrix storage scheme.
 
         :return: SimMatrixStorageScheme
         """
@@ -135,9 +135,9 @@ class SimStaticPerturbationStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolutionTechnique() As
-                | SimStaticPerturbationStepSolutionTechnique
-                |     Returns or sets the solution technique. 
+                Property SolutionTechnique() As
+                SimStaticPerturbationStepSolutionTechnique
+                    Returns or sets the solution technique. 
 
         :return: SimStaticPerturbationStepSolutionTechnique
         """

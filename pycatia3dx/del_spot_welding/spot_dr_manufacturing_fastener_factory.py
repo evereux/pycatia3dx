@@ -17,12 +17,12 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SpotDrManufacturingFastenerFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SpotDrManufacturingFastenerFactory
 
     
     """
@@ -40,47 +40,47 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub CreateDRManufacturingFastener(AnyObject ohMfgFastener,CATSafeArrayVariant
-                | iOrigin,CATSafeArrayVariant iAxis,CATBSTR iReference,double iDiameter,double
-                | iLength,double iMinStack,double iMaxStack,CATSafeArrayVariant
-                | iListOfUserName,CATSafeArrayVariant iListOfUserValue,CATSafeArrayVariant
-                | iListOfUserType,AnyObject ihGeometry,AnyObject ihProduct)
-                |     Creates a manufacturing fastener.
-                | 
-                |     Parameters:
-                | 
-                |         ohMfgFastener
-                |             The newly created manufacturing fastener. 
-                |         iOrigin
-                |             Coordinates of local origin(Array of 3 double). 
-                |         iAxis
-                |             Coordinates of local Z direction(Array of 3 double).
-                |             
-                |         iReference
-                |             Reference name of fastener. 
-                |         iDiameter
-                |             Diameter of fastener (mm). 
-                |         iLength
-                |             Length of fastener (mm). 
-                |         iMinStack
-                |             Min stack depth of fastener (mm). 
-                |         iMaxStack
-                |             Max stack depth of fastener (mm). 
-                |         iListOfUserName
-                |             List of user parameter names. It is Array of CATBSTR pointers
-                |             
-                |         iListOfUserValue
-                |             List of user parameter values. It is Array of CATBSTR pointers
-                |             
-                |         iListOfUserType
-                |             List of user parameter types (0: CATBSTR, 1: integer, 2: length in
-                |             mm). 
-                |         ihGeometry
-                |             Geometry pointed by the fastener. It can be a design point or a PLM
-                |             fastener object. 
-                |         ihProduct
-                |             Product containing the geometry. May be NULL_var in case of PLM
-                |             fastener object.
+                Sub CreateDRManufacturingFastener(AnyObject ohMfgFastener,CATSafeArrayVariant
+                iOrigin,CATSafeArrayVariant iAxis,CATBSTR iReference,double iDiameter,double
+                iLength,double iMinStack,double iMaxStack,CATSafeArrayVariant
+                iListOfUserName,CATSafeArrayVariant iListOfUserValue,CATSafeArrayVariant
+                iListOfUserType,AnyObject ihGeometry,AnyObject ihProduct)
+                    Creates a manufacturing fastener.
+                
+                    Parameters:
+                
+                        ohMfgFastener
+                            The newly created manufacturing fastener. 
+                        iOrigin
+                            Coordinates of local origin(Array of 3 double). 
+                        iAxis
+                            Coordinates of local Z direction(Array of 3 double).
+                            
+                        iReference
+                            Reference name of fastener. 
+                        iDiameter
+                            Diameter of fastener (mm). 
+                        iLength
+                            Length of fastener (mm). 
+                        iMinStack
+                            Min stack depth of fastener (mm). 
+                        iMaxStack
+                            Max stack depth of fastener (mm). 
+                        iListOfUserName
+                            List of user parameter names. It is Array of CATBSTR pointers
+                            
+                        iListOfUserValue
+                            List of user parameter values. It is Array of CATBSTR pointers
+                            
+                        iListOfUserType
+                            List of user parameter types (0: CATBSTR, 1: integer, 2: length in
+                            mm). 
+                        ihGeometry
+                            Geometry pointed by the fastener. It can be a design point or a PLM
+                            fastener object. 
+                        ihProduct
+                            Product containing the geometry. May be NULL_var in case of PLM
+                            fastener object.
 
         :param AnyObject oh_mfg_fastener:
         :param tuple i_origin:
@@ -108,13 +108,13 @@ class SpotDrManufacturingFastenerFactory(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub DeleteDRManufacturingFastener(AnyObject ihMfgFastener)
-                |     Deletes a DR Manufacturing fastener.
-                | 
-                |     Parameters:
-                | 
-                |         ihMfgFastener
-                |             fastener to be deleted. 
+                Sub DeleteDRManufacturingFastener(AnyObject ihMfgFastener)
+                    Deletes a DR Manufacturing fastener.
+                
+                    Parameters:
+                
+                        ihMfgFastener
+                            fastener to be deleted. 
 
         :param AnyObject ih_mfg_fastener:
         :return: None

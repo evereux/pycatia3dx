@@ -18,16 +18,16 @@ class StrService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         StrService
-                | 
-                | Object services related to import and retrieval of real structure objects from
-                | its reference.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        StrService
+                
+                Object services related to import and retrieval of real structure objects from
+                its reference.
     
     """
 
@@ -40,29 +40,29 @@ class StrService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func ConvertReferenceToObject(Reference iReference) As
-                | AnyObject
-                |     Returns the actual structure object from its corresponding
-                |     reference.
-                | 
-                |     Parameters:
-                | 
-                |         iReference
-                |             The reference of structure object. 
-                |         oBase
-                |             The real structure object. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the plate object on which flange is
-                |              present.
-                |              
-                | 
-                |              Dim RefSfdPlate As Reference
-                |              Set RefSfdPlate = ObjStrFlange.OperatedPlate
-                |              Dim ObjBase As AnyObject
-                |              Set ObjBase = ObjStrService.ConvertReferenceToObject(RefSfdPlate)
+                Func ConvertReferenceToObject(Reference iReference) As
+                AnyObject
+                    Returns the actual structure object from its corresponding
+                    reference.
+                
+                    Parameters:
+                
+                        iReference
+                            The reference of structure object. 
+                        oBase
+                            The real structure object. 
+                
+                    Example:
+                
+                
+                             This example retrieves the plate object on which flange is
+                             present.
+                             
+                
+                             Dim RefSfdPlate As Reference
+                             Set RefSfdPlate = ObjStrFlange.OperatedPlate
+                             Dim ObjBase As AnyObject
+                             Set ObjBase = ObjStrService.ConvertReferenceToObject(RefSfdPlate)
 
         :param Reference i_reference:
         :return: AnyObject
@@ -75,29 +75,29 @@ class StrService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Import(CATBSTR iUsage,CATBaseDispatch iSourceProdOcc,CATBaseDispatch
-                | iSourceFeature,CATBaseDispatch iTargetProdOcc,CATBaseDispatch
-                | iTargetFeature,long iLinkMode) As CATBaseDispatch
-                |     Returns the result of Import of feature (source) into another document
-                |     (target). The possibilities are:
-                | 
-                |     Parameters:
-                | 
-                |         iUsage
-                |             Usage. 
-                |         iSourceProdOcc
-                |             The product occurrence of the source feature. Optional.
-                |             
-                |         iSourceFeat
-                |             Source feature to import. 
-                |         iTargetProdOcc
-                |             The product occurrence of the target parent object. Optional.
-                |             
-                |         iTargetFeature
-                |             The parent object (part, body or set) under which to aggregate the
-                |             import feature. 
-                |         iLinkMode
-                |             0: use settings, 1: no link, 2: with link. 
+                Func Import(CATBSTR iUsage,CATBaseDispatch iSourceProdOcc,CATBaseDispatch
+                iSourceFeature,CATBaseDispatch iTargetProdOcc,CATBaseDispatch
+                iTargetFeature,long iLinkMode) As CATBaseDispatch
+                    Returns the result of Import of feature (source) into another document
+                    (target). The possibilities are:
+                
+                    Parameters:
+                
+                        iUsage
+                            Usage. 
+                        iSourceProdOcc
+                            The product occurrence of the source feature. Optional.
+                            
+                        iSourceFeat
+                            Source feature to import. 
+                        iTargetProdOcc
+                            The product occurrence of the target parent object. Optional.
+                            
+                        iTargetFeature
+                            The parent object (part, body or set) under which to aggregate the
+                            import feature. 
+                        iLinkMode
+                            0: use settings, 1: no link, 2: with link. 
 
         :param str i_usage:
         :param AnyObject i_source_prod_occ:

@@ -16,39 +16,39 @@ class SimResultantSensor(SimSensorBase):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaResultsIDLItf.SimSensorBase
-                |                         SimResultantSensor
-                | 
-                | Represents the resultant sensor.
-                | Role:After creating the resultant sensor, one needs to set the support using
-                | SimSensorBase.Support or SimSensorBase.SimSupport.
-                | Then set the frame selection to the sensor using the
-                | SimSensorBase.FrameSelector()
-                | and update the sensor using and the SimSensorBase.Update()
-                | method.
-                | Example:
-                | 
-                |  Given a SimResultsAnalysisCase object, you can create a resultant Sensor
-                |  object as following.
-                |  
-                | 
-                |  Dim oResultantSensor As SimResultantSensor
-                |  Set oResultantSensor = ResultsAnalysisCase.CreateResultantSensor
-                |  The current step can be retrieved from the current analysis
-                |  case
-                |  oCurrentStep.GetIdentifier oStepID, oStepName,
-                |  oStepDescription
-                |  oResultantSensor.SetStepAndFrame( oStepID, 1, 2 )
-                |  oResultantSensor.Update
-                |  
-                | 
-                | See also:
-                |     #SimResultsAnalysisCase and .SimResultsStep
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaResultsIDLItf.SimSensorBase
+                                        SimResultantSensor
+                
+                Represents the resultant sensor.
+                Role:After creating the resultant sensor, one needs to set the support using
+                SimSensorBase.Support or SimSensorBase.SimSupport.
+                Then set the frame selection to the sensor using the
+                SimSensorBase.FrameSelector()
+                and update the sensor using and the SimSensorBase.Update()
+                method.
+                Example:
+                
+                 Given a SimResultsAnalysisCase object, you can create a resultant Sensor
+                 object as following.
+                 
+                
+                 Dim oResultantSensor As SimResultantSensor
+                 Set oResultantSensor = ResultsAnalysisCase.CreateResultantSensor
+                 The current step can be retrieved from the current analysis
+                 case
+                 oCurrentStep.GetIdentifier oStepID, oStepName,
+                 oStepDescription
+                 oResultantSensor.SetStepAndFrame( oStepID, 1, 2 )
+                 oResultantSensor.Update
+                 
+                
+                See also:
+                    #SimResultsAnalysisCase and .SimResultsStep
     
     """
 
@@ -61,19 +61,19 @@ class SimResultantSensor(SimSensorBase):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
-                | inLoadCaseIndex)
-                |     Sets the step, frame and load case information needed to create the
-                |     sensor.
-                | 
-                |     Parameters:
-                | 
-                |         icsPersistentStepID
-                |             The persistent ID of the step. 
-                |         inFrameIndex
-                |             The frame index. The index starts from 1. 
-                |         inLoadCaseIndex
-                |             The load case index. The index starts from 1. 
+                Sub SetStepAndFrame(CATBSTR icsPersistentStepID,long inFrameIndex,long
+                inLoadCaseIndex)
+                    Sets the step, frame and load case information needed to create the
+                    sensor.
+                
+                    Parameters:
+                
+                        icsPersistentStepID
+                            The persistent ID of the step. 
+                        inFrameIndex
+                            The frame index. The index starts from 1. 
+                        inLoadCaseIndex
+                            The load case index. The index starts from 1. 
 
         :param str ics_persistent_step_id:
         :param int in_frame_index:

@@ -17,16 +17,16 @@ class Curve2D(Geometry2D):
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATSketcherIDLItf.GeometricElement
-                |                         CATSketcherIDLItf.Geometry2D
-                |                             Curve2D
-                | 
-                | Class defining a curve in 2D Space.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATSketcherIDLItf.GeometricElement
+                                        CATSketcherIDLItf.Geometry2D
+                                            Curve2D
+                
+                Class defining a curve in 2D Space.
     
     """
 
@@ -40,14 +40,14 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Continuity() As short (Read Only)
-                |     Returns the highest level of geometric continuity the curve
-                |     possesses.
-                | 
-                |     Parameters:
-                | 
-                |         oLevel
-                |             The maximum geometric continuity level
+                Property Continuity() As short (Read Only)
+                    Returns the highest level of geometric continuity the curve
+                    possesses.
+                
+                    Parameters:
+                
+                        oLevel
+                            The maximum geometric continuity level
 
         :return: int
         """
@@ -60,21 +60,21 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property EndPoint() As Point2D
-                |     Returns or Sets the end point of the curve. The end point is decided with
-                |     respect to the logical flow imposed on the curve by the
-                |     object.
-                | 
-                |     Example:
-                | 
-                |           The following example sets the end point of the
-                |           curve.
-                |           
-                | 
-                |           Dim myPoint2D As Point2D
-                |           Set myPoint2D = ...
-                |           Dim myCurve2D As Curve2D
-                |           myCurve2D.EndPoint = myPoint2D
+                Property EndPoint() As Point2D
+                    Returns or Sets the end point of the curve. The end point is decided with
+                    respect to the logical flow imposed on the curve by the
+                    object.
+                
+                    Example:
+                
+                          The following example sets the end point of the
+                          curve.
+                          
+                
+                          Dim myPoint2D As Point2D
+                          Set myPoint2D = ...
+                          Dim myCurve2D As Curve2D
+                          myCurve2D.EndPoint = myPoint2D
 
         :return: Point2D
         """
@@ -95,13 +95,13 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property Period() As double (Read Only)
-                |     Returns the period of a periodic curve.
-                | 
-                |     Parameters:
-                | 
-                |         oPeriod
-                |             The period of the curve.
+                Property Period() As double (Read Only)
+                    Returns the period of a periodic curve.
+                
+                    Parameters:
+                
+                        oPeriod
+                            The period of the curve.
 
         :return: float
         """
@@ -114,21 +114,21 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Property StartPoint() As Point2D
-                |     Returns or sets the start point of the curve. The start point is decided
-                |     with respect to the logical flow imposed on the curve by the
-                |     object.
-                | 
-                |     Example:
-                | 
-                |           The following example sets the start point of the
-                |           curve.
-                |           
-                | 
-                |           Dim myPoint2D As Point2D
-                |           Set myPoint2D = ...
-                |           Dim myCurve2D As Curve2D
-                |           myCurve2D.StartPoint = myPoint2D
+                Property StartPoint() As Point2D
+                    Returns or sets the start point of the curve. The start point is decided
+                    with respect to the logical flow imposed on the curve by the
+                    object.
+                
+                    Example:
+                
+                          The following example sets the start point of the
+                          curve.
+                          
+                
+                          Dim myPoint2D As Point2D
+                          Set myPoint2D = ...
+                          Dim myCurve2D As Curve2D
+                          myCurve2D.StartPoint = myPoint2D
 
         :return: Point2D
         """
@@ -148,20 +148,20 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetCurvature(double iParam,CATSafeArrayVariant oCurvature)
-                |     Returns the curvature and curvature direction at the parameter
-                |     specified.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The parameter of the chosen point on the curve. 
-                |         oCurvature
-                | 
-                |               oCurvature[0]: The curvature at the specified
-                |               parameter.
-                |               oCurvature[1;2]: The unit-vector of curvature direction at the
-                |               specified parameter.
+                Sub GetCurvature(double iParam,CATSafeArrayVariant oCurvature)
+                    Returns the curvature and curvature direction at the parameter
+                    specified.
+                
+                    Parameters:
+                
+                        iParam
+                            The parameter of the chosen point on the curve. 
+                        oCurvature
+                
+                              oCurvature[0]: The curvature at the specified
+                              parameter.
+                              oCurvature[1;2]: The unit-vector of curvature direction at the
+                              specified parameter.
 
         :param float i_param:
         :param tuple o_curvature:
@@ -174,20 +174,20 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetDerivatives(double iParam,CATSafeArrayVariant
-                | oDerivative)
-                |     Returns the first, second and third derivatives at the parameter
-                |     specified.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The parameter of the chosen point on the curve. 
-                |         oDerivative[0]
-                | 
-                |               oDerivative[0]: First degree derivative.
-                |               oDerivative[1]: Second degree derivative.
-                |               oDerivative[2]: Third degree derivative.
+                Sub GetDerivatives(double iParam,CATSafeArrayVariant
+                oDerivative)
+                    Returns the first, second and third derivatives at the parameter
+                    specified.
+                
+                    Parameters:
+                
+                        iParam
+                            The parameter of the chosen point on the curve. 
+                        oDerivative[0]
+                
+                              oDerivative[0]: First degree derivative.
+                              oDerivative[1]: Second degree derivative.
+                              oDerivative[2]: Third degree derivative.
 
         :param float i_param:
         :param tuple o_derivative:
@@ -200,21 +200,21 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
-                |     Returns the end-points of the curve. The start point and the end point are
-                |     decided with respect to the logical flow imposed on the curve by the
-                |     object.
+                Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
+                    Returns the end-points of the curve. The start point and the end point are
+                    decided with respect to the logical flow imposed on the curve by the
+                    object.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oEndPoints
+                        oEndPoints
                 |
-                |               oEndPoints[0]: The x coordinate of the start
-                |               point
-                |               oEndPoints[1]: The y coordinate of the start
-                |               point
-                |               oEndPoints[2]: The x coordinate of the end point
-                |               oEndPoints[3]: The y coordinate of the end point
+                              oEndPoints[0]: The x coordinate of the start
+                              point
+                              oEndPoints[1]: The y coordinate of the start
+                              point
+                              oEndPoints[2]: The x coordinate of the end point
+                              oEndPoints[3]: The y coordinate of the end point
 
         :return: tuple
         """
@@ -241,21 +241,21 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetLengthAtParam(double iFromParam,double iToParam) As
-                | double
-                |     Returns the length, measured along the curve, from a given parameter to a
-                |     given parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iFromParam
-                |             The parameter from which the length is to be measured.
-                |             
-                |         iToParam
-                |             The parameter to which the length is to be measured.
-                |             
-                |         oLength
-                |             The length between the parameters
+                Func GetLengthAtParam(double iFromParam,double iToParam) As
+                double
+                    Returns the length, measured along the curve, from a given parameter to a
+                    given parameter.
+                
+                    Parameters:
+                
+                        iFromParam
+                            The parameter from which the length is to be measured.
+                            
+                        iToParam
+                            The parameter to which the length is to be measured.
+                            
+                        oLength
+                            The length between the parameters
 
         :param float i_from_param:
         :param float i_to_param:
@@ -268,24 +268,24 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func GetParamAtLength(double iFromParam,double iLength) As
-                | double
-                |     Returns the parameter at a given length, measured along the curve, starting
-                |     from a given parameter. The direction of measurement is always in the direction
-                |     of the logical flow of the curve. If no inherent logical flow can be assigned
-                |     the direction is the direction of increasing
-                |     parameterization.
-                | 
-                |     Parameters:
-                | 
-                |         iFromParam
-                |             The parameter from which the length needs to be measured.
-                |             
-                |         iLength
-                |             The length of the curve to be measured from iFromParam in the
-                |             logical flow direction of the curve. 
-                |         oParam
-                |             The computed parameter.
+                Func GetParamAtLength(double iFromParam,double iLength) As
+                double
+                    Returns the parameter at a given length, measured along the curve, starting
+                    from a given parameter. The direction of measurement is always in the direction
+                    of the logical flow of the curve. If no inherent logical flow can be assigned
+                    the direction is the direction of increasing
+                    parameterization.
+                
+                    Parameters:
+                
+                        iFromParam
+                            The parameter from which the length needs to be measured.
+                            
+                        iLength
+                            The length of the curve to be measured from iFromParam in the
+                            logical flow direction of the curve. 
+                        oParam
+                            The computed parameter.
 
         :param float i_from_param:
         :param float i_length:
@@ -298,18 +298,18 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetParamExtents(CATSafeArrayVariant oParams)
-                |     Returns the parametric extents of the curve. This is the parametric
-                |     equivalent of the end-points.
+                Sub GetParamExtents(CATSafeArrayVariant oParams)
+                    Returns the parametric extents of the curve. This is the parametric
+                    equivalent of the end-points.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oParams
+                        oParams
                 |
-                |               oParams[0]: The parameter associated with the start point of the
-                |               curve
-                |               oParams[1]: The parameter associated with the end point of the
-                |               curve
+                              oParams[0]: The parameter associated with the start point of the
+                              curve
+                              oParams[1]: The parameter associated with the end point of the
+                              curve
 
         :return: tuple
         """
@@ -336,16 +336,16 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetPointAtParam(double iParam,CATSafeArrayVariant oPoint)
-                |     Returns a point on the curve computed from an input
-                |     parameter.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             parameter 
-                |         oPoint
-                |             The X and Y coordinates of the computed 2D space point.
+                Sub GetPointAtParam(double iParam,CATSafeArrayVariant oPoint)
+                    Returns a point on the curve computed from an input
+                    parameter.
+                
+                    Parameters:
+                
+                        iParam
+                            parameter 
+                        oPoint
+                            The X and Y coordinates of the computed 2D space point.
 
         :param float i_param:
         :param tuple o_point:
@@ -358,19 +358,19 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
-                |     Returns the range box (or bounding box) of the object
-                |     The box is axially aligned within the local coordinate system of the
-                |     server.
+                Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
+                    Returns the range box (or bounding box) of the object
+                    The box is axially aligned within the local coordinate system of the
+                    server.
                 |
-                |     Parameters:
+                    Parameters:
                 |
-                |         oBoundPoint
+                        oBoundPoint
                 |
-                |               oBoundPoint[0]: The minimum x point of the box
-                |               oBoundPoint[1]: The minimum y point of the box
-                |               oBoundPoint[2]: The maximum x point of the box
-                |               oBoundPoint[3]: The maximum y point of the box
+                              oBoundPoint[0]: The minimum x point of the box
+                              oBoundPoint[1]: The minimum y point of the box
+                              oBoundPoint[2]: The maximum x point of the box
+                              oBoundPoint[3]: The maximum y point of the box
 
         :return: tuple
         """
@@ -397,17 +397,17 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Sub GetTangent(double iParam,CATSafeArrayVariant oTangency)
-                |     Returns the unit-vector tangent at the parameter
-                |     specified.
-                | 
-                |     Parameters:
-                | 
-                |         iParam
-                |             The parameter of the chosen point on the curve. 
-                |         oTangency
-                |             The X and Y coordinates of the unit-vector tangent at the specified
-                |             parameter.
+                Sub GetTangent(double iParam,CATSafeArrayVariant oTangency)
+                    Returns the unit-vector tangent at the parameter
+                    specified.
+                
+                    Parameters:
+                
+                        iParam
+                            The parameter of the chosen point on the curve. 
+                        oTangency
+                            The X and Y coordinates of the unit-vector tangent at the specified
+                            parameter.
 
         :param float i_param:
         :param tuple o_tangency:
@@ -420,13 +420,13 @@ class Curve2D(Geometry2D):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 12:30:08.885021)
-                | Func IsPeriodic() As boolean
-                |     Specifies whether a curve is periodic or not.
-                | 
-                |     Parameters:
-                | 
-                |         oPeriodic
-                |             Returns true if the curve is periodic.
+                Func IsPeriodic() As boolean
+                    Specifies whether a curve is periodic or not.
+                
+                    Parameters:
+                
+                        oPeriodic
+                            Returns true if the curve is periodic.
 
         :return: bool
         """

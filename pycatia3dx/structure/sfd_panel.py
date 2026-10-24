@@ -30,19 +30,19 @@ class SfdPanel(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdPanel
-                | 
-                | Object to manage the Structure Functional Modeler SuperPlate
-                | object.
-                | Role: Allows accessing and setting of Panel's data.
-                | 
-                | See also:
-                |     SfdFactory
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdPanel
+                
+                Object to manage the Structure Functional Modeler SuperPlate
+                object.
+                Role: Allows accessing and setting of Panel's data.
+                
+                See also:
+                    SfdFactory
     
     """
 
@@ -56,11 +56,11 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property PanelType() As CATStrPanelMode
-                |     Returns the Panel's type.
-                |     values:
-                |     catStrPanelModeUndefined: Undefined
-                |     catStrPanelModeSurf: Panel defined by a surface
+                Property PanelType() As CATStrPanelMode
+                    Returns the Panel's type.
+                    values:
+                    catStrPanelModeUndefined: Undefined
+                    catStrPanelModeSurf: Panel defined by a surface
 
         :return: CATStrPanelMode
         """
@@ -81,20 +81,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrAdvPanel() As StrAdvPanel (Read Only)
-                |     Returns the StrAdvPanel object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrAdvPanel the StrAdvPanel
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrAdvPanel As StrAdvPanel
-                |              Set ObjStrAdvPanel = ObjSfdPanel.StrAdvPanel
+                Property StrAdvPanel() As StrAdvPanel (Read Only)
+                    Returns the StrAdvPanel object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrAdvPanel the StrAdvPanel
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrAdvPanel As StrAdvPanel
+                             Set ObjStrAdvPanel = ObjSfdPanel.StrAdvPanel
 
         :return: StrAdvPanel
         """
@@ -107,20 +107,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrBreak() As StrBreak (Read Only)
-                |     Returns the StrBreak object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrBreak the StrBreak
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrBreak As StrBreak
-                |              Set ObjStrBreak = ObjSfdPanel.StrBreak
+                Property StrBreak() As StrBreak (Read Only)
+                    Returns the StrBreak object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrBreak the StrBreak
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrBreak As StrBreak
+                             Set ObjStrBreak = ObjSfdPanel.StrBreak
 
         :return: StrBreak
         """
@@ -133,20 +133,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrCategoryMngt() As StrCategoryMngt (Read Only)
-                |     Returns the StrCategoryMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrCategoryMngt As StrCategoryMngt
-                |              Set ObjStrCategoryMngt = ObjSfdPanel.StrCategoryMngt
+                Property StrCategoryMngt() As StrCategoryMngt (Read Only)
+                    Returns the StrCategoryMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrCategoryMngt the StrCategoryMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrCategoryMngt As StrCategoryMngt
+                             Set ObjStrCategoryMngt = ObjSfdPanel.StrCategoryMngt
 
         :return: StrCategoryMngt
         """
@@ -159,20 +159,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrMaterialMngt() As StrMaterialMngt (Read Only)
-                |     Returns the StrMaterialMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjMaterialMngt the StrMaterialMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjMaterialMngt As StrMaterialMngt
-                |              Set ObjMaterialMngt = ObjSfdPanel.StrMaterialMngt
+                Property StrMaterialMngt() As StrMaterialMngt (Read Only)
+                    Returns the StrMaterialMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjMaterialMngt the StrMaterialMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjMaterialMngt As StrMaterialMngt
+                             Set ObjMaterialMngt = ObjSfdPanel.StrMaterialMngt
 
         :return: StrMaterialMngt
         """
@@ -185,20 +185,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
-                |     Returns the StrOpeningsMgr object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrOpeningsMgr As StrOpeningsMgr
-                |              Set ObjStrOpeningsMgr = ObjSfdPanel.StrOpeningsMgr
+                Property StrOpeningsMgr() As StrOpeningsMgr (Read Only)
+                    Returns the StrOpeningsMgr object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrOpeningsMgr the StrOpeningsMgr
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrOpeningsMgr As StrOpeningsMgr
+                             Set ObjStrOpeningsMgr = ObjSfdPanel.StrOpeningsMgr
 
         :return: StrOpeningsMgr
         """
@@ -211,20 +211,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
-                |     Returns the StrPanelLimitMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrPanelLimitMngt the
-                |              StrPanelLimitMngt object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrPanelLimitMngt As StrPanelLimitMngt
-                |              Set ObjStrPanelLimitMngt = ObjSfdPanel.StrPanelLimitMngt
+                Property StrPanelLimitMngt() As StrPanelLimitMngt (Read Only)
+                    Returns the StrPanelLimitMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrPanelLimitMngt the
+                             StrPanelLimitMngt object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrPanelLimitMngt As StrPanelLimitMngt
+                             Set ObjStrPanelLimitMngt = ObjSfdPanel.StrPanelLimitMngt
 
         :return: StrPanelLimitMngt
         """
@@ -237,22 +237,22 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPanelSurf() As StrPanelSurf (Read Only)
-                |     Returns the StrPanelSurf object.
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves in ObjSfdPanelSupport the StrPanelSurf
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjSfdPanel As SfdPanel
-                |              Set ObjSfdPanel = ObjSfdFactory.AddPanel(DestPart, False)
-                |              Dim ObjSfdPanelSupport As StrPanelSurf 
-                |              Set ObjSfdPanelSupport = ObjSfdPanel.StrPanelSurf
+                Property StrPanelSurf() As StrPanelSurf (Read Only)
+                    Returns the StrPanelSurf object.
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves in ObjSfdPanelSupport the StrPanelSurf
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjSfdPanel As SfdPanel
+                             Set ObjSfdPanel = ObjSfdFactory.AddPanel(DestPart, False)
+                             Dim ObjSfdPanelSupport As StrPanelSurf 
+                             Set ObjSfdPanelSupport = ObjSfdPanel.StrPanelSurf
 
         :return: StrPanelSurf
         """
@@ -265,22 +265,22 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
-                | Only)
-                |     Returns the StrPlateExtrusionMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjStrPlateExtrusionMngt the
-                |              StrPlateExtrusionMngt object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjStrPlateExtrusionMngt As
-                |              StrPlateExtrusionMngt
-                |              Set ObjStrPlateExtrusionMngt = ObjSfdPanel.StrPlateExtrusionMngt
+                Property StrPlateExtrusionMngt() As StrPlateExtrusionMngt (Read
+                Only)
+                    Returns the StrPlateExtrusionMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjStrPlateExtrusionMngt the
+                             StrPlateExtrusionMngt object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjStrPlateExtrusionMngt As
+                             StrPlateExtrusionMngt
+                             Set ObjStrPlateExtrusionMngt = ObjSfdPanel.StrPlateExtrusionMngt
 
         :return: StrPlateExtrusionMngt
         """
@@ -293,20 +293,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSfdPlatesMngt() As StrSfdPlatesMngt (Read Only)
-                |     Returns the SfdPlatesMngt object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjSfdPlatesMngt the SfdPlatesMngt
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjSfdPlatesMngt As SfdPlatesMngt
-                |              Set ObjSfdPlatesMngt = ObjSfdPanel.SfdPlatesMngt
+                Property StrSfdPlatesMngt() As StrSfdPlatesMngt (Read Only)
+                    Returns the SfdPlatesMngt object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjSfdPlatesMngt the SfdPlatesMngt
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjSfdPlatesMngt As SfdPlatesMngt
+                             Set ObjSfdPlatesMngt = ObjSfdPanel.SfdPlatesMngt
 
         :return: StrSfdPlatesMngt
         """
@@ -319,20 +319,20 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSfdStiffeners() As StrSfdStiffeners (Read Only)
-                |     Returns the SfdStiffeners object.
-                | 
-                |     Example:
-                | 
-                |          
-                |              
-                |              This example retrieves in ObjSfdStiffeners the SfdStiffeners
-                |              object
-                |              of the SfdPanel
-                |              
-                | 
-                |              Dim ObjSfdStiffeners As SfdStiffeners
-                |              Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
+                Property StrSfdStiffeners() As StrSfdStiffeners (Read Only)
+                    Returns the SfdStiffeners object.
+                
+                    Example:
+                
+                         
+                             
+                             This example retrieves in ObjSfdStiffeners the SfdStiffeners
+                             object
+                             of the SfdPanel
+                             
+                
+                             Dim ObjSfdStiffeners As SfdStiffeners
+                             Set ObjSfdStiffeners = ObjSfdPanel.SfdStiffeners
 
         :return: StrSfdStiffeners
         """
@@ -345,17 +345,17 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StrSlots() As StrSlots (Read Only)
-                |     Returns the Slots that are inside this object.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves the StrSlots object.
-                |              
-                | 
-                |               Dim ListOfSlots As StrSlots
-                |               Set ListOfSlots = ObjSfdPanel.StrSlots
+                Property StrSlots() As StrSlots (Read Only)
+                    Returns the Slots that are inside this object.
+                
+                    Example:
+                
+                
+                             This example retrieves the StrSlots object.
+                             
+                
+                              Dim ListOfSlots As StrSlots
+                              Set ListOfSlots = ObjSfdPanel.StrSlots
 
         :return: StrSlots
         """
@@ -367,17 +367,17 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetCanonicSupport() As Reference
-                |     Returns the Canonical MoldedSurface of this Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves CanonicSupport of the
-                |              SfdPanel.
-                |              
-                | 
-                |              Set RefCanonicSupport = ObjSfdPanel.GetCanonicSupport
+                Func GetCanonicSupport() As Reference
+                    Returns the Canonical MoldedSurface of this Panel.
+                
+                    Example:
+                
+                
+                             This example retrieves CanonicSupport of the
+                             SfdPanel.
+                             
+                
+                             Set RefCanonicSupport = ObjSfdPanel.GetCanonicSupport
 
         :return: Reference
         """
@@ -388,17 +388,17 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetDelimitedSupport() As Reference
-                |     Returns the delimited MoldedSurface of this Panel.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example retrieves DelimitedSupport of the
-                |              SfdPanel.
-                |              
-                | 
-                |              Set RefDelimitedSupport = ObjSfdPanel.GetDelimitedSupport
+                Func GetDelimitedSupport() As Reference
+                    Returns the delimited MoldedSurface of this Panel.
+                
+                    Example:
+                
+                
+                             This example retrieves DelimitedSupport of the
+                             SfdPanel.
+                             
+                
+                             Set RefDelimitedSupport = ObjSfdPanel.GetDelimitedSupport
 
         :return: Reference
         """
@@ -409,30 +409,30 @@ class SfdPanel(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetOpenings(long iType) As StrOpenings
-                |     Returns the list of Openings that are inside this object.
-                | 
-                |     Parameters:
-                | 
-                |         iType
-                |             The type of Opening you want to retrieve:
-                |             - 0: All
-                |             - 1: Openings piercing the Plates inside the
-                |             OpeningPlateSet
-                |             - 2: Openings piercing the Plates and interrupting the Profiles
-                |             inside the OpeningPlateProfileSet
-                |             - 3: Openings piercing the Profile inside the OpeningProfileSet
-                |             
-                | 
-                |     Example:
-                | 
-                |          
-                | 
-                |              This example retrieves all type of Openings
-                |              
-                | 
-                |              Dim ObjStrOpenings As StrOpenings
-                |              Set ObjStrOpenings = ObjSfdPanel.GetOpenings(0)
+                Func GetOpenings(long iType) As StrOpenings
+                    Returns the list of Openings that are inside this object.
+                
+                    Parameters:
+                
+                        iType
+                            The type of Opening you want to retrieve:
+                            - 0: All
+                            - 1: Openings piercing the Plates inside the
+                            OpeningPlateSet
+                            - 2: Openings piercing the Plates and interrupting the Profiles
+                            inside the OpeningPlateProfileSet
+                            - 3: Openings piercing the Profile inside the OpeningProfileSet
+                            
+                
+                    Example:
+                
+                         
+                
+                             This example retrieves all type of Openings
+                             
+                
+                             Dim ObjStrOpenings As StrOpenings
+                             Set ObjStrOpenings = ObjSfdPanel.GetOpenings(0)
 
         :param int i_type:
         :return: StrOpenings

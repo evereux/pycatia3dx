@@ -21,24 +21,24 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                    KnowHowIDLItf.ExpertRuleBaseComponentRuntime
-                |                         ExpertRuleRuntime
-                | 
-                | Represents the ExpertRuleRuntime object.
-                | 
-                |  Dim RSet as CATIAExpertRuleSetRuntime
-                |  Set RSet = ...
-                |  Dim CR as ExpertRuleRuntime
-                |  Set CR = RSet.ExpertRuleBaseComponentRuntimes.Item(1)
-                |  
-                | 
-                | See also:
-                |     ExpertRuleSetRuntime.ExpertRuleBaseComponentRuntimes
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                   KnowHowIDLItf.ExpertRuleBaseComponentRuntime
+                                        ExpertRuleRuntime
+                
+                Represents the ExpertRuleRuntime object.
+                
+                 Dim RSet as CATIAExpertRuleSetRuntime
+                 Set RSet = ...
+                 Dim CR as ExpertRuleRuntime
+                 Set CR = RSet.ExpertRuleBaseComponentRuntimes.Item(1)
+                 
+                
+                See also:
+                    ExpertRuleSetRuntime.ExpertRuleBaseComponentRuntimes
     
     """
 
@@ -52,10 +52,10 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Priority() As double
-                |     Returns or sets the priority of the rule. The priority of expert rules
-                |     indicates the order in which the rules are evaluated. Rules with the same
-                |     priority are evaluated in the order of their creation.
+                Property Priority() As double
+                    Returns or sets the priority of the rule. The priority of expert rules
+                    indicates the order in which the rules are evaluated. Rules with the same
+                    priority are evaluated in the order of their creation.
 
         :return: float
         """
@@ -76,17 +76,17 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RuleEdition() As ExpertRule (Read Only)
-                |     Returns the editable object corresponding to this rule. Be careful that,
-                |     according to your licence, or the type of rule you're handling, you may not
-                |     have the right to edit the rule.
-                | 
-                |      Dim aRuleEdition As ExpertRule
-                |      Set aRuleEdition = aRuleRuntime.RuleEdition
-                | 
-                |      If not(aRuleEdition is Nothing) Then
-                |        CATIA.SystemService.Print aRuleEdition.Body
-                |      End if
+                Property RuleEdition() As ExpertRule (Read Only)
+                    Returns the editable object corresponding to this rule. Be careful that,
+                    according to your licence, or the type of rule you're handling, you may not
+                    have the right to edit the rule.
+                
+                     Dim aRuleEdition As ExpertRule
+                     Set aRuleEdition = aRuleRuntime.RuleEdition
+                
+                     If not(aRuleEdition is Nothing) Then
+                       CATIA.SystemService.Print aRuleEdition.Body
+                     End if
 
         :return: ExpertRule
         """

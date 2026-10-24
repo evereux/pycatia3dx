@@ -21,17 +21,17 @@ class DrawingRoot(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     DrawingRoot
-                | 
-                | Represents the drawing object in drawing representation.
-                | 
-                | Warning: This interface is not available with 2D Layout for 3D
-                | Design.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    DrawingRoot
+                
+                Represents the drawing object in drawing representation.
+                
+                Warning: This interface is not available with 2D Layout for 3D
+                Design.
     
     """
 
@@ -45,21 +45,21 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ActiveSheet() As DrawingSheet
-                |     Retrieves or sets the active sheet of the drawing.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves the active sheet in the drawing of the active
-                |          representation, supposed to be a drawing
-                |          representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          MyDrawing.GetActiveSheet
+                Property ActiveSheet() As DrawingSheet
+                    Retrieves or sets the active sheet of the drawing.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example retrieves the active sheet in the drawing of the active
+                         representation, supposed to be a drawing
+                         representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         MyDrawing.GetActiveSheet
 
         :return: DrawingSheet
         """
@@ -80,25 +80,25 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Parameters() As Parameters (Read Only)
-                |     Returns the collection of parameters of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in DrawingParameters the collection
-                |          of
-                |          parameters currently managed by the active representation, supposed to
-                |          be a
-                |          drawing representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          Dim DrawingParameters As Parameters
-                |          Set DrawingParameters = MyDrawing.Parameters
+                Property Parameters() As Parameters (Read Only)
+                    Returns the collection of parameters of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example retrieves in DrawingParameters the collection
+                         of
+                         parameters currently managed by the active representation, supposed to
+                         be a
+                         drawing representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         Dim DrawingParameters As Parameters
+                         Set DrawingParameters = MyDrawing.Parameters
 
         :return: Parameters
         """
@@ -111,25 +111,25 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Relations() As Relations (Read Only)
-                |     Returns the collection of relations of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in DrawingRelations the collection
-                |          of
-                |          relations currently managed by the active representation, supposed to
-                |          be a
-                |          drawing representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          Dim DrawingRelations As Relations
-                |          Set DrawingRelations = MyDrawing.Relations
+                Property Relations() As Relations (Read Only)
+                    Returns the collection of relations of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example retrieves in DrawingRelations the collection
+                         of
+                         relations currently managed by the active representation, supposed to
+                         be a
+                         drawing representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         Dim DrawingRelations As Relations
+                         Set DrawingRelations = MyDrawing.Relations
 
         :return: Relations
         """
@@ -142,25 +142,25 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Sheets() As DrawingSheets (Read Only)
-                |     Returns the collection of drawing sheets of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example retrieves in SheetCollection the collection
-                |          of
-                |          sheets currently managed by the active representation, supposed to be
-                |          a
-                |          drawing representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          Dim SheetCollection As DrawingSheets
-                |          Set SheetCollection = MyDrawing.Sheets
+                Property Sheets() As DrawingSheets (Read Only)
+                    Returns the collection of drawing sheets of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example retrieves in SheetCollection the collection
+                         of
+                         sheets currently managed by the active representation, supposed to be
+                         a
+                         drawing representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         Dim SheetCollection As DrawingSheets
+                         Set SheetCollection = MyDrawing.Sheets
 
         :return: DrawingSheets
         """
@@ -173,22 +173,22 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Standard() As CATBSTR
-                |     Returns or sets the drawing standard name of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example sets the drawing standard of the active
-                |          representation,
-                |          supposed to be a drawing representation, to ISO.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          MyDrawing.Standard = "ISO"
+                Property Standard() As CATBSTR
+                    Returns or sets the drawing standard name of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example sets the drawing standard of the active
+                         representation,
+                         supposed to be a drawing representation, to ISO.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         MyDrawing.Standard = "ISO"
 
         :return: str
         """
@@ -208,22 +208,22 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Isolate()
-                |     Isolates all the drawing views of all the drawing sheets of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example isolates all the drawing views of all the drawing sheets
-                |          of the active representation, supposed to be a drawing
-                |          representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          MyDrawing.Isolate
+                Sub Isolate()
+                    Isolates all the drawing views of all the drawing sheets of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example isolates all the drawing views of all the drawing sheets
+                         of the active representation, supposed to be a drawing
+                         representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         MyDrawing.Isolate
 
         :return: None
         """
@@ -234,21 +234,21 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Load3DData()
-                |     Loads 3D data pointed by the drawing representation in the
-                |     session.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example loads the 3D data pointed by the MyDrawing drawing
-                |          representation in the session.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          MyDrawing.Load3DData
+                Sub Load3DData()
+                    Loads 3D data pointed by the drawing representation in the
+                    session.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example loads the 3D data pointed by the MyDrawing drawing
+                         representation in the session.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         MyDrawing.Load3DData
 
         :return: None
         """
@@ -259,21 +259,21 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Update()
-                |     Updates all the drawing sheets of the drawing
-                |     representation.
-                |     Warning: This method is not available with 2D Layout for 3D
-                |     Design.
-                | 
-                |     Example:
-                | 
-                |          This example updates the active representation, supposed to be a
-                |          drawing representation.
-                |          
-                | 
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          MyDrawing.Update
+                Sub Update()
+                    Updates all the drawing sheets of the drawing
+                    representation.
+                    Warning: This method is not available with 2D Layout for 3D
+                    Design.
+                
+                    Example:
+                
+                         This example updates the active representation, supposed to be a
+                         drawing representation.
+                         
+                
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         MyDrawing.Update
 
         :return: None
         """
@@ -284,28 +284,28 @@ class DrawingRoot(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2026-02-08 14:05:01.675948))
-                | Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
-                |     Changes the positions of the sheets in this drawing according to the given
-                |     ordered list. iOrderedSheets is the result of a permutation applied to the list
-                |     of all the sheets of this drawing, with the following constraint: For every
-                |     non-detail sheet, there is not any detail sheet appearing before in
-                |     iOrderedSheets.
+                Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
+                    Changes the positions of the sheets in this drawing according to the given
+                    ordered list. iOrderedSheets is the result of a permutation applied to the list
+                    of all the sheets of this drawing, with the following constraint: For every
+                    non-detail sheet, there is not any detail sheet appearing before in
+                    iOrderedSheets.
                 |
-                |     Example:
+                    Example:
                 |
-                |          This example inverts the sheet order of a drawing made of exactly two
+                         This example inverts the sheet order of a drawing made of exactly two
                 |
-                |          regular sheets.
+                         regular sheets.
                 |
                 |
-                |          Dim MyDrawing as DrawingDrawing
-                |          Set MyDrawing = CATIA.ActiveEditor.ActiveObject
-                |          Set drwsheets = MyDrawing.Sheets
-                |          Set drwsheetsorder =  MyDrawing.DrawingRoot
-                |          Set sheet1 = drwsheets.item(1)
-                |          Set sheet2 = drwsheets.item(2)
-                |          newsheetorder = Array(sheet2, sheet1)
-                |          drwsheetsorder.reorder_Sheets(newsheetorder)
+                         Dim MyDrawing as DrawingDrawing
+                         Set MyDrawing = CATIA.ActiveEditor.ActiveObject
+                         Set drwsheets = MyDrawing.Sheets
+                         Set drwsheetsorder =  MyDrawing.DrawingRoot
+                         Set sheet1 = drwsheets.item(1)
+                         Set sheet2 = drwsheets.item(2)
+                         newsheetorder = Array(sheet2, sheet1)
+                         drwsheetsorder.reorder_Sheets(newsheetorder)
 
         :param tuple i_ordered_sheets:
         :return: None

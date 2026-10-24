@@ -17,14 +17,14 @@ class SimJobDiagnosticSummary(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimJobDiagnosticSummary
-                | 
-                | Represents the Job Diagnostic Summary object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimJobDiagnosticSummary
+                
+                Represents the Job Diagnostic Summary object.
     
     """
 
@@ -38,8 +38,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfCutbacks() As long (Read Only)
-                |     Returns the number of cutbacks.
+                Property NumberOfCutbacks() As long (Read Only)
+                    Returns the number of cutbacks.
 
         :return: int
         """
@@ -52,8 +52,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfDOFs() As long (Read Only)
-                |     Returns the total number of DOFs.
+                Property NumberOfDOFs() As long (Read Only)
+                    Returns the total number of DOFs.
 
         :return: int
         """
@@ -66,8 +66,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfElements() As long (Read Only)
-                |     Returns the number of elements.
+                Property NumberOfElements() As long (Read Only)
+                    Returns the number of elements.
 
         :return: int
         """
@@ -80,8 +80,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfErrors() As long (Read Only)
-                |     Returns the number of errors.
+                Property NumberOfErrors() As long (Read Only)
+                    Returns the number of errors.
 
         :return: int
         """
@@ -94,8 +94,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfIncrements() As long (Read Only)
-                |     Returns the number of increments.
+                Property NumberOfIncrements() As long (Read Only)
+                    Returns the number of increments.
 
         :return: int
         """
@@ -108,8 +108,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfIterations() As long (Read Only)
-                |     Returns the number of iterations.
+                Property NumberOfIterations() As long (Read Only)
+                    Returns the number of iterations.
 
         :return: int
         """
@@ -122,8 +122,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfNodes() As long (Read Only)
-                |     Returns the number of nodes.
+                Property NumberOfNodes() As long (Read Only)
+                    Returns the number of nodes.
 
         :return: int
         """
@@ -136,8 +136,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfSimulationCheckWarnings() As long (Read Only)
-                |     Returns the number of warnings from simulation check.
+                Property NumberOfSimulationCheckWarnings() As long (Read Only)
+                    Returns the number of warnings from simulation check.
 
         :return: int
         """
@@ -150,8 +150,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfSteps() As long (Read Only)
-                |     Returns the number of steps.
+                Property NumberOfSteps() As long (Read Only)
+                    Returns the number of steps.
 
         :return: int
         """
@@ -164,8 +164,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NumberOfWarnings() As long (Read Only)
-                |     Returns the number of warnings.
+                Property NumberOfWarnings() As long (Read Only)
+                    Returns the number of warnings.
 
         :return: int
         """
@@ -178,8 +178,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SystemTime() As double (Read Only)
-                |     Returns the system time.
+                Property SystemTime() As double (Read Only)
+                    Returns the system time.
 
         :return: float
         """
@@ -192,8 +192,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property UserTime() As double (Read Only)
-                |     Returns the user time.
+                Property UserTime() As double (Read Only)
+                    Returns the user time.
 
         :return: float
         """
@@ -206,8 +206,8 @@ class SimJobDiagnosticSummary(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property WallclockTime() As double (Read Only)
-                |     Returns the wallclock time. 
+                Property WallclockTime() As double (Read Only)
+                    Returns the wallclock time. 
 
         :return: float
         """

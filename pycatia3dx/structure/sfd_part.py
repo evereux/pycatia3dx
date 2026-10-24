@@ -19,15 +19,15 @@ class SfdPart(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SfdPart
-                | 
-                | Object to manage attributes on the Part.
-                | Role: To manage attributes on the Part.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SfdPart
+                
+                Object to manage attributes on the Part.
+                Role: To manage attributes on the Part.
     
     """
 
@@ -40,18 +40,18 @@ class SfdPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetConnectionsSet() As SfdConnectionSet
-                |     Returns the ConnectionSet under the part.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example returns the ConnectionSet under the
-                |              part.
-                |              
-                | 
-                |               Dim ObjSfdConnectionsSet As SfdConnectionSet
-                |               Set ObjSfdConnectionsSet = ObjSfdPart.GetConnectionsSet
+                Func GetConnectionsSet() As SfdConnectionSet
+                    Returns the ConnectionSet under the part.
+                
+                    Example:
+                
+                
+                             This example returns the ConnectionSet under the
+                             part.
+                             
+                
+                              Dim ObjSfdConnectionsSet As SfdConnectionSet
+                              Set ObjSfdConnectionsSet = ObjSfdPart.GetConnectionsSet
 
         :return: SfdConnectionSet
         """
@@ -62,18 +62,18 @@ class SfdPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func GetProjectData() As StrSfdProjectData
-                |     Returns the ProjectData tool.
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example returns the project data of this SFD
-                |              part.
-                |              
-                | 
-                |               Dim ProjectData As SfdProjectData
-                |               Set ProjectData = ObjSfdPart.GetProjectData
+                Func GetProjectData() As StrSfdProjectData
+                    Returns the ProjectData tool.
+                
+                    Example:
+                
+                
+                             This example returns the project data of this SFD
+                             part.
+                             
+                
+                              Dim ProjectData As SfdProjectData
+                              Set ProjectData = ObjSfdPart.GetProjectData
 
         :return: StrSfdProjectData
         """
@@ -84,29 +84,29 @@ class SfdPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub IsSFDSystem(long oDiagnostic,CATBSTR
-                | oIncorrectDisciplineName)
-                |     Verifies that the reference has the correct V_Discipline
-                |     value.
-                | 
-                |     Parameters:
-                | 
-                |         oDiagnostic
-                |             Project data tool. 
-                |         oIncorrectDisciplineName
-                |             Returns the V_Discipline if there is already one. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example checks whether this system is SFD or
-                |              not.
-                |              
-                | 
-                |               Dim Diagnosis As Long
-                |               Dim oIncorrectDiscName As String
-                |               ObjSfdPart.IsSFDSystem Diagnosis,
-                |               oIncorrectDiscName
+                Sub IsSFDSystem(long oDiagnostic,CATBSTR
+                oIncorrectDisciplineName)
+                    Verifies that the reference has the correct V_Discipline
+                    value.
+                
+                    Parameters:
+                
+                        oDiagnostic
+                            Project data tool. 
+                        oIncorrectDisciplineName
+                            Returns the V_Discipline if there is already one. 
+                
+                    Example:
+                
+                
+                             This example checks whether this system is SFD or
+                             not.
+                             
+                
+                              Dim Diagnosis As Long
+                              Dim oIncorrectDiscName As String
+                              ObjSfdPart.IsSFDSystem Diagnosis,
+                              oIncorrectDiscName
 
         :param int o_diagnostic:
         :param str o_incorrect_discipline_name:
@@ -119,37 +119,37 @@ class SfdPart(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub SetAsSFDSystem(long oDiagnostic,CATBSTR
-                | oIncorrectDisciplineName)
-                |     Initiliazes the Reference as a SFD system by setting the
-                |     V_Discipline.
-                | 
-                |     Parameters:
-                | 
-                |         oDiagnostic
-                | 
-                |             0 - V_discipline was successfully set for SFD.
-                |             1 - V_discipline is already set for SFD.
-                |             2 - V_discipline set not succeeded.
-                |             3 - V_discipline set not succeeded.
-                |             4 - V_discipline set not succeeded.
-                |             5 - V_discipline set not succeeded. 
-                |         oIncorrectDisciplineName
-                |             Returns the V_Discipline if there is already one. 
-                | 
-                |     Example:
-                | 
-                | 
-                |              This example sets this system to SFD system.
-                |              
-                | 
-                |               Dim ObjSfdPart As SfdPart
-                |               ObjSelection.Add ObjPart
-                |               Set ObjSfdPart = ObjSelection.FindObject("CATIASfdPart")
-                |               Dim Diagnosis As Long
-                |               Dim oIncorrectDiscName As String
-                |               ObjSfdPart.SetAsSFDSystem Diagnosis,
-                |               oIncorrectDiscName
+                Sub SetAsSFDSystem(long oDiagnostic,CATBSTR
+                oIncorrectDisciplineName)
+                    Initiliazes the Reference as a SFD system by setting the
+                    V_Discipline.
+                
+                    Parameters:
+                
+                        oDiagnostic
+                
+                            0 - V_discipline was successfully set for SFD.
+                            1 - V_discipline is already set for SFD.
+                            2 - V_discipline set not succeeded.
+                            3 - V_discipline set not succeeded.
+                            4 - V_discipline set not succeeded.
+                            5 - V_discipline set not succeeded. 
+                        oIncorrectDisciplineName
+                            Returns the V_Discipline if there is already one. 
+                
+                    Example:
+                
+                
+                             This example sets this system to SFD system.
+                             
+                
+                              Dim ObjSfdPart As SfdPart
+                              ObjSelection.Add ObjPart
+                              Set ObjSfdPart = ObjSelection.FindObject("CATIASfdPart")
+                              Dim Diagnosis As Long
+                              Dim oIncorrectDiscName As String
+                              ObjSfdPart.SetAsSFDSystem Diagnosis,
+                              oIncorrectDiscName
 
         :param int o_diagnostic:
         :param str o_incorrect_discipline_name:

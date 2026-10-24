@@ -20,17 +20,17 @@ class SimMeshParts(Collection):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     SimMeshParts
-                | 
-                | Represents the collection of simulation Mesh Parts.
-                | 
-                | See also:
-                |     SimMeshPart
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.Collection
+                                    SimMeshParts
+                
+                Represents the collection of simulation Mesh Parts.
+                
+                See also:
+                    SimMeshPart
     
     """
 
@@ -43,16 +43,16 @@ class SimMeshParts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Add(CATBSTR iType) As SimMeshPart
-                |     Creates a new Mesh Part and adds it to the collection.
-                | 
-                |     Parameters:
-                | 
-                |         iType:
-                |             The type of Mesh Part to create. 
-                | 
-                |     Returns:
-                |         The created Mesh Part.
+                Func Add(CATBSTR iType) As SimMeshPart
+                    Creates a new Mesh Part and adds it to the collection.
+                
+                    Parameters:
+                
+                        iType:
+                            The type of Mesh Part to create. 
+                
+                    Returns:
+                        The created Mesh Part.
 
         :param str i_type:
         :return: SimMeshPart
@@ -64,23 +64,23 @@ class SimMeshParts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Func Item(CATVariant iIndex) As SimMeshPart
-                |     Returns a Mesh Part using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Mesh Part to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the Mesh Part in the
-                |             collection. The index of the first Mesh Part in the collection is 1, and the
-                |             index of the last Mesh Part is Count.
-                |             As a string, it is the name you assigned to the Mesh Part using the
-                |             Name object property. 
-                | 
-                |     Returns:
-                |         The retrieved Mesh Part.
+                Func Item(CATVariant iIndex) As SimMeshPart
+                    Returns a Mesh Part using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Mesh Part to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the Mesh Part in the
+                            collection. The index of the first Mesh Part in the collection is 1, and the
+                            index of the last Mesh Part is Count.
+                            As a string, it is the name you assigned to the Mesh Part using the
+                            Name object property. 
+                
+                    Returns:
+                        The retrieved Mesh Part.
 
         :param CATVariant i_index:
         :return: SimMeshPart
@@ -92,20 +92,20 @@ class SimMeshParts(Collection):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub Remove(CATVariant iIndex)
-                |     Removes a Mesh Part using its index or its name from the
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex:
-                |             The index or the name of the Mesh Part to retrieve from the
-                |             collection.
-                |             As a numeric, this index is the rank of the Mesh Part in the
-                |             collection. The index of the first Mesh Part in the collection is 1, and the
-                |             index of the last Mesh Part is Count.
-                |             As a string, it is the name you assigned to the Mesh Part using the
-                |             Name object property.
+                Sub Remove(CATVariant iIndex)
+                    Removes a Mesh Part using its index or its name from the
+                    collection.
+                
+                    Parameters:
+                
+                        iIndex:
+                            The index or the name of the Mesh Part to retrieve from the
+                            collection.
+                            As a numeric, this index is the rank of the Mesh Part in the
+                            collection. The index of the first Mesh Part in the collection is 1, and the
+                            index of the last Mesh Part is Count.
+                            As a string, it is the name you assigned to the Mesh Part using the
+                            Name object property.
 
         :param CATVariant i_index:
         :return: None

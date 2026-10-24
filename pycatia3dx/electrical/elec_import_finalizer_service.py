@@ -16,19 +16,19 @@ class ElecImportFinalizerService(Service):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     InfInterfaces.Service
-                |                         ElecImportFinalizerService
-                | 
-                | The interface to access a CATIAElecImportFinalizerService.
-                | 
-                | This interface perform the POST PROCESS of Electrical Entities after FBDI
-                | Command is complete. Performs Actions equivalent to Finalize Import in
-                | Electrical Harness WB
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    InfInterfaces.Service
+                                        ElecImportFinalizerService
+                
+                The interface to access a CATIAElecImportFinalizerService.
+                
+                This interface perform the POST PROCESS of Electrical Entities after FBDI
+                Command is complete. Performs Actions equivalent to Finalize Import in
+                Electrical Harness WB
     
     """
 
@@ -41,8 +41,8 @@ class ElecImportFinalizerService(Service):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090))
-                | Sub Finalize()
-                |     Performs Actions equivalent to Finalize Import in Electrical Harness WB.
+                Sub Finalize()
+                    Performs Actions equivalent to Finalize Import in Electrical Harness WB.
 
         :return: None
         """

@@ -17,51 +17,51 @@ class SimVirtualBolt(AnyObject):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SimVirtualBolt
-                | 
-                | Represents the Virtual Bolt object.
-                | 
-                | Example:
-                |     Given a SimMCXProperties object, you can create a SimVirtualBolt as
-                |     following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualBolt As SimVirtualBolt
-                |      Set MyVirtualBolt = MyMCXProperties.Add("SimVirtualBolt")
-                |      
-                | 
-                |     Given a SimMCXProperties object, you can retrieve a SimVirtualBolt named
-                |     "Virtual Bolt.1" as following:
-                | 
-                |      Dim MyMCXProperties As SimMCXProperties
-                |      ...
-                |      Dim MyVirtualBolt As SimVirtualBolt
-                |      Set MyVirtualBolt = MyMCXProperties.Item("Virtual Bolt.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimMCXProperties object myMCXProperties, you can create a
-                |     SimVirtualBolt as following:
-                | 
-                |      ...
-                |      myVirtualBolt = myMCXProperties.Add("SimVirtualBolt")
-                |      
-                | 
-                |     Given a SimMCXProperties object myMCXProperties, you can retrieve a
-                |     SimVirtualBolt named "Virtual Bolt.1" as following:
-                | 
-                |      ...
-                |      myVirtualBolt = myMCXProperties.Item("Virtual Bolt.1")
-                |      
-                | 
-                | See also:
-                |     SimMCXProperties
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SimVirtualBolt
+                
+                Represents the Virtual Bolt object.
+                
+                Example:
+                    Given a SimMCXProperties object, you can create a SimVirtualBolt as
+                    following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualBolt As SimVirtualBolt
+                     Set MyVirtualBolt = MyMCXProperties.Add("SimVirtualBolt")
+                     
+                
+                    Given a SimMCXProperties object, you can retrieve a SimVirtualBolt named
+                    "Virtual Bolt.1" as following:
+                
+                     Dim MyMCXProperties As SimMCXProperties
+                     ...
+                     Dim MyVirtualBolt As SimVirtualBolt
+                     Set MyVirtualBolt = MyMCXProperties.Item("Virtual Bolt.1")
+                     
+                
+                Example in Python:
+                    Given a SimMCXProperties object myMCXProperties, you can create a
+                    SimVirtualBolt as following:
+                
+                     ...
+                     myVirtualBolt = myMCXProperties.Add("SimVirtualBolt")
+                     
+                
+                    Given a SimMCXProperties object myMCXProperties, you can retrieve a
+                    SimVirtualBolt named "Virtual Bolt.1" as following:
+                
+                     ...
+                     myVirtualBolt = myMCXProperties.Item("Virtual Bolt.1")
+                     
+                
+                See also:
+                    SimMCXProperties
     
     """
 
@@ -75,8 +75,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AxialStiffness() As double
-                |     Returns or sets the axial stiffness value.
+                Property AxialStiffness() As double
+                    Returns or sets the axial stiffness value.
 
         :return: float
         """
@@ -97,8 +97,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoltHeadRadius1() As double
-                |     Returns or sets the bolt head first radius.
+                Property BoltHeadRadius1() As double
+                    Returns or sets the bolt head first radius.
 
         :return: float
         """
@@ -119,8 +119,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property BoltHeadRadius2() As double
-                |     Returns or sets the bolt head second radius.
+                Property BoltHeadRadius2() As double
+                    Returns or sets the bolt head second radius.
 
         :return: float
         """
@@ -141,8 +141,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property NominalDiameter() As double
-                |     Returns or sets the nominal diameter value.
+                Property NominalDiameter() As double
+                    Returns or sets the nominal diameter value.
 
         :return: float
         """
@@ -163,8 +163,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property ShearStiffness() As double
-                |     Returns or sets the shear stiffness value.
+                Property ShearStiffness() As double
+                    Returns or sets the shear stiffness value.
 
         :return: float
         """
@@ -185,33 +185,33 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SpecTreeCategory() As CATBSTR (Read Only)
-                |     Returns a string representing the specification tree category of the
-                |     feature. Possible values are:
-                | 
-                |         Abstractions
-                |         Amplitudes
-                |         Controls
-                |         Connections
-                |         Damping
-                |         ElementTypeAssignments
-                |         Envelopes
-                |         FieldPlots
-                |         FlowConditions
-                |         HistoryPlots
-                |         InitialConditions
-                |         Interactions
-                |         LinearLoadCases
-                |         Loads
-                |         LoadSets
-                |         OutputRequests
-                |         PredefinedFields
-                |         Properties
-                |         Restraints
-                |         Sensors
-                |         Streams
-                |         ThermalConditions
-                |         NotDefined
+                Property SpecTreeCategory() As CATBSTR (Read Only)
+                    Returns a string representing the specification tree category of the
+                    feature. Possible values are:
+                
+                        Abstractions
+                        Amplitudes
+                        Controls
+                        Connections
+                        Damping
+                        ElementTypeAssignments
+                        Envelopes
+                        FieldPlots
+                        FlowConditions
+                        HistoryPlots
+                        InitialConditions
+                        Interactions
+                        LinearLoadCases
+                        Loads
+                        LoadSets
+                        OutputRequests
+                        PredefinedFields
+                        Properties
+                        Restraints
+                        Sensors
+                        Streams
+                        ThermalConditions
+                        NotDefined
 
         :return: str
         """
@@ -224,8 +224,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property StiffnessFlag() As boolean (Read Only)
-                |     Return stiffness flag.
+                Property StiffnessFlag() As boolean (Read Only)
+                    Return stiffness flag.
 
         :return: bool
         """
@@ -237,8 +237,8 @@ class SimVirtualBolt(AnyObject):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Sub UnsetStiffness()
-                |     Unset Stiffness. 
+                Sub UnsetStiffness()
+                    Unset Stiffness. 
 
         :return: None
         """

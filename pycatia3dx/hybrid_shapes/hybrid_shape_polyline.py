@@ -18,24 +18,24 @@ class HybridShapePolyline(HybridShape):
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     CATMmrAutomationInterfaces.HybridShape
-                |                         HybridShapePolyline
-                | 
-                | Represents the hybrid shape polyline curve object.
-                | Role: To access or set the data of the hybrid shape polyline object. This data
-                | includes:
-                | 
-                |     Elements
-                |     Radius
-                |     Closure
-                | 
-                | Use the HybridShapeFactory object to create a HybridShapePolyline
-                | object.
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    CATMmrAutomationInterfaces.HybridShape
+                                        HybridShapePolyline
+                
+                Represents the hybrid shape polyline curve object.
+                Role: To access or set the data of the hybrid shape polyline object. This data
+                includes:
+                
+                    Elements
+                    Radius
+                    Closure
+                
+                Use the HybridShapeFactory object to create a HybridShapePolyline
+                object.
     
     """
 
@@ -49,22 +49,22 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property Closure() As boolean
-                |     Returns or sets the flag to decide closure of the
-                |     polyline.
-                | 
-                |     Parameters:
-                | 
-                |         Closure
-                |             (For get_Closure) Returns or sets the closure
-                |             property
-                | 
-                |             Example:
-                |                 This example retrieves the closure property of the polyline of
-                |                 the HybShpPolyline hybrid shape polyline.
-                | 
-                |                  Dim HybShpPolClosure As  boolean
-                |                  HybShpPolClosure = HybShpPolyline.Closure
+                Property Closure() As boolean
+                    Returns or sets the flag to decide closure of the
+                    polyline.
+                
+                    Parameters:
+                
+                        Closure
+                            (For get_Closure) Returns or sets the closure
+                            property
+                
+                            Example:
+                                This example retrieves the closure property of the polyline of
+                                the HybShpPolyline hybrid shape polyline.
+                
+                                 Dim HybShpPolClosure As  boolean
+                                 HybShpPolClosure = HybShpPolyline.Closure
 
         :return: bool
         """
@@ -85,20 +85,20 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Property NumberOfElements() As long (Read Only)
-                |     Returns the number of elements of the polyline.
-                | 
-                |     Parameters:
-                | 
-                |         NumberOfElements
-                |             Number of elements in the polyline.
-                | 
-                |             Example:
-                |                 This example retrieves the number of elements in the polyline
-                |                 of the HybShpPolyline hybrid shape polyline.
-                | 
-                |                  Dim HybShpPolNoOfEle As  long
-                |                  HybShpPolNoOfEle = HybShpPolyline.NumberOfElements
+                Property NumberOfElements() As long (Read Only)
+                    Returns the number of elements of the polyline.
+                
+                    Parameters:
+                
+                        NumberOfElements
+                            Number of elements in the polyline.
+                
+                            Example:
+                                This example retrieves the number of elements in the polyline
+                                of the HybShpPolyline hybrid shape polyline.
+                
+                                 Dim HybShpPolNoOfEle As  long
+                                 HybShpPolNoOfEle = HybShpPolyline.NumberOfElements
 
         :return: int
         """
@@ -110,28 +110,28 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub GetElement(long iPosition,Reference oElement,Length
-                | oRadius)
-                |     Returns the element of the polyline.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             Position at which the element is to be retrieved. 
-                |         oElement
-                |             Reference to the element. 
-                |         ioRadius
-                |             Length to the radius.
-                | 
-                |             Example:
-                |                 This example retrieves the element and radius of the polyline
-                |                 at specified position of the HybShpPolyline hybrid shape
-                |                 polyline.
-                | 
-                |                  Dim HybShpPolylineElement As Reference
-                |                  Dim HybShpPolylineRadius As Reference
-                |                  HybShpPolyline.GetElement 1,
-                |                  HybShpPolylineElement,HybShpPolylineRadius
+                Sub GetElement(long iPosition,Reference oElement,Length
+                oRadius)
+                    Returns the element of the polyline.
+                
+                    Parameters:
+                
+                        iPosition
+                            Position at which the element is to be retrieved. 
+                        oElement
+                            Reference to the element. 
+                        ioRadius
+                            Length to the radius.
+                
+                            Example:
+                                This example retrieves the element and radius of the polyline
+                                at specified position of the HybShpPolyline hybrid shape
+                                polyline.
+                
+                                 Dim HybShpPolylineElement As Reference
+                                 Dim HybShpPolylineRadius As Reference
+                                 HybShpPolyline.GetElement 1,
+                                 HybShpPolylineElement,HybShpPolylineRadius
 
         :param int i_position:
         :param Reference o_element:
@@ -145,22 +145,22 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub InsertElement(Reference iPoint,long iPosition)
-                |     Inserts the element at a specified position in the
-                |     polyline.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             Reference of the point object to be inserted. 
-                |         iPosition
-                |             Position at which the element should be inserted.
-                | 
-                |             Example:
-                |                 This example inserts the element in the polyline of the
-                |                 HybShpPolyline hybrid shape polyline.
-                | 
-                |                  HybShpPolyline.InsertElement PointReference,1
+                Sub InsertElement(Reference iPoint,long iPosition)
+                    Inserts the element at a specified position in the
+                    polyline.
+                
+                    Parameters:
+                
+                        iPoint
+                            Reference of the point object to be inserted. 
+                        iPosition
+                            Position at which the element should be inserted.
+                
+                            Example:
+                                This example inserts the element in the polyline of the
+                                HybShpPolyline hybrid shape polyline.
+                
+                                 HybShpPolyline.InsertElement PointReference,1
 
         :param Reference i_point:
         :param int i_position:
@@ -173,21 +173,21 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub RemoveElement(long iPosition)
-                |     Removes the element at a specified position in the
-                |     polyline.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             Position from which the element should be should be
-                |             removed.
-                | 
-                |             Example:
-                |                 This example removes the element in the polyline of the
-                |                 HybShpPolyline hybrid shape polyline.
-                | 
-                |                  HybShpPolyline.RemoveElement 1
+                Sub RemoveElement(long iPosition)
+                    Removes the element at a specified position in the
+                    polyline.
+                
+                    Parameters:
+                
+                        iPosition
+                            Position from which the element should be should be
+                            removed.
+                
+                            Example:
+                                This example removes the element in the polyline of the
+                                HybShpPolyline hybrid shape polyline.
+                
+                                 HybShpPolyline.RemoveElement 1
 
         :param int i_position:
         :return: None
@@ -199,23 +199,23 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub ReplaceElement(Reference iPoint,long iPosition)
-                |     Replaces the element at a specified position in the
-                |     polyline.
-                | 
-                |     Parameters:
-                | 
-                |         iPoint
-                |             Reference of the point object that will replace the old element.
-                |             
-                |         iPosition
-                |             Position at which the element should be inserted.
-                | 
-                |             Example:
-                |                 This example replaces the element in the polyline of the
-                |                 HybShpPolyline hybrid shape polyline.
-                | 
-                |                  HybShpPolyline.ReplaceElement PointReference, 1
+                Sub ReplaceElement(Reference iPoint,long iPosition)
+                    Replaces the element at a specified position in the
+                    polyline.
+                
+                    Parameters:
+                
+                        iPoint
+                            Reference of the point object that will replace the old element.
+                            
+                        iPosition
+                            Position at which the element should be inserted.
+                
+                            Example:
+                                This example replaces the element in the polyline of the
+                                HybShpPolyline hybrid shape polyline.
+                
+                                 HybShpPolyline.ReplaceElement PointReference, 1
 
         :param Reference i_point:
         :param int i_position:
@@ -228,22 +228,22 @@ class HybridShapePolyline(HybridShape):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-27 14:29:47.477239)
-                | Sub SetRadius(long iPosition,double iRadius)
-                |     Sets the radius at specified position of the polyline.
-                | 
-                |     Parameters:
-                | 
-                |         iPosition
-                |             Position at which radius should be set 
-                |         iRadius
-                |             Value of the radius to be set.
-                | 
-                |             Example:
-                |                 This example sets the radius at the specific position of the
-                |                 polyline of the HybShpPolyline hybrid shape
-                |                 polyline.
-                | 
-                |                  HybShpPolyline.SetRadius 1, 10
+                Sub SetRadius(long iPosition,double iRadius)
+                    Sets the radius at specified position of the polyline.
+                
+                    Parameters:
+                
+                        iPosition
+                            Position at which radius should be set 
+                        iRadius
+                            Value of the radius to be set.
+                
+                            Example:
+                                This example sets the radius at the specific position of the
+                                polyline of the HybShpPolyline hybrid shape
+                                polyline.
+                
+                                 HybShpPolyline.SetRadius 1, 10
 
         :param int i_position:
         :param float i_radius:

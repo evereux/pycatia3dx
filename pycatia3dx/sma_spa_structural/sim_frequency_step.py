@@ -19,54 +19,54 @@ class SimFrequencyStep(SimStep):
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
 
-                | SystemTS.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     SMAMpaFoundationIDLItf.SimStep
-                |                         SimFrequencyStep
-                | 
-                | Represents the Frequency Step object.
-                | 
-                | Example:
-                |     Given a SimSteps object, you can create a SimFrequencyStep as
-                |     following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyFrequencyStep As SimFrequencyStep
-                |      Set MyFrequencyStep = MySteps.Add("SimFrequencyStep")
-                |      
-                | 
-                |     Given a SimSteps object, you can retrieve a SimFrequencyStep named
-                |     "Frequency Step.1" as following:
-                | 
-                |      Dim MySteps As SimSteps
-                |      ...
-                |      Dim MyFrequencyStep As SimFrequencyStep
-                |      Set MyFrequencyStep = MySteps.Item("Frequency Step.1")
-                |      
-                | 
-                | Example in Python:
-                |     Given a SimSteps object mySteps, you can create a SimFrequencyStep as
-                |     following:
-                | 
-                |      ...
-                |      myFrequencyStep = mySteps.Add("SimFrequencyStep")
-                |      
-                | 
-                |     Given a SimSteps object mySteps, you can retrieve a SimFrequencyStep named
-                |     "Frequency Step.1" as following:
-                | 
-                |      ...
-                |      myFrequencyStep = mySteps.Item("Frequency Step.1")
-                |      
-                | 
-                | See also:
-                |     SimSteps
-                | See also:
-                |     SimAnalysisRestartStepProperty
+                SystemTS.IUnknown
+                    System.IDispatch
+                        System.CATBaseUnknown
+                            System.CATBaseDispatch
+                                System.AnyObject
+                                    SMAMpaFoundationIDLItf.SimStep
+                                        SimFrequencyStep
+                
+                Represents the Frequency Step object.
+                
+                Example:
+                    Given a SimSteps object, you can create a SimFrequencyStep as
+                    following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyFrequencyStep As SimFrequencyStep
+                     Set MyFrequencyStep = MySteps.Add("SimFrequencyStep")
+                     
+                
+                    Given a SimSteps object, you can retrieve a SimFrequencyStep named
+                    "Frequency Step.1" as following:
+                
+                     Dim MySteps As SimSteps
+                     ...
+                     Dim MyFrequencyStep As SimFrequencyStep
+                     Set MyFrequencyStep = MySteps.Item("Frequency Step.1")
+                     
+                
+                Example in Python:
+                    Given a SimSteps object mySteps, you can create a SimFrequencyStep as
+                    following:
+                
+                     ...
+                     myFrequencyStep = mySteps.Add("SimFrequencyStep")
+                     
+                
+                    Given a SimSteps object mySteps, you can retrieve a SimFrequencyStep named
+                    "Frequency Step.1" as following:
+                
+                     ...
+                     myFrequencyStep = mySteps.Item("Frequency Step.1")
+                     
+                
+                See also:
+                    SimSteps
+                See also:
+                    SimAnalysisRestartStepProperty
     
     """
 
@@ -80,8 +80,8 @@ class SimFrequencyStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property AMSSolver() As SimAMSEigensolver (Read Only)
-                |     Returns the AMS solver.
+                Property AMSSolver() As SimAMSEigensolver (Read Only)
+                    Returns the AMS solver.
 
         :return: SimAmsEigensolver
         """
@@ -94,8 +94,8 @@ class SimFrequencyStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property Activated() As boolean
-                |     Returns or sets the activation status.
+                Property Activated() As boolean
+                    Returns or sets the activation status.
 
         :return: bool
         """
@@ -116,8 +116,8 @@ class SimFrequencyStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property LanczosSolver() As SimLanczosEigensolver (Read Only)
-                |     Returns the Lanczos solver.
+                Property LanczosSolver() As SimLanczosEigensolver (Read Only)
+                    Returns the Lanczos solver.
 
         :return: SimLanczosEigensolver
         """
@@ -130,9 +130,9 @@ class SimFrequencyStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
-                | Only)
-                |     Returns the restart step property for the frequency step.
+                Property RestartStepProperty() As SimAnalysisRestartStepProperty (Read
+                Only)
+                    Returns the restart step property for the frequency step.
 
         :return: SimAnalysisRestartStepProperty
         """
@@ -145,8 +145,8 @@ class SimFrequencyStep(SimStep):
         .. note::
 
             3DEXPERIENCE Automation Help (2025-09-28 13:20:20.191090)
-                | Property SolverType() As SimFrequencyStepSolverType
-                |     Returns or sets the solver type. 
+                Property SolverType() As SimFrequencyStepSolverType
+                    Returns or sets the solver type. 
 
         :return: SimFrequencyStepSolverType
         """
