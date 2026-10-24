@@ -11,6 +11,6 @@ build:
 sphinx:
   configuration: docs/source/conf.py
 
-#python:
-#  install:
-#    - requirements: requirements/requirements-dev.txt
+python:
+  install:
+    - requirements: requirements/requirements-dev.txt
