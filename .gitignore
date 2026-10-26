@@ -212,6 +212,7 @@ __junk__
 
 temp*.py
 # Sphinx documentation
-docs/build/
 docs/generate_api.py
+
+
 .pyrc
